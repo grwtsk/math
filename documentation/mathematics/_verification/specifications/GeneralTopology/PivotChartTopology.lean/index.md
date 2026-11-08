@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PivotChartTopology.lean/index.md) · [Full source](../../../../GeneralTopology/PivotChartTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedPivotPlane_injective](../../../../GeneralTopology/PivotChartTopology.lean/declarations/normalizedpivotplane-injective.md) | 31 | `result-track:174aec539112ad2b2161d5c631c953c71b184820f5d8461722cf07607f86c0de` |
-| 2 | `theorem` | [normalizedOverlapChange_plane](../../../../GeneralTopology/PivotChartTopology.lean/declarations/normalizedoverlapchange-plane.md) | 39 | `result-track:5c24296b6362012da741ea492558f6846171a743324859b7f0d6c887a034407a` |
-| 3 | `theorem` | [chart_image_preimage_eq_overlap_image](../../../../GeneralTopology/PivotChartTopology.lean/declarations/chart-image-preimage-eq-overlap-image.md) | 47 | `result-track:b19dfe8503f199eee317389aa9a32b2e34085fec7412c4f7377cea9de9bd0632` |
-| 4 | `theorem` | [isOpenMap_normalizedPivotPlane](../../../../GeneralTopology/PivotChartTopology.lean/declarations/isopenmap-normalizedpivotplane.md) | 69 | `result-track:96d8accf0cefb84db58e06d52a78534efe672420051b48000ede192a3e43b599` |
-| 5 | `theorem` | [isOpenEmbedding_normalizedPivotPlane](../../../../GeneralTopology/PivotChartTopology.lean/declarations/isopenembedding-normalizedpivotplane.md) | 84 | `result-track:a727da2fc8fe1897276915f8f1d5e298b4919c845cf5fa8334dd39e53fcf8f0a` |
-| 6 | `def` | [normalizedPivotChartHomeomorph](../../../../GeneralTopology/PivotChartTopology.lean/declarations/normalizedpivotcharthomeomorph.md) | 91 | `declaration-track:b8690977e4c57f6e7fa82087af7ca76c66e6b5e71692780f464c76ba534c9d61` |
+| 1 | `theorem` | [normalizedPivotPlane_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/declarations/normalizedpivotplane-injective.md) | 31 | `result-track:174aec539112ad2b2161d5c631c953c71b184820f5d8461722cf07607f86c0de` |
+| 2 | `theorem` | [normalizedOverlapChange_plane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/declarations/normalizedoverlapchange-plane.md) | 39 | `result-track:5c24296b6362012da741ea492558f6846171a743324859b7f0d6c887a034407a` |
+| 3 | `theorem` | [chart_image_preimage_eq_overlap_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/declarations/chart-image-preimage-eq-overlap-image.md) | 47 | `result-track:b19dfe8503f199eee317389aa9a32b2e34085fec7412c4f7377cea9de9bd0632` |
+| 4 | `theorem` | [isOpenMap_normalizedPivotPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/declarations/isopenmap-normalizedpivotplane.md) | 69 | `result-track:96d8accf0cefb84db58e06d52a78534efe672420051b48000ede192a3e43b599` |
+| 5 | `theorem` | [isOpenEmbedding_normalizedPivotPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/declarations/isopenembedding-normalizedpivotplane.md) | 84 | `result-track:a727da2fc8fe1897276915f8f1d5e298b4919c845cf5fa8334dd39e53fcf8f0a` |
+| 6 | `def` | [normalizedPivotChartHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PivotChartTopology.lean/declarations/normalizedpivotcharthomeomorph.md) | 91 | `declaration-track:b8690977e4c57f6e7fa82087af7ca76c66e6b5e71692780f464c76ba534c9d61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ne_of_not_mem_singleton_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/declarations/ne-of-not-mem-singleton-cons.md) | 30 | `result-track:5dde572e6a688661285a613d6ddbf71b6492232a3d39f86c3e065f0b354dca0e` |
-| 2 | `theorem` | [not_mem_tail_of_not_mem_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/declarations/not-mem-tail-of-not-mem-cons.md) | 37 | `result-track:642c2f38f016f9702993bf9c513349bab97d0ead8cce6534898ea82cec42f1a5` |
-| 3 | `theorem` | [bitRado_two_fresh_copies_of_finite_pattern](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/declarations/bitrado-two-fresh-copies-of-finite-pattern.md) | 44 | `result-track:e2d28b0f4e9d137c2d1162b7a34d629c01663dbfa0d2723254d2a53758aa6185` |
+| 1 | `theorem` | [ne_of_not_mem_singleton_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/declarations/ne-of-not-mem-singleton-cons.md) | 30 | `result-track:5dde572e6a688661285a613d6ddbf71b6492232a3d39f86c3e065f0b354dca0e` |
+| 2 | `theorem` | [not_mem_tail_of_not_mem_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/declarations/not-mem-tail-of-not-mem-cons.md) | 37 | `result-track:642c2f38f016f9702993bf9c513349bab97d0ead8cce6534898ea82cec42f1a5` |
+| 3 | `theorem` | [bitRado_two_fresh_copies_of_finite_pattern](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternTwoCopiesNamespaced.lean/declarations/bitrado-two-fresh-copies-of-finite-pattern.md) | 44 | `result-track:e2d28b0f4e9d137c2d1162b7a34d629c01663dbfa0d2723254d2a53758aa6185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

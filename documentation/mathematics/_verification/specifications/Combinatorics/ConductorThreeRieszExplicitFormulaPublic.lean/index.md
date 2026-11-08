@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/index.md) · [Full source](../../../../Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conductorThreeRieszMeanOne](../../../../Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/conductorthreerieszmeanone.md) | 37 | `declaration-track:fef16ad51e7974ccb4eb1d1a54c3aa78025b26c648c4aa38d7cf28cf87257478` |
-| 2 | `def` | [conductorThreeRieszDifferenceTail](../../../../Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/conductorthreerieszdifferencetail.md) | 43 | `declaration-track:df205c2069bd9a96f78ec4772bbfac4293aed642e276d1160bc218319d9305b1` |
-| 3 | `theorem` | [conductorThreeRieszMeanOne_add_sub](../../../../Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/conductorthreerieszmeanone-add-sub.md) | 51 | `result-track:8f904af9d5de08ed6e8607566809350f90e70e706626b664737d3bd3d0b850fb` |
-| 4 | `def` | [GRHRieszFiniteDifferenceEstimate](../../../../Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/grhrieszfinitedifferenceestimate.md) | 102 | `declaration-track:718f7404bcbc5e14b0fd9d61fab5bf9b22119767ff4bcb2e1ebdbdbbc78ef2e1` |
-| 5 | `theorem` | [grh_implies_twistedPsiCriticalBound_of_rieszDifference](../../../../Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/grh-implies-twistedpsicriticalbound-of-rieszdifference.md) | 108 | `result-track:8d628e3a7bd4c0cab4c915c10c64bfc409d0e7816d3cb23868dfee6812f39937` |
+| 1 | `def` | [conductorThreeRieszMeanOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/conductorthreerieszmeanone.md) | 37 | `declaration-track:fef16ad51e7974ccb4eb1d1a54c3aa78025b26c648c4aa38d7cf28cf87257478` |
+| 2 | `def` | [conductorThreeRieszDifferenceTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/conductorthreerieszdifferencetail.md) | 43 | `declaration-track:df205c2069bd9a96f78ec4772bbfac4293aed642e276d1160bc218319d9305b1` |
+| 3 | `theorem` | [conductorThreeRieszMeanOne_add_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/conductorthreerieszmeanone-add-sub.md) | 51 | `result-track:8f904af9d5de08ed6e8607566809350f90e70e706626b664737d3bd3d0b850fb` |
+| 4 | `def` | [GRHRieszFiniteDifferenceEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/grhrieszfinitedifferenceestimate.md) | 102 | `declaration-track:718f7404bcbc5e14b0fd9d61fab5bf9b22119767ff4bcb2e1ebdbdbbc78ef2e1` |
+| 5 | `theorem` | [grh_implies_twistedPsiCriticalBound_of_rieszDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreeRieszExplicitFormulaPublic.lean/declarations/grh-implies-twistedpsicriticalbound-of-rieszdifference.md) | 108 | `result-track:8d628e3a7bd4c0cab4c915c10c64bfc409d0e7816d3cb23868dfee6812f39937` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

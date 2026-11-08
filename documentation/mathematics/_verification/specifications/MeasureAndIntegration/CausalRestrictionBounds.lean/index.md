@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteTranslationMultipliers.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.MeasureTheory.Integral.FinitePrimeTranslationEnergy`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FinitePrimeTranslationEnergyHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteTranslationMultipliers.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.MeasureTheory.Integral.FinitePrimeTranslationEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FinitePrimeTranslationEnergyHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
 - `Mathlib.MeasureTheory.Function.LpSeminorm.Indicator` — import line 3; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Function.LpSeminorm.SMul` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality` — import line 5; external provider; requires a separately pinned dependency.
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blockAction](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/blockaction.md) | 13 | `declaration-track:1563f5429d4358656fc4418d5759ed53e5afd58314cfff93cb104ff53e2743ef` |
-| 2 | `theorem` | [shift_memLp_two](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/shift-memlp-two.md) | 17 | `result-track:3f3114c912697eae249753bdca77c926ea61f71c677c618f80d54779f88c5b2a` |
-| 3 | `theorem` | [note_memLp_two](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/note-memlp-two.md) | 29 | `result-track:dbefd9c20a56fad47e70f0abeb96b2ea6cdaba8e9510d5e8a1d42e0b3b992807` |
-| 4 | `theorem` | [cascade_memLp_two](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/cascade-memlp-two.md) | 33 | `result-track:856dfe84fe316ea25732db42720b63075f32791fb292be2c84942fbf3e5f3907` |
-| 5 | `theorem` | [windowed_block_square_integrable](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/windowed-block-square-integrable.md) | 40 | `result-track:905f9f18bb9104cfe66a3a8e0fe2f444bb6bb231d5d36290a73e892ffb307539` |
-| 6 | `theorem` | [restriction_energy_le_full](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/restriction-energy-le-full.md) | 49 | `result-track:b33a6ea85111dee204d07ab635a810fe74798a0a27e43e9df6c3f647d8139d4b` |
-| 7 | `theorem` | [cutoff_block_exact](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/cutoff-block-exact.md) | 55 | `result-track:01398a575a8def6937cea806421f42c760647a445f2d9bb5717434be0b195961` |
-| 8 | `theorem` | [cutoff_block_energy_exact](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/cutoff-block-energy-exact.md) | 63 | `result-track:48413cdfdbc71e1ea04f6063712abb3da4fbcd95ae80c3e3665001691a0d85b6` |
-| 9 | `theorem` | [actual_cutoff_energy_bound](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/actual-cutoff-energy-bound.md) | 73 | `result-track:d813bac1ee2f491ce8c5e768588688b901d3f0a32bea95c2a004113a8771a489` |
-| 10 | `theorem` | [actual_cutoff_complex_energy_bound](../../../../MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/actual-cutoff-complex-energy-bound.md) | 86 | `result-track:18e4b4d409daf41db41fe10f3309255226ef18f6cfd1e2793cb4603d559c9731` |
+| 1 | `def` | [blockAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/blockaction.md) | 13 | `declaration-track:1563f5429d4358656fc4418d5759ed53e5afd58314cfff93cb104ff53e2743ef` |
+| 2 | `theorem` | [shift_memLp_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/shift-memlp-two.md) | 17 | `result-track:3f3114c912697eae249753bdca77c926ea61f71c677c618f80d54779f88c5b2a` |
+| 3 | `theorem` | [note_memLp_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/note-memlp-two.md) | 29 | `result-track:dbefd9c20a56fad47e70f0abeb96b2ea6cdaba8e9510d5e8a1d42e0b3b992807` |
+| 4 | `theorem` | [cascade_memLp_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/cascade-memlp-two.md) | 33 | `result-track:856dfe84fe316ea25732db42720b63075f32791fb292be2c84942fbf3e5f3907` |
+| 5 | `theorem` | [windowed_block_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/windowed-block-square-integrable.md) | 40 | `result-track:905f9f18bb9104cfe66a3a8e0fe2f444bb6bb231d5d36290a73e892ffb307539` |
+| 6 | `theorem` | [restriction_energy_le_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/restriction-energy-le-full.md) | 49 | `result-track:b33a6ea85111dee204d07ab635a810fe74798a0a27e43e9df6c3f647d8139d4b` |
+| 7 | `theorem` | [cutoff_block_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/cutoff-block-exact.md) | 55 | `result-track:01398a575a8def6937cea806421f42c760647a445f2d9bb5717434be0b195961` |
+| 8 | `theorem` | [cutoff_block_energy_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/cutoff-block-energy-exact.md) | 63 | `result-track:48413cdfdbc71e1ea04f6063712abb3da4fbcd95ae80c3e3665001691a0d85b6` |
+| 9 | `theorem` | [actual_cutoff_energy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/actual-cutoff-energy-bound.md) | 73 | `result-track:d813bac1ee2f491ce8c5e768588688b901d3f0a32bea95c2a004113a8771a489` |
+| 10 | `theorem` | [actual_cutoff_complex_energy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalRestrictionBounds.lean/declarations/actual-cutoff-complex-energy-bound.md) | 86 | `result-track:18e4b4d409daf41db41fe10f3309255226ef18f6cfd1e2793cb4603d559c9731` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

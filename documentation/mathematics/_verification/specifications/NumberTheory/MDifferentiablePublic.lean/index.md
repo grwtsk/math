@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MDifferentiablePublic.lean/index.md) · [Full source](../../../../NumberTheory/MDifferentiablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MDifferentiablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MDifferentiablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [div_linear_zpow_differentiableOn](../../../../NumberTheory/MDifferentiablePublic.lean/declarations/div-linear-zpow-differentiableon.md) | 33 | `result-track:6035ed935b50056eec95bd69ad4b4579f4f892a7fba86c4d673bab0dc94541a1` |
-| 2 | `lemma` | [eisSummand_extension_differentiableOn](../../../../NumberTheory/MDifferentiablePublic.lean/declarations/eissummand-extension-differentiableon.md) | 46 | `result-track:de49da9946ee2d68d4529fa0d785f0f8ce85f12c985319f17a33c04ca4108ab8` |
-| 3 | `theorem` | [eisensteinSeriesSIF_mdifferentiable](../../../../NumberTheory/MDifferentiablePublic.lean/declarations/eisensteinseriessif-mdifferentiable.md) | 54 | `result-track:00097d830262252ebc889ebace202ce629b84ffc635df0f89c916ecda01a6660` |
+| 1 | `lemma` | [div_linear_zpow_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MDifferentiablePublic.lean/declarations/div-linear-zpow-differentiableon.md) | 33 | `result-track:6035ed935b50056eec95bd69ad4b4579f4f892a7fba86c4d673bab0dc94541a1` |
+| 2 | `lemma` | [eisSummand_extension_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MDifferentiablePublic.lean/declarations/eissummand-extension-differentiableon.md) | 46 | `result-track:de49da9946ee2d68d4529fa0d785f0f8ce85f12c985319f17a33c04ca4108ab8` |
+| 3 | `theorem` | [eisensteinSeriesSIF_mdifferentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MDifferentiablePublic.lean/declarations/eisensteinseriessif-mdifferentiable.md) | 54 | `result-track:00097d830262252ebc889ebace202ce629b84ffc635df0f89c916ecda01a6660` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

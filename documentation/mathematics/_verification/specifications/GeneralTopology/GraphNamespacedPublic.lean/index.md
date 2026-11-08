@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/GraphNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/GraphNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CWComplex.OneSkeletonGraph](../../../../GeneralTopology/GraphNamespacedPublic.lean/declarations/cwcomplex-oneskeletongraph.md) | 39 | `declaration-track:a6956d9d79f1f6e77c960a4d198f2169f75f9c0fd65bb0057f7dbe6687fcb7c1` |
-| 2 | `lemma` | [isLink_iff_pair](../../../../GeneralTopology/GraphNamespacedPublic.lean/declarations/islink-iff-pair.md) | 58 | `result-track:40acb34eca5a3cee2e043b4c8c5e4a35b0e37205b838801f7831763e9970bd7b` |
-| 3 | `lemma` | [exists_isLoopAt_iff](../../../../GeneralTopology/GraphNamespacedPublic.lean/declarations/exists-isloopat-iff.md) | 63 | `result-track:acca5fcb49165b9119e62713971b1b1cb7fe67b383d3aabe4c9f39b1f18d1751` |
-| 4 | `lemma` | [exists_isLoopAt_iff_subsingleton](../../../../GeneralTopology/GraphNamespacedPublic.lean/declarations/exists-isloopat-iff-subsingleton.md) | 69 | `result-track:8503d334ccd732b09633aefd08adbc29be5edbb5bb39147e350cba6a2a9f6ec6` |
-| 5 | `lemma` | [not_exists_isLoopAt_iff_nontrivial](../../../../GeneralTopology/GraphNamespacedPublic.lean/declarations/not-exists-isloopat-iff-nontrivial.md) | 78 | `result-track:b570b76c73eb4b8c1d5cab281027a6a32a181061b6570949f1531b4601229f5e` |
-| 6 | `lemma` | [adj_iff](../../../../GeneralTopology/GraphNamespacedPublic.lean/declarations/adj-iff.md) | 83 | `result-track:fad478794e9c7d7b4d42e1fcac35a076e383cc2d9d71222a108ff41cd823adaf` |
+| 1 | `def` | [CWComplex.OneSkeletonGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/declarations/cwcomplex-oneskeletongraph.md) | 39 | `declaration-track:a6956d9d79f1f6e77c960a4d198f2169f75f9c0fd65bb0057f7dbe6687fcb7c1` |
+| 2 | `lemma` | [isLink_iff_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/declarations/islink-iff-pair.md) | 58 | `result-track:40acb34eca5a3cee2e043b4c8c5e4a35b0e37205b838801f7831763e9970bd7b` |
+| 3 | `lemma` | [exists_isLoopAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/declarations/exists-isloopat-iff.md) | 63 | `result-track:acca5fcb49165b9119e62713971b1b1cb7fe67b383d3aabe4c9f39b1f18d1751` |
+| 4 | `lemma` | [exists_isLoopAt_iff_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/declarations/exists-isloopat-iff-subsingleton.md) | 69 | `result-track:8503d334ccd732b09633aefd08adbc29be5edbb5bb39147e350cba6a2a9f6ec6` |
+| 5 | `lemma` | [not_exists_isLoopAt_iff_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/declarations/not-exists-isloopat-iff-nontrivial.md) | 78 | `result-track:b570b76c73eb4b8c1d5cab281027a6a32a181061b6570949f1531b4601229f5e` |
+| 6 | `lemma` | [adj_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphNamespacedPublic.lean/declarations/adj-iff.md) | 83 | `result-track:fad478794e9c7d7b4d42e1fcac35a076e383cc2d9d71222a108ff41cd823adaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

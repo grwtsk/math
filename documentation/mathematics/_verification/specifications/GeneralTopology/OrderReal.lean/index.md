@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OrderReal.lean/index.md) · [Full source](../../../../GeneralTopology/OrderReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-6.md) | 32 | `declaration-track:54f85d35f5e411825538e6358c382e6130cae37b09a653475d790bc9d47e99ba` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:3423edebdd4adac01bea8bb52bfe7f5aa35b22c5d49cfb607cdbaf4d80a3d345` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-2.md) | 35 | `declaration-track:14a9c39344081b398db932205adc14ddfa5085b7317ee01f9e48ec83155a83c4` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-7.md) | 36 | `declaration-track:ac021bb7060e517abf58cb2527830f6fa715414910aee072c4f6d793c220fc0c` |
-| 5 | `lemma` | [denseRange_ratCast](../../../../GeneralTopology/OrderReal.lean/declarations/denserange-ratcast.md) | 38 | `result-track:547142256cf91a3685492dc2885157ea63ad90a2659806a2f06fc1f8c70eb412` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-5.md) | 49 | `declaration-track:40ae4d80c77628b336408da405c7af152b31653f1d1a44704c30f2696e7f1a7e` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-9.md) | 51 | `declaration-track:e164ded5ba0dd93e7a36c7861f063f6ed1560aeb6db28be86c1506fc9940bfd5` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-4.md) | 54 | `declaration-track:3951b540871dd60d2a4e1b952f6ebcc0ee09a0295748180ce98fd23268125b5f` |
-| 9 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance.md) | 55 | `declaration-track:0e3c0bada1e7d4b89cf716f21c575ad5e31d4be589b58a9e79a3ecc84123768e` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderReal.lean/declarations/instance-source-edition-8.md) | 56 | `declaration-track:bf8bd4e0a535a6f3cfe3e9bbfb9366e8eb4aa74934ac996bc901ec470c38fb0b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-6.md) | 32 | `declaration-track:54f85d35f5e411825538e6358c382e6130cae37b09a653475d790bc9d47e99ba` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:3423edebdd4adac01bea8bb52bfe7f5aa35b22c5d49cfb607cdbaf4d80a3d345` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-2.md) | 35 | `declaration-track:14a9c39344081b398db932205adc14ddfa5085b7317ee01f9e48ec83155a83c4` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-7.md) | 36 | `declaration-track:ac021bb7060e517abf58cb2527830f6fa715414910aee072c4f6d793c220fc0c` |
+| 5 | `lemma` | [denseRange_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/denserange-ratcast.md) | 38 | `result-track:547142256cf91a3685492dc2885157ea63ad90a2659806a2f06fc1f8c70eb412` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-5.md) | 49 | `declaration-track:40ae4d80c77628b336408da405c7af152b31653f1d1a44704c30f2696e7f1a7e` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-9.md) | 51 | `declaration-track:e164ded5ba0dd93e7a36c7861f063f6ed1560aeb6db28be86c1506fc9940bfd5` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-4.md) | 54 | `declaration-track:3951b540871dd60d2a4e1b952f6ebcc0ee09a0295748180ce98fd23268125b5f` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance.md) | 55 | `declaration-track:0e3c0bada1e7d4b89cf716f21c575ad5e31d4be589b58a9e79a3ecc84123768e` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderReal.lean/declarations/instance-source-edition-8.md) | 56 | `declaration-track:bf8bd4e0a535a6f3cfe3e9bbfb9366e8eb4aa74934ac996bc901ec470c38fb0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

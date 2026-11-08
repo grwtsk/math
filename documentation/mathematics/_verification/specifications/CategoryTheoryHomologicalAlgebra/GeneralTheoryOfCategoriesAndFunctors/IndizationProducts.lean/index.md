@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIndObject_pi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/declarations/isindobject-pi.md) | 26 | `result-track:281412f52016e84fb5ff04947c0e2ed6e5ca5998b707c45b720cddf2078bdb65` |
-| 2 | `theorem` | [isIndObject_limit_of_discrete](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/declarations/isindobject-limit-of-discrete.md) | 34 | `result-track:a52fe77677cf780a6e8b3ebc4947248c361a3a7677ade26cae666d0c7096e690` |
-| 3 | `theorem` | [isIndObject_limit_of_discrete_of_hasLimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/declarations/isindobject-limit-of-discrete-of-haslimitsofshape.md) | 38 | `result-track:c67e4aaf2d146114d497a7df91df2bddf1f74152da325237e25f7a45770ef82a` |
+| 1 | `theorem` | [isIndObject_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/declarations/isindobject-pi.md) | 26 | `result-track:281412f52016e84fb5ff04947c0e2ed6e5ca5998b707c45b720cddf2078bdb65` |
+| 2 | `theorem` | [isIndObject_limit_of_discrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/declarations/isindobject-limit-of-discrete.md) | 34 | `result-track:a52fe77677cf780a6e8b3ebc4947248c361a3a7677ade26cae666d0c7096e690` |
+| 3 | `theorem` | [isIndObject_limit_of_discrete_of_hasLimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationProducts.lean/declarations/isindobject-limit-of-discrete-of-haslimitsofshape.md) | 38 | `result-track:c67e4aaf2d146114d497a7df91df2bddf1f74152da325237e25f7a45770ef82a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

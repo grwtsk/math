@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ABb3efefcd105e3aNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ABb3efefcd105e3aNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABb3efefcd105e3aNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABb3efefcd105e3aNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [liftProjectionOrbit_minimal](../../../../../ComputerScience/AlgorithmsInComputerScience/ABb3efefcd105e3aNamespaced.lean/declarations/liftprojectionorbit-minimal.md) | 24 | `result-track:a3a7dc68c299d4e848835f6f3dd2d9e416dd0e33b3dbd63ae472a8bd54f8b2f5` |
+| 1 | `theorem` | [liftProjectionOrbit_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABb3efefcd105e3aNamespaced.lean/declarations/liftprojectionorbit-minimal.md) | 24 | `result-track:a3a7dc68c299d4e848835f6f3dd2d9e416dd0e33b3dbd63ae472a8bd54f8b2f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourcePointEquiv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/sourcepointequiv.md) | 30 | `declaration-track:715703810a93739c5890c56009f2348619a14683d108c6e8e4471fc98e850d9b` |
-| 2 | `theorem` | [sourcePointEquiv_val](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/sourcepointequiv-val.md) | 33 | `result-track:76ec5fe50ec977271225038c3fddbf68691b294ac055025205f7be0c23fbfa15` |
-| 3 | `theorem` | [sourcePointEquiv_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/sourcepointequiv-mult.md) | 36 | `result-track:9473ea3ac1380acc606906e114fcf554a54965d9978cce665bb71b95eb51b126` |
-| 4 | `theorem` | [occurrence_tsum_eq_weighted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/occurrence-tsum-eq-weighted.md) | 40 | `result-track:7843bf1c7bccef42d4bccb2931bc27cf90b557927429603efd5e07c0a67b9d85` |
-| 5 | `theorem` | [weighted_source_sum_eq_occurrences](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/weighted-source-sum-eq-occurrences.md) | 51 | `result-track:371199cde561da04de3a48f339081c49a7be944b4b52af067e85c9324924a6b6` |
+| 1 | `def` | [sourcePointEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/sourcepointequiv.md) | 30 | `declaration-track:715703810a93739c5890c56009f2348619a14683d108c6e8e4471fc98e850d9b` |
+| 2 | `theorem` | [sourcePointEquiv_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/sourcepointequiv-val.md) | 33 | `result-track:76ec5fe50ec977271225038c3fddbf68691b294ac055025205f7be0c23fbfa15` |
+| 3 | `theorem` | [sourcePointEquiv_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/sourcepointequiv-mult.md) | 36 | `result-track:9473ea3ac1380acc606906e114fcf554a54965d9978cce665bb71b95eb51b126` |
+| 4 | `theorem` | [occurrence_tsum_eq_weighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/occurrence-tsum-eq-weighted.md) | 40 | `result-track:7843bf1c7bccef42d4bccb2931bc27cf90b557927429603efd5e07c0a67b9d85` |
+| 5 | `theorem` | [weighted_source_sum_eq_occurrences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OccurrencesNamespaced.lean/declarations/weighted-source-sum-eq-occurrences.md) | 51 | `result-track:371199cde561da04de3a48f339081c49a7be944b4b52af067e85c9324924a6b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

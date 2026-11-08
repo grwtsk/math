@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HasConstCache](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/declarations/hasconstcache.md) | 16 | `declaration-track:cddeeb96730e75bc3f35185268dfe562445bdaffd026bfe85eb06d4719325ed0` |
-| 2 | `def` | [HasConstCache.containsUnsafe](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/declarations/hasconstcache-containsunsafe.md) | 19 | `declaration-track:96d18a982ea9cabaefc624ab7b9960d58dadf098ee1b37c713353aa2db07af43` |
-| 3 | `opaque` | [HasConstCache.contains](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/declarations/hasconstcache-contains.md) | 41 | `declaration-track:797f1e05f4675a25137872843c286c04e1a2602a51d5646637e92e3b1c51c847` |
+| 1 | `structure` | [HasConstCache](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/declarations/hasconstcache.md) | 16 | `declaration-track:cddeeb96730e75bc3f35185268dfe562445bdaffd026bfe85eb06d4719325ed0` |
+| 2 | `def` | [HasConstCache.containsUnsafe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/declarations/hasconstcache-containsunsafe.md) | 19 | `declaration-track:96d18a982ea9cabaefc624ab7b9960d58dadf098ee1b37c713353aa2db07af43` |
+| 3 | `opaque` | [HasConstCache.contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasConstCachePublic.lean/declarations/hasconstcache-contains.md) | 41 | `declaration-track:797f1e05f4675a25137872843c286c04e1a2602a51d5646637e92e3b1c51c847` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

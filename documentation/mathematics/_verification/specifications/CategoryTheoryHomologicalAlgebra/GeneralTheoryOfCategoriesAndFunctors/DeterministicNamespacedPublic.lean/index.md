@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Deterministic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/declarations/deterministic.md) | 56 | `declaration-track:85b1918d22da1f786a44c76253de57237731a5967dfcaf38dc78ff5c52ca8287` |
-| 2 | `lemma` | [copy_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/declarations/copy-natural.md) | 63 | `result-track:7da8739bfbc215093b9c5e00d4aa249ba9759b7c423743d1775491410227137b` |
-| 3 | `lemma` | [discard_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/declarations/discard-natural.md) | 67 | `result-track:56589954a0bb21499e9eb684138cd869b6a593b98c1edebb43969507ab11ce30` |
+| 1 | `abbrev` | [Deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/declarations/deterministic.md) | 56 | `declaration-track:85b1918d22da1f786a44c76253de57237731a5967dfcaf38dc78ff5c52ca8287` |
+| 2 | `lemma` | [copy_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/declarations/copy-natural.md) | 63 | `result-track:7da8739bfbc215093b9c5e00d4aa249ba9759b7c423743d1775491410227137b` |
+| 3 | `lemma` | [discard_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DeterministicNamespacedPublic.lean/declarations/discard-natural.md) | 67 | `result-track:56589954a0bb21499e9eb684138cd869b6a593b98c1edebb43969507ab11ce30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

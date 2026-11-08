@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/functor.md) | 37 | `declaration-track:2d3993d869a5cc6993c86cc4c26466abec5b03e45ade9aec3d5aeed9a37893f0` |
-| 2 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/inverse.md) | 56 | `declaration-track:ccf1a31d7be0f9ae85669b4c8dd4e43f3c7ed51c37da4a112ae0d3f25cc47a75` |
-| 3 | `def` | [unitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/unitiso.md) | 74 | `declaration-track:bf9124a78579871e5c363b6e180b00c3d613ea59f56125c10a7b22fa4b0197c1` |
-| 4 | `def` | [counitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/counitiso.md) | 84 | `declaration-track:650d1d5f3608f07fe4bc5412c20923d7d44f3d0d3006ad4cb934eca705918ae1` |
-| 5 | `def` | [triangleOpEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/triangleopequivalence.md) | 103 | `declaration-track:657de31fec2b0df22698aea7f84d2eab8ee2e5525a8a9f721e4a99bdd4b5841b` |
+| 1 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/functor.md) | 37 | `declaration-track:2d3993d869a5cc6993c86cc4c26466abec5b03e45ade9aec3d5aeed9a37893f0` |
+| 2 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/inverse.md) | 56 | `declaration-track:ccf1a31d7be0f9ae85669b4c8dd4e43f3c7ed51c37da4a112ae0d3f25cc47a75` |
+| 3 | `def` | [unitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/unitiso.md) | 74 | `declaration-track:bf9124a78579871e5c363b6e180b00c3d613ea59f56125c10a7b22fa4b0197c1` |
+| 4 | `def` | [counitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/counitiso.md) | 84 | `declaration-track:650d1d5f3608f07fe4bc5412c20923d7d44f3d0d3006ad4cb934eca705918ae1` |
+| 5 | `def` | [triangleOpEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Triangle.lean/declarations/triangleopequivalence.md) | 103 | `declaration-track:657de31fec2b0df22698aea7f84d2eab8ee2e5525a8a9f721e4a99bdd4b5841b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

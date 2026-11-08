@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [VersionTransport](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/declarations/versiontransport.md) | 22 | `declaration-track:9bc015f3b30f1c8c9b578684e407a95ece837e26e4fa5aa312399c0188269018` |
-| 2 | `structure` | [VersionTransportSystem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/declarations/versiontransportsystem.md) | 40 | `declaration-track:4ba0a14c0f328312b6ae5f87615d04a394ec5d93d1eb55f54b8ca44f37d7d0c8` |
-| 3 | `structure` | [TransportResidue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/declarations/transportresidue.md) | 59 | `declaration-track:ee93c92f82c11ea20fe2e3ff429afe9ea2889ada92b7e256c5a63cb3365d01de` |
+| 1 | `structure` | [VersionTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/declarations/versiontransport.md) | 22 | `declaration-track:9bc015f3b30f1c8c9b578684e407a95ece837e26e4fa5aa312399c0188269018` |
+| 2 | `structure` | [VersionTransportSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/declarations/versiontransportsystem.md) | 40 | `declaration-track:4ba0a14c0f328312b6ae5f87615d04a394ec5d93d1eb55f54b8ca44f37d7d0c8` |
+| 3 | `structure` | [TransportResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VersionTransportNamespaced.lean/declarations/transportresidue.md) | 59 | `declaration-track:ee93c92f82c11ea20fe2e3ff429afe9ea2889ada92b7e256c5a63cb3365d01de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/ext.md) | 40 | `declaration-track:598ca5331c73d48a0c7acea287ec67815fd195dae18cb0a1f4666e93849614c1` |
-| 2 | `def` | [ChainComplex.linearYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/chaincomplex-linearyonedaobj.md) | 57 | `declaration-track:4600315300278ac8874c2b30398d0231713bce5d94a793f1825404937bafaa69` |
-| 3 | `def` | [isoExt](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/isoext.md) | 69 | `declaration-track:35718c00e34797154304a6fcae38dbe04415507c4161dbd7f5d97f5e04d31038` |
-| 4 | `lemma` | [isZero_Ext_succ_of_projective](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/iszero-ext-succ-of-projective.md) | 79 | `result-track:85cc0bdca79b09eff02479b89129aa2abbd6476638990cdf7d7c22deb03b45fc` |
+| 1 | `def` | [Ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/ext.md) | 40 | `declaration-track:598ca5331c73d48a0c7acea287ec67815fd195dae18cb0a1f4666e93849614c1` |
+| 2 | `def` | [ChainComplex.linearYonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/chaincomplex-linearyonedaobj.md) | 57 | `declaration-track:4600315300278ac8874c2b30398d0231713bce5d94a793f1825404937bafaa69` |
+| 3 | `def` | [isoExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/isoext.md) | 69 | `declaration-track:35718c00e34797154304a6fcae38dbe04415507c4161dbd7f5d97f5e04d31038` |
+| 4 | `lemma` | [isZero_Ext_succ_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtChainComplex.lean/declarations/iszero-ext-succ-of-projective.md) | 79 | `result-track:85cc0bdca79b09eff02479b89129aa2abbd6476638990cdf7d7c22deb03b45fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

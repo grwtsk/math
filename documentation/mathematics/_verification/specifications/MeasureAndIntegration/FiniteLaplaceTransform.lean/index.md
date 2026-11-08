@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace`](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pickupDirichletPrefix](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupdirichletprefix.md) | 15 | `declaration-track:61decf116489f36fa54a46c5ebe77d2eac82c9460c0aebc61dfd5ef980c399b5` |
-| 2 | `def` | [pickupWeightedPrefix](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupweightedprefix.md) | 18 | `declaration-track:d4112a199dc1c7aae56fe77ecb84cd698fca4646f39a54af33b0621245690164` |
-| 3 | `def` | [pickupMertensPrefix](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupmertensprefix.md) | 21 | `declaration-track:9b76e366052ef6f28b9b582ccdba310a7b0a8ae6d9a008e5ada1f0f176ba5fee` |
-| 4 | `theorem` | [pickupMertensPrefix_at_cutoff](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupmertensprefix-at-cutoff.md) | 24 | `result-track:92c5fb094164ff389cc93f506a48be5eedb04705eb07478c45e495469f29f185` |
-| 5 | `theorem` | [finiteLaplace_exponential](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/finitelaplace-exponential.md) | 27 | `result-track:732b8a1d4b2cdc9d7d313ad71d038a0ae36ce9c16a5e3cd25c3be8f5fb1076f3` |
-| 6 | `theorem` | [pickupResponseWindow_at_birth](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupresponsewindow-at-birth.md) | 33 | `result-track:05d0f6e75cdff9026bc7eb9503273afcec6a5e8fb567ae9b3fe4ea45b1c5bc4b` |
-| 7 | `theorem` | [pickupResponseWindowLaplace](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupresponsewindowlaplace.md) | 50 | `result-track:7507b61c097684ae14b593d205a2efa23a7e76909becbacde6c9306598015e9b` |
-| 8 | `theorem` | [noteWindowLaplace_fixed_inventory](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/notewindowlaplace-fixed-inventory.md) | 110 | `result-track:6311631736c3b6d999df8a6d65a4b4477afff8586c34b9ee348fef1c9342938d` |
-| 9 | `theorem` | [wholePickup_cutoff_laplace](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/wholepickup-cutoff-laplace.md) | 143 | `result-track:1f21d2c684435d4514d25059b2662be39ea689564a948d791987a22e136e6dd8` |
-| 10 | `theorem` | [noteWindowLaplace_zero](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/notewindowlaplace-zero.md) | 166 | `result-track:22a91426afe5b1a039a430112b8653c98cf2d1ef0ef3f7a152efdae067e637bf` |
-| 11 | `theorem` | [cutoff_zero_not_without_weighted_endpoint](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-zero-not-without-weighted-endpoint.md) | 170 | `result-track:a49bd1ece47eb7164e33036a234165bcaef06ea94875c11348cdb721437aefbc` |
-| 12 | `theorem` | [cutoff_zero_not_without_mertens_endpoint](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-zero-not-without-mertens-endpoint.md) | 175 | `result-track:35bb2f4a73f03bd89f94d1e0d3129b55ecb3d17bb11e7bff3d29eeefb733d02d` |
-| 13 | `theorem` | [cutoff_three_product_debt](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-three-product-debt.md) | 181 | `result-track:7550080f445f92b0419f5fd42cca838b78d6e50802ebd4b16523812dbf448946` |
-| 14 | `theorem` | [cutoff_three_not_raw_product](../../../../MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-three-not-raw-product.md) | 205 | `result-track:610c559b84d7f5424d942ccbbe6e79978097f1fbde520335830d1676f0e5f4d1` |
+| 1 | `def` | [pickupDirichletPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupdirichletprefix.md) | 15 | `declaration-track:61decf116489f36fa54a46c5ebe77d2eac82c9460c0aebc61dfd5ef980c399b5` |
+| 2 | `def` | [pickupWeightedPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupweightedprefix.md) | 18 | `declaration-track:d4112a199dc1c7aae56fe77ecb84cd698fca4646f39a54af33b0621245690164` |
+| 3 | `def` | [pickupMertensPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupmertensprefix.md) | 21 | `declaration-track:9b76e366052ef6f28b9b582ccdba310a7b0a8ae6d9a008e5ada1f0f176ba5fee` |
+| 4 | `theorem` | [pickupMertensPrefix_at_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupmertensprefix-at-cutoff.md) | 24 | `result-track:92c5fb094164ff389cc93f506a48be5eedb04705eb07478c45e495469f29f185` |
+| 5 | `theorem` | [finiteLaplace_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/finitelaplace-exponential.md) | 27 | `result-track:732b8a1d4b2cdc9d7d313ad71d038a0ae36ce9c16a5e3cd25c3be8f5fb1076f3` |
+| 6 | `theorem` | [pickupResponseWindow_at_birth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupresponsewindow-at-birth.md) | 33 | `result-track:05d0f6e75cdff9026bc7eb9503273afcec6a5e8fb567ae9b3fe4ea45b1c5bc4b` |
+| 7 | `theorem` | [pickupResponseWindowLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/pickupresponsewindowlaplace.md) | 50 | `result-track:7507b61c097684ae14b593d205a2efa23a7e76909becbacde6c9306598015e9b` |
+| 8 | `theorem` | [noteWindowLaplace_fixed_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/notewindowlaplace-fixed-inventory.md) | 110 | `result-track:6311631736c3b6d999df8a6d65a4b4477afff8586c34b9ee348fef1c9342938d` |
+| 9 | `theorem` | [wholePickup_cutoff_laplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/wholepickup-cutoff-laplace.md) | 143 | `result-track:1f21d2c684435d4514d25059b2662be39ea689564a948d791987a22e136e6dd8` |
+| 10 | `theorem` | [noteWindowLaplace_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/notewindowlaplace-zero.md) | 166 | `result-track:22a91426afe5b1a039a430112b8653c98cf2d1ef0ef3f7a152efdae067e637bf` |
+| 11 | `theorem` | [cutoff_zero_not_without_weighted_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-zero-not-without-weighted-endpoint.md) | 170 | `result-track:a49bd1ece47eb7164e33036a234165bcaef06ea94875c11348cdb721437aefbc` |
+| 12 | `theorem` | [cutoff_zero_not_without_mertens_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-zero-not-without-mertens-endpoint.md) | 175 | `result-track:35bb2f4a73f03bd89f94d1e0d3129b55ecb3d17bb11e7bff3d29eeefb733d02d` |
+| 13 | `theorem` | [cutoff_three_product_debt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-three-product-debt.md) | 181 | `result-track:7550080f445f92b0419f5fd42cca838b78d6e50802ebd4b16523812dbf448946` |
+| 14 | `theorem` | [cutoff_three_not_raw_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceTransform.lean/declarations/cutoff-three-not-raw-product.md) | 205 | `result-track:610c559b84d7f5424d942ccbbe6e79978097f1fbde520335830d1676f0e5f4d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_derivative_energy_pos](../../../../MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/actual-derivative-energy-pos.md) | 20 | `result-track:5768d93a10197a5a8ef7ee76c683f814c0d83efaf5903f398b7c8b1c195357ac` |
-| 2 | `theorem` | [sourceCorrelation_curvature_at_zero](../../../../MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/sourcecorrelation-curvature-at-zero.md) | 34 | `result-track:5e88cac4a175efe648b5dfca55bec969dde9b0e13a686d2045d596177aaead8d` |
-| 3 | `theorem` | [sourceCorrelation_curvature_at_zero_neg](../../../../MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/sourcecorrelation-curvature-at-zero-neg.md) | 39 | `result-track:8adb57e91b9971725f5d338e9102244812c96c13716e8f83f250b5232e5df0fc` |
-| 4 | `theorem` | [positive_autocorrelation_formula_false](../../../../MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/positive-autocorrelation-formula-false.md) | 44 | `result-track:242039a6bccf76b597c3a12b442dec1bbb3acb4d1a03301cf72de6eaabdc4b91` |
+| 1 | `theorem` | [actual_derivative_energy_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/actual-derivative-energy-pos.md) | 20 | `result-track:5768d93a10197a5a8ef7ee76c683f814c0d83efaf5903f398b7c8b1c195357ac` |
+| 2 | `theorem` | [sourceCorrelation_curvature_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/sourcecorrelation-curvature-at-zero.md) | 34 | `result-track:5e88cac4a175efe648b5dfca55bec969dde9b0e13a686d2045d596177aaead8d` |
+| 3 | `theorem` | [sourceCorrelation_curvature_at_zero_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/sourcecorrelation-curvature-at-zero-neg.md) | 39 | `result-track:8adb57e91b9971725f5d338e9102244812c96c13716e8f83f250b5232e5df0fc` |
+| 4 | `theorem` | [positive_autocorrelation_formula_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationCurvatureSignNamespaced.lean/declarations/positive-autocorrelation-formula-false.md) | 44 | `result-track:242039a6bccf76b597c3a12b442dec1bbb3acb4d1a03301cf72de6eaabdc4b91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

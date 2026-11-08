@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eventually_nnnorm_sub_lt](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/declarations/eventually-nnnorm-sub-lt.md) | 38 | `result-track:ea220cf739e25bed5b778b527184105a5abed2c494751d0b0e1ac5b85b1e2cfe` |
-| 2 | `theorem` | [eventually_norm_sub_lt](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/declarations/eventually-norm-sub-lt.md) | 42 | `result-track:4db7cd0a3d96e3a14a22090b9809ba9c2bd9c4a0ae301fd07f9ad029be26b9a8` |
-| 3 | `lemma` | [Subgroup.dense_of_infDist_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/declarations/subgroup-dense-of-infdist-le.md) | 54 | `result-track:dfdb246b43270d9865080190f7d23335e7c217e347e7e77bdf02874362b39300` |
+| 1 | `theorem` | [eventually_nnnorm_sub_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/declarations/eventually-nnnorm-sub-lt.md) | 38 | `result-track:ea220cf739e25bed5b778b527184105a5abed2c494751d0b0e1ac5b85b1e2cfe` |
+| 2 | `theorem` | [eventually_norm_sub_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/declarations/eventually-norm-sub-lt.md) | 42 | `result-track:4db7cd0a3d96e3a14a22090b9809ba9c2bd9c4a0ae301fd07f9ad029be26b9a8` |
+| 3 | `lemma` | [Subgroup.dense_of_infDist_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LemmasLemmasNamespacedPublic.lean/declarations/subgroup-dense-of-infdist-le.md) | 54 | `result-track:dfdb246b43270d9865080190f7d23335e7c217e347e7e77bdf02874362b39300` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

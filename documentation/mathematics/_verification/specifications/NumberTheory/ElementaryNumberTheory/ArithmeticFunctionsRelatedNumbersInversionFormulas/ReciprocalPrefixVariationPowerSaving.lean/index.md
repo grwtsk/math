@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixDensityAdapterHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability`](../../../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixDensityAdapterHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocalPrefixVariationSquare_le_four_mul](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocalprefixvariationsquare-le-four-mul.md) | 33 | `result-track:730fcb5b6fb80d1571c018f38d2af139c859c1b60bf58e3b94369637c9a0d3cf` |
-| 2 | `def` | [ReciprocalVariationPowerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocalvariationpowersaving.md) | 57 | `declaration-track:a9acf565b19e3cab1771ac49bfe54d07b4a231da82c627491b02520fd791efe8` |
-| 3 | `theorem` | [reciprocalLogVariationMajorant_le_of_powerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocallogvariationmajorant-le-of-powersaving.md) | 64 | `result-track:ca6effc55775262a7da6bb873eb5174f9ac05ce897dd79c97823f97c1495dbfc` |
-| 4 | `theorem` | [reciprocalLogVariationSummable_of_powerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocallogvariationsummable-of-powersaving.md) | 124 | `result-track:a419f3bcdda9c711b7ec30ec6fd8ede91cf2c5d4bbb8da14227b55469a14b76a` |
-| 5 | `theorem` | [criticalBoundary_of_reciprocalPrefixVariationPowerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/criticalboundary-of-reciprocalprefixvariationpowersaving.md) | 137 | `result-track:93ca4c731277cf5ebf762268930202982c83877a637d58d9a6c23ab721c542d5` |
+| 1 | `theorem` | [reciprocalPrefixVariationSquare_le_four_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocalprefixvariationsquare-le-four-mul.md) | 33 | `result-track:730fcb5b6fb80d1571c018f38d2af139c859c1b60bf58e3b94369637c9a0d3cf` |
+| 2 | `def` | [ReciprocalVariationPowerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocalvariationpowersaving.md) | 57 | `declaration-track:a9acf565b19e3cab1771ac49bfe54d07b4a231da82c627491b02520fd791efe8` |
+| 3 | `theorem` | [reciprocalLogVariationMajorant_le_of_powerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocallogvariationmajorant-le-of-powersaving.md) | 64 | `result-track:ca6effc55775262a7da6bb873eb5174f9ac05ce897dd79c97823f97c1495dbfc` |
+| 4 | `theorem` | [reciprocalLogVariationSummable_of_powerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/reciprocallogvariationsummable-of-powersaving.md) | 124 | `result-track:a419f3bcdda9c711b7ec30ec6fd8ede91cf2c5d4bbb8da14227b55469a14b76a` |
+| 5 | `theorem` | [criticalBoundary_of_reciprocalPrefixVariationPowerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationPowerSaving.lean/declarations/criticalboundary-of-reciprocalprefixvariationpowersaving.md) | 137 | `result-track:93ca4c731277cf5ebf762268930202982c83877a637d58d9a6c23ab721c542d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

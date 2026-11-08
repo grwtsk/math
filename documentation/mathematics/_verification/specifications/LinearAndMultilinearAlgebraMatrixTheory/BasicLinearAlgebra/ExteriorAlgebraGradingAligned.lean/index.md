@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GradedAlgebra.ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-source-edition-2.md) | 32 | `declaration-track:b626a313d57553227c92f0843ee41a50e6442c9d9fc0f34c37410f1af29cd22e` |
-| 2 | `theorem` | [GradedAlgebra.ι_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-apply.md) | 39 | `result-track:d9dda06be6e961f7b7d3a5ca9ad7e8afbba954faa26a412051792d6fa809ed93` |
-| 3 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/instance.md) | 48 | `declaration-track:8c016d6dfad0a645d67156850c075b466049fabd9bb3b613723c0690e472b518` |
-| 4 | `theorem` | [GradedAlgebra.ι_sq_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-sq-zero.md) | 50 | `result-track:21e71e56c85e33d79743dc617234addcd46334006ad2ab3de6770160fa8213b1` |
-| 5 | `def` | [GradedAlgebra.liftι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-lift.md) | 58 | `declaration-track:0aef4037f28998a9f829dd88eddaab5c7931840edd83fc0c3186816e2bcb2860` |
-| 6 | `theorem` | [GradedAlgebra.liftι_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-lift-eq.md) | 65 | `result-track:a2e36e9c105cea0ee08c2acc3f5eaefbeee5293c72609213797e8927d2bea5e3` |
-| 7 | `instance` | [gradedAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra.md) | 90 | `declaration-track:ad86e4b3c8bf2dcecbd1976f98be3221ca73c8813091f7ed1b1998da66c2e0a7` |
+| 1 | `def` | [GradedAlgebra.ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-source-edition-2.md) | 32 | `declaration-track:b626a313d57553227c92f0843ee41a50e6442c9d9fc0f34c37410f1af29cd22e` |
+| 2 | `theorem` | [GradedAlgebra.ι_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-apply.md) | 39 | `result-track:d9dda06be6e961f7b7d3a5ca9ad7e8afbba954faa26a412051792d6fa809ed93` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/instance.md) | 48 | `declaration-track:8c016d6dfad0a645d67156850c075b466049fabd9bb3b613723c0690e472b518` |
+| 4 | `theorem` | [GradedAlgebra.ι_sq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-sq-zero.md) | 50 | `result-track:21e71e56c85e33d79743dc617234addcd46334006ad2ab3de6770160fa8213b1` |
+| 5 | `def` | [GradedAlgebra.liftι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-lift.md) | 58 | `declaration-track:0aef4037f28998a9f829dd88eddaab5c7931840edd83fc0c3186816e2bcb2860` |
+| 6 | `theorem` | [GradedAlgebra.liftι_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra-lift-eq.md) | 65 | `result-track:a2e36e9c105cea0ee08c2acc3f5eaefbeee5293c72609213797e8927d2bea5e3` |
+| 7 | `instance` | [gradedAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGradingAligned.lean/declarations/gradedalgebra.md) | 90 | `declaration-track:ad86e4b3c8bf2dcecbd1976f98be3221ca73c8813091f7ed1b1998da66c2e0a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

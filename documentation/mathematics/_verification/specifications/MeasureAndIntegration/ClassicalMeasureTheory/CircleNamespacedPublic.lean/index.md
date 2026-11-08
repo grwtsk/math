@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:74730d49a47c57bf704bb476e69e84c1633db6538f6a2665e84c87c7c3651fa0` |
-| 2 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/instance.md) | 39 | `declaration-track:0831c977617e676a99da13619dc181a64918940be0ef897931676feaffbc6a2f` |
-| 3 | `lemma` | [measurable_coe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/measurable-coe.md) | 42 | `result-track:2270801dcf32a30428d0ece0ea9358f1b9d98da9b6034087dad0ff54c22e4be1` |
-| 4 | `lemma` | [measurable_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/measurable-iff.md) | 44 | `result-track:3b5c207f21e0f9d4caa617f20a6217e4b294e528eb2cb912530add45a7ae7210` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:74730d49a47c57bf704bb476e69e84c1633db6538f6a2665e84c87c7c3651fa0` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/instance.md) | 39 | `declaration-track:0831c977617e676a99da13619dc181a64918940be0ef897931676feaffbc6a2f` |
+| 3 | `lemma` | [measurable_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/measurable-coe.md) | 42 | `result-track:2270801dcf32a30428d0ece0ea9358f1b9d98da9b6034087dad0ff54c22e4be1` |
+| 4 | `lemma` | [measurable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CircleNamespacedPublic.lean/declarations/measurable-iff.md) | 44 | `result-track:3b5c207f21e0f9d4caa617f20a6217e4b294e528eb2cb912530add45a7ae7210` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

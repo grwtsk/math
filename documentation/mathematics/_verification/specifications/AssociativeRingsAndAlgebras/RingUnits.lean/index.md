@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/instance.md) | 30 | `declaration-track:2f58a8fee6b95db10e66666244e4592a2e33436dd47f92dedabceeca6620fe76` |
-| 2 | `theorem` | [val_neg](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/val-neg.md) | 36 | `result-track:4ccd513812be1152f0e64a82589740316ee1522771cd41bf05f35ca3f8e7c744` |
-| 3 | `theorem` | [coe_neg_one](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/coe-neg-one.md) | 41 | `result-track:056a1d2ffebf8ddcd17f29d212320c7280089601677979bdbaad617c3eb988a8` |
-| 4 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:f3cbcf118bb477849bdf119757ca19875b632b5961a685091cb7b4fadd388066` |
-| 5 | `theorem` | [neg_divp](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/neg-divp.md) | 49 | `result-track:e63a178c0ba5839d2b640fc912291808650ab751e171b5ba3e5aa939503ae299` |
-| 6 | `theorem` | [divp_add_divp_same](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-add-divp-same.md) | 60 | `result-track:3c1ca6fe787bfd5f249cc187958365d08c5a9a4754374635c4025b8262617044` |
-| 7 | `theorem` | [divp_sub_divp_same](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-sub-divp-same.md) | 66 | `result-track:c4fe181b271fad590914e6484069cbd6cf64f8e8dd24010fc8450cb797476002` |
-| 8 | `theorem` | [add_divp](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/add-divp.md) | 71 | `result-track:703e166398c9d94d27124dba1777c6bb7930d83b324bc633ac8755f76954e013` |
-| 9 | `theorem` | [sub_divp](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/sub-divp.md) | 76 | `result-track:7e09b3520aad3cb010ce028810d52dec7f3b70e5627ccd5aed4de13006ffa10e` |
-| 10 | `theorem` | [divp_add](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-add.md) | 81 | `result-track:d738d410a3a3591da82f148f5448e91408dd4d9b99613bc32596bebe60574f1b` |
-| 11 | `theorem` | [divp_sub](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-sub.md) | 86 | `result-track:3d97c97c52a9739398f81a0849f3cdefc9c2e94218344b5fc8ff9e2e7a7ef36d` |
-| 12 | `theorem` | [IsUnit.neg](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/isunit-neg.md) | 95 | `result-track:b227c9c0015857b574c2cdcbee7e7227e11d871fdba7ae5d73d95cdd706eb662` |
-| 13 | `theorem` | [IsUnit.neg_iff](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/isunit-neg-iff.md) | 100 | `result-track:cfd41dad1ac345c861ee77f860a3065fc11f202c45f3ce7931e7eedc6191408d` |
-| 14 | `theorem` | [IsUnit.sub_iff](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/isunit-sub-iff.md) | 104 | `result-track:758845bca0124f0baf4fae70502022faa5e36309a40825a356f4d26e341606af` |
-| 15 | `theorem` | [divp_add_divp](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-add-divp.md) | 111 | `result-track:0af491c9be08b4ee3f70686cab288664bb266b2cf0bd73b9ddab03212a14f7cc` |
-| 16 | `theorem` | [divp_sub_divp](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-sub-divp.md) | 121 | `result-track:eb64d739b20d4032af6922753db701325ee57dcae838975e2dd4241b52cba2e9` |
-| 17 | `theorem` | [add_eq_mul_one_add_div](../../../../AssociativeRingsAndAlgebras/RingUnits.lean/declarations/add-eq-mul-one-add-div.md) | 126 | `result-track:62834cb7a01828d66ec4f690d5b385d75144b90cab85d3c92538db95fee4020a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/instance.md) | 30 | `declaration-track:2f58a8fee6b95db10e66666244e4592a2e33436dd47f92dedabceeca6620fe76` |
+| 2 | `theorem` | [val_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/val-neg.md) | 36 | `result-track:4ccd513812be1152f0e64a82589740316ee1522771cd41bf05f35ca3f8e7c744` |
+| 3 | `theorem` | [coe_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/coe-neg-one.md) | 41 | `result-track:056a1d2ffebf8ddcd17f29d212320c7280089601677979bdbaad617c3eb988a8` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:f3cbcf118bb477849bdf119757ca19875b632b5961a685091cb7b4fadd388066` |
+| 5 | `theorem` | [neg_divp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/neg-divp.md) | 49 | `result-track:e63a178c0ba5839d2b640fc912291808650ab751e171b5ba3e5aa939503ae299` |
+| 6 | `theorem` | [divp_add_divp_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-add-divp-same.md) | 60 | `result-track:3c1ca6fe787bfd5f249cc187958365d08c5a9a4754374635c4025b8262617044` |
+| 7 | `theorem` | [divp_sub_divp_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-sub-divp-same.md) | 66 | `result-track:c4fe181b271fad590914e6484069cbd6cf64f8e8dd24010fc8450cb797476002` |
+| 8 | `theorem` | [add_divp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/add-divp.md) | 71 | `result-track:703e166398c9d94d27124dba1777c6bb7930d83b324bc633ac8755f76954e013` |
+| 9 | `theorem` | [sub_divp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/sub-divp.md) | 76 | `result-track:7e09b3520aad3cb010ce028810d52dec7f3b70e5627ccd5aed4de13006ffa10e` |
+| 10 | `theorem` | [divp_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-add.md) | 81 | `result-track:d738d410a3a3591da82f148f5448e91408dd4d9b99613bc32596bebe60574f1b` |
+| 11 | `theorem` | [divp_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-sub.md) | 86 | `result-track:3d97c97c52a9739398f81a0849f3cdefc9c2e94218344b5fc8ff9e2e7a7ef36d` |
+| 12 | `theorem` | [IsUnit.neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/isunit-neg.md) | 95 | `result-track:b227c9c0015857b574c2cdcbee7e7227e11d871fdba7ae5d73d95cdd706eb662` |
+| 13 | `theorem` | [IsUnit.neg_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/isunit-neg-iff.md) | 100 | `result-track:cfd41dad1ac345c861ee77f860a3065fc11f202c45f3ce7931e7eedc6191408d` |
+| 14 | `theorem` | [IsUnit.sub_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/isunit-sub-iff.md) | 104 | `result-track:758845bca0124f0baf4fae70502022faa5e36309a40825a356f4d26e341606af` |
+| 15 | `theorem` | [divp_add_divp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-add-divp.md) | 111 | `result-track:0af491c9be08b4ee3f70686cab288664bb266b2cf0bd73b9ddab03212a14f7cc` |
+| 16 | `theorem` | [divp_sub_divp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/divp-sub-divp.md) | 121 | `result-track:eb64d739b20d4032af6922753db701325ee57dcae838975e2dd4241b52cba2e9` |
+| 17 | `theorem` | [add_eq_mul_one_add_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingUnits.lean/declarations/add-eq-mul-one-add-div.md) | 126 | `result-track:62834cb7a01828d66ec4f690d5b385d75144b90cab85d3c92538db95fee4020a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

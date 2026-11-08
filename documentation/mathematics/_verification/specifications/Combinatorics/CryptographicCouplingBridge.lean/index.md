@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CryptographicCouplingBridge.lean/index.md) · [Full source](../../../../Combinatorics/CryptographicCouplingBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EffectiveArithmeticSecurityAssignment](../../../../Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecurityassignment.md) | 28 | `declaration-track:9424aaf1eeb708f585ba3e9a8f06683a876bee398039ea9e551c237855771529` |
-| 2 | `def` | [EffectiveArithmeticSecurityAssignment.adversaryProfile](../../../../Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecurityassignment-adversaryprofile.md) | 62 | `declaration-track:8343755d3bdb3a6d5b746057a033ea7ebb6552490dbb2a4ebc4c25550097833d` |
-| 3 | `theorem` | [EffectiveArithmeticSecurityAssignment.profile_hardness_certified](../../../../Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecurityassignment-profile-hardness-certified.md) | 80 | `result-track:96f644b297aa73d336676d9ca55a3c39acb0051605374a7fbb7c0c71a249add5` |
-| 4 | `structure` | [EffectiveArithmeticSecurityCoupling](../../../../Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecuritycoupling.md) | 100 | `declaration-track:244d99a587564d28f966f34edef207b37a2d44b2b4b595a6e0ca16e9ba41dce7` |
-| 5 | `structure` | [HolonomyQueryProgress](../../../../Combinatorics/CryptographicCouplingBridge.lean/declarations/holonomyqueryprogress.md) | 132 | `declaration-track:be3df8b36e667d185e4137e45d2020fd6eb6bc0b2c6078d82700d83fc2d06ffe` |
+| 1 | `structure` | [EffectiveArithmeticSecurityAssignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecurityassignment.md) | 28 | `declaration-track:9424aaf1eeb708f585ba3e9a8f06683a876bee398039ea9e551c237855771529` |
+| 2 | `def` | [EffectiveArithmeticSecurityAssignment.adversaryProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecurityassignment-adversaryprofile.md) | 62 | `declaration-track:8343755d3bdb3a6d5b746057a033ea7ebb6552490dbb2a4ebc4c25550097833d` |
+| 3 | `theorem` | [EffectiveArithmeticSecurityAssignment.profile_hardness_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecurityassignment-profile-hardness-certified.md) | 80 | `result-track:96f644b297aa73d336676d9ca55a3c39acb0051605374a7fbb7c0c71a249add5` |
+| 4 | `structure` | [EffectiveArithmeticSecurityCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingBridge.lean/declarations/effectivearithmeticsecuritycoupling.md) | 100 | `declaration-track:244d99a587564d28f966f34edef207b37a2d44b2b4b595a6e0ca16e9ba41dce7` |
+| 5 | `structure` | [HolonomyQueryProgress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingBridge.lean/declarations/holonomyqueryprogress.md) | 132 | `declaration-track:be3df8b36e667d185e4137e45d2020fd6eb6bc0b2c6078d82700d83fc2d06ffe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

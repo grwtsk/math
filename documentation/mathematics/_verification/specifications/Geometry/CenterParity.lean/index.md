@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CenterParity.lean/index.md) · [Full source](../../../../Geometry/CenterParity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Geometry.GridCell` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 20; external provider; requires a separately pinned dependency.
-- [Certified Interior Multiplicity](../../../../Geometry/CertifiedInteriorMultiplicity.lean/index.md) — import line 22; pinned internal source present.
+- [Certified Interior Multiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [center](../../../../Geometry/CenterParity.lean/declarations/center.md) | 41 | `declaration-track:5f55d9847054b9339484847c912689ef482ad2701d0f9463d379ec5efa95b2d5` |
-| 2 | `def` | [oddCenterIndex](../../../../Geometry/CenterParity.lean/declarations/oddcenterindex.md) | 44 | `declaration-track:7a9b002f79e8417eafcd0a30ce85b9f6f8247d6141f3c8b3b849f2211bc9540a` |
-| 3 | `def` | [evenCenterLeft](../../../../Geometry/CenterParity.lean/declarations/evencenterleft.md) | 48 | `declaration-track:ae59850ce9162550798c0102836aae33aabb666238eabda82b7afd440631368e` |
-| 4 | `def` | [evenCenterRight](../../../../Geometry/CenterParity.lean/declarations/evencenterright.md) | 52 | `declaration-track:6a763ce0feafdad5a2e70b72e946555b504e6418d9071aa22f9a3028450a3887` |
-| 5 | `theorem` | [odd_center_axisCarriers](../../../../Geometry/CenterParity.lean/declarations/odd-center-axiscarriers.md) | 57 | `result-track:18e9473e518736cc1b1746ec8f44335cdcd81e274a1c436d9c5d845b27128859` |
-| 6 | `theorem` | [even_center_axisCarriers](../../../../Geometry/CenterParity.lean/declarations/even-center-axiscarriers.md) | 69 | `result-track:7393632dc1843e77eb421164a2e454ae89bfb9aab1a545f4996e13487bb95e22` |
-| 7 | `theorem` | [odd_center_carrierMultiplicity](../../../../Geometry/CenterParity.lean/declarations/odd-center-carriermultiplicity.md) | 80 | `result-track:35b0141051222673b62f4a01e7c49712e1093ccbb2688d3a94bd34889a8273ab` |
-| 8 | `theorem` | [even_center_carrierMultiplicity](../../../../Geometry/CenterParity.lean/declarations/even-center-carriermultiplicity.md) | 87 | `result-track:ee92a2710af1d7f130fd81e0fa2b238eb198dcec28d842e93dadaa52d87a58f1` |
-| 9 | `theorem` | [odd_center_axisOriginMatches_iff](../../../../Geometry/CenterParity.lean/declarations/odd-center-axisoriginmatches-iff.md) | 101 | `result-track:4dd498bb98e739050ac07a3389c263ba48a7d1be26b7ea5ce49bbcb5af1e9b49` |
-| 10 | `theorem` | [even_center_axisOriginMatches_false](../../../../Geometry/CenterParity.lean/declarations/even-center-axisoriginmatches-false.md) | 123 | `result-track:eab883a3b4e0477aa5490b904c7918a9f9a9c00056f14a73b34c3ce8a0f1cafb` |
+| 1 | `def` | [center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/center.md) | 41 | `declaration-track:5f55d9847054b9339484847c912689ef482ad2701d0f9463d379ec5efa95b2d5` |
+| 2 | `def` | [oddCenterIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/oddcenterindex.md) | 44 | `declaration-track:7a9b002f79e8417eafcd0a30ce85b9f6f8247d6141f3c8b3b849f2211bc9540a` |
+| 3 | `def` | [evenCenterLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/evencenterleft.md) | 48 | `declaration-track:ae59850ce9162550798c0102836aae33aabb666238eabda82b7afd440631368e` |
+| 4 | `def` | [evenCenterRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/evencenterright.md) | 52 | `declaration-track:6a763ce0feafdad5a2e70b72e946555b504e6418d9071aa22f9a3028450a3887` |
+| 5 | `theorem` | [odd_center_axisCarriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/odd-center-axiscarriers.md) | 57 | `result-track:18e9473e518736cc1b1746ec8f44335cdcd81e274a1c436d9c5d845b27128859` |
+| 6 | `theorem` | [even_center_axisCarriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/even-center-axiscarriers.md) | 69 | `result-track:7393632dc1843e77eb421164a2e454ae89bfb9aab1a545f4996e13487bb95e22` |
+| 7 | `theorem` | [odd_center_carrierMultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/odd-center-carriermultiplicity.md) | 80 | `result-track:35b0141051222673b62f4a01e7c49712e1093ccbb2688d3a94bd34889a8273ab` |
+| 8 | `theorem` | [even_center_carrierMultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/even-center-carriermultiplicity.md) | 87 | `result-track:ee92a2710af1d7f130fd81e0fa2b238eb198dcec28d842e93dadaa52d87a58f1` |
+| 9 | `theorem` | [odd_center_axisOriginMatches_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/odd-center-axisoriginmatches-iff.md) | 101 | `result-track:4dd498bb98e739050ac07a3389c263ba48a7d1be26b7ea5ce49bbcb5af1e9b49` |
+| 10 | `theorem` | [even_center_axisOriginMatches_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CenterParity.lean/declarations/even-center-axisoriginmatches-false.md) | 123 | `result-track:eab883a3b4e0477aa5490b904c7918a9f9a9c00056f14a73b34c3ce8a0f1cafb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

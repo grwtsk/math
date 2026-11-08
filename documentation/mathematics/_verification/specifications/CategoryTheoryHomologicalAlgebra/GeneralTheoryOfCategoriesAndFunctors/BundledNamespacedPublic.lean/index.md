@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Bundled](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/bundled.md) | 45 | `declaration-track:45f87a6f78229cce3220d8bbfbd5b088c0ef614d985613d4c5fc33378de86b8b` |
-| 2 | `def` | [of](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/of.md) | 63 | `declaration-track:46864a05ff6c942a97353b3bb2f2e0019b987b37c1a196147152a5c0d2e15dc8` |
-| 3 | `instance` | [coeSort](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/coesort.md) | 66 | `declaration-track:92fdf86f3f0eba4a58cd84f508d120e1c8f5a2b1960ea80e2efd35ccd7e9c8c7` |
-| 4 | `theorem` | [coe_mk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/coe-mk.md) | 69 | `result-track:299444b065bd6acb8d3407efee1d4b91c0ee3a9c7e24881c2c2c0fe8bd00bfde` |
-| 5 | `abbrev` | [map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/map.md) | 73 | `declaration-track:0071378ef28a8e1a2e34a10eacb5ca1a8d6385c3e1c6cabee4b4d8fb6a64a9c1` |
+| 1 | `structure` | [Bundled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/bundled.md) | 45 | `declaration-track:45f87a6f78229cce3220d8bbfbd5b088c0ef614d985613d4c5fc33378de86b8b` |
+| 2 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/of.md) | 63 | `declaration-track:46864a05ff6c942a97353b3bb2f2e0019b987b37c1a196147152a5c0d2e15dc8` |
+| 3 | `instance` | [coeSort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/coesort.md) | 66 | `declaration-track:92fdf86f3f0eba4a58cd84f508d120e1c8f5a2b1960ea80e2efd35ccd7e9c8c7` |
+| 4 | `theorem` | [coe_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/coe-mk.md) | 69 | `result-track:299444b065bd6acb8d3407efee1d4b91c0ee3a9c7e24881c2c2c0fe8bd00bfde` |
+| 5 | `abbrev` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledNamespacedPublic.lean/declarations/map.md) | 73 | `declaration-track:0071378ef28a8e1a2e34a10eacb5ca1a8d6385c3e1c6cabee4b4d8fb6a64a9c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

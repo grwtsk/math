@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uncurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/uncurry.md) | 38 | `declaration-track:5e8714c86a00efa2a8af3e1f1f08364b5b1ea8cece3964fb115b22479e352a70` |
-| 2 | `def` | [curryObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/curryobj.md) | 60 | `declaration-track:fd1dcd84259a434d46cd84c91cda06b28e042f4942b1c4d1cdf50e464c78a976` |
-| 3 | `def` | [curry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/curry.md) | 77 | `declaration-track:3ff599446942529a24b9c5c6ecea14ccba4eb5401e786185ac0522fbb007f9fa` |
-| 4 | `def` | [currying](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/currying.md) | 94 | `declaration-track:62520b2167301a13cae4261cc835977024641ae7688c73d0ae6a18c9274d806a` |
-| 5 | `def` | [flipIsoCurrySwapUncurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/flipisocurryswapuncurry.md) | 104 | `declaration-track:c8a6bbe5e21d7e512887ae45efffd208bbdcc1b141eef0ef71f7051f86fd5edf` |
-| 6 | `def` | [uncurryObjFlip](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/uncurryobjflip.md) | 111 | `declaration-track:412284efb7d24a37112abe421f25099b3b925074495ff26998bb992be4a4dd4b` |
-| 7 | `def` | [whiskeringRight₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/whiskeringright.md) | 121 | `declaration-track:58146eb2bd6814ed54dffa765e55f3bb2a6570f2ced18ddd17c508758d891061` |
+| 1 | `def` | [uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/uncurry.md) | 38 | `declaration-track:5e8714c86a00efa2a8af3e1f1f08364b5b1ea8cece3964fb115b22479e352a70` |
+| 2 | `def` | [curryObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/curryobj.md) | 60 | `declaration-track:fd1dcd84259a434d46cd84c91cda06b28e042f4942b1c4d1cdf50e464c78a976` |
+| 3 | `def` | [curry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/curry.md) | 77 | `declaration-track:3ff599446942529a24b9c5c6ecea14ccba4eb5401e786185ac0522fbb007f9fa` |
+| 4 | `def` | [currying](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/currying.md) | 94 | `declaration-track:62520b2167301a13cae4261cc835977024641ae7688c73d0ae6a18c9274d806a` |
+| 5 | `def` | [flipIsoCurrySwapUncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/flipisocurryswapuncurry.md) | 104 | `declaration-track:c8a6bbe5e21d7e512887ae45efffd208bbdcc1b141eef0ef71f7051f86fd5edf` |
+| 6 | `def` | [uncurryObjFlip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/uncurryobjflip.md) | 111 | `declaration-track:412284efb7d24a37112abe421f25099b3b925074495ff26998bb992be4a4dd4b` |
+| 7 | `def` | [whiskeringRight₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CurryingNamespaced.lean/declarations/whiskeringright.md) | 121 | `declaration-track:58146eb2bd6814ed54dffa765e55f3bb2a6570f2ced18ddd17c508758d891061` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

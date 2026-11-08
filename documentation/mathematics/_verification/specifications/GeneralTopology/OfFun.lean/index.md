@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OfFun.lean/index.md) · [Full source](../../../../GeneralTopology/OfFun.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFun.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFun.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofFun](../../../../GeneralTopology/OfFun.lean/declarations/offun.md) | 28 | `declaration-track:678d7d3d1a1400c3cf3b265273f10228ef70dd8e3e30dfe5fef8076c0a42fd65` |
-| 2 | `theorem` | [hasBasis_ofFun](../../../../GeneralTopology/OfFun.lean/declarations/hasbasis-offun.md) | 43 | `result-track:26e489bd247fdf76747cc84176f895b090a8476a8544929f9eff4516a48a773a` |
+| 1 | `def` | [ofFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFun.lean/declarations/offun.md) | 28 | `declaration-track:678d7d3d1a1400c3cf3b265273f10228ef70dd8e3e30dfe5fef8076c0a42fd65` |
+| 2 | `theorem` | [hasBasis_ofFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFun.lean/declarations/hasbasis-offun.md) | 43 | `result-track:26e489bd247fdf76747cc84176f895b090a8476a8544929f9eff4516a48a773a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/WeightedInvolution.lean/index.md) · [Full source](../../../../CommutativeAlgebra/WeightedInvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [operator](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operator.md) | 21 | `declaration-track:ddf9be59251ea415f9da1ae15bf4b496f7408d8ebf506757c4aa78350e48fb7c` |
-| 2 | `theorem` | [operator_apply](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-apply.md) | 28 | `result-track:b21c00d4dfa67c84d83b916d010a13e2847a8ee7e8989d96dd41b3803c131cc2` |
-| 3 | `theorem` | [operator_one](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-one.md) | 31 | `result-track:8995d174b3abf530c36b4f1740958abfc22bb9910ab969e7e3372e683aba64ea` |
-| 4 | `theorem` | [operator_square](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-square.md) | 35 | `result-track:463e5294613c88c4d99bf09626148608ded745b18ba4dbbe74fe9323727355a1` |
-| 5 | `theorem` | [operator_graded_mul](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-graded-mul.md) | 45 | `result-track:bf3d59e663c59319410cbf95101027da222ce8faff3cfceb7fb686ded134c981` |
-| 6 | `theorem` | [operator_succ](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-succ.md) | 52 | `result-track:6c75e3d9a23335669dbd07011442bb48a0703557d3f7c3f3ac2ac00b8dd66563` |
-| 7 | `theorem` | [normalized_square](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/normalized-square.md) | 58 | `result-track:71842e08f884a8de309625d195f582a39141e96b0cbb57b8aa4f1085293cc802` |
-| 8 | `def` | [operatorEquiv](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operatorequiv.md) | 70 | `declaration-track:297bc227d86b918f64fb85d1ccd401f0ad64994083cbc6d1d09af6e7af863feb` |
-| 9 | `theorem` | [operatorEquiv_apply](../../../../CommutativeAlgebra/WeightedInvolution.lean/declarations/operatorequiv-apply.md) | 84 | `result-track:077847113fcbf4bb2ee8264bb59d23fa5899d2679c61a647d76dd320f4daa826` |
+| 1 | `def` | [operator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operator.md) | 21 | `declaration-track:ddf9be59251ea415f9da1ae15bf4b496f7408d8ebf506757c4aa78350e48fb7c` |
+| 2 | `theorem` | [operator_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-apply.md) | 28 | `result-track:b21c00d4dfa67c84d83b916d010a13e2847a8ee7e8989d96dd41b3803c131cc2` |
+| 3 | `theorem` | [operator_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-one.md) | 31 | `result-track:8995d174b3abf530c36b4f1740958abfc22bb9910ab969e7e3372e683aba64ea` |
+| 4 | `theorem` | [operator_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-square.md) | 35 | `result-track:463e5294613c88c4d99bf09626148608ded745b18ba4dbbe74fe9323727355a1` |
+| 5 | `theorem` | [operator_graded_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-graded-mul.md) | 45 | `result-track:bf3d59e663c59319410cbf95101027da222ce8faff3cfceb7fb686ded134c981` |
+| 6 | `theorem` | [operator_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operator-succ.md) | 52 | `result-track:6c75e3d9a23335669dbd07011442bb48a0703557d3f7c3f3ac2ac00b8dd66563` |
+| 7 | `theorem` | [normalized_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/normalized-square.md) | 58 | `result-track:71842e08f884a8de309625d195f582a39141e96b0cbb57b8aa4f1085293cc802` |
+| 8 | `def` | [operatorEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operatorequiv.md) | 70 | `declaration-track:297bc227d86b918f64fb85d1ccd401f0ad64994083cbc6d1d09af6e7af863feb` |
+| 9 | `theorem` | [operatorEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedInvolution.lean/declarations/operatorequiv-apply.md) | 84 | `result-track:077847113fcbf4bb2ee8264bb59d23fa5899d2679c61a647d76dd320f4daa826` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ComplementNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ComplementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ComplementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ComplementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complement_unique](../../../../AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-unique.md) | 22 | `result-track:f08544d66e40ee2b8eeff50f10584e596fcd8f42966442ae8f6743618f449923` |
-| 2 | `theorem` | [complement_involutive](../../../../AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-involutive.md) | 28 | `result-track:48849c4cce06070d44bbef7a4d46895b4658d720c7fb4d817f5d5275b83d7be1` |
-| 3 | `theorem` | [complement_join_eq_meet](../../../../AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-join-eq-meet.md) | 31 | `result-track:3c736b8370bc87b27dfc3e7713e6c9cc3a94ba23615aa8670b3732f827448996` |
-| 4 | `theorem` | [complement_meet_eq_join](../../../../AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-meet-eq-join.md) | 35 | `result-track:5d27b1a287e35ed3ccec83d6290105e84c4488ced4168bad8e573eba11b8cf1f` |
+| 1 | `theorem` | [complement_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-unique.md) | 22 | `result-track:f08544d66e40ee2b8eeff50f10584e596fcd8f42966442ae8f6743618f449923` |
+| 2 | `theorem` | [complement_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-involutive.md) | 28 | `result-track:48849c4cce06070d44bbef7a4d46895b4658d720c7fb4d817f5d5275b83d7be1` |
+| 3 | `theorem` | [complement_join_eq_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-join-eq-meet.md) | 31 | `result-track:3c736b8370bc87b27dfc3e7713e6c9cc3a94ba23615aa8670b3732f827448996` |
+| 4 | `theorem` | [complement_meet_eq_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ComplementNamespaced.lean/declarations/complement-meet-eq-join.md) | 35 | `result-track:5d27b1a287e35ed3ccec83d6290105e84c4488ced4168bad8e573eba11b8cf1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

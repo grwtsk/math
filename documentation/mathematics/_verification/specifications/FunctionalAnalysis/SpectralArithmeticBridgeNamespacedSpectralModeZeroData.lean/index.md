@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralModeZeroData](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/spectralmodezerodata.md) | 31 | `declaration-track:6a61bd9737996b3030775637f9759e1fb2ab970610e5c366428bd3f197492d13` |
-| 2 | `structure` | [LFunctionToSpectralZeroBridge](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/lfunctiontospectralzerobridge.md) | 38 | `declaration-track:50f6ae5df6946698acd6dc4b8ae53fb5b74af72a60bfc0c165f49bd694c2f0f0` |
-| 3 | `structure` | [HasseWeilGraphModel](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/hasseweilgraphmodel.md) | 46 | `declaration-track:f32850ebe3bbd419b04890d6d53915cea50a126997cb9712f94428327a065227` |
-| 4 | `structure` | [CriticalLineSpectralCriterion](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/criticallinespectralcriterion.md) | 57 | `declaration-track:21e0e0134a63df59113f9235f0725577cb6f1030407e11e9f142d315ab3ee797` |
-| 5 | `theorem` | [centered_from_spectral_arithmetic_bridge](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/centered-from-spectral-arithmetic-bridge.md) | 66 | `result-track:69e189e4577675f8f1fa95a3e59fbfeeacf425bb5382732e8901050d7c0c5185` |
+| 1 | `structure` | [SpectralModeZeroData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/spectralmodezerodata.md) | 31 | `declaration-track:6a61bd9737996b3030775637f9759e1fb2ab970610e5c366428bd3f197492d13` |
+| 2 | `structure` | [LFunctionToSpectralZeroBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/lfunctiontospectralzerobridge.md) | 38 | `declaration-track:50f6ae5df6946698acd6dc4b8ae53fb5b74af72a60bfc0c165f49bd694c2f0f0` |
+| 3 | `structure` | [HasseWeilGraphModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/hasseweilgraphmodel.md) | 46 | `declaration-track:f32850ebe3bbd419b04890d6d53915cea50a126997cb9712f94428327a065227` |
+| 4 | `structure` | [CriticalLineSpectralCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/criticallinespectralcriterion.md) | 57 | `declaration-track:21e0e0134a63df59113f9235f0725577cb6f1030407e11e9f142d315ab3ee797` |
+| 5 | `theorem` | [centered_from_spectral_arithmetic_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/centered-from-spectral-arithmetic-bridge.md) | 66 | `result-track:69e189e4577675f8f1fa95a3e59fbfeeacf425bb5382732e8901050d7c0c5185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

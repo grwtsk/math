@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarUnitCircleLift`](../../../../AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarUnitCircleLift`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Constructions` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Maps.Basic` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Compactness.Compact` — import line 11; external provider; requires a separately pinned dependency.
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [realPolarProduct](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/realpolarproduct.md) | 39 | `declaration-track:79ecfcccdccfa170239e4621233af1b36531e324040bab1c01b9603986a7ee29` |
-| 2 | `theorem` | [realPolarProduct_continuous](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/realpolarproduct-continuous.md) | 44 | `result-track:5a6ef9d12a66333a0265d0db006ea5950430c710bde475c879bbc50e3e562661` |
-| 3 | `def` | [polarProductProjection](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/polarproductprojection.md) | 54 | `declaration-track:e770642f5b8aa43f0243b620f4658876bd1084913b34244319e4d30afd2c1294` |
-| 4 | `theorem` | [polarProductProjection_continuous](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/polarproductprojection-continuous.md) | 60 | `result-track:66608c118395d4a997803420e48dcc0af382c5a46723a6aed12a6daff85e7b58` |
-| 5 | `theorem` | [polarProductProjection_surjective](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/polarproductprojection-surjective.md) | 67 | `result-track:5c5e443898bf95d1a09383e5824e548bdeb709b36a368c3f151599ec1b03687a` |
-| 6 | `def` | [unitCircleJointPolar](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/unitcirclejointpolar.md) | 74 | `declaration-track:34b7d01059c9fd7086ce86e3a96ecf4d53b783cbd85b0d06eecaa9e928e8c8f0` |
-| 7 | `theorem` | [unitCircleJointPolar_source](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/unitcirclejointpolar-source.md) | 79 | `result-track:f252e58803501b47ed0d9607d53c0f17156494a754f809ef0b4d44dd4ac1a481` |
-| 8 | `theorem` | [unitCircleJointPolar_continuous_of_quotient](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/unitcirclejointpolar-continuous-of-quotient.md) | 87 | `result-track:6721b9ef37e10aed1dc5e8f6a3b768a0c412e1985ea36f0d99eeb1e6ef042247` |
+| 1 | `def` | [realPolarProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/realpolarproduct.md) | 39 | `declaration-track:79ecfcccdccfa170239e4621233af1b36531e324040bab1c01b9603986a7ee29` |
+| 2 | `theorem` | [realPolarProduct_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/realpolarproduct-continuous.md) | 44 | `result-track:5a6ef9d12a66333a0265d0db006ea5950430c710bde475c879bbc50e3e562661` |
+| 3 | `def` | [polarProductProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/polarproductprojection.md) | 54 | `declaration-track:e770642f5b8aa43f0243b620f4658876bd1084913b34244319e4d30afd2c1294` |
+| 4 | `theorem` | [polarProductProjection_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/polarproductprojection-continuous.md) | 60 | `result-track:66608c118395d4a997803420e48dcc0af382c5a46723a6aed12a6daff85e7b58` |
+| 5 | `theorem` | [polarProductProjection_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/polarproductprojection-surjective.md) | 67 | `result-track:5c5e443898bf95d1a09383e5824e548bdeb709b36a368c3f151599ec1b03687a` |
+| 6 | `def` | [unitCircleJointPolar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/unitcirclejointpolar.md) | 74 | `declaration-track:34b7d01059c9fd7086ce86e3a96ecf4d53b783cbd85b0d06eecaa9e928e8c8f0` |
+| 7 | `theorem` | [unitCircleJointPolar_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/unitcirclejointpolar-source.md) | 79 | `result-track:f252e58803501b47ed0d9607d53c0f17156494a754f809ef0b4d44dd4ac1a481` |
+| 8 | `theorem` | [unitCircleJointPolar_continuous_of_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/declarations/unitcirclejointpolar-continuous-of-quotient.md) | 87 | `result-track:6721b9ef37e10aed1dc5e8f6a3b768a0c412e1985ea36f0d99eeb1e6ef042247` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

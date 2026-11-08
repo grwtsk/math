@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_encard](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/declarations/measurable-encard.md) | 29 | `result-track:6d037d3dbd33a2185a6e7a190686c6ecf4b8b753b5570f092f4bfc8497ef80d0` |
-| 2 | `theorem` | [measurable_ncard](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/declarations/measurable-ncard.md) | 34 | `result-track:f6fd11d248937ed22f5fc842335ec487fba1c1fe36f726aefab03fe7b17d9cd2` |
+| 1 | `theorem` | [measurable_encard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/declarations/measurable-encard.md) | 29 | `result-track:6d037d3dbd33a2185a6e7a190686c6ecf4b8b753b5570f092f4bfc8497ef80d0` |
+| 2 | `theorem` | [measurable_ncard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCardNamespaced.lean/declarations/measurable-ncard.md) | 34 | `result-track:f6fd11d248937ed22f5fc842335ec487fba1c1fe36f726aefab03fe7b17d9cd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

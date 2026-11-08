@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PointwiseGlobalIndexNonzeroTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/declarations/pointwiseglobalindexnonzerotarget.md) | 23 | `declaration-track:060d65fd78fee02c14fe8eb5339270c71f6a97d52b6b792eb9ce45241affc056` |
-| 2 | `theorem` | [pointwise_global_index_nonzero_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/declarations/pointwise-global-index-nonzero-if-supplied.md) | 33 | `result-track:bb63461ef1a7c831cdc5ce1c541a3db680d6531a8ead181a45677ef49e7dd47a` |
+| 1 | `structure` | [PointwiseGlobalIndexNonzeroTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/declarations/pointwiseglobalindexnonzerotarget.md) | 23 | `declaration-track:060d65fd78fee02c14fe8eb5339270c71f6a97d52b6b792eb9ce45241affc056` |
+| 2 | `theorem` | [pointwise_global_index_nonzero_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroBoundary.lean/declarations/pointwise-global-index-nonzero-if-supplied.md) | 33 | `result-track:bb63461ef1a7c831cdc5ce1c541a3db680d6531a8ead181a45677ef49e7dd47a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

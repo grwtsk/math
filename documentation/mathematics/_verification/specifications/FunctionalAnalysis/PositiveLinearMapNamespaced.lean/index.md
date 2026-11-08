@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [map_isSelfAdjoint](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/map-isselfadjoint.md) | 48 | `result-track:bf5b9734fa4974bacc765292694cb7230f2a11b6fde99354a52b077c6c023abe` |
-| 2 | `lemma` | [apply_le_of_isSelfAdjoint](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/apply-le-of-isselfadjoint.md) | 65 | `result-track:8bfd6d09a5bcb9917d161fb387eada766b24e8b4f2cf897dec50d3a4cdb2bb46` |
-| 3 | `lemma` | [norm_apply_le_of_nonneg](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/norm-apply-le-of-nonneg.md) | 70 | `result-track:09fc74884a1d8065923c233ab661447a94bdc40e8580bfae28abf904378c982e` |
-| 4 | `lemma` | [exists_norm_apply_le](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/exists-norm-apply-le.md) | 85 | `result-track:cc70a6e17bbf8acf5b7e27e00753f36b558cca53e52cd308b517f0162598c251` |
-| 5 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/instance.md) | 135 | `declaration-track:4358dd8153a4737d6840d566591ed5019258eeb29dbe23c47a7dc2dc2501e1f4` |
-| 6 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/instance-source-edition-2.md) | 143 | `declaration-track:4ab3593c8992d7c23ac6a4feabfaf816b459b9ae2c1f1a420a69db8e7b78753c` |
+| 1 | `lemma` | [map_isSelfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/map-isselfadjoint.md) | 48 | `result-track:bf5b9734fa4974bacc765292694cb7230f2a11b6fde99354a52b077c6c023abe` |
+| 2 | `lemma` | [apply_le_of_isSelfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/apply-le-of-isselfadjoint.md) | 65 | `result-track:8bfd6d09a5bcb9917d161fb387eada766b24e8b4f2cf897dec50d3a4cdb2bb46` |
+| 3 | `lemma` | [norm_apply_le_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/norm-apply-le-of-nonneg.md) | 70 | `result-track:09fc74884a1d8065923c233ab661447a94bdc40e8580bfae28abf904378c982e` |
+| 4 | `lemma` | [exists_norm_apply_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/exists-norm-apply-le.md) | 85 | `result-track:cc70a6e17bbf8acf5b7e27e00753f36b558cca53e52cd308b517f0162598c251` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/instance.md) | 135 | `declaration-track:4358dd8153a4737d6840d566591ed5019258eeb29dbe23c47a7dc2dc2501e1f4` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapNamespaced.lean/declarations/instance-source-edition-2.md) | 143 | `declaration-track:4ab3593c8992d7c23ac6a4feabfaf816b459b9ae2c1f1a420a69db8e7b78753c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

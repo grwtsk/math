@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/index.md) · [Full source](../../../../Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [majorityThreshold](../../../../Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/declarations/majoritythreshold.md) | 19 | `declaration-track:34ee03484e7de6d61ecfd6d9ebcb976e5eeff71fe73df2e9d4a54be667ee3755` |
-| 2 | `structure` | [MajorityCrossingProfile](../../../../Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/declarations/majoritycrossingprofile.md) | 22 | `declaration-track:7bdfb5856d02d24481826d7da832181d0ee416efb6084e31cadf37396ddcfe8a` |
+| 1 | `def` | [majorityThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/declarations/majoritythreshold.md) | 19 | `declaration-track:34ee03484e7de6d61ecfd6d9ebcb976e5eeff71fe73df2e9d4a54be667ee3755` |
+| 2 | `structure` | [MajorityCrossingProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedMajorityCrossingProfile.lean/declarations/majoritycrossingprofile.md) | 22 | `declaration-track:7bdfb5856d02d24481826d7da832181d0ee416efb6084e31cadf37396ddcfe8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

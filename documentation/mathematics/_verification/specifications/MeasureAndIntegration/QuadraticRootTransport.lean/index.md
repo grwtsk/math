@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [energy](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/declarations/energy.md) | 15 | `declaration-track:32aebc3bba628ae59427aba5643b8ca86b9dbf986919f69f8fbd045f0fea9f0c` |
-| 2 | `def` | [cross](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/declarations/cross.md) | 17 | `declaration-track:8a72a9bf00b75ff3c49bff79a725766771c055e60faf94c0a68ffdb17027cd5a` |
-| 3 | `lemma` | [energy_nonnegative](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/declarations/energy-nonnegative.md) | 19 | `result-track:af4b6a46b2263fb4e8b16c0c98bf2ba5771b22225d51394d574247e58ad4be4c` |
-| 4 | `lemma` | [cross_integrable](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/declarations/cross-integrable.md) | 23 | `result-track:2792bbc07d39dac324ee1af46594d027e5db6b4a600d3b6fae7279d9451ec08c` |
-| 5 | `lemma` | [moment_identity](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/declarations/moment-identity.md) | 32 | `result-track:4bd55d8095e3b7d26582a3d9113c8b28b0a0c5aef9b315bef90b85be4f6132b8` |
-| 6 | `lemma` | [cross_square_bound](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/declarations/cross-square-bound.md) | 50 | `result-track:87aa3ca51da8f5f39661c8b78daab4e18193efdf514f9191b635db58c9d052c1` |
-| 7 | `theorem` | [sqrt_energy_add_le](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/declarations/sqrt-energy-add-le.md) | 73 | `result-track:451b1c75429e00e97b05ad02f76fe4d14b0f36a6dcb5b826571a1b6d8ff7ff82` |
+| 1 | `def` | [energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/declarations/energy.md) | 15 | `declaration-track:32aebc3bba628ae59427aba5643b8ca86b9dbf986919f69f8fbd045f0fea9f0c` |
+| 2 | `def` | [cross](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/declarations/cross.md) | 17 | `declaration-track:8a72a9bf00b75ff3c49bff79a725766771c055e60faf94c0a68ffdb17027cd5a` |
+| 3 | `lemma` | [energy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/declarations/energy-nonnegative.md) | 19 | `result-track:af4b6a46b2263fb4e8b16c0c98bf2ba5771b22225d51394d574247e58ad4be4c` |
+| 4 | `lemma` | [cross_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/declarations/cross-integrable.md) | 23 | `result-track:2792bbc07d39dac324ee1af46594d027e5db6b4a600d3b6fae7279d9451ec08c` |
+| 5 | `lemma` | [moment_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/declarations/moment-identity.md) | 32 | `result-track:4bd55d8095e3b7d26582a3d9113c8b28b0a0c5aef9b315bef90b85be4f6132b8` |
+| 6 | `lemma` | [cross_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/declarations/cross-square-bound.md) | 50 | `result-track:87aa3ca51da8f5f39661c8b78daab4e18193efdf514f9191b635db58c9d052c1` |
+| 7 | `theorem` | [sqrt_energy_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/declarations/sqrt-energy-add-le.md) | 73 | `result-track:451b1c75429e00e97b05ad02f76fe4d14b0f36a6dcb5b826571a1b6d8ff7ff82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

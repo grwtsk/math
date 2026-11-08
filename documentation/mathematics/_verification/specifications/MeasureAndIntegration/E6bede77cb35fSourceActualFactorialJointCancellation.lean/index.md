@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [factorialNondefectSector](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/factorialnondefectsector.md) | 22 | `declaration-track:97439540713d07b64d79dbfd2d3b64d170a982129e92e648b0952be053d96b84` |
-| 2 | `def` | [actualFactorialJointDensity](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actualfactorialjointdensity.md) | 28 | `declaration-track:b8e4f0e77dc235006bbb497d04bdf18898e512d71654e77a13236154f32ffd9a` |
-| 3 | `theorem` | [actualFactorialJointDensity_eq_difference](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actualfactorialjointdensity-eq-difference.md) | 35 | `result-track:7787771d6cf82b57009676483007e229772b8d1824bb8072c4331f0172dfefa9` |
-| 4 | `theorem` | [factorialNondefect_tail_integrable](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/factorialnondefect-tail-integrable.md) | 48 | `result-track:6c4da0e2c2a30b97f0820646675840b40d2c5c59eadba6ae0d7b09e6459b92de` |
-| 5 | `theorem` | [actualFactorialJointDensity_integrable](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actualfactorialjointdensity-integrable.md) | 56 | `result-track:b90de2b1309b1517496bb0361e31e22238de57869916243daa5bed2a66d87b75` |
-| 6 | `theorem` | [actual_leading_and_tail_eq_joint_factorial_integral](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actual-leading-and-tail-eq-joint-factorial-integral.md) | 69 | `result-track:6ee9ae1ed2b0ddbb0580fc6f1c22a03f3bdc05299e50e91175effda1a72c7b81` |
-| 7 | `theorem` | [actual_factorial_cancelled_kernel](../../../../MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actual-factorial-cancelled-kernel.md) | 96 | `result-track:7590df606e2a700587a7a03a727f9a409a12f0cf2f7736b1c427a5e33815ec7d` |
+| 1 | `def` | [factorialNondefectSector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/factorialnondefectsector.md) | 22 | `declaration-track:97439540713d07b64d79dbfd2d3b64d170a982129e92e648b0952be053d96b84` |
+| 2 | `def` | [actualFactorialJointDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actualfactorialjointdensity.md) | 28 | `declaration-track:b8e4f0e77dc235006bbb497d04bdf18898e512d71654e77a13236154f32ffd9a` |
+| 3 | `theorem` | [actualFactorialJointDensity_eq_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actualfactorialjointdensity-eq-difference.md) | 35 | `result-track:7787771d6cf82b57009676483007e229772b8d1824bb8072c4331f0172dfefa9` |
+| 4 | `theorem` | [factorialNondefect_tail_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/factorialnondefect-tail-integrable.md) | 48 | `result-track:6c4da0e2c2a30b97f0820646675840b40d2c5c59eadba6ae0d7b09e6459b92de` |
+| 5 | `theorem` | [actualFactorialJointDensity_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actualfactorialjointdensity-integrable.md) | 56 | `result-track:b90de2b1309b1517496bb0361e31e22238de57869916243daa5bed2a66d87b75` |
+| 6 | `theorem` | [actual_leading_and_tail_eq_joint_factorial_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actual-leading-and-tail-eq-joint-factorial-integral.md) | 69 | `result-track:6ee9ae1ed2b0ddbb0580fc6f1c22a03f3bdc05299e50e91175effda1a72c7b81` |
+| 7 | `theorem` | [actual_factorial_cancelled_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/E6bede77cb35fSourceActualFactorialJointCancellation.lean/declarations/actual-factorial-cancelled-kernel.md) | 96 | `result-track:7590df606e2a700587a7a03a727f9a409a12f0cf2f7736b1c427a5e33815ec7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

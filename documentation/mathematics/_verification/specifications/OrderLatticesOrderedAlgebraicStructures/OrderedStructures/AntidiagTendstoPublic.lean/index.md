@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AntidiagTendstoPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AntidiagTendstoPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AntidiagTendstoPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AntidiagTendstoPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_sup'_antidiagonal_cofinite](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AntidiagTendstoPublic.lean/declarations/tendsto-sup-antidiagonal-cofinite.md) | 29 | `result-track:7243bebcffcea31e64e52a1f1e3c76bb85ffc73fc7cb777be2e912c20d9fa9e7` |
+| 1 | `lemma` | [tendsto_sup'_antidiagonal_cofinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AntidiagTendstoPublic.lean/declarations/tendsto-sup-antidiagonal-cofinite.md) | 29 | `result-track:7243bebcffcea31e64e52a1f1e3c76bb85ffc73fc7cb777be2e912c20d9fa9e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

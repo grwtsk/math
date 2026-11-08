@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [family](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/family.md) | 20 | `declaration-track:50d9201863583f2b990a8010f65fe3baf2bb6e3db82c8d8369446b07e6cb2e8c` |
-| 2 | `def` | [representation](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/representation.md) | 25 | `declaration-track:c5086d030680f9515c95ee9e21b467dedb5b72a5829ecf765fe476cd1ffb6b8e` |
-| 3 | `theorem` | [representation_minimal](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/representation-minimal.md) | 35 | `result-track:2521c9105274c1c92045c18fd2c9d2defbdef827bb20dc0d984bd406549bfdcb` |
-| 4 | `def` | [quine](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/quine.md) | 44 | `declaration-track:5a07440b92a8487dbd7e2aaa5ac249513ba73626cba1994442e6f0e9570a9bbf` |
-| 5 | `theorem` | [observable_distinguishes](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/observable-distinguishes.md) | 57 | `result-track:515c0587a644a9cd0a921c33b64bc1700286b67b7bd8829f78ee9ab9b73680b1` |
-| 6 | `theorem` | [compress_distinguishes](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/compress-distinguishes.md) | 65 | `result-track:c49f0f4198e2327174c299a7d1934c1767bdd12627774fe9cab42e3abb27a80d` |
-| 7 | `theorem` | [quine_factors_through](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/quine-factors-through.md) | 72 | `result-track:8b9a973c21a7582f072a01b8c25abe8917b87e25b970a034f06775b80afafa57` |
-| 8 | `theorem` | [index_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/index-eq.md) | 78 | `result-track:928f3b278f68cf3456c3ebdc87aafd3d3ccad1877de19f95737baac569cdfad9` |
+| 1 | `def` | [family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/family.md) | 20 | `declaration-track:50d9201863583f2b990a8010f65fe3baf2bb6e3db82c8d8369446b07e6cb2e8c` |
+| 2 | `def` | [representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/representation.md) | 25 | `declaration-track:c5086d030680f9515c95ee9e21b467dedb5b72a5829ecf765fe476cd1ffb6b8e` |
+| 3 | `theorem` | [representation_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/representation-minimal.md) | 35 | `result-track:2521c9105274c1c92045c18fd2c9d2defbdef827bb20dc0d984bd406549bfdcb` |
+| 4 | `def` | [quine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/quine.md) | 44 | `declaration-track:5a07440b92a8487dbd7e2aaa5ac249513ba73626cba1994442e6f0e9570a9bbf` |
+| 5 | `theorem` | [observable_distinguishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/observable-distinguishes.md) | 57 | `result-track:515c0587a644a9cd0a921c33b64bc1700286b67b7bd8829f78ee9ab9b73680b1` |
+| 6 | `theorem` | [compress_distinguishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/compress-distinguishes.md) | 65 | `result-track:c49f0f4198e2327174c299a7d1934c1767bdd12627774fe9cab42e3abb27a80d` |
+| 7 | `theorem` | [quine_factors_through](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/quine-factors-through.md) | 72 | `result-track:8b9a973c21a7582f072a01b8c25abe8917b87e25b970a034f06775b80afafa57` |
+| 8 | `theorem` | [index_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/declarations/index-eq.md) | 78 | `result-track:928f3b278f68cf3456c3ebdc87aafd3d3ccad1877de19f95737baac569cdfad9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

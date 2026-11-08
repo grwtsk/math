@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AccessProductKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessproductkind.md) | 20 | `declaration-track:954dc85d2b2cdb25d6a999a6514d7ed2be952eeb7c191347a1985dace4d6b446` |
-| 2 | `inductive` | [AccessObjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective.md) | 28 | `declaration-track:4498b21d6a3de3cc6f5c373b1175621f99edefa2af521d82a9579f2cbd6ccac6` |
-| 3 | `def` | [AccessObjective.productKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective-productkind.md) | 41 | `declaration-track:085a2c1ebdbe5dd0cb20d639fefbd77c5354ef0276cdc3d286f078324016ee53` |
-| 4 | `def` | [AccessObjective.requiresTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective-requirestarget.md) | 54 | `declaration-track:b28d46dfcc98c0144a79cd62a799caa3efcdacbcfc27f2df1e4d65f14c2be25f` |
-| 5 | `def` | [AccessObjective.requiredCapability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective-requiredcapability.md) | 61 | `declaration-track:aa69c88445d98bf0026ee470f86033eb4f2ed0dd377b86d581d97767e69ead95` |
-| 6 | `def` | [AuthoritySupports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/authoritysupports.md) | 74 | `declaration-track:17aebeb0fd5607a6bc6284d1c0149137fa9376fb3650586e0791551b33de4dfb` |
-| 7 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/instance.md) | 79 | `declaration-track:95a5e06d5c256ccd97bdd99ae5e807731ff17517a81b47bf153e3c6c6df07dce` |
+| 1 | `inductive` | [AccessProductKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessproductkind.md) | 20 | `declaration-track:954dc85d2b2cdb25d6a999a6514d7ed2be952eeb7c191347a1985dace4d6b446` |
+| 2 | `inductive` | [AccessObjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective.md) | 28 | `declaration-track:4498b21d6a3de3cc6f5c373b1175621f99edefa2af521d82a9579f2cbd6ccac6` |
+| 3 | `def` | [AccessObjective.productKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective-productkind.md) | 41 | `declaration-track:085a2c1ebdbe5dd0cb20d639fefbd77c5354ef0276cdc3d286f078324016ee53` |
+| 4 | `def` | [AccessObjective.requiresTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective-requirestarget.md) | 54 | `declaration-track:b28d46dfcc98c0144a79cd62a799caa3efcdacbcfc27f2df1e4d65f14c2be25f` |
+| 5 | `def` | [AccessObjective.requiredCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/accessobjective-requiredcapability.md) | 61 | `declaration-track:aa69c88445d98bf0026ee470f86033eb4f2ed0dd377b86d581d97767e69ead95` |
+| 6 | `def` | [AuthoritySupports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/authoritysupports.md) | 74 | `declaration-track:17aebeb0fd5607a6bc6284d1c0149137fa9376fb3650586e0791551b33de4dfb` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObjectiveNamespacedSourceEdition2.lean/declarations/instance.md) | 79 | `declaration-track:95a5e06d5c256ccd97bdd99ae5e807731ff17517a81b47bf153e3c6c6df07dce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

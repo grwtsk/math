@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AffineNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/AffineNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasFDerivAtFilter](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/hasfderivatfilter.md) | 45 | `result-track:b28aa02076e5a91ee1ca303bdce5dcd74486d666a57eb114cfe9d7e167a08328` |
-| 2 | `theorem` | [hasStrictFDerivAt](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/hasstrictfderivat.md) | 50 | `result-track:26ad9f0a1c928d9864c7b3889ee5cbe64b3b078fef9e02fe564eca7e54f6c3ec` |
-| 3 | `theorem` | [hasFDerivWithinAt](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/hasfderivwithinat.md) | 54 | `result-track:daf147950f1d5d8afe5bf119f7be9bff5f58c0d1e6417e3d80088b75f8b4561e` |
-| 4 | `theorem` | [hasFDerivAt](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/hasfderivat.md) | 58 | `result-track:72af77e05d0e7b2b81e6dc4dc9d2ba3631b1336dc83599dfd81d70d05f34bd26` |
-| 5 | `theorem` | [differentiableAt](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/differentiableat.md) | 62 | `result-track:0ffb8d74e89b55aa5bd135e96d53835ee28dfd367872a6827d09f1d4604ea55c` |
-| 6 | `theorem` | [differentiableWithinAt](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/differentiablewithinat.md) | 66 | `result-track:6806aa6ccb9778bc44ffe94f8e3ff00c3f60c15d63bcd3dcdcd02384a20a7a9c` |
-| 7 | `theorem` | [fderiv](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/fderiv.md) | 70 | `result-track:58b343837ba829a6c70ac42db63d8772ab36fe5a5defe7905a364b327942ff0b` |
-| 8 | `theorem` | [fderivWithin](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/fderivwithin.md) | 73 | `result-track:b63ef6928b33094282d980ec03db9a47cefe11b709f3e5f020c6484b9a78a635` |
-| 9 | `theorem` | [differentiable](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/differentiable.md) | 79 | `result-track:7b1ab49c3a4cd39a6efb1ea924becffca8fb4895a0709b6f24ddfb759512d6ed` |
-| 10 | `theorem` | [differentiableOn](../../../../RealFunctions/AffineNamespacedPublic.lean/declarations/differentiableon.md) | 83 | `result-track:d3911a96e4f7fdf4cfba6a204a69a5c67d443d452cba278d2431c972b62b9ae0` |
+| 1 | `theorem` | [hasFDerivAtFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/hasfderivatfilter.md) | 45 | `result-track:b28aa02076e5a91ee1ca303bdce5dcd74486d666a57eb114cfe9d7e167a08328` |
+| 2 | `theorem` | [hasStrictFDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/hasstrictfderivat.md) | 50 | `result-track:26ad9f0a1c928d9864c7b3889ee5cbe64b3b078fef9e02fe564eca7e54f6c3ec` |
+| 3 | `theorem` | [hasFDerivWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/hasfderivwithinat.md) | 54 | `result-track:daf147950f1d5d8afe5bf119f7be9bff5f58c0d1e6417e3d80088b75f8b4561e` |
+| 4 | `theorem` | [hasFDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/hasfderivat.md) | 58 | `result-track:72af77e05d0e7b2b81e6dc4dc9d2ba3631b1336dc83599dfd81d70d05f34bd26` |
+| 5 | `theorem` | [differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/differentiableat.md) | 62 | `result-track:0ffb8d74e89b55aa5bd135e96d53835ee28dfd367872a6827d09f1d4604ea55c` |
+| 6 | `theorem` | [differentiableWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/differentiablewithinat.md) | 66 | `result-track:6806aa6ccb9778bc44ffe94f8e3ff00c3f60c15d63bcd3dcdcd02384a20a7a9c` |
+| 7 | `theorem` | [fderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/fderiv.md) | 70 | `result-track:58b343837ba829a6c70ac42db63d8772ab36fe5a5defe7905a364b327942ff0b` |
+| 8 | `theorem` | [fderivWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/fderivwithin.md) | 73 | `result-track:b63ef6928b33094282d980ec03db9a47cefe11b709f3e5f020c6484b9a78a635` |
+| 9 | `theorem` | [differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/differentiable.md) | 79 | `result-track:7b1ab49c3a4cd39a6efb1ea924becffca8fb4895a0709b6f24ddfb759512d6ed` |
+| 10 | `theorem` | [differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineNamespacedPublic.lean/declarations/differentiableon.md) | 83 | `result-track:d3911a96e4f7fdf4cfba6a204a69a5c67d443d452cba278d2431c972b62b9ae0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

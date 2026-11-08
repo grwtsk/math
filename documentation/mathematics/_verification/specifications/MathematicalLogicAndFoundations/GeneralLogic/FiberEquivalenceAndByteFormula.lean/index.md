@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:dce7232579f1a5da4f465c187560312756b61b6e4bde83296ecf4bfbd1a651d6` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/declarations/example-source-edition-2.md) | 40 | `declaration-track:82bfd66d7902bb4d8d9506700f18151835d27ae22be482034cd5bc33816f3b99` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/declarations/example.md) | 46 | `declaration-track:2447908b02fdc8e6885f5d3f7d3895d15e63676c7379201a266a25dd1960cca2` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:dce7232579f1a5da4f465c187560312756b61b6e4bde83296ecf4bfbd1a651d6` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/declarations/example-source-edition-2.md) | 40 | `declaration-track:82bfd66d7902bb4d8d9506700f18151835d27ae22be482034cd5bc33816f3b99` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberEquivalenceAndByteFormula.lean/declarations/example.md) | 46 | `declaration-track:2447908b02fdc8e6885f5d3f7d3895d15e63676c7379201a266a25dd1960cca2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

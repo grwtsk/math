@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/PortFiberIndexedCoverDescent.lean/index.md) · [Full source](../../../../Geometry/PortFiberIndexedCoverDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberOpenCoverDescent`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineIndexedGluing`](../../../../GeneralTopology/AnalyticAffineIndexedGluing.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberOpenCoverDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineIndexedGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineIndexedGluing.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AddedIndex](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/addedindex.md) | 24 | `declaration-track:f74cc1a3f55723a53f7ff54e835cdf578ce9595fab3ad2da054cac97810a5563` |
-| 2 | `def` | [AddedClaim](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/addedclaim.md) | 34 | `declaration-track:e871a7fed999e1477a327f2496d6eb8432fed4e198019f05922b270b230e1f91` |
-| 3 | `theorem` | [addedClaim_proof](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/addedclaim-proof.md) | 68 | `result-track:460ef86f06811aedadba026d6babfeeaee890238d4fa9cd29d4b9800d8cdb948` |
-| 4 | `def` | [portfolio](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/portfolio.md) | 90 | `declaration-track:4c7f1912af8da0b4b1c9dada7a485f365eb4b308c71c47c4f9bfd529c1bda61c` |
-| 5 | `def` | [architecture](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/architecture.md) | 94 | `declaration-track:498d86070464f6622ada4216690b2a82f26e0fcadc3f1c197bff1c8f76963aef` |
-| 6 | `theorem` | [original_branch_unchanged](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/original-branch-unchanged.md) | 98 | `result-track:3746ad01c0c55688bf51a3b639979c1ae4b5a25d9ba9f9fad6a1882274c505e1` |
-| 7 | `theorem` | [new_branch_proved](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/new-branch-proved.md) | 107 | `result-track:b83417472f388679a72a5b3d6df8029f4e3fc888cabc1fb3f3a8275b0f5e53bd` |
-| 8 | `theorem` | [target_unchanged](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/target-unchanged.md) | 112 | `result-track:4dfb0b6e514363a1a36628049d9b33ecf48f4166f0d80e60eb008d2998e69451` |
-| 9 | `theorem` | [retarget_preserves_new](../../../../Geometry/PortFiberIndexedCoverDescent.lean/declarations/retarget-preserves-new.md) | 117 | `result-track:eb00dd483c713a63ccc83504ef1d4f6e4c1b764b46988540c5e5eac1c6092476` |
+| 1 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/addedindex.md) | 24 | `declaration-track:f74cc1a3f55723a53f7ff54e835cdf578ce9595fab3ad2da054cac97810a5563` |
+| 2 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/addedclaim.md) | 34 | `declaration-track:e871a7fed999e1477a327f2496d6eb8432fed4e198019f05922b270b230e1f91` |
+| 3 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/addedclaim-proof.md) | 68 | `result-track:460ef86f06811aedadba026d6babfeeaee890238d4fa9cd29d4b9800d8cdb948` |
+| 4 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/portfolio.md) | 90 | `declaration-track:4c7f1912af8da0b4b1c9dada7a485f365eb4b308c71c47c4f9bfd529c1bda61c` |
+| 5 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/architecture.md) | 94 | `declaration-track:498d86070464f6622ada4216690b2a82f26e0fcadc3f1c197bff1c8f76963aef` |
+| 6 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/original-branch-unchanged.md) | 98 | `result-track:3746ad01c0c55688bf51a3b639979c1ae4b5a25d9ba9f9fad6a1882274c505e1` |
+| 7 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/new-branch-proved.md) | 107 | `result-track:b83417472f388679a72a5b3d6df8029f4e3fc888cabc1fb3f3a8275b0f5e53bd` |
+| 8 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/target-unchanged.md) | 112 | `result-track:4dfb0b6e514363a1a36628049d9b33ecf48f4166f0d80e60eb008d2998e69451` |
+| 9 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/declarations/retarget-preserves-new.md) | 117 | `result-track:eb00dd483c713a63ccc83504ef1d4f6e4c1b764b46988540c5e5eac1c6092476` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [disconnectedTwoLoopCounts](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts.md) | 23 | `declaration-track:c869c70aa6636f5b746174e1ff7d90ee671884de34bf3c02ba78f0a1a86186c9` |
-| 2 | `theorem` | [disconnectedTwoLoopCounts_total](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-total.md) | 27 | `result-track:6542e212ea91108f128173b7b60813a3cde2f5394adacedafd3a723d2de34e6b` |
-| 3 | `theorem` | [disconnectedTwoLoopCounts_loops](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-loops.md) | 33 | `result-track:2952bcba8f66cf79b885b7e301b5f9efb59f13973ff5a2a3bc71d08c8a184e3a` |
-| 4 | `theorem` | [disconnectedTwoLoopCounts_not_realizable](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-not-realizable.md) | 46 | `result-track:258113fe1d15ab6d53484b6789aae909665cce3864f37c5d3edd6b04567a643c` |
-| 5 | `theorem` | [disconnectedTwoLoopCounts_no_euler_certificate](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-no-euler-certificate.md) | 53 | `result-track:dcf54c27bc00fddae7884511045660ac180ba1e69aac244ea0f71d08cdf24ae2` |
+| 1 | `def` | [disconnectedTwoLoopCounts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts.md) | 23 | `declaration-track:c869c70aa6636f5b746174e1ff7d90ee671884de34bf3c02ba78f0a1a86186c9` |
+| 2 | `theorem` | [disconnectedTwoLoopCounts_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-total.md) | 27 | `result-track:6542e212ea91108f128173b7b60813a3cde2f5394adacedafd3a723d2de34e6b` |
+| 3 | `theorem` | [disconnectedTwoLoopCounts_loops](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-loops.md) | 33 | `result-track:2952bcba8f66cf79b885b7e301b5f9efb59f13973ff5a2a3bc71d08c8a184e3a` |
+| 4 | `theorem` | [disconnectedTwoLoopCounts_not_realizable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-not-realizable.md) | 46 | `result-track:258113fe1d15ab6d53484b6789aae909665cce3864f37c5d3edd6b04567a643c` |
+| 5 | `theorem` | [disconnectedTwoLoopCounts_no_euler_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEulerDisconnectedObstruction.lean/declarations/disconnectedtwoloopcounts-no-euler-certificate.md) | 53 | `result-track:dcf54c27bc00fddae7884511045660ac180ba1e69aac244ea0f71d08cdf24ae2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

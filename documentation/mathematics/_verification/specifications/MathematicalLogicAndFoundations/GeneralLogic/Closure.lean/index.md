@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClosureCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/closurecertificate.md) | 5 | `declaration-track:c3a804141b84dd282f3e04cc33b57147121228d7d27371b404cf16d0d55e3be0` |
-| 2 | `structure` | [FixedClassWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/fixedclasswitness.md) | 12 | `declaration-track:e851d9c93a132a98f8ba8371bf3aa226ca1bac99a116d4dbbfee42d43050ae84` |
-| 3 | `def` | [prefixFaithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/prefixfaithful.md) | 19 | `declaration-track:716b9d9181ab6b192de2a5c61b0f7f59251f5087ad2825ff81d9f524d9c2b8d7` |
-| 4 | `def` | [fixedClassCertified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/fixedclasscertified.md) | 26 | `declaration-track:70b527e82fd3f8721c29bec926bfdd32310d0a03d6d36438ed962b76820115b4` |
-| 5 | `def` | [claimBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/claimboundary.md) | 36 | `declaration-track:5e3fc4b16bec74513c4251f6a39868a71f198887e5a39dd8b382d0ac6c3f7c96` |
-| 6 | `theorem` | [nonRationalUniversalRejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/nonrationaluniversalrejected.md) | 40 | `result-track:5d7bbd2c5d7f012c62876b6253687c3cfcc34d3a1159d433aeaea087f1d5cb06` |
-| 7 | `def` | [classicalTargetAvailable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/classicaltargetavailable.md) | 50 | `declaration-track:b8bdb548310f585ab6c2d20dbd430d37c979f8005b72bcb84bae65b38108475d` |
-| 8 | `theorem` | [universalGateUnavailable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/universalgateunavailable.md) | 53 | `result-track:50e2fdd6115dd51f6e3862eefe6c9ffcce4233160f96a4d3a50680d647ea959b` |
+| 1 | `structure` | [ClosureCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/closurecertificate.md) | 5 | `declaration-track:c3a804141b84dd282f3e04cc33b57147121228d7d27371b404cf16d0d55e3be0` |
+| 2 | `structure` | [FixedClassWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/fixedclasswitness.md) | 12 | `declaration-track:e851d9c93a132a98f8ba8371bf3aa226ca1bac99a116d4dbbfee42d43050ae84` |
+| 3 | `def` | [prefixFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/prefixfaithful.md) | 19 | `declaration-track:716b9d9181ab6b192de2a5c61b0f7f59251f5087ad2825ff81d9f524d9c2b8d7` |
+| 4 | `def` | [fixedClassCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/fixedclasscertified.md) | 26 | `declaration-track:70b527e82fd3f8721c29bec926bfdd32310d0a03d6d36438ed962b76820115b4` |
+| 5 | `def` | [claimBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/claimboundary.md) | 36 | `declaration-track:5e3fc4b16bec74513c4251f6a39868a71f198887e5a39dd8b382d0ac6c3f7c96` |
+| 6 | `theorem` | [nonRationalUniversalRejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/nonrationaluniversalrejected.md) | 40 | `result-track:5d7bbd2c5d7f012c62876b6253687c3cfcc34d3a1159d433aeaea087f1d5cb06` |
+| 7 | `def` | [classicalTargetAvailable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/classicaltargetavailable.md) | 50 | `declaration-track:b8bdb548310f585ab6c2d20dbd430d37c979f8005b72bcb84bae65b38108475d` |
+| 8 | `theorem` | [universalGateUnavailable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Closure.lean/declarations/universalgateunavailable.md) | 53 | `result-track:50e2fdd6115dd51f6e3862eefe6c9ffcce4233160f96a4d3a50680d647ea959b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

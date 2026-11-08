@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [DescriptorId](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptorid.md) | 14 | `declaration-track:f27eda1691cb3f04a5d107f8935152cf6b17dd1caf835e71816cb32eb5b77232` |
-| 2 | `inductive` | [DescriptorKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptorkind.md) | 16 | `declaration-track:312afd0cd7ff77f24f2582407626ff66a33233ca8c6e0bbb4f0440c85d214d1c` |
-| 3 | `inductive` | [DescriptorDisposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptordisposition.md) | 27 | `declaration-track:c149576a59d928aab9421ead0e67285d6efcb3d4f8cfbc5debe678c659971f01` |
-| 4 | `structure` | [Descriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptor.md) | 41 | `declaration-track:f33d71240618b29579569e10d5e7654818730dc2bc919dbfa4a2e8050dd336fc` |
-| 5 | `def` | [Descriptor.SameSpelling](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptor-samespelling.md) | 52 | `declaration-track:572b64769410cd20f86f07f9cb82d8bcd10fc551deadfc191ceecd7088e411d9` |
-| 6 | `def` | [Descriptor.SameIdentity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptor-sameidentity.md) | 56 | `declaration-track:c112dae6bc196dbb0ca6ca62800a85ce2453817351b770a6d40ed5fd3b6e1414` |
+| 1 | `abbrev` | [DescriptorId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptorid.md) | 14 | `declaration-track:f27eda1691cb3f04a5d107f8935152cf6b17dd1caf835e71816cb32eb5b77232` |
+| 2 | `inductive` | [DescriptorKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptorkind.md) | 16 | `declaration-track:312afd0cd7ff77f24f2582407626ff66a33233ca8c6e0bbb4f0440c85d214d1c` |
+| 3 | `inductive` | [DescriptorDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptordisposition.md) | 27 | `declaration-track:c149576a59d928aab9421ead0e67285d6efcb3d4f8cfbc5debe678c659971f01` |
+| 4 | `structure` | [Descriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptor.md) | 41 | `declaration-track:f33d71240618b29579569e10d5e7654818730dc2bc919dbfa4a2e8050dd336fc` |
+| 5 | `def` | [Descriptor.SameSpelling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptor-samespelling.md) | 52 | `declaration-track:572b64769410cd20f86f07f9cb82d8bcd10fc551deadfc191ceecd7088e411d9` |
+| 6 | `def` | [Descriptor.SameIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Descriptor.lean/declarations/descriptor-sameidentity.md) | 56 | `declaration-track:c112dae6bc196dbb0ca6ca62800a85ce2453817351b770a6d40ed5fd3b6e1414` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

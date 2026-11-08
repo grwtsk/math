@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Isocrystal.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Isocrystal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FractionRing.frobenius](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/fractionring-frobenius.md) | 75 | `declaration-track:dc67922ade4928a74431d7edefe2ab14104f1dd4658a2816bb060b4d02ba771c` |
-| 2 | `def` | [FractionRing.frobeniusRingHom](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/fractionring-frobeniusringhom.md) | 80 | `declaration-track:e3979b31ae51bbe35a833182f8b91158dabfdf60cd209dec370f994ac288c0ea` |
-| 3 | `instance` | [inv_pair₁](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/inv-pair-source-edition-2.md) | 86 | `declaration-track:e4e6277604228299e6f7b4b8bbba9816afed07d92a19c0efddf57ca35c36ded0` |
-| 4 | `instance` | [inv_pair₂](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/inv-pair.md) | 89 | `declaration-track:0865ec2447b3439434516be6cff1ef2fc80844a28e087202f808bd43830f0f49` |
-| 5 | `class` | [Isocrystal](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/isocrystal.md) | 109 | `declaration-track:362cc821a59b33b568bbd97b999fd5a8f8e2ecb635820274224ab4f4db71a556` |
-| 6 | `def` | [Isocrystal.frobenius](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/isocrystal-frobenius.md) | 121 | `declaration-track:3a40d8e93e7f8077ef5a45a47b38dafbac0c70afcc83942c957d984738011408` |
-| 7 | `structure` | [IsocrystalHom](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/isocrystalhom.md) | 128 | `declaration-track:976ce5a9dcfdf60bcd3f623587a18f98533fa28c84bf7131d936f0244f760de8` |
-| 8 | `structure` | [IsocrystalEquiv](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/isocrystalequiv.md) | 134 | `declaration-track:ef58cd97adb45a0e0b6f6c9d9beeb7887c7f9f897f823db10b1eceae8b372204` |
-| 9 | `def` | [StandardOneDimIsocrystal](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/standardonedimisocrystal.md) | 153 | `declaration-track:359be8da3216859e9ac73d2004db9d10537d24d430c80cc7787500c134bc7b5b` |
-| 10 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/instance.md) | 160 | `declaration-track:8810708b965142579dcc04c244f8457ba87970d4eb7586055dde406d67ee92d9` |
-| 11 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/instance-source-edition-3.md) | 162 | `declaration-track:fe92bf20d13712a4fbdfaa01e4b47562faa2d1154e540791add5920bb3ae0e12` |
-| 12 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/instance-source-edition-2.md) | 172 | `declaration-track:9bf9498d6cce6a61084bcbfc154aa86f26a93646253d6966cc56419f703ece4e` |
-| 13 | `theorem` | [StandardOneDimIsocrystal.frobenius_apply](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/standardonedimisocrystal-frobenius-apply.md) | 178 | `result-track:c5c1e1937254e4169bbedf2ed7bbe9b2dda7e9198eb1fb3e435cece76ab9b3b9` |
-| 14 | `theorem` | [isocrystal_classification](../../../../CommutativeAlgebra/Isocrystal.lean/declarations/isocrystal-classification.md) | 185 | `result-track:8f053ea9a5a05ee7d13698b9a365a246348f4528b09c795ab921192245ffb08b` |
+| 1 | `def` | [FractionRing.frobenius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/fractionring-frobenius.md) | 75 | `declaration-track:dc67922ade4928a74431d7edefe2ab14104f1dd4658a2816bb060b4d02ba771c` |
+| 2 | `def` | [FractionRing.frobeniusRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/fractionring-frobeniusringhom.md) | 80 | `declaration-track:e3979b31ae51bbe35a833182f8b91158dabfdf60cd209dec370f994ac288c0ea` |
+| 3 | `instance` | [inv_pair₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/inv-pair-source-edition-2.md) | 86 | `declaration-track:e4e6277604228299e6f7b4b8bbba9816afed07d92a19c0efddf57ca35c36ded0` |
+| 4 | `instance` | [inv_pair₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/inv-pair.md) | 89 | `declaration-track:0865ec2447b3439434516be6cff1ef2fc80844a28e087202f808bd43830f0f49` |
+| 5 | `class` | [Isocrystal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/isocrystal.md) | 109 | `declaration-track:362cc821a59b33b568bbd97b999fd5a8f8e2ecb635820274224ab4f4db71a556` |
+| 6 | `def` | [Isocrystal.frobenius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/isocrystal-frobenius.md) | 121 | `declaration-track:3a40d8e93e7f8077ef5a45a47b38dafbac0c70afcc83942c957d984738011408` |
+| 7 | `structure` | [IsocrystalHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/isocrystalhom.md) | 128 | `declaration-track:976ce5a9dcfdf60bcd3f623587a18f98533fa28c84bf7131d936f0244f760de8` |
+| 8 | `structure` | [IsocrystalEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/isocrystalequiv.md) | 134 | `declaration-track:ef58cd97adb45a0e0b6f6c9d9beeb7887c7f9f897f823db10b1eceae8b372204` |
+| 9 | `def` | [StandardOneDimIsocrystal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/standardonedimisocrystal.md) | 153 | `declaration-track:359be8da3216859e9ac73d2004db9d10537d24d430c80cc7787500c134bc7b5b` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/instance.md) | 160 | `declaration-track:8810708b965142579dcc04c244f8457ba87970d4eb7586055dde406d67ee92d9` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/instance-source-edition-3.md) | 162 | `declaration-track:fe92bf20d13712a4fbdfaa01e4b47562faa2d1154e540791add5920bb3ae0e12` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/instance-source-edition-2.md) | 172 | `declaration-track:9bf9498d6cce6a61084bcbfc154aa86f26a93646253d6966cc56419f703ece4e` |
+| 13 | `theorem` | [StandardOneDimIsocrystal.frobenius_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/standardonedimisocrystal-frobenius-apply.md) | 178 | `result-track:c5c1e1937254e4169bbedf2ed7bbe9b2dda7e9198eb1fb3e435cece76ab9b3b9` |
+| 14 | `theorem` | [isocrystal_classification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Isocrystal.lean/declarations/isocrystal-classification.md) | 185 | `result-track:8f053ea9a5a05ee7d13698b9a365a246348f4528b09c795ab921192245ffb08b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

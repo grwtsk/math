@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryZModNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryZModNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryZModNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryZModNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ZMod.ker_intCastRingHom](../../../../CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/zmod-ker-intcastringhom.md) | 33 | `result-track:9f701a8c0edb699d6c51ecb6ef109bc90cec69f7be10519fa547000eb945079a` |
-| 2 | `theorem` | [ZMod.ringHom_eq_of_ker_eq](../../../../CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/zmod-ringhom-eq-of-ker-eq.md) | 40 | `result-track:df6def93969b684811eb08d005eae0b61829a8f0523b7bf9a86671e817ab5b14` |
-| 3 | `theorem` | [isReduced_zmod](../../../../CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/isreduced-zmod.md) | 48 | `result-track:f273fa13feb15ca3e8ab374397bb5d6eca52d1eeaa8f637fb838e40beb5456be` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/instance.md) | 54 | `declaration-track:655dbafd4600b9e83f75d24cb93fa6c53218393a416da878924e10147880b8ee` |
+| 1 | `theorem` | [ZMod.ker_intCastRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/zmod-ker-intcastringhom.md) | 33 | `result-track:9f701a8c0edb699d6c51ecb6ef109bc90cec69f7be10519fa547000eb945079a` |
+| 2 | `theorem` | [ZMod.ringHom_eq_of_ker_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/zmod-ringhom-eq-of-ker-eq.md) | 40 | `result-track:df6def93969b684811eb08d005eae0b61829a8f0523b7bf9a86671e817ab5b14` |
+| 3 | `theorem` | [isReduced_zmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/isreduced-zmod.md) | 48 | `result-track:f273fa13feb15ca3e8ab374397bb5d6eca52d1eeaa8f637fb838e40beb5456be` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryZModNamespaced.lean/declarations/instance.md) | 54 | `declaration-track:655dbafd4600b9e83f75d24cb93fa6c53218393a416da878924e10147880b8ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

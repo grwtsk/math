@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [addEmptyCaseSound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/addemptycasesound.md) | 21 | `result-track:dfe1dabb97ccdc6de6b2e91ddcb4cab3535da9ecf21851660230c41d4cb558c8` |
-| 2 | `theorem` | [addRupCaseSound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/addrupcasesound.md) | 35 | `result-track:decac40a85e8a4f6702110a6ed858d3ce403339c6e2ca2c1d469678d4787baa6` |
-| 3 | `theorem` | [addRatCaseSound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/addratcasesound.md) | 47 | `result-track:deeda4660401edd2e13f05deae675df154d843752661cde30b07c216ade57584` |
-| 4 | `theorem` | [delCaseSound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/delcasesound.md) | 59 | `result-track:862ebdc61d0c296c405b4a2493c35f72f02fc9c9dfdc15fde57e49ed118c6327` |
-| 5 | `theorem` | [lratCheckerSound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/lratcheckersound.md) | 71 | `result-track:0ba5858c6726a7b9cb30546d4876b076440d798765a78db78b7fa5cc294110c6` |
+| 1 | `theorem` | [addEmptyCaseSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/addemptycasesound.md) | 21 | `result-track:dfe1dabb97ccdc6de6b2e91ddcb4cab3535da9ecf21851660230c41d4cb558c8` |
+| 2 | `theorem` | [addRupCaseSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/addrupcasesound.md) | 35 | `result-track:decac40a85e8a4f6702110a6ed858d3ce403339c6e2ca2c1d469678d4787baa6` |
+| 3 | `theorem` | [addRatCaseSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/addratcasesound.md) | 47 | `result-track:deeda4660401edd2e13f05deae675df154d843752661cde30b07c216ade57584` |
+| 4 | `theorem` | [delCaseSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/delcasesound.md) | 59 | `result-track:862ebdc61d0c296c405b4a2493c35f72f02fc9c9dfdc15fde57e49ed118c6327` |
+| 5 | `theorem` | [lratCheckerSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerSoundPublic.lean/declarations/lratcheckersound.md) | 71 | `result-track:0ba5858c6726a7b9cb30546d4876b076440d798765a78db78b7fa5cc294110c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Oracle](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/declarations/oracle.md) | 22 | `declaration-track:73d858a6e11428d714a50970b91d0770046cd2a962c2e4a658988c96a5954242` |
-| 2 | `structure` | [EvaluationOracle](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/declarations/evaluationoracle.md) | 25 | `declaration-track:3d8bd0c8ff2f4167b005bbc0ca9a939fd64358945687970ff9656784e1454234` |
-| 3 | `def` | [OracleComputableRelativeTo](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/declarations/oraclecomputablerelativeto.md) | 29 | `declaration-track:364a6a8905d526c0921125dfd70c6e900d2db055497de58107ae10711c3bf3ba` |
+| 1 | `structure` | [Oracle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/declarations/oracle.md) | 22 | `declaration-track:73d858a6e11428d714a50970b91d0770046cd2a962c2e4a658988c96a5954242` |
+| 2 | `structure` | [EvaluationOracle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/declarations/evaluationoracle.md) | 25 | `declaration-track:3d8bd0c8ff2f4167b005bbc0ca9a939fd64358945687970ff9656784e1454234` |
+| 3 | `def` | [OracleComputableRelativeTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleNamespaced.lean/declarations/oraclecomputablerelativeto.md) | 29 | `declaration-track:364a6a8905d526c0921125dfd70c6e900d2db055497de58107ae10711c3bf3ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CenteredRealPart.lean/index.md) · [Full source](../../../../RealFunctions/CenteredRealPart.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CenteredRealPart.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CenteredRealPart.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [criticalLine_of_centered](../../../../RealFunctions/CenteredRealPart.lean/declarations/criticalline-of-centered.md) | 36 | `result-track:1ce5ec6df32b7f5f33695c3f4575b454cca90e8ac0ed4dd38114a7f213ffbeb7` |
+| 1 | `theorem` | [criticalLine_of_centered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CenteredRealPart.lean/declarations/criticalline-of-centered.md) | 36 | `result-track:1ce5ec6df32b7f5f33695c3f4575b454cca90e8ac0ed4dd38114a7f213ffbeb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ByteRange](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/byterange.md) | 9 | `declaration-track:591c8c8d5d4afd8eb934c59e48f65ab0f99596d58447bf2ffc9c87e0501f8e63` |
-| 2 | `def` | [ByteRange.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/byterange-valid.md) | 14 | `declaration-track:15c0c75d5fe34b57c21687bbe8e870b7c913cdb5853bc2c03acd1e18b06c1920` |
-| 3 | `structure` | [LineColumnRange](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/linecolumnrange.md) | 17 | `declaration-track:78a96e40dcd4c9816970087f0567ad221b6c158e8d474a3689022547192928b0` |
-| 4 | `inductive` | [CommandAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/commandauthority.md) | 24 | `declaration-track:6b46b75e38b1db47cb0a4f86b65a03c31b942804ffe1c14dec9b21ec2ca210fb` |
-| 5 | `structure` | [CommandRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/commandrecord.md) | 32 | `declaration-track:f8fbebfda115178dddb735aad6b95d08aa9ba2e36e9c3cfeb2c1203cd9e40011` |
+| 1 | `structure` | [ByteRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/byterange.md) | 9 | `declaration-track:591c8c8d5d4afd8eb934c59e48f65ab0f99596d58447bf2ffc9c87e0501f8e63` |
+| 2 | `def` | [ByteRange.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/byterange-valid.md) | 14 | `declaration-track:15c0c75d5fe34b57c21687bbe8e870b7c913cdb5853bc2c03acd1e18b06c1920` |
+| 3 | `structure` | [LineColumnRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/linecolumnrange.md) | 17 | `declaration-track:78a96e40dcd4c9816970087f0567ad221b6c158e8d474a3689022547192928b0` |
+| 4 | `inductive` | [CommandAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/commandauthority.md) | 24 | `declaration-track:6b46b75e38b1db47cb0a4f86b65a03c31b942804ffe1c14dec9b21ec2ca210fb` |
+| 5 | `structure` | [CommandRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandEdition1.lean/declarations/commandrecord.md) | 32 | `declaration-track:f8fbebfda115178dddb735aad6b95d08aa9ba2e36e9c3cfeb2c1203cd9e40011` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

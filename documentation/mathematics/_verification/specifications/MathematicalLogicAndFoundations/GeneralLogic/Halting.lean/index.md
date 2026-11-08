@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HaltingOracleDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/declarations/haltingoracledescriptor.md) | 16 | `declaration-track:f9e7139dbca690e3371b17a0a0dc825c7298fc3a855f4939654d001b763b1395` |
-| 2 | `theorem` | [haltingPredicate_marked_oracle_relative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/declarations/haltingpredicate-marked-oracle-relative.md) | 20 | `result-track:3e49916ef337cd15ba4ebedc7d643ca777897b8bf8ddb4f97d2c2b62c61e5f03` |
+| 1 | `structure` | [HaltingOracleDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/declarations/haltingoracledescriptor.md) | 16 | `declaration-track:f9e7139dbca690e3371b17a0a0dc825c7298fc3a855f4939654d001b763b1395` |
+| 2 | `theorem` | [haltingPredicate_marked_oracle_relative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Halting.lean/declarations/haltingpredicate-marked-oracle-relative.md) | 20 | `result-track:3e49916ef337cd15ba4ebedc7d643ca777897b8bf8ddb4f97d2c2b62c61e5f03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

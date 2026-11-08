@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bitCode](../../../../AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/declarations/bitcode.md) | 49 | `declaration-track:567db6210311d4933a1ae991a8e087d0e5c14a127c60aa87dd8e991abd178d08` |
-| 2 | `theorem` | [bitCode_add](../../../../AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/declarations/bitcode-add.md) | 58 | `result-track:020d744d4a12b44e8d92c0770781e67acc7e9e673a89fef5daf3ac3972c44693` |
+| 1 | `def` | [bitCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/declarations/bitcode.md) | 49 | `declaration-track:567db6210311d4933a1ae991a8e087d0e5c14a127c60aa87dd8e991abd178d08` |
+| 2 | `theorem` | [bitCode_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/declarations/bitcode-add.md) | 58 | `result-track:020d744d4a12b44e8d92c0770781e67acc7e9e673a89fef5daf3ac3972c44693` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

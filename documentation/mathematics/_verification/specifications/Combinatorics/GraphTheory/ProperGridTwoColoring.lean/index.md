@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ProperGridTwoColoring.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ProperGridTwoColoring.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ProperGridTwoColoring.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ProperGridTwoColoring.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.Carrier.BinaryMatrix` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.Carrier.Grid` — import line 20; external provider; requires a separately pinned dependency.
-- [Parity Pattern Construction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/index.md) — import line 22; pinned internal source present.
+- [Parity Pattern Construction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsProper2Coloring](../../../../../Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/isproper2coloring.md) | 42 | `declaration-track:290c6ff3feaac3fd89d2e0c40497db766f3d646496bfa5f8088cfd4bba07214e` |
-| 2 | `theorem` | [cast_succ_zmod_two_ne](../../../../../Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/cast-succ-zmod-two-ne.md) | 47 | `result-track:20a869df5ae855d7843adcaecbd2c2e1a078e87098cd1979c6efeb28c7b4c83b` |
-| 3 | `theorem` | [step_ne](../../../../../Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/step-ne.md) | 56 | `result-track:110a7404d801df134292cc8dc6b96e1a44adcfb6d6f75101431762d075a3a36d` |
-| 4 | `theorem` | [step_flip](../../../../../Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/step-flip.md) | 71 | `result-track:de4aa61e8c0dbce3309950df1e75fa0d65fbd46df525d91585736416dfb2e69b` |
-| 5 | `theorem` | [checkerboard_isProper2Coloring](../../../../../Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/checkerboard-isproper2coloring.md) | 80 | `result-track:8b6d972e83d2a6a602c20986cba758d1a79e338a83d4d909c6f47a5ae70eeae3` |
+| 1 | `def` | [IsProper2Coloring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/isproper2coloring.md) | 42 | `declaration-track:290c6ff3feaac3fd89d2e0c40497db766f3d646496bfa5f8088cfd4bba07214e` |
+| 2 | `theorem` | [cast_succ_zmod_two_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/cast-succ-zmod-two-ne.md) | 47 | `result-track:20a869df5ae855d7843adcaecbd2c2e1a078e87098cd1979c6efeb28c7b4c83b` |
+| 3 | `theorem` | [step_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/step-ne.md) | 56 | `result-track:110a7404d801df134292cc8dc6b96e1a44adcfb6d6f75101431762d075a3a36d` |
+| 4 | `theorem` | [step_flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/step-flip.md) | 71 | `result-track:de4aa61e8c0dbce3309950df1e75fa0d65fbd46df525d91585736416dfb2e69b` |
+| 5 | `theorem` | [checkerboard_isProper2Coloring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ProperGridTwoColoring.lean/declarations/checkerboard-isproper2coloring.md) | 80 | `result-track:8b6d972e83d2a6a602c20986cba758d1a79e338a83d4d909c6f47a5ae70eeae3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

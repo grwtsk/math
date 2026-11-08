@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EncodedTheorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/encodedtheorem.md) | 5 | `declaration-track:79d18740fe2fc84637cc8ee015e54eb5c16464336c7db88f4b37ad9c8ce5b3f0` |
-| 2 | `theorem` | [encodedTheorem_matrix_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/encodedtheorem-matrix-sound.md) | 11 | `result-track:1ebd5ab76d0dd3c653c31b0de8aabe8b093e2c68bfd27b9960118495e0064ea6` |
-| 3 | `structure` | [BinaryLogicMatrixTheoremAdapter](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/binarylogicmatrixtheoremadapter.md) | 15 | `declaration-track:28a8a4fccfdc0f86736ad26e72c7a17b51f4624be45d462e7638696b118d2f21` |
-| 4 | `theorem` | [theoremAdapter_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/theoremadapter-sound.md) | 24 | `result-track:0bafdb73146a3d8d400f6e8e4d482e526444ae3eaa2d5a99f6a36d1b4edeaa5e` |
-| 5 | `theorem` | [theoremAdapter_boundary_visible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/theoremadapter-boundary-visible.md) | 31 | `result-track:12b68aa2e4b16177e9a8d6619148690fec5e4fb9057b7bf582ea26c8741ab6d7` |
+| 1 | `structure` | [EncodedTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/encodedtheorem.md) | 5 | `declaration-track:79d18740fe2fc84637cc8ee015e54eb5c16464336c7db88f4b37ad9c8ce5b3f0` |
+| 2 | `theorem` | [encodedTheorem_matrix_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/encodedtheorem-matrix-sound.md) | 11 | `result-track:1ebd5ab76d0dd3c653c31b0de8aabe8b093e2c68bfd27b9960118495e0064ea6` |
+| 3 | `structure` | [BinaryLogicMatrixTheoremAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/binarylogicmatrixtheoremadapter.md) | 15 | `declaration-track:28a8a4fccfdc0f86736ad26e72c7a17b51f4624be45d462e7638696b118d2f21` |
+| 4 | `theorem` | [theoremAdapter_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/theoremadapter-sound.md) | 24 | `result-track:0bafdb73146a3d8d400f6e8e4d482e526444ae3eaa2d5a99f6a36d1b4edeaa5e` |
+| 5 | `theorem` | [theoremAdapter_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremAdapter.lean/declarations/theoremadapter-boundary-visible.md) | 31 | `result-track:12b68aa2e4b16177e9a8d6619148690fec5e4fb9057b7bf582ea26c8741ab6d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

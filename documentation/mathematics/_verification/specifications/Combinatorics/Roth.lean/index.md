@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Roth.lean/index.md) · [Full source](../../../../Combinatorics/Roth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [triangleIndices](../../../../Combinatorics/Roth.lean/declarations/triangleindices.md) | 31 | `declaration-track:12550c207401598052a351fea97960704f350b833cb49034370c643b53fc17b7` |
-| 2 | `lemma` | [mk_mem_triangleIndices](../../../../Combinatorics/Roth.lean/declarations/mk-mem-triangleindices.md) | 35 | `result-track:9df6d76e4860cef6a2acee3819a663792735e4969e7511400c2d1a90ca83af5f` |
-| 3 | `lemma` | [card_triangleIndices](../../../../Combinatorics/Roth.lean/declarations/card-triangleindices.md) | 42 | `result-track:48ac81eed3b7e9de8eda79ed0484e3b314a5a762575618c86d7ccf7669e763d3` |
-| 4 | `instance` | [triangleIndices.instExplicitDisjoint](../../../../Combinatorics/Roth.lean/declarations/triangleindices-instexplicitdisjoint.md) | 44 | `declaration-track:afebc2c469d922ad1008b8eb52a4e88392192826f33ddf8e12b610059f6bc5e0` |
-| 5 | `lemma` | [noAccidental](../../../../Combinatorics/Roth.lean/declarations/noaccidental.md) | 51 | `result-track:15d70c91be22570baddc9812c89bfe4c452a29ef45c34f616ec9e166b24e2671` |
-| 6 | `lemma` | [farFromTriangleFree_graph](../../../../Combinatorics/Roth.lean/declarations/farfromtrianglefree-graph.md) | 57 | `result-track:7bb2a2d3d9820dd4caddb5ff5aded4b66a57b865ad3d986a2653973c36d7d2d2` |
-| 7 | `def` | [cornersTheoremBound](../../../../Combinatorics/Roth.lean/declarations/cornerstheorembound.md) | 75 | `declaration-track:6ae000aeeec220b4f9944a6ca25eac24f3c1788d75a7d0f3bb1e5bc0a4b71bfc` |
-| 8 | `theorem` | [corners_theorem](../../../../Combinatorics/Roth.lean/declarations/corners-theorem.md) | 80 | `result-track:69ed6bdac27a46765426020d752a89404f872d1b485f3829dc3b6c1072c35d3f` |
-| 9 | `theorem` | [corners_theorem_nat](../../../../Combinatorics/Roth.lean/declarations/corners-theorem-nat.md) | 104 | `result-track:490c51d6a0ae38ec7e85756cb3c3f33b0f8cc2fbcfc0f93594e60c9d4de2b2c4` |
-| 10 | `theorem` | [roth_3ap_theorem](../../../../Combinatorics/Roth.lean/declarations/roth-3ap-theorem.md) | 140 | `result-track:00be8f74a2ba829074183c601a941706d8359f886198807fd5af6aea2782f7a8` |
-| 11 | `theorem` | [roth_3ap_theorem_nat](../../../../Combinatorics/Roth.lean/declarations/roth-3ap-theorem-nat.md) | 165 | `result-track:136d97ff1669cda3548079c38e9053b0f6b3c528d9de2eb87ca9c422bd0a678b` |
-| 12 | `theorem` | [rothNumberNat_isLittleO_id](../../../../Combinatorics/Roth.lean/declarations/rothnumbernat-islittleo-id.md) | 198 | `result-track:8171514c6608b0ecbd256fb792982aa83486f1115776a90e92c9ac327f71f64c` |
+| 1 | `def` | [triangleIndices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/triangleindices.md) | 31 | `declaration-track:12550c207401598052a351fea97960704f350b833cb49034370c643b53fc17b7` |
+| 2 | `lemma` | [mk_mem_triangleIndices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/mk-mem-triangleindices.md) | 35 | `result-track:9df6d76e4860cef6a2acee3819a663792735e4969e7511400c2d1a90ca83af5f` |
+| 3 | `lemma` | [card_triangleIndices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/card-triangleindices.md) | 42 | `result-track:48ac81eed3b7e9de8eda79ed0484e3b314a5a762575618c86d7ccf7669e763d3` |
+| 4 | `instance` | [triangleIndices.instExplicitDisjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/triangleindices-instexplicitdisjoint.md) | 44 | `declaration-track:afebc2c469d922ad1008b8eb52a4e88392192826f33ddf8e12b610059f6bc5e0` |
+| 5 | `lemma` | [noAccidental](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/noaccidental.md) | 51 | `result-track:15d70c91be22570baddc9812c89bfe4c452a29ef45c34f616ec9e166b24e2671` |
+| 6 | `lemma` | [farFromTriangleFree_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/farfromtrianglefree-graph.md) | 57 | `result-track:7bb2a2d3d9820dd4caddb5ff5aded4b66a57b865ad3d986a2653973c36d7d2d2` |
+| 7 | `def` | [cornersTheoremBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/cornerstheorembound.md) | 75 | `declaration-track:6ae000aeeec220b4f9944a6ca25eac24f3c1788d75a7d0f3bb1e5bc0a4b71bfc` |
+| 8 | `theorem` | [corners_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/corners-theorem.md) | 80 | `result-track:69ed6bdac27a46765426020d752a89404f872d1b485f3829dc3b6c1072c35d3f` |
+| 9 | `theorem` | [corners_theorem_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/corners-theorem-nat.md) | 104 | `result-track:490c51d6a0ae38ec7e85756cb3c3f33b0f8cc2fbcfc0f93594e60c9d4de2b2c4` |
+| 10 | `theorem` | [roth_3ap_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/roth-3ap-theorem.md) | 140 | `result-track:00be8f74a2ba829074183c601a941706d8359f886198807fd5af6aea2782f7a8` |
+| 11 | `theorem` | [roth_3ap_theorem_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/roth-3ap-theorem-nat.md) | 165 | `result-track:136d97ff1669cda3548079c38e9053b0f6b3c528d9de2eb87ca9c422bd0a678b` |
+| 12 | `theorem` | [rothNumberNat_isLittleO_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Roth.lean/declarations/rothnumbernat-islittleo-id.md) | 198 | `result-track:8171514c6608b0ecbd256fb792982aa83486f1115776a90e92c9ac327f71f64c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

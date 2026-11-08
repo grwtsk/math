@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/GammaDerivNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/GammaDerivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [GammaIntegral_eq_mellin](../../../../SpecialFunctions/GammaDerivNamespaced.lean/declarations/gammaintegral-eq-mellin.md) | 49 | `result-track:85d6dd38349675ad7679f2c6aadf1fb8f29b80bebb85e2b97d6a827e3995e137` |
-| 2 | `theorem` | [hasDerivAt_GammaIntegral](../../../../SpecialFunctions/GammaDerivNamespaced.lean/declarations/hasderivat-gammaintegral.md) | 54 | `result-track:10bb3561874e139d8de08563f2ebf7f03af91cee3b8ba982b82d010958272e39` |
-| 3 | `theorem` | [differentiableAt_GammaAux](../../../../SpecialFunctions/GammaDerivNamespaced.lean/declarations/differentiableat-gammaaux.md) | 68 | `result-track:c57377994cb956553e6d67ed14b3ba29c3320ce398821ff3e3dee695309b105f` |
-| 4 | `theorem` | [differentiableAt_Gamma](../../../../SpecialFunctions/GammaDerivNamespaced.lean/declarations/differentiableat-gamma-source-edition-2.md) | 88 | `result-track:7de8ba8b5a0b42c57de9e6b9867e2ecd3ea9ea00b260bfa3765f6a5872333e69` |
-| 5 | `theorem` | [tendsto_self_mul_Gamma_nhds_zero](../../../../SpecialFunctions/GammaDerivNamespaced.lean/declarations/tendsto-self-mul-gamma-nhds-zero.md) | 107 | `result-track:60b6adf965ed9c529e1bcb490276efeea02dcebb672c1ef6c5622620927244d0` |
-| 6 | `theorem` | [differentiableAt_Gamma](../../../../SpecialFunctions/GammaDerivNamespaced.lean/declarations/differentiableat-gamma.md) | 122 | `result-track:361b367cfdd9e0037122ac1853281fc8c05a6a52c2e4fb56a9b397f956549058` |
+| 1 | `theorem` | [GammaIntegral_eq_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/declarations/gammaintegral-eq-mellin.md) | 49 | `result-track:85d6dd38349675ad7679f2c6aadf1fb8f29b80bebb85e2b97d6a827e3995e137` |
+| 2 | `theorem` | [hasDerivAt_GammaIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/declarations/hasderivat-gammaintegral.md) | 54 | `result-track:10bb3561874e139d8de08563f2ebf7f03af91cee3b8ba982b82d010958272e39` |
+| 3 | `theorem` | [differentiableAt_GammaAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/declarations/differentiableat-gammaaux.md) | 68 | `result-track:c57377994cb956553e6d67ed14b3ba29c3320ce398821ff3e3dee695309b105f` |
+| 4 | `theorem` | [differentiableAt_Gamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/declarations/differentiableat-gamma-source-edition-2.md) | 88 | `result-track:7de8ba8b5a0b42c57de9e6b9867e2ecd3ea9ea00b260bfa3765f6a5872333e69` |
+| 5 | `theorem` | [tendsto_self_mul_Gamma_nhds_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/declarations/tendsto-self-mul-gamma-nhds-zero.md) | 107 | `result-track:60b6adf965ed9c529e1bcb490276efeea02dcebb672c1ef6c5622620927244d0` |
+| 6 | `theorem` | [differentiableAt_Gamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GammaDerivNamespaced.lean/declarations/differentiableat-gamma.md) | 122 | `result-track:361b367cfdd9e0037122ac1853281fc8c05a6a52c2e4fb56a9b397f956549058` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

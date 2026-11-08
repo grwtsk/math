@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_term_realize_eq_freeCommRing](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/declarations/exists-term-realize-eq-freecommring.md) | 32 | `result-track:0b0428caf4779047f6f60946780819cc713e192fc4d9b1a5394358925b8351a0` |
-| 2 | `def` | [termOfFreeCommRing](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/declarations/termoffreecommring.md) | 46 | `declaration-track:92af854a16ce92e8a89ed605d03fa6c2ae48640da1be0ccc87c83aa4d0a44bbf` |
-| 3 | `theorem` | [realize_termOfFreeCommRing](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/declarations/realize-termoffreecommring.md) | 52 | `result-track:7476301ef4fae37fa767604346ebe3cd1dde46ee3a0947ebeda458e278c3f76b` |
+| 1 | `theorem` | [exists_term_realize_eq_freeCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/declarations/exists-term-realize-eq-freecommring.md) | 32 | `result-track:0b0428caf4779047f6f60946780819cc713e192fc4d9b1a5394358925b8351a0` |
+| 2 | `def` | [termOfFreeCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/declarations/termoffreecommring.md) | 46 | `declaration-track:92af854a16ce92e8a89ed605d03fa6c2ae48640da1be0ccc87c83aa4d0a44bbf` |
+| 3 | `theorem` | [realize_termOfFreeCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingFreeCommRing.lean/declarations/realize-termoffreecommring.md) | 52 | `result-track:7476301ef4fae37fa767604346ebe3cd1dde46ee3a0947ebeda458e278c3f76b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

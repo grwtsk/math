@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentRoundedEvaluationCore.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentRoundedEvaluationCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRoundedEvaluationCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRoundedEvaluationCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,12 +46,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.CanonicalTentScaledEvaluationCore`](../../../../NumberTheory/CanonicalTentScaledEvaluationCore.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.DyadicRoundedSquaring`](../../../../FunctionsOfAComplexVariable/DyadicRoundedSquaring.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection`](../../../../RealFunctions/FinitePrecisionSelection.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation`](../../../../FunctionsOfAComplexVariable/RoundedLogPowerEvaluation.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation`](../../../../NumberTheory/CanonicalTentRoundedEvaluation.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls`](../../../../NumberTheory/RoundedEvaluationControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.CanonicalTentScaledEvaluationCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluationCore.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.DyadicRoundedSquaring`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicRoundedSquaring.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FinitePrecisionSelection.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RoundedLogPowerEvaluation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRoundedEvaluation.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RoundedEvaluationControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ProjectSpecifications.lean/index.md) · [Full source](../../../../NumberTheory/ProjectSpecifications.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example.md) | 10 | `declaration-track:22dbceb779b111a382fef4a18fd5e9fb089948943ad542d417670507dc24178e` |
-| 2 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-3.md) | 16 | `declaration-track:3a928307013ac71ea8a9ef85b3e2815029dbced6449e16e596e4513a4fb812a3` |
-| 3 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:c704bc92fbf79b96e935061bc14a8ac991df38aabbcca828002a7e255e6b1a04` |
-| 4 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-5.md) | 26 | `declaration-track:83c35a112b26be9f0a56f14537b83c31539ce82f7e6df5939cb6c90677c296f1` |
-| 5 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-7.md) | 31 | `declaration-track:f1bfea4e98bdd89468bb0e6553d52116384c6a81c4203b3e617d7d2e971e95e4` |
-| 6 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-4.md) | 37 | `declaration-track:3e1f353221afeda10b76df3bdf5f4c50da83ec3a92ec1ca676d6781a697cb84e` |
-| 7 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-8.md) | 43 | `declaration-track:f7255c4b72a0861e4833da605dea56fcdfe3a2ad6083f0964c4df6ecb22c5ec0` |
-| 8 | `example` | [(anonymous)](../../../../NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:362efe7690c42767031811ccd8b4acdefa7810164bad7cbd7cb020d459159b88` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example.md) | 10 | `declaration-track:22dbceb779b111a382fef4a18fd5e9fb089948943ad542d417670507dc24178e` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-3.md) | 16 | `declaration-track:3a928307013ac71ea8a9ef85b3e2815029dbced6449e16e596e4513a4fb812a3` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:c704bc92fbf79b96e935061bc14a8ac991df38aabbcca828002a7e255e6b1a04` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-5.md) | 26 | `declaration-track:83c35a112b26be9f0a56f14537b83c31539ce82f7e6df5939cb6c90677c296f1` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-7.md) | 31 | `declaration-track:f1bfea4e98bdd89468bb0e6553d52116384c6a81c4203b3e617d7d2e971e95e4` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-4.md) | 37 | `declaration-track:3e1f353221afeda10b76df3bdf5f4c50da83ec3a92ec1ca676d6781a697cb84e` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-8.md) | 43 | `declaration-track:f7255c4b72a0861e4833da605dea56fcdfe3a2ad6083f0964c4df6ecb22c5ec0` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ProjectSpecifications.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:362efe7690c42767031811ccd8b4acdefa7810164bad7cbd7cb020d459159b88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

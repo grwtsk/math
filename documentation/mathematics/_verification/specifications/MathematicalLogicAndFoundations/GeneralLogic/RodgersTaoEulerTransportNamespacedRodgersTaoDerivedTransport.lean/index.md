@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RodgersTaoDerivedTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/declarations/rodgerstaoderivedtransport.md) | 34 | `declaration-track:6ea4a6732a173eb3687b7eb9a38b7fb78f44045cd33c20b1891273f643b2d9b2` |
-| 2 | `theorem` | [rodgers_tao_flow_realizes_derived_transport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/declarations/rodgers-tao-flow-realizes-derived-transport.md) | 44 | `result-track:d5e0e8d7081c78eaf2551294dd1486cf4b4986b73eaed1fbf0e24ced543b577e` |
-| 3 | `theorem` | [rodgers_tao_transport_preserves_euler_characteristic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/declarations/rodgers-tao-transport-preserves-euler-characteristic.md) | 49 | `result-track:6aa845b31fd12d62a4352257fb9866f83beb9e779ad2cc0ee63d06b8e52c8082` |
+| 1 | `structure` | [RodgersTaoDerivedTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/declarations/rodgerstaoderivedtransport.md) | 34 | `declaration-track:6ea4a6732a173eb3687b7eb9a38b7fb78f44045cd33c20b1891273f643b2d9b2` |
+| 2 | `theorem` | [rodgers_tao_flow_realizes_derived_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/declarations/rodgers-tao-flow-realizes-derived-transport.md) | 44 | `result-track:d5e0e8d7081c78eaf2551294dd1486cf4b4986b73eaed1fbf0e24ced543b577e` |
+| 3 | `theorem` | [rodgers_tao_transport_preserves_euler_characteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoEulerTransportNamespacedRodgersTaoDerivedTransport.lean/declarations/rodgers-tao-transport-preserves-euler-characteristic.md) | 49 | `result-track:6aa845b31fd12d62a4352257fb9866f83beb9e779ad2cc0ee63d06b8e52c8082` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

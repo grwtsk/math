@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LemmaCandidate](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/lemmacandidate.md) | 28 | `declaration-track:82c5dce14ac92b5e25e85d235c973c4284a4da8244cf4765255c5b820f5dd405` |
-| 2 | `inductive` | [RewriteDirection](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/rewritedirection.md) | 36 | `declaration-track:c177513375c000e636def77a322abaa8222a6506ce4dccbc83149668068bdf9b` |
-| 3 | `structure` | [SourceRange](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/sourcerange.md) | 42 | `declaration-track:5e817fd86a594486b5185fa754cef1f4ed156331e52a0749efc00fe594c24a96` |
-| 4 | `inductive` | [ProofPatch](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/proofpatch.md) | 49 | `declaration-track:f69e65bc91fb85998ea7717edbd8c03a268593e6fdd70cbaa210567b7ded0ee5` |
-| 5 | `def` | [ProofPatch.applyTask](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/proofpatch-applytask.md) | 64 | `declaration-track:259c2c839a3304215fdf91bdb32f37748250661fdc55c0a28fb78c65a1e6c338` |
-| 6 | `theorem` | [ProofPatch.applyTask_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/proofpatch-applytask-eq.md) | 67 | `result-track:d8192b26e54d3430446e073c64a91d105ef1b1712b2ebe0384340696dcd6f27f` |
+| 1 | `structure` | [LemmaCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/lemmacandidate.md) | 28 | `declaration-track:82c5dce14ac92b5e25e85d235c973c4284a4da8244cf4765255c5b820f5dd405` |
+| 2 | `inductive` | [RewriteDirection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/rewritedirection.md) | 36 | `declaration-track:c177513375c000e636def77a322abaa8222a6506ce4dccbc83149668068bdf9b` |
+| 3 | `structure` | [SourceRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/sourcerange.md) | 42 | `declaration-track:5e817fd86a594486b5185fa754cef1f4ed156331e52a0749efc00fe594c24a96` |
+| 4 | `inductive` | [ProofPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/proofpatch.md) | 49 | `declaration-track:f69e65bc91fb85998ea7717edbd8c03a268593e6fdd70cbaa210567b7ded0ee5` |
+| 5 | `def` | [ProofPatch.applyTask](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/proofpatch-applytask.md) | 64 | `declaration-track:259c2c839a3304215fdf91bdb32f37748250661fdc55c0a28fb78c65a1e6c338` |
+| 6 | `theorem` | [ProofPatch.applyTask_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchNamespacedPublicLemmaCandidate.lean/declarations/proofpatch-applytask-eq.md) | 67 | `result-track:d8192b26e54d3430446e073c64a91d105ef1b1712b2ebe0384340696dcd6f27f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

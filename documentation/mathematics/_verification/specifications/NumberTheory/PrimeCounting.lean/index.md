@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimeCounting.lean/index.md) · [Full source](../../../../NumberTheory/PrimeCounting.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeCounting'](../../../../NumberTheory/PrimeCounting.lean/declarations/primecounting-source-edition-2.md) | 47 | `declaration-track:885310039d6ea0c7ba39eb1e0a5ed063b778d9904f9c591c89c70c0bb1a256b3` |
-| 2 | `def` | [primeCounting](../../../../NumberTheory/PrimeCounting.lean/declarations/primecounting.md) | 52 | `declaration-track:2852d96419bf3cf0a7acf79319947b9e6fa62fc7fef8ad058b25482a72a45d6c` |
-| 3 | `theorem` | [monotone_primeCounting'](../../../../NumberTheory/PrimeCounting.lean/declarations/monotone-primecounting-source-edition-2.md) | 60 | `result-track:e120c257dd09dff8eeae4fcfecdc98687681373281df9e09b9f4d6bdf8a48f76` |
-| 4 | `theorem` | [monotone_primeCounting](../../../../NumberTheory/PrimeCounting.lean/declarations/monotone-primecounting.md) | 64 | `result-track:0114e6eb4d45c68ba19f4e087ba3660b7b79a6c2accd5557522e6124ebef78f5` |
-| 5 | `theorem` | [primeCounting'_nth_eq](../../../../NumberTheory/PrimeCounting.lean/declarations/primecounting-nth-eq.md) | 69 | `result-track:b33b9f3d7841f6ea1ef1a3b484d9fd4c453c0bdab5612cc209d64d011efc683e` |
-| 6 | `theorem` | [prime_nth_prime](../../../../NumberTheory/PrimeCounting.lean/declarations/prime-nth-prime.md) | 74 | `result-track:2d5045becba1316c291d1d6e6316b2f0aec2cd20f12d16520a4d8973c6fec80f` |
-| 7 | `theorem` | [primeCounting'_add_le](../../../../NumberTheory/PrimeCounting.lean/declarations/primecounting-add-le.md) | 79 | `result-track:72b3840b9d9689236267da2fd789cd985ce98f0d20dd96dad43f5b96c789caab` |
+| 1 | `def` | [primeCounting'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/declarations/primecounting-source-edition-2.md) | 47 | `declaration-track:885310039d6ea0c7ba39eb1e0a5ed063b778d9904f9c591c89c70c0bb1a256b3` |
+| 2 | `def` | [primeCounting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/declarations/primecounting.md) | 52 | `declaration-track:2852d96419bf3cf0a7acf79319947b9e6fa62fc7fef8ad058b25482a72a45d6c` |
+| 3 | `theorem` | [monotone_primeCounting'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/declarations/monotone-primecounting-source-edition-2.md) | 60 | `result-track:e120c257dd09dff8eeae4fcfecdc98687681373281df9e09b9f4d6bdf8a48f76` |
+| 4 | `theorem` | [monotone_primeCounting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/declarations/monotone-primecounting.md) | 64 | `result-track:0114e6eb4d45c68ba19f4e087ba3660b7b79a6c2accd5557522e6124ebef78f5` |
+| 5 | `theorem` | [primeCounting'_nth_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/declarations/primecounting-nth-eq.md) | 69 | `result-track:b33b9f3d7841f6ea1ef1a3b484d9fd4c453c0bdab5612cc209d64d011efc683e` |
+| 6 | `theorem` | [prime_nth_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/declarations/prime-nth-prime.md) | 74 | `result-track:2d5045becba1316c291d1d6e6316b2f0aec2cd20f12d16520a4d8973c6fec80f` |
+| 7 | `theorem` | [primeCounting'_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeCounting.lean/declarations/primecounting-add-le.md) | 79 | `result-track:72b3840b9d9689236267da2fd789cd985ce98f0d20dd96dad43f5b96c789caab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

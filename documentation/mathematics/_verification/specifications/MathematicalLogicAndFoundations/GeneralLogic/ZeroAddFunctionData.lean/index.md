@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralShellFiber](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/spectralshellfiber.md) | 41 | `declaration-track:5862840ed87a47224440d5048ecb9eceabd3bcb84307df700e72afe282998502` |
-| 2 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/ext.md) | 52 | `result-track:8f006f398f430cd6e5898870dfda0de9c461609512841951c13badcbcb305763` |
-| 3 | `def` | [zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/zero.md) | 63 | `declaration-track:24bcf3f4ef87e2277ddf6f48d9b22f6416a1c4a9ad9bacfa0568cca041d17817` |
-| 4 | `def` | [add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/add.md) | 67 | `declaration-track:ad629e4b19bb70667a063e1cdc11a4ab55ac8a74cd2cf6cd13c15389666588b5` |
-| 5 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/instance.md) | 73 | `declaration-track:b991efaab746fd8a82621d5b26915e0eb4da5bdc2680efdf450ea59c20b15ed3` |
-| 6 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:d98e4403dd5f70d26ac36b0b0cd9e691b5697eb025d5f7124b0f9591b65c31fb` |
-| 7 | `theorem` | [value_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/value-zero.md) | 82 | `result-track:b68dd94ca2d3e7087e82a4b80c441e45ba5f92943fbb03cdf4d8cb3605708935` |
-| 8 | `theorem` | [value_add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/value-add.md) | 90 | `result-track:a554cedb3cc93df9736c5ba24399353a188a1da10e20f99f3b769f324b04374a` |
+| 1 | `structure` | [SpectralShellFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/spectralshellfiber.md) | 41 | `declaration-track:5862840ed87a47224440d5048ecb9eceabd3bcb84307df700e72afe282998502` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/ext.md) | 52 | `result-track:8f006f398f430cd6e5898870dfda0de9c461609512841951c13badcbcb305763` |
+| 3 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/zero.md) | 63 | `declaration-track:24bcf3f4ef87e2277ddf6f48d9b22f6416a1c4a9ad9bacfa0568cca041d17817` |
+| 4 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/add.md) | 67 | `declaration-track:ad629e4b19bb70667a063e1cdc11a4ab55ac8a74cd2cf6cd13c15389666588b5` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/instance.md) | 73 | `declaration-track:b991efaab746fd8a82621d5b26915e0eb4da5bdc2680efdf450ea59c20b15ed3` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:d98e4403dd5f70d26ac36b0b0cd9e691b5697eb025d5f7124b0f9591b65c31fb` |
+| 7 | `theorem` | [value_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/value-zero.md) | 82 | `result-track:b68dd94ca2d3e7087e82a4b80c441e45ba5f92943fbb03cdf4d8cb3605708935` |
+| 8 | `theorem` | [value_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/declarations/value-add.md) | 90 | `result-track:a554cedb3cc93df9736c5ba24399353a188a1da10e20f99f3b769f324b04374a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

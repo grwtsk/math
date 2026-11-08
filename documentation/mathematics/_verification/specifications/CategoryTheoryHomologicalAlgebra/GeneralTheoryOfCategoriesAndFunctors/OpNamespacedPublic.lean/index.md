@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [opFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/declarations/opfunctor.md) | 37 | `declaration-track:6692d7afb9ca7a8ff44077078402db13f1dad31bcf87d2a07e18fa1e2d903747` |
-| 2 | `def` | [opFunctorInvolutive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/declarations/opfunctorinvolutive.md) | 44 | `declaration-track:afe1905613c5d4cd98b27b5823e174b64f83f8bc22dec943fed1e4bf9d990098` |
-| 3 | `def` | [opEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/declarations/opequivalence.md) | 49 | `declaration-track:a443b6d61de3cf1426763158f5791c5968b151843aea0a3a3da4b5a6a3b65a42` |
+| 1 | `def` | [opFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/declarations/opfunctor.md) | 37 | `declaration-track:6692d7afb9ca7a8ff44077078402db13f1dad31bcf87d2a07e18fa1e2d903747` |
+| 2 | `def` | [opFunctorInvolutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/declarations/opfunctorinvolutive.md) | 44 | `declaration-track:afe1905613c5d4cd98b27b5823e174b64f83f8bc22dec943fed1e4bf9d990098` |
+| 3 | `def` | [opEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OpNamespacedPublic.lean/declarations/opequivalence.md) | 49 | `declaration-track:a443b6d61de3cf1426763158f5791c5968b151843aea0a3a3da4b5a6a3b65a42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rodgers_tao_flow_realizes_derived_transport](../../../../ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/declarations/rodgers-tao-flow-realizes-derived-transport.md) | 27 | `result-track:1f9416497ad8223321c6cfb16fe9d45129ddddd6c3aa994c2c8f6c62eee0fda3` |
-| 2 | `theorem` | [rodgers_tao_transport_preserves_euler_characteristic](../../../../ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/declarations/rodgers-tao-transport-preserves-euler-characteristic.md) | 32 | `result-track:78f328d875b9e135e8b31d0cefb6f2087ad57c82a7a367c9088cf6eb99c825d9` |
+| 1 | `theorem` | [rodgers_tao_flow_realizes_derived_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/declarations/rodgers-tao-flow-realizes-derived-transport.md) | 27 | `result-track:1f9416497ad8223321c6cfb16fe9d45129ddddd6c3aa994c2c8f6c62eee0fda3` |
+| 2 | `theorem` | [rodgers_tao_transport_preserves_euler_characteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RodgersTaoEulerTransportNamespaced.lean/declarations/rodgers-tao-transport-preserves-euler-characteristic.md) | 32 | `result-track:78f328d875b9e135e8b31d0cefb6f2087ad57c82a7a367c9088cf6eb99c825d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

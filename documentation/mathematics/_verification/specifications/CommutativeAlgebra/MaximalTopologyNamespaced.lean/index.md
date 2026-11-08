@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MaximalTopologyNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MaximalTopologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalTopologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalTopologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [toPrimeSpectrum_range](../../../../CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/toprimespectrum-range.md) | 39 | `result-track:83f07dda796d1c29c35ad3e6bd7ec4ca8c06a6196ddc5ed0656ed04fc781082c` |
-| 2 | `instance` | [zariskiTopology](../../../../CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/zariskitopology.md) | 47 | `declaration-track:e45eac068d4cdeb08a3c3af05adb45177c17584fdb20b0a836ac07c045e28b64` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/instance.md) | 50 | `declaration-track:aeac1daf27745f0cb101b063869b85db092588f3fc99bd7fc853979e8fa292b0` |
-| 4 | `theorem` | [toPrimeSpectrum_continuous](../../../../CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/toprimespectrum-continuous.md) | 55 | `result-track:62bd48714618acee8985e7df94308da63ed0e597462906491a2264372d38b851` |
+| 1 | `theorem` | [toPrimeSpectrum_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/toprimespectrum-range.md) | 39 | `result-track:83f07dda796d1c29c35ad3e6bd7ec4ca8c06a6196ddc5ed0656ed04fc781082c` |
+| 2 | `instance` | [zariskiTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/zariskitopology.md) | 47 | `declaration-track:e45eac068d4cdeb08a3c3af05adb45177c17584fdb20b0a836ac07c045e28b64` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/instance.md) | 50 | `declaration-track:aeac1daf27745f0cb101b063869b85db092588f3fc99bd7fc853979e8fa292b0` |
+| 4 | `theorem` | [toPrimeSpectrum_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalTopologyNamespaced.lean/declarations/toprimespectrum-continuous.md) | 55 | `result-track:62bd48714618acee8985e7df94308da63ed0e597462906491a2264372d38b851` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

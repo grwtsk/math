@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fromExpr?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/fromexpr.md) | 17 | `declaration-track:dbdc68dc2ffa7719f889a729de902056a1be87f31b66adebfc1bf530f5022076` |
-| 2 | `def` | [reduceUnary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/reduceunary.md) | 25 | `declaration-track:211c2420bd9eb4e57139f2da66855b528365a8103943abb4cbe6ee13b88d764d` |
-| 3 | `def` | [reduceBinPred](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/reducebinpred.md) | 30 | `declaration-track:92f2c697c3c821cc6fe07c22c0ca137653222bb4da87bb7a4db2471c839df94a` |
-| 4 | `def` | [reduceBoolPred](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/reduceboolpred.md) | 36 | `declaration-track:c1f3c60b7478bee70f96fe081d5ca72ce52cc97aaba652ba74b97b3bba6198a6` |
+| 1 | `def` | [fromExpr?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/fromexpr.md) | 17 | `declaration-track:dbdc68dc2ffa7719f889a729de902056a1be87f31b66adebfc1bf530f5022076` |
+| 2 | `def` | [reduceUnary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/reduceunary.md) | 25 | `declaration-track:211c2420bd9eb4e57139f2da66855b528365a8103943abb4cbe6ee13b88d764d` |
+| 3 | `def` | [reduceBinPred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/reducebinpred.md) | 30 | `declaration-track:92f2c697c3c821cc6fe07c22c0ca137653222bb4da87bb7a4db2471c839df94a` |
+| 4 | `def` | [reduceBoolPred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CharPublic.lean/declarations/reduceboolpred.md) | 36 | `declaration-track:c1f3c60b7478bee70f96fe081d5ca72ce52cc97aaba652ba74b97b3bba6198a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

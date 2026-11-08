@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [splitAux](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/splitaux.md) | 22 | `declaration-track:8bf5eadfa9900d16b05d403ba8216d1307a9d8728a66f7d7cdd4b6d020dd5e2f` |
-| 2 | `def` | [splitToList](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/splittolist.md) | 48 | `declaration-track:c396fb317db24ac5150a9543617c549b1c482ed6237f39c3f52ac20452fc84d6` |
-| 3 | `def` | [splitOnAux](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/splitonaux.md) | 61 | `declaration-track:71ba21f0182e7379c3173cd93d392c7d6cb12433af5b7e329fb55df4dfe571a6` |
-| 4 | `def` | [splitOn](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/spliton.md) | 112 | `declaration-track:57181639f6f390254fd1ccc8e824d88f7acc649909f8442bba68842b81c969fe` |
+| 1 | `def` | [splitAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/splitaux.md) | 22 | `declaration-track:8bf5eadfa9900d16b05d403ba8216d1307a9d8728a66f7d7cdd4b6d020dd5e2f` |
+| 2 | `def` | [splitToList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/splittolist.md) | 48 | `declaration-track:c396fb317db24ac5150a9543617c549b1c482ed6237f39c3f52ac20452fc84d6` |
+| 3 | `def` | [splitOnAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/splitonaux.md) | 61 | `declaration-track:71ba21f0182e7379c3173cd93d392c7d6cb12433af5b7e329fb55df4dfe571a6` |
+| 4 | `def` | [splitOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyPublicSplitOnAux.lean/declarations/spliton.md) | 112 | `declaration-track:57181639f6f390254fd1ccc8e824d88f7acc649909f8442bba68842b81c969fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

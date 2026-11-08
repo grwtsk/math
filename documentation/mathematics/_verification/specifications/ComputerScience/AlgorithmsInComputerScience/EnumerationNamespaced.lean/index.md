@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [set](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/set.md) | 18 | `declaration-track:a3998157bbeb93f61530b0f2765f3cf9a8bf694c6c306fab0856832b6edbe35f` |
-| 2 | `theorem` | [set_self](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/set-self.md) | 25 | `result-track:360af2a5a2efc2636572fd6dbe8875909dd426bf5e0ef547c123a95a002f0006` |
-| 3 | `theorem` | [set_of_ne](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/set-of-ne.md) | 32 | `result-track:bae09dbb5097092bc069a3f10565352c6f2b103861a472de2a59bf9beca77d60` |
-| 4 | `def` | [DependsOn](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/dependson.md) | 48 | `declaration-track:ee153c6c3aafd97a28bbb31ee5f91412b5e26cb1572cd7a34448fda22e11d0de` |
-| 5 | `abbrev` | [Assignment](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/assignment.md) | 52 | `declaration-track:2765407de15757c0e1090ab5a1c4d779c76e9726864694064b6882cb4828a843` |
-| 6 | `def` | [valuation](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/valuation.md) | 58 | `declaration-track:442d38b6ac34630304edad17ff204970e38d7291ede13bc38007d9b8b9d26015` |
-| 7 | `def` | [assignments](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/assignments.md) | 67 | `declaration-track:6f1ae938cdd20d1cd44536bfb13c2edc58324d217923aca6400f53a46b516fb5` |
-| 8 | `def` | [valuations](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/valuations.md) | 74 | `declaration-track:53f160e98ef93b15260d842924da987fc7dc98eb0147e7c43f20f56f2e3b5106` |
-| 9 | `def` | [truthRows](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/truthrows.md) | 81 | `declaration-track:0db314b4e43090bb6cdda2f9406ab968db91c7f9d1b914ca2a3befd07daf7259` |
-| 10 | `def` | [valuationOfPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/valuationofpoint.md) | 92 | `declaration-track:4584826c6fed3a5026f5c7ae230675dc809b3eaa5b85be545e69e3947afbc28f` |
+| 1 | `def` | [set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/set.md) | 18 | `declaration-track:a3998157bbeb93f61530b0f2765f3cf9a8bf694c6c306fab0856832b6edbe35f` |
+| 2 | `theorem` | [set_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/set-self.md) | 25 | `result-track:360af2a5a2efc2636572fd6dbe8875909dd426bf5e0ef547c123a95a002f0006` |
+| 3 | `theorem` | [set_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/set-of-ne.md) | 32 | `result-track:bae09dbb5097092bc069a3f10565352c6f2b103861a472de2a59bf9beca77d60` |
+| 4 | `def` | [DependsOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/dependson.md) | 48 | `declaration-track:ee153c6c3aafd97a28bbb31ee5f91412b5e26cb1572cd7a34448fda22e11d0de` |
+| 5 | `abbrev` | [Assignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/assignment.md) | 52 | `declaration-track:2765407de15757c0e1090ab5a1c4d779c76e9726864694064b6882cb4828a843` |
+| 6 | `def` | [valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/valuation.md) | 58 | `declaration-track:442d38b6ac34630304edad17ff204970e38d7291ede13bc38007d9b8b9d26015` |
+| 7 | `def` | [assignments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/assignments.md) | 67 | `declaration-track:6f1ae938cdd20d1cd44536bfb13c2edc58324d217923aca6400f53a46b516fb5` |
+| 8 | `def` | [valuations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/valuations.md) | 74 | `declaration-track:53f160e98ef93b15260d842924da987fc7dc98eb0147e7c43f20f56f2e3b5106` |
+| 9 | `def` | [truthRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/truthrows.md) | 81 | `declaration-track:0db314b4e43090bb6cdda2f9406ab968db91c7f9d1b914ca2a3befd07daf7259` |
+| 10 | `def` | [valuationOfPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnumerationNamespaced.lean/declarations/valuationofpoint.md) | 92 | `declaration-track:4584826c6fed3a5026f5c7ae230675dc809b3eaa5b85be545e69e3947afbc28f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

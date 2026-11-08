@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProofSurfacePosture](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/proofsurfaceposture.md) | 4 | `declaration-track:a9142e59c4aa49927166dfd486e512d38e326c94977fd1241820603c5e7dbb47` |
-| 2 | `def` | [skeletonPosture](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeletonposture.md) | 16 | `declaration-track:a50e9eded609d3fe6f20ee94098c723228631209d52bddded40f3bb29e88568a` |
-| 3 | `def` | [requiredNonClaims](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/requirednonclaims.md) | 28 | `declaration-track:118b6c662a2a41b0b52e7f9a1fbdbc716fc8dd90685baa74ab5022f9ae363f75` |
-| 4 | `theorem` | [skeleton_not_completion_claim](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-not-completion-claim.md) | 40 | `result-track:9d2b56ab5bff6a9e924f4e2d41e61b05d36fea8800fbbb6bb6fbc60342615c2a` |
-| 5 | `theorem` | [skeleton_has_nonclaims](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-has-nonclaims.md) | 44 | `result-track:beef983d9cd4943a696029512c43af8eb5c7929570c35513330ef787f9f6c60b` |
-| 6 | `theorem` | [skeleton_has_no_runner_receipt](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-has-no-runner-receipt.md) | 48 | `result-track:8351b7e5a335f961b454ecb4720763073db79137decd6e15670e75778397e49f` |
-| 7 | `theorem` | [skeleton_export_manifest_present](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-export-manifest-present.md) | 52 | `result-track:3f5eb81ddbc09525f7fd81ebeb4c9bd78735f9e8703dc6342fd17f2d5e8e5a24` |
+| 1 | `structure` | [ProofSurfacePosture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/proofsurfaceposture.md) | 4 | `declaration-track:a9142e59c4aa49927166dfd486e512d38e326c94977fd1241820603c5e7dbb47` |
+| 2 | `def` | [skeletonPosture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeletonposture.md) | 16 | `declaration-track:a50e9eded609d3fe6f20ee94098c723228631209d52bddded40f3bb29e88568a` |
+| 3 | `def` | [requiredNonClaims](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/requirednonclaims.md) | 28 | `declaration-track:118b6c662a2a41b0b52e7f9a1fbdbc716fc8dd90685baa74ab5022f9ae363f75` |
+| 4 | `theorem` | [skeleton_not_completion_claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-not-completion-claim.md) | 40 | `result-track:9d2b56ab5bff6a9e924f4e2d41e61b05d36fea8800fbbb6bb6fbc60342615c2a` |
+| 5 | `theorem` | [skeleton_has_nonclaims](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-has-nonclaims.md) | 44 | `result-track:beef983d9cd4943a696029512c43af8eb5c7929570c35513330ef787f9f6c60b` |
+| 6 | `theorem` | [skeleton_has_no_runner_receipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-has-no-runner-receipt.md) | 48 | `result-track:8351b7e5a335f961b454ecb4720763073db79137decd6e15670e75778397e49f` |
+| 7 | `theorem` | [skeleton_export_manifest_present](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofSurface.lean/declarations/skeleton-export-manifest-present.md) | 52 | `result-track:3f5eb81ddbc09525f7fd81ebeb4c9bd78735f9e8703dc6342fd17f2d5e8e5a24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

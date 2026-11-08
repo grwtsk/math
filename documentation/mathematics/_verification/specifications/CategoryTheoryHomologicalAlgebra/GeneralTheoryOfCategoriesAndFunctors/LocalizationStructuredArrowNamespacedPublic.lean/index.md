@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [structuredArrowEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/structuredarrowequiv.md) | 53 | `declaration-track:2852b9503718fd4b2ae304f52b7867c6bf9f138ac5453aa7173ebbe146c485f2` |
-| 2 | `lemma` | [induction_structuredArrow'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/induction-structuredarrow-source-edition-2.md) | 74 | `result-track:edd4e3cb808be6641e042827d86741a812e2147ccf3c3e2807fc7403a24f52d2` |
-| 3 | `lemma` | [induction_structuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/induction-structuredarrow.md) | 104 | `result-track:59d8841b60d167d65e6f49a397e4498d391cc71ba63ba3b9cb36ccf45bf7b655` |
-| 4 | `lemma` | [induction_costructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/induction-costructuredarrow.md) | 132 | `result-track:7cb9f9559c150144119a322bc6078d86c64b88bb273ef670a866baa1153cf14d` |
+| 1 | `def` | [structuredArrowEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/structuredarrowequiv.md) | 53 | `declaration-track:2852b9503718fd4b2ae304f52b7867c6bf9f138ac5453aa7173ebbe146c485f2` |
+| 2 | `lemma` | [induction_structuredArrow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/induction-structuredarrow-source-edition-2.md) | 74 | `result-track:edd4e3cb808be6641e042827d86741a812e2147ccf3c3e2807fc7403a24f52d2` |
+| 3 | `lemma` | [induction_structuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/induction-structuredarrow.md) | 104 | `result-track:59d8841b60d167d65e6f49a397e4498d391cc71ba63ba3b9cb36ccf45bf7b655` |
+| 4 | `lemma` | [induction_costructuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespacedPublic.lean/declarations/induction-costructuredarrow.md) | 132 | `result-track:7cb9f9559c150144119a322bc6078d86c64b88bb273ef670a866baa1153cf14d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

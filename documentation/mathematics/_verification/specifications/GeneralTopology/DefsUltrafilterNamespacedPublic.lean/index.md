@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DefsUltrafilterNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/DefsUltrafilterNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsUltrafilterNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsUltrafilterNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Ultrafilter.lim](../../../../GeneralTopology/DefsUltrafilterNamespacedPublic.lean/declarations/ultrafilter-lim.md) | 38 | `declaration-track:1e13556f42a78511a52c26ca04d5d9b73dce18fc0c08a48dbef7b853d3a61cd6` |
+| 1 | `def` | [Ultrafilter.lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsUltrafilterNamespacedPublic.lean/declarations/ultrafilter-lim.md) | 38 | `declaration-track:1e13556f42a78511a52c26ca04d5d9b73dce18fc0c08a48dbef7b853d3a61cd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

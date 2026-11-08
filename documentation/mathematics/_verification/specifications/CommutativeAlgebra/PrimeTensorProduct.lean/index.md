@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimeTensorProduct.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimeTensorProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeTensorProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeTensorProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PrimeSpectrum.tensorProductTo](../../../../CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-tensorproductto.md) | 27 | `declaration-track:78d350225cf592724d2c5e25eb6e0a4769ebb99e7cef0930156d9c141e5d980d` |
-| 2 | `lemma` | [PrimeSpectrum.continuous_tensorProductTo](../../../../CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-continuous-tensorproductto.md) | 32 | `result-track:400859bd0224d5a8928c4fed8d43df161d51727516db2c3e11634d030dd9b384` |
-| 3 | `lemma` | [PrimeSpectrum.isEmbedding_tensorProductTo_of_surjectiveOnStalks_aux](../../../../CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-isembedding-tensorproductto-of-surjectiveonstalks-aux.md) | 38 | `result-track:a3a5042bd3edae130a33d0f1eca0d9857800bdc438c2c4b3e863546661a79fcf` |
-| 4 | `lemma` | [PrimeSpectrum.isEmbedding_tensorProductTo_of_surjectiveOnStalks](../../../../CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-isembedding-tensorproductto-of-surjectiveonstalks.md) | 59 | `result-track:cc5e0da20c58152d343de889a1cd5be7e5fdb3e45ccdcca4ed8359eb6686add6` |
+| 1 | `def` | [PrimeSpectrum.tensorProductTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-tensorproductto.md) | 27 | `declaration-track:78d350225cf592724d2c5e25eb6e0a4769ebb99e7cef0930156d9c141e5d980d` |
+| 2 | `lemma` | [PrimeSpectrum.continuous_tensorProductTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-continuous-tensorproductto.md) | 32 | `result-track:400859bd0224d5a8928c4fed8d43df161d51727516db2c3e11634d030dd9b384` |
+| 3 | `lemma` | [PrimeSpectrum.isEmbedding_tensorProductTo_of_surjectiveOnStalks_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-isembedding-tensorproductto-of-surjectiveonstalks-aux.md) | 38 | `result-track:a3a5042bd3edae130a33d0f1eca0d9857800bdc438c2c4b3e863546661a79fcf` |
+| 4 | `lemma` | [PrimeSpectrum.isEmbedding_tensorProductTo_of_surjectiveOnStalks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeTensorProduct.lean/declarations/primespectrum-isembedding-tensorproductto-of-surjectiveonstalks.md) | 59 | `result-track:cc5e0da20c58152d343de889a1cd5be7e5fdb3e45ccdcca4ed8359eb6686add6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

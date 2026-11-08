@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WeierstrassCurve](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/declarations/weierstrasscurve.md) | 19 | `declaration-track:a32b28914172dddd043f70c6fd5d97d2b07f7344fa99b0e157afad81339fdd84` |
-| 2 | `structure` | [ShortWeierstrass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/declarations/shortweierstrass.md) | 26 | `declaration-track:63b1fca329edd8edb05607fe03fcb2b5214bbac611e47e33dee9a5b5ff43a55f` |
-| 3 | `structure` | [AffinePoint](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/declarations/affinepoint.md) | 30 | `declaration-track:9aa2f4efeb4ffb3f27cd13ad339897317e6f09a464afa554adbfc90214b3324a` |
+| 1 | `structure` | [WeierstrassCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/declarations/weierstrasscurve.md) | 19 | `declaration-track:a32b28914172dddd043f70c6fd5d97d2b07f7344fa99b0e157afad81339fdd84` |
+| 2 | `structure` | [ShortWeierstrass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/declarations/shortweierstrass.md) | 26 | `declaration-track:63b1fca329edd8edb05607fe03fcb2b5214bbac611e47e33dee9a5b5ff43a55f` |
+| 3 | `structure` | [AffinePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Weierstrass.lean/declarations/affinepoint.md) | 30 | `declaration-track:9aa2f4efeb4ffb3f27cd13ad339897317e6f09a464afa554adbfc90214b3324a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

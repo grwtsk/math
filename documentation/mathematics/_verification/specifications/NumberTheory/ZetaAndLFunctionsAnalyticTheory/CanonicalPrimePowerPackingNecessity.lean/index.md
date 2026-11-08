@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.forces_critical_line](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/canonicalprimepowerpackingcomparisonatzero-forces-critical-line.md) | 31 | `result-track:527c51d4f81410f85b8e8692bf592e88b3c9354618fac3aa97d7a16618fac4d6` |
-| 2 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.witnessTrace_eq_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/canonicalprimepowerpackingcomparisonatzero-witnesstrace-eq-zero.md) | 41 | `result-track:527ce80563d26aee1f11c0b42be775889c99ce3cbdc36317ce86431865078ba5` |
-| 3 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.packing_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/canonicalprimepowerpackingcomparisonatzero-packing-tendsto-zero.md) | 51 | `result-track:81845465141365a7fc1ad81ccdde3453c7650c77eef84171a8011155162da257` |
-| 4 | `theorem` | [no_canonical_comparison_of_not_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/no-canonical-comparison-of-not-tendsto-zero.md) | 67 | `result-track:c030d25f721472c4f87967dcc08c0d1361e76ad3c6cd337d0e5fd710fd3b71ff` |
+| 1 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.forces_critical_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/canonicalprimepowerpackingcomparisonatzero-forces-critical-line.md) | 31 | `result-track:527c51d4f81410f85b8e8692bf592e88b3c9354618fac3aa97d7a16618fac4d6` |
+| 2 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.witnessTrace_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/canonicalprimepowerpackingcomparisonatzero-witnesstrace-eq-zero.md) | 41 | `result-track:527ce80563d26aee1f11c0b42be775889c99ce3cbdc36317ce86431865078ba5` |
+| 3 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.packing_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/canonicalprimepowerpackingcomparisonatzero-packing-tendsto-zero.md) | 51 | `result-track:81845465141365a7fc1ad81ccdde3453c7650c77eef84171a8011155162da257` |
+| 4 | `theorem` | [no_canonical_comparison_of_not_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/declarations/no-canonical-comparison-of-not-tendsto-zero.md) | 67 | `result-track:c030d25f721472c4f87967dcc08c0d1361e76ad3c6cd337d0e5fd710fd3b71ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

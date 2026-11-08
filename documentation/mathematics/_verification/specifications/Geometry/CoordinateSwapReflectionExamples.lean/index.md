@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CoordinateSwapReflectionExamples.lean/index.md) · [Full source](../../../../Geometry/CoordinateSwapReflectionExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoordinateSwapReflectionExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoordinateSwapReflectionExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Geometry/CoordinateSwapReflectionExamples.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:617cb5fca5ea02017be69690ef354246182c8f7ef6e91ca9e2ad52206da416e6` |
-| 2 | `example` | [(anonymous)](../../../../Geometry/CoordinateSwapReflectionExamples.lean/declarations/example-source-edition-2.md) | 33 | `declaration-track:3aeb162de462adbc6ada3c932a925a72d877f611b2190566448ff685d063277b` |
-| 3 | `example` | [(anonymous)](../../../../Geometry/CoordinateSwapReflectionExamples.lean/declarations/example.md) | 38 | `declaration-track:20ff85a1aab3a2bfe2083fe71b72b7094be4069bf1f838965e8fa498411f9fe6` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoordinateSwapReflectionExamples.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:617cb5fca5ea02017be69690ef354246182c8f7ef6e91ca9e2ad52206da416e6` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoordinateSwapReflectionExamples.lean/declarations/example-source-edition-2.md) | 33 | `declaration-track:3aeb162de462adbc6ada3c932a925a72d877f611b2190566448ff685d063277b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoordinateSwapReflectionExamples.lean/declarations/example.md) | 38 | `declaration-track:20ff85a1aab3a2bfe2083fe71b72b7094be4069bf1f838965e8fa498411f9fe6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

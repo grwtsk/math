@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [YAxisDirection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/declarations/yaxisdirection.md) | 19 | `declaration-track:0de6526b3bf7eed0e5cf9b71c8f4fb797e7ae1ead405efe9635a072260f0f838` |
-| 2 | `inductive` | [ArcOrientation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/declarations/arcorientation.md) | 25 | `declaration-track:a0204c209715b333a8c7e27e554f1111b70066c4d178a0347010f37f05fe7c09` |
-| 3 | `abbrev` | [WindingNumber](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/declarations/windingnumber.md) | 31 | `declaration-track:6f500199958f8136010989d00f03ffb0d8330f9c0e2204c6266bf56d92aea3ec` |
+| 1 | `inductive` | [YAxisDirection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/declarations/yaxisdirection.md) | 19 | `declaration-track:0de6526b3bf7eed0e5cf9b71c8f4fb797e7ae1ead405efe9635a072260f0f838` |
+| 2 | `inductive` | [ArcOrientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/declarations/arcorientation.md) | 25 | `declaration-track:a0204c209715b333a8c7e27e554f1111b70066c4d178a0347010f37f05fe7c09` |
+| 3 | `abbrev` | [WindingNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OrientationNamespaced.lean/declarations/windingnumber.md) | 31 | `declaration-track:6f500199958f8136010989d00f03ffb0d8330f9c0e2204c6266bf56d92aea3ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

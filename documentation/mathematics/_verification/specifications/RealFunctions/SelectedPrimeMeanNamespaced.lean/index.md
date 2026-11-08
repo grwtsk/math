@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_deriv_zero](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/correlation-deriv-zero.md) | 26 | `result-track:1f6a2c69e7bdb0ebd9a467f4d524c273eb8fd5b8ffe99913515aae971a81d08c` |
-| 2 | `theorem` | [correlation_deficit](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/correlation-deficit.md) | 42 | `result-track:d3bc12901850a01c4eb11d4e3b4e921fa8ca8471510ad8cc9ac957024ee0d990` |
-| 3 | `def` | [twoPrimeLoss](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeloss.md) | 52 | `declaration-track:91c97bb7d53fa20c955f618c3636ed2a4bf0ac280948cfe573fcb630e4b5ae21` |
-| 4 | `def` | [twoPrimeShift](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeshift.md) | 56 | `declaration-track:56058c61d5c56bc1a8902150bf928b47e8b9b6bfc02d16202d602179ab348558` |
-| 5 | `def` | [twoPrimeShiftError](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeshifterror.md) | 62 | `declaration-track:d70cbc4dfbc1c91e474c192e760cb68ffcdc18da67a69e85b087e4628f8ef64e` |
-| 6 | `theorem` | [twoPrimeShift_deficit](../../../../RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeshift-deficit.md) | 67 | `result-track:70a9b3e481daf0cd12069e32ec318bc7c34f22f6d5518677e29a4542b8fc2f63` |
+| 1 | `theorem` | [correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/correlation-deriv-zero.md) | 26 | `result-track:1f6a2c69e7bdb0ebd9a467f4d524c273eb8fd5b8ffe99913515aae971a81d08c` |
+| 2 | `theorem` | [correlation_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/correlation-deficit.md) | 42 | `result-track:d3bc12901850a01c4eb11d4e3b4e921fa8ca8471510ad8cc9ac957024ee0d990` |
+| 3 | `def` | [twoPrimeLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeloss.md) | 52 | `declaration-track:91c97bb7d53fa20c955f618c3636ed2a4bf0ac280948cfe573fcb630e4b5ae21` |
+| 4 | `def` | [twoPrimeShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeshift.md) | 56 | `declaration-track:56058c61d5c56bc1a8902150bf928b47e8b9b6bfc02d16202d602179ab348558` |
+| 5 | `def` | [twoPrimeShiftError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeshifterror.md) | 62 | `declaration-track:d70cbc4dfbc1c91e474c192e760cb68ffcdc18da67a69e85b087e4628f8ef64e` |
+| 6 | `theorem` | [twoPrimeShift_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMeanNamespaced.lean/declarations/twoprimeshift-deficit.md) | 67 | `result-track:70a9b3e481daf0cd12069e32ec318bc7c34f22f6d5518677e29a4542b8fc2f63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

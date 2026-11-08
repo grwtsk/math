@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Fourier.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Fourier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,19 +62,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../MeasureAndIntegration/Fourier.lean/declarations/instance.md) | 11 | `declaration-track:8c39d1dc634bd5049ec7892726c0a8212fdc7e57bd3e8f3e7b8dc42d431ce768` |
-| 2 | `theorem` | [nnnorm_eq_of_mem_circle](../../../../MeasureAndIntegration/Fourier.lean/declarations/nnnorm-eq-of-mem-circle.md) | 16 | `result-track:edbefafbbec80031dc6ec7d23314bc4628910a42d85126058bb0d60cee293323` |
-| 3 | `theorem` | [nnnorm_circle_smul](../../../../MeasureAndIntegration/Fourier.lean/declarations/nnnorm-circle-smul.md) | 19 | `result-track:e509838f0f870a7e210ff608e3839039a4b557690d2d16fa14feecb897638c8c` |
-| 4 | `def` | [e](../../../../MeasureAndIntegration/Fourier.lean/declarations/e.md) | 22 | `declaration-track:f51b947f18d73162e68727f389225c4faa44a7c8c2daf45c13da3c89308c3174` |
-| 5 | `lemma` | [e_apply](../../../../MeasureAndIntegration/Fourier.lean/declarations/e-apply.md) | 27 | `result-track:d8963da99b84f7e60672530de2a381673ba082efda461f87e0db885291d730bc` |
-| 6 | `theorem` | [hasDerivAt_e](../../../../MeasureAndIntegration/Fourier.lean/declarations/hasderivat-e.md) | 29 | `result-track:9880a3fd15f76be322dba1c8ca57752fe2e11e2f354317ef6459207a31305bd6` |
-| 7 | `lemma` | [fourierIntegral_deriv_aux2](../../../../MeasureAndIntegration/Fourier.lean/declarations/fourierintegral-deriv-aux2.md) | 36 | `result-track:0c401a1b4d88f15eea25919179b30a8efcd7ef17f5fdcbc022e749407a403213` |
-| 8 | `lemma` | [F_neg](../../../../MeasureAndIntegration/Fourier.lean/declarations/f-neg.md) | 40 | `result-track:3b8f20aeff3104ff82c300489a9b46c28bdad8ed665dd5670396ae92a92d15c5` |
-| 9 | `lemma` | [F_add](../../../../MeasureAndIntegration/Fourier.lean/declarations/f-add.md) | 43 | `result-track:766e556edc4c8dfb487631277f55d1bd7b25ca6a43b9f352979f8bb9aef9159f` |
-| 10 | `lemma` | [F_sub](../../../../MeasureAndIntegration/Fourier.lean/declarations/f-sub.md) | 49 | `result-track:00bdd6fb4c5c0c3741cf7204352f88629dbd349dda85e34d84defbaec8836d15` |
-| 11 | `lemma` | [F_mul](../../../../MeasureAndIntegration/Fourier.lean/declarations/f-mul.md) | 53 | `result-track:c1032434d4a27ec86df93a94c1bcbe30bde50bb37c542e794ead5030afaca033` |
-| 12 | `theorem` | [fourierIntegral_self_add_deriv_deriv](../../../../MeasureAndIntegration/Fourier.lean/declarations/fourierintegral-self-add-deriv-deriv.md) | 59 | `result-track:e425256d62c2a50ee1f285f8b4312b4acafc25527562d72dbd6b3498b214ba49` |
-| 13 | `lemma` | [deriv_ofReal](../../../../MeasureAndIntegration/Fourier.lean/declarations/deriv-ofreal.md) | 69 | `result-track:8128c8126ac6cba49f5e97a652c3cfd4059e0d892a9be982fc66e4de472aa73c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/instance.md) | 11 | `declaration-track:8c39d1dc634bd5049ec7892726c0a8212fdc7e57bd3e8f3e7b8dc42d431ce768` |
+| 2 | `theorem` | [nnnorm_eq_of_mem_circle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/nnnorm-eq-of-mem-circle.md) | 16 | `result-track:edbefafbbec80031dc6ec7d23314bc4628910a42d85126058bb0d60cee293323` |
+| 3 | `theorem` | [nnnorm_circle_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/nnnorm-circle-smul.md) | 19 | `result-track:e509838f0f870a7e210ff608e3839039a4b557690d2d16fa14feecb897638c8c` |
+| 4 | `def` | [e](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/e.md) | 22 | `declaration-track:f51b947f18d73162e68727f389225c4faa44a7c8c2daf45c13da3c89308c3174` |
+| 5 | `lemma` | [e_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/e-apply.md) | 27 | `result-track:d8963da99b84f7e60672530de2a381673ba082efda461f87e0db885291d730bc` |
+| 6 | `theorem` | [hasDerivAt_e](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/hasderivat-e.md) | 29 | `result-track:9880a3fd15f76be322dba1c8ca57752fe2e11e2f354317ef6459207a31305bd6` |
+| 7 | `lemma` | [fourierIntegral_deriv_aux2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/fourierintegral-deriv-aux2.md) | 36 | `result-track:0c401a1b4d88f15eea25919179b30a8efcd7ef17f5fdcbc022e749407a403213` |
+| 8 | `lemma` | [F_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/f-neg.md) | 40 | `result-track:3b8f20aeff3104ff82c300489a9b46c28bdad8ed665dd5670396ae92a92d15c5` |
+| 9 | `lemma` | [F_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/f-add.md) | 43 | `result-track:766e556edc4c8dfb487631277f55d1bd7b25ca6a43b9f352979f8bb9aef9159f` |
+| 10 | `lemma` | [F_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/f-sub.md) | 49 | `result-track:00bdd6fb4c5c0c3741cf7204352f88629dbd349dda85e34d84defbaec8836d15` |
+| 11 | `lemma` | [F_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/f-mul.md) | 53 | `result-track:c1032434d4a27ec86df93a94c1bcbe30bde50bb37c542e794ead5030afaca033` |
+| 12 | `theorem` | [fourierIntegral_self_add_deriv_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/fourierintegral-self-add-deriv-deriv.md) | 59 | `result-track:e425256d62c2a50ee1f285f8b4312b4acafc25527562d72dbd6b3498b214ba49` |
+| 13 | `lemma` | [deriv_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Fourier.lean/declarations/deriv-ofreal.md) | 69 | `result-track:8128c8126ac6cba49f5e97a652c3cfd4059e0d892a9be982fc66e4de472aa73c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [setOf_liouvilleWith_subset_aux](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/setof-liouvillewith-subset-aux.md) | 40 | `result-track:59c2b233bb8768e2edcd73b855038b353915803d9efbf9f115c419e75867df47` |
-| 2 | `theorem` | [volume_iUnion_setOf_liouvilleWith](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/volume-iunion-setof-liouvillewith.md) | 82 | `result-track:d5fc526070c4e73b9d1f35f1a2d225d67e6b71c9b9d5391cc9d0ab94c3081389` |
-| 3 | `theorem` | [ae_not_liouvilleWith](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouvillewith.md) | 113 | `result-track:31e2a1ed51aae791a965e467342cbd1c54331ea2b038e377b498448b5929d581` |
-| 4 | `theorem` | [ae_not_liouville](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouville.md) | 117 | `result-track:9223cf33fad1ad00b3133d54063389bd2bdd643d24e08185fadd12453e4fa703` |
-| 5 | `theorem` | [volume_setOf_liouville](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/volume-setof-liouville.md) | 122 | `result-track:3f31c307415954f98376cd86a7a82faf5365b9ce054233e0f88b234cb0c1779f` |
-| 6 | `theorem` | [Real.disjoint_residual_ae](../../../../NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/real-disjoint-residual-ae.md) | 127 | `result-track:28712abfa41a2ea4ca80d5eec9363532e252a3354898b228907dbe903b2fc131` |
+| 1 | `theorem` | [setOf_liouvilleWith_subset_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/setof-liouvillewith-subset-aux.md) | 40 | `result-track:59c2b233bb8768e2edcd73b855038b353915803d9efbf9f115c419e75867df47` |
+| 2 | `theorem` | [volume_iUnion_setOf_liouvilleWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/volume-iunion-setof-liouvillewith.md) | 82 | `result-track:d5fc526070c4e73b9d1f35f1a2d225d67e6b71c9b9d5391cc9d0ab94c3081389` |
+| 3 | `theorem` | [ae_not_liouvilleWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouvillewith.md) | 113 | `result-track:31e2a1ed51aae791a965e467342cbd1c54331ea2b038e377b498448b5929d581` |
+| 4 | `theorem` | [ae_not_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouville.md) | 117 | `result-track:9223cf33fad1ad00b3133d54063389bd2bdd643d24e08185fadd12453e4fa703` |
+| 5 | `theorem` | [volume_setOf_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/volume-setof-liouville.md) | 122 | `result-track:3f31c307415954f98376cd86a7a82faf5365b9ce054233e0f88b234cb0c1779f` |
+| 6 | `theorem` | [Real.disjoint_residual_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TranscendentalLiouvilleMeasureNamespaced.lean/declarations/real-disjoint-residual-ae.md) | 127 | `result-track:28712abfa41a2ea4ca80d5eec9363532e252a3354898b228907dbe903b2fc131` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

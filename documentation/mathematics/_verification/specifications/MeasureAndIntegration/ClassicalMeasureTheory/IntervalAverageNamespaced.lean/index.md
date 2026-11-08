@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [interval_average_symm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/interval-average-symm.md) | 46 | `result-track:86fc56141581cc1a4077859befe9ea81b004bbef6ca7b18cefdbdd7cc3b141d1` |
-| 2 | `theorem` | [interval_average_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/interval-average-eq.md) | 49 | `result-track:d986d44b5214448702b62e3688f5e0c4043e00dce352a31169ed7ab98308a3a4` |
-| 3 | `theorem` | [interval_average_eq_div](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/interval-average-eq-div.md) | 57 | `result-track:a743a22d116dc3954d53acefd296b324ffc6f124815e366968900385401671af` |
-| 4 | `theorem` | [intervalAverage_congr_codiscreteWithin](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/intervalaverage-congr-codiscretewithin.md) | 62 | `result-track:3409a1dcbbd3f33259ab1274496bdf10b0b204d6e9546e3cba5e117a8645e847` |
+| 1 | `theorem` | [interval_average_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/interval-average-symm.md) | 46 | `result-track:86fc56141581cc1a4077859befe9ea81b004bbef6ca7b18cefdbdd7cc3b141d1` |
+| 2 | `theorem` | [interval_average_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/interval-average-eq.md) | 49 | `result-track:d986d44b5214448702b62e3688f5e0c4043e00dce352a31169ed7ab98308a3a4` |
+| 3 | `theorem` | [interval_average_eq_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/interval-average-eq-div.md) | 57 | `result-track:a743a22d116dc3954d53acefd296b324ffc6f124815e366968900385401671af` |
+| 4 | `theorem` | [intervalAverage_congr_codiscreteWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalAverageNamespaced.lean/declarations/intervalaverage-congr-codiscretewithin.md) | 62 | `result-track:3409a1dcbbd3f33259ab1274496bdf10b0b204d6e9546e3cba5e117a8645e847` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

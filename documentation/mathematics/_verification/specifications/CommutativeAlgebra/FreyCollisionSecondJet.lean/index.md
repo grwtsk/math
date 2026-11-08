@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassSecondJet`](../../../../CommutativeAlgebra/WeierstrassSecondJet.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollisionOrder`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyCollisionOrder.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassSecondJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassSecondJet.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollisionOrder`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyCollisionOrder.lean/index.md) — import line 12; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,24 +58,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/instance.md) | 25 | `declaration-track:380d9d589c28a4cb757b5a704196f4cd9afd8370e32e421cc685f0995a6cf9e9` |
-| 2 | `theorem` | [mapped_model_shape](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/mapped-model-shape.md) | 28 | `result-track:e3e44e6c25180ceeedcaf126ee785e63eb201ad982b92b484f75e82f5b1c2801` |
-| 3 | `theorem` | [old_collision_direction](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/old-collision-direction.md) | 35 | `result-track:8487e99544987db87c75d7f98fee82ea2ca91e3c933562703b0c977423af4247` |
-| 4 | `theorem` | [residue_lift_iff](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/residue-lift-iff.md) | 41 | `result-track:26fdaf48d3675531ec932e828c77c5959ba073e785c04f1ec93d7518b93ef1e3` |
-| 5 | `theorem` | [lift_iff_nonsingular](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/lift-iff-nonsingular.md) | 48 | `result-track:9e9c534c83b0af00425f17995d0604fb2c7e465441bcdb92e49b2e332a7caf5a` |
-| 6 | `theorem` | [local_lift_iff](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/local-lift-iff.md) | 55 | `result-track:1db976c401be3b13116432ed342b776d2e8cd4c5ace5d6c53a780e776c3edb64` |
-| 7 | `theorem` | [local_iff_residue](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/local-iff-residue.md) | 61 | `result-track:b642dfacd92ce9a110b64a6671665eba426162f87dd44b8c4adbd2e207ab3ac2` |
-| 8 | `theorem` | [gap_jacobian_factor](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/gap-jacobian-factor.md) | 68 | `result-track:f638834338f48b5c2231b0e2e833754f8a35acbd999c0cfa101a2503562e1334` |
-| 9 | `theorem` | [gap_jacobian_factor_odd](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/gap-jacobian-factor-odd.md) | 75 | `result-track:3b0cddab53fbf2b2bee8c927b99dd48f04f092fceb1724951d2f5923ad70faf8` |
-| 10 | `theorem` | [jacobian_even_iff_gap_four](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/jacobian-even-iff-gap-four.md) | 79 | `result-track:6d02e6a6e5a5da06c39cff7bb31af28fb78487421f3292914bd2725e8d9c9fda` |
-| 11 | `theorem` | [collision_lift_iff_gap](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/collision-lift-iff-gap.md) | 90 | `result-track:48eb9398d5fcfccbcd90bf49c560bef9d1d52f222427fbc32c6dcd8290a1a860` |
-| 12 | `theorem` | [no_lift_on_deep_collision](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/no-lift-on-deep-collision.md) | 98 | `result-track:9acf4c68fc9bd07c11d8dd190044bedc6dc28d0ec8ce90f503ad89c44a1c8b5c` |
-| 13 | `theorem` | [selected_a4_ne_zero](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/selected-a4-ne-zero.md) | 105 | `result-track:e81f2d870e3fa8e7db6129ba7db481627c8d962aec94750b5a9a4b466bfa718e` |
-| 14 | `theorem` | [rational_model_shape](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/rational-model-shape.md) | 114 | `result-track:358abab2f98b15db8bff2d9211143d3cee85cde29a807818094fc71a60dab927` |
-| 15 | `theorem` | [rational_lift](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/rational-lift.md) | 120 | `result-track:5e0713e01614fa196fef6d8cc26732f3f5a89f4d71227296c56969753752dc82` |
-| 16 | `theorem` | [rational_lift_coefficient](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/rational-lift-coefficient.md) | 127 | `result-track:0b4c9529b9982c19b2c8217367155f0de09bb37a232952b6c8dd945009f0338f` |
-| 17 | `theorem` | [quadratic_coefficient_clearing](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/quadratic-coefficient-clearing.md) | 135 | `result-track:80cf7bbd22eb5be1d6272299679de1d37b7b0cd1a20383e293b5287f0be58650` |
-| 18 | `theorem` | [all_node_directions](../../../../CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/all-node-directions.md) | 143 | `result-track:cc5266549eee3336da39afa8832f4c1976773a826d8b9027a874fdc9e071c483` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/instance.md) | 25 | `declaration-track:380d9d589c28a4cb757b5a704196f4cd9afd8370e32e421cc685f0995a6cf9e9` |
+| 2 | `theorem` | [mapped_model_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/mapped-model-shape.md) | 28 | `result-track:e3e44e6c25180ceeedcaf126ee785e63eb201ad982b92b484f75e82f5b1c2801` |
+| 3 | `theorem` | [old_collision_direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/old-collision-direction.md) | 35 | `result-track:8487e99544987db87c75d7f98fee82ea2ca91e3c933562703b0c977423af4247` |
+| 4 | `theorem` | [residue_lift_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/residue-lift-iff.md) | 41 | `result-track:26fdaf48d3675531ec932e828c77c5959ba073e785c04f1ec93d7518b93ef1e3` |
+| 5 | `theorem` | [lift_iff_nonsingular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/lift-iff-nonsingular.md) | 48 | `result-track:9e9c534c83b0af00425f17995d0604fb2c7e465441bcdb92e49b2e332a7caf5a` |
+| 6 | `theorem` | [local_lift_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/local-lift-iff.md) | 55 | `result-track:1db976c401be3b13116432ed342b776d2e8cd4c5ace5d6c53a780e776c3edb64` |
+| 7 | `theorem` | [local_iff_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/local-iff-residue.md) | 61 | `result-track:b642dfacd92ce9a110b64a6671665eba426162f87dd44b8c4adbd2e207ab3ac2` |
+| 8 | `theorem` | [gap_jacobian_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/gap-jacobian-factor.md) | 68 | `result-track:f638834338f48b5c2231b0e2e833754f8a35acbd999c0cfa101a2503562e1334` |
+| 9 | `theorem` | [gap_jacobian_factor_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/gap-jacobian-factor-odd.md) | 75 | `result-track:3b0cddab53fbf2b2bee8c927b99dd48f04f092fceb1724951d2f5923ad70faf8` |
+| 10 | `theorem` | [jacobian_even_iff_gap_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/jacobian-even-iff-gap-four.md) | 79 | `result-track:6d02e6a6e5a5da06c39cff7bb31af28fb78487421f3292914bd2725e8d9c9fda` |
+| 11 | `theorem` | [collision_lift_iff_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/collision-lift-iff-gap.md) | 90 | `result-track:48eb9398d5fcfccbcd90bf49c560bef9d1d52f222427fbc32c6dcd8290a1a860` |
+| 12 | `theorem` | [no_lift_on_deep_collision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/no-lift-on-deep-collision.md) | 98 | `result-track:9acf4c68fc9bd07c11d8dd190044bedc6dc28d0ec8ce90f503ad89c44a1c8b5c` |
+| 13 | `theorem` | [selected_a4_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/selected-a4-ne-zero.md) | 105 | `result-track:e81f2d870e3fa8e7db6129ba7db481627c8d962aec94750b5a9a4b466bfa718e` |
+| 14 | `theorem` | [rational_model_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/rational-model-shape.md) | 114 | `result-track:358abab2f98b15db8bff2d9211143d3cee85cde29a807818094fc71a60dab927` |
+| 15 | `theorem` | [rational_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/rational-lift.md) | 120 | `result-track:5e0713e01614fa196fef6d8cc26732f3f5a89f4d71227296c56969753752dc82` |
+| 16 | `theorem` | [rational_lift_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/rational-lift-coefficient.md) | 127 | `result-track:0b4c9529b9982c19b2c8217367155f0de09bb37a232952b6c8dd945009f0338f` |
+| 17 | `theorem` | [quadratic_coefficient_clearing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/quadratic-coefficient-clearing.md) | 135 | `result-track:80cf7bbd22eb5be1d6272299679de1d37b7b0cd1a20383e293b5287f0be58650` |
+| 18 | `theorem` | [all_node_directions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCollisionSecondJet.lean/declarations/all-node-directions.md) | 143 | `result-track:cc5266549eee3336da39afa8832f4c1976773a826d8b9027a874fdc9e071c483` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

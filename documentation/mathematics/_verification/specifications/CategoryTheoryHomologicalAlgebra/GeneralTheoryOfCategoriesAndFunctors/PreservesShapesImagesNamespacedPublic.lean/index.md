@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/iso.md) | 50 | `declaration-track:e06100534a27586c72ef9b705eaf737cf684fc4be73fa5427c1db84fe5e38270` |
-| 2 | `theorem` | [factorThruImage_comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/factorthruimage-comp-hom.md) | 61 | `result-track:f7fae35f91b10dd37b86c514d21f39aea5bfd5eaf6141411aa08efa05944d596` |
-| 3 | `theorem` | [hom_comp_map_image_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/hom-comp-map-image.md) | 65 | `result-track:142b7436c475fe24fcadad19ab7f44102a8bd11a88c19c05be9099053e5b11f0` |
-| 4 | `theorem` | [inv_comp_image_ι_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/inv-comp-image-map.md) | 69 | `result-track:7768c79dc4ef58cb706139b8f80307309ddb25004ef938a4280a0669d238fe03` |
+| 1 | `def` | [iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/iso.md) | 50 | `declaration-track:e06100534a27586c72ef9b705eaf737cf684fc4be73fa5427c1db84fe5e38270` |
+| 2 | `theorem` | [factorThruImage_comp_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/factorthruimage-comp-hom.md) | 61 | `result-track:f7fae35f91b10dd37b86c514d21f39aea5bfd5eaf6141411aa08efa05944d596` |
+| 3 | `theorem` | [hom_comp_map_image_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/hom-comp-map-image.md) | 65 | `result-track:142b7436c475fe24fcadad19ab7f44102a8bd11a88c19c05be9099053e5b11f0` |
+| 4 | `theorem` | [inv_comp_image_ι_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesImagesNamespacedPublic.lean/declarations/inv-comp-image-map.md) | 69 | `result-track:7768c79dc4ef58cb706139b8f80307309ddb25004ef938a4280a0669d238fe03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

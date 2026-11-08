@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasDerivAt_partialLogSum](../../../../FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/declarations/hasderivat-partiallogsum.md) | 47 | `result-track:67e9b23bade71f8e2348bd895a77021f6040e7d9c31efecf3a30ea933bc14bb3` |
-| 2 | `lemma` | [differentiable_partialLogSum](../../../../FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/declarations/differentiable-partiallogsum.md) | 72 | `result-track:265d2323cf0dc99fad3d0c0f6f66711079399f0b1665a27404375a474e0fbcc2` |
+| 1 | `lemma` | [hasDerivAt_partialLogSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/declarations/hasderivat-partiallogsum.md) | 47 | `result-track:67e9b23bade71f8e2348bd895a77021f6040e7d9c31efecf3a30ea933bc14bb3` |
+| 2 | `lemma` | [differentiable_partialLogSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmDifferentiability.lean/declarations/differentiable-partiallogsum.md) | 72 | `result-track:265d2323cf0dc99fad3d0c0f6f66711079399f0b1665a27404375a474e0fbcc2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

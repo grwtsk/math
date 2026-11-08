@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [empty](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/empty.md) | 32 | `declaration-track:21c89755b901822854680b26e8afc8c8c3ce048fef1604c7ddb4e67db0eec9e0` |
-| 2 | `def` | [cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons.md) | 40 | `declaration-track:bfe3201452e7f334494ce34921f5f93db7c4d30c71dea46277e9e14cfb0b61a9` |
-| 3 | `theorem` | [cons_same](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-same.md) | 45 | `result-track:282608e0c09b8517e70ff4b30a1a69939f7f95d4b851eb3291ae362b8930b867` |
-| 4 | `theorem` | [cons_ne](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-ne.md) | 49 | `result-track:429a3bb8afa810d0db7bcc11c52fafd40862dc5ebdba88037692ea8998e27252` |
-| 5 | `theorem` | [cons_swap](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-swap.md) | 53 | `result-track:d50e3849d0346402c3b3a3e421a9436aa39282a9a3337122f4867a72d84d8d50` |
-| 6 | `theorem` | [cons_eta](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-eta.md) | 65 | `result-track:21efd7cc2515e3a2654e02e80fb96a969b2c40e9c496fe3473485fd96c7b1b2e` |
-| 7 | `theorem` | [cons_map](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-map.md) | 73 | `result-track:f7c2f888d192b4aab7588e3038de2d45384c59b5b5231243b1057f03b9030eb1` |
-| 8 | `theorem` | [forall_rel_cons_ext](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/forall-rel-cons-ext.md) | 81 | `result-track:a95cbcc1d3e23ccbc3bdbbcc3af73b354ee825f66106d010ef8ff440f95f960b` |
-| 9 | `theorem` | [cons_injective](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-injective.md) | 91 | `result-track:0a4642083a298cbe2dd3cc1ae95fe6819ff77d1d94c8e072534cee2709618f5f` |
-| 10 | `def` | [pi](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/pi.md) | 108 | `declaration-track:56e568c1fe9341e950faaed57ec9b10e672248688b1f084df2d82b2eec8ca04b` |
-| 11 | `theorem` | [pi_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/pi-zero.md) | 128 | `result-track:a3551149a594960d8b712005ab2588ce0829ff324b2e7b9b7276f475282a16a3` |
-| 12 | `theorem` | [pi_cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/pi-cons.md) | 132 | `result-track:1b310049c474e5c13301cdc8bec0b00dc46a0bf33ac257c9eb25a5956f437ba9` |
-| 13 | `theorem` | [card_pi](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/card-pi.md) | 136 | `result-track:782a61f326a6eab7097f1d4378c5e7167ed9e9f3733592976ca14c939a793836` |
-| 14 | `theorem` | [Nodup.pi](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/nodup-pi.md) | 140 | `result-track:169a760e5d66028d5e417aa788293fde278998d7157a8a8aa952adc80052532c` |
-| 15 | `theorem` | [mem_pi](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/mem-pi.md) | 158 | `result-track:5e01a4698bcc1071b801cafed62a9f29f4128857cf0fa37304cdeae60cb5d6a9` |
+| 1 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/empty.md) | 32 | `declaration-track:21c89755b901822854680b26e8afc8c8c3ce048fef1604c7ddb4e67db0eec9e0` |
+| 2 | `def` | [cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons.md) | 40 | `declaration-track:bfe3201452e7f334494ce34921f5f93db7c4d30c71dea46277e9e14cfb0b61a9` |
+| 3 | `theorem` | [cons_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-same.md) | 45 | `result-track:282608e0c09b8517e70ff4b30a1a69939f7f95d4b851eb3291ae362b8930b867` |
+| 4 | `theorem` | [cons_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-ne.md) | 49 | `result-track:429a3bb8afa810d0db7bcc11c52fafd40862dc5ebdba88037692ea8998e27252` |
+| 5 | `theorem` | [cons_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-swap.md) | 53 | `result-track:d50e3849d0346402c3b3a3e421a9436aa39282a9a3337122f4867a72d84d8d50` |
+| 6 | `theorem` | [cons_eta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-eta.md) | 65 | `result-track:21efd7cc2515e3a2654e02e80fb96a969b2c40e9c496fe3473485fd96c7b1b2e` |
+| 7 | `theorem` | [cons_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-map.md) | 73 | `result-track:f7c2f888d192b4aab7588e3038de2d45384c59b5b5231243b1057f03b9030eb1` |
+| 8 | `theorem` | [forall_rel_cons_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/forall-rel-cons-ext.md) | 81 | `result-track:a95cbcc1d3e23ccbc3bdbbcc3af73b354ee825f66106d010ef8ff440f95f960b` |
+| 9 | `theorem` | [cons_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/cons-injective.md) | 91 | `result-track:0a4642083a298cbe2dd3cc1ae95fe6819ff77d1d94c8e072534cee2709618f5f` |
+| 10 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/pi.md) | 108 | `declaration-track:56e568c1fe9341e950faaed57ec9b10e672248688b1f084df2d82b2eec8ca04b` |
+| 11 | `theorem` | [pi_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/pi-zero.md) | 128 | `result-track:a3551149a594960d8b712005ab2588ce0829ff324b2e7b9b7276f475282a16a3` |
+| 12 | `theorem` | [pi_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/pi-cons.md) | 132 | `result-track:1b310049c474e5c13301cdc8bec0b00dc46a0bf33ac257c9eb25a5956f437ba9` |
+| 13 | `theorem` | [card_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/card-pi.md) | 136 | `result-track:782a61f326a6eab7097f1d4378c5e7167ed9e9f3733592976ca14c939a793836` |
+| 14 | `theorem` | [Nodup.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/nodup-pi.md) | 140 | `result-track:169a760e5d66028d5e417aa788293fde278998d7157a8a8aa952adc80052532c` |
+| 15 | `theorem` | [mem_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPiPublic.lean/declarations/mem-pi.md) | 158 | `result-track:5e01a4698bcc1071b801cafed62a9f29f4128857cf0fa37304cdeae60cb5d6a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FixedMatrixRingState](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/declarations/fixedmatrixringstate.md) | 14 | `declaration-track:40e31c241279301532ca26116ef073e52853034526b07017e5d1d3286f2a2c81` |
-| 2 | `def` | [selectedRowsObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/declarations/selectedrowsobservation.md) | 19 | `declaration-track:2b718bece87e3eb4befdfe46c6ca0df7b5b4a052e0707c2bfb14061720b3d41e` |
-| 3 | `def` | [selectedColumnsObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/declarations/selectedcolumnsobservation.md) | 26 | `declaration-track:d6f3288a8d887c02d1a430561b60d32e506e98e7b33782cc6848043c0721fedc` |
+| 1 | `abbrev` | [FixedMatrixRingState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/declarations/fixedmatrixringstate.md) | 14 | `declaration-track:40e31c241279301532ca26116ef073e52853034526b07017e5d1d3286f2a2c81` |
+| 2 | `def` | [selectedRowsObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/declarations/selectedrowsobservation.md) | 19 | `declaration-track:2b718bece87e3eb4befdfe46c6ca0df7b5b4a052e0707c2bfb14061720b3d41e` |
+| 3 | `def` | [selectedColumnsObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixRingEdition2.lean/declarations/selectedcolumnsobservation.md) | 26 | `declaration-track:d6f3288a8d887c02d1a430561b60d32e506e98e7b33782cc6848043c0721fedc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

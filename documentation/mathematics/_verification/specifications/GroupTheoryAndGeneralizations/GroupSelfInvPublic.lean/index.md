@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsSelfInv](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv.md) | 32 | `declaration-track:734341272521d3207b86e00c4331fb854e4359d2b9d5d610e21ddc9d0020a57c` |
-| 2 | `lemma` | [isSelfInv_iff](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-iff.md) | 35 | `result-track:8133bdd391d8e54ebeb4e31ae7939e2f2ee9788082d89fb21fd65446e5fc8998` |
-| 3 | `lemma` | [IsSelfInv.eq_inv](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-eq-inv.md) | 41 | `result-track:26cf4f165afe7803530d501c3bc85ac2bcbcc5bb4403a8da7b651d21caf513b9` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/instance.md) | 44 | `declaration-track:64da9b9a9af8dec1c4b17196619510cb78ee0c17ac6ff2b62621888cb7268912` |
-| 5 | `lemma` | [IsSelfInv.one](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-one.md) | 49 | `result-track:f3a5ae4617542dd2d037ce6f0132e3a4774fd82be18c87838563f5e933151eb1` |
-| 6 | `lemma` | [isSelfInv_inv](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-inv.md) | 52 | `result-track:a79e09e8badefd3a02065f1f86687224ac1fff5c224c0e4aba3bae4c82d45056` |
-| 7 | `lemma` | [IsSelfInv.conj](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-conj.md) | 59 | `result-track:9efcb66ac8f8fb7102a7d30ac38a576fc10afbd0fec8a275fc1913397c3b5a5d` |
-| 8 | `lemma` | [isSelfInv_conj_iff](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-conj-iff.md) | 64 | `result-track:5d9ee91bceffcd8b94f8e8364da4edab9f9aadbcddb65dac20cb02a2d7c1cf4a` |
-| 9 | `lemma` | [IsSelfInv.pow](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-pow.md) | 68 | `result-track:58d8461f4304fcf091fb3e8bd07d5f2c6afb9a7d294a6059059b64f66a6f2c43` |
-| 10 | `lemma` | [IsSelfInv.zpow](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-zpow.md) | 73 | `result-track:d6c7e7e72d9ea6dfbaa1f98cf5a28ce2fed4a15fc0a95d53693802478f88426f` |
-| 11 | `lemma` | [isSelfInv_iff_sq_eq_one](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-iff-sq-eq-one.md) | 78 | `result-track:e9cdb7cbbe7e5373fadc9b1e7c8ea7b04d114174b37e187c69dd24a32ee8bc8b` |
-| 12 | `lemma` | [IsSelfInv.mul](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-mul.md) | 86 | `result-track:12a0370b4c130b0988e323e7a87fa90ce1753d709c75d74a69115a2c5050aeea` |
-| 13 | `lemma` | [IsSelfInv.div](../../../../GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-div.md) | 90 | `result-track:4a3a2dc66452ff76f04cdd93b99eb158b2b4a84d92799ebda2f3edbfa8e64d0d` |
+| 1 | `def` | [IsSelfInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv.md) | 32 | `declaration-track:734341272521d3207b86e00c4331fb854e4359d2b9d5d610e21ddc9d0020a57c` |
+| 2 | `lemma` | [isSelfInv_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-iff.md) | 35 | `result-track:8133bdd391d8e54ebeb4e31ae7939e2f2ee9788082d89fb21fd65446e5fc8998` |
+| 3 | `lemma` | [IsSelfInv.eq_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-eq-inv.md) | 41 | `result-track:26cf4f165afe7803530d501c3bc85ac2bcbcc5bb4403a8da7b651d21caf513b9` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/instance.md) | 44 | `declaration-track:64da9b9a9af8dec1c4b17196619510cb78ee0c17ac6ff2b62621888cb7268912` |
+| 5 | `lemma` | [IsSelfInv.one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-one.md) | 49 | `result-track:f3a5ae4617542dd2d037ce6f0132e3a4774fd82be18c87838563f5e933151eb1` |
+| 6 | `lemma` | [isSelfInv_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-inv.md) | 52 | `result-track:a79e09e8badefd3a02065f1f86687224ac1fff5c224c0e4aba3bae4c82d45056` |
+| 7 | `lemma` | [IsSelfInv.conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-conj.md) | 59 | `result-track:9efcb66ac8f8fb7102a7d30ac38a576fc10afbd0fec8a275fc1913397c3b5a5d` |
+| 8 | `lemma` | [isSelfInv_conj_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-conj-iff.md) | 64 | `result-track:5d9ee91bceffcd8b94f8e8364da4edab9f9aadbcddb65dac20cb02a2d7c1cf4a` |
+| 9 | `lemma` | [IsSelfInv.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-pow.md) | 68 | `result-track:58d8461f4304fcf091fb3e8bd07d5f2c6afb9a7d294a6059059b64f66a6f2c43` |
+| 10 | `lemma` | [IsSelfInv.zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-zpow.md) | 73 | `result-track:d6c7e7e72d9ea6dfbaa1f98cf5a28ce2fed4a15fc0a95d53693802478f88426f` |
+| 11 | `lemma` | [isSelfInv_iff_sq_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-iff-sq-eq-one.md) | 78 | `result-track:e9cdb7cbbe7e5373fadc9b1e7c8ea7b04d114174b37e187c69dd24a32ee8bc8b` |
+| 12 | `lemma` | [IsSelfInv.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-mul.md) | 86 | `result-track:12a0370b4c130b0988e323e7a87fa90ce1753d709c75d74a69115a2c5050aeea` |
+| 13 | `lemma` | [IsSelfInv.div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSelfInvPublic.lean/declarations/isselfinv-div.md) | 90 | `result-track:4a3a2dc66452ff76f04cdd93b99eb158b2b4a84d92799ebda2f3edbfa8e64d0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

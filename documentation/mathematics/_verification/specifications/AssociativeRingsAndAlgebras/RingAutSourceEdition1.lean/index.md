@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RingAut](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/ringaut.md) | 34 | `declaration-track:6f7dbef024be8eb624f14d9315aca9205ee104aeb91f44059ac9e8383147bd6c` |
-| 2 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/instance.md) | 48 | `declaration-track:3377c7a09633af309aa82a306eda754a7390bf3a98f94136eff1133b0e97e18a` |
-| 3 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:3df63cbda54b08f516e24becd09634f12d936e22780e392e786d5ceb8c7c85bf` |
-| 4 | `def` | [toAddAut](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/toaddaut.md) | 81 | `declaration-track:a845d76ba98b1f35bf4e775b61cf0d95d81d30ffce9a65b50c3bfef47ad3977d` |
-| 5 | `def` | [toMulAut](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/tomulaut.md) | 88 | `declaration-track:d35ec9c51668591866e11a82a79fae1739d7cc2f4223d1af265684133823515b` |
-| 6 | `def` | [toPerm](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/toperm.md) | 95 | `declaration-track:ee4c3443d716057b70eee4003b842f44a7e98fe270813cce92469cef9cb7363b` |
-| 7 | `instance` | [applyMulSemiringAction](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/applymulsemiringaction.md) | 108 | `declaration-track:7d0dcb91592f7524df8cdd3376b493600d8aebedbaacf194b0176f286dfaec51` |
-| 8 | `theorem` | [smul_def](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/smul-def.md) | 120 | `result-track:52e901fd2b19316e11dfc78c25a7895972a217b37d870875876fb155d4aa5793` |
-| 9 | `instance` | [apply_faithfulSMul](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/apply-faithfulsmul.md) | 124 | `declaration-track:fb42e3b7c8a7f86117e8e53d3acb1e6339bbeb133021c8dbd5ab8345386b6682` |
-| 10 | `def` | [_root_.MulSemiringAction.toRingAut](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/root-mulsemiringaction-toringaut.md) | 135 | `declaration-track:61e65ab7b61f8094ac46b64c26d7146b7ba397ffb87f0bf8c29865a6fd7180de` |
+| 1 | `def` | [RingAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/ringaut.md) | 34 | `declaration-track:6f7dbef024be8eb624f14d9315aca9205ee104aeb91f44059ac9e8383147bd6c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/instance.md) | 48 | `declaration-track:3377c7a09633af309aa82a306eda754a7390bf3a98f94136eff1133b0e97e18a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:3df63cbda54b08f516e24becd09634f12d936e22780e392e786d5ceb8c7c85bf` |
+| 4 | `def` | [toAddAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/toaddaut.md) | 81 | `declaration-track:a845d76ba98b1f35bf4e775b61cf0d95d81d30ffce9a65b50c3bfef47ad3977d` |
+| 5 | `def` | [toMulAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/tomulaut.md) | 88 | `declaration-track:d35ec9c51668591866e11a82a79fae1739d7cc2f4223d1af265684133823515b` |
+| 6 | `def` | [toPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/toperm.md) | 95 | `declaration-track:ee4c3443d716057b70eee4003b842f44a7e98fe270813cce92469cef9cb7363b` |
+| 7 | `instance` | [applyMulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/applymulsemiringaction.md) | 108 | `declaration-track:7d0dcb91592f7524df8cdd3376b493600d8aebedbaacf194b0176f286dfaec51` |
+| 8 | `theorem` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/smul-def.md) | 120 | `result-track:52e901fd2b19316e11dfc78c25a7895972a217b37d870875876fb155d4aa5793` |
+| 9 | `instance` | [apply_faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/apply-faithfulsmul.md) | 124 | `declaration-track:fb42e3b7c8a7f86117e8e53d3acb1e6339bbeb133021c8dbd5ab8345386b6682` |
+| 10 | `def` | [_root_.MulSemiringAction.toRingAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition1.lean/declarations/root-mulsemiringaction-toringaut.md) | 135 | `declaration-track:61e65ab7b61f8094ac46b64c26d7146b7ba397ffb87f0bf8c29865a6fd7180de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

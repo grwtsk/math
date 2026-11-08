@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ScaleDivisionNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ScaleDivisionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaleDivisionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaleDivisionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [divided_continuation_meromorphic](../../../../GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-meromorphic.md) | 31 | `result-track:51b84a158d6bfe3123cdbc9099856ffe5c37daf2f925b556ca58a3d34bdbad31` |
-| 2 | `theorem` | [divided_continuation_analytic_positive_real](../../../../GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-analytic-positive-real.md) | 37 | `result-track:0fd29649a58579857ec37f0aaeb16f691e25ee9e1784d4429fd611e357d81709` |
-| 3 | `theorem` | [center_ne_zero](../../../../GeneralTopology/ScaleDivisionNamespaced.lean/declarations/center-ne-zero.md) | 42 | `result-track:ba169648b5541bfde65f320c7f790be4bdf444ac2c2bd73534875b04afe75592` |
-| 4 | `theorem` | [divided_continuation_exact_order](../../../../GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-exact-order.md) | 50 | `result-track:9cd8958fb9aa25b81d41fe8e16dcbe654b7370c49659f5fe6ab4351305393bfe` |
-| 5 | `theorem` | [divided_continuation_principal_limit](../../../../GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-principal-limit.md) | 64 | `result-track:f12ba5b28cb87d5d0fc173cadd24af4182b143c51e54c99823da2d032ec84cf6` |
+| 1 | `theorem` | [divided_continuation_meromorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-meromorphic.md) | 31 | `result-track:51b84a158d6bfe3123cdbc9099856ffe5c37daf2f925b556ca58a3d34bdbad31` |
+| 2 | `theorem` | [divided_continuation_analytic_positive_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-analytic-positive-real.md) | 37 | `result-track:0fd29649a58579857ec37f0aaeb16f691e25ee9e1784d4429fd611e357d81709` |
+| 3 | `theorem` | [center_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaleDivisionNamespaced.lean/declarations/center-ne-zero.md) | 42 | `result-track:ba169648b5541bfde65f320c7f790be4bdf444ac2c2bd73534875b04afe75592` |
+| 4 | `theorem` | [divided_continuation_exact_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-exact-order.md) | 50 | `result-track:9cd8958fb9aa25b81d41fe8e16dcbe654b7370c49659f5fe6ab4351305393bfe` |
+| 5 | `theorem` | [divided_continuation_principal_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaleDivisionNamespaced.lean/declarations/divided-continuation-principal-limit.md) | 64 | `result-track:f12ba5b28cb87d5d0fc173cadd24af4182b143c51e54c99823da2d032ec84cf6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

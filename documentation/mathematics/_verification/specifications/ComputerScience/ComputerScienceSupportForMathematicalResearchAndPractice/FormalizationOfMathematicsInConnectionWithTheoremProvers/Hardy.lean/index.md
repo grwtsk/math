@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HardyIntervalDisposition](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardyintervaldisposition.md) | 12 | `declaration-track:2d2767143e3e492745d46eb8d06fd07271aff5aae7685ae4c9d8da22c145aa40` |
-| 2 | `structure` | [HardySignChangeCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardysignchangecertificate.md) | 19 | `declaration-track:1dbc0d7ae4b56a1134c482a57f092976bd3d4180aa374579f9b7d2dd2aa602c1` |
-| 3 | `theorem` | [hardy_signChange_gives_oddMultiplicity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardy-signchange-gives-oddmultiplicity.md) | 28 | `result-track:6b02f8d70d89bcbecf70b00023c8c1d5998ddbf7de62cff2fdb3a9cb0ea17d9b` |
-| 4 | `structure` | [HardyUniqueSimpleZeroCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardyuniquesimplezerocertificate.md) | 34 | `declaration-track:bd9bfadf596288ff2814637ca05a79f3bee3c48784b0ac3086f27c2ee7f4ba8c` |
+| 1 | `inductive` | [HardyIntervalDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardyintervaldisposition.md) | 12 | `declaration-track:2d2767143e3e492745d46eb8d06fd07271aff5aae7685ae4c9d8da22c145aa40` |
+| 2 | `structure` | [HardySignChangeCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardysignchangecertificate.md) | 19 | `declaration-track:1dbc0d7ae4b56a1134c482a57f092976bd3d4180aa374579f9b7d2dd2aa602c1` |
+| 3 | `theorem` | [hardy_signChange_gives_oddMultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardy-signchange-gives-oddmultiplicity.md) | 28 | `result-track:6b02f8d70d89bcbecf70b00023c8c1d5998ddbf7de62cff2fdb3a9cb0ea17d9b` |
+| 4 | `structure` | [HardyUniqueSimpleZeroCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Hardy.lean/declarations/hardyuniquesimplezerocertificate.md) | 34 | `declaration-track:bd9bfadf596288ff2814637ca05a79f3bee3c48784b0ac3086f27c2ee7f4ba8c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

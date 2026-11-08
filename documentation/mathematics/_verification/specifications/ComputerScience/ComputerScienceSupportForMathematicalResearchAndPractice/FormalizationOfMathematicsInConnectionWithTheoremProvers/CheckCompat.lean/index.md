@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expectedMathlibRev](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/expectedmathlibrev.md) | 18 | `declaration-track:ae77b9de2de2025e24a24fd25b64aa19c26aa65b39907fab8691dbbb6463047c` |
-| 2 | `def` | [expectedMathlibCommit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/expectedmathlibcommit.md) | 19 | `declaration-track:104c2b6954f7e2a9f9786c72a32bd9d431d269037297fdd2bb26c7059464ef9f` |
-| 3 | `def` | [extractMathlibRev](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/extractmathlibrev.md) | 22 | `declaration-track:b50873b6f57fd0480adbb81173740fed156d813f1e44adc6a611d348a88004d0` |
-| 4 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/main.md) | 34 | `declaration-track:a5f7710c343b1daea8ed47d8a751e8ce8ef5821015c4ff0fa2cc930795cd653a` |
+| 1 | `def` | [expectedMathlibRev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/expectedmathlibrev.md) | 18 | `declaration-track:ae77b9de2de2025e24a24fd25b64aa19c26aa65b39907fab8691dbbb6463047c` |
+| 2 | `def` | [expectedMathlibCommit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/expectedmathlibcommit.md) | 19 | `declaration-track:104c2b6954f7e2a9f9786c72a32bd9d431d269037297fdd2bb26c7059464ef9f` |
+| 3 | `def` | [extractMathlibRev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/extractmathlibrev.md) | 22 | `declaration-track:b50873b6f57fd0480adbb81173740fed156d813f1e44adc6a611d348a88004d0` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckCompat.lean/declarations/main.md) | 34 | `declaration-track:a5f7710c343b1daea8ed47d8a751e8ce8ef5821015c4ff0fa2cc930795cd653a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

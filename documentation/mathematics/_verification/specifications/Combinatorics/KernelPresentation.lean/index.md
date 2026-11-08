@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/KernelPresentation.lean/index.md) · [Full source](../../../../Combinatorics/KernelPresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KernelPresentation](../../../../Combinatorics/KernelPresentation.lean/declarations/kernelpresentation.md) | 80 | `declaration-track:48f6867e4a9e86eeaebe2602968fb0f77680d2b4a5c4406c3114352177748c98` |
-| 2 | `abbrev` | [Judgment](../../../../Combinatorics/KernelPresentation.lean/declarations/judgment.md) | 190 | `declaration-track:e3ef252490cba4d9ea7502a304ffc455fc1008d3ea51135ce78fb414332c1655` |
-| 3 | `abbrev` | [JudgmentAt](../../../../Combinatorics/KernelPresentation.lean/declarations/judgmentat.md) | 222 | `declaration-track:31052fd553f59bbc9a46776afa282c623180e56a89a7ea5716ad9e22b011ca6e` |
-| 4 | `def` | [ruleLeafOrigins](../../../../Combinatorics/KernelPresentation.lean/declarations/ruleleaforigins.md) | 254 | `declaration-track:925079c8fd53252a3f10f421866b7e4bda26a41a6c6bee43a02673780620a929` |
+| 1 | `structure` | [KernelPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentation.lean/declarations/kernelpresentation.md) | 80 | `declaration-track:48f6867e4a9e86eeaebe2602968fb0f77680d2b4a5c4406c3114352177748c98` |
+| 2 | `abbrev` | [Judgment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentation.lean/declarations/judgment.md) | 190 | `declaration-track:e3ef252490cba4d9ea7502a304ffc455fc1008d3ea51135ce78fb414332c1655` |
+| 3 | `abbrev` | [JudgmentAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentation.lean/declarations/judgmentat.md) | 222 | `declaration-track:31052fd553f59bbc9a46776afa282c623180e56a89a7ea5716ad9e22b011ca6e` |
+| 4 | `def` | [ruleLeafOrigins](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentation.lean/declarations/ruleleaforigins.md) | 254 | `declaration-track:925079c8fd53252a3f10f421866b7e4bda26a41a6c6bee43a02673780620a929` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

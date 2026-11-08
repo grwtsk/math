@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Imo2021Q1NamespacedAligned.lean/index.md) · [Full source](../../../../Combinatorics/Imo2021Q1NamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2021Q1NamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2021Q1NamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_numbers_in_interval](../../../../Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/exists-numbers-in-interval.md) | 56 | `result-track:ffaa7a74baecac3d4de000d15454efad950cc1186fbfc46f4f3bf28c1beb4532` |
-| 2 | `theorem` | [exists_triplet_summing_to_squares](../../../../Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/exists-triplet-summing-to-squares.md) | 74 | `result-track:75b7e7b35743488ba7a8f229c9442b02db7be034e0abc6fa68e7c13faf6c2e3d` |
-| 3 | `theorem` | [exists_finset_3_le_card_with_pairs_summing_to_squares](../../../../Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/exists-finset-3-le-card-with-pairs-summing-to-squares.md) | 89 | `result-track:2099402be380920a3eb09c455e8074ceb7b868327ffe871ac903ade06c1b0670` |
-| 4 | `theorem` | [imo2021_q1](../../../../Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/imo2021-q1.md) | 119 | `result-track:f0c5ae6f9377d96b5e5a836fe292281fcb92fa96f49366a0889c8cdac4cc37b6` |
+| 1 | `theorem` | [exists_numbers_in_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/exists-numbers-in-interval.md) | 56 | `result-track:ffaa7a74baecac3d4de000d15454efad950cc1186fbfc46f4f3bf28c1beb4532` |
+| 2 | `theorem` | [exists_triplet_summing_to_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/exists-triplet-summing-to-squares.md) | 74 | `result-track:75b7e7b35743488ba7a8f229c9442b02db7be034e0abc6fa68e7c13faf6c2e3d` |
+| 3 | `theorem` | [exists_finset_3_le_card_with_pairs_summing_to_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/exists-finset-3-le-card-with-pairs-summing-to-squares.md) | 89 | `result-track:2099402be380920a3eb09c455e8074ceb7b868327ffe871ac903ade06c1b0670` |
+| 4 | `theorem` | [imo2021_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2021Q1NamespacedAligned.lean/declarations/imo2021-q1.md) | 119 | `result-track:f0c5ae6f9377d96b5e5a836fe292281fcb92fa96f49366a0889c8cdac4cc37b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

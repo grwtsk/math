@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PassivityObstructionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PassivityObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PassivityObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PassivityObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PassivityObstruction](../../../../Combinatorics/PassivityObstructionNamespaced.lean/declarations/passivityobstruction.md) | 19 | `declaration-track:603f16a1245563a61a7dfbce3cffdd9a480a30d469842f9daf8317d9be2c7561` |
-| 2 | `inductive` | [PassivitySearchResult](../../../../Combinatorics/PassivityObstructionNamespaced.lean/declarations/passivitysearchresult.md) | 52 | `declaration-track:1669ee56eba18d13868a87b46bf0e07a325c39fa833dfefc3fc0b3b6c49b7c64` |
+| 1 | `structure` | [PassivityObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PassivityObstructionNamespaced.lean/declarations/passivityobstruction.md) | 19 | `declaration-track:603f16a1245563a61a7dfbce3cffdd9a480a30d469842f9daf8317d9be2c7561` |
+| 2 | `inductive` | [PassivitySearchResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PassivityObstructionNamespaced.lean/declarations/passivitysearchresult.md) | 52 | `declaration-track:1669ee56eba18d13868a87b46bf0e07a325c39fa833dfefc3fc0b3b6c49b7c64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

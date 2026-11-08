@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.CompactProfileTailSigns`](../../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileTailSigns`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tailReading](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/tailreading.md) | 21 | `declaration-track:ee39952a7517b0aa6812297ba6bee32fe0a78859a00e6a8d4401f88aab8195cc` |
-| 2 | `theorem` | [tail_reading_strict_inside](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/tail-reading-strict-inside.md) | 23 | `result-track:ff27655eaeb725b25221bf94a4b637d5369ce3b48ef73cd4c0b46a380047448a` |
-| 3 | `theorem` | [two_mem_inventory](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/two-mem-inventory.md) | 32 | `result-track:7263c670473c2891e717668bb9005b208c2157f276fec9a3f1177ceea940e496` |
-| 4 | `theorem` | [higher_shift_above_support](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/higher-shift-above-support.md) | 39 | `result-track:7046768c2ba082e92823e73359c44329064509975554eec746d00c9a3b91c8da` |
-| 5 | `theorem` | [polarity_kernel_tail_eq_atom](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/polarity-kernel-tail-eq-atom.md) | 50 | `result-track:c75c6fbe061380d9e5650532cc67bde5e5543075d5421f48450e2437304e9043` |
-| 6 | `theorem` | [strict_positive_sector_of_tail_atom](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/strict-positive-sector-of-tail-atom.md) | 68 | `result-track:425905815cccfa4e3234d31b1d8fda33e7a586cb5de594924635da47246b4093` |
-| 7 | `theorem` | [polarity_kernel_tail_pos](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/polarity-kernel-tail-pos.md) | 78 | `result-track:3a681e54fca507e1b042624020d29a2b78d3ec0017ec2067e084f57aa1d7460b` |
-| 8 | `theorem` | [strict_positive_sector_nonempty](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/strict-positive-sector-nonempty.md) | 84 | `result-track:33333cad50a864803591939cd27f955a84384b0e910189da3d9d031fac4c889c` |
-| 9 | `theorem` | [strict_positive_sector_volume_pos](../../../../../RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/strict-positive-sector-volume-pos.md) | 88 | `result-track:71d2b1b488033d1d13409aa9a7f47bec69d966fd4e2236db5fcb846cb1c18210` |
+| 1 | `def` | [tailReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/tailreading.md) | 21 | `declaration-track:ee39952a7517b0aa6812297ba6bee32fe0a78859a00e6a8d4401f88aab8195cc` |
+| 2 | `theorem` | [tail_reading_strict_inside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/tail-reading-strict-inside.md) | 23 | `result-track:ff27655eaeb725b25221bf94a4b637d5369ce3b48ef73cd4c0b46a380047448a` |
+| 3 | `theorem` | [two_mem_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/two-mem-inventory.md) | 32 | `result-track:7263c670473c2891e717668bb9005b208c2157f276fec9a3f1177ceea940e496` |
+| 4 | `theorem` | [higher_shift_above_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/higher-shift-above-support.md) | 39 | `result-track:7046768c2ba082e92823e73359c44329064509975554eec746d00c9a3b91c8da` |
+| 5 | `theorem` | [polarity_kernel_tail_eq_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/polarity-kernel-tail-eq-atom.md) | 50 | `result-track:c75c6fbe061380d9e5650532cc67bde5e5543075d5421f48450e2437304e9043` |
+| 6 | `theorem` | [strict_positive_sector_of_tail_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/strict-positive-sector-of-tail-atom.md) | 68 | `result-track:425905815cccfa4e3234d31b1d8fda33e7a586cb5de594924635da47246b4093` |
+| 7 | `theorem` | [polarity_kernel_tail_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/polarity-kernel-tail-pos.md) | 78 | `result-track:3a681e54fca507e1b042624020d29a2b78d3ec0017ec2067e084f57aa1d7460b` |
+| 8 | `theorem` | [strict_positive_sector_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/strict-positive-sector-nonempty.md) | 84 | `result-track:33333cad50a864803591939cd27f955a84384b0e910189da3d9d031fac4c889c` |
+| 9 | `theorem` | [strict_positive_sector_volume_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/LogarithmicShiftKernelPositiveSector.lean/declarations/strict-positive-sector-volume-pos.md) | 88 | `result-track:71d2b1b488033d1d13409aa9a7f47bec69d966fd4e2236db5fcb846cb1c18210` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [intValuation_liesOver](../../../../NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/declarations/intvaluation-liesover.md) | 52 | `result-track:dd3c89317dd22f0cca3dd87b77c2162743092dd3692af865cf1f8f15853333fe` |
-| 2 | `theorem` | [valuation_liesOver](../../../../NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/declarations/valuation-liesover.md) | 65 | `result-track:cbf5a701fb88d474345f3e9ff31791c0c55a589005060247868f3df8d8493abb` |
-| 3 | `theorem` | [uniformContinuous_algebraMap_liesOver](../../../../NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/declarations/uniformcontinuous-algebramap-liesover.md) | 74 | `result-track:c06e2e9cf856a3a4a577cbe6ed47720a3913e7d20a720b533756c535a2264fd5` |
+| 1 | `theorem` | [intValuation_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/declarations/intvaluation-liesover.md) | 52 | `result-track:dd3c89317dd22f0cca3dd87b77c2162743092dd3692af865cf1f8f15853333fe` |
+| 2 | `theorem` | [valuation_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/declarations/valuation-liesover.md) | 65 | `result-track:cbf5a701fb88d474345f3e9ff31791c0c55a589005060247868f3df8d8493abb` |
+| 3 | `theorem` | [uniformContinuous_algebraMap_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamificationInertiaValuationNamespacedPublic.lean/declarations/uniformcontinuous-algebramap-liesover.md) | 74 | `result-track:c06e2e9cf856a3a4a577cbe6ed47720a3913e7d20a720b533756c535a2264fd5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

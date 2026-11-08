@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [four_le_cDT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/four-le-cdt.md) | 24 | `result-track:175d4acc51d38f344f4830af8a6bab1a9f72f2af6a8f8a6ad8b6c8466b9dd11e` |
-| 2 | `theorem` | [admWindow_phiD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/admwindow-phid.md) | 31 | `result-track:46cd4f50acf3a799deccf0189db063d0882b7db2cedaf2728d7d0b75cf6f2e95` |
-| 3 | `def` | [_root_.Zeta23.Params.phiD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/root-zeta23-params-phid.md) | 49 | `declaration-track:5933644ce823dba4ba5a711b10160c94b95a6bd57f43a86f7be6c3e57030022d` |
-| 4 | `def` | [_root_.Zeta23.Params.localFunD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/root-zeta23-params-localfund.md) | 52 | `declaration-track:fa8a2d523c2e2367af4ce75f456ec67da94548d55fd093cdf37db5a85183a313` |
-| 5 | `theorem` | [admWindow_params](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/admwindow-params.md) | 55 | `result-track:4c81935a19d1d5bddbc5a2cd25fcfe3d0df2c657785897d5fb47f800190d23fc` |
-| 6 | `lemma` | [bStar_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/bstar-ge.md) | 62 | `result-track:a9df57d9b32d51df65ba0fa6d7c7b4e7ba4949386b5408832da126a44dbe8576` |
-| 7 | `lemma` | [bv_phiD_ge_half](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/bv-phid-ge-half.md) | 84 | `result-track:7a0c1be18cd367d425f28455bf9f3678dfacd6f05c33aff4d59de22a0610f068` |
-| 8 | `theorem` | [localHypsCoreD_eventually](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/localhypscored-eventually.md) | 98 | `result-track:da1606245dfa73bf9cc3806bec837d0c299b01a47fc4ea607ecc28c5dc1c6f91` |
+| 1 | `lemma` | [four_le_cDT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/four-le-cdt.md) | 24 | `result-track:175d4acc51d38f344f4830af8a6bab1a9f72f2af6a8f8a6ad8b6c8466b9dd11e` |
+| 2 | `theorem` | [admWindow_phiD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/admwindow-phid.md) | 31 | `result-track:46cd4f50acf3a799deccf0189db063d0882b7db2cedaf2728d7d0b75cf6f2e95` |
+| 3 | `def` | [_root_.Zeta23.Params.phiD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/root-zeta23-params-phid.md) | 49 | `declaration-track:5933644ce823dba4ba5a711b10160c94b95a6bd57f43a86f7be6c3e57030022d` |
+| 4 | `def` | [_root_.Zeta23.Params.localFunD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/root-zeta23-params-localfund.md) | 52 | `declaration-track:fa8a2d523c2e2367af4ce75f456ec67da94548d55fd093cdf37db5a85183a313` |
+| 5 | `theorem` | [admWindow_params](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/admwindow-params.md) | 55 | `result-track:4c81935a19d1d5bddbc5a2cd25fcfe3d0df2c657785897d5fb47f800190d23fc` |
+| 6 | `lemma` | [bStar_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/bstar-ge.md) | 62 | `result-track:a9df57d9b32d51df65ba0fa6d7c7b4e7ba4949386b5408832da126a44dbe8576` |
+| 7 | `lemma` | [bv_phiD_ge_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/bv-phid-ge-half.md) | 84 | `result-track:7a0c1be18cd367d425f28455bf9f3678dfacd6f05c33aff4d59de22a0610f068` |
+| 8 | `theorem` | [localHypsCoreD_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeD.lean/declarations/localhypscored-eventually.md) | 98 | `result-track:da1606245dfa73bf9cc3806bec837d0c299b01a47fc4ea607ecc28c5dc1c6f91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

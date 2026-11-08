@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_rational_slack](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/prime-rational-slack.md) | 13 | `result-track:0d64ce528fff54a56f5d87f6df14210faf8d5a8b488b95e8a69e4234933fb547` |
-| 2 | `theorem` | [original_root_budget](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/original-root-budget.md) | 15 | `result-track:4bb6fbddf061ee7a3b11bf8382c1ab492e272ed6869f8cfdfa9be919d9cb546f` |
-| 3 | `theorem` | [typeII_root_budget](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/typeii-root-budget.md) | 21 | `result-track:d692d7e165e2e47ac3c53226fe454073fa8b1d2b347df9a6d2ab517fc3c91105` |
-| 4 | `theorem` | [low_first_return](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/low-first-return.md) | 36 | `result-track:1805e26e0bb4320c1ef1a2c290d5746d96ad3af5d0a79e0b1ec8478d8a67230e` |
-| 5 | `theorem` | [retained_center_return](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/retained-center-return.md) | 42 | `result-track:136d97cdd40cbaa9b4e18a979c06a88a6c052bf250bf38ee3134c78338ebfa01` |
+| 1 | `theorem` | [prime_rational_slack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/prime-rational-slack.md) | 13 | `result-track:0d64ce528fff54a56f5d87f6df14210faf8d5a8b488b95e8a69e4234933fb547` |
+| 2 | `theorem` | [original_root_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/original-root-budget.md) | 15 | `result-track:4bb6fbddf061ee7a3b11bf8382c1ab492e272ed6869f8cfdfa9be919d9cb546f` |
+| 3 | `theorem` | [typeII_root_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/typeii-root-budget.md) | 21 | `result-track:d692d7e165e2e47ac3c53226fe454073fa8b1d2b347df9a6d2ab517fc3c91105` |
+| 4 | `theorem` | [low_first_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/low-first-return.md) | 36 | `result-track:1805e26e0bb4320c1ef1a2c290d5746d96ad3af5d0a79e0b1ec8478d8a67230e` |
+| 5 | `theorem` | [retained_center_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBounds.lean/declarations/retained-center-return.md) | 42 | `result-track:136d97cdd40cbaa9b4e18a979c06a88a6c052bf250bf38ee3134c78338ebfa01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AF74a013c0d13a5.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AF74a013c0d13a5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AF74a013c0d13a5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AF74a013c0d13a5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compiledTotalEnergy](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AF74a013c0d13a5.lean/declarations/compiledtotalenergy.md) | 13 | `declaration-track:a67442e55ae2a9c58dcf5857ed049fe5e228a86da5aa26b77f272797549dc172` |
+| 1 | `def` | [compiledTotalEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AF74a013c0d13a5.lean/declarations/compiledtotalenergy.md) | 13 | `declaration-track:a67442e55ae2a9c58dcf5857ed049fe5e228a86da5aa26b77f272797549dc172` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

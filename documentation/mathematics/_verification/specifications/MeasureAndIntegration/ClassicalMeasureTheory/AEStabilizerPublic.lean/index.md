@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [aestabilizer](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer.md) | 43 | `declaration-track:ebf019f3eb2fd8543ed3e8c59ddfb7f1f200ec73b20b917a56274023a41c2161` |
-| 2 | `lemma` | [mem_aestabilizer](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/mem-aestabilizer.md) | 54 | `result-track:5aa0714496d5b13286f90c9b2939371b5e17c452fad33a7bb347dcafa5261a61` |
-| 3 | `lemma` | [stabilizer_le_aestabilizer](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/stabilizer-le-aestabilizer.md) | 57 | `result-track:25573d73472d9dfc80bf8624093f1217932c1fc2daa8b4fe9da6730c33bbc584` |
-| 4 | `lemma` | [aestabilizer_empty](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-empty.md) | 62 | `result-track:a5edf3bd6344b01a3142a5963fb87a929dc274447c1c6cf90e2c9aa3ea0c7e07` |
-| 5 | `lemma` | [aestabilizer_univ](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-univ.md) | 65 | `result-track:8bf6cb408e00478b513347602277c43cd67a9775cbd8a45f7e9f70ad71a54e9e` |
-| 6 | `lemma` | [aestabilizer_congr](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-congr.md) | 68 | `result-track:4bf123995c8542d6c2162459381ccc44e4d590cf4a07c7633cf5e8cb58e34c98` |
-| 7 | `lemma` | [aestabilizer_of_eventuallyEmptyOrUniv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-of-eventuallyemptyoruniv.md) | 72 | `result-track:e48aa66dcff10688c32e857bfc9221ae7064c9c343dc3abd915eaa83592fca62` |
-| 8 | `theorem` | [smul_ae_eq_self_of_mem_zpowers](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/smul-ae-eq-self-of-mem-zpowers.md) | 87 | `result-track:c34f511a84660b2b2cbdac581136a5b0cbf319aaefac3d4af14bac9a6da9d436` |
-| 9 | `theorem` | [inv_smul_ae_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/inv-smul-ae-eq-self.md) | 93 | `result-track:e32b20905e7a845de93203af31310616e323de3478d2e6dd57670ba02a429448` |
+| 1 | `def` | [aestabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer.md) | 43 | `declaration-track:ebf019f3eb2fd8543ed3e8c59ddfb7f1f200ec73b20b917a56274023a41c2161` |
+| 2 | `lemma` | [mem_aestabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/mem-aestabilizer.md) | 54 | `result-track:5aa0714496d5b13286f90c9b2939371b5e17c452fad33a7bb347dcafa5261a61` |
+| 3 | `lemma` | [stabilizer_le_aestabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/stabilizer-le-aestabilizer.md) | 57 | `result-track:25573d73472d9dfc80bf8624093f1217932c1fc2daa8b4fe9da6730c33bbc584` |
+| 4 | `lemma` | [aestabilizer_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-empty.md) | 62 | `result-track:a5edf3bd6344b01a3142a5963fb87a929dc274447c1c6cf90e2c9aa3ea0c7e07` |
+| 5 | `lemma` | [aestabilizer_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-univ.md) | 65 | `result-track:8bf6cb408e00478b513347602277c43cd67a9775cbd8a45f7e9f70ad71a54e9e` |
+| 6 | `lemma` | [aestabilizer_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-congr.md) | 68 | `result-track:4bf123995c8542d6c2162459381ccc44e4d590cf4a07c7633cf5e8cb58e34c98` |
+| 7 | `lemma` | [aestabilizer_of_eventuallyEmptyOrUniv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/aestabilizer-of-eventuallyemptyoruniv.md) | 72 | `result-track:e48aa66dcff10688c32e857bfc9221ae7064c9c343dc3abd915eaa83592fca62` |
+| 8 | `theorem` | [smul_ae_eq_self_of_mem_zpowers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/smul-ae-eq-self-of-mem-zpowers.md) | 87 | `result-track:c34f511a84660b2b2cbdac581136a5b0cbf319aaefac3d4af14bac9a6da9d436` |
+| 9 | `theorem` | [inv_smul_ae_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEStabilizerPublic.lean/declarations/inv-smul-ae-eq-self.md) | 93 | `result-track:e32b20905e7a845de93203af31310616e323de3478d2e6dd57670ba02a429448` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

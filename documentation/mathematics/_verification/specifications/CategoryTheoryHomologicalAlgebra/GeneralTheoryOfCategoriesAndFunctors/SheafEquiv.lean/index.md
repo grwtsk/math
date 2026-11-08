@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isIso_ranCounit_app_of_isDenseSubsite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/isiso-rancounit-app-of-isdensesubsite.md) | 37 | `result-track:519dccee33f4ebb380cbeaa16deeff05ab1fc9c87b5d69c95f1501ede0d935c6` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/instance-source-edition-2.md) | 100 | `declaration-track:1f806f632c4f0c5a1687c7feb7a549f36d96dbb50ec2fc3f812919686da88a41` |
-| 3 | `def` | [sheafEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/sheafequiv.md) | 119 | `declaration-track:a64455a3977c8bfbf04a160163f51cee36e5c0af6407171d9100ef86b95d36cb` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/instance.md) | 122 | `declaration-track:0e3298dc5a73efd2e60dc9366bc82d424fb7a0caf09c8bb16f5286508c02cb14` |
-| 5 | `abbrev` | [sheafEquivSheafificationCompatibility](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/sheafequivsheafificationcompatibility.md) | 130 | `declaration-track:f14115717548ecb0876834157080e2d87d7d33a1b85acfca02a4aeead2843876` |
+| 1 | `lemma` | [isIso_ranCounit_app_of_isDenseSubsite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/isiso-rancounit-app-of-isdensesubsite.md) | 37 | `result-track:519dccee33f4ebb380cbeaa16deeff05ab1fc9c87b5d69c95f1501ede0d935c6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/instance-source-edition-2.md) | 100 | `declaration-track:1f806f632c4f0c5a1687c7feb7a549f36d96dbb50ec2fc3f812919686da88a41` |
+| 3 | `def` | [sheafEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/sheafequiv.md) | 119 | `declaration-track:a64455a3977c8bfbf04a160163f51cee36e5c0af6407171d9100ef86b95d36cb` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/instance.md) | 122 | `declaration-track:0e3298dc5a73efd2e60dc9366bc82d424fb7a0caf09c8bb16f5286508c02cb14` |
+| 5 | `abbrev` | [sheafEquivSheafificationCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafEquiv.lean/declarations/sheafequivsheafificationcompatibility.md) | 130 | `declaration-track:f14115717548ecb0876834157080e2d87d7d33a1b85acfca02a4aeead2843876` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinalRHDependencyPolicy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/finalrhdependencypolicy.md) | 19 | `declaration-track:150b436439ddd41b2c8a76556559b796d4e53e4ec5fa42ccaa55e8b757c639aa` |
-| 2 | `theorem` | [final_policy_imports_only_theorems](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/final-policy-imports-only-theorems.md) | 30 | `result-track:5722b5d55061182ae0e022ee043d705c584072e6caf5c8c853a0713fd28f4c21` |
-| 3 | `theorem` | [final_policy_has_no_contracts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/final-policy-has-no-contracts.md) | 35 | `result-track:04373e83ae8847c4d32115d3a1273b7d4f65095d4d913b7451c25d7418dc9ad4` |
-| 4 | `theorem` | [final_policy_specializes_to_zeta](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/final-policy-specializes-to-zeta.md) | 40 | `result-track:9ee07f259a78989bec79296c32b1456c7b75955730a0d53ff7cbe733ec153e53` |
+| 1 | `structure` | [FinalRHDependencyPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/finalrhdependencypolicy.md) | 19 | `declaration-track:150b436439ddd41b2c8a76556559b796d4e53e4ec5fa42ccaa55e8b757c639aa` |
+| 2 | `theorem` | [final_policy_imports_only_theorems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/final-policy-imports-only-theorems.md) | 30 | `result-track:5722b5d55061182ae0e022ee043d705c584072e6caf5c8c853a0713fd28f4c21` |
+| 3 | `theorem` | [final_policy_has_no_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/final-policy-has-no-contracts.md) | 35 | `result-track:04373e83ae8847c4d32115d3a1273b7d4f65095d4d913b7451c25d7418dc9ad4` |
+| 4 | `theorem` | [final_policy_specializes_to_zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineFinalRHDependencyPolicy.lean/declarations/final-policy-specializes-to-zeta.md) | 40 | `result-track:9ee07f259a78989bec79296c32b1456c7b75955730a0d53ff7cbe733ec153e53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KernelSpace](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/kernelspace.md) | 22 | `declaration-track:9d87731dc648fff21d0345be1be8da34f125076f11fab34482640649f2678a05` |
-| 2 | `def` | [completePreKernel](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/completeprekernel.md) | 27 | `declaration-track:994dab22984121382ff619deca06a1b6107b86c5b2c3906062db7b2009f6ca5c` |
-| 3 | `def` | [kernelSpace_hilbertStructure](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/kernelspace-hilbertstructure.md) | 32 | `declaration-track:3a655ed83cb8f51f7dfe100aef41427ddcdf7d784b3bb950f6cc06d50105954b` |
-| 4 | `theorem` | [kernelSpace_isHilbert](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/kernelspace-ishilbert.md) | 37 | `result-track:b1345b8e3ec6940992d4e53fde377ab119c9a0bb73834ab6025fe2689ff63885` |
-| 5 | `theorem` | [inner_completePreKernel](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/inner-completeprekernel.md) | 43 | `result-track:95d13cdd160a00a1f4cb484dfc272158868daf4d0efb552b5668b69969e014a1` |
-| 6 | `theorem` | [completePreKernel_denseRange](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/completeprekernel-denserange.md) | 51 | `result-track:d88cb9dcbf95a9fd381a45df7fe14aa7f7c29848012434f3edfd5250da9b97cd` |
+| 1 | `def` | [KernelSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/kernelspace.md) | 22 | `declaration-track:9d87731dc648fff21d0345be1be8da34f125076f11fab34482640649f2678a05` |
+| 2 | `def` | [completePreKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/completeprekernel.md) | 27 | `declaration-track:994dab22984121382ff619deca06a1b6107b86c5b2c3906062db7b2009f6ca5c` |
+| 3 | `def` | [kernelSpace_hilbertStructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/kernelspace-hilbertstructure.md) | 32 | `declaration-track:3a655ed83cb8f51f7dfe100aef41427ddcdf7d784b3bb950f6cc06d50105954b` |
+| 4 | `theorem` | [kernelSpace_isHilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/kernelspace-ishilbert.md) | 37 | `result-track:b1345b8e3ec6940992d4e53fde377ab119c9a0bb73834ab6025fe2689ff63885` |
+| 5 | `theorem` | [inner_completePreKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/inner-completeprekernel.md) | 43 | `result-track:95d13cdd160a00a1f4cb484dfc272158868daf4d0efb552b5668b69969e014a1` |
+| 6 | `theorem` | [completePreKernel_denseRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompletionEdition2.lean/declarations/completeprekernel-denserange.md) | 51 | `result-track:d88cb9dcbf95a9fd381a45df7fe14aa7f7c29848012434f3edfd5250da9b97cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

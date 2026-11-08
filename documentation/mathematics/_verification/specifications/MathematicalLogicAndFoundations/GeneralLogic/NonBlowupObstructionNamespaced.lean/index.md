@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BlowupScenario](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/declarations/blowupscenario.md) | 27 | `declaration-track:5ed006f1974ab2df61573d19809af66b77f62892d75b5d1534629c51bfc5880e` |
-| 2 | `structure` | [NonBlowupObstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/declarations/nonblowupobstruction.md) | 31 | `declaration-track:3fd1a09365bc443c8a7410e95d4edfa9c04884f00bb7f315523e7ae808bb3775` |
-| 3 | `theorem` | [ns_blowup_obstruction_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/declarations/ns-blowup-obstruction-if-supplied.md) | 37 | `result-track:ec25771cb0fab20d9a21c0b0e81b19ed7030eb15fb73b38f0b6723b9b1dbbd46` |
+| 1 | `structure` | [BlowupScenario](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/declarations/blowupscenario.md) | 27 | `declaration-track:5ed006f1974ab2df61573d19809af66b77f62892d75b5d1534629c51bfc5880e` |
+| 2 | `structure` | [NonBlowupObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/declarations/nonblowupobstruction.md) | 31 | `declaration-track:3fd1a09365bc443c8a7410e95d4edfa9c04884f00bb7f315523e7ae808bb3775` |
+| 3 | `theorem` | [ns_blowup_obstruction_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonBlowupObstructionNamespaced.lean/declarations/ns-blowup-obstruction-if-supplied.md) | 37 | `result-track:ec25771cb0fab20d9a21c0b0e81b19ed7030eb15fb73b38f0b6723b9b1dbbd46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

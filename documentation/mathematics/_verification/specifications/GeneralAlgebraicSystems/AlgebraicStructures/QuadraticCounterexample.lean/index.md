@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuadraticCounterexample.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuadraticCounterexample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuadraticCounterexample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuadraticCounterexample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [same_total_different_diagonal](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuadraticCounterexample.lean/declarations/same-total-different-diagonal.md) | 16 | `result-track:73ea09ba70baa87effe4b2a0659cd936d35f40d1c1e52650c70f93437f22f8d6` |
+| 1 | `theorem` | [same_total_different_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuadraticCounterexample.lean/declarations/same-total-different-diagonal.md) | 16 | `result-track:73ea09ba70baa87effe4b2a0659cd936d35f40d1c1e52650c70f93437f22f8d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

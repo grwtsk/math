@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MeanErgodicPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MeanErgodicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MeanErgodicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MeanErgodicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [LinearMap.tendsto_birkhoffAverage_of_ker_subset_closure](../../../../FunctionalAnalysis/MeanErgodicPublic.lean/declarations/linearmap-tendsto-birkhoffaverage-of-ker-subset-closure.md) | 47 | `result-track:593db2f50436b60b37623de9b86b37c3a88ef7b328ea598a58f63c6e281e5417` |
-| 2 | `theorem` | [ContinuousLinearMap.tendsto_birkhoffAverage_orthogonalProjection](../../../../FunctionalAnalysis/MeanErgodicPublic.lean/declarations/continuouslinearmap-tendsto-birkhoffaverage-orthogonalprojection.md) | 89 | `result-track:acea7aa2d0cab855d8c88b52d3aa45dce6a2a48bd585696c2fe63bb812b6ddb6` |
+| 1 | `theorem` | [LinearMap.tendsto_birkhoffAverage_of_ker_subset_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MeanErgodicPublic.lean/declarations/linearmap-tendsto-birkhoffaverage-of-ker-subset-closure.md) | 47 | `result-track:593db2f50436b60b37623de9b86b37c3a88ef7b328ea598a58f63c6e281e5417` |
+| 2 | `theorem` | [ContinuousLinearMap.tendsto_birkhoffAverage_orthogonalProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MeanErgodicPublic.lean/declarations/continuouslinearmap-tendsto-birkhoffaverage-orthogonalprojection.md) | 89 | `result-track:acea7aa2d0cab855d8c88b52d3aa45dce6a2a48bd585696c2fe63bb812b6ddb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

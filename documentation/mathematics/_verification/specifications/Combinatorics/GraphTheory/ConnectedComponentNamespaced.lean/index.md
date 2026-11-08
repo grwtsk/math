@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zigzagSetoid](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/zigzagsetoid.md) | 36 | `declaration-track:5e9fd533b847ecf1f92799ddf8ba085653f0043672d4fb891ca86e98f6718333` |
-| 2 | `def` | [WeaklyConnectedComponent](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/weaklyconnectedcomponent.md) | 43 | `declaration-track:befaaeec02e987854d4513fe000647266494a332fba4742a8b2edfd892be1553` |
-| 3 | `def` | [mk](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/mk.md) | 51 | `declaration-track:846885ce7a741612ef57b6bc6d18ecf3afa86728f957cca7eeda3a5c48bff709` |
-| 4 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/instance.md) | 54 | `declaration-track:656bc29924675958274e2178ee4db622da47e268b1ded4b582ff409502a7a85b` |
-| 5 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:a08d164bbb6568e62601b8bec1fa9f867c24524aa8b55cb86f2aa938985736ec` |
-| 6 | `theorem` | [eq](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/eq.md) | 60 | `result-track:4de5491b7615c6d11eebd9f50314ff416417affc5f10ee6548b369b677636c3d` |
-| 7 | `def` | [wideSubquiverSymmetrify](../../../../../Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/widesubquiversymmetrify.md) | 72 | `declaration-track:ec8fdaaddadfc610efcb4de0c141d7583d84d8fd1bacdbbcb041af0343375003` |
+| 1 | `def` | [zigzagSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/zigzagsetoid.md) | 36 | `declaration-track:5e9fd533b847ecf1f92799ddf8ba085653f0043672d4fb891ca86e98f6718333` |
+| 2 | `def` | [WeaklyConnectedComponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/weaklyconnectedcomponent.md) | 43 | `declaration-track:befaaeec02e987854d4513fe000647266494a332fba4742a8b2edfd892be1553` |
+| 3 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/mk.md) | 51 | `declaration-track:846885ce7a741612ef57b6bc6d18ecf3afa86728f957cca7eeda3a5c48bff709` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/instance.md) | 54 | `declaration-track:656bc29924675958274e2178ee4db622da47e268b1ded4b582ff409502a7a85b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:a08d164bbb6568e62601b8bec1fa9f867c24524aa8b55cb86f2aa938985736ec` |
+| 6 | `theorem` | [eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/eq.md) | 60 | `result-track:4de5491b7615c6d11eebd9f50314ff416417affc5f10ee6548b369b677636c3d` |
+| 7 | `def` | [wideSubquiverSymmetrify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConnectedComponentNamespaced.lean/declarations/widesubquiversymmetrify.md) | 72 | `declaration-track:ec8fdaaddadfc610efcb4de0c141d7583d84d8fd1bacdbbcb041af0343375003` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

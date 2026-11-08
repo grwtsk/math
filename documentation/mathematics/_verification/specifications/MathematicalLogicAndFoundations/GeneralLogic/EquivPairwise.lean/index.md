@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [EmbeddingLike.pairwise_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/declarations/embeddinglike-pairwise-comp.md) | 15 | `result-track:3b3c8b992c21b5f3ffc8bee4c8479f4c0df47aa8ae32b3d5d7706ecfdb06893f` |
-| 2 | `lemma` | [EquivLike.pairwise_comp_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/declarations/equivlike-pairwise-comp-iff.md) | 19 | `result-track:9971a551b351935a47ec8aaad5b6d36114545741f6775276547e2ccdda958ee3` |
+| 1 | `lemma` | [EmbeddingLike.pairwise_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/declarations/embeddinglike-pairwise-comp.md) | 15 | `result-track:3b3c8b992c21b5f3ffc8bee4c8479f4c0df47aa8ae32b3d5d7706ecfdb06893f` |
+| 2 | `lemma` | [EquivLike.pairwise_comp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivPairwise.lean/declarations/equivlike-pairwise-comp-iff.md) | 19 | `result-track:9971a551b351935a47ec8aaad5b6d36114545741f6775276547e2ccdda958ee3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

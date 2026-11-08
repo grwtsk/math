@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evenOddRec](../../../../../NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec.md) | 26 | `declaration-track:b384a781a3c7ad91edf9cf3a1b807184a1e5db7f01c5debbe4b657312e4890a8` |
-| 2 | `theorem` | [evenOddRec_zero](../../../../../NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec-zero.md) | 33 | `result-track:9e6847602e03ad121845c30a0e60c06949411db8d653f9f0a429c5589378fd8b` |
-| 3 | `theorem` | [evenOddRec_even](../../../../../NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec-even.md) | 38 | `result-track:54d8ff315c119554abc6e90398ffba2ee924896128a27d7d8ee3fa0b4e67daeb` |
-| 4 | `theorem` | [evenOddRec_odd](../../../../../NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec-odd.md) | 45 | `result-track:91c6569ae27dfb3d111dc6172ff39300bef34d48bf5e0752e49b11f85f50d9c1` |
-| 5 | `def` | [evenOddStrongRec](../../../../../NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddstrongrec.md) | 55 | `declaration-track:44dd7a443b62f4cecb8c79ff65880d60621cf325cdb0a8906d7f0b735d3c93fc` |
+| 1 | `def` | [evenOddRec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec.md) | 26 | `declaration-track:b384a781a3c7ad91edf9cf3a1b807184a1e5db7f01c5debbe4b657312e4890a8` |
+| 2 | `theorem` | [evenOddRec_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec-zero.md) | 33 | `result-track:9e6847602e03ad121845c30a0e60c06949411db8d653f9f0a429c5589378fd8b` |
+| 3 | `theorem` | [evenOddRec_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec-even.md) | 38 | `result-track:54d8ff315c119554abc6e90398ffba2ee924896128a27d7d8ee3fa0b4e67daeb` |
+| 4 | `theorem` | [evenOddRec_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddrec-odd.md) | 45 | `result-track:91c6569ae27dfb3d111dc6172ff39300bef34d48bf5e0752e49b11f85f50d9c1` |
+| 5 | `def` | [evenOddStrongRec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/EvenOddRecNamespaced.lean/declarations/evenoddstrongrec.md) | 55 | `declaration-track:44dd7a443b62f4cecb8c79ff65880d60621cf325cdb0a8906d7f0b735d3c93fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

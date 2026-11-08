@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresentationInterfaceBoundary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/declarations/presentationinterfaceboundary.md) | 20 | `declaration-track:6ddff2e8e0526c43d53bf7ccc26e654b9ec75eae5d0d945bb65817d460a7797b` |
-| 2 | `theorem` | [presentation_is_null_interface_between_closure_and_reducer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/declarations/presentation-is-null-interface-between-closure-and-reducer.md) | 36 | `result-track:9ac4e19f6385bef978c44acee38f490881751931ce02d9a14a32251afdc3d226` |
+| 1 | `structure` | [PresentationInterfaceBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/declarations/presentationinterfaceboundary.md) | 20 | `declaration-track:6ddff2e8e0526c43d53bf7ccc26e654b9ec75eae5d0d945bb65817d460a7797b` |
+| 2 | `theorem` | [presentation_is_null_interface_between_closure_and_reducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NullInterfaceNamespaced.lean/declarations/presentation-is-null-interface-between-closure-and-reducer.md) | 36 | `result-track:9ac4e19f6385bef978c44acee38f490881751931ce02d9a14a32251afdc3d226` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

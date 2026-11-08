@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedInterior_two_factor](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/normalizedinterior-two-factor.md) | 23 | `result-track:7d019c6922d5cb0aa44443894a658cdc58b713b603c46b0c4aa499b25d4ba004` |
-| 2 | `theorem` | [normalizedTest_two_nonneg](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/normalizedtest-two-nonneg.md) | 31 | `result-track:4ad321a28c03963c658d6af333306e22829cd9e53556955b1f2fe5955d61717a` |
-| 3 | `theorem` | [normalizedTest_two_pos](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/normalizedtest-two-pos.md) | 48 | `result-track:fb6fcebef2e32582a0766ebc20c5a5ffb5922ae4c6be5a71583640da84d71cdc` |
-| 4 | `theorem` | [sourceCorrelation_two_pos](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/sourcecorrelation-two-pos.md) | 64 | `result-track:28357ed4ef511c43ba633a8735c6afaaad2ab9111a3625c5d8bd4a6d8dc6ee3a` |
-| 5 | `theorem` | [log_thirtyfive_bounds](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/log-thirtyfive-bounds.md) | 97 | `result-track:a4144b02c5acae502098056349e4c4ae9266c34ac97643a131f85331a4909291` |
-| 6 | `theorem` | [actual_five_seven_kernel_pos](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/actual-five-seven-kernel-pos.md) | 118 | `result-track:e799b4d48a6862a55407e1b16f4738142285d9508d1bdb2879d924300228a681` |
-| 7 | `theorem` | [log_forty_bounds](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/log-forty-bounds.md) | 125 | `result-track:068571853291bc970090456fcd728a4db00b4c5e20146ac6b9c0b2ebc4029df9` |
-| 8 | `theorem` | [actual_five_eight_kernel_pos](../../../../GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/actual-five-eight-kernel-pos.md) | 138 | `result-track:2755a583368b94a1dd19f629fef8ec2b9f1d55ca8c55e5186bcaa545f5eb5383` |
+| 1 | `theorem` | [normalizedInterior_two_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/normalizedinterior-two-factor.md) | 23 | `result-track:7d019c6922d5cb0aa44443894a658cdc58b713b603c46b0c4aa499b25d4ba004` |
+| 2 | `theorem` | [normalizedTest_two_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/normalizedtest-two-nonneg.md) | 31 | `result-track:4ad321a28c03963c658d6af333306e22829cd9e53556955b1f2fe5955d61717a` |
+| 3 | `theorem` | [normalizedTest_two_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/normalizedtest-two-pos.md) | 48 | `result-track:fb6fcebef2e32582a0766ebc20c5a5ffb5922ae4c6be5a71583640da84d71cdc` |
+| 4 | `theorem` | [sourceCorrelation_two_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/sourcecorrelation-two-pos.md) | 64 | `result-track:28357ed4ef511c43ba633a8735c6afaaad2ab9111a3625c5d8bd4a6d8dc6ee3a` |
+| 5 | `theorem` | [log_thirtyfive_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/log-thirtyfive-bounds.md) | 97 | `result-track:a4144b02c5acae502098056349e4c4ae9266c34ac97643a131f85331a4909291` |
+| 6 | `theorem` | [actual_five_seven_kernel_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/actual-five-seven-kernel-pos.md) | 118 | `result-track:e799b4d48a6862a55407e1b16f4738142285d9508d1bdb2879d924300228a681` |
+| 7 | `theorem` | [log_forty_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/log-forty-bounds.md) | 125 | `result-track:068571853291bc970090456fcd728a4db00b4c5e20146ac6b9c0b2ebc4029df9` |
+| 8 | `theorem` | [actual_five_eight_kernel_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ALiteralPositiveMixedReflectionKernelAtScaleTwoEdition2.lean/declarations/actual-five-eight-kernel-pos.md) | 138 | `result-track:2755a583368b94a1dd19f629fef8ec2b9f1d55ca8c55e5186bcaa545f5eb5383` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

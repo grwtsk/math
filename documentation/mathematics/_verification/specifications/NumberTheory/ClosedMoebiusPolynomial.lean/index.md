@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ClosedMoebiusPolynomial.lean/index.md) · [Full source](../../../../NumberTheory/ClosedMoebiusPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedMoebiusPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedMoebiusPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeries.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeries.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.ExpDeriv` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [closed_moebius_series_finite](../../../../NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-finite.md) | 20 | `result-track:f2f62f4c5d4841f6a0ba239dcede99e96bfad5eac46600a8b203d4e80ddef727` |
-| 2 | `theorem` | [closed_moebius_series_exp](../../../../NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-exp.md) | 45 | `result-track:2c75a2f81caf317a40f2606c8850c0cf7174f52fd2dd36c263354bbf981ee170` |
-| 3 | `theorem` | [closed_moebius_series_analyticAt](../../../../NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-analyticat.md) | 56 | `result-track:834cb6e102fabce0115d3bb367f848a32f301ac76bab1c6a26181de081e1a7e6` |
-| 4 | `theorem` | [closed_moebius_series_zero](../../../../NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-zero.md) | 67 | `result-track:8d5efca675063da607592c3067626e74576c59e5432622b765cba9dbd5e7f506` |
-| 5 | `theorem` | [closed_moebius_series_one](../../../../NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-one.md) | 72 | `result-track:4d968159b34e526141408db83dfabe5ed0437676a713779c14e360b0f401e27f` |
+| 1 | `theorem` | [closed_moebius_series_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-finite.md) | 20 | `result-track:f2f62f4c5d4841f6a0ba239dcede99e96bfad5eac46600a8b203d4e80ddef727` |
+| 2 | `theorem` | [closed_moebius_series_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-exp.md) | 45 | `result-track:2c75a2f81caf317a40f2606c8850c0cf7174f52fd2dd36c263354bbf981ee170` |
+| 3 | `theorem` | [closed_moebius_series_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-analyticat.md) | 56 | `result-track:834cb6e102fabce0115d3bb367f848a32f301ac76bab1c6a26181de081e1a7e6` |
+| 4 | `theorem` | [closed_moebius_series_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-zero.md) | 67 | `result-track:8d5efca675063da607592c3067626e74576c59e5432622b765cba9dbd5e7f506` |
+| 5 | `theorem` | [closed_moebius_series_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedMoebiusPolynomial.lean/declarations/closed-moebius-series-one.md) | 72 | `result-track:4d968159b34e526141408db83dfabe5ed0437676a713779c14e360b0f401e27f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

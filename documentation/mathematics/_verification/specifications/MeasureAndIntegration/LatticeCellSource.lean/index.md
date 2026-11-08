@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LatticeCellSource.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LatticeCellSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.VonMangoldt.GreenEnergyFormula`](../../../../MeasureAndIntegration/GreenEnergyFormula.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.FiniteSum.DyadicVariance`](../../../../RealFunctions/DyadicVariance.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.VonMangoldt.GreenEnergyFormula`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenEnergyFormula.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.FiniteSum.DyadicVariance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [edge](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/edge.md) | 22 | `declaration-track:628ab3b270398cb16f802087d95b296eb2eaf99d14c7e2b86ddf2963ba4abde7` |
-| 2 | `def` | [prefix](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/prefix.md) | 23 | `declaration-track:031a4a9ff82ed26c90ec6671a9fcab3b66f1467d6b31c0dd52ff042d4bb4ef4d` |
-| 3 | `def` | [cellMeanLog](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/cellmeanlog.md) | 26 | `declaration-track:246082831b2d959a2c4da38234c5fba37129f3520c1fb7b3587eb742748c1fab` |
-| 4 | `def` | [cellMeanSource](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/cellmeansource.md) | 29 | `declaration-track:dc08f24ceb6672a776ec56b029e71ad8ee6a3bc5ce8c3eb015c28e095ccf2a9f` |
-| 5 | `theorem` | [edge_zero](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-zero.md) | 31 | `result-track:9a1cecd5b848ec30822c20b452ab16d9f37dc062dc338f617d465e8b61930c87` |
-| 6 | `theorem` | [edge_last](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-last.md) | 32 | `result-track:97b7317d55552758e5fa7fba082314a1b0a7cbb346d0891a58dd3433eb9ef3cf` |
-| 7 | `theorem` | [edge_width](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-width.md) | 35 | `result-track:6c436a7e1eccbff54b97d9f1d5edc61161bf9ccc1cf358bde7de4ef100c09907` |
-| 8 | `theorem` | [edge_lt_next](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-lt-next.md) | 41 | `result-track:eb32fdba3fd3123c5f39859a5fbd4a6199b4fc4f102de913d10de011b81ae724` |
-| 9 | `theorem` | [edges_in_unit](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/edges-in-unit.md) | 48 | `result-track:fbc59c0d684e00b49be860bb35a30f6508e50eb05b67d038238f316c82e82586` |
-| 10 | `theorem` | [location_le_iff](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/location-le-iff.md) | 59 | `result-track:7ff00e3a92382f561b52e1cfe8c8b1129d882cb4822a5045d26d3fc526d0524c` |
-| 11 | `theorem` | [cumulative_on_open_cell](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/cumulative-on-open-cell.md) | 85 | `result-track:382fb2ba8f59db3d62391385595ba116f12ad2c3afcd58304655d399dfaa5d62` |
-| 12 | `theorem` | [initial_prefix](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/initial-prefix.md) | 98 | `result-track:07fed8ae733688d9dfe0ee0dbfd46c554d2ea539e9224c0c1c3d46f0a16cd9ed` |
-| 13 | `theorem` | [endpoint_not_in_cell_prefix](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/endpoint-not-in-cell-prefix.md) | 108 | `result-track:c67b3d19b907ee361aee0d7253e99c0eaaf61f40ae13f88610994449a1580be1` |
-| 14 | `theorem` | [cell_integral_congr](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/cell-integral-congr.md) | 111 | `result-track:a0d0f48f53a0bb5d14b20fde6cb310eccb4d6a16a59fec028d3085a3b7d812f5` |
-| 15 | `theorem` | [integral_square_cell](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/integral-square-cell.md) | 122 | `result-track:07ba8bad77a429c97fa63b8fc3342c8ce5ad6404252eaa9db075f41545124b26` |
-| 16 | `theorem` | [integral_source_cell](../../../../MeasureAndIntegration/LatticeCellSource.lean/declarations/integral-source-cell.md) | 143 | `result-track:067dda138544aaea8c3659d8fb212893c9650268addc0f4f9812685c4c08b5ec` |
+| 1 | `def` | [edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/edge.md) | 22 | `declaration-track:628ab3b270398cb16f802087d95b296eb2eaf99d14c7e2b86ddf2963ba4abde7` |
+| 2 | `def` | [prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/prefix.md) | 23 | `declaration-track:031a4a9ff82ed26c90ec6671a9fcab3b66f1467d6b31c0dd52ff042d4bb4ef4d` |
+| 3 | `def` | [cellMeanLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/cellmeanlog.md) | 26 | `declaration-track:246082831b2d959a2c4da38234c5fba37129f3520c1fb7b3587eb742748c1fab` |
+| 4 | `def` | [cellMeanSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/cellmeansource.md) | 29 | `declaration-track:dc08f24ceb6672a776ec56b029e71ad8ee6a3bc5ce8c3eb015c28e095ccf2a9f` |
+| 5 | `theorem` | [edge_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-zero.md) | 31 | `result-track:9a1cecd5b848ec30822c20b452ab16d9f37dc062dc338f617d465e8b61930c87` |
+| 6 | `theorem` | [edge_last](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-last.md) | 32 | `result-track:97b7317d55552758e5fa7fba082314a1b0a7cbb346d0891a58dd3433eb9ef3cf` |
+| 7 | `theorem` | [edge_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-width.md) | 35 | `result-track:6c436a7e1eccbff54b97d9f1d5edc61161bf9ccc1cf358bde7de4ef100c09907` |
+| 8 | `theorem` | [edge_lt_next](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/edge-lt-next.md) | 41 | `result-track:eb32fdba3fd3123c5f39859a5fbd4a6199b4fc4f102de913d10de011b81ae724` |
+| 9 | `theorem` | [edges_in_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/edges-in-unit.md) | 48 | `result-track:fbc59c0d684e00b49be860bb35a30f6508e50eb05b67d038238f316c82e82586` |
+| 10 | `theorem` | [location_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/location-le-iff.md) | 59 | `result-track:7ff00e3a92382f561b52e1cfe8c8b1129d882cb4822a5045d26d3fc526d0524c` |
+| 11 | `theorem` | [cumulative_on_open_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/cumulative-on-open-cell.md) | 85 | `result-track:382fb2ba8f59db3d62391385595ba116f12ad2c3afcd58304655d399dfaa5d62` |
+| 12 | `theorem` | [initial_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/initial-prefix.md) | 98 | `result-track:07fed8ae733688d9dfe0ee0dbfd46c554d2ea539e9224c0c1c3d46f0a16cd9ed` |
+| 13 | `theorem` | [endpoint_not_in_cell_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/endpoint-not-in-cell-prefix.md) | 108 | `result-track:c67b3d19b907ee361aee0d7253e99c0eaaf61f40ae13f88610994449a1580be1` |
+| 14 | `theorem` | [cell_integral_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/cell-integral-congr.md) | 111 | `result-track:a0d0f48f53a0bb5d14b20fde6cb310eccb4d6a16a59fec028d3085a3b7d812f5` |
+| 15 | `theorem` | [integral_square_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/integral-square-cell.md) | 122 | `result-track:07ba8bad77a429c97fa63b8fc3342c8ce5ad6404252eaa9db075f41545124b26` |
+| 16 | `theorem` | [integral_source_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LatticeCellSource.lean/declarations/integral-source-cell.md) | 143 | `result-track:067dda138544aaea8c3659d8fb212893c9650268addc0f4f9812685c4c08b5ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

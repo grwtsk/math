@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/arithmeticfamily.md) | 30 | `declaration-track:a391b6a5e47c8a5fffbc6858e241615523a8985de2149f42060f4345b698f730` |
-| 2 | `structure` | [FamiliesIndexClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/familiesindexclass.md) | 43 | `declaration-track:39cd21706c063f982cc93faa5b3a213ccb8aeb0705ae921e66f44cc94ab9394c` |
-| 3 | `theorem` | [families_index_nontrivial](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/families-index-nontrivial.md) | 55 | `result-track:99dcfcac3f6b884f0ec55ba9df1bd8bacb24fbd9301a6ddc92590fbacc596e0d` |
-| 4 | `theorem` | [families_index_specializes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/families-index-specializes.md) | 62 | `result-track:f1475a95c2a64779dcf26d0a22454b04d9165ab73678e977e70fb702c379ef11` |
+| 1 | `structure` | [ArithmeticFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/arithmeticfamily.md) | 30 | `declaration-track:a391b6a5e47c8a5fffbc6858e241615523a8985de2149f42060f4345b698f730` |
+| 2 | `structure` | [FamiliesIndexClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/familiesindexclass.md) | 43 | `declaration-track:39cd21706c063f982cc93faa5b3a213ccb8aeb0705ae921e66f44cc94ab9394c` |
+| 3 | `theorem` | [families_index_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/families-index-nontrivial.md) | 55 | `result-track:99dcfcac3f6b884f0ec55ba9df1bd8bacb24fbd9301a6ddc92590fbacc596e0d` |
+| 4 | `theorem` | [families_index_specializes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamiliesIndexClassNamespacedArithmeticFamily.lean/declarations/families-index-specializes.md) | 62 | `result-track:f1475a95c2a64779dcf26d0a22454b04d9165ab73678e977e70fb702c379ef11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

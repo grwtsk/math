@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MatrixAction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/matrixaction.md) | 19 | `declaration-track:d0663f59f7774a644b2073ced54aa4c47078e31976a04d62805747537489b16f` |
-| 2 | `def` | [copyAction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/copyaction.md) | 32 | `declaration-track:02da0e983076b62f4f46c6aaff289d6a25265481864a985c8d7f30d54b5fae0e` |
-| 3 | `theorem` | [copyAction_id_act](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/copyaction-id-act.md) | 45 | `result-track:d0be50bf53e2038ee44bdb34ab9fb5f3d1c9879b1c117ec80b441d061a36ce10` |
-| 4 | `structure` | [RectV4ActionContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/rectv4actioncontract.md) | 50 | `declaration-track:e2e88902a7bfa391640de26928442d3a1ab0404572be7431c2d27b36d585047c` |
-| 5 | `def` | [rectV4ActionContractTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/rectv4actioncontracttarget.md) | 55 | `declaration-track:be8c472c2b6913a0d6d75d2d3ec76d563c22d1f5e7fba384d4b247db5b514667` |
+| 1 | `structure` | [MatrixAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/matrixaction.md) | 19 | `declaration-track:d0663f59f7774a644b2073ced54aa4c47078e31976a04d62805747537489b16f` |
+| 2 | `def` | [copyAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/copyaction.md) | 32 | `declaration-track:02da0e983076b62f4f46c6aaff289d6a25265481864a985c8d7f30d54b5fae0e` |
+| 3 | `theorem` | [copyAction_id_act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/copyaction-id-act.md) | 45 | `result-track:d0be50bf53e2038ee44bdb34ab9fb5f3d1c9879b1c117ec80b441d061a36ce10` |
+| 4 | `structure` | [RectV4ActionContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/rectv4actioncontract.md) | 50 | `declaration-track:e2e88902a7bfa391640de26928442d3a1ab0404572be7431c2d27b36d585047c` |
+| 5 | `def` | [rectV4ActionContractTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixSymmetryMatrixAction.lean/declarations/rectv4actioncontracttarget.md) | 55 | `declaration-track:be8c472c2b6913a0d6d75d2d3ec76d563c22d1f5e7fba384d4b247db5b514667` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

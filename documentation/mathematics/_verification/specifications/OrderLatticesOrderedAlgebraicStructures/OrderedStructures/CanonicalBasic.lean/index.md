@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sup_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/declarations/sup-eq-zero-source-edition-2.md) | 17 | `result-track:eea8bf5368303a828a2341e5f561f3e9669c376d5bbfaf34f3eaad840670fac9` |
-| 2 | `lemma` | [sup'_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/declarations/sup-eq-zero.md) | 18 | `result-track:5d4d7526ba8041527fc29136f46749f7a60eba9cfd42e8603429d64576274288` |
+| 1 | `lemma` | [sup_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/declarations/sup-eq-zero-source-edition-2.md) | 17 | `result-track:eea8bf5368303a828a2341e5f561f3e9669c376d5bbfaf34f3eaad840670fac9` |
+| 2 | `lemma` | [sup'_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalBasic.lean/declarations/sup-eq-zero.md) | 18 | `result-track:5d4d7526ba8041527fc29136f46749f7a60eba9cfd42e8603429d64576274288` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

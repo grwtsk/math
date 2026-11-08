@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Kernel.lean/index.md) · [Full source](../../../../Combinatorics/Kernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteLaw](../../../../Combinatorics/Kernel.lean/declarations/finitelaw.md) | 13 | `declaration-track:1f9c90212034e0f333e23a2ad4e8a0888ab2eb258f44a3b8372fe3210e57184c` |
-| 2 | `structure` | [MarkovKernel](../../../../Combinatorics/Kernel.lean/declarations/markovkernel.md) | 18 | `declaration-track:011d1fe41fdf1b20eb32e86292e5f4cc963c1ae8b51c5e6caaf9223cf742819b` |
-| 3 | `def` | [MarkovKernel.push](../../../../Combinatorics/Kernel.lean/declarations/markovkernel-push.md) | 24 | `declaration-track:31ccf3d1d8bdfbc40bb0b5543bf3c597c1ab2e0d03a52499181f987dcca2fef8` |
-| 4 | `def` | [LawSupported](../../../../Combinatorics/Kernel.lean/declarations/lawsupported.md) | 54 | `declaration-track:719b3d19de036ad0dbf9c49e2b6605c79285042bf4990f10e9147df180a88b5e` |
-| 5 | `def` | [KernelPreservesAdmissibility](../../../../Combinatorics/Kernel.lean/declarations/kernelpreservesadmissibility.md) | 60 | `declaration-track:d076587cb7920f7ba22baa3c3cd01f291e0bdbb48661ccf6bf625b7f4f8f6705` |
-| 6 | `structure` | [AdmissibilityCertificate](../../../../Combinatorics/Kernel.lean/declarations/admissibilitycertificate.md) | 69 | `declaration-track:fb8e5bfa3a8b70ce857b0a14bca02f4388d344c1a113ba5b09b965027980583d` |
-| 7 | `structure` | [KernelPerturbation](../../../../Combinatorics/Kernel.lean/declarations/kernelperturbation.md) | 76 | `declaration-track:44d4451e93aed8e3500791b1217ee60bcf779da0b96f27bdd276736ec88edfc6` |
+| 1 | `structure` | [FiniteLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/declarations/finitelaw.md) | 13 | `declaration-track:1f9c90212034e0f333e23a2ad4e8a0888ab2eb258f44a3b8372fe3210e57184c` |
+| 2 | `structure` | [MarkovKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/declarations/markovkernel.md) | 18 | `declaration-track:011d1fe41fdf1b20eb32e86292e5f4cc963c1ae8b51c5e6caaf9223cf742819b` |
+| 3 | `def` | [MarkovKernel.push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/declarations/markovkernel-push.md) | 24 | `declaration-track:31ccf3d1d8bdfbc40bb0b5543bf3c597c1ab2e0d03a52499181f987dcca2fef8` |
+| 4 | `def` | [LawSupported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/declarations/lawsupported.md) | 54 | `declaration-track:719b3d19de036ad0dbf9c49e2b6605c79285042bf4990f10e9147df180a88b5e` |
+| 5 | `def` | [KernelPreservesAdmissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/declarations/kernelpreservesadmissibility.md) | 60 | `declaration-track:d076587cb7920f7ba22baa3c3cd01f291e0bdbb48661ccf6bf625b7f4f8f6705` |
+| 6 | `structure` | [AdmissibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/declarations/admissibilitycertificate.md) | 69 | `declaration-track:fb8e5bfa3a8b70ce857b0a14bca02f4388d344c1a113ba5b09b965027980583d` |
+| 7 | `structure` | [KernelPerturbation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kernel.lean/declarations/kernelperturbation.md) | 76 | `declaration-track:44d4451e93aed8e3500791b1217ee60bcf779da0b96f27bdd276736ec88edfc6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/index.md) · [Full source](../../../../RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_minus_kernel_error_t_bound](../../../../RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/declarations/actual-minus-kernel-error-t-bound.md) | 20 | `result-track:76df0c32d92e975d2f77d77252b637f120546b993d4117d6f86446dd1ecd2b25` |
-| 2 | `theorem` | [minusCorrelationWeight_error_t_bound](../../../../RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/declarations/minuscorrelationweight-error-t-bound.md) | 43 | `result-track:24566bada44be4776982f2e96fc96bc60ac0ca13e7cf8a6632c48bd0b87300a1` |
-| 3 | `theorem` | [actual_minus_kernel_error_fixed_head](../../../../RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/declarations/actual-minus-kernel-error-fixed-head.md) | 49 | `result-track:45dc91599780afb543d34c8964ba17f93bdede4c5724f5ed5157243e241c0b7a` |
+| 1 | `theorem` | [actual_minus_kernel_error_t_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/declarations/actual-minus-kernel-error-t-bound.md) | 20 | `result-track:76df0c32d92e975d2f77d77252b637f120546b993d4117d6f86446dd1ecd2b25` |
+| 2 | `theorem` | [minusCorrelationWeight_error_t_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/declarations/minuscorrelationweight-error-t-bound.md) | 43 | `result-track:24566bada44be4776982f2e96fc96bc60ac0ca13e7cf8a6632c48bd0b87300a1` |
+| 3 | `theorem` | [actual_minus_kernel_error_fixed_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFiniteHeadMinusWeightAttempt01.lean/declarations/actual-minus-kernel-error-fixed-head.md) | 49 | `result-track:45dc91599780afb543d34c8964ba17f93bdede4c5724f5ed5157243e241c0b7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

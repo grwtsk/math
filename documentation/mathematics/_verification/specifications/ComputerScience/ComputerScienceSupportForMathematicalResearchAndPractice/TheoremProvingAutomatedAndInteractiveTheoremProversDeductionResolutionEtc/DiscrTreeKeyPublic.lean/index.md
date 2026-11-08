@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkKey](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/mkkey.md) | 20 | `declaration-track:8ef07683f0bf94100356129ef2c6e844c715fd1b44155a8f1d77ca821a0650f1` |
-| 2 | `def` | [getType](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/gettype.md) | 38 | `declaration-track:1741617a95ef5be031912a1a6b18acf87014714bae143ca9b8ebdc89fdd3e7e1` |
-| 3 | `def` | [evalDiscrTreeKeyCmd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/evaldiscrtreekeycmd.md) | 49 | `declaration-track:3228780bb1ea36e3419aa03463b0b1ff534f32f3623cd2724dadda39a5415db0` |
-| 4 | `def` | [evalDiscrTreeSimpKeyCmd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/evaldiscrtreesimpkeycmd.md) | 58 | `declaration-track:ae608b96bdb163542bd1c27c6fd23c4bcaa6aa70ce64590aabd0740a90ff58a7` |
+| 1 | `def` | [mkKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/mkkey.md) | 20 | `declaration-track:8ef07683f0bf94100356129ef2c6e844c715fd1b44155a8f1d77ca821a0650f1` |
+| 2 | `def` | [getType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/gettype.md) | 38 | `declaration-track:1741617a95ef5be031912a1a6b18acf87014714bae143ca9b8ebdc89fdd3e7e1` |
+| 3 | `def` | [evalDiscrTreeKeyCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/evaldiscrtreekeycmd.md) | 49 | `declaration-track:3228780bb1ea36e3419aa03463b0b1ff534f32f3623cd2724dadda39a5415db0` |
+| 4 | `def` | [evalDiscrTreeSimpKeyCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DiscrTreeKeyPublic.lean/declarations/evaldiscrtreesimpkeycmd.md) | 58 | `declaration-track:ae608b96bdb163542bd1c27c6fd23c4bcaa6aa70ce64590aabd0740a90ff58a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

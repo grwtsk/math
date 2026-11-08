@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [List.Vector.finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/declarations/list-vector-finite.md) | 22 | `declaration-track:c92cc227ffc4b4c8d26919202bb895640de4ac8406b41091ec4dbe20c3718622` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/declarations/instance.md) | 26 | `declaration-track:a179188230cf8c2130af9fd8150e3be178dd9aca0ab1d15113964925e67858f2` |
+| 1 | `instance` | [List.Vector.finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/declarations/list-vector-finite.md) | 22 | `declaration-track:c92cc227ffc4b4c8d26919202bb895640de4ac8406b41091ec4dbe20c3718622` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteVectorNamespacedEdition1.lean/declarations/instance.md) | 26 | `declaration-track:a179188230cf8c2130af9fd8150e3be178dd9aca0ab1d15113964925e67858f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

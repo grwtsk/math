@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCoefficientDiscriminant`](../../../../CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCoefficientDiscriminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [charTwoDiscriminantRoot](../../../../CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/chartwodiscriminantroot.md) | 23 | `declaration-track:8aaca2b9e80bb28f40b5bca62320bd879b9e8ec40e4e592c3dd463fa77044946` |
-| 2 | `theorem` | [monicQuarticDiscriminant_charTwo](../../../../CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/monicquarticdiscriminant-chartwo.md) | 28 | `result-track:1ebbdc889d201eea26f3a0347fbe2a7970d262e504ae26cf2f4263c43d0ea071` |
-| 3 | `theorem` | [monicQuarticDiscriminant_ne_zero_iff_charTwoRoot](../../../../CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/monicquarticdiscriminant-ne-zero-iff-chartworoot.md) | 77 | `result-track:f2a541dbc0dc76cf02f4b9243cd45417cf9eaaec214c911db67d87fd67d67f6e` |
-| 4 | `theorem` | [monicQuarticDiscriminant_eq_zero_iff_charTwoRoot](../../../../CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/monicquarticdiscriminant-eq-zero-iff-chartworoot.md) | 87 | `result-track:8db2d5989ff8188f17897004dcd9ae9c83061b72753497039e11fd02acb91c4c` |
+| 1 | `def` | [charTwoDiscriminantRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/chartwodiscriminantroot.md) | 23 | `declaration-track:8aaca2b9e80bb28f40b5bca62320bd879b9e8ec40e4e592c3dd463fa77044946` |
+| 2 | `theorem` | [monicQuarticDiscriminant_charTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/monicquarticdiscriminant-chartwo.md) | 28 | `result-track:1ebbdc889d201eea26f3a0347fbe2a7970d262e504ae26cf2f4263c43d0ea071` |
+| 3 | `theorem` | [monicQuarticDiscriminant_ne_zero_iff_charTwoRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/monicquarticdiscriminant-ne-zero-iff-chartworoot.md) | 77 | `result-track:f2a541dbc0dc76cf02f4b9243cd45417cf9eaaec214c911db67d87fd67d67f6e` |
+| 4 | `theorem` | [monicQuarticDiscriminant_eq_zero_iff_charTwoRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/declarations/monicquarticdiscriminant-eq-zero-iff-chartworoot.md) | 87 | `result-track:8db2d5989ff8188f17897004dcd9ae9c83061b72753497039e11fd02acb91c4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

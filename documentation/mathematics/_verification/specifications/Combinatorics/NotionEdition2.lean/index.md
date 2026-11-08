@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NotionEdition2.lean/index.md) · [Full source](../../../../Combinatorics/NotionEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ObservationPolicy](../../../../Combinatorics/NotionEdition2.lean/declarations/observationpolicy.md) | 15 | `declaration-track:df8925df082b61ff28663a1c2afefe19f3ac53dbd10faa92a51280560516398a` |
-| 2 | `def` | [ObservationallyEquivalent](../../../../Combinatorics/NotionEdition2.lean/declarations/observationallyequivalent.md) | 22 | `declaration-track:744f0df395b0f8773f0324852b0d52126fdae00097979f99b92171f9cb29d156` |
-| 3 | `def` | [notionSetoid](../../../../Combinatorics/NotionEdition2.lean/declarations/notionsetoid.md) | 27 | `declaration-track:7ba52a909ed6e68e2117b0852a50dd32f4d947cfb2202845dffa7b85963cfd20` |
-| 4 | `def` | [notionQuotient](../../../../Combinatorics/NotionEdition2.lean/declarations/notionquotient.md) | 34 | `declaration-track:b997e5196dac3abcd4b938b2d8d6cc085830d0b5198d32046f69332f0ea8833f` |
-| 5 | `theorem` | [observationallyEquivalent_of_budget_le](../../../../Combinatorics/NotionEdition2.lean/declarations/observationallyequivalent-of-budget-le.md) | 39 | `result-track:baf5502198600ec108e21634fa7ae98f80400550c08e2a83b16af4b095c10c04` |
-| 6 | `structure` | [FiniteNotion](../../../../Combinatorics/NotionEdition2.lean/declarations/finitenotion.md) | 46 | `declaration-track:0e2f78e7bab3aedf8f3d1d7092137c91d9adbb21f49039580c877c6be754c007` |
-| 7 | `def` | [FiniteNotion.Equivalent](../../../../Combinatorics/NotionEdition2.lean/declarations/finitenotion-equivalent.md) | 55 | `declaration-track:fcaccc3e6e52f35e18dd0fdb6f0a42b9b8a55901eb878ce122c962cfa6c373b7` |
-| 8 | `def` | [FiniteNotion.setoid](../../../../Combinatorics/NotionEdition2.lean/declarations/finitenotion-setoid.md) | 61 | `declaration-track:d65cd1d49e2142d90e6b9dc98c261191dc9a53aab258f5fe8ef9d1af2f890b5b` |
-| 9 | `def` | [FiniteNotion.compare](../../../../Combinatorics/NotionEdition2.lean/declarations/finitenotion-compare.md) | 68 | `declaration-track:0c498f315e5209fa26d2e2169701f18258c861b77d403d5ddbd76b2a94a0adcf` |
-| 10 | `theorem` | [FiniteNotion.compare_eq_true](../../../../Combinatorics/NotionEdition2.lean/declarations/finitenotion-compare-eq-true.md) | 74 | `result-track:8e67516b3708def1fdd043272067721c9a6b24dea74ea05f5a62f932243e2019` |
-| 11 | `theorem` | [FiniteNotion.equivalent_of_budget_le](../../../../Combinatorics/NotionEdition2.lean/declarations/finitenotion-equivalent-of-budget-le.md) | 81 | `result-track:6676af09b2f078eec36278e73b42ce2861854ec744ffba889167729b203faee8` |
-| 12 | `theorem` | [FiniteNotion.equivalent_of_semantic](../../../../Combinatorics/NotionEdition2.lean/declarations/finitenotion-equivalent-of-semantic.md) | 88 | `result-track:1e85dc65e15ad96a2e132cac2377c4e9c8e1d2252d1c8c48071664dada7a0769` |
+| 1 | `structure` | [ObservationPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/observationpolicy.md) | 15 | `declaration-track:df8925df082b61ff28663a1c2afefe19f3ac53dbd10faa92a51280560516398a` |
+| 2 | `def` | [ObservationallyEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/observationallyequivalent.md) | 22 | `declaration-track:744f0df395b0f8773f0324852b0d52126fdae00097979f99b92171f9cb29d156` |
+| 3 | `def` | [notionSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/notionsetoid.md) | 27 | `declaration-track:7ba52a909ed6e68e2117b0852a50dd32f4d947cfb2202845dffa7b85963cfd20` |
+| 4 | `def` | [notionQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/notionquotient.md) | 34 | `declaration-track:b997e5196dac3abcd4b938b2d8d6cc085830d0b5198d32046f69332f0ea8833f` |
+| 5 | `theorem` | [observationallyEquivalent_of_budget_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/observationallyequivalent-of-budget-le.md) | 39 | `result-track:baf5502198600ec108e21634fa7ae98f80400550c08e2a83b16af4b095c10c04` |
+| 6 | `structure` | [FiniteNotion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/finitenotion.md) | 46 | `declaration-track:0e2f78e7bab3aedf8f3d1d7092137c91d9adbb21f49039580c877c6be754c007` |
+| 7 | `def` | [FiniteNotion.Equivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/finitenotion-equivalent.md) | 55 | `declaration-track:fcaccc3e6e52f35e18dd0fdb6f0a42b9b8a55901eb878ce122c962cfa6c373b7` |
+| 8 | `def` | [FiniteNotion.setoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/finitenotion-setoid.md) | 61 | `declaration-track:d65cd1d49e2142d90e6b9dc98c261191dc9a53aab258f5fe8ef9d1af2f890b5b` |
+| 9 | `def` | [FiniteNotion.compare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/finitenotion-compare.md) | 68 | `declaration-track:0c498f315e5209fa26d2e2169701f18258c861b77d403d5ddbd76b2a94a0adcf` |
+| 10 | `theorem` | [FiniteNotion.compare_eq_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/finitenotion-compare-eq-true.md) | 74 | `result-track:8e67516b3708def1fdd043272067721c9a6b24dea74ea05f5a62f932243e2019` |
+| 11 | `theorem` | [FiniteNotion.equivalent_of_budget_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/finitenotion-equivalent-of-budget-le.md) | 81 | `result-track:6676af09b2f078eec36278e73b42ce2861854ec744ffba889167729b203faee8` |
+| 12 | `theorem` | [FiniteNotion.equivalent_of_semantic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NotionEdition2.lean/declarations/finitenotion-equivalent-of-semantic.md) | 88 | `result-track:1e85dc65e15ad96a2e132cac2377c4e9c8e1d2252d1c8c48071664dada7a0769` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

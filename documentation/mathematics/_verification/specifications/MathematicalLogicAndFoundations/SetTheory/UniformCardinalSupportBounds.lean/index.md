@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [regular_union_obstruction](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/regular-union-obstruction.md) | 18 | `result-track:85354251cbf44a2a8189538c1d13896c2f8db05e896a3f72ea93dbb037569d5c` |
-| 2 | `theorem` | [sigma_uniform_bound](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/sigma-uniform-bound.md) | 24 | `result-track:e45f407eabf3fe7fc2fa1d0d4b2860ca51c30413f7051e0ff430c2fcae6e6dd5` |
-| 3 | `theorem` | [pi_uniform_bound](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/pi-uniform-bound.md) | 30 | `result-track:5f9ae2c5f78c0a7c1acdbe98c98ca41f2cd948a7ac70845d588f273d23b82253` |
-| 4 | `theorem` | [power_lt_strongLimit](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/power-lt-stronglimit.md) | 36 | `result-track:9debdc4f46da2ebb3d5b0cb1482465bd3b80082d70a4a40333403b221b70cd55` |
-| 5 | `theorem` | [sigma_pi_lt_strongLimit](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/sigma-pi-lt-stronglimit.md) | 44 | `result-track:5b3035c39681123369228c5d0d9284f2e87af098724ca2299efcfb4d2901992a` |
-| 6 | `theorem` | [uniform_bound_of_below_cofinality](../../../../../MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/uniform-bound-of-below-cofinality.md) | 55 | `result-track:fc38c880a51755336c61537a832bb1c8bbcfebbe50f445fe64e401796e34f76f` |
+| 1 | `theorem` | [regular_union_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/regular-union-obstruction.md) | 18 | `result-track:85354251cbf44a2a8189538c1d13896c2f8db05e896a3f72ea93dbb037569d5c` |
+| 2 | `theorem` | [sigma_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/sigma-uniform-bound.md) | 24 | `result-track:e45f407eabf3fe7fc2fa1d0d4b2860ca51c30413f7051e0ff430c2fcae6e6dd5` |
+| 3 | `theorem` | [pi_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/pi-uniform-bound.md) | 30 | `result-track:5f9ae2c5f78c0a7c1acdbe98c98ca41f2cd948a7ac70845d588f273d23b82253` |
+| 4 | `theorem` | [power_lt_strongLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/power-lt-stronglimit.md) | 36 | `result-track:9debdc4f46da2ebb3d5b0cb1482465bd3b80082d70a4a40333403b221b70cd55` |
+| 5 | `theorem` | [sigma_pi_lt_strongLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/sigma-pi-lt-stronglimit.md) | 44 | `result-track:5b3035c39681123369228c5d0d9284f2e87af098724ca2299efcfb4d2901992a` |
+| 6 | `theorem` | [uniform_bound_of_below_cofinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/UniformCardinalSupportBounds.lean/declarations/uniform-bound-of-below-cofinality.md) | 55 | `result-track:fc38c880a51755336c61537a832bb1c8bbcfebbe50f445fe64e401796e34f76f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

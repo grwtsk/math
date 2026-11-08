@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BornPublic.lean/index.md) · [Full source](../../../../GeneralTopology/BornPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Born](../../../../GeneralTopology/BornPublic.lean/declarations/born.md) | 26 | `declaration-track:9ed2ea21ac6c16b5640e56980dd9aedb9e8bc6cd22d209d4af832963db8ba86d` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/BornPublic.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:29494c32034652c7ef26254242da15d53bab28ff3fcfe04eb8a6ae06958cc84e` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/BornPublic.lean/declarations/instance.md) | 40 | `declaration-track:0de222ed6c024a381bd1cb58986dde0bb291901f464171e9bae886a9faa50f7c` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/BornPublic.lean/declarations/instance-source-edition-3.md) | 43 | `declaration-track:14b2e8d3d2ef0f02634b6463cad8f536ae7d407d7307ebc2ba8ebc41102e098a` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/BornPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:0ecd40a4fca3d721bb08ef7367161ead0b979affe6a40399d183d36c808e9723` |
-| 6 | `def` | [Born.delabOf](../../../../GeneralTopology/BornPublic.lean/declarations/born-delabof.md) | 60 | `declaration-track:f2ac8541970ab33a101eb0498ee5f0ca8d0d40d8c508b4a14e84e245ec178fd8` |
+| 1 | `structure` | [Born](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/declarations/born.md) | 26 | `declaration-track:9ed2ea21ac6c16b5640e56980dd9aedb9e8bc6cd22d209d4af832963db8ba86d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:29494c32034652c7ef26254242da15d53bab28ff3fcfe04eb8a6ae06958cc84e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/declarations/instance.md) | 40 | `declaration-track:0de222ed6c024a381bd1cb58986dde0bb291901f464171e9bae886a9faa50f7c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/declarations/instance-source-edition-3.md) | 43 | `declaration-track:14b2e8d3d2ef0f02634b6463cad8f536ae7d407d7307ebc2ba8ebc41102e098a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:0ecd40a4fca3d721bb08ef7367161ead0b979affe6a40399d183d36c808e9723` |
+| 6 | `def` | [Born.delabOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornPublic.lean/declarations/born-delabof.md) | 60 | `declaration-track:f2ac8541970ab33a101eb0498ee5f0ca8d0d40d8c508b4a14e84e245ec178fd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

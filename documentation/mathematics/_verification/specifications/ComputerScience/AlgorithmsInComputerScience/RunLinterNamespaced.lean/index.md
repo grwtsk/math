@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [NoLints](../../../../../ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/nolints.md) | 16 | `declaration-track:f716d8058914b815afe57c39168a8cc4e7060960473a0de5fe1ed23cfeec965d` |
-| 2 | `def` | [readJsonFile](../../../../../ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/readjsonfile.md) | 19 | `declaration-track:5636f04bf3df705d15613f0270d89e8fb71a34b2bf741cf592a90d4bcc57ed83` |
-| 3 | `def` | [writeJsonFile](../../../../../ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/writejsonfile.md) | 24 | `declaration-track:87d3a66658f1425e4b458f6af02e810fd8281eb2a95e9b824cd7508074264915` |
-| 4 | `def` | [main](../../../../../ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/main.md) | 34 | `declaration-track:c3248c6d996e309a5d2d29f75d90b1841aec4a19a2d5f2e15a5f34af1fb77f3d` |
+| 1 | `abbrev` | [NoLints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/nolints.md) | 16 | `declaration-track:f716d8058914b815afe57c39168a8cc4e7060960473a0de5fe1ed23cfeec965d` |
+| 2 | `def` | [readJsonFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/readjsonfile.md) | 19 | `declaration-track:5636f04bf3df705d15613f0270d89e8fb71a34b2bf741cf592a90d4bcc57ed83` |
+| 3 | `def` | [writeJsonFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/writejsonfile.md) | 24 | `declaration-track:87d3a66658f1425e4b458f6af02e810fd8281eb2a95e9b824cd7508074264915` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RunLinterNamespaced.lean/declarations/main.md) | 34 | `declaration-track:c3248c6d996e309a5d2d29f75d90b1841aec4a19a2d5f2e15a5f34af1fb77f3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

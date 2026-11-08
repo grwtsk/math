@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isFiltered_of_representablyCoflat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/declarations/isfiltered-of-representablycoflat.md) | 31 | `result-track:b2539a98fd52e493f74a10809d9cfc4b8a43ebde9e977cca6ee58007a04c308b` |
-| 2 | `lemma` | [isCofiltered_of_representablyFlat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/declarations/iscofiltered-of-representablyflat.md) | 34 | `result-track:f3113c7a1d8f4f6a0dd7f1255bdbdad2b8b25b5b09d8ba878d0d61edaea7bc91` |
+| 1 | `lemma` | [isFiltered_of_representablyCoflat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/declarations/isfiltered-of-representablycoflat.md) | 31 | `result-track:b2539a98fd52e493f74a10809d9cfc4b8a43ebde9e977cca6ee58007a04c308b` |
+| 2 | `lemma` | [isCofiltered_of_representablyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFlat.lean/declarations/iscofiltered-of-representablyflat.md) | 34 | `result-track:f3113c7a1d8f4f6a0dd7f1255bdbdad2b8b25b5b09d8ba878d0d61edaea7bc91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

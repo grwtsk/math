@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MulEquiv.piUnits](../../../../GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/declarations/mulequiv-piunits.md) | 29 | `declaration-track:486a84eac98893a826744cbfd3135031ef76b5152067cdd9124960e2b6b4f4ae` |
-| 2 | `lemma` | [Pi.isUnit_iff](../../../../GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/declarations/pi-isunit-iff.md) | 37 | `result-track:8f95bfe7b9320aa36f4fe26356e13584dfd2fd1522f605853c10566312bd1674` |
-| 3 | `lemma` | [IsUnit.val_inv_apply](../../../../GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/declarations/isunit-val-inv-apply.md) | 46 | `result-track:2732617e3cc17a4a08b15be8efebc3be962992fd95cf118ab02655af93ffbd58` |
+| 1 | `def` | [MulEquiv.piUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/declarations/mulequiv-piunits.md) | 29 | `declaration-track:486a84eac98893a826744cbfd3135031ef76b5152067cdd9124960e2b6b4f4ae` |
+| 2 | `lemma` | [Pi.isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/declarations/pi-isunit-iff.md) | 37 | `result-track:8f95bfe7b9320aa36f4fe26356e13584dfd2fd1522f605853c10566312bd1674` |
+| 3 | `lemma` | [IsUnit.val_inv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiUnitsNamespaced.lean/declarations/isunit-val-inv-apply.md) | 46 | `result-track:2732617e3cc17a4a08b15be8efebc3be962992fd95cf118ab02655af93ffbd58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

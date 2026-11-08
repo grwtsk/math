@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [BClosed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/declarations/bclosed.md) | 88 | `declaration-track:c23f1c5ad64795955eab9b98e2061b7da84141be4b9bba5afc1114d0cd476ed8` |
-| 2 | `def` | [BTreePlan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/declarations/btreeplan.md) | 116 | `declaration-track:4f747494e2c89d52b5a7ca161fd4c5760643f74e941bfaaefb130ad6e8f6e99a` |
+| 1 | `def` | [BClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/declarations/bclosed.md) | 88 | `declaration-track:c23f1c5ad64795955eab9b98e2061b7da84141be4b9bba5afc1114d0cd476ed8` |
+| 2 | `def` | [BTreePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/declarations/btreeplan.md) | 116 | `declaration-track:4f747494e2c89d52b5a7ca161fd4c5760643f74e941bfaaefb130ad6e8f6e99a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Degree](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/degree.md) | 18 | `declaration-track:dbcddcdcaed0ff868558f6f7bba9baecf118a79621da821e61174dd879bb0e35` |
-| 2 | `structure` | [GradedObject](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/gradedobject.md) | 20 | `declaration-track:2307e207acdcab475f080f8f686e15307802041abe5957396b4914b24c9481f1` |
-| 3 | `def` | [GradedObject.term](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/gradedobject-term.md) | 24 | `declaration-track:b9153efb99d95214a5761ab2304c6016318e0f23d587b9cf301058e24cae03c6` |
-| 4 | `theorem` | [graded_object_has_term](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/graded-object-has-term.md) | 29 | `result-track:ff34ad3a1f26631df3c306cbef341bf79a6f7b1d16f4e307a658ef90d17c9fbe` |
+| 1 | `abbrev` | [Degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/degree.md) | 18 | `declaration-track:dbcddcdcaed0ff868558f6f7bba9baecf118a79621da821e61174dd879bb0e35` |
+| 2 | `structure` | [GradedObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/gradedobject.md) | 20 | `declaration-track:2307e207acdcab475f080f8f686e15307802041abe5957396b4914b24c9481f1` |
+| 3 | `def` | [GradedObject.term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/gradedobject-term.md) | 24 | `declaration-track:b9153efb99d95214a5761ab2304c6016318e0f23d587b9cf301058e24cae03c6` |
+| 4 | `theorem` | [graded_object_has_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Degree.lean/declarations/graded-object-has-term.md) | 29 | `result-track:ff34ad3a1f26631df3c306cbef341bf79a6f7b1d16f4e307a658ef90d17c9fbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

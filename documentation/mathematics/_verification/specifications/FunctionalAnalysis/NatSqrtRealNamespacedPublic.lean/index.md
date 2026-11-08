@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ratSqrt_le_realSqrt](../../../../FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/ratsqrt-le-realsqrt.md) | 30 | `result-track:6e55360841f2b41dbc6f7072fb1f77bfef796614270818e74f025c862059e495` |
-| 2 | `theorem` | [realSqrt_lt_ratSqrt_add_inv_prec](../../../../FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/realsqrt-lt-ratsqrt-add-inv-prec.md) | 37 | `result-track:2209c627f409746c17f72fbcadc7de08856c8032ae3b2e5d9d5c4d767043cf79` |
-| 3 | `theorem` | [realSqrt_mem_Ico](../../../../FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/realsqrt-mem-ico.md) | 48 | `result-track:29f85d3a8c3a2c80290af44daf7443f40ecc1eaf34da54432765db36008f4357` |
-| 4 | `theorem` | [ratSqrt_mem_Ioc](../../../../FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/ratsqrt-mem-ioc.md) | 62 | `result-track:3eb81dff1ef8de3a041a8ea15233390bb4f09f2e75656c7ef7f7ac8f6bca4bca` |
+| 1 | `theorem` | [ratSqrt_le_realSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/ratsqrt-le-realsqrt.md) | 30 | `result-track:6e55360841f2b41dbc6f7072fb1f77bfef796614270818e74f025c862059e495` |
+| 2 | `theorem` | [realSqrt_lt_ratSqrt_add_inv_prec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/realsqrt-lt-ratsqrt-add-inv-prec.md) | 37 | `result-track:2209c627f409746c17f72fbcadc7de08856c8032ae3b2e5d9d5c4d767043cf79` |
+| 3 | `theorem` | [realSqrt_mem_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/realsqrt-mem-ico.md) | 48 | `result-track:29f85d3a8c3a2c80290af44daf7443f40ecc1eaf34da54432765db36008f4357` |
+| 4 | `theorem` | [ratSqrt_mem_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NatSqrtRealNamespacedPublic.lean/declarations/ratsqrt-mem-ioc.md) | 62 | `result-track:3eb81dff1ef8de3a041a8ea15233390bb4f09f2e75656c7ef7f7ac8f6bca4bca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

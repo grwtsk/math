@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsUniquelyDecodable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/declarations/isuniquelydecodable.md) | 46 | `declaration-track:d5739ff58fbccb1b3fb1a09c757369279ed2127d0d0897b5368075e748fbf784` |
-| 2 | `lemma` | [IsUniquelyDecodable.epsilon_not_mem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/declarations/isuniquelydecodable-epsilon-not-mem.md) | 59 | `result-track:dd59f61560335291d0c4248669bdb8970b45edaea15c8f854ead9394f78dd15d` |
-| 3 | `lemma` | [IsUniquelyDecodable.flatten_injective](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/declarations/isuniquelydecodable-flatten-injective.md) | 67 | `result-track:11456af16fc30c570ac31ca9c128a47344f1e4f336a3c12419f33f3cb36e83fe` |
+| 1 | `def` | [IsUniquelyDecodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/declarations/isuniquelydecodable.md) | 46 | `declaration-track:d5739ff58fbccb1b3fb1a09c757369279ed2127d0d0897b5368075e748fbf784` |
+| 2 | `lemma` | [IsUniquelyDecodable.epsilon_not_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/declarations/isuniquelydecodable-epsilon-not-mem.md) | 59 | `result-track:dd59f61560335291d0c4248669bdb8970b45edaea15c8f854ead9394f78dd15d` |
+| 3 | `lemma` | [IsUniquelyDecodable.flatten_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodableNamespacedPublic.lean/declarations/isuniquelydecodable-flatten-injective.md) | 67 | `result-track:11456af16fc30c570ac31ca9c128a47344f1e4f336a3c12419f33f3cb36e83fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

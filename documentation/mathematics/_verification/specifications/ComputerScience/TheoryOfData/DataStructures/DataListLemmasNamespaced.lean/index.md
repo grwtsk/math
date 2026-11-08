@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [setOf_mem_eq_empty_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/setof-mem-eq-empty-iff.md) | 29 | `result-track:9c8a0142ef93c11ed8a430b162ba3637673645d8c18d0e91f29ec33df87989ca` |
-| 2 | `theorem` | [injOn_insertIdx_index_of_notMem](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/injon-insertidx-index-of-notmem.md) | 34 | `result-track:d95ef87b4791ebdbdae6c34d5e12daf7a9cf732611f1b40b18a907e9dc4729be` |
-| 3 | `theorem` | [foldr_range_subset_of_range_subset](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldr-range-subset-of-range-subset.md) | 55 | `result-track:3525588e51786dd7ea9cec104c476125e00727e0c21ee294681c345466a81faa` |
-| 4 | `theorem` | [foldl_range_subset_of_range_subset](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldl-range-subset-of-range-subset.md) | 65 | `result-track:3616a3617b5475bf68d15ff6b32973e806cbd82aeb207a4005ebb04362377ef3` |
-| 5 | `theorem` | [foldr_range_eq_of_range_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldr-range-eq-of-range-eq.md) | 74 | `result-track:02efdeb769c75eb7c5fe2f21a8f16045830a229d049f27996777b0b0a0872a13` |
-| 6 | `theorem` | [foldl_range_eq_of_range_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldl-range-eq-of-range-eq.md) | 79 | `result-track:868b98840542aaea20542950b8682013fd2f617877518574d6aba54c052d7aee` |
-| 7 | `theorem` | [mapAccumr_eq_foldr](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/mapaccumr-eq-foldr.md) | 93 | `result-track:2cec2c6a3ad964a473ed9b248d17a483061fa735398c962d5251f54090cd836a` |
-| 8 | `theorem` | [mapAccumr₂_eq_foldr](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/mapaccumr-eq-foldr-source-edition-2.md) | 102 | `result-track:fb8d20bcf84818b05a524572429773d9bad05c536030dc89b8c6f127547568f4` |
+| 1 | `theorem` | [setOf_mem_eq_empty_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/setof-mem-eq-empty-iff.md) | 29 | `result-track:9c8a0142ef93c11ed8a430b162ba3637673645d8c18d0e91f29ec33df87989ca` |
+| 2 | `theorem` | [injOn_insertIdx_index_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/injon-insertidx-index-of-notmem.md) | 34 | `result-track:d95ef87b4791ebdbdae6c34d5e12daf7a9cf732611f1b40b18a907e9dc4729be` |
+| 3 | `theorem` | [foldr_range_subset_of_range_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldr-range-subset-of-range-subset.md) | 55 | `result-track:3525588e51786dd7ea9cec104c476125e00727e0c21ee294681c345466a81faa` |
+| 4 | `theorem` | [foldl_range_subset_of_range_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldl-range-subset-of-range-subset.md) | 65 | `result-track:3616a3617b5475bf68d15ff6b32973e806cbd82aeb207a4005ebb04362377ef3` |
+| 5 | `theorem` | [foldr_range_eq_of_range_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldr-range-eq-of-range-eq.md) | 74 | `result-track:02efdeb769c75eb7c5fe2f21a8f16045830a229d049f27996777b0b0a0872a13` |
+| 6 | `theorem` | [foldl_range_eq_of_range_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/foldl-range-eq-of-range-eq.md) | 79 | `result-track:868b98840542aaea20542950b8682013fd2f617877518574d6aba54c052d7aee` |
+| 7 | `theorem` | [mapAccumr_eq_foldr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/mapaccumr-eq-foldr.md) | 93 | `result-track:2cec2c6a3ad964a473ed9b248d17a483061fa735398c962d5251f54090cd836a` |
+| 8 | `theorem` | [mapAccumr₂_eq_foldr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/declarations/mapaccumr-eq-foldr-source-edition-2.md) | 102 | `result-track:fb8d20bcf84818b05a524572429773d9bad05c536030dc89b8c6f127547568f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

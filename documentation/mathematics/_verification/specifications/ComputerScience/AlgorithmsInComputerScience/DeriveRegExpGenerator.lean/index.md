@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RegExp](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/regexp.md) | 15 | `declaration-track:7c05b519b6508b5caf40a5694a9c33ca28c26be3e627b54f34421ae02cbc3f43` |
-| 2 | `def` | [neverMatchesAnyString](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/nevermatchesanystring.md) | 95 | `declaration-track:2e7d80e9e8b17571550b520316ca804721d1ac8d3ed472d39f40e30bc28ccf1b` |
-| 3 | `def` | [shrinkRegExp](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/shrinkregexp.md) | 103 | `declaration-track:18903b1836c15d8114e0c1d28a11d54dad46c1e42c0b5536740285ced5460c1b` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/instance.md) | 111 | `declaration-track:2c6e932775f01a6abeee0077e8f743c6108a8417fd0cae726f16b4ace0970bec` |
+| 1 | `inductive` | [RegExp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/regexp.md) | 15 | `declaration-track:7c05b519b6508b5caf40a5694a9c33ca28c26be3e627b54f34421ae02cbc3f43` |
+| 2 | `def` | [neverMatchesAnyString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/nevermatchesanystring.md) | 95 | `declaration-track:2e7d80e9e8b17571550b520316ca804721d1ac8d3ed472d39f40e30bc28ccf1b` |
+| 3 | `def` | [shrinkRegExp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/shrinkregexp.md) | 103 | `declaration-track:18903b1836c15d8114e0c1d28a11d54dad46c1e42c0b5536740285ced5460c1b` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveRegExpGenerator.lean/declarations/instance.md) | 111 | `declaration-track:2c6e932775f01a6abeee0077e8f743c6108a8417fd0cae726f16b4ace0970bec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticMatchingWeightEquiv`](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticMatchingWeightEquiv`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [root_enumeration_injective](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/root-enumeration-injective.md) | 32 | `result-track:bf129d8bb4d9ad961bce9716630f04d63764045e71a6d5f6a3b4dedb0da65c77` |
-| 2 | `def` | [PreservesRootEnumeration](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/preservesrootenumeration.md) | 40 | `declaration-track:c68c22cb0368c9563d6671625878b2b618fde6040df70fffadf84adbda829c1a` |
-| 3 | `theorem` | [exists_root_permutation](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/exists-root-permutation.md) | 46 | `result-track:d07fb971b6309724253b283394e562496170f631110f8a1e908a596b6fecf6f1` |
-| 4 | `theorem` | [matchingWeight_algEquiv](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/matchingweight-algequiv.md) | 56 | `result-track:f0d1d1c1f1bc89ba4346c2440ceb495f58561de5f34f302369d1f407e38852c6` |
-| 5 | `theorem` | [complementaryAdjacency_algEquiv](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/complementaryadjacency-algequiv.md) | 64 | `result-track:5a21408d1a895fe1edb7d91724da5c151c929dc7c331b5f52ffdaa7a4bef7f95` |
-| 6 | `theorem` | [adjacency_automorphism_compatible](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/adjacency-automorphism-compatible.md) | 73 | `result-track:3538020f5a9c2816b191e3a02db3d339719a399208dfb3303e3e66364aefb69e` |
-| 7 | `theorem` | [eval_mapped_algEquiv](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/eval-mapped-algequiv.md) | 88 | `result-track:56a7cc927045740fa22090a4f29c108c72f3a96661ea752eb1b4bfe50126b032` |
-| 8 | `theorem` | [automorphism_preserves_quartic_root](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/automorphism-preserves-quartic-root.md) | 98 | `result-track:477b613db57be5ce2c694052f76dd15b828c20da7f6b723ab0fe03150abf6636` |
-| 9 | `theorem` | [automorphism_maps_enumerated_roots](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/automorphism-maps-enumerated-roots.md) | 107 | `result-track:94e2674e1ae149c619d91b47eb33f7d37baa976451775ea80bc0c047ae91e93d` |
+| 1 | `theorem` | [root_enumeration_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/root-enumeration-injective.md) | 32 | `result-track:bf129d8bb4d9ad961bce9716630f04d63764045e71a6d5f6a3b4dedb0da65c77` |
+| 2 | `def` | [PreservesRootEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/preservesrootenumeration.md) | 40 | `declaration-track:c68c22cb0368c9563d6671625878b2b618fde6040df70fffadf84adbda829c1a` |
+| 3 | `theorem` | [exists_root_permutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/exists-root-permutation.md) | 46 | `result-track:d07fb971b6309724253b283394e562496170f631110f8a1e908a596b6fecf6f1` |
+| 4 | `theorem` | [matchingWeight_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/matchingweight-algequiv.md) | 56 | `result-track:f0d1d1c1f1bc89ba4346c2440ceb495f58561de5f34f302369d1f407e38852c6` |
+| 5 | `theorem` | [complementaryAdjacency_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/complementaryadjacency-algequiv.md) | 64 | `result-track:5a21408d1a895fe1edb7d91724da5c151c929dc7c331b5f52ffdaa7a4bef7f95` |
+| 6 | `theorem` | [adjacency_automorphism_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/adjacency-automorphism-compatible.md) | 73 | `result-track:3538020f5a9c2816b191e3a02db3d339719a399208dfb3303e3e66364aefb69e` |
+| 7 | `theorem` | [eval_mapped_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/eval-mapped-algequiv.md) | 88 | `result-track:56a7cc927045740fa22090a4f29c108c72f3a96661ea752eb1b4bfe50126b032` |
+| 8 | `theorem` | [automorphism_preserves_quartic_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/automorphism-preserves-quartic-root.md) | 98 | `result-track:477b613db57be5ce2c694052f76dd15b828c20da7f6b723ab0fe03150abf6636` |
+| 9 | `theorem` | [automorphism_maps_enumerated_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/declarations/automorphism-maps-enumerated-roots.md) | 107 | `result-track:94e2674e1ae149c619d91b47eb33f7d37baa976451775ea80bc0c047ae91e93d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

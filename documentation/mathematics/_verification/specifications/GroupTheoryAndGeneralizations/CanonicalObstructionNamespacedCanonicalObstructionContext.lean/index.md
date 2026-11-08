@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalObstructionContext](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/declarations/canonicalobstructioncontext.md) | 21 | `declaration-track:9b058c7e53f5a1d11d91c3e811f1039f114ad94dd8cb094d05e8f40790c83c23` |
-| 2 | `theorem` | [automorphic_obstructions_share_canonical_record](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/declarations/automorphic-obstructions-share-canonical-record.md) | 51 | `result-track:aeb62e2177f565b3f0226d7d5aba9719b21bee8bc1a0120a6ffcda615b87f951` |
+| 1 | `structure` | [CanonicalObstructionContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/declarations/canonicalobstructioncontext.md) | 21 | `declaration-track:9b058c7e53f5a1d11d91c3e811f1039f114ad94dd8cb094d05e8f40790c83c23` |
+| 2 | `theorem` | [automorphic_obstructions_share_canonical_record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedCanonicalObstructionContext.lean/declarations/automorphic-obstructions-share-canonical-record.md) | 51 | `result-track:aeb62e2177f565b3f0226d7d5aba9719b21bee8bc1a0120a6ffcda615b87f951` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

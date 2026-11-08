@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [xor](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor.md) | 32 | `declaration-track:a292ba35d98ce10434b107cff0c318a2a0bb6c361e6064f41fd092939593989f` |
-| 2 | `theorem` | [xor_symm](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-symm.md) | 38 | `result-track:0383f3191042a021604a295f71c734a105e7da37525a145ad5302ba82e16bc1b` |
-| 3 | `theorem` | [xor_involutive](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-involutive.md) | 40 | `result-track:bdd653532ec972e9dbe704561c8c09e540cdd0ac5bfda0612d04f082e9d33176` |
-| 4 | `theorem` | [xor_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-zero.md) | 42 | `result-track:8a99013f57a578034cfd9ae8a436fb1d716e91f187ab72c03d72b9c0b9030aca` |
-| 5 | `theorem` | [xor_eq_one_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-eq-one-iff.md) | 44 | `result-track:b5eb29ed0b9491d52fb308baca56584b0d6a06abf9386e1610ec8ad6a8568125` |
-| 6 | `theorem` | [isFixedPt_xor](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/isfixedpt-xor.md) | 47 | `result-track:05392d621f28e44e8e81566611d455b2cb73f9329c7f78a05f772a3d4107e626` |
-| 7 | `theorem` | [xor_trans_xor](../../../../../../ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-trans-xor.md) | 49 | `result-track:813d2286b576a63b123b90f42e279fb89bce2738ea395bd89be43132e1d86313` |
+| 1 | `def` | [xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor.md) | 32 | `declaration-track:a292ba35d98ce10434b107cff0c318a2a0bb6c361e6064f41fd092939593989f` |
+| 2 | `theorem` | [xor_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-symm.md) | 38 | `result-track:0383f3191042a021604a295f71c734a105e7da37525a145ad5302ba82e16bc1b` |
+| 3 | `theorem` | [xor_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-involutive.md) | 40 | `result-track:bdd653532ec972e9dbe704561c8c09e540cdd0ac5bfda0612d04f082e9d33176` |
+| 4 | `theorem` | [xor_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-zero.md) | 42 | `result-track:8a99013f57a578034cfd9ae8a436fb1d716e91f187ab72c03d72b9c0b9030aca` |
+| 5 | `theorem` | [xor_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-eq-one-iff.md) | 44 | `result-track:b5eb29ed0b9491d52fb308baca56584b0d6a06abf9386e1610ec8ad6a8568125` |
+| 6 | `theorem` | [isFixedPt_xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/isfixedpt-xor.md) | 47 | `result-track:05392d621f28e44e8e81566611d455b2cb73f9329c7f78a05f772a3d4107e626` |
+| 7 | `theorem` | [xor_trans_xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/LawfulXorEquivNamespacedPublic.lean/declarations/xor-trans-xor.md) | 49 | `result-track:813d2286b576a63b123b90f42e279fb89bce2738ea395bd89be43132e1d86313` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

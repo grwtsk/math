@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixDiscrepancy.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachProgressionArcBoundary`](../../../../../MeasureAndIntegration/GoldbachProgressionArcBoundary.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixDiscrepancy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachProgressionArcBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachProgressionArcBoundary.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachPrefixArcLoss](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixarcloss.md) | 36 | `declaration-track:41ff37fcde29655bf1d992da9bcdf57ca4c2f69e680c72d49f2f85d59a63342f` |
-| 2 | `theorem` | [goldbachPrefixArcLoss_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixarcloss-nonneg.md) | 39 | `result-track:0f818ce0298486094141dbe0004fb3a9faa69b8b1f8cd2bf219e003c9f06c26c` |
-| 3 | `def` | [goldbachPrefixResidueBudget](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixresiduebudget.md) | 46 | `declaration-track:17291b7173a3622816fd9878944a5c3974bba8e37a03f31e7caf0032a5946070` |
-| 4 | `def` | [GoldbachReducedPrefixSupplier](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachreducedprefixsupplier.md) | 55 | `declaration-track:0f9a66f2305a64e3e8cf1c7dc0809a9bf2025e57d207507308c71a416f429f4e` |
-| 5 | `theorem` | [exists_small_goldbachArcOffset](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/exists-small-goldbacharcoffset.md) | 65 | `result-track:e56534dbd7bc1c3144aec38c31d456cb88fad774a01ac1245658546995598474` |
-| 6 | `theorem` | [norm_goldbachResidueProgressionDiscrepancy_on_arc_of_prefix](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/norm-goldbachresidueprogressiondiscrepancy-on-arc-of-prefix.md) | 91 | `result-track:9b095fe538879c643d138b01e67dba4987889d24615f54f8d85132c58cccd2b0` |
-| 7 | `theorem` | [goldbachPrefixResidueBudget_bounds](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixresiduebudget-bounds.md) | 103 | `result-track:ce0cae58900c59e05545277da68d592cbc0c68ff2739b72e3d063c8f71e9fccd` |
-| 8 | `def` | [goldbachPrefixMajorErrorBudget](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixmajorerrorbudget.md) | 128 | `declaration-track:f95dfd28d2d45ebfb955bcd5f6adecab909a0ff7ae5ca10228c6f16770588a97` |
-| 9 | `theorem` | [goldbachCount_pos_of_prefix_bounds](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachcount-pos-of-prefix-bounds.md) | 134 | `result-track:757575f298ecf0a10a32d123c3b8f214019ea60fd2eddd72719b6729b244b71a` |
-| 10 | `theorem` | [goldbachCount_pos_above_of_prefix_supplier](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachcount-pos-above-of-prefix-supplier.md) | 154 | `result-track:bbed84c855df06aea9784d5e97e519405d420bc5cfeaf93995dce66775f5918e` |
+| 1 | `def` | [goldbachPrefixArcLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixarcloss.md) | 36 | `declaration-track:41ff37fcde29655bf1d992da9bcdf57ca4c2f69e680c72d49f2f85d59a63342f` |
+| 2 | `theorem` | [goldbachPrefixArcLoss_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixarcloss-nonneg.md) | 39 | `result-track:0f818ce0298486094141dbe0004fb3a9faa69b8b1f8cd2bf219e003c9f06c26c` |
+| 3 | `def` | [goldbachPrefixResidueBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixresiduebudget.md) | 46 | `declaration-track:17291b7173a3622816fd9878944a5c3974bba8e37a03f31e7caf0032a5946070` |
+| 4 | `def` | [GoldbachReducedPrefixSupplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachreducedprefixsupplier.md) | 55 | `declaration-track:0f9a66f2305a64e3e8cf1c7dc0809a9bf2025e57d207507308c71a416f429f4e` |
+| 5 | `theorem` | [exists_small_goldbachArcOffset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/exists-small-goldbacharcoffset.md) | 65 | `result-track:e56534dbd7bc1c3144aec38c31d456cb88fad774a01ac1245658546995598474` |
+| 6 | `theorem` | [norm_goldbachResidueProgressionDiscrepancy_on_arc_of_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/norm-goldbachresidueprogressiondiscrepancy-on-arc-of-prefix.md) | 91 | `result-track:9b095fe538879c643d138b01e67dba4987889d24615f54f8d85132c58cccd2b0` |
+| 7 | `theorem` | [goldbachPrefixResidueBudget_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixresiduebudget-bounds.md) | 103 | `result-track:ce0cae58900c59e05545277da68d592cbc0c68ff2739b72e3d063c8f71e9fccd` |
+| 8 | `def` | [goldbachPrefixMajorErrorBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachprefixmajorerrorbudget.md) | 128 | `declaration-track:f95dfd28d2d45ebfb955bcd5f6adecab909a0ff7ae5ca10228c6f16770588a97` |
+| 9 | `theorem` | [goldbachCount_pos_of_prefix_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachcount-pos-of-prefix-bounds.md) | 134 | `result-track:757575f298ecf0a10a32d123c3b8f214019ea60fd2eddd72719b6729b244b71a` |
+| 10 | `theorem` | [goldbachCount_pos_above_of_prefix_supplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/declarations/goldbachcount-pos-above-of-prefix-supplier.md) | 154 | `result-track:bbed84c855df06aea9784d5e97e519405d420bc5cfeaf93995dce66775f5918e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

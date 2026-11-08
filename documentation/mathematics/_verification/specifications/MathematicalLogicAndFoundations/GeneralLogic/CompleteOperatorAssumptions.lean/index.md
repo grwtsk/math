@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositivitySelfAdjointnessData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/declarations/positivityselfadjointnessdata.md) | 36 | `declaration-track:81e443c64fe66fa9dea4557050949a504284cd47d929fdb37a6f2a391bb4ae41` |
-| 2 | `theorem` | [positivity_rules_out_offcritical_resonances](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/declarations/positivity-rules-out-offcritical-resonances.md) | 44 | `result-track:93840e668d92b64aa9ae9fa091b0439988087b16b3f8fd480091ebe06573e61e` |
+| 1 | `structure` | [PositivitySelfAdjointnessData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/declarations/positivityselfadjointnessdata.md) | 36 | `declaration-track:81e443c64fe66fa9dea4557050949a504284cd47d929fdb37a6f2a391bb4ae41` |
+| 2 | `theorem` | [positivity_rules_out_offcritical_resonances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/declarations/positivity-rules-out-offcritical-resonances.md) | 44 | `result-track:93840e668d92b64aa9ae9fa091b0439988087b16b3f8fd480091ebe06573e61e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

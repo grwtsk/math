@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/index.md) · [Full source](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocal_difference](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/reciprocal-difference.md) | 12 | `result-track:9f5ed43de028f6e37cdccbc25e77571f1ba8e0be271ac978f5916f9f3bb6b233` |
-| 2 | `theorem` | [filter_identity](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/filter-identity.md) | 17 | `result-track:46476c64c1bcd10d0c6cecad97b7690d7bec35d8b42c8250c169603c7524e920` |
-| 3 | `theorem` | [exact_return](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/exact-return.md) | 25 | `result-track:87abab451bb47e198631c4333b572ea9c98601773d07f2a3306c5dbe7c15e764` |
-| 4 | `theorem` | [retained_nonnegative](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/retained-nonnegative.md) | 27 | `result-track:2a5d95985ea9e859d7b34bf3af080fdc3f191a91124532bff0d393606aa71027` |
-| 5 | `theorem` | [high_band_pointwise](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/high-band-pointwise.md) | 29 | `result-track:e9c3391fa52194faf99835cc0d429628a0fc515c4a0f76f433ed38b1b3fe8404` |
-| 6 | `theorem` | [boundary_interval_retained](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/boundary-interval-retained.md) | 37 | `result-track:3c9588e3b4da69e7fdb37427f1b7125c7082eb08241c3da99959cf8104962ccd` |
+| 1 | `theorem` | [reciprocal_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/reciprocal-difference.md) | 12 | `result-track:9f5ed43de028f6e37cdccbc25e77571f1ba8e0be271ac978f5916f9f3bb6b233` |
+| 2 | `theorem` | [filter_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/filter-identity.md) | 17 | `result-track:46476c64c1bcd10d0c6cecad97b7690d7bec35d8b42c8250c169603c7524e920` |
+| 3 | `theorem` | [exact_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/exact-return.md) | 25 | `result-track:87abab451bb47e198631c4333b572ea9c98601773d07f2a3306c5dbe7c15e764` |
+| 4 | `theorem` | [retained_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/retained-nonnegative.md) | 27 | `result-track:2a5d95985ea9e859d7b34bf3af080fdc3f191a91124532bff0d393606aa71027` |
+| 5 | `theorem` | [high_band_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/high-band-pointwise.md) | 29 | `result-track:e9c3391fa52194faf99835cc0d429628a0fc515c4a0f76f433ed38b1b3fe8404` |
+| 6 | `theorem` | [boundary_interval_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenAlgebra.lean/declarations/boundary-interval-retained.md) | 37 | `result-track:3c9588e3b4da69e7fdb37427f1b7125c7082eb08241c3da99959cf8104962ccd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

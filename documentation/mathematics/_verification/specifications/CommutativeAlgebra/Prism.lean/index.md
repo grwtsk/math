@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Prism.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Prism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeIdeal](../../../../CommutativeAlgebra/Prism.lean/declarations/primeideal.md) | 27 | `declaration-track:dacf970ce895964b1f401e5fb4a639b155cb01d2d373fcc19a3b5a603481a742` |
-| 2 | `structure` | [AdicCompatibleSequence](../../../../CommutativeAlgebra/Prism.lean/declarations/adiccompatiblesequence.md) | 36 | `declaration-track:c51f13895160d69088e072bf662c5551b72c7282b3be3965027f39e7e16bb876` |
-| 3 | `def` | [ClassicallyAdicComplete](../../../../CommutativeAlgebra/Prism.lean/declarations/classicallyadiccomplete.md) | 48 | `declaration-track:5e63af3c7a28ec5df51b2f80fbb22c59b48c661e3cdf364ea2321e038ff2a50a` |
-| 4 | `def` | [PrincipalEffectiveCartierIdeal](../../../../CommutativeAlgebra/Prism.lean/declarations/principaleffectivecartierideal.md) | 58 | `declaration-track:b120585cd6619b139d627db35d93295465a5f008a454c854d4086b207399936d` |
-| 5 | `def` | [BoundedPrimePowerTorsion](../../../../CommutativeAlgebra/Prism.lean/declarations/boundedprimepowertorsion.md) | 65 | `declaration-track:75bc85986450fc7b4ed4f3da2399c517dbd90259ad0822c25fbaf798bd56b96d` |
-| 6 | `structure` | [BoundedPrismCandidate](../../../../CommutativeAlgebra/Prism.lean/declarations/boundedprismcandidate.md) | 77 | `declaration-track:052adb7bb95941721f6a9993a17a601cf72d37287475615ea5f446b7a14a39bd` |
-| 7 | `theorem` | [distinguished_mem](../../../../CommutativeAlgebra/Prism.lean/declarations/distinguished-mem.md) | 103 | `result-track:13400b08b64743faf46b762388304b4ec23f855231394c8f6a1961c078ee9e1a` |
-| 8 | `theorem` | [distinguished_regular](../../../../CommutativeAlgebra/Prism.lean/declarations/distinguished-regular.md) | 110 | `result-track:091ec26b5460ec7ff6685196d2299950689d226a91c0f152d8222054e683141c` |
+| 1 | `def` | [primeIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/primeideal.md) | 27 | `declaration-track:dacf970ce895964b1f401e5fb4a639b155cb01d2d373fcc19a3b5a603481a742` |
+| 2 | `structure` | [AdicCompatibleSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/adiccompatiblesequence.md) | 36 | `declaration-track:c51f13895160d69088e072bf662c5551b72c7282b3be3965027f39e7e16bb876` |
+| 3 | `def` | [ClassicallyAdicComplete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/classicallyadiccomplete.md) | 48 | `declaration-track:5e63af3c7a28ec5df51b2f80fbb22c59b48c661e3cdf364ea2321e038ff2a50a` |
+| 4 | `def` | [PrincipalEffectiveCartierIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/principaleffectivecartierideal.md) | 58 | `declaration-track:b120585cd6619b139d627db35d93295465a5f008a454c854d4086b207399936d` |
+| 5 | `def` | [BoundedPrimePowerTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/boundedprimepowertorsion.md) | 65 | `declaration-track:75bc85986450fc7b4ed4f3da2399c517dbd90259ad0822c25fbaf798bd56b96d` |
+| 6 | `structure` | [BoundedPrismCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/boundedprismcandidate.md) | 77 | `declaration-track:052adb7bb95941721f6a9993a17a601cf72d37287475615ea5f446b7a14a39bd` |
+| 7 | `theorem` | [distinguished_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/distinguished-mem.md) | 103 | `result-track:13400b08b64743faf46b762388304b4ec23f855231394c8f6a1961c078ee9e1a` |
+| 8 | `theorem` | [distinguished_regular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Prism.lean/declarations/distinguished-regular.md) | 110 | `result-track:091ec26b5460ec7ff6685196d2299950689d226a91c0f152d8222054e683141c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

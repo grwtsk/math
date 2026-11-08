@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MGoal.assumption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/declarations/mgoal-assumption.md) | 18 | `declaration-track:060c4247d1847af5a89f4dcace89c0a4e3cfb9b4ede60ad64af0d0301241e6d4` |
-| 2 | `def` | [MGoal.assumptionPure](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/declarations/mgoal-assumptionpure.md) | 32 | `declaration-track:9d854dd627f7bc88e3ca0145cfffce321c70dc50a8fe8989db97f45598bdcab7` |
-| 3 | `def` | [elabMAssumption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/declarations/elabmassumption.md) | 39 | `declaration-track:8b1b5b9d4402980884f7bcb62ba644263f6ed49e34869bee0c921a7a17615a22` |
+| 1 | `def` | [MGoal.assumption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/declarations/mgoal-assumption.md) | 18 | `declaration-track:060c4247d1847af5a89f4dcace89c0a4e3cfb9b4ede60ad64af0d0301241e6d4` |
+| 2 | `def` | [MGoal.assumptionPure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/declarations/mgoal-assumptionpure.md) | 32 | `declaration-track:9d854dd627f7bc88e3ca0145cfffce321c70dc50a8fe8989db97f45598bdcab7` |
+| 3 | `def` | [elabMAssumption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicMGoal.lean/declarations/elabmassumption.md) | 39 | `declaration-track:8b1b5b9d4402980884f7bcb62ba644263f6ed49e34869bee0c921a7a17615a22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

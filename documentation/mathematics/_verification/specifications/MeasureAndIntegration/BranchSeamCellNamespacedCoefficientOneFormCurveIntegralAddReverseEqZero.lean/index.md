@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientOneForm](../../../../MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/coefficientoneform.md) | 41 | `declaration-track:5e492ccdb7d281102cf7f454f2d9ad4b3933b0d5266efeaab2fdcaeb571cc93a` |
-| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](../../../../MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 45 | `result-track:63df195ce38f233f4946cf2acce33d88c1e2e582f12b5c08abec52acfd5c02de` |
-| 3 | `theorem` | [four_seam_cells_cancel](../../../../MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/four-seam-cells-cancel.md) | 87 | `result-track:8a98fadc34fefb08c00b28435756cf15dfd906ae3789b2645c2a07ff1a37909e` |
-| 4 | `theorem` | [coefficientOneForm_curveIntegral_segment](../../../../MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/coefficientoneform-curveintegral-segment.md) | 159 | `result-track:f0bbf9c92fe7389a7954d5ffed179ae5a96dbd0b8f4bc5326330cee53a58f671` |
-| 5 | `theorem` | [coefficientOneForm_curveIntegral_add_reverse_eq_zero](../../../../MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/coefficientoneform-curveintegral-add-reverse-eq-zero.md) | 169 | `result-track:bbda39baebc2401900a07dff17a6879a52d9e1090f13190777bf0e5ef2219d79` |
+| 1 | `def` | [coefficientOneForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/coefficientoneform.md) | 41 | `declaration-track:5e492ccdb7d281102cf7f454f2d9ad4b3933b0d5266efeaab2fdcaeb571cc93a` |
+| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 45 | `result-track:63df195ce38f233f4946cf2acce33d88c1e2e582f12b5c08abec52acfd5c02de` |
+| 3 | `theorem` | [four_seam_cells_cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/four-seam-cells-cancel.md) | 87 | `result-track:8a98fadc34fefb08c00b28435756cf15dfd906ae3789b2645c2a07ff1a37909e` |
+| 4 | `theorem` | [coefficientOneForm_curveIntegral_segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/coefficientoneform-curveintegral-segment.md) | 159 | `result-track:f0bbf9c92fe7389a7954d5ffed179ae5a96dbd0b8f4bc5326330cee53a58f671` |
+| 5 | `theorem` | [coefficientOneForm_curveIntegral_add_reverse_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedCoefficientOneFormCurveIntegralAddReverseEqZero.lean/declarations/coefficientoneform-curveintegral-add-reverse-eq-zero.md) | 169 | `result-track:bbda39baebc2401900a07dff17a6879a52d9e1090f13190777bf0e5ef2219d79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

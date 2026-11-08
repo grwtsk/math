@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_count_eq_dim_sub_rank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/zero-count-eq-dim-sub-rank.md) | 23 | `result-track:260524b1628ec6f01259fbee06d9398ad23c23e0d31f5277bdc023612eb9e182` |
-| 2 | `theorem` | [rank_congruence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/rank-congruence.md) | 29 | `result-track:2c290c5109bc7430e3d1d49583b915ff2c60ad9cbdbbc14480161b7bce99ca41` |
-| 3 | `theorem` | [zero_count_congruence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/zero-count-congruence.md) | 35 | `result-track:1807301d2e03d7e634359bea0a29a0b274e2aa172246f79faa275a33975da612` |
-| 4 | `theorem` | [zero_count_constructed_congruence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/zero-count-constructed-congruence.md) | 42 | `result-track:62ce6d3b59904ae60181fc08c8f6a3568b83e36a2ffda895c319f18cf3bc3ed3` |
+| 1 | `theorem` | [zero_count_eq_dim_sub_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/zero-count-eq-dim-sub-rank.md) | 23 | `result-track:260524b1628ec6f01259fbee06d9398ad23c23e0d31f5277bdc023612eb9e182` |
+| 2 | `theorem` | [rank_congruence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/rank-congruence.md) | 29 | `result-track:2c290c5109bc7430e3d1d49583b915ff2c60ad9cbdbbc14480161b7bce99ca41` |
+| 3 | `theorem` | [zero_count_congruence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/zero-count-congruence.md) | 35 | `result-track:1807301d2e03d7e634359bea0a29a0b274e2aa172246f79faa275a33975da612` |
+| 4 | `theorem` | [zero_count_constructed_congruence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroMultiplicityNamespaced.lean/declarations/zero-count-constructed-congruence.md) | 42 | `result-track:62ce6d3b59904ae60181fc08c8f6a3568b83e36a2ffda895c319f18cf3bc3ed3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

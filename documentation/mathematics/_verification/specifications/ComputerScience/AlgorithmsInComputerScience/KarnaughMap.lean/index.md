@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [KarnaughMap.KMap](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-kmap.md) | 10 | `declaration-track:28203a1be315c46f4d88c3b200cca207cb136e888414b6d6f6dde8a902b7b77c` |
-| 2 | `def` | [KarnaughMap.rowBit](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-rowbit.md) | 14 | `declaration-track:4aa2bd175c7855b930b315b25ceb1e62bb969fed6a894a96010138b087f8946f` |
-| 3 | `def` | [KarnaughMap.colBit](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-colbit.md) | 22 | `declaration-track:4483481c7847d83d69ca52197c17dd2e415f1b676cc3f655dd875f69ec04372e` |
-| 4 | `def` | [KarnaughMap.input](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-input.md) | 35 | `declaration-track:5d4da28749b8e81fbb78963910ccad80f778512912672cfbe5c5cb9d8f8022ae` |
-| 5 | `def` | [KarnaughMap.fromTruthTable](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-fromtruthtable.md) | 47 | `declaration-track:175bda768059e3a528cab92be86844c59b8610f6c3169fc1a9ea7d8312b05d08` |
-| 6 | `def` | [KarnaughMap.rowAxis](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-rowaxis.md) | 53 | `declaration-track:8b81d0e96a3b1db93e9e7447ec110d14dfaaf6adf5c33212f391f3bcedfd1bfe` |
-| 7 | `def` | [KarnaughMap.colAxis](../../../../../ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-colaxis.md) | 58 | `declaration-track:2ea9112db397c5ad2c1ee6ae28884e717ef4d822c8a8914b57946cc292fc0642` |
+| 1 | `abbrev` | [KarnaughMap.KMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-kmap.md) | 10 | `declaration-track:28203a1be315c46f4d88c3b200cca207cb136e888414b6d6f6dde8a902b7b77c` |
+| 2 | `def` | [KarnaughMap.rowBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-rowbit.md) | 14 | `declaration-track:4aa2bd175c7855b930b315b25ceb1e62bb969fed6a894a96010138b087f8946f` |
+| 3 | `def` | [KarnaughMap.colBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-colbit.md) | 22 | `declaration-track:4483481c7847d83d69ca52197c17dd2e415f1b676cc3f655dd875f69ec04372e` |
+| 4 | `def` | [KarnaughMap.input](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-input.md) | 35 | `declaration-track:5d4da28749b8e81fbb78963910ccad80f778512912672cfbe5c5cb9d8f8022ae` |
+| 5 | `def` | [KarnaughMap.fromTruthTable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-fromtruthtable.md) | 47 | `declaration-track:175bda768059e3a528cab92be86844c59b8610f6c3169fc1a9ea7d8312b05d08` |
+| 6 | `def` | [KarnaughMap.rowAxis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-rowaxis.md) | 53 | `declaration-track:8b81d0e96a3b1db93e9e7447ec110d14dfaaf6adf5c33212f391f3bcedfd1bfe` |
+| 7 | `def` | [KarnaughMap.colAxis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KarnaughMap.lean/declarations/karnaughmap-colaxis.md) | 58 | `declaration-track:2ea9112db397c5ad2c1ee6ae28884e717ef4d822c8a8914b57946cc292fc0642` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

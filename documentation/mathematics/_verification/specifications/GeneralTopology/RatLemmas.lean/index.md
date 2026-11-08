@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RatLemmas.lean/index.md) · [Full source](../../../../GeneralTopology/RatLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [interior_compact_eq_empty](../../../../GeneralTopology/RatLemmas.lean/declarations/interior-compact-eq-empty.md) | 41 | `result-track:a784ae558a463e713c067ec342c02a1dbc76bdc2c90fdce4b79910a49b5a19df` |
-| 2 | `theorem` | [dense_compl_compact](../../../../GeneralTopology/RatLemmas.lean/declarations/dense-compl-compact.md) | 44 | `result-track:702dabc3ffb4f4b3436d8095bf39b36540f8e6923cb0a16f3a33eeed359be42e` |
-| 3 | `instance` | [cocompact_inf_nhds_neBot](../../../../GeneralTopology/RatLemmas.lean/declarations/cocompact-inf-nhds-nebot.md) | 47 | `declaration-track:51a47a6a5fcfee997ded4731e9b358cff93a773b65e1de7456d0ed7a4170ec23` |
-| 4 | `theorem` | [not_countably_generated_cocompact](../../../../GeneralTopology/RatLemmas.lean/declarations/not-countably-generated-cocompact.md) | 52 | `result-track:497c28b8553d5e9fbd837adf800ced965e34eed709d366dbe7aa3a768748ae5b` |
-| 5 | `theorem` | [not_countably_generated_nhds_infty_opc](../../../../GeneralTopology/RatLemmas.lean/declarations/not-countably-generated-nhds-infty-opc.md) | 60 | `result-track:e5089f00b6d001c8dc6605470372a060e4a67f6090e6cac255967a6fa1d3139e` |
-| 6 | `theorem` | [not_firstCountableTopology_opc](../../../../GeneralTopology/RatLemmas.lean/declarations/not-firstcountabletopology-opc.md) | 66 | `result-track:db8c93d97085aa849d078d0836d39ed99194d41d158bf48fb0d47842609ecd6b` |
-| 7 | `theorem` | [not_secondCountableTopology_opc](../../../../GeneralTopology/RatLemmas.lean/declarations/not-secondcountabletopology-opc.md) | 70 | `result-track:05813faa64f3c189d8785b11a34791abfecf5fb5bd0db754900b86e440b601fd` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/RatLemmas.lean/declarations/instance.md) | 74 | `declaration-track:33feee265fa556f42ec2e96086f0b223bdc8b9cad841b1fbc9a02dd4b7117ceb` |
+| 1 | `theorem` | [interior_compact_eq_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/interior-compact-eq-empty.md) | 41 | `result-track:a784ae558a463e713c067ec342c02a1dbc76bdc2c90fdce4b79910a49b5a19df` |
+| 2 | `theorem` | [dense_compl_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/dense-compl-compact.md) | 44 | `result-track:702dabc3ffb4f4b3436d8095bf39b36540f8e6923cb0a16f3a33eeed359be42e` |
+| 3 | `instance` | [cocompact_inf_nhds_neBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/cocompact-inf-nhds-nebot.md) | 47 | `declaration-track:51a47a6a5fcfee997ded4731e9b358cff93a773b65e1de7456d0ed7a4170ec23` |
+| 4 | `theorem` | [not_countably_generated_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/not-countably-generated-cocompact.md) | 52 | `result-track:497c28b8553d5e9fbd837adf800ced965e34eed709d366dbe7aa3a768748ae5b` |
+| 5 | `theorem` | [not_countably_generated_nhds_infty_opc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/not-countably-generated-nhds-infty-opc.md) | 60 | `result-track:e5089f00b6d001c8dc6605470372a060e4a67f6090e6cac255967a6fa1d3139e` |
+| 6 | `theorem` | [not_firstCountableTopology_opc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/not-firstcountabletopology-opc.md) | 66 | `result-track:db8c93d97085aa849d078d0836d39ed99194d41d158bf48fb0d47842609ecd6b` |
+| 7 | `theorem` | [not_secondCountableTopology_opc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/not-secondcountabletopology-opc.md) | 70 | `result-track:05813faa64f3c189d8785b11a34791abfecf5fb5bd0db754900b86e440b601fd` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RatLemmas.lean/declarations/instance.md) | 74 | `declaration-track:33feee265fa556f42ec2e96086f0b223bdc8b9cad841b1fbc9a02dd4b7117ceb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

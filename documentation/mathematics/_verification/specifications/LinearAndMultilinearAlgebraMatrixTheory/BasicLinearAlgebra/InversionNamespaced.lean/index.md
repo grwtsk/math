@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invertibleιOfInvertible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invertible-ofinvertible.md) | 30 | `declaration-track:5838ad41ee9b06c80757fc0108bcce1e5d354982b90835073b11d1501999c8f4` |
-| 2 | `theorem` | [invOf_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invof.md) | 38 | `result-track:c504669e3542ccd5085770709fd3310ceef3034e024f85e416974584ffe436ec` |
-| 3 | `theorem` | [isUnit_ι_of_isUnit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/isunit-of-isunit.md) | 43 | `result-track:0697db477af1f8c0876591b55856bd04506cd27e2fffd9c9f2acee23e1b772af` |
-| 4 | `theorem` | [ι_mul_ι_mul_invOf_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/mul-mul-invof.md) | 49 | `result-track:793d9a01b7311dcccd22c3aa6b3c097dfe849d80a72dbf874de35808e5f62a60` |
-| 5 | `theorem` | [invOf_ι_mul_ι_mul_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invof-mul-mul.md) | 55 | `result-track:e767e8bcf956948b79d0dd835ad458f41ca54f73d254d667dd8310157f37b3bd` |
-| 6 | `def` | [invertibleOfInvertibleι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invertibleofinvertible.md) | 64 | `declaration-track:9f294bdc626db2142099501c024358b4a34a2692d3ab8ff7a302e36bacf8e4c6` |
-| 7 | `theorem` | [isUnit_of_isUnit_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/isunit-of-isunit-source-edition-2.md) | 69 | `result-track:b4751df25a77c95842e92abb75e29039bed34eab35b38d83676aec4690cf6940` |
-| 8 | `theorem` | [isUnit_ι_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/isunit-iff.md) | 74 | `result-track:851d13fe5ad3040dd8d479fc879ab22fb5370ff57b77fc1beb4aa0b1e7c7a4e3` |
+| 1 | `def` | [invertibleιOfInvertible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invertible-ofinvertible.md) | 30 | `declaration-track:5838ad41ee9b06c80757fc0108bcce1e5d354982b90835073b11d1501999c8f4` |
+| 2 | `theorem` | [invOf_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invof.md) | 38 | `result-track:c504669e3542ccd5085770709fd3310ceef3034e024f85e416974584ffe436ec` |
+| 3 | `theorem` | [isUnit_ι_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/isunit-of-isunit.md) | 43 | `result-track:0697db477af1f8c0876591b55856bd04506cd27e2fffd9c9f2acee23e1b772af` |
+| 4 | `theorem` | [ι_mul_ι_mul_invOf_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/mul-mul-invof.md) | 49 | `result-track:793d9a01b7311dcccd22c3aa6b3c097dfe849d80a72dbf874de35808e5f62a60` |
+| 5 | `theorem` | [invOf_ι_mul_ι_mul_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invof-mul-mul.md) | 55 | `result-track:e767e8bcf956948b79d0dd835ad458f41ca54f73d254d667dd8310157f37b3bd` |
+| 6 | `def` | [invertibleOfInvertibleι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/invertibleofinvertible.md) | 64 | `declaration-track:9f294bdc626db2142099501c024358b4a34a2692d3ab8ff7a302e36bacf8e4c6` |
+| 7 | `theorem` | [isUnit_of_isUnit_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/isunit-of-isunit-source-edition-2.md) | 69 | `result-track:b4751df25a77c95842e92abb75e29039bed34eab35b38d83676aec4690cf6940` |
+| 8 | `theorem` | [isUnit_ι_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InversionNamespaced.lean/declarations/isunit-iff.md) | 74 | `result-track:851d13fe5ad3040dd8d479fc879ab22fb5370ff57b77fc1beb4aa0b1e7c7a4e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

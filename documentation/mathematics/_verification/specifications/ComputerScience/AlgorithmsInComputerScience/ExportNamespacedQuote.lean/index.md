@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quote](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/quote.md) | 15 | `declaration-track:3050bf040579149edabaed6bb2713bd17e8c01f02611da4429bb1ec81d3d07b9` |
-| 2 | `def` | [stringArray](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/stringarray.md) | 18 | `declaration-track:d7c5afe89b058a3c04bd4b0093ef120fec41049b57512753a2424cf16847989e` |
-| 3 | `def` | [edgeJson](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/edgejson.md) | 21 | `declaration-track:d0cace761c3af9e54be4daa53868e7b46033c88f5007dc890fc396507772e697` |
-| 4 | `def` | [edgeArray](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/edgearray.md) | 24 | `declaration-track:16e69dc4ff5d02e6018c2250237b9d111aa8a89be5ee1f78c169ae354104373a` |
-| 5 | `def` | [projectJson](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/projectjson.md) | 27 | `declaration-track:9e0058450d671a986885b057842438191124bfaf4ac38a2a43832f69c44def90` |
-| 6 | `def` | [formalManifestJson](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/formalmanifestjson.md) | 37 | `declaration-track:75a9c1ea4a7f7ef7e6d982245b9858ac89d5bb55b575e5a555ce97978f3fedd4` |
-| 7 | `theorem` | [emitted_project_count_is_kernel_checked](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/emitted-project-count-is-kernel-checked.md) | 54 | `result-track:ca777059e421853ec4bec431912732f74ca55cc21f3364fc3c4a5931e15f28f2` |
-| 8 | `theorem` | [emitted_static_invariants_are_kernel_checked](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/emitted-static-invariants-are-kernel-checked.md) | 58 | `result-track:eb7bc43cae7b29c561427786bc0cd7c4e5f5158a260cae6417b366dfd039db58` |
+| 1 | `def` | [quote](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/quote.md) | 15 | `declaration-track:3050bf040579149edabaed6bb2713bd17e8c01f02611da4429bb1ec81d3d07b9` |
+| 2 | `def` | [stringArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/stringarray.md) | 18 | `declaration-track:d7c5afe89b058a3c04bd4b0093ef120fec41049b57512753a2424cf16847989e` |
+| 3 | `def` | [edgeJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/edgejson.md) | 21 | `declaration-track:d0cace761c3af9e54be4daa53868e7b46033c88f5007dc890fc396507772e697` |
+| 4 | `def` | [edgeArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/edgearray.md) | 24 | `declaration-track:16e69dc4ff5d02e6018c2250237b9d111aa8a89be5ee1f78c169ae354104373a` |
+| 5 | `def` | [projectJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/projectjson.md) | 27 | `declaration-track:9e0058450d671a986885b057842438191124bfaf4ac38a2a43832f69c44def90` |
+| 6 | `def` | [formalManifestJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/formalmanifestjson.md) | 37 | `declaration-track:75a9c1ea4a7f7ef7e6d982245b9858ac89d5bb55b575e5a555ce97978f3fedd4` |
+| 7 | `theorem` | [emitted_project_count_is_kernel_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/emitted-project-count-is-kernel-checked.md) | 54 | `result-track:ca777059e421853ec4bec431912732f74ca55cc21f3364fc3c4a5931e15f28f2` |
+| 8 | `theorem` | [emitted_static_invariants_are_kernel_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportNamespacedQuote.lean/declarations/emitted-static-invariants-are-kernel-checked.md) | 58 | `result-track:eb7bc43cae7b29c561427786bc0cd7c4e5f5158a260cae6417b366dfd039db58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

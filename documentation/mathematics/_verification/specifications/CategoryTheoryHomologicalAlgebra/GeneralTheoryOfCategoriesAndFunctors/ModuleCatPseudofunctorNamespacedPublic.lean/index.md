@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CommRingCat.moduleCatRestrictScalarsPseudofunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/declarations/commringcat-modulecatrestrictscalarspseudofunctor.md) | 46 | `declaration-track:87b1c3620d4eddb924a9714751b6447672cb9f059c426854a73fedd0c7be5b8e` |
-| 2 | `def` | [RingCat.moduleCatRestrictScalarsPseudofunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/declarations/ringcat-modulecatrestrictscalarspseudofunctor.md) | 57 | `declaration-track:008c94e79623c874db27056907ad0291bfe267a8a9cb4013340cc44272537f58` |
-| 3 | `def` | [CommRingCat.moduleCatExtendScalarsPseudofunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/declarations/commringcat-modulecatextendscalarspseudofunctor.md) | 69 | `declaration-track:0044d10595c6f24bb3ce5f78923fc01904d3e648b2c0ab0e6f9afe648710d7bc` |
+| 1 | `def` | [CommRingCat.moduleCatRestrictScalarsPseudofunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/declarations/commringcat-modulecatrestrictscalarspseudofunctor.md) | 46 | `declaration-track:87b1c3620d4eddb924a9714751b6447672cb9f059c426854a73fedd0c7be5b8e` |
+| 2 | `def` | [RingCat.moduleCatRestrictScalarsPseudofunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/declarations/ringcat-modulecatrestrictscalarspseudofunctor.md) | 57 | `declaration-track:008c94e79623c874db27056907ad0291bfe267a8a9cb4013340cc44272537f58` |
+| 3 | `def` | [CommRingCat.moduleCatExtendScalarsPseudofunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatPseudofunctorNamespacedPublic.lean/declarations/commringcat-modulecatextendscalarspseudofunctor.md) | 69 | `declaration-track:0044d10595c6f24bb3ce5f78923fc01904d3e648b2c0ab0e6f9afe648710d7bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

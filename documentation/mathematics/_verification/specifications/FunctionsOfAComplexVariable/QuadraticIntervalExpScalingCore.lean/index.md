@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/QuadraticIntervalExpScalingCore.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/QuadraticIntervalExpScalingCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalExpScalingCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalExpScalingCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.QuadraticIntervalRangeReductionCore`](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRangeReductionCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.ComplexExpScaling`](../../../../RealFunctions/ComplexExpScaling.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.IntervalMellinScaledExponential`](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Interfaces.QuadraticIntervalRangeReductionCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRangeReductionCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ComplexExpScaling`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexExpScaling.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinScaledExponential`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_cell_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/finite-cell-upper.md) | 25 | `result-track:942fd342eb715cdcf0e3fc6b6b8497298fbbc4ff60f1a94705f1924e6c8a8eb3` |
-| 2 | `theorem` | [actual_integer_upper_implies_all_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/actual-integer-upper-implies-all-real.md) | 39 | `result-track:451f81fd2e065ee2fd3a9d29158265955aa156266e819361c71bc1151f310996` |
-| 3 | `theorem` | [record_summable_iff_all_real_prefixes_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/record-summable-iff-all-real-prefixes-bounded.md) | 61 | `result-track:0646689f3d535ae1d09e2a13edb9fe2395dfea38c54ec957ba5a5993474b7273` |
-| 4 | `theorem` | [actual_real_prefix_le_total_record_height](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/actual-real-prefix-le-total-record-height.md) | 73 | `result-track:c45611d52b8c8643d575d209cbaf3e87bf584084b998d51788abb3e84c1f43d0` |
-| 5 | `theorem` | [total_height_is_least_real_prefix_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/total-height-is-least-real-prefix-bound.md) | 83 | `result-track:f1780271c8ac24c45e88d57efffea03ce86d475c7672127d4f05b9b758a7cf39` |
+| 1 | `theorem` | [finite_cell_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/finite-cell-upper.md) | 25 | `result-track:942fd342eb715cdcf0e3fc6b6b8497298fbbc4ff60f1a94705f1924e6c8a8eb3` |
+| 2 | `theorem` | [actual_integer_upper_implies_all_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/actual-integer-upper-implies-all-real.md) | 39 | `result-track:451f81fd2e065ee2fd3a9d29158265955aa156266e819361c71bc1151f310996` |
+| 3 | `theorem` | [record_summable_iff_all_real_prefixes_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/record-summable-iff-all-real-prefixes-bounded.md) | 61 | `result-track:0646689f3d535ae1d09e2a13edb9fe2395dfea38c54ec957ba5a5993474b7273` |
+| 4 | `theorem` | [actual_real_prefix_le_total_record_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/actual-real-prefix-le-total-record-height.md) | 73 | `result-track:c45611d52b8c8643d575d209cbaf3e87bf584084b998d51788abb3e84c1f43d0` |
+| 5 | `theorem` | [total_height_is_least_real_prefix_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EveryRealNativeCellPreservesItsTwoEndpointUpperBounds.lean/declarations/total-height-is-least-real-prefix-bound.md) | 83 | `result-track:f1780271c8ac24c45e88d57efffea03ce86d475c7672127d4f05b9b758a7cf39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

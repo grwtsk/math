@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SpectralTopology.lean/index.md) · [Full source](../../../../GeneralTopology/SpectralTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zeroIndicator](../../../../GeneralTopology/SpectralTopology.lean/declarations/zeroindicator.md) | 18 | `declaration-track:cf580fcb375694bc947dd129a3fd69293f10b61751678d40d6708e46e4a02af2` |
-| 2 | `theorem` | [zeroIndicator_eq_zero_iff](../../../../GeneralTopology/SpectralTopology.lean/declarations/zeroindicator-eq-zero-iff.md) | 24 | `result-track:b226a1fc1f7964a2f249998ed2fad0fd05710a0cb7c68c74716ea39dc851ede7` |
-| 3 | `theorem` | [every_set_is_zero_locus](../../../../GeneralTopology/SpectralTopology.lean/declarations/every-set-is-zero-locus.md) | 31 | `result-track:55dfa7988904a3b98105a2286c06abc436c61e4c8c8974dcb9f198941909c9bf` |
-| 4 | `def` | [finiteSpectralTopology](../../../../GeneralTopology/SpectralTopology.lean/declarations/finitespectraltopology.md) | 37 | `declaration-track:05c6c6fb1770f86eb3694c96b8efb715302293ea5324f5d5a29952a8275a097b` |
-| 5 | `theorem` | [finiteSpectralTopology_isOpen](../../../../GeneralTopology/SpectralTopology.lean/declarations/finitespectraltopology-isopen.md) | 49 | `result-track:6bfc14289334fef750d79d31e99ceb9d25221248c0068877a7d2f11b0e7adbd4` |
-| 6 | `theorem` | [finiteSpectralTopology_isClosed](../../../../GeneralTopology/SpectralTopology.lean/declarations/finitespectraltopology-isclosed.md) | 55 | `result-track:1fda45c0a3f6fd5c3820a3f11e6663bea6339a55901d2f84b48c6701c08b7c4e` |
-| 7 | `theorem` | [singleton_clopen](../../../../GeneralTopology/SpectralTopology.lean/declarations/singleton-clopen.md) | 62 | `result-track:c25189bd93b10304ecaabf6fac4c145a0f3736d61d66513ab55825f0dee43ba2` |
-| 8 | `theorem` | [full_function_determining_sample_eq_univ](../../../../GeneralTopology/SpectralTopology.lean/declarations/full-function-determining-sample-eq-univ.md) | 69 | `result-track:4f4d71c392983a8844db264949414d928dd3ff3c3b6a2f9e2849eedf8a1489ee` |
+| 1 | `def` | [zeroIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/zeroindicator.md) | 18 | `declaration-track:cf580fcb375694bc947dd129a3fd69293f10b61751678d40d6708e46e4a02af2` |
+| 2 | `theorem` | [zeroIndicator_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/zeroindicator-eq-zero-iff.md) | 24 | `result-track:b226a1fc1f7964a2f249998ed2fad0fd05710a0cb7c68c74716ea39dc851ede7` |
+| 3 | `theorem` | [every_set_is_zero_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/every-set-is-zero-locus.md) | 31 | `result-track:55dfa7988904a3b98105a2286c06abc436c61e4c8c8974dcb9f198941909c9bf` |
+| 4 | `def` | [finiteSpectralTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/finitespectraltopology.md) | 37 | `declaration-track:05c6c6fb1770f86eb3694c96b8efb715302293ea5324f5d5a29952a8275a097b` |
+| 5 | `theorem` | [finiteSpectralTopology_isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/finitespectraltopology-isopen.md) | 49 | `result-track:6bfc14289334fef750d79d31e99ceb9d25221248c0068877a7d2f11b0e7adbd4` |
+| 6 | `theorem` | [finiteSpectralTopology_isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/finitespectraltopology-isclosed.md) | 55 | `result-track:1fda45c0a3f6fd5c3820a3f11e6663bea6339a55901d2f84b48c6701c08b7c4e` |
+| 7 | `theorem` | [singleton_clopen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/singleton-clopen.md) | 62 | `result-track:c25189bd93b10304ecaabf6fac4c145a0f3736d61d66513ab55825f0dee43ba2` |
+| 8 | `theorem` | [full_function_determining_sample_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralTopology.lean/declarations/full-function-determining-sample-eq-univ.md) | 69 | `result-track:4f4d71c392983a8844db264949414d928dd3ff3c3b6a2f9e2849eedf8a1489ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

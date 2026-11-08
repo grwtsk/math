@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.AnchoredLocalJensen`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AnchoredLocalJensen.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.AnchoredLocalJensen`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AnchoredLocalJensen.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.Positivity` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.GCongr` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [disk_geometry](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/disk-geometry.md) | 30 | `result-track:a01c1879af17b17d5796dd816e4de9164371d8101054eef6be5029bcb0736122` |
-| 2 | `theorem` | [norm_inverse_sub_one_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/norm-inverse-sub-one-le.md) | 64 | `result-track:e88028905cdf170fca4beaec87b74fab995952db8a8fd422760b2fa1e9f6dfc3` |
-| 3 | `theorem` | [scalar_cubic_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/scalar-cubic-budget.md) | 75 | `result-track:1851c3027b2e4c18ec9cc66c928ccdd697171ef4ada1f4c0db41213fad78cdfa` |
-| 4 | `theorem` | [norm_le_cube_of_cubic_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/norm-le-cube-of-cubic-identity.md) | 85 | `result-track:0251789779a1d423381215c78ceb865d73ee7d574e9eca21d84fbe5caef01243` |
+| 1 | `theorem` | [disk_geometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/disk-geometry.md) | 30 | `result-track:a01c1879af17b17d5796dd816e4de9164371d8101054eef6be5029bcb0736122` |
+| 2 | `theorem` | [norm_inverse_sub_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/norm-inverse-sub-one-le.md) | 64 | `result-track:e88028905cdf170fca4beaec87b74fab995952db8a8fd422760b2fa1e9f6dfc3` |
+| 3 | `theorem` | [scalar_cubic_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/scalar-cubic-budget.md) | 75 | `result-track:1851c3027b2e4c18ec9cc66c928ccdd697171ef4ada1f4c0db41213fad78cdfa` |
+| 4 | `theorem` | [norm_le_cube_of_cubic_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/declarations/norm-le-cube-of-cubic-identity.md) | 85 | `result-track:0251789779a1d423381215c78ceb865d73ee7d574e9eca21d84fbe5caef01243` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/index.md) · [Full source](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Vertex](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/vertex.md) | 36 | `declaration-track:81d1ee8fb091d317a2c4744b80555e4403fe0f19722bdacb58850a5b613b939d` |
-| 2 | `structure` | [HorizontalEdge](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/horizontaledge.md) | 42 | `declaration-track:4cb9f9ae67e86965367e09543851ef59191296a437384b5dcfa55ab1882ed346` |
-| 3 | `structure` | [VerticalEdge](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/verticaledge.md) | 48 | `declaration-track:959acfcbe833d5d80b0527e2d742c2f7e16806297d7e4f77513fcd8f1f4d8e38` |
-| 4 | `def` | [horizontalEndpoints](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/horizontalendpoints.md) | 54 | `declaration-track:71b1c7b39f851446638b47c301c6eedb87b0ada6224fa1ae543911da76c1bba2` |
-| 5 | `def` | [verticalEndpoints](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/verticalendpoints.md) | 61 | `declaration-track:b8445288872053ff44a5d8bc005b7ae76503d8d6db73899a487ceca383e9c95d` |
-| 6 | `structure` | [SquareBoundary](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/squareboundary.md) | 68 | `declaration-track:77164b724d529dad080e0b7c14ddf395e00f4d4df8851a12ebdfdbf7686a4b62` |
-| 7 | `def` | [squareBoundary](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/squareboundary-source-edition-2.md) | 76 | `declaration-track:8c779988769e700e39e47d40fa242ac2a45ee7bb16fe08549c9ac3a5fc9ef931` |
-| 8 | `inductive` | [Cell](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/cell.md) | 87 | `declaration-track:73b5fa8910068361a4f2c7f724799b9dcb603045d3fa90a723cea42b2256aba0` |
-| 9 | `def` | [Cell.dimension](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/cell-dimension.md) | 95 | `declaration-track:25748877f0c3cf245a68fb47d3411a5675ac4b635ee43a37a522620a29c5676e` |
+| 1 | `structure` | [Vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/vertex.md) | 36 | `declaration-track:81d1ee8fb091d317a2c4744b80555e4403fe0f19722bdacb58850a5b613b939d` |
+| 2 | `structure` | [HorizontalEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/horizontaledge.md) | 42 | `declaration-track:4cb9f9ae67e86965367e09543851ef59191296a437384b5dcfa55ab1882ed346` |
+| 3 | `structure` | [VerticalEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/verticaledge.md) | 48 | `declaration-track:959acfcbe833d5d80b0527e2d742c2f7e16806297d7e4f77513fcd8f1f4d8e38` |
+| 4 | `def` | [horizontalEndpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/horizontalendpoints.md) | 54 | `declaration-track:71b1c7b39f851446638b47c301c6eedb87b0ada6224fa1ae543911da76c1bba2` |
+| 5 | `def` | [verticalEndpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/verticalendpoints.md) | 61 | `declaration-track:b8445288872053ff44a5d8bc005b7ae76503d8d6db73899a487ceca383e9c95d` |
+| 6 | `structure` | [SquareBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/squareboundary.md) | 68 | `declaration-track:77164b724d529dad080e0b7c14ddf395e00f4d4df8851a12ebdfdbf7686a4b62` |
+| 7 | `def` | [squareBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/squareboundary-source-edition-2.md) | 76 | `declaration-track:8c779988769e700e39e47d40fa242ac2a45ee7bb16fe08549c9ac3a5fc9ef931` |
+| 8 | `inductive` | [Cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/cell.md) | 87 | `declaration-track:73b5fa8910068361a4f2c7f724799b9dcb603045d3fa90a723cea42b2256aba0` |
+| 9 | `def` | [Cell.dimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/declarations/cell-dimension.md) | 95 | `declaration-track:25748877f0c3cf245a68fb47d3411a5675ac4b635ee43a37a522620a29c5676e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

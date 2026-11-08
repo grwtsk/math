@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/NeighborhoodProof.lean/index.md) · [Full source](../../../../GeneralTopology/NeighborhoodProof.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProof.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProof.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuous_thetaPhi_signedJetDet_test](../../../../GeneralTopology/NeighborhoodProof.lean/declarations/continuous-thetaphi-signedjetdet-test.md) | 10 | `result-track:a86d8706763036dee997251119102ed36cd98adb38bc9163ea153be7262046a2` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/NeighborhoodProof.lean/declarations/example.md) | 19 | `declaration-track:bde9da2bc20de4e8c41548600f0b3cf3886f8646ae3476ceec0f17100417bbb3` |
+| 1 | `theorem` | [continuous_thetaPhi_signedJetDet_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProof.lean/declarations/continuous-thetaphi-signedjetdet-test.md) | 10 | `result-track:a86d8706763036dee997251119102ed36cd98adb38bc9163ea153be7262046a2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProof.lean/declarations/example.md) | 19 | `declaration-track:bde9da2bc20de4e8c41548600f0b3cf3886f8646ae3476ceec0f17100417bbb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

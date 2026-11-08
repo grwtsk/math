@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GzGpChiNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GzGpChiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGpChiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGpChiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [EFrhs_eq_GpChi](../../../../MeasureAndIntegration/GzGpChiNamespaced.lean/declarations/efrhs-eq-gpchi.md) | 39 | `result-track:99ab752072c205aa0ca2b6c517a38421f00db34833bc34cab98edecf8c4d88f8` |
-| 2 | `theorem` | [ZeroConfig.Gz_eq_GpChi](../../../../MeasureAndIntegration/GzGpChiNamespaced.lean/declarations/zeroconfig-gz-eq-gpchi.md) | 55 | `result-track:58270bd17a4ab3cd0df5266903fc9e415ceef82747197768e6f84de433e57ee0` |
-| 3 | `theorem` | [ZeroConfig.summable_Gsummand_chi](../../../../MeasureAndIntegration/GzGpChiNamespaced.lean/declarations/zeroconfig-summable-gsummand-chi.md) | 66 | `result-track:84509afb29e627744f34d764370763b7aaeeed01e6b71843d61484e9251d57cd` |
+| 1 | `lemma` | [EFrhs_eq_GpChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGpChiNamespaced.lean/declarations/efrhs-eq-gpchi.md) | 39 | `result-track:99ab752072c205aa0ca2b6c517a38421f00db34833bc34cab98edecf8c4d88f8` |
+| 2 | `theorem` | [ZeroConfig.Gz_eq_GpChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGpChiNamespaced.lean/declarations/zeroconfig-gz-eq-gpchi.md) | 55 | `result-track:58270bd17a4ab3cd0df5266903fc9e415ceef82747197768e6f84de433e57ee0` |
+| 3 | `theorem` | [ZeroConfig.summable_Gsummand_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGpChiNamespaced.lean/declarations/zeroconfig-summable-gsummand-chi.md) | 66 | `result-track:84509afb29e627744f34d764370763b7aaeeed01e6b71843d61484e9251d57cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

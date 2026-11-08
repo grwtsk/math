@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AnalyticLinearODE.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AnalyticLinearODE.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticLinearODE.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticLinearODE.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [no_finite_order_zero](../../../../FunctionsOfAComplexVariable/AnalyticLinearODE.lean/declarations/no-finite-order-zero.md) | 24 | `result-track:b9b16ef24c218cbd0491932131c28b1a7175d02108a9f88cec90ee5e393d229c` |
-| 2 | `theorem` | [finite_order_on_connected](../../../../FunctionsOfAComplexVariable/AnalyticLinearODE.lean/declarations/finite-order-on-connected.md) | 57 | `result-track:e23f7126e38c45560a2f23da766f8a3c625ec2d924298ecc43a81548035843cc` |
-| 3 | `theorem` | [nonvanishing](../../../../FunctionsOfAComplexVariable/AnalyticLinearODE.lean/declarations/nonvanishing.md) | 68 | `result-track:40dc0f98a2ca2c8e0dc93ebff264986a1b10fd7f0c303f5ef079a803b3c95b12` |
+| 1 | `theorem` | [no_finite_order_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticLinearODE.lean/declarations/no-finite-order-zero.md) | 24 | `result-track:b9b16ef24c218cbd0491932131c28b1a7175d02108a9f88cec90ee5e393d229c` |
+| 2 | `theorem` | [finite_order_on_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticLinearODE.lean/declarations/finite-order-on-connected.md) | 57 | `result-track:e23f7126e38c45560a2f23da766f8a3c625ec2d924298ecc43a81548035843cc` |
+| 3 | `theorem` | [nonvanishing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticLinearODE.lean/declarations/nonvanishing.md) | 68 | `result-track:40dc0f98a2ca2c8e0dc93ebff264986a1b10fd7f0c303f5ef079a803b3c95b12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

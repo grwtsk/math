@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Induced.lean/index.md) · [Full source](../../../../GeneralTopology/Induced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [induced](../../../../GeneralTopology/Induced.lean/declarations/induced.md) | 56 | `declaration-track:499ab3209ec3a160dc3d976b4e90e2c9444a58cd5d787388ed63ef3202481d94` |
-| 2 | `instance` | [_root_.instTopologicalSpaceSubtype](../../../../GeneralTopology/Induced.lean/declarations/root-insttopologicalspacesubtype.md) | 68 | `declaration-track:09caea77e79c58978dbfadd0c771e7f55ec89f3900512732fa57b35a02a7898e` |
-| 3 | `def` | [coinduced](../../../../GeneralTopology/Induced.lean/declarations/coinduced.md) | 76 | `declaration-track:7edffa7df6fc97da262deeffa172323f85a904eb58ee18fee4c47cad1caf6367` |
-| 4 | `structure` | [IsCoherentWith](../../../../GeneralTopology/Induced.lean/declarations/iscoherentwith.md) | 96 | `declaration-track:bc911d6b8d00441eb51da3f78e5f81dcc80b8c50f1d25e83e68e78a28d5ebea1` |
-| 5 | `structure` | [IsInducing](../../../../GeneralTopology/Induced.lean/declarations/isinducing.md) | 105 | `declaration-track:fd5ee76088448a2d28f5ea256acbee6042b9087235bd0e536317707a3d162d19` |
-| 6 | `structure` | [IsEmbedding](../../../../GeneralTopology/Induced.lean/declarations/isembedding.md) | 114 | `declaration-track:103e30b506d59c6fe2bd60c78c60c5df0de13c4274642205266971dd7a835636` |
-| 7 | `structure` | [IsOpenEmbedding](../../../../GeneralTopology/Induced.lean/declarations/isopenembedding.md) | 123 | `declaration-track:652675e751d0ba3499136a3e78ddab80d7379fd3ac0df64ddbee7fb67b706ba0` |
-| 8 | `structure` | [IsClosedEmbedding](../../../../GeneralTopology/Induced.lean/declarations/isclosedembedding.md) | 129 | `declaration-track:7c7ca352395bf2ce6af7869b639ae3bef20647263f46ab269b22c4010f23fb78` |
-| 9 | `structure` | [IsQuotientMap](../../../../GeneralTopology/Induced.lean/declarations/isquotientmap.md) | 136 | `declaration-track:701c3826cd8898057bc4b9c331b77fde5ccb2c09f708240a255c3e9299118bd8` |
+| 1 | `def` | [induced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/induced.md) | 56 | `declaration-track:499ab3209ec3a160dc3d976b4e90e2c9444a58cd5d787388ed63ef3202481d94` |
+| 2 | `instance` | [_root_.instTopologicalSpaceSubtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/root-insttopologicalspacesubtype.md) | 68 | `declaration-track:09caea77e79c58978dbfadd0c771e7f55ec89f3900512732fa57b35a02a7898e` |
+| 3 | `def` | [coinduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/coinduced.md) | 76 | `declaration-track:7edffa7df6fc97da262deeffa172323f85a904eb58ee18fee4c47cad1caf6367` |
+| 4 | `structure` | [IsCoherentWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/iscoherentwith.md) | 96 | `declaration-track:bc911d6b8d00441eb51da3f78e5f81dcc80b8c50f1d25e83e68e78a28d5ebea1` |
+| 5 | `structure` | [IsInducing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/isinducing.md) | 105 | `declaration-track:fd5ee76088448a2d28f5ea256acbee6042b9087235bd0e536317707a3d162d19` |
+| 6 | `structure` | [IsEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/isembedding.md) | 114 | `declaration-track:103e30b506d59c6fe2bd60c78c60c5df0de13c4274642205266971dd7a835636` |
+| 7 | `structure` | [IsOpenEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/isopenembedding.md) | 123 | `declaration-track:652675e751d0ba3499136a3e78ddab80d7379fd3ac0df64ddbee7fb67b706ba0` |
+| 8 | `structure` | [IsClosedEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/isclosedembedding.md) | 129 | `declaration-track:7c7ca352395bf2ce6af7869b639ae3bef20647263f46ab269b22c4010f23fb78` |
+| 9 | `structure` | [IsQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Induced.lean/declarations/isquotientmap.md) | 136 | `declaration-track:701c3826cd8898057bc4b9c331b77fde5ccb2c09f708240a255c3e9299118bd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

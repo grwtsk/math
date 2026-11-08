@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Const](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/const.md) | 38 | `declaration-track:b47683755af8d0b14ed76849e97e73cf6c747b09c3e891dd05c2c7c86ad844be` |
-| 2 | `instance` | [Const.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/const-inhabited.md) | 40 | `declaration-track:b155adc0fcea0dabe3a96e7d5d1447d5ee9471191693dd1322e6fefd02d7729a` |
-| 3 | `def` | [mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mk.md) | 49 | `declaration-track:1a92770ba52bcf2f3c26199e098bfad0712e63c55b4905d342f45ab0a0725ac3` |
-| 4 | `def` | [get](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/get.md) | 52 | `declaration-track:9317727b6cd40c585bd1840990300db830f4bab5a509b33412eac07c04dca369` |
-| 5 | `theorem` | [mk_get](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mk-get.md) | 55 | `result-track:8651f590b0fde363e0125a1ca75e95706c4f9fa244daeeaa147d182ab89bda40` |
-| 6 | `theorem` | [get_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/get-mk.md) | 58 | `result-track:9493e200be9ce87d5bc1c63049388146615a70953ffdf8cd89019f9d06099423` |
-| 7 | `def` | [map](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/map.md) | 61 | `declaration-track:090875cc8f813e34b83a420153857cadf8d43f15b98caee667d941bc2b4c9192` |
-| 8 | `instance` | [MvFunctor](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mvfunctor.md) | 63 | `declaration-track:ad2c3185df240b990ab29adb25f3247421074be2147b0b42987f65e80ef0f0ce` |
-| 9 | `theorem` | [map_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/map-mk.md) | 65 | `result-track:13ee5312085a3e0e7cd88a4ef22ef843102792307e2e1f9bef52c1a52a93b7ef` |
-| 10 | `theorem` | [get_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/get-map.md) | 67 | `result-track:c5375ff4aa8c42080f53c40ed4f7add5479c7108951f58d21de94c183471dd56` |
-| 11 | `instance` | [mvqpf](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mvqpf.md) | 69 | `declaration-track:a6d0623fc692a484ab3fbb5f92757527a847ae129dcb243f2533883a5a68535c` |
+| 1 | `def` | [Const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/const.md) | 38 | `declaration-track:b47683755af8d0b14ed76849e97e73cf6c747b09c3e891dd05c2c7c86ad844be` |
+| 2 | `instance` | [Const.inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/const-inhabited.md) | 40 | `declaration-track:b155adc0fcea0dabe3a96e7d5d1447d5ee9471191693dd1322e6fefd02d7729a` |
+| 3 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mk.md) | 49 | `declaration-track:1a92770ba52bcf2f3c26199e098bfad0712e63c55b4905d342f45ab0a0725ac3` |
+| 4 | `def` | [get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/get.md) | 52 | `declaration-track:9317727b6cd40c585bd1840990300db830f4bab5a509b33412eac07c04dca369` |
+| 5 | `theorem` | [mk_get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mk-get.md) | 55 | `result-track:8651f590b0fde363e0125a1ca75e95706c4f9fa244daeeaa147d182ab89bda40` |
+| 6 | `theorem` | [get_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/get-mk.md) | 58 | `result-track:9493e200be9ce87d5bc1c63049388146615a70953ffdf8cd89019f9d06099423` |
+| 7 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/map.md) | 61 | `declaration-track:090875cc8f813e34b83a420153857cadf8d43f15b98caee667d941bc2b4c9192` |
+| 8 | `instance` | [MvFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mvfunctor.md) | 63 | `declaration-track:ad2c3185df240b990ab29adb25f3247421074be2147b0b42987f65e80ef0f0ce` |
+| 9 | `theorem` | [map_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/map-mk.md) | 65 | `result-track:13ee5312085a3e0e7cd88a4ef22ef843102792307e2e1f9bef52c1a52a93b7ef` |
+| 10 | `theorem` | [get_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/get-map.md) | 67 | `result-track:c5375ff4aa8c42080f53c40ed4f7add5479c7108951f58d21de94c183471dd56` |
+| 11 | `instance` | [mvqpf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsConstNamespaced.lean/declarations/mvqpf.md) | 69 | `declaration-track:a6d0623fc692a484ab3fbb5f92757527a847ae129dcb243f2533883a5a68535c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

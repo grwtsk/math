@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModuleSnapshot](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/declarations/modulesnapshot.md) | 18 | `declaration-track:9be2fa6bff344362eafd426efd97e33c5f43f1e27df54995376afa7ffbc29dd8` |
-| 2 | `theorem` | [moduleSnapshot_claimBoundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/declarations/modulesnapshot-claimboundary-visible.md) | 29 | `result-track:28ac916bead8a263eff912e843640168d397dee7d513efa4698503de50b2f1ab` |
+| 1 | `structure` | [ModuleSnapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/declarations/modulesnapshot.md) | 18 | `declaration-track:9be2fa6bff344362eafd426efd97e33c5f43f1e27df54995376afa7ffbc29dd8` |
+| 2 | `theorem` | [moduleSnapshot_claimBoundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedModuleSnapshot.lean/declarations/modulesnapshot-claimboundary-visible.md) | 29 | `result-track:28ac916bead8a263eff912e843640168d397dee7d513efa4698503de50b2f1ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

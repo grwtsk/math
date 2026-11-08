@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Integrability.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Integrability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Integrability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Integrability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KtWeighted](../../../../MeasureAndIntegration/Integrability.lean/declarations/ktweighted.md) | 21 | `declaration-track:7377c17403843927b6337a3a1da8ffbd70f56bc1a03a89eeb4e15bdcb473584a` |
-| 2 | `lemma` | [integrable_KtWeighted](../../../../MeasureAndIntegration/Integrability.lean/declarations/integrable-ktweighted.md) | 28 | `result-track:8008f3bceb32f2b6ba51ca3020ac89df705ff57db2eaee11a07becc81120d5de` |
+| 1 | `def` | [KtWeighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Integrability.lean/declarations/ktweighted.md) | 21 | `declaration-track:7377c17403843927b6337a3a1da8ffbd70f56bc1a03a89eeb4e15bdcb473584a` |
+| 2 | `lemma` | [integrable_KtWeighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Integrability.lean/declarations/integrable-ktweighted.md) | 28 | `result-track:8008f3bceb32f2b6ba51ca3020ac89df705ff57db2eaee11a07becc81120d5de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

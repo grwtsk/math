@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TraceScaleCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/declarations/tracescalecertificate.md) | 25 | `declaration-track:5e0a660c42ffe0cd259ae27f2f413ecabd1c34d35d3bb18d17d8c4eb2af83e5f` |
-| 2 | `theorem` | [TraceScaleCertificate.trace_scale_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/declarations/tracescalecertificate-trace-scale-bound.md) | 107 | `result-track:d980823ada4f6370d2894315e7ccb8c1632c8d144ec714bc42c391d9c91b7549` |
+| 1 | `structure` | [TraceScaleCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/declarations/tracescalecertificate.md) | 25 | `declaration-track:5e0a660c42ffe0cd259ae27f2f413ecabd1c34d35d3bb18d17d8c4eb2af83e5f` |
+| 2 | `theorem` | [TraceScaleCertificate.trace_scale_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TraceScaleNamespaced.lean/declarations/tracescalecertificate-trace-scale-bound.md) | 107 | `result-track:d980823ada4f6370d2894315e7ccb8c1632c8d144ec714bc42c391d9c91b7549` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

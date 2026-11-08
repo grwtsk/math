@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RieszCorrectionNormalization.lean/index.md) · [Full source](../../../../NumberTheory/RieszCorrectionNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.RationalRieszPrimitive`](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.RieszSourceSecondDifference`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.RationalRieszPrimitive`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.RieszSourceSecondDifference`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [firstRieszPrefix_stable](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/firstrieszprefix-stable.md) | 23 | `result-track:3755bd5f941d8447e148215850a15063ad964368f59e9c11a4ca7310018245e0` |
-| 2 | `def` | [correctedRieszSourceDefect](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect.md) | 36 | `declaration-track:cabf4bfcd47ac1a85642c747a9962b3b3f8a73498fed0b44aa1af5a4ca951579` |
-| 3 | `theorem` | [correctedRieszSourceDefect_second_difference](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-second-difference.md) | 41 | `result-track:5a5f9f0d0164110b48df992aab94be7cecbc483ca49d72ac71942bb74c1b6d70` |
-| 4 | `theorem` | [correctedRieszSourceDefect_midpoint](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-midpoint.md) | 54 | `result-track:5e613801f35b902d8b156c86282326061f42058463185e2cf5a0aa12136a043e` |
-| 5 | `theorem` | [firstRieszPrefix_two](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/firstrieszprefix-two.md) | 64 | `result-track:157dc151d1d90de8369858cad36b913434ad956b9e4bc6e8a08be6fdd141dfd0` |
-| 6 | `theorem` | [firstRieszPrefix_three](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/firstrieszprefix-three.md) | 68 | `result-track:b80cc2e2f794d46fe627c7badc710c21dd113d10f9aeb98fc40ef7d1aff0fd58` |
-| 7 | `theorem` | [correctedRieszSourceDefect_two](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-two.md) | 77 | `result-track:99c82a5e6f7af21e74ced9c079621e75749d6a2c007a201c58f5528cd572d146` |
-| 8 | `theorem` | [correctedRieszSourceDefect_three](../../../../NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-three.md) | 85 | `result-track:be1cac31aa977310ce9bfda54bb1c29ea7b7195d91f48918c8962faaf320fa5f` |
+| 1 | `theorem` | [firstRieszPrefix_stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/firstrieszprefix-stable.md) | 23 | `result-track:3755bd5f941d8447e148215850a15063ad964368f59e9c11a4ca7310018245e0` |
+| 2 | `def` | [correctedRieszSourceDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect.md) | 36 | `declaration-track:cabf4bfcd47ac1a85642c747a9962b3b3f8a73498fed0b44aa1af5a4ca951579` |
+| 3 | `theorem` | [correctedRieszSourceDefect_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-second-difference.md) | 41 | `result-track:5a5f9f0d0164110b48df992aab94be7cecbc483ca49d72ac71942bb74c1b6d70` |
+| 4 | `theorem` | [correctedRieszSourceDefect_midpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-midpoint.md) | 54 | `result-track:5e613801f35b902d8b156c86282326061f42058463185e2cf5a0aa12136a043e` |
+| 5 | `theorem` | [firstRieszPrefix_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/firstrieszprefix-two.md) | 64 | `result-track:157dc151d1d90de8369858cad36b913434ad956b9e4bc6e8a08be6fdd141dfd0` |
+| 6 | `theorem` | [firstRieszPrefix_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/firstrieszprefix-three.md) | 68 | `result-track:b80cc2e2f794d46fe627c7badc710c21dd113d10f9aeb98fc40ef7d1aff0fd58` |
+| 7 | `theorem` | [correctedRieszSourceDefect_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-two.md) | 77 | `result-track:99c82a5e6f7af21e74ced9c079621e75749d6a2c007a201c58f5528cd572d146` |
+| 8 | `theorem` | [correctedRieszSourceDefect_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszCorrectionNormalization.lean/declarations/correctedrieszsourcedefect-three.md) | 85 | `result-track:be1cac31aa977310ce9bfda54bb1c29ea7b7195d91f48918c8962faaf320fa5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

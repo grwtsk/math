@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.AlgebraicKernelComplement`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Logic.InformationLoss.FiniteRankMeasurementLowerBound`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementLowerBound.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.AlgebraicKernelComplement`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FiniteRankMeasurementLowerBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementLowerBound.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [every_joint_measurement_meets_kernel_bound](../../../../GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/declarations/every-joint-measurement-meets-kernel-bound.md) | 36 | `result-track:54e40240a9b89c7fd11f11c92389932f0801f51c888114e8c864374919f98f73` |
-| 2 | `theorem` | [exists_joint_measurement_at_kernel_capacity](../../../../GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/declarations/exists-joint-measurement-at-kernel-capacity.md) | 46 | `result-track:f6ea8fa886133af3f18bb7e1a4a09028c418775b5f7f754b1f0c3bfca26f802b` |
+| 1 | `theorem` | [every_joint_measurement_meets_kernel_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/declarations/every-joint-measurement-meets-kernel-bound.md) | 36 | `result-track:54e40240a9b89c7fd11f11c92389932f0801f51c888114e8c864374919f98f73` |
+| 2 | `theorem` | [exists_joint_measurement_at_kernel_capacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AlgebraicMeasurementOptimality.lean/declarations/exists-joint-measurement-at-kernel-capacity.md) | 46 | `result-track:f6ea8fa886133af3f18bb7e1a4a09028c418775b5f7f754b1f0c3bfca26f802b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

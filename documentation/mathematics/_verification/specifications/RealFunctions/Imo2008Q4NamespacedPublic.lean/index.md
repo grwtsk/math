@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo2008Q4NamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/Imo2008Q4NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_eq_one_of_pow_eq_one](../../../../RealFunctions/Imo2008Q4NamespacedPublic.lean/declarations/abs-eq-one-of-pow-eq-one.md) | 41 | `result-track:69688948a90c224cfee59dd0ebed4027eca92196dffbdf208b80d994fb521bf5` |
-| 2 | `theorem` | [imo2008_q4](../../../../RealFunctions/Imo2008Q4NamespacedPublic.lean/declarations/imo2008-q4.md) | 48 | `result-track:0bd0aa98b94b385d4a7d5550ee8c67426cfb8e3bb9bbcbd154c60fda3cbdc511` |
+| 1 | `theorem` | [abs_eq_one_of_pow_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4NamespacedPublic.lean/declarations/abs-eq-one-of-pow-eq-one.md) | 41 | `result-track:69688948a90c224cfee59dd0ebed4027eca92196dffbdf208b80d994fb521bf5` |
+| 2 | `theorem` | [imo2008_q4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4NamespacedPublic.lean/declarations/imo2008-q4.md) | 48 | `result-track:0bd0aa98b94b385d4a7d5550ee8c67426cfb8e3bb9bbcbd154c60fda3cbdc511` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

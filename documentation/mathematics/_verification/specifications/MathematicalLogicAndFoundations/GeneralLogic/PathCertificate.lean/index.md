@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndependentPathVerification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/declarations/independentpathverification.md) | 11 | `declaration-track:46edc9808924e1d680ababbde9230ba08c5b4fbbc0a910894416a70d81999bc7` |
-| 2 | `theorem` | [independently_verified_path_is_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/declarations/independently-verified-path-is-accepted.md) | 19 | `result-track:2bd9f47e76a2a8462c8c05910ef87425bd73b1d5fa13a38bfb2377e1b96fc383` |
+| 1 | `structure` | [IndependentPathVerification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/declarations/independentpathverification.md) | 11 | `declaration-track:46edc9808924e1d680ababbde9230ba08c5b4fbbc0a910894416a70d81999bc7` |
+| 2 | `theorem` | [independently_verified_path_is_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathCertificate.lean/declarations/independently-verified-path-is-accepted.md) | 19 | `result-track:2bd9f47e76a2a8462c8c05910ef87425bd73b1d5fa13a38bfb2377e1b96fc383` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

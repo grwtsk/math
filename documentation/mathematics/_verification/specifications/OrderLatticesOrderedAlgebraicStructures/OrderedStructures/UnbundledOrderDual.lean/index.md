@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [mulLeftReflectLE](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftreflectle.md) | 20 | `declaration-track:ed80232df936112704792ada9f2fa8b399920976fa1057c147c4f2e69297a2f2` |
-| 2 | `instance` | [mulLeftMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftmono.md) | 24 | `declaration-track:deaf0be87a38d6a5b68659f0bd22478906abcf5c56aed2a4a1c91de2b4f13b0a` |
-| 3 | `instance` | [mulRightReflectLE](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightreflectle.md) | 28 | `declaration-track:dd3712a579fbdb29a253a39a1fa9130e70b6f9663c6f81922f24f3356fa88030` |
-| 4 | `instance` | [mulRightMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightmono.md) | 32 | `declaration-track:88053baab54dd0b27f1c9a5e95b5b90ca92e39c1ca7e86c0e8d611429046d288` |
-| 5 | `instance` | [mulLeftReflectLT](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftreflectlt.md) | 36 | `declaration-track:db185a7f22fedcc7d123e7e97291e7f73b8a7948ffded8f3e2a26ca6cab0e980` |
-| 6 | `instance` | [mulLeftStrictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftstrictmono.md) | 40 | `declaration-track:c8f31f4d85dee31807e1332e27f0980729bfcd616c1dcc787ee30c4a9357dd41` |
-| 7 | `instance` | [mulRightReflectLT](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightreflectlt.md) | 44 | `declaration-track:d6622e16e1955f807e25e92d49a99a40661af1dc513e36d5f691568be3177e64` |
-| 8 | `instance` | [mulRightStrictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightstrictmono.md) | 48 | `declaration-track:75d2d48a4d80b2664a4e28e46ef4f1d4b386862961a799b313cf263827698115` |
+| 1 | `instance` | [mulLeftReflectLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftreflectle.md) | 20 | `declaration-track:ed80232df936112704792ada9f2fa8b399920976fa1057c147c4f2e69297a2f2` |
+| 2 | `instance` | [mulLeftMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftmono.md) | 24 | `declaration-track:deaf0be87a38d6a5b68659f0bd22478906abcf5c56aed2a4a1c91de2b4f13b0a` |
+| 3 | `instance` | [mulRightReflectLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightreflectle.md) | 28 | `declaration-track:dd3712a579fbdb29a253a39a1fa9130e70b6f9663c6f81922f24f3356fa88030` |
+| 4 | `instance` | [mulRightMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightmono.md) | 32 | `declaration-track:88053baab54dd0b27f1c9a5e95b5b90ca92e39c1ca7e86c0e8d611429046d288` |
+| 5 | `instance` | [mulLeftReflectLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftreflectlt.md) | 36 | `declaration-track:db185a7f22fedcc7d123e7e97291e7f73b8a7948ffded8f3e2a26ca6cab0e980` |
+| 6 | `instance` | [mulLeftStrictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulleftstrictmono.md) | 40 | `declaration-track:c8f31f4d85dee31807e1332e27f0980729bfcd616c1dcc787ee30c4a9357dd41` |
+| 7 | `instance` | [mulRightReflectLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightreflectlt.md) | 44 | `declaration-track:d6622e16e1955f807e25e92d49a99a40661af1dc513e36d5f691568be3177e64` |
+| 8 | `instance` | [mulRightStrictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderDual.lean/declarations/mulrightstrictmono.md) | 48 | `declaration-track:75d2d48a4d80b2664a4e28e46ef4f1d4b386862961a799b313cf263827698115` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

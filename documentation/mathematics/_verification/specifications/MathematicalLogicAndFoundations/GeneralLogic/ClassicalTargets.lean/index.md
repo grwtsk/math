@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PNTInputs](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/declarations/pntinputs.md) | 13 | `declaration-track:b56ad3c7565e682a634a118a24500f50dcdafe751874e43223e49a03f75b2e9b` |
-| 2 | `def` | [PrimeNumberTheoremAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/declarations/primenumbertheoremanchor.md) | 19 | `declaration-track:8cc3a4efa7454158009726aa3cc7530f6f5ae0be73fcb204607be0c1681ef04b` |
-| 3 | `def` | [PNTClassicalRouteAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/declarations/pntclassicalrouteanchor.md) | 22 | `declaration-track:d87b519bce7b5c868d58089d3b7c72984b9aad2a401e2295a30b5f57ebbfb993` |
+| 1 | `structure` | [PNTInputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/declarations/pntinputs.md) | 13 | `declaration-track:b56ad3c7565e682a634a118a24500f50dcdafe751874e43223e49a03f75b2e9b` |
+| 2 | `def` | [PrimeNumberTheoremAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/declarations/primenumbertheoremanchor.md) | 19 | `declaration-track:8cc3a4efa7454158009726aa3cc7530f6f5ae0be73fcb204607be0c1681ef04b` |
+| 3 | `def` | [PNTClassicalRouteAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalTargets.lean/declarations/pntclassicalrouteanchor.md) | 22 | `declaration-track:d87b519bce7b5c868d58089d3b7c72984b9aad2a401e2295a30b5f57ebbfb993` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

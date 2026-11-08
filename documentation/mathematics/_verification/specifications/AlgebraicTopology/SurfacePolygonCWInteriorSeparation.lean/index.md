@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources`](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [directedInterior_ne_zeroCell](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/directedinterior-ne-zerocell.md) | 30 | `result-track:df0cfdabcd2ced53840915bac55f011d4495b9a26bfe6806fe3ce25dca915b59` |
-| 2 | `theorem` | [positiveInterior_ne_zeroCell](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/positiveinterior-ne-zerocell.md) | 45 | `result-track:4981ec6850f67304a44024fe3503356bf63fda07f15896e145613cffb648e860` |
-| 3 | `theorem` | [positiveMidpoint_ne_zeroCell](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/positivemidpoint-ne-zerocell.md) | 55 | `result-track:74a7450378060efb06879563a093d15b381c995834d49fa82a98618555cd361e` |
-| 4 | `theorem` | [genusTwo_positiveMidpoint_ne_zeroCell](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/genustwo-positivemidpoint-ne-zerocell.md) | 62 | `result-track:ffee9870fc117ccaa3d3d8c5503e958cc6c7c4caef1d3e0731017ea74a588f14` |
-| 5 | `theorem` | [genusThree_positiveMidpoint_ne_zeroCell](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/genusthree-positivemidpoint-ne-zerocell.md) | 68 | `result-track:64c05ba6f239d3682d0b3fcdcb8e24d217e9ee90a5159057a9cf0a884abaaf1f` |
+| 1 | `theorem` | [directedInterior_ne_zeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/directedinterior-ne-zerocell.md) | 30 | `result-track:df0cfdabcd2ced53840915bac55f011d4495b9a26bfe6806fe3ce25dca915b59` |
+| 2 | `theorem` | [positiveInterior_ne_zeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/positiveinterior-ne-zerocell.md) | 45 | `result-track:4981ec6850f67304a44024fe3503356bf63fda07f15896e145613cffb648e860` |
+| 3 | `theorem` | [positiveMidpoint_ne_zeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/positivemidpoint-ne-zerocell.md) | 55 | `result-track:74a7450378060efb06879563a093d15b381c995834d49fa82a98618555cd361e` |
+| 4 | `theorem` | [genusTwo_positiveMidpoint_ne_zeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/genustwo-positivemidpoint-ne-zerocell.md) | 62 | `result-track:ffee9870fc117ccaa3d3d8c5503e958cc6c7c4caef1d3e0731017ea74a588f14` |
+| 5 | `theorem` | [genusThree_positiveMidpoint_ne_zeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/declarations/genusthree-positivemidpoint-ne-zerocell.md) | 68 | `result-track:64c05ba6f239d3682d0b3fcdcb8e24d217e9ee90a5159057a9cf0a884abaaf1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

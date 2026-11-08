@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AreaOfACirclePublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AreaOfACirclePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AreaOfACirclePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AreaOfACirclePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [disc](../../../../MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/disc.md) | 59 | `declaration-track:8eaf4e418d07a542ff8fa90b79511902642ca0e3253f3dbbab75ca4a2486ab4c` |
-| 2 | `theorem` | [disc_eq_regionBetween](../../../../MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/disc-eq-regionbetween.md) | 66 | `result-track:5ae52c7902ca3ccb82a0630f813a2aea6e212243e4d186679af8df649922c1d1` |
-| 3 | `theorem` | [measurableSet_disc](../../../../MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/measurableset-disc.md) | 81 | `result-track:c4f242a28f907cdaa6c9a0d39220a678d4513dd16918f142d3f198d702cd8536` |
-| 4 | `theorem` | [area_disc](../../../../MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/area-disc.md) | 85 | `result-track:51f83ebb32c035e7fb2fcef272e0d80fa465eb0e0a845a56d734604a047bb693` |
+| 1 | `def` | [disc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/disc.md) | 59 | `declaration-track:8eaf4e418d07a542ff8fa90b79511902642ca0e3253f3dbbab75ca4a2486ab4c` |
+| 2 | `theorem` | [disc_eq_regionBetween](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/disc-eq-regionbetween.md) | 66 | `result-track:5ae52c7902ca3ccb82a0630f813a2aea6e212243e4d186679af8df649922c1d1` |
+| 3 | `theorem` | [measurableSet_disc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/measurableset-disc.md) | 81 | `result-track:c4f242a28f907cdaa6c9a0d39220a678d4513dd16918f142d3f198d702cd8536` |
+| 4 | `theorem` | [area_disc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AreaOfACirclePublic.lean/declarations/area-disc.md) | 85 | `result-track:51f83ebb32c035e7fb2fcef272e0d80fa465eb0e0a845a56d734604a047bb693` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zpow_bit1_neg](../../../../FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/declarations/zpow-bit1-neg.md) | 37 | `result-track:2cf43761dd450a33927c24e7d15926da4fbc42a4cc280dc43518daecff14a1a4` |
-| 2 | `theorem` | [Odd.neg_zpow](../../../../FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/declarations/odd-neg-zpow.md) | 41 | `result-track:85c33ea5cb145d3fe2518f11810b16736311b2f24320562c4e7969d8d189850c` |
-| 3 | `theorem` | [Odd.neg_one_zpow](../../../../FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/declarations/odd-neg-one-zpow.md) | 46 | `result-track:cf9cf36d532b40886bd7e5554d46a1757f59555725f3d942a50ebccc1dda4683` |
+| 1 | `theorem` | [zpow_bit1_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/declarations/zpow-bit1-neg.md) | 37 | `result-track:2cf43761dd450a33927c24e7d15926da4fbc42a4cc280dc43518daecff14a1a4` |
+| 2 | `theorem` | [Odd.neg_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/declarations/odd-neg-zpow.md) | 41 | `result-track:85c33ea5cb145d3fe2518f11810b16736311b2f24320562c4e7969d8d189850c` |
+| 3 | `theorem` | [Odd.neg_one_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldPowerNamespaced.lean/declarations/odd-neg-one-zpow.md) | 46 | `result-track:cf9cf36d532b40886bd7e5554d46a1757f59555725f3d942a50ebccc1dda4683` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

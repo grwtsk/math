@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cocycles₀IsoAux](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/cocycles-isoaux.md) | 39 | `result-track:2f027120825625f8fb78a831dfd6665b43d08f8f34a741de70b6e6e5a39229ee` |
-| 2 | `lemma` | [mem_const_resol₀](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/mem-const-resol.md) | 52 | `result-track:d147572035c528fa076841ced42fd3f010d7ed3f639ee7e60d54f3f8b707109b` |
-| 3 | `lemma` | [cocycles₀IsoAux'](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/cocycles-isoaux-source-edition-2.md) | 56 | `result-track:3be43a65592830c2ad66fd906dc908181fb0f5796715b6f9a518b619b900265e` |
-| 4 | `abbrev` | [cocycles₀Iso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/cocycles-iso.md) | 63 | `declaration-track:71795d61d0857fb72b4c56512482233cba6c18cb0c2604b0f51ff8200b815909` |
-| 5 | `def` | [d₀kerIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/d-keriso.md) | 70 | `declaration-track:25d12f81be3f0b92af77e792e580a7a554974366b023b3a36323b77919a45147` |
-| 6 | `def` | [zeroIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/zeroiso.md) | 92 | `declaration-track:bf9ef5eada57b941447240c3fbf6890b8fc68a70a4b0fc73c5f4e046b7c7fda6` |
+| 1 | `lemma` | [cocycles₀IsoAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/cocycles-isoaux.md) | 39 | `result-track:2f027120825625f8fb78a831dfd6665b43d08f8f34a741de70b6e6e5a39229ee` |
+| 2 | `lemma` | [mem_const_resol₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/mem-const-resol.md) | 52 | `result-track:d147572035c528fa076841ced42fd3f010d7ed3f639ee7e60d54f3f8b707109b` |
+| 3 | `lemma` | [cocycles₀IsoAux'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/cocycles-isoaux-source-edition-2.md) | 56 | `result-track:3be43a65592830c2ad66fd906dc908181fb0f5796715b6f9a518b619b900265e` |
+| 4 | `abbrev` | [cocycles₀Iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/cocycles-iso.md) | 63 | `declaration-track:71795d61d0857fb72b4c56512482233cba6c18cb0c2604b0f51ff8200b815909` |
+| 5 | `def` | [d₀kerIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/d-keriso.md) | 70 | `declaration-track:25d12f81be3f0b92af77e792e580a7a554974366b023b3a36323b77919a45147` |
+| 6 | `def` | [zeroIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/LowDegreeNamespacedPublic.lean/declarations/zeroiso.md) | 92 | `declaration-track:bf9ef5eada57b941447240c3fbf6890b8fc68a70a4b0fc73c5f4e046b7c7fda6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

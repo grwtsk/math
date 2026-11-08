@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ChallengeBranch](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/challengebranch.md) | 16 | `declaration-track:1a69dfe48398ee26945f1b9f6d8546c15c6568d24510aca3d2ff4d0203a3d6ff` |
-| 2 | `inductive` | [ChallengeStatus](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/challengestatus.md) | 25 | `declaration-track:b84141db1c2c26f926bba6560b235ba4f88adfd7b752186a56a9f9fd97c95ede` |
-| 3 | `structure` | [ChallengeMilestone](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/challengemilestone.md) | 39 | `declaration-track:0c4da01387b95ec81777e13353f0832c3be7dbf19e6ada89177a025c8b2c401e` |
-| 4 | `theorem` | [theoremTarget_ne_notClaimed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/theoremtarget-ne-notclaimed.md) | 45 | `result-track:ff90c80de308455441d15eeaaaab83c3b588de7ae54d5d9c4d9fcf6d5aedf3d3` |
-| 5 | `theorem` | [contract_ne_knownCase](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/contract-ne-knowncase.md) | 49 | `result-track:2f414b66849525e29fc3afaa22ec18e40b590945dfb4eeb2c6ed3188f4a2b299` |
-| 6 | `theorem` | [analogy_ne_theoremTarget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/analogy-ne-theoremtarget.md) | 53 | `result-track:453fd5caab7c0960c3484a4d310b403df9e2137953c1a8d0a3898938406dcdc5` |
-| 7 | `theorem` | [speculativeScaffold_ne_solution](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/speculativescaffold-ne-solution.md) | 57 | `result-track:f1efda2e3cf0610effa52489a61f00b1cf843491913f874be2ec5bb42ef033d2` |
+| 1 | `inductive` | [ChallengeBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/challengebranch.md) | 16 | `declaration-track:1a69dfe48398ee26945f1b9f6d8546c15c6568d24510aca3d2ff4d0203a3d6ff` |
+| 2 | `inductive` | [ChallengeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/challengestatus.md) | 25 | `declaration-track:b84141db1c2c26f926bba6560b235ba4f88adfd7b752186a56a9f9fd97c95ede` |
+| 3 | `structure` | [ChallengeMilestone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/challengemilestone.md) | 39 | `declaration-track:0c4da01387b95ec81777e13353f0832c3be7dbf19e6ada89177a025c8b2c401e` |
+| 4 | `theorem` | [theoremTarget_ne_notClaimed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/theoremtarget-ne-notclaimed.md) | 45 | `result-track:ff90c80de308455441d15eeaaaab83c3b588de7ae54d5d9c4d9fcf6d5aedf3d3` |
+| 5 | `theorem` | [contract_ne_knownCase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/contract-ne-knowncase.md) | 49 | `result-track:2f414b66849525e29fc3afaa22ec18e40b590945dfb4eeb2c6ed3188f4a2b299` |
+| 6 | `theorem` | [analogy_ne_theoremTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/analogy-ne-theoremtarget.md) | 53 | `result-track:453fd5caab7c0960c3484a4d310b403df9e2137953c1a8d0a3898938406dcdc5` |
+| 7 | `theorem` | [speculativeScaffold_ne_solution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Status.lean/declarations/speculativescaffold-ne-solution.md) | 57 | `result-track:f1efda2e3cf0610effa52489a61f00b1cf843491913f874be2ec5bb42ef033d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

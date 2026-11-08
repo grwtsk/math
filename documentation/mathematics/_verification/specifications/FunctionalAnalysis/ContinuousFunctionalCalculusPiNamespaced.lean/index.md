@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cfcₙ_map_pi](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-pi.md) | 46 | `result-track:57290ef32ab6fe61457520dde5f928dd600c84b85f7888b89dd397101ba9c0f8` |
-| 2 | `lemma` | [cfcₙ_map_prod](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-prod.md) | 77 | `result-track:b0e991fabc18272cfb46746541a604295b5fa7056463f842a51dec801a8e0650` |
-| 3 | `lemma` | [cfc_map_pi](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-pi-source-edition-2.md) | 108 | `result-track:a1b950c7b3c13f99901d8cba0846537ea2b5ea1b74eab03d5cfe580885a42add` |
-| 4 | `lemma` | [cfc_map_prod](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-prod-source-edition-2.md) | 131 | `result-track:d14a96109c47fe96a320cb2cf2d347d8a1816f68c199deb6f653fbb2218ae6d4` |
+| 1 | `lemma` | [cfcₙ_map_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-pi.md) | 46 | `result-track:57290ef32ab6fe61457520dde5f928dd600c84b85f7888b89dd397101ba9c0f8` |
+| 2 | `lemma` | [cfcₙ_map_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-prod.md) | 77 | `result-track:b0e991fabc18272cfb46746541a604295b5fa7056463f842a51dec801a8e0650` |
+| 3 | `lemma` | [cfc_map_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-pi-source-edition-2.md) | 108 | `result-track:a1b950c7b3c13f99901d8cba0846537ea2b5ea1b74eab03d5cfe580885a42add` |
+| 4 | `lemma` | [cfc_map_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusPiNamespaced.lean/declarations/cfc-map-prod-source-edition-2.md) | 131 | `result-track:d14a96109c47fe96a320cb2cf2d347d8a1816f68c199deb6f653fbb2218ae6d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

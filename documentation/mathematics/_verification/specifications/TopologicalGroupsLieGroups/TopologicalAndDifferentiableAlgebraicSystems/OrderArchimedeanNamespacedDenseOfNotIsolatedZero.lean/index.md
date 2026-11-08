@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Rat.denseRange_cast](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/rat-denserange-cast.md) | 37 | `result-track:b9f2a54e3624eee2729f9b031e0da408bfbc3e4a155dcc2731cbf5a906da7607` |
-| 2 | `theorem` | [dense_of_not_isolated_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/dense-of-not-isolated-zero.md) | 50 | `result-track:c23a4933ddf0e9f4261447b40c38c5f55ad3e0cc0d3343589077483446223c73` |
-| 3 | `theorem` | [dense_of_no_min](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/dense-of-no-min.md) | 66 | `result-track:b2a0fa602bd49f9179b82e0ad849f53a9f8ed3b984169f37830b264b173d7ac2` |
-| 4 | `theorem` | [dense_or_cyclic](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/dense-or-cyclic.md) | 75 | `result-track:5ec3dd2bdb6f50ec681f2d49bb1fde04260baf40b750f3bf2604d3e8db275c2e` |
+| 1 | `theorem` | [Rat.denseRange_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/rat-denserange-cast.md) | 37 | `result-track:b9f2a54e3624eee2729f9b031e0da408bfbc3e4a155dcc2731cbf5a906da7607` |
+| 2 | `theorem` | [dense_of_not_isolated_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/dense-of-not-isolated-zero.md) | 50 | `result-track:c23a4933ddf0e9f4261447b40c38c5f55ad3e0cc0d3343589077483446223c73` |
+| 3 | `theorem` | [dense_of_no_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/dense-of-no-min.md) | 66 | `result-track:b2a0fa602bd49f9179b82e0ad849f53a9f8ed3b984169f37830b264b173d7ac2` |
+| 4 | `theorem` | [dense_or_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanNamespacedDenseOfNotIsolatedZero.lean/declarations/dense-or-cyclic.md) | 75 | `result-track:5ec3dd2bdb6f50ec681f2d49bb1fde04260baf40b750f3bf2604d3e8db275c2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

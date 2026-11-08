@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ScanOrder](../../../../../Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/scanorder.md) | 37 | `declaration-track:bde3accb792b6ddd53792b4e4d7629e1725c34ce814eb5f0a0c1ea043e54dc5d` |
-| 2 | `structure` | [OrientedEdge](../../../../../Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/orientededge.md) | 41 | `declaration-track:f87235e8fabeabf9f76f385a90ab0855ef1a0e51b6a9eaa0d28c8c74185f9cb3` |
-| 3 | `def` | [scanForward](../../../../../Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/scanforward.md) | 46 | `declaration-track:37ab7381ca196613163bd51142de7c069a695b806c77e284b588a367cf139a5a` |
-| 4 | `structure` | [ScanTwist](../../../../../Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/scantwist.md) | 51 | `declaration-track:a71b1c442e79365cfe5ebe57e5df459a90a148183e4c4c3d4c59c8312d62313f` |
+| 1 | `structure` | [ScanOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/scanorder.md) | 37 | `declaration-track:bde3accb792b6ddd53792b4e4d7629e1725c34ce814eb5f0a0c1ea043e54dc5d` |
+| 2 | `structure` | [OrientedEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/orientededge.md) | 41 | `declaration-track:f87235e8fabeabf9f76f385a90ab0855ef1a0e51b6a9eaa0d28c8c74185f9cb3` |
+| 3 | `def` | [scanForward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/scanforward.md) | 46 | `declaration-track:37ab7381ca196613163bd51142de7c069a695b806c77e284b588a367cf139a5a` |
+| 4 | `structure` | [ScanTwist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteRankedOrientedEdgeAndLabelData.lean/declarations/scantwist.md) | 51 | `declaration-track:a71b1c442e79365cfe5ebe57e5df459a90a148183e4c4c3d4c59c8312d62313f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

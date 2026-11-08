@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransportedBaseCaseEuler](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/declarations/transportedbasecaseeuler.md) | 52 | `declaration-track:a7bef313b65162f32c39ea8aac3930ae9ea3037c544d0b46289999c83c32c642` |
-| 2 | `theorem` | [transported_base_case_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/declarations/transported-base-case-euler-nonzero.md) | 63 | `result-track:8bd485015fb767f6cf99f822b11c06d6b61082fd8d18088ca090192dcc697b49` |
+| 1 | `structure` | [TransportedBaseCaseEuler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/declarations/transportedbasecaseeuler.md) | 52 | `declaration-track:a7bef313b65162f32c39ea8aac3930ae9ea3037c544d0b46289999c83c32c642` |
+| 2 | `theorem` | [transported_base_case_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonzeroTransfer.lean/declarations/transported-base-case-euler-nonzero.md) | 63 | `result-track:8bd485015fb767f6cf99f822b11c06d6b61082fd8d18088ca090192dcc697b49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

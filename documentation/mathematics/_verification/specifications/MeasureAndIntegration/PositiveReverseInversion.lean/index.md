@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveReverseInversion.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveReverseInversion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveReverseInversion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveReverseInversion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.ReverseInversion`](../../../../MeasureAndIntegration/MellinTransformReverseInversion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.ReverseInversion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformReverseInversion.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:c7cb5a8d877609050cc466773d6a2ba47169335cb7ae896cc48f2e65dc92d0f9` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:f39aba3acf030074d0afe91f0e5d00821cea6752a003ce3380c094e62eceeaee` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example-source-edition-2.md) | 22 | `declaration-track:a1907b5a74a5db024150c789b929626136963bf34643e8aee8704e31b5c95e96` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example.md) | 26 | `declaration-track:1e9fac8b66c13c240bd67e1ba1cadf007e254e7ada399af43968812e050da93e` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:c7cb5a8d877609050cc466773d6a2ba47169335cb7ae896cc48f2e65dc92d0f9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:f39aba3acf030074d0afe91f0e5d00821cea6752a003ce3380c094e62eceeaee` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example-source-edition-2.md) | 22 | `declaration-track:a1907b5a74a5db024150c789b929626136963bf34643e8aee8704e31b5c95e96` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveReverseInversion.lean/declarations/example.md) | 26 | `declaration-track:1e9fac8b66c13c240bd67e1ba1cadf007e254e7ada399af43968812e050da93e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

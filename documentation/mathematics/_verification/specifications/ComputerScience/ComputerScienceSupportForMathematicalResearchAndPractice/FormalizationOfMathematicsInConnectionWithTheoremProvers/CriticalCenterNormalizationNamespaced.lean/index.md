@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalization_sends_raw_to_spectral](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/declarations/normalization-sends-raw-to-spectral.md) | 27 | `result-track:f98a347a630303dda6fcf1e36676dce3e4f8bac9564ec2966950f36e10e8719f` |
-| 2 | `theorem` | [normalization_matches_declared_center](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/declarations/normalization-matches-declared-center.md) | 33 | `result-track:6b55eb87f635a83a69879a8916f95540787d201ec9d14513225b73de6baad868` |
-| 3 | `theorem` | [affine_shift_sends_raw_to_spectral](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/declarations/affine-shift-sends-raw-to-spectral.md) | 39 | `result-track:92604d814a6246ac9b9dfd1b2f954aeb8bc552b810b537514638675dfe644b01` |
+| 1 | `theorem` | [normalization_sends_raw_to_spectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/declarations/normalization-sends-raw-to-spectral.md) | 27 | `result-track:f98a347a630303dda6fcf1e36676dce3e4f8bac9564ec2966950f36e10e8719f` |
+| 2 | `theorem` | [normalization_matches_declared_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/declarations/normalization-matches-declared-center.md) | 33 | `result-track:6b55eb87f635a83a69879a8916f95540787d201ec9d14513225b73de6baad868` |
+| 3 | `theorem` | [affine_shift_sends_raw_to_spectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationNamespaced.lean/declarations/affine-shift-sends-raw-to-spectral.md) | 39 | `result-track:92604d814a6246ac9b9dfd1b2f954aeb8bc552b810b537514638675dfe644b01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

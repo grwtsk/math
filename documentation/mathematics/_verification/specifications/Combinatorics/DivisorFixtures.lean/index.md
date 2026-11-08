@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DivisorFixtures.lean/index.md) · [Full source](../../../../Combinatorics/DivisorFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [divisor_seventy_two_card](../../../../Combinatorics/DivisorFixtures.lean/declarations/divisor-seventy-two-card.md) | 9 | `result-track:130c3bb5eb5792d66b073c10853c723f7cb52f4fde7c225544526ff94ff88404` |
-| 2 | `theorem` | [divisor_one_card](../../../../Combinatorics/DivisorFixtures.lean/declarations/divisor-one-card.md) | 18 | `result-track:a152dad2137433384e959b6223e85b2fedbeda4649e1513b9ee1cfa3b832c301` |
-| 3 | `theorem` | [cyclic_one_graph_witness](../../../../Combinatorics/DivisorFixtures.lean/declarations/cyclic-one-graph-witness.md) | 23 | `result-track:3fe33734de735459d4802c4e61aa41c43b9212cb819dfbde69ce0ff989bd8670` |
-| 4 | `theorem` | [cyclic_one_color](../../../../Combinatorics/DivisorFixtures.lean/declarations/cyclic-one-color.md) | 27 | `result-track:d6662e70a6140e5cb134987e08f3812072483eb7e3490bf91ed50400d0b03326` |
+| 1 | `theorem` | [divisor_seventy_two_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFixtures.lean/declarations/divisor-seventy-two-card.md) | 9 | `result-track:130c3bb5eb5792d66b073c10853c723f7cb52f4fde7c225544526ff94ff88404` |
+| 2 | `theorem` | [divisor_one_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFixtures.lean/declarations/divisor-one-card.md) | 18 | `result-track:a152dad2137433384e959b6223e85b2fedbeda4649e1513b9ee1cfa3b832c301` |
+| 3 | `theorem` | [cyclic_one_graph_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFixtures.lean/declarations/cyclic-one-graph-witness.md) | 23 | `result-track:3fe33734de735459d4802c4e61aa41c43b9212cb819dfbde69ce0ff989bd8670` |
+| 4 | `theorem` | [cyclic_one_color](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFixtures.lean/declarations/cyclic-one-color.md) | 27 | `result-track:d6662e70a6140e5cb134987e08f3812072483eb7e3490bf91ed50400d0b03326` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

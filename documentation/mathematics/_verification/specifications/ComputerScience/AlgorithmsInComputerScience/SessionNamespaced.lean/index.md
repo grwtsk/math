@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SessionIdentity](../../../../../ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionidentity.md) | 20 | `declaration-track:64c09f33a9a55e15b98917d8236f6f6031adb68597f45111c173ddd88f952302` |
-| 2 | `structure` | [SessionState](../../../../../ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionstate.md) | 28 | `declaration-track:e269b0f751edcdb49c40c0ba39063f7f75c3f9b2007d5e207703932f120f5e26` |
-| 3 | `inductive` | [SessionEvent](../../../../../ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionevent.md) | 34 | `declaration-track:9c8ed36deb80560689bbc4699c0e9429ee5e9e53c9bcf1ed6de685468e590ebd` |
-| 4 | `inductive` | [SessionStep](../../../../../ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionstep.md) | 39 | `declaration-track:eef799ac9b47aaa2cd9c6f0049446fc9c38a177a24e8143ebfcd81e14d1e2a31` |
-| 5 | `theorem` | [disconnect_preserves_logical_session](../../../../../ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/disconnect-preserves-logical-session.md) | 61 | `result-track:22ad61b59676ef66c756bafb963a79f4e9cd25d0c18d856dfba23e8d5ed83ae0` |
+| 1 | `structure` | [SessionIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionidentity.md) | 20 | `declaration-track:64c09f33a9a55e15b98917d8236f6f6031adb68597f45111c173ddd88f952302` |
+| 2 | `structure` | [SessionState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionstate.md) | 28 | `declaration-track:e269b0f751edcdb49c40c0ba39063f7f75c3f9b2007d5e207703932f120f5e26` |
+| 3 | `inductive` | [SessionEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionevent.md) | 34 | `declaration-track:9c8ed36deb80560689bbc4699c0e9429ee5e9e53c9bcf1ed6de685468e590ebd` |
+| 4 | `inductive` | [SessionStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/sessionstep.md) | 39 | `declaration-track:eef799ac9b47aaa2cd9c6f0049446fc9c38a177a24e8143ebfcd81e14d1e2a31` |
+| 5 | `theorem` | [disconnect_preserves_logical_session](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SessionNamespaced.lean/declarations/disconnect-preserves-logical-session.md) | 61 | `result-track:22ad61b59676ef66c756bafb963a79f4e9cd25d0c18d856dfba23e8d5ed83ae0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

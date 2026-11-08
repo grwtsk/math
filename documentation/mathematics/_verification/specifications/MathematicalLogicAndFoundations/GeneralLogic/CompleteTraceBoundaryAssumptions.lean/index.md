@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.CanonicalPath.IndexSpectralTraceIdentity` — import line 19; external provider; requires a separately pinned dependency.
-- [Complete Operator Assumptions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/index.md) — import line 21; pinned internal source present.
+- [Complete Operator Assumptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteOperatorAssumptions.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralBoundaryCriterion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/declarations/spectralboundarycriterion.md) | 38 | `declaration-track:92c8169c6d919c06c50f232e22b9b9248ac47b3ed2942e32fa2fcb4b88cd6f31` |
-| 2 | `theorem` | [spectral_boundary_alignment_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/declarations/spectral-boundary-alignment-if-supplied.md) | 45 | `result-track:8ffd15fe508d204554fda08e4372c1ea2967fbb002bcc47374ea3af21c618614` |
+| 1 | `structure` | [SpectralBoundaryCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/declarations/spectralboundarycriterion.md) | 38 | `declaration-track:92c8169c6d919c06c50f232e22b9b9248ac47b3ed2942e32fa2fcb4b88cd6f31` |
+| 2 | `theorem` | [spectral_boundary_alignment_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceBoundaryAssumptions.lean/declarations/spectral-boundary-alignment-if-supplied.md) | 45 | `result-track:8ffd15fe508d204554fda08e4372c1ea2967fbb002bcc47374ea3af21c618614` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

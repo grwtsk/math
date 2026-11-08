@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticAutomorphismAction`](../../../../AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticAutomorphismAction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAutomorphismAction.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AllAutomorphismsPreserveRoots](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/allautomorphismspreserveroots.md) | 25 | `declaration-track:b0d6ed10ba0ce8b61c49c5b1be66c88d65400ae852879505a663e503674da343` |
-| 2 | `theorem` | [root_permutation_unique](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/root-permutation-unique.md) | 31 | `result-track:08b500b1be9bcc5ab2cf9c6195e9103797778ec2bc4ddc3193b487d6bc3e5147` |
-| 3 | `def` | [rootPerm](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/rootperm.md) | 42 | `declaration-track:43692b696c68ad4c5fe34fcb1e319f843d3b75421cc603e61f61de64ec2c632f` |
-| 4 | `theorem` | [rootPerm_spec](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/rootperm-spec.md) | 48 | `result-track:5f9c3300f75a1ea4e3892dd7fe4754128a52758a99943a364d100936a065b876` |
-| 5 | `def` | [rootPermutationHom](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/rootpermutationhom.md) | 58 | `declaration-track:868bf0499b660aa04500d32bc518e724ebd2903e50cadcf98e0dceb112c0db8b` |
+| 1 | `def` | [AllAutomorphismsPreserveRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/allautomorphismspreserveroots.md) | 25 | `declaration-track:b0d6ed10ba0ce8b61c49c5b1be66c88d65400ae852879505a663e503674da343` |
+| 2 | `theorem` | [root_permutation_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/root-permutation-unique.md) | 31 | `result-track:08b500b1be9bcc5ab2cf9c6195e9103797778ec2bc4ddc3193b487d6bc3e5147` |
+| 3 | `def` | [rootPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/rootperm.md) | 42 | `declaration-track:43692b696c68ad4c5fe34fcb1e319f843d3b75421cc603e61f61de64ec2c632f` |
+| 4 | `theorem` | [rootPerm_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/rootperm-spec.md) | 48 | `result-track:5f9c3300f75a1ea4e3892dd7fe4754128a52758a99943a364d100936a065b876` |
+| 5 | `def` | [rootPermutationHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/declarations/rootpermutationhom.md) | 58 | `declaration-track:868bf0499b660aa04500d32bc518e724ebd2903e50cadcf98e0dceb112c0db8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

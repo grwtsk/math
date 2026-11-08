@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Stabilization.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Stabilization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalityCertificate](../../../../CommutativeAlgebra/Stabilization.lean/declarations/localitycertificate.md) | 15 | `declaration-track:4b86f136205bef8a5883d2226cef50cf215c472eaee427922109dfa502b2d1f1` |
-| 2 | `structure` | [PersistentTerminalProfile](../../../../CommutativeAlgebra/Stabilization.lean/declarations/persistentterminalprofile.md) | 27 | `declaration-track:452a70403572e34cf4fbc071203fb833cfa2d28045500c6eb1c7a3e273131a57` |
-| 3 | `def` | [terminalStratum](../../../../CommutativeAlgebra/Stabilization.lean/declarations/terminalstratum.md) | 42 | `declaration-track:d12839a432b41830d2dc5b50c983ee8bd8ed9104a18c109ad532b4a115f7fc7d` |
-| 4 | `theorem` | [mem_terminalStratum_iff](../../../../CommutativeAlgebra/Stabilization.lean/declarations/mem-terminalstratum-iff.md) | 50 | `result-track:9f05faacab8bde34ab8b63b67ef82b23a86056cf7761e5b58bfb14ac862c79a7` |
-| 5 | `theorem` | [terminalStrata_partition](../../../../CommutativeAlgebra/Stabilization.lean/declarations/terminalstrata-partition.md) | 60 | `result-track:e603866a2156747b5cbf3b555d6b4cdbc919465160023a3d39571e8d390119d1` |
-| 6 | `theorem` | [active_support_nesting](../../../../CommutativeAlgebra/Stabilization.lean/declarations/active-support-nesting.md) | 71 | `result-track:02ae4640689d519a515d4a9c2a7d95d2829acca11913f329eb7ed9834ed26198` |
+| 1 | `structure` | [LocalityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/declarations/localitycertificate.md) | 15 | `declaration-track:4b86f136205bef8a5883d2226cef50cf215c472eaee427922109dfa502b2d1f1` |
+| 2 | `structure` | [PersistentTerminalProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/declarations/persistentterminalprofile.md) | 27 | `declaration-track:452a70403572e34cf4fbc071203fb833cfa2d28045500c6eb1c7a3e273131a57` |
+| 3 | `def` | [terminalStratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/declarations/terminalstratum.md) | 42 | `declaration-track:d12839a432b41830d2dc5b50c983ee8bd8ed9104a18c109ad532b4a115f7fc7d` |
+| 4 | `theorem` | [mem_terminalStratum_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/declarations/mem-terminalstratum-iff.md) | 50 | `result-track:9f05faacab8bde34ab8b63b67ef82b23a86056cf7761e5b58bfb14ac862c79a7` |
+| 5 | `theorem` | [terminalStrata_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/declarations/terminalstrata-partition.md) | 60 | `result-track:e603866a2156747b5cbf3b555d6b4cdbc919465160023a3d39571e8d390119d1` |
+| 6 | `theorem` | [active_support_nesting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Stabilization.lean/declarations/active-support-nesting.md) | 71 | `result-track:02ae4640689d519a515d4a9c2a7d95d2829acca11913f329eb7ed9834ed26198` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [etalePretopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/etalepretopology.md) | 35 | `declaration-track:8bbd2454952f251b3fa41527033226f6013656a9f5d6dd31e343e153599d2d1b` |
-| 2 | `abbrev` | [etaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/etaletopology.md) | 39 | `declaration-track:a69e914cce3b004e956d7028727a8e99997fdf3508fd9eec8832ca20ea2afb6c` |
-| 3 | `lemma` | [zariskiTopology_le_etaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/zariskitopology-le-etaletopology.md) | 42 | `result-track:6858020a7c264672f80a77ece576f515759d16fdbc62f982cf876014148aaee9` |
-| 4 | `def` | [smallEtaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/smalletaletopology.md) | 49 | `declaration-track:8e49a67eb1c72933934c82a6ee46e0f19490f02d20973a1c32eff9dc2b7bd3e7` |
-| 5 | `def` | [smallEtalePretopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/smalletalepretopology.md) | 53 | `declaration-track:e3a8dedaa52c9786a26de1a7a79ba8291b84130a715ca003028d2a4efb125331` |
+| 1 | `def` | [etalePretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/etalepretopology.md) | 35 | `declaration-track:8bbd2454952f251b3fa41527033226f6013656a9f5d6dd31e343e153599d2d1b` |
+| 2 | `abbrev` | [etaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/etaletopology.md) | 39 | `declaration-track:a69e914cce3b004e956d7028727a8e99997fdf3508fd9eec8832ca20ea2afb6c` |
+| 3 | `lemma` | [zariskiTopology_le_etaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/zariskitopology-le-etaletopology.md) | 42 | `result-track:6858020a7c264672f80a77ece576f515759d16fdbc62f982cf876014148aaee9` |
+| 4 | `def` | [smallEtaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/smalletaletopology.md) | 49 | `declaration-track:8e49a67eb1c72933934c82a6ee46e0f19490f02d20973a1c32eff9dc2b7bd3e7` |
+| 5 | `def` | [smallEtalePretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtaleNamespaced.lean/declarations/smalletalepretopology.md) | 53 | `declaration-track:e3a8dedaa52c9786a26de1a7a79ba8291b84130a715ca003028d2a4efb125331` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

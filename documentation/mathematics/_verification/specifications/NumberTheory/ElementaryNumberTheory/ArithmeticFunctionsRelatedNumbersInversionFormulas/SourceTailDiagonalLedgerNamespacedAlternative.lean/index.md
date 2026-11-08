@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_ledger_error_of_diagonal_tail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/actual-ledger-error-of-diagonal-tail.md) | 30 | `result-track:498df61db06c40d1ec3cca1beeddc749ab37dd47a47ea8ec9f508ff748950499` |
-| 2 | `theorem` | [residual_tail_of_diagonal_and_readout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/residual-tail-of-diagonal-and-readout.md) | 64 | `result-track:35b45ddc87d96e820788d7451caf47e5af04ddb33dce770808076100c5e893a4` |
-| 3 | `theorem` | [all_real_lower_of_diagonal_and_readout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/all-real-lower-of-diagonal-and-readout.md) | 80 | `result-track:e07bd29532de89dd5f0fe61d6d027ba4d331b90388be1e9c53734ed3253ca4e7` |
-| 4 | `theorem` | [estimate_of_diagonal_and_readout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/estimate-of-diagonal-and-readout.md) | 102 | `result-track:6b10c05aa06a90af1cb9a260509b1917a3f8882410f39ee8550980deae61f116` |
+| 1 | `theorem` | [actual_ledger_error_of_diagonal_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/actual-ledger-error-of-diagonal-tail.md) | 30 | `result-track:498df61db06c40d1ec3cca1beeddc749ab37dd47a47ea8ec9f508ff748950499` |
+| 2 | `theorem` | [residual_tail_of_diagonal_and_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/residual-tail-of-diagonal-and-readout.md) | 64 | `result-track:35b45ddc87d96e820788d7451caf47e5af04ddb33dce770808076100c5e893a4` |
+| 3 | `theorem` | [all_real_lower_of_diagonal_and_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/all-real-lower-of-diagonal-and-readout.md) | 80 | `result-track:e07bd29532de89dd5f0fe61d6d027ba4d331b90388be1e9c53734ed3253ca4e7` |
+| 4 | `theorem` | [estimate_of_diagonal_and_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceTailDiagonalLedgerNamespacedAlternative.lean/declarations/estimate-of-diagonal-and-readout.md) | 102 | `result-track:6b10c05aa06a90af1cb9a260509b1917a3f8882410f39ee8550980deae61f116` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

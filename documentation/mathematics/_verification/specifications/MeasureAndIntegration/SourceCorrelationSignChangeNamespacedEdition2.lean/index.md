@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_exists_neg](../../../../MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/declarations/sourcecorrelation-exists-neg.md) | 34 | `result-track:497cadfa0b458afc4566504753e6e5228826e4bdabe00cc3966d39abb2c3855b` |
-| 2 | `theorem` | [sourceCorrelation_exists_neg_in_half_support](../../../../MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/declarations/sourcecorrelation-exists-neg-in-half-support.md) | 55 | `result-track:face346c341870a36abe9e147bde106d4359f6d309df39cf0f08b007272931e4` |
+| 1 | `theorem` | [sourceCorrelation_exists_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/declarations/sourcecorrelation-exists-neg.md) | 34 | `result-track:497cadfa0b458afc4566504753e6e5228826e4bdabe00cc3966d39abb2c3855b` |
+| 2 | `theorem` | [sourceCorrelation_exists_neg_in_half_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationSignChangeNamespacedEdition2.lean/declarations/sourcecorrelation-exists-neg-in-half-support.md) | 55 | `result-track:face346c341870a36abe9e147bde106d4359f6d309df39cf0f08b007272931e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

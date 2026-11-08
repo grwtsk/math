@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,8 +64,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Int.euclideanDomain](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/declarations/int-euclideandomain.md) | 23 | `declaration-track:1e48aa6d30fc16a936fd8c001239f10147f315f236fafb671a90457d1fc4d0f7` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/declarations/instance.md) | 41 | `declaration-track:7a40b0dc02cd252aa71e87805db810029b13fdc392636a2cd6df22fd7eba8d1d` |
+| 1 | `instance` | [Int.euclideanDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/declarations/int-euclideandomain.md) | 23 | `declaration-track:1e48aa6d30fc16a936fd8c001239f10147f315f236fafb671a90457d1fc4d0f7` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainInstances.lean/declarations/instance.md) | 41 | `declaration-track:7a40b0dc02cd252aa71e87805db810029b13fdc392636a2cd6df22fd7eba8d1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

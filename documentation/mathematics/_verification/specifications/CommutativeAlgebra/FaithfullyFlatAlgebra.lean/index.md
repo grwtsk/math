@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Module.FaithfullyFlat.of_specComap_surjective](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/module-faithfullyflat-of-speccomap-surjective.md) | 46 | `result-track:ca61aed888e9de2f7e1fb459b4da616159d5a927ae3241bcdb3a72eeac6f223b` |
-| 2 | `lemma` | [Module.FaithfullyFlat.of_flat_of_isLocalHom](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/module-faithfullyflat-of-flat-of-islocalhom.md) | 58 | `result-track:e38c23fdf2c2e492e2c22d3c839b56c4c62b8fe6cb5b8a8bcb9692b2196a67f0` |
-| 3 | `lemma` | [Module.FaithfullyFlat.tensorProduct_mk_injective](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/module-faithfullyflat-tensorproduct-mk-injective.md) | 73 | `result-track:b350c52c57f1aaef98dde96d561fdbfb57d28981633b94b97ac1c11b4d0de828` |
-| 4 | `lemma` | [Ideal.comap_map_eq_self_of_faithfullyFlat](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/ideal-comap-map-eq-self-of-faithfullyflat.md) | 87 | `result-track:5433b5aa0393eb6a6e1adb01ca73a6940873766b349c837cf7944b3f5fa74208` |
-| 5 | `lemma` | [Ideal.comap_surjective_of_faithfullyFlat](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/ideal-comap-surjective-of-faithfullyflat.md) | 107 | `result-track:292dd184ccd19c6455638ebc72c0f72c1594b9d626ea8c10299f2e51550bd49d` |
-| 6 | `lemma` | [Ideal.exists_isPrime_liesOver_of_faithfullyFlat](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/ideal-exists-isprime-liesover-of-faithfullyflat.md) | 112 | `result-track:16ff5eb65f04f9f7cc051d9528e3bd80fec7c06765708d3675e32baa757fbcbb` |
-| 7 | `lemma` | [PrimeSpectrum.specComap_surjective_of_faithfullyFlat](../../../../CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/primespectrum-speccomap-surjective-of-faithfullyflat.md) | 120 | `result-track:33e2b0c9dc725c671296aa1fa2ff323cff02bd0bd482e93bbedbb492801a1dc4` |
+| 1 | `lemma` | [Module.FaithfullyFlat.of_specComap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/module-faithfullyflat-of-speccomap-surjective.md) | 46 | `result-track:ca61aed888e9de2f7e1fb459b4da616159d5a927ae3241bcdb3a72eeac6f223b` |
+| 2 | `lemma` | [Module.FaithfullyFlat.of_flat_of_isLocalHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/module-faithfullyflat-of-flat-of-islocalhom.md) | 58 | `result-track:e38c23fdf2c2e492e2c22d3c839b56c4c62b8fe6cb5b8a8bcb9692b2196a67f0` |
+| 3 | `lemma` | [Module.FaithfullyFlat.tensorProduct_mk_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/module-faithfullyflat-tensorproduct-mk-injective.md) | 73 | `result-track:b350c52c57f1aaef98dde96d561fdbfb57d28981633b94b97ac1c11b4d0de828` |
+| 4 | `lemma` | [Ideal.comap_map_eq_self_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/ideal-comap-map-eq-self-of-faithfullyflat.md) | 87 | `result-track:5433b5aa0393eb6a6e1adb01ca73a6940873766b349c837cf7944b3f5fa74208` |
+| 5 | `lemma` | [Ideal.comap_surjective_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/ideal-comap-surjective-of-faithfullyflat.md) | 107 | `result-track:292dd184ccd19c6455638ebc72c0f72c1594b9d626ea8c10299f2e51550bd49d` |
+| 6 | `lemma` | [Ideal.exists_isPrime_liesOver_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/ideal-exists-isprime-liesover-of-faithfullyflat.md) | 112 | `result-track:16ff5eb65f04f9f7cc051d9528e3bd80fec7c06765708d3675e32baa757fbcbb` |
+| 7 | `lemma` | [PrimeSpectrum.specComap_surjective_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FaithfullyFlatAlgebra.lean/declarations/primespectrum-speccomap-surjective-of-faithfullyflat.md) | 120 | `result-track:33e2b0c9dc725c671296aa1fa2ff323cff02bd0bd482e93bbedbb492801a1dc4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

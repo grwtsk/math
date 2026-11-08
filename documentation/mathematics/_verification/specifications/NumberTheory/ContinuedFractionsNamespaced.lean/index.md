@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ContinuedFractionsNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/ContinuedFractionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convs_eq_convergent](../../../../NumberTheory/ContinuedFractionsNamespaced.lean/declarations/convs-eq-convergent.md) | 42 | `result-track:c54377deb49a8edf447906483ef71bbdda344f07e9ac34a0ca8cf94d18cde76e` |
-| 2 | `theorem` | [exists_convs_eq_rat](../../../../NumberTheory/ContinuedFractionsNamespaced.lean/declarations/exists-convs-eq-rat.md) | 60 | `result-track:21dc797b52b901dab6856adde39f0344c39495dd1d7cbba98e60515b43e31054` |
+| 1 | `theorem` | [convs_eq_convergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsNamespaced.lean/declarations/convs-eq-convergent.md) | 42 | `result-track:c54377deb49a8edf447906483ef71bbdda344f07e9ac34a0ca8cf94d18cde76e` |
+| 2 | `theorem` | [exists_convs_eq_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsNamespaced.lean/declarations/exists-convs-eq-rat.md) | 60 | `result-track:21dc797b52b901dab6856adde39f0344c39495dd1d7cbba98e60515b43e31054` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

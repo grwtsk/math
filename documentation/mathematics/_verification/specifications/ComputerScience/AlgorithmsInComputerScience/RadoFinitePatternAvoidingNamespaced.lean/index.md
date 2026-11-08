@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_mem_left_of_not_mem_append](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/declarations/not-mem-left-of-not-mem-append.md) | 29 | `result-track:374a36c3d729ec200b05629476a8c4ca534bc916c05384a465625ad82c805b64` |
-| 2 | `theorem` | [not_mem_right_of_not_mem_append](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/declarations/not-mem-right-of-not-mem-append.md) | 36 | `result-track:8bd928a07f4c980ba244e345d8d8b3bd82b4ed174ad608b4274a212055524a38` |
-| 3 | `theorem` | [bitRado_copy_finite_pattern_avoiding_extra_list](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/declarations/bitrado-copy-finite-pattern-avoiding-extra-list.md) | 43 | `result-track:bad0f98621f41e3637bb62daf85465ef6c052f637f509b91de1bf29fe72351b8` |
+| 1 | `theorem` | [not_mem_left_of_not_mem_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/declarations/not-mem-left-of-not-mem-append.md) | 29 | `result-track:374a36c3d729ec200b05629476a8c4ca534bc916c05384a465625ad82c805b64` |
+| 2 | `theorem` | [not_mem_right_of_not_mem_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/declarations/not-mem-right-of-not-mem-append.md) | 36 | `result-track:8bd928a07f4c980ba244e345d8d8b3bd82b4ed174ad608b4274a212055524a38` |
+| 3 | `theorem` | [bitRado_copy_finite_pattern_avoiding_extra_list](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAvoidingNamespaced.lean/declarations/bitrado-copy-finite-pattern-avoiding-extra-list.md) | 43 | `result-track:bad0f98621f41e3637bb62daf85465ef6c052f637f509b91de1bf29fe72351b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

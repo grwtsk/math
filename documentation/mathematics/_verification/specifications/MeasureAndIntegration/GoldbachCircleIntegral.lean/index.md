@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.UnitIntervalCharacters`](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachWeighted`](../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.UnitIntervalCharacters`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachWeighted`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachExponentialSum](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachexponentialsum.md) | 34 | `declaration-track:b696de32789bede392e6deeb97d700ceb2e88a306266f2bef7a59c42a2cc8550` |
-| 2 | `def` | [goldbachCircleIntegrand](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegrand.md) | 40 | `declaration-track:cf408ef9d67474b0acc9f92703d99ab4caface254caef1f7134012fa160aeec5` |
-| 3 | `def` | [goldbachFrequencyTerm](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachfrequencyterm.md) | 45 | `declaration-track:45451bd40b60103bc16c901bb76bc9b93fc727eee7120edabba5c2c4151318ac` |
-| 4 | `def` | [goldbachFrequencySum](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachfrequencysum.md) | 50 | `declaration-track:303fd8247f7d8a383df4c8bd123ea2efe49a7141bdd63a1d4cdb6ea7abbf22e5` |
-| 5 | `theorem` | [continuous_goldbachFrequencyTerm](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/continuous-goldbachfrequencyterm.md) | 55 | `result-track:1630b1d93d9197a26101c4d62e577432ad88a16cc1f85d566ffb039c439abbad` |
-| 6 | `theorem` | [continuous_goldbachFrequencySum](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/continuous-goldbachfrequencysum.md) | 61 | `result-track:2ca6f1b585348dca3a0f1d4e6d24be334a928803cb6cf0910d6d95e866e2170a` |
-| 7 | `theorem` | [goldbachCircleIntegrand_eq_frequencySum](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegrand-eq-frequencysum.md) | 68 | `result-track:5cde629448b5f6b2d2e75265768dca893443312caa82698e8fb1757192ce9d98` |
-| 8 | `theorem` | [integral_goldbachFrequencyTerm](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/integral-goldbachfrequencyterm.md) | 81 | `result-track:3d08f9a35e4147aca2c2be07e6acffa2a266dd58bc53b7c035aed9204dbc555a` |
-| 9 | `theorem` | [goldbachCircleIntegral_eq_indicatorSum](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegral-eq-indicatorsum.md) | 101 | `result-track:9a06dd010b269c4372133ddfb1263b71e6723c095f962f816ac577e8e034644d` |
-| 10 | `theorem` | [goldbachIndicatorSum_eq_logMass](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachindicatorsum-eq-logmass.md) | 137 | `result-track:40b138b19fb882eb4be4486532f8d07b085d2957a5e6ea746e665afb9a2941e8` |
-| 11 | `theorem` | [goldbachCircleIntegral_eq_logMass](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegral-eq-logmass.md) | 155 | `result-track:1d703a0ec774dae436cbbce13f8c364d72b6fd60bc5a1340acdf454d3adcb7a4` |
+| 1 | `def` | [goldbachExponentialSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachexponentialsum.md) | 34 | `declaration-track:b696de32789bede392e6deeb97d700ceb2e88a306266f2bef7a59c42a2cc8550` |
+| 2 | `def` | [goldbachCircleIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegrand.md) | 40 | `declaration-track:cf408ef9d67474b0acc9f92703d99ab4caface254caef1f7134012fa160aeec5` |
+| 3 | `def` | [goldbachFrequencyTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachfrequencyterm.md) | 45 | `declaration-track:45451bd40b60103bc16c901bb76bc9b93fc727eee7120edabba5c2c4151318ac` |
+| 4 | `def` | [goldbachFrequencySum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachfrequencysum.md) | 50 | `declaration-track:303fd8247f7d8a383df4c8bd123ea2efe49a7141bdd63a1d4cdb6ea7abbf22e5` |
+| 5 | `theorem` | [continuous_goldbachFrequencyTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/continuous-goldbachfrequencyterm.md) | 55 | `result-track:1630b1d93d9197a26101c4d62e577432ad88a16cc1f85d566ffb039c439abbad` |
+| 6 | `theorem` | [continuous_goldbachFrequencySum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/continuous-goldbachfrequencysum.md) | 61 | `result-track:2ca6f1b585348dca3a0f1d4e6d24be334a928803cb6cf0910d6d95e866e2170a` |
+| 7 | `theorem` | [goldbachCircleIntegrand_eq_frequencySum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegrand-eq-frequencysum.md) | 68 | `result-track:5cde629448b5f6b2d2e75265768dca893443312caa82698e8fb1757192ce9d98` |
+| 8 | `theorem` | [integral_goldbachFrequencyTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/integral-goldbachfrequencyterm.md) | 81 | `result-track:3d08f9a35e4147aca2c2be07e6acffa2a266dd58bc53b7c035aed9204dbc555a` |
+| 9 | `theorem` | [goldbachCircleIntegral_eq_indicatorSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegral-eq-indicatorsum.md) | 101 | `result-track:9a06dd010b269c4372133ddfb1263b71e6723c095f962f816ac577e8e034644d` |
+| 10 | `theorem` | [goldbachIndicatorSum_eq_logMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachindicatorsum-eq-logmass.md) | 137 | `result-track:40b138b19fb882eb4be4486532f8d07b085d2957a5e6ea746e665afb9a2941e8` |
+| 11 | `theorem` | [goldbachCircleIntegral_eq_logMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/declarations/goldbachcircleintegral-eq-logmass.md) | 155 | `result-track:1d703a0ec774dae436cbbce13f8c364d72b6fd60bc5a1340acdf454d3adcb7a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

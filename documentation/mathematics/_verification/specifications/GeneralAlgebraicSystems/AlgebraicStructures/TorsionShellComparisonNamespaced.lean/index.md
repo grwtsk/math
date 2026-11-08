@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shell_twist_of_zero_is_identity](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/declarations/shell-twist-of-zero-is-identity.md) | 29 | `result-track:5430cfd8d6a11bf65125d9207d0c79bfa88e024207bd53898fd6ff1a9cdaff28` |
-| 2 | `theorem` | [shell_twist_respects_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/declarations/shell-twist-respects-add.md) | 39 | `result-track:a32cd38432c4e7ea9305d7979dc12a01f205c8d9e83ab7565ab1b1c8e65774a9` |
+| 1 | `theorem` | [shell_twist_of_zero_is_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/declarations/shell-twist-of-zero-is-identity.md) | 29 | `result-track:5430cfd8d6a11bf65125d9207d0c79bfa88e024207bd53898fd6ff1a9cdaff28` |
+| 2 | `theorem` | [shell_twist_respects_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionShellComparisonNamespaced.lean/declarations/shell-twist-respects-add.md) | 39 | `result-track:a32cd38432c4e7ea9305d7979dc12a01f205c8d9e83ab7565ab1b1c8e65774a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseRadial`](../../../../GeneralTopology/SurfacePolygonReverseRadial.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseRadial`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseRadial.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [cornerDiscreteTopology](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/cornerdiscretetopology.md) | 18 | `declaration-track:41f1ac0b4c0b845232d955775ba9b99092632ce797fb42658e85e0b9f4712918` |
-| 2 | `theorem` | [cylinder_respects_cone](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/cylinder-respects-cone.md) | 22 | `result-track:18f0876d80612669d0912b484f8f5a0ff377f31eb526b633d3888a86a1d4e90b` |
-| 3 | `def` | [perimeterConeToFilling](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/perimeterconetofilling.md) | 42 | `declaration-track:698b135fc2420032a179f222d7338b5dd154523d6feeafc89fdb2e2bd8dda707` |
-| 4 | `theorem` | [perimeterConeToFilling_source](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/perimeterconetofilling-source.md) | 47 | `result-track:3aae9e62c5ea45d9c906b8297dd5a145736e1a7f750abba6da9aeb0e0322900d` |
-| 5 | `theorem` | [perimeterConeToFilling_continuous](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/perimeterconetofilling-continuous.md) | 53 | `result-track:3cb0802ecf55a155f63e9a3c5fb282aefa2db24b46371649ddc5f954e1e4ff1b` |
-| 6 | `def` | [euclideanDiskToFilling](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/euclideandisktofilling.md) | 60 | `declaration-track:0bdd1b23b860122434663bc715bdfaab90fe076ee6dfb66334459f3ffa0aa319` |
-| 7 | `theorem` | [euclideanDiskToFilling_continuous](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/euclideandisktofilling-continuous.md) | 65 | `result-track:16970cc6484705f6a0c87d583646f35730a90498cf51f01bb33d9e5ec3eec468` |
-| 8 | `theorem` | [euclideanDiskToFilling_boundary](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/declarations/euclideandisktofilling-boundary.md) | 72 | `result-track:a13171cb1b53a5806fa2f4577ece5799cb610ef41725aab82b9399c739244761` |
+| 1 | `instance` | [cornerDiscreteTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/cornerdiscretetopology.md) | 18 | `declaration-track:41f1ac0b4c0b845232d955775ba9b99092632ce797fb42658e85e0b9f4712918` |
+| 2 | `theorem` | [cylinder_respects_cone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/cylinder-respects-cone.md) | 22 | `result-track:18f0876d80612669d0912b484f8f5a0ff377f31eb526b633d3888a86a1d4e90b` |
+| 3 | `def` | [perimeterConeToFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/perimeterconetofilling.md) | 42 | `declaration-track:698b135fc2420032a179f222d7338b5dd154523d6feeafc89fdb2e2bd8dda707` |
+| 4 | `theorem` | [perimeterConeToFilling_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/perimeterconetofilling-source.md) | 47 | `result-track:3aae9e62c5ea45d9c906b8297dd5a145736e1a7f750abba6da9aeb0e0322900d` |
+| 5 | `theorem` | [perimeterConeToFilling_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/perimeterconetofilling-continuous.md) | 53 | `result-track:3cb0802ecf55a155f63e9a3c5fb282aefa2db24b46371649ddc5f954e1e4ff1b` |
+| 6 | `def` | [euclideanDiskToFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/euclideandisktofilling.md) | 60 | `declaration-track:0bdd1b23b860122434663bc715bdfaab90fe076ee6dfb66334459f3ffa0aa319` |
+| 7 | `theorem` | [euclideanDiskToFilling_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/euclideandisktofilling-continuous.md) | 65 | `result-track:16970cc6484705f6a0c87d583646f35730a90498cf51f01bb33d9e5ec3eec468` |
+| 8 | `theorem` | [euclideanDiskToFilling_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/declarations/euclideandisktofilling-boundary.md) | 72 | `result-track:a13171cb1b53a5806fa2f4577ece5799cb610ef41725aab82b9399c739244761` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

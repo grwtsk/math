@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [product](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/product.md) | 28 | `declaration-track:3fb7250e0fbbb668e24d4bb542caa1d72d7e8db2daece73974ccf9eb70ce1161` |
-| 2 | `theorem` | [product_analytic](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/product-analytic.md) | 31 | `result-track:d2a095ce6ecb0296e5e21ae3173312060bfce037c57b9117ebc84cc56ff984fd` |
-| 3 | `theorem` | [product_nonzero](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/product-nonzero.md) | 35 | `result-track:9a69f3133d9fc0b0fc18a26f014cab4d71810d3dc1e434bf5f8ba8b070eef45b` |
-| 4 | `theorem` | [local_product](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/local-product.md) | 39 | `result-track:c3fe9debd427157c79fac36902c7fe696ac68ed3938e806ec02d41f740d0a294` |
-| 5 | `theorem` | [exists_quotient](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/exists-quotient.md) | 57 | `result-track:d9cd9dcde2421b69ade92482c38bdcb46d37c607eff7a5b0049e1ceabf9ed4e2` |
+| 1 | `def` | [product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/product.md) | 28 | `declaration-track:3fb7250e0fbbb668e24d4bb542caa1d72d7e8db2daece73974ccf9eb70ce1161` |
+| 2 | `theorem` | [product_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/product-analytic.md) | 31 | `result-track:d2a095ce6ecb0296e5e21ae3173312060bfce037c57b9117ebc84cc56ff984fd` |
+| 3 | `theorem` | [product_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/product-nonzero.md) | 35 | `result-track:9a69f3133d9fc0b0fc18a26f014cab4d71810d3dc1e434bf5f8ba8b070eef45b` |
+| 4 | `theorem` | [local_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/local-product.md) | 39 | `result-track:c3fe9debd427157c79fac36902c7fe696ac68ed3938e806ec02d41f740d0a294` |
+| 5 | `theorem` | [exists_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/declarations/exists-quotient.md) | 57 | `result-track:d9cd9dcde2421b69ade92482c38bdcb46d37c607eff7a5b0049e1ceabf9ed4e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

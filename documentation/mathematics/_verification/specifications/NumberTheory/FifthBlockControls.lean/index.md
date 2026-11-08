@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FifthBlockControls.lean/index.md) · [Full source](../../../../NumberTheory/FifthBlockControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFiveBlocksAndTerminal`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFiveBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFiveBlocksAndTerminal`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFiveBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [base_boundaries](../../../../NumberTheory/FifthBlockControls.lean/declarations/base-boundaries.md) | 13 | `result-track:f4cf45d37c9cda93b83dac538521be1bac153ef9210240bf1f2c0160943a7ee9` |
-| 2 | `theorem` | [prefix_boundaries](../../../../NumberTheory/FifthBlockControls.lean/declarations/prefix-boundaries.md) | 17 | `result-track:c650c649cbf14be437f1852f67a5b7383a7e5788da92dae50c7a94f1b9612e28` |
-| 3 | `theorem` | [fifth_block_endpoints](../../../../NumberTheory/FifthBlockControls.lean/declarations/fifth-block-endpoints.md) | 21 | `result-track:019c90fbb82b96da64f219fb253016db8782b9432cd2f5ab73c1eba26d1c7af5` |
-| 4 | `theorem` | [adjacent_positions_excluded](../../../../NumberTheory/FifthBlockControls.lean/declarations/adjacent-positions-excluded.md) | 26 | `result-track:2c1e0c717484c6eb920660990a71521bdb740fd70cfb0ea3ad6f136b39b1f5de` |
-| 5 | `theorem` | [logarithm_reduction_uniform](../../../../NumberTheory/FifthBlockControls.lean/declarations/logarithm-reduction-uniform.md) | 31 | `result-track:b557e13683332ced0e34df2ae5c8a86d78e5a76837c72de18f1ea321bec5e84a` |
-| 6 | `theorem` | [terminal_not_fifth_block](../../../../NumberTheory/FifthBlockControls.lean/declarations/terminal-not-fifth-block.md) | 35 | `result-track:086394a7ca747f56fa47e48bdb86e052bc65cc03ce63b010d29e008b98c23bfd` |
-| 7 | `theorem` | [first_unfilled_preserved](../../../../NumberTheory/FifthBlockControls.lean/declarations/first-unfilled-preserved.md) | 40 | `result-track:f5b72f4020a24f7ce8c11feb33a2a6ac295d1edaa4d3ae4294c56cf5632ed4e5` |
-| 8 | `theorem` | [terminal_is_copied_exactly](../../../../NumberTheory/FifthBlockControls.lean/declarations/terminal-is-copied-exactly.md) | 45 | `result-track:b06188685cf71a126afb808212e7a04d6dcae203886f85de7d6ce2b20ef561e7` |
-| 9 | `theorem` | [remaining_label_boundaries](../../../../NumberTheory/FifthBlockControls.lean/declarations/remaining-label-boundaries.md) | 49 | `result-track:720cf502d08af815754cf39bdb65d2987401167c87d116a925c1ed26c4c3f3da` |
+| 1 | `theorem` | [base_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/base-boundaries.md) | 13 | `result-track:f4cf45d37c9cda93b83dac538521be1bac153ef9210240bf1f2c0160943a7ee9` |
+| 2 | `theorem` | [prefix_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/prefix-boundaries.md) | 17 | `result-track:c650c649cbf14be437f1852f67a5b7383a7e5788da92dae50c7a94f1b9612e28` |
+| 3 | `theorem` | [fifth_block_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/fifth-block-endpoints.md) | 21 | `result-track:019c90fbb82b96da64f219fb253016db8782b9432cd2f5ab73c1eba26d1c7af5` |
+| 4 | `theorem` | [adjacent_positions_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/adjacent-positions-excluded.md) | 26 | `result-track:2c1e0c717484c6eb920660990a71521bdb740fd70cfb0ea3ad6f136b39b1f5de` |
+| 5 | `theorem` | [logarithm_reduction_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/logarithm-reduction-uniform.md) | 31 | `result-track:b557e13683332ced0e34df2ae5c8a86d78e5a76837c72de18f1ea321bec5e84a` |
+| 6 | `theorem` | [terminal_not_fifth_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/terminal-not-fifth-block.md) | 35 | `result-track:086394a7ca747f56fa47e48bdb86e052bc65cc03ce63b010d29e008b98c23bfd` |
+| 7 | `theorem` | [first_unfilled_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/first-unfilled-preserved.md) | 40 | `result-track:f5b72f4020a24f7ce8c11feb33a2a6ac295d1edaa4d3ae4294c56cf5632ed4e5` |
+| 8 | `theorem` | [terminal_is_copied_exactly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/terminal-is-copied-exactly.md) | 45 | `result-track:b06188685cf71a126afb808212e7a04d6dcae203886f85de7d6ce2b20ef561e7` |
+| 9 | `theorem` | [remaining_label_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FifthBlockControls.lean/declarations/remaining-label-boundaries.md) | 49 | `result-track:720cf502d08af815754cf39bdb65d2987401167c87d116a925c1ed26c4c3f3da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

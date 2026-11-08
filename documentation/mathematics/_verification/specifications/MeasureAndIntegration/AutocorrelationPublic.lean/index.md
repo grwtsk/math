@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexMultiplication](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/complexmultiplication.md) | 29 | `declaration-track:130edc79fe937c740c0a0bd63973d7127aaab75bc5bee6b704c6ed3ae34961ca` |
-| 2 | `def` | [autocorrelationFun](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelationfun.md) | 36 | `declaration-track:1b752cab93914be9c85c4f1537c85c722ae708a158a8ba1abd36fe52bc5179df` |
-| 3 | `theorem` | [autocorrelationFun_apply](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelationfun-apply.md) | 40 | `result-track:a88ab5172f0c4b1826426f47074ca00cdcd75016730111e82f93380ccd514d8e` |
-| 4 | `def` | [autocorrelation](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation.md) | 51 | `declaration-track:520588098d77676aa42f996224d266d3f81c4f9083046372f1eeedb7de7151fa` |
-| 5 | `theorem` | [autocorrelation_apply](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-apply.md) | 71 | `result-track:56e3fbd9be6309f7b80752fed7184b1f18145d6769e30ee50e2bdd0531485635` |
-| 6 | `theorem` | [autocorrelation_supportRadius](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-supportradius.md) | 76 | `result-track:b6a2f39b5510d87f92685b7029732167ff2b126847c795938fa178b82fb0db1a` |
-| 7 | `theorem` | [autocorrelation_neg](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-neg.md) | 82 | `result-track:739c66ee8bdf58d85bfba862a3b68421ee3e92c98211c155af1b825d01eed12c` |
-| 8 | `theorem` | [autocorrelation_zero](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-zero.md) | 95 | `result-track:881dc8363f5efa6016d921df5bf5025f2a98b258f3c59e311502d7b62ad10cf9` |
-| 9 | `theorem` | [autocorrelation_support](../../../../MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-support.md) | 106 | `result-track:5cf6a535a51137e5b742d61ca077687bdb77ab40e4a60dd1af8b866a27e69202` |
+| 1 | `def` | [complexMultiplication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/complexmultiplication.md) | 29 | `declaration-track:130edc79fe937c740c0a0bd63973d7127aaab75bc5bee6b704c6ed3ae34961ca` |
+| 2 | `def` | [autocorrelationFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelationfun.md) | 36 | `declaration-track:1b752cab93914be9c85c4f1537c85c722ae708a158a8ba1abd36fe52bc5179df` |
+| 3 | `theorem` | [autocorrelationFun_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelationfun-apply.md) | 40 | `result-track:a88ab5172f0c4b1826426f47074ca00cdcd75016730111e82f93380ccd514d8e` |
+| 4 | `def` | [autocorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation.md) | 51 | `declaration-track:520588098d77676aa42f996224d266d3f81c4f9083046372f1eeedb7de7151fa` |
+| 5 | `theorem` | [autocorrelation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-apply.md) | 71 | `result-track:56e3fbd9be6309f7b80752fed7184b1f18145d6769e30ee50e2bdd0531485635` |
+| 6 | `theorem` | [autocorrelation_supportRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-supportradius.md) | 76 | `result-track:b6a2f39b5510d87f92685b7029732167ff2b126847c795938fa178b82fb0db1a` |
+| 7 | `theorem` | [autocorrelation_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-neg.md) | 82 | `result-track:739c66ee8bdf58d85bfba862a3b68421ee3e92c98211c155af1b825d01eed12c` |
+| 8 | `theorem` | [autocorrelation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-zero.md) | 95 | `result-track:881dc8363f5efa6016d921df5bf5025f2a98b258f3c59e311502d7b62ad10cf9` |
+| 9 | `theorem` | [autocorrelation_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationPublic.lean/declarations/autocorrelation-support.md) | 106 | `result-track:5cf6a535a51137e5b742d61ca077687bdb77ab40e4a60dd1af8b866a27e69202` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

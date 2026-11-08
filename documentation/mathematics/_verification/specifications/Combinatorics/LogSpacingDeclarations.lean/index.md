@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LogSpacingDeclarations.lean/index.md) · [Full source](../../../../Combinatorics/LogSpacingDeclarations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LogSpacingDeclarations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LogSpacingDeclarations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/LogSpacingDeclarations.lean/declarations/example.md) | 11 | `declaration-track:8847615947d8ecad5310154855b83055ca69b4c2e8dba1ee509e95e7438938fd` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/LogSpacingDeclarations.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:e80cd1e0bef21c7f2a1a35d4e37e541115ba2d2e0b4a709337fccff44ba8fdf0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LogSpacingDeclarations.lean/declarations/example.md) | 11 | `declaration-track:8847615947d8ecad5310154855b83055ca69b4c2e8dba1ee509e95e7438938fd` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LogSpacingDeclarations.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:e80cd1e0bef21c7f2a1a35d4e37e541115ba2d2e0b4a709337fccff44ba8fdf0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

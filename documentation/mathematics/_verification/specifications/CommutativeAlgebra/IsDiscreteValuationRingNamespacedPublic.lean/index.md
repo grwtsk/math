@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [maximalIdeal](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/maximalideal.md) | 49 | `declaration-track:9552ac73e48d7ef24fee0c5617034531016fea8aaa4b2d8acde3a5a0e790fda9` |
-| 2 | `instance` | [isRankOneDiscrete](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/isrankonediscrete.md) | 54 | `declaration-track:ee52ca02f7c4e70d1e2095bbcd436c874ddba2247fa0f67b27bdd4c841c014aa` |
-| 3 | `theorem` | [exists_lift_of_le_one](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/exists-lift-of-le-one.md) | 75 | `result-track:25d82f223b68a951bedac3cfc776cc4a232c832231a308c83d06e1550abfef13` |
-| 4 | `lemma` | [mker_valuation_eq_isUnitSubmonoid](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/mker-valuation-eq-isunitsubmonoid.md) | 114 | `result-track:8aedbf02ad822e3a88a1d5925d943417af4c1273a980ec9660dbf94a17ba35e1` |
-| 5 | `theorem` | [associated_of_valuation_eq](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/associated-of-valuation-eq.md) | 128 | `result-track:b0331597bf65972135fc7ca562c249cf1b57b4b5d95e3e6ff0152095b46ede13` |
-| 6 | `theorem` | [map_algebraMap_eq_valuationSubring](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/map-algebramap-eq-valuationsubring.md) | 143 | `result-track:ed08464a2365ea2d6b2c3de119ff9f6893e957fce43cf2baf39d9c509fc25266` |
-| 7 | `def` | [equivValuationSubring](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/equivvaluationsubring.md) | 155 | `declaration-track:71ec063d18e8a3377b0e8bc0b0d7ee5b0a917629eefd32284c59a4cb24629966` |
-| 8 | `lemma` | [intValuation_maximalIdeal](../../../../CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/intvaluation-maximalideal.md) | 161 | `result-track:7668db5abf89bb2fe2c63db4cc9c3ce67bddc37b4572fc054398b0681f06b1f0` |
+| 1 | `def` | [maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/maximalideal.md) | 49 | `declaration-track:9552ac73e48d7ef24fee0c5617034531016fea8aaa4b2d8acde3a5a0e790fda9` |
+| 2 | `instance` | [isRankOneDiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/isrankonediscrete.md) | 54 | `declaration-track:ee52ca02f7c4e70d1e2095bbcd436c874ddba2247fa0f67b27bdd4c841c014aa` |
+| 3 | `theorem` | [exists_lift_of_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/exists-lift-of-le-one.md) | 75 | `result-track:25d82f223b68a951bedac3cfc776cc4a232c832231a308c83d06e1550abfef13` |
+| 4 | `lemma` | [mker_valuation_eq_isUnitSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/mker-valuation-eq-isunitsubmonoid.md) | 114 | `result-track:8aedbf02ad822e3a88a1d5925d943417af4c1273a980ec9660dbf94a17ba35e1` |
+| 5 | `theorem` | [associated_of_valuation_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/associated-of-valuation-eq.md) | 128 | `result-track:b0331597bf65972135fc7ca562c249cf1b57b4b5d95e3e6ff0152095b46ede13` |
+| 6 | `theorem` | [map_algebraMap_eq_valuationSubring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/map-algebramap-eq-valuationsubring.md) | 143 | `result-track:ed08464a2365ea2d6b2c3de119ff9f6893e957fce43cf2baf39d9c509fc25266` |
+| 7 | `def` | [equivValuationSubring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/equivvaluationsubring.md) | 155 | `declaration-track:71ec063d18e8a3377b0e8bc0b0d7ee5b0a917629eefd32284c59a4cb24629966` |
+| 8 | `lemma` | [intValuation_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsDiscreteValuationRingNamespacedPublic.lean/declarations/intvaluation-maximalideal.md) | 161 | `result-track:7668db5abf89bb2fe2c63db4cc9c3ce67bddc37b4572fc054398b0681f06b1f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Transitivity.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Transitivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,23 +60,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [auxMat](../../../../CommutativeAlgebra/Transitivity.lean/declarations/auxmat.md) | 32 | `declaration-track:8cdaeda6cee5b73ef2478c8337003e2c2dc3c5e85517c2ef3f3ee047bec7ca57` |
-| 2 | `lemma` | [auxMat_blockTriangular](../../../../CommutativeAlgebra/Transitivity.lean/declarations/auxmat-blocktriangular.md) | 41 | `result-track:ec094db9f5166961b7022d84b5dab3aa16b626bae61745ea9e18d01dfef32d61` |
-| 3 | `lemma` | [auxMat_toSquareBlock_ne](../../../../CommutativeAlgebra/Transitivity.lean/declarations/auxmat-tosquareblock-ne.md) | 46 | `result-track:518cb3e02d4512da9c76d2b887a08eadc9625638eac884bce273ccb2cd6597ae` |
-| 4 | `lemma` | [auxMat_toSquareBlock_eq](../../../../CommutativeAlgebra/Transitivity.lean/declarations/auxmat-tosquareblock-eq.md) | 51 | `result-track:34cfc773b1246cd05d2f755a4be3e23e69d500841589f6772af7b1b4caf6676d` |
-| 5 | `lemma` | [mul_auxMat_blockTriangular](../../../../CommutativeAlgebra/Transitivity.lean/declarations/mul-auxmat-blocktriangular.md) | 59 | `result-track:69a03e334c90709c20a750b959e4598f0b6408447723100372af57ea661532a1` |
-| 6 | `lemma` | [mul_auxMat_corner](../../../../CommutativeAlgebra/Transitivity.lean/declarations/mul-auxmat-corner.md) | 68 | `result-track:a73d4e3488bf9b9b073d26ffb3aff089398763b79f4e69d14849f18ffdc7855c` |
-| 7 | `lemma` | [mul_auxMat_toSquareBlock_eq](../../../../CommutativeAlgebra/Transitivity.lean/declarations/mul-auxmat-tosquareblock-eq.md) | 70 | `result-track:2c95ce8944592e17460ff45d64fd75b559cb5cccca7e8abdb6a9cde0ff4f1a2e` |
-| 8 | `lemma` | [det_mul_corner_pow](../../../../CommutativeAlgebra/Transitivity.lean/declarations/det-mul-corner-pow.md) | 80 | `result-track:39073e884504372b31f4fcfe827a7ffa5189bea95c6658891e564398422d9f02` |
-| 9 | `def` | [cornerAddX](../../../../CommutativeAlgebra/Transitivity.lean/declarations/corneraddx.md) | 93 | `declaration-track:b32e3a2ea4065bf9dc0d9ff9795cf8603ea339bae5de049bce831ceb9af83d2c` |
-| 10 | `lemma` | [polyToMatrix_cornerAddX](../../../../CommutativeAlgebra/Transitivity.lean/declarations/polytomatrix-corneraddx.md) | 99 | `result-track:1792fccd1ecfd189ddc9555d03f5a8cd8553845d2507eb62494163a9c7bc5f6e` |
-| 11 | `lemma` | [eval_zero_det_det](../../../../CommutativeAlgebra/Transitivity.lean/declarations/eval-zero-det-det.md) | 104 | `result-track:8b598cb21413b113abb48c6d307a3e91a39529be931a8814e0d3a2d962278a8c` |
-| 12 | `lemma` | [eval_zero_comp_det](../../../../CommutativeAlgebra/Transitivity.lean/declarations/eval-zero-comp-det.md) | 109 | `result-track:68deecbd2892e1c1aa29915c446f03dee1c8ee6b6d0326d1b3781166c08ae23b` |
-| 13 | `theorem` | [comp_det_mul_pow](../../../../CommutativeAlgebra/Transitivity.lean/declarations/comp-det-mul-pow.md) | 119 | `result-track:bdb5a9de7c3c7db3d1997303b6453cb05c5148901fcb463a13c9cc65fd6df59b` |
-| 14 | `lemma` | [det_det_aux](../../../../CommutativeAlgebra/Transitivity.lean/declarations/det-det-aux.md) | 136 | `result-track:71e9d5c8a9af5ded8b115d52a4467a8d7637f597167f1661d162173f30a9b196` |
-| 15 | `theorem` | [Matrix.det_det](../../../../CommutativeAlgebra/Transitivity.lean/declarations/matrix-det-det.md) | 151 | `result-track:ddbdbb38a4950444c635eaf41af3626a5bd32d4706de83b1beecf5f47392f87c` |
-| 16 | `theorem` | [LinearMap.det_restrictScalars](../../../../CommutativeAlgebra/Transitivity.lean/declarations/linearmap-det-restrictscalars.md) | 170 | `result-track:ba1171ceec9decf5697cd54c2344733f61ac43c5f7ab82711653154bd2227d87` |
-| 17 | `theorem` | [Algebra.norm_norm](../../../../CommutativeAlgebra/Transitivity.lean/declarations/algebra-norm-norm.md) | 192 | `result-track:7d14178bcc83fbe8c045c9896e43e5b3962177a2f4d4b883d4debec36b9c2630` |
+| 1 | `def` | [auxMat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/auxmat.md) | 32 | `declaration-track:8cdaeda6cee5b73ef2478c8337003e2c2dc3c5e85517c2ef3f3ee047bec7ca57` |
+| 2 | `lemma` | [auxMat_blockTriangular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/auxmat-blocktriangular.md) | 41 | `result-track:ec094db9f5166961b7022d84b5dab3aa16b626bae61745ea9e18d01dfef32d61` |
+| 3 | `lemma` | [auxMat_toSquareBlock_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/auxmat-tosquareblock-ne.md) | 46 | `result-track:518cb3e02d4512da9c76d2b887a08eadc9625638eac884bce273ccb2cd6597ae` |
+| 4 | `lemma` | [auxMat_toSquareBlock_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/auxmat-tosquareblock-eq.md) | 51 | `result-track:34cfc773b1246cd05d2f755a4be3e23e69d500841589f6772af7b1b4caf6676d` |
+| 5 | `lemma` | [mul_auxMat_blockTriangular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/mul-auxmat-blocktriangular.md) | 59 | `result-track:69a03e334c90709c20a750b959e4598f0b6408447723100372af57ea661532a1` |
+| 6 | `lemma` | [mul_auxMat_corner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/mul-auxmat-corner.md) | 68 | `result-track:a73d4e3488bf9b9b073d26ffb3aff089398763b79f4e69d14849f18ffdc7855c` |
+| 7 | `lemma` | [mul_auxMat_toSquareBlock_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/mul-auxmat-tosquareblock-eq.md) | 70 | `result-track:2c95ce8944592e17460ff45d64fd75b559cb5cccca7e8abdb6a9cde0ff4f1a2e` |
+| 8 | `lemma` | [det_mul_corner_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/det-mul-corner-pow.md) | 80 | `result-track:39073e884504372b31f4fcfe827a7ffa5189bea95c6658891e564398422d9f02` |
+| 9 | `def` | [cornerAddX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/corneraddx.md) | 93 | `declaration-track:b32e3a2ea4065bf9dc0d9ff9795cf8603ea339bae5de049bce831ceb9af83d2c` |
+| 10 | `lemma` | [polyToMatrix_cornerAddX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/polytomatrix-corneraddx.md) | 99 | `result-track:1792fccd1ecfd189ddc9555d03f5a8cd8553845d2507eb62494163a9c7bc5f6e` |
+| 11 | `lemma` | [eval_zero_det_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/eval-zero-det-det.md) | 104 | `result-track:8b598cb21413b113abb48c6d307a3e91a39529be931a8814e0d3a2d962278a8c` |
+| 12 | `lemma` | [eval_zero_comp_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/eval-zero-comp-det.md) | 109 | `result-track:68deecbd2892e1c1aa29915c446f03dee1c8ee6b6d0326d1b3781166c08ae23b` |
+| 13 | `theorem` | [comp_det_mul_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/comp-det-mul-pow.md) | 119 | `result-track:bdb5a9de7c3c7db3d1997303b6453cb05c5148901fcb463a13c9cc65fd6df59b` |
+| 14 | `lemma` | [det_det_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/det-det-aux.md) | 136 | `result-track:71e9d5c8a9af5ded8b115d52a4467a8d7637f597167f1661d162173f30a9b196` |
+| 15 | `theorem` | [Matrix.det_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/matrix-det-det.md) | 151 | `result-track:ddbdbb38a4950444c635eaf41af3626a5bd32d4706de83b1beecf5f47392f87c` |
+| 16 | `theorem` | [LinearMap.det_restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/linearmap-det-restrictscalars.md) | 170 | `result-track:ba1171ceec9decf5697cd54c2344733f61ac43c5f7ab82711653154bd2227d87` |
+| 17 | `theorem` | [Algebra.norm_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Transitivity.lean/declarations/algebra-norm-norm.md) | 192 | `result-track:7d14178bcc83fbe8c045c9896e43e5b3962177a2f4d4b883d4debec36b9c2630` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

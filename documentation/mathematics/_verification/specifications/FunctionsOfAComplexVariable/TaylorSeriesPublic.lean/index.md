@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasSum_taylorSeries_on_ball](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/hassum-taylorseries-on-ball.md) | 45 | `result-track:403205d8cd0a6b7908da8c7365df07a52a083f35d581badc24c9df7618bdbc23` |
-| 2 | `lemma` | [taylorSeries_eq_on_ball](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-ball-source-edition-2.md) | 65 | `result-track:aee700676bff9db805bbe518a752ca2ba90f6391131a118b22c5635f2c615415` |
-| 3 | `lemma` | [taylorSeries_eq_on_ball'](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-ball.md) | 72 | `result-track:1c9f82589571b639b2c2b40a1ab94264cfdb76705b17cde8e9333c81bfaeed52` |
-| 4 | `lemma` | [hasSum_taylorSeries_on_eball](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/hassum-taylorseries-on-eball.md) | 87 | `result-track:293cefba0e8fbcaee74a8657b9e69c1ced9edd822f2b65126986306abb735d10` |
-| 5 | `lemma` | [taylorSeries_eq_on_eball](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-eball.md) | 99 | `result-track:2241b282784c57184bad8ee5ad9580bcb81d843eada6c359adc90a70ec70c78e` |
-| 6 | `lemma` | [taylorSeries_eq_on_eball'](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-eball-source-edition-2.md) | 106 | `result-track:39351400cc335807088d8a9e778fac3316146fcee9e52b268141fc0c6ffd0d1a` |
-| 7 | `lemma` | [hasSum_taylorSeries_of_entire](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/hassum-taylorseries-of-entire.md) | 120 | `result-track:fc544987caf09edd59bfb89a27dfbc78a535059a9d97de1fc9997f7bc31cb92a` |
-| 8 | `lemma` | [taylorSeries_eq_of_entire](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-of-entire-source-edition-2.md) | 128 | `result-track:463d840ff42155ce517a34ed7c953e3f8945479a9f3368c9f76936ce57925eac` |
-| 9 | `lemma` | [taylorSeries_eq_of_entire'](../../../../FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-of-entire.md) | 134 | `result-track:33997fe8f4981f0c098ebb3a005f71058441b5c001374e0629e438402ba805e4` |
+| 1 | `lemma` | [hasSum_taylorSeries_on_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/hassum-taylorseries-on-ball.md) | 45 | `result-track:403205d8cd0a6b7908da8c7365df07a52a083f35d581badc24c9df7618bdbc23` |
+| 2 | `lemma` | [taylorSeries_eq_on_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-ball-source-edition-2.md) | 65 | `result-track:aee700676bff9db805bbe518a752ca2ba90f6391131a118b22c5635f2c615415` |
+| 3 | `lemma` | [taylorSeries_eq_on_ball'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-ball.md) | 72 | `result-track:1c9f82589571b639b2c2b40a1ab94264cfdb76705b17cde8e9333c81bfaeed52` |
+| 4 | `lemma` | [hasSum_taylorSeries_on_eball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/hassum-taylorseries-on-eball.md) | 87 | `result-track:293cefba0e8fbcaee74a8657b9e69c1ced9edd822f2b65126986306abb735d10` |
+| 5 | `lemma` | [taylorSeries_eq_on_eball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-eball.md) | 99 | `result-track:2241b282784c57184bad8ee5ad9580bcb81d843eada6c359adc90a70ec70c78e` |
+| 6 | `lemma` | [taylorSeries_eq_on_eball'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-on-eball-source-edition-2.md) | 106 | `result-track:39351400cc335807088d8a9e778fac3316146fcee9e52b268141fc0c6ffd0d1a` |
+| 7 | `lemma` | [hasSum_taylorSeries_of_entire](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/hassum-taylorseries-of-entire.md) | 120 | `result-track:fc544987caf09edd59bfb89a27dfbc78a535059a9d97de1fc9997f7bc31cb92a` |
+| 8 | `lemma` | [taylorSeries_eq_of_entire](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-of-entire-source-edition-2.md) | 128 | `result-track:463d840ff42155ce517a34ed7c953e3f8945479a9f3368c9f76936ce57925eac` |
+| 9 | `lemma` | [taylorSeries_eq_of_entire'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TaylorSeriesPublic.lean/declarations/taylorseries-eq-of-entire.md) | 134 | `result-track:33997fe8f4981f0c098ebb3a005f71058441b5c001374e0629e438402ba805e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

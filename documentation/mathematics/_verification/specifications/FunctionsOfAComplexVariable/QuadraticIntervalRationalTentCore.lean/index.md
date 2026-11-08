@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalTentCore.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalTentCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalTentCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalTentCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.QuadraticIntervalRationalFamilyCore`](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalFamilyCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentMellinQuadrature`](../../../../MeasureAndIntegration/TentMellinQuadrature.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalTentQuadrature`](../../../../FunctionsOfAComplexVariable/RationalTentQuadrature.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.Checks.RationalTentQuadratureControls`](../../../../FunctionsOfAComplexVariable/RationalTentQuadratureControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.QuadraticIntervalRationalFamilyCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalFamilyCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinQuadrature.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalTentQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentQuadrature.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.Checks.RationalTentQuadratureControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentQuadratureControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

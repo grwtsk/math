@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [image_multilinear'](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/declarations/image-multilinear-source-edition-2.md) | 44 | `result-track:86b5600e9839254ac90f84b220969d57e04be067a83d1ddc3f48c9c9599e08ed` |
-| 2 | `theorem` | [image_multilinear](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/declarations/image-multilinear.md) | 90 | `result-track:701a975e457f9f62cabdbc128d5943bebb7c96577ea682e60ad50ed4a78cbfad` |
+| 1 | `theorem` | [image_multilinear'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/declarations/image-multilinear-source-edition-2.md) | 44 | `result-track:86b5600e9839254ac90f84b220969d57e04be067a83d1ddc3f48c9c9599e08ed` |
+| 2 | `theorem` | [image_multilinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MultilinearBounded.lean/declarations/image-multilinear.md) | 90 | `result-track:701a975e457f9f62cabdbc128d5943bebb7c96577ea682e60ad50ed4a78cbfad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

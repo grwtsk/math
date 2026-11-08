@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [neg_log_one_sub_eq_tsum](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/neg-log-one-sub-eq-tsum.md) | 50 | `result-track:789626d619149270bcb104c65dbbb9cce6b0b137219f3a45f20c0635036e5d5c` |
-| 2 | `def` | [logTail](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/logtail.md) | 58 | `declaration-track:27945a143cf276a20b19c111a8feb3b668e149409cc239a85a76446363e5cbcf` |
-| 3 | `lemma` | [summable_logTail](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/summable-logtail.md) | 61 | `result-track:445adbda86877d41a282a1957edb245d6d0cc8049ff09b413feaa264c1ff67f8` |
-| 4 | `lemma` | [norm_logTail_le](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/norm-logtail-le.md) | 87 | `result-track:f9b7647956cb0b5a9f481f645331f53e291e19d7539520165f73f89154456777` |
-| 5 | `lemma` | [norm_logTail_le_two_mul_norm_pow](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/norm-logtail-le-two-mul-norm-pow.md) | 130 | `result-track:42067b3a6637a133014736baebfeff9a46e97194fadeb456edf412518e0cff81` |
-| 6 | `lemma` | [neg_log_one_sub_eq_partialLogSum_add_logTail](../../../../FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/neg-log-one-sub-eq-partiallogsum-add-logtail.md) | 135 | `result-track:f878388e4abc269b2496125aa55cad695a36f25e79b3dc2f15ad0b7367749879` |
+| 1 | `lemma` | [neg_log_one_sub_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/neg-log-one-sub-eq-tsum.md) | 50 | `result-track:789626d619149270bcb104c65dbbb9cce6b0b137219f3a45f20c0635036e5d5c` |
+| 2 | `def` | [logTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/logtail.md) | 58 | `declaration-track:27945a143cf276a20b19c111a8feb3b668e149409cc239a85a76446363e5cbcf` |
+| 3 | `lemma` | [summable_logTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/summable-logtail.md) | 61 | `result-track:445adbda86877d41a282a1957edb245d6d0cc8049ff09b413feaa264c1ff67f8` |
+| 4 | `lemma` | [norm_logTail_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/norm-logtail-le.md) | 87 | `result-track:f9b7647956cb0b5a9f481f645331f53e291e19d7539520165f73f89154456777` |
+| 5 | `lemma` | [norm_logTail_le_two_mul_norm_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/norm-logtail-le-two-mul-norm-pow.md) | 130 | `result-track:42067b3a6637a133014736baebfeff9a46e97194fadeb456edf412518e0cff81` |
+| 6 | `lemma` | [neg_log_one_sub_eq_partialLogSum_add_logTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogarithmTailBounds.lean/declarations/neg-log-one-sub-eq-partiallogsum-add-logtail.md) | 135 | `result-track:f878388e4abc269b2496125aa55cad695a36f25e79b3dc2f15ad0b7367749879` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

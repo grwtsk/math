@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveGram](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/positivegram.md) | 27 | `declaration-track:d99a9871ab768e5f686edd1a19fc26a38ee03154c202a77dc93c511b7a0bfc8a` |
-| 2 | `def` | [squaredNorm](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squarednorm.md) | 40 | `declaration-track:fd1cca12fd0da4a5aa8bbf40ee89025d6d97411f2a09d97a07967659424c2549` |
-| 3 | `def` | [squaredDistance](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squareddistance.md) | 43 | `declaration-track:514c3df70b3fc90323a881a90f5a85d985b530a9f375d446c2d3182b602481df` |
-| 4 | `theorem` | [squaredNorm_nonnegative](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squarednorm-nonnegative.md) | 46 | `result-track:90b97c7c23f8199da00c533fa906a5165b47512a4a1766df96530231f931337b` |
-| 5 | `theorem` | [squaredNorm_eq_zero_iff](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squarednorm-eq-zero-iff.md) | 52 | `result-track:2c7d0a6bb620d1e4aeea6a32300ee0726a8af65213d20e8b485c979e31dcc6d8` |
-| 6 | `theorem` | [squaredDistance_self](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squareddistance-self.md) | 63 | `result-track:6db8ac39acdb2ebde3bad40b2bd5b99445cc9fea07ec989ba5a8471a80ead229` |
-| 7 | `abbrev` | [GramField](../../../../GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/gramfield.md) | 70 | `declaration-track:1f7538da7e4e76ad1389a9610459e950786febd9a7c7c71069cd0359f7a03e1b` |
+| 1 | `structure` | [PositiveGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/positivegram.md) | 27 | `declaration-track:d99a9871ab768e5f686edd1a19fc26a38ee03154c202a77dc93c511b7a0bfc8a` |
+| 2 | `def` | [squaredNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squarednorm.md) | 40 | `declaration-track:fd1cca12fd0da4a5aa8bbf40ee89025d6d97411f2a09d97a07967659424c2549` |
+| 3 | `def` | [squaredDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squareddistance.md) | 43 | `declaration-track:514c3df70b3fc90323a881a90f5a85d985b530a9f375d446c2d3182b602481df` |
+| 4 | `theorem` | [squaredNorm_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squarednorm-nonnegative.md) | 46 | `result-track:90b97c7c23f8199da00c533fa906a5165b47512a4a1766df96530231f931337b` |
+| 5 | `theorem` | [squaredNorm_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squarednorm-eq-zero-iff.md) | 52 | `result-track:2c7d0a6bb620d1e4aeea6a32300ee0726a8af65213d20e8b485c979e31dcc6d8` |
+| 6 | `theorem` | [squaredDistance_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/squareddistance-self.md) | 63 | `result-track:6db8ac39acdb2ebde3bad40b2bd5b99445cc9fea07ec989ba5a8471a80ead229` |
+| 7 | `abbrev` | [GramField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramFieldNamespaced.lean/declarations/gramfield.md) | 70 | `declaration-track:1f7538da7e4e76ad1389a9610459e950786febd9a7c7c71069cd0359f7a03e1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute`](../../../../NumberTheory/CanonicalTentAbsolute.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentSelectedResidueLimit`](../../../../NumberTheory/TentSelectedResidueLimit.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentAbsolute.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentSelectedResidueLimit`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSelectedResidueLimit.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [canonical_square_source_eq_tsum](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/canonical-square-source-eq-tsum.md) | 33 | `result-track:37bc90eb619c2c79819c9d3572659a9a2648f9e2430ea99ae867681e213c85d0` |
-| 2 | `theorem` | [canonical_square_hasSum](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/canonical-square-hassum.md) | 43 | `result-track:7eb106540ca128d1d35b715a24b5bbe8cc1e213fa24c0f4db202f4907ba1e259` |
-| 3 | `theorem` | [norm_square_source_sub_finite_le](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/norm-square-source-sub-finite-le.md) | 62 | `result-track:2eb6afb9225e769dbf805fff5ccb69287cc29e3d5298e3bb51f6133e13695023` |
-| 4 | `theorem` | [norm_square_source_sub_evaluated_le](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/norm-square-source-sub-evaluated-le.md) | 84 | `result-track:87d79ce67fcccda20c1d9deb2956024b47b75dc847e56f45173732ca3ca009cf` |
-| 5 | `theorem` | [heightHead_tendsto_atTop](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/heighthead-tendsto-attop.md) | 103 | `result-track:3c3a2455507cae9557358e459d9866606b75bf2e0fcb65053707274259e6a5da` |
-| 6 | `theorem` | [canonical_heads_tendsto](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/canonical-heads-tendsto.md) | 114 | `result-track:059351b9b29a92ec10e206542c25790f4814f2b6529377133bcfd33208289917` |
-| 7 | `theorem` | [square_residues_tendsto_all_heights](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/square-residues-tendsto-all-heights.md) | 124 | `result-track:d3fd43fcf0554eaf886e37a897f8f329d791aadabab92add92a2962ee52677b2` |
-| 8 | `theorem` | [square_canonical_tail_budget](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/declarations/square-canonical-tail-budget.md) | 137 | `result-track:190b17601d74e3783d33badb87f21170c4f89ad80f94119a342af1b4e9ab7602` |
+| 1 | `theorem` | [canonical_square_source_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/canonical-square-source-eq-tsum.md) | 33 | `result-track:37bc90eb619c2c79819c9d3572659a9a2648f9e2430ea99ae867681e213c85d0` |
+| 2 | `theorem` | [canonical_square_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/canonical-square-hassum.md) | 43 | `result-track:7eb106540ca128d1d35b715a24b5bbe8cc1e213fa24c0f4db202f4907ba1e259` |
+| 3 | `theorem` | [norm_square_source_sub_finite_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/norm-square-source-sub-finite-le.md) | 62 | `result-track:2eb6afb9225e769dbf805fff5ccb69287cc29e3d5298e3bb51f6133e13695023` |
+| 4 | `theorem` | [norm_square_source_sub_evaluated_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/norm-square-source-sub-evaluated-le.md) | 84 | `result-track:87d79ce67fcccda20c1d9deb2956024b47b75dc847e56f45173732ca3ca009cf` |
+| 5 | `theorem` | [heightHead_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/heighthead-tendsto-attop.md) | 103 | `result-track:3c3a2455507cae9557358e459d9866606b75bf2e0fcb65053707274259e6a5da` |
+| 6 | `theorem` | [canonical_heads_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/canonical-heads-tendsto.md) | 114 | `result-track:059351b9b29a92ec10e206542c25790f4814f2b6529377133bcfd33208289917` |
+| 7 | `theorem` | [square_residues_tendsto_all_heights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/square-residues-tendsto-all-heights.md) | 124 | `result-track:d3fd43fcf0554eaf886e37a897f8f329d791aadabab92add92a2962ee52677b2` |
+| 8 | `theorem` | [square_canonical_tail_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/declarations/square-canonical-tail-budget.md) | 137 | `result-track:190b17601d74e3783d33badb87f21170c4f89ad80f94119a342af1b4e9ab7602` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

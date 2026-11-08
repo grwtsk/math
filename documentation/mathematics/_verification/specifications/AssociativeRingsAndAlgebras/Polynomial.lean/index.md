@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-5.md) | 46 | `declaration-track:9c0eda98909354b97e667e3e1f5c39e2f977195cc71a24246f71fe7f25489cb2` |
-| 2 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-3.md) | 64 | `declaration-track:50def0f115f091c5825c4c99cba8f85022525ccd15d6ccf564e21be614ab8703` |
-| 3 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-8.md) | 100 | `declaration-track:d6b13887442f5e043e74e60f77c1704d1f907b0401aa63b3d1d4e0b02333c752` |
-| 4 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-4.md) | 110 | `declaration-track:9ba59928794ce55e737f09518251f6def40f0c055e38d2b3d8533e908439c80d` |
-| 5 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-10.md) | 119 | `declaration-track:e939b5c07710f007ec4b91084549080bd05e69441d06c41a4c5991c597f61cfd` |
-| 6 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example.md) | 138 | `declaration-track:27b6886173f35a4ff79dec587f6717e688876f34a9ba586e7412558867b4c245` |
-| 7 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-7.md) | 166 | `declaration-track:bb49884e3c27de73f26f995ac8e1e518aa3ed6f4dece21de5e6d8a1bdbfdf343` |
-| 8 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-2.md) | 175 | `declaration-track:3a54ab9d56a49166fa5a65594b5d8b3c3e981539a050cf32f79416b00dd749a1` |
-| 9 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-6.md) | 184 | `declaration-track:aca1217c865e4044295984c1dd0d8b15cd4c2bf9a2db061c0a7635204201f894` |
-| 10 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-9.md) | 193 | `declaration-track:df60087906e4b646bbb0cdd96b41cc5fa539ed6f181707b0896e178ef7cc1ce6` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-5.md) | 46 | `declaration-track:9c0eda98909354b97e667e3e1f5c39e2f977195cc71a24246f71fe7f25489cb2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-3.md) | 64 | `declaration-track:50def0f115f091c5825c4c99cba8f85022525ccd15d6ccf564e21be614ab8703` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-8.md) | 100 | `declaration-track:d6b13887442f5e043e74e60f77c1704d1f907b0401aa63b3d1d4e0b02333c752` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-4.md) | 110 | `declaration-track:9ba59928794ce55e737f09518251f6def40f0c055e38d2b3d8533e908439c80d` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-10.md) | 119 | `declaration-track:e939b5c07710f007ec4b91084549080bd05e69441d06c41a4c5991c597f61cfd` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example.md) | 138 | `declaration-track:27b6886173f35a4ff79dec587f6717e688876f34a9ba586e7412558867b4c245` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-7.md) | 166 | `declaration-track:bb49884e3c27de73f26f995ac8e1e518aa3ed6f4dece21de5e6d8a1bdbfdf343` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-2.md) | 175 | `declaration-track:3a54ab9d56a49166fa5a65594b5d8b3c3e981539a050cf32f79416b00dd749a1` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-6.md) | 184 | `declaration-track:aca1217c865e4044295984c1dd0d8b15cd4c2bf9a2db061c0a7635204201f894` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Polynomial.lean/declarations/example-source-edition-9.md) | 193 | `declaration-track:df60087906e4b646bbb0cdd96b41cc5fa539ed6f181707b0896e178ef7cc1ce6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [of_abv_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-abv-le.md) | 23 | `result-track:e1dd2bbdf6ec2a4283be52012180967087acd21e3ddc082f2d265b920da215ce` |
-| 2 | `lemma` | [of_abv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-abv.md) | 50 | `result-track:f04e59979c77608688e05380c7ca59d2089e299971d0d19637692105337a7d98` |
-| 3 | `theorem` | [_root_.cauchy_product](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/root-cauchy-product.md) | 54 | `result-track:584eeed27973738663399f5f2ff659e315b6e7e522eca66a095fafd6de2821a8` |
-| 4 | `lemma` | [of_decreasing_bounded](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-decreasing-bounded.md) | 143 | `result-track:dd0a0923c26ba331744220584705f76f99c23aeb0a87eb014af7ca19f14fc370` |
-| 5 | `lemma` | [of_mono_bounded](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-mono-bounded.md) | 175 | `result-track:3854e98ca3f1bb58be18f327c6ff820ae210626a0ceddbcbbdd6fe648ffd5adf` |
-| 6 | `lemma` | [geo_series](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/geo-series.md) | 179 | `result-track:451f9d3c1fcb03f8f11862f5ce8996d0c6604d8d73d8ccbfa198b17cf7e8c802` |
-| 7 | `lemma` | [geo_series_const](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/geo-series-const.md) | 197 | `result-track:54a733adcd8057e96bbea17730403175906fc0e61de7d1a2c7e3a2d4bfbaab57` |
-| 8 | `lemma` | [series_ratio_test](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/series-ratio-test.md) | 201 | `result-track:5cbcf419d9d067c3a05bdca3a8e0017237aa5b06af39cf402c3ef166b5e431ec` |
+| 1 | `lemma` | [of_abv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-abv-le.md) | 23 | `result-track:e1dd2bbdf6ec2a4283be52012180967087acd21e3ddc082f2d265b920da215ce` |
+| 2 | `lemma` | [of_abv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-abv.md) | 50 | `result-track:f04e59979c77608688e05380c7ca59d2089e299971d0d19637692105337a7d98` |
+| 3 | `theorem` | [_root_.cauchy_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/root-cauchy-product.md) | 54 | `result-track:584eeed27973738663399f5f2ff659e315b6e7e522eca66a095fafd6de2821a8` |
+| 4 | `lemma` | [of_decreasing_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-decreasing-bounded.md) | 143 | `result-track:dd0a0923c26ba331744220584705f76f99c23aeb0a87eb014af7ca19f14fc370` |
+| 5 | `lemma` | [of_mono_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/of-mono-bounded.md) | 175 | `result-track:3854e98ca3f1bb58be18f327c6ff820ae210626a0ceddbcbbdd6fe648ffd5adf` |
+| 6 | `lemma` | [geo_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/geo-series.md) | 179 | `result-track:451f9d3c1fcb03f8f11862f5ce8996d0c6604d8d73d8ccbfa198b17cf7e8c802` |
+| 7 | `lemma` | [geo_series_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/geo-series-const.md) | 197 | `result-track:54a733adcd8057e96bbea17730403175906fc0e61de7d1a2c7e3a2d4bfbaab57` |
+| 8 | `lemma` | [series_ratio_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CauSeqBigOperators.lean/declarations/series-ratio-test.md) | 201 | `result-track:5cbcf419d9d067c3a05bdca3a8e0017237aa5b06af39cf402c3ef166b5e431ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

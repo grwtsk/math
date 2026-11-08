@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSepClosed](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosed.md) | 60 | `declaration-track:d631fca9d36cc7c77820e05453e914322756b5f2fb037ecee5bde780db03bed2` |
-| 2 | `theorem` | [IsSepClosed.splits_codomain](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosed-splits-codomain.md) | 70 | `result-track:30696cd55a7c4d2a0984e52e0caeac1178d12381ff98569c6adf09bbf1b6fa6b` |
-| 3 | `theorem` | [IsSepClosed.splits_domain](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosed-splits-domain.md) | 79 | `result-track:3841b2d88e6c3e16b495bf3f8f13c2f231c12ed2f32f07df530157d379d8ce54` |
-| 4 | `theorem` | [exists_root](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-root.md) | 85 | `result-track:0195c2a51de4fa3bba266f8bff2227f908d45836dfcb84211769a7f843481c1d` |
-| 5 | `theorem` | [exists_pow_nat_eq](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-pow-nat-eq.md) | 89 | `result-track:1fcd46f59c356bb86c53b038e32f2c5d38f9f618b5cb77d90af76a82553d15ae` |
-| 6 | `theorem` | [exists_eq_mul_self](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-eq-mul-self.md) | 103 | `result-track:9f425f97fe6abaf98cc37d5d7fba6b2f2ab8ef73e5956930dde4559911410fa7` |
-| 7 | `theorem` | [roots_eq_zero_iff](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/roots-eq-zero-iff.md) | 107 | `result-track:c6b5d129bd3583a76275ef12f3f0e6d935c2edae0e1624488383de81837cfc25` |
-| 8 | `theorem` | [exists_eval₂_eq_zero](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-eval-eq-zero.md) | 116 | `result-track:b87a7f1ae86750c552d6e2eb00b5505793b322135dde4b09a5f1f81c1752954a` |
-| 9 | `theorem` | [exists_aeval_eq_zero](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-aeval-eq-zero.md) | 125 | `result-track:286fb03b8bbd0860230188bc1328b5f19f693c3a4cfbf12f84cd94f0f1875b38` |
-| 10 | `theorem` | [of_exists_root](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/of-exists-root.md) | 129 | `result-track:4c1539579850259fffbbe08e29308c94a7e72ed0b3bd03bc129f384ef0abf1c4` |
-| 11 | `theorem` | [degree_eq_one_of_irreducible](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/degree-eq-one-of-irreducible.md) | 145 | `result-track:dfecfb31cea6c0e061c158153f0f7ad745cfa0b95212d6563b4a565903d30d5f` |
-| 12 | `theorem` | [algebraMap_surjective](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/algebramap-surjective.md) | 151 | `result-track:15ba7eb70a17bc534f93f05a096320169f93ad662bc3b1fca452cc2246b1806a` |
-| 13 | `class` | [IsSepClosure](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosure.md) | 169 | `declaration-track:9ac888e41c60936b00933ba77a9cb5496be2f9fc1820cc0340cd6fb0b0238a98` |
-| 14 | `theorem` | [isSepClosure_iff](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosure-iff.md) | 175 | `result-track:da6bbf4bf66d911fb3f8e853ec6132acc6ee688a022224639294a674eb0875a5` |
-| 15 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/instance.md) | 179 | `declaration-track:568f48d3860804c995b70bf551b38a800077b802e229b55e04cdd25c83b80ece` |
+| 1 | `class` | [IsSepClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosed.md) | 60 | `declaration-track:d631fca9d36cc7c77820e05453e914322756b5f2fb037ecee5bde780db03bed2` |
+| 2 | `theorem` | [IsSepClosed.splits_codomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosed-splits-codomain.md) | 70 | `result-track:30696cd55a7c4d2a0984e52e0caeac1178d12381ff98569c6adf09bbf1b6fa6b` |
+| 3 | `theorem` | [IsSepClosed.splits_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosed-splits-domain.md) | 79 | `result-track:3841b2d88e6c3e16b495bf3f8f13c2f231c12ed2f32f07df530157d379d8ce54` |
+| 4 | `theorem` | [exists_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-root.md) | 85 | `result-track:0195c2a51de4fa3bba266f8bff2227f908d45836dfcb84211769a7f843481c1d` |
+| 5 | `theorem` | [exists_pow_nat_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-pow-nat-eq.md) | 89 | `result-track:1fcd46f59c356bb86c53b038e32f2c5d38f9f618b5cb77d90af76a82553d15ae` |
+| 6 | `theorem` | [exists_eq_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-eq-mul-self.md) | 103 | `result-track:9f425f97fe6abaf98cc37d5d7fba6b2f2ab8ef73e5956930dde4559911410fa7` |
+| 7 | `theorem` | [roots_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/roots-eq-zero-iff.md) | 107 | `result-track:c6b5d129bd3583a76275ef12f3f0e6d935c2edae0e1624488383de81837cfc25` |
+| 8 | `theorem` | [exists_eval₂_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-eval-eq-zero.md) | 116 | `result-track:b87a7f1ae86750c552d6e2eb00b5505793b322135dde4b09a5f1f81c1752954a` |
+| 9 | `theorem` | [exists_aeval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/exists-aeval-eq-zero.md) | 125 | `result-track:286fb03b8bbd0860230188bc1328b5f19f693c3a4cfbf12f84cd94f0f1875b38` |
+| 10 | `theorem` | [of_exists_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/of-exists-root.md) | 129 | `result-track:4c1539579850259fffbbe08e29308c94a7e72ed0b3bd03bc129f384ef0abf1c4` |
+| 11 | `theorem` | [degree_eq_one_of_irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/degree-eq-one-of-irreducible.md) | 145 | `result-track:dfecfb31cea6c0e061c158153f0f7ad745cfa0b95212d6563b4a565903d30d5f` |
+| 12 | `theorem` | [algebraMap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/algebramap-surjective.md) | 151 | `result-track:15ba7eb70a17bc534f93f05a096320169f93ad662bc3b1fca452cc2246b1806a` |
+| 13 | `class` | [IsSepClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosure.md) | 169 | `declaration-track:9ac888e41c60936b00933ba77a9cb5496be2f9fc1820cc0340cd6fb0b0238a98` |
+| 14 | `theorem` | [isSepClosure_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/issepclosure-iff.md) | 175 | `result-track:da6bbf4bf66d911fb3f8e853ec6132acc6ee688a022224639294a674eb0875a5` |
+| 15 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSepClosed.lean/declarations/instance.md) | 179 | `declaration-track:568f48d3860804c995b70bf551b38a800077b802e229b55e04cdd25c83b80ece` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

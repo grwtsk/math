@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentFiniteResidues.lean/index.md) · [Full source](../../../../NumberTheory/TentFiniteResidues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentFiniteResidues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentFiniteResidues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RectangularCauchyKernel`](../../../../GeneralTopology/RectangularCauchyKernel.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentPoleSubtraction.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RectangularCauchyKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentPoleSubtraction.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tent_boundary_residue_formula](../../../../NumberTheory/TentFiniteResidues.lean/declarations/tent-boundary-residue-formula.md) | 36 | `result-track:f168c0caa1194d14fd92e847c26d8364f6f6a5b9486c258085d6d3d838327107` |
-| 2 | `theorem` | [tent_boundary_div_two_pi_I](../../../../NumberTheory/TentFiniteResidues.lean/declarations/tent-boundary-div-two-pi-i.md) | 49 | `result-track:3d460edd706eab68d9a760555a26ef0299c77c9ec5aebb502e68dc47ce1a11d1` |
-| 3 | `theorem` | [rightSegment_finite_residue_formula](../../../../NumberTheory/TentFiniteResidues.lean/declarations/rightsegment-finite-residue-formula.md) | 62 | `result-track:289417c66b01670b21ad92fb41aa5a9ba7e5e88a999abe0a0b6288b119d4efd6` |
+| 1 | `theorem` | [tent_boundary_residue_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentFiniteResidues.lean/declarations/tent-boundary-residue-formula.md) | 36 | `result-track:f168c0caa1194d14fd92e847c26d8364f6f6a5b9486c258085d6d3d838327107` |
+| 2 | `theorem` | [tent_boundary_div_two_pi_I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentFiniteResidues.lean/declarations/tent-boundary-div-two-pi-i.md) | 49 | `result-track:3d460edd706eab68d9a760555a26ef0299c77c9ec5aebb502e68dc47ce1a11d1` |
+| 3 | `theorem` | [rightSegment_finite_residue_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentFiniteResidues.lean/declarations/rightsegment-finite-residue-formula.md) | 62 | `result-track:289417c66b01670b21ad92fb41aa5a9ba7e5e88a999abe0a0b6288b119d4efd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

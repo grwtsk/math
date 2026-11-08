@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ClosedIntervalCompactness.lean/index.md) · [Full source](../../../../GeneralTopology/ClosedIntervalCompactness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClosedIntervalCompactness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClosedIntervalCompactness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [real_Icc_isCompact](../../../../GeneralTopology/ClosedIntervalCompactness.lean/declarations/real-icc-iscompact.md) | 36 | `result-track:0247c5c127eb2a1a341abfd0fd8efd2e45d38dfed558e757622a1715e4100f7c` |
+| 1 | `theorem` | [real_Icc_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClosedIntervalCompactness.lean/declarations/real-icc-iscompact.md) | 36 | `result-track:0247c5c127eb2a1a341abfd0fd8efd2e45d38dfed558e757622a1715e4100f7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

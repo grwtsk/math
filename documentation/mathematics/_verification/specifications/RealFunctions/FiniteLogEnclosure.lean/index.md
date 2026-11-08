@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FiniteLogEnclosure.lean/index.md) · [Full source](../../../../RealFunctions/FiniteLogEnclosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lowerSum](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/lowersum.md) | 26 | `declaration-track:25b1c91fa6fe3c7d580327e8c1fb2f7f67b77fb258175a4048b1acdd0c7adbaa` |
-| 2 | `def` | [upperSum](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/uppersum.md) | 30 | `declaration-track:7a758374ee74abc65f532622e5c7f74be4afbddd5d529bfe60880a9b7787dfed` |
-| 3 | `theorem` | [log_step_bounds](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/log-step-bounds.md) | 34 | `result-track:301d356c0a6f914199316eb6d89e31b37dcbcc310ec45e8e7f7b0c5f85389394` |
-| 4 | `theorem` | [chain_bounds](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/chain-bounds.md) | 49 | `result-track:32c8711925b0a6c0abb3246eb8d3640f6415d9e5dcd743465b3f13c0888fe512` |
-| 5 | `theorem` | [lower_nonneg](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/lower-nonneg.md) | 59 | `result-track:41a06ffa22086729e98e47145cb6d74c5f3bb16740c99dcae54816485fc31657` |
-| 6 | `theorem` | [midpoint_error](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/midpoint-error.md) | 67 | `result-track:26fa553da1b2d298d423ea944f0b9492958ddfcaefbde0a502ed9d26499dbe1a` |
-| 7 | `theorem` | [constant_step_gap](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/constant-step-gap.md) | 74 | `result-track:e4dd28d6e9a0c228aea5d4f3a41988b7b417e78c2c94ef767936e279e17e3bb4` |
-| 8 | `theorem` | [empty_chain_is_not_log_two](../../../../RealFunctions/FiniteLogEnclosure.lean/declarations/empty-chain-is-not-log-two.md) | 87 | `result-track:bc8f271970a4b123c0e4e3e2e0636aac374571c053c4d004fb34ad4d6c30fb70` |
+| 1 | `def` | [lowerSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/lowersum.md) | 26 | `declaration-track:25b1c91fa6fe3c7d580327e8c1fb2f7f67b77fb258175a4048b1acdd0c7adbaa` |
+| 2 | `def` | [upperSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/uppersum.md) | 30 | `declaration-track:7a758374ee74abc65f532622e5c7f74be4afbddd5d529bfe60880a9b7787dfed` |
+| 3 | `theorem` | [log_step_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/log-step-bounds.md) | 34 | `result-track:301d356c0a6f914199316eb6d89e31b37dcbcc310ec45e8e7f7b0c5f85389394` |
+| 4 | `theorem` | [chain_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/chain-bounds.md) | 49 | `result-track:32c8711925b0a6c0abb3246eb8d3640f6415d9e5dcd743465b3f13c0888fe512` |
+| 5 | `theorem` | [lower_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/lower-nonneg.md) | 59 | `result-track:41a06ffa22086729e98e47145cb6d74c5f3bb16740c99dcae54816485fc31657` |
+| 6 | `theorem` | [midpoint_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/midpoint-error.md) | 67 | `result-track:26fa553da1b2d298d423ea944f0b9492958ddfcaefbde0a502ed9d26499dbe1a` |
+| 7 | `theorem` | [constant_step_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/constant-step-gap.md) | 74 | `result-track:e4dd28d6e9a0c228aea5d4f3a41988b7b417e78c2c94ef767936e279e17e3bb4` |
+| 8 | `theorem` | [empty_chain_is_not_log_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/declarations/empty-chain-is-not-log-two.md) | 87 | `result-track:bc8f271970a4b123c0e4e3e2e0636aac374571c053c4d004fb34ad4d6c30fb70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

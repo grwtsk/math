@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coherentTopology.mem_sieves_of_hasEffectiveEpiFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/coherenttopology-mem-sieves-of-haseffectiveepifamily.md) | 34 | `result-track:b1f2aac5441d7ac6d1e151a31e82e53f75e6fdb494136fb0151db08eca9cd60b` |
-| 2 | `theorem` | [EffectiveEpiFamily.transitive_of_finite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/effectiveepifamily-transitive-of-finite.md) | 49 | `result-track:7cbd17d739e598f109d00ce26ce5241fc0030bdf11fb376326e16f484096393f` |
-| 3 | `instance` | [precoherentEffectiveEpiFamilyCompEffectiveEpis](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/precoherenteffectiveepifamilycompeffectiveepis.md) | 75 | `declaration-track:165ae7bc4dd76c91c3f55874d80c41981d9d303f5c71161bcbef8900bce351bc` |
-| 4 | `theorem` | [coherentTopology.mem_sieves_iff_hasEffectiveEpiFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/coherenttopology-mem-sieves-iff-haseffectiveepifamily.md) | 87 | `result-track:7974234d2763fddc688ddd2349ac9c0943ee4d1464cdf449ffd8c1285c5ab58a` |
+| 1 | `theorem` | [coherentTopology.mem_sieves_of_hasEffectiveEpiFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/coherenttopology-mem-sieves-of-haseffectiveepifamily.md) | 34 | `result-track:b1f2aac5441d7ac6d1e151a31e82e53f75e6fdb494136fb0151db08eca9cd60b` |
+| 2 | `theorem` | [EffectiveEpiFamily.transitive_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/effectiveepifamily-transitive-of-finite.md) | 49 | `result-track:7cbd17d739e598f109d00ce26ce5241fc0030bdf11fb376326e16f484096393f` |
+| 3 | `instance` | [precoherentEffectiveEpiFamilyCompEffectiveEpis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/precoherenteffectiveepifamilycompeffectiveepis.md) | 75 | `declaration-track:165ae7bc4dd76c91c3f55874d80c41981d9d303f5c71161bcbef8900bce351bc` |
+| 4 | `theorem` | [coherentTopology.mem_sieves_iff_hasEffectiveEpiFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentTopologyPublic.lean/declarations/coherenttopology-mem-sieves-iff-haseffectiveepifamily.md) | 87 | `result-track:7974234d2763fddc688ddd2349ac9c0943ee4d1464cdf449ffd8c1285c5ab58a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ResolutionDraft.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ResolutionDraft.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [phaseRatio_le_one](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/phaseratio-le-one.md) | 17 | `result-track:0556581b2df4a38fc7b0ca0ed6a8b5c71e61bc358e70b35ecffe96c43c21fff5` |
-| 2 | `theorem` | [pairedDeriv_abs_le_critical](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/pairedderiv-abs-le-critical.md) | 22 | `result-track:73fa0064cb45409ab790179fc3075dd03278c76a6863d8d9728132b107cdef9f` |
-| 3 | `theorem` | [pairedDeriv_abs_le](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/pairedderiv-abs-le.md) | 28 | `result-track:c64b5850e03e599ee54e60993cafbe8e4c6ed19886d2f911d45a419dfce6fc80` |
-| 4 | `theorem` | [paired_lipschitz](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/paired-lipschitz.md) | 45 | `result-track:bec0fc4b94fe0a5537c7b9bdb17bb4493b53d4f050fc9e35d70209665fb6d7eb` |
-| 5 | `def` | [decodedReadout](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/decodedreadout.md) | 56 | `declaration-track:f82404087733563d333fe29f4dca2c291989f7d90c11c7ac7f6e120e1017599d` |
-| 6 | `theorem` | [actualReadout_eq](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/actualreadout-eq.md) | 61 | `result-track:899d4b1807233e4c23ea6c840d60a80eedbd39cfa7213deb6f41fed41b9dcf6c` |
-| 7 | `theorem` | [primeReadout_error](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/primereadout-error.md) | 67 | `result-track:29e05071dd18147541826bea35cd7d95e5c804a5c3d41d7ad6a0cb848060490e` |
-| 8 | `theorem` | [squareReadout_error](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/squarereadout-error.md) | 86 | `result-track:0ec57babf1a2d3a93c50b34700acc61c1a378c299b18e18355bf7fc3a2307cad` |
-| 9 | `theorem` | [decodedReadout_error](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/decodedreadout-error.md) | 106 | `result-track:216e7568440d8b7e5a18a7f2ffd087e70d4f24ad8d08f7659e391c5cde2f2eed` |
-| 10 | `theorem` | [decodedReadout_uniform_error](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/decodedreadout-uniform-error.md) | 154 | `result-track:2421656a5ee5554a9ac262576283e431a0685cb686e2e761bc7bf81c6da5b8f2` |
-| 11 | `theorem` | [mesh_decoder_error](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/mesh-decoder-error.md) | 165 | `result-track:08e160f90f6a0e21ca4812e74f29cc11239803490358e1372d6f033618ffaf54` |
-| 12 | `theorem` | [lower_transfer](../../../../MeasureAndIntegration/ResolutionDraft.lean/declarations/lower-transfer.md) | 185 | `result-track:61ccf240bf1efab542a4ba74dcd6b794ef5572a82f7259aeb036f1241190775e` |
+| 1 | `theorem` | [phaseRatio_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/phaseratio-le-one.md) | 17 | `result-track:0556581b2df4a38fc7b0ca0ed6a8b5c71e61bc358e70b35ecffe96c43c21fff5` |
+| 2 | `theorem` | [pairedDeriv_abs_le_critical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/pairedderiv-abs-le-critical.md) | 22 | `result-track:73fa0064cb45409ab790179fc3075dd03278c76a6863d8d9728132b107cdef9f` |
+| 3 | `theorem` | [pairedDeriv_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/pairedderiv-abs-le.md) | 28 | `result-track:c64b5850e03e599ee54e60993cafbe8e4c6ed19886d2f911d45a419dfce6fc80` |
+| 4 | `theorem` | [paired_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/paired-lipschitz.md) | 45 | `result-track:bec0fc4b94fe0a5537c7b9bdb17bb4493b53d4f050fc9e35d70209665fb6d7eb` |
+| 5 | `def` | [decodedReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/decodedreadout.md) | 56 | `declaration-track:f82404087733563d333fe29f4dca2c291989f7d90c11c7ac7f6e120e1017599d` |
+| 6 | `theorem` | [actualReadout_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/actualreadout-eq.md) | 61 | `result-track:899d4b1807233e4c23ea6c840d60a80eedbd39cfa7213deb6f41fed41b9dcf6c` |
+| 7 | `theorem` | [primeReadout_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/primereadout-error.md) | 67 | `result-track:29e05071dd18147541826bea35cd7d95e5c804a5c3d41d7ad6a0cb848060490e` |
+| 8 | `theorem` | [squareReadout_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/squarereadout-error.md) | 86 | `result-track:0ec57babf1a2d3a93c50b34700acc61c1a378c299b18e18355bf7fc3a2307cad` |
+| 9 | `theorem` | [decodedReadout_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/decodedreadout-error.md) | 106 | `result-track:216e7568440d8b7e5a18a7f2ffd087e70d4f24ad8d08f7659e391c5cde2f2eed` |
+| 10 | `theorem` | [decodedReadout_uniform_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/decodedreadout-uniform-error.md) | 154 | `result-track:2421656a5ee5554a9ac262576283e431a0685cb686e2e761bc7bf81c6da5b8f2` |
+| 11 | `theorem` | [mesh_decoder_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/mesh-decoder-error.md) | 165 | `result-track:08e160f90f6a0e21ca4812e74f29cc11239803490358e1372d6f033618ffaf54` |
+| 12 | `theorem` | [lower_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResolutionDraft.lean/declarations/lower-transfer.md) | 185 | `result-track:61ccf240bf1efab542a4ba74dcd6b794ef5572a82f7259aeb036f1241190775e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

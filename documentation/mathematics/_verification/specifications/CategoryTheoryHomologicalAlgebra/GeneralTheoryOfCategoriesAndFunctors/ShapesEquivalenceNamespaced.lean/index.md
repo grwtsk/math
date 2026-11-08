@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasInitial_of_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/hasinitial-of-equivalence.md) | 33 | `result-track:5c4d3c3c5e08a294b368a81f04cc4768ce2d6d58fc09ca6b5d41fb9db8acaaa0` |
-| 2 | `theorem` | [Equivalence.hasInitial_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/equivalence-hasinitial-iff.md) | 36 | `result-track:bbd2a910296605dee5137574d8d9e1a1ebde704bd7e66586777bb7c969183a2b` |
-| 3 | `theorem` | [hasTerminal_of_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/hasterminal-of-equivalence.md) | 40 | `result-track:d5d00e83bf088d8013b1dd5eaa255c4b6cd76701b86c5766d9f782aa3a1e0f2b` |
-| 4 | `theorem` | [Equivalence.hasTerminal_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/equivalence-hasterminal-iff.md) | 43 | `result-track:0301a239782d4628e854f950761f71f8010b0358a8f3633523795a552beb2383` |
+| 1 | `theorem` | [hasInitial_of_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/hasinitial-of-equivalence.md) | 33 | `result-track:5c4d3c3c5e08a294b368a81f04cc4768ce2d6d58fc09ca6b5d41fb9db8acaaa0` |
+| 2 | `theorem` | [Equivalence.hasInitial_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/equivalence-hasinitial-iff.md) | 36 | `result-track:bbd2a910296605dee5137574d8d9e1a1ebde704bd7e66586777bb7c969183a2b` |
+| 3 | `theorem` | [hasTerminal_of_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/hasterminal-of-equivalence.md) | 40 | `result-track:d5d00e83bf088d8013b1dd5eaa255c4b6cd76701b86c5766d9f782aa3a1e0f2b` |
+| 4 | `theorem` | [Equivalence.hasTerminal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalenceNamespaced.lean/declarations/equivalence-hasterminal-iff.md) | 43 | `result-track:0301a239782d4628e854f950761f71f8010b0358a8f3633523795a552beb2383` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:eb64f08a3849cd647728580b24eb15c5de98e587dfb72533a97731adec896fc4` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-2.md) | 22 | `declaration-track:34d989602eccff97471a51fc7ef59c194a9a67ee75074ec65b9938c3b32cc506` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-5.md) | 25 | `declaration-track:92138924efe8f579234996775746f2c1e9ad0cae4442383d0230b307634de882` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-3.md) | 28 | `declaration-track:4232d3aa0e0282255969a2b288092d38018a2827f22b6ae734641b2032ccbe9f` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:8358d497b1d65abd3c372f4c55d405296285f66c7c89e5a50f354cdb68b59e5a` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example.md) | 39 | `declaration-track:26db84aa99948ac413e01b0f38946db63c6540585412f2bd5ffda54f387153ce` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:eb64f08a3849cd647728580b24eb15c5de98e587dfb72533a97731adec896fc4` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-2.md) | 22 | `declaration-track:34d989602eccff97471a51fc7ef59c194a9a67ee75074ec65b9938c3b32cc506` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-5.md) | 25 | `declaration-track:92138924efe8f579234996775746f2c1e9ad0cae4442383d0230b307634de882` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-3.md) | 28 | `declaration-track:4232d3aa0e0282255969a2b288092d38018a2827f22b6ae734641b2032ccbe9f` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:8358d497b1d65abd3c372f4c55d405296285f66c7c89e5a50f354cdb68b59e5a` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HostileGuardsNamespacedEdition6.lean/declarations/example.md) | 39 | `declaration-track:26db84aa99948ac413e01b0f38946db63c6540585412f2bd5ffda54f387153ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

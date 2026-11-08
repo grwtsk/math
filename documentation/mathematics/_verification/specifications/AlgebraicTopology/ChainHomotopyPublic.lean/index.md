@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hom](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/declarations/hom.md) | 41 | `declaration-track:8fb23e35fdeb76e9e067af7c0d508e29cca983147697cc0b5af62fd6d858b206` |
-| 2 | `lemma` | [hom_eq](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/declarations/hom-eq.md) | 47 | `result-track:0cd2d06b00fbb371e68b7779535fe52387fbe02328f06a2b828180fb3b35b1a7` |
-| 3 | `lemma` | [hom_eq_zero](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/declarations/hom-eq-zero.md) | 52 | `result-track:cc50b73de05cdc2248859d047b8e620901c656905fa23a330aa315def22f8b21` |
-| 4 | `lemma` | [comm_zero](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/declarations/comm-zero.md) | 56 | `result-track:6f2162998babdd50eb4a167e262c552e59b9e355ed7d3d847e1a0716370eaa27` |
-| 5 | `lemma` | [comm_succ](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/declarations/comm-succ.md) | 61 | `result-track:b2580c61eff6ef43291015e07a3a2842c20ec2788d3e2e48447b17400dfb47e6` |
-| 6 | `def` | [toChainHomotopy](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/declarations/tochainhomotopy.md) | 157 | `declaration-track:e53f80e0353859e72ec01bc02aef2b6c982da25686d9479489f32e40d78abc1c` |
-| 7 | `theorem` | [map_homology_eq](../../../../AlgebraicTopology/ChainHomotopyPublic.lean/declarations/map-homology-eq.md) | 172 | `result-track:151837c286cee190baf6c62436c18cb483388c98e04fd35b3de9c7726409226a` |
+| 1 | `def` | [hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/declarations/hom.md) | 41 | `declaration-track:8fb23e35fdeb76e9e067af7c0d508e29cca983147697cc0b5af62fd6d858b206` |
+| 2 | `lemma` | [hom_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/declarations/hom-eq.md) | 47 | `result-track:0cd2d06b00fbb371e68b7779535fe52387fbe02328f06a2b828180fb3b35b1a7` |
+| 3 | `lemma` | [hom_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/declarations/hom-eq-zero.md) | 52 | `result-track:cc50b73de05cdc2248859d047b8e620901c656905fa23a330aa315def22f8b21` |
+| 4 | `lemma` | [comm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/declarations/comm-zero.md) | 56 | `result-track:6f2162998babdd50eb4a167e262c552e59b9e355ed7d3d847e1a0716370eaa27` |
+| 5 | `lemma` | [comm_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/declarations/comm-succ.md) | 61 | `result-track:b2580c61eff6ef43291015e07a3a2842c20ec2788d3e2e48447b17400dfb47e6` |
+| 6 | `def` | [toChainHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/declarations/tochainhomotopy.md) | 157 | `declaration-track:e53f80e0353859e72ec01bc02aef2b6c982da25686d9479489f32e40d78abc1c` |
+| 7 | `theorem` | [map_homology_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ChainHomotopyPublic.lean/declarations/map-homology-eq.md) | 172 | `result-track:151837c286cee190baf6c62436c18cb483388c98e04fd35b3de9c7726409226a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

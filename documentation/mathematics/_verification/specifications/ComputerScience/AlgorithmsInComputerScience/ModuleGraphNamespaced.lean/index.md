@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ModuleGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/declarations/modulegraph.md) | 15 | `declaration-track:2d6fe011343c27846b9501bac3d6415526725de1c5b364e001672492b7b1f02e` |
-| 2 | `def` | [moduleGraphContains](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/declarations/modulegraphcontains.md) | 17 | `declaration-track:e4a642281d8295e6717db66339b1c6464f84bc67f9fdaf39b2a5c5a7fea869c0` |
-| 3 | `theorem` | [empty_module_graph_contains_none](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/declarations/empty-module-graph-contains-none.md) | 20 | `result-track:cd4aabafec9ea8f32081b282858087fdf3651d7be1b969a3c119616ed90f7d4f` |
+| 1 | `def` | [ModuleGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/declarations/modulegraph.md) | 15 | `declaration-track:2d6fe011343c27846b9501bac3d6415526725de1c5b364e001672492b7b1f02e` |
+| 2 | `def` | [moduleGraphContains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/declarations/modulegraphcontains.md) | 17 | `declaration-track:e4a642281d8295e6717db66339b1c6464f84bc67f9fdaf39b2a5c5a7fea869c0` |
+| 3 | `theorem` | [empty_module_graph_contains_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleGraphNamespaced.lean/declarations/empty-module-graph-contains-none.md) | 20 | `result-track:cd4aabafec9ea8f32081b282858087fdf3651d7be1b969a3c119616ed90f7d4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

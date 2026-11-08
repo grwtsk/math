@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cutoffOneSharpDiagonalCost](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesharpdiagonalcost.md) | 26 | `declaration-track:3f6081fd0b2283a9576cecaa006de14f2698d8271bd19550d50bc4f47092bbe3` |
-| 2 | `def` | [cutoffOneSharpLedgerCost](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesharpledgercost.md) | 30 | `declaration-track:0b8e96ef28934ccf6e62f8a09307d2fd2c87d45264cbddab60a435e2fec3cafe` |
-| 3 | `theorem` | [cutoffOneDiagonal_sub_prime_le_three_halves](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonediagonal-sub-prime-le-three-halves.md) | 33 | `result-track:c70ecc6d709ee32ac0e48f128942f43bd964b31130e6605ce320be15cfd0d55a` |
-| 4 | `theorem` | [cutoffOnePrimeDiagonal_tail_error](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffoneprimediagonal-tail-error.md) | 39 | `result-track:6e4e0e85839d224e67448aa881b00dfcb4349334561aef9d9e71ee007ef51114` |
-| 5 | `theorem` | [cutoffOneDiagonal_tail_error](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonediagonal-tail-error.md) | 73 | `result-track:8aa3e4ceb2a89074c427472efb0c1180df3593325d178ec26cdbae24c96aa58b` |
-| 6 | `theorem` | [cutoffOneSamplingError_tail](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesamplingerror-tail.md) | 85 | `result-track:e46d77dde289cbf4fc06ccb8cb969a64116d9a0a79dfe2f9519e90c661367625` |
-| 7 | `theorem` | [cutoffOneLedgerError_tail](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffoneledgererror-tail.md) | 90 | `result-track:6cb6576784b6537b0092f738599b10ce58ab163a239379032721842b16d28cd9` |
-| 8 | `theorem` | [actual_cumulative_jointFlux_tail](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/actual-cumulative-jointflux-tail.md) | 102 | `result-track:e09e821d2ae45d8e0466a3d7377dde3a48e368e69b46001a76f02c5df9cbc004` |
-| 9 | `theorem` | [cutoffOneSharpDiagonalCost_ninety_one_lt_26](../../../../MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesharpdiagonalcost-ninety-one-lt-26.md) | 110 | `result-track:2e0a21737cc4b80b74ca0979bc6902f083e7ee26ed0e6ec12981aa7eb033e832` |
+| 1 | `def` | [cutoffOneSharpDiagonalCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesharpdiagonalcost.md) | 26 | `declaration-track:3f6081fd0b2283a9576cecaa006de14f2698d8271bd19550d50bc4f47092bbe3` |
+| 2 | `def` | [cutoffOneSharpLedgerCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesharpledgercost.md) | 30 | `declaration-track:0b8e96ef28934ccf6e62f8a09307d2fd2c87d45264cbddab60a435e2fec3cafe` |
+| 3 | `theorem` | [cutoffOneDiagonal_sub_prime_le_three_halves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonediagonal-sub-prime-le-three-halves.md) | 33 | `result-track:c70ecc6d709ee32ac0e48f128942f43bd964b31130e6605ce320be15cfd0d55a` |
+| 4 | `theorem` | [cutoffOnePrimeDiagonal_tail_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffoneprimediagonal-tail-error.md) | 39 | `result-track:6e4e0e85839d224e67448aa881b00dfcb4349334561aef9d9e71ee007ef51114` |
+| 5 | `theorem` | [cutoffOneDiagonal_tail_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonediagonal-tail-error.md) | 73 | `result-track:8aa3e4ceb2a89074c427472efb0c1180df3593325d178ec26cdbae24c96aa58b` |
+| 6 | `theorem` | [cutoffOneSamplingError_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesamplingerror-tail.md) | 85 | `result-track:e46d77dde289cbf4fc06ccb8cb969a64116d9a0a79dfe2f9519e90c661367625` |
+| 7 | `theorem` | [cutoffOneLedgerError_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffoneledgererror-tail.md) | 90 | `result-track:6cb6576784b6537b0092f738599b10ce58ab163a239379032721842b16d28cd9` |
+| 8 | `theorem` | [actual_cumulative_jointFlux_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/actual-cumulative-jointflux-tail.md) | 102 | `result-track:e09e821d2ae45d8e0466a3d7377dde3a48e368e69b46001a76f02c5df9cbc004` |
+| 9 | `theorem` | [cutoffOneSharpDiagonalCost_ninety_one_lt_26](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCutoffOneSharpTailEdition3.lean/declarations/cutoffonesharpdiagonalcost-ninety-one-lt-26.md) | 110 | `result-track:2e0a21737cc4b80b74ca0979bc6902f083e7ee26ed0e6ec12981aa7eb033e832` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

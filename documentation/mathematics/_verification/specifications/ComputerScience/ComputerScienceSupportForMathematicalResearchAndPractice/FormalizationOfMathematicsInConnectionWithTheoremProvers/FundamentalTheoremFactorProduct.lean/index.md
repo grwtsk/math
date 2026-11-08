@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [factorProduct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/declarations/factorproduct.md) | 18 | `declaration-track:27573a24615154d85fa41a5d12ccc15973b1b6b5dd59e6f2e04f4e9473fa71cb` |
-| 2 | `theorem` | [factorProduct_factorization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/declarations/factorproduct-factorization.md) | 22 | `result-track:26c6187a1e168f3202cf9ad3c1582f0e53cfea699b3e7c4713972af63c06ad75` |
-| 3 | `theorem` | [factorProduct_one](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/declarations/factorproduct-one.md) | 28 | `result-track:ad02bc000239d3892d4700045927200c2babccd561222ed070b0fd9531c27fd5` |
+| 1 | `def` | [factorProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/declarations/factorproduct.md) | 18 | `declaration-track:27573a24615154d85fa41a5d12ccc15973b1b6b5dd59e6f2e04f4e9473fa71cb` |
+| 2 | `theorem` | [factorProduct_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/declarations/factorproduct-factorization.md) | 22 | `result-track:26c6187a1e168f3202cf9ad3c1582f0e53cfea699b3e7c4713972af63c06ad75` |
+| 3 | `theorem` | [factorProduct_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremFactorProduct.lean/declarations/factorproduct-one.md) | 28 | `result-track:ad02bc000239d3892d4700045927200c2babccd561222ed070b0fd9531c27fd5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

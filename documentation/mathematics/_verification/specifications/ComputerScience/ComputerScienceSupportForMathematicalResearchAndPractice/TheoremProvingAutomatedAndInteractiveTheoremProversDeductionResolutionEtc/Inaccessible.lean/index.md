@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Lean.LocalContext.inaccessibleFVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/declarations/lean-localcontext-inaccessiblefvars.md) | 10 | `declaration-track:2d8dc20c528cd426cef1dad46a1999588865c2b65f03808d0648fab1e694f1e3` |
-| 2 | `def` | [Lean.Meta.getInaccessibleFVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/declarations/lean-meta-getinaccessiblefvars.md) | 32 | `declaration-track:2422a5028290e9b889d00928c1dbea2e15b6757a53e8af342b6efe6604e1afa1` |
-| 3 | `def` | [Lean.MVarId.renameInaccessibleFVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/declarations/lean-mvarid-renameinaccessiblefvars.md) | 42 | `declaration-track:989fd10af7a5fad142afb2e486357588fad3fda590462eb739c4425ecfefc42b` |
+| 1 | `def` | [Lean.LocalContext.inaccessibleFVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/declarations/lean-localcontext-inaccessiblefvars.md) | 10 | `declaration-track:2d8dc20c528cd426cef1dad46a1999588865c2b65f03808d0648fab1e694f1e3` |
+| 2 | `def` | [Lean.Meta.getInaccessibleFVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/declarations/lean-meta-getinaccessiblefvars.md) | 32 | `declaration-track:2422a5028290e9b889d00928c1dbea2e15b6757a53e8af342b6efe6604e1afa1` |
+| 3 | `def` | [Lean.MVarId.renameInaccessibleFVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Inaccessible.lean/declarations/lean-mvarid-renameinaccessiblefvars.md) | 42 | `declaration-track:989fd10af7a5fad142afb2e486357588fad3fda590462eb739c4425ecfefc42b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

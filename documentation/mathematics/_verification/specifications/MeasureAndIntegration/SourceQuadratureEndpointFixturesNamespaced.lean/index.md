@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellInterior](../../../../MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/cellinterior.md) | 30 | `declaration-track:6d99b6047bca470d12e61ed08e4a87e5733cee15f51880dc9a9ed65648c7a645` |
-| 2 | `theorem` | [cellInterior_endpoints](../../../../MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/cellinterior-endpoints.md) | 32 | `result-track:076b6ba71a548156f85cf84dbe3a8ca8601a3e6508d041cd93dc3cb9518db74e` |
-| 3 | `theorem` | [cellInterior_integral](../../../../MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/cellinterior-integral.md) | 35 | `result-track:61171311889af27804a59296b38344c2e0ef3971b4cc1b552cd2ceb96f524dff` |
-| 4 | `theorem` | [zero_endpoints_do_not_erase_continuous_tail](../../../../MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/zero-endpoints-do-not-erase-continuous-tail.md) | 53 | `result-track:52543e2cf94d660df4248ebf52605c720d27071c021e5e6b64de394c9231d3e6` |
+| 1 | `def` | [cellInterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/cellinterior.md) | 30 | `declaration-track:6d99b6047bca470d12e61ed08e4a87e5733cee15f51880dc9a9ed65648c7a645` |
+| 2 | `theorem` | [cellInterior_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/cellinterior-endpoints.md) | 32 | `result-track:076b6ba71a548156f85cf84dbe3a8ca8601a3e6508d041cd93dc3cb9518db74e` |
+| 3 | `theorem` | [cellInterior_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/cellinterior-integral.md) | 35 | `result-track:61171311889af27804a59296b38344c2e0ef3971b4cc1b552cd2ceb96f524dff` |
+| 4 | `theorem` | [zero_endpoints_do_not_erase_continuous_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceQuadratureEndpointFixturesNamespaced.lean/declarations/zero-endpoints-do-not-erase-continuous-tail.md) | 53 | `result-track:52543e2cf94d660df4248ebf52605c720d27071c021e5e6b64de394c9231d3e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

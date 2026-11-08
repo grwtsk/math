@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMonoidalCategoryStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/instmonoidalcategorystruct.md) | 39 | `declaration-track:ba3627bff8ff34c7257712938437139f66a6d4432044852946494ecd0a09dfdf` |
-| 2 | `def` | [MonoidalCategory.inducingFunctorData](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/monoidalcategory-inducingfunctordata.md) | 53 | `declaration-track:94c39c41c251c8ef574e665ef4171fe04c0b4f8b7e478f2e18369c1c3c3d1326` |
-| 3 | `instance` | [instMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/instmonoidalcategory.md) | 67 | `declaration-track:96e80e96f2a2a2932491490754c4b10a75d5f3c2f0bb3ec6eae9d94a1b9c5141` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/instance.md) | 71 | `declaration-track:b1fba3b9dacc85b088436dba73c3be8a760d1bed355531f15b973a52ed0a5de2` |
+| 1 | `instance` | [instMonoidalCategoryStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/instmonoidalcategorystruct.md) | 39 | `declaration-track:ba3627bff8ff34c7257712938437139f66a6d4432044852946494ecd0a09dfdf` |
+| 2 | `def` | [MonoidalCategory.inducingFunctorData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/monoidalcategory-inducingfunctordata.md) | 53 | `declaration-track:94c39c41c251c8ef574e665ef4171fe04c0b4f8b7e478f2e18369c1c3c3d1326` |
+| 3 | `instance` | [instMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/instmonoidalcategory.md) | 67 | `declaration-track:96e80e96f2a2a2932491490754c4b10a75d5f3c2f0bb3ec6eae9d94a1b9c5141` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespacedPublic.lean/declarations/instance.md) | 71 | `declaration-track:b1fba3b9dacc85b088436dba73c3be8a760d1bed355531f15b973a52ed0a5de2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

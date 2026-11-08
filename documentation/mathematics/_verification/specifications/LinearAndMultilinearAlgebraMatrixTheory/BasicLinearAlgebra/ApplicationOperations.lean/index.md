@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Application](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/application.md) | 34 | `declaration-track:9bea668d2a09d50e86b92ff6ceecb639f13a4ae1cfb06d15ed2082c89914721d` |
-| 2 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/identity.md) | 39 | `declaration-track:3a61c0d6b875a7cb4e9ef03d19a6617c5dbbe8b64c3b452a00632d4658e9ad56` |
-| 3 | `def` | [comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/comp.md) | 43 | `declaration-track:8f5b1fa79c6bb85f3ee173eec4ad7bcf34269ae3f7b715cfcd816e48912f0dfa` |
-| 4 | `theorem` | [identity_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/identity-apply.md) | 49 | `result-track:1425035e4c785b85a0627c9b500f6c2e71927469fcde4b5eb39fe4313e4c7aa3` |
-| 5 | `theorem` | [comp_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/comp-apply.md) | 54 | `result-track:c0ce08caa5712a4f07928681aa76e73db10cf5765e3488c3fdb938fd883e35eb` |
+| 1 | `abbrev` | [Application](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/application.md) | 34 | `declaration-track:9bea668d2a09d50e86b92ff6ceecb639f13a4ae1cfb06d15ed2082c89914721d` |
+| 2 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/identity.md) | 39 | `declaration-track:3a61c0d6b875a7cb4e9ef03d19a6617c5dbbe8b64c3b452a00632d4658e9ad56` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/comp.md) | 43 | `declaration-track:8f5b1fa79c6bb85f3ee173eec4ad7bcf34269ae3f7b715cfcd816e48912f0dfa` |
+| 4 | `theorem` | [identity_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/identity-apply.md) | 49 | `result-track:1425035e4c785b85a0627c9b500f6c2e71927469fcde4b5eb39fe4313e4c7aa3` |
+| 5 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ApplicationOperations.lean/declarations/comp-apply.md) | 54 | `result-track:c0ce08caa5712a4f07928681aa76e73db10cf5765e3488c3fdb938fd883e35eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MeasureDeterminingTestClass](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/declarations/measuredeterminingtestclass.md) | 14 | `declaration-track:9549af0adcb76c285eb9045d8f4bd3dcb3cf21e2478ec3fa9cbfe89056161a0d` |
-| 2 | `theorem` | [measureEquality_of_testClassEquality](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/declarations/measureequality-of-testclassequality.md) | 26 | `result-track:10088915269dd4ba2303af5c267fe10a990c69adb57c0d46afa7394b94c99f4e` |
-| 3 | `structure` | [CompositeMatchingDefect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/declarations/compositematchingdefect.md) | 40 | `declaration-track:be23300a7b8da4df6bf7fea4648d0dc158fdf66eaf8ee3b3bf7bf04affd085dd` |
+| 1 | `structure` | [MeasureDeterminingTestClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/declarations/measuredeterminingtestclass.md) | 14 | `declaration-track:9549af0adcb76c285eb9045d8f4bd3dcb3cf21e2478ec3fa9cbfe89056161a0d` |
+| 2 | `theorem` | [measureEquality_of_testClassEquality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/declarations/measureequality-of-testclassequality.md) | 26 | `result-track:10088915269dd4ba2303af5c267fe10a990c69adb57c0d46afa7394b94c99f4e` |
+| 3 | `structure` | [CompositeMatchingDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MeasureTest.lean/declarations/compositematchingdefect.md) | 40 | `declaration-track:be23300a7b8da4df6bf7fea4648d0dc158fdf66eaf8ee3b3bf7bf04affd085dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

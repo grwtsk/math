@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RectangleLogDerivNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/RectangleLogDerivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDerivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDerivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residueTheorem_finset](../../../../GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/residuetheorem-finset.md) | 39 | `result-track:ea6b4222e0e4f931a1c922e4b93e14b0dd3dafdab17d9342adeebb73acfba941` |
-| 2 | `theorem` | [finite_zeros_rectangle](../../../../GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/finite-zeros-rectangle.md) | 151 | `result-track:9a163b32e6a178753dc9e8348af4fdfc4ae28d9f773df455f71bf877c3609a68` |
-| 3 | `theorem` | [rectangleIntegral'_mul_logDeriv_of_poles](../../../../GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/rectangleintegral-mul-logderiv-of-poles.md) | 176 | `result-track:d4d0de16df754e6f3e822a5d3e58796dde51bff477576761754c2352876cded2` |
-| 4 | `theorem` | [rectangleIntegral'_mul_logDeriv](../../../../GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/rectangleintegral-mul-logderiv-source-edition-2.md) | 360 | `result-track:d37f119f957b5da37ed5edaf0aa3e6ff05d4990833e13b8ca8933cba799a3ea9` |
-| 5 | `theorem` | [rectangleIntegral'_mul_logDeriv'](../../../../GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/rectangleintegral-mul-logderiv.md) | 373 | `result-track:0f9ff471727989c1470895a8d032a8c1f266e181045b4f0fe71412b6d01e2bc4` |
+| 1 | `theorem` | [residueTheorem_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/residuetheorem-finset.md) | 39 | `result-track:ea6b4222e0e4f931a1c922e4b93e14b0dd3dafdab17d9342adeebb73acfba941` |
+| 2 | `theorem` | [finite_zeros_rectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/finite-zeros-rectangle.md) | 151 | `result-track:9a163b32e6a178753dc9e8348af4fdfc4ae28d9f773df455f71bf877c3609a68` |
+| 3 | `theorem` | [rectangleIntegral'_mul_logDeriv_of_poles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/rectangleintegral-mul-logderiv-of-poles.md) | 176 | `result-track:d4d0de16df754e6f3e822a5d3e58796dde51bff477576761754c2352876cded2` |
+| 4 | `theorem` | [rectangleIntegral'_mul_logDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/rectangleintegral-mul-logderiv-source-edition-2.md) | 360 | `result-track:d37f119f957b5da37ed5edaf0aa3e6ff05d4990833e13b8ca8933cba799a3ea9` |
+| 5 | `theorem` | [rectangleIntegral'_mul_logDeriv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDerivNamespaced.lean/declarations/rectangleintegral-mul-logderiv.md) | 373 | `result-track:0f9ff471727989c1470895a8d032a8c1f266e181045b4f0fe71412b6d01e2bc4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

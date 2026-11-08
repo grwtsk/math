@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [selbergSourceWeight](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/selbergsourceweight.md) | 13 | `declaration-track:04874c7089c04d5c15004e371eaf0192e7accb958b65544a084fa08791c4a06b` |
-| 2 | `def` | [mangoldtConvolutionContribution](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/mangoldtconvolutioncontribution.md) | 18 | `declaration-track:f5007ef861cac7e9ff42531b9c2ea0da755a56a5cebc6710c3d1d8ea56f22f4c` |
-| 3 | `theorem` | [weighted_selberg_identity](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/weighted-selberg-identity.md) | 25 | `result-track:c36519d2be1d4492672ac2d8b9f4c884b2c5698bb78af45206e0d402ae72d91e` |
-| 4 | `theorem` | [primePowerContribution_eq_selberg_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/primepowercontribution-eq-selberg-difference.md) | 38 | `result-track:6f6dec65458f5312a9095f0711ea3f389a8c739639489ec33c7acedf533b8246` |
-| 5 | `theorem` | [sourceQuadraticValue_eq_selberg_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/sourcequadraticvalue-eq-selberg-difference.md) | 54 | `result-track:f43c5a6fc303bbfab867a408f31b5f9dde4b60d5c26f47c2d84a144c3c8a71d3` |
+| 1 | `def` | [selbergSourceWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/selbergsourceweight.md) | 13 | `declaration-track:04874c7089c04d5c15004e371eaf0192e7accb958b65544a084fa08791c4a06b` |
+| 2 | `def` | [mangoldtConvolutionContribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/mangoldtconvolutioncontribution.md) | 18 | `declaration-track:f5007ef861cac7e9ff42531b9c2ea0da755a56a5cebc6710c3d1d8ea56f22f4c` |
+| 3 | `theorem` | [weighted_selberg_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/weighted-selberg-identity.md) | 25 | `result-track:c36519d2be1d4492672ac2d8b9f4c884b2c5698bb78af45206e0d402ae72d91e` |
+| 4 | `theorem` | [primePowerContribution_eq_selberg_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/primepowercontribution-eq-selberg-difference.md) | 38 | `result-track:6f6dec65458f5312a9095f0711ea3f389a8c739639489ec33c7acedf533b8246` |
+| 5 | `theorem` | [sourceQuadraticValue_eq_selberg_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SelbergSourceTransport.lean/declarations/sourcequadraticvalue-eq-selberg-difference.md) | 54 | `result-track:f43c5a6fc303bbfab867a408f31b5f9dde4b60d5c26f47c2d84a144c3c8a71d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Dissociation.lean/index.md) · [Full source](../../../../Combinatorics/Dissociation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,20 +63,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MulDissociated](../../../../Combinatorics/Dissociation.lean/declarations/muldissociated.md) | 41 | `declaration-track:66b12d205c828b1c644ed8a5d4747c617febe22cb02a99243429e4329f113e5a` |
-| 2 | `lemma` | [mulDissociated_iff_sum_eq_subsingleton](../../../../Combinatorics/Dissociation.lean/declarations/muldissociated-iff-sum-eq-subsingleton.md) | 43 | `result-track:dc85583acbb2b3d0130d52bf5c693e954776de89809b94ae74304a489f3e4706` |
-| 3 | `lemma` | [MulDissociated.subset](../../../../Combinatorics/Dissociation.lean/declarations/muldissociated-subset.md) | 48 | `result-track:63056b44fafdfc4a2e60aba84db14550dd657e1a172e4dcac1d468cdba1a7faf` |
-| 4 | `lemma` | [mulDissociated_empty](../../../../Combinatorics/Dissociation.lean/declarations/muldissociated-empty.md) | 51 | `result-track:a197d1c7e428d3f87bfb4b214de363fa0439b0f39dbbd8641d21268ed276d6a2` |
-| 5 | `lemma` | [mulDissociated_singleton](../../../../Combinatorics/Dissociation.lean/declarations/muldissociated-singleton.md) | 55 | `result-track:c56c16a8895d3a40f28268dcb0df71690cb3ee1018c8b53317a9f49250f3e130` |
-| 6 | `lemma` | [not_mulDissociated](../../../../Combinatorics/Dissociation.lean/declarations/not-muldissociated.md) | 60 | `result-track:16a6cad9f1b3b1a5c0d41e3e0d977e2bb03382f53cfe318699378c0b13020307` |
-| 7 | `lemma` | [not_mulDissociated_iff_exists_disjoint](../../../../Combinatorics/Dissociation.lean/declarations/not-muldissociated-iff-exists-disjoint.md) | 66 | `result-track:ba14ed550630f4f8936441cc1d486792ccc390042b87cb99bd794f0bada8ceb7` |
-| 8 | `lemma` | [MulEquiv.mulDissociated_preimage](../../../../Combinatorics/Dissociation.lean/declarations/mulequiv-muldissociated-preimage.md) | 76 | `result-track:66c2235b5f05aa3d5cc0584cfeba69e65ad3a0e10807729e7715026fc7e10b86` |
-| 9 | `lemma` | [mulDissociated_inv](../../../../Combinatorics/Dissociation.lean/declarations/muldissociated-inv.md) | 81 | `result-track:6ac02d7ac7c4d8e61858eeb58378b96b132b7d1058e91528e28a53ce0697bd9c` |
-| 10 | `def` | [mulSpan](../../../../Combinatorics/Dissociation.lean/declarations/mulspan.md) | 101 | `declaration-track:981db91929517474ff99f73b9ffe8e68920bc4f610d64b56679a9d429f4f694b` |
-| 11 | `lemma` | [mem_mulSpan](../../../../Combinatorics/Dissociation.lean/declarations/mem-mulspan.md) | 105 | `result-track:b19ada29b7c00b90727ac873346694d4f275167835ef5ff5fc3ab0c0394360ac` |
-| 12 | `lemma` | [subset_mulSpan](../../../../Combinatorics/Dissociation.lean/declarations/subset-mulspan.md) | 110 | `result-track:eb248d728bc5acb2c47000cda0fec045617534648917a31a14facc4f94323243` |
-| 13 | `lemma` | [prod_div_prod_mem_mulSpan](../../../../Combinatorics/Dissociation.lean/declarations/prod-div-prod-mem-mulspan.md) | 115 | `result-track:12034e290206871a41c38a1eccb65753aec8b4353af08eacadced41b9782db41` |
-| 14 | `lemma` | [exists_subset_mulSpan_card_le_of_forall_mulDissociated](../../../../Combinatorics/Dissociation.lean/declarations/exists-subset-mulspan-card-le-of-forall-muldissociated.md) | 131 | `result-track:6622b67bad32419b9af082898de41746f08f8d655114dedddc3827a4d98bb226` |
+| 1 | `def` | [MulDissociated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/muldissociated.md) | 41 | `declaration-track:66b12d205c828b1c644ed8a5d4747c617febe22cb02a99243429e4329f113e5a` |
+| 2 | `lemma` | [mulDissociated_iff_sum_eq_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/muldissociated-iff-sum-eq-subsingleton.md) | 43 | `result-track:dc85583acbb2b3d0130d52bf5c693e954776de89809b94ae74304a489f3e4706` |
+| 3 | `lemma` | [MulDissociated.subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/muldissociated-subset.md) | 48 | `result-track:63056b44fafdfc4a2e60aba84db14550dd657e1a172e4dcac1d468cdba1a7faf` |
+| 4 | `lemma` | [mulDissociated_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/muldissociated-empty.md) | 51 | `result-track:a197d1c7e428d3f87bfb4b214de363fa0439b0f39dbbd8641d21268ed276d6a2` |
+| 5 | `lemma` | [mulDissociated_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/muldissociated-singleton.md) | 55 | `result-track:c56c16a8895d3a40f28268dcb0df71690cb3ee1018c8b53317a9f49250f3e130` |
+| 6 | `lemma` | [not_mulDissociated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/not-muldissociated.md) | 60 | `result-track:16a6cad9f1b3b1a5c0d41e3e0d977e2bb03382f53cfe318699378c0b13020307` |
+| 7 | `lemma` | [not_mulDissociated_iff_exists_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/not-muldissociated-iff-exists-disjoint.md) | 66 | `result-track:ba14ed550630f4f8936441cc1d486792ccc390042b87cb99bd794f0bada8ceb7` |
+| 8 | `lemma` | [MulEquiv.mulDissociated_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/mulequiv-muldissociated-preimage.md) | 76 | `result-track:66c2235b5f05aa3d5cc0584cfeba69e65ad3a0e10807729e7715026fc7e10b86` |
+| 9 | `lemma` | [mulDissociated_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/muldissociated-inv.md) | 81 | `result-track:6ac02d7ac7c4d8e61858eeb58378b96b132b7d1058e91528e28a53ce0697bd9c` |
+| 10 | `def` | [mulSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/mulspan.md) | 101 | `declaration-track:981db91929517474ff99f73b9ffe8e68920bc4f610d64b56679a9d429f4f694b` |
+| 11 | `lemma` | [mem_mulSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/mem-mulspan.md) | 105 | `result-track:b19ada29b7c00b90727ac873346694d4f275167835ef5ff5fc3ab0c0394360ac` |
+| 12 | `lemma` | [subset_mulSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/subset-mulspan.md) | 110 | `result-track:eb248d728bc5acb2c47000cda0fec045617534648917a31a14facc4f94323243` |
+| 13 | `lemma` | [prod_div_prod_mem_mulSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/prod-div-prod-mem-mulspan.md) | 115 | `result-track:12034e290206871a41c38a1eccb65753aec8b4353af08eacadced41b9782db41` |
+| 14 | `lemma` | [exists_subset_mulSpan_card_le_of_forall_mulDissociated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dissociation.lean/declarations/exists-subset-mulspan-card-le-of-forall-muldissociated.md) | 131 | `result-track:6622b67bad32419b9af082898de41746f08f8d655114dedddc3827a4d98bb226` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

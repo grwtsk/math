@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcExpansion`](../../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcExpansion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_one_one_two_center_distance](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/zero-one-one-two-center-distance.md) | 29 | `result-track:87da5e4a340b93e1ed0d89a7e4f9601114aaf2c782feb2f78ddddf4f06d39470` |
-| 2 | `theorem` | [zero_one_one_two_separation](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/zero-one-one-two-separation.md) | 37 | `result-track:65c27ec4420a4b028aa101715392ab57c7bb887f9add402d78a5ffe5538bd8cb` |
-| 3 | `theorem` | [cutoff_two_target_eight_scale](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/cutoff-two-target-eight-scale.md) | 53 | `result-track:0316bb246f797ac63a0eb3d363c6bdb4b0730aded64dffe0bb8125b28ef741b1` |
-| 4 | `theorem` | [cutoff_two_target_eight_disjoint](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/cutoff-two-target-eight-disjoint.md) | 57 | `result-track:ea79bee7b6dd87e836088ca91d0096dba148cf0cc05f32c53e9f717fd2e04390` |
-| 5 | `theorem` | [overlap_control_fails_scale](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/overlap-control-fails-scale.md) | 68 | `result-track:94a42be09ec022dd8db242e47051b23c85bf93b3a2414454e7fd54708fc00033` |
-| 6 | `theorem` | [same_fraction_adjacent_lifts_disjoint](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/same-fraction-adjacent-lifts-disjoint.md) | 73 | `result-track:5f94c51b7453d06066a30a315c8167976321d244d5e71c59f2eee15ad22782d0` |
-| 7 | `theorem` | [cutoff_one_target_two_major_sum](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/cutoff-one-target-two-major-sum.md) | 84 | `result-track:9ae8f501878f84f1fb28a15c5c4c54005e05359c7cf29b9bd2d95c43807957db` |
-| 8 | `theorem` | [disjoint_expansion_not_goldbach_witness](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/disjoint-expansion-not-goldbach-witness.md) | 91 | `result-track:0f10f37633396a1db4478f1db1089c94bf2a4be10f4a3fc88266547a1a926290` |
-| 9 | `theorem` | [strict_scale_boundary_rejected](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/strict-scale-boundary-rejected.md) | 102 | `result-track:151b84910d64a6e6c782854f7ac594ee8974b8fc675d0e8f423c0dabd3c6b9a0` |
+| 1 | `theorem` | [zero_one_one_two_center_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/zero-one-one-two-center-distance.md) | 29 | `result-track:87da5e4a340b93e1ed0d89a7e4f9601114aaf2c782feb2f78ddddf4f06d39470` |
+| 2 | `theorem` | [zero_one_one_two_separation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/zero-one-one-two-separation.md) | 37 | `result-track:65c27ec4420a4b028aa101715392ab57c7bb887f9add402d78a5ffe5538bd8cb` |
+| 3 | `theorem` | [cutoff_two_target_eight_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/cutoff-two-target-eight-scale.md) | 53 | `result-track:0316bb246f797ac63a0eb3d363c6bdb4b0730aded64dffe0bb8125b28ef741b1` |
+| 4 | `theorem` | [cutoff_two_target_eight_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/cutoff-two-target-eight-disjoint.md) | 57 | `result-track:ea79bee7b6dd87e836088ca91d0096dba148cf0cc05f32c53e9f717fd2e04390` |
+| 5 | `theorem` | [overlap_control_fails_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/overlap-control-fails-scale.md) | 68 | `result-track:94a42be09ec022dd8db242e47051b23c85bf93b3a2414454e7fd54708fc00033` |
+| 6 | `theorem` | [same_fraction_adjacent_lifts_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/same-fraction-adjacent-lifts-disjoint.md) | 73 | `result-track:5f94c51b7453d06066a30a315c8167976321d244d5e71c59f2eee15ad22782d0` |
+| 7 | `theorem` | [cutoff_one_target_two_major_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/cutoff-one-target-two-major-sum.md) | 84 | `result-track:9ae8f501878f84f1fb28a15c5c4c54005e05359c7cf29b9bd2d95c43807957db` |
+| 8 | `theorem` | [disjoint_expansion_not_goldbach_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/disjoint-expansion-not-goldbach-witness.md) | 91 | `result-track:0f10f37633396a1db4478f1db1089c94bf2a4be10f4a3fc88266547a1a926290` |
+| 9 | `theorem` | [strict_scale_boundary_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationControls.lean/declarations/strict-scale-boundary-rejected.md) | 102 | `result-track:151b84910d64a6e6c782854f7ac594ee8974b8fc675d0e8f423c0dabd3c6b9a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diagonalProfile](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/diagonalprofile.md) | 21 | `declaration-track:cf36b3ec6af87328dd8776ccf65ce6f3150da99887119538478bcb18acfc3400` |
-| 2 | `theorem` | [two_diagonal_corners](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/two-diagonal-corners.md) | 23 | `result-track:f5ccda8065ba28900bf35f91a7ac3ed3cb155de3823fcc4f944d06da7e7ad4a2` |
-| 3 | `theorem` | [mixed_corner_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/mixed-corner-zero.md) | 26 | `result-track:e37b28cab3a44ad532647833a934bc612a799382749a31f42464d1a0fa249614` |
-| 4 | `theorem` | [profile_has_no_single_three_factor_separation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/profile-has-no-single-three-factor-separation.md) | 29 | `result-track:e39b031159b3a251faa3b301bc1d72c3a0188c1269ac949e13421d7dc91a1d38` |
-| 5 | `theorem` | [full_two_mode_separation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/full-two-mode-separation.md) | 44 | `result-track:37314d8d68c5932a811570e6968391939de09a50ac973cd59a509b5b4bddd5cb` |
+| 1 | `def` | [diagonalProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/diagonalprofile.md) | 21 | `declaration-track:cf36b3ec6af87328dd8776ccf65ce6f3150da99887119538478bcb18acfc3400` |
+| 2 | `theorem` | [two_diagonal_corners](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/two-diagonal-corners.md) | 23 | `result-track:f5ccda8065ba28900bf35f91a7ac3ed3cb155de3823fcc4f944d06da7e7ad4a2` |
+| 3 | `theorem` | [mixed_corner_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/mixed-corner-zero.md) | 26 | `result-track:e37b28cab3a44ad532647833a934bc612a799382749a31f42464d1a0fa249614` |
+| 4 | `theorem` | [profile_has_no_single_three_factor_separation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/profile-has-no-single-three-factor-separation.md) | 29 | `result-track:e39b031159b3a251faa3b301bc1d72c3a0188c1269ac949e13421d7dc91a1d38` |
+| 5 | `theorem` | [full_two_mode_separation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactoringAnIndexDoesNotFactorACompleteThreeVariableProfileEdition2.lean/declarations/full-two-mode-separation.md) | 44 | `result-track:37314d8d68c5932a811570e6968391939de09a50ac973cd59a509b5b4bddd5cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

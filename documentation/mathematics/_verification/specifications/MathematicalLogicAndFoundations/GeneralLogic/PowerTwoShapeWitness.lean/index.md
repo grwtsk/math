@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPowerTwoSquare](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/declarations/ispowertwosquare.md) | 39 | `declaration-track:af31f4dd89696932f370e985c918a7e54f6a4ae410385b5e382558ae97806cdd` |
-| 2 | `structure` | [BinaryCubeLevel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/declarations/binarycubelevel.md) | 43 | `declaration-track:913f3d9cf50be6873a0cabb1c9a058dee0821316f91bd2b2074cafa7711f4970` |
-| 3 | `theorem` | [binaryCubeLevel_shape](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/declarations/binarycubelevel-shape.md) | 49 | `result-track:4c84cff454098e90958e204e97593493d2d06ac4eb9b2708780f7b9f8d12197b` |
+| 1 | `def` | [IsPowerTwoSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/declarations/ispowertwosquare.md) | 39 | `declaration-track:af31f4dd89696932f370e985c918a7e54f6a4ae410385b5e382558ae97806cdd` |
+| 2 | `structure` | [BinaryCubeLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/declarations/binarycubelevel.md) | 43 | `declaration-track:913f3d9cf50be6873a0cabb1c9a058dee0821316f91bd2b2074cafa7711f4970` |
+| 3 | `theorem` | [binaryCubeLevel_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/declarations/binarycubelevel-shape.md) | 49 | `result-track:4c84cff454098e90958e204e97593493d2d06ac4eb9b2708780f7b9f8d12197b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

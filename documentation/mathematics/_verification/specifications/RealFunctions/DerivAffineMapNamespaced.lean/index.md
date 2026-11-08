@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DerivAffineMapNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/DerivAffineMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasStrictDerivAt](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasstrictderivat.md) | 40 | `result-track:5ab66c912e3c9a236d6a1e54f32f6c77597fa491b60ca288aec827f76beef215` |
-| 2 | `theorem` | [hasDerivAtFilter](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivatfilter.md) | 44 | `result-track:c7a11f1dbad38e4325a327cdc16e95314f4a260b52d5859a1a87f9cad6f057a9` |
-| 3 | `theorem` | [hasDerivWithinAt](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivwithinat.md) | 48 | `result-track:9c2c4048517d88c82eec861396e528216060ffa8e582f2b20d1c5ed86784f69a` |
-| 4 | `theorem` | [hasDerivAt](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivat.md) | 49 | `result-track:3745cc7f07390a40f13fb3c03e46249b28f94b2e6c5428fb6951de6873463971` |
-| 5 | `theorem` | [derivWithin](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/derivwithin.md) | 51 | `result-track:ee42ff6975d4e013b9da61b1e765d408e257c9b13a42e5d9ce3a4a4c5050956e` |
-| 6 | `theorem` | [deriv](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/deriv.md) | 55 | `result-track:554a00ec5f07324c2afec30208ebd630c30489c0b930ee3f099a81fbeb713b54` |
-| 7 | `theorem` | [differentiableAt](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiableat.md) | 57 | `result-track:87514ffd1a6c1a965135e8a906cf2927f0d8b88cc8944b8b2ecb11822b9d25bc` |
-| 8 | `theorem` | [differentiable](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiable.md) | 58 | `result-track:2f452803458651248a3c2574b83b39b6a2f88d4d8597e9e7ca7c461537ed51cc` |
-| 9 | `theorem` | [differentiableWithinAt](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiablewithinat.md) | 60 | `result-track:4dcf197770a2fc9ec6dea7cc8f1d4af5131ce38e53aa1f5a5cbeec002081f9b5` |
-| 10 | `theorem` | [differentiableOn](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiableon.md) | 63 | `result-track:1e503bc482e6dc1a9d595e9de61d3bef589bab489829944ccca19dd400f9f82a` |
-| 11 | `theorem` | [hasStrictDerivAt_lineMap](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasstrictderivat-linemap.md) | 72 | `result-track:ebaab1e45844bea1e347a3aeabf157a0d7904da01433122e574e3f81d0cf7836` |
-| 12 | `theorem` | [hasDerivAt_lineMap](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivat-linemap.md) | 75 | `result-track:a1f4e940575982d164c31daeab695a782fbc111c697f25a1f629dabc18b52cb6` |
-| 13 | `theorem` | [hasDerivWithinAt_lineMap](../../../../RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivwithinat-linemap.md) | 78 | `result-track:f0a0fe37db23c7d14aaace092d12feb8da333e17d5c50cab95b38274b7bce716` |
+| 1 | `theorem` | [hasStrictDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasstrictderivat.md) | 40 | `result-track:5ab66c912e3c9a236d6a1e54f32f6c77597fa491b60ca288aec827f76beef215` |
+| 2 | `theorem` | [hasDerivAtFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivatfilter.md) | 44 | `result-track:c7a11f1dbad38e4325a327cdc16e95314f4a260b52d5859a1a87f9cad6f057a9` |
+| 3 | `theorem` | [hasDerivWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivwithinat.md) | 48 | `result-track:9c2c4048517d88c82eec861396e528216060ffa8e582f2b20d1c5ed86784f69a` |
+| 4 | `theorem` | [hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivat.md) | 49 | `result-track:3745cc7f07390a40f13fb3c03e46249b28f94b2e6c5428fb6951de6873463971` |
+| 5 | `theorem` | [derivWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/derivwithin.md) | 51 | `result-track:ee42ff6975d4e013b9da61b1e765d408e257c9b13a42e5d9ce3a4a4c5050956e` |
+| 6 | `theorem` | [deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/deriv.md) | 55 | `result-track:554a00ec5f07324c2afec30208ebd630c30489c0b930ee3f099a81fbeb713b54` |
+| 7 | `theorem` | [differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiableat.md) | 57 | `result-track:87514ffd1a6c1a965135e8a906cf2927f0d8b88cc8944b8b2ecb11822b9d25bc` |
+| 8 | `theorem` | [differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiable.md) | 58 | `result-track:2f452803458651248a3c2574b83b39b6a2f88d4d8597e9e7ca7c461537ed51cc` |
+| 9 | `theorem` | [differentiableWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiablewithinat.md) | 60 | `result-track:4dcf197770a2fc9ec6dea7cc8f1d4af5131ce38e53aa1f5a5cbeec002081f9b5` |
+| 10 | `theorem` | [differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/differentiableon.md) | 63 | `result-track:1e503bc482e6dc1a9d595e9de61d3bef589bab489829944ccca19dd400f9f82a` |
+| 11 | `theorem` | [hasStrictDerivAt_lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasstrictderivat-linemap.md) | 72 | `result-track:ebaab1e45844bea1e347a3aeabf157a0d7904da01433122e574e3f81d0cf7836` |
+| 12 | `theorem` | [hasDerivAt_lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivat-linemap.md) | 75 | `result-track:a1f4e940575982d164c31daeab695a782fbc111c697f25a1f629dabc18b52cb6` |
+| 13 | `theorem` | [hasDerivWithinAt_lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivAffineMapNamespaced.lean/declarations/hasderivwithinat-linemap.md) | 78 | `result-track:f0a0fe37db23c7d14aaace092d12feb8da333e17d5c50cab95b38274b7bce716` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

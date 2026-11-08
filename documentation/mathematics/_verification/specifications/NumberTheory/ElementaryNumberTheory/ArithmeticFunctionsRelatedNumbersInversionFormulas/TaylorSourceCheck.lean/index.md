@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_negative_remainder](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/exp-negative-remainder.md) | 14 | `result-track:e0e619a3af47da168ac0cbc6a9b63cffc830bf5d6720408502370faf23a38df0` |
-| 2 | `theorem` | [dampedDivisorCoefficient_first_order](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/dampeddivisorcoefficient-first-order.md) | 31 | `result-track:4b917fad032fc780c4dba43358fa4437f5264f405ffab14d26aae5a56485fe76` |
-| 3 | `theorem` | [dampedDivisorCoefficient_prefix_first_order](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/dampeddivisorcoefficient-prefix-first-order.md) | 60 | `result-track:72349d7c554a088e0b6995a906d6cf6d1c9cd21cac1f54d3d3a469361087ee94` |
-| 4 | `theorem` | [dampedDivisorCoefficient_real_prefix_first_order](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/dampeddivisorcoefficient-real-prefix-first-order.md) | 90 | `result-track:c9b09f4b1db838d9a6daefe9065c7f23270d67f32d5347214e0e6a9aafbff72d` |
-| 5 | `theorem` | [arithmeticResidual_prime_prefix_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/arithmeticresidual-prime-prefix-error.md) | 107 | `result-track:50d608c0a720fdd399291198985609d44897adb2a1fa3e31733d3b38ea4606ba` |
+| 1 | `theorem` | [exp_negative_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/exp-negative-remainder.md) | 14 | `result-track:e0e619a3af47da168ac0cbc6a9b63cffc830bf5d6720408502370faf23a38df0` |
+| 2 | `theorem` | [dampedDivisorCoefficient_first_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/dampeddivisorcoefficient-first-order.md) | 31 | `result-track:4b917fad032fc780c4dba43358fa4437f5264f405ffab14d26aae5a56485fe76` |
+| 3 | `theorem` | [dampedDivisorCoefficient_prefix_first_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/dampeddivisorcoefficient-prefix-first-order.md) | 60 | `result-track:72349d7c554a088e0b6995a906d6cf6d1c9cd21cac1f54d3d3a469361087ee94` |
+| 4 | `theorem` | [dampedDivisorCoefficient_real_prefix_first_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/dampeddivisorcoefficient-real-prefix-first-order.md) | 90 | `result-track:c9b09f4b1db838d9a6daefe9065c7f23270d67f32d5347214e0e6a9aafbff72d` |
+| 5 | `theorem` | [arithmeticResidual_prime_prefix_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TaylorSourceCheck.lean/declarations/arithmeticresidual-prime-prefix-error.md) | 107 | `result-track:50d608c0a720fdd399291198985609d44897adb2a1fa3e31733d3b38ea4606ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

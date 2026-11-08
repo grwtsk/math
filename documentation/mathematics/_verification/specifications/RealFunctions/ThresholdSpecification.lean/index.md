@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ThresholdSpecification.lean/index.md) · [Full source](../../../../RealFunctions/ThresholdSpecification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdSpecification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdSpecification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ThresholdQuantizer](../../../../RealFunctions/ThresholdSpecification.lean/declarations/thresholdquantizer.md) | 38 | `declaration-track:2883ad77ee6bc22a2fc8e7fcd12480af0cd1ab7c1b2be78ad1dbcf22a0938f59` |
+| 1 | `structure` | [ThresholdQuantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdSpecification.lean/declarations/thresholdquantizer.md) | 38 | `declaration-track:2883ad77ee6bc22a2fc8e7fcd12480af0cd1ab7c1b2be78ad1dbcf22a0938f59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

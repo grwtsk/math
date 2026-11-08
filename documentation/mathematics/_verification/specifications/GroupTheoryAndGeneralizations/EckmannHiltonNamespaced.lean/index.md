@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsUnital](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/isunital.md) | 43 | `declaration-track:bdaa85ca0d29103a9a189da12713c50b878885f513b7ddce92b19fc9b8b578a2` |
-| 2 | `theorem` | [MulOneClass.isUnital](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/muloneclass-isunital.md) | 46 | `result-track:d36a4cbb2c2aacca56a64d4fc75c578cf5c2fa780028a282af23eb82f870c573` |
-| 3 | `theorem` | [one](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/one.md) | 61 | `result-track:bebee8a5fbbf8e310d961cc80475fc9866eb39fc5ecb395bf76c3ff5951b68a5` |
-| 4 | `theorem` | [mul](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/mul.md) | 68 | `result-track:3554046714942798a8f5dae4fb6665e6454d68f63119d246668557e6a487c376` |
-| 5 | `theorem` | [mul_comm](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/mul-comm.md) | 79 | `result-track:fbcd4ddbc276f6d619b319f28d25b5c79ce6ea1fec9ae5df2e89a6acee153af7` |
-| 6 | `theorem` | [mul_assoc](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/mul-assoc.md) | 86 | `result-track:629a04576ed3b4323ec16b34862a61d1c9d0991f359bf049b31939e335edac86` |
-| 7 | `abbrev` | [commMonoid](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/commmonoid.md) | 94 | `declaration-track:984d79471c11e8c23f612e0915844225817145fd97399755d82617d62d105ce0` |
-| 8 | `abbrev` | [commGroup](../../../../GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/commgroup.md) | 105 | `declaration-track:4727427002bb26d954c12e45e7eb88caf3ab1569414b0985b7f8928b48ff7aae` |
+| 1 | `structure` | [IsUnital](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/isunital.md) | 43 | `declaration-track:bdaa85ca0d29103a9a189da12713c50b878885f513b7ddce92b19fc9b8b578a2` |
+| 2 | `theorem` | [MulOneClass.isUnital](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/muloneclass-isunital.md) | 46 | `result-track:d36a4cbb2c2aacca56a64d4fc75c578cf5c2fa780028a282af23eb82f870c573` |
+| 3 | `theorem` | [one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/one.md) | 61 | `result-track:bebee8a5fbbf8e310d961cc80475fc9866eb39fc5ecb395bf76c3ff5951b68a5` |
+| 4 | `theorem` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/mul.md) | 68 | `result-track:3554046714942798a8f5dae4fb6665e6454d68f63119d246668557e6a487c376` |
+| 5 | `theorem` | [mul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/mul-comm.md) | 79 | `result-track:fbcd4ddbc276f6d619b319f28d25b5c79ce6ea1fec9ae5df2e89a6acee153af7` |
+| 6 | `theorem` | [mul_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/mul-assoc.md) | 86 | `result-track:629a04576ed3b4323ec16b34862a61d1c9d0991f359bf049b31939e335edac86` |
+| 7 | `abbrev` | [commMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/commmonoid.md) | 94 | `declaration-track:984d79471c11e8c23f612e0915844225817145fd97399755d82617d62d105ce0` |
+| 8 | `abbrev` | [commGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EckmannHiltonNamespaced.lean/declarations/commgroup.md) | 105 | `declaration-track:4727427002bb26d954c12e45e7eb88caf3ab1569414b0985b7f8928b48ff7aae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

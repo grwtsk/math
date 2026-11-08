@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [EquivFunctorUnique](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorunique.md) | 18 | `declaration-track:45f6995245cb581ee2d83ccd60012e46d0ba0a903c2c70f765336eff7055fb67` |
-| 2 | `instance` | [EquivFunctorPerm](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorperm.md) | 23 | `declaration-track:c863e6707708fd2784c54933613392b79c85361e01e1054dde0279898ce37dcf` |
-| 3 | `instance` | [EquivFunctorFinset](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorfinset.md) | 30 | `declaration-track:3337a9718099290e61064cb4727c59fe9ecaf440b1efc9f21af64b64a35c25c7` |
-| 4 | `instance` | [EquivFunctorFintype](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorfintype.md) | 40 | `declaration-track:966feba67eb826ce9b3b44e519affdae7446f143b3f37cb332e6314bc83c9a20` |
+| 1 | `instance` | [EquivFunctorUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorunique.md) | 18 | `declaration-track:45f6995245cb581ee2d83ccd60012e46d0ba0a903c2c70f765336eff7055fb67` |
+| 2 | `instance` | [EquivFunctorPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorperm.md) | 23 | `declaration-track:c863e6707708fd2784c54933613392b79c85361e01e1054dde0279898ce37dcf` |
+| 3 | `instance` | [EquivFunctorFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorfinset.md) | 30 | `declaration-track:3337a9718099290e61064cb4727c59fe9ecaf440b1efc9f21af64b64a35c25c7` |
+| 4 | `instance` | [EquivFunctorFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Instances.lean/declarations/equivfunctorfintype.md) | 40 | `declaration-track:966feba67eb826ce9b3b44e519affdae7446f143b3f37cb332e6314bc83c9a20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

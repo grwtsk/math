@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_normalization_le_one_of_four_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalization-le-one-of-four-le.md) | 22 | `result-track:5647a8c5b1c43d04cc44c326581ace1f2df7459487cf625d643ffae7447d1998` |
-| 2 | `theorem` | [actual_normalized_test_even](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalized-test-even.md) | 39 | `result-track:c93db5a257b78d37acb7916a154adac048b1d5b7a313d4f25795f9603ac3614c` |
-| 3 | `theorem` | [actual_normalized_test_right_edge_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalized-test-right-edge-lower.md) | 56 | `result-track:de49b813b0844d9744d50354ea64a2ead769625579a0d2aeb5ee26d601e20680` |
-| 4 | `theorem` | [actual_normalized_test_left_edge_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalized-test-left-edge-lower.md) | 108 | `result-track:aa82a8794f001112a4de6476c454f5ca9031a520ec6e773f0dfd853c180a25dd` |
+| 1 | `theorem` | [actual_normalization_le_one_of_four_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalization-le-one-of-four-le.md) | 22 | `result-track:5647a8c5b1c43d04cc44c326581ace1f2df7459487cf625d643ffae7447d1998` |
+| 2 | `theorem` | [actual_normalized_test_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalized-test-even.md) | 39 | `result-track:c93db5a257b78d37acb7916a154adac048b1d5b7a313d4f25795f9603ac3614c` |
+| 3 | `theorem` | [actual_normalized_test_right_edge_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalized-test-right-edge-lower.md) | 56 | `result-track:de49b813b0844d9744d50354ea64a2ead769625579a0d2aeb5ee26d601e20680` |
+| 4 | `theorem` | [actual_normalized_test_left_edge_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBoundaryStrip.lean/declarations/actual-normalized-test-left-edge-lower.md) | 108 | `result-track:aa82a8794f001112a4de6476c454f5ca9031a520ec6e773f0dfd853c180a25dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exist_openNormalSubgroup_sub_clopen_nhds_of_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/declarations/exist-opennormalsubgroup-sub-clopen-nhds-of-one.md) | 31 | `result-track:20c3b87a20cd1d51262de0b94a7d17142a662635cb0838f41abb346e8322858b` |
-| 2 | `theorem` | [exist_openNormalSubgroup_sub_open_nhds_of_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/declarations/exist-opennormalsubgroup-sub-open-nhds-of-one.md) | 48 | `result-track:5bd50f2fcd7ace497ab1c19997adaa0802d807e3b9cd2dbcd677af6c72d73ae6` |
+| 1 | `theorem` | [exist_openNormalSubgroup_sub_clopen_nhds_of_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/declarations/exist-opennormalsubgroup-sub-clopen-nhds-of-one.md) | 31 | `result-track:20c3b87a20cd1d51262de0b94a7d17142a662635cb0838f41abb346e8322858b` |
+| 2 | `theorem` | [exist_openNormalSubgroup_sub_open_nhds_of_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ClopenNhdofOneNamespaced.lean/declarations/exist-opennormalsubgroup-sub-open-nhds-of-one.md) | 48 | `result-track:5bd50f2fcd7ace497ab1c19997adaa0802d807e3b9cd2dbcd677af6c72d73ae6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

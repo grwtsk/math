@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signed_square_completion](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/signed-square-completion.md) | 24 | `result-track:8158f2e079276a99038bbf4ad9f54ee4891eaca16129a6ac58ca89fab9cc9944` |
-| 2 | `theorem` | [negative_cross_le_half_energy](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/negative-cross-le-half-energy.md) | 30 | `result-track:1b8404dc5ac97e1348988d6ee9f8ca99c507f522bbb9b50bc8e44fe11abfc44a` |
-| 3 | `theorem` | [mismatch_lower_is_signed_lower](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/mismatch-lower-is-signed-lower.md) | 37 | `result-track:3ad531e877061621bac379f9059f016a858ee34d35cfa0053d8a7591ea4d3b87` |
-| 4 | `theorem` | [opposite_row_readout](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/opposite-row-readout.md) | 42 | `result-track:3c8acfdb06098ca897847186b0c1969ae614722cdb97d027b6772ae37c6f7ccf` |
-| 5 | `theorem` | [opposite_row_scale_readout](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/opposite-row-scale-readout.md) | 48 | `result-track:2164cf042ba17aa58912ea703cae96c5a9a9251327e7913f6406d0dfff2bf116` |
+| 1 | `theorem` | [signed_square_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/signed-square-completion.md) | 24 | `result-track:8158f2e079276a99038bbf4ad9f54ee4891eaca16129a6ac58ca89fab9cc9944` |
+| 2 | `theorem` | [negative_cross_le_half_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/negative-cross-le-half-energy.md) | 30 | `result-track:1b8404dc5ac97e1348988d6ee9f8ca99c507f522bbb9b50bc8e44fe11abfc44a` |
+| 3 | `theorem` | [mismatch_lower_is_signed_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/mismatch-lower-is-signed-lower.md) | 37 | `result-track:3ad531e877061621bac379f9059f016a858ee34d35cfa0053d8a7591ea4d3b87` |
+| 4 | `theorem` | [opposite_row_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/opposite-row-readout.md) | 42 | `result-track:3c8acfdb06098ca897847186b0c1969ae614722cdb97d027b6772ae37c6f7ccf` |
+| 5 | `theorem` | [opposite_row_scale_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SourceCompressionAlgebraHistorical01Namespaced.lean/declarations/opposite-row-scale-readout.md) | 48 | `result-track:2164cf042ba17aa58912ea703cae96c5a9a9251327e7913f6406d0dfff2bf116` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

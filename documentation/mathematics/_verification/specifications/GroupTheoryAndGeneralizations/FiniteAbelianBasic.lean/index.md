@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [directSumNeZeroMulHom](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/directsumnezeromulhom.md) | 59 | `declaration-track:e6d3cb99c38d29f8c7b14f9211d38faba9417142668a34a180f8aed399324dc2` |
-| 2 | `def` | [directSumNeZeroMulEquiv](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/directsumnezeromulequiv.md) | 63 | `declaration-track:9a686926cfb0371baeec90d150f9170b952374e30dc94f003a952c592b5173b6` |
-| 3 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/finite-of-fg-torsion.md) | 92 | `result-track:2a780fc4c9052e303317c57ce532aa236af47e7faf37c01de8ed2c82405f0d65` |
-| 4 | `theorem` | [equiv_free_prod_directSum_zmod](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-free-prod-directsum-zmod.md) | 114 | `result-track:b2ba93da63da91bae9f2d5011e6b8cab43189a88c81e8172b05cc932fa85aff0` |
-| 5 | `theorem` | [equiv_directSum_zmod_of_finite](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-directsum-zmod-of-finite.md) | 130 | `result-track:3bc4b53ff0241847414ae1660190ee943e71e2f92a8d3f150a3f3c7fd45c5199` |
-| 6 | `lemma` | [equiv_directSum_zmod_of_finite'](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-directsum-zmod-of-finite-source-edition-2.md) | 146 | `result-track:7a30667ce920ee22413177aecdb132a363740fc23f30fcee525f1ee32972757f` |
-| 7 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/finite-of-fg-torsion-source-edition-3.md) | 156 | `result-track:b1a80313cc7e3af683c7715030baa679737f9a99f4044111948aa35f87833748` |
-| 8 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/finite-of-fg-torsion-source-edition-2.md) | 164 | `result-track:72dc40c1e7cdf713397b2b8f5f0c7602bfad78b5a4d26d14616c5f4cdf6691c0` |
-| 9 | `theorem` | [equiv_prod_multiplicative_zmod_of_finite](../../../../GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-prod-multiplicative-zmod-of-finite.md) | 169 | `result-track:fa39605bc97ce743c69dc744f98d596188773f486b92d34b96ab404e66a14a5d` |
+| 1 | `def` | [directSumNeZeroMulHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/directsumnezeromulhom.md) | 59 | `declaration-track:e6d3cb99c38d29f8c7b14f9211d38faba9417142668a34a180f8aed399324dc2` |
+| 2 | `def` | [directSumNeZeroMulEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/directsumnezeromulequiv.md) | 63 | `declaration-track:9a686926cfb0371baeec90d150f9170b952374e30dc94f003a952c592b5173b6` |
+| 3 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/finite-of-fg-torsion.md) | 92 | `result-track:2a780fc4c9052e303317c57ce532aa236af47e7faf37c01de8ed2c82405f0d65` |
+| 4 | `theorem` | [equiv_free_prod_directSum_zmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-free-prod-directsum-zmod.md) | 114 | `result-track:b2ba93da63da91bae9f2d5011e6b8cab43189a88c81e8172b05cc932fa85aff0` |
+| 5 | `theorem` | [equiv_directSum_zmod_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-directsum-zmod-of-finite.md) | 130 | `result-track:3bc4b53ff0241847414ae1660190ee943e71e2f92a8d3f150a3f3c7fd45c5199` |
+| 6 | `lemma` | [equiv_directSum_zmod_of_finite'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-directsum-zmod-of-finite-source-edition-2.md) | 146 | `result-track:7a30667ce920ee22413177aecdb132a363740fc23f30fcee525f1ee32972757f` |
+| 7 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/finite-of-fg-torsion-source-edition-3.md) | 156 | `result-track:b1a80313cc7e3af683c7715030baa679737f9a99f4044111948aa35f87833748` |
+| 8 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/finite-of-fg-torsion-source-edition-2.md) | 164 | `result-track:72dc40c1e7cdf713397b2b8f5f0c7602bfad78b5a4d26d14616c5f4cdf6691c0` |
+| 9 | `theorem` | [equiv_prod_multiplicative_zmod_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianBasic.lean/declarations/equiv-prod-multiplicative-zmod-of-finite.md) | 169 | `result-track:fa39605bc97ce743c69dc744f98d596188773f486b92d34b96ab404e66a14a5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

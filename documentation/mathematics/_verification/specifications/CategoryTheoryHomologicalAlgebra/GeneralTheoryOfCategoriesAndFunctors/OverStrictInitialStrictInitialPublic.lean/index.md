@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [overEquivOfIsInitial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/overequivofisinitial.md) | 34 | `declaration-track:2280cb1e6e2d245e8039d1305befb6e4a93378ff264d47208412c83c2119df8c` |
-| 2 | `def` | [underEquivOfIsTerminal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/underequivofisterminal.md) | 48 | `declaration-track:2e8d1aa55fd74902b4b640d0da5ef2436ecb47aaeae8d61f6c8b5c900471b097` |
-| 3 | `def` | [MorphismProperty.overEquivOfIsInitial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/morphismproperty-overequivofisinitial.md) | 65 | `declaration-track:20d7fea6974efd58265792a1733f1a7c96097c67701718e24801186ae62ed42c` |
-| 4 | `def` | [MorphismProperty.underEquivOfIsTerminal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/morphismproperty-underequivofisterminal.md) | 79 | `declaration-track:817dece1d3a7791f4ee352c803a812cfe77c17cf41651ac12edb42711980c01c` |
+| 1 | `def` | [overEquivOfIsInitial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/overequivofisinitial.md) | 34 | `declaration-track:2280cb1e6e2d245e8039d1305befb6e4a93378ff264d47208412c83c2119df8c` |
+| 2 | `def` | [underEquivOfIsTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/underequivofisterminal.md) | 48 | `declaration-track:2e8d1aa55fd74902b4b640d0da5ef2436ecb47aaeae8d61f6c8b5c900471b097` |
+| 3 | `def` | [MorphismProperty.overEquivOfIsInitial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/morphismproperty-overequivofisinitial.md) | 65 | `declaration-track:20d7fea6974efd58265792a1733f1a7c96097c67701718e24801186ae62ed42c` |
+| 4 | `def` | [MorphismProperty.underEquivOfIsTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverStrictInitialStrictInitialPublic.lean/declarations/morphismproperty-underequivofisterminal.md) | 79 | `declaration-track:817dece1d3a7791f4ee352c803a812cfe77c17cf41651ac12edb42711980c01c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

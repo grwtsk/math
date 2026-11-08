@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [irreducible_mul_X_add](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-mul-x-add.md) | 70 | `result-track:436b8592cab8abae525ce36f2148a463e9d4e86522a2898dd7d2a305fed16f73` |
-| 2 | `lemma` | [irreducible_of_disjoint_support](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-of-disjoint-support.md) | 90 | `result-track:401b14bcc0a82712397a2055ecd2d64c743ce818903a06e65f646dfeb5acbe75` |
-| 3 | `theorem` | [irreducible_of_totalDegree_eq_one](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-of-totaldegree-eq-one.md) | 134 | `result-track:c5785384fdb61931e64c9c60a96ff845abbf244ab1c05556163ad18094b27049` |
-| 4 | `instance` | [instModuleSelf](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/instmoduleself.md) | 154 | `declaration-track:add3017d8385433e38bc748a4373e055ec1cdd628c463854b6eb7f260db8baa8` |
-| 5 | `def` | [sumSMulX](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/sumsmulx.md) | 158 | `declaration-track:719395d322b7ac48c3e639b3ee4f47de3f639e80857f2951f69fcf85d06e3a52` |
-| 6 | `theorem` | [coeff_sumSMulX](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/coeff-sumsmulx.md) | 162 | `result-track:78c2a09ab198c6c1e8f6e874b0f86e6d7cebf046ce8efc91e94c31c1adc72016` |
-| 7 | `theorem` | [irreducible_sumSMulX](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-sumsmulx.md) | 173 | `result-track:db520cb6d6be19502c17006a59296984d09199031fb600730460f058fce75eb7` |
-| 8 | `def` | [sumSMulXSMulY](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/sumsmulxsmuly.md) | 197 | `declaration-track:04f1640a4ca9ccb3c40d7a6a700e61c143c0fcca42195917d7faf1fa76dc64cd` |
-| 9 | `theorem` | [irreducible_sumSMulXSMulY](../../../../CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-sumsmulxsmuly.md) | 204 | `result-track:5a5982adac2ccfc4a34fae8f99a53c14b564987116182d169d7d51e6e28f4515` |
+| 1 | `lemma` | [irreducible_mul_X_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-mul-x-add.md) | 70 | `result-track:436b8592cab8abae525ce36f2148a463e9d4e86522a2898dd7d2a305fed16f73` |
+| 2 | `lemma` | [irreducible_of_disjoint_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-of-disjoint-support.md) | 90 | `result-track:401b14bcc0a82712397a2055ecd2d64c743ce818903a06e65f646dfeb5acbe75` |
+| 3 | `theorem` | [irreducible_of_totalDegree_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-of-totaldegree-eq-one.md) | 134 | `result-track:c5785384fdb61931e64c9c60a96ff845abbf244ab1c05556163ad18094b27049` |
+| 4 | `instance` | [instModuleSelf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/instmoduleself.md) | 154 | `declaration-track:add3017d8385433e38bc748a4373e055ec1cdd628c463854b6eb7f260db8baa8` |
+| 5 | `def` | [sumSMulX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/sumsmulx.md) | 158 | `declaration-track:719395d322b7ac48c3e639b3ee4f47de3f639e80857f2951f69fcf85d06e3a52` |
+| 6 | `theorem` | [coeff_sumSMulX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/coeff-sumsmulx.md) | 162 | `result-track:78c2a09ab198c6c1e8f6e874b0f86e6d7cebf046ce8efc91e94c31c1adc72016` |
+| 7 | `theorem` | [irreducible_sumSMulX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-sumsmulx.md) | 173 | `result-track:db520cb6d6be19502c17006a59296984d09199031fb600730460f058fce75eb7` |
+| 8 | `def` | [sumSMulXSMulY](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/sumsmulxsmuly.md) | 197 | `declaration-track:04f1640a4ca9ccb3c40d7a6a700e61c143c0fcca42195917d7faf1fa76dc64cd` |
+| 9 | `theorem` | [irreducible_sumSMulXSMulY](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IrreducibleQuadraticPublic.lean/declarations/irreducible-sumsmulxsmuly.md) | 204 | `result-track:5a5982adac2ccfc4a34fae8f99a53c14b564987116182d169d7d51e6e28f4515` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

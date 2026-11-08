@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/PairingPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/PairingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,26 +57,26 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Pairing](../../../../AlgebraicTopology/PairingPublic.lean/declarations/pairing.md) | 57 | `declaration-track:993a2bbd6810c2c339bd3e2f6217519cfa60d5afbe1974c0c802f2a43e53c406` |
-| 2 | `class` | [IsProper](../../../../AlgebraicTopology/PairingPublic.lean/declarations/isproper.md) | 74 | `declaration-track:d38101417339fa10ebbda70c772e6327a43670838b430cc7b2d08df68cf9d1ef` |
-| 3 | `lemma` | [isUniquelyCodimOneFace](../../../../AlgebraicTopology/PairingPublic.lean/declarations/isuniquelycodimoneface.md) | 78 | `result-track:b2045509be7b7e60585224639c5a35d70028f774976737769f4c46356457304f` |
-| 4 | `lemma` | [dim_p](../../../../AlgebraicTopology/PairingPublic.lean/declarations/dim-p.md) | 83 | `result-track:7b80aa7998b3ffe075cee8807a7c49de08c16d6bc3113261edc7f7e68d2cfb8a` |
-| 5 | `class` | [IsInner](../../../../AlgebraicTopology/PairingPublic.lean/declarations/isinner.md) | 88 | `declaration-track:cf9dc7f44201bd0370d15695004f92d2f627de5256a56245cc10b724ae9247b7` |
-| 6 | `def` | [AncestralRel](../../../../AlgebraicTopology/PairingPublic.lean/declarations/ancestralrel.md) | 95 | `declaration-track:2cd857d651b0ac9ba3bb54caaa9674be8472f8d4ea13563a511e24d6d7468985` |
-| 7 | `lemma` | [AncestralRel.dim_le](../../../../AlgebraicTopology/PairingPublic.lean/declarations/ancestralrel-dim-le.md) | 99 | `result-track:5bfe45d5bfea6746f4397951db02e003a66dc269e62b8c5f87c98b8927475419` |
-| 8 | `class` | [IsRegular](../../../../AlgebraicTopology/PairingPublic.lean/declarations/isregular.md) | 106 | `declaration-track:8ba58250689c531d29cf83237aefafb9358bfe450ab8655b74736e3850edcbbc` |
-| 9 | `lemma` | [wf](../../../../AlgebraicTopology/PairingPublic.lean/declarations/wf.md) | 113 | `result-track:ee8d1fd7dcf42c856c3856d4cb8a7936443726f273713acecc6ef9d8771d70bf` |
-| 10 | `lemma` | [exists_or](../../../../AlgebraicTopology/PairingPublic.lean/declarations/exists-or.md) | 117 | `result-track:79ef45482455fd6373741e08deba1519dd3e531bc3d1204562bc2047fa133d04` |
-| 11 | `lemma` | [ne](../../../../AlgebraicTopology/PairingPublic.lean/declarations/ne.md) | 126 | `result-track:711361ebe0e64c519b8409608310a5295742c9e7babf5878e5c82660b1ae60e3` |
-| 12 | `lemma` | [le](../../../../AlgebraicTopology/PairingPublic.lean/declarations/le.md) | 134 | `result-track:aa64bae6e442ef2a5e2d684e210ded1cb43bd4e62cd068ce1201d9b26a5e3a95` |
-| 13 | `lemma` | [lt](../../../../AlgebraicTopology/PairingPublic.lean/declarations/lt.md) | 138 | `result-track:2993040a77557f0cd403c9eae5194f346e2ccc0dc6bcf33ad9809f8cc349699e` |
-| 14 | `def` | [ofIso](../../../../AlgebraicTopology/PairingPublic.lean/declarations/ofiso.md) | 147 | `declaration-track:a19bc73e361bcd499fe242a046b84d9dcd8dada53aa4b241a55c4e1a708da9e4` |
-| 15 | `lemma` | [ofIso_p](../../../../AlgebraicTopology/PairingPublic.lean/declarations/ofiso-p.md) | 166 | `result-track:c8da00a08687c56be8373d7cb1f73d9d3d8ce49baa7bd7dc52b112bbc769c383` |
-| 16 | `lemma` | [ofIso_ancestralRel_iff](../../../../AlgebraicTopology/PairingPublic.lean/declarations/ofiso-ancestralrel-iff.md) | 174 | `result-track:1dcb449bd813eaaa3c6dc1c59e41f255117d0b3c9f4c48b700719eaba162a63e` |
-| 17 | `instance` | [(anonymous)](../../../../AlgebraicTopology/PairingPublic.lean/declarations/instance-source-edition-3.md) | 181 | `declaration-track:7a293a165670a0cc76c3046832a0d83f70c29abdef6ad08deb2aa626f6dd8283` |
-| 18 | `instance` | [(anonymous)](../../../../AlgebraicTopology/PairingPublic.lean/declarations/instance-source-edition-2.md) | 189 | `declaration-track:61cd70e74f05d7c42f6d8b521072794b10fc1fdba52703939b14658d6e6e953c` |
-| 19 | `lemma` | [ofIso_index](../../../../AlgebraicTopology/PairingPublic.lean/declarations/ofiso-index.md) | 198 | `result-track:8c16ae9904f7d1f53e992f27cca0f5c3a90006c3c9c156fdfe6145de5b7e8bb0` |
-| 20 | `instance` | [(anonymous)](../../../../AlgebraicTopology/PairingPublic.lean/declarations/instance.md) | 206 | `declaration-track:0aa32a92e02127266444acbf7b8530b0a60be9121cfb6db8ca563805b4398bf1` |
+| 1 | `structure` | [Pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/pairing.md) | 57 | `declaration-track:993a2bbd6810c2c339bd3e2f6217519cfa60d5afbe1974c0c802f2a43e53c406` |
+| 2 | `class` | [IsProper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/isproper.md) | 74 | `declaration-track:d38101417339fa10ebbda70c772e6327a43670838b430cc7b2d08df68cf9d1ef` |
+| 3 | `lemma` | [isUniquelyCodimOneFace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/isuniquelycodimoneface.md) | 78 | `result-track:b2045509be7b7e60585224639c5a35d70028f774976737769f4c46356457304f` |
+| 4 | `lemma` | [dim_p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/dim-p.md) | 83 | `result-track:7b80aa7998b3ffe075cee8807a7c49de08c16d6bc3113261edc7f7e68d2cfb8a` |
+| 5 | `class` | [IsInner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/isinner.md) | 88 | `declaration-track:cf9dc7f44201bd0370d15695004f92d2f627de5256a56245cc10b724ae9247b7` |
+| 6 | `def` | [AncestralRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/ancestralrel.md) | 95 | `declaration-track:2cd857d651b0ac9ba3bb54caaa9674be8472f8d4ea13563a511e24d6d7468985` |
+| 7 | `lemma` | [AncestralRel.dim_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/ancestralrel-dim-le.md) | 99 | `result-track:5bfe45d5bfea6746f4397951db02e003a66dc269e62b8c5f87c98b8927475419` |
+| 8 | `class` | [IsRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/isregular.md) | 106 | `declaration-track:8ba58250689c531d29cf83237aefafb9358bfe450ab8655b74736e3850edcbbc` |
+| 9 | `lemma` | [wf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/wf.md) | 113 | `result-track:ee8d1fd7dcf42c856c3856d4cb8a7936443726f273713acecc6ef9d8771d70bf` |
+| 10 | `lemma` | [exists_or](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/exists-or.md) | 117 | `result-track:79ef45482455fd6373741e08deba1519dd3e531bc3d1204562bc2047fa133d04` |
+| 11 | `lemma` | [ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/ne.md) | 126 | `result-track:711361ebe0e64c519b8409608310a5295742c9e7babf5878e5c82660b1ae60e3` |
+| 12 | `lemma` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/le.md) | 134 | `result-track:aa64bae6e442ef2a5e2d684e210ded1cb43bd4e62cd068ce1201d9b26a5e3a95` |
+| 13 | `lemma` | [lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/lt.md) | 138 | `result-track:2993040a77557f0cd403c9eae5194f346e2ccc0dc6bcf33ad9809f8cc349699e` |
+| 14 | `def` | [ofIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/ofiso.md) | 147 | `declaration-track:a19bc73e361bcd499fe242a046b84d9dcd8dada53aa4b241a55c4e1a708da9e4` |
+| 15 | `lemma` | [ofIso_p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/ofiso-p.md) | 166 | `result-track:c8da00a08687c56be8373d7cb1f73d9d3d8ce49baa7bd7dc52b112bbc769c383` |
+| 16 | `lemma` | [ofIso_ancestralRel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/ofiso-ancestralrel-iff.md) | 174 | `result-track:1dcb449bd813eaaa3c6dc1c59e41f255117d0b3c9f4c48b700719eaba162a63e` |
+| 17 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/instance-source-edition-3.md) | 181 | `declaration-track:7a293a165670a0cc76c3046832a0d83f70c29abdef6ad08deb2aa626f6dd8283` |
+| 18 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/instance-source-edition-2.md) | 189 | `declaration-track:61cd70e74f05d7c42f6d8b521072794b10fc1fdba52703939b14658d6e6e953c` |
+| 19 | `lemma` | [ofIso_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/ofiso-index.md) | 198 | `result-track:8c16ae9904f7d1f53e992f27cca0f5c3a90006c3c9c156fdfe6145de5b7e8bb0` |
+| 20 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PairingPublic.lean/declarations/instance.md) | 206 | `declaration-track:0aa32a92e02127266444acbf7b8530b0a60be9121cfb6db8ca563805b4398bf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

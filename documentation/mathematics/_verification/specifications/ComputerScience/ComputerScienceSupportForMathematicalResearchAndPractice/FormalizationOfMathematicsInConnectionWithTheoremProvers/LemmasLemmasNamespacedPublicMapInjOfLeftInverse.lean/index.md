@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_inj_of_left_inverse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/declarations/map-inj-of-left-inverse.md) | 25 | `result-track:01ea27fcec980c09aca0dafa3a38e191b9b2c8813193ae87df16e7bfdfcf34bd` |
-| 2 | `theorem` | [map_inj_right_of_nonempty](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/declarations/map-inj-right-of-nonempty.md) | 37 | `result-track:5b10668749b11ced23d25c4a7db1ead9656790b1f1bfe11c09add0e3b3a1f90b` |
-| 3 | `theorem` | [map_inj_right](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/declarations/map-inj-right.md) | 56 | `result-track:f52b872fd14e0fd73319a6a5dd1db451c4f42a5c922861ca5f32fbddd6d8fceb` |
+| 1 | `theorem` | [map_inj_of_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/declarations/map-inj-of-left-inverse.md) | 25 | `result-track:01ea27fcec980c09aca0dafa3a38e191b9b2c8813193ae87df16e7bfdfcf34bd` |
+| 2 | `theorem` | [map_inj_right_of_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/declarations/map-inj-right-of-nonempty.md) | 37 | `result-track:5b10668749b11ced23d25c4a7db1ead9656790b1f1bfe11c09add0e3b3a1f90b` |
+| 3 | `theorem` | [map_inj_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicMapInjOfLeftInverse.lean/declarations/map-inj-right.md) | 56 | `result-track:f52b872fd14e0fd73319a6a5dd1db451c4f42a5c922861ca5f32fbddd6d8fceb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

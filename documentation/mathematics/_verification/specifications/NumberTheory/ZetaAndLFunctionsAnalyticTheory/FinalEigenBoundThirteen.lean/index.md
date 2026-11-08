@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eigenBound_thirteen](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/declarations/eigenbound-thirteen.md) | 23 | `result-track:b9f29f3155f3de646fffb322a730199fbc86e441018fb8eaa3a94a1685c73a8e` |
-| 2 | `theorem` | [mvDiag_thirteen](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/declarations/mvdiag-thirteen.md) | 27 | `result-track:8ce30b56b321dbed5bed01c2e0145245cf5a5fd43773a708c5ce9bd41e9e2117` |
-| 3 | `theorem` | [mv_hilbert](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/declarations/mv-hilbert.md) | 30 | `result-track:ceedbae5b76e4efbe9821d24c8c9cae3d2b4f43c694a33ac5f245daec48eeb50` |
+| 1 | `theorem` | [eigenBound_thirteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/declarations/eigenbound-thirteen.md) | 23 | `result-track:b9f29f3155f3de646fffb322a730199fbc86e441018fb8eaa3a94a1685c73a8e` |
+| 2 | `theorem` | [mvDiag_thirteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/declarations/mvdiag-thirteen.md) | 27 | `result-track:8ce30b56b321dbed5bed01c2e0145245cf5a5fd43773a708c5ce9bd41e9e2117` |
+| 3 | `theorem` | [mv_hilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEigenBoundThirteen.lean/declarations/mv-hilbert.md) | 30 | `result-track:ceedbae5b76e4efbe9821d24c8c9cae3d2b4f43c694a33ac5f245daec48eeb50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

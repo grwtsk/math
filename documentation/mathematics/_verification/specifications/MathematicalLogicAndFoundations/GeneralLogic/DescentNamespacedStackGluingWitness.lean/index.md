@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StackGluingWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/stackgluingwitness.md) | 27 | `declaration-track:7e37aed798440cbc4d726655d606de6c82765df82c9f8ed3faedd753eae9d171` |
-| 2 | `theorem` | [stack_gluing_witness_glued](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/stack-gluing-witness-glued.md) | 32 | `result-track:ed5bc840adf063706340236e5e406258d29298181e69d3f9fff8406436a74a20` |
-| 3 | `structure` | [CompositeStackDescentWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/compositestackdescentwitness.md) | 37 | `declaration-track:5b14c0131dd30eb3882bffae9177562fa687da6391dac729e89a69fcfa0db917` |
-| 4 | `theorem` | [composite_stack_descent_glues](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/composite-stack-descent-glues.md) | 43 | `result-track:15c4252fe53e7a9f4c7ee61ac6fa43ddb1949a86dade4b64a0d207a51c516c31` |
+| 1 | `structure` | [StackGluingWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/stackgluingwitness.md) | 27 | `declaration-track:7e37aed798440cbc4d726655d606de6c82765df82c9f8ed3faedd753eae9d171` |
+| 2 | `theorem` | [stack_gluing_witness_glued](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/stack-gluing-witness-glued.md) | 32 | `result-track:ed5bc840adf063706340236e5e406258d29298181e69d3f9fff8406436a74a20` |
+| 3 | `structure` | [CompositeStackDescentWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/compositestackdescentwitness.md) | 37 | `declaration-track:5b14c0131dd30eb3882bffae9177562fa687da6391dac729e89a69fcfa0db917` |
+| 4 | `theorem` | [composite_stack_descent_glues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescentNamespacedStackGluingWitness.lean/declarations/composite-stack-descent-glues.md) | 43 | `result-track:15c4252fe53e7a9f4c7ee61ac6fa43ddb1949a86dade4b64a0d207a51c516c31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

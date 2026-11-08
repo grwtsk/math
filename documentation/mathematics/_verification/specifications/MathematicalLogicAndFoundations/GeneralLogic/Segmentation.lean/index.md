@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedBoundaryPair](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/certifiedboundarypair.md) | 9 | `declaration-track:444a36cd70f0e617ef2c5011f12c4ab2cfc5f4600f5abe5801c99943cf43e46b` |
-| 2 | `structure` | [CertifiedSegmentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/certifiedsegmentation.md) | 15 | `declaration-track:dda4ad3097326ae6b088df6acb92c16a6bbc16a5b3a33b2d8b743f07da887dad` |
-| 3 | `structure` | [SegmentationFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/segmentationfamily.md) | 28 | `declaration-track:3af4a5cfa18617ae77e620a68422edc770ef6c5a344a3b6622980ecaf5cae6f8` |
-| 4 | `def` | [UniqueSegmentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/uniquesegmentation.md) | 33 | `declaration-track:58222e1783c15027e86ecd750d623f5440bae00b882f6e9e07a93f2f55e9a38f` |
-| 5 | `inductive` | [SegmentationStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/segmentationstatus.md) | 40 | `declaration-track:a29d5558c83d0fda633b2f98392d8cffb849f17d237e229f2f20f4a95b8e4eb4` |
-| 6 | `theorem` | [ambiguity_preserves_family](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/ambiguity-preserves-family.md) | 51 | `result-track:b23c4c8b4f7e3aeb27bbd86e1bee2ebde08b574359a375824abb8e916b45d2b3` |
+| 1 | `structure` | [CertifiedBoundaryPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/certifiedboundarypair.md) | 9 | `declaration-track:444a36cd70f0e617ef2c5011f12c4ab2cfc5f4600f5abe5801c99943cf43e46b` |
+| 2 | `structure` | [CertifiedSegmentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/certifiedsegmentation.md) | 15 | `declaration-track:dda4ad3097326ae6b088df6acb92c16a6bbc16a5b3a33b2d8b743f07da887dad` |
+| 3 | `structure` | [SegmentationFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/segmentationfamily.md) | 28 | `declaration-track:3af4a5cfa18617ae77e620a68422edc770ef6c5a344a3b6622980ecaf5cae6f8` |
+| 4 | `def` | [UniqueSegmentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/uniquesegmentation.md) | 33 | `declaration-track:58222e1783c15027e86ecd750d623f5440bae00b882f6e9e07a93f2f55e9a38f` |
+| 5 | `inductive` | [SegmentationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/segmentationstatus.md) | 40 | `declaration-track:a29d5558c83d0fda633b2f98392d8cffb849f17d237e229f2f20f4a95b8e4eb4` |
+| 6 | `theorem` | [ambiguity_preserves_family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Segmentation.lean/declarations/ambiguity-preserves-family.md) | 51 | `result-track:b23c4c8b4f7e3aeb27bbd86e1bee2ebde08b574359a375824abb8e916b45d2b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

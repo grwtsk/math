@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SqrtTwoLogDigest.lean/index.md) · [Full source](../../../../NumberTheory/SqrtTwoLogDigest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](../../../../NumberTheory/ScheduledDenominators.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ScheduledDenominators.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sqrtTwoPartialQuotient](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwopartialquotient.md) | 36 | `declaration-track:4aebbac6704e4584c94a92472de7efd63d85cfd005f33e3ab979fe09dc7df692` |
-| 2 | `def` | [sqrtTwoDenominator](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator.md) | 39 | `declaration-track:81c08fe6658bfba0f4a029a8ec55748c23adac804cb3183384277bf825c1405d` |
-| 3 | `theorem` | [sqrtTwoDenominator_zero](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-zero.md) | 42 | `result-track:48d6d21438bedcc4241d36b7f65b178a9c03f95ced42abc2afc1960464e7f965` |
-| 4 | `theorem` | [sqrtTwoDenominator_one](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-one.md) | 43 | `result-track:2a82847151c01f790bae5fd378f49989b79573e4c76765bd70607880fb4c873c` |
-| 5 | `theorem` | [sqrtTwoDenominator_recurrence](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-recurrence.md) | 46 | `result-track:27ef8f678ba8d893c2fc1f385e1bebfa29f5a5c51741475f154213b6a13f64ca` |
-| 6 | `theorem` | [sqrtTwoDenominator_pos](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-pos.md) | 51 | `result-track:0701f7a731f18f8691a8283367d0c640f302992180409a9c774750fcf9b3d92e` |
-| 7 | `theorem` | [sqrtTwoDenominator_tendsto](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-tendsto.md) | 55 | `result-track:b5dfbd85065df14db84bf22c2c6c9b63520d4b46042505a3ab6a3512392b8fe4` |
-| 8 | `theorem` | [sqrtTwoDenominator_arithmeticExponent_zero](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-arithmeticexponent-zero.md) | 61 | `result-track:55f74ea6abbb123a858367ccd08c414a6a611b7d2b70cd4987ade931fd876471` |
-| 9 | `def` | [reciprocalStageWeight](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/reciprocalstageweight.md) | 81 | `declaration-track:48e17883d6971f4904d85156030ee917c4715741a04049a4bc152782a2759704` |
-| 10 | `def` | [finiteLogDigest](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogdigest.md) | 86 | `declaration-track:6761216fa85199ebd8b5e3c5344cb4d686a3fd7554375c43696962862edb424c` |
-| 11 | `theorem` | [finiteLogDigest_zero](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogdigest-zero.md) | 90 | `result-track:9211d36b99d20d60278eda215541f35e1eda1fa806c6836d6198c1275f48c7a6` |
-| 12 | `theorem` | [finiteLogDigest_add](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogdigest-add.md) | 95 | `result-track:59d8141f102e81296c6a65daafdc1b84b3237b217fc97e30eeaa14d0d409cc1e` |
-| 13 | `def` | [finiteLogCorrelation](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogcorrelation.md) | 102 | `declaration-track:05e858b08f803761d622c20a1174b5b7580fc188e72d60a050934f5dd0a841d1` |
-| 14 | `theorem` | [finiteLogCorrelation_zero_right](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogcorrelation-zero-right.md) | 108 | `result-track:7dba32e4af48d9384d1770d5e0daa269ccaf084132622a96337664a140eb13a4` |
-| 15 | `theorem` | [finiteLogCorrelation_add_right](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogcorrelation-add-right.md) | 114 | `result-track:080faff3d19df182f8a93138290ae8474f80f8390bcb3d3c7eeb09c7899beff9` |
-| 16 | `def` | [harmonicNormalizer](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/harmonicnormalizer.md) | 122 | `declaration-track:b77457fd345f632c9c7c43a098841b39cd760d0ce1b48c9349be71c188d5f57f` |
-| 17 | `def` | [normalizedLogCorrelation](../../../../NumberTheory/SqrtTwoLogDigest.lean/declarations/normalizedlogcorrelation.md) | 127 | `declaration-track:bd992a9e87eae0b9a9085e2d271bf84e87740565e807f4e03362977f537e02fc` |
+| 1 | `def` | [sqrtTwoPartialQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwopartialquotient.md) | 36 | `declaration-track:4aebbac6704e4584c94a92472de7efd63d85cfd005f33e3ab979fe09dc7df692` |
+| 2 | `def` | [sqrtTwoDenominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator.md) | 39 | `declaration-track:81c08fe6658bfba0f4a029a8ec55748c23adac804cb3183384277bf825c1405d` |
+| 3 | `theorem` | [sqrtTwoDenominator_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-zero.md) | 42 | `result-track:48d6d21438bedcc4241d36b7f65b178a9c03f95ced42abc2afc1960464e7f965` |
+| 4 | `theorem` | [sqrtTwoDenominator_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-one.md) | 43 | `result-track:2a82847151c01f790bae5fd378f49989b79573e4c76765bd70607880fb4c873c` |
+| 5 | `theorem` | [sqrtTwoDenominator_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-recurrence.md) | 46 | `result-track:27ef8f678ba8d893c2fc1f385e1bebfa29f5a5c51741475f154213b6a13f64ca` |
+| 6 | `theorem` | [sqrtTwoDenominator_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-pos.md) | 51 | `result-track:0701f7a731f18f8691a8283367d0c640f302992180409a9c774750fcf9b3d92e` |
+| 7 | `theorem` | [sqrtTwoDenominator_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-tendsto.md) | 55 | `result-track:b5dfbd85065df14db84bf22c2c6c9b63520d4b46042505a3ab6a3512392b8fe4` |
+| 8 | `theorem` | [sqrtTwoDenominator_arithmeticExponent_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/sqrttwodenominator-arithmeticexponent-zero.md) | 61 | `result-track:55f74ea6abbb123a858367ccd08c414a6a611b7d2b70cd4987ade931fd876471` |
+| 9 | `def` | [reciprocalStageWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/reciprocalstageweight.md) | 81 | `declaration-track:48e17883d6971f4904d85156030ee917c4715741a04049a4bc152782a2759704` |
+| 10 | `def` | [finiteLogDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogdigest.md) | 86 | `declaration-track:6761216fa85199ebd8b5e3c5344cb4d686a3fd7554375c43696962862edb424c` |
+| 11 | `theorem` | [finiteLogDigest_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogdigest-zero.md) | 90 | `result-track:9211d36b99d20d60278eda215541f35e1eda1fa806c6836d6198c1275f48c7a6` |
+| 12 | `theorem` | [finiteLogDigest_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogdigest-add.md) | 95 | `result-track:59d8141f102e81296c6a65daafdc1b84b3237b217fc97e30eeaa14d0d409cc1e` |
+| 13 | `def` | [finiteLogCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogcorrelation.md) | 102 | `declaration-track:05e858b08f803761d622c20a1174b5b7580fc188e72d60a050934f5dd0a841d1` |
+| 14 | `theorem` | [finiteLogCorrelation_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogcorrelation-zero-right.md) | 108 | `result-track:7dba32e4af48d9384d1770d5e0daa269ccaf084132622a96337664a140eb13a4` |
+| 15 | `theorem` | [finiteLogCorrelation_add_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/finitelogcorrelation-add-right.md) | 114 | `result-track:080faff3d19df182f8a93138290ae8474f80f8390bcb3d3c7eeb09c7899beff9` |
+| 16 | `def` | [harmonicNormalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/harmonicnormalizer.md) | 122 | `declaration-track:b77457fd345f632c9c7c43a098841b39cd760d0ce1b48c9349be71c188d5f57f` |
+| 17 | `def` | [normalizedLogCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SqrtTwoLogDigest.lean/declarations/normalizedlogcorrelation.md) | 127 | `declaration-track:bd992a9e87eae0b9a9085e2d271bf84e87740565e807f4e03362977f537e02fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ForegroundCell](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/foregroundcell.md) | 48 | `declaration-track:a036436dc40d5dbf422c6050bef8c0629b15166b19e278a8fc32e47f2e229116` |
-| 2 | `def` | [foregroundGraph](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/foregroundgraph.md) | 52 | `declaration-track:975a39d348755e934355854a12cf58830dbad9e8ee721dd474470472181e56ff` |
-| 3 | `instance` | [foregroundGraphAdjacencyDecidable](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/foregroundgraphadjacencydecidable.md) | 60 | `declaration-track:27c56886a99d46017d799e33cdbdcf983c4315aec4a8a7be9ea8537fef36f5ab` |
-| 4 | `def` | [betaZero](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/betazero.md) | 66 | `declaration-track:765b62e93ef0c10770e8f29b06d1e5a9031de6f52a521ea0cae82548bcbeeecd` |
-| 5 | `def` | [betaOne](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/betaone.md) | 71 | `declaration-track:7f4399edd095627b9dd2d5a18c88875aead54462ff97a6402d52dd8495be19c8` |
-| 6 | `def` | [fullTwoByTwo](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/fulltwobytwo.md) | 77 | `declaration-track:3efa0f3c27236e67466e8b3b6dffcf0cf7fcb693c40c8d964cf05b381b3e7a95` |
-| 7 | `theorem` | [fullTwoByTwo_betaZero](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/fulltwobytwo-betazero.md) | 80 | `result-track:7c21fd02b569b28a9232f4ff77169ded86faa3db51503e67512cccee1ad12255` |
-| 8 | `theorem` | [fullTwoByTwo_betaOne](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/fulltwobytwo-betaone.md) | 86 | `result-track:8acf41d4141fdbe39b767aa5ca6eb40d32de3fe5b57d72f3b50e5884a882b9ac` |
-| 9 | `def` | [graphBetti](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/graphbetti.md) | 91 | `declaration-track:ce41b669409631a059344efdeaaa6b031481afbad8dd7969f3597bf0e8e8d22e` |
+| 1 | `abbrev` | [ForegroundCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/foregroundcell.md) | 48 | `declaration-track:a036436dc40d5dbf422c6050bef8c0629b15166b19e278a8fc32e47f2e229116` |
+| 2 | `def` | [foregroundGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/foregroundgraph.md) | 52 | `declaration-track:975a39d348755e934355854a12cf58830dbad9e8ee721dd474470472181e56ff` |
+| 3 | `instance` | [foregroundGraphAdjacencyDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/foregroundgraphadjacencydecidable.md) | 60 | `declaration-track:27c56886a99d46017d799e33cdbdcf983c4315aec4a8a7be9ea8537fef36f5ab` |
+| 4 | `def` | [betaZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/betazero.md) | 66 | `declaration-track:765b62e93ef0c10770e8f29b06d1e5a9031de6f52a521ea0cae82548bcbeeecd` |
+| 5 | `def` | [betaOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/betaone.md) | 71 | `declaration-track:7f4399edd095627b9dd2d5a18c88875aead54462ff97a6402d52dd8495be19c8` |
+| 6 | `def` | [fullTwoByTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/fulltwobytwo.md) | 77 | `declaration-track:3efa0f3c27236e67466e8b3b6dffcf0cf7fcb693c40c8d964cf05b381b3e7a95` |
+| 7 | `theorem` | [fullTwoByTwo_betaZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/fulltwobytwo-betazero.md) | 80 | `result-track:7c21fd02b569b28a9232f4ff77169ded86faa3db51503e67512cccee1ad12255` |
+| 8 | `theorem` | [fullTwoByTwo_betaOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/fulltwobytwo-betaone.md) | 86 | `result-track:8acf41d4141fdbe39b767aa5ca6eb40d32de3fe5b57d72f3b50e5884a882b9ac` |
+| 9 | `def` | [graphBetti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/declarations/graphbetti.md) | 91 | `declaration-track:ce41b669409631a059344efdeaaa6b031481afbad8dd7969f3597bf0e8e8d22e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

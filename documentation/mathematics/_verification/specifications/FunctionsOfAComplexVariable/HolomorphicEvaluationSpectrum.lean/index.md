@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicSectionRing`](../../../../GeneralTopology/HolomorphicSectionRing.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicSectionRing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.RingTheory.Spectrum.Prime.Topology` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evaluationRingHom](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationringhom.md) | 10 | `declaration-track:127a1f610f70a30f9df39198e3577835e195bfb4489e5a148af8df09a7cbc301` |
-| 2 | `def` | [evaluationPrime](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationprime.md) | 23 | `declaration-track:f17803acfaeb97afa5a5b831bf132a69ccc86581ba4cfa342e192f51af98a4d0` |
-| 3 | `def` | [pointToSpectrum](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/pointtospectrum.md) | 30 | `declaration-track:3d11d658ccb054727e709897866d924ffd73c4ef82b449c0fd14523018d16f6f` |
-| 4 | `theorem` | [evaluationPrime_comap](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationprime-comap.md) | 38 | `result-track:7929d16acbd74d64187d6699891f1febcb1ef1c332bdb0981dc1b37e11bf5da1` |
-| 5 | `structure` | [EvaluationNaturalityCertificate](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationnaturalitycertificate.md) | 47 | `declaration-track:f50e7080d9736ccc0cf8d2f83000c29c91adaf06caa09bb5d09b70cc0cc120f0` |
-| 6 | `def` | [canonical](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/canonical.md) | 56 | `declaration-track:cc02877d14714bc5cb9186abcbac1a06d8b0a7fcf460daedfa7ba7260bcde0fd` |
-| 7 | `theorem` | [restrictionPath_evaluation_natural](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/restrictionpath-evaluation-natural.md) | 67 | `result-track:c65096a58b3c05b08b6fed713eb406075ec3872556199a8bbc10a8b0c7566acf` |
+| 1 | `def` | [evaluationRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationringhom.md) | 10 | `declaration-track:127a1f610f70a30f9df39198e3577835e195bfb4489e5a148af8df09a7cbc301` |
+| 2 | `def` | [evaluationPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationprime.md) | 23 | `declaration-track:f17803acfaeb97afa5a5b831bf132a69ccc86581ba4cfa342e192f51af98a4d0` |
+| 3 | `def` | [pointToSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/pointtospectrum.md) | 30 | `declaration-track:3d11d658ccb054727e709897866d924ffd73c4ef82b449c0fd14523018d16f6f` |
+| 4 | `theorem` | [evaluationPrime_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationprime-comap.md) | 38 | `result-track:7929d16acbd74d64187d6699891f1febcb1ef1c332bdb0981dc1b37e11bf5da1` |
+| 5 | `structure` | [EvaluationNaturalityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/evaluationnaturalitycertificate.md) | 47 | `declaration-track:f50e7080d9736ccc0cf8d2f83000c29c91adaf06caa09bb5d09b70cc0cc120f0` |
+| 6 | `def` | [canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/canonical.md) | 56 | `declaration-track:cc02877d14714bc5cb9186abcbac1a06d8b0a7fcf460daedfa7ba7260bcde0fd` |
+| 7 | `theorem` | [restrictionPath_evaluation_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/declarations/restrictionpath-evaluation-natural.md) | 67 | `result-track:c65096a58b3c05b08b6fed713eb406075ec3872556199a8bbc10a8b0c7566acf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

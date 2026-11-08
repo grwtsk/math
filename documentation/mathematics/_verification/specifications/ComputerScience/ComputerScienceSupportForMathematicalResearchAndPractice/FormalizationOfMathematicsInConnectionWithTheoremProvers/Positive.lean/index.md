@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/declarations/positivecertificate.md) | 13 | `declaration-track:d74ce9c65ffbba5a5a517769cab918a95d25668632e5b7bc3d3ef77e99b1b9c2` |
-| 2 | `theorem` | [build_succeeded](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/declarations/build-succeeded.md) | 25 | `result-track:b2d7dff2323701cb4b953dfa75f95d9f1d50f482a002ed5cf52c561275d58820` |
-| 3 | `theorem` | [target_capsule_exact](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/declarations/target-capsule-exact.md) | 32 | `result-track:9caea4c12b45aa3db9a808fed0701abc911a2cb63d2a4a4e59ace236ae4843e7` |
+| 1 | `structure` | [PositiveCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/declarations/positivecertificate.md) | 13 | `declaration-track:d74ce9c65ffbba5a5a517769cab918a95d25668632e5b7bc3d3ef77e99b1b9c2` |
+| 2 | `theorem` | [build_succeeded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/declarations/build-succeeded.md) | 25 | `result-track:b2d7dff2323701cb4b953dfa75f95d9f1d50f482a002ed5cf52c561275d58820` |
+| 3 | `theorem` | [target_capsule_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Positive.lean/declarations/target-capsule-exact.md) | 32 | `result-track:9caea4c12b45aa3db9a808fed0701abc911a2cb63d2a4a4e59ace236ae4843e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

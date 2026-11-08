@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [finiteDimensional](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/declarations/finitedimensional-source-edition-2.md) | 46 | `declaration-track:294c69b334f17a9e3d5c1db726930c3c7a4ad87c0f35aca8af8b2b063456a397` |
-| 2 | `instance` | [finiteDimensional](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/declarations/finitedimensional.md) | 59 | `declaration-track:14cd6466b0e58b30ebde49f55ab58abda51c37ce78d9e34ec1e2cdd61b5d8453` |
-| 3 | `instance` | [finiteDimensional'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/declarations/finitedimensional-source-edition-3.md) | 67 | `declaration-track:ed12b28bfefd1918ced39489d2d7ee644121a892a83fe2712f6858cc3c233a7f` |
+| 1 | `instance` | [finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/declarations/finitedimensional-source-edition-2.md) | 46 | `declaration-track:294c69b334f17a9e3d5c1db726930c3c7a4ad87c0f35aca8af8b2b063456a397` |
+| 2 | `instance` | [finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/declarations/finitedimensional.md) | 59 | `declaration-track:14cd6466b0e58b30ebde49f55ab58abda51c37ce78d9e34ec1e2cdd61b5d8453` |
+| 3 | `instance` | [finiteDimensional'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixFiniteDimensionalNamespaced.lean/declarations/finitedimensional-source-edition-3.md) | 67 | `declaration-track:ed12b28bfefd1918ced39489d2d7ee644121a892a83fe2712f6858cc3c233a7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

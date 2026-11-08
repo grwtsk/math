@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Pos.Splits.pastSet](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/pos-splits-pastset.md) | 26 | `result-track:e05a6ac63f12dfa2e8f45a0da6bc51dc282fcd819603ff040cae61d90a4f41d9` |
-| 2 | `theorem` | [Pos.Splits.pastModify](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/pos-splits-pastmodify.md) | 34 | `result-track:032e429f548f01bc66b0d91ac5750c94b7e4798a6d92cff08ef516a872e84bbe` |
-| 3 | `theorem` | [toList_mapAux](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/tolist-mapaux.md) | 40 | `result-track:5d6797b128add14763e14fa99ed8525b2afb636bbc2a58a39ee37616736d8958` |
-| 4 | `theorem` | [toList_map](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/tolist-map.md) | 49 | `result-track:f34070d327166c123a567bda5fd7bec3c5164a9ff36194cc91636b17f16b4afc` |
-| 5 | `theorem` | [map_eq_internal](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-eq-internal.md) | 56 | `result-track:54d69a79b1183a89e2a3250632b19c7d29c0b022dcfec502d59f3cbb5a5d0e2d` |
-| 6 | `theorem` | [map_eq_empty](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-eq-empty.md) | 61 | `result-track:84bc20850131aff0a41a797b4f79fc778b926e1b586792ca740dfa86b9f5aa5b` |
-| 7 | `theorem` | [map_map](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-map.md) | 65 | `result-track:968868f74c59a7b148cf472bb55d4eeb28fc0c68aa2257313cb341761f079882` |
-| 8 | `theorem` | [map_id](../../../../../ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-id.md) | 70 | `result-track:25e3b3c3bea5b6956ad10a633012c42fa0ca4c005ba4a013b9f8d7bb7df608e5` |
+| 1 | `theorem` | [Pos.Splits.pastSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/pos-splits-pastset.md) | 26 | `result-track:e05a6ac63f12dfa2e8f45a0da6bc51dc282fcd819603ff040cae61d90a4f41d9` |
+| 2 | `theorem` | [Pos.Splits.pastModify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/pos-splits-pastmodify.md) | 34 | `result-track:032e429f548f01bc66b0d91ac5750c94b7e4798a6d92cff08ef516a872e84bbe` |
+| 3 | `theorem` | [toList_mapAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/tolist-mapaux.md) | 40 | `result-track:5d6797b128add14763e14fa99ed8525b2afb636bbc2a58a39ee37616736d8958` |
+| 4 | `theorem` | [toList_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/tolist-map.md) | 49 | `result-track:f34070d327166c123a567bda5fd7bec3c5164a9ff36194cc91636b17f16b4afc` |
+| 5 | `theorem` | [map_eq_internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-eq-internal.md) | 56 | `result-track:54d69a79b1183a89e2a3250632b19c7d29c0b022dcfec502d59f3cbb5a5d0e2d` |
+| 6 | `theorem` | [map_eq_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-eq-empty.md) | 61 | `result-track:84bc20850131aff0a41a797b4f79fc778b926e1b586792ca740dfa86b9f5aa5b` |
+| 7 | `theorem` | [map_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-map.md) | 65 | `result-track:968868f74c59a7b148cf472bb55d4eeb28fc0c68aa2257313cb341761f079882` |
+| 8 | `theorem` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModifyPublicToListMapAux.lean/declarations/map-id.md) | 70 | `result-track:25e3b3c3bea5b6956ad10a633012c42fa0ca4c005ba4a013b9f8d7bb7df608e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

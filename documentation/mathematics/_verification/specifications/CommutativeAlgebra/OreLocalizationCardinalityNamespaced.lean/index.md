@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/OreLocalizationCardinalityNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/OreLocalizationCardinalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationCardinalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationCardinalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cardinalMk](../../../../CommutativeAlgebra/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk.md) | 31 | `result-track:8675ee4b4f9595d36bfc94a15188a46ae448a73395240e2c566a1b377e68ce71` |
+| 1 | `theorem` | [cardinalMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk.md) | 31 | `result-track:8675ee4b4f9595d36bfc94a15188a46ae448a73395240e2c566a1b377e68ce71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

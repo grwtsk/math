@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulLeftEmbedding](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/declarations/mulleftembedding.md) | 26 | `declaration-track:ee8844b49561d67cb25b91b0336b2e7e796af8a0e78013859b5cd648f1ac03bf` |
-| 2 | `def` | [mulRightEmbedding](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/declarations/mulrightembedding.md) | 40 | `declaration-track:d291a05d2d95dda05fdff0684d71912e7810454746e07358e10685a3f90310a3` |
-| 3 | `theorem` | [mul_left_embedding_eq_mul_right_embedding](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/declarations/mul-left-embedding-eq-mul-right-embedding.md) | 49 | `result-track:6d6992b7da792d59de4e79300147d1eb1d70ea2bd324d91a233f6d101c346011` |
+| 1 | `def` | [mulLeftEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/declarations/mulleftembedding.md) | 26 | `declaration-track:ee8844b49561d67cb25b91b0336b2e7e796af8a0e78013859b5cd648f1ac03bf` |
+| 2 | `def` | [mulRightEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/declarations/mulrightembedding.md) | 40 | `declaration-track:d291a05d2d95dda05fdff0684d71912e7810454746e07358e10685a3f90310a3` |
+| 3 | `theorem` | [mul_left_embedding_eq_mul_right_embedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HomEmbedding.lean/declarations/mul-left-embedding-eq-mul-right-embedding.md) | 49 | `result-track:6d6992b7da792d59de4e79300147d1eb1d70ea2bd324d91a233f6d101c346011` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

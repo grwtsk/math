@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConcentrationMechanism](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/concentrationmechanism.md) | 35 | `declaration-track:1a2c96c63ddf15f5c17480d5f976187a7ee07b0d974c4bf07a7b1579f4d9efd8` |
-| 2 | `structure` | [ConcentrationMechanismCertificate](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/concentrationmechanismcertificate.md) | 44 | `declaration-track:54345050e31710fc7c2f59472f6dc34a1ce24855f8c7c8738273acd73b672ed4` |
-| 3 | `structure` | [ConcentrationSoundnessObligation](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/concentrationsoundnessobligation.md) | 55 | `declaration-track:8647bacc73711c42863b6ce4f833a2565a974c3d4e6d2441ba3283caf416e573` |
-| 4 | `structure` | [AdmittedConcentrationCertificate](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/admittedconcentrationcertificate.md) | 60 | `declaration-track:a74d40adae44440f01c036ad9d4a7316ddcb61042458f8f04441ceda1ddaef21` |
-| 5 | `theorem` | [influence_does_not_self_admit_concentration](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/influence-does-not-self-admit-concentration.md) | 66 | `result-track:9396505d359bed9bb2355e8da70e7ea1895eab60a094008ddb3b2ced99711120` |
+| 1 | `inductive` | [ConcentrationMechanism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/concentrationmechanism.md) | 35 | `declaration-track:1a2c96c63ddf15f5c17480d5f976187a7ee07b0d974c4bf07a7b1579f4d9efd8` |
+| 2 | `structure` | [ConcentrationMechanismCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/concentrationmechanismcertificate.md) | 44 | `declaration-track:54345050e31710fc7c2f59472f6dc34a1ce24855f8c7c8738273acd73b672ed4` |
+| 3 | `structure` | [ConcentrationSoundnessObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/concentrationsoundnessobligation.md) | 55 | `declaration-track:8647bacc73711c42863b6ce4f833a2565a974c3d4e6d2441ba3283caf416e573` |
+| 4 | `structure` | [AdmittedConcentrationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/admittedconcentrationcertificate.md) | 60 | `declaration-track:a74d40adae44440f01c036ad9d4a7316ddcb61042458f8f04441ceda1ddaef21` |
+| 5 | `theorem` | [influence_does_not_self_admit_concentration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateInterface.lean/declarations/influence-does-not-self-admit-concentration.md) | 66 | `result-track:9396505d359bed9bb2355e8da70e7ea1895eab60a094008ddb3b2ced99711120` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

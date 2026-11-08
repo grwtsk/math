@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Finite.Set.finite_of_finite_image](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/declarations/finite-set-finite-of-finite-image.md) | 25 | `result-track:f88ae198af52cdb652dd20fc5e2ddb49dafa6c0883d3fa5f32bccef3af2174fb` |
-| 2 | `theorem` | [Finite.of_injective_finite_range](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/declarations/finite-of-injective-finite-range.md) | 29 | `result-track:b59c78c99938157072b9580c99789301fca1ef16ef1e38f5a0bf6f0ffc3639e6` |
+| 1 | `theorem` | [Finite.Set.finite_of_finite_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/declarations/finite-set-finite-of-finite-image.md) | 25 | `result-track:f88ae198af52cdb652dd20fc5e2ddb49dafa6c0883d3fa5f32bccef3af2174fb` |
+| 2 | `theorem` | [Finite.of_injective_finite_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSetSourceEdition2.lean/declarations/finite-of-injective-finite-range.md) | 29 | `result-track:b59c78c99938157072b9580c99789301fca1ef16ef1e38f5a0bf6f0ffc3639e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

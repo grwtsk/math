@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SmoothPiNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SmoothPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_pi](../../../../CommutativeAlgebra/SmoothPiNamespaced.lean/declarations/of-pi.md) | 35 | `result-track:54e0bb4c7a48b8ac065902681a5d67c75887d84d27af2afcdd99299052758094` |
-| 2 | `theorem` | [pi_iff](../../../../CommutativeAlgebra/SmoothPiNamespaced.lean/declarations/pi-iff.md) | 55 | `result-track:4d9f6756e0873db9c15b29bbcda8a0daec753c35712c5f01f0a2208fea6e5db4` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SmoothPiNamespaced.lean/declarations/instance.md) | 129 | `declaration-track:588b95ce3ccc6482d2177343c912532a52d32a02ae8bc2dbd747bf3ec0fa8128` |
+| 1 | `theorem` | [of_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothPiNamespaced.lean/declarations/of-pi.md) | 35 | `result-track:54e0bb4c7a48b8ac065902681a5d67c75887d84d27af2afcdd99299052758094` |
+| 2 | `theorem` | [pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothPiNamespaced.lean/declarations/pi-iff.md) | 55 | `result-track:4d9f6756e0873db9c15b29bbcda8a0daec753c35712c5f01f0a2208fea6e5db4` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothPiNamespaced.lean/declarations/instance.md) | 129 | `declaration-track:588b95ce3ccc6482d2177343c912532a52d32a02ae8bc2dbd747bf3ec0fa8128` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

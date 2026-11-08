@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ResultsAlternative.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ResultsAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [banach_does_not_supply_inner_product](../../../../FunctionalAnalysis/ResultsAlternative.lean/declarations/banach-does-not-supply-inner-product.md) | 9 | `result-track:3bd4d293e267e0f9c2caa035a3a1d3958d9e41a46de4dc338b8bb3be6f10f1ef` |
+| 1 | `theorem` | [banach_does_not_supply_inner_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative.lean/declarations/banach-does-not-supply-inner-product.md) | 9 | `result-track:3bd4d293e267e0f9c2caa035a3a1d3958d9e41a46de4dc338b8bb3be6f10f1ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

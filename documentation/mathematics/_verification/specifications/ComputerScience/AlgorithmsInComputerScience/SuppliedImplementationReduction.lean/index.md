@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Fintype.Pi` — import line 20; external provider; requires a separately pinned dependency.
 - `Lean.Elab.Tactic.Omega` — import line 21; external provider; requires a separately pinned dependency.
-- [Trace Encoding And Clause Bounds](../../../../../ComputerScience/AlgorithmsInComputerScience/TraceEncodingAndClauseBounds.lean/index.md) — import line 23; pinned internal source present.
+- [Trace Encoding And Clause Bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TraceEncodingAndClauseBounds.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Implements](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/implements.md) | 62 | `declaration-track:0cc287edd4825054298990280b5f2b0e5774ee0a33791d9b2a30d3c3f1fd391b` |
-| 2 | `structure` | [CompiledAlgorithm](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/compiledalgorithm.md) | 69 | `declaration-track:1bd50ac46193c287c6643d5161a1df8aafa4db69a75b07d04a4a8cf919e2886e` |
-| 3 | `theorem` | [satisfiable_toCNF_iff_preimage](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/satisfiable-tocnf-iff-preimage.md) | 76 | `result-track:8788d97d3d2c5b3f7cbeac4ca8588ba2bfd479fb36977d24a450f1b561457294` |
-| 4 | `theorem` | [CompiledAlgorithm.sat_iff_preimage](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/compiledalgorithm-sat-iff-preimage.md) | 101 | `result-track:efd80679b524a42060edc9148cbb69d3b4c37e367d42fede2b3f959ddf6d7cb6` |
-| 5 | `def` | [InputWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/inputwitness.md) | 110 | `declaration-track:deacc4c6c063ed2509711d8aa8e50857f6fd62b96c3a1e128ebd95455b2aee67` |
-| 6 | `theorem` | [inputWitness_iff_preimage](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/inputwitness-iff-preimage.md) | 117 | `result-track:3c80f9edd891a2e1ed3f3039f5904d890b80e819c93bc7257166958e33695a39` |
+| 1 | `def` | [Implements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/implements.md) | 62 | `declaration-track:0cc287edd4825054298990280b5f2b0e5774ee0a33791d9b2a30d3c3f1fd391b` |
+| 2 | `structure` | [CompiledAlgorithm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/compiledalgorithm.md) | 69 | `declaration-track:1bd50ac46193c287c6643d5161a1df8aafa4db69a75b07d04a4a8cf919e2886e` |
+| 3 | `theorem` | [satisfiable_toCNF_iff_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/satisfiable-tocnf-iff-preimage.md) | 76 | `result-track:8788d97d3d2c5b3f7cbeac4ca8588ba2bfd479fb36977d24a450f1b561457294` |
+| 4 | `theorem` | [CompiledAlgorithm.sat_iff_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/compiledalgorithm-sat-iff-preimage.md) | 101 | `result-track:efd80679b524a42060edc9148cbb69d3b4c37e367d42fede2b3f959ddf6d7cb6` |
+| 5 | `def` | [InputWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/inputwitness.md) | 110 | `declaration-track:deacc4c6c063ed2509711d8aa8e50857f6fd62b96c3a1e128ebd95455b2aee67` |
+| 6 | `theorem` | [inputWitness_iff_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/declarations/inputwitness-iff-preimage.md) | 117 | `result-track:3c80f9edd891a2e1ed3f3039f5904d890b80e819c93bc7257166958e33695a39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

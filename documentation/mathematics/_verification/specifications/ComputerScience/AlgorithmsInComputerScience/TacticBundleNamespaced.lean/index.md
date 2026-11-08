@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TacticBundle](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/tacticbundle.md) | 21 | `declaration-track:09fd37c18eac1b5e61461a017a4a01b13be5f0886dc90a39ae0a6d77ee72f345` |
-| 2 | `structure` | [TacticCertResult](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/tacticcertresult.md) | 28 | `declaration-track:98eaf0e273f846f3211c0d207de347d8abff7a93acd45fa5b2f6d70ca55affc7` |
-| 3 | `def` | [certify](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/certify.md) | 34 | `declaration-track:73d4e83e39e560d423da22f0adc10ff5be3697b8e2aed64335b0d87643f1c949` |
-| 4 | `def` | [KernelTactics](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/kerneltactics.md) | 49 | `declaration-track:4bebb91e01797506d8b29dac9ce1e46b2270d0e1b20eb1faf71290f058968e93` |
-| 5 | `def` | [register](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/register.md) | 52 | `declaration-track:980ef38175d93bc195809173ea8ad34be7041d660594555e3cfac4f8193b9d74` |
-| 6 | `def` | [known](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/known.md) | 61 | `declaration-track:670005dc856b780c927a1b7b4c762cdd3bdd85b2d4f6742edb068662b4124fa7` |
+| 1 | `structure` | [TacticBundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/tacticbundle.md) | 21 | `declaration-track:09fd37c18eac1b5e61461a017a4a01b13be5f0886dc90a39ae0a6d77ee72f345` |
+| 2 | `structure` | [TacticCertResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/tacticcertresult.md) | 28 | `declaration-track:98eaf0e273f846f3211c0d207de347d8abff7a93acd45fa5b2f6d70ca55affc7` |
+| 3 | `def` | [certify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/certify.md) | 34 | `declaration-track:73d4e83e39e560d423da22f0adc10ff5be3697b8e2aed64335b0d87643f1c949` |
+| 4 | `def` | [KernelTactics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/kerneltactics.md) | 49 | `declaration-track:4bebb91e01797506d8b29dac9ce1e46b2270d0e1b20eb1faf71290f058968e93` |
+| 5 | `def` | [register](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/register.md) | 52 | `declaration-track:980ef38175d93bc195809173ea8ad34be7041d660594555e3cfac4f8193b9d74` |
+| 6 | `def` | [known](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticBundleNamespaced.lean/declarations/known.md) | 61 | `declaration-track:670005dc856b780c927a1b7b4c762cdd3bdd85b2d4f6742edb068662b4124fa7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

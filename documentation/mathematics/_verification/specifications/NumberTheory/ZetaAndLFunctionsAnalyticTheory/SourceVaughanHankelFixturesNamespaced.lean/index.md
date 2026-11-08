@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [alpha_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/alpha-one.md) | 35 | `result-track:ba91d8f25815eba70271febc0d9032b784962f0ff46d540fbb5e21f55a7ba321` |
-| 2 | `theorem` | [beta_one_of_one_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/beta-one-of-one-lt.md) | 38 | `result-track:8e0d68c1e0bc7d35ab580c60010a388aed0e371a462f5cb576e7afa4edf1e5e8` |
-| 3 | `theorem` | [centeredBeta_one_of_one_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/centeredbeta-one-of-one-lt.md) | 44 | `result-track:fbc940503ce965ccc611c1779444832854c171162cfd87456b7e7a725d266c60` |
-| 4 | `theorem` | [two_mem_unit_scale_longInventory](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/two-mem-unit-scale-longinventory.md) | 49 | `result-track:42b00c4678d8cc0d7c7e8955addc4137a116affdab47d146cfdf6a1dc2c901f4` |
-| 5 | `theorem` | [actual_unit_scale_centering_substitution_false](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/actual-unit-scale-centering-substitution-false.md) | 62 | `result-track:eeda372e902da276d8359b4368ee77235d03b82a10974cc6c4cfa769adbbb7b5` |
-| 6 | `theorem` | [centeredDeletedDiagonal_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/centereddeleteddiagonal-one.md) | 69 | `result-track:e100994fb10b02d69d004d132ddb55e3f14b748225092655e05dbebf7ef7b14d` |
-| 7 | `theorem` | [old_diagonal_one_eq_negative_mean](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/old-diagonal-one-eq-negative-mean.md) | 81 | `result-track:84566358bb810e2ce0f3b4cf643b4098dfb3b68da8460c77b0223476d4cd56bc` |
+| 1 | `theorem` | [alpha_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/alpha-one.md) | 35 | `result-track:ba91d8f25815eba70271febc0d9032b784962f0ff46d540fbb5e21f55a7ba321` |
+| 2 | `theorem` | [beta_one_of_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/beta-one-of-one-lt.md) | 38 | `result-track:8e0d68c1e0bc7d35ab580c60010a388aed0e371a462f5cb576e7afa4edf1e5e8` |
+| 3 | `theorem` | [centeredBeta_one_of_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/centeredbeta-one-of-one-lt.md) | 44 | `result-track:fbc940503ce965ccc611c1779444832854c171162cfd87456b7e7a725d266c60` |
+| 4 | `theorem` | [two_mem_unit_scale_longInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/two-mem-unit-scale-longinventory.md) | 49 | `result-track:42b00c4678d8cc0d7c7e8955addc4137a116affdab47d146cfdf6a1dc2c901f4` |
+| 5 | `theorem` | [actual_unit_scale_centering_substitution_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/actual-unit-scale-centering-substitution-false.md) | 62 | `result-track:eeda372e902da276d8359b4368ee77235d03b82a10974cc6c4cfa769adbbb7b5` |
+| 6 | `theorem` | [centeredDeletedDiagonal_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/centereddeleteddiagonal-one.md) | 69 | `result-track:e100994fb10b02d69d004d132ddb55e3f14b748225092655e05dbebf7ef7b14d` |
+| 7 | `theorem` | [old_diagonal_one_eq_negative_mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceVaughanHankelFixturesNamespaced.lean/declarations/old-diagonal-one-eq-negative-mean.md) | 81 | `result-track:84566358bb810e2ce0f3b4cf643b4098dfb3b68da8460c77b0223476d4cd56bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

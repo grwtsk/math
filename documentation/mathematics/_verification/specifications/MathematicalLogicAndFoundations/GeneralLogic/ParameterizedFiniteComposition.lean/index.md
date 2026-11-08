@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RepresentationEnvironment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/representationenvironment.md) | 42 | `declaration-track:7781f8024aea504e2f361c4ba0073700757933feac882388e0f0822f89ad9727` |
-| 2 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/comp.md) | 49 | `declaration-track:1fd0e01830c8c5035fb67dc9de748660b8efd72baa8809619f4ee43c442ce314` |
-| 3 | `theorem` | [comp_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/comp-apply.md) | 56 | `result-track:677deecb9c4e0a79c02e3642f5db843c5ce5a01e44fdd331e915006d41fe5340` |
-| 4 | `theorem` | [comp_independent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/comp-independent.md) | 63 | `result-track:7d713acc00cd9ca73ed1171bdc7cd8e5fd8cb1e00e95f40ad4c126128033c53d` |
-| 5 | `inductive` | [ParameterizedChain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/parameterizedchain.md) | 76 | `declaration-track:fcc58fb87cfe88f2accc19d004647b7f1554e6d349b1dbfd18618758b769f8b8` |
-| 6 | `def` | [composite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/composite.md) | 88 | `declaration-track:4453d3e5f27bbd780eb89d4d89b1eb707b7f63e1fb699b6590e6ab34273201a1` |
-| 7 | `theorem` | [composite_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/composite-apply.md) | 96 | `result-track:4c57bd89cead80712b3a752430e95347b95b25c8d4297d7a28e0ce842d51775a` |
+| 1 | `structure` | [RepresentationEnvironment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/representationenvironment.md) | 42 | `declaration-track:7781f8024aea504e2f361c4ba0073700757933feac882388e0f0822f89ad9727` |
+| 2 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/comp.md) | 49 | `declaration-track:1fd0e01830c8c5035fb67dc9de748660b8efd72baa8809619f4ee43c442ce314` |
+| 3 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/comp-apply.md) | 56 | `result-track:677deecb9c4e0a79c02e3642f5db843c5ce5a01e44fdd331e915006d41fe5340` |
+| 4 | `theorem` | [comp_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/comp-independent.md) | 63 | `result-track:7d713acc00cd9ca73ed1171bdc7cd8e5fd8cb1e00e95f40ad4c126128033c53d` |
+| 5 | `inductive` | [ParameterizedChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/parameterizedchain.md) | 76 | `declaration-track:fcc58fb87cfe88f2accc19d004647b7f1554e6d349b1dbfd18618758b769f8b8` |
+| 6 | `def` | [composite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/composite.md) | 88 | `declaration-track:4453d3e5f27bbd780eb89d4d89b1eb707b7f63e1fb699b6590e6ab34273201a1` |
+| 7 | `theorem` | [composite_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFiniteComposition.lean/declarations/composite-apply.md) | 96 | `result-track:4c57bd89cead80712b3a752430e95347b95b25c8d4297d7a28e0ce842d51775a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

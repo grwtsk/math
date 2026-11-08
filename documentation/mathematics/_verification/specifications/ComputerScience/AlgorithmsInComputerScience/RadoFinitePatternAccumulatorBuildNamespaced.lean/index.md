@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuildNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuildNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuildNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuildNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bitRado_build_pattern_accumulator_by_steps](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuildNamespaced.lean/declarations/bitrado-build-pattern-accumulator-by-steps.md) | 28 | `result-track:cd69d7ae46fcc12e6e83751fc0f3143c06bbb03633b4ea5fb0f1e66a9770ccae` |
+| 1 | `theorem` | [bitRado_build_pattern_accumulator_by_steps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuildNamespaced.lean/declarations/bitrado-build-pattern-accumulator-by-steps.md) | 28 | `result-track:cd69d7ae46fcc12e6e83751fc0f3143c06bbb03633b4ea5fb0f1e66a9770ccae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

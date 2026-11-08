@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483aNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483aNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483aNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483aNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,7 +62,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dirichletEnergy_zero_of_allDegreeSutured](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483aNamespaced.lean/declarations/dirichletenergy-zero-of-alldegreesutured.md) | 28 | `result-track:4a3c1f3e138723575d519bc2fe7f0d0608d18f3684d46bd8e04a4d0a3bab509a` |
+| 1 | `theorem` | [dirichletEnergy_zero_of_allDegreeSutured](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483aNamespaced.lean/declarations/dirichletenergy-zero-of-alldegreesutured.md) | 28 | `result-track:4a3c1f3e138723575d519bc2fe7f0d0608d18f3684d46bd8e04a4d0a3bab509a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

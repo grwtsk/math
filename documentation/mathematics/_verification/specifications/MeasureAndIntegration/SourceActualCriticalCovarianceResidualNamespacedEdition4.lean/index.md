@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualZeroSevenCriticalWork](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/actualzerosevencriticalwork.md) | 29 | `declaration-track:977dbb70cb9d121112c4f294077bf3d0b74d48afdde93b389ff237dcc15724e3` |
-| 2 | `def` | [actualZeroSevenCriticalBudget](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/actualzerosevencriticalbudget.md) | 33 | `declaration-track:b33027888c6c7aa74efdf48bc929c3239f800cee705123931b8bb85b9932efc5` |
-| 3 | `theorem` | [error_deriv_integrable](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/error-deriv-integrable.md) | 37 | `result-track:2267f6e46578efa4c98d7a8601048e2ee4c8488963cd68c86bc82f512af44cbd` |
-| 4 | `theorem` | [actualCriticalErrorCovariance_eq_half_derivative_work](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/actualcriticalerrorcovariance-eq-half-derivative-work.md) | 48 | `result-track:74ce8a2f449268362b286b457e4a3b82cccf9b6e4e97fcca6cdeddd26e91843c` |
-| 5 | `theorem` | [criticalMangoldtWork_eq_actual_covariance_and_full_head](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/criticalmangoldtwork-eq-actual-covariance-and-full-head.md) | 60 | `result-track:868df4cdc8b351b4a9e20cd277f07699837875b90f6497187a2293a308de4944` |
-| 6 | `theorem` | [mertensResidual_eq_actual_covariance_and_full_head](../../../../MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/mertensresidual-eq-actual-covariance-and-full-head.md) | 91 | `result-track:26275e7884ac88098baed315ce10f32e15788eff885d743a81b204814a80ed10` |
+| 1 | `def` | [actualZeroSevenCriticalWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/actualzerosevencriticalwork.md) | 29 | `declaration-track:977dbb70cb9d121112c4f294077bf3d0b74d48afdde93b389ff237dcc15724e3` |
+| 2 | `def` | [actualZeroSevenCriticalBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/actualzerosevencriticalbudget.md) | 33 | `declaration-track:b33027888c6c7aa74efdf48bc929c3239f800cee705123931b8bb85b9932efc5` |
+| 3 | `theorem` | [error_deriv_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/error-deriv-integrable.md) | 37 | `result-track:2267f6e46578efa4c98d7a8601048e2ee4c8488963cd68c86bc82f512af44cbd` |
+| 4 | `theorem` | [actualCriticalErrorCovariance_eq_half_derivative_work](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/actualcriticalerrorcovariance-eq-half-derivative-work.md) | 48 | `result-track:74ce8a2f449268362b286b457e4a3b82cccf9b6e4e97fcca6cdeddd26e91843c` |
+| 5 | `theorem` | [criticalMangoldtWork_eq_actual_covariance_and_full_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/criticalmangoldtwork-eq-actual-covariance-and-full-head.md) | 60 | `result-track:868df4cdc8b351b4a9e20cd277f07699837875b90f6497187a2293a308de4944` |
+| 6 | `theorem` | [mertensResidual_eq_actual_covariance_and_full_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalCovarianceResidualNamespacedEdition4.lean/declarations/mertensresidual-eq-actual-covariance-and-full-head.md) | 91 | `result-track:26275e7884ac88098baed315ce10f32e15788eff885d743a81b204814a80ed10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

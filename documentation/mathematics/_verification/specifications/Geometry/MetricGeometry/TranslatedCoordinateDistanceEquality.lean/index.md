@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/index.md) · [Full source](../../../../../Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Algebra.Symmetry` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Logic.Equiv.Fin.Rotate` — import line 20; external provider; requires a separately pinned dependency.
-- [Faithful Actions And Coordinate Cycle](../../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/index.md) — import line 22; pinned internal source present.
+- [Faithful Actions And Coordinate Cycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [symmetryOffset3](../../../../../Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/declarations/symmetryoffset3.md) | 41 | `declaration-track:d766ceab4491a24a7c919b34e71dc6f39ebadc326d319252a573a50eed61b1ac` |
-| 2 | `def` | [symmetryHammingIso3](../../../../../Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/declarations/symmetryhammingiso3.md) | 45 | `declaration-track:3f499b2fdb8b6495fb2f8fa01f703a4d87d3abd93ff20750d99d910eb682fa70` |
-| 3 | `example` | [(anonymous)](../../../../../Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/declarations/example.md) | 49 | `declaration-track:21a159fb4dcd294221a319ba58e0bca5f7a93f4b43c5cfbd12532bb8d7d9edff` |
+| 1 | `def` | [symmetryOffset3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/declarations/symmetryoffset3.md) | 41 | `declaration-track:d766ceab4491a24a7c919b34e71dc6f39ebadc326d319252a573a50eed61b1ac` |
+| 2 | `def` | [symmetryHammingIso3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/declarations/symmetryhammingiso3.md) | 45 | `declaration-track:3f499b2fdb8b6495fb2f8fa01f703a4d87d3abd93ff20750d99d910eb682fa70` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/declarations/example.md) | 49 | `declaration-track:21a159fb4dcd294221a319ba58e0bca5f7a93f4b43c5cfbd12532bb8d7d9edff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

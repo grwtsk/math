@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_dvd_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/prod-dvd-iff.md) | 24 | `result-track:cedb452f189719ba9be6c674ffbe298f420eae0730f1050f4f29e3da58606d1f` |
-| 2 | `theorem` | [Prod.mk_dvd_mk](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/prod-mk-dvd-mk.md) | 31 | `result-track:66548e432999ac5a5acbd7aa5c254c26bec3c28e49621219d3e001bb55b003a0` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/instance.md) | 35 | `declaration-track:0866525792e19e39b3d7114e653edbd50bfca2b3546ded31cc4c093b73b75545` |
-| 4 | `theorem` | [pi_dvd_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/pi-dvd-iff.md) | 43 | `result-track:e47cf67156689afb4d0ed54eb2e7956f5869751445075ddd588e1fc26df32e61` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:498dab9b09cc9d34912ddca4be9f7b8d4d841c19c7af72c64506cce4b5ed6f88` |
+| 1 | `theorem` | [prod_dvd_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/prod-dvd-iff.md) | 24 | `result-track:cedb452f189719ba9be6c674ffbe298f420eae0730f1050f4f29e3da58606d1f` |
+| 2 | `theorem` | [Prod.mk_dvd_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/prod-mk-dvd-mk.md) | 31 | `result-track:66548e432999ac5a5acbd7aa5c254c26bec3c28e49621219d3e001bb55b003a0` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/instance.md) | 35 | `declaration-track:0866525792e19e39b3d7114e653edbd50bfca2b3546ded31cc4c093b73b75545` |
+| 4 | `theorem` | [pi_dvd_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/pi-dvd-iff.md) | 43 | `result-track:e47cf67156689afb4d0ed54eb2e7956f5869751445075ddd588e1fc26df32e61` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProdNamespaced.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:498dab9b09cc9d34912ddca4be9f7b8d4d841c19c7af72c64506cce4b5ed6f88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

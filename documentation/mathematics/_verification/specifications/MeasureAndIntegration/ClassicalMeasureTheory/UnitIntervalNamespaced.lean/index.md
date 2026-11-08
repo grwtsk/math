@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/instance.md) | 30 | `declaration-track:1b89759187d8fc0c7eeead219f98cd6c8cddff9b7382bff720746b7a9617e15c` |
-| 2 | `theorem` | [volume_def](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/volume-def.md) | 32 | `result-track:e47f7d6e95a02649908e107ee3d47aaa47b463345a3fc9d0c9aacb2d00f501a8` |
-| 3 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:b92ed006ba35ee4c4aba02d482754492b04834a39c014ffd24a3989b89edcbcc` |
-| 4 | `theorem` | [measurable_symm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/measurable-symm.md) | 40 | `result-track:b43b1ad44cbf884b217846649772bf265805e3a72b18b84e0177c6e0366e417e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/instance.md) | 30 | `declaration-track:1b89759187d8fc0c7eeead219f98cd6c8cddff9b7382bff720746b7a9617e15c` |
+| 2 | `theorem` | [volume_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/volume-def.md) | 32 | `result-track:e47f7d6e95a02649908e107ee3d47aaa47b463345a3fc9d0c9aacb2d00f501a8` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:b92ed006ba35ee4c4aba02d482754492b04834a39c014ffd24a3989b89edcbcc` |
+| 4 | `theorem` | [measurable_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnitIntervalNamespaced.lean/declarations/measurable-symm.md) | 40 | `result-track:b43b1ad44cbf884b217846649772bf265805e3a72b18b84e0177c6e0366e417e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

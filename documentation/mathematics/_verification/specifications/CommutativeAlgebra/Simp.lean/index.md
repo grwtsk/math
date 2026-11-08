@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Simp.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Simp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Simp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Simp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../CommutativeAlgebra/Simp.lean/declarations/example.md) | 11 | `declaration-track:c14631a7c1486b520ddc002e87ca00f71d6f63a03e0dbc58cfeb39628a13e6bf` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/Simp.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:d2c25e8bfe2ebc5e3005fd80b175417754e31b88bca1174e253bd235e8667fa9` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Simp.lean/declarations/example.md) | 11 | `declaration-track:c14631a7c1486b520ddc002e87ca00f71d6f63a03e0dbc58cfeb39628a13e6bf` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Simp.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:d2c25e8bfe2ebc5e3005fd80b175417754e31b88bca1174e253bd235e8667fa9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

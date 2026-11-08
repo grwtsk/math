@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [occursOrInType](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/declarations/occursorintype.md) | 52 | `declaration-track:3b4ba4fba67f88bd088029444c2a3e7c516bdca7544f7b31320332cea7f33ff2` |
-| 2 | `def` | [occursInCtorTypeMask](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/declarations/occursinctortypemask.md) | 64 | `declaration-track:b0d1e4f3afccfc6892ff7779aa5cf377454070377e7ac47ffc8ffb65eb8bd448` |
-| 3 | `def` | [withSharedCtorIndices](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/declarations/withsharedctorindices.md) | 84 | `declaration-track:2e9c6b58e58d9e3ae06de1c7e684af9bcfb8b17103107bc4a09733459e41c5e0` |
+| 1 | `def` | [occursOrInType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/declarations/occursorintype.md) | 52 | `declaration-track:3b4ba4fba67f88bd088029444c2a3e7c516bdca7544f7b31320332cea7f33ff2` |
+| 2 | `def` | [occursInCtorTypeMask](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/declarations/occursinctortypemask.md) | 64 | `declaration-track:b0d1e4f3afccfc6892ff7779aa5cf377454070377e7ac47ffc8ffb65eb8bd448` |
+| 3 | `def` | [withSharedCtorIndices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsNamespacedPublic.lean/declarations/withsharedctorindices.md) | 84 | `declaration-track:2e9c6b58e58d9e3ae06de1c7e684af9bcfb8b17103107bc4a09733459e41c5e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SiegelsLemmaPublic.lean/index.md) · [Full source](../../../../NumberTheory/SiegelsLemmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [image_T_subset_S](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/image-t-subset-s.md) | 73 | `result-track:99c146b8076f783266c454203cc8ef3161a0e1bdef29c92c39435bb06a9f10bd` |
-| 2 | `lemma` | [card_T_eq](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/card-t-eq.md) | 87 | `result-track:73b7af2cca3845cef3fb6f91ecda18841475641f8e75d539b3ffd457f9b13f96` |
-| 3 | `lemma` | [N_le_P_add_one](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/n-le-p-add-one.md) | 91 | `result-track:19d9fb227f55a99825a82666d9808a072b8abf6f5c4f4255383417c27312d9b2` |
-| 4 | `lemma` | [card_S_eq](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/card-s-eq.md) | 98 | `result-track:a42c92068f550b22303b4f7f968cecc66488e2064bbc48c399ccd8a49f1d55fe` |
-| 5 | `lemma` | [one_le_norm_A_of_ne_zero](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/one-le-norm-a-of-ne-zero.md) | 105 | `result-track:de383ff159d956322b0f9fe2f7f391b978708725dc17a7649e92fb6b713027bd` |
-| 6 | `lemma` | [card_S_lt_card_T](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/card-s-lt-card-t.md) | 117 | `result-track:ca95b0efb7917d57ad30b15da6fc6bc02cdd1df5f214d0bf08b5f0107543901a` |
-| 7 | `theorem` | [exists_ne_zero_int_vec_norm_le](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/exists-ne-zero-int-vec-norm-le-source-edition-2.md) | 155 | `result-track:7667b72386328461f877efd1ee5dfd42c6d40fe868197d09c7c18e0ef3512203` |
-| 8 | `theorem` | [exists_ne_zero_int_vec_norm_le'](../../../../NumberTheory/SiegelsLemmaPublic.lean/declarations/exists-ne-zero-int-vec-norm-le.md) | 177 | `result-track:2085d47fec35950d57e8c19201b50e93f14890da810cbe8f24b5c1c97a68e950` |
+| 1 | `lemma` | [image_T_subset_S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/image-t-subset-s.md) | 73 | `result-track:99c146b8076f783266c454203cc8ef3161a0e1bdef29c92c39435bb06a9f10bd` |
+| 2 | `lemma` | [card_T_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/card-t-eq.md) | 87 | `result-track:73b7af2cca3845cef3fb6f91ecda18841475641f8e75d539b3ffd457f9b13f96` |
+| 3 | `lemma` | [N_le_P_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/n-le-p-add-one.md) | 91 | `result-track:19d9fb227f55a99825a82666d9808a072b8abf6f5c4f4255383417c27312d9b2` |
+| 4 | `lemma` | [card_S_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/card-s-eq.md) | 98 | `result-track:a42c92068f550b22303b4f7f968cecc66488e2064bbc48c399ccd8a49f1d55fe` |
+| 5 | `lemma` | [one_le_norm_A_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/one-le-norm-a-of-ne-zero.md) | 105 | `result-track:de383ff159d956322b0f9fe2f7f391b978708725dc17a7649e92fb6b713027bd` |
+| 6 | `lemma` | [card_S_lt_card_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/card-s-lt-card-t.md) | 117 | `result-track:ca95b0efb7917d57ad30b15da6fc6bc02cdd1df5f214d0bf08b5f0107543901a` |
+| 7 | `theorem` | [exists_ne_zero_int_vec_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/exists-ne-zero-int-vec-norm-le-source-edition-2.md) | 155 | `result-track:7667b72386328461f877efd1ee5dfd42c6d40fe868197d09c7c18e0ef3512203` |
+| 8 | `theorem` | [exists_ne_zero_int_vec_norm_le'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SiegelsLemmaPublic.lean/declarations/exists-ne-zero-int-vec-norm-le.md) | 177 | `result-track:2085d47fec35950d57e8c19201b50e93f14890da810cbe8f24b5c1c97a68e950` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

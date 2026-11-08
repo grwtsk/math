@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,23 +64,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [first](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/first.md) | 33 | `declaration-track:d48af8c88d5fb01af9405cf0a596939452236c92c1c96ba5f581168e3dfd87e0` |
-| 2 | `def` | [second](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/second.md) | 36 | `declaration-track:d150437b6fe294e815c2c31d906d26556b9fe1b37a23dfd13b763c7b14d0da82` |
-| 3 | `def` | [third](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third.md) | 39 | `declaration-track:6470499c1a957906bfcd6af7b984e74e0e366ee2b10dd4cc6a2ecd240faa0ca3` |
-| 4 | `theorem` | [first_zero](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/first-zero.md) | 41 | `result-track:df06ee144a12bcf83bfa17cb2ecf01b304223546a56ffd3959b3a7434b347872` |
-| 5 | `theorem` | [first_one](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/first-one.md) | 42 | `result-track:d55bd791e65f3fe53ed742b304997a87032e8f461336de710ee5010ee115b546` |
-| 6 | `theorem` | [second_zero](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/second-zero.md) | 43 | `result-track:7671850ac1a827ffa14c2d80d1bb2cf6079f4bf6419ee60d21b73a5af0233893` |
-| 7 | `theorem` | [second_one](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/second-one.md) | 44 | `result-track:ae4cdd0fba34733eaef20f55a9a3d77e51e729cf82402d753c166eb06ddb9d6e` |
-| 8 | `theorem` | [third_zero](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third-zero.md) | 45 | `result-track:462edb6d44af54c8a91de2ce815a3688850e1559c460934fbab84e47d17075fc` |
-| 9 | `theorem` | [third_one](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third-one.md) | 46 | `result-track:297713968c92c6bdf64c90452422b0c3638b07c884334707d73d0ab7f3894202` |
-| 10 | `theorem` | [hasDerivAt_first](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-first.md) | 48 | `result-track:6cb01165464dcd0a014987238b4e53d8a7c27dc591d2400bf43cc3446733d7d3` |
-| 11 | `theorem` | [hasDerivAt_second](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-second.md) | 51 | `result-track:fbf29c33e1d8a3200ba55d4cdd137f4808d01c05c43245845f917614ee9bcc19` |
-| 12 | `theorem` | [hasDerivAt_third](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-third.md) | 55 | `result-track:3bef1ec44be14ca9e6b7bf3519a4174b861146b3177df0df86bcb3024f5f7fba` |
-| 13 | `theorem` | [abs_third_le](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/abs-third-le.md) | 61 | `result-track:d44c2699d3f010b89cd1e0eae779d38c8157391b262fb398f77abc16befb3ae2` |
-| 14 | `theorem` | [third_reflection](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third-reflection.md) | 72 | `result-track:96c782eab821c9e8fb5b21ee415a241b4fc518473d562560d9e8d3f943817dba` |
-| 15 | `theorem` | [hasDerivAt_combined](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-combined.md) | 75 | `result-track:4d703ca526d18261b1926aec663caba0228256404a0af11c933ea9fa1935783e` |
-| 16 | `theorem` | [one_cell](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/one-cell.md) | 90 | `result-track:e8952ce0c905838a05fd6e77e8f4033b084ad4026af631bf4d84e3189bffb6c0` |
-| 17 | `theorem` | [finite_cells](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/finite-cells.md) | 121 | `result-track:4f46f998e8f8f214ef04669366adaa44a5f212dfa5ce314194ce00ee1e504f0c` |
+| 1 | `def` | [first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/first.md) | 33 | `declaration-track:d48af8c88d5fb01af9405cf0a596939452236c92c1c96ba5f581168e3dfd87e0` |
+| 2 | `def` | [second](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/second.md) | 36 | `declaration-track:d150437b6fe294e815c2c31d906d26556b9fe1b37a23dfd13b763c7b14d0da82` |
+| 3 | `def` | [third](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third.md) | 39 | `declaration-track:6470499c1a957906bfcd6af7b984e74e0e366ee2b10dd4cc6a2ecd240faa0ca3` |
+| 4 | `theorem` | [first_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/first-zero.md) | 41 | `result-track:df06ee144a12bcf83bfa17cb2ecf01b304223546a56ffd3959b3a7434b347872` |
+| 5 | `theorem` | [first_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/first-one.md) | 42 | `result-track:d55bd791e65f3fe53ed742b304997a87032e8f461336de710ee5010ee115b546` |
+| 6 | `theorem` | [second_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/second-zero.md) | 43 | `result-track:7671850ac1a827ffa14c2d80d1bb2cf6079f4bf6419ee60d21b73a5af0233893` |
+| 7 | `theorem` | [second_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/second-one.md) | 44 | `result-track:ae4cdd0fba34733eaef20f55a9a3d77e51e729cf82402d753c166eb06ddb9d6e` |
+| 8 | `theorem` | [third_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third-zero.md) | 45 | `result-track:462edb6d44af54c8a91de2ce815a3688850e1559c460934fbab84e47d17075fc` |
+| 9 | `theorem` | [third_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third-one.md) | 46 | `result-track:297713968c92c6bdf64c90452422b0c3638b07c884334707d73d0ab7f3894202` |
+| 10 | `theorem` | [hasDerivAt_first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-first.md) | 48 | `result-track:6cb01165464dcd0a014987238b4e53d8a7c27dc591d2400bf43cc3446733d7d3` |
+| 11 | `theorem` | [hasDerivAt_second](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-second.md) | 51 | `result-track:fbf29c33e1d8a3200ba55d4cdd137f4808d01c05c43245845f917614ee9bcc19` |
+| 12 | `theorem` | [hasDerivAt_third](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-third.md) | 55 | `result-track:3bef1ec44be14ca9e6b7bf3519a4174b861146b3177df0df86bcb3024f5f7fba` |
+| 13 | `theorem` | [abs_third_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/abs-third-le.md) | 61 | `result-track:d44c2699d3f010b89cd1e0eae779d38c8157391b262fb398f77abc16befb3ae2` |
+| 14 | `theorem` | [third_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/third-reflection.md) | 72 | `result-track:96c782eab821c9e8fb5b21ee415a241b4fc518473d562560d9e8d3f943817dba` |
+| 15 | `theorem` | [hasDerivAt_combined](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/hasderivat-combined.md) | 75 | `result-track:4d703ca526d18261b1926aec663caba0228256404a0af11c933ea9fa1935783e` |
+| 16 | `theorem` | [one_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/one-cell.md) | 90 | `result-track:e8952ce0c905838a05fd6e77e8f4033b084ad4026af631bf4d84e3189bffb6c0` |
+| 17 | `theorem` | [finite_cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/declarations/finite-cells.md) | 121 | `result-track:4f46f998e8f8f214ef04669366adaa44a5f212dfa5ce314194ce00ee1e504f0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

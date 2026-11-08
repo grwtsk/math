@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/EnergyAligned.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/EnergyAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../Combinatorics/GraphTheory/EnergyAligned.lean/declarations/macro-rules.md) | 35 | `declaration-track:a2fa546fa5c010c39ebbe8bb694024e2773d66b040d2683c0151aae6f02811bc` |
-| 2 | `def` | [energy](../../../../../Combinatorics/GraphTheory/EnergyAligned.lean/declarations/energy.md) | 41 | `declaration-track:949833625e9aa0d4116436a5aaba102309261ffd6b69260735b7dae782f12b67` |
-| 3 | `theorem` | [energy_nonneg](../../../../../Combinatorics/GraphTheory/EnergyAligned.lean/declarations/energy-nonneg.md) | 45 | `result-track:2803774d804f3752065205969e61fd458a3ddb66f0b92a034fe3c447f8261ebe` |
-| 4 | `theorem` | [energy_le_one](../../../../../Combinatorics/GraphTheory/EnergyAligned.lean/declarations/energy-le-one.md) | 49 | `result-track:414aa160c48a53d160d58526b6eeac0a4ebbe5dad840c3e31d97bc695c72c098` |
-| 5 | `theorem` | [coe_energy](../../../../../Combinatorics/GraphTheory/EnergyAligned.lean/declarations/coe-energy.md) | 64 | `result-track:57f87c45196b5093eb12761beef080189807c714818f260d66b71204527caae5` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyAligned.lean/declarations/macro-rules.md) | 35 | `declaration-track:a2fa546fa5c010c39ebbe8bb694024e2773d66b040d2683c0151aae6f02811bc` |
+| 2 | `def` | [energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyAligned.lean/declarations/energy.md) | 41 | `declaration-track:949833625e9aa0d4116436a5aaba102309261ffd6b69260735b7dae782f12b67` |
+| 3 | `theorem` | [energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyAligned.lean/declarations/energy-nonneg.md) | 45 | `result-track:2803774d804f3752065205969e61fd458a3ddb66f0b92a034fe3c447f8261ebe` |
+| 4 | `theorem` | [energy_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyAligned.lean/declarations/energy-le-one.md) | 49 | `result-track:414aa160c48a53d160d58526b6eeac0a4ebbe5dad840c3e31d97bc695c72c098` |
+| 5 | `theorem` | [coe_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyAligned.lean/declarations/coe-energy.md) | 64 | `result-track:57f87c45196b5093eb12761beef080189807c714818f260d66b71204527caae5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

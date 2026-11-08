@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GraphPointRecord](../../../../../MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/graphpointrecord.md) | 44 | `declaration-track:f32363d6ad1e5728685752a846fc2b0417dfcf400f44dfbe79c66a491a8f0c04` |
-| 2 | `def` | [graphPointRepresentation](../../../../../MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/graphpointrepresentation.md) | 50 | `declaration-track:f1bb962c38beb703c72ca899e30586f22a902ec5aa2c11a8ff9bf94524f7545a` |
-| 3 | `def` | [executeGraphPoint](../../../../../MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/executegraphpoint.md) | 58 | `declaration-track:ebc471b46bb5c4a12ed934ce4d82628275b6f94bcb3b74bd7a47c81f5cfe7e9e` |
-| 4 | `theorem` | [executeGraphPoint_represents](../../../../../MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/executegraphpoint-represents.md) | 64 | `result-track:1333db3f3036d862012b1ed4b234ea04ddc3e3557766c14368efc09d55714347` |
-| 5 | `theorem` | [executeGraphPoint_liesOnDiagonal_iff_fixed](../../../../../MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/executegraphpoint-liesondiagonal-iff-fixed.md) | 73 | `result-track:ff4df10fa17ec9d5ac4b05f34b178df7347e7f896ba0e91d5874fef064eafe5c` |
+| 1 | `structure` | [GraphPointRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/graphpointrecord.md) | 44 | `declaration-track:f32363d6ad1e5728685752a846fc2b0417dfcf400f44dfbe79c66a491a8f0c04` |
+| 2 | `def` | [graphPointRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/graphpointrepresentation.md) | 50 | `declaration-track:f1bb962c38beb703c72ca899e30586f22a902ec5aa2c11a8ff9bf94524f7545a` |
+| 3 | `def` | [executeGraphPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/executegraphpoint.md) | 58 | `declaration-track:ebc471b46bb5c4a12ed934ce4d82628275b6f94bcb3b74bd7a47c81f5cfe7e9e` |
+| 4 | `theorem` | [executeGraphPoint_represents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/executegraphpoint-represents.md) | 64 | `result-track:1333db3f3036d862012b1ed4b234ea04ddc3e3557766c14368efc09d55714347` |
+| 5 | `theorem` | [executeGraphPoint_liesOnDiagonal_iff_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/GraphPointFixedSet.lean/declarations/executegraphpoint-liesondiagonal-iff-fixed.md) | 73 | `result-track:ff4df10fa17ec9d5ac4b05f34b178df7347e7f896ba0e91d5874fef064eafe5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SeparationClassification](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/separationclassification.md) | 16 | `declaration-track:8dbf55b58a9635f944383ec01263bd6bf91b8cc106872f34237c37b47fbf615c` |
-| 2 | `structure` | [FixedFamilySeparationCertificate](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/fixedfamilyseparationcertificate.md) | 28 | `declaration-track:f1bf1e0c472cd39dcc223d04edf3618c735237c3eda930dab2408e880070c44f` |
-| 3 | `structure` | [UniformFixedFamilySeparationCertificate](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/uniformfixedfamilyseparationcertificate.md) | 44 | `declaration-track:c13363e84169ac5542822560cc8788cfaf7eff96cec985c7c9884c5cf860fcb7` |
-| 4 | `structure` | [ProfileUniformSeparationCertificate](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/profileuniformseparationcertificate.md) | 61 | `declaration-track:be9d9d671a030bdf53dd579324a36717cbb1f63c58d4a62b036c6d08760e65af` |
-| 5 | `theorem` | [dist_positive](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/dist-positive.md) | 76 | `result-track:3454448f7e4fe80eb926fdf81881597f1bb70ee482ff7c2bdaff1f1bb1b6d9f7` |
+| 1 | `inductive` | [SeparationClassification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/separationclassification.md) | 16 | `declaration-track:8dbf55b58a9635f944383ec01263bd6bf91b8cc106872f34237c37b47fbf615c` |
+| 2 | `structure` | [FixedFamilySeparationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/fixedfamilyseparationcertificate.md) | 28 | `declaration-track:f1bf1e0c472cd39dcc223d04edf3618c735237c3eda930dab2408e880070c44f` |
+| 3 | `structure` | [UniformFixedFamilySeparationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/uniformfixedfamilyseparationcertificate.md) | 44 | `declaration-track:c13363e84169ac5542822560cc8788cfaf7eff96cec985c7c9884c5cf860fcb7` |
+| 4 | `structure` | [ProfileUniformSeparationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/profileuniformseparationcertificate.md) | 61 | `declaration-track:be9d9d671a030bdf53dd579324a36717cbb1f63c58d4a62b036c6d08760e65af` |
+| 5 | `theorem` | [dist_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointSeparation.lean/declarations/dist-positive.md) | 76 | `result-track:3454448f7e4fe80eb926fdf81881597f1bb70ee482ff7c2bdaff1f1bb1b6d9f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

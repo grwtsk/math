@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [neg_norm_le_re](../../../../FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/declarations/neg-norm-le-re.md) | 37 | `result-track:3a52391217e40f77e3c2f160bd2569f2d8c4478ec74f5a939247abf2392d618d` |
-| 2 | `lemma` | [ne_neg_nat_of_re_pos](../../../../FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/declarations/ne-neg-nat-of-re-pos.md) | 41 | `result-track:dd59d1f6e2be6e5def2da38f3a3ba7ca05a25dbb0bae1169a9ee4b6f11e94b40` |
+| 1 | `theorem` | [neg_norm_le_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/declarations/neg-norm-le-re.md) | 37 | `result-track:3a52391217e40f77e3c2f160bd2569f2d8c4478ec74f5a939247abf2392d618d` |
+| 2 | `lemma` | [ne_neg_nat_of_re_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RealPartBoundsAndExcludedNaturals.lean/declarations/ne-neg-nat-of-re-pos.md) | 41 | `result-track:dd59d1f6e2be6e5def2da38f3a3ba7ca05a25dbb0bae1169a9ee4b6f11e94b40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

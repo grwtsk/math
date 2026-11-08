@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ResultsAlternative13.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ResultsAlternative13.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative13.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative13.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inner_self_eq_zero_iff_mem_kernelNullSubmodule](../../../../FunctionalAnalysis/ResultsAlternative13.lean/declarations/inner-self-eq-zero-iff-mem-kernelnullsubmodule.md) | 18 | `result-track:3dbce3399b268f0fb79add2d066d6a512b1f6fa90d59e93476c3521a161defee` |
+| 1 | `theorem` | [inner_self_eq_zero_iff_mem_kernelNullSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative13.lean/declarations/inner-self-eq-zero-iff-mem-kernelnullsubmodule.md) | 18 | `result-track:3dbce3399b268f0fb79add2d066d6a512b1f6fa90d59e93476c3521a161defee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

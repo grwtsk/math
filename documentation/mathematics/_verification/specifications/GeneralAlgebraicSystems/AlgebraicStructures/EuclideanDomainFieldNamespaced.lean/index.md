@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/instance.md) | 28 | `declaration-track:d1f5892b8b8dd82fdd13ab109d45740416c6682eac4d8ebd8f6d3d6d8852a3a6` |
-| 2 | `theorem` | [mod_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/mod-eq.md) | 41 | `result-track:73dd5183b04903d3b134f02c4cb25a4ababd74daa159b2b709f0db3265ea4c61` |
-| 3 | `theorem` | [gcd_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/gcd-eq.md) | 44 | `result-track:ffa196510f0ae87ea4d4e93716f70bca67592f330c7ee032f7733283ad43eea3` |
-| 4 | `theorem` | [gcd_zero_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/gcd-zero-eq.md) | 49 | `result-track:0f59298001abf2b91ab47674adb26d1882d6eeaf8a947344e94fc130a9024140` |
-| 5 | `theorem` | [gcd_eq_of_ne](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/gcd-eq-of-ne.md) | 53 | `result-track:557a751d9a3b70cd0b87f4063906bf56b90e65bf6e0e144c655a5cf89c98ea3f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/instance.md) | 28 | `declaration-track:d1f5892b8b8dd82fdd13ab109d45740416c6682eac4d8ebd8f6d3d6d8852a3a6` |
+| 2 | `theorem` | [mod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/mod-eq.md) | 41 | `result-track:73dd5183b04903d3b134f02c4cb25a4ababd74daa159b2b709f0db3265ea4c61` |
+| 3 | `theorem` | [gcd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/gcd-eq.md) | 44 | `result-track:ffa196510f0ae87ea4d4e93716f70bca67592f330c7ee032f7733283ad43eea3` |
+| 4 | `theorem` | [gcd_zero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/gcd-zero-eq.md) | 49 | `result-track:0f59298001abf2b91ab47674adb26d1882d6eeaf8a947344e94fc130a9024140` |
+| 5 | `theorem` | [gcd_eq_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespaced.lean/declarations/gcd-eq-of-ne.md) | 53 | `result-track:557a751d9a3b70cd0b87f4063906bf56b90e65bf6e0e144c655a5cf89c98ea3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

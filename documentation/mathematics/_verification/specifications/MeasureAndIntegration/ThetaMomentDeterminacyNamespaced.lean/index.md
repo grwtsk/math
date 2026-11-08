@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrable_cosh_half_of_even_factorial_bound](../../../../MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/integrable-cosh-half-of-even-factorial-bound.md) | 35 | `result-track:2f60fb8bbbaf475514d9f03cc8027bf9e7fc18424b5f2f33d56f2504f937b4aa` |
-| 2 | `theorem` | [integrable_exp_abs_half_of_even_factorial_bound](../../../../MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/integrable-exp-abs-half-of-even-factorial-bound.md) | 90 | `result-track:12aa8f4401ad2e41b3d0b16d8431edb754a58804b02b481fcb2f6630b563ee63` |
-| 3 | `theorem` | [half_interval_subset_interior_integrableExpSet](../../../../MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/half-interval-subset-interior-integrableexpset.md) | 106 | `result-track:922fcfbdba542d97c55e0cf60f736804a42db43f41f3be2df6b1a9efe4999f78` |
-| 4 | `theorem` | [measure_eq_of_moments_of_exp_abs_half](../../../../MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/measure-eq-of-moments-of-exp-abs-half.md) | 125 | `result-track:e99658c711ae47c72f428e4fa2a82c68eaf3982e87083f654f49545cefa12006` |
-| 5 | `theorem` | [thetaMomentMeasure_determinate](../../../../MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/thetamomentmeasure-determinate.md) | 170 | `result-track:36c4c6de2d421433c24f8e546c094159ccf754ba4eca4ddc3cab69e7b0b7de20` |
+| 1 | `theorem` | [integrable_cosh_half_of_even_factorial_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/integrable-cosh-half-of-even-factorial-bound.md) | 35 | `result-track:2f60fb8bbbaf475514d9f03cc8027bf9e7fc18424b5f2f33d56f2504f937b4aa` |
+| 2 | `theorem` | [integrable_exp_abs_half_of_even_factorial_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/integrable-exp-abs-half-of-even-factorial-bound.md) | 90 | `result-track:12aa8f4401ad2e41b3d0b16d8431edb754a58804b02b481fcb2f6630b563ee63` |
+| 3 | `theorem` | [half_interval_subset_interior_integrableExpSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/half-interval-subset-interior-integrableexpset.md) | 106 | `result-track:922fcfbdba542d97c55e0cf60f736804a42db43f41f3be2df6b1a9efe4999f78` |
+| 4 | `theorem` | [measure_eq_of_moments_of_exp_abs_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/measure-eq-of-moments-of-exp-abs-half.md) | 125 | `result-track:e99658c711ae47c72f428e4fa2a82c68eaf3982e87083f654f49545cefa12006` |
+| 5 | `theorem` | [thetaMomentMeasure_determinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaMomentDeterminacyNamespaced.lean/declarations/thetamomentmeasure-determinate.md) | 170 | `result-track:36c4c6de2d421433c24f8e546c094159ccf754ba4eca4ddc3cab69e7b0b7de20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

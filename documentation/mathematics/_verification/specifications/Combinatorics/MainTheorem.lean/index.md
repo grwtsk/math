@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MainTheorem.lean/index.md) · [Full source](../../../../Combinatorics/MainTheorem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheorem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheorem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [WeightedDecouplingInequality](../../../../Combinatorics/MainTheorem.lean/declarations/weighteddecouplinginequality.md) | 8 | `declaration-track:88a37e8ca74d2dd5781af67ab5159e37780e423f7eb2f7a58fd96781c239121d` |
-| 2 | `def` | [mainTheoremStatementSurface](../../../../Combinatorics/MainTheorem.lean/declarations/maintheoremstatementsurface.md) | 15 | `declaration-track:8d10a2960a7d0d7a793b83293cf6215bde7843d33646a8c7409a7c3c8709421b` |
-| 3 | `def` | [l2_decoupling_vanishing_curvature_finite_exceptional_set](../../../../Combinatorics/MainTheorem.lean/declarations/l2-decoupling-vanishing-curvature-finite-exceptional-set.md) | 32 | `declaration-track:8bda4a0df411cdd0157f093e51bec57378828b0fdc19a575cd5a00cc4cea1c3b` |
-| 4 | `theorem` | [main_theorem_surface_is_open_residue](../../../../Combinatorics/MainTheorem.lean/declarations/main-theorem-surface-is-open-residue.md) | 44 | `result-track:544486077bd38dfe105b82442ed64ae3df7a3412c10989823d62534ef3ae6c40` |
-| 5 | `theorem` | [main_theorem_surface_is_not_checked_proof](../../../../Combinatorics/MainTheorem.lean/declarations/main-theorem-surface-is-not-checked-proof.md) | 48 | `result-track:09f0f7fc2b8ed00b84f924c4034a2862801540e21760fc0e24c43d5fb061ffeb` |
+| 1 | `def` | [WeightedDecouplingInequality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheorem.lean/declarations/weighteddecouplinginequality.md) | 8 | `declaration-track:88a37e8ca74d2dd5781af67ab5159e37780e423f7eb2f7a58fd96781c239121d` |
+| 2 | `def` | [mainTheoremStatementSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheorem.lean/declarations/maintheoremstatementsurface.md) | 15 | `declaration-track:8d10a2960a7d0d7a793b83293cf6215bde7843d33646a8c7409a7c3c8709421b` |
+| 3 | `def` | [l2_decoupling_vanishing_curvature_finite_exceptional_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheorem.lean/declarations/l2-decoupling-vanishing-curvature-finite-exceptional-set.md) | 32 | `declaration-track:8bda4a0df411cdd0157f093e51bec57378828b0fdc19a575cd5a00cc4cea1c3b` |
+| 4 | `theorem` | [main_theorem_surface_is_open_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheorem.lean/declarations/main-theorem-surface-is-open-residue.md) | 44 | `result-track:544486077bd38dfe105b82442ed64ae3df7a3412c10989823d62534ef3ae6c40` |
+| 5 | `theorem` | [main_theorem_surface_is_not_checked_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheorem.lean/declarations/main-theorem-surface-is-not-checked-proof.md) | 48 | `result-track:09f0f7fc2b8ed00b84f924c4034a2862801540e21760fc0e24c43d5fb061ffeb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresentationProjectionArtifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/declarations/presentationprojectionartifact.md) | 12 | `declaration-track:332ae6976911293771486c86cc2bba29c5a9123a927ce1b96d807549bd435447` |
-| 2 | `def` | [PresentationProjectionHasTheoremAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/declarations/presentationprojectionhastheoremauthority.md) | 17 | `declaration-track:cb7322c85f48952ece3caa2c6b15a053a89361702d57dd15806e041893dbb6f6` |
-| 3 | `theorem` | [presentationProjection_has_no_theorem_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/declarations/presentationprojection-has-no-theorem-authority.md) | 22 | `result-track:dc7c78b2192c8956ba2be6d97985cfd61edcc77b4c071183a538f0090af64912` |
+| 1 | `structure` | [PresentationProjectionArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/declarations/presentationprojectionartifact.md) | 12 | `declaration-track:332ae6976911293771486c86cc2bba29c5a9123a927ce1b96d807549bd435447` |
+| 2 | `def` | [PresentationProjectionHasTheoremAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/declarations/presentationprojectionhastheoremauthority.md) | 17 | `declaration-track:cb7322c85f48952ece3caa2c6b15a053a89361702d57dd15806e041893dbb6f6` |
+| 3 | `theorem` | [presentationProjection_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuditPublicPresentationProjectionArtifact.lean/declarations/presentationprojection-has-no-theorem-authority.md) | 22 | `result-track:dc7c78b2192c8956ba2be6d97985cfd61edcc77b4c071183a538f0090af64912` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

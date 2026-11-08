@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,17 +61,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Datum](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/datum.md) | 41 | `declaration-track:adebbbf97dde1ef7628dbd9d62dc2545f1bc71a25c0be0a61e3b592452437897` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/instance.md) | 52 | `declaration-track:d9249b526781f6ce350ed002ff6d474918b52e9205c5b9d2c0a352d619b2dbaa` |
-| 3 | `def` | [comparison](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/comparison.md) | 56 | `declaration-track:490fdcaaabec83295beb68e19c2419a70bca017102a2b26c6f30e6e3621c2749` |
-| 4 | `theorem` | [comparison_apply](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/comparison-apply.md) | 65 | `result-track:b8e8b0dc5022989264a0ef9eb4bebe794d2dd9fc3b25f3b7b6ab7f0ae88d8644` |
-| 5 | `def` | [IsomorphismClaim](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/isomorphismclaim.md) | 73 | `declaration-track:34c1cd87ae8e78c7f4ac2584634091b2bf3dd8c3d4d0d2a57e6345e08760dfb5` |
-| 6 | `def` | [isomorphismClaim](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/isomorphismclaim-source-edition-2.md) | 79 | `declaration-track:567bb6467c7809d8431a0f95086ce59fc7873e7ab6d82c4be98e19b5cb6b94ef` |
-| 7 | `def` | [certified](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/certified.md) | 89 | `declaration-track:cc836777604a22b6351996e90fe026af1402880ebc111e672f1ec4583e2cad02` |
-| 8 | `structure` | [FarrellJonesHypothesis](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/farrelljoneshypothesis.md) | 112 | `declaration-track:784b50dee70b8f9f9f4013c6f5424dcb419e59fa3edbeb5b5049c322750459f3` |
-| 9 | `theorem` | [bijective](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/bijective.md) | 119 | `result-track:ce3ecceb9b003157ac5fcaabf1ff9e123d87a0c906a63ddea7adcb985cd436fe` |
-| 10 | `theorem` | [certificate](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/certificate.md) | 127 | `result-track:ae9fb8ff154e8a448b8d21edf7ebf2a558b4a1f680ecdf86c43177b3d9e9cb8e` |
-| 11 | `def` | [conditionalIsomorphismCertificate](../../../../GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/conditionalisomorphismcertificate.md) | 142 | `declaration-track:24e78ac401d7e351aaa22060031caad630a097bb93a206534d14b851f7fb88ed` |
+| 1 | `structure` | [Datum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/datum.md) | 41 | `declaration-track:adebbbf97dde1ef7628dbd9d62dc2545f1bc71a25c0be0a61e3b592452437897` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/instance.md) | 52 | `declaration-track:d9249b526781f6ce350ed002ff6d474918b52e9205c5b9d2c0a352d619b2dbaa` |
+| 3 | `def` | [comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/comparison.md) | 56 | `declaration-track:490fdcaaabec83295beb68e19c2419a70bca017102a2b26c6f30e6e3621c2749` |
+| 4 | `theorem` | [comparison_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/comparison-apply.md) | 65 | `result-track:b8e8b0dc5022989264a0ef9eb4bebe794d2dd9fc3b25f3b7b6ab7f0ae88d8644` |
+| 5 | `def` | [IsomorphismClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/isomorphismclaim.md) | 73 | `declaration-track:34c1cd87ae8e78c7f4ac2584634091b2bf3dd8c3d4d0d2a57e6345e08760dfb5` |
+| 6 | `def` | [isomorphismClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/isomorphismclaim-source-edition-2.md) | 79 | `declaration-track:567bb6467c7809d8431a0f95086ce59fc7873e7ab6d82c4be98e19b5cb6b94ef` |
+| 7 | `def` | [certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/certified.md) | 89 | `declaration-track:cc836777604a22b6351996e90fe026af1402880ebc111e672f1ec4583e2cad02` |
+| 8 | `structure` | [FarrellJonesHypothesis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/farrelljoneshypothesis.md) | 112 | `declaration-track:784b50dee70b8f9f9f4013c6f5424dcb419e59fa3edbeb5b5049c322750459f3` |
+| 9 | `theorem` | [bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/bijective.md) | 119 | `result-track:ce3ecceb9b003157ac5fcaabf1ff9e123d87a0c906a63ddea7adcb985cd436fe` |
+| 10 | `theorem` | [certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/certificate.md) | 127 | `result-track:ae9fb8ff154e8a448b8d21edf7ebf2a558b4a1f680ecdf86c43177b3d9e9cb8e` |
+| 11 | `def` | [conditionalIsomorphismCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InterfaceNamespacedDatum.lean/declarations/conditionalisomorphismcertificate.md) | 142 | `declaration-track:24e78ac401d7e351aaa22060031caad630a097bb93a206534d14b851f7fb88ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

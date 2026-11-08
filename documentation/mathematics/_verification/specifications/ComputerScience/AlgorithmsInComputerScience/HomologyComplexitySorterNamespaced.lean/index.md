@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PaddedHomologyBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/paddedhomologyboundary.md) | 15 | `declaration-track:97175423f42b020ec270384b979db97be14ad272fa13067c7f5c025f9d32bf08` |
-| 2 | `structure` | [HomologyComplexityIndex](../../../../../ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/homologycomplexityindex.md) | 24 | `declaration-track:8518040885a56635de08689ddef26e6ba4f5cdaab22be3d8af65710549334207` |
-| 3 | `structure` | [HomologyComplexityPreorder](../../../../../ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/homologycomplexitypreorder.md) | 35 | `declaration-track:e7fe18d74ee3f871c6a7f6720addc4273f56764f78bf30e6affc93f3a7c22b7d` |
-| 4 | `theorem` | [homologyComplexity_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/homologycomplexity-boundary-visible.md) | 46 | `result-track:85941f43da90e33be6cd13677ec9d2b34d7490519acb20c5e2cd6ec4bcd3dd95` |
+| 1 | `structure` | [PaddedHomologyBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/paddedhomologyboundary.md) | 15 | `declaration-track:97175423f42b020ec270384b979db97be14ad272fa13067c7f5c025f9d32bf08` |
+| 2 | `structure` | [HomologyComplexityIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/homologycomplexityindex.md) | 24 | `declaration-track:8518040885a56635de08689ddef26e6ba4f5cdaab22be3d8af65710549334207` |
+| 3 | `structure` | [HomologyComplexityPreorder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/homologycomplexitypreorder.md) | 35 | `declaration-track:e7fe18d74ee3f871c6a7f6720addc4273f56764f78bf30e6affc93f3a7c22b7d` |
+| 4 | `theorem` | [homologyComplexity_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HomologyComplexitySorterNamespaced.lean/declarations/homologycomplexity-boundary-visible.md) | 46 | `result-track:85941f43da90e33be6cd13677ec9d2b34d7490519acb20c5e2cd6ec4bcd3dd95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quantize_after_lifted_reconstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/declarations/quantize-after-lifted-reconstruction.md) | 30 | `result-track:05678c231fd89c9e40680db1bc36418af199801723fb80970c6679404bd0eb72` |
-| 2 | `theorem` | [late_quantization_can_be_many_to_one](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/declarations/late-quantization-can-be-many-to-one.md) | 41 | `result-track:412b3b71439089742a845e02c0b57de0122e7442881d69f4eea78c295afc5a9f` |
+| 1 | `theorem` | [quantize_after_lifted_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/declarations/quantize-after-lifted-reconstruction.md) | 30 | `result-track:05678c231fd89c9e40680db1bc36418af199801723fb80970c6679404bd0eb72` |
+| 2 | `theorem` | [late_quantization_can_be_many_to_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuantizationLateNamespaced.lean/declarations/late-quantization-can-be-many-to-one.md) | 41 | `result-track:412b3b71439089742a845e02c0b57de0122e7442881d69f4eea78c295afc5a9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

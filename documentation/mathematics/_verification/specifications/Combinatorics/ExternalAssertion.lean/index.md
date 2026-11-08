@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExternalAssertion.lean/index.md) · [Full source](../../../../Combinatorics/ExternalAssertion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExternalAssertion](../../../../Combinatorics/ExternalAssertion.lean/declarations/externalassertion.md) | 10 | `declaration-track:caa3a0e901daebc2c54789fe58d734c508ac0ae01460f94f1075e63c9ffd17e4` |
-| 2 | `abbrev` | [PackedExternalAssertion](../../../../Combinatorics/ExternalAssertion.lean/declarations/packedexternalassertion.md) | 25 | `declaration-track:5c71d69b669e024ee0d1447a6ddf3611bb8ff680dfbe39dcaa5c34981b1792a2` |
-| 3 | `structure` | [MeaningPayload](../../../../Combinatorics/ExternalAssertion.lean/declarations/meaningpayload.md) | 28 | `declaration-track:8b41da12804296e758aa19b171de0add0354e461e9795bdf8193f5d8f557fc40` |
-| 4 | `inductive` | [ReadingClass](../../../../Combinatorics/ExternalAssertion.lean/declarations/readingclass.md) | 34 | `declaration-track:47e83164c4126495de2dc182363834d690e324ca884959740af99a4a761f7524` |
-| 5 | `structure` | [ExternalInterpretation](../../../../Combinatorics/ExternalAssertion.lean/declarations/externalinterpretation.md) | 44 | `declaration-track:83e9e967b0146701f9afac1113986714fc0bf272d42577ef756ec9b7b1cd2142` |
-| 6 | `structure` | [CandidateInterpretation](../../../../Combinatorics/ExternalAssertion.lean/declarations/candidateinterpretation.md) | 58 | `declaration-track:e302f8cd5187eb5392f10e63377efc4da4d5accf063b9db014317fcacdb40350` |
+| 1 | `structure` | [ExternalAssertion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/declarations/externalassertion.md) | 10 | `declaration-track:caa3a0e901daebc2c54789fe58d734c508ac0ae01460f94f1075e63c9ffd17e4` |
+| 2 | `abbrev` | [PackedExternalAssertion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/declarations/packedexternalassertion.md) | 25 | `declaration-track:5c71d69b669e024ee0d1447a6ddf3611bb8ff680dfbe39dcaa5c34981b1792a2` |
+| 3 | `structure` | [MeaningPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/declarations/meaningpayload.md) | 28 | `declaration-track:8b41da12804296e758aa19b171de0add0354e461e9795bdf8193f5d8f557fc40` |
+| 4 | `inductive` | [ReadingClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/declarations/readingclass.md) | 34 | `declaration-track:47e83164c4126495de2dc182363834d690e324ca884959740af99a4a761f7524` |
+| 5 | `structure` | [ExternalInterpretation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/declarations/externalinterpretation.md) | 44 | `declaration-track:83e9e967b0146701f9afac1113986714fc0bf272d42577ef756ec9b7b1cd2142` |
+| 6 | `structure` | [CandidateInterpretation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExternalAssertion.lean/declarations/candidateinterpretation.md) | 58 | `declaration-track:e302f8cd5187eb5392f10e63377efc4da4d5accf063b9db014317fcacdb40350` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

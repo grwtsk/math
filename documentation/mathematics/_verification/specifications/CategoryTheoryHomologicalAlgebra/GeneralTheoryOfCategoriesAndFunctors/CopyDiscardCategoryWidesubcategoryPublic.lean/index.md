@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsStableUnderComonoid](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/isstableundercomonoid.md) | 31 | `declaration-track:aadd9a4d458a45c3b566a40391cf079c3a769d9fba2437f3010b52328991d25f` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/instance-source-edition-3.md) | 38 | `declaration-track:bef3e882185a7da678031737c0bc23ab1f1ebb6bd886a327f06414dd2e955b94` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:7c7a1b5b967d8bdd85479a9e6c317a8a88683022bdc5959024cb5b1d1d7e46e0` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/instance.md) | 51 | `declaration-track:419578ff1f7d50d1eb3e4063c9570bcf0899ee79b68eaa11c08c21bae68dd8fe` |
+| 1 | `class` | [IsStableUnderComonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/isstableundercomonoid.md) | 31 | `declaration-track:aadd9a4d458a45c3b566a40391cf079c3a769d9fba2437f3010b52328991d25f` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/instance-source-edition-3.md) | 38 | `declaration-track:bef3e882185a7da678031737c0bc23ab1f1ebb6bd886a327f06414dd2e955b94` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:7c7a1b5b967d8bdd85479a9e6c317a8a88683022bdc5959024cb5b1d1d7e46e0` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryPublic.lean/declarations/instance.md) | 51 | `declaration-track:419578ff1f7d50d1eb3e4063c9570bcf0899ee79b68eaa11c08c21bae68dd8fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

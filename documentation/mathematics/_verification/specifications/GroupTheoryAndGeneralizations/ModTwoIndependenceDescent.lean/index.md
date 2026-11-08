@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientMass](../../../../GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/coefficientmass.md) | 35 | `declaration-track:4fc0d6efda445ea197b963c2c7d47fccaa613a74aefd3e74175d81f3a5231277` |
-| 2 | `theorem` | [coefficientMass_double](../../../../GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/coefficientmass-double.md) | 39 | `result-track:13ec9994ac6805759bb084915f08d68a11102e5f861303c64a8691724633faeb` |
-| 3 | `theorem` | [linearIndependent_of_even_relations](../../../../GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/linearindependent-of-even-relations.md) | 57 | `result-track:398b72e512a12e38aa1686230a91fdbd546f1bc6b68ea86698b9a6e5a60351b8` |
-| 4 | `theorem` | [doubling_counterexample](../../../../GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/doubling-counterexample.md) | 110 | `result-track:287b2a0ce4bdf76f214051a0ea877e4c5fbdcb1b5110957eae5adb91dfd764c6` |
+| 1 | `def` | [coefficientMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/coefficientmass.md) | 35 | `declaration-track:4fc0d6efda445ea197b963c2c7d47fccaa613a74aefd3e74175d81f3a5231277` |
+| 2 | `theorem` | [coefficientMass_double](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/coefficientmass-double.md) | 39 | `result-track:13ec9994ac6805759bb084915f08d68a11102e5f861303c64a8691724633faeb` |
+| 3 | `theorem` | [linearIndependent_of_even_relations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/linearindependent-of-even-relations.md) | 57 | `result-track:398b72e512a12e38aa1686230a91fdbd546f1bc6b68ea86698b9a6e5a60351b8` |
+| 4 | `theorem` | [doubling_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/declarations/doubling-counterexample.md) | 110 | `result-track:287b2a0ce4bdf76f214051a0ea877e4c5fbdcb1b5110957eae5adb91dfd764c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

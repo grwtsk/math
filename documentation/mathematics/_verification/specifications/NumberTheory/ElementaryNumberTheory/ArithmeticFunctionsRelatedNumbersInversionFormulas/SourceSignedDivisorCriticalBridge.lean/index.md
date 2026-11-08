@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [jointSignedRemainder_eq_critical_original_corrections](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/declarations/jointsignedremainder-eq-critical-original-corrections.md) | 31 | `result-track:afc1964ca4de75e5f30e6fae0e0472f799a689f6e52c47f5cc734b69b1025d5f` |
-| 2 | `theorem` | [original_signed_sampling_rows_eq_critical](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/declarations/original-signed-sampling-rows-eq-critical.md) | 41 | `result-track:49d8453a288933d6aeee60cd1e1b3cb9c1b85af6dc4c5dfa7a18f7edf6781aba` |
+| 1 | `theorem` | [jointSignedRemainder_eq_critical_original_corrections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/declarations/jointsignedremainder-eq-critical-original-corrections.md) | 31 | `result-track:afc1964ca4de75e5f30e6fae0e0472f799a689f6e52c47f5cc734b69b1025d5f` |
+| 2 | `theorem` | [original_signed_sampling_rows_eq_critical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSignedDivisorCriticalBridge.lean/declarations/original-signed-sampling-rows-eq-critical.md) | 41 | `result-track:49d8453a288933d6aeee60cd1e1b3cb9c1b85af6dc4c5dfa7a18f7edf6781aba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

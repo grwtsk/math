@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AAd4a70a68af16.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AAd4a70a68af16.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AAd4a70a68af16.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AAd4a70a68af16.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FacetRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/AAd4a70a68af16.lean/declarations/facetregistry.md) | 11 | `declaration-track:9103978ec080d03c027a149de9dee5f17d6952e679eee4f346a8cc7b00064d48` |
+| 1 | `structure` | [FacetRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AAd4a70a68af16.lean/declarations/facetregistry.md) | 11 | `declaration-track:9103978ec080d03c027a149de9dee5f17d6952e679eee4f346a8cc7b00064d48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

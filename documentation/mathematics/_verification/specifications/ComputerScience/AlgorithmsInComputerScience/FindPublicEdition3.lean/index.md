@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,8 +63,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [find?_eq_some_iff_getElem](../../../../../ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/declarations/find-eq-some-iff-getelem.md) | 30 | `result-track:1ce4b25b6cd0c2fa686c72d96a33a42528357c0a4a7ab81842feb5858322696b` |
-| 2 | `theorem` | [findIdx?_eq_some_le_of_findIdx?_eq_some](../../../../../ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/declarations/findidx-eq-some-le-of-findidx-eq-some.md) | 54 | `result-track:0a43cd5df49ee7501824bba1dbea3905ee7b0c48fd99284bac08fce2560784f7` |
+| 1 | `theorem` | [find?_eq_some_iff_getElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/declarations/find-eq-some-iff-getelem.md) | 30 | `result-track:1ce4b25b6cd0c2fa686c72d96a33a42528357c0a4a7ab81842feb5858322696b` |
+| 2 | `theorem` | [findIdx?_eq_some_le_of_findIdx?_eq_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FindPublicEdition3.lean/declarations/findidx-eq-some-le-of-findidx-eq-some.md) | 54 | `result-track:0a43cd5df49ee7501824bba1dbea3905ee7b0c48fd99284bac08fce2560784f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

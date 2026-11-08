@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [AddHom.le_map_tsub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/addhom-le-map-tsub.md) | 29 | `result-track:4ddfeaef52a433829db7537c7f405cc5040c3c43d678415f9fe2693c22cd4568` |
-| 2 | `theorem` | [le_mul_tsub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/le-mul-tsub.md) | 34 | `result-track:e148d0e0049953b6001cac7af57cbf2502d558ec6f0b2cde04f4f5d46b0c4961` |
-| 3 | `theorem` | [le_tsub_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/le-tsub-mul.md) | 38 | `result-track:cf9a3f2c8d48f94e854a3fb57670a1b9baf52223fe9b81297e9bc0379ebad3cc` |
-| 4 | `theorem` | [OrderIso.map_tsub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/orderiso-map-tsub.md) | 46 | `result-track:c02e54e1d8111e2cee40212282664de416d2ea7ed1fcf07a00fb81f5ce2044ed` |
-| 5 | `theorem` | [AddMonoidHom.le_map_tsub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/addmonoidhom-le-map-tsub.md) | 62 | `result-track:1f308e22e7368926be26053e34bf6e40cd175b0fcf5c9f6d5311345a0ed2a1c2` |
+| 1 | `theorem` | [AddHom.le_map_tsub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/addhom-le-map-tsub.md) | 29 | `result-track:4ddfeaef52a433829db7537c7f405cc5040c3c43d678415f9fe2693c22cd4568` |
+| 2 | `theorem` | [le_mul_tsub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/le-mul-tsub.md) | 34 | `result-track:e148d0e0049953b6001cac7af57cbf2502d558ec6f0b2cde04f4f5d46b0c4961` |
+| 3 | `theorem` | [le_tsub_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/le-tsub-mul.md) | 38 | `result-track:cf9a3f2c8d48f94e854a3fb57670a1b9baf52223fe9b81297e9bc0379ebad3cc` |
+| 4 | `theorem` | [OrderIso.map_tsub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/orderiso-map-tsub.md) | 46 | `result-track:c02e54e1d8111e2cee40212282664de416d2ea7ed1fcf07a00fb81f5ce2044ed` |
+| 5 | `theorem` | [AddMonoidHom.le_map_tsub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledHomNamespaced.lean/declarations/addmonoidhom-le-map-tsub.md) | 62 | `result-track:1f308e22e7368926be26053e34bf6e40cd175b0fcf5c9f6d5311345a0ed2a1c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

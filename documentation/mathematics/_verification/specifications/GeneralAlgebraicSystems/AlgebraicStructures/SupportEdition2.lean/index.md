@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [support_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/declarations/support-id.md) | 7 | `result-track:2165661a97724833a09ef7403fe041acf3efee14a48f32f8244004bf2d4b6c2b` |
-| 2 | `theorem` | [support_id'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/declarations/support-id-source-edition-2.md) | 10 | `result-track:e7d84a5721c6f7d7e0bffd88c85c994cf0df200f4b85df715d963c366def4484` |
+| 1 | `theorem` | [support_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/declarations/support-id.md) | 7 | `result-track:2165661a97724833a09ef7403fe041acf3efee14a48f32f8244004bf2d4b6c2b` |
+| 2 | `theorem` | [support_id'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportEdition2.lean/declarations/support-id-source-edition-2.md) | 10 | `result-track:e7d84a5721c6f7d7e0bffd88c85c994cf0df200f4b85df715d963c366def4484` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

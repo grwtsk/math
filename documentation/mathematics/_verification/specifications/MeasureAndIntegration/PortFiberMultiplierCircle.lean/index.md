@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberMultiplierAtomic`](../../../../OperatorTheory/PortFiberMultiplierAtomic.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle`](../../../../ProbabilityTheoryAndStochasticProcesses/HolomorphicMultiplierCircle.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberMultiplierAtomic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMultiplierAtomic.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HolomorphicMultiplierCircle.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/schemaversion.md) | 34 | `declaration-track:3a765d647e06c343f31102642400c898f6958c1627034c60bc4b32d71ea37a80` |
-| 2 | `inductive` | [AddedIndex](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/addedindex.md) | 36 | `declaration-track:362f482ed61550931d1997c4ba01909e0f2927918669b93ba42c7d9fdbe85d3b` |
-| 3 | `def` | [AddedClaim](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/addedclaim.md) | 47 | `declaration-track:211b442b92ef898d5ab6acd8d4afc08517bdeffacc0f72ad4a72b2570b83ed27` |
-| 4 | `theorem` | [addedClaim_proof](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/addedclaim-proof.md) | 91 | `result-track:d4b1456b4db334fe36c660b3ec9522a8823f9cc639da640f1b770a0a6c8b5954` |
-| 5 | `def` | [portfolio](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/portfolio.md) | 111 | `declaration-track:9c631633fe4b5db410a78776d81e2c0109aae3fe4e103c7a533a1dd97382d5eb` |
-| 6 | `def` | [architecture](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/architecture.md) | 114 | `declaration-track:c7bc7f2fd4e6a40e7053f4a2de46339bfdc283dc302977917b46b8796f939ae0` |
-| 7 | `abbrev` | [PreviousIndex](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/previousindex.md) | 118 | `declaration-track:4de6631a6ffd87a7fe09021526a58385afbaf48ee7c082bec55b8ed8836ec1ab` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/original-branch-unchanged.md) | 122 | `result-track:45a954d5643c2235917506fdc05002159bacb567fddbbfc24e56cce180b4950f` |
-| 9 | `theorem` | [new_branch_proved](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/new-branch-proved.md) | 128 | `result-track:f79b4758ba809206edaae457b0d63593039298fe5f63b998e8df8bf159f89562` |
-| 10 | `theorem` | [target_unchanged](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/target-unchanged.md) | 133 | `result-track:40633c0e1939f2a0777e80f535e9f2b3624e09126099d7f700127ed4c73f3096` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/retarget-preserves-new.md) | 138 | `result-track:9639125556dc528338cf80b24bbb62d38f6cb9cfca81dbb2e0a4d121c5141443` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/schemaversion.md) | 34 | `declaration-track:3a765d647e06c343f31102642400c898f6958c1627034c60bc4b32d71ea37a80` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/addedindex.md) | 36 | `declaration-track:362f482ed61550931d1997c4ba01909e0f2927918669b93ba42c7d9fdbe85d3b` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/addedclaim.md) | 47 | `declaration-track:211b442b92ef898d5ab6acd8d4afc08517bdeffacc0f72ad4a72b2570b83ed27` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/addedclaim-proof.md) | 91 | `result-track:d4b1456b4db334fe36c660b3ec9522a8823f9cc639da640f1b770a0a6c8b5954` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/portfolio.md) | 111 | `declaration-track:9c631633fe4b5db410a78776d81e2c0109aae3fe4e103c7a533a1dd97382d5eb` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/architecture.md) | 114 | `declaration-track:c7bc7f2fd4e6a40e7053f4a2de46339bfdc283dc302977917b46b8796f939ae0` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/previousindex.md) | 118 | `declaration-track:4de6631a6ffd87a7fe09021526a58385afbaf48ee7c082bec55b8ed8836ec1ab` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/original-branch-unchanged.md) | 122 | `result-track:45a954d5643c2235917506fdc05002159bacb567fddbbfc24e56cce180b4950f` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/new-branch-proved.md) | 128 | `result-track:f79b4758ba809206edaae457b0d63593039298fe5f63b998e8df8bf159f89562` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/target-unchanged.md) | 133 | `result-track:40633c0e1939f2a0777e80f535e9f2b3624e09126099d7f700127ed4c73f3096` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/declarations/retarget-preserves-new.md) | 138 | `result-track:9639125556dc528338cf80b24bbb62d38f6cb9cfca81dbb2e0a4d121c5141443` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

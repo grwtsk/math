@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ControlledPlaneResearchRegistry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplaneresearchregistry.md) | 13 | `declaration-track:3b141a684b66ff10fe104cb17b6f5e1ab559b28ae833cd89ad1302df5290ab2d` |
-| 2 | `structure` | [ControlledPlanePrerequisites](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplaneprerequisites.md) | 32 | `declaration-track:8f3660ebfd882349410f7a768eae7b238cfb1174f6e4a253706ba3b931530712` |
-| 3 | `theorem` | [ofTheoremRegistry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/oftheoremregistry.md) | 42 | `result-track:b62213bf9446c91044dbb49cb4fee7880ee313fb99282d823bd341bd9ad0c1eb` |
-| 4 | `structure` | [ControlledPlaneSourceHypotheses](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplanesourcehypotheses.md) | 53 | `declaration-track:52a83ef7090dc2306c0af8cc00c0475c58c25903e21008637549a2cf74b2c0db` |
-| 5 | `structure` | [ControlledPlaneCompleteness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplanecompleteness.md) | 66 | `declaration-track:4dae0c58eceb45b79ca3622fbf86d8a1d3c5502147865e0edb0746560d48731c` |
+| 1 | `structure` | [ControlledPlaneResearchRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplaneresearchregistry.md) | 13 | `declaration-track:3b141a684b66ff10fe104cb17b6f5e1ab559b28ae833cd89ad1302df5290ab2d` |
+| 2 | `structure` | [ControlledPlanePrerequisites](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplaneprerequisites.md) | 32 | `declaration-track:8f3660ebfd882349410f7a768eae7b238cfb1174f6e4a253706ba3b931530712` |
+| 3 | `theorem` | [ofTheoremRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/oftheoremregistry.md) | 42 | `result-track:b62213bf9446c91044dbb49cb4fee7880ee313fb99282d823bd341bd9ad0c1eb` |
+| 4 | `structure` | [ControlledPlaneSourceHypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplanesourcehypotheses.md) | 53 | `declaration-track:52a83ef7090dc2306c0af8cc00c0475c58c25903e21008637549a2cf74b2c0db` |
+| 5 | `structure` | [ControlledPlaneCompleteness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Registry.lean/declarations/controlledplanecompleteness.md) | 66 | `declaration-track:4dae0c58eceb45b79ca3622fbf86d8a1d3c5502147865e0edb0746560d48731c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

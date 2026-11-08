@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsFundamentalDiscr](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr.md) | 49 | `declaration-track:5ea05d4d0021e4f43995acd3a87073b252e3a1a50f5f54fd6c2ea546ac19c50c` |
-| 2 | `theorem` | [isFundamentalDiscr_def](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-def.md) | 55 | `result-track:2ba3fdf3513675d90e1539d2e89e879c341e420dfd999e3580ab07101a106b4f` |
-| 3 | `theorem` | [IsFundamentalDiscr.ne_zero](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-ne-zero.md) | 60 | `result-track:eb515de300e888b6ff63cd8b88c6a67fe1c1878f0b82a376df29907bfc12cdb3` |
-| 4 | `theorem` | [IsFundamentalDiscr.emod_four_eq_zero_or_one](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-emod-four-eq-zero-or-one.md) | 63 | `result-track:c7d124f98d821ddffe8407f48bcebec184f4cbfd1c735eb75a5362eca7861a9c` |
-| 5 | `theorem` | [isFundamentalDiscr_iff_squarefree](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-iff-squarefree.md) | 68 | `result-track:bb61a87dc277f47bb4c627f2d69adc92a1e5a04dcb131ab7c318b9d32465ca84` |
-| 6 | `theorem` | [isFundamentalDiscr_iff_forall_prime](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-iff-forall-prime.md) | 87 | `result-track:836f50d42d82e34610b584ff50f794693e887d26ae5d3f571255fda4b5d1971c` |
-| 7 | `theorem` | [isFundamentalDiscr_four_mul_add_one](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-four-mul-add-one.md) | 99 | `result-track:a1cd4782d80c888a0bdaa951761b5b39b470ec62919d1b02952761ee80aa5474` |
-| 8 | `theorem` | [isFundamentalDiscr_four_mul](../../../../NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-four-mul.md) | 103 | `result-track:4c535dbd83003436e73ccf967464bc4893bb1eed6160f6cd1e5d6b6d7f14774b` |
+| 1 | `def` | [IsFundamentalDiscr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr.md) | 49 | `declaration-track:5ea05d4d0021e4f43995acd3a87073b252e3a1a50f5f54fd6c2ea546ac19c50c` |
+| 2 | `theorem` | [isFundamentalDiscr_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-def.md) | 55 | `result-track:2ba3fdf3513675d90e1539d2e89e879c341e420dfd999e3580ab07101a106b4f` |
+| 3 | `theorem` | [IsFundamentalDiscr.ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-ne-zero.md) | 60 | `result-track:eb515de300e888b6ff63cd8b88c6a67fe1c1878f0b82a376df29907bfc12cdb3` |
+| 4 | `theorem` | [IsFundamentalDiscr.emod_four_eq_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-emod-four-eq-zero-or-one.md) | 63 | `result-track:c7d124f98d821ddffe8407f48bcebec184f4cbfd1c735eb75a5362eca7861a9c` |
+| 5 | `theorem` | [isFundamentalDiscr_iff_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-iff-squarefree.md) | 68 | `result-track:bb61a87dc277f47bb4c627f2d69adc92a1e5a04dcb131ab7c318b9d32465ca84` |
+| 6 | `theorem` | [isFundamentalDiscr_iff_forall_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-iff-forall-prime.md) | 87 | `result-track:836f50d42d82e34610b584ff50f794693e887d26ae5d3f571255fda4b5d1971c` |
+| 7 | `theorem` | [isFundamentalDiscr_four_mul_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-four-mul-add-one.md) | 99 | `result-track:a1cd4782d80c888a0bdaa951761b5b39b470ec62919d1b02952761ee80aa5474` |
+| 8 | `theorem` | [isFundamentalDiscr_four_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FundamentalDiscriminantNamespacedPublic.lean/declarations/isfundamentaldiscr-four-mul.md) | 103 | `result-track:4c535dbd83003436e73ccf967464bc4893bb1eed6160f6cd1e5d6b6d7f14774b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

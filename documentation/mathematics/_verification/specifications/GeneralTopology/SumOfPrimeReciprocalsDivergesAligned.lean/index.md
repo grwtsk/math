@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/index.md) · [Full source](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [P](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/p.md) | 56 | `declaration-track:285076513e95b0d13bb98a66a1d9bf30f1a12a84a577b596bf2045c14651c4d0` |
-| 2 | `def` | [U](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/u.md) | 63 | `declaration-track:66217d820488aeb843b6b779346aba718a2a8e9f5d1160c73dae5256c23c3ce3` |
-| 3 | `def` | [M](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/m.md) | 69 | `declaration-track:c986fc099fbf2b1233fd70f6010be6ecf854167a8c9fbd51c10c1b7a25afe891` |
-| 4 | `theorem` | [sum_lt_half_of_not_tendsto](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/sum-lt-half-of-not-tendsto.md) | 80 | `result-track:3bf81cb23bf47adf00bcaf7049303f0c04e46ce35ce4d26989b36d4af9a307eb` |
-| 5 | `theorem` | [range_sdiff_eq_biUnion](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/range-sdiff-eq-biunion.md) | 111 | `result-track:e6db5f3e9d85207a33cfec3ca54201eddd1b4fbf0c0a49cfb61f8b60529f5071` |
-| 6 | `theorem` | [card_le_mul_sum](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/card-le-mul-sum.md) | 129 | `result-track:7f452ea5c5be1e9a6b39be59ea0edb24ad3255c407f429679ebd8e965b6e1159` |
-| 7 | `theorem` | [card_le_two_pow](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/card-le-two-pow.md) | 144 | `result-track:c78b3f1551b6eb431c0213c948bd6fb75d4e63e7f07cdfdeab5c261f5f30fc49` |
-| 8 | `theorem` | [card_le_two_pow_mul_sqrt](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/card-le-two-pow-mul-sqrt.md) | 179 | `result-track:d07894f6ea85b1d2f9150837440457d0c884e5559471a5a3b09051f54eccf34a` |
-| 9 | `theorem` | [Real.tendsto_sum_one_div_prime_atTop](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/real-tendsto-sum-one-div-prime-attop.md) | 211 | `result-track:64cf0e9d6a5072e731e4bf687b4d14ea3c1258fefc5fd389a431fe021bc2bbdc` |
+| 1 | `def` | [P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/p.md) | 56 | `declaration-track:285076513e95b0d13bb98a66a1d9bf30f1a12a84a577b596bf2045c14651c4d0` |
+| 2 | `def` | [U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/u.md) | 63 | `declaration-track:66217d820488aeb843b6b779346aba718a2a8e9f5d1160c73dae5256c23c3ce3` |
+| 3 | `def` | [M](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/m.md) | 69 | `declaration-track:c986fc099fbf2b1233fd70f6010be6ecf854167a8c9fbd51c10c1b7a25afe891` |
+| 4 | `theorem` | [sum_lt_half_of_not_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/sum-lt-half-of-not-tendsto.md) | 80 | `result-track:3bf81cb23bf47adf00bcaf7049303f0c04e46ce35ce4d26989b36d4af9a307eb` |
+| 5 | `theorem` | [range_sdiff_eq_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/range-sdiff-eq-biunion.md) | 111 | `result-track:e6db5f3e9d85207a33cfec3ca54201eddd1b4fbf0c0a49cfb61f8b60529f5071` |
+| 6 | `theorem` | [card_le_mul_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/card-le-mul-sum.md) | 129 | `result-track:7f452ea5c5be1e9a6b39be59ea0edb24ad3255c407f429679ebd8e965b6e1159` |
+| 7 | `theorem` | [card_le_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/card-le-two-pow.md) | 144 | `result-track:c78b3f1551b6eb431c0213c948bd6fb75d4e63e7f07cdfdeab5c261f5f30fc49` |
+| 8 | `theorem` | [card_le_two_pow_mul_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/card-le-two-pow-mul-sqrt.md) | 179 | `result-track:d07894f6ea85b1d2f9150837440457d0c884e5559471a5a3b09051f54eccf34a` |
+| 9 | `theorem` | [Real.tendsto_sum_one_div_prime_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesAligned.lean/declarations/real-tendsto-sum-one-div-prime-attop.md) | 211 | `result-track:64cf0e9d6a5072e731e4bf687b4d14ea3c1258fefc5fd389a431fe021bc2bbdc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Tokenization](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/tokenization.md) | 12 | `declaration-track:75df13b85ffd5ff1ea9e1ac6d7dfb7a08865ced7e1452352543c6f35811a350d` |
-| 2 | `theorem` | [span_valid](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/span-valid.md) | 24 | `result-track:2926128f104a99e51c953ad713f18ba716305fc0abcb26668c9ae042f90fa03e` |
-| 3 | `theorem` | [no_overlap](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/no-overlap.md) | 31 | `result-track:45c3e793df90d7791340dfebae887ff429552265a588bc29e797387b99e37f24` |
-| 4 | `theorem` | [coverage_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/coverage-sound.md) | 35 | `result-track:b4bb4380e5866b0e36db47566b25fc4c5af83caeecca2f48aac0fdcdc19da6cf` |
+| 1 | `structure` | [Tokenization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/tokenization.md) | 12 | `declaration-track:75df13b85ffd5ff1ea9e1ac6d7dfb7a08865ced7e1452352543c6f35811a350d` |
+| 2 | `theorem` | [span_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/span-valid.md) | 24 | `result-track:2926128f104a99e51c953ad713f18ba716305fc0abcb26668c9ae042f90fa03e` |
+| 3 | `theorem` | [no_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/no-overlap.md) | 31 | `result-track:45c3e793df90d7791340dfebae887ff429552265a588bc29e797387b99e37f24` |
+| 4 | `theorem` | [coverage_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpanValid.lean/declarations/coverage-sound.md) | 35 | `result-track:b4bb4380e5866b0e36db47566b25fc4c5af83caeecca2f48aac0fdcdc19da6cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

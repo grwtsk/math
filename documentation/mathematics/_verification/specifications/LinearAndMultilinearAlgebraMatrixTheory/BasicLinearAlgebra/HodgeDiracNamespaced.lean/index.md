@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GradedTerrainComplex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/gradedterraincomplex.md) | 34 | `declaration-track:0b2c5420d3e6f09ce37e00aa137f1676e71c053015ea8871c797229d1cafbc92` |
-| 2 | `abbrev` | [DAFHilbert](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/dafhilbert.md) | 48 | `declaration-track:60e622d2ec4f82274ec2895505fe5f479cbe074de4f7d79562abc8a852efd6de` |
-| 3 | `def` | [DAFTotalOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator.md) | 54 | `declaration-track:6a7abb580a03643a4f8242f95a2355b88bf4db9a39cca390655b37efe4c25909` |
-| 4 | `theorem` | [dafTotalOperator_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator-selfadjoint.md) | 64 | `result-track:a5dc4217132bc3a4f69d7c2282db959c0b02f4fe5c860133a9503e195ed14278` |
-| 5 | `theorem` | [dafTotalOperator_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator-sq.md) | 79 | `result-track:94c28f76d6e80a93eb2c2ba1a5025a40505a74d2e1ce6656a61af9d055b2e6bc` |
-| 6 | `theorem` | [dafGammaTotalOperator_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/dafgammatotaloperator-sq.md) | 118 | `result-track:a3cb811a595634a894b455887c6f301dc48f3b9763baef49462fc7117a03ee81` |
-| 7 | `def` | [PositiveSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/positivesquare.md) | 133 | `declaration-track:c8f21c6c301161b0fab90b5ef6d9aa6d90972d4ff6807cbecaaeb10371c45c8d` |
-| 8 | `theorem` | [dafTotalOperator_positiveSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator-positivesquare.md) | 146 | `result-track:f89cee3dd2a2e2ad92cf6552e84592c59d2535e062ff6456294851e314f3d580` |
+| 1 | `structure` | [GradedTerrainComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/gradedterraincomplex.md) | 34 | `declaration-track:0b2c5420d3e6f09ce37e00aa137f1676e71c053015ea8871c797229d1cafbc92` |
+| 2 | `abbrev` | [DAFHilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/dafhilbert.md) | 48 | `declaration-track:60e622d2ec4f82274ec2895505fe5f479cbe074de4f7d79562abc8a852efd6de` |
+| 3 | `def` | [DAFTotalOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator.md) | 54 | `declaration-track:6a7abb580a03643a4f8242f95a2355b88bf4db9a39cca390655b37efe4c25909` |
+| 4 | `theorem` | [dafTotalOperator_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator-selfadjoint.md) | 64 | `result-track:a5dc4217132bc3a4f69d7c2282db959c0b02f4fe5c860133a9503e195ed14278` |
+| 5 | `theorem` | [dafTotalOperator_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator-sq.md) | 79 | `result-track:94c28f76d6e80a93eb2c2ba1a5025a40505a74d2e1ce6656a61af9d055b2e6bc` |
+| 6 | `theorem` | [dafGammaTotalOperator_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/dafgammatotaloperator-sq.md) | 118 | `result-track:a3cb811a595634a894b455887c6f301dc48f3b9763baef49462fc7117a03ee81` |
+| 7 | `def` | [PositiveSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/positivesquare.md) | 133 | `declaration-track:c8f21c6c301161b0fab90b5ef6d9aa6d90972d4ff6807cbecaaeb10371c45c8d` |
+| 8 | `theorem` | [dafTotalOperator_positiveSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDiracNamespaced.lean/declarations/daftotaloperator-positivesquare.md) | 146 | `result-track:f89cee3dd2a2e2ad92cf6552e84592c59d2535e062ff6456294851e314f3d580` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

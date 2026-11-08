@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.CompactGaussianWindow`](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.CompactGaussianWindow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compactWindow_smooth](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/compactwindow-smooth.md) | 11 | `result-track:f0057205ca591cdbbbda7e54b055aafb31c84c987d761222f5f6e574f7757ebf` |
-| 2 | `theorem` | [compactWindow_schwartz_one](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/compactwindow-schwartz-one.md) | 15 | `result-track:12cf8554008a5a9f27b958f4b9b8ff1c1212f3b420df90483be9876f9a909497` |
-| 3 | `theorem` | [compactWindow_zero](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/compactwindow-zero.md) | 20 | `result-track:dd543a00521239181eb93c33dbe8bb5622b882fc32e5a5ba935ddc04f99bed94` |
-| 4 | `def` | [unnormalizedWindow](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/unnormalizedwindow.md) | 23 | `declaration-track:04337ee1ef12c1cd180b8c27869f35538e3509914af87a42596ef38ca8b5b918` |
-| 5 | `theorem` | [annulus_three_quarters_ne_zero](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/annulus-three-quarters-ne-zero.md) | 25 | `result-track:8a47b5498d2108eb17647782cf6da0fb109d395c89ce13dac37ec8bae552ede0` |
-| 6 | `theorem` | [profile_three_quarters_ne_zero](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/profile-three-quarters-ne-zero.md) | 35 | `result-track:9e6af103665799a2c8e9eea21bc58406c0b29b863a119d9ed06e829fbe51ef27` |
-| 7 | `theorem` | [unnormalizedWindow_three_quarters_ne_zero](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/unnormalizedwindow-three-quarters-ne-zero.md) | 44 | `result-track:4e41ba441aa0d86062dfa369782a9286fcbae2a750f2719b4d71663a7045b6a3` |
-| 8 | `theorem` | [correctWindow_normalizes](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/correctwindow-normalizes.md) | 47 | `result-track:9830a65052f1be106e1e28a84eea1c1b080daefa159dd617318430aa7d219f61` |
-| 9 | `theorem` | [omittedRootFactor_counterexample](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/omittedrootfactor-counterexample.md) | 53 | `result-track:735607b24e9ae45e3ad1ecae4387f412f6fc562bfc459186108e8d8083ebd934` |
+| 1 | `theorem` | [compactWindow_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/compactwindow-smooth.md) | 11 | `result-track:f0057205ca591cdbbbda7e54b055aafb31c84c987d761222f5f6e574f7757ebf` |
+| 2 | `theorem` | [compactWindow_schwartz_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/compactwindow-schwartz-one.md) | 15 | `result-track:12cf8554008a5a9f27b958f4b9b8ff1c1212f3b420df90483be9876f9a909497` |
+| 3 | `theorem` | [compactWindow_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/compactwindow-zero.md) | 20 | `result-track:dd543a00521239181eb93c33dbe8bb5622b882fc32e5a5ba935ddc04f99bed94` |
+| 4 | `def` | [unnormalizedWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/unnormalizedwindow.md) | 23 | `declaration-track:04337ee1ef12c1cd180b8c27869f35538e3509914af87a42596ef38ca8b5b918` |
+| 5 | `theorem` | [annulus_three_quarters_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/annulus-three-quarters-ne-zero.md) | 25 | `result-track:8a47b5498d2108eb17647782cf6da0fb109d395c89ce13dac37ec8bae552ede0` |
+| 6 | `theorem` | [profile_three_quarters_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/profile-three-quarters-ne-zero.md) | 35 | `result-track:9e6af103665799a2c8e9eea21bc58406c0b29b863a119d9ed06e829fbe51ef27` |
+| 7 | `theorem` | [unnormalizedWindow_three_quarters_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/unnormalizedwindow-three-quarters-ne-zero.md) | 44 | `result-track:4e41ba441aa0d86062dfa369782a9286fcbae2a750f2719b4d71663a7045b6a3` |
+| 8 | `theorem` | [correctWindow_normalizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/correctwindow-normalizes.md) | 47 | `result-track:9830a65052f1be106e1e28a84eea1c1b080daefa159dd617318430aa7d219f61` |
+| 9 | `theorem` | [omittedRootFactor_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/declarations/omittedrootfactor-counterexample.md) | 53 | `result-track:735607b24e9ae45e3ad1ecae4387f412f6fc562bfc459186108e8d8083ebd934` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

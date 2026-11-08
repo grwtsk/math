@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedTailTest_eq_balanced_phase_prefix](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-eq-balanced-phase-prefix.md) | 27 | `result-track:257188927d8fe03ea134d59767d6eef22ec946ab056b67cb86026bf66ca6dd70` |
-| 2 | `theorem` | [exists_pairedTailTest_pos](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/exists-pairedtailtest-pos.md) | 50 | `result-track:b04608a014f85c4e77827fd7458d5b7f24963433a937056f1bd3d81e2fa699a5` |
-| 3 | `theorem` | [pairedTailTest_early_point_neg](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-early-point-neg.md) | 71 | `result-track:5e06958f0559d0f5e2b56ea9ab57337aa89405bd8f340a4046a5e7f4ccfae42c` |
-| 4 | `theorem` | [exists_pairedTailTest_neg](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/exists-pairedtailtest-neg.md) | 77 | `result-track:7936603c668e53165dadc87f34217a2f3cb170a5a2daccb474fb0e5575a5d8e8` |
-| 5 | `theorem` | [pairedTailTest_has_both_signs](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-has-both-signs.md) | 82 | `result-track:287b4924eb39881802b3fe0d1c969a4e8fa7f6aba7c86a2a9c4c3ad976239f47` |
-| 6 | `theorem` | [pairedTailTest_not_nonneg_on](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-not-nonneg-on.md) | 88 | `result-track:f841209996469ee0ef0c6c2878fed209bbd0ac1e88af533fa6a2cbbb85cf57a8` |
-| 7 | `theorem` | [pairedTailTest_not_nonpos_on](../../../../MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-not-nonpos-on.md) | 96 | `result-track:51d94b50b31bc3bb4da8d0089d0bb188c1e0d9b60e8037d0a166969ba471cfc2` |
+| 1 | `theorem` | [pairedTailTest_eq_balanced_phase_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-eq-balanced-phase-prefix.md) | 27 | `result-track:257188927d8fe03ea134d59767d6eef22ec946ab056b67cb86026bf66ca6dd70` |
+| 2 | `theorem` | [exists_pairedTailTest_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/exists-pairedtailtest-pos.md) | 50 | `result-track:b04608a014f85c4e77827fd7458d5b7f24963433a937056f1bd3d81e2fa699a5` |
+| 3 | `theorem` | [pairedTailTest_early_point_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-early-point-neg.md) | 71 | `result-track:5e06958f0559d0f5e2b56ea9ab57337aa89405bd8f340a4046a5e7f4ccfae42c` |
+| 4 | `theorem` | [exists_pairedTailTest_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/exists-pairedtailtest-neg.md) | 77 | `result-track:7936603c668e53165dadc87f34217a2f3cb170a5a2daccb474fb0e5575a5d8e8` |
+| 5 | `theorem` | [pairedTailTest_has_both_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-has-both-signs.md) | 82 | `result-track:287b4924eb39881802b3fe0d1c969a4e8fa7f6aba7c86a2a9c4c3ad976239f47` |
+| 6 | `theorem` | [pairedTailTest_not_nonneg_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-not-nonneg-on.md) | 88 | `result-track:f841209996469ee0ef0c6c2878fed209bbd0ac1e88af533fa6a2cbbb85cf57a8` |
+| 7 | `theorem` | [pairedTailTest_not_nonpos_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhaseSignGeometry.lean/declarations/pairedtailtest-not-nonpos-on.md) | 96 | `result-track:51d94b50b31bc3bb4da8d0089d0bb188c1e0d9b60e8037d0a166969ba471cfc2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

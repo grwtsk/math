@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](../../../../../NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Algebra.Order.Archimedean.Real.Basic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radical_doubled_power_two](../../../../../NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/declarations/radical-doubled-power-two.md) | 13 | `result-track:158709368440817f84dc33c98ab7bb90ff565dcacad9c5858baee4247a17417d` |
-| 2 | `theorem` | [no_uniform_bound_without_coprimality](../../../../../NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/declarations/no-uniform-bound-without-coprimality.md) | 24 | `result-track:919d3aacfc2eda8bdfb620867db64a85e261b86fcea998c8d5ba46aac85c46e4` |
+| 1 | `theorem` | [radical_doubled_power_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/declarations/radical-doubled-power-two.md) | 13 | `result-track:158709368440817f84dc33c98ab7bb90ff565dcacad9c5858baee4247a17417d` |
+| 2 | `theorem` | [no_uniform_bound_without_coprimality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/declarations/no-uniform-bound-without-coprimality.md) | 24 | `result-track:919d3aacfc2eda8bdfb620867db64a85e261b86fcea998c8d5ba46aac85c46e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/instance.md) | 20 | `declaration-track:6992adcfbf43c9fe28a8144cf0ef7d2e0afd7af0184585e87b1ef240d6079907` |
-| 2 | `lemma` | [ofConjAct_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/ofconjact-zero.md) | 22 | `result-track:83e3ffe52b596adef3b5d4d0ebb5ef27638ba5e94fd35e64517dd6c767b4ae12` |
-| 3 | `lemma` | [toConjAct_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/toconjact-zero.md) | 23 | `result-track:6deea09d141da1dcdff1cddd737b4d5c0f6e54e1687b2400ad9dea198ee1aecc` |
-| 4 | `instance` | [mulAction₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/mulaction.md) | 25 | `declaration-track:bb054b8f5587c7004acc566f981db8c837d5202f3ccc9f01234865276768bf3e` |
-| 5 | `instance` | [smulCommClass₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/smulcommclass-source-edition-2.md) | 29 | `declaration-track:b1d0575c7403eed0b6bbd7358b8e0cc7033bf3937d6d55af79d0bcc3e51f1f6a` |
-| 6 | `instance` | [smulCommClass₀'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/smulcommclass.md) | 33 | `declaration-track:070dc31428dea619e1ae0a441ca39cf05ac686031f25657038b4045e3810974b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/instance.md) | 20 | `declaration-track:6992adcfbf43c9fe28a8144cf0ef7d2e0afd7af0184585e87b1ef240d6079907` |
+| 2 | `lemma` | [ofConjAct_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/ofconjact-zero.md) | 22 | `result-track:83e3ffe52b596adef3b5d4d0ebb5ef27638ba5e94fd35e64517dd6c767b4ae12` |
+| 3 | `lemma` | [toConjAct_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/toconjact-zero.md) | 23 | `result-track:6deea09d141da1dcdff1cddd737b4d5c0f6e54e1687b2400ad9dea198ee1aecc` |
+| 4 | `instance` | [mulAction₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/mulaction.md) | 25 | `declaration-track:bb054b8f5587c7004acc566f981db8c837d5202f3ccc9f01234865276768bf3e` |
+| 5 | `instance` | [smulCommClass₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/smulcommclass-source-edition-2.md) | 29 | `declaration-track:b1d0575c7403eed0b6bbd7358b8e0cc7033bf3937d6d55af79d0bcc3e51f1f6a` |
+| 6 | `instance` | [smulCommClass₀'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionConjAct.lean/declarations/smulcommclass.md) | 33 | `declaration-track:070dc31428dea619e1ae0a441ca39cf05ac686031f25657038b4045e3810974b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

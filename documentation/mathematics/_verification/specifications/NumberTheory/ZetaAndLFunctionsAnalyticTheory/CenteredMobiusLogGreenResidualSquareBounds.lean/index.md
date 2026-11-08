@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHybridEnergy`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHybridEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenResidualA](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenresiduala.md) | 14 | `declaration-track:32b0a6aeb29cb5d02a802bc592345037e6a1541d4f19c41b9c21a962d4b325e5` |
-| 2 | `def` | [greenResidualB](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenresidualb.md) | 18 | `declaration-track:f11b3eb24e53d7c66c4f68d15828ca9ce398c2bc6f2fcfdd2c692b17f8477669` |
-| 3 | `def` | [greenResidualC](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenresidualc.md) | 22 | `declaration-track:d3b74d61c6729b8241bfb40bb06d421b9cb34d8b3883b7018d345dcf4c4c2dd3` |
-| 4 | `theorem` | [sq_add_three_le_three_sq_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-add-three-le-three-sq-sum.md) | 26 | `result-track:7c754ce1763993a3a4e212525082b8f7f11e8ed8b089705ed7bf8a06162345f8` |
-| 5 | `theorem` | [sq_norm_greenCenteringResidual_le_residue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-norm-greencenteringresidual-le-residue.md) | 32 | `result-track:f1a03b87bbad41ca2bb3c2302295063a76c242ecfe76da23ad146d583220f854` |
-| 6 | `def` | [greenAliasResidualA](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenaliasresiduala.md) | 62 | `declaration-track:241fde6136f838afbbc97cf0b18f96467ccb13bd41895d2584a0dd23dc66766f` |
-| 7 | `def` | [greenAliasResidualD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenaliasresiduald.md) | 63 | `declaration-track:bc7bf8b1950c0337278b70372da724dc41555a254eeac26ec7a69544aa5639cd` |
-| 8 | `theorem` | [sq_add_two_le_two_sq_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-add-two-le-two-sq-sum.md) | 66 | `result-track:452a72065bba32b6c1b01cef0375d93c2f178dd60d3e26cce4cad5d2167860d5` |
-| 9 | `theorem` | [sq_norm_greenCenteringResidual_le_aliasing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-norm-greencenteringresidual-le-aliasing.md) | 71 | `result-track:b8e3237dc91fb39489bad1654a54ce9b608e15dac463c5aba7b3249c29952d09` |
+| 1 | `def` | [greenResidualA](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenresiduala.md) | 14 | `declaration-track:32b0a6aeb29cb5d02a802bc592345037e6a1541d4f19c41b9c21a962d4b325e5` |
+| 2 | `def` | [greenResidualB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenresidualb.md) | 18 | `declaration-track:f11b3eb24e53d7c66c4f68d15828ca9ce398c2bc6f2fcfdd2c692b17f8477669` |
+| 3 | `def` | [greenResidualC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenresidualc.md) | 22 | `declaration-track:d3b74d61c6729b8241bfb40bb06d421b9cb34d8b3883b7018d345dcf4c4c2dd3` |
+| 4 | `theorem` | [sq_add_three_le_three_sq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-add-three-le-three-sq-sum.md) | 26 | `result-track:7c754ce1763993a3a4e212525082b8f7f11e8ed8b089705ed7bf8a06162345f8` |
+| 5 | `theorem` | [sq_norm_greenCenteringResidual_le_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-norm-greencenteringresidual-le-residue.md) | 32 | `result-track:f1a03b87bbad41ca2bb3c2302295063a76c242ecfe76da23ad146d583220f854` |
+| 6 | `def` | [greenAliasResidualA](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenaliasresiduala.md) | 62 | `declaration-track:241fde6136f838afbbc97cf0b18f96467ccb13bd41895d2584a0dd23dc66766f` |
+| 7 | `def` | [greenAliasResidualD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/greenaliasresiduald.md) | 63 | `declaration-track:bc7bf8b1950c0337278b70372da724dc41555a254eeac26ec7a69544aa5639cd` |
+| 8 | `theorem` | [sq_add_two_le_two_sq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-add-two-le-two-sq-sum.md) | 66 | `result-track:452a72065bba32b6c1b01cef0375d93c2f178dd60d3e26cce4cad5d2167860d5` |
+| 9 | `theorem` | [sq_norm_greenCenteringResidual_le_aliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/declarations/sq-norm-greencenteringresidual-le-aliasing.md) | 71 | `result-track:b8e3237dc91fb39489bad1654a54ce9b608e15dac463c5aba7b3249c29952d09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

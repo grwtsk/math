@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gf2OneCellCoordinates](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/gf2onecellcoordinates.md) | 39 | `declaration-track:3236e3ee6727acac519d7334e4cc3a6ae6e7aa66f3be7866ee80bfe2856d27ad` |
-| 2 | `def` | [gf2OneCellEncoding](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/gf2onecellencoding.md) | 53 | `declaration-track:fc21c0ff24bc459f7846abc6801322f1afe9243705c9436abcdca7560c17c341` |
-| 3 | `example` | [(anonymous)](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example-source-edition-3.md) | 56 | `declaration-track:74f295b36beb4c4c7734020bac95f362f9ae527cef32ad32a200707d51caff03` |
-| 4 | `example` | [(anonymous)](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example-source-edition-4.md) | 60 | `declaration-track:b6f24e38a436697e2208c97a9e0ecadcc00e06cfe9b4a1fcc36310943844d69c` |
-| 5 | `example` | [(anonymous)](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example.md) | 69 | `declaration-track:163fc541ed1d650e4fb9c9f18c031bc3fe4d99a7e0a88b6b3500d3e93ea23633` |
-| 6 | `example` | [(anonymous)](../../../../FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example-source-edition-2.md) | 73 | `declaration-track:47559f29b4247a2b88a8ac145eaab60d940dcde4501382b55ad596b17eab1ba3` |
+| 1 | `def` | [gf2OneCellCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/gf2onecellcoordinates.md) | 39 | `declaration-track:3236e3ee6727acac519d7334e4cc3a6ae6e7aa66f3be7866ee80bfe2856d27ad` |
+| 2 | `def` | [gf2OneCellEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/gf2onecellencoding.md) | 53 | `declaration-track:fc21c0ff24bc459f7846abc6801322f1afe9243705c9436abcdca7560c17c341` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example-source-edition-3.md) | 56 | `declaration-track:74f295b36beb4c4c7734020bac95f362f9ae527cef32ad32a200707d51caff03` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example-source-edition-4.md) | 60 | `declaration-track:b6f24e38a436697e2208c97a9e0ecadcc00e06cfe9b4a1fcc36310943844d69c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example.md) | 69 | `declaration-track:163fc541ed1d650e4fb9c9f18c031bc3fe4d99a7e0a88b6b3500d3e93ea23633` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/OneCellGF2Encoding.lean/declarations/example-source-edition-2.md) | 73 | `declaration-track:47559f29b4247a2b88a8ac145eaab60d940dcde4501382b55ad596b17eab1ba3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

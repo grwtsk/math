@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedThetaThresholdTransport`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPsiOctaveEnergySupplier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedThetaThresholdTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPsiOctaveEnergySupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.NumberTheory.Chebyshev` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AllDyadicPsiAtThreshold](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/alldyadicpsiatthreshold.md) | 35 | `declaration-track:440b6cec469b34c15e6533222791c4701ac650b29a2be1ebc241b03b6cd010c8` |
-| 2 | `theorem` | [psiAtThreshold_to_energyAtThreshold](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/psiatthreshold-to-energyatthreshold.md) | 45 | `result-track:3963562b0ae6b21f2c8b7b789098b88a1de61049ad08f0737738e075759d4894` |
-| 3 | `theorem` | [psiAtThreshold_to_sameZeroFree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/psiatthreshold-to-samezerofree.md) | 119 | `result-track:68eb0c11d8da5b893d896746d3d5dc89b43fc4f7c08c4f4c9e6f1b4c325fee90` |
-| 4 | `theorem` | [psiAtThreshold_to_thetaAtThreshold](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/psiatthreshold-to-thetaatthreshold.md) | 129 | `result-track:0939453f84e2ee6b41bb53998eaac3d77d1c2783932e0cc8ff5797d4b97a1d09` |
+| 1 | `def` | [AllDyadicPsiAtThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/alldyadicpsiatthreshold.md) | 35 | `declaration-track:440b6cec469b34c15e6533222791c4701ac650b29a2be1ebc241b03b6cd010c8` |
+| 2 | `theorem` | [psiAtThreshold_to_energyAtThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/psiatthreshold-to-energyatthreshold.md) | 45 | `result-track:3963562b0ae6b21f2c8b7b789098b88a1de61049ad08f0737738e075759d4894` |
+| 3 | `theorem` | [psiAtThreshold_to_sameZeroFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/psiatthreshold-to-samezerofree.md) | 119 | `result-track:68eb0c11d8da5b893d896746d3d5dc89b43fc4f7c08c4f4c9e6f1b4c325fee90` |
+| 4 | `theorem` | [psiAtThreshold_to_thetaAtThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/declarations/psiatthreshold-to-thetaatthreshold.md) | 129 | `result-track:0939453f84e2ee6b41bb53998eaac3d77d1c2783932e0cc8ff5797d4b97a1d09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

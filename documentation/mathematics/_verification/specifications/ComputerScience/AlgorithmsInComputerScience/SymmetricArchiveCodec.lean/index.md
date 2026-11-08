@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [manifestSerializer_decode_encode_copy_with](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/declarations/manifestserializer-decode-encode-copy-with.md) | 19 | `result-track:7606c0aca4fd3abb0dc778a28052fdf9d750ca5278f187fd300a7f76d57c9231` |
-| 2 | `theorem` | [copyArchive_materializes_file_layers_with](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/declarations/copyarchive-materializes-file-layers-with.md) | 27 | `result-track:1dafd4cfea6e10794fcb41e9f7ca3d4be5b52aaf527e895dfddf06cdc0da7c9e` |
+| 1 | `theorem` | [manifestSerializer_decode_encode_copy_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/declarations/manifestserializer-decode-encode-copy-with.md) | 19 | `result-track:7606c0aca4fd3abb0dc778a28052fdf9d750ca5278f187fd300a7f76d57c9231` |
+| 2 | `theorem` | [copyArchive_materializes_file_layers_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricArchiveCodec.lean/declarations/copyarchive-materializes-file-layers-with.md) | 27 | `result-track:1dafd4cfea6e10794fcb41e9f7ca3d4be5b52aaf527e895dfddf06cdc0da7c9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

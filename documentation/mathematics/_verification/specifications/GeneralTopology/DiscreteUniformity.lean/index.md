@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DiscreteUniformity.lean/index.md) · [Full source](../../../../GeneralTopology/DiscreteUniformity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [DiscreteUniformity](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/discreteuniformity.md) | 24 | `declaration-track:94ad46029c9d799f711dd7d2e6acf3afde27e4252f1cb40e055b4b81715bc462` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-2.md) | 30 | `declaration-track:37c2fd7671dda5058b64722c68bff56297cb8ab0fc0d2c116a2c26c79195196d` |
-| 3 | `theorem` | [_root_.discreteUniformity_iff_eq_principal_idRel](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/root-discreteuniformity-iff-eq-principal-idrel.md) | 35 | `result-track:b9742c896d0d09d8cebad251e56286ae0a6e63c315410679090ea8770863011e` |
-| 4 | `theorem` | [eq_principal_idRel](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/eq-principal-idrel.md) | 39 | `result-track:3d494cded61bf8c6df49a5867acbb0fa1875975388997d478dc40df98e3a8411` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:c95a535404d03b003e761561b38e654916d6c3def311258cbd7fe9cb21ae658e` |
-| 6 | `theorem` | [_root_.discreteUniformity_iff_idRel_mem_uniformity](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/root-discreteuniformity-iff-idrel-mem-uniformity.md) | 47 | `result-track:04a6dd0686f23d73c5724e76917eaac8ec82823f0b5dc98552846b3d3f81b509` |
-| 7 | `theorem` | [idRel_mem_uniformity](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/idrel-mem-uniformity.md) | 51 | `result-track:f01d8614d60288a0879f34be3481c1f9c07d890777aa963127b9f4506ac4afb0` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-5.md) | 56 | `declaration-track:d87e7a98592a0b342e7448aeb069344fc94d602e34e3e30986283deb06a9772f` |
-| 9 | `theorem` | [uniformContinuous](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/uniformcontinuous.md) | 63 | `result-track:b6f2a2858a8d747a072725de43ffcae61f3386366c0c19988f2dacabdd629110` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-3.md) | 69 | `declaration-track:6c13cc84c68bb85c9733617b19c640140b3fa6c7d4cd875f4442f7ce844ddff6` |
-| 11 | `theorem` | [eq_pure_of_cauchy](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/eq-pure-of-cauchy.md) | 75 | `result-track:71b133e3721fe4c9e92fcdf20c8c0db48f3a3824aa509f6f8c571c0662921398` |
-| 12 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/instance.md) | 87 | `declaration-track:2e094494bcf83a40c469ab23895295495d622b60c0c8b8c9d27abb44aba07786` |
-| 13 | `def` | [cauchyConst](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/cauchyconst.md) | 95 | `declaration-track:32b93df47e7da8865815c7081abc3ff4509d424de4c4ffc52959979e004048b3` |
-| 14 | `theorem` | [eq_pure_cauchyConst](../../../../GeneralTopology/DiscreteUniformity.lean/declarations/eq-pure-cauchyconst.md) | 101 | `result-track:bc83314688e4011cadf8a62df24625d53a0163550c1163bd48dc9bc5d5d253fa` |
+| 1 | `class` | [DiscreteUniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/discreteuniformity.md) | 24 | `declaration-track:94ad46029c9d799f711dd7d2e6acf3afde27e4252f1cb40e055b4b81715bc462` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-2.md) | 30 | `declaration-track:37c2fd7671dda5058b64722c68bff56297cb8ab0fc0d2c116a2c26c79195196d` |
+| 3 | `theorem` | [_root_.discreteUniformity_iff_eq_principal_idRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/root-discreteuniformity-iff-eq-principal-idrel.md) | 35 | `result-track:b9742c896d0d09d8cebad251e56286ae0a6e63c315410679090ea8770863011e` |
+| 4 | `theorem` | [eq_principal_idRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/eq-principal-idrel.md) | 39 | `result-track:3d494cded61bf8c6df49a5867acbb0fa1875975388997d478dc40df98e3a8411` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:c95a535404d03b003e761561b38e654916d6c3def311258cbd7fe9cb21ae658e` |
+| 6 | `theorem` | [_root_.discreteUniformity_iff_idRel_mem_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/root-discreteuniformity-iff-idrel-mem-uniformity.md) | 47 | `result-track:04a6dd0686f23d73c5724e76917eaac8ec82823f0b5dc98552846b3d3f81b509` |
+| 7 | `theorem` | [idRel_mem_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/idrel-mem-uniformity.md) | 51 | `result-track:f01d8614d60288a0879f34be3481c1f9c07d890777aa963127b9f4506ac4afb0` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-5.md) | 56 | `declaration-track:d87e7a98592a0b342e7448aeb069344fc94d602e34e3e30986283deb06a9772f` |
+| 9 | `theorem` | [uniformContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/uniformcontinuous.md) | 63 | `result-track:b6f2a2858a8d747a072725de43ffcae61f3386366c0c19988f2dacabdd629110` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/instance-source-edition-3.md) | 69 | `declaration-track:6c13cc84c68bb85c9733617b19c640140b3fa6c7d4cd875f4442f7ce844ddff6` |
+| 11 | `theorem` | [eq_pure_of_cauchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/eq-pure-of-cauchy.md) | 75 | `result-track:71b133e3721fe4c9e92fcdf20c8c0db48f3a3824aa509f6f8c571c0662921398` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/instance.md) | 87 | `declaration-track:2e094494bcf83a40c469ab23895295495d622b60c0c8b8c9d27abb44aba07786` |
+| 13 | `def` | [cauchyConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/cauchyconst.md) | 95 | `declaration-track:32b93df47e7da8865815c7081abc3ff4509d424de4c4ffc52959979e004048b3` |
+| 14 | `theorem` | [eq_pure_cauchyConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteUniformity.lean/declarations/eq-pure-cauchyconst.md) | 101 | `result-track:bc83314688e4011cadf8a62df24625d53a0163550c1163bd48dc9bc5d5d253fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/index.md) · [Full source](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shapleyWeight](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleyweight.md) | 17 | `declaration-track:8bd9e42ddc8004d5a0a8bb7fa5419539776e6c9cc0c853c7d8eece622ec622ac` |
-| 2 | `def` | [shapleyDefect](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleydefect.md) | 28 | `declaration-track:52427c8f644d71412ab3f46096edd3c02324639a94c087e8bea2df1d8688d1c1` |
-| 3 | `structure` | [ShapleyWeightCertificate](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleyweightcertificate.md) | 41 | `declaration-track:518895979acd9b8879cea1ef7d7583042c751b9baa28fac7b187afa8d101f93d` |
-| 4 | `theorem` | [shapleyDefect_nonnegative](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleydefect-nonnegative.md) | 53 | `result-track:c391e7191d80612234c57d7365cba716597417816b9c80e07398a3c505791f75` |
-| 5 | `structure` | [ShapleyEfficiencyCertificate](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleyefficiencycertificate.md) | 77 | `declaration-track:b791d3188ab38339f7045a025d95e4c958e1513df664f86a1ec5f251e12e7629` |
-| 6 | `theorem` | [shapley_efficiency](../../../../Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapley-efficiency.md) | 91 | `result-track:3971775b5974721856be079e9d3af4382899c7f3145c7c9bf2f06a45b0dcbee5` |
+| 1 | `def` | [shapleyWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleyweight.md) | 17 | `declaration-track:8bd9e42ddc8004d5a0a8bb7fa5419539776e6c9cc0c853c7d8eece622ec622ac` |
+| 2 | `def` | [shapleyDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleydefect.md) | 28 | `declaration-track:52427c8f644d71412ab3f46096edd3c02324639a94c087e8bea2df1d8688d1c1` |
+| 3 | `structure` | [ShapleyWeightCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleyweightcertificate.md) | 41 | `declaration-track:518895979acd9b8879cea1ef7d7583042c751b9baa28fac7b187afa8d101f93d` |
+| 4 | `theorem` | [shapleyDefect_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleydefect-nonnegative.md) | 53 | `result-track:c391e7191d80612234c57d7365cba716597417816b9c80e07398a3c505791f75` |
+| 5 | `structure` | [ShapleyEfficiencyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapleyefficiencycertificate.md) | 77 | `declaration-track:b791d3188ab38339f7045a025d95e4c958e1513df664f86a1ec5f251e12e7629` |
+| 6 | `theorem` | [shapley_efficiency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionShapleyWeight.lean/declarations/shapley-efficiency.md) | 91 | `result-track:3971775b5974721856be079e9d3af4382899c7f3145c7c9bf2f06a45b0dcbee5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

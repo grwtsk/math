@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [FormallyUnramified.of_formallyUnramified_tensorProduct_of_faithfullyFlat](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/formallyunramified-of-formallyunramified-tensorproduct-of-faithfullyflat.md) | 54 | `result-track:d92698aa5b4a10b22908515717b167a9e86abc2db733efff1ec69cf2a22df691` |
-| 2 | `lemma` | [Smooth.of_smooth_tensorProduct_of_faithfullyFlat](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/smooth-of-smooth-tensorproduct-of-faithfullyflat.md) | 63 | `result-track:e086030f50e009b703394f77e88f7baa5f65ae021ec21c2f7c1c5cd28bfc703b` |
-| 3 | `lemma` | [Unramified.of_unramified_tensorProduct_of_faithfullyFlat](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/unramified-of-unramified-tensorproduct-of-faithfullyflat.md) | 81 | `result-track:fccd0792b5809a8c784248e7fa188925c034ec60fc4811c5b6210f0f03fbf168` |
-| 4 | `lemma` | [Etale.of_etale_tensorProduct_of_faithfullyFlat](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/etale-of-etale-tensorproduct-of-faithfullyflat.md) | 86 | `result-track:d66f03661c8dea2c77193a06d37767428c30f01d7a984405d3225cc87ca615f2` |
-| 5 | `lemma` | [Smooth.codescendsAlong_faithfullyFlat](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/smooth-codescendsalong-faithfullyflat.md) | 96 | `result-track:fa318fa50d9cc25c7b14d96ae712ab3cb297dd3b3b565f5f7f1c2d33213f1c8b` |
-| 6 | `lemma` | [FormallyUnramified.codescendsAlong_faithfullyFlat](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/formallyunramified-codescendsalong-faithfullyflat.md) | 102 | `result-track:7f8880d3e90028eb1abede1696bac5b167127652b1eb0bcb8bd9cd4f5d865047` |
-| 7 | `lemma` | [Etale.codescendsAlong_faithfullyFlat](../../../../CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/etale-codescendsalong-faithfullyflat.md) | 109 | `result-track:e762f888e1f65682011df18bdc9676caea0da105497113f2d858a9e5098f00f1` |
+| 1 | `lemma` | [FormallyUnramified.of_formallyUnramified_tensorProduct_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/formallyunramified-of-formallyunramified-tensorproduct-of-faithfullyflat.md) | 54 | `result-track:d92698aa5b4a10b22908515717b167a9e86abc2db733efff1ec69cf2a22df691` |
+| 2 | `lemma` | [Smooth.of_smooth_tensorProduct_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/smooth-of-smooth-tensorproduct-of-faithfullyflat.md) | 63 | `result-track:e086030f50e009b703394f77e88f7baa5f65ae021ec21c2f7c1c5cd28bfc703b` |
+| 3 | `lemma` | [Unramified.of_unramified_tensorProduct_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/unramified-of-unramified-tensorproduct-of-faithfullyflat.md) | 81 | `result-track:fccd0792b5809a8c784248e7fa188925c034ec60fc4811c5b6210f0f03fbf168` |
+| 4 | `lemma` | [Etale.of_etale_tensorProduct_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/etale-of-etale-tensorproduct-of-faithfullyflat.md) | 86 | `result-track:d66f03661c8dea2c77193a06d37767428c30f01d7a984405d3225cc87ca615f2` |
+| 5 | `lemma` | [Smooth.codescendsAlong_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/smooth-codescendsalong-faithfullyflat.md) | 96 | `result-track:fa318fa50d9cc25c7b14d96ae712ab3cb297dd3b3b565f5f7f1c2d33213f1c8b` |
+| 6 | `lemma` | [FormallyUnramified.codescendsAlong_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/formallyunramified-codescendsalong-faithfullyflat.md) | 102 | `result-track:7f8880d3e90028eb1abede1696bac5b167127652b1eb0bcb8bd9cd4f5d865047` |
+| 7 | `lemma` | [Etale.codescendsAlong_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleDescentNamespacedPublic.lean/declarations/etale-codescendsalong-faithfullyflat.md) | 109 | `result-track:e762f888e1f65682011df18bdc9676caea0da105497113f2d858a9e5098f00f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

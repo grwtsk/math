@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProtectedFeature](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/declarations/protectedfeature.md) | 15 | `declaration-track:f621341d266aa5a5669c7f4eee64e000fdf9bcfaa9982f2c01144d2a8b7a33ce` |
-| 2 | `structure` | [ProtectedFeatureProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/declarations/protectedfeatureprofile.md) | 20 | `declaration-track:9ab445081fe0e5914922670e6392c082051ee62fc6bcb3112f4749b198c1d9dc` |
-| 3 | `structure` | [ConceptProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/declarations/conceptprofile.md) | 25 | `declaration-track:71a07527281dfd0c79d913ea7b5fe2e8527736bb5e3b2445972035f054ba9531` |
+| 1 | `structure` | [ProtectedFeature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/declarations/protectedfeature.md) | 15 | `declaration-track:f621341d266aa5a5669c7f4eee64e000fdf9bcfaa9982f2c01144d2a8b7a33ce` |
+| 2 | `structure` | [ProtectedFeatureProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/declarations/protectedfeatureprofile.md) | 20 | `declaration-track:9ab445081fe0e5914922670e6392c082051ee62fc6bcb3112f4749b198c1d9dc` |
+| 3 | `structure` | [ConceptProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptNamespacedProtectedFeature.lean/declarations/conceptprofile.md) | 25 | `declaration-track:71a07527281dfd0c79d913ea7b5fe2e8527736bb5e3b2445972035f054ba9531` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

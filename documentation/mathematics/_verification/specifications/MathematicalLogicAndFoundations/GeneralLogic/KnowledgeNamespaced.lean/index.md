@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KnowledgeTopology](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledgetopology.md) | 13 | `declaration-track:69378961811652c7c19a6ed57923dc01cf7c9cb5df0d7779077d5320cbd053d8` |
-| 2 | `structure` | [KnowledgeSheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledgesheaf.md) | 22 | `declaration-track:b7af84a814174259453e37d87993972068682dd69729b125102f4d36e423d840` |
-| 3 | `def` | [KnowledgeSheaf.omegaIsIntuitionistic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledgesheaf-omegaisintuitionistic.md) | 32 | `declaration-track:cde1887caee0aedeadaa1ecf48e5764b8077d2190b99c17d229d954da621116a` |
-| 4 | `theorem` | [knowledge_omega_not_boolean_if_intuitionistic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledge-omega-not-boolean-if-intuitionistic.md) | 38 | `result-track:0f67fca0b6f75126e38093dfe2b5e45af79c3b6a091e708f0dd6924ad0189431` |
+| 1 | `structure` | [KnowledgeTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledgetopology.md) | 13 | `declaration-track:69378961811652c7c19a6ed57923dc01cf7c9cb5df0d7779077d5320cbd053d8` |
+| 2 | `structure` | [KnowledgeSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledgesheaf.md) | 22 | `declaration-track:b7af84a814174259453e37d87993972068682dd69729b125102f4d36e423d840` |
+| 3 | `def` | [KnowledgeSheaf.omegaIsIntuitionistic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledgesheaf-omegaisintuitionistic.md) | 32 | `declaration-track:cde1887caee0aedeadaa1ecf48e5764b8077d2190b99c17d229d954da621116a` |
+| 4 | `theorem` | [knowledge_omega_not_boolean_if_intuitionistic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnowledgeNamespaced.lean/declarations/knowledge-omega-not-boolean-if-intuitionistic.md) | 38 | `result-track:0f67fca0b6f75126e38093dfe2b5e45af79c3b6a091e708f0dd6924ad0189431` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

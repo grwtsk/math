@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BasicBasicPublic.lean/index.md) · [Full source](../../../../Combinatorics/BasicBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prop_simple_real_lower](../../../../Combinatorics/BasicBasicPublic.lean/declarations/prop-simple-real-lower.md) | 18 | `result-track:90f3a3b61391ea4b0c2d7ff0586062ebd65cd95c9b127bbea646eb2ddc793f93` |
-| 2 | `theorem` | [prop_distinct_lower](../../../../Combinatorics/BasicBasicPublic.lean/declarations/prop-distinct-lower.md) | 27 | `result-track:913df617fbb57cb7016ea804ca10efe1aa9db8159c4e704ec93970ad12e80c47` |
-| 3 | `theorem` | [prop_simple_plus_real_lower](../../../../Combinatorics/BasicBasicPublic.lean/declarations/prop-simple-plus-real-lower.md) | 37 | `result-track:a89937427642f1aac4875b676d08441bc970941ed00bfd8fcb41ac1b2f71572c` |
-| 4 | `theorem` | [prop_simple_or_real_lower](../../../../Combinatorics/BasicBasicPublic.lean/declarations/prop-simple-or-real-lower.md) | 47 | `result-track:518e76605d4cb635cf84407b54d539aedf9b2e0945963b9d8fff735cdedcad72` |
-| 5 | `theorem` | [thm_simple](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-simple.md) | 58 | `result-track:add691c3131f2b64a98a28c385bf3a7bc37dde39328feb9870aead749fbad515` |
-| 6 | `theorem` | [thm_distinct](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-distinct.md) | 66 | `result-track:2acd6c12e82061e9509d74e2e35ec19b2c63ab89c5365a7696565d94ea350fb2` |
-| 7 | `theorem` | [thm_average](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-average.md) | 74 | `result-track:d5a6ec46784342037013847dd797fab5bb298d16faac3044062b72da5b07199b` |
-| 8 | `theorem` | [thm_simple_or_critical](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-simple-or-critical.md) | 83 | `result-track:e21c54c090fd9f5341697cfc750b45497f291087349ec3fa4b162e51e1f1d210` |
-| 9 | `theorem` | [thm_simple_numeric](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-simple-numeric.md) | 92 | `result-track:d7aeb97bd8ef785e1319311f7ff7a2f8f6ba54c59ace2187af666d411187bdd1` |
-| 10 | `theorem` | [thm_distinct_numeric](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-distinct-numeric.md) | 98 | `result-track:73abb1581510d0205d3b1bcd8ed3041bdd3449673d81e141924520192f092ba0` |
-| 11 | `theorem` | [thm_average_numeric](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-average-numeric.md) | 104 | `result-track:0912b0a0ef1af9f0d696f40c1c09d583a66d8da292d264838cc0f00e9f7d94f4` |
-| 12 | `theorem` | [thm_simple_or_critical_numeric](../../../../Combinatorics/BasicBasicPublic.lean/declarations/thm-simple-or-critical-numeric.md) | 112 | `result-track:4fcd7cd3cd64ff65965462243e148f574f0c79288c20fdd411b04dbcebd8df55` |
+| 1 | `theorem` | [prop_simple_real_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/prop-simple-real-lower.md) | 18 | `result-track:90f3a3b61391ea4b0c2d7ff0586062ebd65cd95c9b127bbea646eb2ddc793f93` |
+| 2 | `theorem` | [prop_distinct_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/prop-distinct-lower.md) | 27 | `result-track:913df617fbb57cb7016ea804ca10efe1aa9db8159c4e704ec93970ad12e80c47` |
+| 3 | `theorem` | [prop_simple_plus_real_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/prop-simple-plus-real-lower.md) | 37 | `result-track:a89937427642f1aac4875b676d08441bc970941ed00bfd8fcb41ac1b2f71572c` |
+| 4 | `theorem` | [prop_simple_or_real_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/prop-simple-or-real-lower.md) | 47 | `result-track:518e76605d4cb635cf84407b54d539aedf9b2e0945963b9d8fff735cdedcad72` |
+| 5 | `theorem` | [thm_simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-simple.md) | 58 | `result-track:add691c3131f2b64a98a28c385bf3a7bc37dde39328feb9870aead749fbad515` |
+| 6 | `theorem` | [thm_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-distinct.md) | 66 | `result-track:2acd6c12e82061e9509d74e2e35ec19b2c63ab89c5365a7696565d94ea350fb2` |
+| 7 | `theorem` | [thm_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-average.md) | 74 | `result-track:d5a6ec46784342037013847dd797fab5bb298d16faac3044062b72da5b07199b` |
+| 8 | `theorem` | [thm_simple_or_critical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-simple-or-critical.md) | 83 | `result-track:e21c54c090fd9f5341697cfc750b45497f291087349ec3fa4b162e51e1f1d210` |
+| 9 | `theorem` | [thm_simple_numeric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-simple-numeric.md) | 92 | `result-track:d7aeb97bd8ef785e1319311f7ff7a2f8f6ba54c59ace2187af666d411187bdd1` |
+| 10 | `theorem` | [thm_distinct_numeric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-distinct-numeric.md) | 98 | `result-track:73abb1581510d0205d3b1bcd8ed3041bdd3449673d81e141924520192f092ba0` |
+| 11 | `theorem` | [thm_average_numeric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-average-numeric.md) | 104 | `result-track:0912b0a0ef1af9f0d696f40c1c09d583a66d8da292d264838cc0f00e9f7d94f4` |
+| 12 | `theorem` | [thm_simple_or_critical_numeric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicPublic.lean/declarations/thm-simple-or-critical-numeric.md) | 112 | `result-track:4fcd7cd3cd64ff65965462243e148f574f0c79288c20fdd411b04dbcebd8df55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

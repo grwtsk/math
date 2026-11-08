@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticAdjacencyStabilizer`](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticAdjacencyStabilizer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.FieldTheory.Galois.Basic` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacencyStabilizer_eq_fixingSubgroup](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/declarations/adjacencystabilizer-eq-fixingsubgroup.md) | 31 | `result-track:3de7d173d6010ed0fea1044458a038e4b8cff75533c50d0a551b0363537c294c` |
-| 2 | `theorem` | [adjacencyField_eq_fixedField](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/declarations/adjacencyfield-eq-fixedfield.md) | 41 | `result-track:83d342f43e97e5f6f627c6d59732ec9c2c3dd4770ef2d3fba22b0c0156d238f2` |
-| 3 | `theorem` | [finrank_adjacencyField_eq_card_stabilizer](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/declarations/finrank-adjacencyfield-eq-card-stabilizer.md) | 51 | `result-track:8f5b832485b9a0979a5dfa6be176131ad2b223a9dd2ff5a2ae08be2f64ce2dcd` |
+| 1 | `theorem` | [adjacencyStabilizer_eq_fixingSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/declarations/adjacencystabilizer-eq-fixingsubgroup.md) | 31 | `result-track:3de7d173d6010ed0fea1044458a038e4b8cff75533c50d0a551b0363537c294c` |
+| 2 | `theorem` | [adjacencyField_eq_fixedField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/declarations/adjacencyfield-eq-fixedfield.md) | 41 | `result-track:83d342f43e97e5f6f627c6d59732ec9c2c3dd4770ef2d3fba22b0c0156d238f2` |
+| 3 | `theorem` | [finrank_adjacencyField_eq_card_stabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/declarations/finrank-adjacencyfield-eq-card-stabilizer.md) | 51 | `result-track:8f5b832485b9a0979a5dfa6be176131ad2b223a9dd2ff5a2ae08be2f64ce2dcd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

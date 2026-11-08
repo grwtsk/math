@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/VanishingCurvature.lean/index.md) · [Full source](../../../../Combinatorics/VanishingCurvature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rightSupremalOrderSecondDerivative](../../../../Combinatorics/VanishingCurvature.lean/declarations/rightsupremalordersecondderivative.md) | 8 | `declaration-track:1298a37cfa5598b689c383055013943b1ea921791e986edad75c339839881844` |
-| 2 | `def` | [rightInfimalOrderSecondDerivative](../../../../Combinatorics/VanishingCurvature.lean/declarations/rightinfimalordersecondderivative.md) | 12 | `declaration-track:44446413c229c6ed5ae0032ab37a6f5675d245abdb5a0aa94320b1e69921ea1d` |
-| 3 | `def` | [leftSupremalOrderSecondDerivative](../../../../Combinatorics/VanishingCurvature.lean/declarations/leftsupremalordersecondderivative.md) | 16 | `declaration-track:fd3842f241360cc0d498f607a54199c2e601618c1f21568261b0486e12174511` |
-| 4 | `def` | [leftInfimalOrderSecondDerivative](../../../../Combinatorics/VanishingCurvature.lean/declarations/leftinfimalordersecondderivative.md) | 20 | `declaration-track:f1fe69bef12f9ed70c551971242195d68705d2bfdbc99472f5d7c52f942b8a48` |
-| 5 | `def` | [holderOrderSecondDerivative](../../../../Combinatorics/VanishingCurvature.lean/declarations/holderordersecondderivative.md) | 24 | `declaration-track:9d01a0f39ce84d09f5181e3755ffac8599923203c3a1bd5d30b31f645e303334` |
-| 6 | `structure` | [VanishingCurvatureHypotheses](../../../../Combinatorics/VanishingCurvature.lean/declarations/vanishingcurvaturehypotheses.md) | 34 | `declaration-track:57166604e85be364845276af5b308b5c06b65782c15c619ac529b2a53176537e` |
-| 7 | `def` | [vanishingCurvatureResidue](../../../../Combinatorics/VanishingCurvature.lean/declarations/vanishingcurvatureresidue.md) | 50 | `declaration-track:67c93f641e363d13dfb91c4f79cd4476b46e5acb1dab2dea699e442abcca4498` |
-| 8 | `theorem` | [finite_exceptional_set_is_recorded](../../../../Combinatorics/VanishingCurvature.lean/declarations/finite-exceptional-set-is-recorded.md) | 53 | `result-track:972bcba042104ff2f755c16a7e218b692d0a2670f2b2904fb30080477819db66` |
+| 1 | `def` | [rightSupremalOrderSecondDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/rightsupremalordersecondderivative.md) | 8 | `declaration-track:1298a37cfa5598b689c383055013943b1ea921791e986edad75c339839881844` |
+| 2 | `def` | [rightInfimalOrderSecondDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/rightinfimalordersecondderivative.md) | 12 | `declaration-track:44446413c229c6ed5ae0032ab37a6f5675d245abdb5a0aa94320b1e69921ea1d` |
+| 3 | `def` | [leftSupremalOrderSecondDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/leftsupremalordersecondderivative.md) | 16 | `declaration-track:fd3842f241360cc0d498f607a54199c2e601618c1f21568261b0486e12174511` |
+| 4 | `def` | [leftInfimalOrderSecondDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/leftinfimalordersecondderivative.md) | 20 | `declaration-track:f1fe69bef12f9ed70c551971242195d68705d2bfdbc99472f5d7c52f942b8a48` |
+| 5 | `def` | [holderOrderSecondDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/holderordersecondderivative.md) | 24 | `declaration-track:9d01a0f39ce84d09f5181e3755ffac8599923203c3a1bd5d30b31f645e303334` |
+| 6 | `structure` | [VanishingCurvatureHypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/vanishingcurvaturehypotheses.md) | 34 | `declaration-track:57166604e85be364845276af5b308b5c06b65782c15c619ac529b2a53176537e` |
+| 7 | `def` | [vanishingCurvatureResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/vanishingcurvatureresidue.md) | 50 | `declaration-track:67c93f641e363d13dfb91c4f79cd4476b46e5acb1dab2dea699e442abcca4498` |
+| 8 | `theorem` | [finite_exceptional_set_is_recorded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/VanishingCurvature.lean/declarations/finite-exceptional-set-is-recorded.md) | 53 | `result-track:972bcba042104ff2f755c16a7e218b692d0a2670f2b2904fb30080477819db66` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

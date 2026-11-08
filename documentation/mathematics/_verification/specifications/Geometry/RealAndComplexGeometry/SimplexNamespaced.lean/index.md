@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Equilateral.angle_eq_pi_div_three](../../../../../Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/equilateral-angle-eq-pi-div-three.md) | 41 | `result-track:9ef86365ad2e7fe1b3d1677a18ae4ad080122ad806bcee2509293d96568c149a` |
-| 2 | `def` | [AcuteAngled](../../../../../Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/acuteangled.md) | 58 | `declaration-track:a722360c7ea7950333d8f13824de9b303dcd40b8a596156a2bddf580718419d4` |
-| 3 | `lemma` | [acuteAngled_reindex_iff](../../../../../Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/acuteangled-reindex-iff.md) | 62 | `result-track:b70f3c025c408f916676e10e538d2ef37025e9ae0607e8844eaf65b992e830d0` |
-| 4 | `lemma` | [Equilateral.acuteAngled](../../../../../Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/equilateral-acuteangled.md) | 68 | `result-track:cd4412b6cad165d56909e838e971e1ffe5e967f6544b44ea33fbc95a80996785` |
-| 5 | `lemma` | [acuteAngled_iff_angle_lt](../../../../../Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/acuteangled-iff-angle-lt.md) | 77 | `result-track:9fc50af2e8d31a137ec252d6379888dfdb37e8e6faef3c2fdd5fbf9239f47bb4` |
+| 1 | `lemma` | [Equilateral.angle_eq_pi_div_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/equilateral-angle-eq-pi-div-three.md) | 41 | `result-track:9ef86365ad2e7fe1b3d1677a18ae4ad080122ad806bcee2509293d96568c149a` |
+| 2 | `def` | [AcuteAngled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/acuteangled.md) | 58 | `declaration-track:a722360c7ea7950333d8f13824de9b303dcd40b8a596156a2bddf580718419d4` |
+| 3 | `lemma` | [acuteAngled_reindex_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/acuteangled-reindex-iff.md) | 62 | `result-track:b70f3c025c408f916676e10e538d2ef37025e9ae0607e8844eaf65b992e830d0` |
+| 4 | `lemma` | [Equilateral.acuteAngled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/equilateral-acuteangled.md) | 68 | `result-track:cd4412b6cad165d56909e838e971e1ffe5e967f6544b44ea33fbc95a80996785` |
+| 5 | `lemma` | [acuteAngled_iff_angle_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimplexNamespaced.lean/declarations/acuteangled-iff-angle-lt.md) | 77 | `result-track:9fc50af2e8d31a137ec252d6379888dfdb37e8e6faef3c2fdd5fbf9239f47bb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

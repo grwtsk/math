@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EFLitCorrW.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EFLitCorrW.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dE2](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/de2.md) | 37 | `declaration-track:9148547f04cf80db4389eaab9ae7b9ce9ca7792e1e274788131add6c17ee6507` |
-| 2 | `def` | [JcorrW](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/jcorrw.md) | 40 | `declaration-track:60beee141794292ec82e990d291547d4d407fc1cdd7ddd6b0bf3907abfc12dcf` |
-| 3 | `def` | [WFullLineIdentityWith](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/wfulllineidentitywith.md) | 45 | `declaration-track:588cf7676314b55e48016fe689ca51feed79803eb1212931e375e09f30f02e33` |
-| 4 | `def` | [WFullLineIdentity](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/wfulllineidentity.md) | 55 | `declaration-track:814c9a2a79df9138c1f794e0e164ce72e84d082812fef01f9d043440b5ef3db3` |
-| 5 | `def` | [LminusLineIdentity](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/lminuslineidentity.md) | 59 | `declaration-track:72e501705819c4ae1c746267d5a1b0a96a735574ca2e52dbabcadf3edaad5abe` |
-| 6 | `structure` | [E2LineFacts](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/e2linefacts.md) | 68 | `declaration-track:da8b9a7400e53ff2c70eaba6f593aa38145c032c367a060a8aa015bb4c245525` |
-| 7 | `theorem` | [Hfn_zero_one_eq](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/hfn-zero-one-eq.md) | 75 | `result-track:8b163913acfdfe768842b1785e3564559144028d6ac1a19de14b598bdd69e7a3` |
-| 8 | `theorem` | [FZfn_line_split](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/fzfn-line-split.md) | 86 | `result-track:a3d118d3325776c41f3abde9efd8a86a8081a79f398cc4f72b235fcfad887ff5` |
-| 9 | `theorem` | [w_EF_lit_corr](../../../../MeasureAndIntegration/EFLitCorrW.lean/declarations/w-ef-lit-corr.md) | 97 | `result-track:193f4531327b5aefbf0f611e4660d61a94098a3974b4f7e58970ef35464a6819` |
+| 1 | `def` | [dE2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/de2.md) | 37 | `declaration-track:9148547f04cf80db4389eaab9ae7b9ce9ca7792e1e274788131add6c17ee6507` |
+| 2 | `def` | [JcorrW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/jcorrw.md) | 40 | `declaration-track:60beee141794292ec82e990d291547d4d407fc1cdd7ddd6b0bf3907abfc12dcf` |
+| 3 | `def` | [WFullLineIdentityWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/wfulllineidentitywith.md) | 45 | `declaration-track:588cf7676314b55e48016fe689ca51feed79803eb1212931e375e09f30f02e33` |
+| 4 | `def` | [WFullLineIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/wfulllineidentity.md) | 55 | `declaration-track:814c9a2a79df9138c1f794e0e164ce72e84d082812fef01f9d043440b5ef3db3` |
+| 5 | `def` | [LminusLineIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/lminuslineidentity.md) | 59 | `declaration-track:72e501705819c4ae1c746267d5a1b0a96a735574ca2e52dbabcadf3edaad5abe` |
+| 6 | `structure` | [E2LineFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/e2linefacts.md) | 68 | `declaration-track:da8b9a7400e53ff2c70eaba6f593aa38145c032c367a060a8aa015bb4c245525` |
+| 7 | `theorem` | [Hfn_zero_one_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/hfn-zero-one-eq.md) | 75 | `result-track:8b163913acfdfe768842b1785e3564559144028d6ac1a19de14b598bdd69e7a3` |
+| 8 | `theorem` | [FZfn_line_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/fzfn-line-split.md) | 86 | `result-track:a3d118d3325776c41f3abde9efd8a86a8081a79f398cc4f72b235fcfad887ff5` |
+| 9 | `theorem` | [w_EF_lit_corr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EFLitCorrW.lean/declarations/w-ef-lit-corr.md) | 97 | `result-track:193f4531327b5aefbf0f611e4660d61a94098a3974b4f7e58970ef35464a6819` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntegrationExponentialInterval.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntegrationExponentialInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_exp_neg_mul](../../../../MeasureAndIntegration/IntegrationExponentialInterval.lean/declarations/integral-exp-neg-mul.md) | 20 | `result-track:2fab92e9fc196809cb8fa9ef586d574add14ea2179590bd3bd0b274c69b72081` |
-| 2 | `theorem` | [integral_exp_mul](../../../../MeasureAndIntegration/IntegrationExponentialInterval.lean/declarations/integral-exp-mul.md) | 41 | `result-track:478189b74bb312c51d42f75a0bafac5ad5df7558759680a92ed787860b4ad8c5` |
+| 1 | `theorem` | [integral_exp_neg_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialInterval.lean/declarations/integral-exp-neg-mul.md) | 20 | `result-track:2fab92e9fc196809cb8fa9ef586d574add14ea2179590bd3bd0b274c69b72081` |
+| 2 | `theorem` | [integral_exp_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialInterval.lean/declarations/integral-exp-mul.md) | 41 | `result-track:478189b74bb312c51d42f75a0bafac5ad5df7558759680a92ed787860b4ad8c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CountBudget.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CountBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [count_main_kernel_eq](../../../../MeasureAndIntegration/CountBudget.lean/declarations/count-main-kernel-eq.md) | 18 | `result-track:b8904196cee1b758e76f4dbfa27cf1fdc7449749cada3100af095043451183a0` |
-| 2 | `theorem` | [count_main_seventh_integrable](../../../../MeasureAndIntegration/CountBudget.lean/declarations/count-main-seventh-integrable.md) | 29 | `result-track:99df72ab57ec2f508f0b889c9f9cc670ee23fd6c9ddc0cfedd0b676eac573a91` |
-| 3 | `theorem` | [count_main_seventh_integral](../../../../MeasureAndIntegration/CountBudget.lean/declarations/count-main-seventh-integral.md) | 41 | `result-track:6d52b5a9d824403a0330e63c1026ff1c7bcde3bb8948555baad6aeecdf29995d` |
-| 4 | `theorem` | [corrected_count_budget](../../../../MeasureAndIntegration/CountBudget.lean/declarations/corrected-count-budget.md) | 62 | `result-track:f1ba490901be3aa238e286f1dd491315e99b3cba304ad5349f99ffd248471de7` |
-| 5 | `theorem` | [actual_positive_sixth_count_bound](../../../../MeasureAndIntegration/CountBudget.lean/declarations/actual-positive-sixth-count-bound.md) | 74 | `result-track:a40d9119dfa928d8526fe91e48c43a360c0d23e3a97ed53683afa606dd340aa5` |
+| 1 | `theorem` | [count_main_kernel_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudget.lean/declarations/count-main-kernel-eq.md) | 18 | `result-track:b8904196cee1b758e76f4dbfa27cf1fdc7449749cada3100af095043451183a0` |
+| 2 | `theorem` | [count_main_seventh_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudget.lean/declarations/count-main-seventh-integrable.md) | 29 | `result-track:99df72ab57ec2f508f0b889c9f9cc670ee23fd6c9ddc0cfedd0b676eac573a91` |
+| 3 | `theorem` | [count_main_seventh_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudget.lean/declarations/count-main-seventh-integral.md) | 41 | `result-track:6d52b5a9d824403a0330e63c1026ff1c7bcde3bb8948555baad6aeecdf29995d` |
+| 4 | `theorem` | [corrected_count_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudget.lean/declarations/corrected-count-budget.md) | 62 | `result-track:f1ba490901be3aa238e286f1dd491315e99b3cba304ad5349f99ffd248471de7` |
+| 5 | `theorem` | [actual_positive_sixth_count_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudget.lean/declarations/actual-positive-sixth-count-bound.md) | 74 | `result-track:a40d9119dfa928d8526fe91e48c43a360c0d23e3a97ed53683afa606dd340aa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

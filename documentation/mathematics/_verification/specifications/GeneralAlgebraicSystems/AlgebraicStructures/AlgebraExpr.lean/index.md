@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Expr.instOne](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instone.md) | 16 | `declaration-track:804c434967105b475c276c1b706581fff0a7f951449798004f4190aec7d8c0b3` |
-| 2 | `def` | [Expr.instZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instzero.md) | 20 | `declaration-track:5b18c431893938d5e8207f0956781c1a38b3c8c27a1ef5401e0014c9f3b46b63` |
-| 3 | `def` | [Expr.instMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instmul.md) | 24 | `declaration-track:abefd023f5da89682faf40bc262b8bfe80ee08b232163d63541f30f7b4aa536f` |
-| 4 | `def` | [Expr.instAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instadd.md) | 28 | `declaration-track:64ea0ef08966ba2544e706c67502407510354d85aaaea05540a2f84e133f69b3` |
+| 1 | `def` | [Expr.instOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instone.md) | 16 | `declaration-track:804c434967105b475c276c1b706581fff0a7f951449798004f4190aec7d8c0b3` |
+| 2 | `def` | [Expr.instZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instzero.md) | 20 | `declaration-track:5b18c431893938d5e8207f0956781c1a38b3c8c27a1ef5401e0014c9f3b46b63` |
+| 3 | `def` | [Expr.instMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instmul.md) | 24 | `declaration-track:abefd023f5da89682faf40bc262b8bfe80ee08b232163d63541f30f7b4aa536f` |
+| 4 | `def` | [Expr.instAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraExpr.lean/declarations/expr-instadd.md) | 28 | `declaration-track:64ea0ef08966ba2544e706c67502407510354d85aaaea05540a2f84e133f69b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

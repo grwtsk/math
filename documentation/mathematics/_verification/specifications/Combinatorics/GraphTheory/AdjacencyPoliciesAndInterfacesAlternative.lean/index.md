@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Topology.RasterCubicalComplex` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Int.Basic` — import line 20; external provider; requires a separately pinned dependency.
-- [Finite Cut And Replacement Alternative](../../../../../GeneralTopology/FiniteCutAndReplacementAlternative.lean/index.md) — import line 22; pinned internal source present.
+- [Finite Cut And Replacement Alternative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteCutAndReplacementAlternative.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AdjacencyPolicy](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy.md) | 43 | `declaration-track:c6ba5f78ffcf262eacd958794ad38f4a0196fdba1d6e4827fd4ab56ba1f683d9` |
-| 2 | `def` | [AdjacencyPolicy.Adjacent](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy-adjacent.md) | 50 | `declaration-track:db0463c7871e95beacde3c6ddd502eac0054fdafa183715387264bf55b9d44c4` |
-| 3 | `instance` | [adjacencyPolicyDecidable](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicydecidable.md) | 56 | `declaration-track:df33eb6a8dfbfd8c838debd96429c15cf8998905a80d8de907efd8269e5de220` |
-| 4 | `theorem` | [AdjacencyPolicy.adjacent_symmetric](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy-adjacent-symmetric.md) | 61 | `result-track:2ab2d0eac389e4d30a811d79bc01e060d587d243b9a35092d82255be867643f8` |
-| 5 | `theorem` | [AdjacencyPolicy.not_adjacent_self](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy-not-adjacent-self.md) | 68 | `result-track:47601deb7759ae41828ee1fe323e28e659af335566cf62260c4b58a4c7267323` |
-| 6 | `def` | [adjacencyInterface](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencyinterface.md) | 78 | `declaration-track:5f34f68da2c29a9206994aee88336171764b6884c8096918dd84ab5e6789b3e9` |
-| 7 | `theorem` | [adjacencyInterface_subset_exterior](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencyinterface-subset-exterior.md) | 83 | `result-track:6cc669e27b87691c7c2d12de20b64e07133fefb4fd86b82aab75879cb64f38ae` |
-| 8 | `theorem` | [adjacencyInterface_edge](../../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencyinterface-edge.md) | 90 | `result-track:c229614c67f0f538767ceb96a9983d06af4233c377ac0008b4be212f67fe2403` |
+| 1 | `inductive` | [AdjacencyPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy.md) | 43 | `declaration-track:c6ba5f78ffcf262eacd958794ad38f4a0196fdba1d6e4827fd4ab56ba1f683d9` |
+| 2 | `def` | [AdjacencyPolicy.Adjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy-adjacent.md) | 50 | `declaration-track:db0463c7871e95beacde3c6ddd502eac0054fdafa183715387264bf55b9d44c4` |
+| 3 | `instance` | [adjacencyPolicyDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicydecidable.md) | 56 | `declaration-track:df33eb6a8dfbfd8c838debd96429c15cf8998905a80d8de907efd8269e5de220` |
+| 4 | `theorem` | [AdjacencyPolicy.adjacent_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy-adjacent-symmetric.md) | 61 | `result-track:2ab2d0eac389e4d30a811d79bc01e060d587d243b9a35092d82255be867643f8` |
+| 5 | `theorem` | [AdjacencyPolicy.not_adjacent_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencypolicy-not-adjacent-self.md) | 68 | `result-track:47601deb7759ae41828ee1fe323e28e659af335566cf62260c4b58a4c7267323` |
+| 6 | `def` | [adjacencyInterface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencyinterface.md) | 78 | `declaration-track:5f34f68da2c29a9206994aee88336171764b6884c8096918dd84ab5e6789b3e9` |
+| 7 | `theorem` | [adjacencyInterface_subset_exterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencyinterface-subset-exterior.md) | 83 | `result-track:6cc669e27b87691c7c2d12de20b64e07133fefb4fd86b82aab75879cb64f38ae` |
+| 8 | `theorem` | [adjacencyInterface_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfacesAlternative.lean/declarations/adjacencyinterface-edge.md) | 90 | `result-track:c229614c67f0f538767ceb96a9983d06af4233c377ac0008b4be212f67fe2403` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

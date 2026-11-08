@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [congr](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congr.md) | 32 | `declaration-track:893a1a0ced3aa549b0c735d6fcf6525bd1d952981edf5ec7e6e110d598fc49c0` |
-| 2 | `def` | [congrRight](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congrright-source-edition-2.md) | 39 | `declaration-track:f8d2e7dc3df65298306e5d3bf45e2d342c9cf412ad4091c7c655db4cf2504ec4` |
-| 3 | `def` | [congrLeft](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congrleft.md) | 44 | `declaration-track:315fb989080d4b8eff87fa9f67ef355d7fa90015760bce9c7f1c56099dee673b` |
-| 4 | `def` | [congr](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congr-source-edition-2.md) | 54 | `declaration-track:bacfb3cc31fe32d38457879f1383a4991ab327cf4b954c245f6f33d8ba6a8c05` |
-| 5 | `def` | [congrRight](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congrright.md) | 59 | `declaration-track:d4625eb74ba3222f37ae510eb7789ae93e67a0b79f95e32378f50e707ade44a0` |
-| 6 | `def` | [quotientBot](../../../../GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/quotientbot.md) | 66 | `declaration-track:fbb7dc0ee43ade0161f981e6d18ade36256d0dc211022a0c16bc0ca9fde8a543` |
+| 1 | `def` | [congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congr.md) | 32 | `declaration-track:893a1a0ced3aa549b0c735d6fcf6525bd1d952981edf5ec7e6e110d598fc49c0` |
+| 2 | `def` | [congrRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congrright-source-edition-2.md) | 39 | `declaration-track:f8d2e7dc3df65298306e5d3bf45e2d342c9cf412ad4091c7c655db4cf2504ec4` |
+| 3 | `def` | [congrLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congrleft.md) | 44 | `declaration-track:315fb989080d4b8eff87fa9f67ef355d7fa90015760bce9c7f1c56099dee673b` |
+| 4 | `def` | [congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congr-source-edition-2.md) | 54 | `declaration-track:bacfb3cc31fe32d38457879f1383a4991ab327cf4b954c245f6f33d8ba6a8c05` |
+| 5 | `def` | [congrRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/congrright.md) | 59 | `declaration-track:d4625eb74ba3222f37ae510eb7789ae93e67a0b79f95e32378f50e707ade44a0` |
+| 6 | `def` | [quotientBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientNamespacedPublic.lean/declarations/quotientbot.md) | 66 | `declaration-track:fbb7dc0ee43ade0161f981e6d18ade36256d0dc211022a0c16bc0ca9fde8a543` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

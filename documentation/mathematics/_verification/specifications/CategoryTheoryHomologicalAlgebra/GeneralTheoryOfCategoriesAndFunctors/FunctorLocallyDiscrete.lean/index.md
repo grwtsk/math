@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pseudofunctorOfIsLocallyDiscrete](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/pseudofunctorofislocallydiscrete.md) | 36 | `declaration-track:c20dcee58c52e015eece77fc7d6af53c44f86988746edbab5f995c3dfcaabe23` |
-| 2 | `def` | [oplaxFunctorOfIsLocallyDiscrete](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/oplaxfunctorofislocallydiscrete.md) | 70 | `declaration-track:4cb27efb7c9ef6535f626d3fd0b92e3c37e890de3607bc5511e6b42e3b47a47c` |
-| 3 | `def` | [Functor.toPseudoFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/functor-topseudofunctor.md) | 113 | `declaration-track:3e1594137a5df3c4a6ebcf14330ff86094fc68f3d84bda2aa948a9cc498fbbee` |
-| 4 | `def` | [Functor.toOplaxFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/functor-tooplaxfunctor.md) | 123 | `declaration-track:e3ce70e07e46014708987c32c1943b30b7573b59a6acfada610fdf37438cacee` |
-| 5 | `def` | [mkPseudofunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/mkpseudofunctor.md) | 135 | `declaration-track:d49c30515dda09ae9a6663243f9b517977aa4cc89f036f89d203dca89fc0e593` |
+| 1 | `def` | [pseudofunctorOfIsLocallyDiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/pseudofunctorofislocallydiscrete.md) | 36 | `declaration-track:c20dcee58c52e015eece77fc7d6af53c44f86988746edbab5f995c3dfcaabe23` |
+| 2 | `def` | [oplaxFunctorOfIsLocallyDiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/oplaxfunctorofislocallydiscrete.md) | 70 | `declaration-track:4cb27efb7c9ef6535f626d3fd0b92e3c37e890de3607bc5511e6b42e3b47a47c` |
+| 3 | `def` | [Functor.toPseudoFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/functor-topseudofunctor.md) | 113 | `declaration-track:3e1594137a5df3c4a6ebcf14330ff86094fc68f3d84bda2aa948a9cc498fbbee` |
+| 4 | `def` | [Functor.toOplaxFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/functor-tooplaxfunctor.md) | 123 | `declaration-track:e3ce70e07e46014708987c32c1943b30b7573b59a6acfada610fdf37438cacee` |
+| 5 | `def` | [mkPseudofunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorLocallyDiscrete.lean/declarations/mkpseudofunctor.md) | 135 | `declaration-track:d49c30515dda09ae9a6663243f9b517977aa4cc89f036f89d203dca89fc0e593` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

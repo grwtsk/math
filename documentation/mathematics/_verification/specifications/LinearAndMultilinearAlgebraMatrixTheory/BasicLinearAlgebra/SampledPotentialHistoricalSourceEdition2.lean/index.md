@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sampledPotential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/sampledpotential.md) | 18 | `declaration-track:0cce848000a548d2486b8416e97ed94ff340c0ef8fed212c55322a688ad0575f` |
-| 2 | `def` | [transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer.md) | 20 | `declaration-track:1bb2213dca63779a811d1696790c3212fd7a834e12be043f58c244c8e18aa2e8` |
-| 3 | `theorem` | [transfer_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer-det.md) | 22 | `result-track:8a550fcb80b6a4f12dd4c9895b581c9ecbb5050ba1d69466c51b654f88295c41` |
-| 4 | `theorem` | [transfer_trace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer-trace.md) | 24 | `result-track:766591f90b0b396bd2d92abe80d9b654f878aaa592c38c8048ae0a27225b5eba` |
-| 5 | `theorem` | [transfer_unbounded_trace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer-unbounded-trace.md) | 26 | `result-track:48718c8a6599e58853269a50186216e9ec492542066446f96094ced121391fb1` |
+| 1 | `def` | [sampledPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/sampledpotential.md) | 18 | `declaration-track:0cce848000a548d2486b8416e97ed94ff340c0ef8fed212c55322a688ad0575f` |
+| 2 | `def` | [transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer.md) | 20 | `declaration-track:1bb2213dca63779a811d1696790c3212fd7a834e12be043f58c244c8e18aa2e8` |
+| 3 | `theorem` | [transfer_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer-det.md) | 22 | `result-track:8a550fcb80b6a4f12dd4c9895b581c9ecbb5050ba1d69466c51b654f88295c41` |
+| 4 | `theorem` | [transfer_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer-trace.md) | 24 | `result-track:766591f90b0b396bd2d92abe80d9b654f878aaa592c38c8048ae0a27225b5eba` |
+| 5 | `theorem` | [transfer_unbounded_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/declarations/transfer-unbounded-trace.md) | 26 | `result-track:48718c8a6599e58853269a50186216e9ec492542066446f96094ced121391fb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

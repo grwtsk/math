@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [foo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/foo.md) | 3 | `declaration-track:6a2a6f4f3b5cfe4f1ada7aa5cb8f893f31cd8e464d01c149b927dbf75aec4acb` |
-| 2 | `def` | [bar](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/bar.md) | 4 | `declaration-track:2093f14abe665d65e1740ea85c4cf7be30ad5bd0a68227c172bb69848fad9e9b` |
-| 3 | `opaque` | [qux](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/qux.md) | 12 | `declaration-track:de1f6e0bded766d15d469d5a8b6ef32ae02c11d91d80340141523be9561ed475` |
-| 4 | `def` | [quux](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/quux.md) | 13 | `declaration-track:aff4d51e486ab63cade1b3f1ef51e2b2bee6a9c113a381cc160242d0784d3bbe` |
+| 1 | `def` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/foo.md) | 3 | `declaration-track:6a2a6f4f3b5cfe4f1ada7aa5cb8f893f31cd8e464d01c149b927dbf75aec4acb` |
+| 2 | `def` | [bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/bar.md) | 4 | `declaration-track:2093f14abe665d65e1740ea85c4cf7be30ad5bd0a68227c172bb69848fad9e9b` |
+| 3 | `opaque` | [qux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/qux.md) | 12 | `declaration-track:de1f6e0bded766d15d469d5a8b6ef32ae02c11d91d80340141523be9561ed475` |
+| 4 | `def` | [quux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintOpaques.lean/declarations/quux.md) | 13 | `declaration-track:aff4d51e486ab63cade1b3f1ef51e2b2bee6a9c113a381cc160242d0784d3bbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

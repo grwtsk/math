@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sequence_tendsto](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/sequence-tendsto.md) | 26 | `result-track:49b38c91a9dfc0190c23055de15cb8d97bd45431425d8182e3fbf146dee850be` |
-| 2 | `theorem` | [sequence_scale_pos](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/sequence-scale-pos.md) | 31 | `result-track:9dec217d501876243433900ccf0e68772238373cc0f1883b90ee9196ad9f0038` |
-| 3 | `theorem` | [actualInsideStrip_sequence_scale_tendsto_zero](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestrip-sequence-scale-tendsto-zero.md) | 39 | `result-track:c2869a2395d8f45b4f446b2b338e547b58d5d36ae0df9b6f902b694ec26b1eb8` |
-| 4 | `theorem` | [actualInsideStripKernel_eventually_below](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-eventually-below.md) | 54 | `result-track:a27ae9d11762824efa0ef171d0da2fd15b2bdff45cd485650c4d1de3c324b4ce` |
-| 5 | `theorem` | [actualInsideStripKernel_tendsto_atBot](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-tendsto-atbot.md) | 75 | `result-track:a104e2fb17b7c436c75d2f08ab014e04e16722787ff3622ced4cfd0d55ab56c8` |
-| 6 | `theorem` | [actualInsideStripKernel_below_beyond](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-below-beyond.md) | 83 | `result-track:c0cbc8cfb8e6502a170c424b3a0bd6a846ae33cf6c68c4a2ef92e826eeba61f1` |
-| 7 | `theorem` | [actualInsideStripKernel_no_eventual_lower_bound](../../../../GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-no-eventual-lower-bound.md) | 93 | `result-track:c36dbf53725e1d43e09648cd2b5b4ea1c6f0fc901e859395026e976ecddc9e3f` |
+| 1 | `theorem` | [sequence_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/sequence-tendsto.md) | 26 | `result-track:49b38c91a9dfc0190c23055de15cb8d97bd45431425d8182e3fbf146dee850be` |
+| 2 | `theorem` | [sequence_scale_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/sequence-scale-pos.md) | 31 | `result-track:9dec217d501876243433900ccf0e68772238373cc0f1883b90ee9196ad9f0038` |
+| 3 | `theorem` | [actualInsideStrip_sequence_scale_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestrip-sequence-scale-tendsto-zero.md) | 39 | `result-track:c2869a2395d8f45b4f446b2b338e547b58d5d36ae0df9b6f902b694ec26b1eb8` |
+| 4 | `theorem` | [actualInsideStripKernel_eventually_below](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-eventually-below.md) | 54 | `result-track:a27ae9d11762824efa0ef171d0da2fd15b2bdff45cd485650c4d1de3c324b4ce` |
+| 5 | `theorem` | [actualInsideStripKernel_tendsto_atBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-tendsto-atbot.md) | 75 | `result-track:a104e2fb17b7c436c75d2f08ab014e04e16722787ff3622ced4cfd0d55ab56c8` |
+| 6 | `theorem` | [actualInsideStripKernel_below_beyond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-below-beyond.md) | 83 | `result-track:c0cbc8cfb8e6502a170c424b3a0bd6a846ae33cf6c68c4a2ef92e826eeba61f1` |
+| 7 | `theorem` | [actualInsideStripKernel_no_eventual_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualInsideStripKernelUnboundedNamespacedEdition2.lean/declarations/actualinsidestripkernel-no-eventual-lower-bound.md) | 93 | `result-track:c36dbf53725e1d43e09648cd2b5b4ea1c6f0fc901e859395026e976ecddc9e3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

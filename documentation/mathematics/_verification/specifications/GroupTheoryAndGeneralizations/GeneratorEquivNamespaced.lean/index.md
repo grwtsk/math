@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FreeAbelianGroup.basis](../../../../GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/freeabeliangroup-basis.md) | 37 | `declaration-track:1fceb387b05d2de8921785bbc740fe65596ae4fa300aa30f5ca5ceb46269eb21` |
-| 2 | `def` | [Equiv.ofFreeAbelianGroupLinearEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-offreeabeliangrouplinearequiv.md) | 41 | `declaration-track:e0f5a0295fe21539e3d31f051ee30f8db8d0fc0db77a6284ac9e642548ca0496` |
-| 3 | `def` | [Equiv.ofFreeAbelianGroupEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-offreeabeliangroupequiv.md) | 46 | `declaration-track:ce278dc71e6ad0798f2fc652ed6a3509025f79e68d76d80760f7de995a06228a` |
-| 4 | `def` | [Equiv.ofFreeGroupEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-offreegroupequiv.md) | 50 | `declaration-track:84ca6b49279e92565a9a49ef925cffd0049178a3036d26f9cacca47f589fa463` |
-| 5 | `def` | [Equiv.ofIsFreeGroupEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-ofisfreegroupequiv.md) | 54 | `declaration-track:f2d4fd7d02f6cce192b44f09fe8b581ce4d78c6500a4b72bc653a81051b0613c` |
+| 1 | `def` | [FreeAbelianGroup.basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/freeabeliangroup-basis.md) | 37 | `declaration-track:1fceb387b05d2de8921785bbc740fe65596ae4fa300aa30f5ca5ceb46269eb21` |
+| 2 | `def` | [Equiv.ofFreeAbelianGroupLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-offreeabeliangrouplinearequiv.md) | 41 | `declaration-track:e0f5a0295fe21539e3d31f051ee30f8db8d0fc0db77a6284ac9e642548ca0496` |
+| 3 | `def` | [Equiv.ofFreeAbelianGroupEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-offreeabeliangroupequiv.md) | 46 | `declaration-track:ce278dc71e6ad0798f2fc652ed6a3509025f79e68d76d80760f7de995a06228a` |
+| 4 | `def` | [Equiv.ofFreeGroupEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-offreegroupequiv.md) | 50 | `declaration-track:84ca6b49279e92565a9a49ef925cffd0049178a3036d26f9cacca47f589fa463` |
+| 5 | `def` | [Equiv.ofIsFreeGroupEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquivNamespaced.lean/declarations/equiv-ofisfreegroupequiv.md) | 54 | `declaration-track:f2d4fd7d02f6cce192b44f09fe8b581ce4d78c6500a4b72bc653a81051b0613c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

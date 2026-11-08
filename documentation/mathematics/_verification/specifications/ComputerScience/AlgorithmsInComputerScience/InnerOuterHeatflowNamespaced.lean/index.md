@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryMemoryContext](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/boundarymemorycontext.md) | 15 | `declaration-track:bc9719db246058913e47a3334b8058fa352b31ce4ffb4a50f446553cc8b7c05d` |
-| 2 | `def` | [defaultContext](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/defaultcontext.md) | 24 | `declaration-track:fb4405c1ce28a64c82ee37eb1221483ba4bd5aa85aa102cbca9c540e640b6daa` |
-| 3 | `def` | [finalClaim](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/finalclaim.md) | 48 | `declaration-track:2995f2b794e3081b3418db2ecbc76ff7f4360f462a57aad9880afb17a84d060d` |
-| 4 | `def` | [boundaryMemoryResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/boundarymemoryresidue.md) | 51 | `declaration-track:3b810414a0c67da2ae3bd534a0b2163cc67f8b74de0dd6f857e49e96e61eb9fc` |
-| 5 | `def` | [finalWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/finalwitness.md) | 60 | `declaration-track:be3b943e88ac1c2e2257d0fa06a7bc2314884668dafee0aafdd7da891603c5a3` |
-| 6 | `theorem` | [finalWitness_hasResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/finalwitness-hasresidue.md) | 64 | `result-track:d799e3224c340cd2bbbe8873f695be237026f3d69da780f6c0bce0738ad05837` |
-| 7 | `theorem` | [recallOperators_count](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/recalloperators-count.md) | 68 | `result-track:fc2d6138f868eee7036997bd8ff8cdda644019ff87e71f62d0314ea4ed37406e` |
-| 8 | `theorem` | [consolidationOperators_count](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/consolidationoperators-count.md) | 72 | `result-track:64d724bb76f9a50091a05ecb7bc1e6d6f37f009c7d4d9240452cba8d2d62be3b` |
+| 1 | `structure` | [BoundaryMemoryContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/boundarymemorycontext.md) | 15 | `declaration-track:bc9719db246058913e47a3334b8058fa352b31ce4ffb4a50f446553cc8b7c05d` |
+| 2 | `def` | [defaultContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/defaultcontext.md) | 24 | `declaration-track:fb4405c1ce28a64c82ee37eb1221483ba4bd5aa85aa102cbca9c540e640b6daa` |
+| 3 | `def` | [finalClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/finalclaim.md) | 48 | `declaration-track:2995f2b794e3081b3418db2ecbc76ff7f4360f462a57aad9880afb17a84d060d` |
+| 4 | `def` | [boundaryMemoryResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/boundarymemoryresidue.md) | 51 | `declaration-track:3b810414a0c67da2ae3bd534a0b2163cc67f8b74de0dd6f857e49e96e61eb9fc` |
+| 5 | `def` | [finalWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/finalwitness.md) | 60 | `declaration-track:be3b943e88ac1c2e2257d0fa06a7bc2314884668dafee0aafdd7da891603c5a3` |
+| 6 | `theorem` | [finalWitness_hasResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/finalwitness-hasresidue.md) | 64 | `result-track:d799e3224c340cd2bbbe8873f695be237026f3d69da780f6c0bce0738ad05837` |
+| 7 | `theorem` | [recallOperators_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/recalloperators-count.md) | 68 | `result-track:fc2d6138f868eee7036997bd8ff8cdda644019ff87e71f62d0314ea4ed37406e` |
+| 8 | `theorem` | [consolidationOperators_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflowNamespaced.lean/declarations/consolidationoperators-count.md) | 72 | `result-track:64d724bb76f9a50091a05ecb7bc1e6d6f37f009c7d4d9240452cba8d2d62be3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

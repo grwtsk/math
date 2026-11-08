@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasDerivAt_jetRatio](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/hasderivat-jetratio.md) | 31 | `result-track:c861d6acf9441effd781e6ade89514685535bed2599309f3d24a185b9a563968` |
-| 2 | `theorem` | [source_jet_det_nonpos_of_wronskian](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/source-jet-det-nonpos-of-wronskian.md) | 45 | `result-track:f8769b5dd5620a1a0c2b9c1f78039048d08fd0626923ab010068883e52ed1ff3` |
-| 3 | `theorem` | [residual_cross_nonpos_of_source_jet_det](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/residual-cross-nonpos-of-source-jet-det.md) | 109 | `result-track:069463dad0754c40c18288492eaa206e2c73115a8776c7076c5d0636e034b7dd` |
-| 4 | `theorem` | [integral_moment_cross_nonpos](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/integral-moment-cross-nonpos.md) | 122 | `result-track:adfb526ffeac7713141d54acbbaa4e5f87c26dc5f36c69b584471ae8ef83bffa` |
+| 1 | `theorem` | [hasDerivAt_jetRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/hasderivat-jetratio.md) | 31 | `result-track:c861d6acf9441effd781e6ade89514685535bed2599309f3d24a185b9a563968` |
+| 2 | `theorem` | [source_jet_det_nonpos_of_wronskian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/source-jet-det-nonpos-of-wronskian.md) | 45 | `result-track:f8769b5dd5620a1a0c2b9c1f78039048d08fd0626923ab010068883e52ed1ff3` |
+| 3 | `theorem` | [residual_cross_nonpos_of_source_jet_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/residual-cross-nonpos-of-source-jet-det.md) | 109 | `result-track:069463dad0754c40c18288492eaa206e2c73115a8776c7076c5d0636e034b7dd` |
+| 4 | `theorem` | [integral_moment_cross_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition1.lean/declarations/integral-moment-cross-nonpos.md) | 122 | `result-track:adfb526ffeac7713141d54acbbaa4e5f87c26dc5f36c69b584471ae8ef83bffa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

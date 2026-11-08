@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [completePsiSquare](../../../../MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/completepsisquare.md) | 27 | `declaration-track:7a68a05b9ee687251d26a88ab8163e743fb5c186dfdfb82bab99b84a27b788a3` |
-| 2 | `theorem` | [eventual_positive_square_floor_excludes_vanishing_factor](../../../../MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/eventual-positive-square-floor-excludes-vanishing-factor.md) | 29 | `result-track:fb22e7423d25c7e5470874aa044b705ada1b55deeb6d25f5751762852fa4ed10` |
-| 3 | `theorem` | [positive_log_power_factor_tends_to_zero](../../../../MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/positive-log-power-factor-tends-to-zero.md) | 44 | `result-track:45671f55bfb0fceb88479a18df959362f31d62db5950e8a6caf39b49c1d51ef6` |
-| 4 | `theorem` | [complete_psi_floor_excludes_negative_log_saving](../../../../MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/complete-psi-floor-excludes-negative-log-saving.md) | 52 | `result-track:8fc9a38ee603a6c6370181cacc8e122eea3e31a0913880afd96f851f4cc7905f` |
+| 1 | `def` | [completePsiSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/completepsisquare.md) | 27 | `declaration-track:7a68a05b9ee687251d26a88ab8163e743fb5c186dfdfb82bab99b84a27b788a3` |
+| 2 | `theorem` | [eventual_positive_square_floor_excludes_vanishing_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/eventual-positive-square-floor-excludes-vanishing-factor.md) | 29 | `result-track:fb22e7423d25c7e5470874aa044b705ada1b55deeb6d25f5751762852fa4ed10` |
+| 3 | `theorem` | [positive_log_power_factor_tends_to_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/positive-log-power-factor-tends-to-zero.md) | 44 | `result-track:45671f55bfb0fceb88479a18df959362f31d62db5950e8a6caf39b49c1d51ef6` |
+| 4 | `theorem` | [complete_psi_floor_excludes_negative_log_saving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnEventualCompletePsiSquareFloorExcludesEveryNegativeLogSavingEdition2.lean/declarations/complete-psi-floor-excludes-negative-log-saving.md) | 52 | `result-track:8fc9a38ee603a6c6370181cacc8e122eea3e31a0913880afd96f851f4cc7905f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

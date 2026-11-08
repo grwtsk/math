@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [reflect_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-re.md) | 34 | `result-track:45e8fd25d1e4716d1e9d066f9db84405d8f52459f6afdad18aaa90d766ef05d0` |
-| 2 | `lemma` | [reflect_im](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-im.md) | 35 | `result-track:995ead61df3a7f6ecb2bb9f7bc446dd7f541a5de6e6d1dea606f7fc5d25814c2` |
-| 3 | `lemma` | [reflect_reflect](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-reflect.md) | 37 | `result-track:12ca43082205dd21c812957cf92ec7c64d69f48e499465b46b7a7fe09c3d1340` |
-| 4 | `lemma` | [reflect_injective](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-injective.md) | 40 | `result-track:955fd08df554ae7a6eb87a934ae762d1ca8bb68bb0c439abc5a180badf5ad198` |
-| 5 | `lemma` | [reflect_mem_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-mem-window.md) | 47 | `result-track:a058e3ecb9501bdb3a8df190aa3949603a74405e9445ae429f1a421271a23572` |
-| 6 | `theorem` | [N_le_two_mul_half](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/n-le-two-mul-half.md) | 51 | `result-track:e5d3caf188f3bf0142f8957f6125523d06a8822a9890a1a13c37b87da8a4ec83` |
+| 1 | `lemma` | [reflect_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-re.md) | 34 | `result-track:45e8fd25d1e4716d1e9d066f9db84405d8f52459f6afdad18aaa90d766ef05d0` |
+| 2 | `lemma` | [reflect_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-im.md) | 35 | `result-track:995ead61df3a7f6ecb2bb9f7bc446dd7f541a5de6e6d1dea606f7fc5d25814c2` |
+| 3 | `lemma` | [reflect_reflect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-reflect.md) | 37 | `result-track:12ca43082205dd21c812957cf92ec7c64d69f48e499465b46b7a7fe09c3d1340` |
+| 4 | `lemma` | [reflect_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-injective.md) | 40 | `result-track:955fd08df554ae7a6eb87a934ae762d1ca8bb68bb0c439abc5a180badf5ad198` |
+| 5 | `lemma` | [reflect_mem_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/reflect-mem-window.md) | 47 | `result-track:a058e3ecb9501bdb3a8df190aa3949603a74405e9445ae429f1a421271a23572` |
+| 6 | `theorem` | [N_le_two_mul_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalvingNamespacedEdition1.lean/declarations/n-le-two-mul-half.md) | 51 | `result-track:e5d3caf188f3bf0142f8957f6125523d06a8822a9890a1a13c37b87da8a4ec83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

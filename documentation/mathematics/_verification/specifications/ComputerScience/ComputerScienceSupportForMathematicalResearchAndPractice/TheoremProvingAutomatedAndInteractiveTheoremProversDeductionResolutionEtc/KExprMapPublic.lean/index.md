@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KExprMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/kexprmap.md) | 23 | `declaration-track:404837eae30390c72e765916264e66c5ae03a3032cab411689999ea1b8ab8086` |
-| 2 | `def` | [KExprMap.find?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/kexprmap-find.md) | 28 | `declaration-track:c419e2cae725d5a9e864109c2e37b01fd885b6a0bedc447a18dd37cee8d83f15` |
-| 3 | `def` | [updateList](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/updatelist.md) | 37 | `declaration-track:1220e61fe17a36bf2fe998d2f4398040ddc83e2baeb92365d4f1be6804065c6e` |
-| 4 | `def` | [KExprMap.insert](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/kexprmap-insert.md) | 47 | `declaration-track:c56ecf506cdfcaa4322047442bddbe62ad2365ab5c2c8f5bbe1c4fe82f1caa95` |
+| 1 | `structure` | [KExprMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/kexprmap.md) | 23 | `declaration-track:404837eae30390c72e765916264e66c5ae03a3032cab411689999ea1b8ab8086` |
+| 2 | `def` | [KExprMap.find?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/kexprmap-find.md) | 28 | `declaration-track:c419e2cae725d5a9e864109c2e37b01fd885b6a0bedc447a18dd37cee8d83f15` |
+| 3 | `def` | [updateList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/updatelist.md) | 37 | `declaration-track:1220e61fe17a36bf2fe998d2f4398040ddc83e2baeb92365d4f1be6804065c6e` |
+| 4 | `def` | [KExprMap.insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KExprMapPublic.lean/declarations/kexprmap-insert.md) | 47 | `declaration-track:c56ecf506cdfcaa4322047442bddbe62ad2365ab5c2c8f5bbe1c4fe82f1caa95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

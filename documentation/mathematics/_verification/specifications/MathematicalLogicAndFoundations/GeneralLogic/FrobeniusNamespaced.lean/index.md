@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [frobeniusFixedPointPredicateStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobeniusfixedpointpredicatestatement.md) | 13 | `declaration-track:879c1e668145c60b2f5a287ed9decbf4c482ee9c3b2fb2116a45f22ec0df87e8` |
-| 2 | `def` | [frobeniusTraceMomentStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobeniustracemomentstatement.md) | 16 | `declaration-track:4e0a287a96196c696a2856c0126a9e4995b887b24008f385391e4c110518ebb2` |
-| 3 | `def` | [frobeniusIsNotBooleanStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobeniusisnotbooleanstatement.md) | 19 | `declaration-track:241a1f760f131244c633b2dce9b54c229be186b8f5be18a40c11b551f0ea437d` |
-| 4 | `theorem` | [frobenius_fixed_point_predicate_reference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobenius-fixed-point-predicate-reference.md) | 22 | `result-track:72df6ee6fbd95c094e3937821233945e1e4eb47c5972aa22da54faf5f68ebc87` |
-| 5 | `theorem` | [frobenius_trace_moment_reference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobenius-trace-moment-reference.md) | 25 | `result-track:0605be9c1489ad425d4deb29a4247b1f78e48cd3d87cf2876925d8f6ea90dadd` |
+| 1 | `def` | [frobeniusFixedPointPredicateStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobeniusfixedpointpredicatestatement.md) | 13 | `declaration-track:879c1e668145c60b2f5a287ed9decbf4c482ee9c3b2fb2116a45f22ec0df87e8` |
+| 2 | `def` | [frobeniusTraceMomentStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobeniustracemomentstatement.md) | 16 | `declaration-track:4e0a287a96196c696a2856c0126a9e4995b887b24008f385391e4c110518ebb2` |
+| 3 | `def` | [frobeniusIsNotBooleanStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobeniusisnotbooleanstatement.md) | 19 | `declaration-track:241a1f760f131244c633b2dce9b54c229be186b8f5be18a40c11b551f0ea437d` |
+| 4 | `theorem` | [frobenius_fixed_point_predicate_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobenius-fixed-point-predicate-reference.md) | 22 | `result-track:72df6ee6fbd95c094e3937821233945e1e4eb47c5972aa22da54faf5f68ebc87` |
+| 5 | `theorem` | [frobenius_trace_moment_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrobeniusNamespaced.lean/declarations/frobenius-trace-moment-reference.md) | 25 | `result-track:0605be9c1489ad425d4deb29a4247b1f78e48cd3d87cf2876925d8f6ea90dadd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

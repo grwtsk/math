@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_eq_polynomial](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-eq-polynomial.md) | 44 | `result-track:9bd39be0f333df36ec4755105ab581d1346cc1d974c6b986cc8d60b2bcf53e65` |
-| 2 | `theorem` | [exists_approx_polynomial_aux](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-approx-polynomial-aux.md) | 69 | `result-track:6f1e02c2f2097d60a150902195ccb7e2e0877caa414ef2d38a776c15e47b727c` |
-| 3 | `theorem` | [exists_approx_polynomial](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-approx-polynomial.md) | 110 | `result-track:c5206b60bce563bbd23b69fd8e426f2059c78b480ab370486188847c3337bca3` |
-| 4 | `theorem` | [cardPowDegree_anti_archimedean](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/cardpowdegree-anti-archimedean.md) | 153 | `result-track:136c8c43956ea458e72163974f586ba41b058c772196e673e6ea26ded9db9872` |
-| 5 | `theorem` | [exists_partition_polynomial_aux](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-partition-polynomial-aux.md) | 177 | `result-track:f25557005ad43f338e1cd73acbf5453504650ba295a7624c37e300b62fb31d71` |
-| 6 | `theorem` | [exists_partition_polynomial](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-partition-polynomial.md) | 245 | `result-track:15e79a7401cb1fa67959bc0b4e62ccc2497163a0ddb1f229e0d5c4a99bcf60cd` |
-| 7 | `def` | [cardPowDegreeIsAdmissible](../../../../NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/cardpowdegreeisadmissible.md) | 254 | `declaration-track:345dd1331cb2f4b90d2663dfd02b76e35f817b657327bcd8764f6ed32e3e98aa` |
+| 1 | `theorem` | [exists_eq_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-eq-polynomial.md) | 44 | `result-track:9bd39be0f333df36ec4755105ab581d1346cc1d974c6b986cc8d60b2bcf53e65` |
+| 2 | `theorem` | [exists_approx_polynomial_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-approx-polynomial-aux.md) | 69 | `result-track:6f1e02c2f2097d60a150902195ccb7e2e0877caa414ef2d38a776c15e47b727c` |
+| 3 | `theorem` | [exists_approx_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-approx-polynomial.md) | 110 | `result-track:c5206b60bce563bbd23b69fd8e426f2059c78b480ab370486188847c3337bca3` |
+| 4 | `theorem` | [cardPowDegree_anti_archimedean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/cardpowdegree-anti-archimedean.md) | 153 | `result-track:136c8c43956ea458e72163974f586ba41b058c772196e673e6ea26ded9db9872` |
+| 5 | `theorem` | [exists_partition_polynomial_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-partition-polynomial-aux.md) | 177 | `result-track:f25557005ad43f338e1cd73acbf5453504650ba295a7624c37e300b62fb31d71` |
+| 6 | `theorem` | [exists_partition_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/exists-partition-polynomial.md) | 245 | `result-track:15e79a7401cb1fa67959bc0b4e62ccc2497163a0ddb1f229e0d5c4a99bcf60cd` |
+| 7 | `def` | [cardPowDegreeIsAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleCardPowDegreeNamespacedPublic.lean/declarations/cardpowdegreeisadmissible.md) | 254 | `declaration-track:345dd1331cb2f4b90d2663dfd02b76e35f817b657327bcd8764f6ed32e3e98aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

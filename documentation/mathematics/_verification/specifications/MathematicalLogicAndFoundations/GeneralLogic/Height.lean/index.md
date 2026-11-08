@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Height.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Height.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Height.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Height.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Atomize.Formal.RawDerivation` — import line 20; external provider; requires a separately pinned dependency.
-- [Indexed Tree And Root](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexedTreeAndRoot.lean/index.md) — import line 22; pinned internal source present.
+- [Indexed Tree And Root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexedTreeAndRoot.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [height](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Height.lean/declarations/height.md) | 86 | `declaration-track:993c6920d73b52a93551c5fd9a7d65339c150b6e6f65fa8f618ffc9856654a07` |
-| 2 | `def` | [heightAll](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Height.lean/declarations/heightall.md) | 102 | `declaration-track:44fe5e5feb06de0efc824ea455538e9e53b3cb2a38a95cb52e9da1d6157859d4` |
+| 1 | `def` | [height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Height.lean/declarations/height.md) | 86 | `declaration-track:993c6920d73b52a93551c5fd9a7d65339c150b6e6f65fa8f618ffc9856654a07` |
+| 2 | `def` | [heightAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Height.lean/declarations/heightall.md) | 102 | `declaration-track:44fe5e5feb06de0efc824ea455538e9e53b3cb2a38a95cb52e9da1d6157859d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

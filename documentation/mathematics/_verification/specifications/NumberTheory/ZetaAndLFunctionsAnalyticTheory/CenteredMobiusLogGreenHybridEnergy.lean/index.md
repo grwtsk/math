@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHybridTail`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHybridTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Analysis.PSeries` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenLowPrincipalHead](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/greenlowprincipalhead.md) | 14 | `declaration-track:74feb80464eebb0ffd4b82a006919d977f530c5ed43a1e6f509150aefda65caf` |
-| 2 | `theorem` | [card_greenLowPrincipalHead_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/card-greenlowprincipalhead-le.md) | 16 | `result-track:58763146943d3e6d0a2bbd7c19d8b6560f17994ad821e8b1664fbaeec4234067` |
-| 3 | `def` | [greenLowPrincipalResidualEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/greenlowprincipalresidualenergy.md) | 22 | `declaration-track:6823b3ac227715228dba91938c62cb2ee9d31aa3578ddc90ac3f61e73b424992` |
-| 4 | `theorem` | [greenLowPrincipalResidualEnergy_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/greenlowprincipalresidualenergy-le.md) | 24 | `result-track:094445758c3500dca3e1a7f28034a9387d561cfd3b07dd6a656f8a411a4c526e` |
-| 5 | `theorem` | [exists_reciprocalSquarePartialSumBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/exists-reciprocalsquarepartialsumbound.md) | 54 | `result-track:59813d2731f4427bf82f3cf6f409b5dc8511fdd2a0b595576e2f4f0a8a32192a` |
+| 1 | `def` | [greenLowPrincipalHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/greenlowprincipalhead.md) | 14 | `declaration-track:74feb80464eebb0ffd4b82a006919d977f530c5ed43a1e6f509150aefda65caf` |
+| 2 | `theorem` | [card_greenLowPrincipalHead_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/card-greenlowprincipalhead-le.md) | 16 | `result-track:58763146943d3e6d0a2bbd7c19d8b6560f17994ad821e8b1664fbaeec4234067` |
+| 3 | `def` | [greenLowPrincipalResidualEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/greenlowprincipalresidualenergy.md) | 22 | `declaration-track:6823b3ac227715228dba91938c62cb2ee9d31aa3578ddc90ac3f61e73b424992` |
+| 4 | `theorem` | [greenLowPrincipalResidualEnergy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/greenlowprincipalresidualenergy-le.md) | 24 | `result-track:094445758c3500dca3e1a7f28034a9387d561cfd3b07dd6a656f8a411a4c526e` |
+| 5 | `theorem` | [exists_reciprocalSquarePartialSumBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridEnergy.lean/declarations/exists-reciprocalsquarepartialsumbound.md) | 54 | `result-track:59813d2731f4427bf82f3cf6f409b5dc8511fdd2a0b595576e2f4f0a8a32192a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

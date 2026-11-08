@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PerfectPrismaticTotalization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/perfectprismatictotalization.md) | 35 | `declaration-track:57caeec7997d5bf540901f11432008c7374c09cbf1d936a721551ef9f8984b06` |
-| 2 | `def` | [certifiedPrismaticReactionDetEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/certifiedprismaticreactiondetequiv.md) | 82 | `declaration-track:f3a818a609bd1c0d946a145860d4feb8486059418207774772df4f644b830c9f` |
-| 3 | `theorem` | [certifiedPrismaticReactionDetEquiv_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/certifiedprismaticreactiondetequiv-id.md) | 98 | `result-track:65c2f502dd24657ef063b2366de23e75f2d090eede10f4a67d62d6b6ae0be15a` |
-| 4 | `theorem` | [certifiedPrismaticReactionDetEquiv_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/certifiedprismaticreactiondetequiv-comp.md) | 112 | `result-track:ebcb1e09090aa5ecb0042d435e84d5a4a112a80a9c356f39fe39765dee4bcbc3` |
+| 1 | `structure` | [PerfectPrismaticTotalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/perfectprismatictotalization.md) | 35 | `declaration-track:57caeec7997d5bf540901f11432008c7374c09cbf1d936a721551ef9f8984b06` |
+| 2 | `def` | [certifiedPrismaticReactionDetEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/certifiedprismaticreactiondetequiv.md) | 82 | `declaration-track:f3a818a609bd1c0d946a145860d4feb8486059418207774772df4f644b830c9f` |
+| 3 | `theorem` | [certifiedPrismaticReactionDetEquiv_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/certifiedprismaticreactiondetequiv-id.md) | 98 | `result-track:65c2f502dd24657ef063b2366de23e75f2d090eede10f4a67d62d6b6ae0be15a` |
+| 4 | `theorem` | [certifiedPrismaticReactionDetEquiv_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantNamespaced.lean/declarations/certifiedprismaticreactiondetequiv-comp.md) | 112 | `result-track:ebcb1e09090aa5ecb0042d435e84d5a4a112a80a9c356f39fe39765dee4bcbc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

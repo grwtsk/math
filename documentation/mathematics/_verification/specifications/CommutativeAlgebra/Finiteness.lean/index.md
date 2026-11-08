@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Finiteness.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Finiteness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [of_isLocalizedModule](../../../../CommutativeAlgebra/Finiteness.lean/declarations/of-islocalizedmodule.md) | 41 | `result-track:3c31058f4dc4d8e7e3af22014e8ef7e03d34882f6a0450e26c9b1de9700bb8ca` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/Finiteness.lean/declarations/instance.md) | 60 | `declaration-track:2c5768221dd2ca8c1833dc35a895c173eb75d21f99dee96cc1b6a1c048eb8b84` |
-| 3 | `theorem` | [of_localizationSpan_finite'](../../../../CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan-finite-source-edition-2.md) | 76 | `result-track:f87af6c676ec7e6f5e7ffd269f3d932483230cce15e941c91af8747c6cdd5b58` |
-| 4 | `theorem` | [of_localizationSpan'](../../../../CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan.md) | 112 | `result-track:2c9c5d76f11e586d069cc8c5ec375a713cdf0bec7c59b0ff2f037df2959ece60` |
-| 5 | `theorem` | [of_localizationSpan_finite](../../../../CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan-finite.md) | 135 | `result-track:ae7ae2c0930cb40c60dd442f91679e4b05e1b4be49e50a830eb2af7606044879` |
-| 6 | `theorem` | [of_localizationSpan](../../../../CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan-source-edition-2.md) | 145 | `result-track:69911377212c780f24fdcbf416180dd0edff12d1d1df3adc98a972eebc280cca` |
-| 7 | `lemma` | [fg_of_localizationSpan](../../../../CommutativeAlgebra/Finiteness.lean/declarations/fg-of-localizationspan.md) | 164 | `result-track:a395ec36885d2cc3e07ce1f8e4cf06fd5b288e87a6af783656c21a1a20fb456e` |
-| 8 | `lemma` | [RingHom.ker_fg_of_localizationSpan](../../../../CommutativeAlgebra/Finiteness.lean/declarations/ringhom-ker-fg-of-localizationspan.md) | 179 | `result-track:0b2aa2b1b423d537ba89a86ca31988a3a28540f2be01f99d0dc51f71b7c1d3f7` |
+| 1 | `lemma` | [of_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/of-islocalizedmodule.md) | 41 | `result-track:3c31058f4dc4d8e7e3af22014e8ef7e03d34882f6a0450e26c9b1de9700bb8ca` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/instance.md) | 60 | `declaration-track:2c5768221dd2ca8c1833dc35a895c173eb75d21f99dee96cc1b6a1c048eb8b84` |
+| 3 | `theorem` | [of_localizationSpan_finite'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan-finite-source-edition-2.md) | 76 | `result-track:f87af6c676ec7e6f5e7ffd269f3d932483230cce15e941c91af8747c6cdd5b58` |
+| 4 | `theorem` | [of_localizationSpan'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan.md) | 112 | `result-track:2c9c5d76f11e586d069cc8c5ec375a713cdf0bec7c59b0ff2f037df2959ece60` |
+| 5 | `theorem` | [of_localizationSpan_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan-finite.md) | 135 | `result-track:ae7ae2c0930cb40c60dd442f91679e4b05e1b4be49e50a830eb2af7606044879` |
+| 6 | `theorem` | [of_localizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/of-localizationspan-source-edition-2.md) | 145 | `result-track:69911377212c780f24fdcbf416180dd0edff12d1d1df3adc98a972eebc280cca` |
+| 7 | `lemma` | [fg_of_localizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/fg-of-localizationspan.md) | 164 | `result-track:a395ec36885d2cc3e07ce1f8e4cf06fd5b288e87a6af783656c21a1a20fb456e` |
+| 8 | `lemma` | [RingHom.ker_fg_of_localizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Finiteness.lean/declarations/ringhom-ker-fg-of-localizationspan.md) | 179 | `result-track:0b2aa2b1b423d537ba89a86ca31988a3a28540f2be01f99d0dc51f71b7c1d3f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

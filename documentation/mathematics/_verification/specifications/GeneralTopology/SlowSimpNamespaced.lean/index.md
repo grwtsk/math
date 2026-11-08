@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SlowSimpNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SlowSimpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PointedSpace](../../../../GeneralTopology/SlowSimpNamespaced.lean/declarations/pointedspace.md) | 31 | `declaration-track:c03bc1a4795cba5969bea9ea4306935b338f2af90787e1fa56380c187f5780a4` |
-| 2 | `structure` | [Hom](../../../../GeneralTopology/SlowSimpNamespaced.lean/declarations/hom.md) | 40 | `declaration-track:93773f8b8410a8358ed7a0c4ef9b804f489a01c8b9c4519ab42878c49d5999d0` |
-| 3 | `def` | [id](../../../../GeneralTopology/SlowSimpNamespaced.lean/declarations/id.md) | 48 | `declaration-track:2f8ca2dbe463793f445c8c57a6e7efc69565a4e2363a6eb75a90307b20083d61` |
-| 4 | `def` | [comp](../../../../GeneralTopology/SlowSimpNamespaced.lean/declarations/comp.md) | 50 | `declaration-track:60de9aaf7a845b02ac5b7f2ba37de604edf5bfaebdb7ad618be2b545775aaba9` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/SlowSimpNamespaced.lean/declarations/instance.md) | 55 | `declaration-track:d59148d363df1f534cee7da687e4a2133ac39e5873cd22bc6b0de45d7dbd00fe` |
-| 6 | `def` | [PointedSpaceEquiv_inverse](../../../../GeneralTopology/SlowSimpNamespaced.lean/declarations/pointedspaceequiv-inverse.md) | 63 | `declaration-track:8add8a27b70ae98ef5e196d9da7eb5b5dd6b95e5a745fee29db31b89f5dd6582` |
+| 1 | `structure` | [PointedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/declarations/pointedspace.md) | 31 | `declaration-track:c03bc1a4795cba5969bea9ea4306935b338f2af90787e1fa56380c187f5780a4` |
+| 2 | `structure` | [Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/declarations/hom.md) | 40 | `declaration-track:93773f8b8410a8358ed7a0c4ef9b804f489a01c8b9c4519ab42878c49d5999d0` |
+| 3 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/declarations/id.md) | 48 | `declaration-track:2f8ca2dbe463793f445c8c57a6e7efc69565a4e2363a6eb75a90307b20083d61` |
+| 4 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/declarations/comp.md) | 50 | `declaration-track:60de9aaf7a845b02ac5b7f2ba37de604edf5bfaebdb7ad618be2b545775aaba9` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/declarations/instance.md) | 55 | `declaration-track:d59148d363df1f534cee7da687e4a2133ac39e5873cd22bc6b0de45d7dbd00fe` |
+| 6 | `def` | [PointedSpaceEquiv_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimpNamespaced.lean/declarations/pointedspaceequiv-inverse.md) | 63 | `declaration-track:8add8a27b70ae98ef5e196d9da7eb5b5dd6b95e5a745fee29db31b89f5dd6582` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

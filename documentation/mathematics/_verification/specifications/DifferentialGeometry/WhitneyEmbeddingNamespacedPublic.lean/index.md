@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [embeddingPiTangent](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent.md) | 61 | `declaration-track:3054549ad84fab2dc3f65b82562a53e914efebc6c9ac3c4e745ca50fd8a8e179` |
-| 2 | `theorem` | [embeddingPiTangent_coe](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-coe.md) | 68 | `result-track:50abff92538f6d9617220eb5247c1c83eb896e3eb4689e94a4ef7475d244e24b` |
-| 3 | `theorem` | [embeddingPiTangent_injOn](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-injon.md) | 72 | `result-track:cb822a49b272cbd393d45369bc13d5b4a1cd37773c6ae7fd85bfdbe587e0fb38` |
-| 4 | `theorem` | [embeddingPiTangent_injective](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-injective.md) | 81 | `result-track:d339715d3110266acdf3df0876f27fbe42cd8997878f4a868f217b1f0fd848d1` |
-| 5 | `theorem` | [comp_embeddingPiTangent_mfderiv](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/comp-embeddingpitangent-mfderiv.md) | 85 | `result-track:a142e35bd59858dc9c9c05afb38a54a86e6bedab894594ad47bd59b2bd9ae885` |
-| 6 | `theorem` | [embeddingPiTangent_ker_mfderiv](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-ker-mfderiv.md) | 103 | `result-track:e5aeba970fa511482ce360002b1b17c2d2fa40090cbefc468c88eaf720ac51e1` |
-| 7 | `theorem` | [embeddingPiTangent_injective_mfderiv](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-injective-mfderiv.md) | 111 | `result-track:8fbd241f2304eed1630650e619c0949c4b6940047111f87de15c43e3d0026a42` |
-| 8 | `theorem` | [exists_immersion_euclidean](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/exists-immersion-euclidean.md) | 118 | `result-track:d743f5c8d3075a03c9c3ff188faa6932d267830ca2693dec32922b4cc15178f4` |
-| 9 | `theorem` | [exists_embedding_euclidean_of_compact](../../../../DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/exists-embedding-euclidean-of-compact.md) | 140 | `result-track:45102f10b598633e8f413d3b082c01fb971e32457105948b288bad9b92818edf` |
+| 1 | `def` | [embeddingPiTangent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent.md) | 61 | `declaration-track:3054549ad84fab2dc3f65b82562a53e914efebc6c9ac3c4e745ca50fd8a8e179` |
+| 2 | `theorem` | [embeddingPiTangent_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-coe.md) | 68 | `result-track:50abff92538f6d9617220eb5247c1c83eb896e3eb4689e94a4ef7475d244e24b` |
+| 3 | `theorem` | [embeddingPiTangent_injOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-injon.md) | 72 | `result-track:cb822a49b272cbd393d45369bc13d5b4a1cd37773c6ae7fd85bfdbe587e0fb38` |
+| 4 | `theorem` | [embeddingPiTangent_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-injective.md) | 81 | `result-track:d339715d3110266acdf3df0876f27fbe42cd8997878f4a868f217b1f0fd848d1` |
+| 5 | `theorem` | [comp_embeddingPiTangent_mfderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/comp-embeddingpitangent-mfderiv.md) | 85 | `result-track:a142e35bd59858dc9c9c05afb38a54a86e6bedab894594ad47bd59b2bd9ae885` |
+| 6 | `theorem` | [embeddingPiTangent_ker_mfderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-ker-mfderiv.md) | 103 | `result-track:e5aeba970fa511482ce360002b1b17c2d2fa40090cbefc468c88eaf720ac51e1` |
+| 7 | `theorem` | [embeddingPiTangent_injective_mfderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/embeddingpitangent-injective-mfderiv.md) | 111 | `result-track:8fbd241f2304eed1630650e619c0949c4b6940047111f87de15c43e3d0026a42` |
+| 8 | `theorem` | [exists_immersion_euclidean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/exists-immersion-euclidean.md) | 118 | `result-track:d743f5c8d3075a03c9c3ff188faa6932d267830ca2693dec32922b4cc15178f4` |
+| 9 | `theorem` | [exists_embedding_euclidean_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbeddingNamespacedPublic.lean/declarations/exists-embedding-euclidean-of-compact.md) | 140 | `result-track:45102f10b598633e8f413d3b082c01fb971e32457105948b288bad9b92818edf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

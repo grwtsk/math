@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Valuation](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/declarations/valuation.md) | 24 | `declaration-track:18bdbe1abe52971e01d31274541aa16db7da1b0831790734618a5fd9409c38aa` |
-| 2 | `inductive` | [Formula](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/declarations/formula.md) | 27 | `declaration-track:bdb0eb24cc7adc8092c5a1320d266a8add06d3002ca56e04a6c7dd365a073b86` |
-| 3 | `def` | [const](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/declarations/const.md) | 43 | `declaration-track:2ccf8894537f4e75757f5b491bb0c51b5311fd475f31a7d2f3dabe30396c218a` |
+| 1 | `abbrev` | [Valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/declarations/valuation.md) | 24 | `declaration-track:18bdbe1abe52971e01d31274541aa16db7da1b0831790734618a5fd9409c38aa` |
+| 2 | `inductive` | [Formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/declarations/formula.md) | 27 | `declaration-track:bdb0eb24cc7adc8092c5a1320d266a8add06d3002ca56e04a6c7dd365a073b86` |
+| 3 | `def` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierNamespacedValuation.lean/declarations/const.md) | 43 | `declaration-track:2ccf8894537f4e75757f5b491bb0c51b5311fd475f31a7d2f3dabe30396c218a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

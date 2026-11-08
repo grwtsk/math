@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerFactorFourPropagation`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerFactorFourPropagation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cyclicFejerDistance_le_twoX](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistance-le-twox.md) | 13 | `result-track:95cac23f6445d532fd25285ae443300b53215d34597718b98b1ceb3c12ba9afa` |
-| 2 | `theorem` | [cyclicFejerDistance_eq_imp_boundary_pair](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistance-eq-imp-boundary-pair.md) | 28 | `result-track:68bebace45561838eab677bc16bec1821d6ddc896381033282990042fe2b8391` |
-| 3 | `def` | [cyclicFejerDistanceFiber](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistancefiber.md) | 62 | `declaration-track:f8b30746f1e635d85078fc9334e7219dedc784ef16fc199299d64788e4bdc6f7` |
-| 4 | `theorem` | [cyclicFejerDistanceFiber_subset_pair](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistancefiber-subset-pair.md) | 68 | `result-track:07b333fc63e26ecf92dd49a7b2babc1a8632035ceb8b5dd3448fa80baee198a5` |
-| 5 | `theorem` | [cyclicFejerDistanceFiber_card_le_two](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistancefiber-card-le-two.md) | 82 | `result-track:a893527fb5bbb41439ada89d1e1bdb9bc99473b99b7dc435417aa9fcb4c9845b` |
-| 6 | `structure` | [CyclicDistanceFiberData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicdistancefiberdata-source-edition-2.md) | 93 | `declaration-track:60f8af4b2fcd52fb8ba2c498498b0aaa94bdd5079c82ca6a435cd12d814c1877` |
-| 7 | `def` | [cyclicDistanceFiberData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicdistancefiberdata.md) | 102 | `declaration-track:10e04f7609b485a969b283282c72ea533f14f3d87c10658a0c2f6e0a908670db` |
+| 1 | `theorem` | [cyclicFejerDistance_le_twoX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistance-le-twox.md) | 13 | `result-track:95cac23f6445d532fd25285ae443300b53215d34597718b98b1ceb3c12ba9afa` |
+| 2 | `theorem` | [cyclicFejerDistance_eq_imp_boundary_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistance-eq-imp-boundary-pair.md) | 28 | `result-track:68bebace45561838eab677bc16bec1821d6ddc896381033282990042fe2b8391` |
+| 3 | `def` | [cyclicFejerDistanceFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistancefiber.md) | 62 | `declaration-track:f8b30746f1e635d85078fc9334e7219dedc784ef16fc199299d64788e4bdc6f7` |
+| 4 | `theorem` | [cyclicFejerDistanceFiber_subset_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistancefiber-subset-pair.md) | 68 | `result-track:07b333fc63e26ecf92dd49a7b2babc1a8632035ceb8b5dd3448fa80baee198a5` |
+| 5 | `theorem` | [cyclicFejerDistanceFiber_card_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicfejerdistancefiber-card-le-two.md) | 82 | `result-track:a893527fb5bbb41439ada89d1e1bdb9bc99473b99b7dc435417aa9fcb4c9845b` |
+| 6 | `structure` | [CyclicDistanceFiberData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicdistancefiberdata-source-edition-2.md) | 93 | `declaration-track:60f8af4b2fcd52fb8ba2c498498b0aaa94bdd5079c82ca6a435cd12d814c1877` |
+| 7 | `def` | [cyclicDistanceFiberData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/declarations/cyclicdistancefiberdata.md) | 102 | `declaration-track:10e04f7609b485a969b283282c72ea533f14f3d87c10658a0c2f6e0a908670db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

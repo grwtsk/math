@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CandidateSpanFamily](../../../../../ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/declarations/candidatespanfamily.md) | 15 | `declaration-track:58050796e9aa4b00d06a59ce8feb2305dd8a76c242a08e891fa36bd40ef8692d` |
-| 2 | `def` | [CandidateSpanFamily.Contains](../../../../../ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/declarations/candidatespanfamily-contains.md) | 29 | `declaration-track:a19afbfbf270a0314fd82f2190c2bd2391485956a5e012a901e693aa5bd5ae2b` |
-| 3 | `theorem` | [CandidateSpanFamily.contains_required](../../../../../ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/declarations/candidatespanfamily-contains-required.md) | 36 | `result-track:7c508dffbb265ba651fea82b7cd9c228fabe31e7a49b913ef8621fe6ec18beaa` |
+| 1 | `structure` | [CandidateSpanFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/declarations/candidatespanfamily.md) | 15 | `declaration-track:58050796e9aa4b00d06a59ce8feb2305dd8a76c242a08e891fa36bd40ef8692d` |
+| 2 | `def` | [CandidateSpanFamily.Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/declarations/candidatespanfamily-contains.md) | 29 | `declaration-track:a19afbfbf270a0314fd82f2190c2bd2391485956a5e012a901e693aa5bd5ae2b` |
+| 3 | `theorem` | [CandidateSpanFamily.contains_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpanFamilyNamespaced.lean/declarations/candidatespanfamily-contains-required.md) | 36 | `result-track:7c508dffbb265ba651fea82b7cd9c228fabe31e7a49b913ef8621fe6ec18beaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

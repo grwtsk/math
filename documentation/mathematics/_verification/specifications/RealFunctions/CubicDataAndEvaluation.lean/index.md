@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CubicDataAndEvaluation.lean/index.md) · [Full source](../../../../RealFunctions/CubicDataAndEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicDataAndEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicDataAndEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Cubic](../../../../RealFunctions/CubicDataAndEvaluation.lean/declarations/cubic.md) | 37 | `declaration-track:bc7563f78d4cf345a1e250361557c759fe63e15ba2d62b857f105b5d9733fedc` |
-| 2 | `def` | [eval](../../../../RealFunctions/CubicDataAndEvaluation.lean/declarations/eval.md) | 46 | `declaration-track:6e1c8135fe59fe08108a965464e8a6c7656926fe7b7b7a1bac0ed833106fb78c` |
+| 1 | `structure` | [Cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicDataAndEvaluation.lean/declarations/cubic.md) | 37 | `declaration-track:bc7563f78d4cf345a1e250361557c759fe63e15ba2d62b857f105b5d9733fedc` |
+| 2 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicDataAndEvaluation.lean/declarations/eval.md) | 46 | `declaration-track:6e1c8135fe59fe08108a965464e8a6c7656926fe7b7b7a1bac0ed833106fb78c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

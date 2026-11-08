@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StackWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/declarations/stackwitness.md) | 26 | `declaration-track:0710dc542cbcb9535ecc06c35ef53b2712d23c4acc8fd9185e63475acbe5f4aa` |
-| 2 | `theorem` | [stack_witness_certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/declarations/stack-witness-certified.md) | 31 | `result-track:6af3f774276d2eec303682781dbce4dce30021b3c88030cf83a730cb15e3d198` |
+| 1 | `structure` | [StackWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/declarations/stackwitness.md) | 26 | `declaration-track:0710dc542cbcb9535ecc06c35ef53b2712d23c4acc8fd9185e63475acbe5f4aa` |
+| 2 | `theorem` | [stack_witness_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessNamespacedStackWitness.lean/declarations/stack-witness-certified.md) | 31 | `result-track:6af3f774276d2eec303682781dbce4dce30021b3c88030cf83a730cb15e3d198` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

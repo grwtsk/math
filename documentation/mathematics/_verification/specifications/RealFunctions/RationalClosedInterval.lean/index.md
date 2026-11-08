@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RationalClosedInterval.lean/index.md) · [Full source](../../../../RealFunctions/RationalClosedInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Interval](../../../../RealFunctions/RationalClosedInterval.lean/declarations/interval.md) | 27 | `declaration-track:520fe9007c39ed2d1845344604573423bb9dc8ca785a51c1e1b879b5622bd1f2` |
-| 2 | `def` | [Contains](../../../../RealFunctions/RationalClosedInterval.lean/declarations/contains.md) | 36 | `declaration-track:fb722beaca8d36ab747ca5248896e69b3c933657a70cfb5b7bb5cc9f430902e4` |
-| 3 | `def` | [width](../../../../RealFunctions/RationalClosedInterval.lean/declarations/width.md) | 40 | `declaration-track:dd3b3c8f5a9dbd4638f7b0b9081d69767e132b7610c8e35d04bee2c8b82b4e22` |
-| 4 | `theorem` | [width_nonneg](../../../../RealFunctions/RationalClosedInterval.lean/declarations/width-nonneg.md) | 44 | `result-track:6fa36e5d0c4f9f317c893a299558946c8274f6d7f944637fb5f1f26d0b94b6ff` |
-| 5 | `theorem` | [cast_width](../../../../RealFunctions/RationalClosedInterval.lean/declarations/cast-width.md) | 49 | `result-track:fbf8a6aca8afb4a7a1142d7fc640c59d99b806ff483c362112bad0c4b500315a` |
-| 6 | `def` | [singleton](../../../../RealFunctions/RationalClosedInterval.lean/declarations/singleton.md) | 55 | `declaration-track:b5c75a3594bb8697a336af4842099b583677a22eff6fe61bd6b9a7cf857715ba` |
-| 7 | `theorem` | [singleton_width](../../../../RealFunctions/RationalClosedInterval.lean/declarations/singleton-width.md) | 60 | `result-track:90522cdc51e9c974a7d8b0e0adf44d326a56109789a75358afed88b56bd7c7da` |
-| 8 | `theorem` | [singleton_contains](../../../../RealFunctions/RationalClosedInterval.lean/declarations/singleton-contains.md) | 65 | `result-track:b67ef73ece9925737d656aa8fdcbb4557ad2d9b6513953724e062d9653493728` |
-| 9 | `def` | [add](../../../../RealFunctions/RationalClosedInterval.lean/declarations/add.md) | 70 | `declaration-track:5635bf5540016ea9e2dc9954607f62253e7b9c06fc14526d7349d3e7dc1789c4` |
-| 10 | `theorem` | [contains_add](../../../../RealFunctions/RationalClosedInterval.lean/declarations/contains-add.md) | 76 | `result-track:0196346c8c310af569e953dc854be2d74c040a39d00ce8845f0d48c4aec7ba9e` |
-| 11 | `theorem` | [add_width](../../../../RealFunctions/RationalClosedInterval.lean/declarations/add-width.md) | 88 | `result-track:ed82c1146b251ebd9f2abf54d11081a1b895399d8ae5176cd8997e1be130bf2f` |
-| 12 | `theorem` | [narrow_does_not_imply_contains_fixture](../../../../RealFunctions/RationalClosedInterval.lean/declarations/narrow-does-not-imply-contains-fixture.md) | 95 | `result-track:009287d4cb44ee79f132c5329d48d17f46b036956eb152aa9e80bbcb8f997237` |
+| 1 | `structure` | [Interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/interval.md) | 27 | `declaration-track:520fe9007c39ed2d1845344604573423bb9dc8ca785a51c1e1b879b5622bd1f2` |
+| 2 | `def` | [Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/contains.md) | 36 | `declaration-track:fb722beaca8d36ab747ca5248896e69b3c933657a70cfb5b7bb5cc9f430902e4` |
+| 3 | `def` | [width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/width.md) | 40 | `declaration-track:dd3b3c8f5a9dbd4638f7b0b9081d69767e132b7610c8e35d04bee2c8b82b4e22` |
+| 4 | `theorem` | [width_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/width-nonneg.md) | 44 | `result-track:6fa36e5d0c4f9f317c893a299558946c8274f6d7f944637fb5f1f26d0b94b6ff` |
+| 5 | `theorem` | [cast_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/cast-width.md) | 49 | `result-track:fbf8a6aca8afb4a7a1142d7fc640c59d99b806ff483c362112bad0c4b500315a` |
+| 6 | `def` | [singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/singleton.md) | 55 | `declaration-track:b5c75a3594bb8697a336af4842099b583677a22eff6fe61bd6b9a7cf857715ba` |
+| 7 | `theorem` | [singleton_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/singleton-width.md) | 60 | `result-track:90522cdc51e9c974a7d8b0e0adf44d326a56109789a75358afed88b56bd7c7da` |
+| 8 | `theorem` | [singleton_contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/singleton-contains.md) | 65 | `result-track:b67ef73ece9925737d656aa8fdcbb4557ad2d9b6513953724e062d9653493728` |
+| 9 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/add.md) | 70 | `declaration-track:5635bf5540016ea9e2dc9954607f62253e7b9c06fc14526d7349d3e7dc1789c4` |
+| 10 | `theorem` | [contains_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/contains-add.md) | 76 | `result-track:0196346c8c310af569e953dc854be2d74c040a39d00ce8845f0d48c4aec7ba9e` |
+| 11 | `theorem` | [add_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/add-width.md) | 88 | `result-track:ed82c1146b251ebd9f2abf54d11081a1b895399d8ae5176cd8997e1be130bf2f` |
+| 12 | `theorem` | [narrow_does_not_imply_contains_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalClosedInterval.lean/declarations/narrow-does-not-imply-contains-fixture.md) | 95 | `result-track:009287d4cb44ee79f132c5329d48d17f46b036956eb152aa9e80bbcb8f997237` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

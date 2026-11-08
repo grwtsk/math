@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteSupport.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mulSupport_along_fiber_finite_of_finite](../../../../GroupTheoryAndGeneralizations/FiniteSupport.lean/declarations/mulsupport-along-fiber-finite-of-finite.md) | 17 | `result-track:48dfce7efee30af20b2dfc56ad3fb7898e838f7596e9afc3f037cc84b3256f92` |
+| 1 | `lemma` | [mulSupport_along_fiber_finite_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteSupport.lean/declarations/mulsupport-along-fiber-finite-of-finite.md) | 17 | `result-track:48dfce7efee30af20b2dfc56ad3fb7898e838f7596e9afc3f037cc84b3256f92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

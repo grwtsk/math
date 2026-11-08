@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ReverseExplicitFormulaPsiGate`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ReverseExplicitFormulaPsiGate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reverseSevenEighthsGate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/declarations/reverseseveneighthsgate.md) | 13 | `declaration-track:acaf1001a560c2f8b7de86b23e62d1d0910380fe3884f400b823ab9257b69aab` |
-| 2 | `def` | [externalAudit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/declarations/externalaudit.md) | 16 | `declaration-track:22f8ce688f57d8db46aaa3693dd4a4505fbb11a30748e5bfe45cfc392d554d90` |
+| 1 | `def` | [reverseSevenEighthsGate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/declarations/reverseseveneighthsgate.md) | 13 | `declaration-track:acaf1001a560c2f8b7de86b23e62d1d0910380fe3884f400b823ab9257b69aab` |
+| 2 | `def` | [externalAudit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReverseExplicitFormulaPsiGateControls.lean/declarations/externalaudit.md) | 16 | `declaration-track:22f8ce688f57d8db46aaa3693dd4a4505fbb11a30748e5bfe45cfc392d554d90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

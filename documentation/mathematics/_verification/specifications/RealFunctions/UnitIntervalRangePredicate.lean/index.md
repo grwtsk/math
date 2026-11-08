@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/UnitIntervalRangePredicate.lean/index.md) · [Full source](../../../../RealFunctions/UnitIntervalRangePredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/UnitIntervalRangePredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/UnitIntervalRangePredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.Grid` — import line 19; external provider; requires a separately pinned dependency.
-- [Pointwise Array Data](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseArrayData.lean/index.md) — import line 21; pinned internal source present.
+- [Pointwise Array Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseArrayData.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [visibleRange01](../../../../RealFunctions/UnitIntervalRangePredicate.lean/declarations/visiblerange01.md) | 45 | `declaration-track:000cd661c5a467ece90cf5dc9e78a806be76e98aa2b66310f29e40432c42c505` |
+| 1 | `def` | [visibleRange01](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/UnitIntervalRangePredicate.lean/declarations/visiblerange01.md) | 45 | `declaration-track:000cd661c5a467ece90cf5dc9e78a806be76e98aa2b66310f29e40432c42c505` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

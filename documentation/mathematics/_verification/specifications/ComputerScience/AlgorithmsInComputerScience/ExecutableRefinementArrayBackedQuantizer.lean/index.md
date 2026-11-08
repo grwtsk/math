@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [arrayBackedQuantizer](../../../../../ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/arraybackedquantizer.md) | 17 | `declaration-track:f8f6fb5170255553a4b1e7442b055f58dec142be36bf30d481fba92a4b1ed1b4` |
-| 2 | `theorem` | [arrayBackedQuantizer_encode](../../../../../ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/arraybackedquantizer-encode.md) | 25 | `result-track:83f0feca413a644e198f8989f26fe6c81903f5ae82d3e0bc2e7581dfbcf3b01a` |
-| 3 | `theorem` | [arrayBackedQuantizer_indistinguishable_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/arraybackedquantizer-indistinguishable-iff.md) | 34 | `result-track:67e06f4cda175b119922b17e127053a0f296db8675014cd131cda3ef2e4808af` |
-| 4 | `def` | [executableWorldModelRefinementStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/executableworldmodelrefinementstatus.md) | 43 | `declaration-track:2a4012d60483f2467e3aaf8ffbe00d69e1251bdbf1a8ebcef6cb37ee76e21e9c` |
-| 5 | `theorem` | [executableWorldModelRefinement_notSubmitted](../../../../../ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/executableworldmodelrefinement-notsubmitted.md) | 48 | `result-track:256fab975cc5fc2981d7be7b7b0013c53180d4726989723419e9a0c77e7db97c` |
+| 1 | `def` | [arrayBackedQuantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/arraybackedquantizer.md) | 17 | `declaration-track:f8f6fb5170255553a4b1e7442b055f58dec142be36bf30d481fba92a4b1ed1b4` |
+| 2 | `theorem` | [arrayBackedQuantizer_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/arraybackedquantizer-encode.md) | 25 | `result-track:83f0feca413a644e198f8989f26fe6c81903f5ae82d3e0bc2e7581dfbcf3b01a` |
+| 3 | `theorem` | [arrayBackedQuantizer_indistinguishable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/arraybackedquantizer-indistinguishable-iff.md) | 34 | `result-track:67e06f4cda175b119922b17e127053a0f296db8675014cd131cda3ef2e4808af` |
+| 4 | `def` | [executableWorldModelRefinementStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/executableworldmodelrefinementstatus.md) | 43 | `declaration-track:2a4012d60483f2467e3aaf8ffbe00d69e1251bdbf1a8ebcef6cb37ee76e21e9c` |
+| 5 | `theorem` | [executableWorldModelRefinement_notSubmitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExecutableRefinementArrayBackedQuantizer.lean/declarations/executableworldmodelrefinement-notsubmitted.md) | 48 | `result-track:256fab975cc5fc2981d7be7b7b0013c53180d4726989723419e9a0c77e7db97c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

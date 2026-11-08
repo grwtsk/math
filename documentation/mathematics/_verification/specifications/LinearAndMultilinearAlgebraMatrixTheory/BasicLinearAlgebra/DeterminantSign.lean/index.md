@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.Algebra.InvolutionProjection` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.GroupTheory.Perm.Sign` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Matrix.Determinant.Basic` — import line 21; external provider; requires a separately pinned dependency.
-- [Integral Permutation Lift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/index.md) — import line 23; pinned internal source present.
+- [Integral Permutation Lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [det_integralMatrix_eq_sign](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/det-integralmatrix-eq-sign.md) | 44 | `result-track:b43b2ee7f7355f9ee01d7972bb79b24e09cc8d80d0e786062d7586249488e626` |
-| 2 | `theorem` | [det_integralMatrix_eq_one_or_neg_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/det-integralmatrix-eq-one-or-neg-one.md) | 52 | `result-track:6b009349a2fee43e9c6062718c024e523a6586d5cd9d545a6ff614685d737e8b` |
-| 3 | `theorem` | [abs_det_integralMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/abs-det-integralmatrix.md) | 59 | `result-track:e0bf187ac0b531380f45903107943271235325d03397665cf167b2c541117078` |
-| 4 | `theorem` | [integral_parity_agrees](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/integral-parity-agrees.md) | 64 | `result-track:ed7ec908fb1c4e016e1f6f8892da67c46084ef9366d0c78e705de3c3e0e748c8` |
+| 1 | `theorem` | [det_integralMatrix_eq_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/det-integralmatrix-eq-sign.md) | 44 | `result-track:b43b2ee7f7355f9ee01d7972bb79b24e09cc8d80d0e786062d7586249488e626` |
+| 2 | `theorem` | [det_integralMatrix_eq_one_or_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/det-integralmatrix-eq-one-or-neg-one.md) | 52 | `result-track:6b009349a2fee43e9c6062718c024e523a6586d5cd9d545a6ff614685d737e8b` |
+| 3 | `theorem` | [abs_det_integralMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/abs-det-integralmatrix.md) | 59 | `result-track:e0bf187ac0b531380f45903107943271235325d03397665cf167b2c541117078` |
+| 4 | `theorem` | [integral_parity_agrees](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantSign.lean/declarations/integral-parity-agrees.md) | 64 | `result-track:ed7ec908fb1c4e016e1f6f8892da67c46084ef9366d0c78e705de3c3e0e748c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

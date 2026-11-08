@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofDirectSumEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv.md) | 34 | `declaration-track:24d67a4223bc648fc2c0750e8de01e39dc899a0248151361ca2595ba1a5ca910` |
-| 2 | `theorem` | [ofDirectSumEquiv_tprod_lof](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv-tprod-lof.md) | 40 | `result-track:3d008be18b157b771629a90dfa0faf29cd093388f5678404ce86d5dceb6b24ae` |
-| 3 | `theorem` | [ofDirectSumEquiv_symm_lof_tprod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv-symm-lof-tprod.md) | 49 | `result-track:d21b14d749141fa8693696c23f28d47ed3525d22132706dfbe26bb939ce336d5` |
-| 4 | `theorem` | [ofDirectSumEquiv_tprod_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv-tprod-apply.md) | 58 | `result-track:3f426760f08ef310d65e1af697923681f765d35c88d334e8e54c6f5ba13a91e5` |
+| 1 | `def` | [ofDirectSumEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv.md) | 34 | `declaration-track:24d67a4223bc648fc2c0750e8de01e39dc899a0248151361ca2595ba1a5ca910` |
+| 2 | `theorem` | [ofDirectSumEquiv_tprod_lof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv-tprod-lof.md) | 40 | `result-track:3d008be18b157b771629a90dfa0faf29cd093388f5678404ce86d5dceb6b24ae` |
+| 3 | `theorem` | [ofDirectSumEquiv_symm_lof_tprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv-symm-lof-tprod.md) | 49 | `result-track:d21b14d749141fa8693696c23f28d47ed3525d22132706dfbe26bb939ce336d5` |
+| 4 | `theorem` | [ofDirectSumEquiv_tprod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumPublic.lean/declarations/ofdirectsumequiv-tprod-apply.md) | 58 | `result-track:3f426760f08ef310d65e1af697923681f765d35c88d334e8e54c6f5ba13a91e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

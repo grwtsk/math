@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 41 | `result-track:c95756cc325831189d0ec4c77d77f8197d31c78d977304d8f6719268bf05e908` |
-| 2 | `theorem` | [iIndepFun.condexp_natural_ae_eq_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 50 | `result-track:5162f11e9a849efb7ce5df408df53a1fd01e278267d9732387459600e24d8c33` |
-| 3 | `theorem` | [iIndepSet.condexp_indicator_filtrationOfSet_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 58 | `result-track:3c30d0b27593cca09b92d7b54857d7303cb8ce5fa5cb28c5cab3702f11bc3c41` |
-| 4 | `theorem` | [measure_limsup_eq_one](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/measure-limsup-eq-one.md) | 72 | `result-track:53fa31bb3949221c89e79a507f3346d66a30f0d7305803e162d104322954f24d` |
+| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 41 | `result-track:c95756cc325831189d0ec4c77d77f8197d31c78d977304d8f6719268bf05e908` |
+| 2 | `theorem` | [iIndepFun.condexp_natural_ae_eq_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 50 | `result-track:5162f11e9a849efb7ce5df408df53a1fd01e278267d9732387459600e24d8c33` |
+| 3 | `theorem` | [iIndepSet.condexp_indicator_filtrationOfSet_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 58 | `result-track:3c30d0b27593cca09b92d7b54857d7303cb8ce5fa5cb28c5cab3702f11bc3c41` |
+| 4 | `theorem` | [measure_limsup_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliAligned.lean/declarations/measure-limsup-eq-one.md) | 72 | `result-track:53fa31bb3949221c89e79a507f3346d66a30f0d7305803e162d104322954f24d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

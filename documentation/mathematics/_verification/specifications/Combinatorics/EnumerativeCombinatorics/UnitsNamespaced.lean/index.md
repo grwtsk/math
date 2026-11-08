@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [UnitsInt.fintype](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/unitsint-fintype.md) | 27 | `declaration-track:4f4a2b2fb0209a92b30715bc777b77cd6c3248216d6f73857e3e47dafa46b833` |
-| 2 | `theorem` | [UnitsInt.univ](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/unitsint-univ.md) | 31 | `result-track:031294d8612e3647d290c563d69b054c0b44514fc80f9f121f650e900bab3f86` |
-| 3 | `theorem` | [Fintype.card_units_int](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/fintype-card-units-int.md) | 34 | `result-track:13082f88ceba645fdb2d05e097be18c6947f71626a75eda008e4b6c0a6172010` |
-| 4 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:50069039bb34575a27ffe02b754856cef1de9adfb21b6a9d36ba5928fa63865c` |
-| 5 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:606449a57b317c3d831550de3e02c02d1cbdb8bc4ec4eaeef50525658b9bfb90` |
-| 6 | `theorem` | [Nat.card_units](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/nat-card-units.md) | 43 | `result-track:4f8c2b5b71a1ad242410246e70dcd52ee1d2f9a02f4b1434cce98b2908989aae` |
-| 7 | `theorem` | [Nat.card_eq_card_units_add_one](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/nat-card-eq-card-units-add-one.md) | 51 | `result-track:265450069cb57b47b57c1977188f6dd6e4836f615f0a000f332bda09f293ec20` |
-| 8 | `theorem` | [Fintype.card_units](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/fintype-card-units.md) | 55 | `result-track:955e1340a28f06334e31082c48bfd3da3e466b0c69aa986de623a3c8ccebfbb0` |
-| 9 | `theorem` | [Fintype.card_eq_card_units_add_one](../../../../../Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/fintype-card-eq-card-units-add-one.md) | 59 | `result-track:7c05ca1a85b640dcd386d471669c8de42e52e77d25a96e9d7d7b2c819d73e66e` |
+| 1 | `instance` | [UnitsInt.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/unitsint-fintype.md) | 27 | `declaration-track:4f4a2b2fb0209a92b30715bc777b77cd6c3248216d6f73857e3e47dafa46b833` |
+| 2 | `theorem` | [UnitsInt.univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/unitsint-univ.md) | 31 | `result-track:031294d8612e3647d290c563d69b054c0b44514fc80f9f121f650e900bab3f86` |
+| 3 | `theorem` | [Fintype.card_units_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/fintype-card-units-int.md) | 34 | `result-track:13082f88ceba645fdb2d05e097be18c6947f71626a75eda008e4b6c0a6172010` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:50069039bb34575a27ffe02b754856cef1de9adfb21b6a9d36ba5928fa63865c` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:606449a57b317c3d831550de3e02c02d1cbdb8bc4ec4eaeef50525658b9bfb90` |
+| 6 | `theorem` | [Nat.card_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/nat-card-units.md) | 43 | `result-track:4f8c2b5b71a1ad242410246e70dcd52ee1d2f9a02f4b1434cce98b2908989aae` |
+| 7 | `theorem` | [Nat.card_eq_card_units_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/nat-card-eq-card-units-add-one.md) | 51 | `result-track:265450069cb57b47b57c1977188f6dd6e4836f615f0a000f332bda09f293ec20` |
+| 8 | `theorem` | [Fintype.card_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/fintype-card-units.md) | 55 | `result-track:955e1340a28f06334e31082c48bfd3da3e466b0c69aa986de623a3c8ccebfbb0` |
+| 9 | `theorem` | [Fintype.card_eq_card_units_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/UnitsNamespaced.lean/declarations/fintype-card-eq-card-units-add-one.md) | 59 | `result-track:7c05ca1a85b640dcd386d471669c8de42e52e77d25a96e9d7d7b2c819d73e66e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

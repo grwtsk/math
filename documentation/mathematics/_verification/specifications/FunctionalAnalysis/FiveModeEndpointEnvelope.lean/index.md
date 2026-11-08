@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointEnvelope](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope.md) | 18 | `declaration-track:8727fa860e31a78336a17747ed0cb3848564c54d055f680b6351f5b51703f593` |
-| 2 | `def` | [endpointEnvelopeFirst](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelopefirst.md) | 19 | `declaration-track:36c138f9b643ebbdecf3c430e3594ab7bba670bf32a187edb5956ff50f47a5f9` |
-| 3 | `def` | [endpointEnvelopeSecond](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelopesecond.md) | 20 | `declaration-track:2dcbf79c21a1ace7c49a1b810b335b2c0fec049274d2963bc2dc22bd30ef064e` |
-| 4 | `theorem` | [endpointEnvelope_hasDerivAt](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-hasderivat.md) | 23 | `result-track:81da36c81f536c21670fd2e8cfb2dd3356e119686c7e611c46a53f89cff0f8d4` |
-| 5 | `theorem` | [endpointEnvelopeFirst_hasDerivAt](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelopefirst-hasderivat.md) | 32 | `result-track:64961da232ae4f9b359fc0fe35d1fd7b7874c95ace48766063f32f3a4d0217e7` |
-| 6 | `theorem` | [endpointEnvelope_convex](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-convex.md) | 41 | `result-track:e0241a202c20295aed469107a5a2d5b439ee2d0de6bb7c1c3b7ee4f3e6da6427` |
-| 7 | `theorem` | [endpointEnvelope_le_endpoint_max](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-le-endpoint-max.md) | 58 | `result-track:ec627aa703462523fa40347c1b51cc8b016574ca88dd419db958accd3ef57cb4` |
-| 8 | `theorem` | [endpointEnvelope_le_rational_max](../../../../FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-le-rational-max.md) | 63 | `result-track:7511e749c8a960947dfb443d73c04d494b18e5350f47716eb75d423fa5c8bb21` |
+| 1 | `def` | [endpointEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope.md) | 18 | `declaration-track:8727fa860e31a78336a17747ed0cb3848564c54d055f680b6351f5b51703f593` |
+| 2 | `def` | [endpointEnvelopeFirst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelopefirst.md) | 19 | `declaration-track:36c138f9b643ebbdecf3c430e3594ab7bba670bf32a187edb5956ff50f47a5f9` |
+| 3 | `def` | [endpointEnvelopeSecond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelopesecond.md) | 20 | `declaration-track:2dcbf79c21a1ace7c49a1b810b335b2c0fec049274d2963bc2dc22bd30ef064e` |
+| 4 | `theorem` | [endpointEnvelope_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-hasderivat.md) | 23 | `result-track:81da36c81f536c21670fd2e8cfb2dd3356e119686c7e611c46a53f89cff0f8d4` |
+| 5 | `theorem` | [endpointEnvelopeFirst_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelopefirst-hasderivat.md) | 32 | `result-track:64961da232ae4f9b359fc0fe35d1fd7b7874c95ace48766063f32f3a4d0217e7` |
+| 6 | `theorem` | [endpointEnvelope_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-convex.md) | 41 | `result-track:e0241a202c20295aed469107a5a2d5b439ee2d0de6bb7c1c3b7ee4f3e6da6427` |
+| 7 | `theorem` | [endpointEnvelope_le_endpoint_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-le-endpoint-max.md) | 58 | `result-track:ec627aa703462523fa40347c1b51cc8b016574ca88dd419db958accd3ef57cb4` |
+| 8 | `theorem` | [endpointEnvelope_le_rational_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiveModeEndpointEnvelope.lean/declarations/endpointenvelope-le-rational-max.md) | 63 | `result-track:7511e749c8a960947dfb443d73c04d494b18e5350f47716eb75d423fa5c8bb21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

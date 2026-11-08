@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DFunLike.fintype](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/dfunlike-fintype.md) | 48 | `declaration-track:9439f59c2b4c4a3091581d3b1f3adbf24b85196e9aa066c6f58a172bec7d254e` |
-| 2 | `def` | [FunLike.fintype](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/funlike-fintype.md) | 56 | `declaration-track:e659f086b2454c6445e644cdb3c289c429affc84a994bbfe82666c825a465f25` |
-| 3 | `theorem` | [DFunLike.finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/dfunlike-finite.md) | 70 | `result-track:cd4f5c26a68411661058f8688097d89c96224a602b712cf2ab7e61cdc8f90986` |
-| 4 | `theorem` | [FunLike.finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/funlike-finite.md) | 78 | `result-track:05014e2e99da3ce8e4beeca32dbf9a1a0693dacac33415dc84eb99d27b9e2d8b` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/instance.md) | 84 | `declaration-track:c239bda888d8d3a93c9771a4ad65eff2c2f60d81d9910240fdfe31be336fe5a5` |
+| 1 | `def` | [DFunLike.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/dfunlike-fintype.md) | 48 | `declaration-track:9439f59c2b4c4a3091581d3b1f3adbf24b85196e9aa066c6f58a172bec7d254e` |
+| 2 | `def` | [FunLike.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/funlike-fintype.md) | 56 | `declaration-track:e659f086b2454c6445e644cdb3c289c429affc84a994bbfe82666c825a465f25` |
+| 3 | `theorem` | [DFunLike.finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/dfunlike-finite.md) | 70 | `result-track:cd4f5c26a68411661058f8688097d89c96224a602b712cf2ab7e61cdc8f90986` |
+| 4 | `theorem` | [FunLike.finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/funlike-finite.md) | 78 | `result-track:05014e2e99da3ce8e4beeca32dbf9a1a0693dacac33415dc84eb99d27b9e2d8b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespaced.lean/declarations/instance.md) | 84 | `declaration-track:c239bda888d8d3a93c9771a4ad65eff2c2f60d81d9910240fdfe31be336fe5a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

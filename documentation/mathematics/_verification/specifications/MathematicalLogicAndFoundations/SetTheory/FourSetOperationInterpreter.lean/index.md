@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Region](../../../../../MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/declarations/region.md) | 34 | `declaration-track:ca0ddd30b8f82136d00ed52b44f207f9343048638c477939f6d0f622e0899345` |
-| 2 | `inductive` | [SetOperation](../../../../../MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/declarations/setoperation.md) | 37 | `declaration-track:b493883f2f446d3d59f5657f388722af28dc666bba545a3899fac894b289498b` |
-| 3 | `def` | [combine](../../../../../MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/declarations/combine.md) | 45 | `declaration-track:92e6c5a11a92e7712c54216ae13ca30368f21a546b55ed8966f5d4b184f2f46f` |
+| 1 | `abbrev` | [Region](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/declarations/region.md) | 34 | `declaration-track:ca0ddd30b8f82136d00ed52b44f207f9343048638c477939f6d0f622e0899345` |
+| 2 | `inductive` | [SetOperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/declarations/setoperation.md) | 37 | `declaration-track:b493883f2f446d3d59f5657f388722af28dc666bba545a3899fac894b289498b` |
+| 3 | `def` | [combine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FourSetOperationInterpreter.lean/declarations/combine.md) | 45 | `declaration-track:92e6c5a11a92e7712c54216ae13ca30368f21a546b55ed8966f5d4b184f2f46f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

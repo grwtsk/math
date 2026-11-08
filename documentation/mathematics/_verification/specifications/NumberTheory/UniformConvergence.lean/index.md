@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/UniformConvergence.lean/index.md) · [Full source](../../../../NumberTheory/UniformConvergence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,23 +61,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_eq_max_natAbs](../../../../NumberTheory/UniformConvergence.lean/declarations/norm-eq-max-natabs.md) | 41 | `result-track:6c8c0fcdc3d04957ed30762a95a1d5ed5bcbabb586d7abe5d4dfe8f3c32ac987` |
-| 2 | `def` | [r1](../../../../NumberTheory/UniformConvergence.lean/declarations/r1.md) | 50 | `declaration-track:5c504394b8893b1cdadda16a52a1104f338c20157be6c12dcf00b3bd2104ab97` |
-| 3 | `lemma` | [r1_eq](../../../../NumberTheory/UniformConvergence.lean/declarations/r1-eq.md) | 52 | `result-track:022c06d1b9b891a080495959e6c594e3d8d1e9b04b58fc3e1e2f121ef0b6fe69` |
-| 4 | `lemma` | [r1_pos](../../../../NumberTheory/UniformConvergence.lean/declarations/r1-pos.md) | 55 | `result-track:7f71f543c9386abaf01f137b042c61f982e11a72241aa88e8aa905f5ba93dbfe` |
-| 5 | `lemma` | [r1_aux_bound](../../../../NumberTheory/UniformConvergence.lean/declarations/r1-aux-bound.md) | 60 | `result-track:49b5378f8cd7a54baac132db9e231a6a355efd33a10eb0af33289c8f60436efc` |
-| 6 | `def` | [r](../../../../NumberTheory/UniformConvergence.lean/declarations/r.md) | 71 | `declaration-track:424092cdf0db4f10cdec0ec43e6b0cce6ddf21ac181c864d15107c33e3d0d2d9` |
-| 7 | `lemma` | [r_pos](../../../../NumberTheory/UniformConvergence.lean/declarations/r-pos.md) | 73 | `result-track:a5299a0f2798399c71a67a35f55fc94bd9fefbb72e2ad604d8f02f3cfc77f86a` |
-| 8 | `lemma` | [r_lower_bound_on_verticalStrip](../../../../NumberTheory/UniformConvergence.lean/declarations/r-lower-bound-on-verticalstrip.md) | 76 | `result-track:f4ab8fb7330836868cbb44f839ca73c496b0e81de4608b582a1b902c7876b747` |
-| 9 | `lemma` | [auxbound1](../../../../NumberTheory/UniformConvergence.lean/declarations/auxbound1.md) | 85 | `result-track:49158b772c95092b3f801561f63f313f9704773a26b1570aac5daaabe5ed379f` |
-| 10 | `lemma` | [auxbound2](../../../../NumberTheory/UniformConvergence.lean/declarations/auxbound2.md) | 93 | `result-track:913ca979b33e5c383a58d31b12e93a2df479c18058a02e6b2f4741a0d4c6aa2e` |
-| 11 | `lemma` | [div_max_sq_ge_one](../../../../NumberTheory/UniformConvergence.lean/declarations/div-max-sq-ge-one.md) | 99 | `result-track:f15abfdc6a3387095a49b40edfdbc1074120bde566fa59b317aa72fc44008e76` |
-| 12 | `lemma` | [r_mul_max_le](../../../../NumberTheory/UniformConvergence.lean/declarations/r-mul-max-le.md) | 113 | `result-track:5e9a453c182daa0435b79e352e62558cfc196561a53cfdc2e254a2eaa91e5caa` |
-| 13 | `lemma` | [summand_bound](../../../../NumberTheory/UniformConvergence.lean/declarations/summand-bound.md) | 125 | `result-track:2b075944c53a34746d8a7796603f0559c16a1aa5863c18135ec517c6c54f78d2` |
-| 14 | `lemma` | [summand_bound_of_mem_verticalStrip](../../../../NumberTheory/UniformConvergence.lean/declarations/summand-bound-of-mem-verticalstrip.md) | 137 | `result-track:40faa2d99800d976190920e47c97aad57db76718b229931ef6ad57528baf5c09` |
-| 15 | `lemma` | [summable_one_div_norm_rpow](../../../../NumberTheory/UniformConvergence.lean/declarations/summable-one-div-norm-rpow.md) | 150 | `result-track:2b75b47882ad5adf5c624afb4a76160f023ef315eecd88c8ed93c78c68e7a309` |
-| 16 | `theorem` | [eisensteinSeries_tendstoLocallyUniformly](../../../../NumberTheory/UniformConvergence.lean/declarations/eisensteinseries-tendstolocallyuniformly.md) | 169 | `result-track:49f4724914cb48336c90552f70643123851f1155d06f0a1e50a62ef951eda0f1` |
-| 17 | `lemma` | [eisensteinSeries_tendstoLocallyUniformlyOn](../../../../NumberTheory/UniformConvergence.lean/declarations/eisensteinseries-tendstolocallyuniformlyon.md) | 185 | `result-track:a5d095fc2f51c9646febdb703d0ee8763554561dd09062c15bfda886bb5350e0` |
+| 1 | `lemma` | [norm_eq_max_natAbs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/norm-eq-max-natabs.md) | 41 | `result-track:6c8c0fcdc3d04957ed30762a95a1d5ed5bcbabb586d7abe5d4dfe8f3c32ac987` |
+| 2 | `def` | [r1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r1.md) | 50 | `declaration-track:5c504394b8893b1cdadda16a52a1104f338c20157be6c12dcf00b3bd2104ab97` |
+| 3 | `lemma` | [r1_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r1-eq.md) | 52 | `result-track:022c06d1b9b891a080495959e6c594e3d8d1e9b04b58fc3e1e2f121ef0b6fe69` |
+| 4 | `lemma` | [r1_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r1-pos.md) | 55 | `result-track:7f71f543c9386abaf01f137b042c61f982e11a72241aa88e8aa905f5ba93dbfe` |
+| 5 | `lemma` | [r1_aux_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r1-aux-bound.md) | 60 | `result-track:49b5378f8cd7a54baac132db9e231a6a355efd33a10eb0af33289c8f60436efc` |
+| 6 | `def` | [r](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r.md) | 71 | `declaration-track:424092cdf0db4f10cdec0ec43e6b0cce6ddf21ac181c864d15107c33e3d0d2d9` |
+| 7 | `lemma` | [r_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r-pos.md) | 73 | `result-track:a5299a0f2798399c71a67a35f55fc94bd9fefbb72e2ad604d8f02f3cfc77f86a` |
+| 8 | `lemma` | [r_lower_bound_on_verticalStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r-lower-bound-on-verticalstrip.md) | 76 | `result-track:f4ab8fb7330836868cbb44f839ca73c496b0e81de4608b582a1b902c7876b747` |
+| 9 | `lemma` | [auxbound1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/auxbound1.md) | 85 | `result-track:49158b772c95092b3f801561f63f313f9704773a26b1570aac5daaabe5ed379f` |
+| 10 | `lemma` | [auxbound2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/auxbound2.md) | 93 | `result-track:913ca979b33e5c383a58d31b12e93a2df479c18058a02e6b2f4741a0d4c6aa2e` |
+| 11 | `lemma` | [div_max_sq_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/div-max-sq-ge-one.md) | 99 | `result-track:f15abfdc6a3387095a49b40edfdbc1074120bde566fa59b317aa72fc44008e76` |
+| 12 | `lemma` | [r_mul_max_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/r-mul-max-le.md) | 113 | `result-track:5e9a453c182daa0435b79e352e62558cfc196561a53cfdc2e254a2eaa91e5caa` |
+| 13 | `lemma` | [summand_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/summand-bound.md) | 125 | `result-track:2b075944c53a34746d8a7796603f0559c16a1aa5863c18135ec517c6c54f78d2` |
+| 14 | `lemma` | [summand_bound_of_mem_verticalStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/summand-bound-of-mem-verticalstrip.md) | 137 | `result-track:40faa2d99800d976190920e47c97aad57db76718b229931ef6ad57528baf5c09` |
+| 15 | `lemma` | [summable_one_div_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/summable-one-div-norm-rpow.md) | 150 | `result-track:2b75b47882ad5adf5c624afb4a76160f023ef315eecd88c8ed93c78c68e7a309` |
+| 16 | `theorem` | [eisensteinSeries_tendstoLocallyUniformly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/eisensteinseries-tendstolocallyuniformly.md) | 169 | `result-track:49f4724914cb48336c90552f70643123851f1155d06f0a1e50a62ef951eda0f1` |
+| 17 | `lemma` | [eisensteinSeries_tendstoLocallyUniformlyOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UniformConvergence.lean/declarations/eisensteinseries-tendstolocallyuniformlyon.md) | 185 | `result-track:a5d095fc2f51c9646febdb703d0ee8763554561dd09062c15bfda886bb5350e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

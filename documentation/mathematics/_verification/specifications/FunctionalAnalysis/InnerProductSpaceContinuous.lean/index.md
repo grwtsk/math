@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/index.md) · [Full source](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [_root_.isBoundedBilinearMap_inner](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/root-isboundedbilinearmap-inner.md) | 47 | `result-track:18a7515e0dff1a09c5403e7f20e08a6db186007f0a2f55c678e68a07940dad26` |
-| 2 | `theorem` | [continuous_inner](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuous-inner.md) | 60 | `result-track:2d81a485ff06d6c0460e807c6c12ca60e7849cadfec815424b670713aafd12c3` |
-| 3 | `theorem` | [Filter.Tendsto.inner](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/filter-tendsto-inner.md) | 67 | `result-track:2da5a164744c9a1c8c2a45b49f7d2e8d19f98d86de020eaa0729c483566cfbaa` |
-| 4 | `theorem` | [ContinuousWithinAt.inner](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuouswithinat-inner.md) | 73 | `result-track:102cd38115506ce76d9bf622549dc1445b6dec614df1de9cfc79a74bff5dee81` |
-| 5 | `theorem` | [ContinuousAt.inner](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuousat-inner.md) | 78 | `result-track:7eb0a8f324e7c3e881c6712b0f3d8e8b755ee4f121fb2c8b50d1040c9c4f942e` |
-| 6 | `theorem` | [ContinuousOn.inner](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuouson-inner.md) | 83 | `result-track:6da8fa21f922eed353171c633e3e108d6e1a501dce692893e8da3c9189b672e1` |
-| 7 | `theorem` | [Continuous.inner](../../../../FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuous-inner-source-edition-2.md) | 87 | `result-track:3073155f8db0ac7722068612d6da42889b9206d4fbf3d93f84e746caa9c365fb` |
+| 1 | `theorem` | [_root_.isBoundedBilinearMap_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/root-isboundedbilinearmap-inner.md) | 47 | `result-track:18a7515e0dff1a09c5403e7f20e08a6db186007f0a2f55c678e68a07940dad26` |
+| 2 | `theorem` | [continuous_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuous-inner.md) | 60 | `result-track:2d81a485ff06d6c0460e807c6c12ca60e7849cadfec815424b670713aafd12c3` |
+| 3 | `theorem` | [Filter.Tendsto.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/filter-tendsto-inner.md) | 67 | `result-track:2da5a164744c9a1c8c2a45b49f7d2e8d19f98d86de020eaa0729c483566cfbaa` |
+| 4 | `theorem` | [ContinuousWithinAt.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuouswithinat-inner.md) | 73 | `result-track:102cd38115506ce76d9bf622549dc1445b6dec614df1de9cfc79a74bff5dee81` |
+| 5 | `theorem` | [ContinuousAt.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuousat-inner.md) | 78 | `result-track:7eb0a8f324e7c3e881c6712b0f3d8e8b755ee4f121fb2c8b50d1040c9c4f942e` |
+| 6 | `theorem` | [ContinuousOn.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuouson-inner.md) | 83 | `result-track:6da8fa21f922eed353171c633e3e108d6e1a501dce692893e8da3c9189b672e1` |
+| 7 | `theorem` | [Continuous.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceContinuous.lean/declarations/continuous-inner-source-edition-2.md) | 87 | `result-track:3073155f8db0ac7722068612d6da42889b9206d4fbf3d93f84e746caa9c365fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

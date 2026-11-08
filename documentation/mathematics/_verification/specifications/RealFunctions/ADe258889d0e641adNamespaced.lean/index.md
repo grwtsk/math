@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ADe258889d0e641adNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ADe258889d0e641adNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ADe258889d0e641adNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ADe258889d0e641adNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [parallel_paths_have_equal_integral_of_exact_cochain](../../../../RealFunctions/ADe258889d0e641adNamespaced.lean/declarations/parallel-paths-have-equal-integral-of-exact-cochain.md) | 22 | `result-track:bab751e4dbd2238051ef61a7d0421c05f759c36a75322501f0bc5bd3b65d5cd4` |
+| 1 | `theorem` | [parallel_paths_have_equal_integral_of_exact_cochain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ADe258889d0e641adNamespaced.lean/declarations/parallel-paths-have-equal-integral-of-exact-cochain.md) | 22 | `result-track:bab751e4dbd2238051ef61a7d0421c05f759c36a75322501f0bc5bd3b65d5cd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

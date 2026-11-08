@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OldIntegralCaptureRegression.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OldIntegralCaptureRegression.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegression.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegression.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [oldUnparenthesized0](../../../../MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized0.md) | 10 | `declaration-track:74226472d183d5ced46f26e13ab0794f9291990a3be69ab227c1dd76998c54d4` |
-| 2 | `theorem` | [oldUnparenthesized0_false_at_zero](../../../../MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized0-false-at-zero.md) | 20 | `result-track:a4e50ba3b7c2caf9073c8970ed6998ecfec9c441ea6b9f6ded5b5b56c5ab9564` |
-| 3 | `def` | [oldUnparenthesized1](../../../../MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized1.md) | 24 | `declaration-track:23f39beca2fb7b48a85c3ef20da5e43b08f71e1d89297d4edea2106bf62889e6` |
-| 4 | `theorem` | [oldUnparenthesized1_false_at_zero](../../../../MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized1-false-at-zero.md) | 35 | `result-track:95936d44dabf38496efc104819a089c08149bd983a76d09b49a9ea07d818234a` |
-| 5 | `theorem` | [corrected_identity_valid_at_zero](../../../../MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/corrected-identity-valid-at-zero.md) | 39 | `result-track:c85e4033ce92391deda02f09eae39d0b057a623b27f814767971107ce3c3b1aa` |
+| 1 | `def` | [oldUnparenthesized0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized0.md) | 10 | `declaration-track:74226472d183d5ced46f26e13ab0794f9291990a3be69ab227c1dd76998c54d4` |
+| 2 | `theorem` | [oldUnparenthesized0_false_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized0-false-at-zero.md) | 20 | `result-track:a4e50ba3b7c2caf9073c8970ed6998ecfec9c441ea6b9f6ded5b5b56c5ab9564` |
+| 3 | `def` | [oldUnparenthesized1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized1.md) | 24 | `declaration-track:23f39beca2fb7b48a85c3ef20da5e43b08f71e1d89297d4edea2106bf62889e6` |
+| 4 | `theorem` | [oldUnparenthesized1_false_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/oldunparenthesized1-false-at-zero.md) | 35 | `result-track:95936d44dabf38496efc104819a089c08149bd983a76d09b49a9ea07d818234a` |
+| 5 | `theorem` | [corrected_identity_valid_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegression.lean/declarations/corrected-identity-valid-at-zero.md) | 39 | `result-track:c85e4033ce92391deda02f09eae39d0b057a623b27f814767971107ce3c3b1aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

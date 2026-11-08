@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase`](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport`](../../../../GeneralTopology/SurfacePolygonPerimeterConeCircleTransport.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPerimeterConeCircleTransport.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Topology.Compactness.Compact` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Homeomorph.Lemmas` — import line 11; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 12; external provider; requires a separately pinned dependency.
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [closedComplexUnitDisk_t2](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/closedcomplexunitdisk-t2.md) | 42 | `result-track:9989d39091aa9029ef86ddb3e309fb67cf2f0aa3537df2a3a03355ea15ee864f` |
-| 2 | `theorem` | [standardCircleCone_compact](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcirclecone-compact.md) | 47 | `result-track:6039579aa628243ab5683216b6e47e49fa7e9f67cd665713a7aa742d553e41c7` |
-| 3 | `theorem` | [standardConePolarDisk_bijective](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardconepolardisk-bijective.md) | 53 | `result-track:973ce427993f83844f29ff145b640301ef038bdfddbdce08593fc123108ee3d7` |
-| 4 | `def` | [standardCircleConeHomeomorphClosedDisk](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcircleconehomeomorphcloseddisk.md) | 59 | `declaration-track:7b41527b4913cf1a27fd42e36803d99dff3584902e08e5edd7e17d9871add3d7` |
-| 5 | `theorem` | [standardCircleConeHomeomorphClosedDisk_apply](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcircleconehomeomorphcloseddisk-apply.md) | 69 | `result-track:5ef5b09da6ee2cdaecaab0baccac0b9abc4aa404da3e1790358686fcf9776e79` |
-| 6 | `theorem` | [standardCircleConeHomeomorphClosedDisk_radius](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcircleconehomeomorphcloseddisk-radius.md) | 76 | `result-track:844a9db86e43ba41aab0b0b755a093d67469fa6b25c3d3e6ba7f2f7d962c67e9` |
-| 7 | `def` | [perimeterConeHomeomorphClosedDisk](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconehomeomorphcloseddisk.md) | 91 | `declaration-track:9de031fa07a5a6f4b79d802691ba3fd79324ec7f6d2c21980f166a9198861f3b` |
-| 8 | `theorem` | [perimeterConeHomeomorphClosedDisk_radius](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconehomeomorphcloseddisk-radius.md) | 98 | `result-track:9080498812933f139af52f03f952071d2469f1ece3c7eddbe035bb38d8b27177` |
-| 9 | `theorem` | [perimeterConeHomeomorphClosedDisk_apex](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconehomeomorphcloseddisk-apex.md) | 114 | `result-track:fceedde61a8d9e72ad2a9e86b9838bafd4dec36dc5c956a6b6dbfa7391f06ae7` |
-| 10 | `theorem` | [perimeterConePolar_not_factor_through_filling](../../../../GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconepolar-not-factor-through-filling.md) | 128 | `result-track:d51a82e5371e5b498d301a974fb00c9f2ea1d0fec4b60137f6862c450fc8f877` |
+| 1 | `theorem` | [closedComplexUnitDisk_t2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/closedcomplexunitdisk-t2.md) | 42 | `result-track:9989d39091aa9029ef86ddb3e309fb67cf2f0aa3537df2a3a03355ea15ee864f` |
+| 2 | `theorem` | [standardCircleCone_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcirclecone-compact.md) | 47 | `result-track:6039579aa628243ab5683216b6e47e49fa7e9f67cd665713a7aa742d553e41c7` |
+| 3 | `theorem` | [standardConePolarDisk_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardconepolardisk-bijective.md) | 53 | `result-track:973ce427993f83844f29ff145b640301ef038bdfddbdce08593fc123108ee3d7` |
+| 4 | `def` | [standardCircleConeHomeomorphClosedDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcircleconehomeomorphcloseddisk.md) | 59 | `declaration-track:7b41527b4913cf1a27fd42e36803d99dff3584902e08e5edd7e17d9871add3d7` |
+| 5 | `theorem` | [standardCircleConeHomeomorphClosedDisk_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcircleconehomeomorphcloseddisk-apply.md) | 69 | `result-track:5ef5b09da6ee2cdaecaab0baccac0b9abc4aa404da3e1790358686fcf9776e79` |
+| 6 | `theorem` | [standardCircleConeHomeomorphClosedDisk_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/standardcircleconehomeomorphcloseddisk-radius.md) | 76 | `result-track:844a9db86e43ba41aab0b0b755a093d67469fa6b25c3d3e6ba7f2f7d962c67e9` |
+| 7 | `def` | [perimeterConeHomeomorphClosedDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconehomeomorphcloseddisk.md) | 91 | `declaration-track:9de031fa07a5a6f4b79d802691ba3fd79324ec7f6d2c21980f166a9198861f3b` |
+| 8 | `theorem` | [perimeterConeHomeomorphClosedDisk_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconehomeomorphcloseddisk-radius.md) | 98 | `result-track:9080498812933f139af52f03f952071d2469f1ece3c7eddbe035bb38d8b27177` |
+| 9 | `theorem` | [perimeterConeHomeomorphClosedDisk_apex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconehomeomorphcloseddisk-apex.md) | 114 | `result-track:fceedde61a8d9e72ad2a9e86b9838bafd4dec36dc5c956a6b6dbfa7391f06ae7` |
+| 10 | `theorem` | [perimeterConePolar_not_factor_through_filling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarDiskHomeomorphism.lean/declarations/perimeterconepolar-not-factor-through-filling.md) | 128 | `result-track:d51a82e5371e5b498d301a974fb00c9f2ea1d0fec4b60137f6862c450fc8f877` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

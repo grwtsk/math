@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Connection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/connection.md) | 32 | `declaration-track:dfa2bbd477196c03fd548392dd235f36723baff0cb68875010dbd53eefe4f71c` |
-| 2 | `theorem` | [connection_flat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/connection-flat.md) | 42 | `result-track:4cf08131af745fa117a1209a191503645855de4e90f486803b798c00d5de7462` |
-| 3 | `theorem` | [connection_integrable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/connection-integrable.md) | 49 | `result-track:25ff376bd3a5dcee7de250b54f9171da59fb748d188a7e31d4faeddb21d869e2` |
-| 4 | `structure` | [HorizontalSection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/horizontalsection.md) | 56 | `declaration-track:05cd77a89b8c7215562a4f60fb56727a78fea53f0aacec111311f44346eb05ad` |
-| 5 | `theorem` | [horizontal_section_is_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/horizontal-section-is-horizontal.md) | 64 | `result-track:eb5f4157be44a1986cb6f382180e38dc528bf1ed9257864761f162898b55c477` |
+| 1 | `structure` | [Connection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/connection.md) | 32 | `declaration-track:dfa2bbd477196c03fd548392dd235f36723baff0cb68875010dbd53eefe4f71c` |
+| 2 | `theorem` | [connection_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/connection-flat.md) | 42 | `result-track:4cf08131af745fa117a1209a191503645855de4e90f486803b798c00d5de7462` |
+| 3 | `theorem` | [connection_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/connection-integrable.md) | 49 | `result-track:25ff376bd3a5dcee7de250b54f9171da59fb748d188a7e31d4faeddb21d869e2` |
+| 4 | `structure` | [HorizontalSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/horizontalsection.md) | 56 | `declaration-track:05cd77a89b8c7215562a4f60fb56727a78fea53f0aacec111311f44346eb05ad` |
+| 5 | `theorem` | [horizontal_section_is_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntegrableConnectionNamespacedConnection.lean/declarations/horizontal-section-is-horizontal.md) | 64 | `result-track:eb5f4157be44a1986cb6f382180e38dc528bf1ed9257864761f162898b55c477` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

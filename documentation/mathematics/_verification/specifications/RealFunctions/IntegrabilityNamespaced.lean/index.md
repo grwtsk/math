@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/IntegrabilityNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/IntegrabilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrabilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrabilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_thetaPhi_poly_integrableOn](../../../../RealFunctions/IntegrabilityNamespaced.lean/declarations/deriv-thetaphi-poly-integrableon.md) | 16 | `result-track:b09a179ae0411cd1753de9bbc039087dcf6bbadb8f5a292a5108b54da7eec97d` |
-| 2 | `theorem` | [thetaPhi_deriv_mul_sub_integrableOn](../../../../RealFunctions/IntegrabilityNamespaced.lean/declarations/thetaphi-deriv-mul-sub-integrableon.md) | 28 | `result-track:2596618057d46c26c225505e897221f32cd161a347f4931b16babc0cdc6a809b` |
+| 1 | `theorem` | [deriv_thetaPhi_poly_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrabilityNamespaced.lean/declarations/deriv-thetaphi-poly-integrableon.md) | 16 | `result-track:b09a179ae0411cd1753de9bbc039087dcf6bbadb8f5a292a5108b54da7eec97d` |
+| 2 | `theorem` | [thetaPhi_deriv_mul_sub_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrabilityNamespaced.lean/declarations/thetaphi-deriv-mul-sub-integrableon.md) | 28 | `result-track:2596618057d46c26c225505e897221f32cd161a347f4931b16babc0cdc6a809b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

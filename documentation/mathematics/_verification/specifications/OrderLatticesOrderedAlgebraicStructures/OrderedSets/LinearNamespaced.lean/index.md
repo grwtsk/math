@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [extend_partialOrder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/extend-partialorder.md) | 29 | `result-track:76535f75fc47b006396f9537e09c385d252a8e0c334f49fce8e73c948c116448` |
-| 2 | `def` | [LinearExtension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/linearextension.md) | 80 | `declaration-track:978b596f727f8eb401ecf8af7954c42149f4b9661aa9627952d43ff36b3497ba` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/instance.md) | 83 | `declaration-track:556be43cfc050c7a6bac8cb86eb102452a4ddaf867cc78fa99876bc218312020` |
-| 4 | `def` | [toLinearExtension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/tolinearextension.md) | 92 | `declaration-track:28b6caa7c1b542ff53bf948657ce091b0cde8af610e8aad606994ebb5b2c396b` |
-| 5 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/instance-source-edition-2.md) | 96 | `declaration-track:ad4c2c0891c4a127da5fcabe1812ebfd592590f3425c1695ca4a71358995a847` |
+| 1 | `theorem` | [extend_partialOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/extend-partialorder.md) | 29 | `result-track:76535f75fc47b006396f9537e09c385d252a8e0c334f49fce8e73c948c116448` |
+| 2 | `def` | [LinearExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/linearextension.md) | 80 | `declaration-track:978b596f727f8eb401ecf8af7954c42149f4b9661aa9627952d43ff36b3497ba` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/instance.md) | 83 | `declaration-track:556be43cfc050c7a6bac8cb86eb102452a4ddaf867cc78fa99876bc218312020` |
+| 4 | `def` | [toLinearExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/tolinearextension.md) | 92 | `declaration-track:28b6caa7c1b542ff53bf948657ce091b0cde8af610e8aad606994ebb5b2c396b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinearNamespaced.lean/declarations/instance-source-edition-2.md) | 96 | `declaration-track:ad4c2c0891c4a127da5fcabe1812ebfd592590f3425c1695ca4a71358995a847` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

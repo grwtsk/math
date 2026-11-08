@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicWeightedVariation`](../../../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicCoordinates.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicWeightedVariation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicCoordinates.lean/index.md) — import line 13; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coreGrowingShiftEndpointTransverseReciprocalCoefficientVariation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransversereciprocalcoefficientvariation.md) | 24 | `declaration-track:3709eaebacf63f8289557accc8cc2b05fde0982f72c8385b533de5a7915b472d` |
-| 2 | `theorem` | [coreGrowingShiftEndpointTransverseWeightedReciprocal_Ico_eq_abel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransverseweightedreciprocal-ico-eq-abel.md) | 32 | `result-track:b3a27e2121083bd8bfc84ca3865c28e58d4505d783da56b604e83814cd095a4e` |
-| 3 | `theorem` | [coreGrowingShiftEndpointTransverseWeightedReciprocal_Ico_norm_le_variation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransverseweightedreciprocal-ico-norm-le-variati.md) | 57 | `result-track:12c0964425d6340d0eaf6984388f7e95b7486fab41b65b81f7001d7c491ef38f` |
-| 4 | `theorem` | [coreGrowingShiftEndpointTransverseTailHarmonicWeighted_norm_le_variation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransversetailharmonicweighted-norm-le-variation.md) | 83 | `result-track:d7e704cf9c3952c020fa15aa0a45c6a262eca772d75b5d6d82b28d876cb6354d` |
+| 1 | `def` | [coreGrowingShiftEndpointTransverseReciprocalCoefficientVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransversereciprocalcoefficientvariation.md) | 24 | `declaration-track:3709eaebacf63f8289557accc8cc2b05fde0982f72c8385b533de5a7915b472d` |
+| 2 | `theorem` | [coreGrowingShiftEndpointTransverseWeightedReciprocal_Ico_eq_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransverseweightedreciprocal-ico-eq-abel.md) | 32 | `result-track:b3a27e2121083bd8bfc84ca3865c28e58d4505d783da56b604e83814cd095a4e` |
+| 3 | `theorem` | [coreGrowingShiftEndpointTransverseWeightedReciprocal_Ico_norm_le_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransverseweightedreciprocal-ico-norm-le-variati.md) | 57 | `result-track:12c0964425d6340d0eaf6984388f7e95b7486fab41b65b81f7001d7c491ef38f` |
+| 4 | `theorem` | [coreGrowingShiftEndpointTransverseTailHarmonicWeighted_norm_le_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicWeightedVariation.lean/declarations/coregrowingshiftendpointtransversetailharmonicweighted-norm-le-variation.md) | 83 | `result-track:d7e704cf9c3952c020fa15aa0a45c6a262eca772d75b5d6d82b28d876cb6354d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

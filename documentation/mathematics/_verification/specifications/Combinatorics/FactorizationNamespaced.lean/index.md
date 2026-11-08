@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FactorizationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FactorizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SchmidtRankCertificate](../../../../Combinatorics/FactorizationNamespaced.lean/declarations/schmidtrankcertificate.md) | 23 | `declaration-track:17dd95ddb9a5d2fc847fa3e9feded4deaa29b8d1edf2ecb43f152803d84fae7c` |
-| 2 | `structure` | [MPSTruncationCertificate](../../../../Combinatorics/FactorizationNamespaced.lean/declarations/mpstruncationcertificate.md) | 32 | `declaration-track:8bfb0af3c76a0e39608db3ff6fb2f99551f962e7a4844f9b896cb79975c46e46` |
-| 3 | `def` | [OpenMPS.storageCost](../../../../Combinatorics/FactorizationNamespaced.lean/declarations/openmps-storagecost.md) | 42 | `declaration-track:265e8bdf6e52c54805404ee69071da44f1b6bae885fceefebe2f665fd63d232b` |
-| 4 | `theorem` | [OpenMPS.storageCost_le](../../../../Combinatorics/FactorizationNamespaced.lean/declarations/openmps-storagecost-le.md) | 50 | `result-track:17ce5de752e149754b6988395ff5153578fe6be94796331286255f53ea1746b8` |
-| 5 | `structure` | [MPSCostCertificate](../../../../Combinatorics/FactorizationNamespaced.lean/declarations/mpscostcertificate.md) | 74 | `declaration-track:34d928ca61efce285845c297503495bec6c86ed7e7f7d9c74873765641d45942` |
+| 1 | `structure` | [SchmidtRankCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorizationNamespaced.lean/declarations/schmidtrankcertificate.md) | 23 | `declaration-track:17dd95ddb9a5d2fc847fa3e9feded4deaa29b8d1edf2ecb43f152803d84fae7c` |
+| 2 | `structure` | [MPSTruncationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorizationNamespaced.lean/declarations/mpstruncationcertificate.md) | 32 | `declaration-track:8bfb0af3c76a0e39608db3ff6fb2f99551f962e7a4844f9b896cb79975c46e46` |
+| 3 | `def` | [OpenMPS.storageCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorizationNamespaced.lean/declarations/openmps-storagecost.md) | 42 | `declaration-track:265e8bdf6e52c54805404ee69071da44f1b6bae885fceefebe2f665fd63d232b` |
+| 4 | `theorem` | [OpenMPS.storageCost_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorizationNamespaced.lean/declarations/openmps-storagecost-le.md) | 50 | `result-track:17ce5de752e149754b6988395ff5153578fe6be94796331286255f53ea1746b8` |
+| 5 | `structure` | [MPSCostCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorizationNamespaced.lean/declarations/mpscostcertificate.md) | 74 | `declaration-track:34d928ca61efce285845c297503495bec6c86ed7e7f7d9c74873765641d45942` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

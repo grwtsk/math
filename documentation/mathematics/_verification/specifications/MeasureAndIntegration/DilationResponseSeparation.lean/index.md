@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.DilationGram`](../../../../MeasureAndIntegration/DilationGram.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.DilationGram`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationGram.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Complex.ExponentialBounds` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [native_touching_diagonal_zero](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/declarations/native-touching-diagonal-zero.md) | 24 | `result-track:fbcc8d032b3faac5b333c0d83bc1065646b44005c6cd04959ee7cbe9d564ca6c` |
-| 2 | `theorem` | [touching_atom_in_inventory](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/declarations/touching-atom-in-inventory.md) | 42 | `result-track:4c4bcdb20915487a31b5c3623b0f53885c74b3abd134b3d7de1e574f51c6c7cf` |
-| 3 | `theorem` | [native_touching_ne_prescribed](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/declarations/native-touching-ne-prescribed.md) | 46 | `result-track:325653b70bc3ff450beeb7e82663445f7663c07c925edd9c5e3a81cd1ba05423` |
-| 4 | `theorem` | [positive_horizon_obstruction](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/declarations/positive-horizon-obstruction.md) | 52 | `result-track:f91c8cadff7de1080765accc783ea4aeba9a9ed47ef1a807ef88c3054a337834` |
-| 5 | `theorem` | [prescribed_horizon_obstruction](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/declarations/prescribed-horizon-obstruction.md) | 61 | `result-track:09f8778a08f6111206551d6abd1729150402e52ef877ba12b0484afe87e32551` |
+| 1 | `theorem` | [native_touching_diagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/declarations/native-touching-diagonal-zero.md) | 24 | `result-track:fbcc8d032b3faac5b333c0d83bc1065646b44005c6cd04959ee7cbe9d564ca6c` |
+| 2 | `theorem` | [touching_atom_in_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/declarations/touching-atom-in-inventory.md) | 42 | `result-track:4c4bcdb20915487a31b5c3623b0f53885c74b3abd134b3d7de1e574f51c6c7cf` |
+| 3 | `theorem` | [native_touching_ne_prescribed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/declarations/native-touching-ne-prescribed.md) | 46 | `result-track:325653b70bc3ff450beeb7e82663445f7663c07c925edd9c5e3a81cd1ba05423` |
+| 4 | `theorem` | [positive_horizon_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/declarations/positive-horizon-obstruction.md) | 52 | `result-track:f91c8cadff7de1080765accc783ea4aeba9a9ed47ef1a807ef88c3054a337834` |
+| 5 | `theorem` | [prescribed_horizon_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/declarations/prescribed-horizon-obstruction.md) | 61 | `result-track:09f8778a08f6111206551d6abd1729150402e52ef877ba12b0484afe87e32551` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

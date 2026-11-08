@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [beta_eq_moebius_first_block](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/declarations/beta-eq-moebius-first-block.md) | 26 | `result-track:aa412bf8bb731dc90be3c1d41d060ad849628e2be7be452780a55e34bd3980a4` |
-| 2 | `theorem` | [centeredBeta_eq_moebius_add_alpha_first_block](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/declarations/centeredbeta-eq-moebius-add-alpha-first-block.md) | 55 | `result-track:712a5a9b9286987bc232b67dcc323226dd388ae99b082f40ca70dc5ae76e665b` |
-| 3 | `theorem` | [actual_first_block_off_column_eq_moebius](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/declarations/actual-first-block-off-column-eq-moebius.md) | 61 | `result-track:003f954a2b4413ed9315359758eff20111f1f6d7defbbca1df0ae06c6dd327a9` |
+| 1 | `theorem` | [beta_eq_moebius_first_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/declarations/beta-eq-moebius-first-block.md) | 26 | `result-track:aa412bf8bb731dc90be3c1d41d060ad849628e2be7be452780a55e34bd3980a4` |
+| 2 | `theorem` | [centeredBeta_eq_moebius_add_alpha_first_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/declarations/centeredbeta-eq-moebius-add-alpha-first-block.md) | 55 | `result-track:712a5a9b9286987bc232b67dcc323226dd388ae99b082f40ca70dc5ae76e665b` |
+| 3 | `theorem` | [actual_first_block_off_column_eq_moebius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePrimeBlockPrimitiveNamespacedEdition2.lean/declarations/actual-first-block-off-column-eq-moebius.md) | 61 | `result-track:003f954a2b4413ed9315359758eff20111f1f6d7defbbca1df0ae06c6dd327a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

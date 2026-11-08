@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isNilpotent_iff_of_fintype](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isnilpotent-iff-of-fintype.md) | 37 | `result-track:960e3505d82a623c96d9a1fd597bee9007af4e360f53a9b0b54b2960d6bd2047` |
-| 2 | `theorem` | [isNilpotent_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isnilpotent-iff.md) | 54 | `result-track:314aad858a862d48d35ce6726a2784ee64571928c5954cbc37d4b19d1012eb1e` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/instance.md) | 63 | `declaration-track:75da8e1a1303a64f587761206b887dd040b1f370336d48d8bee73c41e5f94416` |
-| 4 | `theorem` | [isUnit_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isunit-iff.md) | 66 | `result-track:281234eea1c203460547f3581c0610c55c7131d6063f2bfe4ff53e15cf7a9015` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 84 | `declaration-track:9ea45a0def3bbe9f50ccd634004be928ddbaa70731dd1ed019d5bec6afe6304f` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 87 | `declaration-track:b51d813d8a158df7892270070e412df4d337ecd02383ad26dd7febffe6be9073` |
-| 7 | `theorem` | [isUnit_iff_totalDegree_of_isReduced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isunit-iff-totaldegree-of-isreduced.md) | 90 | `result-track:6d84469e29a80e0a1533a9c45e5ba8407fb57a2a4908f7fa9c371ca6a15af5c2` |
-| 8 | `theorem` | [isUnit_iff_eq_C_of_isReduced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isunit-iff-eq-c-of-isreduced.md) | 96 | `result-track:45cefa4186f22e7b51f541bdf59e9b09552fe34515900408e47471565bd243c6` |
+| 1 | `theorem` | [isNilpotent_iff_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isnilpotent-iff-of-fintype.md) | 37 | `result-track:960e3505d82a623c96d9a1fd597bee9007af4e360f53a9b0b54b2960d6bd2047` |
+| 2 | `theorem` | [isNilpotent_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isnilpotent-iff.md) | 54 | `result-track:314aad858a862d48d35ce6726a2784ee64571928c5954cbc37d4b19d1012eb1e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/instance.md) | 63 | `declaration-track:75da8e1a1303a64f587761206b887dd040b1f370336d48d8bee73c41e5f94416` |
+| 4 | `theorem` | [isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isunit-iff.md) | 66 | `result-track:281234eea1c203460547f3581c0610c55c7131d6063f2bfe4ff53e15cf7a9015` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 84 | `declaration-track:9ea45a0def3bbe9f50ccd634004be928ddbaa70731dd1ed019d5bec6afe6304f` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 87 | `declaration-track:b51d813d8a158df7892270070e412df4d337ecd02383ad26dd7febffe6be9073` |
+| 7 | `theorem` | [isUnit_iff_totalDegree_of_isReduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isunit-iff-totaldegree-of-isreduced.md) | 90 | `result-track:6d84469e29a80e0a1533a9c45e5ba8407fb57a2a4908f7fa9c371ca6a15af5c2` |
+| 8 | `theorem` | [isUnit_iff_eq_C_of_isReduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialNilpotentNamespacedPublic.lean/declarations/isunit-iff-eq-c-of-isreduced.md) | 96 | `result-track:45cefa4186f22e7b51f541bdf59e9b09552fe34515900408e47471565bd243c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

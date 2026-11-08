@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteTorsionComplex](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/finitetorsioncomplex.md) | 15 | `declaration-track:b30a37ea087bd0081432e8633dd72da36733113987981b3ec3aaef207bb467c9` |
-| 2 | `def` | [torsionMass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/torsionmass.md) | 22 | `declaration-track:8e13e042794aee22e8414cf3d715ee992c9be7a4611b4ea55c27677ba45f75ff` |
-| 3 | `def` | [eulerShadow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/eulershadow.md) | 26 | `declaration-track:f776163150535971295ca80fc8664e0ee075f9cba0887123e27eadb8c70e942d` |
-| 4 | `theorem` | [torsionMass_nonnegative](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/torsionmass-nonnegative.md) | 31 | `result-track:d5f50728a9b0cba4076248dbb25ce5ed8aac74e0a82f1af3328af776f967045d` |
-| 5 | `theorem` | [torsionMass_identity](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/torsionmass-identity.md) | 36 | `result-track:fdf8efe182a8158ca267a3c059d0c680615c8fb40435e5788f67cff92dad0e4a` |
-| 6 | `theorem` | [eulerShadow_identity](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/eulershadow-identity.md) | 41 | `result-track:654f12df22a015c2801bb06345e7cb4aad4003d7dd30148bde65e0bf0583f2e9` |
-| 7 | `theorem` | [mass_nonincreasing_comp](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/mass-nonincreasing-comp.md) | 46 | `result-track:3d6e8454220a836ebdb18b8afc453cbfa45619d16adfba124aa78ca983ae1538` |
+| 1 | `structure` | [FiniteTorsionComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/finitetorsioncomplex.md) | 15 | `declaration-track:b30a37ea087bd0081432e8633dd72da36733113987981b3ec3aaef207bb467c9` |
+| 2 | `def` | [torsionMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/torsionmass.md) | 22 | `declaration-track:8e13e042794aee22e8414cf3d715ee992c9be7a4611b4ea55c27677ba45f75ff` |
+| 3 | `def` | [eulerShadow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/eulershadow.md) | 26 | `declaration-track:f776163150535971295ca80fc8664e0ee075f9cba0887123e27eadb8c70e942d` |
+| 4 | `theorem` | [torsionMass_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/torsionmass-nonnegative.md) | 31 | `result-track:d5f50728a9b0cba4076248dbb25ce5ed8aac74e0a82f1af3328af776f967045d` |
+| 5 | `theorem` | [torsionMass_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/torsionmass-identity.md) | 36 | `result-track:fdf8efe182a8158ca267a3c059d0c680615c8fb40435e5788f67cff92dad0e4a` |
+| 6 | `theorem` | [eulerShadow_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/eulershadow-identity.md) | 41 | `result-track:654f12df22a015c2801bb06345e7cb4aad4003d7dd30148bde65e0bf0583f2e9` |
+| 7 | `theorem` | [mass_nonincreasing_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionComplex.lean/declarations/mass-nonincreasing-comp.md) | 46 | `result-track:3d6e8454220a836ebdb18b8afc453cbfa45619d16adfba124aa78ca983ae1538` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

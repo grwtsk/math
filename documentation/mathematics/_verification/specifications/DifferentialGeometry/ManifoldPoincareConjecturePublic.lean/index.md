@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ManifoldPoincareConjecturePublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/ManifoldPoincareConjecturePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldPoincareConjecturePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldPoincareConjecturePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ContinuousMap.HomotopyEquiv.NonemptyDiffeomorphSphere](../../../../DifferentialGeometry/ManifoldPoincareConjecturePublic.lean/declarations/continuousmap-homotopyequiv-nonemptydiffeomorphsphere.md) | 41 | `declaration-track:4262e3d1c61e542ea8cbcf195d193f1f78e9d015610edaa113420c04c9af2b31` |
+| 1 | `def` | [ContinuousMap.HomotopyEquiv.NonemptyDiffeomorphSphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldPoincareConjecturePublic.lean/declarations/continuousmap-homotopyequiv-nonemptydiffeomorphsphere.md) | 41 | `declaration-track:4262e3d1c61e542ea8cbcf195d193f1f78e9d015610edaa113420c04c9af2b31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

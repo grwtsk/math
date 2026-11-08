@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/Equivariance.lean/index.md) · [Full source](../../../../Geometry/Equivariance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Equivariance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Equivariance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EquivariantScheduleKernelCertificate](../../../../Geometry/Equivariance.lean/declarations/equivariantschedulekernelcertificate.md) | 16 | `declaration-track:a95e9c20ade75388bcdfbfd34bbbff41acfac089db30abf66275565848fe2c2e` |
-| 2 | `theorem` | [invariantLaw_automorphism_invariant](../../../../Geometry/Equivariance.lean/declarations/invariantlaw-automorphism-invariant.md) | 60 | `result-track:f29b87fdf26f7284c065c2a54d844656aec6a6993778ae3aebc5574a63d454ed` |
-| 3 | `theorem` | [iterateLaw_automorphism_equivariant](../../../../Geometry/Equivariance.lean/declarations/iteratelaw-automorphism-equivariant.md) | 79 | `result-track:278777a2d69d57a371b86fba8c4d1bd33720372b306f0a23fb7148ac2c0c2bdf` |
-| 4 | `theorem` | [automorphism_distance_to_boundary](../../../../Geometry/Equivariance.lean/declarations/automorphism-distance-to-boundary.md) | 121 | `result-track:a2aba77cd99a6152ec3a4f60dfa2fe83c5cb80d78c515e55327c3c30b3b73911` |
-| 5 | `theorem` | [automorphism_related_traversals_wasserstein_le](../../../../Geometry/Equivariance.lean/declarations/automorphism-related-traversals-wasserstein-le.md) | 157 | `result-track:f9d262057fb833c6f83d1b916554c2eb0b4c59b3d19c266d8fc8bb2942c1a6bf` |
+| 1 | `structure` | [EquivariantScheduleKernelCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Equivariance.lean/declarations/equivariantschedulekernelcertificate.md) | 16 | `declaration-track:a95e9c20ade75388bcdfbfd34bbbff41acfac089db30abf66275565848fe2c2e` |
+| 2 | `theorem` | [invariantLaw_automorphism_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Equivariance.lean/declarations/invariantlaw-automorphism-invariant.md) | 60 | `result-track:f29b87fdf26f7284c065c2a54d844656aec6a6993778ae3aebc5574a63d454ed` |
+| 3 | `theorem` | [iterateLaw_automorphism_equivariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Equivariance.lean/declarations/iteratelaw-automorphism-equivariant.md) | 79 | `result-track:278777a2d69d57a371b86fba8c4d1bd33720372b306f0a23fb7148ac2c0c2bdf` |
+| 4 | `theorem` | [automorphism_distance_to_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Equivariance.lean/declarations/automorphism-distance-to-boundary.md) | 121 | `result-track:a2aba77cd99a6152ec3a4f60dfa2fe83c5cb80d78c515e55327c3c30b3b73911` |
+| 5 | `theorem` | [automorphism_related_traversals_wasserstein_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Equivariance.lean/declarations/automorphism-related-traversals-wasserstein-le.md) | 157 | `result-track:f9d262057fb833c6f83d1b916554c2eb0b4c59b3d19c266d8fc8bb2942c1a6bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

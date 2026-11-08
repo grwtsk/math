@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GridShape](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/gridshape.md) | 19 | `declaration-track:3d8f026b1ba1717a927b385435d38fd9bf82b518bb7eb047448c0b854b25e077` |
-| 2 | `abbrev` | [Cell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/cell.md) | 24 | `declaration-track:df83c46ed9907b1f78f63879f96f37d66c31702e1b8f6101cc61a9472891d42e` |
-| 3 | `def` | [EdgeAdjacent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/edgeadjacent.md) | 26 | `declaration-track:0ee1bfcc2bf168cb26bb3be4d82ca6558d8936b743500d9d397391d40a0c86a3` |
-| 4 | `theorem` | [edgeAdjacent_symm](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/edgeadjacent-symm.md) | 32 | `result-track:39d158b9ee598dbc0901ce69e1ef5e24d13ecb5ef7ddc38cb44e2ca69fa770d8` |
-| 5 | `theorem` | [edgeAdjacent_irrefl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/edgeadjacent-irrefl.md) | 43 | `result-track:cb8be522d4e2cd3df88202f2628cbf9bbea8cd084d394f14ca3209b117cc20d6` |
+| 1 | `structure` | [GridShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/gridshape.md) | 19 | `declaration-track:3d8f026b1ba1717a927b385435d38fd9bf82b518bb7eb047448c0b854b25e077` |
+| 2 | `abbrev` | [Cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/cell.md) | 24 | `declaration-track:df83c46ed9907b1f78f63879f96f37d66c31702e1b8f6101cc61a9472891d42e` |
+| 3 | `def` | [EdgeAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/edgeadjacent.md) | 26 | `declaration-track:0ee1bfcc2bf168cb26bb3be4d82ca6558d8936b743500d9d397391d40a0c86a3` |
+| 4 | `theorem` | [edgeAdjacent_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/edgeadjacent-symm.md) | 32 | `result-track:39d158b9ee598dbc0901ce69e1ef5e24d13ecb5ef7ddc38cb44e2ca69fa770d8` |
+| 5 | `theorem` | [edgeAdjacent_irrefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Grid.lean/declarations/edgeadjacent-irrefl.md) | 43 | `result-track:cb8be522d4e2cd3df88202f2628cbf9bbea8cd084d394f14ca3209b117cc20d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

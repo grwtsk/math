@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [singleton_original_profile](../../../../MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/declarations/singleton-original-profile.md) | 19 | `result-track:160f3aaf2cee707d83e883b54040a33b899a83fde3f24d6d4abc9e9d6da21746` |
-| 2 | `theorem` | [same_labels_source_increment](../../../../MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/declarations/same-labels-source-increment.md) | 28 | `result-track:996490bebc05fbe2d9c187c5b6c06eae92dc55e0d0a83ce54e4ca46530516f2f` |
-| 3 | `theorem` | [actual_same_labels_increment_ne_zero](../../../../MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/declarations/actual-same-labels-increment-ne-zero.md) | 39 | `result-track:6888a44d069b598133531f80b4cbe2cb93b578bfd31c67b3f6df9a797630b826` |
+| 1 | `theorem` | [singleton_original_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/declarations/singleton-original-profile.md) | 19 | `result-track:160f3aaf2cee707d83e883b54040a33b899a83fde3f24d6d4abc9e9d6da21746` |
+| 2 | `theorem` | [same_labels_source_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/declarations/same-labels-source-increment.md) | 28 | `result-track:996490bebc05fbe2d9c187c5b6c06eae92dc55e0d0a83ce54e4ca46530516f2f` |
+| 3 | `theorem` | [actual_same_labels_increment_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OverlapSourceFixtureEdition1.lean/declarations/actual-same-labels-increment-ne-zero.md) | 39 | `result-track:6888a44d069b598133531f80b4cbe2cb93b578bfd31c67b3f6df9a797630b826` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

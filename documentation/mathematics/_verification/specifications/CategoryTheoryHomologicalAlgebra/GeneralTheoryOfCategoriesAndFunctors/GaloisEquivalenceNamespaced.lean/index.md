@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functorToContAction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/functortocontaction.md) | 44 | `declaration-track:7b3a19a7db83b0bc9eedb917a48be8a8e67abacced441737446ff21951ce9b31` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-5.md) | 47 | `declaration-track:dd708fa0eb6692340df4b491f00f70d4bfca31f20b27384a52317aed410a9515` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:2ef6ec6e5d3c15fe8271cb83f35244988c8e4c2995d3af8ec0b93e83e746f7be` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:3c28ae286ffe62f1f5db2cfee3632c05eb476bcb0bd72056908d27a833e60f62` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance.md) | 59 | `declaration-track:08b8e8a5b8a1ea13edd86f39b3cba0961565edfdb61492d92f074ae6816a819d` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-4.md) | 94 | `declaration-track:982b483895a337d5fc5566b18ae414a17cda2114330e3ab3f4bd303bb8afc30a` |
+| 1 | `def` | [functorToContAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/functortocontaction.md) | 44 | `declaration-track:7b3a19a7db83b0bc9eedb917a48be8a8e67abacced441737446ff21951ce9b31` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-5.md) | 47 | `declaration-track:dd708fa0eb6692340df4b491f00f70d4bfca31f20b27384a52317aed410a9515` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:2ef6ec6e5d3c15fe8271cb83f35244988c8e4c2995d3af8ec0b93e83e746f7be` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:3c28ae286ffe62f1f5db2cfee3632c05eb476bcb0bd72056908d27a833e60f62` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance.md) | 59 | `declaration-track:08b8e8a5b8a1ea13edd86f39b3cba0961565edfdb61492d92f074ae6816a819d` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisEquivalenceNamespaced.lean/declarations/instance-source-edition-4.md) | 94 | `declaration-track:982b483895a337d5fc5566b18ae414a17cda2114330e3ab3f4bd303bb8afc30a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

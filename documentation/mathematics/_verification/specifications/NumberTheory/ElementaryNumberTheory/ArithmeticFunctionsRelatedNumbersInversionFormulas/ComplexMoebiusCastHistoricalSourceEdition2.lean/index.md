@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.TruncatedMoebiusCoefficients`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficientsHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.TruncatedMoebiusCoefficients`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficientsHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Data.Complex.Basic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integer_cutoff_complex](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/integer-cutoff-complex.md) | 18 | `result-track:406ceaf324b56322539a4c5332b4626c5c8f15bd6db93b1775626b0e4e61113c` |
-| 2 | `theorem` | [integer_sub_complex](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/integer-sub-complex.md) | 27 | `result-track:36ce1b3b241151b19400e345e6c34388cd55197a9e10899a0d3552e1165e08d0` |
-| 3 | `theorem` | [high_moebius_complex_function](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/high-moebius-complex-function.md) | 35 | `result-track:85f8f01329b33f32f860b30eb3e484268801760976b1b9589ddecdd23db3a095` |
-| 4 | `theorem` | [moebius_convolution_not_pointwise_at_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/moebius-convolution-not-pointwise-at-two.md) | 55 | `result-track:98774e67dab06d53ffd8b37b6cdd17183fd35f37aaa6d7e8ab25b7d64ca747fa` |
+| 1 | `theorem` | [integer_cutoff_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/integer-cutoff-complex.md) | 18 | `result-track:406ceaf324b56322539a4c5332b4626c5c8f15bd6db93b1775626b0e4e61113c` |
+| 2 | `theorem` | [integer_sub_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/integer-sub-complex.md) | 27 | `result-track:36ce1b3b241151b19400e345e6c34388cd55197a9e10899a0d3552e1165e08d0` |
+| 3 | `theorem` | [high_moebius_complex_function](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/high-moebius-complex-function.md) | 35 | `result-track:85f8f01329b33f32f860b30eb3e484268801760976b1b9589ddecdd23db3a095` |
+| 4 | `theorem` | [moebius_convolution_not_pointwise_at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/declarations/moebius-convolution-not-pointwise-at-two.md) | 55 | `result-track:98774e67dab06d53ffd8b37b6cdd17183fd35f37aaa6d7e8ab25b7d64ca747fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

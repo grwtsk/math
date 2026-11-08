@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundaryInverse_shift](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/boundaryinverse-shift.md) | 20 | `result-track:de0ba1a25149973f4d4b95ffef7b86846afda132ed4c5599fde3ba70c8bdcd97` |
-| 2 | `theorem` | [candidate_shift](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/candidate-shift.md) | 64 | `result-track:fcbca8787408c97fdede609753556bd58cd71ee76f3f8e1c91dde2af3f572e50` |
-| 3 | `theorem` | [candidate_boundaryInverse_shift](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/candidate-boundaryinverse-shift.md) | 70 | `result-track:087b33d5b92348891e4d36564cdec19ee0bde4b38041d5d24d22095cf1d85bb8` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 86 | `declaration-track:fa80c87d7a90070883e9be1a7c52ab9fc416c4abe86d04bee618be87c192e316` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/example.md) | 95 | `declaration-track:1a52fcca42fc8b2afe5c609c9d4f1a48b6605a1a9c625cb780242fc430cda738` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 98 | `declaration-track:21b32c0b5e17e14a80ab6781e7c16782192a44422862bfff289a1a1ab86392c0` |
+| 1 | `theorem` | [boundaryInverse_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/boundaryinverse-shift.md) | 20 | `result-track:de0ba1a25149973f4d4b95ffef7b86846afda132ed4c5599fde3ba70c8bdcd97` |
+| 2 | `theorem` | [candidate_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/candidate-shift.md) | 64 | `result-track:fcbca8787408c97fdede609753556bd58cd71ee76f3f8e1c91dde2af3f572e50` |
+| 3 | `theorem` | [candidate_boundaryInverse_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/candidate-boundaryinverse-shift.md) | 70 | `result-track:087b33d5b92348891e4d36564cdec19ee0bde4b38041d5d24d22095cf1d85bb8` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 86 | `declaration-track:fa80c87d7a90070883e9be1a7c52ab9fc416c4abe86d04bee618be87c192e316` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/example.md) | 95 | `declaration-track:1a52fcca42fc8b2afe5c609c9d4f1a48b6605a1a9c625cb780242fc430cda738` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateTiltStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 98 | `declaration-track:21b32c0b5e17e14a80ab6781e7c16782192a44422862bfff289a1a1ab86392c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

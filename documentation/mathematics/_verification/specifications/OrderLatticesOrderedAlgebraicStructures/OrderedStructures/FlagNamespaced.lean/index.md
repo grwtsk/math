@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/declarations/instance.md) | 31 | `declaration-track:71fbbbc7278d51e110376ba362936ca1e31cfe1daa4651e0deaf667e16f44d4b` |
-| 2 | `lemma` | [coe_smul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/declarations/coe-smul.md) | 34 | `result-track:5f6e525b4747271a0a67575a295e716485e46c1f05262009417c9b6bbb9e0f05` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:f9e9bd5a97766da095536f1d8212a1bd3ff721da4ce12529bbf47111453b0d30` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/declarations/instance.md) | 31 | `declaration-track:71fbbbc7278d51e110376ba362936ca1e31cfe1daa4651e0deaf667e16f44d4b` |
+| 2 | `lemma` | [coe_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/declarations/coe-smul.md) | 34 | `result-track:5f6e525b4747271a0a67575a295e716485e46c1f05262009417c9b6bbb9e0f05` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FlagNamespaced.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:f9e9bd5a97766da095536f1d8212a1bd3ff721da4ce12529bbf47111453b0d30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

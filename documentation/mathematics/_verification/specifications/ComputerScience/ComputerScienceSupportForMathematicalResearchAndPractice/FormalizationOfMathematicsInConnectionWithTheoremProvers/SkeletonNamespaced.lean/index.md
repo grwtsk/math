@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SkeletonReference](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/declarations/skeletonreference.md) | 13 | `declaration-track:9ddd0ded5a6c74cb5268680e95c7365d15868ad3e2fd17ff5c2a2f424782147f` |
-| 2 | `def` | [defaultBridgeSkeleton](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/declarations/defaultbridgeskeleton.md) | 19 | `declaration-track:9adc898c5e22969e5bb5ce54eaeab763f659795d02c15cf950788dd7aff2dff4` |
-| 3 | `theorem` | [berkovich_skeleton_transport_domain_valid](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/declarations/berkovich-skeleton-transport-domain-valid.md) | 22 | `result-track:6e64841fadd7550174f635dffa06dd51351585f55abd566bc9c1e1ebb41f5b3a` |
+| 1 | `structure` | [SkeletonReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/declarations/skeletonreference.md) | 13 | `declaration-track:9ddd0ded5a6c74cb5268680e95c7365d15868ad3e2fd17ff5c2a2f424782147f` |
+| 2 | `def` | [defaultBridgeSkeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/declarations/defaultbridgeskeleton.md) | 19 | `declaration-track:9adc898c5e22969e5bb5ce54eaeab763f659795d02c15cf950788dd7aff2dff4` |
+| 3 | `theorem` | [berkovich_skeleton_transport_domain_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SkeletonNamespaced.lean/declarations/berkovich-skeleton-transport-domain-valid.md) | 22 | `result-track:6e64841fadd7550174f635dffa06dd51351585f55abd566bc9c1e1ebb41f5b3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

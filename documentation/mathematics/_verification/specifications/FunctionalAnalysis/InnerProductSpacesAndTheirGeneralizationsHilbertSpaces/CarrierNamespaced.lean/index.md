@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteSoninHorizon](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/finitesoninhorizon.md) | 21 | `declaration-track:17334a647b5e1ea3074eec6c38704246b7c3aa08e15e927089cf7b2e7b0c026c` |
-| 2 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/instance-source-edition-3.md) | 63 | `declaration-track:37356a2987cc3fc7f7d2e9447b237ab59d87f1a21827cef0a3d0559ed4f2b9c3` |
-| 3 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:34c17331297fed71d79c543661dfa8d7bd469e601a8ba399c79cb25bd3840dbf` |
-| 4 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:28771991188cf7163c699ddf7e8c10456c6f91d42f2cf65baf62a023e6baa434` |
+| 1 | `structure` | [FiniteSoninHorizon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/finitesoninhorizon.md) | 21 | `declaration-track:17334a647b5e1ea3074eec6c38704246b7c3aa08e15e927089cf7b2e7b0c026c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/instance-source-edition-3.md) | 63 | `declaration-track:37356a2987cc3fc7f7d2e9447b237ab59d87f1a21827cef0a3d0559ed4f2b9c3` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:34c17331297fed71d79c543661dfa8d7bd469e601a8ba399c79cb25bd3840dbf` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CarrierNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:28771991188cf7163c699ddf7e8c10456c6f91d42f2cf65baf62a023e6baa434` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

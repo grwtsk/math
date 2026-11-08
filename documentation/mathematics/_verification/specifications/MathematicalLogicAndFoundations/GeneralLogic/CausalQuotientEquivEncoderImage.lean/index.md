@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CausalQuotientEquivEncoderImage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CausalQuotientEquivEncoderImage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CausalQuotientEquivEncoderImage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CausalQuotientEquivEncoderImage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Causal.QuantizerTower` — import line 19; external provider; requires a separately pinned dependency.
 - `BitMatrix.Quantization.Core` — import line 20; external provider; requires a separately pinned dependency.
-- [Identity Recursion And Kernel Equality](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IdentityRecursionAndKernelEquality.lean/index.md) — import line 22; pinned internal source present.
+- [Identity Recursion And Kernel Equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IdentityRecursionAndKernelEquality.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [identityCausalStateEquivEffectiveState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CausalQuotientEquivEncoderImage.lean/declarations/identitycausalstateequiveffectivestate.md) | 42 | `declaration-track:9576de7f7bcdb0cad789937af25c9038881930a9f4986e37ae958f7be3353115` |
+| 1 | `def` | [identityCausalStateEquivEffectiveState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CausalQuotientEquivEncoderImage.lean/declarations/identitycausalstateequiveffectivestate.md) | 42 | `declaration-track:9576de7f7bcdb0cad789937af25c9038881930a9f4986e37ae958f7be3353115` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

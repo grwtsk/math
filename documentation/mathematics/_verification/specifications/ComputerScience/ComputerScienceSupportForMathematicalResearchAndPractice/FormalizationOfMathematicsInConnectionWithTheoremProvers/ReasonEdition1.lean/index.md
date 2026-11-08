@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BarrierState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/declarations/barrierstate.md) | 9 | `declaration-track:e0ad9597c7cbd9ba4478a35b12f734b8cafa602c07cfb0b3b4793ef43da303ad` |
-| 2 | `inductive` | [CollapseReasonKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/declarations/collapsereasonkind.md) | 17 | `declaration-track:c6ba04544a7ae228e30501133b87a790cc32624aaf2413079ee48f1728c9dd27` |
-| 3 | `structure` | [RefactorBarrier](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/declarations/refactorbarrier.md) | 42 | `declaration-track:57de0df7aebe19ea52dfaa3ac4866228b3fda71de53b9b525a68091177d6c7ac` |
+| 1 | `inductive` | [BarrierState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/declarations/barrierstate.md) | 9 | `declaration-track:e0ad9597c7cbd9ba4478a35b12f734b8cafa602c07cfb0b3b4793ef43da303ad` |
+| 2 | `inductive` | [CollapseReasonKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/declarations/collapsereasonkind.md) | 17 | `declaration-track:c6ba04544a7ae228e30501133b87a790cc32624aaf2413079ee48f1728c9dd27` |
+| 3 | `structure` | [RefactorBarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReasonEdition1.lean/declarations/refactorbarrier.md) | 42 | `declaration-track:57de0df7aebe19ea52dfaa3ac4866228b3fda71de53b9b525a68091177d6c7ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

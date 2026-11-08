@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/RefinementNamespaced.lean/index.md) · [Full source](../../../../Geometry/RefinementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Refinement](../../../../Geometry/RefinementNamespaced.lean/declarations/refinement.md) | 30 | `declaration-track:3d02844e9381e887c4fb5c17294f6f4cf9def5a6b52824f089d0862089d4ebc9` |
-| 2 | `theorem` | [valid_run](../../../../Geometry/RefinementNamespaced.lean/declarations/valid-run.md) | 57 | `result-track:565b5f0f753b4e33255b32838ff5fdb9a4d8667c4e7b94f0430c9c165796d12f` |
-| 3 | `theorem` | [abstract_run](../../../../Geometry/RefinementNamespaced.lean/declarations/abstract-run.md) | 70 | `result-track:a4dd4df6b9279a55ff5dcd5ee4caf2685fcda9515b06f8f014fe1ce84bae93e8` |
-| 4 | `theorem` | [observe_run_sound](../../../../Geometry/RefinementNamespaced.lean/declarations/observe-run-sound.md) | 84 | `result-track:8cde61724f176e8091e6c2c5ad99512a64908afe54cc8bf1d156809234873357` |
-| 5 | `structure` | [RepresentationRefinement](../../../../Geometry/RefinementNamespaced.lean/declarations/representationrefinement.md) | 99 | `declaration-track:fea902401ad1b59eaecc83c2cd9be61479e638f2b9a98adb05c2dda40b7976cc` |
-| 6 | `theorem` | [abstract_represent_apply](../../../../Geometry/RefinementNamespaced.lean/declarations/abstract-represent-apply.md) | 114 | `result-track:ab259aabb868f91eb10d09ca03c49b3c0ca955377637898a80b1d21a23c7f622` |
-| 7 | `theorem` | [represent_injective](../../../../Geometry/RefinementNamespaced.lean/declarations/represent-injective.md) | 121 | `result-track:e721f700bd20ac14be16a61b48c289edfd517b2ef36fc77cfb27574bdb70295d` |
+| 1 | `structure` | [Refinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/declarations/refinement.md) | 30 | `declaration-track:3d02844e9381e887c4fb5c17294f6f4cf9def5a6b52824f089d0862089d4ebc9` |
+| 2 | `theorem` | [valid_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/declarations/valid-run.md) | 57 | `result-track:565b5f0f753b4e33255b32838ff5fdb9a4d8667c4e7b94f0430c9c165796d12f` |
+| 3 | `theorem` | [abstract_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/declarations/abstract-run.md) | 70 | `result-track:a4dd4df6b9279a55ff5dcd5ee4caf2685fcda9515b06f8f014fe1ce84bae93e8` |
+| 4 | `theorem` | [observe_run_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/declarations/observe-run-sound.md) | 84 | `result-track:8cde61724f176e8091e6c2c5ad99512a64908afe54cc8bf1d156809234873357` |
+| 5 | `structure` | [RepresentationRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/declarations/representationrefinement.md) | 99 | `declaration-track:fea902401ad1b59eaecc83c2cd9be61479e638f2b9a98adb05c2dda40b7976cc` |
+| 6 | `theorem` | [abstract_represent_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/declarations/abstract-represent-apply.md) | 114 | `result-track:ab259aabb868f91eb10d09ca03c49b3c0ca955377637898a80b1d21a23c7f622` |
+| 7 | `theorem` | [represent_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RefinementNamespaced.lean/declarations/represent-injective.md) | 121 | `result-track:e721f700bd20ac14be16a61b48c289edfd517b2ef36fc77cfb27574bdb70295d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

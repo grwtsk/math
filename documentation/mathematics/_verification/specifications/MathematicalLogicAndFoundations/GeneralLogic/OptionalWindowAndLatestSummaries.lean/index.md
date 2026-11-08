@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fixedWindowObservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/declarations/fixedwindowobservation.md) | 50 | `declaration-track:b80a391e25aafab91d726f4791f095748ad249a8187331675b12bdde86f0c9b3` |
-| 2 | `def` | [latestDecodedSummary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/declarations/latestdecodedsummary.md) | 63 | `declaration-track:da8a829edf79d5dc556f2eccbf0e2ad4ed2a02b2754bfb01c770c778182a5ef9` |
-| 3 | `def` | [latestDigestObservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/declarations/latestdigestobservation.md) | 70 | `declaration-track:6464f5c9bd5408102cea75ae52ea3e8ad84292782f8d13c359196d4abda70d72` |
+| 1 | `def` | [fixedWindowObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/declarations/fixedwindowobservation.md) | 50 | `declaration-track:b80a391e25aafab91d726f4791f095748ad249a8187331675b12bdde86f0c9b3` |
+| 2 | `def` | [latestDecodedSummary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/declarations/latestdecodedsummary.md) | 63 | `declaration-track:da8a829edf79d5dc556f2eccbf0e2ad4ed2a02b2754bfb01c770c778182a5ef9` |
+| 3 | `def` | [latestDigestObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalWindowAndLatestSummaries.lean/declarations/latestdigestobservation.md) | 70 | `declaration-track:6464f5c9bd5408102cea75ae52ea3e8ad84292782f8d13c359196d4abda70d72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

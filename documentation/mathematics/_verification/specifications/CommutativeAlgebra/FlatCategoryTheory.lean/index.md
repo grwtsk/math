@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FlatCategoryTheory.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FlatCategoryTheory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatCategoryTheory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatCategoryTheory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [lTensor_shortComplex_exact](../../../../CommutativeAlgebra/FlatCategoryTheory.lean/declarations/ltensor-shortcomplex-exact.md) | 39 | `result-track:4c6da188fdab68c9cc917cd227202bbf420796ad353b6e4e3e75e5940322f135` |
-| 2 | `lemma` | [rTensor_shortComplex_exact](../../../../CommutativeAlgebra/FlatCategoryTheory.lean/declarations/rtensor-shortcomplex-exact.md) | 44 | `result-track:8b4e4ad4d32de7ac07e24a9c1da95e7e7f56dc4d9df50f7dd25c1892ec41eb9e` |
-| 3 | `lemma` | [iff_lTensor_preserves_shortComplex_exact](../../../../CommutativeAlgebra/FlatCategoryTheory.lean/declarations/iff-ltensor-preserves-shortcomplex-exact.md) | 49 | `result-track:6dae480f31e0ac75b40afa2a3c2acb8d0a44cc03eb2d7c731382cd6899efbf4b` |
-| 4 | `lemma` | [iff_rTensor_preserves_shortComplex_exact](../../../../CommutativeAlgebra/FlatCategoryTheory.lean/declarations/iff-rtensor-preserves-shortcomplex-exact.md) | 59 | `result-track:e2a65827e905fbf19c660dfbbc31082271e2ca1c2a47f666190a8e839451b889` |
+| 1 | `lemma` | [lTensor_shortComplex_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatCategoryTheory.lean/declarations/ltensor-shortcomplex-exact.md) | 39 | `result-track:4c6da188fdab68c9cc917cd227202bbf420796ad353b6e4e3e75e5940322f135` |
+| 2 | `lemma` | [rTensor_shortComplex_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatCategoryTheory.lean/declarations/rtensor-shortcomplex-exact.md) | 44 | `result-track:8b4e4ad4d32de7ac07e24a9c1da95e7e7f56dc4d9df50f7dd25c1892ec41eb9e` |
+| 3 | `lemma` | [iff_lTensor_preserves_shortComplex_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatCategoryTheory.lean/declarations/iff-ltensor-preserves-shortcomplex-exact.md) | 49 | `result-track:6dae480f31e0ac75b40afa2a3c2acb8d0a44cc03eb2d7c731382cd6899efbf4b` |
+| 4 | `lemma` | [iff_rTensor_preserves_shortComplex_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatCategoryTheory.lean/declarations/iff-rtensor-preserves-shortcomplex-exact.md) | 59 | `result-track:e2a65827e905fbf19c660dfbbc31082271e2ca1c2a47f666190a8e839451b889` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

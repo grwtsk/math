@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_complete_finite_pulse_inventory](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/declarations/exact-complete-finite-pulse-inventory.md) | 21 | `result-track:13ea2e18755f788f978daed70a7e28188d56913e87b77bb3ccf0bd1829786d21` |
-| 2 | `theorem` | [every_later_pulse_is_zero_at_requested_integer](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/declarations/every-later-pulse-is-zero-at-requested-integer.md) | 48 | `result-track:ccb242051ae6eb24d523bd3877403202796654fb351eafb5519a90d7dae0927c` |
-| 3 | `theorem` | [exact_entire_infinite_pulse_inventory](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/declarations/exact-entire-infinite-pulse-inventory.md) | 54 | `result-track:74e19c58e003e7cdff6b1060d97ff858444cfca3df00d7f8d70f27fb0c6443e7` |
+| 1 | `theorem` | [exact_complete_finite_pulse_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/declarations/exact-complete-finite-pulse-inventory.md) | 21 | `result-track:13ea2e18755f788f978daed70a7e28188d56913e87b77bb3ccf0bd1829786d21` |
+| 2 | `theorem` | [every_later_pulse_is_zero_at_requested_integer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/declarations/every-later-pulse-is-zero-at-requested-integer.md) | 48 | `result-track:ccb242051ae6eb24d523bd3877403202796654fb351eafb5519a90d7dae0927c` |
+| 3 | `theorem` | [exact_entire_infinite_pulse_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteBankCutoffRetainsTheCompleteInfinitePulseInventory.lean/declarations/exact-entire-infinite-pulse-inventory.md) | 54 | `result-track:74e19c58e003e7cdff6b1060d97ff858444cfca3df00d7f8d70f27fb0c6443e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PerfectlyNormalNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/PerfectlyNormalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerfectlyNormalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerfectlyNormalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [perfectlyNormalSpace_iff_forall_isClosed_preimage_zero](../../../../GeneralTopology/PerfectlyNormalNamespacedPublic.lean/declarations/perfectlynormalspace-iff-forall-isclosed-preimage-zero.md) | 38 | `result-track:622c3f360c6cd75056e0e82632e1101beb85b970e6a98d800ed87a4a2560d25f` |
+| 1 | `theorem` | [perfectlyNormalSpace_iff_forall_isClosed_preimage_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerfectlyNormalNamespacedPublic.lean/declarations/perfectlynormalspace-iff-forall-isclosed-preimage-zero.md) | 38 | `result-track:622c3f360c6cd75056e0e82632e1101beb85b970e6a98d800ed87a4a2560d25f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [find?_eq_find?_of_perm](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/declarations/find-eq-find-of-perm.md) | 29 | `result-track:6ac6cfbe4e61e456044fa3568c47aa0fd8479c66816d85778e565b99c7637e8b` |
-| 2 | `theorem` | [find?_congr](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/declarations/find-congr.md) | 44 | `result-track:a4bc24191c6b74c3e4e29a2d99eb5aab2a47bc71bc0adbdd0f7d72b2bf346e91` |
+| 1 | `theorem` | [find?_eq_find?_of_perm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/declarations/find-eq-find-of-perm.md) | 29 | `result-track:6ac6cfbe4e61e456044fa3568c47aa0fd8479c66816d85778e565b99c7637e8b` |
+| 2 | `theorem` | [find?_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindNamespacedPublic.lean/declarations/find-congr.md) | 44 | `result-track:a4bc24191c6b74c3e4e29a2d99eb5aab2a47bc71bc0adbdd0f7d72b2bf346e91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

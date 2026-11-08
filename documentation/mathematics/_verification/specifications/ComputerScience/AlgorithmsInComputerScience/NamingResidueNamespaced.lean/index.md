@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PersistentNamingResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/persistentnamingresidue.md) | 33 | `declaration-track:fbc584460f4a15ec71409e78714b88f00f2314a343e83778b922538330842cc6` |
-| 2 | `def` | [fixedRoute](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/fixedroute.md) | 45 | `declaration-track:f376f95817dd3988b2087e4291a60f3d6dc0991e9539849d8743358f38427d42` |
-| 3 | `def` | [activationRequired](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/activationrequired.md) | 50 | `declaration-track:852eb45bd1521704dd5dd8cf0629c07bcab851d552ed09dcbfea526f036505aa` |
-| 4 | `theorem` | [activates](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/activates.md) | 54 | `result-track:89015f3d9d825a0e17d8c1be55dbcc6fb55cd136a806a2c3255a98d15d298d4a` |
-| 5 | `structure` | [NamingHeatInjectionRequest](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/namingheatinjectionrequest.md) | 65 | `declaration-track:6e7dcc4677c6c8e402597b4dd164cc9e4cd803ab47874e13af9fdd671e8188e8` |
+| 1 | `structure` | [PersistentNamingResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/persistentnamingresidue.md) | 33 | `declaration-track:fbc584460f4a15ec71409e78714b88f00f2314a343e83778b922538330842cc6` |
+| 2 | `def` | [fixedRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/fixedroute.md) | 45 | `declaration-track:f376f95817dd3988b2087e4291a60f3d6dc0991e9539849d8743358f38427d42` |
+| 3 | `def` | [activationRequired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/activationrequired.md) | 50 | `declaration-track:852eb45bd1521704dd5dd8cf0629c07bcab851d552ed09dcbfea526f036505aa` |
+| 4 | `theorem` | [activates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/activates.md) | 54 | `result-track:89015f3d9d825a0e17d8c1be55dbcc6fb55cd136a806a2c3255a98d15d298d4a` |
+| 5 | `structure` | [NamingHeatInjectionRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidueNamespaced.lean/declarations/namingheatinjectionrequest.md) | 65 | `declaration-track:6e7dcc4677c6c8e402597b4dd164cc9e4cd803ab47874e13af9fdd671e8188e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [choose_mul_add](../../../../../NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/declarations/choose-mul-add.md) | 27 | `result-track:31c322ab7ce09b779747008a169b749ac10f0f54dbfc698a8deb4d45478a8505` |
-| 2 | `theorem` | [choose_mul_right](../../../../../NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/declarations/choose-mul-right.md) | 46 | `result-track:005ab7ae54ee1f92468817c25627dd2b45fc0daa4e4a3225b6beb6db34791953` |
+| 1 | `theorem` | [choose_mul_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/declarations/choose-mul-add.md) | 27 | `result-track:31c322ab7ce09b779747008a169b749ac10f0f54dbfc698a8deb4d45478a8505` |
+| 2 | `theorem` | [choose_mul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/MulNamespaced.lean/declarations/choose-mul-right.md) | 46 | `result-track:005ab7ae54ee1f92468817c25627dd2b45fc0daa4e4a3225b6beb6db34791953` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

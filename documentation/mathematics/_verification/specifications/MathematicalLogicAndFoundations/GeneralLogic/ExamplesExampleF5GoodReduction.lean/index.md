@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exampleF5GoodReduction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplef5goodreduction.md) | 15 | `declaration-track:7cba57d716bd1b7005ecb816a09a789f00a526933439b6fc035dcb222afacf0e` |
-| 2 | `def` | [exampleF5LocalEulerFactor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplef5localeulerfactor.md) | 26 | `declaration-track:b75e948d00a79b78856bb0335e646903461d1c7700f98a36e07ee2520a60acfd` |
-| 3 | `def` | [exampleHasseWeilLFunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplehasseweillfunction.md) | 30 | `declaration-track:fe80e3ec804caeeced2f432b411c0ca2817850bc5f1fa26017e192cb990a3ccd` |
-| 4 | `def` | [exampleOrderCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/exampleordercertificate.md) | 43 | `declaration-track:a5f5b1b54c4a329b19e5e11000fd280378ac37c0bc65af30f37a698d6b278b80` |
-| 5 | `theorem` | [exampleF5_ap_eq_neg_three](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplef5-ap-eq-neg-three.md) | 53 | `result-track:926b7779adf5fcf2543de36acd2c81bb3989ea862a32251c26fb3dad874c7740` |
+| 1 | `def` | [exampleF5GoodReduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplef5goodreduction.md) | 15 | `declaration-track:7cba57d716bd1b7005ecb816a09a789f00a526933439b6fc035dcb222afacf0e` |
+| 2 | `def` | [exampleF5LocalEulerFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplef5localeulerfactor.md) | 26 | `declaration-track:b75e948d00a79b78856bb0335e646903461d1c7700f98a36e07ee2520a60acfd` |
+| 3 | `def` | [exampleHasseWeilLFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplehasseweillfunction.md) | 30 | `declaration-track:fe80e3ec804caeeced2f432b411c0ca2817850bc5f1fa26017e192cb990a3ccd` |
+| 4 | `def` | [exampleOrderCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/exampleordercertificate.md) | 43 | `declaration-track:a5f5b1b54c4a329b19e5e11000fd280378ac37c0bc65af30f37a698d6b278b80` |
+| 5 | `theorem` | [exampleF5_ap_eq_neg_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExamplesExampleF5GoodReduction.lean/declarations/examplef5-ap-eq-neg-three.md) | 53 | `result-track:926b7779adf5fcf2543de36acd2c81bb3989ea862a32251c26fb3dad874c7740` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

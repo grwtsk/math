@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cardinalMk_eq_max_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-max-lift.md) | 32 | `result-track:3b01b0e917e8c8dc1bf4fc3cd9f7fadc208570811840e9306beaf975b9c4672c` |
-| 2 | `theorem` | [cardinalMk_eq_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-lift.md) | 39 | `result-track:f1911f7fbb7fe883ca6cda6c20fbe0199d35e554c9e93165217a4ba26eeabc3e` |
-| 3 | `theorem` | [cardinalMk_eq_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-one.md) | 44 | `result-track:9a48ef7738e71473055c404cb9e3c40c2ebe913ad64a77b550e713ce5e8c1e3b` |
-| 4 | `theorem` | [cardinalMk_le_max_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-le-max-lift.md) | 47 | `result-track:579ec4a31a819884d2e77455903340fee3edfbec693551fc7e99ed5ef38621a0` |
-| 5 | `theorem` | [cardinalMk_eq_max](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-max.md) | 57 | `result-track:ff2674c8f82d5c665c6097c55116347ad9efa55d1bd2286a6362dfe85c3c91f7` |
-| 6 | `theorem` | [cardinalMk_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq.md) | 60 | `result-track:e04a1bd76932b5d2bca4fd02392968b8933e97686bea435c124b5e1718acde77` |
-| 7 | `theorem` | [cardinalMk_le_max](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-le-max.md) | 63 | `result-track:957a14f70accf80ee473f3ccb71d9e9e7ae21507fcaa0e35a334c3dc330901e2` |
-| 8 | `theorem` | [lift_cardinalMk_adjoin_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/lift-cardinalmk-adjoin-le.md) | 70 | `result-track:c66939cb44fcd4062ff080e08c8c21407e4eca8367295023da948400d1c3cce8` |
-| 9 | `theorem` | [cardinalMk_adjoin_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-adjoin-le.md) | 77 | `result-track:a9cf3587b836f0c97494e7beb0c94388fd9d979b029a39d899ff3afeec5668a9` |
+| 1 | `theorem` | [cardinalMk_eq_max_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-max-lift.md) | 32 | `result-track:3b01b0e917e8c8dc1bf4fc3cd9f7fadc208570811840e9306beaf975b9c4672c` |
+| 2 | `theorem` | [cardinalMk_eq_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-lift.md) | 39 | `result-track:f1911f7fbb7fe883ca6cda6c20fbe0199d35e554c9e93165217a4ba26eeabc3e` |
+| 3 | `theorem` | [cardinalMk_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-one.md) | 44 | `result-track:9a48ef7738e71473055c404cb9e3c40c2ebe913ad64a77b550e713ce5e8c1e3b` |
+| 4 | `theorem` | [cardinalMk_le_max_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-le-max-lift.md) | 47 | `result-track:579ec4a31a819884d2e77455903340fee3edfbec693551fc7e99ed5ef38621a0` |
+| 5 | `theorem` | [cardinalMk_eq_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq-max.md) | 57 | `result-track:ff2674c8f82d5c665c6097c55116347ad9efa55d1bd2286a6362dfe85c3c91f7` |
+| 6 | `theorem` | [cardinalMk_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-eq.md) | 60 | `result-track:e04a1bd76932b5d2bca4fd02392968b8933e97686bea435c124b5e1718acde77` |
+| 7 | `theorem` | [cardinalMk_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-le-max.md) | 63 | `result-track:957a14f70accf80ee473f3ccb71d9e9e7ae21507fcaa0e35a334c3dc330901e2` |
+| 8 | `theorem` | [lift_cardinalMk_adjoin_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/lift-cardinalmk-adjoin-le.md) | 70 | `result-track:c66939cb44fcd4062ff080e08c8c21407e4eca8367295023da948400d1c3cce8` |
+| 9 | `theorem` | [cardinalMk_adjoin_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeAlgebraCardinalityPublic.lean/declarations/cardinalmk-adjoin-le.md) | 77 | `result-track:a9cf3587b836f0c97494e7beb0c94388fd9d979b029a39d899ff3afeec5668a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousEvalConst.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousEvalConst.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ContinuousEvalConst](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuousevalconst.md) | 27 | `declaration-track:65d040e499fbb79e3d86a6a64e3b7834883b840de91ff66f49b16c9a51fafd9b` |
-| 2 | `theorem` | [ContinuousEvalConst.of_continuous_forget](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuousevalconst-of-continuous-forget.md) | 43 | `result-track:6de8464369a2c0f413f5d8e28b369b21462ab0c018ae71dfbb89c8263e85efd5` |
-| 3 | `theorem` | [Continuous.eval_const](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuous-eval-const.md) | 49 | `result-track:f65255baa4c237796310683463be8c5909a2597c20f45f8348e20150135e6486` |
-| 4 | `theorem` | [continuous_coeFun](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuous-coefun-source-edition-2.md) | 52 | `result-track:ab14e10bba8008fb55b27caae3da04d5e39a2c020625e949183477749904c9bd` |
-| 5 | `theorem` | [Continuous.coeFun](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuous-coefun.md) | 55 | `result-track:13a5a621bc07deb28b991cd2336c565cda658069568013687a889095bf296201` |
-| 6 | `theorem` | [Filter.Tendsto.eval_const](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/filter-tendsto-eval-const.md) | 58 | `result-track:93bbe6e3c3c3b4323c378d3bf5a97d4dc1a5f97eeb95f39dbda0f9f18ee4c709` |
-| 7 | `theorem` | [Filter.Tendsto.coeFun](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/filter-tendsto-coefun.md) | 62 | `result-track:84e8565a680166b15c91192b0669d79ba49fb18935c2654b511a78783dcf432a` |
-| 8 | `theorem` | [ContinuousAt.eval_const](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuousat-eval-const.md) | 66 | `result-track:010d5ae2f59b9003c8e55ce5d0ebadfdea39a6e4fb6fb6c8467db11574463d33` |
-| 9 | `theorem` | [ContinuousAt.coeFun](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuousat-coefun.md) | 70 | `result-track:2f0753b86e22d3b574a679e45663051404997f7d57bec9b137d886743ae4aedc` |
-| 10 | `theorem` | [ContinuousWithinAt.eval_const](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuouswithinat-eval-const.md) | 74 | `result-track:f60238f19e9bee12ab912639972566a6424041f87f8a4c13aa8d814221c5325b` |
-| 11 | `theorem` | [ContinuousWithinAt.coeFun](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuouswithinat-coefun.md) | 78 | `result-track:040ab3e51b5104136f461c3c2d8f93c6cfec6f16ded343646b81e18375e1f3a2` |
-| 12 | `theorem` | [ContinuousOn.eval_const](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuouson-eval-const.md) | 82 | `result-track:ca235d66e2d08e577626270abdb419038da9c45b98623ff428d5fb805b6fd3f4` |
-| 13 | `theorem` | [ContinuousOn.coeFun](../../../../GeneralTopology/ContinuousEvalConst.lean/declarations/continuouson-coefun.md) | 86 | `result-track:34116601323f3fa9aa30f15eaf4f15df12ff62b49d3456ec62e61c03d05cd845` |
+| 1 | `class` | [ContinuousEvalConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuousevalconst.md) | 27 | `declaration-track:65d040e499fbb79e3d86a6a64e3b7834883b840de91ff66f49b16c9a51fafd9b` |
+| 2 | `theorem` | [ContinuousEvalConst.of_continuous_forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuousevalconst-of-continuous-forget.md) | 43 | `result-track:6de8464369a2c0f413f5d8e28b369b21462ab0c018ae71dfbb89c8263e85efd5` |
+| 3 | `theorem` | [Continuous.eval_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuous-eval-const.md) | 49 | `result-track:f65255baa4c237796310683463be8c5909a2597c20f45f8348e20150135e6486` |
+| 4 | `theorem` | [continuous_coeFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuous-coefun-source-edition-2.md) | 52 | `result-track:ab14e10bba8008fb55b27caae3da04d5e39a2c020625e949183477749904c9bd` |
+| 5 | `theorem` | [Continuous.coeFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuous-coefun.md) | 55 | `result-track:13a5a621bc07deb28b991cd2336c565cda658069568013687a889095bf296201` |
+| 6 | `theorem` | [Filter.Tendsto.eval_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/filter-tendsto-eval-const.md) | 58 | `result-track:93bbe6e3c3c3b4323c378d3bf5a97d4dc1a5f97eeb95f39dbda0f9f18ee4c709` |
+| 7 | `theorem` | [Filter.Tendsto.coeFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/filter-tendsto-coefun.md) | 62 | `result-track:84e8565a680166b15c91192b0669d79ba49fb18935c2654b511a78783dcf432a` |
+| 8 | `theorem` | [ContinuousAt.eval_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuousat-eval-const.md) | 66 | `result-track:010d5ae2f59b9003c8e55ce5d0ebadfdea39a6e4fb6fb6c8467db11574463d33` |
+| 9 | `theorem` | [ContinuousAt.coeFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuousat-coefun.md) | 70 | `result-track:2f0753b86e22d3b574a679e45663051404997f7d57bec9b137d886743ae4aedc` |
+| 10 | `theorem` | [ContinuousWithinAt.eval_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuouswithinat-eval-const.md) | 74 | `result-track:f60238f19e9bee12ab912639972566a6424041f87f8a4c13aa8d814221c5325b` |
+| 11 | `theorem` | [ContinuousWithinAt.coeFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuouswithinat-coefun.md) | 78 | `result-track:040ab3e51b5104136f461c3c2d8f93c6cfec6f16ded343646b81e18375e1f3a2` |
+| 12 | `theorem` | [ContinuousOn.eval_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuouson-eval-const.md) | 82 | `result-track:ca235d66e2d08e577626270abdb419038da9c45b98623ff428d5fb805b6fd3f4` |
+| 13 | `theorem` | [ContinuousOn.coeFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousEvalConst.lean/declarations/continuouson-coefun.md) | 86 | `result-track:34116601323f3fa9aa30f15eaf4f15df12ff62b49d3456ec62e61c03d05cd845` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Local.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Local.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Local.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Local.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Algebra.FormallySmooth.iff_injective_lTensor_residueField](../../../../CommutativeAlgebra/Local.lean/declarations/algebra-formallysmooth-iff-injective-ltensor-residuefield.md) | 25 | `result-track:ac62ca68207a2d185e486344d866277e02553c12dff587346180cfa77313b966` |
+| 1 | `theorem` | [Algebra.FormallySmooth.iff_injective_lTensor_residueField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Local.lean/declarations/algebra-formallysmooth-iff-injective-ltensor-residuefield.md) | 25 | `result-track:ac62ca68207a2d185e486344d866277e02553c12dff587346180cfa77313b966` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

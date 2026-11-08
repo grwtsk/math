@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLeftRegular_of_non_zero_divisor](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isleftregular-of-non-zero-divisor.md) | 18 | `result-track:4ecd69fd4076b9ec787eb4e02dd90006582102f25afb5e16d9595d9c60aa12a4` |
-| 2 | `theorem` | [isRightRegular_of_non_zero_divisor](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isrightregular-of-non-zero-divisor.md) | 25 | `result-track:f879092894d5851189c4182cd02790c4ecf472d7a2e0298023d56dd0c2556fb0` |
-| 3 | `theorem` | [isRegular_of_ne_zero'](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isregular-of-ne-zero.md) | 30 | `result-track:a8fbdabb52043379cd61c0aa6d1d8d3de22f5ea569f45022c6d11c0991ad205f` |
-| 4 | `theorem` | [isRegular_iff_ne_zero'](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isregular-iff-ne-zero.md) | 37 | `result-track:db20f36aca7f519ff1f9ff70e92201bcffdbeddddae9ac5f4efc97073b3976ba` |
-| 5 | `abbrev` | [NoZeroDivisors.toCancelMonoidWithZero](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/nozerodivisors-tocancelmonoidwithzero.md) | 46 | `declaration-track:56f9e479740f4868e8e34f7346591cead662047c6f4bf55b2021cbe8649f91a4` |
-| 6 | `abbrev` | [NoZeroDivisors.toCancelCommMonoidWithZero](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/nozerodivisors-tocancelcommmonoidwithzero.md) | 56 | `declaration-track:cef4e1b1d5adf8b6adc457e9be13a7cc3f829260de6d81be9925cf22bf4fe862` |
-| 7 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/instance.md) | 63 | `declaration-track:1d7664f92743f88c0f3584ee01c7abb9f7c445d5d34cf74f98965cd7715443ca` |
-| 8 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingRegular.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:8968f7dd2c1eb599079db19b7eaf538486dbb9c56ba9d18a98cf53e62d78f224` |
+| 1 | `theorem` | [isLeftRegular_of_non_zero_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isleftregular-of-non-zero-divisor.md) | 18 | `result-track:4ecd69fd4076b9ec787eb4e02dd90006582102f25afb5e16d9595d9c60aa12a4` |
+| 2 | `theorem` | [isRightRegular_of_non_zero_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isrightregular-of-non-zero-divisor.md) | 25 | `result-track:f879092894d5851189c4182cd02790c4ecf472d7a2e0298023d56dd0c2556fb0` |
+| 3 | `theorem` | [isRegular_of_ne_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isregular-of-ne-zero.md) | 30 | `result-track:a8fbdabb52043379cd61c0aa6d1d8d3de22f5ea569f45022c6d11c0991ad205f` |
+| 4 | `theorem` | [isRegular_iff_ne_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/isregular-iff-ne-zero.md) | 37 | `result-track:db20f36aca7f519ff1f9ff70e92201bcffdbeddddae9ac5f4efc97073b3976ba` |
+| 5 | `abbrev` | [NoZeroDivisors.toCancelMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/nozerodivisors-tocancelmonoidwithzero.md) | 46 | `declaration-track:56f9e479740f4868e8e34f7346591cead662047c6f4bf55b2021cbe8649f91a4` |
+| 6 | `abbrev` | [NoZeroDivisors.toCancelCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/nozerodivisors-tocancelcommmonoidwithzero.md) | 56 | `declaration-track:cef4e1b1d5adf8b6adc457e9be13a7cc3f829260de6d81be9925cf22bf4fe862` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/instance.md) | 63 | `declaration-track:1d7664f92743f88c0f3584ee01c7abb9f7c445d5d34cf74f98965cd7715443ca` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegular.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:8968f7dd2c1eb599079db19b7eaf538486dbb9c56ba9d18a98cf53e62d78f224` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

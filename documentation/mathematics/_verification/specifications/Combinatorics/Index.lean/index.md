@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Index.lean/index.md) · [Full source](../../../../Combinatorics/Index.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PhysicalConfiguration](../../../../Combinatorics/Index.lean/declarations/physicalconfiguration.md) | 14 | `declaration-track:bbc1d6dc5368e519ce6c88c6ba112e97841c39a519ad166240d2018e6c55b64b` |
-| 2 | `theorem` | [physicalConfiguration_card](../../../../Combinatorics/Index.lean/declarations/physicalconfiguration-card.md) | 18 | `result-track:bf2b59a9a98814cabfd47674ae6f65876a73954b8ab999e3f519e5acc0a90e8b` |
-| 3 | `theorem` | [qubitConfiguration_card](../../../../Combinatorics/Index.lean/declarations/qubitconfiguration-card.md) | 23 | `result-track:3bc4a6b37aad988d487fb7caed9767165f1604bbab66968d502b2a69238b23f4` |
-| 4 | `structure` | [BondProfile](../../../../Combinatorics/Index.lean/declarations/bondprofile.md) | 28 | `declaration-track:9febf3e092f84b85efb89051138cb7831376ea2a674b201e8b98426fe8b7214f` |
-| 5 | `def` | [BondProfile.UniformlyBounded](../../../../Combinatorics/Index.lean/declarations/bondprofile-uniformlybounded.md) | 37 | `declaration-track:d1effb64af2951c5a6d6ae0ac470882247d9574936ee8dac551f5a2f7253f0b5` |
-| 6 | `abbrev` | [VirtualConfiguration](../../../../Combinatorics/Index.lean/declarations/virtualconfiguration.md) | 44 | `declaration-track:0fc4de106ff39d3ffdaaa48f66efb1b84681d8bc5d4a5b99821587bd982daa43` |
+| 1 | `abbrev` | [PhysicalConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/declarations/physicalconfiguration.md) | 14 | `declaration-track:bbc1d6dc5368e519ce6c88c6ba112e97841c39a519ad166240d2018e6c55b64b` |
+| 2 | `theorem` | [physicalConfiguration_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/declarations/physicalconfiguration-card.md) | 18 | `result-track:bf2b59a9a98814cabfd47674ae6f65876a73954b8ab999e3f519e5acc0a90e8b` |
+| 3 | `theorem` | [qubitConfiguration_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/declarations/qubitconfiguration-card.md) | 23 | `result-track:3bc4a6b37aad988d487fb7caed9767165f1604bbab66968d502b2a69238b23f4` |
+| 4 | `structure` | [BondProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/declarations/bondprofile.md) | 28 | `declaration-track:9febf3e092f84b85efb89051138cb7831376ea2a674b201e8b98426fe8b7214f` |
+| 5 | `def` | [BondProfile.UniformlyBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/declarations/bondprofile-uniformlybounded.md) | 37 | `declaration-track:d1effb64af2951c5a6d6ae0ac470882247d9574936ee8dac551f5a2f7253f0b5` |
+| 6 | `abbrev` | [VirtualConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Index.lean/declarations/virtualconfiguration.md) | 44 | `declaration-track:0fc4de106ff39d3ffdaaa48f66efb1b84681d8bc5d4a5b99821587bd982daa43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

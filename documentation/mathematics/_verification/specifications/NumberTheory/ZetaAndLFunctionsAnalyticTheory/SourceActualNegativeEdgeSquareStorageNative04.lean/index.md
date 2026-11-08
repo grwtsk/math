@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualNegativeEdgeSquareBaseline](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquarebaseline.md) | 19 | `declaration-track:bf17c255f0425bdd7d94bddaa3a99456d9d700b00b967f815584bcb355ba0d5f` |
-| 2 | `def` | [actualNegativeEdgeSquareStorage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquarestorage.md) | 23 | `declaration-track:9a605b4c409f4ceacd0c49cc9d92b1e2c3fc02ab271458600d77d59e3761fd3c` |
-| 3 | `theorem` | [actualNegativeEdgeSquare_reconstruction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquare-reconstruction.md) | 27 | `result-track:30801cce2de345db0ed674263d21c16b4f1892bc29986d1ab63ade0e24a6448c` |
-| 4 | `theorem` | [actualNegativeEdgeSquareSurplus_eventually_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquaresurplus-eventually-positive.md) | 43 | `result-track:eef6fdc4448e33d8663bb66bfe644fc7c01e282e5ce5c5b62b687d438881fd2c` |
+| 1 | `def` | [actualNegativeEdgeSquareBaseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquarebaseline.md) | 19 | `declaration-track:bf17c255f0425bdd7d94bddaa3a99456d9d700b00b967f815584bcb355ba0d5f` |
+| 2 | `def` | [actualNegativeEdgeSquareStorage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquarestorage.md) | 23 | `declaration-track:9a605b4c409f4ceacd0c49cc9d92b1e2c3fc02ab271458600d77d59e3761fd3c` |
+| 3 | `theorem` | [actualNegativeEdgeSquare_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquare-reconstruction.md) | 27 | `result-track:30801cce2de345db0ed674263d21c16b4f1892bc29986d1ab63ade0e24a6448c` |
+| 4 | `theorem` | [actualNegativeEdgeSquareSurplus_eventually_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative04.lean/declarations/actualnegativeedgesquaresurplus-eventually-positive.md) | 43 | `result-track:eef6fdc4448e33d8663bb66bfe644fc7c01e282e5ce5c5b62b687d438881fd2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

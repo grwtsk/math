@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Weierstrass.lean/index.md) · [Full source](../../../../GeneralTopology/Weierstrass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Weierstrass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Weierstrass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomialFunctions_closure_eq_top'](../../../../GeneralTopology/Weierstrass.lean/declarations/polynomialfunctions-closure-eq-top-source-edition-2.md) | 31 | `result-track:e0f36d0e8364da6a3b20e5066ac9ba88279f5f835f934d6de59b3f41616b0243` |
-| 2 | `theorem` | [polynomialFunctions_closure_eq_top](../../../../GeneralTopology/Weierstrass.lean/declarations/polynomialfunctions-closure-eq-top.md) | 49 | `result-track:588ae91a2ff76c47c93b340cf6315a30c2155b1e7d0ea6780ec5512fb1ba5363` |
-| 3 | `theorem` | [continuousMap_mem_polynomialFunctions_closure](../../../../GeneralTopology/Weierstrass.lean/declarations/continuousmap-mem-polynomialfunctions-closure.md) | 79 | `result-track:c18bdcfa89c5eca8c1e7c1b8eec6605b7d17503aaf904cd296fb60d1aa774546` |
-| 4 | `theorem` | [exists_polynomial_near_continuousMap](../../../../GeneralTopology/Weierstrass.lean/declarations/exists-polynomial-near-continuousmap.md) | 91 | `result-track:3c057f4831fdeb8072bb554e4b19ac6964333d162b7acae4bb097cb6fe76a379` |
-| 5 | `theorem` | [exists_polynomial_near_of_continuousOn](../../../../GeneralTopology/Weierstrass.lean/declarations/exists-polynomial-near-of-continuouson.md) | 105 | `result-track:454ac0725e879b4e86b651ab10034bb7f5f564495d6cc91ec5134aa34b325ece` |
+| 1 | `theorem` | [polynomialFunctions_closure_eq_top'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Weierstrass.lean/declarations/polynomialfunctions-closure-eq-top-source-edition-2.md) | 31 | `result-track:e0f36d0e8364da6a3b20e5066ac9ba88279f5f835f934d6de59b3f41616b0243` |
+| 2 | `theorem` | [polynomialFunctions_closure_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Weierstrass.lean/declarations/polynomialfunctions-closure-eq-top.md) | 49 | `result-track:588ae91a2ff76c47c93b340cf6315a30c2155b1e7d0ea6780ec5512fb1ba5363` |
+| 3 | `theorem` | [continuousMap_mem_polynomialFunctions_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Weierstrass.lean/declarations/continuousmap-mem-polynomialfunctions-closure.md) | 79 | `result-track:c18bdcfa89c5eca8c1e7c1b8eec6605b7d17503aaf904cd296fb60d1aa774546` |
+| 4 | `theorem` | [exists_polynomial_near_continuousMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Weierstrass.lean/declarations/exists-polynomial-near-continuousmap.md) | 91 | `result-track:3c057f4831fdeb8072bb554e4b19ac6964333d162b7acae4bb097cb6fe76a379` |
+| 5 | `theorem` | [exists_polynomial_near_of_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Weierstrass.lean/declarations/exists-polynomial-near-of-continuouson.md) | 105 | `result-track:454ac0725e879b4e86b651ab10034bb7f5f564495d6cc91ec5134aa34b325ece` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

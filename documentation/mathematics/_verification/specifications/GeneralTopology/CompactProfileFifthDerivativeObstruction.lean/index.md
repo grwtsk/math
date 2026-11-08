@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/index.md) · [Full source](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples`](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Calculus.EvenLinearDefect`](../../../../RealFunctions/DifferentialCalculusEvenLinearDefect.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy`](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.Integration.TranslationSeamLowerBound`](../../../../MeasureAndIntegration/TranslationSeamLowerBound.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.EvenLinearDefect`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusEvenLinearDefect.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.TranslationSeamLowerBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TranslationSeamLowerBound.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [second_representative_memLp](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/second-representative-memlp.md) | 35 | `result-track:7f6a5595d1ac83f1dc9ccee388e8103a28241b8629ca4f94f7a9334c85543508` |
-| 2 | `theorem` | [normalized_second_interior_continuous](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/normalized-second-interior-continuous.md) | 39 | `result-track:ffe16fe8874a5a5a35c83cb594a43f94560ee6f7a0522b47f4096f2d63145a0b` |
-| 3 | `theorem` | [actual_second_autocorrelation_not_differentiable_at_zero](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/actual-second-autocorrelation-not-differentiable-at-zero.md) | 46 | `result-track:310aad701b9b7254aed778e1e3ee4fcdcc174bc179f9dac5d39531a5660d2ba4` |
-| 4 | `theorem` | [fourth_correlation_eq_autocorrelation](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/fourth-correlation-eq-autocorrelation.md) | 75 | `result-track:0ebf7a93de2d582ad9039824972fb7e902b910869e750e7e00b8bd4d775e7627` |
-| 5 | `theorem` | [fourth_correlation_not_differentiable_at_zero](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/fourth-correlation-not-differentiable-at-zero.md) | 81 | `result-track:75b87a93358b26227fc7250d89306c016dbf0676138cfdf8f5447fd0ce8465f7` |
-| 6 | `theorem` | [correlation_not_contDiff_five](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/correlation-not-contdiff-five.md) | 87 | `result-track:4055138e15439991156d3b95323c9b6d080384a51e7e5741e5c5ec8b38de0d94` |
+| 1 | `theorem` | [second_representative_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/second-representative-memlp.md) | 35 | `result-track:7f6a5595d1ac83f1dc9ccee388e8103a28241b8629ca4f94f7a9334c85543508` |
+| 2 | `theorem` | [normalized_second_interior_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/normalized-second-interior-continuous.md) | 39 | `result-track:ffe16fe8874a5a5a35c83cb594a43f94560ee6f7a0522b47f4096f2d63145a0b` |
+| 3 | `theorem` | [actual_second_autocorrelation_not_differentiable_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/actual-second-autocorrelation-not-differentiable-at-zero.md) | 46 | `result-track:310aad701b9b7254aed778e1e3ee4fcdcc174bc179f9dac5d39531a5660d2ba4` |
+| 4 | `theorem` | [fourth_correlation_eq_autocorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/fourth-correlation-eq-autocorrelation.md) | 75 | `result-track:0ebf7a93de2d582ad9039824972fb7e902b910869e750e7e00b8bd4d775e7627` |
+| 5 | `theorem` | [fourth_correlation_not_differentiable_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/fourth-correlation-not-differentiable-at-zero.md) | 81 | `result-track:75b87a93358b26227fc7250d89306c016dbf0676138cfdf8f5447fd0ce8465f7` |
+| 6 | `theorem` | [correlation_not_contDiff_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/declarations/correlation-not-contdiff-five.md) | 87 | `result-track:4055138e15439991156d3b95323c9b6d080384a51e7e5741e5c5ec8b38de0d94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

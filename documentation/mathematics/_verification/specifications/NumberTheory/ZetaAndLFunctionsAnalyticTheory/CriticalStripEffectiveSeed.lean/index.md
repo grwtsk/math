@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](../../../../../MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisBase`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripRealAxisBase.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisBase`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripRealAxisBase.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fractionalMellin_ofReal_im_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/fractionalmellin-ofreal-im-zero.md) | 27 | `result-track:a4bc9710c2cb894a087551ee42224f1c5d2a2ba0567e59f9db87be262edaf307` |
-| 2 | `theorem` | [fractionalMellin_deriv_norm_le_sixteen](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/fractionalmellin-deriv-norm-le-sixteen.md) | 43 | `result-track:55fa99089b7d6552f2f0e599b09cf5fad98c415e8f002da3bcfd80f8f10bb9a1` |
-| 3 | `theorem` | [fractionalMellin_vertical_variation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/fractionalmellin-vertical-variation.md) | 51 | `result-track:37793c18014b27fd1040c37a190944c85c3840deba983692afba45b7d93f5211` |
-| 4 | `theorem` | [poleNormalized_nonzero_on_effective_right_seed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/polenormalized-nonzero-on-effective-right-seed.md) | 72 | `result-track:3acf08d5e85d1d2a5a8f1c3036c8f34356c8e8c79cf4e16e34838e35960eeeae` |
-| 5 | `theorem` | [nontrivialZetaZero_height_gt_one_sixteenth](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/nontrivialzetazero-height-gt-one-sixteenth.md) | 122 | `result-track:01c06993262abd6febca9bb02ae53afdbaa2dc4fd1ee9c942396df878112cf81` |
-| 6 | `theorem` | [noTargetZero_effective_seed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/notargetzero-effective-seed.md) | 143 | `result-track:d987d0f05bc7ca2a6afe736cf2878e23d78be5ca9d571fc6fc903c16e948b04e` |
+| 1 | `theorem` | [fractionalMellin_ofReal_im_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/fractionalmellin-ofreal-im-zero.md) | 27 | `result-track:a4bc9710c2cb894a087551ee42224f1c5d2a2ba0567e59f9db87be262edaf307` |
+| 2 | `theorem` | [fractionalMellin_deriv_norm_le_sixteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/fractionalmellin-deriv-norm-le-sixteen.md) | 43 | `result-track:55fa99089b7d6552f2f0e599b09cf5fad98c415e8f002da3bcfd80f8f10bb9a1` |
+| 3 | `theorem` | [fractionalMellin_vertical_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/fractionalmellin-vertical-variation.md) | 51 | `result-track:37793c18014b27fd1040c37a190944c85c3840deba983692afba45b7d93f5211` |
+| 4 | `theorem` | [poleNormalized_nonzero_on_effective_right_seed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/polenormalized-nonzero-on-effective-right-seed.md) | 72 | `result-track:3acf08d5e85d1d2a5a8f1c3036c8f34356c8e8c79cf4e16e34838e35960eeeae` |
+| 5 | `theorem` | [nontrivialZetaZero_height_gt_one_sixteenth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/nontrivialzetazero-height-gt-one-sixteenth.md) | 122 | `result-track:01c06993262abd6febca9bb02ae53afdbaa2dc4fd1ee9c942396df878112cf81` |
+| 6 | `theorem` | [noTargetZero_effective_seed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripEffectiveSeed.lean/declarations/notargetzero-effective-seed.md) | 143 | `result-track:d987d0f05bc7ca2a6afe736cf2878e23d78be5ca9d571fc6fc903c16e948b04e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

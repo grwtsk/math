@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ExplicitFormulaPaper](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/explicitformulapaper.md) | 48 | `declaration-track:3cfb3b1b4820f964b4556a91f73d060014049fafffaff5ec6202f752b984a4d0` |
-| 2 | `structure` | [RiemannVonMangoldt](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/riemannvonmangoldt.md) | 67 | `declaration-track:62cadd2525e93f9231b807b2a38e0f0ddd551b60c3906909c266517867afcda1` |
-| 3 | `structure` | [ChebyshevMertens](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/chebyshevmertens.md) | 83 | `declaration-track:d55ec8244bf4a98c304e656e0ae694ea16745a5b90c0e5b6127719513ba0c5ab` |
-| 4 | `def` | [MVHilbert](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/mvhilbert.md) | 107 | `declaration-track:fd2df1b549f71ad9560dec1395b6eca66c4201166e968f42c168fecbedc35ca8` |
-| 5 | `structure` | [GammaFacts](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/gammafacts.md) | 125 | `declaration-track:0885a0d3713e26bac80fe1c537afdf3c784108aa755fa262fff5538086302bd2` |
-| 6 | `structure` | [PaperInputs](../../../../MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/paperinputs.md) | 147 | `declaration-track:9eb95188e8fb12815b3eaf940960bf8e9e0486f558310e20808bbd20325875c0` |
+| 1 | `def` | [ExplicitFormulaPaper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/explicitformulapaper.md) | 48 | `declaration-track:3cfb3b1b4820f964b4556a91f73d060014049fafffaff5ec6202f752b984a4d0` |
+| 2 | `structure` | [RiemannVonMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/riemannvonmangoldt.md) | 67 | `declaration-track:62cadd2525e93f9231b807b2a38e0f0ddd551b60c3906909c266517867afcda1` |
+| 3 | `structure` | [ChebyshevMertens](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/chebyshevmertens.md) | 83 | `declaration-track:d55ec8244bf4a98c304e656e0ae694ea16745a5b90c0e5b6127719513ba0c5ab` |
+| 4 | `def` | [MVHilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/mvhilbert.md) | 107 | `declaration-track:fd2df1b549f71ad9560dec1395b6eca66c4201166e968f42c168fecbedc35ca8` |
+| 5 | `structure` | [GammaFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/gammafacts.md) | 125 | `declaration-track:0885a0d3713e26bac80fe1c537afdf3c784108aa755fa262fff5538086302bd2` |
+| 6 | `structure` | [PaperInputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HypothesesExplicitFormulaPaper.lean/declarations/paperinputs.md) | 147 | `declaration-track:9eb95188e8fb12815b3eaf940960bf8e9e0486f558310e20808bbd20325875c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

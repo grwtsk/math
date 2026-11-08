@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExactCorrectionCounterexample.lean/index.md) · [Full source](../../../../Combinatorics/ExactCorrectionCounterexample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,8 +48,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Dynamics.Avalanche` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.Order.BigOperators.Group.Finset` — import line 20; external provider; requires a separately pinned dependency.
-- [State Dependent Corrections](../../../../Combinatorics/StateDependentCorrections.lean/index.md) — import line 22; pinned internal source present.
-- [Two Step Maps](../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/index.md) — import line 23; pinned internal source present.
+- [State Dependent Corrections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/index.md) — import line 22; pinned internal source present.
+- [Two Step Maps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [EndMap](../../../../Combinatorics/ExactCorrectionCounterexample.lean/declarations/endmap.md) | 63 | `declaration-track:e43c6ae2a972ab99a60385fcde90a8fbb3a71484927e942d05b2ad3db208b7c8` |
-| 2 | `def` | [zeroEndMap](../../../../Combinatorics/ExactCorrectionCounterexample.lean/declarations/zeroendmap.md) | 66 | `declaration-track:adc823d7ff15a72e932888570ff19156efbd691122a999d21c560e899dd0004c` |
-| 3 | `def` | [endMapComplex](../../../../Combinatorics/ExactCorrectionCounterexample.lean/declarations/endmapcomplex.md) | 70 | `declaration-track:f9c0c33e50d77d6628206b3bb6c9ff7fa9d7dc181c05c01a1ae626073f7364a1` |
-| 4 | `theorem` | [identityCorrection_closed](../../../../Combinatorics/ExactCorrectionCounterexample.lean/declarations/identitycorrection-closed.md) | 73 | `result-track:803644d77024ffdea00ce3ef60ef800f4e86f79b3b3f1dc8518fb5d24ef7409c` |
-| 5 | `theorem` | [identityCorrection_exact](../../../../Combinatorics/ExactCorrectionCounterexample.lean/declarations/identitycorrection-exact.md) | 77 | `result-track:763c28ef6815e680fb7a1dc43eb7c807595fb9d55a6492739c29646373b9287c` |
-| 6 | `theorem` | [trivial_H1_does_not_preserve_bijectivity](../../../../Combinatorics/ExactCorrectionCounterexample.lean/declarations/trivial-h1-does-not-preserve-bijectivity.md) | 85 | `result-track:f9a9e038efd8050b9dca628abdd249caeac599b09303cfc01d3477bea4ea1643` |
+| 1 | `abbrev` | [EndMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/declarations/endmap.md) | 63 | `declaration-track:e43c6ae2a972ab99a60385fcde90a8fbb3a71484927e942d05b2ad3db208b7c8` |
+| 2 | `def` | [zeroEndMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/declarations/zeroendmap.md) | 66 | `declaration-track:adc823d7ff15a72e932888570ff19156efbd691122a999d21c560e899dd0004c` |
+| 3 | `def` | [endMapComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/declarations/endmapcomplex.md) | 70 | `declaration-track:f9c0c33e50d77d6628206b3bb6c9ff7fa9d7dc181c05c01a1ae626073f7364a1` |
+| 4 | `theorem` | [identityCorrection_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/declarations/identitycorrection-closed.md) | 73 | `result-track:803644d77024ffdea00ce3ef60ef800f4e86f79b3b3f1dc8518fb5d24ef7409c` |
+| 5 | `theorem` | [identityCorrection_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/declarations/identitycorrection-exact.md) | 77 | `result-track:763c28ef6815e680fb7a1dc43eb7c807595fb9d55a6492739c29646373b9287c` |
+| 6 | `theorem` | [trivial_H1_does_not_preserve_bijectivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/declarations/trivial-h1-does-not-preserve-bijectivity.md) | 85 | `result-track:f9a9e038efd8050b9dca628abdd249caeac599b09303cfc01d3477bea4ea1643` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

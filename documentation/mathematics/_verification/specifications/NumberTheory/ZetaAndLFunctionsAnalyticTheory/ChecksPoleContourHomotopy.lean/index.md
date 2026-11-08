@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleContourHomotopy`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.PoleContourCoverage`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourCoverage.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleContourHomotopy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.PoleContourCoverage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourCoverage.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [square_image_is_constant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/square-image-is-constant.md) | 30 | `result-track:b187dd309d11211983c63b435ea255d754732a50330966d7e5e1824e245af1fd` |
-| 2 | `theorem` | [square_contracts_without_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/square-contracts-without-zero.md) | 45 | `result-track:bdaa1a7c132ba43ecfc44dfddeeec4d4ddb34cde33f10aa81b9e1c8c7005b1f6` |
-| 3 | `theorem` | [fictitious_values_do_not_supply_enclosures](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/fictitious-values-do-not-supply-enclosures.md) | 58 | `result-track:ce30aa40d99db4b6345d97053106500c65764752fc95fcdb1cec16a193637f05` |
-| 4 | `theorem` | [constant_motion_nonzero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/constant-motion-nonzero.md) | 62 | `result-track:99ec2ccee72502f68683143173ea4a92219eec6661de4b9ff4fa12faeaf1fe23` |
-| 5 | `theorem` | [free_is_not_fixed_base](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/free-is-not-fixed-base.md) | 71 | `result-track:1013dc38ae23d13d63cdff484c90bec6edb9b800ce1d244ffd89e832cf2e2121` |
-| 6 | `theorem` | [opposite_constants_cross_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/opposite-constants-cross-zero.md) | 79 | `result-track:f2f8ad8ddcefb0d4d4755b3231ea21002ad2dc529fa37995cc5ba414d7c297be` |
-| 7 | `theorem` | [open_chain_stays_open](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/open-chain-stays-open.md) | 88 | `result-track:6acac216f245b4ae76e7d1a0f0197754cf314526e801e81d9bd25c4d8eff7b7a` |
-| 8 | `theorem` | [identity_square_cells_nonzero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/identity-square-cells-nonzero.md) | 95 | `result-track:1cfa1a1e5fb6d35c3ab7141f787752b3ccdcfe776f555599b73c6e8b5984f0b7` |
-| 9 | `theorem` | [identity_still_has_interior_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/identity-still-has-interior-zero.md) | 104 | `result-track:8f2d1f6c7dd7ee48b7e5757cae170480663f9baa63242fe0a60105e076d840ce` |
-| 10 | `theorem` | [empty_map_is_initial_vertex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/empty-map-is-initial-vertex.md) | 107 | `result-track:89605a82ccef162a73b28c59ab6ca02720839b84923513e58e62d56a75da2bcd` |
+| 1 | `theorem` | [square_image_is_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/square-image-is-constant.md) | 30 | `result-track:b187dd309d11211983c63b435ea255d754732a50330966d7e5e1824e245af1fd` |
+| 2 | `theorem` | [square_contracts_without_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/square-contracts-without-zero.md) | 45 | `result-track:bdaa1a7c132ba43ecfc44dfddeeec4d4ddb34cde33f10aa81b9e1c8c7005b1f6` |
+| 3 | `theorem` | [fictitious_values_do_not_supply_enclosures](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/fictitious-values-do-not-supply-enclosures.md) | 58 | `result-track:ce30aa40d99db4b6345d97053106500c65764752fc95fcdb1cec16a193637f05` |
+| 4 | `theorem` | [constant_motion_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/constant-motion-nonzero.md) | 62 | `result-track:99ec2ccee72502f68683143173ea4a92219eec6661de4b9ff4fa12faeaf1fe23` |
+| 5 | `theorem` | [free_is_not_fixed_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/free-is-not-fixed-base.md) | 71 | `result-track:1013dc38ae23d13d63cdff484c90bec6edb9b800ce1d244ffd89e832cf2e2121` |
+| 6 | `theorem` | [opposite_constants_cross_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/opposite-constants-cross-zero.md) | 79 | `result-track:f2f8ad8ddcefb0d4d4755b3231ea21002ad2dc529fa37995cc5ba414d7c297be` |
+| 7 | `theorem` | [open_chain_stays_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/open-chain-stays-open.md) | 88 | `result-track:6acac216f245b4ae76e7d1a0f0197754cf314526e801e81d9bd25c4d8eff7b7a` |
+| 8 | `theorem` | [identity_square_cells_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/identity-square-cells-nonzero.md) | 95 | `result-track:1cfa1a1e5fb6d35c3ab7141f787752b3ccdcfe776f555599b73c6e8b5984f0b7` |
+| 9 | `theorem` | [identity_still_has_interior_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/identity-still-has-interior-zero.md) | 104 | `result-track:8f2d1f6c7dd7ee48b7e5757cae170480663f9baa63242fe0a60105e076d840ce` |
+| 10 | `theorem` | [empty_map_is_initial_vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChecksPoleContourHomotopy.lean/declarations/empty-map-is-initial-vertex.md) | 107 | `result-track:89605a82ccef162a73b28c59ab6ca02720839b84923513e58e62d56a75da2bcd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

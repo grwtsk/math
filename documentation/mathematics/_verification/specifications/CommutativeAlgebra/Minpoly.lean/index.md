@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Minpoly.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Minpoly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Minpoly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Minpoly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coeff_zero_minpoly](../../../../CommutativeAlgebra/Minpoly.lean/declarations/coeff-zero-minpoly.md) | 34 | `result-track:df1eb2edfe35d25c248573582bf816fe56b4f3a83b53da0d24807ae571775efd` |
-| 2 | `theorem` | [pow_coeff_zero_ne_zero_of_unit](../../../../CommutativeAlgebra/Minpoly.lean/declarations/pow-coeff-zero-ne-zero-of-unit.md) | 42 | `result-track:fe50e3da6138abf3b0c6ce93d03b56a9d34f87952083a7223ef90ae288c98ba7` |
+| 1 | `theorem` | [coeff_zero_minpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Minpoly.lean/declarations/coeff-zero-minpoly.md) | 34 | `result-track:df1eb2edfe35d25c248573582bf816fe56b4f3a83b53da0d24807ae571775efd` |
+| 2 | `theorem` | [pow_coeff_zero_ne_zero_of_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Minpoly.lean/declarations/pow-coeff-zero-ne-zero-of-unit.md) | 42 | `result-track:fe50e3da6138abf3b0c6ce93d03b56a9d34f87952083a7223ef90ae288c98ba7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

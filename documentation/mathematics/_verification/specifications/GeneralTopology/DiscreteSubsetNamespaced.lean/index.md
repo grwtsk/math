@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DiscreteSubsetNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/DiscreteSubsetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubsetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubsetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_cofinite_cocompact_iff](../../../../GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/tendsto-cofinite-cocompact-iff.md) | 41 | `result-track:e23aee6031de53361f087edf56ef08b6eb329469fb534335c59332f3dae7a785` |
-| 2 | `lemma` | [Continuous.discrete_of_tendsto_cofinite_cocompact](../../../../GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/continuous-discrete-of-tendsto-cofinite-cocompact.md) | 47 | `result-track:7aa1220ba301f96e319a9ed5b5b6737b5e165a1d5f6d150ca5f20250d2412caa` |
-| 3 | `lemma` | [tendsto_cofinite_cocompact_of_discrete](../../../../GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/tendsto-cofinite-cocompact-of-discrete.md) | 57 | `result-track:6fffc7cbe8c02e29aa724e2e05574063540f5656c58f53dfaa7fba5a19ce1a54` |
-| 4 | `lemma` | [IsClosed.tendsto_coe_cofinite_of_discreteTopology](../../../../GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/isclosed-tendsto-coe-cofinite-of-discretetopology.md) | 63 | `result-track:245a474ac21a2472f292e81bbe25f6faef0909bd7d4c79ebea9d850fa06d0603` |
-| 5 | `lemma` | [IsClosed.tendsto_coe_cofinite_iff](../../../../GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/isclosed-tendsto-coe-cofinite-iff.md) | 68 | `result-track:47b605a2c44b7e11b0cb569a7c9ca95a4adee2dbbbe027c077e856cfa13a7ecd` |
+| 1 | `lemma` | [tendsto_cofinite_cocompact_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/tendsto-cofinite-cocompact-iff.md) | 41 | `result-track:e23aee6031de53361f087edf56ef08b6eb329469fb534335c59332f3dae7a785` |
+| 2 | `lemma` | [Continuous.discrete_of_tendsto_cofinite_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/continuous-discrete-of-tendsto-cofinite-cocompact.md) | 47 | `result-track:7aa1220ba301f96e319a9ed5b5b6737b5e165a1d5f6d150ca5f20250d2412caa` |
+| 3 | `lemma` | [tendsto_cofinite_cocompact_of_discrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/tendsto-cofinite-cocompact-of-discrete.md) | 57 | `result-track:6fffc7cbe8c02e29aa724e2e05574063540f5656c58f53dfaa7fba5a19ce1a54` |
+| 4 | `lemma` | [IsClosed.tendsto_coe_cofinite_of_discreteTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/isclosed-tendsto-coe-cofinite-of-discretetopology.md) | 63 | `result-track:245a474ac21a2472f292e81bbe25f6faef0909bd7d4c79ebea9d850fa06d0603` |
+| 5 | `lemma` | [IsClosed.tendsto_coe_cofinite_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubsetNamespaced.lean/declarations/isclosed-tendsto-coe-cofinite-iff.md) | 68 | `result-track:47b605a2c44b7e11b0cb569a7c9ca95a4adee2dbbbe027c077e856cfa13a7ecd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

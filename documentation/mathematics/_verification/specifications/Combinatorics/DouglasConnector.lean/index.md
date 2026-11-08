@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DouglasConnector.lean/index.md) · [Full source](../../../../Combinatorics/DouglasConnector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DouglasConnector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DouglasConnector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReducedDouglasConnector](../../../../Combinatorics/DouglasConnector.lean/declarations/reduceddouglasconnector.md) | 14 | `declaration-track:b30f9f256bc813a54382b19bae32e0ee7b68656caf2776a99f8f83725e96071d` |
+| 1 | `structure` | [ReducedDouglasConnector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DouglasConnector.lean/declarations/reduceddouglasconnector.md) | 14 | `declaration-track:b30f9f256bc813a54382b19bae32e0ee7b68656caf2776a99f8f83725e96071d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

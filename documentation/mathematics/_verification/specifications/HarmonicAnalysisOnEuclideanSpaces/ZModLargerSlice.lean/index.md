@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.Sequences.FixedSizeSubsetExposure`](../../../../GroupTheoryAndGeneralizations/FixedSizeSubsetExposure.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.ZModLargerSliceBounds`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceBounds.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModBalancedExpectedLayers.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Combinatorics.Sequences.FixedSizeSubsetExposure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FixedSizeSubsetExposure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModLargerSliceBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceBounds.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModBalancedExpectedLayers.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [subsetSumProbability_exposure](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/subsetsumprobability-exposure.md) | 33 | `result-track:397f0e3b8ede0764ca608e18c5dfaf24b506a6f74873faca20589f5ce0b542ec` |
-| 2 | `theorem` | [subsetSumProbability_le_of_exposure](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/subsetsumprobability-le-of-exposure.md) | 57 | `result-track:e9567e59b86d448ce22fa4fc5023ceebfc678a1de8f22ccb4deab22917699cef` |
-| 3 | `theorem` | [subsetSumProbability_le_largerSlice](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/subsetsumprobability-le-largerslice.md) | 81 | `result-track:e36292b22bcc34091241c74afc98dfa793f02d4cb63b87af2dabf6bc9e4477e8` |
-| 4 | `theorem` | [prime_subsetSumProbability_le_largerSlice](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/prime-subsetsumprobability-le-largerslice.md) | 191 | `result-track:64b998835cfe597f759a65f57bbf36ce5e070c7f071a792d4c2dfba699f6c56b` |
-| 5 | `theorem` | [exists_larger_slice_anticoncentration_constant](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/exists-larger-slice-anticoncentration-constant.md) | 208 | `result-track:21541f86ae1984a3167904474306be3614927c31f41a885e7f024b5f656b68b1` |
+| 1 | `theorem` | [subsetSumProbability_exposure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/subsetsumprobability-exposure.md) | 33 | `result-track:397f0e3b8ede0764ca608e18c5dfaf24b506a6f74873faca20589f5ce0b542ec` |
+| 2 | `theorem` | [subsetSumProbability_le_of_exposure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/subsetsumprobability-le-of-exposure.md) | 57 | `result-track:e9567e59b86d448ce22fa4fc5023ceebfc678a1de8f22ccb4deab22917699cef` |
+| 3 | `theorem` | [subsetSumProbability_le_largerSlice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/subsetsumprobability-le-largerslice.md) | 81 | `result-track:e36292b22bcc34091241c74afc98dfa793f02d4cb63b87af2dabf6bc9e4477e8` |
+| 4 | `theorem` | [prime_subsetSumProbability_le_largerSlice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/prime-subsetsumprobability-le-largerslice.md) | 191 | `result-track:64b998835cfe597f759a65f57bbf36ce5e070c7f071a792d4c2dfba699f6c56b` |
+| 5 | `theorem` | [exists_larger_slice_anticoncentration_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/declarations/exists-larger-slice-anticoncentration-constant.md) | 208 | `result-track:21541f86ae1984a3167904474306be3614927c31f41a885e7f024b5f656b68b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/IsIntegral.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/IsIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIntegral_int_I](../../../../FunctionsOfAComplexVariable/IsIntegral.lean/declarations/isintegral-int-i.md) | 20 | `result-track:9242037938c41ca1354a175d6dd5bc940f35ea888a26d61d194aa42191d4be3a` |
-| 2 | `theorem` | [isIntegral_rat_I](../../../../FunctionsOfAComplexVariable/IsIntegral.lean/declarations/isintegral-rat-i.md) | 24 | `result-track:09328c211662546d7a794738d7e4fa5f267c0b9a26ada674e13e004357ba0dec` |
+| 1 | `theorem` | [isIntegral_int_I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsIntegral.lean/declarations/isintegral-int-i.md) | 20 | `result-track:9242037938c41ca1354a175d6dd5bc940f35ea888a26d61d194aa42191d4be3a` |
+| 2 | `theorem` | [isIntegral_rat_I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsIntegral.lean/declarations/isintegral-rat-i.md) | 24 | `result-track:09328c211662546d7a794738d7e4fa5f267c0b9a26ada674e13e004357ba0dec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

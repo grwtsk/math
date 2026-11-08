@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [importsPatchCorpus](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/importspatchcorpus.md) | 20 | `declaration-track:4df7c96e781078f1274f62390da0d89820a6259312527243648fcd754860a2e7` |
-| 2 | `theorem` | [patch_corpus_not_imported](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/patch-corpus-not-imported.md) | 22 | `result-track:0d86938f86c6b91a224a83ecb9ebe18ca615bae5252febb779f401c81da879b2` |
-| 3 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/conceptualboundaries.md) | 25 | `declaration-track:42d39a54bf2bec0a879e276181870980bc0f80ebeb1ef32bf8546245f26b340c` |
-| 4 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/conceptualboundaries-count.md) | 33 | `result-track:5a074cf14edc546fa7cb7c82195939c9dce81f946dfb5993be104b24448876ff` |
+| 1 | `def` | [importsPatchCorpus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/importspatchcorpus.md) | 20 | `declaration-track:4df7c96e781078f1274f62390da0d89820a6259312527243648fcd754860a2e7` |
+| 2 | `theorem` | [patch_corpus_not_imported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/patch-corpus-not-imported.md) | 22 | `result-track:0d86938f86c6b91a224a83ecb9ebe18ca615bae5252febb779f401c81da879b2` |
+| 3 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/conceptualboundaries.md) | 25 | `declaration-track:42d39a54bf2bec0a879e276181870980bc0f80ebeb1ef32bf8546245f26b340c` |
+| 4 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatchCorpusNotImportedE896a79790Namespaced.lean/declarations/conceptualboundaries-count.md) | 33 | `result-track:5a074cf14edc546fa7cb7c82195939c9dce81f946dfb5993be104b24448876ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

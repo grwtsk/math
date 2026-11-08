@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Tactic.NormNum` — import line 28; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Positivity` — import line 29; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 30; external provider; requires a separately pinned dependency.
-- [Boolean Derivatives And Local Quantizer](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanDerivativesAndLocalQuantizer.lean/index.md) — import line 32; pinned internal source present.
+- [Boolean Derivatives And Local Quantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanDerivativesAndLocalQuantizer.lean/index.md) — import line 32; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -69,9 +69,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [signBit](../../../../ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/declarations/signbit.md) | 74 | `declaration-track:18361f1cce3243ed01943ee2387c26fb6d89d0446dbd8c8ddda8e558acef78eb` |
-| 2 | `def` | [correlationNumerator](../../../../ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/declarations/correlationnumerator.md) | 78 | `declaration-track:fb5a5f9c0f23980a3897b39713e46f0303d43d09f87fb6e116e93a70ff6b59a3` |
-| 3 | `def` | [signCorrelation](../../../../ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/declarations/signcorrelation.md) | 88 | `declaration-track:f0266210de9af111f3ccd35df9a08e09f22b03fe12e16727e78a0b5de0452fc7` |
+| 1 | `def` | [signBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/declarations/signbit.md) | 74 | `declaration-track:18361f1cce3243ed01943ee2387c26fb6d89d0446dbd8c8ddda8e558acef78eb` |
+| 2 | `def` | [correlationNumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/declarations/correlationnumerator.md) | 78 | `declaration-track:fb5a5f9c0f23980a3897b39713e46f0303d43d09f87fb6e116e93a70ff6b59a3` |
+| 3 | `def` | [signCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/declarations/signcorrelation.md) | 88 | `declaration-track:f0266210de9af111f3ccd35df9a08e09f22b03fe12e16727e78a0b5de0452fc7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

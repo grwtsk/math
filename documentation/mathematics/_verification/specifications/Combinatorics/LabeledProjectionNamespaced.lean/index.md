@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LabeledProjectionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/LabeledProjectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LabelNormalizedProjectionCode](../../../../Combinatorics/LabeledProjectionNamespaced.lean/declarations/labelnormalizedprojectioncode.md) | 29 | `declaration-track:6df1e7c6cb6cc4b86f2f0c36e5fd56118e6faeac01074b15bf3ddf9bf6a4fcf9` |
-| 2 | `def` | [labeledProjectionCode](../../../../Combinatorics/LabeledProjectionNamespaced.lean/declarations/labeledprojectioncode.md) | 34 | `declaration-track:c68fb56a9e1d2f173378d35c12ecc10af5bbbf0c98821efbd0173d722d95ef63` |
-| 3 | `theorem` | [labeledProjectionCode_injective](../../../../Combinatorics/LabeledProjectionNamespaced.lean/declarations/labeledprojectioncode-injective.md) | 41 | `result-track:26b6199fd1e7c20fbad523398ad1470f68baf824502b0e37247b03e1d50d0dff` |
-| 4 | `def` | [liftProjectionOrbit](../../../../Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit.md) | 50 | `declaration-track:6c7685b36a70245730c215e06cb1054298b4e32e545ed779202e698f32a04a5e` |
-| 5 | `theorem` | [liftProjectionOrbit_mem](../../../../Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit-mem.md) | 62 | `result-track:02321969c3e6e288e632711c82b07111801f31615137377ac1e2d5114a1b614d` |
-| 6 | `theorem` | [liftProjectionOrbit_minimal](../../../../Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit-minimal.md) | 74 | `result-track:0f60d61ba42b04398d8f8610bea6239737287096e453c7a27e846668d2b393ad` |
-| 7 | `theorem` | [liftProjectionOrbit_unique](../../../../Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit-unique.md) | 90 | `result-track:0edd840ac05633e3ee9b569e1521ec588da119bc356b38fc71a67e03170cf0f0` |
+| 1 | `structure` | [LabelNormalizedProjectionCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/declarations/labelnormalizedprojectioncode.md) | 29 | `declaration-track:6df1e7c6cb6cc4b86f2f0c36e5fd56118e6faeac01074b15bf3ddf9bf6a4fcf9` |
+| 2 | `def` | [labeledProjectionCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/declarations/labeledprojectioncode.md) | 34 | `declaration-track:c68fb56a9e1d2f173378d35c12ecc10af5bbbf0c98821efbd0173d722d95ef63` |
+| 3 | `theorem` | [labeledProjectionCode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/declarations/labeledprojectioncode-injective.md) | 41 | `result-track:26b6199fd1e7c20fbad523398ad1470f68baf824502b0e37247b03e1d50d0dff` |
+| 4 | `def` | [liftProjectionOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit.md) | 50 | `declaration-track:6c7685b36a70245730c215e06cb1054298b4e32e545ed779202e698f32a04a5e` |
+| 5 | `theorem` | [liftProjectionOrbit_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit-mem.md) | 62 | `result-track:02321969c3e6e288e632711c82b07111801f31615137377ac1e2d5114a1b614d` |
+| 6 | `theorem` | [liftProjectionOrbit_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit-minimal.md) | 74 | `result-track:0f60d61ba42b04398d8f8610bea6239737287096e453c7a27e846668d2b393ad` |
+| 7 | `theorem` | [liftProjectionOrbit_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LabeledProjectionNamespaced.lean/declarations/liftprojectionorbit-unique.md) | 90 | `result-track:0edd840ac05633e3ee9b569e1521ec588da119bc356b38fc71a67e03170cf0f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

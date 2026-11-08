@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,8 +62,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [p_lemma](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/declarations/p-lemma.md) | 42 | `result-track:74e23b10e1ccc04e4d520763eb8b29332ddbc4e2f6c5f749655d130ae53b1746` |
-| 2 | `theorem` | [imo2008_q3](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/declarations/imo2008-q3.md) | 83 | `result-track:228c98410ece4bf7f838063b2b9188331dda4e73d9b30f3c23fb6c62a65d5fea` |
+| 1 | `theorem` | [p_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/declarations/p-lemma.md) | 42 | `result-track:74e23b10e1ccc04e4d520763eb8b29332ddbc4e2f6c5f749655d130ae53b1746` |
+| 2 | `theorem` | [imo2008_q3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q3Namespaced.lean/declarations/imo2008-q3.md) | 83 | `result-track:228c98410ece4bf7f838063b2b9188331dda4e73d9b30f3c23fb6c62a65d5fea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

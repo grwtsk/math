@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toMon](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/tomon.md) | 40 | `declaration-track:e9352cbac6024a82b3c1b631d369d058220702dd03cbca64c7d1633ef41c31a2` |
-| 2 | `def` | [monadToMon](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/monadtomon.md) | 49 | `declaration-track:2e4db63bcf9ecbbc4e4f066846bddf7e8098edb18151cc71fdb54f29e9c047e4` |
-| 3 | `def` | [ofMon](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/ofmon.md) | 55 | `declaration-track:378b17b2a18db1d51ce0d49814de36e8c863c6454afea51eab203e45ea665199` |
-| 4 | `lemma` | [ofMon_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/ofmon-obj.md) | 67 | `result-track:3a0204b7feae98f75e86fb86c7d3d135658f781d0df1ea37746a17a1c0012bfe` |
-| 5 | `def` | [monToMonad](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/montomonad.md) | 73 | `declaration-track:0c094ada51ddc3d93ad940414300ee514b12ffd1c5337563e3e5b9ff4c4dbeb2` |
-| 6 | `def` | [monadMonEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/monadmonequiv.md) | 84 | `declaration-track:3f3a6457d6c5d0ae999020dc25853949a109f01a3096b7e56237f6e6e8768b05` |
-| 7 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/example.md) | 95 | `declaration-track:91543fb3b38865c2349f2192f5181216de5c9c7d5a21c955009adf2b699d0185` |
+| 1 | `def` | [toMon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/tomon.md) | 40 | `declaration-track:e9352cbac6024a82b3c1b631d369d058220702dd03cbca64c7d1633ef41c31a2` |
+| 2 | `def` | [monadToMon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/monadtomon.md) | 49 | `declaration-track:2e4db63bcf9ecbbc4e4f066846bddf7e8098edb18151cc71fdb54f29e9c047e4` |
+| 3 | `def` | [ofMon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/ofmon.md) | 55 | `declaration-track:378b17b2a18db1d51ce0d49814de36e8c863c6454afea51eab203e45ea665199` |
+| 4 | `lemma` | [ofMon_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/ofmon-obj.md) | 67 | `result-track:3a0204b7feae98f75e86fb86c7d3d135658f781d0df1ea37746a17a1c0012bfe` |
+| 5 | `def` | [monToMonad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/montomonad.md) | 73 | `declaration-track:0c094ada51ddc3d93ad940414300ee514b12ffd1c5337563e3e5b9ff4c4dbeb2` |
+| 6 | `def` | [monadMonEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/monadmonequiv.md) | 84 | `declaration-track:3f3a6457d6c5d0ae999020dc25853949a109f01a3096b7e56237f6e6e8768b05` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivMon.lean/declarations/example.md) | 95 | `declaration-track:91543fb3b38865c2349f2192f5181216de5c9c7d5a21c955009adf2b699d0185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

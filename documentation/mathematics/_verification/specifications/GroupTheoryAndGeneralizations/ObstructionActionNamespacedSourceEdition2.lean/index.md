@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimitiveCoreTransportCertificate](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/declarations/primitivecoretransportcertificate.md) | 22 | `declaration-track:5ec23a8f486c99c745ef23ad01d2ba544f3e4d42ae9cc96c9bceb73520f6a337` |
-| 2 | `theorem` | [primitive_core_transports_under_automorphism](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/declarations/primitive-core-transports-under-automorphism.md) | 44 | `result-track:7d82e3c1f0949564f32adf03547180e88b80d8058774a1abfec4a41e0b94ec65` |
+| 1 | `structure` | [PrimitiveCoreTransportCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/declarations/primitivecoretransportcertificate.md) | 22 | `declaration-track:5ec23a8f486c99c745ef23ad01d2ba544f3e4d42ae9cc96c9bceb73520f6a337` |
+| 2 | `theorem` | [primitive_core_transports_under_automorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition2.lean/declarations/primitive-core-transports-under-automorphism.md) | 44 | `result-track:7d82e3c1f0949564f32adf03547180e88b80d8058774a1abfec4a41e0b94ec65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

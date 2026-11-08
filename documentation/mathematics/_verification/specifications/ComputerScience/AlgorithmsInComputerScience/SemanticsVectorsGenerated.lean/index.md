@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NumericDatum](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/numericdatum.md) | 13 | `declaration-track:c818e296068adf3692c9a425ed5e783375e68ee7b75f3340c9342460872be014` |
-| 2 | `structure` | [Vector](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/vector.md) | 22 | `declaration-track:2ea32e4ccf61b9118e58440928b4f5f6871ca34d3be08cc100db4b604ca790ba` |
-| 3 | `def` | [sourceSha256](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/sourcesha256.md) | 31 | `declaration-track:0aad16cd92cee13d45239ff9e9140271924a1f9963d33017988a5b0708b91c7c` |
-| 4 | `def` | [vectors](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/vectors.md) | 33 | `declaration-track:5751b34beb6ba0194eaab41c56f37741dc51b0e2117090cac72854359950dfd3` |
+| 1 | `structure` | [NumericDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/numericdatum.md) | 13 | `declaration-track:c818e296068adf3692c9a425ed5e783375e68ee7b75f3340c9342460872be014` |
+| 2 | `structure` | [Vector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/vector.md) | 22 | `declaration-track:2ea32e4ccf61b9118e58440928b4f5f6871ca34d3be08cc100db4b604ca790ba` |
+| 3 | `def` | [sourceSha256](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/sourcesha256.md) | 31 | `declaration-track:0aad16cd92cee13d45239ff9e9140271924a1f9963d33017988a5b0708b91c7c` |
+| 4 | `def` | [vectors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsVectorsGenerated.lean/declarations/vectors.md) | 33 | `declaration-track:5751b34beb6ba0194eaab41c56f37741dc51b0e2117090cac72854359950dfd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

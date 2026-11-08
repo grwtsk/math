@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_valEmbedding_univ](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/map-valembedding-univ.md) | 26 | `result-track:ce6634ec05fbc34caa1f825e676e85e624a8a5de892335be8ffbd49aedad546e` |
-| 2 | `theorem` | [Ioi_zero_eq_map](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/ioi-zero-eq-map.md) | 31 | `result-track:1af06fef1db237b74069813af865ee7c98829d23ad836f8db25d798559285e4b` |
-| 3 | `theorem` | [Iio_last_eq_map](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/iio-last-eq-map.md) | 35 | `result-track:2d94306815f033f68ff89f8d59b2ff63dcb0244828ad68f19db7b2dabea55c66` |
-| 4 | `theorem` | [Ioi_succ](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/ioi-succ.md) | 38 | `result-track:0dc338612b0384301ab71d5dda62948b701898cc81b14737cce9816f7b7f2cac` |
-| 5 | `theorem` | [Iio_castSucc](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/iio-castsucc.md) | 40 | `result-track:9d7c4904a029bfe2a0a3c26a0ae15ac04cd6f1487a16fc532ab8fbff8afcb880` |
-| 6 | `theorem` | [card_filter_univ_succ](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/card-filter-univ-succ.md) | 42 | `result-track:754b699501dad127935fa677c8c7c9da96c4d15a491f12284b93114c52c075dc` |
-| 7 | `theorem` | [card_filter_univ_succ'](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/card-filter-univ-succ-source-edition-2.md) | 46 | `result-track:b96bf26047560e682b61f1858e0dcbac2840b8b667003f3fa3c0df566542088f` |
-| 8 | `theorem` | [card_filter_univ_eq_vector_get_eq_count](../../../../../Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/card-filter-univ-eq-vector-get-eq-count.md) | 50 | `result-track:2ad9a9e298f714f8ce826666c0b2d5d575a2d302a87197101ab209b9de949244` |
+| 1 | `theorem` | [map_valEmbedding_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/map-valembedding-univ.md) | 26 | `result-track:ce6634ec05fbc34caa1f825e676e85e624a8a5de892335be8ffbd49aedad546e` |
+| 2 | `theorem` | [Ioi_zero_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/ioi-zero-eq-map.md) | 31 | `result-track:1af06fef1db237b74069813af865ee7c98829d23ad836f8db25d798559285e4b` |
+| 3 | `theorem` | [Iio_last_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/iio-last-eq-map.md) | 35 | `result-track:2d94306815f033f68ff89f8d59b2ff63dcb0244828ad68f19db7b2dabea55c66` |
+| 4 | `theorem` | [Ioi_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/ioi-succ.md) | 38 | `result-track:0dc338612b0384301ab71d5dda62948b701898cc81b14737cce9816f7b7f2cac` |
+| 5 | `theorem` | [Iio_castSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/iio-castsucc.md) | 40 | `result-track:9d7c4904a029bfe2a0a3c26a0ae15ac04cd6f1487a16fc532ab8fbff8afcb880` |
+| 6 | `theorem` | [card_filter_univ_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/card-filter-univ-succ.md) | 42 | `result-track:754b699501dad127935fa677c8c7c9da96c4d15a491f12284b93114c52c075dc` |
+| 7 | `theorem` | [card_filter_univ_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/card-filter-univ-succ-source-edition-2.md) | 46 | `result-track:b96bf26047560e682b61f1858e0dcbac2840b8b667003f3fa3c0df566542088f` |
+| 8 | `theorem` | [card_filter_univ_eq_vector_get_eq_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Fin.lean/declarations/card-filter-univ-eq-vector-get-eq-count.md) | 50 | `result-track:2ad9a9e298f714f8ce826666c0b2d5d575a2d302a87197101ab209b9de949244` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

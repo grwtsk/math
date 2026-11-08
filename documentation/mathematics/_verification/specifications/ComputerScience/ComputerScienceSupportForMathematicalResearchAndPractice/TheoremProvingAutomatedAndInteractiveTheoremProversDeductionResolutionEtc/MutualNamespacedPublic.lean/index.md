@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [addPreDefsFromUnary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/declarations/addpredefsfromunary.md) | 29 | `declaration-track:461760b2ec52cb3197fd9b455e48ead9ecc9bd46a2884a79ad093b9b49f7587d` |
-| 2 | `def` | [cleanPreDef](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/declarations/cleanpredef.md) | 59 | `declaration-track:fd9a54a0f8564a9244075a27887c6770454944e9efd1bbb69f00b5b28774c0ad` |
-| 3 | `def` | [addPreDefAttributes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/declarations/addpredefattributes.md) | 67 | `declaration-track:f8636a81f4196fcfcb2637281a8a4312dd41f7aef7cccda2a4d7be4c3c4fa1ed` |
+| 1 | `def` | [addPreDefsFromUnary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/declarations/addpredefsfromunary.md) | 29 | `declaration-track:461760b2ec52cb3197fd9b455e48ead9ecc9bd46a2884a79ad093b9b49f7587d` |
+| 2 | `def` | [cleanPreDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/declarations/cleanpredef.md) | 59 | `declaration-track:fd9a54a0f8564a9244075a27887c6770454944e9efd1bbb69f00b5b28774c0ad` |
+| 3 | `def` | [addPreDefAttributes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MutualNamespacedPublic.lean/declarations/addpredefattributes.md) | 67 | `declaration-track:f8636a81f4196fcfcb2637281a8a4312dd41f7aef7cccda2a4d7be4c3c4fa1ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

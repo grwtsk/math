@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AbsoluteValue.lean/index.md) · [Full source](../../../../GeneralTopology/AbsoluteValue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniformSpace](../../../../GeneralTopology/AbsoluteValue.lean/declarations/uniformspace.md) | 35 | `declaration-track:83e2b252e174aea8075ea9a56a241dc62a1231422057b9319d11c66e46ba4879` |
-| 2 | `theorem` | [hasBasis_uniformity](../../../../GeneralTopology/AbsoluteValue.lean/declarations/hasbasis-uniformity.md) | 40 | `result-track:d631ff2f60cde9a57b79629d3d4f0d2f4312decd300e83700e18842a6acdc684` |
+| 1 | `def` | [uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValue.lean/declarations/uniformspace.md) | 35 | `declaration-track:83e2b252e174aea8075ea9a56a241dc62a1231422057b9319d11c66e46ba4879` |
+| 2 | `theorem` | [hasBasis_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValue.lean/declarations/hasbasis-uniformity.md) | 40 | `result-track:d631ff2f60cde9a57b79629d3d4f0d2f4312decd300e83700e18842a6acdc684` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

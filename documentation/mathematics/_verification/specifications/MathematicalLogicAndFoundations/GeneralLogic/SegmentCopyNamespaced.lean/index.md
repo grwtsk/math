@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SegmentCopyExactStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactstatement.md) | 23 | `declaration-track:dc0dd5475a60da792f70c63f07bded431d4bcd8f1f7dbcfa7f24f84c03e4c11a` |
-| 2 | `def` | [segmentCopyExactOpenElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactopenelement.md) | 33 | `declaration-track:a7f6683b2c6ed2f54304e58317aaa9d4b9da067f288948a086ac101ccd7f0cac` |
-| 3 | `def` | [segmentCopyCongruenceDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopycongruencedependency.md) | 48 | `declaration-track:ebf8410bb0a22be9ff35bb58ee83c33dfc6b15f82bf9903915d37efa9766b488` |
-| 4 | `def` | [segmentCopyConstructionDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyconstructiondependency.md) | 58 | `declaration-track:f3ee95ac42a0babc877490ab9c01dac02eba04e07a3e1e82474e24fe2c1299fa` |
-| 5 | `def` | [segmentCopyExactSeed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactseed.md) | 68 | `declaration-track:fe9bc55cc6842b12f2bf69a6af539cf3fb6007b977c975ca229c084d717d4d72` |
-| 6 | `theorem` | [segmentCopyExact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexact.md) | 84 | `result-track:228cc428ebd9cb0e1a2b9f175822f39c898ff1349da3f3544b08ba257c89419a` |
-| 7 | `def` | [segmentCopyExactTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexacttheoremelement.md) | 89 | `declaration-track:798e7bc662f97291bcb960aa0d19667bbf608f5624cf5addc6231a477fb957a2` |
-| 8 | `def` | [segmentCopyExactCorpusItem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactcorpusitem.md) | 100 | `declaration-track:386f737c7ec506bd29028e5de56f07083d58c74b30929a3742d6dbbcb3acd2a3` |
+| 1 | `def` | [SegmentCopyExactStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactstatement.md) | 23 | `declaration-track:dc0dd5475a60da792f70c63f07bded431d4bcd8f1f7dbcfa7f24f84c03e4c11a` |
+| 2 | `def` | [segmentCopyExactOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactopenelement.md) | 33 | `declaration-track:a7f6683b2c6ed2f54304e58317aaa9d4b9da067f288948a086ac101ccd7f0cac` |
+| 3 | `def` | [segmentCopyCongruenceDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopycongruencedependency.md) | 48 | `declaration-track:ebf8410bb0a22be9ff35bb58ee83c33dfc6b15f82bf9903915d37efa9766b488` |
+| 4 | `def` | [segmentCopyConstructionDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyconstructiondependency.md) | 58 | `declaration-track:f3ee95ac42a0babc877490ab9c01dac02eba04e07a3e1e82474e24fe2c1299fa` |
+| 5 | `def` | [segmentCopyExactSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactseed.md) | 68 | `declaration-track:fe9bc55cc6842b12f2bf69a6af539cf3fb6007b977c975ca229c084d717d4d72` |
+| 6 | `theorem` | [segmentCopyExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexact.md) | 84 | `result-track:228cc428ebd9cb0e1a2b9f175822f39c898ff1349da3f3544b08ba257c89419a` |
+| 7 | `def` | [segmentCopyExactTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexacttheoremelement.md) | 89 | `declaration-track:798e7bc662f97291bcb960aa0d19667bbf608f5624cf5addc6231a477fb957a2` |
+| 8 | `def` | [segmentCopyExactCorpusItem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SegmentCopyNamespaced.lean/declarations/segmentcopyexactcorpusitem.md) | 100 | `declaration-track:386f737c7ec506bd29028e5de56f07083d58c74b30929a3742d6dbbcb3acd2a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

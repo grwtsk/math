@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Set.Nonempty.ordConnected_iff_of_bdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-ordconnected-iff-of-bdd-source-edition-2.md) | 39 | `result-track:a1c65d96412e2c26c2c986ee8dcbded16ce62995d92ca7253f47dde5d4b2c27e` |
-| 2 | `lemma` | [Set.Nonempty.ordConnected_iff_of_bdd'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-ordconnected-iff-of-bdd.md) | 49 | `result-track:11e3c58a94a14ef3d62dbd3f7b41d857569ac1f50d112d6a3e9f6380a5666ff6` |
-| 3 | `lemma` | [Set.ordConnected_iff_disjoint_Ioo_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-ordconnected-iff-disjoint-ioo-empty.md) | 58 | `result-track:f2c9286abdf2cb0ba5fcf5278f67cf74567abeb3ba6136798bd586335966a85e` |
-| 4 | `lemma` | [Set.Nonempty.eq_Icc_iff_nat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-eq-icc-iff-nat.md) | 79 | `result-track:52588dbecabc1f46541a121ee0fe9995b6b334629638645cd22245ed291c6b1d` |
-| 5 | `lemma` | [Set.Nonempty.eq_Icc_iff_int](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-eq-icc-iff-int.md) | 84 | `result-track:b0d45ee50fbf24e244f386036444d6d04c989670d05d0cfb7a8989cfd7cf44dc` |
+| 1 | `lemma` | [Set.Nonempty.ordConnected_iff_of_bdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-ordconnected-iff-of-bdd-source-edition-2.md) | 39 | `result-track:a1c65d96412e2c26c2c986ee8dcbded16ce62995d92ca7253f47dde5d4b2c27e` |
+| 2 | `lemma` | [Set.Nonempty.ordConnected_iff_of_bdd'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-ordconnected-iff-of-bdd.md) | 49 | `result-track:11e3c58a94a14ef3d62dbd3f7b41d857569ac1f50d112d6a3e9f6380a5666ff6` |
+| 3 | `lemma` | [Set.ordConnected_iff_disjoint_Ioo_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-ordconnected-iff-disjoint-ioo-empty.md) | 58 | `result-track:f2c9286abdf2cb0ba5fcf5278f67cf74567abeb3ba6136798bd586335966a85e` |
+| 4 | `lemma` | [Set.Nonempty.eq_Icc_iff_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-eq-icc-iff-nat.md) | 79 | `result-track:52588dbecabc1f46541a121ee0fe9995b6b334629638645cd22245ed291c6b1d` |
+| 5 | `lemma` | [Set.Nonempty.eq_Icc_iff_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrdConnectedLinearNamespaced.lean/declarations/set-nonempty-eq-icc-iff-int.md) | 84 | `result-track:b0d45ee50fbf24e244f386036444d6d04c989670d05d0cfb7a8989cfd7cf44dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedComplexSolvability.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedComplexSolvability.lean/index.md) — import line 13; pinned internal source present.
 - `Mathlib.Tactic.FunProp` — import line 14; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [jointGraph](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/declarations/jointgraph.md) | 41 | `declaration-track:a352a645e7b2e32ed338796848a8a32d72ae508f613b9e6d345a4fbca83ebbf9` |
-| 2 | `theorem` | [exists_solution_of_core_estimate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/declarations/exists-solution-of-core-estimate.md) | 46 | `result-track:bb8abd47ba5b63387303c03ae908d4795540191d61f4648d6b1bf7fe906b0e07` |
+| 1 | `def` | [jointGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/declarations/jointgraph.md) | 41 | `declaration-track:a352a645e7b2e32ed338796848a8a32d72ae508f613b9e6d345a4fbca83ebbf9` |
+| 2 | `theorem` | [exists_solution_of_core_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/declarations/exists-solution-of-core-estimate.md) | 46 | `result-track:bb8abd47ba5b63387303c03ae908d4795540191d61f4648d6b1bf7fe906b0e07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

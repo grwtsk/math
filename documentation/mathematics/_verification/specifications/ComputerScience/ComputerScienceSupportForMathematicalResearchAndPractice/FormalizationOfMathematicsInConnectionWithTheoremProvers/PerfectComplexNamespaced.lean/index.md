@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [perfect_complex_dualizable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/declarations/perfect-complex-dualizable.md) | 27 | `result-track:227bab1de8ddd4ec158319a2651508abd91a4e1cc5e92f3d6654b145713b66d5` |
-| 2 | `theorem` | [perfect_complex_locally_finite](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/declarations/perfect-complex-locally-finite.md) | 32 | `result-track:f7024e1b5912a9dd4e7a1711771f2ec0386da0d5882b7e53c04e5bbe6a668fb7` |
-| 3 | `theorem` | [perfect_complex_bounded_tor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/declarations/perfect-complex-bounded-tor.md) | 37 | `result-track:52d98bd110769477bfd0f275d287952d5076d403d3e17de3b62e9b293f1a2c12` |
+| 1 | `theorem` | [perfect_complex_dualizable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/declarations/perfect-complex-dualizable.md) | 27 | `result-track:227bab1de8ddd4ec158319a2651508abd91a4e1cc5e92f3d6654b145713b66d5` |
+| 2 | `theorem` | [perfect_complex_locally_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/declarations/perfect-complex-locally-finite.md) | 32 | `result-track:f7024e1b5912a9dd4e7a1711771f2ec0386da0d5882b7e53c04e5bbe6a668fb7` |
+| 3 | `theorem` | [perfect_complex_bounded_tor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectComplexNamespaced.lean/declarations/perfect-complex-bounded-tor.md) | 37 | `result-track:52d98bd110769477bfd0f275d287952d5076d403d3e17de3b62e9b293f1a2c12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

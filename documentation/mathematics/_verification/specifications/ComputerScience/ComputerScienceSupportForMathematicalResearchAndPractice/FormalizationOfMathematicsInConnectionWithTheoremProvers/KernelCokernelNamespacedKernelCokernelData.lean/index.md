@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KernelCokernelData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/declarations/kernelcokerneldata.md) | 26 | `declaration-track:c17c69130f9433fec0830c76bd2a2cde2720dd2636e1452f6d8031b95011a001` |
-| 2 | `theorem` | [kernel_finite](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/declarations/kernel-finite.md) | 40 | `result-track:3d3851282c98953e0899d1e72ab2fa255c7105d39984c53c50fc1fe1db1f006d` |
-| 3 | `theorem` | [cokernel_finite](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/declarations/cokernel-finite.md) | 49 | `result-track:75defe64eb0f7109a54bb76fa5114cc8e6998bb716caefbca36a0ccc7593b3e5` |
+| 1 | `structure` | [KernelCokernelData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/declarations/kernelcokerneldata.md) | 26 | `declaration-track:c17c69130f9433fec0830c76bd2a2cde2720dd2636e1452f6d8031b95011a001` |
+| 2 | `theorem` | [kernel_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/declarations/kernel-finite.md) | 40 | `result-track:3d3851282c98953e0899d1e72ab2fa255c7105d39984c53c50fc1fe1db1f006d` |
+| 3 | `theorem` | [cokernel_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelCokernelNamespacedKernelCokernelData.lean/declarations/cokernel-finite.md) | 49 | `result-track:75defe64eb0f7109a54bb76fa5114cc8e6998bb716caefbca36a0ccc7593b3e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

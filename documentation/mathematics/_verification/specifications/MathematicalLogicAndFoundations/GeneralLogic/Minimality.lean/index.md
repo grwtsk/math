@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Minimality.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Minimality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Minimality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Minimality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Site.Pretopology` — import line 23; external provider; requires a separately pinned dependency.
-- [Closure Data](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/index.md) — import line 24; pinned internal source present.
+- [Closure Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [generated_minimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Minimality.lean/declarations/generated-minimal.md) | 54 | `result-track:17e0fdb80b5e0052d2dc1a62854ff102f98d7fc5e7c1509911a7b69927d7ee73` |
+| 1 | `theorem` | [generated_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Minimality.lean/declarations/generated-minimal.md) | 54 | `result-track:17e0fdb80b5e0052d2dc1a62854ff102f98d7fc5e7c1509911a7b69927d7ee73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_range_add_ediv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/declarations/sum-range-add-ediv.md) | 38 | `result-track:2717498eef0ff7476dd9a042d68551bb6d45bc4c5fd9c93a9bf2e725b2984172` |
-| 2 | `theorem` | [sum_floor_add_div](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/declarations/sum-floor-add-div.md) | 56 | `result-track:79216d5f70dc1658ac0b4427d41bbb10307be83bca7865746358e77f6e7216d4` |
+| 1 | `theorem` | [sum_range_add_ediv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/declarations/sum-range-add-ediv.md) | 38 | `result-track:2717498eef0ff7476dd9a042d68551bb6d45bc4c5fd9c93a9bf2e725b2984172` |
+| 2 | `theorem` | [sum_floor_add_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FloorBigOperatorsNamespacedPublic.lean/declarations/sum-floor-add-div.md) | 56 | `result-track:79216d5f70dc1658ac0b4427d41bbb10307be83bca7865746358e77f6e7216d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

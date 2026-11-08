@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [commRing](../../../../AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/declarations/commring.md) | 28 | `declaration-track:3d7430ebac97dbd2d658f5e721b169c82bda8f68feccf35c74ff8e28b05b2f0d` |
-| 2 | `instance` | [cancelCommMonoidWithZero](../../../../AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/declarations/cancelcommmonoidwithzero.md) | 37 | `declaration-track:4aba65cef9be9de45babbd6776708658cef39e8f4a3a6adf8581e275af112512` |
+| 1 | `instance` | [commRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/declarations/commring.md) | 28 | `declaration-track:3d7430ebac97dbd2d658f5e721b169c82bda8f68feccf35c74ff8e28b05b2f0d` |
+| 2 | `instance` | [cancelCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnitNamespaced.lean/declarations/cancelcommmonoidwithzero.md) | 37 | `declaration-track:4aba65cef9be9de45babbd6776708658cef39e8f4a3a6adf8581e275af112512` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

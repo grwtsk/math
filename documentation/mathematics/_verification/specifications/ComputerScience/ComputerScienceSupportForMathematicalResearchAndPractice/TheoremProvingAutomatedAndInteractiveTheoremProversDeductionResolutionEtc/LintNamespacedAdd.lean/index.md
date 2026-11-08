@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [add.add](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/add-add.md) | 16 | `declaration-track:84ce13be65f577e307973f44699d8be3bd8ede672c7ab919af320dd5cd22c569` |
-| 2 | `def` | [Foo.foo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/foo-foo.md) | 25 | `declaration-track:34f24f0b8f8aa5e99014c2da9275758317c3e1c6b3dfc9e42f59120e91e141a8` |
-| 3 | `theorem` | [add.mul](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/add-mul.md) | 33 | `result-track:1ab2ca022a701c6b8b6797d72f3be43d5605eae197fcbbcc6a7edfd8971392d1` |
-| 4 | `theorem` | [double__underscore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/double-underscore.md) | 73 | `result-track:8d844a3a41475c46001f908b03d541670a9dfea721fa162dae979b3729efd8c3` |
+| 1 | `def` | [add.add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/add-add.md) | 16 | `declaration-track:84ce13be65f577e307973f44699d8be3bd8ede672c7ab919af320dd5cd22c569` |
+| 2 | `def` | [Foo.foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/foo-foo.md) | 25 | `declaration-track:34f24f0b8f8aa5e99014c2da9275758317c3e1c6b3dfc9e42f59120e91e141a8` |
+| 3 | `theorem` | [add.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/add-mul.md) | 33 | `result-track:1ab2ca022a701c6b8b6797d72f3be43d5605eae197fcbbcc6a7edfd8971392d1` |
+| 4 | `theorem` | [double__underscore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LintNamespacedAdd.lean/declarations/double-underscore.md) | 73 | `result-track:8d844a3a41475c46001f908b03d541670a9dfea721fa162dae979b3729efd8c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

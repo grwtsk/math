@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance.md) | 31 | `declaration-track:1b5793bcb07838933ee5ba3ea81c29dae3dcf00bb4a8dc18a5b83c2289e451ec` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:21852b5863351983a76ec96b7b05ea9b8acb85e5a9fc59580c67c711b780c214` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-3.md) | 39 | `declaration-track:57085434f9d27ba69df394162c7aa304667048f8f6c940c25079107f96c3900b` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:6f9eef6aee95d3b61c9a0dec87084bdfba2cb3131ce523b366509f45ab2a7f8a` |
-| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-7.md) | 46 | `declaration-track:d29576a4b182fa37a434031afa441316b11804112a3d33f6157e433025787cb3` |
-| 6 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-6.md) | 51 | `declaration-track:beeca260fc1258cb6a033ce1fa325a1d294a282fb61a40fe32ee9d88eb0f6c42` |
-| 7 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-5.md) | 54 | `declaration-track:b2b676fda76be18496f5c3f6d4c51a0b19635f49c0cd0c5bf48fb4afd441ecb7` |
-| 8 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-8.md) | 58 | `declaration-track:faef68e202ad2275f701f82a14712e8c9d6f9d8a6224a41d22f123d2fbc72992` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance.md) | 31 | `declaration-track:1b5793bcb07838933ee5ba3ea81c29dae3dcf00bb4a8dc18a5b83c2289e451ec` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:21852b5863351983a76ec96b7b05ea9b8acb85e5a9fc59580c67c711b780c214` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-3.md) | 39 | `declaration-track:57085434f9d27ba69df394162c7aa304667048f8f6c940c25079107f96c3900b` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:6f9eef6aee95d3b61c9a0dec87084bdfba2cb3131ce523b366509f45ab2a7f8a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-7.md) | 46 | `declaration-track:d29576a4b182fa37a434031afa441316b11804112a3d33f6157e433025787cb3` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-6.md) | 51 | `declaration-track:beeca260fc1258cb6a033ce1fa325a1d294a282fb61a40fe32ee9d88eb0f6c42` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-5.md) | 54 | `declaration-track:b2b676fda76be18496f5c3f6d4c51a0b19635f49c0cd0c5bf48fb4afd441ecb7` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CharNamespacedPublicEdition1.lean/declarations/instance-source-edition-8.md) | 58 | `declaration-track:faef68e202ad2275f701f82a14712e8c9d6f9d8a6224a41d22f123d2fbc72992` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

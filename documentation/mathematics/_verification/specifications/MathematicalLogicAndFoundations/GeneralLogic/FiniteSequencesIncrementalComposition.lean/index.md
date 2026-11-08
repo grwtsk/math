@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionaryHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionaryHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unpack_appendEntries_compose](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/declarations/unpack-appendentries-compose.md) | 30 | `result-track:2956355026bc014c89cccb0b626c15f621fdf6c817344212a60b73463d429895` |
-| 2 | `theorem` | [unpack_appendEntries_twice_pack](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/declarations/unpack-appendentries-twice-pack.md) | 40 | `result-track:7c663f1d8a30470324210129157eb211f2d4eb92694a1a05e7d8d239f1f26c44` |
-| 3 | `theorem` | [sequential_representation_counterexample](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/declarations/sequential-representation-counterexample.md) | 46 | `result-track:257859c93433449166ff8f7473892a3911f8e4ddd8f75287e62abda62ec09fc3` |
+| 1 | `theorem` | [unpack_appendEntries_compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/declarations/unpack-appendentries-compose.md) | 30 | `result-track:2956355026bc014c89cccb0b626c15f621fdf6c817344212a60b73463d429895` |
+| 2 | `theorem` | [unpack_appendEntries_twice_pack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/declarations/unpack-appendentries-twice-pack.md) | 40 | `result-track:7c663f1d8a30470324210129157eb211f2d4eb92694a1a05e7d8d239f1f26c44` |
+| 3 | `theorem` | [sequential_representation_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/declarations/sequential-representation-counterexample.md) | 46 | `result-track:257859c93433449166ff8f7473892a3911f8e4ddd8f75287e62abda62ec09fc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

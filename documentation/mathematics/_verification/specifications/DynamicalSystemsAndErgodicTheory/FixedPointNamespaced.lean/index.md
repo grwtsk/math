@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedPoint](../../../../DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/fixedpoint.md) | 17 | `declaration-track:4b42805d3534128ef203f046bf36dfefe319b1932eb8a90c07c67004956cf7d6` |
-| 2 | `theorem` | [eventually_fixed](../../../../DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/eventually-fixed.md) | 27 | `result-track:a83dc63fa8a828e2331e6cc4217e22521791e67dd1f50250c478bed0c58a8066` |
-| 3 | `theorem` | [reaches_fixed_point](../../../../DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/reaches-fixed-point.md) | 51 | `result-track:5815b8fc17985fd754c13efe07d45f4a322da9570a5041dc9cd79ec96a41f2ce` |
-| 4 | `theorem` | [iterates_preserve_constraints](../../../../DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/iterates-preserve-constraints.md) | 59 | `result-track:2868cb5c913a6b03273ff0fe976c4fbf5dece111c74b85beab6df9447cda002a` |
-| 5 | `theorem` | [iterates_preserve_scope](../../../../DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/iterates-preserve-scope.md) | 79 | `result-track:b101ae3ce952d6cdaf75eb2473a3bacb7ebc2002bc5b4d82301e11c47f6b1607` |
+| 1 | `structure` | [FixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/fixedpoint.md) | 17 | `declaration-track:4b42805d3534128ef203f046bf36dfefe319b1932eb8a90c07c67004956cf7d6` |
+| 2 | `theorem` | [eventually_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/eventually-fixed.md) | 27 | `result-track:a83dc63fa8a828e2331e6cc4217e22521791e67dd1f50250c478bed0c58a8066` |
+| 3 | `theorem` | [reaches_fixed_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/reaches-fixed-point.md) | 51 | `result-track:5815b8fc17985fd754c13efe07d45f4a322da9570a5041dc9cd79ec96a41f2ce` |
+| 4 | `theorem` | [iterates_preserve_constraints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/iterates-preserve-constraints.md) | 59 | `result-track:2868cb5c913a6b03273ff0fe976c4fbf5dece111c74b85beab6df9447cda002a` |
+| 5 | `theorem` | [iterates_preserve_scope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointNamespaced.lean/declarations/iterates-preserve-scope.md) | 79 | `result-track:b101ae3ce952d6cdaf75eb2473a3bacb7ebc2002bc5b4d82301e11c47f6b1607` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

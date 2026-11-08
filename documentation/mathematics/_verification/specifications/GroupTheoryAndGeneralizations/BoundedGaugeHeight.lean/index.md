@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.CocycleProduct`](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.CocycleProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [height_triple_le](../../../../GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/declarations/height-triple-le.md) | 40 | `result-track:9ae45053a4684208b119924060abb1ebc7bf1bc6492de67a858bd464d1939a25` |
-| 2 | `theorem` | [height_triple_of_bounded_ends](../../../../GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/declarations/height-triple-of-bounded-ends.md) | 54 | `result-track:989d29e7ad72ae033ea9ef4665e35bb81b5f698d345b143b8d7407353c109bdc` |
-| 3 | `theorem` | [cocycle_gauge_height_sandwich](../../../../GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/declarations/cocycle-gauge-height-sandwich.md) | 81 | `result-track:2235a7a131974bc21cf1c8927ddef5e15c32791dbc5ee58331d76e5a2145c598` |
+| 1 | `theorem` | [height_triple_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/declarations/height-triple-le.md) | 40 | `result-track:9ae45053a4684208b119924060abb1ebc7bf1bc6492de67a858bd464d1939a25` |
+| 2 | `theorem` | [height_triple_of_bounded_ends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/declarations/height-triple-of-bounded-ends.md) | 54 | `result-track:989d29e7ad72ae033ea9ef4665e35bb81b5f698d345b143b8d7407353c109bdc` |
+| 3 | `theorem` | [cocycle_gauge_height_sandwich](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BoundedGaugeHeight.lean/declarations/cocycle-gauge-height-sandwich.md) | 81 | `result-track:2235a7a131974bc21cf1c8927ddef5e15c32791dbc5ee58331d76e5a2145c598` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousRaster.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousRaster.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boolToReal](../../../../GeneralTopology/ContinuousRaster.lean/declarations/booltoreal.md) | 22 | `declaration-track:396cba43ca952453e9ae2c753ff61083ce0c43233a82145b2fe9b4a0160e0997` |
-| 2 | `theorem` | [boolToReal_false](../../../../GeneralTopology/ContinuousRaster.lean/declarations/booltoreal-false.md) | 26 | `result-track:1c9f751ccfa75903222b359ca2c2510a68347fbef1b91a36d3c97f6d3d21c443` |
-| 3 | `theorem` | [boolToReal_true](../../../../GeneralTopology/ContinuousRaster.lean/declarations/booltoreal-true.md) | 27 | `result-track:9d5b6fc9bf23704139be25f977b5eb361ffe9c9b7d87a123aada5f2042948963` |
-| 4 | `structure` | [RasterBoundaryData](../../../../GeneralTopology/ContinuousRaster.lean/declarations/rasterboundarydata.md) | 30 | `declaration-track:ffc59be607232c1f3a82c47acd89c9bcc7abc9444ff80c70ff10e6c75359f032` |
-| 5 | `structure` | [ContinuousTerrainRaster](../../../../GeneralTopology/ContinuousRaster.lean/declarations/continuousterrainraster.md) | 41 | `declaration-track:1323df69359055a226d48435cb183ac703e281513d434d0fe93292540f31d2ac` |
-| 6 | `theorem` | [at_vertex](../../../../GeneralTopology/ContinuousRaster.lean/declarations/at-vertex.md) | 83 | `result-track:8c751ef87de0143d1e1331ae247bfd3c64b2ffa94cd7b6b478f4373f354fa19a` |
-| 7 | `theorem` | [value_mem_Icc](../../../../GeneralTopology/ContinuousRaster.lean/declarations/value-mem-icc.md) | 92 | `result-track:d5653ea6d54c51c7b112ca9577285ee3466c6884b4e8e10bdba6faadc1d95e09` |
-| 8 | `theorem` | [interpolate_on_cell](../../../../GeneralTopology/ContinuousRaster.lean/declarations/interpolate-on-cell.md) | 100 | `result-track:71726abb1adae8c4e7ee3530d796f31be92e393e478bc77669d364edc9c6de9e` |
+| 1 | `def` | [boolToReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/booltoreal.md) | 22 | `declaration-track:396cba43ca952453e9ae2c753ff61083ce0c43233a82145b2fe9b4a0160e0997` |
+| 2 | `theorem` | [boolToReal_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/booltoreal-false.md) | 26 | `result-track:1c9f751ccfa75903222b359ca2c2510a68347fbef1b91a36d3c97f6d3d21c443` |
+| 3 | `theorem` | [boolToReal_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/booltoreal-true.md) | 27 | `result-track:9d5b6fc9bf23704139be25f977b5eb361ffe9c9b7d87a123aada5f2042948963` |
+| 4 | `structure` | [RasterBoundaryData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/rasterboundarydata.md) | 30 | `declaration-track:ffc59be607232c1f3a82c47acd89c9bcc7abc9444ff80c70ff10e6c75359f032` |
+| 5 | `structure` | [ContinuousTerrainRaster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/continuousterrainraster.md) | 41 | `declaration-track:1323df69359055a226d48435cb183ac703e281513d434d0fe93292540f31d2ac` |
+| 6 | `theorem` | [at_vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/at-vertex.md) | 83 | `result-track:8c751ef87de0143d1e1331ae247bfd3c64b2ffa94cd7b6b478f4373f354fa19a` |
+| 7 | `theorem` | [value_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/value-mem-icc.md) | 92 | `result-track:d5653ea6d54c51c7b112ca9577285ee3466c6884b4e8e10bdba6faadc1d95e09` |
+| 8 | `theorem` | [interpolate_on_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousRaster.lean/declarations/interpolate-on-cell.md) | 100 | `result-track:71726abb1adae8c4e7ee3530d796f31be92e393e478bc77669d364edc9c6de9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

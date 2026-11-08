@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CoherentNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CoherentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isOpen_iff](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/isopen-iff.md) | 50 | `result-track:3f631cea2ab928818f18ffac4f1ede9c72c00c96267667c664ed39a1a0168d6b` |
-| 2 | `theorem` | [isClosed_iff](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/isclosed-iff.md) | 54 | `result-track:ec86af3478e05456219fa1d8e574a298c662e0436a70b5b687f07dd14755694d` |
-| 3 | `theorem` | [continuous_iff](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/continuous-iff.md) | 58 | `result-track:28bb0ad76a06cfb7242a03777f0c52f5e19aab975cb05a680ab51c65bb9db37b` |
-| 4 | `theorem` | [of_continuous_prop](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/of-continuous-prop.md) | 64 | `result-track:6d3a04f353db5999b34c4ee853804d3153565017b0c9c57461f71c561a10707b` |
-| 5 | `theorem` | [of_isClosed](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/of-isclosed.md) | 70 | `result-track:a4e2212d191d595cb98c263751e4f1052dc20290d64209e30e8a251cc6599b10` |
-| 6 | `theorem` | [enlarge](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/enlarge.md) | 74 | `result-track:f28b58a3e4082513eb4a1c682896bc36c1762ef7d87203c6424a708736a4082a` |
-| 7 | `theorem` | [mono](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/mono.md) | 79 | `result-track:2311eefe27f18f7f5bfc90d32e50e33d3e45736caaf94642e0b47df1660afd92` |
-| 8 | `lemma` | [of_seq](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/of-seq.md) | 86 | `result-track:2ad46c8f03f22fbdcdee59f64eace34ce638ce687144feae75397e294359571b` |
-| 9 | `lemma` | [isCompact_of_seq](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/iscompact-of-seq.md) | 98 | `result-track:857eebd1ced557ff3d6996c7f52d517710e99f9d35a39cb4742bbd906109a535` |
-| 10 | `lemma` | [of_nhds](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/of-nhds.md) | 103 | `result-track:c00791beda876a48ddb9380b29b479943813025c99f61b3d4f5a0f0a8091be36` |
-| 11 | `lemma` | [isCompact_of_weaklyLocallyCompact](../../../../GeneralTopology/CoherentNamespaced.lean/declarations/iscompact-of-weaklylocallycompact.md) | 109 | `result-track:8973e8c9e4e475a3d6360298454fe5cfc3bd3f34dd1f81fa7618a8fd02c67f1c` |
+| 1 | `theorem` | [isOpen_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/isopen-iff.md) | 50 | `result-track:3f631cea2ab928818f18ffac4f1ede9c72c00c96267667c664ed39a1a0168d6b` |
+| 2 | `theorem` | [isClosed_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/isclosed-iff.md) | 54 | `result-track:ec86af3478e05456219fa1d8e574a298c662e0436a70b5b687f07dd14755694d` |
+| 3 | `theorem` | [continuous_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/continuous-iff.md) | 58 | `result-track:28bb0ad76a06cfb7242a03777f0c52f5e19aab975cb05a680ab51c65bb9db37b` |
+| 4 | `theorem` | [of_continuous_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/of-continuous-prop.md) | 64 | `result-track:6d3a04f353db5999b34c4ee853804d3153565017b0c9c57461f71c561a10707b` |
+| 5 | `theorem` | [of_isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/of-isclosed.md) | 70 | `result-track:a4e2212d191d595cb98c263751e4f1052dc20290d64209e30e8a251cc6599b10` |
+| 6 | `theorem` | [enlarge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/enlarge.md) | 74 | `result-track:f28b58a3e4082513eb4a1c682896bc36c1762ef7d87203c6424a708736a4082a` |
+| 7 | `theorem` | [mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/mono.md) | 79 | `result-track:2311eefe27f18f7f5bfc90d32e50e33d3e45736caaf94642e0b47df1660afd92` |
+| 8 | `lemma` | [of_seq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/of-seq.md) | 86 | `result-track:2ad46c8f03f22fbdcdee59f64eace34ce638ce687144feae75397e294359571b` |
+| 9 | `lemma` | [isCompact_of_seq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/iscompact-of-seq.md) | 98 | `result-track:857eebd1ced557ff3d6996c7f52d517710e99f9d35a39cb4742bbd906109a535` |
+| 10 | `lemma` | [of_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/of-nhds.md) | 103 | `result-track:c00791beda876a48ddb9380b29b479943813025c99f61b3d4f5a0f0a8091be36` |
+| 11 | `lemma` | [isCompact_of_weaklyLocallyCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoherentNamespaced.lean/declarations/iscompact-of-weaklylocallycompact.md) | 109 | `result-track:8973e8c9e4e475a3d6360298454fe5cfc3bd3f34dd1f81fa7618a8fd02c67f1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

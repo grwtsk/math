@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ResultsAlternative267.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ResultsAlternative267.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative267.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative267.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FlatRotationSquare.flatTransport](../../../../GroupTheoryAndGeneralizations/ResultsAlternative267.lean/declarations/flatrotationsquare-flattransport.md) | 13 | `result-track:fb91109c1499d7ae9062a4b91d87911c95c53a83678e87ad5dd6089706516bd2` |
+| 1 | `theorem` | [FlatRotationSquare.flatTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative267.lean/declarations/flatrotationsquare-flattransport.md) | 13 | `result-track:fb91109c1499d7ae9062a4b91d87911c95c53a83678e87ad5dd6089706516bd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EquivalenceFailureCondition](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/equivalencefailurecondition.md) | 17 | `declaration-track:71243c40e35c04d77950bba98e1b71a6c0ba703d60dc68804dec869176ad4d2b` |
-| 2 | `structure` | [RicciObstructionCurvature](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/ricciobstructioncurvature.md) | 30 | `declaration-track:8cb3412a1e463cd63bb37fc5adc077a91e12f054391a673895ad4cbc1da6edd1` |
-| 3 | `def` | [zeroRicciObstruction](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/zeroricciobstruction.md) | 37 | `declaration-track:6527c5d25cc109bbe9d6b147b104f5710b96f6f453a180fa3c150fbf3f167c6b` |
-| 4 | `inductive` | [FlowOrRicciObstruction](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/floworricciobstruction.md) | 46 | `declaration-track:12d02b77b76a620ef209c46d6d3263194facd0123c16227a9b12948ff1528c42` |
-| 5 | `theorem` | [flow_equivalence_has_zero_obstruction](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/flow-equivalence-has-zero-obstruction.md) | 53 | `result-track:d7c56399f81ba92b53f346bfe77143fc03c43b85b6230c0cd8bb692a14bf4915` |
-| 6 | `theorem` | [nonEquivalence_creates_ricciObstruction](../../../../FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/nonequivalence-creates-ricciobstruction.md) | 61 | `result-track:471e06423c34e161158497a224b41f7afe1366c9e2ad0a304f97631e3b0882eb` |
+| 1 | `inductive` | [EquivalenceFailureCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/equivalencefailurecondition.md) | 17 | `declaration-track:71243c40e35c04d77950bba98e1b71a6c0ba703d60dc68804dec869176ad4d2b` |
+| 2 | `structure` | [RicciObstructionCurvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/ricciobstructioncurvature.md) | 30 | `declaration-track:8cb3412a1e463cd63bb37fc5adc077a91e12f054391a673895ad4cbc1da6edd1` |
+| 3 | `def` | [zeroRicciObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/zeroricciobstruction.md) | 37 | `declaration-track:6527c5d25cc109bbe9d6b147b104f5710b96f6f453a180fa3c150fbf3f167c6b` |
+| 4 | `inductive` | [FlowOrRicciObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/floworricciobstruction.md) | 46 | `declaration-track:12d02b77b76a620ef209c46d6d3263194facd0123c16227a9b12948ff1528c42` |
+| 5 | `theorem` | [flow_equivalence_has_zero_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/flow-equivalence-has-zero-obstruction.md) | 53 | `result-track:d7c56399f81ba92b53f346bfe77143fc03c43b85b6230c0cd8bb692a14bf4915` |
+| 6 | `theorem` | [nonEquivalence_creates_ricciObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RicciObstructionNamespaced.lean/declarations/nonequivalence-creates-ricciobstruction.md) | 61 | `result-track:471e06423c34e161158497a224b41f7afe1366c9e2ad0a304f97631e3b0882eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

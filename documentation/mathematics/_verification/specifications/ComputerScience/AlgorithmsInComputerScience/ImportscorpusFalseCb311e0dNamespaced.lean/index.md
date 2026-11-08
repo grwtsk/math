@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [controlledRoot](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/controlledroot.md) | 23 | `declaration-track:aca1e4b4102779fe99562690ed13e609032e25ba4f76fbf0f05fc383a74ee5b4` |
-| 2 | `def` | [importsCorpus](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/importscorpus.md) | 25 | `declaration-track:645f3feb7d94f7a61f7f2694611be6f16d2450273ec18c2ee0a57dc2e5d94140` |
-| 3 | `def` | [bandedRoots](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/bandedroots.md) | 27 | `declaration-track:dc00989225a8a0d5fd7052e9450dc88754f39694afa3b50579393b001e920c59` |
-| 4 | `theorem` | [importsCorpus_false](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/importscorpus-false.md) | 40 | `result-track:9c07462451188a116c4dfb82fb64477d086385cb38e69a54776fc47d631e3661` |
-| 5 | `theorem` | [bandedRoots_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/bandedroots-count.md) | 43 | `result-track:abfa466e47a516d9ba8ed3fd1a375605c3d835cfe7f8b93d9ecdb6ce14a6e061` |
+| 1 | `def` | [controlledRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/controlledroot.md) | 23 | `declaration-track:aca1e4b4102779fe99562690ed13e609032e25ba4f76fbf0f05fc383a74ee5b4` |
+| 2 | `def` | [importsCorpus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/importscorpus.md) | 25 | `declaration-track:645f3feb7d94f7a61f7f2694611be6f16d2450273ec18c2ee0a57dc2e5d94140` |
+| 3 | `def` | [bandedRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/bandedroots.md) | 27 | `declaration-track:dc00989225a8a0d5fd7052e9450dc88754f39694afa3b50579393b001e920c59` |
+| 4 | `theorem` | [importsCorpus_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/importscorpus-false.md) | 40 | `result-track:9c07462451188a116c4dfb82fb64477d086385cb38e69a54776fc47d631e3661` |
+| 5 | `theorem` | [bandedRoots_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0dNamespaced.lean/declarations/bandedroots-count.md) | 43 | `result-track:abfa466e47a516d9ba8ed3fd1a375605c3d835cfe7f8b93d9ecdb6ce14a6e061` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

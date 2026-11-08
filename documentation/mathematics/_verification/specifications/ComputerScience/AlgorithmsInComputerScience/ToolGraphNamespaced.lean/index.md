@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ToolTransitionEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/declarations/tooltransitionedge.md) | 15 | `declaration-track:fa8454630d7e623728c904312d80bd2b88987897fa12076ffd2355d05fffc6c4` |
-| 2 | `def` | [ToolTransitionEdge.proceduralWeightPositive](../../../../../ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/declarations/tooltransitionedge-proceduralweightpositive.md) | 23 | `declaration-track:4c4e56cd13c8c7e2cab48b79b025788c676ace6e5674d015c1db1b3e8c854b70` |
-| 3 | `structure` | [HybridEpisodicProceduralMemory](../../../../../ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/declarations/hybridepisodicproceduralmemory.md) | 26 | `declaration-track:4b59b37a74f5f23e736267967ca1ae64f6086f3be71ae41c403de520c293967e` |
+| 1 | `structure` | [ToolTransitionEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/declarations/tooltransitionedge.md) | 15 | `declaration-track:fa8454630d7e623728c904312d80bd2b88987897fa12076ffd2355d05fffc6c4` |
+| 2 | `def` | [ToolTransitionEdge.proceduralWeightPositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/declarations/tooltransitionedge-proceduralweightpositive.md) | 23 | `declaration-track:4c4e56cd13c8c7e2cab48b79b025788c676ace6e5674d015c1db1b3e8c854b70` |
+| 3 | `structure` | [HybridEpisodicProceduralMemory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToolGraphNamespaced.lean/declarations/hybridepisodicproceduralmemory.md) | 26 | `declaration-track:4b59b37a74f5f23e736267967ca1ae64f6086f3be71ae41c403de520c293967e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

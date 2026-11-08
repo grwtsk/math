@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsLeftRegular.pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isleftregular-pow.md) | 39 | `result-track:f1e8380c465d6d4333f5c97403d9e8e231e04d05c6d12090364c55304252f332` |
-| 2 | `theorem` | [IsRightRegular.pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isrightregular-pow.md) | 44 | `result-track:0ec6c7c598a86c5f8d4e81bb40ac0358f56ea422b7a43af52319302bae35e7c7` |
-| 3 | `theorem` | [IsRegular.pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isregular-pow.md) | 50 | `result-track:145c2714b87d7dd83e14a031822b5c80d60993e7b9162a2bb1ba521f16b71224` |
-| 4 | `theorem` | [IsLeftRegular.pow_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isleftregular-pow-iff.md) | 55 | `result-track:7d09391876b0032d2e8f88406f76169f0589b334c94e4597eba4b232473e297d` |
-| 5 | `theorem` | [IsRightRegular.pow_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isrightregular-pow-iff.md) | 62 | `result-track:96087ba62f7bf89bf26c6308fb6652d3584256717e4dfe5a9131e36dd6109838` |
-| 6 | `theorem` | [IsRegular.pow_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isregular-pow-iff.md) | 70 | `result-track:2336031d83939b114c3852f5265b2218203f61e4055eb9a46ec6d1c0fb545fa9` |
-| 7 | `lemma` | [IsLeftRegular.prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isleftregular-prod.md) | 83 | `result-track:a122e82177d8843b7d9fa8b28ea02af6c56e4632664361d35b9b1349555022e8` |
-| 8 | `lemma` | [IsRightRegular.prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isrightregular-prod.md) | 87 | `result-track:df0c70e34fee1186024c570aee5939efff1645dbdcf47fc659959c1d18cfe636` |
-| 9 | `lemma` | [IsRegular.prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isregular-prod.md) | 91 | `result-track:a942698560c1d2cbee0fee0389c1f18f5624172e84289cb7743607ea57ba7b46` |
+| 1 | `theorem` | [IsLeftRegular.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isleftregular-pow.md) | 39 | `result-track:f1e8380c465d6d4333f5c97403d9e8e231e04d05c6d12090364c55304252f332` |
+| 2 | `theorem` | [IsRightRegular.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isrightregular-pow.md) | 44 | `result-track:0ec6c7c598a86c5f8d4e81bb40ac0358f56ea422b7a43af52319302bae35e7c7` |
+| 3 | `theorem` | [IsRegular.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isregular-pow.md) | 50 | `result-track:145c2714b87d7dd83e14a031822b5c80d60993e7b9162a2bb1ba521f16b71224` |
+| 4 | `theorem` | [IsLeftRegular.pow_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isleftregular-pow-iff.md) | 55 | `result-track:7d09391876b0032d2e8f88406f76169f0589b334c94e4597eba4b232473e297d` |
+| 5 | `theorem` | [IsRightRegular.pow_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isrightregular-pow-iff.md) | 62 | `result-track:96087ba62f7bf89bf26c6308fb6652d3584256717e4dfe5a9131e36dd6109838` |
+| 6 | `theorem` | [IsRegular.pow_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isregular-pow-iff.md) | 70 | `result-track:2336031d83939b114c3852f5265b2218203f61e4055eb9a46ec6d1c0fb545fa9` |
+| 7 | `lemma` | [IsLeftRegular.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isleftregular-prod.md) | 83 | `result-track:a122e82177d8843b7d9fa8b28ea02af6c56e4632664361d35b9b1349555022e8` |
+| 8 | `lemma` | [IsRightRegular.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isrightregular-prod.md) | 87 | `result-track:df0c70e34fee1186024c570aee5939efff1645dbdcf47fc659959c1d18cfe636` |
+| 9 | `lemma` | [IsRegular.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowNamespacedAligned.lean/declarations/isregular-prod.md) | 91 | `result-track:a942698560c1d2cbee0fee0389c1f18f5624172e84289cb7743607ea57ba7b46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/LagrangeMultipliersNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/LagrangeMultipliersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LagrangeMultipliersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LagrangeMultipliersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsLocalExtrOn.range_ne_top_of_hasStrictFDerivAt](../../../../RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-range-ne-top-of-hasstrictfderivat.md) | 51 | `result-track:0e1a56e3c6f2220328bb90902f213aabb5ee622b5fab4a098dab64d8d485bde1` |
-| 2 | `theorem` | [IsLocalExtrOn.exists_linear_map_of_hasStrictFDerivAt](../../../../RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-exists-linear-map-of-hasstrictfderivat.md) | 67 | `result-track:fe9ecb482fed8c101bda0c5ff63cb4a86393caf3c305a7363184a5a2686f7966` |
-| 3 | `theorem` | [IsLocalExtrOn.exists_multipliers_of_hasStrictFDerivAt_1d](../../../../RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-exists-multipliers-of-hasstrictfderivat-1d.md) | 90 | `result-track:382b150fc7b429dbc254741f774208a3b0f2f8b130d711477740920e3ec3d7d6` |
-| 4 | `theorem` | [IsLocalExtrOn.exists_multipliers_of_hasStrictFDerivAt](../../../../RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-exists-multipliers-of-hasstrictfderivat.md) | 113 | `result-track:9e1da7e1c3289ac1afff9984fb2de5349dd564a9924704909e43fc21daf72ede` |
-| 5 | `theorem` | [IsLocalExtrOn.linear_dependent_of_hasStrictFDerivAt](../../../../RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-linear-dependent-of-hasstrictfderivat.md) | 136 | `result-track:28d370ac7990b70c69af11b1b2878a5513bda91778f3df56ccd1a8ce4f9edd92` |
+| 1 | `theorem` | [IsLocalExtrOn.range_ne_top_of_hasStrictFDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-range-ne-top-of-hasstrictfderivat.md) | 51 | `result-track:0e1a56e3c6f2220328bb90902f213aabb5ee622b5fab4a098dab64d8d485bde1` |
+| 2 | `theorem` | [IsLocalExtrOn.exists_linear_map_of_hasStrictFDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-exists-linear-map-of-hasstrictfderivat.md) | 67 | `result-track:fe9ecb482fed8c101bda0c5ff63cb4a86393caf3c305a7363184a5a2686f7966` |
+| 3 | `theorem` | [IsLocalExtrOn.exists_multipliers_of_hasStrictFDerivAt_1d](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-exists-multipliers-of-hasstrictfderivat-1d.md) | 90 | `result-track:382b150fc7b429dbc254741f774208a3b0f2f8b130d711477740920e3ec3d7d6` |
+| 4 | `theorem` | [IsLocalExtrOn.exists_multipliers_of_hasStrictFDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-exists-multipliers-of-hasstrictfderivat.md) | 113 | `result-track:9e1da7e1c3289ac1afff9984fb2de5349dd564a9924704909e43fc21daf72ede` |
+| 5 | `theorem` | [IsLocalExtrOn.linear_dependent_of_hasStrictFDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LagrangeMultipliersNamespaced.lean/declarations/islocalextron-linear-dependent-of-hasstrictfderivat.md) | 136 | `result-track:28d370ac7990b70c69af11b1b2878a5513bda91778f3df56ccd1a8ce4f9edd92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo1963Q5Public.lean/index.md) · [Full source](../../../../RealFunctions/Imo1963Q5Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1963Q5Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1963Q5Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [two_sin_pi_div_seven_ne_zero](../../../../RealFunctions/Imo1963Q5Public.lean/declarations/two-sin-pi-div-seven-ne-zero.md) | 24 | `result-track:ea44b907e76f36b91715148f4975f645e31f9310b07fdd831e14ad4fb1898b15` |
-| 2 | `lemma` | [sin_pi_mul_neg_div](../../../../RealFunctions/Imo1963Q5Public.lean/declarations/sin-pi-mul-neg-div.md) | 27 | `result-track:c5618afece6f93d95233934e353917c8ffa7193ca685fe009a72cdb0819a904d` |
-| 3 | `theorem` | [imo1963_q5](../../../../RealFunctions/Imo1963Q5Public.lean/declarations/imo1963-q5.md) | 31 | `result-track:152a3ae3f32f139201a2e8b9cc297cc5d90576b9ce9f834f73cf477def1e6032` |
+| 1 | `lemma` | [two_sin_pi_div_seven_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1963Q5Public.lean/declarations/two-sin-pi-div-seven-ne-zero.md) | 24 | `result-track:ea44b907e76f36b91715148f4975f645e31f9310b07fdd831e14ad4fb1898b15` |
+| 2 | `lemma` | [sin_pi_mul_neg_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1963Q5Public.lean/declarations/sin-pi-mul-neg-div.md) | 27 | `result-track:c5618afece6f93d95233934e353917c8ffa7193ca685fe009a72cdb0819a904d` |
+| 3 | `theorem` | [imo1963_q5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1963Q5Public.lean/declarations/imo1963-q5.md) | 31 | `result-track:152a3ae3f32f139201a2e8b9cc297cc5d90576b9ce9f834f73cf477def1e6032` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

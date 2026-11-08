@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ContDiffBumpBase.ofInnerProductSpace](../../../../RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/declarations/contdiffbumpbase-ofinnerproductspace.md) | 36 | `declaration-track:f4284d00884a351b37175ae713d6204be95e667aedd6dfb8b06e48d868b7e406` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:e7ab6e686f5b21e3a4dd493526606d068d2fcbd325d1d54d57bc53b4a419d433` |
+| 1 | `def` | [ContDiffBumpBase.ofInnerProductSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/declarations/contdiffbumpbase-ofinnerproductspace.md) | 36 | `declaration-track:f4284d00884a351b37175ae713d6204be95e667aedd6dfb8b06e48d868b7e406` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProductNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:e7ab6e686f5b21e3a4dd493526606d068d2fcbd325d1d54d57bc53b4a419d433` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

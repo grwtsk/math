@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Tree.lean/index.md) · [Full source](../../../../Combinatorics/Tree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CTree](../../../../Combinatorics/Tree.lean/declarations/ctree.md) | 19 | `declaration-track:4fb923f6854e743f9c1e9c0d6ef0c59acac92579fa3ffdd9a2b87a0bb2f29db8` |
-| 2 | `def` | [internal](../../../../Combinatorics/Tree.lean/declarations/internal.md) | 26 | `declaration-track:fdf2dfd2529f0cb479ac18eaa1ac656b62e3aa0d09b5e2df716d7a435ab62d82` |
-| 3 | `def` | [leaves](../../../../Combinatorics/Tree.lean/declarations/leaves.md) | 30 | `declaration-track:2a846a86641f07b0d5e3e30a8a1b0bd2fa5244754d5c5263a427cbe9515f88f1` |
-| 4 | `def` | [depth](../../../../Combinatorics/Tree.lean/declarations/depth.md) | 34 | `declaration-track:82506a5b3519e75df66b2cd4105c85626c937bca7f9a3dbf5d90deb9f5c50f77` |
-| 5 | `def` | [mirror](../../../../Combinatorics/Tree.lean/declarations/mirror.md) | 38 | `declaration-track:ecdfe3b3ee18391b29110abe40151ef95e249cd8f84137783c486a932a9a949a` |
-| 6 | `theorem` | [leaves_eq_internal_add_one](../../../../Combinatorics/Tree.lean/declarations/leaves-eq-internal-add-one.md) | 43 | `result-track:bb8bfc208f72e89e312c93cb6c0984c17cccd0221dbf1f0a1f4c107ee06f0165` |
-| 7 | `theorem` | [mirror_mirror](../../../../Combinatorics/Tree.lean/declarations/mirror-mirror.md) | 53 | `result-track:61a1dcc8de9f7cd68fb84582f8ce242c0a2a8930c90821a6eafa647603b3915f` |
-| 8 | `theorem` | [internal_mirror](../../../../Combinatorics/Tree.lean/declarations/internal-mirror.md) | 62 | `result-track:36e281e28eddd88858b30abb8fa79ee57dec1eadcc8beb208186355b70577690` |
-| 9 | `theorem` | [leaves_mirror](../../../../Combinatorics/Tree.lean/declarations/leaves-mirror.md) | 72 | `result-track:168b8e9f5ea388d096edff7ecd50788cc5a45b4ab2614d6b30c3d0efa0efc691` |
+| 1 | `inductive` | [CTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/ctree.md) | 19 | `declaration-track:4fb923f6854e743f9c1e9c0d6ef0c59acac92579fa3ffdd9a2b87a0bb2f29db8` |
+| 2 | `def` | [internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/internal.md) | 26 | `declaration-track:fdf2dfd2529f0cb479ac18eaa1ac656b62e3aa0d09b5e2df716d7a435ab62d82` |
+| 3 | `def` | [leaves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/leaves.md) | 30 | `declaration-track:2a846a86641f07b0d5e3e30a8a1b0bd2fa5244754d5c5263a427cbe9515f88f1` |
+| 4 | `def` | [depth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/depth.md) | 34 | `declaration-track:82506a5b3519e75df66b2cd4105c85626c937bca7f9a3dbf5d90deb9f5c50f77` |
+| 5 | `def` | [mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/mirror.md) | 38 | `declaration-track:ecdfe3b3ee18391b29110abe40151ef95e249cd8f84137783c486a932a9a949a` |
+| 6 | `theorem` | [leaves_eq_internal_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/leaves-eq-internal-add-one.md) | 43 | `result-track:bb8bfc208f72e89e312c93cb6c0984c17cccd0221dbf1f0a1f4c107ee06f0165` |
+| 7 | `theorem` | [mirror_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/mirror-mirror.md) | 53 | `result-track:61a1dcc8de9f7cd68fb84582f8ce242c0a2a8930c90821a6eafa647603b3915f` |
+| 8 | `theorem` | [internal_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/internal-mirror.md) | 62 | `result-track:36e281e28eddd88858b30abb8fa79ee57dec1eadcc8beb208186355b70577690` |
+| 9 | `theorem` | [leaves_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Tree.lean/declarations/leaves-mirror.md) | 72 | `result-track:168b8e9f5ea388d096edff7ecd50788cc5a45b4ab2614d6b30c3d0efa0efc691` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

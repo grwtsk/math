@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/InstancesPublicEdition1.lean/index.md) · [Full source](../../../../CommutativeAlgebra/InstancesPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InstancesPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InstancesPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance.md) | 21 | `declaration-track:09ced459818b77670e0b3f847341d95e83398cfdf3b71ee38edb40fbe37b8824` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:bbecff97a8548329fa714b555144ba52c744fba02dcf707224cd307f4b15ff31` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance-source-edition-4.md) | 50 | `declaration-track:c4944b3a3ac6d9d3a004a4b2d9bf1a830bcab96d424495f8c755b89636eb0309` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:92be8f8ec62716f2888a59f888ab205f9ab2fe66b0c1aeab1648a2d95fb15946` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance.md) | 21 | `declaration-track:09ced459818b77670e0b3f847341d95e83398cfdf3b71ee38edb40fbe37b8824` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:bbecff97a8548329fa714b555144ba52c744fba02dcf707224cd307f4b15ff31` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance-source-edition-4.md) | 50 | `declaration-track:c4944b3a3ac6d9d3a004a4b2d9bf1a830bcab96d424495f8c755b89636eb0309` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InstancesPublicEdition1.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:92be8f8ec62716f2888a59f888ab205f9ab2fe66b0c1aeab1648a2d95fb15946` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

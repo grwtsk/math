@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CompositeStack.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CompositeStack.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompositeStack.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompositeStack.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompositeStack](../../../../FunctionalAnalysis/CompositeStack.lean/declarations/compositestack.md) | 22 | `declaration-track:857be398e37516c1e15991fecc15af3c449a56bfa736548d51a829ba8f426d4e` |
-| 2 | `def` | [CompositeStack.hasArithmeticPivot](../../../../FunctionalAnalysis/CompositeStack.lean/declarations/compositestack-hasarithmeticpivot.md) | 39 | `declaration-track:525f072a2d62c5043989955844550a7ed2424738556cf9004ce8b14054b3c25b` |
-| 3 | `def` | [CompositeStack.hasSpectralPivot](../../../../FunctionalAnalysis/CompositeStack.lean/declarations/compositestack-hasspectralpivot.md) | 43 | `declaration-track:7d2ed14b27bd64567ae2957ff3714375eed1cf4c2d860ef4aef20f49967ad151` |
-| 4 | `theorem` | [default_stack_pivots](../../../../FunctionalAnalysis/CompositeStack.lean/declarations/default-stack-pivots.md) | 47 | `result-track:ddf37d832309a720177067236fc13e3a76d6ec9db1b22992c99170655b224bd6` |
+| 1 | `structure` | [CompositeStack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompositeStack.lean/declarations/compositestack.md) | 22 | `declaration-track:857be398e37516c1e15991fecc15af3c449a56bfa736548d51a829ba8f426d4e` |
+| 2 | `def` | [CompositeStack.hasArithmeticPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompositeStack.lean/declarations/compositestack-hasarithmeticpivot.md) | 39 | `declaration-track:525f072a2d62c5043989955844550a7ed2424738556cf9004ce8b14054b3c25b` |
+| 3 | `def` | [CompositeStack.hasSpectralPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompositeStack.lean/declarations/compositestack-hasspectralpivot.md) | 43 | `declaration-track:7d2ed14b27bd64567ae2957ff3714375eed1cf4c2d860ef4aef20f49967ad151` |
+| 4 | `theorem` | [default_stack_pivots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompositeStack.lean/declarations/default-stack-pivots.md) | 47 | `result-track:ddf37d832309a720177067236fc13e3a76d6ec9db1b22992c99170655b224bd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

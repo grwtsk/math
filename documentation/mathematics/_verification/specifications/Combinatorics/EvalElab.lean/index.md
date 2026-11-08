@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EvalElab.lean/index.md) · [Full source](../../../../Combinatorics/EvalElab.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EvalElab.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EvalElab.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasInstance](../../../../Combinatorics/EvalElab.lean/declarations/hasinstance.md) | 29 | `declaration-track:5c83d75acefd0f5207b98c856bff6a3d9b243a4a9cb18ddf69ed6fb267aae8d3` |
-| 2 | `instance` | [(anonymous)](../../../../Combinatorics/EvalElab.lean/declarations/instance.md) | 34 | `declaration-track:887fe0dbe99ef2550348b4c2685193770709ca2d2d60ea6ddbefb8fceb1d2cb8` |
-| 3 | `instance` | [(anonymous)](../../../../Combinatorics/EvalElab.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:ff82c1eae9243d53103a4d9cfd66e0c5d94d5a9e6b05df4b6797e414c723e65e` |
-| 4 | `instance` | [(anonymous)](../../../../Combinatorics/EvalElab.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:a015e781796ba7a983e130fb0be9e2a40007ed139b39ad524dafcbdd5d38799c` |
-| 5 | `instance` | [Finset.toExpr](../../../../Combinatorics/EvalElab.lean/declarations/finset-toexpr.md) | 43 | `declaration-track:8067a4222bbec00bc38d48a7a9a93baab756b94f4863831882104afc8d46f1af` |
+| 1 | `class` | [HasInstance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EvalElab.lean/declarations/hasinstance.md) | 29 | `declaration-track:5c83d75acefd0f5207b98c856bff6a3d9b243a4a9cb18ddf69ed6fb267aae8d3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EvalElab.lean/declarations/instance.md) | 34 | `declaration-track:887fe0dbe99ef2550348b4c2685193770709ca2d2d60ea6ddbefb8fceb1d2cb8` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EvalElab.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:ff82c1eae9243d53103a4d9cfd66e0c5d94d5a9e6b05df4b6797e414c723e65e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EvalElab.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:a015e781796ba7a983e130fb0be9e2a40007ed139b39ad524dafcbdd5d38799c` |
+| 5 | `instance` | [Finset.toExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EvalElab.lean/declarations/finset-toexpr.md) | 43 | `declaration-track:8067a4222bbec00bc38d48a7a9a93baab756b94f4863831882104afc8d46f1af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 
