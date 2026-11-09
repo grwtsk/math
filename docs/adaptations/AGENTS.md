@@ -6,3 +6,5 @@ Preserve mathematical sources, exact provenance, isolated package configuration,
 Local attribution: grwtsk contributors.
 
 Develop adaptations locally first. Bring each adapted theorem here with an individual Markdown provenance record beside its maintained source, following the root source-reference requirements. Preserve exact upstream references and distinguish local checks from unperformed verification.
+
+The [repository catalog](catalogue.json) follows actual maintained source paths and declarations. Each theorem can cite multiple publications or source editions; a publication can correspond to multiple local theorems. Do not organize mathematical identity by provider, user, or publisher. Provider directories remain isolated dependency environments only. The individual theorem provenance record owns its detailed source correspondence and evidence scope. Refresh the catalog from actual tracked source/provenance paths when those change; do not infer equivalence from shared references.
