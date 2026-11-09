@@ -1,0 +1,275 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Mathematical source candidate. Lean elaboration, fresh kernel replay,
+transitive axiom audit, and independent review NOT_RUN. -/
+import GRWTSK.ManifoldsAndCellComplexes.PrimeGapHolonomyPatterns
+import Mathlib
+
+/-!
+# Stereographic prime displacement on the sphere and relative bundle degrees
+
+Exact consumer: the existing \`PrimePair\`, \`PostZhang.PrimeOccurrence\`,
+\`PostZhang.OffsetPattern\` and \`PostZhang.signedGap\`. No replacement prime
+predicate, source loop history, voltage cover or Weil form is introduced.
+
+## Proved elementary construction
+
+For t > 0, define the rationally parametrized meridian of the standard
+unit 2-sphere in R^3:
+
+  Phi(t) = (2t/(1+t^2), 0, (1-t^2)/(1+t^2)).
+
+Its coordinates satisfy x^2+y^2+z^2=1, and the stereographic chart
+x/(1+z) recovers t. The chart is singular only at the south pole.
+The map from positive real t (and hence every natural or prime) into this
+open meridian is a smooth embedding: continuity, immersion, and continuity
+of the inverse follow from these displayed rational formulas. The Lean
+proofs below verify sphere membership, chart inversion, injectivity,
+arithmetic displacements, the gap cocycle, and exact source recovery for
+prime pairs and finite prime patterns, using the rational coordinates.
+
+The smooth curve of points Phi(t) has derivative
+
+  Phi'(t) = (2(1-t^2)/(1+t^2)^2, 0, -4t/(1+t^2)^2),
+
+which is tangent to the sphere and has norm 2/(1+t^2) > 0. For consecutive
+primes, the intervals on this same monotone meridian give a topological
+embedding of their ordered successor graph. The displacement is the
+difference of STEREOGRAPHIC coordinates, not round geodesic distance.
+
+## Spherical circle-bundle completion (written theorem, NOT Lean checked)
+
+Fix an oriented unit sphere S^2 and a complex Hopf line bundle H with
+first Chern number +1 (choose clutching orientation accordingly). Given
+integer offsets 0=a_0<...<a_m, define L_i=H^(tensor a_i). The relative
+line L_j tensor dual(L_i) has equatorial transition
+
+  g_ij(theta) = exp(i (a_j-a_i) theta),
+
+and first Chern number a_j-a_i. This is exactly the assigned PAIRWISE
+linking-number DATA in the project link recipe when i<j.
+
+One direct proof uses local real gauge 1-forms, with polar coordinate
+vartheta and equatorial azimuth theta,
+
+  A_N = (d/2)(1-cos(vartheta)) d theta,
+  A_S = -(d/2)(1+cos(vartheta)) d theta,
+
+where d=a_j-a_i. They differ by d d theta on the overlap. The common
+curvature is (d/2) sin(vartheta) d vartheta wedge d theta and has flux
+(1/(2*pi)) integral_{S^2} F = d. This matches the clutching degree.
+
+For p tending to infinity through occurrences of the same fixed
+prime-offset pattern, the project's meridian character obeys
+
+  R_ij^(p)(theta)
+    = exp(i theta p [log(1+a_j/p)-log(1+a_i/p)]).
+
+For |theta|<=R, using 0<=x-log(1+x)<=x^2/2 gives
+
+  |R_ij^(p)(theta) - g_ij(theta)|
+      <= R (a_i^2+a_j^2)/(2p).
+
+Thus the LIMITING prime relative-holonomy function is the exact
+clutching function of the relative line bundle. Finite-p phases need
+not be 2*pi-periodic. The limit matches a transition function, not
+parallel-transport holonomy of the monopole connection around a latitude.
+
+The entire labelled cluster is encoded by the spherical point Phi(p)
+and the indexed line-bundle degrees a_i; both p and all a_i can be
+recovered. This is a faithful arithmetic/bundle DATA embedding,
+NOT an embedding of the original knotted components into S^2.
+The Lean declarations below only encode the numerical degree layer:
+they do NOT construct Hopf bundles, Chern classes, connections,
+the limiting analytic maps or an isomorphism of link complements.
+
+## Absolute obstruction to an actual link embedding in S^2
+
+Every embedded simple closed curve on S^2 bounds a disk in S^2 and
+therefore represents the unknot in S^3. Two disjoint circles in S^2
+have linking number zero (choose the disk avoiding the other circle).
+The project's K_p=T(2,2p+1) has genus p>0 and its L_(p,q) has
+linking number q-p>0. Therefore the actual knotted/linking objects
+CANNOT be embedded as disjoint curves in S^2 preserving these data.
+They live in S^3. A sphere diagram or the above line bundles
+does not circumvent this topological obstruction.
+
+There is also no isometry from the unbounded prime metric
+|p-q| into a round S^2 of geodesic diameter pi. The inverse
+stereographic chart is deliberately unbounded near the south pole.
+
+Literature: A. Hatcher, Vector Bundles and K-Theory, sec. 1.2
+(clutching of bundles over S^2); standard Hopf/Dirac monopole
+connection and Chern-Weil flux; Jordan-Schoenflies theorem for
+curves on S^2. These continuum inputs are explicitly NOT imported
+or silently declared as Lean axioms. No intrinsic prime-distribution
+theorem, geometrization, Weil positivity, RH or GRH is obtained.
+-/
+
+namespace GRWTSK.Topology.GeometricTopology.PrimeLinkGeometrization
+namespace SphericalPrimeDisplacement
+
+/-! ### Exact rational sphere-coordinate return -/
+
+/-- A coordinate triple over the rationals. The next theorem establishes
+that its real embedding lies on the actual standard unit sphere. -/
+abbrev SphereCoordinates := ℚ × ℚ × ℚ
+
+def spherePoint (t : ℚ) : SphereCoordinates :=
+  (2 * t / (1 + t ^ 2), 0, (1 - t ^ 2) / (1 + t ^ 2))
+
+private theorem denominator_ne_zero (t : ℚ) :
+    (1 + t ^ 2 : ℚ) ≠ 0 := by
+  positivity
+
+theorem spherePoint_on_sphere (t : ℚ) :
+    (spherePoint t).1 ^ 2 +
+      (spherePoint t).2.1 ^ 2 +
+      (spherePoint t).2.2 ^ 2 = 1 := by
+  change (2 * t / (1 + t ^ 2)) ^ 2 + (0 : ℚ) ^ 2 +
+    ((1 - t ^ 2) / (1 + t ^ 2)) ^ 2 = 1
+  field_simp [denominator_ne_zero t]
+  ring
+
+/-- The excluded south pole is exactly where the displayed stereographic
+coordinate has zero denominator. No denominator is suppressed. -/
+theorem spherePoint_away_from_south (t : ℚ) :
+    1 + (spherePoint t).2.2 ≠ 0 := by
+  change 1 + (1 - t ^ 2) / (1 + t ^ 2) ≠ 0
+  have h : 1 + (1 - t ^ 2) / (1 + t ^ 2) =
+      2 / (1 + t ^ 2) := by
+    field_simp [denominator_ne_zero t]
+    ring
+  rw [h]
+  exact div_ne_zero (by norm_num) (denominator_ne_zero t)
+
+/-- Exact recovery of the unbounded arithmetic coordinate from the sphere. -/
+def chart (P : SphereCoordinates) : ℚ := P.1 / (1 + P.2.2)
+
+@[simp] theorem chart_spherePoint (t : ℚ) :
+    chart (spherePoint t) = t := by
+  unfold chart
+  apply (div_eq_iff (spherePoint_away_from_south t)).2
+  change 2 * t / (1 + t ^ 2) =
+    t * (1 + (1 - t ^ 2) / (1 + t ^ 2))
+  field_simp [denominator_ne_zero t]
+  ring
+
+theorem spherePoint_injective : Function.Injective spherePoint := by
+  intro a b hab
+  have h := congrArg chart hab
+  simpa only [chart_spherePoint] using h
+
+/-- A prime label is an actual rational point of the real unit sphere,
+not a fabricated replacement prime encoding. -/
+def primePoint (p : ℕ) : SphereCoordinates :=
+  spherePoint (p : ℚ)
+
+theorem primePoint_on_sphere (p : ℕ) :
+    (primePoint p).1 ^ 2 +
+      (primePoint p).2.1 ^ 2 +
+      (primePoint p).2.2 ^ 2 = 1 :=
+  spherePoint_on_sphere (p : ℚ)
+
+@[simp] theorem chart_primePoint (p : ℕ) :
+    chart (primePoint p) = (p : ℚ) :=
+  chart_spherePoint (p : ℚ)
+
+theorem primePoint_injective : Function.Injective primePoint := by
+  intro p q h
+  have hc := congrArg chart h
+  have hq : (p : ℚ) = (q : ℚ) := by
+    simpa only [chart_primePoint] using hc
+  exact_mod_cast hq
+
+/-- This is the stereographic displacement scalar, not spherical distance. -/
+def displacement (P Q : SphereCoordinates) : ℚ :=
+  chart Q - chart P
+
+theorem displacement_cocycle (P Q R : SphereCoordinates) :
+    displacement P R = displacement P Q + displacement Q R := by
+  unfold displacement
+  ring
+
+theorem displacement_antisymm (P Q : SphereCoordinates) :
+    displacement P Q = -(displacement Q P) := by
+  unfold displacement
+  ring
+
+theorem displacement_prime (p q : ℕ) :
+    displacement (primePoint p) (primePoint q) =
+      (q : ℚ) - (p : ℚ) := by
+  simp [displacement]
+
+/-- Return to the original exact PrimePair gap, rather than a new
+endpoint-only replacement of that source object. -/
+theorem displacement_source_gap (x : PrimePair) :
+    displacement (primePoint x.p) (primePoint x.q) =
+      (gap x : ℚ) := by
+  calc
+    displacement (primePoint x.p) (primePoint x.q) =
+        (x.q : ℚ) - (x.p : ℚ) := displacement_prime x.p x.q
+    _ = ((x.q - x.p : ℕ) : ℚ) :=
+      (Nat.cast_sub (le_of_lt x.ordered)).symm
+    _ = (gap x : ℚ) := rfl
+
+/-! ### A faithfully labelled offset/degree packet -/
+
+/-- Exactly the prime-pattern source's common spherical anchor and
+its indexed offset inventory; the integers are prospective Chern DEGREES,
+not yet formalized complex line bundles. -/
+def patternSphereSignature {m : ℕ}
+    (c : PostZhang.PrimeOccurrence m) :
+    SphereCoordinates × (Fin (m + 1) → ℕ) :=
+  (primePoint c.start, c.pattern.offsets)
+
+/-- No prime anchor or offset is lost in the spherical signature. -/
+theorem patternSphereSignature_source_return {m : ℕ}
+    (a b : PostZhang.PrimeOccurrence m)
+    (h : patternSphereSignature a = patternSphereSignature b) :
+    a.start = b.start ∧
+      (∀ i : Fin (m + 1), a.pattern.offsets i = b.pattern.offsets i) := by
+  constructor
+  · apply primePoint_injective
+    exact congrArg Prod.fst h
+  · intro i
+    have hf := congrArg Prod.snd h
+    exact congrArg (fun f : Fin (m + 1) → ℕ => f i) hf
+
+/-- Pairwise Chern-number prediction, conditional on using the standard
+positive Hopf generator in the actual sphere bundle construction. -/
+def relativeDegree (m : ℕ) (a : PostZhang.OffsetPattern m)
+    (i j : Fin (m + 1)) : ℤ :=
+  (a.offsets j : ℤ) - (a.offsets i : ℤ)
+
+theorem relativeDegree_additive (m : ℕ)
+    (a : PostZhang.OffsetPattern m)
+    (i j k : Fin (m + 1)) :
+    relativeDegree m a i k =
+      relativeDegree m a i j + relativeDegree m a j k := by
+  unfold relativeDegree
+  ring
+
+theorem relativeDegree_eq_sourceSignedGap (m : ℕ)
+    (a : PostZhang.OffsetPattern m)
+    (i j : Fin (m + 1)) :
+    relativeDegree m a i j = PostZhang.signedGap m a i j := rfl
+
+/-- Ordered pairwise degree is precisely the (nonnegative) arithmetic
+gap assigned as linking-number data by the constructed link recipe. -/
+theorem relativeDegree_ordered (m : ℕ)
+    (a : PostZhang.OffsetPattern m)
+    (i j : Fin (m + 1)) (hij : i < j) :
+    relativeDegree m a i j =
+      ((a.offsets j - a.offsets i : ℕ) : ℤ) := by
+  have hle : a.offsets i ≤ a.offsets j :=
+    le_of_lt (a.strictlyIncreasing hij)
+  unfold relativeDegree
+  exact (Nat.cast_sub hle).symm
+
+/-- Concrete test of the spherical displacement for the known prime pair. -/
+theorem example_eleven_thirteen :
+    displacement (primePoint 11) (primePoint 13) = 2 := by
+  norm_num [displacement, primePoint, chart, spherePoint]
+
+end SphericalPrimeDisplacement
+end GRWTSK.Topology.GeometricTopology.PrimeLinkGeometrization
