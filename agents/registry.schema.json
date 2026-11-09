@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/grwtsk/math/blob/main/agents/registry.schema.json",
+  "title": "Static source-colocated prime-neighborhood registry",
+  "description": "Shape and path constraints only; separately check exact prime arithmetic, unique scope keys, ancestry, actual sources and evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source_revision_inspected",
+    "overlay_source_revision",
+    "attribution",
+    "scope",
+    "precedence",
+    "effects",
+    "modular_adjacency",
+    "prime_triplet",
+    "finite_projection",
+    "topology",
+    "proof",
+    "scopes",
+    "context_handoffs",
+    "context_handoff_contract"
+  ],
+  "properties": {
+    "schema": {
+      "const": "GRWTSK.SourceColocatedPrimeNeighborhoods/2"
+    },
+    "source_revision_inspected": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "overlay_source_revision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "attribution": {
+      "const": "grwtsk contributors"
+    },
+    "scope": {
+      "const": "Static source-local AGENTS.md outside GRWTSK/ only; excluded subtree is not modified or managed by this registry."
+    },
+    "precedence": {
+      "const": "Inherit ancestor AGENTS.md; choose longest matching directory-component prefix. The root is fallback."
+    },
+    "effects": {
+      "const": "Static navigation; no authentication, consent, source or theorem acceptance, execution, publication authority or automation dispatch."
+    },
+    "modular_adjacency": {
+      "const": "For distinct primes a < b, b mod a = 1 or b mod a = a - 1."
+    },
+    "prime_triplet": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finite_projection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topology": {
+      "type": "string",
+      "minLength": 1
+    },
+    "proof": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*//)(?!.*\\\\)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*/$)[^\\x00-\\x1f]+$"
+    },
+    "scopes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/scope"
+      }
+    },
+    "context_handoffs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/handoff"
+      }
+    },
+    "context_handoff_contract": {
+      "$ref": "#/$defs/context"
+    }
+  },
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "directory",
+        "prime",
+        "instructions",
+        "parent_scope",
+        "annotated_children",
+        "source_neighborhood",
+        "triplet"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "directory": {
+          "anyOf": [
+            {
+              "const": "."
+            },
+            {
+              "type": "string",
+              "pattern": "^(?!/)(?!.*//)(?!.*\\\\)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*/$)[^\\x00-\\x1f]+$"
+            }
+          ]
+        },
+        "prime": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "instructions": {
+          "allOf": [
+            {
+              "type": "string",
+              "pattern": "^(?!/)(?!.*//)(?!.*\\\\)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*/$)[^\\x00-\\x1f]+$"
+            },
+            {
+              "pattern": "(^|/)AGENTS\\.md$"
+            }
+          ]
+        },
+        "parent_scope": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "annotated_children": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "uniqueItems": true
+        },
+        "source_neighborhood": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(?!/)(?!.*//)(?!.*\\\\)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*/$)[^\\x00-\\x1f]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "triplet": {
+          "$ref": "#/$defs/triplet"
+        }
+      }
+    },
+    "triplet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "neighborhood",
+        "parents_within_registry",
+        "children_within_registry"
+      ],
+      "properties": {
+        "neighborhood": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "previous_prime",
+            "next_prime"
+          ],
+          "properties": {
+            "previous_prime": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 2
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "next_prime": {
+              "type": "integer",
+              "minimum": 2
+            }
+          }
+        },
+        "parents_within_registry": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 2
+          },
+          "uniqueItems": true
+        },
+        "children_within_registry": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 2
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "from",
+        "to",
+        "relation",
+        "trigger",
+        "evidence_source",
+        "required_check",
+        "prime_witness"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*--[a-z][a-z0-9-]*$"
+        },
+        "from": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "to": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "relation": {
+          "enum": [
+            "evidence_alignment",
+            "rights_reference",
+            "source_binding",
+            "consumer_correspondence",
+            "schema_correspondence",
+            "layout_correspondence",
+            "semantic_correspondence",
+            "proposal_review"
+          ]
+        },
+        "trigger": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_source": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*//)(?!.*\\\\)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*/$)[^\\x00-\\x1f]+$"
+        },
+        "required_check": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prime_witness": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 2
+          },
+          "minItems": 2,
+          "maxItems": 3
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "basis_revision",
+        "evidence_scope",
+        "meaning",
+        "traversal",
+        "precedence"
+      ],
+      "properties": {
+        "basis_revision": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "evidence_scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "traversal": {
+          "const": "Apply ancestor instructions first. Follow only handoffs whose trigger matches the actual task, with no transitive automatic closure."
+        },
+        "precedence": {
+          "const": "Conflicts resolved by ancestor+local AGENTS.md and legitimate user authorization, never by prime order."
+        }
+      }
+    }
+  }
+}

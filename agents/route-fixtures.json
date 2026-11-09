@@ -106,6 +106,121 @@
       "path": "GRWTSK/NumberTheory/FirstPrime.lean",
       "expected_scope": null,
       "expected_instruction_chain": []
+    },
+    {
+      "path": "docs/ontology-ish/README.md",
+      "expected_scope": "docs",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/ontology/mappings-old/files-00.yaml",
+      "expected_scope": "ontology",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/ontology/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/taxonomy/msc2020-v2/README.md",
+      "expected_scope": "taxonomy",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/taxonomy/AGENTS.md"
+      ]
+    },
+    {
+      "path": "GRWTSK-extras/index.md",
+      "expected_scope": "root",
+      "expected_instruction_chain": [
+        "AGENTS.md"
+      ]
     }
-  ]
+  ],
+  "invalid_paths": [
+    {
+      "path": "../docs/ontology/README.md",
+      "expected": "reject_before_routing"
+    },
+    {
+      "path": "docs/./ontology/README.md",
+      "expected": "reject_before_routing"
+    },
+    {
+      "path": "docs/ontology/../adapters/pfr/README.md",
+      "expected": "reject_before_routing"
+    },
+    {
+      "path": "docs//ontology/README.md",
+      "expected": "reject_before_routing"
+    },
+    {
+      "path": "docs\\ontology\\README.md",
+      "expected": "reject_before_routing"
+    },
+    {
+      "path": "/docs/ontology/README.md",
+      "expected": "reject_before_routing"
+    },
+    {
+      "path": "GRWTSK/../docs/ontology/README.md",
+      "expected": "reject_before_routing"
+    }
+  ],
+  "invalid_registry_mutations": [
+    {
+      "id": "duplicate-prime-label",
+      "target": "scopes.github.prime",
+      "replacement": 2,
+      "expected_failure": "duplicate_identity"
+    },
+    {
+      "id": "false-immediate-successor",
+      "target": "scopes.github.triplet.neighborhood.next_prime",
+      "replacement": 7,
+      "expected_failure": "wrong_prime_neighbors"
+    },
+    {
+      "id": "invented-modular-parent",
+      "target": "scopes.ontology-mappings.triplet.parents_within_registry",
+      "replacement": [
+        2,
+        3,
+        5
+      ],
+      "expected_failure": "wrong_modular_neighbors"
+    },
+    {
+      "id": "nonancestor-inheritance",
+      "target": "scopes.ontology-mappings.parent_scope",
+      "replacement": "adapters",
+      "expected_failure": "wrong_children"
+    },
+    {
+      "id": "noncolocated-instructions",
+      "target": "scopes.github.instructions",
+      "replacement": "agents/github/AGENTS.md",
+      "expected_failure": "not_colocated"
+    },
+    {
+      "id": "unknown-target-handoff",
+      "target": "context_handoffs.ontology-mappings--msc2020.to",
+      "replacement": "not-a-real-scope",
+      "expected_failure": "dangling_handoff"
+    },
+    {
+      "id": "invalid-prime-path",
+      "target": "context_handoffs.ontology-mappings--msc2020.prime_witness",
+      "replacement": [
+        23,
+        41
+      ],
+      "expected_failure": "bad_prime_witness"
+    }
+  ],
+  "excluded_scope_meaning": "An empty overlay chain for GRWTSK/ means this optional registry is inapplicable, not that root AGENTS.md stops applying."
 }

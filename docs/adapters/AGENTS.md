@@ -22,6 +22,15 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/adapters/` (pr
 
 **Before authorized changes:** No provider import, version upgrade or root target promotion without an explicit compatibility and source-fidelity audit.
 
+## Unannotated provider packages
+
+Provider directories without their own `AGENTS.md` inherit this file, but
+the parent adapter index is not their entire source context. Before editing
+a particular provider, read that package's own README, dependency manifest,
+toolchain, source/paper pins and upstream licenses wherever present.
+Different providers do not share verification status simply because
+they share this parent directory.
+
 ## Conditional source-context handoffs
 
 Follow a handoff only if its trigger matches the actual edit. Its linked

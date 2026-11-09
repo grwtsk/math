@@ -89,7 +89,8 @@ connectivity theorem but is not itself evidence of the layout contract.
 **Source-context routing lemma.** Assume a finite registry of directory
 prefixes containing the root, with unique scope IDs, one path per ID,
 and an acyclic parent relation equal to strict directory ancestry.
-For any tracked path outside the excluded `GRWTSK/` subtree, all
+For any **canonical repository-relative** tracked path outside the excluded
+`GRWTSK/` subtree, all
 matching prefixes form a finite chain under inclusion. Their unique
 longest element determines a unique ancestor-instruction chain.
 Adding an optional context handoff does not change this routing
@@ -105,5 +106,8 @@ claim for selected source paths. They are not an exhaustive test of
 all tracked files. A handoff record provides a documented reason and
 an exact evidence-source locator, which must be inspected independently.
 No source relationship grants a user authorization or establishes
-the truth of a theorem.
+the truth of a theorem. The [validation contract](validation-contract.md)
+fixes the canonical path grammar and hostile prefix cases. An empty
+optional overlay chain for `GRWTSK/` does **not** eliminate the root
+repository instructions.
 

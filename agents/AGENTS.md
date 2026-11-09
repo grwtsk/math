@@ -11,6 +11,9 @@ Local attribution: grwtsk contributors. Source-local scope: `agents/` (prime 61)
 - [`agents/README.md`](README.md)
 - [`agents/registry.json`](registry.json)
 - [`agents/prime-knot-triplets.md`](prime-knot-triplets.md)
+- [`agents/registry.schema.json`](registry.schema.json)
+- [`agents/route-fixtures.json`](route-fixtures.json)
+- [`agents/validation-contract.md`](validation-contract.md)
 
 ## Maintenance contract
 
@@ -18,7 +21,7 @@ Local attribution: grwtsk contributors. Source-local scope: `agents/` (prime 61)
 
 **Preserve:** Keep one static index pointing to local AGENTS.md; do not duplicate directory rules in agents/scopes.
 
-**Before authorized changes:** Check prime uniqueness, immediate neighbors, reciprocal induced modular edges and longest-prefix source routing.
+**Before authorized changes:** Check canonical path grammar, prime uniqueness, exact global neighbors, induced modular edges, strict directory ancestry, colocated instruction paths, handoff endpoints and hostile fixtures under the [static validation contract](validation-contract.md). JSON Schema alone is insufficient.
 
 ## Conditional source-context handoffs
 

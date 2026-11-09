@@ -21,6 +21,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/taxonomy/` (pr
 
 **Before authorized changes:** Coordinate mathematical source relocations under issue #1425; preserve every consumer and historical alias.
 
+## Unannotated source-local taxonomy directories
+
+Before editing an unannotated child, read its actual authored records and
+local index where present. For a source-path change, consult both the
+maintained MSC2020 source layout and its `followup_files`; for document
+navigation resolve documented aliases. Folder spelling alone does not
+prove semantic equivalence or mathematical acceptance.
+
 ## Conditional source-context handoffs
 
 Follow a handoff only if its trigger matches the actual edit. Its linked

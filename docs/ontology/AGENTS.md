@@ -22,6 +22,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/ontology/` (pr
 
 **Before authorized changes:** No parallel registry, fabricated correspondence, source-pin rewrite or effectful operational data.
 
+## Unannotated source-local ontology directories
+
+For a child without its own `AGENTS.md`, read the actual affected source
+records and any child README/index, then the relevant existing schema,
+mapping and source-identity contracts. Keep historical revision pins
+historical; an absent mapping is not evidence that a mathematical claim
+is false. The illustrative neighborhood list is not exhaustive.
+
 ## Conditional source-context handoffs
 
 Follow a handoff only if its trigger matches the actual edit. Its linked
