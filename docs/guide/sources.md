@@ -42,3 +42,33 @@ Its `weightedFiniteDirac_leakage_outside` and
 compression from the generally false full Dirac/extension intertwining law. The [finite cofinality obstruction](../../GRWTSK/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FiniteCofinalityObstruction.lean)
 prevents confusing a finite local compression with a globally finite cofinal
 family. Neither source establishes global smooth reconstruction.
+
+
+## Uniform weighted incidence bound and the countable extension frontier
+
+The [finite Hilbert--Schmidt bound supplier](../../GRWTSK/OperatorTheory/PrimeKnotAlexanderFiniteHilbertSchmidtBound.lean)
+consumes the exact source [weightedEntry](../../GRWTSK/OperatorTheory/PrimeKnotAlexanderWeightedCompressions.lean),
+rather than introducing an unrelated matrix. Its new candidate Lean declarations
+include an injective-enumeration square-mass estimate
+\(\sum_{i\in F}4^{-(c(i)+1)}\leq1/3\), the source-specific finite
+Hilbert--Schmidt squared bound \(\sum_{i,j\in F}|b_{ij}|^2\leq1/9\),
+and a finite complex-linear Euclidean matrix realization. These constants
+are independent of the finite snapshot \(F\).
+
+The same source supplies a complete **written analytic** dense finite-support
+extension argument constructing the bounded complex-linear incidence operator
+\(B\) on \(\ell^2(V,\mathbb C)\) with \(\|B\|\leq1/3\), and its exact
+matrix-coordinate return on finite-support vectors. **A genuine infinite
+Mathlib lp continuous-linear-map declaration and its source-return theorem are
+still missing.** The unbounded diagonal \(D_0\) is separate and no
+operator-norm convergence of its finite truncations is asserted. The
+[diagonal Hilbert domain candidate](../../GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/DiagonalHilbertDomain.lean)
+is a real-coordinate mathematical supplier requiring separate complex
+adaptation.
+
+The targeted Lean build of the *earlier weighted finite module* passed at
+[7c35ce0](https://github.com/grwtsk/math/commit/7c35ce03b631477684ff6b96f8d09d3b73172f4c);
+the new bound supplier has elaboration/build **NOT_RUN** until an exact
+verification check occurs. Fresh separate kernel replay, transitive axiom
+audit, and independent review remain **NOT_RUN** for the new declarations.
+Source-bound observations are recorded in [issue #1709](https://github.com/grwtsk/math/issues/1709).
