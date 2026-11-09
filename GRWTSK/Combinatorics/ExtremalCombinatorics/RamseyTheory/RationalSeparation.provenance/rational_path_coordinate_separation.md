@@ -1,0 +1,36 @@
+# `GRWTSK.Combinatorics.ProgressionColoring.QuantitativeVanDerWaerden.rational_path_coordinate_separation`
+
+Local attribution: grwtsk contributors.
+
+## Local theorem identity
+
+- Source: [RationalSeparation.lean](../RationalSeparation.lean), line 62.
+- Pinned source: [exact local revision](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/RationalSeparation.lean#L62).
+- Declaration spelling: `GRWTSK.Combinatorics.ProgressionColoring.QuantitativeVanDerWaerden.rational_path_coordinate_separation` (theorem). Namespace spelling is a lexical source observation; elaboration is not asserted.
+
+## Origin and references
+
+This file records the local theorem’s source lineage. A pinned dependency or module reference does not assert that the local conclusion is an unchanged upstream theorem. The exact local hypotheses and proof are in the source above.
+
+Immediate local source inputs (exact pinned dependencies, not an assertion of a copied upstream theorem):
+
+- [Local source input](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/PrimitiveVector.lean)
+- [Local source input](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/RationalReturn.lean)
+
+- [Pinned upstream source](https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Combinatorics/ProgressionColoring/RationalSeparation.lean)
+
+Source-local origin comments (verbatim; their historical paths and statuses retain their original scope):
+
+```lean
+/-
+Copyright (c) 2026 grwtsk contributors. Local port under Apache 2.0.
+OpenAI retains upstream authorship and licensing.
+Source: openai/math@7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a
+lean/OAI/Combinatorics/ProgressionColoring/RationalSeparation.lean (blob 4692faef2b84fcb931201477f0b14d6b529f74c6).
+Only module imports and the enclosing namespace are adapted.
+-/
+```
+
+## Evidence scope
+
+This provenance transcription ran no Lean compilation, statement-equivalence check, fresh kernel replay, transitive axiom audit or independent mathematical review: `NOT_RUN`. Existing source-bound evidence and unresolved premises quoted above are preserved; this record neither supersedes them nor promotes a candidate or conditional result to accepted mathematics.

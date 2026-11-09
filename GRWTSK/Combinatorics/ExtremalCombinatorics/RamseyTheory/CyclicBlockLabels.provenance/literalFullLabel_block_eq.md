@@ -1,0 +1,46 @@
+# `GRWTSK.Combinatorics.ProgressionColoring.QuantitativeVanDerWaerden.CyclicBlockLabels.literalFullLabel_block_eq`
+
+Local attribution: grwtsk contributors.
+
+## Local theorem identity
+
+- Source: [CyclicBlockLabels.lean](../CyclicBlockLabels.lean), line 88.
+- Pinned source: [exact local revision](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/CyclicBlockLabels.lean#L88).
+- Declaration spelling: `GRWTSK.Combinatorics.ProgressionColoring.QuantitativeVanDerWaerden.CyclicBlockLabels.literalFullLabel_block_eq` (theorem). Namespace spelling is a lexical source observation; elaboration is not asserted.
+
+## Origin and references
+
+This file records the local theorem’s source lineage. A pinned dependency or module reference does not assert that the local conclusion is an unchanged upstream theorem. The exact local hypotheses and proof are in the source above.
+
+Immediate local source inputs (exact pinned dependencies, not an assertion of a copied upstream theorem):
+
+- [Local source input](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/BlockCoverage.lean)
+- [Local source input](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/LiteralLabelRectangles.lean)
+- [Local source input](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/AnchoredPatternDefinitions.lean)
+- [Local source input](https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/LongPeriodBlocks.lean)
+
+- [Pinned upstream source](https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Combinatorics/ProgressionColoring/CyclicBlockLabels.lean)
+
+Source-local origin comments (verbatim; their historical paths and statuses retain their original scope):
+
+```lean
+/-
+Copyright (c) 2026 grwtsk contributors. Local port under Apache 2.0.
+OpenAI retains upstream authorship and licensing.
+Source: openai/math@7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a
+lean/OAI/Combinatorics/ProgressionColoring/CyclicBlockLabels.lean (blob fa6a5066caaaf0404a0dc3c429558b8190f3d2f4).
+Only module imports and the enclosing namespace are adapted.
+-/
+
+/-!
+# Literal cyclic labels on full blocks
+
+An actual cyclic progression is re-anchored at each full block's initial
+position. Its two rational paths differ from the local realization only by
+integers, so the literal uniform and adaptive labels agree exactly.
+-/
+```
+
+## Evidence scope
+
+This provenance transcription ran no Lean compilation, statement-equivalence check, fresh kernel replay, transitive axiom audit or independent mathematical review: `NOT_RUN`. Existing source-bound evidence and unresolved premises quoted above are preserved; this record neither supersedes them nor promotes a candidate or conditional result to accepted mathematics.
