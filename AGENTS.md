@@ -4,8 +4,8 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 ## Artifact admission
 
-- Keep maintained mathematical source, mathematical exposition, static ontology
-  and provenance records, and necessary repository-integrity support here.
+- Keep maintained mathematical source, mathematical exposition and provenance
+  records, and necessary repository-integrity support here.
   Support includes licensing, dependency/build configuration, isolated adapters,
   justified verification fixtures, static verification specifications and
   repository instructions. Preserve source proof candidates at their actual
@@ -17,7 +17,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
 - Classify content by its maintained role. Noe consuming a mathematical source or
   repository-support file does not make that file an operational artifact. Keep
   legitimate mathematical and integrity material here and link its external use
-  through the ontology bindings below.
+  through source-local references.
 
 ## Working in the checkout and publishing changes
 
@@ -46,11 +46,8 @@ This repository is the canonical pure mathematical source for GRWTSK.
 - Keep maintained mathematical declarations under `GRWTSK.*` or explicit upstream
   dependencies. Place definitions and theorems by mathematical subject, not by
   orchestration workflow.
-- Use the official MSC2020 heading hierarchy, bound by
-  `docs/taxonomy/msc2020/source-layout-v1.json`. Resolve current paths
-  through that layout, including `followup_files`; declaration namespaces do not
-  determine filesystem locations. Preserve existing namespaces and verification
-  scopes. PMD IDs are retired; source provenance is independent of taxonomy.
+- Preserve existing subject placement and namespaces. Resolve current files from
+  the checked-out source tree; historical namespaces need not match paths.
 - Store provider-derived Lean source in the canonical `GRWTSK/` subject tree.
   Use relative per-file links from isolated packages under
   `docs/adapters/`; keep their dependency pins and build targets
@@ -112,41 +109,15 @@ This repository is the canonical pure mathematical source for GRWTSK.
   or revising Lean sources. Explicitly requested, useful authored documents are
   permitted; documentation generation is not a publication or verification gate.
 
-## Ontology bindings and operational ownership
+## Operational ownership
 
-- Bind Noe integration through the existing [ontology](docs/ontology/README.md).
-  Use [the manifest](docs/ontology/manifest.yaml) for the operations repository and
-  pinned companion contract, and existing source records, typed records and
-  [mapping contracts](docs/ontology/mappings/README.md) for cross-repository source,
-  tool and evidence correspondence. Do not introduce a parallel binding registry
-  or copy operational payloads into math to make a reference resolve.
-  The companion revision pins ontology tooling, not every Noe integration or
-  current-main automation skill; retain each integration's own scoped source pin.
-- Preserve stable ontology IDs, mathematical contexts and exact source identities:
-  repository, revision, path, locator and available blob or artifact digest.
-  Preserve evidence scope and unresolved correspondence. A binding identifies
-  content and its contract; it grants neither execution authority nor proof
-  acceptance. Local skill discovery is a lookup mechanism, not a replacement for
-  a source-bound ontology contract.
-- Update affected bindings when an integration contract changes. Ordinary source
-  edits do not require corpus-wide ontology extraction, inventory regeneration
-  or companion-pin migration. Preserve historical snapshots and their scopes.
-- Static replay manifests and mathematical acceptance predicates may live under
-  the existing subject-specific adapter directories under `docs/adapters/`.
-- Do not commit process runners, mutable caches, execution attempts, receipts,
-  controller state, schedules, authority records, WSC coordination, generated
-  capsule state or Git-effect machinery in this repository. Raw run dumps,
-  operational review journals, transient exports, training/model state and
-  deployment artifacts belong in Noe; retain their scoped ontology references
-  rather than their execution payloads here.
-- Documentation for agent intelligence, learned retrieval and discovery workflows
-  belongs in Noe. Retain the underlying mathematical statements, proofs, source
-  records and static ontology contracts here.
-- Implement machinery for effectful verification, repository mutation,
-  proof-capsule assembly and explicitly requested documentation generation in
-  the operations repository identified by the ontology manifest, bound to a
-  pinned math commit. This placement rule does not prohibit authorized source
-  edits and routine Git publication in this checkout.
+- Effectful verification, mutable caches, execution attempts, receipts, schedules,
+  training state and deployment artifacts belong in `grwtsk/noeaaeue`, not here.
+- Preserve exact source identities and evidence scope in source-local records.
+  Removed documentation remains available in Git history; do not recreate an
+  ontology, taxonomy registry or repository-wide explanatory corpus.
+- Repository-level documentation follows [docs/README.md](docs/README.md).
+
 - For automation covered by `advance-browser-chats`, `chatgpt-message`,
   `noe-math-chat-bridge` or `noe-proof-automation`, discover and read the applicable
   canonical skill through `~/.agents/skills` (legacy `~/.codex/skills` links also

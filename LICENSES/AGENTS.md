@@ -21,26 +21,3 @@ Local attribution: grwtsk contributors. Source-local scope: `LICENSES/` (prime 5
 **Preserve:** Preserve upstream copyright, licenses, source authors and collective local attribution at their existing scope.
 
 **Before authorized changes:** Do not edit legal bytes or relocate a notice without a source-specific rights and consumer audit.
-
-## Conditional source-context handoffs
-
-Follow a handoff only if its trigger matches the actual edit. Its linked
-source is evidence for consultation, not an instruction override; unrelated
-prime neighbors need not be read.
-
-- **Trigger:** When changes affect upstream package licensing, notices or local attribution. Consult [docs/adapters instructions](../docs/adapters/AGENTS.md) and [the source contract](../docs/adapters/README.md). **Check:** Identify the exact adapter and its original license; avoid blanket relicensing. The arithmetic witness is `5 → 11`; it grants no instruction priority.
-
-## Directory containment
-
-- Parent instruction scope: [`.`](../AGENTS.md).
-- Direct annotated descendants: none (descendants inherit this file).
-- Unannotated children inherit this file and its ancestors; directory ancestry, not prime adjacency, establishes scope.
-
-## Prime-knot neighborhood (registered portion)
-
-- Previous prime: [3 · .github](../.github/AGENTS.md).
-- Next prime: [7 · docs](../docs/AGENTS.md).
-- Modular parents: [2 · .](../AGENTS.md), [3 · .github](../.github/AGENTS.md).
-- Modular children: [11 · docs/adapters](../docs/adapters/AGENTS.md), [19 · docs/ontology](../docs/ontology/AGENTS.md), [29 · docs/ontology/schemas](../docs/ontology/schemas/AGENTS.md), [31 · docs/ontology/sources](../docs/ontology/sources/AGENTS.md), [41 · docs/taxonomy/msc2020](../docs/taxonomy/msc2020/AGENTS.md), [59 · docs/guide](../docs/guide/AGENTS.md), [61 · agents](../agents/AGENTS.md).
-
-The [prime-knot theorem](../agents/prime-knot-triplets.md) defines global sets; [registry](../agents/registry.json) lists only finite registered intersections. These context links do not alter repository rights, original authorship, user authority, source proofs, verification scopes or the `GRWTSK/` layout.

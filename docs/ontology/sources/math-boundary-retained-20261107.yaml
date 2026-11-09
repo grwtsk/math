@@ -1,9 +1,0 @@
-{
-  "schema": "math-ontology/source/2",
-  "id": "source:grwtsk.math.boundary-retained-20261107",
-  "kind": "git_repository",
-  "title": "Published retained mathematics and repository-integrity cores",
-  "url": "https://github.com/grwtsk/math",
-  "revision": "3622144b33ef234851922a87cf5cd13615cfda4f",
-  "scope": "Source publication after splitting operational machinery. Exact theorem/checker bodies, mathematical exposition, fixtures, package pins and static acceptance targets retain their stated scope. Compilation, fresh kernel checking and transitive axiom auditing remain NOT_RUN for changed sources."
-}

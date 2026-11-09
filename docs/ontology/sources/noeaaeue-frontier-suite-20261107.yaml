@@ -1,7 +1,0 @@
-schema: "math-ontology/source/2"
-id: "source:grwtsk.noeaaeue.frontier-suite-20261107"
-kind: "git_repository"
-title: "Advisory ontology frontier diffuser skill suite"
-url: "https://github.com/grwtsk/noeaaeue"
-revision: "e6d3f58a62c9285a3bd1060f7018552b0788f492"
-scope: "Six-stage routing workflow only; no ontology proof edge, execution authority or automatic acceptance."
