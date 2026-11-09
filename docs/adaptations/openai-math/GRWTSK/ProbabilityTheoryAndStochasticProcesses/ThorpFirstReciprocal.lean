@@ -1,1 +1,0 @@
-../../../../../GRWTSK/ProbabilityTheoryAndStochasticProcesses/ThorpFirstReciprocal.lean

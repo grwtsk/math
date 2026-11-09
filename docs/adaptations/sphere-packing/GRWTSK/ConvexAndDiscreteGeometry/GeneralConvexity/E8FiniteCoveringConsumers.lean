@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean

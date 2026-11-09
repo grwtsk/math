@@ -1,1 +1,0 @@
-../../../../../GRWTSK/GroupTheoryAndGeneralizations/Kervaire.lean

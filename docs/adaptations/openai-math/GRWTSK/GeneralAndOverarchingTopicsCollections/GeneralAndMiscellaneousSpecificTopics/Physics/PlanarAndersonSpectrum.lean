@@ -1,1 +1,0 @@
-../../../../../../../GRWTSK/GeneralAndOverarchingTopicsCollections/GeneralAndMiscellaneousSpecificTopics/Physics/PlanarAndersonSpectrum.lean

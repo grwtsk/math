@@ -1,0 +1,1 @@
+../../../../../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/PeriodicResidueWaveNoGo.lean

@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/LogspaceEquality.lean

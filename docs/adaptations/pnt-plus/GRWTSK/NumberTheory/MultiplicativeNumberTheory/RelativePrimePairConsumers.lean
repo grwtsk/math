@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/NumberTheory/MultiplicativeNumberTheory/RelativePrimePairConsumers.lean

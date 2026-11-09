@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Saxl.lean

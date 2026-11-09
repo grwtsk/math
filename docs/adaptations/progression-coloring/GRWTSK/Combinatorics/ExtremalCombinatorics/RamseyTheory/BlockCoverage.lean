@@ -1,1 +1,0 @@
-../../../../../../../GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/BlockCoverage.lean

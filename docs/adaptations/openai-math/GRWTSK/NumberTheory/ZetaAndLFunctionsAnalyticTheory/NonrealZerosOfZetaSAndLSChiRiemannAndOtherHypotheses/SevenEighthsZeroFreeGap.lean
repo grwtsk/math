@@ -1,1 +1,0 @@
-../../../../../../../GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SevenEighthsZeroFreeGap.lean

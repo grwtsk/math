@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Geometry/SmoothYau.lean

@@ -1,0 +1,42 @@
+name = "grwtsk-residue-circle-oai"
+defaultTargets = ["GRWTSKResidueCircleOAI"]
+
+[[require]]
+name = "OAI"
+git = "https://github.com/openai/math.git"
+rev = "4eaee87548250b2682affda7d05d947c05554bae"
+subDir = "lean"
+
+# Explicit opt-in module roots; the default grwtsk/math lakefile is unchanged.
+# Source checkout is required: srcDir resolves to the repository root.
+[[lean_lib]]
+name = "GRWTSKResidueCircleOAI"
+srcDir = "../../../.."
+roots = [
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMActualCoupledCausalPropagator",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMActualMoebiusRankTwoInteraction",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMActualRealTimeGenerator",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMActualSignedCausalEvolution",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMActualSignedResponseOperator",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMActualUnitaryCausalInteraction",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMArithmeticRankTwoCoupling",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMFullCycleNonzeroCoupling",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMGeometricCycleHilbert",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMLabelledAddressIsometry",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMLabelledCausalDefectComparison",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMLabelledCocycleIntertwiner",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMLabelledJointIsometry",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMScaleResidueHilbertAttachment",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMSelectedSignedWaveReturn",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMSourceRankTwoShearEvolution",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMSourceUnitaryGenerator",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMSourceUnitaryInteraction",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.EuclideanCircleResidueWaveComparison",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.PeriodicResidueWaveNoGo",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.ResidueCircleOperatorCommutator",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.ResidueCircleQuadraticScaleTaper",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.ResidueCircleSignedPickupHilbertPort",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.ResidueCircleWaveFourBlock",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.ResidueCircleWaveHilbert",
+  "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.ResidueCircleWaveHilbertFormalization"
+]

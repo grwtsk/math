@@ -1,1 +1,0 @@
-../../../../../GRWTSK/GroupTheoryAndGeneralizations/PolycyclicRecognition.lean

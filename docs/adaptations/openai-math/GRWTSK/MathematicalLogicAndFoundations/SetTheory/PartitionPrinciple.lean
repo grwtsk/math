@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/MathematicalLogicAndFoundations/SetTheory/PartitionPrinciple.lean

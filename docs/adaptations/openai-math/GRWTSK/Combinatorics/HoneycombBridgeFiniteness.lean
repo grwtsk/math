@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Combinatorics/HoneycombBridgeFiniteness.lean

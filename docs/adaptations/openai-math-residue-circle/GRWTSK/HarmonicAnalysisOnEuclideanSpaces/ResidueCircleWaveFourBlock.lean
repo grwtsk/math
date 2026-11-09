@@ -1,1 +1,0 @@
-../../../../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleWaveFourBlock.lean

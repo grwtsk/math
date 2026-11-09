@@ -1,1 +1,0 @@
-../../../../../GRWTSK/AssociativeRingsAndAlgebras/KaplanskyDirectFiniteness.lean

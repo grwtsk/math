@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Geometry/PinchedKahler.lean

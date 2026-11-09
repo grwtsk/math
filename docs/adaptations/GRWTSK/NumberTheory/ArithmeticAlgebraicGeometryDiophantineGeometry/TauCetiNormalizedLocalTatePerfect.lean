@@ -1,0 +1,1 @@
+../../../../../GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiNormalizedLocalTatePerfect.lean

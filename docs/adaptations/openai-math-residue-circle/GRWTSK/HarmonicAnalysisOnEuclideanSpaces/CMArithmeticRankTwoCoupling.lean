@@ -1,1 +1,0 @@
-../../../../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMArithmeticRankTwoCoupling.lean

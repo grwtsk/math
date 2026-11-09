@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Combinatorics/HadwigerCounterexample.lean

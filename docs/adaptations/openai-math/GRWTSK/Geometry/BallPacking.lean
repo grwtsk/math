@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Geometry/BallPacking.lean

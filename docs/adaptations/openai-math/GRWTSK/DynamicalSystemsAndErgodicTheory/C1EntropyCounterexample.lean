@@ -1,1 +1,0 @@
-../../../../../GRWTSK/DynamicalSystemsAndErgodicTheory/C1EntropyCounterexample.lean

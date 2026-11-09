@@ -1,1 +1,0 @@
-../../../../../GRWTSK/GeneralAlgebraicSystems/BogomolovPopInjectivity.lean

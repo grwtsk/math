@@ -1,1 +1,0 @@
-../../../../../GRWTSK/FunctionalAnalysis/MarkovType.lean

@@ -1,1 +1,0 @@
-../../../../../GRWTSK/DynamicalSystemsAndErgodicTheory/IrrationalTriangleBilliard.lean

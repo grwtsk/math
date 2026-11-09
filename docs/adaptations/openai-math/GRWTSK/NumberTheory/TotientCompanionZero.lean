@@ -1,1 +1,0 @@
-../../../../../GRWTSK/NumberTheory/TotientCompanionZero.lean

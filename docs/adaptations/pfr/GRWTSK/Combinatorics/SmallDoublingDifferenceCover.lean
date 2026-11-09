@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean

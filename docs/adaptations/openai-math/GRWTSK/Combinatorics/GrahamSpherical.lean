@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Combinatorics/GrahamSpherical.lean

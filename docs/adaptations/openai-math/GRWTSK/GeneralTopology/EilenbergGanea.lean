@@ -1,1 +1,0 @@
-../../../../../GRWTSK/GeneralTopology/EilenbergGanea.lean

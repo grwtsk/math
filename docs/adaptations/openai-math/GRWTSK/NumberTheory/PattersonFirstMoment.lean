@@ -1,1 +1,0 @@
-../../../../../GRWTSK/NumberTheory/PattersonFirstMoment.lean

@@ -50,7 +50,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
   the checked-out source tree; historical namespaces need not match paths.
 - Store provider-derived Lean source in the canonical `GRWTSK/` subject tree.
   Use relative per-file links from isolated packages under
-  `docs/adaptations/`; keep their dependency pins and build targets
+  `docs/adaptations/environments/`; keep their dependency pins and build targets
   separate from the root build.
 - Keep incompatible upstream adaptations outside the local default build. Do not
   promote root imports or change dependency versions merely to publish a candidate.

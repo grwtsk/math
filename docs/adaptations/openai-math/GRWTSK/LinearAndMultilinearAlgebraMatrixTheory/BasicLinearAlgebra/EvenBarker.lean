@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EvenBarker.lean

@@ -1,1 +1,0 @@
-../../../../../GRWTSK/GroupTheoryAndGeneralizations/PeriodicGroup.lean

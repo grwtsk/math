@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/HarmonicAnalysisInOneVariable/Erdos987.lean

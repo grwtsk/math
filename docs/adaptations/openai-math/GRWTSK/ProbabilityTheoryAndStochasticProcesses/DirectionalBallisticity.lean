@@ -1,1 +1,0 @@
-../../../../../GRWTSK/ProbabilityTheoryAndStochasticProcesses/DirectionalBallisticity.lean

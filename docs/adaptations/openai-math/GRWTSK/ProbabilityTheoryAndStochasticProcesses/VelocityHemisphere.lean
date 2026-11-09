@@ -1,1 +1,0 @@
-../../../../../GRWTSK/ProbabilityTheoryAndStochasticProcesses/VelocityHemisphere.lean

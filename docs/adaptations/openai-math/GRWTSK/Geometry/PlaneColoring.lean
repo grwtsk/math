@@ -1,1 +1,0 @@
-../../../../../GRWTSK/Geometry/PlaneColoring.lean

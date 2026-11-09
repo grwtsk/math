@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/MathematicalLogicAndFoundations/SetTheory/PartitionConsistency.lean

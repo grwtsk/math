@@ -1,1 +1,0 @@
-../../../../../GRWTSK/MeasureAndIntegration/SelfSimilarCorollaries.lean

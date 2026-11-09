@@ -1,1 +1,0 @@
-../../../../../../GRWTSK/InformationAndCommunicationTheoryCircuits/CommunicationInformation/EntropyPhotonNumber.lean

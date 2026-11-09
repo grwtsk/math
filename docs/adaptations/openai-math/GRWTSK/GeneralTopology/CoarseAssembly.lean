@@ -1,1 +1,0 @@
-../../../../../GRWTSK/GeneralTopology/CoarseAssembly.lean
