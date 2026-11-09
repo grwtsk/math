@@ -29,7 +29,7 @@ No winding arithmetic is identified with a linking invariant.
 namespace GRWTSK.Topology.GeometricTopology.PrimeLinkGeometrization
 namespace PrimeHopfKnotIntersection
 
-open Topology
+open _root_.Topology
 
 /-- The actual unit three-sphere as a complex-coordinate subset, with its
 inherited topology. The Euclidean-space sphere comparison is a separate port. -/
@@ -135,6 +135,80 @@ theorem chosenKnot_isEmbedding (p : ℕ) :
     exact (hs.isCompact.image (chosenKnot_continuous p)).isClosed
   exact (IsClosedEmbedding.of_continuous_injective_isClosedMap
     (chosenKnot_continuous p) (chosenKnot_injective p) hclosed).isEmbedding
+
+/-! ### Hopf observation of the actual normalized representative
+
+With the convention `2 * conj(z) * w`, the equatorial complex phase is
+`b/a` at `(a,b)/sqrt 2`; the height is zero because both squared
+norms equal 1/2. Thus on K_p it is `u^(2p-1)` for positive p.
+This supplies the missing observation of the actual S³ coordinates,
+not merely an assigned winding integer. The p=0 curve has exponent -1;
+natural subtraction would give 0, so positivity cannot be dropped.
+The topological degree and smooth manifold ports remain unproved.
+Independent analytical review, fresh kernel replay and transitive axiom
+audit remain NOT_RUN. No simultaneous link realization follows.
+-/
+
+/-- Complex equatorial coordinate and real height of the Hopf observation.
+The codomain is coordinates; a full S²-valued map is a separate obligation. -/
+def hopfObservation (x : ComplexThreeSphere) : ℂ × ℝ :=
+  (2 * star x.val.1 * x.val.2, ‖x.val.1‖ ^ 2 - ‖x.val.2‖ ^ 2)
+
+/-- Exact normalized Clifford-torus Hopf formula, with the sign convention
+matching PrimeHopfKnotProjection. -/
+theorem hopfObservation_cliffordPoint (a b : Circle) :
+    hopfObservation (cliffordPoint a b) = (((b / a : Circle) : ℂ), 0) := by
+  apply Prod.ext
+  · change 2 * star ((a : ℂ) / denominator) *
+        ((b : ℂ) / denominator) = ((b / a : Circle) : ℂ)
+    have hd : star denominator = denominator := by simp [denominator]
+    have hs : denominator ^ 2 = (2 : ℂ) := by
+      unfold denominator
+      rw [← Complex.ofReal_pow, Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)]
+      norm_num
+    have ha : star (a : ℂ) = ((a⁻¹ : Circle) : ℂ) :=
+      (Circle.coe_inv_eq_conj a).symm
+    rw [star_div₀, hd, ha, Circle.coe_div]
+    rw [div_eq_mul_inv (b : ℂ) (a : ℂ)]
+    rw [← Circle.coe_inv]
+    change 2 * ((↑a⁻¹ : ℂ) / denominator) *
+      ((b : ℂ) / denominator) = (b : ℂ) * (↑a⁻¹ : ℂ)
+    field_simp [denominator_ne_zero]
+    rw [hs]
+  · change ‖(a : ℂ) / denominator‖ ^ 2 -
+        ‖(b : ℂ) / denominator‖ ^ 2 = 0
+    rw [squared_norm_scaled a, squared_norm_scaled b]
+    ring
+
+/-- Actual Hopf observation of the chosen S³-valued knot. The exponent
+is an algebraic phase exponent, not yet a Lean topological degree. -/
+theorem hopfObservation_chosenKnot (p : ℕ) (hp : 0 < p) (u : Circle) :
+    hopfObservation (chosenKnot p u) =
+      (((u ^ PrimeHopfKnotProjection.projectedWinding p : Circle) : ℂ), 0) := by
+  have he : 2 * p + 1 = PrimeHopfKnotProjection.projectedWinding p + 2 := by
+    dsimp [PrimeHopfKnotProjection.projectedWinding]
+    omega
+  unfold chosenKnot
+  rw [hopfObservation_cliffordPoint, he, pow_add]
+  simp
+
+/-- The actual selected prime Hopf phases, together with their exact
+return to the imported stereographic displacement of the original PrimePair. -/
+theorem hopfObservation_primePair_return (pair : PrimePair) (u : Circle) :
+    hopfObservation (chosenKnot pair.p u) =
+      (((u ^ PrimeHopfKnotProjection.projectedWinding pair.p : Circle) : ℂ), 0) ∧
+    hopfObservation (chosenKnot pair.q u) =
+      (((u ^ PrimeHopfKnotProjection.projectedWinding pair.q : Circle) : ℂ), 0) ∧
+    ((PrimeHopfKnotProjection.projectedWinding pair.q -
+        PrimeHopfKnotProjection.projectedWinding pair.p : ℕ) : ℚ) =
+      2 * SphericalPrimeDisplacement.displacement
+        (SphericalPrimeDisplacement.primePoint pair.p)
+        (SphericalPrimeDisplacement.primePoint pair.q) := by
+  refine ⟨hopfObservation_chosenKnot pair.p pair.prime_p.pos u,
+    hopfObservation_chosenKnot pair.q pair.prime_q.pos u, ?_⟩
+  rw [PrimeHopfKnotProjection.winding_difference,
+    SphericalPrimeDisplacement.displacement_source_gap]
+  simp
 
 /-- All selected representatives pass through the same Clifford-torus point. -/
 @[simp] theorem chosenKnot_one (p : ℕ) :
