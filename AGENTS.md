@@ -163,3 +163,5 @@ This repository is the canonical pure mathematical source for GRWTSK.
   receipts. Original hashes and source pins describe pre-redaction evidence,
   not edited bytes. Redaction or rewritten Git identities do not establish fresh
   replay, kernel verification or stronger mathematical acceptance.
+
+- Track only externally sourced material in the adaptation source view and adaptation theorem catalog. Require explicit external provenance or a pinned upstream source/import record; local-only dependencies do not establish external provenance. Preserve excluded canonical source and its local provenance. Isolated build configuration, legal notices and verification helpers remain support, not adapted theorems.

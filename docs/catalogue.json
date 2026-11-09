@@ -59,7 +59,7 @@
     {
       "path": "AGENTS.md",
       "mode": "100644",
-      "git_object": "4b56e935a1ce68aacfa4b10a5f63ce20883e3e59",
+      "git_object": "ddf062a84980eef36c1faa88239ca7c618ddb384",
       "object_type": "blob"
     },
     {
@@ -465863,7 +465863,7 @@
     {
       "path": "docs/adaptations/AGENTS.md",
       "mode": "100644",
-      "git_object": "7c57d39bd1ac9d2131b59a9f87917a70ad6001b9",
+      "git_object": "549d56f0fd3737b02d57257e0d00e13e698044e6",
       "object_type": "blob"
     },
     {
@@ -468513,20 +468513,6 @@
       "link_target": "../../../../GRWTSK/Combinatorics/ParityLifts.provenance"
     },
     {
-      "path": "docs/adaptations/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean",
-      "mode": "120000",
-      "git_object": "74506336b1b4cbbd19dc6a657a714d26376d3312",
-      "object_type": "blob",
-      "link_target": "../../../../GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean"
-    },
-    {
-      "path": "docs/adaptations/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.provenance",
-      "mode": "120000",
-      "git_object": "c008fdc633a320dc1db4fbcbe766c47dcf0895a2",
-      "object_type": "blob",
-      "link_target": "../../../../GRWTSK/Combinatorics/PfrOriginalEnergyTransport.provenance"
-    },
-    {
       "path": "docs/adaptations/GRWTSK/Combinatorics/PlanarL1.lean",
       "mode": "120000",
       "git_object": "ba7ba77de8365e938ced9c477d97db37fef6bbdb",
@@ -468905,13 +468891,6 @@
       "link_target": "../../../../../GRWTSK/ComputerScience/AlgorithmsInComputerScience/SubexponentialSAT.provenance"
     },
     {
-      "path": "docs/adaptations/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AdapterAxiomQueries.lean",
-      "mode": "120000",
-      "git_object": "c4305e1f351182c28f8e22d71775a961807093b9",
-      "object_type": "blob",
-      "link_target": "../../../../../../GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AdapterAxiomQueries.lean"
-    },
-    {
       "path": "docs/adaptations/GRWTSK/ComputerScience/TheoryOfComputing/AnalysisOfAlgorithmsAndProblemComplexity/ThreeSumApspConclusions.lean",
       "mode": "120000",
       "git_object": "956ac7b8189b9d4208f5f6c00710dd67130efa34",
@@ -468966,20 +468945,6 @@
       "git_object": "021a527890605646fa0e1e3217b8f7b3843344da",
       "object_type": "blob",
       "link_target": "../../../../../GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.provenance"
-    },
-    {
-      "path": "docs/adaptations/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-      "mode": "120000",
-      "git_object": "b839271e2e990bddef1667ba4ad113488b26643c",
-      "object_type": "blob",
-      "link_target": "../../../../../GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean"
-    },
-    {
-      "path": "docs/adaptations/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.provenance",
-      "mode": "120000",
-      "git_object": "0a5ae342ce9d1918f188571c682f446b09d9c0fb",
-      "object_type": "blob",
-      "link_target": "../../../../../GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.provenance"
     },
     {
       "path": "docs/adaptations/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean",
@@ -481927,13 +481892,6 @@
       "link_target": "../../../../../../GRWTSK/Combinatorics/PFRPalomarImports.lean"
     },
     {
-      "path": "docs/adaptations/environments/pfr/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean",
-      "mode": "120000",
-      "git_object": "b178f3a3df1fac1ae396a77e0fa92021bd22c72e",
-      "object_type": "blob",
-      "link_target": "../../../../../../GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean"
-    },
-    {
       "path": "docs/adaptations/environments/pfr/GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean",
       "mode": "120000",
       "git_object": "ab14612c82af4ce4a0970d1ce504a15344011ccd",
@@ -482880,13 +482838,6 @@
       "git_object": "a74c8e94f75e55b95d15458914891784a1af50a4",
       "object_type": "blob",
       "link_target": "../../../../../../../GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.lean"
-    },
-    {
-      "path": "docs/adaptations/environments/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-      "mode": "120000",
-      "git_object": "44b43d441bbd26445a912e141a09a48d1ec1fe07",
-      "object_type": "blob",
-      "link_target": "../../../../../../../GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean"
     },
     {
       "path": "docs/adaptations/environments/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean",
@@ -507160,49 +507111,6 @@
       ]
     },
     {
-      "path": "GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean",
-      "git_blob": "46b266f26622ab733c642418fc9e1e63a4bea880",
-      "package_source_links": [
-        "docs/adaptations/environments/pfr/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean"
-      ],
-      "theorems": [
-        {
-          "declaration": "GRWTSK.Combinatorics.PfrOriginalEnergyTransport.addEnergy_le_of_translated_subset",
-          "kind": "theorem",
-          "source_line_at_provenance_pin": 39,
-          "provenance_path": "GRWTSK/Combinatorics/PfrOriginalEnergyTransport.provenance/addEnergy_le_of_translated_subset.md",
-          "references": [
-            {
-              "role": "exact local revision",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean#L39"
-            },
-            {
-              "role": "Local source input",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/DenseSubmoduleSlice.lean"
-            }
-          ],
-          "recorded_publication_citations": []
-        },
-        {
-          "declaration": "GRWTSK.Combinatorics.PfrOriginalEnergyTransport.original_addEnergy_of_small_doubling",
-          "kind": "theorem",
-          "source_line_at_provenance_pin": 86,
-          "provenance_path": "GRWTSK/Combinatorics/PfrOriginalEnergyTransport.provenance/original_addEnergy_of_small_doubling.md",
-          "references": [
-            {
-              "role": "exact local revision",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean#L86"
-            },
-            {
-              "role": "Local source input",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/DenseSubmoduleSlice.lean"
-            }
-          ],
-          "recorded_publication_citations": []
-        }
-      ]
-    },
-    {
       "path": "GRWTSK/Combinatorics/PlanarL1.lean",
       "git_blob": "fc2c6f4ae84639e09001c47f2c6a9625d8bb2357",
       "package_source_links": [
@@ -510491,66 +510399,6 @@
             {
               "role": "Pinned upstream source",
               "url": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/77cf0a0c104f2e31501eab04d88bbc068d61c169/SpherePacking/Basic/E8.lean"
-            }
-          ],
-          "recorded_publication_citations": []
-        }
-      ]
-    },
-    {
-      "path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-      "git_blob": "cd61fa5ac0d35d0642132d21b241012799dedfb6",
-      "package_source_links": [
-        "docs/adaptations/environments/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean"
-      ],
-      "theorems": [
-        {
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.card_le_encard_of_isCover",
-          "kind": "theorem",
-          "source_line_at_provenance_pin": 75,
-          "provenance_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.provenance/card_le_encard_of_isCover.md",
-          "references": [
-            {
-              "role": "exact local revision",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean#L75"
-            },
-            {
-              "role": "Local source input",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean"
-            }
-          ],
-          "recorded_publication_citations": []
-        },
-        {
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two",
-          "kind": "theorem",
-          "source_line_at_provenance_pin": 48,
-          "provenance_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.provenance/externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two.md",
-          "references": [
-            {
-              "role": "exact local revision",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean#L48"
-            },
-            {
-              "role": "Local source input",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean"
-            }
-          ],
-          "recorded_publication_citations": []
-        },
-        {
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.isSeparated_image_of_two_mul_radius_lt_sqrt_two",
-          "kind": "theorem",
-          "source_line_at_provenance_pin": 27,
-          "provenance_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.provenance/isSeparated_image_of_two_mul_radius_lt_sqrt_two.md",
-          "references": [
-            {
-              "role": "exact local revision",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean#L27"
-            },
-            {
-              "role": "Local source input",
-              "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean"
             }
           ],
           "recorded_publication_citations": []
@@ -544046,21 +543894,6 @@
       ]
     },
     {
-      "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/DenseSubmoduleSlice.lean",
-      "occurrences": [
-        {
-          "source_path": "GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean",
-          "declaration": "GRWTSK.Combinatorics.PfrOriginalEnergyTransport.addEnergy_le_of_translated_subset",
-          "role": "Local source input"
-        },
-        {
-          "source_path": "GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean",
-          "declaration": "GRWTSK.Combinatorics.PfrOriginalEnergyTransport.original_addEnergy_of_small_doubling",
-          "role": "Local source input"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/DenseSubmoduleSlice.lean#L104",
       "occurrences": [
         {
@@ -559996,26 +559829,6 @@
       ]
     },
     {
-      "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean#L39",
-      "occurrences": [
-        {
-          "source_path": "GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean",
-          "declaration": "GRWTSK.Combinatorics.PfrOriginalEnergyTransport.addEnergy_le_of_translated_subset",
-          "role": "exact local revision"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean#L86",
-      "occurrences": [
-        {
-          "source_path": "GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean",
-          "declaration": "GRWTSK.Combinatorics.PfrOriginalEnergyTransport.original_addEnergy_of_small_doubling",
-          "role": "exact local revision"
-        }
-      ]
-    },
-    {
       "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/Combinatorics/PlanarL1.lean#L19",
       "occurrences": [
         {
@@ -561991,56 +561804,6 @@
         {
           "source_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.lean",
           "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_equiv_of_isCover_and_card_eq",
-          "role": "Local source input"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean#L27",
-      "occurrences": [
-        {
-          "source_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.isSeparated_image_of_two_mul_radius_lt_sqrt_two",
-          "role": "exact local revision"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean#L48",
-      "occurrences": [
-        {
-          "source_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two",
-          "role": "exact local revision"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean#L75",
-      "occurrences": [
-        {
-          "source_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.card_le_encard_of_isCover",
-          "role": "exact local revision"
-        }
-      ]
-    },
-    {
-      "url": "https://github.com/grwtsk/math/blob/1b193e2bd2acf3a7eaf1bb71f59918a1ae666be4/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean",
-      "occurrences": [
-        {
-          "source_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.card_le_encard_of_isCover",
-          "role": "Local source input"
-        },
-        {
-          "source_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two",
-          "role": "Local source input"
-        },
-        {
-          "source_path": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
-          "declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.isSeparated_image_of_two_mul_radius_lt_sqrt_two",
           "role": "Local source input"
         }
       ]
@@ -594541,5 +594304,6 @@
       ]
     }
   ],
-  "base_revision": "3912dcde0d1cf6275ea3918676e8745339dcfab0"
+  "base_revision": "8ea22748fbbed561ef486ce6d069857b603594e7",
+  "adaptation_membership": "Only recorded external URLs, publication citations, pinned upstream source records or exact pinned import inventories qualify the adaptation source view and theorem-provenance section. Local-only derivation references do not qualify. Canonical local sources and their provenance remain in the repository file manifest. Environment configurations, legal notices and verification helpers are build support, not additional adapted theorems."
 }
