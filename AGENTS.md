@@ -102,6 +102,9 @@ This repository is the canonical pure mathematical source for GRWTSK.
   Publish each adapted theorem with its own Markdown provenance record beside
   the maintained theorem source. This theorem-local record is required even
   though repository-level documentation remains intentionally sparse.
+- The [repository catalog](docs/catalogue.json) follows the complete tracked Git
+  tree. Keep file coverage separate from the coverage of theorem provenance;
+  absent publication correspondence is unknown, not evidence of no publication.
 - Organize adaptation provenance by actual repository source path and declaration,
   not by user, provider or publication. Record cross-publication correspondence
   as many-to-many references; preserve distinct source editions and evidence scopes.
