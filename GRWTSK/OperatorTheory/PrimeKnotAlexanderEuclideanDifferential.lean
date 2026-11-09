@@ -27,6 +27,11 @@ supply no separate fresh kernel replay or transitive axiom audit.
 The unweighted finite Dirac is NOT the compression of the separately
 described infinite weighted D0+B operator. Such an approximation requires
 the actual weights and compatible finite compressions.
+The [weighted finite-compression consumer](PrimeKnotAlexanderWeightedCompressions.lean)
+retains those exact source weights, proves finite restriction/extension
+coherence at candidate-source scope, and specifies the separate countable
+Hilbert-domain and norm-tail obligations. Its Dirac is deliberately not
+identified with euclideanDiracCLM.
 -/
 set_option autoImplicit false
 noncomputable section

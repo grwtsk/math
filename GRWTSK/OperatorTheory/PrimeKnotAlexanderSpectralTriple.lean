@@ -56,6 +56,13 @@ incidence action as a bounded self-adjoint operator; `euclideanCommutatorCLM`
 returns to `commutator` coordinatewise. `euclidean_compactResolvent` supplies
 a compact two-sided inverse of `z • 1 - D` whenever `z.im ≠ 0`. The plain function carrier below by itself
 uses the product norm, so its name `Hilbert` is not a Hilbert-norm certificate.
+The [weighted compression consumer](PrimeKnotAlexanderWeightedCompressions.lean)
+uses the same Vertex/Source/Linked/edgeWeight suppliers, but retains the
+countable source's genuine diagonal code(i)+1 and weighted entries
+2^(-code(i)-code(j)-2). Its finite restriction, extension, Dirac and
+commutator coherence are distinct from this file's unweighted finite model.
+Full countable operator-domain return and the norm-tail theorem remain
+analytical obligations rather than Lean results of that consumer.
 
 
 `act_mul` supplies the algebra representation law; `commutator_formula`
