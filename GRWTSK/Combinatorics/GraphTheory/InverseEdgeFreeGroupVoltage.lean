@@ -7,6 +7,8 @@ import GRWTSK.Combinatorics.GraphTheory.FinitePositiveWordMagnusSeparation
 import Mathlib.GroupTheory.FreeGroup.Basic
 import Mathlib.CategoryTheory.Groupoid.FreeGroupoid
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup
+import Mathlib.Topology.Covering.Quotient
+import Mathlib.Topology.Homotopy.Lifting
 import Mathlib
 
 /-!
@@ -2280,14 +2282,13 @@ realization. Graph projections realize to actual continuous, parameter-preservin
 maps, natural on entire signed paths, with the same original edge witnesses.
 No preexisting antiparallel original arcs are silently identified.
 
-REMAINING FORMAL GAPS: the comparison functor is not proved full or faithful;
-there is no proved inverse taking arbitrary continuous paths/homotopies back
-to edge histories. In particular, no pi_1 isomorphism, cellular approximation
-or null-homotopy reflection theorem is asserted. Also `realizedProjection`
-is not proved to satisfy Mathlib's topological IsCoveringMap predicate: local
-evenly covered neighborhoods still need construction. Path connectedness and
-a combinatorial local edge bijection alone do not discharge that obligation.
-Tree-presentation extraction from bare connectedness is unchanged. Independent
+Historical frontier of this section (source 7e6b3e64): the inverse comparison
+and topological covering-map obligations were open. The following section now
+proves faithfulness/null-homotopy reflection and the topological covering theorem
+for relative index two, including the existing tower consumer. Fullness (an
+edge representative for every continuous path class) is STILL OPEN. No full
+pi_1 isomorphism is asserted. Arbitrary relative indices are not covered by the
+new index-two theorem. Tree-presentation extraction from bare connectedness is unchanged. Independent
 review and broad all-import fresh replay of this extension are NOT_RUN unless
 recorded separately at its exact source pin. Historical evidence is preserved.
 -/
@@ -2726,4 +2727,947 @@ lemma image_regular_endpoint {a b : V} (p : Path (OrientedEdge (E := E)) a b)
       (VoltageCover.liftPath (OrientedEdge (E := E))
         (orientedWeight (originalVoltage T ends E presentation f)) p (g : G)).1 := by
   rw [VoltageCover.lift_endpoint,VoltageCover.lift_endpoint,Subgroup.coe_mul,coe_image_holonomy]
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+/-!
+# Genuine index-two topological covers and a faithful geometric comparison
+
+Mathematical consumer: the literal `Geometric.Realization`, its existing forward
+comparison, and the Magnus separating tower of issue #1784. This extension proves
+Mathlib's ACTUAL `IsCoveringMap` predicate for each relative-index-two projection,
+not a structure whose field assumes the covering conclusion. It also proves the
+forward comparison faithful, but does NOT prove it full. Thus the request for
+a full fundamental-group equivalence is still only PARTIALLY completed.
+
+## Primary analytical argument and exact return
+
+Normalize quotient points to either an original vertex or an original labelled
+edge with parameter different from both endpoints. `normalEquiv` proves both
+inverse laws for the ACTUAL quotient. It is a set equivalence, not a product
+homeomorphism or a change of topology. The quotient map is closed: saturating a
+closed raw set adds only whole endpoint classes, and an arbitrary union of such
+classes is closed in the raw discrete-vertex/discrete-edge-family space. Raw
+space is normal, so disjoint closed fibers have disjoint open neighborhoods;
+taking complements of quotient images of their complements yields Hausdorff
+separation downstairs. No local finiteness, countability or local compactness
+of a graph is assumed, including at vertices of infinite valence.
+
+`coverCoordinates` additionally remembers the sheet at an interior edge's SOURCE;
+it is again only a set equivalence. The actual projection preserves the base
+normal point and applies the old coset map to that sheet. Its fiber is therefore
+explicitly equivalent to the old coset projection fiber, proving cardinality TWO
+at EVERY geometric point, not only vertices.
+
+There is a unique other point in every two-element sheet fiber. This operation
+is involutive, fixed-point-free and natural for the bijective group transport.
+It defines actual original-edge maps, hence a continuous `realizedFlip` of the
+literal quotient. Point coordinates prove its involution, freeness, exact
+projection invariance and that the projection fibers are precisely its orbits.
+The projection itself is a quotient map: the raw vertex and edge-index maps are
+surjections of discrete spaces, their products with the same interval are open
+quotient maps, and the quotient universal property descends this statement.
+
+A continuous fixed-point-free involution on a Hausdorff space has disjoint
+translate neighborhoods: separate x and flip(x), then intersect the first
+neighborhood with the inverse image of the second. Its ZMod-2 additive action
+and the proved quotient/orbit laws instantiate Mathlib's quotient-covering API.
+Thus `isCoveringMap_realizedProjection` proves the full topological covering-map
+claim for the EXACT earlier map whenever (H subgroupOf K).index=2. Normality in
+the whole ambient group is neither needed nor assumed. `realized_indexTwoSeries`
+and `connected_topological_separating_tower` supply the connected, two-sheet-at-
+every-point tower, with the SAME old source hypotheses and Magnus separator.
+
+For the comparison's injectivity, assume a realized source loop is null-homotopic
+but its original free-groupoid class is nonidentity. Algebraic Magnus separation
+supplies the earlier finite index-two tower with a non-closing bottom lift.
+The top one-sheet realization has a proved continuous inverse to its forgetful
+map. Mathlib's actual covering homotopy-lifting theorem reflects a null homotopy
+through every genuine topological covering step. The bottom lift must therefore
+have equal endpoints, contradicting its proved sheet separation and vertex
+injectivity. This proves `null_homotopy_reflects` and `originalLoopMap_injective`.
+There is no circular topological freeness premise: the earlier free-groupoid
+normal form and Magnus theorem are algebraic, and the covering proof above uses
+only the literal interval quotient and index-two sheet data.
+
+Conjugation by actual tree connector paths extends the based injection to
+`comparison_faithful`. Consequently `paths_homotopic_iff` classifies homotopies
+between REALIZED finite histories exactly by their original free-groupoid
+classes. Every realization point is joined to a vertex along its interval,
+which proves `comparison_essSurj` on OBJECTS only.
+
+## Exact remaining obligation and evidence boundary
+
+Essential surjectivity on objects and faithfulness do NOT imply fullness.
+`originalLoopMap_surjective_iff_edgeLoops` identifies the remaining based
+surjectivity obligation precisely: every arbitrary continuous loop must be
+homotopic, relative endpoints, to a realized finite original edge history.
+That cellular-approximation/fullness result is NOT PROVED here; no hypothesis,
+axiom, accepting instance or desired-law field supplies it. Therefore no full
+pi_1 equivalence is claimed. Tree presentation extraction/reorientation from
+bare connectedness is also unchanged. Existing antiparallel edge witnesses
+remain distinct; no external graph convention or quotient is silently applied.
+The old root/parent/rank, edge-bijection, DecidableEq chord and nonidentity-class
+hypotheses are preserved. No finite-vertex/edge/alphabet premise is added.
+Independent review and broad all-import fresh replay of these NEW bytes are
+NOT_RUN unless separately recorded at their exact source pin in issue #1784.
+-/
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+attribute [local instance] Classical.propDecidable
+universe u v
+variable {V : Type u} (E : V → V → Type v)
+abbrev InteriorTime := {t : unitInterval // t ≠ 0 ∧ t ≠ 1}
+abbrev NormalPoint := V ⊕ (EdgeIndex E × InteriorTime)
+noncomputable def normalizeRaw : Raw E → NormalPoint E
+  | .inl a => .inl a
+  | .inr (e,t) => if h0 : t = 0 then .inl e.1
+    else if h1 : t = 1 then .inl e.2.1 else .inr (e,⟨t,h0,h1⟩)
+noncomputable def normalize : Realization E → NormalPoint E :=
+  Quot.lift (normalizeRaw E) (by
+    intro a b h
+    cases h with
+    | source e => simp [normalizeRaw]
+    | target e => simp [normalizeRaw])
+def realizeNormal : NormalPoint E → Realization E
+  | .inl a => vertex E a
+  | .inr (e,t) => Quot.mk _ (.inr (e,t.val))
+lemma realize_normalize (x : Realization E) : realizeNormal E (normalize E x) = x := by
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl a => rfl
+    | inr et =>
+      rcases et with ⟨e,t⟩
+      change realizeNormal E (normalizeRaw E (.inr (e,t))) = _
+      simp only [normalizeRaw]
+      split_ifs with h0 h1
+      · subst t
+        exact (Quot.sound (Glue.source e)).symm
+      · subst t
+        exact (Quot.sound (Glue.target e)).symm
+      · rfl
+lemma normalize_realize (n : NormalPoint E) : normalize E (realizeNormal E n) = n := by
+  cases n with
+  | inl a => rfl
+  | inr et =>
+    rcases et with ⟨e,⟨t,h0,h1⟩⟩
+    simp [realizeNormal,normalize,normalizeRaw,h0,h1]
+noncomputable def normalEquiv : Realization E ≃ NormalPoint E where
+  toFun := normalize E
+  invFun := realizeNormal E
+  left_inv := realize_normalize E
+  right_inv := normalize_realize E
+lemma realization_eq_iff (x y : Realization E) : x = y ↔ normalize E x = normalize E y :=
+  (normalEquiv E).injective.eq_iff.symm
+
+lemma normalizeRaw_interior_iff (r : Raw E) (e : EdgeIndex E) (t : InteriorTime) :
+    normalizeRaw E r = .inr (e,t) ↔ r = .inr (e,t.val) := by
+  constructor
+  · intro h
+    cases r with
+    | inl a => cases h
+    | inr et =>
+      rcases et with ⟨e',t'⟩
+      by_cases h0 : t' = 0
+      · simp [normalizeRaw,h0] at h
+      · by_cases h1 : t' = 1
+        · simp [normalizeRaw,h0,h1] at h
+        · have hp : (e', (⟨t',h0,h1⟩ : InteriorTime)) = (e,t) :=
+            @Sum.inr.inj V (EdgeIndex E × InteriorTime) _ _ (by simpa [normalizeRaw,h0,h1] using h)
+          exact congrArg Sum.inr (Prod.ext (congrArg (@Prod.fst (EdgeIndex E) InteriorTime) hp) (congrArg (fun p : EdgeIndex E × InteriorTime => p.2.val) hp))
+  · intro h
+    subst r
+    simp [normalizeRaw,t.property.1,t.property.2]
+
+lemma isClosed_vertexLocus (A : Set V) :
+    IsClosed {r : Raw E | ∃ a ∈ A, normalizeRaw E r = .inl a} := by
+  have heq : {r : Raw E | ∃ a ∈ A, normalizeRaw E r = .inl a} =
+      (Sum.inl '' (A : Set (VertexCopy V))) ∪
+      Sum.inr '' (({e : EdgeIndex E | e.1 ∈ A} ×ˢ ({0} : Set unitInterval)) ∪
+        ({e : EdgeIndex E | e.2.1 ∈ A} ×ˢ ({1} : Set unitInterval))) := by
+    ext r
+    cases r with
+    | inl a => simp [normalizeRaw,Set.mem_union,Set.mem_image,Set.mem_prod]
+    | inr et =>
+      rcases et with ⟨e,t⟩
+      by_cases h0 : t = 0
+      · subst t; simp [normalizeRaw,Set.mem_union,Set.mem_image,Set.mem_prod]
+      · by_cases h1 : t = 1
+        · subst t; simp [normalizeRaw,Set.mem_union,Set.mem_image,Set.mem_prod]
+        · simp [normalizeRaw,h0,h1,Set.mem_union,Set.mem_image,Set.mem_prod]
+  rw [heq]
+  have hl : IsClosed (Sum.inl '' (A : Set (VertexCopy V)) : Set (Raw E)) :=
+    @isClosedMap_inl (VertexCopy V) (EdgeIndex E × unitInterval) _ _ _ (isClosed_discrete _)
+  have hr : IsClosed (Sum.inr '' (({e : EdgeIndex E | e.1 ∈ A} ×ˢ ({0} : Set unitInterval)) ∪
+        ({e : EdgeIndex E | e.2.1 ∈ A} ×ˢ ({1} : Set unitInterval))) : Set (Raw E)) :=
+    @isClosedMap_inr (VertexCopy V) (EdgeIndex E × unitInterval) _ _ _
+      (((isClosed_discrete _).prod isClosed_singleton).union ((isClosed_discrete _).prod isClosed_singleton))
+  exact hl.union hr
+
+lemma isClosedMap_quot : IsClosedMap (Quot.mk (Glue E) : Raw E → Realization E) := by
+  intro C hC
+  let q : Raw E → Realization E := Quot.mk (Glue E)
+  let A : Set V := {a | vertex E a ∈ q '' C}
+  have hs : q ⁻¹' (q '' C) = C ∪ {r : Raw E | ∃ a ∈ A, normalizeRaw E r = .inl a} := by
+    ext r
+    constructor
+    · rintro ⟨s,hs,hq⟩
+      cases hn : normalizeRaw E r with
+      | inl a =>
+        right
+        refine ⟨a,?_,hn⟩
+        have he := realize_normalize E (q r)
+        change realizeNormal E (normalizeRaw E r) = q r at he
+        rw [hn] at he
+        exact ⟨s,hs,hq.trans he.symm⟩
+      | inr et =>
+        left
+        have he : normalizeRaw E s = .inr et := (congrArg (normalize E) hq).trans hn
+        have hs' := (normalizeRaw_interior_iff E s et.1 et.2).mp he
+        have hr' := (normalizeRaw_interior_iff E r et.1 et.2).mp hn
+        exact (hs'.trans hr'.symm) ▸ hs
+    · rintro (hr | ⟨a,ha,hn⟩)
+      · exact ⟨r,hr,rfl⟩
+      · obtain ⟨s,hs,hq⟩ := ha
+        refine ⟨s,hs,hq.trans ?_⟩
+        have he := realize_normalize E (q r)
+        change realizeNormal E (normalizeRaw E r) = q r at he
+        rw [hn] at he
+        exact he
+  apply isQuotientMap_quot_mk.isClosed_preimage.mp
+  change IsClosed (q ⁻¹' (q '' C))
+  rw [hs]
+  exact hC.union (isClosed_vertexLocus E A)
+
+instance realizationT1 : T1Space (Realization E) where
+  t1 x := by
+    obtain ⟨r,rfl⟩ := Quot.exists_rep x
+    simpa only [Set.image_singleton] using isClosedMap_quot E {r} isClosed_singleton
+
+instance realizationT2 : T2Space (Realization E) where
+  t2 x y hxy := by
+    let q : Raw E → Realization E := Quot.mk (Glue E)
+    have hc : Continuous q := continuous_quot_mk
+    have hd : Disjoint (q ⁻¹' ({x} : Set (Realization E))) (q ⁻¹' ({y} : Set (Realization E))) :=
+      (Set.disjoint_singleton.mpr hxy).preimage q
+    obtain ⟨U,W,hU,hW,hxU,hyW,hUW⟩ := normal_separation
+      (isClosed_singleton.preimage hc) (isClosed_singleton.preimage hc) hd
+    refine ⟨(q '' Uᶜ)ᶜ,(q '' Wᶜ)ᶜ,?_,?_,?_,?_,?_⟩
+    · exact (isClosedMap_quot E _ hU.isClosed_compl).isOpen_compl
+    · exact (isClosedMap_quot E _ hW.isClosed_compl).isOpen_compl
+    · rintro ⟨r,hr,he⟩
+      exact hr (hxU he)
+    · rintro ⟨r,hr,he⟩
+      exact hr (hyW he)
+    · apply Set.disjoint_left.mpr
+      intro z hzU hzW
+      obtain ⟨r,hr⟩ := Quot.exists_rep z
+      have hru : r ∈ U := by
+        by_contra hn
+        exact hzU ⟨r,hn,hr⟩
+      have hrw : r ∈ W := by
+        by_contra hn
+        exact hzW ⟨r,hn,hr⟩
+      exact Set.disjoint_left.mp hUW hru hrw
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.TwoFiber
+variable {X Y : Type*} (p : X → Y) (h : ∀ y, Nat.card {x // p x = y} = 2)
+noncomputable def other (x : X) : X :=
+  (Classical.choose ((Nat.card_eq_two_iff' (⟨x,rfl⟩ : {z // p z = p x})).mp (h (p x)))).val
+lemma project_other (x : X) : p (other p h x) = p x :=
+  (Classical.choose ((Nat.card_eq_two_iff' (⟨x,rfl⟩ : {z // p z = p x})).mp (h (p x)))).property
+lemma other_ne (x : X) : other p h x ≠ x := by
+  intro he
+  have hn := (Classical.choose_spec ((Nat.card_eq_two_iff' (⟨x,rfl⟩ : {z // p z = p x})).mp (h (p x)))).1
+  apply hn
+  exact Subtype.ext he
+lemma other_unique (x z : X) (hz : p z = p x) (hne : z ≠ x) : z = other p h x := by
+  have hn : (⟨z,hz⟩ : {w // p w = p x}) ≠ ⟨x,rfl⟩ := by
+    intro he
+    exact hne (congrArg Subtype.val he)
+  exact congrArg Subtype.val ((Classical.choose_spec
+    ((Nat.card_eq_two_iff' (⟨x,rfl⟩ : {w // p w = p x})).mp (h (p x)))).2 ⟨z,hz⟩ hn)
+lemma other_other (x : X) : other p h (other p h x) = x := by
+  exact (other_unique p h (other p h x) x (project_other p h x).symm (other_ne p h x).symm).symm
+lemma fiber_eq (x z : X) : p z = p x ↔ z = x ∨ z = other p h x := by
+  constructor
+  · intro hz
+    by_cases hn : z = x
+    · exact Or.inl hn
+    · exact Or.inr (other_unique p h x z hz hn)
+  · rintro (rfl | rfl)
+    · rfl
+    · exact project_other p h x
+lemma other_commute (f : X → X) (g : Y → Y) (hf : Function.Injective f)
+    (hp : ∀ x, p (f x) = g (p x)) (x : X) : f (other p h x) = other p h (f x) := by
+  apply other_unique p h (f x)
+  · rw [hp (other p h x),project_other p h x,hp x]
+  · intro he
+    exact other_ne p h x (hf he)
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.TwoFiber
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+variable {G V : Type*} [Group G] [Finite G] (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+def coverIndexEquiv (H : Subgroup G) : EdgeIndex (CoverTower.Edge E U H) ≃ EdgeIndex E × (G ⧸ H) where
+  toFun i := (⟨i.1.1,i.2.1.1,i.2.2.original⟩,i.1.2)
+  invFun i := ⟨(i.1.1,i.2),(i.1.2.1,CoverTower.transport H (U i.1.2.2) i.2),⟨i.1.2.2,rfl⟩⟩
+  left_inv i := by
+    rcases i with ⟨⟨a,q⟩,⟨b,r⟩,⟨e,he⟩⟩
+    change E a b at e
+    change CoverTower.transport H (U e) q = r at he
+    subst r
+    rfl
+  right_inv i := by
+    rcases i with ⟨⟨a,b,e⟩,q⟩
+    rfl
+
+def coverNormalEquiv (H : Subgroup G) : NormalPoint (CoverTower.Edge E U H) ≃ NormalPoint E × (G ⧸ H) where
+  toFun n := match n with
+    | .inl (v,q) => (.inl v,q)
+    | .inr (i,t) => (.inr ((coverIndexEquiv E U H i).1,t),(coverIndexEquiv E U H i).2)
+  invFun n := match n with
+    | (.inl v,q) => .inl (v,q)
+    | (.inr (e,t),q) => .inr ((coverIndexEquiv E U H).symm (e,q),t)
+  left_inv n := by
+    cases n with
+    | inl x => cases x; rfl
+    | inr it =>
+      rcases it with ⟨i,t⟩
+      simp only [Equiv.coe_fn_mk]
+      congr 2
+      exact (coverIndexEquiv E U H).symm_apply_apply i
+  right_inv n := by
+    rcases n with ⟨n,q⟩
+    cases n with
+    | inl v => rfl
+    | inr et =>
+      rcases et with ⟨e,t⟩
+      change ((Sum.inr (((coverIndexEquiv E U H) ((coverIndexEquiv E U H).symm (e,q))).1,t)),
+        ((coverIndexEquiv E U H) ((coverIndexEquiv E U H).symm (e,q))).2) = _
+      rw [Equiv.apply_symm_apply]
+noncomputable def coverCoordinates (H : Subgroup G) :
+    Realization (CoverTower.Edge E U H) ≃ NormalPoint E × (G ⧸ H) :=
+  (normalEquiv _).trans (coverNormalEquiv E U H)
+lemma coverCoordinates_vertex (H : Subgroup G) (v : V) (q : G ⧸ H) :
+    coverCoordinates E U H (vertex _ (v,q)) = (.inl v,q) := rfl
+lemma coverCoordinates_edgePoint (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : CoverTower.Edge E U H x y) (t : unitInterval) :
+    coverCoordinates E U H (edgePoint _ e t) =
+      if h0 : t = 0 then (.inl x.1,x.2)
+      else if h1 : t = 1 then (.inl y.1,y.2)
+      else (.inr (⟨x.1,y.1,e.original⟩,⟨t,h0,h1⟩),x.2) := by
+  by_cases h0 : t = 0
+  · simp [coverCoordinates,normalEquiv,normalize,normalizeRaw,edgePoint,coverNormalEquiv,h0]
+  · by_cases h1 : t = 1
+    · simp [coverCoordinates,normalEquiv,normalize,normalizeRaw,edgePoint,coverNormalEquiv,h0,h1]
+    · simp [coverCoordinates,normalEquiv,normalize,normalizeRaw,edgePoint,coverNormalEquiv,coverIndexEquiv,h0,h1]
+lemma coverCoordinates_interior (H : Subgroup G) (e : EdgeIndex E) (q : G ⧸ H) (t : InteriorTime) :
+    coverCoordinates E U H (Quot.mk _ (.inr ((coverIndexEquiv E U H).symm (e,q),t.val))) = (.inr (e,t),q) := by
+  rcases e with ⟨a,b,e⟩
+  change coverCoordinates E U H (edgePoint _ (CoverTower.liftEdge E U H e q) t.val) = _
+  rw [coverCoordinates_edgePoint]
+  simp [t.property.1,t.property.2,CoverTower.liftEdge]
+lemma coverCoordinates_project {H K : Subgroup G} (h : H ≤ K)
+    (x : Realization (CoverTower.Edge E U H)) :
+    coverCoordinates E U K (realizedProjection E U h x) =
+      ((coverCoordinates E U H x).1,Subgroup.quotientMapOfLE h (coverCoordinates E U H x).2) := by
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl x => cases x; rfl
+    | inr it =>
+      rcases it with ⟨⟨x,y,e⟩,t⟩
+      change coverCoordinates E U K (realizedProjection E U h (edgePoint _ e t)) =
+        ((coverCoordinates E U H (edgePoint _ e t)).1,Subgroup.quotientMapOfLE h (coverCoordinates E U H (edgePoint _ e t)).2)
+      rw [realizedProjection_edgePoint,coverCoordinates_edgePoint,coverCoordinates_edgePoint]
+      split_ifs <;> rfl
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+variable {G V : Type*} [Group G] [Finite G] (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+noncomputable def projectionFiberCoordinates {H K : Subgroup G} (h : H ≤ K)
+    (y : Realization (CoverTower.Edge E U K)) :
+    {x : Realization (CoverTower.Edge E U H) // realizedProjection E U h x = y} ≃
+      {q : G ⧸ H // Subgroup.quotientMapOfLE h q = (coverCoordinates E U K y).2} where
+  toFun x := ⟨(coverCoordinates E U H x.val).2,by
+    have he := congrArg (coverCoordinates E U K) x.property
+    rw [coverCoordinates_project] at he
+    exact congrArg Prod.snd he⟩
+  invFun q := ⟨(coverCoordinates E U H).symm ((coverCoordinates E U K y).1,q.val),by
+    apply (coverCoordinates E U K).injective
+    rw [coverCoordinates_project,Equiv.apply_symm_apply]
+    exact Prod.ext rfl q.property⟩
+  left_inv x := by
+    apply Subtype.ext
+    apply (coverCoordinates E U H).injective
+    rw [Equiv.apply_symm_apply]
+    have he := congrArg (coverCoordinates E U K) x.property
+    rw [coverCoordinates_project] at he
+    exact Prod.ext (congrArg Prod.fst he).symm rfl
+  right_inv q := by
+    apply Subtype.ext
+    exact congrArg Prod.snd ((coverCoordinates E U H).apply_symm_apply _)
+lemma realizedProjection_fiber_two {H K : Subgroup G} (h : H ≤ K)
+    (hi : (H.subgroupOf K).index = 2) (y : Realization (CoverTower.Edge E U K)) :
+    Nat.card {x : Realization (CoverTower.Edge E U H) // realizedProjection E U h x = y} = 2 := by
+  rw [Nat.card_congr (projectionFiberCoordinates E U h y)]
+  exact CoverTower.projection_two h hi _
+
+variable {H K : Subgroup G} (h : H ≤ K) (hi : (H.subgroupOf K).index = 2)
+noncomputable def sheetFlip (q : G ⧸ H) : G ⧸ H :=
+  TwoFiber.other (Subgroup.quotientMapOfLE h) (CoverTower.projection_two h hi) q
+lemma project_sheetFlip (q : G ⧸ H) :
+    Subgroup.quotientMapOfLE h (sheetFlip h hi q) = Subgroup.quotientMapOfLE h q :=
+  TwoFiber.project_other _ _ q
+lemma sheetFlip_ne (q : G ⧸ H) : sheetFlip h hi q ≠ q := TwoFiber.other_ne _ _ q
+lemma sheetFlip_sheetFlip (q : G ⧸ H) : sheetFlip h hi (sheetFlip h hi q) = q :=
+  TwoFiber.other_other _ _ q
+lemma transport_sheetFlip (u : G) (q : G ⧸ H) :
+    CoverTower.transport H u (sheetFlip h hi q) = sheetFlip h hi (CoverTower.transport H u q) := by
+  apply TwoFiber.other_commute (Subgroup.quotientMapOfLE h) (CoverTower.projection_two h hi)
+    (CoverTower.transport H u) (CoverTower.transport K u)
+  · intro a b he
+    have hh := congrArg (CoverTower.transport H u⁻¹) he
+    simpa using hh
+  · exact CoverTower.project_transport h u
+
+noncomputable def flipVertex (x : V × (G ⧸ H)) : V × (G ⧸ H) := (x.1,sheetFlip h hi x.2)
+noncomputable def flipEdge {x y : V × (G ⧸ H)} (e : CoverTower.Edge E U H x y) :
+    CoverTower.Edge E U H (flipVertex h hi x) (flipVertex h hi y) :=
+  ⟨e.original,by
+    change CoverTower.transport H (U e.original) (sheetFlip h hi x.2) = sheetFlip h hi y.2
+    rw [transport_sheetFlip,e.target_eq]⟩
+noncomputable def realizedFlip : Realization (CoverTower.Edge E U H) → Realization (CoverTower.Edge E U H) :=
+  map _ _ (flipVertex h hi) (fun e => flipEdge E U h hi e)
+lemma continuous_realizedFlip : Continuous (realizedFlip E U h hi) := continuous_map _ _ _ _
+lemma coverCoordinates_flip (x : Realization (CoverTower.Edge E U H)) :
+    coverCoordinates E U H (realizedFlip E U h hi x) =
+      ((coverCoordinates E U H x).1,sheetFlip h hi (coverCoordinates E U H x).2) := by
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl x => cases x; rfl
+    | inr it =>
+      rcases it with ⟨⟨x,y,e⟩,t⟩
+      change coverCoordinates E U H (map _ _ (flipVertex h hi) (fun e => flipEdge E U h hi e) (edgePoint _ e t)) =
+        ((coverCoordinates E U H (edgePoint _ e t)).1,sheetFlip h hi (coverCoordinates E U H (edgePoint _ e t)).2)
+      rw [map_edgePoint,coverCoordinates_edgePoint,coverCoordinates_edgePoint]
+      split_ifs <;> rfl
+lemma realizedFlip_involutive (x : Realization (CoverTower.Edge E U H)) :
+    realizedFlip E U h hi (realizedFlip E U h hi x) = x := by
+  apply (coverCoordinates E U H).injective
+  rw [coverCoordinates_flip,coverCoordinates_flip]
+  simp only [sheetFlip_sheetFlip,Prod.mk.eta]
+lemma realizedFlip_ne (x : Realization (CoverTower.Edge E U H)) : realizedFlip E U h hi x ≠ x := by
+  intro he
+  have hh := congrArg (fun x => (coverCoordinates E U H x).2) he
+  rw [coverCoordinates_flip] at hh
+  exact sheetFlip_ne h hi _ hh
+lemma project_realizedFlip (x : Realization (CoverTower.Edge E U H)) :
+    realizedProjection E U h (realizedFlip E U h hi x) = realizedProjection E U h x := by
+  apply (coverCoordinates E U K).injective
+  rw [coverCoordinates_project,coverCoordinates_flip,coverCoordinates_project]
+  simp only [project_sheetFlip]
+lemma realizedProjection_eq_iff (x z : Realization (CoverTower.Edge E U H)) :
+    realizedProjection E U h z = realizedProjection E U h x ↔ z = x ∨ z = realizedFlip E U h hi x := by
+  have hcard := realizedProjection_fiber_two E U h hi
+  constructor
+  · intro he
+    by_cases hn : z = x
+    · exact Or.inl hn
+    · right
+      have hz := TwoFiber.other_unique _ hcard x z he hn
+      have hf := TwoFiber.other_unique _ hcard x (realizedFlip E U h hi x)
+        (project_realizedFlip E U h hi x) (realizedFlip_ne E U h hi x)
+      exact hz.trans hf.symm
+  · rintro (rfl | rfl)
+    · rfl
+    · exact project_realizedFlip E U h hi x
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+variable {G V : Type*} [Group G] [Finite G] (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+variable {H K : Subgroup G} (h : H ≤ K)
+lemma quotientSheet_surjective : Function.Surjective (Subgroup.quotientMapOfLE h) := by
+  intro q
+  induction q using Quotient.inductionOn' with
+  | h g => exact ⟨QuotientGroup.mk g,rfl⟩
+lemma coverIndex_project (i : EdgeIndex (CoverTower.Edge E U H)) :
+    coverIndexEquiv E U K (indexMap _ _ (CoverTower.projectVertex h) (fun e => CoverTower.projectEdge E U h e) i) =
+      ((coverIndexEquiv E U H i).1,Subgroup.quotientMapOfLE h (coverIndexEquiv E U H i).2) := rfl
+lemma coverIndexProjection_surjective : Function.Surjective
+    (indexMap (CoverTower.Edge E U H) (CoverTower.Edge E U K)
+      (CoverTower.projectVertex h) (fun e => CoverTower.projectEdge E U h e)) := by
+  intro j
+  obtain ⟨q,hq⟩ := quotientSheet_surjective h (coverIndexEquiv E U K j).2
+  refine ⟨(coverIndexEquiv E U H).symm ((coverIndexEquiv E U K j).1,q),?_⟩
+  apply (coverIndexEquiv E U K).injective
+  rw [coverIndex_project,Equiv.apply_symm_apply]
+  exact Prod.ext rfl hq
+lemma isQuotientMap_realizedProjection : Topology.IsQuotientMap (realizedProjection E U h) := by
+  let A := CoverTower.Edge E U H
+  let B := CoverTower.Edge E U K
+  let φ : VertexCopy (V × (G ⧸ H)) → VertexCopy (V × (G ⧸ K)) := CoverTower.projectVertex h
+  let ψ : EdgeIndex A → EdgeIndex B := indexMap A B φ (fun e => CoverTower.projectEdge E U h e)
+  have hφ : Function.Surjective φ := by
+    rintro ⟨v,q⟩
+    obtain ⟨r,hr⟩ := quotientSheet_surjective h q
+    exact ⟨(v,r),Prod.ext rfl hr⟩
+  have hψ : Function.Surjective ψ := coverIndexProjection_surjective E U h
+  have hφo : IsOpenMap φ := fun _ _ => isOpen_discrete _
+  have hψo : IsOpenMap ψ := fun _ _ => isOpen_discrete _
+  have hraw : Topology.IsQuotientMap (rawMap A B φ (fun e => CoverTower.projectEdge E U h e)) := by
+    apply IsOpenMap.isQuotientMap
+    · have heq : rawMap A B φ (fun e => CoverTower.projectEdge E U h e) =
+          Sum.map φ (Prod.map ψ (id : unitInterval → unitInterval)) := by
+        funext r
+        cases r with
+        | inl x => rfl
+        | inr it => cases it; rfl
+      rw [heq]
+      exact hφo.sumMap (hψo.prodMap IsOpenMap.id)
+    · exact continuous_rawMap _ _ _ _
+    · intro r
+      cases r with
+      | inl v =>
+        obtain ⟨x,rfl⟩ := hφ v
+        exact ⟨.inl x,rfl⟩
+      | inr jt =>
+        rcases jt with ⟨j,t⟩
+        obtain ⟨i,rfl⟩ := hψ j
+        exact ⟨.inr (i,t),rfl⟩
+  have hcomp : Topology.IsQuotientMap
+      ((Quot.mk (Glue B) : Raw B → Realization B) ∘ rawMap A B φ (fun e => CoverTower.projectEdge E U h e)) :=
+    isQuotientMap_quot_mk.comp hraw
+  change Topology.IsQuotientMap
+    ((realizedProjection E U h) ∘ (Quot.mk (Glue A) : Raw A → Realization A)) at hcomp
+  exact isQuotientMap_quot_mk.of_comp_isQuotientMap hcomp
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+open Topology
+/-- A genuine quotient by a continuous fixed-point-free involution on a
+Hausdorff space is a topological covering map. No covering premise is assumed. -/
+theorem isCoveringMap_of_involution {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y] [T2Space X]
+    (p : X → Y) (f : X → X) (hf : Function.Involutive f) (hn : ∀ x, f x ≠ x)
+    (hc : Continuous f) (hp : IsQuotientMap p)
+    (ho : ∀ x y, p x = p y ↔ x = y ∨ x = f y) : IsCoveringMap p := by
+  let act : ZMod 2 → X → X := fun n x => if n = 0 then x else f x
+  letI : AddAction (ZMod 2) X := {
+    vadd := act
+    zero_vadd := fun x => by
+      change act 0 x = x
+      simp [act]
+    add_vadd := fun n m x => by
+      change act (n+m) x = act n (act m x)
+      fin_cases n <;> fin_cases m <;> simp [act,show (1 : ZMod 2) + 1 = 0 by decide,hf x]
+  }
+  letI : ContinuousConstVAdd (ZMod 2) X := {
+    continuous_const_vadd := fun n => by
+      change Continuous (act n)
+      by_cases h : n = 0
+      · simp only [act,if_pos h]
+        fun_prop
+      · simpa [act,h] using hc
+  }
+  have hq : IsAddQuotientCoveringMap p (ZMod 2) := {
+    toIsQuotientMap := hp
+    continuous_const_vadd := fun n => continuous_const_vadd n
+    apply_eq_iff_mem_orbit := by
+      intro x y
+      rw [ho,AddAction.mem_orbit_iff]
+      constructor
+      · rintro (rfl | he)
+        · exact ⟨0,by simp⟩
+        · exact ⟨1,by change act 1 y = x; simpa [act] using he.symm⟩
+      · rintro ⟨n,he⟩
+        change act n y = x at he
+        fin_cases n
+        · exact Or.inl (by simpa [act] using he.symm)
+        · exact Or.inr (by simpa [act] using he.symm)
+    disjoint := by
+      intro x
+      obtain ⟨A,B,hA,hB,hxA,hfxB,hAB⟩ := t2_separation (hn x).symm
+      refine ⟨A ∩ f ⁻¹' B,(hA.inter (hB.preimage hc)).mem_nhds ⟨hxA,hfxB⟩,?_⟩
+      rintro n ⟨z,⟨w,hw,he⟩,hz⟩
+      fin_cases n
+      · rfl
+      · change f w = z at he
+        exact (Set.disjoint_left.mp hAB hz.1 (he ▸ hw.2)).elim
+  }
+  exact hq.isCoveringMap
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+variable {G V : Type*} [Group G] [Finite G] (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+theorem isCoveringMap_realizedProjection {H K : Subgroup G} (h : H ≤ K)
+    (hi : (H.subgroupOf K).index = 2) : IsCoveringMap (realizedProjection E U h) :=
+  isCoveringMap_of_involution _ (realizedFlip E U h hi)
+    (realizedFlip_involutive E U h hi) (realizedFlip_ne E U h hi)
+    (continuous_realizedFlip E U h hi) (isQuotientMap_realizedProjection E U h)
+    (fun x y => realizedProjection_eq_iff E U h hi y x)
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+open CategoryTheory
+variable {V : Type*} (E : V → V → Type*)
+lemma normalize_edgePoint {a b : V} (e : E a b) (t : unitInterval) :
+    normalize E (edgePoint E e t) = if h0 : t = 0 then .inl a
+      else if h1 : t = 1 then .inl b else .inr (⟨a,b,e⟩,⟨t,h0,h1⟩) := rfl
+variable {G : Type*} [Group G] [Finite G] (U : ∀ {a b}, E a b → G)
+def forgetRealization (H : Subgroup G) : Realization (CoverTower.Edge E U H) → Realization E :=
+  map _ _ Prod.fst (fun e => e.original)
+lemma continuous_forgetRealization (H : Subgroup G) : Continuous (forgetRealization E U H) :=
+  continuous_map _ _ _ _
+lemma normalize_forget (H : Subgroup G) (x : Realization (CoverTower.Edge E U H)) :
+    normalize E (forgetRealization E U H x) = (coverCoordinates E U H x).1 := by
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl x => cases x; rfl
+    | inr it =>
+      rcases it with ⟨⟨x,y,e⟩,t⟩
+      change normalize E (map _ _ Prod.fst (fun e => e.original) (edgePoint _ e t)) =
+        (coverCoordinates E U H (edgePoint _ e t)).1
+      rw [map_edgePoint,normalize_edgePoint,coverCoordinates_edgePoint]
+      split_ifs <;> rfl
+lemma quotientSheet_comp {H K L : Subgroup G} (h : H ≤ K) (k : K ≤ L) (q : G ⧸ H) :
+    Subgroup.quotientMapOfLE k (Subgroup.quotientMapOfLE h q) = Subgroup.quotientMapOfLE (h.trans k) q := by
+  induction q using Quotient.inductionOn' with
+  | h g => rfl
+lemma quotientSheet_id (H : Subgroup G) (h : H ≤ H) (q : G ⧸ H) : Subgroup.quotientMapOfLE h q = q := by
+  induction q using Quotient.inductionOn' with
+  | h g => rfl
+lemma realizedProjection_comp {H K L : Subgroup G} (h : H ≤ K) (k : K ≤ L)
+    (x : Realization (CoverTower.Edge E U H)) :
+    realizedProjection E U k (realizedProjection E U h x) = realizedProjection E U (h.trans k) x := by
+  apply (coverCoordinates E U L).injective
+  rw [coverCoordinates_project,coverCoordinates_project,coverCoordinates_project]
+  simp only [quotientSheet_comp]
+lemma realizedProjection_id (H : Subgroup G) (h : H ≤ H) (x : Realization (CoverTower.Edge E U H)) :
+    realizedProjection E U h x = x := by
+  apply (coverCoordinates E U H).injective
+  rw [coverCoordinates_project,quotientSheet_id]
+lemma forget_projection {H K : Subgroup G} (h : H ≤ K) (x : Realization (CoverTower.Edge E U H)) :
+    forgetRealization E U K (realizedProjection E U h x) = forgetRealization E U H x := by
+  apply (normalEquiv E).injective
+  change normalize E _ = normalize E _
+  rw [normalize_forget,coverCoordinates_project,normalize_forget]
+
+local instance : Subsingleton (G ⧸ (⊤ : Subgroup G)) := QuotientGroup.subsingleton_quotient_top
+noncomputable def topSection : Realization E → Realization (CoverTower.Edge E U (⊤ : Subgroup G)) :=
+  map _ _ (fun v => (v,QuotientGroup.mk (1 : G))) (fun e => ⟨e,Subsingleton.elim _ _⟩)
+lemma continuous_topSection : Continuous (topSection E U) := continuous_map _ _ _ _
+lemma coverCoordinates_topSection (x : Realization E) :
+    coverCoordinates E U ⊤ (topSection E U x) = (normalize E x,QuotientGroup.mk (1 : G)) := by
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl v => rfl
+    | inr it =>
+      rcases it with ⟨⟨a,b,e⟩,t⟩
+      change coverCoordinates E U ⊤ (map _ _ _ _ (edgePoint E e t)) = (normalize E (edgePoint E e t),_)
+      rw [map_edgePoint,coverCoordinates_edgePoint,normalize_edgePoint]
+      split_ifs <;> rfl
+lemma topSection_forget (x : Realization (CoverTower.Edge E U (⊤ : Subgroup G))) :
+    topSection E U (forgetRealization E U ⊤ x) = x := by
+  apply (coverCoordinates E U ⊤).injective
+  rw [coverCoordinates_topSection,normalize_forget]
+  exact Prod.ext rfl (Subsingleton.elim _ _)
+lemma forget_path (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (p : Path (OrientedEdge (E := CoverTower.Edge E U H)) x y) :
+    (path _ p).map (continuous_forgetRealization E U H) =
+      path E (CoverTower.eraseOrientedPath E U H p) := by
+  rw [show (path _ p).map (continuous_forgetRealization E U H) =
+    (path _ p).map (continuous_map _ _ Prod.fst (fun e => e.original)) from rfl]
+  rw [map_path]
+  congr 1
+  induction p with
+  | refl x => rfl
+  | cons e p ih =>
+    simp only [mapPath,CoverTower.eraseOrientedPath,ih]
+    congr 1
+    cases e <;> rfl
+
+lemma null_reflect_cover {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
+    {p : X → Y} (hp : IsCoveringMap p) (γ : C(unitInterval,X))
+    (h : (ContinuousMap.comp ⟨p,hp.continuous⟩ γ).HomotopicRel
+      (ContinuousMap.const unitInterval (p (γ 0))) {0,1}) :
+    γ.HomotopicRel (ContinuousMap.const unitInterval (γ 0)) {0,1} := by
+  apply (hp.homotopicRel_iff_comp (f₀ := γ) (f₁ := ContinuousMap.const _ (γ 0)) ⟨0,by simp,rfl⟩).mpr
+  exact h
+lemma null_reflect_leftInverse {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
+    (p : C(X,Y)) (s : C(Y,X)) (hs : Function.LeftInverse s p) (γ : C(unitInterval,X))
+    (h : (p.comp γ).HomotopicRel (ContinuousMap.const unitInterval (p (γ 0))) {0,1}) :
+    γ.HomotopicRel (ContinuousMap.const unitInterval (γ 0)) {0,1} := by
+  have hh := h.comp_continuousMap s
+  have he : s.comp (p.comp γ) = γ := by ext t; exact hs (γ t)
+  have hc : s.comp (ContinuousMap.const unitInterval (p (γ 0))) = ContinuousMap.const _ (γ 0) := by
+    ext t; exact hs (γ 0)
+  rwa [he,hc] at hh
+lemma null_endpoints {X : Type*} [TopologicalSpace X] (γ : C(unitInterval,X))
+    (h : γ.HomotopicRel (ContinuousMap.const unitInterval (γ 0)) {0,1}) : γ 1 = γ 0 :=
+  (h.some.eq_fst 0 (by simp)).symm.trans (h.some.eq_snd 0 (by simp))
+
+theorem tower_null_reflect (n : ℕ) (X : Fin (n+1) → Type*) [∀ i, TopologicalSpace (X i)]
+    (p : ∀ i : Fin n, C(X i.castSucc,X i.succ)) (hp : ∀ i, IsCoveringMap (p i))
+    (γ : ∀ i, C(unitInterval,X i)) (hγ : ∀ i, (p i).comp (γ i.castSucc) = γ i.succ)
+    (htop : (γ (Fin.last n)).HomotopicRel (ContinuousMap.const _ (γ (Fin.last n) 0)) {0,1}) :
+    (γ 0).HomotopicRel (ContinuousMap.const _ (γ 0 0)) {0,1} := by
+  have hh : ∀ i, (γ i).HomotopicRel (ContinuousMap.const _ (γ i 0)) {0,1} := by
+    intro i
+    induction i using Fin.reverseInduction with
+    | last => exact htop
+    | cast i ih =>
+      apply null_reflect_cover (hp i)
+      change ((p i).comp (γ i.castSucc)).HomotopicRel (ContinuousMap.const _ (((p i).comp (γ i.castSucc)) 0)) {0,1}
+      rw [hγ i]
+      exact ih
+  exact hh 0
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+set_option backward.isDefEq.respectTransparency false
+open CategoryTheory
+universe u v w
+variable {V : Type u} (E : V → V → Type v)
+lemma originalPathClass_append {a b c : V} (p : Path (OrientedEdge (E := E)) a b)
+    (q : Path (OrientedEdge (E := E)) b c) :
+    originalPathClass E (p.append q) = originalPathClass E p ≫ originalPathClass E q := by
+  induction p with
+  | refl a => simp [Path.append,originalPathClass]
+  | cons e p ih =>
+    simp only [Path.append,originalPathClass,ih]
+    exact (Category.assoc _ _ _).symm
+lemma exists_originalPathClass {a b : Quiver.FreeGroupoid (SourceVertex E)} (f : a ⟶ b) :
+    ∃ p : Path (OrientedEdge (E := E)) a.as b.as, originalPathClass E p = f := by
+  induction f using Quiver.FreeGroupoid.hom_rec with
+  | of_map e => exact ⟨.cons (.forward e) (.refl _),by simp [originalPathClass,originalOrientedClass]⟩
+  | inv_of_map e => exact ⟨.cons (.backward e) (.refl _),by simp [originalPathClass,originalOrientedClass]⟩
+  | id x => exact ⟨.refl x,rfl⟩
+  | comp f g ihf ihg =>
+    obtain ⟨p,rfl⟩ := ihf
+    obtain ⟨q,rfl⟩ := ihg
+    exact ⟨p.append q,originalPathClass_append E p q⟩
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+open CategoryTheory
+universe u v w
+variable {V : Type u} (T : SpanningTree.RootedTree V) {C : Type v} (ends : C → V × V)
+variable (E : V → V → Type w) (presentation : ∀ a b, E a b ≃ SpanningTree.Edge T ends a b)
+include ends presentation
+/-- Magnus separation and genuine topological covering homotopy lifting reflect
+null homotopy back to the actual original free groupoid. -/
+theorem null_homotopy_reflects (p : Path (OrientedEdge (E := E)) T.root T.root)
+    [DecidableEq C] (hn : (path E p).Homotopic (_root_.Path.refl (vertex E T.root))) :
+    SpanningTree.originalPathClass E p = 𝟙 _ := by
+  by_contra hp
+  obtain ⟨n,target,S,hpos,hdeg,hsep⟩ := SpanningTree.original_separating_covering_tower T ends E presentation p hp
+  let G := TruncatedMagnus.Group n
+  let U : ∀ {a b}, E a b → G := fun {a b} =>
+    SpanningTree.originalVoltage T ends E presentation (TruncatedMagnus.generator target) (a := a) (b := b)
+  let q : G ⧸ S.subgroup 0 := QuotientGroup.mk 1
+  let l := CoverTower.liftOrientedPath E U (S.subgroup 0) p q
+  let δ : C(unitInterval,Realization (CoverTower.Edge E U (S.subgroup 0))) := (path _ l.2).toContinuousMap
+  let h0 (i : Fin (S.length+1)) : S.subgroup 0 ≤ S.subgroup i := by rw [S.first]; exact bot_le
+  let X (i : Fin (S.length+1)) := Realization (CoverTower.Edge E U (S.subgroup i))
+  let γ (i : Fin (S.length+1)) : C(unitInterval,X i) :=
+    ⟨(realizedProjection E U (h0 i)) ∘ δ,(continuous_realizedProjection E U (h0 i)).comp δ.continuous⟩
+  let f (i : Fin S.length) : C(X i.castSucc,X i.succ) :=
+    ⟨realizedProjection E U (S.le_step i),continuous_realizedProjection E U (S.le_step i)⟩
+  have hf : ∀ i, IsCoveringMap (f i) := fun i => isCoveringMap_realizedProjection E U (S.le_step i) (S.index_step i)
+  have hγ : ∀ i, (f i).comp (γ i.castSucc) = γ i.succ := by
+    intro i
+    ext t
+    exact realizedProjection_comp E U (h0 i.castSucc) (S.le_step i) (δ t)
+  have hforget : (ContinuousMap.comp ⟨forgetRealization E U (S.subgroup 0),continuous_forgetRealization E U _⟩ δ) =
+      (path E p).toContinuousMap := by
+    have he := forget_path E U (S.subgroup 0) l.2
+    have her : CoverTower.eraseOrientedPath E U (S.subgroup 0) l.2 = p := CoverTower.erase_liftOrientedPath _ _ _ p q
+    rw [her] at he
+    exact congrArg (fun z : _root_.Path (vertex E T.root) (vertex E T.root) => z.toContinuousMap) he
+  have hbase : (ContinuousMap.comp ⟨forgetRealization E U (S.subgroup 0),continuous_forgetRealization E U _⟩ δ).HomotopicRel
+      (ContinuousMap.const _ (forgetRealization E U (S.subgroup 0) (δ 0))) {0,1} := by
+    change (ContinuousMap.comp ⟨forgetRealization E U (S.subgroup 0),continuous_forgetRealization E U _⟩ δ).HomotopicRel
+      (ContinuousMap.const _ ((ContinuousMap.comp ⟨forgetRealization E U (S.subgroup 0),continuous_forgetRealization E U _⟩ δ) 0)) {0,1}
+    rw [hforget]
+    rw [show (path E p).toContinuousMap 0 = vertex E T.root from (path E p).source]
+    exact hn
+  have htopAux : ∀ (K : Subgroup G) (hK : S.subgroup 0 ≤ K), K = ⊤ →
+      (ContinuousMap.comp ⟨realizedProjection E U hK,continuous_realizedProjection E U hK⟩ δ).HomotopicRel
+        (ContinuousMap.const _ (realizedProjection E U hK (δ 0))) {0,1} := by
+    intro K hK he
+    subst K
+    apply null_reflect_leftInverse
+      (⟨forgetRealization E U ⊤,continuous_forgetRealization E U ⊤⟩ : C(_,Realization E))
+      ⟨topSection E U,continuous_topSection E U⟩ (topSection_forget E U)
+    have heq : (ContinuousMap.comp ⟨forgetRealization E U ⊤,continuous_forgetRealization E U ⊤⟩
+        (ContinuousMap.comp ⟨realizedProjection E U hK,continuous_realizedProjection E U hK⟩ δ)) =
+        ContinuousMap.comp ⟨forgetRealization E U (S.subgroup 0),continuous_forgetRealization E U _⟩ δ := by
+      ext t
+      exact forget_projection E U hK (δ t)
+    change (ContinuousMap.comp ⟨forgetRealization E U ⊤,continuous_forgetRealization E U ⊤⟩
+        (ContinuousMap.comp ⟨realizedProjection E U hK,continuous_realizedProjection E U hK⟩ δ)).HomotopicRel
+      (ContinuousMap.const _ ((ContinuousMap.comp ⟨forgetRealization E U ⊤,continuous_forgetRealization E U ⊤⟩
+        (ContinuousMap.comp ⟨realizedProjection E U hK,continuous_realizedProjection E U hK⟩ δ)) 0)) {0,1}
+    rw [heq]
+    exact hbase
+  have htop : (γ (Fin.last S.length)).HomotopicRel (ContinuousMap.const _ (γ (Fin.last S.length) 0)) {0,1} :=
+    htopAux _ (h0 _) S.last
+  have hbottom := tower_null_reflect S.length X f hf γ hγ htop
+  have heq : γ 0 = δ := by
+    ext t
+    exact realizedProjection_id E U (S.subgroup 0) (h0 0) (δ t)
+  rw [heq] at hbottom
+  have he := null_endpoints δ hbottom
+  change (path _ l.2) 1 = (path _ l.2) 0 at he
+  rw [(path _ l.2).target,(path _ l.2).source] at he
+  have hend := congrArg Prod.snd (vertex_injective _ he)
+  exact (hsep q).1 hend
+
+theorem originalLoopMap_injective [DecidableEq C] : Function.Injective (originalLoopMap E T.root) := by
+  apply (injective_iff_map_eq_one (originalLoopMap E T.root)).mpr
+  intro g hg
+  obtain ⟨p,hp⟩ := SpanningTree.exists_originalPathClass E g.hom
+  have he := congrArg MulOpposite.unop hg
+  change (comparison E).map g.hom = 𝟙 _ at he
+  rw [← hp,comparison_path] at he
+  have hn : (path E p).Homotopic (_root_.Path.refl (vertex E T.root)) :=
+    _root_.Path.Homotopic.Quotient.exact he
+  have hclass := null_homotopy_reflects T ends E presentation p hn
+  apply SpanningTree.OriginalLoop.ext
+  exact hp.symm.trans hclass
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+open CategoryTheory
+universe u v w
+variable {V : Type u} (E : V → V → Type v)
+lemma exists_vertex_joined (x : Realization E) : ∃ v : V, Joined (vertex E v) x := by
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl v => exact ⟨v,Joined.refl _⟩
+    | inr it =>
+      rcases it with ⟨⟨a,b,e⟩,t⟩
+      refine ⟨a,?_⟩
+      change Joined (vertex E a) (edgePoint E e t)
+      have hp : Joined (edgePoint E e 0) (edgePoint E e t) :=
+        ⟨(initialIntervalPath t).map (continuous_edgePoint E e)⟩
+      simpa only [edgePoint_zero] using hp
+
+theorem comparison_essSurj : (comparison E).EssSurj where
+  mem_essImage y := by
+    obtain ⟨v,⟨p⟩⟩ := exists_vertex_joined E y.as
+    refine ⟨(Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj v,?_⟩
+    exact ⟨(Groupoid.isoEquivHom _ _).symm (_root_.Path.Homotopic.Quotient.mk p)⟩
+
+variable (T : SpanningTree.RootedTree V) {C : Type w} (ends : C → V × V)
+variable (presentation : ∀ a b, E a b ≃ SpanningTree.Edge T ends a b)
+include ends presentation
+noncomputable def sourceConnector (a : Quiver.FreeGroupoid (SpanningTree.SourceVertex E)) :
+    (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj T.root ⟶ a :=
+  SpanningTree.originalPathClass E
+    (SpanningTree.unmapPath T ends E presentation (SpanningTree.treePath T ends a.as))
+
+theorem comparison_faithful [DecidableEq C] : (comparison E).Faithful where
+  map_injective := by
+    intro a b f g he
+    let ca := sourceConnector E T ends presentation a
+    let cb := sourceConnector E T ends presentation b
+    let lf : SpanningTree.OriginalLoop E T.root := ⟨ca ≫ f ≫ inv cb⟩
+    let lg : SpanningTree.OriginalLoop E T.root := ⟨ca ≫ g ≫ inv cb⟩
+    have hmap : originalLoopMap E T.root lf = originalLoopMap E T.root lg := by
+      apply MulOpposite.unop_injective
+      change (comparison E).map (ca ≫ f ≫ inv cb) = (comparison E).map (ca ≫ g ≫ inv cb)
+      simp only [CategoryTheory.Functor.map_comp,he]
+    have hh := congrArg (fun l : SpanningTree.OriginalLoop E T.root => l.hom)
+      (originalLoopMap_injective T ends E presentation hmap)
+    have hhh := congrArg (fun k => inv ca ≫ k ≫ cb) hh
+    simpa [lf,lg,Category.assoc] using hhh
+
+theorem paths_homotopic_iff [DecidableEq C] {a b : V}
+    (p q : Path (OrientedEdge (E := E)) a b) :
+    (path E p).Homotopic (path E q) ↔ SpanningTree.originalPathClass E p = SpanningTree.originalPathClass E q := by
+  rw [← _root_.Path.Homotopic.Quotient.eq,← comparison_path,← comparison_path]
+  exact (comparison_faithful E T ends presentation).map_injective.eq_iff
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+open CategoryTheory
+variable {V : Type*} (E : V → V → Type*)
+/-- Exact remaining surjectivity obligation, not a surjectivity assumption or
+an asserted equivalence: all actual continuous loop classes must have raw edge representatives. -/
+theorem originalLoopMap_surjective_iff_edgeLoops (root : V) :
+    Function.Surjective (originalLoopMap E root) ↔
+      ∀ γ : _root_.Path (vertex E root) (vertex E root),
+        ∃ p : Path (OrientedEdge (E := E)) root root, γ.Homotopic (path E p) := by
+  constructor
+  · intro h γ
+    obtain ⟨g,hg⟩ := h (MulOpposite.op (_root_.Path.Homotopic.Quotient.mk γ))
+    obtain ⟨p,hp⟩ := SpanningTree.exists_originalPathClass E g.hom
+    refine ⟨p,?_⟩
+    have he := congrArg MulOpposite.unop hg
+    change (comparison E).map g.hom = _root_.Path.Homotopic.Quotient.mk γ at he
+    rw [← hp,comparison_path] at he
+    exact _root_.Path.Homotopic.Quotient.exact he.symm
+  · intro h g
+    obtain ⟨γ,hγ⟩ := _root_.Path.Homotopic.Quotient.mk_surjective (MulOpposite.unop g)
+    obtain ⟨p,hp⟩ := h γ
+    refine ⟨⟨SpanningTree.originalPathClass E p⟩,?_⟩
+    rw [originalLoopMap_path]
+    apply MulOpposite.unop_injective
+    change _root_.Path.Homotopic.Quotient.mk (path E p) = MulOpposite.unop g
+    exact (_root_.Path.Homotopic.Quotient.eq.mpr hp.symm).trans hγ
+
+variable {G : Type*} [Group G] [Finite G] (U : ∀ {a b}, E a b → G)
+theorem realized_indexTwoSeries (S : CoverTower.TwoSeries G) :
+    (∀ i : Fin S.length, IsCoveringMap (realizedProjection E U (S.le_step i))) ∧
+    ∀ (i : Fin S.length) (y : Realization (CoverTower.Edge E U (S.subgroup i.succ))),
+      Nat.card {x : Realization (CoverTower.Edge E U (S.subgroup i.castSucc)) //
+        realizedProjection E U (S.le_step i) x = y} = 2 :=
+  ⟨fun i => isCoveringMap_realizedProjection E U (S.le_step i) (S.index_step i),
+    fun i y => realizedProjection_fiber_two E U (S.le_step i) (S.index_step i) y⟩
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+open CategoryTheory
+universe u v w
+variable {V : Type u} (T : RootedTree V) {C : Type v} (ends : C → V × V)
+variable (E : V → V → Type w) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+theorem connected_topological_separating_tower [DecidableEq C]
+    (p : Path (OrientedEdge (E := E)) T.root T.root) (hp : originalPathClass E p ≠ 𝟙 _) :
+    ∃ (n : ℕ) (target : Fin n → C)
+      (S : CoverTower.TwoSeries (ConnectedImage.Image (TruncatedMagnus.generator target))),
+      0 < S.length ∧
+      (∀ i, PathConnectedSpace (Geometric.Realization (CoverTower.Edge E
+        (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target))) (S.subgroup i)))) ∧
+      (∀ i : Fin S.length, IsCoveringMap (Geometric.realizedProjection E
+        (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target))) (S.le_step i))) ∧
+      (∀ (i : Fin S.length) (y : Geometric.Realization (CoverTower.Edge E
+        (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target))) (S.subgroup i.succ))),
+        Nat.card {x : Geometric.Realization (CoverTower.Edge E
+          (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target))) (S.subgroup i.castSucc)) //
+          Geometric.realizedProjection E
+            (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target))) (S.le_step i) x = y} = 2) ∧
+      ∀ q : ConnectedImage.Image (TruncatedMagnus.generator target) ⧸ S.subgroup 0,
+        (CoverTower.liftOrientedPath E
+          (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target)))
+          (S.subgroup 0) p q).1 ≠ q := by
+  obtain ⟨n,target,S,hpos,hcon,hdeg,hsep⟩ := connected_separating_covering_tower T ends E presentation p hp
+  have hs := Geometric.realized_indexTwoSeries E
+    (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target))) S
+  exact ⟨n,target,S,hpos,
+    fun i => generated_cover_realization_pathConnected T ends E presentation _ (S.subgroup i),
+    hs.1,hs.2,fun q => (hsep q).1⟩
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
