@@ -6,7 +6,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 - Keep maintained mathematical source, mathematical exposition and provenance
   records, and necessary repository-integrity support here.
-  Support includes licensing, dependency/build configuration, isolated adapters,
+  Support includes licensing, dependency/build configuration, isolated adaptations,
   justified verification fixtures, static verification specifications and
   repository instructions. Preserve source proof candidates at their actual
   evidence status; admission does not imply mathematical acceptance.
@@ -50,9 +50,9 @@ This repository is the canonical pure mathematical source for GRWTSK.
   the checked-out source tree; historical namespaces need not match paths.
 - Store provider-derived Lean source in the canonical `GRWTSK/` subject tree.
   Use relative per-file links from isolated packages under
-  `docs/adapters/`; keep their dependency pins and build targets
+  `docs/adaptations/`; keep their dependency pins and build targets
   separate from the root build.
-- Keep incompatible upstream adapters outside the local default build. Do not
+- Keep incompatible upstream adaptations outside the local default build. Do not
   promote root imports or change dependency versions merely to publish a candidate.
 
 ## Mathematical claims and evidence
@@ -97,6 +97,19 @@ This repository is the canonical pure mathematical source for GRWTSK.
   existing PW-0 codec or historical receipts.
 
 ## Source references and documentation
+
+- Develop and check adaptations locally before bringing them into this repository.
+  Publish each adapted theorem with its own Markdown provenance record beside
+  the maintained theorem source. This theorem-local record is required even
+  though repository-level documentation remains intentionally sparse.
+- Each record identifies the local file and fully qualified declaration, upstream
+  authors and paper edition or repository, exact theorem/locator and revision,
+  available source digest, and direct reference links. Explain retained hypotheses,
+  changes in statement or representation, the mathematical consumer, unresolved
+  bridges, and actual verification outcomes; mark unperformed checks `NOT_RUN`.
+- Existing imported surfaces are not retroactively qualified adaptations. Before
+  adding, revising or presenting one as an adapted theorem, supply its individual
+  source-bound Markdown record. Never invent provenance or verification evidence.
 
 - For paper-derived formalizations, cite the actual paper, edition, authors,
   exact theorem or method, and hypotheses in source comments or the associated
