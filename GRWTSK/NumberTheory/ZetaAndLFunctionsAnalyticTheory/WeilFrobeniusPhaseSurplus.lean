@@ -365,7 +365,9 @@ theorem liftReal_correlation_im_zero
     (correlation (liftReal f) r).im = 0 := by
   have hi := integrable_correlation_integrand hf r
   unfold correlation
-  rw [← integral_im hi]
+  have him := integral_im hi
+  simp only [RCLike.im_to_complex] at him
+  rw [← him]
   simp [liftReal, Complex.mul_im]
 
 /-- Improved bound on the ORIGINAL individual chi source, but only

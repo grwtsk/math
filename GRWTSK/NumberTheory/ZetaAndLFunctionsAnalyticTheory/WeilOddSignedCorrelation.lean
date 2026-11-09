@@ -29,17 +29,22 @@ summand. The C2 extension, strict integral negativity and explicit native
 chi_3 construction are NOT formalized here; only the general nonpositive
 sign mechanism and scalar strict-sign implication are formalized below.
 No novelty claimed. No source positivity, primitive stage, RH or GRH follows.
-The real lift is essential: arbitrary complex tests/nonreal characters must
-keep the original conjugation and cannot inherit this sign assertion.
+The real lift is essential: arbitrary complex tests cannot inherit this sign
+assertion. For a nonreal character the native summand return below uses the
+proved reality of the real-test correlation and retains the paired weight.
 Assistant-generated formal candidate under human research direction;
-no independent analytic review or formal verification has been run.
+no independent analytic review has been run. Issue #1789 follow-up checked
+the restricted signed-correlation fragment with Lean v4.34.1, including the
+explicit RCLike-to-Complex integral projections and native summand return.
+Full-module compilation remains blocked by dependency failures; no fresh
+kernel replay or transitive axiom audit was run.
 -/
 set_option autoImplicit false
 noncomputable section
 open MeasureTheory Set
 open scoped ComplexConjugate
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddSignedCorrelation
-open SourcePrimeCorrelation DirichletStageChain
+open SourcePrimeCorrelation DirichletStageChain LowSchur
 
 /-- Pointwise sign from physical support and oddness, not arithmetic magnitudes. -/
 theorem overlap_nonpos_of_odd_nonneg
@@ -75,7 +80,9 @@ theorem correlation_re_nonpos_of_odd_nonneg
     (correlation (liftReal f) r).re ≤ 0 := by
   have hi := integrable_correlation_integrand hf r
   unfold correlation
-  rw [← integral_re hi]
+  have hre := integral_re hi
+  simp only [RCLike.re_to_complex] at hre
+  rw [← hre]
   apply integral_nonpos
   intro t
   have h := overlap_nonpos_of_odd_nonneg hodd hpositive hr hsupport t
@@ -100,5 +107,35 @@ theorem weighted_correlation_summand_nonpos
     -2*w*(correlation (liftReal f) r).re ≤ 0 :=
   negative_weight_summand_nonpos hw
     (correlation_re_nonpos_of_odd_nonneg hf hodd hpositive hr hsupport)
+
+/-- The individual summand in the ORIGINAL twistedPrime, before summing all
+active prime powers. Reality comes from the actual real-test integral; the
+character itself need not be real. No other summands are deleted. -/
+theorem native_prime_summand_eq
+    {N : ℕ} [NeZero N] (chi : DirichletCharacter ℂ N) (n : ℕ)
+    {f : ℝ → ℝ} (hf : MemLp (liftReal f) 2 volume) (r : ℝ) :
+    -2 * primeWeight n *
+        (conj (chi (n : ZMod N)) * correlation (liftReal f) r).re =
+      -2 * OddRootProjection.pairedPrimeWeight chi n *
+        (correlation (liftReal f) r).re := by
+  have hreal := FrobeniusPhaseSurplus.liftReal_correlation_im_zero f r hf
+  simp [Complex.mul_re, hreal, OddRootProjection.pairedPrimeWeight]
+  <;> ring
+
+/-- Source-return obstruction at the logarithmic prime-power shift. The sign
+is conditional on the actual paired weight and the original support bound. -/
+theorem native_prime_summand_nonpos
+    {N : ℕ} [NeZero N] (chi : DirichletCharacter ℂ N) (n : ℕ)
+    {f : ℝ → ℝ} (hf : MemLp (liftReal f) 2 volume)
+    (hodd : Function.Odd f)
+    (hpositive : ∀ t : ℝ, 0 ≤ t → 0 ≤ f t)
+    {T : ℝ} (hr : T ≤ Real.log (n : ℝ))
+    (hw : OddRootProjection.pairedPrimeWeight chi n ≤ 0)
+    (hsupport : ∀ t, t ∉ Icc (-T) T → f t = 0) :
+    -2 * primeWeight n *
+      (conj (chi (n : ZMod N)) *
+        correlation (liftReal f) (Real.log (n : ℝ))).re ≤ 0 := by
+  rw [native_prime_summand_eq chi n hf]
+  exact weighted_correlation_summand_nonpos hf hodd hpositive hr hw hsupport
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddSignedCorrelation

@@ -75,7 +75,11 @@ Low-lying zeros of Dirichlet L-functions, 2012 manuscript, (2.2), as in
 WeilOddRootProjection. This module does not establish the completed explicit
 formula. Human-supplied research direction; assistant-generated source and
 analytical synthesis; exact rational calculations corroborated separately.
-No independent referee review, compilation or kernel/axiom receipt exists.
+Issue #1789 follow-up: restricted finite-extraction and source-return fragments
+elaborated with Lean v4.34.1; full-module compilation is blocked by existing
+dependency failures (including WeilGammaData). Fragment checking does not
+verify the imported dependency chain or the paired-band return theorem.
+No independent referee review, fresh kernel replay or axiom audit was run.
 -/
 set_option autoImplicit false
 noncomputable section
@@ -153,6 +157,29 @@ theorem finite_density_le_gammaDensity (n : ℕ) (f : ℝ → ℂ)
     integral_nonneg (fun _ => sq_nonneg _)
   have h := mul_le_mul_of_nonneg_right (finite_kernel_le_parityKernel n hr) hE
   simpa [exponentialDensity, gammaCorrectionDensity, Finset.sum_mul] using h
+
+/-- Exact finite remainder in the ORIGINAL kernel, including the empty prefix.
+This is a pointwise identity, not an interchange with an infinite series. -/
+theorem finite_kernel_remainder (n : ℕ) {r : ℝ} (hr : 0 < r) :
+    parityKernel 1 r - (∑ j ∈ Finset.range n, exponentialKernelPiece j r) =
+      parityKernel 1 r * Real.exp (-2*r)^n := by
+  have hb : Real.exp (-2*r) < 1 := by
+    rw [← Real.exp_zero]
+    exact Real.exp_lt_exp.mpr (by linarith)
+  have hd : 1 - Real.exp (-2*r) ≠ 0 := ne_of_gt (sub_pos.mpr hb)
+  have hg := finite_geometric_identity (Real.exp (-2*r)) n
+  have hkernel : parityKernel 1 r =
+      Real.exp (-(3/2:ℝ)*r)/(1-Real.exp (-2*r)) := by
+    unfold parityKernel
+    norm_num
+  rw [hkernel]
+  simp only [exponentialKernelPiece, ← Finset.mul_sum]
+  have hs : (∑ j ∈ Finset.range n, Real.exp (-2*r)^j) =
+      (1-Real.exp (-2*r)^n)/(1-Real.exp (-2*r)) := by
+    apply (eq_div_iff hd).2
+    nlinarith [hg]
+  rw [hs]
+  ring
 
 /-- Finite extraction, with all Bochner integrability assumptions explicit. -/
 theorem finite_exponentialGamma_le_gamma (n : ℕ) (f : ℝ → ℂ)
@@ -244,6 +271,24 @@ theorem source_remainder_identity
       twistedPrime T chi (fun n => correlation f (Real.log (n:ℝ))) := by
   unfold primitiveArithmeticValue
   ring
+
+/-- Exact joint return: the signed prime response may be controlled against
+the FULL gamma remainder. No positivity or independent bound for either
+residual is inferred. This equivalence preserves the original admissible class. -/
+theorem stage_iff_signed_prime_le_gamma_remainder
+    {N : ℕ} [NeZero N] (chi : DirichletCharacter ℂ N)
+    (hp : chi.IsPrimitive) (hn : chi ≠ 1) (j : ℕ) (b : ℝ) :
+    PrimitiveStageLower chi hp hn j ↔
+      ∀ f : ℝ → ℝ, Admissible chi ((j:ℝ)+1) f →
+        twistedPrime ((j:ℝ)+1) chi
+          (fun n => correlation (liftReal f) (Real.log (n:ℝ))) -
+          ((∫ r in Ioi (0:ℝ),
+            gammaCorrectionDensity (gammaParity chi) (liftReal f) r) -
+            b*energy (liftReal f)) ≤
+          (gammaConstant N (gammaParity chi)+b+(1/2:ℝ)^j)*
+            energy (liftReal f) := by
+  unfold PrimitiveStageLower primitiveArithmeticValue
+  constructor <;> intro h f hf <;> have hh := h f hf <;> nlinarith
 
 /-- Conditional source return at the exact original stage, with no mass or
 phase replacement. The gamma estimate and signed-prime estimate are separate. -/
