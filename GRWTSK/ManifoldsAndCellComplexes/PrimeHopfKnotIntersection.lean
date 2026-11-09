@@ -1,7 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Source-level candidate for grwtsk/math at 0290551b75a7c5b07a807a5dd7f72bd575e35e0e.
-Native Lean elaboration, fresh kernel replay, transitive axiom audit,
-and independent review: NOT_RUN unless separately recorded. -/
+Native Lean elaboration succeeded with Lean 4.34.1 and project-pinned mathlib;
+see the Hopf theorems' individual provenance records. Fresh kernel replay,
+transitive axiom audit and independent analytical review NOT_RUN. -/
 import GRWTSK.ManifoldsAndCellComplexes.PrimeHopfKnotProjection
 import Mathlib
 

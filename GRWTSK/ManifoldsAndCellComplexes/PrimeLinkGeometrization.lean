@@ -1,6 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical source candidate. Lean elaboration, fresh kernel replay,
-transitive axiom audit, and independent review NOT_RUN. -/
+Mathematical source candidate. Native Lean elaboration succeeded with Lean
+4.34.1 and the project-pinned mathlib; scope is recorded in theorem-local
+provenance. Fresh kernel replay, transitive axiom audit and independent
+analytical review NOT_RUN. -/
 import GRWTSK.ManifoldsAndCellComplexes.PrimeLoopGeometrization
 import Mathlib
 
@@ -49,10 +51,12 @@ structure PrimePair where
 def gap (x : PrimePair) : ℕ := x.q - x.p
 
 theorem gap_pos (x : PrimePair) : 0 < gap x := by
+  have h := x.ordered
   dsimp [gap]
   omega
 
 theorem p_add_gap (x : PrimePair) : x.p + gap x = x.q := by
+  have h := x.ordered
   dsimp [gap]
   omega
 

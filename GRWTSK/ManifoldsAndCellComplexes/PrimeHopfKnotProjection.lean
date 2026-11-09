@@ -1,6 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical source candidate. Lean elaboration, fresh kernel replay,
-transitive axiom audit, and independent review NOT_RUN. -/
+Mathematical source candidate. Native Lean elaboration succeeded with Lean
+4.34.1 and the project-pinned mathlib; scope is recorded in theorem-local
+provenance. Fresh kernel replay, transitive axiom audit and independent
+analytical review NOT_RUN. -/
 import GRWTSK.ManifoldsAndCellComplexes.PrimeSphericalDisplacement
 import Mathlib
 
@@ -127,7 +129,11 @@ theorem winding_pattern_vs_relativeDegree (m : ℕ)
     (i j : Fin (m + 1)) (hij : i < j) :
     ((windingAt m pattern p j - windingAt m pattern p i) / 2 : ℤ) =
       SphericalPrimeDisplacement.relativeDegree m pattern i j := by
-  rw [winding_pattern_gap m pattern p hp i j hij]
+  have hle : windingAt m pattern p i ≤ windingAt m pattern p j := by
+    have hm := pattern.strictlyIncreasing hij
+    dsimp [windingAt, projectedWinding, PostZhang.component]
+    omega
+  rw [← Nat.cast_sub (R := ℤ) hle, winding_pattern_gap m pattern p hp i j hij]
   have hgap := SphericalPrimeDisplacement.relativeDegree_ordered
     m pattern i j hij
   rw [hgap]

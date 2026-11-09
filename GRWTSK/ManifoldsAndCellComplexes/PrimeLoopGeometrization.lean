@@ -1,6 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical source candidate. Lean elaboration, fresh kernel replay,
-transitive axiom audit and independent review NOT_RUN. -/
+Mathematical source candidate. Native Lean elaboration succeeded with Lean
+4.34.1 and the project-pinned mathlib; scope is recorded in theorem-local
+provenance. Fresh kernel replay, transitive axiom audit and independent
+analytical review NOT_RUN. -/
 import GRWTSK.Combinatorics.GraphTheory.VoltageCoverLoopSeparation
 import Mathlib
 
@@ -68,7 +70,9 @@ def detachSheet (p : LiftedEdgeOccurrence E U) :
 @[simp] theorem attach_detach (p : LiftedEdgeOccurrence E U) :
     attachSheet E U (detachSheet E U p) = p := by
   rcases p with ⟨⟨a, g⟩, ⟨⟨b, h⟩, ⟨e, he⟩⟩⟩
-  cases he
+  dsimp only at e he
+  change g * U e = h at he
+  subst h
   rfl
 
 /-- The covering has EXACTLY one lift of each old edge from each sheet. -/
