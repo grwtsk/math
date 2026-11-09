@@ -98,8 +98,10 @@ theorem character_frobenius_laplacian (χ : DirichletCharacter ℂ n)
       fun u : UnitFiber n =>
         ((2 : ℂ) - χ p -
             χ ((frobeniusUnit n p hprime hp)⁻¹ : ZMod n)) * χ (u : ZMod n) := by
-  simpa [characterOnUnits, frobeniusUnit] using
-    (character_eigen (frobeniusUnit n p hprime hp) (characterOnUnits n χ))
+  have h := character_eigen (frobeniusUnit n p hprime hp) (characterOnUnits n χ)
+  change cycleLaplacian _ _ = _ at h
+  rw [character_frobenius_value] at h
+  exact h
 
 /-- Character phase = 1 iff its unit-fiber mode is a loop-invariant,
 zero-energy mode in the ACTUAL finite cyclotomic geometry. -/

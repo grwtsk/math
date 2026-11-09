@@ -28,6 +28,7 @@ AI-assisted source; compilation, kernel checking, axiom audit, review: NOT_RUN.
 -/
 
 set_option autoImplicit false
+open Classical
 noncomputable section
 open Filter Set Metric
 open scoped Topology BigOperators

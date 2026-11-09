@@ -54,7 +54,7 @@ theorem integral_pair_sq_le {u h : ℝ → ℝ}
   let B := ∫ t : ℝ, u t * h t
   have hu2 := hu.integrable_sq
   have hh2 := hh.integrable_sq
-  have huh := hu.integrable_mul hh
+  have huh : Integrable (fun t : ℝ => u t * h t) := hu.integrable_mul hh
   have hquad (r : ℝ) : 0 ≤ r ^ 2 * M - 2 * r * B + R := by
     have heq : (∫ t : ℝ, (r * u t - h t) ^ 2) = r ^ 2 * M - 2 * r * B + R := by
       calc
@@ -63,9 +63,10 @@ theorem integral_pair_sq_le {u h : ℝ → ℝ}
           filter_upwards [] with t
           ring
         _ = _ := by
-          rw [integral_add ((hu2.const_mul _).sub (huh.const_mul _)) hh2,
-            integral_sub (hu2.const_mul _) (huh.const_mul _),
+          rw [integral_add (f := fun t : ℝ => r ^ 2 * u t ^ 2 - (2 * r) * (u t * h t)) ((hu2.const_mul (r^2)).sub (huh.const_mul (2*r))) hh2,
+            integral_sub (hu2.const_mul (r^2)) (huh.const_mul (2*r)),
             integral_const_mul, integral_const_mul]
+          rfl
     rw [← heq]
     exact integral_nonneg (fun _ => sq_nonneg _)
   have hM : 0 ≤ M := coordinateMass_nonneg u
@@ -127,13 +128,13 @@ theorem sineSquareMass_le_momentPrice {sigma : ℝ → ℝ} (xi : ℝ)
     _ ≤ ∫ t : ℝ, xi ^ 2 * (t ^ 2 * sigma t ^ 2) -
         (xi ^ 4 / 3) * (t ^ 4 * sigma t ^ 2) +
         (2 * xi ^ 6 / 45) * (t ^ 6 * sigma t ^ 2) := by
-      apply integral_mono hs hp
+      apply integral_mono hs (g := fun t : ℝ => xi ^ 2 * (t ^ 2 * sigma t ^ 2) - (xi ^ 4 / 3) * (t ^ 4 * sigma t ^ 2) + (2 * xi ^ 6 / 45) * (t ^ 6 * sigma t ^ 2)) hp
       intro t
       have h := mul_le_mul_of_nonneg_left (sin_sq_le_sextic (xi * t)) (sq_nonneg (sigma t))
       convert h using 1 <;> ring
     _ = _ := by
-      rw [integral_add ((h2.const_mul _).sub (h4.const_mul _)) (h6.const_mul _),
-        integral_sub (h2.const_mul _) (h4.const_mul _)]
+      rw [integral_add (f := fun t : ℝ => xi ^ 2 * (t ^ 2 * sigma t ^ 2) - (xi ^ 4 / 3) * (t ^ 4 * sigma t ^ 2)) ((h2.const_mul (xi^2)).sub (h4.const_mul (xi^4/3))) (h6.const_mul (2*xi^6/45)),
+        integral_sub (h2.const_mul (xi^2)) (h4.const_mul (xi^4/3))]
       simp only [integral_const_mul]
 
 /-- Literal negative-band readout with the unitary normalization squared. -/
@@ -178,7 +179,7 @@ theorem oddBandObservation_le_signedMomentPrice {sigma u : ℝ → ℝ}
       M * (a * frequencyMoment 2 - b * frequencyMoment 4 + c * frequencyMoment 6) := by
     dsimp [rhs]
     rw [integral_const_mul,
-      integral_add ((hi2.const_mul a).sub (hi4.const_mul b)) (hi6.const_mul c),
+      integral_add (f := fun xi : ℝ => a * (baseNegativeBand xi * xi^2) - b * (baseNegativeBand xi * xi^4)) ((hi2.const_mul a).sub (hi4.const_mul b)) (hi6.const_mul c),
       integral_sub (hi2.const_mul a) (hi4.const_mul b)]
     simp only [integral_const_mul, frequencyMoment]
   rw [heval] at hbound

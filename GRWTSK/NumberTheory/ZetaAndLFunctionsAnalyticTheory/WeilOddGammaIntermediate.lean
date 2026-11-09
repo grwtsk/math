@@ -2,7 +2,7 @@
 Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
+SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_PASS /
 FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
 INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
 -/
@@ -75,10 +75,10 @@ Low-lying zeros of Dirichlet L-functions, 2012 manuscript, (2.2), as in
 WeilOddRootProjection. This module does not establish the completed explicit
 formula. Human-supplied research direction; assistant-generated source and
 analytical synthesis; exact rational calculations corroborated separately.
-Issue #1789 follow-up: restricted finite-extraction and source-return fragments
-elaborated with Lean v4.34.1; full-module compilation is blocked by existing
-dependency failures (including WeilGammaData). Fragment checking does not
-verify the imported dependency chain or the paired-band return theorem.
+Issue #1789 dependency-repair follow-up: this full module and its imports
+build with Lean v4.34.1 at the unchanged Mathlib pin above, including the
+paired-band return theorem. This checks derivability with the stated premises;
+it does not discharge the continuum resolvent or signed-prime hypotheses.
 No independent referee review, fresh kernel replay or axiom audit was run.
 -/
 set_option autoImplicit false

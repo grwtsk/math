@@ -33,6 +33,7 @@ operator with a holonomy Laplacian, or prove any spectral sign, RH, GRH.
 -/
 
 set_option autoImplicit false
+open scoped ComplexConjugate
 
 noncomputable section
 

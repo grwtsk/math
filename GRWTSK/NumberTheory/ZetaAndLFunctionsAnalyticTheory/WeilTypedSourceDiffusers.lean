@@ -61,6 +61,7 @@ TRANSITIVE_AXIOM_AUDIT_NOT_RUN / INDEPENDENT_ANALYTIC_REVIEW_NOT_RUN.
 -/
 
 set_option autoImplicit false
+open GRWTSK.LinearAlgebra.SchurObserver
 noncomputable section
 
 open Matrix MeasureTheory Set

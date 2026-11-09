@@ -146,15 +146,15 @@ theorem scale_radius_budget (R : ℝ) (nonnegative : 0 ≤ R) (M : ℕ) :
   have hNR : R ≤ (N : ℝ) * R := by
     nlinarith [mul_nonneg (sub_nonneg.mpr hN) nonnegative]
   unfold CubicApproximation.radiusBudget
-  rw [mul_div_assoc]
+  simp only [← mul_div_assoc]
   apply div_le_div_of_nonneg_right _ (by positivity)
   calc
     (N : ℝ) * (R * (R + 1) * (R + 2)) =
         ((N : ℝ) * R) * (R + 1) * (R + 2) := by ring
     _ ≤ ((N : ℝ) * R) * ((N : ℝ) * R + 1) * ((N : ℝ) * R + 2) :=
       mul_le_mul
-        (mul_le_mul_of_nonneg_left (add_le_add_right hNR 1) (mul_nonneg hN0 nonnegative))
-        (add_le_add_right hNR 2) (by positivity) (by positivity)
+        (mul_le_mul_of_nonneg_left (add_le_add hNR le_rfl) (mul_nonneg hN0 nonnegative))
+        (add_le_add hNR le_rfl) (by positivity) (by positivity)
 
 /-- Explicit finite cutoff depending on modulus, core and accuracy, not on the character. -/
 def coreCutoff (N n k : ℕ) : ℕ := CubicApproximation.coreCutoff (N * n) k
@@ -222,6 +222,6 @@ theorem nonzero_of_model_gap (χ : DirichletCharacter ℂ N) (M : ℕ) (s invers
 
 theorem zero_obstructs_residual (χ : DirichletCharacter ℂ N) (s u : ℂ)
     (zero : χ.LFunction s = 0) : ‖residual (χ.LFunction s) u 1‖ = 1 := by
-  simp [residual, zero]
+  simp [GRWTSK.Analysis.Division.residual, zero]
 
 end GRWTSK.NumberTheory.Conditional.CharacterEuler

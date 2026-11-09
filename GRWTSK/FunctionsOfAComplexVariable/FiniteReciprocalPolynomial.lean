@@ -128,8 +128,8 @@ theorem residual_bound_closed {F P v : ℂ} {E r : ℝ}
   calc
     r ^ m + E * ‖v‖ * mass r m ≤
         r ^ m + E * ‖v‖ * (1 / (1 - r)) :=
-      add_le_add_left (mul_le_mul_of_nonneg_left (mass_le hr hlt m)
-        (mul_nonneg hE (norm_nonneg _))) _
+      add_le_add le_rfl (mul_le_mul_of_nonneg_left (mass_le hr hlt m)
+        (mul_nonneg hE (norm_nonneg v)))
     _ = r ^ m + E * ‖v‖ / (1 - r) := by ring
 
 theorem nonzero_of_budget {F P v : ℂ} {E r : ℝ}

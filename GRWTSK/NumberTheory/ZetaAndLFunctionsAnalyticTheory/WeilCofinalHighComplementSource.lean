@@ -82,7 +82,7 @@ open MeasureTheory Set
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddLiteralCofinal.CofinalHighComplement
 
 open OddHighComplement OddLiteralWindow OddSineParseval OddRootProjection
-open OddShiftEnergy
+open OddShiftEnergy OddWrapEnergy
 open GRWTSK.NumberTheory.WeilQuadraticForm.WeightedStage
 open GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory
 

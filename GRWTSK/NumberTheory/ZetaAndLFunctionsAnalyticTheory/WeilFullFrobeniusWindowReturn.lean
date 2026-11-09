@@ -9,6 +9,7 @@ INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.TotientFrobeniusProjectedWeilReturn
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilDirichletStageChain
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddRootProjection
 import Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt
 import Mathlib.Algebra.IsPrimePow
 import Mathlib.Tactic
@@ -76,6 +77,7 @@ independent analytic review: NOT_RUN.
 -/
 
 set_option autoImplicit false
+open Classical
 noncomputable section
 open scoped BigOperators ComplexConjugate
 open MeasureTheory Set
@@ -154,7 +156,7 @@ theorem nativeWindowTerm_zero_of_not_unramified
     have hqzero : chi q = 0 := by
       calc
         chi q = chi (p ^ m) :=
-          congrArg (fun t : ℕ => chi t) hvalue.symm
+          by simpa only [Nat.cast_pow] using congrArg (fun t : ℕ => chi t) hvalue.symm
         _ = (chi p) ^ m :=
           dirichlet_prime_power_phase chi p m
         _ = 0 := by rw [hpzero]; exact zero_pow hm.ne'
@@ -171,7 +173,7 @@ noncomputable def projectedWindowTerm
     let witness := choosePrimePower N q h
     projectedPrimePowerTerm N chi
       witness.1.1 witness.1.2
-      witness.2.1 witness.2.2.2 C
+      witness.2.1 witness.2.2.2.2 C
   else 0
 
 /-- This identity is for EVERY integer q, with neither a supplied
@@ -184,8 +186,8 @@ theorem projectedWindowTerm_eq_native
   split_ifs with h
   · let w := choosePrimePower N q h
     have hprime : Nat.Prime w.1.1 := w.2.1
-    have hvalue : w.1.1 ^ w.1.2 = q := w.2.2.1
-    have hcoprime : Nat.Coprime w.1.1 N := w.2.2.2
+    have hvalue : w.1.1 ^ w.1.2 = q := w.2.2.2.1
+    have hcoprime : Nat.Coprime w.1.1 N := w.2.2.2.2
     change projectedPrimePowerTerm N chi w.1.1 w.1.2
       hprime hcoprime C = nativeWindowTerm N chi C q
     calc
@@ -196,7 +198,8 @@ theorem projectedWindowTerm_eq_native
           (conj (chi (w.1.1 ^ w.1.2)) *
             C (w.1.1 ^ w.1.2)).re :=
         primePowerHolonomyTerm_eq_source chi C w.1.1 w.1.2
-      _ = nativeWindowTerm N chi C q := by rw [hvalue]; rfl
+      _ = nativeWindowTerm N chi C q := by
+          simp only [nativeWindowTerm, ← Nat.cast_pow, hvalue]
   · exact (nativeWindowTerm_zero_of_not_unramified N chi C q h).symm
 
 /-- The full projected arithmetic window uses exactly the source

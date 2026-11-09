@@ -93,7 +93,7 @@ theorem moment_price_lt (m2 m4 m6 j2 j4 j6 : ℝ)
     exact_mod_cast moment_numerator_nonneg
   have hpi : (157 / 50 : ℝ) ≤ Real.pi := by linarith [Real.pi_gt_d2]
   have hrat : (momentNumerator : ℝ) / (2 * (157 / 50 : ℝ)) < 41 / 500 := by
-    exact_mod_cast moment_price_rational_lt
+    norm_num [momentNumerator, m2Upper, m4Lower, m6Upper, j2Upper, j4Lower, j6Upper]
   calc
     _ ≤ (momentNumerator : ℝ) / (2 * Real.pi) :=
       div_le_div_of_nonneg_right hn (by positivity)

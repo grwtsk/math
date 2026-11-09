@@ -68,7 +68,7 @@ theorem corrected_cubic_tail (q σ : ℝ) (base : 1 ≤ q) (margin : -2 < σ)
       ‖s + 3‖ * decayPower (σ + 3) q / (720 * (σ + 3)) := by
   have partialLimit := (summable_cells q base s (margin.trans_le halfPlane)).hasSum.tendsto_sum_nat
   have endpointLimit := terminal_shifted_power q (zero_lt_one.trans_le base) (-s - 3) (by
-    simp only [Complex.sub_re, Complex.neg_re, Complex.ofNat_re]
+    norm_num [Complex.sub_re, Complex.neg_re]
     linarith)
   have limit := partialLimit.sub
     (((tendsto_const_nhds (x := logPower q (-s - 3))).sub endpointLimit).div_const (720 : ℂ))
@@ -149,13 +149,18 @@ theorem source_radius_bound (N : ℕ) (s : ℂ) {R : ℝ}
     ‖riemannZeta s - approximation4 N s‖ ≤ radiusBudget R N := by
   have hR : 0 ≤ R := (norm_nonneg _).trans size
   have shifted (k : ℕ) : ‖s + (k : ℂ)‖ ≤ R + k := by
-    simpa using (norm_add_le s (k : ℂ)).trans (add_le_add_right size ‖(k : ℂ)‖)
+    calc
+      ‖s + (k : ℂ)‖ ≤ ‖s‖ + ‖(k : ℂ)‖ := norm_add_le _ _
+      _ ≤ R + k := by simpa using add_le_add size (le_refl ‖(k : ℂ)‖)
+  have shifted1 : ‖s + 1‖ ≤ R + 1 := by simpa using shifted 1
+  have shifted2 : ‖s + 2‖ ≤ R + 2 := by simpa using shifted 2
+  have shifted3 : ‖s + 3‖ ≤ R + 3 := by simpa using shifted 3
   refine (source_bound_nonnegative N s halfPlane pole).trans ?_
   apply div_le_div_of_nonneg_right _ (by have h := cutoff_pos N; positivity)
   exact mul_le_mul
-    (mul_le_mul (mul_le_mul size (shifted 1) (norm_nonneg _) hR)
-      (shifted 2) (norm_nonneg _) (by positivity))
-    (shifted 3) (norm_nonneg _) (by positivity)
+    (mul_le_mul (mul_le_mul size shifted1 (norm_nonneg _) hR)
+      shifted2 (norm_nonneg _) (by positivity))
+    shifted3 (norm_nonneg _) (by positivity)
 
 /-- Explicit improved cutoff; it uses no minimization or inverse oracle. -/
 def coreCutoff (n k : ℕ) : ℕ := (n + 3) ^ 2 * (k + 1)

@@ -6,6 +6,7 @@ import GRWTSK.GeneralTopology.ThreePhaseResidualCircleAction
 import Mathlib.Tactic
 
 set_option autoImplicit false
+noncomputable section
 
 /-!
 # Three-phase source-Gram ellipsoid orbit
@@ -94,8 +95,9 @@ theorem positiveGram_heat_le (t : ℝ) (ht : 0 ≤ t) (z : Phase3) :
     exact Real.exp_le_exp.mpr (by nlinarith)
   have hmul :
       Real.exp (-6 * t) * residualEnergy z ≤ residualEnergy z :=
-    mul_le_mul_of_nonneg_right hexp (residualEnergy_nonnegative z)
-  exact add_le_add_left hmul _
+    by simpa only [one_mul] using
+      mul_le_mul_of_nonneg_right hexp (residualEnergy_nonnegative z)
+  exact add_le_add le_rfl hmul
 
 /-- Every positive-Gram sublevel is forward invariant under the selected heat. -/
 theorem heat_mem_gramSublevel
@@ -249,7 +251,7 @@ def antipodalPhase : Bool → ℂ
 theorem antipodalPhase_injective : Function.Injective antipodalPhase := by
   intro left right hphase
   cases left <;> cases right <;>
-    simp [antipodalPhase] at hphase ⊢
+    norm_num [antipodalPhase] at *
 
 /-- Exact two-alternative collision ledger: the coarse positive-Gram value is
 shared, while the phase channel retains the selected alternative. -/

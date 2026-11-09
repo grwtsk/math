@@ -127,7 +127,6 @@ theorem characterResolvedReturn_eq_pow (chi : G →* ℂ) (a : G) (m : ℕ) :
   unfold characterResolvedReturn
   rw [character_sum_return]
   field_simp [groupCard_complex_ne_zero (G := G)]
-  ring
 
 /-- The diagonal of the actual product U_a^m P_chi is the character
 return at x divided by the EXACT group cardinality. -/
@@ -193,8 +192,7 @@ theorem characterProjector_idempotent (chi : G →* ℂ) :
             ((chi x * chi y⁻¹) /
               ((Fintype.card G : ℂ) * (Fintype.card G : ℂ))) *
                 (chi z⁻¹ * chi z) := by
-                  field_simp [hN]
-                  ring
+                  field_simp [hN] <;> ring
           _ = (chi x * chi y⁻¹) /
               ((Fintype.card G : ℂ) * (Fintype.card G : ℂ)) := by
                 rw [hcancel]
@@ -204,8 +202,7 @@ theorem characterProjector_idempotent (chi : G →* ℂ) :
           ((Fintype.card G : ℂ) * (Fintype.card G : ℂ))) := by
             simp
     _ = chi x * chi y⁻¹ / (Fintype.card G : ℂ) := by
-      field_simp [hN]
-      ring
+      field_simp [hN] <;> ring
 
 /-- Convert the native AddChar basis element, without changing its
 domain or its value on any group element. -/

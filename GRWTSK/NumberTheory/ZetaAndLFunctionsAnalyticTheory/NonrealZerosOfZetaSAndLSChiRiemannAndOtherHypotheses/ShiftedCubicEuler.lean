@@ -48,13 +48,13 @@ def head (q : ℝ) (s : ℂ) : ℂ :=
   logPower q (1 - s) / (s - 1) + logPower q (-s) / 2 +
     s * logPower q (-s - 1) / 12
 
-def prefix (q : ℝ) (N : ℕ) (s : ℂ) : ℂ :=
+def «prefix» (q : ℝ) (N : ℕ) (s : ℂ) : ℂ :=
   ∑ k ∈ Finset.range N, logPower (q + (k : ℝ)) (-s)
 
 /-- This is a finite identity for every positive real starting point. -/
 theorem finite_prefix (q : ℝ) (positive : 0 < q) (N : ℕ)
     (s : ℂ) (pole : s ≠ 1) :
-    prefix q N s = head q s - head (q + (N : ℝ)) s -
+    «prefix» q N s = head q s - head (q + (N : ℝ)) s -
       prefactor s * ∑ k ∈ Finset.range N, cellRemainder (q + (k : ℝ)) (-s) := by
   have hz : -s + 1 ≠ 0 := by
     intro h
@@ -66,7 +66,7 @@ theorem finite_prefix (q : ℝ) (positive : 0 < q) (N : ℕ)
     rw [show 1 - s = -(s - 1) by ring, div_neg]
     ring
   rw [quotient] at h
-  unfold prefix head prefactor
+  unfold «prefix» head prefactor
   calc
     _ = _ := h
     _ = _ := by ring
@@ -84,7 +84,7 @@ theorem remainder_split (q : ℝ) (base : 1 ≤ q) (N : ℕ)
 theorem truncation_identity (q : ℝ) (base : 1 ≤ q) (N : ℕ)
     (s : ℂ) (halfPlane : -2 < s.re) (pole : s ≠ 1) :
     head q s - prefactor s * remainder q s =
-      prefix q N s + head (q + (N : ℝ)) s -
+      «prefix» q N s + head (q + (N : ℝ)) s -
         prefactor s * remainder (q + (N : ℝ)) s := by
   rw [finite_prefix q (zero_lt_one.trans_le base) N s pole,
     remainder_split q base N s halfPlane]
@@ -110,7 +110,7 @@ theorem terminal_head_tendsto (q : ℝ) (positive : 0 < q)
 only the limit of the literal ordered partial sums. -/
 theorem prefix_tendsto (q : ℝ) (base : 1 ≤ q)
     (s : ℂ) (halfPlane : 1 < s.re) :
-    Tendsto (fun N : ℕ => prefix q N s) atTop
+    Tendsto (fun N : ℕ => «prefix» q N s) atTop
       (𝓝 (head q s - prefactor s * remainder q s)) := by
   have pole : s ≠ 1 := by intro h; simp [h] at halfPlane
   have hp := (summable_cells q base s (by linarith)).hasSum.tendsto_sum_nat
@@ -142,6 +142,7 @@ theorem analyticOnNhd_remainder (q : ℝ) (base : 1 ≤ q) :
     AnalyticOnNhd ℂ (remainder q) {s : ℂ | -2 < s.re} := by
   have hd : DifferentiableOn ℂ (remainder q) {s : ℂ | -2 < s.re} := by
     intro s hs
+    change -2 < s.re at hs
     let σ : ℝ := (s.re - 2) / 2
     have margin : -2 < σ := by dsimp [σ]; linarith
     have member : s ∈ {w : ℂ | σ < w.re} := by dsimp [σ]; linarith

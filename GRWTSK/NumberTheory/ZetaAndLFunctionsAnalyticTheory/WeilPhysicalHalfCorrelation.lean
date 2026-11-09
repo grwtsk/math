@@ -175,7 +175,7 @@ private theorem correlation_integrand_halves_bound
         have hrneg : t + r < 0 := lt_of_not_ge htr
         linarith
       rw [hzero]
-      simp only [Complex.conj_zero, zero_mul, norm_zero]
+      simp only [map_zero, zero_mul, norm_zero]
       exact div_nonneg
         (add_nonneg (negativeMass_nonneg f t)
           (positiveMass_nonneg f (t + r))) (by norm_num)

@@ -240,6 +240,6 @@ theorem sin_sq_le_sextic (x : ℝ) :
     Real.sin x ^ 2 ≤ x ^ 2 - x ^ 4 / 3 + 2 * x ^ 6 / 45 := by
   have h := sextic_le_cos (2 * x)
   rw [Real.cos_two_mul'] at h
-  nlinarith
+  nlinarith [Real.sin_sq_add_cos_sq x]
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.WeightedStage

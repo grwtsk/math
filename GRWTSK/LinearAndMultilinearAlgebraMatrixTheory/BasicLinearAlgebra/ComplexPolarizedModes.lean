@@ -104,7 +104,7 @@ def project (c s : ℝ) : Jones →ₗ[ℂ] Jones where
   toFun z := amplitude c s z • axis c s
   map_add' x y := by
     ext i
-    simp [amplitude, Pi.smul_apply, smul_eq_mul, mul_add, add_mul]
+    simp [amplitude, Pi.smul_apply, smul_eq_mul, mul_add, add_mul] <;> ring
   map_smul' a z := by
     ext i
     simp [amplitude, Pi.smul_apply, smul_eq_mul] <;> ring
@@ -169,8 +169,12 @@ theorem project_sublevel (c s R : ℝ) (h : c ^ 2 + s ^ 2 = 1) :
 
 @[simp] theorem project_perpendicular (c s : ℝ) :
     project c s (axis (-s) c) = 0 := by
-  ext i
-  simp [project, amplitude, axis, Pi.smul_apply, smul_eq_mul] <;> ring
+  have ha : amplitude c s (axis (-s) c) = 0 := by
+    simp only [amplitude, axis, Matrix.cons_val_zero, Matrix.cons_val_one,
+      Complex.ofReal_neg]
+    ring
+  change amplitude c s (axis (-s) c) • axis c s = 0
+  rw [ha, zero_smul]
 
 theorem axis_ne_zero (c s : ℝ) (h : c ^ 2 + s ^ 2 = 1) : axis c s ≠ 0 := by
   intro hz

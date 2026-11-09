@@ -24,6 +24,9 @@ prime-addressed boundary identities are not rewritten by the filter.
 -/
 
 set_option autoImplicit false
+noncomputable section
+open Classical
+open GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.ExactSoficLanguageCover
 
 namespace GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.PoeticSoficLanguage
 
@@ -354,13 +357,16 @@ theorem demoNarrow_not_admissible : ¬ demoNarrow.Admissible := by
 
 theorem demo_accepts_original :
     (filterValidatedWalk poemWalk poemProposal demoFilter).isSome = true := by
-  simp [filterValidatedWalk, demoFilter_admissible, poem_two_gates_accept,
-    validateThenFit, checkWalk, checkProposal,
-    poemWalk_valid, poemProposal_valid]
+  unfold filterValidatedWalk
+  have h := poem_two_gates_accept
+  cases heq : validateThenFit poemWalk poemProposal with
+  | none => simp [heq] at h
+  | some accepted => simp [demoFilter_admissible]
 
 theorem narrow_rejects_original :
     filterValidatedWalk poemWalk poemProposal demoNarrow = none := by
-  simp [filterValidatedWalk, demoNarrow_not_admissible]
+  unfold filterValidatedWalk
+  cases validateThenFit poemWalk poemProposal <;> simp [demoNarrow_not_admissible]
 
 /-- Each accepted result still carries all literal source words and the prime
 ports of the validated phrase assembly, rather than a score-only surrogate. -/

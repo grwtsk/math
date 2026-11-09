@@ -2,7 +2,7 @@
 Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
+SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_PASS /
 FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
 INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
 -/
@@ -33,11 +33,10 @@ The real lift is essential: arbitrary complex tests cannot inherit this sign
 assertion. For a nonreal character the native summand return below uses the
 proved reality of the real-test correlation and retains the paired weight.
 Assistant-generated formal candidate under human research direction;
-no independent analytic review has been run. Issue #1789 follow-up checked
-the restricted signed-correlation fragment with Lean v4.34.1, including the
-explicit RCLike-to-Complex integral projections and native summand return.
-Full-module compilation remains blocked by dependency failures; no fresh
-kernel replay or transitive axiom audit was run.
+no independent analytic review has been run. Issue #1789 dependency-repair
+follow-up checked this full module and its imports with Lean v4.34.1 at the
+unchanged Mathlib pin, including the explicit integral projections and native
+summand return. No fresh kernel replay or transitive axiom audit was run.
 -/
 set_option autoImplicit false
 noncomputable section

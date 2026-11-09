@@ -294,7 +294,7 @@ theorem odd_three_stage_zero_requires_positive_compensation
     simpa only [zero_add] using hf
   have hcomp :=
     paired_compensation_necessary_of_primitiveStage chi
-      hprimitive hnonprincipal 0 hstage f hf'
+      hprimitive hnonprincipal 0 hstage f (by simpa using hf')
   have hmass : 0 ≤ pairedPrimeMass chi 1 := by
     unfold pairedPrimeMass
     exact mul_nonneg (by norm_num)
@@ -311,6 +311,6 @@ theorem odd_three_stage_zero_requires_positive_compensation
           energy (liftReal f) :=
     mul_pos hcoeff hE
   simpa only [Nat.cast_zero, zero_add, pow_zero] using
-    lt_of_lt_of_le hpositive hcomp
+    lt_of_lt_of_le hpositive (by simpa using hcomp)
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddConductorThreeObstruction

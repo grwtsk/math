@@ -275,9 +275,8 @@ theorem differentiable_geometric (a : ℂ) (m : ℕ) :
   induction m with
   | zero => simpa only [geometric] using (differentiable_const (0 : ℂ))
   | succ m ih =>
-    simpa only [geometric] using
-      (differentiable_const (1 : ℂ)).add
-        (((differentiable_const a).mul differentiable_id).mul ih)
+    change Differentiable ℂ (fun z => 1 + a * z * geometric (a * z) m)
+    fun_prop
 
 theorem differentiable_product (as : List ℂ) : Differentiable ℂ (factorProduct as) := by
   induction as with
@@ -295,6 +294,6 @@ theorem differentiable_approximate (as : List ℂ) (m : ℕ) :
 /-- The boundary obstruction is exact at every truncation order. -/
 theorem boundary_zero_barrier (m : ℕ) :
     ‖residual (factorProduct [1] 1) (approximate [1] m 1) 1‖ = 1 := by
-  simp [factorProduct, residual]
+  simp [factorProduct, Division.residual]
 
 end GRWTSK.Analysis.GeometricProduct

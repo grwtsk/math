@@ -79,6 +79,7 @@ linear algebra, not a claim of theorem-level novelty.
 
 set_option autoImplicit false
 noncomputable section
+open Classical
 open scoped BigOperators
 
 namespace GRWTSK.NumberTheory.AlgebraicNumberTheoryGlobalFields.TotientFrobeniusFourierTrace
@@ -106,7 +107,7 @@ def characterWave (ψ : AddChar (Additive G) ℂ) (x : G) : ℂ :=
 /-- Transport the established COMPLETE finite abelian Fourier basis
 to the exact original unit-fiber type G. -/
 noncomputable def characterBasis :
-    Basis (AddChar (Additive G) ℂ) ℂ (G → ℂ) :=
+    Module.Basis (AddChar (Additive G) ℂ) ℂ (G → ℂ) :=
   (AddChar.complexBasis (Additive G)).map functionAdditiveEquiv.symm
 
 @[simp] theorem characterBasis_apply
@@ -227,7 +228,7 @@ theorem no_faithful_port_to_trivial_loop
   have hfixed : a * (1 : G) = 1 := hembed (htrivial 1)
   exact ha (by simpa using hfixed)
 
-/-- Genuine cyclotomic arithmetic specialization, retaining the original
+/- Genuine cyclotomic arithmetic specialization, retaining the original
 p-primeness and p-coprimality hypotheses; no ramified inverse invented. -/
 section Cyclotomic
 variable (n : ℕ) [NeZero n]

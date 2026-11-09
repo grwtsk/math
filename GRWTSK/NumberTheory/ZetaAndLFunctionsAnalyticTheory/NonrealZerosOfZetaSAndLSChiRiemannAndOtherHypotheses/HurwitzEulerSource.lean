@@ -84,7 +84,7 @@ theorem source_of_one_lt_re (a : ℝ) (positive : 0 < a) (upper : a ≤ 1)
   have ht : HasSum (fun n : ℕ => logPower (a + 1 + (n : ℝ)) (-s))
       (HurwitzZeta.hurwitzZeta (a : UnitAddCircle) s - logPower a (-s)) := by
     simpa only [Finset.sum_range_one, Nat.cast_add, Nat.cast_one,
-      Nat.cast_zero, zero_add, add_assoc, add_comm, add_left_comm] using
+      Nat.cast_zero, zero_add, add_zero, add_assoc, add_comm, add_left_comm] using
       (hasSum_nat_add_iff' 1).mpr hs
   have he := tendsto_nhds_unique ht.tendsto_sum_nat
     (ShiftedEuler.prefix_tendsto (a + 1) (by linarith) s halfPlane)
@@ -125,8 +125,8 @@ theorem analytic_regularizedModel (a : ℝ) (positive : 0 < a) :
   have hR := analyticOnNhd_remainder (a + 1) (by linarith) s hs
   have hP : AnalyticAt ℂ prefactor s := by unfold prefactor; fun_prop
   exact ((analyticAt_id.sub analyticAt_const).mul
-    ((((hn a).add ((hn (a + 1)).div_const 2)).add
-      ((analyticAt_id.mul hn1).div_const 12)).sub (hP.mul hR))).add (hp (a + 1) 1)
+    ((((hn a).add ((hn (a + 1)).div_const (c := (2 : ℂ)))).add
+      ((analyticAt_id.mul hn1).div_const (c := (12 : ℂ)))).sub (hP.mul hR))).add (hp (a + 1) 1)
 
 /-- Continue an exact analytic identity, not an absolute-value inequality. -/
 theorem normalized_identity (a : ℝ) (positive : 0 < a) (upper : a ≤ 1)
@@ -155,7 +155,7 @@ theorem source_identity (a : ℝ) (positive : 0 < a) (upper : a ≤ 1)
 def omittedBase (a : ℝ) (M : ℕ) : ℝ := a + 1 + (M : ℝ)
 
 def approximation (a : ℝ) (M : ℕ) (s : ℂ) : ℂ :=
-  logPower a (-s) + prefix (a + 1) M s + head (omittedBase a M) s
+  logPower a (-s) + «prefix» (a + 1) M s + head (omittedBase a M) s
 
 def analyticTail (a : ℝ) (M : ℕ) (s : ℂ) : ℂ :=
   -prefactor s * remainder (omittedBase a M) s
@@ -194,12 +194,13 @@ theorem source_radius_bound (a : ℝ) (positive : 0 < a) (upper : a ≤ 1)
       CubicApproximation.radiusBudget R M := by
   have hR : 0 ≤ R := (norm_nonneg s).trans size
   have shifted (k : ℕ) : ‖s + (k : ℂ)‖ ≤ R + k := by
-    simpa using (norm_add_le s (k : ℂ)).trans
-      (add_le_add_right size ‖(k : ℂ)‖)
+    calc
+      ‖s + (k : ℂ)‖ ≤ ‖s‖ + ‖(k : ℂ)‖ := norm_add_le _ _
+      _ ≤ R + k := by simpa using add_le_add size (le_refl ‖(k : ℂ)‖)
   have coefficient : ‖prefactor s‖ ≤ R * (R + 1) * (R + 2) := by
     simp only [prefactor, norm_mul]
-    exact mul_le_mul (mul_le_mul size (shifted 1) (norm_nonneg _) hR)
-      (shifted 2) (norm_nonneg _) (by positivity)
+    exact mul_le_mul (mul_le_mul size (by simpa using shifted 1) (norm_nonneg _) hR)
+      (by simpa using shifted 2) (norm_nonneg _) (by positivity)
   have hq := omittedBase_ge_one a positive M
   have hcut := GRWTSK.RiemannHypothesis.FiniteCubicZetaApproximation.cutoff_pos M
   have cut_le : GRWTSK.RiemannHypothesis.FiniteCubicZetaApproximation.cutoff M ≤

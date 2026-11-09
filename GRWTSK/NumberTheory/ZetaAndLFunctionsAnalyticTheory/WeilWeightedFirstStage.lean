@@ -92,7 +92,7 @@ theorem oddBandObservation_le_price {sigma u : ℝ → ℝ}
 structure PrimeEnvelope (sigma : ℝ → ℝ) (e : ℕ → ℝ) : Prop where
   nonneg : ∀ n, 0 ≤ e n
   summable : Summable (fun n => primeWeight n * e n)
-  pointwise : ∀ n t, |sigma t * sigma (t + Real.log (n : ℝ))| ≤ e n
+  pointwise : ∀ (n : ℕ) (t : ℝ), |sigma t * sigma (t + Real.log (n : ℝ))| ≤ e n
   total : completePrimeAllowance e ≤ (Observation.primeUpper : ℝ)
 
 theorem primeEnergy_le_price {sigma u : ℝ → ℝ} (T : ℝ) (e : ℕ → ℝ)
@@ -103,7 +103,7 @@ theorem primeEnergy_le_price {sigma u : ℝ → ℝ} (T : ℝ) (e : ℕ → ℝ)
   have hc := (finitePrimeAllowance_le_complete (activePrimePowers T) e
     he.nonneg he.summable).trans he.total
   rcases Observation.recorded_bounds with ⟨_, _, _, hp, _, _⟩
-  have hpR : (Observation.primeUpper : ℝ) ≤ 151 / 1000 := by exact_mod_cast hp.le
+  have hpR : (Observation.primeUpper : ℝ) ≤ 151 / 1000 := by norm_num [Observation.primeUpper]
   exact (le_abs_self _).trans (h.trans
     (mul_le_mul_of_nonneg_right (hc.trans hpR) (coordinateMass_nonneg u)))
 
@@ -118,7 +118,7 @@ theorem pairedPrimeResponse_le_price {q : ℕ} [NeZero q]
   have hc := (finitePrimeAllowance_le_complete (activePrimePowers T) e
     he.nonneg he.summable).trans he.total
   rcases Observation.recorded_bounds with ⟨_, _, _, hp, _, _⟩
-  have hpR : (Observation.primeUpper : ℝ) ≤ 151 / 1000 := by exact_mod_cast hp.le
+  have hpR : (Observation.primeUpper : ℝ) ≤ 151 / 1000 := by norm_num [Observation.primeUpper]
   exact (le_abs_self _).trans (h.trans
     (mul_le_mul_of_nonneg_right (hc.trans hpR) (coordinateMass_nonneg u)))
 
@@ -138,7 +138,7 @@ theorem odd_pole_le_price {sigma u : ℝ → ℝ} (hu : MemLp u 2 volume)
   rw [heq]
   have hpair := integral_pair_sq_le hu hp
   rcases Observation.recorded_bounds with ⟨_, _, _, _, _, hpU⟩
-  have hpR : (Observation.poleUpper : ℝ) ≤ 3 / 500 := by exact_mod_cast hpU.le
+  have hpR : (Observation.poleUpper : ℝ) ≤ 3 / 500 := by norm_num [Observation.poleUpper]
   have hscale := mul_le_mul_of_nonneg_left (hpobs.trans hpR) (coordinateMass_nonneg u)
   nlinarith
 
@@ -244,7 +244,8 @@ theorem stageCoverageWeight_pos (n : ℕ) : 0 < stageCoverageWeight n := by
 theorem stageCoverageWeight_summable : Summable stageCoverageWeight := by
   have hs : Summable (fun n : ℕ => (1 / 2 : ℝ) ^ n) :=
     summable_geometric_of_abs_lt_one (by norm_num)
-  simpa only [stageCoverageWeight, pow_succ] using hs.mul_right (1 / 2 : ℝ)
+  unfold stageCoverageWeight
+  exact (summable_nat_add_iff 1).2 hs
 
 theorem tsum_stageCoverageWeight : (∑' n : ℕ, stageCoverageWeight n) = 1 := by
   simp only [stageCoverageWeight, pow_succ]

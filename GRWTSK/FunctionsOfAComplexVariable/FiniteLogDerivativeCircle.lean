@@ -179,8 +179,7 @@ def toFactors (data : AnalyticZeroData f c r) : FactorData f c r where
   factor_at := by
     intro a ha
     obtain ⟨g, hg, hg0, hfactor⟩ :=
-      (data.analytic a (ball_subset_closedBall (data.inside a ha))).
-        analyticOrderAt_eq_natCast.mp (data.actual_order a ha)
+      (data.analytic a (ball_subset_closedBall (data.inside a ha))).analyticOrderAt_eq_natCast.mp (data.actual_order a ha)
     refine ⟨g, hg, hg0, ?_⟩
     filter_upwards [hfactor.filter_mono nhdsWithin_le_nhds] with z hz
     simpa only [zpow_natCast, smul_eq_mul] using hz

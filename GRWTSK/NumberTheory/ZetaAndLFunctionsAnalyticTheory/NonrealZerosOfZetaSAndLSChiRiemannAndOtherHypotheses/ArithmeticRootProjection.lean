@@ -60,7 +60,7 @@ def readout (w : Root N) : Root N →ₗ[ℂ] ℂ where
   toFun x := ∑ j, w j * x j
   map_add' x y := by simp [mul_add, Finset.sum_add_distrib]
   map_smul' a x := by
-    simp only [Pi.smul_apply, smul_eq_mul]
+    simp only [Pi.smul_apply, smul_eq_mul, RingHom.id_apply]
     rw [Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro j _
@@ -171,7 +171,7 @@ theorem zeta_model_error (M : ℕ) (s : ℂ) {R : ℝ}
 
 /-- A complete split, not merely the retained projection, returns every readout. -/
 theorem split_readout (w : Root N) (P : Root N →ₗ[ℂ] Root N) (x : Root N) :
-    readout w (P x) + readout w ((LinearMap.id - P) x) = readout w x := by
+    readout w (P x) + readout w (((LinearMap.id : Root N →ₗ[ℂ] Root N) - P) x) = readout w x := by
   rw [← map_add]
   congr 1
   simp
@@ -180,8 +180,8 @@ theorem split_readout (w : Root N) (P : Root N →ₗ[ℂ] Root N) (x : Root N) 
 theorem split_readout_square (w : Root N) (P : Root N →ₗ[ℂ] Root N) (x : Root N) :
     Complex.normSq (readout w x) =
       Complex.normSq (readout w (P x)) +
-      Complex.normSq (readout w ((LinearMap.id - P) x)) +
-      2 * (readout w (P x) * conj (readout w ((LinearMap.id - P) x))).re := by
+      Complex.normSq (readout w (((LinearMap.id : Root N →ₗ[ℂ] Root N) - P) x)) +
+      2 * (readout w (P x) * conj (readout w (((LinearMap.id : Root N →ₗ[ℂ] Root N) - P) x))).re := by
   rw [← split_readout w P x, Complex.normSq_add]
 
 /-- Coordinate mixing is harmless only when the observer is transported too. -/

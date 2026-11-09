@@ -86,7 +86,7 @@ theorem first_lap_unweighted_trace_ne_character
         hnontrivial)
   have hphase := unramified_character_value_ne_zero n χ p hprime hcoprime
   intro heq
-  exact hphase (ht.symm.trans heq)
+  exact hphase (heq.symm.trans ht)
 
 /-- Full sign and complex phase stay attached to the ORIGINAL prime-power
 source and are not defined by the permutation trace. -/

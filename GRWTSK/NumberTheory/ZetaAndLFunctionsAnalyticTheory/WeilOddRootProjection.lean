@@ -248,7 +248,7 @@ theorem pairedLFunction_zero_iff (χ : DirichletCharacter ℂ q) (s : ℂ) :
       χ.LFunction s = 0 ∨ (conjugateCharacter χ).LFunction s = 0 := by
   exact mul_eq_zero
 
-/-- Both factors are readouts of the SAME complete continued Hurwitz root.
+/- Both factors are readouts of the SAME complete continued Hurwitz root.
 The all-one zeta readout remains the existing `zeta_source`, not a new function. -/
 open GRWTSK.NumberTheory.Conditional.ArithmeticRootProjection in
 theorem pairedLFunction_eq_shared_root (χ : DirichletCharacter ℂ q) (s : ℂ) :

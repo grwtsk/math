@@ -118,6 +118,7 @@ theorem gammaConstant_lower (q : ℕ) (hq : 0 < q) (a : ℕ) (ha : a ≤ 1) :
   have hlogtwo := Real.log_two_lt_d9
   have hparity : a = 0 ∨ a = 1 := by omega
   unfold gammaConstant
+  norm_num only [Nat.cast_one]
   rw [Real.log_div hqR.ne' Real.pi_pos.ne', real_digamma_eq (by positivity)]
   rcases hparity with rfl | rfl
   · norm_num only [Nat.cast_zero, zero_div, add_zero, Complex.ofReal_div, Complex.ofReal_one,
@@ -175,6 +176,7 @@ theorem gammaConstant_odd_eq_even_add_pi (q : ℕ) :
   rw [hodd, heven,
     real_digamma_eq (by norm_num : (0 : ℝ) < 3 / 4),
     real_digamma_eq (by norm_num : (0 : ℝ) < 1 / 4)]
+  norm_num only [Complex.ofReal_div, Complex.ofReal_one, Complex.ofReal_ofNat] at *
   linarith [digamma_quarters.1, digamma_quarters.2]
 
 /-- Exact conductor dependence on the even-parity source constant. -/
@@ -183,6 +185,7 @@ theorem gammaConstant_even_eq_log_add (q : ℕ) (hq : 0 < q) :
   have hqR : (q : ℝ) ≠ 0 := by
     exact_mod_cast (Nat.ne_of_gt hq)
   unfold gammaConstant
+  norm_num only [Nat.cast_one]
   rw [Real.log_div hqR Real.pi_pos.ne',
     Real.log_div (by norm_num : (1 : ℝ) ≠ 0) Real.pi_pos.ne']
   simp only [Real.log_one, zero_sub]

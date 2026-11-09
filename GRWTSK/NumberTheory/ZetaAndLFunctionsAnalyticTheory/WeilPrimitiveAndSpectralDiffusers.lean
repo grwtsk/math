@@ -103,7 +103,7 @@ theorem completePrimitive_nonneg_iff {q M : ℕ} [NeZero q]
     (hp : chi.IsPrimitive) (hn : chi ≠ 1)
     (T : ℝ) (d : Involution (Fin M)) :
     (∀ w, 0 ≤ completePrimitiveHeated chi hp hn T d w) ↔
-      (∀ v, 0 ≤ primitiveArithmeticValue chi hp hn T
+      (∀ v : Fin M → ℂ, 0 ≤ primitiveArithmeticValue chi hp hn T
         (complexSineTest T v)) := by
   constructor
   · intro h v

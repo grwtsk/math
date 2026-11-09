@@ -150,7 +150,7 @@ def functionStabilizer (f : G → ℂ) : Subgroup G where
   inv_mem' := by
     intro g hg x
     have hx := hg (g⁻¹ * x)
-    have hh : g * (g⁻¹ * x) = x := by group
+    have hh : g * (g⁻¹ * x) = x := by simp [mul_comm, mul_left_comm, mul_assoc]
     rw [hh] at hx
     exact hx.symm
 
@@ -185,7 +185,7 @@ theorem invariant_iff_cosetInvariant (a : G) (f : G → ℂ) :
     have hmem : x⁻¹ * y ∈ Subgroup.zpowers a :=
       QuotientGroup.eq.mp hxy
     have hx := (hle hmem) x
-    have hm : (x⁻¹ * y) * x = y := by group
+    have hm : (x⁻¹ * y) * x = y := by simp [mul_comm, mul_left_comm, mul_assoc]
     rw [hm] at hx
     exact hx.symm
   · intro h x
@@ -193,10 +193,10 @@ theorem invariant_iff_cosetInvariant (a : G) (f : G → ℂ) :
         (QuotientGroup.mk x : OrbitSpace a) =
           QuotientGroup.mk (a * x) := by
       apply QuotientGroup.eq.mpr
-      have hm : x⁻¹ * (a * x) = a := by group
+      have hm : x⁻¹ * (a * x) = a := by simp [mul_comm, mul_left_comm, mul_assoc]
       rw [hm]
       exact Subgroup.mem_zpowers a
-    exact h x (a * x) hxy
+    exact (h x (a * x) hxy).symm
 
 /-- The subspace of ALL zero-energy/invariant fiber functions. -/
 def invariantSubmodule (a : G) : Submodule ℂ (G → ℂ) where
@@ -225,7 +225,7 @@ theorem pullback_invariant (a : G) (F : OrbitSpace a → ℂ) :
       (QuotientGroup.mk (a * x) : OrbitSpace a) =
         QuotientGroup.mk x := by
     apply QuotientGroup.eq.mpr
-    have hm : (a * x)⁻¹ * x = a⁻¹ := by group
+    have hm : (a * x)⁻¹ * x = a⁻¹ := by simp [mul_comm, mul_left_comm, mul_assoc]
     rw [hm]
     exact (Subgroup.zpowers a).inv_mem (Subgroup.mem_zpowers a)
   exact congrArg F hxy
@@ -301,7 +301,7 @@ theorem cycleEnergy_eq_zero_iff (a : G) (f : G → ℂ) :
     have hle :
         (‖f (a * x) - f x‖ : ℝ) ^ 2 ≤
           ∑ y : G, (‖f (a * y) - f y‖ : ℝ) ^ 2 := by
-      apply Finset.single_le_sum
+      apply Finset.single_le_sum (s := Finset.univ) (f := fun y : G => (‖f (a * y) - f y‖ : ℝ) ^ 2)
       · intro y hy
         exact sq_nonneg _
       · exact Finset.mem_univ x
@@ -396,7 +396,7 @@ theorem frobeniusPeriod_dvd_totient (p : ℕ)
     (hprime : Nat.Prime p) (hp : Nat.Coprime p n) :
     orderOf (frobeniusUnit n p hprime hp) ∣ Nat.totient n := by
   rw [← unitFiber_card_eq_totient n]
-  exact orderOf_dvd_card (frobeniusUnit n p hprime hp)
+  exact orderOf_dvd_card
 
 theorem fullTotientWinding_returns (p : ℕ)
     (hprime : Nat.Prime p) (hp : Nat.Coprime p n) (x : UnitFiber n) :

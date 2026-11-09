@@ -56,7 +56,8 @@ open MeasureTheory Set Matrix
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddLiteralCofinal.CofinalHeadAssembly
 
-open OddLiteralWindow
+open OddLiteralWindow OddWrapEnergy OddBorderedExpansion OddResidualSourceComparison OddResidualMajorant
+open GRWTSK.LinearAlgebra.SchurObserver
 open CofinalHighComplement
 open OddRootProjection OddSineForm OddHighComplement OddShiftEnergy
 open GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
@@ -113,12 +114,12 @@ theorem stageLower_of_certificate {j M L J : ℕ} {ν : Type*} [Fintype ν]
 /-- Existence of an actual finite witness, retaining its certificate index type. -/
 def HasStageHeadCertificate (j : ℕ) : Prop :=
   ∃ (M L J : ℕ) (ν : Type) (inst : Fintype ν),
-    @StageHeadCertificate j M L J ν inst
+    Nonempty (@StageHeadCertificate j M L J ν inst)
 
 /-- Existential packaging does not change the mathematical consumer. -/
 theorem stageLower_of_hasCertificate {j : ℕ}
     (h : HasStageHeadCertificate j) : StageLower j := by
-  rcases h with ⟨M, L, J, ν, inst, cert⟩
+  rcases h with ⟨M, L, J, ν, inst, ⟨cert⟩⟩
   exact @stageLower_of_certificate j M L J ν inst cert
 
 /-- A source-paid certificate at every stage supplies every exact dyadic lower

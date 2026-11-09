@@ -135,7 +135,7 @@ theorem heatReal_nonneg (v : ι → ℝ) (hv : ∀ i, 0 ≤ v i) :
     ∀ i, 0 ≤ d.heatReal v i := by
   intro i
   unfold heatReal
-  positivity
+  exact div_nonneg (add_nonneg (mul_nonneg (by norm_num) (hv i)) (hv (d.swap i))) (by norm_num)
 
 /-- The complex coefficient diffuser uses the SAME real stochastic weights;
 there is no phase erasure, conjugation of chi, or replacement by norms. -/
