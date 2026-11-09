@@ -59,7 +59,7 @@
     {
       "path": "AGENTS.md",
       "mode": "100644",
-      "git_object": "ddf062a84980eef36c1faa88239ca7c618ddb384",
+      "git_object": "80c7fa98920a3c35f812b98efa288df2b86c7f6f",
       "object_type": "blob"
     },
     {
@@ -483166,6 +483166,24 @@
       "object_type": "blob"
     },
     {
+      "path": "docs/formalizations/AGENTS.md",
+      "mode": "100644",
+      "git_object": "23b913294e6f0b17798240f73b1d2294652c99e5",
+      "object_type": "blob"
+    },
+    {
+      "path": "docs/formalizations/GRWTSK/.gitkeep",
+      "mode": "100644",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "object_type": "blob"
+    },
+    {
+      "path": "docs/formalizations/catalogue.json",
+      "mode": "100644",
+      "git_object": "4edaef6f270328ff60e662dec0277687ebb2ff3c",
+      "object_type": "blob"
+    },
+    {
       "path": "lake-manifest.json",
       "mode": "100644",
       "git_object": "c8044c56be77c58e6f41cca024b25237c59e8c79",
@@ -594304,6 +594322,12 @@
       ]
     }
   ],
-  "base_revision": "8ea22748fbbed561ef486ce6d069857b603594e7",
-  "adaptation_membership": "Only recorded external URLs, publication citations, pinned upstream source records or exact pinned import inventories qualify the adaptation source view and theorem-provenance section. Local-only derivation references do not qualify. Canonical local sources and their provenance remain in the repository file manifest. Environment configurations, legal notices and verification helpers are build support, not additional adapted theorems."
+  "base_revision": "e1556d7fc7487f4006cc69f5fc0bf3b0aa821189",
+  "adaptation_membership": "Only recorded external URLs, publication citations, pinned upstream source records or exact pinned import inventories qualify the adaptation source view and theorem-provenance section. Local-only derivation references do not qualify. Canonical local sources and their provenance remain in the repository file manifest. Environment configurations, legal notices and verification helpers are build support, not additional adapted theorems.",
+  "paper_formalizations": {
+    "catalogue_path": "docs/formalizations/catalogue.json",
+    "source_view": "docs/formalizations/GRWTSK/",
+    "record_count": 0,
+    "scope": "Explicit paper-to-Lean correspondence; separately scoped from adaptation provenance."
+  }
 }

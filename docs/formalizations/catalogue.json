@@ -1,0 +1,29 @@
+{
+  "schema": "grwtsk.paper-to-lean-formalizations/1",
+  "local_attribution": "grwtsk contributors",
+  "repository": "grwtsk/math",
+  "scope": "Explicit paper-to-Lean theorem correspondences only; does not infer formalization from imported Lean proofs, bibliography entries or adaptation membership.",
+  "organization": "Canonical repository source path and declaration; many-to-many paper-edition references.",
+  "record_contract": {
+    "source_path": "Canonical tracked GRWTSK source file",
+    "source_git_revision": "Exact Lean source revision",
+    "source_git_blob": "Available exact source blob",
+    "declaration": "Fully qualified local declaration",
+    "provenance_path": "Individual theorem-local Markdown record",
+    "papers": [
+      {
+        "authors": "Actual paper authors",
+        "title": "Exact paper title",
+        "edition": "Exact version or edition",
+        "url": "Stable primary source URL",
+        "digest": "Available source digest or NOT_RECORDED",
+        "locator": "Exact theorem, lemma, page or method",
+        "correspondence": "Exact paper statement versus local statement; hypotheses, changes and unresolved bridges",
+        "relation": "direct_formalization, local_consequence or conditional_interface; never inferred from citation alone"
+      }
+    ],
+    "evidence": "Individually scoped actual outcomes; unperformed checks NOT_RUN"
+  },
+  "records": [],
+  "population_status": "No existing paper-to-declaration correspondence has been newly qualified by this folder creation."
+}

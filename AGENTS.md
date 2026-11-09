@@ -98,6 +98,12 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 ## Source references and documentation
 
+- Track paper-to-Lean formalizations under `docs/formalizations/`, mirroring actual
+  canonical source paths. Require individual exact paper-edition/theorem provenance;
+  importing an existing Lean proof is an adaptation, not evidence of a new paper
+  formalization. Preserve many-to-many paper/declaration correspondence and
+  distinguish direct formalization, local consequences and conditional interfaces.
+
 - Develop and check adaptations locally before bringing them into this repository.
   Publish each adapted theorem with its own Markdown provenance record beside
   the maintained theorem source. This theorem-local record is required even
