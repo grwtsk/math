@@ -262,6 +262,43 @@ theorem snapshotRestrict_sub {F G : Finset (Vertex Prime Knot)}
   intro i
   simp [snapshotRestrict]
 
+/-! ## Source-preserving off-snapshot leakage
+
+Compression is exact, but a zero-extended vector need not form an
+invariant subspace under the larger Dirac. The defect can exit F along
+actual weighted Alexander-incidence edges to G \ F. The next two
+theorems identify its exterior coordinates and its exact vanishing on
+restriction to F. This prevents a false full-intertwining assertion.
+-/
+
+/-- Outside F, the diagonal contribution vanishes, and the only
+surviving action is the true weighted incidence across the cut. -/
+theorem weightedFiniteDirac_leakage_outside (s : Source Prime Knot)
+    (code : Vertex Prime Knot → ℕ) {F G : Finset (Vertex Prime Knot)}
+    (hFG : F ⊆ G) (ξ : SnapshotHilbert F) (i : SnapshotVertex G)
+    (hi : i.1 ∉ F) :
+    weightedFiniteDirac s code G (snapshotExtend hFG ξ) i =
+      ∑ j ∈ F, weightedEntry s code i.1 j * snapshotRead F ξ j := by
+  rw [weightedFiniteDirac_apply, snapshotExtend_apply]
+  have hz : snapshotRead F ξ i.1 = 0 := by
+    classical
+    simp [snapshotRead, hi]
+  rw [hz, mul_zero, zero_add]
+  exact weightedSum_extend s code hFG ξ i.1
+
+/-- The operator-intertwining defect is orthogonal to every retained
+coordinate: compression equality does NOT say the defect is zero on G. -/
+theorem weightedFiniteDirac_defect_restrict_zero (s : Source Prime Knot)
+    (code : Vertex Prime Knot → ℕ) {F G : Finset (Vertex Prime Knot)}
+    (hFG : F ⊆ G) (ξ : SnapshotHilbert F) :
+    snapshotRestrict hFG
+      (weightedFiniteDirac s code G (snapshotExtend hFG ξ) -
+        snapshotExtend hFG (weightedFiniteDirac s code F ξ)) = 0 := by
+  rw [snapshotRestrict_sub]
+  rw [weightedFiniteDirac_compress s code hFG ξ]
+  rw [snapshotRestrict_extend hFG]
+  exact sub_self _
+
 /-- Actual weighted Dirac commutator; the source diagonal is retained. -/
 noncomputable def weightedFiniteCommutator (s : Source Prime Knot)
     (code : Vertex Prime Knot → ℕ) (F : Finset (Vertex Prime Knot))

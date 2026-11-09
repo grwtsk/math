@@ -33,6 +33,9 @@ keeps both the original diagonal `code(i)+1` and
 finite exact inclusion/compression laws and a separately identified
 mathematical Hilbert--Schmidt tail argument for the infinite bounded part;
 its new Lean elaboration, fresh replay, axiom audit and independent review
-are **NOT_RUN**. The [finite cofinality obstruction](../../GRWTSK/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FiniteCofinalityObstruction.lean)
+are **NOT_RUN**.
+Its `weightedFiniteDirac_leakage_outside` and
+`weightedFiniteDirac_defect_restrict_zero` declarations also distinguish exact
+compression from the generally false full Dirac/extension intertwining law. The [finite cofinality obstruction](../../GRWTSK/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FiniteCofinalityObstruction.lean)
 prevents confusing a finite local compression with a globally finite cofinal
 family. Neither source establishes global smooth reconstruction.
