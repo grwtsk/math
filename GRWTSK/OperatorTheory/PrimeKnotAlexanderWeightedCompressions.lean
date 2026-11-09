@@ -1,6 +1,6 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
+SOURCE_PROOF_CANDIDATE / SOURCE_BOUND_ELABORATION: issue #1709 /
 FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
 INDEPENDENT_REVIEW_NOT_RUN.
 -/
@@ -22,6 +22,18 @@ restriction, their identity/composition laws, exact Dirac compression,
 diagonal representation compression and commutator compression. None
 requires an injective enumeration at the FINITE level; injection matters
 for the countable analytic norm estimate.
+
+`weightedEntry_symmetric` uses exactly the supplier's `edgeWeight_symmetric`
+and commutativity of the two enumeration indices in the exponent; it needs
+neither injectivity nor any new knot premise. The targeted build observation
+for the repaired finite source is pinned in
+[verification issue #1709](https://github.com/grwtsk/math/issues/1709).
+This supersedes the initial NOT_RUN elaboration status only for the recorded
+source revision. Fresh separate kernel replay, transitive axiom audit and
+independent review remain NOT_RUN. The maintained
+[source guide](../../docs/guide/sources.md) links the distinct weighted and
+unweighted consumers.
+
 
 ## Countable analytic boundary (not Lean-formalized here)
 
@@ -156,9 +168,8 @@ noncomputable def weightedEntry (s : Source Prime Knot)
 theorem weightedEntry_symmetric (s : Source Prime Knot)
     (code : Vertex Prime Knot → ℕ) (i j : Vertex Prime Knot) :
     weightedEntry s code i j = weightedEntry s code j i := by
-  simp only [weightedEntry, edgeWeight_symmetric s i j]
-  congr 1
-  omega
+  unfold weightedEntry
+  rw [edgeWeight_symmetric s i j, Nat.add_comm (code i) (code j)]
 
 /-- The original global pointwise representation restricted to F. -/
 noncomputable def snapshotAct (F : Finset (Vertex Prime Knot))

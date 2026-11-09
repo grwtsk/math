@@ -32,8 +32,11 @@ keeps both the original diagonal `code(i)+1` and
 `2^(-code(i)-code(j)-2)` Alexander-incidence weights. It supplies proposed
 finite exact inclusion/compression laws and a separately identified
 mathematical Hilbert--Schmidt tail argument for the infinite bounded part;
-its new Lean elaboration, fresh replay, axiom audit and independent review
-are **NOT_RUN**.
+its targeted Lean build passed after repairing `weightedEntry_symmetric`
+to use the exact exponent commutativity identity. The repaired revision and
+build scope are pinned in [verification issue #1709](https://github.com/grwtsk/math/issues/1709).
+Fresh separate replay, transitive axiom audit and independent review remain
+**NOT_RUN**; the infinite Hilbert--Schmidt estimate remains a written argument.
 Its `weightedFiniteDirac_leakage_outside` and
 `weightedFiniteDirac_defect_restrict_zero` declarations also distinguish exact
 compression from the generally false full Dirac/extension intertwining law. The [finite cofinality obstruction](../../GRWTSK/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FiniteCofinalityObstruction.lean)
