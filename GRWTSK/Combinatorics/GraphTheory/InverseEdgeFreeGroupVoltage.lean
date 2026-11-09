@@ -2798,13 +2798,11 @@ which proves `comparison_essSurj` on OBJECTS only.
 ## Exact remaining obligation and evidence boundary
 
 Essential surjectivity on objects and faithfulness do NOT imply fullness.
-`originalLoopMap_surjective_iff_edgeLoops` identifies the remaining based
-surjectivity obligation precisely: every arbitrary continuous loop must be
-homotopic, relative endpoints, to a realized finite original edge history.
-That cellular-approximation/fullness result is NOT PROVED here; no hypothesis,
-axiom, accepting instance or desired-law field supplies it. Therefore no full
-pi_1 equivalence is claimed. Tree presentation extraction/reorientation from
-bare connectedness is also unchanged. Existing antiparallel edge witnesses
+`originalLoopMap_surjective_iff_edgeLoops` identifies the based surjectivity
+obligation precisely. The finite edge-approximation section below now proves
+that obligation for arbitrary continuous paths between original vertices,
+without a finiteness premise, and constructs the full comparison equivalence.
+Tree presentation extraction/reorientation from bare connectedness is unchanged. Existing antiparallel edge witnesses
 remain distinct; no external graph convention or quotient is silently applied.
 The old root/parent/rank, edge-bijection, DecidableEq chord and nonidentity-class
 hypotheses are preserved. No finite-vertex/edge/alphabet premise is added.
@@ -3606,8 +3604,8 @@ namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolon
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory
 variable {V : Type*} (E : V → V → Type*)
-/-- Exact remaining surjectivity obligation, not a surjectivity assumption or
-an asserted equivalence: all actual continuous loop classes must have raw edge representatives. -/
+/-- Exact characterization of surjectivity by raw edge representatives,
+discharged below by `exists_edgePath`; this is not a supplied approximation premise. -/
 theorem originalLoopMap_surjective_iff_edgeLoops (root : V) :
     Function.Surjective (originalLoopMap E root) ↔
       ∀ γ : _root_.Path (vertex E root) (vertex E root),
@@ -3671,3 +3669,582 @@ theorem connected_topological_separating_tower [DecidableEq C]
     fun i => generated_cover_realization_pathConnected T ends E presentation _ (S.subgroup i),
     hs.1,hs.2,fun q => (hsep q).1⟩
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+/-!
+## Finite edge approximation and the full fundamental-group comparison
+
+The consumer is the ACTUAL `comparison E` into the fundamental groupoid of
+`Quot (Glue E)`, with its existing quotient topology. No alternative graph
+realization or supplied cellular-approximation law is used.
+
+Put S(t) = proj_[0,1](3t - 1). Applying S on every labelled interval and fixing
+vertices defines `squeeze`. The straight interval homotopy from t to S(t)
+fixes both endpoints and descends continuously: product with the locally
+compact parameter interval preserves the required quotient continuity.
+Thus `homotopic_squeezedPath` fixes the two original vertex endpoints.
+
+Use the open cover consisting of every labelled edge interior and the stars
+of each vertex: source times t < 1/3 and target times t > 2/3. The star of a
+self-loop retains BOTH disjoint arms; its whole circle is not collapsed.
+`isOpenEmbedding_interiorPoint` proves an actual interior chart using the
+normal-point equality theorem and the quotient topology. `squeeze` sends each
+star to its vertex and sends each interior chart through its original interval.
+The Lebesgue subdivision theorem applies only to the compact PARAMETER interval,
+even for infinite, non-locally-finite graphs. `pathClass_of_open_cover` assembles
+finitely many local path classes. Its segment concatenation law is proved by
+simple connectedness of the interval, then mapped along the given path.
+
+For the endpoint return, normalize each point and take the radial path from
+its source vertex (or the constant path at a vertex). `radial_factor` treats
+t = 0, t = 1 and the interior separately; t = 1 contributes the FULL original
+edge. `EdgeRepresented` says that adding the initial radial path to a class
+equals an original free-groupoid arrow followed by the final radial path.
+It is closed under composition. Every interval path satisfies it by interval
+simple connectedness and radial cancellation; constant star pieces do too.
+At vertex endpoints both radial paths are identities. The earlier algebraic
+`exists_originalPathClass` then returns a finite signed original edge history.
+This proves `exists_edgePath` for all vertex pairs, hence based-loop surjectivity
+and `comparison_full`, without any tree or finite-graph hypothesis.
+
+Combine this surjectivity with the earlier Magnus/covering-lifting injection
+under EXACTLY the supplied rooted-tree and endpointwise edge-bijection premises
+(and DecidableEq on the chord alphabet). `originalLoopMapEquiv` preserves the
+existing chronological-product map into the OPPOSITE fundamental group.
+`fundamentalGroupOppositeEquiv_source` proves its return to the same original
+free-group word. `fundamentalGroupEquiv` explicitly uses inversion into the
+opposite, so it sends a chronologically traversed word to its inverse.
+`comparisonEquivalence_functor` identifies the full groupoid equivalence's
+forward functor with the existing literal comparison.
+
+Boundary controls: infinite degree/alphabet is allowed; self-loops keep their
+full-edge contribution; antiparallel and parallel witnesses keep their labels.
+Collapsing an entire self-loop star, assuming finite image without proof, or
+inferring fullness from faithfulness and object essential surjectivity would
+invalidate this argument. No such step is used. The earlier connected-cover
+and index-two topological-tower theorems retain their original hypotheses.
+No independent mathematical review or broad all-import fresh replay of these
+new bytes is asserted; exact checks belong to the source-pinned record in #1784.
+-/
+open scoped unitInterval
+open CategoryTheory Set
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+noncomputable section
+universe u v
+variable {V : Type u} (E : V → V → Type v)
+/-- Extend an endpoint-preserving interval map over every original edge. -/
+def timeMap (f : C(unitInterval,unitInterval)) (h0 : f 0 = 0) (h1 : f 1 = 1) :
+    Realization E → Realization E :=
+  Quot.lift (fun r => match r with
+    | .inl a => vertex E a
+    | .inr (e,t) => edgePoint E e.2.2 (f t)) (by
+      intro a b h; cases h <;> simp [h0,h1,edgePoint_zero,edgePoint_one])
+@[simp] lemma timeMap_vertex (f : C(unitInterval,unitInterval)) h0 h1 (a : V) :
+    timeMap E f h0 h1 (vertex E a) = vertex E a := rfl
+@[simp] lemma timeMap_edgePoint (f : C(unitInterval,unitInterval)) h0 h1 {a b : V}
+    (e : E a b) (t : unitInterval) :
+    timeMap E f h0 h1 (edgePoint E e t) = edgePoint E e (f t) := rfl
+lemma continuous_timeMap (f : C(unitInterval,unitInterval)) h0 h1 :
+    Continuous (timeMap E f h0 h1) := by
+  apply isQuotientMap_quot_mk.continuous_iff.mpr
+  apply continuous_sum_dom.mpr
+  constructor
+  · exact continuous_quot_mk.comp continuous_inl
+  · change Continuous (fun p : EdgeIndex E × unitInterval => Quot.mk (Glue E) (.inr (p.1,f p.2)))
+    exact continuous_quot_mk.comp (continuous_inr.comp (continuous_fst.prodMk (f.continuous.comp continuous_snd)))
+/-- Collapse the outer thirds; this retains the middle third of each labelled edge. -/
+def squeezeTime : C(unitInterval,unitInterval) :=
+  ⟨fun t => Set.projIcc 0 1 zero_le_one (3*(t:ℝ)-1), by fun_prop⟩
+@[simp] lemma squeezeTime_zero : squeezeTime 0 = 0 := by
+  apply Subtype.ext; norm_num [squeezeTime,Set.coe_projIcc]
+@[simp] lemma squeezeTime_one : squeezeTime 1 = 1 := by
+  apply Subtype.ext; norm_num [squeezeTime,Set.coe_projIcc]
+def squeeze := timeMap E squeezeTime squeezeTime_zero squeezeTime_one
+lemma continuous_squeeze : Continuous (squeeze E) := continuous_timeMap E _ _ _
+/-- An interval homotopy fixing both ends descends to the literal quotient graph. -/
+def timeHomotopy (p q : _root_.Path (0:unitInterval) 1) (H : p.Homotopy q) :
+    ContinuousMap.Homotopy
+      ⟨timeMap E p.toContinuousMap p.source p.target,continuous_timeMap E _ _ _⟩
+      ⟨timeMap E q.toContinuousMap q.source q.target,continuous_timeMap E _ _ _⟩ where
+  toFun st := timeMap E (H.eval st.1).toContinuousMap (H.eval st.1).source (H.eval st.1).target st.2
+  continuous_toFun := by
+    apply isQuotientMap_quot_mk.continuous_lift_prod_right
+    have hl : Continuous (fun p : unitInterval × VertexCopy V => vertex E p.2) :=
+      continuous_quot_mk.comp (continuous_inl.comp continuous_snd)
+    have hr : Continuous (fun p : unitInterval × (EdgeIndex E × unitInterval) =>
+        Quot.mk (Glue E) (.inr (p.2.1,H (p.1,p.2.2)))) :=
+      continuous_quot_mk.comp (continuous_inr.comp
+        ((continuous_fst.comp continuous_snd).prodMk
+          (H.continuous.comp (continuous_fst.prodMk (continuous_snd.comp continuous_snd)))))
+    convert (hl.sumElim hr).comp Homeomorph.prodSumDistrib.continuous using 1
+    funext st
+    rcases st with ⟨s,r⟩
+    cases r <;> rfl
+  map_zero_left x := by
+    change timeMap E (H.eval 0).toContinuousMap _ _ x = _
+    simp
+  map_one_left x := by
+    change timeMap E (H.eval 1).toContinuousMap _ _ x = _
+    simp
+lemma timeHomotopy_vertex (p q : _root_.Path (0:unitInterval) 1) (H : p.Homotopy q)
+    (s : unitInterval) (a : V) : timeHomotopy E p q H (s,vertex E a) = vertex E a := rfl
+-- generic interval segment, with endpoints not required to be distinct.
+def intervalSegment (s t : unitInterval) : _root_.Path s t where
+  toFun r := ⟨(1-(r:ℝ))*(s:ℝ)+(r:ℝ)*(t:ℝ), by
+    constructor
+    · exact add_nonneg (mul_nonneg (sub_nonneg.mpr r.property.2) s.property.1) (mul_nonneg r.property.1 t.property.1)
+    · nlinarith [r.property.1,r.property.2,s.property.1,s.property.2,t.property.1,t.property.2]⟩
+  continuous_toFun := by fun_prop
+  source' := by ext; simp
+  target' := by ext; simp
+lemma intervalSegment_mem {s t : unitInterval} (h : s ≤ t) (r : unitInterval) :
+    intervalSegment s t r ∈ Icc s t := by
+  constructor
+  · change (s:ℝ) ≤ (1-(r:ℝ))*(s:ℝ)+(r:ℝ)*(t:ℝ)
+    nlinarith [r.property.1,r.property.2,show (s:ℝ) ≤ t from h]
+  · change (1-(r:ℝ))*(s:ℝ)+(r:ℝ)*(t:ℝ) ≤ (t:ℝ)
+    nlinarith [r.property.1,r.property.2,show (s:ℝ) ≤ t from h]
+local instance intervalContractible : ContractibleSpace unitInterval :=
+  (convex_Icc (0:ℝ) 1).contractibleSpace ⟨0,by simp⟩
+section Subdivision
+variable {X : Type*} [TopologicalSpace X]
+def segmentPath (γ : C(unitInterval,X)) (s t : unitInterval) : _root_.Path (γ s) (γ t) :=
+  (intervalSegment s t).map γ.continuous
+lemma segmentPath_trans (γ : C(unitInterval,X)) (s t r : unitInterval) :
+    ((segmentPath γ s t).trans (segmentPath γ t r)).Homotopic (segmentPath γ s r) := by
+  simpa only [segmentPath,_root_.Path.map_trans] using (SimplyConnectedSpace.paths_homotopic
+    ((intervalSegment s t).trans (intervalSegment t r)) (intervalSegment s r)).map γ
+lemma segmentPath_self (γ : C(unitInterval,X)) (t : unitInterval) :
+    (segmentPath γ t t).Homotopic (_root_.Path.refl (γ t)) := by
+  exact (SimplyConnectedSpace.paths_homotopic (intervalSegment t t) (_root_.Path.refl t)).map γ
+lemma segmentPath_whole {a b : X} (γ : _root_.Path a b) :
+    (segmentPath γ.toContinuousMap 0 1).cast γ.source.symm γ.target.symm = γ := by
+  ext r
+  change γ (intervalSegment 0 1 r) = γ r
+  congr 1
+  apply Subtype.ext
+  simp [intervalSegment]
+/-- A compositional property of actual path classes follows from any open cover
+on which it holds. Compactness is used only on the parameter interval. -/
+theorem pathClass_of_open_cover
+    (R : ∀ x y : X, _root_.Path.Homotopic.Quotient x y → Prop)
+    (hid : ∀ x, R x x (_root_.Path.Homotopic.Quotient.refl x))
+    (hcomp : ∀ x y z p q, R x y p → R y z q → R x z (p.trans q))
+    {J : Type*} (U : J → Set X) (hU : ∀ j, IsOpen (U j))
+    (hcover : univ ⊆ ⋃ j, U j)
+    (hlocal : ∀ j {x y : X} (p : _root_.Path x y), range p ⊆ U j →
+      R x y (_root_.Path.Homotopic.Quotient.mk p))
+    (γ : C(unitInterval,X)) :
+    R (γ 0) (γ 1) (_root_.Path.Homotopic.Quotient.mk (segmentPath γ 0 1)) := by
+  obtain ⟨t,ht0,hmono,⟨N,hN⟩,hpieces⟩ :=
+    exists_monotone_Icc_subset_open_cover_unitInterval
+      (fun j => (hU j).preimage γ.continuous)
+      (by intro s hs; simpa only [mem_iUnion,mem_preimage] using hcover (mem_univ (γ s)))
+  have hi : ∀ n, R (γ 0) (γ (t n))
+      (_root_.Path.Homotopic.Quotient.mk (segmentPath γ 0 (t n))) := by
+    intro n
+    induction n with
+    | zero =>
+      rw [ht0,_root_.Path.Homotopic.Quotient.eq.mpr (segmentPath_self γ 0)]
+      exact hid _
+    | succ n ih =>
+      obtain ⟨j,hj⟩ := hpieces n
+      have hl := hlocal j (segmentPath γ (t n) (t (n+1))) (by
+        rintro _ ⟨s,rfl⟩
+        exact hj (intervalSegment_mem (hmono (Nat.le_succ n)) s))
+      have hh := hcomp _ _ _ _ _ ih hl
+      rw [← _root_.Path.Homotopic.Quotient.mk_trans,
+        _root_.Path.Homotopic.Quotient.eq.mpr (segmentPath_trans γ 0 (t n) (t (n+1)))] at hh
+      exact hh
+  have hn : t N = 1 := hN N le_rfl
+  have final := hi N
+  rw [hn] at final
+  exact final
+end Subdivision
+def starRaw (v : V) : Raw E → Prop
+  | .inl a => a = v
+  | .inr (e,t) => (e.1 = v ∧ (t:ℝ) < 1/3) ∨ (e.2.1 = v ∧ 2/3 < (t:ℝ))
+def vertexStar (v : V) : Set (Realization E) :=
+  Quot.lift (starRaw E v) (by
+    intro a b h
+    cases h <;> apply propext <;> norm_num [starRaw])
+lemma isOpen_vertexStar (v : V) : IsOpen (vertexStar E v) := by
+  apply isQuotientMap_quot_mk.isOpen_preimage.mp
+  change IsOpen {r : Raw E | starRaw E v r}
+  have heq : {r : Raw E | starRaw E v r} =
+      Sum.inl '' ({v} : Set (VertexCopy V)) ∪
+      Sum.inr '' (({e : EdgeIndex E | e.1 = v} ×ˢ {t : unitInterval | (t:ℝ) < 1/3}) ∪
+        ({e : EdgeIndex E | e.2.1 = v} ×ˢ {t : unitInterval | 2/3 < (t:ℝ)})) := by
+    ext r; cases r <;> simp [starRaw]
+  rw [heq]
+  exact (isOpenMap_inl _ (isOpen_discrete _)).union
+    (isOpenMap_inr _ (((isOpen_discrete _).prod (isOpen_lt continuous_subtype_val continuous_const)).union
+      ((isOpen_discrete _).prod (isOpen_lt continuous_const continuous_subtype_val))))
+lemma vertex_mem_vertexStar (v : V) : vertex E v ∈ vertexStar E v := rfl
+lemma squeeze_vertexStar {v : V} {x : Realization E} (hx : x ∈ vertexStar E v) :
+    squeeze E x = vertex E v := by
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl a =>
+      change a = v at hx
+      subst a; rfl
+    | inr et =>
+      rcases et with ⟨⟨a,b,e⟩,t⟩
+      change (a = v ∧ (t:ℝ) < 1/3) ∨ (b = v ∧ 2/3 < (t:ℝ)) at hx
+      rcases hx with ⟨rfl,ht⟩ | ⟨rfl,ht⟩
+      · have h : squeezeTime t = 0 := (show Set.projIcc 0 1 zero_le_one (3*(t:ℝ)-1) = 0 ↔ _ from projIcc_eq_zero).mpr (by linarith)
+        change edgePoint E e (squeezeTime t) = _
+        simp [h]
+      · have h : squeezeTime t = 1 := (show Set.projIcc 0 1 zero_le_one (3*(t:ℝ)-1) = 1 ↔ _ from projIcc_eq_one).mpr (by linarith)
+        change edgePoint E e (squeezeTime t) = _
+        simp [h]
+def interiorPoint (e : EdgeIndex E) (t : InteriorTime) : Realization E := edgePoint E e.2.2 t.val
+lemma interiorPoint_injective (e : EdgeIndex E) : Function.Injective (interiorPoint E e) := by
+  intro s t h
+  have hh := congrArg (normalize E) h
+  change normalizeRaw E (.inr (e,s.val)) = normalizeRaw E (.inr (e,t.val)) at hh
+  simpa only [normalizeRaw,dite_eq_right s.property.1,dite_eq_right s.property.2,
+    dite_eq_right t.property.1,dite_eq_right t.property.2,Sum.inr.injEq,Prod.mk.injEq,true_and] using hh
+lemma interior_preimage (e : EdgeIndex E) (A : Set InteriorTime) :
+    (Quot.mk (Glue E)) ⁻¹' (interiorPoint E e '' A) =
+      Sum.inr '' ({e} ×ˢ (Subtype.val '' A)) := by
+  ext r
+  constructor
+  · rintro ⟨t,ht,he⟩
+    have hn := congrArg (normalize E) he.symm
+    change normalizeRaw E r = normalizeRaw E (.inr (e,t.val)) at hn
+    have hnorm : normalizeRaw E (.inr (e,t.val)) = .inr (e,t) := by
+      simp [normalizeRaw,t.property.1,t.property.2]
+    rw [hnorm] at hn
+    rw [(normalizeRaw_interior_iff E r e t).mp hn]
+    exact ⟨(e,t.val),⟨rfl,⟨t,ht,rfl⟩⟩,rfl⟩
+  · rintro ⟨⟨e',t⟩,⟨he,⟨s,hs,hst⟩⟩,rfl⟩
+    change e' = e at he
+    subst e'
+    change s.val = t at hst
+    subst t
+    exact ⟨s,hs,rfl⟩
+lemma isOpenEmbedding_interiorPoint (e : EdgeIndex E) :
+    Topology.IsOpenEmbedding (interiorPoint E e) := by
+  apply Topology.IsOpenEmbedding.of_continuous_injective_isOpenMap
+  · exact (continuous_edgePoint E e.2.2).comp continuous_subtype_val
+  · exact interiorPoint_injective E e
+  · intro A hA
+    apply isQuotientMap_quot_mk.isOpen_preimage.mp
+    rw [interior_preimage]
+    apply isOpenMap_inr
+    exact (isOpen_discrete _).prod
+      (((isOpen_ne_fun continuous_id continuous_const).inter
+        (isOpen_ne_fun continuous_id continuous_const)).isOpenMap_subtype_val A hA)
+def normalAnchor : NormalPoint E → V
+  | .inl a => a
+  | .inr (e,_) => e.1
+def normalTail : (n : NormalPoint E) → _root_.Path (vertex E (normalAnchor E n)) (realizeNormal E n)
+  | .inl a => _root_.Path.refl (vertex E a)
+  | .inr (e,t) => ((initialIntervalPath t.val).map (continuous_edgePoint E e.2.2)).cast (edgePoint_zero E e.2.2).symm rfl
+def anchor (x : Realization E) : V := normalAnchor E (normalize E x)
+def tail (x : Realization E) : _root_.Path (vertex E (anchor E x)) x :=
+  (normalTail E (normalize E x)).cast rfl (realize_normalize E x).symm
+def tailValue : NormalPoint E → unitInterval → Realization E
+  | .inl a, _ => vertex E a
+  | .inr (e,t), r => edgePoint E e.2.2 (initialIntervalPath t.val r)
+lemma tail_apply (x : Realization E) (r : unitInterval) :
+    tail E x r = tailValue E (normalize E x) r := by
+  change normalTail E (normalize E x) r = _
+  generalize normalize E x = n
+  cases n <;> rfl
+@[simp] lemma anchor_vertex (v : V) : anchor E (vertex E v) = v := rfl
+@[simp] lemma tail_vertex (v : V) : tail E (vertex E v) = _root_.Path.refl (vertex E v) := by
+  ext; rfl
+/-- A path class is represented by a finite original history after the canonical
+radial paths at its endpoints. This is closed under composition. -/
+def EdgeRepresented {x y : Realization E} (q : FundamentalGroupoid.mk x ⟶ FundamentalGroupoid.mk y) : Prop :=
+  ∃ f : (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj (anchor E x) ⟶
+      (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj (anchor E y),
+    _root_.Path.Homotopic.Quotient.mk (tail E x) ≫ q =
+      (comparison E).map f ≫ _root_.Path.Homotopic.Quotient.mk (tail E y)
+lemma edgeRepresented_id (x : Realization E) : EdgeRepresented E (𝟙 (FundamentalGroupoid.mk x)) := by
+  refine ⟨𝟙 _,?_⟩
+  simp only [CategoryTheory.Functor.map_id,Category.id_comp,Category.comp_id]
+lemma edgeRepresented_comp {x y z : Realization E}
+    (p : FundamentalGroupoid.mk x ⟶ FundamentalGroupoid.mk y)
+    (q : FundamentalGroupoid.mk y ⟶ FundamentalGroupoid.mk z)
+    (hp : EdgeRepresented E p) (hq : EdgeRepresented E q) : EdgeRepresented E (p ≫ q) := by
+  obtain ⟨f,hf⟩ := hp
+  obtain ⟨g,hg⟩ := hq
+  refine ⟨f ≫ g,?_⟩
+  rw [CategoryTheory.Functor.map_comp,← Category.assoc,hf,Category.assoc,hg,Category.assoc]
+def radial {a b : V} (e : E a b) (t : unitInterval) :
+    _root_.Path (vertex E a) (edgePoint E e t) :=
+  ((initialIntervalPath t).map (continuous_edgePoint E e)).cast (edgePoint_zero E e).symm rfl
+lemma class_constant {X : Type*} [TopologicalSpace X] {x y : X}
+    (p : _root_.Path x y) (h : x = y) (hp : ∀ r, p r = y) :
+    _root_.Path.Homotopic.Quotient.mk p = eqToHom (congrArg FundamentalGroupoid.mk h) := by
+  subst y
+  have : p = _root_.Path.refl x := by ext r; exact hp r
+  subst p; rfl
+lemma class_source_transport {X : Type*} [TopologicalSpace X] {a b x : X}
+    (p : _root_.Path a x) (q : _root_.Path b x) (h : a = b) (hp : ∀ r, p r = q r) :
+    _root_.Path.Homotopic.Quotient.mk p =
+      eqToHom (congrArg FundamentalGroupoid.mk h) ≫ _root_.Path.Homotopic.Quotient.mk q := by
+  subst b
+  simp only [eqToHom_refl,Category.id_comp]
+  congr 1
+  ext r; exact hp r
+lemma radial_factor {a b : V} (e : E a b) (t : unitInterval) :
+    ∃ f : (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj a ⟶
+      (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj (anchor E (edgePoint E e t)),
+      _root_.Path.Homotopic.Quotient.mk (radial E e t) =
+        (comparison E).map f ≫ _root_.Path.Homotopic.Quotient.mk (tail E (edgePoint E e t)) := by
+  by_cases h0 : t = 0
+  · subst t
+    have ha : anchor E (edgePoint E e 0) = a := by simp [anchor,normalize,edgePoint,normalizeRaw,normalAnchor]
+    refine ⟨eqToHom (congrArg (fun v => (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj v) ha.symm),?_⟩
+    rw [eqToHom_map]
+    have hn : normalize E (edgePoint E e 0) = .inl a := by
+      change normalizeRaw E (.inr (⟨a,b,e⟩,0)) = _
+      simp [normalizeRaw]
+    exact class_source_transport _ _ (congrArg (vertex E) ha.symm) (by
+      intro r
+      rw [tail_apply,hn]
+      change edgePoint E e (initialIntervalPath 0 r) = vertex E a
+      have hz : initialIntervalPath 0 r = 0 := by ext; simp [initialIntervalPath]
+      rw [hz,edgePoint_zero])
+  · by_cases h1 : t = 1
+    · subst t
+      have ha : anchor E (edgePoint E e 1) = b := by simp [anchor,normalize,edgePoint,normalizeRaw,normalAnchor]
+      refine ⟨(Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).map e ≫
+        eqToHom (congrArg (fun v => (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj v) ha.symm),?_⟩
+      have hr : radial E e 1 = (edgePath E e).cast rfl (edgePoint_one E e) := by
+        ext r
+        simp [radial,initialIntervalPath,edgePath]
+      have hn : normalize E (edgePoint E e 1) = .inl b := by
+        change normalizeRaw E (.inr (⟨a,b,e⟩,1)) = _
+        simp [normalizeRaw]
+      have ht := class_constant (tail E (edgePoint E e 1))
+        ((congrArg (vertex E) ha).trans (edgePoint_one E e).symm) (by
+          intro r
+          rw [tail_apply,hn]
+          exact (edgePoint_one E e).symm)
+      rw [hr,_root_.Path.Homotopic.Quotient.mk_cast,← FundamentalGroupoid.conj_eqToHom,
+        CategoryTheory.Functor.map_comp,comparison_edge,eqToHom_map,ht]
+      simp only [eqToHom_refl,Category.id_comp,Category.assoc,eqToHom_trans]
+    · have hn : normalize E (edgePoint E e t) = .inr (⟨a,b,e⟩,⟨t,h0,h1⟩) := by
+        change normalizeRaw E (.inr (⟨a,b,e⟩,t)) = _
+        simp [normalizeRaw,h0,h1]
+      have ha : anchor E (edgePoint E e t) = a := by rw [anchor,hn]; rfl
+      refine ⟨eqToHom (congrArg (fun v => (Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).obj v) ha.symm),?_⟩
+      rw [eqToHom_map]
+      exact class_source_transport _ _ (congrArg (vertex E) ha.symm) (by
+        intro r
+        rw [tail_apply,hn]
+        rfl)
+lemma edgeRepresented_interval {a b : V} (e : E a b)
+    {s t : unitInterval} (p : _root_.Path s t) :
+    EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk (p.map (continuous_edgePoint E e))) := by
+  have hh : ((radial E e s).trans (p.map (continuous_edgePoint E e))).Homotopic (radial E e t) := by
+    have h := ((SimplyConnectedSpace.paths_homotopic
+      ((initialIntervalPath s).trans p) (initialIntervalPath t)).map
+        ⟨edgePoint E e,continuous_edgePoint E e⟩).pathCast (edgePoint_zero E e).symm rfl
+    simpa only [_root_.Path.map_trans,_root_.Path.cast_trans,_root_.Path.cast_rfl_rfl,radial] using h
+  have hr := _root_.Path.Homotopic.Quotient.eq.mpr hh
+  change FundamentalGroupoid.fromPath (_root_.Path.Homotopic.Quotient.mk (radial E e s)) ≫
+    FundamentalGroupoid.fromPath (_root_.Path.Homotopic.Quotient.mk (p.map (continuous_edgePoint E e))) =
+      FundamentalGroupoid.fromPath (_root_.Path.Homotopic.Quotient.mk (radial E e t)) at hr
+  obtain ⟨fs,hs⟩ := radial_factor E e s
+  obtain ⟨ft,ht⟩ := radial_factor E e t
+  rw [hs,ht] at hr
+  refine ⟨inv fs ≫ ft,?_⟩
+  have he := congrArg (fun k => inv ((comparison E).map fs) ≫ k) hr
+  simp only [FundamentalGroupoid.fromPath,Category.assoc,IsIso.inv_hom_id_assoc] at he
+  rw [CategoryTheory.Functor.map_comp,CategoryTheory.Functor.map_inv,Category.assoc]
+  with_unfolding_all exact he
+lemma edgeRepresented_of_pointwise {x y x' y' : Realization E}
+    (p : _root_.Path x y) (q : _root_.Path x' y') (hpq : ∀ r, p r = q r)
+    (hq : EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk q)) :
+    EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk p) := by
+  have hx : x = x' := by simpa only [_root_.Path.source] using hpq 0
+  have hy : y = y' := by simpa only [_root_.Path.target] using hpq 1
+  subst x'; subst y'
+  have he : p = q := by ext r; exact hpq r
+  subst p; exact hq
+lemma edgeRepresented_constant {x y : Realization E} (p : _root_.Path x y) (v : V)
+    (hp : ∀ r, p r = vertex E v) : EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk p) :=
+  edgeRepresented_of_pointwise E p (_root_.Path.refl (vertex E v)) hp (edgeRepresented_id E _)
+lemma edgeRepresented_squeeze_interior (e : EdgeIndex E)
+    {x y : Realization E} (p : _root_.Path x y) (hp : range p ⊆ range (interiorPoint E e)) :
+    EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk (p.map (continuous_squeeze E))) := by
+  let H := (isOpenEmbedding_interiorPoint E e).toIsEmbedding.toHomeomorph
+  let k : C(unitInterval,InteriorTime) :=
+    (⟨H.symm,H.symm.continuous⟩ : C(range (interiorPoint E e),InteriorTime)).comp ⟨fun r => ⟨p r,hp ⟨r,rfl⟩⟩,p.continuous.codRestrict _⟩
+  have hk (r : unitInterval) : interiorPoint E e (k r) = p r := by
+    exact congrArg Subtype.val (H.apply_symm_apply ⟨p r,hp ⟨r,rfl⟩⟩)
+  let q : _root_.Path (squeezeTime (k 0).val) (squeezeTime (k 1).val) :=
+    ⟨⟨fun r => squeezeTime (k r).val,by fun_prop⟩,rfl,rfl⟩
+  apply edgeRepresented_of_pointwise E (p.map (continuous_squeeze E))
+    (q.map (continuous_edgePoint E e.2.2)) _ (edgeRepresented_interval E e.2.2 q)
+  intro r
+  change squeeze E (p r) = edgePoint E e.2.2 (squeezeTime (k r).val)
+  rw [← hk r]
+  rfl
+def approximationCover : V ⊕ EdgeIndex E → Set (Realization E)
+  | .inl v => vertexStar E v
+  | .inr e => range (interiorPoint E e)
+lemma isOpen_approximationCover (j : V ⊕ EdgeIndex E) : IsOpen (approximationCover E j) := by
+  cases j with
+  | inl v => exact isOpen_vertexStar E v
+  | inr e => exact (isOpenEmbedding_interiorPoint E e).isOpen_range
+lemma approximationCover_covers : univ ⊆ ⋃ j, approximationCover E j := by
+  intro x hx
+  induction x using Quot.inductionOn with
+  | h r =>
+    cases r with
+    | inl a => exact mem_iUnion.mpr ⟨.inl a,vertex_mem_vertexStar E a⟩
+    | inr et =>
+      rcases et with ⟨⟨a,b,e⟩,t⟩
+      by_cases h0 : t = 0
+      · subst t
+        apply mem_iUnion.mpr
+        refine ⟨.inl a,?_⟩
+        change edgePoint E e 0 ∈ vertexStar E a
+        rw [edgePoint_zero]
+        exact vertex_mem_vertexStar E a
+      · by_cases h1 : t = 1
+        · subst t
+          apply mem_iUnion.mpr
+          refine ⟨.inl b,?_⟩
+          change edgePoint E e 1 ∈ vertexStar E b
+          rw [edgePoint_one]
+          exact vertex_mem_vertexStar E b
+        · exact mem_iUnion.mpr ⟨.inr ⟨a,b,e⟩,⟨⟨t,h0,h1⟩,rfl⟩⟩
+lemma edgeRepresented_squeeze_segment (γ : C(unitInterval,Realization E)) :
+    EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk
+      ((segmentPath γ 0 1).map (continuous_squeeze E))) := by
+  let f : C(Realization E,Realization E) := ⟨squeeze E,continuous_squeeze E⟩
+  have hh := pathClass_of_open_cover
+    (fun x y q => EdgeRepresented E (q.map f))
+    (fun x => by
+      change EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk ((_root_.Path.refl x).map f.continuous))
+      have he : (_root_.Path.refl x).map f.continuous = _root_.Path.refl (f x) := by ext; rfl
+      rw [he]
+      exact edgeRepresented_id E (f x))
+    (fun x y z p q hp hq => by
+      have hm : (p.trans q).map f = (p.map f).trans (q.map f) := by
+        induction p using _root_.Path.Homotopic.Quotient.ind with
+        | mk p =>
+          induction q using _root_.Path.Homotopic.Quotient.ind with
+          | mk q => exact congrArg _root_.Path.Homotopic.Quotient.mk (_root_.Path.map_trans p q f.continuous)
+      rw [hm]
+      exact edgeRepresented_comp E _ _ hp hq)
+    (approximationCover E) (isOpen_approximationCover E) (approximationCover_covers E)
+    (fun j x y p hp => by
+      cases j with
+      | inl v =>
+        apply edgeRepresented_constant E (p.map f.continuous) v
+        intro r
+        exact squeeze_vertexStar E (hp ⟨r,rfl⟩)
+      | inr e => exact edgeRepresented_squeeze_interior E e p hp) γ
+  exact hh
+def squeezeHomotopy : ContinuousMap.Homotopy (ContinuousMap.id (Realization E))
+    ⟨squeeze E,continuous_squeeze E⟩ :=
+  (timeHomotopy E _ _ (_root_.Path.Homotopy.reparam _root_.Path.id squeezeTime
+    squeezeTime.continuous squeezeTime_zero squeezeTime_one)).cast (by
+      ext x
+      induction x using Quot.inductionOn with
+      | h r => cases r <;> rfl) rfl
+lemma squeezeHomotopy_vertex (r : unitInterval) (v : V) :
+    squeezeHomotopy E (r,vertex E v) = vertex E v := rfl
+def squeezedPath {a b : V} (p : _root_.Path (vertex E a) (vertex E b)) :
+    _root_.Path (vertex E a) (vertex E b) :=
+  (p.map (continuous_squeeze E)).cast (timeMap_vertex E _ _ _ a).symm (timeMap_vertex E _ _ _ b).symm
+lemma homotopic_squeezedPath {a b : V} (p : _root_.Path (vertex E a) (vertex E b)) :
+    p.Homotopic (squeezedPath E p) := by
+  refine ⟨{ toFun := fun st => squeezeHomotopy E (st.1,p st.2)
+            continuous_toFun := (squeezeHomotopy E).continuous.comp (continuous_fst.prodMk (p.continuous.comp continuous_snd))
+            map_zero_left := ?_
+            map_one_left := ?_
+            prop' := ?_ }⟩
+  · intro t; exact (squeezeHomotopy E).map_zero_left (p t)
+  · intro t; exact (squeezeHomotopy E).map_one_left (p t)
+  · intro t r hr
+    rcases hr with hr | hr
+    · subst r
+      change squeezeHomotopy E (t,p 0) = p 0
+      rw [p.source,squeezeHomotopy_vertex]
+    · have h : r = 1 := hr
+      subst r
+      change squeezeHomotopy E (t,p 1) = p 1
+      rw [p.target,squeezeHomotopy_vertex]
+/-- Every actual continuous vertex-to-vertex path is homotopic relative to
+its endpoints to a finite signed history of the original labelled edges.
+No finiteness, local finiteness or spanning-tree assumption is needed. -/
+theorem exists_edgePath {a b : V} (p : _root_.Path (vertex E a) (vertex E b)) :
+    ∃ q : Path (OrientedEdge (E := E)) a b, p.Homotopic (path E q) := by
+  have hR : EdgeRepresented E (_root_.Path.Homotopic.Quotient.mk (squeezedPath E p)) := by
+    apply edgeRepresented_of_pointwise E (squeezedPath E p)
+      ((segmentPath p.toContinuousMap 0 1).map (continuous_squeeze E)) _
+      (edgeRepresented_squeeze_segment E p.toContinuousMap)
+    intro r
+    change squeeze E (p r) = squeeze E (p (intervalSegment 0 1 r))
+    have h : intervalSegment 0 1 r = r := by ext; simp [intervalSegment]
+    rw [h]
+  obtain ⟨f,hf⟩ := hR
+  have hf' : _root_.Path.Homotopic.Quotient.mk (squeezedPath E p) = (comparison E).map f := by
+    change (𝟙 (FundamentalGroupoid.mk (vertex E a))) ≫ _ = _ ≫ (𝟙 (FundamentalGroupoid.mk (vertex E b))) at hf
+    simpa only [Category.id_comp,Category.comp_id] using hf
+  obtain ⟨q,hq⟩ := SpanningTree.exists_originalPathClass E f
+  refine ⟨q,(homotopic_squeezedPath E p).trans ?_⟩
+  apply _root_.Path.Homotopic.Quotient.exact
+  rw [hf',← comparison_path,hq]
+theorem originalLoopMap_surjective (root : V) : Function.Surjective (originalLoopMap E root) :=
+  (originalLoopMap_surjective_iff_edgeLoops E root).mpr (fun p => exists_edgePath E p)
+
+theorem comparison_full : (comparison E).Full where
+  map_surjective := by
+    intro a b f
+    obtain ⟨p,hp⟩ := _root_.Path.Homotopic.Quotient.mk_surjective f
+    obtain ⟨q,hq⟩ := exists_edgePath E p
+    refine ⟨SpanningTree.originalPathClass E q,?_⟩
+    rw [comparison_path]
+    exact (_root_.Path.Homotopic.Quotient.eq.mpr hq.symm).trans hp
+
+variable (T : SpanningTree.RootedTree V) {C : Type*} (ends : C → V × V)
+variable (presentation : ∀ a b, E a b ≃ SpanningTree.Edge T ends a b)
+/-- The actual based comparison is an isomorphism. The opposite records
+Mathlib's endomorphism multiplication versus chronological source traversal. -/
+def originalLoopMapEquiv [DecidableEq C] :
+    SpanningTree.OriginalLoop E T.root ≃*
+      (FundamentalGroup (Realization E) (vertex E T.root))ᵐᵒᵖ :=
+  MulEquiv.ofBijective (originalLoopMap E T.root)
+    ⟨originalLoopMap_injective T ends E presentation,originalLoopMap_surjective E T.root⟩
+def fundamentalGroupOppositeEquiv [DecidableEq C] :
+    (FundamentalGroup (Realization E) (vertex E T.root))ᵐᵒᵖ ≃* FreeGroup C :=
+  (originalLoopMapEquiv E T ends presentation).symm.trans
+    (SpanningTree.originalLoopEquiv T ends E presentation)
+/-- Full, faithful and essentially surjective for the literal realization. -/
+def comparisonEquivalence [DecidableEq C] :
+    Quiver.FreeGroupoid (SpanningTree.SourceVertex E) ≌ FundamentalGroupoid (Realization E) := by
+  letI := comparison_full E
+  letI := comparison_faithful E T ends presentation
+  letI := comparison_essSurj E
+  letI : (comparison E).IsEquivalence := {}
+  exact (comparison E).asEquivalence
+/-- The ordinary pi_1 is free as well. Inversion into the opposite is explicit,
+so this equivalence sends a chronologically traversed source word to its inverse. -/
+def fundamentalGroupEquiv [DecidableEq C] :
+    FundamentalGroup (Realization E) (vertex E T.root) ≃* FreeGroup C :=
+  (MulEquiv.inv' _).trans (fundamentalGroupOppositeEquiv E T ends presentation)
+@[simp] lemma originalLoopMapEquiv_apply [DecidableEq C]
+    (p : SpanningTree.OriginalLoop E T.root) :
+    originalLoopMapEquiv E T ends presentation p = originalLoopMap E T.root p := rfl
+@[simp] lemma fundamentalGroupOppositeEquiv_source [DecidableEq C]
+    (p : SpanningTree.OriginalLoop E T.root) :
+    fundamentalGroupOppositeEquiv E T ends presentation (originalLoopMap E T.root p) =
+      SpanningTree.originalLoopEquiv T ends E presentation p := by
+  exact congrArg (SpanningTree.originalLoopEquiv T ends E presentation)
+    ((originalLoopMapEquiv E T ends presentation).symm_apply_apply p)
+@[simp] lemma comparisonEquivalence_functor [DecidableEq C] :
+    (comparisonEquivalence E T ends presentation).functor = comparison E := rfl
+end
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
