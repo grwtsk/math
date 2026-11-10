@@ -465851,7 +465851,7 @@
     {
       "path": "LICENSES/AGENTS.md",
       "mode": "100644",
-      "git_object": "331ee2459c52e9c391a5d0159a9e99ed7a9f6fb8",
+      "git_object": "d083dd4d458c42f5f0fa4f3bbfb3708459174e96",
       "object_type": "blob"
     },
     {
@@ -465998,19 +465998,19 @@
     {
       "path": "LICENSES/manifest.json",
       "mode": "100644",
-      "git_object": "0ff99a6bd066fe39d594eb32e74734c9fc6e966c",
+      "git_object": "5c5aae60b3db1484f875a5dec48d8f96f561faa9",
       "object_type": "blob"
     },
     {
       "path": "LICENSES/source-evidence.json",
       "mode": "100644",
-      "git_object": "8713d6175215b16ec0f5ccbe12b88c6adda43c38",
+      "git_object": "cb46c351602549085cc412a95df2f624ddd4eacc",
       "object_type": "blob"
     },
     {
       "path": "LICENSES/sources.json",
       "mode": "100644",
-      "git_object": "0656e4d4eddbca0e78f6cea917c57bf07f46a6fc",
+      "git_object": "3ee7abe87b80f5d3ea49d709c72de357140ebe1b",
       "object_type": "blob"
     },
     {
@@ -466023,6 +466023,12 @@
       "path": "LICENSES/upstream/leancert/106e8832d72fc89ec252eff22195da5cd6332108/LICENSE",
       "mode": "100644",
       "git_object": "cb84d4e6fe9a8077d3135b2ddfc2cda41ca2c9bd",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/upstream/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LICENSE",
+      "mode": "100644",
+      "git_object": "b7298b784d43dbd3a43645c4906c5f6b7a882123",
       "object_type": "blob"
     },
     {
@@ -594591,7 +594597,7 @@
       ]
     }
   ],
-  "base_revision": "bad86000f4faaba0a0b7b82bec22d98acc0a2569",
+  "base_revision": "78bce3a6d15f9485162e2f55f60748402318f6e2",
   "adaptation_membership": "Only recorded external URLs, publication citations, pinned upstream source records or exact pinned import inventories qualify the adaptation source view and theorem-provenance section. Local-only derivation references do not qualify. Canonical local sources and their provenance remain in the repository file manifest. Environment configurations, legal notices and verification helpers are build support, not additional adapted theorems.",
   "paper_formalizations": {
     "catalogue_path": "docs/formalizations/catalogue.json",
@@ -594603,7 +594609,7 @@
     "manifest_path": "LICENSES/manifest.json",
     "scope": "Legal file locations and byte integrity only; original source-specific licensing remains unchanged.",
     "source_map_path": "LICENSES/sources.json",
-    "uncertain_mapping_count": 8,
+    "uncertain_mapping_count": 0,
     "source_evidence_path": "LICENSES/source-evidence.json"
   }
 }

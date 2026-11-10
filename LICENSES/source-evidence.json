@@ -328,6 +328,36 @@
       "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
       "sha256": "761711878d00248d3e1269aea81a827fac93987e6774e72daec2ee8d0be2871d",
       "git_blob": "8d4a5a0bc1c6e839b9cee57de8564309266eece8"
+    },
+    "leancert-relicensed:LeanCert/Engine/Affine/Nonlinear.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LeanCert/Engine/Affine/Nonlinear.lean",
+      "revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+      "sha256": "4966cb4af2001f1219d24776faa12d2839aa8b3eccd40429f62c437f3f273d62",
+      "git_blob": "e7a094ede632390858a4d2cdc4d4c4e8b0cdb30f"
+    },
+    "leancert-relicensed:LeanCert/Engine/Affine/Transcendental.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LeanCert/Engine/Affine/Transcendental.lean",
+      "revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+      "sha256": "62edae8d4515b284de9484ecf8b4848873f67ab00b302cd170c95484b5cef156",
+      "git_blob": "ef1fc4731ea525ea0ef78028f46e01047eeb2adb"
+    },
+    "leancert-relicensed:LeanCert/ML/Optimized/QuantizedLayer.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LeanCert/ML/Optimized/QuantizedLayer.lean",
+      "revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+      "sha256": "26c1e2f27f42398196223e2533b20926cb5612ebf3c78f5214f66a04187f7191",
+      "git_blob": "9577e4c3edfd3e6409317e89ea63f8c2f7798fe1"
+    },
+    "leancert-relicensed:LeanCert/ML/Optimized/Matrix.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LeanCert/ML/Optimized/Matrix.lean",
+      "revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+      "sha256": "f74a36d3919bb396fce1f3d9c3cec42913189c80ec4c356d4562e0e82f0dc08d",
+      "git_blob": "2528f35c8a68d3d1b65beb93a6533baab2f48d3a"
+    },
+    "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LICENSE",
+      "sha256": "b6483eb31d324f7ec37b3207046a1a3fd7c56a1d770a71b30b7a96e502f09d59",
+      "git_blob": "b7298b784d43dbd3a43645c4906c5f6b7a882123",
+      "retrieval": "FETCHED"
     }
   },
   "files": [
@@ -662,14 +692,44 @@
       "original_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "FSL-1.1-A",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/Engine/Affine/Nonlinear.lean",
-        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "leancert-relicensed:LeanCert/Engine/Affine/Nonlinear.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/Engine/Affine/Nonlinear.lean",
+          "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/Engine/Affine/Nonlinear.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "4966cb4af2001f1219d24776faa12d2839aa8b3eccd40429f62c437f3f273d62",
+        "apache_source_git_blob": "e7a094ede632390858a4d2cdc4d4c4e8b0cdb30f",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Nonlinear.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "2311bb6951516d935d39afe5071ab09fd8aece4f",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NonlinearNamespaced.lean",
@@ -682,14 +742,44 @@
       "original_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "FSL-1.1-A",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/Engine/Affine/Nonlinear.lean",
-        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "leancert-relicensed:LeanCert/Engine/Affine/Nonlinear.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/Engine/Affine/Nonlinear.lean",
+          "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/Engine/Affine/Nonlinear.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "4966cb4af2001f1219d24776faa12d2839aa8b3eccd40429f62c437f3f273d62",
+        "apache_source_git_blob": "e7a094ede632390858a4d2cdc4d4c4e8b0cdb30f",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Nonlinear.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "2311bb6951516d935d39afe5071ab09fd8aece4f",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Optimized.lean",
@@ -742,14 +832,43 @@
       "original_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "Apache-2.0",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/ML/Optimized/QuantizedLayer.lean",
-        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "leancert-relicensed:LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/ML/Optimized/QuantizedLayer.lean",
+          "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "26c1e2f27f42398196223e2533b20926cb5612ebf3c78f5214f66a04187f7191",
+        "apache_source_git_blob": "9577e4c3edfd3e6409317e89ea63f8c2f7798fe1",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/QuantizedLayer.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "1ac4fb9e0fc98ec58ae78678dbbbf7d1b020e0c3",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayerNamespaced.lean",
@@ -762,14 +881,43 @@
       "original_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "Apache-2.0",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/ML/Optimized/QuantizedLayer.lean",
-        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "leancert-relicensed:LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/ML/Optimized/QuantizedLayer.lean",
+          "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "26c1e2f27f42398196223e2533b20926cb5612ebf3c78f5214f66a04187f7191",
+        "apache_source_git_blob": "9577e4c3edfd3e6409317e89ea63f8c2f7798fe1",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/QuantizedLayer.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "1ac4fb9e0fc98ec58ae78678dbbbf7d1b020e0c3",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineApprox.lean",
@@ -902,14 +1050,43 @@
       "original_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "FSL-1.1-A",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/Engine/Affine/Transcendental.lean",
-        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "leancert-relicensed:LeanCert/Engine/Affine/Transcendental.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/Engine/Affine/Transcendental.lean",
+          "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/Engine/Affine/Transcendental.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "62edae8d4515b284de9484ecf8b4848873f67ab00b302cd170c95484b5cef156",
+        "apache_source_git_blob": "ef1fc4731ea525ea0ef78028f46e01047eeb2adb",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Transcendental.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/TranscendentalNamespaced.lean",
@@ -922,14 +1099,43 @@
       "original_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "FSL-1.1-A",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/Engine/Affine/Transcendental.lean",
-        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "leancert-relicensed:LeanCert/Engine/Affine/Transcendental.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/Engine/Affine/Transcendental.lean",
+          "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/Engine/Affine/Transcendental.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "62edae8d4515b284de9484ecf8b4848873f67ab00b302cd170c95484b5cef156",
+        "apache_source_git_blob": "ef1fc4731ea525ea0ef78028f46e01047eeb2adb",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Transcendental.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transformer.lean",
@@ -1184,14 +1390,42 @@
       "original_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "Apache-2.0",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/ML/Optimized/Matrix.lean",
-        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "leancert-relicensed:LeanCert/ML/Optimized/Matrix.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/ML/Optimized/Matrix.lean",
+          "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/ML/Optimized/Matrix.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "f74a36d3919bb396fce1f3d9c3cec42913189c80ec4c356d4562e0e82f0dc08d",
+        "apache_source_git_blob": "2528f35c8a68d3d1b65beb93a6533baab2f48d3a",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/Matrix.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedIntMatrix.lean",
@@ -1204,14 +1438,42 @@
       "original_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
       "file_header_license_literal": "AGPL-3.0",
       "project_license_observed": "Apache-2.0",
-      "result": "REVIEW_REQUIRED",
-      "license_expression": null,
-      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "result": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
+      "license_expression": "Apache-2.0",
+      "reason": "The explicit Apache-2.0 file header and project license at the later exact edition apply to identical content. Historical AGPL/project-license discrepancy remains recorded rather than erased; no repository-default override is used.",
       "upstream_evidence_keys": [
         "leancert-source:LeanCert/ML/Optimized/Matrix.lean",
-        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "leancert-relicensed:LeanCert/ML/Optimized/Matrix.lean",
+        "leancert-license-4a97db7f6944db76dd4e237ce2982814d7b388ea"
       ],
-      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed.",
+      "previous_history_disposition": {
+        "result": "REVIEW_REQUIRED",
+        "license_expression": null,
+        "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+        "upstream_evidence_keys": [
+          "leancert-source:LeanCert/ML/Optimized/Matrix.lean",
+          "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+        ]
+      },
+      "history_resolution": {
+        "upstream_path": "LeanCert/ML/Optimized/Matrix.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "f74a36d3919bb396fce1f3d9c3cec42913189c80ec4c356d4562e0e82f0dc08d",
+        "apache_source_git_blob": "2528f35c8a68d3d1b65beb93a6533baab2f48d3a",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/Matrix.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
     },
     {
       "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNetwork.lean",
@@ -2289,8 +2551,187 @@
   ],
   "summary": {
     "EXPLICIT_UPSTREAM_VERIFIED": 35,
-    "REVIEW_REQUIRED": 8,
+    "RESOLVED_UPSTREAM_LICENSE_HISTORY": 8,
     "REPOSITORY_DEFAULT": 37,
     "RESOLVED_SCOPED": 38
+  },
+  "history_followup": {
+    "base_revision": "78bce3a6d15f9485162e2f55f60748402318f6e2",
+    "scope": "The eight previously conflicting mappings only; does not infer relicensing of other source versions.",
+    "project_license_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LICENSE&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+    "project_license_history": [
+      {
+        "revision": "090770998c73be58edd738b47a40616e4d49a43d",
+        "subject": "chore: relicense to Apache 2.0"
+      },
+      {
+        "revision": "241a5f1700f2a32cf376958d4393c1fbad2a240f",
+        "subject": "license: Switch to FSL-1.1-Apache-2.0 with commercial tiers"
+      },
+      {
+        "revision": "eddf7070d343f9fc65f3e0ee4793c64de8092041",
+        "subject": "updated license"
+      },
+      {
+        "revision": "caaeef9f9b4e8b86cb5db90d8528d2d7e6b82842",
+        "subject": "Initial release: verified numerical computation for Lean 4"
+      }
+    ],
+    "apache_project_transition": "https://github.com/alerad/leancert/commit/090770998c73be58edd738b47a40616e4d49a43d",
+    "resolution": "The commit message is supporting history only; each disposition additionally requires an exact whole-file comparison and an explicit same-revision file and project license.",
+    "files": [
+      {
+        "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean",
+        "upstream_path": "LeanCert/Engine/Affine/Nonlinear.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "4966cb4af2001f1219d24776faa12d2839aa8b3eccd40429f62c437f3f273d62",
+        "apache_source_git_blob": "e7a094ede632390858a4d2cdc4d4c4e8b0cdb30f",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Nonlinear.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "2311bb6951516d935d39afe5071ab09fd8aece4f",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      },
+      {
+        "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NonlinearNamespaced.lean",
+        "upstream_path": "LeanCert/Engine/Affine/Nonlinear.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "4966cb4af2001f1219d24776faa12d2839aa8b3eccd40429f62c437f3f273d62",
+        "apache_source_git_blob": "e7a094ede632390858a4d2cdc4d4c4e8b0cdb30f",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Nonlinear.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "2311bb6951516d935d39afe5071ab09fd8aece4f",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      },
+      {
+        "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayer.lean",
+        "upstream_path": "LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "26c1e2f27f42398196223e2533b20926cb5612ebf3c78f5214f66a04187f7191",
+        "apache_source_git_blob": "9577e4c3edfd3e6409317e89ea63f8c2f7798fe1",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/QuantizedLayer.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "1ac4fb9e0fc98ec58ae78678dbbbf7d1b020e0c3",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      },
+      {
+        "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayerNamespaced.lean",
+        "upstream_path": "LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "26c1e2f27f42398196223e2533b20926cb5612ebf3c78f5214f66a04187f7191",
+        "apache_source_git_blob": "9577e4c3edfd3e6409317e89ea63f8c2f7798fe1",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/QuantizedLayer.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "1ac4fb9e0fc98ec58ae78678dbbbf7d1b020e0c3",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      },
+      {
+        "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean",
+        "upstream_path": "LeanCert/Engine/Affine/Transcendental.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "62edae8d4515b284de9484ecf8b4848873f67ab00b302cd170c95484b5cef156",
+        "apache_source_git_blob": "ef1fc4731ea525ea0ef78028f46e01047eeb2adb",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Transcendental.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      },
+      {
+        "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/TranscendentalNamespaced.lean",
+        "upstream_path": "LeanCert/Engine/Affine/Transcendental.lean",
+        "older_matched_revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+        "older_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "62edae8d4515b284de9484ecf8b4848873f67ab00b302cd170c95484b5cef156",
+        "apache_source_git_blob": "ef1fc4731ea525ea0ef78028f46e01047eeb2adb",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/Engine/Affine/Transcendental.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "9c4bde501499fb50ec22d08d072cb47019f9dbe5",
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      },
+      {
+        "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixIntMatrix.lean",
+        "upstream_path": "LeanCert/ML/Optimized/Matrix.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "f74a36d3919bb396fce1f3d9c3cec42913189c80ec4c356d4562e0e82f0dc08d",
+        "apache_source_git_blob": "2528f35c8a68d3d1b65beb93a6533baab2f48d3a",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/Matrix.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      },
+      {
+        "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedIntMatrix.lean",
+        "upstream_path": "LeanCert/ML/Optimized/Matrix.lean",
+        "older_matched_revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+        "older_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
+        "apache_revision": "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+        "apache_source_sha256": "f74a36d3919bb396fce1f3d9c3cec42913189c80ec4c356d4562e0e82f0dc08d",
+        "apache_source_git_blob": "2528f35c8a68d3d1b65beb93a6533baab2f48d3a",
+        "comparison": "Entire raw upstream file is byte-identical after the one exact license-sentence replacement; no code, imports, proof, copyright byline or other comment changes.",
+        "old_sentence": "Released under AGPL-3.0 license",
+        "new_sentence": "Released under Apache 2.0 license",
+        "file_history_url": "https://api.github.com/repos/alerad/leancert/commits?path=LeanCert/ML/Optimized/Matrix.lean&sha=7f91b6eb3567437f6cfac03ed279706603ee22f4&per_page=100",
+        "source_history_commits": [
+          "4a97db7f6944db76dd4e237ce2982814d7b388ea",
+          "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+          "d771c37527857741a4ffccefd39ebd43cd51e270"
+        ]
+      }
+    ]
   }
 }

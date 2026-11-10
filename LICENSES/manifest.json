@@ -204,12 +204,19 @@
       "sha256": "0c7e6b4b82daa8c26fb25396a80b011b2cf7ba1e0a9fd9f201570d264c51772c",
       "source_url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LICENSE",
       "scope": "Exact LeanCert project-license snapshot associated with matched source version; specific file notices and conflicts are recorded separately."
+    },
+    {
+      "role": "upstream_license_snapshot",
+      "path": "LICENSES/upstream/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LICENSE",
+      "sha256": "b6483eb31d324f7ec37b3207046a1a3fd7c56a1d770a71b30b7a96e502f09d59",
+      "source_url": "https://raw.githubusercontent.com/alerad/leancert/4a97db7f6944db76dd4e237ce2982814d7b388ea/LICENSE",
+      "scope": "Explicit Apache-2.0 project license at the exact edition whose four source files differ from matched historical originals only in the license sentence. Historical licenses and source notices remain retained."
     }
   ],
   "source_mapping": {
     "path": "LICENSES/sources.json",
     "source_file_count": 75431,
-    "uncertain_mapping_count": 8,
+    "uncertain_mapping_count": 0,
     "repository_default": "MIT",
     "scope": "Source-header evidence plus owner-requested repository default. Uncertain license scope remains unresolved; upstream notices and publication provenance are not replaced.",
     "evidence_path": "LICENSES/source-evidence.json"

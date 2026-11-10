@@ -36,3 +36,5 @@ Local attribution: grwtsk contributors. Source-local scope: `LICENSES/` (prime 5
 - Uncertain assignments have a null license expression and an explicit reason; the repository default is a separate candidate, not permission to override uncertain upstream terms. This map is not a new license grant or a completed rights audit.
 
 - [source-evidence.json](source-evidence.json) records exact upstream matches and scoped dispositions for reviewed mappings. Apply the owner-requested MIT default only in the absence of contrary evidence. Preserve explicit conflicting source/project notices as unresolved; never use the default to override them. Keep AGPL identifiers as written unless the exact version-option grant is established.
+
+- A later upstream edition may resolve a historical file/project discrepancy only with exact source identity or an exhaustive stated byte comparison, an explicit file license, and its same-revision project license. Record the separately licensed edition and preserve the older notice and pin; a commit message alone is insufficient.

@@ -44,7 +44,7 @@
     "EXPLICIT_UPSTREAM_VERIFIED:Apache-2.0": 1,
     "REPOSITORY_DEFAULT:MIT": 33390,
     "RESOLVED_SCOPED:MIT": 38,
-    "REVIEW_REQUIRED:UNRESOLVED": 8
+    "RESOLVED_UPSTREAM_LICENSE_HISTORY:Apache-2.0": 8
   },
   "files": [
     {
@@ -182705,23 +182705,27 @@
     {
       "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean",
       "git_blob": "18b308a50d7d64cd24ab843aa5e0f9f734b088af",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 1,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
       ]
     },
     {
@@ -182743,23 +182747,27 @@
     {
       "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NonlinearNamespaced.lean",
       "git_blob": "0a4de3f5a215f3b37c591eaa95f1834bb2650d24",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 6,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/ComputerScience/AlgorithmsInComputerScience/NonlinearNamespaced.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
       ]
     },
     {
@@ -185792,45 +185800,53 @@
     {
       "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayer.lean",
       "git_blob": "1f257be908d780e46e6abdec6283adde2d150c4a",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 1,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayer.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
       ]
     },
     {
       "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayerNamespaced.lean",
       "git_blob": "32e26b477374ac1cecdd7a4f21f810042983d1a0",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 6,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayerNamespaced.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
       ]
     },
     {
@@ -192273,45 +192289,53 @@
     {
       "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean",
       "git_blob": "5f4d26807738525e298287e45eba1fc8b4bdd2ed",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 1,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
       ]
     },
     {
       "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/TranscendentalNamespaced.lean",
       "git_blob": "ea52ba339990d060b7c387fbe9ee10c225d1b912",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 6,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/ComputerScience/AlgorithmsInComputerScience/TranscendentalNamespaced.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
       ]
     },
     {
@@ -536029,23 +536053,27 @@
     {
       "path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixIntMatrix.lean",
       "git_blob": "f8ccf5ee529afc5eb69067839b4c883f2152e0ac",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 1,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixIntMatrix.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
       ]
     },
     {
@@ -536226,23 +536254,27 @@
     {
       "path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedIntMatrix.lean",
       "git_blob": "4a0c77078e33a0c6e76ef7e317303eaf7214c045",
-      "license_expression": null,
-      "basis": "exact_upstream_source_and_retained_header",
-      "status": "REVIEW_REQUIRED",
+      "license_expression": "Apache-2.0",
+      "basis": "verified_identical_upstream_edition_with_explicit_license",
+      "status": "RESOLVED_UPSTREAM_LICENSE_HISTORY",
       "header_evidence": {
         "start_line": 6,
         "line_count": 5,
-        "license_identifiers_observed": []
+        "license_identifiers_observed": [
+          "AGPL-3.0"
+        ]
       },
-      "uncertainties": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ],
-      "license_expression_scope": "Conflicting explicit upstream notices; repository default does not resolve this conflict.",
+      "license_expression_scope": "Apache-2.0 is supported for the identical upstream content at the explicitly licensed later edition. The older AGPL-3.0 source notice, source pins and local namespace-transform provenance remain retained; this does not retroactively change that historical notice or assign a license to unrelated versions.",
       "observed_source_license_identifier": "AGPL-3.0",
       "version_option_scope": "Identifier retained as written; AGPL-3.0-only versus AGPL-3.0-or-later is not inferred or normalized.",
       "license_audit_record": "LICENSES/source-evidence.json#GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedIntMatrix.lean",
       "previous_uncertainties": [
         "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "retained_historical_license_expression": "AGPL-3.0",
+      "local_organization_changes_scope": "Any local organization-only additions retain the repository default; no mathematical or transitive dependency acceptance follows.",
+      "resolved_conflict_history": [
+        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
       ]
     },
     {
@@ -880013,55 +880045,6 @@
       }
     }
   ],
-  "uncertain_mappings": [
-    {
-      "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ]
-    },
-    {
-      "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NonlinearNamespaced.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ]
-    },
-    {
-      "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayer.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ]
-    },
-    {
-      "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayerNamespaced.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ]
-    },
-    {
-      "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ]
-    },
-    {
-      "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/TranscendentalNamespaced.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred."
-      ]
-    },
-    {
-      "path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixIntMatrix.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ]
-    },
-    {
-      "path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedIntMatrix.lean",
-      "reasons": [
-        "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred."
-      ]
-    }
-  ],
+  "uncertain_mappings": [],
   "source_evidence_path": "LICENSES/source-evidence.json"
 }
