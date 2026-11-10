@@ -1,0 +1,181 @@
+{
+  "schema": "grwtsk.license-location-manifest/1",
+  "local_attribution": "grwtsk contributors",
+  "scope": "Inventory of relocated legal files and retained root texts; not a repository-wide license classification or a new licensing grant.",
+  "policy": "Preserve exact legal bytes, source-specific attribution and historical reference paths. Compatibility links are relative and resolve to the recorded canonical legal files. Distinct license variants remain distinct.",
+  "files": [
+    {
+      "role": "root_license",
+      "path": "LICENSE",
+      "sha256": "e0168d265142b2dadd0df335cefba1295a1199cf10b5efd167f11d1577b864e4",
+      "scope": "Existing root text retained verbatim; source-specific notices and licenses remain authoritative at their recorded scope."
+    },
+    {
+      "role": "root_notice",
+      "path": "NOTICE",
+      "sha256": "077394c05a130622bafe0bb65f19a9ec4035f02c105f15c30f270a260fa3d669",
+      "scope": "Existing root text retained verbatim; source-specific notices and licenses remain authoritative at their recorded scope."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/upstream/mathlib/Apache-2.0.txt",
+      "compatibility_path": "LICENSES/Mathlib-Apache-2.0.txt",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "scope": "Existing Mathlib license copy; source-specific authorship and notices remain in their sources and root NOTICE."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/upstream/openai-math/Apache-2.0.txt",
+      "compatibility_path": "LICENSES/OpenAI-Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Existing OpenAI mathematics license copy; distinct bytes preserved without normalizing its appendix."
+    },
+    {
+      "role": "local_license_alias",
+      "path": "LICENSE",
+      "compatibility_path": "LICENSES/MIT.txt",
+      "sha256": "e0168d265142b2dadd0df335cefba1295a1199cf10b5efd167f11d1577b864e4",
+      "scope": "Exact preexisting duplicate of root LICENSE; this alias does not relicense upstream material."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/anthropic-math/3sum-apsp/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/3sum-apsp/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment anthropic-math/3sum-apsp; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_notice",
+      "path": "LICENSES/environments/anthropic-math/3sum-apsp/UPSTREAM-NOTICE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/3sum-apsp/UPSTREAM-NOTICE",
+      "sha256": "2846dfa30857645d26e98aea9a6cbff423630e495a720a6edffe3d88bb706948",
+      "scope": "Retained legal text from environment anthropic-math/3sum-apsp; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/anthropic-math/eth/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/eth/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment anthropic-math/eth; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_notice",
+      "path": "LICENSES/environments/anthropic-math/eth/UPSTREAM-NOTICE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/eth/UPSTREAM-NOTICE",
+      "sha256": "5dc7b1516f2efe701c0917fd0b10ee89fc4d41f50a8b3576af0a6333cefb5b93",
+      "scope": "Retained legal text from environment anthropic-math/eth; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_attribution",
+      "path": "LICENSES/environments/anthropic-math/fermat/UPSTREAM-ATTRIBUTION.md",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/fermat/UPSTREAM-ATTRIBUTION.md",
+      "sha256": "698fb76c8d80b2ed78ebd48b271f2ee5815b3654fb8ec5c699b21b16ce0d9698",
+      "scope": "Retained legal text from environment anthropic-math/fermat; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/anthropic-math/fermat/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/fermat/UPSTREAM-LICENSE",
+      "sha256": "746bc52848eabf8765635fe532e0680756a10b18e7b3fb26e7433ab4edf34034",
+      "scope": "Retained legal text from environment anthropic-math/fermat; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_notice",
+      "path": "LICENSES/environments/anthropic-math/fermat/UPSTREAM-NOTICE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/fermat/UPSTREAM-NOTICE",
+      "sha256": "42b1821f19a6aaa25e6811d22ab8f2fdc6433d4a37bc810b1cfafa5b6dd6b0b6",
+      "scope": "Retained legal text from environment anthropic-math/fermat; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/anthropic-math/zeta23/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/zeta23/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment anthropic-math/zeta23; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_notice",
+      "path": "LICENSES/environments/anthropic-math/zeta23/UPSTREAM-NOTICE",
+      "compatibility_path": "docs/adaptations/environments/anthropic-math/zeta23/UPSTREAM-NOTICE",
+      "sha256": "ed2ce108e56fea7a6abccdd81329e489116d759096ea7d0d51098edbaf72a3f3",
+      "scope": "Retained legal text from environment anthropic-math/zeta23; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/apap/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/apap/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment apap; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/carleson/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/carleson/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment carleson; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/equational-theories/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/equational-theories/UPSTREAM-LICENSE",
+      "sha256": "c6be243aa954228fc83b68a08e769bf3c561a64fb515cbbd470046d006c18bbf",
+      "scope": "Retained legal text from environment equational-theories; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/formal-conjectures/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/formal-conjectures/UPSTREAM-LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "scope": "Retained legal text from environment formal-conjectures; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/ieantn/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/ieantn/UPSTREAM-LICENSE",
+      "sha256": "2a76e6fa845ae725005cd40915392f13bac2408fdcfaa3e6cd92ed64c6f284bf",
+      "scope": "Retained legal text from environment ieantn; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/imperial-flt/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/imperial-flt/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment imperial-flt; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/pfr/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/pfr/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment pfr; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/pnt-plus/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/pnt-plus/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment pnt-plus; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/progression-coloring/LICENSE",
+      "compatibility_path": "docs/adaptations/environments/progression-coloring/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment progression-coloring; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/sphere-packing/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/sphere-packing/UPSTREAM-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "scope": "Retained legal text from environment sphere-packing; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license",
+      "path": "LICENSES/environments/tao-erdos/UPSTREAM-LICENSE",
+      "compatibility_path": "docs/adaptations/environments/tao-erdos/UPSTREAM-LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "scope": "Retained legal text from environment tao-erdos; package location records provenance context, not an exclusive source/publication owner."
+    }
+  ]
+}

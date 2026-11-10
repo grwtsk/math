@@ -465851,23 +465851,164 @@
     {
       "path": "LICENSES/AGENTS.md",
       "mode": "100644",
-      "git_object": "a7821edac92191b32f4abff347b6e33b7a4fef59",
+      "git_object": "86ee05bef6db5f893ed85e2677e7d4d115b2ee03",
       "object_type": "blob"
     },
     {
       "path": "LICENSES/MIT.txt",
-      "mode": "100644",
-      "git_object": "3b561556abec71baf179c12eeec37d20167dbfd6",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "object_type": "blob",
+      "link_target": "../LICENSE"
     },
     {
       "path": "LICENSES/Mathlib-Apache-2.0.txt",
+      "mode": "120000",
+      "git_object": "2743de94ab7467d422cb520ef06c6e2b21cf85f6",
+      "object_type": "blob",
+      "link_target": "upstream/mathlib/Apache-2.0.txt"
+    },
+    {
+      "path": "LICENSES/OpenAI-Apache-2.0.txt",
+      "mode": "120000",
+      "git_object": "d52c25f624c7b0157f7615980eec990b21e8ec2b",
+      "object_type": "blob",
+      "link_target": "upstream/openai-math/Apache-2.0.txt"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/3sum-apsp/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/3sum-apsp/UPSTREAM-NOTICE",
+      "mode": "100644",
+      "git_object": "0a0dbf49888306f7d732790bbbf2ca2e75c37e6b",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/eth/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/eth/UPSTREAM-NOTICE",
+      "mode": "100644",
+      "git_object": "e8566e13158182ca02087a5430b640093e5c6c4a",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/fermat/UPSTREAM-ATTRIBUTION.md",
+      "mode": "100644",
+      "git_object": "ac80b9de81c8132d3bccc57f13463b293a340422",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/fermat/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "6f101c9faa913e222f966b68c5ce9890fe50344f",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/fermat/UPSTREAM-NOTICE",
+      "mode": "100644",
+      "git_object": "5411679f5f1878e72d1622a88c54b8fbb3f29282",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/zeta23/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/anthropic-math/zeta23/UPSTREAM-NOTICE",
+      "mode": "100644",
+      "git_object": "8de3803673ccab52dd029d6b9942f4f410c57fe4",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/apap/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/carleson/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/equational-theories/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "7d4f005cd3a9cc8056eb7e92a303618f1058b359",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/formal-conjectures/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/ieantn/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "d7e54d507a8b69db1efccbc0f8f7fe5022ed11a4",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/imperial-flt/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/pfr/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/pnt-plus/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/progression-coloring/LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/sphere-packing/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/environments/tao-erdos/UPSTREAM-LICENSE",
+      "mode": "100644",
+      "git_object": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/manifest.json",
+      "mode": "100644",
+      "git_object": "b41644018d2fa30975f449edd8945136385491c4",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/upstream/mathlib/Apache-2.0.txt",
       "mode": "100644",
       "git_object": "8dada3edaf50dbc082c9a125058f25def75e625a",
       "object_type": "blob"
     },
     {
-      "path": "LICENSES/OpenAI-Apache-2.0.txt",
+      "path": "LICENSES/upstream/openai-math/Apache-2.0.txt",
       "mode": "100644",
       "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
       "object_type": "blob"
@@ -476008,15 +476149,17 @@
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/3sum-apsp/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "7c21868d7f40578f9dffe07bff93d7f6e44438bb",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/3sum-apsp/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/3sum-apsp/UPSTREAM-NOTICE",
-      "mode": "100644",
-      "git_object": "0a0dbf49888306f7d732790bbbf2ca2e75c37e6b",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "34a5816acb1884fe47c0683a345447004452dde5",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/3sum-apsp/UPSTREAM-NOTICE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/3sum-apsp/lake-manifest.json",
@@ -476063,15 +476206,17 @@
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/eth/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "90fd9e28df9fd7a32d3e291ee07de349553aa074",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/eth/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/eth/UPSTREAM-NOTICE",
-      "mode": "100644",
-      "git_object": "e8566e13158182ca02087a5430b640093e5c6c4a",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "08c176cecb5428e9efff6e392ba2b1f76720b517",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/eth/UPSTREAM-NOTICE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/eth/lake-manifest.json",
@@ -476120,21 +476265,24 @@
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/fermat/UPSTREAM-ATTRIBUTION.md",
-      "mode": "100644",
-      "git_object": "ac80b9de81c8132d3bccc57f13463b293a340422",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "931d41a02e1d2b3fd5ed6ddd18c730d38e599ce4",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/fermat/UPSTREAM-ATTRIBUTION.md"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/fermat/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "6f101c9faa913e222f966b68c5ce9890fe50344f",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "ca4f90da7155bd0ca70d756d81b2713b2cf78f45",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/fermat/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/fermat/UPSTREAM-NOTICE",
-      "mode": "100644",
-      "git_object": "5411679f5f1878e72d1622a88c54b8fbb3f29282",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "95867dd60bb42504574d80ba2a5b2f1722d12f3c",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/fermat/UPSTREAM-NOTICE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/fermat/lake-manifest.json",
@@ -476183,15 +476331,17 @@
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/zeta23/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "c31879883d7c366b5baf702a39a2f83ba561d9ff",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/zeta23/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/zeta23/UPSTREAM-NOTICE",
-      "mode": "100644",
-      "git_object": "8de3803673ccab52dd029d6b9942f4f410c57fe4",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "8409b066ec1575b2bafdc263ae490876819886d5",
+      "object_type": "blob",
+      "link_target": "../../../../../LICENSES/environments/anthropic-math/zeta23/UPSTREAM-NOTICE"
     },
     {
       "path": "docs/adaptations/environments/anthropic-math/zeta23/lake-manifest.json",
@@ -476240,9 +476390,10 @@
     },
     {
       "path": "docs/adaptations/environments/apap/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "5a346068ec245200ce292679f3804c8eb9c3b28e",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/apap/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/apap/catalogue.json",
@@ -476317,9 +476468,10 @@
     },
     {
       "path": "docs/adaptations/environments/carleson/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "f21ff35071fbd62bd8e7afb1f73448d059edd2d4",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/carleson/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/carleson/catalogue.json",
@@ -476373,9 +476525,10 @@
     },
     {
       "path": "docs/adaptations/environments/equational-theories/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "7d4f005cd3a9cc8056eb7e92a303618f1058b359",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "b543c7f5cd76d75302504c6309eb83c389f5600d",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/equational-theories/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/equational-theories/catalogue.json",
@@ -476450,9 +476603,10 @@
     },
     {
       "path": "docs/adaptations/environments/formal-conjectures/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "d645695673349e3947e8e5ae42332d0ac3164cd7",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "111d4b4b6c4697ccd28df228febe8135f3180578",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/formal-conjectures/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/formal-conjectures/catalogue.json",
@@ -477850,9 +478004,10 @@
     },
     {
       "path": "docs/adaptations/environments/ieantn/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "d7e54d507a8b69db1efccbc0f8f7fe5022ed11a4",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "c6aa6aef747b17c71b60ae0bd0fb182197e86929",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/ieantn/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/ieantn/catalogue.json",
@@ -477919,9 +478074,10 @@
     },
     {
       "path": "docs/adaptations/environments/imperial-flt/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "b8c8cfc5e8448992af62431c5e222aa86516aaac",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/imperial-flt/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/imperial-flt/catalogue.json",
@@ -481936,9 +482092,10 @@
     },
     {
       "path": "docs/adaptations/environments/pfr/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "49d7e2dcdb2358cf414a7b7b87c8387566eecbfb",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/pfr/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/pfr/catalogue.json",
@@ -481992,9 +482149,10 @@
     },
     {
       "path": "docs/adaptations/environments/pnt-plus/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "14309e83abcd2202ffc4810bcd510072199ab262",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/pnt-plus/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/pnt-plus/catalogue.json",
@@ -482840,9 +482998,10 @@
     },
     {
       "path": "docs/adaptations/environments/progression-coloring/LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "64521c135ef4e54241902b843637b633a758d775",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/progression-coloring/LICENSE"
     },
     {
       "path": "docs/adaptations/environments/progression-coloring/lake-manifest.json",
@@ -482891,9 +483050,10 @@
     },
     {
       "path": "docs/adaptations/environments/sphere-packing/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "365b13583df86055cd8a53de9c5325783d02afcc",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/sphere-packing/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/sphere-packing/catalogue.json",
@@ -482961,9 +483121,10 @@
     },
     {
       "path": "docs/adaptations/environments/tao-erdos/UPSTREAM-LICENSE",
-      "mode": "100644",
-      "git_object": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
-      "object_type": "blob"
+      "mode": "120000",
+      "git_object": "8840706c8f3590a2966857be45f349ff1a87e0ca",
+      "object_type": "blob",
+      "link_target": "../../../../LICENSES/environments/tao-erdos/UPSTREAM-LICENSE"
     },
     {
       "path": "docs/adaptations/environments/tao-erdos/catalogue.json",
@@ -594394,12 +594555,16 @@
       ]
     }
   ],
-  "base_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
+  "base_revision": "b76086ed8dda50b6340faed3a7d59f560e06f1da",
   "adaptation_membership": "Only recorded external URLs, publication citations, pinned upstream source records or exact pinned import inventories qualify the adaptation source view and theorem-provenance section. Local-only derivation references do not qualify. Canonical local sources and their provenance remain in the repository file manifest. Environment configurations, legal notices and verification helpers are build support, not additional adapted theorems.",
   "paper_formalizations": {
     "catalogue_path": "docs/formalizations/catalogue.json",
     "source_view": "docs/formalizations/GRWTSK/",
     "record_count": 6,
     "scope": "Explicit paper-to-Lean correspondence; separately scoped from adaptation provenance."
+  },
+  "legal_files": {
+    "manifest_path": "LICENSES/manifest.json",
+    "scope": "Legal file locations and byte integrity only; original source-specific licensing remains unchanged."
   }
 }
