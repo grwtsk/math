@@ -465851,7 +465851,7 @@
     {
       "path": "LICENSES/AGENTS.md",
       "mode": "100644",
-      "git_object": "86ee05bef6db5f893ed85e2677e7d4d115b2ee03",
+      "git_object": "0a7912a9b287edd7241025f2bfdb74c782bf185e",
       "object_type": "blob"
     },
     {
@@ -465998,7 +465998,13 @@
     {
       "path": "LICENSES/manifest.json",
       "mode": "100644",
-      "git_object": "b41644018d2fa30975f449edd8945136385491c4",
+      "git_object": "ecb1d6a6084178c63db2e083e9b9537d1e26ac41",
+      "object_type": "blob"
+    },
+    {
+      "path": "LICENSES/sources.json",
+      "mode": "100644",
+      "git_object": "b2d1e486efad397eeb6cd463624d28ef3dc5f978",
       "object_type": "blob"
     },
     {
@@ -594555,7 +594561,7 @@
       ]
     }
   ],
-  "base_revision": "b76086ed8dda50b6340faed3a7d59f560e06f1da",
+  "base_revision": "d33cba622edc82d72cb83330de29a853ee1efbb8",
   "adaptation_membership": "Only recorded external URLs, publication citations, pinned upstream source records or exact pinned import inventories qualify the adaptation source view and theorem-provenance section. Local-only derivation references do not qualify. Canonical local sources and their provenance remain in the repository file manifest. Environment configurations, legal notices and verification helpers are build support, not additional adapted theorems.",
   "paper_formalizations": {
     "catalogue_path": "docs/formalizations/catalogue.json",
@@ -594565,6 +594571,8 @@
   },
   "legal_files": {
     "manifest_path": "LICENSES/manifest.json",
-    "scope": "Legal file locations and byte integrity only; original source-specific licensing remains unchanged."
+    "scope": "Legal file locations and byte integrity only; original source-specific licensing remains unchanged.",
+    "source_map_path": "LICENSES/sources.json",
+    "uncertain_mapping_count": 118
   }
 }

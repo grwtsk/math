@@ -177,5 +177,12 @@
       "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
       "scope": "Retained legal text from environment tao-erdos; package location records provenance context, not an exclusive source/publication owner."
     }
-  ]
+  ],
+  "source_mapping": {
+    "path": "LICENSES/sources.json",
+    "source_file_count": 75431,
+    "uncertain_mapping_count": 118,
+    "repository_default": "MIT",
+    "scope": "Source-header evidence plus owner-requested repository default. Uncertain license scope remains unresolved; upstream notices and publication provenance are not replaced."
+  }
 }
