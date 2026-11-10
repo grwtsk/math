@@ -24,6 +24,225 @@
     ],
     "evidence": "Individually scoped actual outcomes; unperformed checks NOT_RUN"
   },
-  "records": [],
-  "population_status": "No existing paper-to-declaration correspondence has been newly qualified by this folder creation."
+  "records": [
+    {
+      "source_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean",
+      "source_git_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
+      "source_git_blob": "736d988a73a4dc785263da7a17e00b7254474e07",
+      "declaration": "GRWTSK.Polynomial.ConjugateInterpolation.coeff_im_eq_zero_of_eval_compatible",
+      "source_line": 26,
+      "provenance_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.provenance/coeff_im_eq_zero_of_eval_compatible.paper.md",
+      "papers": [
+        {
+          "authors": [
+            "Melvyn B. Nathanson"
+          ],
+          "title": "The Hermite-Sylvester criterion for real-rooted polynomials",
+          "edition": "arXiv:1911.01745v2, 24 November 2019",
+          "url": "https://arxiv.org/abs/1911.01745v2",
+          "pdf_url": "https://arxiv.org/pdf/1911.01745v2",
+          "digest": "sha256:2c81caf2f11552607afeaec7ca053fdd0ce086bebcd9714dfaad4fe870d5bdfe",
+          "locator": "Lemma 1, PDF page 2",
+          "relation": "direct_formalization",
+          "correspondence": "Polynomial coefficient reality is encoded as zero imaginary part. The empty-node case is a Lean extension forced to the zero polynomial by the strict degree bound."
+        }
+      ],
+      "hypotheses_and_conclusion": "theorem coeff_im_eq_zero_of_eval_compatible\n    (nodes : Finset ℂ) (closed : ∀ z ∈ nodes, conj z ∈ nodes)\n    (q : Polynomial ℂ) (degree_lt : q.degree < (nodes.card : WithBot ℕ))\n    (compatible : ∀ z ∈ nodes, q.eval (conj z) = conj (q.eval z))\n    (n : ℕ) : (q.coeff n).im = 0",
+      "primary_argument": "The finite node set is conjugation-stable, degree is strictly below its cardinality, and evaluations commute with conjugation. Compare the conjugated polynomial with the original on all nodes; bounded-degree uniqueness makes them equal, hence every coefficient is real.",
+      "mathematical_consumer": "ConjugateInterpolation.exists_real_interpolate.",
+      "limits_and_missing_bridges": "Without the degree bound, a polynomial vanishing at every node need not have real coefficients. No nonempty-root or analytic positivity conclusion follows.",
+      "evidence": {
+        "paper_edition_and_locator": "INSPECTED",
+        "source_statement_and_argument": "SOURCE_REVIEWED_BOUNDED",
+        "independent_mathematical_review": "NOT_RUN",
+        "lean_compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "mathematical_acceptance": "NOT_ASSERTED"
+      }
+    },
+    {
+      "source_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean",
+      "source_git_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
+      "source_git_blob": "736d988a73a4dc785263da7a17e00b7254474e07",
+      "declaration": "GRWTSK.Polynomial.ConjugateInterpolation.exists_real_interpolate",
+      "source_line": 50,
+      "provenance_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.provenance/exists_real_interpolate.paper.md",
+      "papers": [
+        {
+          "authors": [
+            "Melvyn B. Nathanson"
+          ],
+          "title": "The Hermite-Sylvester criterion for real-rooted polynomials",
+          "edition": "arXiv:1911.01745v2, 24 November 2019",
+          "url": "https://arxiv.org/abs/1911.01745v2",
+          "pdf_url": "https://arxiv.org/pdf/1911.01745v2",
+          "digest": "sha256:2c81caf2f11552607afeaec7ca053fdd0ce086bebcd9714dfaad4fe870d5bdfe",
+          "locator": "Lemma 2 proof, PDF page 2, using Lemma 1",
+          "relation": "local_consequence",
+          "correspondence": "The paper uses the particular values i, -i and zero. Lean proves the more general compatible-value interpolation statement and admits empty node sets. Node multiplicities impose no extra interpolation conditions."
+        }
+      ],
+      "hypotheses_and_conclusion": "theorem exists_real_interpolate\n    (nodes : Finset ℂ) (closed : ∀ z ∈ nodes, conj z ∈ nodes)\n    (values : ℂ → ℂ)\n    (compatible : ∀ z ∈ nodes, values (conj z) = conj (values z)) :\n    ∃ p : Polynomial ℝ, p.degree < (nodes.card : WithBot ℕ) ∧\n      ∀ z ∈ nodes, p.eval₂ Complex.ofRealHom z = values z",
+      "primary_argument": "Use Mathlib Lagrange interpolation for conjugation-compatible values on a finite conjugation-stable set, then the preceding coefficient-reality theorem to descend coefficients to real numbers.",
+      "mathematical_consumer": "SignedRootTrace.exists_pair_test.",
+      "limits_and_missing_bridges": "Without conjugation-compatible data, real interpolation can fail. This generalization is not presented as a verbatim statement of Lemma 2.",
+      "evidence": {
+        "paper_edition_and_locator": "INSPECTED",
+        "source_statement_and_argument": "SOURCE_REVIEWED_BOUNDED",
+        "independent_mathematical_review": "NOT_RUN",
+        "lean_compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "mathematical_acceptance": "NOT_ASSERTED"
+      }
+    },
+    {
+      "source_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean",
+      "source_git_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
+      "source_git_blob": "0df50119a93a4a57b7c7d37b0a2b1c076b44a8ff",
+      "declaration": "GRWTSK.Polynomial.SignedRootTrace.exists_pair_test",
+      "source_line": 76,
+      "provenance_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.provenance/exists_pair_test.paper.md",
+      "papers": [
+        {
+          "authors": [
+            "Melvyn B. Nathanson"
+          ],
+          "title": "The Hermite-Sylvester criterion for real-rooted polynomials",
+          "edition": "arXiv:1911.01745v2, 24 November 2019",
+          "url": "https://arxiv.org/abs/1911.01745v2",
+          "pdf_url": "https://arxiv.org/pdf/1911.01745v2",
+          "digest": "sha256:2c81caf2f11552607afeaec7ca053fdd0ce086bebcd9714dfaad4fe870d5bdfe",
+          "locator": "Lemma 2 and Theorem 1 necessity proof, PDF pages 2-3",
+          "relation": "local_consequence",
+          "correspondence": "Lean uses arbitrary real weights and distinct nodes. The paper later specializes weights to root multiplicities. The signed square has no complex conjugation."
+        }
+      ],
+      "hypotheses_and_conclusion": "theorem exists_pair_test {nodes : Finset ℂ}\n    (hclosed : ∀ z ∈ nodes, conj z ∈ nodes) (weight : ℂ → ℝ)\n    {z : ℂ} (hz : z ∈ nodes) (him : z.im ≠ 0) :\n    ∃ p : Polynomial ℝ, p.degree < (nodes.card : WithBot ℕ) ∧\n      squareTrace nodes weight p = -((weight z + weight (conj z) : ℝ) : ℂ)",
+      "primary_argument": "Choose i and -i on a selected nonreal conjugate pair and zero elsewhere. Real interpolation produces a bounded-degree test whose weighted squared evaluations sum to minus the two selected weights.",
+      "mathematical_consumer": "SignedRootTrace.squareTrace_nonneg_iff_real.",
+      "limits_and_missing_bridges": "This test needs a selected nonreal node and conjugation closure. It is finite algebra and supplies no positivity theorem for an analytic or arithmetic source.",
+      "evidence": {
+        "paper_edition_and_locator": "INSPECTED",
+        "source_statement_and_argument": "SOURCE_REVIEWED_BOUNDED",
+        "independent_mathematical_review": "NOT_RUN",
+        "lean_compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "mathematical_acceptance": "NOT_ASSERTED"
+      }
+    },
+    {
+      "source_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean",
+      "source_git_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
+      "source_git_blob": "0df50119a93a4a57b7c7d37b0a2b1c076b44a8ff",
+      "declaration": "GRWTSK.Polynomial.SignedRootTrace.squareTrace_nonneg_iff_real",
+      "source_line": 125,
+      "provenance_path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.provenance/squareTrace_nonneg_iff_real.paper.md",
+      "papers": [
+        {
+          "authors": [
+            "Melvyn B. Nathanson"
+          ],
+          "title": "The Hermite-Sylvester criterion for real-rooted polynomials",
+          "edition": "arXiv:1911.01745v2, 24 November 2019",
+          "url": "https://arxiv.org/abs/1911.01745v2",
+          "pdf_url": "https://arxiv.org/pdf/1911.01745v2",
+          "digest": "sha256:2c81caf2f11552607afeaec7ca053fdd0ce086bebcd9714dfaad4fe870d5bdfe",
+          "locator": "Theorem 1 and its interpolation proof, PDF pages 2-3",
+          "relation": "local_consequence",
+          "correspondence": "This is the finite weighted-node core. It does not construct the paper’s Hermite matrix, identify its quadratic form with the trace, or enumerate roots of a given nonconstant polynomial. Those source-return bridges remain separate."
+        }
+      ],
+      "hypotheses_and_conclusion": "theorem squareTrace_nonneg_iff_real {nodes : Finset ℂ}\n    (hclosed : ∀ z ∈ nodes, conj z ∈ nodes) {weight : ℂ → ℝ}\n    (hweight : ∀ z ∈ nodes, 0 < weight z) :\n    (∀ p : Polynomial ℝ, p.degree < (nodes.card : WithBot ℕ) →\n      0 ≤ (squareTrace nodes weight p).re) ↔\n    ∀ z ∈ nodes, z.im = 0",
+      "primary_argument": "On a finite conjugation-stable set with strictly positive node weights, positivity of all bounded-degree signed-square tests is equivalent to every node being real. A nonreal pair gives a negative test; real nodes give a sum of nonnegative weighted squares.",
+      "mathematical_consumer": "Finite root-trace positivity tests.",
+      "limits_and_missing_bridges": "Allowing zero weights can hide nonreal nodes. The degree cutoff and conjugation closure are retained. No RH or unbounded analytic consequence is asserted.",
+      "evidence": {
+        "paper_edition_and_locator": "INSPECTED",
+        "source_statement_and_argument": "SOURCE_REVIEWED_BOUNDED",
+        "independent_mathematical_review": "NOT_RUN",
+        "lean_compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "mathematical_acceptance": "NOT_ASSERTED"
+      }
+    },
+    {
+      "source_path": "GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.lean",
+      "source_git_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
+      "source_git_blob": "dc4a33cd7972eb1268c32df2695c243c00ed1dad",
+      "declaration": "GRWTSK.NumericalAnalysis.PolynomialCircuit.uniqueGlue",
+      "source_line": 162,
+      "provenance_path": "GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.provenance/uniqueGlue.paper.md",
+      "papers": [
+        {
+          "authors": [
+            "Robert Ghrist",
+            "Hans Riess"
+          ],
+          "title": "Cellular Sheaves of Lattices and the Tarski Laplacian",
+          "edition": "arXiv:2007.04099v1, 8 July 2020",
+          "url": "https://arxiv.org/abs/2007.04099v1",
+          "pdf_url": "https://arxiv.org/pdf/2007.04099v1",
+          "digest": "sha256:d2b00c304d36e986b7a3fd75c4779b14eb9733c9d88cfe5b087ad16baf3dee7d",
+          "locator": "Section 2.5, cellular incidence restrictions and global sections, equation (5)",
+          "relation": "local_consequence",
+          "correspondence": "The implementation uses typed sets and arbitrary local gate relations, not the paper’s lattice-valued category. It is a concrete local-to-global application of the cited incidence convention, not a formalization of the Tarski Laplacian or a proved categorical equivalence."
+        }
+      ],
+      "hypotheses_and_conclusion": "theorem uniqueGlue {U : Open C} {family : I → Open C} (cover : Cover U family)\n    (patch : (i : I) → Section (family i)) (matchLocal : Compatible patch) :\n    ∃! candidate : Section U, ∀ i, candidate.restrict (cover.inside i) = patch i",
+      "primary_argument": "For an incidence-open cover and compatible exact wire assignments satisfying each local gate relation, choose a covering patch for each wire. Compatibility makes the choice independent; a patch covering a gate checks its relation. Wirewise equality proves uniqueness.",
+      "mathematical_consumer": "PolynomialCircuit.Path.uniqueTrace.",
+      "limits_and_missing_bridges": "A cover missing a wire or agreement weakened to a lossy sign observation cannot justify exact unique gluing. No solver termination or polynomial-root existence follows.",
+      "evidence": {
+        "paper_edition_and_locator": "INSPECTED",
+        "source_statement_and_argument": "SOURCE_REVIEWED_BOUNDED",
+        "independent_mathematical_review": "NOT_RUN",
+        "lean_compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "mathematical_acceptance": "NOT_ASSERTED"
+      }
+    },
+    {
+      "source_path": "GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.lean",
+      "source_git_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
+      "source_git_blob": "dc4a33cd7972eb1268c32df2695c243c00ed1dad",
+      "declaration": "GRWTSK.NumericalAnalysis.PolynomialCircuit.Path.uniqueTrace",
+      "source_line": 260,
+      "provenance_path": "GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.provenance/uniqueTrace.paper.md",
+      "papers": [
+        {
+          "authors": [
+            "Robert Ghrist",
+            "Hans Riess"
+          ],
+          "title": "Cellular Sheaves of Lattices and the Tarski Laplacian",
+          "edition": "arXiv:2007.04099v1, 8 July 2020",
+          "url": "https://arxiv.org/abs/2007.04099v1",
+          "pdf_url": "https://arxiv.org/pdf/2007.04099v1",
+          "digest": "sha256:d2b00c304d36e986b7a3fd75c4779b14eb9733c9d88cfe5b087ad16baf3dee7d",
+          "locator": "Section 2.5, global-section compatibility equation (5); local path specialization",
+          "relation": "local_consequence",
+          "correspondence": "This path-trace result is local work using the cited method, not a named theorem claimed to occur in the paper. No lattice, Hodge or diffusion theorem is imported."
+        }
+      ],
+      "hypotheses_and_conclusion": "theorem uniqueTrace {step : Fin (n + 1) → Port → Port → Prop}\n    (witness : (g : Fin (n + 1)) → GateWitness step g)\n    (matching : Compatible (fun g => (witness g).toSection)) :\n    ∃! trace : Trace step,\n      ∀ g, trace.toSection.restrict (starCover.inside g) = (witness g).toSection",
+      "primary_argument": "Matching exact gate witnesses on the path star cover glue by uniqueGlue. Convert between a global section and a trace; the inverse conversions transfer the unique-gluing property to traces.",
+      "mathematical_consumer": "Exact verification of a supplied compatible path witness.",
+      "limits_and_missing_bridges": "The result assumes exact matching witnesses. It does not construct witnesses or prove existence of a root or algorithmic termination.",
+      "evidence": {
+        "paper_edition_and_locator": "INSPECTED",
+        "source_statement_and_argument": "SOURCE_REVIEWED_BOUNDED",
+        "independent_mathematical_review": "NOT_RUN",
+        "lean_compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "mathematical_acceptance": "NOT_ASSERTED"
+      }
+    }
+  ],
+  "population_status": "Six bounded existing-source correspondences across two exact paper editions; not an exhaustive paper-to-Lean corpus audit."
 }

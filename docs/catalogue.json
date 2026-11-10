@@ -220869,6 +220869,18 @@
       "object_type": "blob"
     },
     {
+      "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.provenance/coeff_im_eq_zero_of_eval_compatible.paper.md",
+      "mode": "100644",
+      "git_object": "05a8d1cc3a2d2028f4d8f771d8a9dfcdd002ed72",
+      "object_type": "blob"
+    },
+    {
+      "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.provenance/exists_real_interpolate.paper.md",
+      "mode": "100644",
+      "git_object": "2695db5a28343acdff6714409920a0b43b792808",
+      "object_type": "blob"
+    },
+    {
       "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean",
       "mode": "100644",
       "git_object": "0c05fb47e27565b28e2669e57b5222a564bebb26",
@@ -224982,6 +224994,18 @@
       "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean",
       "mode": "100644",
       "git_object": "0df50119a93a4a57b7c7d37b0a2b1c076b44a8ff",
+      "object_type": "blob"
+    },
+    {
+      "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.provenance/exists_pair_test.paper.md",
+      "mode": "100644",
+      "git_object": "1de70976f46a3beb0644d113bea4487216e8047d",
+      "object_type": "blob"
+    },
+    {
+      "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.provenance/squareTrace_nonneg_iff_real.paper.md",
+      "mode": "100644",
+      "git_object": "01982fd3864d8b6fa5022774062f2f7ff21b09e4",
       "object_type": "blob"
     },
     {
@@ -429441,6 +429465,18 @@
       "object_type": "blob"
     },
     {
+      "path": "GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.provenance/uniqueGlue.paper.md",
+      "mode": "100644",
+      "git_object": "604e7b5cf488a040b786a965f7e5c84978c0fbff",
+      "object_type": "blob"
+    },
+    {
+      "path": "GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.provenance/uniqueTrace.paper.md",
+      "mode": "100644",
+      "git_object": "bdb42f733d38942981da9b433b53c718a2a8c3c7",
+      "object_type": "blob"
+    },
+    {
       "path": "GRWTSK/NumericalAnalysis/ResidueBandedFourierSoficPath.lean",
       "mode": "100644",
       "git_object": "00833d87cd5624bf50ec195f60e24fe3bdeea79e",
@@ -483172,15 +483208,51 @@
       "object_type": "blob"
     },
     {
-      "path": "docs/formalizations/GRWTSK/.gitkeep",
-      "mode": "100644",
-      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-      "object_type": "blob"
+      "path": "docs/formalizations/GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean",
+      "mode": "120000",
+      "git_object": "b23b11f210330583582ae59e089b55ffe432f027",
+      "object_type": "blob",
+      "link_target": "../../../../../GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean"
+    },
+    {
+      "path": "docs/formalizations/GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.provenance",
+      "mode": "120000",
+      "git_object": "8589265b122e8ec3c37eb934e0eab3efe561cbe1",
+      "object_type": "blob",
+      "link_target": "../../../../../GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.provenance"
+    },
+    {
+      "path": "docs/formalizations/GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean",
+      "mode": "120000",
+      "git_object": "3595be0b31a53397544f58b56320df76c34f62eb",
+      "object_type": "blob",
+      "link_target": "../../../../../GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean"
+    },
+    {
+      "path": "docs/formalizations/GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.provenance",
+      "mode": "120000",
+      "git_object": "c290276dab85815d8e9fdcfd5e6da0376a67bcd4",
+      "object_type": "blob",
+      "link_target": "../../../../../GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.provenance"
+    },
+    {
+      "path": "docs/formalizations/GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.lean",
+      "mode": "120000",
+      "git_object": "557ada738b02b0ea67ecaf6f0c020dff2e0890f6",
+      "object_type": "blob",
+      "link_target": "../../../../GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.lean"
+    },
+    {
+      "path": "docs/formalizations/GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.provenance",
+      "mode": "120000",
+      "git_object": "e4b6a555b6c6852cf23ac68cc196cf5b2c347674",
+      "object_type": "blob",
+      "link_target": "../../../../GRWTSK/NumericalAnalysis/PolynomialCircuitSheaf.provenance"
     },
     {
       "path": "docs/formalizations/catalogue.json",
       "mode": "100644",
-      "git_object": "4edaef6f270328ff60e662dec0277687ebb2ff3c",
+      "git_object": "149636461244a03e4b78a22814166e5a332dac48",
       "object_type": "blob"
     },
     {
@@ -594322,12 +594394,12 @@
       ]
     }
   ],
-  "base_revision": "e1556d7fc7487f4006cc69f5fc0bf3b0aa821189",
+  "base_revision": "1c2dc6ce31834b5e3f37009defc5072c08aa712b",
   "adaptation_membership": "Only recorded external URLs, publication citations, pinned upstream source records or exact pinned import inventories qualify the adaptation source view and theorem-provenance section. Local-only derivation references do not qualify. Canonical local sources and their provenance remain in the repository file manifest. Environment configurations, legal notices and verification helpers are build support, not additional adapted theorems.",
   "paper_formalizations": {
     "catalogue_path": "docs/formalizations/catalogue.json",
     "source_view": "docs/formalizations/GRWTSK/",
-    "record_count": 0,
+    "record_count": 6,
     "scope": "Explicit paper-to-Lean correspondence; separately scoped from adaptation provenance."
   }
 }
