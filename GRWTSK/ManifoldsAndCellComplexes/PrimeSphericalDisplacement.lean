@@ -11,7 +11,7 @@ Exact consumer: the existing \`PrimePair\`, \`PostZhang.PrimeOccurrence\`,
 \`PostZhang.OffsetPattern\` and \`PostZhang.signedGap\`. No replacement prime
 predicate, source loop history, voltage cover or Weil form is introduced.
 
-## Proved elementary construction
+## Elementary construction (formal source candidate)
 
 For t > 0, define the rationally parametrized meridian of the standard
 unit 2-sphere in R^3:
@@ -26,6 +26,9 @@ of the inverse follow from these displayed rational formulas. The Lean
 proofs below verify sphere membership, chart inversion, injectivity,
 arithmetic displacements, the gap cocycle, and exact source recovery for
 prime pairs and finite prime patterns, using the rational coordinates.
+The real subtype and continuous-inverse
+construction below additionally supplies a topological embedding candidate;
+smoothness and the successor graph remain written arguments only.
 
 The smooth curve of points Phi(t) has derivative
 
@@ -211,6 +214,157 @@ theorem displacement_source_gap (x : PrimePair) :
     _ = ((x.q - x.p : ℕ) : ℚ) :=
       (Nat.cast_sub (le_of_lt x.ordered)).symm
     _ = (gap x : ℚ) := rfl
+
+/-! ### The real sphere and its punctured meridian
+
+This is the ordinary unit sphere in real Cartesian coordinates with the
+subspace topology. The product topology is the Euclidean topology; no claim
+about its product metric being the round geodesic metric is made. The scalar
+chart below is the restriction of stereographic projection to y = 0, not a
+chart of the entire two-dimensional sphere.
+
+Analytical argument: 1+t² is positive, and clearing its square proves the
+sphere equation. On the image, 1+z=2/(1+t²), so x/(1+z)=t. The rational
+formulas are continuous wherever their displayed denominators are nonzero.
+Thus the continuous left inverse on the punctured sphere gives a topological
+embedding, including at t=0 and for negative t. This does not yet formalize
+smoothness, immersion, or a prime-successor graph. All new formal checks:
+NOT_RUN; independent analytical review NOT_RUN.
+-/
+
+abbrev RealSphereCoordinates := ℝ × ℝ × ℝ
+
+/-- The actual real unit two-sphere, in Cartesian coordinates. -/
+def RealSphere := {P : RealSphereCoordinates //
+  P.1 ^ 2 + P.2.1 ^ 2 + P.2.2 ^ 2 = 1}
+
+/-- Domain on which the stereographic denominator is nonzero. -/
+def SouthChart := {P : RealSphere // 1 + P.val.2.2 ≠ 0}
+
+def realSphereCoordinates (t : ℝ) : RealSphereCoordinates :=
+  (2 * t / (1 + t ^ 2), 0, (1 - t ^ 2) / (1 + t ^ 2))
+
+private theorem real_denominator_ne_zero (t : ℝ) : 1 + t ^ 2 ≠ 0 := by
+  positivity
+
+theorem realSphereCoordinates_on_sphere (t : ℝ) :
+    (realSphereCoordinates t).1 ^ 2 +
+      (realSphereCoordinates t).2.1 ^ 2 +
+      (realSphereCoordinates t).2.2 ^ 2 = 1 := by
+  change (2 * t / (1 + t ^ 2)) ^ 2 + (0 : ℝ) ^ 2 +
+    ((1 - t ^ 2) / (1 + t ^ 2)) ^ 2 = 1
+  field_simp [real_denominator_ne_zero t]
+  <;> ring
+
+def realSpherePoint (t : ℝ) : RealSphere :=
+  ⟨realSphereCoordinates t, realSphereCoordinates_on_sphere t⟩
+
+theorem realSpherePoint_away_from_south (t : ℝ) :
+    1 + (realSpherePoint t).val.2.2 ≠ 0 := by
+  change 1 + (1 - t ^ 2) / (1 + t ^ 2) ≠ 0
+  have h : 1 + (1 - t ^ 2) / (1 + t ^ 2) = 2 / (1 + t ^ 2) := by
+    field_simp [real_denominator_ne_zero t]
+    <;> ring
+  rw [h]
+  exact div_ne_zero (by norm_num) (real_denominator_ne_zero t)
+
+def realMeridianPoint (t : ℝ) : SouthChart :=
+  ⟨realSpherePoint t, realSpherePoint_away_from_south t⟩
+
+/-- A scalar meridian coordinate, with its domain restriction explicit. -/
+def realChart (P : SouthChart) : ℝ :=
+  P.val.val.1 / (1 + P.val.val.2.2)
+
+@[simp] theorem realChart_realMeridianPoint (t : ℝ) :
+    realChart (realMeridianPoint t) = t := by
+  apply (div_eq_iff (realSpherePoint_away_from_south t)).2
+  change 2 * t / (1 + t ^ 2) =
+    t * (1 + (1 - t ^ 2) / (1 + t ^ 2))
+  field_simp [real_denominator_ne_zero t]
+  <;> ring
+
+/-- The other inverse law is restricted to the meridian y=0.
+The scalar coordinate cannot recover points on the rest of S². -/
+theorem realMeridianPoint_realChart (P : SouthChart)
+    (hy : P.val.val.2.1 = 0) : realMeridianPoint (realChart P) = P := by
+  have hs : P.val.val.1 ^ 2 + P.val.val.2.2 ^ 2 = 1 := by
+    simpa [hy] using P.val.property
+  have hd := P.property
+  have hden : 1 + (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2 =
+      2 / (1 + P.val.val.2.2) := by
+    field_simp [hd]
+    <;> nlinarith [hs]
+  apply Subtype.ext
+  apply Subtype.ext
+  apply Prod.ext
+  · change 2 * (P.val.val.1 / (1 + P.val.val.2.2)) /
+      (1 + (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2) = P.val.val.1
+    rw [hden]
+    field_simp [hd]
+    <;> ring
+  · apply Prod.ext
+    · exact hy.symm
+    · change (1 - (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2) /
+        (1 + (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2) = P.val.val.2.2
+      rw [hden]
+      field_simp [hd]
+      <;> nlinarith [hs]
+
+/-- The rational source is embedded coordinatewise, with no relabelling. -/
+theorem realSphereCoordinates_rat (t : ℚ) :
+    realSphereCoordinates (t : ℝ) =
+      (((spherePoint t).1 : ℝ), ((spherePoint t).2.1 : ℝ),
+        ((spherePoint t).2.2 : ℝ)) := by
+  simp [realSphereCoordinates, spherePoint]
+
+theorem continuous_realSpherePoint : Continuous realSpherePoint := by
+  change Continuous (fun t : ℝ =>
+    (⟨realSphereCoordinates t, realSphereCoordinates_on_sphere t⟩ : RealSphere))
+  apply Continuous.subtype_mk
+  unfold realSphereCoordinates
+  exact ((continuous_const.mul continuous_id).div
+    (continuous_const.add (continuous_id.pow 2)) real_denominator_ne_zero).prodMk
+      (continuous_const.prodMk
+        ((continuous_const.sub (continuous_id.pow 2)).div
+          (continuous_const.add (continuous_id.pow 2)) real_denominator_ne_zero))
+
+theorem continuous_realMeridianPoint : Continuous realMeridianPoint :=
+  continuous_realSpherePoint.subtype_mk _
+
+theorem continuous_realChart : Continuous realChart := by
+  have hc : Continuous (fun P : SouthChart => P.val.val) :=
+    continuous_subtype_val.comp continuous_subtype_val
+  exact hc.fst.div (continuous_const.add hc.snd.snd) (fun P => P.property)
+
+theorem realMeridianPoint_isEmbedding :
+    _root_.Topology.IsEmbedding realMeridianPoint :=
+  Function.LeftInverse.isEmbedding realChart_realMeridianPoint
+    continuous_realChart continuous_realMeridianPoint
+
+/-- Topological embedding into S² itself, not merely into a coordinate type. -/
+theorem realSpherePoint_isEmbedding :
+    _root_.Topology.IsEmbedding realSpherePoint :=
+  (_root_.Topology.IsEmbedding.subtypeVal.comp realMeridianPoint_isEmbedding)
+
+/-- Signed chart displacement; this is not round geodesic distance. -/
+def realDisplacement (P Q : SouthChart) : ℝ := realChart Q - realChart P
+
+@[simp] theorem realDisplacement_meridian (s t : ℝ) :
+    realDisplacement (realMeridianPoint s) (realMeridianPoint t) = t - s := by
+  simp [realDisplacement]
+
+/-- Exact return to the same ordered PrimePair used by the Hopf consumer. -/
+theorem realDisplacement_source_gap (pair : PrimePair) :
+    realDisplacement (realMeridianPoint pair.p) (realMeridianPoint pair.q) =
+      (gap pair : ℝ) := by
+  rw [realDisplacement_meridian]
+  exact (Nat.cast_sub (R := ℝ) (le_of_lt pair.ordered)).symm
+
+theorem realDisplacement_eq_rational (p q : ℕ) :
+    realDisplacement (realMeridianPoint p) (realMeridianPoint q) =
+      (displacement (primePoint p) (primePoint q) : ℝ) := by
+  rw [realDisplacement_meridian, displacement_prime]
+  push_cast <;> rfl
 
 /-! ### A faithfully labelled offset/degree packet -/
 
