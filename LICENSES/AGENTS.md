@@ -34,3 +34,5 @@ Local attribution: grwtsk contributors. Source-local scope: `LICENSES/` (prime 5
 - [sources.json](sources.json) maps actual tracked source paths and Git blobs to explicit header evidence or the repository MIT default. Symbolic views refer to canonical source records.
 - Keep file-level license assignments separate from dependency obligations and contextual package notices. Preserve theorem-level and cross-publication provenance; publication identity alone does not determine licensing.
 - Uncertain assignments have a null license expression and an explicit reason; the repository default is a separate candidate, not permission to override uncertain upstream terms. This map is not a new license grant or a completed rights audit.
+
+- [source-evidence.json](source-evidence.json) records exact upstream matches and scoped dispositions for reviewed mappings. Apply the owner-requested MIT default only in the absence of contrary evidence. Preserve explicit conflicting source/project notices as unresolved; never use the default to override them. Keep AGPL identifiers as written unless the exact version-option grant is established.

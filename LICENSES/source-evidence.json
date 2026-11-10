@@ -1,0 +1,2296 @@
+{
+  "schema": "grwtsk.source-license-evidence/1",
+  "local_attribution": "grwtsk contributors",
+  "base_revision": "bad86000f4faaba0a0b7b82bec22d98acc0a2569",
+  "scope": "Source-specific disposition of the 118 previously flagged mappings. This is a static licensing-evidence correspondence, not a new grant, a changed source notice or legal advice.",
+  "default_policy": "MIT repository default only where no contrary file-level license evidence was found. Explicit source restrictions and conflicts are not overridden.",
+  "upstream_evidence": {
+    "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/0538f0ff268430c3f1a9cf996d8b9390d8facc87/LICENSE",
+      "sha256": "db616c37360601d034d4745fd0e4d4ba390bf60a31e6db57f0943349c34987a6",
+      "git_blob": "696451a2241cd9e12f704a9be1cef255af92e0bb",
+      "retrieval": "FETCHED"
+    },
+    "leancert-license-106e8832d72fc89ec252eff22195da5cd6332108": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/106e8832d72fc89ec252eff22195da5cd6332108/LICENSE",
+      "sha256": "0c7e6b4b82daa8c26fb25396a80b011b2cf7ba1e0a9fd9f201570d264c51772c",
+      "git_blob": "cb84d4e6fe9a8077d3135b2ddfc2cda41ca2c9bd",
+      "retrieval": "FETCHED"
+    },
+    "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4ec1cd33290b53b1768f233deb6c1d6bdb12eb93/LICENSE",
+      "sha256": "b6483eb31d324f7ec37b3207046a1a3fd7c56a1d770a71b30b7a96e502f09d59",
+      "git_blob": "b7298b784d43dbd3a43645c4906c5f6b7a882123",
+      "retrieval": "FETCHED"
+    },
+    "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LICENSE",
+      "sha256": "0c7e6b4b82daa8c26fb25396a80b011b2cf7ba1e0a9fd9f201570d264c51772c",
+      "git_blob": "cb84d4e6fe9a8077d3135b2ddfc2cda41ca2c9bd",
+      "retrieval": "FETCHED"
+    },
+    "pnt-Wiener": {
+      "url": "https://raw.githubusercontent.com/AlexKontorovich/PrimeNumberTheoremAnd/127b50e33f6033e2147921167a117af96d9ba4ea/PrimeNumberTheoremAnd/Wiener.lean",
+      "sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "git_blob": "59fd5069a7eca51a8bc5005b5c43e31a5cbb38ac",
+      "retrieval": "FETCHED"
+    },
+    "pnt-LICENSE": {
+      "url": "https://raw.githubusercontent.com/AlexKontorovich/PrimeNumberTheoremAnd/127b50e33f6033e2147921167a117af96d9ba4ea/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "retrieval": "FETCHED"
+    },
+    "tau-LICENSE": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "git_blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "retrieval": "FETCHED"
+    },
+    "anthropic-Inertia": {
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Zeta23/LinAlg/Inertia.lean",
+      "sha256": "afb853a1772319779d614c3c82304880e2cb8f6272004cb49fa4662340fc458f",
+      "git_blob": "0d1de40376288d80e4938f69d81479c62835bf16",
+      "retrieval": "FETCHED"
+    },
+    "anthropic-Statement": {
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Zeta23/Statement.lean",
+      "sha256": "3458af8531decf948319517543f731dcdc2c5a7de47e9339f9a443530e60d205",
+      "git_blob": "b8a95eb20cbade61a33f165004c34d1ce1674947",
+      "retrieval": "FETCHED"
+    },
+    "anthropic-FinalMult": {
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Zeta23/FinalMult.lean",
+      "sha256": "ce5f72526219ba85ade4aa870c71ca3f72e7e39f32e5b595a07798bd4fbf568c",
+      "git_blob": "c2034d2311be8eb2687b5f7c7cd2d7a1f9ada422",
+      "retrieval": "FETCHED"
+    },
+    "anthropic-LICENSE": {
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "retrieval": "FETCHED"
+    },
+    "fermat-FinalCheck": {
+      "url": "https://raw.githubusercontent.com/anthropics/fermats-last-theorem/6e837e75355538c7f80bab5b956861e86c4eacc2/FinalCheck.lean",
+      "sha256": "8f181fc19bfde6d11d213e3940e192884f9e8f7e53c8c81bb64648a93ad4ed35",
+      "git_blob": "3ffbd60b8f9736f5569e4dd4774701a114d18266",
+      "retrieval": "FETCHED"
+    },
+    "fermat-LICENSE": {
+      "url": "https://raw.githubusercontent.com/anthropics/fermats-last-theorem/6e837e75355538c7f80bab5b956861e86c4eacc2/LICENSE",
+      "sha256": "746bc52848eabf8765635fe532e0680756a10b18e7b3fb26e7433ab4edf34034",
+      "git_blob": "6f101c9faa913e222f966b68c5ce9890fe50344f",
+      "retrieval": "FETCHED"
+    },
+    "plby-Erdos350": {
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos350.lean",
+      "sha256": "e2f0129a7dfb5b1ea5593859242eb9c42e23da08bb5f4588c89e09aeca5e8d41",
+      "git_blob": "4bd7afe5e89ab92209eee9453031c5e80f6fe314",
+      "retrieval": "FETCHED"
+    },
+    "plby-scoped-LICENSE": {
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "retrieval": "FETCHED"
+    },
+    "mathlib-lakefile": {
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/d13f23b723b8a846827a245b89c10fc7d3f11612/lakefile.lean",
+      "sha256": "274e720ccc7dbabeb9fbf362290dc7e5ed2c5175fbade0ef20cc19b1331affaf",
+      "git_blob": "6fcf25bc966618668c5690c79cf6e10a2c5635f3",
+      "retrieval": "FETCHED"
+    },
+    "mathlib-LICENSE": {
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/d13f23b723b8a846827a245b89c10fc7d3f11612/LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "git_blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.TorsionDivisor": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/TorsionDivisor.lean",
+      "sha256": "c92096c49b61e57d11d20c31b016102e1b80bab028469da167f04caa3809c917",
+      "git_blob": "0f61446aae1bba38a194ff71d170cf9e868e9e4d",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Translation.Place": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/Translation/Place.lean",
+      "sha256": "50478a3568fce2984a07f9652348937b56e2cdc26460b14d92f33b6745d868f5",
+      "git_blob": "5d08df8d3fdb4df91355c821371d77bbd89fcb84",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Galois.Divisor": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/Galois/Divisor.lean",
+      "sha256": "635009e55adf46c1ed53977eb2f4d21bb6433c66ae891315750f2fbc763ea36d",
+      "git_blob": "52697374b29a8efe552dbf87b34a515269885020",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.GaloisCohomology.Coefficients": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/GaloisCohomology/Coefficients.lean",
+      "sha256": "3e5e9a9798534c4394f16d2231c0496f8f2107b604c8bc75c16ef2f038162bba",
+      "git_blob": "d56decb915934d38ff4ed5271ed59c73953a89e1",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.RepresentationTheory.Homological.ContCohomology.LowDegree": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/RepresentationTheory/Homological/ContCohomology/LowDegree.lean",
+      "sha256": "50dfba5cd7b41eb6be17dcf6e977d07d9c7c87bfbf3ac5c2fa47514fa453d7ac",
+      "git_blob": "9596754d63dfddae05765acc47fab267df58da7e",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.FieldTheory.FunctionField.Divisor.Automorphism": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/FieldTheory/FunctionField/Divisor/Automorphism.lean",
+      "sha256": "36fab645b89f5ff703f7f6d8077332c7bba838fec016501a3ccfec6edfd10ed2",
+      "git_blob": "b86547a39b08784260f8306c1d867ded15a073a6",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.FieldTheory.FunctionField.Divisor.Principal": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/FieldTheory/FunctionField/Divisor/Principal.lean",
+      "sha256": "25c8c56fc1faa96c6acb1741401b1826364622a8b1a19a96ac21b5bc01401c5f",
+      "git_blob": "71265ad956f6b10672768a65a4800864667a740e",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Divisor.Sum": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/Divisor/Sum.lean",
+      "sha256": "f8f3642e77cb877fe639c67f5bace4369209c594728df5e5307502efb0de680d",
+      "git_blob": "966862188a03cff2e5f503a25b9d369e26b648ab",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Galois.Basic": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/FunctionField/Galois/Basic.lean",
+      "sha256": "a413ef2218f235fccaca8a3c78146a4cc4935f07eac5f3e8a1eecae82bdacae0",
+      "git_blob": "562a808bcaeb0db70c918b2a447240717fdf3e04",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.GroupTheory.Commutator": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/GroupTheory/Commutator.lean",
+      "sha256": "c2e31e0b5bdbefd989abdfd0fa68c9a8308c38d4d60b28142e26bba6a879094a",
+      "git_blob": "89065121c96961a2b03b6d0666f01643c6833419",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.WeilPairing.Basic": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/MulByInt/WeilPairing/Basic.lean",
+      "sha256": "31bcd6490a7c1ead1414ee2e1876390dd77cb0f9bb4f09fda4cd2cd0db9fba1b",
+      "git_blob": "8957e64b52bc94ada398c4724b256630558397cb",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.GroupTheory.GroupExtension.FactorSetOfSection": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/GroupTheory/GroupExtension/FactorSetOfSection.lean",
+      "sha256": "3adf67d2f6824d5a706900eb829755640ba9209e43857dfdc4df4dbda77996a6",
+      "git_blob": "a01aa68df8bf0b546293212a99bc45bb723f2d36",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.GroupTheory.GroupExtension.Cohomology": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/GroupTheory/GroupExtension/Cohomology.lean",
+      "sha256": "9191111476e99c1929d0e81b3dadb56fc1b10c27d7f41c075612e5a09345cac6",
+      "git_blob": "f399ad0e027266716324c1b7c85622896152e8cc",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.Algebra.GroupAction.Trivial": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/Algebra/GroupAction/Trivial.lean",
+      "sha256": "674f34136317ac119388f3a87ee96a70866f9e1733a5dd4cf00fbd07ee510525",
+      "git_blob": "60c1a4397a3ca7a503a738938acaec7490cb5143",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.DivisorPullback": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/MulByInt/DivisorPullback.lean",
+      "sha256": "9fcc1e13f145a6078bb2a530c109627d734506b8dd192e4990cfae85fe10246c",
+      "git_blob": "720ce51d8b39611ef3fece06386e95a6f2d3160f",
+      "retrieval": "FETCHED"
+    },
+    "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.Torsion.Structure": {
+      "url": "https://raw.githubusercontent.com/TauCetiProject/TauCeti/2bdb755239d3bd84760e99bc83166bdf7cc75a6b/TauCeti/AlgebraicGeometry/EllipticCurve/Isogeny/MulByInt/Torsion/Structure.lean",
+      "sha256": "0943d0729a2ea042b79eaeef9b5c36fa0a9400e353d0b536abfdfeb54f60b3f6",
+      "git_blob": "843bb6ef86790be5c4728c71655897117ee6a72d",
+      "retrieval": "FETCHED"
+    },
+    "leancert-source:LeanCert/Engine/Affine/Nonlinear.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/0538f0ff268430c3f1a9cf996d8b9390d8facc87/LeanCert/Engine/Affine/Nonlinear.lean",
+      "revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+      "sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
+      "git_blob": "18b308a50d7d64cd24ab843aa5e0f9f734b088af"
+    },
+    "leancert-source:LeanCert/Engine/Affine/Transcendental.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/0538f0ff268430c3f1a9cf996d8b9390d8facc87/LeanCert/Engine/Affine/Transcendental.lean",
+      "revision": "0538f0ff268430c3f1a9cf996d8b9390d8facc87",
+      "sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
+      "git_blob": "5f4d26807738525e298287e45eba1fc8b4bdd2ed"
+    },
+    "leancert-source:LeanCert/Engine/Affine/Vector.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/Engine/Affine/Vector.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "cd315f8cb21b5fd4efdbab04a9b0952409540212c20824e9eaf336360d43c149",
+      "git_blob": "da5a10d50af788618bea7e02100745578c59327d"
+    },
+    "leancert-source:LeanCert/Engine/IntervalVector.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/106e8832d72fc89ec252eff22195da5cd6332108/LeanCert/Engine/IntervalVector.lean",
+      "revision": "106e8832d72fc89ec252eff22195da5cd6332108",
+      "sha256": "72b429b393dd8e521fabadc18dfb4ec35cf6cece296abbfa07f27bb3d27b272d",
+      "git_blob": "b46dd340c64d5daaa81f7256a942bf8b013b3ff2"
+    },
+    "leancert-source:LeanCert/Examples/ML/Distillation.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/Examples/ML/Distillation.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "d65898fab884a32085c6286e4c4425f1907253816939e53db04e28015602a288",
+      "git_blob": "607a75d9175255bdea6c87d5b9b90faf7f98bf33"
+    },
+    "leancert-source:LeanCert/Examples/ML/SineApprox.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/Examples/ML/SineApprox.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "a882ad0a8a2261c4836e87f0fcab1a7c3ce2d37480f59171ef5507988436bfb7",
+      "git_blob": "4a44a62212c747f894fa745a3a561d58e12d74f8"
+    },
+    "leancert-source:LeanCert/Examples/ML/SineNetWeights.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/Examples/ML/SineNetWeights.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "9951acf7a7e6765f807333c82c6a7bee73068c7bfa11378b08cedb91327b3d5b",
+      "git_blob": "c3ada543684fbce53bb524a88d0b148a7bda6e37"
+    },
+    "leancert-source:LeanCert/Examples/NeuralNet.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/Examples/NeuralNet.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "6620b68775229ffaf241f26f9ead97c8facc4ce86ed86d47041631277a5a9ec1",
+      "git_blob": "ad4f6fd278d8b9d43c1bafa946304cc409c9a072"
+    },
+    "leancert-source:LeanCert/ML/Attention.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Attention.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "930a5b1d30b49ded27bc9dd7fa33a1c8a97048062a474465fcc7229c02b7e10d",
+      "git_blob": "dee35a77b5b7cc4f8ef7470805b3c5a5bb7e3cb9"
+    },
+    "leancert-source:LeanCert/ML/Distillation.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Distillation.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "32b8a4872311713dc29c6ef55d258a36d7e436f7299c43d283e55aa63476da8f",
+      "git_blob": "58d40cf8b4e8fe6710437fe57ce0dac4a499ed75"
+    },
+    "leancert-source:LeanCert/ML/IntervalVector.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/IntervalVector.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "5a1da30442f7c401548647bfc133b36f2f340281eb28c4cbf94bf2f103fac267",
+      "git_blob": "b3c08c9945bce291eec6f112c073bcd1fcfb9a8b"
+    },
+    "leancert-source:LeanCert/ML/LayerNormAffine.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/LayerNormAffine.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "2dc12e2ff648a18aa2b7aa0e5304eed6ea01b0050f46068291dfadfdfa4b7a2d",
+      "git_blob": "13d69f99b1c0e8351c9445300c75520a6ccc8b5b"
+    },
+    "leancert-source:LeanCert/ML/Network.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Network.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "230e5657fd955e58f745379a792cc24257ca21a1e477e69c1d0de1b0b40e392f",
+      "git_blob": "dce3480f8d4d54d52fea6372aff3d484f33becd8"
+    },
+    "leancert-source:LeanCert/ML/Optimized.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Optimized.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "b3d23d8d790b793681d62cfed605d453fc314e802362c9597f6c857dc428dc2d",
+      "git_blob": "685994c238acc45610ab7d52f91a1c4ae1ba7235"
+    },
+    "leancert-source:LeanCert/ML/Optimized/IntervalArray.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Optimized/IntervalArray.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "cf55f8063a0ee3a5e6908b22220785b751cf26cd7ca4b15b46b754c9cb94e62d",
+      "git_blob": "8d28e8f03eeee3a72a1831a12ff1545459230f8c"
+    },
+    "leancert-source:LeanCert/ML/Optimized/Matrix.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4ec1cd33290b53b1768f233deb6c1d6bdb12eb93/LeanCert/ML/Optimized/Matrix.lean",
+      "revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+      "sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
+      "git_blob": "f8ccf5ee529afc5eb69067839b4c883f2152e0ac"
+    },
+    "leancert-source:LeanCert/ML/Optimized/MatrixNetwork.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Optimized/MatrixNetwork.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "440e57db2e045c157c4ab6bc4d5c6b42c4af0a12d1be431a6a3c872b63af4bf1",
+      "git_blob": "3d8491efd05de2f0cc3c43e743df80f5d4d6d329"
+    },
+    "leancert-source:LeanCert/ML/Optimized/QuantizedLayer.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/4ec1cd33290b53b1768f233deb6c1d6bdb12eb93/LeanCert/ML/Optimized/QuantizedLayer.lean",
+      "revision": "4ec1cd33290b53b1768f233deb6c1d6bdb12eb93",
+      "sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
+      "git_blob": "1f257be908d780e46e6abdec6283adde2d150c4a"
+    },
+    "leancert-source:LeanCert/ML/Softmax.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Softmax.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "78eae980f239778ec07285b1da669f344ed6b5755f2f06730389ddf4847cbb23",
+      "git_blob": "aefd7b7119841767c017e04b90beb68ef213f1cc"
+    },
+    "leancert-source:LeanCert/ML/Transformer.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/ML/Transformer.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "e1ae2797684ff64a5fea5ec2756430ce687bcc2903404eab0c9307cafe30e3e6",
+      "git_blob": "ff9082fc0a6a3d70a90bde087f3ebf61f9ff434a"
+    },
+    "leancert-source:LeanCert/Test/TransformerTest.lean": {
+      "url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LeanCert/Test/TransformerTest.lean",
+      "revision": "69d876d674eb9c31bb07b3c8580d8bfb4eeb746b",
+      "sha256": "761711878d00248d3e1269aea81a827fac93987e6774e72daec2ee8d0be2871d",
+      "git_blob": "8d4a5a0bc1c6e839b9cee57de8564309266eece8"
+    }
+  },
+  "files": [
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Attention.lean",
+      "source_git_blob": "dee35a77b5b7cc4f8ef7470805b3c5a5bb7e3cb9",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/Attention.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "930a5b1d30b49ded27bc9dd7fa33a1c8a97048062a474465fcc7229c02b7e10d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Attention.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/AttentionNamespaced.lean",
+      "source_git_blob": "a3b3d28d81a896b8cc4143835ce6c2799802edf0",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/AttentionNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "930a5b1d30b49ded27bc9dd7fa33a1c8a97048062a474465fcc7229c02b7e10d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Attention.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationIntervalDyadic.lean",
+      "source_git_blob": "58d40cf8b4e8fe6710437fe57ce0dac4a499ed75",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationIntervalDyadic.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "32b8a4872311713dc29c6ef55d258a36d7e436f7299c43d283e55aa63476da8f",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Distillation.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationLayer1.lean",
+      "source_git_blob": "607a75d9175255bdea6c87d5b9b90faf7f98bf33",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationLayer1.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "d65898fab884a32085c6286e4c4425f1907253816939e53db04e28015602a288",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/ML/Distillation.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationNamespacedIntervalDyadic.lean",
+      "source_git_blob": "0c8a79a90491a513f6abc7dac3cc067dfc5e7a6e",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationNamespacedIntervalDyadic.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "32b8a4872311713dc29c6ef55d258a36d7e436f7299c43d283e55aa63476da8f",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Distillation.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationNamespacedLayer1.lean",
+      "source_git_blob": "255d8090d7b59d5b8d28de372fa98c2f9ad5c04d",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/DistillationNamespacedLayer1.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "d65898fab884a32085c6286e4c4425f1907253816939e53db04e28015602a288",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/ML/Distillation.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalArray.lean",
+      "source_git_blob": "8d28e8f03eeee3a72a1831a12ff1545459230f8c",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalArray.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "cf55f8063a0ee3a5e6908b22220785b751cf26cd7ca4b15b46b754c9cb94e62d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/IntervalArray.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalArrayNamespaced.lean",
+      "source_git_blob": "a7618749cc7ca2668bdf19cb05325d585c22835e",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalArrayNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "cf55f8063a0ee3a5e6908b22220785b751cf26cd7ca4b15b46b754c9cb94e62d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/IntervalArray.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalVector.lean",
+      "source_git_blob": "b46dd340c64d5daaa81f7256a942bf8b013b3ff2",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalVector.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "72b429b393dd8e521fabadc18dfb4ec35cf6cece296abbfa07f27bb3d27b272d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/IntervalVector.lean",
+        "leancert-license-106e8832d72fc89ec252eff22195da5cd6332108"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalVectorNamespaced.lean",
+      "source_git_blob": "be71c1523a20283b2596a7b895413ae3b8cb3bb4",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntervalVectorNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "72b429b393dd8e521fabadc18dfb4ec35cf6cece296abbfa07f27bb3d27b272d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/IntervalVector.lean",
+        "leancert-license-106e8832d72fc89ec252eff22195da5cd6332108"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean",
+      "source_git_blob": "13d69f99b1c0e8351c9445300c75520a6ccc8b5b",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "2dc12e2ff648a18aa2b7aa0e5304eed6ea01b0050f46068291dfadfdfa4b7a2d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/LayerNormAffine.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/LayerNormAffineNamespaced.lean",
+      "source_git_blob": "92de641acf54b65ae162706426e8eac74467b8ed",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/LayerNormAffineNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "2dc12e2ff648a18aa2b7aa0e5304eed6ea01b0050f46068291dfadfdfa4b7a2d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/LayerNormAffine.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Network.lean",
+      "source_git_blob": "dce3480f8d4d54d52fea6372aff3d484f33becd8",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/Network.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "230e5657fd955e58f745379a792cc24257ca21a1e477e69c1d0de1b0b40e392f",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Network.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NetworkNamespaced.lean",
+      "source_git_blob": "509dbaa177c055ae4b3146e0b11fcb4a18cd3708",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/NetworkNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "230e5657fd955e58f745379a792cc24257ca21a1e477e69c1d0de1b0b40e392f",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Network.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean",
+      "source_git_blob": "ad4f6fd278d8b9d43c1bafa946304cc409c9a072",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "6620b68775229ffaf241f26f9ead97c8facc4ce86ed86d47041631277a5a9ec1",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/NeuralNet.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NeuralNetNamespaced.lean",
+      "source_git_blob": "fb5ccbabe0f397a86a2cca9f8f4eabc18a71bc80",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/NeuralNetNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "6620b68775229ffaf241f26f9ead97c8facc4ce86ed86d47041631277a5a9ec1",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/NeuralNet.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean",
+      "source_git_blob": "18b308a50d7d64cd24ab843aa5e0f9f734b088af",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "FSL-1.1-A",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/Affine/Nonlinear.lean",
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/NonlinearNamespaced.lean",
+      "source_git_blob": "0a4de3f5a215f3b37c591eaa95f1834bb2650d24",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/NonlinearNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "ddb4a76771b0528ac89c9b1004db931158a1c1f222c9fe68c7b386aa66bdb8fd",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "FSL-1.1-A",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/Affine/Nonlinear.lean",
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Optimized.lean",
+      "source_git_blob": "685994c238acc45610ab7d52f91a1c4ae1ba7235",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/Optimized.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "b3d23d8d790b793681d62cfed605d453fc314e802362c9597f6c857dc428dc2d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/OptimizedNamespaced.lean",
+      "source_git_blob": "abfb6ae6c69269bde59d2093d77286cce183974e",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/OptimizedNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "b3d23d8d790b793681d62cfed605d453fc314e802362c9597f6c857dc428dc2d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayer.lean",
+      "source_git_blob": "1f257be908d780e46e6abdec6283adde2d150c4a",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayer.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "Apache-2.0",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayerNamespaced.lean",
+      "source_git_blob": "32e26b477374ac1cecdd7a4f21f810042983d1a0",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/QuantizedLayerNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "e93858564ef1af5a3b93ba7b7ce94c3e2c0ddced9d8859c85971390230740d36",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "Apache-2.0",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/QuantizedLayer.lean",
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineApprox.lean",
+      "source_git_blob": "4a44a62212c747f894fa745a3a561d58e12d74f8",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineApprox.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "a882ad0a8a2261c4836e87f0fcab1a7c3ce2d37480f59171ef5507988436bfb7",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/ML/SineApprox.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineApproxNamespaced.lean",
+      "source_git_blob": "90435f385533bad4455667210ec02eabc1b691d6",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineApproxNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "a882ad0a8a2261c4836e87f0fcab1a7c3ce2d37480f59171ef5507988436bfb7",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/ML/SineApprox.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineNetWeights.lean",
+      "source_git_blob": "c3ada543684fbce53bb524a88d0b148a7bda6e37",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineNetWeights.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "9951acf7a7e6765f807333c82c6a7bee73068c7bfa11378b08cedb91327b3d5b",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/ML/SineNetWeights.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean",
+      "source_git_blob": "939dadbefbfd7824f289da4846b7e73280c63fd2",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "9951acf7a7e6765f807333c82c6a7bee73068c7bfa11378b08cedb91327b3d5b",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Examples/ML/SineNetWeights.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Softmax.lean",
+      "source_git_blob": "aefd7b7119841767c017e04b90beb68ef213f1cc",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/Softmax.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "78eae980f239778ec07285b1da669f344ed6b5755f2f06730389ddf4847cbb23",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Softmax.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/SoftmaxNamespaced.lean",
+      "source_git_blob": "54dccc291f0be57076562be279f113b8e1fa7e9f",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/SoftmaxNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "78eae980f239778ec07285b1da669f344ed6b5755f2f06730389ddf4847cbb23",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Softmax.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean",
+      "source_git_blob": "5f4d26807738525e298287e45eba1fc8b4bdd2ed",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "FSL-1.1-A",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/Affine/Transcendental.lean",
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/TranscendentalNamespaced.lean",
+      "source_git_blob": "ea52ba339990d060b7c387fbe9ee10c225d1b912",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/TranscendentalNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "71c7d93e70e00a6da4bb66cac5a09f999a7cca45e8a047428909e37813ebc9a8",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "FSL-1.1-A",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is FSL-1.1-A. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/Affine/Transcendental.lean",
+        "leancert-license-0538f0ff268430c3f1a9cf996d8b9390d8facc87"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transformer.lean",
+      "source_git_blob": "ff9082fc0a6a3d70a90bde087f3ebf61f9ff434a",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/Transformer.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "e1ae2797684ff64a5fea5ec2756430ce687bcc2903404eab0c9307cafe30e3e6",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Transformer.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/TransformerNamespaced.lean",
+      "source_git_blob": "6fa8ab3d81c90b359f6a21a834b5c2b55a29e904",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/AlgorithmsInComputerScience/TransformerNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "e1ae2797684ff64a5fea5ec2756430ce687bcc2903404eab0c9307cafe30e3e6",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Transformer.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IntervalVector.lean",
+      "source_git_blob": "b3c08c9945bce291eec6f112c073bcd1fcfb9a8b",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IntervalVector.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "5a1da30442f7c401548647bfc133b36f2f340281eb28c4cbf94bf2f103fac267",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/IntervalVector.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IntervalVectorNamespaced.lean",
+      "source_git_blob": "5188efce7de78bc506024304846e3b471f3116b3",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IntervalVectorNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "5a1da30442f7c401548647bfc133b36f2f340281eb28c4cbf94bf2f103fac267",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/IntervalVector.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileMathlibTestOptions.lean",
+      "source_git_blob": "6fcf25bc966618668c5690c79cf6e10a2c5635f3",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileMathlibTestOptions.lean",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "Apache-2.0",
+      "reason": "Exact upstream file bytes and pinned project license resolve the missing local header.",
+      "upstream_evidence_keys": [
+        "mathlib-lakefile",
+        "mathlib-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransformerTest.lean",
+      "source_git_blob": "8d4a5a0bc1c6e839b9cee57de8564309266eece8",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransformerTest.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "761711878d00248d3e1269aea81a827fac93987e6774e72daec2ee8d0be2871d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Test/TransformerTest.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransformerTestNamespaced.lean",
+      "source_git_blob": "62b0c171242f882f7c883a05a97c1bafe4197214",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransformerTestNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "761711878d00248d3e1269aea81a827fac93987e6774e72daec2ee8d0be2871d",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Test/TransformerTest.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnicodeComments.lean",
+      "source_git_blob": "64633875903c009da9952c95cbb0d0652b3f988a",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnicodeComments.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean",
+      "source_git_blob": "306818e16c151f0f35f1ee641cb01a05786da4b7",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean",
+      "source_git_blob": "69fc8461f1a80cc1b8f8e63c37374c1425f125ce",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean",
+      "external_scope_evidence": "Retained explicit file header and source-local imports; no additional upstream file identity was fabricated.",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean",
+      "source_git_blob": "2f8ffbd258a040cc345e15cc6b63311d132f2f75",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean",
+      "external_scope_evidence": "Retained explicit file header and source-local imports; no additional upstream file identity was fabricated.",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean",
+      "source_git_blob": "9ca2d169deebbdc04928f5cb7845addc3140c7ea",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/FunctionsOfAComplexVariable/AnalyticLinearODE.lean",
+      "source_git_blob": "aea87605fe06a89110cc2f81f0b65f4ee81762f5",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/FunctionsOfAComplexVariable/AnalyticLinearODE.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/FunctionsOfAComplexVariable/Variants.lean",
+      "source_git_blob": "479d38530e2163946aac8222e19d15ebaa50d18c",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/FunctionsOfAComplexVariable/Variants.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/IntegralTransformsOperationalCalculus/DyadicBounds.lean",
+      "source_git_blob": "79b8c3b5cc4185c4b16aa078d3f303b5d0a33ac6",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/IntegralTransformsOperationalCalculus/DyadicBounds.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixIntMatrix.lean",
+      "source_git_blob": "f8ccf5ee529afc5eb69067839b4c883f2152e0ac",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixIntMatrix.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "Apache-2.0",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/Matrix.lean",
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedIntMatrix.lean",
+      "source_git_blob": "4a0c77078e33a0c6e76ef7e317303eaf7214c045",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedIntMatrix.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "ed3afbea2644d1b8f06963367a60ced7b83130d909e2b507381e6fe17b053625",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "Apache-2.0",
+      "result": "REVIEW_REQUIRED",
+      "license_expression": null,
+      "reason": "Exact upstream file retains AGPL-3.0 notice, while its project LICENSE at that same revision is Apache-2.0. No choice, override or relicensing is inferred.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/Matrix.lean",
+        "leancert-license-4ec1cd33290b53b1768f233deb6c1d6bdb12eb93"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNetwork.lean",
+      "source_git_blob": "3d8491efd05de2f0cc3c43e743df80f5d4d6d329",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNetwork.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "440e57db2e045c157c4ab6bc4d5c6b42c4af0a12d1be431a6a3c872b63af4bf1",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/MatrixNetwork.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNetworkNamespaced.lean",
+      "source_git_blob": "23842502f320ce17cecd08e6f6612a781a9ca417",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNetworkNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "440e57db2e045c157c4ab6bc4d5c6b42c4af0a12d1be431a6a3c872b63af4bf1",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/ML/Optimized/MatrixNetwork.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRank.lean",
+      "source_git_blob": "cf455d64e1a5b386e0c48648fed1f53099f42e7d",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRank.lean",
+      "external_scope_evidence": "Retained explicit file header and source-local imports; no additional upstream file identity was fabricated.",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TwoThirdsCongruenceInertia.lean",
+      "source_git_blob": "30d55f0f3ed9fc2f42b514ffe58c17691e5a910a",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TwoThirdsCongruenceInertia.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "anthropic-LICENSE",
+        "anthropic-Inertia"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/CenteredReadout.lean",
+      "source_git_blob": "e34a6ef19deb942a0a49c1439226cc5f5f7aec9a",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/CenteredReadout.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/ComplexReadout.lean",
+      "source_git_blob": "050d73399cab6828732ef71ed9ba244ccac3dd4d",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/ComplexReadout.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/DyadicIntegralSeries.lean",
+      "source_git_blob": "935f8bbda1da0e3f003e8d6de928b3a9ec084654",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/DyadicIntegralSeries.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/GreenEnergyFormula.lean",
+      "source_git_blob": "bf15f3e2893721618276b5cc95e939341529edb9",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/GreenEnergyFormula.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/LowMassSpecifications.lean",
+      "source_git_blob": "85f69570baa30496132c897a3ac31d55461f1286",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/LowMassSpecifications.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/MellinBlockHolomorphy.lean",
+      "source_git_blob": "c8f2877467b2d76448664c072e64e3dc5417561a",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/MellinBlockHolomorphy.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/MellinReadout.lean",
+      "source_git_blob": "e6053fc98c1a000cb3aa8e604b4532382fac45ae",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/MellinReadout.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/PositiveCoordinates.lean",
+      "source_git_blob": "c97ce643d082f5a7a5b074e15b3c64f184361b6b",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/PositiveCoordinates.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/QuadraticReadoutBound.lean",
+      "source_git_blob": "e2117d61f03998007c58f42dce33cc7605e61df4",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/QuadraticReadoutBound.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/UnitIntervalPrimitives.lean",
+      "source_git_blob": "8cfa75091f9210e6cb9453b6db0d69c4894e643b",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/UnitIntervalPrimitives.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/VariantsSourceEdition1.lean",
+      "source_git_blob": "a825333fda271075cfe249925d4e9d5a429f6680",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/VariantsSourceEdition1.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/VariantsSourceEdition3.lean",
+      "source_git_blob": "54428603ad9f11704c0a12b76a86213bb9b12635",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/VariantsSourceEdition3.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaLambdaLogKernelUniformBound.lean",
+      "source_git_blob": "77df1869b4b90b999c24703961b59b8b6646727d",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaLambdaLogKernelUniformBound.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaMellinFourierSource.lean",
+      "source_git_blob": "c3fafc90b62748e4a8dc319333e5938b4d4139a9",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaMellinFourierSource.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaQOneFiniteSigmaFubiniControls.lean",
+      "source_git_blob": "9179c3a8590bc56a0fbc8a549c4a3bdc71628e41",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaQOneFiniteSigmaFubiniControls.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaQOnePoleFourier.lean",
+      "source_git_blob": "6a3f0650645c6ff13e471508993eca56346f0dbf",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaQOnePoleFourier.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean",
+      "source_git_blob": "881d8a93e205b74e75a6aa890b743c71280b4859",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaQuantitativeSchwartzError.lean",
+      "source_git_blob": "330ad53bc619fc0e197b04754be69dd9f6f0523e",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaQuantitativeSchwartzError.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaQuantitativeSchwartzErrorControls.lean",
+      "source_git_blob": "8a58eed4abaa08687ea7b13f3910b3112463e377",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaQuantitativeSchwartzErrorControls.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/MeasureAndIntegration/WienerIkeharaRemainderLinearity.lean",
+      "source_git_blob": "0d3007d69411f91a45a3cea9886805cd03cdb850",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/MeasureAndIntegration/WienerIkeharaRemainderLinearity.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiGeometricThetaKummerBoundary.lean",
+      "source_git_blob": "b4aab596b08eb2e6a4a7a989112c491f4a19cdd2",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiGeometricThetaKummerBoundary.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.TorsionDivisor",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Translation.Place",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Galois.Divisor",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.GaloisCohomology.Coefficients",
+        "tau-TauCeti.RepresentationTheory.Homological.ContCohomology.LowDegree"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiOriginalGeometricTheta.lean",
+      "source_git_blob": "74c12f32bed4567731183736a0f2b748e86ddecc",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiOriginalGeometricTheta.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.TorsionDivisor",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Translation.Place",
+        "tau-TauCeti.FieldTheory.FunctionField.Divisor.Automorphism",
+        "tau-TauCeti.FieldTheory.FunctionField.Divisor.Principal",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Divisor.Sum"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiOriginalGeometricThetaGalois.lean",
+      "source_git_blob": "827f67dc184ee01216ee9588b9819a81e20cbfd8",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiOriginalGeometricThetaGalois.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.GaloisCohomology.Coefficients",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Galois.Basic",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Affine.FunctionField.Galois.Divisor",
+        "tau-TauCeti.RepresentationTheory.Homological.ContCohomology.LowDegree"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaCommutatorBilinear.lean",
+      "source_git_blob": "95511d1268c69993d424b43ecfb9d3cd10e542fa",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaCommutatorBilinear.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.GroupTheory.Commutator"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaCommutatorRootsOfUnity.lean",
+      "source_git_blob": "40afe0f0ecdc691db1bcc84280ad0306834498f7",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaCommutatorRootsOfUnity.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.GroupTheory.Commutator",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.WeilPairing.Basic"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaGaloisScalarFactor.lean",
+      "source_git_blob": "327d67868b3ce312dc480987856b16385431dc80",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaGaloisScalarFactor.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.GroupTheory.GroupExtension.FactorSetOfSection",
+        "tau-TauCeti.RepresentationTheory.Homological.ContCohomology.LowDegree"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaGroupExtension.lean",
+      "source_git_blob": "98e1b2047b82fa2970d315a2f520675f3a654456",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaGroupExtension.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.GroupTheory.GroupExtension.FactorSetOfSection",
+        "tau-TauCeti.GroupTheory.GroupExtension.Cohomology",
+        "tau-TauCeti.Algebra.GroupAction.Trivial"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaHOneRepresentativeGauge.lean",
+      "source_git_blob": "faf11448966dcbe5e8c94faf78db4804f7c146fe",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaHOneRepresentativeGauge.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.RepresentationTheory.Homological.ContCohomology.LowDegree"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaOriginalWeilSignReturn.lean",
+      "source_git_blob": "2c288ca159bd56adf0af21690b654349b25fb0b4",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaOriginalWeilSignReturn.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.WeilPairing.Basic"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaSelectedLiftContinuity.lean",
+      "source_git_blob": "34fb80d3c6efc400c5878a72620ffce138d1c965",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaSelectedLiftContinuity.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaWeilOneFunctionGate.lean",
+      "source_git_blob": "8e6ad4b2400e28aff21935467bac454b8901a4a1",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaWeilOneFunctionGate.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.DivisorPullback"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaWeilRankTwoCriterion.lean",
+      "source_git_blob": "dc924326cc165d4ddd7fb8e3ad5d6ec98e3e5dd3",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/TauCetiThetaWeilRankTwoCriterion.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "tau-LICENSE",
+        "tau-TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.Torsion.Structure"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPrimitivity.lean",
+      "source_git_blob": "da6482ab8387bf37fb50eb21693d004e3244b954",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPrimitivity.lean",
+      "external_scope_evidence": "Retained explicit file header and source-local imports; no additional upstream file identity was fabricated.",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean",
+      "source_git_blob": "18078dbb57e63900523847a5bfe3b53824e2e626",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [
+        "fermat-FinalCheck",
+        "fermat-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DyadicDiscrepancy.lean",
+      "source_git_blob": "d0aa1e41b7fb0c8b24a24e96381d03dc7ca2fd02",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DyadicDiscrepancy.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DyadicMellinConvergence.lean",
+      "source_git_blob": "18444abdb62cb9100dbd174799c906d54585a40d",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DyadicMellinConvergence.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ExceptionalSetAnalyticInterfaces.lean",
+      "source_git_blob": "a604c31e86022eeeb6d139652c4ae98f201efc40",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ExceptionalSetAnalyticInterfaces.lean",
+      "external_scope_evidence": "Retained explicit file header and source-local imports; no additional upstream file identity was fabricated.",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean",
+      "source_git_blob": "a6d43e7f0df26261a047842d88f0bc5cdc726101",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WienerIkeharaLambdaLogKernelFiniteBridge.lean",
+      "source_git_blob": "f3b9e4aa09b13b538d2a751fdf5d61907b1e7c6f",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WienerIkeharaLambdaLogKernelFiniteBridge.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WienerIkeharaQOneFiniteSigmaFubini.lean",
+      "source_git_blob": "54033715cb863ecae29709b681b21cb67f90df81",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WienerIkeharaQOneFiniteSigmaFubini.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/WienerIkeharaLambdaSigmaBoundaryTannery.lean",
+      "source_git_blob": "109211b4a2d291a581c256238abf717b7aecef86",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/WienerIkeharaLambdaSigmaBoundaryTannery.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/WienerIkeharaQOneBoundaryEstimates.lean",
+      "source_git_blob": "63d37837b2c3798ea6a2a570d778d830d8d696bf",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/WienerIkeharaQOneBoundaryEstimates.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/WienerIkeharaQOneBoundaryEstimatesControls.lean",
+      "source_git_blob": "e54ecef888f74f5a3c88c20d88d6d3266dbdbd7c",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/WienerIkeharaQOneBoundaryEstimatesControls.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ReciprocalSubsetSumCollision.lean",
+      "source_git_blob": "fb19960a95c6405f8cff395cbff9791111f8a37c",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ReciprocalSubsetSumCollision.lean",
+      "unresolved_dependency_scope": "No blanket upstream license grant for the imported Erdos350 endpoint was established.",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [
+        "plby-Erdos350",
+        "plby-scoped-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicEulerIdentification.lean",
+      "source_git_blob": "4650a35c96bfca62a42743435fb82709de310bef",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicEulerIdentification.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean",
+      "source_git_blob": "9538b1fc171fa9b135436deb9cc03421b5eb70ac",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenSpecifications.lean",
+      "source_git_blob": "c363f594a5678f2f0d793bd587ea950e83dafca1",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenSpecifications.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean",
+      "source_git_blob": "1065c885887573becde2bab4e13ce83c93dad8f0",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean",
+      "source_git_blob": "516012feb86a864006dac705061ac993b7b88d93",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PoleRemovedSource.lean",
+      "source_git_blob": "fc76ff63214ed42c15e7a8b3c40e487d2279a3bc",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PoleRemovedSource.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TwoThirdsCanonicalMultiplicityBridge.lean",
+      "source_git_blob": "d566794663757fa4413d56a2d43765d53e0858f3",
+      "previous_flags": [
+        "MIT and Apache wording coexist without an explicit upstream/dependency distinction."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TwoThirdsCanonicalMultiplicityBridge.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "anthropic-LICENSE",
+        "anthropic-Statement",
+        "anthropic-FinalMult"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaLogDerivativeZeroExclusion.lean",
+      "source_git_blob": "8c0d136b47fbe115f5a6c188cb3ee6225a1b9753",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaLogDerivativeZeroExclusion.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaCompactSchwartzCutoff.lean",
+      "source_git_blob": "4014b98e611a3b4d4fecfecd6ae5c39a20767a67",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaCompactSchwartzCutoff.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaCompactTruncationLinearityControls.lean",
+      "source_git_blob": "d8dce8b9a1b44be6c13102c61983713e85f61f5e",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaCompactTruncationLinearityControls.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean",
+      "source_git_blob": "976f8e599a1c4cb673ec3d78d36f07ead8244352",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaLambdaSigmaBoundaryTanneryControls.lean",
+      "source_git_blob": "f4145370fb3bd46f46fb96d07d86248ac9be86f4",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaLambdaSigmaBoundaryTanneryControls.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean",
+      "source_git_blob": "6597151d31cfdf5dd94827a9fc2404730367bfab",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [
+        "pnt-Wiener",
+        "pnt-LICENSE"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/OperatorTheory/TwoHeightMoments.lean",
+      "source_git_blob": "8f280a880c83bc4bbe6aacf23498a4b5f8cbf9df",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/OperatorTheory/TwoHeightMoments.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/IntegralCentering.lean",
+      "source_git_blob": "72182f788fcb8eeb96820d98b8064e6f16629c95",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ProbabilityTheoryAndStochasticProcesses/IntegralCentering.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/UnitInterval.lean",
+      "source_git_blob": "6099d5c7944d92498626deace5c4ae84613f1ca7",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ProbabilityTheoryAndStochasticProcesses/UnitInterval.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/Variants.lean",
+      "source_git_blob": "531dc53a5985363b2be1a8ca9ed2783e496761a7",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ProbabilityTheoryAndStochasticProcesses/Variants.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/Vector.lean",
+      "source_git_blob": "da5a10d50af788618bea7e02100745578c59327d",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ProbabilityTheoryAndStochasticProcesses/Vector.lean",
+      "origin_match": "exact local source byte match",
+      "original_source_sha256": "cd315f8cb21b5fd4efdbab04a9b0952409540212c20824e9eaf336360d43c149",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/Affine/Vector.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/VectorNamespaced.lean",
+      "source_git_blob": "f23ce61f8848de0853a45d35af011df66345fb58",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/ProbabilityTheoryAndStochasticProcesses/VectorNamespaced.lean",
+      "origin_match": "namespace-transformation record original_sha256 matches exact upstream source",
+      "original_source_sha256": "cd315f8cb21b5fd4efdbab04a9b0952409540212c20824e9eaf336360d43c149",
+      "file_header_license_literal": "AGPL-3.0",
+      "project_license_observed": "AGPL-3.0",
+      "result": "EXPLICIT_UPSTREAM_VERIFIED",
+      "license_expression": "AGPL-3.0",
+      "reason": "Exact original source digest and upstream AGPL project license support the retained file notice. Repository MIT is not substituted.",
+      "upstream_evidence_keys": [
+        "leancert-source:LeanCert/Engine/Affine/Vector.lean",
+        "leancert-license-69d876d674eb9c31bb07b3c8580d8bfb4eeb746b"
+      ],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/RealFunctions/DyadicBlockSquareMaximal.lean",
+      "source_git_blob": "a77bad9aebc96e90e7dfd6e3fd5754ccdcb158b9",
+      "previous_flags": [
+        "Multiple license identifiers in the opening header; file versus dependency scope is not unambiguously assigned."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/RealFunctions/DyadicBlockSquareMaximal.lean",
+      "external_scope_evidence": "Retained explicit file header and source-local imports; no additional upstream file identity was fabricated.",
+      "result": "RESOLVED_SCOPED",
+      "license_expression": "MIT",
+      "reason": "The header expressly distinguishes MIT local contributions from named external Apache material. Scopes are preserved rather than collapsed into one repository-wide grant.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/RealFunctions/DyadicPartition.lean",
+      "source_git_blob": "0b6cf5114aa8911b3c0c0e7e31b40648bea7143e",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/RealFunctions/DyadicPartition.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean",
+      "source_git_blob": "c57ba80b81383700e3d449df4280e861ad39e437",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    },
+    {
+      "source_path": "GRWTSK/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean",
+      "source_git_blob": "4cece8f40f4d3be69cfbd00882aa096018fea2e8",
+      "previous_flags": [
+        "Opening attribution/license wording is not resolved to a supported explicit license expression."
+      ],
+      "local_source_url": "https://github.com/grwtsk/math/blob/bad86000f4faaba0a0b7b82bec22d98acc0a2569/GRWTSK/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean",
+      "result": "REPOSITORY_DEFAULT",
+      "license_expression": "MIT",
+      "reason": "No evidence reviewed establishes a contrary license for this local file; apply owner-requested repository default. Dependency notices remain separate.",
+      "upstream_evidence_keys": [],
+      "search_scope": "Exact current file header and Git blob, retained theorem provenance/package notices, historical source-location records, and cited pinned upstream files where identity was available. No corpus-wide authorship or legal-rights reconstruction is claimed."
+    }
+  ],
+  "summary": {
+    "EXPLICIT_UPSTREAM_VERIFIED": 35,
+    "REVIEW_REQUIRED": 8,
+    "REPOSITORY_DEFAULT": 37,
+    "RESOLVED_SCOPED": 38
+  }
+}

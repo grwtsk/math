@@ -176,13 +176,42 @@
       "compatibility_path": "docs/adaptations/environments/tao-erdos/UPSTREAM-LICENSE",
       "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
       "scope": "Retained legal text from environment tao-erdos; package location records provenance context, not an exclusive source/publication owner."
+    },
+    {
+      "role": "upstream_license_snapshot",
+      "path": "LICENSES/upstream/leancert/0538f0ff268430c3f1a9cf996d8b9390d8facc87/LICENSE",
+      "sha256": "db616c37360601d034d4745fd0e4d4ba390bf60a31e6db57f0943349c34987a6",
+      "source_url": "https://raw.githubusercontent.com/alerad/leancert/0538f0ff268430c3f1a9cf996d8b9390d8facc87/LICENSE",
+      "scope": "Exact LeanCert project-license snapshot associated with matched source version; specific file notices and conflicts are recorded separately."
+    },
+    {
+      "role": "upstream_license_snapshot",
+      "path": "LICENSES/upstream/leancert/106e8832d72fc89ec252eff22195da5cd6332108/LICENSE",
+      "sha256": "0c7e6b4b82daa8c26fb25396a80b011b2cf7ba1e0a9fd9f201570d264c51772c",
+      "source_url": "https://raw.githubusercontent.com/alerad/leancert/106e8832d72fc89ec252eff22195da5cd6332108/LICENSE",
+      "scope": "Exact LeanCert project-license snapshot associated with matched source version; specific file notices and conflicts are recorded separately."
+    },
+    {
+      "role": "upstream_license_snapshot",
+      "path": "LICENSES/upstream/leancert/4ec1cd33290b53b1768f233deb6c1d6bdb12eb93/LICENSE",
+      "sha256": "b6483eb31d324f7ec37b3207046a1a3fd7c56a1d770a71b30b7a96e502f09d59",
+      "source_url": "https://raw.githubusercontent.com/alerad/leancert/4ec1cd33290b53b1768f233deb6c1d6bdb12eb93/LICENSE",
+      "scope": "Exact LeanCert project-license snapshot associated with matched source version; specific file notices and conflicts are recorded separately."
+    },
+    {
+      "role": "upstream_license_snapshot",
+      "path": "LICENSES/upstream/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LICENSE",
+      "sha256": "0c7e6b4b82daa8c26fb25396a80b011b2cf7ba1e0a9fd9f201570d264c51772c",
+      "source_url": "https://raw.githubusercontent.com/alerad/leancert/69d876d674eb9c31bb07b3c8580d8bfb4eeb746b/LICENSE",
+      "scope": "Exact LeanCert project-license snapshot associated with matched source version; specific file notices and conflicts are recorded separately."
     }
   ],
   "source_mapping": {
     "path": "LICENSES/sources.json",
     "source_file_count": 75431,
-    "uncertain_mapping_count": 118,
+    "uncertain_mapping_count": 8,
     "repository_default": "MIT",
-    "scope": "Source-header evidence plus owner-requested repository default. Uncertain license scope remains unresolved; upstream notices and publication provenance are not replaced."
+    "scope": "Source-header evidence plus owner-requested repository default. Uncertain license scope remains unresolved; upstream notices and publication provenance are not replaced.",
+    "evidence_path": "LICENSES/source-evidence.json"
   }
 }
