@@ -132,7 +132,7 @@ theorem provider_need_not_be_authorized_principal :
     observed := fun _ => True
     valid := fun _ pair => pair.1 = true
   }
-  have consent : AuthorizationWitness policy () := {
+  let consent : AuthorizationWitness policy () := {
     principal := true
     eligible := rfl
     receipt := ⟨(), trivial, rfl⟩
@@ -145,6 +145,7 @@ theorem provider_need_not_be_authorized_principal :
     }
     consent := consent
   }, ?_⟩
+  change false ≠ true
   decide
 
 /-- A retained historical receipt can lose validity while the underlying
