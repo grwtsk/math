@@ -197,6 +197,7 @@ theorem universal_source_path_return (xs : List (A × Bool))
     though its free-group normal form may delete inverse pairs. -/
 @[simp] theorem signedBouquet_path_labels (xs : List (A × Bool)) :
     Path.labels (fun {_ _} (e : A × Bool) => e) (signedBouquetPath xs) = xs := by
+  classical
   exact PositiveWordSeparation.labels_asBouquetPath xs
 
 /-- Combining the actual covering return with original path labels returns
