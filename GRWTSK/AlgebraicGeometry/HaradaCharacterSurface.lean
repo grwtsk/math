@@ -232,7 +232,7 @@ private theorem card_fiber_add_one (z : K) :
   by_cases hz0 : z = 0
   · subst z
     have hzero : ¬ (0 : K) ^ 2 = 1 := by simp
-    simp only [if_pos (rfl : (0 : K) = 0), if_neg hzero]
+    simp only [hzero, if_false, if_true]
     omega
   · by_cases hzsq : z ^ 2 = 1 <;> simp [hz0, hzsq] <;> omega
 
@@ -252,7 +252,7 @@ private theorem sum_sq_one :
     have hp (z : K) :
         (if z ^ 2 = 1 then (1 : ℕ) else 0) =
         (if z = 1 then 1 else 0) + (if z = -1 then 1 else 0) := by
-      rw [sq_one_iff]
+      simp only [sq_one_iff]
       by_cases h1 : z = 1
       · subst z
         simp [hne]
