@@ -104,8 +104,8 @@ theorem half_winding_difference (pair : PrimePair) :
 /-- Return of the selected natural half-winding difference to the actual
 real spherical points of the SAME PrimePair. This is chart displacement,
 not round distance, and does not assert a simultaneous link embedding.
-New declaration: elaboration, kernel replay, axiom audit and independent
-review NOT_RUN; earlier evidence for this file does not cover this addition. -/
+See grwtsk/math#1798 for exact-source compilation status. Separate kernel
+replay, axiom audit and independent review NOT_RUN. -/
 theorem half_winding_difference_realDisplacement (pair : PrimePair) :
     (((projectedWinding pair.q - projectedWinding pair.p) / 2 : ℕ) : ℝ) =
       SphericalPrimeDisplacement.realDisplacement

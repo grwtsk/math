@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical source candidate. Lean elaboration, fresh kernel replay,
-transitive axiom audit, and independent review NOT_RUN. -/
+Mathematical source candidate. See grwtsk/math#1798 for exact-source
+compilation status. Fresh kernel replay, transitive axiom audit, and
+independent review NOT_RUN. -/
 import GRWTSK.ManifoldsAndCellComplexes.PrimeGapHolonomyPatterns
 import Mathlib
 
@@ -228,20 +229,20 @@ sphere equation. On the image, 1+z=2/(1+t²), so x/(1+z)=t. The rational
 formulas are continuous wherever their displayed denominators are nonzero.
 Thus the continuous left inverse on the punctured sphere gives a topological
 embedding, including at t=0 and for negative t. This does not yet formalize
-smoothness, immersion, or a prime-successor graph. All new formal checks:
-NOT_RUN; independent analytical review NOT_RUN.
+smoothness, immersion, or a prime-successor graph. See grwtsk/math#1798 for exact-source compilation
+status. Separate kernel replay, axiom audit, and independent review NOT_RUN.
 -/
 
 abbrev RealSphereCoordinates := ℝ × ℝ × ℝ
 
 /-- The actual real unit two-sphere, in Cartesian coordinates. -/
-def RealSphere := {P : RealSphereCoordinates //
+abbrev RealSphere := {P : RealSphereCoordinates //
   P.1 ^ 2 + P.2.1 ^ 2 + P.2.2 ^ 2 = 1}
 
 /-- Domain on which the stereographic denominator is nonzero. -/
-def SouthChart := {P : RealSphere // 1 + P.val.2.2 ≠ 0}
+abbrev SouthChart := {P : RealSphere // 1 + P.val.2.2 ≠ 0}
 
-def realSphereCoordinates (t : ℝ) : RealSphereCoordinates :=
+noncomputable def realSphereCoordinates (t : ℝ) : RealSphereCoordinates :=
   (2 * t / (1 + t ^ 2), 0, (1 - t ^ 2) / (1 + t ^ 2))
 
 private theorem real_denominator_ne_zero (t : ℝ) : 1 + t ^ 2 ≠ 0 := by
@@ -254,9 +255,9 @@ theorem realSphereCoordinates_on_sphere (t : ℝ) :
   change (2 * t / (1 + t ^ 2)) ^ 2 + (0 : ℝ) ^ 2 +
     ((1 - t ^ 2) / (1 + t ^ 2)) ^ 2 = 1
   field_simp [real_denominator_ne_zero t]
-  <;> ring
+  ring
 
-def realSpherePoint (t : ℝ) : RealSphere :=
+noncomputable def realSpherePoint (t : ℝ) : RealSphere :=
   ⟨realSphereCoordinates t, realSphereCoordinates_on_sphere t⟩
 
 theorem realSpherePoint_away_from_south (t : ℝ) :
@@ -264,15 +265,15 @@ theorem realSpherePoint_away_from_south (t : ℝ) :
   change 1 + (1 - t ^ 2) / (1 + t ^ 2) ≠ 0
   have h : 1 + (1 - t ^ 2) / (1 + t ^ 2) = 2 / (1 + t ^ 2) := by
     field_simp [real_denominator_ne_zero t]
-    <;> ring
+    ring
   rw [h]
   exact div_ne_zero (by norm_num) (real_denominator_ne_zero t)
 
-def realMeridianPoint (t : ℝ) : SouthChart :=
+noncomputable def realMeridianPoint (t : ℝ) : SouthChart :=
   ⟨realSpherePoint t, realSpherePoint_away_from_south t⟩
 
 /-- A scalar meridian coordinate, with its domain restriction explicit. -/
-def realChart (P : SouthChart) : ℝ :=
+noncomputable def realChart (P : SouthChart) : ℝ :=
   P.val.val.1 / (1 + P.val.val.2.2)
 
 @[simp] theorem realChart_realMeridianPoint (t : ℝ) :
@@ -281,7 +282,7 @@ def realChart (P : SouthChart) : ℝ :=
   change 2 * t / (1 + t ^ 2) =
     t * (1 + (1 - t ^ 2) / (1 + t ^ 2))
   field_simp [real_denominator_ne_zero t]
-  <;> ring
+  ring
 
 /-- The other inverse law is restricted to the meridian y=0.
 The scalar coordinate cannot recover points on the rest of S². -/
@@ -293,7 +294,7 @@ theorem realMeridianPoint_realChart (P : SouthChart)
   have hden : 1 + (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2 =
       2 / (1 + P.val.val.2.2) := by
     field_simp [hd]
-    <;> nlinarith [hs]
+    nlinarith [hs]
   apply Subtype.ext
   apply Subtype.ext
   apply Prod.ext
@@ -301,14 +302,13 @@ theorem realMeridianPoint_realChart (P : SouthChart)
       (1 + (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2) = P.val.val.1
     rw [hden]
     field_simp [hd]
-    <;> ring
   · apply Prod.ext
     · exact hy.symm
     · change (1 - (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2) /
         (1 + (P.val.val.1 / (1 + P.val.val.2.2)) ^ 2) = P.val.val.2.2
       rw [hden]
       field_simp [hd]
-      <;> nlinarith [hs]
+      nlinarith [hs]
 
 /-- The rational source is embedded coordinatewise, with no relabelling. -/
 theorem realSphereCoordinates_rat (t : ℚ) :
@@ -347,7 +347,7 @@ theorem realSpherePoint_isEmbedding :
   (_root_.Topology.IsEmbedding.subtypeVal.comp realMeridianPoint_isEmbedding)
 
 /-- Signed chart displacement; this is not round geodesic distance. -/
-def realDisplacement (P Q : SouthChart) : ℝ := realChart Q - realChart P
+noncomputable def realDisplacement (P Q : SouthChart) : ℝ := realChart Q - realChart P
 
 @[simp] theorem realDisplacement_meridian (s t : ℝ) :
     realDisplacement (realMeridianPoint s) (realMeridianPoint t) = t - s := by
@@ -364,7 +364,8 @@ theorem realDisplacement_eq_rational (p q : ℕ) :
     realDisplacement (realMeridianPoint p) (realMeridianPoint q) =
       (displacement (primePoint p) (primePoint q) : ℝ) := by
   rw [realDisplacement_meridian, displacement_prime]
-  push_cast <;> rfl
+  push_cast
+  rfl
 
 /-! ### A faithfully labelled offset/degree packet -/
 
