@@ -147,7 +147,6 @@ def phaseConj (u : Phase) : Phase where
   re := u.re
   im := -u.im
   unit := by
-    dsimp
     nlinarith [u.unit]
 
 /-- Complex multiplication, with its unit-modulus proof paid in full. -/
@@ -155,7 +154,6 @@ def phaseMul (u v : Phase) : Phase where
   re := u.re * v.re - u.im * v.im
   im := u.re * v.im + u.im * v.re
   unit := by
-    dsimp
     calc
       (u.re * v.re - u.im * v.im) ^ 2 +
           (u.re * v.im + u.im * v.re) ^ 2 =
@@ -212,17 +210,8 @@ theorem phaseConj_invol (u : Phase) :
 phase, proving the fundamental lossless decoder algebra. -/
 theorem phaseConj_left_cancel (u v : Phase) :
     phaseMul (phaseConj u) (phaseMul u v) = v := by
-  apply phase_eq
-  · change u.re * (u.re * v.re - u.im * v.im) +
-      u.im * (u.re * v.im + u.im * v.re) = v.re
-    calc
-      _ = (u.re ^ 2 + u.im ^ 2) * v.re := by ring
-      _ = v.re := by rw [u.unit]; ring
-  · change u.re * (u.re * v.im + u.im * v.re) -
-      u.im * (u.re * v.re - u.im * v.im) = v.im
-    calc
-      _ = (u.re ^ 2 + u.im ^ 2) * v.im := by ring
-      _ = v.im := by rw [u.unit]; ring
+  rw [← phaseMul_assoc, phaseMul_comm (phaseConj u) u, phaseMul_conj,
+    phaseMul_comm phaseOne v, phaseMul_one]
 
 theorem phaseMul_conj_left_cancel (u v : Phase) :
     phaseMul u (phaseMul (phaseConj u) v) = v := by
