@@ -181,7 +181,7 @@ theorem walk_transport_eq_trace
       change C.edgeTransport e * C.transport tail =
         C.edgeTransport e *
           pathTransport (taggedWeight C) (encodePath (walkToPath tail))
-      rw [ih]
+      exact congrArg (fun transport => C.edgeTransport e * transport) ih
 
 /-- A closed typed walk induces a genuinely valid closed trace with the
 same conjugacy-invariant observer readout. -/

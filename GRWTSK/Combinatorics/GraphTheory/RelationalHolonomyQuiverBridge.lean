@@ -116,10 +116,12 @@ theorem holonomy_eq_connection_transport (C : Connection E G)
 /-- The two existing gauge laws agree after inversion of the frame. -/
 theorem gauge_convention_transport (C : Connection E G)
     (frame : V → G) {a b : V} (p : Path E a b) :
-    holonomy (gaugeEdge (fun x => (frame x)⁻¹) C.edgeTransport) p =
+    holonomy (fun {x y} e =>
+      gaugeEdge (fun z => (frame z)⁻¹) C.edgeTransport (a := x) (b := y) e) p =
       (C.gauge frame).transport (toWalk p) := by
   calc
-    holonomy (gaugeEdge (fun x => (frame x)⁻¹) C.edgeTransport) p =
+    holonomy (fun {x y} e =>
+      gaugeEdge (fun z => (frame z)⁻¹) C.edgeTransport (a := x) (b := y) e) p =
         (frame a)⁻¹ * holonomy C.edgeTransport p * frame b := by
           rw [holonomy_gauge]
           simp
@@ -341,13 +343,13 @@ theorem Path.eq_of_trace_eq {a b : V}
     (p : Path (fun x y : V => x ⟶ y) a a) (sheet : Bool) :
     Path.trace (SpinPath.erase (SpinPath.retryLoop p sheet)) =
       Path.trace p := by
-  rw [SpinPath.erase_retryLoop]
+  exact congrArg Path.trace (SpinPath.erase_retryLoop p sheet)
 
 /-- The old-copy lift also has exact chronological source return. -/
 @[simp] theorem Path.trace_oldLift_return {a b : V}
     (p : Path (fun x y : V => x ⟶ y) a b) :
     Path.trace (SpinPath.erase (SpinPath.oldLift p)) = Path.trace p := by
-  rw [SpinPath.erase_oldLift]
+  exact congrArg Path.trace (SpinPath.erase_oldLift p)
 
 /-- All finite retries return the original trace, not just its basepoint. -/
 @[simp] theorem Path.trace_unwindPending_pending {a : V}

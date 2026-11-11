@@ -115,7 +115,7 @@ theorem valid_path_gauge_telescope (weight : TotalEdge V → G)
               frame (finish edge.2.1 tail)) =
           (frame root)⁻¹ * (weight edge * pathTransport weight tail) *
             frame (finish edge.2.1 tail)
-      rw [hsource]
+      subst root
       group
 
 /-- A scalar readout depends only on the conjugacy class of a loop product. -/
@@ -231,20 +231,21 @@ theorem NetworkFlux.off_network_zero (flux : NetworkFlux V)
 
 /-- Even a graph without arrows admits the stationary redistribution.
 This boundary case shows conservation alone does not imply movement. -/
-noncomputable def NetworkFlux.stationary : NetworkFlux V where
-  weight a b := if a = b then 1 else 0
-  nonneg := by
-    intro a b
-    split_ifs <;> norm_num
-  row_sum := by
-    intro a
-    classical
-    simp
-  supported := by
-    intro a b h
-    left
-    by_contra hne
-    simp [hne] at h
+noncomputable def NetworkFlux.stationary : NetworkFlux V := by
+  classical
+  exact
+    { weight := fun a b => if a = b then 1 else 0
+      nonneg := by
+        intro a b
+        split_ifs <;> norm_num
+      row_sum := by
+        intro a
+        simp
+      supported := by
+        intro a b h
+        left
+        by_contra hne
+        simp [hne] at h }
 
 end FiniteDispersion
 
