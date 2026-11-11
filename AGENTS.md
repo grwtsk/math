@@ -22,24 +22,40 @@ This repository is the canonical pure mathematical source for GRWTSK.
 ## Working in the checkout and publishing changes
 
 - Read any more-specific `AGENTS.md` before editing its subtree, including
-  [docs/AGENTS.md](docs/AGENTS.md) for documentation changes.
-- Work in the existing checkout on `main` by default. Create a branch or worktree
-  only when explicitly requested or direct work on `main` is technically
-  impossible. If another branch is checked out, switch safely; preserve and
-  report any uncommitted or conflicting work that prevents the switch.
-- Inspect the current HEAD, working tree and index before editing and committing.
-  Concurrent changes are intentional stability data: preserve unrelated work,
-  report exact collision paths and states, and never reset, discard, overwrite
-  or hide changes to avoid a collision. Stage and commit only the task's changes.
-- Build each commit on the current complete repository tree, never a partial
-  overlay. Before advancing `main`, review the diff and use an expected-head
-  lease; refresh and reconcile if HEAD changes. Push completed commits to the
-  configured upstream with routine non-force pushes. Force-pushes, remote branch
-  deletion and branch-protection changes require an explicit request.
-- For authorized formalization, publish the source directly on `main`. A patch,
-  archive, unattached blob or detached delta tree is not final delivery. Temporary
-  Git objects may help assemble and inspect a commit; confirm that the resulting
-  commit is reachable from `main` before reporting publication.
+  [docs/AGENTS.md](docs/AGENTS.md) for documentation changes. Coordinate through
+  issues. [CONTRIBUTING.md](CONTRIBUTING.md) describes the supported publication
+  routes; it does not grant authority beyond the user's task and connection.
+- Work on `main` by default. A local checkout and the authenticated GitHub
+  plugin/API are equally supported publication routes. Do not require a clone,
+  shell, local Git identity override, Lean installation or Noe runtime merely
+  to author and publish an authorized source candidate or documentation change.
+  Discover the current action schemas and use only the capabilities actually
+  available; a product name alone establishes neither read-only nor write access.
+- With a checkout, inspect HEAD, working tree and index, switch branches safely,
+  and stage only the task's changes. Without a checkout, inspect the live `main`
+  commit and complete tree and read each target file at that pinned revision.
+  Do not claim to have inspected an unavailable local working tree.
+- Preserve concurrent changes. Never reset, discard, overwrite or hide unrelated
+  work to avoid a collision. Refresh and reconcile changed paths when the head
+  moves. Create a branch/worktree only when requested or direct publication to
+  `main` is technically impossible; honor server-side protections and checks.
+- Prefer one complete-tree commit for related changes: create blobs, create a
+  tree based on the complete current tree, and create a commit with the reviewed
+  head as parent. Review the exact diff, then update `main` with `force=false`
+  and the observed expected-head lease when supported. After rejection, reread
+  and reconcile; never retry with force. A pre-read alone is not an atomic lease.
+- For an independent single-file change, a supported Contents API operation is
+  also valid: read the whole file, supply its current blob SHA for replacement,
+  serialize writes, and verify the resulting commit/content. This is a per-file
+  guard, not a branch-wide or multi-file transaction. Use the complete-tree route
+  for changes requiring all-or-nothing consistency; see CONTRIBUTING.md for
+  capability fallbacks and conflict handling.
+- Publish authorized source directly on `main` when permitted. A patch, archive,
+  unattached blob or detached commit is not final delivery. Read back the branch
+  and verify that the published commit is its head or a confirmed ancestor;
+  record commit, paths and actual evidence in the issue and final report.
+  Force-pushes, remote branch deletion, permission changes and changes to branch
+  protections or required checks require separate explicit authorization.
 
 ## Source layout and dependencies
 
@@ -47,7 +63,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
   dependencies. Place definitions and theorems by mathematical subject, not by
   orchestration workflow.
 - Preserve existing subject placement and namespaces. Resolve current files from
-  the checked-out source tree; historical namespaces need not match paths.
+  the pinned complete source tree; historical namespaces need not match paths.
 - Store provider-derived Lean source in the canonical `GRWTSK/` subject tree.
   Use relative per-file links from isolated packages under
   `docs/adaptations/environments/`; keep their dependency pins and build targets
@@ -73,6 +89,12 @@ This repository is the canonical pure mathematical source for GRWTSK.
   Source publication is not mathematical acceptance. Keep each unperformed formal
   check explicitly `NOT_RUN` until actual source-bound evidence exists. File or
   update exact-source verification issues without dispatching unauthorized execution.
+- Unavailable local tools, independent review or optional verification services
+  do not block publication of a clearly identified source candidate. Record the
+  missing checks and any known failures at the exact source revision; never
+  convert a failure into `NOT_RUN` or promote an unchecked candidate to an
+  accepted proof. Required server-side checks remain binding. Do not change
+  root imports or dependency pins merely to make publication appear verified.
 - Treat elaboration/typechecking as valuable observation of the formal
   **neighborhood**: hypotheses, types, dependencies and permitted steps. It may
   expose previously unrecognized consequences, but throughput alone does not
@@ -104,13 +126,17 @@ This repository is the canonical pure mathematical source for GRWTSK.
   formalization. Preserve many-to-many paper/declaration correspondence and
   distinguish direct formalization, local consequences and conditional interfaces.
 
-- Develop and check adaptations locally before bringing them into this repository.
-  Publish each adapted theorem with its own Markdown provenance record beside
-  the maintained theorem source. This theorem-local record is required even
-  though repository-level documentation remains intentionally sparse.
+- Develop adaptations against the pinned source and dependencies. Perform
+  available, authorized checks; when execution is unavailable, publish only at
+  the actual candidate status with exact-source verification obligations.
+  A local checkout is not mandatory. Publish each adapted theorem with its own
+  Markdown provenance record beside the maintained theorem source. This record
+  remains required even when repository-level documentation is sparse.
 - The [repository catalog](docs/catalogue.json) follows the complete tracked Git
   tree. Keep file coverage separate from the coverage of theorem provenance;
   absent publication correspondence is unknown, not evidence of no publication.
+  Optional catalogue/navigation regeneration is not a publication prerequisite;
+  never regenerate from a partial tree or claim omitted coverage is current.
 - Organize adaptation provenance by actual repository source path and declaration,
   not by user, provider or publication. Record cross-publication correspondence
   as many-to-many references; preserve distinct source editions and evidence scopes.
@@ -145,24 +171,40 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 - For automation covered by `advance-browser-chats`, `chatgpt-message`,
   `noe-math-chat-bridge` or `noe-proof-automation`, discover and read the applicable
-  canonical skill through `~/.agents/skills` (legacy `~/.codex/skills` links also
-  resolve to Noe). Do not maintain independent copies. If canonical access is
-  unavailable, report it and stop dependent automation. Skill availability grants
-  no additional execution or messaging authority.
+  current canonical skill in `grwtsk/noeaaeue` on `main`, preferably through the
+  verified `~/.agents/skills` checkout (legacy `~/.codex/skills` links may resolve
+  there), otherwise through authorized GitHub reads with a recorded revision.
+  Read required referenced resources; do not maintain independent copies.
+  If canonical access is unavailable, report it and stop dependent automation.
+  Skill availability grants no additional execution or messaging authority.
+- Ordinary authorized GitHub source edits, commits, issue coordination and
+  publication readback do not require invoking Noe. An unavailable Noe skill
+  blocks its dependent execution, not unrelated manual source authoring or
+  connector publication. Do not relabel a covered execution task to evade its
+  skill, authorization or evidence requirements. Record ordinary Git publication
+  evidence in the coordinating issue; operational proof-execution artifacts
+  remain in Noe. This policy does not authorize changes to another repository.
 
 ## Privacy and local attribution
 
-- Use exactly `grwtsk contributors` for local bylines, copyright notices and
-  metadata. Keep individual personal names out of local attribution.
-- For local automation commits on behalf of this checkout owner, use
-  `grwtsk <176085483+grwtsk@users.noreply.github.com>` for author and committer.
-  Use this identity for repository actions performed on behalf of the contributor,
-  including commits created by automation. Set the local Git identity accordingly.
-  Preserve other contributors' own identities unless the owner explicitly
-  authorizes an attribution rewrite.
-  Keep personal names, personal email addresses, private account handles and
-  personal device identifiers out of maintained content. Preserve public
-  researchers' bylines, upstream authorship and license obligations.
+- Use exactly `grwtsk contributors` for local source bylines, copyright notices
+  and authored document metadata. This collective source attribution is separate
+  from the authenticated Git commit author/committer and GitHub actor.
+- For authorized GitHub plugin/API publication, use the logged-in account and
+  accept the author/committer metadata selected by that connection. No custom
+  identity override or additional per-commit identity exception is required.
+  Do not fabricate an identity, switch accounts, request credentials, or block
+  publication merely because the action has no author/committer parameters.
+  Identify the actor by public login in receipts; do not copy private profile
+  fields into source, documentation, issues or reports.
+- When local Git configuration is available for work on behalf of the owner,
+  prefer `grwtsk <176085483+grwtsk@users.noreply.github.com>` for author and
+  committer. This local preference is not a connector publication requirement.
+  Preserve other contributors' identities and historical commits; do not rewrite
+  attribution without explicit authorization. Keep personal names, personal
+  email addresses, private account handles, device identifiers and secrets out
+  of maintained content. Preserve public researchers' bylines, upstream
+  authorship and license obligations.
 - Use provider names only for source identity, licensing, reproducibility or a
   documented contribution; never advertise a vendor.
 - Privacy redactions affect historical source displays, encoded recipes and
