@@ -1,0 +1,21 @@
+# Source context: analytic cluster Hermite return
+
+Attribution: grwtsk contributors. Coordination: [math#1809](https://github.com/grwtsk/math/issues/1809), with consumers from #1806, #1805, #1807 and #1800.
+
+Shared research edition, exact PDF digest, analytic source pins, primary factorization argument and limitations are in the [complex-chart context](../../../FunctionsOfAComplexVariable/FiniteComplexDivisorCharts.provenance/context.md). This module is a conditional integration of that local analytic consequence with existing canonical source; it is not a new Hermite theorem or an arithmetic realization.
+
+Canonical base inspected: `bd54902a7de572ca1d0405ff94192814f28050d4`; Lean `v4.34.1`; Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`.
+
+The complete RP-OC-06 [ZeroDivisorHermiteReturn](https://github.com/grwtsk/math/blob/bd54902a7de572ca1d0405ff94192814f28050d4/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroDivisorHermiteReturn.lean), blob `3db00cc8c884acfe5ce8db3d8d79ceaf05fcfac0`, supplies divisorMatrix_nonnegative_iff, source_reality_of_hermite, and allReal_iff_dyadic_lower_bounds. Its finite support, positive weights, conjugation closure and sufficiently large matrix are retained. Its general Hermite proof is a source candidate, not a verified imported receipt. The old arbitrary-weight-to-analytic-order premise is now supplied by an exact source chart, whose arithmetic construction is still unresolved.
+
+The concurrent Program-6 addition at `bd54902a7de572ca1d0405ff94192814f28050d4`, [ZeroDivisorIntervalCertificates](https://github.com/grwtsk/math/blob/bd54902a7de572ca1d0405ff94192814f28050d4/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroDivisorIntervalCertificates.lean), blob `614a25716ee441c96b43221040893d2bb14895e6`, supplies allReal_of_checked_zeroTolerance and source_nonreal_of_negativeCheck. The new chart adapters attach actual analytic orders to their conclusions. Matrix enclosures and accepted-check hypotheses are retained; no certificate producer or arithmetic zero is claimed. This commit was preserved in the publication base, not overwritten.
+
+RP-OC-10 [WeilDenseCertificateReduction](https://github.com/grwtsk/math/blob/bd54902a7de572ca1d0405ff94192814f28050d4/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilDenseCertificateReduction.lean), blob `e84a5fded7bb33672f1c80d3e729bb28b2aee83e`, owns PrimitiveDirichletSource, its actual lFunction, SatisfiesGRH and PrimitiveDirichletGRH. These definitions are reused, not replaced. RP-OC-06 owns the arithmeticCoordinate/spectralCoordinate inverse with s=1/2+I*z. No value-equivariance or entire completion is asserted for the raw source.
+
+Proof: transfer the chart support and analytic orders into the existing positive divisor. Its full Hermite matrix is nonnegative exactly when its support is real. Exact source identification transfers that conclusion back. Apply this to each covered arithmetic zero and every primitive source. Arbitrarily sharp dyadic bounds imply nonnegativity for every vector, including singular repeated-root matrices, but their universal quantifiers remain unsupplied.
+
+Counterexample boundaries: zero weights cannot count roots; absent conjugate support invalidates the general finite criterion; undersized matrices can miss nonreal pairs; finite sampled contours cannot establish the chart identity or coverage; finite vector tests do not replace all-vector signs. These controls are already present in the imported programs. The all-window/arithmetic hypotheses are not consequences of source publication.
+
+Reproduction target (NOT_RUN): `lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticClusterHermiteReturn.lean`, after building its exact dependencies. No root import, toolchain, manifest, workflow, or earlier claim status is changed. Elaboration, fresh kernel replay, transitive axiom audit, independent analytical review, CI and arithmetic certificate production: **NOT_RUN**. Novelty UNASSESSED; no novelty claim. Source return is conditional; no GRH proof is asserted.
+
+Authored Lean source SHA-256: `146054cd5f3fc1fd5391454915b52a042ce5832dd0976c8685783a878f3952e3`. Git blob: `270bb4212f05d563c72c975dba618e8638e7a3e0`. The publication commit is recorded in issue #1809; these byte identities bind the statements independently of later branch movement.
