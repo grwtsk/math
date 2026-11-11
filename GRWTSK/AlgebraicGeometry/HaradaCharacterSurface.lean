@@ -37,6 +37,12 @@ universe u
 def equation {R : Type u} [CommRing R] (x y z : R) : R :=
   z ^ 3 - x * y * z ^ 2 + (x ^ 2 + y ^ 2 - 1) * z - x * y
 
+/-- Product form of the affine equation, valid before specialization to a field. -/
+theorem equation_factorization {R : Type u} [CommRing R] (x y z : R) :
+    equation x y z = (z * x - y) * (x - z * y) - z * (1 - z ^ 2) := by
+  unfold equation
+  ring
+
 /-- The fiber over the third coordinate. -/
 abbrev Fiber {K : Type u} [Field K] (z : K) :=
   {p : K × K // equation p.1 p.2 z = 0}
@@ -49,10 +55,7 @@ private abbrev MulFiber {K : Type u} [Field K] (c : K) :=
 
 private theorem equation_eq_zero_iff {K : Type u} [Field K] (x y z : K) :
     equation x y z = 0 ↔ (z * x - y) * (x - z * y) = z * (1 - z ^ 2) := by
-  have h : equation x y z = (z * x - y) * (x - z * y) - z * (1 - z ^ 2) := by
-    unfold equation
-    ring
-  rw [h, sub_eq_zero]
+  rw [equation_factorization, sub_eq_zero]
 
 private def forward {K : Type u} [Field K] (z : K) (p : K × K) : K × K :=
   (z * p.1 - p.2, p.1 - z * p.2)
