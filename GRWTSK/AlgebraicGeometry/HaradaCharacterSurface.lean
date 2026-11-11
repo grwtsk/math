@@ -256,7 +256,10 @@ private theorem sum_sq_one :
       by_cases h1 : z = 1
       · subst z
         simp [hne]
-      · by_cases hm : z = -1 <;> simp [h1, hm]
+      · by_cases hm : z = -1
+        · subst z
+          simp [Ne.symm hne]
+        · simp [h1, hm]
     calc
       _ = ∑ z : K, ((if z = 1 then (1 : ℕ) else 0) +
           (if z = -1 then 1 else 0)) :=
