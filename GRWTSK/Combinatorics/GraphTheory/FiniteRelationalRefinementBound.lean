@@ -65,6 +65,10 @@ section ObservationClassCount
 variable {P : Type u} [Fintype P]
 variable {Obs : Nat → Type w}
 
+noncomputable local instance (N : Nat) :
+    DecidableEq ((i : Fin (N + 1)) → Obs i.val) :=
+  Classical.decEq _
+
 /-- Number of realized dependent observation signatures through stage `N`. -/
 noncomputable def observationClassCount
     (readout : (n : Nat) → P → Obs n) (N : Nat) : Nat :=
@@ -227,10 +231,10 @@ theorem strictRefinementStages_card_le_growth
             (strictRefinementStages count H).card + 1 ≤
               count (H + 1) - count 0 := by
           omega
-        simpa [strictRefinementStages, hstrict] using hbound
+        simpa [strictRefinementStages, Finset.range_add_one, Finset.filter_insert, hstrict] using hbound
       · have heq : count (H + 1) = count H :=
           Nat.le_antisymm (Nat.le_of_not_gt hstrict) hstep
-        simpa [strictRefinementStages, hstrict, heq] using ih
+        simpa [strictRefinementStages, Finset.range_add_one, Finset.filter_insert, hstrict, heq] using ih
 
 end StrictRefinementCount
 
@@ -255,6 +259,7 @@ theorem strictObservationRefinementStages_card_le
     (observationClassCount_mono readout) H
   have hupper := observationClassCount_le_card readout H
   have hmono := observationClassCount_mono readout (Nat.zero_le H)
+  unfold strictObservationRefinementStages
   exact by omega
 
 /-- On a nonempty inventory there are at most `m-1` strict informative

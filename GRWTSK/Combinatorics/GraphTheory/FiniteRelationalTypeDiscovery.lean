@@ -53,7 +53,8 @@ theorem witness_le_horizon [Fintype P] (witness : P → P → Nat) (p q : P) :
     witness p q ≤ separationHorizon witness := by
   classical
   unfold separationHorizon
-  exact Finset.le_sup (Finset.mem_univ (p, q))
+  exact Finset.le_sup (f := fun pq : P × P => witness pq.1 pq.2)
+    (Finset.mem_univ (p, q))
 
 /-- Different source types cannot have equal accumulated signatures once the
     chosen separator for each pair is included in the observation horizon. -/
@@ -134,7 +135,6 @@ theorem prefixClassifier_has_source
   unfold prefixClassifier at hk
   split_ifs at hk with h
   · exact ⟨Classical.choose h, Classical.choose_spec h, Option.some.inj hk⟩
-  · cases hk
 
 /-- For an arbitrary (possibly infinite) source inventory, an
 unseen signature receives `none` exactly when it has no real source
@@ -362,8 +362,9 @@ theorem finite_classifier_iff_eventual_separation [Fintype P]
         ∀ p q, typeOf p ≠ typeOf q →
           readout (witness p q) p ≠ readout (witness p q) q := by
       intro p q hpq
-      simpa [witness, hpq] using
-        (Classical.choose_spec (hseparates p q hpq))
+      dsimp only [witness]
+      rw [dite_eq_left hpq]
+      exact Classical.choose_spec (hseparates p q hpq)
     exact finite_type_discovery typeOf readout witness hdisting
 
 end ExactClassificationCriterion
@@ -579,9 +580,10 @@ theorem scanPrefix_correct (typeOf : P → Kind)
           (observationPrefix readout N p) k hscan
       exact congrArg some (htype.symm.trans (hconstant q p hq))
 
-/-- Executable once finite source enumeration and full-signature equality
-are actually decidable. The type label itself needs no equality test. -/
-def finiteSourceClassifier [Fintype P] [DecidableEq P]
+/-- The finite-inventory wrapper uses Mathlib's noncomputable list enumeration.
+With an explicit list, `scanPrefix` remains executable and needs no equality
+test on type labels. -/
+noncomputable def finiteSourceClassifier [Fintype P] [DecidableEq P]
     (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n) (N : Nat)
     [DecidableEq ((i : Fin (N + 1)) → Obs i.val)] :
     ((i : Fin (N + 1)) → Obs i.val) → Option Kind :=

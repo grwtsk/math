@@ -55,6 +55,8 @@ namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolon
 
 universe u v w x
 
+noncomputable local instance {α : Type*} : DecidableEq α := Classical.decEq α
+
 section FiniteFiberRefinement
 
 variable {P : Type u} [Fintype P]
