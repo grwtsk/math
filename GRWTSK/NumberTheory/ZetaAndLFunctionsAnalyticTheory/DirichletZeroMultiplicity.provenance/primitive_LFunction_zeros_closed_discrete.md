@@ -1,0 +1,19 @@
+# primitive_LFunction_zeros_closed_discrete
+
+Local attribution: grwtsk contributors. 2026-11-11. SOURCE_PROOF_CANDIDATE.
+Declaration: `GRWTSK.NumberTheory.WeilNegativeWitness.primitive_LFunction_zeros_closed_discrete` in [DirichletZeroMultiplicity.lean](../DirichletZeroMultiplicity.lean).
+
+Statement and hypotheses: For every primitive character of positive level, the full zero set of its actual LFunction is closed and discrete in C.
+
+Primary source/API: Huanyu Zheng, [Mathlib/NumberTheory/LSeries/ZetaZeros.lean](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/LSeries/ZetaZeros.lean), `isClosed_riemannZetaZeros; isDiscrete_riemannZetaZeros; IsCompact.inter_riemannZetaZeros_finite`; revision `d13f23b723b8a846827a245b89c10fc7d3f11612`, blob `a061262f567eb33cac8ef5f52e5212246254e708`. Upstream Apache-2.0.
+
+Additional suppliers: Ashvni Narayanan, Moritz Firsching and Michael Stoll, [Mathlib/NumberTheory/DirichletCharacter/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/DirichletCharacter/Basic.lean), `DirichletCharacter.IsPrimitive; DirichletCharacter.conductor_one`; revision `d13f23b723b8a846827a245b89c10fc7d3f11612`, blob `4569ebb8e61f683a9c89877f0cda4d3add4d766d`. Upstream Apache-2.0.
+David Loeffler and Michael Stoll, [Mathlib/NumberTheory/LSeries/DirichletContinuation.lean](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/LSeries/DirichletContinuation.lean), `differentiableAt_LFunction; differentiable_LFunction; LFunction_modOne_eq`; revision `d13f23b723b8a846827a245b89c10fc7d3f11612`. Upstream Apache-2.0.
+Michael Stoll and David Loeffler, [Mathlib/NumberTheory/LSeries/Nonvanishing.lean](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/LSeries/Nonvanishing.lean), `DirichletCharacter.LFunction_ne_zero_of_one_le_re`; revision `d13f23b723b8a846827a245b89c10fc7d3f11612`, blob `789e0aae6e9378c8f5c8a7a07a905830e20b5433`. Upstream Apache-2.0.
+Vincent Beffara and Stefan Kebekus, [Mathlib/Analysis/Analytic/Order.lean](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Analysis/Analytic/Order.lean), `analyticOrderNatAt; Nat.cast_analyticOrderNatAt; AnalyticAt.analyticOrderAt_ne_zero; AnalyticAt.analyticOrderAt_ne_top; AnalyticOnNhd.analyticOrderAt_ne_top_of_isPreconnected; AnalyticOnNhd.preimage_zero_mem_codiscrete`; revision `d13f23b723b8a846827a245b89c10fc7d3f11612`, blob `5dd01cf403100219545c2c7c5c81cacfbf634460`. Upstream Apache-2.0.
+
+Argument and consumer: Split on chi=1. For the principal primitive case, conductor_one and IsPrimitive give N=1; rewrite literally to zeta and use the pole-aware zeta zero theorem. Otherwise entire analyticity plus nonvanishing at 2 makes the zero complement codiscrete.
+
+Classification: local consequence or source-indexed construction, not a direct paper formalization and not a novelty assertion. Source comparison and the complete argument are in [README.md](README.md). No new frontier claim ID; novelty UNASSESSED. Maintained source is MIT; upstream licenses and bylines remain with their sources.
+
+Pins: inspected math main `fce314b591c1c453dc0a432004a62b0add7921f1`; Lean `leanprover/lean4:v4.34.1`; Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. The enclosing commit binds this record and source. Elaboration/build, fresh kernel replay, transitive axiom audit, independent review and arithmetic certification NOT_RUN. Imported candidates retain their status. Proposed axiom query (NOT executed): `#print axioms GRWTSK.NumberTheory.WeilNegativeWitness.primitive_LFunction_zeros_closed_discrete`.
