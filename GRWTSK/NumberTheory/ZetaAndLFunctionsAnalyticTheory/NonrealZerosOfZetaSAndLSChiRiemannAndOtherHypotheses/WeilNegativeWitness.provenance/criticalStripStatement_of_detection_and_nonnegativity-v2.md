@@ -1,0 +1,8 @@
+# criticalStripStatement_of_detection_and_nonnegativity — domain migration v2
+
+Local attribution: grwtsk contributors. 2026-11-11. SOURCE_PROOF_CANDIDATE.
+Declaration: `GRWTSK.NumberTheory.WeilNegativeWitness.criticalStripStatement_of_detection_and_nonnegativity`. Source: [maintained module](../WeilNegativeWitness.lean).
+Corrected source SHA-256 `1bf8c0ec477b51b174cc116b8a09131d8b7cd0ea84ae8d02e6311006cf135722`, blob `abd27c24bfac7422baa4c2482ae71e684b558ff0`. Previous source remains at `c14f9934bbe83e7ff5706f6a730947fac003a412`, blob `35111c956a8c68047199e1fb2aab9ca24848004d`.
+Proof body unchanged: a supplied negative witness contradicts separately supplied nonnegativity for the same test. Both hypotheses now quantify over the intended smooth compact domain through the explicit canonical Admissible correction. Neither hypothesis is proved by this implication; the analytically continued Dirichlet LFunction critical-strip target is unchanged, including the separate conductor-one identification.
+Correction source: pinned Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, `Analysis/Calculus/ContDiff/Defs.lean`, order notation; Sébastien Gouëzel, Apache-2.0. [Versioned migration](../../WeilArchimedeanDomain.provenance/MIGRATION-v2.md). Original proof provenance remains in its predecessor record; local attribution grwtsk contributors, MIT.
+This supersedes the old full-smooth-domain claim, not historical evidence. Detection, full arithmetic identification and positivity remain open. Known semantic failure retained. Elaboration, kernel replay, axiom audit, downstream compatibility and independent review NOT_RUN; novelty UNASSESSED.

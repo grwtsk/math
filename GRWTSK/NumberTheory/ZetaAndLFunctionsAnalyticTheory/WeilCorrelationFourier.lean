@@ -48,6 +48,7 @@ and independent analytical review: NOT_RUN.
 
 set_option autoImplicit false
 noncomputable section
+open scoped ContDiff
 
 open MeasureTheory
 open scoped ComplexConjugate
@@ -227,9 +228,11 @@ theorem zeta_pole_correlation (f : ℝ → ℂ) (A : ℝ)
   simpa only [hp, hm] using correlation_two_oriented_moments f A hf hs (-(1 / 2 : ℝ))
 
 /-- The actual compact-smooth test domain supplies L1, L2, every inner integral,
-and the complete complex-frequency identity. No new admissibility predicate. -/
+and the complete complex-frequency identity. No new admissibility predicate.
+Domain migration v2 (2026-11-11): the smooth order is scoped `∞`, not `⊤`.
+The adjacent declaration-local v2 record supersedes the old domain description. -/
 theorem smooth_fourier_correlation (f : ℝ → ℂ) (A : ℝ)
-    (hf : ContDiff ℝ ⊤ f) (hc : HasCompactSupport f)
+    (hf : ContDiff ℝ ∞ f) (hc : HasCompactSupport f)
     (hs : ∀ t, t ∉ Set.Icc (-A) A → f t = 0) (z : ℂ) :
     (∀ r : ℝ, Integrable (fun t : ℝ => conj (f t) * f (t + r)) volume) ∧
     Integrable (fun r : ℝ => correlation f r *

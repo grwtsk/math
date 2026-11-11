@@ -44,6 +44,7 @@ independent review NOT_RUN. Novelty UNASSESSED; no novelty claim.
 
 set_option autoImplicit false
 noncomputable section
+open scoped ContDiff
 
 open MeasureTheory
 
@@ -237,9 +238,11 @@ theorem collided_error_sum_ge_two (f : ℝ → ℂ) (A : ℝ)
 
 /-- Application on the actual compact-smooth test domain used by RP-OC-02.
 Its existing `WeilNegativeWitness.Admissible` predicate supplies `hf` and `hcompact`.
-This supplies the necessary cost, not the interpolation or the arithmetic identity. -/
+This supplies the necessary cost, not the interpolation or the arithmetic identity.
+Domain migration v2 (2026-11-11): the smooth order is scoped `∞`, not `⊤`.
+The adjacent declaration-local v2 record supersedes the old domain description. -/
 theorem smooth_l1_lower_bound (f : ℝ → ℂ) (A : ℝ) (hA : 0 < A)
-    (hf : ContDiff ℝ ⊤ f) (hcompact : HasCompactSupport f)
+    (hf : ContDiff ℝ ∞ f) (hcompact : HasCompactSupport f)
     (hsupported : ∀ t, t ∉ Set.Icc (-A) A → f t = 0) (xi eta ea eb : ℝ)
     (heta : eta ≠ 0) (hsum : ea + eb < 2)
     (ha : ‖(∫ t : ℝ, f t *

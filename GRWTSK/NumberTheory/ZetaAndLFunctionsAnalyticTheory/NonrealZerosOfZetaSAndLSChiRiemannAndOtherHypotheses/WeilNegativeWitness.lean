@@ -49,6 +49,7 @@ review, and executable arithmetic certificates: NOT_RUN. No novelty is claimed.
 
 set_option autoImplicit false
 noncomputable section
+open scoped ContDiff
 
 namespace GRWTSK.NumberTheory.WeilNegativeWitness
 
@@ -194,8 +195,10 @@ theorem compactification_re_le_neg (full gaussian : ℂ) (K m Delta b M S E : �
     hgaussian hcutoff
   linarith
 
-/-- The actual compact smooth test domain, not a vector of freely assignable evaluations. -/
-def Admissible (f : ℝ → ℂ) : Prop := ContDiff ℝ ⊤ f ∧ HasCompactSupport f
+/-- The actual compact smooth test domain, not freely assignable evaluations.
+Domain migration v2 (2026-11-11): use the scoped smooth order `∞`, not analytic
+order `⊤`. See `WeilNegativeWitness.provenance/Admissible-v2.md`. -/
+def Admissible (f : ℝ → ℂ) : Prop := ContDiff ℝ ∞ f ∧ HasCompactSupport f
 
 /-- Precisely the critical-strip assertion for the analytically continued source. -/
 def criticalStripStatement {N : ℕ} [NeZero N] (chi : DirichletCharacter ℂ N) : Prop :=
