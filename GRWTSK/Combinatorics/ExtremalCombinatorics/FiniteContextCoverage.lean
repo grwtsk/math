@@ -357,6 +357,7 @@ theorem toy_aggregate_optimal_but_unrepresented :
       ({3} : Finset (Fin 4)) ∧
     satisfiesRequired toyExposure ({false} : Finset Bool)
       ({3} : Finset (Fin 4)) := by
+  unfold satisfiesRequired
   decide
 
 /-- Distinct sources can cover the same context. Common coverage is not

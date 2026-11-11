@@ -71,7 +71,13 @@ inductive LinkKind where
   | textualTranslation
   | independentDiscoveryHypothesis
   | interpretiveAnalogy
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype LinkKind :=
+  Fintype.ofList
+    [.documentedUse, .textualTranslation, .independentDiscoveryHypothesis,
+     .interpretiveAnalogy]
+    (by intro x; cases x <;> simp)
 
 /-- Both kinds of documentary contact are admitted; neither by itself
     proves mental adoption or downstream causal influence. -/
@@ -251,7 +257,12 @@ structure InterpretiveRights where
 inductive TwoWorks where
   | earlier
   | later
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype TwoWorks :=
+  Fintype.ofList
+    [.earlier, .later]
+    (by intro x; cases x <;> simp)
 
 def toyArchive (authenticated : Bool) : Archive TwoWorks Unit where
   origin := fun _ => .earlier
@@ -274,7 +285,7 @@ def toySimilarity (_ _ : TwoWorks) : Bool := true
 /-- A genuine witness proof is present in this model, independently of dates. -/
 theorem toy_authenticated_path :
     Nonempty (Chain (toyArchive true) .earlier .later) := by
-  refine ⟨Chain.cons () rfl rfl rfl trivial (Chain.empty .later)⟩
+  refine ⟨Chain.cons () rfl rfl rfl trivial (Chain.empty TwoWorks.later)⟩
 
 /-- With no verified witness, identical mathematics is not enough. -/
 theorem toy_unchecked_no_path :
@@ -305,7 +316,7 @@ theorem translation_is_documentary_but_not_documented_use :
     Nonempty (Chain toyTranslation .earlier .later) ∧
     toyTranslation.kind () ≠ LinkKind.documentedUse := by
   constructor
-  · refine ⟨Chain.cons () rfl rfl rfl trivial (Chain.empty .later)⟩
+  · refine ⟨Chain.cons () rfl rfl rfl trivial (Chain.empty TwoWorks.later)⟩
   · decide
 
 theorem analogy_not_documentary :

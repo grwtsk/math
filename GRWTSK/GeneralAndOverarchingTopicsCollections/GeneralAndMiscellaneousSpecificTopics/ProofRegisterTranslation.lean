@@ -137,7 +137,12 @@ inductive Register where
   | symbolic
   | squareDissection
   | verbalBalancing
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype Register :=
+  Fintype.ofList
+    [.symbolic, .squareDissection, .verbalBalancing]
+    (by intro x; cases x <;> simp)
 
 /-- The mathematical claim presented in a selected register. -/
 def Register.holds : Register → ℝ → ℝ → ℝ → Prop

@@ -303,8 +303,8 @@ def behavioralSetoid (M : UnarySystem State Action)
     (observe : State → Label) : Setoid State where
   r := BehavioralEq M observe
   iseqv := ⟨(fun s => behavioral_refl M observe s),
-    (fun _ _ h => behavioral_symm M observe h),
-    (fun _ _ _ h h' => behavioral_trans M observe h h')⟩
+    (fun {_ _} h => behavioral_symm M observe h),
+    (fun {_ _ _} h h' => behavioral_trans M observe h h')⟩
 
 /-- The operation descends to observation-equivalence classes. -/
 def quotientStep (M : UnarySystem State Action)

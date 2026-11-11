@@ -98,7 +98,13 @@ inductive IntellectualSetting where
   | earlyModernFrench
   | classicalIndianInference
   | earlyChineseMohist
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype IntellectualSetting :=
+  Fintype.ofList
+    [.lateAntiqueNorthAfricanLatin, .medievalLatinChristian, .ethiopianGeez,
+     .earlyModernFrench, .classicalIndianInference, .earlyChineseMohist]
+    (by intro x; cases x <;> simp)
 
 /-- Modes of giving reasons are proposed readings of textual practice. They
     are not historical theorems or clinical personality categories. -/
@@ -110,7 +116,14 @@ inductive JustificationPractice where
   | algebraToGeometry
   | pramanaAndDebate
   | analogyAndKindDistinction
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype JustificationPractice :=
+  Fintype.ofList
+    [.firsthandIntellectualUnderstanding, .faithSeekingUnderstanding,
+     .lebbunaCriticalInquiry, .methodicalDoubt, .algebraToGeometry, .pramanaAndDebate,
+     .analogyAndKindDistinction]
+    (by intro x; cases x <;> simp)
 
 /-- Subjects of comparison include two collective/textual traditions, avoiding
     invented single authors for anonymous or disputed sources. -/
@@ -121,7 +134,13 @@ inductive Case where
   | descartes
   | indianInference
   | laterMohistCanons
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype Case :=
+  Fintype.ofList
+    [.augustine, .anselm, .hatataAttributedZeraYacob, .descartes, .indianInference,
+     .laterMohistCanons]
+    (by intro x; cases x <;> simp)
 
 /-- Attribution confidence concerns a work, not a person's worth. -/
 inductive AuthorshipStatus where

@@ -56,7 +56,14 @@ inductive CognitiveMode where
   | structuralClassificatory
   | computationalOptimizing
   | probabilisticPathwise
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype CognitiveMode :=
+  Fintype.ofList
+    [.dynamicGeometric, .symbolicCompositional, .transformationalAlgorithmic,
+     .rigorousDeductive, .geometricLimiting, .structuralClassificatory,
+     .computationalOptimizing, .probabilisticPathwise]
+    (by intro x; cases x <;> simp)
 
 /-- Mathematical methods and cognitive readings have distinct types. -/
 inductive IntegrationTechnique where
@@ -70,7 +77,14 @@ inductive IntegrationTechnique where
   | lebesgueIntegration
   | gaussianQuadrature
   | stochasticItoIntegration
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype IntegrationTechnique :=
+  Fintype.ofList
+    [.antidifferentiation, .substitution, .integrationByParts, .integratingFactors,
+     .integrationBySeries, .contourIntegration, .riemannIntegration, .lebesgueIntegration,
+     .gaussianQuadrature, .stochasticItoIntegration]
+    (by intro x; cases x <;> simp)
 
 /-- Observable linguistic or notational markers requiring source-specific coding. -/
 inductive LinguisticCue where
@@ -84,7 +98,15 @@ inductive LinguisticCue where
   | stochasticPathLanguage
   | firstPersonPositioning
   | institutionalPositioning
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype LinguisticCue :=
+  Fintype.ofList
+    [.motionMetaphor, .symbolicComposition, .transformationInstruction,
+     .conditionOrQualification, .partitionAndLimit, .classificationByValue,
+     .approximationAndError, .stochasticPathLanguage, .firstPersonPositioning,
+     .institutionalPositioning]
+    (by intro x; cases x <;> simp)
 
 /-- An actual interview is admissible only when such an interview exists. -/
 inductive EvidenceChannel where
@@ -178,7 +200,12 @@ inductive HistoricalExemplar where
   | lebesgue
   | gauss
   | ito
-  deriving DecidableEq, Repr, Fintype
+  deriving DecidableEq, Repr
+
+instance : Fintype HistoricalExemplar :=
+  Fintype.ofList
+    [.newton, .leibniz, .euler, .cauchy, .riemann, .lebesgue, .gauss, .ito]
+    (by intro x; cases x <;> simp)
 
 /-- Attributed examples identify techniques, not ethnicity or psychology. -/
 def illustrativeTechnique : HistoricalExemplar → IntegrationTechnique
@@ -216,7 +243,6 @@ theorem sourceClassifier_has_source
   unfold sourceClassifier at hk
   split_ifs at hk with h
   · exact ⟨Classical.choose h, Classical.choose_spec h, Option.some.inj hk⟩
-  · cases hk
 
 /-- Unrepresented observation signatures remain explicitly unknown. -/
 theorem sourceClassifier_none_iff_unseen
