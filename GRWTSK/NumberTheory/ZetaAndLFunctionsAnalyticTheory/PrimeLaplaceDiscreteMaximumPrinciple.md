@@ -221,7 +221,100 @@ Thus the weighted l1 condition holds unconditionally. Equations (16)--(18) give 
 
 For any candidate universal upper budget C, (12) is the more useful sharper consequence. For arbitrary error budgets, (17)--(18) retain the exact positive kernel and signed cancellation instead of replacing the entire Weil form by an absolute L2 operator norm.
 
-## 6. Hostile checks, originality and open arithmetic premise
+## PLMP-6: exact removal of a local prime-power tower
+
+This theorem is about the actual von Mangoldt source, not a synthetic spectral model. For a rational prime p, put b_p=log p, a_p=sqrt(p), and isolate all powers of that prime:
+\[
+S_p(t)=(\log p)\sum_{k=1}^{\infty}p^{-k/2}h(k\log p-t).
+\tag{20}
+\]
+For each fixed t the sum is actually finite by the compact support of h. Let T_b F(t)=F(t+b) and define the real finite-shift operator
+\[
+\mathcal A_p=(p+1)I-\sqrt p(T_{b_p}+T_{-b_p}).
+\tag{21}
+\]
+
+**Theorem (exact local arithmetic cancellation).** One has, for EVERY real t,
+\[
+\boxed{
+\mathcal A_p S_p(t)
+=(\log p)\bigl[\sqrt p\,h(t-\log p)-h(t)\bigr].
+}
+\tag{22}
+\]
+In particular, for t>1+log p, the entire prime-power tower of p contributes ZERO to the filtered source.
+
+**Proof.** Reindex the geometric sums with a_p=sqrt(p):
+\[
+T_{b_p}S_p
+=a_p^{-1}S_p+a_p^{-1}(\log p)h(-t),
+\]
+\[
+T_{-b_p}S_p
+=a_p S_p-(\log p)h(b_p-t).
+\]
+Substitute into (21). All terms involving S_p cancel because \(p+1=a_p^2+1\). What remains is
+\[
+(\log p)\bigl[a_p h(b_p-t)-h(-t)\bigr].
+\]
+Since h is even this is (22). Its support lies in the union of [-1,1] and [b_p-1,b_p+1], so it vanishes for t>b_p+1. No endpoint limit or omitted prime power is used. QED.
+
+For p=2 the exact identity reads
+\[
+3S_2(t)-\sqrt2\bigl[S_2(t+\log2)+S_2(t-\log2)\bigr]
+=(\log2)\bigl[\sqrt2 h(t-\log2)-h(t)\bigr].
+\tag{23}
+\]
+This was also checked using a finite triangular test profile; the mathematical proof above is independent of that non-certified numerical check.
+
+**Finite-place extension.** Let F be a NONEMPTY finite set of distinct rational primes, write
+\[
+\mathcal A_F=\prod_{p\in F}\mathcal A_p,\qquad
+B_F=1+\sum_{p\in F}\log p .
+\tag{24}
+\]
+All shift operators commute. Since the finite source \(S=\sum_\ell S_\ell\) is locally finite in t, for every t>B_F,
+\[
+\boxed{
+\mathcal A_F S(t)=
+\mathcal A_F\left(\sum_{\ell\notin F}S_\ell(t)\right).
+}
+\tag{25}
+\]
+Indeed for each p in F the factor A_p sends S_p to the compact function (22); the remaining A_q factors increase its upper support endpoint by at most sum_(q in F\{p}) log q. Thus the whole contribution from each removed prime tower is exactly zero for t>B_F. It is NOT claimed that the remaining infinitely many prime towers vanish.
+
+The original main pole function M e^(t/2) is annihilated by every A_p, so A_F S=A_F D for nonempty F. This is a genuine finite-place arithmetic identity with the complete original prime-power weights, not a replacement sign-positive Weil form.
+
+## PLMP-7: finite-place deletion does not weaken the RH-strength sign obligation
+
+**Theorem.** For every fixed nonempty finite set F of rational primes,
+\[
+\boxed{
+\mathrm{RH}\iff
+\exists C\in\mathbb R\;\exists T<\infty:
+\quad \mathcal A_F S(t)\le C\quad\text{for all }t\ge T .
+}
+\tag{26}
+\]
+Here S is the actual source in (2), so the condition concerns only prime-power towers OUTSIDE F once t>B_F by (25).
+
+**Arithmetic proof of the nontrivial implication.** Enumerate F={p_1,...,p_m}. Because A_F kills M e^(t/2), the assumed eventual bound is a bound on A_(p1)...A_(pm)D. Every finite translation polynomial applied to D preserves the unconditional o(e^(t/2)) PNT growth. Let
+\(U_1=\mathcal A_{p_2}\cdots\mathcal A_{p_m}D\)
+(with empty product the identity). Its A_(p1)-image is bounded above. Apply PLMP-3 on the lattice with spacing log(p_1), and compactness of the initial interval, to infer that U_1 is eventually bounded above. Repeat with p_2, then p_3, until D itself is eventually bounded above. PLMP-2 then proves RH. All constants may depend on the FIXED finite set F and the initially chosen bound, not on the variable t. No finite numerical check or sign conclusion from an auxiliary model is used.
+
+Conversely RH makes D bounded by the full source-exact Weil formula and absolute convergence of its zero sum, so every finite stencil A_F D=A_F S is bounded. QED.
+
+**Independent Euler-product check.** The bilateral Laplace transform of A_F S in Re w>1/2 is
+\[
+-H(w)\frac{\zeta'(w+1/2)}{\zeta(w+1/2)}
+\prod_{p\in F}\Bigl[(1+p)-\sqrt p(p^w+p^{-w})\Bigr].
+\tag{27}
+\]
+Each factor equals \((\sqrt p-p^w)(\sqrt p-p^{-w})\) and vanishes only when Re w=+1/2 or -1/2. Therefore it cannot erase any nontrivial zero pole of zeta lying STRICTLY inside the critical strip. This agrees with the arithmetic maximum-principle proof; it does not establish boundedness.
+
+**Research boundary:** Removing finitely many Euler towers is exact, but the infinite tail of remaining primes is the decisive unresolved arithmetic source. Trying to remove infinitely many primes would introduce a non-finite operator and require new all-scale convergence and source-return theorems, so the finite-place proof cannot be extrapolated. A bounded A_F S is already RH-strength, not a weaker proof of finitely many exceptions. The two-scale existential filters W2S with possible interior-strip roots remain a distinct weaker target.
+
+## 8. Hostile checks, originality and open arithmetic premise
 
 1. A PNT-like positive synthetic source does NOT automatically satisfy (13). Let \(S_*(t)=Me^{t/2}+e^{t/3}\cos(\pi t/\log2)\), which is eventually positive and satisfies \(S_*(t)=Me^{t/2}+o(e^{t/2})\). Its three-shift stencil equals
 \[
