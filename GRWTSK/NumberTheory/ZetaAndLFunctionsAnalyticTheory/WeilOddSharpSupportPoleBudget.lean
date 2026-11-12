@@ -68,7 +68,7 @@ Cauchy--Schwarz are standard.  No theorem-level novelty claim is made.
 set_option autoImplicit false
 noncomputable section
 open MeasureTheory Set Filter
-open scoped BigOperators Interval
+open scoped BigOperators Interval Topology
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddSharpSupportPoleBudget
 
@@ -184,7 +184,7 @@ theorem hasSharpOddPoleBudget_of_source
       (poleWindow_odd T) hgo (poleWindow_support T) hgs
       (fun n hn => (Nat.not_lt_zero n hn).elim)
     rw [poleWindow_pair_eq_moment T hgs] at h
-    simpa only [a, b, zero_add] using h
+    simpa only [a, b, zero_add, Nat.add_comm 1] using h
   have hcs := sq_tsum_mul_le_tsum_sq_mul_tsum_sq
     a b haSum.summable hbSum.summable habSum.summable
   rw [habSum.tsum_eq, haSum.tsum_eq, hbSum.tsum_eq,
@@ -224,7 +224,7 @@ theorem cofinal_scalar_floor_of_supported_odd
 `HasSharpOddPoleBudget`.  It remains a high-complement theorem only. -/
 theorem high_sector_coercive_of_source_support
     (T β : ℝ) (hT : 0 < T) {N : ℕ}
-    (hcut : highCutoff T β 4 (sharpPoleCoreFloor T) ≤ N)
+    (hcut : OddHighComplement.highCutoff T β 4 (sharpPoleCoreFloor T) ≤ N)
     {g : ℝ → ℝ}
     (hg : MemLp g 2 volume) (hgm : Measurable g)
     (hgo : Function.Odd g)
