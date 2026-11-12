@@ -84,7 +84,7 @@ Then h is real, even, nonnegative, smooth, supported in [-1,1], and has integral
 
 $$K(t)=\sum_{\rho\in Z}m_\rho\Phi(z_\rho)^2e^{z_\rho t}.\tag{6}$$
 
-The coefficient is the complex square, NOT `|Phi(z_rho)|^2`. Both coincide only when the argument lies on the imaginary axis, because phi is real and even. The coefficients in (6) are absolutely summable, with every fixed polynomial weight in |gamma_rho|.
+The coefficient is the complex square, NOT `|Phi(z_rho)|^2`. On the imaginary axis these agree, because phi is real and even; no such replacement is made off that axis. The coefficients in (6) are absolutely summable, with every fixed polynomial weight in |gamma_rho|.
 
 ## 3. WFDG-2: exact separated-bump prime identity
 
