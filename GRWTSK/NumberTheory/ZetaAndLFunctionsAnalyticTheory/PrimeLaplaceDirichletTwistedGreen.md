@@ -196,6 +196,85 @@ The **modulus** condition is essential for this complex-phase criterion; PLMP's 
 
 **Quantifiers:** A fixed-character bound proves the zero statement for that character only; primitive Dirichlet GRH requires it for **every** primitive `chi`, explicitly including `q=1`, and across **all** sufficiently large `t`. No finite list, fixed-window large-conductor estimate, or finite prime deletion supplies it.
 
+## PTG-5: an exact fixed-character return from all prime powers to ordinary primes
+
+This consequence **consumes**, rather than discards, the newly proved written
+arithmetic estimate [WeilPrimeSquareTail.md](WeilPrimeSquareTail.md), WPSQ-1.
+Fix a primitive character `chi` of conductor `q>=1` and the same
+mass-one even `h`. Separate the actual full source (PTG.11) as
+\[
+S_\chi(t)=P_\chi(t)+B_\chi(t),\qquad
+P_\chi(t)=\sum_{p\ {\rm prime}}\frac{\log p}{\sqrt p}\chi(p)h(\log p-t),
+\]
+\[
+B_\chi(t)=\sum_{k\ge2}\sum_{p\ {\rm prime}}\frac{\log p}{p^{k/2}}
+\chi(p)^k h(k\log p-t). \tag{PTG.18}
+\]
+
+Both sums are locally finite in `t`; every power `k>=2` is retained
+in the **signed, original complex source**. Define
+`\epsilon_{\chi,2}=1` if `chi^2` is the principal character modulo
+`q`, and zero otherwise. WPSQ-1's unconditional **fixed-modulus**
+Stieltjes/PNT argument gives
+\[
+B_\chi(t)=\frac{\epsilon_{\chi,2}}2+o_{q,\chi,h}(1)
+\quad(t\to+\infty). \tag{PTG.19}
+\]
+The formula includes conductor-one zeta (limit `1/2`), primitive
+quadratic characters (limit `1/2`), and nonreal quartic characters
+whose squares remain nonprincipal (limit `0`). The finitely many
+ramified primes have their actual zero character values. No conductor
+uniformity is claimed.
+
+**Theorem (exact asymptotic stencil correction).** For any fixed prime
+`p\nmid q`, write `a=sqrt(p)`, `lambda=chi(p)` as in (PTG.1).
+Then
+\[
+\boxed{\mathcal A_{p,\chi}S_\chi(t)
+-\mathcal A_{p,\chi}P_\chi(t)
+=\frac{\epsilon_{\chi,2}}2
+\bigl(p+1-2\sqrt p\,\Re\chi(p)\bigr)
++o_{q,\chi,h,p}(1).} \tag{PTG.20}
+\]
+
+**Proof.** The left side is identically
+`\mathcal A_{p,\chi}B_\chi(t)` without any change of arithmetic
+operator. Apply (PTG.2) to (PTG.19). Each of
+`B_\chi(t),B_\chi(t+b),B_\chi(t-b)` has the same fixed-character
+limit, so the limit of their original phase-weighted linear
+combination is
+`\epsilon_{\chi,2}(p+1-a(\overline\lambda+\lambda))/2`.
+This is the stated constant, with a genuine complex real part and
+without replacing any prime-power term by an absolute square. QED.
+
+For each **fixed** `chi,p`, (PTG.20) proves that an eventual modulus
+bound on `\mathcal A_{p,\chi}S_\chi` is **equivalent** to one on
+`\mathcal A_{p,\chi}P_\chi`: the exact difference is eventually
+bounded and even convergent. In particular,
+\[
+\bigl[\exists T,C:\ \forall t\ge T,\
+|\mathcal A_{p,\chi}P_\chi(t)|\le C\bigr]
+\quad\Longrightarrow\quad {\rm GRH}(\chi) \tag{PTG.21}
+\]
+by PTG-4. For `q=1`, the original real one-sided bound
+`\mathcal A_{p,1}P_1(t)\le C` likewise suffices for zeta RH,
+because (PTG.20) makes the full-source real stencil eventually
+upper-bounded and PLMP-4 applies. The required ordinary-prime
+stencil bound is still **UNPROVED**. The reduction does not establish
+a bounded `P_\chi`, positivity of a Weil form, or a uniform
+`q`-dependent estimate.
+
+**Arithmetic consumer and comparison.** This result removes the
+*logical* need to estimate higher powers anew when proving a
+fixed-character stencil bound: their complete contribution has a
+proved limit in WPSQ-1 and the precise stencil correction above.
+It does not remove their actual terms from the complete Weil
+explicit formula. WPPC's finite window Toeplitz comparison concerns
+a different (physical `L²`) prime-power coupling and is unchanged.
+The first remaining all-height task is the **ordinary-prime**
+complex cancellation in (PTG.21), together with the original full
+Weil source identity and universal character quantifiers.
+
 ## Hostile checks, literature and unresolved arithmetic consumer
 
 1. **Apparent deletion is reversible.** (PTG.9) reconstructs all removed prime powers through unbounded shifts as `t\to+\infty`. Compact boundary support does not mean the full arithmetic source is eventually zero.
@@ -206,6 +285,6 @@ The **modulus** condition is essential for this complex-phase criterion; PLMP's 
 6. **Exact symbolic falsification.** The independently owned `grwtsk/hs` script cited above uses exact `Q(sqrt(2),i)` arithmetic on the lattice-sampled even profile `h[-1]=h[1]=1/4,h[0]=1/2`. It executed 144 local filter identities, 144 tower recoveries, and 432 finite boundary identities for phases `1,-1,i,-i`, also refusing optimization with disabled assertions. It does **not** prove any all-real-`t` theorem, characterize a canonical smooth bump, or establish an all-prime-power cutoff estimate. Independent mathematical review is **UNASSESSED**.
 7. **Source comparison and novelty.** PLMP-3--7 provide the real-shift and half-line Green calculations. The later `WeilPrimeSquareTail.md` (WPSQ-1--6) analyzes each fixed prime-power exponent by Stieltjes/PNT asymptotics, while `WeilPrimePowerCluster.md` (WPPC) retains all same-prime power correlations on finite Weil test fibers with a Kac--Murdock--Szego matrix. Neither directly supplies the bilateral translation-inverse (PTG.5)--(PTG.13) for a single complex Dirichlet prime tower; conversely the new identities give no WPPC finite-window sign bound or WPSQ quantitative higher-power asymptotic. They are complementary source computations, not separate proofs of GRH. The present bilateral twisted kernel is elementary discrete convolution algebra, not asserted novel. WFDG-1 provides the special nonvanishing transform (a genuine additional input). The classical fixed-modulus PNT in arithmetic progressions and logarithmic-derivative identities are standard; see Kedlaya, [*Error bounds for primes in arithmetic progressions*, §10.1](https://kskedlaya.org/ant/chap-errorbounds2.html). No individual paper-to-Lean adaptation or new Lean theorem is claimed.
 
-**First unresolved premise:** supply (PTG.15), or its finite-product version, as an unconditional bound on **the actual full phase-weighted prime-power source** for every relevant primitive character and all required heights, without assuming GRH. Alternatively, prove a genuinely weaker arithmetic estimate with a source-exact return to the original Weil criterion. The elementary local cancellation and inverse do **not** discharge this premise. Their exact return cannot be silently combined with a positive auxiliary operator to claim RH/GRH.
+**First unresolved premise:** use the proved fixed-character higher-prime-power return (PTG.20) to prove an **all-real-height ordinary-prime stencil bound** (PTG.21) for every primitive character, retaining the complex phases and explicitly including conductor-one zeta. This would discharge the full-source boundedness condition (PTG.15) only after WPSQ's original exact correction. Alternatively, supply a weaker arithmetic estimate with a proved return to the original pole-inclusive Weil criterion. Neither local tower cancellation nor its Green inversion controls the remaining infinite ordinary-prime source, establishes the needed uniform character quantifiers, or proves RH/GRH.
 
 **Execution boundary:** Written analysis only, plus the separately described exact symbolic finite checks. Lean elaboration, kernel replay, axiom audit, full arithmetic Weil-source verification, independent review: **NOT_RUN/UNASSESSED**. The current canonical `noe-proof-automation/SKILL.md` in `grwtsk/noeaaeue/main` returned HTTP 404; no covered proof automation was invoked. Source publication and hashes are not kernel proof evidence.
