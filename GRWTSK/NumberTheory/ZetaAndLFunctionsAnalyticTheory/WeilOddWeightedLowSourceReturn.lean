@@ -131,7 +131,7 @@ theorem finiteSine_sineCoefficient_zero_of_ge {M : ℕ}
   apply Finset.sum_eq_zero
   intro i _
   have hne : n + 1 ≠ i.val + 1 := by omega
-  simp [hne]
+  exact if_neg hne
 
 /-- The retained literal coordinate is exactly the supplied real
 coefficient: the source basis is orthonormal, not an arbitrary
@@ -148,7 +148,8 @@ theorem finiteSine_sineCoefficient_eq_coordinate {M : ℕ}
       exact Fin.ext (by omega)
     · rintro rfl
       rfl
-  simp [heq]
+  simp only [heq]
+  simp
 
 /-- The previous whole-source weighted series on a literal finite
 synthesis has no remote terms. Its conversion to the finite head is
@@ -181,7 +182,7 @@ theorem finiteSine_weightedCore_lower {M : ℕ}
   have hodd : Function.Odd f := finiteSine_odd T x
   have hsupport :
       ∀ᵐ t : ℝ, t ∉ Icc (-T) T → f t = 0 :=
-    Eventually.of_forall (fun t ht => finiteSine_eq_zero_off_window T x ht)
+    Filter.Eventually.of_forall (fun t ht => finiteSine_eq_zero_off_window T x ht)
   have hgamma :
       IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r f) (Ioi 0) := by
     simpa only [zeroShiftEnergy, zeroShiftSquare] using
@@ -217,12 +218,12 @@ theorem finiteSine_poleMoment_eq_poleFunctional {M : ℕ}
     oddPoleMoment (finiteSine T x) = poleFunctional T M x := by
   have hsupport :
       ∀ᵐ t : ℝ, t ∉ Icc (-T) T → finiteSine T x t = 0 :=
-    Eventually.of_forall (fun t ht => finiteSine_eq_zero_off_window T x ht)
+    Filter.Eventually.of_forall (fun t ht => finiteSine_eq_zero_off_window T x ht)
   have hint (i : Fin M) :
       Integrable (fun t : ℝ => x i *
         (poleWindow T t * zeroExtendedSine T (i.val + 1) t)) :=
     ((poleWindow_memLp T).integrable_mul
-      (memLp_zeroExtendedSine T (i.val + 1))).const_mul (x i)
+      (OddShiftEnergy.memLp_zeroExtendedSine T (i.val + 1))).const_mul (x i)
   calc
     oddPoleMoment (finiteSine T x) =
         ∫ t : ℝ, poleWindow T t * finiteSine T x t :=
@@ -241,13 +242,13 @@ theorem finiteSine_poleMoment_eq_poleFunctional {M : ℕ}
             zeroExtendedSine T (i.val + 1) t) := by
       rw [integral_finsetSum _ (fun i _ => hint i)]
       simp only [integral_const_mul]
-    _ = ∑ i : Fin M, x i * sinePoleCoefficient T (i.val + 1) := by
+    _ = ∑ i : Fin M, x i * OddOutputTrace.sinePoleCoefficient T (i.val + 1) := by
       apply Finset.sum_congr rfl
       intro i _
       have hm :
           (∫ t : ℝ, poleWindow T t *
             zeroExtendedSine T (i.val + 1) t) =
-            sinePoleCoefficient T (i.val + 1) := by
+            OddOutputTrace.sinePoleCoefficient T (i.val + 1) := by
         calc
           _ = sineCoefficient T (poleWindow T) (i.val + 1) := by
             unfold sineCoefficient
@@ -259,7 +260,7 @@ theorem finiteSine_poleMoment_eq_poleFunctional {M : ℕ}
       rw [hm]
     _ = poleFunctional T M x := by
       rw [poleFunctional_apply]
-      unfold Matrix.dotProduct
+      unfold dotProduct
       apply Finset.sum_congr rfl
       intro i _
       rw [← OddPoleMoment.sinhMomentRow_eq_sinePoleCoefficient

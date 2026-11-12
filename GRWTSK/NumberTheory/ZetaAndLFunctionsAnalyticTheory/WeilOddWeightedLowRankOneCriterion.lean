@@ -127,7 +127,7 @@ theorem poleFunctional_eq_sum_sourcePoleRow {M : ℕ}
     (T : ℝ) (x : Fin M → ℝ) :
     poleFunctional T M x = ∑ i : Fin M, sourcePoleRow T i * x i := by
   rw [poleFunctional_apply]
-  unfold Matrix.dotProduct sourcePoleRow
+  unfold dotProduct sourcePoleRow
   rfl
 
 /-- Finite weighted Cauchy--Schwarz with no lower bound on the smallest
@@ -143,7 +143,6 @@ private theorem weighted_cauchy_fin {M : ℕ}
     have hsqrt : Real.sqrt (w i) ≠ 0 := ne_of_gt (Real.sqrt_pos.2 (hw i))
     dsimp [u, v]
     field_simp [hsqrt]
-    ring
   have hu (i : Fin M) : (u i)^2 = w i * (x i)^2 := by
     dsimp [u]
     rw [mul_pow, Real.sq_sqrt (hw i).le]
@@ -177,7 +176,7 @@ finite diagonal-minus-rank-one reference. -/
 theorem weightedLow_reference_nonneg_of_price {M : ℕ}
     (T : ℝ) (hT : 0 < T) (beta : ℝ)
     (hweight : ∀ i : Fin M, 0 < sourceLowWeight T beta i)
-    (hprice : weightedPolePrice T beta ≤ 1)
+    (hprice : weightedPolePrice (M := M) T beta ≤ 1)
     (x : Fin M → ℝ) :
     0 ≤ finiteWeightedLowHead T beta x -
       2 * (poleFunctional T M x)^2 := by
@@ -208,8 +207,8 @@ rank-one threshold.  This is the hostile equality direction of the test. -/
 theorem weightedLow_reference_at_response {M : ℕ}
     (T : ℝ) (hT : 0 < T) (beta : ℝ)
     (hweight : ∀ i : Fin M, 0 < sourceLowWeight T beta i) :
-    finiteWeightedLowHead T beta (weightedPoleResponse T beta) -
-        2 * (poleFunctional T M (weightedPoleResponse T beta))^2 =
+    finiteWeightedLowHead T beta (weightedPoleResponse (M := M) T beta) -
+        2 * (poleFunctional T M (weightedPoleResponse (M := M) T beta))^2 =
       (∑ i : Fin M,
         (sourcePoleRow T i)^2 / sourceLowWeight T beta i) -
       2 * (∑ i : Fin M,
@@ -218,23 +217,21 @@ theorem weightedLow_reference_at_response {M : ℕ}
     poleFunctional_eq_sum_sourcePoleRow T]
   have henergy :
       (∑ i : Fin M, sourceLowWeight T beta i *
-        (weightedPoleResponse T beta i)^2) =
+        (weightedPoleResponse (M := M) T beta i)^2) =
       ∑ i : Fin M,
         (sourcePoleRow T i)^2 / sourceLowWeight T beta i := by
     apply Finset.sum_congr rfl
     intro i _
     unfold weightedPoleResponse
     field_simp [(hweight i).ne']
-    ring
   have hpole :
-      (∑ i : Fin M, sourcePoleRow T i * weightedPoleResponse T beta i) =
+      (∑ i : Fin M, sourcePoleRow T i * weightedPoleResponse (M := M) T beta i) =
       ∑ i : Fin M,
         (sourcePoleRow T i)^2 / sourceLowWeight T beta i := by
     apply Finset.sum_congr rfl
     intro i _
     unfold weightedPoleResponse
     field_simp [(hweight i).ne']
-    ring
   rw [henergy, hpole]
 
 /-- Sharp finite criterion: under strictly positive source weights, the
@@ -246,10 +243,10 @@ theorem weightedLow_reference_nonnegative_iff_price {M : ℕ}
     (∀ x : Fin M → ℝ,
       0 ≤ finiteWeightedLowHead T beta x -
         2 * (poleFunctional T M x)^2) ↔
-      weightedPolePrice T beta ≤ 1 := by
+      weightedPolePrice (M := M) T beta ≤ 1 := by
   constructor
   · intro hall
-    have href := hall (weightedPoleResponse T beta)
+    have href := hall (weightedPoleResponse (M := M) T beta)
     rw [weightedLow_reference_at_response T hT beta hweight] at href
     let S : ℝ := ∑ i : Fin M,
       (sourcePoleRow T i)^2 / sourceLowWeight T beta i
@@ -275,9 +272,9 @@ non-strict scalar certificate. -/
 theorem weightedLow_reference_response_null_of_price_eq_one {M : ℕ}
     (T : ℝ) (hT : 0 < T) (beta : ℝ)
     (hweight : ∀ i : Fin M, 0 < sourceLowWeight T beta i)
-    (hprice : weightedPolePrice T beta = 1) :
-    finiteWeightedLowHead T beta (weightedPoleResponse T beta) -
-      2 * (poleFunctional T M (weightedPoleResponse T beta))^2 = 0 := by
+    (hprice : weightedPolePrice (M := M) T beta = 1) :
+    finiteWeightedLowHead T beta (weightedPoleResponse (M := M) T beta) -
+      2 * (poleFunctional T M (weightedPoleResponse (M := M) T beta))^2 = 0 := by
   rw [weightedLow_reference_at_response T hT beta hweight]
   unfold weightedPolePrice at hprice
   nlinarith
@@ -288,7 +285,7 @@ sine class, with no separate universal-reference premise. -/
 theorem finiteSine_nonneg_of_weightedPolePrice {M : ℕ}
     (T : ℝ) (hT : 0 < T) (beta : ℝ)
     (hweight : ∀ i : Fin M, 0 < sourceLowWeight T beta i)
-    (hprice : weightedPolePrice T beta ≤ 1)
+    (hprice : weightedPolePrice (M := M) T beta ≤ 1)
     (x : Fin M → ℝ) :
     0 ≤ shiftedOddWeilEnergy T beta (finiteSine T x) :=
   (weightedLow_reference_nonneg_of_price
