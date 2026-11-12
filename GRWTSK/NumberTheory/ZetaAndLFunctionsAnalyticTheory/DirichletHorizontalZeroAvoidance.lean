@@ -157,7 +157,7 @@ theorem exists_height_separated_from_absolute_ordinates
   have hTup : T < (n : ℝ) + 3 := by linarith [hT.2]
   have hcard : (S.card : ℝ) ≤ 2 * sourceCountConstant chi * H ^ 2 := by
     have hc : (S.card : ℝ) ≤ (heightCount chi hprim H : ℝ) := by
-      exact_mod_cast card_heightWindow_le_heightCount chi hprim H
+      exact_mod_cast heightWindow_card_le_heightCount chi hprim H
     exact hc.trans (heightCount_le_quadratic_source_bound chi hprim H hH)
   have hradius : horizontalSeparationRadius chi n ≤
       1 / (2 * ((S.card : ℝ) + 1)) := by
@@ -294,7 +294,7 @@ theorem norm_finite_zero_principal_parts_le
     _ = (∑ rho ∈ S, (zeroMultiplicity chi rho : ℝ)) / delta := by
       rw [Finset.sum_div]
     _ ≤ _ := div_le_div_of_nonneg_right
-      (sum_multiplicity_le_heightCount chi hprim H S hS) hdelta.le
+      (((heightCount_le_iff chi hprim H (heightCount chi hprim H : ℝ)).mp le_rfl) S hS) hdelta.le
 
 /-- The same two-sided height theorem specialized literally to completed zeta.
 Both real poles remain in the contour identity; neither lies on these lines. -/
