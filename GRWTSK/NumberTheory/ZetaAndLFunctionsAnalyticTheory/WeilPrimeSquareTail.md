@@ -270,6 +270,64 @@ This derivation retains the **analytically continued** zeta function and uses th
 
 **Hostile check:** R_ge2(s) has a boundary singularity at Re s=1/2 due to prime squares; it is NOT entire and the argument cannot move (15) across that boundary without extra analytic continuation. The right-half-strip domain Re w>0 is all that the Landau contradiction requires. For nonreal Dirichlet characters the prime-only source is complex-valued, so the nonnegative-Laplace argument does not transfer to primitive GRH by merely replacing zeta with L(s,chi).
 
+## WPSQ-6: exact hierarchy of each prime-power layer
+
+WPSQ-1's exponent 1/6 is the real leading scale for prime cubes in the conductor-one source. The following gives a precise fixed-exponent hierarchy without assuming RH or GRH.
+
+For each fixed integer k>=2 set
+\[
+B_{\chi,g}^{(k)}(t)=\sum_{p}(\log p)p^{-k/2}\chi(p)^k g(k\log p-t),\quad
+\alpha_k=\tfrac12-\tfrac1k,\quad
+\delta_{\chi,k}=\mathbf1_{\chi^k=\chi_0}.
+\tag{16}
+\]
+Define \(\theta_{\chi^k}(x)=\sum_{p\le x}\chi(p)^k\log p\) and
+\(\eta_{\chi^k}(y)=\sup_{x\ge y}|\theta_{\chi^k}(x)-\delta_{\chi,k}x|/x\).
+For fixed q,k the PNT in arithmetic progressions makes \(\eta_{\chi^k}(y)\to0\) unconditionally.
+
+**Theorem (written analytical proof).** For t>R,
+\[
+\boxed{
+\left|B_{\chi,g}^{(k)}(t)-\frac{\delta_{\chi,k}}{k}
+e^{-\alpha_k t}\int_{-R}^R g(v)e^{-\alpha_k v}dv\right|
+\le e^{-\alpha_k t}\eta_{\chi^k}(e^{(t-R)/k})
+\int_{-R}^R e^{-\alpha_k v}\left(|g'(v)|+\tfrac12|g(v)|\right)dv.
+}
+\tag{17}
+\]
+
+**Proof.** For x_\pm=e^((t\pm R)/k), write the prime sum as the Stieltjes integral of \(w_t(x)=x^{-k/2}g(k\log x-t)\) against \(d\theta_{\chi^k}(x)\) on [x_-,x_+]. Replacing this measure by \(\delta_{\chi,k}dx\) and substituting v=k log x-t gives the stated main term. The endpoint contributions vanish. Differentiating
+\(w_t'(x)=x^{-k/2-1}(kg'(k\log x-t)-\frac{k}{2}g(k\log x-t))\)
+and integrating by parts against \(\theta_{\chi^k}(x)-\delta_{\chi,k}x\) gives (17) exactly. QED.
+
+**Higher-tail theorem.** For any fixed K>=2,
+\[
+\boxed{
+\left|\sum_{k\ge K+1}B_{\chi,g}^{(k)}(t)\right|
+\le\frac{\|g\|_\infty}{\log2}(t+R)^2
+e^{-\alpha_{K+1}t+(\frac12+\frac1{K+1})R}.
+}
+\tag{18}
+\]
+Indeed nonzero terms require \(k\le(t+R)/\log2\) and \(p\le e^{(t+R)/k}\), so for k>=K+1 there are at most e^((t+R)/(K+1)) candidate integers p and each term has size <=(t+R)||g||_infty e^(-(t-R)/2). Since alpha_(K+1)>alpha_K, combining (17) and (18) proves
+\[
+\boxed{\sum_{k\ge K}B_{\chi,g}^{(k)}(t)
+=\frac{\delta_{\chi,K}}{K}e^{-\alpha_K t}
+\int g(v)e^{-\alpha_K v}dv
++o_{q,\chi,g,K}(e^{-\alpha_K t}).}
+\tag{19}
+\]
+
+In particular, for conductor-one zeta, the cubic-and-higher tail for the original even fixed bump h satisfies
+\[
+\boxed{\sum_{k\ge3,p}(\log p)p^{-k/2}h(k\log p-t)
+=\frac13\Phi(1/6)^2e^{-t/6}+o(e^{-t/6}).}
+\tag{20}
+\]
+This identifies a nonzero leading cube contribution, showing that the earlier exp(-t/6) scale is sharp for the positive zeta test. For a fixed quadratic nonprincipal character, chi² is principal but chi³ is not: squares have the 1/2 limit and the cubic-and-higher tail is o(e^(-t/6)). For an order-three character, the square main term vanishes while the cubic main term survives. Neither example is a GRH proof.
+
+**Hostile precision warning:** (19) holds for the TAIL STARTING AT K. It must not be turned into a full asymptotic expansion with all k<K replaced by their leading terms at the smaller exponential error. The unconditional k=2 PNT remainder decreases like exp(-b t^(3/5)/(log t)^(1/5)), slower than exp(-t/6); it can swamp the cube term. The exact square sum must remain if the cubic leading term is used. All phases and fixed-character dependencies are retained.
+
 **First unresolved arithmetic premise:** establish the required one-sided upper bound for the ordinary-prime source in (8), (12), or the W2S pair, without assuming RH, finite exceptional zeros, or a replacement positive form. The unconditional PNT error for the ordinary-prime discrepancy remains of order e^(t/2-o(t)), far larger than a constant. WPSQ-1 eliminates only the genuinely lower-order prime powers and provides no new cancellation among the ordinary primes near e^t.
 
 **Falsification and quantifiers:**
