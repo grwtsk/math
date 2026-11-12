@@ -202,3 +202,35 @@ This improves the **form** of the missing arithmetic obligation from all complex
 **Hostile checks:** (i) A synthetic single quartet yields two negative directions and exponentially unbounded one-sided oscillation for unfiltered K, while a quadratic polynomial annihilates it; no actual zeta counterexample is asserted. (ii) A positive real exponential added to an abstract kernel may remove the one-sided oscillation, so zeta's absence of real critical-strip zeros is indispensable. (iii) Coefficient vectors converging to zero would make finite feasibility trivial, hence the unit sphere. (iv) Arbitrary changing coefficients at successive windows do not imply a global polynomial WITHOUT compactness and one uniform C. (v) A fixed rational grid spacing alone may alias complex frequencies; (14) uses ALL rational shifts. (vi) Multiplicities are weights and do not change the degree.
 
 **No unconditional completion:** RH, zeta finite exceptions, and primitive Dirichlet GRH remain UNPROVED. This edition contains no Lean declarations, axiom additions, imported change, or test results. All formal and independent checks NOT_RUN; novelty UNASSESSED.
+
+
+## 6. WPOS-4: exact classification and coefficient-instability test
+
+**Theorem (conditional classification, proved).** Assume there are exactly M<infinity distinct off-line zeta quartets. Choose, for each, z_j=delta_j+i gamma_j with delta_j,gamma_j>0. For a sign vector epsilon in {+1,-1}^M set
+\[
+R_\epsilon(X)=\prod_{j=1}^M
+(X-\epsilon_jz_j)(X-\epsilon_j\overline{z_j})\in\mathbb R[X].
+\tag{15}
+\]
+Then, for a nonzero real polynomial P, the following are equivalent:
+\[
+D_P(t)\text{ is bounded above for }t\ge2
+\iff
+K_P\text{ is positive definite}
+\iff
+R_\epsilon\mid P\text{ for some }\epsilon.
+\tag{16}
+\]
+Thus the set of successful real filters of degree <=r is precisely the finite union
+\[
+\bigcup_{\epsilon\in\{\pm1\}^M}
+R_\epsilon\,\mathbb R[X]_{\le r-2M}\setminus\{0\}.
+\tag{17}
+\]
+If r<2M, this set is empty. If r=2M, there are exactly 2^M distinct successful MONIC polynomials, each R_epsilon; all nonzero scalar multiples also work. If M>=1 and r>=2M, these successful coefficient vectors form a finite union of proper linear subspaces of \(\mathbb R^{r+1}\), and hence have empty interior.
+
+**Proof.** By WPOS-1/2, an upper-bounded D_P must annihilate every off-line quartet in the zero sum. Each quartet imposes P(z_j)P(-z_j)=0. Since P has real coefficients, either z_j and its conjugate, or -z_j and its conjugate, are two roots of P. This supplies a sign epsilon_j and real divisibility by the corresponding quadratic factor in (15). These factors are pairwise coprime for distinct quartets, so their product divides P. Conversely, divisibility by some R_epsilon annihilates all off-axis zero coefficients. Every remaining coefficient on the critical line is nonnegative by (5) in WPD-1, giving positive definiteness and boundedness of K_P, hence the upper bound on D_P. The dimension of the degree-<=r multiplier space is r-2M+1, strictly less than r+1 when M>=1. Distinct sign choices have distinct root sets; therefore the 2^M monic polynomials of degree 2M are distinct. QED.
+
+**Hostile exactness test.** For M>=1 and a minimal-degree successful polynomial R_epsilon, an arbitrarily small generic perturbation of its real coefficients destroys at least one exact quadratic root factor. WPOS-1 then makes the perturbed D_P(t) exhibit unbounded positive and negative excursions. Thus small floating-point errors in coefficients cannot be treated as a global error budget independent of t. A verified finite-window bound for an approximate filter does not establish the unbounded-time assertion. The unit-sphere compactness argument of WPOS-3 remains valid because it obtains an EXACT limit polynomial by nested closed feasibility sets; it does not claim stability of a fixed approximate coefficient vector.
+
+This classification is a consequence of the source-exact divisor expansion and classical Landau oscillation, not a construction of R_epsilon from the primes. The factors depend on hypothetical exceptional zeros and CANNOT be assumed known in an unconditional finiteness proof. Novelty UNASSESSED; Lean and independent checks remain NOT_RUN.
