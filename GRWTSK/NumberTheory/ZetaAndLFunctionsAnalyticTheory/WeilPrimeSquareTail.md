@@ -220,6 +220,56 @@ D_{P,\rm prime}(t)\le C\quad\forall t\ge T.
 \]
 Its minimal possible degree remains twice the number of distinct off-line quartets. This exact prime-only conclusion is backed by the *bounded* higher-power correction (11); no prime power was silently discarded or an all-scale implication weakened. The corresponding two-incommensurate-shift conditional criterion W2S-2 transfers to prime-only stencils by (10). It still lacks the requisite upper-bound proof.
 
+## WPSQ-5: independent Euler-product Laplace proof for the prime-only criterion
+
+The prime-only implication to RH in (8) can be proved DIRECTLY from the convergent Euler-product logarithmic derivative, without assuming WPD/WPOS's polynomial index representation. This is an independent derivation of the *reduction*, not an independent proof of RH.
+
+Define for Re(s)>1/2
+\[
+R_{\ge2}(s)=\sum_{k\ge2}\sum_p(\log p)\,p^{-ks}.
+\tag{13}
+\]
+This series converges ABSOLUTELY and normally on every closed half-plane Re(s)>=1/2+epsilon, since
+\[
+\sum_{k\ge2,p}(\log p)p^{-k\sigma}
+\le \frac{1}{1-2^{-\sigma}}\sum_{n\ge2}\frac{\log n}{n^{2\sigma}}<\infty
+\quad(\sigma>1/2).
+\]
+For Re s>1 (the ACTUAL convergence region of the Euler product),
+\[
+\sum_p\frac{\log p}{p^s}
+=-\frac{\zeta'(s)}{\zeta(s)}-R_{\ge2}(s).
+\tag{14}
+\]
+The right side, not the prime Dirichlet series itself, is used to continue this identity to Re(s)>1/2.
+
+Fix T>=2, set
+\[
+E_T^{(1)}(w)=\int_{-\infty}^{T}S_{\rm prime}(t)e^{-wt}\,dt.
+\]
+The integrand has bounded t-support on (-infinity,T], hence E_T^(1) is entire. Fubini in Re w>1/2, followed by (14), gives
+\[
+\boxed{
+\int_T^\infty D_{\rm prime}(t)e^{-wt}\,dt
+=
+-H(w)\frac{\zeta'(w+1/2)}{\zeta(w+1/2)}
+-H(w)R_{\ge2}(w+1/2)
+-E_T^{(1)}(w)
+-\frac{Me^{-(w-1/2)T}}{w-1/2}.
+}
+\tag{15}
+\]
+
+**Pole audit.** The principal pole of zeta at s=1 has residue +M in the term -H(w)zeta'/zeta, cancelled EXACTLY by the last term at w=1/2. The remainder R_ge2 is holomorphic for Re w>0. The edge E_T^(1) is entire. At each nontrivial zeta zero rho with Re rho>1/2, let z=rho-1/2. The residue of (15) is -m_rho H(z), nonzero because the original fixed bump has Phi(z)!=0 whenever Re z!=0. Distinct zeros are grouped with their multiplicities; no critical-strip prime-power singularity was silently subtracted.
+
+**Theorem (direct prime-only Landau implication).** If there exist T>=2 and C in R with D_prime(t)<=C for all t>=T, then RH holds.
+
+**Proof.** Set g(t)=C-D_prime(t)>=0 for t>=T. By unconditional PNT and the bounded higher-power difference (7), g is of exponential order with finite Laplace abscissa sigma_g<=1/2. Suppose RH fails. The functional equation gives an actual zero rho with 1/2<Re rho<1, so (15) gives a nonzero nonreal pole at z=rho-1/2 with Re z>0. Therefore sigma_g>=Re z>0; otherwise the defining convergent Laplace integral would already be holomorphic at z. The classical Landau singularity theorem for Laplace transforms of nonnegative functions now forces a singularity of the transform at the REAL positive point sigma_g. But the continuation from (15), with the extra elementary term Ce^{-wT}/w, is holomorphic on the positive real axis: the s=1 pole was cancelled; zeta has no real zero in the open critical strip; the other terms are holomorphic there. Contradiction. The reverse direction of (8) is the full source-exact zero expansion under RH, with the higher prime powers controlled by (6). QED.
+
+This derivation retains the **analytically continued** zeta function and uses the Euler-product Dirichlet series only for Re s>1; it is not a divergent-series argument in the strip. The gamma and both poles in the original Weil form remain in the separate exact source formula; (15) is the independent ordinary-prime Mellin/Laplace identity.
+
+**Hostile check:** R_ge2(s) has a boundary singularity at Re s=1/2 due to prime squares; it is NOT entire and the argument cannot move (15) across that boundary without extra analytic continuation. The right-half-strip domain Re w>0 is all that the Landau contradiction requires. For nonreal Dirichlet characters the prime-only source is complex-valued, so the nonnegative-Laplace argument does not transfer to primitive GRH by merely replacing zeta with L(s,chi).
+
 **First unresolved arithmetic premise:** establish the required one-sided upper bound for the ordinary-prime source in (8), (12), or the W2S pair, without assuming RH, finite exceptional zeros, or a replacement positive form. The unconditional PNT error for the ordinary-prime discrepancy remains of order e^(t/2-o(t)), far larger than a constant. WPSQ-1 eliminates only the genuinely lower-order prime powers and provides no new cancellation among the ordinary primes near e^t.
 
 **Falsification and quantifiers:**
