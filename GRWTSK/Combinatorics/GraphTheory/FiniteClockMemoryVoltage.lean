@@ -31,7 +31,7 @@ namespace ClockMemoryVoltage
 universe u
 
 /-- The entire memory, including every label and slot, is retained. -/
-structure Fiber (A : Type u) (N : Nat) where
+@[ext] structure Fiber (A : Type u) (N : Nat) where
   clock : ZMod N
   lamps : ZMod N → A → ZMod 2
 
@@ -97,7 +97,7 @@ theorem inverse_mul (x : Fiber A N) : multiplication (inverse x) x = identity :=
   apply Fiber.ext
   · simp [multiplication, inverse, identity]
   · funext i a
-    simp [multiplication, inverse, identity, shift]
+    exact neg_add_cancel (shift (-x.clock) x.lamps i a)
 
 /-- The clock-memory carrier is genuinely a group for every clock modulus.
 For a positive power-of-two modulus and a finite alphabet, it is a finite
@@ -148,7 +148,7 @@ theorem wordVoltage_append [DecidableEq A] (xs ys : List A) :
 theorem wordVoltage_clock [DecidableEq A] (xs : List A) :
     (wordVoltage (N := N) xs).clock = (xs.length : ZMod N) := by
   induction xs with
-  | nil => rfl
+  | nil => simp [wordVoltage]
   | cons a xs ih =>
       simp [wordVoltage, letter, clock_mul, ih, Nat.cast_succ, add_comm]
 
@@ -176,7 +176,7 @@ theorem wordVoltage_memory [DecidableEq A] (xs : List A)
 /-- Voltage on the existing one-vertex bouquet, not on a substituted graph. -/
 def bouquetTransport [DecidableEq A] {x y : PUnit} :
     PositiveWordSeparation.bouquetEdge A x y → Fiber A N :=
-  letter (N := N)
+  letter (A := A) (N := N)
 
 /-- Holonomy of the actual endpoint-indexed source path is the clock-memory code. -/
 theorem holonomy_bouquet [DecidableEq A] (xs : List A) :
@@ -220,8 +220,8 @@ theorem distinct_lifted_endpoints_of_voltage [DecidableEq A]
     (VoltageCover.liftPath (PositiveWordSeparation.bouquetEdge A)
       (bouquetTransport (A := A) (N := N))
       (PositiveWordSeparation.asBouquetPath ys) g).1 := by
-  apply VoltageCover.distinct_endpoints
-  simpa only [holonomy_bouquet] using different
+  rw [endpoint_bouquet_lift, endpoint_bouquet_lift]
+  exact fun h => different (mul_left_cancel h)
 
 end ClockMemoryVoltage
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy

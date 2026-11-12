@@ -38,7 +38,7 @@ theorem sourceMemory_zero_outside (xs : List A) (slot : ZMod N) (b : A)
   | nil => rfl
   | cons a tail ih =>
       have hzero : slot ≠ 0 := by
-        exact outside 0 (by simp)
+        simpa only [Nat.cast_zero] using outside 0 (by simp)
       have htail : ∀ j : Nat, j < tail.length →
           slot - 1 ≠ (j : ZMod N) := by
         intro j hj heq
@@ -201,7 +201,8 @@ theorem card_fiber [Fintype A] [NeZero N] :
         Fintype.card (ZMod N × (ZMod N → A → ZMod 2)) :=
           Fintype.card_congr (fiberCoordinateEquiv (A := A) (N := N))
     _ = N * 2 ^ (N * Fintype.card A) := by
-      simp [Fintype.card_fun, ZMod.card, pow_mul, mul_comm]
+      simp only [Fintype.card_prod, Fintype.card_fun, ZMod.card, ← pow_mul]
+      rw [Nat.mul_comm (Fintype.card A) N]
 
 /-- A power-of-two clock makes this entire source group a finite 2-group. -/
 theorem card_fiber_power_two [Fintype A] (k : Nat) :
