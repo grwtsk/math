@@ -217,6 +217,22 @@ and all corresponding positive and reflected frequencies are annihilated by P(e^
 
 With two incommensurate scales, the root-pair injection in W2S-2 prohibits this alias mechanism. Existing nonvanishing results on vertical arithmetic progressions, such as Martin--Ng, show many progression points are not zeros; they do not supply a theorem that a sparse infinite subset cannot consist of zeros. No such missing no-alias arithmetic theorem is assumed.
 
+## W2S-5: exact synthetic sharpness of the root-product bound
+
+The factor 1/2 in (12) cannot be improved in the general reflected, conjugation-symmetric exponential model without additional arithmetic information. Set Delta_1=1, Delta_2=sqrt(2), and z=1/4+i*pi (this is a SYNTHETIC frequency, NOT a zeta zero). Let
+\[
+P_1(X)=X+e^{1/4},
+\qquad
+\alpha_2=e^{\sqrt2 z},
+\qquad
+P_2(X)=(X-\alpha_2)(X-\overline{\alpha_2}).
+\]
+Then P_1 is real of degree 1 because e^z=-e^(1/4); P_2 is real of degree 2 because sin(pi sqrt(2)) !=0. Both filters annihilate the four frequencies z,bar z,-z,-bar z in the real even synthetic kernel
+\[
+K_{\rm syn}(t)=e^{zt}+e^{\bar zt}+e^{-zt}+e^{-\bar zt}.
+\]
+Thus both filtered kernels vanish identically, while the synthetic divisor has ONE off-axis quartet. Equation (12) gives floor(1*2/2)=1, achieved exactly. This checks the conjugation factor, the modulus-determined sign, and the essential distinction between a conditional model and the actual arithmetic zeta source. It does not solve (11).
+
 ## Prior art and unproved obligations
 
 - [S] Masatoshi Suzuki, *Weil's quadratic form via the screw function*, arXiv:2606.09096v3 (23 September 2026), printed pp. 1--2. Exact Weil distribution, two pole orientations, signed prime powers and archimedean term. The WFDG source derives the fixed smooth bump and two-pole cancellation.
