@@ -1,6 +1,6 @@
 # An explicit growing-conductor window for the original primitive Weil quadratic form
 
-Local attribution: grwtsk contributors. Edition 1, 2026-11-12.
+Local attribution: grwtsk contributors. Edition 2 (three-band strengthening), 2026-11-12.
 MSC2020: 11M06, 11M26, 11N05, 11N13, 47A12.
 
 **Evidence:** WRITTEN_ANALYTICAL_ARGUMENT with separate finite exact-integer checks EXECUTED. Lean elaboration, dependency build, fresh kernel replay and transitive axiom audit: **NOT_RUN**. Independent analytic review: **UNASSESSED**. Originality: **UNASSESSED**; the Chebyshev estimate, binomial/lcm induction, and conductor domination are elementary. This is **not** a proof of primitive GRH or RH.
@@ -159,3 +159,234 @@ were checked with exact integers/Fractions. The checked output has SHA-256
 `6a9cc401ce16527e6313bfa14bdf3e0fdbbba0a370dafa2cc700288c0e8f74de`.
 These finite checks **test** rather than replace the universal written induction;
 they do not establish a Lean kernel theorem or mathematical novelty.
+
+## WMC-5: an exact three-band saving for every original prime power
+
+The preceding single-Cauchy estimate (WMC.8) charges every active
+translation by twice its von Mangoldt mass. This section retains its
+original literal source (WMC.1), but sharpens **each actual physical
+translation** using the complex finite-chain result
+[WeilFiniteChainPrimeBound.md](../WeilFiniteChainPrimeBound.md),
+WFCP-v1-A, Theorem (2.1). The same finite-chain source is also used
+in [WeilFirstActivatedPrimeConductorWindows.md](WeilFirstActivatedPrimeConductorWindows.md);
+here the three ranges are applied for **arbitrary L>0**.
+
+For each real u>0 define the complete strict prime-power mass
+\[
+W(u)=\sum_{\substack{n\ge2\\\log n<u}}
+  \frac{\Lambda(n)}{\sqrt n}\ge0. \tag{WMC.11}
+\]
+It retains every p^k with \(\Lambda(p^k)=\log p\), including all
+character-zero and non-prime-power contributions as zeros.
+(WMC.5) gives \(W(u)<4e^{u/2}\), without any asymptotic assumption.
+
+For the original complex zero-extended test f on (0,L), the following
+physical correlation bounds hold for **every** shift \(r\in(0,L)\):
+\[
+|C_f(r)|\le
+\begin{cases}
+\|f\|_2^2,&0<r<L/3,\\
+\frac34\|f\|_2^2,&L/3\le r<L/2,\\
+\frac12\|f\|_2^2,&L/2\le r<L.
+\end{cases}\tag{WMC.12}
+\]
+For the last band, the source and destination strips are disjoint
+up to null endpoints and Cauchy gives the 1/2 bound.
+For the middle band, disintegrate Lebesgue measure into length-r
+fibers. There are at most three consecutive nonzero entries almost
+everywhere; their original correlation is
+\(\overline{x_0}x_1+\overline{x_1}x_2\), with
+\[
+|\overline{x_0}x_1+\overline{x_1}x_2|
+ \le |x_1|(|x_0|+|x_2|)
+ \le\frac{|x_0|^2+|x_1|^2+|x_2|^2}{\sqrt2}
+ \le\frac34\sum_{j=0}^2|x_j|^2.
+\]
+The last rational comparison is **exact** because
+\(1/\sqrt2\le3/4\iff 8\le9\).
+Integrate the full fiber mass, with the genuine support/zero
+extension. The first band uses whole-line translation Cauchy.
+No shift outside the active support is included, and no complex
+Dirichlet phase is suppressed before forming the literal source.
+
+**Theorem (original-source three-band bound).** For EVERY primitive
+nonprincipal \(\chi\) of conductor \(q>1\), EVERY \(L>0\) and EVERY
+complex \(f\in V_{L,a+1/2}\), the complete signed prime response
+\(\mathcal P_{\chi,L}(f)\) in (WMC.1) satisfies
+\[
+\boxed{\mathcal P_{\chi,L}(f)\le
+\left[W(L)+\frac12W(L/2)+\frac12W(L/3)\right]\|f\|_2^2
+<\left[4e^{L/2}+2e^{L/4}+2e^{L/6}\right]\|f\|_2^2}
+\tag{WMC.13}
+\]
+for \(f\ne0\); the nonstrict version holds for \(f=0\).
+The FIRST displayed comparison is a source-exact finite arithmetic
+inequality with all prime powers and their true complex phases;
+the SECOND comparison is only an unconditional Chebyshev budget.
+
+**Proof.** Split the strict prime-power inventory into
+\(\log n<L/3\), \(L/3\le\log n<L/2\), and
+\(L/2\le\log n<L\). Apply (WMC.12) to the corresponding
+terms in (WMC.1) *after* retaining the original signed real part.
+Use \(0\le\Lambda(n)/\sqrt n\), \(|\chi(n)|\le1\)
+(including the correct zero at ramified primes). The three costs are
+\(2W(L/3)\), \((3/2)[W(L/2)-W(L/3)]\) and
+\(W(L)-W(L/2)\), respectively. Their exact sum is the
+first bracket in (WMC.13). It is valid also when a prime power
+lies exactly at L/3 or L/2: the strict W values allocate the
+threshold to the next band, with no endpoint double counting.
+Apply (WMC.5) individually at \(u=L,L/2,L/3\) for the second bracket.
+QED.
+
+The original complete \(\Gamma_b(f)\ge0\) and unchanged two-parity
+constant \(c_{q,a}>\log q-7\) from WMC-2 therefore yield the
+strengthened **all-support, possibly negative** coercivity bound
+\[
+\boxed{
+Q_{\chi,L}(f)\ge
+\bigl[\log q-7-4e^{L/2}-2e^{L/4}-2e^{L/6}\bigr]\|f\|_2^2.}
+\tag{WMC.14}
+\]
+Unlike merely applying a positive finite-shift Gram comparator, the
+estimate begins from the unchanged complex signed arithmetic source,
+uses physical overlap on the original test domain and returns directly
+to the original Weil form. The RHS is no promise of positivity for
+large L at fixed q.
+
+## WMC-6: a larger conductor-growing full-test positivity window
+
+**Theorem (improved moving window, unconditional).** Put
+\(M=\log q\). For every \(q\) with \(M\ge32\), every primitive
+character \(\chi\) of exact conductor q (nonprincipal),
+every REAL \(L\) and every ORIGINAL complex form-domain test f,
+\[
+\boxed{
+0<L\le \log\!\frac{M^2}{144}
+ \quad\Longrightarrow\quad
+Q_{\chi,L}(f)\ge
+\left(\frac{15M}{32}-7\right)\|f\|_2^2
+\ge \frac{M}{4}\|f\|_2^2.}
+\tag{WMC.15}
+\]
+The previous window (WMC.9) had divisor 256; the new theorem has
+divisor **144**, without assuming GRH or omitting any active prime power.
+
+**Proof.** Write \(s=e^{L/2}\). Since the exponentials are
+monotone, the support restriction gives
+\(1<s\le v=M/12\), with \(v\ge8/3\).
+The rational inequalities
+\[
+v\ge\frac83>\frac{64}{25},\qquad
+v\ge\frac83>\frac{64}{27}
+\]
+imply, by squaring and cubing nonnegative numbers,
+\[
+\sqrt v\le\frac58v,\qquad
+v^{1/3}\le\frac9{16}v.
+\tag{WMC.16}
+\]
+Thus
+\[
+4e^{L/2}+2e^{L/4}+2e^{L/6}
+=4s+2\sqrt s+2s^{1/3}
+\le4v+2\sqrt v+2v^{1/3}
+\le\frac{51}{8}v=\frac{17M}{32}.
+\tag{WMC.17}
+\]
+Insert this into (WMC.14). Finally,
+\(15M/32-7-M/4=(7/32)(M-32)\ge0\).
+Every inequality is uniform over all complex f and all primitive
+characters q satisfying these support/conductor bounds; **no
+uniformity in all supports at a fixed conductor is inferred**. QED.
+
+For the same thresholds \(M=32,64,128,256\), the exact new
+support endpoints are \(e^{L_{\max}}=64/9,256/9,1024/9,4096/9\),
+compared with WMC-3's \(4,16,64,256\). The improvement is a fixed
+positive support-width increment \(2\log(4/3)\) at every such M;
+the asymptotic scale is still \(2\log\log q\).
+This is a quantified conductor-window tradeoff, NOT an unconditional
+all-window theorem for any fixed character.
+
+### Source falsification, prior art, and strict limits
+
+* **Do not apply the two-site bound in the middle band.** A
+  three-site real vector (1,3/2,1) has correlation/mass 12/17>1/2.
+  The three-site bound itself fails for a four-site vector
+  (1,1,1,1), whose adjacent correlation/mass is 3/4>1/sqrt2.
+  The low band must therefore use its separate larger allowance.
+* **Endpoint activation:** shifts at precisely L/3 or L/2 are in
+  the higher bands; \(\log n=L\) is not active. The identity with
+  W(L), W(L/2), W(L/3) handles these cases exactly.
+* **Signed source:** all \(\chi(p^k)\) values and their phases remain
+  in (WMC.1). Only the FINAL upper estimate charges their magnitudes;
+  the complete compensated gamma and conductor/parity terms are unchanged.
+* **Conductor one:** zeta has BOTH signed original pole orientations,
+  omitted only from these explicitly nonprincipal bounds. Its existing
+  WSGC/WSR1/WSFLB positivity results remain separate and valid.
+* **Comparison:** WFCP-v1-A proves the full finite-chain original
+  correlation inequality for all shifts; (WMC.12) is a rational
+  three-band corollary with a new **all-support Chebyshev consumer**.
+  WAPC-v1 groups the first finite activations; WHSI-v1 saves
+  interference across different high shifts. None supplies a
+  fixed-q all-window positivity theorem. This is standard finite
+  numerical-radius technology (Haagerup–de la Harpe,
+  *Proc. Amer. Math. Soc.* 115 (1992), Theorem 1,
+  DOI 10.1090/S0002-9939-1992-1072339-6), combined with the
+  classical elementary Chebyshev budget from WMC-1. No originality
+  or independent review is claimed.
+* **No fictitious transfer to RH/GRH:** \(4e^{L/2}\) still
+  dominates every fixed \(\log q\) as \(L\to\infty\). The
+  entire unbounded window, signed cross-prime arithmetic
+  cancellation, zeta pole competition, gamma/parity, dual-character
+  equations, and every original test remain genuine missing
+  universal obligations.
+
+The adjacent WMC certificate retains the original 4,096 exact
+lcm/von-Mangoldt checks and adds complex three-site and strict
+three-band cutoff regressions. Their finite execution validates only
+the finite claims tested, not the universal source proof.
+The source-only mathematical proof above uses the ORIGINAL Weil form.
+Lean elaboration, kernel replay, transitive axiom audit and independent
+mathematical review are still NOT_RUN/UNASSESSED. The prescribed canonical
+Noe proof-automation skill was unavailable (HTTP 404), so no covered
+Lean/proof execution was dispatched.
+
+
+### WMC-5/6 individual checker provenance and verification scope
+
+Maintained source: this file, sections WMC-5/6. Exact adjacent
+certificate: `WeilMovingConductorWindowCertificate.py`,
+Git blob `c2c8fd1ef69b758bb6e1a6d2e3076d9f3b4c05ac`,
+SHA-256 `a2fe1d0489de61360dc32248dbceb1127ca8e1be730c43819bf7389ebd547ca5`.
+The existing WMC-1/3 source and its original 4,096 prime-power/lcm
+checks were retained; the new V2 test executed 729 complex Gaussian-integer
+three-site checks, 511 exact strict-cutoff three-band partition
+identities with independent positive rational fixture weights, and
+the exact rational tradeoff tests for
+`M=32,33,64,128,256,512,1024`.
+Those fixture weights are NOT purported exact representations of
+the irrational coefficients `\Lambda(n)/\sqrt n`; the complete
+symbolic arithmetic source is supplied by WMC-1 and WMC-5's
+written proof. The checker was run under Python 3.13.5 on Debian
+GNU/Linux 13, followed by successful `python3 -m py_compile` and
+intentional nonzero exit under `python3 -O`.
+Executed output SHA-256:
+`fb33b3efd65308399ed35d7b8d30faea5881cacd2de6b55cf1942ab18030555e`.
+The decision inequalities are exact integer/Fraction comparisons,
+not floating-point sign guesses.
+
+Direct individual source return: (WMC.11)--(WMC.14) bound the
+unaltered signed primitive Weil arithmetic form (WMC.1),
+using the genuine zero-extension source correlation and WMC-1's
+all-prime-power Chebyshev induction. They are NOT new Lean
+declarations; full-domain Fourier/Weil identification continues to
+depend on the canonical physical-return sources. Previous
+conductor-one zeta small-window sign results remain untouched.
+
+Source baseline before the WMC-5/6 revision:
+`grwtsk/math/main` `17305d0984f693954a725c50f5a405cfa4b1dcc7`.
+Lean `leanprover/lean4:v4.34.1`; mathlib
+`d13f23b723b8a846827a245b89c10fc7d3f11612`.
+Coordination `grwtsk/math#1801`. No Lean execution,
+transitive axiom audit, independent mathematical review,
+unconditional all-window positivity or RH/GRH proof is claimed.
