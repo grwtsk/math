@@ -1,6 +1,6 @@
 # An explicit growing-conductor window for the original primitive Weil quadratic form
 
-Local attribution: grwtsk contributors. Edition 3 (exact Chebyshev and conductor-window strengthening), 2026-11-12.
+Local attribution: grwtsk contributors. Edition 4 (effective and PNT conductor-window refinements), 2026-11-12.
 MSC2020: 11M06, 11M26, 11N05, 11N13, 47A12.
 
 **Evidence:** WRITTEN_ANALYTICAL_ARGUMENT with separate finite exact-integer checks EXECUTED. Lean elaboration, dependency build, fresh kernel replay and transitive axiom audit: **NOT_RUN**. Independent analytic review: **UNASSESSED**. Originality: **UNASSESSED**; the Chebyshev estimate, binomial/lcm induction, and conductor domination are elementary. This is **not** a proof of primitive GRH or RH.
@@ -577,3 +577,254 @@ provided. Formal Lean elaboration/build, fresh kernel checking,
 transitive axiom audit and independent mathematical review remain
 **NOT_RUN/UNASSESSED**. No new research axiom, sorry/admit, import,
 mathlib pin or original conjecture target is introduced.
+
+
+## WMC-9: an effective quadratic conductor cutoff with denominator 16
+
+The prior WMC-8 obtains a positive source-exact window with
+\(\exp L\le(\log q)^2/36\) for every \(\log q\ge32\).
+A **stronger window** can be obtained from exactly the SAME
+all-prime-power Chebyshev upper bound, but it requires a larger,
+explicit conductor. No zero-free-region estimate is introduced.
+
+**Theorem (WMC-v4-09; unconditional, effective).** Let \(q\ge2\)
+be any integer, \(M=\log q\ge512\), and \(\chi\) be **any primitive
+character of exact conductor q** (thus nonprincipal). For EVERY
+real support \(L\) and EVERY complex original supported Weil test
+\(f\in V_{L,a+1/2}\),
+\[
+\boxed{
+0<L\le\log\frac{M^2}{16}
+\quad\Longrightarrow\quad
+Q_{\chi,L}(f)\ge
+\left(\frac{14273}{55000}M-\frac{10}{3}\right)\|f\|_2^2
+\ge\left(\frac M4+1\right)\|f\|_2^2.}
+\tag{WMC.27}
+\]
+The source is still the literal pole-free nonprincipal primitive form
+(WMC.1), not conductor-one zeta. Its prime term contains EVERY
+active \(\Lambda(n)\chi(n)/\sqrt n\), all phases and every
+ramified zero; the full gamma/parity and conductor scalar remain.
+
+**Proof.** Take \(\alpha=\log4\), \(s=e^{L/2}\), and \(v=M/4\).
+The support restriction implies \(1<s\le v\), and \(M\ge512\)
+gives \(v\ge128\). Since \(v\ge121=11^2\) and
+\(v\ge125=5^3\), elementary NONNEGATIVE powers give
+\[
+\sqrt{s}\le\sqrt v\le v/11,\qquad
+s^{1/3}\le v^{1/3}\le v/25.
+\tag{WMC.28}
+\]
+Use both rigorously established rational inequalities from WMC-7
+in their correct directions:
+\[
+\frac43<\alpha<\frac{139}{100}.
+\]
+The signed source has already been bounded by its *actual*
+three-band original L² correlations in WMC-5, giving
+\[
+\begin{aligned}
+\mathcal P_{\chi,L}(f)
+&\le\alpha(2s+\sqrt{s}+s^{1/3}-2)\|f\|_2^2\\
+&<\left[\frac{139}{100}
+   \left(2+\frac1{11}+\frac1{25}\right)\frac M4
+       -2\frac43\right]\|f\|_2^2\\
+&=\left[\frac{40727}{55000}M-\frac83\right]\|f\|_2^2
+\end{aligned}
+\tag{WMC.29}
+\]
+when \(f\ne0\); at zero test all comparisons follow by equality.
+The original complete gamma integral is nonnegative and
+\(c_{q,a}>M-6\) for BOTH parities, with no hidden zeta poles,
+so the first lower bound in (WMC.27) follows.
+
+The exact rational difference against \(M/4+1\) is
+\[
+\left(\frac{14273}{55000}-\frac14\right)M
+-\frac{10}{3}-1
+=\frac{523}{55000}M-\frac{13}{3}
+\ge\frac{11041}{20625}>0
+\quad(M\ge512).
+\tag{WMC.30}
+\]
+Every inequality is a true universal statement on the original
+complex logarithmic form domain under its displayed conductor/window
+quantifiers. QED.
+
+This increases the cutoff in \(\exp L\) by an **exact factor
+\(9/4\)** relative to WMC-8's \(M^2/36\).
+The larger \(M\)-threshold is an explicit tradeoff;
+neither result subsumes the other's whole parameter range.
+
+## WMC-10: the unconditional prime-number-theorem leading envelope
+
+WMC-9 is *fully effective* but uses only Chebyshev's elementary
+\(\Psi(X)\) upper bound. The ordinary, unconditional **prime number
+theorem** gives the strictly sharper LEADING size of the identical
+**complete von Mangoldt source**. This uses a known theorem about
+ordinary primes, NOT an RH or Dirichlet GRH hypothesis.
+
+**Theorem (WMC-v4-10, genuine all-prime-power asymptotic).**
+For the same exact strict inventory \(W(u)\) from WMC-5,
+\[
+\boxed{W(u)=2e^{u/2}+o(e^{u/2})\quad(u\to+\infty).}
+\tag{WMC.31}
+\]
+
+**Proof.** Put \(X=e^u\) and
+\(\Psi(X)=\sum_{n\le X}\Lambda(n)\).
+The unconditionally proved prime number theorem states
+\(\Psi(X)=X+o(X)\) as \(X\to\infty\), summing ALL prime powers;
+see [NIST DLMF §25.16(i), Eq. 25.16.3](https://dlmf.nist.gov/25.16.E3)
+(Hadamard/de la Vallée Poussin, 1896).
+The exact Stieltjes integration-by-parts identity for the STRICT
+inventory is
+\[
+W(u)=\frac{\Psi(X^-)}{\sqrt X}
++\frac12\int_1^X \frac{\Psi(t)}{t^{3/2}}\,dt,
+\qquad X=e^u.
+\tag{WMC.32}
+\]
+Here \(\Psi(X^-)=\sum_{n<X}\Lambda(n)\), and the distinction from
+\(\Psi(X)\) is at most \(\log X=o(X)\) at a prime-power endpoint;
+no endpoint term is discarded. The boundary term equals
+\(\sqrt X+o(\sqrt X)\). To evaluate the integral, split at a fixed
+threshold \(T\), apply \(|\Psi(t)-t|\le\varepsilon t\)
+for \(t\ge T\), and let \(\varepsilon\to0\): it equals
+\(\sqrt X+o(\sqrt X)\). Their sum is
+\(2\sqrt X+o(\sqrt X)\). QED.
+
+The leading coefficient **2** is sharp for the positive
+all-prime-power MASS \(W(u)\) itself, not established to be sharp for
+the actual signed primitive Weil operator.
+
+**Theorem (WMC-v4-11; unconditional, asymptotic conductor window).**
+Fix arbitrary real parameters
+\[
+0<\vartheta<\frac12,\qquad
+0<\mu<1-2\vartheta.
+\tag{WMC.33}
+\]
+Then there exists a finite threshold \(M_0(\vartheta,\mu)\)
+such that for EVERY integer \(q\) with \(M=\log q\ge M_0\),
+EVERY primitive character \(\chi\) of exact conductor \(q\),
+EVERY REAL \(L\) satisfying
+\[
+0<L\le2\log(\vartheta M)
+      =\log\bigl(\vartheta^2(\log q)^2\bigr),
+\tag{WMC.34}
+\]
+and EVERY original complex form-domain test \(f\),
+\[
+\boxed{Q_{\chi,L}(f)\ge\mu\,M\|f\|_2^2.}
+\tag{WMC.35}
+\]
+The threshold is also large enough that \(\vartheta M>1\).
+The statement is **uniform in q, chi, L and f** under these
+quantifiers; only the fixed parameters \(\vartheta,\mu\) determine
+the unknown threshold.
+
+**Proof.** The original WMC-5 physical source return, after keeping
+all signed complex phases, gives
+\[
+\mathcal P_{\chi,L}(f)\le
+H(L)\|f\|_2^2,\quad
+H(L)=W(L)+\frac12W(L/2)+\frac12W(L/3).
+\tag{WMC.36}
+\]
+Every summand of \(W\) is nonnegative, so \(H\) is nondecreasing.
+Put \(U_M=2\log(\vartheta M)\). For ALL \(0<L\le U_M\),
+\[
+H(L)\le H(U_M)
+=2\vartheta M+o(M)
++O(M^{1/2})+O(M^{1/3})
+=2\vartheta M+o(M),
+\tag{WMC.37}
+\]
+where (WMC.31) is applied separately at \(U_M\), \(U_M/2\)
+and \(U_M/3\). This is a UNIFORM envelope bound, independent
+of conductor, character and test; no character-average limit
+has been substituted for a fixed-character estimate.
+
+The exact parity constants satisfy \(c_{q,a}>M-6\), and the
+entire original compensated gamma is nonnegative. Hence
+\[
+Q_{\chi,L}(f)\ge[1-2\vartheta-o(1)]M\|f\|_2^2
+\]
+uniformly on the displayed conductor-dependent support range.
+Since \(\mu<1-2\vartheta\), choose \(M_0\) large enough for
+the error and the fixed constant 6 to fit in the strict
+gap. This proves (WMC.35), without RH/GRH or any
+fixed-character all-height positivity assumption. QED.
+
+**Examples and exact parameter boundary.**
+For \(\vartheta=1/3\), \(\mu=1/4\), all sufficiently large
+conductors have a genuine \(M/4\) lower margin on
+\(e^L\le M^2/9\); this exceeds WMC-9's \(M^2/16\)
+range, but with a NONEXPLICIT starting conductor.
+With the same margin \(\mu=1/4\), any
+\(\vartheta<3/8\) is admissible, and the limiting
+upper coefficient \(\vartheta^2\) approaches
+\(9/64\) strictly from below. Its ratio to WMC-8's
+\(1/36\) is \(81/16\). Equality
+\(\vartheta=3/8\), \(\mu=1/4\) is NOT asserted;
+the \(o(1)\) error has not been proved to have a
+favorable sign.
+
+**Counterchecks and precise obligations.**
+* The PNT is a known **unconditional theorem**, but the
+  asymptotic (WMC.31) gives no effective \(M_0\) without a
+  quantitative error estimate. A finite numerical computation
+  cannot certify this unknown threshold.
+* The bound remains a POSITIVE-mass upper envelope on
+  the ORIGINAL signed Weil prime source; no claim is
+  made that the true signed operator norm asymptotically
+  attains the coefficient 2.
+* At any fixed \(q\), even the new \(2e^{L/2}\) leading
+  budget eventually dominates the fixed \(\log q\)
+  conductor term. The result does NOT prove
+  fixed-character all-window positivity, RH or GRH.
+* Conductor-one zeta is still a SEPARATE source with
+  BOTH signed pole orientations. None of WMC-9/10
+  is applied to \(q=1\), nor to imprimitive
+  characters without an explicit transfer.
+* The full original gamma, parity, conductor,
+  strict prime-power cutoffs, actual \(\chi(n)\)
+  phases and all complex test directions are retained
+  in WMC.1 and WMC.36. Absolute values are introduced
+  only as a rigorous upper-bound operation, never as
+  a replacement of the original Weil form.
+
+**Verification and provenance.** The new sibling
+[WeilPNTMovingConductorCertificate.py](WeilPNTMovingConductorCertificate.py)
+checks the exact rational WMC-9 constants, the
+\(M\ge512\) margin, strict parameter inequalities,
+and the need for \(\mu<1-2\vartheta\) rather than
+equality. Locally executed under Python 3.13.5:
+PASS; \`py_compile\`: PASS; Python \`-O\`
+self-test: deliberately REJECTED. Exact tested source
+SHA-256:
+\`b928eeb32fefc53dc2f12ca96598369de404f1b95c501dfe4be259359303aa07\`;
+Git blob \`996c6226fc9bf9466ceca6fcea6ad740e9feb6db\`.
+The finite script does **not** prove the prime number
+theorem or certify any qualitative \(o(1)\) threshold.
+An initial handwritten expected-rational test failed
+and was corrected to the exact
+\(11041/20625\); the fixed source passed.
+
+The original WMC-7/8 certificate and its historical
+source identity remain unchanged. Source baseline
+\`grwtsk/math/main\` at
+\`f94754aaf09a83dc693665e330dd4ea32943abda\`,
+Lean \`leanprover/lean4:v4.34.1\`, mathlib
+\`d13f23b723b8a846827a245b89c10fc7d3f11612\`.
+Coordinating issue \`grwtsk/math#1801\`.
+The canonical Noe proof-automation skill was not
+accessible; no Lean execution/build/kernel replay
+or transitive axiom audit occurred. Source proof
+status: WRITTEN; rational scalar certificate: RUN;
+PNT: CLASSICAL_UNCONDITIONAL_INPUT; independent
+analytical review and originality: UNASSESSED.
+No new research axiom, sorry/admit, root import,
+dependency pin, completed-GRH target change or
+unconditional all-window claim is introduced.
