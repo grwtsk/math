@@ -121,3 +121,48 @@ A source file with a complete Lean script is a MANUAL LEAN SOURCE PROOF CANDIDAT
 Next mathematical target: the original full real odd Weil form H1 bilinear/mixed continuity, retaining all active prime powers and paired character weights, gamma parity/conductor and both signed zeta poles, using the new actual gamma shift allowance. This is distinct from the MUCH harder RH/Dirichlet GRH premises: (i) true hypothetical off-line zero -> normalized exponentially negative original physical tests with the completed source and all tails, (ii) universal cofinal all-dimension subexponential LOWER budget for the original signed arithmetic Weil matrices. Neither is solved here.
 
 Primary source comparisons: existing grwtsk/math WeilGammaH1ShiftBudget, WeilH1SourceContinuity.md Section IV, GammaNearZero.kernel_moment_bounds, ExactGammaTail.tailMass_bounds, and the exact pinned Mathlib FTC/Prod integral theorems. No mathematical novelty asserted. Canonical noe-proof-automation skill was unavailable on main; no dependent Noe proof automation, browser worker, messaging, scheduler or background execution was invoked.
+
+## 8. Exact-pin static Fubini orientation repair (2026-11-13)
+
+**Source-revision audit:** The prior manually authored Lean proof candidate at Git blob
+08404cd50364dbacb9479e7e0211f41d051795a3 used
+integrable_prod_iff' on the product measure
+
+    μ.prod volume,
+    μ = volume.restrict (Ioc 0 r),
+
+in its translated_square_integrable_prod proof. At Mathlib revision
+d13f23b723b8a846827a245b89c10fc7d3f11612, the theorem
+integrable_prod_iff' requires almost-everywhere integrability in the
+FIRST variable for each fixed SECOND variable, and integrability of the
+resulting FIRST-variable norm integral over the SECOND variable.
+
+That is the **opposite orientation** from the actual candidate proof:
+for each shift u in the FIRST-variable interval, the SECOND-variable
+function t ↦ first(t+u)^2 is Lebesgue integrable by the genuine
+whole-line L2 first derivative and translation invariance. Its
+whole-line norm integral is exactly the constant D=∫_R first(t)^2 dt,
+which is integrable over the finite FIRST-variable shift interval.
+
+The pinned Mathlib theorem **integrable_prod_iff** (without prime) has
+precisely these two hypotheses:
+
+    (∀ᵐ u ∂μ, Integrable (fun t => first(t+u)^2) volume)
+    ∧ Integrable (fun u => ∫ t, ‖first(t+u)^2‖) μ.
+
+Accordingly the maintained source changes exactly ONE Lean line,
+from integrable_prod_iff' hm to integrable_prod_iff hm. No definitions,
+theorem statements, imports, shift orientation, measure, constants,
+or original Weil form terms are changed. The subsequent use of
+Integrable.integral_prod_right is correctly oriented: it constructs
+integrability of the OTHER iterated integral over t, which is
+what the outer monotonicity proof requires.
+
+**Actual verification:** Direct comparison against the exact
+pinned Mathlib declarations PASS; one-line source patch inspected
+PASS. Lean elaboration, full import build, kernel replay, transitive
+axiom audit and independent review **NOT_RUN**, because the matching
+Lean/Lake/Elan toolchain and compiled Mathlib are unavailable in this
+session. This repair removes one identifiable proof-obligation
+mismatch; it does NOT certify the rest of the proof or its imports.
+The RH/Dirichlet GRH research status is unchanged.

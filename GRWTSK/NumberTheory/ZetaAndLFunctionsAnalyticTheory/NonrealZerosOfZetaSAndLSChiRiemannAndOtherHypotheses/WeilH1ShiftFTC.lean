@@ -133,7 +133,7 @@ private theorem translated_square_integrable_prod
         (μ.prod volume) := by
     apply Measurable.aestronglyMeasurable
     fun_prop
-  apply (integrable_prod_iff' hm).2
+  apply (integrable_prod_iff hm).2
   constructor
   · filter_upwards [] with u
     exact (measurePreserving_add_right volume u).integrable_comp_of_integrable hf2
