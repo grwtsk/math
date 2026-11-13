@@ -200,15 +200,7 @@ The last symmetric matrix has nonnegative entries \(A_{ij}=\beta_{ij}\sqrt{J_iJ_
 \]
 All terms are genuine finite nonnegative quantities, and (17) closes the missing sign without a floating-point eigenvalue or a positivity assumption for beta. Insert in (14) to get (18). QED.
 
-**Explicit arithmetic bound from certified rational finite inequalities:** The adjacent script produces rational LOWER/UPPER enclosures \(\beta_{ij}^{\rm lo}\le\beta_{ij}\le\beta_{ij}^{\rm hi}\), a rigorous positive lower bound on the WHOLE potential, and rational bounds \(J_i\le J_i^{\rm hi}\). Choose the positive, symmetric, INTEGER witness
-\[
-\begin{aligned}
-v_0,\ldots,v_9={}&
-(1000000,\ 1198160,\ 1304730,\ 1412210,\ 1506970,\\
-&1506970+799? ,\ 1651070,\ 1699470,\ 1731840,\ 1748050).
-\end{aligned}
-\]
-For avoidance of transcription ambiguities, the authoritative exact integer list is the adjacent checker:
+**Explicit arithmetic bound from certified rational finite inequalities:** The adjacent script produces rational LOWER/UPPER enclosures \(\beta_{ij}^{\rm lo}\le\beta_{ij}\le\beta_{ij}^{\rm hi}\), a rigorous positive lower bound on the WHOLE potential, and rational bounds \(J_i\le J_i^{\rm hi}\). Choose the following explicit symmetric positive INTEGER witness (identical to the executed checker):
 \[
 \boxed{
 (v_0,\ldots,v_9)=
@@ -218,7 +210,7 @@ v_{19-i}=v_i .
 }
 \tag{19}
 \]
-The nonauthoritative mnemonic expression immediately above (19) is NOT used in any certificate or proof; only the explicit ten integers in (19) are.
+Only the explicit ten integers in (19) are used in the finite certificate.
 
 The locally RUN exact Fraction checker proves the stronger finite rational inequalities
 \[
