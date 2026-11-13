@@ -1,6 +1,6 @@
 # An explicit growing-conductor window for the original primitive Weil quadratic form
 
-Local attribution: grwtsk contributors. Edition 2 (three-band strengthening), 2026-11-12.
+Local attribution: grwtsk contributors. Edition 3 (exact Chebyshev and conductor-window strengthening), 2026-11-12.
 MSC2020: 11M06, 11M26, 11N05, 11N13, 47A12.
 
 **Evidence:** WRITTEN_ANALYTICAL_ARGUMENT with separate finite exact-integer checks EXECUTED. Lean elaboration, dependency build, fresh kernel replay and transitive axiom audit: **NOT_RUN**. Independent analytic review: **UNASSESSED**. Originality: **UNASSESSED**; the Chebyshev estimate, binomial/lcm induction, and conductor domination are elementary. This is **not** a proof of primitive GRH or RH.
@@ -390,3 +390,190 @@ Lean `leanprover/lean4:v4.34.1`; mathlib
 Coordination `grwtsk/math#1801`. No Lean execution,
 transitive axiom audit, independent mathematical review,
 unconditional all-window positivity or RH/GRH proof is claimed.
+
+## WMC-7: retain the exact Chebyshev constant and its Abel endpoint
+
+The elementary lcm induction in WMC-1 establishes **more than**
+\(\Psi(X)\le2X\): it proves \(U_N\le4^N\) for every integer N.
+Thus, putting \(\alpha=\log4=2\log2\), for every real \(X\ge1\),
+\[
+0\le\Psi(X)=\log U_{\lfloor X\rfloor}
+\le(\log4)\lfloor X\rfloor\le\alpha X.
+\tag{WMC.18}
+\]
+This is a complete all-prime-power bound; it is **not** the
+ordinary-prime \(\theta(X)\) bound substituted for \(\Psi(X)\).
+Using the actual Stieltjes/Abel formula WMC.5, and retaining the
+lower endpoint of the integral rather than discarding it, gives
+\[
+\begin{aligned}
+\sum_{2\le n\le X}\frac{\Lambda(n)}{\sqrt n}
+&=\frac{\Psi(X)}{\sqrt X}
+  +\frac12\int_1^X\frac{\Psi(y)}{y^{3/2}}\,dy\\
+&\le\alpha\sqrt X+\alpha(\sqrt X-1)
+=\alpha(2\sqrt X-1).
+\end{aligned}\tag{WMC.19}
+\]
+Therefore the exact strict arithmetic mass of WMC-5 satisfies,
+for every **real** \(u>0\),
+\[
+\boxed{W(u)\le\alpha(2e^{u/2}-1).}\tag{WMC.20}
+\]
+No prime-power index, branch of a character, endpoint jump or
+infinite tail is deleted. The upper bound follows from a finite
+source inventory; the inequality is valid for all u without assuming
+PNT, RH, GRH or any cancellation of character phases.
+
+**Theorem (full original-source sharp-Chebyshev three-band bound).**
+Fix any primitive **nonprincipal** Dirichlet character \(\chi\) of
+conductor \(q>1\), either parity, **every** \(L>0\), and **every**
+complex \(f\) in the original logarithmic Weil form domain
+\(V_{L,a+1/2}\). The signed prime-power source defined in WMC.1
+satisfies
+\[
+\boxed{\mathcal P_{\chi,L}(f)
+\le \alpha\left(2e^{L/2}+e^{L/4}+e^{L/6}-2\right)\|f\|_2^2.}
+\tag{WMC.21}
+\]
+**Proof.** WMC-5 already proves the exact source identity/inequality
+\(\mathcal P_{\chi,L}(f)\le[W(L)+W(L/2)/2+W(L/3)/2]\|f\|_2^2\).
+Substitute (WMC.20) **separately at each of the three real cutoffs**.
+The negative Abel lower-endpoint constants sum to
+\(-\alpha(1+1/2+1/2)=-2\alpha\), which is retained rather than
+silently dropped. The two-/three-site physical correlation bounds and
+all original complex \(\chi(n)\) phases remain those of WMC-5.
+The result uses the complete original \(\Lambda(n)/\sqrt n\) source,
+not a positive substitute matrix. QED.
+
+The original parity constants admit a sharper *elementary* lower bound
+\(c_{q,a}>\log q-6\). Indeed
+\[
+ c_{q,0}=\log q-c_0,
+\quad c_0=\log\pi+\gamma+\pi/2+3\log2,
+\quad c_{q,1}=c_{q,0}+\pi.
+\]
+Use \(\gamma\le1\) (the classical \(H_N\le1+\log N\) bound),
+\(\pi<22/7\), and
+\(e^{6/5}>1+6/5+(6/5)^2/2+(6/5)^3/6=401/125>22/7\),
+which proves \(\log\pi<6/5\).
+The positive arctanh series gives the rational enclosure
+\[
+\frac23+\frac2{81}<\log2<\frac23+\frac2{81}+\frac1{540}
+<\frac{139}{200}.
+\tag{WMC.22}
+\]
+The tail bound follows by replacing all \(2k+1\) denominators for
+\(k\ge2\) by 5 and summing the geometric ratio 1/9; in
+particular \(4/3<\alpha<139/100\).
+Consequently
+\[
+ c_0<\frac65+1+\frac{11}7+\frac{417}{200}
+=\frac{8199}{1400}<6.
+\tag{WMC.23}
+\]
+For primitive \(q>1\) there is **no** zeta pole; the complete
+positive compensated gamma is left unaltered and nonnegative.
+Combining this stronger scalar with (WMC.21) gives the unconditional
+all-support lower bound, whose right side may be negative,
+\[
+\boxed{
+Q_{\chi,L}(f)\ge
+\left[\log q-6-\log4\left(2e^{L/2}+e^{L/4}+e^{L/6}-2\right)\right]\|f\|_2^2.}
+\tag{WMC.24}
+\]
+This estimate applies to the **same original source** as WMC-1--6,
+with all prime powers, conductor, parity, zero values at ramified
+primes and genuinely complex phases. The improvement is purely an
+arithmetic majorant and does not supply fixed-character signed
+cancellation at arbitrarily large supports.
+
+## WMC-8: a fourfold larger positive cutoff in the conductor aspect
+
+**Theorem (unconditional, full-test moving window).** For any integer
+\(q\) with \(M=\log q\ge32\), every primitive character of **exact**
+conductor \(q\) (necessarily nonprincipal), every real
+\[
+\boxed{0<L\le \log\!\left(\frac{M^2}{36}\right),}
+\tag{WMC.25}
+\]
+and every complex test \(f\) in its original gamma form domain,
+\[
+\boxed{
+Q_{\chi,L}(f)\ge
+\left(\frac{10313}{28800}M-\frac{10}{3}\right)\|f\|_2^2
+\ge\left(\frac{M}{4}+\frac{113}{900}\right)\|f\|_2^2.}
+\tag{WMC.26}
+\]
+The previous WMC-6 cutoff was \(e^L\le M^2/144\), so the allowed
+\(e^L\) range increases by an exact **factor four**, or support
+length by \(\log4\), at the **same conductor threshold**.
+
+**Proof.** Let \(s=e^{L/2}>1\) and \(v=M/6\), so
+\(s\le v\) and \(v\ge16/3>256/49\), \(v^2>27\).
+Taking nonnegative squares and cubes proves
+\[
+\sqrt{s}\le\sqrt v\le\frac7{16}v,
+\qquad s^{1/3}\le v^{1/3}\le\frac13v.
+\]
+Hence \(2s+\sqrt s+s^{1/3}\le(133/48)v\).
+With the *oppositely directed* rational bounds
+\(\alpha<139/100\) and \(\alpha>4/3\),
+\[
+\begin{aligned}
+\alpha(2s+\sqrt s+s^{1/3}-2)
+&\le\frac{139}{100}\frac{133}{48}\frac M6
+   -2\frac43\\
+&=\frac{18487}{28800}M-\frac83.
+\end{aligned}
+\]
+Insert this in (WMC.24) to obtain the first inequality in
+(WMC.26). For the second, the remaining **exact rational** gap is
+\[
+\left(\frac{10313}{28800}-\frac14\right)M-\frac{10}3
+=\frac{3113}{28800}M-\frac{10}3
+\ge \frac{3113}{28800}\,32-\frac{10}3
+=\frac{113}{900}>0.
+\]
+Every constant dependency is explicit and all quantifiers are
+preserved. The nonprincipal conductor/parity source is unchanged.
+Conductor-one zeta remains excluded because of its two signed poles.
+QED.
+
+**Actual finite verification and falsification.** The adjacent new
+[WeilSharpChebyshevConductorCertificate.py](WeilSharpChebyshevConductorCertificate.py)
+contains an **independent exact-Fraction** Machin enclosure of
+\(\pi<22/7\), the positive-tail \(\log2\) rational bounds,
+the precise \(\log\pi<6/5\) exponential comparison, both scalar
+coefficients, the endpoint \(113/900\) gap, and the factor-four
+cutoff relation. It executed locally (Python 3.13.5, Debian 13)
+with **2048** exact lcm/prime-power source checks,
+**729** complex three-site Gaussian-integer checks, and
+**511** strict three-band rational fixture partition checks.
+The fixture weights are explicitly *synthetic rational weights on
+true prime-power positions*, not claimed equal to the irrational
+original \(\Lambda(n)/\sqrt n\). The **universal mathematical
+proof** is (WMC.18)--(WMC.26), not the finite test.
+Python bytecode compilation passed, and `python3 -O` was rejected.
+Exact source SHA-256:
+`2f2f5bec2cb5d0b4d7fcd60685e58ba63f64e59396e21625d10b584328a5defb`;
+exact self-test output SHA-256:
+`ec70b1ecf2e0192df6b7ff080f410e371408be014c117cbf05d813fbf7f48a31`.
+The complete output and command are recorded in coordination issue
+`grwtsk/math#1801`. The sharp finite-chain prior art is
+Haagerup--de la Harpe, *Proc. Amer. Math. Soc.* 115 (1992),
+Theorem 1; the Chebyshev/lcm prime-power identity is classical.
+No originality or independent analytical review is claimed.
+
+**First open arithmetic premise.** The improved bound still has
+\(\asymp e^{L/2}\) worst-case prime growth for any fixed q.
+It therefore cannot prove the **fixed-character all-window**
+Weil nonnegativity required for primitive GRH, nor zeta RH:
+all primitive characters (including q=1), all L>0 and all tests
+with true gamma/parity, signed prime powers, conductor and both
+applicable pole orientations remain the universal target.
+No infinite-height signed cancellation, operator-norm transfer,
+source-exact universal certificate existence or new Lean proof is
+provided. Formal Lean elaboration/build, fresh kernel checking,
+transitive axiom audit and independent mathematical review remain
+**NOT_RUN/UNASSESSED**. No new research axiom, sorry/admit, import,
+mathlib pin or original conjecture target is introduced.
