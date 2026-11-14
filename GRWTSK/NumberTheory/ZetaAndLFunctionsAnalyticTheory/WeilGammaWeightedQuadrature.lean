@@ -323,4 +323,132 @@ theorem primitiveArithmeticValue_weighted_enclosure
   dsimp only at hends ⊢
   constructor <;> linarith [hends.1, hends.2, hout'.1, hout'.2]
 
+
+/-!
+## Finite exponential cell coefficients returned to the original arithmetic value
+
+The existing lower/upper gamma-cell mass bounds multiply nonnegative original
+translation energies and sum without replacing any signed prime-power term.
+The finite upper bound for the total cell mass also pays the outer sampling error.
+The new arithmetic enclosure is a direct algebraic consequence of the source
+kernelCellMass_finite_enclosure and primitiveArithmeticValue_weighted_enclosure.
+
+SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN / FRESH_KERNEL_NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN / INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Exact whole-line sample energies and real transcendental expressions remain;
+no numeric rounding, zeta pole, completed explicit formula, density, universal
+test-class positivity, RH or GRH result is asserted.
+-/
+
+/-- Finite lower gamma-cell mass bound, retaining the upper-endpoint remainder. -/
+def cellMassLower (a n m : ℕ) (u v : ℝ) : ℝ :=
+  max 0 ((tailPrefix a n u - tailPrefix a m v -
+    tailUpper (a + 2 * m) v) / 2)
+
+/-- Finite upper gamma-cell mass bound, retaining the lower-endpoint remainder. -/
+def cellMassUpper (a n m : ℕ) (u v : ℝ) : ℝ :=
+  (tailPrefix a n u + tailUpper (a + 2 * n) u -
+    tailPrefix a m v) / 2
+
+/-- Source-return enclosure: the untouched primitive nonprincipal arithmetic
+value, not the full completed L-function form. Every cell and total error mass
+is bounded using finite exponential prefixes with both endpoint remainders.
+The inner sampled whole-line energies remain exact integrals. -/
+theorem primitiveArithmeticValue_finiteCellCoefficient_enclosure
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q)
+    (hprimitive : χ.IsPrimitive) (hnonprincipal : χ ≠ 1)
+    {ι : Type*} (I : Finset ι) (u v s : ι → ℝ)
+    (nTail nTotal mTotal : ℕ) (nCell mCell : ι → ℕ)
+    {f : ℝ → ℂ} {L : ℝ≥0} (hL : LipschitzWith L f) (hf : MemLp f 2 volume)
+    {A R ε δ : ℝ} (hA : 0 ≤ A) (hR : 0 < R) (hε : 0 < ε) (hεR : ε ≤ R)
+    (hsupport : ∀ t, t ∉ Icc (-A) A → f t = 0) (hcut : 2 * A ≤ R)
+    (hcells : ∀ i ∈ I, 0 < u i ∧ v i ≤ R ∧ s i ∈ Icc (u i) (v i))
+    (hcover : (⋃ i ∈ I, Ioc (u i) (v i)) = Ioc ε R)
+    (hdisjoint : Set.Pairwise (↑I)
+      (fun i j => Disjoint (Ioc (u i) (v i)) (Ioc (u j) (v j))))
+    (hδ : 0 ≤ δ)
+    (hmesh : ∀ i ∈ I, ∀ r ∈ Ioc (u i) (v i), |r - s i| ≤ δ) :
+    let a := gammaParity χ
+    let base := (gammaConstant q a + tailPrefix a nTail R) * energy f
+    let prime := twistedPrime A χ (fun k => correlation f (Real.log (k : ℝ)))
+    let error := shiftEnergySlope A R L * δ * cellMassUpper a nTotal mTotal ε R
+    base + (∑ i ∈ I, cellMassLower a (nCell i) (mCell i) (u i) (v i) *
+      energy (fun t => f (t + s i) - f t)) - prime - error ≤
+      primitiveArithmeticValue χ hprimitive hnonprincipal A f ∧
+    primitiveArithmeticValue χ hprimitive hnonprincipal A f ≤
+      base + (∑ i ∈ I, cellMassUpper a (nCell i) (mCell i) (u i) (v i) *
+        energy (fun t => f (t + s i) - f t)) - prime + error +
+        headConstant A R L * ε ^ 2 / 2 +
+        tailUpper (a + 2 * nTail) R * energy f := by
+  classical
+  let a : ℕ := gammaParity χ
+  let base : ℝ := (gammaConstant q a + tailPrefix a nTail R) * energy f
+  let prime : ℝ := twistedPrime A χ (fun k => correlation f (Real.log (k : ℝ)))
+  let cap : ℝ := cellMassUpper a nTotal mTotal ε R
+  let error : ℝ := shiftEnergySlope A R L * δ * cap
+  let E : ι → ℝ := fun i => energy (fun t => f (t + s i) - f t)
+  let M : ι → ℝ := fun i => kernelCellMass a (u i) (v i)
+  let lo : ι → ℝ := fun i => cellMassLower a (nCell i) (mCell i) (u i) (v i)
+  let hi : ι → ℝ := fun i => cellMassUpper a (nCell i) (mCell i) (u i) (v i)
+  change
+    base + (∑ i ∈ I, lo i * E i) - prime - error ≤
+      primitiveArithmeticValue χ hprimitive hnonprincipal A f ∧
+    primitiveArithmeticValue χ hprimitive hnonprincipal A f ≤
+      base + (∑ i ∈ I, hi i * E i) - prime + error +
+        headConstant A R L * ε ^ 2 / 2 +
+        tailUpper (a + 2 * nTail) R * energy f
+  have hE (i : ι) : 0 ≤ E i := by
+    change 0 ≤ energy (fun t => f (t + s i) - f t)
+    exact integral_nonneg (fun _ => sq_nonneg _)
+  have hcell (i : ι) (hmem : i ∈ I) : lo i ≤ M i ∧ M i ≤ hi i := by
+    have huv : u i ≤ v i :=
+      (hcells i hmem).2.2.1.trans (hcells i hmem).2.2.2
+    simpa only [lo, M, hi, cellMassLower, cellMassUpper] using
+      (kernelCellMass_finite_enclosure a (nCell i) (mCell i)
+        (hcells i hmem).1 huv)
+  have hLower : (∑ i ∈ I, lo i * E i) ≤ ∑ i ∈ I, M i * E i := by
+    apply Finset.sum_le_sum
+    intro i hmem
+    exact mul_le_mul_of_nonneg_right (hcell i hmem).1 (hE i)
+  have hUpper : (∑ i ∈ I, M i * E i) ≤ ∑ i ∈ I, hi i * E i := by
+    apply Finset.sum_le_sum
+    intro i hmem
+    exact mul_le_mul_of_nonneg_right (hcell i hmem).2 (hE i)
+  have hcap : kernelCellMass a ε R ≤ cap := by
+    simpa only [cap, cellMassUpper] using
+      (kernelCellMass_finite_enclosure a nTotal mTotal hε hεR).2
+  have hErr :
+      shiftEnergySlope A R L * δ * kernelCellMass a ε R ≤ error := by
+    exact mul_le_mul_of_nonneg_left hcap
+      (mul_nonneg (slope_nonneg hA hR.le L) hδ)
+  have hsource := primitiveArithmeticValue_weighted_enclosure χ
+    hprimitive hnonprincipal I u v s nTail hL hf hA hR hε hεR
+    hsupport hcut hcells hcover hdisjoint hδ hmesh
+  change
+    base + (∑ i ∈ I, M i * E i) - prime -
+      shiftEnergySlope A R L * δ * kernelCellMass a ε R ≤
+      primitiveArithmeticValue χ hprimitive hnonprincipal A f ∧
+    primitiveArithmeticValue χ hprimitive hnonprincipal A f ≤
+      base + (∑ i ∈ I, M i * E i) - prime +
+        shiftEnergySlope A R L * δ * kernelCellMass a ε R +
+        headConstant A R L * ε ^ 2 / 2 +
+        tailUpper (a + 2 * nTail) R * energy f at hsource
+  constructor
+  · calc
+      base + (∑ i ∈ I, lo i * E i) - prime - error ≤
+          base + (∑ i ∈ I, M i * E i) - prime -
+            shiftEnergySlope A R L * δ * kernelCellMass a ε R := by
+        linarith [hLower, hErr]
+      _ ≤ primitiveArithmeticValue χ hprimitive hnonprincipal A f := hsource.1
+  · calc
+      primitiveArithmeticValue χ hprimitive hnonprincipal A f ≤
+          base + (∑ i ∈ I, M i * E i) - prime +
+            shiftEnergySlope A R L * δ * kernelCellMass a ε R +
+            headConstant A R L * ε ^ 2 / 2 +
+            tailUpper (a + 2 * nTail) R * energy f := hsource.2
+      _ ≤ base + (∑ i ∈ I, hi i * E i) - prime + error +
+            headConstant A R L * ε ^ 2 / 2 +
+            tailUpper (a + 2 * nTail) R * energy f := by
+        linarith [hUpper, hErr]
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.GammaWeightedQuadrature
