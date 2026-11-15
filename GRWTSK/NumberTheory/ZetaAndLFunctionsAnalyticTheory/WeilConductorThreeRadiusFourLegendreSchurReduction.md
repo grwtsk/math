@@ -7979,3 +7979,689 @@ assert increment > F('.00879') > F('.00429')
 assert F('.672')**2-F('.00879') < F('.66543')**2
 print("PASS new collar transfer and strict lower obstruction to the fixed residual test")
 ~~~
+
+## The corrected radius-four residual on the actual collar direction
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational guards. Lean elaboration, fresh kernel replay and
+transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep $D=D_{s_0}=T_P+s_0I$, $w=Dg_0$, $z_p=\Pi_H w$,
+$p=\kappa g_*$, $\bar z=z_p+p$, and the exact corrected
+residual $24r=\bar z+W$ for $r=g_*-H_+g_*/24$. The original
+radius-four gamma, filter, signed shifts, paid pair, collar and
+Schur inverse domains are retained. The bounds below give
+$$
+ \|z_p\|<0.65056,\qquad \|\bar z\|<0.664,\qquad
+ \operatorname{Re}\langle\bar z,W\rangle<0.00175,\qquad
+ \|W\|<0.0175,\qquad \|r\|<0.0278 .
+$$
+This proves the directional norm supplier for the inverse criterion.
+Coercivity of $H_+$ on the whole complement remains open.
+
+### The midpoint carrier and the four parameter corners
+
+Let $\alpha_m$ be the rational midpoint of the existing carrier bracket for the nonnative sine $u$. Use the same normalized real sine $y$ at its genuine native carrier $\omega=(j-1)\pi/4$, with physical norm exactly one after its dividing factor $2$. Let $u_m$ be the exact normalized sine at $\alpha_m$, $v_m=(y-\langle u_m,y\rangle u_m)/\|y-\langle u_m,y\rangle u_m\|$, and $P_m$ project orthogonally onto $\operatorname{span}(u_m,v_m)$. The operator $T_P$, including the same 916 signed compressed shifts, is independent of both carriers. Set
+$$
+ h_m=t u_m-\eta_c v_m,\qquad g_m=-(I-P_m)T_Ph_m.
+$$
+The existing inverse intervals $t\in(0.1024515162,0.1024672113)$ and $\eta_c\in(0.0069509890,0.0069592349)$ are enclosed by rational boxes. At fixed midpoint carrier, $g_m$ and $Dg_m$ are affine in $(t,\eta_c)$. Compute the four pairs of rational endpoints of this rectangle, keeping $\Lambda=t/\eta_c$ at each corner, and retain both true box bounds.
+
+For each corner run the original full signed cell procedure with only the nonnative carrier replaced by the exact rational point $\alpha_m$. Recompute the directed signed prime mean $\langle u_m,T_Pu_m\rangle$, the normalized overlap, and all other Gram and prime entries at that point. Keep the exact native divisor $2$ and its directed $\pi$ bracket. The midpoint prime mean uses its own directed atom sum here. For all four corners the sweep retains 212182 cells, 215512 events, and 459 exact left-endpoint ties. Its directed integral includes the slow angular contribution and bounds the complete fast contribution as in the existing sweep. The four upper displays for $\|Dg_m\|$ are $0.7345939996752$, $0.7346105550610$, $0.7347043985993$, and $0.7347209532055$, in increasing $t$, then increasing $\eta_c$. Their exact upper maximum is below $0.734721$. The corresponding base-cell norm guards give maximum upper $\|g_m\|<0.188065512$ and lower norm at the lower-left corner greater than $0.1880357872$. The upper bounds extend to the entire rectangle by affine parameter dependence and convexity. The lower bound is used only at the one corner.
+
+### Analytic transport back to the true first carrier
+
+For two nonzero real physical sine inputs $f,\tilde f$ with norms $C,\tilde C$, the identity
+$$
+ \|f-\tilde f\|^2=(C-\tilde C)^2+
+  C\tilde C\|f/C-\tilde f/\tilde C\|^2
+$$
+shows that normalization costs at most $(C\tilde C)^{-1/2}$ on the norm difference. The two raw sine norms exceed $1.997$, and the derivative bound in $L^2([-4,4])$ for the carrier variation is $\|x\|_2=\sqrt{128/3}$. Using $|\alpha-\alpha_m|\le3.95\cdot10^{-7}$, $\|u-u_m\|<1.3\cdot10^{-6}$. Both orthogonalization denominators exceed $0.998$ and $|\langle u_m,y\rangle|<0.063$. Applying the same normalization identity to $y-\langle u,y\rangle u$ and its midpoint counterpart gives
+$$
+ \|v_0-v_m\|<1.4\cdot10^{-6}.
+$$
+For the two orthogonal projections $P_0,P_m$, each of $\|(I-P_0)P_m\|,\|(I-P_m)P_0\|$ is bounded by the square root of the sum of squares of these two column differences. For example, represent a unit vector in $P_m$ on its orthonormal basis and compare with the vector with identical coefficients in $P_0$. The difference of the projections has norm at most the maximum of these two estimates, by writing $P_0-P_m=P_0(I-P_m)-(I-P_0)P_m$ with orthogonal input and output decompositions. Thus $\|P_0-P_m\|<1.92\cdot10^{-6}$.
+
+Put $d_h=t_{\max}(1.3\cdot10^{-6})+\eta_{\max}(1.4\cdot10^{-6})$. With $\|h_m\|<0.103,\ \|T_P\|<57.7531,\ \|D\|<60.3073$, the true transport gives
+$$
+ \|g_0-g_m\|
+ <57.7531(d_h+0.103(1.92\cdot10^{-6}))<0.00001968,\qquad
+ \|D(g_0-g_m)\|<0.00119.
+$$
+Use the exact expression for the cost before rounding, giving $\|w\|<0.735908$. Since the corresponding actual unshifted projected $T_P$ columns on $u,v_0$ have norms below $2.45,1.509$, respectively, the midpoint columns have norms below $2.451,1.510$ by the same transport with unit coefficients. Starting at the directed lower-left corner, the linear parameter variation costs at most
+$$
+ 2.451(t_{\max}-t_{\min})+1.510(\eta_{\max}-\eta_{\min}).
+$$
+Combining with the exact carrier transport and the upper corner bound gives $0.187965<\|g_0\|<0.188086$.
+
+### Raw plane subtraction and the true transmitted direction
+
+Write $a=\|g_0\|^2$ and $c=\langle f_0,g_0\rangle$, where $f_0=-(I-P_0)T_Pv_0$. The exact raw plane coordinates of $w$ on $u,v_0$ are $-(a+\eta_c c)/t,-c$. Indeed $g_0= -t(I-P_0)T_Pu-\eta_c f_0$, $g_0\perp P_0$, and $T_P$ is self-adjoint. Equivalently $\langle h,w\rangle=-a$. Cauchy--Schwarz restricted to the raw two-plane gives the correlated subtraction
+$$
+ \|z_p\|^2\le \|w\|^2-\|P_0w\|^2
+ \le \|w\|^2-\frac{\|g_0\|^4}{t^2+\eta_c^2}.
+$$
+Here $\Pi_HP_0=0$ exactly, and there is no identification of the raw plane with the actual last pivot plane. Insert the directed pre-rounded enclosures above and $t_{\max}^2+\eta_{\max}^2$ to obtain $\|z_p\|<0.65056$.
+
+Use the established $\|g_*-g_0\|<0.000686$ for this budget.
+Thus $\|g_*\|<0.188772$ from the new proxy bound.
+
+Since both $g_*,g_0$ are in $P_0^\perp$, the comparison across the scalar is
+$$
+ \operatorname{Re}\langle z_p,g_*\rangle
+ =\operatorname{Re}\langle w,g_0\rangle+
+       \operatorname{Re}\langle (I-P_0)w,g_*-g_0\rangle .
+$$
+The same bound $0.65056$ was just proved on $(I-P_0)w$ before its last compression. With $\operatorname{Re}\langle w,g_0\rangle<0.0187272$, the upper price is $0.0187272+0.65056(0.000686)$. Finally $\kappa=\|g_*\|^2/[t(1+\rho t)]$, equivalently $\kappa=(1/t-\sigma)\|g_*\|^2$. The verified $\sigma>0.1229$ and the new norm bound give $\kappa<0.344$. In the exact square
+$$
+ \|\bar z\|^2=\|z_p\|^2+
+  2\kappa\operatorname{Re}\langle z_p,g_*\rangle+\kappa^2\|g_*\|^2
+$$
+insert all unrounded bounds. The rational upper bound is below $0.664^2$ and gives
+$0.672^2-\|\bar z\|^2>0.0108$ using the unrounded estimates.
+
+### Angular bounds on the two original low spaces
+
+Keep the original signed multiplier $m_{\rm res}=\mathbf1_{\mathcal D}w(A-P_4)$, the original $P=P_{23}$, and the old $U=\Pi_F (Y_{38170000,11000}\cap Q_{23}\mathcal H)$. The actual source projections satisfy
+$$
+ \|RP\|<0.547,\quad \|R|_U\|<0.009,\quad
+ \|\Pi_U RP\|<0.000224,\quad \|J\|<0.0102 .
+$$
+Use ordinary physical norms throughout.
+
+Let $H_1=31075000$. On the portion of the original residual set with $|\nu|\le H_1$, its low-stop filter law gives $0\le w\le2\cdot10^{-5}$. Use the unchanged $|A-P_4|\le300$. Above $H_1$ use $w\le1$, extend the estimate over the entire angular tail, and retain the signed prime multiplier as one sum before squaring. For a unit vector in $P$, the trace-zero condition cancelling the first moment gives
+$$
+ |\widehat p(\nu)|^2\le C_P |\nu|^{-8},\qquad
+ C_P=\frac{(\pi/4)^6\sum_{j\le23000000} j^6}
+ {[1-(\omega_{\max}/H_1)^2]^2}.
+$$
+In particular the common square root of the exact two-sided integral of the envelope is at most $0.020612$. For $|\nu|\ge H_1$ the existing gamma law $-2\le A(\nu)\le \log|\nu|+1$ implies $|A(\nu)|\le \log|\nu|+1$. For the integral of its square against $|\nu|^{-8}$, substitute $|\nu|=H_1e^x$. Relative to the integral of $|\nu|^{-8}$, the resulting average is
+$$
+ (\log H_1+1+1/7)^2+1/49<18.397^2 .
+$$
+
+For the prime term write $P_4(\nu)=\sum_{\ell}a_\ell e^{i\nu\ell}$ over its 916 signed lag rows, where $a_{\pm\log(p^e)}=\log(p)\chi_3(p^e)/\sqrt{p^e}$. All these lags are distinct and their ordered gaps exceed $\Delta=1/2980$, by integrating $1/x$ between successive integers at most $2980$ and treating the gap between opposite signs separately. The exact rational inventory gives $\sum_\ell |a_\ell|^2<60$. Off diagonal, one integration by parts bounds the magnitude of the two-sided Gram integral in angular measure by $2/(\pi|\ell-\ell'|H_1^8)$. The diagonal integral is $1/(7\pi H_1^7)$. The off-diagonal row sum relative to the diagonal is at most $28\sum_{j=1}^{915}(1/j)/(H_1\Delta)$. Bounding the harmonic sum by $8$ gives a relative square root for the prime-weighted integral below $7.83$, using the exact signed sum rather than termwise absolute mass. The two tail estimates and the original below-$H_1$ bound give the following angular operator estimate before physical compression
+$$
+ \|m_{\rm res}\widehat P\|\le 300(2\cdot10^{-5})+0.020612(18.397+7.83)<0.547.
+$$
+
+Physical compression is a contraction, hence this estimate also bounds $\|RP\|$. [Original low-stop estimate](WeilConductorThreeRadiusFourWeightedSchurSource.lean#L102)
+
+For the old $U$, use all 11000 endpoint moments at its original native cutoff $N=38170000$, including the exact signs. Before integrating the same finite geometric remainder in the original proof, use the full sum of the $44002$ powers of its $\omega_j$ in Cauchy--Schwarz. Because
+$$
+ \sum_{j=1}^N (j/N)^{44002}\le 1+N/44003 ,
+$$
+the old $\alpha_\star$ bound on the squared native tail at $H_{\rm cut}=30000000$ improves by the factor $1/N+1/44003$. The squared tail is below $(2.68\cdot10^{-5})^2$. The actual $U$ projection lifts to its original $X$ preimage with factor at most $10/9$ and relative error at most $10^{-60}$. Its true $K_w$ norm, as well as its unweighted residual restriction norm, is below $(10/9)(2.68\cdot10^{-5}+10^{-60})$. The multiplier bound $300$ also bounds the angular operator $f\mapsto m_{\rm res}\widehat f$ on $U$ by $0.009$ before physical compression. Use $\|K_wP\|<1/40$ and the exact weighted representation for the mixed row $\Pi_U RP$. Finally the true $U$ component of $J$ is $\Pi_U R-\Pi_U RP A_{23}^{-1}PR$. Its $W$ component remains below $741\cdot10^{-265}$, with the actual inverse bound $10$ retained. These give all four displayed claims via the exact rational guards.
+
+### The actual high rows and the old minimizing lift
+
+Use $L=10^{25}$ and the low cutoff $M=2\cdot10^9$. Let
+$z_i=z,z_y$ denote the original projections of $u,y$ onto $G_2$.
+The bare sine low angular norm at $M$ is below $9.24\cdot10^{-6}$
+by the earlier two-exponential bound. The true $P$ tail above $M$
+is below $6.46\cdot10^{-9}$. Its squared estimate at $10^9$ scales
+by at most $2^{-7}$ from the signed moment formula. The $U$ tail
+remains below $1.12\cdot10^{-23}$.
+On the low angular pairing with $P,U$ use the preceding bounds
+on angular multiplication before physical compression. On the
+high part use $300$ times the unit native tail bounds. For the
+projection error of each original sine use $d=1.6\cdot10^{-8}$
+times the actual outgoing row factors. The original $J$ formula
+adds its bounded $W$ row and the $U,P$ interaction through
+$A_{23}^{-1}$. The directed costs give on each $z_i$
+$$
+ \|PRz_i\|<7.1\cdot10^{-6},\qquad \|Jz_i\|<10^{-7}.
+$$
+
+For a unit vector in either $Y_0$ or $\mathcal V$, use the exact
+$1.2\cdot10^{-11}$ low angular norm below $L$ established above.
+Both old unit $P,U$ high tails at $L$ are below $1.4\cdot10^{-26}$
+after the true $U$ preimage. Splitting the actual masked $R$
+pairing at $L$ bounds its $P,U$ rows on either high space by
+$300(1.2\cdot10^{-11}+1.4\cdot10^{-26})<3.61\cdot10^{-9}$.
+The actual $J$ row on $Y_0$ has the extra interaction
+$10\|\Pi_U RP\|\|PR|_{Y_0}\|$ and the old $W$ row. This gives
+$\|J|_{Y_0}\|<3.62\cdot10^{-9}$. Retain the earlier actual
+$PR,J,J_Y$ cross bounds on $\mathcal V$ of
+$2.3\cdot10^{-11},7.2\cdot10^{-8},0.0017$.
+
+Use the raw high sine pairings with their exact normalized
+native preimages. For $Y_0$, use its $6\cdot10^{-24}$ amplitude
+below $L$, the original bare sine angular $L^1$ bound $42$ on
+the residual set, the bare sine tail $3.6\cdot10^{-13}$ above
+$L$ and the relative $3\cdot10^{-272}$ preimage error. For
+$\mathcal V$ use the actual $4\cdot10^{-48}$ native packet
+envelope below $L$. Above $L$ use the bare sine pointwise
+bound $2/L$ and the native packet $L^1$ bound $16/3$.
+After the individual projection error $4\cdot10^{-272}$,
+use the verified full Gram factor $5.52\cdot10^9$. For the
+difference from either bare sine to its actual $G_2$ projection,
+the $P,U$ components cost at most $d$ in each space and the
+small high crossover uses the individual row bounds just proved.
+The two high projection differences use the existing evaluation
+bounds $7\cdot10^{-24}$ and $3\cdot10^{-38}$. On the old $W,L_0$
+projection of the bare sine, use $10^{-281}$ each. Add the
+actual preceding inverse contributions in $J_Y,J_{\mathcal V}$.
+The rational guards give
+$$
+ \|J_Yz_i\|<1.084\cdot10^{-10},\qquad
+ \|J_{\mathcal V}z_i\|<3\cdot10^{-12}.
+$$
+These are the original mixed maps with the original inverse
+domains. No high correction is removed from $C_2$.
+
+For $k=A^{-1}e$, the coefficient sum on $z,z_y$ is below $0.10901$.
+Use the exact earlier reverse normal equations for
+$Ek=k+v_s+y_h+\ell+a+p_{\rm old}$. The terms lie in
+$\mathcal V,Y_0,L_0,Z,P\mathcal H$, respectively. Apply the
+actual inverse norms $1/12,4,9,25/2,10$ in that order, the new
+local columns and the actual intervening cross terms. The
+guards give $\|v_s\|<3\cdot10^{-14}$,
+$\|y_h\|<4.74\cdot10^{-11}$, $\|\ell\|<10^{-258}$,
+$\|a\|<1.37\cdot10^{-7}$ and $\|p_{\rm old}\|<7.74\cdot10^{-6}$.
+The earlier exact $W$ normal equation still bounds its part
+of $a$ by $10^{-261}$.
+
+### High angular return on the given collar direction
+
+Let $h'$ be the combination of the two original bare sines
+with the same coefficients as $k$ on $z,z_y$, so $k=\Pi_{G_2}h'$.
+Use the expansion of $Ek$ as $h'$ plus the individual old
+projection and lift differences. The $P,U$ components have
+norm upper bounds $\|p_{\rm old}\|+0.10901d$ and
+$\|a\|+0.10901d$. The old high components have the much smaller
+bare-sine projection bounds given above.
+
+For a unit vector in the full old native sine span, its
+angular $L^1$ norm below $M$ is at most $\sqrt{M/\pi}<25240$.
+Above $M$ the exact native bound
+$6200(6\cdot10^7)/|\nu|^2$ integrates on both signs to an $L^1$
+bound $6200(6\cdot10^7)/(\pi M)$. Apply these to the $P$ piece
+and the true $U$ preimage with factor $10/9$. Pay the relative
+$10^{-60}$ error on the finite low band by Cauchy--Schwarz.
+Use the original $42$ bare-sine $L^1$ bound on the residual
+set for $h'$. For the high old differences below $L/2$ use
+their low angular norm $1.2\cdot10^{-11}$ and for the
+$W,L_0$ differences the residual restriction $10^{-265}$.
+Converting these last bounds to $L^1$ costs at most
+$\sqrt{L/(2\pi)}<1.27\cdot10^{12}$. The multiplier costs at
+most $300$. The directed result is
+$$
+ \|\mathbf1_{|\eta|\le L/2}m_{\rm res}\widehat{Ek}\|_1<1440 .
+$$
+Above $L/2$, the bare sine tail is bounded by
+$2/\sqrt{\pi L/2}$, the old $P,U$ native tails use the
+full reciprocal-square amplitude and original preimage,
+and the other old differences cost their entire norms.
+The guards give $\tau_{L/2}(Ek)<4.75\cdot10^{-11}$, where
+$\tau_N$ denotes the full angular $L^2$ tail.
+
+The Fourier physical support projection has kernel
+$2\sin(4(\nu-\eta))/(\nu-\eta)$ in $d\eta/(2\pi)$.
+For $|\nu|\ge L$, $|\eta|\le L/2$ it is bounded by
+$4/|\nu|$. Thus the low input contributes less than
+$4(1440)/\sqrt{\pi L}$ to $\tau_L(REk)$. For the high
+input use contraction and the $300$ multiplier cap.
+Using the exact normal equation $g_*=REk+BEk-e$, the verified
+$\tau_L(e)<3.61\cdot10^{-13}$ and the unrounded guards gives
+$\tau_L(g_*)<1.53\cdot10^{-8}$.
+
+### The correlated remainder
+
+The new global outgoing and local incoming rows for $D_5k$
+give $\|D_5k\|<4.2\cdot10^{-6}$, including the $L_0$ bound.
+Use the same exact direction transfer and the previously
+proved sampled removed-head estimate. Its other terms are
+$0.10901(0.000247)$ and $300(0.282d)$. The eliminated old
+and two-plane components use $8.14\cdot10^{-7}$ and
+$26d\|g_0\|$, respectively, and the three output spaces are
+orthogonal. This proves $\|g_*-g_0\|<0.000033$.
+
+Apply the separated jump estimate to $g_0$ below $M$ with
+its original endpoints included. This uses the joint jump
+norm below $0.468$, separation $0.000014$ and the full low
+interval frame square root below $25250$. The $P,U$ pairs
+with $g_0$ use their new angular operator bounds below $M$
+and the true native tails above $M$. For $g_*-g_0$ use the
+new global outgoing rows. Retain the bounded $W$ component
+of $J$ and the original $U,P$ interaction. This gives
+$$
+ \|PRg_*\|<2.4\cdot10^{-5},\qquad \|Jg_*\|<4.5\cdot10^{-7}.
+$$
+For the raw high rows on $g_*$, use
+$300[\tau_L(g_*)+(1.2\cdot10^{-11})\|g_*\|]$ and add the
+same actual early inverse prices. The exact row bounds are
+$\|J_Yg_*\|<4.6\cdot10^{-6}$ and
+$\|J_{\mathcal V}g_*\|<4.7\cdot10^{-6}$.
+The outgoing factors $0.547,0.0102,301,303$ and the actual
+four inverse bounds, together with the entire $L_0$ correction,
+give $\|D_5g_*\|<0.00575$.
+
+Use the original $\|24I-T\|<276.125$ and the exact signed
+remainder
+$$
+ W=\Pi_H[(24I-T)(g_*-g_0)+D_5g_*-G_{\rm phys}g_0]
+       +\frac{m\otimes m}{d_v}g_*+P_{\rm col}g_* .
+$$
+Here $m=Fv$ is the actual neighboring column and $d_v>23.535$.
+The old $\|m-f_0\|<0.05951$, $\|f_0\|<1.509$ give the
+outgoing norm. For $\langle m,g_*\rangle$ the proxy scalar
+costs at most $0.031764$, the actual signed inverse transfer
+costs $0.000635$, and the new input difference costs
+$1.509(0.000033)$. The full gamma and mask action on $g_0$
+is below $0.000174$, and the collar remainder operator has
+norm at most $0.000024$. The resulting directed sum is
+$\|W\|<0.0175$.
+
+For its scalar pairing use $b=\Pi_H(24I-T)\bar z$ and the
+exact direction transfer before estimating any inverse term.
+The previously checked carrier and removed-head pairings
+cost $0.001196$ and $4.42\cdot10^{-6}$. The full paired
+transfer through $D_5k$ is bounded by $42.29\|D_5k\|$.
+For $\langle\bar z,D_5g_*\rangle$, use $\bar z=z_p+\kappa g_*$,
+$\kappa<0.348$, and pair through each genuine inverse using
+the established rows on $z_p$ and the new rows on $g_*$.
+The $P,Z,Y_0,\mathcal V$ rows on $z_p$ are bounded by
+$0.0090741,0.0050442,0.000187,0.0000047$.
+The remaining $L_0$ action is bounded by $10^{-515}$ in
+operator norm. This gives a scalar price below $0.00000222$.
+
+For the neighboring scalar use the actual pairing with $z_p$.
+The raw $\langle D_{s_0}g_0,f_0\rangle$ has modulus below
+$0.130025$ and its exact transfer costs at most
+$0.65056(0.05951)$ by the bound on the raw projected action.
+Adding $\kappa|\langle m,g_*\rangle|$ bounds its pairing
+with $\bar z$. Multiply by $|\langle m,g_*\rangle|/d_v$ as
+required by the exact rank-one formula. This gives scalar
+price below $0.000249$. The gamma and collar pairings cost at
+most $0.664[0.000174+0.000024(0.18878)]$.
+The directed sum gives
+$\operatorname{Re}\langle\bar z,W\rangle<0.00175$. Finally,
+$$
+ 24^2\|r\|^2
+ =\|\bar z\|^2+2\operatorname{Re}\langle\bar z,W\rangle+\|W\|^2
+ <0.664^2+2(0.00175)+0.0175^2<(24\cdot0.0278)^2 .
+$$
+
+### Conditional return to the corrected Schur sign
+
+The previously targeted floor $H_+\ge10^{-4}I_H$ is sufficient.
+The proved directional norm also permits the weaker floor
+$H_+\ge0.0000951 I_H$, equivalently
+$C_{4,+}\ge0.0001071 I_H$ with the full $0.000012$ collar error.
+Under this premise, the exact residual with the trial vector
+$g_*/24$ gives
+$$
+ \langle g_*,H_+^{-1}g_*\rangle
+ =\frac{\|g_*\|^2+\operatorname{Re}\langle g_*,r\rangle}{24}
+      +\langle r,H_+^{-1}r\rangle .
+$$
+This follows by substituting $g_*=H_+g_*/24+r$ and using
+self-adjointness. Multiply by $\sigma$ and use positive
+coercivity to obtain the strict upper bound
+$$
+ 0.123\left[
+   \frac{(0.18878)^2+(0.18878)(0.0278)}{24}
+   +\frac{(0.0278)^2}{0.0000951}
+ \right]<0.9998<1 .
+$$
+The original rank-one comparison would then give $C_4\ge0$
+on $H$, with the already bounded collar transport error.
+The arithmetic return retains every original admitted real odd
+compact $C^2$ test, its gamma term and the signed prime powers.
+The unconditional all-complement bound and original stage
+sign remain open.
+
+### Exact rational replay
+
+Run the following Python block with the complete source file
+path as its argument. It reads the established directed formula
+fragments from this same file. The calculation uses only the
+standard library and retains the historical guards in the
+original carrier calculation. The separately compiled midpoint
+fragments change the first carrier, its directed atom sum and
+its mean. The four corner checks and the physical return
+inequalities are checked explicitly.
+
+~~~python
+from contextlib import redirect_stdout
+from fractions import Fraction as F
+from io import StringIO
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+fence = chr(96)*3
+blocks = re.findall(r"^"+fence+r"python\n(.*?)^"+fence+r"$", source, re.M | re.S)
+
+def fragment(needle):
+    hits = [block for block in blocks if needle in block]
+    assert len(hits) == 1, needle
+    return hits[0]
+
+prefix = fragment("source_grid = 10**22").split("alpha_lower, alpha_upper")[0]
+prefix = prefix.replace("j = 4800000000\n", "")
+markers = [
+    "PASS original projected centroid sine and five inverse prices",
+    "PASS 458 signed rows, 459 cells, mixed norm",
+    "PASS projected neighboring sine",
+    "PASS actual seventh mixed norm",
+    "PASS collar proxy error",
+    "PASS projected signed dispersion <.6688",
+]
+core = prefix + "".join(fragment(marker) for marker in markers)
+assert core.count("eta_mid=sum(proxy_eta)/2") == 1
+core = core.split("eta_mid=sum(proxy_eta)/2")[0]
+
+def replace_once(code, before, after):
+    assert code.count(before) == 1, before
+    return code.replace(before, after)
+
+core = replace_once(core, "def phase_trig(angles):\n",
+                    "def phase_trig(angles):\n    assert 0 <= angles[0] <= angles[1]\n")
+
+def replay(code, label):
+    state = {}
+    with redirect_stdout(StringIO()):
+        exec(compile(code, label, "exec"), state)
+    return state
+
+original = replay(core, "original carrier guards")
+t = (F(".1024515162"), F(".1024672113"))
+eta = (F(".0069509890"), F(".0069592349"))
+assert t[0] < original["proxy_t"][0] <= original["proxy_t"][1] < t[1]
+assert eta[0] < original["proxy_eta"][0] <= original["proxy_eta"][1] < eta[1]
+carrier = original["carrier"]
+assert (carrier[1]-carrier[0])/2 == F("3.95e-7")
+assert original["s_norm"][0] > F("1.997")
+assert original["norm_orth"][0] > F(".998")
+assert max(map(abs, original["gram_overlap"])) < F(".063")
+print("PASS true original carrier and coefficient intervals")
+
+midpoint_core = replace_once(
+    core, "carrier = center-F(1168, 10**8), center-F(1089, 10**8)",
+    "carrier = (sum((center-F(1168, 10**8), center-F(1089, 10**8)))/2,)*2",
+)
+midpoint_core = replace_once(
+    midpoint_core, "assert tuple(v*atom_grid for v in prime_sum) == (463039688333, 463053943540)\n",
+    "# The exact midpoint gets its own recomputed directed atom sum.\n",
+)
+midpoint_core = replace_once(midpoint_core, "mean = prime_lower, prime_upper", "mean = prime")
+mid = replay(midpoint_core, "midpoint carrier guards")
+assert mid["neighbor"] == original["neighbor"]
+assert mid["s_norm"][0] > F("1.997")
+assert mid["norm_orth"][0] > F(".998")
+assert max(map(abs, mid["gram_overlap"])) < F(".063")
+
+raw_corner = F(0)
+min_corner = F(1)
+max_corner = F(0)
+for t_corner in t:
+    for eta_corner in eta:
+        lam = t_corner/eta_corner
+        interval,error,cells,events,ties,fast = mid["energy_of_model"](lam,eta_corner)
+        assert (cells,events,ties) == (212182,215512,459)
+        assert interval[0] > 0
+        raw_corner = max(raw_corner, mid["sqrt_interval"](interval)[1]+error)
+        leading, slow, fast = mid["centered_cells"]((lam,lam))
+        squared = mid["scale"](eta_corner**2, mid["add"](
+            mid["add"](leading, slow), (-fast,fast)))
+        low,high = mid["sqrt_interval"](squared)
+        min_corner = min(min_corner, low)
+        max_corner = max(max_corner, high)
+assert raw_corner < F(".734721")
+assert F(".1880357872") < min_corner <= max_corner < F(".188065512")
+print("PASS four midpoint corners retain exact events and both carriers")
+
+assert (F('3.272')*F('1.997'))**2>F(128,3)
+dx=F('3.95e-7')
+du=F('1.3e-6')
+dv=F('1.4e-6')
+dp=F('1.92e-6')
+assert F('3.272')*dx<du
+assert F('1.063')*du/F('.998')<dv
+assert du**2+dv**2<dp**2
+dh=t[1]*du+eta[1]*dv
+h2=t[1]**2+eta[1]**2
+assert h2<F('.103')**2
+dg=F('57.7531')*(dh+F('.103')*dp)
+dw=F('60.3073')*dg
+assert dg<F('.00001968')
+assert dw<F('.00119')
+raw=F('.734721')+dw
+assert raw<F('.735908')
+
+# Lipschitz norm variation in each of the two midpoint physical columns.
+dg0_u=F('57.7531')*(du+dp)
+dg0_v=F('57.7531')*(dv+dp)
+assert F('2.45')+dg0_u<F('2.451')
+assert F('1.509')+dg0_v<F('1.510')
+mid_proxy_radius=F('2.451')*(t[1]-t[0])+F('1.510')*(eta[1]-eta[0])
+g_min=F('.1880357872')-mid_proxy_radius-dg
+g_max=F('.188065512')+dg
+assert F('.187965')<g_min<g_max<F('.188086')
+proj2=raw**2-g_min**4/h2
+assert proj2<F('.65056')**2
+
+g_delta = F('.000686')
+g_star_max = g_max+g_delta
+assert g_star_max < F('.188772')
+kappa = (1/t[0]-F('.1229'))*g_star_max**2
+assert kappa < F('.344')
+g_z = F('.0187272')+F('.65056')*g_delta
+bar2 = proj2+2*kappa*g_z+(kappa*g_star_max)**2
+assert bar2 < F('.664')**2
+remaining_budget = F('.672')**2-bar2
+assert remaining_budget > F('.0108')
+print("PASS true alpha transport, projected action <.65056, and exact budget >.0108")
+
+from fractions import Fraction as F
+
+from fractions import Fraction as F
+from math import isqrt
+
+def log_atanh(y):
+    lower=2*sum(y**(2*j+1)/(2*j+1) for j in range(26))
+    return lower, lower+2*y**53/(53*(1-y*y))
+
+l2=log_atanh(F(1,3))
+def log_hi(n):
+    k=n.bit_length()-1
+    q=2**k
+    return k*l2[1]+log_atanh(F(n-q,n+q))[1]
+
+# Squared coefficients of all signed prime powers, with +/- lag rows.
+S=F(0)
+ntotal=0
+for p in range(2,2981):
+    if p==3 or any(p % j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    ph=log_hi(p)
+    p_power=p
+    while p_power<=2980:
+        S+=2*ph**2/p_power
+        ntotal+=2
+        p_power*=p
+assert ntotal==916
+assert S<60
+assert sum(F(1,j) for j in range(1,916))<8
+
+# The two-sided nu^-8 frame row correction after exponential integration by parts.
+H=F('31075000')
+pi=F('3.14')
+near=F('1e9')
+gap=F(1,2980)
+frame=1+28*8/(H*gap)
+sp=F('7.83')
+assert frame*S<sp**2
+# Weighted gamma integral over the entire two-sided tail.
+logH=log_hi(int(H))
+assert logH<F('17.253')
+gamma=F('18.397')
+assert (logH+1+F(1,7))**2+F(1,49)<gamma**2
+n=23000000
+s6=F(n*(n+1)*(2*n+1)*(3*n**4+6*n**3-3*n+1),42)
+pi_upper=F(22,7)
+omega=pi_upper*n/4
+near_tail_sq=(pi_upper/4)**6*s6/(7*pi*H**7*(1-(omega/H)**2)**2)
+near_tail=F('.020612')
+assert near_tail_sq<near_tail**2
+rp=near_tail*(gamma+sp)+300*F('2e-5')
+assert rp<F('.547')
+
+# Retain the true existing U_OLD preimage N=38170000 and all 11000
+# endpoint cancellations. Save sum_j j^44002 via an integral of t^44002.
+N=38170000
+power=44002
+alpha_star=F(1649631060000,52455753317481683)
+tail_u_sq=alpha_star*(F(1,N)+F(1,power+1))
+assert tail_u_sq<F('2.68e-5')**2
+tau_u=F(10,9)*(F('2.68e-5')+F('1e-60'))
+ur=300*tau_u
+assert ur<F('.009')
+pu=300*F(1,40)*tau_u
+assert pu<F('.000224')
+j=ur+10*pu*rp+F('741e-265')
+assert j<F('.0102')
+print('PASS true original low weighted rows')
+
+from fractions import Fraction as F
+
+P=F('.547')
+U=F('.009')
+J=F('.0102')
+UP=F('.000224')
+w_row=F('741e-265')
+d=F('1.6e-8')
+delta=F('1e-272')
+c=F('.10901')
+l=F('1e25')
+M=F('2e9')
+pi_lo=F('3.14')
+rho=F('3.8e9')
+sine_bound=F('9.24e-6')
+assert ((1/(rho-M)+1/(rho+M))/F('1.997'))**2*M/pi_lo<sine_bound**2
+# The full P moment tail from M'=1e9 scales by (M'/M)^(7/2) or faster.
+p_tail=F('6.46e-9')
+u_tail=F('1.12e-23')
+assert F('7.3e-8')**2/2**7<p_tail**2
+pz=P*(sine_bound+d)+300*p_tail
+uz=U*(sine_bound+d)+300*u_tail
+jz=uz+10*UP*pz+w_row
+assert pz<F('7.1e-6') and jz<F('1e-7')
+
+# The low-frequency angular norm on actual Y0 or V is the same published 1.2e-11.
+# The old unweighted-native tails at L (with all preimages) are bounded by 1.4e-26.
+hi_low_ang=F('1.2e-11')
+old_high_ang=F('1.4e-26')
+hy=300*(hi_low_ang+old_high_ang)
+hj=hy*(1+10*UP)+w_row
+assert hy<F('3.61e-9') and hj<F('3.62e-9')
+vp=F('2.3e-11')
+vj=F('7.2e-8')
+vy=F('.0017')
+yproj=F('7e-24')
+vproj=F('3e-38')
+wproj=F('1e-281')
+bare_lt=F('3.6e-13')
+raw_y=300*(42*F('6e-24')+bare_lt+3*delta)/(1-3*delta)
+raw_v=F('5.52e9')*300*(42*F('4e-48')+2/l*F(16,3)+4*delta)
+# Each old P,U projection of either bore sine costs d. The W,L0,Y0,V projections
+# carry their individually known much smaller physical norms.
+raw_z_y=raw_y+2*d*hy+300*(yproj+vproj+2*wproj)
+raw_z_v=raw_v+d*(vp+hy)+300*(yproj+vproj+2*wproj)
+jy_z=raw_z_y+10*hy*pz+F('12.5')*hj*jz+F('1e-515')
+jv_z=raw_z_v+10*vp*pz+F('12.5')*vj*jz+4*vy*jy_z+F('1e-515')
+assert jy_z<F('1.084e-10') and jv_z<F('3e-12')
+
+pk=c*pz
+jk=c*jz
+jyk=c*jy_z
+jvk=c*jv_z
+
+# Actual old minimizing lift. Keep all five inverse effects in their original order.
+vs=jvk/12
+ys=4*(jyk+vy*vs)
+ell=F('1e-258')
+a=F('12.5')*(jk+vj*vs+hj*ys+w_row*ell)
+p=10*(pk+vp*vs+hy*ys+300*F('1e-265')*ell+(UP+300*F('1e-265'))*a)
+assert vs<F('3e-14') and ys<F('4.74e-11')
+assert a<F('1.37e-7') and p<F('7.74e-6')
+
+# Ek = h' + all the independently localized actual projection/lift differences.
+# Use the unweighted native evaluation and true relative U-preimage error.
+assert M/pi_lo<25240**2
+native_l1=F(25240)+6200*F('6e7')/(pi_lo*M)
+a_w=F('1e-261')
+w_piece=ell+a_w+2*c*wproj
+y_piece=ys+vs+c*(yproj+vproj)
+assert l/(2*pi_lo)<F('1.27e12')**2
+other_l1=F('1.27e12')*(hi_low_ang*y_piece+F('1e-265')*w_piece)
+old_l1=native_l1*((p+c*d)+F(10,9)*(a+c*d))
+old_l1+=F('1.27e12')*(F(10,9)*F('1e-60')*(a+c*d))
+weighted_input_l1=300*(42*c+old_l1+other_l1)
+assert weighted_input_l1<1440
+bare_split_tail=F('5.06e-13')
+assert 4/(pi_lo*(l/2))<bare_split_tail**2
+old_split_tail=F('1.09e-26')
+assert (6200*F('6e7'))**2/(3*pi_lo*(l/2)**3)<old_split_tail**2
+old_tail=old_split_tail*((p+c*d)+F(10,9)*(a+c*d))
+old_tail+=F(10,9)*F('1e-60')*(a+c*d)
+lift_tail=bare_split_tail*c+y_piece+w_piece+old_tail
+assert lift_tail<F('4.75e-11')
+assert pi_lo*l>F('5.60e12')**2
+r_tail=4*weighted_input_l1/F('5.60e12')+300*lift_tail
+g_tail=r_tail+F('.124997987')*lift_tail+F('3.61e-13')
+assert g_tail<F('1.53e-8')
+
+# D5 k now has local and global rows from the same actual operator.
+d5_k=P*10*pk+J*F('12.5')*jk+F('1e-515') +301*4*jyk+F(303,12)*jvk
+transfer_h=d5_k+c*F('.000247')+300*F('.282')*d
+transfer_g=F('.000033')
+assert transfer_h**2+F('8.14e-7')**2+(26*d*F('.188086'))**2<transfer_g**2
+
+# Original proxy low band, followed by the true g*-g0 transfer.
+assert F('1.415')**2>2
+assert (M+16/F('.000014'))/pi_lo<25250**2
+g0_low=F('1.415')*F('.468')*25250/(rho-M)
+pg=P*(g0_low+transfer_g)+300*p_tail*F('.188086')
+ug=U*(g0_low+transfer_g)+300*u_tail*F('.188086')
+jg=ug+10*UP*pg+w_row*F('.18878')
+assert pg<F('2.4e-5') and jg<F('4.5e-7')
+raw_g_high=300*(g_tail+hi_low_ang*F('.18878'))
+jy_g=raw_g_high+10*hy*pg+F('12.5')*hj*jg+F('1e-515')
+jv_g=raw_g_high+10*vp*pg+F('12.5')*vj*jg+4*vy*jy_g+F('1e-515')
+assert jy_g<F('4.6e-6') and jv_g<F('4.7e-6')
+
+d5_g=P*10*pg+J*F('12.5')*jg+F('1e-515')+301*4*jy_g+F(303,12)*jv_g
+neighbor_pair=F('.031764')+F('.000635')+F('1.509')*transfer_g
+neighbor=neighbor_pair*(F('1.509')+F('.05951'))/F('23.535')
+W=F('276.125')*transfer_g+d5_g+F('.000174')+neighbor+F('.000024')*F('.18878')
+assert d5_k<F('4.2e-6') and d5_g<F('.00575')
+assert W<F('.0175')
+print('PASS full W norm on the original carrier')
+
+# The exact signed direction identity applies with all five D5 terms at once.
+bar=F('.664')
+kap=F('.348')
+n_b=F('42.29')
+delta_cross=10*(F('.0090741')+kap*pg)*pg
+delta_cross+=F('12.5')*(F('.0050442')+kap*jg)*jg
+delta_cross+=4*(F('.000187')+kap*jy_g)*jy_g
+delta_cross+=(F('.0000047')+kap*jv_g)*jv_g/12
+delta_cross+=bar*F('1e-515')*F('.18878')
+assert delta_cross<F('.00000222')
+neighbor_cov=neighbor_pair*(F('.130025')+F('.65056')*F('.05951')+kap*neighbor_pair)/F('23.535')
+assert neighbor_cov<F('.000249')
+cov=F('.001196')+F('.00000442')+n_b*d5_k+delta_cross+neighbor_cov
+cov+=bar*(F('.000174')+F('.000024')*F('.18878'))
+assert cov<F('.00175')
+assert bar**2+2*cov+W**2<(24*F('.0278'))**2
+print('PASS full corrected residual below .0278 on the exact prescribed direction')
+
+assert F('.664')**2+2*F('.00175')+F('.0175')**2 < (24*F('.0278'))**2
+assert F('.123')*((F('.18878')**2+F('.18878')*F('.0278'))/24
+                 +F('.0278')**2/F('.0000951')) < F('.9998')
+print("PASS conditional inverse bound with the separate all-complement premise")
+~~~
