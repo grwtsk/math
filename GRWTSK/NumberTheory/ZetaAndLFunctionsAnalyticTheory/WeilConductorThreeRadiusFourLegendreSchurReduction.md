@@ -1743,3 +1743,306 @@ large-weight counterexample retain their original signs and
 domains. This is a further ray of the true corrected form. Its
 sign leaves the coupled inequality on all of $G_2$, the original
 radius-four stage and the full primitive and zeta returns open.
+
+## A positive block of overlapping adjacent-sine rays
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact directed arithmetic. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Put $k=10^9$, $q=k/(k+1)$ and $t=(k+1)/(k+2)$. In the original
+physical space take
+$$
+ g_0=\psi_k+q\psi_{k+1},\qquad
+ g_1=\psi_{k+1}+t\psi_{k+2},\qquad z_i=\Pi_{G_2}g_i.
+$$
+Each real native input has the same compact $C^2$ extension and
+full gamma integrability as the preceding ray. The two projected
+vectors are independent. On their complex span, for every nonzero
+$z$, the true five-times corrected radius-four form satisfies
+$$
+ 14.7898<\frac{\langle z,C_2 z\rangle}{E(z)}<22.0026.
+$$
+In the unnormalized basis $(z_0,z_1)$ the mixed entry has real part
+in $(16.3752,16.3754)$. All 458 original signed atoms, the parity-one
+gamma term and all five physical inverse domains are retained.
+
+### The physical Gram and the exact signed matrix
+
+Set $u_i=g_i/\|g_i\|$ and $\delta=10^{-272}$. The native Gram
+in the $g_i$ basis is
+$$
+ G=\begin{pmatrix}1+q^2&q\\q&1+t^2\end{pmatrix}.
+$$
+Its off-diagonal in the unit basis is
+$q/\sqrt{(1+q^2)(1+t^2)}\in(0.49,1/2)$, using $0<q<t<1$
+for the upper bound. The shared sine mode rules out native
+orthogonality. If $x=\sum_i c_i g_i$, then
+$\sum_i |c_i|\|g_i\|\le2\|x\|$ since the unit Gram is strictly
+above $I/2$. The old sine and high sector separations hold for
+both native pairs, as do the below-$\Omega$ polynomial
+approximation and the separated-sector Gram estimates.
+Consequently $\|g_i-z_i\|<5\delta\|g_i\|$ by the two
+preceding projection steps. With $e_i=g_i-z_i$, the true projected
+Gram is $G_z=G-(\langle e_i,e_j\rangle)_{ij}$ by orthogonal projection.
+For $z=\Pi_{G_2}x$ the error norm is at most $10\delta\|x\|$, hence
+$(1-100\delta^2)E(x)\le E(z)\le E(x)$, with strict lower bound for
+nonzero $x$. This proves injectivity on the native span.
+
+For integers $a\le b$ and $0\le r\le8$, put $L=8-r$,
+$\tau_m=m\pi r/8$, $d=b-a$ and $s=a+b$. Define
+$$
+ T_0=L,\qquad T_m=(-1)^{m+1}\frac{8\sin\tau_m}{m\pi}\quad(m>0).
+$$
+The physical cosine-shift matrix in the orthonormal sine basis is
+$$
+ S_{ab}(r)=\frac{\cos\tau_s\,T_d-\cos\tau_d\,T_s}{8}.
+$$
+Indeed the overlap of $\psi_a(v)$ and $\psi_b(v+r)$ is
+$[-4,4-r]$. Center it by $v+r/2$, apply the sine product identity,
+and integrate the two cosines on $[-L/2,L/2]$.
+The two integrated factors are $L$ at index zero and
+$8\sin(m\pi L/8)/(m\pi)$ otherwise. Reflection of the odd inputs
+gives the same overlap for $-r$, so this is the matrix of the
+Fourier cosine under the stated angular measure. At $r=0$
+the matrix is the identity and at $r=8$ it vanishes.
+The leading and high-sum terms are both included.
+
+For each pair $a,b\in\{k,k+1,k+2\}$ sum $S_{ab}(\log n)$
+against $2\log(p)\chi_3(n)/\sqrt n$ over every original nonzero
+prime-power atom $n=p^e\le2980$. The outward intervals for the
+upper triangle, in lexicographic order and units of $10^{-10}$,
+are
+$$
+\begin{gathered}
+[-38357213542,-38357213084],\quad[-5147674444,-5147673986],\quad
+[-6699593403,-6699592945],\\
+[28221610032,28221610490],\quad[18546860359,18546860817],\quad
+[34172792217,34172792675].
+\end{gathered}
+$$
+The checker below uses the preceding directed log, square-root
+and Machin bounds. Reduce each $m\log n/8$ by an even integer
+before multiplying by the lower endpoint of $\pi$. Use cosine
+through degree 24, sine through degree 25, and the Taylor
+remainders $(22/7)^{26}/26!$ and $(22/7)^{27}/27!$, respectively.
+Both functions are one-Lipschitz, giving the same phase uncertainty
+allowance as before. The interval operations retain the signs of
+the weights and both terms of the exact shift identity. Rounding
+each atom outwards on the stated grid gives the six sums.
+
+Restrict this matrix to the actual native coefficient vectors
+$(1,q,0)$ and $(0,1,t)$ and call the resulting matrix $M_P$.
+Its mixed entry lies in $[34921202485,34921204318]/10^{10}$.
+The first diagonal is negative and the second is positive. The two interval determinant tests below give
+$$
+ -2.13510\,G<M_P<5.07750\,G
+$$
+in positive definite order. For each of the two differences, the
+lower endpoints of the two diagonals are positive and their product
+exceeds the square of the maximum absolute endpoint of the mixed
+entry. These real symmetric comparisons hold on complex coefficients
+as well. In particular they bound the full unmasked prime term
+throughout the native span using physical energy.
+
+### Common gamma collar and genuine inverse prices
+
+Use the mirrored collar of radius $10001$ centered at $\pm k\pi/4$,
+which contains both individual radius-$10^4$ collars. It lies
+in $7\cdot10^8<|\xi|<8\cdot10^8$ inside $\mathcal D$ and below the
+original paid pair. Its gamma log input lies between
+$375000000-5001$ and $375000000+5001$. Binet and the directed logs
+therefore give $19.742423<A<19.742450$, with $1-w\le\eta=3\cdot10^{-10}$
+on the collar by the original filters. The individual angular
+tail masses on unit inputs are at most $\theta=8(2/10^4)^3$.
+On the entire native span use the triangle inequality on the tail
+norm and $\sum_i|c_i|\|g_i\|\le2\|x\|$, giving off-collar mass at most
+$4\theta E(x)$. This pays all overlap between the two Fourier inputs.
+
+The preceding signed ray estimates for the four maps
+$PR$, $J$, $J_Y$ and $J_{\mathcal V}$ hold on each
+$\Pi_{G_2}u_i$ with respective bounds $1/1250$, $3/2500$, $1/10000$,
+$10^{-6}$. Their proofs use the fixed splits $7\cdot10^8$ and
+$10^{25}$. Both native carriers exceed the lower split by more
+than $4\cdot10^7$, are more than $10^{24}$ below the second split,
+and are more than $10^{25}$ from the separated sector. The old sine
+and high-packet bounds, angular $L^1$ bound and true Gram estimate
+are the same for both inputs. The $D_0$ correction keeps its original
+operator norm bound $10^{-515}$ on $G_0$. For unit native inputs the
+five inverse prices together are less than $d_*=0.0000245$ by the
+preceding estimates. Each mixed entry is bounded by the product of
+the corresponding map norms times the actual inverse norm.
+Applying the map estimates to a general $z$ through the two
+coefficients therefore bounds the total inverse debit by
+$4d_* E(x)$. The scalar term here is $B E(z)$.
+
+The full prime mask costs $211(\eta+4\theta)E(x)$.
+For the gamma lower bound the off-collar cost is $8\theta E(x)$
+using $A\ge-2$ and the on-collar factor is at least
+$(1-\eta)(1-4\theta)E(x)$. The upper gamma tail costs at most
+$244\theta E(x)$ using $A<61$ on the residual set. The bounded $R$
+transfer from $x$ to $z$ costs at most $6000\delta E(x)$.
+The lower bound remains positive after the full debit. Divide
+by $E(z)$ with the above Gram comparison, and add $B$.
+This gives the asserted bounds on every nonzero projected combination.
+
+For the mixed entry, subtract the gamma midpoint
+$A_*=19.7424365$ times $G_{01}$ before charging the gamma error.
+On the common collar its pointwise error is at most
+$0.0000135+61\eta$. Off the collar, the difference between the
+masked residual gamma and $A_*$ is at most 42. Cauchy–Schwarz
+on the two full tails gives the factor $\theta$ there.
+The prime mask costs $211(\eta+\theta)$ per product of input norms.
+Add $3000\delta$ for the bounded transfer and $d_*$ for the
+mixed inverse prices, again per product of norms. That product
+is below 2 in the $g_i$ basis. Finally the error in $B G_{01}$
+is at most $50 B\delta^2$. Together with the directed $M_{P,01}$
+interval this yields the claimed enclosure of the mixed entry.
+
+### Directed arithmetic guards for the block
+
+Use the historical checker's prefix up to its `alpha_lower, alpha_upper`
+assignment, excluding that assignment and omitting its old `j`
+assignment, followed by this block. This shares its outward arithmetic for $\log$ and $\pi$ while
+evaluating the new exact two-sine formula.
+
+```python
+from itertools import combinations_with_replacement
+
+k = 10**9
+modes = range(k, k+3)
+pairs = tuple(combinations_with_replacement(modes, 2))
+
+def add(x, y):
+    return x[0]+y[0], x[1]+y[1]
+
+def scale(c, x):
+    return (c*x[1], c*x[0]) if c < 0 else (c*x[0], c*x[1])
+
+def multiply(x, y):
+    corners = [a*b for a in x for b in y]
+    return min(corners), max(corners)
+
+@cache
+def trig(m, lag):
+    if m == 0:
+        return (F(1), F(1)), (F(0), F(0))
+    lower, upper = scale(F(m, 8), lag)
+    period = (lower+1)//2
+    residue = lower-2*period
+    assert -1 <= residue < 1
+    angle = pi_lower*residue
+    uncertainty = pi_upper*(upper-lower)+pi_upper-pi_lower
+    cos = sum((-1)**l*angle**(2*l)/factorial(2*l) for l in range(13))
+    sin = sum((-1)**l*angle**(2*l+1)/factorial(2*l+1) for l in range(13))
+    cos_err = uncertainty+F(22, 7)**26/factorial(26)
+    sin_err = uncertainty+F(22, 7)**27/factorial(27)
+    return ((max(-1, cos-cos_err), min(1, cos+cos_err)),
+            (max(-1, sin-sin_err), min(1, sin+sin_err)))
+
+def integrated_cosine(m, lag):
+    if m == 0:
+        return 8-lag[1], 8-lag[0]
+    amplitude = 8/(pi_upper*m), 8/(pi_lower*m)
+    return scale((-1)**(m+1), multiply(amplitude, trig(m, lag)[1]))
+
+def shift_entry(a, b, lag):
+    d, s = b-a, a+b
+    first = multiply(trig(s, lag)[0], integrated_cosine(d, lag))
+    second = multiply(trig(d, lag)[0], integrated_cosine(s, lag))
+    return scale(F(1, 8), add(first, scale(-1, second)))
+
+for r in (0, 8):
+    for a, b in pairs:
+        lower, upper = shift_entry(a, b, (F(r), F(r)))
+        assert lower <= int(r == 0 and a == b) <= upper
+
+entries = dict.fromkeys(pairs, (F(0), F(0)))
+count = 0
+for prime in range(2, 2981):
+    if prime == 3 or any(prime % m == 0 for m in range(2, isqrt(prime)+1)):
+        continue
+    n = prime
+    while n <= 2980:
+        lag = log_bounds(n)
+        assert 0 < lag[0] <= lag[1] < 8
+        root_floor = isqrt(n*source_grid**2)
+        log_p_lower, log_p_upper = log_bounds(prime)
+        magnitude = (2*log_p_lower*source_grid/(root_floor+1),
+                     2*log_p_upper*source_grid/root_floor)
+        signed = scale(1 if n % 3 == 1 else -1, magnitude)
+        for a, b in pairs:
+            term = multiply(signed, shift_entry(a, b, lag))
+            entries[a, b] = add(entries[a, b], round_out(*term, atom_grid))
+        count += 1
+        n *= prime
+assert count == 458
+
+q, t = F(k, k+1), F(k+1, k+2)
+p00 = add(add(entries[k, k], scale(2*q, entries[k, k+1])),
+          scale(q*q, entries[k+1, k+1]))
+p11 = add(add(entries[k+1, k+1], scale(2*t, entries[k+1, k+2])),
+          scale(t*t, entries[k+2, k+2]))
+p01 = add(add(entries[k, k+1], scale(t, entries[k, k+2])),
+          add(scale(q, entries[k+1, k+1]), scale(q*t, entries[k+1, k+2])))
+
+expected = [
+    (-38357213542, -38357213084), (-5147674444, -5147673986),
+    (-6699593403, -6699592945), (28221610032, 28221610490),
+    (18546860359, 18546860817), (34172792217, 34172792675),
+]
+assert [tuple(v*atom_grid for v in entries[pair]) for pair in pairs] == expected
+assert round_out(*p01, atom_grid) == (F(34921202485, atom_grid), F(34921204318, atom_grid))
+
+g00, g01, g11 = 1+q*q, q, 1+t*t
+assert 0 < 4*g01*g01 < g00*g11
+assert (F(49, 100))**2*g00*g11 < g01*g01
+assert 0 < q < t < 1
+prime_lower, prime_upper = F(-213510, 10**5), F(507750, 10**5)
+for sign, shift in [(1, -prime_lower), (-1, prime_upper)]:
+    h00 = add(scale(sign, p00), (shift*g00,)*2)
+    h01 = add(scale(sign, p01), (shift*g01,)*2)
+    h11 = add(scale(sign, p11), (shift*g11,)*2)
+    assert min(h00[0], h11[0]) > 0
+    offdiag = max(abs(v) for v in h01)
+    assert h00[0]*h11[0] > offdiag**2
+
+width, delta = 10**4, F(1, 10**272)
+theta, eta = 8*F(2, width)**3, F(3, 10**10)
+collar = width+1
+assert F(3*k, 4)-collar > 7*10**8
+assert F(11*(k+1), 14)+collar < 8*10**8
+assert F(3*k, 4)-7*10**8 > 4*10**7
+assert 10**25-F(11*(k+1), 14) > 10**24
+assert F(3, 4)*(2*10**25-(k+1)) > 10**25
+y_min = F(7, 2)*10**8
+binet = F(5, 9)/y_min+F(9, 32)/y_min**2
+assert binet < F(1, 10**8)
+gamma_lower, gamma_upper = F(19742423, 10**6), F(19742450, 10**6)
+assert log_bounds(375000000-5001)[0]-F(1, 10**8) > gamma_lower
+assert log_bounds(375000000+5001)[1]+F(1, 10**8) < gamma_upper
+
+p_bound, j_bound, y_bound, v_bound = F(1, 1250), F(3, 2500), F(1, 10000), F(1, 10**6)
+debit = 10*p_bound**2+F(25, 2)*j_bound**2+F(1, 10**515)+4*y_bound**2+v_bound**2/12
+assert debit < F(245, 10**7)
+budget = F(124997987, 10**9)
+mask_price = 211*(eta+4*theta)
+lower = gamma_lower*(1-eta)*(1-4*theta)-8*theta-prime_upper-mask_price-6000*delta-4*debit
+upper = gamma_upper+244*theta-prime_lower+mask_price+6000*delta
+assert lower > 0 and budget+lower > F(147898, 10**4)
+assert budget+upper/(1-100*delta**2) < F(220026, 10**4)
+
+center = (gamma_lower+gamma_upper)/2
+midpoint = (center+budget)*g01
+mixed_error = 2*((gamma_upper-gamma_lower)/2+61*eta+42*theta
+                +211*(eta+theta)+3000*delta+debit)+50*budget*delta**2
+assert F(163752, 10**4) < midpoint-p01[1]-mixed_error
+assert midpoint-p01[0]+mixed_error < F(163754, 10**4)
+print('PASS overlapping two-ray signed Schur block')
+```
+
+The prime-419 signed cutoff and the historical small-weight
+counterexample on $Z_F$ retain their scopes. This block establishes
+a joint sign inside the original $G_2$. Positivity on the whole $G_2$,
+the original radius-four stage, and the full RH and primitive
+Dirichlet GRH returns remain open.
