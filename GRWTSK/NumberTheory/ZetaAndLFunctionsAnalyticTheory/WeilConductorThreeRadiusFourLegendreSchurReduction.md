@@ -10354,3 +10354,407 @@ assert (near_cap-F(".68"))*(near_cap-F(".909"))>F(".084")**2
 assert max(F(".794"),near_cap)+F("4e-8")<F(".94")
 print("PASS full-lobe envelope, mixed Gram and joint contraction strictly below .94")
 ~~~
+
+## The full connected second negative lobe and its wider allocation
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational guards. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review is
+UNASSESSED.
+
+Keep the original physical carrier, $S_\lambda$ and the first and
+expanded third debits. Put $c=c_2=5085348195\pi/4$. The two endpoints
+of $c+[-0.20,0.15]$ are positive for the actual retained multiplier
+$m$, and the entire $c+[-0.17,0.12]$ interval is negative. Thus the
+enclosure contains the connected negative component of $c$.
+Define $\widetilde J_2$ to be the enclosure and its reflection and
+charge all actual $m_-$ there. With the old second row replaced by
+this wider debit, the actual three-row comparator has norm
+strictly below $0.954$.
+
+### A witness against keeping only the old second flanks
+
+Let $F$ be the four old second flanks, $c\pm[0.24,0.35]$ and their
+reflections. Set
+$S_\lambda^F=B I-\lambda\Pi_H+K^*(1_Fm_+)K\ge\beta I$.
+Even the actual positive energy on all of $F$ is insufficient
+for the full second component. Take the real odd physical test
+$f(t)=p(t)\sin(ct)$ on $[-4,4]$, extended by zero, where
+$p(t)=5(t/4)^2-1$. For
+$H(s)=\int_0^4 p(t)\cos(st)\,dt$, its exact folded evaluation is
+$H(s)-H(2c+s)$. Integration by parts gives
+$|H(2c+s)|\le9/(2c-|s|)<2\cdot10^{-9}$ for $|s|\le0.35$.
+Here $p(4)=4$, the sine primitive vanishes at zero, and the
+variation of $p$ on $[0,4]$ is $5$. Likewise
+$\|f\|^2=\int_0^4 p^2(1-\cos(2ct))\,dt<32/3+10^{-8}$,
+since $p(4)^2=16$ and $p^2$ has variation $17$.
+
+Use the original directed signed arithmetic and the bound
+$|P_4''|<13504$ on cells of length $0.01$. The full Binet
+bracket $21.3687<A<21.3689$ and original filter bounds give
+continuum upper and lower density bounds. At each midpoint $s_0$
+the guard integrates the rational Taylor polynomial for $H$,
+using cosine terms through degree 16 and remainder at most
+$16|4s_0|^{18}/18!$. For the shift use $|H'(s)|\le48|s|$ by
+$|\sin(st)|\le |s|t$ and
+$|p|\le p+2\,1_{[0,2]}$, which give
+$\int_0^4t^2|p(t)|\,dt\le128/3+16/3=48$.
+Each cell costs $48\max_{\rm cell}|s|(0.01)/2$ for the shift,
+plus the separate high frequency error.
+Including both reflected signs gives
+$$
+  \int_{c+[-0.17,0.12]\ {\rm and\ reflection}} m_-|\widehat f|^2
+          \frac{d\nu}{2\pi}>6.12,\qquad
+  \int_F m_+|\widehat f|^2\frac{d\nu}{2\pi}<1.725,\qquad B\|f\|^2<1.334.
+$$
+The inner interval lies in the connected negative component
+because the guard proves strict negativity on the entire interval
+and it contains $c$. Its debit divided by the restricted positive
+and scalar budget exceeds $6.12/(1.725+1.334)>2$. Substitution of
+$(S_\lambda^F)^{1/2}f$ into the norm of
+$\mathcal W_{\widetilde J_2}(S_\lambda^F)^{-1/2}$ proves that
+the squared norm exceeds $2$. This comparison uses the
+bounded odd carrier of the angular criterion. Odd real smooth
+tests with interior support approximate this witness in $L^2$,
+and their Schwartz Fourier decay meets the original gamma-density
+admission. The bounded quadratic forms preserve the strict inequality
+under sufficiently close approximation.
+
+### Signed measures for the wider allocation
+
+In all second-band coordinates write $s=\nu-c$. For the actual
+folded negative measure on $[-0.20,0.15]$ use a piecewise constant
+upper measure $d\bar\mu_-$ from the positive part of the upper
+$P_4-A$ estimate and division by a lower $\pi$ bound.
+Its cells have width $0.005$. For positive payment use $d\mu_+$
+on $[-2,2]$, the lower allocated density on cells of width $0.02$.
+It uses the positive part of the lower $A-P_4$ bound, the filter
+lower bound $1-3\cdot10^{-10}$, and division by an upper $\pi$
+bound. Interpolation costs at most $13504h^2/8$ for a cell of
+width $h$. The complete band lies in the source filter region
+and outside both original masks. The reflected allocation is
+disjoint from the first and expanded third flank sets.
+The same signed source enclosures check
+$\bar\mu_-([-0.20,0.15])<1.1$ and $\mu_+([-2,2])<100$.
+The guard rounds the lower and upper densities outwards before
+forming any moment matrix.
+
+### Bounded physical and positive costs for all second rows
+
+For $0\le k\le32$, put $b_k(t)=P_k(t/4)\sin(ct)$ if $k$ is
+even and $b_k(t)=P_k(t/4)\cos(ct)$ if $k$ is odd, where $P_k$ is
+the Legendre polynomial of degree $k$. All $b_k$ are odd.
+Let $\mathsf B$ synthesize a physical vector from these coefficient
+rows and let $D_{kk}=4/(2k+1)$. Product-to-sum and the Legendre
+norm give the diagonal $D$ in $\mathsf B^*\mathsf B$.
+The remaining entry in position $(i,j)$ is at most
+$(1+i^2+j^2)/(2c)$ in modulus by integration by parts in the
+carrier oscillation. For this bound $\sup_{[-1,1]}|P_k|\le1$
+and $\sup|P'_k|\le k^2$ suffice. The first follows from the
+integral representation of $P_k(\cos\theta)$ as the average of
+$(\cos\theta+i\sin\theta\cos\phi)^k$ for $0\le\phi\le\pi$.
+The derivative identity $P'_{k+1}-P'_{k-1}=(2k+1)P_k$ and the
+initial degrees give the stronger bound $k(k+1)/2$ for $k\ge1$.
+Multiplying the entry bound by 33 and comparing to $\min D_{kk}$
+gives $\mathsf B^*\mathsf B\preceq1.0002D$.
+
+Write $v_s(t)=\sin((c+s)t)=\mathsf B a(s)+r_s$. The vector $a(s)$
+contains the Legendre coefficients of the imaginary part of
+$e^{ict}$ times the Taylor polynomial for $e^{ist}$ through
+degree 32. The imaginary-axis integral remainder gives
+$\|r_s\|\le\sqrt8\,8^{33}/33!<2.1\cdot10^{-7}$ for $|s|\le2$.
+For $p\ge k$ of matching parity the coefficient of $s^p$ in
+$a_k(s)$ is
+$$
+ (-1)^{\lfloor p/2\rfloor}(2k+1)4^p
+   \frac{2^k((p+k)/2)!}{((p-k)/2)!(p+k+1)!}.
+$$
+It follows by multiplying the Taylor coefficient by the Legendre
+projection of $(t/4)^p$. Rodrigues' formula followed by integration
+by parts gives
+$\int_0^1 u^pP_k(u)\,du=p!/((p-k)!!(p+k+1)!!)$ in matching parity.
+The boundary terms vanish because $p\ge k$ at zero and
+$(1-u^2)^k$ has an order-$k$ zero at one. The other parities and
+lower powers have zero Legendre coefficient.
+
+Set $P=\int a(s)a(s)^{\mathsf T}d\mu_+$ and
+$M=\int a(\epsilon)a(\epsilon)^{\mathsf T}d\bar\mu_-$.
+For a fixed rational matrix $Z$ put
+$q_\epsilon(s)=a(s)^{\mathsf T}Za(\epsilon)$ and
+$E_\epsilon=v_\epsilon-\int q_\epsilon(s)v_s\,d\mu_+$.
+Then the second folded evaluation factors through the
+physical and positive input $(\sqrt\beta f,\langle v_s,f\rangle)$
+with output row $(\beta^{-1/2}E_\epsilon,q_\epsilon)$.
+Its input squared norm, together with the other two disjoint
+positive allocations, is at most the original $S_\lambda$ form.
+
+The integrated squared positive cost is bounded by
+$R=\operatorname{tr}(Z^{\mathsf T}PZM)$. With $V=I-PZ$, the
+nominal physical residual is $\mathsf B V a(\epsilon)$.
+Its integrated squared norm is bounded by
+$1.0002\operatorname{tr}(V^{\mathsf T}DVM)$, using the negative
+upper measure on nonnegative squares. The remaining residual
+$r_\epsilon-\int q_\epsilon(s)r_s\,d\mu_+$ has norm in the row
+$L^2$ at most
+$$
+ (2.1\cdot10^{-7})\big(\sqrt{1.1}+\sqrt{\mu_+([-2,2])R}\big).
+$$
+This is the triangle inequality in the row space followed by
+Cauchy–Schwarz in the positive allocation. The guard forms all
+moments directly from checked cells and proposes $Z$ by rounding
+a decimal Cholesky solution for $P+\beta D^{-1}$. The trace and
+remainder tests are exact for the resulting rational matrix.
+They give second total cost below $0.52$ and physical cost below
+$0.036$ after division by $\beta$.
+
+### Coupled comparison and return
+
+The third physical cost is below $0.28042\cdot0.233/\beta<0.527$.
+The second and third positive coordinates are disjoint.
+Cauchy–Schwarz on the physical parts of their row majorants
+gives mixed block norm below $\sqrt{0.036\cdot0.527}<0.138$.
+The third total diagonal is below $0.909$, so
+$(0.953-0.52)(0.953-0.909)>0.138^2$ bounds the nearby pair
+by $0.953 I$.
+
+For either far block incident on the first row use the separated
+physical sine Gram. Both its difference and sum denominators
+are above $3.8\cdot10^9$ for every frequency used in the residual
+coefficient measures. The first coefficient measure has total
+variation at most $2.14$ and folded mass less than one.
+The second row's coefficient total variation in its folded
+negative $L^2$ is at most $\sqrt{1.1}+\sqrt{100R}<9$.
+For the third it is at most $2.66$, with folded mass less than
+one. Multiplying these bounds and the physical Gram bound,
+then dividing by $\beta>0.12$, gives a sum of far block norms
+below $2\cdot10^{-7}$. The first diagonal is below $0.794$.
+The exact angular folding and the joint factorization therefore
+give a norm below $0.954$ for the first narrow row and the two
+expanded rows together.
+
+Write $\mathcal W_{\rm exp}$ for that actual column and
+$S_{\rm exp}=S_\lambda-\mathcal W_{\rm exp}^*\mathcal W_{\rm exp}$.
+The comparison gives $S_{\rm exp}\ge0.046S_\lambda$. The old narrow
+second and third rows are included once in the expanded debits.
+The exact criterion for the same $C_{4,+}\ge\lambda I_H$ is
+$\|N_{\rm rest} S_{\rm exp}^{-1}N_{\rm rest}^*\|\le1$ with the
+actual negative restriction outside all three charged sets.
+The original seven physical inverse domains and directional
+residual remain part of the original arithmetic return.
+
+The following guard takes this complete document as input.
+
+~~~python
+from decimal import Decimal, localcontext
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+k=5085348195
+c2=scale(F(k,4),(pi_lower,pi_upper))
+assert F("3.5e9")<c2[0]-2<c2[1]+2<F("4e9")
+assert c2[0]>F("3.99e9")
+assert c2[0]-2>F("3806849122.861433")+F(1,160)
+assert c2[0]-2>F("1852422754.1662946")+10
+assert c2[0]-2>30000000 and c2[1]+2<35*10**24
+c1=F("99653682.92983")
+c3=add(c2,(F("-5.55"),F("-5.55")))
+assert c1+F(".35")<c2[0]-2 and c3[1]+F(".35")<c2[0]-2
+for centre,band_radius in ((c2,F(2)),(c3,F(".35"))):
+    assert centre[0]-band_radius-(c1+F(".35"))>F("3.8e9")
+    assert centre[0]-band_radius+(c1-F(".35"))>F("3.8e9")
+Alo,Ahi=F("21.3687"),F("21.3689")
+lowarg,higharg=3*k//8-3,3*k//8+3
+y=(c2[0]-2)/2
+binet=F(5,9)/y+F(9,32)/y**2
+assert lowarg<F(3*k,8)-F(3)/pi_lower
+assert F(3*k,8)+F(3)/pi_lower<higharg
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply(add(c2,(x,x)),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+def estimate(x,h):
+    u,v=node(x),node(x+h)
+    err=second*h*h/8
+    return min(u[0],v[0])-err,max(u[1],v[1])+err
+
+wmin=1-F("3e-10")
+positive,negative=[],[]
+h=F(".02")
+for i in range(-100,100):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=(max(F(0),wmin*(Alo-hi)/pi_upper)*10**7//1)/F(10**7)
+    if density>0:positive.append((x,x+h,density))
+h=F(".005")
+for i in range(-40,30):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=-((-max(F(0),(hi-Alo)/pi_lower)*10**7)//1)/F(10**7)
+    if density>0:negative.append((x,x+h,density))
+assert node(F("-.2"))[1]<Alo and node(F(".15"))[1]<Alo
+assert node(F(0))[0]>Ahi
+assert sum((v-u)*w for u,v,w in positive)<100
+assert sum((v-u)*w for u,v,w in negative)<F("1.1")
+
+# Hostile check on the full-component old-flank comparator.
+h=F(".01")
+error=second*h*h/8
+wmin=1-F("3e-10")
+def cell_p4(x):
+    u,v=node(x),node(x+h)
+    return min(u[0],v[0])-error,max(u[1],v[1])+error
+
+# p(t)=5(t/4)^2-1. H(s)=int_0^4 p(t)cos(st)dt.
+def H_cell(x):
+    z=4*(x+h/2)
+    mid=4*sum((-1)**j*z**(2*j)*
+        (F(5,2*j+3)-F(1,2*j+1))/factorial(2*j) for j in range(9))
+    # Use |H'(s)| <= 48|s| and the uniform high-frequency bound.
+    shift_price=48*max(abs(x),abs(x+h))*h/2
+    delta=16*abs(z)**18/factorial(18)+shift_price+F("2e-9")
+    assert 9/(2*c2[0]-F(".35"))<F("2e-9")
+    return mid-delta,mid+delta
+
+# All these intervals are in the actual negative component of c2.
+debit=F(0)
+for i in range(-17,12):
+    x=i*h
+    plo,phi=cell_p4(x)
+    assert plo>Ahi
+    hlo,hhi=H_cell(x)
+    assert hlo>0
+    debit+=h*wmin*(plo-Ahi)*hlo**2/pi_upper
+
+flank_energy=F(0)
+for i in [*range(-35,-24),*range(24,35)]:
+    x=i*h
+    plo,phi=cell_p4(x)
+    hlo,hhi=H_cell(x)
+    flank_energy+=h*max(0,Ahi-plo)*max(abs(hlo),abs(hhi))**2/pi_lower
+
+assert 33/(2*c2[0])<F("1e-8")
+phys=F(".124997987")*(F(32,3)+F("1e-8"))
+assert node(F("-.2"))[1]<Alo and node(F(".15"))[1]<Alo
+assert debit>F("6.12")
+assert flank_energy<F("1.725") and phys<F("1.334")
+assert debit>2*(phys+flank_energy)
+print('PASS old-flank-only actual comparator obstruction on central full second lobe')
+
+# Exact polynomial budget for the wider positive allocation.
+n=33
+beta=F(".124890887")
+D=[F(4,2*k+1) for k in range(n)]
+
+# Raw Legendre coefficient of the Taylor carrier, from its monomial moment.
+def ckp(k,p):
+    if p<k or (p-k)%2: return F(0)
+    # Integral_0^1 u^p P_k(u) du by Rodrigues and the beta integral.
+    return ((-1)**(p//2)*F((2*k+1)*4**p*2**k*factorial((p+k)//2),
+             factorial((p-k)//2)*factorial(p+k+1)))
+
+coeff=[{p:ckp(k,p) for p in range(k,n,2)} for k in range(n)]
+
+def moment_matrix(kt):
+    mu=[sum(w*(v**(e+1)-u**(e+1))/(e+1) for u,v,w in kt) for e in range(2*n)]
+    result=[[F(0) for j in range(n)] for i in range(n)]
+    for i in range(n):
+        for j in range(i+1):
+            val=sum(a*b*mu[p+q] for p,a in coeff[i].items() for q,b in coeff[j].items())
+            result[i][j]=result[j][i]=val
+    return result
+cells=(positive,negative)
+P,M=map(moment_matrix,cells)
+# Decimal Cholesky proposes a rational matrix. The proposal's
+# quality is established only by the exact fraction tests below.
+with localcontext() as ctx:
+    ctx.prec=45
+    def dec(x):
+        return Decimal(x.numerator)/Decimal(x.denominator)
+    G=[[dec(P[i][j]+(beta/D[i] if i==j else 0)) for j in range(n)]
+       for i in range(n)]
+    L=[[Decimal(0) for _ in range(n)] for _ in range(n)]
+    for i in range(n):
+        for j in range(i+1):
+            value=G[i][j]-sum(L[i][k]*L[j][k] for k in range(j))
+            L[i][j]=value.sqrt() if i==j else value/L[j][j]
+    def proposed_column(k):
+        y=[Decimal(0)]*n
+        for i in range(n):
+            y[i]=(int(i==k)-sum(L[i][j]*y[j] for j in range(i)))/L[i][i]
+        x=[Decimal(0)]*n
+        for i in reversed(range(n)):
+            x[i]=(y[i]-sum(L[j][i]*x[j] for j in range(i+1,n)))/L[i][i]
+        return [F(round(F(value)*10**8),10**8) for value in x]
+    columns=[proposed_column(k) for k in range(n)]
+Z=[[columns[j][i] for j in range(n)] for i in range(n)]
+
+def transpose(A):return list(zip(*A))
+def dot(a,b):return sum(x*y for x,y in zip(a,b))
+def matmul(A,B):
+    BT=transpose(B)
+    return [[dot(row,col) for col in BT] for row in A]
+PZ=matmul(P,Z)
+V=[[F(i==j)-PZ[i][j] for j in range(n)] for i in range(n)]
+ZPZ=matmul(transpose(Z),PZ)
+R=sum(ZPZ[i][j]*M[i][j] for i in range(n) for j in range(n))
+VdV=matmul(transpose(V),[[D[i]*v for v in row] for i,row in enumerate(V)])
+S=sum(VdV[i][j]*M[i][j] for i in range(n) for j in range(n))
+assert (F(33)*(1+2*32**2)/(2*F("3.99e9")))<F(".0002")*min(D)
+E2=8*(F(8)**33/factorial(33))**2
+assert E2<F("2.1e-7")**2
+# Taylor error from the negative vector plus its positive reconstruction.
+# By triangle in L²(μ₋; H), cost ≤ (sqrt(S(1+.0002)/β) +
+#   E/sqrt(β)*(sqrt(M₀)+sqrt(μ₊(W) R)))². Bound square roots separately.
+assert sum((v-u)*w for u,v,w in cells[0])<100
+assert sum((v-u)*w for u,v,w in cells[1])<F("1.1")
+assert 0<=R<F(".55") and S>=0
+contrib=F("2.1e-7")*(F("1.05")+F("7.42"))/F(".35")
+assert F("1.05")**2>F("1.1") and F("7.42")**2>100*F(".55") and F(".35")**2<beta
+assert 0<contrib<F(".189")
+assert (F(".189")-contrib)**2>S*F("1.0002")/beta
+actual_phys=F(".189")**2
+assert R+actual_phys<F(".52")
+assert actual_phys<F(".036")
+assert F(".28042")*F(".233")/beta<F(".527")
+assert F(".036")*F(".527")<F(".138")**2
+assert (F(".953")-F(".52"))*(F(".953")-F(".909"))>F(".138")**2
+assert F("1.1")<F("1.05")**2
+assert F("1.05")+F("7.42")<9
+far=F("2.14")*(9+F("2.66"))*2/(F("3.8e9")*F(".12"))
+assert far<F("2e-7")
+assert max(F(".794"),F(".953"))+far<F(".954")
+print('PASS exact majorant costs: J2 total <.52, physical <.036, near pair <.953, three-row <.954')
+~~~
