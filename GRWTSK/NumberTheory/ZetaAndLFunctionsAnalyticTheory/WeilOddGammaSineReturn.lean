@@ -142,10 +142,14 @@ theorem gammaCorrectionIntegral_eq_periodicMultiplier
         periodicMultiplier (gammaParity χ) ξ * halfSineMoment T f ξ ^ 2 :=
   (gammaSine_multiplier_facts χ hf).2
 
-/-- The exact sine multiplier of the original primitive arithmetic value plus its physical energy. -/
-theorem originalPrimitiveQ_eq_sineMultiplier
+private theorem originalPrimitiveQ_sineMultiplier_facts
     {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
     {T : ℝ} {f : ℝ → ℝ} (hf : Admissible χ T f) :
+    IntegrableOn (fun ξ =>
+      (1 + gammaConstant q (gammaParity χ) + periodicMultiplier (gammaParity χ) ξ -
+        2 * ∑ n ∈ activePrimePowers T,
+          pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * ξ)) *
+        halfSineMoment T f ξ ^ 2) (Ioi (0 : ℝ)) ∧
     primitiveArithmeticValue χ hp hn T (liftReal f) + energy (liftReal f) =
       (4 / Real.pi) * ∫ ξ in Ioi (0 : ℝ),
         (1 + gammaConstant q (gammaParity χ) + periodicMultiplier (gammaParity χ) ξ -
@@ -193,6 +197,8 @@ theorem originalPrimitiveQ_eq_sineMultiplier
       c * ∑ n ∈ S, w n * ∫ ξ, d n ξ * k ξ ∂μ := by
     rw [Finset.mul_sum]
     exact Finset.sum_congr rfl (fun _ _ => by ring)
+  refine ⟨((hb.add hpg).sub (hsum.const_mul 2)).congr
+    (Filter.Eventually.of_forall fun ξ => (hpoint ξ).symm), ?_⟩
   change primitiveArithmeticValue χ hp hn T (liftReal f) + energy (liftReal f) =
     c * ∫ ξ, (1 + b + p ξ - 2 * ∑ n ∈ S, w n * d n ξ) * k ξ ∂μ
   rw [hsrc, hgamma.2, hE, hInt]
@@ -200,5 +206,28 @@ theorem originalPrimitiveQ_eq_sineMultiplier
     2 * (∑ n ∈ S, w n * (c * ∫ ξ, d n ξ * k ξ ∂μ)) + (c * ∫ ξ, k ξ ∂μ) = _
   rw [hscale]
   ring
+
+/-- The original signed sine integrand is integrable on the positive frequency axis. -/
+theorem integrableOn_primitiveSineIntegrand
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    {T : ℝ} {f : ℝ → ℝ} (hf : Admissible χ T f) :
+    IntegrableOn (fun ξ =>
+      (1 + gammaConstant q (gammaParity χ) + periodicMultiplier (gammaParity χ) ξ -
+        2 * ∑ n ∈ activePrimePowers T,
+          pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * ξ)) *
+        halfSineMoment T f ξ ^ 2) (Ioi (0 : ℝ)) :=
+  (originalPrimitiveQ_sineMultiplier_facts χ hp hn hf).1
+
+/-- The exact sine multiplier of the original primitive arithmetic value plus its physical energy. -/
+theorem originalPrimitiveQ_eq_sineMultiplier
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    {T : ℝ} {f : ℝ → ℝ} (hf : Admissible χ T f) :
+    primitiveArithmeticValue χ hp hn T (liftReal f) + energy (liftReal f) =
+      (4 / Real.pi) * ∫ ξ in Ioi (0 : ℝ),
+        (1 + gammaConstant q (gammaParity χ) + periodicMultiplier (gammaParity χ) ξ -
+          2 * ∑ n ∈ activePrimePowers T,
+            pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * ξ)) *
+          halfSineMoment T f ξ ^ 2 :=
+  (originalPrimitiveQ_sineMultiplier_facts χ hp hn hf).2
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddShiftEnergySine
