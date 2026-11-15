@@ -384,3 +384,110 @@ proof. **New Lean elaboration, full imported closure, kernel replay,
 axiom audit and independent review are NOT_RUN/UNASSESSED.** The
 historical failed native ledger import remains FAIL. The sine-deficit
 Hilbert–Schmidt certificate, stage sign, RH and primitive GRH remain OPEN.
+
+
+## Independent shorter Euler-constant enclosure: 127 terms (NON-CYCLE)
+
+2026-11-14, grwtsk contributors; AI-assisted. **Analytic source-only supplement.**
+This is a second route to the **already stated** original q=3 odd multiplier bound
+\(M_\chi(x)>253/250\) for all real \(x\ge256\); it changes neither the
+mathematical source, the original signed prime-power table, the
+\(\Lambda(4)=\log2\) factor, nor the phase \(x\log4\).
+The preceding independent appendix used 1,024 harmonic terms; the route below
+uses **127** and sharper elementary integral-tail accounting, at the cost of
+a separate inequality for the Euler remainder. This is a possible smaller
+Lean certification target, **not** an accepted Lean declaration.
+
+For \(0<u<1\), write
+\[
+L_N(u)=2\sum_{k=0}^{N-1}\frac{u^{2k+1}}{2k+1},\qquad
+U_N(u)=L_N(u)+\frac{2u^{2N+1}}{(2N+1)(1-u^2)}.
+\]
+The positive atanh series gives
+\(L_N(u)<\log((1+u)/(1-u))<U_N(u)\).
+Exact rational comparisons with \(N=5,u=1/3\) and \(N=7,u=1/2\)
+give
+\[
+ L_5(1/3)<\log2<U_5(1/3)<69315/100000,
+\]
+\[
+ 10986/10000<L_7(1/2)<\log3<U_7(1/2)
+ <1098613/1000000.
+\]
+For \(\gamma=\lim_{n\to\infty}(H_n-\log n)\), telescope the
+differences \(1/k-\log(1+1/k)\). Since
+\[
+0\le\frac1k-\log(1+1/k)\le\frac1{2k^2},\qquad
+\sum_{k>N}\frac1{k^2}\le\int_N^\infty\frac{dt}{t^2}=\frac1N,
+\]
+the **full infinite** Euler remainder obeys
+\[
+\gamma\le H_N-\log(N+1)+\frac1{2N}.
+\]
+At \(N=127\), \(\log128=7\log2\), hence exact fraction arithmetic gives
+\[
+ \gamma<H_{127}-7L_5(1/3)+\frac1{254}
+ < \frac{57725}{100000}.
+\]
+This bound uses no numeric estimate of \(\gamma\) as an axiom.
+
+For \(\pi\), put \(A_j(u)=\sum_{k=0}^j(-1)^k
+u^{2k+1}/(2k+1)\). Machin's exact identity
+\(\pi=16\arctan(1/5)-4\arctan(1/239)\) and alternating remainders give
+\[
+ \frac{157}{50}
+ <16A_3(1/5)-4A_2(1/239)<\pi
+ <16A_2(1/5)-4A_1(1/239)<\frac{1571}{500}.
+\]
+The identity itself follows from the tangent double-angle formula:
+\(\tan(2\arctan(1/5))=5/12\),
+\(\tan(4\arctan(1/5))=120/119\), and
+\(\tan(4\arctan(1/5)-\arctan(1/239))=1\),
+with the angle in \((0,\pi/2)\).
+Taking \(u=71/1500\), using \(\pi/3<1+u\) and
+\(\log(1+u)\le u-u^2/2+u^3/3\) gives the rational comparison
+\[
+ \log\pi<1098613/1000000+u-u^2/2+u^3/3
+ <1144862/1000000.
+\]
+For the existing actual quarter-digamma normalization,
+\[
+1+\operatorname{gammaConstant}(3,1)
+=1+\log3-\log\pi-\gamma+\pi/2-3\log2.
+\]
+Therefore the **outward** rational inequalities above imply
+\[
+1+\operatorname{gammaConstant}(3,1)>
+1+\frac{10986}{10000}-\frac{1144862}{1000000}
+-\frac{57725}{100000}+\frac{157}{100}
+-3\frac{69315}{100000}
+=-\frac{66481}{500000}>-\frac{133}{1000}.
+\]
+This replaces the 1,024-term harmonic certificate for the *same*
+sharp gamma bracket, not the source gamma constant or Weil form.
+
+The preceding appendix already gives the exact four-term-plus-shifted
+original \(P_1\) tail \(P_1(x)>1157/200\) for all \(x\ge256\)
+and the full signed inventory bound
+\(\sum_{n=2}^7|w_\chi(n)|<58/25\).
+Thus, **conditional on qualifying the actual native q=3 source table**,
+\[
+ M_\chi(x)>-133/1000+1157/200-2(58/25)
+ =253/250>1,\quad \forall x\ge256.
+\]
+No compact continuum sine-deficit norm, finite-to-infinite cell enclosure,
+original radius-one stage sign or RH/GRH theorem follows from this alone.
+
+**Independent scratch arithmetic:** Python \`fractions.Fraction\` on
+the displayed rational truncations and comparisons: **PASS** in the
+authoring environment (script SHA-256
+\`9c447649f41298423f7b636e9bfbd224575ff8d7d742b7857a36750cf4432cf7\`).
+The script is not yet part of the repository; the inequalities above
+remain reconstructible without it. The standard atanh, logarithmic
+remainder, arctangent, Euler limit, and original gamma-source identities
+need their own exact Lean formalization and imported-dependency replay.
+**LEAN_ELABORATION_NOT_RUN; FRESH_KERNEL_NOT_RUN;
+TRANSITIVE_AXIOMS_NOT_RUN; INDEPENDENT_ANALYTICAL_REVIEW_UNASSESSED;
+NATIVE_SIGNED_LEDGER_HISTORICAL_FAIL**. The original downstream
+Hilbert–Schmidt continuum inequality and every global RH/GRH return
+remain **OPEN**.
