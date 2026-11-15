@@ -1770,3 +1770,53 @@ conductor-one pole orientations, every primitive
 character/window, `DirichletStageChain.PrimitiveNegativeWitness`,
 complex zeros and multiplicities, and the exact global source
 returns remain open. RH and primitive Dirichlet GRH are unproved.
+
+## 19. Tighter continuum allowances for the radius-one certificate
+
+The [Courtade–Kumar proof](https://arxiv.org/abs/2609.24931v2) uses local analytic inequalities, a finite interval certificate, and a return to the original global statement. The same proof structure applies to the original radius-one rectangle in §11. The following two analytic estimates tighten different terms in its interval enclosure. The original signed prime response, gamma sum, normalization, support, and target `DirichletStageChain.PrimitiveStageLower χ hp hn 0` are the ones in §11. See [math issue 1814](https://github.com/grwtsk/math/issues/1814).
+
+### A uniform eight-Lipschitz bound
+
+For \(a>0\) let \(p_a(t)=2t^2/[a(a^2+t^2)]\). The parity-one term in `OddMultiplierBounds.periodicMultiplierTerm` is \(p_{(4j+3)/2}\). Set \(u=|x|/a\), \(v=|y|/a\), \(m=(u+v)/2\), and \(d=(u-v)/2\). Factoring the difference of squares in the numerator and using \(|x+y|\le |x|+|y|\) gives
+
+\[
+|p_a(x)-p_a(y)|\le \frac{2|x-y|}{a^2}\frac{u+v}{(1+u^2)(1+v^2)}.
+\]
+
+If \(0\le m\le1\), the denominator equals \((1+m^2)^2+2(1-m^2)d^2+d^4\). The first term alone is at least \(3m\) by the identity
+
+\[
+(1+m^2)^2-3m=(m-\tfrac12)^2(m^2+m+\tfrac34)+2(m-\tfrac58)^2+\tfrac1{32}.
+\]
+
+If \(m\ge1\), the denominator is \((1-uv)^2+(u+v)^2\ge4m^2\ge3m\). In both cases \(u+v\le (2/3)(1+u^2)(1+v^2)\). Thus the term Lipschitz constant is \(4/(3a^2)=16/[3(4j+3)^2]\). The estimate includes zero, opposite signs, and unbounded real frequencies. As a hostile check on stronger coefficients, at \(a=1,x=1/2,y=2/3\) the exact secant ratio is \(84/65>5/4\).
+
+For \(j\ge1\), \((4j+3)^2=(4j+1)(4j+5)+4\), so
+
+\[
+\frac{8}{(4j+3)^2}\le\frac2{4j+1}-\frac2{4j+5}.
+\]
+
+Sum from \(j=1\) through \(N\), use the resulting bound \(2/5\), and retain the \(j=0\) term. The existing `periodicMultiplier_summable` at \(x\) and \(y\) lets the finite difference estimate pass to the full series. The full gamma variation coefficient is at most \((2/3)(8/9+2/5)=116/135\). For the signed prime response, the original source enclosures give \(2\sum |w_n|\log n\le3561/500\) over the nonzero rows \(n=2,4,5,7\). The cosine Lipschitz estimate and the triangle inequality therefore give a combined coefficient at most \(107747/13500<8\) for the full original multiplier. At cell half-width \(1/256\), the resulting allowance is \(1/32\).
+
+### Joint variation of the two sinc terms
+
+Let \(K(x,y)=\operatorname{sinc}(x-y)-\operatorname{sinc}(x+y)\), using the original `Real.sinc` convention. For displacements \(u,v\) from the cell midpoints, apply `OddSineKernelOverlap.abs_sinc_sub_sinc_le` with Lipschitz constant \(1/2\) to the difference and sum arguments. Then
+
+\[
+|K(x+u,y+v)-K(x,y)|\le\tfrac12(|u-v|+|u+v|)=\max(|u|,|v|).
+\]
+
+The equality follows by taking the larger absolute displacement and considering its sign. The pair-cell allowance is at most \(1/256\), including on diagonal cells. Both fixed-point sinc approximation allowances and the existing lower enclosure of \(\pi\) remain in the integer arithmetic.
+
+### Exact finite replay and source return
+
+On the pinned `scripts/verify_odd_three_sine_hs.py` blob `b35434bed50c8a6ba218d01575e1964cae9a93e6` at `f397245883b77886c6431083ec5902ed222e352b`, an isolated replay compared the four combinations of midpoint and sinc allowances. It replaced `9*S//(2*GRID)` by `8*S//(2*GRID)` and `S//GRID` by `S//(2*GRID)` in the corresponding variants and adjusted only the expected positive-cell counts. With `S=10**12` and `GRID=128` all these divisions are exact. Each replay enumerated all 32768 cells. The variant using both estimates retained 1377 positive envelopes and last positive index 20274. The exact rational candidate upper bound for the squared norm is
+
+\[
+\frac{15223225953283754189915298350612102673158177815997781}{20212949813420799087781726208000000000000000000000000}
+\quad(\approx 0.753142223).
+\]
+
+The original finite replay gave approximately \(0.767372727\). In all four runs the exact integer threshold comparisons passed. A Lean proof still has to bind the midpoint enclosures, the signed terms, rounding and full cell coverage to `sineDeficitRectangle 256 (q3SineDeficit χ)`. The existing conditional stage return then accepts the rectangle bound at most one. Source-local Lean elaboration, fresh kernel replay, transitive axiom audit, and independent analytical review for this increment are `NOT_RUN`. This increment addresses the single radius-one lower obligation. RH and primitive Dirichlet GRH remain open.
+
