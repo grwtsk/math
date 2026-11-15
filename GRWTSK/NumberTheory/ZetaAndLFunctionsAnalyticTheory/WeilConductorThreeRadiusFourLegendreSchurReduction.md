@@ -704,3 +704,212 @@ all of $G_1$, the radius-four stage, and the original RH and
 primitive Dirichlet GRH returns remain open. In particular the
 conductor-one argument retains both pole terms and the completed
 zero divisor with multiplicities.
+
+## A separated family in the corrected lower-frequency block
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational inequalities checked below. Lean elaboration,
+fresh kernel replay and transitive axiom audit are NOT_RUN.
+Independent review is UNASSESSED.
+
+Keep the same $G_1$, $C_1$, all four inverse corrections and full
+radius-four source above. The native sector has conductor three,
+parity one and all 458 signed unramified prime-power terms. Use the
+physical norm and the original angular measure $d\xi/(2\pi)$.
+
+Put $j_0=2\cdot10^{25}$, $M=10^4$, $R_*=3\cdot10^{19}$ and
+$j_r=j_0+Mr$ for $0\le r\le R_*$. For each $r$ use
+$$
+g_r=\psi_{j_r}+\frac{j_r}{j_r+1}\psi_{j_r+1},\qquad
+b_r=\Pi_{G_1}g_r,\qquad
+u_r=\frac{g_r}{\|g_r\|},\qquad v_r=\Pi_{G_1}u_r .
+$$
+Here $\Pi_{G_1}=(I-\Pi_{Y_0})\Pi_{G_0}$ is the actual physical
+projection. Every $g_r$ is a real odd compact $C^2$ test with the
+complete original gamma integrability. The $u_r$ are physically
+orthonormal because their sine indices are disjoint. The projected
+vectors live in the original bounded Schur carrier.
+
+Their span $\mathcal V$ has dimension $3\cdot10^{19}+1$, and for
+every nonzero $v\in\mathcal V$,
+$$
+12<\frac{\langle v,C_1 v\rangle}{E(v)}<108 .
+$$
+The particular second packet prescribed in the journal has
+$j=j_0+10^{20}$ and occurs at index $r_*=10^{16}$. Its normalized
+mixed entry with the first packet satisfies
+$$
+\frac{|\langle b_0,C_1 b_{r_*}\rangle|}{\|b_0\|\|b_{r_*}\|}
+ <5\cdot10^{-25}.
+$$
+
+### Uniform inherited diagonal and mixed bounds
+
+The previous adjacent-pair proof is uniform on this family.
+Every $j$ lies in $[2\cdot10^{25},\,2.03\cdot10^{25}]$. The
+collar of radius $10^{16}$ at $\pm j\pi/4$ lies in
+$1.49\cdot10^{25}<|\xi|<1.6\cdot10^{25}$ and stays more than
+$10^{25}$ from the high carrier in absolute frequency. Thus the
+same inherited high pass, all-lobe low stop, gamma floor,
+old sine restriction and high tail estimates apply on each
+such collar. All mode centers remain below $\Omega$.
+
+The comparison with the unweighted adjacent pair in the preceding
+proof uses the same exact finite 458-atom bin sum for every carrier.
+The only carrier-dependent prices in that sum and its transfer
+decrease with $j$. Thus its original signed prime integral on
+$g_r$ still has absolute value $<(451/10)E(g_r)$ with the same
+complete cutoff and signs. Endpoint cancellation gives the same
+full off-band norm bound as for the first pair, and the same
+Chebyshev estimate applies to the physical projections.
+
+In particular, with $\delta=10^{-272}$, the preceding inequalities
+on each $u_r$ give
+$$
+\begin{aligned}
+\|u_r-v_r\|&<4\delta, &
+\|PRv_r\|&<4\cdot10^{-21},\\
+\|Jv_r\|&<13\cdot10^{-18},&
+\|J_Yv_r\|&<3\cdot10^{-13},\\
+121/10&<\langle v_r,C_1v_r\rangle/E(v_r)<107 .
+\end{aligned}
+$$
+Here $P$, $J$ and $J_Y$ are precisely the inherited mixed operators.
+The scalar interval checks below verify the uniform band endpoints
+and separation from the high carrier. The diagonal argument
+uses each pair's own collar, which may overlap other collars.
+
+### Decay of the actual mixed entries
+
+For an adjacent pair at carrier $\omega=j\pi/4$, set
+$\Delta=\pi/4$ and $b=||\xi|-\omega|$. Its first derivative
+cancellation gives the difference of the two exact sine resolvents,
+with the common numerator $i(-1)^j\omega\sin(4\xi)$. For $b\ge2$
+the absolute transform is at most
+$$
+\frac{\omega\Delta(2\omega+\Delta)}
+ {|\lambda-\omega|\,|\lambda-\omega-\Delta|
+  (\lambda+\omega)(\lambda+\omega+\Delta)}
+ \le \frac{2\Delta}{b(b-\Delta)}\le\frac4{b^2},
+ \qquad \lambda=|\xi|.
+$$
+We used $\Delta<1$ and $\|g_r\|\ge1$. For $b\le2$, the ordinary
+physical $L^1$ bound gives $|\widehat u_r|\le\sqrt8$.
+Together the bounds give the whole-line envelope
+$$
+|\widehat u_r(\xi)|\le
+ \frac{27}{(1+||\xi|-\omega_r|)^2},\qquad
+ \omega_r=\pi j_r/4 .
+$$
+
+For distinct indices let $D_{rs}=|\omega_r-\omega_s|$.
+At each $\lambda\ge0$ at least one distance to these centers
+is at least $D_{rs}/2$. Integrating the other decaying factor
+on each of the two sets gives at most 2 per set, since
+$\int_{\mathbb R}(1+|x|)^{-2}\,dx=2$. The bounded original
+multiplier has $\|w s_4\|_{\infty,\mathcal D}<300$. Integrating
+both angular signs and enlarging the envelope integral to
+both complete half-lines now gives
+$$
+|\langle u_r,Ru_s\rangle|
+ \le \frac{300\cdot27^2\cdot4}{\pi(1+D_{rs}/2)^2}
+ < \frac{2073600}{M^2(r-s)^2}.
+$$
+The last comparison uses $\pi>3$ both in the measure and in
+$D_{rs}\ge (3/4)M|r-s|$. It uses the original signed multiplier
+with its physical norm bound on the whole relevant frequency set.
+
+Write $e_r=u_r-v_r$. The exact orthogonal projection identity
+gives $\langle v_r,v_s\rangle=-\langle e_r,e_s\rangle$
+for $r\ne s$. Thus the scalar $B I$ mixed entry is priced by
+$16B\delta^2$. The transfer from $u$ to $v$ in an entry of $R$
+costs at most $2400\delta$. By the actual inverse norms and the
+uniform mixed estimates on each $v_r$, the other four mixed
+prices are bounded by
+$$
+10(4\cdot10^{-21})^2,\qquad
+(25/2)(13\cdot10^{-18})^2,\qquad
+10^{-515},\qquad 4(3\cdot10^{-13})^2.
+$$
+These are respectively the $A_{23}$, $D$, $D_0$ and $A_Y$
+corrections on their actual domains. The sum with the scalar
+and transfer prices is less than $4\cdot10^{-25}$. Consequently
+for $r\ne s$,
+$$
+|\langle v_r,C_1 v_s\rangle|
+ < \frac{2073600}{M^2(r-s)^2}+4\cdot10^{-25}.
+$$
+At $r=0,s=r_*$, division by the two projected norms costs
+at most $(1-4\delta)^{-2}$. This yields the claimed normalized
+bound for the requested mixed entry.
+
+### Joint positivity on the physical span
+
+Set $N=R_*+1$. The exact physical Gram of the $v_r$ is
+$I-[\langle e_r,e_s\rangle]_{r,s}$. The subtracted matrix is
+positive semidefinite with norm at most its trace, less than
+$16N\delta^2$. Thus the Gram is bounded below by
+$(1-16N\delta^2)I>0$ and above by $I$. This proves the stated
+dimension.
+
+In the matrix of the actual form on the $v_r$, the absolute
+sum of off-diagonal entries in each row is at most
+$$
+\frac{4\cdot2073600}{M^2}+(N-1)4\cdot10^{-25}
+=\frac{20739}{250000}<\frac{83}{1000}.
+$$
+Here $\sum_{m\ge1}m^{-2}\le2$ by the elementary integral
+comparison, and there are at most two entries at each index
+distance. The diagonal entries lie between
+$(121/10)(1-4\delta)^2$ and $107$. Applying
+$2|c_r c_s|\le|c_r|^2+|c_s|^2$ in the Hermitian form and
+then using the above physical Gram bounds gives the claimed
+interval $(12,108)$. These calculations use a formula for the
+entire row bound and require no enumeration of the carriers.
+
+```python
+from fractions import Fraction as F
+
+delta = F(1, 10**272)
+budget = F(124997987, 10**9)
+step = 10**4
+last_index = 3 * 10**19
+size = last_index + 1
+base = 2 * 10**25
+band_width = 10**16
+assert base + step * last_index == 203 * 10**23
+assert F(3, 4) * base - band_width > 149 * 10**23
+assert F(11, 14) * (base + step * last_index) + band_width < 16 * 10**24
+assert F(3, 4) * (4 * 10**25 - base - step * last_index) - band_width > 10**25
+assert 27**2 > 9**2 * 8
+decay = 300 * 27**2 * F(4, 3) * F(8, 3)**2
+assert decay == 2073600
+inverse_and_transfer = (
+    2400 * delta + 16 * budget * delta**2
+    + 10 * F(4, 10**21)**2 + F(25, 2) * F(13, 10**18)**2
+    + F(1, 10**515) + 4 * F(3, 10**13)**2
+)
+remainder = F(4, 10**25)
+assert inverse_and_transfer < remainder
+pair_index = 10**20 // step
+assert 0 < pair_index <= last_index and pair_index * step == 10**20
+assert (decay / (step * pair_index)**2 + remainder) / (1 - 4 * delta)**2 < F(5, 10**25)
+row = 4 * decay / step**2 + last_index * remainder
+assert row == F(20739, 250000) < F(83, 1000)
+gram_floor = 1 - 16 * size * delta**2
+assert gram_floor > 0
+assert F(121, 10) * (1 - 4 * delta)**2 - row > 12
+assert 107 + row < 108 * gram_floor
+print("PASS separated radius-four sector guards")
+```
+
+The new positive compression has inverse norm at most $1/12$
+on $\mathcal V$. A further sign reduction must pay the true
+mixed operator from its physical orthogonal complement inside
+$G_1$. The earlier large-weight witness and the prime-419
+cutoff test keep their original domains and arithmetic signs.
+The remaining corrected complement, the original radius-four
+stage, and RH and primitive Dirichlet GRH remain open. The
+global return still requires actual dual phases, zero
+multiplicities, all character and window instances and the
+conductor-one pole terms.
