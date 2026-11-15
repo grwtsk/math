@@ -64,6 +64,22 @@ theorem remainingBlockSum_eq_sum :
         (retainedRunCells p.1) (retainedRunCells p.2) := rfl
 
 
+/-- Replace one remaining block by its certified subtotal. The membership
+hypothesis refers to the current set of pairs, and the new sum erases that pair. -/
+theorem sum_runBlocks_eq_subtotal_add_sum_erase
+    {pairs : Finset ((ℕ × ℕ) × (ℕ × ℕ))} {p : (ℕ × ℕ) × (ℕ × ℕ)} {subtotal : ℕ}
+    (hp : p ∈ pairs)
+    (hsubtotal : triangleBlock (price literalRawDeficit) sincEntry
+      (retainedRunCells p.1) (retainedRunCells p.2) = subtotal) :
+    (∑ q ∈ pairs, triangleBlock (price literalRawDeficit) sincEntry
+      (retainedRunCells q.1) (retainedRunCells q.2)) =
+      subtotal + ∑ q ∈ pairs.erase p, triangleBlock (price literalRawDeficit) sincEntry
+        (retainedRunCells q.1) (retainedRunCells q.2) := by
+  change runPairSubtotal p = subtotal at hsubtotal
+  change (∑ q ∈ pairs, runPairSubtotal q) = subtotal + ∑ q ∈ pairs.erase p, runPairSubtotal q
+  rw [← hsubtotal, Finset.add_sum_erase pairs runPairSubtotal hp]
+
+
 private theorem run_bounds :
     ∀ a ∈ retainedRuns.toFinset, a.1 ≤ a.2 ∧ a.2 < 32768 := by decide +kernel
 
