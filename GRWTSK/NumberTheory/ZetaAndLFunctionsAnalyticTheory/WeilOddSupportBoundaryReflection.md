@@ -981,7 +981,7 @@ must independently check worker/effect receipts before offering a
 scoped external API. There was **no** new Lean check, model training,
 harness execution or authorized provider effect in this note.
 
-## 12. C0010/T4: executable rational sine-envelope audit
+## 13. C0010/T4: executable rational sine-envelope audit
 
 **2026-11-14; grwtsk contributors; AI-assisted.** This section adds a
 source-owned reproducible finite arithmetic verifier to the concurrent
