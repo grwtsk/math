@@ -5380,3 +5380,334 @@ assert 0 < direct_price
 assert budget+gamma_center-direct_price/F('.175')**2 > F('12.5')
 print("PASS actual direct radius-four form on the transported direction > 12.5 times energy")
 ```
+
+## High-frequency bound and corrected value on the true collar direction
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the actual transmitted direction $g_*=FA^{-1}e$ in
+$H=H_{e,v}$. With the original angular measure on the entire line,
+$$
+ \big\|\mathbf1_{|\nu|\ge10^{25}}\widehat{g_*}\big\|_2
+   <5.04\cdot10^{-5}.
+$$
+On its normalized direction $w_*=g_*/\|g_*\|$, the actual
+outside-collar form after all seven inverse effects satisfies
+$$
+ \langle w_*,H_+w_*\rangle>5.6,\qquad
+ H_+=C_{4,+}-0.000012I_H .
+$$
+The comparison is only on this direction. Coercivity on all of $H$
+and the full inverse-pairing bound are still open.
+
+### Actual high-sector coupling and the minimizing lift
+
+Use the two unit sine inputs $u,y$, with
+$z=\Pi_{G_2}u$, $z_y=\Pi_{G_2}y$, $d=1.6\cdot10^{-8}$
+and the previous preimage error $\delta=10^{-272}$ for $Y_0$.
+The original high trace-zero sine space $Y$ maps onto the actual
+$Y_0$ by projection. For an input in $Y_0$, its native preimage
+has norm at most $(1-3\delta)^{-1}$ times the input norm.
+The two direct estimates on $Y_0$ are
+$$
+ \|PR|_{Y_0}\|,\ \|\Pi_U R|_{Y_0}\|
+ \le \frac{2\cdot10^{-6}}{1-3\delta}.
+$$
+These come from the preceding physical projection estimates on $Y$.
+The $U$ component of $J$ on $Y_0$ is
+$\Pi_U R-\Pi_U RP A_{23}^{-1}PR$.
+Use the actual old interaction $\|\Pi_U RP A_{23}^{-1}\|<3/8$.
+Its $W$ component has norm below $741\cdot10^{-265}$ by the
+bounded representation of $S$. The resulting stronger bound is
+$$
+ \|J|_{Y_0}\|<
+ (1+3/8)\frac{2\cdot10^{-6}}{1-3\delta}+741\cdot10^{-265}
+ <3\cdot10^{-6}.
+$$
+
+For both raw sine inputs $\phi=u,y$, the earlier evaluation
+bounds give
+$$
+ \|\Pi_{Y_0}\phi\|<
+ \frac{6\cdot10^{-24}+9\delta}{1-3\delta}<7\cdot10^{-24},\qquad
+ \|\Pi_{\mathcal V}\phi\|<
+ 5.52\cdot10^9(4\cdot10^{-48}+12\delta)<3\cdot10^{-38}.
+$$
+These are the evaluation bounds at the two carrier frequencies
+on the actual high and separated spaces. Division by the raw
+sine norm, which exceeds one, preserves the bounds. The earlier
+raw pairing also gives $\|\Pi_{Y_0}R\phi\|<2\cdot10^{-10}$.
+For $\Pi_{Y_0}R(\phi-\Pi_{G_2}\phi)$, use self-adjointness of
+$R$ to use the two direct old cross bounds on the $P,U$ pieces,
+each of physical norm less than $d$. On $W,L_0$ use the
+$300\cdot10^{-265}$ leakage times $d$. On $Y_0,\mathcal V$
+use the two raw sine evaluation bounds with $\|R\|<300$.
+Consequently $\|\Pi_{Y_0}Rz\|,\|\Pi_{Y_0}Rz_y\|<4\cdot10^{-10}$,
+with the sharper expression used in the rational guards below.
+Apply the first three actual inverse corrections in $C_0$ to get
+$$
+ \|J_Yz\|,\ \|J_Yz_y\|<3.2\cdot10^{-8}.
+$$
+The $PR$ and $J$ input prices are $4.6\cdot10^{-4}$ and
+$4.5\cdot10^{-4}$, the old two cross prices are below
+$3\cdot10^{-6}$, and the entire $D_0$ correction is at most
+$10^{-515}$ in operator norm. This uses the structure of
+$\phi-\Pi_{G_2}\phi$ even though its total norm is only known
+to be below $d$.
+
+Let $T=BI+R$ and let $E$ be its actual old minimizing lift
+from $G_2$ through the original five eliminated sectors.
+Put $k=A^{-1}e=t e-\eta_c v$.
+The actual coefficient sums on $z,z_y$ are below $0.10901$
+and $\|k\|<0.103$ by the preceding section. In the reverse
+order of the old completions write
+$$
+ Ek=k+v_s+y_h+\ell+a+p
+$$
+with eliminated components in $\mathcal V,Y_0,L_0,Z,P\mathcal H$,
+respectively. Thus
+$$
+\begin{split}
+ v_s&=-A_{\mathcal V}^{-1}J_{\mathcal V}k,\\
+ y_h&=-A_Y^{-1}J_Y(k+v_s),\\
+ \ell&=-D_0^{-1}J_0(k+v_s+y_h),\\
+ a&=-D^{-1}J(k+v_s+y_h+\ell),\\
+ p&=-A_{23}^{-1}PR(k+v_s+y_h+\ell+a).
+\end{split}
+$$
+Use the prior $J_{\mathcal V}$ columns bounded by $5.2\cdot10^{-6}$
+and the new $J_Y$ columns for $k$. The cross from $\mathcal V$
+to $J_Y$ has norm below $0.0017$. The $L_0$ row uses
+$\|J_0\|<10^{-258}$. The $Z$ row uses the true $J$ bounds
+on $\mathcal V,Y_0,L_0$ of $7.2\cdot10^{-8}$,
+$3\cdot10^{-6}$ and $741\cdot10^{-265}$, respectively.
+The final row uses the $PR$ bounds on $\mathcal V,Y_0,L_0,Z$
+of $2.3\cdot10^{-11},3\cdot10^{-6},300\cdot10^{-265},0.0375$.
+With the original inverse bounds $1/12,4,9,25/2,10$ in
+this order, the exact guards give
+$$
+ \|v_s\|<4.8\cdot10^{-8},\quad \|y_h\|<1.5\cdot10^{-8},\quad
+ \|\ell\|<10^{-258},\quad \|a\|<0.00062,\quad \|p\|<0.00074.
+$$
+The components are orthogonal and $\|Ek\|<0.104$.
+For the $W$ part write $a=a_U+a_W$.
+The $Z$ normal equation gives $\Pi_W S(k+v_s+y_h+\ell+a)=0$.
+In $S=BI+K_Q^*M K_Q$ the scalar contribution is $Ba_W$.
+This yields
+$\|a_W\|<741\cdot10^{-265}(0.104)/B<10^{-261}$,
+using the original unsquared Fourier leakage bound on $W$.
+
+### Fourier tail transfer to the actual direction
+
+Use $M_0=5\cdot10^{12}$ and $L=10^{25}$ for the two frequency
+cutoffs. The uncancelled transform of each normalized bare sine
+is below $2/|\nu|$ above $M_0$ since its carrier is below
+$4\cdot10^9$ and its raw norm exceeds $1.997$.
+Integrating both signs gives tails below $5.05\cdot10^{-7}$
+at $M_0$ and $3.6\cdot10^{-13}$ at $L$.
+The raw approximation $t u-\eta_c v_0$ to $k$ has coefficient
+sum below $0.10901$ and error below $0.282d$, so its first
+tail estimate transfers to $k$ with that error.
+
+For an old native unit sine, the exact denominator formula gives
+amplitude below $6\cdot10^7/|\nu|^2$ above $M_0$, since its
+carrier is below $3\cdot10^7$. Cauchy--Schwarz over the old sine
+basis costs at most 6200. The tail for a unit input in its span
+is therefore below $1.09\cdot10^{-8}$ at $M_0$. This applies to
+$p$. The actual preimage of $a_U$ in that span has norm at most
+$(10/9)\|a_U\|$ and relative error at most $10^{-60}$.
+Add the entire norms of $v_s,y_h,\ell,a_W$.
+Together these estimates give
+$$
+ \big\|\mathbf1_{|\nu|>M_0}\widehat{Ek}\big\|_2<1.23\cdot10^{-7}.
+$$
+
+Let $Q_{\rm phys}$ be the Fourier conjugate of multiplication
+by $\mathbf1_{[-4,4]}$ on the full physical line. Its kernel
+against $d\eta/(2\pi)$ is $2\sin(4(\xi-\eta))/(\xi-\eta)$.
+Bounding the squared kernel by $4/(\xi-\eta)^2$ and integrating
+first over $|\xi|\ge L$ gives
+$$
+ \big\|\mathbf1_{|\xi|\ge L}Q_{\rm phys}
+                \mathbf1_{|\eta|\le M_0}\big\|_{\rm HS}^2
+ \le \frac1{\pi^2}\int_{-M_0}^{M_0}
+           \left(\frac1{L-\eta}+\frac1{L+\eta}\right)d\eta
+ \le \frac{4M_0}{\pi^2(L-M_0)}.
+$$
+Use this full projection bound on the odd carrier.
+The actual Fourier return is $\widehat{R Ek}=Q_{\rm phys}(m\widehat{Ek})$
+with $m=\mathbf1_{\mathcal D}w s_4$ bounded by 300 in absolute
+value. Split the input at $M_0$. On the low part use the
+Hilbert--Schmidt bound. On the high part use contractivity of
+$Q_{\rm phys}$ and the complete estimated input tail.
+
+The old normal equation gives $T Ek=C_2k$ as a physical vector.
+The eliminated component is zero and the surviving component is
+the exact old Schur operator. By $Ak=e$ this is $e+g_*$.
+Thus $g_*=R Ek+B Ek-e$, an identity for the actual direction
+before taking any frequency restriction. To the tail bound for
+$R Ek$ add $B$ times the $Ek$ tail and the tail of $e$.
+The latter is below $2d+3.6\cdot10^{-13}$ by $\|e-u\|<2d$.
+The directed total is below $5.04\cdot10^{-5}$ as claimed.
+
+### Corrected Rayleigh value on this direction
+
+Use the prior $\langle g_*,Tg_*\rangle>12.5\|g_*\|^2$.
+For the old $P,U$ prices on $g_*$ decompose it as $g_0+(g_*-g_0)$.
+Only the Fourier transform of $g_0$ is split at the two common
+bands from $3.5\cdot10^9$ to $4\cdot10^9$ in absolute frequency.
+An old unit sine space input has amplitude bounded on this
+band by $6200(2.45\cdot10^{-12})$ and the square root of
+its angular measure is below 12800. Thus the band portion
+of the $P$ price is below
+$300\cdot6200(2.45\cdot10^{-12})(12800)(0.1886)$.
+For $U$ use the $10/9$ preimage factor and its $10^{-60}$
+relative error. For both the off-band $g_0$ term and the full
+difference use the weighted restrictions
+$\|K_w P\|<1/40$ and $\|K_w|_U\|^2<1/49900$.
+The latter costs $300/\sqrt{49900}<1.344$.
+With the $0.00074$ off-band tail and $0.01243$ difference,
+this gives $\|PRg_*\|<0.11$, $\|\Pi_U Rg_*\|<0.03$ and
+$\|Jg_*\|<0.0711$, retaining the $3/8$ interaction and the
+$W$ leakage.
+
+For a unit vector in either $Y_0$ or $\mathcal V$, its full
+angular norm on $|\nu|<L$ is below $1.2\cdot10^{-11}$.
+For $Y_0$ use the native $6\cdot10^{-24}$ amplitude bound
+times $\sqrt{L/\pi}$ and the actual preimage error $3\delta$.
+For $\mathcal V$ apply the $5.52\cdot10^9$ Gram factor to
+$4\cdot10^{-48}\sqrt{L/\pi}+4\delta$.
+The raw $R$ price on either sector is therefore bounded by
+$300(5.04\cdot10^{-5}+(1.2\cdot10^{-11})\|g_*\|)$.
+Add the earlier inverse terms using the actual cross prices to get
+$\|J_Yg_*\|<0.016$ and $\|J_{\mathcal V}g_*\|<0.017$.
+The square prices use the five original inverse bounds
+$10,25/2,9,4,1/12$, with the full $10^{-515}$ bound for
+the third correction. Divide by $\|g_*\|^2>0.175^2$ when
+using the absolute sum of these expenses.
+
+For the last two pivots together the true expense is
+$\langle F^*g_*,A^{-1}F^*g_*\rangle\le(8.2/9.6)\|g_*\|^2$,
+using the previous actual mixed norm and coercivity.
+This proves the lower bound for $C_4$ along $g_*$ before
+passing to $H_+$. Since $\Delta_7\ge0$,
+$H_+\ge C_4-0.000012 I_H$, and the finite guards give
+$\langle w_*,H_+w_*\rangle>5.6$.
+In particular this exceeds $\sigma\|g_*\|^2<0.005$
+on the actual normalized direction.
+
+A positive Rayleigh value of this size at a single vector does
+not bound the inverse entry. For example the positive matrix
+$$
+ \begin{pmatrix}6&6\\6&6.001\end{pmatrix}
+$$
+has value 6 at the first unit vector, but its inverse has value
+$1000+1/6$ there. Multiplying by $0.004$ fails the inverse bound
+by more than a factor of four. The remaining criterion on
+all of $H$ needs an independent coercive or mixed-action bound.
+
+All calculations used the bounded operator on the actual odd
+physical interval, including the full signed radius-four source
+inside $R$. The original arithmetic $\mathrm{PrimitiveStageLower}$
+still requires its real odd compact $C^2$ admitted tests,
+with the same gamma-density condition. The all-support
+radius-four sign and the pole-inclusive global return remain open.
+
+### Exact rational guards for the high tail and aligned value
+
+```python
+from fractions import Fraction as F
+
+pi_lower = F('3.14')
+delta = F('1e-272')
+d = F('1.6e-8')
+budget = F('.124997987')
+middle_cut = 5*10**12
+high_cut = 10**25
+coefficient_bound = F('.10901')
+p_column = F('4.6e-4')
+j_column = F('4.5e-4')
+v_column = F('5.2e-6')
+y_cross = F('2e-6')/(1-3*delta)
+leakage = F('1e-265')
+y_j = (1+F(3,8))*y_cross+741*leakage
+assert y_cross < F('3e-6') and y_j < F('3e-6')
+
+# Use the two original sine evaluation bounds, with sine norms >1.
+y_projection = (F('6e-24')+9*delta)/(1-3*delta)
+v_projection = F('5.52e9')*(F('4e-48')+12*delta)
+assert y_projection < F('7e-24') and v_projection < F('3e-38')
+y_raw_column = (F('2e-10')+2*y_cross*d
+                +300*(y_projection+v_projection+2*leakage*d))
+d0_form = F('1e-515')
+y_column = (y_raw_column+10*F('3e-6')*p_column
+            +F(25,2)*F('3e-6')*j_column+d0_form)
+assert y_raw_column < F('4e-10') and y_column < F('3.2e-8')
+
+# The actual reverse lift on k=A^-1 e and its W normal equation.
+lift_v = coefficient_bound*v_column/12
+lift_y = 4*(coefficient_bound*y_column+F('.0017')*lift_v)
+lift_l0 = 9*F('1e-258')*(F('.103')+lift_v+lift_y)
+lift_z = F(25,2)*(coefficient_bound*j_column+F('7.2e-8')*lift_v
+                  +F('3e-6')*lift_y+741*leakage*lift_l0)
+lift_p = 10*(coefficient_bound*p_column+F('2.3e-11')*lift_v
+             +F('3e-6')*lift_y+300*leakage*lift_l0+F('.0375')*lift_z)
+assert lift_v < F('4.8e-8') and lift_y < F('1.5e-8')
+assert lift_l0 < F('1e-258') and lift_z < F('.00062') and lift_p < F('.00074')
+assert (F('.103')**2+lift_v**2+lift_y**2+lift_l0**2+lift_z**2+lift_p**2
+        < F('.104')**2)
+lift_w = 741*leakage*F('.104')/budget
+assert lift_w < F('1e-261')
+
+# Both bare sines and the old low native sine space.
+assert (1/(1-F(4*10**9,middle_cut))+1)/F('1.997') < 2
+assert 4 < F('5.05e-7')**2*pi_lower*middle_cut
+assert 4 < F('3.6e-13')**2*pi_lower*high_cut
+assert (6200*6*10**7)**2 < F('1.09e-8')**2*3*pi_lower*middle_cut**3
+tail_k = coefficient_bound*F('5.05e-7')+F('.282')*d
+old_native_norm = F(10,9)*lift_z
+tail_pu = (lift_p+old_native_norm)*F('1.09e-8')+F('1e-60')*old_native_norm
+tail_lift = tail_k+lift_v+lift_y+lift_l0+lift_w+tail_pu
+assert tail_lift < F('1.23e-7')
+
+# Fourier support projection from low input to high output.
+hs_bound = F('4.51e-7')
+assert F(4*middle_cut)/(pi_lower**2*(high_cut-middle_cut)) < hs_bound**2
+tail_r = 300*(F('.104')*hs_bound+tail_lift)
+tail_e = 2*d+F('3.6e-13')
+true_high = F('5.04e-5')
+assert tail_r+budget*tail_lift+tail_e < true_high
+print("PASS full high-frequency norm of the actual collar direction <5.04e-5")
+
+# Return through the five inverse prices and the genuine two-dimensional pivot.
+lo, hi = F('.175'), F('.2011')
+assert F(5*10**8)/pi_lower < 12800**2
+raw_band = 300*6200*F('2.45e-12')*12800*F('.1886')
+off_and_error = F('.00074')+F('.01243')
+price_p = raw_band+F('7.5')*off_and_error
+u_factor = F('1.344')
+assert u_factor**2*49900 > 300**2
+assert 300*F(10,9)*F('1e-60')*F('.1886') < F('1e-54')
+price_u = F(10,9)*raw_band+u_factor*off_and_error+F('1e-54')
+price_j = price_u+F(3,8)*price_p+F('1e-261')
+assert price_p < F('.11') and price_u < F('.03') and price_j < F('.0711')
+
+assert F('6e-24')**2*high_cut < F('1.19e-11')**2*pi_lower
+assert F('1.19e-11')+3*delta < F('1.2e-11')*(1-3*delta)
+assert F(high_cut)/pi_lower < F('2e12')**2
+assert (F('4e-48')*F('2e12')+4*delta)*F('5.52e9') < F('1.2e-11')
+price_high = 300*(true_high+F('1.2e-11')*hi)
+price_y = price_high+10*F('3e-6')*price_p+F(25,2)*F('3e-6')*price_j+d0_form
+price_v = (price_high+10*F('2.3e-11')*price_p+F(25,2)*F('7.2e-8')*price_j
+           +4*F('.0017')*price_y+d0_form)
+assert price_y < F('.016') and price_v < F('.017')
+price_five = (10*price_p**2+F(25,2)*price_j**2+d0_form
+              +4*price_y**2+price_v**2/12)
+assert F('2.026')**2+(F('1.671')+F('1.6164')*F('2.026')/F('9.869'))**2 < F('8.2')
+aligned_floor = F('12.5')-price_five/lo**2-F('8.2')/F('9.6')-F('.000012')
+assert aligned_floor > F('5.6')
+assert F('.123')*hi**2 < F('.005')
+print("PASS aligned quotient of H_+ on the actual collar direction >5.6")
+```
