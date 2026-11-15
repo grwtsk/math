@@ -993,7 +993,7 @@ The complete Python standard-library checker is
 Git blob `b35434bed50c8a6ba218d01575e1964cae9a93e6`.
 Local command: `python3 /mnt/data/c0010_t4/verify_q3_sine_hs.py`
 (Python 3.13.5); exit 0, `FINITE_INTEGER_ASSERTIONS_PASS`.
-Script SHA-256: `c7e6323aa011a781c2ef47a7bac0e8c1e3e32149c88778884064282c09d177`.
+Script SHA-256: `c7e6323aa011a781c2ef47a7bac0e8c1e3e32149c88778884064282c09d5d177`.
 Output SHA-256: `334247935efa70031e5b95cff457f0ca7839756b46ff0e8d58b903594731a6d2`.
 Published script bytes are the exact executed bytes, though the source
 tree gives the script a functional name.
@@ -1075,8 +1075,10 @@ I(h) = ∬ K(|x−y|)(h(x)−h(y))² + ∬ K(x+y)(h(x)+h(y))²
 
 The second equality uses the sum of the plus and minus squares.
 The kernel κ is nonnegative off the null diagonal and corner because
-K decreases. These rearrangements have finite terms: h is Lipschitz
-at the diagonal, and (x+y)⁻¹ is integrable on the square.
+K decreases. The integrated terms are finite because h is Lipschitz
+at the diagonal and (x+y)⁻¹ is integrable on the square. The defining
+integral for U is finite for x>0 and diverges at x=0. Set U(0)=0 as a
+Lebesgue-almost-everywhere representative.
 
 Let r=log(2), G=(1−r,2r−1), and O=[0,1]\G. For A=G or O define
 J_A^int on h restricted to A by integrating the κ-difference on A²,
@@ -1116,7 +1118,16 @@ Completing the scalar square gives
 
 The shared-endpoint singularities on G×O are bounded by
 1/[2(s+t)], with s,t distances to the endpoint, and are integrable.
-Tonelli thus gives J(h)≥δ‖u‖²+J_O^int(v)+∫_O P_δ(y)v(y)²dy.
+Tonelli gives an integrable density P_δ on O. Its defining integral
+diverges at each shared endpoint y₀. For x in G approaching y₀ at
+distance s, the bound K(t)≤1/(2t) gives
+W_G(x)≤C+(1/2)log(1/s) by integrating on the adjacent component of O.
+The other component stays a positive distance away. The small-shift
+lower bound K(s)≥1/(2s)−1/3 and bounded K(x+y₀) give
+κ(x,y₀)≥1/(4s) for sufficiently small s. The integral of
+1/[s(1+log(1/s))] at zero diverges. Choose P_δ=0 at the two shared
+endpoints. Tonelli then gives
+J(h)≥δ‖u‖²+J_O^int(v)+∫_O P_δ(y)v(y)²dy.
 
 On x∈[1/3,9/25] the distance to O is at least 1/50, so
 W_G(x)≤log(50)<4 by K(s)≤1/(2s). Here x+y<7/5, and the first
@@ -1124,8 +1135,8 @@ term of the positive exponential series for K gives
 κ(x,y)≥3e^(−21/10)min(x,y)≥e^(−21/10)y>y/10 for y>0.
 For the numerical constants, e>8/3 gives e⁴>50, while e²<8
 and e^(1/10)≤10/9 give e^(21/10)<10. The interval has length
-2/75. Therefore P_δ(y)≥(2/73)(1/10)(2/75)y, and the complete
-inequality reads
+2/75. Therefore P_δ(y)≥(2/73)(1/10)(2/75)y for almost every y in O,
+and the complete inequality reads
 
 ```text
 J(h) ≥ (1/9)‖u‖² + J_O^int(v) + (2/27375)∫_O y v(y)²dy.
