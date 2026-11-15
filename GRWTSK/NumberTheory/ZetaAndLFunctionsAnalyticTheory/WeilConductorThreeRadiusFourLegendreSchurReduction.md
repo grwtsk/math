@@ -12034,3 +12034,359 @@ assert wmin*(node(F("304.5"))[0]-F("17.69"))>F("5.35")
 assert 2*r_group<378 and 378+2*r_group<delta
 print("PASS five-band direct comparison, refined uniform coupling and actual adaptive-cover obstruction")
 ~~~
+
+## A complete local slab with shared positive allocations
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks on the original signed source. Lean
+elaboration, kernel replay and transitive axiom audit are NOT_RUN.
+External independent review is UNASSESSED.
+
+On the positive axis put $a=c_1+73.5$ and $b=c_1+76.82$.
+Replace the previous positive allocation on $a+[-2,2]$ by
+the split allocation below and retain its negative debit once.
+Add the actual clipped negative density in $b+[-0.16,0.16]$.
+Reflect all frequency sets. The two debits together cover
+all actual negative density in the slab $[a-2,b+2]$ and its
+reflection. Together with the four older $c_1,c_2,c_3,c_4$
+enclosures, the six rows have joint comparison norm below
+$0.954$ for the original $S_\lambda$.
+
+### The signed support inside the slab
+
+Directed values of the literal signed prime sum give positive
+endpoints of the two enclosures $a+[-0.06,0.16]$ and
+$b+[-0.16,0.16]$ and negative values at both centers.
+The full slab is within the original low-filter band and clear
+of the paid pair and the actual deleted collar. In particular
+$w\ge1-3\cdot10^{-10}$ throughout. Integer bounds $47581160$
+and $47581167$ for $3|\nu|/(2\pi)$ give the full Binet bracket
+$17.6779<A<17.6780$, with the previous error
+$5/(9y)+9/(32y^2)$ at $y=|\nu|/2$. Use all $458$ signed terms
+and the directed interpolation bound $|P_4''|<13504$.
+
+In coordinates relative to $a$, the complementary intervals
+are $[-2,-0.06]$, $[0.16,3.16]$ and $[3.48,5.32]$.
+Use width-$0.02$ signed interpolation cells and bisect a cell
+when its available upper prime enclosure does not prove
+$P_4<A$. The exact guard uses two bisections to width $0.01$.
+Every final complement cell is strictly positive. Thus the
+two debits exhaust the clipped negative density of the slab.
+The original evenness gives the reflected statement.
+No decision about the number of connected components within
+either debited enclosure is required.
+
+### Pointwise allocation on the common grid
+
+The new positive windows $a+[-2,2]$ and $b+[-2,2]$ have
+center difference $3.32=166(0.02)$, so they have exactly
+$34$ shared width-$0.02$ cells, ignoring endpoints. Compute
+one directed lower folded positive density on their whole
+union using the actual signed multiplier, the lower bound
+for $w$, and an upper bound for $\pi$. On cells exclusive
+to one window use the full lower density for that row.
+On a shared cell allocate half the same lower density to
+each row. This gives a sum of measures dominated almost
+everywhere by the actual folded positive measure, including the factor
+$d\nu/\pi$ from both angular signs. These two allocations
+are disjoint from the other four paid positive allocations.
+
+The common unsplit lower mass exceeds $2$. On the particular
+shared cell $[a+1.90,a+1.92]$ the lower folded density is
+above $7$ while the actual folded density is below $9$.
+Using the unsplit lower density for each window on this cell
+would exceed the actual positive supply. The half allocation
+resolves that exact pointwise failure.
+
+### The two rows and the original comparison
+
+Use the existing degree-$32$ Legendre reconstruction with
+the new split positive measures and the upper negative
+measures on width-$0.005$ cells. For each row the allocated
+positive mass is below $30$ and the negative upper mass is
+below $0.35$. The original carrier Gram is at most $1.006D$
+and the physical Taylor remainder is below $2.1\cdot10^{-7}$.
+The exact rational moment trace with its Taylor correction
+gives a total diagonal below $0.25$ and normalized physical
+Hilbert--Schmidt cost squared below $0.03$. Each residual
+coefficient total variation has folded $L^2$ norm below $3.2$.
+The two parity endpoint traces and scalar Taylor correction
+give endpoint phase norms below $0.14$ for both signs.
+
+Use one physical input $\sqrt\beta f$ and separate tagged
+positive auxiliary spaces for the two rows. Their squared
+input norms sum to the integral against the two allocated
+measures, which is bounded by actual positive energy. The
+two positive coordinates are orthogonal in this direct sum.
+Thus only the physical error Gram contributes to their mixed
+block, even on the shared frequencies. For the two physical
+row operators $E_a,E_b$, normalized by $1/\sqrt\beta$, its
+norm is bounded by
+$\|E_aE_b^*\|\le\|E_a\|_{\rm HS}\|E_b\|_{\rm HS}<0.03$.
+The pair norm is below $0.28$. This step does not require
+separation of their overlapping coefficient supports.
+
+Using the prior first-order formula with center differences
+$73.5$ and $76.82$, the two mixed norms to $c_1$ are below
+$0.023$ and $0.021$, respectively. The two mixed norms to
+$c_4$ use the direct sine Gram with gap above $5200$ and
+sum above $10^8$. Combining with the already proved
+$c_1,c_4$ block below $0.724$ bounds the low four rows by
+$0.812$. Their coupling to the proved $c_2,c_3$ block
+costs less than $2\cdot10^{-6}$ by the original difference
+and sum denominators above $3.8\cdot10^9$. The exact folded
+row factorization gives
+$$
+ \|\mathcal W_{\rm all6} S_\lambda^{-1}
+         \mathcal W_{\rm all6}^*\|<0.954.
+$$
+
+For the uniform comparison, group $c_1,a,b$ at $c_1+38.41$
+with radius $41$. Its local norm is below $0.694$ by the
+same pair and two mixed bounds. The other two groups are
+$c_4$ and the one centered at $c_2-1.95$. Their reflected
+centers satisfy $\Delta=5200$. The aggregate squared norms
+give $T=12$ and $D=0.37$. For the first centered phase
+moments use $|\nu-\widehat c|\le|\nu-c|+|c-\widehat c|$
+in the phase integral by first splitting $\nu-\widehat c$
+into the two signed summands. This gives the bound
+$D_1(c')\le |c-c'|D(c)+2T(c)$ for each low row and the
+same previous shifted-moment bounds for the high pair.
+The resulting group cap is $D_1=35$. The first-order
+uniform charge is below $0.0019$ and yields the selected
+uniform comparison below $0.955$.
+
+The direct bound gives
+$S_{\rm all6}=S_\lambda-\mathcal W_{\rm all6}^*
+\mathcal W_{\rm all6}\ge0.046S_\lambda$. With $N_{\rm out}$
+the actual negative restriction outside the six enclosures,
+the remaining exact condition is
+$\|N_{\rm out}S_{\rm all6}^{-1}N_{\rm out}^*\|\le1$.
+The negative part of the full slab has been included, and
+the same original seven leading inverses and directional
+arithmetic return apply.
+
+The guard below takes the full source as input. It uses one
+cached actual signed grid to supply the overlap and complement
+bounds and both exact reconstruction calculations.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+from decimal import Decimal, localcontext
+
+c0=F("99653682.92983")
+a=c0+F("73.5")
+b=c0+F("76.82")
+c1=a
+assert b-a==F("3.32")
+assert (b-a)/F(".02")==166
+assert a+2-(b-2)==F(".68")
+assert (a+2-(b-2))/F(".02")==34
+assert c0+2<a-2
+assert c0+F("5313.55")-2-(b+2)>5200
+assert c0-2+a-2>10**8
+
+assert F(10**8,3)-1<a-2<b+2<10**8
+assert a-2>30000000 and b+2<35*10**24
+assert b+2<F("1852422754.1662946")-10
+assert b+2<F("3806849122.861433")-F(1,160)
+c2=scale(F(5085348195,4),(pi_lower,pi_upper))
+c3=add(c2,(F("-5.55"),F("-5.55")))
+for other,radius in ((c2,F(2)),(c3,F(".35"))):
+    assert other[0]-radius-(b+2)>F("3.8e9")
+    assert other[0]-radius+(c1-2)>F("3.8e9")
+assert c3[1]+F(".35")<c2[0]-2
+
+Alo,Ahi=F("17.6779"),F("17.6780")
+lowarg,higharg=47581160,47581167
+assert lowarg<3*(c1-2)/(2*pi_upper)
+assert 3*(b+2)/(2*pi_lower)<higharg
+y0=(c1-2)/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c1+x,c1+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+def estimate(x,h):
+    u,v=node(x),node(x+h)
+    err=second*h*h/8
+    return min(u[0],v[0])-err,max(u[1],v[1])+err
+
+wmin=1-F("3e-10")
+
+# One shared angular grid supplies both allocated rows.
+h=F(".02")
+shift=F("3.32")
+assert b-a==shift and shift/h==166 and b+2-(a-2)==F("7.32")
+lo_index,hi_index=-100,266
+floors={}
+for j in range(lo_index,hi_index):
+    lo,hi=estimate(j*h,h)
+    lower=max(F(0),wmin*(Alo-hi)/pi_upper)
+    floors[j]=(lower*10**7//1)/F(10**7)
+assert sum(floors[j]*h for j in range(66,100))>2
+assert 66*h==b-2-a and 100*h==2
+assert 95*h==F("1.90") and 96*h==F("1.92")
+lo,_=estimate(95*h,h)
+assert floors[95]>7
+actual_ceiling=max(F(0),Ahi-lo)/pi_lower
+assert actual_ceiling<9 and 2*floors[95]>actual_ceiling
+print("PASS actual shared-cell double-charge obstruction and common .02 grid")
+
+# Verify the sign on the complete complement of the two enclosures.
+edge=((F(-2),F("-.06")),(F(".16"),F("3.16")),(F("3.48"),F("5.32")))
+assert node(F("-.06"))[1]<Alo and node(F(".16"))[1]<Alo
+assert node(F("3.16"))[1]<Alo and node(F("3.48"))[1]<Alo
+assert node(F(0))[0]>Ahi and node(shift)[0]>Ahi
+def refinements(x,width):
+    lower,upper=estimate(x,width)
+    if upper<Alo:
+        return 0
+    assert lower<=Ahi, ("actual negative interval outside enclosures",x,width)
+    assert width>F(".000625"), ("unresolved sign",x,width)
+    return 1+refinements(x,width/2)+refinements(x+width/2,width/2)
+
+split_count=0
+for lo,hi in edge:
+    assert (hi-lo)/h==int((hi-lo)/h)
+    split_count+=sum(refinements(lo+j*h,h) for j in range(int((hi-lo)/h)))
+assert split_count==2
+print("PASS entire reflected slab complement strictly positive")
+
+# The earlier physical basis and exact moment routines apply to each
+# new pair of lower positive and upper negative cell measures.
+matrix_source=[g for g in blocks if g.startswith("from decimal import Decimal")
+               and "PASS exact majorant costs: J2 total <.52" in g]
+assert len(matrix_source)==1
+start="# Exact polynomial budget for the wider positive allocation."
+stop='assert (F(33)*(1+2*32**2)'
+code=matrix_source[0]
+assert code.count(start)==code.count(stop)==1
+matrix_code=compile(code.split(start)[1].split(stop)[0].lstrip(),
+                    "source coefficient and moment matrix", "exec")
+
+def checked_row(role,center,offset,neg_left,neg_right,first_cell,last_cell):
+    positive=[]
+    for j in range(first_cell,last_cell):
+        x=j*h-offset
+        density=floors[j]/2 if 66<=j<100 else floors[j]
+        if density:
+            positive.append((x,x+h,density))
+    negative=[]
+    step=F(".005")
+    assert neg_left/step==int(neg_left/step) and neg_right/step==int(neg_right/step)
+    for j in range(int(neg_left/step),int(neg_right/step)):
+        x=j*step
+        _,high=estimate(x+offset,step)
+        upper=max(F(0),(high-Alo)/pi_lower)
+        density=-((-upper*10**7)//1)/F(10**7)
+        if density:
+            negative.append((x,x+step,density))
+
+    scope=dict(F=F,factorial=factorial,Decimal=Decimal,localcontext=localcontext,
+               positive=positive,negative=negative)
+    exec(matrix_code,scope)
+    n,D,V,M,R,S,beta=(scope[name] for name in ("n","D","V","M","R","S","beta"))
+    assert beta==F(".124997987")-F(".0001071")
+    assert 33*(1+2*32**2)/(2*center)<F(".006")*min(D)
+    err=F("2.1e-7")
+    assert 8*(F(8)**33/factorial(33))**2<err**2
+
+    assert sum((v-u)*w for u,v,w in positive)<30
+    assert sum((v-u)*w for u,v,w in negative)<F(".35")
+    assert 0<=R<F(".22") and S>=0
+    nominal=F("1.006")*S/beta
+    assert nominal<1
+    assert F(".592")**2>F(".35") and F("2.57")**2>30*F(".22")
+    assert F(".35")**2<beta
+    variation=F(".592")+F("2.57")
+    err_scaled=err*variation/F(".35")
+    assert err_scaled<F("1e-5") and 2*err_scaled+err_scaled**2<F(".00003")
+    physical=nominal+F(".00003")
+    assert R+physical<F(".25") and physical<F(".03") and variation<F("3.2")
+
+    even=[sum(V[k][j] for k in range(0,n,2)) for j in range(n)]
+    odd=[sum(V[k][j] for k in range(1,n,2)) for j in range(n)]
+    phase_cost=sum(M[i][j]*(even[i]*even[j]+odd[i]*odd[j])
+                   for i in range(n) for j in range(n))
+    phase_remainder=F(8)**33/factorial(33)*variation
+    assert 0<=phase_remainder<F(".14")
+    assert 0<=phase_cost<(F(".14")-phase_remainder)**2
+    print("PASS exact split signed row and matrix/phase checks",role)
+
+checked_row("left",a,F(0),F("-.06"),F(".16"),-100,100)
+checked_row("right",b,shift,F("-.16"),F(".16"),66,266)
+
+# Exact coupling and scalar composition.
+beta=F(".12")
+def mix(d,t1,t2,p1,p2):
+    far_sum=10**8
+    return (
+        p1*p2*(1/d+F(1,far_sum))
+        +(2*t1*p2+2*t2*p1)*(1/d**2+F(1,far_sum**2))
+        +16*t1*t2*(1/(d**2*(d-4))+F(1,far_sum**2*(far_sum-4)))
+    )/beta
+both_tv=F("3.2")
+both_phase=F(".14")
+left_mix=mix(F("73.5"),F(11),both_tv,F(".2"),both_phase)
+right_mix=mix(F("76.82"),F(11),both_tv,F(".2"),both_phase)
+assert left_mix<F(".023") and right_mix<F(".021")
+# Both physical trace costs are < .03. Their Hilbert-Schmidt product
+# controls all actual shared-window physical mixed rows.
+total_overlap=F(".25")+F(".03")
+assert total_overlap==F(".28")
+assert max(F(".65"),total_overlap)+left_mix+right_mix<F(".694")
+fourth_mix=2*F("4.2")*both_tv*(F(1,5200)+F(1,10**8))/beta
+assert max(F(".724"),total_overlap)+left_mix+right_mix+fourth_mix<F(".812")
+cross_high=2*(11+2*both_tv+F("4.2"))*(9+F("2.66"))/(F("3.8e9")*beta)
+assert cross_high<F(".000002")
+assert max(F(".812"),F(".953"))+cross_high<F(".954")
+offset,R,delta=F("38.41"),F(41),F(5200)
+assert 2*c0>delta
+assert c2[0]-F("1.95")-(c0+F("5313.55"))>delta
+assert max(offset,F("76.82")-offset)+2<R and R<=delta/4
+assert F("5313.55")-offset>delta
+assert 11**2+2*both_tv**2<12**2
+assert F(".2")**2+2*both_phase**2<F(".37")**2
+assert (offset*F(".2")+22)**2+((F("73.5")-offset)*both_phase+2*both_tv)**2+((F("76.82")-offset)*both_phase+2*both_tv)**2<35**2
+assert F(".124890887")>beta
+uniform=(F("6.4")*F(".37")**2/delta+8*F(".37")*35/delta**2+24*R**2*12**2/delta**3)/beta
+assert uniform<F(".0019")
+assert max(F(".694"),F(".46"),F(".953"))+uniform<F(".955")
+print("PASS complete local slab, six-row norm below .954 and adaptive uniform norm below .955")
+~~~
