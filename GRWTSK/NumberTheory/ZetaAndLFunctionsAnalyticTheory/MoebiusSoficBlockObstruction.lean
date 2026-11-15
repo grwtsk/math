@@ -34,6 +34,11 @@ ordered pickup distinguishes terms incident to a false nonzero label
 from the remaining signed defect. The pumped path forces two strictly
 positive observed terms in the first sector after both responses are
 born. The obstruction concerns exact block presentation by one fixed graph.
+
+For a weighted path inventory, the observed-minus-source difference is
+the positive ordered error mass minus its compensating negative mass.
+Each selected surplus pair gives an explicit lower bound on the needed
+compensation when both causal births precede an interior integration time.
 -/
 
 set_option autoImplicit false
@@ -377,5 +382,151 @@ theorem exists_path_with_positive_ordered_surplus {State Label : Type*} [Fintype
   · change surplusPairTerm T coeff (start + j) (start + i) = _
     rw [surplusPairTerm, ite_eq_left (Or.inr hfalse), pickupPairTerm, ite_eq_left hij.symm, hci, hcj]
     ring
+
+/-- The signed excess of the observation over the source on one ordered
+pair, including the signed error on the complement of the surplus sector. -/
+def pickupOverreadTerm (T : ℝ) (coeff : ℕ → ℝ) (m n : ℕ) : ℝ :=
+  surplusPairTerm T coeff m n - remainingPairDefect T coeff m n
+
+theorem pickupOverreadTerm_eq_gram_of_false_nonzero_pair (T : ℝ) (coeff : ℕ → ℝ)
+    {m n : ℕ} (hne : m ≠ n) (hm : FalseNonzero coeff m ∨ FalseNonzero coeff n)
+    (hcm : coeff m = -1) (hcn : coeff n = -1) :
+    pickupOverreadTerm T coeff m n = pickupResponseGram T m n := by
+  simp [pickupOverreadTerm, surplusPairTerm, remainingPairDefect, hm, pickupPairTerm, hne, hcm, hcn]
+
+/-- With direction `1` this is the positive excess mass. With direction `-1`
+it is the magnitude of the compensating negative mass. Each path and each
+ordered occurrence in its cutoff contributes with its original weight. -/
+def weightedPickupErrorMass {Path : Type*} (T direction : ℝ) (paths : Finset Path)
+    (weight : Path → ℝ) (coeff : Path → ℕ → ℝ) : ℝ :=
+  ∑ p ∈ paths, weight p * pickupPairSum T
+    (fun m n => max (direction * pickupOverreadTerm T (coeff p) m n) 0)
+
+def weightedPickupDeviation {Path : Type*} (T : ℝ) (paths : Finset Path)
+    (weight : Path → ℝ) (coeff : Path → ℕ → ℝ) : ℝ :=
+  (∑ p ∈ paths, weight p * pickupPairSum T (pickupPairTerm T (coeff p))) -
+    (∑ p ∈ paths, weight p) * pickupCross T
+
+theorem weightedPickupDeviation_eq_excess_sub_compensation {Path : Type*} (T : ℝ)
+    (paths : Finset Path) (weight : Path → ℝ) (coeff : Path → ℕ → ℝ) :
+    weightedPickupDeviation T paths weight coeff = weightedPickupErrorMass T 1 paths weight coeff -
+      weightedPickupErrorMass T (-1) paths weight coeff := by
+  calc
+    weightedPickupDeviation T paths weight coeff =
+        ∑ p ∈ paths, weight p * pickupPairSum T (pickupOverreadTerm T (coeff p)) := by
+      unfold weightedPickupDeviation
+      rw [weighted_pickup_path_return T paths weight coeff]
+      simp only [pickupPairSum, pickupOverreadTerm, Finset.sum_sub_distrib, mul_sub]
+      ring
+    _ = weightedPickupErrorMass T 1 paths weight coeff -
+        weightedPickupErrorMass T (-1) paths weight coeff := by
+      unfold weightedPickupErrorMass
+      rw [← Finset.sum_sub_distrib]
+      apply Finset.sum_congr rfl
+      intro p _
+      rw [← mul_sub]
+      congr 1
+      simp only [pickupPairSum, ← Finset.sum_sub_distrib, one_mul, neg_one_mul]
+      apply Finset.sum_congr rfl
+      intro m _
+      apply Finset.sum_congr rfl
+      intro n _
+      let x := pickupOverreadTerm T (coeff p) m n
+      change x = max x 0 - max (-x) 0
+      by_cases hx : 0 ≤ x
+      · rw [max_eq_left hx, max_eq_right (neg_nonpos.mpr hx), sub_zero]
+      · rw [max_eq_right (le_of_not_ge hx), max_eq_left (by linarith : 0 ≤ -x)]
+        ring
+
+/-- Both inequalities are necessary and sufficient to neutralize the
+weighted pickup deviation within the given tolerance. At tolerance zero
+they require equality of the two ordered masses. -/
+theorem weightedPickup_neutralization_iff {Path : Type*} (T ε : ℝ)
+    (paths : Finset Path) (weight : Path → ℝ) (coeff : Path → ℕ → ℝ) :
+    |weightedPickupDeviation T paths weight coeff| ≤ ε ↔
+      weightedPickupErrorMass T 1 paths weight coeff ≤
+        weightedPickupErrorMass T (-1) paths weight coeff + ε ∧
+      weightedPickupErrorMass T (-1) paths weight coeff ≤
+        weightedPickupErrorMass T 1 paths weight coeff + ε := by
+  rw [weightedPickupDeviation_eq_excess_sub_compensation, abs_le]
+  constructor <;> rintro ⟨h₁, h₂⟩ <;> constructor <;> linarith
+
+/-- A common per-pair floor when both log births are at most `A`, and
+the subinterval `[a,T]` is used for the lower bound. -/
+def pickupBirthWindowFloor (A a T : ℝ) : ℝ :=
+  (T - a) * (2 * (Real.exp (-A / 2) - Real.exp (-a / 2))) ^ 2
+
+theorem pickupBirthWindowFloor_le_gram {A a T : ℝ} {m n : ℕ}
+    (hm : 0 < m) (hn : 0 < n) (hmA : Real.log (m : ℝ) ≤ A) (hnA : Real.log (n : ℝ) ≤ A)
+    (hAa : A ≤ a) (ha : 0 ≤ a) (haT : a ≤ T) :
+    pickupBirthWindowFloor A a T ≤ pickupResponseGram T m n := by
+  let r := 2 * (Real.exp (-A / 2) - Real.exp (-a / 2))
+  have hr : 0 ≤ r := by
+    exact mul_nonneg (by norm_num) (sub_nonneg.mpr (Real.exp_le_exp.mpr (by linarith)))
+  have hc (k : ℕ) (hk : 0 < k) : Continuous (pickupResponse k) := by
+    rw [funext (response_eq_max k hk)]
+    fun_prop
+  have hq (k : ℕ) (hk : 0 < k) (u : ℝ) : 0 ≤ pickupResponse k u := by
+    rw [response_eq_max k hk]
+    exact mul_nonneg (by norm_num) (le_max_right _ _)
+  have hwindow (k : ℕ) (hk : 0 < k) (hkA : Real.log (k : ℝ) ≤ A) (u : ℝ) (hau : a ≤ u) :
+      r ≤ pickupResponse k u := by
+    rw [response_eq_max k hk]
+    apply mul_le_mul_of_nonneg_left _ (by norm_num)
+    apply le_trans _ (le_max_left _ _)
+    exact sub_le_sub (Real.exp_le_exp.mpr (by linarith)) (Real.exp_le_exp.mpr (by linarith))
+  have hprod : Continuous (fun u => pickupResponse m u * pickupResponse n u) :=
+    (hc m hm).mul (hc n hn)
+  calc
+    pickupBirthWindowFloor A a T = ∫ _ in a..T, r ^ 2 := by
+      simp [pickupBirthWindowFloor, r]
+    _ ≤ ∫ u in a..T, pickupResponse m u * pickupResponse n u := by
+      apply intervalIntegral.integral_mono_on haT (continuous_const.intervalIntegrable a T)
+        (hprod.intervalIntegrable a T)
+      intro u hu
+      rw [pow_two]
+      exact mul_le_mul (hwindow m hm hmA u hu.1) (hwindow n hn hnA u hu.1) hr (hq m hm u)
+    _ ≤ pickupResponseGram T m n :=
+      intervalIntegral.integral_mono_interval ha haT le_rfl
+        (Filter.Eventually.of_forall fun u => mul_nonneg (hq m hm u) (hq n hn u))
+        (hprod.intervalIntegrable 0 T)
+
+/-- Every selected ordered surplus pair requires a definite amount of
+negative compensation, up to the allowed pickup error. A pair and its
+reverse can both be selected. Identical pairs on distinct paths are counted
+using each path's weight. The path and pair inventories can vary with `T`. -/
+theorem weightedPickup_compensation_floor {Path : Type*} {A a T ε : ℝ}
+    (paths : Finset Path) (weight : Path → ℝ) (coeff : Path → ℕ → ℝ)
+    (pairs : Path → Finset (ℕ × ℕ)) (hw : ∀ p ∈ paths, 0 ≤ weight p)
+    (hAa : A ≤ a) (ha : 0 ≤ a) (haT : a ≤ T)
+    (hpair : ∀ p ∈ paths, ∀ e ∈ pairs p, e ∈ (pickupIndex T).product (pickupIndex T) ∧
+      e.1 ≠ e.2 ∧ Real.log (e.1 : ℝ) ≤ A ∧ Real.log (e.2 : ℝ) ≤ A ∧
+      pickupResponseGram T e.1 e.2 ≤ pickupOverreadTerm T (coeff p) e.1 e.2)
+    (hε : |weightedPickupDeviation T paths weight coeff| ≤ ε) :
+    (∑ p ∈ paths, weight p * (pairs p).card) * pickupBirthWindowFloor A a T ≤
+      weightedPickupErrorMass T (-1) paths weight coeff + ε := by
+  apply le_trans _ ((weightedPickup_neutralization_iff T ε paths weight coeff).mp hε).1
+  unfold weightedPickupErrorMass
+  rw [Finset.sum_mul]
+  apply Finset.sum_le_sum
+  intro p hp
+  rw [mul_assoc, pickupPairSum, ← Finset.sum_product']
+  apply mul_le_mul_of_nonneg_left _ (hw p hp)
+  have hsub : pairs p ⊆ (pickupIndex T).product (pickupIndex T) :=
+    fun e he => (hpair p hp e he).1
+  calc
+    ((pairs p).card : ℝ) * pickupBirthWindowFloor A a T =
+        ∑ _ ∈ pairs p, pickupBirthWindowFloor A a T := by simp
+    _ ≤ ∑ e ∈ pairs p, max (1 * pickupOverreadTerm T (coeff p) e.1 e.2) 0 := by
+      apply Finset.sum_le_sum
+      intro e he
+      obtain ⟨hs, _, hmA, hnA, hG⟩ := hpair p hp e he
+      obtain ⟨hm, hn⟩ := Finset.mem_product.mp hs
+      have hl := pickupBirthWindowFloor_le_gram (Finset.mem_Icc.mp hm).1
+        (Finset.mem_Icc.mp hn).1 hmA hnA hAa ha haT
+      simpa only [one_mul] using hl.trans (hG.trans (le_max_left _ _))
+    _ ≤ ∑ e ∈ (pickupIndex T).product (pickupIndex T),
+        max (1 * pickupOverreadTerm T (coeff p) e.1 e.2) 0 :=
+      Finset.sum_le_sum_of_subset_of_nonneg hsub (fun _ _ _ => le_max_right _ _)
 
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficBlockObstruction
