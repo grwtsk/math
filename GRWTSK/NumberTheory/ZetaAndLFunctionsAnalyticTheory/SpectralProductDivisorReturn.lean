@@ -3,6 +3,7 @@ import GRWTSK.FunctionsOfAComplexVariable.FiniteSpectralProductMultiplicity
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.ZeroCountCertificates
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilDenseCertificateReduction
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.ResonanceDeterminantCertification
+import Mathlib.NumberTheory.LSeries.Dirichlet
 
 /-!
 # Analytic finite spectral divisors and conditional arithmetic return
@@ -20,8 +21,10 @@ proof of GRH here. No arithmetic term is deleted or replaced by a finite model.
 The imported arithmetic coordinate is 1/2 + I*z, the negative of Program 8's
 original spectral coordinate. Accordingly s=2 has anchor -3*I/2 in this module.
 The finite product theorems allow either nonzero anchor sign. No evenness of a
-nonreal-character source is assumed. Elaboration, kernel replay, axiom audit,
-and independent review NOT_RUN. Coordination: math#1805, #1800, #1806, #1807.
+nonreal-character source is assumed. The actual uncompleted zeta source yields
+an anchor residual and a necessary correction for a real-slope spectral return.
+Elaboration, kernel replay, axiom audit, and independent review NOT_RUN.
+Coordination: math#1805, #1800, #1806, #1807.
 -/
 
 set_option autoImplicit false
@@ -128,6 +131,84 @@ theorem arithmeticCoordinate_negative_anchor :
     arithmeticCoordinate (anchor (-(3 / 2 : ℝ))) = 2 := by
   apply Complex.ext <;>
     norm_num [arithmeticCoordinate, anchor, Complex.mul_re, Complex.mul_im]
+
+private theorem zeta_logDeriv_re_le_at_two :
+    (logDeriv riemannZeta (2 : ℂ)).re ≤ -(Real.log 2 / 4) := by
+  let f : ℕ → ℂ := fun n => (ArithmeticFunction.vonMangoldt n : ℂ)
+  have htwo : 1 < (2 : ℂ).re := by norm_num
+  have hs : Summable (LSeries.term f (2 : ℂ)) :=
+    ArithmeticFunction.LSeriesSummable_vonMangoldt htwo
+  have hterm (n : ℕ) : (LSeries.term f (2 : ℂ) n).re =
+      ArithmeticFunction.vonMangoldt n / (n : ℝ) ^ 2 := by
+    rw [LSeries.term_of_ne_zero' (by norm_num : (2 : ℂ) ≠ 0), Complex.cpow_two]
+    change (((ArithmeticFunction.vonMangoldt n : ℝ) : ℂ) / (n : ℂ) ^ 2).re = _
+    rw [← Complex.ofReal_natCast, ← Complex.ofReal_pow, ← Complex.ofReal_div, Complex.ofReal_re]
+  have hsum : Real.log 2 / 4 ≤ (LSeries f (2 : ℂ)).re := by
+    rw [LSeries, Complex.re_tsum hs]
+    have hle := (Complex.hasSum_re hs.hasSum).summable.le_tsum 2 (fun n _ => by
+      rw [hterm]
+      exact div_nonneg ArithmeticFunction.vonMangoldt_nonneg (sq_nonneg _))
+    have htwoTerm : (LSeries.term f (2 : ℂ) 2).re = Real.log 2 / 4 := by
+      rw [hterm, ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two]
+      norm_num
+    simpa only [htwoTerm] using hle
+  have hz : LSeries f (2 : ℂ) = -logDeriv riemannZeta (2 : ℂ) := by
+    simpa only [logDeriv_apply, neg_div] using
+      ArithmeticFunction.LSeries_vonMangoldt_eq_deriv_riemannZeta_div htwo
+  rw [hz, Complex.neg_re] at hsum
+  linarith
+
+private theorem hasDerivAt_arithmeticCoordinate (z : ℂ) :
+    HasDerivAt arithmeticCoordinate Complex.I z :=
+  (hasDerivAt_const_mul (x := z) Complex.I).const_add (1 / 2 : ℂ)
+
+/-- For the actual uncompleted zeta source, the term at 2 in the von Mangoldt
+series gives a strictly negative imaginary logarithmic derivative at the anchor. -/
+theorem zeta_logDeriv_im_le_at_anchor :
+    (logDeriv (riemannZeta ∘ arithmeticCoordinate) (anchor (-(3 / 2 : ℝ)))).im ≤
+      -(Real.log 2 / 4) := by
+  have hz : DifferentiableAt ℂ riemannZeta (arithmeticCoordinate (anchor (-(3 / 2 : ℝ)))) := by
+    rw [arithmeticCoordinate_negative_anchor]
+    exact differentiableAt_riemannZeta (by norm_num)
+  have ha := hasDerivAt_arithmeticCoordinate (anchor (-(3 / 2 : ℝ)))
+  rw [logDeriv_comp hz ha.differentiableAt, arithmeticCoordinate_negative_anchor, ha.deriv]
+  simpa [Complex.mul_im] using zeta_logDeriv_re_le_at_two
+
+/-- For real `c` the logarithmic-derivative discrepancy is at least
+`log 2 / 4`, uniformly in the spectrum. -/
+theorem zeta_logDeriv_anchor_residual (λ : ι → ℝ) (c : ℂ) :
+    Real.log 2 / 4 + c.im + (3 / 2 : ℝ) * anchorMass λ (-(3 / 2 : ℝ)) ≤
+      ‖logDeriv (normalizedExpProduct λ (-(3 / 2 : ℝ)) c) (anchor (-(3 / 2 : ℝ))) -
+        logDeriv (riemannZeta ∘ arithmeticCoordinate) (anchor (-(3 / 2 : ℝ)))‖ := by
+  refine le_trans ?_ ((le_abs_self _).trans (Complex.abs_im_le_norm _))
+  rw [Complex.sub_im, im_logDeriv_normalizedExpProduct_anchor λ (by norm_num : -(3 / 2 : ℝ) ≠ 0)]
+  linarith [zeta_logDeriv_im_le_at_anchor]
+
+/-- A local exponential return to uncompleted zeta must supply the missing
+imaginary slope at the anchor, in addition to its value there. -/
+theorem zeta_anchor_correction_of_exactReturnOn (λ : ι → ℝ) (c : ℂ) {U : Set ℂ}
+    {h : ℂ → ℂ} (hU : IsOpen U) (ha : anchor (-(3 / 2 : ℝ)) ∈ U)
+    (hh : DifferentiableAt ℂ h (anchor (-(3 / 2 : ℝ))))
+    (hret : ExactReturnOn U (normalizedExpProduct λ (-(3 / 2 : ℝ)) c)
+      h (riemannZeta ∘ arithmeticCoordinate)) :
+    Real.log 2 / 4 + c.im + (3 / 2 : ℝ) * anchorMass λ (-(3 / 2 : ℝ)) ≤
+      (deriv h (anchor (-(3 / 2 : ℝ)))).im := by
+  have hz : DifferentiableAt ℂ riemannZeta (arithmeticCoordinate (anchor (-(3 / 2 : ℝ)))) := by
+    rw [arithmeticCoordinate_negative_anchor]
+    exact differentiableAt_riemannZeta (by norm_num)
+  have hF := hz.comp (hasDerivAt_arithmeticCoordinate (anchor (-(3 / 2 : ℝ)))).differentiableAt
+  have hF0 : (riemannZeta ∘ arithmeticCoordinate) (anchor (-(3 / 2 : ℝ))) ≠ 0 := by
+    rw [Function.comp_apply, arithmeticCoordinate_negative_anchor]
+    exact riemannZeta_ne_zero_of_one_lt_re (by norm_num)
+  have heq : normalizedExpProduct λ (-(3 / 2 : ℝ)) c =ᶠ[𝓝 (anchor (-(3 / 2 : ℝ)))]
+      (fun z => Complex.exp (h z) * (riemannZeta ∘ arithmeticCoordinate) z) := by
+    filter_upwards [hU.mem_nhds ha] with z hzU
+    exact hret hzU
+  have hlog := (logDeriv_congr_nhds heq).eq_of_nhds
+  have him := congrArg Complex.im (hlog.trans (logDeriv_exp_mul hh hF hF0))
+  rw [Complex.add_im, im_logDeriv_normalizedExpProduct_anchor λ (by norm_num : -(3 / 2 : ℝ) ≠ 0)]
+    at him
+  linarith [zeta_logDeriv_im_le_at_anchor]
 
 /-- Conditional return to the existing RP-OC-10 per-character target.
 Coverage is over every open-strip zero at every height, not finitely many tests.
