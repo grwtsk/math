@@ -15696,3 +15696,477 @@ assert lower_floor>0
 print("PASS signed moment direct finite physical positivity",str(candidate),k,
       scale.bit_length(),float(lower_floor),flush=True)
 ~~~
+
+## A quarter-positive obstruction and a three-quarter debit at the next core
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review is
+UNASSESSED.
+
+Keep the original complex odd physical carrier
+$\mathcal H=L^2_{\rm odd}([-4,4],dt;\mathbb C)$, genuine Fourier
+restriction $K$, original residual masks, full parity-one gamma
+term and all $458$ signed prime-power terms of the primitive
+nonprincipal odd character modulo three. The principal-pole term
+is zero in this sector. Use the original
+$D=BI-\lambda\Pi_H\ge\beta I$, $\beta=B-\lambda$,
+and $S_\lambda=D+K^*m_+K$.
+
+Let $X_3$ be the reflected slab with positive detunings
+$[188.16,192.16]$ from $c_1$. Write $K_3$ for the folded
+restriction, with positive angular measure $d\nu/\pi$, and put
+$P_3=K^*1_{X_3}m_+K$, $N_3=\sqrt{m_-}\,1_{X_3}K$.
+The actual quarter-positive debit needs scalar price above
+$1.69\cdot10^{-6}$. The three-quarter comparison below gives
+$$
+ N_3^*N_3\le\tfrac34P_3+(10^{-9}+\delta_3)I,
+ \qquad \delta_3<8.5\cdot10^{-11}.
+$$
+With the earlier twenty-six debits this gives a twenty-seven-row
+comparison below $0.953405$ and exhausts the actual negative
+support in the reflected interval $c_1+[-16.64,192.16]$.
+
+### Actual signed complement beyond the old endpoint
+
+On detunings $[183.56,192.16]$ the original masks are clear.
+Use $1-3\cdot10^{-10}\le w\le1$, the full Binet bracket
+$17.6779<A<17.6780$, all signed atoms and the original
+$|P_4''|<13504$ bound. The directed width-$0.02$ mesh
+checks $416$ complement cells with zero subdivisions and
+strictly positive signs outside $[190.02,190.30]$.
+Both enclosure endpoints are positive and the center
+$190.16$ is negative. Thus restriction to $X_3$ pays
+the entire actual negative part of this extension, with
+reflection supplying the other angular sign.
+
+### A negative physical trial at quarter positive energy
+
+Use $800$ width-$0.005$ directed cells on the positive
+side of $X_3$. For $v=A_{\rm hi}-P_{4,\rm lo}$, an
+upper folded Lebesgue density for $\tfrac14m_+-m_-$ is
+$v/(4\pi_{\rm lower})$ when $v\ge0$ and
+$w_{\rm lo}v/\pi_{\rm upper}$ when $v<0$. Round it
+upward to denominator $10^7$. Its raw angular
+multiplier, obtained by multiplying the folded density
+by $\pi$, has absolute bound $9$.
+
+Take $k=40$ in the previous centered angular Taylor
+argument, with width $h=4$. Its operator error in the
+folded angular $L^2$ space is at most
+$\epsilon=8^{40}/40!$ by the integral Taylor remainder
+and Plancherel. The signed quadratic-form approximation
+for the upper step therefore has norm error at most
+$\delta_U=9\epsilon(2+\epsilon)$.
+
+At $c=c_1+190.16$ use the physical monomial sine and
+cosine envelope functions $\phi_j$ and their
+coefficients $b_j$ from the preceding direct moment
+comparison. To bound the true physical Gram $G$, put
+$z=8c$ and $I_q=\int_{-1}^1x^q e^{izx}\,dx$.
+Integration by parts gives
+$$
+ I_q=\frac{e^{iz}-(-1)^qe^{-iz}}{iz}-\frac{qI_{q-1}}{iz}.
+$$
+The even-indexed integrals are real and the odd-indexed
+ones imaginary. Add to the nonoscillatory Gram
+$4/(i+j+1)$ for even $i+j$ and zero otherwise
+the oscillatory term $-2\Re I_{i+j}$ for two even
+indices, $2\Re I_{i+j}$ for two odd indices, and
+$2\Im I_{i+j}$ for opposite parities. The exact source
+trigonometric interval at $z$ and this recurrence
+enclose the needed Gram entries directly.
+
+Use a rational trial on $\phi_0,\ldots,\phi_{10}$.
+For proposing its coefficients only, round the
+Gram interval midpoints and form the upper-step
+Taylor form with scalar shift $10^{-6}+\delta_U$.
+The first failed pivot is zero-based $10$. Set
+$v_{10}=1$ and solve the leading ten-coordinate
+linear system over the rationals. For
+$f=\sum_{j=0}^{10}v_j\phi_j$, the guard then
+evaluates the norm and upper-step form using the true
+directed Gram, including the angular error
+$\delta_U$. The exact norm is positive and the
+quadratic upper bound proves
+$$
+ \langle f,(10^{-6}I+K_3^*(\tfrac14m_+-m_-)K_3)f\rangle
+ <-6.9\cdot10^{-7}\|f\|^2 .
+$$
+Thus any valid scalar price for this actual
+quarter-positive inequality exceeds
+$1.69\cdot10^{-6}$. Separately, the fixed lower-step
+and upper-physical-Gram quarter comparison at
+$10^{-6}$ has its first ten leading pivots
+positive and its next LDL pivot in
+$(-4.6601\cdot10^{-10},-4.6599\cdot10^{-10})$.
+This binds the earlier finite sufficient
+matrix failure as well as the independent
+actual physical trial.
+
+### Three-quarter repair and the joint comparison
+
+Use the same directed cells and $u=A_{\rm lo}-P_{4,\rm hi}$.
+The lower folded density for $\tfrac34m_+-m_-$
+is $3w_{\rm lo}u/(4\pi_{\rm upper})$ for $u\ge0$
+and $u/\pi_{\rm lower}$ for $u<0$, rounded down
+to denominator $10^7$. The raw lower multiplier
+has absolute bound $26$. Its Taylor error is
+$\delta_3=26\epsilon(2+\epsilon)<8.5\cdot10^{-11}$.
+For its exact signed moments $M$, the one-integration-
+by-parts physical upper Gram $\bar G=G_0+(40/c)I$
+gives the rational comparison
+$$
+ 10^{-9}\bar G+\bar GM\bar G>0 .
+$$
+All $40$ leading principal minors are positive in
+the exact Bareiss test. Conjugation by the
+contractive physical moment map defined using
+$\bar G^{-1/2}$ gives the Taylor lower bound
+$-10^{-9}I$. The true signed lower bound and the
+angular error give the displayed debit inequality.
+
+For the three previous direct quarter-positive slabs
+write $P_i=K^*1_{X_i}m_+K$ and
+$N_i=\sqrt{m_-}\,1_{X_i}K$, $0\le i\le2$.
+The exact previous prices are
+$$
+ t_0=1/20000+\delta_{36},\qquad
+ t_1=t_2=10^{-8}+\delta_{36},\qquad
+ \delta_{36}=9(8^{36}/36!)(2+8^{36}/36!).
+$$
+All four direct slabs are disjoint, and their
+positive-frequency supports avoid the positive
+allocations and negative enclosures of the
+twenty-three earlier rows.
+Put $S_{\rm keep}=S_\lambda-\sum_{i=0}^3P_i\ge\beta I$.
+The earlier $q_{23}=0.953004$ bound holds against
+$S_{\rm keep}$ by its original physical and tagged
+positive inputs. In that accounting, the extra
+scalar room before the cap $0.953405$ is less than
+$1.42\cdot10^{-8}$, even before any new error is charged.
+
+With $t_3=10^{-9}+\delta_3$, add the four direct
+inequalities and use $I\le S_{\rm keep}/\beta$.
+The three old direct slabs use coefficient $1/4$ on
+their own $P_i$, and $X_3$ uses coefficient $3/4$
+on its own $P_3$. Since $S_\lambda=S_{\rm keep}
++\sum_{i=0}^3P_i$, the joint cap is at most
+$$
+ \max\left\{q_{23}+\frac{\sum_{i=0}^3t_i}{\beta},\tfrac34\right\}
+ <0.953405 .
+$$
+The exact scalar guard verifies the last inequality.
+Thus $S_{\rm all27}\ge0.046595S_\lambda$ and the
+remaining sign is
+$\|N_{\rm out}S_{\rm all27}^{-1}N_{\rm out}^*\|\le1$
+for the actual unpaid negative restriction.
+The original seven physical leading inverses
+and directional source return use that sign.
+The trace lower bound $1.519$ still applies on
+the disjoint unpaid trace corridor.
+
+### Exact source checks
+
+Extract this block and pass the complete pinned source
+Markdown path followed by `sign`, `physical-fail`,
+`quarter-fail`, or `repair`. These check the full signed
+complement, the true physical trial, the previous fixed
+finite obstruction and the repaired finite comparison
+with its resource sum, respectively.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+assert mode in ("sign","quarter-fail","physical-fail","repair")
+if mode=="sign":
+    start,stop=F("183.56"),F("192.16")
+    lowarg,higharg=47581216,47581221
+else:
+    start,stop=F("188.16"),F("192.16")
+    lowarg,higharg=47581218,47581221
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+step=F(".02") if mode=="sign" else F(".005")
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("1e-11")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+if mode=="sign":
+    left,right=F("190.02"),F("190.30")
+    assert node(left)[1]<Alo and node(right)[1]<Alo
+    assert node(F("190.16"))[0]>Ahi
+    checks=0
+    for u,v in ((start,left),(right,stop)):
+        assert ((v-u)/step).denominator==1
+        for j in range(int((v-u)/step)):
+            assert estimate(u+j*step,step)[1]<Alo
+            checks+=1
+    assert checks==416
+    print("PASS exact signed complement through +192.16", checks)
+    raise SystemExit
+
+if mode=="physical-fail":
+    c=c0+(start+stop)/2
+    offset=(start+stop)/2
+    wmin=1-F("3e-10")
+    rho=[]
+    for j in range(count):
+        x=start+j*step
+        lo,_=estimate(x,step)
+        raw=Ahi-lo
+        upper=raw/(4*pi_lower) if raw>=0 else wmin*raw/pi_upper
+        upper=F(-((-upper*10**7)//1),10**7)
+        assert pi_upper*abs(upper)<9
+        if upper:
+            rho.append((x-offset,x+step-offset,upper))
+    k,n=40,11
+    coeff=[(-1)**(i//2)*F(4**i,factorial(i)) for i in range(k)]
+    mom=[sum(w*(b**(j+1)-a**(j+1))/(j+1) for a,b,w in rho) for j in range(2*k-1)]
+    M=[[coeff[i]*coeff[j]*mom[i+j] for j in range(k)] for i in range(k)]
+    z=8*c
+    co,si=phase_trig((z,z))
+    rec=[scale(2/z,si)]
+    for j in range(1,k+n-1):
+        rec.append(add(scale(2/z,si),scale(-j/z,rec[-1])) if j%2==0 else
+                   add(scale(-2/z,co),scale(j/z,rec[-1])))
+    def physical_gram(i,j):
+        q=i+j
+        base=F(4,q+1) if q%2==0 else F(0)
+        sign=-2 if i%2==0 and j%2==0 else 2
+        return add((base,base),scale(sign,rec[q]))
+    G_bounds=[[physical_gram(i,j) for j in range(n)] for i in range(k)]
+    rounding=10**30
+    G=[[F(round(rounding*sum(G_bounds[i][j])/2),rounding) for j in range(n)] for i in range(k)]
+    tau=F("1e-6")
+    eps=F(8)**k/factorial(k)
+    delta=9*eps*(2+eps)
+    shift=tau+delta
+    MG=[[sum(M[i][j]*G[j][r] for j in range(k)) for r in range(n)] for i in range(k)]
+    C=[[shift*G[i][j]+sum(G[k0][i]*MG[k0][j] for k0 in range(k)) for j in range(n)] for i in range(n)]
+    assert all(C[i][j]==C[j][i] for i in range(n) for j in range(n))
+    S=[row[:] for row in C]
+    bad=None
+    for j in range(n):
+        pivot=S[j][j]
+        if pivot<=0:
+            assert pivot<0
+            bad=j
+            print("diagnostic approximate Gram, upper step finite pivot",bad,float(pivot),flush=True)
+            break
+        for i in range(j+1,n):
+            for r in range(j+1,n):
+                S[i][r]-=S[i][j]*S[j][r]/pivot
+    assert bad==10
+    aug=[C[i][:bad]+[-C[i][bad]] for i in range(bad)]
+    for j in range(bad):
+        den=aug[j][j]
+        assert den!=0
+        aug[j]=[x/den for x in aug[j]]
+        for i in range(bad):
+            if i!=j:
+                factor=aug[i][j]
+                aug[i]=[x-factor*y for x,y in zip(aug[i],aug[j])]
+    v=[row[-1] for row in aug]+[F(1)]+[F(0)]*(n-bad-1)
+
+    def sum_intervals(items):
+        result=(F(0),F(0))
+        for item in items:
+            result=add(result,item)
+        return result
+
+    y=[sum_intervals(scale(v[j],G_bounds[i][j]) for j in range(n) if v[j])
+       for i in range(k)]
+    norm_sq=sum_intervals(scale(v[j],y[j]) for j in range(n) if v[j])
+    true_q=scale(shift,norm_sq)
+    for i in range(k):
+        for j in range(k):
+            true_q=add(true_q,scale(M[i][j],multiply(y[i],y[j])))
+    print("exact trial inequality upper",float(true_q[1]),"norm:",float(norm_sq[0]),float(norm_sq[1]),flush=True)
+    assert norm_sq[0]>0 and true_q[1]<0
+    assert true_q[1] < -F("6.9e-7")*norm_sq[1]
+    print("PASS actual quarter-positive physical inequality is false at scalar price 10^-6")
+    raise SystemExit
+
+from math import lcm
+
+centre_offset=(start+stop)/2
+c=c0+centre_offset
+wmin=1-F("3e-10")
+assert start==centre_offset-2 and stop==centre_offset+2
+assert count==800
+assert node(centre_offset)[0]>Ahi
+assert node(start)[1]<Alo and node(stop)[1]<Alo
+rho=[]
+positive_fraction=F(3,4) if mode=="repair" else F(1,4)
+raw_cap=26 if mode=="repair" else 9
+for j in range(count):
+    offset=start+j*step
+    _,upper=estimate(offset,step)
+    raw=Alo-upper
+    lower=positive_fraction*wmin*raw/pi_upper if raw>=0 else raw/pi_lower
+    lower=F((lower*10**7)//1,10**7)
+    assert pi_upper*abs(lower)<raw_cap
+    if lower:
+        rho.append((offset-centre_offset,offset+step-centre_offset,lower))
+assert len(rho)==800 and sum(w<0 for _,_,w in rho)==52
+k=40
+moments=[sum(w*(v**(j+1)-u**(j+1))/(j+1) for u,v,w in rho)
+         for j in range(2*k-1)]
+coefficient=[(-1)**(i//2)*F(4**i,factorial(i)) for i in range(k)]
+M=[[coefficient[i]*coefficient[j]*moments[i+j] for j in range(k)] for i in range(k)]
+G=[[(F(4,i+j+1) if (i+j)%2==0 else F(0))+(F(k)/c if i==j else F(0))
+    for j in range(k)] for i in range(k)]
+
+def mul(A,B):
+    return [[sum(A[i][u]*B[u][j] for u in range(k)) for j in range(k)] for i in range(k)]
+
+q=mul(mul(G,M),G)
+assert all(q[i][j]==q[j][i] for i in range(k) for j in range(k))
+B,lam=F(".124997987"),F(".0001071")
+beta=B-lam
+eps=F(8)**k/factorial(k)
+delta=raw_cap*eps*(2+eps)
+assert delta<(F("8.5e-11") if mode=="repair" else F("3e-11"))
+print("signed cells",len(rho),sum(w<0 for u,v,w in rho),"folded raw bound",float(pi_upper*max(abs(w) for u,v,w in rho)),"Taylor operator error",float(delta),flush=True)
+candidate=F("1e-6") if mode=="quarter-fail" else F("1e-9")
+C=[[candidate*G[i][j]+q[i][j] for j in range(k)] for i in range(k)]
+scale=lcm(*(v.denominator for row in C for v in row))
+scaled=[[int(v*scale) for v in row] for row in C]
+assert all(den==int(den) for row in C for den in (v*scale for v in row))
+last=1
+for j in range(k):
+    pivot=scaled[j][j]
+    if pivot<=0:
+        assert mode=="quarter-fail" and j==10
+        normalized=F(pivot,last*scale)
+        assert F("-4.6601e-10")<normalized<F("-4.6599e-10")
+        eps36=F(8)**36/factorial(36)
+        old_price=F(1,20000)+2*F("1e-8")+27*eps36*(2+eps36)
+        room=(F(".953405")-F(".953004"))*beta-old_price
+        assert 0<room<F("1.42e-8")<candidate
+        print("PASS exact quarter-positive obstruction",j,float(normalized),float(room))
+        raise SystemExit
+    for i in range(j+1,k):
+        for r in range(i,k):
+            num=pivot*scaled[i][r]-scaled[i][j]*scaled[r][j]
+            value,rest=divmod(num,last)
+            assert rest==0
+            scaled[i][r]=value
+    for i in range(j+1,k):
+        for r in range(i+1,k):
+            scaled[r][i]=scaled[i][r]
+    last=pivot
+assert mode!="quarter-fail"
+lower_floor=beta-candidate-delta
+eps36=F(8)**36/factorial(36)
+delta36=9*eps36*(2+eps36)
+old_price=F(1,20000)+2*F("1e-8")+3*delta36
+new_cap=max(F(".953004")+(old_price+candidate+delta)/beta,positive_fraction)
+assert new_cap<F(".953405")
+assert lower_floor>F(".12484")
+actual_projection_error=544*eps
+assert (lower_floor-2*actual_projection_error)/(B-actual_projection_error)>F(".9987")
+paid_spans=[(F("-16.64"),F("183.56")),(F(350),F(405)),
+            (F("5311.55"),F("5315.55")),(F(20345),F(20410))]
+assert all(r<start or stop<l for l,r in paid_spans)
+c2_lo=F(5085348195,4)*pi_lower
+assert c2_lo-F("5.55")-2>c0+stop
+print("exact mixed-fraction cap with this new block",float(new_cap),flush=True)
+assert lower_floor>0
+print("PASS signed moment direct finite physical positivity",str(candidate),k,
+      scale.bit_length(),float(lower_floor),flush=True)
+~~~
