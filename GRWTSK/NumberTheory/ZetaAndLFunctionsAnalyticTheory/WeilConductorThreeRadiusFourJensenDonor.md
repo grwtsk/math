@@ -2753,3 +2753,173 @@ print("PASS exact pooled Jensen residual",ask,"row uncertainty",float(F(width,sc
 print("PASS all 48 q63 budgets",float(max(caps)),float(min(rooms)),
       "uniform-price reduction",float(sharp_separate-q))
 ~~~
+
+## The next enclosure through detuning 722.96
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review is
+UNASSESSED.
+
+Use the [pinned 63-enclosure comparison](https://github.com/grwtsk/math/blob/40c70ff8c9edd5d0db325492e52216f2605b9488/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md)
+through detuning $710.86$ with its shared-map price, Jensen blob
+aef9095e8b7118b41ca6f4537bfbcf464a6ca319 and radius-four arithmetic
+blob 72848bace2af0f427c9e9fae16806f1b31ee064f.
+Retain the original complex odd carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$, zero extension,
+folded measure $d\nu/\pi$, original masks and physical projection.
+The primitive nonprincipal odd character modulo three uses the
+full parity-one gamma, all $458$ signed prime powers and zero
+principal-pole term. Detunings use $c_1=99653682.92983$ and
+include their reflections.
+
+The original multiplier is strictly positive on
+$[710.86,722.96]$ off $E_{10}=[710.86,711.04]$.
+Both endpoints of $E_{10}$ are positive and $710.95$ is negative.
+The directed sign proof uses $596$ complement checks with no
+bisections. Take the positive donor $Y_{10}=[709.64,712.24]$.
+The last preceding donor ends at $709.62$. The exact guard
+checks separation from the other earlier direct and tagged
+positive resources. The left part $[709.64,710.86]$ of $Y_{10}$ lies in the
+preceding strict sign region and avoids the prior enclosure
+$[708.60,708.66]$. Thus the actual $m_-$ part on $Y_{10}$
+is supported in $E_{10}$ and has disjoint output support
+from the previous $63$ negative restrictions.
+
+On the actual physical carrier,
+$$
+ N_{E_{10}}^*N_{E_{10}}\preceq
+ \tfrac14\mathcal P_{Y_{10}}+(10^{-12}+\delta_{E_{10}})I,\qquad
+ 0<\delta_{E_{10}}<6.501\cdot10^{-25}.
+$$
+The positive Jensen form $B^*WB$ uses $123$ positive $.02$ bins
+with directed prices on eight $.0025$ source cells per bin.
+Cauchy–Schwarz for each true average gives
+$B^*WB\preceq\mathcal P_{Y_{10}}$.
+There are $46$ nonzero upper negative cells. The short negative
+map $V$ uses $18$ terms about the exact physical center
+$c=c_1+710.95$. The directed upper density $\eta$ and the
+sine Taylor remainder $\epsilon=.36^{18}/18!$ give the
+physical additive price
+$\delta_{E_{10}}=8\epsilon(2+\epsilon)\int_{E_{10}}\eta$.
+
+For $\tau=10^{-12}$ the checked Woodbury residual is
+$$
+ R_Z=\tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                    -\tau Z^*(\tfrac14W)^{-1}Z \succ0.
+$$
+For $A=\tau(\tfrac14W)^{-1}+BB^*$, the square completion
+from the preceding source bounds the exact Woodbury residual
+$\tau M^{-1}-VV^*+VB^*A^{-1}BV^*$ below by $R_Z$. Its
+positivity gives $V^*MV\preceq\tau I+\tfrac14 B^*WB$. The $120$-term directed expansion of each true
+positive average gives $18$ residual physical columns
+with $L^2$ discrepancies below $1.801\cdot10^{-48}$.
+The directed Gram uses signed endpoint moments at $8c$ and
+asserts the exact physical center immediately before forming
+them. Its certified matrix row width is below $10^{-23}$.
+All $18$ exact leading pivots are positive, with first
+greater than $3.2400\cdot10^{-10}$. The floating solve
+proposes $Z$ for this rational check.
+
+The negative witness also rules out zero scalar cost for the
+actual $Y_{10}$ donor. The original multiplier is negative on an
+open subinterval of $E_{10}$ at detuning $710.95$. A nonzero
+frequency function supported there has positive negative energy
+and zero positive energy. The dense-range argument for the
+bounded folded restriction in the preceding section passes
+this violation to the physical carrier for every fixed finite
+donor coefficient.
+
+Reserve the additional positive operator
+$\mathcal P_{Y_{10}}$ once and use the same earlier positive
+tagged inputs and reduced floor $\beta I$. Append the
+disjoint negative restriction $N_{E_{10}}$ to form
+$W_{\mathrm{all64}}$. Add $(\tau+\delta_{E_{10}})/\beta$
+to the scalar branch and include the fraction $\tfrac14$
+among the disjoint positive coefficients. Across the $48$
+earlier price choices, the cap stays below $0.953005$ for
+each of the two separate pair prices, the fixed-factor joint
+price and the common-map $10^{-12}$ price. The least physical
+room for the common-map branch exceeds $6.7077\cdot10^{-9}$.
+
+Contiguous signed coverage reaches $722.96$. The original
+physical identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all64}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all64}}=
+ S_\lambda-W_{\mathrm{all64}}^*W_{\mathrm{all64}}
+ \succeq0.046995 S_\lambda.
+$$
+The required sign is
+$\|N_{\mathrm{out}}S_{\mathrm{all64}}^{-1}N_{\mathrm{out}}^*\|\le1$
+on the full actual outside support before the original seven
+leading inverses and directional return.
+
+Extract the following guard and pass the pinned radius-four
+arithmetic Markdown, the Jensen donor Markdown containing the
+published 63-enclosure certificate, and `sign` or `e10`.
+Both modes are required for the joint result. The guard reuses
+the exact E9 checker selected by its digest, with the checked
+E10 geometry, center, counts and price sum supplied below.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic_path,jensen_path,mode=sys.argv
+assert mode in ("sign","e10")
+pinned_e9="a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654"
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen_path).read_text(),re.M|re.S)
+matches=[block for block in blocks if sha256(block.encode()).hexdigest()==pinned_e9]
+assert len(matches)==1
+code=matches[0]
+
+# These are the new input parameters to the same directed source arithmetic.
+changes=(
+    ('"e9":("707.62","709.62","708.60","708.66","708.63",".25")',
+     '"e10":("709.64","712.24","710.86","711.04","710.95",".25")'),
+    ('("708.60","710.86",".02")','("710.86","722.96",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(596,0)'),
+    ('len(pos)==98 and len(rho)==9','len(pos)==123 and len(rho)==46'),
+    ('0<delta<F("9.656e-36")','0<delta<F("6.501e-25")'),
+    ('assert c==c0+F("708.63")','assert c==c0+F("710.95")'),
+    ('F(T[0][0],work_grid)>F("5.9727e-8")','F(T[0][0],work_grid)>F("3.2400e-10")'),
+    ('assert F("640.32")<intervals[0][0]','assert F("709.62")<intervals[0][0]'),
+)
+for earlier,later in changes:
+    assert code.count(earlier)==1
+    code=code.replace(earlier,later)
+marker="base_options = {"
+assert code.count(marker)==1
+code=code.split(marker)[0]+'''assert F("574.58")<F("580.62")<F("590.62")<F("621.06")<F("625.06")
+assert F("625.06")<F("627.98")<F("631.98")<F("636.32")<F("640.32")
+assert F("640.32")<F("707.62")<F("709.62")<start<stop<F("722.96")
+assert F("708.66")<F(l0)<F(r0)<=stop
+pair_options={
+    "published-first":F("5e-9")+F("8e-10"),
+    "repriced-first":F("4.5e-10")+F("8e-10"),
+    "joint-residual":F("7.47626e-10"),
+    "pooled-map":F("1e-12"),
+}
+caps={}
+for label,pair_price in pair_options.items():
+    spent=pair_price+F("2.356e-16")+F("6.382e-23")+F("4e-12")+F("8e-23")+F("9.656e-36")+tau+delta
+    all_caps=[max(F(".953004")+(quoted+spent)/beta,F(".95"),alpha) for quoted in branches]
+    assert len(all_caps)==48 and max(all_caps)<F(".953005")
+    caps[label]=(max(all_caps),old_room-spent)
+assert caps["published-first"][1]>F("9.087e-10")
+assert caps["repriced-first"][1]>F("5.4587e-9")
+assert caps["joint-residual"][1]>F("5.96109e-9")
+assert caps["pooled-map"][1]>F("6.7077e-9")
+print("PASS exact signed donor E10 and 48x4 price combinations",
+      {label:(float(cap),float(room)) for label,(cap,room) in caps.items()})
+'''
+original_argv=sys.argv
+try:
+    sys.argv=[__file__,arithmetic_path,mode]
+    exec(compile(code,jensen_path,"exec"),{"__name__":"__main__"})
+finally:
+    sys.argv=original_argv
+~~~
