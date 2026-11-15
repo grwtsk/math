@@ -5036,3 +5036,347 @@ assert 2 < F('1.415')**2 and s_norm[1] < F('2.001')
 assert F('.69')*F('.10')*F('.20')/(F('1.415')*F('2.001')) > F('.0048')
 print("PASS interior jump > .0048 at the signed n=2 cut")
 ```
+
+## Signed prime quadratic value of the collar approximation
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the signed physical approximation $g_0$ and the actual transmitted
+collar direction $g_*$ from the preceding section. The exact quotient
+of the original unmasked signed prime operator satisfies
+$$
+ -2.651<\frac{\langle g_0,T_Pg_0\rangle}{\|g_0\|^2}<-1.468 .
+$$
+As a consequence the direct form $\langle g_*,(BI+R)g_*\rangle$
+is above $12.5\|g_*\|^2$. The same bound holds with the collar
+deleted in the direct form. The true inverse costs of the outside-collar
+Schur form on this direction still require their own estimate.
+
+### Whole physical cells and exact lag integrals
+
+Write $q_\Lambda=(I-P_0)T_P(v_0-\Lambda u)$ with
+$\Lambda=\gamma_v/c+c/\beta$. The positive factor $\eta_c$ in
+$g_0=\eta_c q_\Lambda$ cancels in the quotient. First use $q=q_{\Lambda_m}$
+at the rational midpoint $\Lambda_m$ of the preceding $\Lambda$ interval.
+On each positive physical cell use the two sine and cosine coefficients
+of the centered signed shift from the seventh mixed-column calculation.
+Equivalently write
+$$
+ q(x)=\operatorname{Re}\bigl(a e^{i\alpha x}+b e^{i\omega x}\bigr)
+$$
+on that open cell, with complex coefficients encoding the two real
+sine and cosine pairs. Thus $A\sin(\alpha x)+B_1\cos(\alpha x)$ uses
+$a=B_1-iA$. On the reflected negative cell the coefficients are
+$-\bar a,-\bar b$ by oddness. This gives 918 open cells up to
+their boundary points, with zero extension outside $[-4,4]$.
+
+For each of the actual 458 lags $r=\log n>0$, the correlation at $r$
+is the integral of $q(x)q(x+r)$ on $[-4,4-r]$. Along this overlap
+merge the cells for $q(x)$ with those for $q(x+r)$. Each endpoint is
+represented by an exact pair $(k,Q)$ for $4k+\log Q$, $Q>0$ rational.
+Reflection maps this pair to $(-k,1/Q)$, and translation of a cut
+by $-r$ maps it to $(k,Q/n)$. Equal keys are exact equalities; for
+distinct keys the directed comparisons in the computation certify
+disjoint intervals wherever required for the merge. At equal end
+points both cell indices advance. This counts 213970 nonempty
+intersections and 624 equal-endpoint advances over the full signed
+lag list. An open endpoint has no effect on any integral.
+
+On a merged cell let $a',b'$ be the coefficients for $q(x+r)$
+after multiplying the two carrier phases by $e^{i\alpha r}$ and
+$e^{i\omega r}$. The constant and slow part of the product is
+$$
+ \frac12\operatorname{Re}\left(
+   a\overline{a'}+b\overline{b'}
+    +(a\overline{b'}+\bar b a')e^{i(\alpha-\omega)x}
+ \right).
+$$
+Integrate both terms by the two endpoints. The three remaining
+frequencies are $2\alpha,2\omega,\alpha+\omega$.
+Their coefficients come from $aa',bb',ab'+ba'$, with the same
+factor $1/2$. Let $M$ bound the sum of the absolute real and
+imaginary parts of the original two coefficients in each cell.
+Rotating the shifted pair preserves each complex modulus.
+The summed absolute error of the omitted fast primitives on
+a merged cell is at most $M^2/(2\omega)$, since each frequency
+is at least $2\omega$ and the two-endpoint oscillatory integral
+has magnitude at most two divided by its frequency.
+
+The full physical signed prime operator has both translates at
+half-weight. On this real vector their correlations are equal
+by a change of variables in the whole-line integral. Thus the
+quadratic value is the sum of the forward correlations with
+the actual full weights $2\log(p)\chi_3(n)/\sqrt n$.
+The checker rounds both ends outward on the $10^{15}$ grid
+for the merged-cell operations. It computes the slow endpoint
+primitives with directed bounds for $\alpha-\omega$,
+and uses the exact translation identity when moving a cut.
+Signed midpoint numerator bounds are $(-1870,-1138)$.
+At the same rational midpoint, the slow contribution to this
+numerator lies in $(2540,3331)$. The computation that leaves
+out this contribution, while still accounting for fast
+terms, has quotient in $(-6.2,-5.8)$.
+It therefore fails even as a bound for the midpoint quotient.
+
+### Return from the midpoint and a direct form bound
+
+The exact dependence gives
+$\|q_\Lambda-q_{\Lambda_m}\|\le2.45|\Lambda-\Lambda_m|$
+by the preceding centered-shift bound on $u$.
+For the numerator use the original weighted Schur bound
+$$
+ \|T_P\|\le 577531/10000 .
+$$
+It applies to the bounded physical carrier by zero extension to
+the source interval of the exact 4096-row, 458-atom bound and
+restriction to $[-4,4]$.
+[Signed prime compression](WeilConductorThreeRadiusFourNeumannTail.lean#L259)
+Writing $d_q$ for $2.45$ times the half-width of the $\Lambda$ interval,
+the numerator changes by at most
+$(577531/10000)d_q(2\|q_{\Lambda_m}\|+d_q)$.
+The norm denominator is controlled by the same $d_q$.
+The exact rational guards give the stated quotient on the full
+$\Lambda$ interval with strictly positive denominator.
+
+For the direct form on $g_*$, keep the signed decomposition
+$R=A_0I-T_P+G_{\rm phys}$ of the preceding section, with
+$G_{\rm phys}$ the compression of its full angular comparison
+multiplier. That multiplier has absolute bound 251 everywhere:
+$\mathbf1_{\mathcal D}wA$ is in $[-2,61]$ and
+$|\mathbf1_{\mathcal D}wA-A_0|<40$, and the prime part
+has modulus at most 211. The previous on-band action and off-band
+norm on $g_0$ give $\|G_{\rm phys}g_0\|<0.186$.
+Its quadratic value there has absolute bound $0.00016$.
+If $d_g=0.01243$, the exact norm approximation therefore bounds
+the absolute gamma-mask quadratic value on $g_*$ by
+$$
+ 0.00016+2(0.186)d_g+251d_g^2 .
+$$
+The signed prime quadratic value on $g_*$ is at most its bound
+$-1.468(0.1875)^2$ on $g_0$ plus
+$(577531/10000)d_g(2(0.1886)+d_g)$. Combine these inequalities
+with the exact scalar $(B+A_0)\|g_*\|^2$ and
+$\|g_*\|>0.175$ to get the claimed quotient above $12.5$.
+Deleting the collar adds the positive operator $W_*^*W_*$,
+so the direct form bound holds on the same $g_*$ after that
+deletion.
+
+The physical approximation has its original interior jump.
+This calculation uses bounded forms on the physical carrier,
+and the original arithmetic stage retains its real odd compact
+$C^2$ admission and whole gamma term. The actual corrected
+quotient needs all seven eliminated inverse actions evaluated
+on the aligned direction. The all-support sign and the
+pole-inclusive global Weil return remain open.
+
+### Exact rational guards for the signed proxy quotient
+
+Append this block to the preceding proxy checker and its
+listed dependencies.
+
+```python
+# Signed Rayleigh quotient of the physical collar proxy.
+# The amplitude factor proxy_eta cancels. Evaluate at proxy_mid first.
+quotient_grid = 10**15
+point_zero = (0, 0)
+
+def integer_interval(interval):
+    lo, hi = interval
+    return (lo*quotient_grid // 1, -((-hi*quotient_grid) // 1))
+
+def iadd(x, y):
+    return (x[0]+y[0], x[1]+y[1])
+
+def ineg(x):
+    return (-x[1], -x[0])
+
+def isub(x, y):
+    return iadd(x, ineg(y))
+
+def imul(x, y):
+    values = (x[0]*y[0], x[0]*y[1], x[1]*y[0], x[1]*y[1])
+    return (min(values)//quotient_grid, -((-max(values))//quotient_grid))
+
+def rational_interval(interval):
+    return tuple(F(x, quotient_grid) for x in interval)
+
+# Reuse centered_cells' sine and cosine coefficients.
+column_y = divide_positive((1, 1), norm_orth)
+column_u = subtract(scale(-1, multiply(gram_overlap, column_y)), (proxy_mid, proxy_mid))
+removed_u = subtract(prime_mixed_orth, scale(proxy_mid, mean))
+removed_v = subtract(prime_diag_orth, scale(proxy_mid, prime_mixed_orth))
+coefficient_u = divide_positive(column_u, s_norm)
+coefficient_y = scale(F(1, 2), column_y)
+offset_u = divide_positive(
+    subtract(multiply(multiply(gram_overlap, column_y), removed_v), removed_u), s_norm)
+offset_y = scale(F(-1, 2), multiply(column_y, removed_v))
+positive_amplitudes = []
+for _, _, _, state in cell_data:
+    A = add(multiply(coefficient_u, state[0]), offset_u)
+    B = multiply(coefficient_u, state[1])
+    C = add(multiply(coefficient_y, state[2]), offset_y)
+    D = multiply(coefficient_y, state[3])
+    positive_amplitudes.append(tuple(map(integer_interval, (B, scale(-1, A), D, scale(-1, C)))))
+
+# The key (k,q) represents 4k+log(q) for exact rational q>0.
+cut_points = []
+prime_rows = []
+for p in range(2, 2981):
+    if p == 3 or any(p % d == 0 for d in range(2, isqrt(p)+1)):
+        continue
+    n = p
+    log_p = log_bounds(p)
+    while n <= 2980:
+        log_n = log_bounds(n)
+        if log_n[1] < 4:
+            cut_points.append(((1, F(1, n)), subtract(four, log_n)))
+        else:
+            assert log_n[0] > 4
+            cut_points.append(((-1, F(n)), subtract(log_n, four)))
+        root_floor = isqrt(n*source_grid**2)
+        weight = scale(1 if n % 3 == 1 else -1, (
+            2*log_p[0]*source_grid/(root_floor+1),
+            2*log_p[1]*source_grid/root_floor,
+        ))
+        prime_rows.append((n, log_n, integer_interval(weight)))
+        n *= p
+assert len(cut_points) == len(prime_rows) == 458
+cut_points.sort(key=lambda row: row[1][0])
+assert [row[1] for row in cut_points] == [row[0] for row in shift_events]
+positive_points = [((0, F(1)), zero)] + cut_points + [((1, F(1)), four)]
+inverse_difference = integer_interval(divide_positive((1, 1), xi_difference))
+positive_trig = [
+    tuple(map(integer_interval, phase_trig(multiply(xi_difference, x))))
+    for _, x in positive_points
+]
+whole_points = [
+    ((-k, 1/q), scale(-1, x), cosine, ineg(sine))
+    for ((k, q), x), (cosine, sine) in reversed(list(zip(positive_points, positive_trig))[1:])
+] + [
+    (key, x, cosine, sine)
+    for (key, x), (cosine, sine) in zip(positive_points, positive_trig)
+]
+full_amplitudes = [
+    (ineg(a), b, ineg(c), d) for a,b,c,d in reversed(positive_amplitudes)
+] + positive_amplitudes
+assert len(whole_points) == len(full_amplitudes)+1 == 919
+
+# For speed one point keeps its fixed-grid location and slow primitives.
+def fixed_point(key, time, cosine, sine):
+    return key, integer_interval(time), imul(inverse_difference, sine), imul(inverse_difference, ineg(cosine))
+
+fixed_points = [fixed_point(*point) for point in whole_points]
+
+def point_order(left, right):
+    if left[0] == right[0]:
+        return 0
+    if left[1][1] < right[1][0]:
+        return -1
+    assert right[1][1] < left[1][0], (left[0], right[0], left[1], right[1])
+    return 1
+
+def rotate(a, b, phase_cos, phase_sin):
+    return (isub(imul(a, phase_cos), imul(b, phase_sin)),
+            iadd(imul(a, phase_sin), imul(b, phase_cos)))
+
+def constant_and_slow(left, right):
+    a,b,c,d = left
+    e,f,g,h = right
+    constant = iadd(iadd(imul(a,e), imul(b,f)), iadd(imul(c,g), imul(d,h)))
+    cosine = iadd(iadd(imul(a,g), imul(b,h)), iadd(imul(c,e), imul(d,f)))
+    sine = iadd(isub(imul(a,h), imul(b,g)), isub(imul(d,e), imul(c,f)))
+    return constant, cosine, sine
+
+# Fast phases: four products, frequencies 2α, 2ω, α+ω, α+ω.
+# Bound their total per subinterval by the square of a common amplitude sum / (2ω).
+amplitude_sum = max(sum(max(abs(a), abs(b)) for a,b in row)
+                    for row in full_amplitudes)
+amplitude_sum = F(amplitude_sum, quotient_grid)
+fast_unit = amplitude_sum**2/(2*neighbor[0])
+quotient_numerator = point_zero
+unsigned_sum = 0
+merged_count = 0
+exact_coincidences = 0
+quotient_constant = point_zero
+for n, log_n, weight in prime_rows:
+    unsigned_sum += max(abs(w) for w in weight)
+    slow_c, slow_s = map(integer_interval, phase_trig(multiply(xi_difference, log_n)))
+    alpha_c, alpha_s = map(integer_interval, phase_trig(multiply(carrier, log_n)))
+    omega_c, omega_s = map(integer_interval, phase_trig(multiply(neighbor, log_n)))
+    moved_points = [
+        fixed_point((k, q/n), subtract(time, log_n), *rotate(cosine, sine, slow_c, ineg(slow_s)))
+        for (k, q), time, cosine, sine in whole_points
+    ]
+    moved_amplitudes = [
+        rotate(a,b,alpha_c,alpha_s)+rotate(c,d,omega_c,omega_s)
+        for a,b,c,d in full_amplitudes
+    ]
+    left_cell, right_cell = 0, 0
+    contribution = point_zero
+    constant_contribution = point_zero
+    overlap_count = 0
+    while left_cell < len(full_amplitudes) and right_cell < len(full_amplitudes):
+        start_a, end_a = fixed_points[left_cell:left_cell+2]
+        start_b, end_b = moved_points[right_cell:right_cell+2]
+        start = start_a if point_order(start_a, start_b) >= 0 else start_b
+        order = point_order(end_a, end_b)
+        end = end_a if order <= 0 else end_b
+        if point_order(start, end) < 0:
+            base, slow_cosine, slow_sine = constant_and_slow(
+                full_amplitudes[left_cell], moved_amplitudes[right_cell])
+            ordinary = imul(base, isub(end[1], start[1]))
+            slow = iadd(imul(slow_cosine, isub(end[2], start[2])),
+                        imul(slow_sine, isub(end[3], start[3])))
+            constant_contribution = iadd(constant_contribution, ordinary)
+            contribution = iadd(contribution, iadd(ordinary, slow))
+            overlap_count += 1
+        if order <= 0:
+            left_cell += 1
+        if order >= 0:
+            right_cell += 1
+        if order == 0:
+            exact_coincidences += 1
+    assert overlap_count > 0
+    merged_count += overlap_count
+    # Product-to-sum coefficients above are twice the original integrand.
+    numerator_part = add(scale(F(1, 2), rational_interval(contribution)),
+                         (-overlap_count*fast_unit, overlap_count*fast_unit))
+    constant_part = add(scale(F(1, 2), rational_interval(constant_contribution)),
+                        (-overlap_count*fast_unit, overlap_count*fast_unit))
+    quotient_numerator = iadd(quotient_numerator, imul(weight, integer_interval(numerator_part)))
+    quotient_constant = iadd(quotient_constant, imul(weight, integer_interval(constant_part)))
+assert F(unsigned_sum, quotient_grid) < 211
+assert merged_count == 213970 and exact_coincidences == 624
+
+# Transport both the exact numerator and its positive denominator to true Λ.
+quotient_displacement = F('2.45')*proxy_radius
+signed_operator_bound = F(577531, 10000)
+quotient_change = signed_operator_bound*quotient_displacement*(2*mid_norm[1]+quotient_displacement)
+assert quotient_change < 60
+quotient_norm = add(mid_norm, (-quotient_displacement, quotient_displacement))
+quotient_numerator_true = add(rational_interval(quotient_numerator),
+                             (-quotient_change, quotient_change))
+sign_quotient = divide_positive(quotient_numerator_true, square(quotient_norm))
+assert_inside(rational_interval(quotient_numerator), '-1870', '-1138')
+assert_inside(rational_interval(quotient_constant), '-4470', '-4409')
+assert_inside(rational_interval(isub(quotient_numerator, quotient_constant)), '2540', '3331')
+omitted_slow_quotient = divide_positive(rational_interval(quotient_constant), square(mid_norm))
+assert_inside(omitted_slow_quotient, '-6.2', '-5.8')
+assert_inside(sign_quotient, '-2.651', '-1.468')
+print("PASS 458 signed lags, 213970 nonempty merged cells and 624 exact merge ties")
+print("PASS midpoint slow contribution in (2540, 3331), omitted-slow quotient in (-6.2, -5.8)")
+print("PASS directed signed physical proxy quotient in (-2.651, -1.468)")
+
+# Actual direct form on g_* before all inverse corrections.
+proxy_g_action = 251*proxy_tail+inside_action*shift_coeff_sum
+assert proxy_g_action < F('.186')
+signed_error = signed_operator_bound*proxy_error*(2*F('.1886')+proxy_error)
+gamma_form_error = (F('.00016')+2*proxy_g_action*proxy_error
+                    +251*proxy_error**2)
+direct_price = signed_error+gamma_form_error-F('1.468')*F('.1875')**2
+assert 0 < direct_price
+assert budget+gamma_center-direct_price/F('.175')**2 > F('12.5')
+print("PASS actual direct radius-four form on the transported direction > 12.5 times energy")
+```
