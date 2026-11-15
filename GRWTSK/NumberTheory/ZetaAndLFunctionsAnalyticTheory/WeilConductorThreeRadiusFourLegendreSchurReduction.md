@@ -422,3 +422,285 @@ positive signed balance on a specified high-frequency band and
 uses the full original atoms. It leaves the sign on the rest of
 $G_0$, the radius-four stage and the global RH and primitive
 Dirichlet GRH returns open, including the conductor-one pole terms.
+
+## A lower-frequency direction after eliminating the positive sector
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof with
+the exact finite arithmetic below. Lean elaboration, fresh kernel
+replay and transitive axiom audit are NOT_RUN. Independent review is
+UNASSESSED.
+
+Keep the original radius-four sources and bounded physical domains
+above. Set $Y_0=\Pi_{G_0}Y$ for the previously paid sector, and write
+$G_1=G_0\cap Y_0^\perp$. Let
+$$
+A_Y=\Pi_{Y_0} C_0|_{Y_0},\qquad J_Y=\Pi_{Y_0}C_0|_{G_1},\qquad
+C_1=\Pi_{G_1} C_0|_{G_1}-J_Y^* A_Y^{-1}J_Y .
+$$
+The actual $A_Y$ is bounded below by $I/4$. Thus $\|A_Y^{-1}\|\le4$,
+and square completion on $G_1\oplus Y_0$ makes $C_1\ge0$ equivalent to
+$C_0\ge0$. Define
+$$
+j=2\cdot10^{25},\qquad q=\frac{j}{j+1},\qquad
+g=\psi_j+q\psi_{j+1},\qquad b=(I-\Pi_{Y_0})\Pi_{G_0}g.
+$$
+The input $g$ is real odd and has the same endpoint cancellation
+and finite full gamma energy as above. The projection $b$ belongs
+to the bounded physical space $G_1$. We prove that $b\ne0$ and
+$$
+\frac{121}{10}<\frac{\langle b,C_1 b\rangle}{E(b)}<107 .
+$$
+
+### Physical overlap at all original prime-power lags
+
+Use the physical comparison vector
+$f=\psi_j+\psi_{j+1}=\cos(\alpha t)\sin(\nu t)$ on $[-4,4]$,
+zero outside, where $\alpha=\pi/8$ and $\nu=(2j+1)\pi/8$.
+Here $E(f)=2$, $E(g)=1+q^2$, and $\|f-g\|=1/(j+1)$.
+The prime form is bounded on the physical $L^2$ carrier,
+which suffices for this use of $f$.
+
+For $0\le r\le8$, the actual whole-line correlation of $f$
+integrates over $I_r=[-4,4-r]$. Let
+$c_r(t)=\cos(\alpha t)\cos(\alpha(t+r))$. Product-to-sum gives
+$$
+C_f(r)=\frac12\cos(\nu r)\int_{I_r}c_r(t)\,dt
+ -\frac12\int_{I_r}c_r(t)\cos(2\nu t+\nu r)\,dt .
+$$
+The endpoint products vanish and $\int_{I_r}|c'_r|\le16\alpha$,
+so integration by parts in the second integral costs at most
+$2\alpha/\nu<1/j$ after multiplying by $1/2$ and dividing by
+$E(f)=2$. Also
+$0\le c_r(t)\le\alpha^2(t+4)(4-r-t)$, by $\sin x\le x$ on the
+two endpoint distances. Its integral is at most
+$\alpha^2(8-r)^3/6$. With the original correlation
+Cauchy–Schwarz bound and $\pi^2<10$, this proves
+$$
+\frac{|C_f(r)|}{E(f)}
+ \le \min\left(1,\frac5{768}(8-r)^3\right)+\frac1j .
+$$
+The correlation is zero for $r\ge8$. This covers the full actual
+active set.
+
+For each native $n=p^e\le2980$ with $p\ne3$, let $a$ be the
+integer with $2^a\le n<2^{a+1}$. Put $\ell_a=693a/1000$ and
+$s_a=2^{\lfloor a/2\rfloor}(7/5)^{a\bmod2}$. Then
+$\log n>\ell_a$, $\sqrt n\ge s_a$, and
+$\log p<7(a+1)/(10e)$. These use $693/1000<\log2<7/10$,
+by the positive atanh series and the exponential sum through degree
+three at $7/10$, and $\sqrt2>7/5$. The exact sum of the upper prices
+$$
+\sum_{n=p^e\le2980,\ p\ne3}
+  \frac{14(a+1)}{10e s_a}
+         \min\left(1,\frac5{768}(8-\ell_a)^3\right)
+ =\frac{19189515873984109}{425779200000000}
+$$
+follows from the integer enumeration below. This bounds the main
+physical overlap for all 458 original signed Fourier coefficients
+by their absolute contributions. The additional $1/j$ price uses
+the original sum of absolute Fourier coefficients $<211$.
+The finite cutoff, sign and factor of two are those of the exact
+Plancherel return
+$\int P_4|\widehat f|^2\,d\xi/(2\pi)
+=2\sum \log(p)\chi_3(p^e)\operatorname{Re}C_f(\log(p^e))/\sqrt{p^e}$.
+[Native inventory](WeilConductorThreeRadiusFourInventory.lean)
+· [Absolute coefficient bound](WeilConductorThreeRadiusFourLowFilter.lean#L224)
+
+Passing from $f$ to $g$ costs at most
+$211(\|f\|+\|g\|)\|f-g\|<844/(j+1)$ in the full physical prime
+quadratic form. Also $E(f)/E(g)\le 1+2/j$ and $E(g)\ge1$.
+Hence the original signed integral satisfies
+$$
+\left|\int_{\mathbb R}P_4|\widehat g|^2\,\frac{d\xi}{2\pi}\right|
+ < \frac{451}{10} E(g).
+$$
+
+### Return from the exact band to the bounded residual form
+
+Let $I_\ell$ be the two intervals of radius $H_\ell=10^{16}$
+centered at $\pm\omega_j$, where $\omega_j=\pi\cdot10^{25}/2$.
+Their absolute frequencies lie between $1.49\cdot10^{25}$ and
+$1.6\cdot10^{25}$ and hence in the original residual set
+$\mathcal D$ and the range of the inherited high pass law.
+They are disjoint from the previous high sector bands.
+The same trace cancellation tail estimate above applied with
+two modes gives the full off-band mass $\le\theta E(g)$, where
+$\theta=8(2/H_\ell)^3=(8\cdot10^{-24})^2$.
+
+The original $\log(3/\pi)+\operatorname{Re}\psi(3/4+i\xi/2)$
+term, denoted $A(\xi)$ above, obeys $A>2857/50$ on $I_\ell$.
+Indeed $\log10>23/10$ as above and $\log(149/100)>98/249$
+by the first positive atanh term. The Binet lower bound
+$A\ge\log|\xi|-3/4$ gives the result. The original filters give
+$1-w\le \eta=3\cdot10^{-10}$ on $I_\ell$ with their real all-lobe
+bounds. The original bounds $A\ge-2$ globally, $A<61$ on $\mathcal D$,
+and $|P_4|<211$ bound the full complement and mask error.
+[Gamma and high pass](WeilConductorThreeRadiusFourMiddleReturn.lean#L105)
+· [Low stop](WeilConductorThreeRadiusFourLowFilter.lean#L112)
+
+Thus the reference full physical prime integral may be returned
+to the actual bounded signed $R$ at cost at most
+$211(\theta+\eta)E(g)$. Writing $p=451/10$ yields
+$$
+\begin{aligned}
+\langle g,Rg\rangle/E(g)
+&\ge (2857/50)(1-\theta)(1-\eta)-2\theta-p-211(\theta+\eta),\\
+\langle g,Rg\rangle/E(g)
+&\le61+p+211(\theta+\eta).
+\end{aligned}
+$$
+
+### Exact orthogonality return and the four mixed prices
+
+Write $\delta=10^{-272}$. The two lower native sine modes are
+orthogonal to $E_s$ and have centers below $\Omega$.
+The earlier polynomial approximation and the same $U,W$
+projection argument give $\|\Pi_{G_0}g-g\|<3\delta\|g\|$.
+Every $a\in Y_0$ has a unique preimage $h\in Y$ with
+$\|a-h\|<3\delta\|h\|$ and $\|h\|\le\|a\|/(1-3\delta)$.
+Because $g$ and $h$ use disjoint native sine indices, for unit
+$a=\Pi_{G_0}h$,
+$$
+|\langle a,\Pi_{G_0}g\rangle|
+=|\langle(I-\Pi_{G_0})h,(I-\Pi_{G_0})g\rangle|
+<\frac{9\delta^2}{1-3\delta}\|g\| .
+$$
+Thus $\|b-g\|<4\delta\|g\|$. In particular
+$(1-4\delta)\|g\|<\|b\|\le\|g\|$.
+
+For $m\le N_s$ the exact sine transform gives
+$|\widehat\psi_m(\xi)|<6\cdot10^{-43}$ on $I_\ell$, using
+$\omega_m<3\cdot10^7$, $|\xi|>10^{25}$ and
+$|\xi^2-\omega_m^2|>\xi^2/2$. The sum of squared
+restriction norms over $E_s$ gives
+$\|1_{I_\ell}K|_{E_s}\|<4\cdot10^{-31}$, using angular measure
+$2H_\ell/\pi<H_\ell$. Split the bounded multiplier $w s_4$
+at $I_\ell$, use its bound $300$, and use the lower off-band tail.
+The raw mixed norm onto $E_s$ is below
+$300(4\cdot10^{-31}+8\cdot10^{-24})\|g\|$.
+For $U$, the old preimage $x\in X\subset E_s$ of a unit $u$
+obeys $\|x\|\le10/9$, $\|x-u\|\le10^{-60}\|x\|$.
+After transferring $g$ to $b$, both $\|PRb\|$ and
+$\|\Pi_U Rb\|$ are below $4\cdot10^{-21}\|g\|$.
+The actual first correction costs at most $10\|PRb\|^2$.
+The second mixed term $Jb=\Pi_Z Sb$ obeys
+$$
+\|Jb\|
+\le \|\Pi_U Rb\|+3000\|PRb\|+741\cdot10^{-265}\|b\|
+< 13\cdot10^{-18}\|g\|.
+$$
+Here the last term uses $W\subset V_0^\perp$ and the exact
+representation of $S$ on $Q\mathcal H$. The second correction
+costs at most $(25/2)\|Jb\|^2$, and the $L_0$ correction in $C_0$
+costs at most $10^{-515} E(b)$.
+
+To bound the new mixed term, let $a\in Y_0$ be unit with preimage
+$h\in Y$. On $I_\ell$ the distance to the high carrier exceeds
+$10^{25}$. The pointwise tail above for the high $d=10^{17}$
+packet gives
+$|\widehat h|\le6d^{3/2}(10^{25})^{-2}\|h\|
+<6\cdot10^{-24}\|h\|$. Since the lower band's measure is less than
+$10^{16}$, $\|1_{I_\ell}Kh\|<6\cdot10^{-16}\|h\|$.
+Split the mixed term of $R$ at that same band and add the
+projection costs. This gives
+$$
+|\langle a,Rb\rangle|
+ < \frac{300(6\cdot10^{-16}+8\cdot10^{-24})+2100\delta}
+          {1-3\delta}\|g\|.
+$$
+The actual old $P_{23}$ and $Z$ mixed corrections contribute
+at most $10\|PRa\|\|PRb\|$ and $(25/2)\|Ja\|\|Jb\|$,
+respectively, with $\|PRa\|<3\cdot10^{-6}$ and
+$\|Ja\|<1/159$ by the already proved high bounds. The scalar
+$B$ cancels since $a\perp b$. The $L_0$ correction has full
+operator norm at most $10^{-515}$. Consequently
+$$
+\|J_Y b\| < 3\cdot10^{-13}\|g\|,\qquad
+\langle J_Yb,A_Y^{-1}J_Yb\rangle<4(3\cdot10^{-13})^2 E(g).
+$$
+
+Since $\|R\|<300$, the projection costs at most
+$2400\delta E(g)$ in the diagonal. The signed diagonal
+bounds give $\langle b,Rb\rangle>(1203/100)E(g)$.
+Adding $B E(b)$ and subtracting the four quantified inverse
+prices yields the lower endpoint $121/10$ on division by
+$E(b)$. For the upper endpoint, each inverse term is
+subtracted and the residual upper bound transfers with
+$E(g)/E(b)<(1-4\delta)^{-2}$. This yields the stated upper bound.
+
+### Exact arithmetic and remaining sign
+
+The following check enumerates the native integers and verifies
+the displayed numerical inequalities. It uses trial division
+through the integer square root and repeated multiplication for
+the powers. Its scope is finite integer and rational arithmetic.
+
+```python
+from fractions import Fraction as F
+from math import isqrt
+
+limit = 2980
+counts = [0] * 11
+prime_envelope = F(0)
+for prime in range(2, limit + 1):
+    if prime == 3 or any(prime % factor == 0
+                         for factor in range(2, isqrt(prime) + 1)):
+        continue
+    n, exponent = prime, 1
+    while n <= limit:
+        bin_index = n.bit_length() - 1
+        counts[bin_index - 1] += 1
+        lag_lower = F(693 * bin_index, 1000)
+        root_lower = 2 ** (bin_index // 2) * F(7, 5) ** (bin_index % 2)
+        weight_upper = F(14 * (bin_index + 1), 10 * exponent) / root_lower
+        prime_envelope += weight_upper * min(1, F(5, 768) * (8 - lag_lower)**3)
+        n *= prime
+        exponent += 1
+
+assert counts == [1, 3, 3, 7, 9, 16, 25, 47, 80, 142, 125]
+assert sum(counts) == 458
+assert prime_envelope == F(19189515873984109, 425779200000000)
+carrier = 2 * 10**25
+prime_price = F(451, 10)
+assert (prime_envelope + F(211, carrier)) * (1 + F(2, carrier)) \
+       + F(844, carrier) < prime_price
+ln2_lower = sum(F(2, (2 * r + 1) * 3**(2 * r + 1)) for r in range(4))
+assert ln2_lower > F(693, 1000) and 3 * ln2_lower + F(2, 9) > F(23, 10)
+assert sum(F(7, 10)**r / [1, 1, 2, 6][r] for r in range(4)) > 2
+assert 25 * F(23, 10) + F(98, 249) - F(3, 4) > F(2857, 50)
+assert (F(22, 7) / 2 * 10**25 + 10**16) < F(16, 10) * 10**25
+assert (F(3, 2) * 10**25 - 10**16) > F(149, 100) * 10**25
+
+theta = 8 * F(2, 10**16)**3
+eta, delta = F(3, 10**10), F(1, 10**272)
+budget = F(124997987, 10**9)
+small = F(4, 10**21)
+paid = F(13, 10**18)
+mix = F(3, 10**13)
+assert theta == F(8, 10**24)**2
+assert 10**16 * 38170000 * F(6, 10**43)**2 < F(4, 10**31)**2
+raw_low = 300 * (F(4, 10**31) + F(8, 10**24))
+assert F(10, 9) * (raw_low + 300 * F(1, 10**60)) + 1200 * delta < small
+assert 3001 * small + F(741, 10**265) < paid
+assert 10**16 * F(6, 10**24)**2 == F(6, 10**16)**2
+raw_mixed = (300 * (F(6, 10**16) + F(8, 10**24)) + 2100 * delta) / (1 - 3 * delta)
+assert raw_mixed + 10 * F(3, 10**6) * small + F(25, 2 * 159) * paid \
+       + F(1, 10**515) < mix
+
+mask_price = 211 * (theta + eta)
+r_lower = F(2857, 50) * (1-theta) * (1-eta) - 2*theta - prime_price - mask_price
+assert r_lower - 2400 * delta > F(1203, 100)
+assert budget + F(1203, 100) - 10 * small**2 - F(25, 2) * paid**2 \
+       - F(1, 10**515) - 4 * mix**2 > F(121, 10)
+assert budget + (61 + prime_price + mask_price + 2400*delta) / (1-4*delta)**2 < 107
+print("PASS 458 native atoms and lower-band Schur guards")
+```
+
+The overlap improves the diagonal estimate on this adjacent pair.
+The earlier high-sector argument remains the uniform bound on that
+sector. The old projected large-weight witness and prime-419 cutoff
+example remain applicable to their original premises. The sign on
+all of $G_1$, the radius-four stage, and the original RH and
+primitive Dirichlet GRH returns remain open. In particular the
+conductor-one argument retains both pole terms and the completed
+zero divisor with multiplicities.
