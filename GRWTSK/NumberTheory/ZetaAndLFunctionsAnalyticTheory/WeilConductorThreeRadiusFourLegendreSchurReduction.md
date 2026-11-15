@@ -11291,3 +11291,374 @@ assert far<F("8e-7")
 assert max(F(".724"),F(".953"))+far<F(".954")
 print("PASS full fourth component diagonal below .46 and four-row norm below .954")
 ~~~
+
+## Uniform coupling for separated signed allocation groups
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic
+proof with exact rational checks on the original signed source.
+Lean elaboration, kernel replay and transitive axiom audit are
+NOT_RUN. External independent review is UNASSESSED.
+
+Work in the original odd physical Hilbert space
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$.
+Let a finite family of positive group centers $c_i$ have
+$|c_i-c_j|\ge\Delta$ for $i\ne j$ and $2\min_i c_i\ge\Delta$.
+For each group let $G_i=L^2(\mu_i)$ for its actual folded negative
+measure, with the angular measure $d\nu/\pi$ on the positive half.
+An index in $G_i$ can also belong to a tagged disjoint union of
+several negative rows. Let the real signed residual measure
+$\theta_{i,e}$ for a row $e$ be supported in
+$[c_i-R,c_i+R]$ for $R\le\Delta/4$, and suppose that the bounded
+continuous frequency integrals of the measure are measurable in $e$.
+Suppose the separate uniform bounds
+$$
+ \left(\int \|\theta_{i,e}\|_{\rm TV}^2\,d\mu_i(e)\right)^{1/2}\le T,
+ \qquad
+ \max_{\tau=\pm1}
+ \left(\int\left|\int e^{4i\tau\nu}d\theta_{i,e}(\nu)\right|^2
+             d\mu_i(e)\right)^{1/2}\le D
+$$
+hold in each group. The physical residual vector is
+$r_{i,e}(t)=\int\sin(\nu t)\,d\theta_{i,e}(\nu)$.
+Its off-group Gram operator, with kernel
+$\langle r_{j,f},r_{i,e}\rangle_{\rm phys}/\beta$
+between distinct groups, has norm at most
+$$
+ \frac1\beta\left(\frac{32D^2}{5\Delta}
+                 +\frac{16R T^2}{\Delta^2}\right).
+$$
+The same bound with $D=T$ requires only total variation. The statement
+concerns the physical residual coupling. In the original comparison it
+controls the entire off-group block when each group uses its own
+positive resource space in a direct sum. The allocations can be
+disjoint or can be measures whose sum is dominated by the actual
+folded positive measure. In either case the original positive
+energy bounds the sum of the squared resource inputs.
+
+### Cauchy matrix bound with reflected centers
+
+For any $\Delta$-separated signed real centers $x_j$, let $C$ have
+entries $1/(x_j-x_k)$ off its diagonal and zero diagonal.
+Set $\ell=2\Delta/3$, and compress the operator with kernel
+$h_\varepsilon(x)=x/(x^2+\varepsilon^2)$ to the orthonormal indicators
+of intervals $x_j+[-\ell/2,\ell/2]$.
+With Fourier transform $\int e^{-ix\xi}f(x)dx$, the convolution
+multiplier is $-i\pi\,\operatorname{sgn}\xi\,e^{-\varepsilon|\xi|}$.
+For the compression this follows by Fourier inversion of the
+integrable multiplier and Fubini on the indicator intervals, using $\int_0^\infty e^{-\varepsilon\xi}\sin(x\xi)d\xi
+=x/(x^2+\varepsilon^2)$.
+Thus the compression norm is at most $\pi$.
+The diagonal compressed entries vanish by exchanging the two
+integration variables. The off-diagonal entries converge, by bounded
+convergence on separated intervals, to $\ell$ times the average
+$E(1/(d+U-V))$, with $d=x_j-x_k$ and independent uniform
+$U,V\in[-\ell/2,\ell/2]$.
+The averaged matrix therefore has norm at most $3\pi/(2\Delta)$.
+
+Write $z=U-V$. Use
+$1/(d+z)=1/d-z/d^2+z^2/(d^2(d+z))$, $Ez=0$,
+$Ez^2=\ell^2/6$, and $|d+z|\ge |d|/3$. The deviation of the
+average from $1/d$ is at most $\ell^2/(2|d|^3)$.
+Any row has at most the two ordered distances $k\Delta$ per
+rank $k$, so its sum of $|d|^{-3}$ is at most
+$2(1+\int_1^\infty t^{-3}dt)/\Delta^3=3/\Delta^3$.
+The absolute row and column bounds yield an error norm at most
+$2/(3\Delta)$. Consequently $\|C\|\le(3\pi/2+2/3)/\Delta$.
+
+Use all centers $x_{i,\sigma}=\sigma c_i$ for $\sigma=\pm1$.
+Delete the Cauchy entries connecting $+c_i$ to $-c_i$ in the
+same original group. The deleted matrix is a direct sum of
+two-by-two skew matrices, with norm $\max_i 1/(2c_i)\le1/\Delta$.
+The resulting matrix $C^\circ$ therefore has
+$\|C^\circ\|\le(3\pi/2+5/3)/\Delta<32/(5\Delta)$.
+
+### The two signs and the physical Gram
+
+The sine Gram identity on the original physical interval is
+$$
+ \langle \sin(\nu t),\sin(\eta t)\rangle_{\rm phys}
+ =
+ \frac{\sin(4(\nu-\eta))}{\nu-\eta}
+ -
+ \frac{\sin(4(\nu+\eta))}{\nu+\eta}.
+$$
+Duplicate each $G_i$ into two signed copies and reflect each
+$\theta_{i,e}$ in its negative copy. In this enlarged space retain
+only entries between different original groups. Compress the
+kernel $\sin(4(\nu-\eta))/(\nu-\eta)$ by the isometry
+$(Jg)_{i,+}=g_i/\sqrt2,\ (Jg)_{i,-}=-g_i/\sqrt2$.
+The compression equals precisely the physical sine Gram above.
+There is no extra factor from the reflected signs.
+
+Freeze the denominator at $d=x_{i,\sigma}-x_{j,\sigma'}$
+on this signed space. Each numerator is the difference of
+$e^{4i\nu}e^{-4i\eta}$ and $e^{-4i\nu}e^{4i\eta}$
+divided by $2i$. The phase moment operators from the signed
+sum of $G_i$'s to the finite center coefficient space have norms
+at most $D$ by rowwise Cauchy–Schwarz. The frozen Gram thus has norm
+at most $D^2\|C^\circ\|$. Reflection exchanges and conjugates
+the two phases, preserving the assumed bounds.
+
+For the remainder, $|(\nu-\eta)-d|\le2R$ and
+$$
+ \left|\frac1{\nu-\eta}-\frac1d\right|
+ \le \frac{2R}{|d|(|d|-2R)}\le\frac{4R}{|d|^2}.
+$$
+The norm of this error on each block is at most
+$4RT^2/|d|^2$, by domination by the product of the two row total
+variations followed by Cauchy–Schwarz. The absolute row and column
+norm sums on the signed centers are bounded by
+$16RT^2/\Delta^2$, using
+$2\sum_{k\ge1}k^{-2}\le4$.
+The stated bound follows by triangle inequality, compression and
+division by $\beta$.
+
+### Exact endpoint-moment check with the source polynomial allocation
+
+For an existing degree-32 allocation supported in
+$|\nu-c|\le2$, use the source's real coefficients $a_k(s)$
+of the cosine and sine Taylor envelopes, negative upper
+moment matrix $M$, positive allocated moment matrix $P$,
+rational reconstruction $Z$, and $V=I-PZ$.
+At $t=4$, $P_k(t/4)=1$. Remove the carrier phase
+$e^{4ic}$, which is unimodular. The complex endpoint moment of the
+residual measure is approximated by
+$$
+ (u_{\rm even}^{\mathsf T}+i u_{\rm odd}^{\mathsf T})Va(e),
+$$
+where $u_{\rm even},u_{\rm odd}$ select the appropriate parities.
+An exact upper bound for the squared folded norm of the polynomial
+term is
+$$
+ u_{\rm even}^{\mathsf T}VMV^{\mathsf T}u_{\rm even}
+ +
+ u_{\rm odd}^{\mathsf T}VMV^{\mathsf T}u_{\rm odd}.
+$$
+Add the scalar Taylor error in norm by triangle inequality.
+The error is at most $T\,8^{33}/33!$ since the residual measure
+integration preserves the total-variation bound on its support.
+The negative phase is conjugate to the positive phase because
+the source residual measures are real. All quantities are bounded
+by exact rational operations and comparisons apart from the
+harmless unit carrier phase.
+
+### Countable allocations and the currently paid groups
+
+The finite bound is uniform over finite subsets of centers.
+For a countable family with the same hypotheses, its off-group
+form is therefore bounded on finitely supported vectors and
+extends uniquely to the Hilbert direct sum. If every within-group
+majorant has norm at most $a$, the finite Gram bound for the
+joint comparison is at most $a$ plus the displayed coupling bound.
+For the source application, take the genuine folded negative measures
+of pairwise disjoint portions of the negative support. Each
+finite input factorization uses $\sqrt\beta f$ and its allocated
+positive inputs, whose squared norms sum to at most
+$\langle f,S_\lambda f\rangle$. A positive energy allocation
+may be split across overlapping bands provided its total
+measure is dominated by the actual folded positive measure.
+Taking the supremum over finite subsets gives the same
+comparison bound for the full countable family. If those
+portions cover the actual negative support almost everywhere
+and the comparison cap is below one, this supplies the
+remaining operator sign for the original radius-four stage.
+That implication uses the original seven leading inverses
+and directional arithmetic return stated above.
+
+For the selected first, second and fourth rows, the exact
+phase-cost check gives $D_i<0.2$ on each sign. For the
+third row, use its existing endpoint envelope at $t=4$.
+The real part after removing $e^{4ic_3}$ is
+$\cos(4\eta)-1.14q(4)$ and has absolute value below $0.57$,
+using its alternating lower bound for $q(4)$ and
+$|\eta|\le0.13$. Its imaginary part is
+$\sin(4\eta)-4\eta p(4)$. Since $\sin(4s)$ is increasing
+for $4s\in[0.96,1.4]$, one has $0.81<p(4)\le1$ by the
+cubic sine lower bound at $0.96$. With $|4\eta|\le0.52$,
+the imaginary part is bounded by $0.52(1-0.81)+0.52^3/6<0.123$.
+The folded negative mass bound $0.28042$ gives $D_3<0.31$.
+
+Use separate groups at $c_1,c_4$ and one group with rows two
+and three centered at $c_2-1.95$. The coefficient support of
+the latter lies within radius $4$, including the existing
+positive bands and both negative enclosures on the positive
+axis. The reflected centers have separation at least $5300$.
+The aggregate phase bound for rows two and three is
+$\sqrt{0.2^2+0.31^2}<0.37$ and the aggregate residual
+total-variation bound is below $\sqrt{9^2+2.66^2}<11$.
+The single first and fourth groups also satisfy these
+common bounds. Thus for $\Delta=5300$, $R=4$, $D=0.37$,
+$T=11$ and $\beta>0.12$ the exact scalar coupling price
+is below $0.0037$. Any family with the same proved bounds,
+disjoint negative portions, admissible positive allocations
+and all within-group caps at most $0.953$ has joint
+comparison norm below $0.957$. For the currently selected
+four components the previous direct bound $0.954$ is sharper.
+
+### Two exact failures of uniform geometric coverage
+
+At $c_5=c_1+20381=99674063.92983$ the directed original
+signed arithmetic proves $-m>5.5$ on its reflected
+radius-$0.02$ core. This uses the literal $458$ terms,
+$0.005$ cells, the original low filter and mask exclusions,
+and the full Binet bracket $17.6781<A<17.6782$.
+At $c_1$ and $c_1+73.5=99653756.42983$, the same signed
+arithmetic and full $17.67<A<17.69$ bracket give
+$-m>16$ and $-m>3.4$, respectively.
+
+Two negative points separated by $d>2R$ require different
+radius-$R$ groups. Their two covering centers can be at
+distance at most $d+2R$. Thus $c_1,c_5$ falsify the
+radius-$3000$ and separation-$320000$ cover because
+$20381>6000$ but $26381<320000$. The negative points
+$c_1,c_1+73.5$ likewise falsify the radius-$4$ and
+separation-$5300$ cover because $73.5>8$ but $81.5<5300$.
+Both obstructions hold for coverage almost everywhere.
+By strict negativity and continuity choose sufficiently
+small open intervals about the two points so that both
+geometric inequalities hold for any points from the two
+intervals. The result leaves the conditional coupling
+bound available for admissible groups and the construction
+of a full signed allocation open.
+
+Extract the guard below and run it on this complete source
+with each of the four selectors first, second, fourth and
+geometry. The row selectors use the corresponding published
+signed cells and moment matrices. The geometry selector
+checks both actual-source negative point tests and the exact
+scalar and third-row phase bounds.
+
+~~~python
+from fractions import Fraction as F
+from math import factorial
+from pathlib import Path
+import re
+import sys
+
+checking_source = Path(sys.argv[1]).read_text()
+source_blocks = re.findall(r"^~~~python\n(.*?)^~~~$", checking_source, re.M | re.S)
+mode = sys.argv[2]
+
+def check_phase(label, marker, tv):
+    chosen = [block for block in source_blocks
+              if any(line.startswith(marker) for line in block.splitlines())]
+    assert len(chosen) == 1
+    scope = {}
+    exec(compile(chosen[0], f"published {label} guard", "exec"), scope)
+    n, V, M = (scope[name] for name in ("n", "V", "M"))
+    phase_even = [sum(V[k][j] for k in range(0,n,2)) for j in range(n)]
+    phase_odd = [sum(V[k][j] for k in range(1,n,2)) for j in range(n)]
+    phase_cost = sum(
+        M[i][j]*(phase_even[i]*phase_even[j]+phase_odd[i]*phase_odd[j])
+        for i in range(n) for j in range(n)
+    )
+    phase_error = F(8)**33/factorial(33)*tv
+    assert 0<=phase_error<F(".2")
+    assert 0<=phase_cost<(F(".2")-phase_error)**2
+    print(f"PASS checked row {label} endpoint phase L2 norm below .2 on both signs")
+
+if mode == "first":
+    check_phase("first", 'print("PASS full first component diagonal below .65', F(11))
+elif mode == "second":
+    check_phase("second", "print('PASS exact majorant costs: J2 total <.52", F(9))
+elif mode == "fourth":
+    check_phase("fourth", 'print("PASS full fourth component diagonal below .46', F("4.2"))
+elif mode != "geometry":
+    raise ValueError("expected first, second, fourth or geometry")
+
+if mode != "geometry":
+    sys.exit(0)
+
+# The analytical Cauchy constant and original group geometry.
+R,delta,T,D=F(4),F(5300),F(11),F(".37")
+assert 3*F(22,7)/2+F(5,3)<F(32,5)
+assert 4*R<=delta
+assert F("5313.55")>delta
+assert F("3.99e9")-2*F("1e8")>delta
+assert F("9.9e7")*2>delta
+assert F(".124890887")>F(".12")
+assert 11**2<=T**2 and F("4.2")**2<T**2
+
+# Third exact envelope, evaluated at t=4 using q_L(4).
+a,b=F(".24"),F(".35")
+moments=[(b**(2*j+1)-a**(2*j+1))/((2*j+1)*(b-a)) for j in range(4)]
+q_lower=sum((-1)**j*moments[j]*4**(2*j)/factorial(2*j) for j in range(4))
+assert q_lower==F(464793126209,1230468750000)
+assert 1-F("1.14")*q_lower<F(".57")
+assert 1-F(".52")**2/2-F("1.14")>-F(".57")
+assert F(".96")-F(".96")**3/6>F(".81")
+assert 4*a==F(".96") and 4*b<F("1.5")
+assert F(".52")*(1-F(".81"))+F(".52")**3/6<F(".123")
+assert F(".28042")*(F(".57")**2+F(".123")**2)<F(".31")**2
+assert F(".2")**2+F(".31")**2<D**2
+assert 9**2+F("2.66")**2<T**2
+offset=F("-1.95")
+for value in (F(-2),F(2),F("-5.55")-b,F("-5.55")+b):
+    assert abs(value-offset)<R
+far=(F(32,5)*D**2/delta+16*R*T**2/delta**2)/F(".12")
+assert far<F(".0037")
+assert F(".953")+far<F(".957")
+
+# Reuse the original directed arithmetic for actual negative points.
+prior=[block for block in source_blocks if block.startswith("from fractions import Fraction")
+       and "PASS actual seven-inverse localized correction" in block]
+pivot='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(pivot)==1
+exec(compile(prior[0].split(pivot)[0], "source signed arithmetic", "exec"))
+c1=F("99653682.92983")
+c2=scale(F(5085348195,4),(pi_lower,pi_upper))
+c4=c1+F("5313.55")
+center23=add(c2,(offset,offset))
+assert c4-c1>delta and center23[0]-c4>delta and 2*c1>delta
+
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        a_n=scale(2*(1 if n%3==1 else -1),
+                  (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((a_n,lag))
+        second+=max(map(abs,a_n))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+def node(x):
+    total=(F(0),F(0))
+    for weight,lag in atoms:
+        cosine,_=phase_trig(multiply((x,x),lag))
+        total=add(total,round_out(*multiply(weight,cosine),atom_grid))
+    return total
+
+def check_band(center,radius,lo,hi,Alo,Ahi):
+    first,last=center-radius,center+radius
+    assert F(10**8,3)-1<first<=last<10**8
+    assert 30000000<first and last<35*10**24
+    assert last<F("1852422754.1662946")-10
+    assert last<F("3806849122.861433")-F(1,160)
+    assert lo<3*first/(2*pi_upper) and 3*last/(2*pi_lower)<hi
+    y=first/2
+    err=F(5,9)/y+F(9,32)/y**2
+    assert log_bounds(lo)[0]-err>Alo and log_bounds(hi)[1]+err<Ahi
+
+wmin=1-F("3e-10")
+close=c1+F("73.5")
+check_band(c1,F(0),47500000,47770701,F("17.67"),F("17.69"))
+check_band(close,F(0),47500000,47770701,F("17.67"),F("17.69"))
+assert wmin*(node(c1)[0]-F("17.69"))>F(16)
+assert wmin*(node(close)[0]-F("17.69"))>F("3.4")
+assert 2*R<close-c1 and close-c1+2*R<delta
+c5=c1+20381
+check_band(c5,F(".02"),47590858,47590861,F("17.6781"),F("17.6782"))
+h=F(".005")
+negative_nodes=[node(c5-F(".02")+j*h)[0] for j in range(9)]
+for u,v in zip(negative_nodes,negative_nodes[1:]):
+    assert wmin*(min(u,v)-second*h*h/8-F("17.6782"))>F("5.5")
+assert 2*F(3000)<c5-c1 and c5-c1+2*F(3000)<F(320000)
+print("PASS exact uniform scalar constants and both original-source spacing falsifiers")
+~~~
