@@ -4375,3 +4375,173 @@ for label,pair_price in options.items():
         assert min(rooms)>F("6.7047e-9")
     print("PASS original q69 price branches",label,float(max(caps)),float(min(rooms)))
 ~~~
+
+## One more enclosure under the shared derivative bound
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned shared derivative comparison](https://github.com/grwtsk/math/blob/9f8dc8d1c8952035537c9ee25e63f91ed1826b5a/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md)
+at the 69-enclosure frontier through detuning $784.80$,
+Jensen blob 51f975283d44da30b3a8e60f76576f157dd95ccd.
+Retain the original radius-four arithmetic blob
+72848bace2af0f427c9e9fae16806f1b31ee064f, complex odd
+physical carrier $L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$,
+zero extension, folded measure $d\nu/\pi$, original masks
+and physical projection. The primitive nonprincipal odd
+character modulo three uses the full parity-one gamma,
+all $458$ signed prime powers and zero principal-pole term.
+All detunings use $c_1=99653682.92983$ and include their
+reflected restrictions.
+
+The original multiplier is strictly positive on
+$[784.80,786.68]$ off $E_{16}=[784.80,784.88]$.
+The two endpoints of $E_{16}$ are positive and $784.84$
+is negative. The directed sign guard uses $92$ complement
+checks and one bisection. Use $Y_{16}=[783.84,785.84]$
+as the positive donor, with midpoint $c_1+784.84$ and
+radius one. The two existing derivative donors
+$Y_{14}=[741.06,744.06]$ and $Y_{15}=[763.33,767.33]$
+are disjoint from this donor. The gap after $Y_{15}$
+is $16.51$. The left portion of $Y_{16}$ lies in the
+preceding strict sign region beyond the preceding negative
+enclosure. The new sign guard covers its right portion.
+The consecutive sign regions meet at their positive endpoint
+$784.80$. The donor intervals are strictly separated.
+The only negative restriction on $Y_{16}$ is accordingly
+$N_{E_{16}}$, with output disjoint from the earlier paid
+restrictions. The exact guard checks the original masks and separation
+from the earlier direct and tagged positive resources.
+The actual strip is within the original filter window, so the
+same parity-one bracket and the sum of absolute prime amplitudes
+give the unscaled bound $|m|<228.678<272$ on this donor.
+
+A zero scalar price with any fixed finite positive coefficient
+fails on this donor alone. The negative witness at $784.84$
+lies inside a strictly negative open subinterval by continuity.
+A nonzero frequency function supported there has positive
+negative energy and zero positive energy. On a bounded donor,
+the sine restriction from the odd physical carrier is dense:
+orthogonality would make the entire sine transform of the
+orthogonal function vanish for $t$ in $(-4,4)$, and odd Fourier
+extension and uniqueness then give the zero function. Both
+weights are bounded, so the strict violation persists for
+some actual physical input. This rules out zero scalar price
+for the single donor; the shared derivative charge is positive.
+
+The new directed positive lower density $\ell_{16}$
+has $96$ positive $.02$ bins, with $.0025$ cells used
+for its directed prices. The directed negative upper
+density $\eta_{16}$ has $21$ nonzero $.0025$ cells.
+These are reconstructed with the same normalized
+folded densities, with $\ell_{16}\le m_+/\pi$ and
+$\eta_{16}\ge m_-/\pi$. On complex polynomials of
+degree less than $40$ about the actual midpoint,
+the checked form is
+$$
+ p\longmapsto
+ \int_{Y_{16}}\bigl(\tfrac9{10}\ell_{16}-\eta_{16}\bigr)|p|^2\,d\nu
+ +\frac{10^{-15}}{4^{32}\pi_{\rm hi}}
+       \int_{Y_{16}} |p^{(16)}|^2\,d\nu .
+$$
+Its $40$ rational leading pivots are strictly positive.
+The other two donors retain their exact local polynomial
+comparisons with these same parameters.
+
+Apply the shared local Taylor and Young estimates with
+$\alpha_0=9/10$, $k=16$, $r=40$, $\mu=10^{-15}$,
+$s=t=1/1600$ and $u=1/256$. All three donor radii
+are at most two. The two normalized derivative rates
+are $d_k=1.00453369140625\cdot10^{-15}$ and
+$d_r<4.360\cdot10^{-18}$. Summing local derivative
+norms on these disjoint intervals and applying Plancherel
+on the unmasked physical carrier gives the actual bound
+$$
+ \sum_{j=14}^{16}N_{E_j}^*N_{E_j}
+ \preceq \tfrac{4803}{5330}\sum_{j=14}^{16}\mathcal P_{Y_j}
+             +(1.009\cdot10^{-15})I .
+$$
+The same scalar covers all three restrictions. The
+positive intervals are reserved once, and their fraction
+fits the previous $19/20$ maximum. The genuine earlier
+tagged inputs and $\beta I$ remain available in the
+reduced comparator. All $48$ original price choices
+under each of the four prices for the first deep pair
+retain cap below $0.953005$. The least common-map
+branch room exceeds $6.7047\cdot10^{-9}$.
+
+Append the disjoint $N_{E_{16}}$ to form $W_{\mathrm{all70}}$.
+Contiguous signed coverage reaches $786.68$. The original
+physical identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all70}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad
+ S_{\mathrm{all70}}=S_\lambda-W_{\mathrm{all70}}^*W_{\mathrm{all70}}
+ \succeq0.046995 S_\lambda .
+$$
+The outstanding sign before the original seven leading
+inverses and directional return is
+$\|N_{\mathrm{out}}S_{\mathrm{all70}}^{-1}N_{\mathrm{out}}^*\|\le1$
+on the full actual outside support.
+
+Extract the guard and pass the pinned arithmetic Markdown
+and the Jensen donor Markdown containing its shared derivative
+checker. The existing derivative and directed density checker
+blocks are selected by their unique digests. The guard supplies
+the third donor geometry, reruns the directed signs, and checks
+the three local matrices and the common scalar price.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+pinned_derivative="fb06ddc22892ae6f573f0dc659a5e60c9b156ba327344f8f043d3ad06f2bfbb9"
+pinned_density="a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654"
+
+def block_at(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+source=block_at(pinned_derivative)
+directed=block_at(pinned_density)
+for earlier,later in (
+    ('"e9":("707.62","709.62","708.60","708.66","708.63",".25")',
+     '"e16":("783.84","785.84","784.80","784.88","784.84",".90")'),
+    ('("708.60","710.86",".02")','("784.80","786.68",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(92,1)'),
+    ('len(pos)==98 and len(rho)==9','len(pos)==96 and len(rho)==21'),
+):
+    assert directed.count(earlier)==1
+    directed=directed.replace(earlier,later)
+
+for old,new in (
+    ('def generated_code(donor,mode):\n',
+     'def generated_code(donor,mode):\n    if donor=="e16":\n        return e16_directed\n'),
+    ('for donor in ("e13","e14","e15"):','for donor in ("e13","e14","e15","e16"):'),
+    ('    "e15":("763.33","767.33","765.22","765.44","765.33",190,72),',
+     '    "e15":("763.33","767.33","765.22","765.44","765.33",190,72),\n'
+     '    "e16":("783.84","785.84","784.80","784.88","784.84",96,21),'),
+    ('assert F(statistics["e14"][1])<F(statistics["e15"][0])',
+     'assert F(statistics["e14"][1])<F(statistics["e15"][0])\n'
+     'assert F(statistics["e15"][1])<F(statistics["e16"][0])\n'
+     'assert F(statistics["e16"][1])<F("786.68")\n'
+     'new_left,new_right=map(F,statistics["e16"][:2])\n'
+     'assert all(b<new_left or new_right<a for a,b in ((F("-16.64"),F(405)),(F(408),F(414)),\n'
+     '    (F("436.94"),F("440.94")),(F("5311.55"),F("5315.55")),(F(20345),F(20410))))\n'
+     'assert F(5085348195,4)*data["pi_lower"]-F("5.55")-2>data["c0"]+new_right'),
+    ('assert branches[0]==branches[1]','assert len(branches)==3 and branches[0]==branches[1]==branches[2]'),
+    ('PASS original q69 price branches','PASS original q70 price branches'),
+):
+    assert source.count(old)==1
+    source=source.replace(old,new)
+assert "r,k=40,16" in source and 'price,mu=F(".9"),F("1e-15")' in source
+exec(compile(source,jensen,"exec"),
+     {"__name__":"__main__","__file__":__file__,"e16_directed":directed})
+~~~
