@@ -164,13 +164,13 @@ finite subsum exceeding $A/2$ falsifies that proposed coefficient.
 For the linear supplier, if $\zeta(1/2)\ne0$ one can also include the
 stationary frequency once. On the positive real ray the same product
 continuation gives the real limit
-$
+$$
 \lim_{\sigma\downarrow0}\sigma L_s(\sigma)
 =\lim_{\sigma\downarrow0}
   \left(\frac{1}{(\sigma+\tfrac12)\zeta(\sigma+\tfrac12)}
     -h_s-\sigma R_s(\sigma)\right)
 =\frac{2}{\zeta(1/2)}-h_s=:b_s .
-$
+$$
 The transform $L_s(\sigma)$ is real for real $\sigma>0$ since $D_s$ is real.
 At $m=1$ the moment argument for frequency zero gives the weak limit
 $b_s$ for $F_T$ in $\mathcal H$. Adding $b_s$ to $K_T$ contributes $b_s^2$
