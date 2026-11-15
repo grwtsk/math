@@ -6620,14 +6620,16 @@ Append to the exact directed signed action checker above.
 ~~~python
 # First scalar cross for the actual two-pivot/collar parallel contribution.
 # Uses the existing fixed-grid model and the published directed transfer.
-def scalar_of_model(lam,eta):
+def scalar_of_model(lam,eta,reference_amplitudes=None):
     amplitudes,coeff_error,amp_max=frozen_amplitudes(lam,eta)
     events,current,left_ties=sorted_events(amplitudes)
     source_index={p[0]:j for j,p in enumerate(points)}
     assert len(source_index)==919
     key_old,x_old,c,s=points[0]
     sin_old,cos_old=gmul(inv,s),gmul(inv,c)
-    reference=amplitudes[0]
+    if reference_amplitudes is None:
+        reference_amplitudes=amplitudes
+    reference=reference_amplitudes[0]
     scalar=origin
     fast_bound=0
     count=0
@@ -6648,7 +6650,7 @@ def scalar_of_model(lam,eta):
             count+=1
             key_old,x_old,sin_old,cos_old=key,x,sin,cos
             if key in source_index:
-                reference=amplitudes[source_index[key]]
+                reference=reference_amplitudes[source_index[key]]
         current=[a+b for a,b in zip(current,jumps)]
     assert (count,len(events),left_ties)==(212182,215512,459)
     fast=F(fast_bound,2*grid*3806000000)
@@ -6681,4 +6683,469 @@ assert F(".057518")<par_norm[0]<=par_norm[1]<F(".071135")
 assert F(".007851")<par_cross[0]<=par_cross[1]<F(".016656")
 assert (F(".00429")-par_cross[0]-par_norm[0]**2)/2< -F(".00343")
 print("PASS exact positive collar-plane parallel cross, necessary remaining covariance < -.00343")
+~~~
+
+## The neighboring pivot and high inverses in the required cross term
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Use the preceding exact split $24r=z_p+p+W$, and put $\bar z=z_p+p$.
+Keep $p=\kappa g_*$, where $\kappa=\|g_*\|^2/[t(1+\rho t)]$.
+In this section $D_P,D_Z,D_{L_0},D_Y,D_{\mathcal V}$ denote the five
+positive inverse corrections making up $D_5$ on $G_2$, each with its
+actual compression. Then
+$$
+\begin{gathered}
+ \operatorname{Re}\left\langle \bar z,\frac{m\otimes m}{d_v}g_*\right\rangle
+     >0.0000068,\qquad
+ \operatorname{Re}\langle \bar z,(D_Y+D_{\mathcal V})g_*\rangle
+     >-1.11\cdot10^{-7},\\
+ w_{\rm low}=\Pi_H\big[(24I-T)(g_*-g_0)+(D_P+D_Z)g_*\big].
+\end{gathered}
+$$
+A necessary condition for the strict $0.00429$ test in the preceding
+section is $\operatorname{Re}\langle \bar z,w_{\rm low}\rangle<-0.00331$.
+Here $T=BI+R$ is the full original bounded form with the paid pair and
+its original gamma and signed rows.
+
+### Signed pairing for the actual neighboring pivot
+
+Let $f_0=-(I-P_0)T_Pv_0$. This is the earlier two-carrier
+centered column at $\Lambda=0$ with orientation opposite to $q_0$,
+where $q_\Lambda=(I-P_0)T_P(v_0-\Lambda u)$.
+The exact guards on the 459 original positive cells give
+$$
+ -0.031764<\langle f_0,g_0\rangle<-0.013621,\qquad
+ \|f_0\|<1.509 .
+$$
+Use the original cosine-sine coefficient intervals
+$(a,b,c,d)$ and $(A,B,C,D)$ on each cell for two inputs,
+in sine, cosine, sine, cosine order. By oddness, the integral on the full interval is twice the
+positive-side one. After product to sum, the doubled constant
+coefficient is $aA+bB+cC+dD$, and the slow cosine and sine
+coefficients are $aC+bD+cA+dB$ and $aD-bC-cB+dA$,
+respectively. Each discarded primitive has frequency at least
+$2\omega$. The total fast allowance per cell is bounded by the
+product of the two sums of absolute coefficients divided by $\omega$.
+
+For the second pairing use the exact signed translate sweep with
+the $f_0$ reference. The signed output keeps the 212182 merged
+cells and all 459 exact left ties. The same mixed slow integral
+as in the preceding scalar proof applies with the reference
+coefficients of $f_0$. At each endpoint of the $\Lambda$ interval,
+take $\eta_c$ at its midpoint. The fixed-grid reference is made
+at a twentieth of its scale and then rescaled, including its
+errors, which gives $L^2$ reference error below $0.000385$.
+The signed output model has the previous input, rotation and
+rounding prices. The true signed endpoint output norm is below
+$0.75086$ at the upper prefactor and hence at its midpoint by
+positive scaling. Its paired transfer costs at most
+$$
+ 0.75086\,d_f+(1.509+d_f)
+             \big[(57.7531+|s_0|)d_i+d_o\big],
+$$
+where $d_f$ is the error on $f_0$ and $d_i,d_o$ are the model
+input and rotation/rounding prices on the signed output.
+The directed transfer is below $0.02349$ and the fast allowance
+below $0.000143$. Linearity in $\Lambda$ and the exact positive
+$\eta_c$ scaling give
+$$
+ -0.130025<\operatorname{Re}\langle D_{s_0}g_0,f_0\rangle<-0.0825769.
+$$
+
+Now $m=Fv=\Pi_H C_2v$. The coefficient sums of $v$ on $z,z_y$
+and of $v_0$ on $u,y$ are below $1.066$ by the original Gram
+bounds. On $H$, the difference from $f_0$ is the projection of
+$R(v-v_0)+G_{\rm phys}v_0-D_5v$. Its norm is below
+$300(11d)+1.066(0.000247+0.055511)$ using the actual five
+inverse action bounds and $d=1.6\cdot10^{-8}$.
+For the old eliminated component of $f_0$ use the bound
+$1.066(0.00075+0.000247)+26d(233)$, from the old cross to
+$R$, the full comparison on $u,y$, and $\|P_1-P_0\|<26d$.
+For the true pivot plane use $26d(1.509)$ since $f_0\perp P_0$.
+The three components are orthogonal. In the directed guard
+the actual bound on the five old inverse actions is used
+before rounding, giving $\|m-f_0\|<0.05951$.
+Both vectors are in $P_0^\perp$, so the exact transfer for
+$\langle z_p,m\rangle$ uses
+$\|(I-P_0)D_{s_0}g_0\|<0.6688$. We get
+$$
+ \operatorname{Re}\langle z_p,m\rangle<-0.04277 .
+$$
+
+For the pairing against $g_*$, use the same exact difference on
+$H$. Pair each old inverse term with $g_*$ through its actual
+input column. For example the first two terms cost
+$$
+ 10\,\|PRv\|\|PRg_*\|+(25/2)\,\|Jv\|\|Jg_*\|.
+$$
+Use the previous sharpened $g_*$ column bounds before rounding,
+and charge the $L_0,Y_0,\mathcal V$ terms with their actual
+inverse factors. The local input bounds on $v$ carry factor
+$1.066$ from $z,z_y$. The paired norm allowance for
+$R(v-v_0)+G_{\rm phys}v_0$ is
+$(300(11d)+1.066(0.000247))(0.1947)$.
+The sum of all these paired errors is below $0.000635$.
+Finally, replacing $g_*$ by $g_0$ against $f_0$ costs at most
+$1.509(0.006081)$. This gives
+$$
+ \operatorname{Re}\langle m,g_*\rangle<-0.00380 .
+$$
+All inputs and operators in these two pairings preserve the real
+physical carrier. Thus the scalars are real. Since $p=\kappa g_*$
+with $\kappa>0$, we have $\langle \bar z,m\rangle<-0.04277$.
+The exact denominator
+$d_v=\gamma_v+\langle v,b_e\rangle^2/\beta$ lies below $23.81$.
+Multiplying these two negative scalar bounds and using
+$d_v>0$ gives the stated positive contribution. This is a
+bound for the linear cross term. The full squared norm of $W$
+still includes the mixed interactions of this vector.
+
+### The high terms on the actual projected action
+
+Use the bounded odd physical carrier and the exact radius-four
+operator notation from the preceding sections. Put
+$w=D_{s_0}g_0$ and $z_p=\Pi_Hw$, using $\Pi_H P_0=0$.
+Let $D_{\mathrm{hi}}$ be the sum of the $Y_0$ and
+$\mathcal V$ inverse corrections compressed to $H$.
+The two original row maps act on $G_1$ and $G_2$,
+respectively, and $H\subset G_2\subset G_1$. Thus for
+$x,y\in H$ their contributions to the pairing are exactly
+$$
+ \langle x,D_{\mathrm{hi}} y\rangle
+ =\langle J_Y x,A_Y^{-1}J_Y y\rangle+
+   \langle J_{\mathcal V}x,A_{\mathcal V}^{-1}J_{\mathcal V}y\rangle .
+$$
+In particular $D_{\mathrm{hi}}\ge0$ with the actual physical
+inverse costs $4$ and $1/12$ on the two target spaces.
+
+#### Full angular tails
+
+Write $L=10^{25}$ and
+$\tau(f)=\|\mathbf1_{|\nu|\ge L}\widehat f\|_2$ in the original
+angular measure. The proxy $g_0$ is a sum of compressed
+translated normalized sines with absolute coefficient sum below
+$24.4$. Translating each such piece once more and compressing
+to the physical interval retains a sine phase restricted to one
+interval. Its Fourier amplitude above $L$ stays below $2/|\nu|$.
+The absolute sum of the original 916 signed translation weights
+is below $211$, so the representation of $w$ has coefficient
+sum below $24.4(211+|s_0|)$. Including both angular signs gives
+$\tau(w)<1.861\cdot10^{-9}$. Use the already checked
+$\|w\|<0.7648$ for its component norm bounds.
+
+Set $S_b=W\oplus L_0\oplus Y_0\oplus\mathcal V$, with $W$ here the old physical space, using the
+actual old orthogonal decomposition. The full angular norm
+below $L$ on either $Y_0$ or $\mathcal V$ is below
+$1.2\cdot10^{-11}$ per unit vector. For $W\oplus L_0$, the
+published Chebyshev estimate applies to the full angular band
+$|\nu|\le L$ since it proves its pointwise envelope for every
+$|\nu|\le\Omega$ before restriction to the residual set.
+Indeed $W\subset V_0^\perp$, and the $L_0$ vectors lie in
+$Q\mathcal H$ and are orthogonal to $QV_0$, hence also to $V_0$.
+Its full low-band norm is below $10^{-265}$ per unit vector.
+Cauchy--Schwarz across these orthogonal inputs gives the norm
+bound $1.70\cdot10^{-11}$ for angular restriction below $L$
+on $S_b$. Testing against its unit vectors bounds
+$$
+ \|\Pi_{S_b}w\|\le \tau(w)+(1.70\cdot10^{-11})\|w\|.
+$$
+
+For the old low components $P\mathcal H$ and $U$ use the
+old native sine tails. Their unit span has tail below
+$1.22\cdot10^{-26}$ at $L$, by the amplitude
+$6200(6\cdot10^7)/|\nu|^2$ and both angular signs. On $U$
+apply the $10/9$ preimage norm and its relative $10^{-60}$
+error. The resulting sum of their tail costs is at most
+$$
+ \left[(1+10/9)(1.22\cdot10^{-26})+(10/9)10^{-60}\right]\|w\|.
+$$
+
+The actual $e,v$ plane also has small high tails by its projected
+sine definitions. For either raw carrier $u$ or $y$, begin with
+tail below $3.6\cdot10^{-13}$. Subtract its $P,U$ components
+using their norms below $d=1.6\cdot10^{-8}$ and the same
+low native tail estimates. Its $W,L_0$ components each have
+norm below $10^{-281}$ by the earlier evaluation at the
+actual carrier. Its $Y_0,\mathcal V$ components have norm
+below $7\cdot10^{-24}$ and $3\cdot10^{-38}$. These bounds
+give the high tails for $z,z_y$. From $e=z/\|z\|$,
+$\|z\|>1-d$, and $v=(z_y-g_a e)/n$ with
+$|g_a|<0.071$, $n>0.998026$, the tails of $e,v$ are below
+$3.61\cdot10^{-13}$ and $3.88\cdot10^{-13}$, respectively.
+Since they are orthonormal, Cauchy--Schwarz bounds
+$\tau(P_1w)<4.06\cdot10^{-13}$.
+Subtract all the old eliminated components and $P_1w$ in the
+actual formula for $\Pi_Hw$. The directed sum now gives
+$$
+ \tau(z_p)<3.736\cdot10^{-9}.
+$$
+
+#### The positive inverse square
+
+The raw $R$ output on either high space when applied to $z_p$
+has norm at most $300[\tau(z_p)+(1.2\cdot10^{-11})\|z_p\|]$.
+This is the original masked angular pairing split at $L$.
+Use $\|PRz_p\|<7.5\|z_p\|$ and
+$\|Jz_p\|<3.705\|z_p\|$. The exact $Y_0$ cross bounds into
+these two rows are $2\cdot10^{-6}/(1-3\delta)$ and
+$(11/8)\,2\cdot10^{-6}/(1-3\delta)+741\cdot10^{-265}$,
+respectively. For $\mathcal V$ use the original crosses
+$2.3\cdot10^{-11}$, $7.2\cdot10^{-8}$ and $0.0017$
+into $PR,J,J_Y$. Include the full $D_0$ row bound $10^{-515}$
+for each high output. Applying the actual earlier inverse
+costs in $C_0$ and $C_1$ gives
+$$
+ \|J_Yz_p\|<0.000187,\qquad
+ \|J_{\mathcal V}z_p\|<0.0000047.
+$$
+
+Write $p=\kappa g_*$ as in the exact parallel split, with
+$\kappa>0.31708$. For the lower bound relevant to the required
+negative covariance, use positivity in the identity
+$$
+ \operatorname{Re}\langle z_p+p,D_{\mathrm{hi}}g_*\rangle
+ =
+ \kappa\left\langle g_*+\frac{z_p}{2\kappa},
+       D_{\mathrm{hi}}\left(g_*+\frac{z_p}{2\kappa}\right)\right\rangle
+ -\frac{\langle z_p,D_{\mathrm{hi}}z_p\rangle}{4\kappa}.
+$$
+The first term is nonnegative. The two original row bounds
+give
+$$
+ \operatorname{Re}\langle z_p+p,D_{\mathrm{hi}}g_*\rangle
+ >-\frac{4(0.000187)^2+(0.0000047)^2/12}{4(0.31708)}
+ >-1.11\cdot10^{-7}.
+$$
+Thus the necessary covariance below $-0.00343$ implies that
+after removing these two high terms the covariance must still
+be below $-0.0034298$.
+
+### The remaining low inverse and transfer estimate
+
+The exact multiplier comparison gives $D_{s_0}=24I-T+G_{\rm phys}$.
+In the remainder the two terms with $G_{\rm phys}$ combine exactly,
+$$
+ \Pi_H[D_{s_0}(g_*-g_0)-G_{\rm phys}g_*]
+ =\Pi_H[(24I-T)(g_*-g_0)-G_{\rm phys}g_0].
+$$
+Use the exact equality before estimating either term. The full
+$\|\bar z\|^2$ satisfies
+$\|\bar z\|^2<0.6688^2+0.016656+0.071135^2<0.685^2$ by the
+preceding directed parallel cross and parallel norm.
+The maximum adverse costs from the gamma and mask on $g_0$,
+the full collar error and the $L_0$ term are bounded by
+$0.685(0.000174)$, $0.685(0.1947)(0.000024)$ and
+$0.685(0.1947)10^{-515}$, respectively. Together with the
+positive neighboring pivot and the one-sided high bound, the
+necessary inequality $\operatorname{Re}\langle \bar z,W\rangle<-0.00343$
+gives the claimed $\operatorname{Re}\langle \bar z,w_{\rm low}\rangle<-0.00331$.
+
+There is an equivalent form using the genuine lift $E$ through
+the five old inverse stages. Since $TEg_*=C_2g_*$ and
+$Eg_*-g_*\in G_2^\perp$, we have
+$$
+ \Pi_H\big[(24I-T)(g_*-g_0)+D_5g_*\big]
+ =\Pi_H(24I-T)(Eg_*-g_0).
+$$
+For a direct test of the low pairing, put $b=\Pi_H(24I-T)\bar z$.
+The exact direction transfer is
+$$
+ g_*-g_0
+  =\Pi_H[R(k-h)+G_{\rm phys}h-D_5k]-(I-\Pi_H)g_0
+$$
+because $g_*=\Pi_H C_2k$ and $\Pi_HP_0=0$.
+In particular $(D_P+D_Z)g_*$ in $w_{\rm low}$ can be paired
+with $\bar z$ on the same inverse domains as the contributions of
+$-D_5k$ paired with $b$. These identities isolate the shared
+actual low inverse entries. The signed estimate on this
+combination and the complete squared norm of $W$ remain open.
+The threshold is necessary for the particular $0.00429$ test,
+with all-complement coercivity still a separate requirement for
+the inverse criterion. The present bounded-carrier proofs retain
+the original gamma-density and all signed rows, and the arithmetic
+return still requires every admitted real odd compact $C^2$ test.
+
+### Directed guards for the remaining budget
+
+Append the following block to the earlier source guard sequence,
+including the separated-jump and parallel-term checks. The
+scalar sweep takes an optional explicit reference; its default is
+the prior self-pairing. The last two blocks use exact rational
+arithmetic and the already checked source bounds.
+
+~~~python
+from functools import reduce
+
+def isum(xs):
+    return reduce(add,xs,zero)
+
+def column_coeff(lam):
+    coeff_y = divide_positive((1,1), norm_orth)
+    coeff_u = subtract(scale(-1, multiply(gram_overlap, coeff_y)), lam)
+    removed_u = subtract(prime_mixed_orth, multiply(lam, mean))
+    removed_v = subtract(prime_diag_orth, multiply(lam, prime_mixed_orth))
+    alpha_scale = divide_positive(coeff_u, s_norm)
+    omega_scale = scale(F(1,2), coeff_y)
+    alpha_offset = divide_positive(
+        subtract(multiply(multiply(gram_overlap, coeff_y), removed_v), removed_u), s_norm)
+    omega_offset = scale(F(-1,2), multiply(coeff_y, removed_v))
+    return [(outward(add(multiply(alpha_scale,state[0]), alpha_offset)),
+             outward(multiply(alpha_scale,state[1])),
+             outward(add(multiply(omega_scale,state[2]), omega_offset)),
+             outward(multiply(omega_scale,state[3])))
+             for _,_,_,state in cell_data]
+
+def correlation(one,two):
+    out=zero
+    fast=F(0)
+    for (step,coss,sinn,_),(a,b,c,d),(A,B,C,D) in zip(cell_data,one,two):
+        constant=isum(multiply(x,y) for x,y in zip((a,b,c,d),(A,B,C,D)))
+        slow_cos=isum([multiply(a,C),multiply(b,D),multiply(c,A),multiply(d,B)])
+        slow_sin=isum([multiply(a,D),scale(-1,multiply(b,C)),
+                       scale(-1,multiply(c,B)),multiply(d,A)])
+        out=add(out,outward(isum([multiply(constant,step),multiply(slow_cos,coss),multiply(slow_sin,sinn)])))
+        fast+=(sum(max(map(abs,q)) for q in (a,b,c,d))*sum(max(map(abs,q)) for q in (A,B,C,D)))/neighbor[0]
+    return add(out,(-fast,fast)),fast
+
+directs=[tuple(scale(-1,x) for x in c) for c in column_coeff(zero)]
+gs=[tuple(outward(multiply(proxy_eta,x)) for x in c) for c in column_coeff(proxy_lambda)]
+direct_pair, direct_fast=correlation(directs,gs)
+direct_sq, direct_fast_sq=correlation(directs,directs)
+assert_inside(direct_pair,'-.031764','-.013621')
+assert F('.0') < direct_sq[0] <= direct_sq[1] < F('1.509')**2
+
+# Reuse the same signed output sweep with f_0 as its reference.
+scaled_f, scaled_error, scaled_amp = frozen_amplitudes(F(0),F(-1,20))
+f_amplitudes = [tuple(20*x for x in row) for row in scaled_f]
+f_model_error = 60*(scaled_error+4*scaled_amp*frequency_radius)
+eta_center = sum(proxy_eta)/2
+action_norm = F(577531,10000)+abs(t0)
+endpoint_pairs = []
+for lam in proxy_lambda:
+    pair, input_price, output_price, fast = scalar_of_model(lam,eta_center,f_amplitudes)
+    transfer = f_model_error*F('.75086') + (F('1.509')+f_model_error)*(
+        action_norm*input_price+output_price)
+    assert fast < F('.000143') and transfer < F('.02349')
+    endpoint_pairs.append(add(pair,(-transfer,transfer)))
+assert f_model_error < F('.000385')
+model_hull = min(pair[0] for pair in endpoint_pairs),max(pair[1] for pair in endpoint_pairs)
+mixed = scale(1/eta_center,multiply(proxy_eta,model_hull))
+assert_inside(mixed,'-.130025','-.0825769')
+
+for overlap, normalizer in ((gram_overlap,norm_orth),(act_g,act_k)):
+    assert (1+max(map(abs,overlap))/(1-defect))/normalizer[0] < F('1.066')
+print("PASS physical neighboring proxy pairings on the base and merged signed cells")
+~~~
+
+~~~python
+from fractions import Fraction as F
+
+cutoff = 10**25
+pi_lower = F("3.14")
+unprojected_norm = F(".7648")
+projected_norm = F(".6688")
+actual_norm = F(".1947")
+shift_scalar = F("2.554199113")
+native_tail = F("1.22e-26")
+raw_sine_tail = F("3.6e-13")
+assert (6200*6*10**7)**2 < native_tail**2*3*pi_lower*cutoff**3
+assert 4 < raw_sine_tail**2*pi_lower*cutoff
+# Applying the signed prime translates to a compressed sine interval simply
+# translates and recompresses that interval, so the same endpoint bound applies.
+unprojected_coefficients = F("24.4")*(211+shift_scalar)
+unprojected_tail = F("1.861e-9")
+assert 4*unprojected_coefficients**2 < unprojected_tail**2*pi_lower*cutoff
+old_preimage_error = F("1e-60")
+old_tail_factor = (1+F(10,9))*native_tail+F(10,9)*old_preimage_error
+# The full-angle Chebyshev proof covers W+L0 as one subspace.
+leakage = F("1e-265")
+high_space_low_angle = F("1.2e-11")
+grouped_low_angle = F("1.70e-11")
+assert leakage**2+2*high_space_low_angle**2 < grouped_low_angle**2
+# Exact projected-sine tails, without charging 2d or 11d as high Fourier.
+d = F("1.6e-8")
+native_y_projection = F("7e-24")
+native_v_projection = F("3e-38")
+native_w_l0_projection = 2*F("1e-281")
+projected_sine_tail = (raw_sine_tail+old_tail_factor*d
+                       +native_w_l0_projection+native_y_projection+native_v_projection)
+e_tail = projected_sine_tail/(1-d)
+v_tail = (projected_sine_tail+F(".071")*e_tail)/F(".998026")
+assert e_tail < F("3.61e-13") and v_tail < F("3.88e-13")
+plane_tail = F("4.06e-13")
+assert unprojected_norm**2*(e_tail**2+v_tail**2) < plane_tail**2
+projected_tail = F("3.736e-9")
+assert (2*unprojected_tail+(old_tail_factor+grouped_low_angle)*unprojected_norm
+        +plane_tail < projected_tail)
+
+# These are full actual column operators on H, not rows of a collar model.
+projected_direct_high = 300*(projected_tail+high_space_low_angle*projected_norm)
+tiny = F("1e-272")
+direct_y_cross = F("2e-6")/(1-3*tiny)
+j_y_cross = (1+F(3,8))*direct_y_cross+741*leakage
+d0 = F("1e-515")
+pr_upper = F("7.5")*projected_norm
+j_upper = F("3.705")*projected_norm
+y_column = (projected_direct_high+10*direct_y_cross*pr_upper
+            +F(25,2)*j_y_cross*j_upper+d0)
+v_column = (projected_direct_high+10*F("2.3e-11")*pr_upper
+            +F(25,2)*F("7.2e-8")*j_upper+4*F(".0017")*y_column+d0)
+assert y_column < F(".000187") and v_column < F(".0000047")
+
+# One-sided use of positive high inverse action. No bounds on J_i g_* needed.
+parallel_scale_lower = F(".31708")
+high_negative_budget = (4*y_column**2+v_column**2/12)/(4*parallel_scale_lower)
+assert high_negative_budget < F("1.11e-7")
+print("PASS projected signed-action tail and one-sided high inverse covariance > -1.11e-7")
+~~~
+
+~~~python
+from fractions import Fraction as F
+
+g_max = F('.1947')
+g_error = F('.006081')
+column = F('1.066')
+d = F('1.6e-8')
+d0_price = F('1e-515')
+p_unit,j_unit,y_unit,v_unit = map(F,('.00046','.00045','3.2e-8','5.2e-6'))
+d5_unit = (F('7.5')*10*p_unit+F('3.705')*F('12.5')*j_unit+d0_price
+           +301*4*y_unit+F(303,12)*v_unit)
+assert d5_unit < F('.055511')
+m_error_H = column*(d5_unit+F('.000247'))+300*11*d
+m_error_old = column*(F('.00075')+F('.000247'))+26*d*233
+m_error_pivot = 26*d*F('1.509')
+assert m_error_H**2+m_error_old**2+m_error_pivot**2 < F('.05951')**2
+
+ell = F('.00074')+g_error
+raw_band = 300*6200*F('2.45e-12')*12800*F('.1886')
+price_p = raw_band+F('7.5')*ell
+price_u = F(10,9)*raw_band+F('1.344')*ell+F('1e-54')
+price_j = price_u+F(3,8)*price_p+F('1e-261')
+price_y,price_v = F('.016'),F('.017')
+pair_m_f = (
+    g_max*(300*11*d+column*F('.000247')+d0_price)
+    +column*(10*p_unit*price_p+F('12.5')*j_unit*price_j
+             +4*y_unit*price_y+v_unit*price_v/12))
+assert pair_m_f < F('.000635')
+pair_g_upper = -F('.013621')+pair_m_f+F('1.509')*g_error
+assert pair_g_upper < -F('.00380')
+pair_zp_upper = -F('.082576')+F('.6688')*F('.05951')
+assert pair_zp_upper < -F('.04277')
+mv_diag = F('23.538')+F('1.6164')**2/F('9.869')
+assert mv_diag < F('23.81')
+assert F('.00380')*F('.04277')/mv_diag > F('.0000068')
+print('PASS actual neighboring inverse makes a positive covariance > .0000068')
+
+z_norm_sq = F('.6688')**2+F('.016656')+F('.071135')**2
+assert z_norm_sq < F('.685')**2
+gamma_allowance = F('.685')*F('.000174')
+collar_allowance = F('.685')*g_max*F('.000024')
+d0_allowance = F('.685')*g_max*d0_price
+high_allowance = F('1.11e-7')
+low_covariance = -F('.00343')+gamma_allowance+collar_allowance+d0_allowance+high_allowance-F('.0000068')
+assert low_covariance < -F('.00331')
+print('PASS necessary covariance for the low inverses and actual transfer < -.00331')
 ~~~
