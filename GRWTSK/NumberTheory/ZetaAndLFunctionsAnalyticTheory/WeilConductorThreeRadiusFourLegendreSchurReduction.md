@@ -3077,3 +3077,222 @@ shifted_schur = 4-F(2)**2/2
 assert shifted_schur-original_schur == 2 > 1
 print('PASS five-pivot collar deletion and compression guards')
 ```
+
+## Weighted rank-one approximation of the exact collar correction
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep $r=1/160$, $x_*=3806849122861433/10^6$, and the exact
+delete-and-eliminate correction $\Delta=C_{2,+}-C_2$ from
+the preceding section. On the positive part of the original
+collar set $\rho(h)=-m(x_*+h)$ for $-r\le h\le r$. Define
+$$
+ \tau=\frac1\pi\int_{-r}^r\rho(h)\,dh,qquad
+ c=\frac{\int_{-r}^r h\rho(h)\,dh}{\int_{-r}^r\rho(h)\,dh},
+ \qquad a=\Pi_{G_2}\sin((x_*+c)\,\cdot).
+$$
+For a physical vector $v$ write $v\otimes v$ for the operator
+$z\mapsto v\langle v,z\rangle$. Then
+$$
+ \|\Delta-\tau a\otimes a\|<1.09\cdot10^{-5},
+ \qquad 0.124481<\|\Delta\|<0.12449283 .
+$$
+The coefficient is $0.03112298<\tau<0.03112304$ and the
+shift of center is $-1.168\cdot10^{-5}<c<-1.089\cdot10^{-5}$.
+In particular the exact correction on $a^\perp\cap G_2$ has
+quadratic upper bound $1.09\cdot10^{-5}I$.
+All comparisons use the original complex odd physical
+inner product on $[-4,4]$ and the actual five Schur pivots.
+
+### Signed second derivative of the sine evaluation operator
+
+For $\xi$ on the positive collar write $v_\xi(t)=\sin(\xi t)$,
+$d_\xi(t)=t\cos(\xi t)$ and $u_\xi(t)=t^2\sin(\xi t)$ on
+$[-4,4]$. All three vectors are odd. The norm derivatives of
+$S(\xi)=v_\xi\otimes v_\xi$ satisfy
+$$
+ \frac12 S''(\xi)=d_\xi\otimes d_\xi
+   -\frac{u_\xi\otimes v_\xi+v_\xi\otimes u_\xi}{2}.
+$$
+Put $b=\langle u_\xi,v_\xi\rangle\ge0$ and
+$p=\|u_\xi\|\|v_\xi\|$. On the two-vector span the nonzero
+eigenvalues of the symmetrized product are among
+$(b+p)/2$ and $(b-p)/2$. This follows by expanding in
+the unit direction of $v_\xi$ and the orthogonal part of
+$u_\xi$. On the perpendicular space it vanishes. Therefore
+$$
+ -\frac{b+p}{2}I\le \frac12 S''(\xi)
+ \le \left(\|d_\xi\|^2+\frac{p-b}{2}\right) I.
+$$
+Here $b+\|d_\xi\|^2=128/3$ exactly. Integration by parts gives
+$|\int_0^4 t^n\cos(2\xi t)dt|\le4^n/|\xi|$ for $n=2,4$,
+using the boundary term and the full derivative integral.
+Consequently
+$$
+ |b-64/3|\le16/|\xi|,\qquad
+ \|u_\xi\|^2\le1024/5+256/|\xi|,\qquad
+ \|v_\xi\|^2=4-\frac{\sin(8\xi)}{2\xi}.
+$$
+Using $|\xi|>3.5\cdot10^9$ gives $p<28.622$ and makes
+both order endpoints lie strictly between $-25$ and 25.
+Thus $\|S''(\xi)/2\|<25$, also after compression to $G_2$.
+
+Oddness and the two signs of the exact angular measure give
+the direct compression as the following operator integral
+on the actual $G_2$:
+$$
+ D_G=\Pi_{G_2}W_*^*W_*|_{G_2}
+ =\frac1\pi\int_{-r}^r\rho(h)\,
+   \Pi_{G_2}S(x_*+h)|_{G_2}\,dh.
+$$
+The norm derivatives are valid by bounded physical support.
+As $\rho>0$, $c$ lies in the positive collar's parameter interval
+and the weighted linear term of the Taylor expansion about
+$c$ integrates to zero. The centered second moment is no
+greater than the uncentered one. This gives
+$$
+ \|D_G-\tau a\otimes a\|
+ \le\frac{25}{\pi}\int_{-r}^r\rho(h)(h-c)^2dh
+ <25\frac{2\cdot7.90\,r^3}{3\pi}.
+$$
+The preceding exact five-pivot result bounds
+$\|\Delta-D_G\|<6.6\cdot10^{-7}$. Their sum is below
+$1.09\cdot10^{-5}$.
+
+### Actual weight, centroid and projected norm
+
+Keep $\eta=3\cdot10^{-10}$ and $M_3=59746$ from the true
+collar bounds. The positive coefficient sum used for $M_3$
+also bounds $|P_4^{(4)}|$ by $M_4=8M_3$, since each
+$\log n<8$. Taylor through the cubic term gives a mean
+remainder at most $M_4 r^4/120$ after integration, with the
+odd two terms integrating to zero. Use the signed center
+and curvature endpoints from the earlier directed calculation
+and the actual gamma bounds $A_-<A<A_+$.
+Since $P_4-A>0$ throughout the interval and $1-\eta\le w\le1$,
+the mean of $\rho$ lies between
+$$
+ (1-\eta)(P^- - A_+ + P_2^-r^2/6-M_4r^4/120)
+ \quad\text{and}\quad
+ P^+ - A_- + P_2^+r^2/6+M_4r^4/120 .
+$$
+For the first moment use the signed derivative endpoints
+times $2r^3/3$. The absolute error in this moment is at most
+$$
+ (A_+-A_-)r^2/2+M_3r^5/15+8\eta r^2.
+$$
+The three terms respectively subtract the gamma midpoint,
+integrate $|h|$ times the cubic remainder after quadratic
+Taylor expansion, and use the uniform filter defect with
+$|P_4-A|<8$. These directed bounds give the stated scalar
+and centroid ranges.
+
+For the projected norm, evaluate the old block bounds at
+$\xi=x_*+c$. The norm of the projection of $v_\xi$ onto
+$P\mathcal H$ is at most $6200(2.45\cdot10^{-12})$ by the exact
+old single-sine transform. On $U$ the old preimage bound
+$10/9$ applies to this same number plus $3\cdot10^{-60}$.
+For $W$ and $L_0$, both orthogonal to $V_0$, the Chebyshev
+estimate bounds the evaluation norm by
+$\sqrt8(4/\sigma)e^{-972}<10^{-281}$.
+Combining $U$ and $W$ bounds the norm on $Z$.
+On $Y_0$ the high preimage gives at most
+$(6\cdot10^{-24}+9\delta)/(1-3\delta)$.
+On $\mathcal V$ the separated native envelopes and the true
+Gram give at most $5.52\cdot10^9(4\cdot10^{-48}+12\delta)$.
+Here $\delta=10^{-272}$ and the projection error is paid
+using $\|v_\xi\|<3$. By orthogonality of the eliminated
+coordinates, the squared norm removed from $v_\xi$ is below
+$10^{-15}$. It follows that
+$$
+ 4-1/(7\cdot10^9)-10^{-15}<\|a\|^2
+ <4+1/(7\cdot10^9).
+$$
+The rank-one eigenvalue $\tau\|a\|^2$ lies in
+$(0.12449194,0.12449216)$.
+
+For the lower norm bound on $\Delta$, subtract its proved
+rank-one error from the rank-one eigenvalue. For the upper
+bound use $\|D_G\|\le\tau(4+1/(7\cdot10^9))$
+and the actual coupled error $6.6\cdot10^{-7}$. The tighter
+unrounded directed endpoints in the checks give the
+stated interval for $\|\Delta\|$.
+The exact correction is strictly positive on nonzero
+vectors. Indeed $W_*Lz=0$ implies that the entire Fourier
+transform of the compactly supported $Lz$ vanishes on
+the collar, since $-m>0$ there. Plancherel then gives
+$Lz=0$ and $z=0$. The exact middle inverse in the previous
+section is positive and coercive.
+
+With $\varepsilon=1.09\cdot10^{-5}$, a sufficient remaining
+condition is that $H_+=C_{2,+}-\varepsilon I$ be coercive
+and $\tau\langle a,H_+^{-1}a\rangle\le1$.
+Cauchy–Schwarz in the $H_+$ norm gives the rank-one
+comparison $H_+\ge\tau a\otimes a$ under this condition.
+These outside-collar premises and the full original sign
+remain open.
+
+### Exact rational checks for the rank-one comparison
+
+Use the historical checker prefix before its
+`alpha_lower, alpha_upper` assignment and omit its old
+`j` assignment. Append the following guards. They use the
+published directed signed derivatives and the preceding
+coupled comparison.
+
+```python
+
+r = F(1, 160)
+frequency_floor = 35*10**8
+density_max = F(79, 10)
+eps = F(109, 10**7)
+transfer = F(66, 10**8)
+p_norm = F(28622, 1000)
+b_lower = F(64, 3)-F(16, frequency_floor)
+b_upper = F(64, 3)+F(16, frequency_floor)
+sine_energy_error = F(1, 2*frequency_floor)
+assert (4+sine_energy_error)*(F(1024, 5)+F(256, frequency_floor)) < p_norm**2
+assert (p_norm+b_upper)/2 < 25
+assert F(128, 3)-b_lower+(p_norm-b_lower)/2 < 25
+assert F(314159, 10**5) < pi_lower <= pi_upper < F(314160, 10**5)
+assert 25*2*density_max*r**3/(3*pi_lower)+transfer < eps
+
+p_lower, p_upper = F(291481183577, 10**10), F(291481184040, 10**10)
+first_lower, first_upper = F(-67794695180, 10**10), F(-67794694685, 10**10)
+second_lower, second_upper = F(-8062789830970, 10**10), F(-8062789830317, 10**10)
+gamma_lower, gamma_upper = F(213208028, 10**7), F(213208031, 10**7)
+eta, third_bound = F(3, 10**10), 59746
+fourth_bound = 8*third_bound
+mean_error = fourth_bound*r**4/120
+mean_lower = (1-eta)*(p_lower-gamma_upper+second_lower*r**2/6-mean_error)
+mean_upper = p_upper-gamma_lower+second_upper*r**2/6+mean_error
+assert 0 < mean_lower < mean_upper
+tau_lower, tau_upper = 2*r*mean_lower/pi_upper, 2*r*mean_upper/pi_lower
+assert F(3112298, 10**8) < tau_lower <= tau_upper < F(3112304, 10**8)
+
+moment_error = (gamma_upper-gamma_lower)*r**2/2+third_bound*r**5/15+8*eta*r**2
+moment_lower = first_lower*2*r**3/3-moment_error
+moment_upper = first_upper*2*r**3/3+moment_error
+assert moment_lower <= moment_upper < 0
+assert F(-1168, 10**8) < moment_lower/(2*r*mean_lower)
+assert moment_upper/(2*r*mean_upper) < F(-1089, 10**8)
+
+delta = F(1, 10**272)
+point_p = 6200*F(245, 10**14)
+point_z = F(10, 9)*(point_p+3*F(1, 10**60))+F(1, 10**281)
+point_l0 = F(1, 10**281)
+point_y = (F(6, 10**24)+9*delta)/(1-3*delta)
+point_v = F(552, 100)*10**9*(F(4, 10**48)+12*delta)
+removed_energy = point_p**2+point_z**2+point_l0**2+point_y**2+point_v**2
+assert removed_energy < F(1, 10**15)
+
+amplitude_lower = tau_lower*(4-sine_energy_error-removed_energy)
+amplitude_upper = tau_upper*(4+sine_energy_error)
+assert F(12449194, 10**8) < amplitude_lower
+assert amplitude_upper < F(12449216, 10**8)
+assert F(124481, 10**6) < amplitude_lower-eps
+assert amplitude_upper+transfer < F(12449283, 10**8)
+print('PASS weighted rank-one collar and actual projected norm guards')
+```
