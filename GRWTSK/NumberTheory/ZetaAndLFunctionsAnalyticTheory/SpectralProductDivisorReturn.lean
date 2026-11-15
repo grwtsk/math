@@ -310,3 +310,77 @@ with the actual completed divisor. Constructing that product from
 arithmetic data, proving analytic source identification, and supplying
 all-height zero coverage remain open in math#1805, #1800, #1806 and #1807.
 -/
+
+/-!
+## A bound on the multiplicity-weighted zero sum at the anchor
+
+Use the same pole-cleared `ξ` and `L=ξ'/ξ` as above. For a complex point
+`ρ` in the open critical strip put
+`K(ρ)=(2-Re ρ)/((2-Re ρ)²+(Im ρ)²)`. Let `S` be any finite set of
+distinct actual zeros of ξ. If every integer weight `k(ρ)≥0` is at most
+the analytic order of ξ at `ρ`, then
+
+`Σ_{ρ∈S} k(ρ) K(ρ) ≤ L(2) < 1/2`.
+
+Indeed, take real parts in the centered Hadamard sum above. Each paired
+term is `(2-ρ)⁻¹+(2-(1-ρ))⁻¹`. Its real part is the sum of the two
+positive `K` terms. Reflection preserves analytic order. Expanding the
+pair sum with multiplicities gives the sum over the entire actual
+divisor. Absolute convergence also follows directly from the strip
+bound and `Σ |ρ-1/2|⁻²<∞`. Dropping any nonnegative residual weights
+gives the first inequality.
+
+Logarithmically differentiate the actual completion at `s=2` to get
+`L(2)=3/2-(log π+γ_E)/2-Σ_{n≥1} Λ(n)/n²`, with Euler's constant
+`γ_E` and the von Mangoldt function `Λ`. The terms `1/2+1` come
+from the two pole-clearing factors. The gamma term uses
+`Γ'(1)/Γ(1)=-γ_E`, as in Mathlib's `Complex.digamma_one` and
+[DLMF 5.4.12](https://dlmf.nist.gov/5.4#E12). The Euler term is the
+same absolutely convergent series used in the uncompleted anchor
+bound above. Keeping all powers of 2 and 3 yields a lower bound
+`(log 2)/3+(log 3)/8` on that series by two geometric sums.
+
+The increasing sequence `H_n-log(n+1)` tends to `γ_E` and starts
+at `1-log 2`. Monotonicity follows by integrating `1/x` on
+`[n+1,n+2]`. Using `π>3` now gives
+`L(2)<1+(log 2)/6-(5/8)log 3<1/2`. For the last inequality,
+strict convexity of `1/x` gives the trapezoid upper bound
+`log 2<3/4` on `[1,2]` and the midpoint lower bound
+`log 3>1` on `[1,3]`.
+
+The quartet `1/2±1/4±3i` from the derivative test contributes at
+least `2(20/169+28/193)=17184/32617>1/2` if each of its points is
+present. Even as a sub-divisor with other roots present, it exceeds
+the bound. More generally, any off-line nonreal zero of height at
+most 3 would supply a quartet under reflection and conjugation.
+Write its horizontal displacement as `α` and take one copy of each
+of its four distinct points. Their combined `K` term decreases as
+the common absolute height increases, since each numerator
+`2-Re ρ` is positive and independent of height. At height 3 the
+combined term is `6A/(A²+36α²)` with `A=45/4-α²`. As
+`0≤α²≤1/4`, `A≥11` and
+`A²+36α²=2025/16+(27/2)α²+α⁴≤130`. Thus the contribution is at
+least `33/65>1/2`. The existing centered Mellin height-five
+exclusion gives a separate location check via Euler–Maclaurin
+remainder estimates in `CriticalStripFiveHeightSeed.lean`.
+The weighted inclusion bound here applies at arbitrary heights.
+
+For the normalized source `F(z)=ξ(1/2+iz)/ξ(2)` at `a=-3i/2`,
+the bound is on `Im (F'/F)(a)`. Scalar normalization and a real
+spectral exponential slope leave this imaginary derivative unchanged.
+For an exact germ return
+`G=e^h F`, use the corrected observation
+`Im ((G'/G)(a)-h'(a))` with differentiable `h` at `a`.
+A candidate inventory still needs a proof of its full point and weight
+agreement, including coverage of every actual zero at all heights.
+
+The separate signed Möbius identity
+`pickupCross_eq_observed_sub_surplus_add_defect` at `073508598443`
+keeps ordered graph surplus and the remaining signed defect
+explicit. The `K` sum here has nonnegative weights on the analytic
+divisor. A transfer from graph pickup to this sum requires a
+source-preserving proof of the point and weight map.
+
+This section records an analytic derivation. Lean elaboration,
+kernel replay and transitive axiom audit were NOT_RUN.
+-/
