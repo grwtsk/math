@@ -13634,3 +13634,334 @@ for a in labels:
 assert max(upper)<F(".953004")
 print("PASS directed nonuniform coupled twenty-row bound",*[float(upper[2*j]) for j in range(5)])
 ~~~
+
+## A trace obstruction on the actual unpaid negative support
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact integer and rational guards. Lean elaboration, kernel replay
+and transitive axiom audit are NOT_RUN. External independent
+review is UNASSESSED.
+
+Use the original primitive nonprincipal odd character modulo
+three and the bounded complex odd physical carrier
+$\mathcal H=L^2_{\rm odd}([-4,4],dt;\mathbb C)$.
+The principal-pole term is zero for this sector.
+Let $\lambda=0.0001071$, $B=0.124997987$ and
+$S_\lambda=BI-\lambda\Pi_H+K^*m_+K$ on the original
+carrier, using the same zero extension, Fourier restriction $K$
+and orthogonal projection $\Pi_H$. For the twenty certified
+reflected enclosures put
+$S_{\rm all20}=S_\lambda-\mathcal W_{\rm all20}^*\mathcal W_{\rm all20}$.
+Let $N_{\rm out}$ be the actual negative Fourier restriction
+outside those enclosures. In folded coordinates its output
+measure is $m_-(\nu)\,d\nu/\pi$ on the positive half-axis of
+the remainder. Then
+$$
+ \operatorname{tr}\!left(N_{\rm out}S_{\rm all20}^{-1}
+                           N_{\rm out}^*\right)>1.519 .
+$$
+The global trace-at-most-one sufficient condition therefore fails.
+The required operator norm bound remains open. The corridor below
+meets at least $840$ distinct connected components of the actual
+unpaid negative set.
+
+### An exact folded mass lower bound
+
+Use the positive-frequency corridor with $c_1$-detunings
+$[5500,20000]$ and its reflection. It lies in the original
+residual set, above the previous $c_4$ enclosure and below
+the previously debited far slab. The original filter bounds give
+$w\ge1-3\cdot10^{-10}$. On the corridor the two integer argument
+bounds $47583754<3|\nu|/(2\pi)<47591000$ and the full
+Binet error $5/(9y)+9/(32y^2)$ at $y=|\nu|/2$ give
+$17.6780<A<17.6782$.
+Keep the literal $458$ signed prime-power terms of $P_4$,
+their second derivative bound $|P_4''|<13504$, and their
+absolute coefficient mass bound $211$.
+
+Use step $h=0.02$ and fixed denominator $Q=10^{14}$.
+Prepare the left endpoint phase and one-step rotation for
+each term by the source rational trigonometric enclosure.
+Their complex errors at the rounded Cartesian coordinates
+are below $10^{-11}$. Signed amplitude errors are below
+$10^{-14}$. Advance the integer Cartesian coordinates by
+complex multiplication and truncate each coordinate to the
+same denominator. As in the previous signed slab checks,
+$E_{k+1}\le(1+10^{-11})E_k+10^{-11}+2/Q$ and
+$E_k<(2k+1)10^{-11}$ by induction, using $E_k<1/2$ and
+$2/Q<10^{-11}/2$. The corridor has $725000$
+increments, hence phase error below $1.5\cdot10^{-5}$.
+The weighted endpoint error is below
+$211(1.5\cdot10^{-5})+458(10^{-14})(1+1.5\cdot10^{-5})<0.0032$.
+
+At each directed cell the prime polynomial is bounded below
+by the smaller rounded endpoint minus $0.0032+13504h^2/8$.
+Together with the gamma upper bound the negative depth is
+bounded below pointwise by the positive part of the smaller
+rounded endpoint minus $18.3566$, times
+$1-3\cdot10^{-10}$. The angular folding uses $d\nu/\pi$.
+The exact count is $6235$ cells with strictly positive lower
+negative depth. The sum of lower cell depths before the
+filter and measure factors, in units of $1/Q^2$, is
+$$
+ 162477510427370156386184156969311 .
+$$
+Multiply by $h(1-3\cdot10^{-10})/(Q^2(22/7))$.
+This proves the actual folded negative mass from the
+corridor is above $103.39$. The computation uses
+signed 128-bit integer intermediates. All scales,
+intermediate sizes and accumulated sum sizes are bounded
+in the initialization guard.
+
+### Separated negative components
+
+The same directed interpolation bounds $P_4$ above by the
+larger rounded endpoint plus $0.0032+13504h^2/8$ on each
+cell. If that larger endpoint is below $16.9996$, the
+gamma lower bound gives strict positivity throughout the
+cell. Scan the directed cells in order. Select the first
+certified negative cell and thereafter the first certified
+negative cell following a new certified positive cell.
+The exact count is $840$ selected negative cells.
+Every consecutive pair of selected negative cells is
+separated by a strictly positive interval, so their
+components of the actual unpaid negative set are pairwise
+distinct. All cells lie in the original residual corridor.
+
+### The true comparator and trace
+
+The original pointwise bounds $A<61$, $|P_4|<211$ and
+$0\le w\le1$ on the residual set give $m_+\le272$.
+Plancherel gives $\|K\|\le1$. The actual comparator satisfies
+$$
+ 0.046996S_\lambda\le S_{\rm all20}\le S_\lambda\le (B+272)I .
+$$
+It is invertible and inverse order gives
+$S_{\rm all20}^{-1}\ge(B+272)^{-1}I$. Write $N_F$ for
+restriction of $N_{\rm out}$ to the reflected corridor.
+Both maps are Hilbert--Schmidt because the angular multiplier
+is bounded on a bounded set and the physical interval has finite
+length. In the folded output space one can also integrate the
+squared norm of the sine kernel against the finite negative
+measure.
+The folded physical evaluation at positive $\nu$ is the
+sine kernel on the odd carrier up to the unit phase from
+the original Fourier convention. Its squared physical norm is
+$$
+ \|\sin(\nu t)\|_{L^2([-4,4])}^2
+ =4-\frac{\sin(8\nu)}{2\nu}
+ \ge4-\frac1{2\cdot10^7}
+$$
+on the corridor. Compression to this restriction and
+positive trace comparison therefore give
+$$
+ \begin{aligned}
+ \operatorname{tr}(N_{\rm out}S_{\rm all20}^{-1}N_{\rm out}^*)
+ &\ge\operatorname{tr}(N_F S_{\rm all20}^{-1}N_F^*)\\
+ &\ge\frac{\|N_F\|_{\mathrm{HS}}^2}{B+272}\\
+ &>\frac{(4-1/(2\cdot10^7))\cdot103.39}{B+272}>1.519 .
+ \end{aligned}
+$$
+These are exact lower inequalities for the actual trace.
+The lower trace argument also applies to any uniformly positive
+physical comparator bounded above by $(B+272)I$ and any actual
+negative restriction that contains the reflected corridor. The
+remaining norm bound $\|N_{\rm out}S_{\rm all20}^{-1}
+N_{\rm out}^*\|\le1$ is equivalent to the all-$H$ floor after
+minimization with the seven existing leading inverses. That
+floor is the remaining input to the original directional
+arithmetic return.
+
+### Exact source checks
+
+Extract the first Python block and run it with the complete
+pinned source Markdown path as its argument. Save the standard
+output. Compile the accumulator as C++17 with signed 128-bit integer
+support and feed it the initializer output. The replay used
+Clang with undefined-behavior sanitization and fatal warnings.
+Save the accumulator output and pass its path to the final
+Python guard.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+assert len(sys.argv)==2
+start,stop=5500,20000
+left,right=c0+start,c0+stop
+assert F(10**8,3)-1<left<right<10**8
+assert left>30000000 and right<35*10**24
+assert right<F("1852422754.1662946")-10
+assert right<F("3806849122.861433")-F(1,160)
+assert F("5313.55")+2<start<stop<20345
+Alo,Ahi=F("17.6780"),F("17.6782")
+lowarg,higharg=47583754,47591000
+assert lowarg<3*left/(2*pi_upper)
+assert 3*right/(2*pi_lower)<higharg
+y0=left/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+assert sum(max(map(abs,w)) for w,_ in atoms)<211
+Q=10**14
+step=F(".02")
+count=int(F(stop-start)/step)
+assert start+count*step==stop
+eps=F("1e-11")
+assert 2*F(1,Q)<eps/2 and (2*count+1)*eps<F("15e-6")<F(1,2)
+amp_error=F("1e-14")
+assert 211*F("15e-6")+458*amp_error*(1+F("15e-6"))<F(".0032")
+threshold=Ahi+F(".0032")+13504*step**2/8
+assert threshold==F("18.3566")
+assert Alo-F(".0032")-13504*step**2/8==F("16.9996")
+assert (threshold*Q**2).denominator==1
+print(count,len(atoms))
+ar=0
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    err=max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+    assert err<eps
+    return re,im
+for weight,lag in atoms:
+    amp=round(sum(weight)*Q/2)
+    assert max(abs(F(amp,Q)-v) for v in weight)<amp_error
+    assert abs(amp)<212*Q
+    ar+=abs(amp)
+    re,im=anchor(multiply((left,left),lag))
+    twr,twi=anchor(multiply((step,step),lag))
+    print(amp,re,im,twr,twi)
+assert ar<212*Q
+assert 8*Q**2<2**127 and 424*Q**2<2**127
+assert 212*Q<2**63 and count*424*Q**2<2**127
+assert (424+19)*Q**2<2**127
+~~~
+
+~~~cpp
+#include <algorithm>
+#include <cstdint>
+#include <iostream>
+#include <vector>
+
+using Wide = __int128_t;
+constexpr Wide grid = 100000000000000LL;
+constexpr Wide positive_threshold = Wide(169996)*(grid*grid/10000);
+constexpr Wide threshold = Wide(183566)*(grid*grid/10000);
+
+struct Row {
+    int64_t amplitude;
+    int64_t real_part;
+    int64_t imaginary_part;
+    int64_t rotation_real;
+    int64_t rotation_imaginary;
+};
+
+bool phase_coordinate(Wide value) {
+    return -2*grid < value && value < 2*grid;
+}
+
+void print(Wide value) {
+    if (value >= 10) print(value/10);
+    std::cout << int(value%10);
+}
+
+int main() {
+    int count, row_count;
+    if (!(std::cin >> count >> row_count)) return 1;
+    if (count<1 || count>725000 || row_count!=458) return 2;
+    std::vector<Row> rows(static_cast<std::size_t>(row_count));
+    Wide amplitude_sum=0;
+    for (auto &row : rows) {
+        if (!(std::cin >> row.amplitude >> row.real_part
+              >> row.imaginary_part >> row.rotation_real
+              >> row.rotation_imaginary)) return 3;
+        const Wide a=row.amplitude;
+        amplitude_sum += a>=0 ? a : -a;
+        if (!phase_coordinate(row.real_part) ||
+            !phase_coordinate(row.imaginary_part) ||
+            !phase_coordinate(row.rotation_real) ||
+            !phase_coordinate(row.rotation_imaginary)) return 4;
+    }
+    if (amplitude_sum>=212*grid) return 5;
+    Wide previous=0;
+    Wide total=0;
+    int negative_cells=0;
+    int separated_negative_runs=0;
+    bool negative_since_positive=false;
+    for (int k=0; k<=count; ++k) {
+        Wide endpoint=0;
+        for (auto &row : rows) {
+            endpoint += Wide(row.amplitude)*row.real_part;
+            if (k==count) continue;
+            const Wide re=row.real_part, im=row.imaginary_part;
+            const Wide next_re=(re*row.rotation_real-im*row.rotation_imaginary)/grid;
+            const Wide next_im=(re*row.rotation_imaginary+im*row.rotation_real)/grid;
+            if (!phase_coordinate(next_re) || !phase_coordinate(next_im)) return 6;
+            row.real_part=static_cast<int64_t>(next_re);
+            row.imaginary_part=static_cast<int64_t>(next_im);
+        }
+        if (k>0) {
+            const Wide lower=std::min(previous,endpoint)-threshold;
+            if (lower>0) {
+                total+=lower;
+                ++negative_cells;
+                if (!negative_since_positive) {
+                    ++separated_negative_runs;
+                    negative_since_positive=true;
+                }
+            } else if (std::max(previous,endpoint)<positive_threshold) {
+                negative_since_positive=false;
+            }
+        }
+        previous=endpoint;
+    }
+    print(total);
+    std::cout << ' ' << negative_cells << ' ' << separated_negative_runs << '\n';
+}
+~~~
+
+~~~python
+from fractions import Fraction as F
+from pathlib import Path
+import sys
+
+cell_sum,cell_count,separated=map(int,Path(sys.argv[1]).read_text().split())
+assert separated==840 and cell_count==6235 and cell_sum==162477510427370156386184156969311
+Q=10**14
+width=F(".02")
+pi_upper=F(22,7)
+B,lam=F(".124997987"),F(".0001071")
+filter_lower=1-F("3e-10")
+mass=width*filter_lower*cell_sum/(pi_upper*Q**2)
+assert 0<lam<B and mass>F("103.39")
+trace=(4-F(1,2*10000000))*mass/(272+B)
+assert trace>F("1.519")
+print("PASS actual one-corridor folded mass and true trace lower bounds",float(mass),float(trace),separated)
+~~~
