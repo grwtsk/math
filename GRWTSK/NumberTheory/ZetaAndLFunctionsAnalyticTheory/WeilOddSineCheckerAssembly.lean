@@ -8,6 +8,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSec
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirdRunSecondCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirdRunDiagonal
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerFourthRunFirstCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerFourthRunSecondCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeCheckerCellDeficit
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeStageSineReturn
 
@@ -352,5 +353,100 @@ theorem primitiveStageLower_of_reducedBlockSum_le (χ : DirichletCharacter ℂ 3
     PrimitiveStageLower χ hp hn 0 :=
   primitiveStageLower_of_remainingBlockSum_le χ hp hn hodd
     (checker_unit_test_iff_remainingBlockSum_le.mp (checker_unit_test_iff_reducedBlockSum_le.mpr hr))
+
+private def fourthSecondPair : (ℕ × ℕ) × (ℕ × ℕ) := ((1177, 1294), (284, 479))
+
+private theorem fourthSecondPair_mem : fourthSecondPair ∈ reducedRunPairs :=
+  Finset.mem_erase.mpr
+    ⟨by decide, Finset.mem_erase.mpr
+      ⟨by decide, Finset.mem_sdiff.mpr
+        ⟨Finset.mem_filter.mpr ⟨Finset.mem_product.mpr ⟨by decide, by decide⟩, by decide⟩,
+          by decide⟩⟩⟩
+
+/-- The remaining lower pairs after extracting the fourth-to-second cross. -/
+def runPairsAfterFourthSecond : Finset ((ℕ × ℕ) × (ℕ × ℕ)) :=
+  reducedRunPairs.erase fourthSecondPair
+
+theorem runPairsAfterFourthSecond_card : runPairsAfterFourthSecond.card = 83 := by
+  rw [runPairsAfterFourthSecond, Finset.card_erase_of_mem fourthSecondPair_mem,
+    reducedRunPairs_card]
+
+/-- Literal checker costs over the 83 pairs left by this erasure. -/
+def blockSumAfterFourthSecond : ℕ := ∑ p ∈ runPairsAfterFourthSecond, runPairSubtotal p
+
+theorem blockSumAfterFourthSecond_eq_sum :
+    blockSumAfterFourthSecond = ∑ p ∈ runPairsAfterFourthSecond,
+      triangleBlock (price literalRawDeficit) sincEntry
+        (retainedRunCells p.1) (retainedRunCells p.2) := rfl
+
+private theorem bind_erased_subtotal {n expanded subtotal erased rest : ℕ}
+    (hn : n = expanded) (hsubtotal : expanded = subtotal + erased) (hrest : rest = erased) :
+    n = subtotal + rest := by
+  rw [hn, hsubtotal, hrest]
+
+/-- The original fourth-to-second subtotal is counted once in the split. -/
+theorem reducedBlockSum_eq_add_blockSumAfterFourthSecond :
+    reducedBlockSum = 136729321893220622228699442967370061135068769887440 + blockSumAfterFourthSecond :=
+  bind_erased_subtotal reducedBlockSum_eq_sum
+    (sum_runBlocks_eq_subtotal_add_sum_erase fourthSecondPair_mem fourthWithSecondRetainedRunCross)
+    blockSumAfterFourthSecond_eq_sum
+
+private theorem accumulate_fourth_second_subtotal {n old rest : ℕ}
+    (hn : n = 51848173367149709019037282090047455883231715357439521 + old)
+    (hrest : old = 136729321893220622228699442967370061135068769887440 + rest) :
+    n = 51984902689042929641265981533014825944366784127326961 + rest := by
+  omega
+
+/-- The checker numerator with the eight exact contributions separated. -/
+theorem literal_total_eq_certified_add_afterFourthSecond :
+    total checkerMidpointLower =
+      51984902689042929641265981533014825944366784127326961 + blockSumAfterFourthSecond :=
+  accumulate_fourth_second_subtotal literal_total_eq_certified_add_reduced
+    reducedBlockSum_eq_add_blockSumAfterFourthSecond
+
+private theorem after_fourth_second_strict_cutoff (r : ℕ) :
+    136729321893220622228699442967370061135068769887440 + r ≤
+      72239287241039083947247437354674208116768284642560478 ↔
+    r ≤ 72102557919145863325018737911706838055633215872673038 := by
+  omega
+
+private theorem after_fourth_second_unit_cutoff (r : ℕ) :
+    136729321893220622228699442967370061135068769887440 + r ≤
+      109855425140216683683216527573952544116768284642560479 ↔
+    r ≤ 109718695818323463060987828130985174055633215872673039 := by
+  omega
+
+/-- The original strict integer test in terms of the 83-pair sum. -/
+theorem checker_test_iff_blockSumAfterFourthSecond_le :
+    total checkerMidpointLower * 62500 < 47961 * denominator ↔
+      blockSumAfterFourthSecond ≤ 72102557919145863325018737911706838055633215872673038 :=
+  checker_test_iff_reducedBlockSum_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 72239287241039083947247437354674208116768284642560478)
+      reducedBlockSum_eq_add_blockSumAfterFourthSecond).to_iff.trans
+        (after_fourth_second_strict_cutoff blockSumAfterFourthSecond))
+
+/-- The separate unit test for the original radius-one stage. -/
+theorem checker_unit_test_iff_blockSumAfterFourthSecond_le :
+    total checkerMidpointLower ≤ denominator ↔
+      blockSumAfterFourthSecond ≤ 109718695818323463060987828130985174055633215872673039 :=
+  checker_unit_test_iff_reducedBlockSum_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 109855425140216683683216527573952544116768284642560479)
+      reducedBlockSum_eq_add_blockSumAfterFourthSecond).to_iff.trans
+        (after_fourth_second_unit_cutoff blockSumAfterFourthSecond))
+
+theorem rectangle_lt_of_blockSumAfterFourthSecond_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterFourthSecond ≤ 72102557919145863325018737911706838055633215872673038) :
+    sineDeficitRectangle 256 (q3SineDeficit χ) < (219 / 250 : ℝ) ^ 2 :=
+  rectangle_lt_of_reducedBlockSum_le χ hodd
+    (checker_test_iff_reducedBlockSum_le.mp (checker_test_iff_blockSumAfterFourthSecond_le.mpr hr))
+
+theorem primitiveStageLower_of_blockSumAfterFourthSecond_le (χ : DirichletCharacter ℂ 3)
+    (hp : χ.IsPrimitive) (hn : χ ≠ 1) (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterFourthSecond ≤ 109718695818323463060987828130985174055633215872673039) :
+    PrimitiveStageLower χ hp hn 0 :=
+  primitiveStageLower_of_reducedBlockSum_le χ hp hn hodd
+    (checker_unit_test_iff_reducedBlockSum_le.mp
+      (checker_unit_test_iff_blockSumAfterFourthSecond_le.mpr hr))
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddThreeSineHilbertSchmidt.CheckerTriangle
