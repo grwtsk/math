@@ -134,101 +134,101 @@ Unconditional RH for analytically continued zeta, primitive Dirichlet GRH includ
 
 **2026-11-14; grwtsk contributors; AI-assisted written mathematical argument.**
 Source owner: this module and the canonical declarations
-\`SourcePrimeCorrelation.energy\`,
-\`GammaShiftCoupling.shiftEnergy_subadditive\`,
-\`OddRootProjection.parityKernel\`, and
-\`DirichletStageChain.Admissible\`.
+`SourcePrimeCorrelation.energy`,
+`GammaShiftCoupling.shiftEnergy_subadditive`,
+`OddRootProjection.parityKernel`, and
+`DirichletStageChain.Admissible`.
 Status: **SOURCE_ANALYTIC_ARGUMENT; LEAN_ELABORATION_NOT_RUN;
 FRESH_KERNEL_NOT_RUN; TRANSITIVE_AXIOM_AUDIT_NOT_RUN;
 INDEPENDENT_REVIEW_UNASSESSED**. No new research axiom or analytic
 positivity hypothesis is assumed.
 
-Let \`g : ℝ → ℂ\` be in the original whole-line \`L²\` class, and write
-\`A_g(s) = SourcePrimeCorrelation.energy (fun t => g(t+s)-g(t))\`.
+Let `g : ℝ → ℂ` be in the original whole-line `L²` class, and write
+`A_g(s) = SourcePrimeCorrelation.energy (fun t => g(t+s)-g(t))`.
 For parity one write
-\`K(s) = OddRootProjection.parityKernel 1 s =
-exp(-3s/2)/(1-exp(-2s))\` on \`s>0\`.
-For every \`r>0\`, define
+`K(s) = OddRootProjection.parityKernel 1 s =
+exp(-3s/2)/(1-exp(-2s))` on `s>0`.
+For every `r>0`, define
 
-\`\`\`text
+```text
 m_r(s)=min(K(s),K(r-s)),       0<s<r,
 M_r=∫_(0,r) m_r(s)ds=2∫_(r/2,r)K(s)ds>0,
 ν_r(s)=m_r(s)/M_r.
-\`\`\`
+```
 
-The identity for \`M_r\` follows from the positivity and monotone decrease
-of the **actual** parity-one kernel; \`m_r\` remains bounded at either
-endpoint. In particular \`ν_r\` is a nonnegative, symmetric probability
-density, \`ν_r(r-s)=ν_r(s)\`. The existing source shift-energy theorem gives
+The identity for `M_r` follows from the positivity and monotone decrease
+of the **actual** parity-one kernel; `m_r` remains bounded at either
+endpoint. In particular `ν_r` is a nonnegative, symmetric probability
+density, `ν_r(r-s)=ν_r(s)`. The existing source shift-energy theorem gives
 
-\`\`\`text
+```text
 A_g(r) ≤ 2A_g(s)+2A_g(r-s).
-\`\`\`
+```
 
-Multiply by \`ν_r(s)\`, integrate over \`0<s<r\`, use symmetry and
+Multiply by `ν_r(s)`, integrate over `0<s<r`, use symmetry and
 translation-energy integrability. This proves, without any derivative
 estimate,
 
-\`\`\`text
+```text
 A_g(r) ≤ 4∫_(0,r)ν_r(s)A_g(s)ds
        ≤ (4/M_r)∫_(0,r)K(s)A_g(s)ds.             (8)
-\`\`\`
+```
 
 This estimate concerns the **same** source translation energy and complete
 physical gamma density, not a proxy Hilbert-space or spectral form. For
-the original real odd test supported in \`[-1,1]\` and \`0<r<2\`, the
-exact preceding support identity \`A_g(r)=F_g(r)+R_g(r)\`, \`F_g(r)≥0\`,
+the original real odd test supported in `[-1,1]` and `0<r<2`, the
+exact preceding support identity `A_g(r)=F_g(r)+R_g(r)`, `F_g(r)≥0`,
 gives
 
-\`\`\`text
+```text
 R_g(r)≤(4/M_r)∫_(0,r)K(s)[F_g(s)+R_g(s)]ds.    (9)
-\`\`\`
+```
 
-For \`s<r<2\`, the bracket equals the true \`A_g(s)\`. No naked \`K\` is
+For `s<r<2`, the bracket equals the true `A_g(s)`. No naked `K` is
 integrated at the singular origin; the original admissible-test
-\`gammaCorrectionDensity\` premise supplies finiteness.
+`gammaCorrectionDensity` premise supplies finiteness.
 
 **Optimality limited to this proof mechanism.** If one integrates just the
-displayed \`A(r)≤2A(s)+2A(r-s)\` against any nonnegative normalized
-density \`φ\`, the effective density is
-\`ν(s)=[φ(s)+φ(r-s)]/2\`. A pointwise comparison
-\`4ν(s)≤c K(s)\`, by symmetry, also forces
-\`4ν(s)≤c min(K(s),K(r-s))\`. Integration gives \`c≥4/M_r\`.
-Choosing \`ν=ν_r\` attains equality. This **does not** assert global
+displayed `A(r)≤2A(s)+2A(r-s)` against any nonnegative normalized
+density `φ`, the effective density is
+`ν(s)=[φ(s)+φ(r-s)]/2`. A pointwise comparison
+`4ν(s)≤c K(s)`, by symmetry, also forces
+`4ν(s)≤c min(K(s),K(r-s))`. Integration gives `c≥4/M_r`.
+Choosing `ν=ν_r` attains equality. This **does not** assert global
 optimality among all source-specific or arithmetic inequalities.
 
-For \`s>0\`, the exact kernel can be written
-\`K(s)=e^(-s/2)/(2sinh s)≤1/(2s)\`. Consequently
+For `s>0`, the exact kernel can be written
+`K(s)=e^(-s/2)/(2sinh s)≤1/(2s)`. Consequently
 
-\`\`\`text
+```text
 M_r ≤ 2∫_(r/2,r)ds/(2s)=log 2,
 4/M_r ≥ 4/log 2.
-\`\`\`
+```
 
-At the physical prime-two shift \`r₂=log2\`, with native signed weight
-\`w₂=-p=-log2/sqrt2\`,
+At the physical prime-two shift `r₂=log2`, with native signed weight
+`w₂=-p=-log2/sqrt2`,
 
-\`\`\`text
+```text
 p·(4/M_(log2)) ≥ 2*sqrt2 > 1.                (10)
-\`\`\`
+```
 
 Thus **even the best one-step symmetric pointwise allocation cannot
-absorb \`p R(log2)\` with one copy of the gamma integral**.
+absorb `p R(log2)` with one copy of the gamma integral**.
 Equation (10) refutes that *sufficient method only*. It neither gives
 a negative admissible test nor refutes the full signed Weil inequality.
 
 The gamma-window mass also has the exact closed form
 
-\`\`\`text
+```text
 T(y)=∫_(y,∞)K(s)ds
     =artanh(e^(-y/2))-atan(e^(-y/2)),     y>0;
 M_r=2[T(r/2)-T(r)].
-\`\`\`
+```
 
-Indeed with \`x=e^(-s/2)\`,
-\`K(s)ds=-2x²/(1-x⁴)dx\`, and
-\`2x²/(1-x⁴)=1/(1-x²)-1/(1+x²)\`. The formula
-retains the entire archimedean tail. The individual \`T(0)\` is divergent.
+Indeed with `x=e^(-s/2)`,
+`K(s)ds=-2x²/(1-x⁴)dx`, and
+`2x²/(1-x⁴)=1/(1-x²)-1/(1+x²)`. The formula
+retains the entire archimedean tail. The individual `T(0)` is divergent.
 
 ## 7. Certified falsification of pointwise Fourier-symbol positivity
 
@@ -238,15 +238,15 @@ replacement: the unrestricted pointwise Fourier multiplier of the
 original signed q=3, parity-one source is not everywhere nonnegative.
 
 Fix the genuine primitive odd character modulo three, original
-\`T=1\`, \`g=liftReal f\`, and the full signed native integer list
-\`2,3,4,5,6,7\`. Let \`w₂=-log2/sqrt2\`, \`w₃=0\`,
-\`w₄=log2/2\`, \`w₅=-log5/sqrt5\`, \`w₆=0\`, \`w₇=log7/sqrt7\`.
+`T=1`, `g=liftReal f`, and the full signed native integer list
+`2,3,4,5,6,7`. Let `w₂=-log2/sqrt2`, `w₃=0`,
+`w₄=log2/2`, `w₅=-log5/sqrt5`, `w₆=0`, `w₇=log7/sqrt7`.
 The source Fourier convention is
-\`ĝ(ξ)=∫_ℝ g(t)exp(-iξt)dt\`.
-For real \`g\` with finite original full gamma correction,
+`ĝ(ξ)=∫_ℝ g(t)exp(-iξt)dt`.
+For real `g` with finite original full gamma correction,
 Plancherel and Tonelli give the **source identity**
 
-\`\`\`text
+```text
 Qχ,1(g)+E_g = (1/(2π))∫_ℝ |ĝ(ξ)|² S(ξ)dξ,
 
 S(ξ)=1+gammaConstant(3,1)+B(ξ)
@@ -255,92 +255,92 @@ S(ξ)=1+gammaConstant(3,1)+B(ξ)
 B(ξ)=2∫_(0,∞) K(s)[1-cos(ξs)]ds
     =2Σ_(k=0..∞) ξ²/[a_k(a_k²+ξ²)],
 a_k=3/2+2k.
-\`\`\`
+```
 
-For the real compact-supported odd \`Admissible\` class, this is
+For the real compact-supported odd `Admissible` class, this is
 an **exact change of representation** of the original arithmetic
 quantity, not a second independently defined spectral operator.
-Every prime power and phase, including \`Λ(4)=log2\`, is retained.
-The \`B\` series follows by expanding the positive kernel as
-\`Σ_k exp(-a_k s)\` and integrating the nonnegative
-\`1-cos(ξs)\` terms. The quarter-digamma source identity gives
+Every prime power and phase, including `Λ(4)=log2`, is retained.
+The `B` series follows by expanding the positive kernel as
+`Σ_k exp(-a_k s)` and integrating the nonnegative
+`1-cos(ξs)` terms. The quarter-digamma source identity gives
 
-\`\`\`text
+```text
 gammaConstant(3,1)=log(3/π)-γ+π/2-3 log2,
 γ=Euler–Mascheroni constant.
-\`\`\`
+```
 
-At the **rational frequency \`ξ=13\`**, there is the exact rational
+At the **rational frequency `ξ=13`**, there is the exact rational
 interval certificate
 
-\`\`\`text
+```text
 -69/100 < S(13) < -17/25 < 0.                 (11)
-\`\`\`
+```
 
 The certificate uses only rational operations with mathematically
 valid enclosures: Machin's identity
-\`π=16atan(1/5)-4atan(1/239)\` with alternating-Taylor remainders;
-\`H_128-log129 < γ < H_128-log128\`;
-positive \`atanh\`-series bounds for \`log\`; integer-square-root
-brackets for \`sqrt{2,5,7}\`; Taylor/Lipschitz enclosures after
-reducing \`13log n\` modulo \`2π\`; and the first 512 rational terms
-in \`B(13)\`. The omitted positive series tail is bounded by
+`π=16atan(1/5)-4atan(1/239)` with alternating-Taylor remainders;
+`H_128-log129 < γ < H_128-log128`;
+positive `atanh`-series bounds for `log`; integer-square-root
+brackets for `sqrt{2,5,7}`; Taylor/Lipschitz enclosures after
+reducing `13log n` modulo `2π`; and the first 512 rational terms
+in `B(13)`. The omitted positive series tail is bounded by
 
-\`\`\`text
+```text
 0 ≤ B(13)-B_512(13) ≤ 13²/[8*(511)²].
-\`\`\`
+```
 
-The directly executed Python 3.13.5 \`fractions.Fraction\` verifier
+The directly executed Python 3.13.5 `fractions.Fraction` verifier
 (exact arithmetic, exit 0; SHA-256
-\`09073c380cb4dc6c310d79b15d092ed5e5f14486fafdeb1e31601a6f801caeab\`)
-gave \`S(13)\` enclosed between approximately
-\`-0.689301573\` and \`-0.681438529\`. The rational inequalities
+`09073c380cb4dc6c310d79b15d092ed5e5f14486fafdeb1e31601a6f801caeab`)
+gave `S(13)` enclosed between approximately
+`-0.689301573` and `-0.681438529`. The rational inequalities
 in (11), not the displayed decimals, are the certified output.
 The calculation's **mathematical scope** is pointwise negativity of
 the source-derived *unrestricted multiplier* only. It is **not** a
-certificate that an original admissible supported test makes \`Q+E<0\`.
+certificate that an original admissible supported test makes `Q+E<0`.
 
 Indeed a real odd Schwartz function can have its Fourier transform
-concentrated in small neighborhoods of \`±13\`, giving a negative
-value for this extended unrestricted \`Q+E\`. Such a function cannot
+concentrated in small neighborhoods of `±13`, giving a negative
+value for this extended unrestricted `Q+E`. Such a function cannot
 simultaneously have Fourier localization and compact support in
-\`[-1,1]\` as required by \`Admissible χ 1 f\`. Therefore (11) proves
+`[-1,1]` as required by `Admissible χ 1 f`. Therefore (11) proves
 that a simple pointwise-positive-multiplier shortcut fails; it says
 **nothing against** the original compact-support sign target.
 
-**Hostile source checks.** Genuine polynomial odd compact \`C²\`
-test \`g(t)=t(1-t²)^3\` on \`[-1,1]\`, zero outside, satisfies the
+**Hostile source checks.** Genuine polynomial odd compact `C²`
+test `g(t)=t(1-t²)^3` on `[-1,1]`, zero outside, satisfies the
 rational support, polarization and reflection identities at surrogate
-shifts \`1/2\` and \`3/2\` by independent exact SymPy polynomial
-integration. These are **not** \`log2\`, \`log5\` or certified full
+shifts `1/2` and `3/2` by independent exact SymPy polynomial
+integration. These are **not** `log2`, `log5` or certified full
 gamma quadratures. The signs of the distinct reflected pairings
 remain variable. The one-step allocation and pointwise multiplier
-failures must not be confused with negative original \`Q\`.
+failures must not be confused with negative original `Q`.
 
 ### Still-open immediate source-return obligations
 
 The next arithmetic consumer is still the exact
-\`DirichletStageChain.PrimitiveStageLower\` at \`q=3,j=0\`, for
-**all** original \`Admissible χ 1 f\`. The separately proposed
-piecewise potential floor \`D(u)≥α_j+1/100\` and the **joint** signed
+`DirichletStageChain.PrimitiveStageLower` at `q=3,j=0`, for
+**all** original `Admissible χ 1 f`. The separately proposed
+piecewise potential floor `D(u)≥α_j+1/100` and the **joint** signed
 reflection/overlap budget
 
-\`\`\`text
+```text
 pR(log2)+|w5|R(log5)
  ≤ ∫_0² K(s)R(s)ds
    +w4 R(log4)+w7 R(log7)
    +2Σ_j α_j∫_(I_j)h(u)²du
-\`\`\`
+```
 
 remain **UNPROVED**; no observed numerical search has established
 their universal quantifiers. A proof needs explicit cancellation
 between the actual real odd source reflections and two-sided
 gamma boundary potential without double spending. The first
 formal source-return bridges still missing are integrated
-\`A=F+R\`, \`C(log2)=E-B_out-R(log2)/2\`,
-\`C(log n)=-J_n\`, and the complete signed
-\`Q=full signed overlap\`. No new theorem status is promoted.
-RH(zeta), \`PrimitiveNegativeWitness\`, the completed
+`A=F+R`, `C(log2)=E-B_out-R(log2)/2`,
+`C(log n)=-J_n`, and the complete signed
+`Q=full signed overlap`. No new theorem status is promoted.
+RH(zeta), `PrimitiveNegativeWitness`, the completed
 pole-inclusive Weil criterion (both pole orientations), dual
 characters, all windows/conductors and primitive Dirichlet
 GRH including conductor one remain **UNPROVED**.
