@@ -12842,3 +12842,511 @@ Dphase=F(".2") if role=="first" else F(".14")
 assert 0<=phase_remainder<Dphase and 0<=phase_polynomial_cost<(Dphase-phase_remainder)**2
 print("PASS exact overlapping positive budgets, signed full component, and endpoint-phase guard",role)
 ~~~
+
+## Two detached reflected slabs at the previous negative witnesses
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source guards. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review
+is UNASSESSED.
+
+Keep the primitive odd character modulo three on the original bounded
+complex odd carrier $\mathcal H=L^2_{\rm odd}([-4,4],dt;\mathbb C)$.
+The principal-pole term is zero in this sector. Keep $\lambda=0.0001071$,
+$B=0.124997987$ and $S_\lambda=BI-\lambda\Pi_H+K^*m_+K$, with
+the original projection and bounded Fourier restriction $K$
+after zero extension. The multiplier of the residual source
+on these slabs is $m(\nu)=w(\nu)(A(\nu)-P_4(\nu))$.
+
+On the positive frequency axis the two additional slabs are
+$c_1+[350,405]$ and $c_1+[20345,20410]$. Reflect these slabs.
+All actual clipped negative density in them lies in the nine
+enclosures with $c_1$-detunings
+$$
+\begin{gathered}
+ [377.82,378.10],\ [387.64,387.84],\ [20348.52,20348.80],\
+ [20373.44,20373.68],\ [20380.78,20381.10],\ [20388.56,20388.76],\\
+ [20400.66,20400.80],\ [20406.12,20406.34],\ [20407.10,20407.34].
+\end{gathered}
+$$
+The twenty rows formed by these nine new enclosures and the
+original eleven have joint comparison norm below $0.954$ with
+respect to $S_\lambda$.
+
+### The original signed source and positive supply
+
+The two slabs lie in the original residual set and avoid the paid
+pair and deleted collar. The original filters satisfy
+$1-3\cdot10^{-10}\le w\le1$ on both slabs.
+For $3|\nu|/(2\pi)$ the near slab uses the integer arguments
+$47581295$ and $47581323$ and the far slab uses $47590842$ and
+$47590875$. Use the full Binet error $5/(9y)+9/(32y^2)$ for
+$y=|\nu|/2$. This yields $17.6779<A<17.6780$ on the near
+slab and $17.6781<A<17.6782$ on the far slab.
+
+Use all $458$ signed terms of the original prime-power polynomial and
+the established second-derivative bound $13504$. The anchored
+mesh rotation above applies with the new left endpoints and
+$2750$ and $3250$ increments, respectively, at width $0.02$.
+The bounds $10^{-11}$ on both complex anchors and $211$ on
+the absolute directed amplitude mass give prime-sum error
+below $0.000022$ at every mesh node. The interpolation errors
+include the original $13504h^2/8$ bound on each interval
+of width $h$. The exact guards perform $2726$ and $3176$
+interval checks on the two complements. The first needs no
+bisections and the second needs four. Every final cell is
+strictly positive. The guards also certify positive
+endpoints of all nine enclosures and negative values
+at their centers. Each debit restricts the actual folded negative
+measure to its complete enclosure.
+
+The new positive windows have radius two. The two near
+centers have detunings $377.96$ and $387.74$. The seven
+far centers have detunings
+$$
+ 20348.66,\ 20373.56,\ 20380.94,\ 20388.66,\
+ 20400.72,\ 20406.24,\ 20407.22.
+$$
+The last two windows overlap on $151$ complete width-$0.02$
+cells. Compute one lower folded positive density on each
+shared cell and assign half to each row. This preserves the
+original pointwise supply. The unsplit lower folded mass on
+the common cells exceeds $17.49$. On the detuning cell $[20405.32,20405.34]$, the exact positive
+lower density is $0.6379034$ and the directed upper density
+is below $1.221$. Doubling the lower allocation on that cell
+exceeds the actual supply. All other new windows are
+disjoint from one another, from this pair, and from the
+previously charged windows, up to null endpoints.
+
+Use the original folding measure $d\nu/\pi$, original
+positive lower density with width-$0.02$ cells, and upper
+negative density with width-$0.005$ cells. Apply the original
+degree-$32$ Legendre reconstruction and carrier Gram and
+Taylor corrections. For each near row the exact positive
+cost is below $0.22$, normalized physical cost squared below
+$0.03$, residual total variation bound below $3.2$, endpoint
+phase below $0.14$, and negative upper mass below $0.35$.
+For each far row the corresponding costs are $0.33$, $0.025$,
+$4.42$, $0.14$ and $0.6$, with each inequality strict.
+
+### Joint comparison on the original physical carrier
+
+Use the same common physical input $\sqrt\beta f$ and separately
+tagged positive coordinates, with $\beta=B-\lambda>0.12$.
+The exact contraction to $S_\lambda$ energy follows from
+pointwise domination of the allocated positive measures by
+$m_+(\nu)\,d\nu/\pi$. The previous eight slab rows form the
+group centered at detuning $31.09$ with support radius below $48$,
+diagonal below $0.905$, $T<13$ and $D<0.43$, where $T,D$ denote
+its total-variation and endpoint-phase bounds. The two near rows
+form the group centered at detuning $382.85$ with radius below $7$.
+Their tagged positive Gram has norm below $0.22$ and their shared
+physical Gram has norm below $2\cdot0.03$, so the near group
+diagonal is below $0.28$. Its squared row bounds give
+$T_n<4.53$ and $D_n<0.20$. Use the established $c_4$ row
+with diagonal below $0.46$, $T_4<4.2$, $D_4<0.2$, radius two.
+Group the seven far rows at detuning $20377.5$ with radius
+below $33$. The tagged positive Gram plus the shared
+physical Hilbert--Schmidt sum give its diagonal below
+$0.33+7(0.025)=0.505$. Its squared row bounds give
+$T_f<11.7$ and $D_f<0.38$.
+
+For an endpoint phase at $\pm4$, the first centered moment for
+an individual row of center $c$ obeys
+$D_1(\widehat c)\le |c-\widehat c|D(c)+2T(c)$.
+This follows by writing $\nu-\widehat c=(\nu-c)+(c-\widehat c)$
+in the integral. Sum these squared row bounds to obtain
+$D_{1,\mathrm{old}}<38$ at detuning $31.09$ and
+$D_{1,n}<10.1$ at detuning $382.85$.
+
+For the old-to-near block the center difference exceeds $351$,
+the sum exceeds $10^8$ and total detuning is at most $r=55$.
+In the two exact physical sine Gram denominators use
+$$
+ \frac1{q+z}=\frac1q-\frac{z}{q^2}+\frac{z^2}{q^2(q+z)} .
+$$
+The constant term factors the two endpoint phases. The linear
+term factors one first centered moment and one phase, once
+for each choice of side. The inverse denominator remainder
+is pointwise dominated by $r^2/(q^2(|q|-r))$ and is bounded
+using the two total variations. Thus the mixed block norm is
+at most
+$$
+ \frac1\beta\left[
+ DD_n(1/d+1/s)
+ +(D_1D_n+DD_{1,n})(1/d^2+1/s^2)
+ +TT_n r^2\left(\frac1{d^2(d-r)}+\frac1{s^2(s-r)}\right)
+ \right]<0.044,
+$$
+where $d=351,s=10^8$. The same sine identity with frozen
+denominators gives the other mixed norms. For any two such
+groups the bound is
+$$
+ \frac1\beta\left[
+ D_aD_b(1/d+1/s)
+ +T_aT_b r\left(\frac1{d(d-r)}+\frac1{s(s-r)}\right)
+ \right].
+$$
+The old-to-$c_4$ and near-to-$c_4$ blocks are below $0.001$
+each. The sum of the three other low groups' couplings to
+the far group is below $0.001$. The exact resulting low bound
+is below $0.953$. For the original high pair the established
+norm is below $0.953$. All difference and sum denominators
+between the four low groups and both high rows exceed
+$3.8\cdot10^9$. The plain sine Gram costs less than
+$2(13+4.53+4.2+11.7)(9+2.66)/(3.8\cdot10^9\cdot0.12)
+<2\cdot10^{-6}$ across that split.
+
+The exact folded factorization gives
+$\|\mathcal W_{\rm all20} S_\lambda^{-1}\mathcal W_{\rm all20}^*\|<0.954$.
+Let $S_{\rm all20}=S_\lambda-
+\mathcal W_{\rm all20}^*\mathcal W_{\rm all20}\ge0.046S_\lambda$.
+Let $N_{\rm out}$ be the actual folded negative restriction outside
+these twenty reflected enclosures. The physical operator is
+$T_+-\lambda\Pi_H=S_{\rm all20}-N_{\rm out}^*N_{\rm out}$.
+Conjugation by $S_{\rm all20}^{-1/2}$ leaves the exact outstanding
+sign $\|N_{\rm out} S_{\rm all20}^{-1}N_{\rm out}^*\|\le1$.
+By minimization over the seven physical leading spaces with
+their existing inverses, this sign is equivalent to the
+all-$H$ floor $C_{4,+}\ge0.0001071 I_H$. The directional
+correction to the original arithmetic stage needs this floor.
+
+
+### Exact source checks
+
+Extract the following guard and pass the full source Markdown as
+its first argument. Use the region and mode pairs `near sign`,
+`near left`, `near right`, `far sign` and `far row0` through
+`far row6`. Each sign mode checks the complement of the
+displayed boxes. Each allocation mode checks one actual
+clipped negative restriction with exact rational enclosures
+and weighted Legendre moments. The decimal Cholesky step
+proposes rational coefficients for the exact trace checks.
+Run the final scalar guard for the twenty-row comparison.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+from decimal import Decimal, localcontext
+
+
+
+region, mode = sys.argv[2:]
+assert (region=="near" and mode in ("sign","left","right")) or (region=="far" and mode in ("sign","row0","row1","row2","row3","row4","row5","row6"))
+c0=F("99653682.92983")
+if region=="near":
+    start,stop=F(350),F(405)
+    raw_boxes=(("377.82","378.10"),("387.64","387.84"))
+    raw_centers=("377.96","387.74")
+    Alo,Ahi=F("17.6779"),F("17.6780")
+    lowarg,higharg=47581295,47581323
+else:
+    start,stop=F(20345),F(20410)
+    raw_boxes=(("20348.52","20348.80"),("20373.44","20373.68"),("20380.78","20381.10"),
+               ("20388.56","20388.76"),("20400.66","20400.80"),("20406.12","20406.34"),
+               ("20407.10","20407.34"))
+    raw_centers=("20348.66","20373.56","20380.94","20388.66","20400.72","20406.24","20407.22")
+    Alo,Ahi=F("17.6781"),F("17.6782")
+    lowarg,higharg=47590842,47590875
+enclosures=[(F(l),F(r)) for l,r in raw_boxes]
+centers=list(map(F,raw_centers))
+left_edge,right_edge=c0+start,c0+stop
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert left_edge>30000000 and right_edge<35*10**24
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert all(start<=c-2<c+2<=stop for c in centers)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+step=F(".02")
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("1e-11")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+if mode == "sign":
+    assert all(((v-start)/step).denominator==1 for row in enclosures for v in row)
+    for l,r in enclosures:
+        assert fast_node(l)[1]<Alo and fast_node(r)[1]<Alo
+    comp=list(zip([start]+[r for l,r in enclosures],[l for l,r in enclosures]+[stop]))
+    assert all(v>u for u,v in comp)
+    assert sum(v-u for u,v in comp+enclosures)==stop-start
+    checks,splits=0,0
+    def check(x,h):
+        global checks,splits
+        u,v=fast_node(x),fast_node(x+h)
+        er=second*h*h/8
+        checks+=1
+        if max(u[1],v[1])+er<Alo: return
+        if min(u[0],v[0])-er>Ahi:
+            raise AssertionError(("missed negative interval",str(x),str(x+h)))
+        if h<=F(".000625"):
+            raise AssertionError(("unresolved sign",str(x),str(x+h)))
+        splits+=1
+        check(x,h/2)
+        check(x+h/2,h/2)
+
+    for l,r in comp:
+        for j in range(int((r-l)/step)):
+            check(l+j*step,step)
+    assert (checks,splits)==((2726,0) if region=="near" else (3176,4))
+    print("PASS exact sign on the full detached slab complement",region,len(enclosures),checks,splits,flush=True)
+    raise SystemExit
+
+
+
+index={"left":0,"right":1}[mode] if region=="near" else int(mode[3:])
+offset=centers[index]
+low,high=[x-offset for x in enclosures[index]]
+assert all(centre-2<=l<r<=centre+2 for centre,(l,r) in zip(centers,enclosures))
+if region=="near":
+    assert centers[0]+2<centers[1]-2
+else:
+    assert all(a+2<b-2 for a,b in zip(centers[:5],centers[1:6]))
+    assert (centers[6]-centers[5])/step==49
+    assert (centers[5]+4-centers[6])/step==151
+c1=c0+offset
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+wmin=1-F("3e-10")
+positive,negative=[],[]
+h=F(".02")
+shared_mass,unsplit_mass=F(0),F(0)
+sharing_witness=None
+for i in range(-100,100):
+    x=i*h
+    lo,hi=estimate(offset+x,h)
+    lower_floor=(max(F(0),wmin*(Alo-hi)/pi_upper)*10**7//1)/F(10**7)
+    if lower_floor>0:
+        shared=region=="far" and index>=5 and centers[6]-2<=offset+x and offset+x+h<=centers[5]+2
+        unsplit_mass+=lower_floor*h
+        if shared:
+            shared_mass+=lower_floor*h
+            actual_upper=max(F(0),(Ahi-lo)/pi_lower)
+            if offset+x==F("20405.32"):
+                assert offset+x+h==F("20405.34") and lower_floor==F(".6379034")
+                assert 2*lower_floor>F("1.221")>actual_upper
+                sharing_witness=(offset+x,offset+x+h,lower_floor,actual_upper)
+        positive.append((x,x+h,lower_floor/2 if shared else lower_floor))
+h=F(".005")
+assert low/h==int(low/h) and high/h==int(high/h)
+for i in range(int(low/h),int(high/h)):
+    x=i*h
+    lo,hi=estimate(offset+x,h)
+    density=-((-max(F(0),(hi-Alo)/pi_lower)*10**7)//1)/F(10**7)
+    if density>0:negative.append((x,x+h,density))
+assert node(offset+low)[1]<Alo and node(offset+high)[1]<Alo
+assert node(offset)[0]>Ahi
+pos_mass=sum((v-u)*w for u,v,w in positive)
+neg_mass=sum((v-u)*w for u,v,w in negative)
+assert unsplit_mass-pos_mass==shared_mass/2
+if region=="far" and index>=5:
+    assert shared_mass>F("17.49") and sharing_witness is not None
+    print("PASS an exact double-allocation failure in the shared cells",
+          *(float(v) for v in sharing_witness),flush=True)
+print(region,mode,"folded allocated positive and negative-bound masses and shared lower supply",
+      float(pos_mass),float(neg_mass),float(shared_mass),flush=True)
+# Reuse the preceding coefficient, solver proposal and exact trace routines.
+matrix_source=[g for g in blocks if g.startswith("from decimal import Decimal")
+               and "PASS exact majorant costs: J2 total <.52" in g]
+assert len(matrix_source)==1
+start="# Exact polynomial budget for the wider positive allocation."
+stop='assert (F(33)*(1+2*32**2)'
+code=matrix_source[0]
+assert code.count(start)==code.count(stop)==1
+exec(compile(code.split(start)[1].split(stop)[0].lstrip(), "source coefficient and moment matrix", "exec"))
+
+assert beta==F(".124997987")-F(".0001071")
+gram_factor=F("1.006")
+assert 33*(1+2*32**2)/(2*c1)<(gram_factor-1)*min(D)
+err=F("2.1e-7")
+assert 8*(F(8)**33/factorial(33))**2<err**2
+pos_bound,neg_bound,neg_sqrt,resource_bound,pos_sqrt=(
+  (F(30),F(".35"),F(".592"),F(".22"),F("2.57")) if region=="near" else
+  (F(40),F(".6"),F(".775"),F(".33"),F("3.64"))
+)
+assert pos_mass<pos_bound and neg_mass<neg_bound
+assert 0<=R<resource_bound and S>=0
+nominal=gram_factor*S/beta
+assert nominal<1
+assert neg_sqrt**2>neg_bound and pos_sqrt**2>pos_bound*resource_bound
+assert F(".35")**2<beta
+err_scaled=err*(neg_sqrt+pos_sqrt)/F(".35")
+assert err_scaled<F("1e-5") and 2*err_scaled+err_scaled**2<F(".00003")
+physical=nominal+F(".00003")
+diagonal=R+physical
+tv=neg_sqrt+pos_sqrt
+print(region,mode,"positive, physical, diagonal, TV",float(R),float(physical),float(diagonal),float(tv),flush=True)
+if region=="near":
+    assert diagonal<F(".25") and physical<F(".03") and tv<F("3.2")
+else:
+    assert diagonal<F(".355") and physical<F(".025") and tv<F("4.42")
+phase_even = [sum(V[k][j] for k in range(0,n,2)) for j in range(n)]
+phase_odd = [sum(V[k][j] for k in range(1,n,2)) for j in range(n)]
+phase_polynomial_cost = sum(
+    M[i][j]*(phase_even[i]*phase_even[j] + phase_odd[i]*phase_odd[j])
+    for i in range(n) for j in range(n)
+)
+phase_remainder=F(8)**33/factorial(33)*tv
+print(region,mode,"endpoint-phase squared diagnostic",float(phase_polynomial_cost),flush=True)
+Dphase=F(".14")
+assert 0<=phase_remainder<Dphase and 0<=phase_polynomial_cost<(Dphase-phase_remainder)**2
+print("PASS exact detached-row positive budget, signed full enclosure, and endpoint phase",region,mode)
+~~~
+
+~~~python
+from fractions import Fraction as F
+
+B=F(".124997987")
+lam=F(".0001071")
+beta=F(".12")
+assert B-lam>beta
+c1=F("99653682.92983")
+current,near,c4,far=map(F,("31.09","382.85","5313.55","20377.5"))
+assert current==(F("-16.64")+F("78.82"))/2
+assert near==(F("377.96")+F("387.74"))/2
+current_radius,near_radius,c4_radius,far_radius=map(F,("48","7","2","33"))
+assert max(current+F("16.64"),F("78.82")-current)<current_radius
+assert near-F("377.96")+2<near_radius
+assert far==(F("20345")+F("20410"))/2 and far_radius>F("32.5")
+assert all(centre+r < other-s for centre,r,other,s in zip(
+    (current,near,c4),(current_radius,near_radius,c4_radius),
+    (near,c4,far),(near_radius,c4_radius,far_radius)))
+assert current_radius+near_radius==55
+assert all((near+2*c1+o)>10**8 for o in [current,c4,far])
+assert 2*c1+current+c4>10**8 and 2*c1+current+far>10**8
+assert 2*c1+c4+far>10**8
+assert near-current>351 and c4-near>4930 and c4-current>5200
+assert far-current>20000 and far-near>19000 and far-c4>15000
+
+old_detunings=list(map(F,("-14.64","-11.28","21.62","22.48","49.50","73.50","76.82")))
+old_shift=(current*F(".2")+2*F("9.22"))**2
+old_shift+=sum((abs(current-o)*F(".14")+2*F("3.2"))**2 for o in old_detunings)
+assert old_shift<F(38)**2
+assert 2*(F("4.89")*F(".14")+2*F("3.2"))**2<F("10.1")**2
+assert 2*F(".14")**2<F(".2")**2
+assert 2*F("3.2")**2<F("4.53")**2
+near_diagonal=F(".22")+2*F(".03")
+assert near_diagonal==F(".28")
+
+def frozen(Da, Db, Ta, Tb, r, d):
+    s=F(10**8)
+    return (
+        Da*Db*(1/d+1/s)
+        +Ta*Tb*r*(1/(d*(d-r))+1/(s*(s-r)))
+    )/beta
+
+r,d,s=F(55),F(351),F(10**8)
+T,Tn,T4,Tf=map(F,("13","4.53","4.2","11.7"))
+D,Dn,D4,Df=map(F,(".43",".2",".2",".38"))
+D1,Dn1=F(38),F("10.1")
+old_near=(
+    D*Dn*(1/d+1/s)
+    +(D1*Dn+D*Dn1)*(1/d**2+1/s**2)
+    +T*Tn*r**2*(1/(d**2*(d-r))+1/(s**2*(s-r)))
+)/beta
+old_c4=frozen(D,D4,T,T4,F(50),F(5200))
+near_c4=frozen(Dn,D4,Tn,T4,F(9),F(4930))
+low_far=(
+    frozen(D,Df,T,Tf,F(81),F(20000))
+    +frozen(Dn,Df,Tn,Tf,F(40),F(19000))
+    +frozen(D4,Df,T4,Tf,F(35),F(15000))
+)
+assert old_near<F(".04356")
+assert old_c4<F(".001") and near_c4<F(".001")
+assert 7*F("4.42")**2<Tf**2 and 7*F(".14")**2<Df**2
+far_diagonal=F(".33")+7*F(".025")
+assert low_far<F(".001")
+selected_low=F(".905")+old_near+old_c4+near_c4+low_far
+assert F(".905")>max(F(".46"),near_diagonal,far_diagonal)
+assert selected_low<F(".953")
+c2_lo=F(5085348195,4)*F("3.14")
+c3_lo=c2_lo-F("5.55")
+hi_lo=min(c2_lo-2,c3_lo-F(".35"))
+assert hi_lo-(c1+far+far_radius)>F("3.8e9")
+assert hi_lo+(c1+current-current_radius)>F("3.8e9")
+high_coupling=2*(T+Tn+T4+Tf)*(9+F("2.66"))/(F("3.8e9")*beta)
+assert high_coupling<F(".000002")
+assert max(selected_low,F(".953"))+high_coupling<F(".954")
+print("PASS exact direct twenty-row assembly", float(selected_low), float(high_coupling))
+print("old↔near, old↔c4, near↔c4, low↔far", *(float(v) for v in (old_near,old_c4,near_c4,low_far)))
+~~~
