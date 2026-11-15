@@ -4023,3 +4023,355 @@ try:
 finally:
     sys.argv=original_argv
 ~~~
+
+## One derivative charge for two detached enclosures
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 69-enclosure comparison](https://github.com/grwtsk/math/blob/2172745cfe47af47bfed16913e8a74293f3d8217/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md)
+through detuning $784.80$, Jensen blob fa6212efd168e50eb55fdc70a1a8f2e7438b6d0e.
+The original radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the
+original complex odd physical carrier, zero extension,
+full parity-one gamma, all $458$ signed prime powers,
+zero principal-pole term, original masks and projection
+for the primitive nonprincipal odd character modulo three.
+The angular measure after folding is $d\nu/\pi$.
+The actual signed checks identify $E_{14}=[742.46,742.66]$
+and $E_{15}=[765.22,765.44]$ as the negative restrictions
+on the disjoint donors $Y_{14}=[741.06,744.06]$ and
+$Y_{15}=[763.33,767.33]$, respectively. The displayed
+intervals are detunings from $c_1=99653682.92983$.
+
+### Polynomial comparisons with local derivatives
+
+Let $F(\nu)$ be the full odd sine amplitude before the
+frequency masks are applied. Its measured restrictions
+on $Y_j$ are those of the original physical form. Write
+$P_j(G)=\int_{Y_j}m_+|G|^2\,d\nu/\pi$ and
+$N_j(G)=\int_{E_j}m_-|G|^2\,d\nu/\pi$.
+Use the exact directed positive lower density $\ell_j$
+and negative upper density $\eta_j$ from each donor.
+If $U$ is the largest of the eight directed upper prime
+values in a $.02$ donor bin, its positive price is the
+nonnegative part of $w_{\min}(A_{\rm lo}-U)$ rounded
+down at $10^{-10}$. Divide it by $\pi_{\rm hi}$ for
+$\ell_j$. On each $.0025$ cell of $E_j$ use the
+directed upper prime value $U$ to form
+$\max(0,(U-A_{\rm lo})/\pi_{\rm lo})$, rounded up at
+$10^{-10}$, for $\eta_j$. All $458$ arithmetic terms
+remain signed in the directed prime values. The original
+filter and Binet bounds give $\ell_j\le m_+/\pi$ and
+$\eta_j\ge m_-/\pi$ on the donor. For $\eta_j$ off
+$E_j$ use zero by the directed sign checks. The guard
+replays the E13, E14 and E15 sign checks, reconstructs
+these data and checks that their normalized values
+equal those of the existing source guards.
+
+Set $\alpha_0=9/10$, $\mu=10^{-15}$, $k=16$ and $r=40$.
+For each $j\in\{14,15\}$, the guard proves positive
+definiteness on the complex polynomials of degree less than
+$r$ of the exact quadratic form
+$$
+ Q_j(p)=\int_{Y_j}(\alpha_0\ell_j-\eta_j)|p|^2\,d\nu
+     +\frac{\mu}{4^{2k}\pi_{\rm hi}}\int_{Y_j}|p^{(k)}|^2\,d\nu .
+$$
+The matrix in ordinary monomials about the respective
+centers uses only rational integrals of step densities
+and monomial derivatives. Its $40$ leading pivots are
+positive in both donors. This implies
+$$
+ N_j(p)\le\alpha_0 P_j(p)+\frac{\mu}{4^{2k}}\|p^{(k)}\|_{Y_j,\pi}^2,
+$$
+where $\|\,\cdot\,\|_{Y_j,\pi}$ denotes the unweighted
+$L^2$ norm in folded angular measure.
+
+### Transfer on the actual carrier
+
+Let $p$ be the Taylor polynomial of $F$ of degree $r-1$
+at the midpoint of $Y_j$. For each $0\le m<r$,
+the integral Taylor remainder and Cauchy–Schwarz give
+$$
+ \|F^{(m)}-p^{(m)}\|_{Y_j,\pi}^2
+ \le C_{r-m}\|F^{(r)}\|_{Y_j,\pi}^2,\qquad
+ C_a=\frac{2^{2a}}{2a(2a-1)((a-1)!)^2}.
+$$
+Indeed, $p^{(m)}$ is the degree-$(r-m-1)$ Taylor
+polynomial of $F^{(m)}$. If $u$ is displacement from
+the midpoint, the integral remainder uses the segment
+between the midpoint and $u$. In Cauchy–Schwarz use the
+norm of $F^{(r)}$ on that half of the donor interval.
+The pointwise factor is $|u|^{2a-1}/((2a-1)((a-1)!)^2)$.
+Integrating on each half bounds the error there by
+$C_a$ times the squared derivative norm on the same
+half. Summing the two half norms yields the displayed
+constant for donor radius at most $2$.
+
+Apply the forward Young inequality to $N_j(F)$ and the
+reverse Young inequality to $P_j(F)$, each with parameter
+$s=t=1/1600$. Use the source bound $m_\pm\le272$ on the
+remainder: on these donor strips the original filter
+is between zero and one, the parity-one term has
+$|A_1|<17.6780$, and the $458$ absolute prime amplitudes
+sum to less than $211$. Thus $|m|<228.678<272$ on both
+donors. Set $\alpha=(1+s)\alpha_0/(1-t)=4803/5330$.
+In the derivative term apply Young to $p^{(k)}$ with
+parameter $u=1/256$. The resulting inequality is
+$$
+ N_j(F)\le
+ \alpha P_j(F)+\frac{d_k}{4^{2k}}\|F^{(k)}\|_{Y_j,\pi}^2
+              +\frac{d_r}{4^{2r}}\|F^{(r)}\|_{Y_j,\pi}^2 ,
+$$
+where
+$$
+ \begin{aligned}
+ d_k&=(1+s)(1+u)\mu,\\
+ d_r&=4^{2r}\left(
+  272\big[(1+1/s)+\alpha(1/t-1)\big]C_r
+  +(1+s)(1+1/u)\frac{\mu}{4^{2k}}C_{r-k}
+ \right).
+ \end{aligned}
+$$
+These rates satisfy $d_k=1.00453369140625\cdot10^{-15}$ and
+$d_r<4.360\cdot10^{-18}$.
+
+For every finite family of disjoint donor intervals satisfying
+the same local weighted polynomial inequality, mask and sign
+conditions, and radius at most $2$, the two derivative
+charges sum over the intervals with the same rates.
+Indeed on the unmasked odd carrier, Fourier Plancherel gives
+$$
+ \int_0^\infty |F^{(m)}(\nu)|^2\,d\nu/\pi
+  =\|t^m f\|_{L^2([-4,4])}^2\le4^{2m}\|f\|^2 .
+$$
+The derivative orders use the same physical carrier
+and the same folded normalization. For the two tested
+donors this gives the actual comparison
+$$
+ N_{E_{14}}^*N_{E_{14}}+N_{E_{15}}^*N_{E_{15}}
+ \preceq \tfrac{4803}{5330}(\mathcal P_{Y_{14}}+\mathcal P_{Y_{15}})
+            +(1.009\cdot10^{-15})I .
+$$
+The single bound uses the actual derivative remainder
+charges and uses both positive donor forms once. Its
+scalar term is independent of the number of disjoint
+donors satisfying the stated local conditions.
+
+### Return at the signed frontier
+
+Use this single uniform scalar price for the two
+restrictions in place of their two separate prices
+$10^{-12}+\delta_{14}$ and $10^{-12}+\delta_{15}$.
+The fraction $4803/5330$ fits below the previous
+$19/20$ maximum. All $48$ original price choices under
+each of the four first-pair prices retain cap below
+$0.953005$. The least physical room with the common-map
+price exceeds $6.7047\cdot10^{-9}$. The signed support
+remains the $69$ restrictions through detuning $784.80$.
+The original seven leading inverses and directional
+return still require the full outside-support sign.
+With the actual paid stack $W_{\rm all69}$ and
+$S_{\rm all69}=S_\lambda-W_{\rm all69}^*W_{\rm all69}
+\succeq.046995S_\lambda$, the first open inequality is
+$\|N_{\rm out} S_{\rm all69}^{-1}N_{\rm out}^*\|\le1$.
+The consumer is DirichletStageChain.PrimitiveStageLower
+with stage index $3$ for the primitive nonprincipal odd
+character modulo three. It requires the original inequality
+for every admissible real odd compact $C^2$ test with $L^2$
+lift, pointwise support on $[-4,4]$, and integrable full
+gamma correction. The localized bound leaves the original
+consumer conditional.
+
+Extract the guard and pass the pinned arithmetic Markdown
+and the Jensen donor Markdown with its E13 through E15
+checkers. The three input blocks are selected by their
+unique digests. The proof replays the directed sign and
+density arithmetic and uses rational integration and pivots
+for the local polynomial bounds.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial, lcm
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+digests={
+    "e13":"815b961db261ba5e5672096cf83e8c4670cdeb5e6b2882e1373490cdc0b7e18b",
+    "e14":"25e3ee9bd56ed22881ed169544d59751f3ec926c9599fc629402c5548b9836ed",
+    "e15":"76204e7c93cd454e2949ff24d43411f52ec64f05857899c9c4c0e54987922e9c",
+}
+
+def generated_code(donor,mode):
+    found=[block for block in blocks if sha256(block.encode()).hexdigest()==digests[donor]]
+    assert len(found)==1
+    call='exec(compile(code,jensen_path,"exec"),{"__name__":"__main__"})'
+    assert found[0].count(call)==1
+    state={"__name__":"__main__","__file__":__file__}
+    original=sys.argv
+    try:
+        sys.argv=[__file__,arithmetic,jensen,mode]
+        exec(compile(found[0].replace(call,"generated=code"),jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state["generated"]
+
+# E13 covers the left part of Y14, and E14 covers the left part of Y15.
+for donor in ("e13","e14","e15"):
+    source=generated_code(donor,"sign")
+    original=sys.argv
+    try:
+        sys.argv=[__file__,arithmetic,"sign"]
+        exec(compile(source,jensen,"exec"),{"__name__":"__main__"})
+    except SystemExit as exc:
+        assert exc.code in (None,0)
+    else:
+        raise AssertionError("directed sign guard did not complete through its stated endpoint")
+    finally:
+        sys.argv=original
+
+r,k=40,16
+price,mu=F(".9"),F("1e-15")
+statistics={
+    "e14":("741.06","744.06","742.46","742.66","742.56",141,68),
+    "e15":("763.33","767.33","765.22","765.44","765.33",190,72),
+}
+
+def pivots(matrix):
+    assert len(matrix)==r and all(len(row)==r for row in matrix)
+    assert all(matrix[i][j]==matrix[j][i] for i in range(r) for j in range(r))
+    scale=lcm(*(value.denominator for row in matrix for value in row))
+    integer=[[int(scale*value) for value in row] for row in matrix]
+    previous=1
+    result=[]
+    for z in range(r):
+        pivot=integer[z][z]
+        assert pivot>0,(z,F(pivot,scale*previous))
+        result.append(F(pivot,scale*previous))
+        for i in range(z+1,r):
+            for j in range(i,r):
+                value,error=divmod(pivot*integer[i][j]-integer[z][i]*integer[z][j],previous)
+                assert error==0
+                integer[i][j]=integer[j][i]=value
+        previous=pivot
+    return result
+
+branches=[]
+for donor,(a0,b0,l0,r0,offset,npos,nneg) in statistics.items():
+    source=generated_code(donor,donor)
+    cut="\nfrom math import acos,cos,sin,sqrt,fsum\n"
+    assert source.count(cut)==1
+    accounting_start='beta=F(".124997987")-F(".0001071")'
+    accounting_end='old_room=F(".000001")*beta-max(branches)'
+    assert source.count(accounting_start)==source.count(accounting_end)==1
+    accounting=source[source.index(accounting_start):source.index(accounting_end)]
+    data={"__name__":"__main__"}
+    original=sys.argv
+    try:
+        sys.argv=[__file__,arithmetic,donor]
+        exec(compile(source.split(cut)[0],jensen,"exec"),data)
+        exec(compile(accounting,jensen,"exec"),data)
+    finally:
+        sys.argv=original
+    c0,c=data["c0"],data["c"]
+    start,stop=map(F,(a0,b0))
+    box_left,box_right=map(F,(l0,r0))
+    assert (data["start"],data["stop"])==(start,stop)
+    assert (F(data["l0"]),F(data["r0"]))==(box_left,box_right)
+    assert c==c0+F(offset)==c0+(start+stop)/2
+    assert start<box_left<box_right<stop
+    step=data["step"]
+    assert step==F(".0025")
+    pi_hi,pi_lo=data["pi_upper"],data["pi_lower"]
+    estimate=data["estimate"]
+    alo,ahi=data["Alo"],data["Ahi"]
+    wmin=data["wmin"]
+    assert (alo,ahi,wmin)==(F("17.6779"),F("17.6780"),1-F("3e-10"))
+    assert ahi+211<272 and 211-alo<272
+
+    # Verify the normalization and rounding in the exact directed densities.
+    pos=[]
+    for j in range(int((stop-start)/(8*step))):
+        left=start+8*j*step
+        peaks=[estimate(left+i*step,step)[1] for i in range(8)]
+        raw=wmin*(alo-max(peaks))
+        w=F((raw*10**10)//1,10**10)
+        if w>0:
+            assert w<=raw
+            pos.append((c0+left-c,8*step,w*8*step/pi_hi))
+    neg=[]
+    for j in range(int((box_right-box_left)/step)):
+        left=box_left+j*step
+        upper=estimate(left,step)[1]
+        raw=max(F(0),(upper-alo)/pi_lo)
+        eta=F(-((-raw*10**10)//1),10**10)
+        assert eta>=raw
+        if eta:
+            neg.append((c0+left-c,c0+left+step-c,eta))
+    assert pos==data["pos"] and neg==data["rho"]
+    assert (len(pos),len(neg))==(npos,nneg)
+    left,right=c0+start-c,c0+stop-c
+    assert -2<=left<0<right<=2
+    densities=[(a,a+h,price*weight/h) for a,h,weight in pos]
+    densities.extend((a,b,-weight) for a,b,weight in neg)
+    moments=[sum(weight*(b**(j+1)-a**(j+1))/(j+1)
+                 for a,b,weight in densities) for j in range(2*r-1)]
+    matrix=[[moments[i+j] for j in range(r)] for i in range(r)]
+    for i in range(k,r):
+        for j in range(k,r):
+            n=i+j-2*k
+            derivative=F(factorial(i)*factorial(j),factorial(i-k)*factorial(j-k))
+            derivative*=(right**(n+1)-left**(n+1))/((n+1)*4**(2*k)*pi_hi)
+            matrix[i][j]+=mu*derivative
+    values=pivots(matrix)
+    assert len(values)==40
+    print("PASS exact directed polynomial Gram",donor,npos,nneg,float(min(values)))
+    branches.append((data["branches"],data["beta"]))
+
+assert F(statistics["e14"][1])<F(statistics["e15"][0])
+assert branches[0]==branches[1]
+old,beta=branches[0]
+assert len(old)==48 and beta==F(".124890887")
+
+# Half-interval Taylor remainder and uniform physical accounting.
+s=t=F(1,1600)
+u=F(1,256)
+alpha=(1+s)*price/(1-t)
+assert alpha==F(4803,5330) and alpha<F(".95")
+
+def half_remainder(order):
+    return F(2**(2*order),2*order*(2*order-1)*factorial(order-1)**2)
+
+cost16=(1+s)*(1+u)*mu
+cost40=(272*((1+1/s)+alpha*(1/t-1))*half_remainder(r)
+        +((1+s)*(1+1/u)*mu/4**(2*k))*half_remainder(r-k))*4**(2*r)
+cost=cost16+cost40
+assert cost16==F("1.00453369140625e-15")
+assert cost40<F("4.360e-18") and cost<F("1.009e-15")<F("2e-12")
+print("PASS exact normalized derivative rates",str(alpha),float(cost16),float(cost40),float(cost))
+
+options={
+    "published-first":F("5e-9")+F("8e-10"),
+    "repriced-first":F("4.5e-10")+F("8e-10"),
+    "joint-residual":F("7.47626e-10"),
+    "pooled-map":F("1e-12"),
+}
+tail=F("2.356e-16")+F("6.382e-23")+F("8e-12")+F("8e-23")+F("9.656e-36")
+tail+=F("6.501e-25")+F("1.647e-28")+F("5.030e-27")+F("2.466e-21")+cost
+for label,pair_price in options.items():
+    caps=[max(F(".953004")+(q+pair_price+tail)/beta,F(".95"),alpha) for q in old]
+    rooms=[F(".000001")*beta-q-pair_price-tail for q in old]
+    assert len(caps)==len(rooms)==48 and max(caps)<F(".953005")
+    if label=="pooled-map":
+        assert min(rooms)>F("6.7047e-9")
+    print("PASS original q69 price branches",label,float(max(caps)),float(min(rooms)))
+~~~
