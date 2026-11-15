@@ -8665,3 +8665,449 @@ assert F('.123')*((F('.18878')**2+F('.18878')*F('.0278'))/24
                  +F('.0278')**2/F('.0000951')) < F('.9998')
 print("PASS conditional inverse bound with the separate all-complement premise")
 ~~~
+
+## A separated retained negative window and its seven-pivot correction
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic
+proof with exact rational guards. Lean elaboration, fresh kernel
+replay and transitive axiom audit are NOT_RUN. Independent review
+is UNASSESSED.
+
+Let $c=9965368292983/100000$, $a=1/50$ and let $J$ be the
+union of the two closed angular intervals of radius $a$ about
+$\pm c$. This lies wholly in the original residual set and is
+disjoint from the original deleted collar $J_*=J_{1/160}$ and
+the paid pair. With the original filter and arithmetic terms,
+the exact multiplier on $J$ satisfies
+$$
+                         16.48<-m(\nu)<17.57 .
+$$
+For the actual physical complement $H$, take
+$j=126883010$, $\omega_j=j\pi/4$ and
+$h=\Pi_H\psi_j$, where $\psi_j(t)=\sin(\omega_jt)/2$ on
+$[-4,4]$ and is zero extended. The local negative debit on this
+physical vector is greater than $0.785$.
+
+Write $C_{4,+,J}$ for the result of deleting this additional
+window and eliminating the same seven original subspaces, and
+put $\Delta_J=C_{4,+,J}-C_{4,+}$. The actual localized correction
+after the joint minimization satisfies
+$$
+             0\le\Delta_J<0.903 I_H,\qquad
+             \langle h,\Delta_Jh\rangle>0.779 .
+$$
+These statements isolate the window's expense. The coercivity
+test below keeps the positive part of the original operator.
+
+### Signed multiplier bounds on the full disjoint window
+
+For the 458 active prime powers write
+$a_n=2\log(p)\chi_3(n)/\sqrt n$ and $s_n=\log n$. Range-reduce
+the positive phases $cs_n$ using the original directed log and
+Machin bounds. The cosine and sine remainders through degrees 24
+and 25 and outward rounding of each signed term give
+$$
+\begin{split}
+ 34.70350<P_4(c)<34.70352,\quad
+ 9.524<P_4'(c)<9.525,\quad
+ -1309<P_4''(c)<-1308 .
+\end{split}
+$$
+The sum of the absolute third-derivative coefficients is below
+$59746$. Taylor's theorem gives a whole-window variation price
+$9.525a+(1309/2)a^2+(59746/6)a^3$.
+For the original parity-one gamma term, the integer log arguments
+$47500000$ and $47770701$ bound $3|\nu|/(2\pi)$ on $J$.
+The Binet correction is bounded by
+$5/(9b)+9/(32b^2)$ for $b=(c-a)/2$.
+The directed result is $17.67<A(\nu)<17.69$. The original
+high and low filter bounds give $1-3\cdot10^{-10}\le w\le1$
+because the whole window lies above $10^8/3-1$ and below $10^8$.
+Together with evenness this proves the two bounds on $-m$
+across the full window. The calculation includes $\log(p)$,
+rather than $\log(n)$, in the signed prime-power amplitudes.
+
+### Local debit on a vector in the actual complement
+
+The exact native carrier satisfies $0<\omega_j-c<0.090511$.
+For the positive interval, $|\nu-\omega_j|\le0.110511$.
+The odd sine formula and the Taylor bound for the main sine
+give
+$$
+ |\widehat{\psi_j}(\nu)|
+ \ge \tfrac12\left[4-\frac{64}{6}(0.110511)^2
+                          -\frac1{2c-a}\right]>1.9348.
+$$
+The value at zero detuning is interpreted by continuity.
+Oddness gives the same magnitude on the negative interval.
+The pair has angular measure $2a/\pi$, so the unweighted
+angular norm on $J$ is greater than $0.21827$.
+
+The native probe is exactly orthogonal to the original $P$
+space and the full old native span with indices at most
+$38170000$. Its projection into $U$ costs at most
+$(10/9)10^{-60}$ by the genuine preimage error. The two old
+$W,L_0$ probes each cost at most $10^{-281}$ by the
+pointwise Chebyshev estimate. The original high angular
+probes on $Y_0$ and $\mathcal V$ cost below $7\cdot10^{-24}$
+and $3\cdot10^{-38}$ at this carrier, by their exact preimages
+and Gram factor. On the actual last plane, $\psi_j$ is
+orthogonal to the true native $y$. Its raw $u$ pairing is
+below $1.4\cdot10^{-10}$ by the normalized two-exponential
+Fourier bound evaluated at $\omega_j$ and the factor $1/2$
+for a normalized native probe. Use the known coefficient sum
+$1.066$ for $v_0$ on $u,y$ and the exact projected plane defects
+$\|e-u\|<2d,\ \|v-v_0\|<11d$, where $d=1.6\cdot10^{-8}$.
+Adding the original eliminated projections gives
+$\|\psi_j-h\|<2.2\cdot10^{-7}$ and $\|h\|\le1$.
+
+Let $\mathcal W_J$ be the Fourier restriction to $J$ multiplied
+by $\sqrt{-m}$. Fourier restriction is contractive in the
+specified angular normalization. Thus
+$$
+       \|\mathcal W_J h\|^2>16.48(0.21827-2.2\cdot10^{-7})^2>0.785 .
+$$
+In particular the negative-only comparator, obtained from the
+collar-deleted physical operator by discarding its surviving
+positive angular part, has quadratic value less than $-0.66$
+on $h$. This falsifies its required nonnegativity even on $H$.
+The vector is on the bounded physical carrier. The original
+admitted arithmetic test space remains the real odd compact
+$C^2$ space with its gamma-density condition.
+
+### The actual seven-pivot deletion comparison
+
+Use $T_+=T+W_*^*W_*$ from the first deletion. Its old five
+leading spaces are $\mathcal E$, and the final two form
+$\mathcal P=\operatorname{span}(e,v)$. Denote the old minimizing
+lift for $T_+$ by $E_+$ from $G_2$ and the last minimizing
+lift by $L_+$ from $H$ to $G_2$. They are the original
+successive completions for $T_+$ with the exact $T_+$
+blocks. Let $\mathcal L_+=E_+L_+$ and
+$\mathcal S=\mathcal E\oplus\mathcal P$.
+
+The true leading compression $A_{\mathcal S,+}$ is positive
+and invertible. In the coordinates $(x,p)\mapsto x+E_+p$,
+its quadratic form is the direct sum of the actual five-space
+block $A_{\mathcal E,+}\ge(1/50)I$ and the actual last
+two-dimensional block $A_+>9.6I$. This map is invertible
+because $E_+p-p\in\mathcal E$. For $f\in H$, all vectors
+in its fiber are $\mathcal L_+f+s$ with $s\in\mathcal S$.
+Their $T_+$ value is $\langle f,C_{4,+}f\rangle+
+\langle s,A_{\mathcal S,+}s\rangle$. On adding
+$\mathcal W_J^*\mathcal W_J$ complete the square in $s$.
+With $X=\mathcal W_J|_{\mathcal S}$,
+$Y=\mathcal W_J\mathcal L_+$, the exact update is
+$$
+ \Delta_J=Y^*(I+X A_{\mathcal S,+}^{-1}X^*)^{-1}Y .
+$$
+The same triangular coordinates give the exact localized
+inverse identity
+$$
+ \begin{split}
+ X A_{\mathcal S,+}^{-1}X^*
+  ={}&(\mathcal W_J|_{\mathcal E})A_{\mathcal E,+}^{-1}
+                   (\mathcal W_J|_{\mathcal E})^*\\
+     &+(\mathcal W_J E_+|_{\mathcal P})A_+^{-1}
+                   (\mathcal W_J E_+|_{\mathcal P})^* .
+ \end{split}
+$$
+Both equalities retain the full positive contribution to
+$T_+$. They do not substitute pivots from a negative-only
+compression.
+
+To bound the localized rows, angular evaluation on odd unit
+physical inputs in $J$ is below $2.001$ in modulus. On the
+native old sine space the pointwise bound from the exact
+transform and $|\nu|>c-a$ is
+$$
+ \frac{6200(3\cdot10^7)}{(c-a)^2-(3\cdot10^7)^2}<2.1\cdot10^{-5}.
+$$
+Use its true $U$ preimage and the $W$ leakage to bound the
+$Z$ evaluation by $2.34\cdot10^{-5}$. The actual $L_0,Y_0,
+\mathcal V$ evaluations are below $10^{-281},7\cdot10^{-24},
+3\cdot10^{-38}$ as in the previous full-angular estimates.
+Orthogonality gives a row bound $3.15\cdot10^{-5}$ on
+$\mathcal E$. On the actual two-plane use the normalized
+bare sine estimate below $2.68\cdot10^{-10}$ for each of
+$u,y$. Its detuning is at least $3.8\cdot10^9-10^8$.
+Use the $v_0$ coefficient sum and the stated $2d,11d$
+defects before the squared sum. The evaluation row on
+$\mathcal P$ is below $3.6\cdot10^{-7}$.
+
+For the change from the old lift $E$ of $T$ to $E_+$, the
+normal equations at the original deleted collar give
+$$
+   E_+-E=-A_{\mathcal E,+}^{-1}(W_*|_{\mathcal E})^*W_*E .
+$$
+The original collar restriction bounds on the five spaces,
+$\|W_*E\|^2<0.124512$ and the genuine inverse bound $50$
+give $\|E_+-E\|<8\cdot10^{-8}$. The previous old lift
+components on unit $G_2$ inputs are bounded by
+$130,142,10^{-253},1205,26$ for $P,Z,L_0,Y_0,\mathcal V$.
+Pair with the pointwise rows at the newly selected window
+and add $2.001(8\cdot10^{-8})$. This gives a pointwise
+bound $0.006054$ for $(E_+-I)$ on unit $G_2$ inputs.
+
+For $L_+$ the actual off-diagonal norm is at most
+$(\sqrt{8.2}+0.0000109)/9.6<0.299$. This uses the earlier
+collar comparison $\|\Delta-\rho e\otimes e\|<0.0000109$
+on $G_2$, since the rank-one term vanishes in the mixed
+block from $\mathcal P$ into $H$. Orthogonality then gives
+$\|L_+\|<1.045$. Combining with the actual plane row shows
+that angular evaluation of $\mathcal L_+f-f$ on $J$ is
+below $0.006327\|f\|$ for every $f\in H$.
+
+The angular measure times the density cap is at most
+$17.57(2a/\pi)$. Use the two localized rows in the exact
+inverse identity to bound $\|XA_{\mathcal S,+}^{-1}X^*\|$
+by
+$$
+ 17.57(2a/\pi)\left[
+  50(3.15\cdot10^{-5})^2+
+       (0.006054+3.6\cdot10^{-7})^2/9.6
+ \right]<9\cdot10^{-7}.
+$$
+Use the joint-lift row upper $2.001+0.006327$ in the
+upper quadratic comparison. For the lower on $h$, angular
+evaluation of $\mathcal L_+ h$ has modulus above
+$1.9348-2.001(2.2\cdot10^{-7})-0.006327>1.9284$ on
+both signs. Use the lower density $16.48$ and keep the
+middle inverse in the exact formula bounded below by
+$(1+9\cdot10^{-7})^{-1}I$. The unrounded guards give
+the stated strict $0.903$ upper and $0.779$ lower.
+
+### Positive-inclusive criterion for the all-complement floor
+
+For $\lambda=0.0001071$, the original seven positive leading
+pivots give the exact equivalence
+$$
+  C_{4,+}\ge\lambda I_H
+  \quad\Longleftrightarrow\quad
+  T_+-\lambda\Pi_H\ge0 .
+$$
+This follows by comparing the minimum on each fiber with
+$\lambda\|\Pi_Hf\|^2$. Let $m_+,m_-$ denote the nonnegative
+positive and negative parts of the actual collar-deleted
+multiplier. Use the original physical angular Fourier restriction
+$K$ and define
+$$
+ S_\lambda=B I-\lambda\Pi_H+K^*m_+K,\qquad
+ N=\sqrt{m_-}\,K .
+$$
+Because $B>\lambda$, the first operator is uniformly
+positive. Substitution gives the equivalent exact test
+$\|NS_\lambda^{-1}N^*\|\le1$. Indeed
+$T_+-\lambda\Pi_H=S_\lambda-N^*N$ and conjugation by
+$S_\lambda^{-1/2}$ reduces positivity to the contraction
+bound on $NS_\lambda^{-1/2}$.
+The local test $\|\mathcal W_J S_\lambda^{-1}\mathcal W_J^*\|
+\le1$ is necessary, by restriction to this negative window.
+
+If the positive angular part were discarded, the same local
+norm with $S_\lambda=B I-\lambda\Pi_H$ would exceed $6.28$.
+To see this, use $h$ as a trial vector for the squared norm
+of $\mathcal W_J S_\lambda^{-1/2}$ and the exact fact
+$\langle h,S_\lambda h\rangle=(B-\lambda)\|h\|^2$ for that comparator. In particular the true
+floor would require $\langle h,K^*m_+Kh\rangle>0.6601$,
+since it must cover the local negative debit above $0.785$
+after the scalar contribution $(B-\lambda)\|h\|^2$.
+The current open calculation on $J$ is the local
+comparison with the true positive angular part retained.
+The whole-complement floor, original arithmetic stage,
+and family return remain open.
+
+### Exact rational guards
+
+The guard uses all the literal signed prime-power rows,
+both angular signs, the exact native probe and the original
+leading-domain estimates above.
+
+~~~python
+from fractions import Fraction as F
+from functools import cache
+from math import factorial, isqrt
+
+source_grid = 10**22
+atom_grid = 10**10
+
+def round_out(lower, upper, grid):
+    return F(lower*grid // 1, grid), F(-((-upper*grid) // 1), grid)
+
+def log_from_atanh(y):
+    lower = 2*sum(y**(2*k+1)/(2*k+1) for k in range(26))
+    return lower, lower + 2*y**53/(53*(1-y*y))
+
+log2_lower, log2_upper = log_from_atanh(F(1, 3))
+
+@cache
+def log_bounds(n):
+    k = n.bit_length()-1
+    q = 2**k
+    lower, upper = log_from_atanh(F(n-q, n+q))
+    return round_out(k*log2_lower+lower, k*log2_upper+upper, source_grid)
+
+def atan_bounds(y):
+    upper = sum((-1)**k*y**(2*k+1)/(2*k+1) for k in range(17))
+    return upper-y**35/35, upper
+
+atan5_lower, atan5_upper = atan_bounds(F(1, 5))
+atan239_lower, atan239_upper = atan_bounds(F(1, 239))
+pi_lower, pi_upper = round_out(
+    16*atan5_lower-4*atan239_upper, 16*atan5_upper-4*atan239_lower,
+    source_grid,
+)
+assert 3 < pi_lower <= pi_upper < F(22, 7)
+
+def add(x, y):
+    return x[0]+y[0], x[1]+y[1]
+
+def scale(factor, interval):
+    lower, upper = interval
+    if factor < 0:
+        return factor*upper, factor*lower
+    return factor*lower, factor*upper
+
+def multiply(x, y):
+    products = [a*b for a in x for b in y]
+    return min(products), max(products)
+
+def phase_trig(angles):
+    assert 0 <= angles[0] <= angles[1]
+    lower, upper = angles[0]/pi_upper, angles[1]/pi_lower
+    period = (lower+1)//2
+    residue = lower-2*period
+    assert -1 <= residue < 1
+    angle = pi_lower*residue
+    uncertainty = pi_upper*(upper-lower)+pi_upper-pi_lower
+    cosine = sum((-1)**l*angle**(2*l)/factorial(2*l) for l in range(13))
+    sine = sum((-1)**l*angle**(2*l+1)/factorial(2*l+1) for l in range(13))
+    cos_error = uncertainty+F(22, 7)**26/factorial(26)
+    sin_error = uncertainty+F(22, 7)**27/factorial(27)
+    return ((max(-1, cosine-cos_error), min(1, cosine+cos_error)),
+            (max(-1, sine-sin_error), min(1, sine+sin_error)))
+
+centre = F("99653682.92983")
+radius = F(1,50)
+vals = [(F(0),F(0)) for _ in range(3)]
+abs3 = F(0)
+count=0
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        prime_log=log_bounds(p)
+        root=isqrt(n*source_grid**2)
+        coef=scale(2*(1 if n%3==1 else -1),
+                   (prime_log[0]*source_grid/(root+1),prime_log[1]*source_grid/root))
+        cosine,sine=phase_trig(scale(centre,lag))
+        trig_terms=(cosine,scale(-1,multiply(lag,sine)),
+                    scale(-1,multiply(multiply(lag,lag),cosine)))
+        for j,term in enumerate(trig_terms):
+            vals[j]=add(vals[j],round_out(*multiply(coef,term),atom_grid))
+        abs3+=max(map(abs,coef))*lag[1]**3
+        count+=1
+        n*=p
+assert count==458
+assert F('34.70350')<vals[0][0]<=vals[0][1]<F('34.70352')
+assert F('9.524')<vals[1][0]<=vals[1][1]<F('9.525')
+assert -1309<vals[2][0]<=vals[2][1]<-1308
+assert abs3<59746
+
+# Original parity-one gamma; the Binet error covers the whole band.
+assert 10**8/F(3)-1<centre-radius<centre+radius<10**8
+assert 3*(centre+radius)/(2*pi_lower)<47770701
+b_min=(centre-radius)/2
+binet=F(5,9)/b_min+F(9,32)/b_min**2
+assert F(47500000)<3*(centre-radius)/(2*pi_upper)
+assert log_bounds(47500000)[0]-binet>F('17.67')
+assert log_bounds(47770701)[1]+binet<F('17.69')
+assert F(18524227541662946,10**7)-10>centre+radius
+assert F('3806849122.861433')-F(1,160)>centre+radius
+assert F(3*10**7)<centre-radius<centre+radius<32*10**24
+variation=F('9.525')*radius+F(1309,2)*radius**2+F(59746,6)*radius**3
+upper_s4=F('17.69')-vals[0][0]+variation
+weight_floor=1-F('3e-10')
+assert upper_s4<0 and weight_floor*upper_s4<-F('16.48')
+assert vals[0][1]+variation-F('17.67')<F('17.57')
+
+# Actual positive-sine witness for the physical insertion, not for C4,+.
+j=126883010
+native_freq=F(j,4)*pi_lower,F(j,4)*pi_upper
+assert 0<native_freq[0]-centre<=native_freq[1]-centre<F('.090511')
+assert 4*centre/pi_lower>j-1 and 4*centre/pi_upper<j+1
+max_offset=F('.090511')+radius
+assert max_offset<1
+amplitude=(4-F(64,6)*max_offset**2-1/(2*centre-radius))/2
+assert amplitude>F('1.9348')
+old_modes=38170000
+assert j>old_modes
+assert j!=4847030844-1
+# P is exactly orthogonal; U has only its physical lift defect.
+e_error=2*F('1.6e-8')
+v_error=11*F('1.6e-8')
+raw_cross=(1/(F('3.8e9')-native_freq[1])+1/F('3.8e9'))/(2*F('1.997'))
+assert raw_cross<F('1.4e-10')
+pvt_errors=e_error+v_error+(1+F('1.066'))*raw_cross
+off_carrier=pvt_errors+F(10,9)*F('1e-60')+2*F('1e-281')+F('7e-24')+F('3e-38')
+err=F('2.2e-7')
+assert off_carrier<err
+actual_lower_frame=F('1.9348')
+raw_low_norm=F('.21827')
+assert actual_lower_frame**2*2*radius/pi_upper>raw_low_norm**2
+true_debit=F('16.48')*(raw_low_norm-err)**2
+assert true_debit>F('.785')
+assert true_debit>F('.124997987')
+print('PASS exact original separated outside-collar signed frequency band')
+
+# Fourier evaluation of the actual old and newer physical domains at this window.
+v_norm = F('2.001')
+assert 4+1/(2*(centre-radius)) < v_norm**2
+p_eval = F('2.1e-5')
+z_eval = F('2.34e-5')
+native_amplitude = F(6200)*3*10**7/((centre-radius)**2-(3*10**7)**2)
+assert native_amplitude < p_eval
+assert F(10,9)*(native_amplitude+v_norm*F('1e-60'))+F('1e-281') < z_eval
+l0_eval, y_eval, v_eval = F('1e-281'),F('7e-24'),F('3e-38')
+old_e_eval = F('3.15e-5')
+assert sum(x*x for x in (p_eval,z_eval,l0_eval,y_eval,v_eval)) < old_e_eval**2
+
+d = F('1.6e-8')
+bare_eval = F('2.68e-10')
+assert (1/(F('3.8e9')-F('1e8'))+1/F('3.8e9'))/F('1.997') < bare_eval
+plane_eval = F('3.6e-7')
+assert ((bare_eval+2*d*v_norm)**2+
+        (F('1.066')*bare_eval+11*d*v_norm)**2) < plane_eval**2
+
+# Change of the actual old lift after deleting the original paid collar.
+old_lift_change = F('8e-8')
+old_col_restrictions = [F('1e-9'), F('1.1e-9'), F('1e-265'),
+                        F('1e-24'), F('2e-39')]
+assert 50**2*F('7.90')*sum(x*x for x in old_col_restrictions)*F('.124512') < old_lift_change**2
+old_lift_eval = (130*p_eval+142*z_eval+F('1e-253')*l0_eval
+                 +1205*y_eval+26*v_eval+old_lift_change*v_norm)
+assert old_lift_eval < F('.006054')
+
+assert (F('.299')*F('9.6')-F('.0000109'))**2 > F('8.2')
+assert 1+F('.299')**2 < F('1.045')**2
+seven_eval_change = F('.299')*plane_eval+F('1.045')*old_lift_eval
+assert seven_eval_change < F('.006327')
+
+# Use unweighted evaluations on both signs, then the exact local density caps.
+weighted_measure = F('17.57')*2*radius/pi_lower
+joint_padding = weighted_measure*(50*old_e_eval**2+
+                (plane_eval+old_lift_eval)**2/F('9.6'))
+assert joint_padding < F('9e-7')
+actual_lift_floor = F('1.9348')-v_norm*err-seven_eval_change
+assert actual_lift_floor > F('1.9284')
+transport_lower = F('16.48')*2*radius*actual_lift_floor**2/(pi_upper*(1+joint_padding))
+transport_upper = weighted_measure*(v_norm+seven_eval_change)**2
+assert transport_lower > F('.779')
+assert transport_upper < F('.903')
+assert true_debit-F('.124997987') > F('.66')
+assert true_debit/(F('.124997987')-F('.0001071')) > F('6.28')
+assert F('.785')-(F('.124997987')-F('.0001071')) > F('.6601')
+print('PASS actual seven-inverse localized correction and physical negative-only obstruction')
+~~~
