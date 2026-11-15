@@ -9938,3 +9938,419 @@ assert (near_cap-F(".68"))*(near_cap-F(".24"))>cross23**2
 assert max(F(".794"),near_cap)+F("4e-8")<F(".795")
 print("PASS third-window mixed Gram guard and joint contraction <.795")
 ~~~
+
+## The full connected third negative lobe
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic
+proof with exact rational guards. Lean elaboration, kernel replay
+and transitive axiom audit are NOT_RUN. External independent
+review is UNASSESSED.
+
+Keep the preceding $S_\lambda$, physical carrier, and actual
+windows $J_1,J_2$. Put $R_3=0.13$ and replace the old radius-$0.02$
+third pair by $\widetilde J_3=[c_3-R_3,c_3+R_3]$ and its
+reflection, retaining the original clipped density $m_-$.
+With $\widetilde{\mathcal W}_3=\sqrt{m_-}\,1_{\widetilde J_3}K$
+and $\widetilde{\mathcal W}=(\mathcal W_{J_1},\mathcal W_{J_2},
+\widetilde{\mathcal W}_3)^{\mathsf T}$, one has
+$$
+       \|\widetilde{\mathcal W}S_\lambda^{-1}
+                 \widetilde{\mathcal W}^*\|<0.94 .
+$$
+This comparison includes the whole connected component of
+$\{m<0\}$ containing $c_3$ and its reflection.
+
+### Endpoint signs and integrated negative density
+
+The enlarged interval stays inside the original filter region
+and outside the paid pair and the actual deleted collar.
+The signed prime-power value at both endpoints is below the
+lower gamma bound $21.3687$. At the center it is above the
+upper gamma bound $21.3689$. The original filter is strictly
+positive throughout, so $m>0$ at both endpoints and $m<0$ at
+the center. Continuity confines the connected negative component
+to the enlarged interval. All negative density there is charged,
+even if other components occur in that interval.
+
+Use $\eta=\nu-c_3$ on the positive-frequency interval and
+$d\mu_3=m_-(c_3+\eta)d\eta/\pi$, with both angular signs
+included. The directed mesh has spacing $h=0.005$.
+On each mesh cell, $m_-$ is at most
+$\max(0,L(\eta)+13504h^2/8-21.3687)$, where $L$ linearly
+interpolates upper endpoint values of the actual signed $P_4$.
+The bound uses $w\le1$ after taking the positive part.
+The exact guard uses the slightly sharper directed bound for
+$|P_4''|$. The chord of the positive-part upper envelope
+bounds it from above, since the positive part is convex.
+Integrate the chord to bound each cell mass; multiply that
+cell bound by the maximum of $\eta^2$ there for the second
+moment. The full Binet error, both signs, and all 458 signed
+rows yield
+$$
+       M_0=\int d\mu_3<0.28042,\qquad
+       M_2=\int \eta^2\,d\mu_3<0.000824.
+$$
+
+### Two moments of one positive allocation
+
+The previous positive flank heights at $c_3\pm[a,b]$ and
+their reflections allow uniform height $14$ on those flanks.
+Retain $a=0.24$, $b=0.35$, $d=b-a$ and $\alpha=1.14$.
+For $v_\nu(t)=\sin(\nu t)$ use the two average vectors
+$$
+ u_0=\frac1{2d}\int_a^b(v_{c_3+s}+v_{c_3-s})\,ds,\qquad
+ u_1=\frac1{2d}\int_a^b(v_{c_3+s}-v_{c_3-s})\,ds .
+$$
+The coefficient vectors $(1,1)/(2d)$ and $(1,-1)/(2d)$
+are orthogonal in the unweighted offset space
+$L^2([a,b])\oplus L^2([a,b])$, with squared norm $1/(2d)$
+each. Thus Bessel's inequality and the reflected angular
+measure give
+$$
+ \frac{|\langle u_0,f\rangle|^2+|\langle u_1,f\rangle|^2}{q_*^2}
+       \le Q_3[f],\qquad q_*^2=\frac{\pi}{2d\cdot14}.
+$$
+Here $Q_3[f]$ is the actual positive energy on the four
+third flanks. This consumes a single allocation on those
+flanks, disjoint from the first two allocations.
+Approximate $v_{c_3+\eta}$ by $\alpha u_0+4\eta u_1$.
+On the physical carrier its error is
+$$
+ e_{3,\eta}=A_3(t)\sin(c_3t)+D_3(t)\cos(c_3t),\qquad
+ A_3=\cos(\eta t)-\alpha q(t),\quad D_3=\sin(\eta t)-4\eta p(t),
+$$
+where $q(t)$ and $p(t)$ average $\cos(st)$ and $\sin(st)$
+over $[a,b]$. Write the second row error as
+$e_{2,\epsilon}=A_2(t)\sin(c_2t)+B_2(t)\cos(c_2t)$ with
+the preceding $A_2=\cos(\epsilon t)-\alpha q(t)$ and
+$B_2=\sin(\epsilon t)$. The exact estimates are
+$$
+ \sup_{|\eta|\le R_3}\|e_{3,\eta}\|^2<0.233,\qquad
+ \sup_{|\epsilon|\le0.02,\,|\eta|\le R_3}
+       |\langle e_{2,\epsilon},e_{3,\eta}\rangle|<0.045 .
+$$
+
+### Directed bounds for both physical kernels
+
+The guard uses $u=t/4$ on $[0,4]$, and normalized detunings
+$x=\epsilon/0.02$, $y=\eta/R_3$ on $[-1,1]$.
+It expands cosines through degree eight and sines through
+degree nine, with exact flank moments
+$(b^{k+1}-a^{k+1})/((k+1)d)$ for every monomial $s^k$.
+The Taylor errors are bounded by $|z|^{10}/10!$ and
+$|z|^{11}/11!$, using the next zero coefficient in each Taylor
+polynomial. This applies both to the detuned sine and
+cosine and to the averaged flank terms. Products are
+enclosed by adding $M_f\delta_g+M_g\delta_f+\delta_f\delta_g$
+when the exact factors have suprema $M_f,M_g$ and their
+polynomial errors are bounded by $\delta_f,\delta_g$.
+
+For the squared norm on the physical carrier the nonoscillatory
+part is $\int_0^4(A_3^2+D_3^2)\,dt$. Integrate the polynomial
+products term by term. All powers of $y$ are even, the coefficient
+of $y^2$ is negative, and that coefficient plus the sum of the
+positive higher coefficients remains negative. Since $|y|\le1$,
+the constant coefficient bounds the polynomial integral from
+above. Add the product approximation errors and the
+integration-by-parts cost of the two remaining oscillatory
+terms at $2c_3$. For this cost one may use
+$|A_3|\le0.57$, $|D_3|\le 8R_3$,
+$|A_3'|\le R_3+\alpha b$ and $|D_3'|\le R_3+4 R_3 b$.
+The bound on $A_3$ follows from the same monotonicity
+calculation on $[0,4]$, with $r^2$ replaced by $R_3^2$.
+Cosine primitives vanish at zero and the sine coefficient
+vanishes there. This leaves the strict $0.233$ upper bound.
+
+For the physical mixed kernel, oddness and product-to-sum
+reduce the low frequency term to the integral over $[0,4]$
+of $(A_2A_3+B_2D_3)\cos(5.55t)+(A_2D_3-B_2A_3)\sin(5.55t)$.
+The sum frequency $c_2+c_3>7.9\cdot10^9$ is handled by one
+integration by parts, with $|A_2|\le0.57$, $|B_2|\le0.08$,
+$|A_2'|\le 0.02+\alpha b$ and $|B_2'|\le 0.02$.
+For the difference term let
+$C_n=\int_0^1 u^n\cos(22.2u)\,du$ and
+$S_n=\int_0^1 u^n\sin(22.2u)\,du$. For $n\ge1$ the
+recurrences are $C_n=(\sin(22.2)-nS_{n-1})/22.2$ and
+$S_n=(-\cos(22.2)+nC_{n-1})/22.2$, with
+$C_0=\sin(22.2)/22.2$ and $S_0=(1-\cos(22.2))/22.2$.
+Directed Taylor endpoints supply these moments up to the
+maximal polynomial degree. Sum each signed coefficient of
+$x^i y^j$ before taking its absolute upper bound.
+Adding the polynomial product errors and the sum-frequency
+bound gives the strict $0.045$ mixed kernel bound.
+
+### Exact coupled return with the expanded row
+
+Use the previous folding, now with the clipped measure on the
+expanded positive third interval. The angular isometry acts
+on the support of this measure by multiplication with
+$\pm i\sqrt{m_-}$ and is zero where the density vanishes.
+The physical comparison factors through $\mathcal H\oplus
+\mathbb C^4$. The last two scalar coordinates are assigned
+to $u_0,u_1$, and their squared input norm costs at most
+$Q_3[f]$. The full input bound is still
+$\|Lf\|^2\le \langle f,S_\lambda f\rangle$ by the disjoint
+flank allocation. In the third output, the two moment
+columns are $q_*\alpha$ and $4q_*\eta$. Their squared
+Hilbert–Schmidt norms plus the physical error contribution
+bound the third diagonal of the Gram majorant by
+$$
+      M_0(\alpha^2q_*^2+0.233/\beta)+16q_*^2 M_2<0.909 .
+$$
+The positive coordinates for the second and third outputs are
+disjoint. Thus their mixed norm is bounded by
+$0.045\sqrt{M_0M_{\!J_2}}/\beta<0.084$, where
+$M_{\!J_2}\le 15(0.04)/\pi$ is the folded second-window mass.
+For the first-to-expanded-third block use the separated sine
+Gram as before, but with coefficient mass at most
+$1+\alpha+4R_3=2.66$ for the third error. Both first and
+expanded third masses are below $1/2$, so the mixed norm is
+again below $2\cdot10^{-8}$.
+
+The second and expanded third block is bounded by $0.939I$,
+since $(0.939-0.68)(0.939-0.909)>0.084^2$. The first
+diagonal is below $0.794$ and the two remote mixed blocks
+sum to less than $4\cdot10^{-8}$. The factorization now
+proves the asserted actual norm below $0.94$. For any
+$\rho$ strictly above this norm and below $0.94$, complete the
+square for $\rho I-\widetilde{\mathcal W}S_\lambda^{-1}
+\widetilde{\mathcal W}^*$ in the first two angular rows.
+Inverse order comparison bounds the actual expanded third
+diagonal plus its coupling with $(I-A_{12})^{-1}$ by $\rho I$.
+The remaining physical comparator is
+$$
+ \widetilde S_\lambda
+      =S_\lambda-\widetilde{\mathcal W}^*\widetilde{\mathcal W}
+      \ge 0.06 S_\lambda .
+$$
+With $\widetilde N$ the original negative map restricted
+to all other frequencies, the exact remaining condition for
+the same $C_{4,+}\ge\lambda I_H$ is
+$\|\widetilde N\widetilde S_\lambda^{-1}\widetilde N^*\|\le1$.
+The genuine seven leading pivots and the directional return
+remain the same.
+
+The exact guard below takes the complete document as input
+and reuses the earlier directed signed arithmetic.
+
+~~~python
+from pathlib import Path
+import sys
+import re
+
+document = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$", document, re.M | re.S)
+previous = [g for g in blocks if g.startswith("from fractions import Fraction")
+            and "PASS actual seven-inverse localized correction" in g]
+assert len(previous) == 1
+pivot = 'centre = F("99653682.92983")'
+assert previous[0].count(pivot) == 1
+exec(compile(previous[0].split(pivot)[0], "source directed arithmetic", "exec"))
+
+k=5085348195
+c2=scale(F(k,4),(pi_lower,pi_upper))
+c3=add(c2,(F("-5.55"),F("-5.55")))
+R=F(".13")
+c3lo,c3hi=c3
+assert F("3.5e9")<c3lo-F(".35")<c3hi+F(".35")<F("4e9")
+assert c3lo-F(".35")>F("3806849122.861433")+F(1,160)
+assert c3lo-F(".35")>F("1852422754.1662946")+10
+assert c3lo-F(".35")>30000000 and c3hi+F(".35")<35*10**24
+c1=F("99653682.92983")
+assert c1+F(".35") < c3lo-F(".35") < c3hi+F(".35") < c2[0]-F(".35")
+# Exact gamma lower and upper over the entire radius .35.
+dl,dh=F("5.9"),F("5.20")
+xlo=F(3*k,8)-3*dl/(2*pi_lower)
+xhi=F(3*k,8)-3*dh/(2*pi_upper)
+lo=xlo//1
+hi=xhi//1+1
+y=(c3lo-F(".35"))/2
+err=F(5,9)/y+F(9,32)/y**2
+Alo,Ahi=F("21.3687"),F("21.3689")
+assert log_bounds(lo)[0]-err>Alo
+assert log_bounds(hi)[1]+err<Ahi
+atoms=[]
+absolute_second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%d==0 for d in range(2,isqrt(p)+1)):
+        continue
+    log_p=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        amplitude=scale(2*(1 if n%3==1 else -1),
+                        (log_p[0]*source_grid/(root+1),log_p[1]*source_grid/root))
+        atoms.append((amplitude,lag))
+        absolute_second+=max(map(abs,amplitude))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and absolute_second<13504
+
+def node_value(s):
+    x=add(c3,(s,s))
+    val=(F(0),F(0))
+    for amplitude,lag in atoms:
+        co,_=phase_trig(multiply(x,lag))
+        val=add(val,round_out(*multiply(amplitude,co),atom_grid))
+    return val
+
+assert node_value(-R)[1]<Alo
+assert node_value(R)[1]<Alo
+assert node_value(F(0))[0]>Ahi
+count=52
+step=2*R/count
+assert step==F(".005")
+cost=absolute_second*step**2/8
+nodes=[node_value(-R+i*step)[1]+cost-Alo for i in range(count+1)]
+# w≤1. Convexity of x↦max(x,0) gives a trapezoid upper bound
+# on the negative part of the affine interval majorant.
+M0=M2=F(0)
+for i in range(count):
+    interval_mass=step*(max(0,nodes[i])+max(0,nodes[i+1]))/(2*pi_lower)
+    emax=max(abs(-R+i*step),abs(-R+(i+1)*step))
+    M0+=interval_mass
+    M2+=interval_mass*emax**2
+assert M0<F(".28042") and M2<F(".000824")
+print("PASS sign at both endpoints and centre, full-lobe density moments")
+
+# Envelopes and oscillatory monomial integration.
+a,b=F(".24"),F(".35")
+r2,r3=F(".02"),F(".13")
+alpha, kappa=F("1.14"),F(4)
+
+# Variables x,y,u are the two normalized detunings and t/4.
+def plus(*terms):
+    coeffs={}
+    for p in terms:
+        for k,v in p.items():
+            coeffs[k]=coeffs.get(k,0)+v
+    return {k:v for k,v in coeffs.items() if v}
+def times(a,b):
+    coeffs={}
+    for k,c in a.items():
+        for l,d in b.items():
+            key=tuple(x+y for x,y in zip(k,l))
+            coeffs[key]=coeffs.get(key,0)+c*d
+    return {k:v for k,v in coeffs.items() if v}
+def scale(p,s): return {k:s*c for k,c in p.items()}
+def moment(p): return (b**(p+1)-a**(p+1))/((p+1)*(b-a))
+
+q={(0,0,2*i):(-1)**i*4**(2*i)*moment(2*i)/factorial(2*i) for i in range(5)}
+p={(0,0,2*i+1):(-1)**i*4**(2*i+1)*moment(2*i+1)/factorial(2*i+1) for i in range(5)}
+def trig_poly(axis,r,sine):
+    orders=list(range(1 if sine else 0,10,2))
+    values={}
+    for i,n in enumerate(orders):
+        key=(n,0,n) if axis==0 else (0,n,n)
+        values[key]=(-1)**i*(4*r)**n/factorial(n)
+    return values
+A2=plus(trig_poly(0,r2,False),scale(q,-alpha))
+B2=trig_poly(0,r2,True)
+A3=plus(trig_poly(1,r3,False),scale(q,-alpha))
+D3=plus(trig_poly(1,r3,True),times({(0,1,0):-kappa*r3},p))
+
+# Uniform polynomial remainder bounds.
+A2err=(4*r2)**10/factorial(10)+alpha*(4*b)**10/factorial(10)
+A3err=(4*r3)**10/factorial(10)+alpha*(4*b)**10/factorial(10)
+B2err=(4*r2)**11/factorial(11)
+D3err=(4*r3)**11/factorial(11)+kappa*r3*(4*b)**11/factorial(11)
+
+# Addition and scaling of rational half-interval integrations.
+def elementary_moments(theta):
+    # Use directed Taylor bounds for sin and cos at 22.2.
+    # There is strong cancellation, but arithmetic remains rational.
+    sin0=sum((-1)**j*theta**(2*j+1)/factorial(2*j+1) for j in range(71))
+    cos0=sum((-1)**j*theta**(2*j)/factorial(2*j) for j in range(71))
+    sinerr=theta**143/factorial(143)
+    coserr=theta**142/factorial(142)
+    # Integral Taylor remainder is available for the first omitted term
+    # by expanding through the intervening zero Taylor coefficient.
+    add=lambda p,q:(p[0]+q[0],p[1]+q[1])
+    mul=lambda p,c:(p[0]*c,p[1]*abs(c))
+    ss=(sin0,sinerr)
+    cc=(cos0,coserr)
+    c,s=[mul(ss,1/theta)],[mul(add((F(1),F(0)),mul(cc,-1)),1/theta)]
+    for n in range(1,21):
+        c.append(mul(add(ss,mul(s[-1],-n)),1/theta))
+        s.append(mul(add(mul(cc,-1),mul(c[-2],n)),1/theta))
+    return c,s
+
+# Account for residuals in product expansions using uniform magnitudes.
+# Exact envelopes on the whole physical interval satisfy these loose bounds.
+A2max=A3max=F(".57")
+B2max=F(".08")
+D3max=8*r3
+def product_error(a,b,ea,eb):
+    return a*eb+b*ea+ea*eb
+
+# Sum first, then bound each parameter monomial by 1 on the square.
+def integrate_group(p,moments,ret):
+    for (i,j,n), coef in p.items():
+        value,err=moments[n]
+        lower,rad=ret.get((i,j),(F(0),F(0)))
+        ret[(i,j)]=(lower+coef*value,rad+abs(coef)*err)
+cosmom,sinmom=elementary_moments(F("22.2"))
+near_cos=plus(times(A2,A3),times(B2,D3))
+near_sin=plus(times(A2,D3),scale(times(B2,A3),-1))
+near={}
+integrate_group(near_cos,cosmom,near)
+integrate_group(near_sin,sinmom,near)
+near_poly=4*sum(abs(v)+e for v,e in near.values())
+near_remainder=4*(product_error(A2max,A3max,A2err,A3err)
+                +product_error(B2max,D3max,B2err,D3err)
+                +product_error(A2max,D3max,A2err,D3err)
+                +product_error(B2max,A3max,B2err,A3err))
+
+# Oscillatory errors on t∈[0,4], with frequency in physical t units.
+assert alpha*a*a*(1-(4*b)**2/6)>r3*r3
+assert 1-alpha*sum((-1)**i*4**(2*i)*moment(2*i)/factorial(2*i) for i in range(4))<A3max
+dA2=r2+alpha*b
+dA3=r3+alpha*b
+dB2=r2
+dD3=r3+kappa*r3*b
+near_sum_sup=(A2max+B2max)*(A3max+D3max)
+near_sum_deriv=(dA2+dB2)*(A3max+D3max)+(A2max+B2max)*(dA3+dD3)
+# Each sine coefficient vanishes at t=0 and each cosine primitive vanishes there.
+near_sum_error=(near_sum_sup+4*near_sum_deriv)/F("7900000000")
+assert near_sum_error<F("2e-9")
+near_all=near_poly+near_remainder+near_sum_error
+assert near_all<F(".045")
+
+# Nonoscillatory squared error. All powers of y are even.
+e3={}
+integrate_group(plus(times(A3,A3),times(D3,D3)),[(F(1,n+1),F(0)) for n in range(21)],e3)
+assert all(i==0 and j%2==0 and e==0 for (i,j),(v,e) in e3.items())
+assert e3[(0,2)][0]<0
+higher_positive=sum(max(0,v) for (i,j),(v,_) in e3.items() if j>=4)
+assert e3[(0,2)][0]+higher_positive<0
+
+osc3sup=(A3max+D3max)**2
+osc3deriv=2*(A3max+D3max)*(dA3+dD3)
+osc3error=(osc3sup+4*osc3deriv)/F("7900000000")
+assert osc3error<F("2e-8")
+e3_upper=4*(e3[(0,0)][0]+product_error(A3max,A3max,A3err,A3err)+product_error(D3max,D3max,D3err,D3err))+osc3error
+assert e3_upper<F(".233")
+
+# Operator budgets use the actual clipped negative density.
+beta=F(".124890887")
+assert beta==F(".124997987")-F(".0001071")
+q_sq=pi_upper/(2*(b-a)*14)
+diag3=M0*(alpha**2*q_sq+F(".233")/beta)+16*q_sq*M2
+mass1=F("17.57")*F(".04")/pi_lower
+mass2=15*F(".04")/pi_lower
+assert mass1<F(".5") and M0<F(".5")
+cross_squared=mass2*M0*(F(".045")/beta)**2
+assert diag3<F(".909")
+assert cross_squared<F(".084")**2
+
+# J1 and J2 used 1+alpha, whereas the third error row now
+# includes the odd flank moment and can have coefficient mass 2.66.
+pos_gap=c3[0]-c1-2*b
+pos_sum=c3[0]+c1-2*b
+far13=(1+alpha)*(1+alpha+4*R)/(2*beta)*(1/pos_gap+1/pos_sum)
+assert far13<F("2e-8")
+near_cap=F(".939")
+assert (near_cap-F(".68"))*(near_cap-F(".909"))>F(".084")**2
+assert max(F(".794"),near_cap)+F("4e-8")<F(".94")
+print("PASS full-lobe envelope, mixed Gram and joint contraction strictly below .94")
+~~~
