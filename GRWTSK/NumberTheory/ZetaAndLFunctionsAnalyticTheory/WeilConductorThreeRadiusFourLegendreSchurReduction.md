@@ -2792,3 +2792,288 @@ for radius, point_bound, integrated_bound in [
         assert 2*radius*evaluation_price*point_bound < F(122, 1000)
 print('PASS signed prime derivatives and both physical collar debits')
 ```
+
+## Deleting the negative collar through the five physical pivots
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Let $J_*=J_{1/160}$ in the preceding section and
+$K_*=1_{J_*}K$. Use the original physical Hilbert space $\mathcal H$,
+with the original angular measure, and put
+$$
+ T=B I+R,\qquad W_*=(-m)^{1/2}K_*,\qquad T_+=T+W_*^*W_*.
+$$
+The square root acts on the collar, where $-m>0$. Thus $T_+$
+deletes exactly the negative collar from $R$. Keep the same
+five eliminated spaces and actual final $G_2$. Let $C_{2,+}$
+be the resulting corrected form for $T_+$ on $G_2$. Then
+$$
+ 0\le C_{2,+}-C_2\le0.124512 I_{G_2},\qquad
+ \left\|C_{2,+}-C_2-\Pi_{G_2}W_*^*W_*|_{G_2}\right\|
+   <6.6\cdot10^{-7}.
+$$
+The exact deletion formula below retains all five coupled
+inverse effects. The sign of the original full complement
+still requires a lower bound for the remaining outside-collar
+form.
+
+### Quantitative bounds on the original blocks
+
+Use the original orthogonal decomposition
+$$
+ \mathcal H=\mathcal E\oplus G_2,\qquad
+ \mathcal E=P\mathcal H\oplus Z\oplus L_0\oplus Y_0\oplus\mathcal V .
+$$
+The displayed subspaces are closed. The successive pivot blocks are
+$A_{23}$, $D$, $D_0$, $A_Y$ and $A_{\mathcal V}$. Their positive
+lower bounds are $1/10,2/25,1/9,1/4,12$, respectively.
+Below all block norms use the physical inner product.
+
+From the original weighted source, $K_w=\sqrt w K$ is contractive,
+$\|K_wP\|<1/40$ and $\|K_w|_U\|^2<1/49900$.
+Both $W$ and $L_0$ have $K$ norm at most $10^{-265}$.
+Cauchy–Schwarz on $Z=U\oplus W$ therefore gives
+$\|K_w|_Z\|<1/200$. In particular $\|PR\|<7.5$,
+$\|PR|_Z\|<0.0375$ and $\|PR|_{L_0}\|\le300\cdot10^{-265}$.
+In the exact weighted representation of $S$, the middle
+operator $M_w$ has norm below 741. Thus
+$\|J\|<3.705$ and $\|J|_{L_0}\|\le741\cdot10^{-265}$.
+On $Y_0$ the inherited bounds are
+$\|PR|_{Y_0}\|<3\cdot10^{-6}$ and $\|J|_{Y_0}\|<1/159$.
+[Weighted representation and old projected norm](WeilConductorThreeRadiusFourWeightedSchurSource.lean#L70)
+
+For $\mathcal V$ set $N=3\cdot10^{19}+1$ and
+$\kappa=1-16N\delta^2$, $\delta=10^{-272}$.
+A bound on each $v_r$ carries to a bound on its actual span
+with factor $\sqrt{N/\kappa}<5.52\cdot10^9$ by
+Cauchy–Schwarz in the true Gram coordinates. Applying the
+earlier $v_r$ estimates gives
+$$
+ \|PR|_{\mathcal V}\|<2.3\cdot10^{-11},\qquad
+ \|J|_{\mathcal V}\|<7.2\cdot10^{-8},\qquad
+ \|J_Y|_{\mathcal V}\|<0.0017.
+$$
+On all $G_1$, expand $J_Y$ using direct $R$ norm below 300,
+the genuine first two inverse corrections and the $D_0$
+operator price $10^{-515}$. The norm is below
+$300+10(3\cdot10^{-6})(7.5)+(25/2)(1/159)(3.705)+10^{-515}<301$.
+Expanding $J_{\mathcal V}$ on all $G_2$ gives the direct bound
+300, the first two prices using the just established
+$\mathcal V$ norms, the $D_0$ price, and the $A_Y$
+price at most $4(0.0017)(301)$. Their sum is below 303.
+
+### The true joint inverse and minimizing lift
+
+Write $A_{\mathcal E}=\Pi_{\mathcal E}T|_{\mathcal E}$.
+The five successive square completions give
+$A_{\mathcal E}=F^*D_{\mathcal E}F$, with
+$D_{\mathcal E}=\operatorname{diag}(A_{23},D,D_0,A_Y,A_{\mathcal V})$.
+The upper triangular $F$ has identity diagonal and an off-diagonal
+entry in row $i$ equal to the inverse of that pivot times its
+mixed block into the later coordinates. For the first two rows
+the sums of the entry bounds are
+$$
+\begin{aligned}
+ &10(0.0375+300\cdot10^{-265}+3\cdot10^{-6}+2.3\cdot10^{-11}),\\
+ & (25/2)(741\cdot10^{-265}+1/159+7.2\cdot10^{-8}).
+\end{aligned}
+$$
+The third and fourth rows add at most $18\cdot10^{-258}$
+and $4(0.0017)$. Hence $\|F-I\|<1/2$ and
+$A_{\mathcal E}\ge(1/50)I$. In particular the true
+joint minimizing lift is
+$$
+ Lz=z-A_{\mathcal E}^{-1}\Pi_{\mathcal E}Tz
+ \qquad(z\in G_2).
+$$
+It realizes the minimum of the original quadratic form over
+$z+\mathcal E$. Applying the successive completions in reverse
+also gives exactly this vector. From a unit $z\in G_2$ write its
+eliminated part as $v+y+\ell+a+p$, where
+$$
+\begin{aligned}
+ v&=-A_{\mathcal V}^{-1}J_{\mathcal V}z,\
+ y&=-A_Y^{-1}J_Y(z+v),\
+ \ell&=-D_0^{-1}J_0(z+v+y),\
+ a&=-D^{-1}J(z+v+y+\ell),\
+ p&=-A_{23}^{-1}PR(z+v+y+\ell+a).
+\end{aligned}
+$$
+Each operator acts on its original domain. In that order the
+bounds above give norms below $26,1205,10^{-253},142,130$.
+The actual $D_0$ inverse has norm at most 9, with
+$\|J_0\|<10^{-258}$, as used in these substitutions.
+
+### Collar restriction and exact deletion formula
+
+The angular measure of $J_*$ is $2/(160\pi)$, with square root
+below $0.064$ by $\pi>3.14$. For an old native sine with
+$\omega_j<3\cdot10^7$, the exact transform on $J_*$ has
+absolute value bounded by
+$$
+ \frac{\omega_j}{\xi^2-\omega_j^2}<2.45\cdot10^{-12}.
+$$
+Using $38170000<6200^2$ for the unit old sine space gives
+$\|K_*|_{P\mathcal H}\|<10^{-9}$. On $U$ use the original
+preimage with norm at most $10/9$ and its relative error
+$10^{-60}$. Adding the $W$ leakage gives
+$\|K_*|_Z\|<1.1\cdot10^{-9}$.
+The same leakage bound as above gives
+$\|K_*|_{L_0}\|\le10^{-265}$.
+On $Y_0$, use the high native preimage with error less than
+$3\delta$ times its norm. The distance from its carrier to
+the collar exceeds $10^{25}$, where the earlier high-packet
+bound gives transform at most $6\cdot10^{-24}$ per unit preimage
+norm. Thus $\|K_*|_{Y_0}\|<10^{-24}$.
+For each native separated packet the carrier distance
+exceeds $10^{24}$. The adjacent envelope there is at most
+$4\cdot10^{-48}$. Use the same angular measure, the individual
+projection defect $4\delta$, and the actual basis factor above.
+This gives $\|K_*|_{\mathcal V}\|<2\cdot10^{-39}$.
+Combine the five restriction bounds with the reverse
+substitution to obtain
+$$
+ \|K_*(L-I)\|<3.1\cdot10^{-7}.
+$$
+In this expression $I$ embeds $G_2$ in $\mathcal H$.
+
+Set $X=W_*|_{\mathcal E}$ and $Y_L=W_*L$. For
+$z\in G_2$, write any candidate in $z+\mathcal E$ as
+$Lz+e$ for $e\in\mathcal E$. The original quadratic form
+is $\langle z,C_2 z\rangle+\langle e,A_{\mathcal E}e\rangle$.
+On adding the deleted term, the extra expression to minimize is
+$$
+ \langle e,A_{\mathcal E}e\rangle+\|Y_Lz+Xe\|^2 .
+$$
+The new joint pivot is $A_{\mathcal E}+X^*X>0$. Each new
+successive pivot is also positive. Indeed at each prefix the
+original minimum only increases after adding $W_*^*W_*$.
+Restricting that comparison to the next pivot bounds it
+below by the original positive pivot. Thus the new sequential
+elimination and the joint minimum give the same $C_{2,+}$.
+Completing the joint square and multiplying the two inverse
+identities gives the exact correction
+$$
+ C_{2,+}-C_2
+ =Y_L^*\left[I-X(A_{\mathcal E}+X^*X)^{-1}X^*\right]Y_L
+ =Y_L^*(I+X A_{\mathcal E}^{-1}X^*)^{-1}Y_L .
+$$
+For the last identity one can multiply the middle bracket
+by $I+XA_{\mathcal E}^{-1}X^*$ and use
+$(A_{\mathcal E}+X^*X)^{-1}(I+X^*X A_{\mathcal E}^{-1})
+=A_{\mathcal E}^{-1}$.
+
+Since $-m<7.90$, the five collar restriction bounds and
+$\|A_{\mathcal E}^{-1}\|\le50$ give
+$\|XA_{\mathcal E}^{-1}X^*\|<9\cdot10^{-16}$.
+Also $\|W_*|_{G_2}\|^2\le0.12451$ by the full odd direct
+bound. The norm of $Y_L-W_*|_{G_2}$ is below
+$\sqrt{7.90}\,(3.1\cdot10^{-7})$. Hence
+$$
+ \|Y_L\|^2
+ \le\left(\sqrt{0.12451}+\sqrt{7.90}\,3.1\cdot10^{-7}\right)^2
+ <0.124512 .
+$$
+The exact middle inverse is between zero and the
+identity and differs from the identity in norm by less
+than $9\cdot10^{-16}$. Both $\|Y_L\|$ and
+$\|W_*|_{G_2}\|$ are below $0.353$.
+Subtracting the direct compression and using the norm
+difference bound proves the stated $6.6\cdot10^{-7}$ estimate.
+The bound on the full difference is $0.000485987$ below $B$.
+
+The lift is needed even for a positive two-dimensional example.
+With the first coordinate eliminated, take
+$T=\bigl(\begin{smallmatrix}1&2\\2&4\end{smallmatrix}\bigr)$ and
+$W=(1,0)$. The original Schur complement is zero and that of
+$T+W^*W$ is 2, although $\|W\|^2=1$ and $W$ vanishes on the
+last coordinate. The physical bound above pays this coupling
+through the actual five inverses.
+
+### Exact rational guards for the joint comparison
+
+The numerical comparisons use the following guards. The
+original multiplier, its arithmetic signs, and the angular
+support are the ones used in the preceding proof.
+
+```python
+from fractions import Fraction as F
+
+delta = F(1, 10**272)
+leak = F(1, 10**265)
+j_zero = F(1, 10**258)
+d_zero_price = F(1, 10**515)
+r = F(1, 160)
+collar_measure_sqrt = F(64, 1000)
+assert 2*r/F(157, 50) < collar_measure_sqrt**2
+assert F(3*10**7, (35*10**8)**2-(3*10**7)**2) < F(245, 10**14)
+assert 38170000 < 6200**2
+old_collar = collar_measure_sqrt*6200*F(245, 10**14)
+k_p, k_z, k_y, k_v = F(1, 10**9), F(11, 10**10), F(1, 10**24), F(2, 10**39)
+assert old_collar < k_p
+assert F(10, 9)*(old_collar+F(1, 10**60))+leak < k_z
+assert F(3, 4)*4*10**25-4*10**9 > 10**25
+assert (collar_measure_sqrt*F(6, 10**24)+3*delta)/(1-3*delta) < k_y
+
+sector_count = 3*10**19+1
+gram_lower = 1-16*sector_count*delta**2
+basis_factor = F(552, 100)*10**9
+assert gram_lower > 0 and sector_count/gram_lower < basis_factor**2
+assert F(3, 4)*2*10**25-4*10**9 > 10**24
+assert basis_factor*(collar_measure_sqrt*F(4, 10**48)+4*delta) < k_v
+
+p_total, p_z, p_y = F(15, 2), F(3, 80), F(3, 10**6)
+p_v, j_v_sector, y_v = F(23, 10**12), F(72, 10**9), F(17, 10**4)
+assert basis_factor*F(4, 10**21) < p_v
+assert basis_factor*F(13, 10**18) < j_v_sector
+assert basis_factor*F(3, 10**13) < y_v
+weighted_z = F(1, 200)
+assert F(1, 49900)+leak**2 < weighted_z**2
+assert 300*F(1, 40) == p_total
+assert 300*F(1, 40)*weighted_z == p_z
+j_total, j_y_sector = 741*weighted_z, F(1, 159)
+j_l0 = 741*leak
+inverse_z = F(25, 2)
+mixed_y, mixed_v = F(301), F(303)
+assert 300+10*p_y*p_total+inverse_z*j_y_sector*j_total+d_zero_price < mixed_y
+assert (300+10*p_v*p_total+inverse_z*j_v_sector*j_total
+        +d_zero_price+4*y_v*mixed_y) < mixed_v
+
+triangular_excess = (
+    10*(p_z+300*leak+p_y+p_v)
+    +inverse_z*(j_l0+j_y_sector+j_v_sector)
+    +18*j_zero+4*y_v
+)
+assert triangular_excess < F(1, 2)
+assert F(2, 25)*F(1, 2)**2 == F(1, 50)
+
+v_norm, y_norm, l0_norm, z_norm, p_norm = 26, 1205, F(1, 10**253), 142, 130
+assert mixed_v/12 < v_norm
+assert 4*(mixed_y+y_v*v_norm) < y_norm
+assert 9*j_zero*(1+v_norm+y_norm) < l0_norm
+assert inverse_z*(j_total+j_v_sector*v_norm+j_y_sector*y_norm+j_l0*l0_norm) < z_norm
+assert 10*(p_total+p_v*v_norm+p_y*y_norm+300*leak*l0_norm+p_z*z_norm) < p_norm
+lift_error = F(31, 10**8)
+assert k_p*p_norm+k_z*z_norm+leak*l0_norm+k_y*y_norm+k_v*v_norm < lift_error
+
+amplitude = F(79, 10)
+direct = F(12451, 10**5)
+collar_compression = F(9, 10**16)
+assert 50*amplitude*(k_p**2+k_z**2+leak**2+k_y**2+k_v**2) < collar_compression
+assert 4*direct*amplitude < 6**2 and amplitude < 8
+shift = F(124512, 10**6)
+assert direct+6*lift_error+8*lift_error**2 < shift < F(12452, 10**5)
+assert F(124997987, 10**9)-shift == F(485987, 10**9)
+
+norm_ceiling = F(353, 1000)
+assert shift < norm_ceiling**2
+assert amplitude < 3**2
+assert 2*norm_ceiling*3*lift_error+shift*collar_compression < F(66, 10**8)
+
+original_schur = 4-F(2)**2/1
+shifted_schur = 4-F(2)**2/2
+assert shifted_schur-original_schur == 2 > 1
+print('PASS five-pivot collar deletion and compression guards')
+```
