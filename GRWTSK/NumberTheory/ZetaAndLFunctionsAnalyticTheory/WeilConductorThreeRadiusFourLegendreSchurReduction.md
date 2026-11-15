@@ -4536,3 +4536,210 @@ assert column7_hi**2 < F('.119')*pivot7_lo
 assert F('.119') < budget
 print("PASS actual seventh mixed norm (1.407, 1.671), seventh debit (.084, .119) below B")
 ```
+
+## Transport of the negative collar through the two new pivots
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the actual bounded odd physical space and all five preceding
+eliminated sectors. On $G_2$, let $\Delta=C_{2,+}-C_2$ be the
+exact correction after deletion of the negative collar $J_{1/160}$.
+Keep its previous bound
+$$
+ \|\Delta-\rho e\otimes e\|<\varepsilon=1.09\cdot10^{-5},
+ \qquad
+ 0.12449194<\rho=\tau\|a\|^2<0.12449216 .
+$$
+The earlier coupled deletion proof gives $\Delta\ge0$ and
+strict positivity of its quadratic value on each nonzero vector.
+Eliminate the same physical subspace $\mathcal P=\operatorname{span}(e,v)$
+from both $C_2$ and $C_{2,+}$, and write $C_4$ and $C_{4,+}$ for
+the resulting operators on $H=H_{e,v}=G_2\cap\mathcal P^\perp$.
+Then $\Delta_7=C_{4,+}-C_4$ has strictly positive quadratic value on
+each nonzero vector of $H$. Its norm and rank-one approximation
+satisfy
+$$
+ 0.00285<\|\Delta_7\|<0.00580,\qquad
+ \|\Delta_7-\sigma g_*\otimes g_*\|<0.000012 ,
+$$
+where $\sigma$ and the actual physical vector $g_*$ are specified below.
+
+### Joint compression and ideal rank-one update
+
+Write $J:\mathcal P\hookrightarrow G_2$ for the inclusion,
+$A=J^*C_2J$, $F=\Pi_H C_2J$ and $D=\Pi_H C_2|_H$.
+All use the physical orthogonal sum $G_2=\mathcal P\oplus H$.
+In the ordered orthonormal basis $(e,v)$ put
+$c=\langle v,b_e\rangle$ and $d_v=\langle v,C_2v\rangle$.
+The actual entries are real. Thus
+$$
+ A=\begin{pmatrix}\beta&c\\ c&d_v\end{pmatrix},
+ \qquad d_v-c^2/\beta=\gamma_v.
+$$
+The leading principal minors of $A-9.6 I$ are positive
+by the previously proved strict entry bounds and the directed
+guard below. Hence $A>9.6 I$, and the actual collar-deleted
+leading block $A_+=A+J^*\Delta J$ has the same lower bound.
+Completing the square gives $C_4=D-F A^{-1}F^*$, the same
+operator as the successive Schur corrections in the two preceding
+pivots. For fixed $h\in H$, $\langle h,C_4h\rangle$ is the infimum over all
+$\mathcal P$ components in the original $C_2$ quadratic form.
+Joint and successive minimization give the same infimum.
+Both actual leading blocks are invertible on $\mathcal P$.
+
+Let $\widetilde C_2=C_2+\rho e\otimes e$ and
+$\widetilde A=A+\rho e\otimes e$ on $\mathcal P$. The ideal addition
+changes only this leading block. Since $A>0$ and $\rho>0$,
+the exact inverse identity obtained by multiplication is
+$$
+ \widetilde A^{-1}
+  =A^{-1}-\frac{\rho}{1+\rho t}\,(A^{-1}e)\otimes(A^{-1}e),
+ \qquad t=\langle e,A^{-1}e\rangle.
+$$
+Let $\widetilde C_4=D-F\widetilde A^{-1}F^*$, and put
+$b_0=\Pi_H b_e$. Since $C_3$ is the actual first Schur complement,
+$$
+ Fe=b_0,\qquad Fv=b_v+(c/\beta)b_0 .
+$$
+Inverting the two-by-two block and using these two column identities
+gives the exact formulas
+$$
+ t=\beta^{-1}+\frac{c^2}{\beta^2\gamma_v},\qquad
+ g_*=F A^{-1}e=\beta^{-1}\left(b_0-\frac{c}{\gamma_v}b_v\right),
+ \qquad \sigma=\frac{\rho}{1+\rho t}.
+$$
+Consequently $\widetilde C_4-C_4=\sigma g_*\otimes g_*$.
+This direction lies in the actual physical complement. Orthogonality
+of $H$ to $e$ kills the direct compression of the ideal addition,
+while the inverse block still changes.
+
+### Exact transport of the full approximation error
+
+Set $E_\Delta=\Delta-\rho e\otimes e$ on $G_2$, and let
+$L:H\to G_2$ be the ideal minimizing lift
+$Lh=(-\widetilde A^{-1}F^*h,h)$.
+For each fixed $h$, write the general lift as $Jp+Lh$.
+The cross term of the ideal form vanishes in these coordinates.
+The actual form therefore has quadratic value
+$$
+ \langle h,\widetilde C_4 h\rangle+
+ \langle Lh,E_\Delta Lh\rangle+
+ \langle p,A_+p\rangle+
+ 2\operatorname{Re}\langle p,J^* E_\Delta Lh\rangle .
+$$
+Minimize in $p$ using coercivity of the actual $A_+$ on $\mathcal P$.
+By equality of quadratic forms and polarization,
+$$
+ C_{4,+}-\widetilde C_4
+  =L^*E_\Delta L
+    -L^*E_\Delta J A_+^{-1}J^* E_\Delta L .
+$$
+The perturbation may have either sign. The identity keeps its
+mixed effect and gives
+$$
+ \|C_{4,+}-\widetilde C_4\|
+ \le\varepsilon
+       \left(1+\frac{\|F\|^2}{9.6^2}\right)
+       \left(1+\frac{\varepsilon}{9.6}\right)<0.000012 .
+$$
+Here $\|L\|^2\le1+\|F\|^2/9.6^2$ by orthogonality,
+and $A_+\ge A$ follows from the genuine $\Delta\ge0$.
+No positivity on the entire complement is needed for this identity.
+
+For strict positivity, alternatively take the actual minimizing lift
+$L_+h$ for the collar-deleted form. If $h\ne0$ then $L_+h\ne0$.
+Its original quadratic value is at least $\langle h,C_4h\rangle$.
+Thus
+$$
+ \langle h,\Delta_7h\rangle
+ =\langle L_+h,C_2L_+h\rangle-\langle h,C_4h\rangle
+       +\langle L_+h,\Delta L_+h\rangle >0.
+$$
+The final term uses the strict earlier correction at its true source.
+This step supplies no explicit uniform lower floor.
+
+### Directed size and a source-local falsifier
+
+Since $b_e=cv+b_0$, orthogonality and the original mixed-column
+bounds give $1.622<\|b_0\|<2.026$. Cauchy--Schwarz in the
+two-dimensional input bounds $\|F\|^2$ by
+$\|b_0\|^2+(\|b_v\|+(c/\beta)\|b_0\|)^2$.
+The reverse and forward triangle inequalities in the exact expression
+for $g_*$ give the directed lower and upper bounds below.
+They imply $0.1527<\|g_*\|<0.217$. Combining the ideal norm
+$\sigma\|g_*\|^2$ with the full error gives the stated interval
+for $\|\Delta_7\|$.
+
+More precisely, put $w_*=g_*/\|g_*\|$. The lower guard is for
+the quadratic value $\langle w_*,\Delta_7w_*\rangle$ itself.
+On the same vector the direct compression has absolute value
+$|\langle w_*,\Delta w_*\rangle|<\varepsilon$ since $w_*\perp e$.
+Thus
+$$
+ \langle w_*,\Delta_7w_*\rangle-\langle w_*,\Delta w_*\rangle
+ >0.00283 .
+$$
+This falsifies dropping the transported correction or substituting
+its simple direct compression on $H$.
+
+### Remaining source sign
+
+Set $\varepsilon_7=0.000012$ and $H_+=C_{4,+}-\varepsilon_7 I_H$.
+If $H_+$ is coercive, then
+$$
+ H_+\ge\sigma g_*\otimes g_*
+ \quad\Longleftrightarrow\quad
+ \sigma\langle g_*,H_+^{-1}g_*\rangle\le1 .
+$$
+The forward direction tests $H_+^{-1}g_*$, and the reverse uses
+Cauchy--Schwarz in the $H_+$ norm. These two quantitative premises
+would prove $C_4\ge0$ on all $H$, by the proved transport error.
+The simpler uniform bound $C_{4,+}\ge0.00580 I_H$ also suffices.
+Neither outside-collar estimate is supplied here.
+
+The original primitive nonprincipal parity-one conductor-three
+radius-four consumer retains all real odd compact $C^2$ tests,
+genuine gamma, signed prime powers, both angular signs, the full
+mask, and all physical inverse domains. The resulting all-support
+arithmetic sign and the pole-inclusive global Weil return remain open.
+
+### Exact rational guards for the joint collar transport
+
+```python
+from fractions import Fraction as Q
+
+beta_lo, beta_hi = Q('9.86900'), Q('9.87028')
+c_lo, c_hi = Q('1.6149'), Q('1.6164')
+d_lo = Q('23.80003')
+gamma_lo, gamma_hi = Q('23.535'), Q('23.538')
+be_lo, be_hi, bv_hi = Q('2.29'), Q('2.59'), Q('1.671')
+rho_lo, rho_hi = Q('0.12449194'), Q('0.12449216')
+epsilon = Q('0.0000109')
+
+pivot_floor = Q('9.6')
+assert beta_lo > pivot_floor
+assert (beta_lo-pivot_floor)*(d_lo-pivot_floor) > c_hi**2
+
+b0_lo, b0_hi = Q('1.622'), Q('2.026')
+assert b0_lo**2 < be_lo**2-c_hi**2
+assert be_hi**2-c_lo**2 < b0_hi**2
+f_squared = b0_hi**2 + (bv_hi+(c_hi/beta_lo)*b0_hi)**2
+lift_squared = 1+f_squared/pivot_floor**2
+error = epsilon*lift_squared*(1+epsilon/pivot_floor)
+assert error < Q('0.000012')
+
+t_lo = 1/beta_hi+c_lo**2/(beta_hi**2*gamma_hi)
+t_hi = 1/beta_lo+c_hi**2/(beta_lo**2*gamma_lo)
+g_lo = (b0_lo-c_hi*bv_hi/gamma_lo)/beta_hi
+g_hi = (b0_hi+c_hi*bv_hi/gamma_lo)/beta_lo
+assert Q('0.1527') < g_lo <= g_hi < Q('0.217')
+
+ideal_lo = rho_lo*g_lo**2/(1+rho_hi*t_hi)
+ideal_hi = rho_hi*g_hi**2/(1+rho_lo*t_lo)
+assert Q('0.00285') < ideal_lo-error
+assert ideal_hi+error < Q('0.00580')
+assert Q('0.00283') < ideal_lo-error-epsilon
+print("PASS joint collar transport: error < .000012, actual norm in (.00285, .00580)")
+```
