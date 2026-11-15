@@ -4743,3 +4743,296 @@ assert ideal_hi+error < Q('0.00580')
 assert Q('0.00283') < ideal_lo-error-epsilon
 print("PASS joint collar transport: error < .000012, actual norm in (.00285, .00580)")
 ```
+
+## A signed physical approximation to the transported collar direction
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep $H=H_{e,v}$, its true pivot and mixed map $A,F$, and the
+transported direction $g_*=FA^{-1}e$ from the joint collar
+transport. Let $P_0$ be the orthogonal projection onto the raw
+physical span of $u,v_0$. Put
+$$
+ t=\beta^{-1}+\frac{c^2}{\beta^2\gamma_v},\qquad
+ \eta_c=\frac{c}{\beta\gamma_v},\qquad
+ h=t u-\eta_c v_0,\qquad g_0=-(I-P_0)T_P h.
+$$
+Here $T_P$ uses the original unmasked signed physical translates.
+We prove
+$$
+ 0.1875<\|g_0\|<0.1886,\qquad
+ \|g_*-g_0\|<0.01243,\qquad
+ 0.175<\|g_*\|<0.2011.
+$$
+With the earlier rank-one error this improves the bounds on the
+actual transported correction to $0.00375<\|\Delta_7\|<0.00499$.
+
+### Signed two-carrier norm
+
+The two-by-two inverse gives $A^{-1}e=t e-\eta_c v$.
+Since $\eta_c>0$, write
+$$
+ \Lambda=t/\eta_c=\gamma_v/c+c/\beta,\qquad
+ g_0=\eta_c(I-P_0)T_P(v_0-\Lambda u).
+$$
+The signed 459-cell calculation above applies with this new
+interval for $\Lambda$. Its parameters are the actual $\alpha$
+and $\omega$, the exact coefficient intervals from the actual
+inner products, and the original 458 signed lags. Both low
+difference-frequency terms are integrated by their endpoint
+primitives. Over the full $\Lambda$ and $\eta_c$ intervals the
+scaled slow contribution to squared norm lies in
+$(-0.05454,-0.05354)$, and the absolute scaled fast remainder
+is below $6.5\cdot10^{-9}$. Omitting the slow contributions
+while retaining the fast ones would give squared norm in
+$(0.08894,0.08987)$. This would differ from the true value
+by more than $0.05354$.
+
+Evaluate the centered norm at the rational midpoint of the
+$\Lambda$ interval and transfer to the full interval using
+$\|(I-P_0)T_Pu\|<2.45$. Multiply the resulting norm bounds
+by the positive $\eta_c$ bounds. This gives the stated
+$0.1875<\|g_0\|<0.1886$ on the full physical interval.
+
+### Projection, angular action and true inverse transfer
+
+Let $P_1$ project onto the actual pivot span of $e,v$,
+and put $k=t e-\eta_c v$. We have $g_*=\Pi_H C_2 k$.
+Keep $z,z_y$, $d=1.6\cdot10^{-8}$ and the actual Gram data
+$g_a=\langle e,z_y\rangle$, $n=\|\Pi_{H_e}y\|$ from the
+neighboring pivot. The raw counterparts are $g=\langle u,y\rangle$
+and $\kappa$. The exact coordinate expressions are
+$$
+ k=(t+\eta_c g_a/n)e-(\eta_c/n)z_y,\qquad
+ h=(t+\eta_c g/\kappa)u-(\eta_c/\kappa)y .
+$$
+In both cases the first coefficient is positive and uses the
+negative overlap. With $e=z/\|z\|$, the sum of the two absolute
+coefficients is less than $0.10901$ on $z,z_y$ for $k$ and on
+$u,y$ for $h$. The existing projection errors also give
+$$
+ \|k-h\|<(2t+11\eta_c)d<0.282d,\qquad
+ \|h\|<0.103,\qquad \|P_1-P_0\|<26d .
+$$
+
+Use $\widetilde R=A_0I-T_P$ with the actual broad-band
+gamma and mask action $\|(R-\widetilde R)u\|,
+\|(R-\widetilde R)y\|<0.0076$, retaining all tails.
+Then $g_0=(I-P_0)\widetilde R h$. We have $\Pi_H P_0=0$
+exactly, since both $G_2$ projections of $u,y$ belong to
+the actual pivot span. Also $\Pi_H Bk=0$. The sum of the
+five genuine inverse terms in $C_2$ has action norm below
+$0.10604$ on each of $z,z_y$ from the preceding bounds,
+with the full $D_0$ term. Combining these input-by-input
+bounds yields
+$$
+ \|\Pi_H(g_*-g_0)\|
+ <300(0.282d)+0.10901(0.0076+0.10604)<0.01239 .
+$$
+This retains the original local and global factors for all
+five physical inverse columns.
+
+Let $\mathcal E=G_2^\perp$. The existing raw estimates give
+$\|\Pi_{\mathcal E}Ru\|,\|\Pi_{\mathcal E}Ry\|<0.00075$.
+Thus the part of $g_0=\widetilde R h-P_0\widetilde R h$
+in $\mathcal E$, using $\Pi_{\mathcal E}P_1=0$, satisfies
+$$
+ \|\Pi_{\mathcal E}g_0\|
+ <0.10901(0.00075+0.0076)+26d\,(233)(0.103)<0.000921.
+$$
+The bound $\|\widetilde R\|<233$ used here is the full signed
+prime multiplier bound with the constant $A_0$.
+Since $P_0g_0=0$, the remaining part in the new pivot span
+is bounded by $\|P_1g_0\|\le\|P_1-P_0\|\|g_0\|$.
+The three error components are orthogonal in
+$H\oplus\mathcal E\oplus\operatorname{ran}P_1$.
+Their directed squares give $\|g_*-g_0\|<0.01243$.
+The triangle inequalities now give the stated new interval
+for $\|g_*\|$.
+
+With $\rho$ and $\sigma=\rho/(1+\rho t)$ as before,
+the rational bounds give $0.1229<\sigma<0.123$.
+Use the norm of $\sigma g_*\otimes g_*$ and the full
+$0.000012$ error of the true $\Delta_7$ to obtain
+$0.00375<\|\Delta_7\|<0.00499$. The lower estimate also
+holds on $g_*/\|g_*\|$. In particular the quantitative bound
+$C_{4,+}\ge0.00499 I_H$ would suffice for the original
+$C_4$ sign.
+
+### Fourier tails of the same physical approximation
+
+Each translate of a normalized bare sine, compressed to the
+physical interval, is a phase-shifted sine restricted to one
+interval. The two exponential endpoint integrals give the same
+bound
+$$
+ \frac1{\|s_\rho\|}
+ \left(\frac1{|\nu-\rho|}+\frac1{|\nu+\rho|}\right)
+$$
+as for the unshifted sine. Thus the whole broad-band argument
+above applies to each shifted piece. In particular each off-band
+norm is below $3.02\cdot10^{-5}$, and each pointwise tail above
+$|\nu|=10^{25}$ is below $2/|\nu|$. The phase factors in each
+fraction have modulus one.
+
+The absolute sum of the signed prime coefficients is below 211.
+The coefficients of $h$ on the two normalized sines have sum
+below $0.10901$. The subtracted projection of $T_Ph$ onto the
+raw span is
+$$
+ (t\mu-\eta_c m)u+(tm-\eta_c D)v_0
+$$
+using the exact signed entries $\mu,m,D$ from the seventh mixed
+column. The absolute values of these coefficients are below
+$1.21$ and $0.17$, respectively, and the sum of absolute
+coefficients of $v_0$ on $u,y$ is below $1.066$.
+Consequently represent $g_0$ with total coefficient sum below
+$24.4$ in the compressed translated and raw normalized sines.
+Its off-band angular norm is below $0.00074$. Its pointwise
+amplitude for $|\nu|\ge10^{25}$ is below $49/|\nu|$, giving
+angular norm there below $9\cdot10^{-12}$.
+
+Write $G$ for the full angular difference multiplier of
+$R-\widetilde R$ as above. On the broad band the log-slope
+argument applies to the endpoint bound for each compressed
+translate, and its angular action costs at most
+$10^{-8}+300\eta+12800/L$ per normalized input.
+Here $\eta$ is the original filter defect and $L=3.5\cdot10^9$.
+Outside the band use $|G|<251$ and the square of the new
+off-band norm. Plancherel and the actual physical projection give
+$$
+ \left|\langle g_0,(R-\widetilde R)g_0\rangle\right|<0.00016 .
+$$
+This estimate concerns the raw direction and the uncorrected
+$R$ quadratic form, before pricing any genuine inverse action.
+
+There is a genuine interior jump at the physical cut
+$4-\log 2$. The plus translate for $n=2$ exits there.
+No other signed atom has the same positive cut, and the native
+sine part vanishes at the exiting endpoint. Subtracting the raw
+span projection is continuous in the interior. Hence the
+magnitude of the jump of $g_0$ is exactly
+$$
+ \frac{\log 2}{\sqrt{2}}\,
+ \left(t+\eta_c g/\kappa\right)\frac{|\sin(4\alpha)|}{\|s\|}
+ >0.0048 ,
+$$
+The nonnative offset and the sine Taylor bound give
+$|\sin(4\alpha)|>0.20$. In particular $g_0$ has no continuous
+representative at this cut. A uniform $O(|\nu|^{-2})$ Fourier
+bound would give an integrable transform and hence a continuous
+representative by inversion. The raw approximation therefore
+requires its endpoint tail estimates and the bounded physical
+carrier, with the original compact $C^2$ admission kept distinct.
+
+The new physical approximation controls vector norm.
+A quadratic comparison for the actual $C_{4,+}$ must still
+estimate its signed arithmetic, angular terms and genuine
+inverse actions on this direction. The aligned Rayleigh value,
+the uniform outside-collar coercivity and inverse pairing
+remain open. The actual arithmetic consumer retains every
+original real odd compact $C^2$ admitted test, the full
+parity-one gamma and signed prime-power source, and the
+original pole-inclusive global Weil return.
+
+### Exact rational guards for the transported direction
+
+Append this block to the historical prefix and the centroid,
+centroid mixed-column, neighboring sine and seventh mixed-column
+checkers. The 459-cell integration is reused at $\Lambda$.
+
+```python
+# Reuse the signed two-carrier integral on the same physical cells.
+proxy_eta = divide_positive(coupling_bounds,
+                            multiply(beta_interval, (pivot7_lo, pivot7_hi)))
+proxy_lambda = add(divide_positive((pivot7_lo, pivot7_hi), coupling_bounds),
+                   divide_positive(coupling_bounds, beta_interval))
+proxy_lead, proxy_slow, proxy_fast = centered_cells(proxy_lambda)
+proxy_eta_squared = square(proxy_eta)
+proxy_without_slow = multiply(proxy_eta_squared,
+                              add(proxy_lead, (-proxy_fast, proxy_fast)))
+proxy_slow = multiply(proxy_eta_squared, proxy_slow)
+assert_inside(proxy_without_slow, '.08894', '.08987')
+assert_inside(proxy_slow, '-.05454', '-.05354')
+assert proxy_eta[1]**2*proxy_fast < F('.0000000065')
+
+proxy_mid = (proxy_lambda[0]+proxy_lambda[1])/2
+proxy_radius = (proxy_lambda[1]-proxy_lambda[0])/2
+mid_lead, mid_slow, mid_fast = centered_cells((proxy_mid, proxy_mid))
+mid_energy = add(add(mid_lead, mid_slow), (-mid_fast, mid_fast))
+mid_norm = sqrt_interval(mid_energy)
+proxy_norm_radius = F('2.45')*proxy_radius
+proxy_norm = multiply(proxy_eta,
+    add(mid_norm, (-proxy_norm_radius, proxy_norm_radius)))
+assert_inside(proxy_norm, '.1875', '.1886')
+print("PASS physical collar proxy norm (.1875, .1886) and indispensable slow harmonics")
+
+# Transfer the same physical column through the exact Gram and Schur maps.
+proxy_t = add(divide_positive((1, 1), beta_interval),
+              divide_positive(square(coupling_bounds),
+                              multiply(square(beta_interval), (pivot7_lo, pivot7_hi))))
+assert_inside(proxy_t, '.10245', '.10247')
+assert_inside(proxy_eta, '.00695', '.00696')
+proxy_coeff_sum = F('.10901')
+for g0, k0, z_floor in ((gram_overlap, norm_orth, F(1)),
+                         (act_g, act_k, 1-defect)):
+    overlap_piece = divide_positive(g0, k0)
+    first = add(proxy_t, multiply(proxy_eta, overlap_piece))
+    second_abs = divide_positive(proxy_eta, k0)
+    assert 0 < first[0] <= first[1]
+    assert first[1]/z_floor + second_abs[1] < proxy_coeff_sum
+assert 2*proxy_t[1]+11*proxy_eta[1] < F('.282')
+assert proxy_t[1]**2+proxy_eta[1]**2 < F('.103')**2
+
+projected_difference = (300*F('.282')*defect
+                        +proxy_coeff_sum*(F('.0076')+old_action))
+head_difference = (proxy_coeff_sum*(F('.00075')+F('.0076'))
+                   +26*defect*233*F('.103'))
+span_difference = 26*defect*proxy_norm[1]
+assert projected_difference < F('.01239')
+assert head_difference < F('.000921')
+assert span_difference < F('.000000111')
+proxy_error = F('.01243')
+assert projected_difference**2+head_difference**2+span_difference**2 < proxy_error**2
+actual_proxy_lo, actual_proxy_hi = F('.175'), F('.2011')
+assert actual_proxy_lo < proxy_norm[0]-proxy_error
+assert proxy_norm[1]+proxy_error < actual_proxy_hi
+
+rho_range = F('.12449194'), F('.12449216')
+sigma_range = divide_positive(rho_range, add((1, 1), multiply(rho_range, proxy_t)))
+assert_inside(sigma_range, '.1229', '.123')
+transport_error = F('.000012')
+assert F('.00375') < sigma_range[0]*actual_proxy_lo**2-transport_error
+assert sigma_range[1]*actual_proxy_hi**2+transport_error < F('.00499')
+print("PASS collar proxy error < .01243, actual direction (.175, .2011), debit (.00375, .00499)")
+
+# Fourier endpoints of the same proxy give a direct bilinear bound.
+first_center = subtract(multiply(proxy_t, mean), multiply(proxy_eta, prime_mixed_orth))
+second_center = subtract(multiply(proxy_t, prime_mixed_orth), multiply(proxy_eta, prime_diag_orth))
+raw_v_coeff = (1+max(abs(g) for g in gram_overlap))/norm_orth[0]
+assert max(abs(q) for q in first_center) < F('1.21')
+assert max(abs(q) for q in second_center) < F('.17')
+assert raw_v_coeff < F('1.066')
+shift_coeff_sum = 211*proxy_coeff_sum+F('1.21')+F('.17')*F('1.066')
+assert shift_coeff_sum < F('24.4')
+proxy_tail = F('.00074')
+assert shift_coeff_sum*column_tail < proxy_tail
+assert 2*shift_coeff_sum < 49
+assert 49**2 < F('.000000000009')**2*pi_lower*10**25
+
+inside_action = F(1, 10**8)+300*eta+F(12800, column_band_low)
+proxy_bilinear_error = inside_action*shift_coeff_sum*proxy_norm[1]+251*proxy_tail**2
+assert proxy_bilinear_error < F('.00016')
+print("PASS physical proxy off-band norm < .00074 and raw gamma-mask form error < .00016")
+
+# A genuine interior jump rules out inheriting smooth-test decay.
+jump_coeff = proxy_t[0]-proxy_eta[1]*max(abs(g) for g in gram_overlap)/norm_orth[0]
+assert jump_coeff > F('.10')
+assert F('.212')-F('.216')**3/6 > F('.20')
+assert log_bounds(2)[0] > F('.69')
+assert 2 < F('1.415')**2 and s_norm[1] < F('2.001')
+assert F('.69')*F('.10')*F('.20')/(F('1.415')*F('2.001')) > F('.0048')
+print("PASS interior jump > .0048 at the signed n=2 cut")
+```
