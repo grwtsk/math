@@ -532,3 +532,178 @@ An independent written radius-one stage proof is recorded in
 [hs#2, comment 6886476754](https://github.com/grwtsk/hs/issues/2#issuecomment-6886476754).
 Cofinal conductor-three stages, all other characters, conductor-one
 zeta, RH and primitive Dirichlet GRH require their separate returns.
+
+## 10. C0009/T4: signed two-band Schur improvement from the original overlap
+
+**2026-11-14; grwtsk contributors; AI-assisted written analytic proof.**
+The preceding §9 provides a source-coupled 29/20 estimate. The present
+argument improves its lower constant to **16/9**, for exactly the same
+restricted real odd test family, while explicitly retaining the negative
+directions of the **truncated** mixed kernel. The result is **not a Lean
+declaration**: LEAN_ELABORATION_NOT_RUN, FRESH_KERNEL_NOT_RUN,
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN and INDEPENDENT_REVIEW_UNASSESSED.
+The full pole-inclusive arithmetic Weil source and RH/GRH remain open.
+
+**Exact physical test and return.** Let B=[a,b]=[3/4,7/8],
+r=log(4)=2log(2), J=r-B. For any real C² function u with support strictly
+inside B, set v(x)=-u(r-x), h=u+v on [0,1], and extend h oddly to the
+original g=liftReal f supported in [-1,1]. Put H=∫_B u(x)² dx,
+s₀=1/8, s₁=1/2, and use the *original* positive-half overlap R_s of §2.
+The parity-one physical kernel is
+K(s)=parityKernel 1 s=exp(-s/2)/(2sinh s), s>0.
+The claim for **every** such u, including oscillatory sign-changing u, is
+
+\`\`\`text
+G(h):=∫_(s₀,s₁) K(s)R_s(h)ds ≥ (16/9)H
+                                  > [2log(2)+7/18]H   if H>0.   (13)
+\`\`\`
+
+When H=0, G=0. This is an estimate for a **source subset** of the full
+archimedean gamma correction, not an independently defined positive form.
+It is only a consumer of the same original arithmetic source as §9.
+
+**Support geometry and an exact identity.** The positive atanh series gives
+
+\`\`\`text
+56/81 < log(2) < 56/81+1/540 < 25/36.
+\`\`\`
+
+In particular 11/8<r<3/2, J⊂(1/2,3/4), and both bands have
+width 1/8. For s∈[1/8,1/2] the cross-origin reflected-sum portion of
+the genuine R_s vanishes; same-band translated products vanish
+almost everywhere. Directly expanding the *original*
+R_s=2∫_0^(1-s)(h(x+s)-h(x))² dx, without periodic wrap, yields
+
+\`\`\`text
+G(h)=4 M H +2∫_B u(x)²P(x)dx
+        +4∫_B∫_B u(x)u(y)T(x,y)dy dx,        (14)
+
+M=∫_(1/8,1/2)K(s)ds,
+P(x)=∫_(1/8,1-x)K(s)ds + ∫_(1/8,1-r+x)K(s)ds,
+T(x,y)=K(x+y-r)·1_{1/8≤x+y-r≤1/2}.
+\`\`\`
+
+Here both upper limits in P lie in [1/8,1/2] for x∈B, by
+the actual support and r bounds. To derive (14), the incoming squared
+mass is ∫_s^1h²=2H for s≤1/2<inf J. The outgoing squared mass is
+the two displayed P integrals after the change y=r-x on J.
+The only surviving shifted product goes from J to B; its
+original negative sign v=-u∘(r-·), coupled to the -4 cross
+coefficient from expanding the square, gives the **signed**
++4∫∫u(x)u(y)T(x,y) expression. The integrated physical source,
+not a surrogate Fourier operator, owns every term.
+
+**Explicit kernel and potential inequalities.** For 0<s≤1/2,
+
+\`\`\`text
+1/(2s)-1/3 < K(s) ≤ 1/(2s).                 (15)
+\`\`\`
+
+Indeed sinh s≥s, exp(-s/2)≤1 give the upper bound.
+For the lower bound,
+sinh s≤s/(1-s²/6) follows termwise from
+(2n+1)!≥6^n in the power series, and exp(-s/2)≥1-s/2.
+Thus
+
+\`\`\`text
+K(s)≥(1-s/2)(1-s²/6)/(2s)
+    =1/(2s)-1/4-s/12+s²/24
+    ≥1/(2s)-7/24 >1/(2s)-1/3.
+\`\`\`
+
+These are valid only on the indicated strictly positive s interval,
+and no divergent naked K is integrated at zero.
+
+Integrating (15) on [1/8,1/2] gives
+M>log2-1/8>13/24.
+On B, P'(x)=-K(1-x)+K(1-r+x)<0:
+1-r+x>1-x since r<2x, and K strictly decreases.
+Consequently, using log(7/2)>2680/2187>29/24
+from the first two positive atanh(5/9) terms,
+
+\`\`\`text
+P(x)≥P(b)=∫_(1/8,15/8-r)K
+       >∫_(1/8,7/16)K
+       >(1/2)log(7/2)-5/48>1/2.           (16)
+\`\`\`
+
+The lower cutoff and all upper limits are source-supported positive
+numbers; the endpoint terms are understood up to Lebesgue-null sets.
+
+**The signed mixed kernel cannot be discarded.** T is symmetric and
+pointwise nonnegative, but its associated quadratic form need **not**
+be positive semidefinite: at the limiting band endpoints,
+T(a,a)=0, T(a,b)>0 and T(b,b)>0, as the indicator deletes
+2a-r<1/8 but retains a+b-r and 2b-r. Smooth bumps concentrated
+near the two endpoints with opposite coefficients give negative mixed
+directions. This is a falsification of a naive Gram-positivity shortcut,
+**not a negative value of the full gamma energy**.
+
+Instead, for each fixed x∈B the source y-window has length at most
+b-a=1/8 and x+y-r≥1/8 wherever T≠0. Monotonicity and (15) give
+
+\`\`\`text
+∫_B T(x,y)dy ≤∫_(1/8,1/4) ds/(2s)
+              =(1/2)log2 <25/72.
+\`\`\`
+
+By symmetry and 2|u(x)u(y)|≤u(x)²+u(y)²,
+
+\`\`\`text
+∫_B∫_B u(x)u(y)T(x,y)dy dx ≥-(25/72)H.    (17)
+\`\`\`
+
+Combining (14)--(17), for H>0,
+
+\`\`\`text
+G(h)>[4(13/24)+2(1/2)-4(25/72)]H
+    =(16/9)H.
+\`\`\`
+
+Finally 2log2<25/18, hence
+16/9-2log2>7/18, proving (13) with its strict reserve.
+No sign assumption on u, independent n=4 component, or gamma
+reallocation was used.
+
+**Consumer and exact limitation.** The original positive n=4
+weight is w₄=Λ(4)/sqrt(4)=log2/2. Its individual reflected
+samples obey R_r(u)=R_r(v)=2H and R_r(h)=0, so the lost diagonal
+atom is w₄·4H=2log2·H. The *single physical gamma window*
+G(h) exceeds that loss by more than 7H/18 for nonzero u.
+This does not control n=2 or n=5 negative signed terms,
+n=7 positive term, the conductor constant, either potential
+orientation outside this window, arbitrary mixed-support
+functions, or the full original Qχ,1 stage.
+
+**Reproduction and falsification.** Local executable
+\`python3 /mnt/data/c0009_t4/verify_odd_two_band_schur.py\`
+(Python 3.13.5, exit 0) passed **27 exact Fraction assertions** for
+cutoff geometry, logarithmic constants, the Schur charge, the
+16/9 coefficient, the >7/18 margin and the truncated-kernel
+negative-control geometry. Script SHA-256:
+\`a851d662dc3962333220a4ecf2e98ff6077305e738fb06790ecec3f8fb951f6a\`.
+Output SHA-256:
+\`cb64bdfd29bedabe581292789f961505ed6386c9b0594df1ad91f60f2b44c45b\`.
+The source-owned portable script is
+\`scripts/verify_odd_two_band_schur.py\`; rerun its exact bytes
+and compare results on a clean checkout. The arithmetic checks
+validate **constants, not the integral proof or Lean**.
+
+An independent exploratory Gauss–Legendre calculation compared the
+direct original R_s to the diagonal/mixed expression (14) on six C²
+test families, including frequencies 70 and 200; relative residuals
+were <4×10⁻¹⁰ and tested G/H ranged from about 3.84 to 4.41.
+Those floating-point tests are **not** certified universality,
+rounding or independent formal verification.
+
+**Remaining source-return obligations.** The exact integrated
+positive-half R_s and all-signed prime Q reassembly still require
+pinned Lean elaboration and kernel/axiom checks. The universal joint
+arithmetic budget (12) remains **UNPROVED** and needs a bound for
+mixed cross-band contributions of the true signed n=2,4,5,7
+source and both complete gamma boundary potentials.
+The separate completed Weil formula (including all pole
+orientations), original test-domain coverage and
+\`PrimitiveNegativeWitness\` also remain open. Unconditional RH
+for analytically continued zeta and primitive Dirichlet GRH
+including conductor one are **UNPROVED**.
