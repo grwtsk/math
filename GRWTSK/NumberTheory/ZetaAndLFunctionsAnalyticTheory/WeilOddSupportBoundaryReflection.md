@@ -466,3 +466,69 @@ integral-return equalities above, (12), the zeta pole-inclusive source,
 `PrimitiveNegativeWitness`, all windows/characters, RH and primitive
 Dirichlet GRH remain open. Neither finite matrix exploration nor the
 pointwise Fourier-symbol obstruction in §7 settles (12).
+
+## 9. Uniform gamma-window floor for reflected two-band tests
+
+**2026-11-14, grwtsk contributors, AI-assisted.** Written analytic proof
+for the selected two-band inequality in
+[hs#2, C0009/T2](https://github.com/grwtsk/hs/issues/2#issuecomment-6886647564).
+This supplementary result follows the original parity-one positive-half
+overlap in §§2–4. Lean elaboration, fresh kernel replay, transitive axiom
+audit, and independent review are NOT_RUN.
+
+Let r=log(4), B=[3/4,7/8], J=r−B. For every real compactly supported C²
+function u with support strictly inside B, put v(x)=−u(r−x), h=u+v,
+and H=∫_B u²=∫_J v². Use their original odd zero extensions to [−1,1].
+For the physical overlap R_s(h) and parity-one kernel K(s),
+
+```text
+∫_(1/8)^(1/2) K(s) R_s(h) ds ≥ (29/20)H ≥ 2log(2)H.
+```
+
+The last comparison is strict when H>0. Reflection at r gives
+R_r(h)=0, while R_r(u)=R_r(v)=2H. With native Λ(4)=log(2), the exact
+lost prime-square diagonal contribution is (log(2)/2)·4H=2log(2)H.
+
+**Diagonal contribution.** From 69/100<log(2)<7/10, J lies in (1/2,3/4)
+strictly below B. For 1/8≤s≤1/2 the cross-origin reflection is zero,
+so R_s=2∫_0^(1−s)(h(x+s)−h(x))² dx. The incoming squared mass is
+2H before the factor 2. The outgoing term retains at least H from
+J for s≤1/4 and is nonnegative throughout. Same-band correlation
+products vanish up to null endpoints since each band has width 1/8.
+Monotonicity of K, K(1/4)>5/3 and K(1/2)>7/10 bound the integrated
+diagonal below by 6H(1/8)(5/3)+4H(1/4)(7/10)=39H/20.
+
+**Mixed contribution.** Only translates from J to B remain.
+Changing variables using v=−u(r−·) writes the mixed integral as
+4∫∫ K(x+y−r)u(x)u(y) over x,y∈B with 1/8≤x+y−r≤1/2.
+The upper cutoff deletes nothing because 7/4−r<1/2.
+On B×B, x+y−r≥d=3/2−r>1/10. The full kernel is positive
+semidefinite even for sign-changing u. Expand
+K(t)=Σ_(k≥0) exp[−(3/2+2k)t], uniformly for t≥d. Each integrated
+term factors as exp[(3/2+2k)r] times the square of
+∫_B exp[−(3/2+2k)x]u(x)dx. Uniform convergence on the square
+justifies integration of the expansion.
+
+The omitted lower triangle x+y<r+1/8 lies in [3/4,3/4+ℓ]²,
+where ℓ=r−11/8∈(0,1/40). Cauchy–Schwarz bounds its absolute
+integral before the factor 4 by K(d)ℓH. Since K(d)≤1/(2d)<5,
+the mixed integral is at least −H/2. The resulting floor is 29H/20.
+
+**Constants and scope.** The first two terms of the atanh expansion
+of log(2) give 56/81 with remainder at most 1/540. Alternating Taylor
+lower cuts for exp(−3s/2) through degree three, and for exp(−2s)
+through degrees three and five at s=1/4 and s=1/2 respectively,
+give the kernel lower ratios 111/64 and 885/1216. Exact rational
+comparisons give the stated endpoint bounds and 29/20>7/5>2log(2).
+
+The proof uses the diagonal gamma energy of the combined test and
+the complete reflected kernel. The narrow-bump counterexample in
+C0009/T2 to paying the loss from mixed gamma alone still applies.
+The bound on the omitted triangle is uniform for localized and
+oscillatory signed inputs. It charges this gamma window once.
+Complementary shifts, the other signed atoms, both boundary potentials
+and the all-support inequality (12) remain in the original source.
+An independent written radius-one stage proof is recorded in
+[hs#2, comment 6886476754](https://github.com/grwtsk/hs/issues/2#issuecomment-6886476754).
+Cofinal conductor-three stages, all other characters, conductor-one
+zeta, RH and primitive Dirichlet GRH require their separate returns.
