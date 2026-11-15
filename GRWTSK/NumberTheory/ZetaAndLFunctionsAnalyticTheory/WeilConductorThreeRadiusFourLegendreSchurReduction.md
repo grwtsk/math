@@ -3589,163 +3589,151 @@ print('PASS original projected centroid sine and five inverse prices')
 with exact rational checks. Lean elaboration, fresh kernel replay
 and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
 
-Keep the actual centroid vector $e=z/|z|$, $z=Pi_{G_2}u$ from
+Keep the actual centroid vector $e=z/\|z\|$, $z=\Pi_{G_2}u$ from
 the preceding section, and write $C_3$ for the corrected form on
-$H_e=G_2cap e^perp$. For $b_e=Pi_{H_e} C_2e$ and
-$eta=langle e,C_2eangle$ we have
+$H_e=G_2\cap e^\perp$. For $b_e=\Pi_{H_e} C_2e$ and
+$\beta=\langle e,C_2e\rangle$ we have
 $$
- 2.29<|b_e|<2.59,qquad
- 0.53<|eta^{-1}b_eotimes b_e|<0.68.
+ 2.29<\|b_e\|<2.59,\qquad
+ 0.53<\|\beta^{-1}b_e\otimes b_e\|<0.68.
 $$
 In the real or complex physical form, completing the square gives
 $$
- langle he+v,C_2(he+v)angle
- =eta|h+eta^{-1}langle b_e,vangle|^2
-   +langle v,C_3vangle,qquad
- C_3=Pi_{H_e} C_2|_{H_e}-eta^{-1}b_eotimes b_e
+ \langle he+v,C_2(he+v)\rangle
+ =\beta|h+\beta^{-1}\langle b_e,v\rangle|^2
+   +\langle v,C_3v\rangle,\qquad
+ C_3=\Pi_{H_e} C_2|_{H_e}-\beta^{-1}b_e\otimes b_e
 $$
-for every $hinmathbb C$ and $vin H_e$. Here $C_3ge0$ is the
+for every $h\in\mathbb C$ and $v\in H_e$. Here $C_3\ge0$ is the
 remaining condition. The bound by $0.68I_{H_e}$ holds uniformly,
 but the proposed bound by the scalar budget $BI_{H_e}$ fails on
-$b_e/|b_e|$, where the debit is above $0.53>B$.
+$b_e/\|b_e\|$, where the debit is above $0.53>B$.
 
 ### The centered physical shift column
 
 Let $T_P$ be the compression of the unmasked original prime
 multiplier $P_4$ by zero extension and restriction to the physical
-interval. For $ell_n=log n$ and
-$a_n=2chi_3(n)log(p)/sqrt n$ with $n=p^jle2980$, $p
-e3$,
+interval. For $\ell_n=\log n$ and
+$a_n=2\chi_3(n)\log(p)/\sqrt n$ with $n=p^j\le2980$, $p\ne3$,
 the cosine multiplier gives
 $$
- (T_Ps)(t)=	frac12sum_n a_n [s(t+ell_n)+s(t-ell_n)],
- qquad -4le tle4 .
+ (T_Ps)(t)=\tfrac12\sum_n a_n [s(t+\ell_n)+s(t-\ell_n)],
+ \qquad -4\le t\le4 .
 $$
 Here $s$ is the zero-extended centroid sine at the same actual
-$alpha$. Symmetric shifts preserve oddness, and $T_P$ is bounded
-and self-adjoint. Its expectation on $u=s/|s|$ is the real
-$muin(11.57599220,11.57634860)$ from the preceding section.
+$\alpha$. Symmetric shifts preserve oddness, and $T_P$ is bounded
+and self-adjoint. Its expectation on $u=s/\|s\|$ is the real
+$\mu\in(11.57599220,11.57634860)$ from the preceding section.
 
-For $0<t<4$, cut at all $|4-ell_n|$. On each open cell the
-shifted sum is $Asin(alpha t)+Dcos(alpha t)$.
-For $ell_n<4$ both shifts contribute at zero. The contribution
-to the initial sine coefficient is $a_ncos(alphaell_n)$,
-and at $4-ell_n$ the plus shift exits, changing the coefficient
-pair by $-(a_n/2)(cos(alphaell_n),sin(alphaell_n))$.
-For $ell_n>4$ only the minus shift enters at $ell_n-4$, changing
-the pair by $(a_n/2)(cos(alphaell_n),-sin(alphaell_n))$.
+For $0<t<4$, cut at all $|4-\ell_n|$. On each open cell the
+shifted sum is $A\sin(\alpha t)+D\cos(\alpha t)$.
+For $\ell_n<4$ both shifts contribute at zero. The contribution
+to the initial sine coefficient is $a_n\cos(\alpha\ell_n)$,
+and at $4-\ell_n$ the plus shift exits, changing the coefficient
+pair by $-(a_n/2)(\cos(\alpha\ell_n),\sin(\alpha\ell_n))$.
+For $\ell_n>4$ only the minus shift enters at $\ell_n-4$, changing
+the pair by $(a_n/2)(\cos(\alpha\ell_n),-\sin(\alpha\ell_n))$.
 All 458 positive cuts are separated by directed logarithm intervals.
 Both endpoints have measure zero.
 
-Put $q=(T_P-mu)u$ so $langle u,qangle=0$.
+Put $q=(T_P-\mu)u$ so $\langle u,q\rangle=0$.
 On a cell of length $L$, the mean term in the integral of the
 squared centered sine combination is
-$L((A-mu)^2+D^2)/2$. The rest is a single harmonic at $2alpha$
-with amplitude $((A-mu)^2+D^2)/2$. Its integral over any cell has
-absolute value at most $((A-mu)^2+D^2)/(2alpha)$, by the
+$L((A-\mu)^2+D^2)/2$. The rest is a single harmonic at $2\alpha$
+with amplitude $((A-\mu)^2+D^2)/2$. Its integral over any cell has
+absolute value at most $((A-\mu)^2+D^2)/(2\alpha)$, by the
 endpoint primitive. Double for the odd physical vector and divide
 by $E(s)$ to get the centered squared norm. The checker sums the
 mean terms and pays the full error of all 459 cells. It uses the
 true directed carrier and mean intervals, keeping the signs and
 both coefficients of every translate. It gives
 $$
- 2.43<|q|<2.45 .
+ 2.43<\|q\|<2.45 .
 $$
 
 ### Gamma and mask action on the same vector
 
-Write $A(
-u)=log(3/pi)+operatorname{Re}psi(3/4+i
-u/2)$,
-$mathcal D$ for the original residual set, and $A_0=21.3208029$.
+Write $A(\nu)=\log(3/\pi)+\operatorname{Re}\psi(3/4+i\nu/2)$,
+$\mathcal D$ for the original residual set, and $A_0=21.3208029$.
 On the full angular line the multiplier of the difference
 $R-(A_0 I-T_P)$ before physical restriction is
 $$
- G(
-u)=1_{mathcal D}wA(
-u)-A_0+
-           (1-1_{mathcal D}w)P_4(
-u).
+ G(\nu)=1_{\mathcal D}wA(\nu)-A_0+
+           (1-1_{\mathcal D}w)P_4(\nu).
 $$
-The mirrored collar $||
-u|-alpha|le5cdot10^7$ lies in
-$3.5cdot10^9<|
-u|<4cdot10^9$ and hence inside $mathcal D$
-with $1-wleeta=3cdot10^{-10}$. Directed logarithms of the
-endpoints for $3|
-u|/(2pi)$ and the full Binet error give
-$|A-A_0|<0.01334$ there. Since $|A-P_4|<300$ on $mathcal D$,
-$|G|<0.01334+300eta$ on the collar. Off it,
-$1_{mathcal D}wA$ belongs to $[-2,61]$, so $|G|<40+211=251$.
+The mirrored collar $||\nu|-\alpha|\le5\cdot10^7$ lies in
+$3.5\cdot10^9<|\nu|<4\cdot10^9$ and hence inside $\mathcal D$
+with $1-w\le\eta=3\cdot10^{-10}$. Directed logarithms of the
+endpoints for $3|\nu|/(2\pi)$ and the full Binet error give
+$|A-A_0|<0.01334$ there. Since $|A-P_4|<300$ on $\mathcal D$,
+$|G|<0.01334+300\eta$ on the collar. Off it,
+$1_{\mathcal D}wA$ belongs to $[-2,61]$, so $|G|<40+211=251$.
 This includes the cut-out pair and the entire angular tail outside
 the residual set.
 
-The two-sided bare-sine bound with $b=||
-u|-alpha|>0$ gives
-$|widehat u|le1.01/b$. Its squared integral off the collar
-with measure $d
-u/(2pi)$ is below $1.3cdot10^{-8}$.
+The two-sided bare-sine bound with $b=||\nu|-\alpha|>0$ gives
+$|\widehat u|\le1.01/b$. Its squared integral off the collar
+with measure $d\nu/(2\pi)$ is below $1.3\cdot10^{-8}$.
 Plancherel, orthogonality of the two frequency regions and
 contractive physical restriction give
 $$
- |Ru-(A_0-mu)u+q|
- le|Gwidehat u|_{L^2(d
-u/(2pi))}<0.032 .
+ \|Ru-(A_0-\mu)u+q\|
+ \le\|G\widehat u\|_{L^2(d\nu/(2\pi))}<0.032 .
 $$
 
 ### Transfer through the true projections and five inverse actions
 
-We have $Pi_{H_e}u=0$, $|z-u|<d=1.6cdot10^{-8}$
-and $1-d<|z|le1$. Thus
-$|Pi_{H_e}Rz+Pi_{H_e}q|<0.032+300d$.
+We have $\Pi_{H_e}u=0$, $\|z-u\|<d=1.6\cdot10^{-8}$
+and $1-d<\|z\|\le1$. Thus
+$\|\Pi_{H_e}Rz+\Pi_{H_e}q\|<0.032+300d$.
 Compress all five preceding correction terms to $G_2$ and
 then project their output to $H_e$. Their combined action on
 $z$ has norm at most
 $$
- egin{aligned}
- &|PR||A_{23}^{-1}||PRz|
- +|J||D^{-1}||Jz|+|J_0^*D_0^{-1}J_0||z|\
- &quad+|J_Y||A_Y^{-1}||J_Yz|
- +|J_{mathcal V}||A_{mathcal V}^{-1}||J_{mathcal V}z|
+ \begin{aligned}
+ &\|PR\|\|A_{23}^{-1}\|\|PRz\|
+ +\|J\|\|D^{-1}\|\|Jz\|+\|J_0^*D_0^{-1}J_0\|\|z\|\\
+ &\quad+\|J_Y\|\|A_Y^{-1}\|\|J_Yz\|
+ +\|J_{\mathcal V}\|\|A_{\mathcal V}^{-1}\|\|J_{\mathcal V}z\|
  <0.10604 .
- end{aligned}
+ \end{aligned}
 $$
 Use the global map norms from the five-pivot deletion section,
 the actual inverse bounds in their physical domains, and the
 smaller local column norms from the centroid section. These are
 products of a local and a global norm, as required for action
-on one input. The scalar $Bz$ vanishes under $Pi_{H_e}$.
-The triangle inequality and division by $|z|$ give
-$|b_e|<2.59$.
+on one input. The scalar $Bz$ vanishes under $\Pi_{H_e}$.
+The triangle inequality and division by $\|z\|$ give
+$\|b_e\|<2.59$.
 
-For a lower bound, let $mathcal E=G_2^perp$. The raw projected
-action satisfies $|Pi_{mathcal E}Ru|<0.00075$.
-On $Pmathcal H$ and $U$ use the preceding bounds on $Rz$,
+For a lower bound, let $\mathcal E=G_2^\perp$. The raw projected
+action satisfies $\|\Pi_{\mathcal E}Ru\|<0.00075$.
+On $P\mathcal H$ and $U$ use the preceding bounds on $Rz$,
 $0.00046$ and $0.00027$, respectively, and add $300d$ to each.
-On $W$ and $L_0$ use $300cdot10^{-265}$ each. On $Y_0$,
+On $W$ and $L_0$ use $300\cdot10^{-265}$ each. On $Y_0$,
 the preceding high-frequency pairing before adding projection
 transfer or any inverse term gives the raw bound
 $$
- 300rac{42(6cdot10^{-24})+4cdot10^{-13}+3delta}{1-3delta}
- <2cdot10^{-10}.
+ 300\frac{42(6\cdot10^{-24})+4\cdot10^{-13}+3\delta}{1-3\delta}
+ <2\cdot10^{-10}.
 $$
-On $mathcal V$, the preceding raw separated packet bound times
+On $\mathcal V$, the preceding raw separated packet bound times
 the true Gram factor, before transfer or any inverse term, gives
 $$
- (5.52cdot10^9),300
- left[42(4cdot10^{-48})+
-       rac{2}{10^{25}}rac{16}{3}+4deltaight]<2cdot10^{-10}.
+ (5.52\cdot10^9)\,300
+ \left[42(4\cdot10^{-48})+
+       \frac{2}{10^{25}}\frac{16}{3}+4\delta\right]<2\cdot10^{-10}.
 $$
 Adding these raw bounds proves the claimed estimate on
-$mathcal E$. With $|A_0-mu|<10$ and $|Pi_{mathcal E}u|<d$,
-the full angular comparison gives $|Pi_{mathcal E}q|<0.033$.
-Also $|e-u|<2d$ and $qperp u$, so
-$|langle e,qangle|<2d(2.45)$. Orthogonal Pythagoras on
-$mathcal Eoplusmathbb C eoplus H_e$ gives
-$|Pi_{H_e}q|>2.429$. Subtract the same angular, projection and
-inverse action bounds and use $|z|le1$. This gives
-$|b_e|>2.29$. Finally
-$9.86900<eta<9.87028$ and the norm identity for a rank-one
+$\mathcal E$. With $|A_0-\mu|<10$ and $\|\Pi_{\mathcal E}u\|<d$,
+the full angular comparison gives $\|\Pi_{\mathcal E}q\|<0.033$.
+Also $\|e-u\|<2d$ and $q\perp u$, so
+$|\langle e,q\rangle|<2d(2.45)$. Orthogonal Pythagoras on
+$\mathcal E\oplus\mathbb C e\oplus H_e$ gives
+$\|\Pi_{H_e}q\|>2.429$. Subtract the same angular, projection and
+inverse action bounds and use $\|z\|\le1$. This gives
+$\|b_e\|>2.29$. Finally
+$9.86900<\beta<9.87028$ and the norm identity for a rank-one
 operator give the stated debit interval.
 
 ### Exact rational guards on the actual mixed column
@@ -3863,3 +3851,326 @@ has endpoint jumps, so the original real odd compact $C^2$ stage
 admission is still required for the arithmetic form. The sign on all
 of $H_e$, the original conductor-three radius-four stage and the
 unconditional RH and primitive Dirichlet GRH returns remain open.
+
+## The neighboring native sine after the centroid pivot
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the actual centroid $\alpha$, the unit physical $u$, its
+normalized projection $e$, and the corrected form $C_3$ on $H_e$
+from the preceding sections. Put $k=4847030844$,
+$\omega=(k-1)\pi/4$, and $y=\psi_{k-1}$ with its positive sine
+orientation. Define
+$$
+ t=\Pi_{H_e}y,\qquad v=t/\|t\|.
+$$
+Then $\|t\|>0.99$, and the fully corrected pivot and its mixed
+entry with the preceding pivot satisfy
+$$
+ \begin{split}
+ 1.6149 &< \langle v,b_e\rangle <1.6164,\\
+ 23.535 &< \gamma_v:=\langle v,C_3v\rangle <23.538.
+ \end{split}
+$$
+These are real entries. The even real multiplier on both angular
+signs preserves the real carrier. All projections come from real
+physical spaces and their coercive inverses commute with conjugation.
+This test uses the bounded physical form. The single native sine
+has derivative jumps at the endpoints of its zero extension and
+the original arithmetic stage retains its compact $C^2$ admission.
+
+### Unprojected Gram and original signed lag integral
+
+For $r\in[0,8]$ write $L=8-r$. For the two raw, zero-extended
+sines at carriers $x$ and $y_0$ the common forward and backward
+lag integral is
+$$
+ M_{x,y_0}(r)=
+ \frac{L}{2}\left[
+ \cos((x+y_0)r/2)\operatorname{sinc}((x-y_0)L/2)
+ -\cos((x-y_0)r/2)\operatorname{sinc}((x+y_0)L/2)
+ \right],
+ \qquad \operatorname{sinc}(t)=\sin(t)/t,\quad \operatorname{sinc}(0)=1.
+$$
+For the forward shift, the overlap is $[-4,4-r]$. Center it
+at $-r/2$, use the product-to-sum identity and integrate the
+two cosines, whose odd parts vanish on the symmetric interval.
+Reflection gives the backward shift because both raw sines are odd.
+For $x=y_0$ this recovers exactly the two original terms of the
+diagonal correlation. For $x=\alpha$ and $y_0=\omega$, the
+directed enclosures give $0.838<x-y_0<0.840$, so the mixed
+check can divide by both carrier sum and difference.
+
+Write $g=\langle u,y\rangle$, $t_0=y-gu$, and
+$v_0=t_0/\kappa$, where $\kappa=\sqrt{1-g^2}$. The energy for
+the native raw sine is $4$ and the centroid energy is the actual
+$E(s)=4-\sin(8\alpha)/(2\alpha)$. Normalizing $M_{\alpha,\omega}(0)$
+gives $-0.062786<g<-0.062783$ and
+$0.998027<\kappa<0.998028$. Thus orthogonality of two
+different native sine indices cannot be applied to this
+nonnative centroid and its neighbor.
+
+Use the original physical signed operator $T_P$ and all 458 rows
+with coefficient $2\chi_3(n)\log(p)/\sqrt n$ at $r=\log n$.
+Let $\mu=\langle u,T_Pu\rangle$,
+$d_y=\langle y,T_Py\rangle$ and $m_y=\langle y,T_Pu\rangle$.
+The directed arithmetic computes $d_y$ and $m_y$ from the
+native diagonal and mixed integrals, using the actual energy
+normalizations. It gives
+$$
+ \begin{split}
+ -2.097474&<d_y<-2.097473,\qquad
+ -2.339350<m_y<-2.339134,\\
+ -1.615759&<\frac{m_y-g\mu}{\kappa}<-1.615498,\qquad
+ -2.354880<\frac{d_y-2g m_y+g^2\mu}{\kappa^2}<-2.354838 .
+ \end{split}
+$$
+The last two are the exact unprojected $(v_0,u)$ and $(v_0,v_0)$
+entries of $T_P$.
+
+### Actual projection and five prior inverses
+
+Put $z_y=\Pi_{G_2}y$ and keep $z=\Pi_{G_2}u$ and
+$d=1.6\cdot10^{-8}$. The old evaluation bounds for the raw sine
+also apply at $\omega$ in the stated low and high splits.
+More explicitly, the raw projection norm bounds on the five
+orthogonal spaces $P\mathcal H$, $U\oplus W$, $L_0$, $Y_0$ and
+$\mathcal V$ use the component bounds
+$$
+ 6200(2.45\cdot10^{-12}),\quad
+ (10/9)\big[6200(2.45\cdot10^{-12})+3\cdot10^{-60}\big],
+ \quad10^{-281},\quad10^{-281},\quad
+ \frac{6\cdot10^{-24}+9\delta}{1-3\delta},\quad
+ (5.52\cdot10^9)(4\cdot10^{-48}+12\delta)
+$$
+on $P\mathcal H,U,W,L_0,Y_0,\mathcal V$, respectively.
+These are the exact old sine denominator bound, the $U$
+preimage bound, Chebyshev leakage on $W,L_0$, the true high
+preimage bound and the separated native envelope with its Gram
+factor. They use $3.5\cdot10^9<\omega<4\cdot10^9$,
+$\omega<10^{25}$ and $\delta=10^{-272}$. The squared sum is
+less than $10^{-15}$. Dividing by raw energy $4$ gives
+$\|z_y-y\|<d$, just as $\|z-u\|<d$.
+
+Now $t=(I-e\otimes e)z_y$, $\|e-u\|<2d$ and
+$\|e\otimes e-u\otimes u\|\le2\|e-u\|$. Thus
+$\|t-t_0\|<5d$, $\|t\|>\kappa-5d>0.99$,
+$\|v-v_0\|\le2\|t-t_0\|/\|t\|<11d$, and
+$|\langle e,z_y\rangle|<0.071$.
+
+The local inverse column bounds of the centroid sine section
+also hold on $z_y$. The proof there uses the normalized
+uncancelled bound $1.01/||\nu|-\omega|$, angular $L^1$ on
+$\mathcal D$ below $42$, the distance $\omega-3.5\cdot10^9>3\cdot10^8$,
+the bound $2/|\nu|$ on the high tail above $10^{25}$, and the
+true projection error $d$. These are valid for $y$ with its
+native energy. At the removable centers use the universal
+bound $\sqrt8$. The old head, high preimage and separated
+Gram bounds therefore supply the same $PR,J,J_Y,J_{\mathcal V}$
+local bounds on both projected inputs. On $e$ they grow by at
+most $1/(1-d)<1.1$. On $v$ the triangle inequality and
+$\|t\|>0.99$ grow them by at most $(1+0.071)/0.99<1.1$.
+Taking a product of the two local bounds gives the mixed
+inverse estimate. Squaring gives the diagonal inverse estimate.
+Both pay the actual five inverse blocks with norms bounded
+by $10,25/2,9,4,1/12$. Use the original full $10^{-515}$
+bound for the third inverse action. Each total costs less than
+$(1.1)^2(4.7\cdot10^{-6})<6\cdot10^{-6}$.
+
+### Common-collar bilinear estimate and exact second correction
+
+Use the preceding full angular comparison multiplier
+$$
+ G=1_{\mathcal D}wA-A_0+(1-1_{\mathcal D}w)P_4,
+ \qquad A_0=21.3208029.
+$$
+Take the common mirrored collar $||\nu|-\alpha|\le10^6+1$.
+It covers both radius-$10^6$ collars, since $|\alpha-\omega|<1$.
+The two original log input endpoints $1817159000,1818114100$
+still enclose the enlarged collar. With the original Binet
+remainder and defect $\eta=3\cdot10^{-10}$ this gives
+$|G|<0.000273+300\eta$ there. On the rest of the full line
+$|G|<251$, including the tails omitted by the residual mask.
+The angular masses of $\widehat u$ and $\widehat y$
+off the common collar are each below $\theta=7\cdot10^{-7}$.
+The angular norm of $\widehat v_0$ off it is below
+$(1+|g|)\sqrt\theta/\kappa<1.1\sqrt\theta$.
+
+By Plancherel the exact bilinear errors from gamma and mask
+are bounded by the collar supremum plus, respectively,
+$251(1.1)\theta$ and $251(1.1)^2\theta$ for $(v_0,u)$ and
+$(v_0,v_0)$. This uses both off-collar tails. The physical
+projection errors in the original $R$ entries cost at most
+$300(13d)$ and $600(11d)$, by $\|R\|<300$ and the unit
+norms. Add the five inverse costs in each case. The total
+errors are below $0.00055$ for the mixed entry, and $0.00060$
+for the diagonal entry. The scalar $A_0+B$ has zero mixed
+entry by exact orthogonality. Subtract the two prime entries
+and retain $A_0+B$ on the diagonal. This proves
+$$
+ 1.6149<\langle v,C_2e\rangle<1.6164,\qquad
+ 23.80003<\langle v,C_2v\rangle<23.80130 .
+$$
+Since $v\in H_e$, the first entry is $\langle v,b_e\rangle$.
+The genuine sixth debit on $v$ lies between $0.264$ and
+$0.265$ by the exact $\beta$ interval. Subtract it to obtain
+the asserted positive $\gamma_v$.
+
+Put $H_{e,v}=H_e\cap v^\perp$ and
+$b_v=\Pi_{H_{e,v}}C_3v$. The next equivalent sign is
+$$
+ C_4=\Pi_{H_{e,v}}C_3|_{H_{e,v}}-\gamma_v^{-1}b_v\otimes b_v
+ \ \ge 0\qquad \text{on all of }H_{e,v}.
+$$
+This is the one-coordinate square completion for the true
+$C_3$, with all previous coupling retained. The full sign
+and original stage return remain open.
+
+### Exact rational guards for the neighboring sine
+
+Append these guards to the historical prefix and the previous
+centroid pivot and mixed-column blocks.
+
+```python
+# Continue with the historical centroid / mixed-column written checker.
+j_native = 4847030844
+neighbor = (F(j_native-1, 4)*pi_lower, F(j_native-1, 4)*pi_upper)
+xi_sum = add(carrier, neighbor)
+xi_difference = subtract(carrier, neighbor)
+assert F(838, 1000) < xi_difference[0] <= xi_difference[1] < F(84, 100)
+
+def divide_positive(numerator, denominator):
+    lo, hi = denominator
+    assert 0 < lo <= hi
+    return multiply(numerator, (1/hi, 1/lo))
+
+def sqrt_interval(interval):
+    lo, hi = interval
+    assert 0 <= lo <= hi
+    return (F(isqrt(lo*source_grid**2 // 1), source_grid),
+            F(isqrt(hi*source_grid**2 // 1)+1, source_grid))
+
+def neighbor_correlation(lag):
+    length = subtract((8, 8), lag)
+    cosine, _ = phase_trig(multiply(neighbor, lag))
+    _, sine = phase_trig(multiply(neighbor, length))
+    return scale(F(1, 2), subtract(multiply(length, cosine),
+                                  divide_positive(sine, neighbor)))
+
+def mixed_correlation(lag):
+    length = subtract((8, 8), lag)
+    cos_sum, _ = phase_trig(scale(F(1, 2), multiply(xi_sum, lag)))
+    cos_difference, _ = phase_trig(scale(F(1, 2), multiply(xi_difference, lag)))
+    _, sin_sum = phase_trig(scale(F(1, 2), multiply(xi_sum, length)))
+    _, sin_difference = phase_trig(scale(F(1, 2), multiply(xi_difference, length)))
+    return subtract(divide_positive(multiply(cos_sum, sin_difference), xi_difference),
+                    divide_positive(multiply(cos_difference, sin_sum), xi_sum))
+
+native_diag, native_mixed = zero, zero
+row_count = 0
+for p in range(2, 2981):
+    if p == 3 or any(p % d == 0 for d in range(2, isqrt(p)+1)):
+        continue
+    log_p = log_bounds(p)
+    n = p
+    while n <= 2980:
+        lag = log_bounds(n)
+        assert 0 < lag[0] <= lag[1] < 8
+        root_floor = isqrt(n*source_grid**2)
+        magnitude = (2*log_p[0]*source_grid/(root_floor+1),
+                     2*log_p[1]*source_grid/root_floor)
+        weight = scale(1 if n % 3 == 1 else -1, magnitude)
+        native_diag = add(native_diag, round_out(*multiply(weight, neighbor_correlation(lag)), atom_grid))
+        native_mixed = add(native_mixed, round_out(*multiply(weight, mixed_correlation(lag)), atom_grid))
+        n *= p
+        row_count += 1
+assert row_count == 458
+s_norm = sqrt_interval(energy)
+raw_norm_prod = scale(2, s_norm)
+gram_overlap = divide_positive(mixed_correlation(zero), raw_norm_prod)
+prime_native = scale(F(1, 4), native_diag)
+prime_raw_mixed = divide_positive(native_mixed, raw_norm_prod)
+norm_squared_orth = subtract((1, 1), square(gram_overlap))
+norm_orth = sqrt_interval(norm_squared_orth)
+prime_mixed_orth = divide_positive(
+    subtract(prime_raw_mixed, multiply(gram_overlap, mean)), norm_orth,
+)
+prime_diag_orth = divide_positive(
+    add(subtract(prime_native, scale(2, multiply(gram_overlap, prime_raw_mixed))),
+        multiply(square(gram_overlap), mean)), norm_squared_orth,
+)
+
+def assert_inside(value, lo, hi):
+    assert F(lo) < value[0] <= value[1] < F(hi)
+
+assert_inside(gram_overlap, '-.062786', '-.062783')
+assert_inside(prime_native, '-2.097474', '-2.097473')
+assert_inside(prime_raw_mixed, '-2.339350', '-2.339134')
+assert_inside(norm_orth, '.998027', '.998028')
+assert_inside(prime_mixed_orth, '-1.615759', '-1.615498')
+assert_inside(prime_diag_orth, '-2.354880', '-2.354838')
+print("PASS 458 signed neighbor rows, physical overlap and normalized orthogonal prime entries")
+
+# Both true carrier intervals use the same source transfer and envelope.
+assert F(3_800_000_000) < neighbor[0] <= neighbor[1] < F(3_900_000_000)
+assert F(3_800_000_000) < carrier[0] <= carrier[1] < F(3_900_000_000)
+assert neighbor[0]-old_split > 3*10**8
+assert neighbor[1] < F(high_split, 4)
+pair_radius = 10**6
+pair_collar = pair_radius+1
+assert xi_difference[1] < 1
+assert F(3_500_000_000) < carrier[0]-pair_collar
+assert carrier[1]+pair_collar < F(4_000_000_000)
+pair_log_left = 3*(carrier[0]-pair_collar)/(2*pi_upper)
+pair_log_right = 3*(carrier[1]+pair_collar)/(2*pi_lower)
+assert 1817159000 < pair_log_left <= pair_log_right < 1818114100
+pair_gamma_error = F(273, 10**6)
+assert gamma_center-pair_gamma_error < gamma_lower < gamma_upper < gamma_center+pair_gamma_error
+assert 2*F(101, 100)**2/(pi_lower*pair_radius) < theta
+
+# The input sine projection bound uses the raw evaluation norm.
+old_evaluation = 6200*F(245, 10**14)
+old_u_evaluation = F(10, 9)*(old_evaluation+F(3, 10**60))
+low_evaluation = F(1, 10**281)
+high_evaluation = (F(6, 10**24)+9*delta)/(1-3*delta)
+separated_evaluation = F(552, 100)*10**9*(F(4, 10**48)+12*delta)
+raw_loss = (old_evaluation**2+old_u_evaluation**2+2*low_evaluation**2
+            +high_evaluation**2+separated_evaluation**2)
+assert raw_loss < F(1, 10**15) < 4*defect**2
+
+# Compare the true normalized orthogonal pair with the unprojected pair.
+raw_overlap_bound = F(7, 100)
+true_norm_floor = F(99, 100)
+assert max(abs(v) for v in gram_overlap) < raw_overlap_bound
+assert norm_orth[0]-5*defect > true_norm_floor
+assert 10/true_norm_floor < 11
+true_overlap_bound = F(71, 1000)
+assert raw_overlap_bound+3*defect < true_overlap_bound
+action_factor = F(11, 10)
+assert 1/(1-defect) < action_factor
+assert (1+true_overlap_bound)/true_norm_floor < action_factor
+
+inverse_action = F(6, 10**6)
+assert action_factor**2*debit < inverse_action
+assert (1+raw_overlap_bound)/true_norm_floor < action_factor
+collar_error = pair_gamma_error+300*eta
+mixed_error = F(55, 10**5)
+diag_error = F(60, 10**5)
+assert collar_error+251*action_factor*theta+300*13*defect+inverse_action < mixed_error
+assert (collar_error+251*action_factor**2*theta
+        +600*11*defect+inverse_action) < diag_error
+
+mixed_entry = add(scale(-1, prime_mixed_orth), (-mixed_error, mixed_error))
+diag_entry = add(subtract((budget+gamma_center, budget+gamma_center), prime_diag_orth),
+                 (-diag_error, diag_error))
+assert_inside(mixed_entry, '1.6149', '1.6164')
+assert_inside(diag_entry, '23.80003', '23.80130')
+beta_interval = F(9869, 1000), F(987028, 10**5)
+sixth_debit = divide_positive(square(mixed_entry), beta_interval)
+assert_inside(sixth_debit, '.264', '.265')
+seventh_pivot = subtract(diag_entry, sixth_debit)
+assert_inside(seventh_pivot, '23.535', '23.538')
+print("PASS projected neighboring sine: coupling (1.6149, 1.6164), seventh pivot (23.535, 23.538)")
+```
