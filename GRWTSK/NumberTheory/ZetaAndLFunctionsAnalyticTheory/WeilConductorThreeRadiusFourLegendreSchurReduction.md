@@ -6319,3 +6319,366 @@ assert largest_raw < F('.75086')
 assert largest_raw**2-plane_lower**2 < F('.6688')**2
 print("PASS projected signed dispersion <.6688 from the exact endpoints")
 ```
+
+## Separated jumps bound the full gamma and mask action on the proxy
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+For the same signed physical proxy $g_0=-(I-P_0)T_Ph$ of the actual
+collar direction, the full gamma and mask comparison satisfies
+$$
+ \|G_{\rm phys}g_0\|<0.000174,\qquad
+ |\langle g_0,G_{\rm phys}g_0\rangle|<0.00003282.
+$$
+Here $G_{\rm phys}=R-(A_0I-T_P)$, including the original filters,
+the residual set and its paid pair. This is a bound on the whole
+physical action on $g_0$. The corresponding action on $g_*-g_0$
+requires a separate estimate.
+
+### From the exact signed cells to an angular norm
+
+Write the real proxy as the real part of
+$a(x)e^{i\alpha x}+b(x)e^{i\omega x}$ with the same two carriers
+and piecewise constant coefficients as in the directed action.
+Extend both coefficients by zero off $[-4,4]$. Let $x_j$ be the
+sorted cell boundaries and let $d_j(a)$ and $d_j(b)$ be the
+right-minus-left coefficient jumps with these extensions.
+The 919 boundaries include the endpoints, zero and the reflected
+signed prime-power boundaries. The exact guards give
+$$
+ x_{j+1}-x_j> 0.000014,\quad
+ \left(\sum_j (|d_j(a)|^2+|d_j(b)|^2)\right)^{1/2}<0.468,
+ \quad |a(x)|+|b(x)|<0.351
+$$
+on the cells. For the jump guard take the rounded cell models at
+both $\Lambda$ endpoints and upper $\eta_c$. Sum squared
+differences of the four integer cell coefficients with exterior
+values zero, then take a directed square root. If the coefficient
+sum of absolute errors is bounded by $e_c$, a single jump error
+in Euclidean norm costs at most $2e_c$. The total jump vector costs
+at most $2\sqrt{919}\,e_c$. Both the jump norm and the pointwise
+coefficient norm are convex in $\Lambda$ and scale with $\eta_c$.
+The exact directed cells retain all 458 signed rows used to
+construct $a,b$. Their phases and negative weights are included
+before taking differences.
+
+For $\rho=\alpha$ or $\omega$, let $c=a$ or $b$ respectively, and
+consider a single complex carrier with coefficient $c$.
+Integration on each physical cell gives its Fourier value
+$$
+ \widehat{c e^{i\rho x}}(\nu)
+ =\frac{\sum_j d_j(c)e^{-i(\nu-\rho)x_j}}{i(\nu-\rho)}
+$$
+away from the carrier. The same formula applies to the conjugate
+carrier with frequency $-\rho$ and conjugate coefficients.
+The oscillatory numerator $S(\nu)$ obeys, for any finite interval $I$,
+$$
+ \int_I |S(\nu)|^2\,\frac{d\nu}{2\pi}
+ \le\left(\frac{|I|}{2\pi}+\frac{16}{\pi(0.000014)}\right)
+       \sum_j|d_j(c)|^2 .
+$$
+The diagonal integral is $|I|/(2\pi)$. An off-diagonal integral has
+absolute value at most $1/(\pi|x_j-x_k|)$. For a fixed row, the
+ordered distances are at least $|j-k|(0.000014)$, and the sum
+of reciprocals up to 918 is less than 8. The resulting row bound
+and $2|d_j(c)d_k(c)|\le |d_j(c)|^2+|d_k(c)|^2$ give the estimate.
+Carrier phases have modulus one and leave this bound unchanged.
+
+### Low, pass-band, paid-pair and high contributions
+
+Set $H_{\rm safe}=10^8/3-1$. On $|\nu|<H_{\rm safe}$, use
+the interval estimate and $|\nu\mp\rho|\ge\rho-H_{\rm safe}$.
+Combine all four complex carriers, each with the factor $1/2$
+from the real part. The sum of the two jump norms for $a$ and $b$
+is at most $\sqrt2(0.468)$. Since each carrier is above
+$3.8\cdot10^9$, the angular norm of the low part multiplied by the
+full comparison multiplier of modulus below $251$ is below
+$0.000147$.
+
+On the retained pass band $H_{\rm safe}\le|\nu|\le3.2\cdot10^{25}$
+with the actual paid pair removed, the earlier bound for either
+carrier is $|G(\nu)|<|\log(|\nu|/\rho)|+1.4\cdot10^{-7}$.
+For the logarithmic part of each complex carrier use
+$$
+ \frac{|\log(|\nu|/\rho)|}{|\nu\mp\rho|}
+ \le L_\rho(|\nu|),\qquad
+ L_\rho(x)=\frac{\log x-\log\rho}{x-\rho}
+          =\int_0^1\frac{dt}{(1-t)\rho+tx}.
+$$
+The divided difference has its continuous value at $x=\rho$.
+It is positive and decreasing in each positive endpoint. For the
+upper bound on the weighted square norm, enlarge the integration
+set to $|\nu|\ge H_{\rm safe}$ with weight $L_\rho(|\nu|)^2$.
+Each nonempty positive superlevel set of this restricted weight
+is the union of two bounded intervals, up to endpoints. Integrate
+the interval bound over the levels by nonnegative integration.
+The diagonal term contributes at most
+$\int_0^\infty L_\rho(x)^2\,dx/\pi<8/(\pi\rho)$ using the preceding
+log integral. The off-diagonal term contributes at most
+$32 L_\rho(H_{\rm safe})^2/(\pi(0.000014))$.
+By decreasingness and $\log((3.8\cdot10^9)/(3.3\cdot10^7))<5$,
+$L_\rho(H_{\rm safe})<5/(3.8\cdot10^9-3.3\cdot10^7)$.
+The square root of the combined coefficient is less than
+$2.60\cdot10^{-5}$. Add the constant part at cost
+$1.4\cdot10^{-7}\cdot6(0.351)$ by Plancherel on the four components.
+The pass-band contribution is then below $0.000018$.
+
+The earlier pointwise translate estimate on the actual paid pair
+costs $251\cdot24.4\cdot1.01\cdot2.53/(3.8\cdot10^9-1.86\cdot10^9)$.
+Above $3.2\cdot10^{25}$ use the previously proved full angular tail
+at $10^{25}$, giving cost $251\cdot9\cdot10^{-12}$. Add the four
+contributions and restrict back to the physical interval, a contraction.
+The quadratic bound follows from $\|g_0\|<0.1886$. Both angular signs
+and the normalization $d\nu/(2\pi)$ apply throughout. The jump proof
+does not give smooth admissibility of $g_0$ for the original arithmetic
+form, which still requires the original real odd compact $C^2$ tests.
+
+### Exact rational guards for separation and the weighted norm
+
+Append to the exact directed signed action checker above.
+
+~~~python
+# Append to the exact action checker, with the same directed cells.
+jump_norm = F('.468')
+coefficient_cap = F('.351')
+for lam in proxy_lambda:
+    amplitudes, coeff_error, amp_max = frozen_amplitudes(lam, proxy_eta[1])
+    assert len(amplitudes) == len(points) == 919 and amplitudes[-1] == (0,0,0,0)
+    previous = (0,0,0,0)
+    integer_energy = 0
+    for current in amplitudes:
+        integer_energy += sum((x-y)**2 for x,y in zip(current,previous))
+        previous = current
+    energy = F(integer_energy,grid**2)
+    assert 31**2 > len(points)
+    assert sqrt_interval((energy,energy))[1]+2*31*coeff_error < jump_norm
+    assert amp_max+coeff_error < coefficient_cap
+
+separation = F('.000014')
+assert all(F(y[1][0]-x[1][1],grid)>separation
+           for x,y in zip(points,points[1:]))
+assert sum(F(1,j) for j in range(1,len(points))) < 8
+angular_pi = F('3.14')
+assert angular_pi < pi_lower
+off_diagonal = 16/(angular_pi*separation)
+Hsafe = F(10**8,3)-1
+rho_lower = F('3.8e9')
+low_frame_squared = Hsafe/angular_pi+off_diagonal
+assert low_frame_squared < 3315**2
+assert 2 < F('1.415')**2
+low_input = F('1.415')*jump_norm*3315/(rho_lower-Hsafe)
+assert 251*low_input < F('.000147')
+
+# Two angular intervals per level of the decreasing log divided difference.
+minimum_x = 33000000
+assert minimum_x < Hsafe
+assert log_bounds(int(rho_lower))[1]-log_bounds(minimum_x)[0] < 5
+log_sup = 5/(rho_lower-minimum_x)
+log_frame_squared = 8/(angular_pi*rho_lower)+2*off_diagonal*log_sup**2
+assert log_frame_squared < F('2.60e-5')**2
+log_band = F('1.415')*jump_norm*F('2.60e-5') + F('1.4e-7')*6*coefficient_cap
+assert log_band < F('.000018')
+
+paid = 251*F('24.4')*F('1.01')*F('2.53')/(rho_lower-F('1.86e9'))
+high = 251*F('9e-12')
+assert F('.000147')+F('.000018')+paid+high < F('.000174')
+print("PASS exact jump separation and full gamma-mask proxy action <.000174")
+~~~
+
+## The parallel pivot term forces a negative cross contribution
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Use the same $H$, $g_*$, $s_0=24-B-A_0$, $D_{s_0}$, and
+$z_p=\Pi_H(I-P_0)D_{s_0}g_0$. In the exact equation
+$24r=z_p+\Xi$ from the projected signed action, retain the two actual
+pivot coordinates and combine the part of their inverse along $g_*$
+with the transported ideal collar. Set $d_v=\langle v,Av\rangle$,
+$m=Fv$, $k=A^{-1}e$, $t=\langle e,A^{-1}e\rangle$, and
+$\varepsilon_7=0.000012$. The vectors $A^{1/2}k$ and $A^{1/2}v$
+are orthogonal since $\langle k,Av\rangle=\langle e,v\rangle=0$.
+Their squared norms are $t$ and $d_v$, respectively, and they
+span the actual two-dimensional pivot space. Resolve the identity
+in this basis and conjugate by $A^{-1/2}$. This gives
+$$
+ FA^{-1}F^*=\frac{g_*\otimes g_*}{t}+\frac{m\otimes m}{d_v},
+ \qquad
+ FA^{-1}F^*-\sigma g_*\otimes g_*
+ =\frac{g_*\otimes g_*}{t(1+\rho t)}+\frac{m\otimes m}{d_v}.
+$$
+The second identity uses the actual ideal collar coefficient
+$\sigma=\rho/(1+\rho t)$ from the joint collar transport, where
+$\rho$ is the size of the ideal collar on the $e$ pivot.
+The actual remaining collar operator is
+$P_{\rm col}=\varepsilon_7 I_H-(\Delta_7-\sigma g_*\otimes g_*)$.
+The transport error gives $0\le P_{\rm col}\le 2\varepsilon_7 I_H$.
+
+With the inner product conjugate-linear in its first argument, put
+$$
+\begin{split}
+ p&=\frac{\|g_*\|^2}{t(1+\rho t)}\,g_*,\\
+ W&=\Pi_H[D_{s_0}(g_*-g_0)-G_{\rm phys}g_*+D_5g_*]
+       +\frac{\langle m,g_*\rangle}{d_v}\,m+P_{\rm col}g_* .
+\end{split}
+$$
+Thus $\Xi=p+W$ exactly. The last column in $W$ has norm below
+$0.000004673$. In the gamma term the separated-cut proof gives
+$\|\Pi_HG_{\rm phys}g_0\|<0.000174$ with the original mask.
+This leaves the term on $g_*-g_0$ and the actual old corrections
+in the same combined vector.
+
+### Directed scalar pairing on the merged cells
+
+The true signed physical pairing has the strict enclosure
+$$
+ 0.01644<\operatorname{Re}\langle g_0,D_{s_0}g_0\rangle<0.01873.
+$$
+Use the same midpoint model as in the directed action calculation,
+and integrate the product of its signed output and input on each
+of the same 212182 merged cells. The input cell at each boundary
+is changed using its exact log-product key. If the output complex
+amplitudes are $a,b$ and the input amplitudes are $A_c,B_c$,
+the slow part of the product is
+$$
+ \tfrac12\operatorname{Re}\bigl(
+  a\overline{A_c}+b\overline{B_c}+
+  (a\overline{B_c}+\bar b A_c)e^{i(\alpha_m-\omega_m)x}
+ \bigr).
+$$
+The fast part has frequencies $2\alpha_m$, $\alpha_m+\omega_m$,
+and $2\omega_m$. If $E_o=|a|^2+|b|^2$ and
+$E_i=|A_c|^2+|B_c|^2$, its integral on each cell costs at most
+$(E_o+E_i)/(2\omega_m)$. Indeed the sum of unsigned complex
+products is at most $(|a|+|b|)(|A_c|+|B_c|)\le E_o+E_i$,
+and the integral of each exponential is at most $1/\omega_m$
+before the real-part product factor $1/2$.
+Use the same stored directed primitives for the constant and
+slow terms, with all boundary ties resolved exactly.
+
+Let $d_i$ be the sum of the directed model input error and
+the midpoint-to-true-input transfer. Let $d_o$ be the rotation
+and rounding cost for the model output relative to the actual
+signed action on the midpoint model input. The transfer in
+the scalar pairing is at most
+$$
+ 2(0.7648)d_i+(57.7531+|s_0|)d_i^2+(0.1886+d_i)d_o .
+$$
+For the first two terms expand the difference of the two quadratic
+forms around the actual $g_0$, using self-adjointness and the proved
+$\|D_{s_0}g_0\|$ bound. The last term uses the norm of the
+midpoint input. This avoids multiplying the leading scalar error
+by the global signed operator norm.
+
+Since both $g_0$ and $g_*$ lie in $P_0^\perp$, the difference
+between the true scalar above and $\operatorname{Re}\langle z_p,g_*\rangle$
+is at most $0.6688\cdot0.006081$. Here use the projection bound
+on $(I-P_0)D_{s_0}g_0$ before the final projection onto $H$.
+The directed guards with the full scalar interval give
+$$
+ 0.01238<\operatorname{Re}\langle z_p,g_*\rangle<0.02280,
+ \qquad
+ \|p\|>0.05751,\qquad
+ 2\operatorname{Re}\langle z_p,p\rangle>0.00785.
+$$
+
+### The necessary signed estimate
+
+The previous sufficient test for the true norm was
+$2\operatorname{Re}\langle z_p,\Xi\rangle+\|\Xi\|^2<0.00429$.
+Its exact left side now expands to
+$$
+ 2\operatorname{Re}\langle z_p,p\rangle+\|p\|^2+
+ 2\operatorname{Re}\langle z_p+p,W\rangle+\|W\|^2 .
+$$
+The first two terms exceed $0.01115$. A necessary condition
+for passing that test is therefore
+$$
+ \operatorname{Re}\langle z_p+p,W\rangle<-0.00343 .
+$$
+The strict sign is a source-local obstruction to discarding this
+cross term or replacing it by a nonnegative norm allowance in that
+test. The expansion leaves open both the actual norm test on $H$
+and the separate coercivity needed for its inverse consumer.
+The necessary condition concerns this particular sufficient test.
+A different test can use the exact remaining budget
+$0.672^2-\|z_p+p\|^2$ and the left side
+$2\operatorname{Re}\langle z_p+p,W\rangle+\|W\|^2$.
+
+The source return still uses the true seven inverses, the entire
+signed radius-four arithmetic inventory, the actual gamma-density
+and mask, the entire real odd compact $C^2$ test class, and the
+independent all-$H$ coercive estimate if this inverse route is used.
+
+### Exact rational guards for the scalar and the obstruction
+
+Append to the exact directed signed action checker above.
+
+~~~python
+# First scalar cross for the actual two-pivot/collar parallel contribution.
+# Uses the existing fixed-grid model and the published directed transfer.
+def scalar_of_model(lam,eta):
+    amplitudes,coeff_error,amp_max=frozen_amplitudes(lam,eta)
+    events,current,left_ties=sorted_events(amplitudes)
+    source_index={p[0]:j for j,p in enumerate(points)}
+    assert len(source_index)==919
+    key_old,x_old,c,s=points[0]
+    sin_old,cos_old=gmul(inv,s),gmul(inv,c)
+    reference=amplitudes[0]
+    scalar=origin
+    fast_bound=0
+    count=0
+    for x,key,sin,cos,jumps in events:
+        if key!=key_old:
+            assert x_old[1]<x[0]
+            a,b,c,d=current
+            A,B,C,D=reference
+            real_const=a*A+b*B+c*C+d*D
+            real_slow=a*C+b*D+c*A+d*B
+            imag_slow=b*C-a*D+c*B-d*A
+            covariates=[(raw//(2*grid),-(-raw//(2*grid)))
+                        for raw in (real_const,real_slow,imag_slow)]
+            primitive=(gsub(x,x_old),gsub(sin,sin_old),gsub(cos,cos_old))
+            components=[gmul(kp,dt) for kp,dt in zip(covariates,primitive)]
+            scalar=gadd(scalar,gadd(components[0],gadd(*components[1:])))
+            fast_bound += -(-sum(j*j for j in (*current,*reference))//grid)
+            count+=1
+            key_old,x_old,sin_old,cos_old=key,x,sin,cos
+            if key in source_index:
+                reference=amplitudes[source_index[key]]
+        current=[a+b for a,b in zip(current,jumps)]
+    assert (count,len(events),left_ties)==(212182,215512,459)
+    fast=F(fast_bound,2*grid*3806000000)
+    input_model_error=3*(coeff_error+4*amp_max*frequency_radius)
+    output_model_error=3*(amp_max*rot_error+F(4*len(shift_rows),grid))
+    return (F(scalar[0],grid)-fast,F(scalar[1],grid)+fast),input_model_error,output_model_error,fast
+
+scalar_model,input_model_error,output_model_error,scalar_fast=scalar_of_model(proxy_mid,eta_mid)
+input_error=input_model_error+actual_transfer
+scalar_price=(2*F(".7648")*input_error+(F(577531,10000)+abs(t0))*input_error**2
+              +(F(".1886")+input_error)*output_model_error)
+scalar_true=(scalar_model[0]-scalar_price,scalar_model[1]+scalar_price)
+assert F(".0175788")<scalar_model[0]<=scalar_model[1]<F(".0175959")
+assert scalar_fast<F(".00000849") and scalar_price<F(".00113131")
+assert F(".0164475")<scalar_true[0]<=scalar_true[1]<F(".0187272")
+gstar_err=F(".006081")
+projection_err=F(".6688")*gstar_err
+dot_g_bounds=(scalar_true[0]-projection_err,scalar_true[1]+projection_err)
+assert F(".01238")<dot_g_bounds[0]<=dot_g_bounds[1]<F(".02280")
+t_lo,t_hi=map(F,(".10245",".10247"))
+rho_lo,rho_hi=map(F,(".12449194",".12449216"))
+chi_lower=1/(t_hi*(1+rho_hi*t_hi))
+chi_upper=1/(t_lo*(1+rho_lo*t_lo))
+gstar_lo,gstar_hi=map(F,(".1814",".1947"))
+par_coeff=(chi_lower*gstar_lo**2,chi_upper*gstar_hi**2)
+par_norm=(par_coeff[0]*gstar_lo,par_coeff[1]*gstar_hi)
+par_cross=(2*par_coeff[0]*dot_g_bounds[0],2*par_coeff[1]*dot_g_bounds[1])
+assert F(".31708")<par_coeff[0]<=par_coeff[1]<F(".36536")
+assert F(".057518")<par_norm[0]<=par_norm[1]<F(".071135")
+assert F(".007851")<par_cross[0]<=par_cross[1]<F(".016656")
+assert (F(".00429")-par_cross[0]-par_norm[0]**2)/2< -F(".00343")
+print("PASS exact positive collar-plane parallel cross, necessary remaining covariance < -.00343")
+~~~
