@@ -14865,3 +14865,447 @@ assert F(".405") * (1 - F("3.5") * F(".405")) == F("-.1690875")
 assert (F(".595") * beta - 2 * delta) / (B - delta) > F(".594")
 print("PASS exact constant-cell negative witness and positive normalized margin", float(g00_lower))
 ~~~
+
+## A direct signed moment debit with a quarter of the local positive energy
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review
+is UNASSESSED.
+
+Keep the complex odd physical carrier
+$\mathcal H=L^2_{\rm odd}([-4,4],dt;\mathbb C)$, zero extension,
+and the original Fourier restriction $K$ to $\mathcal D_+$.
+This is the masked set with the paid pair excluded and the
+negative collar $J_*=J_{1/160}$ removed for $T_+$.
+Use the primitive nonprincipal odd character modulo three.
+The principal-pole contribution is zero in this sector.
+Use the original $D=BI-\lambda\Pi_H$, with
+$B=0.124997987$, $\lambda=0.0001071$, and
+$\beta=B-\lambda$. The actual signed multiplier has
+$m=m_+-m_-$ on the original residual set, including
+the full gamma term, original filters and all $458$
+signed prime-power terms. Let
+$S_\lambda=D+K^*m_+K$.
+
+Let $X$ be the reflected slab with positive detunings
+$[140.56,144.56]$ from $c_1=99653682.92983$. Put
+$P_X=K^*1_Xm_+K$ and $\mathcal W_X=\sqrt{m_-}\,1_XK$.
+With $\tau=1/20000$, the direct signed moment test below
+gives
+$$
+ \mathcal W_X^*\mathcal W_X
+ \le\tfrac14 P_X+(\tau+\delta)I,
+ \qquad \delta<1.6\cdot10^{-8}.
+$$
+Combined with the exact prior twenty-three rows, this
+debits every actual negative frequency in the reflected
+slab $c_1+[-16.64,144.56]$ in a twenty-four-row comparison
+below $0.953405$.
+
+### The literal signed source on the new interval
+
+On the positive frequency interval with detunings
+$[116,144.56]$ the original masks are clear, and
+$1-3\cdot10^{-10}\le w\le1$. The exact full Binet
+bracket is $17.6779<A<17.6780$. Apply the previous
+directed trigonometric anchors with every signed prime
+power and the exact interpolation bound $|P_4''|<13504$.
+On width-$0.02$ cells the complement of the enclosure
+$[142.44,142.68]$ has strictly positive sign. The exact
+guard checks $1416$ complement cells with zero
+subdivisions, positive enclosure endpoints, and a
+strictly negative center at detuning $142.56$.
+Reflection gives the other sign of the frequency support.
+
+For the direct comparison, divide the positive side of
+$X$ into $800$ cells of width $0.005$. On a cell let
+$u=A_{\rm lo}-P_{4,\rm hi}$ from the directed bounds.
+If $u\ge0$, then $m\ge w_{\rm lo}u\ge0$ and use the
+folded density lower value
+$w_{\rm lo}u/(4\pi_{\rm upper})$. If $u<0$, then
+$m\ge u$ and use $u/\pi_{\rm lower}$. In both cases
+round the density down to the $10^{-7}$ grid.
+Writing $\rho(s)$ for this piecewise constant signed
+Lebesgue density, with $s$ detuning from
+$c=c_1+142.56$, gives the pointwise lower multiplier
+$$
+ \ell(c+s)=\pi\rho(s)\le \tfrac14 m_+(c+s)-m_-(c+s).
+$$
+When $u<0$, the upper bound on $w$ gives $m\ge u$.
+The map $v\mapsto \tfrac14 v_+-v_-$ is increasing and
+equals $v$ at negative inputs, which gives the stated
+lower bound in that branch. The lower step has $44$
+negative cells, and the guard
+binds $\|\ell\|_\infty<9$. The Fourier measure on
+positive frequencies after folding is $d\nu/\pi$.
+
+### A direct finite signed moment comparison
+
+Write $K_X$ for the folded odd sine evaluation on $X$.
+At positive frequencies it is the original Fourier
+transform multiplied by $-i$. Approximate it by its
+centered Taylor expansion through degree $35$ on the
+positive cell of width $h=4$, and reflect on the
+negative side. Write $\widetilde K_X$ for this map.
+For one half-cell the integral Taylor remainder gives
+$$
+ |F(c+s)-T_{k-1}(c+s)|^2
+ \le \frac{|s|^{2k-1}}{(2k-1)((k-1)!)^2}
+          \int_{[c,c+s]} |F^{(k)}(u)|^2,du,
+ \qquad k=36,
+$$
+where the integral uses the interval with its endpoints
+in increasing order. Integrate both halves and use the
+same folded angular measure. The squared coefficient
+is bounded by
+$(h/2)^{2k}/(2k(2k-1)((k-1)!)^2)$.
+The modulus of $F^{(k)}$ is even by oddness of $F$.
+Plancherel on the whole line gives
+$\|F^{(k)}\|_2=\|t^kf\|_2\le4^k\|f\|_2$.
+Consequently
+$$
+ \|K_X-\widetilde K_X\|\le\epsilon=8^{36}/36!,
+ \qquad\|\widetilde K_X\|\le1+\epsilon .
+$$
+This is an operator bound in the angular $L^2$ norm.
+The signed multiplier perturbation for $\ell$ thus costs
+at most $\delta=9\epsilon(2+\epsilon)<1.6\cdot10^{-8}$.
+
+Use the following $36$ real odd physical functions and
+their angular coefficients:
+$$
+ \phi_j(t)=
+ \begin{cases}
+ (t/4)^j\sin(ct),&j\text{ even},\\
+ (t/4)^j\cos(ct),&j\text{ odd},
+ \end{cases}
+ \qquad
+ b_j(s)=(-1)^{\lfloor j/2\rfloor}\frac{(4s)^j}{j!}.
+$$
+With $(\Phi f)_j=\langle\phi_j,f\rangle$ the angular
+Taylor map at $c+s$ is $b(s)^{\mathsf T}\Phi f$.
+Its signed moment matrix for $\ell$ is exactly
+$$
+ M=\int_{-2}^2\rho(s)b(s)b(s)^{\mathsf T}ds .
+$$
+Every entry is an interval polynomial integral against
+the literal lower step and uses only the positive budget
+reserved for $X$.
+
+An exact upper bound for the physical Gram
+$\Phi\Phi^*$ is $\bar G=G_0+(36/c)I$,
+where $(G_0)_{ij}=4/(i+j+1)$ if $i+j$ is even and
+zero otherwise. In the product formulas for the
+physical sine and cosine functions, the mean term is
+$G_0$. For the oscillatory term integrate
+$(t/4)^{i+j}e^{2ict}$ by parts once. The sum of the
+endpoint moduli is at most two, and the integral of
+the absolute derivative of $(t/4)^{i+j}$ is at most
+two. The product formulas contribute the factor
+$1/2$, so the individual entry error is at most
+$1/c$. The row and column sum bound gives $36/c$.
+The matrix $G_0$ is positive semidefinite by the even
+and odd monomial Gram integrals on $[-4,4]$ with weight
+$1/2$. Thus $\bar G$ is strictly positive.
+
+Form the rational signed comparison
+$$
+ C=\tau\bar G+\bar G M\bar G .
+$$
+The exact integer-scaled Bareiss elimination below
+gives $36$ strictly positive leading principal minors
+of this matrix. Hence $C>0$ by the symmetric
+positive-definiteness criterion. In particular
+$\bar G^{1/2}M\bar G^{1/2}\ge-\tau I$.
+The map $\bar G^{-1/2}\Phi$ is a contraction by the
+physical upper Gram bound. Its conjugation therefore
+gives $\Phi^*M\Phi\ge-\tau I$ on the whole original
+physical carrier. The angular approximation error
+and the pointwise signed comparison for $\ell$
+give the claimed debit inequality for the actual
+$\mathcal W_X$.
+
+In particular the full signed physical form restricted
+to $X$ with the original $D$ satisfies
+$$
+ D+K^*1_XmK \ge (\beta-\tau-\delta)I >0.12484I .
+$$
+For the orthogonal angular projection criterion on
+this cell with $(h,k)=(4,36)$, the actual signed
+operator error is at most $\delta_P=544\epsilon$.
+The $r=-\delta_P$ finite matrix with the original
+physical projection then has normalized margin
+at least $(\beta-\tau-\delta-2\delta_P)/(B-\delta_P)>0.9987$.
+This derives the finite matrix sign from an exact
+rational sufficient comparison and the original Gram
+order.
+
+### Combining the new debit with every prior debit
+
+Put $S_{\rm keep}=S_\lambda-P_X$.
+The old positive allocations in $c_1$ detunings lie
+inside $[-16.64,116]$, $[350,405]$, $[5311.55,5315.55]$,
+$[20345,20410]$, or the two high windows. Their nearest
+possible high endpoint exceeds $c_2-5.55-2$, with
+$c_2=5085348195\pi/4$. These enclosures and their
+reflections are disjoint from $X$. The original
+physical input $\sqrt\beta f$ and their separate positive
+inputs therefore have squared norm at most
+$\langle f,S_{\rm keep}f\rangle$.
+The old comparison, with the same row Gram and strict
+cap $q=0.953004$, holds for this reduced comparator.
+Writing $\mathcal W_{\rm old}$ for the old debit stack,
+$$
+ \mathcal W_{\rm old}^*\mathcal W_{\rm old}
+ \le qS_{\rm keep},\qquad S_{\rm keep}\ge\beta I .
+$$
+The two debit families are disjoint. Adding the new
+bound and using $S_\lambda=S_{\rm keep}+P_X$ gives
+$$
+ \begin{aligned}
+ \mathcal W_{\rm old}^*\mathcal W_{\rm old}
+     +\mathcal W_X^*\mathcal W_X
+ &\le\big(q+(\tau+\delta)/\beta\big)S_{\rm keep}
+                     +\tfrac14 P_X\\
+ &\le\max\{q+(\tau+\delta)/\beta,\tfrac14\}S_\lambda\,.
+ \end{aligned}
+$$
+The exact scalar maximum is below $0.953405$.
+The positive resource on $X$ is reserved separately
+from all earlier allocations, and this comparison
+prices the new physical cost once.
+
+Set $S_{\rm all24}=S_\lambda-\mathcal W_{\rm all24}^*
+\mathcal W_{\rm all24}\ge0.046595S_\lambda$.
+The exact open sign is
+$\|N_{\rm out}S_{\rm all24}^{-1}N_{\rm out}^*\|\le1$
+for the actual remaining negative restriction outside
+the twenty-four enclosures. For that restriction,
+$T_+-\lambda\Pi_H=S_{\rm all24}-N_{\rm out}^*N_{\rm out}$.
+Bounded congruence gives the norm equivalence, and the
+original seven leading inverses identify the equivalent
+floor $C_{4,+}\ge0.0001071I_H$. The original directional
+source return still requires this floor.
+The trace corridor at detunings $[5500,20000]$ is still
+unpaid, so the actual outside trace lower bound $1.519$
+also holds after the new debit.
+
+### Exact source checks
+
+Extract the block and pass the complete pinned source
+Markdown path followed by `gap` or `matrix`. The first
+mode checks the actual signed complement. The second
+checks the full lower step, exact rational moments,
+all symmetric positive-definiteness pivots and scalar
+comparisons.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+mode=sys.argv[2]
+assert mode in ("gap","matrix")
+c0=F("99653682.92983")
+start=F(116) if mode=="gap" else F("140.56")
+stop=F("144.56")
+Alo,Ahi=F("17.6779"),F("17.6780")
+lowarg=47581183 if mode=="gap" else 47581195
+higharg=47581199
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+step=F(".02") if mode=="gap" else F(".005")
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("1e-11")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+if mode == "gap":
+    enclosure=(F("142.44"),F("142.68"))
+    assert all(((v-start)/step).denominator==1 for v in (*enclosure,stop))
+    assert node(enclosure[0])[1]<Alo and node(enclosure[1])[1]<Alo
+    assert node(F("142.56"))[0]>Ahi
+    checks,splits=0,0
+    def show_positive(x,h):
+        global checks,splits
+        lo,hi=estimate(x,h)
+        checks+=1
+        if hi<Alo:
+            return
+        if lo>Ahi or h<=F(".000625"):
+            raise AssertionError(("missed negative or unresolved sign",str(x),str(h),str(lo),str(hi)))
+        splits+=1
+        show_positive(x,h/2)
+        show_positive(x+h/2,h/2)
+    for l,r in ((start,enclosure[0]),(enclosure[1],stop)):
+        for j in range(int((r-l)/step)):
+            show_positive(l+j*step,step)
+    print("PASS exact previously open adjacent gap and actual negative enclosure",checks,splits)
+    assert checks==1416 and splits==0
+    raise SystemExit
+
+from math import lcm
+
+centre_offset=F("142.56")
+c=c0+centre_offset
+wmin=1-F("3e-10")
+assert start==centre_offset-2 and stop==centre_offset+2
+assert count==800
+assert node(centre_offset)[0]>Ahi
+assert node(start)[1]<Alo and node(stop)[1]<Alo
+rho=[]
+positive_fraction=F(1,4)
+for j in range(count):
+    offset=start+j*step
+    _,upper=estimate(offset,step)
+    raw=Alo-upper
+    lower=positive_fraction*wmin*raw/pi_upper if raw>=0 else raw/pi_lower
+    lower=F((lower*10**7)//1,10**7)
+    assert pi_upper*abs(lower)<9
+    if lower:
+        rho.append((offset-centre_offset,offset+step-centre_offset,lower))
+assert len(rho)==800 and sum(w<0 for _,_,w in rho)==44
+k=36
+moments=[sum(w*(v**(j+1)-u**(j+1))/(j+1) for u,v,w in rho)
+         for j in range(2*k-1)]
+coefficient=[(-1)**(i//2)*F(4**i,factorial(i)) for i in range(k)]
+M=[[coefficient[i]*coefficient[j]*moments[i+j] for j in range(k)] for i in range(k)]
+G=[[(F(4,i+j+1) if (i+j)%2==0 else F(0))+(F(k)/c if i==j else F(0))
+    for j in range(k)] for i in range(k)]
+
+def mul(A,B):
+    return [[sum(A[i][u]*B[u][j] for u in range(k)) for j in range(k)] for i in range(k)]
+
+q=mul(mul(G,M),G)
+assert all(q[i][j]==q[j][i] for i in range(k) for j in range(k))
+B,lam=F(".124997987"),F(".0001071")
+beta=B-lam
+eps=F(8)**k/factorial(k)
+delta=9*eps*(2+eps)
+assert delta<F("1.6e-8")
+print("signed cells",len(rho),sum(w<0 for u,v,w in rho),"folded raw bound",float(pi_upper*max(abs(w) for u,v,w in rho)),"Taylor operator error",float(delta),flush=True)
+candidate=F(1,20000)
+C=[[candidate*G[i][j]+q[i][j] for j in range(k)] for i in range(k)]
+scale=lcm(*(v.denominator for row in C for v in row))
+scaled=[[int(v*scale) for v in row] for row in C]
+assert all(den==int(den) for row in C for den in (v*scale for v in row))
+last=1
+for j in range(k):
+    pivot=scaled[j][j]
+    if pivot<=0:
+        raise AssertionError(("first failed exact LDL pivot",j,str(candidate)))
+    for i in range(j+1,k):
+        for r in range(i,k):
+            num=pivot*scaled[i][r]-scaled[i][j]*scaled[r][j]
+            value,rest=divmod(num,last)
+            assert rest==0
+            scaled[i][r]=value
+    for i in range(j+1,k):
+        for r in range(i+1,k):
+            scaled[r][i]=scaled[i][r]
+    last=pivot
+lower_floor=beta-candidate-delta
+new_cap=max(F(".953004")+(candidate+delta)/beta,positive_fraction)
+assert new_cap<F(".953405")
+assert lower_floor>F(".12484")
+actual_projection_error=544*eps
+assert 0<actual_projection_error<beta
+assert (lower_floor-2*actual_projection_error)/(B-actual_projection_error)>F(".9987")
+paid_spans=[(F("-16.64"),F(116)),(F(350),F(405)),
+            (F("5311.55"),F("5315.55")),(F(20345),F(20410))]
+assert all(r<start or stop<l for l,r in paid_spans)
+c2_lo=F(5085348195,4)*pi_lower
+assert c2_lo-F("5.55")-2>c0+stop
+print("residual global cap from paid-resource exclusion",float(new_cap),flush=True)
+assert lower_floor>0
+print("PASS signed moment direct finite physical positivity",str(candidate),k,
+      scale.bit_length(),float(lower_floor),flush=True)
+~~~
