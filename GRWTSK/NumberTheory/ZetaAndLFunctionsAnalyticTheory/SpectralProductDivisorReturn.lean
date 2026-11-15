@@ -232,3 +232,81 @@ theorem satisfiesGRH_of_local_spectral_returns
   simpa only [arithmeticCoordinate_spectralCoordinate] using hline
 
 end GRWTSK.NumberTheory.SpectralProductDivisorReturn
+
+/-!
+## The second logarithmic derivative of completed zeta at the anchor
+
+For the pole-cleared Riemann function
+`ξ(s) = (s(s-1)/2) π^(-s/2) Γ(s/2) ζ(s)`, put `L = ξ'/ξ`.
+Then `|L'(2)| ≤ (2/3) Re L(2)`. This is an analytic proof for the
+modulus-one source. Lean formalization of this section remains open.
+
+The entire extension is `1/2 + (s(s-1)/2) completedRiemannZeta₀(s)`,
+the definition `GRWTSK.NumberTheory.Zeta.CompletedQuotientSource.xi`.
+Mathlib's `completedRiemannZeta_eq` gives the two pole terms. Their contribution
+after multiplication by `s(s-1)/2` is exactly `1/2`. The full gamma and
+zeta factors enter through this identity. The classical inputs are the
+order-one Hadamard product for this ξ, the identification of its zeros with
+the nontrivial zeros of ζ including multiplicity, their critical strip, and
+`ξ(s)=ξ(1-s)` and `ξ(conj s)=conj ξ(s)`.
+See [Voros, 2003, §3.1 and §5, pp. 674 and 679–680](https://www.numdam.org/item/10.5802/aif.1955.pdf)
+and [DLMF 25.4.3–4](https://dlmf.nist.gov/25.4#E3).
+
+Each such zero has `|Im ρ| > 1/2`. For `σ = Re s > 0` and `s ≠ 1`,
+partial summation of the zeta series gives
+`ζ(s)/s = 1/(s-1) - ∫₁∞ {x} x^(-s-1) dx`. Indeed integrate the step
+function `floor x` for `σ>1`, split `floor x = x - {x}`, and continue
+using local uniform absolute convergence of the fractional-part integral
+on `σ>0`. On each unit interval the weight `x^(-σ-1)` is decreasing.
+Pairing `x=n+u` and `x=n+1-u` for `0≤u≤1/2` shows that the weighted
+integral of `{x}` on it is at most half the integral of the weight.
+Thus the modulus of the fractional-part integral is at most `1/(2σ)`.
+For `1/2≤σ≤1` and `|Im s|≤1/2`, `|s-1|≤1/√2<2σ`, so the two
+terms cannot cancel. Reflection of ξ zeros under `s↦1-s` covers the
+other half of the strip. This also gives `ξ(1/2)≠0`.
+
+Write `t=s-1/2`. In the centered Hadamard product, pair a zero
+`w=ρ-1/2` with `-w`, choosing once per pair with `Im w>0` and
+retaining multiplicity. The two genus-one factors multiply to
+`1-t²/w²`. The remaining linear exponential has zero slope by
+evenness at `t=0` and the nonzero value there. The order-one product
+has `Σ |w|⁻²<∞`. Hence, on any compact zero-free disk about `s=2`,
+the two series
+`L(s)=Σ 2t/(t²-w²)` and
+`L'(s)=Σ [2/(t²-w²)-4t²/(t²-w²)²]` follow by termwise
+logarithmic differentiation. The paired terms and their derivatives
+are bounded uniformly in the tail by a constant times `|w|⁻²`.
+The Euler product gives `ζ(2)≠0`, so `ξ(2)≠0` and such a disk exists.
+Conjugation makes both `L(2)` and `L'(2)` real.
+
+Set `t=3/2`. For a paired zero write `w=α+iγ` and
+`q=t²-w²=A+iB`, with `A=t²-α²+γ²` and `B=-2αγ`. The strip and
+height bound give `|α|<1/2<γ`, so `A>t²` and
+`A-|B| ≥ 2+γ²-γ ≥ 7/4`. Put `u=Re(1/q)=A/(A²+B²)>0` and
+`v=Re(1/q²)=(A²-B²)/(A²+B²)²`. Then
+`0<v≤1/(A²+B²)=u/A<u/t²`. The real pair contribution to
+`L'(2)` is `2u-4t²v`, whose absolute value is at most `2u`,
+the pair contribution to `L(2)/t`. Sum the absolutely convergent
+series to obtain the claimed bound.
+
+For a real-slope finite model with `a=-3i/2` and `D=G'/G`,
+`D'(a)=-Σ_j(a-λ_j)⁻²` and `Im D(a)=(3/2) anchorMass`.
+For the normalized source `ξ(1/2+iz)/ξ(2)` these quantities are
+`-L'(2)` and `Re L(2)`, respectively. Locally uniform convergence
+near `a` would transfer the finite bound by convergence of the
+first two derivatives at the nonzero anchor. The completed source
+passes this necessary test. A reflection-symmetric off-line quartet
+`1/2 ± 1/4 ± 3i` also satisfies the pair inequalities. The polynomial
+with roots `1/4, 3/4` preserves strip and reflection symmetry and
+exceeds the absolute bound by `64/1225` at `s=2`.
+
+The surplus-path result `exists_path_not_source_block` in
+MoebiusSoficBlockObstruction.lean (math#1815, `e23be8e335fc`) shows
+that a fixed finite graph covering every signed Möbius prefix admits a
+decoded path with no original contiguous placement. A graph used as an
+overcover therefore needs a proved arithmetic check on the paths that
+contribute to its proposed spectral product. The ξ estimate starts
+with the actual completed divisor. Constructing that product from
+arithmetic data, proving analytic source identification, and supplying
+all-height zero coverage remain open in math#1805, #1800, #1806 and #1807.
+-/
