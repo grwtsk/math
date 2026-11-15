@@ -7149,3 +7149,517 @@ low_covariance = -F('.00343')+gamma_allowance+collar_allowance+d0_allowance+high
 assert low_covariance < -F('.00331')
 print('PASS necessary covariance for the low inverses and actual transfer < -.00331')
 ~~~
+
+## The mixed low inverse entry required by the residual test
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational guards. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep $T=BI+R$, the actual seven pivot domains, the exact direction
+transfer and the cutoff and sign conventions of the preceding sections.
+Set $D_{\rm lo}=D_P+D_Z$, $D_{\rm hi}=D_Y+D_{\mathcal V}$,
+$c_b=(24I-T)\bar z$, and $b=\Pi_H c_b$, where $\bar z=z_p+p$.
+For the existing sufficient test with budget $0.00429$, the following
+strict inequality is necessary:
+$$
+             \operatorname{Re}\langle b,D_{\rm lo} k\rangle>0.001173 .
+$$
+In particular, $\|PRb\|\le1.05$ and $\|Jb\|\le1.05$ together would
+falsify that test. This implication uses the same $b$ in both genuine
+low inverse rows on their actual domains.
+
+### Low angular estimates on the signed action
+
+Write $u_d=D_{s_0}g_0$ and
+$L_M(f)=\|\mathbf1_{|\nu|\le M}\widehat f\|_2$ with $d\nu/(2\pi)$.
+Use the actual two-carrier coefficients of $g_0$ with the established
+joint jump norm below $0.468$, pointwise sum of coefficient magnitudes
+below $0.351$, and minimum gap $0.000014$. For any translated and
+physically compressed copy of $g_0$, the interior jumps are a subset of
+the translated list. Their phases preserve the jump norm and their
+gaps are unchanged. Only the two endpoints of the compression add
+jumps, with sum of magnitudes over both carriers below $0.702$.
+When a translated cut lies exactly on a physical endpoint, use the
+single one-sided endpoint coefficient and exclude it from the
+interior list.
+
+Let $\rho_{\min}=3.8\cdot10^9$. Integrating the jump formula for each
+complex carrier, and including the factor $1/2$ from the real part,
+gives for $0<M<\rho_{\min}$ the following upper bound on $L_M$
+for any such copy:
+$$
+ \frac{
+  \sqrt2(0.468)\sqrt{M/\pi+16/(\pi(0.000014))}
+       +0.702\sqrt{M/\pi}}
+      {\rho_{\min}-M}.
+$$
+The interior term uses the preceding interval Gram estimate on the
+separated subset. The endpoint term uses its uniform numerator bound.
+Absolute triangle over the original signed translates, including the
+scalar row, costs $211+|s_0|$. At $M=4\cdot10^8$ the resulting
+$L_M(u_d)$ is below $0.000969$. The estimates for single translated
+copies can use the full zero-extended interval $L^2$ space. The sum
+$u_d$ lies in the original odd carrier.
+
+The actual old $P$ space has the first signed endpoint moment zero and
+at most $N=23000000$ native sine coefficients. A native preimage
+of a vector in $U$ lies in the actual $X$ with $N=38170000$ and all
+11000 displayed signed moment constraints. Use its first ten
+constraints for this estimate. In either case, with $m$ cancellations
+and $\omega_{\max}<M$, the exact sine transform and finite geometric
+remainder yield the full angular tail bound
+$$
+ \|\mathbf1_{|\nu|>M}\widehat f\|_2^2
+ \le \|f\|^2
+ \frac{N(\omega_{\max}/M)^{4m+2}}
+      {\pi(4m+3)M(1-(\omega_{\max}/M)^2)^2}.
+$$
+The denominator powers come from integrating $|\nu|^{-4m-4}$ on both
+signs. Retain the signed constraints
+$\sum_j(-1)^j j^{2r+1}a_j=0$ for $0\le r<m$. The guard gives the
+unit tail bounds $4.73\cdot10^{-6}$ for $P$ and
+$1.12\cdot10^{-23}$ for $U$, including the true $10/9$ preimage and
+relative $10^{-60}$ error on the latter.
+[Original trace-zero head](WeilConductorThreeRadiusFourResidualHead.lean#L34)
+[Original moment carrier](WeilConductorThreeRadiusFourGramMomentSector.lean#L42)
+
+Testing against unit vectors in those spaces bounds the two head
+components of $u_d$ by its low angular norm plus the corresponding
+tail factor times $0.7648$. The grouped remaining old head projection
+is below $1.875\cdot10^{-9}$ by the previous full angular bound.
+The orthogonal sum gives $\|\Pi_{\mathcal E}u_d\|<0.001374$.
+
+For the raw rows $PRu_d$ and $\Pi_U Ru_d$, the low part costs the
+weighted row factors $7.5,1.344$, respectively. The high part instead
+costs $300(0.7648)$ times the corresponding unit tail. In returning
+to $z_p=\Pi_Hu_d$, subtract the old $P,U$ components with the
+weighted block bounds
+$$
+ \begin{pmatrix}
+ 0.1875 & 0.0336\\
+ 0.0336 & 0.006013
+ \end{pmatrix}.
+$$
+These bounds follow from $300\|K_wP\|^2$, $300\|K_wP\|\|K_w|_U\|$
+and $300\|K_w|_U\|^2$. Use $7.5,1.344$ on the other old component.
+On the actual last pivot plane, the local $0.00046,0.00027$ row
+bounds on $z,z_y$ give row bounds below $0.000674,0.000395$
+after the $e,v$ normalization using coefficients $1/(1-d),1.066$.
+They multiply at most $\|u_d\|<0.7648$. For the actual $J$ row
+into $Z$ use the original $3/8$ interaction with $PR$ in its
+$U$ component and the Chebyshev bound $741\cdot10^{-265}\|z_p\|$
+in the old physical $W$ component. The directed totals give
+$$
+       \|PRz_p\|<0.0090741,\qquad \|Jz_p\|<0.0050442 .
+$$
+Complete the square in the positive form of $D_{\rm lo}$ as in
+the preceding high inverse argument. Since $p=\kappa g_*$ with
+$\kappa>0.31708$, the actual inverse bounds $10,25/2$ give
+$$
+ \operatorname{Re}\langle\bar z,D_{\rm lo}g_*\rangle
+ \ge-\frac{\langle z_p,D_{\rm lo}z_p\rangle}{4\kappa}
+ >-0.000902 .
+$$
+
+### Full comparison action on the translated proxy
+
+Use the same separated subset and endpoint decomposition for the
+actual $G_{\rm phys}$ comparison, retaining the full filter and paid
+pair. The original bounded multiplier defines the same physical
+compression on full interval $L^2$. Its restriction to odd functions
+is $G_{\rm phys}$, since the multiplier is even. This permits the
+estimate on a single translated summand. Below $H_{\rm safe}$,
+multiply the angular estimate by 251. The result is below $0.000300$
+per compressed copy.
+
+On the pass band the earlier gamma bound is
+$|G(\nu)|<|\log(|\nu|/\rho)|+1.4\cdot10^{-7}$ for either carrier.
+For the interior jumps use the same interval-superlevel proof
+for the squared logarithmic divided difference. Its combined
+frame square root is below $2.60\cdot10^{-5}$. For the two
+new endpoints, the uniform numerator bound uses the same
+constant, since $\int_0^\infty L_\rho(x)^2\,dx/\pi<8/(\pi\rho)$.
+The additive $1.4\cdot10^{-7}$ term costs at most $6(0.351)$
+times this coefficient by Plancherel. These yield pass-band cost
+below $0.000036$. By Cauchy--Schwarz, the total jump-magnitude
+sum is below $\sqrt{2(919)}(0.468)+0.702<21$. Use this numerator
+on the paid pair and beyond $3.2\cdot10^{25}$. Their costs are
+below $0.0000069$ and $1.1\cdot10^{-9}$, respectively. For the
+upper tail use $|\nu\mp\rho|\ge0.99|\nu|$ and the full improper
+integral on both signs. The complete price is below $0.000344$
+per copy, so $\|G_{\rm phys}u_d\|<0.0735$.
+
+To return to $\bar z$, use the true decomposition
+$u_d=z_p+\Pi_{\mathcal E}u_d+P_1u_d$ and $p=\kappa g_*$.
+The old component costs $251(0.001374)$. On the actual pivot
+plane use the bounds $0.000247+251(2d)$ on $e$ and
+$1.066(0.000247)+251(11d)$ on $v$. Their Euclidean norm gives
+the plane bound below $0.000404$. The final term costs at most
+$0.36536(0.000174+251(0.006081))$. Thus
+$\|G_{\rm phys}\bar z\|<0.977$. The exact identity
+$24I-T=D_{s_0}-G_{\rm phys}$ and the physical signed shift norm give
+$$
+ \|b\|\le\|c_b\| <(57.7531+|s_0|)(0.685)+0.977<42.29.
+$$
+The guard evaluates the actual sum before rounding. Then
+$\|k-h\|<0.282d$ and the local gamma comparison on $u,y$ give
+$$
+ \big|\langle b,R(k-h)+G_{\rm phys}h\rangle\big|
+ <42.29[300(0.282d)+0.10901(0.000247)]<0.001196 .
+$$
+
+### Sampling the removed head at the original native modes
+
+Here test $g_0$ itself on the first $N_s=38170000$ native modes.
+Identify the endpoints of the length-eight interval for the sample
+frequencies $\nu_j=j\pi/4$. For a single complex carrier, absorb the
+carrier phase into the jump coefficients before merging the endpoints.
+They have identical sample phases. The merged jump energy grows by
+at most a factor of two. The cyclic gaps between distinct remaining
+points exceed $0.000014$. If two points have shorter cyclic distance
+$d_{jk}\le4$, their off-diagonal exponential sum over the native
+samples is bounded by $1/|\sin(\pi d_{jk}/8)|\le4/d_{jk}$.
+On either side the $r$th point is at distance at least
+$r(0.000014)$, so the absolute off-diagonal row sums are below
+$64/(0.000014)$. The sample Gram bound is thus
+$N_s+64/(0.000014)<6540^2$ times the merged jump energy.
+
+Use the same jump numerator at $-\nu_j$ for the convention
+$\widehat f(\nu)=\int f(x)e^{i\nu x}\,dx$. Each carrier
+denominator has modulus above $3.8\cdot10^9-3\cdot10^7$.
+The sine coefficient of the real odd proxy has modulus
+$|\widehat g_0(-\nu_j)|/2$. Combining four carriers with factor
+$1/2$ from the real part, the endpoint merge factor $\sqrt2$,
+and the initial joint jump norm gives
+$$
+ \|\Pi_{E_s}g_0\|<6540(0.468)/(3.8\cdot10^9-3\cdot10^7)
+       <8.12\cdot10^{-7}.
+$$
+Here $E_s$ is the span of those full native sine modes.
+To test against a unit vector in $P\mathcal H\oplus U$, replace its
+$U$ component by the true preimage in $E_s$. The difference is
+below $(10/9)10^{-60}$ and $P\mathcal H\subset E_s$. This gives
+$\|\Pi_{P\mathcal H\oplus U}g_0\|<8.13\cdot10^{-7}$.
+For the grouped old $W,L_0,Y_0,\mathcal V$ head the bound is
+$9\cdot10^{-12}+(1.70\cdot10^{-11})(0.1886)<1.221\cdot10^{-11}$.
+On $P_1$, use $\|P_1g_0\|<26d(0.1886)$.
+
+In the pairing with $(I-\Pi_H)g_0$ the $(24-B)$ scalar part
+vanishes. The combined weighted rows into the old $P,U$ spaces
+have norm below $\sqrt{7.5^2+1.344^2}<7.62$.
+Use 300 for the remaining old group. On the actual last pivot plane,
+$\Pi_H T|_{\mathcal P}=F+\Pi_H D_5|_{\mathcal P}$ has norm
+below $\sqrt{8.2}+\sqrt2(1.1)(0.055511)<3$.
+This uses the true $e,v$ columns on $z,z_y$, with coefficient sums
+below $1.1$. Thus Cauchy--Schwarz and $\|\bar z\|<0.685$ give
+$$
+       |\langle c_b,(I-\Pi_H)g_0\rangle|<4.42\cdot10^{-6}.
+$$
+
+### The high inverse transfer paired against the actual $b$
+
+Put $\tau_N(f)=\|\mathbf1_{|\nu|>N}\widehat f\|_2$ and use the
+cutoffs $M_0=5\cdot10^{12}$, $M_1=10^{20}$ and $L=10^{25}$.
+The previously established full physical interval support
+projection, from $|\eta|\le M'$ to $|\nu|\ge N'$, has
+Hilbert--Schmidt norm bounded by
+$\sqrt{4M'/(\pi^2(N'-M'))}$ for $M'<N'$. We use this full angular
+bound twice with the genuine compression and the bounded
+original masked multiplier of modulus below 300.
+
+At $M_1$ the original $24.4(211+|s_0|)$ coefficient bound for $u_d$
+and the $2/|\nu|$ envelope give $\tau_{M_1}(u_d)<5.89\cdot10^{-7}$.
+On the original $P,U$ projections use the native $|\nu|^{-2}$
+tail and the true $U$ preimage. The other old group has full norm
+below $1.875\cdot10^{-9}$. On $P_1$ the actual plane comparison
+with $u,v_0$ and the raw sine tail at $M_1$ give a tail cost below
+$1.38\cdot10^{-7}$. Consequently $\tau_{M_1}(z_p)<7.29\cdot10^{-7}$.
+Use the existing normal equation $g_*=T E k-e$, with
+$\|Ek\|<0.104$ and $\tau_{M_0}(Ek)<1.23\cdot10^{-7}$.
+The first Hilbert--Schmidt bound and the scalar and $e$ tails
+give $\tau_{M_1}(g_*)<0.00449$. Thus $\tau_{M_1}(\bar z)<0.001642$.
+At $L$ use the earlier exact $z_p,g_*$ tails. Applying the second
+Hilbert--Schmidt bound to $R\bar z$ from $M_1$ to $L$ gives
+$\tau_L(c_b)<0.907$.
+
+To project $c_b$ onto $H$, the other old group costs at most
+$\tau_L(c_b)+(1.70\cdot10^{-11})\|c_b\|$, as in the preceding
+true projection estimate. The old $P,U$ and $P_1$ tail factors
+multiply $\|c_b\|<42.29$. The exact sum gives $\tau_L(b)<1.82$.
+Use the $1.2\cdot10^{-11}$ low angular bound on unit $Y_0$ or
+$\mathcal V$ and split the $R$ pairings at $L$. The direct
+$R$ contribution to each high row is at most
+$300[\tau_L(b)+(1.2\cdot10^{-11})\|b\|]$.
+The earlier formulas for $J_Y,J_{\mathcal V}$ add the actual
+previous inverse row interactions and the entire $D_{L_0}$
+price. With $\|PRb\|\le7.5\|b\|$, $\|Jb\|\le3.705\|b\|$,
+the directed total gives $\|J_Yb\|<546$ and
+$\|J_{\mathcal V}b\|<550$.
+
+For $k$ use the coefficient sum below $0.10901$ on $z,z_y$
+and the existing high columns below $3.2\cdot10^{-8}$ and
+$5.2\cdot10^{-6}$ on each input. Using the genuine inverse
+bounds $4,1/12$ gives $|\langle b,D_{\rm hi}k\rangle|<0.000034$.
+The $L_0$ pair is at most $42.29(0.103)10^{-515}$.
+This preserves both high corrections on the original domains.
+
+### The remaining shared low pair
+
+Use the exact direction identity from the preceding section. The
+signed quantity tested there is
+$$
+\begin{split}
+ \operatorname{Re}\langle\bar z,w_{\rm low}\rangle
+ ={}&\operatorname{Re}\langle b,R(k-h)+G_{\rm phys}h\rangle
+     -\operatorname{Re}\langle c_b,(I-\Pi_H)g_0\rangle\\
+   &-\operatorname{Re}\langle b,(D_{\rm hi}+D_{L_0})k\rangle
+      +\operatorname{Re}\langle\bar z,D_{\rm lo}g_*\rangle
+      -\operatorname{Re}\langle b,D_{\rm lo}k\rangle .
+\end{split}
+$$
+All operators in this equality act on the original carrier and
+inverse domains. Combining the first three prices with the required
+value below $-0.00331$ shows that the final two terms together
+must be below $-0.002075$. The positive inverse square bounds the
+first of those terms below by $-0.000902$, giving the claimed
+strict lower bound $0.001173$ on the signed mixed entry
+$\operatorname{Re}\langle b,D_{\rm lo}k\rangle$.
+
+For the stated falsification test use the $PR,J$ column norms
+below $0.00046,0.00045$ on each of $z,z_y$ and the exact
+coefficient sum for $k$. If both row norms on $b$ are at most
+$1.05$, the absolute mixed value is bounded above by
+$$
+       1.05(0.10901)[10(0.00046)+(25/2)(0.00045)]<0.001173 .
+$$
+Those row inequalities on the actual $b$ remain open. The necessary
+mixed bound here concerns the existing sufficient $0.00429$ test.
+The actual full residual, all-complement coercivity and the original
+arithmetic sign on every admitted real odd compact $C^2$ test remain
+open. The arithmetic return retains the full gamma term, signed
+prime powers, paid pair and genuine original Schur complements.
+
+### Directed guards for the mixed low entry
+
+These rational checks use the bounds on the actual domains proved
+above and in the preceding source sections.
+
+~~~python
+from fractions import Fraction as F
+
+pi_lo=F('3.14')
+cut=F('4e8')
+rho_lo=F('3.8e9')
+spacing=F('.000014')
+assert cut/pi_lo < 11287**2
+assert (cut+16/spacing)/pi_lo < 11303**2
+assert 2 < F('1.415')**2
+sum_weight=211+F('2.554199113')
+translated_low=(F('1.415')*F('.468')*11303+F('.702')*11287)/(rho_lo-cut)
+low_w=sum_weight*translated_low
+assert low_w < F('.000969')
+
+def sine_tail_square(n,m,nu):
+    return n*(nu/cut)**(4*m+2)/(pi_lo*(4*m+3)*cut*(1-(nu/cut)**2)**2)
+assert sine_tail_square(23000000,1,F(22,7)*23000000/4) < F('4.73e-6')**2
+# Use only first 10 vanishing moments of the exact X preimage.
+assert sine_tail_square(38170000,10,F('3e7')) < F('1e-23')**2
+tail_p=F('4.73e-6')
+tail_u=F(10,9)*(F('1e-23')+F('1e-60'))
+assert tail_u < F('1.12e-23')
+
+wn=F('.7648')
+physical_p=low_w+tail_p*wn
+physical_u=low_w+tail_u*wn
+other=F('1.861e-9')+F('1.70e-11')*wn
+assert other < F('1.875e-9')
+d=F('1.6e-8')
+real_v_coeff=F('1.066')
+p_e=F('.00046')/(1-d); p_v=F('.00046')*real_v_coeff
+u_e=F('.00027')/(1-d); u_v=F('.00027')*real_v_coeff
+assert p_e**2+p_v**2 < F('.000674')**2
+assert u_e**2+u_v**2 < F('.000395')**2
+assert (F('.0336')*40)**2*49900 > 300**2
+assert F('.006013') > F(300,49900)
+
+raw_p=F('7.5')*low_w+300*tail_p*wn
+raw_u=F('1.344')*low_w+300*tail_u*wn
+prow=raw_p+F('.1875')*physical_p+F('.0336')*physical_u+F('7.5')*other+F('.000674')*wn
+urow=raw_u+F('.0336')*physical_p+F('.006013')*physical_u+F('1.344')*other+F('.000395')*wn
+zrow=urow+F(3,8)*prow+F('741e-265')*F('.6688')
+assert prow < F('.0091')
+assert urow < F('.00165')
+assert zrow < F('.00507')
+inverse_square=10*prow**2+F(25,2)*zrow**2
+neg_expense=inverse_square/(4*F('.31708'))
+assert neg_expense < F('.000902')
+assert F('-.00331')+F('.000902') < F('-.00240')
+print('PASS exact low W tail, actual P/U/J projections, and adverse low inverse covariance below .000902')
+assert prow < F('.0090741') and zrow < F('.0050442')
+assert (10*F('.0090741')**2+F(25,2)*F('.0050442')**2)/(4*F('.31708')) < F('.000902')
+old_head_cap = F('.001374')
+assert physical_p**2+physical_u**2+other**2 < old_head_cap**2
+from fractions import Fraction as F
+
+pi_floor = F('3.14')
+separation = F('.000014')
+rho_floor = F('3.8e9')
+Hsafe = F(10**8,3)-1
+new_endpoint_l1 = 2*F('.351')
+old_jump_norm = F('1.415')*F('.468')
+full_jump_l1 = F('21')
+assert 2 < F('1.415')**2
+assert (full_jump_l1-new_endpoint_l1)**2 > 2*919*F('.468')**2
+
+# The original separated subset retains the same interval frame bound.
+assert Hsafe/pi_floor+16/(pi_floor*separation) < 3315**2
+assert Hsafe/pi_floor < 3262**2
+low_norm = 251*(old_jump_norm*3315+new_endpoint_l1*3262)/(rho_floor-Hsafe)
+assert low_norm < F('.000300')
+
+minimum_x = 33000000
+assert minimum_x < Hsafe
+log_sup = 5/(rho_floor-minimum_x)
+log_squared = 8/(pi_floor*rho_floor)
+log_frame = log_squared+32*log_sup**2/(pi_floor*separation)
+assert log_frame < F('2.60e-5')**2
+log_norm = (old_jump_norm+new_endpoint_l1)*F('2.60e-5')+F('1.4e-7')*6*F('.351')
+assert log_norm < F('.000036')
+
+paid = 251*full_jump_l1*F('2.53')/(rho_floor-F('1.86e9'))
+assert paid < F('.0000069')
+top_frequency = F('3.2e25')
+assert F('.01')*top_frequency > F('4e9')
+high_price = F('1.1e-9')
+assert (251*full_jump_l1/F('.99'))**2 < high_price**2*pi_floor*top_frequency
+translated = F('.000344')
+assert low_norm+log_norm+paid+high_price < translated
+
+s0 = F('2.554199113')
+triangle_weights = 211+s0
+g_action_signed = triangle_weights*translated
+assert g_action_signed < F('.0735')
+
+# The three old orthogonal components were priced in the low-row guard above.
+assert old_head_cap == F('.001374')
+
+# G_phys at the two true projected neighboring sines.
+d = F('1.6e-8')
+gamma_e = F('.000247')+251*2*d
+gamma_v = F('1.066')*F('.000247')+251*11*d
+gamma_pivot = F('.000404')
+assert gamma_e**2+gamma_v**2 < gamma_pivot**2
+gamma_p = F('.36536')*(F('.000174')+251*F('.006081'))
+gamma_bar = g_action_signed+251*old_head_cap+gamma_pivot*F('.7648')+gamma_p
+assert gamma_bar < F('.977')
+
+shift_norm = F('57.7531')+s0
+dual_norm = shift_norm*F('.685')+gamma_bar
+assert dual_norm < F('42.29')
+proxy_inhomogeneous = 300*F('.282')*d + F('.10901')*F('.000247')
+proxy_pair_price = F('42.29')*proxy_inhomogeneous
+assert proxy_pair_price < F('.001196')
+assert -F('.00331')+proxy_pair_price < -F('.002114')
+print('PASS translated gamma-mask action and actual projection prices')
+print('PASS dual action norm <42.29 and uncorrected carrier-pair price <.001196')
+from fractions import Fraction as F
+
+native_count = 38_170_000
+separation = F(".000014")
+assert sum(F(1, j) for j in range(1, 919)) < 8
+sample_frame = native_count + 64 / separation
+assert sample_frame < 6540**2
+native_head = F(6540) * F(".468") / (F("3.8e9") - F("3e7"))
+assert native_head < F("8.12e-7")
+preimage_error = F(10, 9) * F("1e-60")
+low_head = F("8.13e-7")
+assert native_head * (1 + preimage_error) + preimage_error * F(".1886") < low_head
+
+other_head = F("1.221e-11")
+assert F("9e-12") + F("1.70e-11") * F(".1886") < other_head
+pivot_head = 26 * F("1.6e-8") * F(".1886")
+
+low_row = F("7.62")
+assert F("7.5")**2 + F("1.344")**2 < low_row**2
+assert F("1.344")**2 * 49_900 > 300**2
+assert F("2.864")**2 > F("8.2") and F("1.415")**2 > 2
+pivot_row = F("2.864") + F("1.415") * F("1.1") * F(".055511")
+assert pivot_row < 3
+test_norm = F(".685")
+head_action = low_row * low_head + 300 * other_head + 3 * pivot_head
+assert head_action < F("6.44e-6")
+pairing = test_norm * head_action
+assert pairing < F("4.42e-6")
+assert -F(".00331") + F("4.42e-6") < -F(".0033055")
+print("PASS periodic discrete jump projection and absolute head covariance < 4.42e-6")
+from fractions import Fraction as F
+
+pi_floor = F('3.14')
+M0, M, L = 5*10**12, 10**20, 10**25
+d = F('1.6e-8')
+budget = F('.124997987')
+action_norm = F('42.29')
+plane_input_norm = F('.7648')
+def hilbert_schmidt_squared(m, n):
+    return F(4*m)/(pi_floor**2*(n-m))
+
+raw_sine_mid = F('1.13e-10')
+assert F(4)/(pi_floor*M) < raw_sine_mid**2
+grouped_norm = F('1.875e-9')
+raw_w_mid = F('5.89e-7')
+weights = F('24.4')*(211+F('2.554199113'))
+assert (2*weights)**2 < raw_w_mid**2*pi_floor*M
+native_mid = F('1.22e-19')
+assert (6200*6*10**7)**2 < native_mid**2*3*pi_floor*M**3
+u_plus_p_mid = (1+F(10,9))*native_mid+F(10,9)*F('1e-60')
+e_mid = 2*d+raw_sine_mid
+v_mid = 11*d+F('1.066')*raw_sine_mid
+plane_mid = F('1.38e-7')
+assert plane_input_norm**2*(e_mid**2+v_mid**2) < plane_mid**2
+z_p_mid = raw_w_mid+plane_mid+grouped_norm+u_plus_p_mid*plane_input_norm
+assert z_p_mid < F('7.29e-7')
+
+ek_tail = F('1.23e-7')
+raw_g_mid_hs = F('.0001425')
+assert hilbert_schmidt_squared(M0,M) < raw_g_mid_hs**2
+g_mid = 300*(F('.104')*raw_g_mid_hs+ek_tail)+budget*ek_tail+e_mid
+assert g_mid < F('.00449')
+p_factor = F('.36536')
+z_bar_mid = z_p_mid+p_factor*g_mid
+z_bar_high = F('3.736e-9')+p_factor*F('5.04e-5')
+assert z_bar_mid < F('.001642')
+hs_middle_high = F('.002015')
+assert hilbert_schmidt_squared(M,L) < hs_middle_high**2
+dual_raw_high = (24-budget)*z_bar_high+300*(F('.685')*hs_middle_high+z_bar_mid)
+assert dual_raw_high < F('.907')
+# The grouped high-space coefficient is bounded by its full overlap with
+# the high tail and its 1.70e-11 low-angle norm on the complement.
+u_plus_p_high = (1+F(10,9))*F('1.22e-26')+F(10,9)*F('1e-60')
+pivot_high_factor = F('5.31e-13')
+assert F('3.61e-13')**2+F('3.88e-13')**2 < pivot_high_factor**2
+b_high = 2*dual_raw_high + action_norm*(F('1.70e-11')+u_plus_p_high+pivot_high_factor)
+assert b_high < F('1.82')
+
+raw_high = 300*(b_high+F('1.2e-11')*action_norm)
+pr = F('7.5')*action_norm
+j = F('3.705')*action_norm
+l0_price = F('1e-515')
+y_cross = F('2e-6')/(1-3*F('1e-272'))
+jy_cross = F(11,8)*y_cross+741*F('1e-265')
+y_b = raw_high+10*y_cross*pr+F(25,2)*jy_cross*j+l0_price
+v_b = raw_high+10*F('2.3e-11')*pr+F(25,2)*F('7.2e-8')*j+4*F('.0017')*y_b+l0_price
+assert y_b < 546 and v_b < 550
+high_pair_price = F('.10901')*(4*y_b*F('3.2e-8')+v_b*F('5.2e-6')/12)
+assert high_pair_price < F('.000034')
+head_price = F('.00000442')
+proxy_pair = F('.001196')
+joint_upper = -F('.00331')+proxy_pair+head_price+high_pair_price+action_norm*F('.103')*l0_price
+assert joint_upper < -F('.002075')
+required = F('.001173')
+assert F('.002075')-F('.000902') == required
+max_low = F('.10901')*(10*F('.00046')+F(25,2)*F('.00045'))*F('1.05')
+assert max_low < required
+print("PASS true projected dual tail and high inverse transfer price < .000034")
+print("PASS required P and Z transfer > .001173; both row norms <= 1.05 would falsify")
+~~~
