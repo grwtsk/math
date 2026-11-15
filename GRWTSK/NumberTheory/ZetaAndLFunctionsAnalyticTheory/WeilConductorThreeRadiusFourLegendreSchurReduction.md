@@ -7663,3 +7663,319 @@ assert max_low < required
 print("PASS true projected dual tail and high inverse transfer price < .000034")
 print("PASS required P and Z transfer > .001173; both row norms <= 1.05 would falsify")
 ~~~
+
+## The mixed inverse entry excludes the fixed residual test
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational guards. Lean elaboration, fresh kernel replay and
+transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Write $G=G_{\rm phys}$ and $u_d=D_{s_0}g_0$. Keep $z_p=\Pi_Hu_d$
+and $\bar z=z_p+\kappa g_*$ on the actual complement $H$. Set $T=BI+R$,
+$b=\Pi_H(24I-T)\bar z$ and $k=A^{-1}e$. For the original
+$D_{\rm lo}=D_P+D_Z$, the strict $0.00429$ test would require
+$$
+ \operatorname{Re}\langle b,D_{\rm lo}k\rangle>0.001173.
+$$
+We prove on these same carriers
+$$
+ |\langle b,D_{\rm lo}k\rangle|<0.00073.
+$$
+This excludes the strict $0.00429$ sufficient test on this direction. The full original sign and the other routes to the required inverse pairing remain open.
+
+### Smaller rows on the actual $k$
+
+Use the cutoff $M_1=10^9$. The two bare normalized real sine inputs $u,y$ have respective carriers $\rho>3.8\cdot10^9$ and original normalization constants $C>1.997$. On any subinterval and with any sine phase, integrating the two exponentials gives
+$$
+ |\widehat{\mathbf1_I \sin(\rho x+\theta)/C}(\nu)|
+ \le \frac1C\left(\frac1{\rho-|\nu|}+\frac1{\rho+|\nu|}\right),
+ \qquad |\nu|\le M_1 .
+$$
+The sum increases with $|\nu|$ and decreases with $\rho$. The full low angular norm, in $d\nu/(2\pi)$ on both signs, is therefore below $5.06\cdot10^{-6}$, including for one compressed translated copy.
+
+For a unit $P$ vector, the exact first signed trace cancellation gives
+$$
+ \|\mathbf1_{|\nu|>M_1}\widehat f\|_2^2
+ \le \frac{(\pi/4)^6\sum_{j=1}^{23000000}j^6}
+ {7\pi M_1^7(1-(\omega_{\max}/M_1)^2)^2}.
+$$
+This is the exact sixth-power sum from ResidualHead, with its factor $1/(7\pi M_1^7)$ accounting for both signs. The exact rational upper bound gives a tail norm below $7.3\cdot10^{-8}$. The earlier $U$ tail below $1.12\cdot10^{-23}$ at $4\cdot10^8$ also bounds the tail at $M_1$. The weighted low factors $7.5,1.344$ and the full high multiplier bound $300$ thus bound each raw $PR,\Pi_U R$ row on $u,y$. To pass to the actual $z=\Pi_{G_2}u,z_y=\Pi_{G_2}y$, add $7.5d,1.344d$, respectively, for $d=1.6\cdot10^{-8}$. The resulting bounds on each are
+$$
+ \|PRz_i\|<0.000060,\qquad
+ \|\Pi_U Rz_i\|<0.00000683,\qquad
+ \|Jz_i\|<0.0000294.
+$$
+The last uses the actual $3/8$ interaction and $741\cdot10^{-265}$ for the $W$ row via $\|z_i\|\le1$. The coefficient sum of $k$ on $z,z_y$ remains below $0.10901$, so the two original inverse column factors are $10(0.10901)(0.000060)$ and $(25/2)(0.10901)(0.0000294)$.
+
+### The original $b$ rows
+
+In the actual old decomposition put $S_b=W\oplus L_0\oplus Y_0\oplus\mathcal V$, $\mathcal E=P\mathcal H\oplus U\oplus S_b$, and retain the actual last plane $P_1\mathcal H=\operatorname{span}(e,v)$. Let $M_2=4\cdot10^8$. The following exact identity uses $24I-T=D_{s_0}-G$, $\Pi_Hu_d=z_p$, and $\Pi_H(\Pi_\mathcal E+P_1)=0$.
+$$
+ b=\Pi_H D_{s_0}u_d-\Pi_H G u_d
+    +\Pi_H R(\Pi_\mathcal E+P_1)u_d
+    +\kappa\Pi_H(u_d-Gg_0)
+    +\kappa\Pi_H(24I-T)(g_*-g_0).
+ \tag{1}
+$$
+
+For the first term put $f=D_{s_0}u_d=D_{s_0}^2g_0$. Each double translation with physical recompression, including a scalar row interpreted as translation by zero, is a translate of $g_0$ cut to the intersection of the original support and two translated intervals. This intersection is an interval or empty. Its old interior jumps form a subset of the same separated set, and only two endpoint values are added. Thus the bound that gave the $M_2$-low norm below $0.000969$ for $u_d$ can be used one more time, with absolute coefficient sum $211+|s_0|$.
+$$
+ L_{M_2}(f)<(211+|s_0|)(0.000969)<0.207.
+$$
+The actual signed operator norm is below $57.7531+|s_0|<60.3073$, giving $\|f\|<46.13$ from $\|u_d\|<0.7648$. Denote the exact upper expressions for these two bounds by $l,n$, respectively. Write $\tau_P=4.73\cdot10^{-6},\tau_U=1.12\cdot10^{-23}$ for the previous $M_2$ tails. The two ordinary projections of $f$ cost $l+\tau_Pn,l+\tau_Un$. Their prices under the residual row projections are the existing entries $0.1875,0.0336,0.006013$ of the weighted two-by-two block bound. On $S_b$, both residual row norms are below $0.000004$. Indeed $W,L_0$ have $K$ norm at most $10^{-265}$. On $Y_0$ both rows are bounded by $2\cdot10^{-6}/(1-3\cdot10^{-272})$. On $\mathcal V$ use $\|PR|_{\mathcal V}\|<2.3\cdot10^{-11}$ and $\|J|_{\mathcal V}\|<7.2\cdot10^{-8}$. The latter gives $\|\Pi_U R|_{\mathcal V}\|<7.2\cdot10^{-8}+(3/8)(2.3\cdot10^{-11})$ by the exact $U$ component of $J$. The sum is below the stated bound. On the actual last pivot plane the already verified bounds are $0.000674,0.000395$. Consequently the two rows on $\Pi_H f$ have prices
+$$
+ \begin{aligned}
+ C_P={}&7.5l+300\tau_Pn+0.1875(l+\tau_Pn)+0.0336(l+\tau_Un)
+                         +(0.000004+0.000674)n<1.696,\\
+ C_U={}&1.344l+300\tau_Un+0.0336(l+\tau_Pn)+0.006013(l+\tau_Un)
+                         +(0.000004+0.000395)n<0.305 .
+ \end{aligned}
+$$
+For the second term in (1) use the previously proved $\|Gu_d\|<0.0735$. For $\Pi_H R\Pi_{\mathcal E}u_d$, use $\|(P+\Pi_U)u_d\|<0.001374$, the combined weighted bound $\|R|_{P\mathcal H\oplus U}\|<7.62$, and $300\|\Pi_{S_b}u_d\|<300(1.875\cdot10^{-9})$. The sum of these two norm estimates is then multiplied by $7.5,1.344$ for the $P,U$ rows on these terms.
+
+To handle the $P_1u_d$ term, write $m=Fv$ and the true relation
+$$
+ \Pi_H T e=\frac{g_*+\eta_c m}{t}+\Pi_HD_5 e,\qquad
+ \Pi_H T v=m+\Pi_HD_5v.
+$$
+Here $C_2=\Pi_{G_2}T|_{G_2}-D_5$, $F=\Pi_H C_2$ on the pivot plane, $g_*=tFe-\eta_cm$, $t>0.10245$ and $0<\eta_c<0.01$. Use the known rows $\|PRg_*\|<0.11$, $\|\Pi_U Rg_*\|<0.03$. For $m$, retain the source-local $\|m-f_0\|<0.05951$ with $f_0=-(I-P_0)T_Pv_0$ and $\|f_0\|<1.509$. Its representation by normalized bare sines and their compressed translations has coefficient sum bounded by
+$$
+ 211(1.066)+1.462(57.7531)<311.
+$$
+Indeed $v_0$ has coefficient sum below $1.066$ on $u,y$. The true orthonormal plane $u,v_0$ gives the coefficient conversion factor $\sqrt{1+1.066^2}<1.462$ for the removed $P_0T_Pv_0$. The signed unmasked shift operator has norm below $57.7531$. Apply the $M_1$ bound for each compressed normalized sine, then the old tail pairing as for $k$, and charge the full $m-f_0$ error with the two global weighted row factors. The directed values give $\|PRm\|<0.46$ and $\|\Pi_U Rm\|<0.083$.
+
+The estimates $\|D_5z_i\|<0.055511$ on the actual projected columns give $\|D_5e\|<0.055511/(1-d)$ and $\|D_5v\|<1.066(0.055511)$. Use the last two displayed pivot formulas to estimate the row on each of $e,v$, then add the two squared column costs and take their square root. The result is
+$$
+ \|PR\Pi_H T P_1\|<1.79,\qquad
+ \|\Pi_U R\Pi_H T P_1\|<0.412.
+$$
+They apply to $\Pi_H R P_1u_d$ because $BI$ vanishes in this off-diagonal block. Multiply by at most $0.7648$.
+
+For the fourth term of (1) use the existing $z_p$ mixed bounds $\|PRz_p\|<0.0090741$, $\|\Pi_U Rz_p\|<0.00165$, together with $\|Gg_0\|<0.000174$ and $0<\kappa<0.36536$. For the final term, the signed residual multiplier lies between $-213$ and $300$, including the original filter and its zero extension. Its physical compression preserves that operator interval. Since $B=0.124997987$, the self-adjoint norm satisfies $\|24I-T\|<276.125$. The last term of (1) therefore costs at most $0.36536(276.125)(0.006081)$ in norm using the actual direction transfer. Multiply once more by the two true row factors. The full directed sums before separate rounding give
+$$
+ \|PRb\|<8.4,\qquad
+ \|\Pi_U Rb\|<1.6,\qquad
+ \|Jb\|<4.75.
+$$
+The final $J$ estimate uses the unrounded first two row costs with the $3/8$ interaction and $741\cdot10^{-265}\|b\|$; the earlier $\|b\|<42.29$ supplies the latter norm.
+
+### Return to the actual inverse pairing
+
+The same $P,J$ rows on the same $b,k$ give, by the actual inverse norms $10,25/2$ on their physical carriers,
+$$
+ |\langle b,D_{\rm lo}k\rangle|
+ \le 10\|PRb\|\|PRk\|+(25/2)\|Jb\|\|Jk\|
+ <0.00073<0.001173.
+$$
+The rational guards below use the exact intermediate expressions. In particular, each of the two mixed terms acts through its original inverse on its original physical range. The original arithmetic return remains open.
+
+### Quantitative gap and the exact residual budget
+
+The tighter columns on $k$ also improve the physical direction
+transfer. On $H$ use the exact identity from the preceding section,
+$$
+ \Pi_H(g_*-g_0)=\Pi_H[R(k-h)+G_{\rm phys}h-D_5 k].
+$$
+For $D_5 k$, apply the global outgoing column factors
+$7.5,3.705,301,303$ to the corresponding local incoming $PR,J,J_Y,
+J_{\mathcal V}$ columns on $k$, with the original inverse costs
+$10,25/2,4,1/12$. The coefficient sum of $k$ is below $0.10901$
+on $z,z_y$. The $L_0$ correction costs below $10^{-515}\|k\|$.
+The local high input bounds stay $3.2\cdot10^{-8},5.2\cdot10^{-6}$
+on each of $z,z_y$. On the other two terms use
+$\|R(k-h)\|<300(0.282d)$ and
+$\|G_{\rm phys}h\|<0.10901(0.000247)$.
+The removed projection is exactly $-(I-\Pi_H)g_0$, whose norm
+is bounded by $8.13\cdot10^{-7}+1.221\cdot10^{-11}+26d(0.1886)$
+from the established native sine, old high group and true pivot
+plane estimates. Orthogonality of the two projection components
+gives
+$$
+             \|g_*-g_0\|<0.000686.
+$$
+
+With $g_{\rm lo}=0.1875-0.000686$ and
+$g_{\rm hi}=0.1886+0.000686$, the earlier proxy norm enclosure now
+gives $g_{\rm lo}<\|g_*\|<g_{\rm hi}$. Use the exact
+$\kappa=(1/t-\sigma)\|g_*\|^2$, with
+$0.10245<t<0.10247$ and $0.1229<\sigma<0.123$.
+For the linear signed pairing use the prior
+$\operatorname{Re}\langle g_0,D_{s_0}g_0\rangle>0.0164475$
+and the exact annihilation of $P_0$ on $H$. Both $g_*,g_0$
+are orthogonal to $P_0$, and the true error costs
+$0.6688(0.000686)$ by the projected-action estimate before
+the final $H$ projection. Thus the actual parallel contribution now
+satisfies
+$$
+      2\operatorname{Re}\langle z_p,p\rangle+\|p\|^2>0.01467.
+$$
+Use the unrounded directed lower bound for $\kappa$ to complete
+the positive $D_{\rm lo}$ square again. With the established rows
+on $z_p$, its adverse price is below $0.00085$. In the exact expansion
+of $\operatorname{Re}\langle\bar z,w_{\rm low}\rangle$, the absolute
+prices for the raw carrier return, removed projection, high inverse
+transfer and new low mixed entry are $0.001196$, $4.42\cdot10^{-6}$,
+$0.000034$ and $0.00073$. The entire $L_0$ transfer remains bounded
+by $42.29(0.103)10^{-515}$. Adding the direct $0.00085$ price
+bounds this real part from below.
+
+Return to the exact $W$. Pay $0.685(0.000174)$ for the proxy
+gamma and mask term, $0.685(0.1947)(0.000024)$ for the collar
+error and $0.685(0.1947)10^{-515}$ for the direct $L_0$ term.
+Use the actual high inverse lower bound $-1.11\cdot10^{-7}$
+and the positive neighboring contribution above $0.0000068$.
+With the directed sums prior to rounding we obtain
+$$
+\begin{aligned}
+ \operatorname{Re}\langle\bar z,W\rangle&>-0.00294,\\
+ 2\operatorname{Re}\langle z_p,\Xi\rangle+\|\Xi\|^2
+ &=2\operatorname{Re}\langle z_p,p\rangle+\|p\|^2
+          +2\operatorname{Re}\langle\bar z,W\rangle+\|W\|^2\\
+ &>0.00879 .
+\end{aligned}
+$$
+The inequality uses $\|W\|^2\ge0$. The exact target $\|z_p+\Xi\|<0.672$ therefore requires
+$\|z_p\|<0.66543$. The earlier upper bound $0.6688$ leaves that
+necessary constraint unresolved. The actual remaining budget is
+$0.672^2-\|z_p\|^2$. Both this budget and the correlated correction
+term require upper estimates to prove the original residual target.
+All-complement coercivity remains a separate premise for the inverse
+criterion. The arithmetic sign still requires the original gamma
+and signed prime-power form on every admitted real odd compact $C^2$
+test on the physical radius-four interval.
+
+### Exact rational guards
+
+The following guard uses the exact written source inequalities for
+the original physical rows and the actual two corrected directions.
+
+~~~python
+from fractions import Fraction as F
+
+pi_lo=F('3.14')
+pi_hi=F(22,7)
+n=23000000
+cut=F('1e9')
+rho=F('3.8e9')
+c0=F('1.997')
+norm_d=F('1.6e-8')
+omega=pi_hi*n/4
+s6=n*(n+1)*(2*n+1)*(3*n**4+6*n**3-3*n+1)//42
+assert s6*42 == n*(n+1)*(2*n+1)*(3*n**4+6*n**3-3*n+1)
+tail_p_sq=(pi_hi/4)**6*s6/(7*pi_lo*cut**7*(1-(omega/cut)**2)**2)
+tail_p=F('7.3e-8')
+assert tail_p_sq<tail_p**2
+tail_u=F(10,9)*(F('1e-23')+F('1e-60'))
+assert tail_u<F('1.12e-23')
+raw_hat=(1/(rho-cut)+1/(rho+cut))/c0
+lo_sine=F('5.06e-6')
+assert raw_hat**2*cut/pi_lo<lo_sine**2
+pr=F('7.5')*lo_sine+300*tail_p+F('7.5')*norm_d
+ur=F('1.344')*lo_sine+300*tail_u+F('1.344')*norm_d
+j=ur+F(3,8)*pr+F('741e-265')
+assert pr<F('0.000060')
+assert ur<F('0.00000683')
+assert j<F('0.0000294')
+print('PASS sixth moment and tightened k input columns')
+from fractions import Fraction as F
+
+p_factor=F('7.5')
+u_factor=F('1.344')
+d=F('1.6e-8')
+wn=F('.7648')
+p_j_z=F('.0090741')
+u_z=F('.00165')
+kappa=F('.36536')
+absolute_weights=211+F('2.554199113')
+low_ww=absolute_weights*F('.000969')
+assert low_ww<F('.207')
+dn=F('60.3073')*wn
+assert dn<F('46.13')
+tp=F('4.73e-6')
+tu=F('1.12e-23')
+p_w2=low_ww+tp*dn
+u_w2=low_ww+tu*dn
+p_raw=(p_factor*low_ww+300*tp*dn+F('.1875')*p_w2+F('.0336')*u_w2
+       +(F('.000004')+F('.000674'))*dn)
+u_raw=(u_factor*low_ww+300*tu*dn+F('.0336')*p_w2+F('.006013')*u_w2
+       +(F('.000004')+F('.000395'))*dn)
+assert p_raw<F('1.696')
+assert u_raw<F('.305')
+g_w=F('.0735')
+assert F('7.62')**2>p_factor**2+u_factor**2
+old_w=F('7.62')*F('.001374')+300*F('1.875e-9')
+assert F('1.462')**2>1+F('1.066')**2
+f0_coeff=211*F('1.066')+F('1.462')*F('57.7531')
+assert f0_coeff<311
+f0_low=f0_coeff*F('5.06e-6')
+p_m=p_factor*(f0_low+F('.05951'))+300*F('7.3e-8')*F('1.509')
+u_m=u_factor*(f0_low+F('.05951'))+300*tu*F('1.509')
+assert p_m<F('.46')
+assert u_m<F('.083')
+t=F('.10245')
+eta=F('.01')
+d5_e=F('.055511')/(1-d)
+d5_v=F('.055511')*F('1.066')
+p_e=(F('.11')+eta*p_m)/t+p_factor*d5_e
+u_e=(F('.03')+eta*u_m)/t+u_factor*d5_e
+p_v=p_m+p_factor*d5_v
+u_v=u_m+u_factor*d5_v
+p_plane=F('1.79')
+u_plane=F('.412')
+assert p_e**2+p_v**2<p_plane**2
+assert u_e**2+u_v**2<u_plane**2
+gamma_g0=F('.000174')
+g_diff=kappa*F('.006081')*F('276.125')
+p_bound=(p_raw+p_factor*(g_w+old_w)+p_plane*wn
+         +kappa*(p_j_z+p_factor*gamma_g0)+p_factor*g_diff)
+u_bound=(u_raw+u_factor*(g_w+old_w)+u_plane*wn
+         +kappa*(u_z+u_factor*gamma_g0)+u_factor*g_diff)
+j_bound=u_bound+F(3,8)*p_bound+F('741e-265')*F('42.29')
+assert p_bound<F('8.4')
+assert u_bound<F('1.6')
+assert j_bound<F('4.75')
+p_k=F('.10901')*F('.000060')
+j_k=F('.10901')*F('.0000294')
+mixed=10*p_k*p_bound+F(25,2)*j_k*j_bound
+assert mixed<F('.00073')
+assert F('.00073')<F('.001173')
+print('PASS original b P/U/J rows and mixed bound excludes the strict .00429 sufficient test')
+from fractions import Fraction as F
+
+coeff = F('.10901')
+d = F('1.6e-8')
+old_action = coeff*(F('7.5')*10*F('.000060')
+                  +F('3.705')*F(25,2)*F('.0000294')
+                  +301*4*F('3.2e-8')+F(303,12)*F('5.2e-6'))+F('1e-515')*F('.103')
+g_error_in_H = old_action+coeff*F('.000247')+300*F('.282')*d
+removed_head = F('8.13e-7')+F('1.221e-11')+26*d*F('.1886')
+g_error = F('.000686')
+assert g_error_in_H**2+removed_head**2 < g_error**2
+g_lower = F('.1875')-g_error
+g_upper = F('.1886')+g_error
+assert F('.1868') < g_lower and g_upper < F('.1893')
+kappa_lower = (1/F('.10247')-F('.123'))*g_lower**2
+kappa_upper = (1/F('.10245')-F('.1229'))*g_upper**2
+assert F('.3362') < kappa_lower and kappa_upper < F('.3454')
+dot_lower = F('.0164475')-F('.6688')*g_error
+assert dot_lower > F('.01598')
+parallel_lower = 2*kappa_lower*dot_lower+(kappa_lower*g_lower)**2
+assert parallel_lower > F('.01467')
+# Use the independently established upper bounds for the other terms.
+direct_low_neg = (10*F('.0090741')**2+F(25,2)*F('.0050442')**2)/(4*kappa_lower)
+assert direct_low_neg < F('.00085')
+mixed_cap = F('.00073')
+low_cost = (F('.001196')+F('.00000442')+F('.000034')
+            +F('42.29')*F('.103')*F('1e-515')+direct_low_neg+mixed_cap)
+gamma_cost = F('.685')*F('.000174')
+collar_cost = F('.685')*F('.1947')*F('.000024')
+high_cost = F('1.11e-7')
+l0_cost = F('.685')*F('.1947')*F('1e-515')
+neighbor_credit = F('.0000068')
+w_cost = low_cost+gamma_cost+collar_cost+high_cost+l0_cost-neighbor_credit
+assert w_cost < F('.00294')
+increment = parallel_lower-2*w_cost
+assert increment > F('.00879') > F('.00429')
+assert F('.672')**2-F('.00879') < F('.66543')**2
+print("PASS new collar transfer and strict lower obstruction to the fixed residual test")
+~~~
