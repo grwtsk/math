@@ -4545,3 +4545,300 @@ assert "r,k=40,16" in source and 'price,mu=F(".9"),F("1e-15")' in source
 exec(compile(source,jensen,"exec"),
      {"__name__":"__main__","__file__":__file__,"e16_directed":directed})
 ~~~
+
+## A width-four donor obstruction at E17
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 70-enclosure comparison](https://github.com/grwtsk/math/blob/bf73c2207c50f65a93a92e49a05ae2c4a1d5291d/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md)
+through detuning $786.68$, Jensen blob
+709a4faf8c17253cf9fe4217824fcc1e6104739e. Its original
+radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f.
+Retain the original complex odd carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$, zero extension,
+folded measure $d\nu/\pi$, original masks and physical
+projection. The primitive nonprincipal odd character
+modulo three uses the full parity-one gamma, all $458$
+signed prime powers and zero principal-pole term.
+All displayed intervals use detunings from $c_1=99653682.92983$,
+with their reflected restrictions included.
+
+The next enclosure is $E_{17}=[786.68,787.06]$. The
+directed guard proves strict positivity on $[786.68,796.12]$
+off $E_{17}$, including positivity at the enclosure endpoints
+and at $796.12$. Both $786.70$ and $786.86$ are strictly
+negative. There are $453$ complement checks and no bisections.
+The preceding signed comparison covers through $786.68$ and
+reserves the positive donor $Y_{16}=[783.84,785.84]$.
+Its multiplier is strictly positive near its right endpoint.
+
+### The physical obstruction for the width-four family
+
+Consider donors $Y=[a,a+4]$ carrying all actual negative
+mass in $E_{17}$, with the positive reservation disjoint
+from the existing $Y_{16}$ up to sets of zero
+$m_+\,d\nu$ measure. The strictly negative witness at
+$786.70$ gives $a\le786.70$ by continuity. A start below
+$785.84$ would overlap the positive region of $Y_{16}$
+next to its right endpoint, since the donor reaches the
+negative mass around $786.70$. It follows that
+$$
+ a\in[785.84,786.70],\qquad
+ Y\subset U=[785.84,790.70].
+$$
+The guards on the preceding and new sign regions show
+that the only negative restriction on $U$ is $N_{E_{17}}$.
+Hence $N_Y^*N_Y=N_{E_{17}}^*N_{E_{17}}$, and
+$\alpha\mathcal P_Y\preceq\mathcal P_U$ for every
+$0\le\alpha\le1$.
+
+On the original physical carrier the guard verifies a
+nonzero trial $f$ with rational coefficients for $U$, with
+$$
+ \big\langle f,\big(1.7\cdot10^{-8}I+
+             \mathcal P_U-N_{E_{17}}^*N_{E_{17}}\big) f\big\rangle
+ <-4.775\cdot10^{-10}\|f\|^2 .
+$$
+For the entire stated width-four family and every
+$0\le\alpha\le1$, a positive comparison therefore requires
+$\tau>1.74775\cdot10^{-8}$. The $48$ earlier base price sums
+give maximum scalar room strictly less than $1.7\cdot10^{-8}$
+before subtracting any later nonnegative charges. Thus all
+four retained prices for the first deep pair, together with
+their earlier choices, remain below the required room.
+
+The particular donor $Y_*=[785.86,789.86]$ separately admits
+a stronger exact physical witness. At $\alpha=1$ and the
+same $\tau=1.7\cdot10^{-8}$ its normalized decrease exceeds
+$5.729\cdot10^{-8}$, so this particular donor and any
+$0\le\alpha\le1$ require $\tau>7.429\cdot10^{-8}$.
+
+### The degree-twelve obstruction on the fixed donor
+
+On $Y_*$ the guard supplies an exact degree-$12$ real
+polynomial $p$ with
+$$
+ \int_{Y_*} (m_+-m_-)|p|^2\,d\nu/\pi
+ <-0.11062\int_{Y_*}|p|^2\,d\nu .
+$$
+The angular variable of this polynomial is displacement
+from the midpoint $c_1+787.86$. Its $16$th derivative
+vanishes. Thus the local polynomial premise with only
+a $16$th-derivative penalty fails on this donor for every
+$0\le\alpha_0\le1$, even with the true signed density.
+The degree-$12$ trial tests that polynomial premise. The
+physical necessity above uses separate physical trials.
+
+### Exact verification of the three trials
+
+Use the original directed $.0025$ source cells and Binet
+bracket $17.6779<A_1<17.6780$. In each cell take the
+directed upper value $v=A_{\rm hi}-P_{4,\rm lo}$. For
+$v\ge0$ use $v/\pi_{\rm lo}$ and for $v<0$ use
+$w_{\min}v/\pi_{\rm hi}$, rounded upward. Because
+$w_{\min}\le w\le1$, this bounds the true signed folded
+density $(m_+-m_-)/\pi$ from above. The guard binds all
+signed prime powers, exact masks and source gamma bounds
+through the directed source code.
+
+The polynomial guard integrates its exact stated rational
+coefficients against the directed signed upper step.
+For the physical trials, put $x=t/4$ and take $x^j\sin(ct)$
+in even degree and $x^j\cos(ct)$ in odd degree. The fixed
+donor midpoint is $c=c_1+787.86$ and the envelope midpoint
+is $c=c_1+788.27$. The integer coefficient arrays and their
+denominators are in the guard. It verifies their true
+endpoint-moment Gram enclosures and the signed forms
+directly.
+
+For a donor of width $h$ and $k$ Taylor terms, the sine
+kernel remainder has folded Hilbert–Schmidt bound
+$(2h)^k\sqrt{8h/\pi}/(k!(2k+1))$. The exact width and
+degree checks bound this by $\epsilon=(2h)^k/(25k!)$.
+The exact restriction is contractive and the upper step
+has folded multiplier absolute bound $55$. The operator
+error is therefore at most $55\epsilon(2+\epsilon)I$.
+The guards use $44$ terms for the fixed donor and $48$ for
+the envelope and include that error. Each physical trial
+has strictly positive squared norm and strictly negative
+upper form with the stated normalized margin. The strict
+witness inequality remains valid on smooth compactly
+supported odd tests by density and boundedness.
+
+This holds for the stated disjoint width-four family and
+the retained prices. The E17 negative enclosure remains
+unpaid. Contiguous signed coverage of the paid comparison
+ends at $786.68$. With the actual paid stack $W_{
+m all70}$, the original
+comparison still requires
+$|N_{
+m out} S_{
+m all70}^{-1}N_{
+m out}^*|le1$, where
+$S_{
+m all70}=S_lambda-W_{
+m all70}^*W_{
+m all70}$.
+This is the norm on the actual unpaid negative support.
+The seven leading inverses and the directional return to
+DirichletStageChain.PrimitiveStageLower at index $3$ retain
+the original projection, masks and admissible test class.
+
+Extract the guard and pass the pinned arithmetic Markdown,
+the Jensen donor Markdown with its E16 checker, and a mode
+`sign`, `polynomial`, `fixed` or `envelope`.
+The exact coefficient arrays are used as given, with no
+numerical proposal step in this checker.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen,mode=sys.argv
+assert mode in ("sign","polynomial","fixed","envelope")
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+hashes=[sha256(block.encode()).hexdigest() for block in blocks]
+density_digest="a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654"
+prior_digest="8318ff01cda70c82cf38af6ed3aa38f689a41f77153d903cb6e73064fb2571c1"
+assert hashes.count(density_digest)==hashes.count(prior_digest)==1
+code=blocks[hashes.index(density_digest)]
+accounting_start='beta=F(".124997987")-F(".0001071")'
+accounting_stop='old_room=F(".000001")*beta-max(branches)'
+assert code.count(accounting_start)==code.count(accounting_stop)==1
+budgets={"F":F,"factorial":factorial}
+exec(compile(code[code.index(accounting_start):code.index(accounting_stop)],jensen,"exec"),budgets)
+assert len(budgets["branches"])==48
+room=F(".000001")*budgets["beta"]-min(budgets["branches"])
+assert room<F("1.7e-8")
+print("PASS exact upper room before nonnegative later charges",float(room))
+
+donor=("785.84","790.70","788.27") if mode=="envelope" else ("785.86","789.86","787.86")
+left,right,midpoint=donor
+for old,new in (
+    ('"e9":("707.62","709.62","708.60","708.66","708.63",".25")',
+     f'"e17":("{left}","{right}","786.68","787.06","{midpoint}","1")'),
+    ('("708.60","710.86",".02")','("786.68","796.12",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(453,0)'),
+    ('assert all(node(F(row[4]))[0]>Ahi for row in rows.values())',
+     'assert all(node(F(x))[0]>Ahi for x in ("786.70","786.86"))'),
+):
+    assert code.count(old)==1
+    code=code.replace(old,new)
+
+cut="# Exact positive donor weights and short negative moment input."
+assert code.count(cut)==1
+data={"__name__":"__main__"}
+sys.argv=[__file__,arithmetic,"sign" if mode=="sign" else "e17"]
+exec(compile(code.split(cut)[0],jensen,"exec"),data)
+assert mode!="sign"
+start,stop=data["start"],data["stop"]
+c=data["c0"]+F(midpoint)
+mid=F(midpoint)
+step=data["step"]
+pi_lo,pi_hi=data["pi_lower"],data["pi_upper"]
+assert start==F(left) and stop==F(right) and 2*mid==start+stop
+assert start<=F("786.68")<F("787.06")<=stop
+assert step==F(".0025")
+wmin=1-F("3e-10")
+scale=10**10 if mode=="polynomial" else 10**7
+rho=[]
+for j in range(data["count"]):
+    x=start+j*step
+    lo,_=data["estimate"](x,step)
+    value=data["Ahi"]-lo
+    raw=value/pi_lo if value>=0 else wmin*value/pi_hi
+    upper=F(-((-raw*scale)//1),scale)
+    assert upper>=raw and pi_hi*abs(upper)<55
+    if upper:
+        rho.append((x-mid,x+step-mid,upper))
+
+def signed_moment(i):
+    return sum(w*(b**(i+1)-a**(i+1))/(i+1) for a,b,w in rho)
+
+if mode=="polynomial":
+    integers=(
+        124074277,1883269828,-2249964034,-10616934944,12083017208,11636957350,
+        -13693797045,-5173603508,6307985276,1031574190,-1301317219,-76700626,100000000,
+    )
+    p=[F(v,10**8) for v in integers]
+    assert len(p)==13 and p[-1]==1
+    moments=[signed_moment(i) for i in range(2*len(p)-1)]
+    upper=sum(p[i]*p[j]*moments[i+j] for i in range(len(p)) for j in range(len(p)))
+    norm=sum(p[i]*p[j]*((stop-mid)**(i+j+1)-(start-mid)**(i+j+1))/(i+j+1)
+             for i in range(len(p)) for j in range(len(p)))
+    assert norm>0 and upper<-F(".11062")*norm
+    print("PASS actual signed degree-12 polynomial trial",float(-upper/norm))
+    raise SystemExit
+
+if mode=="fixed":
+    integers=(
+        4445484779299,-62223301138121,-283667532650477,1457011373040590,2732527652792670,
+        -9243155311147449,-8874992761009911,23407503809708624,11461529826047823,
+        -25523071704104401,-5082483331664997,10000000000000000,
+    )
+    denominator,degree,margin=10**16,44,F("5.729e-8")
+    norm_lo,norm_hi=F("3.4114e-6"),F("3.4115e-6")
+else:
+    integers=(
+        -40399931603714,436660462298528,5131554550683929,-14988216212500714,
+        -101143581383563014,141766984294551311,720350988527216629,-559304883230416010,
+        -2376526979796916951,1050694505826075931,3940984233154183203,-932296904195066143,
+        -3187965254721725648,314131826258649963,1000000000000000000,
+    )
+    denominator,degree,margin=10**18,48,F("4.775e-10")
+    norm_lo,norm_hi=F("4.9521e-8"),F("4.9523e-8")
+v=[F(n,denominator) for n in integers]
+assert v[-1]==1 and c==data["c0"]+(start+stop)/2
+n=len(v)
+add,scale_interval,multiply=data["add"],data["scale"],data["multiply"]
+z=8*c
+co,si=data["phase_trig"]((z,z))
+rec=[scale_interval(2/z,si)]
+for j in range(1,degree+n-1):
+    rec.append(add(scale_interval(2/z,si),scale_interval(-j/z,rec[-1])) if j%2==0 else
+               add(scale_interval(-2/z,co),scale_interval(j/z,rec[-1])))
+
+def inner_product(i,j):
+    q=i+j
+    base=F(4,q+1) if q%2==0 else F(0)
+    signed=-2 if i%2==0 and j%2==0 else 2
+    return add((base,base),scale_interval(signed,rec[q]))
+
+def sum_intervals(items):
+    result=(F(0),F(0))
+    for item in items:
+        result=add(result,item)
+    return result
+
+coordinates=[sum_intervals(scale_interval(v[j],inner_product(i,j)) for j in range(n))
+             for i in range(degree)]
+norm2=sum_intervals(scale_interval(v[j],coordinates[j]) for j in range(n))
+assert norm_lo<norm2[0]<=norm2[1]<norm_hi
+moments=[signed_moment(i) for i in range(2*degree-1)]
+coefficient=[(-1)**(i//2)*F(4**i,factorial(i)) for i in range(degree)]
+width=stop-start
+assert 8*width/pi_lo<F(2*degree+1,25)**2
+epsilon=(2*width)**degree/factorial(degree)/25
+delta=55*epsilon*(2+epsilon)
+tau=F("1.7e-8")
+upper=scale_interval(tau+delta,norm2)
+for i in range(degree):
+    for j in range(degree):
+        mij=coefficient[i]*coefficient[j]*moments[i+j]
+        upper=add(upper,scale_interval(mij,multiply(coordinates[i],coordinates[j])))
+assert upper[1]<-margin*norm2[1]
+print("PASS exact physical trial",mode,"norm²",float(norm2[0]),float(norm2[1]),
+      "normalized decrease",float(-upper[1]/norm2[1]),
+      "required scalar larger than",float(tau+margin))
+~~~
