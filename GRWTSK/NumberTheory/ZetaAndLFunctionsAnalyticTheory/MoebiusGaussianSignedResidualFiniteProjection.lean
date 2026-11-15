@@ -75,7 +75,8 @@ private theorem continuous_oscillation (ω T : ℝ) : Continuous (oscillation ω
   unfold oscillation
   fun_prop
 
-private theorem star_oscillation (ω T v : ℝ) :
+/-- Conjugation reverses the angular frequency. -/
+theorem star_oscillation (ω T v : ℝ) :
     (starRingEnd ℂ) (oscillation ω T v) = oscillation (-ω) T v := by
   rw [oscillation, ← Complex.exp_conj, map_mul, Complex.conj_ofReal, Complex.conj_I, oscillation]
   push_cast
@@ -295,5 +296,58 @@ theorem liminf_normalizedEnergy_of_localizedPairings {ι : Type*}
   change (Q : EReal) ≤ _
   rw [← hc.liminf_eq]
   exact liminf_le_liminf hle
+
+private theorem pairing_conjugate_frequency (s : ℝ) (n : ℕ) (ω : ℝ) (c : ℂ)
+    (T v : ℝ) :
+    ((rescaledWave s n T v : ℂ) *
+      (starRingEnd ℂ) (probeAtom n (-ω) ((starRingEnd ℂ) c) T v)).re =
+      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n ω c T v)).re := by
+  have hprobe :
+      (starRingEnd ℂ) (probeAtom n ω c T v) =
+        probeAtom n (-ω) ((starRingEnd ℂ) c) T v := by
+    simp only [probeAtom, map_mul, map_pow, Complex.conj_ofReal, star_oscillation]
+  rw [← hprobe, Complex.conj_conj]
+  simpa only [map_mul, Complex.conj_ofReal] using
+    (Complex.conj_re ((rescaledWave s n T v : ℂ) * probeAtom n ω c T v)).symm
+
+/-- A finite family of distinct positive frequencies contributes both signs
+to the energy coefficient. The real wave supplies the negative-frequency
+pairings by conjugation. -/
+theorem liminf_normalizedEnergy_of_positivePairings {ι : Type*}
+    (s : ℝ) (n : ℕ) (J : Finset ι) (ω : ι → ℝ) (c : ι → ℂ)
+    (hpos : ∀ j ∈ J, 0 < ω j)
+    (hω : Set.InjOn ω (↑J : Set ι))
+    (hPairing : ∀ j ∈ J, Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n (ω j) (c j) T v)).re)
+      atTop (𝓝 (‖c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ))))) :
+    ((2 * ∑ j ∈ J, ‖c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)) : ℝ) : EReal) ≤
+      liminf (fun T : ℝ => ((residualEnergy s T / T ^ (2 * n + 1) : ℝ) : EReal)) atTop := by
+  classical
+  let K : Finset (Bool × ι) := Finset.univ ×ˢ J
+  let ω' (j : Bool × ι) := if j.1 then -ω j.2 else ω j.2
+  let c' (j : Bool × ι) := if j.1 then (starRingEnd ℂ) (c j.2) else c j.2
+  have hω' : Set.InjOn ω' (↑K : Set (Bool × ι)) := by
+    rintro ⟨a, i⟩ hi ⟨b, j⟩ hj heq
+    have hi' : i ∈ J := (Finset.mem_product.mp hi).2
+    have hj' : j ∈ J := (Finset.mem_product.mp hj).2
+    cases a <;> cases b
+    · exact Prod.ext rfl (hω hi' hj' (by simpa only [ω', Bool.false_eq_true, ite_false] using heq))
+    · have h : ω i = -ω j := by simpa only [ω', Bool.false_eq_true, ite_false, ite_true] using heq
+      linarith [hpos i hi', hpos j hj']
+    · have h : -ω i = ω j := by simpa only [ω', Bool.false_eq_true, ite_false, ite_true] using heq
+      linarith [hpos i hi', hpos j hj']
+    · exact Prod.ext rfl (hω hi' hj' (neg_injective (by simpa only [ω', ite_true] using heq)))
+  have hp : ∀ j ∈ K, Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n (ω' j) (c' j) T v)).re)
+      atTop (𝓝 (‖c' j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)))) := by
+    rintro ⟨b, j⟩ hj
+    have hj' : j ∈ J := (Finset.mem_product.mp hj).2
+    cases b
+    · exact hPairing j hj'
+    · simp only [ω', c', ite_true, Complex.norm_conj]
+      simp_rw [pairing_conjugate_frequency]
+      exact hPairing j hj'
+  have h := liminf_normalizedEnergy_of_localizedPairings s n K ω' c' hω' hp
+  simpa [K, Finset.sum_product, Fintype.sum_bool, c', Complex.norm_conj, two_mul] using h
 
 end GRWTSK.NumberTheory.Moebius.GaussianSignedResidualFiniteProjection
