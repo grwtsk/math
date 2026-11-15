@@ -2581,3 +2581,214 @@ print('PASS adjacent ray and original negative collar')
 The original negative frequency compression remains on its stated
 domain. The full sign on the physical $G_2$, the original radius-four
 stage and the RH and primitive Dirichlet GRH returns remain open.
+
+## Uniform direct bounds on wider negative collars
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact directed arithmetic. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the original center $x_*=3806849122861433/10^6$.
+For $r>0$ let $J_r=[x_*-r,x_*+r]\cup[-x_*-r,-x_*+r]$ and
+let $R_r=K^*(1_{J_r}m)K$, where $K$ is the actual odd physical
+Fourier restriction and $m=1_{\mathcal D}w(A-P_4)$. Use the original
+angular measure $d\xi/(2\pi)$. For every nonzero odd physical
+$f\in L^2([-4,4],dt;\mathbb C)$, zero extended,
+$$
+ \langle f,R_{1/165}f\rangle>-0.121 E(f),\qquad
+ \langle f,R_{1/160}f\rangle>-0.12451 E(f).
+$$
+The multiplier lies in $(-7.89,-7.76)$ on $J_{1/165}$ and
+in $(-7.90,-7.76)$ on $J_{1/160}$. In particular the direct
+collar and scalar budget together obey
+$$
+ \langle f,(B I+R_{1/160})f\rangle>0.000487987 E(f),
+ \qquad B=124997987/10^9 .
+$$
+The inequality uses the same scalar $B$ as the original
+bounded form. The physical Schur corrections still use the
+full original $R$, with each original inverse on its own domain.
+
+### The actual signed prime derivatives
+
+For every active $n=p^e\le2980$ write
+$a_n=2\log(p)\chi_3(n)/\sqrt n$ and $s_n=\log n$.
+Differentiating the finite original sum at the rational
+center gives the three multipliers for $a_n$
+$$
+ \cos(x_*s_n),\qquad -s_n\sin(x_*s_n),\qquad
+ -s_n^2\cos(x_*s_n).
+$$
+Use the same range-reduced log bounds, integer square roots,
+and Machin bounds as above. Enclose $x_*s_n/\pi$ with both
+endpoints divided in the outward direction. Subtract a common
+even integer and use the lower residue with $\pi_{\rm lower}$.
+Sine and cosine are one-Lipschitz. The argument uncertainty
+is bounded by $\pi_{\rm upper}$ times the original dimensionless
+interval width plus $\pi_{\rm upper}-\pi_{\rm lower}$.
+The Taylor remainders through degrees 25 and 24 respectively
+are $(22/7)^{27}/27!$ and $(22/7)^{26}/26!$.
+Include all signs and round each term outwards before summing.
+The resulting intervals, expressed in units of $10^{-10}$, are
+$$
+\begin{aligned}
+P_4(x_*)&\in[291481183577,291481184040]/10^{10},\\
+P_4'(x_*)&\in[-67794695180,-67794694685]/10^{10},\\
+P_4''(x_*)&\in[-8062789830970,-8062789830317]/10^{10}.
+\end{aligned}
+$$
+The direct positive sum of the upper bounds for
+$|a_n|s_n^3$ is less than $59746$. This is a global absolute
+bound on $P_4'''$. Taylor's theorem therefore applies at
+every point of the collar with a remainder bounded by
+$59746|h|^3/6$, where $h=\xi-x_*$ on its positive component.
+
+### Full collar sign and integrated physical price
+
+The wider $J_{1/160}$ lies in $\mathcal D$, with
+$3.5\cdot10^9<|\xi|<4\cdot10^9$. The original high and
+all-lobe low filter laws give $1-3\cdot10^{-10}\le w\le1$.
+The Binet logarithmic input $3|\xi|/(2\pi)$ lies between the
+integers $1817636566$ and $1817636567$. With $y_0=1.75\cdot10^9$,
+the original Binet error $5/(9y_0)+9/(32y_0^2)$ proves
+$21.3208028<A<21.3208031$ throughout that collar.
+
+For the pointwise statement use the signed center bounds
+and the whole absolute variation
+$7r+405r^2+59746r^3/6$. Evenness covers the negative component.
+Both resulting upper bounds for $A-P_4$ are negative, so
+multiplying the lower bound by $1$ and the upper bound by
+$1-3\cdot10^{-10}$ yields the stated intervals for $m$.
+For a nonzero odd physical $f$ the evaluation estimate
+$$
+ |\widehat f(\xi)|^2\le\left(4-\frac{\sin(8\xi)}{2\xi}\right)E(f)
+ \le \left(4+\frac1{7\cdot10^9}\right)E(f)
+$$
+holds on both components. It follows by representing the
+Fourier evaluation by the sine kernel on the odd subspace
+and applying Cauchy–Schwarz with its exact squared norm.
+The pointwise bound alone yields the direct debit below
+$0.122E$ at radius $1/165$.
+
+For the sharper integrated comparison, use $w\le1$ and
+$P_4-A>0$ to bound the integral of $-m$ by that of $P_4-A$.
+The evenness of the multiplier bounds repeats the positive
+side on the negative side. On the positive interval integrate
+the directed Taylor upper bound. The linear term in $h$
+integrates to zero. The mean curvature term is
+$P_4''(x_*)r^2/6$, and the mean absolute remainder is at most
+$59746r^3/24$. Thus, writing $P^+$ and $P_2^+$ for the
+certified upper endpoints of $P_4(x_*)$ and $P_4''(x_*)$,
+the full direct debit is bounded above by
+$$
+ \frac{2r}{\pi}\left(4+\frac1{7\cdot10^9}\right)
+ \left(P^+-21.3208028+P_2^+\frac{r^2}6+
+                         59746\frac{r^3}{24}\right)E(f).
+$$
+The rational bounds below give the two displayed prices.
+This comparison isolates the original bounded multiplier
+on its exact support. The earlier negative compression
+of $M$ retains its original frequency domain, and the
+remaining full coupled physical sign is still open.
+
+### Directed guards for the wider collars
+
+Use the historical checker prefix before its
+`alpha_lower, alpha_upper` assignment, omitting its old
+`j` assignment. Append the following guards.
+
+```python
+
+def interval_sum(x, y):
+    return x[0]+y[0], x[1]+y[1]
+
+def interval_scale(factor, x):
+    if factor < 0:
+        return factor*x[1], factor*x[0]
+    return factor*x[0], factor*x[1]
+
+def interval_product(x, y):
+    products = [a*b for a in x for b in y]
+    return min(products), max(products)
+
+def point_trig(center, lag):
+    phase_lower = center*lag[0]/pi_upper
+    phase_upper = center*lag[1]/pi_lower
+    period = (phase_lower+1)//2
+    residue = phase_lower-2*period
+    assert -1 <= residue < 1
+    angle = pi_lower*residue
+    uncertainty = pi_upper*(phase_upper-phase_lower)+pi_upper-pi_lower
+    cosine = sum((-1)**l*angle**(2*l)/factorial(2*l) for l in range(13))
+    sine = sum((-1)**l*angle**(2*l+1)/factorial(2*l+1) for l in range(13))
+    cos_error = uncertainty+F(22, 7)**26/factorial(26)
+    sin_error = uncertainty+F(22, 7)**27/factorial(27)
+    return ((max(-1, cosine-cos_error), min(1, cosine+cos_error)),
+            (max(-1, sine-sin_error), min(1, sine+sin_error)))
+
+center = F(3806849122861433, 10**6)
+point = [(F(0), F(0)) for _ in range(3)]
+third_absolute = F(0)
+count = 0
+for p in range(2, 2981):
+    if p == 3 or any(p % d == 0 for d in range(2, isqrt(p)+1)):
+        continue
+    log_p_lower, log_p_upper = log_bounds(p)
+    n = p
+    while n <= 2980:
+        lag = log_bounds(n)
+        assert 0 < lag[0] <= lag[1] < 8
+        root_floor = isqrt(n*source_grid**2)
+        magnitude = (2*log_p_lower*source_grid/(root_floor+1),
+                     2*log_p_upper*source_grid/root_floor)
+        signed = interval_scale(1 if n % 3 == 1 else -1, magnitude)
+        cosine, sine = point_trig(center, lag)
+        factors = (
+            cosine,
+            interval_scale(-1, interval_product(sine, lag)),
+            interval_scale(-1, interval_product(cosine, (lag[0]**2, lag[1]**2))),
+        )
+        for index, factor in enumerate(factors):
+            product = interval_product(signed, factor)
+            point[index] = interval_sum(point[index], round_out(*product, atom_grid))
+        third_absolute += magnitude[1]*lag[1]**3
+        n *= p
+        count += 1
+assert count == 458
+assert [tuple(bound*atom_grid for bound in interval) for interval in point] == [
+    (291481183577, 291481184040),
+    (-67794695180, -67794694685),
+    (-8062789830970, -8062789830317),
+]
+assert third_absolute < 59746 < 211*8**3
+value, first, second = point
+assert -7 < first[0] <= first[1] < 0
+assert -810 < second[0] <= second[1] < -806
+
+outer_radius = F(1, 160)
+assert 35*10**8 < center-outer_radius < center+outer_radius < 4*10**9
+log_argument_lower = 3*(center-outer_radius)/(2*pi_upper)
+log_argument_upper = 3*(center+outer_radius)/(2*pi_lower)
+assert 1817636566 < log_argument_lower < log_argument_upper < 1817636567
+y_min = F(7, 4)*10**9
+binet = F(5, 9)/y_min+F(9, 32)/y_min**2
+gamma_lower, gamma_upper = F(213208028, 10**7), F(213208031, 10**7)
+assert log_bounds(1817636566)[0]-binet > gamma_lower
+assert log_bounds(1817636567)[1]+binet < gamma_upper
+evaluation_price = (4+F(1, 7*10**9))/pi_lower
+eta = F(3, 10**10)
+budget = F(124997987, 10**9)
+
+for radius, point_bound, integrated_bound in [
+    (F(1, 165), F(789, 100), F(121, 1000)),
+    (outer_radius, F(790, 100), F(12451, 10**5)),
+]:
+    variation = 7*radius+405*radius**2+59746*radius**3/6
+    assert value[1]+variation-gamma_lower < point_bound
+    assert (1-eta)*(gamma_upper-value[0]+variation) < -F(776, 100)
+    average = value[1]-gamma_lower+second[1]*radius**2/6+59746*radius**3/24
+    assert 2*radius*evaluation_price*average < integrated_bound < budget
+    if radius == F(1, 165):
+        assert 2*radius*evaluation_price*point_bound < F(122, 1000)
+print('PASS signed prime derivatives and both physical collar debits')
+```
