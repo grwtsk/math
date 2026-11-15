@@ -707,3 +707,124 @@ orientations), original test-domain coverage and
 \`PrimitiveNegativeWitness\` also remain open. Unconditional RH
 for analytically continued zeta and primitive Dirichlet GRH
 including conductor one are **UNPROVED**.
+
+## 11. Sound sine-envelope certificate for the original radius-one stage
+
+**2026-11-14, grwtsk contributors, AI-assisted.** Written, computer-assisted
+argument for the complete fixed-point envelope requested in
+[hs#2, C0010/T2](https://github.com/grwtsk/hs/issues/2#issuecomment-6887126570).
+The exact integer/Fraction checker is the sole Python block in
+[comment 6886476754](https://github.com/grwtsk/hs/issues/2#issuecomment-6886476754),
+SHA-256 2d32581d89dc0a22955a62634bde653a1de4cdf0a8faf26298d94d3d88e47ff2
+including its final newline. The proof here audits its true-function
+enclosures and sharpens the final rational comparison. Lean elaboration,
+kernel replay and transitive axiom audit are NOT_RUN. Independent review
+is UNASSESSED.
+
+Fix a primitive nonprincipal parity-one character χ modulo 3 and every
+original real f satisfying DirichletStageChain.Admissible χ 1 f. Thus
+f is C² and odd with support in [−1,1], its complex lift g is in the
+physical L² space, and the full original gamma density is integrable.
+Write E=energy(g), Q=primitiveArithmeticValue χ hp hn 1 g and h=f|[0,1].
+The bound proved here is Q≥−(219/250)E, strict for E>0.
+
+By the exact §7 arithmetic representation, with positive angular
+frequency t, H(t)=∫₀¹h(u)sin(tu)du and m(t)=S(t), we have
+Q+E=(4/π)∫₀∞m(t)|H(t)|²dt and E=2‖h‖²=(4/π)∫₀∞|H(t)|²dt.
+All native weights n=2,3,4,5,6,7, parity, conductor and the whole
+gamma term remain in m. In particular its signed cosine coefficients
+are −2w_n, with w₃=w₆=0 and w₄=log(2)/2. The Fourier reduction uses
+Plancherel on each translation and Tonelli on the nonnegative original
+gamma density, as in §7. It assumes no zero-side or auxiliary sign.
+
+Let d(t)=(1−m(t))₊ and s_t(u)=sin(tu). The tail enclosure below puts d
+in [0,256]. The positive operator B=(2/π)∫ d(t)|s_t⟩⟨s_t|dt acts on
+all real L²(0,1). The integral exists in Hilbert–Schmidt norm since
+‖s_t‖²≤1 and d is continuous and integrable. By the rank-one inner
+product and Fubini,
+
+```text
+‖B‖HS² = π⁻² ∫_[0,256]² d(x)d(y)[sinc(x−y)−sinc(x+y)]² dxdy.
+```
+
+Here sinc(t)=∫₀¹cos(tu)du, including sinc(0)=1. The displayed factor
+comes from ⟨s_x,s_y⟩=[sinc(x−y)−sinc(x+y)]/2. Since m≥1−d,
+Q+E≥E−2⟨h,Bh⟩≥(1−‖B‖HS)E.
+
+**Constants and entire gamma tail.** Use M=10¹², N=128 cells per unit,
+and cell midpoints t_k=(2k+1)/(2N). Machin's identity with alternating
+arctangent remainders encloses π. The positive odd-power series for
+log(x)=2atanh((x−1)/(x+1)) at x>1 gives the checker interval with its
+geometric remainder. Integer square roots enclose the non-square
+denominators. The valid upper Euler constant bound follows from
+γ≤H_2048−log(2048), rounded up in its harmonic terms. These enclosures
+give 1+gammaConstant(3,1)>−133/1000 and absolute signed-weight and
+lag errors <100/M. The digamma quarter identity in §7 binds the
+constant to the native source.
+
+For a_j=3/2+2j, the gamma summand is 2t²/[a_j(a_j²+t²)]. It increases
+in t≥0 and decreases in a_j. The first 64 summands are floored
+down and the omitted sum is at least half the integral of the
+summand over a∈[a_64,∞). This is (1/2)log(1+t²/a_64²), or atanh(z)
+with z=t²/(2a_64²+t²). The first 12 positive atanh terms give a
+lower bound with each multiplication and division rounded down.
+At t=256, subtracting the upper absolute native prime contribution
+gives m(t)≥1214817257836/M>1 uniformly for t≥256 by monotonicity
+of the gamma series. For the compact interval the derivative of each
+gamma summand is bounded by 2/a_j², whose sum is at most
+8/9+2/3=14/9 by the integral test. This controls all increments by
+first summing the increment bounds on finite partial sums and taking
+their pointwise limit. Adding the four native cosine derivative bounds
+as in the checker gives |m(x)−m(y)|≤9|x−y|.
+
+**Fixed-point trigonometry.** Every argument supplied to the trig
+routine has absolute value ≤512 when divided by M. The checker
+subtracts j periods of rational length 2π_hi, where |j|≤82. The
+true phase changes by at most 164/M modulo 2π, because the π
+bracket has width 1/M. Centered integer division makes the reduced
+argument have absolute value <4. The first sine or cosine Taylor term
+is exact. In scaled units each signed floor introduces absolute
+error <1, also for a negative term. The recurrence amplification
+factor is ≤4/3 at update 2 and ≤8/15 thereafter. Thus the first
+update error is <1, the second <7/3, and all twelve updated term
+errors are <3 each by induction. The exact Taylor tail is bounded
+by the first omitted term since the following terms decrease, at
+most 4²⁶/26!<12/M for cosine and 4²⁷/27!<2/M for sine.
+Combining the recurrence, tail and period errors gives <212/M,
+hence the posted 500/M allowance holds.
+
+At t_k the lag uncertainty and argument floor cost at most 25601/M,
+so the error of each true cosine is at most 26101/M. Each stored
+signed coefficient before the factor 2 has modulus <1. Its weight
+error is <100/M, and the product floor costs <1/M. Therefore the sum
+of four weighted cosine errors is <4·52403/M<10⁻⁶. The checker
+subtracts 10⁻⁶, giving a midpoint lower bound. Subtracting another
+9/(2N) covers every point in the closed cell. Consequently the posted
+integer deficit price D_k satisfies d≤D_k/M on that entire cell;
+an omitted cell with nonpositive raw price has d=0 throughout.
+
+**Sinc pairs and the whole integral.** For integer j>0 the requested
+sine argument j/N is exact because N divides M. Dividing by j/N and
+flooring adds at most (500N/j+1)/M error, bounded by (500N+1)/M.
+At j=0 the value is exactly 1. Midpoint pairs use j=|k−l| and
+j=k+l+1, with the same formula for k=l. The integral formula for sinc
+gives Lipschitz constant 1/2. Each difference or sum of cell coordinates
+moves by at most 1/N, so a total 1/N variation covers the difference
+of the two sinc terms. The posted A_kl/M therefore bounds the absolute
+sinc difference on every product cell. Evenness and pair exchange
+cover both orientations. Squaring the price, multiplying by the
+two deficit prices and cell area N⁻², and using π≥π_lo gives the
+checker denominator M²N²·PI_LO². Its diagonal contribution is counted
+once and off-diagonal twice. Omitting zero-certified cells and the
+zero-deficit tail leaves exactly the full integral upper bound.
+
+On the posted rational numerator and denominator, the strict comparison
+62500·total<47961·denominator gives ‖B‖HS<219/250. This supplies
+the stated bound for the original Q, with equality at the zero test.
+The unrestricted multiplier is negative at frequency 13, as in §7,
+so this argument uses the entire compactly supported odd sine
+space and its cross-frequency inner products. It does not replace
+the original test class by arbitrary localized frequency vectors or
+a finite set of test profiles. The separate physical budget (12),
+radius four, all remaining windows and characters, and the completed
+pole-inclusive zeta/Dirichlet consequences retain their own obligations.
