@@ -256,3 +256,131 @@ n=2/5 negative versus n=4/7 positive terms; treating the shifted
 \(P_9\) tail as an independent parity-nine arithmetic form; missing
 conductor-one pole orientations; and replacing all-frequency,
 all-test, or global zero coverage with a finite computation.
+
+
+## Independent sharper rational margin (NON-CYCLE supplement)
+
+2026-11-14, grwtsk contributors, AI-assisted. This is a second written
+rational enclosure for the *same* original q=3 odd multiplier. It
+strengthens the preceding written inequality to
+
+\[
+\boxed{\forall x\in\mathbb R,\quad x\ge256
+\Longrightarrow M_\chi(x)>\frac{253}{250}=1+\frac3{250}.}
+\]
+
+The character is the original Dirichlet character modulo 3 with its actual
+gamma parity one and the **unchanged** six-entry native table. In particular
+the weight at \(n=4\) is \(\log2/2\) (not \(\log4/2\)); the phase
+remains \(x\log4\). All qualification and consumer boundaries at the top
+of this note are unchanged.
+
+### 1. Explicit source gamma constant bound
+
+For \(0<u<1\), the atanh series is
+\[
+\log\frac{1+u}{1-u}=2\sum_{k\ge0}\frac{u^{2k+1}}{2k+1},\qquad
+0\le 2\sum_{k\ge N}\frac{u^{2k+1}}{2k+1}
+\le\frac{2u^{2N+1}}{(2N+1)(1-u^2)}.
+\]
+Seven terms at \(u=1/3\) and twelve at \(u=1/2\), together with the
+displayed geometric remainder, prove by rational comparisons
+\[
+\frac{69314}{100000}<\log2<\frac{69315}{100000},\qquad
+\frac{109861}{100000}<\log3<\frac{109862}{100000}.
+\]
+Machin's identity for pi and the alternating arctangent series, with
+six/seven terms at \(1/5\) and one/two at \(1/239\), give
+\[
+\frac{314159}{100000}<\pi<\frac{3927}{1250}=3.1416.
+\]
+Since \(3.1416=3(1+59/1250)\), the alternating three-term upper
+bound for \(\log(1+u)\) implies
+\[
+\log\pi<
+\frac{109862}{100000}+\frac{59}{1250}
+-\frac12\left(\frac{59}{1250}\right)^2
++\frac13\left(\frac{59}{1250}\right)^3
+<\frac{114476}{100000}.
+\]
+The sequence \(H_n-\log n\) decreases to the Euler–Mascheroni
+constant \(\gamma\). Using \(1024=2^{10}\) and the above lower bound
+for \(\log2\) gives the *finite rational comparison*
+\[
+\gamma<H_{1024}-\log1024
+<H_{1024}-10\frac{69314}{100000}<\frac{5778}{10000}.
+\]
+The actual quarter-digamma identity in WeilGammaData yields
+\[
+\begin{aligned}
+1+\operatorname{gammaConstant}(3,1)
+&=1+\log3-\log\pi-\gamma+\frac\pi2-3\log2\\
+&>-\frac{26521}{200000}>-\frac{133}{1000}.
+\end{aligned}
+\]
+
+### 2. Full native coefficient bound
+
+Using the exact signed n=2..7 table, the nonzero absolute weights
+are \(\log2/\sqrt2,\log2/2,\log5/\sqrt5,\log7/\sqrt7\).
+Rational square comparisons give
+\(\sqrt2>7/5,\sqrt5>111/50,\sqrt7>66/25\).
+For \(0<u<1\), the odd partial sums of
+\(\log(1+u)=\sum_{k\ge1}(-1)^{k-1}u^k/k\)
+are upper bounds. Therefore
+\[
+\log5=2\log2+\log(5/4)
+<2\frac{69315}{100000}+\sum_{k=1}^{5}
+ \frac{(-1)^{k-1}}{k\,4^k}<\frac{161}{100},
+\]
+\[
+\log7=\log3+\log2+\log(7/6)
+<\frac{109862+69315}{100000}+\sum_{k=1}^{3}
+ \frac{(-1)^{k-1}}{k\,6^k}<\frac{39}{20}.
+\]
+Division by the positive square-root lower bounds then gives
+\[
+|w_2|<\frac12,\quad |w_4|<\frac7{20},\quad
+|w_5|<\frac{73}{100},\quad |w_7|<\frac{74}{100};
+\quad\sum_{n=2}^7|w_n|<\frac{58}{25}.
+\]
+The zero entries at \(n=3,6\) are included in the sum.
+
+### 3. Full infinite gamma and all real frequencies
+
+Keep the exact four-term plus shifted-tail identity already proved
+as written in Section 1 above: \(P_1(256)=
+\sum_{j=0}^{3}t_{1,j}(256)+P_9(256)\). Its four-term rational head
+exceeds \(253/100\). The existing logarithmic lower estimate for the
+*same infinite gamma tail* and \(262505/361>704=2^9(11/8)\) imply
+\[
+P_1(256)>
+\frac{253}{100}+
+\frac12\left(9\frac{69}{100}+\frac3{10}\right)
+=\frac{1157}{200}.
+\]
+Here \(\log2>69/100\) and
+\(\log(11/8)>6/19>3/10\), the latter following from the
+positive first atanh term at \(u=3/19\).
+Source monotonicity gives the same strict estimate for every \(x\ge256\).
+The bound \(|\cos|\le1\) applied to *all original signed atoms* yields
+\[
+M_\chi(x)\ge 1+\operatorname{gammaConstant}(3,1)
++P_1(x)-2\sum_{n=2}^7|w_n|
+>-\frac{133}{1000}+\frac{1157}{200}
+-2\frac{58}{25}=\frac{253}{250}.
+\]
+No finite-frequency sampling, discarded gamma terms, or positivity
+assumption enters the written proof.
+
+**Verification scope:** A separate exact Python fractions.Fraction
+audit checked the stated finite series endpoints, \(H_{1024}\)
+inequality, the four-term rational head, sqrt comparisons and final
+strict rational margin (exit 0; stdout
+"PASS exact rational analytic-tail guards"; script SHA-256
+60c2c49e098c3039847ed4baa603b4aa739e142b62fcba0b844c3ee8e6c72e81).
+The script is an authoring scratch file, not a source-local Lean
+proof. **New Lean elaboration, full imported closure, kernel replay,
+axiom audit and independent review are NOT_RUN/UNASSESSED.** The
+historical failed native ledger import remains FAIL. The sine-deficit
+Hilbert–Schmidt certificate, stage sign, RH and primitive GRH remain OPEN.
