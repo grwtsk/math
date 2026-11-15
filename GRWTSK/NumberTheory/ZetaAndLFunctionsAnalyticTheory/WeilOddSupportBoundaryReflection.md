@@ -1015,9 +1015,10 @@ subject to the explicit true-function enclosure and source-return
 proof obligations in that section.
 
 Additional exact rational subchecks give a **written** universal
-trigonometric recurrence error `<212/10^12` for the **same**
-first-12-term integer sine/cosine algorithm under its stated
-argument and period limits. The all-native signed prime-response
+trigonometric recurrence error `<212/10^12` for the same integer
+sine/cosine algorithm under its stated argument and period limits.
+The exact initial Taylor term and twelve rounded updates give
+thirteen terms in total. The all-native signed prime-response
 error is `<3014408/(25*10^12)<10^-6` at each grid midpoint,
 below the embedded checker charge. The finite script separately
 checks Machin-pi, logarithm, sqrt, gamma-series tail, derivative
