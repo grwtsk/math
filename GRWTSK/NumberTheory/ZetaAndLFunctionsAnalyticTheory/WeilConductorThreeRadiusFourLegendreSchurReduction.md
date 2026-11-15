@@ -10758,3 +10758,251 @@ assert far<F("2e-7")
 assert max(F(".794"),F(".953"))+far<F(".954")
 print('PASS exact majorant costs: J2 total <.52, physical <.036, near pair <.953, three-row <.954')
 ~~~
+
+## All three selected negative components
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational guards. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review is
+UNASSESSED.
+
+Keep the entire second and third enclosures and their positive
+allocations. Replace the radius-$0.02$ first window by the enclosure
+$c_1+[-0.18,0.20]$ and its reflection, where
+$c_1=99653682.92983$. Charge the actual clipped negative density
+$m_-$ throughout the enlarged pair. The comparison for the three
+expanded rows has norm strictly below $0.954$ with respect to the
+original $S_\lambda$.
+
+### The first signed enclosure and positive allocation
+
+The first band's positive allocation uses $|\nu-c_1|\le2$
+and its reflection. These intervals are inside the original
+residual set, clear of the paid pair and the old deleted collar.
+Throughout the allocation $10^8/3-1<|\nu|<10^8$, so the original
+high and low filter estimates give $1-3\cdot10^{-10}\le w\le1$.
+The exact logarithm arguments for $3|\nu|/(2\pi)$ lie between
+$47581127$ and $47581130$. The full Binet error
+$5/(9y)+9/(32y^2)$ with $y=|\nu|/2$ then gives
+$17.6779<A<17.6780$ there. All signed prime-power weights, phases
+and the original character are retained. This is the same
+primitive nonprincipal parity-one sector, with no principal pole.
+
+Directed endpoint values of the signed $P_4$ lie below the gamma
+lower bound at detunings $-0.18$ and $0.20$. The center value is
+above the gamma upper bound. With the original positive filter
+these inequalities give positive endpoints and a negative
+center for $m$. Continuity places its entire connected negative
+component in the enclosure, and the reflected inclusion follows
+by evenness.
+
+Use the same piecewise constant lower positive and upper
+negative densities as for the second component, now around
+$c_1$. The meshes have widths $0.02$ and $0.005$, respectively.
+Directed endpoint interpolation with the checked
+$|P_4''|<13504$, followed by the appropriate positive part,
+filter and directed $\pi$ bound, gives first allocated positive
+mass less than $100$ and first negative upper mass less than
+$1.3$. These are folded masses, including both signs through
+$d\nu/\pi$. The three positive allocation sets are disjoint.
+The enlarged first negative pair includes the previously checked
+narrow pair, with one debit for their shared frequencies.
+
+### The first row bound
+
+Apply the preceding degree-$32$ Legendre representation to
+$\sin((c_1+s)t)$ on the original odd physical carrier. The
+coefficients in the sine and cosine Taylor envelopes depend
+only on $s$, so the same exact coefficient formula and uniform
+physical remainder $e=2.1\cdot10^{-7}$ apply. At $c_1$ the
+physical Gram bound becomes $\mathsf B^*\mathsf B\preceq1.006 D$,
+where $D_{kk}=4/(2k+1)$. Indeed
+$$
+ \frac{33(1+2\cdot32^2)}{2c_1}<0.006\min_k D_{kk}.
+$$
+The argument uses the same entrywise integration by parts
+bound at the changed carrier.
+
+Form the first moment matrices $P,M$ from the checked lower
+positive and upper negative cells. The decimal Cholesky
+proposal yields a rational $Z$ for the same reconstruction
+$q_\epsilon(s)=a(s)^{\mathsf T}Za(\epsilon)$. The row
+factorization is exact for that rational choice. With
+$V=I-PZ$, put $R=\operatorname{tr}(Z^{\mathsf T}PZM)$ and
+$T=\operatorname{tr}(V^{\mathsf T}DVM)$. The integrated positive
+cost is at most $R$, and the squared physical cost after division
+by $\beta=B-\lambda$ is at most
+$$
+ \left(\sqrt{1.006 T/\beta}+
+       \frac{e}{\sqrt\beta}\big(\sqrt{1.3}+\sqrt{100R}\big)\right)^2.
+$$
+This follows from the previous residual estimate and the new
+Gram bound. The exact check gives $R<0.75$ and $1.006 T/\beta<1$.
+The second term in parentheses is at most
+$e(1.15+9)/0.35<10^{-5}$. It therefore increases the squared
+physical cost by less than $0.00003$. The exact signed-cell
+and trace calculation gives
+$R+1.006 T/\beta+0.00003<0.65$ for the first total diagonal.
+The decimal step chooses the rational coefficients, and the
+spent inequalities are checked in exact rational arithmetic.
+
+### Coupling to both other expanded rows
+
+The original separated sine Gram applies to the two far blocks
+between the expanded first row and the other rows. Both sum and
+difference denominators exceed $3.8\cdot10^9$ throughout all the
+selected positive and negative frequency supports of these
+blocks. The $L^2$ norm, over the first negative measure, of the
+total variation of its residual coefficient measure is at most
+$\sqrt{1.3}+\sqrt{100R}<11$. This follows by writing the
+residual as the original sine evaluation minus the positive
+reconstruction integral, then using Cauchy–Schwarz. The
+corresponding bounds for rows two and three are $9$ and $2.66$
+from the preceding estimates. The positive resource coordinates
+occupy disjoint sets. Thus the sum of the norms of the two far
+blocks is below
+$$
+ \frac{2\cdot11(9+2.66)}{3.8\cdot10^9\cdot0.12}<6\cdot10^{-7},
+$$
+using $\beta>0.12$. The near pair still has bound $0.953I$.
+The three-row majorant has norm at most
+$\max(0.65,0.953)+6\cdot10^{-7}<0.954$.
+The same angular isometries and factorization transport this to
+the actual $\mathcal W_{\rm all3}S_\lambda^{-1}\mathcal W_{\rm all3}^*$,
+where $\mathcal W_{\rm all3}$ is the column of the three expanded
+debits.
+
+Set $S_{\rm all3}=S_\lambda-
+\mathcal W_{\rm all3}^*\mathcal W_{\rm all3}$. Then
+$S_{\rm all3}\ge0.046S_\lambda$. With $N_{\rm rest}$ denoting
+the actual negative restriction outside the three charged
+enclosures, the exact remaining criterion is
+$\|N_{\rm rest}S_{\rm all3}^{-1}N_{\rm rest}^*\|\le1$.
+This criterion is for the same $C_{4,+}\ge\lambda I_H$ and the
+same seven physical leading inverse domains. The three connected
+components are covered in full. The other negative support
+and its coupling remain in the exact criterion.
+
+The following guard takes the complete source as input. It
+reuses the exact arithmetic and moment matrix representations
+above and checks the changed first-band signs and all bounds.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+from decimal import Decimal, localcontext
+
+c1=F("99653682.92983")
+assert F(10**8,3)-1<c1-2<c1+2<10**8
+assert c1-2>30000000 and c1+2<35*10**24
+assert c1+2<F("1852422754.1662946")-10
+assert c1+2<F("3806849122.861433")-F(1,160)
+c2=scale(F(5085348195,4),(pi_lower,pi_upper))
+c3=add(c2,(F("-5.55"),F("-5.55")))
+for other,radius in ((c2,F(2)),(c3,F(".35"))):
+    assert other[0]-radius-(c1+2)>F("3.8e9")
+    assert other[0]-radius+(c1-2)>F("3.8e9")
+assert c3[1]+F(".35")<c2[0]-2
+
+Alo,Ahi=F("17.6779"),F("17.6780")
+lowarg,higharg=47581127,47581130
+assert lowarg<3*(c1-2)/(2*pi_upper)
+assert 3*(c1+2)/(2*pi_lower)<higharg
+y0=(c1-2)/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c1+x,c1+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+def estimate(x,h):
+    u,v=node(x),node(x+h)
+    err=second*h*h/8
+    return min(u[0],v[0])-err,max(u[1],v[1])+err
+
+wmin=1-F("3e-10")
+positive,negative=[],[]
+h=F(".02")
+for i in range(-100,100):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=(max(F(0),wmin*(Alo-hi)/pi_upper)*10**7//1)/F(10**7)
+    if density>0:positive.append((x,x+h,density))
+h=F(".005")
+for i in range(-36,40):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=-((-max(F(0),(hi-Alo)/pi_lower)*10**7)//1)/F(10**7)
+    if density>0:negative.append((x,x+h,density))
+assert node(F("-.18"))[1]<Alo and node(F(".20"))[1]<Alo
+assert node(F(0))[0]>Ahi
+assert sum((v-u)*w for u,v,w in positive)<100
+assert sum((v-u)*w for u,v,w in negative)<F("1.3")
+
+print("PASS original low filter, first component endpoint signs and signed cells")
+
+# Reuse the preceding coefficient, solver proposal and exact trace routines.
+matrix_source=[g for g in blocks if g.startswith("from decimal import Decimal")
+               and "PASS exact majorant costs: J2 total <.52" in g]
+assert len(matrix_source)==1
+start="# Exact polynomial budget for the wider positive allocation."
+stop='assert (F(33)*(1+2*32**2)'
+code=matrix_source[0]
+assert code.count(start)==code.count(stop)==1
+exec(compile(code.split(start)[1].split(stop)[0].lstrip(), "source coefficient and moment matrix", "exec"))
+
+assert beta==F(".124997987")-F(".0001071")
+gram_factor=F("1.006")
+assert 33*(1+2*32**2)/(2*c1)<(gram_factor-1)*min(D)
+err=F("2.1e-7")
+assert 8*(F(8)**33/factorial(33))**2<err**2
+assert 0<=R<F(".75") and S>=0
+nominal=gram_factor*S/beta
+assert nominal<1
+assert F("1.15")**2>F("1.3") and 9**2>100*F(".75")
+assert F(".35")**2<beta
+err_scaled=err*(F("1.15")+9)/F(".35")
+assert err_scaled<F("1e-5") and 2*err_scaled+err_scaled**2<F(".00003")
+assert R+nominal+F(".00003")<F(".65")
+
+# The far comparison is for the real physical error functions. The
+# allocation coordinates for all three outputs are orthogonal.
+assert F("1.15")+9<11
+far=2*F(11)*(9+F("2.66"))/(F("3.8e9")*F(".12"))
+assert beta>F(".12") and far<F("6e-7")
+assert max(F(".65"),F(".953"))+far<F(".954")
+print("PASS full first component diagonal below .65 and three expanded rows below .954")
+~~~
