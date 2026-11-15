@@ -408,4 +408,41 @@ theorem finite_criticalZero_supplier_bound {ι : Type*} {s A : ℝ}
       (hline j hj) (hpos j hj).ne' (horder j hj) hC hE)
   exact ⟨hQ, coefficient_le_of_affine_supplier hG hmajorant hbudget hQ⟩
 
+/-- The stationary frequency of the exact signed residual contributes once to
+the normalized energy and to the leading allowance of a fixed affine-frequent
+linear supplier. Each positive simple critical-line zero contributes its two
+conjugate frequencies. -/
+theorem finite_criticalZero_linear_supplier_bound_with_stationary {ι : Type*} {s A : ℝ}
+    (hs : 0 < s) (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    (J : Finset ι) (ρ : ι → ZeroPoint)
+    (hline : ∀ j ∈ J, (ρ j).val.re = 1 / 2)
+    (hpos : ∀ j ∈ J, 0 < (ρ j).val.im)
+    (hω : Set.InjOn (fun j => (ρ j).val.im) (↑J : Set ι))
+    (horder : ∀ j ∈ J, multiplicity (ρ j) = 1)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T) :
+    let Q : ℝ := 2 * (∑ j ∈ J, ‖zetaPoleCoefficient (ρ j)‖ ^ 2) + ‖stationaryCoefficient s‖ ^ 2
+    (Q : EReal) ≤ liminf (fun T : ℝ => ((residualEnergy s T / T : ℝ) : EReal)) atTop ∧ Q ≤ A := by
+  have hbudget₁ : ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + 1) * T ^ (2 * 0 + 1 : ℕ) + 0 := by
+    simpa using hbudget 1 one_pos
+  obtain ⟨C, hC, hE⟩ := global_residualEnergy_poly_of_affine_envelope hG
+    (add_nonneg hA zero_le_one) (le_refl (0 : ℝ)) hmajorant hbudget₁
+  have hPole : Tendsto (fun σ : ℝ => (σ : ℂ) ^ (0 + 1 : ℕ) *
+      residualLaplace s ((σ : ℂ) + (0 : ℂ) * Complex.I)) (𝓝[>] (0 : ℝ))
+      (𝓝 (stationaryCoefficient s)) := by
+    simpa using tendsto_scaled_residualLaplace_at_stationary hs hζ hE
+  have hStationary := tendsto_localizedPairing_of_horizontalPole (γ := 0) 0
+    (stationaryCoefficient s) hC hE hPole
+  have hQ := liminf_normalizedEnergy_of_positivePairings_and_stationary s 0 J
+    (fun j => (ρ j).val.im) (fun j => zetaPoleCoefficient (ρ j)) (stationaryCoefficient s) hpos hω
+    (fun j hj => by
+      simpa using tendsto_localizedPairing_of_criticalZero hs 0 (ρ j)
+        (hline j hj) (hpos j hj).ne' (horder j hj) hC hE)
+    (by simpa using hStationary)
+  have hQ_A := coefficient_le_of_affine_supplier hG hmajorant
+    (show ∀ ε : ℝ, 0 < ε → ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T ^ (2 * 0 + 1 : ℕ) from
+      fun ε hε => by simpa using hbudget ε hε) hQ
+  exact ⟨by simpa [add_comm] using hQ, by simpa [add_comm] using hQ_A⟩
+
 end GRWTSK.NumberTheory.Moebius.GaussianSignedResidualLocalizedPairings

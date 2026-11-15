@@ -273,6 +273,34 @@ theorem residual_weightedSquare_le_factorial (s : ℝ) {p : ℕ} {σ A C : ℝ}
     weightedSquare (residualWave s) σ ≤ A * (p.factorial : ℝ) / σ ^ p + C :=
   weightedSquare_le_factorial (residualWave_continuous s) hσ hE
 
+private def heatedLaplaceContinuation (s : ℝ) (z : ℂ) : ℂ :=
+  (heatedLimit s : ℂ) / z + heatedCorrection s z
+
+private theorem heatedLaplaceContinuation_analyticAt {s : ℝ} (hs : 0 < s) {z : ℂ}
+    (hz : -(1 / 2 : ℝ) < z.re) (hz₀ : z ≠ 0) :
+    AnalyticAt ℂ (heatedLaplaceContinuation s) z :=
+  (analyticAt_const.div analyticAt_id hz₀).add (heatedCorrection_analyticAt hs hz)
+
+private theorem residual_add_heat_of_envelope {s : ℝ} (hs : 0 < s) {p : ℕ} {A C : ℝ}
+    (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ A * T ^ p + C) :
+    DifferentiableOn ℂ (fun z => residualLaplace s z + heatedLaplaceContinuation s z)
+        pickupLaplaceDomain ∧
+      ∀ z : ℂ, 1 / 2 < z.re → residualLaplace s z + heatedLaplaceContinuation s z =
+        1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2)) := by
+  have hf := residualWave_continuous s
+  have hi {z : ℂ} (hz : 0 < z.re) :=
+    signedLaplace_integrable hf hz (weightedSquare_integrable hf hz hE)
+  have hL : DifferentiableOn ℂ (residualLaplace s) pickupLaplaceDomain :=
+    differentiableOn_laplace_of_integrable hf (fun _ hz => by simpa only [neg_mul] using hi hz)
+  have hHd : DifferentiableOn ℂ (heatedLaplaceContinuation s) pickupLaplaceDomain := by
+    intro z hz
+    change 0 < z.re at hz
+    exact (heatedLaplaceContinuation_analyticAt hs (by linarith)
+      (Complex.ne_zero_of_re_pos hz)).differentiableAt.differentiableWithinAt
+  refine ⟨hL.add hHd, fun z hz => ?_⟩
+  rw [residualLaplace_initial hs hz]
+  exact sub_add_cancel _ _
+
 /-- A polynomial envelope makes the exact signed residual transform
 holomorphic on the right half-plane and exposes its horizontal Laurent limit. -/
 theorem tendsto_scaled_residualLaplace_of_residual_envelope {s : ℝ} (hs : 0 < s)
@@ -282,29 +310,65 @@ theorem tendsto_scaled_residualLaplace_of_residual_envelope {s : ℝ} (hs : 0 < 
     {p : ℕ} {A C : ℝ} (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ A * T ^ p + C) :
     Tendsto (fun σ : ℝ => (σ : ℂ) ^ multiplicity ρ * residualLaplace s (rightApproach ρ.val σ))
       (𝓝[>] 0) (𝓝 (poleCoefficient ρ.val g)) := by
-  let H (z : ℂ) := (heatedLimit s : ℂ) / z + heatedCorrection s z
-  have hf := residualWave_continuous s
-  have hi {z : ℂ} (hz : 0 < z.re) :=
-    signedLaplace_integrable hf hz (weightedSquare_integrable hf hz hE)
-  have hL : DifferentiableOn ℂ (residualLaplace s) pickupLaplaceDomain :=
-    differentiableOn_laplace_of_integrable hf (fun _ hz => by simpa only [neg_mul] using hi hz)
-  have hH {z : ℂ} (hz : -(1 / 2 : ℝ) < z.re) (hz₀ : z ≠ 0) :
-      AnalyticAt ℂ H z :=
-    (analyticAt_const.div analyticAt_id hz₀).add (heatedCorrection_analyticAt hs hz)
-  have hHd : DifferentiableOn ℂ H pickupLaplaceDomain := by
-    intro z hz
-    change 0 < z.re at hz
-    exact (hH (by linarith) (Complex.ne_zero_of_re_pos hz)).differentiableAt.differentiableWithinAt
-  have hHc : ContinuousAt H (ρ.val - 1 / 2) := by
-    apply (hH ?_ (sub_half_ne_zero hγ)).continuousAt
+  obtain ⟨hhol, hinit⟩ := residual_add_heat_of_envelope hs hE
+  have hHc : ContinuousAt (heatedLaplaceContinuation s) (ρ.val - 1 / 2) := by
+    apply (heatedLaplaceContinuation_analyticAt hs ?_ (sub_half_ne_zero hγ)).continuousAt
     simp [hline]
-  have hinit (z : ℂ) (hz : 1 / 2 < z.re) :
-      residualLaplace s z + H z =
-        1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2)) := by
-    rw [residualLaplace_initial hs hz]
-    exact sub_add_cancel _ _
   exact tendsto_scaled_of_pickup_pole ρ hline hγ hg hgn hfactor
-    (hL.add hHd) hinit hHc
+    hhol hinit hHc
+
+/-- The stationary coefficient of the exact signed residual. The second
+term is the genuine settled Gaussian-heated wave. -/
+def stationaryCoefficient (s : ℝ) : ℂ :=
+  2 / riemannZeta (1 / 2) - (heatedLimit s : ℂ)
+
+/-- The real-axis Laurent limit at the stationary frequency. -/
+theorem tendsto_scaled_residualLaplace_at_stationary {s : ℝ} (hs : 0 < s)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0)
+    {p : ℕ} {A C : ℝ} (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ A * T ^ p + C) :
+    Tendsto (fun σ : ℝ => (σ : ℂ) * residualLaplace s σ)
+      (𝓝[>] 0) (𝓝 (stationaryCoefficient s)) := by
+  let F : Filter ℝ := 𝓝[>] (0 : ℝ)
+  let R (z : ℂ) : ℂ := regularizedZeta (z + 1 / 2)
+  obtain ⟨hhol, hinit⟩ := residual_add_heat_of_envelope hs hE
+  have hid := regularized_laplace_identity _ hhol (regularized_initial_identity_of_inverse _ hinit)
+  have hRzero : R 0 = -(1 / 4 : ℂ) * riemannZeta (1 / 2) := by
+    change regularizedZeta (0 + 1 / 2) = _
+    rw [zero_add, regularizedZeta_eq (by norm_num : (1 / 2 : ℂ) ≠ 0)
+      (by norm_num : (1 / 2 : ℂ) ≠ 1)]
+    ring
+  have hRne : R 0 ≠ 0 := by rw [hRzero]; exact mul_ne_zero (by norm_num) hζ
+  have hquot : ((0 : ℂ) - 1 / 2) / R 0 = 2 / riemannZeta (1 / 2) := by
+    rw [hRzero]
+    field_simp
+    ring
+  have hbase : Tendsto (fun σ : ℝ => σ) F (𝓝 0) := nhdsWithin_le_nhds
+  have hcast : Tendsto (fun σ : ℝ => (σ : ℂ)) F (𝓝 0) := by
+    simpa only [Function.comp_def, Complex.ofReal_zero] using
+      Complex.continuous_ofReal.continuousAt.tendsto.comp hbase
+  have hRcont : Continuous R :=
+    differentiable_regularizedZeta.continuous.comp (continuous_id.add_const (1 / 2 : ℂ))
+  have hRt := hRcont.continuousAt.tendsto.comp hcast
+  have hcorrectAt : ContinuousAt (heatedCorrection s) 0 :=
+    (heatedCorrection_analyticAt hs (by norm_num : -(1 / 2 : ℝ) < (0 : ℂ).re)).continuousAt
+  have hcorrect := hcorrectAt.tendsto.comp hcast
+  have hlim := (((hcast.sub_const (1 / 2 : ℂ)).div hRt hRne).sub_const (heatedLimit s : ℂ)).sub
+    (hcast.mul hcorrect)
+  simp only [hquot, zero_mul, sub_zero] at hlim
+  apply hlim.congr'
+  filter_upwards [eventually_mem_nhdsWithin (s := Ioi (0 : ℝ)), hRt.eventually_ne hRne]
+    with σ hσ hRσ
+  have hσre : 0 < (σ : ℂ).re := by simpa using hσ
+  have hσne : (σ : ℂ) ≠ 0 := Complex.ne_zero_of_re_pos hσre
+  have hprod := hid (σ : ℂ) hσre
+  have hdiv : (σ : ℂ) * (residualLaplace s σ + heatedLaplaceContinuation s σ) =
+      ((σ : ℂ) - 1 / 2) / R σ := by
+    apply (eq_div_iff hRσ).2
+    exact (mul_right_comm _ _ _).trans hprod
+  change ((σ : ℂ) - 1 / 2) / R σ - (heatedLimit s : ℂ) -
+      (σ : ℂ) * heatedCorrection s σ = _
+  rw [← hdiv, heatedLaplaceContinuation, mul_add, mul_add, mul_div_cancel₀ _ hσne]
+  ring
 
 /-- If a polynomial envelope bounds the exact residual energy, a nonreal
 critical-line pole forces its leading envelope coefficient to be large. -/

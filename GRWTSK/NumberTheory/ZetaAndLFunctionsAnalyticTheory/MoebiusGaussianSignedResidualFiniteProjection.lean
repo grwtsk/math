@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianSignedResidualPoleMoments
+import Mathlib.Algebra.BigOperators.Option
 import Mathlib.Analysis.Fourier.RiemannLebesgueLemma
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.Topology.Instances.EReal.Lemmas
@@ -310,6 +311,50 @@ private theorem pairing_conjugate_frequency (s : ℝ) (n : ℕ) (ω : ℝ) (c : 
   simpa only [map_mul, Complex.conj_ofReal] using
     (Complex.conj_re ((rescaledWave s n T v : ℂ) * probeAtom n ω c T v)).symm
 
+private def signedFrequency {ι : Type*} (ω : ι → ℝ) (j : Bool × ι) : ℝ :=
+  if j.1 then -ω j.2 else ω j.2
+
+private def signedCoefficient {ι : Type*} (c : ι → ℂ) (j : Bool × ι) : ℂ :=
+  if j.1 then (starRingEnd ℂ) (c j.2) else c j.2
+
+private theorem signedPairings_of_positive {ι : Type*}
+    (s : ℝ) (n : ℕ) (J : Finset ι) (ω : ι → ℝ) (c : ι → ℂ)
+    (hpos : ∀ j ∈ J, 0 < ω j)
+    (hω : Set.InjOn ω (↑J : Set ι))
+    (hPairing : ∀ j ∈ J, Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n (ω j) (c j) T v)).re)
+      atTop (𝓝 (‖c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ))))) :
+    let K : Finset (Bool × ι) := Finset.univ ×ˢ J
+    Set.InjOn (signedFrequency ω) (↑K : Set (Bool × ι)) ∧
+      ∀ j ∈ K, Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+        ((rescaledWave s n T v : ℂ) *
+          (starRingEnd ℂ) (probeAtom n (signedFrequency ω j) (signedCoefficient c j) T v)).re)
+        atTop (𝓝 (‖signedCoefficient c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)))) := by
+  classical
+  dsimp only
+  constructor
+  · rintro ⟨a, i⟩ hi ⟨b, j⟩ hj heq
+    have hi' : i ∈ J := (Finset.mem_product.mp hi).2
+    have hj' : j ∈ J := (Finset.mem_product.mp hj).2
+    cases a <;> cases b
+    · exact Prod.ext rfl (hω hi' hj' (by simpa only [signedFrequency, Bool.false_eq_true,
+        ite_false] using heq))
+    · have h : ω i = -ω j := by
+        simpa only [signedFrequency, Bool.false_eq_true, ite_false, ite_true] using heq
+      linarith [hpos i hi', hpos j hj']
+    · have h : -ω i = ω j := by
+        simpa only [signedFrequency, Bool.false_eq_true, ite_false, ite_true] using heq
+      linarith [hpos i hi', hpos j hj']
+    · exact Prod.ext rfl (hω hi' hj' (neg_injective
+        (by simpa only [signedFrequency, ite_true] using heq)))
+  · rintro ⟨b, j⟩ hj
+    have hj' : j ∈ J := (Finset.mem_product.mp hj).2
+    cases b
+    · exact hPairing j hj'
+    · simp only [signedFrequency, signedCoefficient, ite_true, Complex.norm_conj]
+      simp_rw [pairing_conjugate_frequency]
+      exact hPairing j hj'
+
 /-- A finite family of distinct positive frequencies contributes both signs
 to the energy coefficient. The real wave supplies the negative-frequency
 pairings by conjugation. -/
@@ -322,32 +367,57 @@ theorem liminf_normalizedEnergy_of_positivePairings {ι : Type*}
       atTop (𝓝 (‖c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ))))) :
     ((2 * ∑ j ∈ J, ‖c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)) : ℝ) : EReal) ≤
       liminf (fun T : ℝ => ((residualEnergy s T / T ^ (2 * n + 1) : ℝ) : EReal)) atTop := by
+  obtain ⟨hω', hp⟩ := signedPairings_of_positive s n J ω c hpos hω hPairing
+  have h := liminf_normalizedEnergy_of_localizedPairings s n (Finset.univ ×ˢ J)
+    (signedFrequency ω) (signedCoefficient c) hω' hp
+  simpa [Finset.sum_product, Fintype.sum_bool, signedCoefficient, Complex.norm_conj, two_mul] using h
+
+/-- A stationary mode contributes once in addition to the two signs of each
+distinct positive frequency. -/
+theorem liminf_normalizedEnergy_of_positivePairings_and_stationary {ι : Type*}
+    (s : ℝ) (n : ℕ) (J : Finset ι) (ω : ι → ℝ) (c : ι → ℂ) (b : ℂ)
+    (hpos : ∀ j ∈ J, 0 < ω j)
+    (hω : Set.InjOn ω (↑J : Set ι))
+    (hPairing : ∀ j ∈ J, Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n (ω j) (c j) T v)).re)
+      atTop (𝓝 (‖c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)))))
+    (hStationary : Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n 0 b T v)).re)
+      atTop (𝓝 (‖b‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ))))) :
+    ((‖b‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)) +
+        2 * ∑ j ∈ J, ‖c j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)) : ℝ) : EReal) ≤
+      liminf (fun T : ℝ => ((residualEnergy s T / T ^ (2 * n + 1) : ℝ) : EReal)) atTop := by
   classical
   let K : Finset (Bool × ι) := Finset.univ ×ˢ J
-  let ω' (j : Bool × ι) := if j.1 then -ω j.2 else ω j.2
-  let c' (j : Bool × ι) := if j.1 then (starRingEnd ℂ) (c j.2) else c j.2
-  have hω' : Set.InjOn ω' (↑K : Set (Bool × ι)) := by
-    rintro ⟨a, i⟩ hi ⟨b, j⟩ hj heq
-    have hi' : i ∈ J := (Finset.mem_product.mp hi).2
-    have hj' : j ∈ J := (Finset.mem_product.mp hj).2
-    cases a <;> cases b
-    · exact Prod.ext rfl (hω hi' hj' (by simpa only [ω', Bool.false_eq_true, ite_false] using heq))
-    · have h : ω i = -ω j := by simpa only [ω', Bool.false_eq_true, ite_false, ite_true] using heq
-      linarith [hpos i hi', hpos j hj']
-    · have h : -ω i = ω j := by simpa only [ω', Bool.false_eq_true, ite_false, ite_true] using heq
-      linarith [hpos i hi', hpos j hj']
-    · exact Prod.ext rfl (hω hi' hj' (neg_injective (by simpa only [ω', ite_true] using heq)))
-  have hp : ∀ j ∈ K, Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
-      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n (ω' j) (c' j) T v)).re)
-      atTop (𝓝 (‖c' j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)))) := by
-    rintro ⟨b, j⟩ hj
-    have hj' : j ∈ J := (Finset.mem_product.mp hj).2
-    cases b
-    · exact hPairing j hj'
-    · simp only [ω', c', ite_true, Complex.norm_conj]
-      simp_rw [pairing_conjugate_frequency]
-      exact hPairing j hj'
-  have h := liminf_normalizedEnergy_of_localizedPairings s n K ω' c' hω' hp
-  simpa [K, Finset.sum_product, Fintype.sum_bool, c', Complex.norm_conj, two_mul] using h
+  let ω₀ (j : Option (Bool × ι)) : ℝ := j.elim 0 (signedFrequency ω)
+  let c₀ (j : Option (Bool × ι)) : ℂ := j.elim b (signedCoefficient c)
+  obtain ⟨hω', hp⟩ := signedPairings_of_positive s n J ω c hpos hω hPairing
+  have hne (j : Bool × ι) (hj : j ∈ K) : signedFrequency ω j ≠ 0 := by
+    obtain ⟨flag, i⟩ := j
+    have hi := (hpos i (Finset.mem_product.mp hj).2).ne'
+    cases flag <;> simp [signedFrequency, hi]
+  have hω₀ : Set.InjOn ω₀ (↑K.insertNone : Set (Option (Bool × ι))) := by
+    intro i hi j hj heq
+    cases i with
+    | none =>
+        cases j with
+        | none => rfl
+        | some j => exact False.elim (hne j (Finset.some_mem_insertNone.mp hj) heq.symm)
+    | some i =>
+        cases j with
+        | none => exact False.elim (hne i (Finset.some_mem_insertNone.mp hi) heq)
+        | some j =>
+            exact congrArg some (hω' (Finset.some_mem_insertNone.mp hi)
+              (Finset.some_mem_insertNone.mp hj) heq)
+  have hp₀ : ∀ j ∈ K.insertNone, Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+      ((rescaledWave s n T v : ℂ) * (starRingEnd ℂ) (probeAtom n (ω₀ j) (c₀ j) T v)).re)
+      atTop (𝓝 (‖c₀ j‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)))) := by
+    intro j hj
+    cases j with
+    | none => exact hStationary
+    | some j => exact hp j (Finset.some_mem_insertNone.mp hj)
+  have h := liminf_normalizedEnergy_of_localizedPairings s n K.insertNone ω₀ c₀ hω₀ hp₀
+  simpa [K, c₀, Finset.sum_product, Fintype.sum_bool, signedCoefficient, Complex.norm_conj,
+    two_mul] using h
 
 end GRWTSK.NumberTheory.Moebius.GaussianSignedResidualFiniteProjection
