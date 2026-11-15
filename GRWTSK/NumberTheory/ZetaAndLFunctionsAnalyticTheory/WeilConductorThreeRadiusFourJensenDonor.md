@@ -1801,3 +1801,547 @@ else:
 print('PASS exact joint physical residual',ask,'row uncertainty',float(F(width,scale)))
 print('PASS original 48 budgets',float(worst59),float(room59),float(worst62),float(room62))
 ~~~
+
+## One narrow enclosure through detuning 710.86
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review is
+UNASSESSED.
+
+Use the original radius-four signed comparison and the
+[pinned 62-enclosure source](https://github.com/grwtsk/math/blob/056c3ddbbe4952908031251ac2b1bc81d1a7b065/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md)
+through detuning $708.60$. At that revision the Jensen donor
+blob is a4cb4962750d48cbc8a298cdf2a8649f3074c8be and the
+radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f.
+All detunings use $c_1=99653682.92983$, with the reflected
+restriction included. Retain the complex odd carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$ with zero extension,
+the folded measure $d\nu/\pi$, original masks and physical
+projection. The primitive nonprincipal odd character modulo
+three keeps the full parity-one gamma, all $458$ signed prime
+powers and zero principal-pole term.
+
+The signed guard proves the original multiplier strictly
+positive on $[708.60,710.86]$ off $E_9=[708.60,708.66]$.
+Both endpoints of $E_9$ are positive and $708.63$ is negative.
+The directed complement proof uses $112$ checks and one
+bisection. Put $Y_9=[707.62,709.62]$. The overlap $[707.62,708.60]$
+with the prior signed coverage is strictly positive, including the
+shared endpoint.
+Its positive energy is disjoint from all prior direct and
+tagged reservations, including the latest donor ending at
+$640.32$. The actual negative part on $Y_9$ is supported in
+$E_9$, and $N_{E_9}$ has output support disjoint from the
+paid 62 enclosures.
+
+The original quadratic comparison is
+$$
+ N_{E_9}^*N_{E_9}\preceq\tfrac14\mathcal P_{Y_9}
+                       +(10^{-12}+\delta_{E_9})I,\qquad
+ 0<\delta_{E_9}<9.656\cdot10^{-36}.
+$$
+Use true sine averages on the $.02$ donor bins and exact
+$.0025$ source cells. The $458$-term signed sum, Binet
+bracket and filter keep $98$ positive Jensen bins and nine
+nonzero upper negative cells. With the exact physical
+center $c=c_1+708.63$, use $18$ Taylor terms for the short
+negative enclosure. The kernel remainder bound is
+$\epsilon=.12^{18}/18!$ and
+$\delta_{E_9}=8\epsilon(2+\epsilon)\int_{E_9}\eta$, using the
+directed negative upper density $\eta$ in folded coordinates.
+The negative restriction upper form is
+$V^*MV+\delta_{E_9}I$. The positive Jensen form $B^*WB$ is a lower
+bound for $\mathcal P_{Y_9}$ by Cauchy–Schwarz on each bin.
+
+The same Woodbury square completion as in the earlier
+Jensen donors reduces the comparison to the sufficient
+residual matrix
+$$
+ R_Z=10^{-12}M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+      -10^{-12}Z^*(\tfrac14 W)^{-1}Z\succ0 .
+$$
+Use the true positive sine averages with $120$ Taylor terms
+to enclose the $18$ residual physical columns. Their
+directed $L^2$ discrepancies are below $1.801\cdot10^{-48}$.
+The exact physical Gram uses the signed endpoint moments at
+frequency $8c$, with an explicit center equality immediately
+before these moments are formed. The directed matrix row
+width is below $10^{-23}$. Its certified symmetric lower
+matrix has all $18$ positive exact pivots, with first above
+$5.9727\cdot10^{-8}$. The floating solve proposes $Z$. The rational
+lower matrix checks the comparison for that proposal.
+
+The zero scalar price fails for these actual restrictions. The
+folded sine restriction to the bounded positive slab of $Y_9$
+has dense range in $L^2(Y_9^+,d\nu/\pi)$. A vector orthogonal
+to this range has an entire sine transform that vanishes almost
+everywhere for $-4<t<4$. The identity theorem and Fourier
+uniqueness for its odd frequency extension make the vector
+zero. By the negative witness and continuity on this interval,
+a nonzero bounded frequency test supported in a small
+neighborhood of $708.63$ inside $E_9$ has positive negative
+energy and zero positive energy. If the comparison with zero
+scalar price held on the physical carrier, boundedness of the
+multipliers on $Y_9^+$ and dense range would pass the
+comparison to this frequency test, a contradiction.
+
+Reserve $\mathcal P_{Y_9}$ once in the reduced positive
+comparator. The older positive tags and the $\beta I$ floor
+remain available. The new scalar charge uses $I\preceq
+S_{\rm keep}/\beta$ and the positive fraction enters the
+maximum as $\tfrac14$. Append $N_{E_9}$ to the disjoint
+outputs to form $W_{\rm all63}$. The strict cap $0.953005$
+holds for all $48$ original price combinations with each
+of the two separate first-donor prices and the joint
+$7.47626\cdot10^{-10}$ residual price, where the latter is used
+in place of the two separately summed prices. The least
+physical room in those three branches exceeds respectively
+$9.097\cdot10^{-10}$, $5.4597\cdot10^{-9}$ and $5.96209\cdot10^{-9}$.
+
+Contiguous signed coverage reaches $710.86$. With
+$S_{\rm all63}=S_\lambda-W_{\rm all63}^*W_{\rm all63}$
+the source identity is
+$$
+ T_+-\lambda\Pi_H=S_{\rm all63}-N_{\rm out}^*N_{\rm out},
+ \qquad S_{\rm all63}\succeq0.046995S_\lambda .
+$$
+The true outside-support bound
+$\|N_{\rm out}S_{\rm all63}^{-1}N_{\rm out}^*\|\le1$
+remains the required sign before the original seven leading
+inverses and directional return.
+
+Extract the guard and pass the pinned radius-four Markdown
+and selector `sign` or `e9`. Use both modes for the joint result.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+rows={
+    "e9":("707.62","709.62","708.60","708.66","708.63",".25"),
+}
+assert mode in ("sign",*rows)
+if mode=="sign":
+    start,stop,step=map(F,("708.60","710.86",".02"))
+else:
+    a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+    start,stop,step=F(a0),F(b0),F(".0025")
+lowarg,higharg=47581000,47582000
+raw_cap=55
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("1e-11")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+if mode=="sign":
+    boxes=[(F(row[2]),F(row[3])) for row in rows.values()]
+    assert all(node(x)[1]<Alo for interval in boxes for x in interval)
+    assert all(node(F(row[4]))[0]>Ahi for row in rows.values())
+    assert node(stop)[1]<Alo
+    checks=splits=0
+    def positive(l,h):
+        global checks,splits
+        checks+=1
+        lo,hi=estimate(l,h)
+        if hi<Alo:
+            return
+        assert lo<Ahi and h>F(".000625"),(l,h,lo,hi)
+        splits+=1
+        positive(l,h/2)
+        positive(l+h/2,h/2)
+
+    for l,r in zip([start]+[b for a,b in boxes],[a for a,b in boxes]+[stop]):
+        assert ((r-l)/step).denominator==1
+        for j in range(int((r-l)/step)):
+            positive(l+j*step,step)
+    assert (checks,splits)==(112,1)
+    print("PASS actual signed complement through",str(stop),checks,splits)
+    raise SystemExit
+
+# Exact positive donor weights and short negative moment input.
+assert count%8==0 and start<=F(l0)<F(r0)<=stop
+c=c0+F(c0_offset)
+wmin=1-F("3e-10")
+rho=[]
+pos=[]
+for j in range(count//8):
+    x=start+j*8*step
+    peaks=[estimate(x+i*step,step)[1] for i in range(8)]
+    raw=wmin*(Alo-max(peaks))
+    w=F((raw*10**10)//1,10**10)
+    if w>0:
+        pos.append((c0+x-c,8*step,w*8*step/pi_upper))
+edge=F(l0)
+count_negative=(F(r0)-edge)/step
+assert count_negative.denominator==1
+for j in range(int(count_negative)):
+    x=edge+j*step
+    _,upper=estimate(x,step)
+    val=max(F(0),(upper-Alo)/pi_lower)
+    eta=F(-((-val*10**10)//1),10**10)
+    assert eta>=val and eta*pi_upper<55
+    if eta:
+        rho.append((c0+x-c,c0+x+step-c,eta))
+assert len(pos)==98 and len(rho)==9
+print("signed original weights exact:",len(pos),len(rho),flush=True)
+
+
+from math import acos,cos,sin,sqrt,fsum
+
+def gauss(order):
+    points=[0.0]*order
+    weights=[0.0]*order
+    for j in range((order+1)//2):
+        x=cos(acos(-1)*(j+.75)/(order+.5))
+        for i in range(30):
+            p,prev=1.0,0.0
+            for n in range(1,order+1):
+                prev,p=p,((2*n-1)*x*p-(n-1)*prev)/n
+            dp=order*(x*p-prev)/(x*x-1)
+            change=p/dp
+            x-=change
+            if abs(change)<2e-16:
+                break
+        points[j],points[-j-1]=x,-x
+        weights[j]=weights[-j-1]=2/((1-x*x)*dp*dp)
+    return points,weights
+
+
+def proposed_coefficients(pos,c,k,alpha,tau):
+    # Floating point proposes Z only. The exact verifier below may reject it.
+    s,w=gauss(80)
+    n=len(pos)
+    h=float(pos[0][1])
+    assert all(float(row[1])==h for row in pos)
+    t=[4*x for x in s]
+    envelope=[sin(h*x/2)/(h*x/2) if x else 1.0 for x in t]
+    a=[2*ww*e*e for ww,e in zip(w,envelope)]
+    env4=sin(2*h)/(2*h)
+    u=[float(x+h0/2) for x,h0,wt in pos]
+    tags=[round((x-u[0])/h) for x in u]
+    low=[fsum(ww*cos(j*h*tt) for ww,tt in zip(a,t)) for j in range(tags[-1]+1)]
+    high=[]
+    for j in range(2*tags[-1]+1):
+        z=2*(float(c)+u[0])+j*h
+        high.append(env4*env4*sin(4*z)/z)
+    base=[[low[abs(tags[i]-tags[j])]-high[tags[i]+tags[j]] for j in range(n)]
+          for i in range(n)]
+    for i,(left,width,weight) in enumerate(pos):
+        base[i][i]+=float(tau/(alpha*weight))
+
+    polynomial=[[2*ww*e*x**j for ww,e,x in zip(w,envelope,s)] for j in range(k)]
+    rhs=[]
+    for u0 in u:
+        local_c=[cos(u0*x) for x in t]
+        local_s=[sin(u0*x) for x in t]
+        z=2*float(c)+u0
+        sc=(sin(4*z)*env4/z,cos(4*z)*env4/z)
+        rhs.append([(-1)**(j//2)*(fsum(a*b for a,b in zip(polynomial[j],
+                    local_c if j%2==0 else local_s))-sc[j%2]) for j in range(k)])
+
+    # Cholesky factorization of the approximate positive matrix.
+    L=[]
+    for i,row in enumerate(base):
+        v=[]
+        for j in range(i):
+            v.append((row[j]-fsum(a*b for a,b in zip(v,L[j])))/L[j][j])
+        v.append(sqrt(row[i]-fsum(x*x for x in v)))
+        L.append(v)
+    Y=[]
+    for i,row in enumerate(rhs):
+        Y.append([(v-fsum(L[i][j]*Y[j][r] for j in range(i)))/L[i][i]
+                  for r,v in enumerate(row)])
+    Z=[None]*n
+    for i in reversed(range(n)):
+        Z[i]=[(v-fsum(L[j][i]*Z[j][r] for j in range(i+1,n)))/L[i][i]
+              for r,v in enumerate(Y[i])]
+    return [[round(10**20*x) for x in row] for row in Z]
+
+
+
+k=18
+K=120
+alpha,tau=F(fraction),F("1e-12")
+zd=10**20
+neg=rho
+Z=proposed_coefficients(pos,c,k,alpha,tau)
+assert len(Z)==len(pos) and all(len(row)==k for row in Z)
+Eps=(4*max(abs(F(l0)-F(c0_offset)),abs(F(r0)-F(c0_offset))))**k/factorial(k)
+delta=8*Eps*(2+Eps)*sum(w*(b-a) for a,b,w in neg)
+assert 0<delta<F("9.656e-36")
+assert tau+delta<F("6.713e-9")
+
+# Exact moments and inverse on the short negative enclosure.
+mom=[sum(w*(b**(i+1)-a**(i+1))/(i+1) for a,b,w in neg) for i in range(2*k-1)]
+scale4=[F(4**i,factorial(i)) for i in range(k)]
+M=[[scale4[i]*scale4[j]*mom[i+j] for j in range(k)] for i in range(k)]
+aug=[M[i]+[F(i==j) for j in range(k)] for i in range(k)]
+for i in range(k):
+    piv=aug[i][i]
+    assert piv>0
+    aug[i]=[x/piv for x in aug[i]]
+    for j in range(k):
+        if j!=i:
+            multiple=aug[j][i]
+            aug[j]=[y-multiple*x for x,y in zip(aug[i],aug[j])]
+inv=[row[k:] for row in aug]
+assert all(inv[i][j]==inv[j][i] for i in range(k) for j in range(k))
+print("short negative moment inverse",len(neg),"delta",float(delta),flush=True)
+
+# Integer coefficients represent the k residual physical carriers.
+grid=10**50
+p=[[0]*K for _ in range(k)]
+for n in range(K):
+    moments=[]
+    cap=100
+    for a,h,_ in pos:
+        l,r=int(cap*a),int(cap*(a+h))
+        assert l==cap*a and r==cap*(a+h) and r-l==2
+        moments.append(r**(n+1)-l**(n+1))
+    q=F(grid*4**n,zd*2*(n+1)*cap**n*factorial(n))
+    for j in range(k):
+        coef=F(n==j)*grid - q*sum(Z[b][j]*u for b,u in enumerate(moments))
+        p[j][n]=(-1)**(n//2)*round(coef)
+eps=[]
+huge=[]
+donor_eps=[(4*max(abs(a),abs(a+h)))**K/factorial(K) for a,h,w in pos]
+assert max(donor_eps)<F("1.03e-31")
+for j in range(k):
+    col=[abs(row[j]) for row in Z]
+    eps.append(3*(F(K,2*grid)+sum(u*v for u,v in zip(col,donor_eps))/zd))
+    huge.append(3*(1+F(sum(col),zd))+eps[-1])
+assert max(eps)<F("1.801e-48")
+print("residual vectors",k,"error",float(max(eps)),"rough norm",float(max(huge)),flush=True)
+
+# Exact polynomials, paired with directed oscillating physical moments.
+assert c==c0+F("708.63")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(80))
+    return s,s+y**161/161
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**90)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(48))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(48))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**96/factorial(96)
+assert err<F("1e-80")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**70
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+small_grid=10**60
+modes=[[],[],[]]
+for n in range(2*K-1):
+    if n%2==0:
+        plain=F(4,n+1)
+        modes[0].append(round_out(plain-2*rec[n][1],plain-2*rec[n][0],small_grid))
+        modes[1].append(round_out(plain+2*rec[n][0],plain+2*rec[n][1],small_grid))
+        modes[2].append((F(0),F(0)))
+    else:
+        modes[0].append((F(0),F(0)))
+        modes[1].append((F(0),F(0)))
+        modes[2].append(round_out(*scale(2,rec[n]),small_grid))
+scaledmodes=[[(int(a*small_grid),int(b*small_grid)) for a,b in mode] for mode in modes]
+
+diagonal=[tau/(alpha*w) for a,h,w in pos]
+den=small_grid*grid**2
+work_grid=10**30
+upper=[[0]*k for _ in range(k)]
+lower=[[0]*k for _ in range(k)]
+for i in range(k):
+    for j in range(i,k):
+        a=b=0
+        for n, primal in enumerate(p[i]):
+            for m, adjoint in enumerate(p[j]):
+                coeff=primal*adjoint
+                l,r=scaledmodes[0 if n%2==m%2==0 else 1 if n%2==m%2==1 else 2][n+m]
+                if coeff<0:
+                    l,r=r,l
+                a+=l*coeff
+                b+=r*coeff
+        # Also enclose the exact positive ridge term in the work grid.
+        aa=bb=0
+        for e,d in enumerate(diagonal):
+            val=d*F(Z[e][i]*Z[e][j],zd**2)*work_grid
+            aa+=val//1
+            bb+=-((-val)//1)
+        err=eps[i]*huge[j]+eps[j]*huge[i]+eps[i]*eps[j]
+        lo=tau*inv[i][j]-F(b,den)-F(bb,work_grid)-err
+        hi=tau*inv[i][j]-F(a,den)-F(aa,work_grid)+err
+        l,h=round_out(lo,hi,work_grid)
+        lower[i][j]=lower[j][i]=int(work_grid*l)
+        upper[i][j]=upper[j][i]=int(work_grid*h)
+    if i%4==0:
+        print("enclosed rows",i+1,"of",k,flush=True)
+assert all(lower[i][j]<=upper[i][j] for i in range(k) for j in range(k))
+rounderr=max(sum(upper[i][j]-lower[i][j] for j in range(k)) for i in range(k))
+print("directed matrix row uncertainty",float(F(rounderr,work_grid)),flush=True)
+assert F(rounderr,work_grid)<F("1e-23")
+T=[[(lower[i][j]+upper[i][j])//2-(rounderr if i==j else 0) for j in range(k)] for i in range(k)]
+
+# Exact fraction-free congruence sign.
+last=1
+for i in range(k):
+    p=T[i][i]
+    print("pivot",i,float(F(p,last*work_grid)),flush=True)
+    assert p>0
+    for j in range(i+1,k):
+        for l in range(j,k):
+            n=p*T[j][l]-T[i][j]*T[i][l]
+            q,r=divmod(n,last)
+            assert r==0
+            T[j][l]=T[l][j]=q
+    last=p
+assert F(T[0][0],work_grid)>F("5.9727e-8")
+beta=F(".124997987")-F(".0001071")
+def raw_tail(radius,degree):
+    error=F(radius)**degree/factorial(degree)
+    return error*(2+error)
+e40=F(8)**40/factorial(40)
+H=(e40/25)*(2+e40/25)
+fixed=F("2.95e-8")+27*raw_tail(8,36)+225*raw_tail(8,40)+30*raw_tail("14.6",64)+70*raw_tail(12,52)+37*H
+branches=[]
+for a14 in (F("31e-9"),F("40e-9")):
+    for t22 in (F("3e-13"),F("5e-13")):
+        for t23 in (F("1e-15")+19*H,F("3e-10")+10*H,F("5e-10")+10*H):
+            for t24 in (F("1e-16")+22*H,F("1e-10")+11*H):
+                for t25 in (F("1e-15"),F("5e-15")):
+                    branches.append(fixed+a14+t22+t23+t24+t25)
+assert len(branches)==48
+
+old_room=F(".000001")*beta-max(branches)
+assert old_room>F("6.713e-9")
+intervals=[(F(row[0]),F(row[1])) for row in rows.values()]
+boxes=[(F(row[2]),F(row[3])) for row in rows.values()]
+assert F("640.32")<intervals[0][0]
+assert all(right<left for (left0,right),(left,right0) in zip(intervals,intervals[1:]))
+assert all(a<=u<v<=b for (a,b),(u,v) in zip(intervals,boxes))
+assert all(v<start or stop<u for u,v in [(F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))])
+assert F(5085348195,4)*pi_lower-F("5.55")-2>c0+stop
+base_options = {
+    "published-first": F("5e-9") + F("8e-10"),
+    "repriced-first": F("4.5e-10") + F("8e-10"),
+    "joint-residual": F("7.47626e-10"),
+}
+caps = {}
+for label,pair_price in base_options.items():
+    spent=pair_price+F("2.356e-16")+F("6.382e-23")+4*tau+F("8e-23")+delta
+    all_caps=[max(F(".953004")+(old+spent)/beta,F(".95"),alpha) for old in branches]
+    assert len(all_caps)==48 and max(all_caps)<F(".953005")
+    caps[label]=max(all_caps),old_room-spent
+assert caps["published-first"][1]>F("9.097e-10")
+assert caps["repriced-first"][1]>F("5.4597e-9")
+assert caps["joint-residual"][1]>F("5.96209e-9")
+print("PASS exact signed donor E9 and all 48x3 price combinations",
+      {label:(float(cap),float(room)) for label,(cap,room) in caps.items()})
+~~~
