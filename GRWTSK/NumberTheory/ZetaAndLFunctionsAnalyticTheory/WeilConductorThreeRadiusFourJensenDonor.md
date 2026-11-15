@@ -5344,3 +5344,209 @@ for label,pair_price in options.items():
         assert min(room)>F("6.7037e-9")
     print("PASS original q71 price branches",label,float(max(caps)),float(min(room)))
 ~~~
+
+## Two detached pockets under the existing derivative charge
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 71-enclosure comparison](https://github.com/grwtsk/math/blob/3decc2804f74c714de89ad47af1806d6309139a2/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob 3cfe782ecc2946e39202a748b43a6f04825b3b2b.
+The original radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the
+complex odd physical carrier $L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$,
+its zero extension, folded measure $d\nu/\pi$, the original
+masks and the physical projection. For the primitive
+nonprincipal odd character modulo three, use the full
+parity-one gamma, all $458$ signed prime powers and zero
+principal-pole term. The displayed detunings use
+$c_1=99653682.92983$ and include the reflected restrictions.
+
+The original multiplier is strictly positive on the
+complement of
+$E_{18}=[796.12,796.30]$ and $E_{19}=[802.92,803.02]$
+in $[796.12,810.64]$. The positive sign at all four
+box endpoints is checked directly, and $796.22$ and
+$802.97$ are strictly negative. The directed sign check
+uses $712$ complement cells with no bisections. It
+joins the preceding sign interval at the positive
+endpoint $796.12$.
+
+Use $Y_{18}=[794.22,798.22]$ and $Y_{19}=[800.97,804.97]$,
+with respective midpoints $c_1+796.22$ and $c_1+802.97$.
+The donors have radius two. Their mutual gap is $2.75$,
+and $Y_{18}$ starts $3.36$ after the E16/E17 common donor
+ends at $790.86$. The preceding sign interval covers the
+left part of $Y_{18}$. It follows that $Y_{18}$ contains
+only the negative restriction $E_{18}$ and $Y_{19}$
+contains only $E_{19}$. Both positive tags are
+disjoint from the retained tags. The guard checks the
+original masks and the remote resource separations.
+On each donor the same parity-one bracket and absolute
+prime amplitude budget as in the preceding derivative
+comparison give the unscaled bound $|m|<228.678<272$.
+
+Each new fixed donor also fails at zero scalar charge
+and any finite positive coefficient. Its strictly negative
+witness lies in an open subinterval with zero positive
+weight. The odd sine restriction to the bounded donor
+has dense range by Fourier uniqueness for the odd extension
+of a function orthogonal to its range. Boundedness of both
+weights transfers a strict frequency-space violation on
+that negative subinterval to a physical input.
+
+Use the published directed prices $\ell_j\le m_+/\pi$
+and $\eta_j\ge m_-/\pi$ on the donors. The positive
+$.02$ bin and nonzero negative $.0025$ cell counts
+are $(193,53)$ and $(196,18)$, respectively. For each new
+donor, the guard proves positive definiteness on complex
+polynomials of degree less than $40$ of
+$$
+ p\longmapsto
+ \int_{Y_j}\bigl(\tfrac9{10}\ell_j-\eta_j\bigr)|p|^2\,d\nu
+ +\frac{10^{-15}}{4^{32}\pi_{\rm hi}}
+        \int_{Y_j}|p^{(16)}|^2\,d\nu .
+$$
+This is the same local comparison as for $Y_{14}$ and
+$Y_{15}$. All $40$ leading rational pivots in each
+new directed matrix are strictly positive.
+
+Apply the established Taylor–Young transfer at orders
+$16$ and $40$. All four disjoint derivative donors use
+the same coefficients, so one Plancherel estimate on
+each order of the unmasked odd sine amplitude gives
+$$
+ \sum_{j\in\{14,15,18,19\}}N_{E_j}^*N_{E_j}
+ \preceq \tfrac{4803}{5330}
+           \sum_{j\in\{14,15,18,19\}}\mathcal P_{Y_j}
+          +(1.009\cdot10^{-15})I.
+$$
+This is the same scalar upper debit as for E14 and E15.
+Both new tags are reserved once, and their fraction
+fits the existing $19/20$ maximum. The E16/E17 common
+donor retains its separate positive reservation and
+scalar bound. The genuine preceding positive tags
+and $\beta I$ fit the reduced comparator. All $48$
+price choices under each of the four first-pair prices
+retain cap below $0.953005$. The least common-map room
+exceeds $6.7037\cdot10^{-9}$.
+
+Append the disjoint $N_{E_{18}}$ and $N_{E_{19}}$ to
+$W_{\mathrm{all71}}$ to form $W_{\mathrm{all73}}$.
+The contiguous signed coverage reaches $810.64$.
+The actual original physical identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all73}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all73}}
+ =S_\lambda-W_{\mathrm{all73}}^*W_{\mathrm{all73}}
+ \succeq0.046995S_\lambda.
+$$
+The full remaining outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all73}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses
+and directional return.
+
+Extract the guard and pass the pinned radius-four
+arithmetic Markdown and the Jensen donor Markdown
+containing the derivative and the joint E16/E17 checkers.
+The guard selects existing blocks by unique digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    matches=[code for code in blocks if sha256(code.encode()).hexdigest()==digest]
+    assert len(matches)==1
+    return matches[0]
+
+def execute(code,args,**extras):
+    original=sys.argv
+    state={"__name__":"__main__","__file__":__file__,**extras}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+common=checker("c35c6b54ed082ad0ef3352039c393b7707e68d38fec0c54dc7357d862da06713")
+paid=execute(common,[arithmetic,jensen,"1e-12"])
+assert paid["tau"]<F("1.001e-12")
+assert (paid["a"]["start"],paid["b"]["stop"])==tuple(map(F,("782.86","790.86")))
+assert paid["third"]["stop"]==F("796.12")
+assert paid["third"]["boxes"]==[tuple(map(F,("786.68","787.06")))]
+assert paid["third"]["node"](F("796.12"))[1]<paid["third"]["Alo"]
+
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+source=checker("fb06ddc22892ae6f573f0dc659a5e60c9b156ba327344f8f043d3ad06f2bfbb9")
+statistics={
+    "e18":("794.22","798.22","796.12","796.30","796.22",193,53),
+    "e19":("800.97","804.97","802.92","803.02","802.97",196,18),
+}
+prices={tag:vals[:5]+(".9",) for tag,vals in statistics.items()}
+
+def replace(text,old,new):
+    assert text.count(old)==1
+    return text.replace(old,new)
+
+directed=replace(core,
+    '"e9":("707.62","709.62","708.60","708.66","708.63",".25"),',
+    "\n    ".join(repr(tag)+":"+repr(row)+"," for tag,row in prices.items()))
+for old,new in (
+    ('("708.60","710.86",".02")','("796.12","810.64",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(712,0)'),
+    ('len(pos)==98 and len(rho)==9',
+     '(len(pos),len(rho))=={"e18":(193,53),"e19":(196,18)}[mode]'),
+):
+    directed=replace(directed,old,new)
+
+try:
+    execute(directed,[arithmetic,"sign"])
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete two-pocket sign guard did not return")
+
+# Every new donor starts after the common E16/E17 positive resources.
+y18l,y18r,e18l,e18r,_=map(F,statistics["e18"][:5])
+y19l,y19r,e19l,e19r,_=map(F,statistics["e19"][:5])
+assert F("767.33")<paid["a"]["start"]<paid["b"]["stop"]<y18l<e18l<e18r<y18r
+assert y18r<y19l<e19l<e19r<y19r<F("810.64")
+assert e18l==paid["third"]["stop"] and paid["third"]["boxes"][0][1]<y18l
+assert y18l-paid["b"]["stop"]==F("3.36") and y19l-y18r==F("2.75")
+assert all(v<y18l or y19r<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*paid["b"]["pi_lower"]-F("5.55")-2>paid["b"]["c0"]+y19r
+
+for old,new in (
+    ('def generated_code(donor,mode):\n',
+     'def generated_code(donor,mode):\n    if donor in ("e18","e19"):\n        return next_directed\n'),
+    ('    "e15":("763.33","767.33","765.22","765.44","765.33",190,72),',
+     '    "e15":("763.33","767.33","765.22","765.44","765.33",190,72),\n    **next_statistics,'),
+    ('assert branches[0]==branches[1]',
+     'assert len(branches)==4 and all(row==branches[0] for row in branches)'),
+    ('+F("2.466e-21")+cost','+F("2.466e-21")+cost+common_price'),
+    ('F("6.7047e-9")','F("6.7037e-9")'),
+    ('PASS original q69 price branches','PASS original q73 price branches'),
+):
+    source=replace(source,old,new)
+assert "r,k=40,16" in source and 'price,mu=F(".9"),F("1e-15")' in source
+updated=execute(source,[arithmetic,jensen],next_directed=directed,
+                next_statistics=statistics,common_price=paid["tau"])
+assert updated["beta"]==paid["beta"] and updated["old"]==paid["old"]
+assert updated["options"]==paid["options"] and updated["tail"]<=paid["tail"]
+print("PASS derivative pool reused once for E14/E15/E18/E19 at q73")
+~~~
