@@ -17737,3 +17737,360 @@ assert lower_floor>0
 print("PASS X8 exact signed matrix and mixed budget",str(candidate),k,
       scale.bit_length(),float(lower_floor),flush=True)
 ~~~
+
+## One signed comparison for two overlapping-window components
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review is
+UNASSESSED.
+
+Keep the original complex odd physical carrier, Fourier restriction
+$K$, angular masks, sign multiplier and projection $\Pi_H$.
+Use the actual primitive nonprincipal odd character modulo
+three, the full parity-one gamma term and all $458$ signed
+prime-power terms. The principal-pole term is zero in this
+sector. Write $D=BI-\lambda\Pi_H\ge\beta I$ and
+$S_\lambda=D+K^*m_+K$ with the original constants.
+
+After the comparison through detuning $269.70$, let $X_9$
+be the reflected slab with positive detunings $[281.88,289.18]$
+from $c_1$. With $\mathcal P_9=K^*1_{X_9}m_+K$ and
+$N_9=\sqrt{m_-}\,1_{X_9}K$, one signed moment test gives
+$$
+ N_9^*N_9\le\tfrac34\mathcal P_9+(10^{-9}+\delta_9)I,
+ \qquad \delta_9<1.6\cdot10^{-13}.
+$$
+This pays both negative enclosures in the new slab with
+one positive resource and one scalar price. The joint
+comparison for the thirty-four debited enclosures is
+below $0.953405$ and pays every actual negative frequency
+in reflected $c_1+[-16.64,289.18]$, along with the previously
+debited detached and remote enclosures.
+
+### Two actual components and their common positive cell
+
+With the actual masks clear on $[269.70,289.18]$, use the
+full Binet bracket $17.6779<A<17.6780$, original
+$1-3\cdot10^{-10}\le w\le1$ and directed signed prime
+sum with $|P_4''|<13504$. The $976$ complement checks
+with nine bisections certify positivity outside the two
+enclosures $[283.78,283.98]$ and $[287.10,287.22]$.
+The endpoints of both enclosures are strictly positive.
+The width-$0.005$ guards certify $m<-3$ on the radius-
+$0.005$ core at $283.88$, and $m<-0.5$ on the corresponding
+core at $287.18$. In particular the two selected actual
+negative components are distinct and lie in their respective
+enclosures.
+
+The distance between any two centers chosen in those
+enclosures is at most $3.44$. Radius-two windows centered
+there consequently share at least the interval
+$[285.22,285.78]$. In the shared $0.02$ cell
+$[285.22,285.24]$, the actual folded positive density has
+directed lower bound above $5.63$ and upper bound below
+$6.67$. Charging three quarters of the actual density to each
+window would require $3/2$ of the actual positive supply
+on the shared cell, where that supply is strictly positive.
+Charging three quarters of the common certified lower
+density to each window also exceeds the actual supply,
+since $(3/2)5.63>6.67$. These statements apply to the
+specified shared-cell charges. The composite $X_9$ gives
+both negative enclosures one actual positive term.
+
+### One composite signed moment comparison
+
+Use the three-quarter-positive signed lower density rule
+on the $1460$ width-$0.005$ cells of the positive side
+of $X_9$. Folding uses $d\nu/\pi$. There are $62$
+negative lower-step cells and the raw signed step
+multiplier has absolute bound $30$. The previous centered
+angular $L^2$ Taylor proof with width $h=7.30$ and
+$k=64$ gives
+$\epsilon_{64}=(14.6)^{64}/64!$. The signed form error for the lower step under this
+Taylor approximation is bounded by $\delta_9=30\epsilon_{64}(2+\epsilon_{64})$.
+With the center $c_1+285.53$ take the exact signed
+moment matrix $M_9$ and the physical upper Gram
+$\bar G_9$ from the degree-$63$ envelope.
+All $64$ leading principal minors of
+$10^{-9}\bar G_9+\bar G_9M_9\bar G_9$ are positive
+in the exact rational check. The signed lower order,
+physical Gram domination and angular error establish
+the displayed inequality for the true debit $N_9$.
+
+The actual negative part on $X_9$ is contained in the
+two disjoint enclosures. Splitting its output into
+those restrictions leaves $N_9^*N_9$ equal to the
+sum of their physical debit forms.
+
+### Positive resources and scalar price accounting
+
+The composite slab $X_9$ is disjoint from all earlier direct slabs,
+tagged positive allocations and negative enclosures.
+Reserve the positive terms of all ten direct
+slabs $X_0,\ldots,X_9$ before the earlier
+$q_{23}=0.953004$ input comparison. Then
+$S_{\rm keep}=S_\lambda-\sum_{i=0}^9\mathcal P_i\ge\beta I$.
+The earlier row bound still holds against this
+comparator. Adding the ten disjoint direct
+inequalities with $I\le S_{\rm keep}/\beta$
+gives a joint cap at most
+$$
+ \max\left\{0.953004+
+ \frac{1/20000+2\cdot10^{-8}+3\delta_{36}
+   +7\cdot10^{-9}+74\epsilon_{40}(2+\epsilon_{40})+\delta_9}
+ {\beta},\tfrac34\right\}<0.953405 .
+$$
+Here $\delta_{36}=9(8^{36}/36!)(2+8^{36}/36!)$
+and $\epsilon_{40}=8^{40}/40!$. Both $X_3$ and
+$X_9$ use a three-quarter positive fraction.
+The other direct slabs use their separate quarter
+fractions.
+
+Stack $W_{23},N_0,\ldots,N_8$ with the two disjoint output
+restrictions of $N_9$ to obtain $W_{\rm all34}$. Put
+$S_{\rm all34}=S_\lambda-W_{\rm all34}^*W_{\rm all34}
+\ge0.046595S_\lambda$. For the actual unpaid negative
+restriction $N_{\rm out}$,
+$T_+-\lambda\Pi_H=S_{\rm all34}-N_{\rm out}^*N_{\rm out}$.
+Conjugation with $S_{\rm all34}^{-1/2}$ reduces its sign to
+$\|N_{\rm out}S_{\rm all34}^{-1}N_{\rm out}^*\|\le1$.
+This is still open. The original seven leading inverses
+and directional return use that sign. The separate unpaid
+trace corridor remains outside these debits.
+
+Extract the exact guard and pass the complete pinned source
+Markdown path followed by `geometry` or `joint`.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+assert mode in ("geometry","joint")
+start=F("269.70") if mode=="geometry" else F("281.88")
+stop=F("289.18")
+lowarg=47581257 if mode=="geometry" else 47581263
+higharg=47581267
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+step=F(".02") if mode=="geometry" else F(".005")
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("1e-11")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+boxes=((F("283.78"),F("283.98")),(F("287.10"),F("287.22")))
+if mode=="geometry":
+    for (u,v),pocket,depth in zip(boxes,map(F,("283.88","287.18")),map(F,("3",".5"))):
+        assert node(u)[1]<Alo and node(v)[1]<Alo
+        for x in (pocket-F(".005"),pocket):
+            assert (1-F("3e-10"))*(estimate(x,F(".005"))[0]-Ahi)>depth
+    max_distance=boxes[1][1]-boxes[0][0]
+    assert max_distance==F("3.44") and 4-max_distance==F(".56")
+    checks,splits=0,0
+    def positive(x,h):
+        global checks,splits
+        lo,hi=estimate(x,h)
+        checks+=1
+        if hi<Alo:
+            return
+        assert lo<Ahi and h>F(".000625")
+        splits+=1
+        positive(x,h/2)
+        positive(x+h/2,h/2)
+    complement=((start,boxes[0][0]),(boxes[0][1],boxes[1][0]),(boxes[1][1],stop))
+    for l,r in complement:
+        assert ((r-l)/step).denominator==1
+        for j in range(int((r-l)/step)):
+            positive(l+j*step,step)
+    assert F("285.22")==boxes[1][1]-2 and F("285.78")==boxes[0][0]+2
+    hit=None
+    for j in range(28):
+        x=F("285.22")+j*step
+        lo,hi=estimate(x,step)
+        rawlo=max(F(0),(1-F("3e-10"))*(Alo-hi)/pi_upper)
+        rawhi=max(F(0),(Ahi-lo)/pi_lower)
+        if F(3,2)*rawlo>rawhi:
+            hit=(x,x+step,rawlo,rawhi)
+            break
+    assert hit is not None
+    assert hit[:2]==(F("285.22"),F("285.24"))
+    assert hit[2]>F("5.63") and hit[3]<F("6.67") and F(3,2)*hit[2]>hit[3]
+    assert (checks,splits)==(976,9)
+    print("PASS actual shared-cell overprice at two three-quarter lower allocations",
+          *(float(x) for x in hit))
+    print("PASS actual distinct negative components, overlap at least .56",checks,splits)
+    raise SystemExit
+
+from math import lcm
+
+centre_offset=(start+stop)/2
+c=c0+centre_offset
+wmin=1-F("3e-10")
+radius=F("3.65")
+assert start==centre_offset-radius and stop==centre_offset+radius
+assert count==1460
+assert node(start)[1]<Alo and node(stop)[1]<Alo
+rho=[]
+positive_fraction=F(3,4)
+raw_cap=30
+for j in range(count):
+    offset=start+j*step
+    _,upper=estimate(offset,step)
+    raw=Alo-upper
+    lower=positive_fraction*wmin*raw/pi_upper if raw>=0 else raw/pi_lower
+    lower=F((lower*10**7)//1,10**7)
+    assert pi_upper*abs(lower)<raw_cap
+    if lower:
+        rho.append((offset-centre_offset,offset+step-centre_offset,lower))
+assert len(rho)==1460 and sum(w<0 for _,_,w in rho)==62
+k=64
+moments=[sum(w*(v**(j+1)-u**(j+1))/(j+1) for u,v,w in rho)
+         for j in range(2*k-1)]
+coefficient=[(-1)**(i//2)*F(4**i,factorial(i)) for i in range(k)]
+M=[[coefficient[i]*coefficient[j]*moments[i+j] for j in range(k)] for i in range(k)]
+G=[[(F(4,i+j+1) if (i+j)%2==0 else F(0))+(F(k)/c if i==j else F(0))
+    for j in range(k)] for i in range(k)]
+
+def mul(A,B):
+    return [[sum(A[i][u]*B[u][j] for u in range(k)) for j in range(k)] for i in range(k)]
+
+q=mul(mul(G,M),G)
+assert all(q[i][j]==q[j][i] for i in range(k) for j in range(k))
+B,lam=F(".124997987"),F(".0001071")
+beta=B-lam
+eps=(4*radius)**k/factorial(k)
+delta=raw_cap*eps*(2+eps)
+assert delta<F("1.6e-13")
+print("signed cells",len(rho),sum(w<0 for u,v,w in rho),"folded raw bound",float(pi_upper*max(abs(w) for u,v,w in rho)),"Taylor operator error",float(delta),flush=True)
+candidate=F("1e-9")
+C=[[candidate*G[i][j]+q[i][j] for j in range(k)] for i in range(k)]
+scale=lcm(*(v.denominator for row in C for v in row))
+scaled=[[int(v*scale) for v in row] for row in C]
+assert all(den==int(den) for row in C for den in (v*scale for v in row))
+last=1
+for j in range(k):
+    pivot=scaled[j][j]
+    if pivot<=0:
+        raise AssertionError(("first failed joint signed moment pivot",j,float(F(pivot,last*scale))))
+    for i in range(j+1,k):
+        for r in range(i,k):
+            num=pivot*scaled[i][r]-scaled[i][j]*scaled[r][j]
+            value,rest=divmod(num,last)
+            assert rest==0
+            scaled[i][r]=value
+    for i in range(j+1,k):
+        for r in range(i+1,k):
+            scaled[r][i]=scaled[i][r]
+    last=pivot
+lower_floor=beta-candidate-delta
+eps36=F(8)**36/factorial(36)
+delta36=9*eps36*(2+eps36)
+eps40=F(8)**40/factorial(40)
+old_price=F(1,20000)+2*F("1e-8")+3*delta36+6*F("1e-9")+74*eps40*(2+eps40)
+new_cap=max(F(".953004")+(old_price+candidate+delta)/beta,positive_fraction)
+assert new_cap<F(".953405")
+assert lower_floor>F(".12484")
+actual_projection_error=544*eps
+assert (lower_floor-2*actual_projection_error)/(B-actual_projection_error)>F(".9987")
+paid_spans=[(F("-16.64"),F("269.70")),(F(350),F(405)),
+            (F("5311.55"),F("5315.55")),(F(20345),F(20410))]
+assert all(r<start or stop<l for l,r in paid_spans)
+c2_lo=F(5085348195,4)*pi_lower
+assert c2_lo-F("5.55")-2>c0+stop
+print("exact mixed-fraction cap with this new block",float(new_cap),flush=True)
+assert lower_floor>0
+print("PASS composite two-enclosure signed moment comparison",str(candidate),k,
+      scale.bit_length(),float(lower_floor),flush=True)
+~~~
