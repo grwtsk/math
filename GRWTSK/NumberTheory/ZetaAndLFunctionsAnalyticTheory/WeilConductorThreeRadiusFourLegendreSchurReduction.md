@@ -12390,3 +12390,455 @@ assert uniform<F(".0019")
 assert max(F(".694"),F(".46"),F(".953"))+uniform<F(".955")
 print("PASS complete local slab, six-row norm below .954 and adaptive uniform norm below .955")
 ~~~
+
+## A contiguous reflected slab with eleven jointly compared rows
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks on the original signed source. Lean
+elaboration, kernel replay and transitive axiom audit are NOT_RUN.
+External independent review is UNASSESSED.
+
+Keep the original primitive odd character modulo three and the
+bounded carrier $\mathcal H=L^2_{\rm odd}([-4,4],dt;\mathbb C)$.
+Use $\lambda=0.0001071$, $B=0.124997987$ and
+$S_\lambda=B I-\lambda\Pi_H+K^*m_+K$ with the original
+projection and Fourier restriction. Thus $\beta=B-\lambda=0.124890887$.
+The actual reflected negative restriction in each enclosure defines
+its bounded row on $\mathcal H$ by zero extension and Fourier
+restriction. On the positive frequency axis use the slab
+$I=c_1+[-16.64,78.82]$, of width $95.46$, and reflect it.
+The source multiplier is strictly positive on the complement in
+$I$ of the eight enclosures
+$$
+ [-14.74,-14.50],\ [-11.40,-11.16],\ [-0.18,0.20],\
+ [21.54,21.68],\ [22.42,22.56],\ [49.40,49.58],\
+ [73.44,73.66],\ [76.66,76.98]\,
+$$
+in the $c_1$-detuning coordinate. Each new row debits the actual negative restriction throughout
+its enclosure. Retain the old $c_1$ debit once with its rechecked
+costs, and retain the two split rows at $c_1+73.50,c_1+76.82$. The eight rows therefore
+debit all actual negative support in the reflected slab. Together
+with the original separate rows $c_2,c_3,c_4$ their joint
+comparison has norm below $0.954$ for this $S_\lambda$.
+
+### Directed signs throughout the full slab
+
+The slab is contained in the original low-filter band and clear
+of the original excluded frequency bands. In particular its
+filter is at least $1-3\cdot10^{-10}$. The full Binet bracket
+$17.6779<A<17.6780$ follows from directed endpoint argument
+bounds $47581120$ and $47581168$ for $3|\nu|/(2\pi)$,
+with error $5/(9y)+9/(32y^2)$ at $y=|\nu|/2$.
+The primary sign calculation retains the literal $458$ prime
+powers, their character signs and the bound $|P_4''|<13504$.
+Use mesh $0.02$ and the interpolation error $13504h^2/8$
+on a subinterval of width $h$.
+
+For fast directed evaluation on the full mesh, anchor each atom
+at the left edge and anchor its one-mesh-step rotation with the
+source directed trigonometric evaluator. Round Cartesian
+coordinates to denominator $Q=10^{24}$. Both complex errors
+are below $\varepsilon=10^{-11}$ using the sum of the two
+coordinate enclosures. Advance by integer complex multiplication
+and truncate each resulting coordinate to that same denominator.
+If $E_k$ is the error at step $k$, unit modulus of the exact
+rotation and exact anchor give
+$$
+ E_{k+1} \le (1+\varepsilon)E_k+\varepsilon+2/Q
+       \le E_k+2\varepsilon
+$$
+for $E_k<1/2$. Inductively $E_k<(2k+1)\varepsilon<10^{-7}$
+for all $4773$ rotations. Every rounded signed amplitude differs
+from its actual value by less than $10^{-17}$. Their absolute
+directed mass sums to less than $211$. Thus the weighted prime
+sum at each mesh node has radius below
+$211\cdot10^{-7}+458\cdot10^{-17}(1+10^{-7})<0.000022$.
+Use the direct source trigonometric enclosure at nonmesh nodes.
+On this band $m=w(A-P_4)$ with $0<w\le1$. The guard bisects
+whenever the interpolated upper bound has yet to prove $P_4<A$.
+It checks $4708$ intervals and performs $14$ bisections. The
+multiplier is positive throughout the complement and at the
+enclosure endpoints. Each enclosure contains a certified negative
+center. Debit the complete clipped restriction inside each enclosure.
+
+### Pointwise folded positive supply
+
+The five new centers are $c_1$ plus $-14.64,-11.28,21.62,22.48,49.50$.
+Each uses a positive window of radius two. The first two share
+32 aligned width-$0.02$ cells and the next two share 157.
+Within a shared cell use a single computed directed lower
+density and allocate half to each of the two rows. Between the
+five groups of windows, namely those two pairs, the old $c_1$
+singleton, the new $c_1+49.50$ singleton and the old final pair,
+the positive windows are disjoint. Endpoints are null.
+The exact unsplit positive lower masses on the two new
+intersections exceed $1.43$ and $15.94$. The sum of actual
+allocations is dominated pointwise by the original folded
+$m_+(\nu)\,d\nu/\pi$. The earlier double allocation
+counterexample in the last pair still applies. It prohibits
+charging each row the full shared mass.
+
+The exact positive budgets use the original degree-$32$
+Legendre reconstruction, $0.02$ lower positive cells,
+$0.005$ upper negative cells and the original Gram and Taylor
+corrections. Each new row has diagonal cost below $0.25$,
+normalized physical cost squared below $0.03$, folded
+total-variation norm below $3.2$ and both endpoint-phase
+norms below $0.14$. The same caps hold for the two retained
+final rows. For $c_1$ the positive-coordinate cost is below
+$0.65$, normalized physical cost squared is below $0.045$,
+total variation is bounded by $1.15+8.07=9.22$, and the
+endpoint-phase norm is below $0.20$. The $c_1$ constants
+use its locally bracketed guard and the original signed terms.
+
+### Direct group comparison and the source return
+
+Give all eight rows one common physical input $\sqrt\beta f$
+and a separate copy of $L^2(\mu_{+,i})$ for each allocated
+positive measure. In the folded evaluation, $v_\nu(t)=\sin(\nu t)$.
+For a debited frequency $\eta$ the output has the algebraic
+factorization
+$$
+ \langle v_\eta,f\rangle
+ =\left\langle v_\eta-\int q_{i,\eta}(\nu)v_\nu\,d\mu_{+,i}(\nu),f\right\rangle
+ +\int q_{i,\eta}(\nu)\langle v_\nu,f\rangle\,d\mu_{+,i}(\nu).
+$$
+Here $q_{i,\eta}$ is the real reconstruction from the rational
+matrix in the row guard, with detunings measured about the row
+center. The squared norm of the corresponding common input is
+bounded by the $S_\lambda$ form, by pointwise measure domination
+and $B I-\lambda\Pi_H\ge\beta I$. The Gram of the eight positive
+coordinates has norm at most the maximum individual cost,
+below $0.65$. The squared norm of the vertical stack of
+normalized physical errors is bounded by the sum of squared
+Hilbert--Schmidt costs, below $0.045+7\cdot0.03=0.255$.
+Thus the slab group has norm below $0.905$. Its aggregate
+total variation bound is $T<13$ and endpoint-phase bound is
+$D<0.43$, by summing the eight individual squares. Its center
+is $c_1+31.09$ and its support radius is less than $48$.
+
+The difference and sum between this center and $c_4$ are
+$d>5200$ and $\sigma>10^8$. They change by at most $r=50$
+over both residual supports. Freeze the two denominators in
+the exact physical sine Gram at these centers. The resulting
+block norm, divided by $\beta$, is at most
+$$
+ \frac1\beta\left[
+ DD_4\left(\frac1d+\frac1\sigma\right)
+ +TT_4r\left(\frac1{d(d-r)}+\frac1{\sigma(\sigma-r)}\right)
+ \right]<0.001,
+$$
+using $D_4<0.2$, $T_4<4.2$, and $\beta>0.12$. The first
+term factors into the endpoint phase functionals on each sign.
+The two remainder kernels are dominated by the two total
+variations. With the old $c_4$ diagonal below $0.46$, this
+combined low group has comparison norm below $0.906$.
+
+Every sum and difference denominator between this group and
+the original high pair is above $3.8\cdot10^9$. The plain sine
+Gram therefore charges less than
+$2(13+4.2)(9+2.66)/(3.8\cdot10^9\cdot0.12)<10^{-6}$.
+The old high-pair norm is below $0.953$. Thus the exact full
+row factorization gives
+$$
+ \|\mathcal W_{\rm all11}S_\lambda^{-1}
+     \mathcal W_{\rm all11}^{*}\|<0.954.
+$$
+The bounded original Schur comparison after these debits
+has $S_{\rm all11}=S_\lambda-\mathcal W_{\rm all11}^{*}
+\mathcal W_{\rm all11}\ge0.046S_\lambda$. The actual folded
+negative restriction outside these eleven enclosures defines
+a bounded map $N_{\rm out}$. Disjoint
+physical debits give
+$T_+-\lambda\Pi_H=S_{\rm all11}-N_{\rm out}^*N_{\rm out}$.
+Conjugating by $S_{\rm all11}^{-1/2}$ proves that its sign
+is equivalent to
+$\|N_{\rm out}S_{\rm all11}^{-1}N_{\rm out}^*\|\le1$. This is
+equivalent to the original all-$H$ floor $C_{4,+}\ge\lambda I_H$
+by minimizing on the seven physical spaces with the existing
+leading inverses. The directional arithmetic return still
+requires that floor.
+The known negative witnesses at $c_1+378$ and $c_1+20381$ are
+in this remaining support.
+
+### Exact checks
+
+Extract this Python block to a file and pass the complete pinned
+source Markdown as its first argument. Use modes `sign`, `left`,
+`right`, `first`, `low`, `middle`, `high` and `assemble`. The first
+mode certifies the full slab complement. The next six check the five
+new budgets and the tightened original first budget. The last mode
+checks the scalar assembly. The two retained final rows use their
+preceding source guard. Decimal solves propose rational coefficients
+and the subsequent comparisons use exact fractions.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+from decimal import Decimal, localcontext
+
+
+mode=sys.argv[2]
+assert mode in ("sign","left","right","first","low","middle","high","assemble")
+if mode == "assemble":
+    c1 = F("99653682.92983")
+    c4 = c1 + F("5313.55")
+    assert pi_lower>F("3.14")
+    c2_lo = F(5085348195,4)*pi_lower
+    c3_lo = c2_lo - F("5.55")
+    left, right = c1 - F("16.64"), c1 + F("78.82")
+    centre = (left + right) / 2
+    radius = 48
+    assert right - left == F("95.46") and centre == c1 + F("31.09")
+    assert centre - radius < left < right < centre + radius
+    windows = [(-F("14.64"), -F("11.28")), (F(0),),
+               (F("21.62"), F("22.48")), (F("49.50"),),
+               (F("73.50"), F("76.82"))]
+    assert all(old[-1]+2 < new[0]-2 for old, new in zip(windows, windows[1:]))
+    assert c1 + windows[0][0] - 2 == left and c1 + windows[-1][-1] + 2 == right
+    assert [(row[0] + 4 - row[-1]) / F(".02") for row in windows if len(row) == 2] == [32, 157, 34]
+    assert min(c2_lo-2,c3_lo-F(".35")) - (c4+2)>F("3.8e9")
+    assert min(c2_lo-2,c3_lo-F(".35")) + left>F("3.8e9")
+    phase,T = F(".43"),F(13)
+    assert F(".2")**2 + 7*F(".14")**2<phase**2
+    assert (F("1.15")+F("8.07"))**2 + 7*F("3.2")**2<T**2
+    within = F(".65") + F(".045") + 7*F(".03")
+    assert within == F(".905") and within > F(".46")
+    d,s,r = F(5200),F(10**8),F(50)
+    assert c4-centre>d and c4+centre>s
+    T4,phase4,beta=F("4.2"),F(".2"),F(".12")
+    slab_c4 = (phase*phase4*(1/d+1/s)+T*T4*r*(1/(d*(d-r))+1/(s*(s-r))))/beta
+    assert slab_c4<F(".001")
+    far = 2*(T+T4)*(9+F("2.66"))/(F("3.8e9")*beta)
+    assert far<F("1e-6")
+    assert max(within+slab_c4,F(".953"))+far<F(".954")
+    print("PASS exact eleven-row assembly on 95.46 contiguous slab and three existing remote rows", float(slab_c4), float(far))
+    raise SystemExit
+
+c0=F("99653682.92983")
+left_edge,right_edge=c0-F("16.64"),c0+F("78.82")
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert left_edge>30000000 and right_edge<35*10**24
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+Alo,Ahi=F("17.6779"),F("17.6780")
+lowarg,higharg=47581120,47581168
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+if mode in ("sign","low","middle","high"):
+    # The source evaluator is reused to anchor each exact rotation.
+    # Complex arithmetic below uses integer coordinates at scale Q.
+    Q=10**24
+    step=F(".02")
+    count=4773
+    start=F("-16.64")
+    assert start+count*step==F("78.82")
+    tol=F("1e-11")
+    turn_bound=F("1e-7")
+    assert 2*F(1,Q)<=tol/2
+    assert (2*count+1)*tol<turn_bound<F(1,2)
+
+    def anchor(angle):
+        co,si=phase_trig(angle)
+        re=round(sum(co)*Q/2)
+        im=round(sum(si)*Q/2)
+        return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+    acc=[0]*(count+1)
+    amp_err=F("1e-17")
+    for wi,lag in atoms:
+        re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+        twr,twi,et=anchor(multiply((step,step),lag))
+        assert e0<tol and et<tol
+        aa=round(sum(wi)*Q/2)
+        assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+        for k in range(count+1):
+            acc[k]+=aa*re
+            re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+    absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+    assert absolute<211
+    p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+    assert p4err<F(".000022")
+    p4err=F(".000022")
+
+    @cache
+    def fast_node(x):
+        k=(x-start)/step
+        if k.denominator==1 and 0<=k<=count:
+            f=F(acc[int(k)],Q**2)
+            return f-p4err,f+p4err
+        return node(x)
+else:
+    fast_node = node
+
+enclosures=[(F(a),F(b)) for a,b in (
+  ("-14.74","-14.50"),("-11.40","-11.16"),("-.18",".20"),
+  ("21.54","21.68"),("22.42","22.56"),("49.40","49.58"),
+  ("73.44","73.66"),("76.66","76.98"))]
+if mode == "sign":
+    assert all(((v-start)/step).denominator==1 for row in enclosures for v in row)
+    for l,r in enclosures:
+        assert fast_node(l)[1]<Alo and fast_node(r)[1]<Alo
+    comp=list(zip([start]+[r for l,r in enclosures],[l for l,r in enclosures]+[F("78.82")]))
+    assert all(v>u for u,v in comp)
+    assert sum(v-u for u,v in comp+enclosures)==F("95.46")
+    checks,splits=0,0
+    def check(x,h):
+        global checks,splits
+        u,v=fast_node(x),fast_node(x+h)
+        er=second*h*h/8
+        checks+=1
+        if max(u[1],v[1])+er<Alo: return
+        if min(u[0],v[0])-er>Ahi:
+            raise AssertionError(("missed negative interval",str(x),str(x+h)))
+        if h<=F(".000625"):
+            raise AssertionError(("unresolved sign",str(x),str(x+h)))
+        splits+=1
+        check(x,h/2)
+        check(x+h/2,h/2)
+
+    for l,r in comp:
+        for j in range(int((r-l)/step)):
+            check(l+j*step,step)
+    print("PASS exact sign on whole complement of eight enclosures in the 95.46 signed slab",checks,splits,flush=True)
+    raise SystemExit
+
+
+step=F(".02")
+index,offset,a,b={
+    "left": (0,F("-14.64"),F("-14.64"),F("-11.28")),
+    "right": (1,F("-11.28"),F("-14.64"),F("-11.28")),
+    "first": (2,F(0),None,None),
+    "low": (3,F("21.62"),F("21.62"),F("22.48")),
+    "middle": (4,F("22.48"),F("21.62"),F("22.48")),
+    "high": (5,F("49.50"),None,None),
+}[mode]
+if a is not None:
+    assert (b-a)/step == (168 if a<0 else 43)
+    assert (a+4-b)/step == (32 if a<0 else 157)
+assert all(x-2 <= l < h <= x+2 for x,(l,h) in
+           zip(map(F,("-14.64","-11.28","0","21.62","22.48","49.50","73.50","76.82")),enclosures))
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+role=mode
+c1=c0+offset
+low,high=[x-offset for x in enclosures[index]]
+
+wmin=1-F("3e-10")
+positive,negative=[],[]
+h=F(".02")
+shared_mass=F(0)
+all_positive_mass=F(0)
+for i in range(-100,100):
+    x=i*h
+    lo,hi=estimate(offset+x,h)
+    lower_floor=(max(F(0),wmin*(Alo-hi)/pi_upper)*10**7//1)/F(10**7)
+    if lower_floor>0:
+        in_overlap=a is not None and b-2<=offset+x and offset+x+h<=a+2
+        if in_overlap:
+            shared_mass+=lower_floor*h
+        density=lower_floor/2 if in_overlap else lower_floor
+        positive.append((x,x+h,density))
+        all_positive_mass+=lower_floor*h
+h=F(".005")
+assert low/h==int(low/h) and high/h==int(high/h)
+for i in range(int(low/h),int(high/h)):
+    x=i*h
+    lo,hi=estimate(offset+x,h)
+    density=-((-max(F(0),(hi-Alo)/pi_lower)*10**7)//1)/F(10**7)
+    if density>0:negative.append((x,x+h,density))
+assert node(offset+low)[1]<Alo and node(offset+high)[1]<Alo
+assert node(offset)[0]>Ahi
+pos_mass=sum((v-u)*w for u,v,w in positive)
+neg_mass=sum((v-u)*w for u,v,w in negative)
+assert all_positive_mass-pos_mass==shared_mass/2
+if a is not None: assert shared_mass>F("1.43" if a<0 else "15.94")
+print(role,"folded allocated pos/neg and original overlap:",float(pos_mass),float(neg_mass),float(shared_mass),flush=True)
+# Reuse the preceding coefficient, solver proposal and exact trace routines.
+matrix_source=[g for g in blocks if g.startswith("from decimal import Decimal")
+               and "PASS exact majorant costs: J2 total <.52" in g]
+assert len(matrix_source)==1
+start="# Exact polynomial budget for the wider positive allocation."
+stop='assert (F(33)*(1+2*32**2)'
+code=matrix_source[0]
+assert code.count(start)==code.count(stop)==1
+exec(compile(code.split(start)[1].split(stop)[0].lstrip(), "source coefficient and moment matrix", "exec"))
+
+assert beta==F(".124997987")-F(".0001071")
+gram_factor=F("1.006")
+assert 33*(1+2*32**2)/(2*c1)<(gram_factor-1)*min(D)
+err=F("2.1e-7")
+assert 8*(F(8)**33/factorial(33))**2<err**2
+pos_bound,neg_bound,neg_sqrt,resource_bound,pos_sqrt=(F(100),F("1.3"),F("1.15"),F(".65"),F("8.07")) if role=="first" else (F(30),F(".35"),F(".592"),F(".22"),F("2.57"))
+assert pos_mass<pos_bound and neg_mass<neg_bound
+assert 0<=R<resource_bound and S>=0
+nominal=gram_factor*S/beta
+assert nominal<1
+assert neg_sqrt**2>neg_bound and pos_sqrt**2>pos_bound*resource_bound
+assert F(".35")**2<beta
+err_scaled=err*(neg_sqrt+pos_sqrt)/F(".35")
+assert err_scaled<F("1e-5") and 2*err_scaled+err_scaled**2<F(".00003")
+physical=nominal+F(".00003")
+diagonal=R+physical
+tv=neg_sqrt+pos_sqrt
+print(role,"positive, physical, diagonal, TV",float(R),float(physical),float(diagonal),float(tv),flush=True)
+if role=="first":
+    assert diagonal<F(".65") and physical<F(".045") and tv==F("9.22")
+else:
+    assert diagonal<F(".25") and physical<F(".03") and tv<F("3.2")
+phase_even = [sum(V[k][j] for k in range(0,n,2)) for j in range(n)]
+phase_odd = [sum(V[k][j] for k in range(1,n,2)) for j in range(n)]
+phase_polynomial_cost = sum(
+    M[i][j]*(phase_even[i]*phase_even[j] + phase_odd[i]*phase_odd[j])
+    for i in range(n) for j in range(n)
+)
+phase_remainder=F(8)**33/factorial(33)*tv
+print(role,"endpoint-phase squared diagnostic",float(phase_polynomial_cost),flush=True)
+Dphase=F(".2") if role=="first" else F(".14")
+assert 0<=phase_remainder<Dphase and 0<=phase_polynomial_cost<(Dphase-phase_remainder)**2
+print("PASS exact overlapping positive budgets, signed full component, and endpoint-phase guard",role)
+~~~
