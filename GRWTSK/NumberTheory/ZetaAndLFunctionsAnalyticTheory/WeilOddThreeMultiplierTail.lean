@@ -5,6 +5,8 @@ Authors: grwtsk contributors. Development provenance: AI-assisted.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddGammaSineReturn
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeNativeLedger
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddGammaMultiplierVariation
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
 
 /-!
 # A uniform frequency tail for the original conductor-three odd sine multiplier
@@ -17,6 +19,8 @@ lower bound applies. For the original conductor constant, use the
 quarter-digamma identities through gammaConstant_one_zero_eq and bound
 Euler's constant by the sixty-fourth upper harmonic-minus-log term.
 The six exact native weights bound the signed cosine response uniformly.
+The same weights and their native log shifts give a global Lipschitz
+bound for the original multiplier by combining the cosine and gamma estimates.
 
 The direct consumer is the vanishing sine deficit on [256,∞).
 Independent analytical review: NOT_RUN.
@@ -115,18 +119,24 @@ private theorem log_eight_sevenths_ge : (2 / 15 : ℝ) ≤ Real.log (8 / 7) := b
   norm_num [Finset.sum_range_succ] at h
   linarith
 
-private theorem q3_native_abs_mass_lt (χ : DirichletCharacter ℂ 3) (hodd : gammaParity χ = 1) :
-    (∑ n ∈ activePrimePowers 1, |pairedPrimeWeight χ n|) < (58 / 25 : ℝ) := by
-  obtain ⟨h2, h3, h4, h5, h6, h7⟩ := odd_three_native_signed_weights χ hodd
-  have hlog5 : Real.log 5 < (73 / 100) * (221 / 100 : ℝ) := by
-    rw [show (5 : ℝ) = (2 : ℝ) ^ (2 : ℕ) * (5 / 4) by norm_num,
-      Real.log_mul (by norm_num) (by norm_num), Real.log_pow]
-    linarith [Real.log_two_lt_d9, log_five_fourths_lt]
-  have hlog7 : Real.log 7 < (74 / 100) * (66 / 25 : ℝ) := by
-    have h := log_eight_sevenths_ge
-    rw [Real.log_div (by norm_num) (by norm_num), show (8 : ℝ) = 2 ^ (3 : ℕ) by norm_num,
-      Real.log_pow] at h
-    linarith [Real.log_two_lt_d9]
+private theorem log_five_lt_native_cap : Real.log 5 < (73 / 100) * (221 / 100 : ℝ) := by
+  rw [show (5 : ℝ) = (2 : ℝ) ^ (2 : ℕ) * (5 / 4) by norm_num,
+    Real.log_mul (by norm_num) (by norm_num), Real.log_pow]
+  linarith [Real.log_two_lt_d9, log_five_fourths_lt]
+
+private theorem log_seven_lt_native_cap : Real.log 7 < (74 / 100) * (66 / 25 : ℝ) := by
+  have h := log_eight_sevenths_ge
+  rw [Real.log_div (by norm_num) (by norm_num), show (8 : ℝ) = 2 ^ (3 : ℕ) by norm_num,
+    Real.log_pow] at h
+  linarith [Real.log_two_lt_d9]
+
+private theorem q3_native_abs_weight_caps (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1) :
+    |pairedPrimeWeight χ 2| < (1 / 2 : ℝ) ∧
+    |pairedPrimeWeight χ 4| < (7 / 20 : ℝ) ∧
+    |pairedPrimeWeight χ 5| < (73 / 100 : ℝ) ∧
+    |pairedPrimeWeight χ 7| < (74 / 100 : ℝ) := by
+  obtain ⟨h2, _, h4, h5, _, h7⟩ := odd_three_native_signed_weights χ hodd
   have hb2 : |pairedPrimeWeight χ 2| < (1 / 2 : ℝ) := by
     rw [h2, abs_neg, abs_of_nonneg (by positivity)]
     apply (div_lt_iff₀ (Real.sqrt_pos.2 (by norm_num))).2
@@ -137,14 +147,122 @@ private theorem q3_native_abs_mass_lt (χ : DirichletCharacter ℂ 3) (hodd : ga
   have hb5 : |pairedPrimeWeight χ 5| < (73 / 100 : ℝ) := by
     rw [h5, abs_neg, abs_of_nonneg (by positivity)]
     apply (div_lt_iff₀ (Real.sqrt_pos.2 (by norm_num))).2
-    linarith [hlog5, Real.lt_sqrt_of_sq_lt (by norm_num : (221 / 100 : ℝ) ^ 2 < 5)]
+    linarith [log_five_lt_native_cap,
+      Real.lt_sqrt_of_sq_lt (by norm_num : (221 / 100 : ℝ) ^ 2 < 5)]
   have hb7 : |pairedPrimeWeight χ 7| < (74 / 100 : ℝ) := by
     rw [h7, abs_of_nonneg (by positivity)]
     apply (div_lt_iff₀ (Real.sqrt_pos.2 (by norm_num))).2
-    linarith [hlog7, Real.lt_sqrt_of_sq_lt (by norm_num : (66 / 25 : ℝ) ^ 2 < 7)]
+    linarith [log_seven_lt_native_cap,
+      Real.lt_sqrt_of_sq_lt (by norm_num : (66 / 25 : ℝ) ^ 2 < 7)]
+  exact ⟨hb2, hb4, hb5, hb7⟩
+
+private theorem q3_native_abs_mass_lt (χ : DirichletCharacter ℂ 3) (hodd : gammaParity χ = 1) :
+    (∑ n ∈ activePrimePowers 1, |pairedPrimeWeight χ n|) < (58 / 25 : ℝ) := by
+  obtain ⟨_, h3, _, _, h6, _⟩ := odd_three_native_signed_weights χ hodd
+  obtain ⟨hb2, hb4, hb5, hb7⟩ := q3_native_abs_weight_caps χ hodd
   rw [activePrimePowers_one_eq_Icc, show Finset.Icc (2 : ℕ) 7 = {2, 3, 4, 5, 6, 7} by decide]
   norm_num [Finset.sum_insert, h3, h6]
   linarith
+
+private theorem q3_native_weighted_log_mass_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1) :
+    (∑ n ∈ activePrimePowers 1, |pairedPrimeWeight χ n| * |Real.log (n : ℝ)|) ≤
+      (3561 / 1000 : ℝ) := by
+  obtain ⟨_, h3, _, _, h6, _⟩ := odd_three_native_signed_weights χ hodd
+  obtain ⟨hb2, hb4, hb5, hb7⟩ := q3_native_abs_weight_caps χ hodd
+  have hl2 : |Real.log 2| ≤ (7 / 10 : ℝ) := by
+    rw [abs_of_nonneg (Real.log_nonneg (by norm_num))]
+    linarith [Real.log_two_lt_d9]
+  -- The fourth row has weight log(2)/2 and shift log(4).
+  have hl4 : |Real.log 4| ≤ (7 / 5 : ℝ) := by
+    rw [abs_of_nonneg (Real.log_nonneg (by norm_num)),
+      show (4 : ℝ) = 2 ^ (2 : ℕ) by norm_num, Real.log_pow]
+    linarith [Real.log_two_lt_d9]
+  have hl5 : |Real.log 5| ≤ (17 / 10 : ℝ) := by
+    rw [abs_of_nonneg (Real.log_nonneg (by norm_num))]
+    linarith [log_five_lt_native_cap]
+  have hl7 : |Real.log 7| ≤ (2 : ℝ) := by
+    rw [abs_of_nonneg (Real.log_nonneg (by norm_num))]
+    linarith [log_seven_lt_native_cap]
+  have hp2 := mul_le_mul hb2.le hl2 (abs_nonneg _) (by norm_num : (0 : ℝ) ≤ 1 / 2)
+  have hp4 := mul_le_mul hb4.le hl4 (abs_nonneg _) (by norm_num : (0 : ℝ) ≤ 7 / 20)
+  have hp5 := mul_le_mul hb5.le hl5 (abs_nonneg _) (by norm_num : (0 : ℝ) ≤ 73 / 100)
+  have hp7 := mul_le_mul hb7.le hl7 (abs_nonneg _) (by norm_num : (0 : ℝ) ≤ 74 / 100)
+  rw [activePrimePowers_one_eq_Icc, show Finset.Icc (2 : ℕ) 7 = {2, 3, 4, 5, 6, 7} by decide]
+  norm_num [Finset.sum_insert, h3, h6]
+  linarith only [hp2, hp4, hp5, hp7]
+
+/-- Variation of the signed native cosine response, including the original factor of two. -/
+theorem q3_native_prime_response_abs_sub_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1) (x y : ℝ) :
+    |2 * (∑ n ∈ activePrimePowers 1, pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * x)) -
+      2 * (∑ n ∈ activePrimePowers 1, pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * y))| ≤
+      (3561 / 500 : ℝ) * |x - y| := by
+  rw [← mul_sub, ← Finset.sum_sub_distrib, abs_mul, abs_of_nonneg (by norm_num : (0 : ℝ) ≤ 2)]
+  calc
+    _ ≤ 2 * ∑ n ∈ activePrimePowers 1,
+        |pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * x) -
+          pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * y)| :=
+      mul_le_mul_of_nonneg_left (Finset.abs_sum_le_sum_abs _ _) (by norm_num)
+    _ ≤ 2 * ((∑ n ∈ activePrimePowers 1, |pairedPrimeWeight χ n| * |Real.log (n : ℝ)|) *
+        |x - y|) := by
+      apply mul_le_mul_of_nonneg_left _ (by norm_num)
+      rw [Finset.sum_mul]
+      apply Finset.sum_le_sum
+      intro n _
+      rw [← mul_sub, abs_mul]
+      calc
+        _ ≤ |pairedPrimeWeight χ n| * |Real.log (n : ℝ) * x - Real.log (n : ℝ) * y| :=
+          mul_le_mul_of_nonneg_left (Real.abs_cos_sub_cos_le _ _) (abs_nonneg _)
+        _ = _ := by rw [← mul_sub, abs_mul, mul_assoc]
+    _ ≤ 2 * ((3561 / 1000 : ℝ) * |x - y|) :=
+      mul_le_mul_of_nonneg_left
+        (mul_le_mul_of_nonneg_right (q3_native_weighted_log_mass_le χ hodd) (abs_nonneg _))
+        (by norm_num)
+    _ = _ := by ring
+
+/-- Global variation bound for the literal original radius-one sine multiplier. -/
+theorem original_q3_multiplier_lipschitz_eight (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1) (x y : ℝ) :
+    |q3SineMultiplier χ x - q3SineMultiplier χ y| ≤ 8 * |x - y| := by
+  have hsub : q3SineMultiplier χ x - q3SineMultiplier χ y =
+      (periodicMultiplier 1 x - periodicMultiplier 1 y) -
+        (2 * (∑ n ∈ activePrimePowers 1,
+          pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * x)) -
+         2 * (∑ n ∈ activePrimePowers 1,
+          pairedPrimeWeight χ n * Real.cos (Real.log (n : ℝ) * y))) := by
+    unfold q3SineMultiplier
+    rw [hodd]
+    abel
+  rw [hsub]
+  calc
+    _ ≤ _ := abs_sub _ _
+    _ ≤ (116 / 135 : ℝ) * |x - y| + (3561 / 500 : ℝ) * |x - y| :=
+      add_le_add (periodicMultiplier_one_abs_sub_le_116_div_135 x y)
+        (q3_native_prime_response_abs_sub_le χ hodd x y)
+    _ ≤ _ := by
+      rw [← add_mul]
+      exact mul_le_mul_of_nonneg_right (by norm_num) (abs_nonneg _)
+
+/-- The original variation budget also follows from the sharper bound. -/
+theorem original_q3_multiplier_lipschitz_nine (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1) (x y : ℝ) :
+    |q3SineMultiplier χ x - q3SineMultiplier χ y| ≤ 9 * |x - y| :=
+  (original_q3_multiplier_lipschitz_eight χ hodd x y).trans
+    (mul_le_mul_of_nonneg_right (by norm_num) (abs_nonneg _))
+
+/-- The midpoint allowance on an entire frequency cell of the radius-one certificate. -/
+theorem q3_sine_deficit_le_midpoint (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1) (k : ℕ) {ξ : ℝ}
+    (hξ : ξ ∈ Ioc ((k : ℝ) / 128) (((k : ℝ) + 1) / 128)) :
+    max 0 (1 - q3SineMultiplier χ ξ) ≤
+      max 0 (1 - q3SineMultiplier χ ((2 * (k : ℝ) + 1) / 256) + 1 / 32) := by
+  have hmid : |ξ - (2 * (k : ℝ) + 1) / 256| ≤ 1 / 256 :=
+    abs_le.mpr ⟨by linarith [hξ.1], by linarith [hξ.2]⟩
+  have hvar := (original_q3_multiplier_lipschitz_eight χ hodd ξ _).trans
+    (mul_le_mul_of_nonneg_left hmid (by norm_num : (0 : ℝ) ≤ 8))
+  apply max_le_max le_rfl
+  linarith [(abs_le.mp hvar).1]
 
 /-- The original odd-character sine multiplier exceeds the certificate threshold on the full tail. -/
 theorem original_q3_multiplier_tail_ge_one (χ : DirichletCharacter ℂ 3)

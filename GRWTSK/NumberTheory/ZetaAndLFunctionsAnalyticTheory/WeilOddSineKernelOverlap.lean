@@ -5,6 +5,7 @@ Authors: grwtsk contributors
 -/
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc
+import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
 
 /-!
@@ -88,5 +89,44 @@ theorem abs_sinc_sub_sinc_le (x y : ℝ) :
     _ = _ := by
       rw [intervalIntegral.integral_const_mul, integral_id]
       ring
+
+private theorem abs_sub_add_abs_add_halves_le_max (a b : ℝ) :
+    |a - b| / 2 + |a + b| / 2 ≤ max |a| |b| := by
+  have ha : -(max |a| |b|) ≤ a ∧ a ≤ max |a| |b| :=
+    abs_le.mp (le_max_left _ _)
+  have hb : -(max |a| |b|) ≤ b ∧ b ≤ max |a| |b| :=
+    abs_le.mp (le_max_right _ _)
+  by_cases hsub : 0 ≤ a - b
+  · by_cases hadd : 0 ≤ a + b
+    · rw [abs_of_nonneg hsub, abs_of_nonneg hadd]
+      linarith [ha.2]
+    · rw [abs_of_nonneg hsub, abs_of_neg (lt_of_not_ge hadd)]
+      linarith [hb.1]
+  · by_cases hadd : 0 ≤ a + b
+    · rw [abs_of_neg (lt_of_not_ge hsub), abs_of_nonneg hadd]
+      linarith [hb.2]
+    · rw [abs_of_neg (lt_of_not_ge hsub), abs_of_neg (lt_of_not_ge hadd)]
+      linarith [ha.1]
+
+/-- Joint perturbation bound for the unsquared sinc difference in the rectangle kernel. -/
+theorem abs_sinc_difference_perturbation_le (x y u v : ℝ) :
+    |(Real.sinc (x - y) - Real.sinc (x + y)) -
+      (Real.sinc (u - v) - Real.sinc (u + v))| ≤ max |x - u| |y - v| := by
+  let a := Real.sinc (x - y) - Real.sinc (u - v)
+  let b := Real.sinc (x + y) - Real.sinc (u + v)
+  have hdiff : (Real.sinc (x - y) - Real.sinc (x + y)) -
+      (Real.sinc (u - v) - Real.sinc (u + v)) = a - b := by
+    dsimp [a, b]
+    ring
+  rw [hdiff]
+  calc
+    |a - b| ≤ |a| + |b| := by
+      simpa only [sub_eq_add_neg, abs_neg] using abs_add_le a (-b)
+    _ ≤ |(x - y) - (u - v)| / 2 + |(x + y) - (u + v)| / 2 :=
+      add_le_add (abs_sinc_sub_sinc_le _ _) (abs_sinc_sub_sinc_le _ _)
+    _ = |(x - u) - (y - v)| / 2 + |(x - u) + (y - v)| / 2 := by
+      rw [show (x - y) - (u - v) = (x - u) - (y - v) by ring,
+        show (x + y) - (u + v) = (x - u) + (y - v) by ring]
+    _ ≤ max |x - u| |y - v| := abs_sub_add_abs_add_halves_le_max _ _
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddSineKernelOverlap
