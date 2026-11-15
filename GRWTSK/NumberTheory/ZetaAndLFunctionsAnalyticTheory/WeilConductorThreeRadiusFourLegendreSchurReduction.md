@@ -9111,3 +9111,264 @@ assert true_debit/(F('.124997987')-F('.0001071')) > F('6.28')
 assert F('.785')-(F('.124997987')-F('.0001071')) > F('.6601')
 print('PASS actual seven-inverse localized correction and physical negative-only obstruction')
 ~~~
+
+## The actual positive flanks pay for this negative window
+
+Keep the full physical odd carrier with zero extension, the original
+frequency restriction $K$ and the actual $S_\lambda$ above. The test here
+holds on the complex physical carrier, and hence also for real odd tests
+and on the actual Schur complement's physical subspace $H$. With
+$\lambda=0.0001071$ and the same retained $J$, one has
+$$
+      \|\mathcal W_J S_\lambda^{-1}\mathcal W_J^*\|<0.80.
+$$
+In particular the original positive part on
+$h=\Pi_H\psi_{126883010}$ satisfies
+$\langle h,K^*m_+Kh\rangle>0.8563$.
+This pays the local debit using actual positive angular mass. The
+counterexample with norm greater than $6.28$ still applies when the
+positive part is discarded.
+
+Let $c=99653682.92983$, $a=0.24$, $b=0.35$ and $d=b-a$.
+The two intervals $c+[a,b]$ and $c-[a,b]$ and their reflections
+lie in the original filter domain, disjoint from the paid pair and
+both collars in the preceding calculation. On all four intervals,
+the original collar-deleted multiplier satisfies $m>11.5$. Indeed,
+the previous Binet estimate has error at most
+$5/(9y)+9/(32y^2)$ at $y=|\nu|/2$. On the four intervals,
+$3|\nu|/(2\pi)>47500000$, and the directed lower bound for its
+logarithm less the full Binet error yields $A>17.67$. The original
+filter bounds give $w\ge 1-3\cdot10^{-10}$. For the signed sum
+$P_4=\sum a_n\cos(\nu\log n)$ with all 458 original rows, the
+directed upper bound for $\sum |a_n|\log^2 n$ is $13504$.
+On each flank the guard evaluates the outward radial derivative of
+$P_4$ at the twelve nodes of spacing $0.01$. Each upper endpoint
+plus $13504(0.01/2)$ is negative, so the nearest node and the
+mean value theorem prove the outward decrease throughout both
+intervals. At either inner endpoint the lower enclosure
+$(1-3\cdot10^{-10})(17.67-P_4)$ exceeds $11.5$. Evenness gives
+the reflected intervals. In particular the estimate uses the signs
+$\chi_3(n)$ and the prime weights $2\log(p)/\sqrt n$; the
+absolute second derivative bound serves only to cover the gaps
+between nodes.
+
+For $t\in[-4,4]$ write $v_\nu(t)=\sin(\nu t)$ and
+$$
+ u(t)=\frac1{2d}\int_a^b(v_{c+s}(t)+v_{c-s}(t))\,ds
+      =\sin(ct)q(t),\qquad q(t)=\frac1d\int_a^b\cos(st)\,ds .
+$$
+For odd physical $f$, $|\widehat f(\nu)|=|\langle v_\nu,f\rangle|$
+and the two signs have equal modulus. Thus, with
+$Q_+[f]=\langle f,K^*m_+Kf\rangle$ and $\mu=11.5$,
+Jensen's inequality on the two positive flanks gives
+$$
+ |\langle u,f\rangle|^2
+ \le \frac{\pi}{2d\mu}Q_+[f].
+$$
+The reflected flanks give the factor $1/\pi$ multiplying the
+integral on the two positive flanks under the original
+$d\nu/(2\pi)$ angular measure.
+
+Put $\alpha=1.14$ and $\beta=B-\lambda=0.124890887$.
+For $|\epsilon|\le0.02$,
+$e_\epsilon=v_{c+\epsilon}-\alpha u
+=A_\epsilon\sin(ct)+B_\epsilon\cos(ct)$, where
+$A_\epsilon=\cos(\epsilon t)-\alpha q(t)$ and
+$B_\epsilon=\sin(\epsilon t)$. Its squared norm is the sum of
+the nonoscillatory integral
+$$
+ \int_0^4 (1+\alpha^2q^2-2\alpha q\cos(\epsilon t))\,dt
+$$
+and the integrals over $[-4,4]$ of
+$(B_\epsilon^2-A_\epsilon^2)\cos(2ct)/2$ and
+$A_\epsilon B_\epsilon\sin(2ct)$.
+Let $q_L,q_U$ be the cosine polynomials averaged over $[a,b]$
+through degrees six and eight. Alternating remainders at
+$|st|\le1.4$ give $0<q_L\le q\le q_U$. Positivity of $q_L$
+follows from the bound obtained by dropping its positive
+degree-four term and evaluating the other nonconstant terms at
+$t=4$. Also $\cos(\epsilon t)\ge 1-0.02^2t^2/2>0$.
+The exact integral of
+$1+\alpha^2 q_U^2-2\alpha q_L(1-0.02^2 t^2/2)$ is below
+$0.241$. For either oscillatory term with coefficient $F(t)$,
+one integration by parts bounds the absolute integral by
+$(2\|F\|_\infty+8\|F'\|_\infty)/(2c)$. The bounds
+$|A_\epsilon|\le2.14$, $|B_\epsilon|\le0.08$,
+$|A'_\epsilon|\le0.419$, $|B'_\epsilon|\le0.02$ give a total
+oscillatory error below $10^{-7}$. This proves
+$\|e_\epsilon\|^2<0.2411$ on the full original carrier.
+
+Since $\langle f,S_\lambda f\rangle\ge\beta\|f\|^2+Q_+[f]$,
+two-term Cauchy–Schwarz applied to
+$\langle v_{c+\epsilon},f\rangle
+=\alpha\langle u,f\rangle+\langle e_\epsilon,f\rangle$
+gives
+$$
+ |\langle v_{c+\epsilon},f\rangle|^2
+ \le\left(\frac{\alpha^2\pi}{2d\mu}
+       +\frac{\|e_\epsilon\|^2}{\beta}\right)
+       \langle f,S_\lambda f\rangle .
+$$
+Use the same estimate at the reflected frequency, then integrate
+$-m<17.57$ on $J$. The guard bounds the product of the
+evaluation constant and $17.57(2\cdot0.02)/\pi$ by $0.80$.
+Substitute $f=S_\lambda^{-1/2}g$ to get the asserted operator
+bound. For the specific $h\in H$, $\|h\|\le1$ and
+$\|\mathcal W_Jh\|^2>0.785$. Its exact $S_\lambda$ form is
+$\beta\|h\|^2+Q_+[h]$, so $Q_+[h]>0.785/0.80-\beta>0.8563$.
+
+The remaining test retains the other negative windows and their
+coupling to $J$. Write $N'$ for $N$ restricted to the complement
+of $J$ in the negative angular support and set
+$$
+ A_J=\mathcal W_JS_\lambda^{-1}\mathcal W_J^*,\quad
+ D=N'S_\lambda^{-1}(N')^*,\quad
+ C=\mathcal W_JS_\lambda^{-1}(N')^* .
+$$
+Since $I-A_J>0.20I$, completing the square on the direct sum of
+the two angular $L^2$ spaces gives the exact remaining criterion
+$$
+            D+C^*(I-A_J)^{-1}C\le I.
+$$
+Equivalently the comparator for $N'$ is
+$S_\lambda-\mathcal W_J^*\mathcal W_J\ge0.20 S_\lambda$ on
+the original physical space. The coupling term is positive and
+bounded above by $5C^*C$. Separate local norm estimates do not
+bound this term. The all-complement floor and the signed return
+to the original radius-four arithmetic stage remain open, with
+no change to the family or conductor-one pole obligations.
+
+The written argument is supported by the following exact rational
+guard against the original signed source. The guard reuses the
+earlier directed arithmetic definitions in this document and
+takes this document as its sole command-line input. Lean checks
+of this advance are NOT_RUN; this is no claim of external review.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+guards = re.findall(r"^~~~python\n(.*?)^~~~$", source, re.M | re.S)
+prior = [g for g in guards if g.startswith("from fractions import Fraction") and "PASS actual seven-inverse localized correction" in g]
+assert len(prior)==1
+pivot = 'centre = F("99653682.92983")'
+assert prior[0].count(pivot)==1
+exec(compile(prior[0].split(pivot)[0], "previous directed arithmetic", "exec"))
+
+centre = F("99653682.92983")
+a,b = F(".24"),F(".35")
+step = F(".01")
+flank_height = F("11.5")
+negative_radius = F(".02")
+weight_floor = 1-F("3e-10")
+assert F(10**8,3)-1 < centre-b < centre+b < 10**8
+assert centre+b < F("1852422754.1662946")-10
+assert centre+b < F("3806849122.861433")-F(1,160)
+gamma_arg_lower = 3*(centre-b)/(2*pi_upper)
+binet_base = (centre-b)/2
+binet_error = F(5,9)/binet_base+F(9,32)/binet_base**2
+assert gamma_arg_lower > 47500000
+gamma_lower = F("17.67")
+assert log_bounds(47500000)[0]-binet_error > gamma_lower
+
+# Directed signed atom list. T_P still uses the original 458 prime powers.
+atoms=[]
+absolute_second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%d==0 for d in range(2,isqrt(p)+1)):
+        continue
+    log_p=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        assert 0<lag[0]<=lag[1]<8
+        root=isqrt(n*source_grid**2)
+        coef=scale(2*(1 if n%3==1 else -1),
+                   (log_p[0]*source_grid/(root+1),log_p[1]*source_grid/root))
+        atoms.append((coef,lag))
+        absolute_second+=max(map(abs,coef))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and absolute_second < 13504
+
+def signed_value_and_slope(x):
+    val,slope=(F(0),F(0)),(F(0),F(0))
+    for coef,lag in atoms:
+        phase=scale(x,lag)
+        assert 0<=phase[0]<=phase[1]
+        co,si=phase_trig(phase)
+        val=add(val,round_out(*multiply(coef,co),atom_grid))
+        slope_piece=multiply(coef,scale(-1,multiply(lag,si)))
+        slope=add(slope,round_out(*slope_piece,atom_grid))
+    return val,slope
+
+assert (b-a)/step==11
+for sign in (-1,1):
+    for idx in range(12):
+        off=a+idx*step
+        value,slope=signed_value_and_slope(centre+sign*off)
+        # Outward radial derivative of P4 must stay negative on each flank.
+        assert scale(sign,slope)[1]+absolute_second*step/2 < 0
+        if idx==0:
+            assert weight_floor*(gamma_lower-value[1])>flank_height
+print("PASS literal filtered positive flanks, including continuum between mesh samples")
+
+# q(t) is the uniform average of cos(st) for s in [a,b].
+# Polynomials are in t^2. The odd truncation is a lower bound.
+def pol_add(a_coeff,b_coeff):
+    result=[F(0)]*max(len(a_coeff),len(b_coeff))
+    for coeffs in (a_coeff,b_coeff):
+        for k,coeff in enumerate(coeffs):
+            result[k]+=coeff
+    return result
+
+def pol_mul(a_coeff,b_coeff):
+    result=[F(0)]*(len(a_coeff)+len(b_coeff)-1)
+    for i,c_i in enumerate(a_coeff):
+        for j,c_j in enumerate(b_coeff):
+            result[i+j]+=c_i*c_j
+    return result
+
+def pol_scale(x,coeffs):
+    return [x*c for c in coeffs]
+
+def half_integral(coeffs):
+    return sum(c*F(4**(2*k+1),2*k+1) for k,c in enumerate(coeffs))
+
+moments=[(b**(2*k+1)-a**(2*k+1))/((2*k+1)*(b-a)) for k in range(5)]
+assert 4*b < F("1.5")
+q_up=[(-1)**k*moment/factorial(2*k) for k,moment in enumerate(moments)]
+q_low=q_up[:-1]
+assert 1-moments[1]*4**2/2-moments[3]*4**6/factorial(6)>0
+cos_low=[F(1),-negative_radius**2/2]
+assert 1-negative_radius**2*4**2/2>0
+
+amplitude=F("1.14")
+nonosc_poly=pol_add([F(1)],pol_scale(amplitude**2,pol_mul(q_up,q_up)))
+nonosc_poly=pol_add(nonosc_poly,pol_scale(-2*amplitude,pol_mul(q_low,cos_low)))
+nonosc_norm=half_integral(nonosc_poly)
+assert nonosc_norm < F(".241")
+
+# Integration by parts on the genuine carrier, with both oscillatory terms.
+A=1+amplitude
+B=4*negative_radius
+dA=negative_radius+amplitude*b
+dB=negative_radius
+osc_sup=(A*A+B*B)/2+A*B
+deriv_sup=A*dA+B*dB+dA*B+A*dB
+osc_norm=(2*osc_sup+8*deriv_sup)/(2*centre)
+assert osc_norm < F("1e-7")
+error_norm_sq=nonosc_norm+osc_norm
+assert error_norm_sq < F(".2411")
+
+floor=F(".0001071")
+scalar=F(".124997987")-floor
+positive_cost=amplitude**2*pi_upper/(2*(b-a)*flank_height)
+evaluation_cost=positive_cost+error_norm_sq/scalar
+negative_amount=F("17.57")*2*negative_radius/pi_lower
+ratio=negative_amount*evaluation_cost
+assert ratio < F(".80")
+assert F(".785")/F(".80")-scalar > F(".8563")
+print("PASS every actual negative-window evaluation, local inverse norm <.80, and probe positive part >.8563")
+~~~
