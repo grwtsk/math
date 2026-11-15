@@ -1156,3 +1156,116 @@ bilinear term in isolation. The argument above retains the O
 diagonal of the same interface. The complementary sign, original
 radius-four stage, global zero return, RH and primitive Dirichlet
 GRH remain open.
+
+## 15. Coercivity on the exterior support below log(2)
+
+**2026-11-14, grwtsk contributors, AI-assisted.** Written analytic
+bound for a subregion of the actual complementary form in §14.
+Lean elaboration, fresh kernel replay, and transitive axiom audit
+for this increment are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the original admissible real odd C² f for the primitive
+nonprincipal odd character modulo 3 at radius one. Let v be the
+restriction of h=f|[0,1] to O in §14. Set r=log(2), a₀=1−r,
+τ₄=2r−1 and τ₅=log(5)−1. Let L=[0,a₀], M=[τ₄,τ₅) and
+N=[τ₅,r]. Assume v vanishes almost everywhere on (r,1]. Write
+e_L, e_M and e_N for the respective squared physical masses,
+and e_H=e_M+e_N. We prove
+
+```text
+J_O^int(v) ≥ (e_L+e_H)/5.
+```
+
+In particular the compensated comparator in §14 has this lower
+bound as well. This result keeps the actual mixed reflected prime-2
+term and the negative prime-5 term on N.
+
+**Exact atoms.** All equations for the restrictions are modulo null
+endpoints. The same-side shift by r sees the L mass and zero on
+[r,1], while the reflection x↔r−x exchanges L with [τ₄,r].
+The reflected prime square sends [τ₄,r] to [r,1]. The prime-5
+reflection is active for x≥τ₅ and sends N strictly above r away
+from the nonzero support, since log(5)>2r. Finally log(7)−1>r and
+the entries 3 and 6 have zero weight. Thus the actual intrinsic
+samples satisfy
+
+```text
+R_r^O(v)      = 4e_L+2e_H+4∫_L v(x)v(r−x)dx,
+R_(log 4)^O(v)= 2e_H,
+R_(log 5)^O(v)= 2e_N,
+R_(log 7)^O(v)= 0.
+```
+
+Here Λ(4)=log(2) and its lag is log(4). Retain the off-diagonal
+prime-2 contribution, since it has either sign. Its negative
+contribution is bounded below by −4p√(e_L e_H), by physical
+Cauchy–Schwarz and the measure-preserving reflection. The continuum
+κ-difference in J_O^int is nonnegative by §14. The actual α values
+on L, M, N are 1, 3/8, 5/4.
+
+**Diagonal lower bounds.** Use U(x)=∫_x^(x+1)K(s)ds for x>0 as in §14,
+with the stated almost-everywhere representative at zero. From
+69/100<r<139/200, a₀<1/3. The first three exponential terms of
+K on [1/3,1] therefore give, for almost every x in L,
+
+```text
+U(x) > (2/3)(3/5−23/100)+(2/7)(3/10−1/30)
+                       +(2/11)(3/20−1/100) = 1341/3850.
+```
+
+For x∈M, x<5/8 and x+1≥2r>11/8. The first exponential on
+[5/8,11/8] yields U(x)>(2/3)(3/8−1/7)=13/84. For x∈N, use
+[7/10,11/8] instead to obtain U(x)>(2/3)(1/3−1/7)=8/63.
+The following rational bounds justify the evaluations. The first
+two positive atanh terms and their geometric remainder enclose
+log(2) between 56/81 and 1123/1620. The degree-three alternating
+log bound gives log(5/4)<43/192, hence log(5)<81/50. Use
+√2>141/100, √5>20/9, 8/3<e<11/4, and e^(1/20)≤20/19.
+Alternating Taylor lower cuts at −1/2, −7/6, −11/6, and −15/16
+through degrees 3,5,7,5 give, respectively, 3/5, 3/10, 3/20,
+3/8 as strict lower comparisons. Positive partial sums at 3/2,
+7/2, and 11/2 through degrees 4,6,5 exceed 100/23, 30, 100.
+Also e^(33/16)>e²>7 and e^(21/20)<3. Finally e>5/2 and e<7/2
+locate τ₅<r<log(7)−1. These inequalities require only rational
+comparisons and the signed Taylor remainders.
+
+Now p<99/200 and b<73/100. Including all the diagonal atomic
+terms gives the coefficients 4U+2−4p on L, 4U+3/4+r−2p on M,
+and 4U+5/2+r−2p−2b on N. The displayed estimates bound them
+below by 5441/3850, 449/420, and 3931/3150, respectively. These
+exceed 7/5, 16/15, and 16/15, respectively. Hence the full lower
+bound, before the extra term of §14, is
+
+```text
+J_O^int(v) ≥ (7/5)e_L+(16/15)e_H−2√(e_L e_H)
+           ≥ (1/5)(e_L+e_H).
+```
+
+The last comparison holds since 6/5 and 13/15 are positive and
+their product is 26/25>1. It is a two-variable square estimate
+on the actual reflected mixing, with no pointwise phase bound
+on the continuum multiplier.
+
+**Why this floor cannot be glued termwise.** Take a smooth
+nonnegative nonzero bump A supported in [1/5−η,1/5+η]⊂L, where
+0<η<1/100, and B(y)=A(y−r) supported in (r,1). Set v=A−εB for
+ε>0 and extend oddly outside the positive half. The difference
+between J_O^int(v) and the sum of its two separate quadratic
+values is exactly
+
+```text
+−4p ε‖A‖² + 4ε∫_(L×(r,1)) κ(x,y)A(x)B(y)dxdy.
+```
+
+The atomic cross term is the genuine same-side prime-2 edge.
+The other signed atoms have no cross edge between these supports,
+and diagonal terms including the §14 allowance have zero cross.
+By separation and Cauchy–Schwarz the positive integral is at most
+2η K(r−2η)‖A‖² < p‖A‖². Indeed r−2η>67/100, K(s)≤1/(2s),
+and p> (69/100)/(3/2). Thus the actual mixed term is strictly
+negative and linear in ε, while the upper-supported mass is
+quadratic in ε. The two regions cannot be glued by claiming the
+mixed term is nonnegative or charging it solely to that upper
+mass. This does not assert a negative total comparator. The
+remaining above-r and mixed sign, original radius-four stage,
+and global RH and primitive Dirichlet GRH returns stay open.
