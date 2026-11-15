@@ -1269,3 +1269,136 @@ mixed term is nonnegative or charging it solely to that upper
 mass. This does not assert a negative total comparator. The
 remaining above-r and mixed sign, original radius-four stage,
 and global RH and primitive Dirichlet GRH returns stay open.
+
+## 16. Upper exterior floor with a separate continuous-interface reserve
+
+**2026-11-14, grwtsk contributors, AI-assisted.** Written analytic
+estimate within the same sufficient residual (12), for actual
+conductor-three, radius-one restrictions as in §§14–15. Lean
+elaboration, fresh kernel replay and transitive axiom audit for this
+increment are NOT_RUN. Independent review is UNASSESSED.
+
+For the original real odd admissible C² profile, put r=log(2),
+s₅=log(5), τ₄=log(4)−1, and split O into
+O_−=[0,1−r]∪[τ₄,r] and O_+=(r,1]. Let v be its positive-half
+restriction to O, assumed zero almost everywhere on O_−. Write
+H=∫_(O_+)v², I=[r,s₅−r], and ρ(x)=s₅−x. The exact reflected
+difference is D₅(v)=∫_I(v(x)−v(ρ(x)))²dx. With the kernel κ of
+§14, retain the true zero-lower-region continuous contribution
+X(v)=2∫_(O_+×O_−)κ(x,y)v(x)²dxdy. The estimates are
+
+```text
+J_O^int(v) − X(v) ≥ H/60 + c R_(log 7)^O(v),
+J_O^int(v) ≥ (6/25)H + b D₅(v) + c R_(log 7)^O(v).
+```
+
+These are two bounds on the same upper-support form. The second
+spends part of X, while the first keeps all of X available as a
+separate term. The cross integrals are finite under the §14
+almost-everywhere conventions, since the cross-boundary kernel
+is bounded by 1/[2(s+t)] in the inward distances s,t.
+
+**Exact source signs.** The n=2 same-side term gives R_r^O=2H
+and its reflection sees no upper mass. The n=4 reflection sends
+the upper support below r, so R_(log 4)^O=2H. Its native
+weight is log(2)/2 because Λ(4)=log(2). The n=5 reflection acts
+on all upper mass and has both ends upper exactly in I, giving
+
+```text
+R_(log 5)^O = 2H+2∫_I v(x)v(ρ(x))dx = 2H+2∫_I v²−D₅(v).
+```
+
+The n=7 sample remains its actual nonnegative reflected square.
+Entries 3 and 6 have native zero weights. The actual 2α is at
+least 5/2 throughout O_+. Dropping only the nonnegative
+continuous difference on O_+² therefore bounds
+J_O^int(v)−X(v)−cR_(log 7)^O from below by
+
+```text
+∫_(O_+) F₀(x)v(x)²dx − 2b∫_I v(x)v(ρ(x))dx,
+F₀(x)=4U(x)+5/2+r−2p−2b.
+```
+
+**An upper floor without X.** Put η=1/60. The expansion
+U(x)=Σ_(j≥0)(1−e^(−a_j))e^(−a_j x)/a_j, a_j=3/2+2j, is obtained
+by positive integration of the full gamma kernel. Thus F₀−η is
+a positive constant plus positive exponential terms. Cauchy–Schwarz
+on their coefficients gives
+
+```text
+(F₀(x)−η)(F₀(ρ(x))−η) ≥ (F₀(s₅/2)−η)².
+```
+
+Indeed each geometric mean of corresponding exponential terms
+equals that term at the midpoint. The constant is positive from
+r>693/1000, p<491/1000 and b<18/25. The midpoint lower bound,
+using the first three terms and 5^(−3/4)>299/1000, is
+
+```text
+4U(s₅/2) >
+(299/1000)[(8/3)(77/100)+(8/7)(29/150)+(8/11)(99/2500)]
+= 753181/1093750.
+```
+
+For the log comparisons use the first three positive atanh
+terms plus the geometric tail at 1/3, and the first term and
+tail at 1/9. These yield 693/1000<log(2)<6932/10000 and
+log(5/4)<2232/10000. The square-root bounds √2>1413/1000
+and √5>559/250 give the stated bounds on p and b. The power
+comparison for 5^(−3/4) follows from 125·299⁴<1000⁴.
+The exponential comparisons e^(−3/2)<23/100,
+e^(−7/2)<1/30 and e^(−11/2)<1/100 follow from positive
+Taylor sums through degrees 4,6,5. Hence
+F₀(s₅/2)−2b>85849/4375000>η. On a reflected pair the
+arithmetic-geometric mean inequality now gives
+
+```text
+(F₀(x)−η)v(x)² + (F₀(ρ(x))−η)v(ρ(x))² ≥ 4b|v(x)v(ρ(x))|.
+```
+
+Integrate over one half of I. Outside I the positive diagonal
+already exceeds η. This proves the first floor with the whole
+X kept separate.
+
+**Stronger bound on upper-supported profiles.** Using the exact
+difference D₅, the diagonal atomic-and-α coefficient is >−18/25
+on I and >37/50 off I, from p<99/200, b<73/100, r>69/100.
+It remains to pay the negative coefficient on I from 4U and X.
+In X keep only y∈[τ₄,r]. At x∈I we have e^(−x)≥2/5. Therefore
+e^(−3x/2)>1/4 and e^(−7x/2)>1/25 by squaring, and the first
+two exponential terms of U give 4U(x)>1/2+36/875.
+
+For those same x, each of the first two exponential terms of κ
+equals 2e^(−a x)sinh(ay) for y∈[τ₄,r]. Use
+2sinh(t)≥2t+t³/3, ∫_(τ₄)^r y dy>81/500 and
+∫_(τ₄)^r y³dy>1/20 from r>69/100 and τ₄<39/100.
+Writing W(x)=∫_(τ₄)^r κ(x,y)dy gives
+
+```text
+2W(x) > 243/1000 + 9/320 + 1134/12500 + 343/6000.
+```
+
+Together the exact lower constants for 4U+2W exceed 24/25
+by 649/4200000, which pays −18/25 and leaves 6/25 on I.
+Off I the standalone diagonal is already larger than 6/25.
+The positive bD₅ and cR_(log 7)^O terms are preserved.
+The exact boundary potential T(1±x) is separate from U and X
+and is unused by these overlap allocations.
+
+**The remaining mixed test.** In the full form, when the lower
+profile u on O_− is present, its zero-region contribution to the
+upper form is part of the cross square, not a free upper credit.
+Subtracting the sum of separate quadratic values gives exactly
+
+```text
+ 4p∫_[0,1−r] u(x)v(x+r)dx
++4a∫_[τ₄,r] u(x)v(2r−x)dx
+−4b∫_[log(5)−1,r] u(x)v(log(5)−x)dx
+−4∫_(O_−×O_+) κ(x,y)u(x)v(y)dxdy.
+```
+
+The smooth translated-bump example in §15 makes this correction
+strictly negative. Neither standalone floor disposes of it.
+The compensated all-exterior sign, the original radius-four
+stage, and the global RH and primitive Dirichlet GRH source
+returns remain open.
