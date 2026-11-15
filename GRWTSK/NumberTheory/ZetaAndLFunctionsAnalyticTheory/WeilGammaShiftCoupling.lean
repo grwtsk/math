@@ -8,6 +8,7 @@ FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
 INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilGammaThreeBandFloor
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeNativeLedger
 import Mathlib.MeasureTheory.Integral.IntegrableOn
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 import Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt
@@ -324,36 +325,6 @@ theorem gammaCorrectionIntegral_ge_exactShiftEnergy
     dsimp [K, A] at hscale ⊢
     nlinarith
   exact hfirst.trans (hkernel.trans hfull)
-
-/-- Native parity-one character modulo three really has value -1 at
-the integer two. No other conductor or phase is silently included. -/
-theorem odd_character_three_at_two
-    (chi : DirichletCharacter ℂ 3)
-    (hodd : gammaParity chi = 1) :
-    chi (2 : ZMod 3) = -1 := by
-  have hnotEven : ¬ chi.Even := by
-    intro heven
-    have heq : chi (-1) = 1 := heven
-    have hp0 : gammaParity chi = 0 := by
-      simp [gammaParity, heq]
-    omega
-  have hchiOdd : chi.Odd := (chi.even_or_odd).resolve_left hnotEven
-  have htwo : (2 : ZMod 3) = (-1 : ZMod 3) := by decide
-  rw [htwo]
-  exact hchiOdd
-
-/-- The actual native weight, including the von Mangoldt prime-two
-factor and the character phase, not an invented normalization. -/
-theorem odd_character_three_primeTwo_weight
-    (chi : DirichletCharacter ℂ 3)
-    (hodd : gammaParity chi = 1) :
-    pairedPrimeWeight chi 2 = -(Real.log 2 / Real.sqrt 2) := by
-  have hchi := odd_character_three_at_two chi hodd
-  have hΛ : ArithmeticFunction.vonMangoldt 2 = Real.log 2 :=
-    ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two
-  unfold pairedPrimeWeight primeWeight
-  rw [hΛ, hchi]
-  norm_num
 
 /-- Source gamma normalization evaluated exactly at the physical
 prime-two shift. No floating-point approximation. -/

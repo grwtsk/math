@@ -3,9 +3,7 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors. Development provenance: AI-assisted.
 
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Independent analytical review: NOT_RUN.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeFullSignedShift
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
@@ -27,6 +25,7 @@ declaration here. Unconditional RH and primitive Dirichlet GRH remain open.
 set_option autoImplicit false
 noncomputable section
 open MeasureTheory Set
+open scoped ComplexConjugate
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddSupportBoundaryReflection
 
