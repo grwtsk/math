@@ -1526,3 +1526,247 @@ zero-neighbor estimate uses their three narrow bands and does
 not assert a uniform logarithmic reserve for arbitrary profiles.
 The full mixed exterior sign, original radius-four stage and
 global RH and primitive Dirichlet GRH returns remain open.
+
+## 18. Coercivity on the entire signed exterior
+
+**2026-11-14, grwtsk contributors, AI-assisted.** Written analytic
+proof with exact rational interval certification. Lean elaboration,
+fresh kernel replay and transitive axiom audit are NOT_RUN.
+Independent review is UNASSESSED.
+
+For every original `DirichletStageChain.Admissible` real odd C² test
+at radius one for the primitive nonprincipal character modulo three,
+let h be the positive-half profile and v=h|O as in §14. Write
+`C(v)=J_O^int(v)+(2/27375)∫_O x v(x)² dx`. The full exterior bound is
+
+```text
+C(v) ≥ ‖v‖²/100 + c R_(log 7)^O(v).
+```
+
+This proves (12) on its entire original test class by §14. The estimate permits arbitrary original restrictions, including profiles
+that are nonzero throughout O and unrelated on reflected pairs. The
+allowance is nonnegative and stays available.
+
+### Continuous payment for the actual reflected contrast
+
+Put r=log(2), A=1−r, d=log(5/4), L=[0,A] and Z=[2r−1,1]. Up to null
+endpoints O=L∪Z. For t∈[0,A] write l(t)=v(t), m(t)=v(r−t) and
+u(t)=v(r+t). The exact exterior continuous difference from §14 is
+Dκ(v). Within Z², parametrize the four blocks by (r±t,r±s).
+Since K is decreasing, the two same-side kernels are bounded below
+by `K(|t−s|)−K(2r−t−s)`. The two cross kernels are bounded below
+by `B(t,s)=K(t+s)−K(2r−|t−s|)`. This B is nonnegative because
+t+s≤2A<r. The same-side lower kernel also dominates B. In fact,
+with a=|t−s| and z=t+s, convexity gives
+`K(a)−K(z) ≥ K(2r−z)−K(2r−a)` by comparing two intervals
+of equal length, the first entirely before the second. Convexity
+follows from the positive exponential series for K. All comparisons
+are off null sets, and apply to nonnegative integrals.
+
+Write q(t)=(m(t)+u(t))/2. Summing the squares over both signs in both
+variables gives
+`4(q(t)−q(s))²+(u(t)−m(t))²+(u(s)−m(s))²`.
+Consequently,
+
+```text
+Dκ(v) ≥ ∫_[0,A] β(t)(u(t)−m(t))² dt,
+β(t)=2∫_[0,A] [K(t+s)−K(2r−|t−s|)] ds.
+```
+
+This only uses the Z² block and spends its lower bound once.
+For 0<t≤A a scalar lower envelope is
+
+```text
+β(t) ≥ log(1+A/t) − A(1/2+(t+A/2)/5+2/15+23/100).
+```
+
+`sinh z/z ≤ 1+(z²/6)/(1−z²/20)`: after the z² term each
+successive coefficient ratio is at most 1/20 before the z² factor.
+Use `K(z)=e^(−z/2)/(2 sinh z)`, `e^(−z/2)≥1−z/2` and
+`(1+x)^−1≥1−x` for x≥0. In applying the reciprocal bound, use
+`(1−z/2)(1−x)≥1−z/2−x` for x≥0. It follows that
+`K(z) ≥ 1/(2z)−1/4−z/10`, since `1/[12(1−z²/20)]<1/10`.
+Here 2A<5/8. For the other kernel, `K(2r)=2/15) and
+`K(2r−A)<23/100`. For the latter use the exact expression
+`K(3r−1)=e^(3/2)/(2^(9/2)(1−e²/64))`, bounded above using
+`e<11/4`, `(11/4)^(3/2)<457/100`, and `sqrt(2)>141/100`.
+The bound by 23/100 follows by multiplication. Convexity bounds
+`K(2r−w)` above by the linear interpolation between the two
+endpoint upper bounds for 0≤w≤A. The average of |t−s| over
+s∈[0,A] is `[t²+(A−t)²]/(2A)≤A/2`. Integrating the two
+bounds gives the stated β envelope.
+
+### Native atomic identities and the prime-five reserve
+
+Use the native weights (−p,0,r/2,−b,0,c) in order 2 through 7.
+The same-side n=2 atom and its reflection on O give
+`R₂^O=2∫[(u−l)²+(l+m)²]`, and the n=4 reflection gives
+`R₄^O=2∫(u+m)²`, with both integrals over [0,A].
+These account for both reflected endpoint orders. In particular
+the n=4 coefficient is r/2 because Λ(4)=log(2). The sum of
+their signed integrands is exactly
+
+```text
+−4p l² + 4p l(u−m) − p(u−m)² + (r−p)(u+m)².
+```
+
+For n=5, put J=[log(5)−1,1] and ρ(x)=log(5)−x. Its native
+signed square rewrites as
+`−bR₅^O = −4b∫_J v² + b∫_J (v(x)−v(ρ(x)))² dx`.
+Keep the original n=7 positive square cR₇^O unchanged. Entries
+3 and 6 have native zero weights.
+
+Use the source potential `4U+2α` from §14. The coefficient of l²
+including its n=2 contribution is `4U(t)+2−4p`. Set ε=1/100
+and reserve εl². The remaining coefficient is positive, so completing
+the l square with the mixed n=2 term bounds its net cost on the
+contrast by `4p²/(4U(t)+2−4p−ε)`. Positivity of the denominator
+also follows from 2−4p−ε>0 by §16. Thus the remaining adverse
+contrast coefficient after paying the continuum is
+
+```text
+W(t)=p+4p²/(4U(t)+2−4p−ε)−β(t).
+```
+
+The diagonal coefficients for m and u at this point are
+`4U(r∓t)+2α(r∓t)−4b·1_J(r∓t)`. Reserve from the middle and upper
+diagonals respectively (2/5,2/5) for t<35/1000, and (7/10,0)
+for 35/1000≤t<85/1000. Their feasibility will follow from the final
+matrix check after subtraction.
+
+Select upper points x=r+t for t≥190/1000. Every such point is
+in J. Its n=5 partner is u(d−t) for t≤d, and m(t−d) for t>d.
+The bounds (2/9<d<2232/10000) imply that the upper partner has
+label below 35/1000 and the middle partner has label below 85/1000.
+For t≥259/1000 the middle partner has label above 35/1000.
+The selected edges are used in both orders in the positive n=5
+difference. They are counted once in each order because the
+partner labels are disjoint from the selected upper labels. The
+maps t↦d−t and t↦t−d have absolute Jacobian one, and the two
+partner types use separate diagonals. Hence the reserved diagonal
+can be used once for each partner.
+
+For an edge from U to V with reserve λV², the scalar inequality
+`2b(U−V)²+λV²≥[2bλ/(2b+λ)]U²` follows by completing the
+square. Use 2b>7/5. Spend λ=2/5 for t<259/1000 and λ=7/10
+for t≥259/1000. The resulting upper diagonal credits are 14/45
+and 7/15 respectively. All unused reserves and positive n=5
+differences may be dropped.
+
+### Pointwise check on every label
+
+The remaining expression, after setting aside ε(m²+u²), has
+diagonals (M(t)+r−p−W(t)−ε, U_*(t)+r−p−W(t)−ε) and
+off-diagonal (r−p+W(t)). Here M and U_* are the two physical
+diagonal coefficients after the stated reserves and credits.
+
+The verifier below checks a **lower** matrix on every rational
+half-open cell [i/1000,(i+1)/1000), i=0,…,306. These cells cover [0,A].
+All assertions use exact rational arithmetic. In the matrix order,
+replacing r−p by a lower bound and W by an upper bound is valid
+because they multiply the separate squares (u+m)² and −(u−m)².
+For the two physical diagonals, U decreases, so evaluate its lower
+envelope at the largest possible input in the cell. For t<85/1000
+use (2α(r−t)−4b·1_J(r−t)≥5/2−4(18/25)), valid even on
+the small portion outside J. At and above 85/1000 the middle label
+is outside J and (2α=3/4). Upper labels are all in J and
+(2α≥5/2); for t≥253/1000 they satisfy (2α=11/4).
+For this last cutoff, (e^{1253/1000}>7/2) by the exponential
+sum through degree seven. The other log, weight and exponential
+brackets are those of §§16–17.
+
+The bound for (4U(x)) retains the first eight nonnegative terms
+of the integrated exponential series. The odd Taylor polynomial
+through degree seven at −x/2 bounds e^(−x/2) below and remains
+positive on all evaluation points. For rates 3/2, 7/2 and
+11/2 use (1−e^{-a_j}>77/100,29/30,99/100) respectively,
+with the last bound valid at all later rates. The lower log
+envelope uses the first fourteen positive atanh terms. Both
+envelopes are valid at the actual endpoints, independently of
+the function v. The cell containing zero evaluates the log
+envelope at its positive right endpoint. All divisions in the
+check have positive denominators.
+
+```python
+from fractions import Fraction as F
+from math import factorial
+
+r_lo, r_hi = F(693, 1000), F(6932, 10000)
+a_lo, a_hi = 1 - r_hi, 1 - r_lo
+p_hi, b_hi = F(491, 1000), F(18, 25)
+delta, eps = r_lo - p_hi, F(1, 100)
+
+def four_U_lower(x):
+    q = sum((-x / 2)**k / factorial(k) for k in range(8))
+    assert q > 0
+    factors = (F(77, 100), F(29, 30)) + (F(99, 100),) * 6
+    return sum(8 * c * q**(3 + 4*j) / (3 + 4*j)
+               for j, c in enumerate(factors))
+
+def log_one_plus_lower(x):
+    z = x / (2 + x)
+    return sum(2 * z**(1 + 2*j) / (1 + 2*j) for j in range(14))
+
+assert sum(F(1253, 1000)**k / factorial(k) for k in range(8)) > F(7, 2)
+assert F(457, 100)**2 > F(11, 4)**3
+assert F(457, 100) / (16 * F(141, 100) * (1 - F(11, 4)**2/64)) < F(23, 100)
+for i in range(307):
+    t0, t1 = F(i, 1000), F(i + 1, 1000)
+    middle = four_U_lower(r_hi - t0) + (
+        F(5, 2) - 4*b_hi if i < 85 else F(3, 4))
+    upper = four_U_lower(r_hi + t1) + (
+        F(5, 2) if i < 253 else F(11, 4)) - 4*b_hi
+    if i < 35:
+        middle -= F(2, 5)
+        upper -= F(2, 5)
+    elif i < 85:
+        middle -= F(7, 10)
+    if i >= 190:
+        upper += F(14, 45) if i < 259 else F(7, 15)
+    beta_lower = log_one_plus_lower(a_lo / t1) - a_hi * (
+        F(1, 2) + (t1 + a_hi/2)/5 + F(2, 15) + F(23, 100))
+    denominator = four_U_lower(t1) + 2 - 4*p_hi - eps
+    assert denominator > 0
+    w_upper = p_hi + 4*p_hi**2 / denominator - beta_lower
+    aa, bb = middle + delta - w_upper - eps, upper + delta - w_upper - eps
+    off = delta + w_upper
+    assert aa > F(3, 5) and bb > F(23, 100)
+    assert aa*bb - off**2 > F(7, 100)
+print("PASS 307 rational exterior cells")
+```
+
+The positive principal minors certify the lower matrix at every
+label, beyond grid points or a finite-dimensional test space.
+Adding back the three ε reserves and unchanged cR₇^O proves
+the claimed exterior bound. The nonnegative allowance stays
+available. The four continuous blocks supply the contrast
+estimate on arbitrary profiles, including values in the §17
+zero neighborhoods. The §17 counterexample to deleting Dκ persists.
+
+### Return to the original source
+
+Section 14 now gives
+`J(h) ≥ ‖h|G‖²/9 + ‖h|O‖²/100 + cR₇^O ≥ ‖h‖²/100`.
+This discharges (12). Section 8 retains the full source gamma
+boundary terms $T(1-x)+T(1+x)$, the exact conductor constant
+and the six native atoms, and contributes $E/100$ from
+$D≥α+1/100$ with $E=2‖h‖²$. Therefore the exact original
+`primitiveArithmeticValue χ hp hn 1 (liftReal f)` satisfies
+$Q_{\chi,1}\ge-197E/200$ by this physical argument. This is a
+second written route to the specific radius-one lower obligation.
+The earlier sine-envelope certificate in §11 already provides
+the numerically stronger written bound $Q_{\chi,1}\ge-219E/250$.
+The routes share the original source and its support hypotheses.
+
+The first new conductor-three stage in the journal is j=3 at radius
+four. The required bound is Q_(χ,4)≥−E/8. Its cutoff is n≤2980,
+with 458 nonzero unramified prime-power terms, and its sine Gram
+requires the corrected Schur sign. The preceding radius-two and
+radius-three certificates retain their historical evidence scopes.
+The radius-four estimate remains open. The physical source identities
+and this argument still need formal correspondence and the usual
+exact-source Lean checks. The universal Weil sign, both
+conductor-one pole orientations, every primitive
+character/window, `DirichletStageChain.PrimitiveNegativeWitness`,
+complex zeros and multiplicities, and the exact global source
+returns remain open. RH and primitive Dirichlet GRH are unproved.
