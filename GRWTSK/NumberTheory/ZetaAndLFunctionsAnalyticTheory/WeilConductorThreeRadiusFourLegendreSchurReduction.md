@@ -9647,3 +9647,294 @@ assert off<F("2e-8")
 assert max(cost1,cost2)+off<F(".795")
 print("PASS published two-window guard: actual joint contraction <.795")
 ~~~
+
+## Three retained windows, including a nearby mixed block
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic
+proof with exact rational guards. Lean elaboration, kernel replay
+and transitive axiom audit are NOT_RUN. External independent
+review is UNASSESSED.
+
+Keep the preceding source, spaces, multiplier, $J_1,J_2$ and
+$S_\lambda$. Set $c_3=c_2-5.55$, exactly, and let $J_3$ contain
+the two intervals of radius $r=0.02$ about $\pm c_3$. Define
+$\mathcal W_{123}=(\mathcal W_{J_1},\mathcal W_{J_2},
+\mathcal W_{J_3})^{\mathsf T}$ using the actual reflected
+negative rows. On the original odd physical carrier,
+$$
+        \|\mathcal W_{123}S_\lambda^{-1}\mathcal W_{123}^*\|
+                   <0.795 .
+$$
+Thus the previously proved reserve $0.205 S_\lambda$ survives
+all three debits. The smaller separation $c_2-c_3=5.55$
+requires an estimate for the actual physical error kernels.
+
+### Signed third window and flanks
+
+The whole third band $[c_3-0.35,c_3+0.35]$ is inside
+$(3.5\cdot10^9,4\cdot10^9)$, beyond the original paid pair
+and deleted collar. Its two positive-frequency flanks
+$c_3\pm[0.24,0.35]$ and their reflections are disjoint from
+the previous allocations. Thus the original filter gives
+$1-3\cdot10^{-10}\le w\le1$ there. Enclose the logarithm at
+integer arguments bracketing $3|\nu|/(2\pi)$, now with exact
+detuning $c_3-c_2=-5.55$. The directed full Binet error gives
+$21.3687<A<21.3689$. Use the literal signed 458 terms to
+enclose $P_4$ at the mesh nodes, and $|P_4''|<13504$ to pay
+the interpolation error $13504h_s^2/8$ on every cell.
+As above the spacing is $0.005$ in the negative window and
+$0.01$ on the flanks. The resulting strict bounds are
+$$
+  5.39<-m<5.72\ \text{on }J_3,\qquad
+  m>14.12\ \text{on }c_3-[0.24,0.35],\qquad
+  m>15.39\ \text{on }c_3+[0.24,0.35].
+$$
+Evenness gives the corresponding reflected bounds. The
+larger proposed uniform lower depth $5.5$ fails:
+at $c_3-0.02$, the directed upper bound for $P_4-A$ is
+below $5.5$, hence $-m<5.5$ at this actual endpoint.
+
+### The nearby physical error pair
+
+Use the previous exact angular folding and extend the same
+factorization to $\mathcal H\oplus\mathbb C^3$. The three
+positive resource coordinates use disjoint angular sets.
+The error operator is still formed from
+$e_{i,\nu}=v_\nu-\alpha u_i$, $\alpha=1.14$. All three diagonal
+caps use $\|e_{i,\nu}\|^2<0.2411$, by the same cosine polynomials
+and the oscillation estimate at each $2c_i$. They are
+$0.794,0.68,0.24$ for the three diagonal blocks of the joint
+majorant $\mathsf M\mathsf M^*$.
+
+For both $i=2,3$ write
+$$
+ e_{i,c_i+\epsilon}=A_\epsilon\sin(c_i t)+B_\epsilon\cos(c_i t),
+ \quad A_\epsilon=\cos(\epsilon t)-\alpha q(t),\quad
+ B_\epsilon=\sin(\epsilon t),\qquad
+ q(t)=\frac{1}{b-a}\int_a^b\cos(st)\,ds.
+$$
+All following variations are on $[0,4]$. Put
+$H_0=1-\alpha q$. The alternating polynomial gives
+$1-\alpha q_L(4)<0.57$. The functions $A_\epsilon,H_0$ are
+increasing: for $0\le t\le4$ the derivative of $A_\epsilon$
+is at least
+$t(\alpha a^2(1-(4b)^2/6)-r^2)\ge0$, from the sine Taylor
+lower bound and $|\sin(\epsilon t)|\le|\epsilon|t$.
+They start at $-0.14$ and are at most $0.57$. Their absolute
+bounds and variations are therefore $0.57$ and $0.71$.
+The difference $A_\epsilon-H_0=\cos(\epsilon t)-1$ has
+supremum in modulus and variation both at most $0.0032$.
+For $B_\epsilon$ both bounds are $0.08$. The latter two
+variation bounds use monotonicity on $[0,4]$.
+
+Write $A,A',B,B'$ here for envelopes at the two detunings,
+with the primes denoting the second detuning, not derivatives.
+Since $\operatorname{Var}(H_0^2)\le0.14^2+0.57^2$,
+expand $AA'-H_0^2=(A-H_0)A'+H_0(A'-H_0)$. The product
+variation inequality gives the following exact upper bounds:
+$$
+ \operatorname{Var}(AA')\le0.352692,\quad
+ \operatorname{Var}(BB')\le0.0128,\quad
+ \operatorname{Var}(AB'),\operatorname{Var}(BA')\le0.1024 .
+$$
+For example, the correction to
+$\operatorname{Var}(H_0^2)$ in the first bound is at most
+$2(0.0032\cdot0.71+0.57\cdot0.0032)$.
+
+The product of the two odd errors is even, so integrate on
+$[0,4]$ and use product-to-sum. With $\delta=c_2-c_3=5.55$
+and $s=c_2+c_3$, the cosine coefficients at $\delta,s$ are
+$AA'+BB'$ and $-AA'+BB'$, and the sine coefficients are
+$AB'-BA'$ and $AB'+BA'$, respectively. One integration
+by parts for each coefficient costs its variation divided by
+the corresponding frequency. The sum of the four product
+variations is $0.570292$ at either frequency. At zero the
+additional boundary terms vanish: cosine integration uses a
+sine primitive and the sine coefficients contain a $B$ at zero.
+At four the cosine primitive at the difference frequency has
+$|\sin(4\delta)|\le|4\delta-7\pi|<0.21$. The sine primitive
+there has numerator at most one. Hence uniformly in both
+detunings the actual Gram kernel satisfies
+$$
+ |\langle e_{2,c_2+\epsilon},e_{3,c_3+\eta}\rangle|
+ \le \frac{0.570292+0.21(0.57^2+0.08^2)+2(0.57)(0.08)}
+            {5.55}
+     +\frac{0.570292+(0.57+0.08)^2}{c_2+c_3}
+ < \frac{0.731065}{5.55}+\frac{1}{c_2+c_3}.
+$$
+Consequently the $2,3$ block of the joint majorant is bounded
+in norm by this kernel cap times $\sqrt{M_2M_3}/\beta$.
+Using the actual density upper bounds and $\beta=B-\lambda$,
+the resulting operator norm is below $0.125$. For the two
+blocks connecting $J_1$ to $J_2,J_3$, the preceding separated
+sine Gram estimate still gives $2\cdot10^{-8}$ each.
+
+### Combining the cluster and returning to the actual comparison
+
+The majorant on the two nearby rows is strictly below
+$0.72 I$ by the scalar two-by-two test:
+$(0.72-0.68)(0.72-0.24)>0.125^2$. Indeed on a vector
+$(x,y)$ its quadratic form is at most
+$0.68\|x\|^2+2(0.125)\|x\|\|y\|+0.24\|y\|^2$.
+The diagonal norm for the distant first row is below $0.794$,
+and its coupling to the two-row cluster is below $4\cdot10^{-8}$.
+The bound for the full Gram operator is therefore below $0.795$.
+The factorization and the angular isometries return it to the
+actual $\mathcal W_{123}S_\lambda^{-1}\mathcal W_{123}^*$.
+
+The first two rows now serve as the leading block in the exact
+angular Schur comparison. Completing the square in
+$\rho I-\mathcal W_{123}S_\lambda^{-1}\mathcal W_{123}^*$
+for a $\rho<0.795$ above its norm, then comparing
+$(I-A_{12})^{-1}\le(\rho I-A_{12})^{-1}$, bounds the third
+diagonal plus its exact coupling expense to the two old windows
+by $\rho I$. Here $A_{12}=\mathcal W_{12}S_\lambda^{-1}
+\mathcal W_{12}^*$ is the actual two-window operator, unlike
+the Gram majorant. The remaining physical comparator is
+$$
+ S_\lambda^{(3)}=S_\lambda-\mathcal W_{123}^*\mathcal W_{123}
+                   \ge0.205 S_\lambda.
+$$
+Let $N^{(3)}$ restrict the original negative map to all negative
+support outside the three windows. The exact remaining
+criterion for the same $C_{4,+}\ge\lambda I_H$ is
+$\|N^{(3)}(S_\lambda^{(3)})^{-1}(N^{(3)})^*\|\le1$.
+The negative frequencies adjacent to these windows are still
+in this criterion. The full arithmetic stage and all family
+returns remain open.
+
+The following exact guard takes the complete document as input
+and reuses the directed arithmetic definitions and original
+cosine-polynomial comparison.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+document = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$", document, re.M | re.S)
+previous = [g for g in blocks if g.startswith("from fractions import Fraction")
+            and "PASS actual seven-inverse localized correction" in g]
+assert len(previous) == 1
+pivot = 'centre = F("99653682.92983")'
+assert previous[0].count(pivot) == 1
+exec(compile(previous[0].split(pivot)[0], "source directed arithmetic", "exec"))
+
+c1 = F("99653682.92983")
+k2 = 5085348195
+c2 = scale(F(k2,4), (pi_lower,pi_upper))
+a,b,r = F(".24"),F(".35"),F(".02")
+off = F("5.55")
+c3 = add(c2,(-off,-off))
+assert c3[1]+b < c2[0]-b
+assert 3500000000<c3[0]-b<c3[1]+b<4000000000
+assert c3[0]-b > F("3806849122.861433")+F(1,160)
+assert c3[0]-b > F("1852422754.1662946")+10
+assert c3[0]-b > 30000000 and c3[1]+b < 35*10**24
+assert c3[0]-b > c1+b
+
+# Binet's full error, and the exact centre 5085348195*pi/4.
+lower_arg,upper_arg = (3*k2//8-4,3*k2//8+2)
+assert lower_arg<F(3*k2,8)-3*(off+b)/(2*pi_lower)
+assert F(3*k2,8)-3*(off-b)/(2*pi_upper)<upper_arg
+y = (c3[0]-b)/2
+gerror = F(5,9)/y+F(9,32)/y**2
+gamma=(F("21.3687"),F("21.3689"))
+assert gamma[0]<log_bounds(lower_arg)[0]-gerror
+assert log_bounds(upper_arg)[1]+gerror<gamma[1]
+
+atoms=[]
+abs_second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%d==0 for d in range(2,isqrt(p)+1)):
+        continue
+    log_p=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        amplitude=scale(2*(1 if n%3==1 else -1),
+                        (log_p[0]*source_grid/(root+1),log_p[1]*source_grid/root))
+        atoms.append((amplitude,lag))
+        abs_second+=max(map(abs,amplitude))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and abs_second<13504
+
+def node_value(s):
+    x=add(c3,(s,s))
+    val=(F(0),F(0))
+    for amplitude,lag in atoms:
+        co,_=phase_trig(multiply(x,lag))
+        val=add(val,round_out(*multiply(amplitude,co),atom_grid))
+    return val
+
+def value_over_segment(s,t,h):
+    steps=(t-s)/h
+    assert steps.denominator==1
+    nodes=[node_value(s+i*h) for i in range(int(steps)+1)]
+    error=abs_second*h*h/8
+    return min(y[0] for y in nodes)-error,max(y[1] for y in nodes)+error
+
+wmin=1-F("3e-10")
+for label,lo,hi,h in [('window',-r,r,F('.005')),('left',-b,-a,F('.01')),('right',a,b,F('.01'))]:
+    pll,phh=value_over_segment(lo,hi,h)
+    if label=='window':
+        assert wmin*(pll-gamma[1])>F('5.39')
+        assert phh-gamma[0]<F('5.72')
+    else:
+        assert wmin*(gamma[0]-phh)>F('14.12' if label=='left' else '15.39')
+assert node_value(-r)[1]-gamma[0]<F("5.5")
+print("PASS 5.39 < -m < 5.72, flanks m > 14.12 and 15.39, left-endpoint -m < 5.5")
+
+# Pair source and this guard also quote the old marker, so exclude them.
+oldenv=[g for g in blocks if g.startswith("from pathlib import Path")
+        and 'print("PASS every actual negative-window evaluation,' in g
+        and 'published two-window guard' not in g
+        and 'third-window mixed Gram guard' not in g]
+assert len(oldenv)==1
+start,stop="# q(t) is the uniform average","floor=F("
+assert oldenv[0].count(start)==oldenv[0].count(stop)==1
+polycode=start+oldenv[0].split(start)[1].split(stop)[0]
+scope=dict(F=F,factorial=factorial,centre=c3[0],a=a,b=b,negative_radius=r)
+exec(compile(polycode,"original cosine envelope bound","exec"),scope)
+assert scope["error_norm_sq"]<F(".2411")
+alpha=F("1.14")
+q4_lower=sum(coef*4**(2*k) for k,coef in enumerate(scope["q_low"]))
+A,B=F(".57"),4*r
+assert 1-alpha*q4_lower<A
+assert alpha*a*a*(1-(4*b)**2/6)>r*r
+varA=A+alpha-1
+D=(4*r)**2/2
+varAA=(alpha-1)**2+A*A+2*(D*varA+A*D)
+varBB=2*B*B
+varAB=A*B+B*varA
+tv=varAA+varBB+2*varAB
+assert tv==F(".570292")
+assert max(abs(4*off-7*pi_lower),abs(4*off-7*pi_upper))<F(".21")
+near=tv+F(".21")*(A*A+B*B)+2*A*B
+far=tv+(A+B)**2
+assert near==F(".731065") and far<1
+kernel=near/off+1/(c2[0]+c3[0])
+
+beta=F(".124890887")
+assert beta==F(".124997987")-F(".0001071")
+m1,m2,m3=[x*2*r/pi_lower for x in (F("17.57"),F(15),F("5.72"))]
+assert max(m1,m2,m3)<1
+d=b-a
+def diag(mass,mu_left,mu_right):
+    qsq=pi_upper/(4*d)*(1/F(mu_left)+1/F(mu_right))
+    return mass*(alpha**2*qsq+F(".2411")/beta)
+assert diag(m1,"11.5","11.5")<F(".794")
+assert diag(m2,"8.3","18.38")<F(".68")
+assert diag(m3,"14.12","15.39")<F(".24")
+cross23=F(".125")
+assert m2*m3*(kernel/beta)**2<cross23**2
+for bound in (c2[0],c3[0]):
+    off_far=(1+alpha)**2/beta*(1/(bound-c1-2*b)+1/(bound+c1-2*b))
+    assert off_far<F("2e-8")
+near_cap=F(".72")
+assert (near_cap-F(".68"))*(near_cap-F(".24"))>cross23**2
+assert max(F(".794"),near_cap)+F("4e-8")<F(".795")
+print("PASS third-window mixed Gram guard and joint contraction <.795")
+~~~
