@@ -19484,3 +19484,338 @@ assert lower_floor>0
 print("PASS X13 exact signed matrix and mixed budget",str(candidate),k,
       scale.bit_length(),float(lower_floor),flush=True)
 ~~~
+
+## Two disjoint direct debits join the paid interval at detuning 350
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review is
+UNASSESSED.
+
+Use the original complex odd physical carrier, Fourier restriction
+$K$, masks, and orthogonal projection $\Pi_H$ for the primitive
+nonprincipal odd character modulo three. Keep the full parity-one
+gamma term, all $458$ signed prime-power terms, and the zero
+principal-pole term. Write $D=BI-\lambda\Pi_H\ge\beta I$ and
+$S_\lambda=D+K^*m_+K$ with the original constants.
+
+Starting with the thirty-nine debited enclosures through detuning
+$327.96$, take two disjoint reflected slabs $X_{14},X_{15}$ with
+positive detunings from $c_1$ as follows. Both use the folded
+$d\nu/\pi$ convention.
+
+| Slab | Interval | Positive fraction $\alpha_i$ | Raw cap $C_i$ | Negative cells at width $0.005$ | Negative cells at width $0.0025$ |
+| --- | --- | --- | --- | --- | --- |
+| $X_{14}$ | $[336.64,340.64]$ | $19/20$ | $36$ | $74$ | $146$ |
+| $X_{15}$ | $[343.80,347.80]$ | $3/4$ | $26$ | $49$ | $97$ |
+
+Put $\mathcal P_i=K^*1_{X_i}m_+K$ and
+$N_i=\sqrt{m_-}\,1_{X_i}K$. For each slab form the directed
+signed lower moments $M_i$ and genuine physical upper Gram
+$\bar G_i$. All $40$ leading principal minors of
+$\tau_i\bar G_i+\bar G_iM_i\bar G_i$ are positive on both grids
+at $\tau_{14}=10^{-8}$ and $\tau_{15}=10^{-9}$.
+For $X_{14}$ alone the smaller $\tau_{14}=10^{-9}$ also passes
+on the $1600$-cell finer grid. At this smaller shift the
+fixed $800$-cell sufficient matrix has a strictly negative
+leading-pivot value at zero-based index $16$ after all preceding
+pivots pass. The finer-grid proof uses its distinct directed step
+lower bound on the same original signed multiplier.
+
+The established local inequalities therefore are
+$$
+ N_i^*N_i\le\alpha_i\mathcal P_i+
+        (\tau_i+C_i\Delta_{40})I,qquad
+ \Delta_{40}=\epsilon_{40}(2+\epsilon_{40}),\quad
+ \epsilon_{40}=8^{40}/40!,
+$$
+using $\tau_{14}=\tau_{15}=10^{-9}$ with the finer proof for
+$X_{14}$. Alternatively the result with $\tau_{14}=10^{-8}$
+has both grid certificates. The transfer uses the directed
+signed lower order, physical Gram domination, and the centered
+degree-$39$ angular $L^2$ Taylor error on width four.
+
+The original masks are clear on the gap $[327.96,350]$.
+Use the full Binet bracket $17.6779<A<17.6780$, filter lower
+bound $1-3\cdot10^{-10}$, all signed prime powers, and
+$|P_4''|<13504$. The exact signed complement has
+$1065$ width-$0.02$ intervals and no bisections, with strict
+positivity off
+$$
+ [338.48,338.80],\quad[339.56,339.70],\quad[345.66,345.94].
+$$
+Their endpoints are positive, and interior test points $338.64$,
+$339.64$, $345.80$ are each negative. Reflection gives the
+other frequency sign. The first two enclosures lie inside
+$X_{14}$ and the third lies inside $X_{15}$.
+
+Reserve the mutually disjoint positive resources of all
+direct slabs before applying the original $q_{23}=0.953004$
+comparison. The two new resources avoid all earlier direct
+slabs, tagged positive allocations and negative enclosures.
+Their interiors are also disjoint from the previously paid
+$[350,405]$ interval. The exact joint forty-two-enclosure cap
+using the finer proof of $X_{14}$ is
+$$
+ \max\left\{0.953004+
+ \frac{2.95\cdot10^{-8}+3\delta_{36}+13\cdot10^{-9}
+        +182\Delta_{40}+\delta_9}{\beta},
+ \tfrac{19}{20}\right\}<0.953005,
+$$
+where $\delta_{36}=9(8^{36}/36!)(2+8^{36}/36!)$ and
+$\delta_9=30((14.6)^{64}/64!)(2+(14.6)^{64}/64!)$.
+Replacing $13\cdot10^{-9}$ with $22\cdot10^{-9}$
+gives the valid both-grid cap. Its larger physical price
+differs by exactly $9\cdot10^{-9}$ and that cap is also
+below $0.953005$.
+
+Let $W_{\rm all42}$ stack the earlier $W_{\rm all39}$, the
+two disjoint output restrictions of $N_{14}$, and $N_{15}$.
+The sign guard confines their negative support to the three enclosures. Thus
+$S_{\rm all42}=S_\lambda-W_{\rm all42}^*W_{\rm all42}
+\ge0.046995S_\lambda$. The contiguous certified region joins
+the already paid $[350,405]$ window. The resulting enclosures
+cover all actual negative support in reflected $c_1+[-16.64,405]$
+and retain the detached and remote enclosures. For the actual unpaid negative
+restriction $N_{\rm out}$,
+$T_+-\lambda\Pi_H=S_{\rm all42}-N_{\rm out}^*N_{\rm out}$.
+Bounded congruence reduces its sign to
+$\|N_{\rm out}S_{\rm all42}^{-1}N_{\rm out}^*\|\le1$.
+The seven leading inverses and directional return require
+that sign. The earlier unpaid trace corridor remains outside
+these new enclosures.
+
+Extract the guard and pass the pinned complete source Markdown
+path followed by `sign`, `matrix14`, `fine14`, `matrix15`,
+`fine15`, `cheap14`, or `coarse-cheap14`.
+The last two modes test the actual fine certificate and
+fixed coarse sufficient failure at the smaller scalar shift.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+assert mode in ("sign","matrix14","fine14","matrix15","fine15","cheap14","coarse-cheap14")
+fine=mode.startswith("fine") or mode=="cheap14"
+block=None if mode=="sign" else int(mode[-2:])
+data={
+    14:("336.64","340.64",47581289,47581292,("338.64","339.64"),F(19,20),36,F("1e-8"),74,146),
+    15:("343.80","347.80",47581292,47581295,("345.80",),F(3,4),26,F("1e-9"),49,97),
+}
+if mode=="sign":
+    start,stop=F("327.96"),F("350.00")
+    lowarg,higharg=47581285,47581296
+else:
+    a,b,lowarg,higharg,witnesses,positive_fraction,raw_cap,candidate,num_coarse,num_fine=data[block]
+    start,stop=F(a),F(b)
+    if mode in ("cheap14","coarse-cheap14"):
+        candidate=F("1e-9")
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+step=F(".02" if mode=="sign" else ".0025" if fine else ".005")
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+stop,c0+stop),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    twi=-twi
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[count-k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+if mode=="sign":
+    boxes=[tuple(map(F,p)) for p in (("338.48","338.80"),("339.56","339.70"),("345.66","345.94"))]
+    assert all(node(x)[1]<Alo for box in boxes for x in box)
+    assert all(node(F(x))[0]>Ahi for _,_,_,_,ws,_,_,_,_,_ in data.values() for x in ws)
+    checks,splits=0,0
+    def positive(x,h):
+        global checks,splits
+        checks+=1
+        lo,hi=estimate(x,h)
+        if hi<Alo:
+            return
+        assert lo<Ahi and h>F(".000625"), (str(x),str(h),float(lo),float(hi))
+        splits+=1
+        positive(x,h/2)
+        positive(x+h/2,h/2)
+    for u,v in zip([start]+[b for _,b in boxes],[a for a,_ in boxes]+[stop]):
+        assert ((v-u)/step).denominator==1
+        for j in range(int((v-u)/step)):
+            positive(u+j*step,step)
+    assert (checks,splits)==(1065,0)
+    print("PASS exact signed gap to +350.00",checks,splits)
+    raise SystemExit
+
+from math import lcm
+
+centre_offset=(start+stop)/2
+c=c0+centre_offset
+wmin=1-F("3e-10")
+assert start==centre_offset-2 and stop==centre_offset+2
+assert count==(1600 if fine else 800)
+assert all(node(F(x))[0]>Ahi for x in witnesses)
+assert node(start)[1]<Alo and node(stop)[1]<Alo
+rho=[]
+for j in range(count):
+    offset=start+j*step
+    _,upper=estimate(offset,step)
+    raw=Alo-upper
+    lower=positive_fraction*wmin*raw/pi_upper if raw>=0 else raw/pi_lower
+    lower=F((lower*10**7)//1,10**7)
+    assert pi_upper*abs(lower)<raw_cap
+    if lower:
+        rho.append((offset-centre_offset,offset+step-centre_offset,lower))
+assert len(rho)==count and sum(w<0 for _,_,w in rho)==(num_fine if fine else num_coarse)
+k=40
+moments=[sum(w*(v**(j+1)-u**(j+1))/(j+1) for u,v,w in rho)
+         for j in range(2*k-1)]
+coefficient=[(-1)**(i//2)*F(4**i,factorial(i)) for i in range(k)]
+M=[[coefficient[i]*coefficient[j]*moments[i+j] for j in range(k)] for i in range(k)]
+G=[[(F(4,i+j+1) if (i+j)%2==0 else F(0))+(F(k)/c if i==j else F(0))
+    for j in range(k)] for i in range(k)]
+
+def mul(A,B):
+    return [[sum(A[i][u]*B[u][j] for u in range(k)) for j in range(k)] for i in range(k)]
+
+q=mul(mul(G,M),G)
+assert all(q[i][j]==q[j][i] for i in range(k) for j in range(k))
+B,lam=F(".124997987"),F(".0001071")
+beta=B-lam
+eps=F(8)**k/factorial(k)
+delta=raw_cap*eps*(2+eps)
+assert delta<F("1.2e-10")
+print("signed cells",len(rho),sum(w<0 for u,v,w in rho),"folded raw bound",float(pi_upper*max(abs(w) for u,v,w in rho)),"Taylor operator error",float(delta),flush=True)
+C=[[candidate*G[i][j]+q[i][j] for j in range(k)] for i in range(k)]
+scale=lcm(*(v.denominator for row in C for v in row))
+scaled=[[int(v*scale) for v in row] for row in C]
+assert all(den==int(den) for row in C for den in (v*scale for v in row))
+last=1
+for j in range(k):
+    pivot=scaled[j][j]
+    if pivot<=0:
+        assert mode=="coarse-cheap14" and j==16 and pivot<0
+        print("PASS strict coarse fixed-price pivot failure",j,float(F(pivot,last*scale)))
+        raise SystemExit
+    for i in range(j+1,k):
+        for r in range(i,k):
+            num=pivot*scaled[i][r]-scaled[i][j]*scaled[r][j]
+            value,rest=divmod(num,last)
+            assert rest==0
+            scaled[i][r]=value
+    for i in range(j+1,k):
+        for r in range(i+1,k):
+            scaled[r][i]=scaled[i][r]
+    last=pivot
+assert mode!="coarse-cheap14"
+lower_floor=beta-candidate-delta
+eps36=F(8)**36/factorial(36)
+delta36=9*eps36*(2+eps36)
+eps64=F("14.6")**64/factorial(64)
+old_price=F("2.95e-8")+3*delta36+11*F("1e-9")+120*eps*(2+eps)+30*eps64*(2+eps64)
+both_cap=max(F(".953004")+(old_price+F("11e-9")+62*eps*(2+eps))/beta,F(19,20))
+fine_cap=max(F(".953004")+(old_price+F("2e-9")+62*eps*(2+eps))/beta,F(19,20))
+assert fine_cap<both_cap<F(".953005")
+assert (both_cap-fine_cap)*beta==F("9e-9")
+assert lower_floor>F(".12484")
+actual_projection_error=544*eps
+assert (lower_floor-2*actual_projection_error)/(B-actual_projection_error)>F(".9987")
+paid_spans=[(F("-16.64"),F("327.96")),(F(350),F(405)),
+            (F("5311.55"),F("5315.55")),(F(20345),F(20410))]
+assert all(r<start or stop<l for l,r in paid_spans)
+direct_intervals=[(F(t[0]),F(t[1])) for t in data.values()]
+assert all(v<l for (_,v),(l,_) in zip(direct_intervals,direct_intervals[1:]))
+assert sum(t[6] for t in data.values())==62 and sum(t[7] for t in data.values())==F("11e-9")
+c2_lo=F(5085348195,4)*pi_lower
+assert c2_lo-F("5.55")-2>c0+stop
+print("exact mixed-fraction caps, both-grid then fine-price",float(both_cap),float(fine_cap),flush=True)
+assert lower_floor>0
+print("PASS exact signed matrix and mixed budget",block,str(candidate),k,
+      scale.bit_length(),float(lower_floor),flush=True)
+~~~
