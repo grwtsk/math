@@ -2298,3 +2298,286 @@ retain their original hypotheses and domains. This result
 also leaves the known negative frequency compression at
 $x_*=3806849122861433/10^6$ at its original scope.
 [Original frequency obstruction](WeilConductorThreeRadiusFourFrequencyObstruction.lean)
+
+## A physical ray nearest the negative frequency collar
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact directed arithmetic. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Put $x_*=3806849122861433/10^6$ and $r_*=10^{-5}$.
+The [original negative frequency collar](WeilConductorThreeRadiusFourFrequencyObstruction.lean)
+is $J_*=[x_*-r_*,x_*+r_*]\cup[-x_*-r_*,-x_*+r_*]$.
+Its masked residual multiplier $m=1_{\mathcal D}w(A-P_4)$
+is negative. The original corrected frequency form $M$ has
+a negative compression on the odd frequency functions supported
+there. Take the original radius-four physical ray
+$$
+ k=4847030844,\quad q=\frac{k}{k+1},\quad g=\psi_k+q\psi_{k+1},
+ \quad u=\frac{g}{\|g\|},\quad z=\Pi_{G_2}u.
+$$
+The native $g$ is real odd with compact $C^2$ extension and
+full gamma energy. The projected vector is nonzero and satisfies
+$$
+ 15.949350<\frac{\langle z,C_2z\rangle}{E(z)}<15.949357.
+$$
+The same unit native ray has angular mass in $J_*$
+between $1.4414\cdot10^{-5}$ and $1.4436\cdot10^{-5}$.
+The collar's contribution to its bounded residual $R$
+is in $(-0.0001133,-0.0001123)$.
+
+### Signed prime phases and the full gamma return
+
+The existing Machin bounds verify $-1/2<4x_*/\pi-k<1/2$.
+Thus $k$ is the unique nearest native index. Use the exact
+two-sine shift formula above on $k,k+1$. Recomputing its
+three entries with all 458 original signed atoms gives
+$$
+ [108842793925,108842794384],\quad
+ [17771811338,17771811796],\quad
+ [-34457464285,-34457463827]
+$$
+in upper triangular order and units of $10^{-10}$.
+Evaluate the actual matrix on $(1,q)$ and divide by $1+q^2$.
+The full unmasked prime expectation on $u$ is in
+$(5.4964476172,5.4964477090)$.
+
+Use the mirrored radius-$10^4$ collar $I$ about $\pm k\pi/4$.
+It lies within $3.5\cdot10^9<|\xi|<4\cdot10^9$ inside
+$\mathcal D$, above the paid pair and containing $J_*$.
+The filter defect is at most $\eta=3\cdot10^{-10}$. The whole
+off-collar mass is at most $\theta=8(2/10^4)^3$.
+The log input $3|\xi|/(2\pi)$ lies between $1817631566$
+and $1817641567$. With $y_0=1.75\cdot10^9$ in the original
+Binet error $5/(9y_0)+9/(32y_0^2)$ this gives
+$21.32080015<A(\xi)<21.32080566$ on $I$.
+Pay $A\ge-2$ on its complement and $A<61$ on the rest of
+the residual set. The entire prime mask costs $211(\eta+\theta)$.
+
+### Mass and direct debit in the negative collar
+
+Write $\omega=k\pi/4$, $\Delta=\pi/4$ and $b=\xi-\omega$ on
+the positive part of $J_*$. The directed angle bounds put
+$0<b<\Delta$ there. The exact sine transforms and
+$q\omega_{k+1}=\omega$ give
+$$
+ |\widehat g(\xi)|=\omega\sin(4b)
+ \left(\frac{1}{b(2\omega+b)}
+       +\frac{1}{(\Delta-b)(2\omega+b+\Delta)}\right).
+$$
+The two contributions add between the native centers.
+Use outward bounds for both positive denominators and
+the first two and three terms of the sine series at the
+outward inputs. Sine increases on the short argument
+interval, which lies in $(0,1)$. Squaring, dividing by
+$1+q^2$ and multiplying by the full angular measure
+$2r_*/\pi$ gives the stated mass interval.
+
+At the exact rational $x_*$, direct directed cosines give
+$P_4(x_*)\in[291481183577,291481184040]/10^{10}$.
+For these cosines reduce the dimensionless interval
+$x_*\log n/\pi$ by a common even integer, multiply the lower
+residue by the lower $\pi$ endpoint, and pay the phase uncertainty
+and degree-24 Taylor bound. The original $1688$ Lipschitz bound
+for $P_4$, evenness, the enclosing gamma bounds and
+$1-\eta\le w\le1$ give $-7.845<m<-7.810$ on $J_*$.
+Multiplying by the full mass interval gives the stated
+negative contribution on $u$.
+
+For any odd physical $f$, its Fourier evaluation at $\xi$
+has representing kernel of absolute value $|\sin(\xi t)|$.
+Its squared norm in $dt$ on $[-4,4]$ is
+$4-\sin(8\xi)/(2\xi)$. Since $|\xi|>3.5\cdot10^9$ here,
+the direct multiplier term on $J_*$ for every such $f$ is
+bounded below by
+$$
+ -7.845\frac{2r_*}{\pi}\left(4+\frac1{7\cdot10^9}\right)E(f)
+ >-E(f)/5000
+$$
+when $f\ne0$. This estimates the original $R$ term restricted
+to the collar. The inverse prices are evaluated on the actual
+coupled operators.
+
+### Physical projection and the five inverse prices
+
+Both native indices lie above the old sine head, below $\Omega$,
+and outside the two higher sectors. The inherited polynomial
+and preimage estimates give $\|u-\Pi_{G_1}u\|<4\delta$,
+$\delta=10^{-272}$. Native orthogonality to the separated
+carriers and their physical Gram $\Gamma\ge(1-16N\delta^2)I$,
+$N=3\cdot10^{19}+1$, bound the last projection by $\delta$.
+Hence $\|z-u\|<5\delta$ and $1-5\delta<\|z\|\le1$.
+The bounded $R$ transfer costs $3000\delta$.
+The $J_*$ mass changes by at most $10\delta$ by the contraction
+of Fourier restriction. The stated mass and local $R$ intervals
+also hold on $z$ before division by its energy.
+
+For the old head use the angular $L^1$ bound $16/3$ and split
+at $3.5\cdot10^9$. Above the split each old sine transform
+is below $2.45\cdot10^{-12}$ by its exact denominator and
+the old carrier bound $3\cdot10^7$. The unit old sine space
+has pointwise bound $6200\cdot2.45\cdot10^{-12}$ there.
+Below the split the new carrier distance exceeds $10^8$.
+The original adjacent tail makes its angular norm there
+strictly below $8\cdot10^{-12}$. With multiplier 300,
+actual $U$ preimage norm $10/9$, its relative error
+$10^{-60}$ and the transfer to $z$, this gives
+$\|PRz\|,\|\Pi_U Rz\|<3\cdot10^{-5}$.
+The inherited weighted head interaction below $3/8$ and the
+$W$ term give $\|Jz\|<4.2\cdot10^{-5}$.
+
+Split the high $Y_0$ pairing at $10^{25}$.
+Below it the high-preimage transform bound is
+$6\cdot10^{-24}$ per unit preimage norm. Above it the new
+tail has norm below $10^{-35}$. The same physical
+preimage transfer and first three inverse prices give
+$\|J_Yz\|<3.4\cdot10^{-6}$. For each separated carrier the
+separation of native centers exceeds $10^{25}$ and the
+two-envelope direct mixed bound is $3\cdot10^{-44}$.
+After the $2700\delta$ transfer and four inherited mixed
+inverse prices, each $C_1$ entry is below $4.1\cdot10^{-18}$.
+The actual Gram inverse gives
+$\|J_{\mathcal V}z\|<2.3\cdot10^{-8}$.
+
+The five original inverse prices, including the $D_0$ operator
+bound $10^{-515}$, sum to less than $3.12\cdot10^{-8}$.
+Subtract them from the lower residual estimate, which stays
+positive. Divide the lower and upper residual bounds by the
+actual $E(z)$ in $((1-5\delta)^2,1]$ and add $B$ on both sides.
+The guards give the stated positive quotient including the
+negative collar contribution.
+
+### Directed guards for the adverse carrier
+
+Use the historical prefix and the overlapping block up to its
+`q, t` assignment as for the preceding certificate. In that
+prefix set `k = 4847030844` and `modes = range(k, k+2)`. Append
+the following guards.
+
+```python
+
+assert [tuple(v*atom_grid for v in entries[pair]) for pair in pairs] == [
+    (108842793925, 108842794384), (17771811338, 17771811796),
+    (-34457464285, -34457463827),
+]
+q = F(k, k+1)
+energy = 1+q*q
+prime = add(add(entries[k, k], scale(2*q, entries[k, k+1])),
+            scale(q*q, entries[k+1, k+1]))
+prime = scale(1/energy, prime)
+prime_lower, prime_upper = F(54964476172, 10**10), F(54964477090, 10**10)
+assert prime_lower < prime[0] <= prime[1] < prime_upper
+
+adverse = F(3806849122861433, 10**6)
+radius = F(1, 10**5)
+omega_lower, omega_upper = F(k, 4)*pi_lower, F(k, 4)*pi_upper
+step_lower, step_upper = pi_lower/4, pi_upper/4
+assert -F(1, 2) < 4*adverse/pi_upper-k <= 4*adverse/pi_lower-k < F(1, 2)
+offset_lower, offset_upper = adverse-radius-omega_upper, adverse+radius-omega_lower
+assert 0 < offset_lower < offset_upper < step_lower
+arg_lower, arg_upper = 4*offset_lower, 4*offset_upper
+assert 0 < arg_lower <= arg_upper < 1
+sin_lower = arg_lower-arg_lower**3/6
+sin_upper = arg_upper-arg_upper**3/6+arg_upper**5/120
+amplitude_lower = omega_lower*sin_lower*(
+    1/(offset_upper*(2*omega_upper+offset_upper))
+    +1/((step_upper-offset_lower)*(2*omega_upper+offset_upper+step_upper))
+)
+amplitude_upper = omega_upper*sin_upper*(
+    1/(offset_lower*(2*omega_lower+offset_lower))
+    +1/((step_lower-offset_upper)*(2*omega_lower+offset_lower+step_lower))
+)
+mass_lower = (2*radius/pi_upper)*amplitude_lower**2/energy
+mass_upper = (2*radius/pi_lower)*amplitude_upper**2/energy
+mass_floor, mass_ceiling = F(14414, 10**9), F(14436, 10**9)
+assert mass_floor < mass_lower <= mass_upper < mass_ceiling
+
+def point_cosine(lag):
+    c_lower = adverse*lag[0]/pi_upper
+    c_upper = adverse*lag[1]/pi_lower
+    period = (c_lower+1)//2
+    residue = c_lower-2*period
+    assert -1 <= residue < 1
+    angle = pi_lower*residue
+    total = sum((-1)**l*angle**(2*l)/factorial(2*l) for l in range(13))
+    error = pi_upper*(c_upper-c_lower)+pi_upper-pi_lower+F(22, 7)**26/factorial(26)
+    return max(-1, total-error), min(1, total+error)
+
+point_prime = (F(0), F(0))
+point_count = 0
+for p in range(2, 2981):
+    if p == 3 or any(p % m == 0 for m in range(2, isqrt(p)+1)):
+        continue
+    log_p_lower, log_p_upper = log_bounds(p)
+    n = p
+    while n <= 2980:
+        root_floor = isqrt(n*source_grid**2)
+        magnitude = (2*log_p_lower*source_grid/(root_floor+1),
+                     2*log_p_upper*source_grid/root_floor)
+        signed = scale(1 if n % 3 == 1 else -1, magnitude)
+        term = multiply(signed, point_cosine(log_bounds(n)))
+        point_prime = add(point_prime, round_out(*term, atom_grid))
+        point_count += 1
+        n *= p
+assert point_count == 458
+assert tuple(v*atom_grid for v in point_prime) == (291481183577, 291481184040)
+
+width, delta = 10**4, F(1, 10**272)
+theta, eta = 8*F(2, width)**3, F(3, 10**10)
+assert F(3*k, 4)-width > F(35, 10)*10**9
+assert F(11*k, 14)+width < 4*10**9
+assert F(3, 4)*(2*10**25-k) > 10**25
+y_min = F(7, 4)*10**9
+binet = F(5, 9)/y_min+F(9, 32)/y_min**2
+gamma_lower, gamma_upper = F(2132080015, 10**8), F(2132080566, 10**8)
+assert 1817631566 < F(3*k, 8)-width//2
+assert F(3*k, 8)+width//2 < 1817641567
+assert log_bounds(1817631566)[0]-binet > gamma_lower
+assert log_bounds(1817641567)[1]+binet < gamma_upper
+assert adverse-radius > omega_upper-width and adverse+radius < omega_lower+width
+assert mass_floor < mass_lower-10*delta and mass_upper+10*delta < mass_ceiling
+prime_variation = 1688*radius
+local_lower, local_upper = F(-7845, 1000), F(-7810, 1000)
+assert local_lower < gamma_lower-point_prime[1]-prime_variation
+assert (1-eta)*(gamma_upper-point_prime[0]+prime_variation) < local_upper
+assert F(-1133, 10**7) < local_lower*mass_ceiling
+assert local_upper*mass_floor < F(-1123, 10**7)
+assert (-local_lower)*2*radius*(4+F(1, 7*10**9))/pi_lower < F(1, 5000)
+
+threshold = 35*10**8
+assert F(3*k, 4)-threshold > 10**8
+assert 8*F(2, 10**8)**3 == F(8, 10**12)**2
+assert F(3*10**7, threshold**2-(3*10**7)**2) < F(245, 10**14)
+assert 38170000 < 6200**2
+mixed_old = 300*(F(16, 3)*6200*F(245, 10**14)+F(8, 10**12))
+p_bound, j_bound = F(3, 10**5), F(42, 10**6)
+assert F(10, 9)*(mixed_old+300*F(1, 10**60))+1500*delta < p_bound
+assert (1+F(3, 8))*p_bound+F(741, 10**265) < j_bound
+assert 10**25-F(11*k, 14)>10**24
+assert 8*F(2, 10**24)**3 < F(1, 10**35)**2
+mixed_high = (300*(F(16, 3)*F(6, 10**24)+F(1, 10**35))+2400*delta)/(1-3*delta)
+y_bound, v_bound = F(34, 10**7), F(23, 10**9)
+assert mixed_high+10*F(3, 10**6)*p_bound+F(25, 2*159)*j_bound+F(1, 10**515) < y_bound
+
+sector_count = 3*10**19+1
+gram_floor = 1-16*sector_count*delta**2
+assert sector_count*(16*delta**2)**2/gram_floor < delta**2
+entry_bound = F(41, 10**19)
+assert F(3, 10**44)+2700*delta+10*F(4, 10**21)*p_bound \
+       +F(25, 2)*F(13, 10**18)*j_bound+F(1, 10**515) \
+       +4*F(3, 10**13)*y_bound < entry_bound
+assert sector_count*entry_bound**2/gram_floor < v_bound**2
+debit = 10*p_bound**2+F(25, 2)*j_bound**2+F(1, 10**515)+4*y_bound**2+v_bound**2/12
+assert debit < F(312, 10**10)
+budget = F(124997987, 10**9)
+mask_price = 211*(theta+eta)
+lower = gamma_lower*(1-theta)*(1-eta)-2*theta-prime_upper-mask_price-3000*delta-debit
+upper = gamma_upper+61*theta-prime_lower+mask_price+3000*delta
+assert lower > 0 and budget+lower > F(15949350, 10**6)
+assert budget+upper/(1-5*delta)**2 < F(15949357, 10**6)
+print('PASS adjacent ray and original negative collar')
+```
+
+The original negative frequency compression remains on its stated
+domain. The full sign on the physical $G_2$, the original radius-four
+stage and the RH and primitive Dirichlet GRH returns remain open.
