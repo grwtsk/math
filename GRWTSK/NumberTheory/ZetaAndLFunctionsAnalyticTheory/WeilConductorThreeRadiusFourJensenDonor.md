@@ -4842,3 +4842,505 @@ print("PASS exact physical trial",mode,"norm²",float(norm2[0]),float(norm2[1]),
       "normalized decrease",float(-upper[1]/norm2[1]),
       "required scalar larger than",float(tau+margin))
 ~~~
+
+## A common positive donor for E16 and E17
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 70-enclosure comparison](https://github.com/grwtsk/math/blob/bf73c2207c50f65a93a92e49a05ae2c4a1d5291d/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob 709a4faf8c17253cf9fe4217824fcc1e6104739e,
+and the [pinned E17 sign and obstruction source](https://github.com/grwtsk/math/blob/307f0d3821dabd6dd3d4d65c87d8fb98affecd83/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob 8b60fd64edf6f5cf5194ddad6e0f938d1d0f2afe.
+The original radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the
+complex odd physical carrier $L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$,
+zero extension, folded measure $d\nu/\pi$, original masks
+and physical projection. The primitive nonprincipal odd
+character modulo three uses the full parity-one gamma,
+all $458$ signed prime powers and zero principal-pole term.
+The displayed detunings use $c_1=99653682.92983$ and
+include the reflected restrictions.
+
+Set $Y_*=[782.86,790.86]$. Its negative restrictions are
+$E_{16}=[784.80,784.88]$ and $E_{17}=[786.68,787.06]$.
+The guard replays the three directed sign regions
+$[765.22,784.80]$, $[784.80,786.68]$ and
+$[786.68,796.12]$ off their respective enclosures.
+The adjoining endpoints $784.80$ and $786.68$ are
+strictly positive. The left endpoint of $Y_*$ is past
+the preceding negative enclosure ending at $765.44$.
+Thus the only negative restrictions on $Y_*$ are
+$E_{16}$ and $E_{17}$.
+
+The common donor contains $Y_{16}=[783.84,785.84]$,
+and begins $15.53$ after $Y_{15}$ ends at $767.33$.
+The exact endpoints also separate it from the remote
+tagged intervals of the original comparator. The
+directed arithmetic checks both substrips against the
+original angular masks and Binet window. Reassign the
+positive tag $Y_{16}$ to this common donor once.
+Use the independently established shared derivative
+comparison for E14 and E15 on their own two tags and
+their original scalar bound.
+
+### Exact local form
+
+Split the data generation for $Y_*$ at $785.86$.
+The two parts share a single null endpoint and their
+directed positive bins are disjoint. The respective
+bin counts are $146$ and $232$, with $21$ and $138$
+nonzero negative upper cells. This gives one shared
+positive map $B$ with $378$ true sine averages and
+rational diagonal weights $W\succ0$. Its bound is
+$B^*WB\preceq\mathcal P_{Y_*}$. The negative Taylor maps
+$V_{16}$ and $V_{17}$ use $18$ terms respectively at
+$99654467.76983$ and $99654469.78983$. Their block
+matrix $M=\operatorname{diag}(M_{16},M_{17})$ is positive
+definite. With $V=(V_{16},V_{17})$ the directed upper
+densities give
+$$
+ N_{E_{16}}^*N_{E_{16}}+N_{E_{17}}^*N_{E_{17}}
+ \preceq V^*MV+(\delta_{16}+\delta_{17})I.
+$$
+The short Taylor kernel errors use
+$\epsilon_{16}=.16^{18}/18!$ and
+$\epsilon_{17}=.80^{18}/18!$, with
+$\delta_j=8\epsilon_j(2+\epsilon_j)\int_{E_j}\eta_j$.
+
+The exact Woodbury lower residual at $\alpha=19/20$,
+$\tau=10^{-12}$ is
+$$
+ R_Z=\tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                 -\tau Z^*(\alpha W)^{-1}Z\succ0 .
+$$
+The proposal $Z$ uses both strips of true positive averages
+for both blocks and the directed guard retains the cross
+terms in the physical Gram and positive ridge matrix. It
+uses $160$ Taylor terms for the averaged sine carrier.
+The carrier products give endpoint integrals at the sum
+frequency and at the exact difference $8.08$. The exact
+row width is below $10^{-23}$ and its directed lower
+matrix has all $36$ positive pivots.
+
+Let $S=\tau I+\alpha B^*WB$ on the physical carrier and
+$A=BB^*+\tau(\alpha W)^{-1}$ on the finite space of
+positive averages. Both are strictly positive. Woodbury
+gives $\tau S^{-1}=I-B^*A^{-1}B$. The difference between
+$\tau(M^{-1}-VS^{-1}V^*)$ and $R_Z$ is
+$$
+ (Z-A^{-1}BV^*)^*A(Z-A^{-1}BV^*)\succeq0.
+$$
+Positivity of $R_Z$ therefore gives $V^*MV\preceq S$ by
+the equivalent finite-output Schur comparison. The
+directed positive and negative bounds give
+$$
+ N_{E_{16}}^*N_{E_{16}}+N_{E_{17}}^*N_{E_{17}}
+ \preceq \tfrac{19}{20}\mathcal P_{Y_*}+(1.001\cdot10^{-12})I ,
+$$
+using the strictly smaller exact price
+$\tau+\delta_{16}+\delta_{17}$ in the guard.
+
+### Return to the original comparison
+
+Use the E14 and E15 common derivative debit at their
+disjoint tags and reserve $\mathcal P_{Y_*}$ once.
+The genuine earlier tagged channels and $\beta I$ fit
+the reduced comparator. E16 enters the common pair output
+once, and E17 supplies one new negative output. Add the
+common scalar price divided by $\beta$ to the retained
+scalar branch and include the fraction $19/20$. All $48$
+original price choices under each of the four prices
+for the first deep pair retain the cap below $0.953005$.
+The least common-map room exceeds $6.7037\cdot10^{-9}$.
+The width-four obstruction above retains the original
+$Y_{16}$ positive reservation. The present comparison
+uses the wider joint donor in place of that reservation.
+
+The resulting $71$ negative restrictions give contiguous
+signed coverage through $796.12$. With
+$S_{\mathrm{all71}}=S_\lambda-W_{\mathrm{all71}}^*W_{\mathrm{all71}}$
+the actual identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all71}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all71}}\succeq0.046995S_\lambda .
+$$
+The original seven leading inverses and directional return
+still require $\|N_{\mathrm{out}}S_{\mathrm{all71}}^{-1}
+N_{\mathrm{out}}^*\|\le1$ on the full actual outside support.
+
+Extract the guard and pass the pinned arithmetic Markdown,
+the Jensen donor Markdown containing its E15, E16, E17
+and derivative checkers, and `1e-12`.
+
+~~~python
+
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial, cos, sin, sqrt, fsum,acos
+from pathlib import Path
+import re
+import sys
+
+_,source_path,jensen_path,ask=sys.argv
+assert sha256(Path(source_path).read_bytes()).hexdigest()=="2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+journal=Path(jensen_path).read_text()
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",journal,re.M|re.S)
+cores=[b for b in blocks if sha256(b.encode()).hexdigest()=="a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654"]
+assert len(cores)==1
+core=cores[0]
+assert sum(sha256(b.encode()).hexdigest()=="8318ff01cda70c82cf38af6ed3aa38f689a41f77153d903cb6e73064fb2571c1" for b in blocks)==1
+assert sum(sha256(b.encode()).hexdigest()=="fb06ddc22892ae6f573f0dc659a5e60c9b156ba327344f8f043d3ad06f2bfbb9" for b in blocks)==1
+def checker(digest):
+    found=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(found)==1
+    return found[0]
+
+def execute(code,args):
+    state={"__name__":"__main__","__file__":__file__}
+    original=sys.argv
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen_path,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+def sign_state(code,args):
+    state={"__name__":"__main__","__file__":__file__}
+    original=sys.argv
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen_path,"exec"),state)
+    except SystemExit as exc:
+        assert exc.code in (None,0)
+    else:
+        raise AssertionError("the directed sign proof did not complete")
+    finally:
+        sys.argv=original
+    return state
+
+e15=checker("76204e7c93cd454e2949ff24d43411f52ec64f05857899c9c4c0e54987922e9c")
+call15='exec(compile(code,jensen_path,"exec"),{"__name__":"__main__"})'
+assert e15.count(call15)==1
+flight15=execute(e15.replace(call15,"generated=code"),
+                 [source_path,jensen_path,"sign"])
+first=sign_state(flight15["generated"],[source_path,"sign"])
+
+e16=checker("8318ff01cda70c82cf38af6ed3aa38f689a41f77153d903cb6e73064fb2571c1")
+call16=('exec(compile(source,jensen,"exec"),\n'
+        '     {"__name__":"__main__","__file__":__file__,"e16_directed":directed})')
+assert e16.count(call16)==1
+flight16=execute(e16.replace(call16,"generated=directed"),[source_path,jensen_path])
+second=sign_state(flight16["generated"],[source_path,"sign"])
+
+e17=checker("7cd9585534f24846f18274bc5c614e509815981bea795306eb17de6a2fce5ba8")
+third=sign_state(e17,[source_path,jensen_path,"sign"])["data"]
+assert (first["start"],first["stop"])==tuple(map(F,("765.22","784.80")))
+assert (second["start"],second["stop"])==tuple(map(F,("784.80","786.68")))
+assert (third["start"],third["stop"])==tuple(map(F,("786.68","796.12")))
+assert first["boxes"]==[tuple(map(F,("765.22","765.44")))]
+assert second["boxes"]==[tuple(map(F,("784.80","784.88")))]
+assert third["boxes"]==[tuple(map(F,("786.68","787.06")))]
+assert first["node"](first["stop"])[1]<first["Alo"]
+assert second["node"](second["stop"])[1]<second["Alo"]
+print("PASS exact joined sign scopes at 784.80 and 786.68")
+k=18
+d=[]
+for mode,left,right,l0,r0,center in (
+    ("e16","782.86","785.86","784.80","784.88","784.84"),
+    ("e17","785.86","790.86","786.68","787.06","786.86"),
+):
+    row='"'+mode+'":'+(left,right,l0,r0,center,".95").__repr__()
+    code=core.replace('"e9":("707.62","709.62","708.60","708.66","708.63",".25")',row)
+    code=code.replace('len(pos)==98 and len(rho)==9','len(pos)>0 and len(rho)>0')
+    cut="\nfrom math import acos,cos,sin,sqrt,fsum\n"
+    assert code.count(cut)==1
+    data={"__name__":"__main__","acos":acos,"cos":cos,"sin":sin,"sqrt":sqrt,"fsum":fsum}
+    sys.argv=[__file__,source_path,mode]
+    exec(compile(code.split(cut)[0],jensen_path,"exec"),data)
+    c0,c=data["c0"],data["c"]
+    assert c==c0+F(center) and (data["start"],data["stop"])==tuple(map(F,(left,right)))
+    assert (F(data["l0"]),F(data["r0"]))==tuple(map(F,(l0,r0)))
+    assert (len(data["pos"]),len(data["rho"]))==((146,21) if mode=="e16" else (232,138))
+    bounds=(F(l0)-F(center),F(r0)-F(center))
+    eps=(4*max(map(abs,bounds)))**k/factorial(k)
+    neg=data["rho"]
+    data["delta"]=8*eps*(2+eps)*sum(w*(b-a) for a,b,w in neg)
+    moments=[sum(w*(b**(j+1)-a**(j+1))/(j+1) for a,b,w in neg) for j in range(2*k-1)]
+    coef=[F(4**i,factorial(i)) for i in range(k)]
+    M=[[coef[i]*coef[j]*moments[i+j] for j in range(k)] for i in range(k)]
+    aug=[M[i]+[F(i==j) for j in range(k)] for i in range(k)]
+    for i in range(k):
+        p=aug[i][i]
+        assert p>0
+        aug[i]=[x/p for x in aug[i]]
+        for j in range(k):
+            if i!=j:
+                r=aug[j][i]
+                aug[j]=[u-r*v for u,v in zip(aug[j],aug[i])]
+    data["inv"]=[row[k:] for row in aug]
+    begin=code.index("def gauss(order):")
+    end=code.index("def proposed_coefficients",begin)
+    exec(compile(code[begin:end],jensen_path,"exec"),data)
+    d.append(data)
+sys.argv=[__file__,source_path,jensen_path,ask]
+a,b=d
+assert a["c"]==a["c0"]+F("784.84") and b["c"]==b["c0"]+F("786.86")
+assert a["stop"]==b["start"]==F("785.86")
+assert F("767.33")<a["start"]==F("782.86")<=F("783.84")<F("785.84")<=b["stop"]==F("790.86")<third["stop"]
+assert a["start"]-F("767.33")==F("15.53")
+assert first["boxes"][0][1]<a["start"]<first["stop"]==second["start"]
+assert second["boxes"][0][1]<a["stop"]==b["start"]<third["boxes"][0][0]
+assert third["boxes"][0][1]<b["stop"]<third["stop"]
+assert all(v<a["start"] or b["stop"]<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*b["pi_lower"]-F("5.55")-2>b["c0"]+b["stop"]
+q=F(ask)
+assert q==F("1e-12")
+dim=2*k
+scale=10**30
+gram_scale=10**100
+
+# Use the same actual original positive bins once across both negative blocks.
+actual_centers=(a["c"],b["c"])
+pos=[(l+u["c"]-a["c"],h,w) for u in d for l,h,w in u["pos"]]
+assert len(pos)==378 and all(x[0]+x[1]<=y[0] for x,y in zip(pos,pos[1:]))
+alpha=F(".95")
+zd=10**20
+coeff_grid=10**50
+K=160
+
+def proposal():
+    # The numeric solve is only a proposal. All tested values below are exact.
+    x,w=a["gauss"](128)
+    n=len(pos)
+    h=float(pos[0][1])
+    assert all(float(row[1])==h for row in pos)
+    t=[4*v for v in x]
+    env=[sin(h*v/2)/(h*v/2) if v else 1.0 for v in t]
+    env4=sin(2*h)/(2*h)
+    buf=[2*ww*ee*ee for ww,ee in zip(w,env)]
+    u=[float(l+h0/2) for l,h0,wt in pos]
+    tags=[round((y-u[0])/h) for y in u]
+    low=[fsum(ww*cos(j*h*tt) for ww,tt in zip(buf,t)) for j in range(tags[-1]+1)]
+    high=[]
+    for j in range(2*tags[-1]+1):
+        z=2*(float(a["c"])+u[0])+j*h
+        high.append(env4*env4*sin(4*z)/z)
+    matrix=[[low[abs(tags[i]-tags[j])]-high[tags[i]+tags[j]]
+             for j in range(n)] for i in range(n)]
+    for i,(_,_,weight) in enumerate(pos):
+        matrix[i][i]+=float(q/(alpha*weight))
+    poly=[[2*ww*e*s0**j for ww,e,s0 in zip(w,env,x)] for j in range(k)]
+    rhs=[]
+    for b0 in u:
+        row=[]
+        for c0 in actual_centers:
+            det=b0-float(c0-a["c"])
+            local_c=[cos(det*v) for v in t]
+            local_s=[sin(det*v) for v in t]
+            z=float(a["c"])+float(c0)+b0
+            sc=(sin(4*z)*env4/z,cos(4*z)*env4/z)
+            row.extend([(-1)**(j//2)*(fsum(e*v for e,v in zip(poly[j],
+                       local_c if j%2==0 else local_s))-sc[j%2]) for j in range(k)])
+        rhs.append(row)
+    L=[]
+    for i,row in enumerate(matrix):
+        values=[]
+        for j in range(i):
+            values.append((row[j]-fsum(x*y for x,y in zip(values,L[j])))/L[j][j])
+        values.append(sqrt(row[i]-fsum(v*v for v in values)))
+        L.append(values)
+    Y=[]
+    for i,row in enumerate(rhs):
+        Y.append([(v-fsum(L[i][j]*Y[j][r] for j in range(i)))/L[i][i]
+                  for r,v in enumerate(row)])
+    Z=[None]*n
+    for i in reversed(range(n)):
+        Z[i]=[(v-fsum(L[j][i]*Z[j][r] for j in range(i+1,n)))/L[i][i]
+              for r,v in enumerate(Y[i])]
+    return [[round(zd*x) for x in row] for row in Z]
+
+Z=proposal()
+print("proposed shared positive map",len(Z),len(Z[0]),"shift",ask,flush=True)
+for block,u in enumerate(d):
+    p=[[0]*K for _ in range(k)]
+    bins=[(l+a["c"]-u["c"],h,wt) for l,h,wt in pos]
+    loc=[(int(100*l),int(100*(l+h))) for l,h,wt in bins]
+    assert all(F(x,100)==l and F(y,100)==l+h and y-x==2
+               for (x,y),(l,h,wt) in zip(loc,bins))
+    for n in range(K):
+        moments=[r**(n+1)-l**(n+1) for l,r in loc]
+        mul=F(coeff_grid*4**n,zd*2*(n+1)*100**n*factorial(n))
+        for j in range(k):
+            coef=F(n==j)*coeff_grid - mul*sum(Z[b][block*k+j]*v for b,v in enumerate(moments))
+            p[j][n]=(-1)**(n//2)*round(coef)
+    eps=[]
+    huge=[]
+    donor_eps=[(4*max(abs(l),abs(l+h)))**K/factorial(K) for l,h,wt in bins]
+    for j in range(k):
+        col=[abs(row[block*k+j]) for row in Z]
+        eps.append(3*(F(K,2*coeff_grid)+sum(z*w for z,w in zip(col,donor_eps))/zd))
+        huge.append(3*(1+F(sum(col),zd))+eps[-1])
+    u["physical_polynomials"]=p
+    u.update(eps=eps,huge=huge,K=K,grid=coeff_grid)
+    print("pooled actual carrier",u["c"],"residual error",float(max(eps)),flush=True)
+
+
+def floor_ceil(x):
+    return x//1,-((-x)//1)
+
+
+def arctan_interval(x):
+    lo=sum((-1)**j*x**(2*j+1)/(2*j+1) for j in range(110))
+    return lo,lo+x**221/221
+
+lo5,hi5=arctan_interval(F(1,5))
+lo239,hi239=arctan_interval(F(1,239))
+pi_lo,pi_hi=a['round_out'](16*lo5-4*hi239,16*hi5-4*lo239,10**130)
+
+def high_phase(z):
+    turn=(z/pi_lo+1)//2
+    u=z-2*turn*pi_lo
+    assert abs(u)<F(22,7)
+    co=sum((-1)**n*u**(2*n)/factorial(2*n) for n in range(68))
+    si=sum((-1)**n*u**(2*n+1)/factorial(2*n+1) for n in range(68))
+    err=2*turn*(pi_hi-pi_lo)+F(22,7)**136/factorial(136)
+    assert err<F('1e-120')
+    return (co-err,co+err),(si-err,si+err)
+
+def high_integrals(z,terms):
+    co,si=high_phase(z)
+    result=[a['round_out'](*a['scale'](2/z,si),gram_scale)]
+    for j in range(1,terms):
+        val=(a['add'](a['scale'](2/z,si),a['scale'](-j/z,result[-1])) if j%2==0 else
+             a['add'](a['scale'](-2/z,co),a['scale'](j/z,result[-1])))
+        result.append(a['round_out'](*val,gram_scale))
+    return result
+
+def low_integrals(z,terms):
+    assert z==F('8.08')
+    nt=130
+    c=[F((-1)**(n//2))*z**n/factorial(n) for n in range(2*nt)]
+    err=z**(2*nt)/factorial(2*nt)
+    assert err<F('1e-120')
+    result=[]
+    for j in range(terms):
+        lo=hi=0
+        for n in range(j%2,2*nt,2):
+            l,r=floor_ceil(c[n]*F(2*gram_scale,n+j+1))
+            lo+=l
+            hi+=r
+        result.append((F(lo-1,gram_scale),F(hi+1,gram_scale)))
+    return result
+
+def mode_gram(u,v):
+    # Indexed by the parity of the left and right monomials.
+    ksum=u['K']+v['K']-1
+    high=high_integrals(4*(u['c']+v['c']),ksum)
+    low=None if u is v else low_integrals(4*(v['c']-u['c']),ksum)
+    modes=[[],[],[],[]]
+    for j in range(ksum):
+        if low is None:
+            baseline=(F(2,j+1),F(2,j+1)) if j%2==0 else (F(0),F(0))
+        else:
+            baseline=low[j]
+        for z in range(4):
+            lpar,rpar=divmod(z,2)
+            if j%2!=(lpar+rpar)%2:
+                val=(F(0),F(0))
+            elif lpar==rpar:
+                val=a['scale'](2,a['add'](baseline,a['scale'](1 if lpar else -1,high[j])))
+            else:
+                val=a['scale'](2,a['add'](high[j],a['scale'](1 if lpar else -1,baseline)))
+            modes[z].append((floor_ceil(val[0]*gram_scale)[0],floor_ceil(val[1]*gram_scale)[1]))
+    return modes
+
+def physical_g(u,v,modes,i,j):
+    lower=upper=0
+    for n,c in enumerate(u['physical_polynomials'][i]):
+        for m,d in enumerate(v['physical_polynomials'][j]):
+            p=c*d
+            lo,hi=modes[2*(n%2)+m%2][n+m]
+            if p<0:
+                lo,hi=hi,lo
+            lower+=p*lo
+            upper+=p*hi
+    den=gram_scale*u['grid']*v['grid']
+    er=u['eps'][i]*v['huge'][j]+v['eps'][j]*u['huge'][i]+u['eps'][i]*v['eps'][j]
+    return F(lower,den)-er,F(upper,den)+er
+
+def ridge(i,j):
+    lo=hi=0
+    for (_,_,w),zrow in zip(pos,Z):
+        x=q*F(zrow[i]*zrow[j]*scale,zd**2)/(alpha*w)
+        l,r=floor_ceil(x)
+        lo+=l
+        hi+=r
+    return F(lo,scale),F(hi,scale)
+
+L=[[0]*dim for _ in range(dim)]
+U=[[0]*dim for _ in range(dim)]
+for bi,bj in ((0,0),(0,1),(1,1)):
+    u,v=d[bi],d[bj]
+    modes=mode_gram(u,v)
+    for i in range(k):
+        for j in range(i if bi==bj else 0,k):
+            gl,gu=physical_g(u,v,modes,i,j)
+            i0,j0=bi*k+i,bj*k+j
+            rl,ru=ridge(i0,j0)
+            inv=q*u['inv'][i][j] if bi==bj else F(0)
+            lo,hi=inv-gu-ru,inv-gl-rl
+            L[i0][j0]=L[j0][i0]=floor_ceil(lo*scale)[0]
+            U[i0][j0]=U[j0][i0]=floor_ceil(hi*scale)[1]
+    print('enclosed exact block',bi,bj,flush=True)
+width=max(sum(v-u for u,v in zip(l,h)) for l,h in zip(L,U))
+assert F(width,scale)<F('1e-23')
+G=[[(L[i][j]+U[i][j])//2-(width if i==j else 0) for j in range(dim)] for i in range(dim)]
+prev=1
+for i in range(dim):
+    p=G[i][i]
+    print('joint pivot',i,float(F(p,scale*prev)),flush=True)
+    if p<=0:
+        print('FAIL chosen joint sufficient lower matrix',ask,i)
+        raise SystemExit(2)
+    for j in range(i+1,dim):
+        for l in range(j,dim):
+            c,r=divmod(p*G[j][l]-G[i][j]*G[i][l],prev)
+            assert r==0
+            G[j][l]=G[l][j]=c
+    prev=p
+
+tau=q+a["delta"]+b["delta"]
+assert tau<F("1.001e-12")
+print("PASS actual E16/E17 common donor",str(a["start"]),str(b["stop"]),len(pos),
+      "scalar",float(tau),"directed row width",float(F(width,scale)))
+
+account_start='beta=F(".124997987")-F(".0001071")'
+account_stop='old_room=F(".000001")*beta-max(branches)'
+assert core.count(account_start)==core.count(account_stop)==1
+budget={"F":F,"factorial":factorial}
+exec(compile(core[core.index(account_start):core.index(account_stop)],jensen_path,"exec"),budget)
+beta=budget["beta"]
+old=budget["branches"]
+assert len(old)==48 and beta==F(".124890887")
+options={
+    "published-first":F("5e-9")+F("8e-10"),
+    "repriced-first":F("4.5e-10")+F("8e-10"),
+    "joint-residual":F("7.47626e-10"),
+    "pooled-map":F("1e-12"),
+}
+tail=F("2.356e-16")+F("6.382e-23")+F("8e-12")+F("8e-23")+F("9.656e-36")
+tail+=F("6.501e-25")+F("1.647e-28")+F("5.030e-27")+F("2.466e-21")+F("1.009e-15")+tau
+for label,pair_price in options.items():
+    caps=[max(F(".953004")+(x+pair_price+tail)/beta,F(".95"),F(4803,5330)) for x in old]
+    room=[F(".000001")*beta-x-pair_price-tail for x in old]
+    assert len(caps)==len(room)==48 and max(caps)<F(".953005")
+    if label=="pooled-map":
+        assert min(room)>F("6.7037e-9")
+    print("PASS original q71 price branches",label,float(max(caps)),float(min(room)))
+~~~
