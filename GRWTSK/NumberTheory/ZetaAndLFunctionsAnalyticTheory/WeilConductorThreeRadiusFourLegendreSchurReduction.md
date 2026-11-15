@@ -11006,3 +11006,288 @@ assert beta>F(".12") and far<F("6e-7")
 assert max(F(".65"),F(".953"))+far<F(".954")
 print("PASS full first component diagonal below .65 and three expanded rows below .954")
 ~~~
+
+## The fourth negative component and the missing positive budget
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic
+proof with exact rational guards. Lean elaboration, kernel replay
+and transitive axiom audit are NOT_RUN. External independent
+review is UNASSESSED.
+
+Keep the original physical carrier, angular restriction and three
+paid enclosures. Put $c_4=99658996.47983=c_1+5313.55$. The original
+multiplier is positive at $c_4\pm0.18$ and negative throughout
+$c_4\pm0.02$, where its negative depth exceeds $12.88$. Reflecting
+both intervals gives the same bounds. Charging all clipped negative
+density in the reflected radius-$0.18$ pair covers the entire
+connected component containing $c_4$ and its reflection.
+
+### A witness on the actual remaining negative rows
+
+Let $U$ be the reflected union of the first and second wider
+positive allocation bands and the third flank set. Define
+$$
+ S_\lambda^U=B I-\lambda\Pi_H+K^*1_Um_+K,\qquad
+ S_{\rm all3}^U=S_\lambda^U-\mathcal W_{\rm all3}^*\mathcal W_{\rm all3}.
+$$
+Each of the three proved positive allocations is dominated
+by the actual positive density inside $U$ and the allocations
+are disjoint. The same row factorization therefore gives the
+same norm bound $0.954$ with $S_\lambda^U$ in the comparison.
+Thus $S_{\rm all3}^U\ge0.046S_\lambda^U\ge0.046\beta I$
+and has a bounded inverse on the original odd physical carrier.
+With $N_{\rm rest}$ the actual negative restriction outside the
+three enclosures, the restricted comparison fails:
+$$
+        \|N_{\rm rest}(S_{\rm all3}^U)^{-1}N_{\rm rest}^*\|>5.2.
+$$
+
+Take $g(t)=\sin(c_4t)/2$ on $[-4,4]$ and zero outside. Its
+squared norm is at most $1+1/(8c_4)$. On the positive axis its
+exact sine evaluation is half the difference of the sinc terms
+at $\nu-c_4$ and $\nu+c_4$, with numerator $\sin(4x)$ at
+argument $x$. On the fourth radius-$0.02$ core its magnitude
+is at least
+$$
+ \frac12\left(4-\frac{64}{6}(0.02)^2-\frac1{2c_4-0.02}\right).
+$$
+The signed core depth and the reflected measure $d\nu/\pi$
+give $\|N_{\rm rest}g\|^2>0.654$, since the core is outside
+the old three enclosures. On the positive half of $U$ the
+difference denominator is larger than $5000$, the sum denominator
+is larger than $10^8$ and the total length is less than $9$.
+The absolute prime coefficient sum is less than $211$, and
+the full Binet upper bound gives $A<22$ there. Since $w\le1$,
+$m_+<300$ on these allocation bands. The actual positive energy
+on $U$ is thus less than
+$300\cdot9(5000^{-1}+10^{-8})^2/(4\pi)<10^{-5}$.
+The projection term $-\lambda\Pi_H$ and the old debits are
+nonpositive. This gives $\langle g,S_{\rm all3}^U g\rangle<0.12501$.
+Substituting $(S_{\rm all3}^U)^{1/2}g$ into the norm test proves
+the strict $5.2$ failure. The witness is in the bounded odd
+carrier of the operator comparison. It can also be approximated
+there by real odd smooth interior tests, which have the original
+gamma-density admission and preserve the strict comparison.
+The failure is for the removal of all actual positive energy
+outside $U$.
+
+### A fourth positive allocation and the coupled return
+
+For the new positive budget use $|\nu-c_4|\le2$ and its
+reflection, disjoint from all previous allocations. The
+band lies in the original active set outside the paid pair
+and old collar. The original low-filter band and full Binet
+error give $1-3\cdot10^{-10}\le w\le1$ and $17.67<A<17.69$.
+Evaluate the literal 458 signed prime-power terms using directed
+enclosures. Endpoint signs and the radius-$0.02$ core bound follow
+with the same interpolation bound $|P_4''|<13504$. The upper
+negative cells use width $0.005$ and the lower positive cells
+use width $0.02$. The folded upper negative mass is below $0.91$
+and the new allocated positive mass is below $23$.
+
+Reuse the degree-$32$ Legendre reconstruction and its uniform
+remainder $e=2.1\cdot10^{-7}$ on the original carrier. The
+physical Gram of the reconstruction basis is at most $1.006D$
+because $33(1+2\cdot32^2)/(2c_4)<0.006\min_k D_{kk}$.
+With the same definitions of $P,M,Z,V$ from the new checked
+cells, the integrated positive cost $R=\operatorname{tr}(Z^TPZM)$
+is below $0.43$. Set $T=\operatorname{tr}(V^TDVM)$.
+The exact trace calculation gives
+$R+1.006T/\beta+0.00003<0.46$. The remainder costs at most
+$e(\sqrt{0.91}+\sqrt{23R})/\sqrt{\beta}<10^{-5}$ in the
+normalized physical row norm. Since $1.006T/\beta<1$, its
+contribution to the squared physical cost is below $0.00003$.
+This proves the fourth total diagonal bound $0.46$.
+Its folded $L^2$ norm of residual coefficient total variation
+is below $\sqrt{0.91}+\sqrt{23R}<4.2$.
+
+For the first and fourth pair, all coefficient frequency
+differences across the two rows exceed $5300$ and all sums
+exceed $10^8$. Their positive coordinates are disjoint.
+The exact sine Gram and the first residual variation bound
+$11$ give off-diagonal norm below
+$11(4.2)(5300^{-1}+10^{-8})/0.12<0.073$ after division by
+$\beta>0.12$. The pair has norm below $0.724$, using the first
+diagonal $0.65$ and the fourth $0.46$.
+The other pair retains its bound $0.953$. Between the two
+pairs, all difference and sum denominators exceed
+$3.8\cdot10^9$. The total of the four cross-block norm bounds
+is at most
+$$
+ \frac{2(11+4.2)(9+2.66)}{3.8\cdot10^9\cdot0.12}
+     <8\cdot10^{-7}.
+$$
+The exact joint factorization and reflected angular isometries
+therefore give
+$$
+ \|\mathcal W_{\rm all4}S_\lambda^{-1}\mathcal W_{\rm all4}^*\|<0.954.
+$$
+Here $\mathcal W_{\rm all4}$ is the actual four-row column and
+each debited region is used once. Consequently
+$S_{\rm all4}=S_\lambda-\mathcal W_{\rm all4}^*\mathcal W_{\rm all4}
+\ge0.046 S_\lambda$. The remaining exact condition for
+$C_{4,+}\ge\lambda I_H$ is
+$\|N_{\rm out}S_{\rm all4}^{-1}N_{\rm out}^*\|\le1$ for the actual
+negative restriction outside all four enclosures. This includes
+the original seven physical leading inverses and the directional
+return to the arithmetic stage.
+
+The guard below takes the complete source as input and reuses the
+already defined directed arithmetic and polynomial moment routines.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+from decimal import Decimal, localcontext
+
+c1=F("99653682.92983")
+c4=c1+F("5313.55")
+assert c4==F("99658996.47983")
+assert F(10**8,3)-1<c4-2<c4+2<10**8
+assert 30000000<c4-2<c4+2<35*10**24
+assert c4+2<F("1852422754.1662946")-10
+assert c4+2<F("3806849122.861433")-F(1,160)
+c2=scale(F(5085348195,4),(pi_lower,pi_upper))
+c3=add(c2,(F("-5.55"),F("-5.55")))
+assert c4-2-(c1+2)>5300
+assert c4-2+c1-2>10**8
+for ctr,rad in ((c2,F(2)),(c3,F(".35"))):
+    assert ctr[0]-rad-(c4+2)>F("3.8e9")
+    assert ctr[0]-rad+c1-2>F("3.8e9")
+assert c3[1]+F(".35")<c2[0]-2
+
+Alo,Ahi=F("17.67"),F("17.69")
+lowarg,higharg=47500000,47770701
+assert lowarg<3*(c4-2)/(2*pi_upper)
+assert 3*(c4+2)/(2*pi_lower)<higharg
+y0=(c4-2)/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+absolute=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        absolute+=max(map(abs,weight))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504 and absolute<211
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c4+x,c4+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+def estimate(x,h):
+    u,v=node(x),node(x+h)
+    err=second*h*h/8
+    return min(u[0],v[0])-err,max(u[1],v[1])+err
+
+
+# Test the comparator after the three old debits with only U positive.
+wmin=1-F("3e-10")
+radius=F(".02")
+step=F(".005")
+for i in range(8):
+    lower,_=estimate(-radius+i*step,step)
+    assert wmin*(lower-Ahi)>F("12.88")
+amplitude=(4-F(64,6)*radius**2-1/(2*c4-radius))/2
+assert amplitude>F("1.997")
+negative_lower=F("12.88")*(2*radius/pi_upper)*amplitude**2
+assert negative_lower>F(".654")
+assert 3*(c2[1]+2)/(2*pi_lower)<2*10**9
+all_y=(c1-2)/2
+all_binet=F(5,9)/all_y+F(9,32)/all_y**2
+assert log_bounds(2*10**9)[1]+all_binet<22
+assert 211+22<300
+assert 4+4+2*(F(".35")-F(".24"))<9
+assert c4-c1-2>5000 and c2[0]-2-c4>5000 and c3[0]-F(".35")-c4>5000
+assert c1-2+c4>10**8 and c3[0]-F(".35")+c4>10**8
+far_eval=(F(1,5000)+F(1,10**8))/2
+assert 300*9/pi_lower*far_eval**2<F(".00001")
+beta_budget=F(".124997987")*(1+1/(8*c4))+F(".00001")
+assert beta_budget<F(".12501") and negative_lower/beta_budget>F("5.2")
+print("PASS remaining norm above 5.2 with only the three old positive allocations")
+
+wmin=1-F("3e-10")
+positive,negative=[],[]
+h=F(".02")
+for i in range(-100,100):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=(max(F(0),wmin*(Alo-hi)/pi_upper)*10**7//1)/F(10**7)
+    if density>0:positive.append((x,x+h,density))
+h=F(".005")
+for i in range(-36,36):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=-((-max(F(0),(hi-Alo)/pi_lower)*10**7)//1)/F(10**7)
+    if density>0:negative.append((x,x+h,density))
+assert node(F("-.18"))[1]<Alo and node(F(".18"))[1]<Alo
+assert node(F(0))[0]>Ahi
+assert sum((v-u)*w for u,v,w in positive)<23
+assert sum((v-u)*w for u,v,w in negative)<F(".91")
+
+print("PASS signed full fourth component and disjoint positive cells")
+
+# Reuse the preceding coefficient, solver proposal and exact trace routines.
+matrix_source=[g for g in blocks if g.startswith("from decimal import Decimal")
+               and "PASS exact majorant costs: J2 total <.52" in g]
+assert len(matrix_source)==1
+start="# Exact polynomial budget for the wider positive allocation."
+stop='assert (F(33)*(1+2*32**2)'
+code=matrix_source[0]
+assert code.count(start)==code.count(stop)==1
+exec(compile(code.split(start)[1].split(stop)[0].lstrip(), "source coefficient and moment matrix", "exec"))
+
+assert beta==F(".124997987")-F(".0001071")
+gram_factor=F("1.006")
+assert 33*(1+2*32**2)/(2*c4)<(gram_factor-1)*min(D)
+err=F("2.1e-7")
+assert 8*(F(8)**33/factorial(33))**2<err**2
+assert 0<=R<F(".43") and S>=0
+nominal=gram_factor*S/beta
+assert nominal<1
+small,large=F(".955"),F("3.15")
+assert small**2>F(".91") and large**2>23*F(".43")
+assert F(".35")**2<beta
+err_scaled=err*(small+large)/F(".35")
+assert err_scaled<F("1e-5") and 2*err_scaled+err_scaled**2<F(".00003")
+assert R+nominal+F(".00003")<F(".46")
+
+# Positive resource coordinates are disjoint. All cross costs here
+# are bounds on the original physical Gram of the error rows.
+assert small+large<F("4.2")
+assert beta>F(".12")
+near14=11*F("4.2")*(F(1,5300)+F(1,10**8))/F(".12")
+assert near14<F(".073")
+assert max(F(".65"),F(".46"))+near14<F(".724")
+far=2*(11+F("4.2"))*(9+F("2.66"))/(F("3.8e9")*F(".12"))
+assert far<F("8e-7")
+assert max(F(".724"),F(".953"))+far<F(".954")
+print("PASS full fourth component diagonal below .46 and four-row norm below .954")
+~~~
