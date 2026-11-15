@@ -1526,3 +1526,220 @@ The corrected sign on the whole $G_2$, the original radius-four
 stage and RH and primitive Dirichlet GRH remain open. The global
 return still requires original dual phases, zero multiplicities,
 all required characters and windows and the conductor-one pole terms.
+
+## A lower carrier below the original paid pair
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact directed arithmetic. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Let $j=10^9$, $q=j/(j+1)$, $g=\psi_j+q\psi_{j+1}$, and
+$u=g/\|g\|$. The real odd native input has the same compact $C^2$
+extension and full gamma integrability as the historical input. Write
+$z=\Pi_{G_2}u$ on the same actual bounded residual form $C_2$, with
+the same five inverse corrections. Then $z\ne0$ and
+$$
+ 20.88894<\frac{\langle z,C_2z\rangle}{E(z)}<20.88900.
+$$
+The test is in the original conductor-three parity-one radius-four
+problem. All norms, gamma and prime terms, and inverse domains are
+the ones fixed above.
+
+### Exact signed phases for the smaller carrier
+
+Use $f=\psi_j+\psi_{j+1}$, $\alpha=\pi/8$ and
+$\nu=(2j+1)\pi/8$ as in the historical test. For $0\le r\le8$,
+put $L=8-r$ and center the overlap by $x=t+r/2$. Then
+$2\cos(\alpha t)\cos(\alpha(t+r))=\cos(2\alpha x)-\cos(\alpha L)$.
+Integrating the two cosine products on $[-L/2,L/2]$ gives
+$$
+ \frac{C_f(r)}{E(f)}=F(L)\cos(\nu r)-\frac{O(L)}8,\qquad
+ O(L)=\frac{\alpha^2\sin(\nu L)\cos(\alpha L)}{\nu(\nu^2-\alpha^2)}
+       -\frac{\alpha\cos(\nu L)\sin(\alpha L)}{\nu^2-\alpha^2}.
+$$
+The expression gives $C_f(0)/E(f)=1$ and $C_f(8)=0$. In particular
+the oscillatory correction satisfies
+$|O|/8\le\alpha/(8\nu(\nu-\alpha))=1/(2\pi j(2j+1))<1/(12j^2)$.
+This identity also checks the sign and normalization of the
+previous integration-by-parts formula.
+
+In the orthonormal two-sine coordinates the angle $\vartheta$
+between $f$ and $g$ satisfies $\tan\vartheta=(1-q)/(1+q)=1/(2j+1)$.
+The distance of the two unit vectors is
+$2\sin(\vartheta/2)\le\tan\vartheta$. The original full bounded
+prime form has norm less than 211. Its normalized value therefore
+changes by less than $422/(2j+1)$ when passing from $f$ to $g$.
+
+Use the same directed 26-term logarithms, Machin bounds, integer
+square roots, seven/eight overlap terms and phase reduction modulo
+two as in the preceding certificate. Recompute each $\log n$ phase
+with the new $j$, retaining all signs and outward rounding each
+product on the $10^{-10}$ grid. The resulting signed main sum over
+the 458 terms lies in $[-10215476967,-10215469014]/10^{10}$.
+On adding the transfer $422/(2j+1)+211/(12j^2)$, the full unmasked
+expectation on $u$ obeys
+$$
+ -1.0215480 < \int_{\mathbb R}P_4(\xi)|\widehat u(\xi)|^2
+                   \frac{d\xi}{2\pi} < -1.0215466 .
+$$
+Thus the prime term contributes positively to $R$ before the mask
+error. The earlier unsigned overlap budget $517/25$ exceeds the
+gamma lower bound here and cannot by itself give this signed estimate.
+
+### Source gamma, mask and actual projection
+
+The mirrored collar $I$ of radius $H=10^4$ at $\pm j\pi/4$
+lies in $7\cdot10^8<|\xi|<8\cdot10^8$, below the original paid pair
+and wholly in $\mathcal D$. The inherited all-lobe low stop and high
+pass give $1-w\le\eta=3\cdot10^{-10}$ there, and the complete
+off-collar mass is at most $\theta=8(2/H)^3=(8\cdot10^{-6})^2$.
+Using the preceding Binet estimate with $y>(7\cdot10^8)/2$, its
+error is less than $10^{-8}$. The log input $3|\xi|/(2\pi)$ lies
+between $375000000-H/2$ and $375000000+H/2$. Directed logarithms
+give $19.742423<A(\xi)<19.742450$ on the collar.
+
+Put $\delta=10^{-272}$. Both native modes are above the old sine
+indices, below $\Omega$ and outside the high and separated
+carriers. The inherited approximation and projection estimates
+give $\|u-\Pi_{G_1}u\|<4\delta$, and the mixed inner products
+with the projected separated carriers are below $16\delta^2$.
+The actual physical Gram bound $\Gamma\ge\kappa I$ with
+$N=3\cdot10^{19}+1$ and $\kappa=1-16N\delta^2$ gives
+$N(16\delta^2)^2/\kappa<\delta^2$. In particular
+$\|z-u\|<5\delta$ and $1-5\delta<\|z\|\le1$.
+
+### Sharper mixed estimates on the actual inverse domains
+
+Write $b=||\xi|-j\pi/4|$. The two-sine trace envelope proved above
+gives $|\widehat u|\le\sqrt8$ at $b\le2$ and
+$|\widehat u|\le4/b^2$ for $b\ge2$. Integrating on both signs yields
+$\|\widehat u\|_{L^1(d\xi/(2\pi))}\le(4\sqrt8+4)/\pi<16/3$.
+
+On $|\xi|\ge7\cdot10^8$ the native old-head sine transform satisfies
+$$
+ |\widehat\psi_m(\xi)|\le
+ \frac{\omega_m}{\xi^2-\omega_m^2}<7\cdot10^{-11}
+ \qquad(1\le m\le38170000).
+$$
+Here $\omega_m<3\cdot10^7$. Therefore any unit vector in $E_s$
+has transform at most $6200\,(7\cdot10^{-11})$ pointwise there by
+Cauchy–Schwarz. Below $7\cdot10^8$ the distance to the new carrier
+exceeds $4\cdot10^7$, so the full angular $L^2$ norm of
+$\widehat u$ on that part is below $4\cdot10^{-11}$ by the same tail
+formula. Pair $R$ above the split using the angular $L^1$ bound
+and below it using Cauchy–Schwarz. The multiplier bound 300,
+the $10/9$ preimage norm and $10^{-60}$ preimage error on $U$,
+and the transfer from $u$ to $z$, prove
+$\|PRz\|,\|\Pi_U Rz\|<p_*=1/1250$.
+The inherited weighted first-head interaction is below $3/8$ and
+the $W$ contribution stays below $741\cdot10^{-265}$. Hence
+$\|Jz\|<(1+3/8)p_*+741\cdot10^{-265}<j_*=3/2500$.
+
+For unit $a\in Y_0$ use the actual preimage $h\in Y$.
+For $|\xi|\le10^{25}$ the distance to the high carrier exceeds
+$10^{25}$, giving $|\widehat h|<6\cdot10^{-24}\|h\|$
+by the high-packet tail formula. Above this split, the current
+carrier distance exceeds $10^{24}$, and the angular $L^2$ tail
+of $\widehat u$ is below $10^{-35}$. With the same two norm
+estimates and both projection transfers,
+$$
+ |\langle a,Rz\rangle|<
+ \frac{300((16/3)(6\cdot10^{-24})+10^{-35})+2400\delta}{1-3\delta}.
+$$
+The scalar mixed term vanishes by orthogonality. The three old
+inverse prices in this entry are bounded by
+$10(3\cdot10^{-6})p_*$, $(25/2)(1/159)j_*$ and $10^{-515}$.
+Their sum with the direct term gives $\|J_Yz\|<y_*=1/10000$.
+
+The new native ray is separated from every native carrier of
+$\mathcal V$ by more than $10^{25}$. The whole-line two-envelope
+estimate and physical transfer give $|\langle v_r,Rz\rangle|<
+3\cdot10^{-44}+2700\delta$. Adding all four inherited mixed
+prices bounds each $|\langle v_r,C_1 z\rangle|$ by $13\cdot10^{-17}$,
+using $\|PRv_r\|<4\cdot10^{-21}$, $\|Jv_r\|<13\cdot10^{-18}$,
+the $L_0$ bound, and $\|J_Yv_r\|<3\cdot10^{-13}$. The scalar
+term vanishes since $z\perp\mathcal V$. The actual Gram inverse
+then gives $\|J_{\mathcal V}z\|<v_*=10^{-6}$.
+
+The full diagonal mask loss on the prime estimate is at most
+$211(\theta+\eta)$. Off the collar, use the global gamma lower
+bound $A\ge-2$ and residual gamma upper bound $A<61$. Transfer
+from $u$ to $z$ costs at most
+$3000\delta$. The total debit from the five genuine inverse prices
+is bounded by
+$$
+ 10p_*^2+(25/2)j_*^2+10^{-515}+4y_*^2+v_*^2/12<0.0000245.
+$$
+The resulting residual lower bound after this debit is positive.
+Use $E(z)\le1$ for the lower quotient and
+$E(z)>(1-5\delta)^2$ for the upper quotient, where all inverse
+terms are subtracted. Add $B$ to both after division, giving the
+stated interval.
+
+### Directed arithmetic guards
+
+Take the Python block in the preceding historical test up to
+its line `assert count == 458`, excluding that line. Set `j = 10**9`
+in that prefix and append the block below. This runs the identical
+inventory and interval algorithms with every new integer phase
+and tests the displayed rational inequalities.
+
+```python
+assert count == 458
+assert sum_lower*atom_grid == -10215476967
+assert sum_upper*atom_grid == -10215469014
+transfer = F(422, 2*j+1)+F(211, 12*j**2)
+prime_lower, prime_upper = F(-10215480, 10**7), F(-10215466, 10**7)
+assert prime_lower < sum_lower-transfer and sum_upper+transfer < prime_upper
+
+width, delta = 10**4, F(1, 10**272)
+theta, eta = 8*F(2, width)**3, F(3, 10**10)
+assert F(3*j, 4)-width > 7*10**8 and F(11*j, 14)+width < 8*10**8
+y_min = F(7, 2)*10**8
+assert F(5, 9)/y_min+F(9, 32)/y_min**2 < F(1, 10**8)
+gamma_lower, gamma_upper = F(19742423, 10**6), F(19742450, 10**6)
+assert log_bounds(375000000-width//2)[0]-F(1, 10**8) > gamma_lower
+assert log_bounds(375000000+width//2)[1]+F(1, 10**8) < gamma_upper
+assert theta == F(8, 10**6)**2
+
+threshold = 7*10**8
+max_old_center = 3*10**7
+assert F(max_old_center, threshold**2-max_old_center**2) < F(7, 10**11)
+assert 38170000 < 6200**2
+assert F(3*j, 4)-threshold > 4*10**7
+assert 8*F(2, 4*10**7)**3 < F(4, 10**11)**2
+assert 8*F(2, 10**24)**3 < F(1, 10**35)**2
+p_bound, z_bound, y_bound, v_bound = F(1, 1250), F(3, 2500), F(1, 10000), F(1, 10**6)
+raw_low = 300*(F(16, 3)*6200*F(7, 10**11)+F(4, 10**11))
+assert F(10, 9)*(raw_low+300*F(1, 10**60))+1500*delta < p_bound
+assert F(1, 49900) < F(1, 200)**2
+assert F(528, 900000) < F(1, 40)**2
+assert (1+F(3, 8))*p_bound+F(741, 10**265) < z_bound
+raw_high = (300*(F(16, 3)*F(6, 10**24)+F(1, 10**35))+2400*delta)/(1-3*delta)
+assert raw_high+10*F(3, 10**6)*p_bound+F(25, 2*159)*z_bound+F(1, 10**515) < y_bound
+
+sector_count = 3*10**19+1
+gram_floor = 1-16*sector_count*delta**2
+assert sector_count*(16*delta**2)**2/gram_floor < delta**2
+assert F(300*27**2*4, 3*(1+10**25//2)**2) < F(3, 10**44)
+entry_bound = F(13, 10**17)
+assert F(3, 10**44)+2700*delta+10*F(4, 10**21)*p_bound \
+       + F(25, 2)*F(13, 10**18)*z_bound+F(1, 10**515) \
+       + 4*F(3, 10**13)*y_bound < entry_bound
+assert sector_count*entry_bound**2/gram_floor < v_bound**2
+
+debit = 10*p_bound**2+F(25, 2)*z_bound**2+F(1, 10**515)+4*y_bound**2+v_bound**2/12
+assert debit < F(245, 10**7)
+budget = F(124997987, 10**9)
+lower = gamma_lower*(1-theta)*(1-eta)-2*theta-prime_upper-211*(theta+eta)-3000*delta
+upper = gamma_upper+61*theta-prime_lower+211*(theta+eta)+3000*delta
+assert lower-debit > 0 and budget+lower-debit > F(2088894, 10**5)
+assert budget+upper/(1-5*delta)**2 < F(2088900, 10**5)
+print('PASS signed billionth-carrier phases and five Schur prices')
+```
+
+The earlier prime-419 cutoff counterexample and the historical
+large-weight counterexample retain their original signs and
+domains. This is a further ray of the true corrected form. Its
+sign leaves the coupled inequality on all of $G_2$, the original
+radius-four stage and the full primitive and zeta returns open.
