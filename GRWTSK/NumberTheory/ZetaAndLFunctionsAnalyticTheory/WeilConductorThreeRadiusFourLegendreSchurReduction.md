@@ -3296,3 +3296,289 @@ assert F(124481, 10**6) < amplitude_lower-eps
 assert amplitude_upper+transfer < F(12449283, 10**8)
 print('PASS weighted rank-one collar and actual projected norm guards')
 ```
+
+## Positive physical pivot at the collar centroid
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Use the exact weighted centroid $\alpha=x_*+c$ of the preceding
+collar, with $-1.168\cdot10^{-5}<c<-1.089\cdot10^{-5}$.
+Let $s(t)=\sin(\alpha t)$ on $[-4,4]$ and zero outside, and
+$a=\Pi_{G_2}s$, $e=a/\|a\|$. Then the actual physical pivot is
+$$
+ 9.86900<\langle e,C_2e\rangle<9.87028.
+$$
+This uses the original bounded odd physical $L^2$ domain for the
+Schur form. The directed bounds place $\alpha-4847030844\pi/4$
+in $(0.053,0.054)$, so the zero extension of $s$ has nonzero
+endpoint jumps. The original arithmetic stage keeps its compact
+$C^2$ admission.
+
+### Signed prime expectation of the true centroid sine
+
+For $0\le r\le8$ the exact whole-line correlation and energy are
+$$
+ C_s(r)=\frac{(8-r)\cos(\alpha r)
+                  -\sin(\alpha(8-r))/\alpha}{2},
+ \qquad E(s)=4-\frac{\sin(8\alpha)}{2\alpha}.
+$$
+The formula follows by centering the product on the overlap
+and integrating its constant and oscillatory cosine terms.
+Reflection gives the other sign of the shift. The cut at $r=8$
+is the actual zero correlation boundary. Thus the original
+full unmasked prime expectation on $u=s/\|s\|$ is
+$$
+ \frac{1}{E(s)}
+ \sum_{n=p^j\le2980,\,p\ne3}
+    \frac{2\log p\,\chi_3(n)}{\sqrt n}\,C_s(\log n).
+$$
+Use the directed enclosure for $\alpha$ in all phases,
+including the short sine term and the denominator $E(s)$.
+For each phase interval divide outward by $\pi$, subtract a
+common even integer, and use the same sine and cosine
+unit-Lipschitz and Taylor bounds as in the preceding checks.
+The original signs, both correlation terms and all 458
+prime-power rows give the unnormalized sum in
+$[463039688333,463053943540]/10^{10}$ and the normalized
+expectation in $(11.57599220,11.57634860)$.
+
+### Uncancelled transform, gamma and the actual projection
+
+At $\nu\in\mathbb R$ the exact normalized transform is
+$$
+ \widehat u(\nu)=\frac{i}{\|s\|}
+ \left(\frac{\sin(4(\nu-\alpha))}{\nu-\alpha}
+       -\frac{\sin(4(\nu+\alpha))}{\nu+\alpha}\right)
+$$
+with removable singularities filled in continuously.
+Set $\lambda=|\nu|$ and $b=|\lambda-\alpha|$. Its amplitude is
+at most $\sqrt8$ everywhere and below $1.01/b$ for $b>0$,
+since $\|s\|>1.99$. Integrating both signs shows that the
+mass outside the mirrored radius-$10^6$ collar is less
+than $\theta=7\cdot10^{-7}$. The collar lies in
+$3.5\cdot10^9<|\nu|<4\cdot10^9$ inside the actual residual set.
+The original all-lobe filter bounds give
+$1-w\le\eta=3\cdot10^{-10}$ there. The full Binet error
+at $y\ge1.75\cdot10^9$ and directed logs give
+$21.32053<A<21.32107$ on the collar.
+The rest of the angular mass uses the global $A\ge-2$ and
+residual $A<61$. The original prime mask costs $211(\eta+\theta)$.
+
+Put $z=\Pi_{G_2}u$. The uniform pointwise projection estimate
+of the previous section gives $\|\Pi_{\mathcal E}s\|^2<10^{-15}$,
+where $\mathcal E=G_2^\perp$ is the true joint eliminated space.
+Thus $\|z-u\|<d=1.6\cdot10^{-8}$ and
+$1-d^2<E(z)\le1$ by orthogonality. This bounds the diagonal
+transfer for $R$ by $600d$.
+
+For the mixed estimates the angular $L^1$ norm of $\widehat u$
+on the finite residual set is less than 42. Indeed on the positive
+half-line the region $b<1$ costs at most 6 in ordinary
+Lebesgue measure. Integrating $1.01/b$ over the two
+remaining intervals up to $\Omega$ costs at most
+$2(1.01)\log\Omega<2(1.01)\cdot61$. Including both signs
+divides these ordinary bounds by $\pi$.
+This argument uses the finite residual set and the exact
+uncancelled tail.
+
+### All five original inverse prices on this direction
+
+Split the mixed head pairings at $3.5\cdot10^9$. Above it
+the old native sine amplitude is below $2.45\cdot10^{-12}$
+per sine, by the exact old sine transform and the upper carrier
+bound $3\cdot10^7$. Hence the unit old sine space has
+pointwise bound $6200(2.45\cdot10^{-12})$. Pair it with the
+angular $L^1$ bound 42. For the part below the split,
+$\alpha-3.5\cdot10^9>3\cdot10^8$ and the one-sided
+integral of $(1.01)^2/b^2$ on the positive half-line
+gives angular norm below $3.5\cdot10^{-5}$ including
+both signs. Use the actual weighted $P$ and $U$ bounds
+$1/40$ and $1/200$ there. Include the true old $U$ preimage
+cost $10/9$ and its relative error $10^{-60}$ above
+the split. The multiplier bound 300 and physical
+projection transfer give
+$$
+ \|PRz\|<4.6\cdot10^{-4},
+ \qquad \|\Pi_U Rz\|<2.7\cdot10^{-4}.
+$$
+Add the old interaction bound $3/8$ times the first norm
+and the $W$ price $741\cdot10^{-265}$ to obtain
+$\|Jz\|<4.5\cdot10^{-4}$.
+
+For the high pairing at $10^{25}$, below that split the
+native high preimage of $Y_0$ has amplitude at most
+$6\cdot10^{-24}$ per unit preimage. Use the finite angular
+$L^1$ bound for $u$. Above the split the actual uncancelled
+amplitude of $u$ is below $2/\lambda$, giving angular norm
+below $4\cdot10^{-13}$. Use the true preimage and global
+projection transfers before adding the first three inverse
+prices. This gives $\|J_Yz\|<4.2\cdot10^{-5}$.
+
+For a unit native separated packet $u_r$, the amplitude on
+$\lambda\le10^{25}$ is at most $4\cdot10^{-48}$ by its
+distance from the collar and the original adjacent envelope.
+Above the split use the bound $2/10^{25}$ on the amplitude
+of $u$ and the full angular $L^1$ bound $16/3$ on $u_r$.
+Thus the raw entry $|\langle u_r,Ru\rangle|$ is at most
+$300[42(4\cdot10^{-48})+(2/10^{25})(16/3)]$.
+Replace $u_r$ by $v_r$ using the actual native projection
+error $4\delta$. Apply the true separated Gram factor
+$\sqrt{N/\kappa}<5.52\cdot10^9$ to those entries first.
+The nonnative projection error $d$ then costs just $300d$
+in the resulting whole-space mixed norm. Add the other
+four actual inverse prices using
+$\|PR|_{\mathcal V}\|<2.3\cdot10^{-11}$,
+$\|J|_{\mathcal V}\|<7.2\cdot10^{-8}$ and
+$\|J_Y|_{\mathcal V}\|<0.0017$, retaining the $D_0$
+operator price. This gives $\|J_{\mathcal V}z\|<5.2\cdot10^{-6}$.
+
+The five inverse prices add to less than $4.7\cdot10^{-6}$
+per unit raw input. Subtract them from the positive lower
+residual estimate, divide by the actual output energy
+$E(z)$ and add $B$. The upper bound drops the subtracted
+prices and uses the same output energy lower bound.
+This gives the stated interval for the true pivot.
+
+In particular, put $H_e=G_2\cap e^\perp$,
+$\beta=\langle e,C_2e\rangle$ and $b_e=\Pi_{H_e}C_2e$.
+The exact next sign condition is
+$$
+ \Pi_{H_e} C_2|_{H_e}-\beta^{-1}b_e\otimes b_e\ge0
+ \qquad\text{on }H_e .
+$$
+It is equivalent to $C_2\ge0$ by the one-coordinate square
+completion. Its mixed column and complementary sign remain
+to be controlled on the original source.
+
+### Exact rational checks for the centroid pivot
+
+Use the historical checker prefix before its
+`alpha_lower, alpha_upper` assignment and omit its old
+`j` assignment. Append the following guards.
+
+```python
+
+def add(x, y):
+    return x[0]+y[0], x[1]+y[1]
+
+def scale(factor, interval):
+    lower, upper = interval
+    if factor < 0:
+        return factor*upper, factor*lower
+    return factor*lower, factor*upper
+
+def multiply(x, y):
+    products = [a*b for a in x for b in y]
+    return min(products), max(products)
+
+def phase_trig(angles):
+    lower, upper = angles[0]/pi_upper, angles[1]/pi_lower
+    period = (lower+1)//2
+    residue = lower-2*period
+    assert -1 <= residue < 1
+    angle = pi_lower*residue
+    uncertainty = pi_upper*(upper-lower)+pi_upper-pi_lower
+    cosine = sum((-1)**l*angle**(2*l)/factorial(2*l) for l in range(13))
+    sine = sum((-1)**l*angle**(2*l+1)/factorial(2*l+1) for l in range(13))
+    cos_error = uncertainty+F(22, 7)**26/factorial(26)
+    sin_error = uncertainty+F(22, 7)**27/factorial(27)
+    return ((max(-1, cosine-cos_error), min(1, cosine+cos_error)),
+            (max(-1, sine-sin_error), min(1, sine+sin_error)))
+
+center = F(3806849122861433, 10**6)
+carrier = center-F(1168, 10**8), center-F(1089, 10**8)
+assert F(53, 1000) < carrier[0] - F(4847030844, 4)*pi_upper
+assert carrier[1] - F(4847030844, 4)*pi_lower < F(54, 1000)
+prime_sum = (F(0), F(0))
+count = 0
+for p in range(2, 2981):
+    if p == 3 or any(p % d == 0 for d in range(2, isqrt(p)+1)):
+        continue
+    log_p_lower, log_p_upper = log_bounds(p)
+    n = p
+    while n <= 2980:
+        lag = log_bounds(n)
+        assert 0 < lag[0] <= lag[1] < 8
+        length = 8-lag[1], 8-lag[0]
+        cosine, _ = phase_trig(multiply(carrier, lag))
+        _, sine = phase_trig(multiply(carrier, length))
+        overlap = scale(F(1, 2), add(
+            multiply(length, cosine),
+            scale(-1, multiply(sine, (1/carrier[1], 1/carrier[0]))),
+        ))
+        root_floor = isqrt(n*source_grid**2)
+        magnitude = (2*log_p_lower*source_grid/(root_floor+1),
+                     2*log_p_upper*source_grid/root_floor)
+        signed = scale(1 if n % 3 == 1 else -1, magnitude)
+        term = multiply(signed, overlap)
+        prime_sum = add(prime_sum, round_out(*term, atom_grid))
+        n *= p
+        count += 1
+assert count == 458
+_, energy_sine = phase_trig(scale(8, carrier))
+energy = add((4, 4), scale(-1, multiply(energy_sine,
+                                       (1/(2*carrier[1]), 1/(2*carrier[0])))))
+prime = multiply(prime_sum, (1/energy[1], 1/energy[0]))
+assert tuple(v*atom_grid for v in prime_sum) == (463039688333, 463053943540)
+prime_lower, prime_upper = F(1157599220, 10**8), F(1157634860, 10**8)
+assert prime_lower < prime[0] <= prime[1] < prime_upper
+
+width = 10**6
+eta, theta = F(3, 10**10), F(7, 10**7)
+energy_projection = F(1, 10**15)
+defect = F(16, 10**9)
+assert energy[0] > F(199, 100)**2
+assert 2/F(199, 100) < F(101, 100)
+assert energy_projection/energy[0] < defect**2
+assert F(35, 10)*10**9 < carrier[0]-width < carrier[1]+width < 4*10**9
+assert 2*F(101, 100)**2/(pi_lower*width) < theta
+assert 1817159000 < 3*(carrier[0]-width)/(2*pi_upper)
+assert 3*(carrier[1]+width)/(2*pi_lower) < 1818114100
+y_min = F(7, 4)*10**9
+binet = F(5, 9)/y_min+F(9, 32)/y_min**2
+gamma_lower, gamma_upper = F(2132053, 10**5), F(2132107, 10**5)
+assert log_bounds(1817159000)[0]-binet > gamma_lower
+assert log_bounds(1818114100)[1]+binet < gamma_upper
+
+assert log_bounds(10)[1] < F(231, 100) and 26*F(231, 100) < 61
+assert (6+2*F(101, 100)*61)/pi_lower < 42
+old_split = 35*10**8
+assert carrier[0]-old_split > 3*10**8
+low_tail = F(35, 10**6)
+assert F(101, 100)**2/(pi_lower*3*10**8) < low_tail**2
+assert F(3*10**7, old_split**2-(3*10**7)**2) < F(245, 10**14)
+assert 38170000 < 6200**2
+old_high = 42*6200*F(245, 10**14)
+delta = F(1, 10**272)
+p_bound, u_bound, j_bound = F(46, 10**5), F(27, 10**5), F(45, 10**5)
+assert 300*(old_high+low_tail/40+defect) < p_bound
+assert 300*(F(10, 9)*(old_high+F(1, 10**60))+low_tail/200+defect) < u_bound
+assert u_bound+F(3, 8)*p_bound+741*F(1, 10**265) < j_bound
+
+high_split = 10**25
+assert carrier[1] < F(high_split, 4)
+assert F(101, 100)*F(4, 3) < 2
+high_tail = F(4, 10**13)
+assert F(4, high_split)/pi_lower < high_tail**2
+high_direct = 300*((42*F(6, 10**24)+high_tail+3*delta)/(1-3*delta)+defect)
+y_bound, v_bound = F(42, 10**6), F(52, 10**7)
+price_d0 = F(1, 10**515)
+assert high_direct+10*F(3, 10**6)*p_bound+F(25, 2*159)*j_bound+price_d0 < y_bound
+assert F(3, 4)*2*10**25-high_split > 10**24
+raw_v = 300*(42*F(4, 10**48)+F(2, high_split)*F(16, 3)+4*delta)
+mixed_v = F(552, 100)*10**9*raw_v+300*defect
+assert (mixed_v+10*F(23, 10**12)*p_bound+F(25, 2)*F(72, 10**9)*j_bound
+        +price_d0+4*F(17, 10**4)*y_bound) < v_bound
+
+debit = 10*p_bound**2+F(25, 2)*j_bound**2+price_d0+4*y_bound**2+v_bound**2/12
+assert debit < F(47, 10**7)
+price_mask = 211*(theta+eta)
+budget = F(124997987, 10**9)
+lower = gamma_lower*(1-theta)*(1-eta)-2*theta-prime_upper-price_mask-600*defect-debit
+upper = gamma_upper+61*theta-prime_lower+price_mask+600*defect
+assert lower > 0 and budget+lower > F(986900, 10**5)
+assert budget+upper/(1-defect**2) < F(987028, 10**5)
+print('PASS original projected centroid sine and five inverse prices')
+```
