@@ -3582,3 +3582,284 @@ assert lower > 0 and budget+lower > F(986900, 10**5)
 assert budget+upper/(1-defect**2) < F(987028, 10**5)
 print('PASS original projected centroid sine and five inverse prices')
 ```
+
+## The actual mixed column after the centroid pivot
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the actual centroid vector $e=z/|z|$, $z=Pi_{G_2}u$ from
+the preceding section, and write $C_3$ for the corrected form on
+$H_e=G_2cap e^perp$. For $b_e=Pi_{H_e} C_2e$ and
+$eta=langle e,C_2eangle$ we have
+$$
+ 2.29<|b_e|<2.59,qquad
+ 0.53<|eta^{-1}b_eotimes b_e|<0.68.
+$$
+In the real or complex physical form, completing the square gives
+$$
+ langle he+v,C_2(he+v)angle
+ =eta|h+eta^{-1}langle b_e,vangle|^2
+   +langle v,C_3vangle,qquad
+ C_3=Pi_{H_e} C_2|_{H_e}-eta^{-1}b_eotimes b_e
+$$
+for every $hinmathbb C$ and $vin H_e$. Here $C_3ge0$ is the
+remaining condition. The bound by $0.68I_{H_e}$ holds uniformly,
+but the proposed bound by the scalar budget $BI_{H_e}$ fails on
+$b_e/|b_e|$, where the debit is above $0.53>B$.
+
+### The centered physical shift column
+
+Let $T_P$ be the compression of the unmasked original prime
+multiplier $P_4$ by zero extension and restriction to the physical
+interval. For $ell_n=log n$ and
+$a_n=2chi_3(n)log(p)/sqrt n$ with $n=p^jle2980$, $p
+e3$,
+the cosine multiplier gives
+$$
+ (T_Ps)(t)=	frac12sum_n a_n [s(t+ell_n)+s(t-ell_n)],
+ qquad -4le tle4 .
+$$
+Here $s$ is the zero-extended centroid sine at the same actual
+$alpha$. Symmetric shifts preserve oddness, and $T_P$ is bounded
+and self-adjoint. Its expectation on $u=s/|s|$ is the real
+$muin(11.57599220,11.57634860)$ from the preceding section.
+
+For $0<t<4$, cut at all $|4-ell_n|$. On each open cell the
+shifted sum is $Asin(alpha t)+Dcos(alpha t)$.
+For $ell_n<4$ both shifts contribute at zero. The contribution
+to the initial sine coefficient is $a_ncos(alphaell_n)$,
+and at $4-ell_n$ the plus shift exits, changing the coefficient
+pair by $-(a_n/2)(cos(alphaell_n),sin(alphaell_n))$.
+For $ell_n>4$ only the minus shift enters at $ell_n-4$, changing
+the pair by $(a_n/2)(cos(alphaell_n),-sin(alphaell_n))$.
+All 458 positive cuts are separated by directed logarithm intervals.
+Both endpoints have measure zero.
+
+Put $q=(T_P-mu)u$ so $langle u,qangle=0$.
+On a cell of length $L$, the mean term in the integral of the
+squared centered sine combination is
+$L((A-mu)^2+D^2)/2$. The rest is a single harmonic at $2alpha$
+with amplitude $((A-mu)^2+D^2)/2$. Its integral over any cell has
+absolute value at most $((A-mu)^2+D^2)/(2alpha)$, by the
+endpoint primitive. Double for the odd physical vector and divide
+by $E(s)$ to get the centered squared norm. The checker sums the
+mean terms and pays the full error of all 459 cells. It uses the
+true directed carrier and mean intervals, keeping the signs and
+both coefficients of every translate. It gives
+$$
+ 2.43<|q|<2.45 .
+$$
+
+### Gamma and mask action on the same vector
+
+Write $A(
+u)=log(3/pi)+operatorname{Re}psi(3/4+i
+u/2)$,
+$mathcal D$ for the original residual set, and $A_0=21.3208029$.
+On the full angular line the multiplier of the difference
+$R-(A_0 I-T_P)$ before physical restriction is
+$$
+ G(
+u)=1_{mathcal D}wA(
+u)-A_0+
+           (1-1_{mathcal D}w)P_4(
+u).
+$$
+The mirrored collar $||
+u|-alpha|le5cdot10^7$ lies in
+$3.5cdot10^9<|
+u|<4cdot10^9$ and hence inside $mathcal D$
+with $1-wleeta=3cdot10^{-10}$. Directed logarithms of the
+endpoints for $3|
+u|/(2pi)$ and the full Binet error give
+$|A-A_0|<0.01334$ there. Since $|A-P_4|<300$ on $mathcal D$,
+$|G|<0.01334+300eta$ on the collar. Off it,
+$1_{mathcal D}wA$ belongs to $[-2,61]$, so $|G|<40+211=251$.
+This includes the cut-out pair and the entire angular tail outside
+the residual set.
+
+The two-sided bare-sine bound with $b=||
+u|-alpha|>0$ gives
+$|widehat u|le1.01/b$. Its squared integral off the collar
+with measure $d
+u/(2pi)$ is below $1.3cdot10^{-8}$.
+Plancherel, orthogonality of the two frequency regions and
+contractive physical restriction give
+$$
+ |Ru-(A_0-mu)u+q|
+ le|Gwidehat u|_{L^2(d
+u/(2pi))}<0.032 .
+$$
+
+### Transfer through the true projections and five inverse actions
+
+We have $Pi_{H_e}u=0$, $|z-u|<d=1.6cdot10^{-8}$
+and $1-d<|z|le1$. Thus
+$|Pi_{H_e}Rz+Pi_{H_e}q|<0.032+300d$.
+Compress all five preceding correction terms to $G_2$ and
+then project their output to $H_e$. Their combined action on
+$z$ has norm at most
+$$
+ egin{aligned}
+ &|PR||A_{23}^{-1}||PRz|
+ +|J||D^{-1}||Jz|+|J_0^*D_0^{-1}J_0||z|\
+ &quad+|J_Y||A_Y^{-1}||J_Yz|
+ +|J_{mathcal V}||A_{mathcal V}^{-1}||J_{mathcal V}z|
+ <0.10604 .
+ end{aligned}
+$$
+Use the global map norms from the five-pivot deletion section,
+the actual inverse bounds in their physical domains, and the
+smaller local column norms from the centroid section. These are
+products of a local and a global norm, as required for action
+on one input. The scalar $Bz$ vanishes under $Pi_{H_e}$.
+The triangle inequality and division by $|z|$ give
+$|b_e|<2.59$.
+
+For a lower bound, let $mathcal E=G_2^perp$. The raw projected
+action satisfies $|Pi_{mathcal E}Ru|<0.00075$.
+On $Pmathcal H$ and $U$ use the preceding bounds on $Rz$,
+$0.00046$ and $0.00027$, respectively, and add $300d$ to each.
+On $W$ and $L_0$ use $300cdot10^{-265}$ each. On $Y_0$,
+the preceding high-frequency pairing before adding projection
+transfer or any inverse term gives the raw bound
+$$
+ 300rac{42(6cdot10^{-24})+4cdot10^{-13}+3delta}{1-3delta}
+ <2cdot10^{-10}.
+$$
+On $mathcal V$, the preceding raw separated packet bound times
+the true Gram factor, before transfer or any inverse term, gives
+$$
+ (5.52cdot10^9),300
+ left[42(4cdot10^{-48})+
+       rac{2}{10^{25}}rac{16}{3}+4deltaight]<2cdot10^{-10}.
+$$
+Adding these raw bounds proves the claimed estimate on
+$mathcal E$. With $|A_0-mu|<10$ and $|Pi_{mathcal E}u|<d$,
+the full angular comparison gives $|Pi_{mathcal E}q|<0.033$.
+Also $|e-u|<2d$ and $qperp u$, so
+$|langle e,qangle|<2d(2.45)$. Orthogonal Pythagoras on
+$mathcal Eoplusmathbb C eoplus H_e$ gives
+$|Pi_{H_e}q|>2.429$. Subtract the same angular, projection and
+inverse action bounds and use $|z|le1$. This gives
+$|b_e|>2.29$. Finally
+$9.86900<eta<9.87028$ and the norm identity for a rank-one
+operator give the stated debit interval.
+
+### Exact rational guards on the actual mixed column
+
+Append this block to the historical prefix and preceding centroid
+pivot checker. The parity-one gamma log remainder, centroid interval,
+native pair estimates and unnormalized sine energy are inherited at
+their original scopes.
+
+```python
+def subtract(left, right):
+    return add(left, scale(-1, right))
+
+def square(interval):
+    lower, upper = interval
+    minimum = 0 if lower <= 0 <= upper else min(lower**2, upper**2)
+    return minimum, max(lower**2, upper**2)
+
+zero = (F(0), F(0))
+four = (F(4), F(4))
+events = []
+a, b = zero, zero
+for p in range(2, 2981):
+    if p == 3 or any(p % divisor == 0 for divisor in range(2, isqrt(p)+1)):
+        continue
+    log_p_lower, log_p_upper = log_bounds(p)
+    n = p
+    while n <= 2980:
+        lag = log_bounds(n)
+        assert 0 < lag[0] <= lag[1] < 8
+        near = lag[1] < 4
+        assert near or lag[0] > 4
+        cut = subtract(four, lag) if near else subtract(lag, four)
+        root_floor = isqrt(n*source_grid**2)
+        half_weight = scale(1 if n % 3 == 1 else -1, (
+            log_p_lower*source_grid/(root_floor+1),
+            log_p_upper*source_grid/root_floor,
+        ))
+        cosine, sine = phase_trig(multiply(carrier, lag))
+        cosine_row = round_out(*multiply(half_weight, cosine), atom_grid)
+        sine_row = round_out(*multiply(half_weight, sine), atom_grid)
+        if near:
+            a = add(a, scale(2, cosine_row))
+        events.append((cut, scale(-1 if near else 1, cosine_row),
+                       scale(-1, sine_row)))
+        n *= p
+
+assert len(events) == 458
+events.sort(key=lambda event: event[0][0])
+mean = prime_lower, prime_upper
+left = zero
+centered_sum = zero
+for right, a_jump, b_jump in events + [(four, zero, zero)]:
+    width = subtract(right, left)
+    assert 0 < width[0] <= width[1]
+    squared_amplitude = add(square(subtract(a, mean)), square(b))
+    assert squared_amplitude[1] < 50000
+    centered_sum = add(centered_sum, round_out(
+        *multiply(squared_amplitude, width), atom_grid,
+    ))
+    a, b = add(a, a_jump), add(b, b_jump)
+    left = right
+
+oscillation = F(459*50000, 1)/carrier[0]
+physical_variance = multiply(add(centered_sum, (-oscillation, oscillation)),
+                             (1/energy[1], 1/energy[0]))
+assert F(243, 100)**2 < physical_variance[0]
+assert physical_variance[1] < F(245, 100)**2
+
+# Gamma and full prime mask, including the complement of the residual set.
+wide = 5*10**7
+assert F(35, 10)*10**9 < carrier[0]-wide < carrier[1]+wide < 4*10**9
+wide_tail = F(13, 10**9)
+assert 2*F(101, 100)**2/(pi_lower*wide) < wide_tail
+gamma_center = F(213208029, 10**7)
+gamma_error = F(1334, 10**5)
+log_left = 3*(carrier[0]-wide)/(2*pi_upper)
+log_right = 3*(carrier[1]+wide)/(2*pi_lower)
+assert log_bounds(log_left//1)[0]-binet > gamma_center-gamma_error
+assert log_bounds(-((-log_right)//1))[1]+binet < gamma_center+gamma_error
+assert max(gamma_center+2, 61-gamma_center) < 40
+angular_error = F(32, 1000)
+assert (gamma_error+300*eta)**2+251**2*wide_tail < angular_error**2
+
+old_action = (F(15, 2)*10*p_bound + F(3705, 1000)*F(25, 2)*j_bound
+              +price_d0+301*4*y_bound+F(303, 12)*v_bound)
+assert old_action < F(10604, 10**5)
+column = F(259, 100)
+assert F(245, 100)+angular_error+300*defect+old_action < column*(1-defect)
+assert column**2 < F(68, 100)*F(9869, 1000)
+# Lower bound uses the raw projections of Ru, before any Schur correction.
+native_y_action = high_direct - 300*defect
+native_v_action = F(552, 100)*10**9*raw_v
+assert native_y_action < F(2, 10**10) and native_v_action < F(2, 10**10)
+raw_eliminated = (p_bound+u_bound+600*defect
+                  +600*F(1, 10**265)+native_y_action+native_v_action)
+assert raw_eliminated < F(75, 10**5)
+assert gamma_center-10 < prime_lower < prime_upper < gamma_center+10
+removed = F(33, 1000)
+assert raw_eliminated+10*defect+angular_error < removed
+retained = F(2429, 1000)
+assert retained**2+removed**2+(2*defect*F(245, 100))**2 < F(243, 100)**2
+column_lower = F(229, 100)
+assert retained-angular_error-300*defect-old_action > column_lower
+assert budget < F(53, 100)
+assert F(53, 100)*F(987028, 10**5) < column_lower**2
+print("PASS 458 signed rows, 459 cells, mixed norm (2.29, 2.59), debit (0.53, 0.68)")
+```
+
+The original narrow negative frequency compression, the prime-419
+cutoff witness, and the adverse small-weight sector retain their
+earlier scopes. The bare sine is in the bounded physical
+carrier and its direct shifts are valid there. Its zero extension
+has endpoint jumps, so the original real odd compact $C^2$ stage
+admission is still required for the arithmetic form. The sign on all
+of $H_e$, the original conductor-three radius-four stage and the
+unconditional RH and primitive Dirichlet GRH returns remain open.
