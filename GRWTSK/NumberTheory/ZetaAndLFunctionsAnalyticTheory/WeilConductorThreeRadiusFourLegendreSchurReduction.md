@@ -14397,3 +14397,471 @@ for a in labels:
 assert max(upper)<F(".953004")
 print("PASS directed nonuniform coupled twenty-three-row bound",*[float(upper[2*j]) for j in range(6)])
 ~~~
+
+## A two-sided finite angular test for the original signed floor
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic result
+with exact rational error checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review
+is UNASSESSED.
+
+Keep the original complex odd carrier
+$\mathcal H=L^2_{\rm odd}([-4,4],dt;\mathbb C)$ and Fourier
+transform $F(\nu)=\int_{-4}^4f(t)e^{i\nu t}dt$, with angular
+measure $d\nu/(2\pi)$. Let $\mathcal D$ denote the original
+masked residual angular set, with its finite cutoff and paid
+pair. Put $\mathcal D_+=\mathcal D\setminus J_*$, where
+$J_*=J_{1/160}$ is the actual negative collar deleted in $T_+$.
+In this section $K$ restricts the transform to $\mathcal D_+$.
+Extension of the output by zero to $\mathcal D$ gives the
+original Fourier restriction with the collar omitted. Let
+$m=w(A-P_4)$ on $\mathcal D_+$, with the full parity-one gamma
+term, all $458$ signed prime-power terms, and the original filter.
+The principal-pole term is zero in this sector. Write
+$$
+ D=B I-\lambda\Pi_H,\quad B=0.124997987,\quad
+ \lambda=0.0001071,\quad
+ T_+-\lambda\Pi_H=D+K^*mK .
+$$
+In particular $D$ uses the original projection.
+The source bounds $-2\le wA\le61$, $|P_4|<211$ and
+$0\le w\le1$ give $\|m\|_\infty\le272$.
+
+Choose a finite partition of the masked set into intervals of
+length at most $h$, subdividing at every actual mask boundary.
+Let $P$ be orthogonal projection in $L^2(\mathcal D_+,d\nu/(2\pi))$
+onto piecewise polynomials of degree less than $k$, with a positive
+integer $k$. Then
+$$
+ \|K-PK\|\le\frac{(2h)^k}{k!},\qquad
+ \|K^*mK-(PK)^*m(PK)\|\le\delta,
+ \qquad \delta=544\frac{(2h)^k}{k!}.
+$$
+In particular this numerical error is independent of the frequency
+horizon and the number and signs of the cells.
+
+### Angular approximation
+
+On one cell of length $h_j$, use its centered Taylor polynomial
+for $F$ through degree $k-1$. For $x\ge c_j$, the square of its
+remainder is bounded by
+$$
+ \frac{(x-c_j)^{2k-1}}{(2k-1)((k-1)!)^2}
+       \int_{c_j}^{x}|F^{(k)}(u)|^2du
+$$
+using the integral remainder and Cauchy--Schwarz. The same
+inequality with reversed endpoints holds on the other half.
+Integration on the two disjoint halves bounds the squared
+$L^2$ error on the cell by
+$$
+ \frac{(h_j/2)^{2k}}{2k(2k-1)((k-1)!)^2}
+ \int_{I_j}|F^{(k)}(u)|^2du .
+$$
+The orthogonal polynomial projection is the best approximation
+on each cell. Sum the estimates with the same angular measure.
+By Plancherel and the original physical support,
+$\|F^{(k)}\|_2=\|t^kf(t)\|_2\le4^k\|f\|_2$.
+Use $h_j\le h$ and $\sqrt{2k(2k-1)}\ge k$.
+This proves the operator bound for $K-PK$. The same
+bound follows by applying Young's inequality on each half
+cell to the truncated Volterra kernel $u^{k-1}/(k-1)!$.
+Its $L^1$ norm on $[0,h_j/2]$ is $(h_j/2)^k/k!$.
+Both $K$ and $PK$ are contractions. Expanding the difference of their
+two compressed multiplication operators gives the stated
+$544$ error bound against the full signed multiplier.
+
+### Exact signed moments and physical projection
+
+Take an orthonormal polynomial basis for the range of $P$ by
+cells. Let $U$ give the coefficients of $PK$ in this basis and
+let $M$ be the finite block-diagonal matrix with cell entries
+$$
+ M_{j,rs}=\int_{I_j}m(\nu)
+           \overline{p_{j,r}(\nu)}p_{j,s}(\nu)\,\frac{d\nu}{2\pi}.
+$$
+Thus $U^*MU=(PK)^*m(PK)$. These entries integrate the actual
+signed multiplier. Any rigorous directed pointwise lower and
+upper signed source densities give corresponding matrix order
+bounds by the same polynomial quadratic form. Norm errors in
+$M$ transfer without enlargement because $U$ is a contraction.
+
+For $r>-(B-\lambda)$, define the exact finite matrix
+$$
+ G_r=U(D+rI)^{-1}U^*,\qquad
+ (D+rI)^{-1}
+ =\frac{I-\Pi_H}{B+r}+\frac{\Pi_H}{B-\lambda+r}.
+$$
+Then
+$$
+ D+rI+U^*MU\ge0
+ \quad\Longleftrightarrow\quad
+ I+G_r^{1/2}M G_r^{1/2}\ge0 .
+$$
+Indeed conjugation by $(D+rI)^{-1/2}$ yields
+$I+X^*MX$ with $X=U(D+rI)^{-1/2}$. The left polar decomposition
+$X=G_r^{1/2}V$ identifies the nontrivial form with
+$I+G_r^{1/2}M G_r^{1/2}$ on its support. The identity holds
+on the remaining kernel directions. This argument includes
+linear dependencies in the angular coefficient space.
+
+Assume $\delta<B-\lambda$. A positive matrix in the test with
+$r=-\delta$ proves the original physical sign
+$T_+-\lambda\Pi_H\ge0$. A negative quadratic direction in
+the test with $r=+\delta$ falsifies that physical sign. Matrix
+order bounds on $M$ can be used in the corresponding directions.
+This follows from the two-sided physical approximation. With
+the original seven leading inverses the physical sign is
+equivalent to the specified $C_{4,+}$ floor. These tests use the
+full original angular set. At fixed $k$, the error tends to zero with $h$. A uniform
+positive gap or a strict negative quadratic direction is
+therefore detected by the corresponding exact test once $h$
+is sufficiently small.
+
+For $h=1$ and $k=18$ the error is below $2.3\cdot10^{-8}$.
+Taking $h=1/2$ and $k=14$ gives an error below
+$6.3\cdot10^{-9}$. These are error bounds for finite tests.
+The full masked set still requires the signed moment
+comparisons. The following tests use two original signed
+restrictions inside $\mathcal D_+$.
+
+~~~python
+from fractions import Fraction as F
+from math import factorial
+
+B=F(".124997987")
+lam=F(".0001071")
+beta=B-lam
+for h,k,cap in ((F(1),18,F("2.3e-8")),(F(1,2),14,F("6.3e-9"))):
+    assert k*k <= 2*k*(2*k-1)
+    eps=(2*h)**k/factorial(k)
+    delta=544*eps
+    assert 0<delta<cap<beta
+    assert B-delta>0 and B-lam-delta>0
+    print(h,k,float(delta))
+print("PASS exact uniform angular errors and original shifted inverse domain")
+~~~
+
+
+### Folded matrix entries and a comparison without matrix roots
+
+On any reflected restriction $X$ used below, fold to the
+positive frequency cells with measure $d\nu/\pi$. Since
+the physical inputs are odd, $-iF(\nu)=\int_{-4}^4
+f(t)\sin(\nu t)\,dt$ at positive frequencies. The original
+sign multiplier is even. The two signs and the original
+frequency measure therefore give precisely this folded
+form. Orthogonal polynomial projection onto symmetric
+cells commutes with reflection. The active angular
+matrix can be written in the folded cells alone.
+
+On a positive cell $I_j=[u_j,v_j]$ of width $\ell_j$, let
+$$
+ p_{j,a}(\nu)=\sqrt{\frac{\pi(2a+1)}{\ell_j}}\,
+   P_a\!\left(\frac{2\nu-u_j-v_j}{\ell_j}\right),
+ \qquad
+ z_{j,a}(t)=\int_{I_j}p_{j,a}(\nu)\sin(\nu t)\,\frac{d\nu}{\pi}.
+$$
+Here $P_a$ is the ordinary Legendre polynomial. There are $k$
+basis functions on each cell. For a combined index $\alpha$,
+$(Uf)_\alpha=\langle z_\alpha,f\rangle$. Write
+$Q_{\alpha\zeta}=\langle z_\alpha,z_\zeta\rangle$.
+The original physical sine Gram yields its exact integrals:
+$$
+ Q_{(j,a),(l,b)}
+ =\int_{I_j}\int_{I_l}p_{j,a}(\nu)p_{l,b}(\eta)
+ \left[
+ \frac{\sin(4(\nu-\eta))}{\nu-\eta}
+ -\frac{\sin(4(\nu+\eta))}{\nu+\eta}
+ \right]\frac{d\eta\,d\nu}{\pi^2}.
+$$
+At zero denominator the corresponding quotient has its
+continuous value $4$. With $J_{\alpha\zeta}
+=\langle\Pi_H z_\alpha,\Pi_H z_\zeta\rangle$, the exact matrix is
+$$
+ G_r=\frac{Q}{B+r}
+    +\left(\frac1{\beta+r}-\frac1{B+r}\right)J,
+ \qquad \beta=B-\lambda .
+$$
+This is the original projected Gram.
+
+The folded basis has no exact row dependence. Indeed any linear
+relation among the $z_\alpha$ gives a compactly supported
+piecewise polynomial $p$ on positive frequencies whose sine
+transform vanishes almost everywhere on $[-4,4]$. The transform
+is entire and hence vanishes identically. Fourier uniqueness
+of its odd extension gives $p=0$. Orthogonality of the local
+basis then forces every coefficient to vanish. Thus $Q>0$
+and $G_r>0$. Congruence on the finite folded space gives the
+root-free comparison
+$$
+ I+G_r^{1/2}M G_r^{1/2}\ge0
+ \quad\Longleftrightarrow\quad
+ G_r+G_r M G_r\ge0 .
+$$
+A strict negative direction also transfers in either direction.
+A lower normalized margin $\eta$ corresponds to the
+root-free inequality $G_r+G_r M G_r\ge\eta G_r$.
+A signed cell-moment matrix can be represented by exact
+integrals or by directed lower and upper signed moment
+matrices using the original source densities.
+
+For a direct sufficient certificate with a scalar physical
+comparator, use $D-\delta I\ge(\beta-\delta)I$ for the
+positive branch. For the negative branch use
+$D+\delta I\le (B+\delta)I$. These are physical form orders
+with the true $\Pi_H$ in the target. When the comparator is
+$cI$, its root-free finite comparison is $cQ+QMQ$.
+The exact $G_r$ above remains available when evaluating
+the original projected Gram.
+
+### Positive comparison from a specified adverse signed step matrix
+
+Use the adjacent reflected slab $X$ with positive detunings
+$[78.82,116]$. Partition its positive side into cells of
+width one, with the final cell truncated at $116$.
+Take $k=18$ and $\delta=544\,2^{18}/18!$.
+For each of its three rows let $\rho_i$ be the established
+positive lower folded density with respect to Lebesgue
+measure and $\sigma_i$ the established full-enclosure
+negative upper folded density with respect to Lebesgue
+measure. Use their specified width-$0.02$ positive
+and width-$0.005$ negative source cells. They give
+$$
+ \underline m(\nu)=\pi\left(\sum_i\rho_i(\nu)
+                           -\sum_i\sigma_i(\nu)\right)
+ \le m(\nu)
+$$
+throughout the slab up to null endpoints. The sign guard is
+used here to exhaust the actual negative part by its three
+full enclosures. The positive windows are disjoint, and each
+negative enclosure is contained in its own window.
+The exact rectangle guard gives
+$\pi\max(\rho_i,\sigma_i)<272$ on every retained rectangle,
+so $\|\underline m\|_\infty\le272$.
+
+Use for the lower matrix the exact folded moments
+$$
+ \underline M_{j,ab}
+   =\int_{I_j}\left(\sum_i\rho_i-\sum_i\sigma_i\right)
+                   p_{j,a}(\nu)p_{j,b}(\nu)\,d\nu .
+$$
+These give $\underline M\le M$ in matrix order. With the
+pre-normalized rational polynomials $P_a$, the integrals
+in this formula are finite rational sums of differences of
+polynomial antiderivative values at the clipped rectangle
+endpoints. Multiply by the two displayed normalization
+factors to obtain the orthonormal entries. The rectangle
+guards identify all three signed density lists and sample
+exact unnormalized degree-one moments.
+
+To prove the sign without diagonalizing the matrix, first
+work with the exact adverse signed physical form
+$\underline A_X=D+K^*1_X\underline mK$. The three original
+Legendre row checks use the negative upper moment matrix:
+they apply to the debit measures $\sigma_i\,d\nu$ themselves.
+Indeed their positive reconstruction costs and squared
+physical residual costs are evaluated against that upper
+moment matrix, and their Taylor correction uses the mass
+bounds on the same upper measures. Use the lower donor
+measures $\rho_i\,d\nu$ as the three tagged positive inputs
+and one common physical input $\sqrt\beta f$.
+
+For the direct sum of the three upper debit rows the
+positive Gram has norm below the maximum positive cost,
+$0.33$. The common physical residual Gram has norm
+below the sum of the three squared Hilbert--Schmidt caps,
+$3\cdot0.025$. For
+$\underline S_X=D+K^*1_X\pi(\sum_i\rho_i)K$,
+the combined input contracts in the $\underline S_X$
+energy. Thus the genuine upper debit stack comparison
+has norm below $0.405$, and
+$$
+ \underline A_X\ge0.595\underline S_X\ge0.595\beta I .
+$$
+The exact angular error for $\underline m$ is at most $\delta$.
+It follows that
+$D-\delta I+U^*\underline M U\ge(0.595\beta-2\delta)I$.
+Conjugating by $(D-\delta I)^{-1/2}$ and then by
+$G_{-\delta}^{1/2}$ gives
+$$
+    G_{-\delta}+G_{-\delta}\underline M G_{-\delta}
+      \ge \frac{0.595\beta-2\delta}{B-\delta}\,G_{-\delta}
+      >0.594\,G_{-\delta}.
+$$
+This proves the positive finite branch for the adverse
+step matrix and hence for the exact signed matrix on $X$.
+The positive side has $38$ cells and $684$ active
+polynomial coordinates.
+
+### A negative comparison with a specified constant-cell direction
+
+Use the reflected core $Y$ of radius $0.02$ about
+$\pm\nu_0$, where $\nu_0=c_1+83.8$. The eight exact
+width-$0.005$ cells at positive frequency give $m<-3.5$
+with the original filter, full Binet terms and all signed
+prime-power terms. Thus on this single folded cell, its
+exact signed matrix satisfies $M\le-3.5I$.
+Use $k=18$ and the same $\delta$, and let $e_0$ be the
+coordinate of the normalized constant polynomial.
+
+Every pair of frequencies on the positive core obeys
+$|\nu-\eta|\le0.04$ and $\nu+\eta\ge2\nu_0-0.04$.
+The two terms of the exact physical sine Gram give the
+strict lower bound
+$$
+ 4-\frac{64}{6}(0.04)^2-(2\nu_0-0.04)^{-1}>3.98 .
+$$
+The constant basis function gives
+$Q_{00}>0.04\cdot3.98/\pi$. As
+$D+\delta I\le(B+\delta)I$, inverse order yields
+$$
+ g_{00}=(G_{+\delta})_{00}
+ \ge Q_{00}/(B+\delta)
+ >\frac{0.04\cdot3.98}{\pi_{\rm upper}(B+\delta)}
+ >0.405 .
+$$
+Write $G=G_{+\delta}$. The coordinate $e_0$ is a concrete
+negative direction for the exact root-free comparison:
+$$
+ e_0^*(G+GMG)e_0
+ \le g_{00}-3.5\|Ge_0\|^2
+ \le g_{00}(1-3.5g_{00})<-0.1690875 .
+$$
+The last strict inequality uses that $x-3.5x^2$ decreases for
+$x\ge0.405$. Also $I+G^{1/2}MG^{1/2}\le I-3.5G$, so its normalized
+minimum eigenvalue is below $-0.4175$ by the same constant
+coordinate. This derives the negative finite branch
+entirely from the true signed core and its constant-cell
+sine Gram. On the original bounded odd physical carrier,
+the corresponding vector is $(D+\delta I)^{-1}z_0$.
+Its surrogate quadratic form equals the displayed
+$e_0$ value, by $U(D+\delta I)^{-1}z_0=Ge_0$.
+Both finite comparisons keep their stated
+angular restrictions. The complete original floor keeps
+all remaining cells and their exact signed moments.
+
+### Exact scoped source checks
+
+Extract the next block and pass the full pinned source
+Markdown path and the selector `row0`, `row1`, or `row2`.
+It reuses the corresponding adjacent signed row,
+checks the adverse step rectangle bounds and verifies
+the signed density and sample moment identities.
+Extract the final block and pass the pinned source path
+to verify the eight strict negative cells and both
+scalar matrix margins.
+
+~~~python
+from hashlib import sha256
+import json
+from pathlib import Path
+import re
+import sys
+
+path,role=sys.argv[1:]
+assert role in ("row0","row1","row2")
+source=Path(path).read_text()
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+marker='raw_centers=("83.80","100.20","113.12")'
+terminal='print("PASS exact adjacent-row positive budget, signed full enclosure, and endpoint phase",mode)'
+found=[b for b in blocks if marker in b.splitlines() and terminal in b.splitlines()]
+assert len(found)==1
+scope={}
+exec(compile(found[0],"published adjacent signed source allocation","exec"),scope)
+F,offset,positive,negative,pi_upper=(
+    scope[name] for name in ("F","offset","positive","negative","pi_upper")
+)
+left,right=F("78.82"),F(116)
+records=[]
+for sign,rectangle_edges in ((1,positive),(-1,negative)):
+    for u,v,w in rectangle_edges:
+        x,y=offset+u,offset+v
+        assert left<=x<y<=right and w>0
+        assert pi_upper*w<272
+        records.append((sign,x,y,w))
+assert F(".33")+3*F(".025")==F(".405")
+rows=[(sign,str(x),str(y),str(w)) for sign,x,y,w in sorted(records)]
+digest=sha256(json.dumps(rows,separators=(",",":")).encode()).hexdigest()
+
+def raw_moment(cell_left,cell_right,a,b):
+    assert a in (0, 1) and b in (0, 1)
+    degrees=a+b
+    def primitive(theta):
+        z=(2*theta-cell_left-cell_right)/(cell_right-cell_left)
+        return (cell_right-cell_left)*z**(degrees+1)/(2*(degrees+1))
+    return sum(sign*w*(primitive(min(cell_right,y))-primitive(max(cell_left,x)))
+               for sign,x,y,w in records if max(cell_left,x)<min(cell_right,y))
+
+j_values=(4,21,34)
+j=j_values[int(role[-1])]
+u,v=left+j,left+j+1
+m00=raw_moment(u,v,0,0)
+m01=raw_moment(u,v,0,1)
+m11=raw_moment(u,v,1,1)
+
+expected=[
+ (186,51,"99106ec43e73d56291b4d2768b8798647081028239deaae1108f392710d029d0",
+  "274569493/50000000","-53170248639/25000000000","22679722384633/15000000000000"),
+ (192,28,"1bc2a4a2d3239d492ef7d4e187f59f1c08cf1bbaa33fa63840d0c619fc2ef7a9",
+  "9229514603/2000000000","3159754069/3200000000","131263354777997/60000000000000"),
+ (186,54,"a6df944307f7dc29a8a0e5a5baefb236b6882ea4d909d1d3c7c01fa6a52ee931",
+  "1318544021/400000000","602670978809/400000000000","84717144172327/60000000000000"),
+]
+assert (len(positive),len(negative),digest,str(m00),str(m01),str(m11))==expected[int(role[-1])]
+
+print("PASS exact signed lower-density rectangles and sample unnormalized moments",
+      role,len(positive),len(negative),digest,str(m00),str(m01),str(m11))
+~~~
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$", source, re.M | re.S)
+center_line = 'raw_centers=("83.80","100.20","113.12")'
+terminal_line = 'print("PASS exact adjacent-row positive budget, signed full enclosure, and endpoint phase",mode)'
+providers = [block for block in blocks
+             if center_line in block.splitlines() and terminal_line in block.splitlines()]
+assert len(providers) == 1
+sign_branch = 'if mode == "sign":'
+mode_line = "mode = sys.argv[2]"
+assert providers[0].count(sign_branch) == providers[0].count(mode_line) == 1
+# The preceding segment computes the exact source grid, including the masks.
+grid_code = providers[0].split(sign_branch, 1)[0].replace(mode_line, 'mode = "row0"')
+grid = {}
+exec(compile(grid_code, "published adjacent grid", "exec"), grid)
+F, c1, gamma_upper, pi_upper, second, node, factorial = (
+    grid[name] for name in ("F", "c0", "Ahi", "pi_upper", "second", "fast_node", "factorial")
+)
+
+center = F("83.80")
+left, right = center - F(".02"), center + F(".02")
+box_left, box_right = grid["enclosures"][0]
+assert box_left <= left < right <= box_right
+core_step = F(".005")
+assert left + 8 * core_step == right
+chord_error = second * core_step**2 / 8
+filter_lower = 1 - F("3e-10")
+for cell in range(8):
+    start = left + cell * core_step
+    prime_lower = min(node(start)[0], node(start + core_step)[0]) - chord_error
+    assert filter_lower * (prime_lower - gamma_upper) > F("3.5")
+
+nu0 = c1 + center
+width = right - left
+assert nu0 > 10**7 and width == F(".04")
+gram_lower = 4 - F(64, 6) * width**2 - 1 / (2 * nu0 - width)
+assert gram_lower > F("3.98")
+B, lam = F(".124997987"), F(".0001071")
+beta = B - lam
+delta = 544 * F(2)**18 / factorial(18)
+assert delta < F("2.3e-8") < beta
+g00_lower = width * F("3.98") / (pi_upper * (B + delta))
+assert g00_lower > F(".405") > 1 / (2 * F("3.5"))
+assert 1 - F("3.5") * F(".405") == F("-.4175")
+assert F(".405") * (1 - F("3.5") * F(".405")) == F("-.1690875")
+assert (F(".595") * beta - 2 * delta) / (B - delta) > F(".594")
+print("PASS exact constant-cell negative witness and positive normalized margin", float(g00_lower))
+~~~
