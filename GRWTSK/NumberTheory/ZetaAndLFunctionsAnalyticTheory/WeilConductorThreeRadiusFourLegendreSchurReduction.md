@@ -11529,9 +11529,9 @@ checks both actual-source negative point tests and the exact
 scalar and third-row phase bounds.
 
 ~~~python
+from pathlib import Path
 from fractions import Fraction as F
 from math import factorial
-from pathlib import Path
 import re
 import sys
 
