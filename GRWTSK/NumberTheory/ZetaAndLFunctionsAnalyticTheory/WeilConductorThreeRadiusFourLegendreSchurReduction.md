@@ -4174,3 +4174,365 @@ seventh_pivot = subtract(diag_entry, sixth_debit)
 assert_inside(seventh_pivot, '23.535', '23.538')
 print("PASS projected neighboring sine: coupling (1.6149, 1.6164), seventh pivot (23.535, 23.538)")
 ```
+
+## The actual mixed column of the neighboring pivot
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the actual $e,v$ and $C_3,C_4$ from the preceding sections,
+and write $H=H_{e,v}$. On the original bounded physical carrier
+the seventh mixed column and its correction satisfy
+$$
+ 1.407<\|b_v\|<1.671,\qquad
+ 0.084<\|\gamma_v^{-1}b_v\otimes b_v\|<0.119<B,
+ \qquad b_v=\Pi_H C_3v.
+$$
+In particular the seventh correction is nonzero and its operator
+norm is smaller than the scalar budget. The sign of $C_4$ still
+depends on the compression of $C_3$ to all of $H$.
+
+Set $\lambda=\langle v,b_e\rangle/\beta$ and $x=v-\lambda e$.
+Realness and the true sixth correction give $b_v=\Pi_H C_2x$.
+With the preceding unprojected Gram data $g,\kappa,v_0$ put
+$h=v_0-\lambda u$. Write $P_0=u\otimes u+v_0\otimes v_0$ and
+$P_1=e\otimes e+v\otimes v$. These are orthogonal projections.
+We have $\|P_1-P_0\|<26d$ and $\|x-h\|<12d$ by
+$\|e-u\|<2d$, $\|v-v_0\|<11d$, $\lambda<0.164$ and
+$d=1.6\cdot10^{-8}$. Both $h$ and $x$ have norm
+$\sqrt{1+\lambda^2}<1.02$.
+
+### Two centered physical carriers and the slow cross term
+
+Let $T_P$ be the original unmasked signed prime compression and
+$q=(I-P_0)T_Ph$. Write $\mu=\langle u,T_Pu\rangle$,
+$m=\langle v_0,T_Pu\rangle$, and $D=\langle v_0,T_Pv_0\rangle$.
+These are the exact signed entries of the preceding checks.
+Then
+$$
+ q=T_Ph-(m-\lambda\mu)u-(D-\lambda m)v_0,\qquad
+ h=y/\kappa-(g/\kappa+\lambda)u.
+$$
+The 458 exact lags cut the positive physical half-interval into
+459 cells. For each of the two carriers, start both shifts for
+$\log n<4$ and remove the plus shift at its cut. For $\log n>4$
+add the minus shift at its cut. The coefficient changes are the
+two signed cosine and sine changes of the centroid mixed-column
+section, applied now at $\alpha$ and $\omega$ with their same
+original signed weights. Multiply each pair by its coefficient
+in $h$, with the actual sine energies, and subtract the two
+components in the displayed formula for $q$. On each open cell
+write the resulting $q$ as
+$$
+ A\sin(\alpha t)+D_\alpha\cos(\alpha t)
+ +C\sin(\omega t)+D_\omega\cos(\omega t).
+$$
+Put $E_\alpha=A^2+D_\alpha^2$ and $E_\omega=C^2+D_\omega^2$.
+By oddness the cell's contribution to the physical squared norm
+is twice the positive-half integral. Its constant term is
+$(E_\alpha+E_\omega)$ times cell length. Its two slow terms
+in the doubled integrand are
+$$
+ 2(AC+D_\alpha D_\omega)\cos((\alpha-\omega)t)
+ +2(AD_\omega-D_\alpha C)\sin((\alpha-\omega)t).
+$$
+Integrate them by their exact endpoint primitives at
+$0.838<\alpha-\omega<0.840$. The fast remainder from $2\alpha$,
+$2\omega$ and $\alpha+\omega$ per cell has absolute integral
+at most
+$$
+ \frac{E_\alpha}{\alpha}+\frac{E_\omega}{\omega}
+   +\frac{2(E_\alpha+E_\omega)}{\alpha+\omega}.
+$$
+For the last term the doubled cross harmonic has amplitude
+$2\sqrt{E_\alpha E_\omega}\le E_\alpha+E_\omega$.
+All these bounds use the full endpoint primitive.
+
+With the entire true $\lambda$ range the directed slow
+contribution lies in $(-12.278,-12.225)$ and the summed absolute
+fast error is below $1.1\cdot10^{-6}$. Dropping the slow terms
+would give squared energy in $(14.609,14.633)$ even with the fast
+terms retained. For the norm enclosure evaluate at the rational
+midpoint of the $\lambda$ interval and transfer by the exact
+affine dependence. The norm of $(I-P_0)T_Pu$ is at most
+$\|(T_P-\mu)u\|<2.45$ by the earlier signed shift estimate.
+Multiplying this bound by the interval half-width gives the full
+$\lambda$ transfer. The resulting enclosure is
+$$
+ 1.5338<\|q\|<1.545.
+$$
+
+### Full gamma and mask action on both sine inputs
+
+Use $\widetilde R=A_0I-T_P$, $A_0=21.3208029$,
+and the same full angular difference multiplier
+$G=1_{\mathcal D}w A-A_0+(1-1_{\mathcal D}w)P_4$.
+Its off-band magnitude is bounded by 251. In this paragraph
+use the larger common band $L\le|\nu|\le U$, where
+$L=3.5\cdot10^9$ and $U=4\cdot10^9$. This band is inside
+the original residual set with $1-w\le3\cdot10^{-10}$.
+
+For either normalized sine at $\rho=\alpha,\omega$, keep both
+fractions in its transform. If $s_\rho$ is the raw sine,
+the off-band angular norm of the normalized Fourier transform
+is at most
+$$
+ \frac{\sqrt{D_1}+\sqrt{D_2}}{\|s_\rho\|\sqrt{\pi}},\qquad
+ D_1=\frac1{\rho-L}-\frac1\rho+\frac1{U-\rho},\quad
+ D_2=\frac1\rho-\frac1{L+\rho}+\frac1{U+\rho}.
+$$
+Indeed these are the integrals of $(\nu-\rho)^{-2}$ and
+$(\nu+\rho)^{-2}$ over $[0,L]\cup[U,\infty)$.
+The two signs account for the factor $1/\sqrt{\pi}$.
+Minkowski and the exact uncancelled transform give the displayed
+bound, which is less than $3.02\cdot10^{-5}$.
+
+On the band, directed logarithms at both carrier centers and
+the full Binet remainder give
+$$
+ |A(\nu)-A_0|<10^{-8}+\frac{\big||\nu|-\rho\big|}{L}.
+$$
+The slope term follows from the bound $1/L$ on the log
+derivative. The uncancelled amplitude bound
+$1.01/\big||\nu|-\rho\big|$ controls its product with the Fourier
+transform. In angular norm this costs at most $12800/L$.
+Charge the original filter error $300\eta$ on the band and
+the full off-band multiplier bound. Plancherel and physical
+restriction give an action bound of $0.0076$ on each of $u,y$
+for $R-\widetilde R$.
+
+### Transfer to the actual seventh column and its Schur debit
+
+Write $z_y=\Pi_{G_2}y$, $n=\|\Pi_{H_e}y\|$ and
+$g_a=\langle e,z_y\rangle$. Then $|g_a-g|<3d$,
+$|n-\kappa|<5d$, and
+$$
+ x=z_y/n-(\lambda+g_a/n)\,e .
+$$
+The retained sign $g_a<0$ matters. Both
+$\lambda+g_a/n$ and $\lambda+g/\kappa$ lie in $(0.100,0.102)$.
+With $e=z/\|z\|$ this bounds by $1.104$ the sum of the absolute
+coefficients in the expression for $x$ on $z_y,z$, and also in
+the expression for $h$ on $y,u$.
+
+On $G_2$, write $D_{\mathrm{old}}$ for the sum of the five
+positive inverse corrections, each with its original compression
+to $G_2$. Their sum has action norm below $0.10604$ on each of
+$z,z_y$. This uses their previously displayed common local
+column bounds paired with the global map norms, plus the
+full $D_0$ price. Thus its action on $x$ is below
+$1.104(0.10604)$. The projection $\Pi_H$ kills $P_0$ exactly, since the
+$G_2$ projections of $u,y$ lie in $\operatorname{ran}P_1$.
+With $\widetilde R h=-q+P_0\widetilde R h$, we obtain
+$$
+ \left\|\Pi_H C_2x+\Pi_H q\right\|
+ \le 300(12d)+1.104(0.0076)+1.104(0.10604)<0.126 .
+$$
+The scalar $Bx$ also vanishes in this projection.
+
+For the lower bound let $\mathcal E=G_2^\perp$. The raw bound
+$\|\Pi_{\mathcal E}R u\|<0.00075$ of the centroid mixed-column
+proof also holds on $y$. On the first $P,U$ sectors use the
+now common $Rz,Rz_y$ local bounds and $300d$ for transfer.
+On $W,L_0$ use the same leakage $300\cdot10^{-265}$ for each.
+The $Y_0$ and $\mathcal V$ estimates are the raw high and
+separated pairings before transfer or inverse terms. They
+use only the common $L^1$ bound, high-tail amplitude
+$2/|\nu|$, projected preimage errors, and the true Gram factor.
+Each raw bound is below $2\cdot10^{-10}$, as in the centroid
+mixed-column proof. It follows that $\|\Pi_{\mathcal E}Rh\|$
+is below $1.104(0.00075)$. Using
+$q=-\widetilde R h+P_0\widetilde R h$,
+$\|\widetilde R\|<233$ and $\Pi_{\mathcal E}P_1=0$ gives
+$$
+ \|\Pi_{\mathcal E}q\|
+ <1.104(0.00075+0.0076)+26d\,(233)(1.02)<0.0094,\qquad
+ \|P_1q\|<26d(1.545)<10^{-6}.
+$$
+The second bound uses $P_0q=0$. The orthogonal decomposition
+$\mathcal E\oplus\operatorname{ran}P_1\oplus H$ gives
+$\|\Pi_H q\|>1.5337$ by Pythagoras. Combining it with the
+action error, and using $\|\Pi_H q\|\le\|q\|$ for the upper
+bound, proves the stated interval for $\|b_v\|$. The interval
+$23.535<\gamma_v<23.538$ gives the norm of the exact seventh
+rank-one debit.
+
+The bounded odd carrier, actual masks and inverse domains, and
+the original real odd compact $C^2$ arithmetic tests are unchanged.
+The original radius-four stage, all-support localization sign,
+and global pole-inclusive Weil source return remain open.
+
+### Exact rational guards for the two-carrier mixed action
+
+Append this block to the historical prefix and the previous
+centroid, mixed-column and neighboring sine blocks.
+
+```python
+# Uses historical prefix, centroid, mixed column and neighboring sine guards.
+coupling_bounds = F('1.6149'), F('1.6164')
+lambda_bounds = divide_positive(coupling_bounds, beta_interval)
+lambda_mid = (lambda_bounds[0]+lambda_bounds[1])/2
+lambda_rad = (lambda_bounds[1]-lambda_bounds[0])/2
+def outward(x):
+    return round_out(*x, atom_grid)
+
+shift_events = []
+initial = [zero, zero]
+for p in range(2, 2981):
+    if p == 3 or any(p % d == 0 for d in range(2, isqrt(p)+1)):
+        continue
+    log_p = log_bounds(p)
+    n = p
+    while n <= 2980:
+        lag = log_bounds(n)
+        assert 0 < lag[0] <= lag[1] < 8
+        near = lag[1] < 4
+        assert near or lag[0] > 4
+        cut = subtract(four, lag) if near else subtract(lag, four)
+        root_floor = isqrt(n*source_grid**2)
+        half_weight = scale(1 if n % 3 == 1 else -1, (
+            log_p[0]*source_grid/(root_floor+1),
+            log_p[1]*source_grid/root_floor,
+        ))
+        jumps = []
+        for i, x in enumerate((carrier, neighbor)):
+            cosine, sine = phase_trig(multiply(x, lag))
+            c = outward(multiply(half_weight, cosine))
+            s = outward(multiply(half_weight, sine))
+            if near:
+                initial[i] = add(initial[i], scale(2, c))
+            jumps.extend((scale(-1 if near else 1, c), scale(-1, s)))
+        shift_events.append((cut, jumps))
+        n *= p
+assert len(shift_events) == 458
+shift_events.sort(key=lambda event: event[0][0])
+
+cell_data = []
+left, cos_left, sin_left = zero, (1, 1), zero
+state = [initial[0], zero, initial[1], zero]
+for right, jumps in shift_events + [(four, [zero]*4)]:
+    step = subtract(right, left)
+    assert 0 < step[0] <= step[1]
+    cos_right, sin_right = map(outward, phase_trig(multiply(xi_difference, right)))
+    cos_integral = divide_positive(subtract(sin_right, sin_left), xi_difference)
+    sin_integral = divide_positive(subtract(cos_left, cos_right), xi_difference)
+    cell_data.append((step, cos_integral, sin_integral, state))
+    state = [add(value, change) for value, change in zip(state, jumps)]
+    left, cos_left, sin_left = right, cos_right, sin_right
+assert len(cell_data) == 459
+
+def centered_cells(lambda7):
+    coeff_y = divide_positive((1,1), norm_orth)
+    coeff_u = subtract(scale(-1, multiply(gram_overlap, coeff_y)), lambda7)
+    removed_u = subtract(prime_mixed_orth, multiply(lambda7, mean))
+    removed_v = subtract(prime_diag_orth, multiply(lambda7, prime_mixed_orth))
+    alpha_scale = divide_positive(coeff_u, s_norm)
+    omega_scale = scale(F(1,2), coeff_y)
+    alpha_offset = divide_positive(
+        subtract(multiply(multiply(gram_overlap, coeff_y), removed_v), removed_u), s_norm)
+    omega_offset = scale(F(-1,2), multiply(coeff_y, removed_v))
+    leading_sum = zero
+    slow_sum = zero
+    fast_error = F(0)
+    for step, cos_integral, sin_integral, state in cell_data:
+        A = outward(add(multiply(alpha_scale, state[0]), alpha_offset))
+        B = outward(multiply(alpha_scale, state[1]))
+        C = outward(add(multiply(omega_scale, state[2]), omega_offset))
+        D = outward(multiply(omega_scale, state[3]))
+        alpha_energy = add(square(A), square(B))
+        omega_energy = add(square(C), square(D))
+        energy_pair = add(alpha_energy, omega_energy)
+        leading_sum = add(leading_sum, outward(multiply(energy_pair, step)))
+        slow_cos = add(multiply(A,C), multiply(B,D))
+        slow_sin = subtract(multiply(A,D), multiply(B,C))
+        slow_sum = add(slow_sum, outward(scale(2, add(multiply(slow_cos, cos_integral),
+                                                      multiply(slow_sin, sin_integral)))))
+        fast_error += (alpha_energy[1]/carrier[0] + omega_energy[1]/neighbor[0]
+                       +2*energy_pair[1]/xi_sum[0])
+    return leading_sum, slow_sum, fast_error
+
+# Audit the effect of omitting the slow terms on the whole true lambda range.
+full_leading, full_slow, full_fast = centered_cells(lambda_bounds)
+assert_inside(full_leading, '14.609', '14.633')
+assert_inside(full_slow, '-12.278', '-12.225')
+assert full_fast < F(11, 10**7)
+assert_inside(add(full_leading, (-full_fast, full_fast)), '14.609', '14.633')
+leading_sum, slow_sum, fast_error = centered_cells((lambda_mid, lambda_mid))
+column_energy = add(add(leading_sum, slow_sum), (-fast_error, fast_error))
+assert F('14.60') < leading_sum[0] <= leading_sum[1] < F('14.64')
+assert F('-12.28') < slow_sum[0] <= slow_sum[1] < F('-12.22')
+assert fast_error < F(11, 10**7)
+midpoint_column = sqrt_interval(column_energy)
+# Projected T_P u is bounded by the prior centered norm (<2.45).
+column_radius = lambda_rad*F('2.45')
+raw_column = add(midpoint_column, (-column_radius, column_radius))
+assert_inside(raw_column, '1.5338', '1.545')
+print("PASS 459 complete cells, slow terms in (-12.278,-12.225), centered shift norm in (1.5338,1.545)")
+# Append to the historical, centroid, mixed and neighboring checker blocks.
+column_band_low, column_band_high = 3_500_000_000, 4_000_000_000
+rho_low, rho_high = 3_806_000_000, 3_807_000_000
+for rho in (carrier, neighbor):
+    assert rho_low < rho[0] <= rho[1] < rho_high
+    rho_log_low = 3*rho[0]/(2*pi_upper)
+    rho_log_high = 3*rho[1]/(2*pi_lower)
+    rho_log = (log_bounds(rho_log_low//1)[0], log_bounds(-((-rho_log_high)//1))[1])
+    assert gamma_center-F(1, 10**8)+binet < rho_log[0]
+    assert rho_log[1] < gamma_center+F(1, 10**8)-binet
+
+geo_main = (F(1, rho_low-column_band_low)-F(1, rho_high)
+            +F(1, column_band_high-rho_high))
+geo_other = (F(1, rho_low)-F(1, column_band_low+rho_high)
+             +F(1, column_band_high+rho_low))
+main_tail_root, other_tail_root = F(905, 10**7), F(16, 10**6)
+sin_floor, pi_root_floor = F('1.997'), F('1.7724')
+assert geo_main < main_tail_root**2
+assert geo_other < other_tail_root**2
+assert min(energy[0], 4) > sin_floor**2 and pi_lower > pi_root_floor**2
+column_tail = F('0.0000302')
+assert (main_tail_root+other_tail_root)/(sin_floor*pi_root_floor) < column_tail
+assert F(101, 100)**2*(column_band_high-column_band_low)/pi_lower < 12800**2
+angular_column_price = (251*column_tail+F(12800, column_band_low)
+                        +F(1, 10**8)+300*eta)
+assert angular_column_price < F('.0076')
+
+action_lambda = divide_positive((F('1.6149'), F('1.6164')), beta_interval)
+assert_inside(action_lambda, '.1636', '.164')
+act_g = (gram_overlap[0]-3*defect, gram_overlap[1]+3*defect)
+act_k = (norm_orth[0]-5*defect, norm_orth[1]+5*defect)
+assert_inside(act_k, '.998026', '.998029')
+for g0, k0 in ((gram_overlap, norm_orth), (act_g, act_k)):
+    zeta = add(divide_positive(g0, k0), action_lambda)
+    assert_inside(zeta, '.100', '.102')
+assert F(1)/F('.998026') + F('.102')/(1-defect) < F('1.104')
+assert 11+2*action_lambda[1] < 12
+assert 300+gamma_center < 322
+
+# Use the true and unprojected rank-two projections together.
+assert lambda_bounds == action_lambda
+assert 1+lambda_bounds[1]**2 < F('1.02')**2
+assert gamma_center+211 < 233
+span_error = F(26)*defect
+span_action = span_error*233*F('1.02')
+input_action = 300*12*defect
+coefficient_bound = F('1.104')
+action_column_price = (coefficient_bound*(F('.0076')+old_action)
+                       +input_action)
+assert action_column_price < F('.126')
+
+# Both projections lose only the raw head component and the close span.
+raw_head = F('.00075')
+removed_head = coefficient_bound*(raw_head+F('.0076'))+span_action
+removed_span = span_error*F('1.545')
+assert removed_head < F('.0094') and removed_span < F(1, 10**6)
+assert F('1.5337')**2+removed_head**2+removed_span**2 < F('1.5338')**2
+
+column7_lo, column7_hi = F('1.407'), F('1.671')
+pivot7_lo, pivot7_hi = F('23.535'), F('23.538')
+assert F('1.5337')-action_column_price > column7_lo
+assert F('1.545')+action_column_price < column7_hi
+assert F('.084')*pivot7_hi < column7_lo**2
+assert column7_hi**2 < F('.119')*pivot7_lo
+assert F('.119') < budget
+print("PASS actual seventh mixed norm (1.407, 1.671), seventh debit (.084, .119) below B")
+```
