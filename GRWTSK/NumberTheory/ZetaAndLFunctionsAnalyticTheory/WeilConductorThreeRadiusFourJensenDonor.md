@@ -1514,3 +1514,290 @@ assert caps[0][1]>F("9.107e-10") and caps[1][1]>F("5.460e-9")
 print("PASS exact signed local donor",mode,"and both 48-branch sums",
       tuple((float(cap),float(room)) for cap,room in caps))
 ~~~
+
+## A joint finite-rank price for the two Jensen residuals
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational source checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review
+is UNASSESSED.
+
+Use the actual first two deeper enclosures and their disjoint
+positive donors from the 59-enclosure comparison. Keep the
+original complex odd radius-four carrier, angular fold
+$d\nu/\pi$, full parity-one gamma, all $458$ signed prime powers,
+zero principal-pole term, masks and physical projection.
+Use the corrected modes `reprice-first` and `second` to obtain
+the true sine maps $B_i,V_i$, positive rational matrices $W_i,M_i$
+and rational coefficients $Z_i$ at the original centers
+$c_4=c_1+574.36$ and $c_5=c_1+580.77$. Their positive
+fractions are $\alpha_i=19/20$. The preceding source bounds are
+$$
+ \mathcal P_{Y_i}\succeq B_i^*W_iB_i,\qquad
+ N_{E_i}^*N_{E_i}\preceq V_i^*M_i V_i+\delta_i I .
+$$
+
+Put
+$$
+ X_i=V_i^*-B_i^*Z_i,\qquad
+ T_i=M_i^{-1}-Z_i^*(\alpha_iW_i)^{-1}Z_i .
+$$
+The verified separate residual certificate
+$\tau_iT_i-X_i^*X_i\succ0$ gives $T_i\succ0$ since
+$\tau_i>0$. Write $D_i=\operatorname{diag}(\alpha_iW_i,T_i^{-1})$
+on the direct sum of the two finite input spaces and
+$L_i=(Z_i^*,I)$. The definitions give
+$L_iD_i^{-1}L_i^*=M_i^{-1}$, so
+$M_i^{1/2}L_iD_i^{-1/2}$ is a coisometry.
+Apply its contraction inequality to
+$D_i^{1/2}(B_if,X_i^*f)$. The identity
+$L_i(B_if,X_i^*f)=V_if$ identifies the output.
+This proves
+$$
+ V_i^*M_iV_i\preceq
+ B_i^*(\alpha_iW_i)B_i+X_iT_i^{-1}X_i^* .
+$$
+The second term is an actual positive physical operator of
+rank at most $18$. Keep the negative Taylor remainder $\delta_i I$
+as a separate scalar term.
+
+Let $X=(X_4,X_5)$ and $T=\operatorname{diag}(T_4,T_5)$.
+The full $36$-dimensional Gram retains the cross terms between
+the two residuals. The directed guard verifies
+$$
+ (7.47626\cdot10^{-10})T-X^*X\succ0.
+$$
+The guard also checks $8\cdot10^{-10}$ and the planned price
+$9\cdot10^{-10}$. At $7.47625\cdot10^{-10}$ the directed upper
+matrix has $35$ positive leading pivots and a negative final pivot.
+Thus the true residual at that price has a negative direction for
+these fixed coefficients. This threshold concerns the residual with
+the chosen $Z_4,Z_5$. The donor inequality has its own optimum.
+Congruence by $T^{-1/2}$ and the equality of the two squared
+operator norms give $XT^{-1}X^*\preceq7.47626\cdot10^{-10}I$.
+The joint inequality is therefore
+$$
+ N_{E_4}^*N_{E_4}+N_{E_5}^*N_{E_5}
+ \preceq
+ \tfrac{19}{20}(\mathcal P_{Y_4}+\mathcal P_{Y_5})
+ +(7.47626\cdot10^{-10}+\delta_4+\delta_5)I .
+$$
+The two donor operators remain disjoint and are reserved once.
+The joint uniform charge saves $5.02374\cdot10^{-10}$ against the
+separate repriced charge with the same Taylor errors.
+
+The directed cross Gram uses the actual $18$ residual columns
+per donor, with respectively $120$ and $180$ averaged-sine
+Taylor terms and both certified $L^2$ discrepancies.
+The products of the two carriers give endpoint moments at
+frequencies $4(c_4+c_5)$ and $4(c_5-c_4)=25.64$. At the high
+frequency use the same Machin and integration-by-parts
+enclosures. At the fixed difference frequency use $260$
+Taylor terms with a directed remainder for the sine and
+cosine moment of each physical monomial. Using the actual
+cross terms, the maximal interval row width is below $10^{-23}$.
+The integer midpoint matrix minus its maximal row width times
+the identity has all $36$ exact leading pivots positive.
+
+Reserve both donors and the original tagged and disjoint positive
+inputs as in the 62-enclosure comparison. In every one of the $48$
+original branches the joint charge leaves more than
+$5.966\cdot10^{-9}$ physical room before the three later comparisons
+and more than $5.96309\cdot10^{-9}$ after their three prices and Taylor
+remainders. This uses $I\preceq S_{\mathrm{keep}}/\beta$ on the same
+retained input. For the actual paid restriction $W_{\rm all62}$,
+$S_{\rm all62}=S_\lambda-W_{\rm all62}^*W_{\rm all62}\succeq
+0.046995 S_\lambda$. The outstanding condition on the actual
+unpaid restriction is
+$\|N_{\rm out}S_{\rm all62}^{-1}N_{\rm out}^*\|\le1$.
+
+Extract the following Python guard and pass the pinned
+radius-four Markdown followed by the corrected Jensen donor
+Markdown, then the price selector `7.47626e-10`, `8e-10` or
+`9e-10`. The selector `7.47625e-10` verifies the negative
+direction by the upper matrix. The second extracted block is
+byte-pinned and uses the verified physical center of each enclosure.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial
+from pathlib import Path
+import re
+import sys
+
+_,source_path,jensen_path,ask=sys.argv
+assert ask in ("7.47625e-10","7.47626e-10","8e-10","9e-10")
+check_negative=ask=="7.47625e-10"
+journal=Path(jensen_path).read_text()
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",journal,re.M|re.S)
+digest="5289ea98b2059b23685d3a799da9d5f8b2cbfb344ed0f974bc2478d1cfa53c90"
+prior=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+assert len(prior)==1
+marker="# Exact fraction-free congruence sign."
+assert prior[0].count(marker)==1
+checked=prior[0].replace(marker,"physical_polynomials=p\n\n"+marker)
+d=[]
+for mode in ("reprice-first","second"):
+    sys.argv=[__file__,source_path,mode]
+    data={"__name__":"__main__"}
+    exec(compile(checked,jensen_path,"exec"),data)
+    d.append(data)
+sys.argv=[__file__,source_path,jensen_path]
+a,b=d
+assert (a['c'],b['c'])==(F('99654257.28983'),F('99654263.69983'))
+assert a['k']==b['k']==18 and a['zd']==b['zd']==10**20
+assert a['grid']==b['grid']==10**50
+assert (a['K'],b['K'])==(120,180)
+assert (a['alpha'],b['alpha'])==(F("0.95"),F("0.95"))
+assert (a['tau'],b['tau'])==(F("4.5e-10"),F("8e-10"))
+k=18
+q=F(ask)
+dim=2*k
+scale=10**30
+gram_scale=10**80
+
+def floor_ceil(x):
+    return x//1,-((-x)//1)
+
+
+# The same high-precision pi enclosure is valid for every fixed phase.
+pi_lo,pi_hi=a['pi_lo_sharp'],a['pi_hi_sharp']
+def high_phase(z):
+    turn=(z/pi_lo+1)//2
+    u=z-2*turn*pi_lo
+    assert abs(u)<F(22,7)
+    co=sum((-1)**n*u**(2*n)/factorial(2*n) for n in range(48))
+    si=sum((-1)**n*u**(2*n+1)/factorial(2*n+1) for n in range(48))
+    err=2*turn*(pi_hi-pi_lo)+F(22,7)**96/factorial(96)
+    assert err<F('1e-80')
+    return (co-err,co+err),(si-err,si+err)
+
+def high_integrals(z,terms):
+    co,si=high_phase(z)
+    result=[a['round_out'](*a['scale'](2/z,si),gram_scale)]
+    for j in range(1,terms):
+        val=(a['add'](a['scale'](2/z,si),a['scale'](-j/z,result[-1])) if j%2==0 else
+             a['add'](a['scale'](-2/z,co),a['scale'](j/z,result[-1])))
+        result.append(a['round_out'](*val,gram_scale))
+    return result
+
+def low_integrals(z,terms):
+    assert z==F('25.64')
+    nt=130
+    c=[F((-1)**(n//2))*z**n/factorial(n) for n in range(2*nt)]
+    err=z**(2*nt)/factorial(2*nt)
+    assert err<F('1e-120')
+    result=[]
+    for j in range(terms):
+        lo=hi=0
+        for n in range(j%2,2*nt,2):
+            l,r=floor_ceil(c[n]*F(2*gram_scale,n+j+1))
+            lo+=l
+            hi+=r
+        result.append((F(lo-1,gram_scale),F(hi+1,gram_scale)))
+    return result
+
+def mode_gram(u,v):
+    # Indexed by the parity of the left and right monomials.
+    ksum=u['K']+v['K']-1
+    high=high_integrals(4*(u['c']+v['c']),ksum)
+    low=None if u is v else low_integrals(4*(v['c']-u['c']),ksum)
+    modes=[[],[],[],[]]
+    for j in range(ksum):
+        if low is None:
+            baseline=(F(2,j+1),F(2,j+1)) if j%2==0 else (F(0),F(0))
+        else:
+            baseline=low[j]
+        for z in range(4):
+            lpar,rpar=divmod(z,2)
+            if j%2!=(lpar+rpar)%2:
+                val=(F(0),F(0))
+            elif lpar==rpar:
+                val=a['scale'](2,a['add'](baseline,a['scale'](1 if lpar else -1,high[j])))
+            else:
+                val=a['scale'](2,a['add'](high[j],a['scale'](1 if lpar else -1,baseline)))
+            modes[z].append((floor_ceil(val[0]*gram_scale)[0],floor_ceil(val[1]*gram_scale)[1]))
+    return modes
+
+def physical_g(u,v,modes,i,j):
+    lower=upper=0
+    for n,c in enumerate(u['physical_polynomials'][i]):
+        for m,d in enumerate(v['physical_polynomials'][j]):
+            p=c*d
+            lo,hi=modes[2*(n%2)+m%2][n+m]
+            if p<0:
+                lo,hi=hi,lo
+            lower+=p*lo
+            upper+=p*hi
+    den=gram_scale*u['grid']*v['grid']
+    er=u['eps'][i]*v['huge'][j]+v['eps'][j]*u['huge'][i]+u['eps'][i]*v['eps'][j]
+    return F(lower,den)-er,F(upper,den)+er
+
+def ridge(u,i,j):
+    # Recompute the exact proposed positive input price, directed onto scale.
+    lo=hi=0
+    for (aa,hh,w),zrow in zip(u['pos'],u['Z']):
+        x=q*F(zrow[i]*zrow[j]*scale,u['zd']**2)/(u['alpha']*w)
+        l,r=floor_ceil(x)
+        lo+=l
+        hi+=r
+    return F(lo,scale),F(hi,scale)
+
+L=[[0]*dim for _ in range(dim)]
+U=[[0]*dim for _ in range(dim)]
+for bi,bj in ((0,0),(0,1),(1,1)):
+    u,v=d[bi],d[bj]
+    modes=mode_gram(u,v)
+    for i in range(k):
+        for j in range(i if bi==bj else 0,k):
+            gl,gu=physical_g(u,v,modes,i,j)
+            if bi==bj:
+                rl,ru=ridge(u,i,j)
+                inv=q*u['inv'][i][j]
+                lo,hi=inv-gu-ru,inv-gl-rl
+            else:
+                lo,hi=-gu,-gl
+            i0,j0=bi*k+i,bj*k+j
+            L[i0][j0]=L[j0][i0]=floor_ceil(lo*scale)[0]
+            U[i0][j0]=U[j0][i0]=floor_ceil(hi*scale)[1]
+    print('enclosed exact block',bi,bj,flush=True)
+width=max(sum(v-u for u,v in zip(l,h)) for l,h in zip(L,U))
+assert F(width,scale)<F('1e-23')
+shift=width if check_negative else -width
+G=[[(L[i][j]+U[i][j])//2+(shift if i==j else 0) for j in range(dim)] for i in range(dim)]
+prev=1
+for i in range(dim):
+    p=G[i][i]
+    print('joint pivot',i,float(F(p,scale*prev)),flush=True)
+    if check_negative and i==dim-1:
+        assert p<0
+        print('PASS negative last pivot of directed upper fixed residual',ask,i)
+        raise SystemExit(0)
+    assert p>0
+    for j in range(i+1,dim):
+        for l in range(j,dim):
+            c,r=divmod(p*G[j][l]-G[i][j]*G[i][l],prev)
+            assert r==0
+            G[j][l]=G[l][j]=c
+    prev=p
+assert a["branches"]==b["branches"] and len(a["branches"])==48
+beta=a["beta"]
+old=max(a["branches"])
+tau=q+a["delta"]+b["delta"]
+assert tau < q+F("2.356e-16")+F("6.382e-23")
+assert tau < F("1.25e-9")
+worst59=max(F(".953004")+(old+tau)/beta,F(".95"))
+worst62=max(F(".953004")+(old+tau+F("3e-12")+F("8e-23"))/beta,F(".95"))
+room59=F(".000001")*beta-old-tau
+room62=room59-F("3e-12")-F("8e-23")
+assert worst59<worst62<F(".953005")
+if ask=="7.47626e-10":
+    assert room59>F("5.966e-9") and room62>F("5.96309e-9")
+elif ask=="8e-10":
+    assert room59>F("5.913e-9") and room62>F("5.910e-9")
+else:
+    assert room59>F("5.813e-9") and room62>F("5.810e-9")
+print('PASS exact joint physical residual',ask,'row uncertainty',float(F(width,scale)))
+print('PASS original 48 budgets',float(worst59),float(room59),float(worst62),float(room62))
+~~~
