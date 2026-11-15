@@ -913,3 +913,295 @@ stage, and RH and primitive Dirichlet GRH remain open. The
 global return still requires actual dual phases, zero
 multiplicities, all character and window instances and the
 conductor-one pole terms.
+
+## Lower carrier rays after eliminating the separated sector
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Use the same radius-four signed bounded source, $C_1$ on $G_1$,
+and separated sector $\mathcal V$ above. Write $G_2=G_1\cap\mathcal V^\perp$,
+$A_{\mathcal V}=\Pi_{\mathcal V}C_1|_{\mathcal V}$ and
+$J_{\mathcal V}=\Pi_{\mathcal V}C_1|_{G_2}$. The exact remaining
+form is
+$$
+C_2=\Pi_{G_2}C_1|_{G_2}-J_{\mathcal V}^*A_{\mathcal V}^{-1}J_{\mathcal V}.
+$$
+The established $A_{\mathcal V}\ge12I$ gives
+$\|A_{\mathcal V}^{-1}\|\le1/12$ on $\mathcal V$. Completing the
+square gives equivalence of the signs of $C_2$ on $G_2$ and $C_1$
+on $G_1$.
+
+For every integer $10^{10}\le j\le10^{20}$, let
+$g=\psi_j+[j/(j+1)]\psi_{j+1}$, $u=g/\|g\|$ and $z=\Pi_{G_2}u$.
+The native $g$ has the same first derivative cancellation,
+real odd compact $C^2$ extension and full original gamma
+integrability. The vector $z$ is in the actual bounded physical
+carrier. It is nonzero and satisfies
+$$
+ 5/4<\langle z,C_2z\rangle/E(z)<82.
+$$
+At the prescribed $j=10^{20}$ the lower endpoint improves to
+$97/4$. These are ray estimates for individually projected inputs.
+
+### Sharper prime price from the exact overlap
+
+Use the same comparison $f=\psi_j+\psi_{j+1}$ as in the
+previous adjacent-pair proof, with $\alpha=\pi/8$. For
+$0\le r\le8$ let $L=8-r$. Direct integration of the nonoscillatory
+overlap there gives its normalized absolute cost bounded by
+$$
+F(L)=\frac{\sin(\alpha L)-\alpha L\cos(\alpha L)}{8\alpha}.
+$$
+Indeed the amplitude integral of $\cos(\alpha t)\cos(\alpha(t+r))$
+is $(\sin(\alpha L)-\alpha L\cos(\alpha L))/(2\alpha)$, and the
+product-to-sum factor and $E(f)=2$ give the additional factor
+$1/4$. The once-integrated oscillatory term still costs at most
+$1/j$ per native lag. By the physical correlation
+Cauchy–Schwarz bound the full normalized estimate is
+$\min(1,F(L))+1/j$.
+
+On $0\le L\le8$ the derivative shows $F$ is increasing, since
+$0\le\alpha L\le\pi$ and
+$(\sin x-x\cos x)'=x\sin x\ge0$. Its Taylor series is alternating,
+with terms of absolute value
+$m\alpha^{2m}L^{2m+1}/[4(2m+1)!]$, $m\ge1$. The consecutive ratio
+is at most
+$[(m+1)/m]\pi^2/[(2m+2)(2m+3)]<1$, using $\pi^2<10$.
+The three terms through $m=3$ give an upper bound. For an upper
+input $L^+$ evaluate there and use $\alpha\le11/28$ on the positive
+terms and $\alpha\ge157/400$ on the negative term.
+The latter rational bound follows from the alternating arctangent
+series and $\pi=16\arctan(1/5)-4\arctan(1/239)$.
+
+For each native active $n=p^e\le2980$, $p\ne3$, our arithmetic
+uses an outward log enclosure for $p$ and $n$, and rounds
+$\sqrt n$ down on the $10^{-8}$ grid by integer square root.
+For a positive integer $n=2^k v$ with $1\le v<2$, apply the
+positive atanh series at $(v-1)/(v+1)$ to $\log v$, and at $1/3$
+to $\log2$. The first eight terms and the geometric upper
+remainder $2y^{17}/[17(1-y^2)]$ bound each logarithm. Use
+$L^+=8-\log_{\mathrm{lower}} n$ in the overlap bound and the
+upper prime log in the coefficient. Multiplying each price by
+$10^9$ and rounding up gives exact integer sum $20675207546$
+over the 458 original terms. The checker below recreates this sum
+by trial division and power enumeration.
+
+The inherited absolute coefficient sum $<211$ pays the
+oscillatory error. Returning $f$ to $g$ uses
+$\|f-g\|=1/(j+1)$ and $E(f)/E(g)\le1+2/j$ on the same
+bounded physical prime carrier. Consequently
+$$
+\frac{|\int_{\mathbb R}P_4|\widehat g|^2\,d\xi/(2\pi)|}{E(g)}
+\le
+\left(\frac{20675207546}{10^9}+\frac{211}{j}\right)
+ (1+2/j)+\frac{844}{j}<517/25 .
+$$
+The price accounts for all original signed terms with the actual
+normalization. The comparison uses the exact support overlap of
+this adjacent sine pair.
+
+### Original mask and physical projection
+
+Use the two mirrored collars $I_j$ of radius $H=10^5$ at
+$\pm j\pi/4$. They lie in the original residual set $\mathcal D$,
+above the cutoff and away from the excluded paid pair. Their
+absolute frequencies lie below $10^{20}$ and above $(37/50)j$.
+Thus $\|1_{\mathbb R\setminus I_j}\widehat u\|^2\le\theta$
+in the original angular measure with
+$\theta=8(2/H)^3$, by the previous adjacent trace formula.
+In particular the off-band norm is less than $3\cdot10^{-7}$.
+The inherited all-lobe filter bounds give $1-w\le\eta=3\cdot10^{-10}$
+on $I_j$. The Binet estimate and $\log10>23/10$ give
+$A(\xi)> k(23/10)-1/3-3/4$ there for $j\ge10^k$, using
+$\log(37/50)>-1/3$ by the positive exponential series.
+Use $k=10$ for the uniform bound and $k=20$ at the prescribed
+carrier. The old $A\ge-2$ globally, $A<61$ on $\mathcal D$,
+and $|P_4|<211$ account for the full tails and mask error.
+
+Put $\delta=10^{-272}$ and $b=\Pi_{G_1}u$. The earlier Chebyshev
+estimate and exact native orthogonality to the old sine space
+and high carrier give $\|b-u\|<4\delta$, with the same two
+projection steps as for the previous lower rays. Their use
+here needs only that these two sine centers are below $\Omega$
+and their indices exceed the old sine indices and are outside
+the high carrier.
+
+For the separated sector write $v_r=\Pi_{G_1}u_r$ with its true
+Gram $\Gamma$. The native sine indices of $u$ and $u_r$ are
+disjoint. Therefore
+$|\langle v_r,b\rangle|
+=|\langle u_r-v_r,u-b\rangle|<16\delta^2$.
+With $N=3\cdot10^{19}+1$ and
+$\Gamma\ge\kappa I$, $\kappa=1-16N\delta^2>99/100$,
+the actual squared projection onto $\mathcal V$ is bounded by
+$N(16\delta^2)^2/\kappa<\delta^2$. This follows by applying
+$\Gamma^{-1}$ to the vector of true mixed inner products.
+Hence $z=b-\Pi_{\mathcal V}b$ satisfies
+$\|z-u\|<5\delta$ and $1-5\delta<\|z\|\le1$.
+
+### All five actual inverse prices
+
+For each of the first $N_s=38170000$ native sine modes the exact
+transform on $I_j$ has absolute value at most $11\cdot10^{-13}$,
+using $\omega_m<3\cdot10^7$ and
+$|\xi^2-\omega_m^2|>\xi^2/2$ there. The angular collar measure is
+less than $H$. Summing their squared norms gives
+$\|1_{I_j}K|_{E_s}\|<22\cdot10^{-7}$.
+Split the original $R$ pairing into this collar and its complement.
+Use $\|w s_4\|_\infty<300$, and for $U$ use its old physical
+preimage in $X$ of norm at most $10/9$ with relative error
+$10^{-60}$. The transfer from $u$ to $z$ costs at most
+$1500\delta$ for either projection. This gives
+$\|PRz\|,\|\Pi_U Rz\|<p_*=9/10000$.
+
+The source head leakage law $\|KP\|^2\le\alpha_{23}$ with
+$213+900000\alpha_{23}<741$ gives $\|KP\|<1/40$. Thus
+$\|RP\|\le300\|KP\|<15/2$ and the actual head interaction
+$\|\Pi_U R P A_{23}^{-1}\|<75$. In the $W$ component use the
+previous $741\cdot10^{-265}$ estimate. This yields
+$\|Jz\|<76p_*+741\cdot10^{-265}<z_*=69/1000$.
+The first two prices are at most $10p_*^2$ and $(25/2)z_*^2$.
+[Head leakage](WeilConductorThreeRadiusFourLegendreTail.lean#L335)
+
+For a unit $a\in Y_0$ use its actual high preimage $h\in Y$.
+The distance to the high carrier on $I_j$ exceeds $10^{25}$.
+The pointwise high-tail bound gives
+$\|1_{I_j}Kh\|<2\cdot10^{-21}\|h\|$.
+Splitting the $R$ pairing at $I_j$ and transferring the physical
+projections gives
+$$
+|\langle a,Rz\rangle|<
+ \frac{300(2\cdot10^{-21}+3\cdot10^{-7})+2400\delta}
+      {1-3\delta}.
+$$
+Add the mixed first two prices
+$10(3\cdot10^{-6})p_*$ and $(25/2)(1/159)z_*$
+using the established high estimates. Add the full old $L_0$
+price $10^{-515}$. The scalar $B I$ vanishes in this mixed pairing.
+This proves
+$\|J_Yz\|<y_*=3/500$, with fourth price $4y_*^2$.
+
+For each unit native $u_r$ of the separated sector,
+the carrier separation from $u$ exceeds $10^{25}$.
+The full two-envelope mixed estimate above gives
+$|\langle u_r,Ru\rangle|<3\cdot10^{-44}$.
+Transferring both projections costs $2700\delta$.
+For each $v_r$ add the four actual mixed prices from the
+bounded estimates on both sides, including
+$4(3\cdot10^{-13})y_*$ for the high inverse. The scalar $B I$
+vanishes because $z\perp\mathcal V$. This gives
+$|\langle v_r,C_1z\rangle|<8\cdot10^{-15}$ for every $r$.
+The same physical Gram $\Gamma$ bounds the actual projected norm,
+so $\|J_{\mathcal V}z\|^2\le N(8\cdot10^{-15})^2/\kappa$.
+In particular $\|J_{\mathcal V}z\|<5\cdot10^{-5}$ and the fifth
+price is at most $(5\cdot10^{-5})^2/12$.
+
+The signed $R$ lower estimate is the on-collar gamma lower
+bound times $(1-\eta)(1-\theta)$, minus the complete off-band
+gamma price $2\theta$, prime price $517/25$, mask price
+$211(\theta+\eta)$ and the physical transfer price $3000\delta$.
+After the five inverse debits this coefficient is positive,
+so $E(z)\le1$ preserves that remaining lower coefficient when
+dividing. Adding $B$ then gives the two lower endpoints stated
+above. The upper estimate uses $61+517/25+211(\theta+\eta)$,
+the same transfer and $E(z)>(1-5\delta)^2$, with all five
+inverse terms subtracted. The exact comparisons are reproduced
+below.
+
+```python
+from fractions import Fraction as F
+from functools import cache
+from math import factorial, isqrt
+
+def log_from_atanh(y):
+    lower = 2 * sum(y**(2*k + 1) / (2*k + 1) for k in range(8))
+    return lower, lower + 2*y**17 / (17*(1-y*y))
+
+log2_lower, log2_upper = log_from_atanh(F(1, 3))
+
+@cache
+def log_bounds(n):
+    exponent = n.bit_length() - 1
+    power = 2**exponent
+    lower, upper = log_from_atanh(F(n-power, n+power))
+    return exponent*log2_lower + lower, exponent*log2_upper + upper
+
+alpha_lower, alpha_upper = F(157, 400), F(11, 28)
+assert 16*(F(1, 5)-F(1, 375)) - F(4, 239) > 8*alpha_lower
+total, count = 0, 0
+for p in range(2, 2981):
+    if p == 3 or any(p % d == 0 for d in range(2, isqrt(p) + 1)):
+        continue
+    n = p
+    while n <= 2980:
+        length = 8 - log_bounds(n)[0]
+        root_lower = F(isqrt(n*10**16), 10**8)
+        overlap = sum(
+            (-1)**(m+1)*F(m, 4*factorial(2*m+1))
+            * (alpha_upper if m % 2 else alpha_lower)**(2*m)
+            * length**(2*m+1)
+            for m in range(1, 4)
+        )
+        term = 10**9 * 2*log_bounds(p)[1]/root_lower * min(1, overlap)
+        total += (term.numerator + term.denominator - 1)//term.denominator
+        count += 1
+        n *= p
+
+assert (count, total) == (458, 20675207546)
+j_min, j_max = 10**10, 10**20
+prime_price = F(517, 25)
+assert (F(total, 10**9) + F(211, j_min))*(1 + F(2, j_min)) \
+       + F(844, j_min) < prime_price
+
+width, delta = 10**5, F(1, 10**272)
+eta, theta = F(3, 10**10), 8*F(2, width)**3
+assert F(3, 4)*j_min-width > F(37, 50)*j_min
+assert F(11, 14)*j_max+width < 10**20
+assert F(3, 4)*(2*10**25-j_max)-width > 10**25
+assert 1+F(1, 3)+F(1, 18) > F(50, 37)
+assert log_bounds(10)[0] > F(23, 10)
+assert theta < F(3, 10**7)**2
+assert 10**5 * 38170000 * F(11, 10**13)**2 < F(22, 10**7)**2
+assert F(6, 10**24)**2 * width < F(2, 10**21)**2
+assert F(528, 900000) < F(1, 40)**2
+
+sector_count = 3*10**19+1
+gram_floor = 1-16*sector_count*delta**2
+assert gram_floor > F(99, 100)
+assert sector_count*(16*delta**2)**2/gram_floor < delta**2
+raw_low = 300*(F(22, 10**7)+F(3, 10**7))
+p_bound, z_bound, y_bound = F(9, 10000), F(69, 1000), F(3, 500)
+assert F(10, 9)*(raw_low + 300*F(1, 10**60)) + 1500*delta < p_bound
+assert 76*p_bound + F(741, 10**265) < z_bound
+high_raw = (300*(F(2, 10**21)+F(3, 10**7))+2400*delta)/(1-3*delta)
+assert high_raw + 10*F(3, 10**6)*p_bound + F(25, 2*159)*z_bound \
+       + F(1, 10**515) < y_bound
+assert F(291600, 1)/(1+F(10**25, 2))**2 < F(3, 10**44)
+mixed_entry = (
+    F(3, 10**44) + 2700*delta + 10*F(4, 10**21)*p_bound
+    + F(25, 2)*F(13, 10**18)*z_bound
+    + F(1, 10**515) + 4*F(3, 10**13)*y_bound
+)
+assert mixed_entry < F(8, 10**15)
+sector_bound = F(5, 10**5)
+assert sector_count*F(8, 10**15)**2/gram_floor < sector_bound**2
+debit = 10*p_bound**2 + F(25, 2)*z_bound**2 + F(1, 10**515) \
+        + 4*y_bound**2 + sector_bound**2/12
+budget = F(124997987, 10**9)
+for log_power, target in [(10, F(5, 4)), (20, F(97, 4))]:
+    gamma_lower = log_power*F(23, 10)-F(1, 3)-F(3, 4)
+    raw_lower = gamma_lower*(1-theta)*(1-eta) - 2*theta \
+                - prime_price - 211*(theta+eta) - 3000*delta
+    assert raw_lower-debit > 0 and budget+raw_lower-debit > target
+assert budget + (61+prime_price+211*(theta+eta)+3000*delta)/(1-5*delta)**2 < 82
+print("PASS exact prime envelope and threshold-ray Schur guards")
+```
+
+The prime-419 cutoff example and the original large-weight
+obstruction keep their exact scopes. The sign on the entire
+corrected complement remains open. The radius-four stage and
+the global RH and primitive Dirichlet GRH returns still require
+all original characters and windows, exact dual phases and zero
+multiplicities, and the conductor-one pole terms.
