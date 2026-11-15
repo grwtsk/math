@@ -2923,3 +2923,174 @@ try:
 finally:
     sys.argv=original_argv
 ~~~
+
+## The next enclosure through detuning 726.38
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 64-enclosure comparison](https://github.com/grwtsk/math/blob/8c5f0f6c9fd46bb696abbbfdb44850601efdb7e1/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md)
+through detuning $722.96$, Jensen blob
+347cc34b20ac4bd38d3f282b78c5b0bd19e2a3fc, with its four
+prices for the first two deep enclosures. Its original
+radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the original
+complex odd carrier $L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$,
+zero extension, folded measure $d\nu/\pi$, original masks
+and physical projection. The primitive nonprincipal odd
+character modulo three uses the full parity-one gamma,
+all $458$ signed prime powers and zero principal-pole term.
+The detunings below are from $c_1=99653682.92983$ and
+include their reflections.
+
+The directed sign guard proves the original multiplier
+strictly positive on $[722.96,726.38]$ off
+$E_{11}=[722.96,723.08]$. Its endpoints are positive
+and the interior point $723.02$ is negative. All $165$
+complement checks pass without bisection. Use
+$Y_{11}=[721.54,724.54]$ for the positive donor.
+The preceding donor ends at $712.24$. The exact guard
+also checks separation from the older direct and tagged
+positive resources. The overlap $[721.54,722.96]$ lies inside
+the preceding strict sign interval and is separated from
+$E_{10}=[710.86,711.04]$. Thus the actual negative part on
+$Y_{11}$ is supported in $E_{11}$ and its output is disjoint
+from the previous $64$ negative restrictions.
+
+On the original carrier the checked comparison is
+$$
+ N_{E_{11}}^*N_{E_{11}}
+ \preceq \tfrac14\mathcal P_{Y_{11}}+(10^{-12}+\delta_{E_{11}})I,
+ \qquad 0<\delta_{E_{11}}<1.647\cdot10^{-28}.
+$$
+The positive Jensen form $B^*WB$ uses $145$ positive
+$.02$ bins with directed prices from eight $.0025$ source
+cells per bin. Binwise Cauchy–Schwarz on the true averages
+gives $B^*WB\preceq\mathcal P_{Y_{11}}$. The upper negative density $\eta$ is nonzero
+on $33$ of the $.0025$ cells of the enclosure. The negative
+moment map $V$ uses $18$ Taylor terms at the exact center
+$c=c_1+723.02$. Its bound
+$\epsilon=.24^{18}/18!$ gives the physical Taylor charge
+$\delta_{E_{11}}=8\epsilon(2+\epsilon)\int_{E_{11}}\eta$.
+
+For $\tau=10^{-12}$ the same Jensen square completion uses
+the directed positive residual
+$$
+ R_Z=\tau M^{-1}
+ -(V^*-B^*Z)^*(V^*-B^*Z)
+ -\tau Z^*(\tfrac14 W)^{-1}Z\succ0.
+$$
+The numerical solve proposes $Z$. The rational verification
+uses $120$ Taylor terms for each exact positive sine average
+to enclose all $18$ physical residual columns. Their $L^2$
+errors are below $1.801\cdot10^{-48}$. The phase of the
+actual physical Gram is $8c$, with the equality
+$c=c_1+723.02$ asserted at that step. The certified
+matrix row width is below $10^{-23}$ and all $18$ exact
+leading pivots are positive. Its first pivot exceeds
+$8.8335\cdot10^{-10}$.
+
+The actual negative witness at $723.02$ rules out zero scalar
+cost for this donor. A frequency function supported on a small
+negative interval inside $E_{11}$ has positive negative energy and
+zero positive energy. The bounded folded restriction to
+$Y_{11}$ has dense range by the entire sine transform argument
+above. Both weighted forms on that interval are bounded, so the
+zero-price failure transfers to the physical carrier.
+
+Reserve $\mathcal P_{Y_{11}}$ separately in the reduced
+comparator and append the disjoint $N_{E_{11}}$ to form
+$W_{\mathrm{all65}}$. The earlier genuine positive tagged
+inputs and physical lower bound $\beta I$ are available.
+Add $(10^{-12}+\delta_{E_{11}})/\beta$ to the scalar branch
+and include $\tfrac14$ among the disjoint coefficients.
+All $48$ original price choices under each of the four
+prices for the first deep pair retain the cap below
+$0.953005$. In the common-map branch the least physical
+room exceeds $6.7067\cdot10^{-9}$.
+
+Contiguous signed coverage reaches $726.38$. For the actual
+outside restriction and the original domain,
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all65}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad
+ S_{\mathrm{all65}}=S_\lambda-W_{\mathrm{all65}}^*W_{\mathrm{all65}}
+ \succeq0.046995 S_\lambda .
+$$
+The outstanding condition before the original seven leading
+inverses and directional return is
+$\|N_{\mathrm{out}}S_{\mathrm{all65}}^{-1}N_{\mathrm{out}}^*\|\le1$
+on the full actual outside support.
+
+Extract the guard and pass the pinned radius-four arithmetic
+Markdown, the Jensen donor Markdown containing the published
+E9 and E10 checkers, and `sign` or `e11`. It reuses the exact E9
+checker selected by its digest with the E11 parameters,
+center, sign counts and price sum below. Both modes are
+required for the joint result.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic_path,jensen_path,mode=sys.argv
+assert mode in ("sign","e11")
+pinned_e9="a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654"
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen_path).read_text(),re.M|re.S)
+matches=[block for block in blocks if sha256(block.encode()).hexdigest()==pinned_e9]
+pinned_e10="5b0ca3047d221502a2bff150d0ad453af405cdc5396f55f0d32ca16fa7dc63cb"
+assert len(matches)==1
+assert sum(sha256(block.encode()).hexdigest()==pinned_e10 for block in blocks)==1
+code=matches[0]
+
+# These are the new input parameters to the same directed source arithmetic.
+changes=(
+    ('"e9":("707.62","709.62","708.60","708.66","708.63",".25")',
+     '"e11":("721.54","724.54","722.96","723.08","723.02",".25")'),
+    ('("708.60","710.86",".02")','("722.96","726.38",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(165,0)'),
+    ('len(pos)==98 and len(rho)==9','len(pos)==145 and len(rho)==33'),
+    ('0<delta<F("9.656e-36")','0<delta<F("1.647e-28")'),
+    ('assert c==c0+F("708.63")','assert c==c0+F("723.02")'),
+    ('F(T[0][0],work_grid)>F("5.9727e-8")','F(T[0][0],work_grid)>F("8.8335e-10")'),
+    ('assert F("640.32")<intervals[0][0]','assert F("712.24")<intervals[0][0]'),
+)
+for earlier,later in changes:
+    assert code.count(earlier)==1
+    code=code.replace(earlier,later)
+marker="base_options = {"
+assert code.count(marker)==1
+code=code.split(marker)[0]+'''assert F("574.58")<F("580.62")<F("590.62")<F("621.06")<F("625.06")
+assert F("625.06")<F("627.98")<F("631.98")<F("636.32")<F("640.32")
+assert F("640.32")<F("707.62")<F("709.62")<F("709.64")<F("712.24")<start<stop<F("726.38")
+assert F("711.04")<F(l0)<F(r0)<=stop
+pair_options={
+    "published-first":F("5e-9")+F("8e-10"),
+    "repriced-first":F("4.5e-10")+F("8e-10"),
+    "joint-residual":F("7.47626e-10"),
+    "pooled-map":F("1e-12"),
+}
+caps={}
+for label,pair_price in pair_options.items():
+    spent=pair_price+F("2.356e-16")+F("6.382e-23")+F("5e-12")+F("8e-23")+F("9.656e-36")+F("6.501e-25")+tau+delta
+    all_caps=[max(F(".953004")+(quoted+spent)/beta,F(".95"),alpha) for quoted in branches]
+    assert len(all_caps)==48 and max(all_caps)<F(".953005")
+    caps[label]=(max(all_caps),old_room-spent)
+assert caps["published-first"][1]>F("9.077e-10")
+assert caps["repriced-first"][1]>F("5.4577e-9")
+assert caps["joint-residual"][1]>F("5.96009e-9")
+assert caps["pooled-map"][1]>F("6.7067e-9")
+print("PASS exact signed donor E11 and 48x4 price combinations",
+      {label:(float(cap),float(room)) for label,(cap,room) in caps.items()})
+'''
+original_argv=sys.argv
+try:
+    sys.argv=[__file__,arithmetic_path,mode]
+    exec(compile(code,jensen_path,"exec"),{"__name__":"__main__"})
+finally:
+    sys.argv=original_argv
+~~~
