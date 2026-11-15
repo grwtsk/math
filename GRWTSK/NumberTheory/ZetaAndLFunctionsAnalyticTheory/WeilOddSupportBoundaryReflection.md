@@ -344,3 +344,125 @@ RH(zeta), \`PrimitiveNegativeWitness\`, the completed
 pole-inclusive Weil criterion (both pole orientations), dual
 characters, all windows/conductors and primitive Dirichlet
 GRH including conductor one remain **UNPROVED**.
+
+
+## 8. C0008/T4: certified five-region physical boundary potential
+
+**2026-11-14 — grwtsk contributors, AI-assisted.** This is a source-local,
+non-circular **conditional return** and a rational finite-bound certificate.
+It does not prove the required joint signed-overlap inequality or
+`DirichletStageChain.PrimitiveStageLower`. Kernel elaboration, transitive
+axioms and independent review: **NOT_RUN / UNASSESSED**.
+
+Use the **same** primitive odd `χ : DirichletCharacter ℂ 3`, `T=1`,
+real odd supported `g=liftReal f`, and `h=f|[0,1]` as in (7).
+Write `p=log(2)/sqrt(2)`, `a=log(2)/2`,
+`b=log(5)/sqrt(5)`, `c=log(7)/sqrt(7)`, and
+`K(s)=parityKernel 1 s`. Both physical boundary potentials stay present:
+`H(u)=T(1-u)+T(1+u)` for `0≤u<1`, where the exact tail `T(y)` is in §6.
+Set the strictly ordered breakpoints
+
+```text
+τ2=1-log(2), τ4=log(4)-1, τ5=log(5)-1, τ7=log(7)-1
+I0=[0,τ2), I1=[τ2,τ4), I2=[τ4,τ5), I3=[τ5,τ7), I4=[τ7,1).
+```
+
+After the **written, still-unelaborated** original full-source reassembly,
+the exact candidate equality is
+
+```text
+Qχ,1(g) + E
+ = 2∫_0^1 h(u)^2 D(u)du
+   + I + a R(log4) + c R(log7) - p R(log2) - b R(log5),
+
+E = energy(g),  I=∫_0^2 K(s)R(s)ds,
+
+D(u)=gammaConstant(3,1)+1+2p+H(u)
+     -p·1_(u≥τ2)-a·1_(u≥τ4)+b·1_(u≥τ5)-c·1_(u≥τ7).
+```
+
+No quadratic form or prime-power inventory has been replaced. The n=3,6
+weights are native zero entries, and n=4 is the genuine squared prime
+`vonMangoldt(4)=log2`.
+
+**Ordinary mathematical proof of the local floor.** The parity-one exact
+tail is `T(y)=artanh(exp(-y/2))-atan(exp(-y/2))`, `y>0`.
+Thus `H'(u)=K(1-u)-K(1+u)≥0` on `0≤u<1`, because the original
+kernel is strictly decreasing. The step function in `D` is constant
+on each `Ij`. Its lower bound on `Ij` therefore occurs at that
+interval's left endpoint. The endpoint values are evaluated with
+**rational enclosures**, not floating-point comparisons.
+
+Let `α=(1,2/3,3/8,5/4,11/8)`. The source-integrity verification fixture
+`scripts/verify_odd_three_boundary_floors.py` proves the following
+strict rational intervals for those left endpoint values:
+
+| Region | Certified rational bracket for endpoint D | Required bound |
+| --- | --- | --- |
+| I0 | [1164692, 1164695]/1000000 | 101/100 |
+| I1 | [721016, 721019]/1000000 | 203/300 |
+| I2 | [404079, 404082]/1000000 | 77/200 |
+| I3 | [1268460, 1268463]/1000000 | 63/50 |
+| I4 | [1412024, 1412027]/1000000 | 277/200 |
+
+Consequently, for **all** `u∈Ij`,
+`D(u)≥α_j+1/100`; endpoints are interpreted with the displayed
+half-open region convention. The endpoint `u=1` is measure zero and
+the bare `T(0)` is **not** integrated.
+
+The fixture evaluates rational Maclaurin series with explicit remainder
+bounds for logarithms, arctangents and `e`; obtains `π` via Machin's
+arctangent identity; brackets square roots using exact integer square
+roots; and uses an elementary Euler-constant bound
+
+```text
+H_N-log(N)-1/(2N) < γ
+  < H_N-log(N)-1/(2N)+1/(8N²).
+```
+
+For completeness, the upper error is bounded by summing the
+trapezoidal-rule errors of `t↦1/t` over `[k,k+1]`, each equal to
+`∫_k^(k+1) (t-k)(k+1-t)/t³ dt ≤ (1/4)∫_k^(k+1) t^(-3)dt`.
+The lower error is positive by convexity. There is no reliance on
+uncertified floating-point rounding for any PASS decision.
+
+Executed independently in Python 3.13.5 at source baseline
+`math@e8eb0be56deaf3ed01b7bb7a77c9607d29617bb0` before this
+source-comment publication:
+
+```sh
+python3 scripts/verify_odd_three_boundary_floors.py
+```
+
+The matching local pre-publication script returned exit code 0 and
+all five `exact_strict_pass: true` comparisons.
+Local verifier SHA-256 (test file, preceding publication):
+`84f2f6650d982fd93f3db22df61e78242a8459cf635fcd338e45dc728b2aa2b5`.
+The GitHub source is reserialized for publication; a fresh clean-checkout
+SHA-256/replay must be recorded separately. No Lean acceptance follows
+from the Python run.
+
+**Actual first unresolved arithmetic premise.** The following *separate*
+joint inequality is a candidate, **not a proved theorem**:
+
+```text
+p R(log2) + b R(log5)
+ ≤ I + a R(log4) + c R(log7)
+   + 2 Σ_(j=0..4) α_j ∫_(Ij) h(u)^2du.       (12)
+```
+
+It must be established for **every** original admissible real odd C² test,
+with no derivative/E frequency bound, spectral substitute, or
+duplicate gamma allocation. If (12) holds, the preceding exact
+reassembly and the certified scalar floor imply
+
+```text
+Qχ,1(g)+E ≥ (1/100) E,
+hence Qχ,1(g) ≥ -(99/100)E ≥ -E.
+```
+
+This is a **conditional implication** only. The support/prime/gamma
+integral-return equalities above, (12), the zeta pole-inclusive source,
+`PrimitiveNegativeWitness`, all windows/characters, RH and primitive
+Dirichlet GRH remain open. Neither finite matrix exploration nor the
+pointwise Fourier-symbol obstruction in §7 settles (12).
