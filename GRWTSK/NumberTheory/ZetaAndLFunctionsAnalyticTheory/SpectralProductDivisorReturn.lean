@@ -424,7 +424,7 @@ subtracted in `N(T)` with its full order. Replacing `N` by `M`
 gives `P(T)` by integration by parts using
 `M'(u)=log(u/(2π))/(2π)`. The absolute error is bounded by
 `E(T)/T²+2∫_T^∞ E(u)/u³ du`. Another integration by parts expresses
-this as `2E(T)/T²+∫_T^∞ E'(u)/u² du`, which is at most `Q(T))
+this as `2E(T)/T²+∫_T^∞ E'(u)/u² du`, which is at most `Q(T)`
 because `E'(u)≤(C₁+C₂/log T)/u` for `u≥T`. The boundary terms at
 infinity vanish by the stated count estimate and the growth of `E`.
 
@@ -482,7 +482,10 @@ bounds enclose the other terms.
 
 This bounded test consumes exact source identification and one-sided
 analytic orders. It gives a route to coverage tests for the same
-modulus-one zero divisor in #1806 and #1807. The ordered signed Möbius
+modulus-one zero divisor in #1806 and #1807. The finite order bound and
+strict completeness test are formalized in
+[XiAnchorMultiplicityCutoff.lean](XiAnchorMultiplicityCutoff.lean).
+The ordered signed Möbius
 surplus of #1815 plays no role in these estimates. The argument is
 analytic exposition. No inventory or numerical enclosure was tested.
 Lean elaboration, kernel replay and transitive axiom audit were NOT_RUN.
