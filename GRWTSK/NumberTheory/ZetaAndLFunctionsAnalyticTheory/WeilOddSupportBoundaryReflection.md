@@ -848,75 +848,75 @@ Lean theorem, a completed Weil criterion or a proof of RH/GRH.
 
 ### Canonical parity-one gamma operator: a closed form without numerical series
 
-Keep the original real odd conductor-three \`Q\`, \`E\`, the full integer
-inventory \`n=2,..,7\`, and \`m(t)\` of §7/§11. Let
-\`z=3/4\`, \`a_j=3/2+2j=2(j+z)\`, \`y=t/2\` and let
-\`ψ=Γ'/Γ\` denote the standard digamma function on the right half-plane.
-The convergent digamma series yields, for every real \`t\`,
+Keep the original real odd conductor-three `Q`, `E`, the full integer
+inventory `n=2,..,7`, and `m(t)` of §7/§11. Let
+`z=3/4`, `a_j=3/2+2j=2(j+z)`, `y=t/2` and let
+`ψ=Γ'/Γ` denote the standard digamma function on the right half-plane.
+The convergent digamma series yields, for every real `t`,
 
-\`\`\`text
+```text
 Re ψ(z+i*y) - ψ(z)
   = Σ_(j≥0) [1/(j+z) - (j+z)/((j+z)^2+y^2)]
   = Σ_(j≥0) y^2 / ((j+z)*((j+z)^2+y^2))
   = Σ_(j≥0) 2*t^2 / (a_j*(a_j^2+t^2)).
-\`\`\`
+```
 
-The series is uniformly convergent on each compact real \`t\` interval:
-its terms are \`O(t²/j³)\` for large \`j\`. The last equality is an
-algebraic identity with the ACTUAL original \`a_j\`, not a spectral
+The series is uniformly convergent on each compact real `t` interval:
+its terms are `O(t²/j³)` for large `j`. The last equality is an
+algebraic identity with the ACTUAL original `a_j`, not a spectral
 guess. From the source's digamma-quarter formula
 
-\`\`\`text
+```text
 gammaConstant(3,1) = log(3/π) + ψ(3/4)
-\`\`\`
+```
 
 the complete signed original Fourier multiplier is therefore exactly
 
-\`\`\`text
+```text
 m(t) = 1 + log(3/π) + Re ψ(3/4 + i*t/2)
        - 2 Σ_(n=2..7) w_n cos(t log n),
 
 w_2=-log(2)/sqrt(2), w_3=0, w_4=log(2)/2,
 w_5=-log(5)/sqrt(5), w_6=0, w_7=log(7)/sqrt(7).
-\`\`\`
+```
 
 This is a second exact representation of the SAME gamma and signed
-prime-power source. In particular the \`ψ(3/4)\` constants cancel; no
+prime-power source. In particular the `ψ(3/4)` constants cancel; no
 piece of the infinite gamma tail is dropped. The proposed future
 math-owned Lean obligation is
-\`OddThreeSineHilbertSchmidt.gammaMultiplier_eq_digamma\` (**NOT yet an
-existing Lean constant**), with explicit real \`t\`, Mathlib digamma
+`OddThreeSineHilbertSchmidt.gammaMultiplier_eq_digamma` (**NOT yet an
+existing Lean constant**), with explicit real `t`, Mathlib digamma
 domains, original source normalization and no RH hypothesis. For
 nonreal primitive characters, a separate phase/dual-character proof is
 needed; the real cosine weights here cannot simply be copied.
 
 ### Why a simpler trace bound is not the same as the Hilbert–Schmidt proof
 
-For the positive deficit operator \`B\` of §11, its exact trace-class
+For the positive deficit operator `B` of §11, its exact trace-class
 expression (when the certified compact deficit support holds) is
 
-\`\`\`text
+```text
 tr B = (2/π) ∫_0^∞ d(t) ∫_0^1 sin(tu)^2 du dt
      = (1/π) ∫_0^∞ d(t) [1-sinc(2t)] dt.
-\`\`\`
+```
 
 This follows from Tonelli and the rank-one trace; it is **not** the
 Hilbert–Schmidt norm. A separate SciPy complex-digamma / Simpson
-exploratory mesh on \`[0,256]\` gave \`tr B≈1.9422\` (NOT an interval
-certificate). Thus the simple sufficient route \`tr B<1\` is
+exploratory mesh on `[0,256]` gave `tr B≈1.9422` (NOT an interval
+certificate). Thus the simple sufficient route `tr B<1` is
 empirically implausible and must **not** be substituted for the
 existing cross-frequency Hilbert–Schmidt estimate. The trace identity
-itself is exact; no rigorous lower bound \`tr B>1\` is asserted here.
+itself is exact; no rigorous lower bound `tr B>1` is asserted here.
 
 ### Quantified integer-checker reconstruction and margins
 
-A separately reconstructed Python 3 exact-integer/\`Fraction\` audit of
-the original HS#2 \`6886476754\` algorithm (not byte-identical source)
+A separately reconstructed Python 3 exact-integer/`Fraction` audit of
+the original HS#2 `6886476754` algorithm (not byte-identical source)
 repeated **27** checks on the Machin/log/sqrt bounds, exact Taylor
 remainders, recurrence-roundoff budgets, signed lag/weight budget, tail,
 all 32768 frequency cells and every retained sinc pair. It obtained:
 
-\`\`\`text
+```text
 scale M = 1000000000000; cells per unit = 128; cutoff = 256
 tail_m_lower_scaled = 1214817257836 / M
 positive price cells = 1381; last index = 20275
@@ -924,11 +924,11 @@ HS^2 integer upper =
   124086931321930434849361507294029572022081586296979829 /
   161703598507366392702253809664000000000000000000000000
 ≈ 0.76737272681212265.
-\`\`\`
+```
 
-The exact integer bound lies below \`47961/62500=(219/250)^2\`
-by only approximately \`3.27319×10⁻⁶\`, whereas its distance below
-\`81/100=(9/10)^2\` is approximately \`0.0426273\`. The latter is the
+The exact integer bound lies below `47961/62500=(219/250)^2`
+by only approximately `3.27319×10⁻⁶`, whereas its distance below
+`81/100=(9/10)^2` is approximately `0.0426273`. The latter is the
 more robust initial formal/independent-review target. The source-level
 proof obligations are still the *universal correctness* of integer
 brackets, full-cell bounds, the gamma lower tail, the original q3
@@ -938,18 +938,18 @@ itself a proof of those mathematical assertions.
 
 For a cleaner signed-prime budget, the actual <212/M Taylor/period
 error and <25601/M lag/phase-roundoff imply a cosine error
-<25813/M. If \`W=(1/2,35/100,73/100,74/100)\` are the actual native
+<25813/M. If `W=(1/2,35/100,73/100,74/100)` are the actual native
 absolute-weight majorants, the four terms and their four integer
 floors have aggregate error
 
-\`\`\`text
+```text
 < [2*(4*100 + (58/25)*25813) + 4] / M
  = (3014408/25) / M
  = 0.00000012057632 < 0.000001.
-\`\`\`
+```
 
 This also explicitly repairs the 52403/52404 intermediate-bound
-ambiguity in §11. The checker’s fixed \`10^-6\` reserve is not spent
+ambiguity in §11. The checker’s fixed `10^-6` reserve is not spent
 twice. Positive/negative coefficient **signs** are part of the source
 binding and must be authenticated against the actual Lean character
 and von Mangoldt definitions; the original checker’s absolute-weight
@@ -962,10 +962,10 @@ Future formal extraction must reject sign-flipped source candidates
 Even if an independent analytic review accepts the written q3
 radius-one Hilbert–Schmidt proof, and a fresh Lean kernel + transitive
 axiom check later verifies it, this closes at most the ORIGINAL
-\`PrimitiveStageLower\` for the specified conductor-three/parity-one
-\`j=0\` class. \`DirichletStageChain.dirichletGRH_of_source_chains\`
-has explicit inputs \`hRH\`, \`PrimitiveNegativeWitness\` and the
-all-character \`SmallConductorStages\`: that theorem cannot by itself
+`PrimitiveStageLower` for the specified conductor-three/parity-one
+`j=0` class. `DirichletStageChain.dirichletGRH_of_source_chains`
+has explicit inputs `hRH`, `PrimitiveNegativeWitness` and the
+all-character `SmallConductorStages`: that theorem cannot by itself
 supply its **own** RH hypothesis or the completed pole-inclusive
 negative-test bridge. The full conductor-one zeta and broader primitive
 family, all support radii, complete test-domain coverage and source
