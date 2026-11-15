@@ -3,9 +3,7 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors. Development provenance: AI-assisted.
 
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Independent analytical review: NOT_RUN.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddContinuousPlancherel
 import Mathlib.Tactic
@@ -27,10 +25,8 @@ The second proves integrability of the sine square as well as the cosine
 product, so linearity of the integrals is legitimate. The last theorem
 returns pointwise to the original, untruncated physical gamma density.
 
-This module does NOT interchange the gamma and sine integrals. Tonelli,
-the full infinite gamma multiplier, the complete operator certificate,
-the original stage lower sign, conductor-one zeta and RH/GRH remain open.
-No compilation or kernel evidence is claimed for this new source.
+The pointwise density identity supplies the inner integral for the
+full gamma interchange in WeilOddGammaSineReturn.
 
 Lean v4.34.1, mathlib d13f23b723b8a846827a245b89c10fc7d3f11612.
 Source references: WeilOddContinuousPlancherel; WeilGammaThreeBandFloor
@@ -46,7 +42,7 @@ open scoped BigOperators ComplexConjugate InnerProductSpace
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddShiftEnergySine
 
-open SourcePrimeCorrelation OddContinuousSine DirichletStageChain
+open SourcePrimeCorrelation OddContinuousSine DirichletStageChain OddRootProjection
 open GRWTSK.Analysis.RealAnalysis.Integration.IntegralFourierInvMulEq.Variantb1b3fc81ea79616750c2877dfe851642d25dce9c9d30da4206846df7a18e0650.FourierL1L2BridgeScratch
 
 /-- The original translated whole-line energy, with no change of form,
@@ -85,11 +81,13 @@ theorem physical_shiftEnergy_eq_two_energy_sub_two_re_correlation
     _ = (∫ t : ℝ, ‖g (t + r)‖ ^ 2) +
           (∫ t : ℝ, ‖g t‖ ^ 2) -
           2 * (∫ t : ℝ, (conj (g t) * g (t + r)).re) := by
-          rw [integral_sub (hshift.add hsq) (hreal.const_mul 2),
-            integral_add hshift hsq, integral_const_mul]
+          have hi := integral_sub (hshift.add hsq) (hreal.const_mul 2)
+          simpa only [Pi.add_apply, integral_add hshift hsq, integral_const_mul] using hi
     _ = 2 * energy g - 2 * (correlation g r).re := by
+          have hre := integral_re hc
+          simp only [RCLike.re_to_complex] at hre
           rw [integral_add_right_eq_self
-            (fun t : ℝ => ‖g t‖ ^ 2) r, integral_re hc]
+            (fun t : ℝ => ‖g t‖ ^ 2) r, hre]
           unfold energy correlation
           ring
 
@@ -117,7 +115,7 @@ private theorem inverseFourier_norm_sq_local {T : ℝ} (hT : 0 ≤ T) {f : ℝ �
 
 /-- An actual integrability supplier for linearity in the original
 continuous Plancherel formulas; no totalized non-integrable integral. -/
-private theorem halfSineMoment_sq_integrable
+theorem halfSineMoment_sq_integrable
     {T : ℝ} (hT : 0 ≤ T) {f : ℝ → ℝ}
     (hf : Continuous f) (hodd : Function.Odd f)
     (hsupport : ∀ t, t ∉ Icc (-T) T → f t = 0)
@@ -155,6 +153,15 @@ private theorem halfSineMoment_sq_integrable
     rw [hkernel]
     ring)
 
+/-- A bounded cosine factor preserves the integrability of a real density. -/
+theorem integrable_cosine_mul {k : ℝ → ℝ} (hk : Integrable k) (r : ℝ) :
+    Integrable (fun ξ : ℝ => Real.cos (r * ξ) * k ξ) := by
+  have hc : Continuous (fun ξ : ℝ => Real.cos (r * ξ)) := by fun_prop
+  refine hk.mono (hc.aestronglyMeasurable.mul hk.aestronglyMeasurable) ?_
+  exact Filter.Eventually.of_forall (fun ξ => by
+    rw [norm_mul, Real.norm_eq_abs (Real.cos (r * ξ))]
+    exact mul_le_of_le_one_left (norm_nonneg _) (Real.abs_cos_le_one _))
+
 /-- Original shift energy on the entire real odd supported L2 class,
 with the true angular-frequency factor 8/pi and valid integral linearity. -/
 theorem shiftEnergy_eq_halfSine_integral
@@ -168,20 +175,7 @@ theorem shiftEnergy_eq_halfSine_integral
   let k : ℝ → ℝ := fun ξ => halfSineMoment T f ξ ^ 2
   have hk : Integrable k :=
     halfSineMoment_sq_integrable hT hf hodd hsupport hf2
-  have hcont : Continuous (fun ξ : ℝ => Real.cos (r * ξ)) := by fun_prop
-  have hmeas : AEStronglyMeasurable
-      (fun ξ : ℝ => Real.cos (r * ξ) * k ξ) :=
-    hcont.aestronglyMeasurable.mul hk.aestronglyMeasurable
-  have hcos : Integrable (fun ξ : ℝ => Real.cos (r * ξ) * k ξ) := by
-    apply hk.mono' hmeas
-    filter_upwards [] with ξ
-    calc
-      ‖Real.cos (r * ξ) * k ξ‖ =
-          ‖Real.cos (r * ξ)‖ * ‖k ξ‖ := norm_mul _ _
-      _ = |Real.cos (r * ξ)| * ‖k ξ‖ := by rw [Real.norm_eq_abs]
-      _ ≤ 1 * ‖k ξ‖ :=
-          mul_le_mul_of_nonneg_right (abs_cos_le_one _) (norm_nonneg _)
-      _ = ‖k ξ‖ := one_mul _
+  have hcos := integrable_cosine_mul hk r
   have hE : energy (fun t => (f t : ℂ)) =
       (4 / Real.pi) * ∫ ξ in Ioi (0 : ℝ), k ξ := by
     simpa only [k] using
