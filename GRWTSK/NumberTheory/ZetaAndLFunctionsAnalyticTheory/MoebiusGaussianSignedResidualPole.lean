@@ -273,21 +273,16 @@ theorem residual_weightedSquare_le_factorial (s : ℝ) {p : ℕ} {σ A C : ℝ}
     weightedSquare (residualWave s) σ ≤ A * (p.factorial : ℝ) / σ ^ p + C :=
   weightedSquare_le_factorial (residualWave_continuous s) hσ hE
 
-/-- If a polynomial envelope bounds the exact residual energy, a nonreal
-critical-line pole forces its leading envelope coefficient to be large. -/
-theorem poleCoefficient_sq_bound_of_residual_envelope {s : ℝ} (hs : 0 < s)
+/-- A polynomial envelope makes the exact signed residual transform
+holomorphic on the right half-plane and exposes its horizontal Laurent limit. -/
+theorem tendsto_scaled_residualLaplace_of_residual_envelope {s : ℝ} (hs : 0 < s)
     (ρ : ZeroPoint) (hline : ρ.val.re = 1 / 2) (hγ : ρ.val.im ≠ 0)
     {g : ℂ → ℂ} (hg : AnalyticAt ℂ g ρ.val) (hgn : g ρ.val ≠ 0)
     (hfactor : ∀ᶠ w in 𝓝 ρ.val, riemannZeta w = (w - ρ.val) ^ multiplicity ρ * g w)
-    {A C : ℝ}
-    (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ A * T ^ (2 * multiplicity ρ - 1) + C) :
-    2 * ‖poleCoefficient ρ.val g‖ ^ 2 ≤ A * (((2 * multiplicity ρ - 1).factorial : ℝ)) := by
+    {p : ℕ} {A C : ℝ} (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ A * T ^ p + C) :
+    Tendsto (fun σ : ℝ => (σ : ℂ) ^ multiplicity ρ * residualLaplace s (rightApproach ρ.val σ))
+      (𝓝[>] 0) (𝓝 (poleCoefficient ρ.val g)) := by
   let H (z : ℂ) := (heatedLimit s : ℂ) / z + heatedCorrection s z
-  let c := poleCoefficient ρ.val g
-  let d := (starRingEnd ℂ) c
-  let m := multiplicity ρ
-  let p := 2 * m - 1
-  have hm : 0 < m := multiplicity_pos ρ
   have hf := residualWave_continuous s
   have hi {z : ℂ} (hz : 0 < z.re) :=
     signedLaplace_integrable hf hz (weightedSquare_integrable hf hz hE)
@@ -308,8 +303,27 @@ theorem poleCoefficient_sq_bound_of_residual_envelope {s : ℝ} (hs : 0 < s)
         1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2)) := by
     rw [residualLaplace_initial hs hz]
     exact sub_add_cancel _ _
-  have hlim := tendsto_scaled_of_pickup_pole ρ hline hγ hg hgn hfactor
+  exact tendsto_scaled_of_pickup_pole ρ hline hγ hg hgn hfactor
     (hL.add hHd) hinit hHc
+
+/-- If a polynomial envelope bounds the exact residual energy, a nonreal
+critical-line pole forces its leading envelope coefficient to be large. -/
+theorem poleCoefficient_sq_bound_of_residual_envelope {s : ℝ} (hs : 0 < s)
+    (ρ : ZeroPoint) (hline : ρ.val.re = 1 / 2) (hγ : ρ.val.im ≠ 0)
+    {g : ℂ → ℂ} (hg : AnalyticAt ℂ g ρ.val) (hgn : g ρ.val ≠ 0)
+    (hfactor : ∀ᶠ w in 𝓝 ρ.val, riemannZeta w = (w - ρ.val) ^ multiplicity ρ * g w)
+    {A C : ℝ}
+    (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ A * T ^ (2 * multiplicity ρ - 1) + C) :
+    2 * ‖poleCoefficient ρ.val g‖ ^ 2 ≤ A * (((2 * multiplicity ρ - 1).factorial : ℝ)) := by
+  let c := poleCoefficient ρ.val g
+  let d := (starRingEnd ℂ) c
+  let m := multiplicity ρ
+  let p := 2 * m - 1
+  have hm : 0 < m := multiplicity_pos ρ
+  have hf := residualWave_continuous s
+  have hi {z : ℂ} (hz : 0 < z.re) :=
+    signedLaplace_integrable hf hz (weightedSquare_integrable hf hz hE)
+  have hlim := tendsto_scaled_residualLaplace_of_residual_envelope hs ρ hline hγ hg hgn hfactor hE
   change 2 * ‖c‖ ^ 2 ≤ A * (p.factorial : ℝ)
   apply coefficient_bound_of_rotated_estimates hm (poleCoefficient_ne_zero hline hγ hgn)
     hγ A C hlim
@@ -462,6 +476,26 @@ theorem poleCoefficient_eq_zetaPoleCoefficient (ρ : ZeroPoint)
     ring
   rw [hD, div_eq_mul_inv F (F * D), mul_inv_rev F D,
     mul_left_comm F, mul_inv_cancel₀ hfac, mul_one]
+
+/-- The exact horizontal residual limit with the Laurent coefficient
+normalized by the derivative of zeta at the given critical-line zero. -/
+theorem tendsto_scaled_residualLaplace_of_criticalZero {s : ℝ} (hs : 0 < s)
+    (ρ : ZeroPoint) (hline : ρ.val.re = 1 / 2) (hγ : ρ.val.im ≠ 0)
+    {p : ℕ} {A C : ℝ} (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ A * T ^ p + C) :
+    Tendsto (fun σ : ℝ => (σ : ℂ) ^ multiplicity ρ *
+      residualLaplace s ((σ : ℂ) + (ρ.val.im : ℂ) * Complex.I))
+      (𝓝[>] 0) (𝓝 (zetaPoleCoefficient ρ)) := by
+  obtain ⟨g, hg, hgn, hf⟩ := multiplicity_factorization ρ
+  have hfactor : ∀ᶠ w in 𝓝 ρ.val, riemannZeta w = (w - ρ.val) ^ multiplicity ρ * g w :=
+    hf.mono fun _ h => by simpa only [smul_eq_mul] using h
+  have harg (σ : ℝ) : rightApproach ρ.val σ = (σ : ℂ) + (ρ.val.im : ℂ) * Complex.I := by
+    apply Complex.ext
+    · rw [rightApproach_re hline]
+      simp [Complex.mul_re]
+    · rw [rightApproach_im]
+      simp [Complex.mul_im]
+  simpa only [harg, poleCoefficient_eq_zetaPoleCoefficient ρ hg hfactor] using
+    tendsto_scaled_residualLaplace_of_residual_envelope hs ρ hline hγ hg hgn hfactor hE
 
 /-- The bound on fixed good scales, with the original derivative
 normalization and the actual multiplicity of the given zero. -/
