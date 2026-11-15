@@ -11662,3 +11662,375 @@ for u,v in zip(negative_nodes,negative_nodes[1:]):
 assert 2*F(3000)<c5-c1 and c5-c1+2*F(3000)<F(320000)
 print("PASS exact uniform scalar constants and both original-source spacing falsifiers")
 ~~~
+
+## An adaptive group at the nearby negative component
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks on the original signed source. Lean
+elaboration, kernel replay and transitive axiom audit are NOT_RUN.
+External independent review is UNASSESSED.
+
+Keep the original odd physical carrier and the actual four prior
+negative enclosures. Write $b=c_1+73.5=99653756.42983$. The original
+multiplier is positive at the endpoints of $b+[-0.06,0.16]$ and
+negative at $b$. Charge the actual clipped negative density in
+this enclosure and its reflection. It covers the whole connected
+negative component of $b$ and its reflection. Its fresh positive
+allocation uses $[b-2,b+2]$ and its reflection, disjoint from all
+four prior allocations.
+
+Both supports are in the original low-filter band and outside
+the original paid pair and deleted collar. The full Binet error
+at logarithm arguments enclosed by $47581162$ and $47581165$
+gives $17.6779<A<17.6780$. The exact $458$ signed prime-power
+terms and $|P_4''|<13504$ give the directed cell enclosures.
+Use width $0.02$ for lower positive and $0.005$ for upper negative
+cells, with the corresponding original filter bounds and the
+folded measure $d\nu/\pi$. The allocated positive mass is below
+$22$ and the negative upper mass is below $0.21$.
+
+Apply the same degree-$32$ Legendre reconstruction, with physical
+Gram at most $1.006D$ and uniform Taylor remainder $2.1\cdot10^{-7}$.
+The exact moment traces give positive cost $R<0.103$. The nominal
+physical Gram price and Taylor correction give total diagonal
+below $0.12$, with the correction less than $0.00003$ in squared
+normalized row norm as before. In particular the folded $L^2$
+norm of the residual coefficient total variation is at most
+$\sqrt{0.21}+\sqrt{22R}<2$. The two parity endpoint traces of
+$VMV^{\mathsf T}$ and scalar Taylor error $2\cdot 8^{33}/33!$
+give endpoint phase norms below $0.075$ on both signs. These
+are exact checks on the same rational reconstruction.
+
+### First-order center comparison
+
+Use the separated-group hypotheses in the preceding uniform
+estimate, including reflected spacing $\Delta$, support radius
+$R\le\Delta/4$, phase bound $D$ and folded $L^2$ total variation
+bound $T$. Now suppose $D_1$ bounds the folded $L^2$ norms,
+in each group and for both signs, of
+$$
+    \int(\nu-c_i)e^{\pm4i\nu}\,d\theta_{i,e}(\nu).
+$$
+Reflection preserves this bound with the center sign reflected.
+Here $R,D$ denote the geometric radius and endpoint phase bound,
+respectively.
+
+In the signed lift from the previous proof, write the denominator
+between different original groups as $d+z$ with $d$ the signed
+center difference and $z$ the difference of local detunings.
+Expand
+$$
+ \frac1{d+z}=\frac1d-\frac{z}{d^2}
+                   +\frac{z^2}{d^2(d+z)}.
+$$
+The constant part has bound $6.4D^2/\Delta$ before division by
+$\beta$. In the linear part, the two local detunings multiply
+one or the other of the modulated phase maps. Each resulting
+product costs at most $DD_1$ times the norm of the reciprocal-square
+matrix with same-group entries omitted. That norm is at most
+$4/\Delta^2$ by the absolute row and column sums, since the signed
+centers have at most two destinations per distance rank and
+$\sum_{k\ge1}k^{-2}\le2$. Averaging the two exponential phases in
+the sine numerator preserves the bound. For the remainder,
+$|z|\le2R$ and $|d+z|\ge |d|/2$ give the absolute kernel bound
+$8R^2/|d|^3$. Its block norms use the two $L^2$ variation bounds,
+and the signed-center reciprocal cubes have row and column sums
+at most $3/\Delta^3$. The exact intergroup residual Gram bound,
+including the compression and normalization, is therefore
+$$
+ \frac1\beta\left(
+ \frac{6.4D^2}{\Delta}+
+ \frac{8DD_1}{\Delta^2}+
+ \frac{24R^2T^2}{\Delta^3}\right).
+$$
+This extends to countably many groups by the same uniform finite
+principal form argument. Distinct positive resource coordinates
+still require the total allocated positive measure to be bounded
+by the actual positive density.
+
+### The local pair and its five-band return
+
+For the two individual rows at $a=c_1$ and $b$, each support lies
+within radius $2$ of its center. In the exact sine Gram use the
+same expansion separately at the difference and sum denominators.
+Put $\delta=b-a=73.5$, $\sigma=a+b>10^8$. In either denominator
+the local shift has modulus at most $4$. Let $D_a,D_b$ be the
+phase bounds, and $T_a,T_b$ the variation bounds. First phase
+moments about the individual centers are bounded by $2T_a,2T_b$.
+After division by $\beta>0.12$ the mixed norm is at most
+$$
+ \frac1{0.12}\left[
+ D_aD_b\left(\frac1\delta+\frac1\sigma\right)
+ +(2T_aD_b+2T_bD_a)\left(\frac1{\delta^2}+\frac1{\sigma^2}\right)
+ +16T_aT_b\left(\frac1{\delta^2(\delta-4)}
+                   +\frac1{\sigma^2(\sigma-4)}\right)
+ \right].
+$$
+The constant and linear terms use their phase factors and the
+last bound uses the total variations. The two positive coordinates
+are orthogonal. With $T_a=11$, $T_b=2$, $D_a=0.2$, $D_b=0.075$ the
+mixed norm is below $0.014$. Together with the larger diagonal
+bound $0.65$, the first/near pair is below $0.664$.
+
+Group this pair at $c_1+36.75$, retain the group centered at
+$c_2-1.95$ and keep $c_4$ as a separate group. Their reflected
+centers fit $\Delta=5200$ and all residual support lies within
+$R=39$. The common bounds $T=12$, $D=0.37$ follow by summing
+the individual squared bounds. For first moments about the new
+group centers, the first/near group has norm at most
+$$
+ \sqrt{(36.75\cdot0.2+2\cdot11)^2+
+             (36.75\cdot0.075+2\cdot2)^2}<34.
+$$
+For rows two and three the terms are $1.95\cdot0.2+2\cdot9$
+and $3.6\cdot0.31+0.35\cdot2.66$, whose squared sum is below
+$19^2$. The fourth first moment is at most $2\cdot4.2$.
+Use $D_1=34$. The first-order uniform cost is below $0.0018$.
+With the local maximum $0.953$ this gives the selected
+comparison below $0.955$.
+
+For these same five bands a direct comparison is sharper.
+Start with the proved first/fourth block below $0.724$ and
+attach the new near row. Its mixed norm to the fourth is
+below $4.2\cdot2(1/5200+1/10^8)/0.12$. The sum of its mixed
+norms to the two old rows is below $0.028$, so the low trio is
+below $0.752$. All difference and sum denominators between
+this trio and the second/third pair exceed $3.8\cdot10^9$.
+The total of these mixed norm bounds is below
+$2(11+2+4.2)(9+2.66)/(3.8\cdot10^9\cdot0.12)<10^{-6}$.
+The exact joint factorization therefore gives
+$$
+     \|\mathcal W_{\rm all5}S_\lambda^{-1}
+                \mathcal W_{\rm all5}^*\|<0.954.
+$$
+Here every original and new negative region is debited once.
+Thus $S_{\rm all5}=S_\lambda-\mathcal W_{\rm all5}^*
+\mathcal W_{\rm all5}\ge0.046S_\lambda$ and the unchanged
+arithmetic floor is equivalent to
+$\|N_{\rm out}S_{\rm all5}^{-1}N_{\rm out}^*\|\le1$ for the
+actual negative restriction outside all five enclosures.
+
+### Failure of blanket coverage at the enlarged radius
+
+The exact original signed guard also gives $-m(c_1+378)>5.35$,
+using all $458$ signed terms, the original low filter and mask
+exclusions and $17.67<A<17.69$. Together with the proved
+negative value at $c_1$, this falsifies an all-support cover
+with radius at most $39$ and gap at least $5200$. The two
+negative points need distinct groups because $378>78$, yet
+the group centers would be at distance at most $456$.
+Continuity gives this obstruction on neighborhoods, also
+for an almost-everywhere cover.
+
+The following guard takes this complete source as input, reuses
+its directed signed arithmetic and rational moment routines,
+and checks the new exact estimates and spacing failure.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+source = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+from decimal import Decimal, localcontext
+
+c1=F("99653682.92983")
+near=c1+F("73.5")
+assert near==F("99653756.42983") and near-2>c1+2
+assert F("5313.55")-F("73.5")-4>5200
+assert F(10**8,3)-1<near-2<near+2<10**8
+assert near-2>30000000 and near+2<35*10**24
+assert near+2<F("1852422754.1662946")-10
+assert near+2<F("3806849122.861433")-F(1,160)
+c2=scale(F(5085348195,4),(pi_lower,pi_upper))
+c3=add(c2,(F("-5.55"),F("-5.55")))
+for other,radius in ((c2,F(2)),(c3,F(".35"))):
+    assert other[0]-radius-(near+2)>F("3.8e9")
+    assert other[0]-radius+(near-2)>F("3.8e9")
+assert c3[1]+F(".35")<c2[0]-2
+
+Alo,Ahi=F("17.6779"),F("17.6780")
+lowarg,higharg=47581162,47581165
+assert lowarg<3*(near-2)/(2*pi_upper)
+assert 3*(near+2)/(2*pi_lower)<higharg
+y0=(near-2)/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((near+x,near+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+def estimate(x,h):
+    u,v=node(x),node(x+h)
+    err=second*h*h/8
+    return min(u[0],v[0])-err,max(u[1],v[1])+err
+
+wmin=1-F("3e-10")
+positive,negative=[],[]
+h=F(".02")
+for i in range(-100,100):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=(max(F(0),wmin*(Alo-hi)/pi_upper)*10**7//1)/F(10**7)
+    if density>0:positive.append((x,x+h,density))
+h=F(".005")
+for i in range(-12,32):
+    x=i*h
+    lo,hi=estimate(x,h)
+    density=-((-max(F(0),(hi-Alo)/pi_lower)*10**7)//1)/F(10**7)
+    if density>0:negative.append((x,x+h,density))
+assert node(F("-.06"))[1]<Alo and node(F(".16"))[1]<Alo
+assert node(F(0))[0]>Ahi
+pos_mass=sum((v-u)*w for u,v,w in positive)
+neg_mass=sum((v-u)*w for u,v,w in negative)
+assert pos_mass<22 and neg_mass<F(".21")
+
+print("PASS original low filter, first component endpoint signs and signed cells")
+
+# Reuse the preceding coefficient, solver proposal and exact trace routines.
+matrix_source=[g for g in blocks if g.startswith("from decimal import Decimal")
+               and "PASS exact majorant costs: J2 total <.52" in g]
+assert len(matrix_source)==1
+start="# Exact polynomial budget for the wider positive allocation."
+stop='assert (F(33)*(1+2*32**2)'
+code=matrix_source[0]
+assert code.count(start)==code.count(stop)==1
+exec(compile(code.split(start)[1].split(stop)[0].lstrip(), "source coefficient and moment matrix", "exec"))
+
+assert beta==F(".124997987")-F(".0001071")
+gram_factor=F("1.006")
+assert 33*(1+2*32**2)/(2*near)<(gram_factor-1)*min(D)
+err=F("2.1e-7")
+assert 8*(F(8)**33/factorial(33))**2<err**2
+assert 0<=R<F(".103") and S>=0
+nominal=gram_factor*S/beta
+assert nominal<1
+assert F(".459")**2>F(".21") and F("1.506")**2>22*F(".103")
+assert F(".35")**2<beta
+err_scaled=err*(F(".459")+F("1.506"))/F(".35")
+assert err_scaled<F("1e-5") and 2*err_scaled+err_scaled**2<F(".00003")
+assert R+nominal+F(".00003")<F(".12")
+
+assert F(".459")+F("1.506")<2
+print("PASS full near component diagonal below .12 and variation below 2")
+# Endpoint phase variation, with cos+isin signs split over k parity.
+phase_even = [sum(V[k][j] for k in range(0,n,2)) for j in range(n)]
+phase_odd = [sum(V[k][j] for k in range(1,n,2)) for j in range(n)]
+phase_polynomial_cost = sum(
+    M[i][j]*(phase_even[i]*phase_even[j] + phase_odd[i]*phase_odd[j])
+    for i in range(n) for j in range(n)
+)
+# The L2 aggregate total variation from the delta and reconstruction
+# bounds the aggregate of the scalar Taylor errors.
+phase_remainder = F(8)**33/factorial(33)*2
+assert phase_remainder < F("1e-6")
+assert phase_polynomial_cost >= 0
+candidate=F(".075")
+assert phase_remainder<candidate
+assert phase_polynomial_cost < (candidate-phase_remainder)**2
+print("PASS exact endpoint-phase bound below .075 for both signs")
+# Pairwise sine Gram via expansion through its linear denominator term.
+d=F("73.5")
+sigma=10**8
+r=4
+t1,tn=F(11),F(2)
+dp1,dpn=F(".2"),F(".075")
+assert c1+near-4>sigma
+assert d>r and sigma>r
+cost=(dp1*dpn*(1/d+F(1,sigma))
+      +(2*t1*dpn+2*tn*dp1)*(1/d**2+F(1,sigma**2))
+      +r*r*t1*tn*(1/(d**2*(d-r))+F(1,sigma**2*(sigma-r))))/F(".12")
+assert cost<F(".014")
+# Use the pair midpoint as center for the uniform group comparison.
+r_group,delta,T,D_group=39,F(5200),F(12),F(".37")
+assert d/2+2<r_group
+assert F("5313.55")-d/2>delta
+assert r_group<=delta/4
+assert t1**2+tn**2<T*T
+assert dp1**2+dpn**2<D_group**2
+assert max(F(".65"),F(".12"))+cost<F(".664")
+uniform=(F("6.4")*D_group**2/delta+16*r_group*T*T/delta**2)/F(".12")
+assert uniform<F(".03")
+assert max(F(".664"),F(".46"),F(".953"))+uniform<F(".983")
+print("PASS repaired selected groups comparison below .983")
+
+# First phase-moment bounds within the groups of the repaired family.
+assert (F("36.75")*dp1+2*t1)**2+(F("36.75")*dpn+2*tn)**2<34**2
+assert (F("1.95")*F(".2")+2*9)**2+(F("3.6")*F(".31")+F(".35")*F("2.66"))**2<19**2
+assert (2*F("4.2"))<34 and 2*11<34
+D1=F(34)
+uniform_sharper=(F("6.4")*D_group**2/delta+8*D_group*D1/delta**2+
+                 24*r_group**2*T**2/delta**3)/F(".12")
+assert uniform_sharper<F(".0018")
+assert max(F(".664"),F(".46"),F(".953"))+uniform_sharper<F(".955")
+print("PASS first-order repaired selected-group comparison below .955")
+
+
+# Exact geometry of the three adaptive groups.
+center_first=c1+F("36.75")
+center_fourth=c1+F("5313.55")
+center_23=add(c2,(F("-1.95"),F("-1.95")))
+assert center_fourth-center_first>delta
+assert center_23[0]-center_fourth>delta
+assert 2*center_first>delta
+assert F("3.99e9")<c2[0] and F("1e8")>center_fourth+2
+for edge in (F(-2),F(2),F("-5.90"),F("-5.20")):
+    assert abs(edge+F("1.95"))<4
+assert F(".124890887")>F(".12")
+assert 3*F(22,7)/2+F(5,3)<F(32,5)
+
+# The earlier direct first/fourth block plus the new near row.
+near_fourth=F("4.2")*2*(F(1,5200)+F(1,10**8))/F(".12")
+assert cost+near_fourth<F(".028")
+assert max(F(".724"),F(".12"))+cost+near_fourth<F(".752")
+to_high=2*(11+2+F("4.2"))*(9+F("2.66"))/(F("3.8e9")*F(".12"))
+assert to_high<F("1e-6")
+assert max(F(".752"),F(".953"))+to_high<F(".954")
+
+# A third original negative point falsifies blanket adaptive coverage.
+obstruction=c1+378
+assert obstruction==near+F("304.5")
+assert F(10**8,3)-1<obstruction<10**8
+assert 30000000<obstruction<35*10**24
+assert obstruction<F("1852422754.1662946")-10
+assert obstruction<F("3806849122.861433")-F(1,160)
+assert 47500000<3*obstruction/(2*pi_upper)
+assert 3*obstruction/(2*pi_lower)<47770701
+y=obstruction/2
+err_binet=F(5,9)/y+F(9,32)/y**2
+assert log_bounds(47500000)[0]-err_binet>F("17.67")
+assert log_bounds(47770701)[1]+err_binet<F("17.69")
+assert wmin*(node(F("304.5"))[0]-F("17.69"))>F("5.35")
+assert 2*r_group<378 and 378+2*r_group<delta
+print("PASS five-band direct comparison, refined uniform coupling and actual adaptive-cover obstruction")
+~~~
