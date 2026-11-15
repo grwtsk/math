@@ -5711,3 +5711,611 @@ assert aligned_floor > F('5.6')
 assert F('.123')*hi**2 < F('.005')
 print("PASS aligned quotient of H_+ on the actual collar direction >5.6")
 ```
+
+## Sharper approximation and the projected signed action
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep the original bounded physical carrier, the direction
+$g_*=FA^{-1}e$ and its physical approximation
+$g_0=-(I-P_0)T_Ph$ with $h=tu-\eta_c v_0$.
+The sharpened high-sector column estimates above imply
+$$
+ \|g_*-g_0\|<0.006081,\qquad
+ 0.1814<\|g_*\|<0.1947,\qquad
+ 0.00403<\|\Delta_7\|<0.00468 .
+$$
+On the same normalized direction $w_*$ they improve the
+fully corrected value to $\langle w_*,H_+w_*\rangle>15.8$.
+
+### Gamma and mask action using the full filter interval
+
+Write $G$ for the angular multiplier of $R-\widetilde R$,
+and $\rho$ for either carrier $\alpha,\omega$ in this paragraph.
+Use the original filter laws all the way from
+$H_{\rm safe}=10^8/3-1$ to $3.2\cdot10^{25}$ in absolute
+frequency. Exclude the actual paid pair. The remaining band
+is in $\mathcal D$, and $1-w\le3\cdot10^{-10}$ there.
+Indeed the high polynomial is at least $1-10^{-10}$ and
+the low polynomial is below $(1003/1000)10^{-40}$.
+[Original filter bounds](WeilConductorThreeRadiusFourMiddleReturn.lean#L128)
+[Low filter bound](WeilConductorThreeRadiusFourMiddleReturn.lean#L207)
+
+At either carrier the directed center-log bound is
+$|\log(3\rho/(2\pi))-A_0|<10^{-8}$.
+On the full band $|\nu|/2>1.65\cdot10^7$, and the Binet
+error for $A(\nu)-\log(3|\nu|/(2\pi))$ is below
+$3.4\cdot10^{-8}$. With the original mask price $300(3\cdot10^{-10})$,
+the multiplier difference there satisfies
+$$
+ |G(\nu)|<|\log(|\nu|/\rho)|+1.4\cdot10^{-7}.
+$$
+For each normalized sine or any of its compressed translates, use
+the literal endpoint bound $2/(1.997\,||\nu|-\rho|)$.
+The angular squared norm of the logarithmic contribution
+is bounded by
+$$
+ \frac{4}{1.997^2\pi\rho}
+    \int_0^\infty\frac{\log^2 x}{(x-1)^2}\,dx
+ <\frac{32}{1.997^2\pi\rho}.
+$$
+Inverting $x$ on $(1,\infty)$ gives twice the integral on $(0,1)$.
+Expand $(1-x)^{-2}=\sum_{n\ge1} n x^{n-1}$ there and use
+nonnegative integration and $\int_0^1 x^{n-1}\log^2x\,dx=2/n^3$.
+The result is $4\sum_{n\ge1}n^{-2}<8$ by the integral test.
+The squared-norm computation includes both angular signs.
+Since $\rho>3.8\cdot10^9$, the band action per sine
+or compressed translate is bounded by $2.60\cdot10^{-5}+1.4\cdot10^{-7}$.
+The constant term uses physical norm at most one for each of these pieces.
+
+On the excluded frequencies use $|G|<251$. Below $H_{\rm safe}$
+the square root of angular measure is below 3262 and the
+carrier distance is above $3.8\cdot10^9-3.34\cdot10^7$.
+The paid pair has square root of angular measure below 2.53,
+and the distance there is above $3.8\cdot10^9-1.86\cdot10^9$.
+Use $1.01/||\nu|-\rho|$ on both of these regions. Above
+$3.2\cdot10^{25}$ use the previously proved complete tails
+above $10^{25}$, below $3.6\cdot10^{-13}$ for the bare unit
+sines and $9\cdot10^{-12}$ for $g_0$.
+Including the coefficient sum $24.4$ for the low and band
+parts of $g_0$, the original full physical compression satisfies
+$$
+ \|G_{\rm phys}u\|,\ \|G_{\rm phys}y\|<0.000247,\qquad
+ \|G_{\rm phys}g_0\|<0.00601 .
+$$
+
+### Sharpened transfer through the five inverse terms
+
+Let $D_5$ be the sum of the five actual old positive inverse
+terms, each compressed to $G_2$, so that
+$C_2=\Pi_{G_2}(BI+R)|_{G_2}-D_5$.
+The high-tail argument gives $\|J_Yz\|,\|J_Yz_y\|<3.2\cdot10^{-8}$.
+Retain the previous actual global bounds for the output maps
+and pair each one with its corresponding local input column.
+On each of $z,z_y$ this gives
+$$
+ \|D_5 z\|,\ \|D_5z_y\|
+ <7.5(10)(0.00046)+3.705(25/2)(0.00045)+10^{-515}
+      +301(4)(3.2\cdot10^{-8})+303(5.2\cdot10^{-6})/12
+ <0.055511 .
+$$
+The third term is the full bound for the $D_0$ correction.
+All five inverses act on their actual physical spaces.
+
+Write $k=A^{-1}e=te-\eta_c v$ and let
+$\widetilde R=A_0I-T_P$. The coefficient sum of $k$ on the
+projected pair $z,z_y$ is below $0.10901$, and the same
+bound holds for $h$ on the raw pair $u,y$. The full
+gamma-mask action below bounds $R-\widetilde R$ on each raw
+sine by $0.000247$. Also $\|k-h\|<0.282d$ with $d=1.6\cdot10^{-8}$.
+Since $\Pi_H P_0=0$ and $\Pi_H Bk=0$, the difference satisfies
+$$
+ \|\Pi_H(g_*-g_0)\|
+ <0.10901(0.000247+0.055511)+300(0.282)d<0.00608.
+$$
+For the eliminated head of $g_0=(I-P_0)\widetilde R h$,
+use $\|\Pi_{\mathcal E}Ru\|,\|\Pi_{\mathcal E}Ry\|<0.00075$
+and the improved gamma-mask action. As in the first transfer,
+$\Pi_{\mathcal E}P_1=0$ and $\|P_1-P_0\|<26d$ give an error
+at most $26d(233)(0.103)$ from the raw span. Thus the eliminated
+piece is below $0.000119$. In the two actual pivot coordinates use
+$\|P_1g_0\|<26d(0.1886)$, since $P_0g_0=0$.
+Orthogonality of these three components gives the sharper
+$0.006081$ norm estimate. Apply the triangle and reverse triangle
+inequalities using $0.1875<\|g_0\|<0.1886$ to bound $\|g_*\|$.
+Then $0.1229<\sigma<0.123$ and the full transported error
+$0.000012$ give the sharper bounds on $\|\Delta_7\|$.
+
+### Direct and corrected values using the same sharper error
+
+Put $G_{\rm phys}=R-\widetilde R$. The exact bounds
+$\|G_{\rm phys}\|\le251$, $\|G_{\rm phys}g_0\|<0.00601$ and
+$|\langle g_0,G_{\rm phys}g_0\rangle|<0.00016$ still apply.
+With $d_g=0.006081$ the signed operator price is
+$57.7531d_g(2(0.1886)+d_g)$, and the gamma-mask form
+price is $0.00016+2(0.00601)d_g+251d_g^2$.
+The signed quotient of $g_0$ is below $-1.468$.
+From $T=(B+A_0)I-T_P+G_{\rm phys}$, the direct quotient on
+$g_*$ is therefore above $18.63$.
+
+In the actual low inverse bounds of the preceding section,
+use $0.00074+0.006081$ in the off-band and input difference
+terms. For the high sectors the actual tail of $g_*$ remains
+below $5.04\cdot10^{-5}$, and the low angular norm on each
+of the two actual high spaces is below $1.2\cdot10^{-11}$.
+Use the new $\|g_*\|$ upper bound there. For the five old
+square prices and the last two together, the previous true
+inverse norms and cross prices all apply. Dividing the former
+absolute price by the lower energy $0.1814^2$, charging
+$8.2/9.6$ for the joint two-coordinate price, and taking
+$H_+\ge C_4-0.000012I$ gives the stated $15.8$ bound.
+
+### Projection in the norm residual
+
+For any real $s$, put $D_s=T_P+sI$. Since
+$h\in\operatorname{ran}P_0$, $g_0\perp\operatorname{ran}P_0$
+and $T_P$ is self-adjoint, the exact relation is
+$$
+ \langle h,D_s g_0\rangle
+ =\langle (I-P_0)T_Ph,g_0\rangle=-\|g_0\|^2.
+$$
+Consequently $\|P_0D_sg_0\|>\,0.1875^2/0.103>0.3413$.
+The actual $\Pi_H$ kills this component. The projection
+must be accounted for in a comparison of norm residuals.
+
+Take $s=24-B-A_0$ and put $r=g_*-H_+g_*/24$.
+The original source identities give the exact decomposition
+$$
+\begin{split}
+ 24r={}&\Pi_H(I-P_0)D_sg_0
+      +\Pi_H[D_s(g_*-g_0)-G_{\rm phys}g_*+D_5g_*]\\
+     &+FA^{-1}F^*g_*-\Delta_7 g_*+0.000012g_*.
+\end{split}
+$$
+The first term is a projected physical signed action.
+The other terms require a bound on their combined action on
+the actual direction. The fully corrected Rayleigh value does
+not by itself bound this norm.
+
+### Exact rational guards for the sharpened transfer
+
+```python
+from fractions import Fraction as F
+
+pi_lower = F('3.14')
+rho_lower = F('3.8e9')
+coefs = F('24.4')
+norm_floor = F('1.997')
+Hsafe = F(10**8,3)-1
+assert F('3.3e7') < Hsafe < F('3.34e7')
+assert F('3.34e7') < 3262**2*pi_lower
+paid_upper = F('1.86e9')
+assert F(18524227541662946,10**7)+10 < paid_upper
+assert 20 < F('2.53')**2*pi_lower
+assert F(2,1)/norm_floor < F('1.01')
+unit_log = F('2.60e-5')
+# Both angular signs, sum n^(-2) bounded by 2.
+assert unit_log**2*norm_floor**2*pi_lower*rho_lower > 32
+
+binet = F(5,9)/F('1.65e7') + F(9,32)/F('1.65e7')**2
+assert binet < F('3.4e-8')
+remainder = F('1.4e-7')
+assert F('1e-8')+binet+300*F('3e-10') < remainder
+
+unit_low = F('1.01')*3262/(rho_lower-F('3.34e7'))
+unit_gap = F('1.01')*F('2.53')/(rho_lower-paid_upper)
+unit_high = F('3.6e-13')
+unit_action = unit_log+remainder+251*(unit_low+unit_gap+unit_high)
+proxy_action = coefs*(unit_log+remainder+251*(unit_low+unit_gap)) + 251*F('9e-12')
+assert unit_action < F('.000247')
+assert proxy_action < F('.00601')
+
+print("PASS full gamma-mask action below .000247 per carrier and .00601 on g0")
+
+d = F('1.6e-8')
+coefficient_sum = F('.10901')
+d0 = F('1e-515')
+inverse_action = (F('7.5')*10*F('4.6e-4')
+                  +F('3.705')*F(25,2)*F('4.5e-4')
+                  +d0+301*4*F('3.2e-8')
+                  +F(303,12)*F('5.2e-6'))
+assert inverse_action < F('.055511')
+
+h_error = coefficient_sum*(unit_action+inverse_action)+300*F('.282')*d
+head_error = coefficient_sum*(F('.00075')+unit_action)+26*d*233*F('.103')
+pivot_error = 26*d*F('.1886')
+error = F('.006081')
+assert h_error < F('.00608') and head_error < F('.000119')
+assert h_error**2+head_error**2+pivot_error**2 < error**2
+g_min, g_max = F('.1814'), F('.1947')
+assert F('.1875')-error > g_min and F('.1886')+error < g_max
+transport_error = F('.000012')
+assert F('.1229')*g_min**2-transport_error > F('.00403')
+assert F('.123')*g_max**2+transport_error < F('.00468')
+
+# Return through the exact signed quotient, then through all seven inverses.
+pi_lower = F('3.14')
+budget, gamma_center = F('.124997987'), F('21.3208029')
+signed_error = F('57.7531')*error*(2*F('.1886')+error)
+gamma_error = F('.00016')+2*proxy_action*error+251*error**2
+direct_cost = signed_error+gamma_error-F('1.468')*F('.1875')**2
+assert 0 < direct_cost
+assert budget+gamma_center-direct_cost/g_min**2 > F('18.63')
+raw_band = 300*6200*F('2.45e-12')*12800*F('.1886')
+assert F(5*10**8)/pi_lower < 12800**2
+off_and_error = F('.00074')+error
+price_p = raw_band+F('7.5')*off_and_error
+price_u = F(10,9)*raw_band+F('1.344')*off_and_error+F('1e-54')
+price_j = price_u+F(3,8)*price_p+F('1e-261')
+price_high = 300*(F('5.04e-5')+F('1.2e-11')*g_max)
+price_y = price_high+10*F('3e-6')*price_p+F(25,2)*F('3e-6')*price_j+d0
+price_v = (price_high+10*F('2.3e-11')*price_p+F(25,2)*F('7.2e-8')*price_j
+           +4*F('.0017')*price_y+d0)
+price_five = 10*price_p**2+F(25,2)*price_j**2+d0+4*price_y**2+price_v**2/12
+assert F('18.63')-price_five/g_min**2-F('8.2')/F('9.6')-transport_error > F('15.8')
+print("PASS true proxy error < .006081 and corrected aligned quotient > 15.8")
+
+# The exact direction in the two-dimensional span that must be removed.
+assert F('.1875')**2 > F('.3413')*F('.103')
+print("PASS raw signed action's P0 component has norm > .3413")
+```
+
+## Directed bound for the unprojected signed action
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic proof
+with exact rational checks. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+For $s_0=24-B-A_0$, the unprojected action on the same proxy satisfies
+$$
+ 0.7045<\|D_{s_0}g_0\|<0.7648 .
+$$
+It exceeds the unscaled target $24(0.028)=0.672$.
+The same obstruction applies even if the scalar is changed:
+$$
+ \inf_{s\in\mathbb R}\|(T_P+sI)g_0\|>0.674 .
+$$
+This result concerns the unprojected signed action of the bounded
+physical approximation. On the exact complement, the raw
+$P_0$ component in the preceding section vanishes.
+
+### Merged cells for the translated action
+
+Use the same two-carrier exponential form and reflected cells as
+for the signed quadratic value above. For this norm calculation,
+form the entire translated action first and square it afterwards.
+There are 916 signed translated rows at lags
+$\pm\log n$, each with weight $\log(p)\chi_3(n)/\sqrt n$,
+and the constant row $s_0g_0$. For each row use the exact endpoint
+key $(m,Q)$ for the value $4m+\log Q$.
+The positive or negative translation divides or multiplies $Q$
+by $n$, respectively. Reduce each resulting rational key exactly.
+All decisions to include a cut strictly inside $[-4,4]$,
+initialize the coefficient at the left endpoint, or discard a
+cut at the right endpoint use the exact keys and directed comparisons.
+There are 459 exact left-endpoint ties in these rows.
+An inexact comparison at that endpoint can skip or double the
+first update of a translated row.
+
+The model uses rational midpoint values of $\Lambda,\eta_c$ and the
+two carriers. On each source cell take the midpoint of each of its four real
+coefficient intervals and round it to a $10^{16}$ grid.
+For each signed row enclose its weighted carrier rotations using
+the actual full intervals for the two carriers and $\log n$,
+which include the midpoint rotations. Freeze those four coefficients
+on the same grid, and round the four products that give the new
+weighted row coefficients back to the grid. While sweeping, keep
+the exact integer sum of active model coefficients. Each row
+replaces its old four integers by its new four integers at the
+appropriate cut. Between successive distinct cuts the action
+in the model is one two-carrier expression. This gives 212182
+cells, with ties combined and both frequency signs retained.
+
+For model coefficients $a,b$ in the complex exponential
+representation, the squared value has constant term
+$(|a|^2+|b|^2)/2$ and slow term
+$\operatorname{Re}(a\overline b\,e^{i(\alpha_m-\omega_m)x})$.
+Use the exact directed endpoint primitives at the rational
+midpoint difference. If $E_{\rm cell}=|a|^2+|b|^2$, the
+remaining fast terms cost at most $E_{\rm cell}/\omega_m$ on
+the cell. This follows by product to sum and the bound
+$2/|\rho|$ on the integral of a frequency $\rho$, since
+the three fast frequencies are at least $2\omega_m$ and
+$2|a||b|\le E_{\rm cell}$.
+The summed fast integral allowance is below $0.00001549$.
+The final squared norm interval for the finite model lies in
+$(0.53969,0.53973)$.
+
+### Transfer from the model and scalar optimization
+
+The total transfer uses the coefficient rounding error at each
+source cell, the two carrier errors and the weighted rotation
+errors. For the carrier term use
+$|e^{i\rho x}-e^{i\rho_m x}|\le 4|\rho-\rho_m|$ on the
+physical interval. Multiply the input model error by the original
+signed action bound $577531/10000+|s_0|$. For the rotations,
+charge the sum of the component errors of the weighted phases
+times the maximum sum of absolute model amplitudes. Each row
+also costs at most four grid units for its final coefficient
+rounding, and the physical norm bound from a pointwise error
+uses $\sqrt8<3$. These estimates retain the real signed
+operator throughout the transfer.
+
+To pass from midpoint $\Lambda$ to its full interval, use
+$\|(I-P_0)T_Pu\|<2.45$ as before. For the remaining prefactor
+use $\|q_\Lambda\|\le0.1886/\eta_{\rm lo}$,
+where $q_\Lambda=(I-P_0)T_P(v_0-\Lambda u)$ and $\eta_{\rm lo}$
+is the lower bound for $\eta_c$. Multiply these input changes
+by the same original action bound. The complete norm transfer
+is below $0.030101$ and the rational square-root guards give
+the stated actual action interval.
+
+For arbitrary real scalar let $D=D_{s_0}$. Completing the
+scalar square gives
+$$
+ \inf_{s\in\mathbb R}\|(T_P+sI)g_0\|^2
+  =\|Dg_0\|^2-\frac{|\langle g_0,Dg_0\rangle|^2}{\|g_0\|^2}.
+$$
+The exact earlier signed quotient and $s_0=2.554199113$ give
+$|\langle g_0,Dg_0\rangle|/\|g_0\|^2<1.0863$.
+Thus the right side is above
+$0.7045^2-(1.0863\cdot0.1886)^2>0.674^2$.
+### Projected action at the two parameter endpoints
+
+The actual projected action has the sharper bound
+$\|(I-P_0)D_{s_0}g_0\|<0.6688$.
+To obtain it, take $\eta_c$ at its upper endpoint and evaluate
+the same model separately at the two endpoints of $\Lambda$.
+Each endpoint model keeps the original carrier and coefficient
+errors, and no $\Lambda$ or prefactor transfer is needed.
+The guards give unprojected norm below $0.75086$ at both endpoints.
+The previously proved proxy norm interval covers the whole
+independently varied $\eta_c,\Lambda$ box. In particular each
+endpoint input has $\|g_i\|>0.1875$ and
+$\|h_i\|<0.103$ by the upper bound for
+$\eta_c\sqrt{1+\Lambda^2}$.
+The plane identity gives $\|P_0D_{s_0}g_i\|>0.1875^2/0.103$.
+Pythagoras thus gives squared projected norm below
+$0.75086^2-(0.1875^2/0.103)^2$ using the actual directed
+upper endpoints in the guards. This is below $0.6688^2$
+at both endpoints. The norm of this linear action on the
+intermediate $\Lambda$ is bounded by convexity. Finally
+the true prefactor is at most the chosen upper endpoint.
+The actual $\Pi_H$ kills $P_0$ and is contractive, so the same
+$0.6688$ bounds the first term in the residual decomposition.
+
+The corrected residual on the actual $H$ remains open.
+A bound for that residual must include the combined action
+after projecting, retaining the exact inverse domains and full
+signed radius-four source. The original arithmetic tests retain
+their compact $C^2$ admissibility and gamma condition, and the
+global pole and source returns remain open.
+
+### Exact rational guards for the signed action
+
+Append this block to the original physical approximation
+checker and its listed dependencies. It uses the original
+carrier and signed translate intervals already present there.
+
+```python
+# Raw dispersion for the signed physical collar approximation.
+from math import gcd
+
+grid = 10**16
+origin = (0,0)
+left_boundary = (-1,1,1)
+right_boundary = (1,1,1)
+t0 = 24-budget-gamma_center
+alpha_fixed = sum(carrier)/2
+omega_fixed = sum(neighbor)/2
+difference_fixed = (alpha_fixed-omega_fixed,)*2
+frequency_radius = max(carrier[1]-carrier[0],neighbor[1]-neighbor[0])/2
+
+
+def interval_on_grid(x):
+    return (x[0]*grid//1, -(-x[1]*grid//1))
+
+def frozen(x):
+    return round((x[0]+x[1])*grid/2)
+
+def freeze_error(x,v):
+    return max(abs(a-F(v,grid)) for a in x)
+
+def gadd(a,b):
+    return a[0]+b[0],a[1]+b[1]
+
+def gsub(a,b):
+    return a[0]-b[1],a[1]-b[0]
+
+def gneg(a):
+    return -a[1],-a[0]
+
+def gmul(a,b):
+    p=(a[0]*b[0],a[0]*b[1],a[1]*b[0],a[1]*b[1])
+    return min(p)//grid, -(-max(p)//grid)
+
+def gpoint(v):
+    return (v,v)
+
+def phase_grid(x):
+    return tuple(map(interval_on_grid,phase_trig(x)))
+
+def real_point_cos_sin(log_n, frequency):
+    return phase_trig(multiply(frequency,log_n))
+
+cut_rows=[]
+shift_rows=[]
+rot_error=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    n=p
+    log_p=log_bounds(p)
+    while n<=2980:
+        log_n=log_bounds(n)
+        if log_n[1]<4:
+            cut_rows.append(((1,1,n),subtract(four,log_n)))
+        else:
+            assert 4<log_n[0]
+            cut_rows.append(((-1,n,1),subtract(log_n,four)))
+        root=isqrt(n*source_grid**2)
+        half_weight=scale(1 if n%3==1 else -1,(log_p[0]*source_grid/(root+1),log_p[1]*source_grid/root))
+        w_phases=tuple(multiply(half_weight,pair) for f0 in (carrier,neighbor)
+                       for pair in real_point_cos_sin(log_n,f0))
+        frozen_phase=tuple(frozen(x) for x in w_phases)
+        errors=[freeze_error(x,v) for x,v in zip(w_phases,frozen_phase)]
+        rot_error+=2*max(errors[0]+errors[1],errors[2]+errors[3])
+        c_d,s_d=phase_grid(multiply(difference_fixed,log_n))
+        lag=interval_on_grid(log_n)
+        shift_rows.append((n,lag,c_d,s_d,frozen_phase))
+        a,b,c,d=frozen_phase
+        shift_rows.append((-n,gneg(lag),c_d,gneg(s_d),(a,-b,c,-d)))
+        n*=p
+assert len(cut_rows)==458 and len(shift_rows)==916
+shift_rows.append((0,origin,gpoint(grid),origin,(frozen((t0,t0)),0,frozen((t0,t0)),0)))
+assert F(shift_rows[-1][-1][0],grid)==t0
+cut_rows.sort(key=lambda row:row[1][0])
+assert [value for _,value in cut_rows]==[event[0] for event in shift_events]
+positive=[((0,1,1),zero)]+cut_rows+[(right_boundary,four)]
+positive=[(key,interval_on_grid(value),*phase_grid(multiply(difference_fixed,value))) for key,value in positive]
+points=[((-k,b,a),gneg(x),c,gneg(s)) for ((k,a,b),x,c,s) in reversed(positive[1:])]+positive
+assert len(points)==919
+inv=interval_on_grid(divide_positive((1,1),difference_fixed))
+
+def frozen_amplitudes(lam,eta):
+    col_y=divide_positive((1,1),norm_orth)
+    col_u=subtract(scale(-1,multiply(gram_overlap,col_y)),(lam,lam))
+    rem_u=subtract(prime_mixed_orth,scale(lam,mean))
+    rem_v=subtract(prime_diag_orth,scale(lam,prime_mixed_orth))
+    coeff_u=divide_positive(col_u,s_norm)
+    coeff_y=scale(F(1,2),col_y)
+    off_u=divide_positive(subtract(multiply(multiply(gram_overlap,col_y),rem_v),rem_u),s_norm)
+    off_y=scale(F(-1,2),multiply(col_y,rem_v))
+    out=[]
+    epsilon=F(0)
+    for _,_,_,state in cell_data:
+        a=add(multiply(coeff_u,state[0]),off_u)
+        b=multiply(coeff_u,state[1])
+        c=add(multiply(coeff_y,state[2]),off_y)
+        d=multiply(coeff_y,state[3])
+        interval=tuple(scale(eta,x) for x in (b,scale(-1,a),d,scale(-1,c)))
+        values=tuple(frozen(x) for x in interval)
+        epsilon=max(epsilon,sum(freeze_error(x,v) for x,v in zip(interval,values)))
+        out.append(values)
+    actual_amplitude_max=max(sum(map(abs,row)) for row in out)
+    assert actual_amplitude_max<=F(".35")*grid
+    return [(-a,b,-c,d) for a,b,c,d in reversed(out)]+out+[(0,0,0,0)],epsilon,F(actual_amplitude_max,grid)
+
+def rotate_coeff(amplitude,weighted_rotation):
+    a,b,c,d=amplitude
+    e,f,g,h=weighted_rotation
+    return (a*e-b*f)//grid,(a*f+b*e)//grid,(c*g-d*h)//grid,(c*h+d*g)//grid
+
+def sorted_events(amplitudes):
+    result=[]
+    initial=[0,0,0,0]
+    ties=0
+    for n,lag,lag_c,lag_s,weighted_rotation in shift_rows:
+        previous=(0,0,0,0)
+        first=0
+        initial_weighted=(0,0,0,0)
+        for j,((k,num,den),x,cosine,sine) in enumerate(points):
+            key_a= num*max(1,-n)
+            key_b= den*max(1,n)
+            bounds=gsub(x,lag)
+            if bounds[1] < -4*grid or (k==-1 and key_a==key_b):
+                initial_weighted=rotate_coeff(amplitudes[j],weighted_rotation)
+                first=j+1
+                if k==-1 and key_a==key_b: ties+=1
+                continue
+            assert bounds[0]>-4*grid
+            break
+        initial=[x+y for x,y in zip(initial,initial_weighted)]
+        previous=initial_weighted
+        for j in range(first,len(points)):
+            (k,num,den),x,cosine,sine=points[j]
+            key_a=num*max(1,-n)
+            key_b=den*max(1,n)
+            bounds=gsub(x,lag)
+            if bounds[0]>4*grid or (k==1 and key_a==key_b):
+                break
+            assert -4*grid<bounds[0]<=bounds[1]<4*grid
+            q=gcd(key_a,key_b)
+            key=(k,key_a//q,key_b//q)
+            c=gadd(gmul(cosine,lag_c),gmul(sine,lag_s))
+            s=gsub(gmul(sine,lag_c),gmul(cosine,lag_s))
+            next_weighted=rotate_coeff(amplitudes[j],weighted_rotation)
+            result.append((bounds,key,gmul(inv,s),gmul(inv,c),tuple(a-b for a,b in zip(next_weighted,previous))))
+            previous=next_weighted
+    result.sort(key=lambda rec:(rec[0][0],rec[1]))
+    key,time,co,si=points[-1]
+    result.append((time,key,gmul(inv,si),gmul(inv,co),(0,0,0,0)))
+    return result,initial,ties
+
+def energy_of_model(lam,eta):
+    amplitudes,coeff_error,amp_max=frozen_amplitudes(lam,eta)
+    events,current,left_ties=sorted_events(amplitudes)
+    key_old,x_old,c,s=points[0]
+    sin_old,cos_old=gmul(inv,s),gmul(inv,c)
+    energy=origin
+    fast_bound=0
+    count=0
+    for x,key,sin,cos,jumps in events:
+        if key!=key_old:
+            assert x_old[1]<x[0], (x_old,x,key_old,key)
+            a,b,c,d=current
+            mass=a*a+b*b+c*c+d*d
+            halfmass=(mass//(2*grid),-(-mass//(2*grid)))
+            re,im=a*c+b*d,b*c-a*d
+            re,im=(re//grid,-(-re//grid)),(im//grid,-(-im//grid))
+            term=gadd(gmul(halfmass,gsub(x,x_old)),
+                      gadd(gmul(re,gsub(sin,sin_old)),gmul(im,gsub(cos,cos_old))))
+            energy=gadd(energy,term)
+            fast_bound+=-(-mass//grid)
+            count+=1
+            key_old,x_old,sin_old,cos_old=key,x,sin,cos
+        current=[a+b for a,b in zip(current,jumps)]
+    fast=F(fast_bound,grid*3806000000)
+    assert F(3806000000)<neighbor[0]
+    approximation_error=3*(amp_max*rot_error + F(4*len(shift_rows),grid))
+    energy_interval=F(energy[0],grid)-fast,F(energy[1],grid)+fast
+    direction_error=(F(577531,10000)+abs(t0))*3*(coeff_error+4*amp_max*frequency_radius)+approximation_error
+    return energy_interval,direction_error,count,len(events),left_ties,fast
+
+eta_mid=sum(proxy_eta)/2
+actual_transfer=eta_mid*F('2.45')*proxy_radius+max(abs(eta_mid-v) for v in proxy_eta)*proxy_norm[1]/proxy_eta[0]
+energy,model_error,cells,events,left_ties,fast=energy_of_model(proxy_mid,eta_mid)
+l2_error=model_error+(F(577531,10000)+abs(t0))*actual_transfer
+assert (cells,events,left_ties)==(212182,215512,459)
+assert F(".53969")<energy[0]<=energy[1]<F(".53973")
+assert fast<F(".00001549") and l2_error<F(".030101")
+lo,hi=sqrt_interval(energy)
+assert F(".7045")<lo-l2_error<=hi+l2_error<F(".7648")
+assert 24*F(".028")<F(".7045")
+assert F(".1875")**2/F(".103")>F(".3413")
+print("PASS raw signed dispersion in (.7045,.7648), with 459 exact left-boundary ties")
+
+# Optimize over every real scalar addition, using the signed quotient.
+assert F('-2.651')+t0 > -F('1.0863')
+assert F('-1.468')+t0 < F('1.0863')
+assert F('.7045')**2-(F('1.0863')*F('.1886'))**2 > F('.674')**2
+assert F('.674') > 24*F('.028')
+assert F('.7648')**2-F('.3413')**2 < F('.685')**2
+print("PASS every raw scalar shift exceeds .674 and projected action at s is below .685")
+
+# At the two Lambda endpoints there is no Lambda transfer charge.
+assert proxy_norm[0] > F('.1875')
+assert proxy_eta[1]**2*(proxy_lambda[1]**2+1) < F('.103')**2
+plane_lower = F('.1875')**2/F('.103')
+largest_raw = F(0)
+for lam in proxy_lambda:
+    ep_energy, ep_error, ep_cells, ep_events, ep_ties, ep_fast = energy_of_model(lam, proxy_eta[1])
+    assert (ep_cells, ep_events, ep_ties) == (212182, 215512, 459)
+    assert ep_energy[0] > 0
+    largest_raw = max(largest_raw, sqrt_interval(ep_energy)[1]+ep_error)
+assert largest_raw < F('.75086')
+assert largest_raw**2-plane_lower**2 < F('.6688')**2
+print("PASS projected signed dispersion <.6688 from the exact endpoints")
+```
