@@ -1046,3 +1046,102 @@ Even if the single q=3,j=0 original source stage is independently
 accepted, every other conductor/window, both zeta pole orientations,
 the genuine `PrimitiveNegativeWitness` and unconditional RH and
 primitive Dirichlet GRH including conductor-one zeta remain **UNPROVED**.
+
+## 14. Remove the prime-invariant interval from the signed overlap test
+
+**2026-11-14, grwtsk contributors, AI-assisted.** Written analytic
+reduction of (12). Lean elaboration, fresh kernel replay and transitive
+axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Keep every original admissible real odd C² test f at radius one
+for the primitive nonprincipal parity-one character modulo 3.
+Let h=f|[0,1] and keep all native w_n, namely (−p,0,a,−b,0,c)
+in integer order 2 through 7. The signed residual in (12) is
+J(h)=I(h)+Σ_n w_n R_(log n)(h)+2∫₀¹ α(x)h(x)²dx,
+with the five-region α in §8 and I(h)=∫₀² K(s)R_s(h)ds.
+The actual spatial boundary terms of the original arithmetic
+reassembly remain in D of §8.
+
+**Exact continuous decomposition.** In the same-side and reflected
+terms of the positive-half overlap, substitute s=|x−y| and s=x+y,
+respectively. Symmetry absorbs the factor two in the first term
+into the integral over the full square. Thus on [0,1]²,
+
+```text
+I(h) = ∬ K(|x−y|)(h(x)−h(y))² + ∬ K(x+y)(h(x)+h(y))²
+     = ∬ κ(x,y)(h(x)−h(y))² + 4∫₀¹ U(x)h(x)²dx,
+κ(x,y) = K(|x−y|)−K(x+y),    U(x)=∫₀¹ K(x+y)dy.
+```
+
+The second equality uses the sum of the plus and minus squares.
+The kernel κ is nonnegative off the null diagonal and corner because
+K decreases. These rearrangements have finite terms: h is Lipschitz
+at the diagonal, and (x+y)⁻¹ is integrable on the square.
+
+Let r=log(2), G=(1−r,2r−1), and O=[0,1]\G. For A=G or O define
+J_A^int on h restricted to A by integrating the κ-difference on A²,
+the cost (4U+2α) on A, and each native signed atomic integral only
+on edges with both endpoints in A. Keep every original square and
+its factor in each term. The restrictions are used inside the
+integrals as they stand. No separate zero extension is used.
+
+All native nonzero atomic edges lie within G or within O. At r
+the same-side endpoints are in [0,1−r] and [r,1], both in O.
+The reflection x↔r−x preserves G. At log(n) for n=4,5,7 the
+two reflected endpoints are at least log(n)−1≥2r−1. Entries 3 and
+6 have zero weight. For u=h|G and v=h|O the exact split is
+
+```text
+J(h) = J_G^int(u) + J_O^int(v)
+       + 2∫_(G×O) κ(x,y)(u(x)−v(y))²dxdy.
+```
+
+**Intrinsic reserve on G.** Here α=2/3, and only the n=2 reflected
+square occurs, at cost at most 4p‖u‖² by reflection. The bounds
+69/100<r<7/10 give x<2/5 and x+1>13/10 for x in G. Hence
+U(x)>∫_(2/5)^(13/10)e^(−3s/2)ds
+=(2/3)(e^(−3/5)−e^(−39/20))>2/9.
+The cubic lower bound at −3/5 and the first four positive
+terms at 39/20 give e^(−3/5)>1/2 and e^(39/20)>6.
+Since p<1/2 from r<7/10 and √2>7/5, J_G^int(u)≥(2/9)‖u‖².
+
+**Quantitative return to O.** Write δ=1/9, W_G(x)=∫_O κ(x,y)dy and
+P_δ(y)=2δ∫_G κ(x,y)/(δ+2W_G(x))dx. For x in G, W_G(x) is positive
+and finite. Distribute δu(x)² over O with density κ(x,y)/W_G(x).
+Completing the scalar square gives
+
+```text
+(δ/W_G(x))u(x)² + 2(u(x)−v(y))² ≥ [2δ/(δ+2W_G(x))]v(y)².
+```
+
+The shared-endpoint singularities on G×O are bounded by
+1/[2(s+t)], with s,t distances to the endpoint, and are integrable.
+Tonelli thus gives J(h)≥δ‖u‖²+J_O^int(v)+∫_O P_δ(y)v(y)²dy.
+
+On x∈[1/3,9/25] the distance to O is at least 1/50, so
+W_G(x)≤log(50)<4 by K(s)≤1/(2s). Here x+y<7/5, and the first
+term of the positive exponential series for K gives
+κ(x,y)≥3e^(−21/10)min(x,y)≥e^(−21/10)y>y/10 for y>0.
+For the numerical constants, e>8/3 gives e⁴>50, while e²<8
+and e^(1/10)≤10/9 give e^(21/10)<10. The interval has length
+2/75. Therefore P_δ(y)≥(2/73)(1/10)(2/75)y, and the complete
+inequality reads
+
+```text
+J(h) ≥ (1/9)‖u‖² + J_O^int(v) + (2/27375)∫_O y v(y)²dy.
+```
+
+To finish this sufficient route, prove the last two terms
+nonnegative for every v restricted from the original class. The
+continuous kernel and all four nonzero signed prime-power terms
+on O remain in its intrinsic form.
+
+**Hostile check.** On separated smooth nonnegative bumps a in G
+and b in the interior of O, both away from zero, the interface has
+strict negative bilinear term −4ε∫_(G×O)κ a b for h=εa+b.
+Its magnitude is of order ε, while any fixed multiple of the pure
+G mass is of order ε². The pure G reserve cannot pay that
+bilinear term in isolation. The argument above retains the O
+diagonal of the same interface. The complementary sign, original
+radius-four stage, global zero return, RH and primitive Dirichlet
+GRH remain open.
