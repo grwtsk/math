@@ -1402,3 +1402,127 @@ strictly negative. Neither standalone floor disposes of it.
 The compensated all-exterior sign, the original radius-four
 stage, and the global RH and primitive Dirichlet GRH source
 returns remain open.
+
+## 17. A smooth three-band test that requires the continuous difference
+
+**2026-11-14, grwtsk contributors, AI-assisted.** Written counterexample
+to omitting the continuum difference from the sufficient exterior
+comparison of §14, with a lower bound for the omitted term on the
+same profiles. Lean elaboration, fresh kernel replay and transitive
+axiom audit for this increment are NOT_RUN. Independent review is
+UNASSESSED.
+
+Keep the actual radius-one real odd C² test class for the primitive
+nonprincipal odd character modulo 3. With the notation of §§14–16,
+define the displayed sufficient comparator and its reduced form by
+
+```text
+C(v) = J_O^int(v)+(2/27375)∫_O x v(x)² dx,
+D_κ(v) = ∬_(O×O) κ(x,y)(v(x)−v(y))² dxdy,
+S(v) = C(v) − D_κ(v).
+```
+
+The five-region α, exact diagonal U and all signed native atoms
+remain in S. Only the nonnegative continuous difference is removed.
+
+Let r=log(2), d=log(5/4), t₀=d/2, and 0<η≤1/1000. Choose any
+nonzero real C² bump ψ on the real line, supported in
+[t₀−η,t₀+η] and even about t₀. For example use the zero extension
+of (1−((t−t₀)/η)²)³ on that interval. Let H=∫ ψ². On the positive
+half place three copies,
+
+```text
+v(t)=−ψ(t)/2,  v(r−t)=−ψ(t),  v(r+t)=ψ(t)
+        for t∈[t₀−η,t₀+η],
+```
+
+and zero elsewhere. The three bands are in O and away from 0 and 1.
+Odd zero extension is C² and has the original full gamma integrability:
+the squared shift difference is O(s²) at zero, and bounded at
+infinity. The physical half mass is ‖v‖²=9H/4. We prove
+
+```text
+S(v) < −(239/1000) H,          C(v) > (319/50) H.
+```
+
+**Exact signed atoms.** The log bounds from §16 give
+693/1000<r<6932/10000, 2/9<d<2232/10000. The bands lie respectively
+in [0,1−r], (log(4)−1,log(5)−1), and (r,log(7)−1). For the
+last comparison note log(7)>19/10, since e<11/4 and
+e^(1/10)>11/10 give e^(19/10)<55/8<7.
+The n=2 same-side and reflected squares have, respectively, the
+difference ψ−(−ψ/2) and the sum −ψ/2−ψ. Each has multiplicity two.
+The n=4 reflected upper and middle values cancel pointwise.
+The n=5 reflection log(5)−x sends r+t to r+d−t, so the even
+upper bump retains its sign and doubles; the other bands lie below
+its active cutoff. The n=7 square is zero on this support, and
+n=3,6 have native zero weights. Thus
+
+```text
+R₂^O=9H,  R₄^O=0,  R₅^O=4H,  R₇^O=0.
+```
+
+The n=4 coefficient is still log(2)/2, with lag log(4). The α
+charge is 15H/4: its three values are 1,3/8,5/4 with amplitude
+squares 1/4,1,1. The displayed §14 allowance is at most
+(2/27375)(9/4)H < H/1000.
+
+**Strict failure of the reduced sign.** On the low band x>1/10,
+so U(x)≤(1/2)log((x+1)/x)<(1/2)log(11)<5/4 by (15) and the
+global upper bound K(s)≤1/(2s). The final logarithm comparison
+follows from the positive exponential sum through degree five
+at 5/2, which exceeds 11. On either higher band use
+q=e^(−2x) and the full positive series for U to get
+
+```text
+U(x) ≤ q^(3/4)[8/15+(2/7)q/(1−q)].
+```
+
+Here e^(3/2)<5 follows from e<11/4, and all terms after the
+first have rates at least 7/2. At the middle and upper centers,
+q is respectively 5/16 and 1/5. Within η the factors change by
+at most e^(2η)≤500/499. Thus on the middle band q<8/25,
+q^(3/4)<43/100, and on the upper band q<201/1000,
+q^(3/4)<31/100. The power bounds follow by fourth powers.
+Substitution gives U<29/100 and U<19/100 on the two bands.
+These compare every value on the bands, including their edges.
+
+The total U charge per H is therefore less than
+5/4+4(29/100+19/100). Meanwhile p=log(2)/√2>12/25
+and b=log(5)/√5>71/100, using √2<10/7, √5<9/4,
+log(2)>69/100, and log(5)=2r+d>69/50+2/9.
+Including the diagonal terms and all native signs gives
+
+```text
+S(v)/H <
+5/4+4(29/100+19/100)+15/4+1/1000 −9(12/25)−4(71/100)
+= −239/1000.
+```
+
+**Continuous payment on the same profiles.** For every x in a
+support band, both points y=x±s with 2η<s<1/25 lie in O and
+outside all three support bands. Indeed the radius η+1/25
+neighborhoods of the three centers are disjoint and inside O
+by the above log brackets. In these pairs x+y>1/6, so
+K(x+y)≤3. The lower bound (15) then gives
+κ(x,x±s)≥1/(2s)−10/3. Both signs of s and both orders of each
+support-to-zero pair are present in D_κ. Therefore
+
+```text
+D_κ(v) ≥ ‖v‖²[2log(1/(50η))−(40/3)(1/25−2η)].
+```
+
+This estimate does not integrate the naked singular kernel at
+zero. For η≤1/1000 the logarithm exceeds 5/2 since
+e^(5/2)<(11/4)²·2<20. Hence D_κ(v)>(201/20)H.
+Keeping the positive diagonal and actual allowance,
+S(v)≥(15/4−9/2−4·73/100)H=−(367/100)H by p<1/2 and b<73/100.
+It follows that C(v)>(319/50)H as claimed.
+
+This is a strict counterexample to the reduced sign S≥0 with the
+displayed linear allowance. The same inputs satisfy the full
+comparator with an explicitly paid continuous term. The
+zero-neighbor estimate uses their three narrow bands and does
+not assert a uniform logarithmic reserve for arbitrary profiles.
+The full mixed exterior sign, original radius-four stage and
+global RH and primitive Dirichlet GRH returns remain open.
