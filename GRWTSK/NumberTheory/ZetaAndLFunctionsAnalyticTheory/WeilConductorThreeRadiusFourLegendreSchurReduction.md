@@ -18412,3 +18412,152 @@ assert lower_floor>0
 print("PASS X10 exact signed matrix and mixed budget",str(candidate),k,
       scale.bit_length(),float(lower_floor),flush=True)
 ~~~
+
+## A smaller scalar price for the existing quarter-positive slab
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+exact rational checks. Lean elaboration, kernel replay and
+transitive axiom audit are NOT_RUN. External independent review
+is UNASSESSED.
+
+Keep the complex odd physical carrier, original Fourier
+restriction $K$, exact signed multiplier, masks and projection
+$\Pi_H$. This is the primitive nonprincipal odd character modulo
+three, with the full parity-one gamma term, all $458$ signed
+prime-power terms, and zero principal-pole term. Write
+$D=BI-\lambda\Pi_H\ge\beta I$ and $S_\lambda=D+K^*m_+K$
+with the original constants.
+
+The earlier reflected $X_0$ has positive detunings
+$[140.56,144.56]$ from $c_1$. Put $\mathcal P_0=K^*1_{X_0}m_+K$,
+$N_0=\sqrt{m_-}\,1_{X_0}K$, and
+$\delta_{36}=9(8^{36}/36!)(2+8^{36}/36!)$.
+The same original quarter-positive comparison gives
+the stronger debit inequality
+$$
+ N_0^*N_0\le\tfrac14\mathcal P_0+(9.5\cdot10^{-9}+\delta_{36})I.
+$$
+It replaces the previous $1/20000+\delta_{36}$ price
+in the comparison for the same thirty-five debited
+enclosures.
+
+Use the exact published $X_0$ lower signed step with
+full original arithmetic and folding $d\nu/\pi$. Its
+$800$ width-$0.005$ cells include $44$ lower-step negative
+cells and have raw multiplier bound $9$. The published
+direct guard computes its exact $36$-coordinate signed
+moment matrix $M$ and physical upper Gram $\bar G$.
+Change the scalar coefficient alone from $1/20000$
+to $9.5\cdot10^{-9}$ in the rational comparison
+$$
+ (9.5\cdot10^{-9})\bar G+\bar GM\bar G .
+$$
+All $36$ leading principal minors are strictly positive.
+Since $\bar G$ is positive definite, the requested
+$10^{-8}$ comparison follows by adding
+$(10^{-8}-9.5\cdot10^{-9})\bar G$.
+The check below extracts and executes the exact
+published guard with precisely this one rational
+literal replacement. It verifies that restoring that
+literal gives the exact previous guard text.
+
+The physical Gram domination and signed lower order
+therefore give the previous actual transfer with
+new scalar price $9.5\cdot10^{-9}$. The centered angular
+$L^2$ Taylor error remains exactly $\delta_{36}$
+as a cost in this proof. Since the same error is in
+both prices, the recovery is the exact difference
+$$
+ (1/20000+\delta_{36})-(9.5\cdot10^{-9}+\delta_{36})=0.0000499905 .
+$$
+The smaller trial $9.25\cdot10^{-9}$ in the same finite
+comparison has a negative pivot at zero-based index
+$18$, also checked below. This is a finite sufficient-matrix threshold
+observation on the fixed signed lower step and upper
+Gram.
+
+Reserve the same disjoint direct positive resources
+before applying the $q_{23}=0.953004$ comparison
+with its original input. Leave the other actual
+direct prices as proved. The exact revised cap on
+the thirty-five enclosures is
+$$
+ \max\left\{0.953004+
+ \frac{2.95\cdot10^{-8}+3\delta_{36}+8\cdot10^{-9}
+ +82\epsilon_{40}(2+\epsilon_{40})+\delta_9}{\beta},
+ \tfrac34\right\}<0.953005 ,
+$$
+where $\epsilon_{40}=8^{40}/40!$ and
+$\delta_9=30((14.6)^{64}/64!)(2+(14.6)^{64}/64!)$.
+For the same stack of actual negative restrictions,
+$S_{\rm all35}=S_\lambda-W_{\rm all35}^*W_{\rm all35}
+\ge0.046995S_\lambda$.
+The exact unused scalar allowance under cap $0.953405$
+now exceeds $0.0000499905$, after all previously certified
+direct prices and errors are included.
+
+The required outside sign is still the open criterion
+$\|N_{\rm out}S_{\rm all35}^{-1}N_{\rm out}^*\|\le1$
+for the actual remaining negative restriction. This is equivalent
+to positivity of
+$T_+-\lambda\Pi_H=S_{\rm all35}-N_{\rm out}^*N_{\rm out}$.
+The original seven leading inverses and directional return use that sign. Its trace obstruction
+corridor still lies outside the debited enclosures.
+
+Extract the following proof guard and pass the
+complete pinned source Markdown path.
+
+~~~python
+from fractions import Fraction as F
+from math import factorial
+from pathlib import Path
+import re
+import sys
+
+source_path=sys.argv[1]
+source=Path(source_path).read_text()
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+center='centre_offset=F("142.56")'
+old_price='candidate=F(1,20000)'
+found=[b for b in blocks if center in b.splitlines() and old_price in b.splitlines()]
+assert len(found)==1 and found[0].count(old_price)==1
+trial='candidate=F("9.5e-9")'
+code=found[0].replace(old_price,trial)
+assert code.replace(trial,old_price)==found[0]
+scope={}
+sys.argv=[sys.argv[0],source_path,"matrix"]
+exec(compile(code,"published X0 guard at smaller exact scalar price","exec"),scope)
+beta,delta36,tau=(scope[v] for v in ("beta","delta","candidate"))
+assert tau==F("9.5e-9") and scope["k"]==36
+assert F("1.57e-8")<delta36<F("1.58e-8")
+assert scope["positive_fraction"]==F(1,4)
+assert len(scope["rho"])==800 and sum(w<0 for _,_,w in scope["rho"])==44
+recovery=(F(1,20000)+delta36)-(tau+delta36)
+assert recovery==F(".0000499905")
+eps40=F(8)**40/factorial(40)
+eps64=F("14.6")**64/factorial(64)
+d40=eps40*(2+eps40)
+d9=30*eps64*(2+eps64)
+price_35_old=F(1,20000)+2*F("1e-8")+3*delta36+8*F("1e-9")+82*d40+d9
+price_35_new=price_35_old-recovery
+q23=F(".953004")
+q=max(q23+price_35_new/beta,F(3,4))
+room=(F(".953405")-q23)*beta-price_35_new
+assert q<F(".953005") and room>F(".0000499905")
+assert F("8.48e-8")<price_35_new<F("8.50e-8")
+print("published 35 direct price sum, q, scalar room",float(price_35_new),float(q),float(room))
+print("PASS exact repricing with the original signed step, upper Gram and transfer",float(recovery))
+
+failed_trial='candidate=F("9.25e-9")'
+failed_code=found[0].replace(old_price,failed_trial)
+assert failed_code.replace(failed_trial,old_price)==found[0]
+failed_scope={}
+try:
+    exec(compile(failed_code,"published X0 guard at failed exact scalar price","exec"),failed_scope)
+except AssertionError as error:
+    assert error.args==(("first failed exact LDL pivot",18,str(F("9.25e-9"))),)
+    assert failed_scope["last"]>0 and failed_scope["scaled"][18][18]<0
+    print("PASS exact negative intermediate Bareiss pivot in the smaller trial",18)
+else:
+    raise AssertionError("expected fixed sufficient matrix to fail at the smaller trial")
+~~~
