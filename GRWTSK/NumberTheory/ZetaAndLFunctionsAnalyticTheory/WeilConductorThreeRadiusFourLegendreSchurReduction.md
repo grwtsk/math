@@ -13350,3 +13350,287 @@ assert max(selected_low,F(".953"))+high_coupling<F(".954")
 print("PASS exact direct twenty-row assembly", float(selected_low), float(high_coupling))
 print("old↔near, old↔c4, near↔c4, low↔far", *(float(v) for v in (old_near,old_c4,near_c4,low_far)))
 ~~~
+
+## A comparison criterion with different separation scales
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof with
+an exact rational finite test on the currently paid rows. Lean
+elaboration, kernel replay and transitive axiom audit are NOT_RUN.
+External independent review is UNASSESSED.
+
+Work on the original complex odd carrier
+$\mathcal H=L^2_{\rm odd}([-4,4],dt;\mathbb C)$ with
+$\beta=B-\lambda>0$ and
+$S_\lambda=B I-\lambda\Pi_H+K^*m_+K$. Partition the selected
+portion of the actual folded negative measure into disjoint
+groups with measured index spaces $(E_i,\mu_i)$ and output
+spaces $G_i=L^2(E_i,\mu_i;\mathbb C)$. For several rows their
+disjoint union gives the corresponding Hilbert direct sum.
+Write $W_i f$ for the actual negative Fourier restriction in
+folded coordinates, where the odd Fourier phase is a unit
+scalar. Suppose it has the exact factorization
+$$
+ W_i f=M_i(\sqrt\beta f,V_i f),\qquad
+ M_i(u,v)=R_i^{\rm op}u+P_i^{\rm op}v.
+$$
+Here $V_i$ evaluates $\langle \sin(\nu\,\cdot),f\rangle$
+in the allotted positive coordinates. In each group let
+$a_i$ satisfy $M_i M_i^*\le a_i I_{G_i}$. These coordinates
+have distinct tags by group, and their underlying allocated
+positive measures are dominated in sum by actual
+$m_+(\nu)\,d\nu/\pi$.
+
+For almost every index $e\in E_i$, suppose the evaluation
+$R_i^{\rm op}u(e)$ is represented by $\beta^{-1/2}r_{i,e}$,
+where a measurable real signed coefficient measure
+$\theta_{i,e}$ has support in $[c_i-R_i,c_i+R_i]$, with
+$c_i>R_i$, and
+$$
+ r_{i,e}(t)=\int\sin(\nu t)\,d\theta_{i,e}(\nu).
+$$
+Let $T_i$ bound the $G_i$-norm of $e\mapsto\|\theta_{i,e}\|_{\rm TV}$.
+Let $D_i$ bound both $G_i$-norms of
+$e\mapsto\int e^{\pm4i\nu}\,d\theta_{i,e}(\nu)$ and let
+$D_{1,i}$ bound the analogous norms after inserting $\nu-c_i$.
+
+Use signed center labels $\alpha=(i,\sigma)$ with
+$x_\alpha=\sigma c_i$, and reflect coefficient measures
+on the negative labels. Choose lengths $\ell_i>0$ for which
+the intervals $x_\alpha+[-\ell_i/2,\ell_i/2]$ are strictly
+separated. For distinct labels $\alpha=(i,\sigma)$ and
+$\zeta=(j,\sigma')$ put
+$$
+ d_{\alpha\zeta}=|x_\alpha-x_\zeta|,\qquad
+ L_{ij}=(\ell_i+\ell_j)/2,\qquad r_{ij}=R_i+R_j.
+$$
+Choose any symmetric collection of long pairs of distinct
+original groups such that $d_{\alpha\zeta}>r_{ij}$ for
+every signed choice of a long pair. For every other pair
+of distinct groups use a direct bound $U_{ij}=U_{ji}$ on its
+normalized physical block norm. Set $U_{ij}=0$ on long pairs
+and on the diagonal. This permits overlapping residual
+coefficient supports in pairs handled by $U$. For example,
+if the squared normalized physical Hilbert--Schmidt costs
+are bounded by $H_i,H_j$, one can use $U_{ij}=\sqrt{H_iH_j}$.
+
+For distinct signed labels define symmetric entries $E_{\alpha\zeta}$
+by
+$$
+ E_{\alpha\zeta}
+ =
+ \begin{cases}
+ \displaystyle
+ \frac{D_iD_j(\ell_i^2+\ell_j^2)}{12d^2(d-L_{ij})}
+ +\frac{D_{1,i}D_j+D_iD_{1,j}}{d^2}
+ +\frac{T_iT_jr_{ij}^2}{d^2(d-r_{ij})},
+       & (i,j)\text{ long},\\[6pt]
+ \displaystyle \frac{D_iD_j}{d-L_{ij}},
+       & (i,j)\text{ deleted},
+ \end{cases}
+ \qquad d=d_{\alpha\zeta}.
+$$
+Here deletion includes the opposite signs of a single group
+and all signed entries of pairs handled by $U$. Set
+$E_{\alpha\alpha}=0$. Choose any $p_i>0$ and write
+$p_\alpha=p_i$ for each sign. A sufficient upper bound $q$ on
+the full row Gram is the following per-signed-label test:
+$$
+ a_i+\frac1\beta\left(
+ \frac{\pi D_i^2}{\ell_i}
+ +\sum_{\zeta}E_{\alpha\zeta}\frac{p_\zeta}{p_\alpha}
+ \right)
+ +\sum_j U_{ij}\frac{p_j}{p_i}\;\le\;q .
+$$
+The test can use different indicator lengths, phase bounds,
+residual radii and diagonal reserves throughout the family.
+
+### Proof of the comparison
+
+Compress convolution by $h_\epsilon(x)=x/(x^2+\epsilon^2)$
+to the normalized indicators of the signed center intervals.
+For the Fourier transform $\int e^{-ix\xi}f(x)\,dx$ its
+multiplier is $-i\pi\operatorname{sgn}\xi\,e^{-\epsilon|\xi|}$.
+This follows by Fourier inversion and
+$\int_0^\infty e^{-\epsilon\xi}\sin(x\xi)\,d\xi=h_\epsilon(x)$.
+Thus each finite compression has norm at most $\pi$.
+The diagonal entries vanish by antisymmetry. As $\epsilon$
+decreases to zero, strictly separated intervals give
+off-diagonal limits by bounded convergence. If $q_0=x_\alpha-x_\zeta$
+and $U,V$ are independent uniform displacements in the two
+indicator intervals, the limiting entry is
+$\sqrt{\ell_i\ell_j}\,\mathbb E[1/(q_0+U-V)]$.
+
+For one endpoint phase at $4\tau$, $\tau=\pm1$, map the row
+input on the signed $G_i$ to the phase moment functional
+divided by $\sqrt{\ell_i}$. The sum of squared output
+coordinates is at most $\sum_\alpha (D_i^2/\ell_i)\|g_\alpha\|^2$.
+Applying the full compressed Hilbert operator between the
+two phase maps therefore costs at most
+$\pi\sum_\alpha(D_i^2/\ell_i)\|g_\alpha\|^2$ in absolute
+quadratic form. The two factored endpoint exponentials for
+$\sin(4(\nu-\eta))$ carry coefficients $1/(2i)$ and $-1/(2i)$,
+so their total bound has this same coefficient $\pi$.
+
+On a deleted pair, discard the corresponding indicator entry
+at normalized phase cost at most $D_iD_j/(d-L_{ij})$.
+For a retained pair, put $z=U-V$, so $\mathbb Ez=0$ and
+$\mathbb Ez^2=(\ell_i^2+\ell_j^2)/12$. In the denominator
+expansion
+$$
+ \frac1{q_0+z}=\frac1{q_0}-\frac{z}{q_0^2}
+                 +\frac{z^2}{q_0^2(q_0+z)}
+$$
+the average linear term disappears. The difference between
+the averaged denominator and the frozen denominator after
+the phase maps has block norm at most the first term of
+$E_{\alpha\zeta}$. The true residual frequency displacements
+in the long physical block have $|z|\le r_{ij}$. For this
+second expansion, the linear term factors one first centered
+phase moment on either side, yielding the second term of
+$E_{\alpha\zeta}$. The last term is bounded by the product
+of the two total variations and the scalar second-order
+denominator remainder, yielding the third term. All block
+bounds include the two endpoint signs via the sine coefficients.
+
+The symmetry of $E$ implies the quadratic estimate
+$$
+ \sum_{\alpha,\zeta} E_{\alpha\zeta}\|g_\alpha\|\|g_\zeta\|
+ \le
+ \sum_\alpha\left(\sum_\zeta E_{\alpha\zeta}
+ \frac{p_\zeta}{p_\alpha}\right)\|g_\alpha\|^2 .
+$$
+Use $2uv\le(p_\zeta/p_\alpha)u^2+(p_\alpha/p_\zeta)v^2$
+and sum. Compress by the isometry
+$g_i\mapsto(g_i/\sqrt2,-g_i/\sqrt2)$ on the two signed copies.
+For $k(u)=\sin(4u)/u$ with $k(0)=4$, evenness gives the
+compression kernel
+$$
+ \frac{k(\nu-\eta)-k(\nu+\eta)-k(-\nu-\eta)+k(-\nu+\eta)}2
+ =k(\nu-\eta)-k(\nu+\eta).
+$$
+This is exactly $\int_{-4}^4\sin(\nu t)\sin(\eta t)\,dt$.
+The same weights on both signs preserve the per-group
+bound after compression. Divide the long physical costs by
+$\beta$. Add the direct blocks $U$, which already include this
+normalization, by the same quadratic estimate. The diagonal
+$a_i$ includes every within-group physical term, so the deleted
+signed entries from that group enter only as a bound for the
+compression error.
+
+For a finite selection of groups, write $Jf=(\sqrt\beta f,(V_i f)_i)$
+and $Wf=(W_i f)_i=MJf$. By the stipulated dominance of the
+positive allocations and $BI-\lambda\Pi_H\ge\beta I$,
+$\|Jf\|^2\le\langle f,S_\lambda f\rangle$.
+The proved row-Gram bound gives $MM^*\le qI$. Consequently
+$$
+ \|W S_\lambda^{-1}W^*\|
+ \le\|M\|^2\|J S_\lambda^{-1/2}\|^2\le q
+$$
+for the actual selected negative restriction.
+
+For a countable family satisfying the same bound uniformly
+in finite subsets, apply the argument to each finite subset
+with the same weights and take the increasing supremum
+of the actual squared negative-output norms. If the portions
+cover the actual negative support almost everywhere and
+$q\le1$, this gives the exact full source sign. The same
+seven leading physical inverses and directional return
+then apply on their original domains.
+
+### Exact test against the known signed allocations
+
+Use the twenty paid rows in their five original groups.
+The low four centers have detunings $31.09$, $382.85$,
+$5313.55$, and $20377.5$ from $c_1$. The high group is
+centered at $c_2-1.95$. Take the indicator lengths
+$(450,100,1000,3000,10^6)$ and Schur weights
+$(1,1/2,1,1,1)$. All pairs of different groups are long.
+Use the full reflected-center distances in the scalar test.
+For the irrational high center, the rational lower bound
+$c_2\ge (5085348195/4)(3.14)$ gives lower bounds for both
+kinds of denominators.
+
+For each individual row of residual frequency radius two,
+the first moment about the group center $\widehat c$ is
+bounded by $|c-\widehat c|D+2T$. Sum squared bounds.
+The established high pair uses the actual radius $0.35$
+for its third row. This gives first phase moment caps
+$(38,10.1,8.4,32,19)$, with the fourth cap from the seven
+far rows. Keep the proved diagonal, total-variation, and
+phase costs from the signed positive allocations. The exact
+scalar guard gives a cap below $0.953004$ for all signed
+labels, hence below $0.954$. Thus for these same twenty rows one can use
+$S_{\rm all20}\ge0.046996S_\lambda$. With $N_{\rm out}$ the
+bounded actual negative restriction outside their reflected
+enclosures, the first unproved sign is still
+$\|N_{\rm out}S_{\rm all20}^{-1}N_{\rm out}^*\|\le1$.
+The proved detached slabs and the pointwise half splits
+supply the actual negative and positive measures in this test.
+
+### Exact scalar check
+
+~~~python
+from fractions import Fraction as F
+
+c1=F("99653682.92983")
+c2_lower=F(5085348195,4)*F("3.14")
+high_lower=c2_lower-F("1.95")
+centers=[c1+F(x) for x in ("31.09","382.85","5313.55","20377.5")]
+radii=list(map(F,("48","7","2","33","4")))
+variations=list(map(F,("13","4.53","4.2","11.7","11")))
+phases=list(map(F,(".43",".20",".20",".38",".37")))
+moments=list(map(F,("38","10.1","8.4","32","19")))
+diagonals=list(map(F,(".905",".28",".46",".505",".953")))
+lengths=list(map(F,("450","100","1000","3000","1000000")))
+row_weights=list(map(F,("1",".5","1","1","1")))
+beta=F(".12")
+assert F(".124997987")-F(".0001071")>beta
+old_sides=("-14.64","-11.28","21.62","22.48","49.50","73.50","76.82")
+far_sides=("20348.66","20373.56","20380.94","20388.66","20400.72","20406.24","20407.22")
+assert sum((abs(F(x)-F("31.09"))*F(".14")+2*F("3.2"))**2 for x in old_sides)+(F("31.09")*F(".2")+2*F("9.22"))**2<moments[0]**2
+assert 2*(F("4.89")*F(".14")+2*F("3.2"))**2<moments[1]**2
+assert radii[2]*variations[2]==moments[2]
+assert 9**2+F("2.66")**2<variations[4]**2
+assert F(".2")**2+F(".31")**2<phases[4]**2
+assert max(F("1.95")+2,F("3.6")+F(".35"))<radii[4]
+assert sum((abs(F(x)-F("20377.5"))*F(".14")+2*F("4.42"))**2 for x in far_sides)<moments[3]**2
+assert (F("1.95")*F(".2")+2*9)**2+(F("3.6")*F(".31")+F(".35")*F("2.66"))**2<moments[4]**2
+
+labels=[(i,sign) for i in range(5) for sign in (-1,1)]
+
+def distance(a,b):
+    i,si=a
+    j,sj=b
+    if i==j==4:
+        return 2*high_lower
+    if i==4:
+        return high_lower-centers[j]
+    if j==4:
+        return high_lower-centers[i]
+    return abs(si*centers[i]-sj*centers[j])
+
+def coupling(a,b):
+    i,_=a
+    j,_=b
+    d=distance(a,b)
+    halfsum=(lengths[i]+lengths[j])/2
+    assert d>halfsum
+    if i==j:
+        return phases[i]*phases[j]/(d-halfsum)
+    r=radii[i]+radii[j]
+    assert d>r
+    weights=phases[i]*phases[j]
+    indicator=weights*(lengths[i]**2+lengths[j]**2)/(12*d**2*(d-halfsum))
+    linear=(moments[i]*phases[j]+phases[i]*moments[j])/d**2
+    tail=variations[i]*variations[j]*r**2/(d**2*(d-r))
+    return indicator+linear+tail
+
+upper=[]
+for a in labels:
+    i,_=a
+    scalar=F(22,7)*phases[i]**2/lengths[i]
+    errors=sum(coupling(a,b)*row_weights[b[0]]/row_weights[i] for b in labels if b!=a)
+    upper.append(diagonals[i]+(scalar+errors)/beta)
+assert max(upper)<F(".953004")
+print("PASS directed nonuniform coupled twenty-row bound",*[float(upper[2*j]) for j in range(5)])
+~~~
