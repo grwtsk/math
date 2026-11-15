@@ -9372,3 +9372,278 @@ assert ratio < F(".80")
 assert F(".785")/F(".80")-scalar > F(".8563")
 print("PASS every actual negative-window evaluation, local inverse norm <.80, and probe positive part >.8563")
 ~~~
+
+## Two actual negative windows with disjoint positive payments
+
+2026-11-15, grwtsk contributors, AI-assisted. Written analytic
+proof with exact rational guards. Lean elaboration, kernel replay
+and transitive axiom audit are NOT_RUN. External independent review
+is UNASSESSED.
+
+Keep the preceding $S_\lambda$ on the original complex odd
+$L^2([-4,4])$ carrier, $\lambda=0.0001071$, and let
+$c_1=99653682.92983$, $c_2=5085348195\pi/4$. Let $J_i$ be the
+union of the two intervals of radius $r=0.02$ about $\pm c_i$.
+Here $J_1=J$ is the preceding window. For the same actual
+$\mathcal W_{J_i}=\sqrt{-m}\,1_{J_i}K$ define the column
+$\mathcal W_{12}=(\mathcal W_{J_1},\mathcal W_{J_2})^{\mathsf T}$.
+Then
+$$
+                 \|\mathcal W_{12}S_\lambda^{-1}\mathcal W_{12}^*\|
+                 <0.795 .
+$$
+This is a coupled bound. In particular the second diagonal plus its
+exact cross expense after eliminating the first window is below
+$0.795I$ on the second angular space.
+
+### The literal second window and its two flank heights
+
+For each $i$ take the two positive-frequency flanks $c_i\pm[a,b]$
+with $a=0.24$, $b=0.35$, and reflect them about zero. The two sets of four flanks are disjoint.
+For the second center their absolute frequencies, and those of
+$J_2$, lie between $3.5\cdot10^9$ and $4\cdot10^9$ and outside
+the paid pair and the actual deleted collar. The original high
+and all-lobe low filter bounds give $w\ge1-3\cdot10^{-10}$.
+The bounds below retain the signed $P_4$ with all 458 terms.
+
+The corresponding value of $3|\nu|/(2\pi)$ is bounded using
+$3(5085348195)/8$ and the detuning $3b/(2\pi)$, then enclosed
+between integers. The directed logarithm less or plus the
+original Binet error $5/(9y)+9/(32y^2)$, $y=|\nu|/2$,
+gives $21.3687<A<21.3689$ on the whole band.
+Enclose each value of $P_4$ using the Machin interval for
+$c_2$ and the directed log and trigonometric bounds for every
+original signed atom. The same absolute differentiated sum
+gives $|P_4''|<13504$. On any adjacent grid interval of length
+$h_s$, $P_4$ differs from its linear interpolant by at most
+$13504h_s^2/8$. Indeed the functions obtained by subtracting
+the interpolant and adding or subtracting
+$13504(x-x_0)(x_1-x)/2$ have opposite convexities and vanish
+at both endpoints. Enclose the interpolant using its exact
+node intervals. Using $h_s=0.005$ on $J_2^+$ and $0.01$ on
+each flank proves
+$$
+  13.4<-m<15\ \text{on }J_2,\qquad
+  m>8.3\ \text{on }c_2-[a,b],\qquad
+  m>18.38\ \text{on }c_2+[a,b] .
+$$
+Evenness gives the reflected flank heights. On the first flanks
+the already proved lower heights on both sides are $11.5$.
+
+### Coupled physical evaluation and angular isometries
+
+For each window write $J_i^+=[c_i-r,c_i+r]$, and on it put
+$d\mu_i=(-m(\nu))\,d\nu/\pi$, $\mathcal G_i=L^2(J_i^+,d\mu_i)$
+and $M_i=\mu_i(J_i^+)$. For $v_\nu(t)=\sin(\nu t)$, the folded
+operator $V_i:\mathcal H\to\mathcal G_i$ is
+$V_i f(\nu)=\langle v_\nu,f\rangle$. With the original Fourier
+sign and inner product convention,
+$(U_i g)(\pm\nu)=\pm i\sqrt{-m(\nu)}\,g(\nu)$ is an isometry
+into the original angular space on $J_i$, and
+$\mathcal W_{J_i}=U_i V_i$. Thus folding preserves the exact
+positive-operator norm, including its mixed blocks; the
+orthogonal complement of the folded range contributes zero.
+
+Let $u_i=(2d)^{-1}\int_a^b(v_{c_i+s}+v_{c_i-s})ds$, $d=b-a$,
+and $Q_i[f]$ be the contribution to $Q_+[f]$ on the four flanks
+of window $i$. Write $\mu_i^\pm$ for their right and left lower
+heights. Weighted Cauchy–Schwarz and the original reflected
+angular measure give
+$$
+ q_i^2=\frac{\pi}{4d}\big((\mu_i^+)^{-1}+(\mu_i^-)^{-1}\big),
+ \qquad |\langle u_i,f\rangle|^2\le q_i^2 Q_i[f],\qquad
+ Q_1[f]+Q_2[f]\le Q_+[f].
+$$
+The last inequality is an actual budget on disjoint angular
+sets. It does not count either positive flank twice.
+
+For $\alpha=1.14$, put $e_{i,\nu}=v_\nu-\alpha u_i$ and
+$E_i f(\nu)=\langle e_{i,\nu},f\rangle$. The preceding cosine
+polynomial error argument applies at both centers with the
+same envelope and squared error $<0.2411$; its oscillatory
+bound uses $c_i$ in the denominator. Let $\beta=B-\lambda$.
+On the direct sum $\mathcal H\oplus\mathbb C^2$ define
+$$
+ \mathsf M(x,z)_i=\beta^{-1/2}E_i x+\alpha q_i z_i\,1_{J_i^+},\qquad
+ Lf=\big(\sqrt\beta f,(\langle u_i,f\rangle/q_i)_i\big).
+$$
+Then $V=(V_1,V_2)^{\mathsf T}=\mathsf M L$ and
+$\|Lf\|^2\le\langle f,S_\lambda f\rangle$. All evaluation
+maps are bounded on the physical carrier. In particular,
+$E_i^*g=\int_{J_i^+}e_{i,\nu}g(\nu)\,d\mu_i(\nu)$, an
+integral in that carrier; each $\mu_i$ has finite mass and the
+kernels are uniformly bounded.
+
+The two diagonal blocks of $\mathsf M\mathsf M^*$ have norms
+at most
+$$
+ M_i\big(\alpha^2q_i^2+0.2411/\beta\big),
+$$
+which are below $0.794$ and $0.68$, respectively. The mixed block
+is $\beta^{-1}E_1E_2^*$, since the positive columns occupy
+different coordinates. To bound it on the original physical
+carrier, use the exact sine Gram identity
+$$
+ \langle v_x,v_y\rangle
+ =\frac{\sin(4(x-y))}{x-y}-\frac{\sin(4(x+y))}{x+y}.
+$$
+Each error is a signed average of sines at frequencies in
+$[c_i-b,c_i+b]$ with coefficient mass at most $1+\alpha$.
+Therefore the norm of the mixed block is at most
+$$
+ \frac{\sqrt{M_1M_2}}{\beta}(1+\alpha)^2
+ \left[\frac{1}{c_2-c_1-2b}+\frac{1}{c_2+c_1-2b}\right]
+ <2\cdot10^{-8}.
+$$
+Here a uniform absolute kernel bound on a product of the two
+finite measure spaces gives the claimed norm estimate.
+The bound is on the mixed block of a joint majorant; it
+does not presume frequency decay of $S_\lambda^{-1}$.
+The norm of the self-adjoint off-diagonal block matrix is
+the norm of its mixed block. Thus
+$\|\mathsf M\mathsf M^*\|<0.795$, and $\|LS_\lambda^{-1/2}\|\le1$
+and the angular isometries prove the joint bound.
+
+### Exact return after the two angular windows
+
+Write $A_1=\mathcal W_{J_1}S_\lambda^{-1}\mathcal W_{J_1}^*$,
+$D_2=\mathcal W_{J_2}S_\lambda^{-1}\mathcal W_{J_2}^*$ and
+$C_{12}=\mathcal W_{J_1}S_\lambda^{-1}\mathcal W_{J_2}^*$.
+Choose $\rho<0.795$ strictly above the joint norm. Taking the
+Schur complement of $\rho I-\mathcal W_{12}
+S_\lambda^{-1}\mathcal W_{12}^*$ gives
+$$
+ D_2+C_{12}^*(\rho I-A_1)^{-1}C_{12}\le \rho I.
+$$
+Order reversal under inversion bounds the same expression with
+$(I-A_1)^{-1}$ by $\rho I$. This includes the actual second
+window's exact coupling to the first. The joint bound also gives a positive physical comparator after
+these two debits:
+$$
+ S_\lambda''=S_\lambda-\mathcal W_{12}^*\mathcal W_{12}
+                         \ge0.205S_\lambda .
+$$
+More precisely the remaining global test for $C_{4,+}\ge\lambda I_H$
+is $\|N''(S_\lambda'')^{-1}(N'')^*\|\le1$, where $N''$ is the
+restriction of the actual negative map to the rest of the
+negative support. The original seven leading pivots are unchanged.
+No test on the whole remaining negative support follows from this
+two-window bound; the corrected arithmetic stage, all stages,
+and the RH and primitive Dirichlet GRH returns remain open.
+
+The exact guard uses this complete document as input and reuses
+only the previous source's directed-arithmetic definitions and
+cosine-polynomial error calculation.
+
+~~~python
+from pathlib import Path
+import re
+import sys
+
+document = Path(sys.argv[1]).read_text()
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$", document, re.M | re.S)
+previous = [g for g in blocks if g.startswith("from fractions import Fraction")
+            and "PASS actual seven-inverse localized correction" in g]
+assert len(previous) == 1
+pivot = 'centre = F("99653682.92983")'
+assert previous[0].count(pivot) == 1
+exec(compile(previous[0].split(pivot)[0], "source directed arithmetic", "exec"))
+
+c1 = F("99653682.92983")
+k2 = 5085348195
+c2 = scale(F(k2,4), (pi_lower,pi_upper))
+a,b,r = F(".24"),F(".35"),F(".02")
+assert 3500000000<c2[0]-b<c2[1]+b<4000000000
+assert c2[0]-b > F("3806849122.861433")+F(1,160)
+assert c2[0]-b > F("1852422754.1662946")+10
+assert c2[0]-b > 30000000 and c2[1]+b < 35*10**24
+assert c2[0]-b > c1+b
+
+# Binet's full error, and the exact centre 5085348195*pi/4.
+lower_arg,upper_arg = (3*k2//8-1,3*k2//8+2)
+assert lower_arg<F(3*k2,8)-3*b/(2*pi_lower)
+assert F(3*k2,8)+3*b/(2*pi_lower)<upper_arg
+y = (c2[0]-b)/2
+gerror = F(5,9)/y+F(9,32)/y**2
+gamma=(F("21.3687"),F("21.3689"))
+assert gamma[0]<log_bounds(lower_arg)[0]-gerror
+assert log_bounds(upper_arg)[1]+gerror<gamma[1]
+
+atoms=[]
+abs_second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%d==0 for d in range(2,isqrt(p)+1)):
+        continue
+    log_p=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        amplitude=scale(2*(1 if n%3==1 else -1),
+                        (log_p[0]*source_grid/(root+1),log_p[1]*source_grid/root))
+        atoms.append((amplitude,lag))
+        abs_second+=max(map(abs,amplitude))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and abs_second<13504
+
+def node_value(s):
+    x=add(c2,(s,s))
+    val=(F(0),F(0))
+    for amplitude,lag in atoms:
+        co,_=phase_trig(multiply(x,lag))
+        val=add(val,round_out(*multiply(amplitude,co),atom_grid))
+    return val
+
+def value_over_segment(s,t,h):
+    steps=(t-s)/h
+    assert steps.denominator==1
+    nodes=[node_value(s+i*h) for i in range(int(steps)+1)]
+    error=abs_second*h*h/8
+    return min(y[0] for y in nodes)-error,max(y[1] for y in nodes)+error
+
+wmin=1-F("3e-10")
+pval=value_over_segment(-r,r,F(".005"))
+assert wmin*(pval[0]-gamma[1])>F("13.4")
+assert pval[1]-gamma[0]<15
+for s,t,mu in [(-b,-a,F("8.3")),(a,b,F("18.38"))]:
+    pval=value_over_segment(s,t,F(".01"))
+    assert wmin*(gamma[0]-pval[1])>mu
+print("PASS second actual signed negative window and unequal positive flank floors")
+
+# Same sine envelope as the preceding window. Reuse the previously
+# checked integrated cosine polynomial, then compare oscillatory errors.
+symmetric = [g for g in blocks if g.startswith("from pathlib import Path")
+             and 'print("PASS every actual negative-window evaluation,' in g
+             and not 'published two-window guard' in g]
+assert len(symmetric)==1
+start="# q(t) is the uniform average"
+stop="floor=F("
+assert symmetric[0].count(start)==symmetric[0].count(stop)==1
+polycode=start+symmetric[0].split(start)[1].split(stop)[0]
+for checked_centre in (c1,c2[0]):
+    scope=dict(F=F,factorial=factorial,centre=checked_centre,a=a,b=b,negative_radius=r)
+    exec(compile(polycode,"source cosine error bound","exec"),scope)
+    assert scope["error_norm_sq"]<F(".2411")
+
+# The off-diagonal compare is for the joint majorant, not S_lambda^-1 itself.
+alpha=F("1.14")
+beta=F(".124890887")
+assert beta==F(".124997987")-F(".0001071")
+mu1p=mu1m=F("11.5")
+mu2p,mu2m=F("18.38"),F("8.3")
+mass1=F("17.57")*2*r/pi_lower
+mass2=15*2*r/pi_lower
+assert max(mass1,mass2)<1
+d=b-a
+q1sq=pi_upper/(4*d)*(1/mu1p+1/mu1m)
+q2sq=pi_upper/(4*d)*(1/mu2p+1/mu2m)
+cost1=mass1*(alpha**2*q1sq+F(".2411")/beta)
+cost2=mass2*(alpha**2*q2sq+F(".2411")/beta)
+gap=c2[0]-c1-2*b
+frequency_sum=c1+c2[0]-2*b
+off=(1+alpha)**2/beta*(1/gap+1/frequency_sum)
+assert cost1<F(".794") and cost2<F(".68")
+assert off<F("2e-8")
+assert max(cost1,cost2)+off<F(".795")
+print("PASS published two-window guard: actual joint contraction <.795")
+~~~
