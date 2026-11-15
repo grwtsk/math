@@ -2046,3 +2046,255 @@ counterexample on $Z_F$ retain their scopes. This block establishes
 a joint sign inside the original $G_2$. Positivity on the whole $G_2$,
 the original radius-four stage, and the full RH and primitive
 Dirichlet GRH returns remain open.
+
+## The full three-sine block at the lower carrier
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact directed arithmetic. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+For $k=10^9$ put $X_3=\operatorname{span}_{\mathbb C}
+\{\psi_k,\psi_{k+1},\psi_{k+2}\}$ in the original bounded physical
+space and $Z_3=\Pi_{G_2}X_3$. The restriction of the projection to
+$X_3$ is injective. For every nonzero $z\in Z_3$ the same corrected
+conductor-three radius-four form satisfies
+$$
+ 14.7873<\frac{\langle z,C_2z\rangle}{E(z)}<23.7853 .
+$$
+The earlier adjacent pairs span the two-dimensional subspace of
+$X_3$ with vanishing endpoint derivative. For each bare sine the
+inner derivative at $4$ is $(-1)^m\omega_m/2$, where
+$\omega_m=m\pi/4$. The zero extension has a derivative jump and
+falls outside the original $C^2$ admissible test class. The whole
+$X_3$ belongs to the bounded physical $L^2$ domain used to define
+$R$ and the projection, which is the domain used in this result.
+
+### The original signed matrix and physical Gram
+
+Use the six directed entries already proved with all 458
+signed prime-power terms in the native orthonormal basis.
+For this full three-coordinate span call the corresponding
+matrix $M_3$. Interval evaluation of the leading principal minors
+of $M_3+3.9160 I$ and $5.0781 I-M_3$ makes them positive. For a
+symmetric matrix with upper triangular entries $(a,b,c,d,e,f)$
+in lexicographic order, the three minors are
+$a$, $ad-b^2$ and $adf+2bce-ae^2-dc^2-fb^2$. Consequently
+$$
+ -3.9160 I<M_3<5.0781 I .
+$$
+This holds over complex coefficients and compares the full
+unmasked prime form to native physical energy.
+
+Each bare mode exceeds the old sine indices, has center below
+$\Omega$, and is orthogonal to both native high sectors. The
+inherited polynomial, physical preimage and separated-sector
+Gram estimates give
+$\|\psi_m-\Pi_{G_2}\psi_m\|<5\delta$, $\delta=10^{-272}$.
+The polynomial approximation uses each single sine. Its use
+here is independent of the subsequent Fourier estimate for a
+trace-cancelled pair. With $e_m=\psi_m-\Pi_{G_2}\psi_m$, the
+true output Gram in these coordinates is
+$I-(\langle e_m,e_n\rangle)_{mn}$. For $x=\sum c_m\psi_m$ use
+$\sum|c_m|\le\sqrt3\|x\|$ and orthogonal projection. This gives
+$(1-75\delta^2)E(x)<E(\Pi_{G_2}x)\le E(x)$ when $x\ne0$.
+
+### Uncancelled Fourier tails and gamma
+
+For $\lambda=|\xi|$ and $b=|\lambda-\omega_m|$ the exact
+single-sine formula gives
+$$
+ |\widehat\psi_m(\xi)|=
+ \frac{\omega_m|\sin(4\xi)|}{b(\lambda+\omega_m)}
+ \le\frac1b\qquad(b>0).
+$$
+Use the continuous transform at the removable points.
+The squared angular mass at $b\ge H$ is at most $2/(\pi H)$,
+integrating both signs and enlarging the positive-$\lambda$
+integral to both sides of the carrier. The cancellation-dependent
+$8(2/H)^3$ mass bound fails for a bare sine at $H=500000$.
+Indeed on $\lambda=\omega_m+b$ with $H\le b\le2H<\omega_m$,
+the amplitude is at least $|\sin(4b)|/(6H)$.
+The integral of $\sin^2(4b)$ over this interval is at least
+$H/2-1/8\ge H/3$. Using both angular signs proves a mass lower
+bound $1/(108\pi H)>8(2/H)^3$. This witnesses the need to
+price the uncancelled tail separately.
+
+The two mirrored intervals of radius $H+2$ about $\pm\omega_k$
+contain the three radius-$H$ collars and lie in
+$7\cdot10^8<|\xi|<8\cdot10^8$ inside the original $\mathcal D$.
+Cauchy–Schwarz in the three native coefficients gives full
+off-collar mass at most $\theta E(x)$, $\theta=2/H$.
+On the common collar the original filters give
+$1-w\le\eta=3\cdot10^{-10}$. The Binet log input lies between
+$375000000-250001$ and $375000000+250001$.
+Its remainder is below $10^{-8}$, so
+$19.74176<A(\xi)<19.74311$. The full signed prime mask costs
+$211(\eta+\theta)E(x)$. Use $A\ge-2$ for the gamma lower tail
+and $A<61$ on the residual set for the gamma upper tail.
+
+### The actual five inverse prices
+
+For one unit native mode there is a global angular Fourier
+$L^1$ bound $17/2$. To see this, for $0\le\lambda\le2\omega_m$
+and $b\ge1/4$ use
+$\tfrac12(1/b+1/(\lambda+\omega_m))$ in the exact formula.
+Its integral in $d\lambda$ is at most
+$\log(4\omega_m)+(\log3)/2<22+1$. At $b<1/4$ use the
+physical bound $|\widehat\psi_m|\le\sqrt8<3$, at cost $3/2$.
+Above $2\omega_m$ use $(4/3)\omega_m/\lambda^2$,
+at cost $2/3$. The full angular integral is the sum divided
+by $\pi$. At $|\xi|>10^{25}$ the exact formula instead
+gives $|\widehat\psi_m|\le 2\cdot10^9/|\xi|^2$ and angular
+$L^2$ tail norm below $10^{-28}$. This far tail is used
+for the interactions with the higher sectors.
+
+Write $b_m=\Pi_{G_2}\psi_m$. Below $7\cdot10^8$ the bare tail
+has angular norm below $13/10^5$ since the carrier is more
+than $4\cdot10^7$ away. Pair it through the actual weighted
+representation with $\|K_wP\|<1/40$ and
+$\|K_w|_U\|<1/200$. Above the split the old unit sine-head
+transform is bounded pointwise by $6200\cdot7\cdot10^{-11}$.
+This uses $\omega_m<3\cdot10^7$ for the old modes and
+Cauchy–Schwarz in their $38170000$ coefficients. Use the
+new mode's angular $L^1$ bound there. For $U$ use the true
+old preimage of norm at most $10/9$ and relative error
+$10^{-60}$ above the split. The transfer to $b_m$ costs
+at most $1500\delta$. With multiplier bound 300 this gives
+$\|PRb_m\|<11/5000$ and $\|\Pi_U Rb_m\|<3/2000$.
+The inherited weighted head interaction of norm below $3/8$
+and the $W$ term below $741\cdot10^{-265}$ give
+$\|J b_m\|<3/1250$.
+
+For the actual $Y_0$ mixed entry split at $10^{25}$.
+Below it the high native preimage has Fourier supremum
+at most $6\cdot10^{-24}$ per unit preimage norm. Pair using
+$17/2$ and use the bare far tail above that split.
+The physical preimage and transfer costs give the direct
+bound
+$$
+ \frac{300((17/2)(6\cdot10^{-24})+10^{-28})+2400\delta}
+      {1-3\delta}.
+$$
+The scalar mixed term vanishes by orthogonality. Add the
+genuine first two mixed inverse prices using the old
+bounds $3\cdot10^{-6}$ and $1/159$ on the other vector,
+and $10^{-515}$ for the $D_0$ correction. This gives
+$\|J_Y b_m\|<1/5000$.
+
+For each separated native unit carrier $u_r$, below $10^{25}$
+its adjacent envelope is at most $4\cdot10^{-48}$ since
+the separation there is more than $10^{24}$. Above the split
+use the bare far tail again. After transfer to $v_r=\Pi_{G_1}u_r$
+and $b_m$, the direct mixed bound is
+$300((17/2)(4\cdot10^{-48})+10^{-28})+2700\delta$.
+Add the four actual inherited mixed inverse prices, with
+the old bounds $4\cdot10^{-21}$, $13\cdot10^{-18}$ and
+$3\cdot10^{-13}$ for $PRv_r$, $Jv_r$ and $J_Yv_r$, and the
+full $D_0$ operator bound. The scalar term vanishes by
+$b_m\perp\mathcal V$. This bounds the resulting $C_1$
+entries by $2.5\cdot10^{-16}$. The actual separated-sector
+Gram inverse then gives $\|J_{\mathcal V}b_m\|<1.5\cdot10^{-6}$.
+
+With the five original inverse norms these bounds cost less
+than $0.000121$ per unit native sine. Applying the same linear
+map bounds and $\sum |c_m|\le\sqrt3\|x\|$ gives total debit
+less than $0.000363 E(x)$ for the full span. Transfer the
+bounded $R$ from $x$ to $z=\Pi_{G_2}x$ at cost at most
+$6000\delta E(x)$. Apply the native signed matrix comparison
+and the full mask and gamma costs. The lower bound after
+the debit is positive. Use the true output energy for
+division and add $B$ on both sides.
+
+### Directed guards for the uncancelled block
+
+Take the historical checker prefix as in the preceding block,
+followed by the overlapping block up to its `q, t` assignment,
+excluding the assignment. This provides the six exact native
+matrix intervals. Append the following guards.
+
+```python
+
+def shifted_entries(shift, sign):
+    return [
+        add(scale(sign, entries[a, b]), (shift, shift) if a == b else (0, 0))
+        for a, b in pairs
+    ]
+
+def triple_product(x, y, z):
+    return multiply(multiply(x, y), z)
+
+def minors(matrix):
+    a, b, c, d, e, f = matrix
+    minor2 = add(multiply(a, d), scale(-1, multiply(b, b)))
+    minor3 = add(triple_product(a, d, f), scale(2, triple_product(b, c, e)))
+    minor3 = add(minor3, scale(-1, triple_product(a, e, e)))
+    minor3 = add(minor3, scale(-1, triple_product(d, c, c)))
+    minor3 = add(minor3, scale(-1, triple_product(f, b, b)))
+    return a, minor2, minor3
+
+prime_lower, prime_upper = F(-39160, 10**4), F(50781, 10**4)
+for shift, sign in [(-prime_lower, 1), (prime_upper, -1)]:
+    assert all(bound[0] > 0 for bound in minors(shifted_entries(shift, sign)))
+
+delta = F(1, 10**272)
+width = 500000
+eta = F(3, 10**10)
+theta = F(2, width)
+collar = width+2
+assert F(3*k, 4)-collar > 7*10**8
+assert F(11*(k+2), 14)+collar < 8*10**8
+assert F(3*k, 4)-7*10**8 > 4*10**7
+assert F(3, 4)*2*10**25-10**25 >= 10**24
+assert 2*width < F(3*k, 4)
+assert F(1, 108*width)/pi_upper > 8*F(2, width)**3
+y_min = F(7, 2)*10**8
+binet = F(5, 9)/y_min+F(9, 32)/y_min**2
+assert binet < F(1, 10**8)
+gamma_lower, gamma_upper = F(1974176, 10**5), F(1974311, 10**5)
+assert log_bounds(375000000-250001)[0]-F(1, 10**8) > gamma_lower
+assert log_bounds(375000000+250001)[1]+F(1, 10**8) < gamma_upper
+
+assert log_bounds(3200000000)[1] < 22
+assert log_bounds(3)[1] < 2
+assert (F(3, 2)+22+1+F(2, 3))/3 < F(17, 2)
+low_tail, high_tail = F(13, 10**5), F(1, 10**28)
+assert F(2, 3*4*10**7) < low_tail**2
+assert F((2*10**9)**2, 9*10**75) < high_tail**2
+assert F(3*10**7, (7*10**8)**2-(3*10**7)**2) < F(7, 10**11)
+assert 38170000 < 6200**2
+head_high = F(17, 2)*6200*F(7, 10**11)
+head_bound, u_bound = F(11, 5000), F(3, 2000)
+assert 300*(head_high+low_tail/40)+1500*delta < head_bound
+assert 300*(F(10, 9)*(head_high+F(1, 10**60))+low_tail/200)+1500*delta < u_bound
+j_bound = F(3, 1250)
+assert u_bound+F(3, 8)*head_bound+F(741, 10**265) < j_bound
+
+high_pairing = (300*(F(17, 2)*F(6, 10**24)+high_tail)+2400*delta)/(1-3*delta)
+y_bound = F(1, 5000)
+assert high_pairing+10*F(3, 10**6)*head_bound+F(25, 2*159)*j_bound+F(1, 10**515) < y_bound
+sector_count = 3*10**19+1
+gram_floor = 1-16*sector_count*delta**2
+assert sector_count*(16*delta**2)**2/gram_floor < delta**2
+v_pairing = 300*(F(17, 2)*F(4, 10**48)+high_tail)+2700*delta
+entry_bound, v_bound = F(25, 10**17), F(15, 10**7)
+assert v_pairing+10*F(4, 10**21)*head_bound+F(25, 2)*F(13, 10**18)*j_bound \
+       +F(1, 10**515)+4*F(3, 10**13)*y_bound < entry_bound
+assert sector_count*entry_bound**2/gram_floor < v_bound**2
+debit = 10*head_bound**2+F(25, 2)*j_bound**2+F(1, 10**515)+4*y_bound**2+v_bound**2/12
+assert debit < F(121, 10**6)
+
+budget = F(124997987, 10**9)
+mask_price = 211*(eta+theta)
+lower = gamma_lower*(1-eta)*(1-theta)-2*theta-prime_upper-mask_price-6000*delta-3*debit
+upper = gamma_upper+61*theta-prime_lower+mask_price+6000*delta
+assert lower > 0 and budget+lower > F(147873, 10**4)
+assert budget+upper/(1-75*delta**2) < F(237853, 10**4)
+print('PASS bare three-sine Schur block and uncancelled tail guards')
+```
+
+The sign on the entire actual $G_2$ remains open. The
+prime-419 cutoff and historical $Z_F$ small-weight falsifications
+retain their original hypotheses and domains. This result
+also leaves the known negative frequency compression at
+$x_*=3806849122861433/10^6$ at its original scope.
+[Original frequency obstruction](WeilConductorThreeRadiusFourFrequencyObstruction.lean)
