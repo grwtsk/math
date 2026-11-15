@@ -1543,9 +1543,9 @@ let h be the positive-half profile and v=h|O as in §14. Write
 C(v) ≥ ‖v‖²/100 + c R_(log 7)^O(v).
 ```
 
-This proves (12) on its entire original test class by §14. The estimate permits arbitrary original restrictions, including profiles
-that are nonzero throughout O and unrelated on reflected pairs. The
-allowance is nonnegative and stays available.
+This proves (12) on its entire original test class by §14. The
+estimate permits arbitrary original restrictions, including profiles
+that are nonzero throughout O and unrelated on reflected pairs.
 
 ### Continuous payment for the actual reflected contrast
 
@@ -1586,7 +1586,7 @@ Use `K(z)=e^(−z/2)/(2 sinh z)`, `e^(−z/2)≥1−z/2` and
 `(1+x)^−1≥1−x` for x≥0. In applying the reciprocal bound, use
 `(1−z/2)(1−x)≥1−z/2−x` for x≥0. It follows that
 `K(z) ≥ 1/(2z)−1/4−z/10`, since `1/[12(1−z²/20)]<1/10`.
-Here 2A<5/8. For the other kernel, `K(2r)=2/15) and
+Here 2A<5/8. For the other kernel, `K(2r)=2/15` and
 `K(2r−A)<23/100`. For the latter use the exact expression
 `K(3r−1)=e^(3/2)/(2^(9/2)(1−e²/64))`, bounded above using
 `e<11/4`, `(11/4)^(3/2)<457/100`, and `sqrt(2)>141/100`.
