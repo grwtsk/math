@@ -5817,3 +5817,190 @@ for name,base in options.items():
     print("PASS original q75 price branches",name,float(max(caps)),float(min(room)))
 print("PASS two disjoint capped Jensen debits through 888.66",float(sum(prices)))
 ~~~
+
+## A detached Jensen donor for E22
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 75-enclosure comparison](https://github.com/grwtsk/math/blob/746ea6d964b72b641eb3efe46e3f3570f3b103ff/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob 5031f3f3a3329d1b3a1112c73691382698aa11f1.
+The original radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f. Retain
+the complex odd physical carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$, its zero extension,
+folded measure $d\nu/\pi$, the original masks and the physical
+projection. Use the full parity-one gamma, all $458$ signed
+prime powers and zero principal-pole term for the primitive
+nonprincipal odd character modulo three. The detunings
+use $c_1=99653682.92983$ and include the reflected restrictions.
+
+The original multiplier is strictly positive on the complement
+of $E_{22}=[888.66,888.92]$ in $[888.66,897.06]$.
+Both box endpoints and the right frontier are strictly positive.
+The point $888.79$ is strictly negative. The sign guard uses
+$407$ complement cells with no bisections and checks the joint
+positive endpoint $888.66$ with the preceding interval.
+
+Use the radius-two donor $Y_{22}=[886.79,890.79]$ with center
+$c_1+888.79$. Its left endpoint lies in the preceding sign
+region past the end of E21. The gap from $Y_{21}$ to $Y_{22}$
+is $19.79$. The source enclosures check that the new donor
+satisfies the original masks and is disjoint from the earlier
+positive reservations. Thus its only negative restriction is
+$N_{E_{22}}$.
+
+Use the $18$-term negative Taylor map $V$ and the true positive
+sine-averaging map $B$. The directed positive $.02$ bin and
+nonzero negative $.0025$ cell counts are $(188,89)$.
+With $M$ the positive negative-moment matrix and $W\succ0$
+the positive diagonal weights, the earlier exact Jensen
+construction gives
+$$
+ B^*WB\preceq\mathcal P_{Y_{22}},\qquad
+ N_{E_{22}}^*N_{E_{22}}\preceq V^*MV+\delta I,
+ \qquad
+ \delta=8\epsilon(2+\epsilon)\int_{E_{22}}\eta,
+ \quad\epsilon=.52^{18}/18!.
+$$
+At $\alpha=19/20$ and $\tau=10^{-12}$ the directed residual
+$$
+ \tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                 -\tau Z^*(\alpha W)^{-1}Z
+$$
+has all $18$ positive rational lower-matrix pivots. Its row
+uncertainty is below $10^{-23}$. The calculation uses the
+original carrier Gram enclosures and $120$ Taylor terms for
+the true averaged sine carriers. Floating point supplies
+only the proposed $Z$. The exact physical comparison is
+$$
+ N_{E_{22}}^*N_{E_{22}}\preceq
+       \tfrac{19}{20}\mathcal P_{Y_{22}}+(\tau+\delta)I,
+ \qquad \tau+\delta<1.000000005\cdot10^{-12}.
+$$
+
+The guard also evaluates the previous directed polynomial
+lower matrix on this fixed donor with
+$(r,k,\alpha_0,\mu)=(40,16,9/10,10^{-15})$.
+Its first nonpositive normalized pivot occurs at zero-based
+index $22$ and lies in $(-264409,-264408)$. This exact failure
+concerns that directed sufficient matrix. The actual physical
+comparison above uses the separate Jensen construction.
+
+Reserve the new tag $\mathcal P_{Y_{22}}$ once and append
+$N_{E_{22}}$ to $W_{\mathrm{all75}}$. The genuine earlier
+tags, unchanged scalar prices and $\beta I$ remain in the
+reduced comparator. Adding the exact new scalar price divided
+by $\beta$ to each retained branch preserves cap below $0.953005$
+across all $48$ old prices and the four first-pair choices.
+The least physical room exceeds $9.0172\cdot10^{-10}$, and
+with the pooled-map price it exceeds $6.7007\cdot10^{-9}$.
+
+Contiguous signed coverage of the $76$ restrictions reaches
+$897.06$. The actual identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all76}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all76}}
+ =S_\lambda-W_{\mathrm{all76}}^*W_{\mathrm{all76}}
+ \succeq0.046995S_\lambda.
+$$
+The full remaining outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all76}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses and
+directional return.
+
+Extract the guard and pass the pinned original arithmetic
+Markdown and the Jensen donor Markdown containing the q75
+and original directed Jensen checkers. Prior checker blocks
+are selected by unique digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+prior=execute(checker("a68c45a0366fe017bb2e1c228128280ca87db2d91d3e33ca49935ce2877a0543"),
+              [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+for old,new in (
+    ('"e9":("707.62","709.62","708.60","708.66","708.63",".25"),',
+     '"e22":("886.79","890.79","888.66","888.92","888.79",".95"),'),
+    ('("708.60","710.86",".02")','("888.66","897.06",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(407,0)'),
+    ('len(pos)==98 and len(rho)==9','len(pos)==188 and len(rho)==89'),
+    ('F("9.656e-36")','F("1e-20")'),
+    ('assert c==c0+F("708.63")','assert c==c0+F("888.79")'),
+):
+    assert core.count(old)==1
+    core=core.replace(old,new)
+
+sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(core,[arithmetic,"sign"],sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete directed E22 sign check did not return")
+
+before=prior["sign_state"]
+a,b=map(F,("886.79","890.79"))
+left,right=map(F,("888.66","888.92"))
+assert before["boxes"][-1][1]<prior["y21r"]<a<before["stop"]==sign["start"]==left<right<b<sign["stop"]
+assert a-prior["y21r"]==F("19.79")
+assert (sign["boxes"],sign["stop"])==([(left,right)],F("897.06"))
+assert before["node"](before["stop"])[1]<before["Alo"]
+assert all(y<a or b<x for x,y in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*sign["pi_lower"]-F("5.55")-2>sign["c0"]+b
+
+end='assert F(T[0][0],work_grid)>F("5.9727e-8")'
+assert core.count(end)==1
+local=execute(core.split(end)[0],[arithmetic,"e22"])
+assert (local["start"],local["stop"])==(a,b)
+assert (F(local["l0"]),F(local["r0"]))==(left,right)
+assert local["c"]==local["c0"]+(a+b)/2==local["c0"]+F("888.79")
+assert local["k"]==18 and local["alpha"]==F(".95") and local["tau"]==F("1e-12")
+charge=local["tau"]+local["delta"]
+assert charge<F("1.000000005e-12")
+print("PASS directed E22 physical Jensen comparison",float(charge))
+prior["computed_failure"](local,22,F("-264409"),F("-264408"))
+
+beta,old,options=prior["beta"],prior["old"],prior["options"]
+tail=prior["tail"]+charge
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),F(4803,5330)) for p in old]
+    room=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(room)>F("9.0172e-10")
+    if name=="pooled-map":
+        assert min(room)>F("6.7007e-9")
+    print("PASS original q76 price branches",name,float(max(caps)),float(min(room)))
+print("PASS original E22 comparison through 897.06")
+~~~
