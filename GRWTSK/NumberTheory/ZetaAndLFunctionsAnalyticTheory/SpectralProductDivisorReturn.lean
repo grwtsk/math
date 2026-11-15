@@ -384,3 +384,106 @@ source-preserving proof of the point and weight map.
 This section records an analytic derivation. Lean elaboration,
 kernel replay and transitive axiom audit were NOT_RUN.
 -/
+
+/-!
+## Explicit tail and a test for missing zero multiplicity
+
+Use the completed source and `K(ρ)` above. Write `m(ρ)=ord_ρ ξ` for each
+distinct actual zero. The completion factors are nonzero in the open strip,
+so these are the analytic orders of ζ there. The head at height `T`
+contains both signs and includes every point with `|Im ρ|≤T`. Let
+`W(T)=Σ_{|Im ρ|>T} m(ρ) K(ρ)` be the remaining anchor mass.
+
+### An explicit enclosure for the tail
+
+For `T≥e` define the positive-height count
+`N(T)=Σ_{0<Im ρ≤T} m(ρ)`, and put
+
+```
+C₁ = 0.11200,   C₂ = 0.12567,   C₃ = 3.77417
+E(T) = C₁ log T + C₂ log log T + C₃
+P(T) = (1 + log(T/(2π))) / (2π T)
+Q(T) = (2 E(T) + (C₁ + C₂/log T)/2) / T²
+B₋(T) = 3 T²/(T²+3) · max(0, P(T)-Q(T))
+B₊(T) = 3 (P(T)+Q(T)).
+```
+
+Then `B₋(T)≤W(T)≤B₊(T)`. The count input is the second estimate in
+[Bellotti–Wong, arXiv:2412.15470v2, Theorem 1.1](https://arxiv.org/html/2412.15470v2#S1.Thmtheorem1).
+It bounds `|N(u)-M(u)|` by `E(u)` for `u≥e`, with
+`M(u)=u log(u/(2πe))/(2π)`. Section 3 counts orders by the argument
+principle. At a zero ordinate the closed count is the right limit
+of counts taken on contours avoiding zeros, since the divisor is locally
+finite in the bounded strip. The continuous error bound passes to that
+limit. The paper's completion differs by the nonzero factor 2.
+
+Put `S₂(T)=Σ_{Im ρ>T} m(ρ)/(Im ρ)²`. Integrating `2/u³` from each
+included ordinate to infinity and summing the nonnegative integrals gives
+`S₂(T)=2∫_T^∞ (N(u)-N(T))/u³ du`. A zero at height exactly `T` is
+subtracted in `N(T)` with its full order. Replacing `N` by `M`
+gives `P(T)` by integration by parts using
+`M'(u)=log(u/(2π))/(2π)`. The absolute error is bounded by
+`E(T)/T²+2∫_T^∞ E(u)/u³ du`. Another integration by parts expresses
+this as `2E(T)/T²+∫_T^∞ E'(u)/u² du`, which is at most `Q(T))
+because `E'(u)≤(C₁+C₂/log T)/u` for `u≥T`. The boundary terms at
+infinity vanish by the stated count estimate and the growth of `E`.
+
+For each positive-height representative `ρ=1/2+α+iγ`, pair it with
+`1-ρ` and keep their common order. As above the two `K` terms sum
+to `3 Re(1/q)` for `q=(3/2)²-(ρ-1/2)²=A+iB`. Here
+`A=γ²+9/4-α²>γ²` and `B²=4α²γ²`, so
+`γ² < A+B²/A ≤ γ²+9/4+3α² ≤ γ²+3`.
+Since `Re(1/q)=1/(A+B²/A)`, the pair contributes between
+`3/(γ²+3)` and `3/γ²` per unit of the common order. The
+ratio `γ²/(γ²+3)` is at least `T²/(T²+3)` in the strict tail.
+Thus `3T²/(T²+3)·S₂(T)≤W(T)≤3S₂(T)`, giving the enclosure.
+Each positive ordinate contributes one representative per reflected
+pair, including critical-line pairs with one point of each sign.
+
+### Test for a finite inventory
+
+At `T≥e`, assign integers `k(ρ)` to distinct verified actual zero
+locations in the closed head, with `0≤k(ρ)≤m(ρ)`. Extend `k` by zero
+at unrecorded locations. Let `H=Σ_{|Im ρ|≤T} k(ρ)K(ρ)`. Given certified
+intervals `L(2)∈[l₋,l₊]` and `H∈[h₋,h₊]`, put
+
+```
+d₋ = max(0, l₋-h₊-B₊(T))
+d₊ = l₊-h₋-B₋(T).
+```
+
+The missing weighted mass `D=Σ_{|Im ρ|≤T}(m(ρ)-k(ρ))K(ρ)` equals
+`L(2)-H-W(T)`, so `d₋≤D≤d₊`. If `d₋>0`, at least one unit of
+analytic order is missing. If `d₊<d₋`, the enclosures or inventory
+premises are inconsistent. For consistent inputs, the total missing
+multiplicity is at most `floor((1+T²)d₊)`. Indeed, for
+`x=2-Re ρ∈(1,2)`, a single missing unit costs at least
+`x/(x²+T²)≥1/(1+T²)`, since this function of `x` is increasing on
+`[1,2]` when `T≥e`. In particular `d₊<1/(1+T²)` certifies that
+every point and its full analytic order are present through `T`.
+An order-two point recorded once has a deficit of one even if its
+location already appears. For an exact collision without the inclusion
+premise, consider critical-line pairs at heights ±x of order one and
+±y of order two. Their respective masses are `3/(x²+9/4)` and
+`6/(y²+9/4)`, equal when `y²=2x²+9/4`. The test needs source-certified
+inclusion even when an inventory's scalar mass is known exactly.
+
+The same upper test can certify a smaller head through `T` from an
+inventory through `U≥T`. Use its `d₊` at `U` and the per-unit
+minimum at `T`, since the larger head deficit includes every deficit
+through `T` with nonnegative weights. The interval test can remain
+inconclusive, including when tail uncertainty exceeds the mass of one
+missing unit. The anchor can be enclosed independently using the Euler
+formula above. After `J≥2` terms its Euler sum has omitted mass at most
+`(1+log J)/J` by `Λ(n)≤log n` and the integral of `log x/x²`.
+With `H_J` the `J`th harmonic number, the interval
+`[H_J-log(J+1), H_J-log J]` for Euler's constant and certified log
+bounds enclose the other terms.
+
+This bounded test consumes exact source identification and one-sided
+analytic orders. It gives a route to coverage tests for the same
+modulus-one zero divisor in #1806 and #1807. The ordered signed Möbius
+surplus of #1815 plays no role in these estimates. The argument is
+analytic exposition. No inventory or numerical enclosure was tested.
+Lean elaboration, kernel replay and transitive axiom audit were NOT_RUN.
+-/
