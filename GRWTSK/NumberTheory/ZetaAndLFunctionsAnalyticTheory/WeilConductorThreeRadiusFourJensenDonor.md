@@ -3094,3 +3094,173 @@ try:
 finally:
     sys.argv=original_argv
 ~~~
+
+## The next enclosure through detuning 729.26
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 65-enclosure comparison](https://github.com/grwtsk/math/blob/66bd9128aa396cce3e579c484759dc485fea264b/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md)
+through detuning $726.38$, Jensen blob
+d35f345112ade6349111b7bfcd6cbd1b7ec05cf9, with four prices for
+the first two deep enclosures. The original radius-four
+arithmetic blob is 72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the original
+complex odd carrier $L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$,
+zero extension, folded measure $d\nu/\pi$, original masks and
+physical projection. The primitive nonprincipal odd character
+modulo three uses the full parity-one gamma, all $458$ signed
+prime powers and zero principal-pole term. The detunings are
+from $c_1=99653682.92983$ and include their reflections.
+
+The directed sign guard proves the original multiplier strictly
+positive on $[726.38,729.26]$ off $E_{12}=[726.38,726.52]$.
+Its endpoints are positive and the interior point $726.45$
+is negative. The guard uses $139$ complement checks and
+one bisection. The positive donor is $Y_{12}=[725.06,727.66]$.
+The preceding donor $Y_{11}=[721.54,724.54]$ ends at $724.54$,
+leaving a gap of $0.52$. The exact guard also checks separation
+from the other earlier direct and tagged positive resources.
+The overlap $[725.06,726.38]$ lies in the preceding
+strict sign region and beyond $E_{11}$, which ends at $723.08$.
+The actual negative part on $Y_{12}$ is supported in $E_{12}$
+and its output is disjoint from the previous $65$ restrictions.
+
+On the original carrier, the checked comparison is
+$$
+ N_{E_{12}}^*N_{E_{12}}
+ \preceq \tfrac14\mathcal P_{Y_{12}}+(10^{-12}+\delta_{E_{12}})I,
+ \qquad 0<\delta_{E_{12}}<5.030\cdot10^{-27}.
+$$
+The positive Jensen form $B^*WB$ uses $123$ positive
+$.02$ bins with directed prices on eight $.0025$ source
+cells per bin. Binwise Cauchy–Schwarz on the true averages
+gives $B^*WB\preceq\mathcal P_{Y_{12}}$. The upper negative density $\eta$ has
+$46$ nonzero $.0025$ cells. The moment map $V$ uses $18$
+negative Taylor terms at the exact center $c=c_1+726.45$.
+The physical tail uses $\epsilon=.28^{18}/18!$ and
+$\delta_{E_{12}}=8\epsilon(2+\epsilon)\int_{E_{12}}\eta$.
+
+For $\tau=10^{-12}$, the Jensen square completion uses
+the directed positive residual
+$$
+ R_Z=\tau M^{-1}
+ -(V^*-B^*Z)^*(V^*-B^*Z)
+ -\tau Z^*(\tfrac14 W)^{-1}Z\succ0 .
+$$
+The numerical solve proposes $Z$. The rational verification
+uses $120$ Taylor terms for each exact positive sine average
+to enclose the $18$ physical residual columns, with $L^2$
+errors below $1.801\cdot10^{-48}$. The actual physical Gram
+uses phase $8c$, with the equality $c=c_1+726.45$ checked
+at that step. The matrix row width is below $10^{-23}$
+and all $18$ exact leading pivots are positive. The first
+pivot exceeds $4.3485\cdot10^{-10}$.
+
+The negative witness at $726.45$ rules out a zero scalar charge
+for this donor. Choose a nonzero frequency function supported
+where the original multiplier is negative inside $E_{12}$.
+It has positive negative energy and zero positive energy.
+The folded restriction to the bounded donor interval has
+dense range by the entire sine transform and Fourier
+uniqueness argument above. The weighted forms are bounded
+there, so the failure transfers to the physical carrier.
+
+Reserve $\mathcal P_{Y_{12}}$ separately in the reduced
+comparator and append the disjoint $N_{E_{12}}$ to form
+$W_{\mathrm{all66}}$. The earlier genuine tagged inputs and
+the lower bound $\beta I$ apply in the reduced comparator.
+Add $(10^{-12}+\delta_{E_{12}})/\beta$ to the scalar branch and
+include $\tfrac14$ among the disjoint positive coefficients.
+All $48$ original price choices under each of the four
+prices for the first deep pair retain the cap below
+$0.953005$. The least physical room with the common-map
+price is greater than $6.7057\cdot10^{-9}$.
+
+Contiguous signed coverage reaches $729.26$. The original
+physical identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all66}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad
+ S_{\mathrm{all66}}=S_\lambda-W_{\mathrm{all66}}^*W_{\mathrm{all66}}
+ \succeq0.046995 S_\lambda .
+$$
+For the original seven leading inverses and directional
+return the remaining sign is
+$\|N_{\mathrm{out}}S_{\mathrm{all66}}^{-1}N_{\mathrm{out}}^*\|\le1$
+over the full actual outside support.
+
+Extract the following guard and pass the pinned radius-four
+arithmetic Markdown, the Jensen donor Markdown with the E9,
+E10 and E11 checkers, and `sign` or `e12`.
+The E9 checker is selected by its unique digest and supplied
+with the checked E12 geometry, center, sign counts and
+price sum. Both modes are required for the joint result.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic_path,jensen_path,mode=sys.argv
+assert mode in ("sign","e12")
+pinned_e9="a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654"
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen_path).read_text(),re.M|re.S)
+matches=[block for block in blocks if sha256(block.encode()).hexdigest()==pinned_e9]
+pinned_e10="5b0ca3047d221502a2bff150d0ad453af405cdc5396f55f0d32ca16fa7dc63cb"
+assert len(matches)==1
+assert sum(sha256(block.encode()).hexdigest()==pinned_e10 for block in blocks)==1
+pinned_e11="0defd3b7ba201a25e1983b6f410579b7819d68cf25b980c542d75e760acfdba4"
+assert sum(sha256(block.encode()).hexdigest()==pinned_e11 for block in blocks)==1
+code=matches[0]
+
+# These are the new input parameters to the same directed source arithmetic.
+changes=(
+    ('"e9":("707.62","709.62","708.60","708.66","708.63",".25")',
+     '"e12":("725.06","727.66","726.38","726.52","726.45",".25")'),
+    ('("708.60","710.86",".02")','("726.38","729.26",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(139,1)'),
+    ('len(pos)==98 and len(rho)==9','len(pos)==123 and len(rho)==46'),
+    ('0<delta<F("9.656e-36")','0<delta<F("5.030e-27")'),
+    ('assert c==c0+F("708.63")','assert c==c0+F("726.45")'),
+    ('F(T[0][0],work_grid)>F("5.9727e-8")','F(T[0][0],work_grid)>F("4.3485e-10")'),
+    ('assert F("640.32")<intervals[0][0]','assert F("724.54")<intervals[0][0]'),
+)
+for earlier,later in changes:
+    assert code.count(earlier)==1
+    code=code.replace(earlier,later)
+marker="base_options = {"
+assert code.count(marker)==1
+code=code.split(marker)[0]+'''assert F("574.58")<F("580.62")<F("590.62")<F("621.06")<F("625.06")
+assert F("625.06")<F("627.98")<F("631.98")<F("636.32")<F("640.32")
+assert F("640.32")<F("707.62")<F("709.62")<F("709.64")<F("712.24")
+assert F("712.24")<F("721.54")<F("724.54")<start<stop<F("729.26")
+assert F("723.08")<F(l0)<F(r0)<=stop
+pair_options={
+    "published-first":F("5e-9")+F("8e-10"),
+    "repriced-first":F("4.5e-10")+F("8e-10"),
+    "joint-residual":F("7.47626e-10"),
+    "pooled-map":F("1e-12"),
+}
+caps={}
+for label,pair_price in pair_options.items():
+    spent=pair_price+F("2.356e-16")+F("6.382e-23")+F("6e-12")+F("8e-23")+F("9.656e-36")+F("6.501e-25")+F("1.647e-28")+tau+delta
+    all_caps=[max(F(".953004")+(quoted+spent)/beta,F(".95"),alpha) for quoted in branches]
+    assert len(all_caps)==48 and max(all_caps)<F(".953005")
+    caps[label]=(max(all_caps),old_room-spent)
+assert caps["published-first"][1]>F("9.067e-10")
+assert caps["repriced-first"][1]>F("5.4567e-9")
+assert caps["joint-residual"][1]>F("5.95909e-9")
+assert caps["pooled-map"][1]>F("6.7057e-9")
+print("PASS exact signed donor E12 and 48x4 price combinations",
+      {label:(float(cap),float(room)) for label,(cap,room) in caps.items()})
+'''
+original_argv=sys.argv
+try:
+    sys.argv=[__file__,arithmetic_path,mode]
+    exec(compile(code,jensen_path,"exec"),{"__name__":"__main__"})
+finally:
+    sys.argv=original_argv
+~~~
