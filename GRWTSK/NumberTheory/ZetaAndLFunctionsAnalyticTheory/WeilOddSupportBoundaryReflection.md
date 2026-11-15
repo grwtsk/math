@@ -980,3 +980,69 @@ the *observed* source as nonauthoritative model data; and
 must independently check worker/effect receipts before offering a
 scoped external API. There was **no** new Lean check, model training,
 harness execution or authorized provider effect in this note.
+
+## 12. C0010/T4: executable rational sine-envelope audit
+
+**2026-11-14; grwtsk contributors; AI-assisted.** This section adds a
+source-owned reproducible finite arithmetic verifier to the concurrent
+**written** all-admissible conductor-three argument of §11. It is not
+a new Lean declaration, a kernel check, or independent mathematical review.
+
+The complete Python standard-library checker is
+[`scripts/verify_odd_three_sine_hs.py`](../../../scripts/verify_odd_three_sine_hs.py),
+Git blob `b35434bed50c8a6ba218d01575e1964cae9a93e6`.
+Local command: `python3 /mnt/data/c0010_t4/verify_q3_sine_hs.py`
+(Python 3.13.5); exit 0, `FINITE_INTEGER_ASSERTIONS_PASS`.
+Script SHA-256: `c7e6323aa011a781c2ef47a7bac0e8c1e3e32149c88778884064282c09d177`.
+Output SHA-256: `334247935efa70031e5b95cff457f0ca7839756b46ff0e8d58b903594731a6d2`.
+Published script bytes are the exact executed bytes, though the source
+tree gives the script a functional name.
+
+Reproduced from the original embedded checker in
+[hs#2 comment 6886476754](https://github.com/grwtsk/hs/issues/2#issuecomment-6886476754):
+
+```text
+tail_m_lower_scaled: 1214817257836 / 1000000000000
+positive_deficit_cells: 1381; last_positive_index: 20275
+HS_numerator: 124086931321930434849361507294029572022081586296979829
+HS_denominator: 161703598507366392702253809664000000000000000000000000
+```
+
+Both exact comparisons `100*numerator < 81*denominator` and
+`62500*numerator < 47961*denominator` passed. The second
+is the §11 written candidate threshold `||B||HS < 219/250`,
+subject to the explicit true-function enclosure and source-return
+proof obligations in that section.
+
+Additional exact rational subchecks give a **written** universal
+trigonometric recurrence error `<212/10^12` for the **same**
+first-12-term integer sine/cosine algorithm under its stated
+argument and period limits. The all-native signed prime-response
+error is `<3014408/(25*10^12)<10^-6` at each grid midpoint,
+below the embedded checker charge. The finite script separately
+checks Machin-pi, logarithm, sqrt, gamma-series tail, derivative
+and sinc-grid arithmetic, and enumerates all 32768 frequency cells.
+The original source inventory remains n=2,3,4,5,6,7 with
+n=3,6 zero weights and a **genuine n=4 prime square**:
+`Lambda(4)=log2`, though its shift is `log4`.
+
+Four deliberate mutations—reversing the n=4 response sign, deleting
+n=4, collapsing the pi bracket and halving the grid—each caused
+the original verifier to exit nonzero in local tests. These negative
+controls do not establish correctness against every code error.
+
+**Trust boundary:** This is a finite exact-arithmetic PASS, not
+independent checker certification, kernel replay or proof-status
+promotion. The printed integers prove an analytic all-test bound
+only insofar as the source-to-sine Plancherel normalization, gamma
+tail, all-frequency derivative and sinc rectangle enclosures,
+and actual complete native signed Weil source identity are proved.
+The accompanying §11 gives a **written analytic proof candidate**;
+the Lean import, elaboration, transitive axioms, exact statement
+correspondence and independent mathematical review remain
+`NOT_RUN` or `UNASSESSED`.
+
+Even if the single q=3,j=0 original source stage is independently
+accepted, every other conductor/window, both zeta pole orientations,
+the genuine `PrimitiveNegativeWitness` and unconditional RH and
+primitive Dirichlet GRH including conductor-one zeta remain **UNPROVED**.
