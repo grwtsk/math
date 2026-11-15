@@ -97,6 +97,13 @@ private theorem firstRunPrices_eq :
       price literalRawDeficit (i.castLE (by decide)) := by
   decide +kernel
 
+/-- The checked price table restricted to the first retained run. -/
+def firstRetainedRunPrice (i : Fin 97) : ℕ := firstRunPrices (i.castLE (by decide))
+
+theorem firstRetainedRunPrice_eq (i : Fin 97) :
+    firstRetainedRunPrice i = price literalRawDeficit (i.castLE (by decide)) :=
+  firstRunPrices_eq i
+
 set_option maxRecDepth 32768 in
 set_option maxHeartbeats 3000000 in
 private theorem firstRunSincs_eq :
