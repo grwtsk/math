@@ -328,4 +328,101 @@ theorem periodicMultiplier_eq_kernel_integral (a : ℕ) (w : ℝ) :
       simp_rw [F, expDifference]
       rw [tsum_mul_left, tsum_mul_right, ← parityKernel_eq_tsum_multiplierRate a hr]
 
+private theorem two_mul_abs_le_sq_add_sq (a t : ℝ) :
+    2 * a * |t| ≤ a ^ 2 + t ^ 2 := by
+  have h : 0 ≤ (a - |t|) ^ 2 := sq_nonneg _
+  have heq : (a - |t|) ^ 2 = a ^ 2 - 2 * a * |t| + t ^ 2 := by
+    calc
+      (a - |t|) ^ 2 = a ^ 2 - 2 * a * |t| + |t| ^ 2 := by ring
+      _ = a ^ 2 - 2 * a * |t| + t ^ 2 := by rw [sq_abs]
+  linarith
+
+private theorem two_mul_multiplierSummand_sub_eq {a x y : ℝ} (ha : a ≠ 0)
+    (hx : a ^ 2 + x ^ 2 ≠ 0) (hy : a ^ 2 + y ^ 2 ≠ 0) :
+    2 * multiplierSummand a x - 2 * multiplierSummand a y =
+      (2 * a * (x - y) * (x + y)) / ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) := by
+  unfold multiplierSummand
+  field_simp [ha, hx, hy]
+  ring
+
+private theorem two_mul_multiplierSummand_abs_sub_le {a : ℝ} (ha : 0 < a) (x y : ℝ) :
+    |2 * multiplierSummand a x - 2 * multiplierSummand a y| ≤ (2 / a ^ 2) * |x - y| := by
+  have ha2 : 0 < a ^ 2 := sq_pos_of_pos ha
+  have hdx : 0 < a ^ 2 + x ^ 2 := add_pos_of_pos_of_nonneg ha2 (sq_nonneg x)
+  have hdy : 0 < a ^ 2 + y ^ 2 := add_pos_of_pos_of_nonneg ha2 (sq_nonneg y)
+  have hden_pos : 0 < (a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2) := mul_pos hdx hdy
+  have hsub := two_mul_multiplierSummand_sub_eq ha.ne' hdx.ne' hdy.ne'
+  rw [hsub, abs_div, abs_of_pos hden_pos]
+  have h1 : 2 * a ^ 3 * |x| ≤ (a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2) := by
+    have hx_le := two_mul_abs_le_sq_add_sq a x
+    have hy_le : a ^ 2 ≤ a ^ 2 + y ^ 2 := le_add_of_nonneg_right (sq_nonneg y)
+    calc
+      2 * a ^ 3 * |x| = (2 * a * |x|) * a ^ 2 := by ring
+      _ ≤ (a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2) := mul_le_mul hx_le hy_le ha2.le hdx.le
+  have h2 : 2 * a ^ 3 * |y| ≤ (a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2) := by
+    have hy_le := two_mul_abs_le_sq_add_sq a y
+    have hx_le : a ^ 2 ≤ a ^ 2 + x ^ 2 := le_add_of_nonneg_right (sq_nonneg x)
+    calc
+      2 * a ^ 3 * |y| = a ^ 2 * (2 * a * |y|) := by ring
+      _ ≤ (a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2) := mul_le_mul hx_le hy_le (by positivity) hdx.le
+  have hsum : 2 * a ^ 3 * (|x| + |y|) ≤ 2 * ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) := by
+    calc
+      2 * a ^ 3 * (|x| + |y|) = 2 * a ^ 3 * |x| + 2 * a ^ 3 * |y| := by ring
+      _ ≤ _ := add_le_add h1 h2
+      _ = 2 * ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) := by ring
+  have htri : 2 * a ^ 3 * |x + y| ≤ 2 * ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) := by
+    calc
+      2 * a ^ 3 * |x + y| ≤ 2 * a ^ 3 * (|x| + |y|) :=
+        mul_le_mul_of_nonneg_left (abs_add_le x y) (by positivity)
+      _ ≤ _ := hsum
+  have hbound : 2 * a * |x + y| ≤ (2 / a ^ 2) * ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) := by
+    calc
+      2 * a * |x + y| = (2 * a ^ 3 * |x + y|) / a ^ 2 := by
+        field_simp [ha2.ne']
+      _ ≤ (2 * ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2))) / a ^ 2 :=
+        div_le_div_of_nonneg_right htri ha2.le
+      _ = (2 / a ^ 2) * ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) := by ring
+  have hnum : |2 * a * (x - y) * (x + y)| = |x - y| * (2 * a * |x + y|) := by
+    calc
+      |2 * a * (x - y) * (x + y)| = |x - y| * |2 * a * (x + y)| := by
+        have : 2 * a * (x - y) * (x + y) = (x - y) * (2 * a * (x + y)) := by ring
+        rw [this, abs_mul]
+      _ = |x - y| * (2 * a * |x + y|) := by
+        congr 1
+        rw [abs_mul, abs_of_pos (show 0 < 2 * a by positivity)]
+  rw [hnum]
+  have hdiv : (|x - y| * (2 * a * |x + y|)) / ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) =
+      |x - y| * ((2 * a * |x + y|) / ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2))) := by ring
+  rw [hdiv]
+  calc
+    |x - y| * ((2 * a * |x + y|) / ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2))) ≤
+        |x - y| * ((2 / a ^ 2) * ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2)) / ((a ^ 2 + x ^ 2) * (a ^ 2 + y ^ 2))) :=
+      mul_le_mul_of_nonneg_left (div_le_div_of_nonneg_right hbound hden_pos.le) (abs_nonneg _)
+    _ = (2 / a ^ 2) * |x - y| := by
+      rw [mul_div_cancel_right₀ _ hden_pos.ne']
+      ring
+
+/-- Lipschitz continuity of each parity-one periodic multiplier summand across the whole real line. -/
+theorem periodicMultiplierTerm_one_abs_sub_le
+    (j : ℕ) (x y : ℝ) :
+    |periodicMultiplierTerm 1 x (j : ℝ) -
+      periodicMultiplierTerm 1 y (j : ℝ)| ≤
+      (8 / (4 * (j : ℝ) + 3) ^ 2) * |x - y| := by
+  have hj : 0 ≤ (j : ℝ) := Nat.cast_nonneg _
+  have ha_pos := multiplierRate_pos 1 hj
+  have hbase := two_mul_multiplierSummand_abs_sub_le ha_pos x y
+  unfold periodicMultiplierTerm
+  have hrate : multiplierRate 1 (j : ℝ) = (4 * (j : ℝ) + 3) / 2 := by
+    unfold multiplierRate
+    ring
+  have hden : 0 < 4 * (j : ℝ) + 3 := by positivity
+  have hcoeff : 2 / (multiplierRate 1 (j : ℝ)) ^ 2 = 8 / (4 * (j : ℝ) + 3) ^ 2 := by
+    rw [hrate]
+    have : ((4 * (j : ℝ) + 3) / 2) ^ 2 = (4 * (j : ℝ) + 3) ^ 2 / 4 := by ring
+    rw [this]
+    field_simp [hden.ne']
+    ring
+  rw [hcoeff] at hbase
+  exact hbase
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddMultiplierBounds
