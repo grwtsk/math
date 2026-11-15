@@ -1205,3 +1205,324 @@ corrected complement remains open. The radius-four stage and
 the global RH and primitive Dirichlet GRH returns still require
 all original characters and windows, exact dual phases and zero
 multiplicities, and the conductor-one pole terms.
+
+## The historical large-weight carrier in the current complement
+
+2026-11-14, grwtsk contributors, AI-assisted. Written analytic proof
+with exact directed arithmetic. Lean elaboration, fresh kernel replay
+and transitive axiom audit are NOT_RUN. Independent review is UNASSESSED.
+
+Use the exact native datum $j=4800000000$ of
+[WeightedSchurSource §8](WeilConductorThreeRadiusFourWeightedSchurSource.lean#L314).
+Thus $g=\psi_j+[j/(j+1)]\psi_{j+1}$ is the original real odd compact
+$C^2$ test, with finite full gamma energy by the same support and
+derivative bounds. The original datum there was projected onto $Z_F$
+to falsify a proposed uniform small-weight inequality. Here project
+the same normalized native input $u=g/\|g\|$ onto the actual $G_2$,
+and set $z=\Pi_{G_2}u$.
+
+The vector $z$ is nonzero. On the actual five-times corrected form
+from the preceding sections,
+$$
+\frac{206167}{10000}<\frac{\langle z,C_2z\rangle}{E(z)}
+ <\frac{206175}{10000}.
+$$
+Both estimates use the actual radius-four parity-one conductor-three
+source, signed inventory, residual frequency set, both angular signs
+with measure $d\xi/(2\pi)$, and physical inverse domains.
+
+### Directed enclosure of the signed prime contribution
+
+For $f=\psi_j+\psi_{j+1}$ use the physical overlap calculation above
+with $\alpha=\pi/8$ and $\nu=(2j+1)\pi/8$. For an active lag $r=\log n$
+and $L=8-r$, it gives the signed identity with a controlled remainder
+$$
+\frac{C_f(r)}{E(f)}
+ = F(L)\cos(\nu r)+\varepsilon_r,\qquad
+ F(L)=\frac{\sin(\alpha L)-\alpha L\cos(\alpha L)}{8\alpha},
+ \qquad |\varepsilon_r|\le 1/j .
+$$
+The same endpoint vanishing and one integration by parts bound the
+oscillatory term. In particular this comparison only uses the bounded
+physical prime form on $f$. It retains each signed coefficient
+$2\log(p)\chi_3(n)/\sqrt n$, where $n=p^e\le2980$ and $p\ne3$.
+
+For a log input $n=2^k v$, $1\le v<2$, use the first 26 positive
+atanh terms at $y=(v-1)/(v+1)$ and the upper remainder
+$2y^{53}/[53(1-y^2)]$, and use the same bounds at $1/3$ for $\log 2$.
+Round the resulting log interval outward on the $10^{-22}$ grid.
+The checker obtains the interval for $\pi$ on that grid from Machin's
+identity and the alternating arctangent series. It encloses $\sqrt n$
+using the integer square root of $n(10^{22})^2$ and the next integer.
+
+Since $F$ increases on $[0,8]$, its lower and upper input lengths
+are $8-\log_{\mathrm{upper}}n$ and $8-\log_{\mathrm{lower}}n$.
+Bound $F$ below by the first eight alternating terms and above by
+the first seven, using the exact series from the preceding section.
+At each endpoint choose the outward powers of $\alpha$ by the
+term sign. The interval is intersected with $[0,1]$.
+
+For the phase, first enclose $c=(2j+1)\log n/8$. Subtract the same
+integer multiple $2m$ from both endpoint values, choosing
+$m=\lfloor(c_{\mathrm{lower}}+1)/2\rfloor$. Then
+$q=c_{\mathrm{lower}}-2m\in[-1,1)$.
+The exact cosine is $\cos(\pi(c-2m))$. Approximate
+$\cos(\pi_{\mathrm{lower}}q)$ by its Taylor sum through degree 24.
+The remainder is at most $(22/7)^{26}/26!$, using the zero odd term
+at degree 25. Cosine is one-Lipschitz, so also pay
+$\pi_{\mathrm{upper}}(c_{\mathrm{upper}}-c_{\mathrm{lower}})
++\pi_{\mathrm{upper}}-\pi_{\mathrm{lower}}$.
+This reduces the dimensionless phase before multiplication by
+$\pi$ and retains the exact periodic identity, including if its
+interval crosses the chosen reduction endpoint.
+
+Use interval multiplication for each true signed coefficient,
+overlap, and cosine, and round each signed product outward
+on the $10^{-10}$ grid. The full sum over all 458 terms lies in
+$[8186499442,8186508068]/10^{10}$.
+The oscillatory error for $f$ is at most $211/j$ by the original
+absolute coefficient sum. The transfer from $f$ to $g$ costs
+at most $844/j$ in the quadratic value and $422/j$ in the
+normalization, since $\|f-g\|=1/(j+1)$, $E(g)\ge1$, and
+$E(f)/E(g)\le1+2/j$. Thus the actual normalized signed prime term
+on $g$ and on $u$ lies in
+$$
+\left(\frac{81864}{100000},\,\frac{81866}{100000}\right).
+$$
+This interval uses the exact native signs as well as the magnitudes.
+
+### Gamma, Fourier tail and physical projection
+
+Use the mirrored collar $I$ of radius $H=10^4$ at $\pm\omega$,
+$\omega=j\pi/4$. On it $3.5\cdot10^9<|\xi|<4\cdot10^9$ and it
+belongs to $\mathcal D$ away from the paid pair. The inherited
+high pass and all-lobe low stop give $1-w\le\eta=3\cdot10^{-10}$.
+The adjacent trace tail gives complete off-band mass at most
+$\theta=8(2/H)^3$ on unit input $u$. Its norm there is at most
+$8\cdot10^{-6}$.
+
+Use the full original gamma term $A(\xi)$. With $y=|\xi|/2$,
+the Binet error bound in the original source gives
+$$
+\left|A(\xi)-\log\frac{3|\xi|}{2\pi}\right|
+ \le \frac{5}{9y}+\frac{9}{32y^2}.
+$$
+The first term bounds $\psi(3/4+iy)-\log(3/4+iy)$ and the
+second bounds $\operatorname{Re}\log(3/4+iy)-\log y$ using
+$\log(1+t)\le t$. The sum is below $10^{-8}$ on the collar.
+Since $\pi>3$, its log input $3|\xi|/(2\pi)$ lies between
+$1800000000-H/2$ and $1800000000+H/2$. The same rational log
+enclosure yields $21.31104<A(\xi)<21.31106$ on $I$.
+[Inherited Binet and filter bounds](WeilConductorThreeRadiusFourMiddleReturn.lean#L105)
+
+Write $\delta=10^{-272}$. The old projection estimates apply to the
+two native modes, which are above $E_s$ and below $\Omega$ and
+disjoint from the high-sector indices. This gives
+$\|u-\Pi_{G_1}u\|<4\delta$. Each unit native carrier of
+$\mathcal V$ is physically orthogonal to $u$. Hence each mixed
+entry with the corresponding projected $v_r$ is less than
+$16\delta^2$, by the two orthogonal projection defects.
+The actual sector Gram lower bound
+$\kappa=1-16N\delta^2$, $N=3\cdot10^{19}+1$, gives squared
+norm of the projection onto $\mathcal V$ less than
+$N(16\delta^2)^2/\kappa<\delta^2$. Therefore
+$\|z-u\|<5\delta$ and $1-5\delta<\|z\|\le1$.
+
+### All five actual Schur corrections
+
+The old $E_s$ sine transforms on $I$ have absolute value
+below $5\cdot10^{-12}$, using $\omega_m<3\cdot10^7$ and
+$|\xi^2-\omega_m^2|>\xi^2/2$. Hence
+$\|1_I K|_{E_s}\|<31\cdot10^{-7}$ by summing their squared
+norms with angular measure less than $H$.
+Splitting the original $R$ pairing at $I$, using its
+multiplier bound $300$, the old $U$ preimage norm at most
+$10/9$ and error at most $10^{-60}$ relative to the preimage,
+then transferring $u$ to $z$, gives
+$\|PRz\|,\|\Pi_U Rz\|<p_0=1/250$.
+
+The weighted representation $R=K_w^*s_4 K_w$ gives a
+sharper old mixed bound here. The inherited $U$ and $P$
+bounds give $\|K_w|_U\|^2<1/49900$ and $\|K_wP\|<1/40$.
+The first follows from the same nested $U\subset U_{\mathrm{new}}$
+and its actual projected bound. With $\|s_4\|_{\infty,\mathcal D}<300$
+and $\|A_{23}^{-1}\|\le10$, this gives
+$\|\Pi_U RP A_{23}^{-1}\|<3/8$. The $W$ component keeps the
+$741\cdot10^{-265}$ estimate. Hence
+$\|Jz\|<(1+3/8)p_0+741\cdot10^{-265}<z_0=3/500$.
+[Weighted projection bounds](WeilConductorThreeRadiusFourWeightedSchurSource.lean#L172)
+
+For a unit $a\in Y_0$ with true preimage $h\in Y$, the earlier
+high tail bound gives $\|1_I Kh\|<6\cdot10^{-22}\|h\|$.
+Thus the direct $R$ mixed entry is bounded by
+$[300(8\cdot10^{-6}+6\cdot10^{-22})+2400\delta]/(1-3\delta)$.
+Add the original $A_{23}$, $D$ and $D_0$ mixed prices,
+respectively $10(3\cdot10^{-6})p_0$, $(25/2)(1/159)z_0$ and
+$10^{-515}$. They use the same high estimates on $a$.
+The scalar $B I$ mixed term vanishes by physical orthogonality.
+This gives $\|J_Yz\|<y_0=3/1000$.
+
+For each $v_r$ of the separated sector, the native carrier
+separation exceeds $10^{25}$. The whole-line two-envelope
+estimate pays less than $3\cdot10^{-44}$ for the native $R$
+pairing, before the projection transfer of $2700\delta$.
+The four old mixed prices, using the established uniform bounds
+on $v_r$, give $|\langle v_r,C_1z\rangle|<4\cdot10^{-15}$.
+The scalar $B I$ term again vanishes by orthogonality.
+The true projected norm is bounded using $\Gamma^{-1}$:
+$$
+\|J_{\mathcal V}z\|^2
+ \le \frac{N(4\cdot10^{-15})^2}{\kappa}<(3\cdot10^{-5})^2 .
+$$
+
+The difference between the original signed prime expectation
+and the masked residual prime expectation is bounded by
+$211(\theta+\eta)$ using the bound on the entire complement
+of $I$ and the true filter on $I$. The original gamma lower
+bound there is $-2$, and the gamma upper bound on the
+residual set is 61. Thus the diagonal residual is enclosed
+using the on-collar gamma bounds, the signed prime interval,
+the full mask price, and the physical transfer $3000\delta$.
+Subtract the true five inverse prices
+$$
+10p_0^2,\quad (25/2)z_0^2,\quad 10^{-515},\quad
+4y_0^2,\quad (3\cdot10^{-5})^2/12
+$$
+for the lower estimate and add $B$ after dividing by $E(z)$.
+For the upper estimate use $E(z)>(1-5\delta)^2$ and
+subtract nonnegative terms. The exact finite comparisons
+below yield the claimed interval.
+
+```python
+from fractions import Fraction as F
+from functools import cache
+from math import factorial, isqrt
+
+source_grid = 10**22
+atom_grid = 10**10
+j = 4800000000
+
+def round_out(lower, upper, grid):
+    return F(lower*grid // 1, grid), F(-((-upper*grid) // 1), grid)
+
+def log_from_atanh(y):
+    lower = 2*sum(y**(2*k+1)/(2*k+1) for k in range(26))
+    return lower, lower + 2*y**53/(53*(1-y*y))
+
+log2_lower, log2_upper = log_from_atanh(F(1, 3))
+
+@cache
+def log_bounds(n):
+    k = n.bit_length()-1
+    q = 2**k
+    lower, upper = log_from_atanh(F(n-q, n+q))
+    return round_out(k*log2_lower+lower, k*log2_upper+upper, source_grid)
+
+def atan_bounds(y):
+    upper = sum((-1)**k*y**(2*k+1)/(2*k+1) for k in range(17))
+    return upper-y**35/35, upper
+
+atan5_lower, atan5_upper = atan_bounds(F(1, 5))
+atan239_lower, atan239_upper = atan_bounds(F(1, 239))
+pi_lower, pi_upper = round_out(
+    16*atan5_lower-4*atan239_upper, 16*atan5_upper-4*atan239_lower,
+    source_grid,
+)
+assert 3 < pi_lower <= pi_upper < F(22, 7)
+alpha_lower, alpha_upper = pi_lower/8, pi_upper/8
+
+def overlap_bound(length, last, upper):
+    return sum(
+        (-1)**(m+1)*F(m, 4*factorial(2*m+1))
+        * (alpha_upper if bool(m % 2) == upper else alpha_lower)**(2*m)
+        * length**(2*m+1)
+        for m in range(1, last+1)
+    )
+
+def cosine_bounds(log_lower, log_upper):
+    phase_lower = F(2*j+1, 8)*log_lower
+    phase_upper = F(2*j+1, 8)*log_upper
+    period = (phase_lower+1)//2
+    residue = phase_lower-2*period
+    assert -1 <= residue < 1
+    angle = pi_lower*residue
+    value = sum((-1)**k*angle**(2*k)/factorial(2*k) for k in range(13))
+    error = (pi_upper*(phase_upper-phase_lower) + pi_upper-pi_lower
+             + F(22, 7)**26/factorial(26))
+    return max(-1, value-error), min(1, value+error)
+
+def product_bounds(x, y):
+    corners = [a*b for a in x for b in y]
+    return min(corners), max(corners)
+
+count = 0
+sum_lower = sum_upper = F(0)
+for prime in range(2, 2981):
+    if prime == 3 or any(prime % m == 0 for m in range(2, isqrt(prime)+1)):
+        continue
+    n = prime
+    while n <= 2980:
+        lag_lower, lag_upper = log_bounds(n)
+        assert 0 < lag_lower <= lag_upper < 8
+        root_floor = isqrt(n*source_grid**2)
+        log_p_lower, log_p_upper = log_bounds(prime)
+        magnitude = 2*log_p_lower*source_grid/(root_floor+1), 2*log_p_upper*source_grid/root_floor
+        signed = magnitude if n % 3 == 1 else (-magnitude[1], -magnitude[0])
+        overlap = (max(0, overlap_bound(8-lag_upper, 8, False)),
+                   min(1, overlap_bound(8-lag_lower, 7, True)))
+        term = product_bounds(product_bounds(signed, overlap),
+                              cosine_bounds(lag_lower, lag_upper))
+        lower, upper = round_out(*term, atom_grid)
+        sum_lower += lower
+        sum_upper += upper
+        count += 1
+        n *= prime
+
+assert count == 458
+assert sum_lower*atom_grid == 8186499442 and sum_upper*atom_grid == 8186508068
+print('signed envelope integer numerators:', sum_lower*atom_grid, sum_upper*atom_grid)
+prime_lower, prime_upper = F(81864, 100000), F(81866, 100000)
+assert prime_lower < sum_lower-F(1477, j) and sum_upper+F(1477, j) < prime_upper
+
+width, delta = 10**4, F(1, 10**272)
+theta, eta = 8*F(2, width)**3, F(3, 10**10)
+p_bound, z_bound, y_bound, v_bound = F(1, 250), F(3, 500), F(3, 1000), F(3, 10**5)
+y_min = F(17, 10)*10**9
+assert F(3, 4)*j-width > 2*y_min
+assert F(5, 9)/y_min+F(9, 32)/y_min**2 < F(1, 10**8)
+gamma_lower, gamma_upper = F(2131104, 100000), F(2131106, 100000)
+assert log_bounds(1800000000-width//2)[0]-F(1, 10**8) > gamma_lower
+assert log_bounds(1800000000+width//2)[1]+F(1, 10**8) < gamma_upper
+assert theta == F(8, 10**6)**2
+assert width*38170000*F(5, 10**12)**2 < F(31, 10**7)**2
+raw_low = 300*(F(31, 10**7)+F(8, 10**6))
+assert F(10, 9)*(raw_low+300*F(1, 10**60))+1500*delta < p_bound
+assert F(1, 49900) < F(1, 200)**2
+assert F(528, 900000) < F(1, 40)**2
+assert (1+F(3, 8))*p_bound+F(741, 10**265) < z_bound
+assert (300*(F(6, 10**22)+F(8, 10**6))+2400*delta)/(1-3*delta) \
+       + 10*F(3, 10**6)*p_bound+F(25, 2*159)*z_bound+F(1, 10**515) < y_bound
+sector_count = 3*10**19+1
+gram_floor = 1-16*sector_count*delta**2
+assert sector_count*(16*delta**2)**2/gram_floor < delta**2
+entry_bound = F(4, 10**15)
+assert F(3, 10**44)+2700*delta+10*F(4, 10**21)*p_bound \
+       + F(25, 2)*F(13, 10**18)*z_bound+F(1, 10**515) \
+       + 4*F(3, 10**13)*y_bound < entry_bound
+assert sector_count*entry_bound**2/gram_floor < v_bound**2
+debit = 10*p_bound**2+F(25, 2)*z_bound**2+F(1, 10**515)+4*y_bound**2+v_bound**2/12
+budget = F(124997987, 10**9)
+lower = gamma_lower*(1-theta)*(1-eta)-2*theta-prime_upper-211*(theta+eta)-3000*delta
+upper = gamma_upper+61*theta-prime_lower+211*(theta+eta)+3000*delta
+assert lower-debit > 0 and budget+lower-debit > F(206167, 10000)
+assert budget+upper/(1-5*delta)**2 < F(206175, 10000)
+print('PASS signed historical prime phases and five Schur prices')
+```
+
+The original $Z_F$ large-weight falsifier and the prime-419
+cutoff example retain their exact signs and domains. The new
+interval concerns the same native input projected into $G_2$.
+The corrected sign on the whole $G_2$, the original radius-four
+stage and RH and primitive Dirichlet GRH remain open. The global
+return still requires original dual phases, zero multiplicities,
+all required characters and windows and the conductor-one pole terms.
