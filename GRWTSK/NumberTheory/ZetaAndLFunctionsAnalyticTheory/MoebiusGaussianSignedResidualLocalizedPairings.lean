@@ -445,4 +445,40 @@ theorem finite_criticalZero_linear_supplier_bound_with_stationary {ι : Type*} {
       fun ε hε => by simpa using hbudget ε hε) hQ
   exact ⟨by simpa [add_comm] using hQ, by simpa [add_comm] using hQ_A⟩
 
+/-- A finite settled sum gives a lower certificate for the stationary
+contribution to a fixed affine-frequent linear supplier. The reciprocal
+zeta value is kept exact. -/
+theorem finite_criticalZero_linear_supplier_bound_of_truncated_stationary
+    {ι : Type*} {s A : ℝ} (hs : 0 < s) (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    (N : ℕ) (hN : 1 ≤ N) (hdecay : 3 / 2 ≤ s * Real.log ((N + 1 : ℕ) : ℝ))
+    (J : Finset ι) (ρ : ι → ZeroPoint)
+    (hline : ∀ j ∈ J, (ρ j).val.re = 1 / 2)
+    (hpos : ∀ j ∈ J, 0 < (ρ j).val.im)
+    (hω : Set.InjOn (fun j => (ρ j).val.im) (↑J : Set ι))
+    (horder : ∀ j ∈ J, multiplicity (ρ j) = 1)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T) :
+    let q : ℝ := max 0 (‖2 / riemannZeta (1 / 2 : ℂ) - (heatedLimitPartial s N : ℂ)‖ - 2 / (N : ℝ))
+    let Q : ℝ := 2 * (∑ j ∈ J, ‖zetaPoleCoefficient (ρ j)‖ ^ 2) + q ^ 2
+    (Q : EReal) ≤ liminf (fun T : ℝ => ((residualEnergy s T / T : ℝ) : EReal)) atTop ∧ Q ≤ A := by
+  let z : ℂ := 2 / riemannZeta (1 / 2 : ℂ) - (heatedLimitPartial s N : ℂ)
+  have hdiff : z - stationaryCoefficient s =
+      ((heatedLimit s - heatedLimitPartial s N : ℝ) : ℂ) := by
+    dsimp only [z, stationaryCoefficient]
+    rw [Complex.ofReal_sub]
+    ring
+  have herror : ‖z - stationaryCoefficient s‖ ≤ 2 / (N : ℝ) := by
+    rw [hdiff, Complex.norm_real, Real.norm_eq_abs]
+    exact abs_heatedLimit_sub_partial_le hs hN hdecay
+  have hsub : ‖z‖ - 2 / (N : ℝ) ≤ ‖stationaryCoefficient s‖ := by
+    linarith [(norm_sub_norm_le z (stationaryCoefficient s)).trans herror]
+  have hq : max 0 (‖z‖ - 2 / (N : ℝ)) ≤ ‖stationaryCoefficient s‖ :=
+    max_le (norm_nonneg _) hsub
+  have hQ := add_le_add (le_refl (2 * ∑ j ∈ J, ‖zetaPoleCoefficient (ρ j)‖ ^ 2))
+    (pow_le_pow_left₀ (le_max_left (0 : ℝ) _) hq 2)
+  obtain ⟨hLower, hAllowance⟩ := finite_criticalZero_linear_supplier_bound_with_stationary
+    hs hζ hA J ρ hline hpos hω horder hG hmajorant hbudget
+  exact ⟨(EReal.coe_le_coe_iff.2 hQ).trans hLower, hQ.trans hAllowance⟩
+
 end GRWTSK.NumberTheory.Moebius.GaussianSignedResidualLocalizedPairings

@@ -154,6 +154,96 @@ private theorem settledResponse_le_two (n : ℕ) : settledResponse n ≤ 2 := by
     exact Real.exp_le_exp.mpr (by linarith)
   linarith
 
+private theorem heatedSettled_summable {s : ℝ} (hs : 0 < s) :
+    Summable (fun n : ℕ => heatedCoeff s n * settledResponse n) :=
+  ((heatedCoeff_abs_summable hs).mul_right 2).of_norm_bounded fun n => by
+    rw [Real.norm_eq_abs, abs_mul, abs_of_nonneg (settledResponse_nonneg n)]
+    exact mul_le_mul_of_nonneg_left (settledResponse_le_two n) (abs_nonneg _)
+
+/-- The settled heated wave truncated at the original integer cutoff `N`. -/
+def heatedLimitPartial (s : ℝ) (N : ℕ) : ℝ :=
+  ∑ n ∈ Finset.range (N + 1), heatedCoeff s n * settledResponse n
+
+private theorem heatedSettledTerm_abs_le_exp (s : ℝ) {n : ℕ} (hn : 1 ≤ n) :
+    |heatedCoeff s n * settledResponse n| ≤
+      2 * Real.exp (-s * Real.log (n : ℝ) ^ 2 - Real.log (n : ℝ) / 2) := by
+  rw [heatedCoeff, abs_mul, abs_mul, abs_of_nonneg (Real.exp_pos _).le,
+    abs_of_nonneg (settledResponse_nonneg n), settledResponse, ← pickup_exp_negative_log_half hn]
+  calc
+    _ ≤ (1 * Real.exp (-s * Real.log (n : ℝ) ^ 2)) *
+        (2 * Real.exp (-Real.log (n : ℝ) / 2)) :=
+      mul_le_mul_of_nonneg_right
+        (mul_le_mul_of_nonneg_right (moebiusReal_abs_le_one n) (Real.exp_pos _).le)
+        (by positivity)
+    _ = _ := by rw [sub_eq_add_neg, Real.exp_add]; ring
+
+private theorem heatedSettledTerm_abs_le_inv_sq {s : ℝ} {n : ℕ} (hn : 1 ≤ n)
+    (hdecay : 3 / 2 ≤ s * Real.log (n : ℝ)) :
+    |heatedCoeff s n * settledResponse n| ≤ 2 * ((n : ℝ)⁻¹) ^ 2 := by
+  have hnreal : (1 : ℝ) ≤ n := by exact_mod_cast hn
+  have hlog : 0 ≤ Real.log (n : ℝ) := Real.log_nonneg hnreal
+  have hexp : -s * Real.log (n : ℝ) ^ 2 - Real.log (n : ℝ) / 2 ≤
+      -(2 * Real.log (n : ℝ)) := by
+    nlinarith [mul_le_mul_of_nonneg_right hdecay hlog]
+  calc
+    _ ≤ 2 * Real.exp (-s * Real.log (n : ℝ) ^ 2 - Real.log (n : ℝ) / 2) :=
+      heatedSettledTerm_abs_le_exp s hn
+    _ ≤ 2 * Real.exp (-(2 * Real.log (n : ℝ))) :=
+      mul_le_mul_of_nonneg_left (Real.exp_le_exp.mpr hexp) (by norm_num)
+    _ = _ := by
+      have hpow : Real.exp (2 * Real.log (n : ℝ)) = (n : ℝ) ^ 2 := by
+        simpa only [Nat.cast_ofNat, Real.exp_log (zero_lt_one.trans_le hnreal)] using
+          Real.exp_nat_mul (Real.log (n : ℝ)) 2
+      rw [Real.exp_neg, hpow, inv_pow]
+
+private theorem shifted_inv_sq_tsum_le {N : ℕ} (hN : 1 ≤ N) :
+    (∑' n : ℕ, ((n + (N + 1) : ℕ) : ℝ)⁻¹ ^ 2) ≤ (N : ℝ)⁻¹ := by
+  apply Real.tsum_le_of_sum_range_le (fun _ => sq_nonneg _)
+  intro M
+  calc
+    (∑ n ∈ Finset.range M, ((n + (N + 1) : ℕ) : ℝ)⁻¹ ^ 2) =
+        ∑ i ∈ Finset.Ico (0 + (N + 1)) (M + (N + 1)), ((i : ℝ) ^ 2)⁻¹ := by
+      rw [← Nat.Ico_zero_eq_range,
+        ← Finset.sum_Ico_add' (fun i : ℕ => ((i : ℝ) ^ 2)⁻¹) 0 M (N + 1)]
+      simp_rw [inv_pow]
+    _ ≤ ∑ i ∈ Finset.Ioc N (M + (N + 1)), ((i : ℝ) ^ 2)⁻¹ := by
+      apply Finset.sum_le_sum_of_subset_of_nonneg
+      · intro i hi
+        simp only [Finset.mem_Ico, Finset.mem_Ioc] at hi ⊢
+        omega
+      · intro i _ _
+        positivity
+    _ ≤ (N : ℝ)⁻¹ - ((M + (N + 1) : ℕ) : ℝ)⁻¹ :=
+      sum_Ioc_inv_sq_le_sub (by omega : N ≠ 0) (by omega)
+    _ ≤ _ := sub_le_self _ (inv_nonneg.mpr (Nat.cast_nonneg _))
+
+/-- Once the Gaussian decay at the first omitted index dominates the
+inverse-square majorant, the settled signed sum has a rational tail bound. -/
+theorem abs_heatedLimit_sub_partial_le {s : ℝ} {N : ℕ} (hs : 0 < s) (hN : 1 ≤ N)
+    (hdecay : 3 / 2 ≤ s * Real.log ((N + 1 : ℕ) : ℝ)) :
+    |heatedLimit s - heatedLimitPartial s N| ≤ 2 / (N : ℝ) := by
+  have hsum : Summable (fun n : ℕ => ((n : ℝ)⁻¹) ^ 2) := by
+    simpa only [inv_pow] using
+      (Real.summable_nat_pow_inv.mpr (by decide : 1 < (2 : ℕ)))
+  have hbound := ((summable_nat_add_iff (N + 1)).2 hsum).mul_left (2 : ℝ)
+  have hpoint (n : ℕ) :
+      ‖heatedCoeff s (n + (N + 1)) * settledResponse (n + (N + 1))‖ ≤
+        2 * ((↑(n + (N + 1) : ℕ) : ℝ)⁻¹) ^ 2 := by
+    have hcut : (N + 1 : ℕ) ≤ n + (N + 1) := by omega
+    have hcutreal : ((N + 1 : ℕ) : ℝ) ≤ ((n + (N + 1) : ℕ) : ℝ) := by exact_mod_cast hcut
+    have hlog := Real.log_le_log (by positivity : 0 < ((N + 1 : ℕ) : ℝ)) hcutreal
+    rw [Real.norm_eq_abs]
+    exact heatedSettledTerm_abs_le_inv_sq (by omega)
+      (hdecay.trans (mul_le_mul_of_nonneg_left hlog hs.le))
+  rw [heatedLimit, heatedLimitPartial, ← (heatedSettled_summable hs).sum_add_tsum_nat_add (N + 1),
+    add_sub_cancel_left, ← Real.norm_eq_abs]
+  calc
+    _ ≤ ∑' n : ℕ, 2 * ((↑(n + (N + 1) : ℕ) : ℝ)⁻¹) ^ 2 :=
+      tsum_of_norm_bounded hbound.hasSum hpoint
+    _ ≤ 2 / (N : ℝ) := by
+      rw [tsum_mul_left, div_eq_mul_inv]
+      exact mul_le_mul_of_nonneg_left (shifted_inv_sq_tsum_le hN) (by norm_num)
+
 private theorem response_error_le {n : ℕ} (hn : 1 ≤ n) (u : ℝ) :
     |pickupResponse n u - settledResponse n| ≤ 2 * Real.exp (-u / 2) := by
   rw [pickupResponse, settledResponse]
@@ -184,10 +274,7 @@ theorem heatedAbsMass_nonneg (s : ℝ) : 0 ≤ heatedAbsMass s :=
 theorem heatedWave_sub_limit_abs_le {s : ℝ} (hs : 0 < s) (u : ℝ) :
     |heatedWave s u - heatedLimit s| ≤ 2 * heatedAbsMass s * Real.exp (-u / 2) := by
   have ha := heatedCoeff_abs_summable hs
-  have hsettled : Summable (fun n : ℕ => heatedCoeff s n * settledResponse n) :=
-    (ha.mul_right 2).of_norm_bounded fun n => by
-      rw [Real.norm_eq_abs, abs_mul, abs_of_nonneg (settledResponse_nonneg n)]
-      exact mul_le_mul_of_nonneg_left (settledResponse_le_two n) (abs_nonneg _)
+  have hsettled := heatedSettled_summable hs
   have hpoint (n : ℕ) :
       ‖heatedCoeff s n * pickupResponse n u - heatedCoeff s n * settledResponse n‖ ≤
         |heatedCoeff s n| * (2 * Real.exp (-u / 2)) := by
