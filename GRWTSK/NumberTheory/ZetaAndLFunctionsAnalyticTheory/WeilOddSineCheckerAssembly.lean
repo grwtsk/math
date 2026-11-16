@@ -16,6 +16,12 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerFif
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerFifthRunThirdCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerFifthRunFourthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerFifthRunDiagonal
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSixthRunFirstCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSixthRunSecondCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSixthRunThirdCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSixthRunFourthCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSixthRunFifthCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSixthRunDiagonal
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeCheckerCellDeficit
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeStageSineReturn
 
@@ -924,5 +930,103 @@ theorem primitiveStageLower_of_blockSumAfterFifthDiagonal_le (χ : DirichletChar
   primitiveStageLower_of_blockSumAfterFifthFourth_le χ hp hn hodd
     (checker_unit_test_iff_blockSumAfterFifthFourth_le.mp
       (checker_unit_test_iff_blockSumAfterFifthDiagonal_le.mpr hr))
+
+/-- The remaining lower pairs after extracting all six sixth-run blocks. -/
+def runPairsAfterSixthDiagonal : Finset ((ℕ × ℕ) × (ℕ × ℕ)) :=
+  runPairsAfterFifthDiagonal
+    |>.erase ((2790, 2913), (0, 96))
+    |>.erase ((2790, 2913), (284, 479))
+    |>.erase ((2790, 2913), (666, 853))
+    |>.erase ((2790, 2913), (1177, 1294))
+    |>.erase ((2790, 2913), (1610, 1795))
+    |>.erase ((2790, 2913), (2790, 2913))
+
+set_option maxRecDepth 32768 in
+theorem runPairsAfterSixthDiagonal_card : runPairsAfterSixthDiagonal.card = 70 := by
+  decide +kernel
+
+/-- Literal checker costs over the remaining 70 pairs. -/
+def blockSumAfterSixthDiagonal : ℕ := ∑ p ∈ runPairsAfterSixthDiagonal, runPairSubtotal p
+
+theorem blockSumAfterSixthDiagonal_eq_sum :
+    blockSumAfterSixthDiagonal = ∑ p ∈ runPairsAfterSixthDiagonal,
+      triangleBlock (price literalRawDeficit) sincEntry
+        (retainedRunCells p.1) (retainedRunCells p.2) := rfl
+
+set_option maxRecDepth 32768 in
+/-- Each sixth-run subtotal occurs once in the split. -/
+theorem blockSumAfterFifthDiagonal_eq_add_blockSumAfterSixthDiagonal :
+    blockSumAfterFifthDiagonal =
+      4382869246783614325713727352756684084182797942847623 + blockSumAfterSixthDiagonal := by
+  rw [blockSumAfterFifthDiagonal_eq_sum, blockSumAfterSixthDiagonal_eq_sum,
+    runPairsAfterSixthDiagonal]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterFifthDiagonal)
+    (p := ((2790, 2913), (0, 96))) (by decide +kernel) sixthWithFirstRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterFifthDiagonal
+        |>.erase ((2790, 2913), (0, 96)))
+    (p := ((2790, 2913), (284, 479))) (by decide +kernel) sixthWithSecondRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterFifthDiagonal
+        |>.erase ((2790, 2913), (0, 96))
+        |>.erase ((2790, 2913), (284, 479)))
+    (p := ((2790, 2913), (666, 853))) (by decide +kernel) sixthWithThirdRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterFifthDiagonal
+        |>.erase ((2790, 2913), (0, 96))
+        |>.erase ((2790, 2913), (284, 479))
+        |>.erase ((2790, 2913), (666, 853)))
+    (p := ((2790, 2913), (1177, 1294))) (by decide +kernel) sixthWithFourthRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterFifthDiagonal
+        |>.erase ((2790, 2913), (0, 96))
+        |>.erase ((2790, 2913), (284, 479))
+        |>.erase ((2790, 2913), (666, 853))
+        |>.erase ((2790, 2913), (1177, 1294)))
+    (p := ((2790, 2913), (1610, 1795))) (by decide +kernel) sixthWithFifthRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterFifthDiagonal
+        |>.erase ((2790, 2913), (0, 96))
+        |>.erase ((2790, 2913), (284, 479))
+        |>.erase ((2790, 2913), (666, 853))
+        |>.erase ((2790, 2913), (1177, 1294))
+        |>.erase ((2790, 2913), (1610, 1795)))
+    (p := ((2790, 2913), (2790, 2913))) (by decide +kernel) sixthRetainedRunDiagonal]
+  omega
+
+/-- The original numerator after separating the complete sixth run. -/
+theorem literal_total_eq_certified_add_afterSixthDiagonal :
+    total checkerMidpointLower =
+      119140565906066302601710843807943468463545430606125109 + blockSumAfterSixthDiagonal := by
+  rw [literal_total_eq_certified_add_afterFifthDiagonal,
+    blockSumAfterFifthDiagonal_eq_add_blockSumAfterSixthDiagonal]
+  omega
+
+/-- The strict integer test in terms of the 70-pair residual. -/
+theorem checker_test_iff_blockSumAfterSixthDiagonal_le :
+    total checkerMidpointLower * 62500 < 47961 * denominator ↔
+      blockSumAfterSixthDiagonal ≤ 4946894702122490364573875636778195536454569393874890 := by
+  rw [checker_test_iff_blockSumAfterFifthDiagonal_le,
+    blockSumAfterFifthDiagonal_eq_add_blockSumAfterSixthDiagonal]
+  omega
+
+/-- The unit test for the original radius-one stage in terms of the same residual. -/
+theorem checker_unit_test_iff_blockSumAfterSixthDiagonal_le :
+    total checkerMidpointLower ≤ denominator ↔
+      blockSumAfterSixthDiagonal ≤ 42563032601300090100542965856056531536454569393874891 := by
+  rw [checker_unit_test_iff_blockSumAfterFifthDiagonal_le,
+    blockSumAfterFifthDiagonal_eq_add_blockSumAfterSixthDiagonal]
+  omega
+
+theorem rectangle_lt_of_blockSumAfterSixthDiagonal_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterSixthDiagonal ≤ 4946894702122490364573875636778195536454569393874890) :
+    sineDeficitRectangle 256 (q3SineDeficit χ) < (219 / 250 : ℝ) ^ 2 :=
+  rectangle_lt_of_blockSumAfterFifthDiagonal_le χ hodd
+    (checker_test_iff_blockSumAfterFifthDiagonal_le.mp
+      (checker_test_iff_blockSumAfterSixthDiagonal_le.mpr hr))
+
+theorem primitiveStageLower_of_blockSumAfterSixthDiagonal_le (χ : DirichletCharacter ℂ 3)
+    (hp : χ.IsPrimitive) (hn : χ ≠ 1) (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterSixthDiagonal ≤ 42563032601300090100542965856056531536454569393874891) :
+    PrimitiveStageLower χ hp hn 0 :=
+  primitiveStageLower_of_blockSumAfterFifthDiagonal_le χ hp hn hodd
+    (checker_unit_test_iff_blockSumAfterFifthDiagonal_le.mp
+      (checker_unit_test_iff_blockSumAfterSixthDiagonal_le.mpr hr))
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddThreeSineHilbertSchmidt.CheckerTriangle
