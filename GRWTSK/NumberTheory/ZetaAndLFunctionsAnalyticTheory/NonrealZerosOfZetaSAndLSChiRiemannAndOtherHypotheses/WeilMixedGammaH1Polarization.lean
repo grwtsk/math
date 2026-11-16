@@ -85,7 +85,7 @@ private theorem realGamma_integrable_nonneg_bound
       realGammaEnergy a f ≤
         (7 / 12 : ℝ) * (∫ t : ℝ, hf.first t ^ 2) +
           2 * tailUpper a 1 * (∫ t : ℝ, f t ^ 2) := by
-  have hCont : Continuous f := fun t => (hf.derivative t).continuousAt
+  have hCont : Continuous f := continuous_iff_continuousAt.mpr fun t => (hf.derivative t).continuousAt
   exact realGammaEnergy_integrable_and_bound a f hf.first hCont
     hf.f_memLp hf.first_memLp
     (nearH1ShiftBound_of_classical_derivative f hf.first
@@ -424,7 +424,7 @@ private theorem real_quadratic_Cauchy
     B ^ 2 ≤ A * C := by
   by_cases hAz : A = 0
   · by_cases hBz : B = 0
-    · simp [hBz]
+    · simp [hAz, hBz]
     · have htest := hquad (-(C + 1) / B)
       rw [hAz] at htest
       have hcancel : (-(C + 1) / B) * B = -(C + 1) := by
