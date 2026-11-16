@@ -294,18 +294,77 @@ private theorem profile_monomial (n k : ℕ) (c : ℂ) :
   have hk : (k : ℂ) + 1 ≠ 0 := by exact_mod_cast (show (k : ℝ) + 1 ≠ 0 by positivity)
   field_simp
 
-private theorem integral_real_profile (n : ℕ) (b : ℂ) :
-    (∫ v in (0 : ℝ)..1, v ^ n * (conj b * profile n b v).re) =
-      ‖b‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)) := by
-  have heq (v : ℝ) : v ^ n * (conj b * profile n b v).re = ‖b‖ ^ 2 * v ^ (2 * n) := by
-    rw [profile, ← mul_assoc, mul_comm (conj b) b, Complex.mul_conj',
-      ← Complex.ofReal_pow ‖b‖ 2,
-      show (v : ℂ) ^ n = ((v ^ n : ℝ) : ℂ) from (Complex.ofReal_pow v n).symm,
-      ← Complex.ofReal_mul, Complex.ofReal_re, two_mul, pow_add]
+private theorem integral_real_profile (n : ℕ) (a b : ℂ) :
+    (∫ v in (0 : ℝ)..1, v ^ n * (conj a * profile n b v).re) =
+      (conj a * b).re / ((2 * n : ℕ) + (1 : ℝ)) := by
+  have heq (v : ℝ) :
+      v ^ n * (conj a * profile n b v).re = (conj a * b).re * v ^ (2 * n) := by
+    rw [profile, ← mul_assoc, mul_comm (conj a * b), ← Complex.ofReal_pow,
+      Complex.re_ofReal_mul, two_mul, pow_add]
     ring
   simp_rw [heq]
   rw [intervalIntegral.integral_const_mul, integral_pow]
   simp [div_eq_mul_inv]
+
+/-- A localized probe at the given frequency may have any complex amplitude.
+The limiting profile still uses the Laurent coefficient divided by the
+factorial of the profile degree. -/
+theorem tendsto_localizedPairing_of_horizontalPole_with_amplitude
+    {s γ C : ℝ} (n : ℕ) (c a : ℂ)
+    (hC : 0 ≤ C)
+    (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ C * T ^ (2 * n + 1) + C)
+    (hpole : Tendsto (fun σ : ℝ => (σ : ℂ) ^ (n + 1) *
+      residualLaplace s ((σ : ℂ) + (γ : ℂ) * Complex.I)) (𝓝[>] (0 : ℝ)) (𝓝 c)) :
+    Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
+      ((rescaledWave s n T v : ℂ) * conj (probeAtom n γ a T v)).re)
+      atTop (𝓝 ((conj a * (c / (n.factorial : ℂ))).re / ((2 * n : ℕ) + (1 : ℝ)))) := by
+  let b : ℂ := c / (n.factorial : ℂ)
+  let mode := rescaledResidualMode s γ (n + 1)
+  let f := fun T => onUnit (fun v => (conj a * mode T v).re)
+  let g := onUnit (fun v => (conj a * profile n b v).re)
+  have hMode : ∀ᶠ T in atTop, MemLp (onUnit (mode T)) 2 volume := by
+    filter_upwards [eventually_ge_atTop (1 : ℝ)] with T hT
+    have hTpos : 0 < T := zero_lt_one.trans_le hT
+    exact memLp_onUnit (mode_continuous s γ n T).measurable
+      (integrableOn_weightedSquare_rescaledResidualMode s γ n hTpos hE)
+  have hProfile := profile_memLp n b
+  have hBound : ∀ᶠ T in atTop, (∫ x : unitInterval, f T x ^ 2) ≤
+      ‖a‖ ^ 2 * (C * (((2 * n + 1).factorial : ℝ) + 1)) := by
+    filter_upwards [hMode, eventually_ge_atTop (1 : ℝ)] with T hT hT₁
+    exact (integral_re_mode_sq_le a hT).trans (mul_le_mul_of_nonneg_left
+      (weightedSquare_rescaledResidualMode_le s γ n hT₁ hC hE) (sq_nonneg _))
+  have hm (k : ℕ) :
+      Tendsto (fun T : ℝ => ∫ x : unitInterval, (x : ℝ) ^ k * f T x) atTop
+        (𝓝 (∫ x : unitInterval, (x : ℝ) ^ k * g x)) := by
+    have hg : (∫ x : unitInterval, (x : ℝ) ^ k * g x) =
+        (conj a * (c / ((k : ℂ) + 1) ^ (n + 1))).re := by
+      change (∫ x : unitInterval, (x : ℝ) ^ k * (conj a * onUnit (profile n b) x).re) = _
+      rw [integral_re_monomial_onUnit k a hProfile, profile_monomial n k c]
+    rw [hg]
+    have ht := Complex.continuous_re.continuousAt.tendsto.comp
+      ((tendsto_residualLaplaceMoment k hpole).const_mul (conj a))
+    refine ht.congr' ?_
+    filter_upwards [hMode] with T hT
+    change (conj a * residualLaplaceMoment s γ (n + 1) k T).re =
+      ∫ x : unitInterval, (x : ℝ) ^ k * (conj a * onUnit (mode T) x).re
+    rw [integral_re_monomial_onUnit k a hT, integral_complex_monomial_onUnit]
+    rfl
+  open GRWTSK.MeasureAndIntegration.UnitIntervalPolynomialPairings in
+  have hCutoff := tendsto_integral_mul_of_monomials (hMode.mono fun _ h => re_mode_memLp a h)
+      (re_mode_memLp a hProfile) (memLp_neg_log_cutoff n) hBound hm
+  have hGoal : (∫ x : unitInterval, onUnit (cutoff n) x * g x) =
+      (conj a * b).re / ((2 * n : ℕ) + (1 : ℝ)) :=
+    (integral_cutoff_onUnit n _).trans (integral_real_profile n a b)
+  change Tendsto (fun T : ℝ => ∫ x : unitInterval, onUnit (cutoff n) x * f T x) atTop
+    (𝓝 (∫ x : unitInterval, onUnit (cutoff n) x * g x)) at hCutoff
+  rw [hGoal] at hCutoff
+  refine hCutoff.congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+  rw [show (∫ x : unitInterval, onUnit (cutoff n) x * f T x) =
+      ∫ v in (0 : ℝ)..1, v ^ n * (conj a * mode T v).re from integral_cutoff_onUnit n _]
+  apply intervalIntegral.integral_congr
+  intro v _
+  exact (localizedAtom_eq s γ n a hT v).symm
 
 /-- The uniform weighted-square bound and the horizontal Laurent limit give
 the localized pairing on the original rescaled physical interval. The
@@ -319,53 +378,33 @@ theorem tendsto_localizedPairing_of_horizontalPole {s γ C : ℝ} (n : ℕ) (c :
     Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1,
       ((rescaledWave s n T v : ℂ) * conj (probeAtom n γ (c / (n.factorial : ℂ)) T v)).re)
       atTop (𝓝 (‖c / (n.factorial : ℂ)‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)))) := by
-  let b : ℂ := c / (n.factorial : ℂ)
-  let mode := rescaledResidualMode s γ (n + 1)
-  let f := fun T => onUnit (fun v => (conj b * mode T v).re)
-  let g := onUnit (fun v => (conj b * profile n b v).re)
-  have hMode : ∀ᶠ T in atTop, MemLp (onUnit (mode T)) 2 volume := by
-    filter_upwards [eventually_ge_atTop (1 : ℝ)] with T hT
-    have hTpos : 0 < T := zero_lt_one.trans_le hT
-    exact memLp_onUnit (mode_continuous s γ n T).measurable
-      (integrableOn_weightedSquare_rescaledResidualMode s γ n hTpos hE)
-  have hProfile := profile_memLp n b
-  have hBound : ∀ᶠ T in atTop, (∫ x : unitInterval, f T x ^ 2) ≤
-      ‖b‖ ^ 2 * (C * (((2 * n + 1).factorial : ℝ) + 1)) := by
-    filter_upwards [hMode, eventually_ge_atTop (1 : ℝ)] with T hT hT₁
-    exact (integral_re_mode_sq_le b hT).trans (mul_le_mul_of_nonneg_left
-      (weightedSquare_rescaledResidualMode_le s γ n hT₁ hC hE) (sq_nonneg _))
-  have hm (k : ℕ) :
-      Tendsto (fun T : ℝ => ∫ x : unitInterval, (x : ℝ) ^ k * f T x) atTop
-        (𝓝 (∫ x : unitInterval, (x : ℝ) ^ k * g x)) := by
-    have hg : (∫ x : unitInterval, (x : ℝ) ^ k * g x) =
-        (conj b * (c / ((k : ℂ) + 1) ^ (n + 1))).re := by
-      change (∫ x : unitInterval, (x : ℝ) ^ k * (conj b * onUnit (profile n b) x).re) = _
-      rw [integral_re_monomial_onUnit k b hProfile, profile_monomial n k c]
-    rw [hg]
-    have ht := Complex.continuous_re.continuousAt.tendsto.comp
-      ((tendsto_residualLaplaceMoment k hpole).const_mul (conj b))
-    refine ht.congr' ?_
-    filter_upwards [hMode] with T hT
-    change (conj b * residualLaplaceMoment s γ (n + 1) k T).re =
-      ∫ x : unitInterval, (x : ℝ) ^ k * (conj b * onUnit (mode T) x).re
-    rw [integral_re_monomial_onUnit k b hT, integral_complex_monomial_onUnit]
-    rfl
-  open GRWTSK.MeasureAndIntegration.UnitIntervalPolynomialPairings in
-  have hCutoff := tendsto_integral_mul_of_monomials (hMode.mono fun _ h => re_mode_memLp b h)
-      (re_mode_memLp b hProfile) (memLp_neg_log_cutoff n) hBound hm
-  have hGoal : (∫ x : unitInterval, onUnit (cutoff n) x * g x) =
-      ‖b‖ ^ 2 / ((2 * n : ℕ) + (1 : ℝ)) :=
-    (integral_cutoff_onUnit n _).trans (integral_real_profile n b)
-  change Tendsto (fun T : ℝ => ∫ x : unitInterval, onUnit (cutoff n) x * f T x) atTop
-    (𝓝 (∫ x : unitInterval, onUnit (cutoff n) x * g x)) at hCutoff
-  rw [hGoal] at hCutoff
-  refine hCutoff.congr' ?_
+  have hre (z : ℂ) : (conj z * z).re = ‖z‖ ^ 2 := by
+    rw [mul_comm (conj z) z, Complex.mul_conj', ← Complex.ofReal_pow, Complex.ofReal_re]
+  simpa only [hre] using tendsto_localizedPairing_of_horizontalPole_with_amplitude
+    n c (c / (n.factorial : ℂ)) hC hE hpole
+
+/-- The exact signed residual has its stationary coefficient as its
+physical Cesàro mean whenever its cumulative energy has a linear envelope. -/
+theorem tendsto_residual_mean_at_stationary {s C : ℝ} (hs : 0 < s)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hC : 0 ≤ C)
+    (hE : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ C * T + C) :
+    Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, residualWave s u) / T)
+      atTop (𝓝 (stationaryCoefficient s).re) := by
+  have hE₁ : ∀ T : ℝ, 0 ≤ T → residualEnergy s T ≤ C * T ^ (2 * 0 + 1 : ℕ) + C := by
+    simpa using hE
+  have hpole : Tendsto (fun σ : ℝ => (σ : ℂ) ^ (0 + 1 : ℕ) *
+      residualLaplace s ((σ : ℂ) + ((0 : ℝ) : ℂ) * Complex.I))
+      (𝓝[>] (0 : ℝ)) (𝓝 (stationaryCoefficient s)) := by
+    simpa using tendsto_scaled_residualLaplace_at_stationary hs hζ hE₁
+  have hUnit : Tendsto (fun T : ℝ => ∫ v in (0 : ℝ)..1, residualWave s (T * v))
+      atTop (𝓝 (stationaryCoefficient s).re) := by
+    simpa [rescaledWave, probeAtom, GaussianSignedResidualFiniteProjection.oscillation] using
+      tendsto_localizedPairing_of_horizontalPole_with_amplitude
+        (γ := 0) 0 (stationaryCoefficient s) 1 hC hE₁ hpole
+  refine hUnit.congr' ?_
   filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
-  rw [show (∫ x : unitInterval, onUnit (cutoff n) x * f T x) =
-      ∫ v in (0 : ℝ)..1, v ^ n * (conj b * mode T v).re from integral_cutoff_onUnit n _]
-  apply intervalIntegral.integral_congr
-  intro v _
-  exact (localizedAtom_eq s γ n b hT v).symm
+  rw [intervalIntegral.integral_comp_mul_left (f := residualWave s) hT.ne',
+    mul_zero, mul_one, smul_eq_mul, div_eq_mul_inv, mul_comm]
 
 /-- The localized pairing at the ordinate of an actual nonreal critical-line
 zero, with its actual multiplicity and derivative-normalized coefficient. -/
