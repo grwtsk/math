@@ -78,9 +78,9 @@ theorem realCrossCorrelation_reverse
     (f g : ℝ → ℝ) (r : ℝ) :
     realCrossCorrelation g f r = realCrossCorrelation f g (-r) := by
   unfold realCrossCorrelation
-  simpa only [add_sub_cancel_right, mul_comm, sub_eq_add_neg] using
-    (integral_add_right_eq_self
-      (fun t : ℝ => f t * g (t - r)) r).symm
+  simpa only [add_sub_cancel_right, mul_comm, ← sub_eq_add_neg] using
+    (integral_add_right_eq_self (μ := volume)
+      (fun t : ℝ => f t * g (t - r)) r)
 
 /-- Original paired-arithmetic two-shift *mixed* observation. -/
 def realSymmetricShift (f g : ℝ → ℝ) (r : ℝ) : ℝ :=
@@ -99,7 +99,6 @@ theorem realSymmetricShift_diag (f : ℝ → ℝ) (r : ℝ) :
     realSymmetricShift f f r = 2 * realCrossCorrelation f f r := by
   unfold realSymmetricShift
   have h := realCrossCorrelation_reverse f f r
-  simp only [neg_neg] at h
   rw [← h]
   ring
 
@@ -142,8 +141,8 @@ theorem pairedMixedPrimeResponse_diag
     {q : ℕ} [NeZero q] (chi : DirichletCharacter ℂ q)
     (T : ℝ) (f : ℝ → ℝ) :
     pairedMixedPrimeResponse chi T f f =
-      pairedPrimeResponse chi T f := by
-  unfold pairedMixedPrimeResponse pairedPrimeResponse
+      SignedArithmeticH1Budget.pairedPrimeResponse chi T f := by
+  unfold pairedMixedPrimeResponse SignedArithmeticH1Budget.pairedPrimeResponse
     realSymmetricShift realCrossCorrelation
   apply Finset.sum_congr rfl
   intro n _
@@ -182,7 +181,7 @@ theorem abs_realCrossCorrelation_le_avg_mass
   unfold realCrossCorrelation
   calc
     _ ≤ ∫ t : ℝ, (f t ^ 2 + g (t + r) ^ 2) / 2 := by
-      simpa only [Real.norm_eq_abs] using
+      simpa only [Real.norm_eq_abs, Pi.add_apply] using
         (norm_integral_le_of_norm_le
           ((hf2.add hgShift).div_const 2)
           (Filter.Eventually.of_forall hbound))
@@ -235,7 +234,7 @@ theorem abs_pairedMixedPrimeResponse_le_balanced
             (abs_nonneg _)
         _ ≤ primeWeight n * (physicalMass f + physicalMass g) :=
           mul_le_mul_of_nonneg_right
-            (abs_pairedPrimeWeight_le chi n) hnonneg
+            (SignedArithmeticH1Budget.abs_pairedPrimeWeight_le chi n) hnonneg
     _ = _ := by
       unfold primeMass
       rw [← Finset.sum_mul]
@@ -475,7 +474,7 @@ theorem primitiveRealMixedWeil_diag
     filter_upwards [] with t
     ring
   rw [hMass]
-  unfold primitivePairedOddPhysicalValue pairedPrimeResponse
+  unfold primitivePairedOddPhysicalValue SignedArithmeticH1Budget.pairedPrimeResponse
   rfl
 
 /-- The real zeta diagonal returns to the actual original zeta pole,
@@ -499,8 +498,7 @@ theorem zetaRealMixedWeil_diag (T : ℝ) (f : ℝ → ℝ) :
   rw [hMass]
   unfold zetaOddPhysicalValue
     GRWTSK.NumberTheory.WeilQuadraticForm.OddHighComplement.shiftedOddCoreEnergy
-  rw [← GRWTSK.NumberTheory.WeilQuadraticForm.NativeGammaH1ShiftBudget.
-    realGammaEnergy_eq_native_zeta f, hNorm]
+  rw [← realGammaEnergy_eq_native_zeta f, hNorm]
   unfold oddZetaPoleMoment
   ring
 
