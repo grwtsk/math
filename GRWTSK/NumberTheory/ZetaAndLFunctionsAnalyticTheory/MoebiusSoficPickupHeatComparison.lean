@@ -508,4 +508,50 @@ theorem tendsto_normalized_heatMaskDeviation_add_residual_of_source_mean {s m : 
     dsimp only
     rw [add_div, mul_div_assoc, add_sub_cancel_right]
 
+private theorem linear_budget_iff_of_sum_tendsto {f g : ℝ → ℝ} {A C : ℝ}
+    {l : Filter ℝ} (hlim : Tendsto (fun T => g T + f T) l (𝓝 C)) :
+    (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, f T ≤ A + ε) ↔
+      (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, C - A - ε ≤ g T) := by
+  constructor
+  · intro h ε hε
+    have hlow := (tendsto_order.mp hlim).1 (C - ε / 2) (by linarith)
+    filter_upwards [hlow, h (ε / 2) (by linarith)] with T hlow hf
+    linarith
+  · intro h ε hε
+    have hhigh := (tendsto_order.mp hlim).2 (C + ε / 2) (by linarith)
+    filter_upwards [hhigh, h (ε / 2) (by linarith)] with T hhigh hg
+    linarith
+
+/-- The genuine residual allowance is equivalent to the signed mask lower
+budget with the measured source mean retained at each horizon. -/
+theorem residualEnergy_linear_budget_iff_heatMaskDeviation_with_mean_correction
+    {s A : ℝ} (hs : 0 < s) {l : Filter ℝ} (hl : l ≤ atTop) :
+    (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε) ↔
+      (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l,
+        settledHeatedPickup s + heatedLimit s ^ 2 - A - ε ≤
+          (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+            pickupDiagonal T + 2 * heatedLimit s * (∫ u in (0 : ℝ)..T, wholePickup u)) / T) := by
+  apply linear_budget_iff_of_sum_tendsto
+  have h := (tendsto_normalized_heatMaskDeviation_add_residual_with_mean_correction hs).mono_left hl
+  refine h.congr' ?_
+  exact Eventually.of_forall fun T => by
+    dsimp only
+    rw [← add_div]
+    congr 1
+    ring
+
+/-- A limiting source mean on the same scales gives the exact residual
+allowance in terms of the original signed deviation and source diagonal. -/
+theorem residualEnergy_linear_budget_iff_heatMaskDeviation_of_source_mean
+    {s A m : ℝ} (hs : 0 < s) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hmean : Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, wholePickup u) / T) l (𝓝 m)) :
+    (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε) ↔
+      (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l,
+        settledHeatedPickup s + heatedLimit s ^ 2 - 2 * heatedLimit s * m - A - ε ≤
+          (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+            pickupDiagonal T) / T) := by
+  apply linear_budget_iff_of_sum_tendsto
+  simpa only [add_div] using
+    tendsto_normalized_heatMaskDeviation_add_residual_of_source_mean hs hl hmean
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
