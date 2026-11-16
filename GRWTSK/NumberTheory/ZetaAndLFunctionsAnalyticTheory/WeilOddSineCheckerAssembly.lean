@@ -29,6 +29,14 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSev
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSeventhRunFifthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSeventhRunSixthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerSeventhRunDiagonal
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunFirstCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunSecondCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunThirdCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunFourthCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunFifthCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunSixthCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunSeventhCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEighthRunDiagonal
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeCheckerCellDeficit
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeStageSineReturn
 
@@ -1142,5 +1150,122 @@ theorem primitiveStageLower_of_blockSumAfterSeventhDiagonal_le (χ : DirichletCh
   primitiveStageLower_of_blockSumAfterSixthDiagonal_le χ hp hn hodd
     (checker_unit_test_iff_blockSumAfterSixthDiagonal_le.mp
       (checker_unit_test_iff_blockSumAfterSeventhDiagonal_le.mpr hr))
+
+/-- The remaining lower pairs after extracting all eight eighth-run blocks. -/
+def runPairsAfterEighthDiagonal : Finset ((ℕ × ℕ) × (ℕ × ℕ)) :=
+  runPairsAfterSeventhDiagonal
+    |>.erase ((5271, 5331), (0, 96))
+    |>.erase ((5271, 5331), (284, 479))
+    |>.erase ((5271, 5331), (666, 853))
+    |>.erase ((5271, 5331), (1177, 1294))
+    |>.erase ((5271, 5331), (1610, 1795))
+    |>.erase ((5271, 5331), (2790, 2913))
+    |>.erase ((5271, 5331), (4110, 4199))
+    |>.erase ((5271, 5331), (5271, 5331))
+
+set_option maxRecDepth 32768 in
+theorem runPairsAfterEighthDiagonal_card : runPairsAfterEighthDiagonal.card = 55 := by
+  decide +kernel
+
+/-- Literal checker costs over the remaining 55 pairs. -/
+def blockSumAfterEighthDiagonal : ℕ := ∑ p ∈ runPairsAfterEighthDiagonal, runPairSubtotal p
+
+theorem blockSumAfterEighthDiagonal_eq_sum :
+    blockSumAfterEighthDiagonal = ∑ p ∈ runPairsAfterEighthDiagonal,
+      triangleBlock (price literalRawDeficit) sincEntry
+        (retainedRunCells p.1) (retainedRunCells p.2) := rfl
+
+set_option maxRecDepth 32768 in
+/-- Each eighth-run subtotal occurs once in the split. -/
+theorem blockSumAfterSeventhDiagonal_eq_add_blockSumAfterEighthDiagonal :
+    blockSumAfterSeventhDiagonal =
+      67728198787903315714274499382616912294031952199685 + blockSumAfterEighthDiagonal := by
+  rw [blockSumAfterSeventhDiagonal_eq_sum, blockSumAfterEighthDiagonal_eq_sum,
+    runPairsAfterEighthDiagonal]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal)
+    (p := ((5271, 5331), (0, 96))) (by decide +kernel) eighthWithFirstRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal
+        |>.erase ((5271, 5331), (0, 96)))
+    (p := ((5271, 5331), (284, 479))) (by decide +kernel) eighthWithSecondRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal
+        |>.erase ((5271, 5331), (0, 96))
+        |>.erase ((5271, 5331), (284, 479)))
+    (p := ((5271, 5331), (666, 853))) (by decide +kernel) eighthWithThirdRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal
+        |>.erase ((5271, 5331), (0, 96))
+        |>.erase ((5271, 5331), (284, 479))
+        |>.erase ((5271, 5331), (666, 853)))
+    (p := ((5271, 5331), (1177, 1294))) (by decide +kernel) eighthWithFourthRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal
+        |>.erase ((5271, 5331), (0, 96))
+        |>.erase ((5271, 5331), (284, 479))
+        |>.erase ((5271, 5331), (666, 853))
+        |>.erase ((5271, 5331), (1177, 1294)))
+    (p := ((5271, 5331), (1610, 1795))) (by decide +kernel) eighthWithFifthRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal
+        |>.erase ((5271, 5331), (0, 96))
+        |>.erase ((5271, 5331), (284, 479))
+        |>.erase ((5271, 5331), (666, 853))
+        |>.erase ((5271, 5331), (1177, 1294))
+        |>.erase ((5271, 5331), (1610, 1795)))
+    (p := ((5271, 5331), (2790, 2913))) (by decide +kernel) eighthWithSixthRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal
+        |>.erase ((5271, 5331), (0, 96))
+        |>.erase ((5271, 5331), (284, 479))
+        |>.erase ((5271, 5331), (666, 853))
+        |>.erase ((5271, 5331), (1177, 1294))
+        |>.erase ((5271, 5331), (1610, 1795))
+        |>.erase ((5271, 5331), (2790, 2913)))
+    (p := ((5271, 5331), (4110, 4199))) (by decide +kernel) eighthWithSeventhRetainedRunCross]
+  rw [sum_runBlocks_eq_subtotal_add_sum_erase (pairs := runPairsAfterSeventhDiagonal
+        |>.erase ((5271, 5331), (0, 96))
+        |>.erase ((5271, 5331), (284, 479))
+        |>.erase ((5271, 5331), (666, 853))
+        |>.erase ((5271, 5331), (1177, 1294))
+        |>.erase ((5271, 5331), (1610, 1795))
+        |>.erase ((5271, 5331), (2790, 2913))
+        |>.erase ((5271, 5331), (4110, 4199)))
+    (p := ((5271, 5331), (5271, 5331))) (by decide +kernel) eighthRetainedRunDiagonal]
+  omega
+
+/-- The original numerator after separating the complete eighth run. -/
+theorem literal_total_eq_certified_add_afterEighthDiagonal :
+    total checkerMidpointLower =
+      120035957415215302997114283107849884714251352891203283 + blockSumAfterEighthDiagonal := by
+  rw [literal_total_eq_certified_add_afterSeventhDiagonal,
+    blockSumAfterSeventhDiagonal_eq_add_blockSumAfterEighthDiagonal]
+  omega
+
+/-- The strict integer test in terms of the 55-pair residual. -/
+theorem checker_test_iff_blockSumAfterEighthDiagonal_le :
+    total checkerMidpointLower * 62500 < 47961 * denominator ↔
+      blockSumAfterEighthDiagonal ≤ 4051503192973489969170436336871779285748647108796716 := by
+  rw [checker_test_iff_blockSumAfterSeventhDiagonal_le,
+    blockSumAfterSeventhDiagonal_eq_add_blockSumAfterEighthDiagonal]
+  omega
+
+/-- The unit test for the original radius-one stage in terms of the same residual. -/
+theorem checker_unit_test_iff_blockSumAfterEighthDiagonal_le :
+    total checkerMidpointLower ≤ denominator ↔
+      blockSumAfterEighthDiagonal ≤ 41667641092151089705139526556150115285748647108796717 := by
+  rw [checker_unit_test_iff_blockSumAfterSeventhDiagonal_le,
+    blockSumAfterSeventhDiagonal_eq_add_blockSumAfterEighthDiagonal]
+  omega
+
+theorem rectangle_lt_of_blockSumAfterEighthDiagonal_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterEighthDiagonal ≤ 4051503192973489969170436336871779285748647108796716) :
+    sineDeficitRectangle 256 (q3SineDeficit χ) < (219 / 250 : ℝ) ^ 2 :=
+  rectangle_lt_of_blockSumAfterSeventhDiagonal_le χ hodd
+    (checker_test_iff_blockSumAfterSeventhDiagonal_le.mp
+      (checker_test_iff_blockSumAfterEighthDiagonal_le.mpr hr))
+
+theorem primitiveStageLower_of_blockSumAfterEighthDiagonal_le (χ : DirichletCharacter ℂ 3)
+    (hp : χ.IsPrimitive) (hn : χ ≠ 1) (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterEighthDiagonal ≤ 41667641092151089705139526556150115285748647108796717) :
+    PrimitiveStageLower χ hp hn 0 :=
+  primitiveStageLower_of_blockSumAfterSeventhDiagonal_le χ hp hn hodd
+    (checker_unit_test_iff_blockSumAfterSeventhDiagonal_le.mp
+      (checker_unit_test_iff_blockSumAfterEighthDiagonal_le.mpr hr))
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddThreeSineHilbertSchmidt.CheckerTriangle
