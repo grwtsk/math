@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRightStripWitnessReturn
 import Mathlib.NumberTheory.MulChar.Lemmas
+import Mathlib.Analysis.Complex.ReImTopology
 
 /-!
 # Inverse-character stage coverage on real Weil tests
@@ -32,6 +33,7 @@ open scoped ComplexConjugate
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
 
 open MeasureTheory CharacterWindow SourcePrimeCorrelation OddRootProjection
+open Set Filter Topology
 open GRWTSK.NumberTheory.Conditional
 
 private theorem inverse_apply {q : ℕ} (χ : DirichletCharacter ℂ q) (x : ZMod q) :
@@ -114,6 +116,80 @@ theorem primitiveNegativeWitness_iff_rightStrip :
       · simpa only [inverse_parity] using harch
       · rwa [primitiveArithmeticValue_inverse_liftReal χ hp hn hpInv hnInv T f hLp] at hneg
     · exact hw q χ hp hn s hright hs1 hz
+
+private theorem inverse_LFunction_eq_conj {q : ℕ} [NeZero q]
+    (χ : DirichletCharacter ℂ q) (hn : χ ≠ 1) (s : ℂ) :
+    (χ⁻¹).LFunction s = conj (χ.LFunction (conj s)) := by
+  have hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
+  have hleft : AnalyticOnNhd ℂ (χ⁻¹).LFunction univ :=
+    (DirichletCharacter.differentiable_LFunction hnInv).differentiableOn.analyticOnNhd isOpen_univ
+  let g := fun z : ℂ => conj (χ.LFunction (conj z))
+  have hright : AnalyticOnNhd ℂ g univ := by
+    apply DifferentiableOn.analyticOnNhd _ isOpen_univ
+    intro z _
+    have hd := (DirichletCharacter.differentiable_LFunction hn (conj z)).conj_conj
+    rw [Complex.conj_conj] at hd
+    exact hd.differentiableWithinAt
+  have hagree : (χ⁻¹).LFunction =ᶠ[nhds (2 : ℂ)] g := by
+    have hopen : IsOpen {z : ℂ | 1 < z.re} := isOpen_lt continuous_const Complex.continuous_re
+    have htwo : (2 : ℂ) ∈ {z : ℂ | 1 < z.re} := by norm_num
+    filter_upwards [hopen.mem_nhds htwo] with z hz
+    have hz' : 1 < (conj z).re := by simpa using hz
+    rw [DirichletCharacter.LFunction_eq_LSeries _ hz]
+    unfold g
+    rw [DirichletCharacter.LFunction_eq_LSeries _ hz']
+    unfold LSeries
+    change (∑' n : ℕ, LSeries.term (fun x => χ⁻¹ x) z n) =
+      star (∑' n : ℕ, LSeries.term (fun x => χ x) (conj z) n)
+    rw [tsum_star]
+    congr 1
+    funext n
+    by_cases hn0 : n = 0
+    · simp [hn0, LSeries.term_zero]
+    · change LSeries.term (fun x => χ⁻¹ x) z n = conj (LSeries.term (fun x => χ x) (conj z) n)
+      rw [LSeries.term_of_ne_zero hn0, LSeries.term_of_ne_zero hn0, inverse_apply, map_div₀]
+      have harg : (n : ℂ).arg ≠ Real.pi := by
+        rw [Complex.natCast_arg]
+        exact Real.pi_ne_zero.symm
+      have hpow := Complex.cpow_conj (n : ℂ) z harg
+      rw [Complex.conj_natCast] at hpow
+      rw [hpow, Complex.conj_conj]
+  exact hleft.eqOn_of_preconnected_of_eventuallyEq hright isPreconnected_univ
+    (mem_univ (2 : ℂ)) hagree (mem_univ s)
+
+/-- Right-strip witnesses at nonnegative heights. The real axis is included. -/
+def PrimitiveUpperRightStripNegativeWitness : Prop :=
+  ∀ (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
+    (hp : χ.IsPrimitive) (hn : χ ≠ 1) (s : ℂ),
+    1 / 2 < s.re → s.re < 1 → 0 ≤ s.im → χ.LFunction s = 0 →
+      ∃ (T : ℝ) (f : ℝ → ℝ), Admissible χ T f ∧
+        primitiveArithmeticValue χ hp hn T (liftReal f) < 0
+
+/-- At negative height, conjugate the zero and invert the character. Real-test
+inverse transport returns the very same witness. The use of `0 ≤ s.im`
+keeps real zeros in the supplier's domain. -/
+theorem primitiveRightStripNegativeWitness_iff_upper :
+    PrimitiveRightStripNegativeWitness ↔ PrimitiveUpperRightStripNegativeWitness := by
+  constructor
+  · intro hw q hq χ hp hn s hs hs1 _ hz
+    exact hw q χ hp hn s hs hs1 hz
+  · intro hw q hq χ hp hn s hs hs1 hz
+    by_cases him : 0 ≤ s.im
+    · exact hw q χ hp hn s hs hs1 him hz
+    · have hpInv : (χ⁻¹).IsPrimitive := by
+        simpa only [DirichletCharacter.IsPrimitive, DirichletCharacter.conductor_inv] using hp
+      have hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
+      have hzInv : (χ⁻¹).LFunction (conj s) = 0 := by
+        rw [inverse_LFunction_eq_conj χ hn, Complex.conj_conj, hz, map_zero]
+      have him' : 0 ≤ (conj s).im := by
+        rw [Complex.conj_im]
+        exact neg_nonneg.mpr (le_of_lt (lt_of_not_ge him))
+      obtain ⟨T, f, hf, hneg⟩ := hw q χ⁻¹ hpInv hnInv (conj s)
+        (by simpa using hs) (by simpa using hs1) him' hzInv
+      rcases hf with ⟨hT, hdiff, hcompact, hodd, hLp, hsupport, harch⟩
+      refine ⟨T, f, ⟨hT, hdiff, hcompact, hodd, hLp, hsupport, ?_⟩, ?_⟩
+      · simpa only [inverse_parity] using harch
+      · rwa [primitiveArithmeticValue_inverse_liftReal χ hp hn hpInv hnInv T f hLp] at hneg
 
 /-- One certified stage family per inverse pair is sufficient for the right-strip return. -/
 theorem dirichletGRH_of_rh_rightStrip_and_inverse_orbit_stages
