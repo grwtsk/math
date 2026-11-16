@@ -7811,3 +7811,318 @@ for name,base in options.items():
     print("PASS original q93 price branches",name,float(max(caps)),float(min(room)))
 print("PASS original E37/E38/E39 comparison through 1130.94")
 ~~~
+
+## Replace the three-pocket donor by one donor for E37–E40
+
+2026-11-16, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 93-enclosure comparison](https://github.com/grwtsk/math/blob/a93a1bac085b9c3c67fcd6f76538644936c3a43b/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob bb088bc1f5d51621a5e36c9714e39044b5b89151. The original radius-four arithmetic
+blob is 72848bace2af0f427c9e9fae16806f1b31ee064f.
+Retain the complex odd physical carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$, its zero
+extension, folded measure $d\nu/\pi$, the original masks
+and physical projection. For the primitive nonprincipal odd
+character modulo three use full parity-one gamma, all $458$
+signed prime powers and zero principal-pole term. The
+displayed detunings are from $c_1=99653682.92983$ and include
+the reflected restrictions.
+
+The original multiplier is strictly positive on
+$[1130.94,1174.68]$ off $E_{40}=[1130.94,1131.18]$.
+Both endpoints and the right frontier are strictly positive.
+The point $1131.06$ is strictly negative. The directed sign
+guard uses $2185$ complement checks with five bisections
+and joins the preceding sign interval at the positive point
+$1130.94$. The earlier shallow candidate around $1149.10$
+lies in the positive complement.
+
+### Scope of the one-sided test
+
+The disjoint candidate $[1130.92,1142.92]$ starts $.02$
+after the previous E37–E39 donor ends and only contains the
+negative restriction E40. Use the $18$-term negative map
+at $c_1+1131.06$, $589$ true positive averaging bins,
+$84$ nonzero negative cells, $\alpha=19/20$, $\tau=10^{-12}$,
+and the specified proposed $Z$ from the fixed Jensen
+construction with $240$ carrier terms. The directed lower
+matrix has its first nonpositive normalized pivot at
+zero-based index zero. That pivot and the directed upper
+enclosure of the corresponding diagonal entry of the
+original residual both lie in $(-1.032\cdot10^{-11},-1.031\cdot10^{-11})$.
+In particular the residual for this proposed $Z$ is negative
+on its first coordinate, even with the upper enclosure.
+This test is scoped to the stated residual and proposal.
+
+### One replacement donor and four negative maps
+
+Replace the previous tag $Y_0=[1123.54,1130.90]$ with
+$Y_*=[1123.54,1135.54]$. The new tag is $.04$ after
+the separate E35/E36 donor and extends $4.64$ beyond the
+right edge of $Y_0$. The preceding two signed intervals
+and the new E40 sign check show that the negative
+restrictions on $Y_*$ are exactly E37, E38, E39 and E40.
+The original masks retain the replacement, which is
+disjoint from the other earlier tags including the remote
+ones. Use the replacement tag once.
+
+Split generation of the actual positive averages at
+$1125.64$, $1127.46$ and $1129.96$. Adjacent strips meet at
+null endpoints. The positive $.02$ bin and nonzero negative
+$.0025$ cell counts are $(95,71)$, $(77,108)$, $(116,64)$,
+and $(268,84)$. The $556$ true positive sine averages form
+a single map $B$ with positive diagonal $W$ and
+$B^*WB\preceq\mathcal P_{Y_*}$. Use $18$ Taylor terms for
+each negative output map $V_j$ at the respective centers
+$c_1+1124.54$, $c_1+1127.00$, $c_1+1127.88$ and
+$c_1+1131.06$. Write $V=(V_{37},V_{38},V_{39},V_{40})$
+and $M$ for the positive definite block diagonal negative
+moment matrix. The directed negative densities give
+$$
+ \sum_{j=37}^{40}N_{E_j}^*N_{E_j}
+ \preceq V^*MV+\left(\sum_{j=37}^{40}\delta_j\right)I,
+ \quad
+ \delta_j=8\epsilon_j(2+\epsilon_j)\int_{E_j}\eta_j,
+$$
+where $(\epsilon_{37},\epsilon_{38},\epsilon_{39},\epsilon_{40})
+=(.40^{18},.56^{18},.40^{18},.48^{18})/18!$.
+
+At $\alpha=19/20$ and $\tau=10^{-12}$, the directed lower
+residual
+$$
+ \tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                 -\tau Z^*(\alpha W)^{-1}Z
+$$
+uses one $556$-row positive map for $72$ columns.
+It retains all ten upper-triangular physical Gram and ridge
+block positions, including six mixed blocks. The angular
+difference frequencies in pair order $(37,38)$, $(37,39)$,
+$(37,40)$, $(38,39)$, $(38,40)$ and $(39,40)$ are
+$9.84$, $13.36$, $26.08$, $3.52$, $16.24$ and $12.72$.
+The guard uses $240$ Taylor terms for true averaged carriers.
+Floating point only proposes $Z$. The exact row uncertainty
+is below $10^{-23}$ and all $72$ rational leading pivots
+are positive. The established Jensen square completion yields
+$$
+ \sum_{j=37}^{40}N_{E_j}^*N_{E_j}
+ \preceq \tfrac{19}{20}\mathcal P_{Y_*}
+      +\left(\tau+\sum_{j=37}^{40}\delta_j\right)I,
+ \quad
+ \tau+\sum_{j=37}^{40}\delta_j<1.000000035\cdot10^{-12}.
+$$
+
+### Exact ledger replacement
+
+The guard checks equality of the centers, negative
+enclosures, directed cell densities and short Taylor
+remainder debits for E37, E38 and E39 in the old and new
+arrangements. The old joint price is exactly
+$\tau+\delta_{37}+\delta_{38}+\delta_{39}$. Credit that
+price once and charge the new joint price once, with
+$\mathcal P_{Y_*}$ as the sole reservation for this four-output
+block. The exact net scalar increment is $\delta_{40}$,
+with $0<\delta_{40}<10^{-21}$. The three existing negative
+outputs enter the new shared comparison once, and E40
+adds one output. All other resource reservations and scalar
+prices remain in their prior comparator. Apply each branch
+to the net scalar increment divided by $\beta$. All $48$
+original prices under each of the four first-pair choices
+retain cap below $0.953005$. The least physical room exceeds
+$8.9572\cdot10^{-10}$, and in the pooled-map branch it exceeds
+$6.6947\cdot10^{-9}$.
+
+The resulting $W_{\mathrm{all94}}$ has contiguous signed
+coverage through $1174.68$. The original identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all94}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all94}}
+ =S_\lambda-W_{\mathrm{all94}}^*W_{\mathrm{all94}}
+ \succeq0.046995S_\lambda.
+$$
+The full remaining outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all94}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses and
+directional return.
+
+Extract the guard and pass the pinned original arithmetic Markdown
+and the Jensen donor Markdown containing the E37–E39 comparison,
+original directed Jensen checker and first joint E16/E17 checker.
+Prior blocks are selected by unique digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial,cos,sin,sqrt,fsum,acos
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+def replace(code,old,new):
+    assert code.count(old)==1,old
+    return code.replace(old,new)
+
+prior=execute(checker("7cf02f6b123b6bbaf3fc0ab5009b92fb545a1464cda8f7c209f20487929d0047"),
+              [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+common=checker("c35c6b54ed082ad0ef3352039c393b7707e68d38fec0c54dc7357d862da06713")
+rows=(
+    ("e37","1123.54","1125.64","1124.44","1124.64","1124.54"),
+    ("e38","1125.64","1127.46","1126.86","1127.14","1127.00"),
+    ("e39","1127.46","1129.96","1127.78","1127.98","1127.88"),
+    ("e40","1129.96","1135.54","1130.94","1131.18","1131.06"),
+)
+holder='"e9":("707.62","709.62","708.60","708.66","708.63",".25")'
+l40,r40,c40=map(F,rows[-1][3:6])
+directed=replace(core,holder+',',
+    repr("e40")+":"+repr(rows[-1][1:]+(".95",))+",")
+directed=replace(directed,'("708.60","710.86",".02")','("1130.94","1174.68",".02")')
+directed=replace(directed,'(checks,splits)==(112,1)','(checks,splits)==(2185,5)')
+sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(directed,[arithmetic,"sign"],sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete directed E40 sign check did not return")
+
+old=prior["sign"]
+predecessor=prior["prior"]
+left,split1,split2,split3,right=map(F,("1123.54","1125.64","1127.46","1129.96","1135.54"))
+assert old["stop"]==sign["start"]==l40==F("1130.94")
+assert old["node"](old["stop"])[1]<old["Alo"]
+assert sign["boxes"]==[(l40,r40)] and sign["stop"]==F("1174.68")
+assert old["boxes"]==[tuple(map(F,row[3:5])) for row in rows[:-1]]
+assert all(a<l<c<h<b for _,x,y,u,v,w in rows
+           for a,b,l,h,c in [tuple(map(F,(x,y,u,v,w)))])
+old_a,old_b=prior["left"],prior["right"]
+assert predecessor["b"]["stop"]+F(".04")==left==old_a
+assert split3<old_b==F("1130.90")<l40<r40<right<sign["stop"]
+assert right-old_b==F("4.64")
+assert all(v<left or right<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*sign["pi_lower"]-F("5.55")-2>sign["c0"]+right
+
+# The proposed one-sided comparison fails even at an upper residual entry.
+narrow_l,narrow_r=map(F,("1130.92","1142.92"))
+assert old_b<narrow_l<l40<r40<narrow_r<sign["stop"]
+code=replace(core,holder+',',
+    '"e40":("1130.92","1142.92","1130.94","1131.18","1131.06",".95"),')
+for x,y in (
+    ('len(pos)==98 and len(rho)==9','len(pos)==589 and len(rho)==84'),
+    ('K=120','K=240'),('F("1.801e-48")','F("3.601e-48")'),
+    ('F("9.656e-36")','F("1e-21")'),
+    ('assert c==c0+F("708.63")','assert c==c0+F("1131.06")'),
+    ('F(rounderr,work_grid)<F("1e-23")','F(rounderr,work_grid)<F("4e-21")'),
+    ('    assert p>0\n    for j in range(i+1,k):',
+     '    if p<=0:\n        failed=i,F(p,last*work_grid)\n        break\n    for j in range(i+1,k):'),
+):
+    code=replace(code,x,y)
+end='assert F(T[0][0],work_grid)>F("5.9727e-8")'
+assert code.count(end)==1
+narrow=execute(code.split(end)[0],[arithmetic,"e40"])
+i,pivot=narrow["failed"]
+upper=F(narrow["upper"][0][0],narrow["work_grid"])
+assert i==0 and F("-1.032e-11")<pivot<=upper<F("-1.031e-11")
+assert narrow["alpha"]==F(".95") and narrow["tau"]==F("1e-12")
+assert (narrow["start"],narrow["stop"],narrow["c"])==(narrow_l,narrow_r,narrow["c0"]+c40)
+print("PASS scoped one-sided negative proposed residual",float(pivot),float(upper))
+
+# Replace the old positive tag with one wider tag for all four negative outputs.
+first=common.index("k=18\nd=[]")
+last=common.index("account_start=",first)
+common=common[first:last]
+angles=tuple(map(F,("9.84","13.36","26.08","3.52","16.24","12.72")))
+for x,y in (
+    ('("e16","782.86","785.86","784.80","784.88","784.84"),\n'
+     '    ("e17","785.86","790.86","786.68","787.06","786.86"),',
+     "\n    ".join(repr(row)+"," for row in rows)),
+    ('((146,21) if mode=="e16" else (232,138))',
+     '{"e37":(95,71),"e38":(77,108),"e39":(116,64),"e40":(268,84)}[mode]'),
+    ('dim=2*k','dim=len(d)*k'),
+    ('actual_centers=(a["c"],b["c"])','actual_centers=tuple(u["c"] for u in d)'),
+    ('len(pos)==378','len(pos)==556'),
+    ('K=160','K=240'),
+    ("assert z==F('8.08')",
+     "assert z in (F('9.84'),F('13.36'),F('26.08'),F('3.52'),F('16.24'),F('12.72'))"),
+    ('for bi,bj in ((0,0),(0,1),(1,1)):',
+     'pairs=tuple((i,j) for i in range(len(d)) for j in range(i,len(d)))\n'
+     'assert pairs==((0,0),(0,1),(0,2),(0,3),(1,1),(1,2),(1,3),(2,2),(2,3),(3,3))\n'
+     'for bi,bj in pairs:'),
+    ('tau=q+a["delta"]+b["delta"]','tau=q+sum(u["delta"] for u in d)'),
+    ('assert tau<F("1.001e-12")','assert tau<F("1.000000035e-12")'),
+    ('PASS actual E16/E17 common donor','PASS actual E37/E38/E39/E40 replacement donor'),
+    ('str(b["stop"]),len(pos)','str(d[-1]["stop"]),len(pos)'),
+):
+    common=replace(common,x,y)
+first=common.index("a,b=d")
+last=common.index("q=F(ask)",first)
+common=common[:first]+'''a,b,_,_=d
+assert tuple(u["c"]-u["c0"] for u in d)==tuple(map(F,("1124.54","1127.00","1127.88","1131.06")))
+assert a["stop"]==b["start"]==F("1125.64")
+assert b["stop"]==d[2]["start"]==F("1127.46")
+assert d[2]["stop"]==d[-1]["start"]==F("1129.96")
+'''+common[last:]
+common=replace(common,
+    'code=core.replace(\''+holder+'\',row)',
+    'assert core.count(\''+holder+'\')==1\n    code=core.replace(\''+holder+'\',row)')
+numerical=dict(globals(),source_path=arithmetic,jensen_path=jensen,ask="1e-12")
+pooled=execute(common,[arithmetic,jensen,"1e-12"],numerical)
+strips=pooled["d"]
+edges=(left,split1,split2,split3,right)
+assert tuple((u["start"],u["stop"]) for u in strips)==tuple(zip(edges,edges[1:]))
+assert tuple((F(u["l0"]),F(u["r0"])) for u in strips)==tuple(old["boxes"]+sign["boxes"])
+assert pooled["alpha"]==F(".95") and pooled["K"]==240 and pooled["dim"]==72
+centers=pooled["actual_centers"]
+assert tuple(4*(centers[j]-centers[i]) for i,j in pooled["pairs"] if i<j)==angles
+assert len(pooled["Z"])==556 and all(len(row)==72 for row in pooled["Z"])
+
+credited=prior["tau"]
+for u,v in zip(prior["strips"],strips[:3]):
+    assert (u["c"],u["l0"],u["r0"],u["rho"],u["delta"])==(
+        v["c"],v["l0"],v["r0"],v["rho"],v["delta"])
+assert credited==F("1e-12")+sum(u["delta"] for u in strips[:3])
+new_price=pooled["tau"]
+extra=strips[-1]["delta"]
+assert new_price==credited+extra<F("1.000000035e-12")
+assert 0<extra<F("1e-21") and narrow["delta"]==extra
+beta,old,options=prior["beta"],prior["old"],prior["options"]
+assert prior["tail"]-credited==predecessor["tail"]
+tail=prior["tail"]-credited+new_price
+assert tail==prior["tail"]+extra
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+print("PASS exact replacement ledger",float(credited),float(new_price),float(extra))
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),F(4803,5330)) for p in old]
+    room=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(room)>F("8.9572e-10")
+    if name=="pooled-map":
+        assert min(room)>F("6.6947e-9")
+    print("PASS original q94 price branches",name,float(max(caps)),float(min(room)))
+print("PASS E40 signed extension through 1174.68")
+~~~
