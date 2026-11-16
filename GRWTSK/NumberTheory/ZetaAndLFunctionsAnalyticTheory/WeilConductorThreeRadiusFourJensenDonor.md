@@ -7560,3 +7560,254 @@ for name,base in options.items():
     print("PASS original q90 price branches",name,float(max(caps)),float(min(room)))
 print("PASS original E34/E35/E36 comparison through 1124.44")
 ~~~
+
+## One shared physical donor for E37–E39
+
+2026-11-16, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 90-enclosure comparison](https://github.com/grwtsk/math/blob/634b5bae9d82f30ab17f8555fe62debc0dbdef31/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob 238ee274173ff78ef2e986d384efec1ea8dda61f. The original radius-four arithmetic
+blob is 72848bace2af0f427c9e9fae16806f1b31ee064f.
+Retain the complex odd physical carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$, its zero extension,
+folded measure $d\nu/\pi$, original masks and physical
+projection. For the primitive nonprincipal odd character
+modulo three use full parity-one gamma, all $458$ signed
+prime powers and zero principal-pole term. The displayed
+detunings are from $c_1=99653682.92983$ and include the
+reflected restrictions.
+
+The original multiplier is strictly positive on the
+complement of $E_{37}=[1124.44,1124.64]$,
+$E_{38}=[1126.86,1127.14]$, and $E_{39}=[1127.78,1127.98]$
+in $[1124.44,1130.94]$. The six box endpoints and the
+right frontier are strictly positive. The points $1124.54$,
+$1127.00$, and $1127.88$ are strictly negative. The directed
+sign guard uses $291$ complement cells and zero bisections.
+The preceding sign interval joins this one at the positive
+point $1124.44$.
+
+Set $Y_*=[1123.54,1130.90]$. Its left endpoint is $.04$
+after the preceding E35/E36 donor, and its right endpoint
+is $.04$ before the new frontier. The preceding signed
+interval proves positivity on the left part of the new donor
+through $1124.44$. Its only negative restrictions are
+$E_{37}$, $E_{38}$, and $E_{39}$. The original masks retain
+the donor and the exact endpoints separate it from the prior
+positive tags, including the remote ones.
+
+### One positive map and three negative maps
+
+Split data generation at $1125.64$ and $1127.46$. Each strip
+contains its corresponding negative enclosure, and consecutive
+strips meet at a single null endpoint. Their respective positive
+$.02$ bin counts and nonzero negative $.0025$ cell counts are
+$(95,71)$, $(77,108)$, and $(163,64)$. The $335$ true positive
+sine averages define one map $B$ with positive diagonal $W$.
+Thus $B^*WB\preceq\mathcal P_{Y_*}$.
+
+Use $18$ Taylor terms for each negative output map
+$V_j$ at the respective center $c_1+1124.54$, $c_1+1127.00$,
+and $c_1+1127.88$. Form $V=(V_{37},V_{38},V_{39})$ and the
+positive definite block diagonal negative moment matrix $M$.
+The original directed negative densities give
+$$
+ \sum_{j=37}^{39}N_{E_j}^*N_{E_j}
+ \preceq V^*MV+\left(\sum_{j=37}^{39}\delta_j\right)I,
+ \qquad
+ \delta_j=8\epsilon_j(2+\epsilon_j)\int_{E_j}\eta_j,
+$$
+where $(\epsilon_{37},\epsilon_{38},\epsilon_{39})
+=(.40^{18},.56^{18},.40^{18})/18!$.
+
+With $\alpha=19/20$ and $\tau=10^{-12}$, use the directed
+physical lower residual
+$$
+ \tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                 -\tau Z^*(\alpha W)^{-1}Z .
+$$
+The same $335$ positive rows are used for all $54$ columns
+of $Z$. The guard keeps all six upper-triangular block
+positions in the physical Gram and the ridge, including all
+three mixed blocks. The angular difference frequencies for
+the center pairs $(37,38)$, $(37,39)$, and $(38,39)$ are
+$9.84$, $13.36$, and $3.52$, respectively. The directed
+calculations use $160$ Taylor terms for true averaged
+carriers. Floating point only proposes $Z$. The exact row
+uncertainty is below $10^{-23}$, and all $54$ rational
+pivots are positive. The established Jensen square completion
+gives
+$$
+ \sum_{j=37}^{39}N_{E_j}^*N_{E_j}
+ \preceq \tfrac{19}{20}\mathcal P_{Y_*}
+              +\left(\tau+\sum_{j=37}^{39}\delta_j\right)I,
+ \qquad
+ \tau+\sum_{j=37}^{39}\delta_j<1.000000034\cdot10^{-12}.
+$$
+
+### Return to the original comparison
+
+Reserve $\mathcal P_{Y_*}$ once. Retain the earlier positive
+tags, separate scalar prices, common derivative price, and
+$\beta I$ in the reduced comparator. The new donor fits the
+existing fraction $19/20$. Add the single exact joint scalar
+price divided by $\beta$ to each retained branch. All $48$
+original prices under each of the four first-pair choices
+retain cap below $0.953005$. The least physical room exceeds
+$8.9572\cdot10^{-10}$, and in the pooled-map branch it exceeds
+$6.6947\cdot10^{-9}$.
+
+Append the three disjoint negative outputs to form
+$W_{\mathrm{all93}}$. Contiguous signed coverage reaches $1130.94$.
+The original identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all93}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all93}}
+ =S_\lambda-W_{\mathrm{all93}}^*W_{\mathrm{all93}}
+ \succeq0.046995S_\lambda.
+$$
+The full remaining outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all93}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses and
+directional return.
+
+Extract the guard and pass the pinned original arithmetic
+Markdown and the Jensen donor Markdown containing the E34–E36
+comparison, original directed Jensen checker, and first joint
+E16/E17 checker. Prior source blocks are selected by unique digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial,cos,sin,sqrt,fsum,acos
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+def replace(code,old,new):
+    assert code.count(old)==1,old
+    return code.replace(old,new)
+
+prior=execute(checker("6527b861e70c6cfbabd2ca93048d2fe2f342aa26a602841aeeb68b6c53590d09"),
+              [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+common=checker("c35c6b54ed082ad0ef3352039c393b7707e68d38fec0c54dc7357d862da06713")
+rows=(
+    ("e37","1123.54","1125.64","1124.44","1124.64","1124.54"),
+    ("e38","1125.64","1127.46","1126.86","1127.14","1127.00"),
+    ("e39","1127.46","1130.90","1127.78","1127.98","1127.88"),
+)
+holder='"e9":("707.62","709.62","708.60","708.66","708.63",".25")'
+directed=replace(core,holder+',',
+    "\n    ".join(repr(row[0])+":"+repr(row[1:]+(".95",))+"," for row in rows))
+directed=replace(directed,'("708.60","710.86",".02")','("1124.44","1130.94",".02")')
+directed=replace(directed,'(checks,splits)==(112,1)','(checks,splits)==(291,0)')
+sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(directed,[arithmetic,"sign"],sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete E37/E38/E39 directed sign check did not return")
+
+left,split1,split2,right=map(F,("1123.54","1125.64","1127.46","1130.90"))
+old_sign=prior["sign"]
+old_right=prior["b"]["stop"]
+assert old_sign["boxes"][-1][1]<old_right==F("1123.50")<left<old_sign["stop"]
+assert old_sign["stop"]==sign["start"]==F("1124.44")
+assert old_sign["node"](old_sign["stop"])[1]<old_sign["Alo"]
+assert sign["stop"]==F("1130.94")
+assert left-old_right==sign["stop"]-right==F(".04")
+assert sign["boxes"]==[tuple(map(F,row[3:5])) for row in rows]
+assert tuple(map(F,("1124.44","1124.64","1126.86","1127.14","1127.78","1127.98")))==tuple(
+    x for box in sign["boxes"] for x in box)
+assert all(a<l<c<h<b for _,x,y,u,v,w in rows
+           for a,b,l,h,c in [tuple(map(F,(x,y,u,v,w)))])
+assert all(v<left or right<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*sign["pi_lower"]-F("5.55")-2>sign["c0"]+right
+
+first=common.index("k=18\nd=[]")
+last=common.index("account_start=",first)
+common=common[first:last]
+for old,new in (
+    ('("e16","782.86","785.86","784.80","784.88","784.84"),\n'
+     '    ("e17","785.86","790.86","786.68","787.06","786.86"),',
+     "\n    ".join(repr(row)+"," for row in rows)),
+    ('((146,21) if mode=="e16" else (232,138))',
+     '{"e37":(95,71),"e38":(77,108),"e39":(163,64)}[mode]'),
+    ('dim=2*k','dim=len(d)*k'),
+    ('actual_centers=(a["c"],b["c"])','actual_centers=tuple(u["c"] for u in d)'),
+    ('len(pos)==378','len(pos)==335'),
+    ("assert z==F('8.08')","assert z in (F('9.84'),F('13.36'),F('3.52'))"),
+    ('for bi,bj in ((0,0),(0,1),(1,1)):',
+     'pairs=tuple((i,j) for i in range(len(d)) for j in range(i,len(d)))\n'
+     'assert pairs==((0,0),(0,1),(0,2),(1,1),(1,2),(2,2))\n'
+     'for bi,bj in pairs:'),
+    ('tau=q+a["delta"]+b["delta"]','tau=q+sum(u["delta"] for u in d)'),
+    ('assert tau<F("1.001e-12")','assert tau<F("1.000000034e-12")'),
+    ('PASS actual E16/E17 common donor','PASS actual E37/E38/E39 common donor'),
+    ('str(b["stop"]),len(pos)','str(d[-1]["stop"]),len(pos)'),
+):
+    common=replace(common,old,new)
+first=common.index("a,b=d")
+last=common.index("q=F(ask)",first)
+common=common[:first]+'''a,b,_=d
+assert tuple(u["c"]-u["c0"] for u in d)==tuple(map(F,("1124.54","1127.00","1127.88")))
+assert a["stop"]==b["start"]==F("1125.64")
+assert b["stop"]==d[-1]["start"]==F("1127.46")
+'''+common[last:]
+common=replace(common,
+    'code=core.replace(\''+holder+'\',row)',
+    'assert core.count(\''+holder+'\')==1\n    code=core.replace(\''+holder+'\',row)')
+numerical=dict(globals(),source_path=arithmetic,jensen_path=jensen,ask="1e-12")
+pooled=execute(common,[arithmetic,jensen,"1e-12"],numerical)
+strips=pooled["d"]
+assert tuple((u["start"],u["stop"]) for u in strips)==((left,split1),(split1,split2),(split2,right))
+assert tuple((F(u["l0"]),F(u["r0"])) for u in strips)==tuple(sign["boxes"])
+assert pooled["alpha"]==F(".95") and pooled["K"]==160 and pooled["dim"]==54
+centers=pooled["actual_centers"]
+assert tuple(4*(centers[j]-centers[i]) for i,j in pooled["pairs"] if i<j)==tuple(
+    map(F,("9.84","13.36","3.52")))
+assert len(pooled["Z"])==335 and all(len(row)==54 for row in pooled["Z"])
+tau=pooled["tau"]
+assert tau==F("1e-12")+sum(u["delta"] for u in strips)<F("1.000000034e-12")
+
+beta,old,options=prior["beta"],prior["old"],prior["options"]
+tail=prior["tail"]+tau
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),F(4803,5330)) for p in old]
+    room=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(room)>F("8.9572e-10")
+    if name=="pooled-map":
+        assert min(room)>F("6.6947e-9")
+    print("PASS original q93 price branches",name,float(max(caps)),float(min(room)))
+print("PASS original E37/E38/E39 comparison through 1130.94")
+~~~
