@@ -292,6 +292,109 @@ theorem heatedWave_sub_limit_abs_le {s : ℝ} (hs : 0 < s) (u : ℝ) :
   rw [tsum_mul_right, heatedAbsMass]
   ring
 
+/-- The signed mass of the genuine Gaussian coefficients. -/
+def heatedSignedMass (s : ℝ) : ℝ := ∑' n, heatedCoeff s n
+
+/-- Once the leading settling transient is removed, only the unborn tail
+remains. Its extra Gaussian decay gives an integrable exponential remainder. -/
+theorem exists_heatedWave_exponential_remainder {s : ℝ} (hs : 0 < s) :
+    ∃ K : ℝ, 0 ≤ K ∧ ∀ u : ℝ, 0 ≤ u →
+      |heatedWave s u - heatedLimit s + 2 * heatedSignedMass s * Real.exp (-u / 2)| ≤
+        K * Real.exp (-u) := by
+  let B : ℝ := Real.exp (1 / (8 * s))
+  have hB : 0 ≤ B := (Real.exp_pos _).le
+  have hsHalf : 0 < s / 2 := by positivity
+  have hCoeff : Summable (heatedCoeff s) :=
+    (heatedCoeff_abs_summable hs).of_norm_bounded (fun n => by simp [Real.norm_eq_abs])
+  refine ⟨2 * B * heatedAbsMass (s / 2),
+    mul_nonneg (mul_nonneg (by norm_num) hB) (heatedAbsMass_nonneg _), ?_⟩
+  intro u _hu
+  let e : ℝ := Real.exp (-u / 2)
+  let q (n : ℕ) := heatedCoeff s n * (pickupResponse n u - settledResponse n + 2 * e)
+  let M (n : ℕ) := (2 * B * Real.exp (-u)) * |heatedCoeff (s / 2) n|
+  have hM : Summable M := (heatedCoeff_abs_summable hsHalf).mul_left _
+  have he : 0 ≤ e := (Real.exp_pos _).le
+  have hpoint (n : ℕ) : ‖q n‖ ≤ M n := by
+    by_cases hn : n = 0
+    · simp [q, M, hn, heatedCoeff_zero]
+    by_cases hborn : Real.log (n : ℝ) ≤ u
+    · have hq0 : q n = 0 := by
+        dsimp only [q, settledResponse, pickupResponse, e]
+        rw [ite_eq_left hborn]
+        ring
+      rw [hq0, norm_zero]
+      exact mul_nonneg (by positivity) (abs_nonneg _)
+    have hlog : u < Real.log (n : ℝ) := lt_of_not_ge hborn
+    let l : ℝ := Real.log (n : ℝ)
+    have hsq : l / 2 - (s / 2) * l ^ 2 ≤ 1 / (8 * s) :=
+      (le_div_iff₀ (by positivity : 0 < 8 * s)).2 (by
+        nlinarith [sq_nonneg (2 * s * l - 1)])
+    have hdecay : -(s / 2) * l ^ 2 ≤ 1 / (8 * s) - u / 2 := by
+      change u < l at hlog
+      linarith
+    have hfactor : |heatedCoeff s n| =
+        |heatedCoeff (s / 2) n| * Real.exp (-(s / 2) * l ^ 2) := by
+      simp only [heatedCoeff, abs_mul, Real.abs_exp, l]
+      rw [mul_assoc, ← Real.exp_add]
+      congr 2
+      ring
+    have hCoeff' : |heatedCoeff s n| ≤ |heatedCoeff (s / 2) n| * (B * e) := by
+      rw [hfactor]
+      apply mul_le_mul_of_nonneg_left _ (abs_nonneg _)
+      have h := Real.exp_le_exp.mpr hdecay
+      simpa only [B, e, sub_eq_add_neg, Real.exp_add, neg_div] using h
+    have hsettle : settledResponse n ≤ 2 * e := by
+      rw [settledResponse, ← pickup_exp_negative_log_half (Nat.pos_of_ne_zero hn)]
+      exact mul_le_mul_of_nonneg_left (Real.exp_le_exp.mpr (show -l / 2 ≤ -u / 2 by linarith))
+        (by norm_num)
+    have hqnorm : ‖q n‖ =
+        |heatedCoeff s n| * (2 * e - settledResponse n) := by
+      dsimp only [q]
+      rw [Real.norm_eq_abs, abs_mul, pickupResponse, ite_eq_right hborn,
+        show 0 - settledResponse n + 2 * e = 2 * e - settledResponse n by ring,
+        abs_of_nonneg (sub_nonneg.mpr hsettle)]
+    have heSq : e * e = Real.exp (-u) := by
+      dsimp only [e]
+      rw [← Real.exp_add]
+      congr 1
+      ring
+    calc
+      ‖q n‖ = _ := hqnorm
+      _ ≤ (|heatedCoeff (s / 2) n| * (B * e)) * (2 * e) :=
+        mul_le_mul hCoeff' (sub_le_self _ (settledResponse_nonneg n))
+          (sub_nonneg.mpr hsettle) (by positivity)
+      _ = M n := by
+        dsimp only [M]
+        rw [← heSq]
+        ring
+  have hqSum : Summable q := hM.of_norm_bounded hpoint
+  have hsettled := heatedSettled_summable hs
+  have htransient : Summable (fun n : ℕ => (2 * e) * heatedCoeff s n) :=
+    hCoeff.mul_left _
+  have hwave : Summable (fun n : ℕ => heatedCoeff s n * pickupResponse n u) := by
+    convert (hqSum.sub htransient).add hsettled using 1
+    ext n
+    dsimp only [q, Pi.add_apply, Pi.sub_apply]
+    ring
+  have heq : heatedWave s u - heatedLimit s + 2 * heatedSignedMass s * Real.exp (-u / 2) =
+      ∑' n, q n := by
+    have hcoef : 2 * heatedSignedMass s * Real.exp (-u / 2) =
+        ∑' n, (2 * e) * heatedCoeff s n := by
+      rw [tsum_mul_left, heatedSignedMass]
+      dsimp only [e]
+      ring
+    rw [heatedWave_eq_tsum, heatedLimit, hcoef, ← hwave.tsum_sub hsettled,
+      ← (hwave.sub hsettled).tsum_add htransient]
+    apply tsum_congr
+    intro n
+    dsimp only [q]
+    ring
+  rw [heq, ← Real.norm_eq_abs]
+  refine (tsum_of_norm_bounded hM.hasSum hpoint).trans_eq ?_
+  dsimp only [M]
+  rw [tsum_mul_left, heatedAbsMass]
+  ring
+
 /-- The decaying term of the heated transform. -/
 def heatedCorrection (s : ℝ) (z : ℂ) : ℂ :=
   ∫ u in Ioi (0 : ℝ), Complex.exp (-z * (u : ℂ)) *
