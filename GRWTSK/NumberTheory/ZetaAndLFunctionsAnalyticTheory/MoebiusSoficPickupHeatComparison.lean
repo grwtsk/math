@@ -361,4 +361,86 @@ theorem original_pickupEnergy_linear_budget_iff_heatMaskDeviation {s A : ℝ}
     rw [add_div] at hhigh
     linarith
 
+private theorem heatedWave_abs_le {s u : ℝ} (hs : 0 < s) (hu : 0 ≤ u) :
+    |heatedWave s u| ≤ |heatedLimit s| + 2 * heatedAbsMass s := by
+  have hmass := heatedAbsMass_nonneg s
+  calc
+    |heatedWave s u| ≤ |heatedWave s u - heatedLimit s| + |heatedLimit s| := by
+      simpa only [sub_add_cancel] using
+        abs_add_le (heatedWave s u - heatedLimit s) (heatedLimit s)
+    _ ≤ 2 * heatedAbsMass s * Real.exp (-u / 2) + |heatedLimit s| :=
+      add_le_add (heatedWave_sub_limit_abs_le hs u) le_rfl
+    _ ≤ _ := by
+      have hexp : Real.exp (-u / 2) ≤ 1 := Real.exp_le_one_iff.mpr (by linarith)
+      linarith [mul_le_mul_of_nonneg_left hexp (show 0 ≤ 2 * heatedAbsMass s by positivity)]
+
+private theorem integral_sq_add_le {f g : ℝ → ℝ} {T B : ℝ}
+    (hT : 0 ≤ T) (hf : Continuous f) (hg : Continuous g) (hB : 0 ≤ B)
+    (hbound : ∀ u ∈ Icc (0 : ℝ) T, |g u| ≤ B) :
+    (∫ u in (0 : ℝ)..T, (f u + g u) ^ 2) ≤
+      2 * (∫ u in (0 : ℝ)..T, f u ^ 2) + 2 * B ^ 2 * T := by
+  have hsq : Continuous (fun u => 2 * f u ^ 2) := continuous_const.mul (hf.pow 2)
+  have hc : Continuous (fun _ : ℝ => 2 * B ^ 2) := continuous_const
+  calc
+    _ ≤ ∫ u in (0 : ℝ)..T, 2 * f u ^ 2 + 2 * B ^ 2 := by
+      apply intervalIntegral.integral_mono_on hT
+        (((hf.add hg).pow 2).intervalIntegrable 0 T)
+        ((hsq.add hc).intervalIntegrable 0 T)
+      intro u hu
+      have hgsq : g u ^ 2 ≤ B ^ 2 :=
+        sq_le_sq.mpr (by simpa only [abs_of_nonneg hB] using hbound u hu)
+      change (f u + g u) ^ 2 ≤ 2 * f u ^ 2 + 2 * B ^ 2
+      nlinarith [sq_nonneg (f u - g u)]
+    _ = _ := by
+      rw [intervalIntegral.integral_add (hsq.intervalIntegrable 0 T) (hc.intervalIntegrable 0 T),
+        intervalIntegral.integral_const_mul, intervalIntegral.integral_const]
+      simp only [sub_zero, smul_eq_mul]
+      ring
+
+private theorem source_and_residual_energy_bounds {s T : ℝ} (hs : 0 < s) (hT : 0 ≤ T) :
+    let B := |heatedLimit s| + 2 * heatedAbsMass s
+    pickupEnergy T ≤ 2 * residualEnergy s T + 2 * B ^ 2 * T ∧
+      residualEnergy s T ≤ 2 * pickupEnergy T + 2 * B ^ 2 * T := by
+  let B := |heatedLimit s| + 2 * heatedAbsMass s
+  have hB : 0 ≤ B := add_nonneg (abs_nonneg _) (by linarith [heatedAbsMass_nonneg s])
+  have hH (u : ℝ) (hu : u ∈ Icc (0 : ℝ) T) : |heatedWave s u| ≤ B :=
+    heatedWave_abs_le hs hu.1
+  constructor
+  · have h := integral_sq_add_le hT (residualWave_continuous s) (heatedWave_continuous s) hB hH
+    simpa only [residualWave, sub_add_cancel, pickupEnergy, residualEnergy, B] using h
+  · have h := integral_sq_add_le hT wholePickup_continuous (heatedWave_continuous s).neg hB
+      (fun u hu => by simpa only [Pi.neg_apply, abs_neg] using hH u hu)
+    simpa only [Pi.neg_apply, ← sub_eq_add_neg, residualWave, pickupEnergy, residualEnergy, B] using h
+
+/-- Existence of a genuine linear signed residual budget on fixed scales is
+equivalent to a linear lower budget for the original signed deviation
+relative to the original Möbius diagonal on those same scales. -/
+theorem exists_linear_residual_budget_iff_heatMaskDeviation {s : ℝ}
+    (hs : 0 < s) {l : Filter ℝ} (hl : l ≤ atTop) :
+    (∃ A : ℝ, ∀ᶠ T in l, residualEnergy s T ≤ A * T) ↔
+      (∃ K : ℝ, ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l,
+        settledHeatedPickup s - K - ε ≤
+          (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+            pickupDiagonal T) / T) := by
+  let B := |heatedLimit s| + 2 * heatedAbsMass s
+  have hpos := (eventually_gt_atTop (0 : ℝ)).filter_mono hl
+  constructor
+  · rintro ⟨A, hA⟩
+    refine ⟨2 * A + 2 * B ^ 2,
+      (original_pickupEnergy_linear_budget_iff_heatMaskDeviation hs hl).mp ?_⟩
+    intro ε hε
+    filter_upwards [hpos, hA] with T hT hA
+    have h := (source_and_residual_energy_bounds hs hT.le).1
+    change pickupEnergy T ≤ 2 * residualEnergy s T + 2 * B ^ 2 * T at h
+    apply (div_le_iff₀ hT).mpr
+    linarith [mul_nonneg hε.le hT.le]
+  · rintro ⟨K, hK⟩
+    have h := (original_pickupEnergy_linear_budget_iff_heatMaskDeviation hs hl).mpr hK
+    refine ⟨2 * (K + 1) + 2 * B ^ 2, ?_⟩
+    filter_upwards [hpos, h 1 one_pos] with T hT henergy
+    have hsource := (div_le_iff₀ hT).mp henergy
+    have hres := (source_and_residual_energy_bounds hs hT.le).2
+    change residualEnergy s T ≤ 2 * pickupEnergy T + 2 * B ^ 2 * T at hres
+    linarith
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
