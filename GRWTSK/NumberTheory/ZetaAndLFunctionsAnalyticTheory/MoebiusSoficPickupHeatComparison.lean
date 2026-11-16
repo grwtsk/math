@@ -554,4 +554,58 @@ theorem residualEnergy_linear_budget_iff_heatMaskDeviation_of_source_mean
   simpa only [add_div] using
     tendsto_normalized_heatMaskDeviation_add_residual_of_source_mean hs hl hmean
 
+/-- After retaining the measured first moment, the cross-heat energy
+difference equals the settled square difference up to bounded error. -/
+theorem exists_residualEnergy_heat_difference_with_mean_correction_abs_le
+    {s t : ℝ} (hs : 0 < s) (ht : 0 < t) :
+    ∃ K : ℝ, 0 ≤ K ∧ ∀ T : ℝ, 0 ≤ T →
+      |residualEnergy t T - residualEnergy s T +
+          2 * (heatedLimit t - heatedLimit s) * (∫ u in (0 : ℝ)..T, wholePickup u) -
+          (heatedLimit t ^ 2 - heatedLimit s ^ 2) * T| ≤ K := by
+  obtain ⟨Ks, hKs, hsbound⟩ :=
+    GaussianSignedResidualMixedAbel.exists_residualEnergy_sub_centeredPickup_abs_le hs
+  obtain ⟨Kt, hKt, htbound⟩ :=
+    GaussianSignedResidualMixedAbel.exists_residualEnergy_sub_centeredPickup_abs_le ht
+  refine ⟨Kt + Ks, add_nonneg hKt hKs, fun T hT => ?_⟩
+  let es := residualEnergy s T - (∫ u in (0 : ℝ)..T, (wholePickup u - heatedLimit s) ^ 2)
+  let et := residualEnergy t T - (∫ u in (0 : ℝ)..T, (wholePickup u - heatedLimit t) ^ 2)
+  have heq : residualEnergy t T - residualEnergy s T +
+      2 * (heatedLimit t - heatedLimit s) * (∫ u in (0 : ℝ)..T, wholePickup u) -
+      (heatedLimit t ^ 2 - heatedLimit s ^ 2) * T = et - es := by
+    dsimp only [et, es]
+    rw [centeredPickup_expand, centeredPickup_expand]
+    ring
+  rw [heq]
+  calc
+    |et - es| ≤ |et| + |es| := by
+      simpa only [sub_eq_add_neg, abs_neg] using abs_add_le et (-es)
+    _ ≤ _ := add_le_add (htbound T hT) (hsbound T hT)
+
+/-- The corrected cross-heat limit requires neither a linear energy budget
+nor convergence of the measured pickup mean. -/
+theorem tendsto_residualEnergy_heat_difference_with_mean_correction
+    {s t : ℝ} (hs : 0 < s) (ht : 0 < t) :
+    Tendsto (fun T : ℝ =>
+      (residualEnergy t T - residualEnergy s T +
+        2 * (heatedLimit t - heatedLimit s) * (∫ u in (0 : ℝ)..T, wholePickup u)) / T)
+      atTop (𝓝 (heatedLimit t ^ 2 - heatedLimit s ^ 2)) := by
+  let B := heatedLimit t ^ 2 - heatedLimit s ^ 2
+  let N (T : ℝ) := residualEnergy t T - residualEnergy s T +
+      2 * (heatedLimit t - heatedLimit s) * (∫ u in (0 : ℝ)..T, wholePickup u)
+  obtain ⟨K, _, hK⟩ := exists_residualEnergy_heat_difference_with_mean_correction_abs_le hs ht
+  have hzero : Tendsto (fun T : ℝ => (N T - B * T) / T) atTop (𝓝 0) := by
+    apply squeeze_zero_norm' (a := fun T : ℝ => K * T⁻¹)
+    · filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+      rw [Real.norm_eq_abs, abs_div, abs_of_pos hT, div_eq_mul_inv]
+      exact mul_le_mul_of_nonneg_right (hK T hT.le) (inv_nonneg.mpr hT.le)
+    · simpa only [mul_zero] using
+        (tendsto_inv_atTop_zero : Tendsto (fun T : ℝ => T⁻¹) atTop (𝓝 0)).const_mul K
+  have h := hzero.add_const B
+  rw [zero_add] at h
+  refine h.congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+  change (N T - B * T) / T + B = N T / T
+  field_simp
+  ring
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
