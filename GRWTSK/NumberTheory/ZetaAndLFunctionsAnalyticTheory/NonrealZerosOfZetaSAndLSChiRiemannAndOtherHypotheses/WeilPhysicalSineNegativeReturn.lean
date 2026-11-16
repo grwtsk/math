@@ -48,6 +48,8 @@ namespace GRWTSK.NumberTheory.WeilQuadraticForm.PhysicalSineNegativeReturn
 open GRWTSK.NumberTheory.WeilQuadraticForm.OddRootProjection
 open GRWTSK.NumberTheory.WeilQuadraticForm.OddSineParseval
 open GRWTSK.NumberTheory.WeilQuadraticForm.AdaptiveSineGrowth
+open GRWTSK.NumberTheory.WeilQuadraticForm.LowSchur (activePrimePowers)
+open GRWTSK.NumberTheory.WeilQuadraticForm.CofinalSubexponential (LogSublinearUpperBudget)
 open GRWTSK.NumberTheory.Conditional
 open GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
 
@@ -64,10 +66,11 @@ theorem source_sine_bessel
   have hfin :
       (∑ n ∈ Finset.range M, sineCoefficient T f (n + 1) ^ 2) ≤
         ∑' n : ℕ, sineCoefficient T f (n + 1) ^ 2 :=
-    h.summable.le_tsum (Finset.range M) (fun n _ => sq_nonneg _)
+    h.summable.sum_le_tsum (Finset.range M) (fun n _ => sq_nonneg _)
   rw [h.tsum_eq] at hfin
-  simpa only [sineCoordinates_eq_sineCoefficient,
-    Fin.sum_univ_eq_sum_range] using hfin
+  simp only [sineCoordinates_eq_sineCoefficient]
+  rw [Fin.sum_univ_eq_sum_range (fun n : ℕ => sineCoefficient T f (n + 1) ^ 2)]
+  exact hfin
 
 /-- Literal physical odd zeta source, including the negative signed pole.
 No pole cancellation or periodized surrogate is introduced. -/
@@ -168,7 +171,6 @@ theorem no_raw_sine_witness_above_budget_rate
         mul_lt_mul_of_pos_right (hsmall j (le_max_right J H)) hK
       _ = c * Real.exp (a * T j) := by
         field_simp [hK.ne']
-        ring
   linarith
 
 /-- The source-side form of the missing off-critical-zero amplification:
