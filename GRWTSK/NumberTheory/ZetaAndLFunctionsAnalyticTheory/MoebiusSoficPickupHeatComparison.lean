@@ -640,4 +640,143 @@ theorem tendsto_residualEnergy_heat_difference_iff_tendsto_source_mean
     refine (hsum.sub (hM.const_mul k)).congr' (Eventually.of_forall fun T => ?_)
     exact add_sub_cancel_right _ _
 
+private theorem settled_bounds (n : ℕ) : 0 ≤ settled n ∧ settled n ≤ 2 := by
+  constructor
+  · unfold settled
+    positivity
+  · by_cases h : n = 0
+    · simp [h, settled]
+    · have hn : (1 : ℝ) ≤ n := by exact_mod_cast Nat.one_le_iff_ne_zero.mpr h
+      have hroot : (1 : ℝ) ≤ Real.sqrt n := by
+        simpa only [Real.sqrt_one] using Real.sqrt_le_sqrt hn
+      unfold settled
+      linarith [inv_le_one_of_one_le₀ hroot]
+
+private theorem tendsto_heat_weight_zero {q : ℝ} (hq : 0 < q) :
+    Tendsto (fun s : ℝ => Real.exp (-s * q)) atTop (𝓝 0) := by
+  have hmul := (tendsto_const_mul_atBot_of_pos hq).2
+    (tendsto_neg_atTop_atBot : Tendsto (fun s : ℝ => -s) atTop atBot)
+  convert Real.tendsto_exp_atBot.comp hmul using 1
+  funext s
+  simp only [Function.comp_apply, mul_comm]
+
+private def leadingHeatedTerm (s : ℝ) (n : ℕ) : ℝ :=
+  if n = 1 then 0 else
+    moebiusReal n * settled n *
+      Real.exp (-s * (Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2))
+
+private theorem leadingHeatedTerm_return {s : ℝ} (hs : 0 < s) :
+    (∑' n, leadingHeatedTerm s n) =
+      (heatedLimit s - 2) / Real.exp (-s * Real.log 2 ^ 2) := by
+  let f (n : ℕ) := heatedCoeff s n * settled n
+  have hf : Summable f :=
+    ((heatedCoeff_abs_summable hs).mul_right 2).of_norm_bounded fun n => by
+      simp only [f, Real.norm_eq_abs, abs_mul, abs_of_nonneg (settled_bounds n).1]
+      exact mul_le_mul_of_nonneg_left (settled_bounds n).2 (abs_nonneg _)
+  have h1 : f 1 = 2 := by
+    norm_num [f, heatedCoeff, settled, moebiusReal, ArithmeticFunction.moebius_apply_one]
+  change (∑' n, leadingHeatedTerm s n) = ((∑' n, f n) - 2) / _
+  rw [hf.tsum_eq_add_tsum_ite 1, h1, add_sub_cancel_left, ← tsum_div_const]
+  apply tsum_congr
+  intro n
+  by_cases h : n = 1
+  · simp [h, leadingHeatedTerm]
+  · simp only [leadingHeatedTerm, ite_eq_right h, f, heatedCoeff]
+    rw [show -s * (Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2) =
+      -s * Real.log (n : ℝ) ^ 2 - (-s * Real.log 2 ^ 2) by ring, Real.exp_sub]
+    ring
+
+/-- At high heat, the original signed coefficient at index two is the first
+nonconstant contribution to the settled pickup wave. -/
+theorem tendsto_heatedLimit_sub_two_div_prime_two_weight :
+    Tendsto (fun s : ℝ => (heatedLimit s - 2) / Real.exp (-s * Real.log 2 ^ 2))
+      atTop (𝓝 (-(2 * (Real.sqrt 2)⁻¹))) := by
+  let g (n : ℕ) := if n = 2 then moebiusReal 2 * settled 2 else 0
+  let bound (n : ℕ) := (2 * Real.exp (Real.log 2 ^ 2)) * |heatedCoeff 1 n|
+  have hsum : Summable bound := (heatedCoeff_abs_summable (by norm_num : (0 : ℝ) < 1)).mul_left _
+  have h := tendsto_tsum_of_dominated_convergence (𝓕 := atTop) (f := leadingHeatedTerm) (g := g) hsum
+    (by
+      intro n
+      by_cases h0 : n = 0
+      · subst n
+        simp [leadingHeatedTerm, g, settled]
+      by_cases h1 : n = 1
+      · subst n
+        simp [leadingHeatedTerm, g]
+      by_cases h2 : n = 2
+      · subst n
+        simp [leadingHeatedTerm, g]
+      have hn : 2 < n := by omega
+      have hlog : Real.log 2 < Real.log (n : ℝ) :=
+        Real.log_lt_log (by norm_num) (by exact_mod_cast hn)
+      have hq : 0 < Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2 := by
+        nlinarith [Real.log_pos (by norm_num : (1 : ℝ) < 2)]
+      simpa only [leadingHeatedTerm, g, ite_eq_right h1, ite_eq_right h2, mul_zero] using
+        (tendsto_heat_weight_zero hq).const_mul (moebiusReal n * settled n))
+    (by
+      filter_upwards [eventually_ge_atTop (1 : ℝ)] with s hs n
+      by_cases h0 : n = 0
+      · subst n
+        simp only [leadingHeatedTerm, settled, Nat.zero_ne_one, ite_false, Nat.cast_zero,
+          Real.sqrt_zero, inv_zero, mul_zero, zero_mul, norm_zero]
+        dsimp [bound]
+        positivity
+      by_cases h1 : n = 1
+      · rw [leadingHeatedTerm, ite_eq_left h1, norm_zero]
+        dsimp [bound]
+        positivity
+      have hn : 2 ≤ n := by omega
+      have hlog : Real.log 2 ≤ Real.log (n : ℝ) :=
+        Real.log_le_log (by norm_num) (by exact_mod_cast hn)
+      have hq : 0 ≤ Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2 :=
+        sub_nonneg.mpr (pow_le_pow_left₀ (Real.log_nonneg (by norm_num)) hlog 2)
+      have hexp : Real.exp (-s * (Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2)) ≤
+          Real.exp (Real.log 2 ^ 2) * Real.exp (-Real.log (n : ℝ) ^ 2) := by
+        rw [← Real.exp_add]
+        exact Real.exp_le_exp.mpr (by nlinarith [mul_nonneg (sub_nonneg.mpr hs) hq])
+      rw [leadingHeatedTerm, ite_eq_right h1, Real.norm_eq_abs, abs_mul, abs_mul,
+        abs_of_nonneg (settled_bounds n).1, abs_of_nonneg (Real.exp_nonneg _)]
+      dsimp [bound]
+      rw [heatedCoeff, abs_mul, abs_of_nonneg (Real.exp_nonneg _)]
+      have hterm := mul_le_mul (settled_bounds n).2 hexp
+        (Real.exp_nonneg _) (by norm_num : (0 : ℝ) ≤ 2)
+      calc
+        _ = |moebiusReal n| * (settled n *
+            Real.exp (-s * (Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2))) := by ring
+        _ ≤ |moebiusReal n| * (2 *
+            (Real.exp (Real.log 2 ^ 2) * Real.exp (-Real.log (n : ℝ) ^ 2))) :=
+          mul_le_mul_of_nonneg_left hterm (abs_nonneg _)
+        _ = _ := by ring)
+  have htwo : moebiusReal 2 = -1 := by
+    simp [moebiusReal, ArithmeticFunction.moebius_apply_prime Nat.prime_two]
+  have hg : (∑' n, g n) = -(2 * (Real.sqrt 2)⁻¹) := by
+    simp [g, htwo, settled]
+  rw [hg] at h
+  refine h.congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with s hs
+  exact leadingHeatedTerm_return hs
+
+/-- The source mean recovery theorem can use positive heats with genuinely
+different settled values of the actual Möbius waveform. -/
+theorem exists_positive_heats_ne_settled :
+    ∃ s t : ℝ, 0 < s ∧ 0 < t ∧ heatedLimit t ≠ heatedLimit s := by
+  have h := tendsto_heatedLimit_sub_two_div_prime_two_weight
+  have hnegative : -(2 * (Real.sqrt 2)⁻¹) < 0 := by
+    have hsqrt : 0 < Real.sqrt 2 := Real.sqrt_pos.2 (by norm_num)
+    exact neg_neg_of_pos (mul_pos (by norm_num) (inv_pos.mpr hsqrt))
+  have hbelow : ∀ᶠ s : ℝ in atTop, heatedLimit s < 2 := by
+    filter_upwards [(tendsto_order.mp h).2 0 hnegative] with s hs
+    have hnum := (div_lt_iff₀ (Real.exp_pos (-s * Real.log 2 ^ 2))).mp hs
+    linarith
+  have hconv : Tendsto heatedLimit atTop (𝓝 2) := by
+    have hweight := tendsto_heat_weight_zero (pow_pos (Real.log_pos (by norm_num : (1 : ℝ) < 2)) 2)
+    have hprod := (h.mul hweight).add_const 2
+    rw [mul_zero, zero_add] at hprod
+    refine hprod.congr' (Eventually.of_forall fun s => ?_)
+    rw [div_mul_cancel₀ _ (Real.exp_ne_zero _), sub_add_cancel]
+  obtain ⟨s, hs⟩ := ((eventually_gt_atTop (0 : ℝ)).and hbelow).exists
+  obtain ⟨t, ht⟩ := ((eventually_gt_atTop (0 : ℝ)).and
+    ((tendsto_order.mp hconv).1 (heatedLimit s) hs.2)).exists
+  exact ⟨s, t, hs.1, ht.1, ne_of_gt ht.2⟩
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
