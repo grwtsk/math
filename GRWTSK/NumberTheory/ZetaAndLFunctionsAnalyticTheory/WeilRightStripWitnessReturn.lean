@@ -46,6 +46,35 @@ private theorem rootNumber_ne_zero {q : ℕ} [NeZero q]
     rw [χ.LFunction_eq_completed_div_gammaFactor 2 (.inl (by norm_num)), hcomp, zero_div]
   exact χ.LFunction_ne_zero_of_one_le_re (.inl hn) (by norm_num) hL
 
+/-- Actual ordinary strip zeros reflect to the inverse character. -/
+theorem LFunction_zero_at_reflected_inverse {q : ℕ} [NeZero q]
+    (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    {s : ℂ} (hs0 : 0 < s.re) (hs1 : s.re < 1) (hz : χ.LFunction s = 0) :
+    (χ⁻¹).LFunction (1 - s) = 0 := by
+  have hre : (1 - s).re = 1 - s.re := by rw [Complex.sub_re, Complex.one_re]
+  have hsne : s ≠ 0 := by
+    intro h
+    simp [h] at hs0
+  have hwne : 1 - s ≠ (0 : ℂ) := by
+    intro h
+    rw [h, Complex.zero_re] at hre
+    linarith
+  have hpower : (q : ℂ) ^ ((1 - s) - 1 / 2) ≠ 0 :=
+    Complex.cpow_ne_zero_iff.mpr (.inl (by exact_mod_cast (NeZero.ne q)))
+  have hgamma : DirichletCharacter.gammaFactor χ s ≠ 0 := by
+    classical
+    unfold DirichletCharacter.gammaFactor
+    split_ifs
+    · exact Complex.Gammaℝ_ne_zero_of_re_pos hs0
+    · exact Complex.Gammaℝ_ne_zero_of_re_pos (by simp only [Complex.add_re, Complex.one_re]; linarith)
+  rw [χ.LFunction_eq_completed_div_gammaFactor s (.inl hsne)] at hz
+  have hcomp := (div_eq_zero_iff.mp hz).resolve_right hgamma
+  have hreflected := completed_zero_at_reflected_inverse χ hp s
+    (mul_ne_zero hpower (rootNumber_ne_zero χ hp hn)) hcomp
+  have hinv : (χ⁻¹).LFunction (1 - s) = 0 := by
+    rw [(χ⁻¹).LFunction_eq_completed_div_gammaFactor (1 - s) (.inl hwne), hreflected, zero_div]
+  exact hinv
+
 /-- The genuine negative arithmetic test is requested only for right-half zeros. -/
 def PrimitiveRightStripNegativeWitness : Prop :=
   ∀ (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
@@ -75,30 +104,10 @@ theorem dirichletGRH_of_rh_and_rightStrip_witness
   · apply le_of_not_gt
     intro hs
     have hre : (1 - s).re = 1 - s.re := by rw [Complex.sub_re, Complex.one_re]
-    have hsne : s ≠ 0 := by
-      intro h
-      simp [h] at hs0
-    have hwne : 1 - s ≠ (0 : ℂ) := by
-      intro h
-      rw [h, Complex.zero_re] at hre
-      linarith
     have hpInv : (χ⁻¹).IsPrimitive := by
       simpa only [DirichletCharacter.IsPrimitive, DirichletCharacter.conductor_inv] using hp
     have hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
-    have hpower : (q : ℂ) ^ ((1 - s) - 1 / 2) ≠ 0 :=
-      Complex.cpow_ne_zero_iff.mpr (.inl (by exact_mod_cast (NeZero.ne q)))
-    have hgamma : DirichletCharacter.gammaFactor χ s ≠ 0 := by
-      classical
-      unfold DirichletCharacter.gammaFactor
-      split_ifs
-      · exact Complex.Gammaℝ_ne_zero_of_re_pos hs0
-      · exact Complex.Gammaℝ_ne_zero_of_re_pos (by simp only [Complex.add_re, Complex.one_re]; linarith)
-    rw [χ.LFunction_eq_completed_div_gammaFactor s (.inl hsne)] at hz
-    have hcomp := (div_eq_zero_iff.mp hz).resolve_right hgamma
-    have hreflected := completed_zero_at_reflected_inverse χ hp s
-      (mul_ne_zero hpower (rootNumber_ne_zero χ hp hn)) hcomp
-    have hinv : (χ⁻¹).LFunction (1 - s) = 0 := by
-      rw [(χ⁻¹).LFunction_eq_completed_div_gammaFactor (1 - s) (.inl hwne), hreflected, zero_div]
-    exact noRight q χ⁻¹ hpInv hnInv (1 - s) (by linarith) (by linarith) hinv
+    exact noRight q χ⁻¹ hpInv hnInv (1 - s) (by linarith) (by linarith)
+      (LFunction_zero_at_reflected_inverse χ hp hn hs0 hs1 hz)
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain

@@ -88,6 +88,33 @@ theorem smallConductorStages_of_inverse {q : ℕ} [NeZero q]
   rw [← primitiveArithmeticValue_inverse_liftReal χ hp hn hpInv hnInv _ f hLp]
   exact hstage j hconductorInv f hfInv
 
+/-! A left-half zero reflects to a right-half zero of the inverse character.
+The inverse witness has the same real lift, gamma parity and arithmetic value.
+This recovers the original witness on both halves before applying any stage
+lower bounds. At `1 - s` the character is inverted even at non-real character
+values; ignoring that change is not justified by the functional equation. -/
+
+/-- Right-half witness coverage supplies exactly the original off-line
+witness interface, using the same test on reflection. -/
+theorem primitiveNegativeWitness_iff_rightStrip :
+    PrimitiveNegativeWitness ↔ PrimitiveRightStripNegativeWitness := by
+  constructor
+  · intro hw q hq χ hp hn s hs hs1 hz
+    exact hw q χ hp hn s (by linarith) hs1 (ne_of_gt hs) hz
+  · intro hw q hq χ hp hn s hs0 hs1 hoff hz
+    rcases lt_or_gt_of_ne hoff with hleft | hright
+    · have hre : (1 - s).re = 1 - s.re := by rw [Complex.sub_re, Complex.one_re]
+      have hpInv : (χ⁻¹).IsPrimitive := by
+        simpa only [DirichletCharacter.IsPrimitive, DirichletCharacter.conductor_inv] using hp
+      have hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
+      obtain ⟨T, f, hf, hneg⟩ := hw q χ⁻¹ hpInv hnInv (1 - s)
+        (by linarith) (by linarith) (LFunction_zero_at_reflected_inverse χ hp hn hs0 hs1 hz)
+      rcases hf with ⟨hT, hdiff, hcompact, hodd, hLp, hsupport, harch⟩
+      refine ⟨T, f, ⟨hT, hdiff, hcompact, hodd, hLp, hsupport, ?_⟩, ?_⟩
+      · simpa only [inverse_parity] using harch
+      · rwa [primitiveArithmeticValue_inverse_liftReal χ hp hn hpInv hnInv T f hLp] at hneg
+    · exact hw q χ hp hn s hright hs1 hz
+
 /-- One certified stage family per inverse pair is sufficient for the right-strip return. -/
 theorem dirichletGRH_of_rh_rightStrip_and_inverse_orbit_stages
     (hRH : _root_.RiemannHypothesis) (hwitness : PrimitiveRightStripNegativeWitness)
