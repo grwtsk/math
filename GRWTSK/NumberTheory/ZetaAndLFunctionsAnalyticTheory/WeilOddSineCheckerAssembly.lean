@@ -48,6 +48,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerNin
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerNinthRunDiagonal
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerTenthRunFirstCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerTenthRunSecondCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerTenthRunThirdCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeCheckerCellDeficit
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeStageSineReturn
 
@@ -1631,5 +1632,93 @@ theorem primitiveStageLower_of_blockSumAfterTenthSecond_le (χ : DirichletCharac
   primitiveStageLower_of_blockSumAfterTenthFirst_le χ hp hn hodd
     (checker_unit_test_iff_blockSumAfterTenthFirst_le.mp
       (checker_unit_test_iff_blockSumAfterTenthSecond_le.mpr hr))
+
+private def tenthThirdPair : (ℕ × ℕ) × (ℕ × ℕ) := ((8652, 8758), (666, 853))
+
+set_option maxRecDepth 32768 in
+private theorem tenthThirdPair_mem : tenthThirdPair ∈ runPairsAfterTenthSecond := by
+  decide +kernel
+
+/-- The remaining lower pairs after extracting the tenth-to-third cross. -/
+def runPairsAfterTenthThird : Finset ((ℕ × ℕ) × (ℕ × ℕ)) :=
+  runPairsAfterTenthSecond.erase tenthThirdPair
+
+theorem runPairsAfterTenthThird_card : runPairsAfterTenthThird.card = 43 := by
+  rw [runPairsAfterTenthThird, Finset.card_erase_of_mem tenthThirdPair_mem,
+    runPairsAfterTenthSecond_card]
+
+/-- Literal checker costs over the 43 pairs left by this erasure. -/
+def blockSumAfterTenthThird : ℕ := ∑ p ∈ runPairsAfterTenthThird, runPairSubtotal p
+
+theorem blockSumAfterTenthThird_eq_sum :
+    blockSumAfterTenthThird = ∑ p ∈ runPairsAfterTenthThird,
+      triangleBlock (price literalRawDeficit) sincEntry
+        (retainedRunCells p.1) (retainedRunCells p.2) := rfl
+
+/-- The tenth-to-third cross subtotal is counted once in the split. -/
+theorem blockSumAfterTenthSecond_eq_add_blockSumAfterTenthThird :
+    blockSumAfterTenthSecond =
+      3197099236284404402469545626464432235729544909716 + blockSumAfterTenthThird :=
+  bind_erased_subtotal blockSumAfterTenthSecond_eq_sum
+    (sum_runBlocks_eq_subtotal_add_sum_erase tenthThirdPair_mem tenthWithThirdRetainedRunCross)
+    blockSumAfterTenthThird_eq_sum
+
+private theorem accumulate_tenth_third_subtotal {n old rest : ℕ}
+    (hn : n = 120164199465054479830773041800497515357745428646826776 + old)
+    (hrest : old = 3197099236284404402469545626464432235729544909716 + rest) :
+    n = 120167396564290764235175511346123979789981158191736492 + rest := by
+  omega
+
+/-- The checker numerator with forty-eight exact contributions separated. -/
+theorem literal_total_eq_certified_add_afterTenthThird :
+    total checkerMidpointLower =
+      120167396564290764235175511346123979789981158191736492 + blockSumAfterTenthThird :=
+  accumulate_tenth_third_subtotal literal_total_eq_certified_add_afterTenthSecond
+    blockSumAfterTenthSecond_eq_add_blockSumAfterTenthThird
+
+private theorem after_tenth_third_strict_cutoff (r : ℕ) :
+    3197099236284404402469545626464432235729544909716 + r ≤
+      3923261143134313135511677644224148642254571353173223 ↔
+    r ≤ 3920064043898028731109208098597684210018841808263507 := by
+  omega
+
+private theorem after_tenth_third_unit_cutoff (r : ℕ) :
+    3197099236284404402469545626464432235729544909716 + r ≤
+      41539399042311912871480767863502484642254571353173224 ↔
+    r ≤ 41536201943075628467078298317876020210018841808263508 := by
+  omega
+
+/-- The original strict integer test in terms of the 43-pair sum. -/
+theorem checker_test_iff_blockSumAfterTenthThird_le :
+    total checkerMidpointLower * 62500 < 47961 * denominator ↔
+      blockSumAfterTenthThird ≤ 3920064043898028731109208098597684210018841808263507 :=
+  checker_test_iff_blockSumAfterTenthSecond_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 3923261143134313135511677644224148642254571353173223)
+      blockSumAfterTenthSecond_eq_add_blockSumAfterTenthThird).to_iff.trans
+        (after_tenth_third_strict_cutoff blockSumAfterTenthThird))
+
+/-- The separate unit test for the original radius-one stage. -/
+theorem checker_unit_test_iff_blockSumAfterTenthThird_le :
+    total checkerMidpointLower ≤ denominator ↔
+      blockSumAfterTenthThird ≤ 41536201943075628467078298317876020210018841808263508 :=
+  checker_unit_test_iff_blockSumAfterTenthSecond_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 41539399042311912871480767863502484642254571353173224)
+      blockSumAfterTenthSecond_eq_add_blockSumAfterTenthThird).to_iff.trans
+        (after_tenth_third_unit_cutoff blockSumAfterTenthThird))
+
+theorem rectangle_lt_of_blockSumAfterTenthThird_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterTenthThird ≤ 3920064043898028731109208098597684210018841808263507) :
+    sineDeficitRectangle 256 (q3SineDeficit χ) < (219 / 250 : ℝ) ^ 2 :=
+  rectangle_lt_of_blockSumAfterTenthSecond_le χ hodd
+    (checker_test_iff_blockSumAfterTenthSecond_le.mp (checker_test_iff_blockSumAfterTenthThird_le.mpr hr))
+
+theorem primitiveStageLower_of_blockSumAfterTenthThird_le (χ : DirichletCharacter ℂ 3)
+    (hp : χ.IsPrimitive) (hn : χ ≠ 1) (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterTenthThird ≤ 41536201943075628467078298317876020210018841808263508) :
+    PrimitiveStageLower χ hp hn 0 :=
+  primitiveStageLower_of_blockSumAfterTenthSecond_le χ hp hn hodd
+    (checker_unit_test_iff_blockSumAfterTenthSecond_le.mp
+      (checker_unit_test_iff_blockSumAfterTenthThird_le.mpr hr))
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddThreeSineHilbertSchmidt.CheckerTriangle
