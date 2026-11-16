@@ -48,6 +48,7 @@ open scoped Interval BigOperators
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.ExactZetaPoleH1
 
 open GRWTSK.NumberTheory.WeilQuadraticForm.OddRootProjection
+open GRWTSK.NumberTheory.WeilQuadraticForm.LowSchur (primeMass)
 open GRWTSK.NumberTheory.WeilQuadraticForm.SignedArithmeticH1Budget
 open GRWTSK.NumberTheory.WeilQuadraticForm.PhysicalSineNegativeReturn
 
@@ -61,7 +62,7 @@ finite-dimensional pole vector. -/
 theorem sourceSinhWindow_memLp (T : ℝ) (hT : 0 < T) :
     MemLp (sourceSinhWindow T) 2 volume := by
   rw [sourceSinhWindow, memLp_indicator_iff_restrict measurableSet_Icc]
-  haveI : IsFiniteMeasure (volume.restrict (Icc (-T) T)) :=
+  have : IsFiniteMeasure (volume.restrict (Icc (-T) T)) :=
     ⟨by simp [Real.volume_Icc]⟩
   apply MemLp.of_bound (by fun_prop) (Real.sinh (T / 2))
   filter_upwards [ae_restrict_mem (μ := volume) measurableSet_Icc] with t ht
@@ -95,7 +96,7 @@ theorem sourceSinhWindow_sq_integral (T : ℝ) (hT : 0 < T) :
         HasDerivAt F ((Real.cosh t - 1) / 2) t := by
       change HasDerivAt (fun x : ℝ => (Real.sinh x - x) / 2)
         ((Real.cosh t - 1) / 2) t
-      simpa only [id_eq] using
+      simpa only [Pi.sub_apply, id_eq] using
         ((Real.hasDerivAt_sinh t).sub (hasDerivAt_id t)).div_const 2
     rw [← sinh_half_sq_eq t] at hbase
     exact hbase
@@ -172,11 +173,10 @@ theorem supportedOddPoleMomentBound_of_L2
         filter_upwards [] with t
         ring
       _ = _ := by
-        rw [integral_add (ha.sub hb) hc,
-          integral_sub ha hb, integral_const_mul,
+        have hadd := integral_add (ha.sub hb) hc
+        simp only [Pi.sub_apply] at hadd
+        rw [hadd, integral_sub ha hb, integral_const_mul,
           integral_const_mul, integral_const_mul]
-        dsimp [E, G, m]
-        ring
   rw [hExpand] at hNonneg
   have hFactor : 0 ≤ G * (G * E - m ^ 2) := by
     nlinarith [hNonneg]
@@ -191,7 +191,6 @@ theorem supportedOddPoleMomentBound_of_L2
   calc
     (oddZetaPoleMoment f) ^ 2 = m ^ 2 := by
       rw [hMoment]
-      rfl
     _ ≤ G * E := hCS
     _ = (Real.sinh T - T) * physicalMass f := by
       rw [hGexact]
