@@ -58,7 +58,7 @@ theorem actual_shift_eq_interval_integral
       ∫ u in Ioc (0 : ℝ) r, first (t + u) := by
   have hd (u : ℝ) :
       HasDerivAt (fun v : ℝ => f (t + v)) (first (t + u)) u := by
-    simpa only [Function.comp_def] using
+    simpa only [Function.comp_def, mul_one] using
       (hf (t + u)).comp u ((hasDerivAt_id u).const_add t)
   have hCont : Continuous (fun u : ℝ => first (t + u)) := by
     fun_prop
@@ -104,17 +104,18 @@ private theorem interval_integral_sq_le
         filter_upwards [] with u
         ring
       _ = _ := by
-        rw [integral_add
-            ((hg2.const_mul (r ^ 2)).sub (hgI.const_mul (2 * r * A))) hga,
-          integral_sub (hg2.const_mul (r ^ 2))
-            (hgI.const_mul (2 * r * A)),
-          integral_const_mul, integral_const_mul, hconst]
+        have hsub := integral_sub (hg2.const_mul (r ^ 2))
+          (hgI.const_mul (2 * r * A))
+        have hadd := integral_add
+          ((hg2.const_mul (r ^ 2)).sub (hgI.const_mul (2 * r * A))) hga
+        simp only [Pi.sub_apply] at hadd
+        rw [hadd, hsub, integral_const_mul, integral_const_mul, hconst]
   rw [hExpand] at hSqNonneg
   have hMul : r * A ^ 2 ≤
       r * (r * (∫ u in Ioc (0 : ℝ) r, g u ^ 2)) := by
     dsimp [A] at hSqNonneg ⊢
     nlinarith [hSqNonneg]
-  exact (mul_le_mul_left hr).mp hMul
+  exact (mul_le_mul_iff_right₀ hr).mp hMul
 
 /-- Product-integrability of the exact translated derivative square.
 The u-domain is a finite interval; each t-fibre has the SAME
@@ -122,11 +123,11 @@ physical L2 mass by Lebesgue translation invariance. -/
 private theorem translated_square_integrable_prod
     (first : ℝ → ℝ) (hfirst : Continuous first)
     (hf2 : Integrable (fun t : ℝ => first t ^ 2))
-    (r : ℝ) (hr : 0 ≤ r) :
+    (r : ℝ) (_hr : 0 ≤ r) :
     Integrable (fun z : ℝ × ℝ => first (z.2 + z.1) ^ 2)
       ((volume.restrict (Ioc (0 : ℝ) r)).prod volume) := by
   let μ : Measure ℝ := volume.restrict (Ioc (0 : ℝ) r)
-  haveI : IsFiniteMeasure μ := ⟨by simp [μ, Real.volume_Ioc]⟩
+  have : IsFiniteMeasure μ := ⟨by simp [μ, Real.volume_Ioc]⟩
   have hm :
       AEStronglyMeasurable
         (fun z : ℝ × ℝ => first (z.2 + z.1) ^ 2)
@@ -231,7 +232,7 @@ theorem zeta_gamma_H1_bound_of_classical
       (7 / 12 : ℝ) * (∫ t : ℝ, first t ^ 2) +
         2 * GRWTSK.NumberTheory.WeilQuadraticForm.ExactGammaTail.tailUpper 0 1 *
           (∫ t : ℝ, f t ^ 2) := by
-  have hfCont : Continuous f := fun t => (hf t).continuousAt
+  have hfCont : Continuous f := continuous_iff_continuousAt.mpr fun t => (hf t).continuousAt
   exact zeta_realGamma_H1_bound f first hfCont hf2 hfirst2
     (nearH1ShiftBound_of_classical_derivative f first hf hfirst hf2 hfirst2)
 
@@ -249,7 +250,7 @@ theorem primitive_gamma_H1_bound_of_classical
       (7 / 12 : ℝ) * (∫ t : ℝ, first t ^ 2) +
         2 * GRWTSK.NumberTheory.WeilQuadraticForm.ExactGammaTail.tailUpper
           (gammaParity chi) 1 * (∫ t : ℝ, f t ^ 2) := by
-  have hfCont : Continuous f := fun t => (hf t).continuousAt
+  have hfCont : Continuous f := continuous_iff_continuousAt.mpr fun t => (hf t).continuousAt
   exact primitive_paired_realGamma_H1_bound chi hp hn f first hfCont hf2 hfirst2
     (nearH1ShiftBound_of_classical_derivative f first hf hfirst hf2 hfirst2)
 
