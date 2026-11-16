@@ -135,7 +135,7 @@ theorem eventual_dominance_above_rate {T B : ℕ → ℝ}
   have hquot : (2 * |Real.log c|) / (a - sigma) < T j := by
     linarith
   have hscale : 2 * |Real.log c| < (a - sigma) * T j :=
-    (div_lt_iff₀ (sub_pos.mpr ha)).mp hquot
+    (mul_comm (T j) (a - sigma)) ▸ (div_lt_iff₀ (sub_pos.mpr ha)).mp hquot
   have hlogUpper := hsmall j hjSmall
   have habs : -Real.log c ≤ |Real.log c| := neg_le_abs _
   have hlog : Real.log (1 + B j) < Real.log c + a * T j := by
