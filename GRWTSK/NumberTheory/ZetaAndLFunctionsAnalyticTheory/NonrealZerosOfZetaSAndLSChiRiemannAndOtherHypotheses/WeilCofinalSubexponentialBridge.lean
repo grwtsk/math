@@ -5,6 +5,7 @@ Authors: grwtsk contributors
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineProjection
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PrimitiveDirichletCriticalLine
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.CriticalStripCores
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.QuadraticCertificateCore
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Tactic
@@ -75,7 +76,7 @@ theorem eventually_budget_lt_exponential {T B : ℕ → ℝ}
   have hsize := hlarge j hjLarge
   have hquotient : (2 * |Real.log c|) / a < T j := by linarith
   have hscale : 2 * |Real.log c| < a * T j :=
-    (div_lt_iff₀ ha).mp hquotient
+    (mul_comm (T j) a) ▸ (div_lt_iff₀ ha).mp hquotient
   have hupper := hsmall j hjSmall
   have habs : -Real.log c ≤ |Real.log c| := neg_le_abs _
   have hlog : Real.log (1 + B j) < Real.log c + a * T j := by
