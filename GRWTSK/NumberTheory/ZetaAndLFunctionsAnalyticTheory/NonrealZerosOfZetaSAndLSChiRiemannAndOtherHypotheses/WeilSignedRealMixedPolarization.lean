@@ -43,6 +43,7 @@ open scoped BigOperators
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.SignedRealMixedPolarization
 
 open GRWTSK.NumberTheory.WeilQuadraticForm.OddRootProjection
+open GRWTSK.NumberTheory.WeilQuadraticForm.PhysicalSineNegativeReturn
 open GRWTSK.NumberTheory.WeilQuadraticForm.OddSineForm
 open GRWTSK.NumberTheory.WeilQuadraticForm.LowSchur
 open GRWTSK.NumberTheory.WeilQuadraticForm.SignedArithmeticH1Budget
@@ -148,7 +149,7 @@ theorem realPairing_scale_left (c : ℝ) (f g : ℝ → ℝ) :
       apply integral_congr_ae
       filter_upwards [] with t
       ring
-    _ = _ := integral_const_mul
+    _ = _ := integral_const_mul _ _
 
 /-- Real scaling of the ORIGINAL paired mixed prime-power source,
 keeping every signed w_chi and BOTH true shift orientations. -/
@@ -166,7 +167,7 @@ theorem pairedMixedPrimeResponse_scale_left
         apply integral_congr_ae
         filter_upwards [] with t
         ring
-      _ = _ := integral_const_mul
+      _ = _ := integral_const_mul _ _
   have hSymShift (r : ℝ) :
       realSymmetricShift (fun t => c * f t) g r =
         c * realSymmetricShift f g r := by
@@ -194,7 +195,7 @@ theorem zetaMixedPrimeResponse_scale_left
         apply integral_congr_ae
         filter_upwards [] with t
         ring
-      _ = _ := integral_const_mul
+      _ = _ := integral_const_mul _ _
   have hSymShift (r : ℝ) :
       realSymmetricShift (fun t => c * f t) g r =
         c * realSymmetricShift f g r := by
@@ -275,7 +276,7 @@ theorem oddZetaPoleMoment_scale
       apply integral_congr_ae
       filter_upwards [] with t
       ring
-    _ = _ := integral_const_mul
+    _ = _ := integral_const_mul _ _
 
 theorem zetaMixedPoleResponse_add_left
     (T : ℝ) (hT : 0 < T)
@@ -465,7 +466,7 @@ theorem real_symmetric_bilinear_polarization
     have h := hplus f (-g)
     have hdiagNeg : B (-g) (-g) = B g g := by
       rw [hnegLeft, hnegRight, neg_neg]
-    change B (f + -g) (f + -g) = _
+    rw [sub_eq_add_neg]
     rw [h, hdiagNeg, hnegRight]
     ring
   rw [hplus f g, hminus]
@@ -496,13 +497,12 @@ theorem real_indefinite_bilinear_cauchy
         4 * |B x y| =
           |B (x + y) (x + y) - B (x - y) (x - y)| := by
       rw [hp, abs_mul, abs_of_pos (by norm_num : (0 : ℝ) < 4)]
-      ring
     have hb :
         |B (x + y) (x + y) - B (x - y) (x - y)| ≤
           U (x + y) + U (x - y) := by
       calc
         _ ≤ |B (x + y) (x + y)| + |B (x - y) (x - y)| :=
-          abs_sub_le _ _
+          by simpa only [sub_eq_add_neg, abs_neg] using abs_add_le _ (-B (x - y) (x - y))
         _ ≤ _ := add_le_add (hdiag (x + y)) (hdiag (x - y))
     rw [← habs, hUpar x y] at hb
     linarith
@@ -536,7 +536,7 @@ theorem primitiveRealMixedWeil_sub_right
       primitiveRealMixedWeil chi hp hn T f g -
         primitiveRealMixedWeil chi hp hn T f h := by
   have hhn : ClassicalRealH1 (-h) := by
-    simpa only [neg_one_mul, Pi.neg_apply] using (hh.scale (-1))
+    simpa only [neg_one_mul, show (fun t => -h t) = -h from rfl] using (hh.scale (-1))
   have hAdd := primitiveRealMixedWeil_add_right
     chi hp hn T hf hg hhn
   have hNeg :
@@ -546,7 +546,7 @@ theorem primitiveRealMixedWeil_sub_right
       _ = primitiveRealMixedWeil chi hp hn T (-h) f :=
         primitiveRealMixedWeil_symmetric chi hp hn T f (-h)
       _ = (-1 : ℝ) * primitiveRealMixedWeil chi hp hn T h f := by
-        simpa only [neg_one_mul] using
+        simpa only [neg_one_mul, show (fun t => -h t) = -h from rfl] using
           (primitiveRealMixedWeil_scale_left
             chi hp hn T (-1) h f)
       _ = _ := by
@@ -571,7 +571,7 @@ theorem zetaRealMixedWeil_sub_right
     zetaRealMixedWeil T f (g - h) =
       zetaRealMixedWeil T f g - zetaRealMixedWeil T f h := by
   have hhn : ClassicalRealH1 (-h) := by
-    simpa only [neg_one_mul, Pi.neg_apply] using (hh.scale (-1))
+    simpa only [neg_one_mul, show (fun t => -h t) = -h from rfl] using (hh.scale (-1))
   have hshn : SupportedOnWindow T (-h) := by
     intro t ht
     simp only [Pi.neg_apply, hsh t ht, neg_zero]
@@ -584,7 +584,7 @@ theorem zetaRealMixedWeil_sub_right
       _ = zetaRealMixedWeil T (-h) f :=
         zetaRealMixedWeil_symmetric T f (-h)
       _ = (-1 : ℝ) * zetaRealMixedWeil T h f := by
-        simpa only [neg_one_mul] using
+        simpa only [neg_one_mul, show (fun t => -h t) = -h from rfl] using
           (zetaRealMixedWeil_scale_left T (-1) h f hsh)
       _ = _ := by
         rw [zetaRealMixedWeil_symmetric T h f]
@@ -875,8 +875,7 @@ theorem physical_mixed_sq_le_of_scaled_diagonal
         4 * |s * B f g| =
           |Q ((fun t => s * f t) + g) -
             Q ((fun t => s * f t) - g)| := by
-      rw [← hp, abs_mul, abs_of_pos (by norm_num : (0 : ℝ) < 4)]
-      ring
+      rw [← hp, abs_mul (4 : ℝ), abs_of_pos (by norm_num : (0 : ℝ) < 4)]
     have hbound :
         4 * |s * B f g| ≤
           physicalWeightedBudget A alpha
@@ -889,7 +888,9 @@ theorem physical_mixed_sq_le_of_scaled_diagonal
         _ = |Q ((fun t => s * f t) + g) -
               Q ((fun t => s * f t) - g)| := habs
         _ ≤ |Q ((fun t => s * f t) + g)| +
-              |Q ((fun t => s * f t) - g)| := abs_sub_le _ _
+              |Q ((fun t => s * f t) - g)| := by
+          simpa only [sub_eq_add_neg, abs_neg] using
+            abs_add_le (Q ((fun t => s * f t) + g)) (-Q ((fun t => s * f t) - g))
         _ ≤ _ := add_le_add hplus hminus
     have hpar := physicalWeightedBudget_parallelogram
       A alpha (fun t => s * f t) g
@@ -977,12 +978,14 @@ theorem primitiveRealMixedWeil_sq_le_H1_budget
         ((fun t => c * f t) + g)
         hPlus.first hPlus.derivative hPlus.first_continuous
         hPlus.f_memLp hPlus.first_memLp
-      simpa only [physicalWeightedBudget, A, alpha] using h
+      simpa only [physicalWeightedBudget, A, alpha,
+        hPlus, hc, ClassicalRealH1.add, ClassicalRealH1.scale] using h
     · have h := primitivePairedPhysical_abs_H1_le chi hp hn T
         ((fun t => c * f t) - g)
         hMinus.first hMinus.derivative hMinus.first_continuous
         hMinus.f_memLp hMinus.first_memLp
-      simpa only [physicalWeightedBudget, A, alpha] using h
+      simpa only [physicalWeightedBudget, A, alpha,
+        hMinus, hc, ClassicalRealH1.sub, ClassicalRealH1.scale] using h
   change (primitiveRealMixedWeil chi hp hn T f g) ^ 2 ≤
     physicalWeightedBudget A alpha f hf.first *
       physicalWeightedBudget A alpha g hg.first
@@ -1061,13 +1064,15 @@ theorem zetaRealMixedWeil_sq_le_H1_budget
         hPlus.first hPlus.derivative hPlus.first_continuous
         hPlus.f_memLp hPlus.first_memLp
         (SupportedOnWindow.add T hscaledSup hsg)
-      simpa only [physicalWeightedBudget, A, alpha] using h
+      simpa only [physicalWeightedBudget, A, alpha,
+        hPlus, hc, ClassicalRealH1.add, ClassicalRealH1.scale] using h
     · have h := zetaOddPhysical_abs_H1_le_of_supported
         T hT ((fun t => c * f t) - g)
         hMinus.first hMinus.derivative hMinus.first_continuous
         hMinus.f_memLp hMinus.first_memLp
         (SupportedOnWindow.sub T hscaledSup hsg)
-      simpa only [physicalWeightedBudget, A, alpha] using h
+      simpa only [physicalWeightedBudget, A, alpha,
+        hMinus, hc, ClassicalRealH1.sub, ClassicalRealH1.scale] using h
   change (zetaRealMixedWeil T f g) ^ 2 ≤
     physicalWeightedBudget A alpha f hf.first *
       physicalWeightedBudget A alpha g hg.first
