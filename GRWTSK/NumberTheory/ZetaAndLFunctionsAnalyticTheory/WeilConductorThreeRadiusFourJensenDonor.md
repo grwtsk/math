@@ -6244,3 +6244,311 @@ for name,base in options.items():
     print("PASS original q79 retained price branches",name,float(max(caps)),float(min(room)))
 print("PASS single derivative debit on seven disjoint donors through 993.68")
 ~~~
+
+## A derivative donor for E26 and a wider Jensen donor for E27
+
+2026-11-16, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 79-enclosure comparison](https://github.com/grwtsk/math/blob/098a82f0f3906ce18e87ff59432730f3b1326ccc/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob 19e02ff02107188d9dd71eea4db787d6beb4a814. The original radius-four arithmetic
+blob is 72848bace2af0f427c9e9fae16806f1b31ee064f.
+Retain the complex odd physical carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$, its zero
+extension, folded measure $d\nu/\pi$, the original masks
+and the physical projection. For the primitive nonprincipal
+odd character modulo three, use full parity-one gamma, all
+$458$ signed prime powers and zero principal-pole term.
+All intervals use detunings from $c_1=99653682.92983$
+and include the reflected restrictions.
+
+The original multiplier is strictly positive on the complement
+of $E_{26}=[993.68,993.84]$ and $E_{27}=[1000.64,1001.00]$
+in $[993.68,1009.58]$. Each of the four box endpoints and
+the right frontier are strictly positive, while $993.76$
+and $1000.82$ are strictly negative. The directed sign check
+uses $769$ complement cells with no bisections. The preceding
+interval and this one meet at the positive point $993.68$.
+
+Use $Y_{26}=[991.76,995.76]$ and $Y_{27}=[996.00,1008.00]$.
+The first donor starts $68.69$ after $Y_{25}$ and overlaps
+the preceding positive sign interval on its left. The two
+new donors are separated by $.24$. The right edge of
+$Y_{27}$ is $1.58$ before the end of the new sign region.
+Each contains only its respective negative restriction.
+The guarded original masks and all earlier positive
+reservations, including the remote reservations, permit
+both new tags.
+
+### E26 under the existing derivative estimate
+
+The $192$ positive $.02$ bins and $52$ nonzero negative
+$.0025$ cells satisfy the existing directed polynomial
+comparison on $Y_{26}$ at the center $c_1+993.76$, with
+$(r,k,\alpha_0,\mu)=(40,16,9/10,10^{-15})$.
+In detail, all $40$ leading rational pivots are positive for
+$$
+ p\longmapsto
+ \int_{Y_{26}}\bigl(\tfrac9{10}\ell_{26}-\eta_{26}\bigr)|p|^2\,d\nu
+ +\frac{10^{-15}}{4^{32}\pi_{\rm hi}}
+      \int_{Y_{26}}|p^{(16)}|^2\,d\nu
+$$
+on complex polynomials of degree less than $40$.
+The radius of this donor is two. The original derivative
+transfer and Plancherel on the unmasked physical carrier
+allow $J=\{14,15,18,19,23,24,25,26\}$ to share the existing
+bound
+$$
+ \sum_{j\in J}N_{E_j}^*N_{E_j}
+ \preceq \tfrac{4803}{5330}\sum_{j\in J}\mathcal P_{Y_j}
+ +(1.009\cdot10^{-15})I .
+$$
+The eight donor intervals are disjoint. The same two
+derivative estimates account for the whole sum.
+
+### Scoped failures for narrower E27 choices
+
+On the radius-two candidate $[998.82,1002.82]$, the same
+directed derivative matrix at $(40,16,9/10,10^{-15})$
+has its first nonpositive normalized pivot at zero-based
+index $12$, in $(-69.89,-69.88)$. For the directed
+physical Jensen sufficient residual on this candidate at
+$\alpha=19/20$ and $\tau=10^{-12}$ the first nonpositive
+normalized pivot is at index $4$, in $(-.008,-.007)$.
+On the radius-three candidate $[997.82,1003.82]$ at
+$\alpha=19/20$ and $\tau=10^{-10}$ it is at index $12$,
+in $(-4.232\cdot10^{17},-4.231\cdot10^{17})$.
+These statements concern precisely the chosen directed
+sufficient matrices. The physical comparison below
+uses the wider source donor.
+
+### The wider E27 physical comparison
+
+The wider donor has $583$ positive $.02$ bins and the same
+$133$ nonzero negative $.0025$ cells. Use the exact source
+true sine averages $B$ and the short $18$-term negative Taylor
+map $V$ at $c_1+1000.82$. With the positive diagonal weights
+$W$ and positive definite negative-moment matrix $M$,
+$$
+ B^*WB\preceq\mathcal P_{Y_{27}},\qquad
+ N_{E_{27}}^*N_{E_{27}}\preceq V^*MV+\delta I,
+ \qquad
+ \delta=8\epsilon(2+\epsilon)\int_{E_{27}}\eta_{27},
+ \quad\epsilon=.72^{18}/18!.
+$$
+Use $\alpha=19/20$ and $\tau=10^{-12}$. The directed
+guard for the physical Woodbury residual
+$$
+ \tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                 -\tau Z^*(\alpha W)^{-1}Z
+$$
+uses $180$ Taylor terms for the true averaged carriers and
+checks the exact carrier Gram and diagonal ridge enclosures.
+Floating point only proposes $Z$. The exact row uncertainty
+is below $10^{-23}$, and all $18$ rational lower-matrix pivots
+are positive. The established Jensen square completion gives
+$$
+ N_{E_{27}}^*N_{E_{27}}\preceq
+            \tfrac{19}{20}\mathcal P_{Y_{27}}+(\tau+\delta)I,
+ \qquad \tau+\delta<1.000006\cdot10^{-12}.
+$$
+
+### Return to the original comparison
+
+Reserve both new tags once. Keep every earlier separately
+charged tag, the prior single derivative price and $\beta I$.
+E26 fits the existing derivative price, and E27 contributes
+its exact scalar price divided by $\beta$ to each retained
+branch. Each donor fraction fits $19/20$. All $48$ original
+prices under each of the four first-pair choices retain cap
+below $0.953005$. The least physical room across all branches
+exceeds $9.0072\cdot10^{-10}$, and in the pooled-map branch
+it exceeds $6.6997\cdot10^{-9}$.
+
+Append the disjoint $N_{E_{26}}$ and $N_{E_{27}}$ to form
+$W_{\mathrm{all81}}$. The contiguous signed frontier is
+$1009.58$. The original physical identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all81}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all81}}
+ =S_\lambda-W_{\mathrm{all81}}^*W_{\mathrm{all81}}
+ \succeq0.046995S_\lambda.
+$$
+The remaining full outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all81}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses and
+directional return.
+
+Extract the guard and pass the pinned original arithmetic
+Markdown and the Jensen donor Markdown containing the
+E23/E24/E25 comparison, original directed Jensen and
+derivative checkers. Prior blocks are selected by unique
+digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial, lcm
+from pathlib import Path
+from textwrap import dedent
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+def replace(code,old,new):
+    assert code.count(old)==1,old
+    return code.replace(old,new)
+
+parent=execute(checker("b8f6f9cd6b13d235a4d085993751a7cf4f8d4616eefc088620b3227ae54e56c7"),
+               [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+geometry={
+    "e26":("991.76","995.76","993.68","993.84","993.76",".90"),
+    "e27":("996.00","1008.00","1000.64","1001.00","1000.82",".95"),
+}
+holder='"e9":("707.62","709.62","708.60","708.66","708.63",".25"),'
+directed=replace(core,holder,
+    "\n    ".join(repr(tag)+":"+repr(row)+"," for tag,row in geometry.items()))
+directed=replace(directed,'("708.60","710.86",".02")','("993.68","1009.58",".02")')
+directed=replace(directed,'(checks,splits)==(112,1)','(checks,splits)==(769,0)')
+directed=replace(directed,'len(pos)==98 and len(rho)==9',
+                 '(len(pos),len(rho))=={"e26":(192,52),"e27":(583,133)}[mode]')
+
+sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(directed,[arithmetic,"sign"],sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete directed E26/E27 sign check did not return")
+previous=parent["new_sign"]
+y26l,y26r,e26l,e26r,c26=map(F,geometry["e26"][:5])
+y27l,y27r,e27l,e27r,c27=map(F,geometry["e27"][:5])
+assert (sign["start"],sign["stop"])==(F("993.68"),F("1009.58"))
+assert sign["boxes"]==[(e26l,e26r),(e27l,e27r)]
+assert previous["boxes"][-1][1]<F("923.07")<y26l<previous["stop"]==sign["start"]==e26l
+assert previous["node"](previous["stop"])[1]<previous["Alo"]
+assert e26l<e26r<y26r<y27l<e27l<e27r<y27r<sign["stop"]
+assert y26l-F("923.07")==F("68.69")
+assert y27l-y26r==F(".24") and sign["stop"]-y27r==F("1.58")
+assert 2*c26==y26l+y26r and (y26r-y26l)/2==2
+assert all(v<y26l or y27r<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*sign["pi_lower"]-F("5.55")-2>sign["c0"]+y27r
+
+# E26 satisfies the same local derivative form as the seven prior donors.
+derivative=checker("fb06ddc22892ae6f573f0dc659a5e60c9b156ba327344f8f043d3ad06f2bfbb9")
+r,k=40,16
+price,mu=F(".9"),F("1e-15")
+cut="\nfrom math import acos,cos,sin,sqrt,fsum\n"
+assert directed.count(cut)==1
+data=execute(directed.split(cut)[0],[arithmetic,"e26"])
+start,stop=data["start"],data["stop"]
+c0,c=data["c0"],data["c"]
+step=data["step"]
+pi_hi,pi_lo=data["pi_upper"],data["pi_lower"]
+estimate=data["estimate"]
+alo,ahi=data["Alo"],data["Ahi"]
+wmin=data["wmin"]
+box_left,box_right=e26l,e26r
+npos,nneg=192,52
+assert (start,stop)==(y26l,y26r) and c==c0+c26
+assert (F(data["l0"]),F(data["r0"]))==(e26l,e26r)
+assert step==F(".0025") and (alo,ahi,wmin)==(F("17.6779"),F("17.6780"),1-F("3e-10"))
+assert ahi+211<272 and 211-alo<272
+begin=derivative.index("def pivots(matrix):")
+end=derivative.index("branches=[]",begin)
+pivot_routine=derivative[begin:end]
+exec(compile(pivot_routine,jensen,"exec"))
+begin=derivative.index("    # Verify the normalization")
+end=derivative.index("    values=pivots(matrix)",begin)
+comparison=dedent(derivative[begin:end])
+state=dict(globals())
+exec(compile(comparison,jensen,"exec"),state)
+values=pivots(state["matrix"])
+assert len(values)==40 and min(values)>19
+print("PASS E26 original directed polynomial Gram",npos,nneg,float(min(values)))
+
+# E27's failed narrow approximations have precisely specified inputs.
+def jensen_code(left,right,npos,shift,terms):
+    row=(left,right,"1000.64","1001.00","1000.82",".95")
+    code=replace(core,holder,repr("e27")+":"+repr(row)+",")
+    if terms==180:
+        code=replace(code,"K=120","K=180")
+        code=replace(code,'F("1.801e-48")','F("2.701e-48")')
+    else:
+        assert terms==120
+    for old,new in (
+        ('len(pos)==98 and len(rho)==9',f'len(pos)=={npos} and len(rho)==133'),
+        ('F("9.656e-36")','F("6e-18")'),
+        ('alpha,tau=F(fraction),F("1e-12")',f'alpha,tau=F(fraction),F("{shift}")'),
+        ('assert c==c0+F("708.63")','assert c==c0+F("1000.82")'),
+    ):
+        code=replace(code,old,new)
+    end='assert F(T[0][0],work_grid)>F("5.9727e-8")'
+    assert code.count(end)==1
+    return code.split(end)[0]
+
+for left,right,n,shift,index,low,high in (
+    ("998.82","1002.82",183,"1e-12",4,"-.008","-.007"),
+    ("997.82","1003.82",283,"1e-10",12,"-4.232e17","-4.231e17"),
+):
+    code=jensen_code(left,right,n,shift,120)
+    code=replace(code,"    assert p>0\n    for j in range(i+1,k):",
+                 "    if p<=0:\n        failed=i,F(p,last*work_grid)\n        break\n    for j in range(i+1,k):")
+    narrow=execute(code,[arithmetic,"e27"])
+    i,failed=narrow["failed"]
+    assert i==index and F(low)<failed<F(high)<0
+    print("PASS scoped sufficient Jensen failure",left,right,shift,i,float(failed))
+    if index==4:
+        parent["prior"]["prior"]["computed_failure"](narrow,12,F("-69.89"),F("-69.88"))
+
+wide=execute(jensen_code("996.00","1008.00",583,"1e-12",180),[arithmetic,"e27"])
+assert (wide["start"],wide["stop"],wide["c"])==(y27l,y27r,wide["c0"]+c27)
+assert (F(wide["l0"]),F(wide["r0"]))==(e27l,e27r)
+assert wide["alpha"]==F(".95") and wide["tau"]==F("1e-12")
+assert wide["Eps"]==F(".72")**18/factorial(18)
+eta=wide["tau"]+wide["delta"]
+assert eta<F("1.000006e-12")
+print("PASS directed wide E27 physical Jensen comparison",float(eta))
+
+old_pool=parent["old_pool"]
+assert (old_pool["r"],old_pool["k"],old_pool["price"],old_pool["mu"])==(r,k,price,mu)
+alpha=F(4803,5330)
+assert old_pool["alpha"]==alpha<F(".95") and old_pool["cost"]<F("1.009e-15")
+beta,old,options=parent["beta"],parent["old"],parent["options"]
+tail=parent["tail"]+eta
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),alpha) for p in old]
+    room=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(room)>F("9.0072e-10")
+    if name=="pooled-map":
+        assert min(room)>F("6.6997e-9")
+    print("PASS original q81 price branches",name,float(max(caps)),float(min(room)))
+print("PASS original E26/E27 comparison through 1009.58")
+~~~
