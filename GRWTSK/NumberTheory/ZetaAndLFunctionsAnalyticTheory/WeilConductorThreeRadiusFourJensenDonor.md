@@ -8351,3 +8351,322 @@ for name,base in options.items():
     print("PASS original q97 price branches",name,float(max(caps)),float(min(room)))
 print("PASS original E41/E43/E42 comparison through 1242.50")
 ~~~
+
+## E44 in the existing derivative family
+
+2026-11-16, grwtsk contributors, AI-assisted. Bounded analytic
+proof with exact rational checks. Lean elaboration, kernel replay
+and axiom audit are NOT_RUN. External review is UNASSESSED.
+
+Use the [97-restriction comparison](https://github.com/grwtsk/math/commit/b1b0cb98fabc602b62724b89ee8e97929bc5a86b)
+and the original odd conductor-three carrier, masks and arithmetic.
+In detunings from $c_1=99653682.92983$ and their reflected
+restrictions, the signed multiplier is positive on
+$[1242.50,1244.58]$ outside $E_{44}=[1242.50,1242.64]$.
+Its endpoints and the frontier are positive and $1242.57$ is
+negative. The exact sign guard uses 99 checks with one bisection.
+The left segment of $Y_{44}=[1240.57,1244.57]$ belongs to the old
+positive corridor. The donor lies in the original masks and starts
+32.97 after $Y_{43}$ ends. Earlier nonlocal tags are disjoint.
+
+The exact directed counts are 193 positive bins and 46 negative
+upper cells. On complex polynomials of degree below 40 the form
+$$
+\int_{Y_{44}}(.9\ell-\eta)|p|^2\,d\nu+
+\frac{10^{-15}}{4^{32}\pi_{\rm hi}}
+   \int_{Y_{44}}|p^{(16)}|^2\,d\nu
+$$
+has all 40 rational leading pivots positive. The radius is two and
+the original signed multiplier has absolute value below 272 here.
+The existing half-interval Taylor and Young transfer applies at
+orders 16 and 40. Sum the two derivative norms over the fourteen
+disjoint donors before applying folded Plancherel. The pooled
+comparison keeps factor $4803/5330$ and one scalar below
+$1.009\cdot10^{-15}$, independently of the number of intervals.
+The new positive reservation is used once and costs no additional
+scalar. Thus all 192 budgets of the preceding comparison carry
+over with the same caps and room. The contiguous frontier is
+$1244.58$ with 98 paid restrictions including earlier detached and
+remote groups. The original identity is
+$T_+-\lambda\Pi_H=S_{\rm all98}-N_{\rm out}^*N_{\rm out}$ with
+$S_{\rm all98}\succeq .046995S_\lambda$. The unpaid-support norm
+$\|N_{\rm out}S_{\rm all98}^{-1}N_{\rm out}^*\|\le1$ remains open.
+
+The following focused checker takes the original arithmetic
+Markdown and the Jensen donor Markdown. It binds the previously
+verified comparison by exact prefix hash and checks the new signs,
+polynomial form and common derivative constants.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial, lcm
+from pathlib import Path
+import sys
+
+arithmetic, jensen = sys.argv[1:]
+q97 = Path(jensen).read_bytes()[:354169]
+assert sha256(q97).hexdigest() == "f7608e11ff960be94b3465fd7ba462694d176bf51a9523fd90e1b56007c6a9ac"
+
+source = r'''from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+rows={"e44":("1240.57","1244.57","1242.50","1242.64","1242.57",".90")}
+assert mode in ("sign",*rows)
+if mode=="sign":
+    start,stop,step=map(F,("1242.50","1244.58",".02"))
+else:
+    a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+    start,stop,step=F(a0),F(b0),F(".0025")
+lowarg,higharg=47581000,47582000
+raw_cap=55
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("1e-11")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+if mode=="sign":
+    boxes=[(F(row[2]),F(row[3])) for row in rows.values()]
+    assert all(node(x)[1]<Alo for interval in boxes for x in interval)
+    assert all(node(F(row[4]))[0]>Ahi for row in rows.values())
+    assert node(stop)[1]<Alo
+    checks=splits=0
+    def positive(l,h):
+        global checks,splits
+        checks+=1
+        lo,hi=estimate(l,h)
+        if hi<Alo:
+            return
+        assert lo<Ahi and h>F(".000625"),(l,h,lo,hi)
+        splits+=1
+        positive(l,h/2)
+        positive(l+h/2,h/2)
+
+    for l,r in zip([start]+[b for a,b in boxes],[a for a,b in boxes]+[stop]):
+        assert ((r-l)/step).denominator==1
+        for j in range(int((r-l)/step)):
+            positive(l+j*step,step)
+    assert (checks,splits)==(99,1)
+    print("PASS actual signed complement through",str(stop),checks,splits)
+    raise SystemExit
+
+# Exact positive donor weights and short negative moment input.
+assert count%8==0 and start<=F(l0)<F(r0)<=stop
+c=c0+F(c0_offset)
+wmin=1-F("3e-10")
+rho=[]
+pos=[]
+for j in range(count//8):
+    x=start+j*8*step
+    peaks=[estimate(x+i*step,step)[1] for i in range(8)]
+    raw=wmin*(Alo-max(peaks))
+    w=F((raw*10**10)//1,10**10)
+    if w>0:
+        pos.append((c0+x-c,8*step,w*8*step/pi_upper))
+edge=F(l0)
+count_negative=(F(r0)-edge)/step
+assert count_negative.denominator==1
+for j in range(int(count_negative)):
+    x=edge+j*step
+    _,upper=estimate(x,step)
+    val=max(F(0),(upper-Alo)/pi_lower)
+    eta=F(-((-val*10**10)//1),10**10)
+    assert eta>=val and eta*pi_upper<55
+    if eta:
+        rho.append((c0+x-c,c0+x+step-c,eta))
+assert len(pos)>0 and len(rho)>0
+print("signed original weights exact:",len(pos),len(rho),flush=True)
+
+'''
+
+for mode in ("sign", "e44"):
+    data = {"__name__": "__main__"}
+    sys.argv = [__file__, arithmetic, mode]
+    try:
+        exec(compile(source, "E44 directed arithmetic", "exec"), data)
+    except SystemExit as exc:
+        assert mode == "sign" and exc.code is None
+    else:
+        assert mode == "e44"
+
+r,k=40,16
+price,mu=F(".90"),F("1e-15")
+assert (data["start"],data["stop"])==(F("1240.57"),F("1244.57"))
+assert F("1207.60")+F("32.97")==data["start"]<F("1242.50")
+assert data["absolute"]<211 and data["Ahi"]+211<272
+assert len(data["pos"])==193 and len(data["rho"])==46
+start,stop=data["start"],data["stop"]
+box_left,box_right=F(data["l0"]),F(data["r0"])
+c0,c=data["c0"],data["c"]
+step=data["step"]
+pi_hi,pi_lo=data["pi_upper"],data["pi_lower"]
+estimate=data["estimate"]
+alo=data["Alo"]
+wmin=data["wmin"]
+def pivots(matrix):
+    assert len(matrix)==r and all(len(row)==r for row in matrix)
+    assert all(matrix[i][j]==matrix[j][i] for i in range(r) for j in range(r))
+    scale=lcm(*(value.denominator for row in matrix for value in row))
+    integer=[[int(scale*value) for value in row] for row in matrix]
+    previous=1
+    result=[]
+    for z in range(r):
+        pivot=integer[z][z]
+        assert pivot>0,(z,float(F(pivot,scale*previous)))
+        result.append(float(F(pivot,scale*previous)))
+        for i in range(z+1,r):
+            for j in range(i,r):
+                value,error=divmod(pivot*integer[i][j]-integer[z][i]*integer[z][j],previous)
+                assert error==0
+                integer[i][j]=integer[j][i]=value
+        previous=pivot
+    return result
+
+pos=[]
+for j in range(int((stop-start)/(8*step))):
+    left=start+8*j*step
+    peaks=[estimate(left+i*step,step)[1] for i in range(8)]
+    raw=wmin*(alo-max(peaks))
+    w=F((raw*10**10)//1,10**10)
+    if w>0:
+        assert w<=raw
+        pos.append((c0+left-c,8*step,w*8*step/pi_hi))
+neg=[]
+for j in range(int((box_right-box_left)/step)):
+    left=box_left+j*step
+    upper=estimate(left,step)[1]
+    raw=max(F(0),(upper-alo)/pi_lo)
+    eta=F(-((-raw*10**10)//1),10**10)
+    assert eta>=raw
+    if eta:
+        neg.append((c0+left-c,c0+left+step-c,eta))
+assert pos==data["pos"] and neg==data["rho"]
+assert len(pos)>0 and len(neg)>0
+left,right=c0+start-c,c0+stop-c
+assert -2<=left<0<right<=2
+densities=[(a,a+h,price*weight/h) for a,h,weight in pos]
+densities.extend((a,b,-weight) for a,b,weight in neg)
+moments=[sum(weight*(b**(j+1)-a**(j+1))/(j+1)
+             for a,b,weight in densities) for j in range(2*r-1)]
+matrix=[[moments[i+j] for j in range(r)] for i in range(r)]
+for i in range(k,r):
+    for j in range(k,r):
+        n=i+j-2*k
+        derivative=F(factorial(i)*factorial(j),factorial(i-k)*factorial(j-k))
+        derivative*=(right**(n+1)-left**(n+1))/((n+1)*4**(2*k)*pi_hi)
+        matrix[i][j]+=mu*derivative
+values=pivots(matrix)
+assert len(values)==40
+print("PASS exact directed polynomial Gram",mode,len(pos),len(neg),float(min(values)))
+
+
+# The predecessor pays this scalar once for the disjoint derivative family.
+s=t=F(1,1600)
+u=F(1,256)
+alpha=(1+s)*price/(1-t)
+def C(order):
+    return F(2**(2*order),2*order*(2*order-1)*factorial(order-1)**2)
+d16=(1+s)*(1+u)*mu
+d40=4**80*(272*((1+1/s)+alpha*(1/t-1))*C(40)
+           +(1+s)*(1+1/u)*mu*C(24)/4**32)
+assert alpha==F(4803,5330) and d16+d40<F("1.009e-15")
+print("PASS unchanged derivative charge through 1244.58")
+~~~
