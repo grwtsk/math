@@ -82,21 +82,21 @@ theorem nonzero_multiplier_fixture :
   have unchanged := order_mul_nonzero_right (fun z : ℂ => z ^ 3)
     (fun _ => 2) 0 (by fun_prop) (by fun_prop) (by norm_num)
   have monomial := analyticOrderAt_centeredMonomial (𝕜 := ℂ) (z₀ := 0) (n := 3)
-  simpa using unchanged.trans (by simpa using monomial)
+  simpa [Pi.mul_def] using unchanged.trans (by simpa [Pi.pow_def] using monomial)
 
 /-- Multiplication by a vanishing factor changes order. -/
 theorem vanishing_multiplier_fixture :
     analyticOrderAt (fun z : ℂ => z * z) 0 = 2 ∧
       analyticOrderAt (fun z : ℂ => z) 0 = 1 := by
   constructor
-  · simpa [pow_two] using
+  · simpa [Pi.pow_def, Pi.mul_def, pow_two] using
       (analyticOrderAt_centeredMonomial (𝕜 := ℂ) (z₀ := 0) (n := 2))
   · exact analyticOrderAt_id
 
 /-- A ramified chart cannot use the nonzero-derivative transport rule. -/
 theorem ramified_coordinate_fixture :
     analyticOrderAt ((fun z : ℂ => z ^ 3) ∘ (fun z => z ^ 2)) 0 = 6 := by
-  simpa [Function.comp_def, ← pow_mul] using
+  simpa [Function.comp_def, ← pow_mul, Pi.pow_def] using
     (analyticOrderAt_centeredMonomial (𝕜 := ℂ) (z₀ := 0) (n := 6))
 
 /-- This polynomial has a reflection-invariant zero SET but unequal orders at
@@ -129,6 +129,6 @@ theorem same_zero_set_unequal_orders_fixture :
   · have unchanged := order_mul_nonzero_right (fun z : ℂ => (z - 1) ^ 2)
       (fun z => z) 1 (by fun_prop) (by fun_prop) (by norm_num)
     have monomial := analyticOrderAt_centeredMonomial (𝕜 := ℂ) (z₀ := 1) (n := 2)
-    simpa [mul_comm] using unchanged.trans monomial
+    simpa [Pi.mul_def, mul_comm] using unchanged.trans monomial
 
 end GRWTSK.Analysis.ComplexAnalysis.AnalyticOrderTransport
