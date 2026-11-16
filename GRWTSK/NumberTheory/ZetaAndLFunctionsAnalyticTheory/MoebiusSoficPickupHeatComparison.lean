@@ -324,4 +324,41 @@ theorem tendsto_normalized_heatMaskDeviation_sub {s t : ℝ} (hs : 0 < s) (ht : 
   simp only [mask_deviation_eq_heated_sub_source, sub_sub_sub_cancel_right, sub_div]
 
 
+/-- Returning the signed mask deviation through the original diagonal leaves
+the original pickup energy with an explicit asymptotic heat correction. -/
+theorem tendsto_normalized_heatMaskDeviation_sub_diagonal_add_energy {s : ℝ}
+    (hs : 0 < s) :
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+        pickupDiagonal T + pickupEnergy T) / T)
+      atTop (𝓝 (settledHeatedPickup s)) := by
+  refine (tendsto_heated_pickup_div hs).congr' ?_
+  filter_upwards [eventually_ge_atTop (0 : ℝ)] with T hT
+  rw [mask_deviation_eq_heated_sub_source, pickupEnergy_eq_diagonal_add_cross hT]
+  congr 1
+  ring
+
+/-- A normalized upper allowance for the original pickup energy is equivalent
+to the corresponding lower allowance for the signed deviation relative to
+the original diagonal, with the exact settled heat correction. -/
+theorem original_pickupEnergy_linear_budget_iff_heatMaskDeviation {s A : ℝ}
+    (hs : 0 < s) {l : Filter ℝ} (hl : l ≤ atTop) :
+    (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, pickupEnergy T / T ≤ A + ε) ↔
+      (∀ ε : ℝ, 0 < ε → ∀ᶠ T in l,
+        settledHeatedPickup s - A - ε ≤
+          (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+            pickupDiagonal T) / T) := by
+  have hlim := (tendsto_normalized_heatMaskDeviation_sub_diagonal_add_energy hs).mono_left hl
+  constructor
+  · intro h ε hε
+    have hlow := (tendsto_order.mp hlim).1 (settledHeatedPickup s - ε / 2) (by linarith)
+    filter_upwards [hlow, h (ε / 2) (by linarith)] with T hlow henergy
+    rw [add_div] at hlow
+    linarith
+  · intro h ε hε
+    have hhigh := (tendsto_order.mp hlim).2 (settledHeatedPickup s + ε / 2) (by linarith)
+    filter_upwards [hhigh, h (ε / 2) (by linarith)] with T hhigh hdeviation
+    rw [add_div] at hhigh
+    linarith
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
