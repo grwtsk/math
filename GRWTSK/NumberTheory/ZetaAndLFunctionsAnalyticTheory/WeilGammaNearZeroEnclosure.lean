@@ -109,7 +109,9 @@ private theorem polynomial_integral (k : ℕ) {h : ℝ} (hh : 0 ≤ h) :
     intervalIntegral.integral_div, integral_pow, integral_pow]
   simp only [Nat.cast_add, Nat.cast_one, Nat.add_assoc, zero_pow (by omega : k + 1 ≠ 0),
     zero_pow (by omega : k + (1 + 1) ≠ 0), sub_zero]
-  norm_num <;> ring
+  rw [div_div, mul_comm ((k : ℝ) + 1) 2]
+  norm_num
+  ring
 
 /-- Genuine moment integrability and outward enclosures. The constants are
 uniform over both physical parities and, more generally, every natural a. -/
@@ -145,10 +147,15 @@ theorem kernel_moment_bounds (a : ℕ) {h : ℝ} (hh : 0 ≤ h) :
         Real.exp (-((a : ℝ) + 1 / 2) * h) * h ^ 2 / 4 := by
       rw [integral_const_mul, ← intervalIntegral.integral_of_le hh, integral_id]
       dsimp [c]
-      norm_num <;> ring
+      norm_num
+      ring
     rwa [he] at hl
-  · simpa [secondMoment, add_comm] using hu 1
-  · simpa [add_comm] using hu 3
+  · have htwo := hu 1
+    norm_num at htwo
+    simpa only [secondMoment, add_comm] using htwo
+  · have hfour := hu 3
+    norm_num at hfour
+    simpa only [add_comm] using hfour
 
 private theorem energy_nonneg (g : ℝ → ℂ) : 0 ≤ energy g :=
   integral_nonneg (fun _ => sq_nonneg _)
