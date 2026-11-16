@@ -8126,3 +8126,228 @@ for name,base in options.items():
     print("PASS original q94 price branches",name,float(max(caps)),float(min(room)))
 print("PASS E40 signed extension through 1174.68")
 ~~~
+
+## Two derivative donors and one Jensen donor for E41–E43
+
+2026-11-16, grwtsk contributors, AI-assisted. Bounded analytic proof
+with directed rational checks. Lean elaboration, kernel replay and
+axiom audit are NOT_RUN. External review is UNASSESSED.
+
+Use the [published 94-restriction comparison](https://github.com/grwtsk/math/commit/4dc73914df25b613f0df8a5d06958f0624f4d062),
+Jensen blob eabff283c7f8145294aa901a01e62a4a919817b4 and original
+arithmetic blob 72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the
+complex odd physical carrier, zero extension, original masks,
+folded measure and full signed arithmetic for the primitive
+nonprincipal odd character modulo three. Detunings are from
+$c_1=99653682.92983$, with the reflected restrictions.
+
+On [1174.68,1242.50] the original multiplier is positive outside
+E41=[1174.68,1174.86], E42=[1190.92,1191.10] and
+E43=[1205.48,1205.72]. All six endpoints and the frontier are
+positive. The centers 1174.77, 1191.01 and 1205.60 are negative.
+The directed sign guard checks 3361 complement cells without
+subdivision. The preceding sign corridor supplies the left part
+of Y41=[1172.77,1176.77]. The other donors are
+Y42=[1189.01,1193.01] and Y43=[1203.60,1207.60]. The successive
+gaps from the previous replacement donor and between the three
+new donors are 37.23, 12.24 and 10.59. Each donor has radius two,
+fits the original masks, and meets only its assigned negative
+restriction.
+
+For E41 and E42, directed positive and negative counts are
+(192,57) and (192,59). The directed polynomial form at
+$(r,k,\alpha_0,\mu)=(40,16,.9,10^{-15})$ has 40 positive
+rational pivots in each case. The uniform multiplier bound
+$|m|<272$ and radius bound two permit the existing half-interval
+Taylor and Young transfer at orders 16 and 40. Apply folded
+Plancherel after summing over the disjoint donor intervals.
+The thirteen derivative donors including E41 and E42 use the
+unchanged factor $4803/5330$ and one scalar below $1.009\cdot10^{-15}$.
+
+For E43 the same directed polynomial sufficient matrix has
+first negative normalized pivot 26 in $(-4740850,-4740849)$.
+This concerns the stated directed matrix. The physical comparison
+uses 188 true sine averages and 86 negative upper cells. With the
+18-term map at $c_1+1205.60$, $\epsilon=.48^{18}/18!$ and
+$\delta=8\epsilon(2+\epsilon)\int\eta$, use the exact physical
+Gram enclosure with 120-term carriers. At $\tau=10^{-12}$ and
+$\alpha=19/20$ all 18 directed lower residual pivots are positive.
+The previously proved Woodbury square identity and Schur
+comparison yield
+$$
+N_{E_{43}}^*N_{E_{43}}\preceq \tfrac{19}{20}\mathcal P_{Y_{43}}
+ +(\tau+\delta)I,\qquad \tau+\delta<1.000000001\cdot10^{-12}.
+$$
+Reserve each of the three positive tags and add each negative
+output once. The derivative budget is shared and only E43 has
+a new scalar charge. All 192 retained caps stay below .953005,
+with least room above $8.9472\cdot10^{-10}$ and pooled room
+above $6.6937\cdot10^{-9}$. The original identity is
+$T_+-\lambda\Pi_H=S_{\rm all97}-N_{\rm out}^*N_{\rm out}$,
+with $S_{\rm all97}\succeq.046995S_\lambda$. The first open
+supplier remains the norm bound
+$\|N_{\rm out}S_{\rm all97}^{-1}N_{\rm out}^*\|\le1$.
+
+Extract the checker and pass the original arithmetic Markdown
+and the Jensen donor Markdown. The prerequisite guards are
+selected by their exact digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial,lcm
+from pathlib import Path
+from textwrap import dedent
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+def replace(code,old,new):
+    assert code.count(old)==1,old
+    return code.replace(old,new)
+
+prior=execute(checker("27202f5c1c872fac81efd442a81d97a2358f8afb0b120d2d05d3b2d8df0df993"),
+              [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+derivative=checker("fb06ddc22892ae6f573f0dc659a5e60c9b156ba327344f8f043d3ad06f2bfbb9")
+geometry={
+    "e41":("1172.77","1176.77","1174.68","1174.86","1174.77",192,57),
+    "e43":("1203.60","1207.60","1205.48","1205.72","1205.60",188,86),
+    "e42":("1189.01","1193.01","1190.92","1191.10","1191.01",192,59),
+}
+geometry=dict(sorted(geometry.items(),key=lambda item:F(item[1][0])))
+
+rows={tag:row[:5]+(".95" if tag=="e43" else ".90",) for tag,row in geometry.items()}
+directed=replace(core,
+    '"e9":("707.62","709.62","708.60","708.66","708.63",".25"),',
+    "\n    ".join(repr(tag)+":"+repr(row)+"," for tag,row in rows.items()))
+directed=replace(directed,'("708.60","710.86",".02")','("1174.68","1242.50",".02")')
+directed=replace(directed,'(checks,splits)==(112,1)','(checks,splits)==(3361,0)')
+expected={key:row[-2:] for key,row in geometry.items()}
+directed=replace(directed,'len(pos)==98 and len(rho)==9',
+                 '(len(pos),len(rho))=='+repr(expected)+'[mode]')
+
+sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(directed,[arithmetic,"sign"],sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete directed E41/E43/E42 sign check did not return")
+
+before=prior["sign"]
+q87=prior["prior"]["prior"]["prior"]
+q84=q87["prior"]
+assert before["stop"]==sign["start"]==F("1174.68")
+assert before["node"](before["stop"])[1]<before["Alo"]
+assert sign["stop"]==F("1242.50")
+assert sorted(sign["boxes"])==sorted(tuple(map(F,row[2:4])) for row in geometry.values())
+previous_right=F("1135.54")
+assert previous_right==F("1135.54")
+gaps=[]
+for tag in sorted(geometry,key=lambda j:F(geometry[j][0])):
+    left,right,e,f,center,*_=geometry[tag]
+    a,b,l,h,c=map(F,(left,right,e,f,center))
+    assert previous_right<a<l<h<b<sign["stop"]
+    assert (a+b)/2==c and (b-a)/2==(F(2))
+    assert all(v<a or b<u for u,v in sign["boxes"] if (u,v)!=(l,h))
+    gaps.append(a-previous_right)
+    previous_right=b
+assert gaps==list(map(F,("37.23","12.24","10.59")))
+yl,yr=F("1172.77"),F("1207.60")
+assert max(y for x,y in before["boxes"])<yl<sign["start"]==min(x for x,y in sign["boxes"])
+assert all(v<yl or yr<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*sign["pi_lower"]-F("5.55")-2>sign["c0"]+yr
+
+# The two disjoint derivative donors share the previous rates.
+r,k=40,16
+price,mu=F(".9"),F("1e-15")
+begin=derivative.index("def pivots(matrix):")
+end=derivative.index("branches=[]",begin)
+exec(compile(derivative[begin:end],jensen,"exec"))
+begin=derivative.index("    # Verify the normalization")
+end=derivative.index("    values=pivots(matrix)",begin)
+comparison=dedent(derivative[begin:end])
+cut="\nfrom math import acos,cos,sin,sqrt,fsum\n"
+assert directed.count(cut)==1
+for mode in ("e41","e42"):
+    a,b,left,right,center,npos,nneg=geometry[mode]
+    data=execute(directed.split(cut)[0],[arithmetic,mode])
+    start,stop=data["start"],data["stop"]
+    c0,c=data["c0"],data["c"]
+    step=data["step"]
+    pi_hi,pi_lo=data["pi_upper"],data["pi_lower"]
+    estimate=data["estimate"]
+    alo,ahi=data["Alo"],data["Ahi"]
+    wmin=data["wmin"]
+    box_left,box_right=map(F,(left,right))
+    assert (start,stop)==tuple(map(F,(a,b)))
+    assert (F(data["l0"]),F(data["r0"]))==(box_left,box_right)
+    assert c==c0+F(center)==c0+(start+stop)/2
+    assert step==F(".0025") and (alo,ahi,wmin)==(F("17.6779"),F("17.6780"),1-F("3e-10"))
+    assert ahi+211<272 and 211-alo<272
+    state=dict(globals())
+    exec(compile(comparison,jensen,"exec"),state)
+    values=pivots(state["matrix"])
+    assert len(values)==40 and min(values)>F("1e-5")
+    print("PASS original directed polynomial Gram",mode,npos,nneg,float(min(values)))
+
+# Reserve E43's separate true positive averages once.
+end='assert F(T[0][0],work_grid)>F("5.9727e-8")'
+assert directed.count(end)==1
+code=replace(directed.split(end)[0],'F("9.656e-36")','F("1e-21")')
+code=replace(code,'assert c==c0+F("708.63")','assert c==c0+F("1205.60")')
+local=execute(code,[arithmetic,"e43"])
+a,b,left,right,center,_,_=geometry["e43"]
+assert (local["start"],local["stop"])==tuple(map(F,(a,b)))
+assert (local["l0"],local["r0"])==(left,right)
+assert local["c"]==local["c0"]+F(center)
+assert local["alpha"]==F(".95") and local["tau"]==F("1e-12")
+assert local["k"]==18 and local["K"]==120
+assert local["Eps"]==F(".48")**18/factorial(18)
+eta=local["tau"]+local["delta"]
+assert eta<F("1.000000001e-12")
+print("PASS directed E43 physical Jensen comparison",float(eta))
+q81=q84["prior"]["prior"]
+q75=q81["parent"]["prior"]["prior"]
+q75["computed_failure"](local,26,F("-4740850"),F("-4740849"))
+
+old_pool=q81["old_pool"]
+alpha=F(4803,5330)
+assert (old_pool["r"],old_pool["k"],old_pool["price"],old_pool["mu"])==(r,k,price,mu)
+assert old_pool["alpha"]==alpha<F(".95") and old_pool["cost"]<F("1.009e-15")
+beta,old,options=prior["beta"],prior["old"],prior["options"]
+tail=prior["tail"]+eta
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),alpha) for p in old]
+    room=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(room)>F("8.9472e-10")
+    if name=="pooled-map":
+        assert min(room)>F("6.6937e-9")
+    print("PASS original q97 price branches",name,float(max(caps)),float(min(room)))
+print("PASS original E41/E43/E42 comparison through 1242.50")
+~~~
