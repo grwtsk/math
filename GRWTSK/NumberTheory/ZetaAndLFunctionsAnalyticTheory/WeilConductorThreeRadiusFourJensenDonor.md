@@ -6552,3 +6552,238 @@ for name,base in options.items():
     print("PASS original q81 price branches",name,float(max(caps)),float(min(room)))
 print("PASS original E26/E27 comparison through 1009.58")
 ~~~
+
+## A shared Jensen donor for E28 and E29
+
+2026-11-16, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 81-enclosure comparison](https://github.com/grwtsk/math/blob/a3760bc606e2288434bc6cecf17f00ff01946fae/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob a05a898a2d47bd4476e4b3a5d0f692a82381d706. The original radius-four arithmetic
+blob is 72848bace2af0f427c9e9fae16806f1b31ee064f. Retain
+the complex odd physical carrier
+$L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$, its zero
+extension, folded measure $d\nu/\pi$, original masks and
+physical projection. For the primitive nonprincipal odd
+character modulo three use full parity-one gamma, all
+$458$ signed prime powers and zero principal-pole term.
+The displayed detunings are from $c_1=99653682.92983$
+and include the reflected restrictions.
+
+The original multiplier is strictly positive on the
+complement of $E_{28}=[1009.58,1009.86]$ and
+$E_{29}=[1010.50,1010.74]$ in $[1009.58,1025.20]$.
+The four box endpoints and the right frontier are
+strictly positive, and $1009.72$ and $1010.62$ are
+strictly negative. The directed sign guard uses $755$
+complement cells with zero bisections. The preceding
+sign interval joins this one at the positive endpoint
+$1009.58$.
+
+Set $Y_*=[1008.04,1016.04]$ and split its data
+generation at $1010.16$. This donor starts $.04$ after
+the prior E27 donor ends. Its left piece before $1009.58$
+lies in the preceding positive sign corridor after
+E27. Its only negative restrictions are $E_{28}$ and
+$E_{29}$. The original masks retain both strips, and
+the exact endpoint checks place this donor outside the
+earlier positive tags, including the remote ones.
+
+### Directed shared physical comparison
+
+The two strips have $(93,97)$ and $(282,89)$ positive
+$.02$ bins and nonzero negative $.0025$ cells,
+respectively. The strips meet at one null endpoint.
+Their $375$ actual positive sine averages form a single
+map $B$ with a positive diagonal $W$ and
+$B^*WB\preceq\mathcal P_{Y_*}$.
+
+Use $18$ terms for the negative Taylor maps $V_{28}$
+and $V_{29}$ about $c_1+1009.72$ and $c_1+1010.62$,
+respectively, and a block diagonal matrix $M$ made
+from the positive definite negative moment matrices.
+Write $V=(V_{28},V_{29})$. The directed negative
+densities give
+$$
+ N_{E_{28}}^*N_{E_{28}}+N_{E_{29}}^*N_{E_{29}}
+ \preceq V^*MV+(\delta_{28}+\delta_{29})I,
+ \qquad
+ \delta_j=8\epsilon_j(2+\epsilon_j)\int_{E_j}\eta_j,
+$$
+where $\epsilon_{28}=.56^{18}/18!$ and
+$\epsilon_{29}=.48^{18}/18!$.
+
+At $\alpha=19/20$ and $\tau=10^{-12}$, the directed
+lower residual
+$$
+ \tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                -\tau Z^*(\alpha W)^{-1}Z
+$$
+has all $36$ rational pivots strictly positive. The
+guard uses $160$ Taylor terms for the averaged sine
+carriers. It keeps the off-diagonal physical Gram and
+ridge terms, including the angular difference frequency
+$4(1010.62-1009.72)=3.6$. Floating point only proposes
+$Z$, and the exact row uncertainty is below $10^{-23}$.
+The established Jensen square completion gives
+$$
+ N_{E_{28}}^*N_{E_{28}}+N_{E_{29}}^*N_{E_{29}}
+ \preceq \tfrac{19}{20}\mathcal P_{Y_*}
+     +(\tau+\delta_{28}+\delta_{29})I,
+ \qquad
+ \tau+\delta_{28}+\delta_{29}<1.000000027\cdot10^{-12}.
+$$
+
+### Return to the original comparison
+
+Reserve $\mathcal P_{Y_*}$ once and append both new
+disjoint negative outputs. Retain every earlier donor
+and the single derivative estimate for its eight
+assigned restrictions. The genuine earlier tags and
+$\beta I$ remain in the reduced comparator. Add only
+the new joint scalar price divided by $\beta$ to each
+retained branch and use the existing $19/20$ maximum.
+All $48$ original price choices under each of the four
+first-pair choices retain cap below $0.953005$. The
+least physical room exceeds $8.9972\cdot10^{-10}$, and
+in the pooled-map branch it exceeds $6.6987\cdot10^{-9}$.
+
+Contiguous signed coverage of the $83$ restrictions
+reaches $1025.20$. The actual identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all83}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad
+ S_{\mathrm{all83}}=S_\lambda-W_{\mathrm{all83}}^*W_{\mathrm{all83}}
+ \succeq0.046995S_\lambda.
+$$
+The full remaining outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all83}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses and
+directional return.
+
+Extract the guard and pass the pinned original arithmetic
+Markdown and the Jensen donor Markdown containing the
+E26/E27 comparison, original directed Jensen and E16/E17
+joint checkers. The source guards are selected by unique
+digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+def replace(code,old,new):
+    assert code.count(old)==1,old
+    return code.replace(old,new)
+
+prior=execute(checker("d189248cf79c56b5870a5cd851bff770841b0768fde80fabfcf8fabfeaa8c15e"),
+              [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+common=checker("c35c6b54ed082ad0ef3352039c393b7707e68d38fec0c54dc7357d862da06713")
+rows=(
+    ("e28","1008.04","1010.16","1009.58","1009.86","1009.72"),
+    ("e29","1010.16","1016.04","1010.50","1010.74","1010.62"),
+)
+directed=replace(core,
+    '"e9":("707.62","709.62","708.60","708.66","708.63",".25"),',
+    "\n    ".join(repr(mode)+":"+repr(row+(".95",))+"," for mode,*seq in rows
+                for row in (tuple(seq),)))
+directed=replace(directed,'("708.60","710.86",".02")','("1009.58","1025.20",".02")')
+directed=replace(directed,'(checks,splits)==(112,1)','(checks,splits)==(755,0)')
+sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(directed,[arithmetic,"sign"],sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete E28/E29 directed sign check did not return")
+
+start,split,stop=map(F,("1008.04","1010.16","1016.04"))
+y27r=prior["wide"]["stop"]
+e27r=prior["e27r"]
+old_sign=prior["sign"]
+e28l,e28r,e29l,e29r=map(F,("1009.58","1009.86","1010.50","1010.74"))
+assert e27r<y27r<start<old_sign["stop"]==sign["start"]==e28l
+assert old_sign["node"](old_sign["stop"])[1]<old_sign["Alo"]
+assert e28l<e28r<split<e29l<e29r<stop<sign["stop"]==F("1025.20")
+assert (sign["boxes"],start-y27r)==([(e28l,e28r),(e29l,e29r)],F(".04"))
+assert all(v<start or stop<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*sign["pi_lower"]-F("5.55")-2>sign["c0"]+stop
+
+# Use the existing source Gram enclosures for the two new exact carriers.
+first=common.index("k=18\nd=[]")
+last=common.index("account_start=",first)
+common=common[first:last]
+for old,new in (
+    ('("e16","782.86","785.86","784.80","784.88","784.84"),\n'
+     '    ("e17","785.86","790.86","786.68","787.06","786.86"),',
+     "\n    ".join(repr(row)+"," for row in rows)),
+    ('((146,21) if mode=="e16" else (232,138))',
+     '((93,97) if mode=="e28" else (282,89))'),
+    ('assert a["c"]==a["c0"]+F("784.84") and b["c"]==b["c0"]+F("786.86")',
+     'assert a["c"]==a["c0"]+F("1009.72") and b["c"]==b["c0"]+F("1010.62")'),
+    ('assert a["stop"]==b["start"]==F("785.86")',
+     'assert a["stop"]==b["start"]==F("1010.16")'),
+    ('len(pos)==378','len(pos)==375'),
+    ("assert z==F('8.08')","assert z==F('3.6')"),
+    ('assert tau<F("1.001e-12")','assert tau<F("1.000000027e-12")'),
+    ('PASS actual E16/E17 common donor','PASS actual E28/E29 common donor'),
+):
+    common=replace(common,old,new)
+first=common.index('assert F("767.33")')
+last=common.index("q=F(ask)",first)
+common=common[:first]+common[last:]
+holder='"e9":("707.62","709.62","708.60","708.66","708.63",".25")'
+common=replace(common,
+    'code=core.replace(\''+holder+'\',row)',
+    'assert core.count(\''+holder+'\')==1\n    code=core.replace(\''+holder+'\',row)')
+from math import factorial,cos,sin,sqrt,fsum,acos
+numerical=dict(globals(),source_path=arithmetic,jensen_path=jensen,ask="1e-12")
+pooled=execute(common,[arithmetic,jensen,"1e-12"],numerical)
+a,b=pooled["a"],pooled["b"]
+assert (a["start"],a["stop"],b["start"],b["stop"])==(start,split,split,stop)
+assert pooled["alpha"]==F(".95") and pooled["K"]==160 and pooled["dim"]==36
+assert (a["l0"],a["r0"],b["l0"],b["r0"])==("1009.58","1009.86","1010.50","1010.74")
+tau=pooled["tau"]
+assert tau==F("1e-12")+a["delta"]+b["delta"]<F("1.000000027e-12")
+
+beta,old,options=prior["beta"],prior["old"],prior["options"]
+tail=prior["tail"]+tau
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),F(4803,5330)) for p in old]
+    rooms=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(rooms)>F("8.9972e-10")
+    if name=="pooled-map":
+        assert min(rooms)>F("6.6987e-9")
+    print("PASS original q83 price branches",name,float(max(caps)),float(min(rooms)))
+print("PASS shared E28/E29 donor through 1025.20")
+~~~
