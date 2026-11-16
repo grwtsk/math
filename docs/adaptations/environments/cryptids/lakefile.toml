@@ -1,0 +1,19 @@
+name = "grwtsk-cryptids-adaptation"
+defaultTargets = ["GRWTSKCryptidsAdapters"]
+
+[[require]]
+name = "Cryptids"
+git = "https://github.com/google-deepmind/cryptids.git"
+rev = "3647718b5df22e1a61462dec0376bd204526285a"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "1f414401f69059aa7eead47b53ee40bd38455eeb"
+
+[[lean_lib]]
+name = "GRWTSKCryptidsAdapters"
+roots = [
+  "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.ChebyshevBandReduction",
+  "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.ChebyshevBandCryptids",
+]
