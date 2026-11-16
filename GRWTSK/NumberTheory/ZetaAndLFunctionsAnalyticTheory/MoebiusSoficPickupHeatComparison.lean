@@ -608,4 +608,36 @@ theorem tendsto_residualEnergy_heat_difference_with_mean_correction
   field_simp
   ring
 
+/-- At heats with unequal settled values, convergence of the uncorrected
+energy drift is equivalent to convergence of the original pickup mean.
+Both limits are measured on the same horizon filter. -/
+theorem tendsto_residualEnergy_heat_difference_iff_tendsto_source_mean
+    {s t m : ℝ} (hs : 0 < s) (ht : 0 < t)
+    (hne : heatedLimit t ≠ heatedLimit s) {l : Filter ℝ} (hl : l ≤ atTop) :
+    Tendsto (fun T : ℝ => (residualEnergy t T - residualEnergy s T) / T) l
+      (𝓝 (heatedLimit t ^ 2 - heatedLimit s ^ 2 - 2 * (heatedLimit t - heatedLimit s) * m)) ↔
+    Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, wholePickup u) / T) l (𝓝 m) := by
+  let B := heatedLimit t ^ 2 - heatedLimit s ^ 2
+  let k := 2 * (heatedLimit t - heatedLimit s)
+  let D (T : ℝ) := (residualEnergy t T - residualEnergy s T) / T
+  let M (T : ℝ) := (∫ u in (0 : ℝ)..T, wholePickup u) / T
+  change Tendsto D l (𝓝 (B - k * m)) ↔ Tendsto M l (𝓝 m)
+  have hk : k ≠ 0 := mul_ne_zero (by norm_num) (sub_ne_zero.mpr hne)
+  have hsum : Tendsto (fun T => D T + k * M T) l (𝓝 B) := by
+    simpa only [D, k, M, B, add_div, mul_div_assoc] using
+      (tendsto_residualEnergy_heat_difference_with_mean_correction hs ht).mono_left hl
+  constructor
+  · intro hD
+    have h := (hsum.sub hD).div_const k
+    have hlimit : (B - (B - k * m)) / k = m := by
+      rw [show B - (B - k * m) = k * m by ring]
+      field_simp
+    rw [hlimit] at h
+    refine h.congr' (Eventually.of_forall fun T => ?_)
+    rw [show D T + k * M T - D T = k * M T by ring]
+    field_simp
+  · intro hM
+    refine (hsum.sub (hM.const_mul k)).congr' (Eventually.of_forall fun T => ?_)
+    exact add_sub_cancel_right _ _
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
