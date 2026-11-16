@@ -11,6 +11,8 @@ order. At the real point 2, the absolutely summable combined logarithmic
 kernel dominates the weighted inverse-square modulus outside a finite
 closed head. The elementary genus-one factors differ from 1 quadratically
 on bounded evaluation sets, so their product converges locally uniformly.
+At a zero, splitting off its finite fiber gives a linear vanishing factor
+to the full analytic multiplicity, times an analytic nonvanishing factor.
 -/
 
 set_option autoImplicit false
@@ -138,33 +140,60 @@ private theorem xiGenusOneFactor_differentiable (i : XiZeroOccurrence) :
   unfold xiGenusOneFactor
   fun_prop
 
-/-- Finite products converge to the canonical product locally uniformly on ℂ. -/
-theorem xiGenusOneProduct_hasProdLocallyUniformlyOn :
-    HasProdLocallyUniformlyOn xiGenusOneFactor xiGenusOneProduct Set.univ := by
+private theorem xiGenusOneSubproduct_hasProdLocallyUniformlyOn {ι : Type*}
+    (e : ι ↪ XiZeroOccurrence) :
+    HasProdLocallyUniformlyOn (fun i => xiGenusOneFactor (e i))
+      (fun s => ∏' i, xiGenusOneFactor (e i) s) Set.univ := by
   apply hasProdLocallyUniformlyOn_of_forall_compact isOpen_univ
   intro K _ hK
   obtain ⟨u, hu, hb⟩ := xiGenusOneFactor_boundOn hK
-  have h := hu.hasProdUniformlyOn_one_add hK (f := fun i s => xiGenusOneFactor i s - 1) hb
-    (fun i => ((xiGenusOneFactor_differentiable i).continuous.sub continuous_const).continuousOn)
-  simpa [xiGenusOneProduct] using! h
+  have h := (hu.comp_injective e.injective).hasProdUniformlyOn_one_add hK
+    (f := fun i s => xiGenusOneFactor (e i) s - 1) (e.injective.tendsto_cofinite.eventually hb)
+    (fun i => ((xiGenusOneFactor_differentiable (e i)).continuous.sub continuous_const).continuousOn)
+  simpa using! h
 
-private theorem xiGenusOneFactor_ne_zero {s : ℂ} (hs : xi s ≠ 0) (i : XiZeroOccurrence) :
+/-- Finite products converge to the canonical product locally uniformly on ℂ. -/
+theorem xiGenusOneProduct_hasProdLocallyUniformlyOn :
+    HasProdLocallyUniformlyOn xiGenusOneFactor xiGenusOneProduct Set.univ :=
+  xiGenusOneSubproduct_hasProdLocallyUniformlyOn (Function.Embedding.refl XiZeroOccurrence)
+
+private theorem xiGenusOneSubproduct_differentiable {ι : Type*} (e : ι ↪ XiZeroOccurrence) :
+    Differentiable ℂ (fun s => ∏' i, xiGenusOneFactor (e i) s) := by
+  apply differentiableOn_univ.mp
+  refine (hasProdLocallyUniformlyOn_iff_tendstoLocallyUniformlyOn.mp
+    (xiGenusOneSubproduct_hasProdLocallyUniformlyOn e)).differentiableOn ?_ isOpen_univ
+  exact .of_forall fun A => DifferentiableOn.fun_finsetProd (u := A)
+    (fun i _ => (xiGenusOneFactor_differentiable (e i)).differentiableOn)
+
+/-- The canonical product is entire. -/
+theorem differentiable_xiGenusOneProduct : Differentiable ℂ xiGenusOneProduct :=
+  xiGenusOneSubproduct_differentiable (Function.Embedding.refl XiZeroOccurrence)
+
+private theorem xiGenusOneFactor_ne_zero_of_ne {s : ℂ} (i : XiZeroOccurrence) (he : s ≠ i.1.val) :
     xiGenusOneFactor i s ≠ 0 := by
-  have he : s ≠ i.1.val := fun h => hs (h ▸ i.1.property)
   refine mul_ne_zero (sub_ne_zero.mpr ?_) (Complex.exp_ne_zero _)
   intro h
   exact he (by simpa using (div_eq_iff (xiZero_ne_zero i.1)).mp h.symm)
 
-private theorem xiGenusOneProduct_ne_zero {s : ℂ} (hs : xi s ≠ 0) :
-    xiGenusOneProduct s ≠ 0 := by
+private theorem xiGenusOneFactor_ne_zero {s : ℂ} (hs : xi s ≠ 0) (i : XiZeroOccurrence) :
+    xiGenusOneFactor i s ≠ 0 :=
+  xiGenusOneFactor_ne_zero_of_ne i (fun h => hs (h ▸ i.1.property))
+
+private theorem xiGenusOneSubproduct_ne_zero {ι : Type*} (e : ι ↪ XiZeroOccurrence) {s : ℂ}
+    (hf : ∀ i, xiGenusOneFactor (e i) s ≠ 0) :
+    (∏' i, xiGenusOneFactor (e i) s) ≠ 0 := by
   obtain ⟨u, hu, hb⟩ := xiGenusOneFactor_boundOn (isCompact_singleton (x := s))
-  have hsum : Summable (fun i => ‖xiGenusOneFactor i s - 1‖) := by
-    apply hu.of_norm_bounded_eventually
-    filter_upwards [hb] with i hi
+  have hsum : Summable (fun i => ‖xiGenusOneFactor (e i) s - 1‖) := by
+    apply (hu.comp_injective e.injective).of_norm_bounded_eventually
+    filter_upwards [e.injective.tendsto_cofinite.eventually hb] with i hi
     simpa using hi s (Set.mem_singleton s)
-  have hn (i : XiZeroOccurrence) : 1 + (xiGenusOneFactor i s - 1) ≠ 0 := by
-    simpa using xiGenusOneFactor_ne_zero hs i
-  simpa [xiGenusOneProduct] using tprod_one_add_ne_zero_of_summable hn hsum
+  have hn (i : ι) : 1 + (xiGenusOneFactor (e i) s - 1) ≠ 0 := by simpa using hf i
+  simpa using tprod_one_add_ne_zero_of_summable hn hsum
+
+private theorem xiGenusOneProduct_ne_zero {s : ℂ} (hs : xi s ≠ 0) :
+    xiGenusOneProduct s ≠ 0 :=
+  xiGenusOneSubproduct_ne_zero (Function.Embedding.refl XiZeroOccurrence)
+    (xiGenusOneFactor_ne_zero hs)
 
 /-- The canonical product vanishes precisely on the original ξ-zero support. -/
 theorem xiGenusOneProduct_eq_zero_iff (s : ℂ) : xiGenusOneProduct s = 0 ↔ xi s = 0 := by
@@ -176,6 +205,64 @@ theorem xiGenusOneProduct_eq_zero_iff (s : ℂ) : xiGenusOneProduct s = 0 ↔ xi
   refine ⟨i, ?_⟩
   have hs0 : s ≠ 0 := xiZero_ne_zero ρ
   simp [xiGenusOneFactor, i, ρ, hs0]
+
+/-- Removing the finite fiber at a zero leaves an entire nonvanishing factor
+at that point after the exact linear power is extracted. -/
+theorem xiGenusOneProduct_factorization (ρ : XiZero) :
+    ∃ g : ℂ → ℂ, Differentiable ℂ g ∧ g ρ.val ≠ 0 ∧
+      ∀ z, xiGenusOneProduct z = (z - ρ.val) ^ analyticOrderNatAt xi ρ.val * g z := by
+  let m := analyticOrderNatAt xi ρ.val
+  let A : Set XiZeroOccurrence := {i | i.1 = ρ}
+  let C : Set XiZeroOccurrence := Aᶜ
+  let iA : A ↪ XiZeroOccurrence := Function.Embedding.subtype (· ∈ A)
+  let iC : C ↪ XiZeroOccurrence := Function.Embedding.subtype (· ∈ C)
+  let Q : ℂ → ℂ := fun z => ∏' i : C, xiGenusOneFactor (iC i) z
+  let unitFactor : ℂ → ℂ := fun z => -ρ.val⁻¹ * Complex.exp (z / ρ.val)
+  have hQd : Differentiable ℂ Q := xiGenusOneSubproduct_differentiable iC
+  have hQ0 : Q ρ.val ≠ 0 := by
+    apply xiGenusOneSubproduct_ne_zero iC
+    intro i
+    apply xiGenusOneFactor_ne_zero_of_ne
+    intro he
+    exact i.property (Subtype.ext he.symm)
+  have hρ0 := xiZero_ne_zero ρ
+  have hunit : ∀ z, unitFactor z ≠ 0 :=
+    fun z => mul_ne_zero (neg_ne_zero.mpr (inv_ne_zero hρ0)) (Complex.exp_ne_zero _)
+  have hd : Differentiable ℂ (fun z => (unitFactor z) ^ m * Q z) := by
+    unfold unitFactor
+    fun_prop
+  refine ⟨fun z => (unitFactor z) ^ m * Q z, hd,
+    mul_ne_zero (pow_ne_zero m (hunit _)) hQ0, ?_⟩
+  intro z
+  have hA := (xiGenusOneSubproduct_hasProdLocallyUniformlyOn iA).hasProd (Set.mem_univ z)
+  have hC := (xiGenusOneSubproduct_hasProdLocallyUniformlyOn iC).hasProd (Set.mem_univ z)
+  have hsplit : xiGenusOneProduct z = (∏' i : A, xiGenusOneFactor i.val z) * Q z :=
+    (Multipliable.tprod_mul_tprod_compl (f := fun i => xiGenusOneFactor i z) (s := A)
+      hA.multipliable hC.multipliable).symm
+  have hfiber :
+      (∏' i : A, xiGenusOneFactor i.val z) = ((1 - z / ρ.val) * Complex.exp (z / ρ.val)) ^ m := by
+    let e : Fin m ≃ A :=
+      (Equiv.sigmaSubtype (β := fun r : XiZero => Fin (analyticOrderNatAt xi r.val)) ρ).symm
+    rw [← e.tprod_eq (fun i : A => xiGenusOneFactor i.val z)]
+    change (∏' _ : Fin m, (1 - z / ρ.val) * Complex.exp (z / ρ.val)) = _
+    simp [tprod_fintype]
+  have hlin : (1 - z / ρ.val) * Complex.exp (z / ρ.val) = (z - ρ.val) * unitFactor z := by
+    unfold unitFactor
+    field_simp
+    ring
+  rw [hsplit, hfiber, hlin, mul_pow, mul_assoc]
+
+/-- The canonical product and the actual ξ have the same full analytic orders. -/
+theorem analyticOrderAt_xiGenusOneProduct (s : ℂ) :
+    analyticOrderAt xiGenusOneProduct s = analyticOrderAt xi s := by
+  have hP := differentiable_xiGenusOneProduct.analyticAt s
+  by_cases hs : xi s = 0
+  · obtain ⟨g, hgd, hg0, hfactor⟩ := xiGenusOneProduct_factorization ⟨s, hs⟩
+    rw [← Nat.cast_analyticOrderNatAt (xiAnalyticOrderAt_ne_top s)]
+    exact hP.analyticOrderAt_eq_natCast.mpr
+      ⟨g, hgd.analyticAt s, hg0, .of_forall (fun z => by simpa [smul_eq_mul] using hfactor z)⟩
+  · rw [hP.analyticOrderAt_eq_zero.mpr (xiGenusOneProduct_ne_zero hs),
+      (differentiable_xi.analyticAt s).analyticOrderAt_eq_zero.mpr hs]
 
 private theorem logDeriv_xiGenusOneFactor {s : ℂ} (hs : xi s ≠ 0)
     (i : XiZeroOccurrence) :
