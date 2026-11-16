@@ -151,12 +151,13 @@ private theorem abs_signed_source_le
     |c * E + G - P - Z| ≤
         |c * E| + |G| + |P| + |Z| := by
       have h1 := abs_add_le (c * E) G
-      have h2 := abs_sub_le (c * E + G) P
-      have h3 := abs_sub_le (c * E + G - P) Z
+      have h2 : |c * E + G - P| ≤ |c * E + G| + |P| := by
+        simpa only [sub_eq_add_neg, abs_neg] using abs_add_le (c * E + G) (-P)
+      have h3 : |c * E + G - P - Z| ≤ |c * E + G - P| + |Z| := by
+        simpa only [sub_eq_add_neg, abs_neg] using abs_add_le (c * E + G - P) (-Z)
       linarith
     _ = |c| * E + G + |P| + |Z| := by
       rw [abs_mul, abs_of_nonneg hE, abs_of_nonneg hG]
-      ring
     _ ≤ (|c| + B + W + L) * E + A * D := by
       nlinarith [hGamma, hPrime, hPole]
 
@@ -182,7 +183,7 @@ theorem primitivePairedPhysical_abs_H1_le
   let P := pairedPrimeResponse chi T f
   have hNear := nearH1ShiftBound_of_classical_derivative
     f first hderiv hfirstCont hf hfirst
-  have hCont : Continuous f := fun t => (hderiv t).continuousAt
+  have hCont : Continuous f := continuous_iff_continuousAt.mpr fun t => (hderiv t).continuousAt
   have hGsource := (realGammaEnergy_integrable_and_bound
     a f first hCont hf hfirst hNear)
   have hGammaNonneg : 0 ≤ G := hGsource.2.1
@@ -237,7 +238,7 @@ theorem zetaOddPhysical_abs_H1_le
   let Z := 2 * (oddZetaPoleMoment f) ^ 2
   have hNear := nearH1ShiftBound_of_classical_derivative
     f first hderiv hfirstCont hf hfirst
-  have hCont : Continuous f := fun t => (hderiv t).continuousAt
+  have hCont : Continuous f := continuous_iff_continuousAt.mpr fun t => (hderiv t).continuousAt
   have hGsource := (realGammaEnergy_integrable_and_bound
     0 f first hCont hf hfirst hNear)
   have hGammaNonneg : 0 ≤ G := hGsource.2.1
@@ -251,7 +252,8 @@ theorem zetaOddPhysical_abs_H1_le
   have hZbound : |Z| ≤ (2 * (Real.sinh T - T)) * E := by
     rw [abs_of_nonneg hZnonneg]
     dsimp [Z]
-    exact mul_le_mul_of_nonneg_left hPole (by norm_num)
+    have h := mul_le_mul_of_nonneg_left hPole (by norm_num : (0 : ℝ) ≤ 2)
+    simpa only [mul_assoc] using h
   have hnorm : (∫ t : ℝ, ‖f t‖ ^ 2) = E := by
     apply integral_congr_ae
     filter_upwards [] with t
@@ -260,7 +262,7 @@ theorem zetaOddPhysical_abs_H1_le
       gammaConstant 1 0 * E + G - P - Z := by
     unfold zetaOddPhysicalValue OddHighComplement.shiftedOddCoreEnergy
     rw [← realGammaEnergy_eq_native_zeta f, hnorm]
-    ring
+    simp only [sub_zero, G, P, Z, oddZetaPoleMoment]
   rw [hsource]
   have hBudget := abs_signed_source_le (gammaConstant 1 0) E G P Z D
     (7 / 12 : ℝ) (2 * tailUpper 0 1)
