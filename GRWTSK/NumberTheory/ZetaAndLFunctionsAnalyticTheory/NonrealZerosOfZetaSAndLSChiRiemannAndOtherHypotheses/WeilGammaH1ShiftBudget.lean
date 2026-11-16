@@ -52,6 +52,8 @@ open scoped BigOperators
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.NativeGammaH1ShiftBudget
 
 open GRWTSK.NumberTheory.WeilQuadraticForm.OddRootProjection
+open GRWTSK.NumberTheory.WeilQuadraticForm.LowSchur (activePrimePowers)
+open GRWTSK.NumberTheory.WeilQuadraticForm.PhysicalSineNegativeReturn (primitivePairedOddPhysicalValue)
 open GRWTSK.NumberTheory.WeilQuadraticForm.GammaNearZero
 open GRWTSK.NumberTheory.WeilQuadraticForm.ExactGammaTail
 
@@ -172,7 +174,7 @@ theorem realGammaEnergy_integrable_and_bound
     apply (hkTail.const_mul (4 * E)).mono' hmeas.aestronglyMeasurable
     filter_upwards [ae_restrict_mem measurableSet_Ioi] with r hr
     have hkr : 0 ≤ parityKernel a r :=
-      source_kernel_nonneg a (by linarith : 0 < r)
+      source_kernel_nonneg a (zero_lt_one.trans hr)
     have hG : 0 ≤ realGammaDensity a f r :=
       mul_nonneg hkr (realShiftEnergy_nonneg f r)
     rw [Real.norm_eq_abs, abs_of_nonneg hG]
@@ -231,7 +233,7 @@ theorem realGammaEnergy_integrable_and_bound
           (hkTail.const_mul (4 * E)) measurableSet_Ioi
         intro r hr
         have hkr : 0 ≤ parityKernel a r :=
-          source_kernel_nonneg a (by linarith : 0 < r)
+          source_kernel_nonneg a (zero_lt_one.trans hr)
         calc
           _ ≤ parityKernel a r * (4 * E) :=
             mul_le_mul_of_nonneg_left (realShiftEnergy_le_four_mass f hf r) hkr
@@ -283,8 +285,7 @@ theorem primitive_paired_source_gamma_rewrite
     {q : ℕ} [NeZero q] (chi : DirichletCharacter ℂ q)
     (hp : chi.IsPrimitive) (hn : chi ≠ 1)
     (T : ℝ) (f : ℝ → ℝ) :
-    GRWTSK.NumberTheory.WeilQuadraticForm.PhysicalSineNegativeReturn.
-        primitivePairedOddPhysicalValue chi hp hn T f =
+    primitivePairedOddPhysicalValue chi hp hn T f =
       gammaConstant q (gammaParity chi) * (∫ t : ℝ, f t ^ 2) +
         realGammaEnergy (gammaParity chi) f -
         (∑ n ∈ activePrimePowers T, pairedPrimeWeight chi n *
