@@ -6004,3 +6004,243 @@ for name,base in options.items():
     print("PASS original q76 price branches",name,float(max(caps)),float(min(room)))
 print("PASS original E22 comparison through 897.06")
 ~~~
+
+## Three detached pockets under the existing derivative charge
+
+2026-11-15, grwtsk contributors, AI-assisted. Analytic
+proof with exact rational source checks. Lean elaboration,
+kernel replay and transitive axiom audit are NOT_RUN.
+External independent review is UNASSESSED.
+
+Use the [pinned 76-enclosure comparison](https://github.com/grwtsk/math/blob/88a508eb06338ff4a6f22be08ef7ca05c46272b9/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob dc7851ef2fa593114f563c17ac777a1c5612981a.
+The original radius-four arithmetic blob is
+72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the
+complex odd physical carrier $L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$,
+its zero extension, folded measure $d\nu/\pi$, original
+masks and physical projection. The primitive nonprincipal
+odd character modulo three uses the full parity-one gamma,
+all $458$ signed prime powers and zero principal-pole term.
+The displayed detunings are from $c_1=99653682.92983$
+and include the reflected restrictions.
+
+The original multiplier is strictly positive on the
+complement of $E_{23}=[897.06,897.22]$, $E_{24}=[902.10,902.28]$,
+and $E_{25}=[920.96,921.18]$ in $[897.06,993.68]$.
+The six box endpoints and the right frontier are strictly
+positive. The points $897.14$, $902.19$, and $921.07$ are
+strictly negative. The directed sign check has $4803$
+complement cells and zero bisections. It joins the E22
+sign interval at the positive point $897.06$.
+
+Use $Y_{23}=[895.14,899.14]$, $Y_{24}=[900.19,904.19]$,
+and $Y_{25}=[919.07,923.07]$, with centers at the three
+displayed negative points. The radii are two. The gap after
+$Y_{22}$ is $4.35$, and the two gaps between the new donors
+are $1.05$ and $14.88$. The earlier sign interval covers
+the part of $Y_{23}$ to the left of $897.06$ past the right
+edge of E22. Each new donor contains only its own negative
+restriction. Their positive tags are disjoint from the
+earlier ones, including the remote tags. The exact
+arithmetic checks the original masks on each donor.
+
+Use the established positive lower density
+$\ell_j\le m_+/\pi$ and negative upper density
+$\eta_j\ge m_-/\pi$ on those donors. The counts of
+positive $.02$ bins and nonzero negative $.0025$ cells
+are $(192,55)$, $(194,48)$, and $(190,70)$. For each
+donor, the guard proves positive definiteness on the
+complex polynomials of degree less than $40$ of
+$$
+ p\longmapsto
+ \int_{Y_j}\bigl(\tfrac9{10}\ell_j-\eta_j\bigr)|p|^2\,d\nu
+ +\frac{10^{-15}}{4^{32}\pi_{\rm hi}}
+        \int_{Y_j}|p^{(16)}|^2\,d\nu .
+$$
+All $40$ rational leading pivots in each new comparison
+are positive. This is the same local comparison used
+for E14, E15, E18 and E19.
+
+Apply the established Taylor–Young transfer of derivative
+orders $16$ and $40$ with coefficients
+$d_{16}=1.00453369140625\cdot10^{-15}$ and
+$d_{40}<4.360\cdot10^{-18}$. The seven derivative donors
+are disjoint and each radius is at most two. At each of
+the two orders, sum the local squared derivative norms
+and apply Plancherel once to the unmasked physical carrier.
+For $J=\{14,15,18,19,23,24,25\}$ this gives
+$$
+ \sum_{j\in J}N_{E_j}^*N_{E_j}
+ \preceq \tfrac{4803}{5330}\sum_{j\in J}\mathcal P_{Y_j}
+              +(1.009\cdot10^{-15})I .
+$$
+All seven restrictions use one existing derivative scalar
+debit. The new donors are reserved once and their fraction
+fits the existing $19/20$ maximum. Retain the separate
+E16/E17, E20, E21 and E22 reservations and charges.
+After removing the reserved positive forms, the reduced
+comparator retains the genuine earlier tags and $\beta I$.
+Each reserved form enters separately at its stated fraction.
+All $48$ original price
+choices under each of the four first-pair choices retain cap
+below $0.953005$. The least physical room exceeds
+$9.0172\cdot10^{-10}$, and in the pooled-map branch it exceeds
+$6.7007\cdot10^{-9}$.
+
+Append the three disjoint negative outputs to
+$W_{\mathrm{all76}}$ to form $W_{\mathrm{all79}}$. Contiguous
+signed coverage reaches $993.68$. The actual identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all79}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad S_{\mathrm{all79}}
+ =S_\lambda-W_{\mathrm{all79}}^*W_{\mathrm{all79}}
+ \succeq0.046995S_\lambda.
+$$
+The full remaining outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all79}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses and
+directional return.
+
+Extract the guard and pass the pinned original arithmetic
+Markdown and the Jensen donor Markdown containing the
+E22 comparison, directed Jensen and derivative checkers.
+Prior checker blocks are selected by unique digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from math import factorial, lcm
+from pathlib import Path
+from textwrap import dedent
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    found=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(found)==1
+    return found[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+def replace(code,old,new):
+    assert code.count(old)==1,old
+    return code.replace(old,new)
+
+prior=execute(checker("339b3c135cb07ac4d38c38e8f4830459cbcd7e28c6f03609a384142782ac0edf"),
+              [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+derivative=checker("fb06ddc22892ae6f573f0dc659a5e60c9b156ba327344f8f043d3ad06f2bfbb9")
+geometry={
+    "e23":("895.14","899.14","897.06","897.22","897.14",192,55),
+    "e24":("900.19","904.19","902.10","902.28","902.19",194,48),
+    "e25":("919.07","923.07","920.96","921.18","921.07",190,70),
+}
+rows={tag:row[:5]+(".9",) for tag,row in geometry.items()}
+directed=replace(core,
+    '"e9":("707.62","709.62","708.60","708.66","708.63",".25"),',
+    "\n    ".join(repr(tag)+":"+repr(row)+"," for tag,row in rows.items()))
+directed=replace(directed,'("708.60","710.86",".02")','("897.06","993.68",".02")')
+directed=replace(directed,'(checks,splits)==(112,1)','(checks,splits)==(4803,0)')
+expected={key:row[-2:] for key,row in geometry.items()}
+directed=replace(directed,'len(pos)==98 and len(rho)==9',
+                 '(len(pos),len(rho))=='+repr(expected)+'[mode]')
+
+new_sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(directed,[arithmetic,"sign"],new_sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete directed E23/E24/E25 sign check did not return")
+
+prev_sign=prior["sign"]
+assert prev_sign["stop"]==new_sign["start"]==F("897.06")
+assert prev_sign["node"](prev_sign["stop"])[1]<prev_sign["Alo"]
+assert new_sign["stop"]==F("993.68")
+assert new_sign["boxes"]==[tuple(map(F,row[2:4])) for row in geometry.values()]
+previous_right=prior["b"]
+assert previous_right==F("890.79")
+gaps=[]
+for left,right,e,f,center,*_ in geometry.values():
+    a,b,l,h,c=map(F,(left,right,e,f,center))
+    assert previous_right<a<l<h<b<new_sign["stop"]
+    assert (a+b)/2==c and (b-a)/2==2
+    assert all(v<a or b<u for u,v in new_sign["boxes"] if (u,v)!=(l,h))
+    gaps.append(a-previous_right)
+    previous_right=b
+assert gaps==list(map(F,("4.35","1.05","14.88")))
+left,right=F("895.14"),F("923.07")
+assert prev_sign["boxes"][-1][1]<left<new_sign["start"]<right
+assert all(v<left or right<u for u,v in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*new_sign["pi_lower"]-F("5.55")-2>new_sign["c0"]+right
+
+# The same local polynomial comparison feeds the existing physical
+# derivative transfer, with all donors disjoint for each derivative order.
+r,k=40,16
+price,mu=F(".9"),F("1e-15")
+begin=derivative.index("def pivots(matrix):")
+end=derivative.index("branches=[]",begin)
+exec(compile(derivative[begin:end],jensen,"exec"))
+begin=derivative.index("    # Verify the normalization")
+end=derivative.index("    values=pivots(matrix)",begin)
+comparison=dedent(derivative[begin:end])
+cut="\nfrom math import acos,cos,sin,sqrt,fsum\n"
+assert directed.count(cut)==1
+for mode,(a,b,left,right,center,npos,nneg) in geometry.items():
+    data=execute(directed.split(cut)[0],[arithmetic,mode])
+    start,stop=data["start"],data["stop"]
+    c0,c=data["c0"],data["c"]
+    step=data["step"]
+    pi_hi,pi_lo=data["pi_upper"],data["pi_lower"]
+    estimate=data["estimate"]
+    alo,ahi=data["Alo"],data["Ahi"]
+    wmin=data["wmin"]
+    box_left,box_right=map(F,(left,right))
+    assert (start,stop)==tuple(map(F,(a,b)))
+    assert (F(data["l0"]),F(data["r0"]))==(box_left,box_right)
+    assert c==c0+F(center)==c0+(start+stop)/2
+    assert step==F(".0025") and (alo,ahi,wmin)==(F("17.6779"),F("17.6780"),1-F("3e-10"))
+    assert ahi+211<272 and 211-alo<272
+    state=dict(globals())
+    exec(compile(comparison,jensen,"exec"),state)
+    values=pivots(state["matrix"])
+    assert len(values)==40 and min(values)>F(18)
+    print("PASS original directed polynomial Gram",mode,npos,nneg,float(min(values)))
+
+old_pool=prior["prior"]["parent"]["updated"]
+assert tuple(old_pool["statistics"])==("e14","e15","e18","e19")
+assert (old_pool["r"],old_pool["k"],old_pool["price"],old_pool["mu"])==(r,k,price,mu)
+alpha=F(4803,5330)
+assert old_pool["alpha"]==alpha<F(".95")
+assert old_pool["cost"]<F("1.009e-15")
+assert old_pool["cost16"]==F("1.00453369140625e-15")
+assert old_pool["cost40"]<F("4.360e-18")
+assert old_pool["tail"]+sum(prior["prior"]["prices"])+prior["charge"]==prior["tail"]
+beta,old,options,tail=prior["beta"],prior["old"],prior["options"],prior["tail"]
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),alpha) for p in old]
+    room=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(room)>F("9.0172e-10")
+    if name=="pooled-map":
+        assert min(room)>F("6.7007e-9")
+    print("PASS original q79 retained price branches",name,float(max(caps)),float(min(room)))
+print("PASS single derivative debit on seven disjoint donors through 993.68")
+~~~
