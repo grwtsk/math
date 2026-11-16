@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Local mathematical attribution: grwtsk contributors. -/
 import Mathlib.Analysis.Normed.Group.Tannery
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianSignedResidualMixedAbel
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusSoficIndependentThinning
 
 /-!
@@ -442,5 +443,69 @@ theorem exists_linear_residual_budget_iff_heatMaskDeviation {s : ℝ}
     have hres := (source_and_residual_energy_bounds hs hT.le).2
     change residualEnergy s T ≤ 2 * pickupEnergy T + 2 * B ^ 2 * T at hres
     linarith
+
+private theorem centeredPickup_expand (b T : ℝ) :
+    (∫ u in (0 : ℝ)..T, (wholePickup u - b) ^ 2) =
+      pickupEnergy T - 2 * b * (∫ u in (0 : ℝ)..T, wholePickup u) + b ^ 2 * T := by
+  have heq : (fun u => (wholePickup u - b) ^ 2) =
+      fun u => (wholePickup u ^ 2 - 2 * b * wholePickup u) + b ^ 2 := by
+    funext u
+    ring
+  have hf : Continuous (fun u => wholePickup u ^ 2) := wholePickup_continuous.pow 2
+  have hg : Continuous (fun u => (2 * b) * wholePickup u) :=
+    continuous_const.mul wholePickup_continuous
+  have hc : Continuous (fun _ : ℝ => b ^ 2) := continuous_const
+  rw [heq, intervalIntegral.integral_add (μ := volume)
+    (f := fun u => wholePickup u ^ 2 - 2 * b * wholePickup u)
+    ((hf.sub hg).intervalIntegrable 0 T) (hc.intervalIntegrable 0 T),
+    intervalIntegral.integral_sub (hf.intervalIntegrable 0 T)
+    (hg.intervalIntegrable 0 T), intervalIntegral.integral_const_mul,
+    intervalIntegral.integral_const, pickupEnergy]
+  simp [mul_comm]
+
+private theorem tendsto_centeredResidual_error_div {s : ℝ} (hs : 0 < s) :
+    Tendsto (fun T : ℝ => (residualEnergy s T -
+      (∫ u in (0 : ℝ)..T, (wholePickup u - heatedLimit s) ^ 2)) / T) atTop (𝓝 0) := by
+  obtain ⟨C, _, hC⟩ :=
+    GaussianSignedResidualMixedAbel.exists_residualEnergy_sub_centeredPickup_abs_le hs
+  apply squeeze_zero_norm' (a := fun T : ℝ => C * T⁻¹)
+  · filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+    rw [Real.norm_eq_abs, abs_div, abs_of_pos hT, div_eq_mul_inv]
+    exact mul_le_mul_of_nonneg_right (hC T hT.le) (inv_nonneg.mpr hT.le)
+  · simpa only [mul_zero] using
+      (tendsto_inv_atTop_zero : Tendsto (fun T : ℝ => T⁻¹) atTop (𝓝 0)).const_mul C
+
+/-- The exact settled correction to signed deviation plus genuine residual
+energy, retaining the measured first moment of the original pickup. -/
+theorem tendsto_normalized_heatMaskDeviation_add_residual_with_mean_correction {s : ℝ}
+    (hs : 0 < s) :
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+        pickupDiagonal T + residualEnergy s T +
+        2 * heatedLimit s * (∫ u in (0 : ℝ)..T, wholePickup u)) / T)
+      atTop (𝓝 (settledHeatedPickup s + heatedLimit s ^ 2)) := by
+  have h := ((tendsto_normalized_heatMaskDeviation_sub_diagonal_add_energy hs).add
+    (tendsto_centeredResidual_error_div hs)).add_const (heatedLimit s ^ 2)
+  rw [add_zero] at h
+  refine h.congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+  rw [centeredPickup_expand]
+  field_simp
+  ring
+
+/-- A supplied mean on the same scales determines the sharp correction
+from the actual signed deviation to genuine residual energy. -/
+theorem tendsto_normalized_heatMaskDeviation_add_residual_of_source_mean {s m : ℝ}
+    (hs : 0 < s) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hmean : Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, wholePickup u) / T) l (𝓝 m)) :
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+        pickupDiagonal T + residualEnergy s T) / T)
+      l (𝓝 (settledHeatedPickup s + heatedLimit s ^ 2 - 2 * heatedLimit s * m)) := by
+  have h := (tendsto_normalized_heatMaskDeviation_add_residual_with_mean_correction hs).mono_left hl
+  refine (h.sub (hmean.const_mul (2 * heatedLimit s))).congr' ?_
+  exact Eventually.of_forall fun T => by
+    dsimp only
+    rw [add_div, mul_div_assoc, add_sub_cancel_right]
 
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
