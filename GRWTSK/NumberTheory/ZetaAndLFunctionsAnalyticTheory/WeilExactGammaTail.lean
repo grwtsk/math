@@ -138,7 +138,7 @@ theorem tailMass_bounds (a : ℕ) {R : ℝ} (hR : 0 < R) :
     calc
       _ ≤ 2 * ((Real.exp (-b * R) / b) / (1 - Real.exp (-2 * R))) := by
         linarith
-      _ = _ := by ring
+      _ = _ := by rw [div_div, mul_div_assoc]
 
 theorem tailMass_pos (a : ℕ) {R : ℝ} (hR : 0 < R) : 0 < tailMass a R := by
   have hpos : 0 <
@@ -158,8 +158,10 @@ theorem parityKernel_step (a : ℕ) {r : ℝ} (hr : 0 < r) :
     ring
   unfold parityKernel
   rw [he]
-  field_simp [(denominator_pos hr).ne']
-  <;> ring
+  have hd : 1 - Real.exp (-2 * r) ≠ 0 := (denominator_pos hr).ne'
+  apply (div_eq_iff hd).2
+  rw [add_mul, div_mul_cancel₀ _ hd]
+  ring
 
 /-- Exact tail recurrence. The parameter a+2 is an auxiliary rate, not a
 claim that a Dirichlet character has gamma parity outside {0,1}. -/
@@ -180,6 +182,7 @@ theorem tailMass_step (a : ℕ) {R : ℝ} (hR : 0 < R) :
     exact parityKernel_step a (hR.trans hr)
   unfold tailMass
   rw [hid, integral_add he hk, integral_exp_mul_Ioi hrate R]
+  simp only [div_neg, neg_div, neg_neg]
   ring
 
 /-- Every finite prefix has an exact remainder of the same source-kernel type. -/
@@ -215,8 +218,9 @@ theorem gammaTail_integrable_and_eq (a : ℕ) {f : ℝ → ℂ}
     unfold gammaCorrectionDensity
     rw [shiftEnergy_eq_two_of_cutoff hf hsupport (hcut.trans hr.le)]
   constructor
-  · exact ((parityKernel_integrableOn_tail a hR).mul_const (2 * energy f)).congr_fun
-      (fun r hr => (heq r hr).symm) measurableSet_Ioi
+  · have hk : IntegrableOn (fun r => parityKernel a r * (2 * energy f)) (Ioi R) :=
+      (parityKernel_integrableOn_tail a hR).mul_const _
+    exact hk.congr_fun (fun r hr => (heq r hr).symm) measurableSet_Ioi
   · calc
       _ = ∫ r in Ioi R, parityKernel a r * (2 * energy f) :=
         setIntegral_congr_fun measurableSet_Ioi heq
@@ -283,6 +287,7 @@ private theorem integrable_pairing {f g : ℝ → ℂ}
       hg.aestronglyMeasurable
   apply ((hfsq.add hgsq).div_const 2).mono' hm
   filter_upwards [] with t
+  change ‖conj (f t) * g t‖ ≤ (‖f t‖ ^ 2 + ‖g t‖ ^ 2) / 2
   rw [norm_mul, Complex.norm_conj]
   nlinarith [sq_nonneg (‖f t‖ - ‖g t‖)]
 
