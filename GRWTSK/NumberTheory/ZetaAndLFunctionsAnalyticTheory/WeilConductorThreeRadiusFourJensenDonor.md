@@ -6787,3 +6787,197 @@ for name,base in options.items():
     print("PASS original q83 price branches",name,float(max(caps)),float(min(rooms)))
 print("PASS shared E28/E29 donor through 1025.20")
 ~~~
+
+## A detached Jensen donor for E30
+
+2026-11-16, grwtsk contributors, AI-assisted. Analytic proof
+with exact rational source checks. Lean elaboration, kernel
+replay and transitive axiom audit are NOT_RUN. External
+independent review is UNASSESSED.
+
+Use the [pinned 83-enclosure comparison](https://github.com/grwtsk/math/blob/72e1b7416bdd0a06a67899e92d01a971f4ec886e/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourJensenDonor.md),
+Jensen blob f930f563d00e16dbf9058cb936416f8e3cfad568. The original radius-four arithmetic
+blob is 72848bace2af0f427c9e9fae16806f1b31ee064f. Retain the
+complex odd physical carrier $L^2_{\mathrm{odd}}([-4,4],dt;\mathbb C)$,
+its zero extension, folded measure $d\nu/\pi$, original
+masks and physical projection. For the primitive nonprincipal
+odd character modulo three, use the full parity-one gamma,
+all $458$ signed prime powers, and zero principal-pole term.
+The detunings are from $c_1=99653682.92983$ and include
+the reflected restrictions.
+
+The original multiplier is strictly positive on
+$[1025.20,1075.08]$ off $E_{30}=[1025.20,1025.46]$.
+Both endpoints of E30 and the right frontier are
+strictly positive. The point $1025.33$ is strictly
+negative. The directed sign check uses $2481$
+complement cells and zero bisections. It joins the
+preceding sign interval at the positive endpoint
+$1025.20$.
+
+Use the radius-two donor $Y_{30}=[1023.33,1027.33]$,
+centered at $c_1+1025.33$. Its left portion is in the
+previous positive sign corridor after E29. It starts
+$7.29$ after the shared E28/E29 donor ends, and it is
+disjoint from the other prior reservations, including
+the remote ones. The original masks retain the donor,
+whose sole negative restriction is $N_{E_{30}}$.
+
+The original directed construction supplies $187$
+positive $.02$ bins and $98$ nonzero negative $.0025$
+cells. Use the true sine averages $B$, the positive
+diagonal weights $W$, the short $18$-term negative Taylor
+map $V$, and its positive definite moment matrix $M$.
+The directed estimates give
+$$
+ B^*WB\preceq\mathcal P_{Y_{30}},\qquad
+ N_{E_{30}}^*N_{E_{30}}\preceq V^*MV+\delta I,
+ \qquad
+ \delta=8\epsilon(2+\epsilon)\int_{E_{30}}\eta_{30},
+ \quad\epsilon=.52^{18}/18!.
+$$
+At $\alpha=19/20$ and $\tau=10^{-12}$, the directed
+lower residual
+$$
+ \tau M^{-1}-(V^*-B^*Z)^*(V^*-B^*Z)
+                 -\tau Z^*(\alpha W)^{-1}Z
+$$
+has all $18$ rational pivots positive. The original
+physical Gram enclosures use $120$ Taylor terms for
+the true averaged sine carriers, and the exact row
+uncertainty is below $10^{-23}$. Floating point only
+proposes $Z$. Jensen square completion yields
+$$
+ N_{E_{30}}^*N_{E_{30}}\preceq
+       \tfrac{19}{20}\mathcal P_{Y_{30}}+(\tau+\delta)I,
+ \qquad \tau+\delta<1.000000007\cdot10^{-12}.
+$$
+
+The earlier directed polynomial lower matrix on this
+fixed donor at $(r,k,\alpha_0,\mu)=(40,16,9/10,10^{-15})$
+has its first nonpositive normalized pivot at zero-based
+index $18$, with its exact value in $(-34.175,-34.174)$.
+This failure concerns the directed sufficient matrix.
+The separate Jensen comparison above applies on the
+actual original physical space.
+
+Reserve the new positive donor once and add $N_{E_{30}}$
+to $W_{\mathrm{all83}}$. The earlier genuine tags,
+their scalar prices, and $\beta I$ remain in the reduced
+comparator. The added exact scalar price divided by
+$\beta$ fits each of the $48$ old prices under each of
+the four first-pair choices. All retain cap below
+$0.953005$. The least physical room exceeds
+$8.9872\cdot10^{-10}$, and in the pooled-map branch
+it exceeds $6.6977\cdot10^{-9}$.
+
+Contiguous signed coverage of $84$ restrictions reaches
+$1075.08$. The original physical identity is
+$$
+ T_+-\lambda\Pi_H=S_{\mathrm{all84}}-N_{\mathrm{out}}^*N_{\mathrm{out}},
+ \qquad
+ S_{\mathrm{all84}}
+ =S_\lambda-W_{\mathrm{all84}}^*W_{\mathrm{all84}}
+ \succeq0.046995S_\lambda .
+$$
+The full remaining outside-support norm
+$\|N_{\mathrm{out}}S_{\mathrm{all84}}^{-1}N_{\mathrm{out}}^*\|\le1$
+is required for the original seven leading inverses and
+directional return.
+
+Extract the guard and pass the pinned original arithmetic
+Markdown and the Jensen donor Markdown containing the
+E28/E29 comparison and its prerequisites. Prior blocks
+are selected by unique digests.
+
+~~~python
+from fractions import Fraction as F
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+_,arithmetic,jensen=sys.argv
+assert sha256(Path(arithmetic).read_bytes()).hexdigest()==(
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+blocks=re.findall(r"^~~~python\n(.*?)^~~~$",Path(jensen).read_text(),re.M|re.S)
+
+def checker(digest):
+    hits=[block for block in blocks if sha256(block.encode()).hexdigest()==digest]
+    assert len(hits)==1
+    return hits[0]
+
+def execute(code,args,state=None):
+    original=sys.argv
+    if state is None:
+        state={"__name__":"__main__","__file__":__file__}
+    try:
+        sys.argv=[__file__,*args]
+        exec(compile(code,jensen,"exec"),state)
+    finally:
+        sys.argv=original
+    return state
+
+prior=execute(checker("18bcc0937ca58054df9125e2f1be2802b6a9bfe4f856777ddd2974ef62eb755a"),
+              [arithmetic,jensen])
+core=checker("a406727b9e220e81ae4aee859c11fb9eaed3a2445d4e89c73cc0d1c9cbd3e654")
+for old,new in (
+    ('"e9":("707.62","709.62","708.60","708.66","708.63",".25"),',
+     '"e30":("1023.33","1027.33","1025.20","1025.46","1025.33",".95"),'),
+    ('("708.60","710.86",".02")','("1025.20","1075.08",".02")'),
+    ('(checks,splits)==(112,1)','(checks,splits)==(2481,0)'),
+    ('len(pos)==98 and len(rho)==9','len(pos)==187 and len(rho)==98'),
+    ('F("9.656e-36")','F("1e-20")'),
+    ('assert c==c0+F("708.63")','assert c==c0+F("1025.33")'),
+):
+    assert core.count(old)==1
+    core=core.replace(old,new)
+
+sign={"__name__":"__main__","__file__":__file__}
+try:
+    execute(core,[arithmetic,"sign"],sign)
+except SystemExit as exc:
+    assert exc.code in (None,0)
+else:
+    raise AssertionError("the complete directed E30 sign check did not return")
+
+before=prior["sign"]
+a,b=map(F,("1023.33","1027.33"))
+left,right=map(F,("1025.20","1025.46"))
+old_right=prior["b"]["stop"]
+assert old_right==F("1016.04") and a-old_right==F("7.29")
+assert before["boxes"][-1][1]<old_right<a<before["stop"]==sign["start"]==left<right<b<sign["stop"]
+assert (sign["boxes"],sign["stop"])==([(left,right)],F("1075.08"))
+assert before["node"](before["stop"])[1]<before["Alo"]
+assert all(y<a or b<x for x,y in (
+    (F("-16.64"),F(405)),(F(408),F(414)),(F("436.94"),F("440.94")),
+    (F("5311.55"),F("5315.55")),(F(20345),F(20410))))
+assert F(5085348195,4)*sign["pi_lower"]-F("5.55")-2>sign["c0"]+b
+
+end='assert F(T[0][0],work_grid)>F("5.9727e-8")'
+assert core.count(end)==1
+local=execute(core.split(end)[0],[arithmetic,"e30"])
+assert (local["start"],local["stop"])==(a,b)
+assert (F(local["l0"]),F(local["r0"]))==(left,right)
+assert local["c"]==local["c0"]+(a+b)/2==local["c0"]+F("1025.33")
+assert local["k"]==18 and local["K"]==120
+assert local["alpha"]==F(".95") and local["tau"]==F("1e-12")
+charge=local["tau"]+local["delta"]
+assert charge<F("1.000000007e-12")
+print("PASS directed E30 physical Jensen comparison",float(charge))
+prior["prior"]["parent"]["prior"]["prior"]["computed_failure"](
+    local,18,F("-34.175"),F("-34.174"))
+
+beta,old,options=prior["beta"],prior["old"],prior["options"]
+tail=prior["tail"]+charge
+assert beta==F(".124890887") and len(old)==48 and len(options)==4
+for name,base in options.items():
+    caps=[max(F(".953004")+(p+base+tail)/beta,F(".95"),F(4803,5330)) for p in old]
+    room=[F(".000001")*beta-p-base-tail for p in old]
+    assert max(caps)<F(".953005") and min(room)>F("8.9872e-10")
+    if name=="pooled-map":
+        assert min(room)>F("6.6977e-9")
+    print("PASS original q84 price branches",name,float(max(caps)),float(min(room)))
+print("PASS original E30 comparison through 1075.08")
+~~~
