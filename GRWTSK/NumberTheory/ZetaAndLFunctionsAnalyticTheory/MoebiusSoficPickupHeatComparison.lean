@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Local mathematical attribution: grwtsk contributors. -/
+import Mathlib.Analysis.Normed.Group.Tannery
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusSoficIndependentThinning
 
 /-!
@@ -10,12 +11,15 @@ same signed source pickup at each heat. The heated ordered contributions
 have uniform linear bounds from absolute summability. Thus a change
 between fixed positive heats changes the actual mask deviation by at
 most a linear term and preserves divergence of its normalized value.
+Each normalized heated pickup converges to the absolutely convergent
+ordered sum of settled response products, giving the exact cross-heat limit.
 -/
 
 set_option autoImplicit false
 noncomputable section
 open scoped BigOperators
-open Filter
+open Filter Set MeasureTheory
+open scoped Topology
 
 namespace GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
 
@@ -136,5 +140,188 @@ theorem heatMaskDeviation_div_tendsto_atTop_of_heat {s t : ℝ}
   change -(C * T) ≤ _ at hdiff
   apply (le_div_iff₀ hT).mpr
   linarith
+
+private def settled (n : ℕ) : ℝ := 2 * (Real.sqrt n)⁻¹
+
+private theorem response_le_settled (n : ℕ) (u : ℝ) :
+    pickupResponse n u ≤ settled n := by
+  unfold pickupResponse settled
+  split_ifs
+  · linarith [Real.exp_nonneg (-u / 2)]
+  · positivity
+
+private theorem tendsto_response (n : ℕ) :
+    Tendsto (pickupResponse n) atTop (𝓝 (settled n)) := by
+  have hhalf : Tendsto (fun u : ℝ => u / 2) atTop atTop :=
+    tendsto_atTop_atTop.mpr fun b => ⟨2 * b, fun u hu => by linarith⟩
+  have hneg : Tendsto (fun u : ℝ => -u) atTop atBot := tendsto_neg_atTop_atBot
+  have hscale : Tendsto (fun u : ℝ => -u / 2) atTop atBot := by
+    simp only [neg_div]
+    exact hneg.comp hhalf
+  have hexp := Real.tendsto_exp_atBot.comp hscale
+  have h := (((tendsto_const_nhds : Tendsto (fun _ : ℝ => (Real.sqrt n)⁻¹) atTop
+    (𝓝 ((Real.sqrt n)⁻¹))).sub hexp).const_mul 2)
+  rw [sub_zero] at h
+  refine h.congr' ?_
+  filter_upwards [eventually_ge_atTop (Real.log (n : ℝ))] with u hu
+  simp [pickupResponse, hu]
+
+private theorem tendsto_gram_div {m n : ℕ} (hm : 1 ≤ m) (hn : 1 ≤ n) :
+    Tendsto (fun T : ℝ => pickupResponseGram T m n / T) atTop
+      (𝓝 (settled m * settled n)) := by
+  let f (u : ℝ) := pickupResponse m u * pickupResponse n u
+  let L := settled m * settled n
+  have hf : Continuous f := (pickupResponse_continuous hm).mul (pickupResponse_continuous hn)
+  have hlim : Tendsto f atTop (𝓝 L) := (tendsto_response m).mul (tendsto_response n)
+  have hnonneg (u : ℝ) : 0 ≤ f u :=
+    mul_nonneg (response_bounds hm u).1 (response_bounds hn u).1
+  have hle (u : ℝ) : f u ≤ L :=
+    mul_le_mul (response_le_settled m u) (response_le_settled n u)
+      (response_bounds hn u).1 (by unfold settled; positivity)
+  apply tendsto_order.mpr
+  constructor
+  · intro b hb
+    let c := (b + L) / 2
+    have hc : c < L := by dsimp [c]; linarith
+    have hbc : b < c := by dsimp [c]; linarith
+    obtain ⟨a, ha⟩ := eventually_atTop.mp ((tendsto_order.mp hlim).1 c hc)
+    let A := max 0 a
+    have hA : 0 ≤ A := le_max_left _ _
+    have hAf (u : ℝ) (hu : A ≤ u) : c ≤ f u :=
+      (ha u ((le_max_right 0 a).trans hu)).le
+    have htail : Tendsto (fun T : ℝ => c * (T - A) / T) atTop (𝓝 c) := by
+      have haux := (tendsto_inv_atTop_zero : Tendsto (fun T : ℝ => T⁻¹) atTop (𝓝 0))
+      have h := ((haux.const_mul A).const_sub 1).const_mul c
+      rw [mul_zero, sub_zero, mul_one] at h
+      refine h.congr' ?_
+      filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+      change c * (1 - A * T⁻¹) = c * (T - A) / T
+      field_simp
+    filter_upwards [(tendsto_order.mp htail).1 b hbc, eventually_ge_atTop A,
+      eventually_gt_atTop (0 : ℝ)] with T hbT hAT hT
+    apply hbT.trans_le
+    apply (div_le_div_iff_of_pos_right hT).mpr
+    have hrest : c * (T - A) ≤ ∫ u in A..T, f u := by
+      have h := intervalIntegral.integral_mono_on (μ := volume) hAT
+        (continuous_const.intervalIntegrable A T) (hf.intervalIntegrable A T)
+        (fun u hu => hAf u hu.1)
+      simpa [mul_comm] using h
+    have hfirst : 0 ≤ ∫ u in (0 : ℝ)..A, f u :=
+      intervalIntegral.integral_nonneg_of_forall hA hnonneg
+    change c * (T - A) ≤ ∫ u in (0 : ℝ)..T, f u
+    rw [← intervalIntegral.integral_add_adjacent_intervals
+      (hf.intervalIntegrable 0 A) (hf.intervalIntegrable A T)]
+    linarith
+  · intro b hb
+    filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+    apply lt_of_le_of_lt _ hb
+    apply (div_le_iff₀ hT).mpr
+    have h := intervalIntegral.integral_mono_on (μ := volume) hT.le
+      (hf.intervalIntegrable 0 T) (continuous_const.intervalIntegrable 0 T)
+      (fun u _ => hle u)
+    simpa [pickupResponseGram, f, mul_comm] using h
+
+/-- The settled ordered pickup of the actual signed heated coefficients.
+Both orientations occur and the diagonal is omitted. -/
+def settledHeatedPickup (s : ℝ) : ℝ :=
+  ∑' p : ℕ × ℕ, if p.1 = p.2 then 0 else
+    (heatedCoeff s p.1 * heatedCoeff s p.2) * (settled p.1 * settled p.2)
+
+private def pairReadout (s T : ℝ) (p : ℕ × ℕ) : ℝ :=
+  if p ∈ (pickupIndex T).product (pickupIndex T) then
+    pickupPairTerm T (heatedCoeff s) p.1 p.2 / T else 0
+
+private theorem pairReadout_tsum (s T : ℝ) :
+    (∑' p, pairReadout s T p) =
+      pickupPairSum T (pickupPairTerm T (heatedCoeff s)) / T := by
+  rw [tsum_eq_sum (s := (pickupIndex T).product (pickupIndex T))
+    (fun p hp => by rw [pairReadout, ite_eq_right hp])]
+  refine (Finset.sum_product (pickupIndex T) (pickupIndex T) (pairReadout s T)).trans ?_
+  unfold pickupPairSum
+  simp only [Finset.sum_div]
+  apply Finset.sum_congr rfl
+  intro m hm
+  apply Finset.sum_congr rfl
+  intro n hn
+  have hp : (m, n) ∈ (pickupIndex T).product (pickupIndex T) :=
+    Finset.mem_product.mpr ⟨hm, hn⟩
+  rw [pairReadout, ite_eq_left hp]
+
+private theorem eventually_mem_pickupIndex {n : ℕ} (hn : 1 ≤ n) :
+    ∀ᶠ T : ℝ in atTop, n ∈ pickupIndex T := by
+  filter_upwards [eventually_ge_atTop (Real.log (n : ℝ))] with T hT
+  exact Finset.mem_Icc.mpr ⟨hn, Nat.le_floor
+    ((Real.log_le_iff_le_exp (by exact_mod_cast hn)).mp hT)⟩
+
+private theorem tendsto_heated_pickup_div {s : ℝ} (hs : 0 < s) :
+    Tendsto (fun T : ℝ => pickupPairSum T (pickupPairTerm T (heatedCoeff s)) / T)
+      atTop (𝓝 (settledHeatedPickup s)) := by
+  let a (n : ℕ) := |heatedCoeff s n|
+  let bound (p : ℕ × ℕ) := 4 * (a p.1 * a p.2)
+  have ha : Summable a := heatedCoeff_abs_summable hs
+  have hprod : Summable (fun p : ℕ × ℕ => a p.1 * a p.2) := by
+    have hnonneg (p : ℕ × ℕ) : 0 ≤ a p.1 * a p.2 :=
+      mul_nonneg (abs_nonneg _) (abs_nonneg _)
+    apply (summable_prod_of_nonneg hnonneg).mpr
+    have hinner (m : ℕ) : Summable (fun n : ℕ => a m * a n) := ha.mul_left (a m)
+    refine ⟨hinner, ?_⟩
+    simp_rw [tsum_mul_left]
+    exact ha.mul_right (∑' n : ℕ, a n)
+  have hsum : Summable bound := hprod.mul_left 4
+  unfold settledHeatedPickup
+  refine (tendsto_tsum_of_dominated_convergence (f := pairReadout s) hsum ?_ ?_).congr'
+    (Eventually.of_forall (pairReadout_tsum s))
+  · rintro ⟨m,n⟩
+    by_cases hm : 1 ≤ m
+    · by_cases hn : 1 ≤ n
+      · by_cases he : m = n
+        · subst n
+          simp [pairReadout, pickupPairTerm]
+        · rw [ite_eq_right he]
+          refine ((tendsto_gram_div hm hn).const_mul
+            (heatedCoeff s m * heatedCoeff s n)).congr' ?_
+          filter_upwards [eventually_mem_pickupIndex hm, eventually_mem_pickupIndex hn]
+            with T hmT hnT
+          simp [pairReadout, Finset.mem_product, hmT, hnT, pickupPairTerm, he, mul_div_assoc]
+      · have hn0 : n = 0 := by omega
+        subst n
+        have hz : settled 0 = 0 := by simp [settled]
+        have hnot (T : ℝ) : 0 ∉ pickupIndex T := by simp [pickupIndex]
+        simp [pairReadout, Finset.mem_product, hnot, hz]
+    · have hm0 : m = 0 := by omega
+      subst m
+      have hz : settled 0 = 0 := by simp [settled]
+      have hnot (T : ℝ) : 0 ∉ pickupIndex T := by simp [pickupIndex]
+      simp [pairReadout, Finset.mem_product, hnot, hz]
+  · filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+    rintro ⟨m,n⟩
+    by_cases hmem : (m,n) ∈ (pickupIndex T).product (pickupIndex T)
+    · rw [pairReadout, ite_eq_left hmem, pickupPairTerm]
+      have ⟨hm, hn⟩ := Finset.mem_product.mp hmem
+      by_cases he : m = n
+      · rw [ite_eq_right (not_not_intro he), zero_div, norm_zero]
+        dsimp [bound, a]
+        positivity
+      · rw [ite_eq_left he, Real.norm_eq_abs, abs_div, abs_of_pos hT, abs_mul, abs_mul]
+        have hgram : |pickupResponseGram T m n| / T ≤ 4 :=
+          (div_le_iff₀ hT).mpr (gram_abs_le hT.le (Finset.mem_Icc.mp hm).1
+            (Finset.mem_Icc.mp hn).1)
+        dsimp [bound, a]
+        rw [mul_div_assoc, mul_comm 4]
+        exact mul_le_mul_of_nonneg_left hgram (mul_nonneg (abs_nonneg _) (abs_nonneg _))
+    · rw [pairReadout, ite_eq_right hmem, norm_zero]
+      dsimp [bound, a]
+      positivity
+
+/-- Exact normalized cross-heat limit for the original signed mask deviation. -/
+theorem tendsto_normalized_heatMaskDeviation_sub {s t : ℝ} (hs : 0 < s) (ht : 0 < t) :
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight t T) (heatMaskCoeff T) -
+        weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T)) / T)
+      atTop (𝓝 (settledHeatedPickup t - settledHeatedPickup s)) := by
+  refine ((tendsto_heated_pickup_div ht).sub (tendsto_heated_pickup_div hs)).congr'
+    (Eventually.of_forall fun T => ?_)
+  simp only [mask_deviation_eq_heated_sub_source, sub_sub_sub_cancel_right, sub_div]
+
 
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
