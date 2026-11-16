@@ -11549,3 +11549,155 @@ d40=4**80*(272*((1+1/s)+alpha*(1/t-1))*C(40)
 assert alpha==F(4803,5330) and d16+d40<F("1.009e-15")
 print("PASS unchanged derivative charge through 1365.42")
 ~~~
+
+## Positive signed corridor from 1365.42 to 1405.42
+
+2026-11-16, grwtsk contributors, AI-assisted. Bounded analytic
+proof with directed rational checks. Lean elaboration, kernel
+replay and axiom audit are NOT_RUN. External review is UNASSESSED.
+
+Use the [106-restriction comparison](https://github.com/grwtsk/math/commit/184378ec4d11b2faafa206221fd238f7f22046e2).
+On the original odd conductor-three source, use detuning from
+$c_1=99653682.92983$ and reflect as in the preceding comparison.
+In this interval the original masks retain the signed multiplier.
+Write $P(\nu)=\sum_{n=p^k\le2980,\ 3\nmid n}
+2\log(p)\chi_3(n)\cos(\nu\log n)/\sqrt n$. There are 458 signed terms.
+The odd gamma factor lies in the directed interval
+$(17.6779,17.6780)$ here by the original Binet bound.
+
+For a cell of width $h=.02$, its cosine sum is bounded above
+by the larger directed upper endpoint value plus $13504h^2/8$.
+Indeed the derivative bound $|P''|<13504$ bounds the departure
+from the linear interpolant. The checker propagates the endpoint
+enclosures from the original directed rotations, including their
+error, and verifies that the upper bound on each of 2000 cells
+lies more than 1.15 below the gamma lower bound. This proves
+strict positivity throughout $[1365.42,1405.42]$, including the
+join and the reflected restriction. No subdivision is needed.
+
+The exact previously paid stack of 106 restrictions and all 192
+budgets carry over. The new interval contains no negative restriction.
+The signed frontier is 1405.42. The actual unpaid-support operator
+norm remains open on the same reduced comparator.
+
+Run the guard with the original arithmetic and Jensen Markdown.
+The prerequisite comparison is bound by exact prefix digest.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+predecessor = Path(sys.argv[2]).read_bytes()[:467278]
+assert sha256(predecessor).hexdigest() == "b13f272ef1e799085006c043756cbd0b02de99451814339bc68b9c8a6102ae12"
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+start,stop,step=map(F,("1365.42","1405.42",".02"))
+lowarg,higharg=47581000,47582000
+raw_cap=55
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("1e-11")
+turn_bound=F("1e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("1e-17")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".000022")
+p4err=F(".000022")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+assert node(start)[1]<Alo and node(stop)[1]<Alo
+assert count==2000
+margin=min(Alo-estimate(start+j*step,step)[1] for j in range(count))
+assert margin>F("1.15")
+print("PASS 2000 directed positive cells through 1405.42, common signed margin",float(margin))
+~~~
