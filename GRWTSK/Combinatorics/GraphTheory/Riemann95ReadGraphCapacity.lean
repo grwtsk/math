@@ -556,4 +556,102 @@ theorem exactRoot_iff_terminal_horizon {V : Type*} (G : LabeledGraph V Read) (ro
       obtain ⟨mid, prefixPath, _⟩ := splitAt admitted w.length
       exact ⟨mid, prefixEq.symm ▸ prefixPath⟩
 
+/-- The first forbidden prefix on each branch away from a terminal binary
+read word, including both extensions of the terminal word. -/
+def terminalFrontier : List Read → List (List Read)
+  | [] => [[0], [1]]
+  | a :: word => [1 - a] :: (terminalFrontier word).map (List.cons a)
+
+theorem terminalFrontier_length (word : List Read) :
+    (terminalFrontier word).length = word.length + 2 := by
+  induction word with
+  | nil => rfl
+  | cons a word ih => simp only [terminalFrontier, List.length_cons, List.length_map, ih]
+
+private theorem opposite_ne (a : Read) : 1 - a ≠ a := by
+  fin_cases a <;> decide
+
+private theorem eq_opposite_of_ne {a b : Read} (different : b ≠ a) : b = 1 - a := by
+  fin_cases a <;> fin_cases b <;> first | rfl | exact (different rfl).elim
+
+private theorem frontier_not_prefix {word bad : List Read}
+    (member : bad ∈ terminalFrontier word) : ¬ bad <+: word := by
+  induction word generalizing bad with
+  | nil =>
+    simp [terminalFrontier] at member
+    rcases member with rfl | rfl <;> simp
+  | cons a word ih =>
+    simp only [terminalFrontier, List.mem_cons, List.mem_map] at member
+    rcases member with rfl | ⟨tail, present, rfl⟩
+    · simp [opposite_ne]
+    · intro pref
+      exact ih present (List.cons_prefix_cons.mp pref).2
+
+private theorem exists_frontier_prefix_of_not_prefix {word attempted : List Read}
+    (wrong : ¬ attempted <+: word) :
+    ∃ bad ∈ terminalFrontier word, bad <+: attempted := by
+  induction word generalizing attempted with
+  | nil =>
+    cases attempted with
+    | nil => exact (wrong List.nil_prefix).elim
+    | cons b rest =>
+      refine ⟨[b], ?_, List.cons_prefix_cons.mpr ⟨rfl, List.nil_prefix⟩⟩
+      fin_cases b <;> simp [terminalFrontier]
+  | cons a word ih =>
+    cases attempted with
+    | nil => exact (wrong List.nil_prefix).elim
+    | cons b rest =>
+      by_cases same : b = a
+      · subst b
+        obtain ⟨bad, member, pref⟩ := ih (fun p => wrong (List.cons_prefix_cons.mpr ⟨rfl, p⟩))
+        exact ⟨a :: bad, List.mem_cons_of_mem _ (List.mem_map.mpr ⟨bad, member, rfl⟩),
+          List.cons_prefix_cons.mpr ⟨rfl, pref⟩⟩
+      · exact ⟨[1 - a], List.mem_cons_self,
+          List.cons_prefix_cons.mpr ⟨(eq_opposite_of_ne same).symm, List.nil_prefix⟩⟩
+
+/-- A certified terminal observation reduces exactness to one positive
+path check and one negative path check for each first forbidden prefix. -/
+theorem exactRoot_iff_terminal_frontier {V : Type*} (G : LabeledGraph V Read) (root : V)
+    {n : ℕ} {word : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none) :
+    (∀ w, (∃ t, WordPath G root w t) ↔ ∃ d, WordPath readGraph init w d) ↔
+      (∃ t, WordPath G root word t) ∧
+        ∀ bad ∈ terminalFrontier word, ¬ ∃ t, WordPath G root bad t := by
+  obtain ⟨size, finish, native⟩ := (observe_iff_path _ _ _).mp observed
+  have native_prefix (w : List Read) :
+      (∃ d, WordPath readGraph init w d) ↔ w <+: word := by
+    constructor
+    · rintro ⟨d, path⟩
+      have short : w.length ≤ n := by
+        by_contra longer
+        obtain ⟨mid, pref, _⟩ := splitAt path (n + 1)
+        have length : (w.take (n + 1)).length = n + 1 := by
+          rw [List.length_take, Nat.min_eq_left (by omega)]
+        have next := (observe_iff_path _ _ _).mpr ⟨length, mid, pref⟩
+        rw [stopped] at next
+        cases next
+      apply List.prefix_iff_eq_take.mpr
+      exact forced_prefix (G := readGraph)
+        (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
+        path native (by omega)
+    · intro pref
+      obtain ⟨mid, path, _⟩ := splitAt native w.length
+      exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ path⟩
+  constructor
+  · intro exactRoot
+    exact ⟨(exactRoot word).mpr ⟨finish, native⟩, fun bad member admitted =>
+      frontier_not_prefix member ((native_prefix bad).mp ((exactRoot bad).mp admitted))⟩
+  · rintro ⟨⟨target, full⟩, forbidden⟩ w
+    rw [native_prefix]
+    constructor
+    · rintro ⟨t, path⟩
+      by_contra wrong
+      obtain ⟨bad, member, pref⟩ := exists_frontier_prefix_of_not_prefix wrong
+      obtain ⟨mid, initial, _⟩ := splitAt path bad.length
+      exact forbidden bad member ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ initial⟩
+    · intro pref
+      obtain ⟨mid, initial, _⟩ := splitAt full w.length
+      exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ initial⟩
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Riemann95ReadGraphCapacity
