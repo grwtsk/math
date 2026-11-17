@@ -154,4 +154,54 @@ theorem rooted_graph_capacity {V : Type*} [Fintype V] (G : LabeledGraph V Read) 
     (fun word => (exactRoot word).2)
   exact impossible ((exactRoot word).1 hp)
 
+private theorem splitAt {V : Type*} {G : LabeledGraph V Read}
+    {root finish : V} {word : List Read} (path : WordPath G root word finish) (k : ℕ) :
+    ∃ middle, WordPath G root (word.take k) middle ∧ WordPath G middle (word.drop k) finish :=
+  wordPath_split_append G _ _ (by simpa only [List.take_append_drop] using path)
+
+/-- A terminal native read prefix of length n requires n+1 distinct cuts.
+A repeated vertex would admit a longer word, whose (n+1)-prefix is already
+rejected by the native executor. The labels need no distinguishing marker. -/
+theorem halted_rooted_graph_capacity {V : Type*} [Fintype V]
+    (G : LabeledGraph V Read) (root : V) {n : ℕ} {word : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none)
+    (admits : ∃ finish, WordPath G root word finish)
+    (sound : ∀ w : List Read, w.length = n + 1 →
+      (∃ t, WordPath G root w t) → ∃ d, WordPath readGraph init w d) :
+    n + 1 ≤ Fintype.card V := by
+  classical
+  obtain ⟨finish, path⟩ := admits
+  have len := (observe_iff_path n _ word).mp observed |>.1
+  have allCuts (k : Fin (n + 1)) :
+      ∃ middle, WordPath G root (word.take k.val) middle ∧
+        WordPath G middle (word.drop k.val) finish := splitAt path k.val
+  choose visit paths using allCuts
+  have separates (i j : Fin (n + 1)) (ordered : i < j) : visit i ≠ visit j := by
+    intro same
+    have before := (paths j).1
+    rw [← same] at before
+    have longer := wordPath_append before (paths i).2
+    let extended := word.take j.val ++ word.drop i.val
+    have hi : i.val < j.val := ordered
+    have hj := j.isLt
+    have hlen : n + 1 ≤ extended.length := by
+      simp only [extended, List.length_append, List.length_take, List.length_drop, len]
+      rw [Nat.min_eq_left (by omega : j.val ≤ n)]
+      omega
+    obtain ⟨mid, tested, _⟩ := splitAt longer (n + 1)
+    have size : (extended.take (n + 1)).length = n + 1 := by
+      rw [List.length_take, Nat.min_eq_left hlen]
+    have native := sound _ size ⟨mid, tested⟩
+    have result := (observe_iff_path (n + 1) _ _).mpr ⟨size, native⟩
+    rw [stopped] at result
+    cases result
+  have injective : Function.Injective visit := by
+    intro i j same
+    rcases lt_trichotomy i j with lt | eq | gt
+    · exact (separates i j lt same).elim
+    · exact eq
+    · exact (separates j i gt same.symm).elim
+  simpa using Fintype.card_le_of_injective visit injective
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Riemann95ReadGraphCapacity
