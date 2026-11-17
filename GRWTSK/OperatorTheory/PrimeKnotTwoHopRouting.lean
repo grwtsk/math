@@ -127,4 +127,44 @@ theorem no_twoHop_95_cycle (s : Source Prime Knot) (weight : Knot → ℝ)
     exactSupport 0
   exact (by decide : nextSlot95 (nextSlot95 0) ≠ 0) returns
 
+/-- Independent diagonal rescalings preserve the balance of the products
+along a permutation and its reversed arrows. -/
+theorem twoHop_cycle_product_balance [Fintype Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (encode : Slot → Prime)
+    (next : Equiv.Perm Slot) (row col : Slot → ℝ) :
+    (∏ i, |row i * twoHop s weight (encode i) (encode (next i)) * col (next i)|) =
+      ∏ i, |row (next i) * twoHop s weight (encode (next i)) (encode i) * col i| := by
+  simp only [abs_mul, Finset.prod_mul_distrib, Equiv.prod_comp next (fun i => |row i|),
+    Equiv.prod_comp next (fun i => |col i|)]
+  congr 2
+  apply Finset.prod_congr rfl
+  intro i _
+  rw [twoHop_symm]
+
+/-- Even with unconstrained real diagonal scalings, errors strictly below
+one half cannot turn the two-hop return into unit forward arrows and
+zero reverse arrows around the 95-cycle. -/
+theorem no_twoHop_95_cycle_half_error (s : Source Prime Knot) (weight : Knot → ℝ)
+    (encode : Fin 95 → Prime) (row col : Fin 95 → ℝ) :
+    ¬ ((∀ i, |row i * twoHop s weight (encode i) (encode (nextSlot95 i)) *
+        col (nextSlot95 i) - 1| < 1 / 2) ∧
+      (∀ i, |row (nextSlot95 i) * twoHop s weight (encode (nextSlot95 i)) (encode i) *
+        col i| < 1 / 2)) := by
+  rintro ⟨forward, reverse⟩
+  let next : Equiv.Perm (Fin 95) := Equiv.addRight 1
+  have balance := twoHop_cycle_product_balance s weight encode next row col
+  change (∏ i, |row i * twoHop s weight (encode i) (encode (nextSlot95 i)) *
+    col (nextSlot95 i)|) = _ at balance
+  have big : (∏ _i : Fin 95, (1 / 2 : ℝ)) <
+      ∏ i, |row i * twoHop s weight (encode i) (encode (nextSlot95 i)) *
+        col (nextSlot95 i)| := by
+    apply Finset.prod_lt_prod_of_nonempty₀ (by intros; norm_num) _ Finset.univ_nonempty
+    intro i _
+    exact (by linarith [(abs_lt.mp (forward i)).1] : (1 / 2 : ℝ) < _).trans_le (le_abs_self _)
+  have small : (∏ i, |row (nextSlot95 i) *
+      twoHop s weight (encode (nextSlot95 i)) (encode i) * col i|) ≤
+        ∏ _i : Fin 95, (1 / 2 : ℝ) :=
+    Finset.prod_le_prod₀ (fun _ _ => abs_nonneg _) (fun i _ => (reverse i).le)
+  exact (not_lt_of_ge small) (balance ▸ big)
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
