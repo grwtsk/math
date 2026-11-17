@@ -71,4 +71,36 @@ theorem eventually_signed_mask_le_settled_sub_stationary_sq_sub_poleSeries
   dsimp only [Q] at henergy
   nlinarith
 
+/-- The complete positive critical-line pole cost is a global lower
+bound, up to arbitrary slack, for the measured variance of the original
+pickup under the same affine-frequent supplier. -/
+theorem eventually_pickup_variance_ge_poleSeries
+    {s A : ℝ} (hs : 0 < s) (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    {ε : ℝ} (hε : 0 < ε) :
+    ∀ᶠ T : ℝ in atTop, 2 * (∑' ρ, positiveCriticalPoleSquare ρ) - ε ≤
+      pickupHorizonVariance T := by
+  let m := (2 / riemannZeta (1 / 2 : ℂ)).re
+  let S := 2 * (∑' ρ, positiveCriticalPoleSquare ρ)
+  have hbudget₁ : ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + 1) * T ^ (1 : ℕ) + 0 := by
+    simpa only [pow_one, add_zero] using hbudget 1 one_pos
+  obtain ⟨C, hC, hE⟩ := global_residualEnergy_poly_of_affine_envelope hG
+    (add_nonneg hA zero_le_one) (le_refl (0 : ℝ)) hmajorant hbudget₁
+  have hm : Tendsto pickupHorizonMean atTop (𝓝 m) :=
+    tendsto_pickupHorizonMean_at_stationary hs hζ hC (by simpa only [pow_one] using hE)
+  have hsum := (tendsto_normalized_heatMaskDeviation_add_measured_variance_and_mean_sq hs).sub
+    (hm.pow 2)
+  have hsmall : 0 < ε / 2 := by linarith
+  have hceil := eventually_signed_mask_le_settled_sub_stationary_sq_sub_poleSeries
+    hs hζ hA hG hmajorant hbudget hsmall
+  have hlow := (tendsto_order.mp hsum).1
+    (settledHeatedPickup s - m ^ 2 - ε / 2) (by linarith)
+  filter_upwards [hceil, hlow] with T hceilT hlowT
+  change _ ≤ settledHeatedPickup s - m ^ 2 - S + ε / 2 at hceilT
+  change S - ε ≤ _
+  linarith
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
