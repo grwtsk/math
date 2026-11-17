@@ -792,4 +792,42 @@ theorem checkAddress_stale {u v : ℕ} (different : u ≠ v) (a : Address u) :
     omega
   simp [checkAddress, notValid]
 
+private theorem step_project_displacement {u v : ℕ} {c : Configuration u}
+    {d : Configuration v} (same : project c = project d) :
+    (step c).map (fun e => (project e, e.position - c.position)) =
+      (step d).map (fun e => (project e, e.position - d.position)) := by
+  have control := congrArg Cfg.state same
+  have scan := congrArg (fun cfg => cfg.tape.head) same
+  change decodeAddress c.address = decodeAddress d.address at control
+  change c.scanned = d.scanned at scan
+  have projected := (project_step c).trans (by rw [same, ← project_step])
+  rw [step, step] at projected ⊢
+  rw [← control, ← scan] at projected ⊢
+  cases ht : ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => rfl
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    simp only [ht, Option.map_some, Option.some.injEq] at projected ⊢
+    cases direction <;> simp only [writeMove] at projected ⊢ <;> simp [projected]
+
+/-- The native pointed configuration determines exact relative head
+displacement, even across prime windows and distinct tape representatives. -/
+theorem run_project_displacement {u v : ℕ} (n : ℕ) {c : Configuration u}
+    {d : Configuration v} (same : project c = project d) :
+    (run n c).map (fun e => (project e, e.position - c.position)) =
+      (run n d).map (fun e => (project e, e.position - d.position)) := by
+  induction n generalizing c d with
+  | zero => simp [run, same]
+  | succ n ih =>
+    have first := step_project_displacement same
+    cases hc : step c <;> cases hd : step d <;>
+      simp [hc, hd] at first
+    · simp [run, hc, hd]
+    · rename_i e f
+      have rest := ih first.1
+      rw [run, run, hc, hd, Option.bind_some, Option.bind_some]
+      cases he : run n e <;> cases hf : run n f <;>
+        simp [he, hf] at rest ⊢
+      exact ⟨rest.1, by omega⟩
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
