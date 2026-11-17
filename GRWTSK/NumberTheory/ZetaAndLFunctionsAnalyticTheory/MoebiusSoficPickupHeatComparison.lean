@@ -1318,4 +1318,49 @@ theorem settled_gap_sq_le_of_two_residual_allowances
   dsimp [ε] at hcost
   linarith [sq_nonneg (pickupHorizonMean T - (heatedLimit s + heatedLimit t) / 2)]
 
+/-- Two possibly unequal genuine allowances constrain the separation of
+their settled heats by the sum of the two square-root allowances. -/
+theorem abs_settled_gap_le_sqrt_add_sqrt_of_two_residual_allowances
+    {s t A B : ℝ} (hs : 0 < s) (ht : 0 < t) {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (hA : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε)
+    (hB : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ B + ε) :
+    |heatedLimit s - heatedLimit t| ≤ Real.sqrt A + Real.sqrt B := by
+  have hδ (δ : ℝ) (hδ : 0 < δ) :
+      |heatedLimit s - heatedLimit t| ≤ Real.sqrt (A + δ) + Real.sqrt (B + δ) := by
+    have hleft := eventually_variance_add_weighted_cost_le_of_two_residual_allowances
+      (w := 1) hs ht (by norm_num) le_rfl hl hA hB hδ
+    have hright := eventually_variance_add_weighted_cost_le_of_two_residual_allowances
+      (w := 0) hs ht le_rfl (by norm_num) hl hA hB hδ
+    obtain ⟨T, hT, hleftT, hrightT⟩ :=
+      (((eventually_gt_atTop (0 : ℝ)).filter_mono hl).and (hleft.and hright)).exists
+    have hvar : 0 ≤ pickupHorizonVariance T := by
+      unfold pickupHorizonVariance
+      exact div_nonneg (intervalIntegral.integral_nonneg_of_forall hT.le
+        (fun _ => sq_nonneg _)) hT.le
+    have hleftSq : (pickupHorizonMean T - heatedLimit s) ^ 2 ≤ A + δ := by
+      norm_num at hleftT
+      linarith
+    have hrightSq : (pickupHorizonMean T - heatedLimit t) ^ 2 ≤ B + δ := by
+      norm_num at hrightT
+      linarith
+    have habs {x a : ℝ} (h : x ^ 2 ≤ a) : |x| ≤ Real.sqrt a := by
+      have ha := (sq_nonneg x).trans h
+      rw [← abs_of_nonneg (Real.sqrt_nonneg a)]
+      apply sq_le_sq.mp
+      rwa [Real.sq_sqrt ha]
+    calc
+      |heatedLimit s - heatedLimit t| ≤
+        |heatedLimit s - pickupHorizonMean T| + |pickupHorizonMean T - heatedLimit t| :=
+        abs_sub_le _ _ _
+      _ ≤ _ := add_le_add (by rw [abs_sub_comm]; exact habs hleftSq) (habs hrightSq)
+  have hcont : Continuous (fun δ : ℝ => Real.sqrt (A + δ) + Real.sqrt (B + δ)) := by
+    fun_prop
+  have hlim : Tendsto (fun δ : ℝ => Real.sqrt (A + δ) + Real.sqrt (B + δ))
+      (𝓝[>] (0 : ℝ)) (𝓝 (Real.sqrt A + Real.sqrt B)) := by
+    have h := (hcont.continuousAt (x := (0 : ℝ))).continuousWithinAt (s := Ioi 0)
+    simpa only [ContinuousWithinAt, add_zero] using h
+  apply ge_of_tendsto hlim
+  filter_upwards [(self_mem_nhdsWithin : Ioi (0 : ℝ) ∈ 𝓝[>] (0 : ℝ))] with δ hpos
+  exact hδ δ hpos
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
