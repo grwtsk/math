@@ -1062,4 +1062,62 @@ theorem halts_iff_exists_runOn_failure_threshold (origin : ℕ) :
     apply (halts_iff_failed_cofinal_schedule origin schedules (fun _ => origin) cofinal).mpr
     exact ⟨n + 1, (threshold _ _).mpr (by simp [schedules])⟩
 
+/-- Two independently chosen depth-d half-tapes at fixed blank metadata. -/
+def finiteTapeConfig (window depth : ℕ)
+    (bits : (Fin depth → Fin 2) × (Fin depth → Fin 2)) : Configuration window :=
+  { blank window with left := List.ofFn bits.1, right := List.ofFn bits.2 }
+
+/-- Recover the two length-d bit strings from the exact pointed tape. -/
+def readFiniteTape (depth : ℕ) (view : Cfg 95 2 × ℤ) :
+    (Fin depth → Fin 2) × (Fin depth → Fin 2) :=
+  (fun i => view.1.tape.left.nth i.val, fun i => view.1.tape.right.nth i.val)
+
+theorem readFiniteTape_config (window depth : ℕ)
+    (bits : (Fin depth → Fin 2) × (Fin depth → Fin 2)) :
+    readFiniteTape depth (handoffView (finiteTapeConfig window depth bits)) = bits := by
+  apply Prod.ext
+  · funext i
+    simp [readFiniteTape, handoffView, project, finiteTapeConfig, nth_mk_eq_blankPadded]
+  · funext i
+    simp [readFiniteTape, handoffView, project, finiteTapeConfig, nth_mk_eq_blankPadded]
+
+theorem finiteTapeConfig_handoff_injective (window depth : ℕ) :
+    Function.Injective (fun bits => handoffView (finiteTapeConfig window depth bits)) :=
+  Function.LeftInverse.injective (readFiniteTape_config window depth)
+
+/-- Exact full-view encoding of this finite family of arbitrary tapes
+needs at least two bits per depth level, even with fixed head and control. -/
+theorem finiteTapeConfig_code_capacity {Code : Type*} [Fintype Code]
+    (window depth : ℕ) (encode : Configuration window → Code)
+    (faithful : ∀ a b, encode (finiteTapeConfig window depth a) =
+      encode (finiteTapeConfig window depth b) →
+      handoffView (finiteTapeConfig window depth a) = handoffView (finiteTapeConfig window depth b)) :
+    2 ^ depth * 2 ^ depth ≤ Fintype.card Code := by
+  classical
+  have inject : Function.Injective (fun bits => encode (finiteTapeConfig window depth bits)) :=
+    fun _ _ same => finiteTapeConfig_handoff_injective window depth (faithful _ _ same)
+  simpa using Fintype.card_le_of_injective _ inject
+
+/-- Storing the two strings attains the code bound on the fixed-metadata
+family. Decoding reconstructs the literal native handoff view. -/
+theorem finiteTapeConfig_decode_read (window depth : ℕ)
+    (bits : (Fin depth → Fin 2) × (Fin depth → Fin 2)) :
+    handoffView (finiteTapeConfig window depth
+      (readFiniteTape depth (handoffView (finiteTapeConfig window depth bits)))) =
+      handoffView (finiteTapeConfig window depth bits) := by
+  rw [readFiniteTape_config]
+
+/-- No fixed finite code alphabet can represent the full handoff view of
+every arbitrary tape configuration, even in a single prime window. -/
+theorem no_finite_full_handoff_code {Code : Type*} [Fintype Code]
+    (window : ℕ) (encode : Configuration window → Code) :
+    ¬ ∀ c d, encode c = encode d → handoffView c = handoffView d := by
+  intro faithful
+  let size := Fintype.card Code
+  have bound := finiteTapeConfig_code_capacity window size encode (fun _ _ => faithful _ _)
+  have one : 1 ≤ 2 ^ size := Nat.one_le_pow size 2 (by decide)
+  have le : 2 ^ size ≤ 2 ^ size * 2 ^ size := by
+    simpa only [Nat.mul_one] using Nat.mul_le_mul_left (2 ^ size) one
+  exact (not_le_of_gt (Nat.lt_two_pow_self (n := size))) (le.trans bound)
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
