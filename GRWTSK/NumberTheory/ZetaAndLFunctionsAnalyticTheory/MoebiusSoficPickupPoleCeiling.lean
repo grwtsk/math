@@ -103,4 +103,35 @@ theorem eventually_pickup_variance_ge_poleSeries
   change S - ε ≤ _
   linarith
 
+/-- Positive pole mass excludes tangency of two genuine residual
+allowance intervals on a common nontrivial horizon filter. -/
+theorem abs_settled_gap_lt_add_of_two_allowances_and_positive_poleSeries
+    {s t A a b : ℝ} (hs : 0 < s) (ht : 0 < t)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    (hS : 0 < ∑' ρ, positiveCriticalPoleSquare ρ)
+    (ha : 0 ≤ a) (hb : 0 ≤ b) (hpos : 0 < a + b)
+    {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (haBudget : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ a ^ 2 + ε)
+    (hbBudget : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ b ^ 2 + ε) :
+    |heatedLimit s - heatedLimit t| < a + b := by
+  have hle := abs_settled_gap_le_sqrt_add_sqrt_of_two_residual_allowances
+    hs ht hl haBudget hbBudget
+  rw [Real.sqrt_sq ha, Real.sqrt_sq hb] at hle
+  refine lt_of_le_of_ne hle ?_
+  intro heq
+  obtain ⟨_, hvar⟩ := pickup_mean_and_variance_limits_at_tangent_allowances
+    hs ht ha hb hpos hl haBudget hbBudget heq
+  let S := ∑' ρ, positiveCriticalPoleSquare ρ
+  have hsmall : 0 < S := hS
+  have hhigh := (tendsto_order.mp hvar).2 S hsmall
+  have hlow := (eventually_pickup_variance_ge_poleSeries
+    hs hζ hA hG hmajorant hbudget hsmall).filter_mono hl
+  obtain ⟨T, hhighT, hlowT⟩ := (hhigh.and hlow).exists
+  change 2 * S - S ≤ pickupHorizonVariance T at hlowT
+  linarith
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
