@@ -1010,4 +1010,28 @@ theorem tendsto_settledHeatedPickup_div_prime_two_weight :
   rw [settledHeatedPickup_eq_sq_sub_diagonal hs]
   ring
 
+/-- The high-heat first correction to the sharp signed allowance at a
+given source mean. Its leading term vanishes exactly at mean four. -/
+theorem tendsto_settled_residual_allowance_correction_div_prime_two_weight (m : ℝ) :
+    Tendsto (fun s : ℝ =>
+      (settledHeatedPickup s + heatedLimit s ^ 2 - 2 * heatedLimit s * m -
+        (4 - 4 * m)) / Real.exp (-s * Real.log 2 ^ 2))
+      atTop (𝓝 ((2 * m - 8) * (2 * (Real.sqrt 2)⁻¹))) := by
+  have h := tendsto_heatedLimit_sub_two_div_prime_two_weight
+  have hw := tendsto_heat_weight_zero (pow_pos (Real.log_pos (by norm_num : (1 : ℝ) < 2)) 2)
+  have hL : Tendsto heatedLimit atTop (𝓝 2) := by
+    have hp := (h.mul hw).add_const 2
+    rw [mul_zero, zero_add] at hp
+    refine hp.congr' (Eventually.of_forall fun s => ?_)
+    rw [div_mul_cancel₀ _ (Real.exp_ne_zero _), sub_add_cancel]
+  have hlim := tendsto_settledHeatedPickup_div_prime_two_weight.add
+    (h.mul ((hL.add_const 2).sub_const (2 * m)))
+  have hc : -(8 * (Real.sqrt 2)⁻¹) +
+      -(2 * (Real.sqrt 2)⁻¹) * (2 + 2 - 2 * m) =
+        (2 * m - 8) * (2 * (Real.sqrt 2)⁻¹) := by ring
+  rw [hc] at hlim
+  refine hlim.congr' (Eventually.of_forall fun s => ?_)
+  dsimp only
+  ring
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
