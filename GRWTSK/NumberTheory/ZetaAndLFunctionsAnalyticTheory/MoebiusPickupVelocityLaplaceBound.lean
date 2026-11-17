@@ -3,7 +3,7 @@ import GRWTSK.GeneralTopology.PrimitiveRegularity
 import GRWTSK.MeasureAndIntegration.LaplaceCumulativeSquareBound
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 import Mathlib.MeasureTheory.Integral.ExpDecay
-import Mathlib.Analysis.Fourier.FourierTransform
+import Mathlib.Analysis.Fourier.LpSpace
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -76,6 +76,17 @@ whole real line for the Fourier transform. -/
 def dampedPickupVelocity (σ : ℝ) : ℝ → ℂ :=
   (Ioi (0 : ℝ)).indicator fun u => ((Real.exp (-σ * u) * pickupVelocity u : ℝ) : ℂ)
 
+private theorem norm_dampedPickupVelocity_sq (σ : ℝ) : (fun u : ℝ => ‖dampedPickupVelocity σ u‖ ^ 2) =
+    (Ioi (0 : ℝ)).indicator (fun u => Real.exp (-(2 * σ) * u) * pickupVelocity u ^ 2) := by
+  funext u
+  by_cases hu : u ∈ Ioi (0 : ℝ)
+  · simp only [dampedPickupVelocity, indicator_of_mem hu, Complex.norm_real, Real.norm_eq_abs,
+      sq_abs, mul_pow]
+    rw [pow_two (Real.exp _), ← Real.exp_add]
+    congr 2
+    ring
+  · simp [dampedPickupVelocity, indicator_of_notMem hu]
+
 /-- Weak Mertens puts the whole-line damped velocity in the Plancherel domain. -/
 theorem dampedPickupVelocity_memLp_two_of_weakMertens {B σ : ℝ}
     (hB : 0 ≤ B) (hσ : 0 < σ)
@@ -86,17 +97,7 @@ theorem dampedPickupVelocity_memLp_two_of_weakMertens {B σ : ℝ}
     (Complex.continuous_ofReal.measurable.comp (he.mul pickupVelocity_measurable)).indicator
       measurableSet_Ioi
   apply (memLp_two_iff_integrable_sq_norm hm.aestronglyMeasurable).2
-  have hEq : (fun u : ℝ => ‖dampedPickupVelocity σ u‖ ^ 2) =
-      (Ioi (0 : ℝ)).indicator (fun u => Real.exp (-(2 * σ) * u) * pickupVelocity u ^ 2) := by
-    funext u
-    by_cases hu : u ∈ Ioi (0 : ℝ)
-    · simp only [dampedPickupVelocity, indicator_of_mem hu, Complex.norm_real, Real.norm_eq_abs,
-        sq_abs, mul_pow]
-      rw [pow_two (Real.exp _), ← Real.exp_add]
-      congr 2
-      ring
-    · simp [dampedPickupVelocity, indicator_of_notMem hu]
-  rw [hEq, integrable_indicator_iff measurableSet_Ioi]
+  rw [norm_dampedPickupVelocity_sq, integrable_indicator_iff measurableSet_Ioi]
   exact (weightedPickupVelocitySquare_le_of_weakMertens hB hσ hM).1
 
 /-- Weak Mertens also gives absolute integrability of the damped velocity.
@@ -153,5 +154,34 @@ theorem fourier_dampedPickupVelocity_eq_signedLaplace (σ ξ : ℝ) :
     push_cast
     ring
   · simp [dampedPickupVelocity, indicator_of_notMem hu]
+
+/-- The weak Mertens allowance bounds the Plancherel energy of the exact
+damped velocity. -/
+theorem fourierLp_dampedPickupVelocity_norm_sq_le_of_weakMertens {B σ : ℝ}
+    (hB : 0 ≤ B) (hσ : 0 < σ)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X) :
+    ‖𝓕 ((dampedPickupVelocity_memLp_two_of_weakMertens hB hσ hM).toLp
+        (dampedPickupVelocity σ))‖ ^ 2 ≤ B / (2 * σ) := by
+  let h := dampedPickupVelocity_memLp_two_of_weakMertens hB hσ hM
+  let f := h.toLp (dampedPickupVelocity σ)
+  change ‖𝓕 f‖ ^ 2 ≤ _
+  rw [Lp.norm_fourier_eq]
+  have hn : ‖f‖ ^ 2 = ∫ u : ℝ, ‖f u‖ ^ 2 := by
+    apply Complex.ofReal_injective
+    calc
+      _ = inner ℂ f f := by simp [inner_self_eq_norm_sq_to_K, Complex.ofReal_pow]
+      _ = ∫ u : ℝ, ((‖f u‖ ^ 2 : ℝ) : ℂ) := by
+        change (∫ u : ℝ, inner ℂ (f u) (f u)) = _
+        simp [inner_self_eq_norm_sq_to_K, Complex.ofReal_pow]
+      _ = _ := integral_ofReal
+  rw [hn]
+  calc
+    _ = ∫ u : ℝ, ‖dampedPickupVelocity σ u‖ ^ 2 := by
+      apply integral_congr_ae
+      filter_upwards [h.coeFn_toLp] with u hu
+      rw [hu]
+    _ ≤ _ := by
+      rw [norm_dampedPickupVelocity_sq, integral_indicator measurableSet_Ioi]
+      exact (weightedPickupVelocitySquare_le_of_weakMertens hB hσ hM).2
 
 end GRWTSK.NumberTheory.Moebius
