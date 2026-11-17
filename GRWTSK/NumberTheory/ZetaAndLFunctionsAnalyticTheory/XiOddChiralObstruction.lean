@@ -130,4 +130,49 @@ theorem no_odd_chiral_pointwise_strip_limit {d : ℕ → ℕ}
   have same := tendsto_nhds_unique hneg (limit z hz).neg
   linear_combination same / 2
 
+
+/-- At a nonzero xi value, pointwise convergence at opposite arguments
+forces the normalizer's opposite-point ratio to tend to minus one. -/
+theorem normalizer_ratio_tendsto_neg_one {d : ℕ → ℕ}
+    (odd : ∀ n, Odd (d n))
+    (H J : (n : ℕ) → Matrix (Fin (d n)) (Fin (d n)) ℂ)
+    (invertible : ∀ n, (J n).det ≠ 0)
+    (chiral : ∀ n, J n * H n = -(H n * J n)) (u : ℕ → ℂ → ℂ)
+    (z : ℂ) (nonzero : spectralSource z ≠ 0)
+    (atPos : Tendsto (fun n => u n z * pencil (H n) z) atTop (𝓝 (spectralSource z)))
+    (atNeg : Tendsto (fun n => u n (-z) * pencil (H n) (-z)) atTop
+      (𝓝 (spectralSource (-z)))) :
+    Tendsto (fun n => u n (-z) / u n z) atTop (𝓝 (-1 : ℂ)) := by
+  rw [spectralSource_even] at atNeg
+  have hquot := (atNeg.div atPos nonzero).neg
+  rw [div_self nonzero] at hquot
+  refine hquot.congr' ?_
+  filter_upwards [atPos.eventually_ne nonzero] with n hn
+  have hp : pencil (H n) z ≠ 0 := (mul_ne_zero_iff.mp hn).2
+  change -(u n (-z) * pencil (H n) (-z) / (u n z * pencil (H n) z)) =
+    u n (-z) / u n z
+  rw [pencil_neg_of_chiral (odd n) (H n) (J n) (invertible n) (chiral n),
+    mul_neg, neg_div, neg_neg, mul_div_mul_right _ _ hp]
+
+/-- The strip limit still fails when evenness is relaxed to asymptotic
+agreement of the opposite-point normalizer ratios. -/
+theorem no_odd_chiral_asymptotically_even_strip_limit {d : ℕ → ℕ}
+    (odd : ∀ n, Odd (d n))
+    (H J : (n : ℕ) → Matrix (Fin (d n)) (Fin (d n)) ℂ)
+    (invertible : ∀ n, (J n).det ≠ 0)
+    (chiral : ∀ n, J n * H n = -(H n * J n)) (u : ℕ → ℂ → ℂ)
+    (ratios : ∀ z ∈ spectralStrip,
+      Tendsto (fun n => u n (-z) / u n z) atTop (𝓝 (1 : ℂ))) :
+    ¬ ∀ z ∈ spectralStrip,
+      Tendsto (fun n => u n z * pencil (H n) z) atTop (𝓝 (spectralSource z)) := by
+  intro limit
+  apply spectralSource_not_zero_on_strip
+  intro z hz
+  by_contra nonzero
+  have negMem : -z ∈ spectralStrip := by simpa [spectralStrip] using hz
+  have h := normalizer_ratio_tendsto_neg_one odd H J invertible chiral u z
+    nonzero (limit z hz) (limit (-z) negMem)
+  have conflict := tendsto_nhds_unique h (ratios z hz)
+  norm_num at conflict
+
 end GRWTSK.NumberTheory.Zeta.XiOddChiralObstruction
