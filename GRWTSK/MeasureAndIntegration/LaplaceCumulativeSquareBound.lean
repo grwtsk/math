@@ -1,5 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+import Mathlib.MeasureTheory.Measure.Prod
 import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
 import Mathlib.MeasureTheory.Function.L2Space
 import Mathlib.MeasureTheory.Integral.ExpDecay
@@ -20,7 +22,7 @@ noncomputable section
 set_option autoImplicit false
 
 open Filter MeasureTheory Set
-open scoped Topology
+open scoped Topology ENNReal
 
 namespace GRWTSK.MeasureAndIntegration.LaplaceCumulativeSquareBound
 
@@ -249,5 +251,132 @@ theorem norm_signedLaplace_sq_le {f : ℝ → ℝ} (hf : Continuous f) {z : ℂ}
     simp only [weightedSquare, sq_abs]
   simp only [mul_one, habs, hmoment, ← div_eq_mul_one_div] at hcs
   exact (pow_le_pow_left₀ (norm_nonneg _) hnorm 2).trans hcs
+
+private theorem velocitySquare_interval_to_lintegral (V : ℝ → ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (hV : IntervalIntegrable (fun u => V u ^ 2) volume 0 T) :
+    ENNReal.ofReal (∫ u in (0 : ℝ)..T, V u ^ 2) =
+      ∫⁻ u in Ioc (0 : ℝ) T, ENNReal.ofReal (V u ^ 2) := by
+  rw [intervalIntegral.integral_of_le hT]
+  exact ofReal_integral_eq_lintegral_ofReal hV.1 (ae_of_all _ fun u => sq_nonneg (V u))
+
+private theorem ray_triangle_lintegral_swap (w F : ℝ → ℝ≥0∞)
+    (hw : Measurable w) (hF : Measurable F) :
+    (∫⁻ t in Ioi (0 : ℝ), ∫⁻ u in Ioi (0 : ℝ), if u ≤ t then w t * F u else 0) =
+      ∫⁻ u in Ioi (0 : ℝ), ∫⁻ t in Ioi (0 : ℝ), if u ≤ t then w t * F u else 0 := by
+  apply lintegral_lintegral_swap
+  refine Measurable.aemeasurable ?_
+  change Measurable (fun p : ℝ × ℝ => if p.2 ≤ p.1 then w p.1 * F p.2 else 0)
+  exact ((hw.comp measurable_fst).mul (hF.comp measurable_snd)).ite
+    (measurableSet_le measurable_snd measurable_fst) measurable_const
+
+private theorem ray_triangle_exponential_tail {r u : ℝ} (hr : 0 < r) (hu : 0 < u)
+    (v : ℝ≥0∞) :
+    (∫⁻ t in Ioi (0 : ℝ), if u ≤ t then ENNReal.ofReal (Real.exp (-r * t)) * v else 0) =
+      ENNReal.ofReal (Real.exp (-r * u) / r) * v := by
+  let f (t : ℝ) := ENNReal.ofReal (Real.exp (-r * t))
+  have hf : Measurable f := by dsimp [f]; fun_prop
+  change (∫⁻ t in Ioi (0 : ℝ), if u ≤ t then f t * v else 0) = _
+  rw [show (fun t : ℝ => if u ≤ t then f t * v else 0) =
+      (Ici u).indicator (fun t => f t * v) by rfl]
+  rw [lintegral_indicator measurableSet_Ici, Measure.restrict_restrict_of_subset]
+  swap
+  · exact fun t ht => hu.trans_le ht
+  rw [lintegral_mul_const v hf, Measure.restrict_congr_set (Ioi_ae_eq_Ici (μ := volume) (a := u)).symm]
+  have hi : IntegrableOn (fun t : ℝ => Real.exp (-r * t)) (Ioi u) := by
+    simpa only [neg_mul] using exp_neg_integrableOn_Ioi u hr
+  rw [show (∫⁻ t in Ioi u, f t) =
+      ENNReal.ofReal (∫ t in Ioi u, Real.exp (-r * t)) from
+    (ofReal_integral_eq_lintegral_ofReal hi (ae_of_all _ fun t => (Real.exp_pos _).le)).symm]
+  rw [integral_exp_mul_Ioi (neg_neg_of_pos hr) u, div_neg, neg_div, neg_neg]
+
+private theorem weightedCumulativeSquare_eq_lintegral (V : ℝ → ℝ) (hVm : Measurable V)
+    (hV : ∀ t ≥ 0, IntervalIntegrable (fun u => V u ^ 2) volume 0 t)
+    {r : ℝ} (hr : 0 < r) :
+    (∫⁻ t in Ioi (0 : ℝ), ENNReal.ofReal (Real.exp (-r * t)) *
+        ENNReal.ofReal (∫ u in (0 : ℝ)..t, V u ^ 2)) =
+      ∫⁻ u in Ioi (0 : ℝ), ENNReal.ofReal (Real.exp (-r * u) / r) *
+        ENNReal.ofReal (V u ^ 2) := by
+  let F (u : ℝ) := ENNReal.ofReal (V u ^ 2)
+  let w (t : ℝ) := ENNReal.ofReal (Real.exp (-r * t))
+  have hF : Measurable F := by dsimp [F]; fun_prop
+  have hw : Measurable w := by dsimp [w]; fun_prop
+  calc
+    _ = ∫⁻ t in Ioi (0 : ℝ), ∫⁻ u in Ioi (0 : ℝ), if u ≤ t then w t * F u else 0 := by
+      apply lintegral_congr_ae
+      filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
+      have ht0 : 0 ≤ t := ht.le
+      rw [velocitySquare_interval_to_lintegral V ht0 (hV t ht0)]
+      change w t * (∫⁻ u in Ioc 0 t, F u) = _
+      rw [show (fun u : ℝ => if u ≤ t then w t * F u else 0) =
+        (Iic t).indicator (fun u => w t * F u) by rfl,
+        lintegral_indicator measurableSet_Iic,
+        Measure.restrict_restrict measurableSet_Iic, inter_comm, Ioi_inter_Iic,
+        lintegral_const_mul _ hF]
+    _ = ∫⁻ u in Ioi (0 : ℝ), ∫⁻ t in Ioi (0 : ℝ), if u ≤ t then w t * F u else 0 :=
+      ray_triangle_lintegral_swap w F hw hF
+    _ = _ := by
+      apply lintegral_congr_ae
+      filter_upwards [ae_restrict_mem measurableSet_Ioi] with u hu
+      exact ray_triangle_exponential_tail hr hu (F u)
+
+
+private theorem expMoment (p : ℕ) {r : ℝ} (hr : 0 < r) :
+    (∫ t in Ioi (0 : ℝ), Real.exp (-r * t) * t ^ p) = (p.factorial : ℝ) / r ^ (p + 1) := by
+  rw [pow_succ, ← div_div, ← moment_integral p hr]
+  field_simp
+
+/-- Exponential weighting of a cumulative linear square bound, allowing jumps
+in the measurable velocity. -/
+theorem weightedVelocitySquare_le (V : ℝ → ℝ) (hVm : Measurable V)
+    (hV : ∀ t ≥ 0, IntervalIntegrable (fun u => V u ^ 2) volume 0 t)
+    {A D r : ℝ} (hA : 0 ≤ A) (hD : 0 ≤ D) (hr : 0 < r)
+    (hE : ∀ t ≥ 0, (∫ u in (0 : ℝ)..t, V u ^ 2) ≤ A * t + D) :
+    IntegrableOn (fun u => Real.exp (-r * u) * V u ^ 2) (Ioi 0) ∧
+      (∫ u in Ioi (0 : ℝ), Real.exp (-r * u) * V u ^ 2) ≤ A / r + D := by
+  let g (u : ℝ) := Real.exp (-r * u) / r * V u ^ 2
+  let k (t : ℝ) := Real.exp (-r * t) * (A * t + D)
+  have hg : Measurable g := by dsimp [g]; fun_prop
+  have hg0 : 0 ≤ᵐ[volume.restrict (Ioi 0)] g := ae_of_all _ fun u => by
+    dsimp [g]; positivity
+  have hk0 : 0 ≤ᵐ[volume.restrict (Ioi 0)] k := by
+    filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
+    have : 0 ≤ t := ht.le
+    dsimp [k]; positivity
+  have hkt (t : ℝ) : k t = A * (Real.exp (-r * t) * t ^ 1) +
+      D * (Real.exp (-r * t) * t ^ 0) := by dsimp [k]; ring
+  have hki : IntegrableOn k (Ioi 0) := by
+    rw [show k = (fun t => A * (Real.exp (-r * t) * t ^ 1) +
+      D * (Real.exp (-r * t) * t ^ 0)) from funext hkt]
+    exact ((moment_integrable 1 hr).const_mul A).add ((moment_integrable 0 hr).const_mul D)
+  have hkiEq : (∫ t in Ioi (0 : ℝ), k t) = A / r ^ 2 + D / r := by
+    simp_rw [hkt]
+    rw [integral_add ((moment_integrable 1 hr).const_mul A)
+      ((moment_integrable 0 hr).const_mul D), integral_const_mul, integral_const_mul,
+      expMoment 1 hr, expMoment 0 hr]
+    norm_num
+    ring
+  have hb : (∫⁻ u in Ioi (0 : ℝ), ENNReal.ofReal (g u)) ≤ ENNReal.ofReal (A / r ^ 2 + D / r) := by
+    simp_rw [g, ENNReal.ofReal_mul (by positivity : 0 ≤ Real.exp (-r * _) / r)]
+    rw [← weightedCumulativeSquare_eq_lintegral V hVm hV hr, ← hkiEq,
+      ofReal_integral_eq_lintegral_ofReal hki hk0]
+    apply lintegral_mono_ae
+    filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
+    dsimp only [k]
+    rw [ENNReal.ofReal_mul (Real.exp_pos _).le]
+    exact mul_le_mul_of_nonneg_left (ENNReal.ofReal_le_ofReal (hE _ ht.le)) zero_le
+  have hgi : IntegrableOn g (Ioi 0) := ⟨hg.aestronglyMeasurable,
+    (hasFiniteIntegral_iff_ofReal hg0).2 (hb.trans_lt ENNReal.ofReal_lt_top)⟩
+  have hgLe : (∫ u in Ioi (0 : ℝ), g u) ≤ A / r ^ 2 + D / r :=
+    (ENNReal.ofReal_le_ofReal_iff (by positivity)).mp
+      ((ofReal_integral_eq_lintegral_ofReal hgi hg0).le.trans hb)
+  have hmul (u : ℝ) : Real.exp (-r * u) * V u ^ 2 = r * g u := by
+    dsimp [g]
+    field_simp
+  simp_rw [hmul]
+  refine ⟨hgi.const_mul r, ?_⟩
+  rw [integral_const_mul]
+  calc
+    _ ≤ r * (A / r ^ 2 + D / r) := mul_le_mul_of_nonneg_left hgLe hr.le
+    _ = _ := by field_simp
 
 end GRWTSK.MeasureAndIntegration.LaplaceCumulativeSquareBound
