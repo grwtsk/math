@@ -810,4 +810,52 @@ theorem cryptids_RH_iff_eventually_bounded_trailingSquareRejections :
     have small := bounded n hn
     omega
 
+/-- Saturating the native rejection monitor at a prescribed cap uses
+only the states from zero through that cap. -/
+def cappedSquareRejections (cap : ℕ) : ℕ → ℕ
+  | 0 => 0
+  | n + 1 => if squareRejects n then min cap (cappedSquareRejections cap n + 1) else 0
+
+theorem cappedSquareRejections_eq_min (cap n : ℕ) :
+    cappedSquareRejections cap n = min cap (trailingSquareRejections n) := by
+  induction n with
+  | zero => simp [cappedSquareRejections, trailingSquareRejections]
+  | succ n ih =>
+    cases h : squareRejects n
+    · simp [cappedSquareRejections, trailingSquareRejections, h]
+    · simp only [cappedSquareRejections, trailingSquareRejections, h, ite_true, ih]
+      rcases le_total cap (trailingSquareRejections n) with small | large
+      · rw [min_eq_left small, min_eq_left (by omega : cap ≤ cap + 1),
+          min_eq_left (by omega : cap ≤ trailingSquareRejections n + 1)]
+      · rw [min_eq_right large]
+
+/-- For every positive cap, saturation at any finite time is a native
+halting certificate. Native halting forces saturation past every cutoff. -/
+theorem cryptids_halts_iff_cappedSquareRejections_saturates {cap : ℕ}
+    (positive : 0 < cap) :
+    (Halts Riemann95.candidate ↔ ∃ n, cappedSquareRejections cap n = cap) ∧
+    (Halts Riemann95.candidate ↔
+      ∀ start, ∃ n ≥ start, cappedSquareRejections cap n = cap) := by
+  have threshold (n : ℕ) :
+      cappedSquareRejections cap n = cap ↔ cap ≤ trailingSquareRejections n := by
+    rw [cappedSquareRejections_eq_min]
+    omega
+  have recurring (halts : Halts Riemann95.candidate) (start : ℕ) :
+      ∃ n ≥ start, cappedSquareRejections cap n = cap := by
+    obtain ⟨n, later, long⟩ :=
+      cryptids_halts_iff_trailingSquareRejections_unbounded.mp halts start cap
+    exact ⟨n, later, (threshold n).mpr long⟩
+  have sound (n : ℕ) (saturated : cappedSquareRejections cap n = cap) :
+      Halts Riemann95.candidate :=
+    cryptids_halts_of_trailingSquareRejections_pos (positive.trans_le ((threshold n).mp saturated))
+  exact ⟨⟨fun halts => let ⟨n, _, h⟩ := recurring halts 0; ⟨n, h⟩,
+      fun ⟨n, h⟩ => sound n h⟩,
+    ⟨recurring, fun h => let ⟨n, _, saturated⟩ := h 0; sound n saturated⟩⟩
+
+/-- At cap zero, saturation ceases to carry information about the
+underlying arithmetic results. -/
+theorem cappedSquareRejections_zero_cap (n : ℕ) :
+    cappedSquareRejections 0 n = 0 := by
+  simp [cappedSquareRejections_eq_min]
+
 end GRWTSK.NumberTheory.Riemann95StageCertificates
