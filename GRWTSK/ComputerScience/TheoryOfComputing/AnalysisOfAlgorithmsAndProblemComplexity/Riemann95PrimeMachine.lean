@@ -1010,4 +1010,56 @@ theorem exists_failed_cofinal_schedule_iff_not_RH (origin : ℕ) (schedules : �
   (halts_iff_failed_cofinal_schedule origin schedules target cofinal).symm.trans
     (halts_iff_not_RH origin)
 
+/-- A terminal configuration reached after exactly n successful instructions
+determines the exact failure threshold for every prime-window schedule. -/
+theorem runOn_eq_none_iff_length_gt_of_terminal {w n : ℕ} {c terminal : Configuration w}
+    (trace : run n c = some terminal) (stop : step terminal = none)
+    (schedule : List ℕ) (target : ℕ) :
+    runOn schedule target c = none ↔ n < schedule.length := by
+  have failedPrefix {m k : ℕ} (failed : run m c = none) (h : m ≤ k) :
+      run k c = none := by
+    obtain ⟨rest, rfl⟩ := Nat.exists_eq_add_of_le h
+    rw [run_add', failed]
+    rfl
+  have next : run (n + 1) c = none := by
+    rw [run_add', trace, Option.bind_some, run, stop]
+    rfl
+  rw [runOn_eq, Option.map_eq_none_iff]
+  constructor
+  · intro failed
+    by_contra! short
+    have bad := failedPrefix failed short
+    rw [trace] at bad
+    cases bad
+  · intro long
+    exact failedPrefix next long
+
+/-- Halting of the original blank-start machine gives an exact budget cutoff
+independent of both the intermediate prime addresses and final window.
+The verified native prefix gives a lower bound on that cutoff. -/
+theorem halts_iff_exists_runOn_failure_threshold (origin : ℕ) :
+    Halts origin ↔ ∃ n ≥ 3634, ∀ (schedule : List ℕ) (target : ℕ),
+      runOn schedule target (blank origin) = none ↔ n < schedule.length := by
+  constructor
+  · intro halted
+    let result := StateTransition.eval step (blank origin)
+    have member : result.get halted ∈ result := ⟨halted, rfl⟩
+    obtain ⟨reached, stop⟩ := mem_eval.mp member
+    obtain ⟨n, trace⟩ := exists_run_of_reaches reached
+    have cutoff := runOn_eq_none_iff_length_gt_of_terminal trace stop
+    let bootSchedule := List.replicate 3634 origin
+    have len : bootSchedule.length = 3634 := List.length_replicate
+    obtain ⟨c, ran, _⟩ := blank_runOn_reaches_initialRoot bootSchedule len origin origin
+    refine ⟨n, ?_, cutoff⟩
+    by_contra! short
+    have failed := (cutoff bootSchedule origin).mpr (len ▸ short)
+    rw [ran] at failed
+    cases failed
+  · rintro ⟨n, _, threshold⟩
+    let schedules (k : ℕ) := List.replicate k origin
+    have cofinal : ∀ k, ∃ t, k ≤ (schedules t).length :=
+      fun k => ⟨k, by simp [schedules]⟩
+    apply (halts_iff_failed_cofinal_schedule origin schedules (fun _ => origin) cofinal).mpr
+    exact ⟨n + 1, (threshold _ _).mpr (by simp [schedules])⟩
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
