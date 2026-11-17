@@ -6,6 +6,7 @@ import Mathlib.MeasureTheory.Integral.ExpDecay
 import Mathlib.Analysis.Fourier.LpSpace
 import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.DirichletLaplaceIdentity
+import Mathlib.Analysis.Calculus.ParametricIntegral
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -326,5 +327,68 @@ theorem signedLaplace_wholePickup_eq_velocity_of_weakMertens {B : ℝ} (hB : 0 �
       rw [heq, setIntegral_indicator measurableSet_Ici, hi, integral_Ici_eq_integral_Ioi,
         integral_mul_const, integral_exp_mul_complex_Ioi (a := -z) (by simp; linarith)]
       ring
+
+open scoped Topology
+
+/-- Weak Mertens provides an exponential majorant for differentiation of the
+exact velocity Laplace integral throughout the positive half-plane. -/
+theorem signedLaplace_pickupVelocity_analyticAt_of_weakMertens {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    {z : ℂ} (hz : 0 < z.re) :
+    AnalyticAt ℂ (signedLaplace pickupVelocity) z := by
+  have habs {r : ℝ} (hr : 0 < r) :
+      IntegrableOn (fun u => Real.exp (-r * u) * |pickupVelocity u|) (Ioi 0) := by
+    have h := dampedPickupVelocity_integrable_of_weakMertens hB hr hM
+    rw [dampedPickupVelocity, integrable_indicator_iff measurableSet_Ioi] at h
+    simpa only [IntegrableOn, Complex.norm_real, Real.norm_eq_abs, abs_mul,
+      abs_of_pos (Real.exp_pos _)] using h.norm
+  have hd (z₀ : ℂ) (hz₀ : 0 < z₀.re) :
+      DifferentiableAt ℂ (signedLaplace pickupVelocity) z₀ := by
+    let a := z₀.re / 2
+    have ha : 0 < a := half_pos hz₀
+    let F (w : ℂ) (u : ℝ) := Complex.exp (-(w * (u : ℂ))) * (pickupVelocity u : ℂ)
+    let F' (w : ℂ) (u : ℝ) := -(u : ℂ) * F w u
+    let U : Set ℂ := {w | a < w.re}
+    have hU : U ∈ 𝓝 z₀ :=
+      (isOpen_lt continuous_const Complex.continuous_re).mem_nhds (by dsimp [U, a]; linarith)
+    have hm (w : ℂ) : Measurable (F w) := by
+      exact (by fun_prop : Measurable (fun u : ℝ => Complex.exp (-(w * (u : ℂ))))).mul
+        (Complex.measurable_ofReal.comp pickupVelocity_measurable)
+    have hn (w : ℂ) (u : ℝ) : ‖F w u‖ = Real.exp (-w.re * u) * |pickupVelocity u| := by
+      simp [F, Complex.norm_exp, Complex.mul_re, Complex.norm_real, Real.norm_eq_abs, neg_mul]
+    have hFi : IntegrableOn (F z₀) (Ioi 0) :=
+      (habs hz₀).mono' (hm z₀).aestronglyMeasurable (ae_of_all _ fun u => (hn z₀ u).le)
+    have hi := (habs (half_pos ha)).const_mul (2 / a)
+    have hbound : ∀ᵐ u ∂volume.restrict (Ioi (0 : ℝ)), ∀ w ∈ U,
+        ‖F' w u‖ ≤ (2 / a) * (Real.exp (-(a / 2) * u) * |pickupVelocity u|) := by
+      filter_upwards [ae_restrict_mem measurableSet_Ioi] with u hu w hw
+      have hu0 : 0 ≤ u := hu.le
+      have hexp : Real.exp (-w.re * u) ≤ Real.exp (-a * u) :=
+        Real.exp_le_exp.mpr (mul_le_mul_of_nonneg_right (neg_le_neg (le_of_lt hw)) hu0)
+      have hu_le : u ≤ 2 * Real.exp (a * u / 2) / a := by
+        apply (le_div_iff₀ ha).mpr
+        linarith [Real.add_one_le_exp (a * u / 2)]
+      rw [show F' w u = -(u : ℂ) * F w u from rfl,
+        norm_mul, norm_neg, Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg hu0, hn]
+      calc
+        _ ≤ u * (Real.exp (-a * u) * |pickupVelocity u|) :=
+          mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right hexp (abs_nonneg _)) hu0
+        _ ≤ (2 * Real.exp (a * u / 2) / a) * (Real.exp (-a * u) * |pickupVelocity u|) :=
+          mul_le_mul_of_nonneg_right hu_le (mul_nonneg (Real.exp_pos _).le (abs_nonneg _))
+        _ = _ := by
+          rw [show -(a / 2) * u = a * u / 2 + (-a * u) by ring, Real.exp_add]
+          ring
+    have hder (u : ℝ) (w : ℂ) : HasDerivAt (F · u) (F' w u) w := by
+      have hlin : HasDerivAt (fun x : ℂ => -x * (u : ℂ)) (-(u : ℂ)) w := by
+        simpa using (hasDerivAt_id w).neg.mul_const (u : ℂ)
+      convert (hlin.cexp.mul_const (pickupVelocity u : ℂ)) using 1 <;> simp only [F, F', neg_mul]
+      ring
+    exact (hasDerivAt_integral_of_dominated_loc_of_deriv_le hU
+      (Filter.Eventually.of_forall fun w => (hm w).aestronglyMeasurable)
+      hFi ((Complex.continuous_ofReal.neg.measurable.mul (hm z₀)).aestronglyMeasurable)
+      hbound hi (Filter.Eventually.of_forall fun u w _ => hder u w)).2.differentiableAt
+  exact (show DifferentiableOn ℂ (signedLaplace pickupVelocity) {w | 0 < w.re} from
+    fun w hw => (hd w hw).differentiableWithinAt).analyticAt
+      ((isOpen_lt continuous_const Complex.continuous_re).mem_nhds hz)
 
 end GRWTSK.NumberTheory.Moebius
