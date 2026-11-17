@@ -858,4 +858,62 @@ theorem weightedCenteredWholePickupSquare_le_of_weakMertens {B : ℝ} (hB : 0 �
       _ = _ := (hnorm (𝓕 F)).trans hfreq
       _ ≤ _ := (hline σ hσ hσmax).2
 
+/-- Under weak Mertens and midpoint nonvanishing, the exact midpoint-centered
+pickup has a linear cumulative square bound on all nonnegative horizons. -/
+theorem centeredWholePickupSquare_linearEnvelope_of_weakMertens {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (hmid : riemannZeta (1 / 2 : ℂ) ≠ 0) :
+    ∃ A E : ℝ, 0 ≤ A ∧ 0 ≤ E ∧ ∀ T ≥ 0,
+      (∫ u in (0 : ℝ)..T, (wholePickup u - (2 / riemannZeta (1 / 2 : ℂ)).re) ^ 2) ≤
+        A * T + E := by
+  obtain ⟨σ₀, K, D, hσ₀, hK, hD, hweighted⟩ :=
+    weightedCenteredWholePickupSquare_le_of_weakMertens hB hM hmid
+  refine ⟨Real.exp 1 * (2 * K), Real.exp 1 * (2 * K * σ₀⁻¹ + D), by positivity,
+    by positivity, fun T hT => ?_⟩
+  let S := T + σ₀⁻¹
+  have hS : 0 < S := add_pos_of_nonneg_of_pos hT (inv_pos.mpr hσ₀)
+  let σ := 1 / (2 * S)
+  have hσ : 0 < σ := by dsimp [σ]; positivity
+  have hrec : σ₀ * σ₀⁻¹ = 1 := mul_inv_cancel₀ hσ₀.ne'
+  have hσle : σ ≤ σ₀ := by
+    dsimp [σ]
+    apply (div_le_iff₀ (by positivity)).2
+    dsimp [S]
+    nlinarith [mul_nonneg hσ₀.le hT]
+  let c := (2 / riemannZeta (1 / 2 : ℂ)).re
+  let w (u : ℝ) := Real.exp (-(2 * σ) * u) * (wholePickup u - c) ^ 2
+  obtain ⟨hwI, hw⟩ := hweighted σ hσ hσle
+  change IntegrableOn w (Ioi 0) at hwI
+  change (∫ u in Ioi (0 : ℝ), w u) ≤ K / σ + D at hw
+  have hsubset : Ioc (0 : ℝ) T ⊆ Ioi 0 := fun _ hu => hu.1
+  have h1 : 2 * σ * S = 1 := by
+    dsimp [σ]
+    field_simp
+  have hunw (u : ℝ) (hu : u ∈ Ioc (0 : ℝ) T) :
+      (wholePickup u - c) ^ 2 ≤ Real.exp 1 * w u := by
+    have huS : u ≤ S := hu.2.trans (le_add_of_nonneg_right (inv_nonneg.mpr hσ₀.le))
+    have hle := mul_le_mul_of_nonneg_left huS (show 0 ≤ 2 * σ by positivity)
+    dsimp [w]
+    rw [← mul_assoc, ← Real.exp_add]
+    exact le_mul_of_one_le_left (sq_nonneg _)
+      (Real.one_le_exp_iff.mpr (by linarith))
+  change (∫ u in (0 : ℝ)..T, (wholePickup u - c) ^ 2) ≤ _
+  rw [intervalIntegral.integral_of_le hT]
+  calc
+    _ ≤ ∫ u in Ioc (0 : ℝ) T, Real.exp 1 * w u := by
+      apply setIntegral_mono_on _ ((hwI.mono_set hsubset).const_mul _) measurableSet_Ioc hunw
+      have hc : Continuous (fun u => (wholePickup u - c) ^ 2) :=
+        (wholePickup_continuous.sub continuous_const).pow 2
+      exact (hc.intervalIntegrable 0 T).1
+    _ ≤ Real.exp 1 * (∫ u in Ioi (0 : ℝ), w u) := by
+      rw [integral_const_mul]
+      exact mul_le_mul_of_nonneg_left (setIntegral_mono_set hwI
+        (ae_of_all _ fun u => by dsimp [w]; positivity) (ae_of_all _ hsubset)) (Real.exp_pos _).le
+    _ ≤ Real.exp 1 * (K / σ + D) := mul_le_mul_of_nonneg_left hw (Real.exp_pos _).le
+    _ = _ := by
+      have hratio : K / σ = 2 * K * S := by dsimp [σ]; field_simp
+      rw [hratio]
+      dsimp [S]
+      ring
+
 end GRWTSK.NumberTheory.Moebius
