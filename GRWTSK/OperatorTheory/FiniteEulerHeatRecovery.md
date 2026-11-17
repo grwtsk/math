@@ -165,3 +165,32 @@ checked. Each of the seven new declarations uses only `propext`,
 closure and independent review of the extension are `NOT_RUN`.
 
 [Coordination and exact evidence](https://github.com/grwtsk/math/issues/1824)
+
+## Two rates obstruct a common Euler heat time
+
+Let the slot exposure at rate `λ` be `aⱼ = dwellⱼ * λ`, where dwell
+already includes calibration. Assume every `2*aⱼ < 1` and at least
+one `aⱼ ≠ 0`. At the doubled rate the multiplier is strictly less
+than the square of the multiplier at the original rate. Indeed
+`(1-aⱼ)^2 - (1-2*aⱼ) = aⱼ^2`, and positivity preserves strict
+inequality when multiplying over the slots. A common exponential time
+would instead give equality. The constant input one exposes both
+multipliers, so it refutes every real time for that generator. See
+`eulerMultiplier_double_rate_lt_square` and
+`euler_double_rate_ne_spectralHeat`.
+
+The 95-slot control uses rates 1 and 2 and a single nonzero calibrated
+dwell of 1/4. Its multipliers are 3/4 and 1/2, and 1/2 is below 9/16.
+This applies the existing common-clock criterion to a shared generator
+with a pair of doubled rates. The separate modewise logarithmic
+exposures still give the exact diagonal representation. For a physical
+return, the next premise is a certified identification of the actual
+sensor and source coordinates, followed by propagation of the measured
+exposures through the existing readout bounds. The sign convention
+remains forward time s corresponding to Newman time -s.
+[Rodgers–Tao, §1](https://arxiv.org/abs/1801.05914v5)
+
+Strict compilation, targeted kernel replay, the 95-slot control and
+the two transitive axiom audits passed on the root Lean and Mathlib
+pins. Fresh import-closure replay, independent review and physical
+HS sensor identification are `NOT_RUN`.

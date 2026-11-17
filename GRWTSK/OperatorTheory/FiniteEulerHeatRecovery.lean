@@ -505,4 +505,49 @@ theorem uniform_euler_inverse_gain_iff_logExposure
     rw [euler_inverse_gain_eq_exp_logExposure (a n) i (fun j => strict n j i)]
     exact Real.exp_le_exp.mpr (bounded n i)
 
+
+/-- For a shared schedule of calibrated dwell times, the Euler response at
+twice a positive rate is strictly smaller than the square of its response
+at that rate, provided a slot is active and all doubled steps are subunit. -/
+theorem eulerMultiplier_double_rate_lt_square {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (double : rates k = 2 * rates i)
+    (subunit : ∀ j, 2 * (dwell j * rates i) < 1)
+    (active : ∃ j, dwell j * rates i ≠ 0) :
+    eulerMultiplier (fun j m => dwell j * rates m) k <
+      (eulerMultiplier (fun j m => dwell j * rates m) i) ^ 2 := by
+  simp only [eulerMultiplier, double, ← Finset.prod_pow]
+  apply Finset.prod_lt_prod₀
+  · intro j _
+    linarith [subunit j]
+  · intro j _
+    nlinarith [sq_nonneg (dwell j * rates i)]
+  · obtain ⟨j, hn⟩ := active
+    exact ⟨j, Finset.mem_univ _, by nlinarith [sq_pos_of_ne_zero hn]⟩
+
+/-- Two modes at rates λ and 2λ already obstruct an exact common scalar
+heat time for the original generator. The constant input 1 witnesses
+failure for every proposed time. -/
+theorem euler_double_rate_ne_spectralHeat {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (double : rates k = 2 * rates i)
+    (subunit : ∀ j, 2 * (dwell j * rates i) < 1)
+    (active : ∃ j, dwell j * rates i ≠ 0) (time : ℝ) :
+    euler (fun j m => dwell j * rates m) (fun _ => 1) ≠
+      spectralHeat rates time (fun _ => 1) := by
+  intro equal
+  have atRate (m : I) :
+      eulerMultiplier (fun j x => dwell j * rates x) m = Real.exp (-time * rates m) := by
+    have h := congrFun equal m
+    change eulerMultiplier (fun j x => dwell j * rates x) m * 1 =
+      Real.exp (-time * rates m) * 1 at h
+    simpa only [mul_one] using h
+  have strict := eulerMultiplier_double_rate_lt_square dwell rates i k double subunit active
+  rw [atRate, atRate, double, ← Real.exp_nat_mul] at strict
+  have exponent : -time * (2 * rates i) = (↑(2 : ℕ) : ℝ) * (-time * rates i) := by
+    push_cast
+    ring
+  rw [exponent] at strict
+  exact (lt_irrefl _) strict
+
 end GRWTSK.OperatorTheory.FiniteEulerHeatRecovery
