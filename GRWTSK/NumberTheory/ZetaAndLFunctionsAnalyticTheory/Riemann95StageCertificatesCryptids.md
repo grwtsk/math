@@ -85,6 +85,34 @@ existence beyond each cutoff with no bound on how far to search for a witness.
 [Original witness criterion](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/Riemann95.lean#L19-L27) ·
 [Finite arithmetic bound](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/Semantics/Riemann120/Analytic.lean#L436-L439)
 
+## Arbitrary ordinal-window cutoffs
+
+In `GRWTSK.NumberTheory.Riemann95StageCertificates`,
+`exists_prime_badSlot_at_or_above` sends the preceding prime witness back to
+the exact ordinal checker. For any starting window `k`, choose a bad prime
+argument `p > 95*k+1` using `exists_cryptids_prime_counterexample_above`.
+The pinned predicate identity and `argumentAddress_iff` place it at a slot
+with `p = 95*w+j+2` and `j < 95`. A window `w < k` ends at an argument of
+at most `95*k+1`, so the recovered window satisfies `k ≤ w`.
+
+`cryptids_halts_iff_cofinal_rejected_windows` uses `accepts_iff` to turn
+the slot into a rejected window. In the reverse direction, even one
+rejection contradicts the all-window acceptance implied by RH.
+`windows_accept_from_iff_cryptids_RH` therefore gives RH exactly when
+every window from any prescribed start onward is accepted.
+`accepts_off_finite_set_iff_cryptids_RH` gives the same result for acceptance
+outside any prescribed finite set of windows, by choosing a start beyond
+the supremum of that set.
+
+These local consequences use the same pinned `ShuniaCounterexample`,
+blank-tape candidate and `RiemannHypothesis` as the prime-witness return.
+A certificate schedule that covers an entire suffix can use the new
+return. An abstract checker that accepts the even window indices and
+rejects the odds shows that cofinally many acceptances alone cannot
+establish suffix acceptance. The source-specific remaining inputs are
+acceptance throughout a suffix and exact agreement of any runtime gate
+used to supply those certificates.
+
 ## Proof obligations
 
 ```text
@@ -93,6 +121,8 @@ ordinal division → exact source stage partition
 sound acceptance + certified union covers the source → universal safety
 universal safety ↔ blank-tape nonhalting ↔ RH
 one-sided oscillation + least-prime comparison → prime witnesses on halting
+prime witnesses beyond every cutoff + ordinal decoding → cofinal rejected windows
+exact acceptance outside a finite set → suffix acceptance → RH
 ```
 
 To establish universal safety directly, a proof must supply the successor
@@ -129,4 +159,10 @@ passed a kernel-checked finite proof.
 Full fresh replay of the generic coverage and orbit import closures was
 started and stopped without a result. Full fresh replay of the isolated
 import closure, HS runtime parity, and independent review are `NOT_RUN`.
+
+For the four ordinal-cutoff declarations, elaboration with `--trust=0`,
+exact-type checks, and kernel replay against the imported environment
+passed on the isolated Lean and Mathlib pins above. The transitive axiom
+audit reported `propext`, `Classical.choice`, and `Quot.sound` for each.
+Fresh transitive replay for the ordinal-cutoff extension is `NOT_RUN`.
 [Coordination and exact checks](https://github.com/grwtsk/math/issues/1820)

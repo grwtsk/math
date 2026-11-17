@@ -98,4 +98,67 @@ theorem all_prime_labels_safe_iff_RH :
   rw [primeSafe, ← cryptids_halts_iff_prime_counterexample,
      Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis, not_not]
 
+/-- A prime-valued source counterexample can be found inside an ordinal window
+at or above any window cutoff. -/
+theorem exists_prime_badSlot_at_or_above (halts : Halts Riemann95.candidate) (start : ℕ) :
+    ∃ window ≥ start, ∃ slot : Fin 95,
+      Nat.Prime (stageArgument (stageOrdinal window slot)) ∧ slot ∈ badSlots window := by
+  obtain ⟨p, prime, beyond, bad⟩ := exists_cryptids_prime_counterexample_above halts
+    (95 * start + 1)
+  obtain ⟨window, slot, address⟩ := (argumentAddress_iff p).mpr prime.two_le
+  have after : start ≤ window := by
+    have := slot.isLt
+    simp only [stageArgument, stageOrdinal] at address
+    omega
+  refine ⟨window, after, slot, ?_, mem_badSlots.mpr ?_⟩
+  · rwa [address]
+  · rw [address]
+    exact (counterexample_iff_cryptids p).mpr bad
+
+/-- Rejections of the exact ordinal checker are cofinal exactly when the
+original blank-tape machine halts. -/
+theorem cryptids_halts_iff_cofinal_rejected_windows :
+    Halts Riemann95.candidate ↔ ∀ start : ℕ, ∃ window ≥ start, accepts window = false := by
+  constructor
+  · intro halts start
+    obtain ⟨window, after, slot, _, bad⟩ := exists_prime_badSlot_at_or_above halts start
+    refine ⟨window, after, Bool.eq_false_iff.mpr ?_⟩
+    intro accepted
+    exact (accepts_iff window).mp accepted slot (mem_badSlots.mp bad)
+  · intro cofinal
+    obtain ⟨window, _, rejected⟩ := cofinal 0
+    apply Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr
+    intro rh
+    rw [all_windows_accept_iff_cryptids_RH.mpr rh window] at rejected
+    contradiction
+
+/-- Acceptance on an entire ordinal-window suffix is equivalent to RH for
+every choice of the discarded prefix. -/
+theorem windows_accept_from_iff_cryptids_RH (start : ℕ) :
+    (∀ window ≥ start, accepts window = true) ↔ RiemannHypothesis := by
+  constructor
+  · intro accepted
+    by_contra notRH
+    have halts := Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr notRH
+    obtain ⟨window, after, rejected⟩ := cryptids_halts_iff_cofinal_rejected_windows.mp halts start
+    rw [accepted window after] at rejected
+    contradiction
+  · intro rh window _
+    exact all_windows_accept_iff_cryptids_RH.mpr rh window
+
+/-- The exact checker may leave any prescribed finite set of windows unchecked
+if it certifies every window outside that set. -/
+theorem accepts_off_finite_set_iff_cryptids_RH (skipped : Finset ℕ) :
+    (∀ window, window ∉ skipped → accepts window = true) ↔ RiemannHypothesis := by
+  constructor
+  · intro accepted
+    apply (windows_accept_from_iff_cryptids_RH (skipped.sup id + 1)).mp
+    intro window after
+    apply accepted window
+    intro member
+    have h := Finset.le_sup (f := id) member
+    exact (Nat.not_lt_of_ge h) after
+  · intro rh window _
+    exact all_windows_accept_iff_cryptids_RH.mpr rh window
+
 end GRWTSK.NumberTheory.Riemann95StageCertificates
