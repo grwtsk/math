@@ -709,4 +709,94 @@ theorem signedLaplace_centeredWholePickup_line_square_le_of_weakMertens {B : ℝ
           add_le_add (add_le_add (mul_le_mul_of_nonneg_left hv hk) le_rfl) le_rfl
         _ = _ := by ring
 
+/-- The exact centered pickup with exponential damping and causal zero extension. -/
+def dampedCenteredWholePickup (σ c : ℝ) : ℝ → ℂ :=
+  (Ioi (0 : ℝ)).indicator
+    (fun u => ((Real.exp (-σ * u) * (wholePickup u - c) : ℝ) : ℂ))
+
+/-- Weak Mertens places the damped centered pickup in both domains needed
+for the classical and Plancherel Fourier transforms. -/
+theorem dampedCenteredWholePickup_integrable_memLp_two_of_weakMertens {B σ : ℝ}
+    (hB : 0 ≤ B) (hσ : 0 < σ)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (c : ℝ) :
+    Integrable (dampedCenteredWholePickup σ c) ∧
+      MemLp (dampedCenteredWholePickup σ c) 2 volume := by
+  let r := σ / 2
+  have hr : 0 < r := half_pos hσ
+  let v (u : ℝ) := Real.exp (-r * u) * |pickupVelocity u|
+  have hv : IntegrableOn v (Ioi 0) := by
+    have hi := dampedPickupVelocity_integrable_of_weakMertens hB hr hM
+    rw [dampedPickupVelocity, integrable_indicator_iff measurableSet_Ioi] at hi
+    simpa only [v, IntegrableOn, Complex.norm_real, Real.norm_eq_abs, abs_mul,
+      abs_of_pos (Real.exp_pos _)] using hi.norm
+  have hv0 (u : ℝ) : 0 ≤ v u := by dsimp [v]; positivity
+  let K := (∫ u in Ioi (0 : ℝ), v u) + |c|
+  have hK : 0 ≤ K := add_nonneg (integral_nonneg hv0) (abs_nonneg _)
+  have hP (t : ℝ) (ht : 0 < t) : |wholePickup t| ≤
+      Real.exp (r * t) * (∫ u in Ioi (0 : ℝ), v u) := by
+    have hs : Ioc (0 : ℝ) t ⊆ Ioi 0 := fun _ hu => hu.1
+    have ha := (pickupVelocity_intervalIntegrable 0 t).abs
+    calc
+      _ ≤ ∫ u in (0 : ℝ)..t, |pickupVelocity u| :=
+        intervalIntegral.abs_integral_le_integral_abs ht.le
+      _ ≤ ∫ u in Ioc (0 : ℝ) t, Real.exp (r * t) * v u := by
+        rw [intervalIntegral.integral_of_le ht.le]
+        apply setIntegral_mono_on ha.1 ((hv.mono_set hs).const_mul _) measurableSet_Ioc
+        intro u hu
+        dsimp [v]
+        rw [← mul_assoc, ← Real.exp_add]
+        exact le_mul_of_one_le_left (abs_nonneg _)
+          (Real.one_le_exp_iff.mpr (by nlinarith [mul_nonneg hr.le (sub_nonneg.mpr hu.2)]))
+      _ ≤ _ := by
+        rw [integral_const_mul]
+        exact mul_le_mul_of_nonneg_left
+          (setIntegral_mono_set hv (ae_of_all _ hv0) (ae_of_all _ hs)) (Real.exp_pos _).le
+  let W := dampedCenteredWholePickup σ c
+  let E := (Ioi (0 : ℝ)).indicator (fun t => K * Real.exp (-r * t))
+  have hm : Measurable W := by
+    have he : Measurable (fun t : ℝ => Real.exp (-σ * t)) := by fun_prop
+    exact (Complex.measurable_ofReal.comp (he.mul
+      (wholePickup_measurable.sub measurable_const))).indicator measurableSet_Ioi
+  have hnorm (t : ℝ) : ‖W t‖ ≤ E t := by
+    by_cases ht : t ∈ Ioi (0 : ℝ)
+    · simp only [W, dampedCenteredWholePickup, E, indicator_of_mem ht, Complex.norm_real,
+        Real.norm_eq_abs, abs_mul, abs_of_pos (Real.exp_pos _)]
+      have h1 : 1 ≤ Real.exp (r * t) :=
+        Real.one_le_exp_iff.mpr (mul_nonneg hr.le ht.out.le)
+      have hcenter : |wholePickup t - c| ≤ Real.exp (r * t) * K := by
+        calc
+          _ ≤ |wholePickup t| + |c| := abs_sub _ _
+          _ ≤ Real.exp (r * t) * (∫ u in Ioi (0 : ℝ), v u) +
+              Real.exp (r * t) * |c| :=
+            add_le_add (hP t ht) (le_mul_of_one_le_left (abs_nonneg _) h1)
+          _ = _ := by simp only [K, mul_add]
+      calc
+        _ ≤ Real.exp (-σ * t) * (Real.exp (r * t) * K) :=
+          mul_le_mul_of_nonneg_left hcenter (Real.exp_pos _).le
+        _ = _ := by
+          rw [← mul_assoc, ← Real.exp_add, show -σ * t + r * t = -r * t by dsimp [r]; ring]
+          ring
+    · simp [W, dampedCenteredWholePickup, E, indicator_of_notMem ht]
+  have hEI : Integrable E :=
+    (integrable_indicator_iff measurableSet_Ioi).2 ((exp_neg_integrableOn_Ioi 0 hr).const_mul K)
+  have hEsq : Integrable (fun t => E t ^ 2) := by
+    have hEq : (fun t => E t ^ 2) =
+        (Ioi (0 : ℝ)).indicator (fun t => K ^ 2 * Real.exp (-σ * t)) := by
+      funext t
+      by_cases ht : t ∈ Ioi (0 : ℝ)
+      · simp only [E, indicator_of_mem ht, mul_pow]
+        rw [pow_two (Real.exp _), ← Real.exp_add]
+        congr 2
+        dsimp [r]
+        ring
+      · simp [E, indicator_of_notMem ht]
+    rw [hEq, integrable_indicator_iff measurableSet_Ioi]
+    exact (exp_neg_integrableOn_Ioi 0 hσ).const_mul _
+  refine ⟨hEI.mono' hm.aestronglyMeasurable (ae_of_all _ hnorm),
+    (memLp_two_iff_integrable_sq_norm hm.aestronglyMeasurable).2 ?_⟩
+  refine hEsq.mono' (hm.norm.pow_const 2).aestronglyMeasurable (ae_of_all _ fun t => ?_)
+  rw [Real.norm_of_nonneg (sq_nonneg _)]
+  exact pow_le_pow_left₀ (norm_nonneg _) (hnorm t) 2
+
 end GRWTSK.NumberTheory.Moebius
