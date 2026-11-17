@@ -275,3 +275,28 @@ coverage of successful proposals. An HS runtime still needs to bind
 each proposal to the current anchored root and deliver a successful
 proposal at every stage that it reaches. Verification of this
 extension is recorded in [issue #1823](https://github.com/grwtsk/math/issues/1823).
+
+## Stage-dependent batch deadlines
+
+Every batch run, including an unfair one, carries a safe strict
+arithmetic prefix at every active or halted state. Inconclusive
+batches leave that prefix unchanged. Completed receipts append the
+verified safe stage. A counterexample receipt preserves the strict
+prefix and supplies the bad stage itself.
+
+For a latency function L, require that every actual live visit at
+stage m and tick t has a batch verifying for that held root at some
+u between t and t+L(m). If the root has not already committed, all
+earlier inconclusive batches preserve it, so some commit takes place
+by u+1. Induction gives the cumulative deadline
+sum_{m<n} (L(m)+1) to enter stage n when its strict prefix is safe.
+For the first bad stage n, add L(n)+1 ticks to obtain the terminal
+deadline. In particular a safe full window enters the next window
+at slot zero by the corresponding sum. The assumption is only on
+actual visits and counts scheduler ticks.
+
+An always-empty stream violates the latency premise for every
+function L. Strict pinned compilation, target replay, the empty
+stream and variable allowance controls, and four theorem audits
+passed. Fresh full replay, independent review and physical latency
+certification are NOT_RUN.

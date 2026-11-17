@@ -897,4 +897,138 @@ theorem batchRun_empty (t : ℕ) : batchRun (fun _ => []) t = run 0 := by
   | zero => rfl
   | succ t ih => rw [batchRun, ih]; rfl
 
+
+/-- Soundness of the strict arithmetic prefix is independent of batch
+arrival order, latency, and eventual completeness. -/
+theorem batchRun_safe_prefix (batches : ℕ → List Candidate) (t : ℕ) :
+    match batchRun batches t with
+    | .live active => SafePrefix active.root.stage
+    | .halted stopped => SafePrefix stopped.stage := by
+  induction t with
+  | zero =>
+    change SafePrefix 0
+    omega
+  | succ t ih =>
+    rw [batchRun]
+    cases state : batchRun batches t with
+    | halted stopped =>
+      simpa only [state] using ih
+    | live active =>
+      have earlier : SafePrefix active.root.stage := by simpa only [state] using ih
+      cases found : verifyBatch active.root (batches t) with
+      | none => simpa only [commitBatch, found] using earlier
+      | some receipt =>
+        simp only [commitBatch, found]
+        cases receipt with
+        | completed next steps safe successor padding positive trace =>
+          change SafePrefix next.stage
+          intro j before
+          rw [successor] at before
+          by_cases atRoot : j = active.root.stage
+          · rwa [atRoot]
+          · exact earlier j (by omega)
+        | counterexample finish steps bad trace terminal =>
+          exact earlier
+
+/-- A verifying batch must arrive within this many ticks of each
+actual live visit. The bound may vary with the native stage. -/
+def BatchLatency (batches : ℕ → List Candidate) (limit : ℕ → ℕ) : Prop :=
+  ∀ t active, batchRun batches t = .live active →
+    ∃ u, t ≤ u ∧ u ≤ t + limit active.root.stage ∧
+      (verifyBatch active.root (batches u)).isSome = true
+
+private theorem batchCommit_by {batches : ℕ → List Candidate} {t u : ℕ}
+    {active : Active} (live : batchRun batches t = .live active)
+    (later : t ≤ u) (good : (verifyBatch active.root (batches u)).isSome = true) :
+    ∃ s, t ≤ s ∧ s ≤ u ∧ batchRun batches s = .live active ∧
+      ∃ receipt, verifyBatch active.root (batches s) = some receipt := by
+  obtain ⟨d, rfl⟩ := Nat.exists_eq_add_of_le later
+  by_contra missing
+  have waiting (k : ℕ) (within : k ≤ d) : batchRun batches (t + k) = .live active := by
+    induction k with
+    | zero => exact live
+    | succ k ih =>
+      have still := ih (by omega)
+      have absent : verifyBatch active.root (batches (t + k)) = none := by
+        cases found : verifyBatch active.root (batches (t + k)) with
+        | none => rfl
+        | some r => exact (missing ⟨t + k, by omega, by omega, still, r, found⟩).elim
+      change batchRun batches (t + k + 1) = .live active
+      rw [batchRun, still]
+      change commitBatch active (batches (t + k)) = .live active
+      simp only [commitBatch, absent]
+  cases found : verifyBatch active.root (batches (t + d)) with
+  | none => simp [found] at good
+  | some r => exact missing ⟨t + d, by omega, le_rfl, waiting d le_rfl, r, found⟩
+
+/-- Cumulative scheduler ticks allowed through the first n stage decisions.
+Each stage charges its waiting allowance and one tick to commit. -/
+def batchDeadline (limit : ℕ → ℕ) : ℕ → ℕ
+  | 0 => 0
+  | n + 1 => batchDeadline limit n + (limit n + 1)
+
+/-- A safe prefix reaches its next exact native root by the sum of the
+stage-dependent latency bounds, including the commit ticks. -/
+theorem batchRun_visits_safe_prefix_by {batches : ℕ → List Candidate} {limit : ℕ → ℕ}
+    (latency : BatchLatency batches limit) (n : ℕ) (safe : SafePrefix n) :
+    ∃ t ≤ batchDeadline limit n, ∃ active,
+      batchRun batches t = .live active ∧ active.root.stage = n := by
+  induction n with
+  | zero => exact ⟨0, le_rfl, _, rfl, rfl⟩
+  | succ n ih =>
+    obtain ⟨t, deadline, active, live, stage⟩ :=
+      ih (fun j hj => safe j (hj.trans (Nat.lt_succ_self n)))
+    obtain ⟨u, later, arrival, good⟩ := latency t active live
+    obtain ⟨s, _, hs, waiting, receipt, found⟩ := batchCommit_by live later good
+    cases receipt with
+    | completed next steps noBad successor padding positive trace =>
+      have reached := Receipt.from_blank
+        (.completed next steps noBad successor padding positive trace) active.spent active.reached
+      refine ⟨s + 1, ?_, ⟨next, active.spent + steps, reached⟩, ?_,
+        successor.trans (congrArg (· + 1) stage)⟩
+      · rw [stage] at arrival
+        change s + 1 ≤ batchDeadline limit n + (limit n + 1)
+        omega
+      · simp only [batchRun, waiting, commitBatch, found]
+        rfl
+    | counterexample finish steps bad trace terminal =>
+      exact (safe n (Nat.lt_succ_self n) (by simpa only [Bad, stage] using bad)).elim
+
+/-- The exact first bad stage halts by its cumulative batch deadline. -/
+theorem batchRun_halts_at_first_bad_by {batches : ℕ → List Candidate} {limit : ℕ → ℕ}
+    (latency : BatchLatency batches limit) {n : ℕ} (safe : SafePrefix n)
+    (bad : Riemann120.ShuniaCounterexample (n + 2)) :
+    ∃ t ≤ batchDeadline limit (n + 1), ∃ stopped,
+      batchRun batches t = .halted stopped ∧ stopped.stage = n := by
+  obtain ⟨t, deadline, active, live, stage⟩ := batchRun_visits_safe_prefix_by latency n safe
+  obtain ⟨u, later, arrival, good⟩ := latency t active live
+  obtain ⟨s, _, hs, waiting, receipt, found⟩ := batchCommit_by live later good
+  cases receipt with
+  | completed next steps noBad successor padding positive trace =>
+    exact (noBad (by simpa only [Bad, stage] using bad)).elim
+  | counterexample finish steps witness trace terminal =>
+    have reached := Receipt.from_blank
+      (.counterexample finish steps witness trace terminal) active.spent active.reached
+    refine ⟨s + 1, ?_, ⟨active.root.stage, finish, active.spent + steps, witness,
+      reached.1, reached.2⟩, ?_, stage⟩
+    · rw [stage] at arrival
+      change s + 1 ≤ batchDeadline limit n + (limit n + 1)
+      omega
+    · simp only [batchRun, waiting, commitBatch, found]
+      rfl
+
+/-- If the complete strict prefix through a window is safe, the next
+ordinal window is entered at slot zero by the cumulative deadline. -/
+theorem batchRun_next_window_by {batches : ℕ → List Candidate} {limit : ℕ → ℕ}
+    (latency : BatchLatency batches limit) (w : ℕ) (safe : SafePrefix (95 * (w + 1))) :
+    ∃ t ≤ batchDeadline limit (95 * (w + 1)), ∃ active,
+      batchRun batches t = .live active ∧ active.root.window = w + 1 ∧ active.root.slot = 0 := by
+  obtain ⟨t, bound, active, live, stage⟩ := batchRun_visits_safe_prefix_by latency _ safe
+  refine ⟨t, bound, active, live, ?_, ?_⟩
+  · unfold Root.window
+    omega
+  · apply Fin.ext
+    change active.root.stage % 95 = 0
+    omega
+
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch
