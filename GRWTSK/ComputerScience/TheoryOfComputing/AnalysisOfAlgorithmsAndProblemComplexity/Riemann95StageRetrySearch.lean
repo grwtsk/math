@@ -1127,4 +1127,46 @@ theorem batchVisitFair_empty_false : ¬ BatchVisitFair (fun _ => []) := by
   obtain ⟨u, _, departed⟩ := (batchVisitFair_iff_leaves_live _).mp fair 0 _ live
   exact departed ((batchRun_empty u).trans live)
 
+/-- Splitting an arrival list at the same native root preserves the
+first verified receipt, including the exact proof-carrying result. -/
+theorem verifyBatch_append (root : Root) (first rest : List Candidate) :
+    verifyBatch root (first ++ rest) =
+      (verifyBatch root first).or (verifyBatch root rest) := by
+  induction first with
+  | nil => rfl
+  | cons candidate first ih =>
+    simp only [List.cons_append, verifyBatch, ih]
+    cases verify root candidate <;> rfl
+
+/-- Any number of rejected packets at one root can be coalesced before
+the next packet without changing the committed result. -/
+theorem commitBatch_append_of_retry (active : Active) {first : List Candidate}
+    (rest : List Candidate) (retry : verifyBatch active.root first = none) :
+    commitBatch active (first ++ rest) = commitBatch active rest := by
+  unfold commitBatch
+  rw [verifyBatch_append, retry]
+  rfl
+
+/-- Once a prefix has a verified receipt, more arrivals at that root do
+not change its outcome, even if they would also verify. -/
+theorem commitBatch_append_of_receipt (active : Active) {first : List Candidate}
+    (rest : List Candidate) {receipt : Receipt active.root}
+    (success : verifyBatch active.root first = some receipt) :
+    commitBatch active (first ++ rest) = commitBatch active first := by
+  unfold commitBatch
+  rw [verifyBatch_append, success]
+  rfl
+
+/-- Reordering a packet preserves the retry decision at the same root.
+On success it can select a different receipt. -/
+theorem verifyBatch_none_iff_of_perm (root : Root) {first rest : List Candidate}
+    (perm : first.Perm rest) :
+    verifyBatch root first = none ↔ verifyBatch root rest = none := by
+  rw [verifyBatch_none_iff, verifyBatch_none_iff]
+  constructor
+  · intro firstNone c h
+    exact firstNone c (perm.mem_iff.mpr h)
+  · intro restNone c h
+    exact restNone c (perm.mem_iff.mp h)
+
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch

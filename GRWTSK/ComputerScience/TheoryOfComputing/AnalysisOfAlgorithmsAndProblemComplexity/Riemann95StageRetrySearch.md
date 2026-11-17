@@ -332,3 +332,19 @@ dependency pins above. The audits found only `propext`,
 `98640b180d193b4c81b5d3f074303a5a632ddf705115cc4b8e6b9ec1bc92de7a`.
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
+
+## Packet boundaries at the same native root
+
+`verifyBatch_append` preserves the exact first verified receipt when a
+list of proposals is split into two packets at the same anchored root.
+The proof is list induction, with case analysis on the verifier result
+for the head proposal. `commitBatch_append_of_retry` permits merging a
+rejected prefix packet with the next packet. `commitBatch_append_of_receipt`
+admits no change to the committed result from further proposals at that
+root. `verifyBatch_none_iff_of_perm` preserves the retry decision under
+reordering. The selected successful receipt may depend on the order.
+
+These laws use the actual source verifier and apply only within one root.
+A report for a later committed root must be verified at that new root.
+The physical HS packet binding and fairness assumptions remain separate.
+[Verification record](https://github.com/grwtsk/math/issues/1823)
