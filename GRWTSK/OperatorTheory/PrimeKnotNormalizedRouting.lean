@@ -490,4 +490,68 @@ theorem normalized_95_quarter_successor_mass_constant
   change mass i = mass 0
   simpa using all i.val
 
+/-- Reusing a prime-polynomial vertex at two slots prevents attaining the
+quarter threshold at every slot. Each positive successor entry needs a
+knot whose support consists of exactly its two endpoints. -/
+theorem injective_of_normalized_95_forward_ge_quarter
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j)) :
+    Function.Injective encode := by
+  classical
+  have adjacent (i j : Fin 95) (same : encode i = encode j) :
+      j = i ∨ j = i + 1 := by
+    have pos : 0 < incidenceEntry s encode weight i (i + 1) :=
+      lt_of_lt_of_le (mul_pos (by norm_num) (active i))
+        ((le_div_iff₀ (active i)).mp (forward i))
+    rw [incidenceEntry_eq] at pos
+    have witness : ∃ k, 0 < weight k ∧ Linked s (encode i) k ∧ Linked s (encode (i + 1)) k := by
+      by_contra missing
+      apply (not_le_of_gt pos)
+      apply Finset.sum_nonpos
+      intro k _
+      split_ifs with links
+      · exact le_of_not_gt (fun w => missing ⟨k, w, links⟩)
+      · exact le_rfl
+    obtain ⟨k, positive, hi, hn⟩ := witness
+    let S : Finset (Fin 95) := Finset.univ.filter fun t => Linked s (encode t) k
+    have mi : i ∈ S := by simp [S, hi]
+    have mn : i + 1 ∈ S := by simp [S, hn]
+    have mj : j ∈ S := by simpa [S, ← same] using hi
+    have two : S.card = 2 :=
+      (support_pair_of_normalized_95_forward_ge_quarter
+        s encode weight nonneg active forward k positive ⟨i, mi⟩).1
+    have distinct : ∀ a : Fin 95, a ≠ a + 1 := by decide
+    have pair : ({i, i + 1} : Finset (Fin 95)) = S :=
+      Finset.eq_of_subset_of_card_le (by
+        intro a ha
+        simp only [Finset.mem_insert, Finset.mem_singleton] at ha
+        rcases ha with rfl | rfl
+        · exact mi
+        · exact mn)
+        (by rw [two]; simp [distinct i])
+    rw [← pair] at mj
+    simpa using mj
+  intro i j same
+  rcases adjacent i j same with equal | next
+  · exact equal.symm
+  rcases adjacent j i same.symm with equal | prev
+  · exact equal
+  have noTwo : ∀ a : Fin 95, a ≠ a + 1 + 1 := by decide
+  exact (noTwo i (prev.trans (congrArg (fun t => t + 1) next))).elim
+
+/-- A slot collision forces strict loss in some row at the quarter threshold. -/
+theorem exists_normalized_95_forward_lt_quarter_of_collision
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    {i j : Fin 95} (distinct : i ≠ j) (same : encode i = encode j) :
+    ∃ t, incidenceEntry s encode weight t (t + 1) /
+      (∑ a, incidenceEntry s encode weight t a) < 1 / 4 := by
+  by_contra none
+  push Not at none
+  exact distinct (injective_of_normalized_95_forward_ge_quarter s encode weight nonneg active none same)
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
