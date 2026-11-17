@@ -171,4 +171,30 @@ theorem abs_settled_gap_lt_add_of_two_allowances_and_positive_critical_zero
       (linear_supplier_poleSeries_bound hs hζ hA hG hmajorant hbudget).2.1)
     ha hb hpos hl haBudget hbBudget
 
+/-- A convex combination of the two genuine allowances must pay the full
+common pole cost and the weighted squared gap of the settled heats. -/
+theorem poleSeries_add_weighted_gap_le_two_residual_allowances
+    {s t A Aₛ Aₜ w : ℝ} (hs : 0 < s) (ht : 0 < t)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    (hw₀ : 0 ≤ w) (hw₁ : w ≤ 1) {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (hₛ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ Aₛ + ε)
+    (hₜ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ Aₜ + ε) :
+    2 * (∑' ρ, positiveCriticalPoleSquare ρ) +
+        w * (1 - w) * (heatedLimit s - heatedLimit t) ^ 2 ≤ w * Aₛ + (1 - w) * Aₜ := by
+  by_contra! hbad
+  let δ := (2 * (∑' ρ, positiveCriticalPoleSquare ρ) +
+    w * (1 - w) * (heatedLimit s - heatedLimit t) ^ 2 - (w * Aₛ + (1 - w) * Aₜ)) / 3
+  have hδ : 0 < δ := by dsimp only [δ]; linarith
+  have hfloor := (eventually_pickup_variance_ge_poleSeries
+    hs hζ hA hG hmajorant hbudget hδ).filter_mono hl
+  have hceil := eventually_variance_add_weighted_cost_le_of_two_residual_allowances
+    hs ht hw₀ hw₁ hl hₛ hₜ hδ
+  obtain ⟨T, hfloorT, hceilT⟩ := (hfloor.and hceil).exists
+  dsimp only [δ] at hfloorT hceilT
+  linarith [sq_nonneg (pickupHorizonMean T - (w * heatedLimit s + (1 - w) * heatedLimit t))]
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
