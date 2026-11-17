@@ -6,6 +6,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAn
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.RiemannZeroSymmetry
 import Mathlib.Analysis.Complex.AbsMax
 import Mathlib.Analysis.Analytic.IsolatedZeros
+import Mathlib.Topology.Baire.Lemmas
 
 /-!
 # Determinant convergence on the critical strip and retained lattice zeros
@@ -170,6 +171,68 @@ private theorem exists_real_source_ne_zero_above (B : ℝ) :
     dsimp [x]
     linarith
   · exact mem_compl_singleton_iff.mpr (fun h => hx.ne' (Complex.ofReal_injective h))
+
+/-- Retained lattice zeros force the cutoff height to escape even under
+pointwise convergence on the real axis. Continuity of the candidate
+restrictions lets Baire category give a common tail error on a subinterval. -/
+theorem cutoff_tendsto_atTop_of_real_pointwise_limit {D : ℕ → ℂ → ℂ} {N : ℕ → ℕ}
+    {spacing : ℕ → ℝ} (hpos : ∀ n, 0 < spacing n)
+    (hspacing : Tendsto spacing atTop (𝓝 0))
+    (htail : ∀ n (k : ℤ), (N n : ℤ) < k →
+      D n (((k : ℝ) * spacing n : ℝ) : ℂ) = 0)
+    (hcontinuous : ∀ n, Continuous fun x : ℝ => D n x)
+    (hlim : ∀ x : ℝ, Tendsto (fun n => D n x) atTop (𝓝 (spectralSource x))) :
+    Tendsto (fun n => (N n : ℝ) * spacing n) atTop atTop := by
+  refine tendsto_atTop.mpr fun B => ?_
+  by_contra hB
+  obtain ⟨x, hx, hxF⟩ := exists_real_source_ne_zero_above B
+  let b := ‖spectralSource (x : ℂ)‖ / 2
+  have hb : 0 < b := half_pos (norm_pos_iff.mpr hxF)
+  have hF : Continuous fun x : ℝ => spectralSource x :=
+    source_differentiable.continuous.comp Complex.continuous_ofReal
+  let E (m : ℕ) : Set ℝ :=
+    ⋂ n ∈ Ici m, {y : ℝ | ‖D n y - spectralSource y‖ ≤ b}
+  have hclosed (m : ℕ) : IsClosed (E m) :=
+    isClosed_iInter fun n => isClosed_iInter fun _ =>
+      isClosed_le ((hcontinuous n).sub hF).norm continuous_const
+  have hcover : ⋃ m, E m = univ := by
+    ext y
+    simp only [mem_iUnion, mem_iInter, mem_Ici, mem_ofPred_eq, mem_univ, iff_true, E]
+    obtain ⟨m, hm⟩ := eventually_atTop.mp ((Metric.tendsto_nhds.mp (hlim y)) b hb)
+    exact ⟨m, fun n hn => by simpa only [dist_eq_norm] using (hm n hn).le⟩
+  let U := Ioi B ∩ {y : ℝ | b < ‖spectralSource y‖}
+  have hopen : IsOpen U := isOpen_Ioi.inter (isOpen_lt continuous_const hF.norm)
+  have hxU : x ∈ U := ⟨hx, half_lt_self (norm_pos_iff.mpr hxF)⟩
+  obtain ⟨y, hyU, hy⟩ := Dense.inter_open_nonempty (dense_iUnion_interior_of_closed hclosed hcover)
+    U hopen ⟨x, hxU⟩
+  obtain ⟨m, hym⟩ := mem_iUnion.mp hy
+  obtain ⟨r, hr, hball⟩ := Metric.isOpen_iff.mp
+    (isOpen_interior.inter hopen) y ⟨hym, hyU⟩
+  have hsmall : ∀ᶠ n in atTop, spacing n < r :=
+    hspacing.eventually (gt_mem_nhds hr)
+  have hbad : ∃ᶠ n in atTop, (N n : ℝ) * spacing n < B := by
+    simpa only [Filter.Frequently, not_lt] using hB
+  obtain ⟨n, ⟨hnm, hnsmall⟩, hncut⟩ :=
+    (((eventually_ge_atTop m).and hsmall).and_frequently hbad).exists
+  let k : ℤ := ⌈y / spacing n⌉
+  have hk₁ : y ≤ (k : ℝ) * spacing n :=
+    (div_le_iff₀ (hpos n)).mp (Int.le_ceil _)
+  have hk₂ : (k : ℝ) * spacing n < y + spacing n := by
+    have h := mul_lt_mul_of_pos_right (Int.ceil_lt_add_one (y / spacing n)) (hpos n)
+    rwa [add_mul, div_mul_cancel₀ _ (hpos n).ne', one_mul] at h
+  have hindex : (N n : ℤ) < k := by
+    have h := lt_of_mul_lt_mul_right (hncut.trans (hyU.1.trans_le hk₁)) (hpos n).le
+    exact_mod_cast h
+  let z : ℝ := (k : ℝ) * spacing n
+  have hz : z ∈ ball y r := by
+    rw [mem_ball, Real.dist_eq, abs_of_nonneg (sub_nonneg.mpr hk₁)]
+    change z < y + spacing n at hk₂
+    linarith
+  have hzE : z ∈ E m := interior_subset (hball hz).1
+  have hupper : ‖D n z - spectralSource z‖ ≤ b :=
+    mem_iInter.mp (mem_iInter.mp hzE n) hnm
+  rw [htail n k hindex, zero_sub, norm_neg] at hupper
+  exact (not_lt_of_ge hupper) (hball hz).2.2
 
 /-- A determinant with unchanged lattice zeros at all positive indices above
 its Fourier cutoff must send the cutoff height to infinity to converge to
