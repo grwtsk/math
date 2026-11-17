@@ -190,3 +190,35 @@ of the eight added public declarations reported only `propext`,
 independent mathematical review of the extension are `NOT_RUN`.
 
 [Coordination and verification record](https://github.com/grwtsk/math/issues/1821)
+
+## Finite roots cannot represent all path lengths at a fixed tape depth
+
+For every window and padding `p`, `delayedStop window p` is the
+native state-12 right scan with the scanned zero followed by `p`
+extra zeros and then eight ones. It takes `p+1` right steps to reach
+the first one. The next seven steps reach state 61 scanning the final
+one, whose instruction is absent. The compositional run law therefore
+gives a successful path of length `n` exactly when `n ≤ p+8`.
+All shorter prefixes exist by splitting that successful run. Any
+longer run would need an instruction at its terminal cell.
+
+For any fixed observation depth `d`, the configurations with
+`p=d+k` all agree with the all-zero scan at depth `d`. Their maximum
+successful path lengths are the distinct numbers `d+k+8`. If two
+of these starts share a root in an exact rooted graph, that root must
+admit the longer of the two maximum lengths for both starts. The
+shorter source run rejects it. Thus the roots must give an injection
+of the natural numbers into the graph's vertices. This rules out
+finite root sets in this scope even when only path lengths are
+retained. The same argument applies to a finite set of possible
+initial vertex subsets.
+
+The control at zero padding succeeds at length 8 and fails at length
+9. Adding one zero makes length 9 succeed. The arbitrary-start result
+provides a necessary test for a graph sandwich with exact upper and
+lower languages. A graph restricted to the original blank orbit
+requires its own reachability and language-lifting proof.
+
+Strict pinned compilation, target replay, the three boundary
+controls and transitive axiom inspection passed. Fresh replay of the
+full import closure and independent review are `NOT_RUN`.

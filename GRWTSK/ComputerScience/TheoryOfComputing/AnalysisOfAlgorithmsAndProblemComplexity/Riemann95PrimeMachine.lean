@@ -575,4 +575,68 @@ theorem exists_projected_run95_return (window : ℕ) :
       run_zeroScan_prefix window 95 0 [] []
   · simp only [zeroScan, project, ← padding]
 
+
+/-- A native start in the right sweep that reads the first 1 after
+`padding + 1` instructions. The eight consecutive ones end at the
+original terminal cell. -/
+def delayedStop (window padding : ℕ) : Configuration window :=
+  zeroScan window 0 [] (List.replicate padding 0 ++ (1 :: List.replicate 7 1))
+
+/-- The number of successful instructions of this native run is exactly
+`padding + 8`. Its language of successful path lengths is an initial interval. -/
+theorem delayedStop_lengths (window padding length : ℕ) :
+    (∃ finish, run length (delayedStop window padding) = some finish) ↔
+      length ≤ padding + 8 := by
+  obtain ⟨stop, trace, terminal⟩ := scan_ones_halts window (0 + (padding : ℤ) + 1)
+    (0 :: (List.replicate padding 0 ++ []))
+  have stops : run (padding + 8) (delayedStop window padding) = some stop := by
+    change run (padding + 1 + 7) (delayedStop window padding) = some stop
+    rw [run_add', delayedStop, run_zeroScan_then_read, Option.bind_some]
+    exact trace
+  constructor
+  · rintro ⟨finish, reached⟩
+    by_contra tooLong
+    have split : length = padding + 8 + ((length - (padding + 8) - 1) + 1) := by omega
+    rw [split, run_add', stops, Option.bind_some, run, terminal] at reached
+    cases reached
+  · intro within
+    have split : padding + 8 = length + (padding + 8 - length) := by omega
+    rw [split, run_add'] at stops
+    cases prior : run length (delayedStop window padding) with
+    | none => rw [prior] at stops; cases stops
+    | some finish => exact ⟨finish, rfl⟩
+
+/-- In one window and at any fixed observation depth, infinitely many
+native starts agree on that observation and have pairwise distinct
+successful path-length languages. -/
+theorem delayedStop_agrees (window depth n : ℕ) :
+    TapeAgrees depth (zeroScan window 0 [] []) (delayedStop window (depth + n)) := by
+  refine ⟨rfl, rfl, rfl, fun _ _ => rfl, ?_⟩
+  intro i hi
+  exact (replicate_zero_append_getD (by omega : i < depth + n) _).symm
+
+/-- Even forgetting every edge label, a finite set of roots cannot assign
+the exact successful path-length language to each native start agreeing
+with this fixed observation. Here `acceptsLength` can be the length
+language of any rooted labeled graph. -/
+theorem no_finite_roots_for_tapeAgrees_lengths {Vertex : Type*} [Finite Vertex]
+    (window depth : ℕ) (root : Configuration window → Vertex)
+    (acceptsLength : Vertex → ℕ → Prop) :
+    ¬ ∀ c, TapeAgrees depth (zeroScan window 0 [] []) c →
+      ∀ length, acceptsLength (root c) length ↔ ∃ finish, run length c = some finish := by
+  intro exactLanguages
+  let assign (n : ℕ) := root (delayedStop window (depth + n))
+  have language (n length : ℕ) : acceptsLength (assign n) length ↔ length ≤ depth + n + 8 :=
+    (exactLanguages _ (delayedStop_agrees window depth n) length).trans
+      (delayedStop_lengths window (depth + n) length)
+  apply not_injective_infinite_finite assign
+  intro i j same
+  have first := (language i (depth + i + 8)).mpr le_rfl
+  have second := (language j (depth + j + 8)).mpr le_rfl
+  rw [same] at first
+  rw [← same] at second
+  have le := (language j _).mp first
+  have ge := (language i _).mp second
+  omega
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
