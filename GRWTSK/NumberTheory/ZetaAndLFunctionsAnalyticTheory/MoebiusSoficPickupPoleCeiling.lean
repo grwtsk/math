@@ -197,4 +197,61 @@ theorem poleSeries_add_weighted_gap_le_two_residual_allowances
   dsimp only [δ] at hfloorT hceilT
   linarith [sq_nonneg (pickupHorizonMean T - (w * heatedLimit s + (1 - w) * heatedLimit t))]
 
+/-- The two settled heats must fit within the square-root radii of the
+allowances after subtracting the common critical-line pole cost. -/
+theorem abs_settled_gap_le_sqrt_sub_poleSeries_add_sqrt_sub_poleSeries
+    {s t A Aₛ Aₜ : ℝ} (hs : 0 < s) (ht : 0 < t)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (hₛ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ Aₛ + ε)
+    (hₜ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ Aₜ + ε) :
+    let S := 2 * (∑' ρ, positiveCriticalPoleSquare ρ)
+    |heatedLimit s - heatedLimit t| ≤ Real.sqrt (Aₛ - S) + Real.sqrt (Aₜ - S) := by
+  let S := 2 * (∑' ρ, positiveCriticalPoleSquare ρ)
+  let g := heatedLimit s - heatedLimit t
+  have hweighted (w : ℝ) (hw₀ : 0 ≤ w) (hw₁ : w ≤ 1) :
+      w * (1 - w) * g ^ 2 ≤ w * (Aₛ - S) + (1 - w) * (Aₜ - S) := by
+    have h := poleSeries_add_weighted_gap_le_two_residual_allowances
+      hs ht hζ hA hG hmajorant hbudget hw₀ hw₁ hl hₛ hₜ
+    change S + w * (1 - w) * g ^ 2 ≤ w * Aₛ + (1 - w) * Aₜ at h
+    linarith
+  have hleft : 0 ≤ Aₛ - S := by simpa using hweighted 1 zero_le_one le_rfl
+  have hright : 0 ≤ Aₜ - S := by simpa using hweighted 0 le_rfl zero_le_one
+  have hslack (δ : ℝ) (hδ : 0 < δ) :
+      |g| ≤ Real.sqrt (Aₛ - S + δ) + Real.sqrt (Aₜ - S + δ) := by
+    let a := Real.sqrt (Aₛ - S + δ)
+    let b := Real.sqrt (Aₜ - S + δ)
+    have ha : 0 < a := Real.sqrt_pos.2 (by linarith)
+    have hb : 0 < b := Real.sqrt_pos.2 (by linarith)
+    have hab : 0 < a + b := add_pos ha hb
+    have haSq : a ^ 2 = Aₛ - S + δ := Real.sq_sqrt (by linarith)
+    have hbSq : b ^ 2 = Aₜ - S + δ := Real.sq_sqrt (by linarith)
+    let w := b / (a + b)
+    have hw₀ : 0 < w := div_pos hb hab
+    have hw₁ : w < 1 := (div_lt_iff₀ hab).mpr (by linarith)
+    have hsum := hweighted w hw₀.le hw₁.le
+    have hcost : w * a ^ 2 + (1 - w) * b ^ 2 = w * (1 - w) * (a + b) ^ 2 := by
+      dsimp [w]
+      field_simp
+      ring
+    have hgap : w * (1 - w) * g ^ 2 ≤ w * (1 - w) * (a + b) ^ 2 := by
+      rw [← hcost, haSq, hbSq]
+      linarith
+    have hsq := le_of_mul_le_mul_left hgap (mul_pos hw₀ (sub_pos.mpr hw₁))
+    exact (sq_le_sq.mp hsq).trans_eq (abs_of_nonneg hab.le)
+  have hc : Continuous (fun δ : ℝ => Real.sqrt (Aₛ - S + δ) + Real.sqrt (Aₜ - S + δ)) := by
+    fun_prop
+  have hlim : Tendsto (fun δ : ℝ => Real.sqrt (Aₛ - S + δ) + Real.sqrt (Aₜ - S + δ))
+      (𝓝[>] (0 : ℝ)) (𝓝 (Real.sqrt (Aₛ - S) + Real.sqrt (Aₜ - S))) := by
+    have h := (hc.continuousAt (x := (0 : ℝ))).continuousWithinAt (s := Ioi 0)
+    simpa only [ContinuousWithinAt, add_zero] using h
+  change |g| ≤ Real.sqrt (Aₛ - S) + Real.sqrt (Aₜ - S)
+  apply ge_of_tendsto hlim
+  filter_upwards [(self_mem_nhdsWithin : Ioi (0 : ℝ) ∈ 𝓝[>] (0 : ℝ))] with δ hδ
+  exact hslack δ hδ
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
