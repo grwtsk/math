@@ -68,7 +68,8 @@ private theorem resolvent_laplace_fubini (phi : ℝ → ℂ)
       phi t / ((b : ℂ) + Complex.I * (t : ℂ)) := by
     dsimp only [F]
     rw [integral_const_mul, integral_exp_mul_complex_Ioi (by simpa using (show -b < 0 by linarith)) 0]
-    simp [div_eq_mul_inv]
+    simp only [Complex.ofReal_zero, mul_zero, Complex.exp_zero, mul_one, div_eq_mul_inv]
+    simp only [inv_neg, neg_one_mul, mul_neg, neg_neg]
   have hright (r : ℝ) : (∫ t : ℝ, F (t, r)) =
       Complex.exp ((-b : ℂ) * (r : ℂ)) *
         (∫ t : ℝ, phi t * Complex.exp (-Complex.I * (t : ℂ) * (r : ℂ))) := by
@@ -92,8 +93,10 @@ private theorem gamma_pair_line_integrable
     Integrable (fun t : ℝ => W (2 + Complex.I * (t : ℂ)) +
       W (1 - (2 + Complex.I * (t : ℂ)))) volume := by
   intro W
-  have hr := (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
-  have hl := (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
+  have hr : Integrable (fun t : ℝ => W (2 + Complex.I * (t : ℂ))) volume := by
+    simpa [W] using (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
+  have hl : Integrable (fun t : ℝ => W (-1 + Complex.I * ((-t : ℝ) : ℂ))) volume := by
+    simpa [W] using (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
   have he (t : ℝ) : (-1 : ℂ) + Complex.I * ((-t : ℝ) : ℂ) =
       1 - (2 + Complex.I * (t : ℂ)) := by push_cast; ring
   exact hr.add (hl.congr (Eventually.of_forall fun t => congrArg W (he t)))
@@ -112,8 +115,10 @@ theorem weil_gamma_pair_fourier_inversion
   let phase := fun t : ℝ => Complex.exp (-Complex.I * (t : ℂ) * (r : ℂ))
   have hp : Continuous phase := by fun_prop
   have hn (t : ℝ) : ‖phase t‖ ≤ 1 := by simp [phase, Complex.norm_exp]
-  have hr := (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
-  have hl0 := (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
+  have hr : Integrable (fun t : ℝ => W (2 + Complex.I * (t : ℂ))) volume := by
+    simpa [W] using (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
+  have hl0 : Integrable (fun t : ℝ => W (-1 + Complex.I * ((-t : ℝ) : ℂ))) volume := by
+    simpa [W] using (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
   have harg (t : ℝ) : (-1 : ℂ) + Complex.I * ((-t : ℝ) : ℂ) =
       1 - (2 + Complex.I * (t : ℂ)) := by push_cast; ring
   have hl := hl0.congr (Eventually.of_forall fun t => congrArg W (harg t))
@@ -135,12 +140,16 @@ theorem weil_gamma_pair_fourier_inversion
           push_cast
           congr 2 <;> ring
   change (1 / (2 * (Real.pi : ℂ))) * (∫ t : ℝ, H t * phase t) = _
-  have he : (fun t : ℝ => H t * phase t) = fun t =>
+  have he : (fun t : ℝ => H t * phase t) = fun t : ℝ =>
       W (2 + Complex.I * (t : ℂ)) * phase t +
       W (1 - (2 + Complex.I * (t : ℂ))) * phase t := by funext t; dsimp [H]; ring
   rw [he, integral_add hrp hlp, mul_add, eleft]
   dsimp only [phase]
-  rw [eR, eL]
+  simp only [Complex.ofReal_ofNat, Complex.ofReal_neg, Complex.ofReal_one] at eR eL
+  dsimp only [W]
+  rw [eR]
+  simp only [Complex.ofReal_neg]
+  rw [eL]
   rw [show (2 : ℝ) - 1 / 2 = 3 / 2 by norm_num,
     show ((-1 : ℝ) - 1 / 2) * (-r) = (3 / 2 : ℝ) * r by ring]
   ring
@@ -234,11 +243,16 @@ theorem weil_finite_gamma_evaluation
       linarith [Nat.cast_nonneg (α := ℝ) j]
     dsimp only [R]
     rw [integral_sub (hH.div_const _) hi, mul_sub, integral_div, ← mul_div_assoc, hmass, he]
-    rw [show (3 / 2 : ℝ) - (2 + (a : ℝ) + 2 * (j : ℝ)) =
-      -((a : ℝ) + 1 / 2 + 2 * (j : ℝ)) by ring]
+    have hconst : 2 * correlation f 0 / (2 * ((j : ℂ) + 1)) =
+        correlation f 0 / ((j : ℂ) + 1) := by
+      field_simp [hj] <;> ring
+    rw [hconst]
     congr 1
-    field_simp [hj]
-    <;> ring
+    apply integral_congr_ae
+    filter_upwards [] with r
+    simp only [Complex.ofReal_exp]
+    push_cast
+    congr 2 <;> ring
   have hsplit : (fun t : ℝ => H t * gammaEulerMultiplier a n t) =
       fun t : ℝ => H t * d + ∑ j ∈ Finset.range (n + 1), R j t := by
     funext t
@@ -255,7 +269,13 @@ theorem weil_finite_gamma_evaluation
     integral_mul_const, integral_finset_sum _ (fun j _ => hRi j), mul_add, Finset.mul_sum]
   change c * ((∫ t : ℝ, H t) * d) + _ = _
   rw [← mul_assoc, hmass]
-  simp_rw [hRe]
+  have hsums :
+      (∑ j ∈ Finset.range (n + 1), c * (∫ t : ℝ, R j t)) =
+        ∑ j ∈ Finset.range (n + 1), (correlation f 0 / ((j : ℂ) + 1) -
+          ∫ r in Ioi (0 : ℝ), (correlation f r + correlation f (-r)) *
+            (Real.exp (-((a : ℝ) + 1 / 2 + 2 * (j : ℝ)) * r) : ℂ)) :=
+    Finset.sum_congr rfl (fun j _ => hRe j)
+  erw [hsums]
   dsimp only [d]
   ring
 
@@ -388,7 +408,8 @@ theorem norm_gammaEulerMultiplier_error_le (a n : ℕ) (t : ℝ) :
           _ = C * (1 / ((n : ℝ) + (k : ℝ) + 1 + 1) ^ 2) := by
             dsimp [C]
             push_cast
-            ring
+            field_simp [show (n : ℝ) + (k : ℝ) + 1 + 1 ≠ 0 by positivity]
+            <;> ring
           _ ≤ _ := ht
       rw [show n + (k + 1) = (n + k) + 1 by omega, gammaEulerMultiplier_increment]
       calc
@@ -402,15 +423,17 @@ theorem norm_gammaEulerMultiplier_error_le (a n : ℕ) (t : ℝ) :
         _ = _ := by push_cast; ring
   have hshift : Tendsto (fun k : ℕ => n + k) atTop atTop := by
     apply tendsto_atTop_mono (fun k => show k ≤ n + k by omega) tendsto_id
-  have hlim := (((gammaEulerMultiplier_tendsto a t).comp hshift).
-    sub_const (gammaEulerMultiplier a n t)).norm
+  have hshifted := (gammaEulerMultiplier_tendsto a t).comp hshift
+  have hlim := (hshifted.sub_const (gammaEulerMultiplier a n t)).norm
   apply le_of_tendsto hlim
   refine Eventually.of_forall fun k => (hfinite k).trans ?_
   calc
     _ ≤ C * (1 / ((n : ℝ) + 1)) := by
       apply mul_le_mul_of_nonneg_left _ hC
       exact sub_le_self _ (by positivity)
-    _ = _ := by dsimp [C]; ring
+    _ = _ := by
+      dsimp [C]
+      field_simp [show (n : ℝ) + 1 ≠ 0 by positivity] <;> ring
 
 /-- Native fourth-order decay for the original pair; consumed by both gamma limits. -/
 theorem weil_gamma_pair_norm_le
@@ -514,7 +537,9 @@ theorem weil_gamma_physical_partials_tendsto
         dsimp [G]
         ring
       _ ≤ ‖G t‖ + ‖H t * (gammaEulerMultiplier a n t - g t)‖ := norm_add_le _ _
-      _ ≤ bound t := by rw [norm_mul]; exact add_le_add_left herror _
+      _ ≤ bound t := by
+        rw [norm_mul (H t) (gammaEulerMultiplier a n t - g t)]
+        exact add_le_add le_rfl herror
   have hlim : Tendsto (fun n : ℕ => ∫ t : ℝ, H t * gammaEulerMultiplier a n t) atTop
       (𝓝 (∫ t : ℝ, G t)) :=
     tendsto_integral_of_dominated_convergence bound

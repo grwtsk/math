@@ -34,13 +34,13 @@ noncomputable section
 /-- Reuse the established arctangent integral, rather than reprove its FTC API. -/
 theorem integral_arctan_kernel :
     (∫ t in (-1 : ℝ)..1, 1 / (1 + t ^ 2)) = Real.pi / 2 := by
-  rw [intervalIntegral.integral_one_div_one_add_sq, Real.arctan_neg, Real.arctan_one]
+  rw [integral_one_div_one_add_sq, Real.arctan_neg, Real.arctan_one]
   ring
 
 /-- Reuse the logarithmic-primitive evaluation with a nonzero real parameter. -/
 theorem integral_odd_kernel :
     (∫ t in (-1 : ℝ)..1, t / (1 + t ^ 2)) = 0 := by
-  simpa using (intervalIntegral.integral_id_div_sq_add_sq
+  simpa using (integral_id_div_sq_add_sq
     (a := (-1 : ℝ)) (b := 1) (c := 1) one_ne_zero)
 
 theorem right_denominator_ne_zero (t : ℝ) :
@@ -56,6 +56,7 @@ theorem right_edge_integrand (t : ℝ) :
         Complex.I * ((1 / (1 + t ^ 2) : ℝ) : ℂ) := by
   apply Complex.ext <;>
     simp [Complex.div_re, Complex.div_im, Complex.normSq_apply, pow_two]
+  field_simp [show (1 : ℝ) + t * t ≠ 0 by nlinarith]
 
 theorem right_edge_integral :
     (∫ t in (-1 : ℝ)..1, Complex.I / (1 + Complex.I * (t : ℂ))) =
@@ -103,9 +104,15 @@ def edgeVelocity (ε : ℝ) (k : Fin 4) : ℂ :=
 
 theorem hasDerivAt_edgePath (root : ℂ) (ε : ℝ) (k : Fin 4) (t : ℝ) :
     HasDerivAt (edgePath root ε k) (edgeVelocity ε k) t := by
-  have h := ((((Complex.ofRealCLM.hasDerivAt (x := t)).const_mul Complex.I).
-    const_add (1 : ℂ)).const_mul ((ε : ℂ) * Complex.I ^ (k : ℕ))).const_add root
-  simpa [edgePath, edgeVelocity, Complex.ofRealCLM_apply, mul_assoc] using h
+  have hcast : HasDerivAt (fun x : ℝ => (x : ℂ)) 1 t := by
+    change HasDerivAt Complex.ofRealCLM 1 t
+    exact Complex.ofRealCLM.hasDerivAt
+  have h := (((hcast.const_mul Complex.I).const_add (1 : ℂ)).const_mul
+    ((ε : ℂ) * Complex.I ^ (k : ℕ))).const_add root
+  change HasDerivAt
+    (fun x : ℝ => root + (ε : ℂ) * Complex.I ^ (k : ℕ) * (1 + Complex.I * (x : ℂ)))
+    (edgeVelocity ε k) t
+  simpa only [edgeVelocity, mul_one, add_comm, mul_assoc] using h
 
 theorem edge_avoids_center (root : ℂ) (ε : ℝ) (hε : ε ≠ 0)
     (k : Fin 4) (t : ℝ) : edgePath root ε k t ≠ root := by

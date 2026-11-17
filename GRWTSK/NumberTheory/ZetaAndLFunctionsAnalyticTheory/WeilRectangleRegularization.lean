@@ -99,7 +99,7 @@ theorem completed_source_regular_at_endpoints (chi : DirichletCharacter ℂ N)
     (AnalyticAt ℂ (DirichletCharacter.completedLFunction chi) 1 ∧
       DirichletCharacter.completedLFunction chi 1 ≠ 0) := by
   have hc := primitive_ne_one_of_level_ne_one chi hprim hN
-  have hi : chi⁻¹ ≠ 1 := by simpa only [inv_eq_one] using hc
+  have hi : chi⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hc
   have ha : AnalyticOnNhd ℂ (DirichletCharacter.completedLFunction chi) univ :=
     (DirichletCharacter.differentiable_completedLFunction hc).differentiableOn.analyticOnNhd
       isOpen_univ
@@ -121,8 +121,7 @@ private theorem analyticAt_completed_source_off_endpoints
     AnalyticAt ℂ (DirichletCharacter.completedLFunction chi) s := by
   let U : Set ℂ := {z | z ≠ 0 ∧ z ≠ 1}
   have hU : IsOpen U :=
-    (isOpen_ne continuous_id continuous_const).inter
-      (isOpen_ne continuous_id continuous_const)
+    (isOpen_ne (x := (0 : ℂ))).inter (isOpen_ne (x := (1 : ℂ)))
   have hd : DifferentiableOn ℂ (DirichletCharacter.completedLFunction chi) U := by
     intro z hz
     exact (chi.differentiableAt_completedLFunction z (.inl hz.1) (.inl hz.2)).differentiableWithinAt
@@ -221,9 +220,14 @@ theorem weighted_completed_source_principal_parts (chi : DirichletCharacter ℂ 
       (logDeriv (DirichletCharacter.completedLFunction chi)) R W a
       (if N = 1 then -1 else 0) hR (hW a (mem_univ _)) hp
     refine ⟨B, hB, ?_⟩
+    filter_upwards [hb] with s hs
+    rw [mul_comm]
+    change logDeriv (DirichletCharacter.completedLFunction chi) s * W s =
+      (if a = 0 ∨ a = 1 then (if N = 1 then -W a else 0)
+        else (analyticOrderNatAt (DirichletCharacter.LFunction chi) a : ℂ) * W a) /
+      (s - a) + B s
     by_cases hN : N = 1 <;>
-      simpa only [weilLocalCoefficient, he, if_true, hN, if_false,
-        neg_one_mul, zero_mul, mul_comm] using hb
+      simpa only [he, hN, ite_true, ite_false, neg_one_mul, zero_mul] using hs
   · have ha0 : a ≠ 0 := fun h => he (.inl h)
     have ha1 : a ≠ 1 := fun h => he (.inr h)
     have himage : a ∈ (heightWindow chi hprim T).image Subtype.val := by
@@ -336,7 +340,7 @@ ALL tests. The identity holds at every nonsingular point, hence on every edge. -
 theorem exists_primitive_weil_rectangle_regularizations {N : ℕ} [NeZero N]
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →
         let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
         ∀ n, ∃ G : ℂ → ℂ, AnalyticOnNhd ℂ G (weilRectangle (T n)) ∧

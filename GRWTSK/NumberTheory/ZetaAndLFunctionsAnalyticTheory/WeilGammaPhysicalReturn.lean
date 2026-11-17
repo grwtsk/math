@@ -56,7 +56,7 @@ private theorem digamma_real_of_positive {x : ℝ} (hx : 0 < x) :
     apply tendsto_const_nhds.congr'
     filter_upwards [eventually_ne_atTop 0] with n hn
     rw [GRWTSK.SpecialFunctions.GammaEulerLimit.logDeriv_GammaSeq hn hx]
-    simp [Complex.natCast_log, Complex.inv_im]
+    simp [← Complex.natCast_log, Complex.inv_im]
   have hi : (Complex.digamma (x : ℂ)).im = 0 :=
     tendsto_nhds_unique hlim hzero
   exact Complex.ext (by simp) (by simpa using hi)
@@ -89,7 +89,11 @@ theorem weil_gamma_line_eq_physical
     have hl := (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
     apply hr.add
     apply hl.congr
-    exact Eventually.of_forall fun t => by congr 1; push_cast; ring
+    exact Eventually.of_forall fun t => by
+      change W (((-1 : ℝ) : ℂ) + Complex.I * ((-t : ℝ) : ℂ)) = _
+      apply congrArg W
+      push_cast
+      ring
   have hm : AEStronglyMeasurable F (volume.prod (volume.restrict (Ioi (0 : ℝ)))) :=
     hH.aestronglyMeasurable.comp_fst.mul
       (show Measurable (fun p : ℝ × ℝ => compensatedDensity alpha (d p.1) p.2) by
@@ -105,7 +109,7 @@ theorem weil_gamma_line_eq_physical
   have hF : Integrable F (volume.prod (volume.restrict (Ioi (0 : ℝ)))) := by
     apply hbound.mono' hm
     have hpos : ∀ᵐ p : ℝ × ℝ ∂volume.prod (volume.restrict (Ioi (0 : ℝ))), 0 < p.2 :=
-      (ae_prod_iff_ae_ae (measurableSet_lt measurable_const measurable_snd)).2
+      (Measure.ae_prod_iff_ae_ae (measurableSet_lt measurable_const measurable_snd)).2
         (Eventually.of_forall fun _ => ae_restrict_mem measurableSet_Ioi)
     filter_upwards [hpos] with p hp
     let x : ℝ := 1 + |p.1|
@@ -165,7 +169,8 @@ theorem weil_gamma_line_eq_physical
   have hcorrC : IntegrableOn (fun r : ℝ => (gammaCorrectionDensity a f r : ℂ)) (Ioi 0) :=
     (hF.integral_prod_right.const_mul c).congr (Eventually.of_forall hright)
   have hcorr : IntegrableOn (gammaCorrectionDensity a f) (Ioi 0) := by
-    simpa only [Complex.ofReal_re] using hcorrC.re
+    exact hcorrC.re.congr (Eventually.of_forall fun r =>
+      Complex.ofReal_re (gammaCorrectionDensity a f r))
   let sigma : ℝ := 1 / 4 + (a : ℝ) / 2
   let base : ℂ := -(Real.log Real.pi : ℂ) / 2 + Complex.digamma (sigma : ℂ) / 2
   have hsplit (t : ℝ) : G t = H t * base + ∫ r in Ioi (0 : ℝ), F (t, r) := by
@@ -198,9 +203,13 @@ theorem weil_gamma_line_eq_physical
   have he : (∫ r in Ioi (0 : ℝ), c * (∫ t : ℝ, F (t, r))) =
       ∫ r in Ioi (0 : ℝ), (gammaCorrectionDensity a f r : ℂ) :=
     integral_congr_ae (Eventually.of_forall hright)
-  rw [he, integral_ofReal]
+  have hcast : (∫ r in Ioi (0 : ℝ), (gammaCorrectionDensity a f r : ℂ)) =
+      ((∫ r in Ioi (0 : ℝ), gammaCorrectionDensity a f r : ℝ) : ℂ) :=
+    integral_ofReal
+  rw [he, hcast]
   dsimp only [base]
   rw [hreal]
+  simp only [Complex.ofReal_re]
   push_cast
   ring
 
@@ -228,7 +237,7 @@ theorem weil_full_line_eq_physical_arithmetic
       (((-Real.log Real.pi +
         (Complex.digamma ((1 / 4 + (gammaParity chi : ℝ) / 2 : ℝ) : ℂ)).re) * energy f +
         ∫ r in Ioi (0 : ℝ), gammaCorrectionDensity (gammaParity chi) f r : ℝ) : ℂ) := by
-    simpa only [one_div, div_eq_mul_inv, mul_comm, mul_left_comm, mul_assoc,
+    simpa only [W, one_mul, one_div, div_eq_mul_inv, mul_comm, mul_left_comm, mul_assoc,
       add_comm, add_left_comm, add_assoc] using hgamma
   rw [hg, physical_correlation_zero] at hline
   have hq : 0 < (q : ℝ) := by exact_mod_cast Nat.pos_of_ne_zero (NeZero.ne q)
@@ -256,6 +265,7 @@ theorem primitive_hasSum_physical_arithmetic
         (if q = 1 then W 0 + W 1 else 0)) := by
   intro W
   have h := primitive_hasSum_contour_weight_source_bound chi hprim f A hA hf hs
+  dsimp only at h
   rw [(weil_full_line_eq_physical_arithmetic chi hprim f A hA hf hs).2] at h
   exact h
 
@@ -297,7 +307,7 @@ theorem zeta_hasSum_physical_arithmetic
   have hp : gammaParity chi = 0 := by
     simp [chi, gammaParity, MulChar.one_apply (isUnit_of_subsingleton _)]
   have h := primitive_hasSum_physical_arithmetic chi hprim f A hA hf hs
-  simpa [hp, chi, CharacterWindow.twistedPrime, MulChar.one_apply (isUnit_of_subsingleton _),
+  simpa [hp, chi, W, CharacterWindow.twistedPrime, MulChar.one_apply (isUnit_of_subsingleton _),
     add_assoc] using h
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.SourcePrimeCorrelation

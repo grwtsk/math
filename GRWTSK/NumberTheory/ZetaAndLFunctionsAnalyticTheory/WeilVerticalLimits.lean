@@ -77,16 +77,17 @@ private theorem continuous_completed_logDeriv_right (chi : DirichletCharacter �
   have hU : IsOpen U := isOpen_lt continuous_const Complex.continuous_re
   have hd : DifferentiableOn ℂ (DirichletCharacter.completedLFunction chi) U := by
     intro s hs
-    have h0 : s ≠ 0 := by intro h; simpa [U, h] using hs
-    have h1 : s ≠ 1 := by intro h; simpa [U, h] using hs
+    have h0 : s ≠ 0 := by intro h; norm_num [U, h] at hs
+    have h1 : s ≠ 1 := by intro h; norm_num [U, h] at hs
     exact (chi.differentiableAt_completedLFunction s (.inl h0) (.inl h1)).differentiableWithinAt
   have ha := hd.analyticOnNhd hU
   rw [continuous_iff_continuousAt]
   intro t
   have hs : 1 < (2 + (t : ℂ) * Complex.I).re := by norm_num
   have hlocal := ha (2 + (t : ℂ) * Complex.I) hs
-  exact (hlocal.deriv.div hlocal (completedLFunction_ne_zero_right_of_euler chi hs)).
-    continuousAt.comp (show ContinuousAt (fun t : ℝ => 2 + (t : ℂ) * Complex.I) t by fun_prop)
+  exact ContinuousAt.comp (f := fun u : ℝ => 2 + (u : ℂ) * Complex.I)
+    (hlocal.deriv.div hlocal (completedLFunction_ne_zero_right_of_euler chi hs)).continuousAt
+    (by fun_prop)
 
 /-- An actual full-line bound, including t=0. No compact-line bound is assumed.
 The source constant is selected before any weight or admissible test. -/
@@ -98,8 +99,8 @@ theorem exists_completed_logDeriv_right_linear_bound (chi : DirichletCharacter �
     (fun m : ℕ => (ArithmeticFunction.vonMangoldt m : ℂ)) (2 : ℂ) n‖
   have hM : 0 ≤ M := tsum_nonneg (fun _ => norm_nonneg _)
   have hc := continuous_completed_logDeriv_right chi
-  obtain ⟨B, hB⟩ := (isCompact_Icc : IsCompact (Icc (-2 : ℝ) 2)).
-    exists_bound_of_continuousOn hc.continuousOn
+  obtain ⟨B, hB⟩ := (isCompact_Icc : IsCompact (Icc (-2 : ℝ) 2))
+    |>.exists_bound_of_continuousOn hc.continuousOn
   let K : ℝ := |B| + M + gammaRLogDerivativeConstant + 1
   have hK : 0 < K := by
     dsimp [K]
@@ -113,7 +114,7 @@ theorem exists_completed_logDeriv_right_linear_bound (chi : DirichletCharacter �
     have hi : s.im ≠ 0 := by
       rw [him]
       intro he
-      simp [he] at ht
+      norm_num [he] at ht
     have hs : 1 < s.re := by rw [hre]; norm_num
     have hn := completedLFunction_ne_zero_right_of_euler chi hs
     have hg := norm_logDeriv_gammaFactor_le_horizontal_strip chi
@@ -219,7 +220,7 @@ theorem exists_weilRightArithmeticIntegrand_cubic_bound
       _ ≤ ‖(Real.log (N : ℝ) : ℂ)‖ +
           ‖logDeriv (DirichletCharacter.completedLFunction chi⁻¹) s‖ := norm_add_le _ _
       _ ≤ |Real.log (N : ℝ)| + L * x := by
-        simpa only [Complex.norm_real, Real.norm_eq_abs] using add_le_add_left (hDi t) _
+        simpa only [Complex.norm_real, Real.norm_eq_abs] using add_le_add le_rfl (hDi t)
       _ ≤ (L + |Real.log (N : ℝ)|) * x := by
         dsimp [x]
         nlinarith [mul_nonneg (abs_nonneg (Real.log (N : ℝ))) (abs_nonneg t)]
@@ -273,10 +274,11 @@ theorem tendsto_weilRightArithmeticIntegral
     Tendsto (fun n => weilRightArithmeticIntegral chi W (T n)) atTop
       (𝓝 ((∫ t : ℝ, weilRightArithmeticIntegrand chi W t) / (2 * (Real.pi : ℂ)))) := by
   intro W
-  have hi := integrable_weilRightArithmeticIntegrand chi hprim f A hA hf hs
+  have hi : Integrable (weilRightArithmeticIntegrand chi W) volume :=
+    integrable_weilRightArithmeticIntegrand chi hprim f A hA hf hs
   have hl := intervalIntegral_tendsto_integral hi
     (tendsto_neg_atTop_atBot.comp hT) hT
-  simpa only [weilRightArithmeticIntegral, div_eq_mul_inv] using
+  simpa only [weilRightArithmeticIntegral, div_eq_mul_inv, Function.comp_def] using
     hl.mul_const (2 * (Real.pi : ℂ))⁻¹
 
 /-- The original multiplicity-weighted finite zero sums now converge to the actual
@@ -285,7 +287,7 @@ are the previously constructed source heights, selected before ALL f,A. -/
 theorem exists_primitive_weil_full_line_limit
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →
         let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
         Integrable (weilRightArithmeticIntegrand chi W) volume ∧
@@ -311,7 +313,7 @@ theorem exists_zeta_weil_full_line_limit :
     let chi : DirichletCharacter ℂ 1 := 1
     let hprim : chi.IsPrimitive := DirichletCharacter.isPrimitive_one_level_one
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →
         let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
         let V := fun t : ℝ =>
@@ -335,6 +337,13 @@ theorem exists_zeta_weil_full_line_limit :
       Nat.cast_one, Real.log_one, Complex.ofReal_zero, zero_mul, zero_add,
       chi, inv_one, MulChar.one_apply (isUnit_of_subsingleton _), one_mul]
     ring
-  simpa only [if_true, hv] using hall f A hA hf hs
+  have h := hall f A hA hf hs
+  change Integrable (weilRightArithmeticIntegrand chi W) volume ∧
+    Tendsto (fun n => (∑ rho ∈ heightWindow chi hprim (T n),
+      (zeroMultiplicity chi rho : ℂ) * W rho.1) -
+        (if (1 : ℕ) = 1 then W 0 + W 1 else 0)) atTop
+    (𝓝 ((∫ t : ℝ, weilRightArithmeticIntegrand chi W t) / (2 * (Real.pi : ℂ)))) at h
+  rw [hv] at h
+  simpa only [ite_true] using h
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.SourcePrimeCorrelation

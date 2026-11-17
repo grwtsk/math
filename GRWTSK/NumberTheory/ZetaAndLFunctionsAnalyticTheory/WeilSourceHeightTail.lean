@@ -147,9 +147,9 @@ theorem primitive_height_tail_absolute_bound
     dsimp only [v]
     by_cases ht : H ≤ |rho.1.im|
     · have hr : (2 : ℝ) ^ J ≤ 1 + ‖z rho‖ :=
-        hJ.trans (add_le_add_left (ht.trans
+        hJ.trans (add_le_add le_rfl (ht.trans
           (spectralCoordinate_radius_bounds_of_strip rho.1
-            rho.2.2.1.le rho.2.2.2.le).2.1) 1)
+            rho.2.2.1.le rho.2.2.2.le).2.1))
       have hw : ‖W rho.1‖ ≤ derivativeL1Cost f k ^ 2 * decayWeight A k (z rho) ^ 2 := by
         dsimp only [W, z]
         rw [correlation_contour_weight_eq_fourier]

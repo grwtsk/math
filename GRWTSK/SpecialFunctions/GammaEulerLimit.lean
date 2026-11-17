@@ -79,7 +79,7 @@ private theorem eulerKernel_eq_indicator (n : ℕ) (z : ℂ) :
 private theorem eulerKernel_integrable {z : ℂ} (hz : 0 < z.re) (n : ℕ) :
     IntegrableOn (eulerKernel n z) (Ioi 0) := by
   rw [eulerKernel_eq_indicator, IntegrableOn,
-    integrable_indicator_iff measurableSet_Ioc,
+    integrable_indicator_iff measurableSet_Ioc, IntegrableOn,
     Measure.restrict_restrict_of_subset Ioc_subset_Ioi_self, ← IntegrableOn,
     ← intervalIntegrable_iff_integrableOn_Ioc_of_le (Nat.cast_nonneg n)]
   apply IntervalIntegrable.continuousOn_mul
@@ -111,7 +111,8 @@ private theorem integral_errorKernel {z : ℂ} (hz : 0 < z.re)
   have hgamma : (∫ x in Ioi (0 : ℝ), gammaKernel z x) = Complex.Gamma z := by
     simpa only [gammaKernel, Complex.GammaIntegral] using
       (Complex.Gamma_eq_integral hz).symm
-  rw [errorKernel, integral_sub (gammaKernel_integrable hz)
+  change (∫ x in Ioi (0 : ℝ), gammaKernel z x - eulerKernel n z x) = _
+  rw [integral_sub (gammaKernel_integrable hz)
     (eulerKernel_integrable hz n), hgamma, integral_eulerKernel hz hn]
 
 private theorem errorKernel_eq (n : ℕ) (z : ℂ) (x : ℝ) :
@@ -173,11 +174,20 @@ theorem norm_Gamma_sub_GammaSeq_le_endpoint_errors
         (errorKernel n (alpha : ℂ) x).re + (errorKernel n (beta : ℂ) x).re := by
       apply integral_mono_ae (errorKernel_integrable hz n).norm (hia.re.add hib.re)
       filter_upwards [ae_restrict_mem measurableSet_Ioi] with x hx
+      change ‖errorKernel n z x‖ ≤
+        (errorKernel n (alpha : ℂ) x).re + (errorKernel n (beta : ℂ) x).re
       rw [norm_errorKernel n z hx, re_errorKernel_real, re_errorKernel_real, ← mul_add]
       exact mul_le_mul_of_nonneg_left (rpow_between hx haz hzb)
         (sub_nonneg.mpr (weight_bounds n hx).2)
     _ = _ := by
-      rw [integral_add hia.re hib.re, integral_re hia, integral_re hib,
+      have hsum := integral_add hia.re hib.re
+      simp only [RCLike.re_to_complex] at hsum
+      rw [hsum]
+      have ha' := integral_re hia
+      have hb' := integral_re hib
+      simp only [RCLike.re_to_complex] at ha' hb'
+      rw [ha', hb']
+      rw [
         integral_errorKernel (z := (alpha : ℂ)) ha hn,
         integral_errorKernel (z := (beta : ℂ)) hb hn]
 
@@ -199,7 +209,7 @@ theorem GammaSeq_tendstoUniformlyOn_strip {alpha beta : ℝ}
           Complex.Gamma (alpha : ℂ) - Complex.GammaSeq (alpha : ℂ) n)
           atTop (𝓝 (Complex.Gamma (alpha : ℂ) - Complex.Gamma (alpha : ℂ))) :=
         tendsto_const_nhds.sub (Complex.GammaSeq_tendsto_Gamma (alpha : ℂ))
-      simpa using Complex.continuous_re.continuousAt.tendsto.comp hc
+      simpa [Function.comp_def] using Complex.continuous_re.continuousAt.tendsto.comp hc
     have h2 : Tendsto (fun n : ℕ =>
         (Complex.Gamma (beta : ℂ) - Complex.GammaSeq (beta : ℂ) n).re)
         atTop (𝓝 0) := by
@@ -207,7 +217,7 @@ theorem GammaSeq_tendstoUniformlyOn_strip {alpha beta : ℝ}
           Complex.Gamma (beta : ℂ) - Complex.GammaSeq (beta : ℂ) n)
           atTop (𝓝 (Complex.Gamma (beta : ℂ) - Complex.Gamma (beta : ℂ))) :=
         tendsto_const_nhds.sub (Complex.GammaSeq_tendsto_Gamma (beta : ℂ))
-      simpa using Complex.continuous_re.continuousAt.tendsto.comp hc
+      simpa [Function.comp_def] using Complex.continuous_re.continuousAt.tendsto.comp hc
     simpa using h1.add h2
   rw [Metric.tendstoUniformlyOn_iff]
   intro epsilon hepsilon
@@ -265,7 +275,9 @@ theorem logDeriv_GammaSeq {n : ℕ} (hn : n ≠ 0) {z : ℂ} (hz : 0 < z.re) :
   have hnC : (n : ℂ) ≠ 0 := Nat.cast_ne_zero.mpr hn
   have hpow : (n : ℂ) ^ z ≠ 0 := by simp [Complex.cpow_eq_zero_iff, hnC]
   have hfact : (n.factorial : ℂ) ≠ 0 := Nat.cast_ne_zero.mpr (Nat.factorial_ne_zero n)
-  have hp := (hasDerivAt_id z).const_cpow (c := (n : ℂ)) (Or.inl hnC)
+  have hp : HasDerivAt (fun w : ℂ => (n : ℂ) ^ w)
+      ((n : ℂ) ^ z * Complex.log (n : ℂ) * 1) z :=
+    (hasDerivAt_id z).const_cpow (c := (n : ℂ)) (Or.inl hnC)
   have hd : DifferentiableAt ℂ
       (fun w : ℂ => ∏ j ∈ Finset.range (n + 1), (w + (j : ℂ))) z := by fun_prop
   have hprod : (∏ j ∈ Finset.range (n + 1), (z + (j : ℂ))) ≠ 0 :=
@@ -275,12 +287,17 @@ theorem logDeriv_GammaSeq {n : ℕ} (hn : n ≠ 0) {z : ℂ} (hz : 0 < z.re) :
     simp only [mul_one]
     ring
   have hlinear (j : ℕ) : logDeriv (fun w : ℂ => w + (j : ℂ)) z = (z + (j : ℂ))⁻¹ := by
-    rw [logDeriv_apply, ((hasDerivAt_id z).add_const (j : ℂ)).deriv, one_div]
+    have h : HasDerivAt (fun w : ℂ => w + (j : ℂ)) 1 z :=
+      (hasDerivAt_id z).add_const _
+    rw [logDeriv_apply, h.deriv, one_div]
   unfold Complex.GammaSeq
-  rw [logDeriv_fun_div z (mul_ne_zero hpow hfact) hprod
+  rw [logDeriv_fun_div (f := fun w : ℂ => (n : ℂ) ^ w * (n.factorial : ℂ))
+      (g := fun w : ℂ => ∏ j ∈ Finset.range (n + 1), (w + (j : ℂ)))
+      z (mul_ne_zero hpow hfact) hprod
       (hp.differentiableAt.mul_const _) hd,
     logDeriv_mul_const z (n.factorial : ℂ) hfact, hpower,
-    logDeriv_fun_prod (fun j _ => add_nat_ne_zero hz j)
+    logDeriv_fun_prod (s := Finset.range (n + 1)) (f := fun j (w : ℂ) => w + (j : ℂ))
+      (fun j _ => add_nat_ne_zero hz j)
       (fun j _ => (differentiableAt_id.add_const (j : ℂ)))]
   simp only [hlinear]
 

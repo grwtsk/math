@@ -81,8 +81,13 @@ theorem shiftEnergy_eq_correlation_pair {f : ℝ → ℂ} (hf : MemLp f 2 volume
       2 * energy f - 2 * (correlation f r).re := by
     unfold energy correlation
     simp_rw [hp]
-    rw [integral_sub (hshift.add hsq) (hc.re.const_mul 2),
-      integral_add hshift hsq, integral_const_mul, integral_re hc,
+    have hsum : Integrable (fun t : ℝ => ‖f (t + r)‖ ^ 2 + ‖f t‖ ^ 2) volume :=
+      hshift.add hsq
+    have hre : Integrable (fun t : ℝ => (conj (f t) * f (t + r)).re) volume := hc.re
+    have hi := integral_re hc
+    simp only [RCLike.re_to_complex] at hi
+    rw [integral_sub hsum (hre.const_mul 2),
+      integral_add hshift hsq, integral_const_mul, hi,
       integral_add_right_eq_self (fun t : ℝ => ‖f t‖ ^ 2) r]
     ring
   rw [he, correlation_neg]
@@ -107,8 +112,10 @@ private theorem paired_inversion (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A)
       Complex.exp (-Complex.I * (t : ℂ) * (y : ℂ))) =
       (correlation f y + correlation f (-y)) * (Real.exp ((3 / 2 : ℝ) * y) : ℂ) := by
   intro V H
-  have hr := (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
-  have hl := (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
+  have hr : Integrable (fun t : ℝ => V (2 + Complex.I * (t : ℂ))) volume := by
+    simpa [V] using (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
+  have hl : Integrable (fun t : ℝ => V (-1 + Complex.I * ((-t : ℝ) : ℂ))) volume := by
+    simpa [V] using (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
   refine ⟨hr.add hl, ?_⟩
   have hleft : (∫ t : ℝ, V (-1 + Complex.I * ((-t : ℝ) : ℂ)) *
         Complex.exp (-Complex.I * (t : ℂ) * (y : ℂ))) =
@@ -132,11 +139,16 @@ private theorem paired_inversion (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A)
   have he : ((-1 : ℝ) - 1 / 2) * (-y) = (3 / 2 : ℝ) * y := by ring
   simp only [show (2 : ℝ) - 1 / 2 = 3 / 2 by norm_num] at hri
   simp only [he] at hli
+  simp only [show ((2 : ℝ) : ℂ) = 2 by norm_num,
+    show ((-1 : ℝ) : ℂ) = -1 by norm_num] at hri hli
+  change (1 / (2 * (Real.pi : ℂ))) * (∫ t : ℝ, V (2 + Complex.I * (t : ℂ)) *
+    Complex.exp (-Complex.I * (t : ℂ) * (y : ℂ))) = _ at hri
+  change (1 / (2 * (Real.pi : ℂ))) * (∫ t : ℝ, V (-1 + Complex.I * (t : ℂ)) *
+    Complex.exp (-Complex.I * (t : ℂ) * ((-y : ℝ) : ℂ))) = _ at hli
   dsimp only [H]
   simp_rw [add_mul]
   rw [integral_add (oscillation_integrable _ hr y) (oscillation_integrable _ hl y),
     mul_add, hleft, hri, hli]
-  ring
 
 /-- The compensation on the actual pair of vertical lines inverts to the
 original shift energy, for every real shift. Cancellation occurs before the
@@ -224,8 +236,10 @@ theorem conductor_line_evaluation (q : ℕ) (f : ℝ → ℂ) (A : ℝ) (hA : 0 
         ((Real.log (q : ℝ) * energy f : ℝ) : ℂ) := by
   intro V
   have h := correlation_weight_inversion f A hA hf hs 2 0
-  simp only [mul_zero, Complex.exp_zero, mul_one, Real.exp_zero,
+  simp only [Complex.ofReal_zero, mul_zero, Complex.exp_zero, mul_one, Real.exp_zero,
     Complex.ofReal_one, correlation_zero] at h
+  simp only [show ((2 : ℝ) : ℂ) = 2 by norm_num] at h
+  change (1 / (2 * (Real.pi : ℂ))) * (∫ t : ℝ, V (2 + Complex.I * (t : ℂ))) = _ at h
   rw [integral_const_mul, mul_left_comm, h]
   norm_cast
 

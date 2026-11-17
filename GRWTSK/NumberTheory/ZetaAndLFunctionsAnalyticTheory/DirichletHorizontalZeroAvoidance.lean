@@ -144,7 +144,7 @@ theorem exists_height_separated_from_absolute_ordinates
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) (n : ℕ) :
     ∃ T : ℝ, (n : ℝ) + 2 < T ∧ T < (n : ℝ) + 3 ∧
       ∀ rho : CriticalStripZero chi,
-        horizontalSeparationRadius chi n ≤ |T - |rho.1.im|| := by
+        horizontalSeparationRadius chi n ≤ |T - (|rho.1.im|)| := by
   classical
   let H : ℝ := (n : ℝ) + 4
   let S := heightWindow chi hprim H
@@ -177,7 +177,7 @@ theorem exists_height_separated_from_absolute_ordinates
       apply le_of_not_gt
       intro h
       exact hrho ((mem_heightWindow chi hprim H rho).mpr h)
-    have hdiff : 1 ≤ |T - |rho.1.im|| := by
+    have hdiff : 1 ≤ |T - (|rho.1.im|)| := by
       have hn : T - |rho.1.im| ≤ 0 := by dsimp [H] at hfar; linarith
       rw [abs_of_nonpos hn]
       dsimp [H] at hfar
@@ -188,12 +188,12 @@ theorem exists_height_separated_from_absolute_ordinates
 metric. No projection of the zero in the resulting conclusion is made. -/
 theorem absolute_ordinate_gap_le_horizontal_distance (T sigma epsilon : ℝ)
     (hT : 0 ≤ T) (hepsilon : epsilon = -1 ∨ epsilon = 1) (rho : ℂ) :
-    |T - |rho.im|| ≤
+    |T - (|rho.im|)| ≤
       ‖(sigma : ℂ) + Complex.I * ((epsilon * T : ℝ) : ℂ) - rho‖ := by
   have he : |epsilon * T| = T := by
     rcases hepsilon with rfl | rfl <;> simp [abs_of_nonneg hT]
   calc
-    |T - |rho.im|| = ||epsilon * T| - |rho.im|| := by rw [he]
+    |T - (|rho.im|)| = |(|epsilon * T|) - (|rho.im|)| := by rw [he]
     _ ≤ |epsilon * T - rho.im| := abs_abs_sub_abs_le_abs_sub _ _
     _ ≤ _ := by
       simpa [Complex.add_im, Complex.sub_im, Complex.mul_im] using Complex.abs_im_le_norm
@@ -247,7 +247,7 @@ The logarithmic-derivative magnitude estimate is not asserted in this declaratio
 theorem exists_zero_avoiding_horizontal_heights
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (rho : CriticalStripZero chi) (sigma epsilon : ℝ),
         epsilon = -1 ∨ epsilon = 1 →
         horizontalSeparationRadius chi n ≤
@@ -300,7 +300,7 @@ theorem norm_finite_zero_principal_parts_le
 Both real poles remain in the contour identity; neither lies on these lines. -/
 theorem exists_zeta_zero_avoiding_horizontal_heights :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (rho : CriticalStripZero (1 : DirichletCharacter ℂ 1)) (sigma epsilon : ℝ),
         epsilon = -1 ∨ epsilon = 1 →
         horizontalSeparationRadius (1 : DirichletCharacter ℂ 1) n ≤

@@ -64,7 +64,7 @@ private theorem residue_identity_of_regularization (chi : DirichletCharacter ℂ
       exact ⟨by dsimp [a]; linarith [rho.2.2.1],
         by dsimp [a]; linarith [rho.2.2.2], ht.1, ht.2⟩
     · have hn : n = 0 ∨ n = 1 := by simpa [S] using hj
-      rcases hn with rfl | rfl <;> norm_num [a] <;> constructor <;> linarith
+      rcases hn with rfl | rfl <;> norm_num [a] <;> exact hT
   have hp (s : ℂ) : (∑ j ∈ S, c j / (s - a j)) =
       (∑ rho ∈ heightWindow chi hprim T,
         (zeroMultiplicity chi rho : ℂ) * W rho.1 / (s - rho.1)) -
@@ -107,7 +107,7 @@ theorem weil_rectangle_residue_identity (chi : DirichletCharacter ℂ N)
         (if N = 1 then W 0 + W 1 else 0) := by
   obtain ⟨G, hG, he⟩ := exists_weil_rectangle_regularization chi hprim T hheight W hW
   have hG0 : boundaryIntegral (-1) 2 (-T) T G = 0 := by
-    simpa only [boundaryIntegral] using
+    simpa only [boundaryIntegral, Complex.ofReal_neg, Complex.ofReal_one, Complex.ofReal_ofNat] using
       weil_rectangle_regular_remainder_integral_zero G T (le_of_lt hT) hG
   exact residue_identity_of_regularization chi hprim T hT W G hG hG0 he
 
@@ -116,7 +116,7 @@ The result consumes, rather than assumes, the maintained sequence regularization
 theorem exists_primitive_weil_rectangle_residue_identities {N : ℕ} [NeZero N]
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →
         let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
         ∀ n, (2 * (Real.pi : ℂ) * Complex.I)⁻¹ *
@@ -131,7 +131,7 @@ theorem exists_primitive_weil_rectangle_residue_identities {N : ℕ} [NeZero N]
   obtain ⟨G, hG, he, hG0⟩ := hreg f A hA hf hs n
   exact residue_identity_of_regularization chi hprim (T n)
     (by linarith [(hT n).1, Nat.cast_nonneg (α := ℝ) n]) W G hG
-    (by simpa only [boundaryIntegral] using hG0) he
+    (by simpa only [boundaryIntegral, Complex.ofReal_neg, Complex.ofReal_one, Complex.ofReal_ofNat] using hG0) he
 
 /-- Literal conductor-one zeta, including BOTH negative pole terms. -/
 theorem completedZeta_weil_rectangle_residue_identity (T : ℝ) (hT : 0 < T)
@@ -154,7 +154,7 @@ theorem completedZeta_weil_rectangle_residue_identity (T : ℝ) (hT : 0 < T)
         (if (1 : ℕ) = 1 then W 0 / s + W 1 / (s - 1) else 0) := by
     simpa only [DirichletCharacter.completedLFunction_modOne_eq, if_true] using he
   have hG0 : boundaryIntegral (-1) 2 (-T) T G = 0 := by
-    simpa only [boundaryIntegral] using
+    simpa only [boundaryIntegral, Complex.ofReal_neg, Complex.ofReal_one, Complex.ofReal_ofNat] using
       weil_rectangle_regular_remainder_integral_zero G T (le_of_lt hT) hG
   simpa only [DirichletCharacter.completedLFunction_modOne_eq, if_true] using
     residue_identity_of_regularization chi hprim T hT W G hG hG0 he'

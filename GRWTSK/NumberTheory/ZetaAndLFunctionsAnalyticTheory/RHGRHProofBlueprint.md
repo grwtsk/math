@@ -187,11 +187,11 @@ consumer at `7385200a0149a2deb4713df5d2a5a5e283a2f634`. The two negative-witness
 obligations share a proof: an arithmetic witness on the full primitive sector
 also supplies one on any shorter right corridor.
 
-| Open obligation | Available supplier and exact remaining condition |
+| Obligation | Available supplier and exact remaining condition |
 | --- | --- |
 | Primitive right-strip exclusion | The ordinary L-function and inverse reflection are fixed by [the existing return](WeilRightStripWitnessReturn.lean). Supply right-strip exclusion for every primitive nonprincipal character, or combine an upper bound with exclusion of the closed-right-edge corridor. The published ceiling refinements below shorten its width. |
-| Primitive negative witness | [Compact odd spectral isolation](../../FunctionsOfAComplexVariable/CompactOddSpectralIsolation.lean) gives an absolutely convergent odd square sum with negative real part at a nonreal ordinate. [The actual spectral return](WeilPrimitiveCompactOddSpectralReturn.lean) gives the same sign for the original zero divisor. [The arithmetic return](WeilPrimitiveCompactOddArithmeticReturn.lean) discharges the count and admissibility and leaves the exact inverse-character formula as its sole premise. The [native formula candidate](WeilGammaPhysicalReturn.lean) has that statement. Its contour import closure remains unverified. [Written argument](WeilDirichletCompactFilterReturn.lean). |
-| Corridor negative witness | The [arithmetic return](WeilPrimitiveCompactOddArithmeticReturn.lean) gives the corridor witness under the same explicit-formula premise as the full witness. The ceiling reduces the domain the [corridor consumer](PrimitiveDirichletRightCorridor.lean) needs. |
+| Primitive negative witness | Supplied by `primitiveNegativeWitness` in the [canonical witness module](WeilPrimitiveCompactOddCanonicalWitness.lean). [Compact odd spectral isolation](../../FunctionsOfAComplexVariable/CompactOddSpectralIsolation.lean) gives negative real part on the [original zero divisor](WeilPrimitiveCompactOddSpectralReturn.lean). The [arithmetic return](WeilPrimitiveCompactOddArithmeticReturn.lean) uses the exact formula and the real-test inverse-character identity to transfer that sign. |
+| Corridor negative witness | Supplied for each real ceiling by `primitiveRightCorridorNegativeWitness` in the [canonical witness module](WeilPrimitiveCompactOddCanonicalWitness.lean). The [corridor consumer](PrimitiveDirichletRightCorridor.lean) still needs exclusion or positivity on its residual domain. |
 | Character-local stages | [Countable density](WeilPrimitiveStageCountableDensity.lean) supplies a fixed-stage dictionary. [Filtered window return](WeilPrimitiveFilteredWindowReturn.lean) specifies the two signed errors and permits characterwise cofinal coverage. The [normalized midpoint bound](WeilNormalizedPrimeWeightMidpoint.lean) combines signed weight errors with normalized correlation-code errors. The [coarse conductor-three candidate](WeilOddThreeCoarse32Certificate.md) concerns exactly stage zero. Supply a cofinal schedule for each inverse orbit with the requisite lower bound and prospective coverage of each required test. |
 | Characterwise cofinal height exclusion | The cofinal-height consumer only requires a schedule for each individual character. It needs exclusions on every whole selected height window, with heights unbounded. Counting zeros in those windows is a different estimate. [Cofinal corridor consumer](PrimitiveDirichletRightCorridor.lean). |
 | Finite conductor and height head | Platt's Theorem 7.1 gives signed-height family coverage after conjugating the character. A formal supplier must identify the exact computed zeros, validated range, simplicity/count semantics where used, and ordinary L-function zero predicate. [Platt, v1](https://arxiv.org/pdf/1305.3087v1). |
@@ -248,19 +248,24 @@ phase distinctions between the two source characters. The inverse
 character in the formula still matters when matching the zero divisor
 to the arithmetic form.
 
-The compact spectral and arithmetic modules, including the native height
-count, were elaborated on the pinned Lean and Mathlib environment.
-A transitive axiom audit of their main declarations found
-`propext`, `Classical.choice` and `Quot.sound`. The declaration
-`primitiveNegativeWitness_of_inverseCharacterFormula` keeps the formula
-as an explicit hypothesis. Its supplier
-`primitive_hasSum_canonical_arithmetic` in
-[WeilGammaPhysicalReturn](WeilGammaPhysicalReturn.lean) remains a separate
-source candidate. At the source revision containing the reduction, its
-79-module import build stopped in
-[`ExponentialLoopIndex`](../../FunctionsOfAComplexVariable/ExponentialLoopIndex.lean)
-at lines 50, 89, 91 and 198. The formula declaration's own elaboration,
-kernel replay, and transitive axiom audit are **NOT_RUN**.
+The [exact formula](WeilGammaPhysicalReturn.lean) gives
+`primitive_hasSum_canonical_arithmetic` on the original primitive
+nonprincipal character's zero divisor with its arithmetic value at the
+inverse character. The contour proof adds finite residues on bounded
+rectangles, passes to the absolutely convergent height limit and evaluates
+the right line into conductor, gamma and prime terms. The compensated
+gamma integral uses a joint integrable majorant before Fubini. The
+[arithmetic return](WeilPrimitiveCompactOddArithmeticReturn.lean) then
+transports the negative real value back to the original character on a
+real test. The right-corridor contract restricts the domain of the full
+witness. Both use the same formula and spectral construction.
+
+The standalone build elaborated all 98 GRWTSK modules in this import
+closure using Lean 4.34.1 and Mathlib
+`d13f23b723b8a846827a245b89c10fc7d3f11612`. Targeted kernel replay
+checked the physical-return and canonical-witness modules. The formula
+and both witnesses depend on `propext`, `Classical.choice` and
+`Quot.sound`. Independent analytic review is **NOT_RUN**.
 
 ### Narrower external zero-free ceilings
 

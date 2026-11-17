@@ -85,9 +85,9 @@ private theorem split_x (F : ℂ → ℂ) (l c r b u : ℝ)
     boundaryIntegral l c b u F + boundaryIntegral c r b u F =
       boundaryIntegral l r b u F := by
   have h₀ := intervalIntegral.integral_add_adjacent_intervals
-    (hb.intervalIntegrable l c) (hb.intervalIntegrable c r)
+    (hb.intervalIntegrable (μ := volume) l c) (hb.intervalIntegrable c r)
   have h₁ := intervalIntegral.integral_add_adjacent_intervals
-    (hu.intervalIntegrable l c) (hu.intervalIntegrable c r)
+    (hu.intervalIntegrable (μ := volume) l c) (hu.intervalIntegrable c r)
   unfold boundaryIntegral
   linear_combination h₀ - h₁
 
@@ -97,9 +97,9 @@ private theorem split_y (F : ℂ → ℂ) (l r b c u : ℝ)
     boundaryIntegral l r b c F + boundaryIntegral l r c u F =
       boundaryIntegral l r b u F := by
   have h₀ := intervalIntegral.integral_add_adjacent_intervals
-    (hr.intervalIntegrable b c) (hr.intervalIntegrable c u)
+    (hr.intervalIntegrable (μ := volume) b c) (hr.intervalIntegrable c u)
   have h₁ := intervalIntegral.integral_add_adjacent_intervals
-    (hl.intervalIntegrable b c) (hl.intervalIntegrable c u)
+    (hl.intervalIntegrable (μ := volume) b c) (hl.intervalIntegrable c u)
   unfold boundaryIntegral
   linear_combination I * h₀ - I * h₁
 
@@ -113,8 +113,9 @@ private theorem kernel_integral_zero (l r b u : ℝ) (a : ℂ)
     have hn : z - a ≠ 0 := by
       intro he
       exact ha (sub_eq_zero.mp he ▸ hz)
-    simpa only [one_div] using
-      ((differentiableAt_id.sub_const a).inv hn).differentiableWithinAt
+    have hc : DifferentiableAt ℂ (fun w : ℂ => w - a) z := differentiableAt_id.sub_const a
+    apply DifferentiableAt.differentiableWithinAt
+    exact (differentiableAt_const (c := (1 : ℂ))).div hc hn
   simpa only [boundaryIntegral, smul_eq_mul] using
     Complex.integral_boundary_rect_eq_zero_of_differentiableOn
       (fun z : ℂ => 1 / (z - a)) (⟨l, b⟩ : ℂ) (⟨r, u⟩ : ℂ) hd
@@ -156,6 +157,7 @@ private theorem square_comparison (a : ℂ) (e : ℝ) :
         rw [← intervalIntegral.integral_const_mul]
         apply intervalIntegral.integral_congr
         intro t _
+        dsimp only
         rw [p₀]
         simp [edgeVelocity, div_eq_mul_inv, mul_comm, mul_left_comm, mul_assoc]
       _ = _ := congrArg (fun z : ℂ => I * z)
@@ -170,11 +172,12 @@ private theorem square_comparison (a : ℂ) (e : ℝ) :
             ((a.im + e : ℝ) : ℂ) * I - a))) := by
         apply intervalIntegral.integral_congr
         intro t _
+        dsimp only
         rw [p₁]
         simp [edgeVelocity, div_eq_mul_inv, mul_assoc, I_mul_I]
       _ = ∫ x in (a.re + e)..(a.re - e),
           1 / ((x : ℂ) + ((a.im + e : ℝ) : ℂ) * I - a) := by
-        simpa only [sub_neg_eq_add, sub_eq_add_neg] using
+        simpa only [sub_eq_add_neg, neg_neg] using
           affine_integral (fun x : ℝ =>
             1 / ((x : ℂ) + ((a.im + e : ℝ) : ℂ) * I - a)) (-e) a.re
       _ = _ := intervalIntegral.integral_symm _ _
@@ -188,12 +191,13 @@ private theorem square_comparison (a : ℂ) (e : ℝ) :
         rw [← intervalIntegral.integral_const_mul]
         apply intervalIntegral.integral_congr
         intro t _
+        dsimp only
         rw [p₂]
         simp [edgeVelocity, div_eq_mul_inv, I_sq, mul_comm, mul_left_comm, mul_assoc]
       _ = I * (∫ y in (a.im + e)..(a.im - e),
           1 / (((a.re - e : ℝ) : ℂ) + (y : ℂ) * I - a)) := by
         congr 1
-        simpa only [sub_neg_eq_add, sub_eq_add_neg] using
+        simpa only [sub_eq_add_neg, neg_neg] using
           affine_integral (fun y : ℝ =>
             1 / (((a.re - e : ℝ) : ℂ) + (y : ℂ) * I - a)) (-e) a.im
       _ = _ := by rw [intervalIntegral.integral_symm]; ring
@@ -206,6 +210,7 @@ private theorem square_comparison (a : ℂ) (e : ℝ) :
             ((a.im - e : ℝ) : ℂ) * I - a))) := by
         apply intervalIntegral.integral_congr
         intro t _
+        dsimp only
         rw [p₃]
         simp [edgeVelocity, div_eq_mul_inv, pow_succ, I_sq, mul_assoc, I_mul_I]
       _ = _ := affine_integral (fun x : ℝ =>
@@ -338,13 +343,13 @@ private theorem edges_of_continuousOn (l r b u : ℝ) (hlr : l ≤ r) (hbu : b �
     (G : ℂ → ℂ) (hG : ContinuousOn G (Icc l r ×ℂ Icc b u)) :
     EdgeIntegrable l r b u G := by
   have hB : ContinuousOn (fun x : ℝ => G ((x : ℂ) + (b : ℂ) * I)) (Icc l r) :=
-    hG.comp (by fun_prop) (by intro x hx; simpa using And.intro hx ⟨le_rfl, hbu⟩)
+    hG.comp (by fun_prop) (by intro x hx; simpa [Complex.mem_reProdIm] using And.intro hx (show b ∈ Icc b u from ⟨le_rfl, hbu⟩))
   have hU : ContinuousOn (fun x : ℝ => G ((x : ℂ) + (u : ℂ) * I)) (Icc l r) :=
-    hG.comp (by fun_prop) (by intro x hx; simpa using And.intro hx ⟨hbu, le_rfl⟩)
+    hG.comp (by fun_prop) (by intro x hx; simpa [Complex.mem_reProdIm] using And.intro hx (show u ∈ Icc b u from ⟨hbu, le_rfl⟩))
   have hR : ContinuousOn (fun y : ℝ => G ((r : ℂ) + (y : ℂ) * I)) (Icc b u) :=
-    hG.comp (by fun_prop) (by intro y hy; simpa using And.intro ⟨hlr, le_rfl⟩ hy)
+    hG.comp (by fun_prop) (by intro y hy; simpa [Complex.mem_reProdIm] using And.intro (show r ∈ Icc l r from ⟨hlr, le_rfl⟩) hy)
   have hL : ContinuousOn (fun y : ℝ => G ((l : ℂ) + (y : ℂ) * I)) (Icc b u) :=
-    hG.comp (by fun_prop) (by intro y hy; simpa using And.intro ⟨le_rfl, hlr⟩ hy)
+    hG.comp (by fun_prop) (by intro y hy; simpa [Complex.mem_reProdIm] using And.intro (show l ∈ Icc l r from ⟨le_rfl, hlr⟩) hy)
   exact ⟨hB.intervalIntegrable_of_Icc hlr, hU.intervalIntegrable_of_Icc hlr,
     hR.intervalIntegrable_of_Icc hbu, hL.intervalIntegrable_of_Icc hbu⟩
 

@@ -88,9 +88,9 @@ private theorem linear_exp_bound {alpha r : ℝ} (ha : 0 < alpha) (hr : 0 ≤ r)
   have he1 : 1 ≤ Real.exp ((alpha / 2) * r) :=
     Real.one_le_exp (by positivity)
   have hrb : r ≤ (2 / alpha) * Real.exp ((alpha / 2) * r) := by
-    apply (mul_le_mul_left ha).mp
+    apply (mul_le_mul_iff_right₀ ha).mp
     have hc : alpha * ((2 / alpha) * Real.exp ((alpha / 2) * r)) =
-        2 * Real.exp ((alpha / 2) * r) := by field_simp; ring
+        2 * Real.exp ((alpha / 2) * r) := by field_simp
     rw [hc]
     nlinarith
   have hb : r + 1 / 2 ≤ (2 / alpha + 1 / 2) * Real.exp ((alpha / 2) * r) := by
@@ -192,10 +192,9 @@ private theorem geometricApprox_eq (alpha : ℝ) (d : ℂ) (n : ℕ)
     exact_mod_cast (denominator_pos hr).ne'
   have hg := finite_geometric (Real.exp (-2 * r) : ℂ) n
   unfold geometricApprox compensatedDensity
-  push_cast
-  rw [← hg]
-  field_simp [hden]
-  <;> ring
+  simp only [Complex.ofReal_sub, Complex.ofReal_one, Complex.ofReal_pow]
+  rw [← hg, ← mul_assoc, div_mul_cancel₀ _ hden]
+  ring
 
 private theorem geometricApprox_bound {alpha : ℝ} (ha : 0 < alpha)
     {d : ℂ} (hd : 0 ≤ d.re) (n : ℕ) {r : ℝ} (hr : 0 < r) :
@@ -230,9 +229,7 @@ private theorem integral_geometricApprox {alpha : ℝ} (ha : 0 < alpha)
         (((alpha : ℂ) + 2 * (j : ℂ))⁻¹ -
           ((alpha : ℂ) + d + 2 * (j : ℂ))⁻¹) := by
   have hpos (j : ℕ) : 0 < ((alpha : ℂ) + 2 * (j : ℂ)).re := by
-    simp only [Complex.add_re, Complex.ofReal_re, Complex.mul_re,
-      Complex.ofNat_re, Complex.natCast_re, Complex.ofNat_im,
-      Complex.natCast_im, mul_zero, sub_zero]
+    norm_num [Complex.add_re, Complex.mul_re]
     positivity
   have hpos' (j : ℕ) : 0 < ((alpha : ℂ) + d + 2 * (j : ℂ)).re := by
     have hj := hpos j
@@ -246,7 +243,9 @@ private theorem integral_geometricApprox {alpha : ℝ} (ha : 0 < alpha)
       filter_upwards [ae_restrict_mem measurableSet_Ioi] with r hr
       exact geometricApprox_eq alpha d n hr
     _ = _ := by
-      rw [integral_finset_sum _ (fun j _ =>
+      rw [integral_finsetSum (Finset.range n) (f := fun (j : ℕ) (r : ℝ) =>
+        Complex.exp (-((alpha : ℂ) + 2 * (j : ℂ)) * (r : ℂ)) -
+          Complex.exp (-((alpha : ℂ) + d + 2 * (j : ℂ)) * (r : ℂ))) (fun j _ =>
         (exponential_integral (hpos j)).1.sub (exponential_integral (hpos' j)).1)]
       apply Finset.sum_congr rfl
       intro j _
@@ -278,20 +277,24 @@ theorem digamma_sub_eq_compensated_integral {alpha : ℝ} (ha : 0 < alpha)
       filter_upwards [ae_restrict_mem measurableSet_Ioi] with r hr
       exact geometricApprox_bound ha hd (n + 1) hr
     · filter_upwards [ae_restrict_mem measurableSet_Ioi] with r hr
+      change 0 < r at hr
       have hb : Real.exp (-2 * r) < 1 := by
         simpa only [Real.exp_zero] using Real.exp_lt_exp.mpr (by linarith : -2 * r < 0)
       have hp : Tendsto (fun n : ℕ => (Real.exp (-2 * r)) ^ (n + 1)) atTop (𝓝 0) := by
         simpa only [pow_succ, zero_mul] using
-          (tendsto_pow_atTop_nhds_zero_of_lt_one (Real.exp_nonneg (-2 * r)) hb).
-            mul_const (Real.exp (-2 * r))
-      have hc := tendsto_const_nhds.mul
-        (tendsto_const_nhds.sub (Complex.continuous_ofReal.continuousAt.tendsto.comp hp))
+          (tendsto_pow_atTop_nhds_zero_of_lt_one
+            (Real.exp_nonneg (-2 * r)) hb).mul_const (Real.exp (-2 * r))
+      have hc := (tendsto_const_nhds (x := compensatedDensity alpha d r)).mul
+        ((tendsto_const_nhds (x := (1 : ℂ))).sub
+          (Complex.continuous_ofReal.continuousAt.tendsto.comp hp))
       simpa only [geometricApprox, Complex.ofReal_pow, Complex.ofReal_zero,
-        sub_zero, mul_one] using hc
+        Function.comp_def, sub_zero, mul_one] using hc
   let z : ℂ := ((alpha : ℂ) + d) / 2
   let x : ℂ := (alpha : ℂ) / 2
-  have hz : 0 < z.re := by dsimp [z]; simp only [Complex.div_ofNat_re, Complex.add_re,
-    Complex.ofReal_re]; linarith
+  have hz : 0 < z.re := by
+    dsimp [z]
+    simp only [Complex.div_ofNat_re, Complex.add_re, Complex.ofReal_re]
+    linarith
   have hx : 0 < x.re := by dsimp [x]; simp only [Complex.div_ofNat_re, Complex.ofReal_re]; linarith
   have he (n : ℕ) (hn : n ≠ 0) :
       logDeriv (fun w => Complex.GammaSeq w n) z -

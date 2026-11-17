@@ -46,7 +46,7 @@ instance edgeDecidable (a b : Coordinates) : Decidable (EdgeValid a b) := by
   unfold EdgeValid
   infer_instance
 
-def prefix (v : List Coordinates) (n : ℕ) : ℤ :=
+def «prefix» (v : List Coordinates) (n : ℕ) : ℤ :=
   ∑ i ∈ Finset.range n, increment (vertex v i) (vertex v (i + 1))
 
 def Valid (n : ℕ) (v : List Coordinates) : Prop :=
@@ -61,20 +61,20 @@ def check (n : ℕ) (v : List Coordinates) : Bool := decide (Valid n v)
 
 /-- Failure is distinguished from an accepted zero index. -/
 def evaluate (n : ℕ) (v : List Coordinates) : Option ℤ :=
-  if check n v then some (prefix v n) else none
+  if check n v then some («prefix» v n) else none
 
 theorem check_iff_valid (n : ℕ) (v : List Coordinates) :
     check n v = true ↔ Valid n v := by simp [check]
 
 theorem evaluate_eq_some_iff (n : ℕ) (v : List Coordinates) (k : ℤ) :
-    evaluate n v = some k ↔ check n v = true ∧ prefix v n = k := by
+    evaluate n v = some k ↔ check n v = true ∧ «prefix» v n = k := by
   by_cases h : check n v = true <;> simp [evaluate, h]
 
-@[simp] theorem prefix_zero (v : List Coordinates) : prefix v 0 = 0 := by simp [prefix]
+@[simp] theorem prefix_zero (v : List Coordinates) : «prefix» v 0 = 0 := by simp [«prefix»]
 
 theorem prefix_succ (v : List Coordinates) (n : ℕ) :
-    prefix v (n + 1) = prefix v n + increment (vertex v n) (vertex v (n + 1)) := by
-  simp [prefix, Finset.sum_range_succ]
+    «prefix» v (n + 1) = «prefix» v n + increment (vertex v n) (vertex v (n + 1)) := by
+  simp [«prefix», Finset.sum_range_succ]
 
 /-- The local contribution changes sign under reversal, including ray vertices. -/
 theorem increment_reverse (a b : Coordinates) : increment b a = -increment a b := by
@@ -103,9 +103,12 @@ theorem principal_of_not_left {a b : Coordinates} (h : EdgeValid a b)
   have hn : ¬ (a.1 < 0 ∧ b.1 < 0) := by simpa [leftChart] using hl
   rcases h with h | h | h | h
   · exact False.elim (hn h)
-  · exact Or.inl ⟨by exact_mod_cast h.1, by exact_mod_cast h.2⟩
-  · exact Or.inr (Or.inl ⟨by exact_mod_cast h.1, by exact_mod_cast h.2⟩)
-  · exact Or.inr (Or.inr ⟨by exact_mod_cast h.1, by exact_mod_cast h.2⟩)
+  · exact Or.inl ⟨by simpa [toComplex] using (show (0 : ℝ) < (a.1 : ℝ) by exact_mod_cast h.1),
+      by simpa [toComplex] using (show (0 : ℝ) < (b.1 : ℝ) by exact_mod_cast h.2)⟩
+  · exact Or.inr (Or.inl ⟨by simpa [toComplex] using (show (0 : ℝ) < (a.2 : ℝ) by exact_mod_cast h.1),
+      by simpa [toComplex] using (show (0 : ℝ) < (b.2 : ℝ) by exact_mod_cast h.2)⟩)
+  · exact Or.inr (Or.inr ⟨by simpa [toComplex] using (show (a.2 : ℝ) < 0 by exact_mod_cast h.1),
+      by simpa [toComplex] using (show (b.2 : ℝ) < 0 by exact_mod_cast h.2)⟩)
 
 theorem localLog_continuous {a b : Coordinates} (h : EdgeValid a b) :
     Continuous (fun t : I => localLog a b (blend (t : ℝ) (toComplex a) (toComplex b))) := by
@@ -149,7 +152,7 @@ theorem increment_eq_branches (a b : Coordinates) :
   by_cases hl : leftChart a b = true <;> simp [increment, branch, hl]
 
 def liftVertex (v : List Coordinates) (i : ℕ) : ℂ :=
-  Complex.log (points v i) + deck (prefix v i)
+  Complex.log (points v i) + deck («prefix» v i)
 
 /-- Successive vertices of the continuous logarithm include accumulated turns. -/
 def logCell (v : List Coordinates) (i : ℕ)
@@ -162,7 +165,9 @@ def logCell (v : List Coordinates) (i : ℕ)
     continuous_const).add continuous_const
   map_zero_left _ := by simp [constantVertex]
   map_one_left _ := by
-    simp only [blend_one, points, constantVertex]
+    change localLog _ _ (blend (1 : ℝ) (points v i) (points v (i + 1))) -
+      localLog _ _ (points v i) + liftVertex v i = liftVertex v (i + 1)
+    simp only [blend_one, points]
     rw [localLog_endpoint _ _ _ (Or.inr rfl), localLog_endpoint _ _ _ (Or.inl rfl)]
     simp only [liftVertex, points, prefix_succ, increment_eq_branches, deck, Int.cast_add,
       Int.cast_sub]
@@ -175,7 +180,9 @@ theorem logCell_exp (v : List Coordinates) (i : ℕ)
   have he0 : Complex.exp (localLog (vertex v i) (vertex v (i + 1)) (points v i)) =
       points v i := by simpa [points] using localLog_exp h (0 : I)
   change Complex.exp (_ - _ + _) = _
-  rw [Complex.exp_add, Complex.exp_sub, localLog_exp h t, he0,
+  have ht := localLog_exp h t
+  change Complex.exp (localLog _ _ (blend (t : ℝ) (points v i) (points v (i + 1)))) = _ at ht
+  rw [Complex.exp_add, Complex.exp_sub, ht, he0,
     liftVertex, Complex.exp_add, Complex.exp_log ha, exp_deck, mul_one]
   exact div_mul_cancel₀ _ ha
 
@@ -194,7 +201,8 @@ theorem finiteLog_exp {n : ℕ} (hn : 0 < n) (v : List Coordinates)
   apply natural (constantVertex (liftVertex v)) (constantVertex (points v)) n
     (fun i hi => logCell v i (he i hi)) (fun i _ => affineCell (points v) i)
     Complex.exp (0 : I) (0 : I)
-  · simp [constantVertex, liftVertex, ha, Complex.exp_log]
+  · change points v 0 = Complex.exp (liftVertex v 0)
+    simp [liftVertex, ha, Complex.exp_log]
   · intro i hi u
     exact (logCell_exp v i (he i hi) u 0).symm
 
@@ -203,8 +211,12 @@ period remains; subtracting principal logs alone would erase this integer. -/
 theorem finiteLog_jump (n : ℕ) (v : List Coordinates)
     (he : ∀ i, i < n → EdgeValid (vertex v i) (vertex v (i + 1)))
     (hc : vertex v n = vertex v 0) :
-    finiteLog n v he 1 - finiteLog n v he 0 = deck (prefix v n) := by
-  simp [finiteLog, constantVertex, liftVertex, points, hc]
+    finiteLog n v he 1 - finiteLog n v he 0 = deck («prefix» v n) := by
+  change concat (constantVertex (liftVertex v)) n (fun i hi => logCell v i (he i hi)) (1, 0) -
+    concat (constantVertex (liftVertex v)) n (fun i hi => logCell v i (he i hi)) (0, 0) = _
+  rw [Homotopy.apply_one, Homotopy.apply_zero]
+  change liftVertex v n - liftVertex v 0 = _
+  simp [liftVertex, points, hc]
 
 /-- The guard constructs nonvanishing of the whole polygon as well. -/
 theorem checked_nonzero {n : ℕ} {v : List Coordinates} (h : check n v = true) (t : I) :
@@ -223,14 +235,15 @@ theorem checkedLoop_closed {n : ℕ} {v : List Coordinates} (h : check n v = tru
     checkedLoop h 0 = checkedLoop h 1 := by
   have hc := ((check_iff_valid _ _).mp h).2.2.1
   apply Subtype.ext
-  simp only [checkedLoop, polygon_start, polygon_finish, points, hc]
+  change polygonMap n (points v) 0 = polygonMap n (points v) 1
+  simp only [polygon_start, polygon_finish, points, hc]
 
 /-- Refinement to the EXISTING index, for any punctured presentation of the
 same literal complete polygon. No claimed index or supplied log lift is used. -/
 theorem winding_eq_prefix {n : ℕ} {v : List Coordinates} (h : check n v = true)
     (g : C(I, Punctured)) (hg : g 0 = g 1)
     (hv : ∀ t, (g t).1 = polygonMap n (points v) t) :
-    winding g hg = prefix v n := by
+    winding g hg = «prefix» v n := by
   obtain ⟨hn, _, hc, he⟩ := (check_iff_valid _ _).mp h
   let hs : ∀ i, i < n → EdgeValid (vertex v i) (vertex v (i + 1)) :=
     fun i hi => he i (Finset.mem_range.mpr hi)
@@ -246,7 +259,7 @@ theorem evaluate_sound {n : ℕ} {v : List Coordinates} {k : ℤ}
 
 /-- This specializes the general refinement to a CONSTRUCTED punctured loop. -/
 theorem checkedLoop_winding {n : ℕ} {v : List Coordinates} (h : check n v = true) :
-    winding (checkedLoop h) (checkedLoop_closed h) = prefix v n :=
+    winding (checkedLoop h) (checkedLoop_closed h) = «prefix» v n :=
   winding_eq_prefix h _ _ (fun _ => rfl)
 
 end

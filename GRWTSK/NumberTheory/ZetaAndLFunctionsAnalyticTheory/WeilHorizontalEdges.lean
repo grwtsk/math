@@ -85,8 +85,11 @@ theorem intervalIntegrable_horizontalIntegrand (F : ℂ → ℂ) (f : ℝ → �
   have hlog : AnalyticAt ℂ (logDeriv F)
       ((sigma : ℂ) + Complex.I * (t : ℂ)) :=
     (hF sigma hsigma).deriv.div (hF sigma hsigma) (hn sigma hsigma)
-  have hc := ((hW _ (mem_univ _)).continuousAt.mul hlog.continuousAt).comp
-    (show ContinuousAt (fun x : ℝ => (x : ℂ) + Complex.I * (t : ℂ)) sigma by fun_prop)
+  have hline : ContinuousAt (fun x : ℝ => (x : ℂ) + Complex.I * (t : ℂ)) sigma := by
+    fun_prop
+  have hc : ContinuousAt (horizontalIntegrand F f t) sigma :=
+    ContinuousAt.comp (f := fun x : ℝ => (x : ℂ) + Complex.I * (t : ℂ))
+      ((hW _ (mem_univ _)).continuousAt.mul hlog.continuousAt) hline
   exact hc.continuousWithinAt
 
 /-- Every point of an entire horizontal edge has the same inverse-square budget.
@@ -165,15 +168,14 @@ theorem norm_orientedHorizontalBoundary_le (F : ℂ → ℂ) (f : ℝ → ℂ)
 /-- A fixed numerator and the original lower height bound give genuine convergence.
 No condition on the finitely many initial values or a dropped tail is needed. -/
 theorem tendsto_zero_of_horizontal_budget (u : ℕ → ℂ) (T : ℕ → ℝ)
-    (K : ℝ) (hK : 0 ≤ K) (hT : ∀ n, (n : ℝ) + 2 < T n)
+    (K : ℝ) (hK : 0 ≤ K) (hT : ∀ n : ℕ, (n : ℝ) + 2 < T n)
     (hu : ∀ n, ‖u n‖ ≤ K / (1 + T n) ^ 2) :
     Tendsto u atTop (𝓝 0) := by
   have hm (n : ℕ) : ‖u n‖ ≤ K * (1 / ((n : ℝ) + 1)) ^ 2 := by
     apply (hu n).trans
     have hn : 0 ≤ (n : ℝ) := Nat.cast_nonneg n
     have hden : ((n : ℝ) + 1) ^ 2 ≤ (1 + T n) ^ 2 := by
-      gcongr
-      linarith [hT n]
+      exact pow_le_pow_left₀ (by positivity) (by linarith [hT n]) 2
     calc
       _ ≤ K / ((n : ℝ) + 1) ^ 2 :=
         div_le_div_of_nonneg_left hK (by positivity) hden
@@ -198,7 +200,7 @@ private theorem analyticAt_completed_source_nonreal {N : ℕ} [NeZero N]
     (chi : DirichletCharacter ℂ N) {s : ℂ} (hi : s.im ≠ 0) :
     AnalyticAt ℂ (DirichletCharacter.completedLFunction chi) s := by
   let U : Set ℂ := {z | z.im ≠ 0}
-  have hopen : IsOpen U := isOpen_ne Complex.continuous_im continuous_const
+  have hopen : IsOpen U := isOpen_ne_fun Complex.continuous_im continuous_const
   have hd : DifferentiableOn ℂ (DirichletCharacter.completedLFunction chi) U := by
     intro z hz
     have hz0 : z ≠ 0 := by intro h; apply hz; simp [h]
@@ -213,7 +215,7 @@ theorem exists_primitive_horizontal_edges_vanish {N : ℕ} [NeZero N]
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     let C := horizontalLogDerivativeConstant chi + 1 + gammaRLogDerivativeConstant
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (sigma epsilon : ℝ), epsilon = -1 ∨ epsilon = 1 →
         DirichletCharacter.completedLFunction chi
           ((sigma : ℂ) + Complex.I * ((epsilon * T n : ℝ) : ℂ)) ≠ 0) ∧
@@ -274,7 +276,7 @@ theorem exists_zeta_horizontal_edges_vanish :
     let C := horizontalLogDerivativeConstant (1 : DirichletCharacter ℂ 1) + 1 +
       gammaRLogDerivativeConstant
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (sigma epsilon : ℝ), epsilon = -1 ∨ epsilon = 1 →
         completedRiemannZeta ((sigma : ℂ) + Complex.I * ((epsilon * T n : ℝ) : ℂ)) ≠ 0) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →

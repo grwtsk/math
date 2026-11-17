@@ -41,7 +41,7 @@ theorem norm_product_at_center_le_one {ι : Type*} (S : Finset ι)
     (a : ι → ℂ) (m : ι → ℕ) (ha : ∀ i ∈ S, ‖a i‖ ≤ 11 / 4) :
     ‖∏ i ∈ S, (factor 3 (a i) 0) ^ m i‖ ≤ 1 := by
   simp only [norm_prod, norm_pow]
-  apply Finset.prod_le_one (fun _ _ => pow_nonneg (norm_nonneg _) _)
+  apply Finset.prod_le_one₀ (fun _ _ => pow_nonneg (norm_nonneg _) _)
   intro i hi
   apply pow_le_one₀ (norm_nonneg _)
   rw [factor_at_zero 3 (by norm_num), norm_div, norm_neg]

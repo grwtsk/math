@@ -59,7 +59,7 @@ theorem correlation_eq_zero_of_abs_gt (f : ℝ → ℂ) (A : ℝ)
         have hrad : |r| ≤ 2 * A := by
           calc
             |r| = |(t + r) - t| := by congr 1; ring
-            _ ≤ |t + r| + |t| := abs_sub_le _ _
+            _ ≤ |t + r| + |t| := by simpa [Real.dist_eq] using dist_triangle (t + r) 0 t
             _ ≤ 2 * A := by linarith
         exact (not_le_of_gt hr) hrad
       simp [hs (t + r) hshift]
@@ -81,7 +81,7 @@ theorem hasDerivAt_correlation_contour_weight (f : ℝ → ℂ) (A : ℝ) (hA : 
   have hC := integrable_correlation_of_supported f A hf hs
   have hCs : ∀ r : ℝ, 2 * A < |r| → correlation f r = 0 :=
     fun _ hr => correlation_eq_zero_of_abs_gt f A hs hr
-  simpa only [mul_one] using
+  simpa only [Function.comp_def, id_eq, mul_one] using
     (hasDerivAt_integral_exp (correlation f) (2 * A) (by positivity) hC hCs (s - 1 / 2)).comp s
       ((hasDerivAt_id s).sub_const (1 / 2 : ℂ))
 

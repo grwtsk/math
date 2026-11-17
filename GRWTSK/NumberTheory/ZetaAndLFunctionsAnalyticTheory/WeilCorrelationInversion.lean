@@ -59,7 +59,7 @@ theorem continuous_correlation_of_admissible (f : ℝ → ℂ) (hf : Admissible 
         (integral_neg_eq_self (fun t : ℝ => conj (f t) * f (t + r)) volume).symm
       _ = _ := by
         apply integral_congr_ae
-        exact Filter.Eventually.of_forall (fun t => by rw [show -t + r = r - t by ring])
+        exact Filter.Eventually.of_forall (fun t => by dsimp; rw [show -t + r = r - t by ring])
   rw [he]
   exact hc
 
@@ -69,6 +69,7 @@ private theorem angular_dictionary (g : ℝ → ℂ) (t : ℝ) :
   rw [Real.fourier_real_eq_integral_exp_smul]
   apply integral_congr_ae
   exact Filter.Eventually.of_forall (fun x => by
+    dsimp only
     rw [smul_eq_mul, mul_comm (g x)]
     congr 1
     have he : (-2 * Real.pi * x * (-t / (2 * Real.pi))) = t * x := by
@@ -107,6 +108,7 @@ private theorem angular_inversion (g : ℝ → ℂ) (hg : Continuous g)
         rw [Real.fourierInv_eq_fourier_neg, Real.fourier_real_eq_integral_exp_smul]
         apply integral_congr_ae
         exact Filter.Eventually.of_forall (fun u => by
+          dsimp only
           rw [smul_eq_mul]
           have he : 2 * (Real.pi : ℂ) * Complex.I * (y : ℂ) * (u : ℂ) =
               ((-2 * Real.pi * u * (-y) : ℝ) : ℂ) * Complex.I := by push_cast; ring
@@ -126,7 +128,8 @@ private theorem angular_inversion (g : ℝ → ℂ) (hg : Continuous g)
     <;> ring
   change (1 / (2 * (Real.pi : ℂ))) *
     (∫ t : ℝ, H t * Complex.exp (-Complex.I * (t : ℂ) * (y : ℂ))) = _
-  rw [heq, Measure.integral_comp_mul_left]
+  rw [heq, Measure.integral_comp_mul_left
+    (fun u : ℝ => 𝓕 g u * Complex.exp (2 * (Real.pi : ℂ) * Complex.I * (y : ℂ) * (u : ℂ))) ]
   have habs : |(-(1 / (2 * Real.pi)) : ℝ)⁻¹| = 2 * Real.pi := by
     rw [inv_neg, abs_neg, one_div, inv_inv, abs_of_pos (by positivity)]
   rw [habs, Complex.real_smul, hInv]
@@ -164,7 +167,7 @@ theorem correlation_weight_inversion (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A)
         push_cast
         ring
       dsimp only [g]
-      rw [he, Complex.exp_add, ← Complex.ofReal_exp, mul_assoc])
+      rw [he, Complex.exp_add, ← Complex.ofReal_exp, ← mul_assoc])
   have hHi : Integrable (fun t : ℝ =>
       ∫ r : ℝ, g r * Complex.exp (Complex.I * (t : ℂ) * (r : ℂ))) volume := by
     have hi := (integrable_correlation_contour_weight_vertical f A hA hf hs sigma).1

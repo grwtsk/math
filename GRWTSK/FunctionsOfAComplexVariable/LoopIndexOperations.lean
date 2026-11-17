@@ -86,10 +86,13 @@ theorem no_homotopy_between_distinct_turns {j k : ℤ} (hjk : j ≠ k) :
 
 def reverseTime : C(I, I) where
   toFun t := ⟨1 - (t : ℝ), by constructor <;> linarith [t.2.1, t.2.2]⟩
-  continuous_toFun := (continuous_const.sub continuous_subtype_val).subtype_mk _
+  continuous_toFun := (continuous_const.sub continuous_subtype_val).subtype_mk
+    (fun t => by
+      change 0 ≤ 1 - (t : ℝ) ∧ 1 - (t : ℝ) ≤ 1
+      exact ⟨by linarith [t.2.2], by linarith [t.2.1]⟩)
 
-@[simp] theorem reverseTime_zero : reverseTime 0 = 1 := by ext; norm_num [reverseTime]
-@[simp] theorem reverseTime_one : reverseTime 1 = 0 := by ext; norm_num [reverseTime]
+@[simp] theorem reverseTime_zero : reverseTime 0 = 1 := by apply Subtype.ext; norm_num [reverseTime]
+@[simp] theorem reverseTime_one : reverseTime 1 = 0 := by apply Subtype.ext; norm_num [reverseTime]
 
 def reverseLoop (g : C(I, Punctured)) : C(I, Punctured) := g.comp reverseTime
 
