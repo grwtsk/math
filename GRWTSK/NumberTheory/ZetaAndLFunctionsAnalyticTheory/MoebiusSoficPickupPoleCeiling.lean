@@ -19,7 +19,7 @@ open scoped Topology
 namespace GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
 
 open GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential
-open GRWTSK.RiemannHypothesis.CCC
+open GRWTSK.RiemannHypothesis.CCC GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GaussianSignedResidualLaplace GaussianSignedResidualAffineEnvelope
   GaussianSignedResidualPole GaussianSignedResidualPoleSeries
   MoebiusSoficPickupHeatComparison MoebiusSoficPickupStationaryMean
@@ -133,5 +133,42 @@ theorem abs_settled_gap_lt_add_of_two_allowances_and_positive_poleSeries
   obtain ⟨T, hhighT, hlowT⟩ := (hhigh.and hlow).exists
   change 2 * S - S ≤ pickupHorizonVariance T at hlowT
   linarith
+
+private theorem positive_poleSeries_of_witness
+    (ρ : PositiveCriticalLineZero) (hsum : Summable positiveCriticalPoleSquare) :
+    0 < ∑' σ, positiveCriticalPoleSquare σ := by
+  obtain ⟨g, hg, hgn, hf⟩ := multiplicity_factorization ρ.1
+  have hfactor : ∀ᶠ w in 𝓝 ρ.1.val,
+      riemannZeta w = (w - ρ.1.val) ^ multiplicity ρ.1 * g w :=
+    hf.mono fun _ h => by simpa only [smul_eq_mul] using h
+  have hcoeff : zetaPoleCoefficient ρ.1 ≠ 0 := by
+    rw [← poleCoefficient_eq_zetaPoleCoefficient ρ.1 hg hfactor]
+    exact poleCoefficient_ne_zero ρ.2.1 ρ.2.2.ne' hgn
+  have hpos : 0 < positiveCriticalPoleSquare ρ :=
+    pow_pos (norm_pos_iff.mpr hcoeff) 2
+  have hterm := hsum.sum_le_tsum ({ρ} : Finset PositiveCriticalLineZero)
+    (fun σ _ => sq_nonneg ‖zetaPoleCoefficient σ.1‖)
+  exact hpos.trans_le (by simpa only [Finset.sum_singleton, positiveCriticalPoleSquare] using hterm)
+
+/-- One actual positive critical-line zero suffices to rule out tangent
+allowances under the same genuine affine-frequent supplier. -/
+theorem abs_settled_gap_lt_add_of_two_allowances_and_positive_critical_zero
+    {s t A a b : ℝ} (hs : 0 < s) (ht : 0 < t)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    (ρ : PositiveCriticalLineZero)
+    (ha : 0 ≤ a) (hb : 0 ≤ b) (hpos : 0 < a + b)
+    {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (haBudget : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ a ^ 2 + ε)
+    (hbBudget : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ b ^ 2 + ε) :
+    |heatedLimit s - heatedLimit t| < a + b :=
+  abs_settled_gap_lt_add_of_two_allowances_and_positive_poleSeries hs ht hζ hA hG
+    hmajorant hbudget
+    (positive_poleSeries_of_witness ρ
+      (linear_supplier_poleSeries_bound hs hζ hA hG hmajorant hbudget).2.1)
+    ha hb hpos hl haBudget hbBudget
 
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
