@@ -710,4 +710,104 @@ theorem cryptids_RH_of_fixed_square_block_certificates {Certificate : Type*}
   rw [rejected j hj slot] at good
   cases good
 
+/-- A square-numbered window rejects fully if no literal slot passes. -/
+def squareRejects (k : ℕ) : Bool :=
+  (List.finRange 95).all fun slot => !(slotAccepts (k ^ 2) slot)
+
+theorem squareRejects_eq_true_iff (k : ℕ) :
+    squareRejects k = true ↔ ∀ slot : Fin 95, slotAccepts (k ^ 2) slot = false := by
+  simp [squareRejects, List.all_eq_true]
+
+/-- Length of the trailing block of fully rejected square windows after
+the first n square indices have been checked. -/
+def trailingSquareRejections : ℕ → ℕ
+  | 0 => 0
+  | n + 1 => if squareRejects n then trailingSquareRejections n + 1 else 0
+
+theorem le_trailingSquareRejections_iff (n length : ℕ) :
+    length ≤ trailingSquareRejections n ↔
+      length ≤ n ∧ ∀ j < length, squareRejects (n - 1 - j) = true := by
+  induction n generalizing length with
+  | zero =>
+    cases length <;> simp [trailingSquareRejections]
+  | succ n ih =>
+    cases length with
+    | zero => simp
+    | succ length =>
+      cases h : squareRejects n with
+      | false =>
+        rw [trailingSquareRejections, h]
+        simp only [Bool.false_eq_true, ite_false]
+        constructor
+        · omega
+        · rintro ⟨_, recent⟩
+          have head : squareRejects n = true := by simpa using recent 0 (by omega)
+          rw [h] at head
+          cases head
+      | true =>
+        simp only [trailingSquareRejections, h, ite_true, Nat.succ_le_succ_iff]
+        rw [ih]
+        constructor
+        · rintro ⟨bound, recent⟩
+          refine ⟨bound, ?_⟩
+          intro j hj
+          cases j with
+          | zero => simpa using h
+          | succ j =>
+            have index : n + 1 - 1 - (j + 1) = n - 1 - j := by omega
+            rw [index]
+            exact recent j (by omega)
+        · rintro ⟨bound, recent⟩
+          refine ⟨bound, fun j hj => ?_⟩
+          have index : n + 1 - 1 - (j + 1) = n - 1 - j := by omega
+          exact index ▸ recent (j + 1) (by omega)
+
+/-- Any observed positive streak is a finite witness of native halting. -/
+theorem cryptids_halts_of_trailingSquareRejections_pos {n : ℕ}
+    (positive : 0 < trailingSquareRejections n) : Halts Riemann95.candidate := by
+  have reject := (le_trailingSquareRejections_iff n 1).mp positive
+  have bad := (squareRejects_eq_true_iff _).mp (reject.2 0 (by decide)) 0
+  rw [Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis]
+  intro rh
+  have good := (window_accepts_iff_all_slots_accept ((n - 1 - 0) ^ 2)).mp
+    (all_windows_accept_iff_cryptids_RH.mpr rh _) 0
+  rw [bad] at good
+  cases good
+
+/-- The one-counter monitor attains arbitrary lengths on every tail
+exactly when the original blank-tape machine halts. -/
+theorem cryptids_halts_iff_trailingSquareRejections_unbounded :
+    Halts Riemann95.candidate ↔
+      ∀ start length : ℕ, ∃ n ≥ start, length ≤ trailingSquareRejections n := by
+  constructor
+  · intro halts start length
+    obtain ⟨k, later, block⟩ :=
+      cryptids_halts_iff_arbitrarily_long_square_rejections.mp halts start length
+    refine ⟨k + length, by omega, (le_trailingSquareRejections_iff _ _).mpr ⟨by omega, ?_⟩⟩
+    intro j hj
+    have index : k + length - 1 - j = k + (length - 1 - j) := by omega
+    rw [index, squareRejects_eq_true_iff]
+    exact block _ (by omega)
+  · rintro unbounded
+    obtain ⟨n, _, bound⟩ := unbounded 0 1
+    exact cryptids_halts_of_trailingSquareRejections_pos bound
+
+/-- An eventual upper bound for the native counter certifies RH. -/
+theorem cryptids_RH_iff_eventually_bounded_trailingSquareRejections :
+    RiemannHypothesis ↔
+      ∃ start bound : ℕ, ∀ n ≥ start, trailingSquareRejections n ≤ bound := by
+  constructor
+  · intro rh
+    refine ⟨0, 0, fun n _ => ?_⟩
+    by_contra! positive
+    exact (Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mp
+      (cryptids_halts_of_trailingSquareRejections_pos positive)) rh
+  · rintro ⟨start, bound, bounded⟩
+    by_contra notRH
+    have halts := Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr notRH
+    obtain ⟨n, hn, large⟩ :=
+      cryptids_halts_iff_trailingSquareRejections_unbounded.mp halts start (bound + 1)
+    have small := bounded n hn
+    omega
+
 end GRWTSK.NumberTheory.Riemann95StageCertificates
