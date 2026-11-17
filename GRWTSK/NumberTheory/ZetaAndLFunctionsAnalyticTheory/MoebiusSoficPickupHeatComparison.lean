@@ -1096,4 +1096,37 @@ theorem tendsto_settled_residual_allowance_at_mean_four_second_order :
   rw [hw, div_pow]
   ring
 
+/-- At one positive heat with nonzero settled wave, the signed mask and
+residual correction determines the original source mean on the same scales. -/
+theorem tendsto_normalized_heatMaskDeviation_add_residual_iff_source_mean
+    {s m : ℝ} (hs : 0 < s) (hne : heatedLimit s ≠ 0)
+    {l : Filter ℝ} (hl : l ≤ atTop) :
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+        pickupDiagonal T + residualEnergy s T) / T)
+      l (𝓝 (settledHeatedPickup s + heatedLimit s ^ 2 - 2 * heatedLimit s * m)) ↔
+    Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, wholePickup u) / T) l (𝓝 m) := by
+  let B := settledHeatedPickup s + heatedLimit s ^ 2
+  let k := 2 * heatedLimit s
+  let D (T : ℝ) :=
+    (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+      pickupDiagonal T + residualEnergy s T) / T
+  let M (T : ℝ) := (∫ u in (0 : ℝ)..T, wholePickup u) / T
+  change Tendsto D l (𝓝 (B - k * m)) ↔ Tendsto M l (𝓝 m)
+  have hk : k ≠ 0 := mul_ne_zero (by norm_num) hne
+  have hsum : Tendsto (fun T => D T + k * M T) l (𝓝 B) := by
+    simpa only [D, k, M, B, add_div, mul_div_assoc] using
+      (tendsto_normalized_heatMaskDeviation_add_residual_with_mean_correction hs).mono_left hl
+  constructor
+  · intro hD
+    have h := (hsum.sub hD).div_const k
+    have hlimit : (B - (B - k * m)) / k = m := by
+      rw [show B - (B - k * m) = k * m by ring]
+      field_simp
+    rw [hlimit] at h
+    refine h.congr' (Eventually.of_forall fun T => ?_)
+    rw [show D T + k * M T - D T = k * M T by ring]
+    field_simp
+  · exact tendsto_normalized_heatMaskDeviation_add_residual_of_source_mean hs hl
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
