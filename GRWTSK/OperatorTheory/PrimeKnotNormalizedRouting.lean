@@ -504,6 +504,85 @@ private theorem exists_positive_linked_pair (s : Source Prime Knot) (encode : Sl
   · exact le_of_not_gt (fun w => missing ⟨k, w, links⟩)
   · exact le_rfl
 
+/-- At the quarter threshold no positive incidence profile is contained in
+another slot's profile. The predecessor and successor pair witnesses
+have only the given slot in common. -/
+theorem exists_positive_link_of_distinct_slot_at_quarter
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j))
+    {i j : Fin 95} (distinct : i ≠ j) :
+    ∃ k, 0 < weight k ∧ Linked s (encode i) k ∧ ¬ Linked s (encode j) k := by
+  classical
+  have pairWitness (a : Fin 95) :
+      ∃ k, 0 < weight k ∧ ∀ b, Linked s (encode b) k ↔ b = a ∨ b = a + 1 := by
+    have pos : 0 < incidenceEntry s encode weight a (a + 1) :=
+      lt_of_lt_of_le (mul_pos (by norm_num) (active a))
+        ((le_div_iff₀ (active a)).mp (forward a))
+    obtain ⟨k, positive, ha, hn⟩ := exists_positive_linked_pair s encode weight pos
+    let S : Finset (Fin 95) := Finset.univ.filter fun t => Linked s (encode t) k
+    have ma : a ∈ S := by simp [S, ha]
+    have mn : a + 1 ∈ S := by simp [S, hn]
+    have two : S.card = 2 := (support_pair_of_normalized_95_forward_ge_quarter
+      s encode weight nonneg active forward k positive ⟨a, ma⟩).1
+    have distinctStep : ∀ b : Fin 95, b ≠ b + 1 := by decide
+    have pair : ({a, a + 1} : Finset (Fin 95)) = S :=
+      Finset.eq_of_subset_of_card_le (by
+        intro b hb
+        simp only [Finset.mem_insert, Finset.mem_singleton] at hb
+        rcases hb with rfl | rfl
+        · exact ma
+        · exact mn) (by rw [two]; simp [distinctStep a])
+    exact ⟨k, positive, fun b => by
+      have member : Linked s (encode b) k ↔ b ∈ S := by simp [S]
+      rw [member, ← pair]
+      simp⟩
+  by_contra! included
+  obtain ⟨out, wout, outSupport⟩ := pairWitness i
+  have outLink := included out wout ((outSupport i).mpr (Or.inl rfl))
+  have next : j = i + 1 := ((outSupport j).mp outLink).resolve_left distinct.symm
+  obtain ⟨incoming, win, inSupport⟩ := pairWitness (i - 1)
+  rw [sub_add_cancel] at inSupport
+  have inLink := included incoming win ((inSupport i).mpr (Or.inr rfl))
+  have prev : j = i - 1 := ((inSupport j).mp inLink).resolve_right distinct.symm
+  have noTwo : ∀ a : Fin 95, a + 1 ≠ a - 1 := by decide
+  exact noTwo i (next.symm.trans prev)
+
+/-- Even distinct polynomial vertices force strict loss if the positive
+incidence profile of one is contained in that of the other. -/
+theorem exists_normalized_95_forward_lt_quarter_of_profile_le
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    {i j : Fin 95} (distinct : i ≠ j)
+    (included : ∀ k, 0 < weight k → Linked s (encode i) k → Linked s (encode j) k) :
+    ∃ t, incidenceEntry s encode weight t (t + 1) /
+      (∑ a, incidenceEntry s encode weight t a) < 1 / 4 := by
+  by_contra! forward
+  obtain ⟨k, positive, source, excluded⟩ :=
+    exists_positive_link_of_distinct_slot_at_quarter s encode weight nonneg active forward distinct
+  exact excluded (included k positive source)
+
+/-- For an encoded pair of reciprocal linear factors, root closure under
+inversion on the positive-weight source polynomials rules out the threshold. -/
+theorem exists_normalized_95_forward_lt_quarter_of_inverse_roots
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    {i j : Fin 95} (distinct : i ≠ j) (x : ZMod 17)
+    (left : (s.polynomial (encode i)).polynomial = Polynomial.X - Polynomial.C x)
+    (right : (s.polynomial (encode j)).polynomial = Polynomial.X - Polynomial.C x⁻¹)
+    (closed : ∀ k, 0 < weight k →
+      (s.alexanderMod17 k).IsRoot x → (s.alexanderMod17 k).IsRoot x⁻¹) :
+    ∃ t, incidenceEntry s encode weight t (t + 1) /
+      (∑ a, incidenceEntry s encode weight t a) < 1 / 4 := by
+  apply exists_normalized_95_forward_lt_quarter_of_profile_le s encode weight nonneg active distinct
+  intro k pos
+  simp only [Linked, left, right, Polynomial.dvd_iff_isRoot]
+  exact closed k pos
+
 /-- Reusing a prime-polynomial vertex at two slots prevents attaining the
 quarter threshold at every slot. Each positive successor entry needs a
 knot whose support consists of exactly its two endpoints. -/
@@ -514,39 +593,11 @@ theorem injective_of_normalized_95_forward_ge_quarter
     (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
       (∑ j, incidenceEntry s encode weight i j)) :
     Function.Injective encode := by
-  classical
-  have adjacent (i j : Fin 95) (same : encode i = encode j) :
-      j = i ∨ j = i + 1 := by
-    have pos : 0 < incidenceEntry s encode weight i (i + 1) :=
-      lt_of_lt_of_le (mul_pos (by norm_num) (active i))
-        ((le_div_iff₀ (active i)).mp (forward i))
-    have witness := exists_positive_linked_pair s encode weight pos
-    obtain ⟨k, positive, hi, hn⟩ := witness
-    let S : Finset (Fin 95) := Finset.univ.filter fun t => Linked s (encode t) k
-    have mi : i ∈ S := by simp [S, hi]
-    have mn : i + 1 ∈ S := by simp [S, hn]
-    have mj : j ∈ S := by simpa [S, ← same] using hi
-    have two : S.card = 2 :=
-      (support_pair_of_normalized_95_forward_ge_quarter
-        s encode weight nonneg active forward k positive ⟨i, mi⟩).1
-    have distinct : ∀ a : Fin 95, a ≠ a + 1 := by decide
-    have pair : ({i, i + 1} : Finset (Fin 95)) = S :=
-      Finset.eq_of_subset_of_card_le (by
-        intro a ha
-        simp only [Finset.mem_insert, Finset.mem_singleton] at ha
-        rcases ha with rfl | rfl
-        · exact mi
-        · exact mn)
-        (by rw [two]; simp [distinct i])
-    rw [← pair] at mj
-    simpa using mj
   intro i j same
-  rcases adjacent i j same with equal | next
-  · exact equal.symm
-  rcases adjacent j i same.symm with equal | prev
-  · exact equal
-  have noTwo : ∀ a : Fin 95, a ≠ a + 1 + 1 := by decide
-  exact (noTwo i (prev.trans (congrArg (fun t => t + 1) next))).elim
+  by_contra different
+  obtain ⟨k, _, linked, excluded⟩ :=
+    exists_positive_link_of_distinct_slot_at_quarter s encode weight nonneg active forward different
+  exact excluded (same ▸ linked)
 
 /-- A slot collision forces strict loss in some row at the quarter threshold. -/
 theorem exists_normalized_95_forward_lt_quarter_of_collision
