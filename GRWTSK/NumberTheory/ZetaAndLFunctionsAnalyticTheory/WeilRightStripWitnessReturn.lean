@@ -83,20 +83,13 @@ def PrimitiveRightStripNegativeWitness : Prop :=
       ∃ (T : ℝ) (f : ℝ → ℝ), Admissible χ T f ∧
         primitiveArithmeticValue χ hp hn T (liftReal f) < 0
 
-/-- The functional equation reduces the nonprincipal witness domain in the
-existing Weil return to the right half of the open critical strip. -/
-theorem dirichletGRH_of_rh_and_rightStrip_witness
+/-- Nonvanishing on the right open strip for all primitive nonprincipal
+characters suffices for the nonprincipal part of Dirichlet GRH. -/
+theorem dirichletGRH_of_rh_and_primitive_rightStrip
     (hRH : _root_.RiemannHypothesis)
-    (hwitness : PrimitiveRightStripNegativeWitness)
-    (hsmall : ∀ (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
-      (hp : χ.IsPrimitive) (hn : χ ≠ 1), SmallConductorStages χ hp hn) :
+    (noRight : ∀ (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q),
+      χ.IsPrimitive → χ ≠ 1 → ∀ s : ℂ, 1 / 2 < s.re → s.re < 1 → χ.LFunction s ≠ 0) :
     DirichletGRH := by
-  have noRight (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
-      (hp : χ.IsPrimitive) (hn : χ ≠ 1) (s : ℂ)
-      (hhalf : 1 / 2 < s.re) (hone : s.re < 1) : χ.LFunction s ≠ 0 := by
-    intro hz
-    obtain ⟨T, f, hf, hneg⟩ := hwitness q χ hp hn s hhalf hone hz
-    exact (not_lt_of_ge (primitive_nonneg_of_small_stages χ hp hn (hsmall q χ hp hn) hf)) hneg
   apply PrimitiveDirichletReturn.dirichletGRH_of_rh_and_primitive_nonprincipal hRH
   intro q hq χ hp hn s hs0 hs1 hz
   apply le_antisymm
@@ -109,5 +102,18 @@ theorem dirichletGRH_of_rh_and_rightStrip_witness
     have hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
     exact noRight q χ⁻¹ hpInv hnInv (1 - s) (by linarith) (by linarith)
       (LFunction_zero_at_reflected_inverse χ hp hn hs0 hs1 hz)
+
+/-- The functional equation reduces the nonprincipal witness domain in the
+existing Weil return to the right half of the open critical strip. -/
+theorem dirichletGRH_of_rh_and_rightStrip_witness
+    (hRH : _root_.RiemannHypothesis)
+    (hwitness : PrimitiveRightStripNegativeWitness)
+    (hsmall : ∀ (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
+      (hp : χ.IsPrimitive) (hn : χ ≠ 1), SmallConductorStages χ hp hn) :
+    DirichletGRH := by
+  apply dirichletGRH_of_rh_and_primitive_rightStrip hRH
+  intro q hq χ hp hn s hhalf hone hz
+  obtain ⟨T, f, hf, hneg⟩ := hwitness q χ hp hn s hhalf hone hz
+  exact (not_lt_of_ge (primitive_nonneg_of_small_stages χ hp hn (hsmall q χ hp hn) hf)) hneg
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain

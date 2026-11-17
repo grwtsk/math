@@ -110,6 +110,11 @@ alteration, projective purity, trace or duality imports.
 
 ## Related GRWTSK results
 
+The [RH and Dirichlet GRH blueprint](../ZetaAndLFunctionsAnalyticTheory/RHGRHProofBlueprint.md)
+tracks which additional source identities, estimates, and coverage the
+global analytic routes require. Finite-field purity is a comparison for
+those routes; the target functions and proof premises are stated separately.
+
 The following links identify the source object, the result already expressed
 in GRWTSK, and the hypothesis at which each argument returns to its own
 problem. Comparisons refer to the files inspected at math revision
