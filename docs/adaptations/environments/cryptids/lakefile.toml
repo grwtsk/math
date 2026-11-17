@@ -16,4 +16,9 @@ name = "GRWTSKCryptidsAdapters"
 roots = [
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.ChebyshevBandReduction",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.ChebyshevBandCryptids",
+  "GRWTSK.NumberTheory.SpecificationAndPrimeEnumeration",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.CertifiedStageCoverage",
+  "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95StageCertificates",
+  "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeArgumentCounterexample",
+  "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95StageCertificatesCryptids",
 ]
