@@ -602,4 +602,89 @@ theorem scheduledProbeRun_first_bad (enabled : ℕ → Bool) {m : ℕ}
       cases here
   · exact probeRun_halted_later boundary
 
+
+/-- Pauses never decrease the number of completed native probes. -/
+theorem completedProbes_mono (enabled : ℕ → Bool) : Monotone (completedProbes enabled) := by
+  apply monotone_nat_of_le_succ
+  intro t
+  rw [completedProbes]
+  exact Nat.le_add_right _ _
+
+/-- The completed-probe clock is unbounded exactly when enabled ticks occur arbitrarily late. -/
+theorem completedProbes_unbounded_iff (enabled : ℕ → Bool) :
+    (∀ n, ∃ t, n ≤ completedProbes enabled t) ↔
+      ∀ t, ∃ s, t ≤ s ∧ enabled s = true := by
+  constructor
+  · intro progress t
+    by_contra missing
+    have constant (k : ℕ) : completedProbes enabled (t + k) = completedProbes enabled t := by
+      induction k with
+      | zero => rfl
+      | succ k ih =>
+        have off : enabled (t + k) = false := by
+          cases h : enabled (t + k)
+          · rfl
+          · exact (missing ⟨_, Nat.le_add_right _ _, h⟩).elim
+        simpa [completedProbes, off] using ih
+    obtain ⟨s, hs⟩ := progress (completedProbes enabled t + 1)
+    by_cases earlier : s ≤ t
+    · have bounded := completedProbes_mono enabled earlier
+      omega
+    · have bounded := completedProbes_mono enabled (show s ≤ t + s by omega)
+      rw [constant] at bounded
+      omega
+  · intro late n
+    induction n with
+    | zero => exact ⟨0, Nat.zero_le _⟩
+    | succ n ih =>
+      obtain ⟨t, ht⟩ := ih
+      obtain ⟨s, hs, on⟩ := late t
+      have enough := ht.trans (completedProbes_mono enabled hs)
+      exact ⟨s + 1, by simpa [completedProbes, on] using Nat.succ_le_succ enough⟩
+
+/-- At least one completed probe in every block of `width` ticks gives
+a linear bound on ticks per completed probe. -/
+theorem le_completedProbes_mul (enabled : ℕ → Bool) (width : ℕ)
+    (gap : ∀ t, ∃ j < width, enabled (t + j) = true) (n : ℕ) :
+    n ≤ completedProbes enabled (n * width) := by
+  induction n with
+  | zero => exact Nat.zero_le _
+  | succ n ih =>
+    obtain ⟨j, inside, on⟩ := gap (n * width)
+    have before := ih.trans (completedProbes_mono enabled (Nat.le_add_right _ j))
+    have after : n + 1 ≤ completedProbes enabled (n * width + j + 1) := by
+      simpa [completedProbes, on] using Nat.succ_le_succ before
+    exact after.trans (completedProbes_mono enabled (by rw [Nat.succ_mul]; omega))
+
+/-- A uniform bound on gaps supplies a deadline for every safe native prefix. -/
+theorem scheduledProbeRun_visits_by (enabled : ℕ → Bool) (width : ℕ)
+    (gap : ∀ t, ∃ j < width, enabled (t + j) = true) {n : ℕ} (safe : SafePrefix n) :
+    ∃ s ≤ probeClock n * width,
+      ∃ active, scheduledProbeRun enabled s = .live active 0 ∧ active.root.stage = n :=
+  scheduledProbeRun_visits enabled safe (le_completedProbes_mul enabled width gap _)
+
+/-- Enabled ticks arbitrarily late suffice for the exact native halting return. -/
+theorem scheduledProbeRun_halts_iff_not_RH_of_enabled (enabled : ℕ → Bool)
+    (late : ∀ t, ∃ s, t ≤ s ∧ enabled s = true) :
+    (∃ t stopped, scheduledProbeRun enabled t = .halted stopped) ↔ ¬ RiemannHypothesis :=
+  scheduledProbeRun_halts_iff_not_RH enabled ((completedProbes_unbounded_iff enabled).mpr late)
+
+/-- Under a uniform gap bound the first bad stage stops by a known scheduler tick. -/
+theorem scheduledProbeRun_first_bad_by (enabled : ℕ → Bool) (width : ℕ)
+    (gap : ∀ t, ∃ j < width, enabled (t + j) = true) {m : ℕ}
+    (safe : SafePrefix m) (bad : Riemann120.ShuniaCounterexample (m + 2)) :
+    ∃ stopped, stopped.stage = m ∧
+      scheduledProbeRun enabled (probeClock (m + 1) * width) = .halted stopped := by
+  obtain ⟨stopped, index, exactTime⟩ := scheduledProbeRun_first_bad enabled safe bad
+  exact ⟨stopped, index, (exactTime _).mpr (le_completedProbes_mul enabled width gap _)⟩
+
+/-- One enabled tick cannot certify fairness of the gate. -/
+theorem single_enabled_tick_not_fair :
+    ¬ ∀ n, ∃ t, n ≤ completedProbes (fun t => decide (t = 0)) t := by
+  intro fair
+  have late := (completedProbes_unbounded_iff _).mp fair
+  obtain ⟨s, hs, on⟩ := late 1
+  have zero : s = 0 := of_decide_eq_true on
+  omega
+
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch

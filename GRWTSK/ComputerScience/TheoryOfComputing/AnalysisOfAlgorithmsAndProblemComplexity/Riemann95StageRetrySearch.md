@@ -209,3 +209,40 @@ compilation with `--trust=0` and warnings as errors, target kernel
 replay, boundary controls, and the transitive theorem audit passed.
 Fresh replay of the full import closure, independent review, wall-clock
 performance, and HS runtime parity are `NOT_RUN`.
+
+## Fairness and deadlines from enabled ticks
+
+`completedProbes_unbounded_iff` holds for every schedule. A clock that never
+increments after some tick is bounded by its count at that tick. Conversely,
+an arbitrarily late enabled tick provides the next increment after any
+witnessed count. This criterion supplies the exact progress premise of
+`scheduledProbeRun_halts_iff_not_RH_of_enabled`. A schedule with only tick
+zero enabled fails it, even though the gate does permit a completed probe.
+
+`le_completedProbes_mul` assumes that every interval of `w` successive ticks
+includes an enabled tick. The (n)-th such block contributes at least one
+increment before its end, yielding at least `n` completed probes by tick
+`n * w`. Thus `scheduledProbeRun_visits_by` visits every safe stage `n`
+at cursor zero by tick `probeClock n * w`. If `m` is the first bad native
+stage, `scheduledProbeRun_first_bad_by` reaches the exact recorded terminal
+state by tick `probeClock (m + 1) * w`.
+
+The arithmetic classification and recorded trace still come from the pinned
+Cryptids `Stage95.physical_stage_outcomes` and
+`physical_stage0_halts_iff_witness` chain documented above. To apply
+the deadlines to HS, prove that an enabled tick delivers a completed native
+probe and that paused ticks preserve the full checkpoint and cursor. Then
+certify a uniform gap bound for those completions. The result measures
+scheduler ticks. A bound in elapsed time additionally requires a bound on the
+duration of those ticks.
+
+Strict standalone Lean compilation with `--trust=0 -DwarningAsError=true`,
+target kernel replay and the seven-theorem transitive audit passed on the
+pins above. The audit found only `propext`, `Classical.choice` and
+`Quot.sound`. Verified Lean SHA-256
+`b6ddb8363144dbb5c7acbd93547144995f478ff0a2c271898d344ad6a163e34f`.
+Fresh import-closure replay, independent review and HS runtime parity
+remain `NOT_RUN`.
+A checked alternating schedule meets the width-two condition and has
+exactly `n` completions at tick `2 * n`, attaining the bound. At tick
+100 the single-enabled and alternating schedules returned counts 1 and 50.
