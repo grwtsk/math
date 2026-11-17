@@ -465,4 +465,45 @@ theorem signedLaplace_pickupVelocity_eq_reciprocalZeta_of_weakMertens {B : ℝ} 
     linear_combination h
   exact (eq_div_iff_mul_eq (left_ne_zero_of_mul_eq_one hfactor)).2 (by simpa [mul_comm] using hfactor)
 
+/-- Midpoint nonvanishing bounds the centered velocity difference quotient
+uniformly near zero on the positive Laplace half-plane. -/
+theorem signedLaplace_pickupVelocity_midpoint_quotient_bounded {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (hmid : riemannZeta (1 / 2 : ℂ) ≠ 0) :
+    ∃ r C : ℝ, 0 < r ∧ 0 ≤ C ∧ ∀ z : ℂ, 0 < z.re → ‖z‖ < r →
+      ‖(signedLaplace pickupVelocity z - 2 / riemannZeta (1 / 2 : ℂ)) / z‖ ≤ C := by
+  let f (z : ℂ) := 1 / ((z + 1 / 2) * riemannZeta (z + 1 / 2))
+  have hshift : DifferentiableAt ℂ (fun z : ℂ => z + 1 / 2) 0 := by fun_prop
+  have hζ : DifferentiableAt ℂ (fun z : ℂ => riemannZeta (z + 1 / 2)) 0 := by
+    refine (differentiableAt_riemannZeta (s := (fun z : ℂ => z + 1 / 2) 0) ?_).comp 0 hshift
+    norm_num
+  have hden : (fun z : ℂ => (z + 1 / 2) * riemannZeta (z + 1 / 2)) 0 ≠ 0 := by
+    simpa only [zero_add] using mul_ne_zero (by norm_num : (1 / 2 : ℂ) ≠ 0) hmid
+  have hf : DifferentiableAt ℂ f 0 := (differentiableAt_const _).div (hshift.mul hζ) hden
+  have hc : ContinuousAt (dslope f 0) 0 := continuousAt_dslope_same.2 hf
+  let C := ‖dslope f 0 0‖ + 1
+  have hC : 0 ≤ C := by dsimp [C]; positivity
+  have hn : {z : ℂ | ‖dslope f 0 z‖ < C} ∈ 𝓝 (0 : ℂ) :=
+    hc.norm.eventually_lt continuousAt_const (by dsimp [C]; linarith)
+  obtain ⟨r, hr, hball⟩ := Metric.mem_nhds_iff.mp hn
+  refine ⟨min r (1 / 2), C, lt_min hr (by norm_num), hC, fun z hz hzr => ?_⟩
+  have hzpole : z + 1 / 2 ≠ 1 := by
+    intro he
+    have hre := congrArg Complex.re he
+    norm_num at hre
+    have hnz := Complex.re_le_norm z
+    linarith [lt_of_lt_of_le hzr (min_le_right r (1 / 2))]
+  have hz0 : z ≠ 0 := by
+    intro he
+    simp [he] at hz
+  have hf0 : f 0 = 2 / riemannZeta (1 / 2 : ℂ) := by
+    simp only [f, zero_add]
+    field_simp
+  have hb : ‖dslope f 0 z‖ < C :=
+    hball (by simpa [Metric.mem_ball, dist_zero_right] using
+      lt_of_lt_of_le hzr (min_le_left r (1 / 2)))
+  rw [dslope_of_ne f hz0, slope_def_field, sub_zero, hf0] at hb
+  rw [signedLaplace_pickupVelocity_eq_reciprocalZeta_of_weakMertens hB hM hz hzpole]
+  exact hb.le
+
 end GRWTSK.NumberTheory.Moebius
