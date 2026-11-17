@@ -246,3 +246,32 @@ remain `NOT_RUN`.
 A checked alternating schedule meets the width-two condition and has
 exactly `n` completions at tick `2 * n`, attaining the bound. At tick
 100 the single-enabled and alternating schedules returned counts 1 and 50.
+
+## Out-of-order proposals and terminal agreement
+
+`verifyBatch` checks submitted candidates against the same anchored
+root and returns the first valid receipt in arrival order. The batch
+may skip any candidate codes. `verifyBatch_none_iff` characterizes
+failure as rejection of every proposal, and `verifyBatch_some_mem`
+identifies a submitted candidate for every returned receipt.
+`commitBatch` keeps the full active state when the batch is
+inconclusive. Otherwise it consumes the original native trace in the
+receipt. It halts exactly when the root's original Shunia predicate
+holds and the batch contains a verified candidate.
+
+The terminal-time proof compares two successful runs from the same
+native start. If their lengths differ, the longer run takes a step
+after the earlier run has reached a configuration with no successor.
+This is impossible by native run composition. Equal lengths give
+the same full terminal configuration by determinism.
+`Stopped.native_time_and_config_eq` applies this to absolute native
+instruction counts from blank, including batches with different
+anchored active inputs.
+
+The zero-step control rejects every batch made only of such proposals
+at any safe root, irrespective of its size, padding or register data.
+A bounded count of completed batches alone therefore cannot replace
+coverage of successful proposals. An HS runtime still needs to bind
+each proposal to the current anchored root and deliver a successful
+proposal at every stage that it reaches. Verification of this
+extension is recorded in [issue #1823](https://github.com/grwtsk/math/issues/1823).

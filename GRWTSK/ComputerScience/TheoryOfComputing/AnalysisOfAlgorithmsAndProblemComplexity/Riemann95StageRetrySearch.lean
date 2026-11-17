@@ -687,4 +687,105 @@ theorem single_enabled_tick_not_fair :
   have zero : s = 0 := of_decide_eq_true on
   omega
 
+/-- Read verified candidates in their arrival order, committing the first
+success. A batch does not have to contain an initial segment of codes. -/
+def verifyBatch (root : Root) : List Candidate → Option (Receipt root)
+  | [] => none
+  | candidate :: rest => (verify root candidate).or (verifyBatch root rest)
+
+theorem verifyBatch_none_iff (root : Root) (arrivals : List Candidate) :
+    verifyBatch root arrivals = none ↔
+      ∀ candidate ∈ arrivals, verify root candidate = none := by
+  induction arrivals with
+  | nil => simp [verifyBatch]
+  | cons candidate rest ih =>
+    cases checked : verify root candidate with
+    | none => simp [verifyBatch, checked, ih]
+    | some receipt => simp [verifyBatch, checked]
+
+theorem verifyBatch_some_mem {root : Root} {arrivals : List Candidate}
+    {receipt : Receipt root} (checked : verifyBatch root arrivals = some receipt) :
+    ∃ candidate ∈ arrivals, verify root candidate = some receipt := by
+  induction arrivals with
+  | nil => simp [verifyBatch] at checked
+  | cons candidate rest ih =>
+    cases test : verify root candidate with
+    | none =>
+      obtain ⟨c, member, success⟩ := ih (by simpa [verifyBatch, test] using checked)
+      exact ⟨c, List.mem_cons_of_mem _ member, success⟩
+    | some first =>
+      exact ⟨candidate, List.mem_cons_self, by simpa [verifyBatch, test] using checked⟩
+
+/-- Retrying an inconclusive batch retains the exact anchored root.
+A verified receipt advances or stops using the original native trace. -/
+def commitBatch (active : Active) (arrivals : List Candidate) : RunState :=
+  match verifyBatch active.root arrivals with
+  | none => .live active
+  | some receipt => commitReceipt active receipt
+
+theorem commitBatch_halts_iff (active : Active) (arrivals : List Candidate) :
+    (∃ stopped, commitBatch active arrivals = .halted stopped) ↔
+      Bad active.root ∧ ∃ candidate ∈ arrivals, (verify active.root candidate).isSome = true := by
+  constructor
+  · rintro ⟨stopped, halt⟩
+    cases batch : verifyBatch active.root arrivals with
+    | none => simp [commitBatch, batch] at halt
+    | some receipt =>
+      cases receipt with
+      | completed => simp [commitBatch, batch, commitReceipt] at halt
+      | counterexample finish steps bad trace terminal =>
+        obtain ⟨candidate, member, success⟩ := verifyBatch_some_mem batch
+        exact ⟨bad, candidate, member, by simp [success]⟩
+  · rintro ⟨bad, candidate, member, checked⟩
+    cases batch : verifyBatch active.root arrivals with
+    | none =>
+      have missing := (verifyBatch_none_iff _ _).1 batch candidate member
+      simp [missing] at checked
+    | some receipt =>
+      cases receipt with
+      | completed next steps safe => exact (safe bad).elim
+      | counterexample =>
+        unfold commitBatch
+        rw [batch]
+        exact ⟨_, rfl⟩
+
+/-- Native terminal observations from one start agree in both instruction
+count and full configuration. No minimal-probe selection is required. -/
+theorem native_terminal_unique {start a b : Config} {m n : ℕ}
+    (first : nSteps m start = some a) (last : nSteps n start = some b)
+    (terminalA : ConjectureMachines.step machine a = none)
+    (terminalB : ConjectureMachines.step machine b = none) :
+    m = n ∧ a = b := by
+  have cannotFollow {i j : ℕ} {x y : Config} (small : i < j)
+      (hx : nSteps i start = some x) (hy : nSteps j start = some y)
+      (stop : ConjectureMachines.step machine x = none) : False := by
+    have length : j = i + (j - i - 1 + 1) := by omega
+    rw [length, Dispatch.nSteps_composition, hx] at hy
+    simp [nSteps, stop] at hy
+  have same : m = n := by
+    rcases lt_trichotomy m n with lt | eq | gt
+    · exact (cannotFollow lt first last terminalA).elim
+    · exact eq
+    · exact (cannotFollow gt last first terminalB).elim
+  subst n
+  exact ⟨rfl, Option.some.inj (first.symm.trans last)⟩
+
+/-- Terminal receipts from grouped or sequential checking share the
+same absolute native stop time and full terminal configuration. -/
+theorem Stopped.native_time_and_config_eq (x y : Stopped) :
+    x.spent = y.spent ∧ x.finish = y.finish :=
+  native_terminal_unique x.reached y.reached x.terminal y.terminal
+
+/-- Arbitrarily many zero-step proposals can all be inconclusive at a
+safe source root, regardless of their padding and register payload. -/
+theorem verifyBatch_zero_step_of_safe (root : Root) (safe : ¬ Bad root)
+    (arrivals : List Candidate) (zero : ∀ c ∈ arrivals, c.1 = 0) :
+    verifyBatch root arrivals = none := by
+  apply (verifyBatch_none_iff _ _).2
+  rintro ⟨steps, padding, extra⟩ member
+  have h := zero (steps, padding, extra) member
+  change steps = 0 at h
+  subst steps
+  simp [verify, safe]
+
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch
