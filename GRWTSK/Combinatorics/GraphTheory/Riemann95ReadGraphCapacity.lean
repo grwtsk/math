@@ -352,4 +352,141 @@ theorem not_riemannHypothesis_of_finite_exact_rooted_read_graph {V : Type*} [Fin
   Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mp
     (halts_of_finite_exact_rooted_read_graph G root exactRoot)
 
+
+/-- Replay a certified terminal trace into a finite graph of at most
+one vertex per time, with exactly the native rooted read language. -/
+theorem exists_exact_read_graph_of_terminal_trace {n : ℕ} {stop : Configuration}
+    (reached : Riemann95.nSteps n init = some stop)
+    (terminal : step Riemann95.machine stop = none) :
+    ∃ (V : Type) (finite : Fintype V) (G : LabeledGraph V Read) (root : V),
+      @Fintype.card V finite ≤ n + 1 ∧
+        ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d := by
+  classical
+  have noMore : Riemann95.nSteps (n + 1) init = none := by
+    rw [Riemann95.Dispatch.nSteps_composition, reached, Option.bind_some, Riemann95.nSteps, terminal]
+    rfl
+  have bounded {t : ℕ} {c : Configuration} (trace : Riemann95.nSteps t init = some c) : t ≤ n := by
+    by_contra excess
+    obtain ⟨extra, eq⟩ := Nat.exists_eq_add_of_le (by omega : n + 1 ≤ t)
+    rw [eq, Riemann95.Dispatch.nSteps_composition, noMore] at trace
+    cases trace
+  let states := (Finset.univ : Finset (Fin (n + 1))).image
+    (fun i => Riemann95.nSteps i.val init)
+  let V := ↥states
+  have belongs {t : ℕ} {c : Configuration} (trace : Riemann95.nSteps t init = some c) :
+      some c ∈ states :=
+    Finset.mem_image.mpr ⟨⟨t, by have := bounded trace; omega⟩, Finset.mem_univ _, trace⟩
+  let root : V := ⟨some init, belongs (t := 0) rfl⟩
+  let G : LabeledGraph V Read :=
+    ⟨fun u a v => ∃ c d, u.val = some c ∧ v.val = some d ∧ readGraph.edge c a d⟩
+  have sound {u v : V} {word : List Read} (walk : WordPath G u word v) :
+      ∀ c, u.val = some c → ∃ d, v.val = some d ∧ WordPath readGraph c word d := by
+    induction walk with
+    | nil u => exact fun c hu => ⟨c, hu, .nil c⟩
+    | cons a word edge _ ih =>
+      intro c hu
+      obtain ⟨source, next, hs, hn, native⟩ := edge
+      have same : c = source := Option.some.inj (hu.symm.trans hs)
+      subst source
+      obtain ⟨d, hd, tail⟩ := ih next hn
+      exact ⟨d, hd, .cons a word native tail⟩
+  have complete {c d : Configuration} {word : List Read} (walk : WordPath readGraph c word d) :
+      ∀ (t : ℕ) (u : V), u.val = some c → Riemann95.nSteps t init = some c →
+        ∃ v, WordPath G u word v := by
+    induction walk with
+    | nil _ => exact fun _ u _ _ => ⟨u, .nil u⟩
+    | @cons c next finish a word edge _ ih =>
+      intro t u hu trace
+      have progressed : Riemann95.nSteps (t + 1) init = some next := by
+        rw [Riemann95.Dispatch.nSteps_composition, trace, Option.bind_some,
+          Riemann95.nSteps, edge.2]
+        rfl
+      let nextVertex : V := ⟨some next, belongs progressed⟩
+      obtain ⟨v, tail⟩ := ih (t + 1) nextVertex rfl progressed
+      exact ⟨v, .cons a word ⟨c, next, hu, rfl, edge⟩ tail⟩
+  have cap : Fintype.card V ≤ n + 1 := by
+    change Fintype.card ↥states ≤ n + 1
+    rw [Fintype.card_coe]
+    exact Finset.card_image_le.trans (by simp)
+  refine ⟨V, inferInstance, G, root, cap, fun word => ⟨?_, ?_⟩⟩
+  · rintro ⟨v, walk⟩
+    obtain ⟨d, _, path⟩ := sound walk init rfl
+    exact ⟨d, path⟩
+  · rintro ⟨d, walk⟩
+    exact complete walk 0 root rfl rfl
+
+private theorem observe_isSome_eq_steps (n : ℕ) (c : Configuration) :
+    (observe n c).isSome = (Riemann95.nSteps n c).isSome := by
+  induction n generalizing c with
+  | zero => rfl
+  | succ n ih =>
+    cases h : step Riemann95.machine c <;> simp [observe, Riemann95.nSteps, h, ih]
+
+/-- A terminal trace admits an exact graph with precisely the minimum
+number of vertices, even allowing nondeterministic alternatives. -/
+theorem exact_read_graph_capacity_at_terminal {n : ℕ} {stop : Configuration}
+    (reached : Riemann95.nSteps n init = some stop)
+    (terminal : step Riemann95.machine stop = none) :
+    ∃ (V : Type) (finite : Fintype V) (G : LabeledGraph V Read) (root : V),
+      @Fintype.card V finite = n + 1 ∧
+        ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d := by
+  obtain ⟨V, finite, G, root, upper, exactRoot⟩ :=
+    exists_exact_read_graph_of_terminal_trace reached terminal
+  have noMore : Riemann95.nSteps (n + 1) init = none := by
+    rw [Riemann95.Dispatch.nSteps_composition, reached, Option.bind_some, Riemann95.nSteps, terminal]
+    rfl
+  have observed : ∃ word, observe n init = some word := by
+    apply Option.isSome_iff_exists.mp
+    rw [observe_isSome_eq_steps, reached]
+    rfl
+  have stopped : observe (n + 1) init = none := by
+    cases h : observe (n + 1) init with
+    | none => rfl
+    | some word =>
+      have eq := observe_isSome_eq_steps (n + 1) init
+      simp [h, noMore] at eq
+  obtain ⟨word, result⟩ := observed
+  have lower := @halted_rooted_graph_capacity V finite G root _ _ result stopped
+    ((exactRoot _).mpr ((observe_iff_path _ _ _).mp result).2)
+    (fun w _ admitted => (exactRoot w).mp admitted)
+  exact ⟨V, finite, G, root, le_antisymm upper lower, exactRoot⟩
+
+/-- A halted native run admits an exact finite presentation. Its vertices
+are the replayed configurations up to the terminal receipt, and every
+edge is a literal source step between retained vertices. -/
+theorem exists_finite_exact_rooted_read_graph_of_halts
+    (halts : ConjectureMachines.BundledMachine.Halts Riemann95.candidate) :
+    ∃ (V : Type) (_ : Fintype V) (G : LabeledGraph V Read) (root : V),
+      ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d := by
+  classical
+  change (StateTransition.eval (step Riemann95.machine) (init : Configuration)).Dom at halts
+  obtain ⟨stop, member⟩ := Part.dom_iff_mem.mp halts
+  obtain ⟨reaches, terminal⟩ := StateTransition.mem_eval.mp member
+  have finiteTrace : ∃ n, Riemann95.nSteps n init = some stop := by
+    clear member terminal
+    induction reaches with
+    | refl => exact ⟨0, rfl⟩
+    | @tail before after _ edge ih =>
+      obtain ⟨n, hn⟩ := ih
+      refine ⟨n + 1, ?_⟩
+      rw [Riemann95.Dispatch.nSteps_composition, hn, Option.bind_some, Riemann95.nSteps]
+      rw [show step Riemann95.machine before = some after from edge]
+      rfl
+  obtain ⟨n, reached⟩ := finiteTrace
+  obtain ⟨V, finite, G, root, _, exactRoot⟩ := exists_exact_read_graph_of_terminal_trace reached terminal
+  exact ⟨V, finite, G, root, exactRoot⟩
+
+/-- Exact finite presentability of blank-start read prefixes is equivalent
+to failure of RH for the original pinned machine. -/
+theorem finite_exact_rooted_read_graph_iff_not_riemannHypothesis :
+    (∃ (V : Type) (_ : Fintype V) (G : LabeledGraph V Read) (root : V),
+      ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d) ↔
+        ¬ RiemannHypothesis := by
+  constructor
+  · rintro ⟨V, finite, G, root, exactRoot⟩
+    exact @not_riemannHypothesis_of_finite_exact_rooted_read_graph V finite G root exactRoot
+  · intro bad
+    exact exists_finite_exact_rooted_read_graph_of_halts
+      (Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr bad)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Riemann95ReadGraphCapacity

@@ -84,3 +84,39 @@ transfer use the same pinned Cryptids revision.
 [Physical root](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Physical95.lean) ·
 [Stage theorem](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Stage95.lean) ·
 [RH equivalence](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/Semantics/Riemann95.lean)
+
+## Converse and exact terminal capacity
+
+Given a terminal replay after `n` successful native instructions,
+`exists_exact_read_graph_of_terminal_trace` constructs an exact rooted
+read graph on the finite range of the native configurations at times
+0 through n. Each graph edge is a native edge between members of this
+range. Every graph path therefore lifts by matching the stored source
+configuration at its join. Conversely every native path reached from
+blank stays within the stored range. A longer successful replay would
+have to extend through the absent terminal instruction. Thus the graph
+has at most n+1 vertices and realizes exactly the successful prefixes.
+
+`exact_read_graph_capacity_at_terminal` applies the existing lower
+bound to the same replay. Precisely n+1 vertices suffice, and even a
+nondeterministic exact graph needs at least that many. The unconditional
+4097-vertex marker bound then checks that any terminal trace used in
+this construction has at least 4096 successful instructions.
+The proof of finite existence under a halt extracts the finite replay
+from the native partial evaluation. Together with the previous growing
+pad obstruction in the nonhalting case, this yields
+`finite_exact_rooted_read_graph_iff_not_riemannHypothesis` for the
+pinned blank-start read language.
+
+A specified physical graph still needs both directions of exact
+language lifting relative to the original machine. The construction is
+conditional on a native terminal trace, and carries no such receipt
+for the physical system.
+
+The four local imports were rebuilt from pinned main. Strict target
+compilation, target kernel replay, the 4097-vertex boundary control and
+all four transitive audits passed on the pins above. Only `propext`,
+`Classical.choice` and `Quot.sound` were reported. Checked Lean SHA-256
+`ad61b3d55c62e6439808aa17920b0ea2a4c67d1544b704c79711e3ec39802223`.
+Full fresh dependency replay, independent review and HS graph lifting
+remain `NOT_RUN`.
