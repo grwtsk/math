@@ -564,4 +564,60 @@ theorem signedLaplace_centeredWholePickup_midpoint_bounded {B : ℝ} (hB : 0 ≤
     midpointZeta_reciprocal_real]
   exact hbound z hz hzr
 
+/-- On the high-frequency part of a positive Laplace line, the exact
+centered pickup is dominated by the velocity square and an integrable
+inverse quadratic. The frequency variable uses Mathlib's (2π) convention. -/
+theorem signedLaplace_centeredWholePickup_high_square_le {B σ a : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (hσ : 0 < σ) (ha : 0 < a) (c ξ : ℝ) (hξ : a ≤ |ξ|) :
+    let z := (σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I
+    ‖signedLaplace (fun u => wholePickup u - c) z‖ ^ 2 ≤
+      (2 / ((2 * Real.pi) ^ 2 * a ^ 2)) * ‖signedLaplace pickupVelocity z‖ ^ 2 +
+        (2 * c ^ 2 * (1 + (a ^ 2)⁻¹) / (2 * Real.pi) ^ 2) * (1 + ξ ^ 2)⁻¹ := by
+  let z := (σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I
+  change ‖signedLaplace (fun u => wholePickup u - c) z‖ ^ 2 ≤ _
+  have hz : 0 < z.re := by simpa [z] using hσ
+  have hξ0 : 0 < |ξ| := ha.trans_le hξ
+  have hp : 0 < 2 * Real.pi := mul_pos (by norm_num) Real.pi_pos
+  have hden : (2 * Real.pi) * |ξ| ≤ ‖z‖ := by
+    simpa [z, abs_mul, abs_of_pos hp] using Complex.abs_im_le_norm z
+  have hD : 0 < (2 * Real.pi) ^ 2 * ξ ^ 2 := by
+    have hne : ξ ≠ 0 := abs_pos.mp hξ0
+    positivity
+  have hDle : (2 * Real.pi) ^ 2 * ξ ^ 2 ≤ ‖z‖ ^ 2 := by
+    simpa only [mul_pow, sq_abs] using
+      pow_le_pow_left₀ (mul_nonneg hp.le (abs_nonneg ξ)) hden 2
+  have haξ : a ^ 2 ≤ ξ ^ 2 := by
+    simpa only [sq_abs] using pow_le_pow_left₀ ha.le hξ 2
+  let L := signedLaplace pickupVelocity z
+  have hn : ‖L - (c : ℂ)‖ ^ 2 ≤ 2 * ‖L‖ ^ 2 + 2 * c ^ 2 := by
+    calc
+      _ ≤ (‖L‖ + ‖(c : ℂ)‖) ^ 2 :=
+        pow_le_pow_left₀ (norm_nonneg _) (norm_sub_le _ _) _
+      _ ≤ _ := by
+        rw [Complex.norm_real, Real.norm_eq_abs]
+        nlinarith [sq_nonneg (‖L‖ - |c|), sq_abs c]
+  rw [signedLaplace_centeredWholePickup_eq_of_weakMertens hB hM c hz, norm_div, div_pow]
+  calc
+    _ ≤ (2 * ‖L‖ ^ 2 + 2 * c ^ 2) / ((2 * Real.pi) ^ 2 * ξ ^ 2) :=
+      (div_le_div_of_nonneg_right hn (sq_nonneg _)).trans
+        (div_le_div_of_nonneg_left (by positivity) hD hDle)
+    _ = (2 * ‖L‖ ^ 2) / ((2 * Real.pi) ^ 2 * ξ ^ 2) +
+        (2 * c ^ 2) / ((2 * Real.pi) ^ 2 * ξ ^ 2) := add_div _ _ _
+    _ ≤ _ := by
+      apply add_le_add
+      · rw [div_mul_eq_mul_div]
+        exact div_le_div_of_nonneg_left (by positivity) (by positivity)
+          (mul_le_mul_of_nonneg_left haξ (sq_nonneg _))
+      · rw [show 2 * c ^ 2 / ((2 * Real.pi) ^ 2 * ξ ^ 2) =
+          (2 * c ^ 2 / (2 * Real.pi) ^ 2) * (ξ ^ 2)⁻¹ by ring]
+        rw [show (2 * c ^ 2 * (1 + (a ^ 2)⁻¹) / (2 * Real.pi) ^ 2) * (1 + ξ ^ 2)⁻¹ =
+          (2 * c ^ 2 / (2 * Real.pi) ^ 2) * ((1 + (a ^ 2)⁻¹) / (1 + ξ ^ 2)) by ring]
+        apply mul_le_mul_of_nonneg_left _ (by positivity)
+        rw [inv_eq_one_div]
+        apply (div_le_div_iff₀ (show 0 < ξ ^ 2 by rw [← sq_abs]; positivity) (by positivity)).2
+        rw [add_mul, one_mul, inv_mul_eq_div]
+        have hratio : 1 ≤ ξ ^ 2 / a ^ 2 := (le_div_iff₀ (by positivity)).2 (by simpa using haξ)
+        linarith
+
 end GRWTSK.NumberTheory.Moebius
