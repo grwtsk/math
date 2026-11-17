@@ -654,4 +654,63 @@ theorem exactRoot_iff_terminal_frontier {V : Type*} (G : LabeledGraph V Read) (r
       obtain ⟨mid, initial, _⟩ := splitAt full w.length
       exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ initial⟩
 
+private theorem proper_prefix_of_frontier_is_prefix
+    {word bad pre : List Read} (member : bad ∈ terminalFrontier word)
+    (pref : pre <+: bad) (short : pre.length < bad.length) : pre <+: word := by
+  induction word generalizing bad pre with
+  | nil =>
+    simp [terminalFrontier] at member
+    rcases member with rfl | rfl <;>
+      cases pre <;> simp_all
+  | cons a word ih =>
+    simp only [terminalFrontier, List.mem_cons, List.mem_map] at member
+    rcases member with rfl | ⟨tail, present, rfl⟩
+    · cases pre <;> simp_all
+    · cases pre with
+      | nil => exact List.nil_prefix
+      | cons b rest =>
+        obtain ⟨rfl, initial⟩ := List.cons_prefix_cons.mp pref
+        exact List.cons_prefix_cons.mpr ⟨rfl, ih present initial (by simpa using short)⟩
+
+/-- The finite test lists precisely the minimal forbidden prefixes of
+the terminal read word. Removing any entry leaves its own branch untested. -/
+theorem mem_terminalFrontier_iff_minimal {word bad : List Read} :
+    bad ∈ terminalFrontier word ↔
+      ¬ bad <+: word ∧
+        ∀ pre, pre <+: bad → pre.length < bad.length → pre <+: word := by
+  constructor
+  · intro member
+    exact ⟨frontier_not_prefix member, fun _ => proper_prefix_of_frontier_is_prefix member⟩
+  · rintro ⟨wrong, minimal⟩
+    obtain ⟨first, member, pref⟩ := exists_frontier_prefix_of_not_prefix wrong
+    have equal : first.length = bad.length := by
+      apply le_antisymm pref.length_le
+      by_contra! lt
+      exact frontier_not_prefix member (minimal first pref lt)
+    have same : first = bad := by
+      rw [List.prefix_iff_eq_take.mp pref, equal, List.take_length]
+    exact same ▸ member
+
+/-- Every spurious attempted read has exactly one first forbidden prefix. -/
+theorem exists_unique_terminalFrontier_prefix {word attempted : List Read}
+    (wrong : ¬ attempted <+: word) :
+    ∃! bad, bad ∈ terminalFrontier word ∧ bad <+: attempted := by
+  obtain ⟨bad, member, initial⟩ := exists_frontier_prefix_of_not_prefix wrong
+  refine ⟨bad, ⟨member, initial⟩, ?_⟩
+  rintro other ⟨otherMember, otherInitial⟩
+  have compare {left right : List Read} (hl : left <+: attempted)
+      (hr : right <+: attempted) (size : left.length ≤ right.length) : left <+: right := by
+    rw [List.prefix_iff_eq_take.mp hl, List.prefix_iff_eq_take.mp hr, List.prefix_iff_eq_take,
+      List.length_take, Nat.min_eq_left hl.length_le, List.take_take, Nat.min_eq_left size]
+  have notShort {left right : List Read} (hl : left ∈ terminalFrontier word)
+      (hr : right ∈ terminalFrontier word) (hl' : left <+: attempted)
+      (hr' : right <+: attempted) (short : left.length < right.length) : False :=
+    frontier_not_prefix hl (proper_prefix_of_frontier_is_prefix hr (compare hl' hr' short.le) short)
+  have equal : other.length = bad.length := by
+    exact le_antisymm (le_of_not_gt (notShort member otherMember initial otherInitial))
+      (le_of_not_gt (notShort otherMember member otherInitial initial))
+  calc
+    other = attempted.take other.length := List.prefix_iff_eq_take.mp otherInitial
+    _ = bad := equal ▸ (List.prefix_iff_eq_take.mp initial).symm
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Riemann95ReadGraphCapacity
