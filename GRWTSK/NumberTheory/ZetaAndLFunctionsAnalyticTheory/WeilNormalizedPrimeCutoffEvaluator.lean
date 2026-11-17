@@ -5,6 +5,7 @@ Authors: grwtsk contributors. Development provenance: AI-assisted.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilNormalizedPrimeCoprimeEnclosure
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilPrimeInventoryLogCutoff
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilPrimeInventoryDyadicCutoff
 
 /-! # A checked rational evaluator for the baseline signed prime radius -/
 
@@ -55,6 +56,41 @@ theorem checkedCoprimePrimeRadius_sound {q : ℕ} [NeZero q]
   · rename_i h
     obtain ⟨hd, hN, hlo, hhi⟩ := h
     have hI := activePrimePowers_eq_Icc_of_rational_log_bracket
+      ((j : ℚ) + 1) hN k l hlo hhi
+    simp only [Rat.cast_add, Rat.cast_natCast, Rat.cast_one] at hI
+    have hbound := abs_twistedPrime_normalizedCode_le_coprimeRadius χ j cs kShift kWeight hd
+    dsimp only at hbound
+    rw [hI] at hbound
+    rw [← Option.some.inj hr]
+    exact hbound
+  · contradiction
+
+/-- Check the supplied cutoff using dyadically reduced logarithms. The
+returned radius uses the same finite rational sum as the direct checker. -/
+def checkedDyadicCoprimePrimeRadius (q j : ℕ) (cs : List ℚ)
+    (kShift kWeight : ℕ → ℕ) (d N k l : ℕ) : Option ℚ :=
+  let T : ℚ := (j : ℚ) + 1
+  let lower := naturalDyadicLogEnclosure N k
+  let upper := naturalDyadicLogEnclosure (N + 1) l
+  if 0 < d ∧ 1 ≤ N ∧ lower.1 + lower.2 < 2 * T ∧ 2 * T ≤ upper.1 then
+    some (coprimeRadiusOn q j cs kShift kWeight d (Finset.Icc 2 N))
+  else none
+
+/-- An accepted dyadic cutoff gives the baseline bound on the original
+normalized-code signed prime term. -/
+theorem checkedDyadicCoprimePrimeRadius_sound {q : ℕ} [NeZero q]
+    (χ : DirichletCharacter ℂ q) (j : ℕ) (cs : List ℚ)
+    (kShift kWeight : ℕ → ℕ) (d N k l : ℕ) {r : ℚ}
+    (hr : checkedDyadicCoprimePrimeRadius q j cs kShift kWeight d N k l = some r) :
+    |twistedPrime ((j : ℝ) + 1) χ (fun n => correlation
+        (liftReal (primitiveStageMassTestOfNormalizedCode χ j cs).val) (Real.log (n : ℝ)))|
+      ≤ (r : ℝ) := by
+  unfold checkedDyadicCoprimePrimeRadius at hr
+  dsimp only at hr
+  split at hr
+  · rename_i h
+    obtain ⟨hd, hN, hlo, hhi⟩ := h
+    have hI := activePrimePowers_eq_Icc_of_dyadic_log_bracket
       ((j : ℚ) + 1) hN k l hlo hhi
     simp only [Rat.cast_add, Rat.cast_natCast, Rat.cast_one] at hI
     have hbound := abs_twistedPrime_normalizedCode_le_coprimeRadius χ j cs kShift kWeight hd
