@@ -222,4 +222,70 @@ theorem source_enclosure {source readout : ℝ} (correction lower upper : ErrorC
   exact ⟨add_le_add (le_refl readout) (Finset.sum_le_sum (fun channel _ => hlo channel)),
     add_le_add (le_refl readout) (Finset.sum_le_sum (fun channel _ => hhi channel))⟩
 
+
+/-- Sharp signed error for independent real and imaginary raw sensor intervals.
+The coefficient includes the signed source weight and the full inverse phase. -/
+theorem signed_box_error_sharp {I : Type*} (indices : Finset I)
+    (coefficient : I → ℂ) (u v : I → ℝ)
+    (hu : ∀ i ∈ indices, 0 ≤ u i) (hv : ∀ i ∈ indices, 0 ≤ v i) :
+    let budget := ∑ i ∈ indices, (|(coefficient i).re| * u i + |(coefficient i).im| * v i)
+    (∀ e : I → ℂ, (∀ i ∈ indices, |(e i).re| ≤ u i ∧ |(e i).im| ≤ v i) →
+      |∑ i ∈ indices, (coefficient i * e i).re| ≤ budget) ∧
+    ∃ e : I → ℂ, (∀ i ∈ indices, |(e i).re| ≤ u i ∧ |(e i).im| ≤ v i) ∧
+      (∑ i ∈ indices, (coefficient i * e i).re) = budget := by
+  intro budget
+  constructor
+  · intro e box
+    refine (Finset.abs_sum_le_sum_abs _ _).trans (Finset.sum_le_sum fun i hi => ?_)
+    rw [Complex.mul_re]
+    refine (abs_sub _ _).trans ?_
+    rw [abs_mul, abs_mul]
+    exact add_le_add (mul_le_mul_of_nonneg_left (box i hi).1 (abs_nonneg _))
+      (mul_le_mul_of_nonneg_left (box i hi).2 (abs_nonneg _))
+  · let endpoint (a r : ℝ) := if 0 ≤ a then r else -r
+    have he (a r : ℝ) (hr : 0 ≤ r) : |endpoint a r| = r := by
+      by_cases ha : 0 ≤ a <;> simp [endpoint, ha, abs_of_nonneg hr]
+    have align (a r : ℝ) : a * endpoint a r = |a| * r := by
+      by_cases ha : 0 ≤ a
+      · simp [endpoint, ha, abs_of_nonneg ha]
+      · simp only [endpoint, ite_eq_right ha, abs_of_neg (lt_of_not_ge ha)]
+        ring
+    let e (i : I) : ℂ :=
+      ⟨endpoint (coefficient i).re (u i), -endpoint (coefficient i).im (v i)⟩
+    refine ⟨e, fun i hi => ?_, ?_⟩
+    · change |endpoint (coefficient i).re (u i)| ≤ u i ∧
+        |-endpoint (coefficient i).im (v i)| ≤ v i
+      rw [abs_neg, he _ _ (hu i hi), he _ _ (hv i hi)]
+      exact ⟨le_rfl, le_rfl⟩
+    · apply Finset.sum_congr rfl
+      intro i _
+      rw [Complex.mul_re]
+      change (coefficient i).re * endpoint (coefficient i).re (u i) -
+        (coefficient i).im * (-endpoint (coefficient i).im (v i)) = _
+      rw [mul_neg, sub_neg_eq_add, align, align]
+
+/-- The signed decoded residual is governed by the actual inverse-phase
+coefficient on each raw sensor error. -/
+theorem signed_heatWaveDecode_residual {I : Type*} (indices : Finset I) (s : ℝ)
+    (lambda : I → ℝ) (phase weight source error : I → ℂ)
+    (hphase : ∀ i ∈ indices, ‖phase i‖ = 1) :
+    (∑ i ∈ indices, (weight i * heatWaveDecode s (lambda i) (phase i)
+      (heatWaveReadout s (lambda i) (phase i) (source i) + error i)).re) -
+      (∑ i ∈ indices, (weight i * source i).re) =
+    ∑ i ∈ indices, (weight i * (Real.exp (s * lambda i) : ℂ) *
+      star (phase i) * error i).re := by
+  rw [← Finset.sum_sub_distrib]
+  apply Finset.sum_congr rfl
+  intro i hi
+  have split : heatWaveDecode s (lambda i) (phase i)
+      (heatWaveReadout s (lambda i) (phase i) (source i) + error i) =
+      source i + heatWaveDecode s (lambda i) (phase i) (error i) := by
+    conv_lhs => unfold heatWaveDecode; rw [mul_add]
+    rw [← heatWaveDecode, heatWaveDecode_readout _ _ _ _ (hphase i hi)]
+    rfl
+  rw [split, mul_add, Complex.add_re, add_sub_cancel_left]
+  congr 1
+  unfold heatWaveDecode
+  ring
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.WindowFilterLedger
