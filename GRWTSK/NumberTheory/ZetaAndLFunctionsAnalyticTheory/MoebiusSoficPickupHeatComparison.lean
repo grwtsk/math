@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Local mathematical attribution: grwtsk contributors. -/
 import Mathlib.Analysis.Normed.Group.Tannery
+import Mathlib.Analysis.Normed.Ring.InfiniteSum
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianSignedResidualMixedAbel
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusSoficIndependentThinning
 
@@ -823,5 +824,85 @@ theorem eventually_heatedLimit_lt_fixed_shift {d : ℝ} (hd : 0 < d) :
   filter_upwards [(tendsto_order.mp
     (tendsto_heatedLimit_fixed_shift_div_prime_two_weight d)).1 0 hpos] with s hs
   exact sub_pos.mp ((div_pos_iff_of_pos_right (Real.exp_pos _)).mp hs)
+
+/-- The diagonal removed from the settled ordered heated pickup. -/
+def settledHeatedDiagonal (s : ℝ) : ℝ :=
+  ∑' n : ℕ, (heatedCoeff s n * settled n) ^ 2
+
+private theorem settledHeated_norm_summable {s : ℝ} (hs : 0 < s) :
+    Summable (fun n : ℕ => ‖heatedCoeff s n * settled n‖) := by
+  have hb (n : ℕ) : ‖heatedCoeff s n * settled n‖ ≤ |heatedCoeff s n| * 2 := by
+    rw [Real.norm_eq_abs, abs_mul, abs_of_nonneg (settled_bounds n).1]
+    exact mul_le_mul_of_nonneg_left (settled_bounds n).2 (abs_nonneg _)
+  exact ((heatedCoeff_abs_summable hs).mul_right 2).of_nonneg_of_le
+    (fun _ => norm_nonneg _) hb
+
+private theorem settledHeated_pair_summable {s : ℝ} (hs : 0 < s) :
+    Summable (fun p : ℕ × ℕ =>
+      ‖(heatedCoeff s p.1 * settled p.1) * (heatedCoeff s p.2 * settled p.2)‖) :=
+  Summable.mul_norm (f := fun n : ℕ => heatedCoeff s n * settled n)
+    (g := fun n : ℕ => heatedCoeff s n * settled n)
+    (settledHeated_norm_summable hs) (settledHeated_norm_summable hs)
+
+private theorem settledHeated_diag_pairs_summable {s : ℝ} (hs : 0 < s) :
+    Summable (fun p : ℕ × ℕ =>
+      if p.1 = p.2 then (heatedCoeff s p.1 * settled p.1) ^ 2 else 0) := by
+  refine (settledHeated_pair_summable hs).of_norm_bounded ?_
+  rintro ⟨m,n⟩
+  by_cases h : m = n
+  · subst n
+    simp only [ite_true, pow_two]
+    exact le_rfl
+  · simpa only [ite_eq_right h, norm_zero] using
+      norm_nonneg ((heatedCoeff s m * settled m) * (heatedCoeff s n * settled n))
+
+private theorem settledHeated_diagonal_row (s : ℝ) (m : ℕ) :
+    (∑' n : ℕ, if m = n then (heatedCoeff s m * settled m) ^ 2 else 0) =
+      (heatedCoeff s m * settled m) ^ 2 := by
+  rw [tsum_eq_single m]
+  · simp
+  · intro n hn
+    simp [Ne.symm hn]
+
+/-- The settled signed sum over ordered distinct pairs factors as the
+square of the settled wave with its actual diagonal removed. -/
+theorem settledHeatedPickup_eq_sq_sub_diagonal {s : ℝ} (hs : 0 < s) :
+    settledHeatedPickup s = heatedLimit s ^ 2 - settledHeatedDiagonal s := by
+  let a (n : ℕ) := heatedCoeff s n * settled n
+  have hnorm : Summable (fun n : ℕ => ‖a n‖) := settledHeated_norm_summable hs
+  have hpair : Summable (fun p : ℕ × ℕ => a p.1 * a p.2) :=
+    (settledHeated_pair_summable hs).of_norm
+  have hdiag := settledHeated_diag_pairs_summable hs
+  have hfull : (∑' p : ℕ × ℕ, a p.1 * a p.2) = heatedLimit s ^ 2 := by
+    rw [← tsum_mul_tsum_of_summable_norm hnorm hnorm, pow_two]
+    rfl
+  have hremoved :
+      (∑' p : ℕ × ℕ, if p.1 = p.2 then a p.1 ^ 2 else 0) = settledHeatedDiagonal s := by
+    rw [hdiag.tsum_prod]
+    apply tsum_congr
+    exact settledHeated_diagonal_row s
+  rw [← hfull, ← hremoved, ← hpair.tsum_sub hdiag]
+  unfold settledHeatedPickup
+  apply tsum_congr
+  rintro ⟨m,n⟩
+  by_cases h : m = n
+  · subst n
+    simp [a, pow_two]
+  · simp only [ite_eq_right h, sub_zero]
+    dsimp [a]
+    ring
+
+/-- The original (n=1) term alone removes four from the full settled
+square, independently of the signs of the remaining coefficients. -/
+theorem settledHeatedPickup_le_sq_sub_four {s : ℝ} (hs : 0 < s) :
+    settledHeatedPickup s ≤ heatedLimit s ^ 2 - 4 := by
+  have hdiag := (settledHeated_diag_pairs_summable hs).prod
+  simp_rw [settledHeated_diagonal_row] at hdiag
+  have h := hdiag.sum_le_tsum ({1} : Finset ℕ) (fun n _ => sq_nonneg _)
+  have hfour : 4 ≤ settledHeatedDiagonal s := by
+    simpa [settledHeatedDiagonal, heatedCoeff, settled, moebiusReal,
+      ArithmeticFunction.moebius_apply_one, show (2 : ℝ) ^ 2 = 4 by norm_num] using h
+  rw [settledHeatedPickup_eq_sq_sub_diagonal hs]
+  linarith
 
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
