@@ -88,6 +88,48 @@ observed cells + exact reachable-cell quotient → forced code collisions
 alternative tape layout or macro simulation → exact original halting return [open]
 ```
 
+## Exact quotient criterion for a fixed encoder
+
+`ReachedCell q b` means that the original blank run reaches native state
+`q` reading bit `b`. For any natural target state count `n` and control
+encoder `e : Fin 95 → Fin n`, `exists_reached_quotient_iff` is the exact
+criterion for a table obeying `PreservesReachedCells e`. For every
+`q,r : Fin 95` and `b : Fin 2`, if `e q = e r` and both source cells are
+reached at bit `b`, the two mapped instructions must agree. Equality of
+the optional instructions includes the write bit, direction, encoded
+successor and terminal outcome.
+
+Necessity compares both prescriptions with the same target table cell.
+For sufficiency, choose one reached source cell for each occupied target
+cell and use its mapped instruction. Pairwise agreement makes the choice
+irrelevant to the prescribed instruction. Set the remaining target cells
+to halt. The existence proof uses classical choice over the exact reached
+cells. A concrete table construction by this route still needs evidence
+for which source cells the run can reach.
+
+`step_encodeCfg_of_reached` shows that a matching instruction performs
+exactly the same write and move on the intact native tape. A successful
+step from any configuration reached at time `t` gives a configuration
+reached at time `t+1`. The resulting simulation relation relates a
+reached configuration to its encoding and matches terminal steps.
+`eval_reached_quotient` proves equality of partial evaluations from the
+encoded blank start, including the entire encoded terminal tape whenever
+the run halts. If `e 0 = 0`, the encoded blank is the target's own blank
+configuration, giving `halts_reached_quotient_iff`.
+
+`not_reachedCellsAgree_of_merge_91_93` checks the criterion against the
+observed cells above. A merge of 91 and 93 with 43 still separate fails
+even if all unreached cells are unconstrained. The next step for a
+94-state candidate in this class is to exhibit a zero-preserving encoder
+with agreement on all its reached collisions. A changed tape or an
+instruction-block simulation requires a separate relation.
+
+```text
+agreement of mapped prescriptions ↔ existence of a reached-cell quotient
+reached-cell quotient → exact step on the encoded tape → exact partial evaluation
+exact partial evaluation + e 0 = 0 → equivalence of native blank-start halting
+```
+
 ## Verification
 
 The isolated target built against the actual pinned Cryptids declarations.
@@ -96,4 +138,12 @@ symbols at state 93 and for the obstruction with a 94-state target.
 The seven audited theorems depend only on `propext`, `Classical.choice`,
 and `Quot.sound`. Full fresh replay of the imported closure and independent
 mathematical review remain `NOT_RUN`.
+The fixed-encoder extension compiled with `--trust=0` and warnings as
+errors on the same pins. Exact-type checks at target size 94 covered the
+criterion, the conditional return to `¬ RiemannHypothesis` and the failed
+91/93 merge. The identity encoder at size 95 passed as a positive control.
+Target kernel replay passed. The eight new public declarations use only
+subsets of `propext`, `Classical.choice` and `Quot.sound`. Fresh replay
+of the full import closure and independent review are `NOT_RUN`.
+
 [Coordination and verification record](https://github.com/grwtsk/math/issues/1822)

@@ -254,4 +254,118 @@ theorem row94_fold_forces_collision {n : ℕ} (encode : Fin 95 → Fin n) (table
     (reuse.symm.trans actual)
   exact Option.some.inj conflict
 
+/-- The original blank run uses this exact transition-table cell. -/
+def ReachedCell (state : Fin 95) (bit : Fin 2) : Prop :=
+  ∃ (t : ℕ) (c : Cfg 95 2), nSteps t blank = some c ∧ c.state = state ∧ c.tape.head = bit
+
+/-- Source cells sharing a target table entry must prescribe the same mapped
+instruction, including when that instruction is absent. -/
+def ReachedCellsAgree {n : ℕ} (encode : Fin 95 → Fin n) : Prop :=
+  ∀ q r b, ReachedCell q b → ReachedCell r b → encode q = encode r →
+    (machine.transition q b).map (mapTarget encode) =
+      (machine.transition r b).map (mapTarget encode)
+
+/-- For a fixed encoder, pairwise agreement of the reached prescriptions is
+necessary and sufficient for a reached-cell quotient table. -/
+theorem exists_reached_quotient_iff {n : ℕ} (encode : Fin 95 → Fin n) :
+    (∃ table : Machine n 2, PreservesReachedCells encode table) ↔ ReachedCellsAgree encode := by
+  constructor
+  · rintro ⟨table, exactCells⟩ q r b ⟨t, c, hc, hq, hb⟩ ⟨u, d, hd, hr, hb'⟩ eq
+    have left := exactCells t c hc
+    have right := exactCells u d hd
+    rw [hq, hb, eq] at left
+    rw [hr, hb'] at right
+    exact left.symm.trans right
+  · intro agree
+    classical
+    let used (target : Fin n) (bit : Fin 2) : Prop :=
+      ∃ q, encode q = target ∧ ReachedCell q bit
+    let table : Machine n 2 :=
+      ⟨fun target bit => if h : used target bit then
+        (machine.transition (Classical.choose h) bit).map (mapTarget encode) else none⟩
+    refine ⟨table, ?_⟩
+    intro t c hc
+    have reached : ReachedCell c.state c.tape.head := ⟨t, c, hc, rfl, rfl⟩
+    have found : used (encode c.state) c.tape.head := ⟨c.state, rfl, reached⟩
+    change (if h : used (encode c.state) c.tape.head then
+        (machine.transition (Classical.choose h) c.tape.head).map (mapTarget encode)
+      else none) = _
+    rw [dite_eq_left found]
+    exact agree _ _ _ (Classical.choose_spec found).2 reached (Classical.choose_spec found).1
+
+/-- An exact reached-cell quotient changes the control state and retains the
+entire native pointed tape. -/
+def encodeCfg {n : ℕ} (encode : Fin 95 → Fin n) (c : Cfg 95 2) : Cfg n 2 :=
+  ⟨encode c.state, c.tape⟩
+
+theorem step_encodeCfg_of_reached {n : ℕ} (encode : Fin 95 → Fin n) (table : Machine n 2)
+    (exactCells : PreservesReachedCells encode table) {t : ℕ} {c : Cfg 95 2}
+    (reached : nSteps t blank = some c) :
+    ConjectureMachines.step table (encodeCfg encode c) =
+      (ConjectureMachines.step machine c).map (encodeCfg encode) := by
+  obtain ⟨q, tape⟩ := c
+  have instruction := exactCells t ⟨q, tape⟩ reached
+  change table.transition (encode q) tape.head =
+    (machine.transition q tape.head).map (mapTarget encode) at instruction
+  change (table.transition (encode q) tape.head).map _ =
+    ((machine.transition q tape.head).map _).map _
+  rw [instruction]
+  rcases machine.transition q tape.head with _ | ⟨write, move, next⟩ <;> rfl
+
+private theorem respects_reached_quotient {n : ℕ} (encode : Fin 95 → Fin n) (table : Machine n 2)
+    (exactCells : PreservesReachedCells encode table) :
+    StateTransition.Respects (ConjectureMachines.step machine) (ConjectureMachines.step table)
+      (fun c d => (∃ t, nSteps t blank = some c) ∧ encodeCfg encode c = d) := by
+  intro c d relation
+  rcases relation with ⟨⟨t, reached⟩, rfl⟩
+  have direct := step_encodeCfg_of_reached encode table exactCells reached
+  cases h : ConjectureMachines.step machine c with
+  | none => simpa only [h, Option.map_none] using direct
+  | some next =>
+    refine ⟨encodeCfg encode next, ⟨⟨t + 1, ?_⟩, rfl⟩, TransGen.single ?_⟩
+    · rw [Dispatch.nSteps_composition, reached]
+      simp [nSteps, h]
+    · change ConjectureMachines.step table (encodeCfg encode c) = some (encodeCfg encode next)
+      simpa only [h, Option.map_some] using direct
+
+/-- Every exact reached-cell quotient returns the encoded native terminal
+configuration as a partial value, from the encoded blank start. -/
+theorem eval_reached_quotient {n : ℕ} (encode : Fin 95 → Fin n) (table : Machine n 2)
+    (exactCells : PreservesReachedCells encode table) :
+    StateTransition.eval (ConjectureMachines.step table) (encodeCfg encode blank) =
+      (StateTransition.eval (ConjectureMachines.step machine) blank).map (encodeCfg encode) := by
+  have respects := respects_reached_quotient encode table exactCells
+  have start : (∃ t, nSteps t blank = some blank) ∧
+      encodeCfg encode blank = encodeCfg encode blank := ⟨⟨0, rfl⟩, rfl⟩
+  apply Part.ext
+  intro terminal
+  rw [Part.mem_map_iff]
+  constructor
+  · intro h
+    obtain ⟨c, hr, hc⟩ := ConjectureMachines.tr_eval_rev' respects start h
+    exact ⟨c, hc, hr.2⟩
+  · rintro ⟨c, hc, rfl⟩
+    obtain ⟨d, hr, hd⟩ := ConjectureMachines.tr_eval' respects start hc
+    rwa [← hr.2] at hd
+
+/-- A zero-preserving encoder makes the target's own blank-start halting
+predicate equivalent to the original halting predicate. -/
+theorem halts_reached_quotient_iff {n : ℕ} [NeZero n] (encode : Fin 95 → Fin n)
+    (table : Machine n 2) (exactCells : PreservesReachedCells encode table)
+    (zero : encode 0 = 0) : ConjectureMachines.Halts table ↔ ConjectureMachines.Halts machine := by
+  have start : encodeCfg encode blank = (ConjectureMachines.init : Cfg n 2) := by
+    simp [encodeCfg, ConjectureMachines.init, zero]
+  unfold ConjectureMachines.Halts
+  rw [← start, eval_reached_quotient encode table exactCells]
+  rfl
+
+/-- The exact reachable-cell criterion fails for a proposed merge of 91 and
+93 which leaves 43 with a different code. -/
+theorem not_reachedCellsAgree_of_merge_91_93 {n : ℕ} (encode : Fin 95 → Fin n)
+    (merged : encode 91 = encode 93) (separate : encode 93 ≠ encode 43) :
+    ¬ ReachedCellsAgree encode := by
+  intro agree
+  obtain ⟨table, exactCells⟩ := (exists_reached_quotient_iff encode).mpr agree
+  exact separate (merging_91_93_forces_43 encode table exactCells merged)
+
 end GRWTSK.ComputerScience.Riemann95ReachableCompression
