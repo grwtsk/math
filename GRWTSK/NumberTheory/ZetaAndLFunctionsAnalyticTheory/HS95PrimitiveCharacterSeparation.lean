@@ -127,4 +127,83 @@ theorem imprimitive_level_control :
   · simp [DirichletCharacter.isPrimitive_def, DirichletCharacter.conductor_one]
     decide
 
+
+open scoped ComplexConjugate
+
+/-- The real parts of the observations and all pair products determine
+the observations up to one simultaneous conjugation. -/
+private theorem eq_or_conj_of_real_pairs {I : Type*} (x y : I → ℂ)
+    (real : ∀ i, (x i).re = (y i).re)
+    (pairs : ∀ i j, (x i * x j).re = (y i * y j).re) :
+    y = x ∨ y = fun i => conj (x i) := by
+  have gram (i j : I) : (x i).im * (x j).im = (y i).im * (y j).im := by
+    have h := pairs i j
+    rw [Complex.mul_re, Complex.mul_re, real i, real j] at h
+    linarith
+  by_cases nonreal : ∃ i, (x i).im ≠ 0
+  · obtain ⟨a, anchor⟩ := nonreal
+    have root : (y a).im = (x a).im ∨ (y a).im = -(x a).im := by
+      have factor : ((y a).im - (x a).im) * ((y a).im + (x a).im) = 0 := by
+        nlinarith only [gram a a]
+      exact (mul_eq_zero.mp factor).imp (fun h => by linarith) (fun h => by linarith)
+    rcases root with same | opposite
+    · left
+      funext i
+      apply Complex.ext (real i).symm
+      have h := (gram i a).symm
+      rw [same] at h
+      exact mul_right_cancel₀ anchor h
+    · right
+      funext i
+      apply Complex.ext
+      · simpa using (real i).symm
+      · rw [Complex.conj_im]
+        apply mul_right_cancel₀ anchor
+        have h := gram i a
+        rw [opposite, mul_neg] at h
+        rw [neg_mul]
+        linarith only [h]
+  · left
+    funext i
+    apply Complex.ext (real i).symm
+    have hx : (x i).im = 0 := by
+      by_contra h
+      exact nonreal ⟨i, h⟩
+    have h := gram i i
+    rw [hx, zero_mul] at h
+    rcases mul_eq_zero.mp h.symm with hy | hy <;> rw [hx, hy]
+
+/-- At a fixed positive level at most 503, the real first-window phases
+and the real phases on pairwise products of its prime addresses identify
+the inverse orbit exactly. The products include the diagonal squares. -/
+theorem first_window_real_pairs_eq_iff_inverse_orbit [NeZero q] (small : q ≤ 503)
+    (χ ψ : DirichletCharacter ℂ q) :
+    ((∀ i, (characterObservation χ 0 i).re = (characterObservation ψ 0 i).re) ∧
+     (∀ i j, (χ (primeAt 0 i * primeAt 0 j : ℕ)).re =
+        (ψ (primeAt 0 i * primeAt 0 j : ℕ)).re)) ↔ ψ = χ ∨ ψ = χ⁻¹ := by
+  constructor
+  · rintro ⟨real, product⟩
+    have pairs (i j : Position) :
+        (characterObservation χ 0 i * characterObservation χ 0 j).re =
+          (characterObservation ψ 0 i * characterObservation ψ 0 j).re := by
+      simpa only [Nat.cast_mul, map_mul, characterObservation, observe] using product i j
+    rcases eq_or_conj_of_real_pairs _ _ real pairs with same | dual
+    · exact Or.inl (first_window_character_injective small same)
+    · right
+      apply first_window_character_injective small
+      change characterObservation ψ 0 = characterObservation χ⁻¹ 0
+      rw [dual]
+      funext i
+      exact (characterObservation_dual χ 0 i).symm
+  · rintro (rfl | rfl)
+    · exact ⟨fun _ => rfl, fun _ _ => rfl⟩
+    · constructor
+      · intro i
+        rw [characterObservation_dual, Complex.conj_re]
+      · intro i j
+        simp only [Nat.cast_mul, map_mul]
+        change (characterObservation χ 0 i * characterObservation χ 0 j).re =
+          (characterObservation χ⁻¹ 0 i * characterObservation χ⁻¹ 0 j).re
+        rw [characterObservation_dual, characterObservation_dual, ← map_mul, Complex.conj_re]
+
 end GRWTSK.NumberTheory.HS95CharacterCarrier
