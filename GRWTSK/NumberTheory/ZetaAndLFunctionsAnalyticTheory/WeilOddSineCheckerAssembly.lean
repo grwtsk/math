@@ -86,6 +86,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThi
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirteenthRunFifthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirteenthRunSixthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirteenthRunSeventhCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirteenthRunEighthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeCheckerCellDeficit
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeStageSineReturn
 
@@ -4308,5 +4309,93 @@ theorem primitiveStageLower_of_blockSumAfterThirteenthSeventh_le (χ : Dirichlet
   primitiveStageLower_of_blockSumAfterThirteenthSixth_le χ hp hn hodd
     (checker_unit_test_iff_blockSumAfterThirteenthSixth_le.mp
       (checker_unit_test_iff_blockSumAfterThirteenthSeventh_le.mpr hr))
+
+private def thirteenthEighthPair : (ℕ × ℕ) × (ℕ × ℕ) := ((20236, 20275), (5271, 5331))
+
+set_option maxRecDepth 32768 in
+private theorem thirteenthEighthPair_mem : thirteenthEighthPair ∈ runPairsAfterThirteenthSeventh := by
+  decide +kernel
+
+/-- The remaining lower pairs after extracting the thirteenth-to-eighth cross. -/
+def runPairsAfterThirteenthEighth : Finset ((ℕ × ℕ) × (ℕ × ℕ)) :=
+  runPairsAfterThirteenthSeventh.erase thirteenthEighthPair
+
+theorem runPairsAfterThirteenthEighth_card : runPairsAfterThirteenthEighth.card = 5 := by
+  rw [runPairsAfterThirteenthEighth, Finset.card_erase_of_mem thirteenthEighthPair_mem,
+    runPairsAfterThirteenthSeventh_card]
+
+/-- Literal checker costs over the 5 pairs left by this erasure. -/
+def blockSumAfterThirteenthEighth : ℕ := ∑ p ∈ runPairsAfterThirteenthEighth, runPairSubtotal p
+
+theorem blockSumAfterThirteenthEighth_eq_sum :
+    blockSumAfterThirteenthEighth = ∑ p ∈ runPairsAfterThirteenthEighth,
+      triangleBlock (price literalRawDeficit) sincEntry
+        (retainedRunCells p.1) (retainedRunCells p.2) := rfl
+
+/-- The thirteenth-to-eighth cross subtotal is counted once in the split. -/
+theorem blockSumAfterThirteenthSeventh_eq_add_blockSumAfterThirteenthEighth :
+    blockSumAfterThirteenthSeventh =
+      3890616638098419276154284460255516128174475824 + blockSumAfterThirteenthEighth :=
+  bind_erased_subtotal blockSumAfterThirteenthSeventh_eq_sum
+    (sum_runBlocks_eq_subtotal_add_sum_erase thirteenthEighthPair_mem thirteenthWithEighthRetainedRunCross)
+    blockSumAfterThirteenthEighth_eq_sum
+
+private theorem accumulate_thirteenth_eighth_subtotal {n old rest : ℕ}
+    (hn : n = 124074399925354970903432133387871069614117256444715380 + old)
+    (hrest : old = 3890616638098419276154284460255516128174475824 + rest) :
+    n = 124074403815971609001851409542155529869633384619191204 + rest := by
+  omega
+
+/-- The checker numerator with eighty-six exact contributions separated. -/
+theorem literal_total_eq_certified_add_afterThirteenthEighth :
+    total checkerMidpointLower =
+      124074403815971609001851409542155529869633384619191204 + blockSumAfterThirteenthEighth :=
+  accumulate_thirteenth_eighth_subtotal literal_total_eq_certified_add_afterThirteenthSeventh
+    blockSumAfterThirteenthSeventh_eq_add_blockSumAfterThirteenthEighth
+
+private theorem after_thirteenth_eighth_strict_cutoff (r : ℕ) :
+    3890616638098419276154284460255516128174475824 + r ≤
+      13060682833822062852586056850594385882743555284619 ↔
+    r ≤ 13056792217183964433309902566134130366615380808795 := by
+  omega
+
+private theorem after_thirteenth_eighth_unit_cutoff (r : ℕ) :
+    3890616638098419276154284460255516128174475824 + r ≤
+      37629198582011421798821676276128930385882743555284620 ↔
+    r ≤ 37629194691394783700402400121844470130366615380808796 := by
+  omega
+
+/-- The original strict integer test in terms of the 5-pair sum. -/
+theorem checker_test_iff_blockSumAfterThirteenthEighth_le :
+    total checkerMidpointLower * 62500 < 47961 * denominator ↔
+      blockSumAfterThirteenthEighth ≤ 13056792217183964433309902566134130366615380808795 :=
+  checker_test_iff_blockSumAfterThirteenthSeventh_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 13060682833822062852586056850594385882743555284619)
+      blockSumAfterThirteenthSeventh_eq_add_blockSumAfterThirteenthEighth).to_iff.trans
+        (after_thirteenth_eighth_strict_cutoff blockSumAfterThirteenthEighth))
+
+/-- The separate unit test for the original radius-one stage. -/
+theorem checker_unit_test_iff_blockSumAfterThirteenthEighth_le :
+    total checkerMidpointLower ≤ denominator ↔
+      blockSumAfterThirteenthEighth ≤ 37629194691394783700402400121844470130366615380808796 :=
+  checker_unit_test_iff_blockSumAfterThirteenthSeventh_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 37629198582011421798821676276128930385882743555284620)
+      blockSumAfterThirteenthSeventh_eq_add_blockSumAfterThirteenthEighth).to_iff.trans
+        (after_thirteenth_eighth_unit_cutoff blockSumAfterThirteenthEighth))
+
+theorem rectangle_lt_of_blockSumAfterThirteenthEighth_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterThirteenthEighth ≤ 13056792217183964433309902566134130366615380808795) :
+    sineDeficitRectangle 256 (q3SineDeficit χ) < (219 / 250 : ℝ) ^ 2 :=
+  rectangle_lt_of_blockSumAfterThirteenthSeventh_le χ hodd
+    (checker_test_iff_blockSumAfterThirteenthSeventh_le.mp (checker_test_iff_blockSumAfterThirteenthEighth_le.mpr hr))
+
+theorem primitiveStageLower_of_blockSumAfterThirteenthEighth_le (χ : DirichletCharacter ℂ 3)
+    (hp : χ.IsPrimitive) (hn : χ ≠ 1) (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterThirteenthEighth ≤ 37629194691394783700402400121844470130366615380808796) :
+    PrimitiveStageLower χ hp hn 0 :=
+  primitiveStageLower_of_blockSumAfterThirteenthSeventh_le χ hp hn hodd
+    (checker_unit_test_iff_blockSumAfterThirteenthSeventh_le.mp
+      (checker_unit_test_iff_blockSumAfterThirteenthEighth_le.mpr hr))
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddThreeSineHilbertSchmidt.CheckerTriangle
