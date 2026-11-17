@@ -1,0 +1,13 @@
+name = "grwtsk-finite-field-weil"
+defaultTargets = ["GRWTSKFiniteFieldWeil"]
+
+[[lean_lib]]
+name = "GRWTSKFiniteFieldWeil"
+roots = ["GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FiniteFieldWeilConjectures"]
+globs = ["GRWTSK.CommutativeAlgebra.KummerNodeAxisLocalization", "GRWTSK.CommutativeAlgebra.UniformizerExponentBalance", "GRWTSK.CommutativeAlgebra.KummerNodeCompletion", "GRWTSK.AlgebraicGeometry.Alterations.KummerBaseChange", "GRWTSK.AlgebraicGeometry.Alterations.SemistableGraphClosure", "GRWTSK.AlgebraicGeometry.Alterations.SemistableCompletedCharts", "GRWTSK.AlgebraicGeometry.Alterations.SemistableNodeCriterion", "GRWTSK.AlgebraicGeometry.Alterations.SemistableSectionLifting", "GRWTSK.AlgebraicGeometry.Alterations.SemistableReduction", "GRWTSK.AlgebraicGeometry.Alterations.ToroidalBlowupCharts", "GRWTSK.AlgebraicGeometry.Alterations.ToroidalSingularLocus", "GRWTSK.AlgebraicGeometry.Alterations.ToroidalBlowupLocalModels", "GRWTSK.AlgebraicGeometry.Alterations.ToroidalBlowupChartClassification", "GRWTSK.AlgebraicGeometry.Alterations.ToroidalResolutionDescent", "GRWTSK.AlgebraicGeometry.Alterations.StrictNormalCrossings", "GRWTSK.AlgebraicGeometry.Alterations.RegularProjectiveAlteration", "GRWTSK.AlgebraicGeometry.FiniteFieldCohomology.FrobeniusPurityAndTrace", "GRWTSK.AlgebraicGeometry.FiniteFieldCohomology.FrobeniusPoincareDuality", "GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.ReciprocalCharacteristicRoots", "GRWTSK.AlgebraicGeometry.FiniteFieldCohomology.FrobeniusPointCountDuality", "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.WeilPowerSums", "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FiniteFieldWeilConjectures"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
