@@ -82,6 +82,36 @@ native receipts to the handoff.
 [Stage-outcome theorem](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Stage95.lean#L26-L32) ·
 [Original witness criterion](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Witness95.lean#L73-L99)
 
+## Exact retry counts and receipt agreement
+
+Let `k = firstSuccessfulCode root` be the least code with a successful
+native probe. The original `scan root b` checks codes strictly below
+`b`, so at bound `k` it still has no receipt and at `k+1` it returns
+the receipt of code `k`. `scan_eq_firstSuccessfulCode` proves this
+classification for every bound. At a successor bound it either retains
+the first receipt already found, visits code `k` itself, or visits a
+smaller code that fails by minimality. The successful probe at `k`
+returns exactly the dependent receipt used by `resolve`. Consequently
+`attempt_eq_firstSuccessfulCode` gives the same successor or terminal
+configuration as the constructive resolver.
+
+For every starting bound `b`, `attempt_resolves_after_exact_retry_count`
+gives `max(0,k+1-b)` failed attempts before the first resolution in
+consecutive trials. Every exposed retry raises the bound by one and
+decreases `retriesRemaining` by one. An already sufficient starting
+bound resolves immediately. `attempt_schedule_resolves_iff` also covers
+completed attempts that skip bounds. They resolve at this held root
+exactly when some sampled bound exceeds `k`. A schedule repeating the
+bound `k` forever is a hostile control because each trial omits code
+`k`. Unbounded completed bounds always include it eventually.
+
+This classification connects bounded attempts to the native stage
+runner even when distinct valid codes could carry different data.
+Connecting physical HS retries to this result still requires delivery
+of completed trials with a sufficient bound or source-equivalent
+receipts. The retry count measures search bounds and leaves the durations
+of the trials open.
+
 ## Executable stage runner
 
 `run` starts at the certified blank bootstrap. A live state includes
@@ -107,7 +137,7 @@ trial attempts in the previous section use search bounds within one call.
 trim and quotient round trip → exact equality of native configurations
 finite source trace + exact predicate → checked receipt
 original stage outcomes → some finite candidate succeeds
-success retained by larger bounds → eventual resolution with retry
+least successful code → exact retry count and receipt equality at every sufficient bound
 native bootstrap + receipt trace → successor or halt on original blank run
 safe-prefix induction + least bad stage → executable runner halting equivalence
 HS runtime scheduling and heat integration → attempts or exact receipts [open]
@@ -128,4 +158,12 @@ registers. It rejected the otherwise identical 10,714-instruction
 proposal. These checks ran the finite verifier on supplied candidates.
 Full fresh replay of the dependency closure, independent review,
 HS runtime parity, and wall-clock performance are `NOT_RUN`.
+The exact-count extension compiled with `--trust=0` and warnings as
+errors on the same isolated pins. Kernel checks confirmed the retry at
+bound `k`, the identical resolution at `k+1`, the stalled constant
+schedule, and the general resolution bound. Target kernel replay passed.
+The transitive audit of the eight added public declarations reported only
+`propext`, `Classical.choice` and `Quot.sound`. Fresh replay of the full
+import closure and independent review of the extension are `NOT_RUN`.
+
 [Coordination and exact evidence](https://github.com/grwtsk/math/issues/1823)

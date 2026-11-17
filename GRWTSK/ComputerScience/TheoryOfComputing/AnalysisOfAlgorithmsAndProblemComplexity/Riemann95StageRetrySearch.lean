@@ -241,6 +241,91 @@ theorem eventually_resolved (root : Root) (start : ℕ) :
   | none => simp [success] at found
   | some receipt => exact ⟨delay, receipt, by simp [attempt, success]⟩
 
+/-- The least code whose finite native verification returns a receipt. -/
+def firstSuccessfulCode (root : Root) : ℕ :=
+  Nat.find (exists_successful_probe root)
+
+theorem probe_firstSuccessfulCode (root : Root) :
+    probe root (firstSuccessfulCode root) = some (resolve root) :=
+  (Option.some_get (Nat.find_spec (exists_successful_probe root))).symm
+
+private theorem probe_eq_none_of_lt_firstSuccessfulCode (root : Root) {code : ℕ}
+    (earlier : code < firstSuccessfulCode root) : probe root code = none := by
+  have noSuccess := Nat.find_min (exists_successful_probe root) earlier
+  cases result : probe root code with
+  | none => rfl
+  | some receipt => simp [result] at noSuccess
+
+/-- The bounded scan is empty up through the least successful code. Once the
+bound includes that code, the scan returns the very same receipt as `resolve`. -/
+theorem scan_eq_firstSuccessfulCode (root : Root) (bound : ℕ) :
+    scan root bound =
+      if firstSuccessfulCode root < bound then some (resolve root) else none := by
+  induction bound with
+  | zero => simp [scan]
+  | succ bound ih =>
+    rw [scan, ih]
+    rcases lt_trichotomy (firstSuccessfulCode root) bound with earlier | here | later
+    · simp only [ite_eq_left earlier, ite_eq_left (Nat.lt_succ_of_lt earlier)]
+    · rw [← here, ite_eq_right (Nat.lt_irrefl _), ite_eq_left (Nat.lt_succ_self _)]
+      exact probe_firstSuccessfulCode root
+    · rw [ite_eq_right (Nat.not_lt_of_ge later.le), ite_eq_right (Nat.not_lt_of_ge later)]
+      exact probe_eq_none_of_lt_firstSuccessfulCode root later
+
+/-- The finite retry interface selects the same native receipt as the runner,
+including the exact successor or terminal configuration. -/
+theorem attempt_eq_firstSuccessfulCode (root : Root) (bound : ℕ) :
+    attempt root bound = if firstSuccessfulCode root < bound
+      then .resolved (resolve root) else .retry (bound + 1) := by
+  unfold attempt
+  rw [scan_eq_firstSuccessfulCode]
+  by_cases ready : firstSuccessfulCode root < bound <;> simp [ready]
+
+/-- The number of unsuccessful consecutive bounds before the first resolution. -/
+def retriesRemaining (root : Root) (bound : ℕ) : ℕ :=
+  firstSuccessfulCode root + 1 - bound
+
+/-- From any starting bound the first resolution occurs after exactly this
+many retries. The receipt at that bound is the constructive fallback's. -/
+theorem attempt_resolves_after_exact_retry_count (root : Root) (start : ℕ) :
+    attempt root (start + retriesRemaining root start) = .resolved (resolve root) ∧
+      ∀ delay < retriesRemaining root start,
+        attempt root (start + delay) = .retry (start + delay + 1) := by
+  constructor
+  · rw [attempt_eq_firstSuccessfulCode, ite_eq_left]
+    unfold retriesRemaining
+    omega
+  · intro delay before
+    rw [attempt_eq_firstSuccessfulCode, ite_eq_right]
+    unfold retriesRemaining at before
+    omega
+
+/-- Every exposed retry consumes one unit of the exact remaining retry count. -/
+theorem retriesRemaining_decreases {root : Root} {bound nextBound : ℕ}
+    (retry : attempt root bound = .retry nextBound) :
+    retriesRemaining root bound = retriesRemaining root nextBound + 1 := by
+  have before : bound ≤ firstSuccessfulCode root := by
+    by_contra after
+    rw [attempt_eq_firstSuccessfulCode, ite_eq_left (by omega)] at retry
+    contradiction
+  rw [retry_bound retry]
+  unfold retriesRemaining
+  omega
+
+/-- A schedule of completed attempts at one root resolves exactly when a
+sampled bound includes the first successful code. -/
+theorem attempt_schedule_resolves_iff (root : Root) (bounds : ℕ → ℕ) :
+    (∃ trial, attempt root (bounds trial) = .resolved (resolve root)) ↔
+      ∃ trial, firstSuccessfulCode root < bounds trial := by
+  constructor
+  · rintro ⟨trial, result⟩
+    refine ⟨trial, ?_⟩
+    by_contra short
+    rw [attempt_eq_firstSuccessfulCode, ite_eq_right short] at result
+    contradiction
+  · rintro ⟨trial, reached⟩
+    exact ⟨trial, by rw [attempt_eq_firstSuccessfulCode, ite_eq_left reached]⟩
+
 structure Active where
   root : Root
   spent : ℕ
