@@ -955,4 +955,59 @@ theorem handoffView_eq_of_cofinal_tapeAgrees {window : ℕ} {c d : Configuration
     ((le_max_left _ _).trans ((le_max_right _ _).trans enough))
     ((le_max_right _ _).trans ((le_max_right _ _).trans enough))
 
+private theorem exists_run_of_reaches {w : ℕ} {c d : Configuration w}
+    (reached : Reaches step c d) : ∃ n, run n c = some d := by
+  induction reached with
+  | refl => exact ⟨0, rfl⟩
+  | tail _ edge ih =>
+    obtain ⟨n, trace⟩ := ih
+    refine ⟨n + 1, ?_⟩
+    rw [run_add', trace, Option.bind_some, run, show step _ = some _ from edge]
+    rfl
+
+private theorem exists_terminal_of_run_none {w : ℕ} (n : ℕ) {c : Configuration w}
+    (failed : run n c = none) :
+    ∃ d, Reaches step c d ∧ step d = none := by
+  induction n generalizing c with
+  | zero => cases failed
+  | succ n ih =>
+    cases edge : step c with
+    | none => exact ⟨c, .refl, edge⟩
+    | some d =>
+      obtain ⟨terminal, reached, stop⟩ := ih (by simpa only [run, edge, Option.bind_some] using failed)
+      exact ⟨terminal, Relation.ReflTransGen.head edge reached, stop⟩
+
+/-- Sampling arbitrary window schedules detects blank-start halting once
+their instruction lengths are cofinal. Target window labels may vary. -/
+theorem halts_iff_failed_cofinal_schedule (origin : ℕ) (schedules : ℕ → List ℕ)
+    (target : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ (schedules t).length) :
+    Halts origin ↔ ∃ t, runOn (schedules t) (target t) (blank origin) = none := by
+  constructor
+  · intro halted
+    let result := StateTransition.eval step (blank origin)
+    have member : result.get halted ∈ result := ⟨halted, rfl⟩
+    obtain ⟨reached, stop⟩ := mem_eval.mp member
+    obtain ⟨n, trace⟩ := exists_run_of_reaches reached
+    have fails : run (n + 1) (blank origin) = none := by
+      rw [run_add', trace, Option.bind_some, run, stop]
+      rfl
+    obtain ⟨t, long⟩ := cofinal (n + 1)
+    obtain ⟨rest, len⟩ := Nat.exists_eq_add_of_le long
+    refine ⟨t, ?_⟩
+    rw [runOn_eq, len, run_add', fails]
+    rfl
+  · rintro ⟨t, failed⟩
+    rw [runOn_eq] at failed
+    have none : run (schedules t).length (blank origin) = none := by
+      cases h : run (schedules t).length (blank origin) <;> simp_all
+    obtain ⟨d, reached, stop⟩ := exists_terminal_of_run_none _ none
+    exact (mem_eval.mpr ⟨reached, stop⟩ : d ∈ StateTransition.eval step (blank origin)).1
+
+/-- The sampled failure is an exact counterexample criterion for RH. -/
+theorem exists_failed_cofinal_schedule_iff_not_RH (origin : ℕ) (schedules : ℕ → List ℕ)
+    (target : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ (schedules t).length) :
+    (∃ t, runOn (schedules t) (target t) (blank origin) = none) ↔ ¬ RiemannHypothesis :=
+  (halts_iff_failed_cofinal_schedule origin schedules target cofinal).symm.trans
+    (halts_iff_not_RH origin)
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
