@@ -72,6 +72,48 @@ private theorem norm_lower_at_center {g : ℂ → ℂ} {c : ℂ} {r b : ℝ}
   rw [norm_inv] at hle
   exact (inv_le_inv₀ (norm_pos_iff.mpr (hnz c (mem_closedBall_self hr.le))) hb).mp hle
 
+/-- A center error and an independent boundary error suffice to force a
+candidate zero near a source zero. The source needs no approximation bound
+at the interior points between the center and the circle. -/
+theorem exists_zero_of_center_boundary_errors {f g : ℂ → ℂ} {c : ℂ}
+    {r m ε δ : ℝ} (hr : 0 < r) (hg : DifferentiableOn ℂ g (closedBall c r))
+    (sourceZero : f c = 0) (centerError : ‖g c - f c‖ ≤ ε)
+    (sourceMargin : ∀ z ∈ sphere c r, m ≤ ‖f z‖)
+    (boundaryError : ∀ z ∈ sphere c r, ‖g z - f z‖ ≤ δ)
+    (gap : ε + δ < m) : ∃ z ∈ ball c r, g z = 0 := by
+  have center : ‖g c‖ ≤ ε := by simpa only [sourceZero, sub_zero] using centerError
+  have positive : 0 < m - δ := by linarith [norm_nonneg (g c)]
+  have boundary (z : ℂ) (hz : z ∈ sphere c r) : m - δ ≤ ‖g z‖ := by
+    have triangle : ‖f z‖ ≤ ‖g z - f z‖ + ‖g z‖ := by
+      simpa only [norm_sub_rev (f z) (g z), sub_add_cancel] using
+        norm_add_le (f z - g z) (g z)
+    linarith [sourceMargin z hz, boundaryError z hz]
+  by_contra! noZero
+  have closedNonzero (z : ℂ) (hz : z ∈ closedBall c r) : g z ≠ 0 := by
+    rcases (mem_closedBall.mp hz).lt_or_eq with h | h
+    · exact noZero z (mem_ball.mpr h)
+    · exact norm_pos_iff.mp (positive.trans_le (boundary z (mem_sphere.mpr h)))
+  have lower := norm_lower_at_center hr positive hg closedNonzero boundary
+  linarith
+
+/-- For a real-rooted candidate, an off-axis source zero forces the sum
+of the center and boundary error bounds to reach the source margin. -/
+theorem source_ne_zero_of_off_axis_center_boundary_errors {D : ℂ → ℂ} {c : ℂ}
+    {r m ε δ : ℝ} (hr : 0 < r) (offAxis : r ≤ |c.im|)
+    (hD : DifferentiableOn ℂ D (closedBall c r))
+    (realZeros : ∀ z ∈ ball c r, D z = 0 → z.im = 0)
+    (centerError : ‖D c - spectralSource c‖ ≤ ε)
+    (sourceMargin : ∀ z ∈ sphere c r, m ≤ ‖spectralSource z‖)
+    (boundaryError : ∀ z ∈ sphere c r, ‖D z - spectralSource z‖ ≤ δ)
+    (gap : ε + δ < m) : spectralSource c ≠ 0 := by
+  intro sourceZero
+  obtain ⟨z, hz, root⟩ := exists_zero_of_center_boundary_errors hr hD sourceZero
+    centerError sourceMargin boundaryError gap
+  have imaginary := Complex.abs_im_le_norm (z - c)
+  rw [Complex.sub_im, realZeros z hz root, zero_sub, abs_neg] at imaginary
+  have distance : ‖z - c‖ < r := by simpa only [mem_ball, dist_eq_norm] using hz
+  exact (not_lt_of_ge offAxis) (imaginary.trans_lt distance)
+
 /-- Compact-uniform convergence on the open spectral strip is sufficient.
 Real-rootedness is used through absence of candidate zeros in disks disjoint
 from the real line, and the minimum modulus principle uses value errors alone. -/
@@ -109,25 +151,13 @@ theorem source_ne_zero_of_strip_limit {D : ℕ → ℂ → ℂ}
   have hclose (z : ℂ) (hz' : z ∈ closedBall c r) :
       ‖D n z - spectralSource z‖ < b := by
     simpa only [dist_comm, dist_eq_norm] using hn z hz'
-  have hnz (z : ℂ) (hz' : z ∈ closedBall c r) : D n z ≠ 0 := by
-    intro hzero
-    have hi := hreal n z (hclosed hz') hzero
-    have hnorm := Complex.abs_im_le_norm (z - c)
-    rw [Complex.sub_im, hi, zero_sub, abs_neg] at hnorm
-    rw [mem_closedBall, dist_eq_norm] at hz'
-    exact (not_le_of_gt hri) (hnorm.trans hz')
-  have hcl := hclose c (mem_closedBall_self hr.le)
-  rw [hz, sub_zero] at hcl
-  apply (not_le_of_gt hcl)
-  apply norm_lower_at_center hr hb ((hD n).mono hclosed) hnz
-  intro z hz'
-  have hsmall := hclose z (sphere_subset_closedBall hz')
-  have htriangle : ‖spectralSource z‖ ≤ ‖D n z - spectralSource z‖ + ‖D n z‖ := by
-    simpa only [sub_add_cancel, norm_sub_rev (spectralSource z) (D n z)] using
-      norm_add_le (spectralSource z - D n z) (D n z)
-  have hlow : ‖spectralSource a‖ ≤ ‖spectralSource z‖ := hmin hz'
-  dsimp [b] at *
-  linarith
+  have center := hclose c (mem_closedBall_self hr.le)
+  exact source_ne_zero_of_off_axis_center_boundary_errors hr hri.le
+    ((hD n).mono hclosed)
+    (fun z hz' => hreal n z (hclosed (ball_subset_closedBall hz')))
+    le_rfl (fun _ hz' => hmin hz')
+    (fun z hz' => (hclose z (sphere_subset_closedBall hz')).le)
+    (by dsimp [b] at center ⊢; linarith) hz
 
 private theorem exists_real_source_ne_zero_above (B : ℝ) :
     ∃ x : ℝ, B < x ∧ spectralSource (x : ℂ) ≠ 0 := by
