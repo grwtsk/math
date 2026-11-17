@@ -59507,3 +59507,287 @@ for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)
  i=list(indices)
  print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
 ~~~
+
+## E247 fine sign and forward screen
+
+2026-11-17, grwtsk contributors, AI-assisted. All detunings are from
+c₁=99653682.92983 for the original primitive odd mod-three radius-four
+multiplier. Retain all 458 signed prime powers, full parity-one gamma,
+the original masks and folded dν/π, and the zero principal pole.
+
+The directed .01 screen flagged [4148.94,4148.96] within
+E247=[4148.91,4148.99]. The direct phase evaluation at +4148.95
+gives A₁−P₄>.103140. The .000625 grid partitions E247 into 128
+closed cells, each with A₁−P₄>.100576. For each cell, the lower
+bound is the directed lower gamma bound minus the maximum upper
+endpoint prime sum, minus the interpolation allowance
+h² sup|P₄''|/8. The sine and cosine endpoint intervals use the original
+phase weights. The second derivative bound is the sum of the
+upper absolute weights times squared upper lags, below 13504.
+The folded pure multiplier on this enclosure therefore contributes
+zero to the negative restriction. This resolves the coarse flag and
+requires no donor comparison or cap charge.
+
+Together with the previous strict bounds on all cells outside the
+coarse flag, this proves A₁−P₄>0 across [4096.50,4160.50]. There
+are 297 paid restrictions. Least cap room >1.11111110941·10⁻²²
+and pooled room >5.798908000001111111110941·10⁻⁹. The global
+unpaid-support norm remains open.
+
+On [4160.50,4220.50], the extended directed .01 screen flags
+[4164.24,4164.48], [4167.64,4167.75], [4210.22,4210.41],
+[4216.63,4216.70] and [4218.42,4218.45]. Each unflagged cell
+has a strictly positive lower bound. Each flag needs a fine check.
+
+Run both blocks with the pinned arithmetic Markdown, E247 and upper.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E247":("4138.50","4158.50","4148.91","4148.99","4148.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+point=node(F("4148.95"))
+print("point margin lower",float(Alo-point[1]),flush=True)
+a,b=(F(l0)-start)/step,(F(r0)-start)/step
+assert a.denominator==b.denominator==1 and b-a==128
+margin=min(Alo-estimate(start+j*step,step)[1] for j in range(int(a),int(b)))
+print("fine margin lower",float(margin),flush=True)
+assert point[1]<Alo and margin>F(".100576")
+print("PASS E247 positive on all 128 fine cells")
+print("exact rational margin floor at 1e-6",margin*10**6//1)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E247":("4160.50","4220.50","4148.91","4148.99","4148.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
