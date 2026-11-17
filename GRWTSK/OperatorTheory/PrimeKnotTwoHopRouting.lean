@@ -167,4 +167,72 @@ theorem no_twoHop_95_cycle_half_error (s : Source Prime Knot) (weight : Knot →
     Finset.prod_le_prod₀ (fun _ _ => abs_nonneg _) (fun i _ => (reverse i).le)
   exact (not_lt_of_ge small) (balance ▸ big)
 
+
+/-- At the half-error threshold every forward entry equals one half and
+every reverse entry has magnitude one half. This holds for any finite
+permutation of the slots, with signed weights and independent scalings. -/
+theorem twoHop_cycle_half_error_rigid [Fintype Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (encode : Slot → Prime)
+    (next : Equiv.Perm Slot) (row col : Slot → ℝ)
+    (forward : ∀ i, |row i * twoHop s weight (encode i) (encode (next i)) *
+        col (next i) - 1| ≤ 1 / 2)
+    (reverse : ∀ i, |row (next i) * twoHop s weight (encode (next i)) (encode i) *
+        col i| ≤ 1 / 2) :
+    ∀ i, row i * twoHop s weight (encode i) (encode (next i)) * col (next i) = 1 / 2 ∧
+      |row (next i) * twoHop s weight (encode (next i)) (encode i) * col i| = 1 / 2 := by
+  let f (i : Slot) := row i * twoHop s weight (encode i) (encode (next i)) * col (next i)
+  let b (i : Slot) := |row (next i) * twoHop s weight (encode (next i)) (encode i) * col i|
+  have lower (i : Slot) : (1 / 2 : ℝ) ≤ f i := by
+    have h := (abs_le.mp (forward i)).1
+    change -(1 / 2 : ℝ) ≤ f i - 1 at h
+    linarith
+  have upper (i : Slot) : b i ≤ (1 / 2 : ℝ) := reverse i
+  have positive (i : Slot) : 0 < f i := (by norm_num : (0 : ℝ) < 1 / 2).trans_le (lower i)
+  have balance : (∏ i, f i) = ∏ i, b i := by
+    have eq := twoHop_cycle_product_balance s weight encode next row col
+    change (∏ i, |f i|) = ∏ i, b i at eq
+    simpa only [abs_of_pos (positive _)] using eq
+  have bpos (i : Slot) : 0 < b i := by
+    have product : (0 : ℝ) < ∏ j, b j :=
+      balance ▸ Finset.prod_pos (fun j _ => positive j)
+    exact lt_of_le_of_ne (abs_nonneg _) fun h =>
+      Finset.prod_ne_zero_iff.mp product.ne' i (Finset.mem_univ _) h.symm
+  have pointwise (i : Slot) : b i ≤ f i := (upper i).trans (lower i)
+  intro i
+  have eq : b i = f i := by
+    by_contra unequal
+    have strict : (∏ j, b j) < ∏ j, f j :=
+      Finset.prod_lt_prod₀ (fun j _ => bpos j) (fun j _ => pointwise j)
+        ⟨i, Finset.mem_univ _, lt_of_le_of_ne (pointwise i) unequal⟩
+    exact (lt_irrefl _) (balance ▸ strict)
+  change f i = 1 / 2 ∧ b i = 1 / 2
+  have equalHalf : f i = 1 / 2 := le_antisymm (by rw [← eq]; exact upper i) (lower i)
+  exact ⟨equalHalf, eq.trans equalHalf⟩
+
+/-- A common incident knot realizes the boundary with a single active
+weight. The half-error threshold is attained on every entry of the
+95-cycle target, including its zero diagonal. -/
+theorem twoHop_95_cycle_half_error_attained
+    (s : Source Prime Knot) (encode : Fin 95 → Prime)
+    (knot : Knot) (linked : ∀ i, Linked s (encode i) knot) :
+    ∃ weight : Knot → ℝ, (∀ k, 0 ≤ weight k) ∧
+      ∀ i j, |(1 / 2 : ℝ) * twoHop s weight (encode i) (encode j) -
+        (if nextSlot95 i = j then 1 else 0)| = 1 / 2 := by
+  classical
+  let weight (k : Knot) : ℝ := if k = knot then 1 else 0
+  refine ⟨weight, ?_, ?_⟩
+  · intro k
+    simp only [weight]
+    split <;> norm_num
+  · intro i j
+    have entry : twoHop s weight (encode i) (encode j) = 1 := by
+      unfold twoHop
+      rw [Finset.sum_eq_single knot]
+      · simp [weight, edgeWeight, linked i, linked j]
+      · intro k _ hk
+        simp [weight, hk]
+      · simp
+    rw [entry]
+    split <;> norm_num
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
