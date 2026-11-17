@@ -188,4 +188,62 @@ theorem joint_overlap_budget_le_separate (χ : DirichletCharacter ℂ q)
   exact mul_le_mul_of_nonneg_right
     (mul_le_mul_of_nonneg_left (Complex.norm_le_abs_re_add_abs_im _) (primeWeight_nonneg _)) geom
 
+private theorem max_abs_channels (a b : ℝ) :
+    max |a + b| |a - b| = |a| + |b| := by
+  apply le_antisymm
+  · exact max_le (abs_add_le _ _) (by simpa only [sub_eq_add_neg, abs_neg] using abs_add_le a (-b))
+  · have plus := le_max_left |a + b| |a - b|
+    have minus := le_max_right |a + b| |a - b|
+    rcases le_total 0 a with ha | ha <;> rcases le_total 0 b with hb | hb
+    · rw [abs_of_nonneg ha, abs_of_nonneg hb]
+      exact le_trans (abs_of_nonneg (add_nonneg ha hb)).symm.le plus
+    · rw [abs_of_nonneg ha, abs_of_nonpos hb, ← sub_eq_add_neg]
+      exact le_trans (abs_of_nonneg (sub_nonneg.mpr (hb.trans ha))).symm.le minus
+    · rw [abs_of_nonpos ha, abs_of_nonneg hb]
+      exact (show -a + b ≤ |a - b| by linarith [neg_abs_le (a - b)]).trans minus
+    · rw [abs_of_nonpos ha, abs_of_nonpos hb]
+      exact (show -a + -b ≤ |a + b| by linarith [neg_abs_le (a + b)]).trans plus
+
+/-- For one test and a shared pair of real channel errors, the larger
+of the two original-sector errors is exactly the sum of the average
+error magnitude and half the contrast error magnitude. -/
+theorem max_dual_readout_error_eq (χ : DirichletCharacter ℂ q)
+    (A : ℝ) (f : ℝ → ℂ) (average : ℂ) (contrast a b : ℝ)
+    (avgError : dualEvenValue χ A f - average = (a : ℂ))
+    (phaseError : physicalValue χ A f - physicalValue χ⁻¹ A f - (contrast : ℂ) = (b : ℂ)) :
+    max ‖physicalValue χ A f - (average + (contrast : ℂ) / 2)‖
+      ‖physicalValue χ⁻¹ A f - (average - (contrast : ℂ) / 2)‖ =
+      |a| + |b| / 2 := by
+  have first : physicalValue χ A f - (average + (contrast : ℂ) / 2) =
+      ((a + b / 2 : ℝ) : ℂ) := by
+    push_cast
+    linear_combination physicalValue_add_dual χ A f / 2 + avgError + phaseError / 2
+  have dual : physicalValue χ⁻¹ A f - (average - (contrast : ℂ) / 2) =
+      ((a - b / 2 : ℝ) : ℂ) := by
+    push_cast
+    linear_combination physicalValue_add_dual χ A f / 2 + avgError - phaseError / 2
+  rw [first, dual, Complex.norm_real, Complex.norm_real, Real.norm_eq_abs, Real.norm_eq_abs,
+    max_abs_channels, abs_div, abs_of_nonneg (by norm_num : (0 : ℝ) ≤ 2)]
+
+/-- Use the literal first-window channels to identify the worst omitted
+prime error across the original pair, with their common background kept. -/
+theorem max_dual_firstOnly_error_eq (χ : DirichletCharacter ℂ q) (A : ℝ) (f : ℝ → ℂ) :
+    let C := fun n : ℕ => correlation f (Real.log n)
+    let average := dualEvenFirstOnly χ A f
+    let contrast := dualPhasePart (firstPowers A) χ C
+    max ‖physicalValue χ A f - (average + (contrast : ℂ) / 2)‖
+      ‖physicalValue χ⁻¹ A f - (average - (contrast : ℂ) / 2)‖ =
+      2 * |∑ n ∈ laterPowers A, primeWeight n * (χ n).re * (C n).re| +
+        |dualPhasePart (laterPowers A) χ C| / 2 := by
+  intro C average contrast
+  have avgError := dualEven_sub_firstOnly χ A f
+  have phaseError : physicalValue χ A f - physicalValue χ⁻¹ A f - (contrast : ℂ) =
+      (dualPhasePart (laterPowers A) χ C : ℂ) := by
+    rw [physicalValue_sub_dual]
+    change ((contrast + dualPhasePart (laterPowers A) χ C : ℝ) : ℂ) - (contrast : ℂ) = _
+    push_cast
+    ring
+  rw [max_dual_readout_error_eq χ A f average contrast _ _ avgError phaseError, abs_mul]
+  norm_num [C]
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
