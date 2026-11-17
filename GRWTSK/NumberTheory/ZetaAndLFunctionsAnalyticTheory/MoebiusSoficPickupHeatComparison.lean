@@ -905,4 +905,109 @@ theorem settledHeatedPickup_le_sq_sub_four {s : ℝ} (hs : 0 < s) :
   rw [settledHeatedPickup_eq_sq_sub_diagonal hs]
   linarith
 
+private def normalizedSettledDiagonalTerm (s : ℝ) (n : ℕ) : ℝ :=
+  if n = 1 then 0 else
+    (moebiusReal n * settled n) ^ 2 *
+      Real.exp (-s * (2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2))
+
+private theorem settledHeated_square_summable {s : ℝ} (hs : 0 < s) :
+    Summable (fun n : ℕ => (heatedCoeff s n * settled n) ^ 2) := by
+  have h := (settledHeated_diag_pairs_summable hs).prod
+  simpa only [settledHeated_diagonal_row] using h
+
+private theorem normalizedSettledDiagonal_return {s : ℝ} (hs : 0 < s) :
+    (∑' n, normalizedSettledDiagonalTerm s n) =
+      (settledHeatedDiagonal s - 4) / Real.exp (-s * Real.log 2 ^ 2) := by
+  let f (n : ℕ) := (heatedCoeff s n * settled n) ^ 2
+  have hf : Summable f := settledHeated_square_summable hs
+  have hone : f 1 = 4 := by
+    norm_num [f, heatedCoeff, settled, moebiusReal, ArithmeticFunction.moebius_apply_one]
+  change (∑' n, normalizedSettledDiagonalTerm s n) = ((∑' n, f n) - 4) / _
+  rw [hf.tsum_eq_add_tsum_ite 1, hone, add_sub_cancel_left, ← tsum_div_const]
+  apply tsum_congr
+  intro n
+  by_cases h : n = 1
+  · simp [h, normalizedSettledDiagonalTerm]
+  · simp only [normalizedSettledDiagonalTerm, ite_eq_right h, f, heatedCoeff]
+    rw [show -s * (2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2) =
+          -s * Real.log (n : ℝ) ^ 2 + -s * Real.log (n : ℝ) ^ 2 -
+            (-s * Real.log 2 ^ 2) by ring, Real.exp_sub, Real.exp_add]
+    ring
+
+private theorem tendsto_normalizedSettledDiagonal :
+    Tendsto (fun s : ℝ => (settledHeatedDiagonal s - 4) / Real.exp (-s * Real.log 2 ^ 2))
+      atTop (𝓝 0) := by
+  let bound (n : ℕ) := Real.exp (Real.log 2 ^ 2) * (heatedCoeff 1 n * settled n) ^ 2
+  have hs : Summable bound := (settledHeated_square_summable (by norm_num : (0 : ℝ) < 1)).mul_left _
+  have h := tendsto_tsum_of_dominated_convergence (𝓕 := atTop)
+    (f := normalizedSettledDiagonalTerm) (g := fun _ => 0) hs
+    (by
+      intro n
+      by_cases h0 : n = 0
+      · subst n
+        simp [normalizedSettledDiagonalTerm, settled]
+      by_cases h1 : n = 1
+      · simp [normalizedSettledDiagonalTerm, h1]
+      have hn : 2 ≤ n := by omega
+      have hlog : Real.log 2 ≤ Real.log (n : ℝ) :=
+        Real.log_le_log (by norm_num) (by exact_mod_cast hn)
+      have hqpos := pow_pos (Real.log_pos (by norm_num : (1 : ℝ) < 2)) 2
+      have hsq := pow_le_pow_left₀ (Real.log_nonneg (by norm_num : (1 : ℝ) ≤ 2)) hlog 2
+      have hq : 0 < 2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2 := by linarith
+      simpa only [normalizedSettledDiagonalTerm, ite_eq_right h1, mul_zero] using
+        (tendsto_heat_weight_zero hq).const_mul ((moebiusReal n * settled n) ^ 2))
+    (by
+      filter_upwards [eventually_ge_atTop (1 : ℝ)] with s hs n
+      by_cases h0 : n = 0
+      · subst n
+        simp [normalizedSettledDiagonalTerm, settled, bound]
+      by_cases h1 : n = 1
+      · rw [normalizedSettledDiagonalTerm, ite_eq_left h1, norm_zero]
+        dsimp [bound]
+        positivity
+      have hn : 2 ≤ n := by omega
+      have hlog : Real.log 2 ≤ Real.log (n : ℝ) :=
+        Real.log_le_log (by norm_num) (by exact_mod_cast hn)
+      have hsq := pow_le_pow_left₀ (Real.log_nonneg (by norm_num : (1 : ℝ) ≤ 2)) hlog 2
+      have hq : 0 ≤ 2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2 := by
+        linarith [sq_nonneg (Real.log (n : ℝ))]
+      have hexp : Real.exp (-s * (2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2)) ≤
+          Real.exp (-(2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2)) :=
+        Real.exp_le_exp.mpr (by nlinarith [mul_nonneg (sub_nonneg.mpr hs) hq])
+      rw [normalizedSettledDiagonalTerm, ite_eq_right h1, Real.norm_eq_abs,
+        abs_of_nonneg (by positivity)]
+      calc
+        _ ≤ (moebiusReal n * settled n) ^ 2 *
+            Real.exp (-(2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2)) :=
+          mul_le_mul_of_nonneg_left hexp (sq_nonneg _)
+        _ = bound n := by
+          dsimp [bound, heatedCoeff]
+          rw [show -(2 * Real.log (n : ℝ) ^ 2 - Real.log 2 ^ 2) =
+            Real.log 2 ^ 2 + (-1 * Real.log (n : ℝ) ^ 2 + -1 * Real.log (n : ℝ) ^ 2) by ring,
+            Real.exp_add, Real.exp_add]
+          ring)
+  simp only [tsum_zero] at h
+  refine h.congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with s hs
+  exact normalizedSettledDiagonal_return hs
+
+/-- The leading signed ordered contribution at high heat consists of the
+two orientations between the original indices one and two. -/
+theorem tendsto_settledHeatedPickup_div_prime_two_weight :
+    Tendsto (fun s : ℝ => settledHeatedPickup s / Real.exp (-s * Real.log 2 ^ 2))
+      atTop (𝓝 (-(8 * (Real.sqrt 2)⁻¹))) := by
+  have h := tendsto_heatedLimit_sub_two_div_prime_two_weight
+  have hw := tendsto_heat_weight_zero (pow_pos (Real.log_pos (by norm_num : (1 : ℝ) < 2)) 2)
+  have hL : Tendsto heatedLimit atTop (𝓝 2) := by
+    have hp := (h.mul hw).add_const 2
+    rw [mul_zero, zero_add] at hp
+    refine hp.congr' (Eventually.of_forall fun s => ?_)
+    rw [div_mul_cancel₀ _ (Real.exp_ne_zero _), sub_add_cancel]
+  have hlim := (h.mul (hL.add_const 2)).sub tendsto_normalizedSettledDiagonal
+  rw [sub_zero, show -(2 * (Real.sqrt 2)⁻¹) * (2 + 2) = -(8 * (Real.sqrt 2)⁻¹) by ring] at hlim
+  refine hlim.congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with s hs
+  rw [settledHeatedPickup_eq_sq_sub_diagonal hs]
+  ring
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
