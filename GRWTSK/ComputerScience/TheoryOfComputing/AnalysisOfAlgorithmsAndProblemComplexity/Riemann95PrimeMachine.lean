@@ -639,4 +639,61 @@ theorem no_finite_roots_for_tapeAgrees_lengths {Vertex : Type*} [Finite Vertex]
   have ge := (language i _).mp second
   omega
 
+
+/-- The control and scanned symbol observed at a given time on the actual blank run. -/
+def observedRead (window n : ℕ) : Option (Fin 95 × Fin 2) :=
+  (run n (blank window)).map fun c => (decodeAddress c.address, c.scanned)
+
+theorem observedRead_eq_native (window n : ℕ) :
+    observedRead window n =
+      (ConjectureMachines.Riemann95.nSteps n ConjectureMachines.init).map
+        (fun c => (c.state, c.tape.head)) := by
+  rw [← project_blank window, ← project_run, Option.map_map]
+  rfl
+
+/-- Every edge is witnessed by two consecutive observations of the blank run. -/
+def ObservedReadEdge (window : ℕ) (u v : Fin 95 × Fin 2) : Prop :=
+  ∃ n, observedRead window n = some u ∧ observedRead window (n + 1) = some v
+
+inductive ObservedReadWalk (window : ℕ) (start : Fin 95 × Fin 2) :
+    ℕ → (Fin 95 × Fin 2) → Prop
+  | nil : ObservedReadWalk window start 0 start
+  | tail {n : ℕ} {u v : Fin 95 × Fin 2} :
+      ObservedReadWalk window start n u → ObservedReadEdge window u v →
+      ObservedReadWalk window start (n + 1) v
+
+theorem observedReadWalk_of_run {window n : ℕ} {v : Fin 95 × Fin 2}
+    (read : observedRead window n = some v) : ObservedReadWalk window (0, 0) n v := by
+  induction n generalizing v with
+  | zero =>
+    rw [observedRead_eq_native] at read
+    cases Option.some.inj read
+    exact .nil
+  | succ n ih =>
+    cases previous : run n (blank window) with
+    | none =>
+      have absent : run (n + 1) (blank window) = none := by rw [run_add', previous]; rfl
+      simp [observedRead, absent] at read
+    | some c =>
+      have before : observedRead window n = some (decodeAddress c.address, c.scanned) := by
+        simp only [observedRead, previous, Option.map_some]
+      exact .tail (ih before) ⟨n, before, read⟩
+
+/-- Even edges extracted exclusively from the blank orbit can create a
+spurious rooted walk. The observed state at times 8 and 9 is (12, 0).
+Reusing the edge from time 9 to 10 one tick early invents a read of 1. -/
+theorem observedReadWalk_spurious (window : ℕ) :
+    ObservedReadWalk window (0, 0) 9 (12, 1) ∧
+      observedRead window 9 ≠ some (12, 1) := by
+  have atEight : observedRead window 8 = some (12, 0) := by
+    rw [observedRead_eq_native]
+    rfl
+  have atNine : observedRead window 9 = some (12, 0) := by
+    rw [observedRead_eq_native]
+    rfl
+  have atTen : observedRead window 10 = some (12, 1) := by
+    rw [observedRead_eq_native]
+    rfl
+  exact ⟨.tail (observedReadWalk_of_run atEight) ⟨9, atNine, atTen⟩, by rw [atNine]; decide⟩
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine

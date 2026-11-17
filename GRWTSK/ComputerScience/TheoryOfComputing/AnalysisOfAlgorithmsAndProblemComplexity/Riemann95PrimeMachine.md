@@ -222,3 +222,38 @@ requires its own reachability and language-lifting proof.
 Strict pinned compilation, target replay, the three boundary
 controls and transitive axiom inspection passed. Fresh replay of the
 full import closure and independent review are `NOT_RUN`.
+
+## Spurious walk using only observed blank-run edges
+
+`observedRead_eq_native` identifies the observation after any number of
+steps in any prime window with the pair of actual native control and
+scanned bit at that time. `ObservedReadEdge` includes a pair of
+observations exactly when they occur consecutively on the blank run.
+`observedReadWalk_of_run` maps every successful rooted native prefix to a
+walk of the same length in this graph.
+
+`observedReadWalk_spurious` proves that for every window the graph admits
+a nine-edge walk from `(0, 0)` to `(12, 1)`, while the native observation
+after nine steps is `(12, 0)`. The literal
+[Cryptids transition table](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/artifacts/riemann_95/machine.txt)
+gives `(12, 0)` after both eight and nine steps and `(12, 1)` after
+ten. Append the actual ninth-to-tenth edge to the first eight steps.
+The smaller observation identifies distinct points of the orbit and
+allows this edge to be used early.
+
+This falsifies reverse lifting for a control-and-scan graph, even
+when every edge has a blank-run witness. Any enlargement of the graph
+retaining these edges inherits the same walk. To use a richer
+observation, prove that each admitted edge can be taken from the
+particular reachable configuration lifting its prefix, preserving the
+word and any terminal condition.
+
+Strict target compilation, target kernel replay, and the transitive audit
+of all three new theorems passed. The executable window-zero control
+returned `[some (12,0), some (12,0), some (12,1)]`.
+The audit reported only `propext`, `Classical.choice` and `Quot.sound`.
+The source SHA-256 is
+`9f3836ac5f1d16ddc87cdb575c36652427da72d9b74170bf81d37922b54be0dd`,
+checked on the same Lean, Cryptids and mathlib pins above. Full fresh
+dependency replay, independent review and HS runtime correspondence
+are `NOT_RUN`.
