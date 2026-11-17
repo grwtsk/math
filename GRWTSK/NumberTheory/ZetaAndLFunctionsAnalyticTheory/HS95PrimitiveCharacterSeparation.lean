@@ -264,4 +264,52 @@ theorem first_window_anchor_eq_iff_inverse_orbit [NeZero q] (small : q ≤ 503)
       exact Or.inr ⟨a, ha, fun i _ => products i a⟩
     · exact Or.inl fun i => not_not.mp fun hi => nonreal ⟨i, hi⟩
 
+/-- Enough full windows to contain every prime strictly below the level.
+The final window may also contain primes at or above the level. -/
+def characterWindowCount (q : ℕ) : ℕ := (Nat.count Nat.Prime q + 94) / 95
+
+/-- For every positive level, finitely many visits to the same physical
+carrier determine the entire complex character. -/
+theorem bounded_window_character_injective [NeZero q] :
+    Function.Injective (fun χ : DirichletCharacter ℂ q =>
+      fun w : Fin (characterWindowCount q) => characterObservation χ w.val) := by
+  intro χ ψ same
+  apply character_eq_of_coprime_prime_values
+  intro p prime below _
+  let n := Nat.count Nat.Prime p
+  have count : n < Nat.count Nat.Prime q := Nat.count_strict_mono prime below
+  have bound : windowOf n < characterWindowCount q := by
+    unfold windowOf characterWindowCount
+    omega
+  have pair := congrFun (congrFun same ⟨windowOf n, bound⟩) (positionOf n)
+  simpa only [characterObservation, observe, primeAt_count_split prime, n] using pair
+
+/-- Independent finite-time diagonal heat at each visit preserves character
+identification. No positivity of the rates is needed for exact inversion. -/
+theorem bounded_heated_window_character_injective [NeZero q]
+    (rate : Fin (characterWindowCount q) → Position → ℝ)
+    (time : Fin (characterWindowCount q) → ℝ) :
+    Function.Injective (fun χ : DirichletCharacter ℂ q =>
+      fun w => diagonalHeat (rate w) (time w) (characterObservation χ w.val)) := by
+  intro χ ψ same
+  apply bounded_window_character_injective
+  funext w
+  exact diagonalHeat_injective (rate w) (time w) (congrFun same w)
+
+/-- A non-self-dual character has an imaginary phase in a window within
+the level-dependent bound, supplying an address for a signed dual test. -/
+theorem exists_bounded_window_nonreal_of_distinct_dual [NeZero q]
+    (χ : DirichletCharacter ℂ q) (different : χ⁻¹ ≠ χ) :
+    ∃ (w : Fin (characterWindowCount q)) (i : Position),
+      (characterObservation χ w.val i).im ≠ 0 := by
+  by_contra! real
+  apply different
+  apply bounded_window_character_injective
+  funext w i
+  change characterObservation χ⁻¹ w.val i = characterObservation χ w.val i
+  rw [characterObservation_dual]
+  apply Complex.ext
+  · exact Complex.conj_re _
+  · rw [Complex.conj_im, real w i, neg_zero]
+
 end GRWTSK.NumberTheory.HS95CharacterCarrier
