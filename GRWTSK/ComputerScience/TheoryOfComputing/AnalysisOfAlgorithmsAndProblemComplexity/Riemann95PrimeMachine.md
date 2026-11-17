@@ -66,6 +66,38 @@ then reaches a representative of the same native `initialRoot`. The source
 `3c6eae70196edf6d1beb66c06d7b481e2acdf387`.
 [Exact bootstrap](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Bootstrap95.lean#L72-L77)
 
+## Finite tape observations
+
+`TapeAgrees depth c d` requires the same prime address, absolute head
+position, scanned symbol, and the same first `depth` cells of both
+half-tapes. Missing list entries contribute the blank symbol zero. This
+compares the visible cells of the source tape even when the executable list
+representatives have different amounts of trailing padding.
+
+`step_tapeAgrees` uses agreement at depth `d+1` to obtain matching
+terminal outcomes or agreement at depth `d` after one instruction. The
+same address and scanned symbol select the same original table entry. A
+move reads the first cell in the direction of motion, drops that cell
+from its half-tape and pushes the written symbol onto the other side. A
+final cell at depth `d` can therefore depend on at most one additional
+initial cell in the direction of that move.
+
+`run_tapeAgrees` iterates this comparison. For every prime window, every
+pair of executable starts, and all natural `d,n`, initial agreement at
+depth `d+n` gives matching outcomes after `n` instructions. When both
+runs return a configuration, the results agree at depth `d`.
+`run_truncateTape` applies this to the executable operation that keeps
+the first `d+n` cells of each list. This supplies a finite-horizon
+comparison for a controller that certifies the address, head and padded
+cells at the start of an exact instruction block.
+
+For every window and depth, `exists_tapeAgrees_project_ne` gives two
+executable starts with the same finite observation and distinct native
+projections. Put a one just beyond the observed left cells of a blank
+configuration and compare the corresponding cell in the upstream
+`ListBlank` quotient. The published one-step control below shows that
+depth zero need not determine the next scanned bit.
+
 ## Halting and the original arithmetic source
 
 `eval_project` identifies the entire partial terminal result for every
@@ -102,6 +134,7 @@ configurations.
 ranked prime ↔ native control
 actual instruction + complete tape lists → exact one-step projection
 one-step projection → exact finite runs → exact partial evaluation
+initial tape depth d+n → agreement of n-instruction results at depth d
 blank projection + native bootstrap → executable bootstrap
 blank evaluation + upstream source theorems → Shunia and RH equivalences
 HS heat or waveform controller → exact step relation on the full state [open]
@@ -128,4 +161,11 @@ prime 2 at position zero, one executable step gave prime 227 and position
 
 Full fresh replay of the dependency closure, independent mathematical
 review and HS controller parity are `NOT_RUN`.
+The finite tape extension elaborated with `--trust=0` and warnings as
+errors on the same isolated pins. Exact-type checks, target kernel replay
+and executable one-step truncation controls passed. The transitive audit
+of the eight added public declarations reported only `propext`,
+`Classical.choice` and `Quot.sound`. Full fresh transitive replay and
+independent mathematical review of the extension are `NOT_RUN`.
+
 [Coordination and verification record](https://github.com/grwtsk/math/issues/1821)

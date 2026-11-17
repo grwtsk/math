@@ -211,4 +211,117 @@ theorem left_neighbor_changes_next_scan (window : ℕ) :
   have first : ConjectureMachines.Riemann95.machine.transition 0 0 = some (1, .left, 48) := rfl
   constructor <;> simp [step, blank, first, writeMove]
 
+
+/-- Agreement on the address, scanned bit, absolute position and the first
+`depth` cells of each half-tape. Missing cells are read as blanks. -/
+def TapeAgrees {window : ℕ} (depth : ℕ) (c d : Configuration window) : Prop :=
+  c.address = d.address ∧ c.position = d.position ∧ c.scanned = d.scanned ∧
+    (∀ i < depth, (c.left[i]?).getD 0 = (d.left[i]?).getD 0) ∧
+    (∀ i < depth, (c.right[i]?).getD 0 = (d.right[i]?).getD 0)
+
+theorem TapeAgrees.mono {window depth small : ℕ} {c d : Configuration window}
+    (h : TapeAgrees depth c d) (hle : small ≤ depth) : TapeAgrees small c d := by
+  obtain ⟨address, position, scanned, left, right⟩ := h
+  exact ⟨address, position, scanned, fun i hi => left i (hi.trans_le hle),
+    fun i hi => right i (hi.trans_le hle)⟩
+
+private theorem headI_eq_blankPadded (l : List (Fin 2)) : l.headI = (l[0]?).getD 0 := by
+  cases l <;> rfl
+
+private theorem move_tapeAgrees {window depth : ℕ} {c d : Configuration window}
+    (h : TapeAgrees (depth + 1) c d) (symbol : Fin 2) (direction : Dir)
+    (next : Address window) :
+    TapeAgrees depth (writeMove c symbol direction next) (writeMove d symbol direction next) := by
+  obtain ⟨_, position, _, left, right⟩ := h
+  cases direction
+  · refine ⟨rfl, congrArg (fun z : ℤ => z - 1) position, ?_, ?_, ?_⟩
+    · simpa only [writeMove, headI_eq_blankPadded] using left 0 (Nat.zero_lt_succ depth)
+    · intro i hi
+      simpa only [writeMove, List.getElem?_tail] using left (i + 1) (Nat.succ_lt_succ hi)
+    · intro i hi
+      cases i with
+      | zero => rfl
+      | succ i => exact right i (by omega)
+  · refine ⟨rfl, congrArg (fun z : ℤ => z + 1) position, ?_, ?_, ?_⟩
+    · simpa only [writeMove, headI_eq_blankPadded] using right 0 (Nat.zero_lt_succ depth)
+    · intro i hi
+      cases i with
+      | zero => rfl
+      | succ i => exact left i (by omega)
+    · intro i hi
+      simpa only [writeMove, List.getElem?_tail] using right (i + 1) (Nat.succ_lt_succ hi)
+
+/-- One instruction reads one extra cell in the direction of motion. -/
+theorem step_tapeAgrees {window depth : ℕ} {c d : Configuration window}
+    (h : TapeAgrees (depth + 1) c d) : Option.Rel (TapeAgrees depth) (step c) (step d) := by
+  unfold step
+  rw [← h.1, ← h.2.2.1]
+  cases ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => exact .none
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    exact .some (move_tapeAgrees h symbol direction (encodeAddress window next))
+
+/-- An exact run of `n` instructions needs at most `n` extra cells per side.
+Both results are absent, or both are present and agree at the retained depth. -/
+theorem run_tapeAgrees {window depth : ℕ} (n : ℕ) {c d : Configuration window}
+    (h : TapeAgrees (depth + n) c d) : Option.Rel (TapeAgrees depth) (run n c) (run n d) := by
+  induction n generalizing c d with
+  | zero => exact .some h
+  | succ n ih =>
+    have same : Option.Rel (TapeAgrees (depth + n)) (step c) (step d) :=
+      step_tapeAgrees h
+    rw [run, run]
+    generalize step c = nextC at same ⊢
+    generalize step d = nextD at same ⊢
+    cases same with
+    | none => exact .none
+    | some near => exact ih near
+
+/-- A finite tape truncation preserves the address, head position and scanned symbol. -/
+def truncateTape {window : ℕ} (depth : ℕ) (c : Configuration window) : Configuration window :=
+  { c with left := c.left.take depth, right := c.right.take depth }
+
+theorem tapeAgrees_truncate {window : ℕ} (depth : ℕ) (c : Configuration window) :
+    TapeAgrees depth c (truncateTape depth c) := by
+  refine ⟨rfl, rfl, rfl, ?_, ?_⟩
+  · intro i hi
+    simp only [truncateTape, List.getElem?_take_of_lt hi]
+  · intro i hi
+    simp only [truncateTape, List.getElem?_take_of_lt hi]
+
+/-- A verifier can truncate before execution and recover the same finite
+observation, including whether the exact-length run returned a result. -/
+theorem run_truncateTape {window : ℕ} (n depth : ℕ) (c : Configuration window) :
+    Option.Rel (TapeAgrees depth) (run n c) (run n (truncateTape (depth + n) c)) :=
+  run_tapeAgrees n (tapeAgrees_truncate (depth + n) c)
+
+open ConjectureMachines (ListBlank)
+
+private theorem nth_mk_eq_blankPadded (l : List (Fin 2)) (i : ℕ) :
+    (ListBlank.mk l).nth i = (l[i]?).getD 0 := by
+  induction i generalizing l with
+  | zero => exact headI_eq_blankPadded l
+  | succ i ih => simpa only [ListBlank.nth_succ, ListBlank.tail_mk, List.getElem?_tail] using ih l.tail
+
+/-- A one just beyond the observed left cells changes the native configuration,
+at any observation depth and in any prime window. -/
+theorem exists_tapeAgrees_project_ne (window depth : ℕ) :
+    ∃ c d : Configuration window, TapeAgrees depth c d ∧ project c ≠ project d := by
+  let remote : List (Fin 2) := List.replicate depth 0 ++ [1]
+  refine ⟨blank window, { blank window with left := remote }, ?_, ?_⟩
+  · refine ⟨rfl, rfl, rfl, ?_, fun _ _ => rfl⟩
+    intro i hi
+    change (0 : Fin 2) = (remote[i]?).getD 0
+    rw [show remote[i]? = some 0 by
+      unfold remote
+      rw [List.getElem?_append_left (by simpa using hi), List.getElem?_replicate_of_lt hi]]
+    rfl
+  · intro same
+    have observed := congrArg (fun c : Cfg 95 2 => c.tape.left.nth depth) same
+    change (ListBlank.mk ([] : List (Fin 2))).nth depth = (ListBlank.mk remote).nth depth at observed
+    simp only [nth_mk_eq_blankPadded] at observed
+    unfold remote at observed
+    simp at observed
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
