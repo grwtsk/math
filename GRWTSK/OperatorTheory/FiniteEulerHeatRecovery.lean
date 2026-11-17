@@ -550,4 +550,62 @@ theorem euler_double_rate_ne_spectralHeat {J I : Type*} [Fintype J]
   rw [exponent] at strict
   exact (lt_irrefl _) strict
 
+
+/-- On an active slot the logarithmic exposure per unit rate increases
+strictly with the rate. This uses the original Euler factor. -/
+private theorem logExposure_factor_rate_lt {c x y : ℝ}
+    (active : 0 < c) (small : 0 < x) (ordered : x < y) (subunit : c * y < 1) :
+    (-Real.log (1 - c * x)) / x < (-Real.log (1 - c * y)) / y := by
+  have large := small.trans ordered
+  have weight : 0 < x / y := div_pos small large
+  have remaining : 0 < 1 - x / y := sub_pos.mpr ((div_lt_one large).mpr ordered)
+  have endpoints : (1 : ℝ) ≠ 1 - c * y := by nlinarith [mul_pos active large]
+  have concave := strictConcaveOn_log_Ioi.2
+    (show (1 : ℝ) ∈ Set.Ioi 0 by exact Set.mem_Ioi.mpr (by norm_num))
+    (show 1 - c * y ∈ Set.Ioi 0 from sub_pos.mpr subunit)
+    endpoints remaining weight (by ring : 1 - x / y + x / y = 1)
+  change (1 - x / y) * Real.log 1 + (x / y) * Real.log (1 - c * y) <
+    Real.log ((1 - x / y) * 1 + (x / y) * (1 - c * y)) at concave
+  have mix : (1 - x / y) * 1 + (x / y) * (1 - c * y) = 1 - c * x := by
+    field_simp [large.ne']
+    ring
+  rw [mix, Real.log_one, mul_zero, zero_add] at concave
+  apply (div_lt_iff₀ small).mpr
+  calc
+    -Real.log (1 - c * x) < -((x / y) * Real.log (1 - c * y)) := neg_lt_neg concave
+    _ = (-Real.log (1 - c * y)) / y * x := by ring
+
+/-- Any two distinct positive rates have different effective heat times
+when a nonnegative shared Euler schedule has an active dwell. -/
+theorem logExposure_per_rate_lt {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (nonneg : ∀ j, 0 ≤ dwell j) (active : ∃ j, 0 < dwell j)
+    (small : 0 < rates i) (ordered : rates i < rates k)
+    (subunit : ∀ j, dwell j * rates k < 1) :
+    logExposure (fun j m => dwell j * rates m) i / rates i <
+      logExposure (fun j m => dwell j * rates m) k / rates k := by
+  simp only [logExposure, Finset.sum_div]
+  apply Finset.sum_lt_sum
+  · intro j _
+    rcases (nonneg j).eq_or_lt with zero | positive
+    · simp [← zero]
+    · exact (logExposure_factor_rate_lt positive small ordered (subunit j)).le
+  · obtain ⟨j, positive⟩ := active
+    exact ⟨j, Finset.mem_univ _, logExposure_factor_rate_lt positive small ordered (subunit j)⟩
+
+/-- A positive active shared schedule on two distinct positive modes
+cannot use one exact scalar heat time for the original rates. -/
+theorem no_common_clock_of_distinct_rates {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (nonneg : ∀ j, 0 ≤ dwell j) (active : ∃ j, 0 < dwell j)
+    (small : 0 < rates i) (ordered : rates i < rates k)
+    (strict : ∀ j m, dwell j * rates m < 1) (time : ℝ) :
+    ¬ ∀ x, euler (fun j m => dwell j * rates m) x = spectralHeat rates time x := by
+  intro agreement
+  have equal := (euler_fits_clock_iff (fun j m => dwell j * rates m) strict rates time).mp agreement
+  have different := logExposure_per_rate_lt dwell rates i k nonneg active small ordered (fun j => strict j k)
+  rw [equal i, equal k, mul_div_cancel_right₀ _ small.ne',
+    mul_div_cancel_right₀ _ (small.trans ordered).ne'] at different
+  exact (lt_irrefl _) different
+
 end GRWTSK.OperatorTheory.FiniteEulerHeatRecovery

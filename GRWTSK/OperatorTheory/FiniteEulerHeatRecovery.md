@@ -194,3 +194,40 @@ Strict compilation, targeted kernel replay, the 95-slot control and
 the two transitive axiom audits passed on the root Lean and Mathlib
 pins. Fresh import-closure replay, independent review and physical
 HS sensor identification are `NOT_RUN`.
+
+## Distinct positive rates
+
+`logExposure_per_rate_lt` applies to any finite set of shared nonnegative
+dwell times with at least one strictly positive dwell. For two rates
+`0 < x < y`, assume all factors at `y` are positive. For a dwell `c > 0`,
+`1 - c*x` is the convex combination of `1` and `1 - c*y` with weights
+`1-x/y` and `x/y`. Strict concavity of the logarithm gives
+`-log(1-c*x)/x < -log(1-c*y)/y`. Zero dwell contributes equality.
+Summing the inequalities yields strict increase in the effective time
+between the two modes. The existing `euler_fits_clock_iff` would require
+both effective times to equal the proposed scalar time. This proves
+`no_common_clock_of_distinct_rates` under strict factors across the chart.
+
+One slot with dwell `1/4` at rates 2 and 3 gives exactly `1/2` and
+`1/4`, despite both factors being positive. The common-clock criterion
+fails for all real times for this chart. This also tests rates that do
+not satisfy the earlier doubling hypothesis.
+
+The consumer is the existing original-rate clock comparison. A sensor
+application still needs a source-bound shared dwell and rate chart.
+An approximate common clock additionally needs a tolerance comparison
+with the existing modal error bounds. Returning to the continuous Newman
+family needs a source identification and the quadrature and tail estimates.
+The finite forward multiplier uses the negative Newman-time direction in
+`FiniteHeatNewmanNormalization.newman_negative_time_eq_forward_heat`.
+See Rodgers and Tao, [The De Bruijn–Newman constant is non-negative](https://arxiv.org/abs/1801.05914),
+for the backward heat equation in their introduction.
+
+The four local dependencies were rebuilt from pinned main. Strict compilation,
+target kernel replay, the rate-2 and rate-3 controls, and the transitive audit
+of both new public theorems passed. The audit found only `propext`,
+`Classical.choice` and `Quot.sound`. Lean `v4.34.1`, mathlib
+`d13f23b723b8a846827a245b89c10fc7d3f11612`. The checked Lean SHA-256 is
+`298643aa9b787cf8ab99b4d3a6ee60e91b551cfa5b71dc612084cab04a7bfa2f`.
+Full fresh dependency replay, independent review and physical HS source
+identification are `NOT_RUN`.
