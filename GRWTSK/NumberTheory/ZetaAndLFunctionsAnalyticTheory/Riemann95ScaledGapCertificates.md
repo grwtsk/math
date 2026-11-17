@@ -63,3 +63,26 @@ accepted HS record denotes the literal decoded arithmetic slot, followed
 by a proof of certificate supply for the specified infinite ranges.
 
 Verification for this extension is recorded in [issue #1820](https://github.com/grwtsk/math/issues/1820).
+
+## Delaying the certified window itself
+
+Fix a slot, a cutoff, and any nonnegative constant C. Let the window
+selected at index k be k²+d(k), for a natural delay with
+d(k) ≤ C k log²(k+1) beyond the cutoff. Acceptance of that slot at
+every selected window is equivalent to RH. At any sufficiently late
+ordinal window w, take k=floor(sqrt(w))+1. Its square is ahead of w
+by at most 2 floor(sqrt(w))+1. If w≥4, then k≤2 sqrt(w) and
+log(k+1)≤log(w). The delayed window therefore lies within the
+existing defect-scale comparison block with coefficient 2+2C.
+The original checker is used at the delayed window and actual slot.
+
+The control d(k)=k, with cutoff at least 2, yields the same
+equivalence while every chosen window lies strictly between two
+consecutive squares. To use the result for external certificates,
+each proposed slot verdict must be sound for the exact delayed
+argument, and the supplier must cover every selected window on
+the chosen tail.
+
+Pinned strict compilation, target kernel replay, the nonsquare
+control and both transitive axiom audits passed. Fresh full import
+replay and independent review were NOT_RUN.

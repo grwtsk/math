@@ -436,4 +436,92 @@ theorem cryptids_halts_iff_cofinal_log_square_rejection_blocks :
     rw [hreject] at haccept
     cases haccept
 
+
+/-- A forward delay of order k log²(k+1) from each quadratic window
+preserves the original one-slot coverage criterion. The delayed window
+need not be a square. -/
+theorem delayed_square_slot_accepts_iff_cryptids_RH
+    (start : ℕ) (delay : ℕ → ℕ) (slot : Fin 95)
+    {C : ℝ} (hC : 0 ≤ C)
+    (bound : ∀ k ≥ start, (delay k : ℝ) ≤ C * k * Real.log (k + 1 : ℕ) ^ 2) :
+    (∀ k ≥ start, slotAccepts (k ^ 2 + delay k) slot = true) ↔ RiemannHypothesis := by
+  constructor
+  · intro safe
+    let first := max 4 (start ^ 2)
+    let gap (w : ℕ) := (Nat.sqrt w + 1) ^ 2 + delay (Nat.sqrt w + 1) - w
+    have start_le (w : ℕ) (hw : first ≤ w) : start ≤ Nat.sqrt w + 1 :=
+      (Nat.le_sqrt'.mpr ((le_max_right _ _).trans hw)).trans (Nat.le_succ _)
+    have range (w : ℕ) (hw : first ≤ w) :
+        (gap w : ℝ) ≤ (2 + 2 * C) * (1 + defectScale w) := by
+      let s := Nat.sqrt w
+      have large : 4 ≤ w := (le_max_left _ _).trans hw
+      have hs : 2 ≤ s := Nat.le_sqrt'.mpr (by simpa using large)
+      have floor : s ^ 2 ≤ w := Nat.sqrt_le' w
+      have next : w < (s + 1) ^ 2 := Nat.lt_succ_sqrt' w
+      have stepBound : (s + 1) ^ 2 - w ≤ 2 * s + 1 := by
+        have identity : (s + 1) ^ 2 = s ^ 2 + (2 * s + 1) := by ring
+        omega
+      have hsR : (s : ℝ) ≤ Real.sqrt w := by
+        have h : (s : ℝ) ^ 2 ≤ (w : ℝ) := by exact_mod_cast floor
+        simpa [Real.sqrt_sq (by positivity : (0 : ℝ) ≤ s)] using Real.sqrt_le_sqrt h
+      have kR : (↑(s + 1) : ℝ) ≤ 2 * Real.sqrt w := by
+        push_cast
+        have : (2 : ℝ) ≤ s := by exact_mod_cast hs
+        linarith
+      have arg : s + 2 ≤ w := by
+        have : s + 2 ≤ s ^ 2 := by nlinarith
+        omega
+      have logLe : Real.log (s + 1 + 1 : ℕ) ≤ Real.log w :=
+        Real.log_le_log (by positivity) (by exact_mod_cast (show s + 1 + 1 ≤ w by omega))
+      have logNonneg : 0 ≤ Real.log (s + 1 + 1 : ℕ) := Real.log_nonneg (by exact_mod_cast (show 1 ≤ s + 1 + 1 by omega))
+      have squared := pow_le_pow_left₀ logNonneg logLe 2
+      have hDelay : (delay (s + 1) : ℝ) ≤ (2 * C) * defectScale w := by
+        calc
+          _ ≤ C * (↑(s + 1) : ℝ) * Real.log (s + 1 + 1 : ℕ) ^ 2 := bound _ (start_le w hw)
+          _ ≤ C * (2 * Real.sqrt w) * Real.log w ^ 2 :=
+            mul_le_mul (mul_le_mul_of_nonneg_left kR hC) squared (by positivity) (by positivity)
+          _ = _ := by unfold defectScale; ring
+      have split : gap w = (s + 1) ^ 2 - w + delay (s + 1) := by
+        change (s + 1) ^ 2 + delay (s + 1) - w = _
+        omega
+      have hBase : (↑((s + 1) ^ 2 - w : ℕ) : ℝ) ≤ 2 * (1 + defectScale w) :=
+        (Nat.cast_le.mpr stepBound).trans (square_gap_bound (by omega))
+      rw [split, Nat.cast_add]
+      nlinarith only [hBase, hDelay, hC]
+    apply (scaled_gap_safe_slot_iff_cryptids_RH first gap
+      (C := 2 + 2 * C) (by positivity) range).mp
+    intro w hw
+    let k := Nat.sqrt w + 1
+    have addr : w + gap w = k ^ 2 + delay k := by
+      have next : w < k ^ 2 := Nat.lt_succ_sqrt' w
+      change w + (k ^ 2 + delay k - w) = _
+      omega
+    refine ⟨gap w, le_rfl, slot, ?_⟩
+    rw [addr]
+    exact fun bad => (slotAccepts_iff_safe _ _).mp (safe k (start_le w hw))
+      ((counterexample_iff_cryptids _).mp bad)
+  · intro rh k _
+    exact (window_accepts_iff_all_slots_accept _).mp (all_windows_accept_iff_cryptids_RH.mpr rh _) _
+
+/-- The delayed schedule k²+k avoids the square schedule at every
+positive index, while retaining the same RH equivalence on any tail
+starting at or beyond 2. -/
+theorem adjacent_product_window_control (start : ℕ) (late : 2 ≤ start) (slot : Fin 95) :
+    ((∀ k ≥ start, slotAccepts (k ^ 2 + k) slot = true) ↔ RiemannHypothesis) ∧
+    (∀ k ≥ start, ∀ j : ℕ, k ^ 2 + k ≠ j ^ 2) := by
+  constructor
+  · apply delayed_square_slot_accepts_iff_cryptids_RH start id slot (C := 1) (by norm_num)
+    intro k hk
+    have hlog := log_nat_ge_one (show 3 ≤ k + 1 by omega)
+    have square : 1 ≤ Real.log (k + 1 : ℕ) ^ 2 := by nlinarith
+    simpa only [id_eq, one_mul, mul_one] using
+      mul_le_mul_of_nonneg_left square (show (0 : ℝ) ≤ k by positivity)
+  · intro k hk j eq
+    have high : k ^ 2 + k < (k + 1) ^ 2 := by nlinarith
+    by_cases h : j ≤ k
+    · have bound := Nat.pow_le_pow_left h 2
+      omega
+    · have bound := Nat.pow_le_pow_left (show k + 1 ≤ j by omega) 2
+      omega
+
 end GRWTSK.NumberTheory.Riemann95StageCertificates
