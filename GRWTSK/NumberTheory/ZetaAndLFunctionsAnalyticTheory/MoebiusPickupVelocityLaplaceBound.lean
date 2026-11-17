@@ -5,6 +5,7 @@ import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 import Mathlib.MeasureTheory.Integral.ExpDecay
 import Mathlib.Analysis.Fourier.LpSpace
 import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.DirichletLaplaceIdentity
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -262,5 +263,68 @@ theorem signedLaplace_pickupVelocity_line_square_le_of_weakMertens {B σ : ℝ}
   refine ⟨hSq.congr hEq, ?_⟩
   rw [← integral_congr_ae hEq, ← lpTwo_norm_sq_eq_integral F]
   exact fourierLp_dampedPickupVelocity_norm_sq_le_of_weakMertens hB hσ hM
+
+open GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform
+
+private theorem pickupTriangle_integrable_of_weakMertens {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    {z : ℂ} (hz : 0 < z.re) :
+    Integrable (pickupTriangle z)
+      ((volume.restrict (Ioi (0 : ℝ))).prod (volume.restrict (Ioi (0 : ℝ)))) := by
+  let r := z.re / 2
+  have hr : 0 < r := half_pos hz
+  have hV := dampedPickupVelocity_integrable_of_weakMertens hB hr hM
+  rw [dampedPickupVelocity, integrable_indicator_iff measurableSet_Ioi] at hV
+  have hu : IntegrableOn (fun u => Real.exp (-r * u) * |pickupVelocity u|) (Ioi 0) := by
+    simpa only [IntegrableOn, Complex.norm_real, Real.norm_eq_abs, abs_mul,
+      abs_of_pos (Real.exp_pos _)] using hV.norm
+  have ht : IntegrableOn (fun t : ℝ => Real.exp (-r * t)) (Ioi 0) := by
+    simpa only [neg_mul] using exp_neg_integrableOn_Ioi 0 hr
+  apply (ht.mul_prod hu).mono' (pickupTriangle_measurable z).aestronglyMeasurable
+  apply ae_of_all
+  intro p
+  by_cases hp : p ∈ {p : ℝ × ℝ | p.2 ≤ p.1}
+  · rw [pickupTriangle, indicator_of_mem hp]
+    change p.2 ≤ p.1 at hp
+    calc
+      ‖Complex.exp (-z * p.1) * (pickupVelocity p.2 : ℂ)‖ =
+          Real.exp (-z.re * p.1) * |pickupVelocity p.2| := by
+        simp [Complex.norm_exp, Complex.mul_re, Complex.norm_real, Real.norm_eq_abs]
+      _ ≤ Real.exp (-r * p.1) * (Real.exp (-r * p.2) * |pickupVelocity p.2|) := by
+        rw [← mul_assoc, ← Real.exp_add]
+        apply mul_le_mul_of_nonneg_right (Real.exp_le_exp.mpr ?_) (abs_nonneg _)
+        dsimp [r]
+        nlinarith [mul_nonneg hz.le (sub_nonneg.mpr hp)]
+  · rw [pickupTriangle, indicator_of_notMem hp, norm_zero]
+    exact mul_nonneg (Real.exp_pos _).le (mul_nonneg (Real.exp_pos _).le (abs_nonneg _))
+
+/-- Under weak Mertens the exact causal primitive contributes a factor `1/z`
+throughout the positive Laplace half-plane. -/
+theorem signedLaplace_wholePickup_eq_velocity_of_weakMertens {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    {z : ℂ} (hz : 0 < z.re) :
+    signedLaplace wholePickup z = z⁻¹ * signedLaplace pickupVelocity z := by
+  have hs := integral_integral_swap (f := fun t u : ℝ => pickupTriangle z (t, u))
+    (pickupTriangle_integrable_of_weakMertens hB hM hz)
+  change (∫ t in Ioi (0 : ℝ), ∫ u in Ioi (0 : ℝ), pickupTriangle z (t, u)) =
+    (∫ u in Ioi (0 : ℝ), ∫ t in Ioi (0 : ℝ), pickupTriangle z (t, u)) at hs
+  rw [signedLaplace, signedLaplace, ← integral_const_mul]
+  simp_rw [← neg_mul]
+  calc
+    _ = ∫ t in Ioi (0 : ℝ), ∫ u in Ioi (0 : ℝ), pickupTriangle z (t, u) :=
+      setIntegral_congr_fun measurableSet_Ioi (fun t ht => (pickupTriangle_time_integral z t ht).symm)
+    _ = ∫ u in Ioi (0 : ℝ), ∫ t in Ioi (0 : ℝ), pickupTriangle z (t, u) := hs
+    _ = _ := by
+      apply setIntegral_congr_fun measurableSet_Ioi
+      intro u hu
+      have heq : (fun t : ℝ => pickupTriangle z (t, u)) =
+          (Ici u).indicator (fun t => Complex.exp (-z * t) * (pickupVelocity u : ℂ)) := rfl
+      have hi : Ioi (0 : ℝ) ∩ Ici u = Ici u :=
+        Set.inter_eq_right.mpr (fun t ht => show 0 < t from hu.out.trans_le ht.out)
+      change (∫ t in Ioi (0 : ℝ), pickupTriangle z (t, u)) = _
+
+      rw [heq, setIntegral_indicator measurableSet_Ici, hi, integral_Ici_eq_integral_Ioi,
+        integral_mul_const, integral_exp_mul_complex_Ioi (a := -z) (by simp; linarith)]
+      ring
 
 end GRWTSK.NumberTheory.Moebius
