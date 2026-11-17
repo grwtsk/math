@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.CompletedQuotientSource
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.CriticalStripRealAxisMellin
 
 /-!
 # Odd-dimensional chiral determinants and the actual xi strip target
@@ -174,5 +175,47 @@ theorem no_odd_chiral_asymptotically_even_strip_limit {d : ℕ → ℕ}
     nonzero (limit z hz) (limit (-z) negMem)
   have conflict := tendsto_nhds_unique h (ratios z hz)
   norm_num at conflict
+
+
+/-- The centered parameter zero represents the actual real zeta point
+one half. The real-axis Mellin sign excludes an origin zero of xi. -/
+theorem spectralSource_zero_ne_zero : spectralSource 0 ≠ 0 := by
+  intro zero
+  have hx : xi (1 / 2 : ℂ) = 0 := by
+    simpa only [spectralSource, mul_zero, sub_zero] using zero
+  rw [xi_eq_completed _ (by norm_num) (by norm_num)] at hx
+  have factor : (1 / 2 : ℂ) * (1 / 2) * (1 / 2 - 1) ≠ 0 := by norm_num
+  have completed := (mul_eq_zero.mp hx).resolve_left factor
+  have hz : riemannZeta (1 / 2 : ℂ) = 0 := by
+    rw [riemannZeta_def_of_ne_zero (by norm_num : (1 / 2 : ℂ) ≠ 0), completed, zero_div]
+  have negative :=
+    GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.riemannZeta_re_neg_on_real_critical_interval
+      (s := (1 / 2 : ℝ)) (by norm_num) (by norm_num)
+  have realZero : (riemannZeta (1 / 2 : ℂ)).re = 0 := by rw [hz, Complex.zero_re]
+  have same : (((1 / 2 : ℝ) : ℂ)) = (1 / 2 : ℂ) := by norm_num
+  rw [same, realZero] at negative
+  exact (lt_irrefl _) negative
+
+/-- An odd chiral pencil has a strictly positive central error for every
+finite complex normalization value, with no parity requirement on it. -/
+theorem center_error_of_odd_chiral {d : ℕ} (odd : Odd d)
+    (H J : Matrix (Fin d) (Fin d) ℂ) (invertible : J.det ≠ 0)
+    (chiral : J * H = -(H * J)) (value : ℂ) :
+    ‖value * pencil H 0 - spectralSource 0‖ = ‖spectralSource 0‖ ∧
+      0 < ‖spectralSource 0‖ := by
+  refine ⟨?_, norm_pos_iff.mpr spectralSource_zero_ne_zero⟩
+  rw [pencil_zero_of_chiral odd H J invertible chiral, mul_zero, zero_sub, norm_neg]
+
+/-- Pointwise convergence at the center already excludes recurrent odd
+chiral dimensions when the normalization is finite there. -/
+theorem eventually_not_odd_of_center_limit {d : ℕ → ℕ}
+    (H J : (n : ℕ) → Matrix (Fin (d n)) (Fin (d n)) ℂ)
+    (chiral : ∀ n, Odd (d n) → (J n).det ≠ 0 ∧ J n * H n = -(H n * J n))
+    (u : ℕ → ℂ → ℂ)
+    (limit : Tendsto (fun n => u n 0 * pencil (H n) 0) atTop (𝓝 (spectralSource 0))) :
+    ∀ᶠ n in atTop, ¬ Odd (d n) := by
+  filter_upwards [limit.eventually_ne spectralSource_zero_ne_zero] with n nonzero odd
+  have laws := chiral n odd
+  exact nonzero (by rw [pencil_zero_of_chiral odd (H n) (J n) laws.1 laws.2, mul_zero])
 
 end GRWTSK.NumberTheory.Zeta.XiOddChiralObstruction
