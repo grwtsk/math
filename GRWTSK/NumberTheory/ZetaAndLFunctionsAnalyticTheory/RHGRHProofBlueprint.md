@@ -235,7 +235,7 @@ frequency and evaluates the arithmetic term at `χ⁻¹`. For real inputs,
 [the inverse-χ arithmetic comparison](WeilPrimitiveInverseOrbitStages.lean)
 returns to the same original primitive value. Analytic novelty and
 independent review of the construction are unassessed.
-[Counting theorem](https://arxiv.org/abs/2005.02989v2) ·
+[Counting theorem](https://arxiv.org/abs/2005.02989v1) ·
 [Fiorilli–Miller, equation (2.2)](https://web.williams.edu/Mathematics/sjmiller/public_html/math/papers/DirichletZeros_DFandSJM_90.pdf) ·
 [Suzuki, discussion of Yoshida's odd zeta criterion](https://arxiv.org/abs/2606.09096v3).
 
@@ -256,7 +256,11 @@ A transitive axiom audit of their main declarations found
 as an explicit hypothesis. Its supplier
 `primitive_hasSum_canonical_arithmetic` in
 [WeilGammaPhysicalReturn](WeilGammaPhysicalReturn.lean) remains a separate
-source candidate with a failing upstream contour import build.
+source candidate. At the source revision containing the reduction, its
+79-module import build stopped in
+[`ExponentialLoopIndex`](../../FunctionsOfAComplexVariable/ExponentialLoopIndex.lean)
+at lines 50, 89, 91 and 198. The formula declaration's own elaboration,
+kernel replay, and transitive axiom audit are **NOT_RUN**.
 
 ### Narrower external zero-free ceilings
 
