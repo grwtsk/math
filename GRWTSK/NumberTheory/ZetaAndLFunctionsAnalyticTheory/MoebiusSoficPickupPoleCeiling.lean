@@ -298,4 +298,29 @@ theorem tendsto_pickup_variance_at_weighted_pole_saturation
       linarith [sq_pos_of_pos hε]
     simpa only [abs_of_pos hε] using (sq_lt_sq.mp hsq)
 
+/-- At equality in the weighted pole bound, every fixed positive mask
+heat reaches its pole-adjusted deviation ceiling on the same scales. -/
+theorem tendsto_signed_mask_at_weighted_pole_saturation
+    {s t u A Aₛ Aₜ w : ℝ} (hs : 0 < s) (ht : 0 < t) (hu : 0 < u)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    (hw₀ : 0 ≤ w) (hw₁ : w ≤ 1) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hₛ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ Aₛ + ε)
+    (hₜ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ Aₜ + ε)
+    (heq : w * Aₛ + (1 - w) * Aₜ - w * (1 - w) * (heatedLimit s - heatedLimit t) ^ 2 =
+      2 * (∑' ρ, positiveCriticalPoleSquare ρ)) :
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight u T) (heatMaskCoeff T) -
+        pickupDiagonal T) / T) l
+      (𝓝 (settledHeatedPickup u - (w * heatedLimit s + (1 - w) * heatedLimit t) ^ 2 -
+        2 * (∑' ρ, positiveCriticalPoleSquare ρ))) := by
+  obtain ⟨hvar, hmean⟩ := tendsto_pickup_variance_at_weighted_pole_saturation
+    hs ht hζ hA hG hmajorant hbudget hw₀ hw₁ hl hₛ hₜ heq
+  have h := (tendsto_normalized_heatMaskDeviation_add_measured_variance_and_mean_sq hu).mono_left hl
+  exact ((h.sub (hmean.pow 2)).sub hvar).congr'
+    (Eventually.of_forall fun T => by ring)
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
