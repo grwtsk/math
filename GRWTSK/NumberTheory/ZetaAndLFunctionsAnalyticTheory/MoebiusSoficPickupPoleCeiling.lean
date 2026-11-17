@@ -355,4 +355,49 @@ theorem eventually_residualEnergy_div_ge_poleSeries_add_stationary_cost
   change S + (m - heatedLimit u) ^ 2 - ε ≤ residualEnergy u T / T
   linarith
 
+/-- The original signed mask reaches its pole-adjusted ceiling exactly
+when the actual normalized residual reaches its pole and stationary floor. -/
+theorem tendsto_signed_mask_ceiling_iff_tendsto_residual_pole_floor
+    {s u A : ℝ} (hs : 0 < s) (hu : 0 < u)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    {l : Filter ℝ} (hl : l ≤ atTop) :
+    let m := (2 / riemannZeta (1 / 2 : ℂ)).re
+    let S := 2 * (∑' ρ, positiveCriticalPoleSquare ρ)
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight u T) (heatMaskCoeff T) -
+        pickupDiagonal T) / T) l (𝓝 (settledHeatedPickup u - m ^ 2 - S)) ↔
+      Tendsto (fun T : ℝ => residualEnergy u T / T) l (𝓝 (S + (m - heatedLimit u) ^ 2)) := by
+  let m := (2 / riemannZeta (1 / 2 : ℂ)).re
+  let S := 2 * (∑' ρ, positiveCriticalPoleSquare ρ)
+  let D (T : ℝ) := (weightedPickupDeviation T Finset.univ (heatMaskWeight u T)
+    (heatMaskCoeff T) - pickupDiagonal T) / T
+  let E (T : ℝ) := residualEnergy u T / T
+  let B := settledHeatedPickup u - m ^ 2 - S
+  let F := S + (m - heatedLimit u) ^ 2
+  change Tendsto D l (𝓝 B) ↔ Tendsto E l (𝓝 F)
+  have hbudget₁ : ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + 1) * T ^ (1 : ℕ) + 0 := by
+    simpa only [pow_one, add_zero] using hbudget 1 one_pos
+  obtain ⟨C, hC, hE⟩ := global_residualEnergy_poly_of_affine_envelope hG
+    (add_nonneg hA zero_le_one) (le_refl (0 : ℝ)) hmajorant hbudget₁
+  have hm := (tendsto_pickupHorizonMean_at_stationary hs hζ hC
+    (by simpa only [pow_one] using hE)).mono_left hl
+  have hsum : Tendsto (fun T => D T + E T) l (𝓝 (B + F)) := by
+    rw [show B + F = settledHeatedPickup u + heatedLimit u ^ 2 - 2 * heatedLimit u * m
+      by dsimp [B, F]; ring]
+    simpa only [D, E, add_div] using
+      tendsto_normalized_heatMaskDeviation_add_residual_of_source_mean hu hl hm
+  constructor
+  · intro hD
+    have h := hsum.sub hD
+    rw [show B + F - B = F by ring] at h
+    exact h.congr' (Eventually.of_forall fun T => by show D T + E T - D T = E T; ring)
+  · intro hE
+    have h := hsum.sub hE
+    rw [add_sub_cancel_right] at h
+    exact h.congr' (Eventually.of_forall fun T => add_sub_cancel_right (D T) (E T))
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
