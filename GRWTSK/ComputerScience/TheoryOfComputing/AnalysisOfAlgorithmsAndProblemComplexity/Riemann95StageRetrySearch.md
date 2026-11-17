@@ -167,3 +167,45 @@ The transitive audit of the eight added public declarations reported only
 import closure and independent review of the extension are `NOT_RUN`.
 
 [Coordination and exact evidence](https://github.com/grwtsk/math/issues/1823)
+
+## Incremental probe controller under pauses
+
+`probeTick` checks one candidate code. A failed probe increments the
+cursor while retaining the original root, tape, and cumulative native
+instruction count. A successful probe commits the same typed receipt
+as the existing stage runner and resets the cursor at its successor.
+The two runners use the same receipt application.
+
+At each live stage with first successful code `k`, the first `k`
+completed probes leave it live with cursors 1 through `k`. Probe
+`k+1` commits. `probeClock n` accumulates these budgets through the
+first `n` stage decisions. Induction on stages proves
+`probeRun_at_clock`, equality with the original stage runner at every
+committed boundary, including the exact native terminal configuration.
+
+For any Boolean schedule, `scheduledProbeRun_eq` erases paused ticks.
+The completed-probe count begins at zero and each tick adds zero or
+one. If it reaches `probeClock n` and the strict prefix below `n` is
+safe, `scheduledProbeRun_visits` yields a live visit to stage `n`
+with cursor zero. If `m` is the first bad stage,
+`scheduledProbeRun_first_bad` identifies one native terminal receipt
+at stage `m`. At every tick the run is in that exact halted state
+precisely when the completed-probe count is at least
+`probeClock (m+1)`. Earlier offsets within stage `m` are live.
+Halting persists, so no earlier time before entry at `m` can have
+been halted. The always-paused schedule stays at the original
+bootstrap forever, regardless of the number of elapsed ticks.
+
+```text
+least successful code → exact stage probe budget → cumulative boundary clock
+completed-probe count ≥ boundary clock → native stage visit or terminal receipt
+unbounded completed probes → exact native halting equivalence
+deployed pause and heat gates → prove probe completion and cursor persistence [open]
+```
+
+This clock counts completed verifier calls, whose finite native replays
+can have different lengths. It gives no wall-clock estimate. Pinned
+compilation with `--trust=0` and warnings as errors, target kernel
+replay, boundary controls, and the transitive theorem audit passed.
+Fresh replay of the full import closure, independent review, wall-clock
+performance, and HS runtime parity are `NOT_RUN`.

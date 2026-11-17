@@ -343,19 +343,21 @@ inductive RunState where
   | live (active : Active)
   | halted (stopped : Stopped)
 
+private def commitReceipt (active : Active) (receipt : Receipt active.root) : RunState :=
+  match receipt with
+  | .completed next steps safe successor padding positive trace =>
+    .live ⟨next, active.spent + steps,
+      Receipt.from_blank (.completed next steps safe successor padding positive trace)
+        active.spent active.reached⟩
+  | .counterexample finish steps bad trace terminal =>
+    have preserved := Receipt.from_blank (.counterexample finish steps bad trace terminal)
+      active.spent active.reached
+    .halted ⟨active.root.stage, finish, active.spent + steps, bad, preserved.1, preserved.2⟩
+
 /-- Run one complete native stage or keep an already witnessed stop. -/
 def tick : RunState → RunState
   | .halted stopped => .halted stopped
-  | .live active =>
-    match resolve active.root with
-    | .completed next steps safe successor padding positive trace =>
-      .live ⟨next, active.spent + steps,
-        Receipt.from_blank (.completed next steps safe successor padding positive trace)
-          active.spent active.reached⟩
-    | .counterexample finish steps bad trace terminal =>
-      have preserved := Receipt.from_blank (.counterexample finish steps bad trace terminal)
-        active.spent active.reached
-      .halted ⟨active.root.stage, finish, active.spent + steps, bad, preserved.1, preserved.2⟩
+  | .live active => commitReceipt active (resolve active.root)
 
 def run : ℕ → RunState
   | 0 => .live ⟨firstRoot, 3634, bootstrap_to_firstRoot⟩
@@ -405,5 +407,199 @@ theorem halts_iff_native : Halts ↔ ConjectureMachines.Halts machine :=
 
 theorem halts_iff_not_RH : Halts ↔ ¬ RiemannHypothesis :=
   halts_iff_native.trans ConjectureMachines.Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis
+
+
+/-! ## One completed probe per enabled scheduler tick -/
+
+/-- An inconclusive probe retains the entire committed native checkpoint. -/
+inductive ProbeState where
+  | live (active : Active) (code : ℕ)
+  | halted (stopped : Stopped)
+
+def ProbeState.start : RunState → ProbeState
+  | .live active => .live active 0
+  | .halted stopped => .halted stopped
+
+def probeTick : ProbeState → ProbeState
+  | .halted stopped => .halted stopped
+  | .live active code =>
+    match probe active.root code with
+    | none => .live active (code + 1)
+    | some receipt => ProbeState.start (commitReceipt active receipt)
+
+def advanceProbes (initial : ProbeState) : ℕ → ProbeState
+  | 0 => initial
+  | n + 1 => probeTick (advanceProbes initial n)
+
+theorem advanceProbes_add (initial : ProbeState) (n m : ℕ) :
+    advanceProbes initial (n + m) = advanceProbes (advanceProbes initial n) m := by
+  induction m with
+  | zero => rfl
+  | succ m ih => exact congrArg probeTick ih
+
+theorem advanceProbes_before_commit (active : Active) (n : ℕ)
+    (before : n ≤ firstSuccessfulCode active.root) :
+    advanceProbes (.live active 0) n = .live active n := by
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+    rw [advanceProbes, ih (by omega), probeTick,
+      probe_eq_none_of_lt_firstSuccessfulCode active.root (by omega)]
+
+def probeBudget : RunState → ℕ
+  | .halted _ => 0
+  | .live active => firstSuccessfulCode active.root + 1
+
+theorem advanceProbes_commit (state : RunState) :
+    advanceProbes (ProbeState.start state) (probeBudget state) =
+      ProbeState.start (tick state) := by
+  cases state with
+  | halted _ => rfl
+  | live active =>
+    change advanceProbes (.live active 0) (firstSuccessfulCode active.root + 1) = _
+    rw [advanceProbes, advanceProbes_before_commit active _ (Nat.le_refl _),
+      probeTick, probe_firstSuccessfulCode]
+    rfl
+
+/-- The cumulative number of completed probes at each committed boundary. -/
+def probeClock : ℕ → ℕ
+  | 0 => 0
+  | n + 1 => probeClock n + probeBudget (run n)
+
+def probeRun (n : ℕ) : ProbeState :=
+  advanceProbes (ProbeState.start (run 0)) n
+
+theorem probeRun_at_clock (n : ℕ) :
+    probeRun (probeClock n) = ProbeState.start (run n) := by
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+    unfold probeRun at ih ⊢
+    rw [probeClock, advanceProbes_add, ih, advanceProbes_commit, run]
+
+theorem probeRun_at_live_offset {n : ℕ} {active : Active} (live : run n = .live active)
+    (offset : ℕ) (before : offset ≤ firstSuccessfulCode active.root) :
+    probeRun (probeClock n + offset) = .live active offset := by
+  unfold probeRun
+  rw [advanceProbes_add, ← probeRun, probeRun_at_clock, live]
+  exact advanceProbes_before_commit active offset before
+
+/-- A false entry represents a paused tick, with the entire probe state held. -/
+def completedProbes (enabled : ℕ → Bool) : ℕ → ℕ
+  | 0 => 0
+  | t + 1 => completedProbes enabled t + if enabled t then 1 else 0
+
+def scheduledProbeRun (enabled : ℕ → Bool) : ℕ → ProbeState
+  | 0 => ProbeState.start (run 0)
+  | t + 1 =>
+    if enabled t then probeTick (scheduledProbeRun enabled t) else scheduledProbeRun enabled t
+
+theorem scheduledProbeRun_eq (enabled : ℕ → Bool) (t : ℕ) :
+    scheduledProbeRun enabled t = probeRun (completedProbes enabled t) := by
+  induction t with
+  | zero => rfl
+  | succ t ih =>
+    cases h : enabled t <;> simp [scheduledProbeRun, completedProbes, ih, h, probeRun, advanceProbes]
+
+private theorem completedProbes_hits (enabled : ℕ → Bool) (t n : ℕ)
+    (enough : n ≤ completedProbes enabled t) :
+    ∃ s ≤ t, completedProbes enabled s = n := by
+  induction t with
+  | zero =>
+    have zero : n = 0 := Nat.eq_zero_of_le_zero enough
+    exact ⟨0, le_rfl, zero.symm⟩
+  | succ t ih =>
+    by_cases earlier : n ≤ completedProbes enabled t
+    · obtain ⟨s, hs, exactCount⟩ := ih earlier
+      exact ⟨s, hs.trans (Nat.le_succ _), exactCount⟩
+    · refine ⟨t + 1, le_rfl, ?_⟩
+      cases h : enabled t <;> simp [completedProbes, h] at enough ⊢ <;> omega
+
+/-- A safe prefix enters its next native stage once enough enabled ticks
+have completed, even when pauses are placed arbitrarily. -/
+theorem scheduledProbeRun_visits (enabled : ℕ → Bool) {n t : ℕ}
+    (safe : SafePrefix n) (enough : probeClock n ≤ completedProbes enabled t) :
+    ∃ s ≤ t, ∃ active, scheduledProbeRun enabled s = .live active 0 ∧ active.root.stage = n := by
+  obtain ⟨s, hs, clock⟩ := completedProbes_hits enabled t (probeClock n) enough
+  obtain ⟨active, live, index⟩ := live_at_safe_prefix n safe
+  refine ⟨s, hs, active, ?_, index⟩
+  rw [scheduledProbeRun_eq, clock, probeRun_at_clock, live]
+  rfl
+
+/-- An unbounded number of completed probes suffices for the native
+halting equivalence under arbitrary pauses. -/
+theorem scheduledProbeRun_halts_iff_not_RH (enabled : ℕ → Bool)
+    (progress : ∀ n, ∃ t, n ≤ completedProbes enabled t) :
+    (∃ t stopped, scheduledProbeRun enabled t = .halted stopped) ↔ ¬ RiemannHypothesis := by
+  constructor
+  · rintro ⟨_, stopped, _⟩
+    exact halts_iff_not_RH.mp (halts_iff_witness.mpr ⟨stopped.stage, stopped.witness⟩)
+  · intro bad
+    obtain ⟨n, stopped, halt⟩ := halts_iff_not_RH.mpr bad
+    obtain ⟨t, enough⟩ := progress (probeClock n)
+    obtain ⟨s, _, clock⟩ := completedProbes_hits enabled t (probeClock n) enough
+    refine ⟨s, stopped, ?_⟩
+    rw [scheduledProbeRun_eq, clock, probeRun_at_clock, halt]
+    rfl
+
+theorem scheduledProbeRun_always_paused (t : ℕ) :
+    scheduledProbeRun (fun _ => false) t = ProbeState.start (run 0) := by
+  induction t with
+  | zero => rfl
+  | succ t ih => simpa only [scheduledProbeRun, Bool.false_eq_true, ite_false] using ih
+
+private theorem advanceProbes_halted (stopped : Stopped) (n : ℕ) :
+    advanceProbes (.halted stopped) n = .halted stopped := by
+  induction n with
+  | zero => rfl
+  | succ n ih => rw [advanceProbes, ih]; rfl
+
+private theorem probeRun_halted_later {t u : ℕ} {stopped : Stopped}
+    (halt : probeRun t = .halted stopped) (later : t ≤ u) :
+    probeRun u = .halted stopped := by
+  obtain ⟨delta, rfl⟩ := Nat.exists_eq_add_of_le later
+  unfold probeRun at halt ⊢
+  rw [advanceProbes_add, halt, advanceProbes_halted]
+
+/-- The first bad native stage determines the exact completed-probe
+threshold for halting, including the same terminal receipt. -/
+theorem scheduledProbeRun_first_bad (enabled : ℕ → Bool) {m : ℕ}
+    (safe : SafePrefix m) (bad : Riemann120.ShuniaCounterexample (m + 2)) :
+    ∃ stopped, stopped.stage = m ∧ ∀ t,
+      scheduledProbeRun enabled t = .halted stopped ↔
+        probeClock (m + 1) ≤ completedProbes enabled t := by
+  obtain ⟨active, live, index⟩ := live_at_safe_prefix m safe
+  have atBad : Bad active.root := by simpa only [Bad, index] using bad
+  have stops : ∃ stopped, run (m + 1) = .halted stopped ∧ stopped.stage = m := by
+    cases decision : resolve active.root with
+    | completed next steps good successor padding positive trace => exact (good atBad).elim
+    | counterexample finish steps witness trace terminal =>
+      rw [run, live, tick, decision]
+      exact ⟨_, rfl, index⟩
+  obtain ⟨stopped, halt, stage⟩ := stops
+  have boundary : probeRun (probeClock (m + 1)) = .halted stopped := by
+    rw [probeRun_at_clock, halt]
+    rfl
+  have length : probeClock (m + 1) = probeClock m + firstSuccessfulCode active.root + 1 := by
+    simp only [probeClock, live, probeBudget, Nat.add_assoc]
+  refine ⟨stopped, stage, ?_⟩
+  intro t
+  rw [scheduledProbeRun_eq]
+  constructor
+  · intro done
+    by_contra early
+    let time := completedProbes enabled t
+    change ¬ probeClock (m + 1) ≤ time at early
+    change probeRun time = .halted stopped at done
+    by_cases before : time ≤ probeClock m
+    · have later := probeRun_halted_later done before
+      rw [probeRun_at_clock, live] at later
+      cases later
+    · have hs : time = probeClock m + (time - probeClock m) := by omega
+      have offset : time - probeClock m ≤ firstSuccessfulCode active.root := by omega
+      have here := probeRun_at_live_offset live (time - probeClock m) offset
+      rw [← hs, done] at here
+      cases here
+  · exact probeRun_halted_later boundary
 
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch
