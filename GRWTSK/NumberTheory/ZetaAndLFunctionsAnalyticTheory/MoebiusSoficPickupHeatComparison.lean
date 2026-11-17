@@ -1468,4 +1468,286 @@ theorem pickup_mean_and_variance_limits_at_tangent_allowances
     pickup_weighted_mean_and_variance_limits_of_saturated_allowances
       hs ht hw₀ hw₁ hl hA hB hweight
 
+
+private theorem mask_exp_gap_le {q x d : ℝ} (hq : 0 < q) (hqx : q ≤ x) (hd : 0 ≤ d) :
+    1 - Real.exp (-d * x) ≤ x / q * (1 - Real.exp (-d * q)) := by
+  let f (u : ℝ) := x * (1 - Real.exp (-u * q)) - q * (1 - Real.exp (-u * x))
+  have hder (u : ℝ) :
+      HasDerivAt f (x * q * (Real.exp (-u * q) - Real.exp (-u * x))) u := by
+    have aux (a : ℝ) : HasDerivAt (fun v : ℝ => Real.exp (-v * a))
+        (Real.exp (-u * a) * (-1 * a)) u :=
+      (((hasDerivAt_id u).neg).mul_const a).exp
+    convert (((aux q).const_sub 1).const_mul x).sub (((aux x).const_sub 1).const_mul q) using 1
+    ring
+  have hm : MonotoneOn f (Ici 0) := by
+    apply monotoneOn_of_deriv_nonneg (convex_Ici 0)
+    · exact fun u _ => (hder u).continuousAt.continuousWithinAt
+    · exact fun u _ => (hder u).differentiableAt.differentiableWithinAt
+    · intro u hu
+      have hu' : 0 ≤ u := interior_subset hu
+      rw [(hder u).deriv]
+      exact mul_nonneg (mul_nonneg (hq.le.trans hqx) hq.le)
+        (sub_nonneg.mpr (Real.exp_le_exp.mpr (by nlinarith [mul_nonneg hu' (sub_nonneg.mpr hqx)])))
+  have hf := hm (show (0 : ℝ) ∈ Ici 0 from (le_refl (0 : ℝ))) (show d ∈ Ici 0 from hd) hd
+  have hf0 : f 0 = 0 := by simp [f]
+  rw [hf0] at hf
+  have h := (le_div_iff₀ hq).2 (by dsimp [f] at hf; linarith :
+    (1 - Real.exp (-d * x)) * q ≤ x * (1 - Real.exp (-d * q)))
+  rwa [mul_div_right_comm] at h
+
+private theorem mask_exp_weight_tail {q t x s d : ℝ} (hq : 0 < q) (hqt : q ≤ t)
+    (htx : t ≤ x) (hs : 2 ≤ s) (hd : 0 < d) :
+    Real.exp (-s * x) * (1 - Real.exp (-d * x)) ≤
+      Real.exp (-x) * (Real.exp (-1) / q * Real.exp (-(s - 2) * t) *
+        (1 - Real.exp (-d * q))) := by
+  have hgap : 0 ≤ 1 - Real.exp (-d * q) :=
+    sub_nonneg.mpr (Real.exp_le_one_iff.mpr (by nlinarith))
+  have hx : 0 ≤ x := hq.le.trans (hqt.trans htx)
+  have he : Real.exp (-(s - 2) * x) ≤ Real.exp (-(s - 2) * t) :=
+    Real.exp_le_exp.mpr (by nlinarith [mul_nonneg (sub_nonneg.mpr hs) (sub_nonneg.mpr htx)])
+  calc
+    _ ≤ Real.exp (-s * x) * (x / q * (1 - Real.exp (-d * q))) :=
+      mul_le_mul_of_nonneg_left (mask_exp_gap_le hq (hqt.trans htx) hd.le) (Real.exp_nonneg _)
+    _ = Real.exp (-x) * ((x * Real.exp (-x)) / q * Real.exp (-(s - 2) * x) *
+          (1 - Real.exp (-d * q))) := by
+      rw [show -s * x = -x + -x + -(s - 2) * x by ring, Real.exp_add, Real.exp_add]
+      ring
+    _ ≤ _ := by
+      gcongr
+      exact Real.mul_exp_neg_le_exp_neg_one x
+
+private theorem mask_gram_two_deficit (T : ℝ) (hT : 0 ≤ T) :
+    |pickupResponseGram T 1 2 - (8 * (Real.sqrt 2)⁻¹ / 2) * T| ≤ 16 := by
+  have hresp (n : ℕ) (hn : 1 ≤ n) (u : ℝ) :
+      0 ≤ settled n - pickupResponse n u ∧
+        settled n - pickupResponse n u ≤ 2 * Real.exp (-u / 2) := by
+    refine ⟨sub_nonneg.mpr (response_le_settled n u), ?_⟩
+    have hnpos : 0 < (n : ℝ) := by exact_mod_cast (show 0 < n by omega)
+    have hr : (Real.sqrt (n : ℝ))⁻¹ = Real.exp (-Real.log (n : ℝ) / 2) := by
+      rw [neg_div, Real.exp_neg, Real.exp_half, Real.exp_log hnpos]
+    unfold pickupResponse settled
+    split_ifs with h
+    · linarith
+    · rw [sub_zero, hr]
+      exact mul_le_mul_of_nonneg_left
+        (Real.exp_le_exp.mpr (by linarith [lt_of_not_ge h])) (by norm_num)
+  let f (u : ℝ) := pickupResponse 1 u * pickupResponse 2 u
+  let L := settled 1 * settled 2
+  have hbound (u : ℝ) : 0 ≤ L - f u ∧ L - f u ≤ 8 * Real.exp (-u / 2) := by
+    have h₁ := hresp 1 (by decide) u
+    have h₂ := hresp 2 (by decide) u
+    have h₃ := response_bounds (n := 1) (by decide) u
+    have h₄ := settled_bounds 2
+    have he := Real.exp_nonneg (-u / 2)
+    dsimp [L, f]
+    rw [show settled 1 * settled 2 - pickupResponse 1 u * pickupResponse 2 u =
+      (settled 1 - pickupResponse 1 u) * settled 2 +
+        pickupResponse 1 u * (settled 2 - pickupResponse 2 u) by ring]
+    constructor
+    · exact add_nonneg (mul_nonneg h₁.1 h₄.1) (mul_nonneg h₃.1 h₂.1)
+    · nlinarith [mul_le_mul h₁.2 h₄.2 h₄.1 (by positivity : 0 ≤ 2 * Real.exp (-u / 2)),
+        mul_le_mul h₃.2 h₂.2 h₂.1 (by norm_num : (0 : ℝ) ≤ 2)]
+  have hcont : Continuous f := (pickupResponse_continuous (n := 1) (by decide)).mul
+    (pickupResponse_continuous (n := 2) (by decide))
+  have hi : IntervalIntegrable (fun u => L - f u) volume 0 T :=
+    (continuous_const.sub hcont).intervalIntegrable 0 T
+  have hj : IntervalIntegrable (fun u : ℝ => 8 * Real.exp (-u / 2)) volume 0 T :=
+    (by fun_prop : Continuous (fun u : ℝ => 8 * Real.exp (-u / 2))).intervalIntegrable 0 T
+  have hlow := intervalIntegral.integral_nonneg (μ := volume) hT (fun u _ => (hbound u).1)
+  have hhigh := intervalIntegral.integral_mono_on hT hi hj (fun u _ => (hbound u).2)
+  have hval : (∫ u in (0 : ℝ)..T, 8 * Real.exp (-u / 2)) ≤ 16 := by
+    rw [intervalIntegral.integral_const_mul]
+    have hex : (∫ u in (0 : ℝ)..T, Real.exp (-u / 2)) = 2 * (1 - Real.exp (-T / 2)) := by
+      have hder (u : ℝ) : HasDerivAt (fun v : ℝ => -2 * Real.exp (-v / 2))
+          (Real.exp (-u / 2)) u := by
+        have hf : HasDerivAt (fun v : ℝ => -v / 2) (-1 / 2) u :=
+          ((hasDerivAt_id u).neg).div_const 2
+        convert (hf.exp.const_mul (-2)) using 1
+        ring
+      rw [intervalIntegral.integral_eq_sub_of_hasDerivAt (fun u _ => hder u)]
+      · simp
+        ring
+      · exact (by fun_prop : Continuous (fun u : ℝ => Real.exp (-u / 2))).intervalIntegrable 0 T
+    rw [hex]
+    linarith [Real.exp_nonneg (-T / 2)]
+  have hL : L = 8 * (Real.sqrt 2)⁻¹ / 2 := by norm_num [L, settled]; ring
+  rw [intervalIntegral.integral_sub (continuous_const.intervalIntegrable 0 T)
+    (hcont.intervalIntegrable 0 T), intervalIntegral.integral_const, sub_zero, smul_eq_mul,
+    hL] at hlow hhigh
+  change 0 ≤ T * _ - pickupResponseGram T 1 2 at hlow
+  change T * _ - pickupResponseGram T 1 2 ≤ _ at hhigh
+  rw [abs_le]
+  constructor <;> nlinarith
+
+/-- Uniform finite-horizon shift of the original signed mask, with the
+literal cutoff and the two orientations of the leading pair. -/
+theorem abs_normalized_heatMaskDeviation_shift_sub_prime_two_le
+    {s T d : ℝ} (hs : 2 ≤ s) (hT : Real.log 2 ≤ T) (hd : 0 < d) :
+    |(weightedPickupDeviation T Finset.univ (heatMaskWeight (s + d) T) (heatMaskCoeff T) -
+      weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T)) /
+        (T * Real.exp (-s * Real.log 2 ^ 2) * (1 - Real.exp (-d * Real.log 2 ^ 2))) -
+      8 * (Real.sqrt 2)⁻¹| ≤
+      32 / T + 4 * heatedAbsMass 1 ^ 2 * (Real.exp (-1) / Real.log 2 ^ 2) *
+        Real.exp (2 * Real.log 3 ^ 2 - s * (Real.log 3 ^ 2 - Real.log 2 ^ 2)) := by
+  classical
+  let q := Real.log 2 ^ 2
+  let r := Real.log 3 ^ 2
+  let g := 1 - Real.exp (-d * q)
+  let W := Real.exp (-s * q) * g
+  let K := Real.exp (-1) / q * Real.exp (-(s - 2) * r) * g
+  let I := pickupIndex T
+  let F (m n : ℕ) := pickupPairTerm T (heatedCoeff (s + d)) m n -
+    pickupPairTerm T (heatedCoeff s) m n
+  let a (m : ℕ) := |heatedCoeff 1 m|
+  have hlog2 : 0 < Real.log 2 := Real.log_pos (by norm_num)
+  have hq : 0 < q := sq_pos_of_pos hlog2
+  have hqr : q ≤ r := pow_le_pow_left₀ hlog2.le
+    (Real.log_le_log (by norm_num) (by norm_num)) 2
+  have hTp : 0 < T := hlog2.trans_le hT
+  have hg : 0 < g := sub_pos.mpr (Real.exp_lt_one_iff.mpr (by dsimp [q]; nlinarith))
+  have hW : 0 < W := mul_pos (Real.exp_pos _) hg
+  have hK : 0 ≤ K := mul_nonneg
+    (mul_nonneg (div_nonneg (Real.exp_nonneg _) hq.le) (Real.exp_nonneg _)) hg.le
+  have h2 : 2 ∈ I := by
+    exact Finset.mem_Icc.mpr ⟨by decide, Nat.le_floor ((Real.log_le_iff_le_exp (by norm_num)).mp hT)⟩
+  have h1 : 1 ∈ I := Finset.mem_Icc.mpr ⟨le_rfl,
+    (by decide : (1 : ℕ) ≤ 2).trans (Finset.mem_Icc.mp h2).2⟩
+  have hμ₁ : moebiusReal 1 = 1 := by simp [moebiusReal]
+  have hμ₂ : moebiusReal 2 = -1 := by
+    simp [moebiusReal, ArithmeticFunction.moebius_apply_prime Nat.prime_two]
+  have h12 : F 1 2 = W * pickupResponseGram T 1 2 := by
+    norm_num [F, pickupPairTerm, heatedCoeff, hμ₁, hμ₂, W, g, q]
+    rw [show (-d + -s) * Real.log 2 ^ 2 =
+      -(s * Real.log 2 ^ 2) + -(d * Real.log 2 ^ 2) by ring, Real.exp_add]
+    ring
+  have h21 : F 2 1 = W * pickupResponseGram T 2 1 := by
+    norm_num [F, pickupPairTerm, heatedCoeff, hμ₁, hμ₂, W, g, q]
+    rw [show (-d + -s) * Real.log 2 ^ 2 =
+      -(s * Real.log 2 ^ 2) + -(d * Real.log 2 ^ 2) by ring, Real.exp_add]
+    ring
+  let J := ((I ×ˢ I).erase (1, 2)).erase (2, 1)
+  have hmem12 : (1, 2) ∈ I ×ˢ I := Finset.mem_product.mpr ⟨h1, h2⟩
+  have hmem21 : (2, 1) ∈ (I ×ˢ I).erase (1, 2) :=
+    Finset.mem_erase.mpr ⟨by decide, Finset.mem_product.mpr ⟨h2, h1⟩⟩
+  have hsplit : ∑ p ∈ J, F p.1 p.2 = (∑ m ∈ I, ∑ n ∈ I, F m n) -
+      W * (pickupResponseGram T 1 2 + pickupResponseGram T 2 1) := by
+    rw [← Finset.sum_product I I (fun p : ℕ × ℕ => F p.1 p.2)]
+    have hA := Finset.sum_erase_add (s := I ×ˢ I) (f := fun p => F p.1 p.2) hmem12
+    have hB := Finset.sum_erase_add (s := (I ×ˢ I).erase (1, 2)) (f := fun p => F p.1 p.2) hmem21
+    dsimp only at hA hB
+    change (∑ p ∈ J, F p.1 p.2) + F 2 1 = _ at hB
+    rw [h12] at hA
+    rw [h21] at hB
+    linear_combination hA + hB
+  have hpoint (p : ℕ × ℕ) (hp : p ∈ J) : |F p.1 p.2| ≤ a p.1 * a p.2 * (4 * T * K) := by
+    obtain ⟨m, n⟩ := p
+    obtain ⟨hne21, hne12, hp⟩ := Finset.mem_erase.mp hp |>.imp_right Finset.mem_erase.mp
+    obtain ⟨hm, hn⟩ := Finset.mem_product.mp hp
+    have hm₁ := (Finset.mem_Icc.mp hm).1
+    have hn₁ := (Finset.mem_Icc.mp hn).1
+    by_cases hmn : m = n
+    · simp only [F, pickupPairTerm, ite_eq_right (not_not_intro hmn), sub_self, abs_zero]
+      exact mul_nonneg (mul_nonneg (abs_nonneg _) (abs_nonneg _))
+        (mul_nonneg (by positivity) hK)
+    have hbig : 3 ≤ m ∨ 3 ≤ n := by
+      by_contra! h
+      obtain ⟨hm₂, hn₂⟩ := h
+      have hm' : m = 1 ∨ m = 2 := by omega
+      have hn' : n = 1 ∨ n = 2 := by omega
+      rcases hm' with rfl | rfl <;> rcases hn' with rfl | rfl <;> contradiction
+    let x := Real.log (m : ℝ) ^ 2 + Real.log (n : ℝ) ^ 2
+    have hlog (k : ℕ) (hk : 3 ≤ k) : r ≤ Real.log (k : ℝ) ^ 2 :=
+      pow_le_pow_left₀ (Real.log_nonneg (by norm_num))
+        (Real.log_le_log (by norm_num) (by exact_mod_cast hk)) 2
+    have hrx : r ≤ x := by
+      rcases hbig with h | h
+      · exact (hlog m h).trans (le_add_of_nonneg_right (sq_nonneg _))
+      · exact (hlog n h).trans (le_add_of_nonneg_left (sq_nonneg _))
+    have hF : F m n = (moebiusReal m * moebiusReal n * pickupResponseGram T m n) *
+        (Real.exp (-s * x) * (Real.exp (-d * x) - 1)) := by
+      simp only [F, pickupPairTerm, ite_eq_left hmn, heatedCoeff]
+      calc
+        _ = (moebiusReal m * moebiusReal n * pickupResponseGram T m n) *
+            (Real.exp (-(s+d) * Real.log (m : ℝ)^2) *
+              Real.exp (-(s+d) * Real.log (n : ℝ)^2) -
+              Real.exp (-s * Real.log (m : ℝ)^2) *
+              Real.exp (-s * Real.log (n : ℝ)^2)) := by ring
+        _ = _ := by
+          rw [← Real.exp_add, ← Real.exp_add]
+          rw [show -(s+d) * Real.log (m : ℝ)^2 + -(s+d) * Real.log (n : ℝ)^2 =
+            -s * x + -d * x by dsimp [x]; ring, Real.exp_add]
+          rw [show -s * Real.log (m : ℝ)^2 + -s * Real.log (n : ℝ)^2 =
+            -s * x by dsimp [x]; ring]
+          ring
+    have hax : a m * a n = |moebiusReal m| * |moebiusReal n| * Real.exp (-x) := by
+      simp only [a, heatedCoeff, abs_mul, abs_of_nonneg (Real.exp_nonneg _)]
+      rw [show -x = -1 * Real.log (m : ℝ) ^ 2 + -1 * Real.log (n : ℝ) ^ 2 by dsimp [x]; ring,
+        Real.exp_add]
+      ring
+    have hnon : Real.exp (-d * x) ≤ 1 := Real.exp_le_one_iff.mpr
+      (mul_nonpos_of_nonpos_of_nonneg (neg_nonpos.mpr hd.le) (hq.le.trans (hqr.trans hrx)))
+    rw [hF, hax, abs_mul, abs_mul, abs_mul, abs_mul, abs_of_nonneg (Real.exp_nonneg _),
+      abs_of_nonpos (sub_nonpos.mpr hnon), neg_sub]
+    have hpw := mask_exp_weight_tail hq hqr hrx hs hd
+    calc
+      _ ≤ (|moebiusReal m| * |moebiusReal n| * (4 * T)) * (Real.exp (-x) * K) :=
+        mul_le_mul (mul_le_mul_of_nonneg_left (gram_abs_le hTp.le hm₁ hn₁) (by positivity))
+          hpw (by positivity) (by positivity)
+      _ = _ := by ring
+  have hmass : ∑ n ∈ I, a n ≤ heatedAbsMass 1 :=
+    (heatedCoeff_abs_summable (by norm_num : (0 : ℝ) < 1)).sum_le_tsum _ (fun n _ => abs_nonneg _)
+  have hrem : |∑ p ∈ J, F p.1 p.2| ≤ 4 * T * heatedAbsMass 1 ^ 2 * K := by
+    have hsub : J ⊆ I ×ˢ I :=
+      (Finset.erase_subset _ _).trans (Finset.erase_subset _ _)
+    calc
+      _ ≤ ∑ p ∈ J, |F p.1 p.2| := Finset.abs_sum_le_sum_abs _ _
+      _ ≤ ∑ p ∈ J, a p.1 * a p.2 * (4 * T * K) := Finset.sum_le_sum hpoint
+      _ ≤ ∑ p ∈ I ×ˢ I, a p.1 * a p.2 * (4 * T * K) :=
+        Finset.sum_le_sum_of_subset_of_nonneg hsub (fun p _ _ =>
+          mul_nonneg (mul_nonneg (abs_nonneg _) (abs_nonneg _)) (by positivity))
+      _ = (∑ n ∈ I, a n) ^ 2 * (4 * T * K) := by
+        rw [Finset.sum_product, pow_two, Finset.sum_mul_sum]
+        simp only [Finset.sum_mul]
+      _ ≤ _ := by
+        calc
+          _ ≤ heatedAbsMass 1 ^ 2 * (4 * T * K) :=
+            mul_le_mul_of_nonneg_right (pow_le_pow_left₀ (Finset.sum_nonneg
+              (fun n _ => abs_nonneg (heatedCoeff 1 n))) hmass 2) (by positivity)
+          _ = _ := by ring
+  have hsym : pickupResponseGram T 2 1 = pickupResponseGram T 1 2 := by
+    unfold pickupResponseGram
+    simp only [mul_comm]
+  let D := weightedPickupDeviation T Finset.univ (heatMaskWeight (s + d) T) (heatMaskCoeff T) -
+    weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T)
+  have hD : D = ∑ m ∈ I, ∑ n ∈ I, F m n := by
+    simp only [D, mask_deviation_eq_heated_sub_source, sub_sub_sub_cancel_right,
+      pickupPairSum, Finset.sum_sub_distrib, F, I]
+  rw [hsplit, hsym, ← hD] at hrem
+  have hden : 0 < T * W := mul_pos hTp hW
+  have hnorm : |D / (T * W) - (2 * pickupResponseGram T 1 2) / T| ≤
+      4 * heatedAbsMass 1 ^ 2 * (Real.exp (-1) / q) *
+        Real.exp (2 * r - s * (r - q)) := by
+    have h : |(D - W * (pickupResponseGram T 1 2 + pickupResponseGram T 1 2)) / (T * W)| ≤
+        (4 * T * heatedAbsMass 1 ^ 2 * K) / (T * W) := by
+      rw [abs_div, abs_of_pos hden]
+      exact div_le_div_of_nonneg_right hrem hden.le
+    have ha : (D - W * (pickupResponseGram T 1 2 + pickupResponseGram T 1 2)) / (T * W) =
+        D / (T * W) - (2 * pickupResponseGram T 1 2) / T := by
+      field_simp
+      ring
+    rw [ha] at h
+    convert h using 1
+    dsimp [W, K]
+    rw [show 2 * r - s * (r - q) = -(s - 2) * r - (-s * q) by ring, Real.exp_sub]
+    field_simp [ne_of_gt hg]
+  have hgram : |(2 * pickupResponseGram T 1 2) / T - 8 * (Real.sqrt 2)⁻¹| ≤ 32 / T := by
+    rw [show (2 * pickupResponseGram T 1 2) / T - 8 * (Real.sqrt 2)⁻¹ =
+      (2 * (pickupResponseGram T 1 2 - (8 * (Real.sqrt 2)⁻¹ / 2) * T)) / T by
+      field_simp, abs_div, abs_mul, abs_of_pos hTp, abs_of_nonneg (by norm_num : (0 : ℝ) ≤ 2)]
+    exact div_le_div_of_nonneg_right (by linarith [mask_gram_two_deficit T hTp.le]) hTp.le
+  have hfinal := (abs_sub_le (D / (T * W)) ((2 * pickupResponseGram T 1 2) / T)
+    (8 * (Real.sqrt 2)⁻¹)).trans (add_le_add hnorm hgram)
+  rw [add_comm] at hfinal
+  simpa only [D, W, g, q, r, mul_assoc] using hfinal
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
