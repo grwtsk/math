@@ -819,7 +819,23 @@ theorem batchFair_of_candidate_recurrence {batches : ℕ → List Candidate}
     obtain ⟨t, after, member⟩ := recurs c start
     exact ⟨t, after, c, member, by simpa only [decoded, Option.bind_some] using good⟩
 
-private theorem exists_batch_commit {batches : ℕ → List Candidate} (fair : BatchFair batches)
+/-- Qualitative fairness only for roots actually visited by this runner. -/
+def BatchVisitFair (batches : ℕ → List Candidate) : Prop :=
+  ∀ t active, batchRun batches t = .live active →
+    ∃ u ≥ t, (verifyBatch active.root (batches u)).isSome = true
+
+theorem BatchFair.toVisitFair {batches : ℕ → List Candidate} (fair : BatchFair batches) :
+    BatchVisitFair batches := by
+  intro t active _
+  obtain ⟨u, later, candidate, member, verified⟩ := fair active t
+  refine ⟨u, later, ?_⟩
+  cases found : verifyBatch active.root (batches u) with
+  | none =>
+    have rejected := (verifyBatch_none_iff _ _).mp found candidate member
+    simp [rejected] at verified
+  | some receipt => rfl
+
+private theorem exists_batch_commit {batches : ℕ → List Candidate} (fair : BatchVisitFair batches)
     {active : Active} {start : ℕ} (live : batchRun batches start = .live active) :
     ∃ t ≥ start, batchRun batches t = .live active ∧
       ∃ receipt, verifyBatch active.root (batches t) = some receipt := by
@@ -832,18 +848,17 @@ private theorem exists_batch_commit {batches : ℕ → List Candidate} (fair : B
       cases checked : verifyBatch active.root (batches (start + d)) with
       | none => simp [batchRun, ih, commitBatch, checked]
       | some receipt => exact (missing ⟨_, Nat.le_add_right _ _, ih, receipt, checked⟩).elim
-  obtain ⟨t, after, c, member, verified⟩ := fair active start
+  obtain ⟨t, after, verified⟩ := fair start active live
   have stillLive : batchRun batches t = .live active := by
     obtain ⟨d, rfl⟩ := Nat.exists_eq_add_of_le after
     exact held d
   cases checked : verifyBatch active.root (batches t) with
   | none =>
-    have rejected := (verifyBatch_none_iff _ _).1 checked c member
-    simp [rejected] at verified
+    simp [checked] at verified
   | some receipt => exact missing ⟨t, after, stillLive, receipt, checked⟩
 
 /-- Fair unordered arrivals visit every stage preceded by safe tests. -/
-theorem batchRun_visits_safe_prefix {batches : ℕ → List Candidate} (fair : BatchFair batches)
+theorem batchRun_visits_safe_prefix_of_visit_fair {batches : ℕ → List Candidate} (fair : BatchVisitFair batches)
     (n : ℕ) (safe : SafePrefix n) :
     ∃ t active, batchRun batches t = .live active ∧ active.root.stage = n := by
   induction n with
@@ -864,10 +879,10 @@ theorem batchRun_visits_safe_prefix {batches : ℕ → List Candidate} (fair : B
       exact (safe n (Nat.lt_succ_self n) (by simpa only [Bad, stage] using bad)).elim
 
 /-- The first bad stage stops under fair unordered arrivals. -/
-theorem batchRun_halts_at_first_bad {batches : ℕ → List Candidate} (fair : BatchFair batches)
+theorem batchRun_halts_at_first_bad_of_visit_fair {batches : ℕ → List Candidate} (fair : BatchVisitFair batches)
     {n : ℕ} (safe : SafePrefix n) (bad : Riemann120.ShuniaCounterexample (n + 2)) :
     ∃ t stopped, batchRun batches t = .halted stopped ∧ stopped.stage = n := by
-  obtain ⟨start, active, live, stage⟩ := batchRun_visits_safe_prefix fair n safe
+  obtain ⟨start, active, live, stage⟩ := batchRun_visits_safe_prefix_of_visit_fair fair n safe
   obtain ⟨t, _, waiting, receipt, verified⟩ := exists_batch_commit fair live
   cases receipt with
   | completed next steps good successor padding positive trace =>
@@ -880,7 +895,7 @@ theorem batchRun_halts_at_first_bad {batches : ℕ → List Candidate} (fair : B
     simp only [batchRun, waiting, commitBatch, verified]
     rfl
 
-theorem batchRun_halts_iff_not_RH {batches : ℕ → List Candidate} (fair : BatchFair batches) :
+theorem batchRun_halts_iff_not_RH_of_visit_fair {batches : ℕ → List Candidate} (fair : BatchVisitFair batches) :
     (∃ t stopped, batchRun batches t = .halted stopped) ↔ ¬ RiemannHypothesis := by
   rw [← halts_iff_not_RH, halts_iff_witness]
   constructor
@@ -888,8 +903,22 @@ theorem batchRun_halts_iff_not_RH {batches : ℕ → List Candidate} (fair : Bat
     exact ⟨stopped.stage, stopped.witness⟩
   · intro witness
     obtain ⟨t, stopped, halted, _⟩ :=
-      batchRun_halts_at_first_bad fair (fun _ lt => Nat.find_min witness lt) (Nat.find_spec witness)
+      batchRun_halts_at_first_bad_of_visit_fair fair (fun _ lt => Nat.find_min witness lt) (Nat.find_spec witness)
     exact ⟨t, stopped, halted⟩
+
+theorem batchRun_visits_safe_prefix {batches : ℕ → List Candidate} (fair : BatchFair batches)
+    (n : ℕ) (safe : SafePrefix n) :
+    ∃ t active, batchRun batches t = .live active ∧ active.root.stage = n :=
+  batchRun_visits_safe_prefix_of_visit_fair fair.toVisitFair n safe
+
+theorem batchRun_halts_at_first_bad {batches : ℕ → List Candidate} (fair : BatchFair batches)
+    {n : ℕ} (safe : SafePrefix n) (bad : Riemann120.ShuniaCounterexample (n + 2)) :
+    ∃ t stopped, batchRun batches t = .halted stopped ∧ stopped.stage = n :=
+  batchRun_halts_at_first_bad_of_visit_fair fair.toVisitFair safe bad
+
+theorem batchRun_halts_iff_not_RH {batches : ℕ → List Candidate} (fair : BatchFair batches) :
+    (∃ t stopped, batchRun batches t = .halted stopped) ↔ ¬ RiemannHypothesis :=
+  batchRun_halts_iff_not_RH_of_visit_fair fair.toVisitFair
 
 /-- An indefinitely empty stream remains inconclusive at the initial root. -/
 theorem batchRun_empty (t : ℕ) : batchRun (fun _ => []) t = run 0 := by
@@ -1030,5 +1059,72 @@ theorem batchRun_next_window_by {batches : ℕ → List Candidate} {limit : ℕ 
   · apply Fin.ext
     change active.root.stage % 95 = 0
     omega
+
+
+/-- At a live visit the root is permanently held exactly when every
+subsequent batch fails verification for that root. -/
+theorem batchRun_stays_live_iff {batches : ℕ → List Candidate} {t : ℕ}
+    {active : Active} (live : batchRun batches t = .live active) :
+    (∀ u ≥ t, batchRun batches u = .live active) ↔
+      ∀ u ≥ t, verifyBatch active.root (batches u) = none := by
+  constructor
+  · intro held u later
+    cases checked : verifyBatch active.root (batches u) with
+    | none => rfl
+    | some receipt =>
+      have after := held (u + 1) (later.trans (Nat.le_succ _))
+      rw [batchRun, held u later] at after
+      change commitBatch active (batches u) = .live active at after
+      rw [commitBatch, checked] at after
+      cases receipt with
+      | completed next steps safe successor padding positive trace =>
+        have eq := congrArg (fun a : Active => a.root.stage) (RunState.live.inj after)
+        change next.stage = active.root.stage at eq
+        omega
+      | counterexample finish steps bad trace terminal => cases after
+  · intro rejected u later
+    obtain ⟨d, rfl⟩ := Nat.exists_eq_add_of_le later
+    induction d with
+    | zero => exact live
+    | succ d ih =>
+      change batchRun batches (t + d + 1) = .live active
+      rw [batchRun, ih (Nat.le_add_right _ _)]
+      change commitBatch active (batches (t + d)) = .live active
+      simp only [commitBatch, rejected _ (Nat.le_add_right _ _)]
+
+/-- Exact qualitative fairness criterion, with no demand on unvisited roots. -/
+theorem batchVisitFair_iff_leaves_live (batches : ℕ → List Candidate) :
+    BatchVisitFair batches ↔
+      ∀ t active, batchRun batches t = .live active →
+        ∃ u > t, batchRun batches u ≠ .live active := by
+  classical
+  constructor
+  · intro fair t active live
+    by_contra stays
+    have held : ∀ u ≥ t, batchRun batches u = .live active := by
+      intro u later
+      by_cases eq : u = t
+      · rwa [eq]
+      · by_contra neq
+        exact stays ⟨u, by omega, neq⟩
+    obtain ⟨u, later, arrives⟩ := fair t active live
+    rw [(batchRun_stays_live_iff live).mp held u later] at arrives
+    cases arrives
+  · intro leaves t active live
+    obtain ⟨u, later, departed⟩ := leaves t active live
+    by_contra missing
+    have rejected : ∀ s ≥ t, verifyBatch active.root (batches s) = none := by
+      intro s after
+      cases verified : verifyBatch active.root (batches s) with
+      | none => rfl
+      | some receipt => exact (missing ⟨s, after, by simp [verified]⟩).elim
+    exact departed ((batchRun_stays_live_iff live).mpr rejected u later.le)
+
+/-- The empty stream is a permanent live stall, despite unbounded ticks. -/
+theorem batchVisitFair_empty_false : ¬ BatchVisitFair (fun _ => []) := by
+  intro fair
+  have live : batchRun (fun _ => []) 0 = .live ⟨firstRoot, 3634, bootstrap_to_firstRoot⟩ := rfl
+  obtain ⟨u, _, departed⟩ := (batchVisitFair_iff_leaves_live _).mp fair 0 _ live
+  exact departed ((batchRun_empty u).trans live)
 
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch

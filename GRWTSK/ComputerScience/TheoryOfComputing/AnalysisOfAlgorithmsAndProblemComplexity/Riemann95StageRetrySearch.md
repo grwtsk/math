@@ -300,3 +300,35 @@ function L. Strict pinned compilation, target replay, the empty
 stream and variable allowance controls, and four theorem audits
 passed. Fresh full replay, independent review and physical latency
 certification are NOT_RUN.
+
+## Fairness at visited checkpoints
+
+`BatchVisitFair` requires a future verifying batch only for an actual
+live visit of the native runner. `batchRun_stays_live_iff` characterizes
+permanent retention of that exact checkpoint as rejection by every
+subsequent batch. Rejections hold the root in place by induction. A
+verification either adds one to the native stage or commits the terminal
+receipt, so it cannot leave the live checkpoint unchanged.
+`batchVisitFair_iff_leaves_live` makes departure from every live visit
+equivalent to this qualitative fairness premise.
+
+`batchRun_visits_safe_prefix_of_visit_fair` and
+`batchRun_halts_at_first_bad_of_visit_fair` use this weaker premise.
+The first successful batch for the held root commits the original typed
+receipt. Induction gives all safe prefixes, and the first bad stage gives
+the actual terminal trace. Thus `batchRun_halts_iff_not_RH_of_visit_fair`
+returns to the same pinned Shunia witness equivalence. The original
+global-fairness interfaces are recovered via `BatchFair.toVisitFair`.
+
+The checked empty stream is permanently stalled. Even a nonempty singleton
+at every tick, consisting of an otherwise arbitrary zero-step proposal,
+fails visit fairness at a safe first root. The physical scheduler still
+needs to supply eventual verification at every reached checkpoint.
+
+Strict target compilation, targeted kernel replay, the starvation controls
+and the seven theorem transitive audits passed on the toolchain and
+dependency pins above. The audits found only `propext`,
+`Classical.choice` and `Quot.sound`. Checked source SHA-256
+`98640b180d193b4c81b5d3f074303a5a632ddf705115cc4b8e6b9ec1bc92de7a`.
+Full fresh dependency replay, independent review and HS runtime parity
+are `NOT_RUN`.
