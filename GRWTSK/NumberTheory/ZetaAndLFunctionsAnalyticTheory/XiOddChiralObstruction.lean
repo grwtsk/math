@@ -218,4 +218,74 @@ theorem eventually_not_odd_of_center_limit {d : ℕ → ℕ}
   have laws := chiral n odd
   exact nonzero (by rw [pencil_zero_of_chiral odd (H n) (J n) laws.1 laws.2, mul_zero])
 
+
+/-- Divide the characteristic polynomial by one formal center factor. -/
+def deflatedPencil {d : ℕ} (H : Matrix (Fin d) (Fin d) ℂ) : Polynomial ℂ :=
+  H.charpoly.divByMonic Polynomial.X
+
+theorem charpoly_eval_eq_pencil {d : ℕ} (H : Matrix (Fin d) (Fin d) ℂ) (z : ℂ) :
+    H.charpoly.eval z = pencil H z := by
+  rw [Matrix.eval_charpoly, pencil, Matrix.scalar_apply, Matrix.smul_one_eq_diagonal]
+
+/-- When the origin is a root the formal quotient gives exact deflation,
+including the polynomial value at the removed root. -/
+theorem X_mul_deflatedPencil {d : ℕ} (H : Matrix (Fin d) (Fin d) ℂ)
+    (zero : pencil H 0 = 0) : Polynomial.X * deflatedPencil H = H.charpoly := by
+  have root : H.charpoly.IsRoot 0 := by
+    change H.charpoly.eval 0 = 0
+    rw [charpoly_eval_eq_pencil, zero]
+  simpa [deflatedPencil] using (Polynomial.mul_divByMonic_eq_iff_isRoot.mpr root)
+
+theorem mul_deflatedPencil_eval {d : ℕ} (H : Matrix (Fin d) (Fin d) ℂ)
+    (zero : pencil H 0 = 0) (z : ℂ) : z * (deflatedPencil H).eval z = pencil H z := by
+  simpa only [Polynomial.eval_mul, Polynomial.eval_X, charpoly_eval_eq_pencil] using
+    congrArg (Polynomial.eval z) (X_mul_deflatedPencil H zero)
+
+theorem deflatedPencil_even_of_chiral {d : ℕ} (odd : Odd d)
+    (H J : Matrix (Fin d) (Fin d) ℂ) (invertible : J.det ≠ 0)
+    (chiral : J * H = -(H * J)) (z : ℂ) :
+    (deflatedPencil H).eval (-z) = (deflatedPencil H).eval z := by
+  by_cases atZero : z = 0
+  · simp [atZero]
+  · apply mul_left_cancel₀ (neg_ne_zero.mpr atZero)
+    rw [mul_deflatedPencil_eval H (pencil_zero_of_chiral odd H J invertible chiral),
+      pencil_neg_of_chiral odd H J invertible chiral, neg_mul,
+      mul_deflatedPencil_eval H (pencil_zero_of_chiral odd H J invertible chiral)]
+
+/-- One deflation leaves the center nonzero exactly for a simple origin root. -/
+theorem deflatedPencil_center_ne_zero_iff {d : ℕ} (H : Matrix (Fin d) (Fin d) ℂ)
+    (zero : pencil H 0 = 0) :
+    (deflatedPencil H).eval 0 ≠ 0 ↔ H.charpoly.rootMultiplicity 0 = 1 := by
+  have factored := X_mul_deflatedPencil H zero
+  have one : 1 ≤ H.charpoly.rootMultiplicity 0 := by
+    apply (Polynomial.le_rootMultiplicity_iff H.charpoly_monic.ne_zero).mpr
+    simpa only [Polynomial.C_0, sub_zero, pow_one] using
+      (show Polynomial.X ∣ H.charpoly from ⟨_, factored.symm⟩)
+  have twice : (deflatedPencil H).eval 0 = 0 ↔ 2 ≤ H.charpoly.rootMultiplicity 0 := by
+    rw [Polynomial.le_rootMultiplicity_iff H.charpoly_monic.ne_zero, Polynomial.C_0, sub_zero]
+    rw [← Polynomial.coeff_zero_eq_eval_zero]
+    constructor
+    · intro h
+      obtain ⟨rest, hr⟩ := Polynomial.X_dvd_iff.mpr h
+      exact ⟨rest, by rw [← factored, hr, pow_two, mul_assoc]⟩
+    · rintro ⟨rest, hr⟩
+      have div : deflatedPencil H = Polynomial.X * rest := by
+        apply mul_left_cancel₀ Polynomial.X_ne_zero
+        rw [factored, hr, pow_two, mul_assoc]
+      exact Polynomial.X_dvd_iff.mp ⟨rest, div⟩
+  rw [ne_eq, twice]
+  omega
+
+/-- A successful finite normalization after one deflation must eventually
+use a simple center root whenever the original pencil vanishes there. -/
+theorem eventually_simple_center_of_deflated_limit {d : ℕ → ℕ}
+    (H : (n : ℕ) → Matrix (Fin (d n)) (Fin (d n)) ℂ)
+    (zero : ∀ n, pencil (H n) 0 = 0) (u : ℕ → ℂ → ℂ)
+    (limit : Tendsto (fun n => u n 0 * (deflatedPencil (H n)).eval 0)
+      atTop (𝓝 (spectralSource 0))) :
+    ∀ᶠ n in atTop, (H n).charpoly.rootMultiplicity 0 = 1 := by
+  filter_upwards [limit.eventually_ne spectralSource_zero_ne_zero] with n nonzero
+  exact (deflatedPencil_center_ne_zero_iff (H n) (zero n)).mp
+    fun h => nonzero (by rw [h, mul_zero])
+
 end GRWTSK.NumberTheory.Zeta.XiOddChiralObstruction
