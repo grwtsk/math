@@ -70,6 +70,66 @@ private theorem product_defect {J : Type*} (s : Finset J) (f : J → ℝ)
             (1 - f j) * (∏ k ∈ s, f k) + (1 - ∏ k ∈ s, f k) := by ring
         _ ≤ (1 - f j) + ∑ k ∈ s, (1 - f k) := add_le_add omitted tailBound
 
+/-- The excess of a strictly subunit logarithmic exposure over its Euler
+exposure is quadratic, with a constant controlled by the exposure cap. -/
+theorem log_factor_defect_bounds {a cap : ℝ} (ha : 0 ≤ a) (hac : a ≤ cap) (hc : cap < 1) :
+    a ^ 2 / 2 ≤ -Real.log (1 - a) - a ∧
+      -Real.log (1 - a) - a ≤ a ^ 2 / (2 * (1 - cap)) := by
+  let f (c x : ℝ) := -Real.log (1 - x) - x - c * (x ^ 2 / 2)
+  have slope (c x : ℝ) (hx : x < 1) :
+      HasDerivAt (f c) (x / (1 - x) - c * x) x := by
+    have logSlope := ((hasDerivAt_id x).const_sub (1 : ℝ)).log (sub_ne_zero.mpr hx.ne')
+    have quadSlope := ((hasDerivAt_pow 2 x).div_const (2 : ℝ)).const_mul c
+    convert (logSlope.neg.sub (hasDerivAt_id x)).sub quadSlope using 1
+    · rfl
+    · simp only [id_eq]
+      field_simp [sub_ne_zero.mpr hx.ne']
+      ring
+  have inside (x : ℝ) (hx : x ∈ Set.Icc (0 : ℝ) cap) : x < 1 := hx.2.trans_lt hc
+  have cont (c : ℝ) : ContinuousOn (f c) (Set.Icc 0 cap) :=
+    fun x hx => (slope c x (inside x hx)).continuousAt.continuousWithinAt
+  have diff (c : ℝ) : DifferentiableOn ℝ (f c) (interior (Set.Icc 0 cap)) :=
+    fun x hx => (slope c x (inside x (interior_subset hx))).differentiableAt.differentiableWithinAt
+  have zero (c : ℝ) : f c 0 = 0 := by simp [f]
+  have lo : MonotoneOn (f 1) (Set.Icc 0 cap) := by
+    apply monotoneOn_of_deriv_nonneg (convex_Icc _ _) (cont 1) (diff 1)
+    intro x hx
+    have hmem := interior_subset hx
+    have hlt := inside x hmem
+    rw [(slope 1 x hlt).deriv, one_mul, sub_nonneg]
+    exact (le_div_iff₀ (sub_pos.mpr hlt)).mpr (by nlinarith [sq_nonneg x])
+  have hi : AntitoneOn (f (1 - cap)⁻¹) (Set.Icc 0 cap) := by
+    apply antitoneOn_of_deriv_nonpos (convex_Icc _ _) (cont _) (diff _)
+    intro x hx
+    have hmem := interior_subset hx
+    rw [(slope _ x (inside x hmem)).deriv, sub_nonpos]
+    have denominators : 1 - cap ≤ 1 - x := by linarith [hmem.2]
+    have bound := div_le_div_of_nonneg_left hmem.1 (sub_pos.mpr hc) denominators
+    simpa only [div_eq_mul_inv, mul_comm] using bound
+  have hzero : (0 : ℝ) ∈ Set.Icc 0 cap := ⟨le_rfl, ha.trans hac⟩
+  have hmem : a ∈ Set.Icc (0 : ℝ) cap := ⟨ha, hac⟩
+  have hlo : 0 ≤ f 1 a := by simpa only [zero] using lo hzero hmem ha
+  have hhi : f (1 - cap)⁻¹ a ≤ 0 := by simpa only [zero] using hi hzero hmem ha
+  refine ⟨sub_nonneg.mp (by simpa only [f, one_mul] using hlo), ?_⟩
+  calc
+    -Real.log (1 - a) - a ≤ (1 - cap)⁻¹ * (a ^ 2 / 2) := sub_nonpos.mp hhi
+    _ = a ^ 2 / (2 * (1 - cap)) := by field_simp [sub_ne_zero.mpr hc.ne']
+
+/-- Strictly subunit exposures can amplify arbitrarily much even when one
+stage's total exposure and quadratic budget are both below one. -/
+theorem subunit_gain_unbounded (gain : ℝ) (hg : 0 ≤ gain) :
+    ∃ a : ℝ, 0 ≤ a ∧ a < 1 ∧ a ^ 2 < 1 ∧ gain < 1 / (1 - a) := by
+  have positive : 0 < gain + 2 := by linarith
+  have small : (gain + 2)⁻¹ ≤ 1 := by
+    rw [← one_div]
+    exact (div_le_one positive).mpr (by linarith)
+  have nonneg : 0 ≤ 1 - (gain + 2)⁻¹ := sub_nonneg.mpr small
+  have ltOne : 1 - (gain + 2)⁻¹ < 1 := sub_lt_self _ (inv_pos.mpr positive)
+  refine ⟨1 - (gain + 2)⁻¹, nonneg, ltOne, ?_, ?_⟩
+  · simpa using pow_lt_pow_left₀ ltOne nonneg (by decide : 2 ≠ 0)
+  · rw [sub_sub_cancel, one_div, inv_inv]
+    linarith
+
 section Schedule
 
 variable {J I : Type*} [Fintype J]
@@ -283,6 +343,58 @@ theorem logExposure_nonneg (a : J → I → ℝ) (i : I)
   exact neg_nonneg.mpr
     (Real.log_nonpos (sub_pos.mpr (upper j)).le (by linarith [lower j]))
 
+/-- The calibrated Euler schedule's logarithmic clock inflation is bounded
+above and below by its quadratic exposure budget. -/
+theorem logExposure_sub_total_bounds (a : J → I → ℝ) (i : I) {cap : ℝ}
+    (lower : ∀ j, 0 ≤ a j i) (upper : ∀ j, a j i ≤ cap) (cap_lt_one : cap < 1) :
+    squareBudget a i / 2 ≤ logExposure a i - total a i ∧
+      logExposure a i - total a i ≤ squareBudget a i / (2 * (1 - cap)) := by
+  unfold squareBudget logExposure total
+  rw [← Finset.sum_sub_distrib, Finset.sum_div, Finset.sum_div]
+  exact ⟨Finset.sum_le_sum fun j _ => (log_factor_defect_bounds (lower j) (upper j) cap_lt_one).1,
+    Finset.sum_le_sum fun j _ => (log_factor_defect_bounds (lower j) (upper j) cap_lt_one).2⟩
+
+theorem euler_inverse_gain_eq_exp_logExposure (a : J → I → ℝ) (i : I)
+    (strict : ∀ j, a j i < 1) :
+    1 / eulerMultiplier a i = Real.exp (logExposure a i) := by
+  rw [eulerMultiplier, logExposure, Real.exp_sum, one_div, ← Finset.prod_inv_distrib]
+  apply Finset.prod_congr rfl
+  intro j _
+  rw [Real.exp_neg, Real.exp_log (sub_pos.mpr (strict j))]
+
+/-- Actual Euler inverse gain with a uniform subunit cap. The bound applies
+at every quadratic budget, including budgets at least one. -/
+theorem euler_inverse_gain_log_bounds (a : J → I → ℝ) (i : I) {cap : ℝ}
+    (lower : ∀ j, 0 ≤ a j i) (upper : ∀ j, a j i ≤ cap) (cap_lt_one : cap < 1) :
+    Real.exp (total a i + squareBudget a i / 2) ≤ 1 / eulerMultiplier a i ∧
+      1 / eulerMultiplier a i ≤
+        Real.exp (total a i + squareBudget a i / (2 * (1 - cap))) := by
+  obtain ⟨lo, hi⟩ := logExposure_sub_total_bounds a i lower upper cap_lt_one
+  rw [euler_inverse_gain_eq_exp_logExposure a i (fun j => (upper j).trans_lt cap_lt_one)]
+  exact ⟨Real.exp_le_exp.mpr (by linarith), Real.exp_le_exp.mpr (by linarith)⟩
+
+/-- A common cap and total exposure bound suffice for a uniform Euler
+inverse gain across finite schedules and modes. -/
+theorem euler_inverse_gain_le_of_total_le (a : J → I → ℝ) (i : I) {cap budget : ℝ}
+    (cap_nonneg : 0 ≤ cap) (cap_lt_one : cap < 1)
+    (lower : ∀ j, 0 ≤ a j i) (upper : ∀ j, a j i ≤ cap) (total_le : total a i ≤ budget) :
+    1 / eulerMultiplier a i ≤ Real.exp ((1 + cap / (2 * (1 - cap))) * budget) := by
+  have quad : squareBudget a i ≤ cap * total a i := by
+    unfold squareBudget total
+    rw [Finset.mul_sum]
+    exact Finset.sum_le_sum fun j _ =>
+      by simpa only [pow_two] using mul_le_mul_of_nonneg_right (upper j) (lower j)
+  have divisor : 0 < 2 * (1 - cap) := by linarith
+  refine (euler_inverse_gain_log_bounds a i lower upper cap_lt_one).2.trans ?_
+  apply Real.exp_le_exp.mpr
+  calc
+    total a i + squareBudget a i / (2 * (1 - cap)) ≤
+        total a i + (cap * total a i) / (2 * (1 - cap)) :=
+      add_le_add le_rfl (div_le_div_of_nonneg_right quad divisor.le)
+    _ = (1 + cap / (2 * (1 - cap))) * total a i := by ring
+    _ ≤ (1 + cap / (2 * (1 - cap))) * budget :=
+      mul_le_mul_of_nonneg_left total_le (by positivity)
+
 theorem euler_eq_log_heat (a : J → I → ℝ) (x : I → ℝ) (strict : ∀ j i, a j i < 1) :
     euler a x = spectralHeat (logExposure a) 1 x := by
   funext i
@@ -375,5 +487,22 @@ theorem subdivide_recover_error (a : J → I → ℝ) (m : ℕ) (hm : 0 < m)
   simpa only [recover_apply, subdivide_total a m hm, subdivide_squareBudget a m hm] using bound
 
 end Schedule
+
+/-- Uniform inverse stability across growing finite schedules is equivalent
+to a uniform bound on the exact logarithmic exposures of their modes. -/
+theorem uniform_euler_inverse_gain_iff_logExposure
+    {Slot Mode : ℕ → Type*} [∀ n, Fintype (Slot n)]
+    (a : ∀ n, Slot n → Mode n → ℝ) (strict : ∀ n j i, a n j i < 1) :
+    (∃ gain > (0 : ℝ), ∀ n i, 1 / eulerMultiplier (a n) i ≤ gain) ↔
+      ∃ bound : ℝ, ∀ n i, logExposure (a n) i ≤ bound := by
+  constructor
+  · rintro ⟨gain, positive, bounded⟩
+    refine ⟨Real.log gain, fun n i => Real.exp_le_exp.mp ?_⟩
+    rw [Real.exp_log positive, ← euler_inverse_gain_eq_exp_logExposure (a n) i (fun j => strict n j i)]
+    exact bounded n i
+  · rintro ⟨bound, bounded⟩
+    refine ⟨Real.exp bound, Real.exp_pos _, fun n i => ?_⟩
+    rw [euler_inverse_gain_eq_exp_logExposure (a n) i (fun j => strict n j i)]
+    exact Real.exp_le_exp.mpr (bounded n i)
 
 end GRWTSK.OperatorTheory.FiniteEulerHeatRecovery

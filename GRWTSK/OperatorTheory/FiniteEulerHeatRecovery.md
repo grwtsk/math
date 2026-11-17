@@ -87,6 +87,40 @@ $B_i=t\lambda_i$ for every mode. This gives the test for using a
 single scalar calibration. Zero-exposure modes stay fixed.
 All of these comparisons assume a shared spectral chart.
 
+## Logarithmic exposure and inverse stability
+
+Fix a mode and a common exposure cap $0\le\rho<1$ with
+$0\le a_{ji}\le\rho$ at every slot. The excess of the logarithmic
+exposure over the intended exposure obeys
+$$
+\frac{Q_i}{2}\le B_i-A_i\le\frac{Q_i}{2(1-\rho)}.
+$$
+For one slot put $g(x)=-\log(1-x)-x$. Its derivative is
+$x/(1-x)$. On $[0,\rho]$ it lies between $x$ and
+$x/(1-\rho)$. Subtract the respective quadratics and apply monotonicity
+from zero. Summing those bounds proves the statement for the original
+modal exposures and the same finite slot set.
+
+The exact Euler inverse gain is $1/P_i=e^{B_i}$.
+`uniform_euler_inverse_gain_iff_logExposure` therefore characterizes
+uniform stability across finite resolutions by a uniform upper bound
+on $B_i$. Taking the logarithm of any positive common gain gives such
+a bound, and exponentiating a common exposure bound gives a gain.
+The modewise gain lies between
+$e^{A_i+Q_i/2}$ and $e^{A_i+Q_i/(2(1-\rho))}$. This estimate applies at
+arbitrary $Q_i$. Since $Q_i\le\rho A_i$, a common cap and a bound
+$A_i\le M$ give the uniform gain
+$\exp((1+\rho/(2(1-\rho)))M)$ across windows, mode sets, and finite
+observation resolutions. This is a bound for the exact reciprocal in
+`euler_leftInverse_of_strict`.
+
+For one stage and any proposed gain bound $G\ge0$, the exposure
+$a=1-1/(G+2)$ is strictly subunit with total and squared exposure below
+one, yet its inverse gain is $G+2$. The margin to one matters for
+uniform stability. The actual HS sensor still needs a source-bound
+modal encoder and a proof that its realized exposures obey the common
+cap and total bound.
+
 ## Analytic source boundary
 
 The Rodgers–Tao function uses $e^{tu^2}$ in its half-line integral.
@@ -104,12 +138,13 @@ of that physical and arithmetic interface remains open.
 calibrated dwell and common spectral chart → modal Euler exposures
 product induction and scalar exponential inequalities → finite bias budget
 exact inverse gain + measurement error → weighted readout budget
+uniform exposure cap + total exposure bound → uniform Euler inverse gain
 source encoder and sensor factorization + analytic tails → original consumer [open]
 ```
 
 ## Verification
 
-The new Lean source has SHA-256 `9de56ee5707eb3c604ff54ad65f84b96472811ef5b8c3207ca4f03b23f6a8c61`. The targeted Lake
+The initial Lean source at `e930c3a57bf9` has SHA-256 `9de56ee5707eb3c604ff54ad65f84b96472811ef5b8c3207ca4f03b23f6a8c61`. The targeted Lake
 build, standalone compilation with trust zero and warnings as errors,
 and targeted kernel replay passed on Lean 4.34.1 and Mathlib
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. All 22 theorem audits
@@ -121,4 +156,12 @@ half-exposure step failed exact exponential compensation on a unit
 input despite retaining that mode. The calibrated 95-slot readout
 type also checked. Full fresh import-closure replay, independent
 mathematical review and HS sensor validation are `NOT_RUN`.
+The logarithmic exposure extension compiled with `--trust=0` and
+warnings as errors on the same root pins. Target kernel replay passed.
+Exact checks for eight half-exposures confirmed quadratic budget 2,
+inverse gain 256 and the bound `exp 6`. The near-unit control also
+checked. Each of the seven new declarations uses only `propext`,
+`Classical.choice` and `Quot.sound`. Fresh replay of the entire import
+closure and independent review of the extension are `NOT_RUN`.
+
 [Coordination and exact evidence](https://github.com/grwtsk/math/issues/1824)
