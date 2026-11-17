@@ -1169,4 +1169,47 @@ theorem verifyBatch_none_iff_of_perm (root : Root) {first rest : List Candidate}
   · intro restNone c h
     exact restNone c (perm.mem_iff.mp h)
 
+/-- The stage of a live checkpoint, or the bad stage, exact native
+instruction count and full native configuration of a stop. -/
+def stageOutcome : RunState → ℕ ⊕ (ℕ × ℕ × Config)
+  | .live active => .inl active.root.stage
+  | .halted stopped => .inr (stopped.stage, stopped.spent, stopped.finish)
+
+private theorem stageOutcome_commitReceipt (active : Active) (a b : Receipt active.root) :
+    stageOutcome (commitReceipt active a) = stageOutcome (commitReceipt active b) := by
+  cases a with
+  | completed next steps safe successor padding positive trace =>
+    cases b with
+    | completed next' steps' safe' successor' padding' positive' trace' =>
+      simp only [commitReceipt, stageOutcome, successor, successor']
+    | counterexample finish steps' bad trace' terminal =>
+      exact (safe bad).elim
+  | counterexample finish steps bad trace terminal =>
+    cases b with
+    | completed next steps' safe successor padding positive trace' =>
+      exact (safe bad).elim
+    | counterexample finish' steps' bad' trace' terminal' =>
+      have ⟨time, result⟩ := native_terminal_unique trace trace' terminal terminal'
+      simp only [commitReceipt, stageOutcome, time, result]
+
+/-- Reordering a packet at the same anchored root preserves its stage
+outcome. In particular any terminal result retains its exact native
+instruction count and full terminal configuration. -/
+theorem stageOutcome_commitBatch_of_perm (active : Active) {first rest : List Candidate}
+    (perm : first.Perm rest) :
+    stageOutcome (commitBatch active first) = stageOutcome (commitBatch active rest) := by
+  have retry := verifyBatch_none_iff_of_perm active.root perm
+  cases a : verifyBatch active.root first with
+  | none =>
+    have b := retry.mp a
+    simp only [commitBatch, a, b]
+  | some ra =>
+    cases b : verifyBatch active.root rest with
+    | none =>
+      have impossible := retry.mpr b
+      rw [a] at impossible
+      cases impossible
+    | some rb =>
+      simpa only [commitBatch, a, b] using stageOutcome_commitReceipt active ra rb
+
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch
