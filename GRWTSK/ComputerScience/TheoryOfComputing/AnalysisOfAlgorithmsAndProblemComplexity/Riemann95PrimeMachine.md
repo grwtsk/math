@@ -257,3 +257,31 @@ The source SHA-256 is
 checked on the same Lean, Cryptids and mathlib pins above. Full fresh
 dependency replay, independent review and HS runtime correspondence
 are `NOT_RUN`.
+
+## Exact switching between prime windows
+
+`readdress` decodes the native control and encodes it at the target
+window. It keeps the original scanned bit, the two literal tape lists
+and the absolute head coordinate. `windowEquiv` has the reverse
+readdressing as its inverse. This keeps even the list data that
+the native pointed-tape quotient identifies.
+
+`step_readdress` applies the same native instruction cell before and
+after changing the prime label. A missing cell gives `none` on both
+sides. For a successful instruction, the same move updates the same
+scanned symbol, tape lists and head coordinate. Induction gives
+`runOn_eq`: any finite list of working windows, with one entry per
+instruction, gives the same result as the fixed-window run followed by
+readdressing to the requested final window. The equality also preserves
+failure by each instruction budget. `project_runOn` identifies the
+result with the native exact-length run, and
+`blank_runOn_reaches_initialRoot` applies the original 3,634-step
+boot certificate for every schedule of that length.
+
+The stale-address control `checkAddress_stale` rejects the original
+raw prime in every different window because the two rank intervals are
+disjoint. Re-encoding is therefore required when changing the physical
+window. To apply the result to an HS runtime, show that its handoff
+implements this exact readdressing and does not consume a native
+instruction in the process. Verification of the extension is recorded
+in [issue #1821](https://github.com/grwtsk/math/issues/1821).

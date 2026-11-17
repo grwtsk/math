@@ -696,4 +696,100 @@ theorem observedReadWalk_spurious (window : ℕ) :
     rfl
   exact ⟨.tail (observedReadWalk_of_run atEight) ⟨9, atNine, atTen⟩, by rw [atNine]; decide⟩
 
+/-- Change the prime label while keeping the decoded control, both tape
+lists, the scanned symbol and the absolute head position. -/
+def readdress {origin : ℕ} (target : ℕ) (c : Configuration origin) : Configuration target :=
+  ⟨encodeAddress target (decodeAddress c.address), c.position, c.scanned, c.left, c.right⟩
+
+@[simp] theorem readdress_same {w : ℕ} (c : Configuration w) : readdress w c = c := by
+  cases c
+  simp [readdress]
+
+@[simp] theorem readdress_comp {u : ℕ} (v w : ℕ) (c : Configuration u) :
+    readdress w (readdress v c) = readdress w c := by simp [readdress]
+
+@[simp] theorem project_readdress {u : ℕ} (v : ℕ) (c : Configuration u) :
+    project (readdress v c) = project c := by simp [readdress, project]
+
+/-- Readdressing is an exact equivalence of representations, including
+the unquotiented tape lists and absolute head coordinate. -/
+def windowEquiv (u v : ℕ) : Configuration u ≃ Configuration v where
+  toFun := readdress v
+  invFun := readdress u
+  left_inv := by intro c; simp
+  right_inv := by intro c; simp
+
+theorem step_readdress {u : ℕ} (v : ℕ) (c : Configuration u) :
+    step (readdress v c) = (step c).map (readdress v) := by
+  unfold step
+  simp only [readdress, decode_encode]
+  cases ht : ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => rfl
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    cases direction <;> simp [writeMove, readdress]
+
+theorem run_readdress {u : ℕ} (v : ℕ) (n : ℕ) (c : Configuration u) :
+    run n (readdress v c) = (run n c).map (readdress v) := by
+  induction n generalizing c with
+  | zero => rfl
+  | succ n ih =>
+    simp only [run, step_readdress]
+    cases h : step c <;> simp [ih]
+
+/-- Use one requested window per instruction, with an explicit final
+window. Readdressing itself consumes no native instruction. -/
+def runOn (schedule : List ℕ) (target : ℕ) {w : ℕ} (c : Configuration w) :
+    Option (Configuration target) :=
+  match schedule with
+  | [] => some (readdress target c)
+  | next :: rest => (step (readdress next c)).bind (runOn rest target)
+
+/-- Every finite schedule, even with repeats or jumps, executes precisely
+the same instructions and produces the same tape and head position. -/
+theorem runOn_eq {w : ℕ} (schedule : List ℕ) (target : ℕ) (c : Configuration w) :
+    runOn schedule target c = (run schedule.length c).map (readdress target) := by
+  induction schedule generalizing w with
+  | nil => rfl
+  | cons next rest ih =>
+    simp only [runOn, step_readdress, List.length_cons, run]
+    cases h : step c with
+    | none => rfl
+    | some d =>
+      simp only [Option.map_some, Option.bind_some, ih, run_readdress]
+      cases run rest.length d <;> simp
+
+theorem project_runOn {w : ℕ} (schedule : List ℕ) (target : ℕ) (c : Configuration w) :
+    (runOn schedule target c).map project =
+      ConjectureMachines.Riemann95.nSteps schedule.length (project c) := by
+  rw [runOn_eq, ← project_run]
+  cases run schedule.length c <;> simp
+
+theorem runOn_eq_of_length {w : ℕ} {left right : List ℕ}
+    (length : left.length = right.length) (target : ℕ) (c : Configuration w) :
+    runOn left target c = runOn right target c := by
+  rw [runOn_eq, runOn_eq, length]
+
+/-- The original boot certificate is independent of the chosen window
+at every instruction, including the final display window. -/
+theorem blank_runOn_reaches_initialRoot (schedule : List ℕ)
+    (length : schedule.length = 3634) (origin target : ℕ) :
+    ∃ result, runOn schedule target (blank origin) = some result ∧
+      project result = ConjectureMachines.Riemann95.initialRoot := by
+  obtain ⟨result, runResult, source⟩ := blank_reaches_initialRoot origin
+  refine ⟨readdress target result, ?_, (project_readdress _ _).trans source⟩
+  rw [runOn_eq, length, runResult]
+  rfl
+
+/-- A raw prime code is rejected in every different window. This tests the
+need for explicit readdressing when window transitions are implemented. -/
+theorem checkAddress_stale {u v : ℕ} (different : u ≠ v) (a : Address u) :
+    checkAddress v a.val = none := by
+  have hu := a.property.2
+  have notValid : ¬ InWindow v a.val := by
+    intro hv
+    have h := hv.2
+    omega
+  simp [checkAddress, notValid]
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
