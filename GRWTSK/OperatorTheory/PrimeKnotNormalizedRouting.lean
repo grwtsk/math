@@ -72,16 +72,14 @@ private theorem incidenceEntry_eq (s : Source Prime Knot) (encode : Slot → Pri
   by_cases hi : Linked s (encode i) k <;> by_cases hj : Linked s (encode j) k <;>
     simp [edgeWeight, hi, hj]
 
-/-- Some row devotes at most one quarter of its full mass to the desired
-successor. Zero rows are excluded so the ratio represents a distribution. -/
-theorem exists_normalized_forward_le_quarter [Nonempty Slot]
-    (s : Source Prime Knot) (encode : Slot → Prime) (weight : Knot → ℝ)
-    (nonneg : ∀ k, 0 ≤ weight k)
-    (next : Slot → Slot)
-    (distinct : ∀ i, Function.Injective (fun t : Fin 4 => (next^[t.val]) i))
-    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j) :
-    ∃ i, incidenceEntry s encode weight i (next i) /
-      (∑ j, incidenceEntry s encode weight i j) ≤ 1 / 4 := by
+/-- The full routing deficit is a sum of individual knot deficits. -/
+private theorem forward_deficit (s : Source Prime Knot) (encode : Slot → Prime)
+    (weight : Knot → ℝ) (next : Slot → Slot) :
+    let slots (k : Knot) := Finset.univ.filter fun i => Linked s (encode i) k
+    (∑ i, ∑ j, incidenceEntry s encode weight i j) -
+      4 * (∑ i, incidenceEntry s encode weight i (next i)) =
+      ∑ k, (((slots k).card : ℝ)^2 -
+        4 * ((slots k).filter fun i => next i ∈ slots k).card) * weight k := by
   classical
   let S (k : Knot) : Finset Slot := Finset.univ.filter fun i => Linked s (encode i) k
   have forward (k : Knot) :
@@ -107,24 +105,50 @@ theorem exists_normalized_forward_le_quarter [Nonempty Slot]
     rw [← Finset.sum_filter]
     change (∑ _i ∈ S k, (S k).card * weight k) = _
     simp [nsmul_eq_mul, pow_two, mul_assoc]
-  have total : 4 * (∑ i, incidenceEntry s encode weight i (next i)) ≤
-      ∑ i, ∑ j, incidenceEntry s encode weight i j := by
-    let entry (i j : Slot) (k : Knot) : ℝ :=
-      if Linked s (encode i) k ∧ Linked s (encode j) k then weight k else 0
-    have reorder : (∑ i, ∑ j, ∑ k, entry i j k) = ∑ k, ∑ i, ∑ j, entry i j k := by
-      calc
-        _ = ∑ i, ∑ k, ∑ j, entry i j k :=
-          Finset.sum_congr rfl (fun i _ => Finset.sum_comm)
-        _ = _ := Finset.sum_comm
-    simp_rw [incidenceEntry_eq]
-    change 4 * (∑ i, ∑ k, entry i (next i) k) ≤ ∑ i, ∑ j, ∑ k, entry i j k
-    rw [Finset.sum_comm, reorder, Finset.mul_sum]
-    apply Finset.sum_le_sum
-    intro k _
-    change 4 * (∑ i, if Linked s (encode i) k ∧ Linked s (encode (next i)) k then weight k else 0) ≤
-      ∑ i, ∑ j, if Linked s (encode i) k ∧ Linked s (encode j) k then weight k else 0
-    rw [forward, allEntries, ← mul_assoc]
-    exact mul_le_mul_of_nonneg_right (by exact_mod_cast successor_count_le_square next distinct (S k)) (nonneg k)
+  let entry (i j : Slot) (k : Knot) : ℝ :=
+    if Linked s (encode i) k ∧ Linked s (encode j) k then weight k else 0
+  have reorder : (∑ i, ∑ j, ∑ k, entry i j k) = ∑ k, ∑ i, ∑ j, entry i j k := by
+    calc
+      _ = ∑ i, ∑ k, ∑ j, entry i j k :=
+        Finset.sum_congr rfl (fun i _ => Finset.sum_comm)
+      _ = _ := Finset.sum_comm
+  simp_rw [incidenceEntry_eq]
+  change (∑ i, ∑ j, ∑ k, entry i j k) - 4 * (∑ i, ∑ k, entry i (next i) k) =
+    ∑ k, (((S k).card : ℝ)^2 -
+      4 * ((S k).filter fun i => next i ∈ S k).card) * weight k
+  rw [reorder, Finset.sum_comm (s := Finset.univ) (t := Finset.univ)
+    (f := fun i k => entry i (next i) k), Finset.mul_sum, ← Finset.sum_sub_distrib]
+  apply Finset.sum_congr rfl
+  intro k _
+  change (∑ i, ∑ j, if Linked s (encode i) k ∧ Linked s (encode j) k then weight k else 0) -
+    4 * (∑ i, if Linked s (encode i) k ∧ Linked s (encode (next i)) k then weight k else 0) = _
+  rw [forward, allEntries]
+  ring
+
+private theorem forward_deficit_nonneg (s : Source Prime Knot) (encode : Slot → Prime)
+    (weight : Knot → ℝ) (nonneg : ∀ k, 0 ≤ weight k) (next : Slot → Slot)
+    (distinct : ∀ i, Function.Injective (fun t : Fin 4 => (next^[t.val]) i)) :
+    0 ≤ (∑ i, ∑ j, incidenceEntry s encode weight i j) -
+      4 * (∑ i, incidenceEntry s encode weight i (next i)) := by
+  classical
+  rw [forward_deficit]
+  apply Finset.sum_nonneg
+  intro k _
+  have count := successor_count_le_square next distinct
+    (Finset.univ.filter fun i => Linked s (encode i) k)
+  exact mul_nonneg (sub_nonneg.mpr (by exact_mod_cast count)) (nonneg k)
+
+/-- Some row devotes at most one quarter of its full mass to the desired
+successor. Zero rows are excluded so the ratio represents a distribution. -/
+theorem exists_normalized_forward_le_quarter [Nonempty Slot]
+    (s : Source Prime Knot) (encode : Slot → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (next : Slot → Slot)
+    (distinct : ∀ i, Function.Injective (fun t : Fin 4 => (next^[t.val]) i))
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j) :
+    ∃ i, incidenceEntry s encode weight i (next i) /
+      (∑ j, incidenceEntry s encode weight i j) ≤ 1 / 4 := by
+  have total := sub_nonneg.mp (forward_deficit_nonneg s encode weight nonneg next distinct)
   by_contra none
   push Not at none
   have strict : (∑ i, ∑ j, incidenceEntry s encode weight i j) <
@@ -136,6 +160,65 @@ theorem exists_normalized_forward_le_quarter [Nonempty Slot]
   rw [← Finset.mul_sum] at strict
   exact (not_lt_of_ge total) strict
 
+/-- A positive-weight knot incident to at least five encoded slots
+forces some row strictly below one quarter of its full mass. -/
+theorem exists_normalized_forward_lt_quarter (s : Source Prime Knot)
+    (encode : Slot → Prime) (weight : Knot → ℝ) (nonneg : ∀ k, 0 ≤ weight k)
+    (next : Slot → Slot)
+    (distinct : ∀ i, Function.Injective (fun t : Fin 4 => (next^[t.val]) i))
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (k : Knot) (positive : 0 < weight k)
+    (large : 5 ≤ (Finset.univ.filter fun i => Linked s (encode i) k).card) :
+    ∃ i, incidenceEntry s encode weight i (next i) /
+      (∑ j, incidenceEntry s encode weight i j) < 1 / 4 := by
+  classical
+  have deficit : 0 < (∑ i, ∑ j, incidenceEntry s encode weight i j) -
+      4 * (∑ i, incidenceEntry s encode weight i (next i)) := by
+    rw [forward_deficit]
+    let S (j : Knot) := Finset.univ.filter fun i => Linked s (encode i) j
+    have largeR : (5 : ℝ) ≤ (S k).card := by exact_mod_cast large
+    have sub : ((S k).filter fun i => next i ∈ S k).card ≤ (S k).card :=
+      Finset.card_le_card (Finset.filter_subset _ _)
+    have subR : (((S k).filter fun i => next i ∈ S k).card : ℝ) ≤ (S k).card := by
+      exact_mod_cast sub
+    have strict : 0 < ((S k).card : ℝ)^2 -
+        4 * ((S k).filter fun i => next i ∈ S k).card := by
+      nlinarith [mul_nonneg (show 0 ≤ ((S k).card : ℝ) - 5 by linarith)
+        (show 0 ≤ ((S k).card : ℝ) by positivity)]
+    apply Finset.sum_pos'
+    · intro j _
+      have count := successor_count_le_square next distinct (S j)
+      exact mul_nonneg (sub_nonneg.mpr (by exact_mod_cast count)) (nonneg j)
+    · exact ⟨k, Finset.mem_univ k, mul_pos strict positive⟩
+  by_contra none
+  push Not at none
+  have sumLe : (∑ i, ∑ j, incidenceEntry s encode weight i j) ≤
+      ∑ i, 4 * incidenceEntry s encode weight i (next i) := by
+    apply Finset.sum_le_sum
+    intro i _
+    have bound := (le_div_iff₀ (active i)).mp (none i)
+    linarith
+  rw [← Finset.mul_sum] at sumLe
+  linarith
+
+private theorem ring95_distinct (i : Fin 95) :
+    Function.Injective (fun t : Fin 4 => ((fun j : Fin 95 => j + 1)^[t.val]) i) := by
+  let next : Fin 95 → Fin 95 := fun i => i + 1
+  have iterate (i : Fin 95) (n : ℕ) : (next^[n]) i = i + (n : Fin 95) := by
+    induction n with
+    | zero => simp
+    | succ n h =>
+      rw [Function.iterate_succ_apply', h]
+      simp [next, Nat.cast_succ, add_assoc]
+  intro t u h
+  change (next^[t.val]) i = (next^[u.val]) i at h
+  rw [iterate, iterate] at h
+  have same : (t.val : Fin 95) = (u.val : Fin 95) := add_left_cancel h
+  have cast := congrArg Fin.val same
+  apply Fin.ext
+  simpa only [Fin.val_natCast, Nat.mod_eq_of_lt (show t.val < 95 by omega),
+    Nat.mod_eq_of_lt (show u.val < 95 by omega)] using cast
+
 /-- The 95-slot directed ring satisfies the four-distinct-iterates
 hypothesis, including when it wraps past its last slot. -/
 theorem exists_normalized_95_forward_le_quarter
@@ -144,21 +227,16 @@ theorem exists_normalized_95_forward_le_quarter
     (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j) :
     ∃ i, incidenceEntry s encode weight i (i + 1) /
       (∑ j, incidenceEntry s encode weight i j) ≤ 1 / 4 := by
-  let next : Fin 95 → Fin 95 := fun i => i + 1
-  have iterate (i : Fin 95) (n : ℕ) : (next^[n]) i = i + (n : Fin 95) := by
-    induction n with
-    | zero => simp
-    | succ n h =>
-      rw [Function.iterate_succ_apply', h]
-      simp [next, Nat.cast_succ, add_assoc]
-  apply exists_normalized_forward_le_quarter s encode weight nonneg next _ active
-  intro i t u h
-  change (next^[t.val]) i = (next^[u.val]) i at h
-  rw [iterate, iterate] at h
-  have same : (t.val : Fin 95) = (u.val : Fin 95) := add_left_cancel h
-  have cast := congrArg Fin.val same
-  apply Fin.ext
-  simpa only [Fin.val_natCast, Nat.mod_eq_of_lt (show t.val < 95 by omega),
-    Nat.mod_eq_of_lt (show u.val < 95 by omega)] using cast
+  exact exists_normalized_forward_le_quarter s encode weight nonneg _ ring95_distinct active
+
+theorem exists_normalized_95_forward_lt_quarter
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (k : Knot) (positive : 0 < weight k)
+    (large : 5 ≤ (Finset.univ.filter fun i => Linked s (encode i) k).card) :
+    ∃ i, incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j) < 1 / 4 :=
+  exists_normalized_forward_lt_quarter s encode weight nonneg _ ring95_distinct active k positive large
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
