@@ -518,4 +518,61 @@ theorem no_halts_decision_from_fixed_depth {Observation : Type*} (window depth :
 
 end ScanWitnesses
 
+private theorem step_position_parity {window : ℕ} {c d : Configuration window}
+    (h : step c = some d) : (d.position - c.position - 1) % 2 = 0 := by
+  unfold step at h
+  cases cell : ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => simp [cell] at h
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    rw [cell, Option.map_some] at h
+    have same := Option.some.inj h
+    subst d
+    cases direction <;> simp only [writeMove] <;> omega
+
+/-- Each successful native instruction reverses absolute head parity. -/
+theorem run_position_parity {window : ℕ} (n : ℕ) {c d : Configuration window}
+    (h : run n c = some d) : (d.position - c.position - (n : ℤ)) % 2 = 0 := by
+  induction n generalizing c with
+  | zero =>
+    have same : c = d := Option.some.inj h
+    subst d
+    simp
+  | succ n ih =>
+    rw [run] at h
+    cases stepEq : step c with
+    | none => simp [stepEq] at h
+    | some e =>
+      have tail : run n e = some d := by simpa only [stepEq, Option.bind_some] using h
+      have first := step_position_parity stepEq
+      have rest := ih tail
+      omega
+
+/-- An exact return of the whole configuration has even instruction length. -/
+theorem closed_run_even {window : ℕ} (n : ℕ) (c : Configuration window)
+    (h : run n c = some c) : n % 2 = 0 := by
+  have parity := run_position_parity n h
+  omega
+
+/-- The 95-address count cannot be the length of a closed native run with
+its absolute head position retained. -/
+theorem run95_ne_self {window : ℕ} (c : Configuration window) :
+    run 95 c ≠ some c := by
+  intro h
+  have parity := closed_run_even 95 c h
+  omega
+
+/-- The actual row-12 right scan provides a projected 95-step loop in
+every prime window. Its absolute displacement is 95. -/
+theorem exists_projected_run95_return (window : ℕ) :
+    ∃ c d : Configuration window, run 95 c = some d ∧
+      project c = project d ∧ d.position = c.position + 95 := by
+  let zeros : List (Fin 2) := List.replicate 95 0
+  have padding : ListBlank.mk ([] : List (Fin 2)) = ListBlank.mk zeros := by
+    exact Quot.sound (Or.inl ⟨95, rfl⟩)
+  refine ⟨zeroScan window 0 [] zeros, zeroScan window 95 zeros [], ?_, ?_, rfl⟩
+  · simpa only [zeros, List.append_nil, Int.zero_add, Nat.cast_ofNat] using
+      run_zeroScan_prefix window 95 0 [] []
+  · simp only [zeroScan, project, ← padding]
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine

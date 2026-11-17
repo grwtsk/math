@@ -145,6 +145,27 @@ carrier to the executable configuration and a proof that initialized
 states, successful instruction boundaries, and terminal results satisfy
 that relation. The direct interpreter supplies the target for such a proof.
 
+## Closed walks with absolute head position
+
+`run_position_parity` tracks displacement modulo two for every successful
+exact-length run. Each source instruction moves the absolute head one
+cell left or right, and both moves reverse its parity. Induction gives
+displacement congruent to the number of instructions. A closed walk
+of whole executable configurations has zero displacement, so
+`closed_run_even` forces even length. In particular, `run95_ne_self`
+excludes a 95-instruction closed walk in every prime window.
+
+This is an obstruction for the graph whose vertices carry the whole
+executable configuration. The native projection forgets absolute
+position, and a loop in a control or projected graph needs a separate
+lift to certify a closed walk with absolute position.
+The original table entry at state 12 reading zero writes zero and
+moves right to state 12. Starting on an all-blank pointed tape,
+`exists_projected_run95_return` runs this entry 95 times. Both
+half-tapes still represent blanks in the native quotient, while the
+absolute position has increased by 95. This gives a genuine projected
+loop that fails the full-configuration return condition.
+
 ## Verification
 
 The isolated Lake target built on Lean 4.35.0-rc4 with the actual pinned
