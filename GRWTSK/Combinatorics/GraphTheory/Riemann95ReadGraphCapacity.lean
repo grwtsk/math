@@ -279,15 +279,19 @@ private theorem blank_reaches_padded_root (nonhalt : ¬ ConjectureMachines.Bundl
     rw [Riemann95.Dispatch.nSteps_composition, reached, Option.bind_some]
     exact trace
 
-/-- Any exact rooted graph for the native blank-start read prefixes
-would force the native machine to halt. If it runs forever, its exact
-physical roots expose arbitrarily long zero runs followed by one. -/
-theorem halts_of_finite_exact_rooted_read_graph {V : Type*} [Fintype V]
+/-- On a nonhalting native run, any finite rooted graph covering every native
+read prefix accepts a spurious word. The word deletes at least one and at most
+the vertex count of zeros from a genuine prefix ending at a padded-root marker. -/
+theorem spurious_padded_prefix_of_nonhalt_of_cover {V : Type*} [Fintype V]
     (G : LabeledGraph V Read) (root : V)
-    (exactRoot : ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d) :
-    ConjectureMachines.BundledMachine.Halts Riemann95.candidate := by
+    (nonhalt : ¬ ConjectureMachines.BundledMachine.Halts Riemann95.candidate)
+    (covers : ∀ word, (∃ d, WordPath readGraph init word d) → ∃ t, WordPath G root word t) :
+    ∃ (entryWord : List Read) (pad count : ℕ),
+      count < pad ∧ pad - count ≤ Fintype.card V ∧
+      (∃ d, WordPath readGraph init (entryWord ++ (List.replicate pad 0 ++ [1])) d) ∧
+      (∃ t, WordPath G root (entryWord ++ (List.replicate count 0 ++ [1])) t) ∧
+      ¬ ∃ d, WordPath readGraph init (entryWord ++ (List.replicate count 0 ++ [1])) d := by
   classical
-  by_contra nonhalt
   obtain ⟨pad, room, bank, time, reached⟩ :=
     blank_reaches_padded_root nonhalt (Fintype.card V)
   let c := Riemann95.Physical.rootCfg pad [] ([0,0,0,Fintype.card V,0] ++ bank)
@@ -298,9 +302,10 @@ theorem halts_of_finite_exact_rooted_read_graph {V : Type*} [Fintype V]
     rw [pEq]
     exact physical_root_reads_pad _ _
   obtain ⟨finish, native⟩ := readPad
-  obtain ⟨target, whole⟩ := (exactRoot _).2 ⟨finish, wordPath_append entry native⟩
+  have sourceWord := wordPath_append entry native
+  obtain ⟨target, whole⟩ := covers _ ⟨finish, sourceWord⟩
   obtain ⟨entryVertex, entryPath, tail⟩ := wordPath_split_append G _ _ whole
-  have cuts (i : Fin (pad + 1)) :
+  have cuts (i : Fin (Fintype.card V + 1)) :
       ∃ v, WordPath G entryVertex (List.replicate i.val 0) v ∧
         WordPath G v (List.replicate (pad - i.val) 0 ++ [1]) target := by
     have split : pad = i.val + (pad - i.val) := by omega
@@ -310,39 +315,59 @@ theorem halts_of_finite_exact_rooted_read_graph {V : Type*} [Fintype V]
       exact tail
     exact wordPath_split_append G _ _ ht
   choose vertex cut using cuts
-  have distinguish (i j : Fin (pad + 1)) (lt : i < j) : vertex i ≠ vertex j := by
-    intro same
-    have first := (cut i).1
-    rw [same] at first
-    let count := i.val + (pad - j.val)
-    have short : count < pad := by
-      have less : i.val < j.val := lt
-      dsimp [count]
-      omega
-    have pumped : WordPath G root (entryWord ++ (List.replicate count 0 ++ [1])) target := by
-      have splice := wordPath_append entryPath (wordPath_append first (cut j).2)
-      simpa only [count, List.replicate_add, List.append_assoc] using splice
-    obtain ⟨dest, impossible⟩ := (exactRoot _).mp ⟨target, pumped⟩
-    obtain ⟨middle, before, after⟩ := wordPath_split_append readGraph _ _ impossible
-    have middleEq := native_destination_unique before entry
-    subst middle
-    have sameWord := forced_prefix (G := readGraph)
-      (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
-      after native (by simp; omega)
-    have atMarker := congrArg (fun word : List Read => word[count]?) sameWord
-    rw [List.getElem?_append_right (by simp), List.length_replicate, Nat.sub_self] at atMarker
-    rw [List.getElem?_take_of_lt (by simp), List.getElem?_append_left (by simpa using short),
-      List.getElem?_replicate_of_lt short] at atMarker
-    exact (by decide : (some (1 : Read)) ≠ some 0) atMarker
-  have inj : Function.Injective vertex := by
+  have collision : ¬ Function.Injective vertex := by
+    intro inj
+    have big := Fintype.card_le_of_injective vertex inj
+    simp at big
+  have repeated : ∃ i j, vertex i = vertex j ∧ i ≠ j := by
+    by_contra missing
+    apply collision
     intro i j same
-    rcases lt_trichotomy i j with lt | eq | gt
-    · exact (distinguish i j lt same).elim
-    · exact eq
-    · exact (distinguish j i gt same.symm).elim
-  have big : pad + 1 ≤ Fintype.card V := by
-    simpa using Fintype.card_le_of_injective vertex inj
-  omega
+    by_contra ne
+    exact missing ⟨i, j, same, ne⟩
+  obtain ⟨i, j, same, ne⟩ := repeated
+  suffices spliceWitness : ∀ (i j : Fin (Fintype.card V + 1)), i < j → vertex i = vertex j → _ by
+    rcases lt_or_gt_of_ne ne with less | greater
+    · exact spliceWitness i j less same
+    · exact spliceWitness j i greater same.symm
+  intro i j lt same
+  have first := (cut i).1
+  rw [same] at first
+  let count := i.val + (pad - j.val)
+  have short : count < pad := by
+    have less : i.val < j.val := lt
+    dsimp [count]
+    omega
+  have pumped : WordPath G root (entryWord ++ (List.replicate count 0 ++ [1])) target := by
+    have splice := wordPath_append entryPath (wordPath_append first (cut j).2)
+    simpa only [count, List.replicate_add, List.append_assoc] using splice
+  refine ⟨entryWord, pad, count, short, ?_, ⟨finish, sourceWord⟩, ⟨target, pumped⟩, ?_⟩
+  · dsimp [count]
+    have bound := j.isLt
+    omega
+  rintro ⟨dest, impossible⟩
+  obtain ⟨middle, before, after⟩ := wordPath_split_append readGraph _ _ impossible
+  have middleEq := native_destination_unique before entry
+  subst middle
+  have sameWord := forced_prefix (G := readGraph)
+    (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
+    after native (by simp; omega)
+  have atMarker := congrArg (fun word : List Read => word[count]?) sameWord
+  rw [List.getElem?_append_right (by simp), List.length_replicate, Nat.sub_self] at atMarker
+  rw [List.getElem?_take_of_lt (by simp), List.getElem?_append_left (by simpa using short),
+    List.getElem?_replicate_of_lt short] at atMarker
+  exact (by decide : (some (1 : Read)) ≠ some 0) atMarker
+/-- Any exact rooted graph for the native blank-start read prefixes
+would force the native machine to halt. -/
+theorem halts_of_finite_exact_rooted_read_graph {V : Type*} [Fintype V]
+    (G : LabeledGraph V Read) (root : V)
+    (exactRoot : ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d) :
+    ConjectureMachines.BundledMachine.Halts Riemann95.candidate := by
+  classical
+  by_contra nonhalt
+  obtain ⟨entryWord, _, count, _, _, _, accepted, rejected⟩ :=
+    spurious_padded_prefix_of_nonhalt_of_cover G root nonhalt (fun word => (exactRoot word).mpr)
+  exact rejected ((exactRoot (entryWord ++ (List.replicate count 0 ++ [1]))).mp accepted)
 
 /-- Exact finite presentation of the native blank read prefixes would refute RH. -/
 theorem not_riemannHypothesis_of_finite_exact_rooted_read_graph {V : Type*} [Fintype V]

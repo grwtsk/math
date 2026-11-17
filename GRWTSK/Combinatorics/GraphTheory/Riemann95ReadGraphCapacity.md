@@ -120,3 +120,31 @@ all four transitive audits passed on the pins above. Only `propext`,
 `ad61b3d55c62e6439808aa17920b0ea2a4c67d1544b704c79711e3ec39802223`.
 Full fresh dependency replay, independent review and HS graph lifting
 remain `NOT_RUN`.
+
+## Bounded deletion witness under native nonhalting
+
+`spurious_padded_prefix_of_nonhalt_of_cover` uses the same pinned
+blank run and read labels. Write a genuine prefix as (u 0^p 1),
+where (u) reaches the physical padded root and (p) exceeds the
+vertex count (b) of the covering graph. On one covered path, the
+first (b+1) cuts of the zero block have a repeated vertex at
+positions (i<j). Joining the path up to (i) to the suffix from
+(j) deletes (j-i) zeros. The graph accepts this splice. The
+native machine reaches the same configuration after (u), and at
+the shortened marker position its deterministic read is still
+zero. The positive deletion bound (j-i\le b) lets a candidate
+graph's soundness test reject exactness using a word with unchanged
+entry and final marker. The existing exact presentation implication
+now takes this witness as its contradiction.
+
+The earlier finite marker check applies without nonhalting and only
+rules out graphs below its finite capacity bound. The bounded
+deletion argument uses the separate premise of native nonhalting
+to reach a pad for an arbitrary finite vertex count. It preserves
+the unresolved physical graph lifting obligation.
+
+Strict target elaboration, target kernel replay with compiled imports
+and the transitive axiom audit passed on the pins above. The audit
+reported only `propext`, `Classical.choice` and `Quot.sound`.
+Checked Lean SHA-256 `2246b4a2ba13f6c9358e367743222b9eb115766e6b603e9a3b176363120b13e8`. Fresh full dependency replay,
+independent review and physical graph lifting remain `NOT_RUN`.
