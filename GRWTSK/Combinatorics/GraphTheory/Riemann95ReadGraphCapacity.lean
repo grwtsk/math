@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
-import Cryptids.Riemann95Definition
+import Cryptids.Semantics.Riemann95
 import GRWTSK.DynamicalSystemsAndErgodicTheory.SoficSingletonPrefixCapacity
 
 /-!
@@ -203,5 +203,153 @@ theorem halted_rooted_graph_capacity {V : Type*} [Fintype V]
     · exact eq
     · exact (separates j i gt same.symm).elim
   simpa using Fintype.card_le_of_injective visit injective
+
+
+private theorem path_of_native_steps {start finish : Configuration} {n : ℕ}
+    (trace : Riemann95.nSteps n start = some finish) :
+    ∃ word, WordPath readGraph start word finish := by
+  induction n generalizing start with
+  | zero =>
+    cases Option.some.inj trace
+    exact ⟨[], .nil _⟩
+  | succ n ih =>
+    rw [Riemann95.nSteps] at trace
+    cases edge : step Riemann95.machine start with
+    | none => simp [edge] at trace
+    | some next =>
+      obtain ⟨word, path⟩ := ih (by simpa only [edge, Option.bind_some] using trace)
+      exact ⟨start.tape.head :: word, .cons _ _ ⟨rfl, edge⟩ path⟩
+
+private theorem native_destination_unique {start a b : Configuration} {word : List Read}
+    (x : WordPath readGraph start word a) (y : WordPath readGraph start word b) : a = b := by
+  induction x generalizing b with
+  | nil => cases y; rfl
+  | cons label word edge tail ih =>
+    cases y with
+    | cons _ _ other rest =>
+      obtain rfl := Option.some.inj (edge.2.symm.trans other.2)
+      exact ih rest
+
+private def scanTape (left : ListBlank Read) (right : List Read) : Tape Read :=
+  Tape.mk' left (ListBlank.mk right)
+
+private theorem scan31_marker (n : ℕ) (left : ListBlank Read) (rest : List Read) :
+    ∃ finish, WordPath readGraph
+      ⟨31, scanTape left (List.replicate n 0 ++ 1 :: rest)⟩
+      (List.replicate n 0 ++ [1]) finish := by
+  induction n generalizing left with
+  | zero =>
+    exact ⟨⟨54, scanTape (left.cons 0) rest⟩,
+      .cons 1 [] ⟨rfl, rfl⟩ (.nil _)⟩
+  | succ n ih =>
+    obtain ⟨finish, path⟩ := ih (left.cons 1)
+    rw [List.replicate_succ, List.cons_append, List.cons_append]
+    exact ⟨finish, .cons 0 _ ⟨rfl, rfl⟩ path⟩
+
+/-- The actual physical root reads its entire pad as zeros and then
+reads the delimiter one. No claim about the remaining register tape is needed. -/
+theorem physical_root_reads_pad (n : ℕ) (bank : List ℕ) :
+    ∃ finish, WordPath readGraph (Riemann95.Physical.rootCfg (n + 2) [] bank)
+      (List.replicate (n + 2) 0 ++ [1]) finish := by
+  let left : ListBlank Read := ListBlank.cons 1 default
+  let rest := 0 :: Semantics.Riemann.Layer1.encodeRegs bank
+  obtain ⟨finish, path⟩ := scan31_marker n ((left.cons 0).cons 0) rest
+  refine ⟨finish, ?_⟩
+  simp only [Riemann95.Physical.rootCfg, List.length_nil, Nat.sub_zero, List.nil_append,
+    List.replicate_succ, List.cons_append, List.append_assoc, List.nil_append]
+  exact .cons 0 _ ⟨rfl, rfl⟩ (.cons 0 _ ⟨rfl, rfl⟩ path)
+
+private theorem blank_reaches_padded_root (nonhalt : ¬ ConjectureMachines.BundledMachine.Halts Riemann95.candidate)
+    (stage : ℕ) :
+    ∃ pad ≥ stage + 21, ∃ bank time,
+      Riemann95.nSteps time (init : Configuration) =
+        some (Riemann95.Physical.rootCfg pad [] ([0,0,0,stage,0] ++ bank)) := by
+  induction stage with
+  | zero =>
+    exact ⟨22, by decide, Riemann95.initialExtra, 3634,
+      by simpa only [Riemann95.Physical.initialRoot_eq_rootCfg, Riemann95.initialRegs] using
+        Riemann95.BootCertificate.boot_reaches_initialRoot⟩
+  | succ stage ih =>
+    obtain ⟨pad, room, bank, time, reached⟩ := ih
+    have safe : ¬ Riemann120.ShuniaCounterexample (stage + 2) :=
+      fun bad => nonhalt (Riemann95.halts_candidate_iff_counterexample.mpr ⟨stage, bad⟩)
+    obtain ⟨nextPad, grew, ticks, _, extra, trace⟩ :=
+      (Riemann95.physical_stage_outcomes stage pad room bank).1 safe
+    refine ⟨nextPad, by omega, extra, time + ticks, ?_⟩
+    rw [Riemann95.Dispatch.nSteps_composition, reached, Option.bind_some]
+    exact trace
+
+/-- Any exact rooted graph for the native blank-start read prefixes
+would force the native machine to halt. If it runs forever, its exact
+physical roots expose arbitrarily long zero runs followed by one. -/
+theorem halts_of_finite_exact_rooted_read_graph {V : Type*} [Fintype V]
+    (G : LabeledGraph V Read) (root : V)
+    (exactRoot : ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d) :
+    ConjectureMachines.BundledMachine.Halts Riemann95.candidate := by
+  classical
+  by_contra nonhalt
+  obtain ⟨pad, room, bank, time, reached⟩ :=
+    blank_reaches_padded_root nonhalt (Fintype.card V)
+  let c := Riemann95.Physical.rootCfg pad [] ([0,0,0,Fintype.card V,0] ++ bank)
+  obtain ⟨entryWord, entry⟩ := path_of_native_steps reached
+  obtain ⟨n, pEq⟩ : ∃ n, pad = n + 2 := ⟨pad - 2, by omega⟩
+  have readPad : ∃ fin, WordPath readGraph c (List.replicate pad 0 ++ [1]) fin := by
+    unfold c
+    rw [pEq]
+    exact physical_root_reads_pad _ _
+  obtain ⟨finish, native⟩ := readPad
+  obtain ⟨target, whole⟩ := (exactRoot _).2 ⟨finish, wordPath_append entry native⟩
+  obtain ⟨entryVertex, entryPath, tail⟩ := wordPath_split_append G _ _ whole
+  have cuts (i : Fin (pad + 1)) :
+      ∃ v, WordPath G entryVertex (List.replicate i.val 0) v ∧
+        WordPath G v (List.replicate (pad - i.val) 0 ++ [1]) target := by
+    have split : pad = i.val + (pad - i.val) := by omega
+    have ht : WordPath G entryVertex
+        (List.replicate i.val 0 ++ (List.replicate (pad - i.val) 0 ++ [1])) target := by
+      rw [← List.append_assoc, ← List.replicate_add, ← split]
+      exact tail
+    exact wordPath_split_append G _ _ ht
+  choose vertex cut using cuts
+  have distinguish (i j : Fin (pad + 1)) (lt : i < j) : vertex i ≠ vertex j := by
+    intro same
+    have first := (cut i).1
+    rw [same] at first
+    let count := i.val + (pad - j.val)
+    have short : count < pad := by
+      have less : i.val < j.val := lt
+      dsimp [count]
+      omega
+    have pumped : WordPath G root (entryWord ++ (List.replicate count 0 ++ [1])) target := by
+      have splice := wordPath_append entryPath (wordPath_append first (cut j).2)
+      simpa only [count, List.replicate_add, List.append_assoc] using splice
+    obtain ⟨dest, impossible⟩ := (exactRoot _).mp ⟨target, pumped⟩
+    obtain ⟨middle, before, after⟩ := wordPath_split_append readGraph _ _ impossible
+    have middleEq := native_destination_unique before entry
+    subst middle
+    have sameWord := forced_prefix (G := readGraph)
+      (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
+      after native (by simp; omega)
+    have atMarker := congrArg (fun word : List Read => word[count]?) sameWord
+    rw [List.getElem?_append_right (by simp), List.length_replicate, Nat.sub_self] at atMarker
+    rw [List.getElem?_take_of_lt (by simp), List.getElem?_append_left (by simpa using short),
+      List.getElem?_replicate_of_lt short] at atMarker
+    exact (by decide : (some (1 : Read)) ≠ some 0) atMarker
+  have inj : Function.Injective vertex := by
+    intro i j same
+    rcases lt_trichotomy i j with lt | eq | gt
+    · exact (distinguish i j lt same).elim
+    · exact eq
+    · exact (distinguish j i gt same.symm).elim
+  have big : pad + 1 ≤ Fintype.card V := by
+    simpa using Fintype.card_le_of_injective vertex inj
+  omega
+
+/-- Exact finite presentation of the native blank read prefixes would refute RH. -/
+theorem not_riemannHypothesis_of_finite_exact_rooted_read_graph {V : Type*} [Fintype V]
+    (G : LabeledGraph V Read) (root : V)
+    (exactRoot : ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d) :
+    ¬ RiemannHypothesis :=
+  Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mp
+    (halts_of_finite_exact_rooted_read_graph G root exactRoot)
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Riemann95ReadGraphCapacity

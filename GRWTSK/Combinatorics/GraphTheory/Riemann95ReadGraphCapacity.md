@@ -47,3 +47,40 @@ The isolated build uses Lean 4.35.0-rc4 and Mathlib
 `1f414401f69059aa7eead47b53ee40bd38455eeb`.
 Exact build and verification evidence is recorded with
 [issue #1821](https://github.com/grwtsk/math/issues/1821).
+
+## Exact finite graphs force halting
+
+`physical_root_reads_pad` reads `0^(n+2)1` from the native
+`Physical.rootCfg (n+2) [] bank` for every bank and natural number
+`n`. The two initial zero reads enter state 31. That state consumes
+each remaining zero moving right and then consumes the delimiter one.
+This uses the exact native transition table.
+
+`halts_of_finite_exact_rooted_read_graph` upgrades the finite lower
+bound. For any finite vertex type, graph and root, equality between the
+rooted word language and all successful blank-start native read
+prefixes implies `BundledMachine.Halts Riemann95.candidate`.
+Under nonhalting, the certified bootstrap and the safe case of
+`physical_stage_outcomes` reach physical roots with pad at least
+`stage + 21` for every stage. Fix such a pad larger than the vertex
+count. On a graph path for the native prefix through the delimiter,
+choose a cut after each of 0 through pad zeros after entering the
+physical root. If the cuts at indices `i < j` share a vertex, their
+splice admits `i + pad - j` zeros followed by a one after the common
+entry word. That one occurs at a position where the native path still
+reads zero. Native determinism fixes the entry configuration and forces
+the discrepancy. Thus the cuts inject into the graph vertices, a
+contradiction. For example, splicing adjacent cuts in the 22-zero pad
+admits 21 zeros followed by a one, whereas the next native bit there
+is still zero.
+
+The upstream source consumer is the pinned equivalence
+`Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis`.
+Its application is
+`not_riemannHypothesis_of_finite_exact_rooted_read_graph`. Any proposed
+finite graph must establish equality of the two rooted languages
+before this corollary applies. Both physical reachability and the RH
+transfer use the same pinned Cryptids revision.
+[Physical root](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Physical95.lean) ·
+[Stage theorem](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Stage95.lean) ·
+[RH equivalence](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/Semantics/Riemann95.lean)
