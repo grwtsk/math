@@ -365,8 +365,8 @@ and never serve as proof edges. [Space colonization, 2007](https://diglib.eg.org
 | rh | goal | Riemann hypothesis | r-weil, r-xi, r-mobius, r-cryptids, r-jensen, r-newman |
 | g-direct | and | Direct primitive zeros | rh, primitive-right |
 | g-corridor | and | Residual right corridor | rh, upper-bound, corridor |
-| g-weil | and | Primitive Weil stages | rh, primitive-witness, character-stages |
-| g-weil-corridor | and | Corridor Weil witnesses | rh, upper-bound, corridor-witness, character-stages |
+| g-weil | and | Primitive Weil stages | rh, primitive-explicit-formula, character-stages |
+| g-weil-corridor | and | Corridor Weil witnesses | rh, upper-bound, primitive-explicit-formula, character-stages |
 | corridor | goal | Residual corridor exclusion | c-partition, c-cofinal |
 | c-partition | and | Conductor and height partition | finite-head, height-tail, conductor-tail |
 | c-cofinal | and | Characterwise cofinal heights | local-heights |
@@ -378,8 +378,7 @@ and never serve as proof edges. [Space colonization, 2007](https://diglib.eg.org
 | r-newman | and | de Bruijn–Newman heat | heat-zero-time, heat-source |
 | primitive-right | open | All primitive right-half zeros excluded | |
 | upper-bound | source | Strict 7/8 theorem and ordinary source | |
-| primitive-witness | open | Full primitive negative witness | |
-| corridor-witness | open | Negative witness in the residual corridor | |
+| primitive-explicit-formula | done | Exact inverse-character formula supplies both primitive negative witnesses | |
 | character-stages | open | Cofinal stages for every inverse orbit | |
 | finite-head | open | Exact finite computation matched to Lean | |
 | height-tail | open | Higher ordinates at the checked conductors | |
@@ -399,7 +398,8 @@ and never serve as proof edges. [Space colonization, 2007](https://diglib.eg.org
 | heat-zero-time | open | Classical heat threshold at time zero | |
 | heat-source | source | Classical deformation and Xi identification | |
 
-The `source` rows identify a proof input or an exact reference. Their
+The `done` row supplies both witness contracts through the canonical
+witness module. The `source` rows identify a proof input or an exact reference. Their
 usable evidence is governed by the scope in the corresponding source
 record. For `finite-head`, the open statement is a local source
 adapter for the published finite computation. Substantiating that
@@ -433,9 +433,16 @@ can be updated one route at a time without replacing the endpoint.
   `propext`, `Classical.choice` and `Quot.sound`. Full fresh replay
   of imported closures was started, with no result at source publication.
   Independent analytic review and external toolchain rebuilds are **NOT_RUN**.
-- The graph has 37 reachable nodes and 41 proof edges, with no cycles.
+- Before the witness closure the graph had 37 reachable nodes and 41
+  proof edges, with no cycles.
   The layout reached all visible attractors and restart diffusion
   conserved mass and converged in 132 route, width and restart cases.
   At restart rates 15%, 22%, and 35% the cofinal inverse-orbit stages
   ranked first among the full GRH graph's open premises. The ranking
   reflects reuse along alternatives and the supplied restart model.
+
+With the common explicit-formula node supplied, the 49% restart run for
+GRH ranks 13 open obligations. Cofinal inverse-orbit stages receive
+42.43% of their combined weight, primitive right-strip exclusion
+36.37%, and characterwise cofinal heights 3.15%. The RH view still
+ranks seven open obligations.
