@@ -1251,6 +1251,39 @@ theorem tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost
   filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
   rw [sub_div, centeredPickup_div_eq_variance_add_sq (heatedLimit s) hT]
 
+/-- Any convex combination of two genuine allowances bounds the variance
+and the squared cost relative to the corresponding settled mean. -/
+theorem eventually_variance_add_weighted_cost_le_of_two_residual_allowances
+    {s t A B w : ℝ} (hs : 0 < s) (ht : 0 < t) (hw₀ : 0 ≤ w) (hw₁ : w ≤ 1)
+    {l : Filter ℝ} (hl : l ≤ atTop)
+    (hA : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε)
+    (hB : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ B + ε)
+    {ε : ℝ} (hε : 0 < ε) :
+    ∀ᶠ T in l, pickupHorizonVariance T +
+        (pickupHorizonMean T - (w * heatedLimit s + (1 - w) * heatedLimit t)) ^ 2 ≤
+      w * A + (1 - w) * B - w * (1 - w) * (heatedLimit s - heatedLimit t) ^ 2 + ε := by
+  have hsmall : 0 < ε / 2 := by linarith
+  have hnegative : -(ε / 2) < 0 := by linarith
+  have hslim := (tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost hs).mono_left hl
+  have htlim := (tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost ht).mono_left hl
+  filter_upwards [hA (ε / 2) hsmall, hB (ε / 2) hsmall,
+    (tendsto_order.mp hslim).1 _ hnegative, (tendsto_order.mp htlim).1 _ hnegative]
+    with T hsT htT hslow htlow
+  have hsCost : pickupHorizonVariance T + (pickupHorizonMean T - heatedLimit s) ^ 2 ≤ A + ε := by
+    linarith
+  have htCost : pickupHorizonVariance T + (pickupHorizonMean T - heatedLimit t) ^ 2 ≤ B + ε := by
+    linarith
+  have hcost := add_le_add (mul_le_mul_of_nonneg_left hsCost hw₀)
+    (mul_le_mul_of_nonneg_left htCost (sub_nonneg.mpr hw₁))
+  have hsplit :
+      w * (pickupHorizonVariance T + (pickupHorizonMean T - heatedLimit s) ^ 2) +
+        (1 - w) * (pickupHorizonVariance T + (pickupHorizonMean T - heatedLimit t) ^ 2) =
+      pickupHorizonVariance T +
+        (pickupHorizonMean T - (w * heatedLimit s + (1 - w) * heatedLimit t)) ^ 2 +
+        w * (1 - w) * (heatedLimit s - heatedLimit t) ^ 2 := by ring
+  rw [hsplit] at hcost
+  linarith
+
 /-- Two genuine residual allowances on the same scales bound the measured
 variance and the squared distance to the midpoint of the settled heats. -/
 theorem eventually_variance_add_midpoint_cost_le_of_two_residual_allowances
@@ -1261,14 +1294,11 @@ theorem eventually_variance_add_midpoint_cost_le_of_two_residual_allowances
     ∀ᶠ T in l, pickupHorizonVariance T +
         (pickupHorizonMean T - (heatedLimit s + heatedLimit t) / 2) ^ 2 ≤
       (A + B) / 2 - (heatedLimit s - heatedLimit t) ^ 2 / 4 + ε := by
-  have hsmall : 0 < ε / 2 := by linarith
-  have hnegative : -(ε / 2) < 0 := by linarith
-  have hslim := (tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost hs).mono_left hl
-  have htlim := (tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost ht).mono_left hl
-  filter_upwards [hA (ε / 2) hsmall, hB (ε / 2) hsmall,
-    (tendsto_order.mp hslim).1 _ hnegative, (tendsto_order.mp htlim).1 _ hnegative]
-    with T hsT htT hslow htlow
-  nlinarith
+  have h := eventually_variance_add_weighted_cost_le_of_two_residual_allowances
+    (w := 1 / 2) hs ht (by norm_num) (by norm_num) hl hA hB hε
+  filter_upwards [h] with T hT
+  linarith [show (1 / 2 : ℝ) * heatedLimit s + (1 - 1 / 2) * heatedLimit t =
+    (heatedLimit s + heatedLimit t) / 2 by ring]
 
 /-- The squared gap between settled waves imposes a joint lower cost on
 two linear residual allowances, even without convergence of the source mean. -/
