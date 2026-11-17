@@ -620,4 +620,93 @@ theorem signedLaplace_centeredWholePickup_high_square_le {B σ a : ℝ} (hB : 0 
         have hratio : 1 ≤ ξ ^ 2 / a ^ 2 := (le_div_iff₀ (by positivity)).2 (by simpa using haξ)
         linarith
 
+/-- The exact midpoint-centered pickup has an integrable square on each
+sufficiently small positive Laplace line, with a uniform reciprocal-rate bound. -/
+theorem signedLaplace_centeredWholePickup_line_square_le_of_weakMertens {B : ℝ}
+    (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (hmid : riemannZeta (1 / 2 : ℂ) ≠ 0) :
+    ∃ σ₀ K D : ℝ, 0 < σ₀ ∧ 0 ≤ K ∧ 0 ≤ D ∧ ∀ σ : ℝ, 0 < σ → σ ≤ σ₀ →
+      let c := (2 / riemannZeta (1 / 2 : ℂ)).re
+      let G := fun ξ : ℝ =>
+        ‖signedLaplace (fun u => wholePickup u - c)
+          ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I)‖ ^ 2
+      Integrable G ∧ (∫ ξ : ℝ, G ξ) ≤ K / σ + D := by
+  obtain ⟨r, C, hr, hC, hlow⟩ := signedLaplace_centeredWholePickup_midpoint_bounded hB hM hmid
+  let a := r / (8 * Real.pi)
+  have ha : 0 < a := by dsimp [a]; positivity
+  let c := (2 / riemannZeta (1 / 2 : ℂ)).re
+  let k := 2 / ((2 * Real.pi) ^ 2 * a ^ 2)
+  let d := 2 * c ^ 2 * (1 + (a ^ 2)⁻¹) / (2 * Real.pi) ^ 2
+  have hk : 0 ≤ k := by dsimp [k]; positivity
+  have hd : 0 ≤ d := by dsimp [d]; positivity
+  let H := fun ξ : ℝ => (1 + ξ ^ 2)⁻¹
+  let J := (Ioo (-a) a).indicator (fun _ : ℝ => C ^ 2)
+  have hHI : Integrable H := integrable_inv_one_add_sq
+  have hJI : Integrable J :=
+    (integrableOn_const (by simp [Real.volume_Ioo]) :
+      IntegrableOn (fun _ : ℝ => C ^ 2) (Ioo (-a) a)).integrable_indicator measurableSet_Ioo
+  refine ⟨r / 4, k * B / 2, d * (∫ ξ : ℝ, H ξ) + ∫ ξ : ℝ, J ξ, by positivity,
+    by positivity, ?_, fun σ hσ hσmax => ?_⟩
+  · exact add_nonneg (mul_nonneg hd (integral_nonneg (fun _ => by dsimp [H]; positivity)))
+      (integral_nonneg (fun _ => indicator_nonneg (fun _ _ => sq_nonneg _) _))
+  let z (ξ : ℝ) := (σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I
+  let V (ξ : ℝ) := ‖signedLaplace pickupVelocity (z ξ)‖ ^ 2
+  let G (ξ : ℝ) := ‖signedLaplace (fun u => wholePickup u - c) (z ξ)‖ ^ 2
+  change Integrable G ∧ (∫ ξ : ℝ, G ξ) ≤ _
+  obtain ⟨hVI, hV⟩ := signedLaplace_pickupVelocity_line_square_le_of_weakMertens hB hσ hM
+  have hVI' : Integrable V := hVI
+  have hmask (ξ : ℝ) : G ξ ≤ k * V ξ + d * H ξ + J ξ := by
+    by_cases hξ : |ξ| < a
+    · have hre : 0 < (z ξ).re := by simpa [z] using hσ
+      have hnorm : ‖z ξ‖ ≤ σ + (2 * Real.pi) * |ξ| := by
+        dsimp [z]
+        apply (norm_add_le _ _).trans_eq
+        rw [norm_mul, Complex.norm_I, mul_one, Complex.norm_real, Complex.norm_real,
+          Real.norm_eq_abs, Real.norm_eq_abs, abs_of_pos hσ, abs_mul,
+          abs_of_pos (show 0 < 2 * Real.pi by positivity)]
+      have hmul : (2 * Real.pi) * |ξ| < r / 4 := by
+        calc
+          _ < (2 * Real.pi) * a := mul_lt_mul_of_pos_left hξ (by positivity)
+          _ = r / 4 := by dsimp [a]; field_simp; ring
+      have hz : ‖z ξ‖ < r := by linarith
+      have hJ : J ξ = C ^ 2 := indicator_of_mem (show ξ ∈ Ioo (-a) a from abs_lt.mp hξ) _
+      rw [hJ]
+      exact (pow_le_pow_left₀ (norm_nonneg _) (hlow _ hre hz) 2).trans
+        (le_add_of_nonneg_left (add_nonneg (mul_nonneg hk (sq_nonneg _))
+          (mul_nonneg hd (by dsimp [H]; positivity))))
+    · have hh := signedLaplace_centeredWholePickup_high_square_le hB hM hσ ha c ξ (le_of_not_gt hξ)
+      exact hh.trans (le_add_of_nonneg_right (indicator_nonneg (fun _ _ => sq_nonneg _) _))
+  have hGm : StronglyMeasurable G := by
+    have hm : Measurable (fun p : ℝ × ℝ =>
+        Complex.exp (-(z p.1 * (p.2 : ℂ))) * ((wholePickup p.2 - c : ℝ) : ℂ)) := by
+      exact (by dsimp [z]; fun_prop : Measurable
+        (fun p : ℝ × ℝ => Complex.exp (-(z p.1 * (p.2 : ℂ))))).mul
+        (Complex.measurable_ofReal.comp ((wholePickup_measurable.comp measurable_snd).sub measurable_const))
+    have hi := hm.stronglyMeasurable.integral_prod_right' (ν := volume.restrict (Ioi (0 : ℝ)))
+    exact hi.norm.pow 2
+  have hI := ((hVI'.const_mul k).add (hHI.const_mul d)).add hJI
+  have hGI : Integrable G := hI.mono' hGm.aestronglyMeasurable
+    (ae_of_all _ fun ξ => by
+      rw [Real.norm_of_nonneg (show 0 ≤ G ξ from sq_nonneg _)]
+      exact hmask ξ)
+  refine ⟨hGI, ?_⟩
+  calc
+    _ ≤ ∫ ξ : ℝ, k * V ξ + d * H ξ + J ξ := integral_mono hGI hI hmask
+    _ = k * (∫ ξ : ℝ, V ξ) + d * (∫ ξ : ℝ, H ξ) + ∫ ξ : ℝ, J ξ := by
+      calc
+        _ = (∫ ξ : ℝ, k * V ξ + d * H ξ) + (∫ ξ : ℝ, J ξ) :=
+          integral_add ((hVI'.const_mul k).add (hHI.const_mul d)) hJI
+        _ = _ := by
+          have hs : (∫ ξ : ℝ, k * V ξ + d * H ξ) =
+              (∫ ξ : ℝ, k * V ξ) + (∫ ξ : ℝ, d * H ξ) :=
+            integral_add (hVI'.const_mul k) (hHI.const_mul d)
+          rw [hs, integral_const_mul, integral_const_mul]
+    _ ≤ _ := by
+      have hv : (∫ ξ : ℝ, V ξ) ≤ B / (2 * σ) := hV
+      calc
+        _ ≤ k * (B / (2 * σ)) + d * (∫ ξ : ℝ, H ξ) + ∫ ξ : ℝ, J ξ :=
+          add_le_add (add_le_add (mul_le_mul_of_nonneg_left hv hk) le_rfl) le_rfl
+        _ = _ := by ring
+
 end GRWTSK.NumberTheory.Moebius
