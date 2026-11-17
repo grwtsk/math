@@ -1175,4 +1175,38 @@ theorem sq_source_mean_sub_heatedLimit_le_residual_allowance
   dsimp [ε] at htlow hthigh
   nlinarith
 
+/-- With a limiting pickup mean, the signed deviation reaches its mean-square
+ceiling precisely when the normalized centered source energy goes to zero.
+More generally the centered energy subtracts its slope from that ceiling. -/
+theorem tendsto_heatMaskDeviation_sub_diagonal_div_iff_source_variance
+    {s m v : ℝ} (hs : 0 < s) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hmean : Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, wholePickup u) / T) l (𝓝 m)) :
+    Tendsto (fun T : ℝ => (weightedPickupDeviation T Finset.univ (heatMaskWeight s T)
+      (heatMaskCoeff T) - pickupDiagonal T) / T) l (𝓝 (settledHeatedPickup s - m ^ 2 - v)) ↔
+    Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, (wholePickup u - m) ^ 2) / T) l (𝓝 v) := by
+  let D (T : ℝ) := (weightedPickupDeviation T Finset.univ (heatMaskWeight s T)
+    (heatMaskCoeff T) - pickupDiagonal T) / T
+  let V (T : ℝ) := (∫ u in (0 : ℝ)..T, (wholePickup u - m) ^ 2) / T
+  let B := settledHeatedPickup s - m ^ 2
+  change Tendsto D l (𝓝 (B - v)) ↔ Tendsto V l (𝓝 v)
+  have hsum : Tendsto (fun T => D T + V T) l (𝓝 B) := by
+    have hsource := (tendsto_normalized_heatMaskDeviation_sub_diagonal_add_energy hs).mono_left hl
+    have h := (hsource.sub (hmean.const_mul (2 * m))).add_const (m ^ 2)
+    rw [show settledHeatedPickup s - 2 * m * m + m ^ 2 = B by dsimp [B]; ring] at h
+    refine h.congr' ?_
+    filter_upwards [(eventually_gt_atTop (0 : ℝ)).filter_mono hl] with T hT
+    unfold D V
+    rw [centeredPickup_expand]
+    field_simp
+    ring
+  constructor
+  · intro h
+    have hv := hsum.sub h
+    rw [show B - (B - v) = v by ring] at hv
+    exact hv.congr' (Eventually.of_forall fun T => by
+      show D T + V T - D T = V T
+      ring)
+  · intro h
+    exact (hsum.sub h).congr' (Eventually.of_forall fun T => add_sub_cancel_right (D T) (V T))
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
