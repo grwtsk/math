@@ -285,3 +285,16 @@ window. To apply the result to an HS runtime, show that its handoff
 implements this exact readdressing and does not consume a native
 instruction in the process. Verification of the extension is recorded
 in [issue #1821](https://github.com/grwtsk/math/issues/1821).
+
+## Handoff with equivalent tape representatives
+
+The handoff view retains the native pointed tape, including decoded control,
+and the absolute head coordinate. The theorem `runOn_handoffView_eq` uses
+native relative-displacement determinism and the shared initial coordinate
+to transport this view through any two schedules of equal length, even with
+different final windows. The theorem `runOn_handoffView_some_iff` lifts
+successful results in both directions. The hypothesis permits differences
+in trailing blank storage. The budget-zero control shows why native projection
+alone is insufficient to preserve absolute position. A concrete runtime must
+still establish equality of the handoff views at its actual boundaries.
+[Verification record](https://github.com/grwtsk/math/issues/1821)

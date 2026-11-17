@@ -830,4 +830,51 @@ theorem run_project_displacement {u v : ℕ} (n : ℕ) {c : Configuration u}
         simp [he, hf] at rest ⊢
       exact ⟨rest.1, by omega⟩
 
+/-- The pointed source tape together with the absolute head coordinate.
+Representatives may differ by trailing blanks and by their prime window. -/
+def handoffView {w : ℕ} (c : Configuration w) : Cfg 95 2 × ℤ :=
+  (project c, c.position)
+
+@[simp] theorem handoffView_readdress {u : ℕ} (v : ℕ) (c : Configuration u) :
+    handoffView (readdress v c) = handoffView c := by
+  exact Prod.ext (project_readdress v c) rfl
+
+/-- A handoff preserving the pointed tape and absolute head preserves
+both success and failure and the full handoff view of the result. -/
+theorem runOn_handoffView_eq {u v : ℕ} {c : Configuration u} {d : Configuration v}
+    (handoff : handoffView c = handoffView d)
+    {left right : List ℕ} (length : left.length = right.length) (leftTarget rightTarget : ℕ) :
+    (runOn left leftTarget c).map handoffView =
+      (runOn right rightTarget d).map handoffView := by
+  have native := run_project_displacement left.length (congrArg Prod.fst handoff)
+  have position := congrArg Prod.snd handoff
+  change c.position = d.position at position
+  rw [runOn_eq, runOn_eq, ← length]
+  cases hc : run left.length c <;> cases hd : run left.length d <;>
+    simp [hc, hd] at native ⊢
+  rename_i e g
+  exact Prod.ext native.1 (show e.position = g.position by have shift := native.2; omega)
+
+theorem runOn_handoffView_some_iff {u v : ℕ} {c : Configuration u} {d : Configuration v}
+    (handoff : handoffView c = handoffView d)
+    {left right : List ℕ} (length : left.length = right.length)
+    (leftTarget rightTarget : ℕ) (view : Cfg 95 2 × ℤ) :
+    (∃ e, runOn left leftTarget c = some e ∧ handoffView e = view) ↔
+      ∃ e, runOn right rightTarget d = some e ∧ handoffView e = view := by
+  have eq := runOn_handoffView_eq handoff length leftTarget rightTarget
+  cases hl : runOn left leftTarget c <;> cases hr : runOn right rightTarget d <;>
+    simp [hl, hr] at eq ⊢
+  rw [eq]
+
+/-- The native pointed tape alone is insufficient for an absolute handoff.
+Changing the recorded origin by one is already visible at budget zero. -/
+theorem absolute_position_handoff_control (window : ℕ) :
+    ∃ c d : Configuration window, project c = project d ∧
+      (runOn [] window c).map handoffView ≠ (runOn [] window d).map handoffView := by
+  refine ⟨blank window, { blank window with position := 1 }, rfl, ?_⟩
+  intro eq
+  have different := congrArg (fun r => (r.map Prod.snd)) eq
+  change some (0 : ℤ) = some 1 at different
+  exact (by decide : (0 : ℤ) ≠ 1) (Option.some.inj different)
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
