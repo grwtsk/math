@@ -358,4 +358,136 @@ theorem support_pair_of_normalized_95_forward_ge_quarter
     s encode weight nonneg active k positive S rfl nonempty bad
   exact (not_lt_of_ge (forward i)) h
 
+
+/-- At the optimal quarter threshold, every row spends exactly one
+quarter on its successor and exactly half on its diagonal. -/
+theorem normalized_95_quarter_row_rigidity
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j)) :
+    ∀ i, incidenceEntry s encode weight i (i + 1) / (∑ j, incidenceEntry s encode weight i j) = 1 / 4 ∧
+      incidenceEntry s encode weight i i / (∑ j, incidenceEntry s encode weight i j) = 1 / 2 := by
+  let M := incidenceEntry s encode weight
+  have total := sub_nonneg.mp (forward_deficit_nonneg s encode weight nonneg
+    (fun i : Fin 95 => i + 1) ring95_distinct)
+  have dominated (i : Fin 95) : (∑ j, M i j) ≤ 4 * M i (i + 1) := by
+    have inequality := (le_div_iff₀ (active i)).mp (forward i)
+    change (1 / 4 : ℝ) * (∑ j, M i j) ≤ M i (i + 1) at inequality
+    linarith
+  have exactForward (i : Fin 95) : (∑ j, M i j) = 4 * M i (i + 1) := by
+    apply le_antisymm (dominated i)
+    by_contra excess
+    have strict : (∑ x, ∑ y, M x y) < ∑ x, 4 * M x (x + 1) :=
+      Finset.sum_lt_sum (fun x _ => dominated x)
+        ⟨i, Finset.mem_univ _, lt_of_not_ge excess⟩
+    rw [← Finset.mul_sum] at strict
+    exact (not_lt_of_ge total) strict
+  have exactDiag (i : Fin 95) : (∑ j, M i j) = 2 * M i i := by
+    dsimp only [M]
+    simp_rw [incidenceEntry_eq]
+    rw [Finset.sum_comm, Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro k _
+    by_cases hi : Linked s (encode i) k
+    · simp only [hi, true_and, ite_true]
+      rw [← Finset.sum_filter]
+      by_cases zero : weight k = 0
+      · simp [zero]
+      · have positive : 0 < weight k := lt_of_le_of_ne (nonneg k) (Ne.symm zero)
+        have present : (Finset.univ.filter fun j => Linked s (encode j) k).Nonempty :=
+          ⟨i, Finset.mem_filter.mpr ⟨Finset.mem_univ _, hi⟩⟩
+        have two := (support_pair_of_normalized_95_forward_ge_quarter
+          s encode weight nonneg active forward k positive present).1
+        simp [two, nsmul_eq_mul]
+    · simp [hi]
+  intro i
+  change M i (i + 1) / (∑ j, M i j) = 1 / 4 ∧ M i i / (∑ j, M i j) = 1 / 2
+  constructor
+  · apply (div_eq_iff (active i).ne').mpr
+    linarith [exactForward i]
+  · apply (div_eq_iff (active i).ne').mpr
+    linarith [exactDiag i]
+
+/-- The quarter threshold also forces equal unnormalized successor
+mass on neighboring edges. -/
+theorem normalized_95_quarter_adjacent_mass_eq
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j))
+    (i : Fin 95) :
+    incidenceEntry s encode weight i (i + 1) =
+      incidenceEntry s encode weight (i - 1) i := by
+  let M := incidenceEntry s encode weight
+  have splitDiag : M i i = M i (i + 1) + M (i - 1) i := by
+    dsimp only [M]
+    simp_rw [incidenceEntry_eq]
+    rw [← Finset.sum_add_distrib]
+    apply Finset.sum_congr rfl
+    intro k _
+    by_cases hi : Linked s (encode i) k
+    · by_cases zero : weight k = 0
+      · simp [zero]
+      · let S : Finset (Fin 95) := Finset.univ.filter fun j => Linked s (encode j) k
+        have pos : 0 < weight k := lt_of_le_of_ne (nonneg k) (Ne.symm zero)
+        have inS : i ∈ S := by simp [S, hi]
+        obtain ⟨two, one⟩ := support_pair_of_normalized_95_forward_ge_quarter
+          s encode weight nonneg active forward k pos ⟨i, inS⟩
+        change S.card = 2 at two
+        change (S.filter fun j => j + 1 ∈ S).card = 1 at one
+        have present : (S.filter fun j => j + 1 ∈ S).Nonempty :=
+          Finset.card_pos.mp (by rw [one]; decide)
+        obtain ⟨j, member⟩ := present
+        obtain ⟨hj, hj'⟩ := Finset.mem_filter.mp member
+        have distinct : ∀ a : Fin 95, a ≠ a + 1 := by decide
+        have pair : S = {j, j + 1} :=
+          (Finset.eq_of_subset_of_card_le
+            (show {j, j + 1} ⊆ S from by
+              intro a ha
+              simp only [Finset.mem_insert, Finset.mem_singleton] at ha
+              rcases ha with rfl | rfl
+              · exact hj
+              · exact hj')
+            (by rw [two]; simp [distinct j])).symm
+        have linked (a : Fin 95) : Linked s (encode a) k ↔ a = j ∨ a = j + 1 := by
+          have mem : a ∈ S ↔ Linked s (encode a) k := by simp [S]
+          rw [pair] at mem
+          simpa using mem.symm
+        have atI := (linked i).mp hi
+        have controls : ∀ a : Fin 95,
+            (a - 1 ≠ a ∧ a - 1 ≠ a + 1) ∧ (a + 1 + 1 ≠ a ∧ a + 1 + 1 ≠ a + 1) := by decide
+        rcases atI with rfl | eq
+        · simp [hi, linked, (controls i).1]
+        · rw [eq]
+          simp [linked, (controls j).2]
+    · simp [hi]
+  obtain ⟨ahead, diagonal⟩ := normalized_95_quarter_row_rigidity s encode weight nonneg active forward i
+  have a := (div_eq_iff (active i).ne').mp ahead
+  have b := (div_eq_iff (active i).ne').mp diagonal
+  change M i (i + 1) = M (i - 1) i
+  linarith [splitDiag]
+
+/-- Each adjacent pair has the same total weight at the threshold. -/
+theorem normalized_95_quarter_successor_mass_constant
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j))
+    (i : Fin 95) :
+    incidenceEntry s encode weight i (i + 1) = incidenceEntry s encode weight 0 1 := by
+  let mass (j : Fin 95) := incidenceEntry s encode weight j (j + 1)
+  have step (j : Fin 95) : mass (j + 1) = mass j := by
+    have h := normalized_95_quarter_adjacent_mass_eq s encode weight nonneg active forward (j + 1)
+    simpa only [add_sub_cancel_right] using h
+  have all (n : ℕ) : mass (n : Fin 95) = mass 0 := by
+    induction n with
+    | zero => rfl
+    | succ n ih => simpa only [Nat.cast_succ, ih] using step (n : Fin 95)
+  change mass i = mass 0
+  simpa using all i.val
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
