@@ -231,3 +231,38 @@ of both new public theorems passed. The audit found only `propext`,
 `298643aa9b787cf8ab99b4d3a6ee60e91b551cfa5b71dc612084cab04a7bfa2f`.
 Full fresh dependency replay, independent review and physical HS source
 identification are `NOT_RUN`.
+
+## Exact finite tolerance for a common clock
+
+For any nonempty finite chart with positive rates `r_i` and exposures
+`A_i`, `exists_log_clock_iff_pairwise` characterizes existence of a real
+time with `|A_i - t*r_i| ≤ ε` at every mode. The necessary and sufficient
+condition is `r_i*A_j - r_j*A_i ≤ ε*(r_i+r_j)` for every ordered pair.
+Each mode supplies an interval of possible times. Its lower endpoint
+must lie below every upper endpoint, which gives the pairwise inequality
+after multiplication by the two positive rates. The maximum of all
+lower endpoints is itself a feasible time under those inequalities.
+
+`exists_euler_log_clock_iff_pairwise` uses the exact logarithmic
+exposures from the Euler slots. With strictly positive factors,
+`euler_log_error_iff_multiplier_envelope` expresses the same tolerance
+as a multiplicative envelope between `exp(-ε)` and `exp(ε)` times the
+original-rate heat multiplier. For an active shared nonnegative dwell
+schedule, `euler_shared_log_clock_error_pos` uses the strict normalized
+exposure gap to give a positive tolerance floor for each pair of
+distinct positive rates.
+
+A rational two-mode control with rates 1 and 2 and exposures 1 and 4
+requires tolerance at least 2/3, attained at time 5/3. The next physical
+premise is a source-certified modal rate and exposure chart. Applying
+the envelope to Newman heat still requires the separate source and
+time-sign transport described above.
+
+Strict compilation with `--trust=0 -DwarningAsError=true`, target kernel
+replay, the rational control, and four transitive axiom audits passed
+on the pins above. The four installed local imports were checked
+against their pinned sources. The audit found only `propext`,
+`Classical.choice` and `Quot.sound`. Lean SHA-256
+`99661915eb6e33e54f84fde1e80b96ddd0ae835d2c6a7da96a22d2def1b72c68`.
+Full fresh import replay, independent review and physical source
+identification remain `NOT_RUN`.

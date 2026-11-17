@@ -608,4 +608,79 @@ theorem no_common_clock_of_distinct_rates {J I : Type*} [Fintype J]
     mul_div_cancel_right₀ _ (small.trans ordered).ne'] at different
   exact (lt_irrefl _) different
 
+
+/-- A pairwise criterion for fitting a single clock to a finite collection
+of logarithmic exposures at positive rates, with absolute log tolerance. -/
+theorem exists_log_clock_iff_pairwise {I : Type*} [Fintype I] [Nonempty I]
+    (rates exposure : I → ℝ) (positive : ∀ i, 0 < rates i) (error : ℝ) :
+    (∃ t : ℝ, ∀ i, |exposure i - t * rates i| ≤ error) ↔
+      ∀ i j, rates i * exposure j - rates j * exposure i ≤ error * (rates i + rates j) := by
+  constructor
+  · rintro ⟨t, fit⟩ i j
+    have lower : exposure j - error ≤ t * rates j := by linarith [(abs_le.mp (fit j)).2]
+    have upper : t * rates i ≤ exposure i + error := by linarith [(abs_le.mp (fit i)).1]
+    have a := mul_le_mul_of_nonneg_right lower (positive i).le
+    have b := mul_le_mul_of_nonneg_right upper (positive j).le
+    nlinarith only [a, b]
+  · intro pair
+    let lower (i : I) := (exposure i - error) / rates i
+    obtain ⟨j, _, maximal⟩ := Finset.exists_max_image Finset.univ lower Finset.univ_nonempty
+    refine ⟨lower j, fun i => abs_le.mpr ⟨?_, ?_⟩⟩
+    · have below : lower j ≤ (exposure i + error) / rates i := by
+        dsimp only [lower]
+        apply (div_le_div_iff₀ (positive j) (positive i)).mpr
+        nlinarith only [pair i j]
+      have upper := (le_div_iff₀ (positive i)).mp below
+      linarith
+    · have lo := (div_le_iff₀ (positive i)).mp (show lower i ≤ lower j from
+        maximal i (Finset.mem_univ i))
+      linarith
+
+/-- The finite Euler clock tolerance is determined by the original
+modewise logarithmic exposures and the unchanged modal rates. -/
+theorem exists_euler_log_clock_iff_pairwise {J I : Type*} [Fintype J] [Fintype I] [Nonempty I]
+    (a : J → I → ℝ) (rates : I → ℝ) (positive : ∀ i, 0 < rates i) (error : ℝ) :
+    (∃ t : ℝ, ∀ i, |logExposure a i - t * rates i| ≤ error) ↔
+      ∀ i j, rates i * logExposure a j - rates j * logExposure a i ≤
+        error * (rates i + rates j) :=
+  exists_log_clock_iff_pairwise rates (logExposure a) positive error
+
+/-- A log tolerance is exactly an exponential multiplicative envelope
+for the original strictly positive Euler multiplier. -/
+theorem euler_log_error_iff_multiplier_envelope {J I : Type*} [Fintype J]
+    (a : J → I → ℝ) (strict : ∀ j i, a j i < 1)
+    (rates : I → ℝ) (i : I) (t error : ℝ) :
+    |logExposure a i - t * rates i| ≤ error ↔
+      Real.exp (-error) * Real.exp (-t * rates i) ≤ eulerMultiplier a i ∧
+      eulerMultiplier a i ≤ Real.exp error * Real.exp (-t * rates i) := by
+  have eq := congrFun (euler_eq_log_heat a (fun _ => 1) strict) i
+  change eulerMultiplier a i * 1 = Real.exp (-(1 : ℝ) * logExposure a i) * 1 at eq
+  simp only [mul_one, neg_mul, one_mul] at eq
+  rw [eq, ← Real.exp_add, ← Real.exp_add, Real.exp_le_exp, Real.exp_le_exp, abs_le]
+  constructor <;> intro h <;> constructor <;> linarith [h.1, h.2]
+
+/-- For two distinct positive original rates with active shared dwell,
+the necessary tolerance stays strictly positive. -/
+theorem euler_shared_log_clock_error_pos {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i j : I)
+    (nonneg : ∀ k, 0 ≤ dwell k) (active : ∃ k, 0 < dwell k)
+    (small : 0 < rates i) (ordered : rates i < rates j)
+    (subunit : ∀ k, dwell k * rates j < 1) (t error : ℝ)
+    (fit : ∀ m, |logExposure (fun k p => dwell k * rates p) m - t * rates m| ≤ error) :
+    0 < (rates i * logExposure (fun k p => dwell k * rates p) j -
+      rates j * logExposure (fun k p => dwell k * rates p) i) / (rates i + rates j) ∧
+      (rates i * logExposure (fun k p => dwell k * rates p) j -
+      rates j * logExposure (fun k p => dwell k * rates p) i) / (rates i + rates j) ≤ error := by
+  let a := fun k p => dwell k * rates p
+  have large := small.trans ordered
+  have gap := (div_lt_div_iff₀ small large).mp
+    (logExposure_per_rate_lt dwell rates i j nonneg active small ordered subunit)
+  have lower : logExposure a j - error ≤ t * rates j := by linarith [(abs_le.mp (fit j)).2]
+  have upper : t * rates i ≤ logExposure a i + error := by linarith [(abs_le.mp (fit i)).1]
+  change 0 < (rates i * logExposure a j - rates j * logExposure a i) / (rates i + rates j) ∧ _
+  refine ⟨div_pos (by linarith [gap]) (add_pos small large), ?_⟩
+  apply (div_le_iff₀ (add_pos small large)).mpr
+  nlinarith only [mul_le_mul_of_nonneg_right lower small.le,
+    mul_le_mul_of_nonneg_right upper large.le]
+
 end GRWTSK.OperatorTheory.FiniteEulerHeatRecovery
