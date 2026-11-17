@@ -156,6 +156,15 @@ theorem fourier_dampedPickupVelocity_eq_signedLaplace (σ ξ : ℝ) :
     ring
   · simp [dampedPickupVelocity, indicator_of_notMem hu]
 
+private theorem lpTwo_norm_sq_eq_integral (f : Lp ℂ 2 (volume : Measure ℝ)) : ‖f‖ ^ 2 = ∫ u : ℝ, ‖f u‖ ^ 2 := by
+  apply Complex.ofReal_injective
+  calc
+    _ = inner ℂ f f := by simp [inner_self_eq_norm_sq_to_K, Complex.ofReal_pow]
+    _ = ∫ u : ℝ, ((‖f u‖ ^ 2 : ℝ) : ℂ) := by
+      change (∫ u : ℝ, inner ℂ (f u) (f u)) = _
+      simp [inner_self_eq_norm_sq_to_K, Complex.ofReal_pow]
+    _ = _ := integral_ofReal
+
 /-- The weak Mertens allowance bounds the Plancherel energy of the exact
 damped velocity. -/
 theorem fourierLp_dampedPickupVelocity_norm_sq_le_of_weakMertens {B σ : ℝ}
@@ -167,15 +176,7 @@ theorem fourierLp_dampedPickupVelocity_norm_sq_le_of_weakMertens {B σ : ℝ}
   let f := h.toLp (dampedPickupVelocity σ)
   change ‖𝓕 f‖ ^ 2 ≤ _
   rw [Lp.norm_fourier_eq]
-  have hn : ‖f‖ ^ 2 = ∫ u : ℝ, ‖f u‖ ^ 2 := by
-    apply Complex.ofReal_injective
-    calc
-      _ = inner ℂ f f := by simp [inner_self_eq_norm_sq_to_K, Complex.ofReal_pow]
-      _ = ∫ u : ℝ, ((‖f u‖ ^ 2 : ℝ) : ℂ) := by
-        change (∫ u : ℝ, inner ℂ (f u) (f u)) = _
-        simp [inner_self_eq_norm_sq_to_K, Complex.ofReal_pow]
-      _ = _ := integral_ofReal
-  rw [hn]
+  rw [lpTwo_norm_sq_eq_integral]
   calc
     _ = ∫ u : ℝ, ‖dampedPickupVelocity σ u‖ ^ 2 := by
       apply integral_congr_ae
@@ -239,5 +240,27 @@ theorem fourierLp_dampedPickupVelocity_ae_eq_signedLaplace {B σ : ℝ}
     (dampedPickupVelocity_integrable_of_weakMertens hB hσ hM)
     (dampedPickupVelocity_memLp_two_of_weakMertens hB hσ hM)] with ξ hξ
   exact hξ.trans (fourier_dampedPickupVelocity_eq_signedLaplace σ ξ)
+
+/-- The weak Mertens bound controls the pointwise velocity Laplace transform
+on each positive vertical line, using Mathlib's Fourier frequency variable. -/
+theorem signedLaplace_pickupVelocity_line_square_le_of_weakMertens {B σ : ℝ}
+    (hB : 0 ≤ B) (hσ : 0 < σ)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X) :
+    Integrable (fun ξ : ℝ =>
+      ‖signedLaplace pickupVelocity ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I)‖ ^ 2) ∧
+    (∫ ξ : ℝ, ‖signedLaplace pickupVelocity ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I)‖ ^ 2)
+      ≤ B / (2 * σ) := by
+  let F : Lp ℂ 2 (volume : Measure ℝ) :=
+    𝓕 ((dampedPickupVelocity_memLp_two_of_weakMertens hB hσ hM).toLp
+      (dampedPickupVelocity σ))
+  have hF : MemLp (F : ℝ → ℂ) 2 volume := Lp.memLp F
+  have hSq := (memLp_two_iff_integrable_sq_norm hF.aestronglyMeasurable).mp hF
+  have hEq : (fun ξ => ‖F ξ‖ ^ 2) =ᵐ[volume] fun ξ =>
+      ‖signedLaplace pickupVelocity ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I)‖ ^ 2 := by
+    filter_upwards [fourierLp_dampedPickupVelocity_ae_eq_signedLaplace hB hσ hM] with ξ hξ
+    exact congrArg (fun z : ℂ => ‖z‖ ^ 2) hξ
+  refine ⟨hSq.congr hEq, ?_⟩
+  rw [← integral_congr_ae hEq, ← lpTwo_norm_sq_eq_integral F]
+  exact fourierLp_dampedPickupVelocity_norm_sq_le_of_weakMertens hB hσ hM
 
 end GRWTSK.NumberTheory.Moebius
