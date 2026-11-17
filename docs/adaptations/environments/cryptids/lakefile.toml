@@ -22,4 +22,5 @@ roots = [
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeArgumentCounterexample",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95StageCertificatesCryptids",
   "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95PrimeMachine",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95ReachableCompression",
 ]
