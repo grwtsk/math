@@ -72,13 +72,14 @@ private theorem target61_iff (q : Fin 95) (bit : Fin 2) :
   revert q bit
   decide +kernel
 
-/-- A successful block is exactly one or two native instructions. A
-stopped block performs the incoming instruction and reaches the native
-terminal configuration, with no further native instruction available. -/
-theorem block_exact (c : Cfg 94 2) :
+/-- The extra native instruction of the guarded checkpoint cell. -/
+def guardedExtra (c : Cfg 94 2) : ℕ :=
+  if fold61Row c.state = 90 ∧ c.tape.head = 1 then 1 else 0
+
+/-- The guard determines the exact successful block length. -/
+theorem block_exact_clock (c : Cfg 94 2) :
     match macroStep c with
-    | some next => nSteps 1 (decode c) = some (decode next) ∨
-        nSteps 2 (decode c) = some (decode next)
+    | some next => nSteps (1 + guardedExtra c) (decode c) = some (decode next)
     | none => nativeStep (decode c) = some (terminalView c) ∧
         nativeStep (terminalView c) = none := by
   rcases c with ⟨q, t⟩
@@ -92,7 +93,7 @@ theorem block_exact (c : Cfg 94 2) :
         simp only [terminalView, ConjectureMachines.step, zero]
         rfl
       simp only [macroStep, instruction, entry, ite_eq_left, zero]
-      apply Or.inr
+      simp only [guardedExtra, entry]
       change (nativeStep (decode ⟨q, t⟩)).bind (nSteps 1) = _
       rw [first, Option.bind_some]
       exact congrArg (fun result => result.bind some) second
@@ -113,7 +114,25 @@ theorem block_exact (c : Cfg 94 2) :
         rintro rfl
         exact entry ((target61_iff _ _).mp (by simp only [original, Option.map_some]))
       simp only [macroStep, instruction, entry, original, Option.map_some]
-      exact Or.inl (by simp [nSteps, decode, ConjectureMachines.step, original, row_code next_ne])
+      simp [guardedExtra, entry, nSteps, decode, ConjectureMachines.step, original, row_code next_ne]
+
+/-- A successful block is exactly one or two native instructions. A
+stopped block performs the incoming instruction and reaches the native
+terminal configuration, with no further native instruction available. -/
+theorem block_exact (c : Cfg 94 2) :
+    match macroStep c with
+    | some next => nSteps 1 (decode c) = some (decode next) ∨
+        nSteps 2 (decode c) = some (decode next)
+    | none => nativeStep (decode c) = some (terminalView c) ∧
+        nativeStep (terminalView c) = none := by
+  cases result : macroStep c with
+  | none => simpa only [result] using block_exact_clock c
+  | some next =>
+    have clock : nSteps (1 + guardedExtra c) (decode c) = some (decode next) := by
+      simpa only [result] using block_exact_clock c
+    by_cases entry : fold61Row c.state = 90 ∧ c.tape.head = 1
+    · exact Or.inr (by simpa [guardedExtra, entry] using clock)
+    · exact Or.inl (by simpa [guardedExtra, entry] using clock)
 
 private theorem native_reaches_of_block {a b : Cfg 94 2} (h : macroStep a = some b) :
     Reaches nativeStep (decode a) (decode b) := by
@@ -210,5 +229,59 @@ theorem right_neighbor_changes_macro_halt :
   refine ⟨⟨code 90, Tape.mk₁ [1, 0]⟩, ⟨code 90, Tape.mk₁ [1, 1]⟩, rfl, rfl, ?_, ?_⟩
   · rfl
   · rfl
+
+
+/-- Execute exactly the requested successful macro blocks and count the
+guarded continuations among them. A stopped block returns no prefix. -/
+def countedRun : ℕ → Cfg 94 2 → Option (Cfg 94 2 × ℕ)
+  | 0, c => some (c, 0)
+  | n + 1, c => (macroStep c).bind fun next =>
+      (countedRun n next).map fun (finish, guards) => (finish, guardedExtra c + guards)
+
+/-- The exact native clock is the block count plus one for every successful
+guard. Both native tape halves at the final checkpoint are preserved. -/
+theorem countedRun_native_clock {n guards : ℕ} {c finish : Cfg 94 2}
+    (reached : countedRun n c = some (finish, guards)) :
+    guards ≤ n ∧ nSteps (n + guards) (decode c) = some (decode finish) := by
+  induction n generalizing c finish guards with
+  | zero =>
+    change some (c, 0) = some (finish, guards) at reached
+    cases Option.some.inj reached
+    exact ⟨le_rfl, rfl⟩
+  | succ n ih =>
+    rw [countedRun] at reached
+    cases edge : macroStep c with
+    | none => simp [edge] at reached
+    | some next =>
+      rw [edge, Option.bind_some] at reached
+      rcases tail : countedRun n next with _ | ⟨last, g⟩
+      · simp [tail] at reached
+      · rw [tail, Option.map_some] at reached
+        have equal := Option.some.inj reached
+        change (last, guardedExtra c + g) = (finish, guards) at equal
+        obtain ⟨rfl, rfl⟩ := Prod.mk.inj equal
+        obtain ⟨hg, native⟩ := ih tail
+        have extra : guardedExtra c ≤ 1 := by
+          unfold guardedExtra
+          split <;> omega
+        have steps : n + 1 + (guardedExtra c + g) = (1 + guardedExtra c) + (n + g) := by omega
+        have first := block_exact_clock c
+        rw [edge] at first
+        exact ⟨by omega, by rw [steps, Dispatch.nSteps_composition, first, Option.bind_some, native]⟩
+
+/-- A stopped checkpoint contributes its one successful incoming native
+instruction. The following instruction is absent. -/
+theorem countedRun_terminal_clock {n guards : ℕ} {c finish : Cfg 94 2}
+    (reached : countedRun n c = some (finish, guards)) (stopped : macroStep finish = none) :
+    nSteps (n + guards + 1) (decode c) = some (terminalView finish) ∧
+      nSteps (n + guards + 2) (decode c) = none := by
+  have prefixRun := (countedRun_native_clock reached).2
+  have terminal := block_exact finish
+  rw [stopped] at terminal
+  constructor
+  · rw [Dispatch.nSteps_composition, prefixRun, Option.bind_some]
+    simpa only [nSteps, Option.bind_some] using congrArg (fun step => step.bind some) terminal.1
+  · rw [Dispatch.nSteps_composition, prefixRun, Option.bind_some]
+    simp [nSteps, terminal.1, terminal.2]
 
 end GRWTSK.ComputerScience.Riemann95MacroCompression

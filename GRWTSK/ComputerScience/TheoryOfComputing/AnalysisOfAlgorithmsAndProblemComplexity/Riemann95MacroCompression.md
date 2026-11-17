@@ -97,3 +97,27 @@ on `[1,1,1]` stopped, with terminal observation `(61, 1, 1, 1)` matching
 the single native arrival. A second native instruction was absent.
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
+
+## Exact native instruction count
+
+For any successful run of n macro blocks, countedRun returns its exact
+checkpoint and the number g of successful guarded continuations. The
+native tape and control at that checkpoint are reached after exactly
+n+g native instructions, with 0≤g≤n. Each ordinary block consumes one
+instruction, and a guarded continuation consumes two. The block law
+and native finite-run composition prove the cumulative count by
+induction. A stopped checkpoint consumes its one incoming instruction
+to reach state 61 with its terminal tape. Thus if that run of n blocks
+ends at a stopped checkpoint, n+g+1 native instructions succeed and
+the run of length n+g+2 returns none.
+
+The controls use the blank ordinary block, the guard continuing on
+[1,0,1], and the guard stopping on [1,1,1]. The count gives an exact
+native clock for a checkpoint consumer. A 94-state ordinary binary
+target still needs a concrete realization of the extra read and the
+associated tape transport.
+
+Strict pinned compilation, target kernel replay, the ordinary,
+continuing and stopping controls, and all three transitive axiom
+audits passed. Full fresh import replay and independent review
+remain NOT_RUN.
