@@ -324,4 +324,198 @@ theorem exists_tapeAgrees_project_ne (window depth : ℕ) :
     unfold remote at observed
     simp at observed
 
+section ScanWitnesses
+
+/-!
+State 12 scans right through zeros and writes zeros. A marker past the
+observation depth reaches a retained cell after sufficiently many steps.
+Eight consecutive ones take the same native scan through states
+12, 15, 17, 21, 27, 35, 90 and 61, then halt at state 61 reading one.
+The witnesses below quantify over arbitrary starts in the exact interpreter.
+-/
+
+private def zeroScan (window : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    Configuration window :=
+  ⟨encodeAddress window 12, position, 0, left, right⟩
+
+private theorem step_zeroScan (window : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    step (zeroScan window position left right) =
+      some { zeroScan window (position + 1) (0 :: left) right.tail with scanned := right.headI } := by
+  have cell : ConjectureMachines.Riemann95.machine.transition 12 0 = some (0, .right, 12) := rfl
+  simp [zeroScan, step, cell, writeMove]
+
+private theorem run_add' {window : ℕ} (n m : ℕ) (c : Configuration window) :
+    run (n + m) c = (run n c).bind (run m) := by
+  induction n generalizing c with
+  | zero => simp [run]
+  | succ n ih =>
+    rw [Nat.succ_add, run, run]
+    cases step c <;> simp [ih]
+
+private theorem run_zeroScan_prefix (window n : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    run n (zeroScan window position left (List.replicate n 0 ++ right)) =
+      some (zeroScan window (position + (n : ℤ)) (List.replicate n 0 ++ left) right) := by
+  induction n generalizing position left with
+  | zero => simp [run]
+  | succ n ih =>
+    have first :
+        step (zeroScan window position left (List.replicate (n + 1) 0 ++ right)) =
+          some (zeroScan window (position + 1) (0 :: left) (List.replicate n 0 ++ right)) := by
+      rw [List.replicate_succ, List.cons_append, step_zeroScan]
+      rfl
+    rw [run, first, Option.bind_some, ih]
+    have hp : position + 1 + (n : ℤ) = position + ((n + 1 : ℕ) : ℤ) := by omega
+    rw [hp, List.replicate_succ', List.append_assoc]
+    rfl
+
+private theorem run_zeroScan_then_read
+    (window n : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    run (n + 1) (zeroScan window position left (List.replicate n 0 ++ right)) =
+      some { zeroScan window (position + (n : ℤ) + 1) (0 :: (List.replicate n 0 ++ left))
+        right.tail with scanned := right.headI } := by
+  rw [run_add', run_zeroScan_prefix, Option.bind_some, run,
+    step_zeroScan, Option.bind_some, run]
+
+private theorem replicate_zero_getD (n i : ℕ) :
+    ((List.replicate n (0 : Fin 2))[i]?).getD 0 = 0 := by
+  by_cases hi : i < n
+  · simp [List.getElem?_replicate_of_lt hi]
+  · rw [List.getElem?_eq_none (by simpa using Nat.le_of_not_gt hi)]
+    rfl
+
+private theorem replicate_zero_append_getD {n i : ℕ} (hi : i < n) (tail : List (Fin 2)) :
+    ((List.replicate n (0 : Fin 2) ++ tail)[i]?).getD 0 = 0 := by
+  rw [List.getElem?_append_left (by simpa using hi), List.getElem?_replicate_of_lt hi]
+  rfl
+
+/-- The uniform input depth for a positive exact-length run is sharp.
+One fewer initial cell per side can change a retained cell or the scanned bit,
+even when both runs return a result. -/
+theorem exists_run_tape_depth_sharp (window depth n : ℕ) :
+    ∃ c d c' d' : Configuration window, TapeAgrees (depth + n) c d ∧
+      run (n + 1) c = some c' ∧ run (n + 1) d = some d' ∧ ¬ TapeAgrees depth c' d' := by
+  let tail : List (Fin 2) := List.replicate depth 0 ++ [1]
+  let c := zeroScan window 0 [] (List.replicate n 0)
+  let d := zeroScan window 0 [] (List.replicate (n + depth) 0 ++ [1])
+  let c' := zeroScan window ((n : ℤ) + 1) (0 :: List.replicate n 0) []
+  let d' := { zeroScan window ((n : ℤ) + 1) (0 :: List.replicate n 0) tail.tail with
+    scanned := tail.headI }
+  refine ⟨c, d, c', d', ?_, ?_, ?_, ?_⟩
+  · refine ⟨rfl, rfl, rfl, fun _ _ => rfl, ?_⟩
+    intro i hi
+    exact (replicate_zero_getD n i).trans
+      (replicate_zero_append_getD (by omega : i < n + depth) [1]).symm
+  · simpa [c, c', zeroScan] using run_zeroScan_then_read window n (0 : ℤ) [] []
+  · have hd : d = zeroScan window 0 [] (List.replicate n 0 ++ tail) := by
+      simp only [d, tail, List.replicate_add, List.append_assoc]
+    rw [hd, run_zeroScan_then_read]
+    simp [d']
+  · intro agrees
+    cases depth with
+    | zero =>
+      have hbit := agrees.2.2.1
+      simp [c', d', zeroScan, tail] at hbit
+    | succ depth =>
+      have hbit := agrees.2.2.2.2 depth (Nat.lt_succ_self _)
+      simp [c', d', zeroScan, tail, List.replicate_succ] at hbit
+
+private theorem run_reaches' {window n : ℕ} {c d : Configuration window}
+    (h : run n c = some d) : StateTransition.Reaches step c d := by
+  induction n generalizing c with
+  | zero =>
+    cases Option.some.inj h
+    exact Relation.ReflTransGen.refl
+  | succ n ih =>
+    rw [run] at h
+    cases first : step c with
+    | none => simp [first] at h
+    | some e =>
+      exact Relation.ReflTransGen.head first (ih (by simpa [first] using h))
+
+private theorem exists_run_stopping_of_mem_eval {window : ℕ} {c stop : Configuration window}
+    (h : stop ∈ StateTransition.eval step c) :
+    ∃ n, run n c = some stop ∧ step stop = none := by
+  refine StateTransition.evalInduction h ?_
+  intro a ha ih
+  cases first : step a with
+  | none =>
+    have self : a ∈ StateTransition.eval step a :=
+      StateTransition.mem_eval.mpr ⟨Relation.ReflTransGen.refl, first⟩
+    have eq := Part.mem_unique ha self
+    exact ⟨0, by simp [run, eq], eq.symm ▸ first⟩
+  | some next =>
+    obtain ⟨n, hrun, hstop⟩ := ih next first
+    exact ⟨n + 1, by rw [run, first, Option.bind_some, hrun], hstop⟩
+
+private theorem blank_zeroScan_never_halts (window : ℕ) :
+    ¬ (StateTransition.eval step (zeroScan window 0 [] [])).Dom := by
+  intro dom
+  obtain ⟨stop, hmem⟩ := Part.dom_iff_mem.mp dom
+  obtain ⟨n, hrun, hstop⟩ := exists_run_stopping_of_mem_eval hmem
+  have absent : run (n + 1) (zeroScan window 0 [] []) = none := by
+    rw [run_add', hrun, Option.bind_some, run, hstop]
+    rfl
+  have agrees :
+      TapeAgrees (0 + (n + 1)) (zeroScan window 0 [] [])
+        (zeroScan window 0 [] (List.replicate (n + 1) 0 ++ [])) :=
+    ⟨rfl, rfl, rfl, fun _ _ => rfl,
+      fun i hi => (replicate_zero_append_getD (by simpa using hi) []).symm⟩
+  have same := run_tapeAgrees (n + 1) agrees
+  rw [absent, run_zeroScan_prefix] at same
+  cases same
+
+private theorem scan_ones_halts (window : ℕ) (position : ℤ) (left : List (Fin 2)) :
+    ∃ stop, run 7 { zeroScan window position left (List.replicate 7 1) with scanned := 1 } =
+      some stop ∧ step stop = none := by
+  let stop : Configuration window :=
+    ⟨encodeAddress window 61, position + 7, 1, List.replicate 7 1 ++ left, []⟩
+  have e12 : ConjectureMachines.Riemann95.machine.transition 12 1 = some (1, .right, 15) := rfl
+  have e15 : ConjectureMachines.Riemann95.machine.transition 15 1 = some (1, .right, 17) := rfl
+  have e17 : ConjectureMachines.Riemann95.machine.transition 17 1 = some (1, .right, 21) := rfl
+  have e21 : ConjectureMachines.Riemann95.machine.transition 21 1 = some (1, .right, 27) := rfl
+  have e27 : ConjectureMachines.Riemann95.machine.transition 27 1 = some (1, .right, 35) := rfl
+  have e35 : ConjectureMachines.Riemann95.machine.transition 35 1 = some (1, .right, 90) := rfl
+  have e90 : ConjectureMachines.Riemann95.machine.transition 90 1 = some (1, .right, 61) := rfl
+  have e61 : ConjectureMachines.Riemann95.machine.transition 61 1 = none := rfl
+  refine ⟨stop, ?_, ?_⟩
+  · simp [stop, run, step, writeMove, zeroScan, e12, e15, e17, e21, e27, e35, e90,
+      List.replicate_succ, List.headI_cons, List.tail_cons]
+    omega
+  · simp [stop, step, e61]
+
+/-- At every finite depth, two starts with the same observed tape, control and
+head position have different halting outcomes on the exact interpreter. -/
+theorem exists_tapeAgrees_opposite_halts (window depth : ℕ) :
+    ∃ c d : Configuration window, TapeAgrees depth c d ∧
+      ¬ (StateTransition.eval step c).Dom ∧ (StateTransition.eval step d).Dom := by
+  let tail : List (Fin 2) := 1 :: List.replicate 7 1
+  let d := zeroScan window 0 [] (List.replicate depth 0 ++ tail)
+  refine ⟨zeroScan window 0 [] [], d, ?_, blank_zeroScan_never_halts window, ?_⟩
+  · refine ⟨rfl, rfl, rfl, fun _ _ => rfl, ?_⟩
+    intro i hi
+    exact (replicate_zero_append_getD hi tail).symm
+  · obtain ⟨stop, hrun, hstop⟩ := scan_ones_halts window (0 + (depth : ℤ) + 1)
+      (0 :: (List.replicate depth 0 ++ []))
+    have hx : run (depth + 1 + 7) d = some stop := by
+      rw [run_add']
+      unfold d
+      rw [run_zeroScan_then_read, Option.bind_some]
+      exact hrun
+    exact Part.dom_iff_mem.mpr ⟨stop, StateTransition.mem_eval.mpr ⟨run_reaches' hx, hstop⟩⟩
+
+/-- A readout constant on depth-limited observations cannot determine
+halting for every start of the exact interpreter. -/
+theorem no_halts_decision_from_fixed_depth {Observation : Type*} (window depth : ℕ)
+    (read : Configuration window → Observation)
+    (respects : ∀ {c d}, TapeAgrees depth c d → read c = read d)
+    (accept : Observation → Prop) :
+    ¬ ∀ c, accept (read c) ↔ (StateTransition.eval step c).Dom := by
+  intro decides
+  obtain ⟨c, d, agrees, hc, hd⟩ := exists_tapeAgrees_opposite_halts window depth
+  have haccept := (decides d).mpr hd
+  rw [← respects agrees] at haccept
+  exact hc ((decides c).mp haccept)
+
+end ScanWitnesses
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
