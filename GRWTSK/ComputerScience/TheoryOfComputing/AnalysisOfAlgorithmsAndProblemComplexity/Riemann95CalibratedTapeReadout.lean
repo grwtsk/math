@@ -203,4 +203,93 @@ theorem exists_readout_failure_iff_not_RH (window : ℕ)
   (halts_iff_exists_readout_failure window calibration observed accurate).symm.trans
     (halts_iff_not_RH window)
 
+
+private theorem run_none_add {window : ℕ} {c : Configuration window} {n : ℕ}
+    (noneAt : run n c = none) (extra : ℕ) : run (n + extra) c = none := by
+  induction n generalizing c with
+  | zero => simp [run] at noneAt
+  | succ n ih =>
+    rw [Nat.succ_add, run]
+    cases first : step c with
+    | none => rfl
+    | some next =>
+      rw [Option.bind_some]
+      exact ih (by simpa [run, first] using noneAt)
+
+private theorem readout_failure_readdress_iff {origin window n : ℕ}
+    {calibration : TapeChannels n BitCalibration} {observed : TapeReadout n}
+    {c : Configuration origin} (accurate : ReadoutAgrees calibration observed (readdress window c)) :
+    runFromReadout window n 0 calibration observed = some none ↔ run n c = none := by
+  rw [runFromReadout_eq_some_none_iff accurate, run_readdress, Option.map_eq_none_iff]
+
+/-- Accurate trials can change prime window arbitrarily. Cofinal instruction
+budgets detect exactly native halting, including when there are pauses or repeats. -/
+theorem cofinal_readout_failure_iff_halts {origin : ℕ} (c : Configuration origin)
+    (window budget : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ budget t)
+    (calibration : (t : ℕ) → TapeChannels (budget t) BitCalibration)
+    (observed : (t : ℕ) → TapeReadout (budget t))
+    (accurate : ∀ t, ReadoutAgrees (calibration t) (observed t) (readdress (window t) c)) :
+    (∃ t, runFromReadout (window t) (budget t) 0 (calibration t) (observed t) = some none) ↔
+      (StateTransition.eval step c).Dom := by
+  rw [eval_dom_iff_exists_run_eq_none]
+  constructor
+  · rintro ⟨t, failure⟩
+    exact ⟨budget t, (readout_failure_readdress_iff (accurate t)).mp failure⟩
+  · rintro ⟨n, absent⟩
+    obtain ⟨t, ht⟩ := cofinal n
+    obtain ⟨extra, eq⟩ := Nat.exists_eq_add_of_le ht
+    exact ⟨t, (readout_failure_readdress_iff (accurate t)).mpr
+      (eq.symm ▸ run_none_add absent extra)⟩
+
+/-- Cofinality is necessary for detection on every native start, even
+with ideal samples. Each bounded schedule misses a delayed native halt. -/
+theorem cofinal_iff_uniform_readout_halting {origin : ℕ} (window budget : ℕ → ℕ) :
+    (∀ n, ∃ t, n ≤ budget t) ↔
+    ∀ (c : Configuration origin) (calibration : (t : ℕ) → TapeChannels (budget t) BitCalibration)
+      (observed : (t : ℕ) → TapeReadout (budget t)),
+      (∀ t, ReadoutAgrees (calibration t) (observed t) (readdress (window t) c)) →
+      ((∃ t, runFromReadout (window t) (budget t) 0 (calibration t) (observed t) = some none) ↔
+        (StateTransition.eval step c).Dom) := by
+  constructor
+  · intro cofinal c calibration observed accurate
+    exact cofinal_readout_failure_iff_halts c window budget cofinal calibration observed accurate
+  · intro uniform n
+    by_contra missing
+    push Not at missing
+    let c := delayedStop origin n
+    let unit : BitCalibration := ⟨0, 1⟩
+    let calibration (t : ℕ) : TapeChannels (budget t) BitCalibration :=
+      ⟨unit, fun _ => unit, fun _ => unit⟩
+    let observed (t : ℕ) := idealTapeReadout (calibration t) (readdress (window t) c)
+    have halted : (StateTransition.eval step c).Dom := by
+      apply (eval_dom_iff_exists_run_eq_none c).mpr
+      refine ⟨n + 9, ?_⟩
+      cases h : run (n + 9) c with
+      | none => rfl
+      | some finish =>
+        have impossible := (delayedStop_lengths origin n (n + 9)).mp ⟨finish, h⟩
+        omega
+    have accurate (t : ℕ) : ReadoutAgrees (calibration t) (observed t) (readdress (window t) c) :=
+      idealTapeReadout_agrees _ _ (by norm_num [calibration, unit])
+        (fun _ => by norm_num [calibration, unit]) (fun _ => by norm_num [calibration, unit])
+    obtain ⟨t, failure⟩ := (uniform c calibration observed accurate).mpr halted
+    have noneAt := (readout_failure_readdress_iff (accurate t)).mp failure
+    obtain ⟨finish, reached⟩ := (delayedStop_lengths origin n (budget t)).mpr (by have := missing t; omega)
+    rw [noneAt] at reached
+    cases reached
+
+/-- For the exact blank start, a cofinal family of trials may use any
+sequence of prime windows, with the appropriate metadata on each trial. -/
+theorem cofinal_blank_readout_failure_iff_not_RH (window budget : ℕ → ℕ)
+    (cofinal : ∀ n, ∃ t, n ≤ budget t)
+    (calibration : (t : ℕ) → TapeChannels (budget t) BitCalibration)
+    (observed : (t : ℕ) → TapeReadout (budget t))
+    (accurate : ∀ t, ReadoutAgrees (calibration t) (observed t) (blank (window t))) :
+    (∃ t, runFromReadout (window t) (budget t) 0 (calibration t) (observed t) = some none) ↔
+      ¬ RiemannHypothesis := by
+  have reblank (v : ℕ) : readdress v (blank 0) = blank v := by
+    simp [readdress, blank]
+  exact (cofinal_readout_failure_iff_halts (blank 0) window budget cofinal calibration observed
+    (fun t => by rw [reblank]; exact accurate t)).trans (halts_iff_not_RH 0)
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine

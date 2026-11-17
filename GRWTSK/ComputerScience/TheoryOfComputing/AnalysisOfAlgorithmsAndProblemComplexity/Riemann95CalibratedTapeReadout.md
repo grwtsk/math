@@ -98,3 +98,33 @@ sample `3/8` gave absolute error `1/4` against each code.
 
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
+
+## Cofinal trials across prime windows
+
+For every native start and any sequence of prime windows, assume
+the samples at trial t accurately describe that same native start
+readdressed in the trial's window, at input depth equal to the trial's
+instruction budget b(t). If for every n some b(t) is at least n,
+an inner readout failure exists exactly when the original start
+halts. Readdressing commutes with the exact run and preserves its
+absence. An absent run remains absent at any larger budget. Thus
+any native failure budget is eventually met by some trial, even
+when the budgets are nonmonotone.
+
+Cofinality is necessary for this uniform guarantee over all native
+starts. If all budgets are below n, the original state-12 sweep with
+padding n eventually reaches the sole terminal cell. Its first
+n+8 instructions all succeed, so even ideal unit-gain samples
+give no failure at the scheduled budgets. For blank-start trials,
+the positive theorem composes with the pinned halting equivalence
+and yields a readout failure exactly when RH is false.
+
+The scope of the necessity example is arbitrary starts. To apply
+the sufficiency theorem to the physical controller, the sensor
+must supply valid metadata and strict half-gap accuracy at each
+trial, and the schedule must meet the cofinal budget condition.
+
+Pinned strict compilation, target replay, the bounded-delay and
+nonmonotone schedule controls, and all three axiom audits passed.
+Fresh full import replay, independent review and physical HS
+readout accuracy were NOT_RUN.
