@@ -323,4 +323,36 @@ theorem tendsto_signed_mask_at_weighted_pole_saturation
   exact ((h.sub (hmean.pow 2)).sub hvar).congr'
     (Eventually.of_forall fun T => by ring)
 
+/-- A supplier at one heat forces a global energy floor at every fixed
+positive heat, with the common pole cost and that heat's stationary cost. -/
+theorem eventually_residualEnergy_div_ge_poleSeries_add_stationary_cost
+    {s u A : ℝ} (hs : 0 < s) (hu : 0 < u)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    {ε : ℝ} (hε : 0 < ε) :
+    ∀ᶠ T : ℝ in atTop,
+      2 * (∑' ρ, positiveCriticalPoleSquare ρ) +
+        ((2 / riemannZeta (1 / 2 : ℂ)).re - heatedLimit u) ^ 2 - ε ≤ residualEnergy u T / T := by
+  let m := (2 / riemannZeta (1 / 2 : ℂ)).re
+  let S := 2 * (∑' ρ, positiveCriticalPoleSquare ρ)
+  have hbudget₁ : ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + 1) * T ^ (1 : ℕ) + 0 := by
+    simpa only [pow_one, add_zero] using hbudget 1 one_pos
+  obtain ⟨C, hC, hE⟩ := global_residualEnergy_poly_of_affine_envelope hG
+    (add_nonneg hA zero_le_one) (le_refl (0 : ℝ)) hmajorant hbudget₁
+  have hm : Tendsto pickupHorizonMean atTop (𝓝 m) :=
+    tendsto_pickupHorizonMean_at_stationary hs hζ hC (by simpa only [pow_one] using hE)
+  have hcost := (hm.sub_const (heatedLimit u)).pow 2
+  have herr := tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost hu
+  have hsmall : 0 < ε / 3 := by linarith
+  have h₁ := eventually_pickup_variance_ge_poleSeries hs hζ hA hG hmajorant hbudget hsmall
+  have h₂ := (tendsto_order.mp hcost).1 ((m - heatedLimit u) ^ 2 - ε / 3) (by linarith)
+  have h₃ := (tendsto_order.mp herr).1 (-(ε / 3)) (by linarith)
+  filter_upwards [h₁, h₂, h₃] with T h₁ h₂ h₃
+  change S - ε / 3 ≤ pickupHorizonVariance T at h₁
+  change S + (m - heatedLimit u) ^ 2 - ε ≤ residualEnergy u T / T
+  linarith
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
