@@ -160,4 +160,48 @@ theorem inverse_gain_le_concentrated {m : ℕ} (a : Fin m → ℝ)
     (∏ i, (1 - a i))⁻¹ ≤ (1 - ∑ i, a i)⁻¹ :=
   inv_anti₀ (sub_pos.mpr total) (product_ge_concentrated_steps a range)
 
+/-- The minimum modal gain over the whole feasible total range is the
+positive part of one minus the total. For totals at least one, put unit
+exposure in the first slot and distribute the remaining total over the rest. -/
+theorem exists_steps_attaining_minimum {m : ℕ} (hm : 0 < m) {A : ℝ}
+    (nonneg : 0 ≤ A) (feasible : A ≤ (m : ℝ)) :
+    ∃ a : Fin m → ℝ, (∀ i, 0 ≤ a i ∧ a i ≤ 1) ∧
+      (∑ i, a i) = A ∧ (∏ i, (1 - a i)) = max 0 (1 - A) := by
+  classical
+  by_cases small : A ≤ 1
+  · let slot : Fin m := ⟨0, hm⟩
+    let a : Fin m → ℝ := fun i => if i = slot then A else 0
+    obtain ⟨total, gain⟩ := concentrated_steps_attain slot A
+    refine ⟨a, ?_, total, ?_⟩
+    · intro i
+      by_cases h : i = slot <;> simp [a, h, nonneg, small]
+    · rw [max_eq_right (sub_nonneg.mpr small)]
+      exact gain
+  · cases m with
+    | zero => omega
+    | succ n =>
+      have enough : 0 ≤ A - 1 := by linarith
+      have capacity : A - 1 ≤ (n : ℝ) := by push_cast at feasible; linarith
+      have hn : (0 : ℝ) < n := by linarith
+      let a : Fin (n + 1) → ℝ := Fin.cons 1 (fun _ => (A - 1) / (n : ℝ))
+      refine ⟨a, ?_, ?_, ?_⟩
+      · intro i
+        refine Fin.cases ?_ (fun j => ?_) i
+        · simp [a]
+        · simpa [a] using And.intro (div_nonneg enough hn.le)
+            ((div_le_iff₀ hn).mpr (by simpa using capacity))
+      · rw [Fin.sum_univ_succ]
+        simp only [a, Fin.cons_zero, Fin.cons_succ, Finset.sum_const,
+          Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+        field_simp
+        ring
+      · rw [Fin.prod_univ_succ, max_eq_left (by linarith)]
+        simp [a]
+
+theorem minimum_gain_le_product {m : ℕ} (a : Fin m → ℝ)
+    (range : ∀ i, 0 ≤ a i ∧ a i ≤ 1) :
+    max 0 (1 - ∑ i, a i) ≤ ∏ i, (1 - a i) :=
+  max_le (Finset.prod_nonneg fun i _ => sub_nonneg.mpr (range i).2)
+    (product_ge_concentrated_steps a range)
+
 end GRWTSK.OperatorTheory.FiniteEulerBalancedSteps
