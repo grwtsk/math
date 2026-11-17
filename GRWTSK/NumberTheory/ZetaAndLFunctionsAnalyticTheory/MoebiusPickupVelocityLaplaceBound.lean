@@ -144,22 +144,27 @@ theorem dampedPickupVelocity_integrable_of_weakMertens {B σ : ℝ}
 
 open scoped FourierTransform
 
-/-- Mathlib's real Fourier frequency `ξ` corresponds to imaginary Laplace
-coordinate `2 * π * ξ` for the exact damped velocity. -/
-theorem fourier_dampedPickupVelocity_eq_signedLaplace (σ ξ : ℝ) :
-    𝓕 (dampedPickupVelocity σ) ξ =
-      signedLaplace pickupVelocity ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I) := by
+private theorem fourier_damped_eq_signedLaplace (f : ℝ → ℝ) (σ ξ : ℝ) :
+    𝓕 ((Ioi (0 : ℝ)).indicator (fun u => ((Real.exp (-σ * u) * f u : ℝ) : ℂ))) ξ =
+      signedLaplace f ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I) := by
   rw [Real.fourier_real_eq_integral_exp_smul, signedLaplace, ← integral_indicator measurableSet_Ioi]
   congr 1
   funext u
   by_cases hu : u ∈ Ioi (0 : ℝ)
-  · simp only [dampedPickupVelocity, indicator_of_mem hu, smul_eq_mul,
+  · simp only [indicator_of_mem hu, smul_eq_mul,
       Complex.ofReal_mul, Complex.ofReal_exp]
     rw [← mul_assoc, ← Complex.exp_add]
     congr 2
     push_cast
     ring
-  · simp [dampedPickupVelocity, indicator_of_notMem hu]
+  · simp [indicator_of_notMem hu]
+
+/-- Mathlib's real Fourier frequency `ξ` corresponds to imaginary Laplace
+coordinate `2 * π * ξ` for the exact damped velocity. -/
+theorem fourier_dampedPickupVelocity_eq_signedLaplace (σ ξ : ℝ) :
+    𝓕 (dampedPickupVelocity σ) ξ =
+      signedLaplace pickupVelocity ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I) :=
+  fourier_damped_eq_signedLaplace pickupVelocity σ ξ
 
 private theorem lpTwo_norm_sq_eq_integral (f : Lp ℂ 2 (volume : Measure ℝ)) : ‖f‖ ^ 2 = ∫ u : ℝ, ‖f u‖ ^ 2 := by
   apply Complex.ofReal_injective
@@ -798,5 +803,59 @@ theorem dampedCenteredWholePickup_integrable_memLp_two_of_weakMertens {B σ : �
   refine hEsq.mono' (hm.norm.pow_const 2).aestronglyMeasurable (ae_of_all _ fun t => ?_)
   rw [Real.norm_of_nonneg (sq_nonneg _)]
   exact pow_le_pow_left₀ (norm_nonneg _) (hnorm t) 2
+
+private theorem norm_dampedCenteredWholePickup_sq (σ c : ℝ) :
+    (fun u : ℝ => ‖dampedCenteredWholePickup σ c u‖ ^ 2) =
+      (Ioi (0 : ℝ)).indicator
+        (fun u => Real.exp (-(2 * σ) * u) * (wholePickup u - c) ^ 2) := by
+  funext u
+  by_cases hu : u ∈ Ioi (0 : ℝ)
+  · simp only [dampedCenteredWholePickup, indicator_of_mem hu, Complex.norm_real,
+      Real.norm_eq_abs, sq_abs, mul_pow]
+    rw [pow_two (Real.exp _), ← Real.exp_add]
+    congr 2
+    ring
+  · simp [dampedCenteredWholePickup, indicator_of_notMem hu]
+
+/-- Plancherel returns the exact centered Laplace-line allowance to the
+exponentially weighted time energy. -/
+theorem weightedCenteredWholePickupSquare_le_of_weakMertens {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (hmid : riemannZeta (1 / 2 : ℂ) ≠ 0) :
+    ∃ σ₀ K D : ℝ, 0 < σ₀ ∧ 0 ≤ K ∧ 0 ≤ D ∧ ∀ σ : ℝ, 0 < σ → σ ≤ σ₀ →
+      let c := (2 / riemannZeta (1 / 2 : ℂ)).re
+      IntegrableOn (fun u => Real.exp (-(2 * σ) * u) * (wholePickup u - c) ^ 2) (Ioi 0) ∧
+      (∫ u in Ioi (0 : ℝ), Real.exp (-(2 * σ) * u) * (wholePickup u - c) ^ 2) ≤ K / σ + D := by
+  obtain ⟨σ₀, K, D, hσ₀, hK, hD, hline⟩ :=
+    signedLaplace_centeredWholePickup_line_square_le_of_weakMertens hB hM hmid
+  refine ⟨σ₀, K, D, hσ₀, hK, hD, fun σ hσ hσmax => ?_⟩
+  let c := (2 / riemannZeta (1 / 2 : ℂ)).re
+  let W := dampedCenteredWholePickup σ c
+  obtain ⟨hW₁, hW₂⟩ := dampedCenteredWholePickup_integrable_memLp_two_of_weakMertens hB hσ hM c
+  let F : Lp ℂ 2 (volume : Measure ℝ) := hW₂.toLp W
+  have hnorm (g : Lp ℂ 2 (volume : Measure ℝ)) := lpTwo_norm_sq_eq_integral g
+  have htime : (∫ u : ℝ, ‖F u‖ ^ 2) =
+      ∫ u in Ioi (0 : ℝ), Real.exp (-(2 * σ) * u) * (wholePickup u - c) ^ 2 := by
+    calc
+      _ = ∫ u : ℝ, ‖dampedCenteredWholePickup σ c u‖ ^ 2 := by
+        apply integral_congr_ae
+        filter_upwards [hW₂.coeFn_toLp] with u hu
+        exact congrArg (fun z : ℂ => ‖z‖ ^ 2) hu
+      _ = _ := by rw [norm_dampedCenteredWholePickup_sq, integral_indicator measurableSet_Ioi]
+  have hfreq : (∫ ξ : ℝ, ‖(𝓕 F : Lp ℂ 2 volume) ξ‖ ^ 2) =
+      ∫ ξ : ℝ, ‖signedLaplace (fun u => wholePickup u - c)
+        ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I)‖ ^ 2 := by
+    apply integral_congr_ae
+    filter_upwards [fourierLp_ae_eq_classical hW₁ hW₂] with ξ hξ
+    exact congrArg (fun z : ℂ => ‖z‖ ^ 2)
+      (hξ.trans (fourier_damped_eq_signedLaplace (fun u => wholePickup u - c) σ ξ))
+  refine ⟨?_, ?_⟩
+  · have hi := (memLp_two_iff_integrable_sq_norm hW₂.aestronglyMeasurable).mp hW₂
+    rwa [norm_dampedCenteredWholePickup_sq, integrable_indicator_iff measurableSet_Ioi] at hi
+  · calc
+      _ = ‖F‖ ^ 2 := htime.symm.trans (hnorm F).symm
+      _ = ‖𝓕 F‖ ^ 2 := by rw [Lp.norm_fourier_eq]
+      _ = _ := (hnorm (𝓕 F)).trans hfreq
+      _ ≤ _ := (hline σ hσ hσmax).2
 
 end GRWTSK.NumberTheory.Moebius
