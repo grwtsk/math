@@ -906,4 +906,53 @@ theorem runOn_append_with_handoff {w mid replacement : ℕ}
   rw [runOn_append first left mid, prefixRun, Option.bind_some]
   exact runOn_handoffView_eq handoff length leftTarget rightTarget
 
+private theorem blank_mk_eq_of_complete_prefix {l r : List (Fin 2)} {depth : ℕ}
+    (hl : l.length ≤ depth) (hr : r.length ≤ depth)
+    (same : ∀ i < depth, (l[i]?).getD 0 = (r[i]?).getD 0) :
+    ListBlank.mk l = ListBlank.mk r := by
+  let pad (xs : List (Fin 2)) := xs ++ List.replicate (depth - xs.length) 0
+  have lengthPad (xs : List (Fin 2)) (h : xs.length ≤ depth) :
+      (pad xs).length = depth := by
+    simp [pad, Nat.add_sub_cancel' h]
+  have bitPad (xs : List (Fin 2)) {i : ℕ} (hi : i < (pad xs).length) :
+      (pad xs)[i] = (xs[i]?).getD 0 := by
+    by_cases before : i < xs.length
+    · simp [pad, List.getElem_append_left, before]
+    · have after : xs.length ≤ i := by omega
+      simp [pad, List.getElem_append_right, after]
+  have equal : pad l = pad r := by
+    apply List.ext_getElem ((lengthPad l hl).trans (lengthPad r hr).symm)
+    intro i h₁ h₂
+    rw [bitPad l h₁, bitPad r h₂]
+    exact same i (by simpa only [lengthPad l hl] using h₁)
+  calc
+    ListBlank.mk l = ListBlank.mk (pad l) := Quot.sound (Or.inl ⟨_, rfl⟩)
+    _ = ListBlank.mk (pad r) := congrArg ListBlank.mk equal
+    _ = ListBlank.mk r := by
+      symm
+      exact Quot.sound (Or.inl ⟨_, rfl⟩)
+
+/-- A same-window check covering both stored half-tapes is already exact
+for the native pointed tape and absolute head, modulo trailing blanks. -/
+theorem handoffView_eq_of_complete_tapeAgrees {window depth : ℕ}
+    {c d : Configuration window} (agree : TapeAgrees depth c d)
+    (cl : c.left.length ≤ depth) (cr : c.right.length ≤ depth)
+    (dl : d.left.length ≤ depth) (dr : d.right.length ≤ depth) :
+    handoffView c = handoffView d := by
+  obtain ⟨address, position, scanned, left, right⟩ := agree
+  simp only [handoffView, project, address, position, scanned,
+    blank_mk_eq_of_complete_prefix cl dl left, blank_mk_eq_of_complete_prefix cr dr right]
+
+/-- Agreement at cofinal depths determines the entire native handoff view. -/
+theorem handoffView_eq_of_cofinal_tapeAgrees {window : ℕ} {c d : Configuration window}
+    (depth : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ depth t)
+    (agree : ∀ t, TapeAgrees (depth t) c d) : handoffView c = handoffView d := by
+  let size := max (max c.left.length c.right.length) (max d.left.length d.right.length)
+  obtain ⟨t, enough⟩ := cofinal size
+  exact handoffView_eq_of_complete_tapeAgrees (agree t)
+    ((le_max_left _ _).trans ((le_max_left _ _).trans enough))
+    ((le_max_right _ _).trans ((le_max_left _ _).trans enough))
+    ((le_max_left _ _).trans ((le_max_right _ _).trans enough))
+    ((le_max_right _ _).trans ((le_max_right _ _).trans enough))
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
