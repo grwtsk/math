@@ -69,4 +69,32 @@ theorem weightedPickupVelocitySquare_le_of_weakMertens {B σ : ℝ}
       rw [pickupVelocitySquare_integral_eq_mertens, Real.exp_zero, add_zero]
       simpa only [Real.log_exp] using hM (Real.exp T) (Real.one_le_exp_iff.mpr hT))
 
+/-- The exact signed velocity with Laplace damping, extended by zero to the
+whole real line for the Fourier transform. -/
+def dampedPickupVelocity (σ : ℝ) : ℝ → ℂ :=
+  (Ioi (0 : ℝ)).indicator fun u => ((Real.exp (-σ * u) * pickupVelocity u : ℝ) : ℂ)
+
+/-- Weak Mertens puts the whole-line damped velocity in the Plancherel domain. -/
+theorem dampedPickupVelocity_memLp_two_of_weakMertens {B σ : ℝ}
+    (hB : 0 ≤ B) (hσ : 0 < σ)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X) :
+    MemLp (dampedPickupVelocity σ) 2 volume := by
+  have he : Measurable (fun u : ℝ => Real.exp (-σ * u)) := by fun_prop
+  have hm : Measurable (dampedPickupVelocity σ) :=
+    (Complex.continuous_ofReal.measurable.comp (he.mul pickupVelocity_measurable)).indicator
+      measurableSet_Ioi
+  apply (memLp_two_iff_integrable_sq_norm hm.aestronglyMeasurable).2
+  have hEq : (fun u : ℝ => ‖dampedPickupVelocity σ u‖ ^ 2) =
+      (Ioi (0 : ℝ)).indicator (fun u => Real.exp (-(2 * σ) * u) * pickupVelocity u ^ 2) := by
+    funext u
+    by_cases hu : u ∈ Ioi (0 : ℝ)
+    · simp only [dampedPickupVelocity, indicator_of_mem hu, Complex.norm_real, Real.norm_eq_abs,
+        sq_abs, mul_pow]
+      rw [pow_two (Real.exp _), ← Real.exp_add]
+      congr 2
+      ring
+    · simp [dampedPickupVelocity, indicator_of_notMem hu]
+  rw [hEq, integrable_indicator_iff measurableSet_Ioi]
+  exact (weightedPickupVelocitySquare_le_of_weakMertens hB hσ hM).1
+
 end GRWTSK.NumberTheory.Moebius
