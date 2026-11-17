@@ -4,6 +4,7 @@ import GRWTSK.MeasureAndIntegration.LaplaceCumulativeSquareBound
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 import Mathlib.MeasureTheory.Integral.ExpDecay
 import Mathlib.Analysis.Fourier.LpSpace
+import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -183,5 +184,60 @@ theorem fourierLp_dampedPickupVelocity_norm_sq_le_of_weakMertens {B σ : ℝ}
     _ ≤ _ := by
       rw [norm_dampedPickupVelocity_sq, integral_indicator measurableSet_Ioi]
       exact (weightedPickupVelocitySquare_le_of_weakMertens hB hσ hM).2
+
+open InnerProductSpace
+open scoped SchwartzMap
+
+private theorem fourierLp_pairing_eq_classical {f : ℝ → ℂ} (hf₁ : Integrable f)
+    (hf₂ : MemLp f 2 volume) (g : 𝓢(ℝ, ℂ)) :
+    (∫ x : ℝ, g x * (𝓕 (hf₂.toLp f) : Lp ℂ 2 volume) x) =
+      ∫ x : ℝ, g x * 𝓕 f x := by
+  let F := hf₂.toLp f
+  have h := congrArg (fun d : 𝓢'(ℝ, ℂ) => d g) (Lp.fourier_toTemperedDistribution_eq F)
+  simp only [TemperedDistribution.fourier_apply, Lp.toTemperedDistribution_apply, smul_eq_mul] at h
+  calc
+    _ = ∫ x : ℝ, 𝓕 g x * F x := h.symm
+    _ = ∫ x : ℝ, 𝓕 g x * f x := by
+      apply integral_congr_ae
+      filter_upwards [hf₂.coeFn_toLp] with x hx
+      rw [show F x = f x from hx]
+    _ = _ := by
+      change (∫ x : ℝ, VectorFourier.fourierIntegral Real.fourierChar volume
+        (innerₗ ℝ) (g : ℝ → ℂ) x * f x) =
+        ∫ x : ℝ, g x * VectorFourier.fourierIntegral Real.fourierChar volume (innerₗ ℝ) f x
+      simpa [smul_eq_mul, mul_comm] using
+        (VectorFourier.integral_fourierIntegral_smul_eq_flip (L := innerₗ ℝ) (μ := volume) (ν := volume)
+          Real.continuous_fourierChar continuous_inner g.integrable hf₁)
+
+
+private theorem fourierLp_ae_eq_classical {f : ℝ → ℂ} (hf₁ : Integrable f)
+    (hf₂ : MemLp f 2 volume) :
+    (𝓕 (hf₂.toLp f) : Lp ℂ 2 volume) =ᵐ[volume] 𝓕 f := by
+  have hcont : Continuous (𝓕 f) :=
+    VectorFourier.fourierIntegral_continuous Real.continuous_fourierChar
+      (innerSL ℝ).continuous₂ hf₁
+  apply ae_eq_of_integral_contDiff_smul_eq
+    ((Lp.memLp (𝓕 (hf₂.toLp f) : Lp ℂ 2 volume)).locallyIntegrable (by norm_num))
+    hcont.locallyIntegrable
+  intro g hg hs
+  let G : 𝓢(ℝ, ℂ) :=
+    (hs.comp_left Complex.ofReal_zero).toSchwartzMap (Complex.ofRealCLM.contDiff.comp hg)
+  simp only [Complex.real_smul]
+  change (∫ x : ℝ, G x * (𝓕 (hf₂.toLp f) : Lp ℂ 2 volume) x) =
+    ∫ x : ℝ, G x * 𝓕 f x
+  exact fourierLp_pairing_eq_classical hf₁ hf₂ G
+
+/-- The Plancherel representative agrees almost everywhere with the exact
+velocity Laplace transform, in Mathlib's Fourier frequency normalization. -/
+theorem fourierLp_dampedPickupVelocity_ae_eq_signedLaplace {B σ : ℝ}
+    (hB : 0 ≤ B) (hσ : 0 < σ)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X) :
+    (𝓕 ((dampedPickupVelocity_memLp_two_of_weakMertens hB hσ hM).toLp
+        (dampedPickupVelocity σ)) : Lp ℂ 2 volume) =ᵐ[volume]
+      fun ξ => signedLaplace pickupVelocity ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I) := by
+  filter_upwards [fourierLp_ae_eq_classical
+    (dampedPickupVelocity_integrable_of_weakMertens hB hσ hM)
+    (dampedPickupVelocity_memLp_two_of_weakMertens hB hσ hM)] with ξ hξ
+  exact hξ.trans (fourier_dampedPickupVelocity_eq_signedLaplace σ ξ)
 
 end GRWTSK.NumberTheory.Moebius
