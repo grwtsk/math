@@ -400,4 +400,56 @@ theorem tendsto_signed_mask_ceiling_iff_tendsto_residual_pole_floor
     rw [add_sub_cancel_right] at h
     exact h.congr' (Eventually.of_forall fun T => add_sub_cancel_right (D T) (E T))
 
+/-- Any genuine allowance on nontrivial scales must cover the common pole
+cost and its own displacement from the forced stationary mean. -/
+theorem poleSeries_add_stationary_cost_le_residual_allowance
+    {s u A B : ℝ} (hs : 0 < s) (hu : 0 < u)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (hB : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy u T / T ≤ B + ε) :
+    2 * (∑' ρ, positiveCriticalPoleSquare ρ) +
+      ((2 / riemannZeta (1 / 2 : ℂ)).re - heatedLimit u) ^ 2 ≤ B := by
+  let F := 2 * (∑' ρ, positiveCriticalPoleSquare ρ) +
+    ((2 / riemannZeta (1 / 2 : ℂ)).re - heatedLimit u) ^ 2
+  change F ≤ B
+  by_contra! hbad
+  let δ := (F - B) / 3
+  have hδ : 0 < δ := by dsimp [δ]; linarith
+  have hlow := (eventually_residualEnergy_div_ge_poleSeries_add_stationary_cost
+    hs hu hζ hA hG hmajorant hbudget hδ).filter_mono hl
+  obtain ⟨T, h₁, h₂⟩ := (hlow.and (hB δ hδ)).exists
+  change F - δ ≤ residualEnergy u T / T at h₁
+  dsimp only [δ] at h₁ h₂
+  linarith
+
+/-- A weighted allowance covers the pole cost, the heat gap and the
+displacement of the weighted settled heat from the stationary source mean. -/
+theorem poleSeries_add_weighted_stationary_cost_le_two_residual_allowances
+    {s t A Aₛ Aₜ w : ℝ} (hs : 0 < s) (ht : 0 < t)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    (hw₀ : 0 ≤ w) (hw₁ : w ≤ 1) {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (hₛ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ Aₛ + ε)
+    (hₜ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ Aₜ + ε) :
+    2 * (∑' ρ, positiveCriticalPoleSquare ρ) +
+        w * (1 - w) * (heatedLimit s - heatedLimit t) ^ 2 +
+        ((2 / riemannZeta (1 / 2 : ℂ)).re -
+          (w * heatedLimit s + (1 - w) * heatedLimit t)) ^ 2 ≤
+      w * Aₛ + (1 - w) * Aₜ := by
+  have hleft := poleSeries_add_stationary_cost_le_residual_allowance
+    hs hs hζ hA hG hmajorant hbudget hl hₛ
+  have hright := poleSeries_add_stationary_cost_le_residual_allowance
+    hs ht hζ hA hG hmajorant hbudget hl hₜ
+  have h := add_le_add (mul_le_mul_of_nonneg_left hleft hw₀)
+    (mul_le_mul_of_nonneg_left hright (sub_nonneg.mpr hw₁))
+  convert h using 1
+  ring
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
