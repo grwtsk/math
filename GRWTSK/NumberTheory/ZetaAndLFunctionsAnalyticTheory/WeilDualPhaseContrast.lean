@@ -107,4 +107,48 @@ theorem tsum_sub_dual {Z W : Type*} (zeros : Z → ℂ) (dualZeros : W → ℂ)
       ((dualPhasePart (firstPowers A) χ C + dualPhasePart (laterPowers A) χ C : ℝ) : ℂ) := by
   rw [source.tsum_eq, dualSource.tsum_eq, physicalValue_sub_dual]
 
+/-- Adding the two signed prime readouts retains the real-real pairing. -/
+theorem primeReadout_dual_add (S : Finset ℕ) (χ : DirichletCharacter ℂ q) (C : ℕ → ℂ) :
+    primeReadout S (primeAtom χ C) + primeReadout S (primeAtom χ⁻¹ C) =
+      4 * ∑ n ∈ S, primeWeight n * (χ n).re * (C n).re := by
+  unfold primeReadout
+  rw [← mul_add, ← Finset.sum_add_distrib, show (4 : ℝ) = 2 * 2 by norm_num, mul_assoc]
+  congr 1
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro n _
+  simp only [primeAtom, inverse_apply_conj, Complex.mul_re,
+    Complex.ofReal_re, Complex.ofReal_im, Complex.conj_re, Complex.conj_im, zero_mul, sub_zero]
+  ring
+
+/-- The common arithmetic background and the real-real prime pairing
+on both active windows. -/
+def dualEvenValue (χ : DirichletCharacter ℂ q) (A : ℝ) (f : ℝ → ℂ) : ℂ :=
+  let R (S : Finset ℕ) :=
+    ∑ n ∈ S, primeWeight n * (χ n).re * (correlation f (Real.log (n : ℝ))).re
+  ((gammaConstant q (gammaParity χ) * energy f +
+    (∫ r in Set.Ioi (0 : ℝ), gammaCorrectionDensity (gammaParity χ) f r) -
+    2 * (R (firstPowers A) + R (laterPowers A)) : ℝ) : ℂ) + poleTerm q f
+
+theorem physicalValue_add_dual (χ : DirichletCharacter ℂ q) (A : ℝ) (f : ℝ → ℂ) :
+    physicalValue χ A f + physicalValue χ⁻¹ A f = 2 * dualEvenValue χ A f := by
+  let C := fun n : ℕ => correlation f (Real.log (n : ℝ))
+  have first := primeReadout_dual_add (firstPowers A) χ C
+  have later := primeReadout_dual_add (laterPowers A) χ C
+  unfold physicalValue dualEvenValue
+  rw [same_gamma_parity, inv_inv, twistedPrime_eq_window_add_later, twistedPrime_eq_window_add_later]
+  dsimp only [C] at first later
+  have paired := congrArg (fun x : ℝ => (x : ℂ)) (congrArg₂ (· + ·) first later)
+  push_cast at paired ⊢
+  linear_combination -paired
+
+/-- The exact spectral sums retain their own zero indices and multiplicity
+summands when the even arithmetic component is extracted. -/
+theorem tsum_add_dual {Z W : Type*} (zeros : Z → ℂ) (dualZeros : W → ℂ)
+    (χ : DirichletCharacter ℂ q) (A : ℝ) (f : ℝ → ℂ)
+    (source : HasSum zeros (physicalValue χ A f))
+    (dualSource : HasSum dualZeros (physicalValue χ⁻¹ A f)) :
+    (∑' z, zeros z) + (∑' z, dualZeros z) = 2 * dualEvenValue χ A f := by
+  rw [source.tsum_eq, dualSource.tsum_eq, physicalValue_add_dual]
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
