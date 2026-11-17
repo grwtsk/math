@@ -1209,4 +1209,46 @@ theorem tendsto_heatMaskDeviation_sub_diagonal_div_iff_source_variance
   · intro h
     exact (hsum.sub h).congr' (Eventually.of_forall fun T => add_sub_cancel_right (D T) (V T))
 
+/-- The mean over the original pickup horizon. -/
+def pickupHorizonMean (T : ℝ) : ℝ := (∫ u in (0 : ℝ)..T, wholePickup u) / T
+
+/-- The average squared fluctuation about the mean at the same horizon. -/
+def pickupHorizonVariance (T : ℝ) : ℝ :=
+  (∫ u in (0 : ℝ)..T, (wholePickup u - pickupHorizonMean T) ^ 2) / T
+
+private theorem centeredPickup_div_eq_variance_add_sq (b : ℝ) {T : ℝ} (hT : 0 < T) :
+    (∫ u in (0 : ℝ)..T, (wholePickup u - b) ^ 2) / T =
+      pickupHorizonVariance T + (pickupHorizonMean T - b) ^ 2 := by
+  unfold pickupHorizonVariance pickupHorizonMean
+  rw [centeredPickup_expand, centeredPickup_expand]
+  field_simp
+  ring
+
+/-- With the measured mean and variance retained, the original signed
+deviation has the same settled limit even if the mean does not converge. -/
+theorem tendsto_normalized_heatMaskDeviation_add_measured_variance_and_mean_sq
+    {s : ℝ} (hs : 0 < s) :
+    Tendsto (fun T : ℝ =>
+      (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+        pickupDiagonal T) / T + pickupHorizonVariance T + pickupHorizonMean T ^ 2)
+      atTop (𝓝 (settledHeatedPickup s)) := by
+  refine (tendsto_normalized_heatMaskDeviation_sub_diagonal_add_energy hs).congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+  have h := centeredPickup_div_eq_variance_add_sq 0 hT
+  simp only [sub_zero] at h
+  change pickupEnergy T / T = pickupHorizonVariance T + pickupHorizonMean T ^ 2 at h
+  rw [add_div, h]
+  ring
+
+/-- The genuine residual slope is the measured variance plus the squared
+difference from the settled heat, up to an error tending to zero. -/
+theorem tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost
+    {s : ℝ} (hs : 0 < s) :
+    Tendsto (fun T : ℝ => residualEnergy s T / T -
+      (pickupHorizonVariance T + (pickupHorizonMean T - heatedLimit s) ^ 2))
+      atTop (𝓝 0) := by
+  refine (tendsto_centeredResidual_error_div hs).congr' ?_
+  filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
+  rw [sub_div, centeredPickup_div_eq_variance_add_sq (heatedLimit s) hT]
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
