@@ -97,7 +97,7 @@ theorem norm_completedHurwitz_pair_le (a : UnitAddCircle) {s : ℂ}
     calc
       _ ≤ ‖completedHurwitzZetaEven₀ a s‖ +
           ‖(if a = 0 then (1 : ℂ) else 0) / s‖ + ‖(1 : ℂ) / (1 - s)‖ :=
-        (norm_sub_le _ _).trans (add_le_add_right (norm_sub_le _ _) _)
+        (norm_sub_le _ _).trans (add_le_add (norm_sub_le _ _) le_rfl)
       _ ≤ _ := by linarith
   unfold hurwitzStripMass
   linarith
@@ -168,7 +168,7 @@ theorem norm_LFunction_le_strip (chi : DirichletCharacter ℂ N) {s : ℂ}
     (hl : -1 ≤ s.re) (hu : s.re ≤ 2) (hi : 2 ≤ |s.im|) :
     ‖DirichletCharacter.LFunction chi s‖ ≤
       completedStripBound N * reciprocalStripConstant * Real.exp (Real.pi * |s.im| / 2) := by
-  have hs0 : s ≠ 0 := by intro h; simp [h] at hi
+  have hs0 : s ≠ 0 := by intro h; norm_num [h] at hi
   rw [chi.LFunction_eq_completed_div_gammaFactor s (.inl hs0), div_eq_mul_inv, norm_mul]
   calc
     _ ≤ completedStripBound N *

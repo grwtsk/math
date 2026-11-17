@@ -184,7 +184,7 @@ theorem heightWindow_mem_closedBall_two (chi : DirichletCharacter ℂ N)
     ‖rho.1 - 2‖ ≤ |(rho.1 - 2).re| + |(rho.1 - 2).im| :=
       Complex.norm_le_abs_re_add_abs_im _
     _ ≤ H + 2 := by
-      change |rho.1.re - 2| + |rho.1.im| ≤ H + 2
+      norm_num [Complex.sub_re, Complex.sub_im]
       rw [abs_of_neg (by linarith [rho.2.2.2] : rho.1.re - 2 < 0)]
       linarith [rho.2.2.1]
 
@@ -247,7 +247,11 @@ theorem heightCount_le_jensen (chi : DirichletCharacter ℂ N) (hprim : chi.IsPr
         (closedBall 2 (H + 2)) z : ℤ) : ℝ) := by
     exact_mod_cast heightCount_le_poleCleared_divisor chi hprim H
   apply hc.trans
-  simpa only [abs_of_pos hr, hratio, poleClearedLFunction_two] using hj
+  have hsum := congrArg
+    (fun r : ℝ => ((∑ᶠ u, MeromorphicOn.divisor
+      (poleClearedLFunction chi) (closedBall 2 r) u : ℤ) : ℝ)) (abs_of_pos hr)
+  rw [← hsum]
+  simpa only [hratio, poleClearedLFunction_two] using hj
 
 /-- An actual all-height circle-growth supplier gives an explicit H log H count.
 The centre term is absorbed with a displayed constant, not a hidden uniformity claim. -/

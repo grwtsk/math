@@ -80,7 +80,7 @@ theorem poleClearedLFunction_central_circle_growth (chi : DirichletCharacter ℂ
     ‖poleClearedLFunction chi s‖ ≤
       Real.exp (centralStripGrowthConstant N * H * (Real.log H + 1)) := by
   obtain ⟨hi, hiH, hnH⟩ := central_jensen_circle_geometry H hH hs hl hu
-  have hs1 : s ≠ 1 := by intro h; simp [h] at hi
+  have hs1 : s ≠ 1 := by intro h; norm_num [h] at hi
   let A : ℝ := completedStripBound N * reciprocalStripConstant
   have hA : 0 ≤ A := mul_nonneg (completedStripBound_nonneg N) reciprocalStripConstant_pos.le
   have hH0 : 0 ≤ H := by linarith

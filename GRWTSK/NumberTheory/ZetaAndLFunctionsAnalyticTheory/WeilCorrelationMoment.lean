@@ -59,7 +59,7 @@ theorem spectralCoordinate_radius_bounds_of_strip (rho : ℂ)
           ‖((spectralCoordinate rho).im : ℂ) * Complex.I‖ := norm_add_le _ _
       _ = |rho.im| + |(spectralCoordinate rho).im| := by
         simp only [norm_mul, Complex.norm_real, Real.norm_eq_abs, Complex.norm_I, mul_one, hre]
-      _ ≤ _ := add_le_add_left him _
+      _ ≤ _ := add_le_add le_rfl him
 
 end GRWTSK.NumberTheory.WeilNegativeWitness
 

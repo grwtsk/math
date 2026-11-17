@@ -178,33 +178,113 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   poles, normalizations and multiplicity. A finite-field trace identity
   supplies none of those global analytic identities.
 
+## Source audit of the open obligations
+
+The source locators below refer to the inspection at
+`ec2d3730f4dd9e136f3b911f55b2d6040e7bfb4d`, supplemented by
+the compact spectral construction linked here and the normalized midpoint
+consumer at `7385200a0149a2deb4713df5d2a5a5e283a2f634`. The two negative-witness
+obligations share a proof: an arithmetic witness on the full primitive sector
+also supplies one on any shorter right corridor.
+
+| Open obligation | Available supplier and exact remaining condition |
+| --- | --- |
+| Primitive right-strip exclusion | The ordinary L-function and inverse reflection are fixed by [the existing return](WeilRightStripWitnessReturn.lean). Supply right-strip exclusion for every primitive nonprincipal character, or combine an upper bound with exclusion of the closed-right-edge corridor. The published ceiling refinements below shorten its width. |
+| Primitive negative witness | [Compact odd spectral isolation](../../FunctionsOfAComplexVariable/CompactOddSpectralIsolation.lean) gives an absolutely convergent odd square sum with negative real part at a nonreal ordinate. [The actual spectral return](WeilPrimitiveCompactOddSpectralReturn.lean) gives the same sign for the original zero divisor. [The arithmetic return](WeilPrimitiveCompactOddArithmeticReturn.lean) discharges the count and admissibility and leaves the exact inverse-character formula as its sole premise. The [native formula candidate](WeilGammaPhysicalReturn.lean) has that statement. Its contour import closure remains unverified. [Written argument](WeilDirichletCompactFilterReturn.lean). |
+| Corridor negative witness | The [arithmetic return](WeilPrimitiveCompactOddArithmeticReturn.lean) gives the corridor witness under the same explicit-formula premise as the full witness. The ceiling reduces the domain the [corridor consumer](PrimitiveDirichletRightCorridor.lean) needs. |
+| Character-local stages | [Countable density](WeilPrimitiveStageCountableDensity.lean) supplies a fixed-stage dictionary. [Filtered window return](WeilPrimitiveFilteredWindowReturn.lean) specifies the two signed errors and permits characterwise cofinal coverage. The [normalized midpoint bound](WeilNormalizedPrimeWeightMidpoint.lean) combines signed weight errors with normalized correlation-code errors. The [coarse conductor-three candidate](WeilOddThreeCoarse32Certificate.md) concerns exactly stage zero. Supply a cofinal schedule for each inverse orbit with the requisite lower bound and prospective coverage of each required test. |
+| Characterwise cofinal height exclusion | The cofinal-height consumer only requires a schedule for each individual character. It needs exclusions on every whole selected height window, with heights unbounded. Counting zeros in those windows is a different estimate. [Cofinal corridor consumer](PrimitiveDirichletRightCorridor.lean). |
+| Finite conductor and height head | Platt's Theorem 7.1 gives signed-height family coverage after conjugating the character. A formal supplier must identify the exact computed zeros, validated range, simplicity/count semantics where used, and ordinary L-function zero predicate. [Platt, v1](https://arxiv.org/pdf/1305.3087v1). |
+| Residual heights | For bounded conductors above their assigned cutoffs, supply zero exclusion throughout the corridor at arbitrarily large heights. An absolute weighted zero-sum tail, or an asymptotic positive fraction of zeros on the line, can allow an off-line zero. [Native height-tail candidate](WeilSourceHeightTail.lean) · [Anthropic source](https://arxiv.org/abs/2608.13637v2). |
+| Large conductors | The corridor branch needs actual zero exclusion for every larger conductor at every height. The [conductor-frontier theorem](WeilConductorFrontier.lean) gives a different supplier, a lower bound for tests at each fixed support radius, in the Weil stages branch. |
+| Literal zeta stages | Supply lower bounds on a cofinal family of full-domain zeta packets with vanishing errors. [Rational weight midpoints](WeilSignedPrimeWeightMidpoint.lean) account for signed coefficient errors, and [shifted support overlaps](WeilLaterPrimeHalfEnergy.lean) reduce the cost of omitted powers. The zeta pole, gamma term and complete test coverage must reach the same [packet consumer](WeilCertificateRootReturn.lean). |
+| Xi real zeros | Prove the real-zero property on the strip for the same holomorphic family used in the limit. [Odd chiral obstruction](XiOddChiralObstruction.lean) forces a compensating asymptotically odd normalization where the even source is nonzero. Its zero at the center also requires separate treatment if a normalizer is singular there. |
+| Xi exact source limit | Establish locally uniform convergence to the completed zeta source, including removal of any central singularity and the exact normalization. The [strip-limit consumer](XiDeterminantStripReturn.lean) requires this convergence, and the determinant comparison uses the same approximants. [Connes–Consani–Moscovici](https://arxiv.org/abs/2511.22755) · [Suzuki, v3](https://arxiv.org/abs/2606.09096v3). |
+| Signed Möbius estimates at all scales | [Pole-floor equivalence](MoebiusSoficPickupPoleCeiling.lean) identifies signed-mask saturation with residual energy reaching the pole floor under the stated hypotheses. The [weighted velocity return](MoebiusPickupVelocityLaplaceBound.lean) transfers a supplied weak Mertens bound to positive Laplace lines. The [adaptive finite-scale return](MoebiusAdaptiveFiniteScaleRHReturn.lean) still needs an all-scale signed estimate and margins for every `ε>0` as required by the RH consumer. |
+| Cryptids checker coverage | Supply sound accepted windows covering the actual blank-initialized RH machine's natural arguments through its bounded-gap interface. The [twelfth-to-sixth checker subtotal](WeilOddSineCheckerTwelfthRunSixthCross.lean) belongs to the finite conductor-three Weil computation and supplies no natural-argument coverage of this machine. [Machine adapter](Riemann95StageCertificatesCryptids.lean). |
+| Jensen hyperbolicity | The fixed-degree large-shift asymptotic leaves the exceptional shifts and unbounded degree to cover for the exact centered xi coefficients. The [Dedekind root-density result](https://arxiv.org/abs/2610.38870v1) also leaves exceptional roots. [Griffin–Ono–Rolen–Zagier](https://arxiv.org/abs/1902.07321). |
+| Newman deformation at zero | Supply real zeros at time zero for the original deformation, equivalently `Λ ≤ 0`. A lower bound on `Λ` or real-rootedness strictly above a positive cutoff leaves this condition open. [Rodgers–Tao, Theorem 1](https://doi.org/10.1017/fmp.2020.6). |
+
+### Compact spectral comparison
+
+Let `F(z)=∫ f(t) exp(i z t) dt` with `f` real and odd. Then
+`conj(F(conj z))=F(-z)=-F(z)`, so the reflected correlation product is
+`-F(z)^2`, not the negative absolute square. Choose an even bump with
+transform 1 at the nonreal ordinate `a`. Fix a finite window past which
+the bump transform has norm at most 1/2. Interpolate odd data on the
+distinct coordinates inside this window, making the transform 1 at `a`
+and 0 off its sign-conjugation orbit. Each actual orbit point has square
+1 and each actual multiplicity appears once, including in a collapsed
+two-point orbit. Convolution with positive powers of the even bump
+preserves those values. The inverse-square strip envelope and summability
+bound the entire complementary sum by a quantity tending to zero as the
+power increases. The chosen point contributes at most −1, and an outer
+norm below 1/2 gives strict negative real part.
+
+[The native spectral theorem](../../FunctionsOfAComplexVariable/CompactOddSpectralIsolation.lean)
+records these hypotheses independently of the arithmetic formula. The
+local zeta proof uses the same construction, so the two Lean scripts
+share an analytic argument. Count upper bounds of the form
+`D H(log H+L)` give the moment by dyadic summation; the
+`n`-th shell contributes `O((n+1)2^{-n})`. Bennett–Martin–O'Bryant–
+Rechnitzer, Theorem 1.1, is a distinct counting supplier once its zero
+multiset and endpoint convention are compared with the actual carrier.
+Fiorilli–Miller's equation (2.2) gives a paper comparison for the conductor,
+gamma and character phases. The native formula uses positive angular
+frequency and evaluates the arithmetic term at `χ⁻¹`. For real inputs,
+[the inverse-χ arithmetic comparison](WeilPrimitiveInverseOrbitStages.lean)
+returns to the same original primitive value. Analytic novelty and
+independent review of the construction are unassessed.
+[Counting theorem](https://arxiv.org/abs/2005.02989v2) ·
+[Fiorilli–Miller, equation (2.2)](https://web.williams.edu/Mathematics/sjmiller/public_html/math/papers/DirichletZeros_DFandSJM_90.pdf) ·
+[Suzuki, discussion of Yoshida's odd zeta criterion](https://arxiv.org/abs/2606.09096v3).
+
+The [HS-95 character carrier](HS95PrimitiveCharacterSeparation.lean)
+separates distinct inverse characters using the full complex first prime
+window at positive levels at most 503, including after common finite-time
+heat. Their real projections coincide. The equality of the original
+arithmetic values for real tests is therefore compatible with genuine
+phase distinctions between the two source characters. The inverse
+character in the formula still matters when matching the zero divisor
+to the arithmetic form.
+
+The compact spectral and arithmetic modules, including the native height
+count, were elaborated on the pinned Lean and Mathlib environment.
+A transitive axiom audit of their main declarations found
+`propext`, `Classical.choice` and `Quot.sound`. The declaration
+`primitiveNegativeWitness_of_inverseCharacterFormula` keeps the formula
+as an explicit hypothesis. Its supplier
+`primitive_hasSum_canonical_arithmetic` in
+[WeilGammaPhysicalReturn](WeilGammaPhysicalReturn.lean) remains a separate
+source candidate with a failing upstream contour import build.
+
+### Narrower external zero-free ceilings
+
+The [pinned OpenAI adapter](NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SevenEighthsZeroFreeGap.lean)
+gives the exact formal interface for `σ=7/8`. Baiying Liu's arXiv:2610.12234v2,
+Theorem 27.1 and Corollary 33.2, give a smaller ceiling
+`σ=34998281/40000000` by iterating the source moment comparison and taking
+the limiting bound. The accompanying Lean source at
+`46d612c2b63a163665ef560afca1965f7c8f434b` has
+`CombineV22.dirichlet_nonzero` for the algebraic limiting boundary,
+with the actual `χ.LFunction` and exactly the principal-pole exclusion.
+[Upstream declaration](https://github.com/liubaiying101/Improved-zero-free-half-planes-for-the-quasi-Riemann-hypothesis/blob/46d612c2b63a163665ef560afca1965f7c8f434b/PartIV.lean#L44004-L44008). Hejian Sang's arXiv:2610.15291v2, Theorem 1.1, instead adds
+an averaged numerator estimate to the imported OpenAI inputs to obtain
+`σ=8748867/10000000`. The two proofs share those source inputs.
+Liu's arXiv:2610.26835v2, Theorem 17.1, gives the claimed algebraic bound
+`B_flat ≈ 0.874886647039964` over arbitrary number fields, using
+averaged numerator control and descent. Its paper describes formalization
+as in progress. Over `ℚ`, compare ordinary Dirichlet L-functions by the
+Hecke correspondence and nonvanishing of extra Euler factors. Local
+formal integration and replay of these narrower sources are **NOT_RUN**.
+For any of these ceilings the remaining corridor contains the edge
+`Re(s)=σ`. A fixed `σ>1/2` leaves that corridor open.
+[Liu, parameter iteration](https://arxiv.org/html/2610.12234v2) ·
+[Sang, amplified moments](https://arxiv.org/html/2610.15291v2) ·
+[Liu, number-field extension](https://arxiv.org/html/2610.26835v2).
+
 ## Remaining source interfaces and failure tests
 
-- **Primitive negative witness.** At an actual zero in the corridor,
-  construct an admissible test with a strictly negative value of the
-  original ordinary-source Weil form. For a candidate constructed on
-  a zero sum, account for all other zeros, multiplicities and the
-  Fourier tail, and prove the exact explicit formula with conductor,
-  gamma parity, bad primes and complex phase. An odd smooth witness
-  is equivalent to the present witness, and the real/complex comparison
-  retains the imaginary prime response. These transfers only start
-  after negativity on the same arithmetic form. [Smooth witness
-  transfer](WeilPrimitiveSmoothWitnessTransfer.lean) · [Complex
-  tests](WeilPrimitiveComplexTestReturn.lean) ·
-  [Source-indexed witness work](https://github.com/grwtsk/math/issues/1801).
-  A concrete reuse is the zeta construction in
-  [`exists_negative_real_odd_zeta_zeroSum`](WeilZetaOddCriterion.lean).
-  It chooses an even bump whose Fourier value is one at the target
-  orbit and at most one half beyond a fixed cutoff. In the fixed
-  finite window an odd interpolating test vanishes at the other
-  distinct ordinates. Convolving with powers of the bump preserves
-  those interpolation values and drives the tail to zero, using
-  the same weighted zero counting input. This avoids choosing a
-  larger window after the interpolation coefficients have been fixed.
-  For a primitive character one must prove the corresponding orbit
-  statement with the actual conductor, multiplicities and duality,
-  plus the identity to `primitiveArithmeticValue`. The local
-  zero-count supplier above addresses the summability part only.
 - **Cofinal lower bounds.** Prove the signed inequalities for the
   literal zeta stages or for each primitive inverse orbit. The
   [inventory enclosure](WeilPrimeWeightInventoryEnclosure.lean)

@@ -58,7 +58,10 @@ theorem gammaFactor_inverse_character (chi : DirichletCharacter ℂ N) (w : ℂ)
   have hp : chi⁻¹.Even ↔ chi.Even := by
     change chi⁻¹ (-1) = 1 ↔ chi (-1) = 1
     rw [inverse_character_neg_one]
-  simp only [DirichletCharacter.gammaFactor, hp]
+  by_cases he : chi.Even
+  · simp only [DirichletCharacter.gammaFactor, he, hp.mpr he, ite_true]
+  · have hInv : ¬(chi⁻¹).Even := fun h => he (hp.mp h)
+    simp only [DirichletCharacter.gammaFactor, he, hInv, ite_false]
 
 /-- A named parity factor used only to state the exact uncompleted equation. -/
 def dirichletParityFactor (chi : DirichletCharacter ℂ N) (w : ℂ) : ℂ := by

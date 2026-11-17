@@ -39,8 +39,9 @@ theorem norm_inv_Gamma_le_strip {z : ℂ}
     (hl : -1 ≤ z.re) (hu : z.re ≤ 2) (hi : 1 ≤ |z.im|) :
     ‖(Complex.Gamma z)⁻¹‖ ≤
       (2 * Real.exp (4 * Real.log 8) / Real.pi) * Real.exp (Real.pi * |z.im|) := by
-  have him : z.im ≠ 0 := by intro h; simp [h] at hi
-  have him1 : (1 - z : ℂ).im ≠ 0 := by simpa using neg_ne_zero.mpr him
+  have him : z.im ≠ 0 := by intro h; norm_num [h] at hi
+  have him1 : (1 - z : ℂ).im ≠ 0 := by
+    simpa only [Complex.sub_im, Complex.one_im, zero_sub] using neg_ne_zero.mpr him
   have hG := gamma_ne_zero_of_im_ne him
   have hG1 := gamma_ne_zero_of_im_ne him1
   have hpi : (Real.pi : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr Real.pi_pos.ne'
@@ -92,11 +93,10 @@ theorem norm_inv_Gamma_le_strip {z : ℂ}
         rw [hrec2]
         exact le_mul_of_one_le_left (norm_nonneg _) hnorm2
       _ ≤ _ := by
-        apply norm_Gamma_le_envelope (R := 4)
-        · change 1 ≤ 3 - z.re
-          linarith
-        · change 3 - z.re ≤ 4
-          linarith
+        have lower : 1 ≤ ((3 : ℂ) - z).re := by simp only [Complex.sub_re]; norm_num; linarith
+        have upper : ((3 : ℂ) - z).re ≤ 4 := by simp only [Complex.sub_re]; norm_num; linarith
+        simpa only [show (2 * 4 : ℝ) = 8 by norm_num] using
+          (norm_Gamma_le_envelope (R := 4) lower upper)
   have hphase : ‖Complex.sin (Real.pi * z)‖ ≤ Real.exp (Real.pi * |z.im|) := by
     have h := (norm_cos_sin_le_exp_im (Real.pi * z)).2
     simpa only [Complex.im_ofReal_mul, abs_mul, abs_of_pos Real.pi_pos] using h

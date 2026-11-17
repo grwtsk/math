@@ -116,7 +116,8 @@ private theorem kernel_hasDerivAt (z : ℂ) (t : ℝ) :
     HasDerivAt (fun x : ℝ => Complex.exp (Complex.I * z * (x : ℂ)))
       (Complex.exp (Complex.I * z * (t : ℂ)) * (Complex.I * z)) t := by
   have hcast : HasDerivAt (fun x : ℝ => (x : ℂ)) 1 t := by
-    simpa using (Complex.ofRealCLM.hasDerivAt (x := t))
+    change HasDerivAt Complex.ofRealCLM 1 t
+    exact Complex.ofRealCLM.hasDerivAt
   simpa only [mul_one] using (hcast.const_mul (Complex.I * z)).cexp
 
 /-- Integration by parts with proved integrability of the function and its derivative.

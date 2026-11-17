@@ -60,7 +60,7 @@ theorem norm_term_le
   have hvj : ‖v (j i)‖ ≤ B * w i := by simpa only [hj i] using hv (j i)
   calc
     ‖term m j u v i‖ = m i * ‖u i‖ * ‖v (j i)‖ := by
-      simp [term, norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg (hm i)]
+      simp [term, Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg (hm i)]
     _ ≤ (m i * (A * w i)) * (B * w i) :=
       mul_le_mul (mul_le_mul_of_nonneg_left (hu i) (hm i)) hvj
         (norm_nonneg _) (mul_nonneg (hm i) (mul_nonneg hA (hw i)))
@@ -114,7 +114,7 @@ theorem norm_term_add_self_sub_le
   calc
     ‖term m j u e i + term m j e u i + term m j e e i‖ ≤
         (‖term m j u e i‖ + ‖term m j e u i‖) + ‖term m j e e i‖ :=
-      (norm_add_le _ _).trans (add_le_add_right (norm_add_le _ _) _)
+      (norm_add_le _ _).trans (add_le_add (norm_add_le _ _) le_rfl)
     _ ≤ ((S * E) * (m i * w i ^ 2) + (E * S) * (m i * w i ^ 2)) +
         (E * E) * (m i * w i ^ 2) :=
       add_le_add
@@ -152,7 +152,7 @@ theorem norm_pairing_add_self_sub_le
   calc
     ‖pairing m j (u + e) (u + e) - pairing m j u u‖ =
         ‖∑' i, (term m j (u + e) (u + e) i - term m j u u i)‖ := by
-      simp only [pairing, tsum_sub hnew hold]
+      simpa only [pairing] using congrArg norm (hnew.tsum_sub hold).symm
     _ ≤ (2 * S * E + E ^ 2) * ∑' i, m i * w i ^ 2 := hdiff
     _ ≤ (2 * S * E + E ^ 2) * M :=
       mul_le_mul_of_nonneg_left hM (by positivity)
