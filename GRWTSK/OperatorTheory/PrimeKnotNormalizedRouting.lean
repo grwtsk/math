@@ -239,4 +239,123 @@ theorem exists_normalized_95_forward_lt_quarter
       (∑ j, incidenceEntry s encode weight i j) < 1 / 4 :=
   exists_normalized_forward_lt_quarter s encode weight nonneg _ ring95_distinct active k positive large
 
+omit [Fintype Slot] in
+private theorem successor_deficit_pos {next : Slot → Slot}
+    (distinct : ∀ i, Function.Injective (fun t : Fin 5 => (next^[t.val]) i))
+    (S : Finset Slot) (nonempty : S.Nonempty)
+    (bad : ¬ (S.card = 2 ∧ (S.filter fun i => next i ∈ S).card = 1)) :
+    4 * (S.filter fun i => next i ∈ S).card < S.card ^ 2 := by
+  classical
+  let T := S.filter fun i => next i ∈ S
+  change 4 * T.card < S.card ^ 2
+  change ¬ (S.card = 2 ∧ T.card = 1) at bad
+  have sub : T ⊆ S := Finset.filter_subset _ _
+  have le := Finset.card_le_card sub
+  by_cases large : 5 ≤ S.card
+  · exact (Nat.mul_le_mul_left 4 le).trans_lt
+      (by simpa only [pow_two] using
+        Nat.mul_lt_mul_of_pos_right (show 4 < S.card by omega) (Finset.card_pos.mpr nonempty))
+  have strict : T.card < S.card := by
+    by_contra notStrict
+    have eq : T = S := Finset.eq_of_subset_of_card_le sub (by omega)
+    have closed (i : Slot) (hi : i ∈ S) : next i ∈ S :=
+      (Finset.mem_filter.mp (eq ▸ hi : i ∈ T)).2
+    obtain ⟨i, hi⟩ := nonempty
+    have member (n : ℕ) : (next^[n]) i ∈ S := by
+      induction n with
+      | zero => exact hi
+      | succ n ih => rw [Function.iterate_succ_apply']; exact closed _ ih
+    let e : Fin 5 → S := fun n => ⟨(next^[n.val]) i, member _⟩
+    have five := Fintype.card_le_of_injective e
+      (fun _ _ h => distinct i (congrArg Subtype.val h))
+    simp at five
+    omega
+  have positive := Finset.card_pos.mpr nonempty
+  have cases : S.card = 1 ∨ S.card = 2 ∨ S.card = 3 ∨ S.card = 4 := by omega
+  rcases cases with h | h | h | h
+  · simp only [h] at strict ⊢
+    omega
+  · have zero : T.card = 0 := by
+      by_contra nz
+      exact bad ⟨h, by omega⟩
+    simp [h, zero]
+  · simp only [h] at strict ⊢
+    omega
+  · simp only [h] at strict ⊢
+    omega
+
+/-- A positive-weight knot with nonempty support other than a two-slot
+support containing an internal successor edge forces strict routing loss. -/
+theorem exists_normalized_95_forward_lt_quarter_of_support
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (k : Knot) (positive : 0 < weight k)
+    (S : Finset (Fin 95)) (support : S = Finset.univ.filter fun i => Linked s (encode i) k)
+    (nonempty : S.Nonempty)
+    (bad : ¬ (S.card = 2 ∧ (S.filter fun i => i + 1 ∈ S).card = 1)) :
+    ∃ i, incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j) < 1 / 4 := by
+  let next : Fin 95 → Fin 95 := fun i => i + 1
+  have distinct (i : Fin 95) : Function.Injective (fun t : Fin 5 => (next^[t.val]) i) := by
+    have iterate (n : ℕ) : (next^[n]) i = i + (n : Fin 95) := by
+      induction n with
+      | zero => simp
+      | succ n h =>
+        rw [Function.iterate_succ_apply', h]
+        simp [next, Nat.cast_succ, add_assoc]
+    intro t u eq
+    change (next^[t.val]) i = (next^[u.val]) i at eq
+    rw [iterate, iterate] at eq
+    have vals := congrArg Fin.val (add_left_cancel eq)
+    apply Fin.ext
+    simpa only [Fin.val_natCast, Nat.mod_eq_of_lt (show t.val < 95 by omega),
+      Nat.mod_eq_of_lt (show u.val < 95 by omega)] using vals
+  have deficit : 0 < (∑ i, ∑ j, incidenceEntry s encode weight i j) -
+      4 * (∑ i, incidenceEntry s encode weight i (i + 1)) := by
+    rw [forward_deficit]
+    dsimp only
+    apply Finset.sum_pos'
+    · intro j _
+      have count := successor_count_le_square next ring95_distinct
+        (Finset.univ.filter fun i => Linked s (encode i) j)
+      exact mul_nonneg (sub_nonneg.mpr (by dsimp [next] at count; exact_mod_cast count)) (nonneg j)
+    · refine ⟨k, Finset.mem_univ k, mul_pos (sub_pos.mpr ?_) positive⟩
+      have count := successor_deficit_pos (next := fun i : Fin 95 => i + 1) distinct S nonempty (by
+        convert bad using 1
+        apply and_congr Iff.rfl
+        apply Eq.to_iff
+        congr 2
+        ext i
+        simp)
+      simp only [support] at count
+      exact_mod_cast count
+  by_contra none
+  push Not at none
+  have sumLe : (∑ i, ∑ j, incidenceEntry s encode weight i j) ≤
+      ∑ i, 4 * incidenceEntry s encode weight i (i + 1) := by
+    apply Finset.sum_le_sum
+    intro i _
+    have bound := (le_div_iff₀ (active i)).mp (none i)
+    linarith
+  rw [← Finset.mul_sum] at sumLe
+  linarith
+
+/-- At the quarter threshold, each positive-weight knot that meets the
+encoded slots is supported on an adjacent pair. -/
+theorem support_pair_of_normalized_95_forward_ge_quarter
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j))
+    (k : Knot) (positive : 0 < weight k) :
+    let S := Finset.univ.filter fun i => Linked s (encode i) k
+    S.Nonempty → S.card = 2 ∧ (S.filter fun i => i + 1 ∈ S).card = 1 := by
+  intro S nonempty
+  by_contra bad
+  obtain ⟨i, h⟩ := exists_normalized_95_forward_lt_quarter_of_support
+    s encode weight nonneg active k positive S rfl nonempty bad
+  exact (not_lt_of_ge (forward i)) h
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
