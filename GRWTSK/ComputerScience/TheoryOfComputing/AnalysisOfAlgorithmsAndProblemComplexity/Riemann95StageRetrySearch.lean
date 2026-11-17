@@ -1212,4 +1212,78 @@ theorem stageOutcome_commitBatch_of_perm (active : Active) {first rest : List Ca
     | some rb =>
       simpa only [commitBatch, a, b] using stageOutcome_commitReceipt active ra rb
 
+private theorem batchRun_add_eq_of_empty (batches : ℕ → List Candidate) (t n : ℕ)
+    (empty : ∀ i < n, batches (t + i) = []) :
+    batchRun batches (t + n) = batchRun batches t := by
+  induction n with
+  | zero => simp
+  | succ n ih =>
+    rw [Nat.add_succ, batchRun, empty n (by omega), ih (fun i hi => empty i (by omega))]
+    cases batchRun batches t <;> rfl
+
+/-- Empty ticks before each retained batch preserve the full controller
+state at the aligned ticks, including the anchored native root. -/
+theorem batchRun_eq_at_padded_ticks {original padded : ℕ → List Candidate}
+    (clock : ℕ → ℕ) (zero : clock 0 = 0) (increasing : StrictMono clock)
+    (kept : ∀ t, padded (clock (t + 1) - 1) = original t)
+    (empty : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 → padded i = []) :
+    ∀ t, batchRun padded (clock t) = batchRun original t := by
+  intro t
+  induction t with
+  | zero => rw [zero]; rfl
+  | succ t ih =>
+    have lt : clock t < clock (t + 1) := increasing (Nat.lt_succ_self t)
+    have split : clock (t + 1) = (clock (t + 1) - 1) + 1 := by omega
+    have gap : clock (t + 1) - 1 = clock t + (clock (t + 1) - 1 - clock t) := by omega
+    have wait : batchRun padded (clock (t + 1) - 1) = batchRun padded (clock t) := by
+      rw [gap]
+      apply batchRun_add_eq_of_empty
+      intro i hi
+      exact empty t (clock t + i) (by omega) (by omega)
+    rw [split, batchRun, wait, kept, ih, batchRun]
+
+private theorem le_of_padded_clock (clock : ℕ → ℕ) (increasing : StrictMono clock)
+    (t : ℕ) : t ≤ clock t := by
+  induction t with
+  | zero => omega
+  | succ t ih =>
+    have lt : clock t < clock (t + 1) := increasing (Nat.lt_succ_self t)
+    omega
+
+/-- An arbitrary finite number of inserted empty ticks between
+retained batches preserves global receipt fairness. -/
+theorem BatchFair.of_padded_ticks {original padded : ℕ → List Candidate}
+    (fair : BatchFair original) (clock : ℕ → ℕ) (increasing : StrictMono clock)
+    (kept : ∀ t, padded (clock (t + 1) - 1) = original t) :
+    BatchFair padded := by
+  intro active start
+  obtain ⟨t, later, c, member, verified⟩ := fair active start
+  have bound := le_of_padded_clock clock increasing (t + 1)
+  exact ⟨clock (t + 1) - 1, by omega, c, by rwa [kept], verified⟩
+
+private theorem batchRun_halted_add {batches : ℕ → List Candidate} {t : ℕ} {stop : Stopped}
+    (h : batchRun batches t = .halted stop) (n : ℕ) :
+    batchRun batches (t + n) = .halted stop := by
+  induction n with
+  | zero => simpa using h
+  | succ n ih => rw [Nat.add_succ, batchRun, ih]
+
+/-- Empty padding neither introduces nor removes any certified stop,
+even when the original candidate stream is unfair. -/
+theorem batchRun_halts_iff_of_padded_ticks {original padded : ℕ → List Candidate}
+    (clock : ℕ → ℕ) (zero : clock 0 = 0) (increasing : StrictMono clock)
+    (kept : ∀ t, padded (clock (t + 1) - 1) = original t)
+    (empty : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 → padded i = [])
+    (stop : Stopped) :
+    (∃ t, batchRun padded t = .halted stop) ↔ ∃ t, batchRun original t = .halted stop := by
+  have aligned := batchRun_eq_at_padded_ticks clock zero increasing kept empty
+  constructor
+  · rintro ⟨t, halted⟩
+    refine ⟨t, (aligned t).symm.trans ?_⟩
+    obtain ⟨extra, eq⟩ := Nat.exists_eq_add_of_le (le_of_padded_clock clock increasing t)
+    rw [eq]
+    exact batchRun_halted_add halted extra
+  · rintro ⟨t, halted⟩
+    exact ⟨clock t, (aligned t).trans halted⟩
+
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch
