@@ -788,4 +788,113 @@ theorem verifyBatch_zero_step_of_safe (root : Root) (safe : ¬ Bad root)
   subst steps
   simp [verify, safe]
 
+/-- Process a finite batch per clock tick, keeping the current checkpoint
+on inconclusive input and retaining a certified stop. -/
+def batchRun (batches : ℕ → List Candidate) : ℕ → RunState
+  | 0 => run 0
+  | t + 1 =>
+    match batchRun batches t with
+    | .live active => commitBatch active (batches t)
+    | .halted stopped => .halted stopped
+
+/-- Each anchored checkpoint has a verified candidate in some batch
+at or after any given clock tick. -/
+def BatchFair (batches : ℕ → List Candidate) : Prop :=
+  ∀ (active : Active) (start : ℕ), ∃ t ≥ start,
+    ∃ c ∈ batches t, (verify active.root c).isSome = true
+
+/-- Recurrence of every candidate supplies fairness, regardless of the
+order or size of the batches. -/
+theorem batchFair_of_candidate_recurrence {batches : ℕ → List Candidate}
+    (recurs : ∀ (c : Candidate) (start : ℕ), ∃ t ≥ start, c ∈ batches t) :
+    BatchFair batches := by
+  intro active start
+  obtain ⟨code, good⟩ := exists_successful_probe active.root
+  unfold probe at good
+  cases decoded : Encodable.decode (α := Candidate) code with
+  | none =>
+    rw [decoded, Option.bind_none] at good
+    contradiction
+  | some c =>
+    obtain ⟨t, after, member⟩ := recurs c start
+    exact ⟨t, after, c, member, by simpa only [decoded, Option.bind_some] using good⟩
+
+private theorem exists_batch_commit {batches : ℕ → List Candidate} (fair : BatchFair batches)
+    {active : Active} {start : ℕ} (live : batchRun batches start = .live active) :
+    ∃ t ≥ start, batchRun batches t = .live active ∧
+      ∃ receipt, verifyBatch active.root (batches t) = some receipt := by
+  classical
+  by_contra missing
+  have held (d : ℕ) : batchRun batches (start + d) = .live active := by
+    induction d with
+    | zero => simpa using live
+    | succ d ih =>
+      cases checked : verifyBatch active.root (batches (start + d)) with
+      | none => simp [batchRun, ih, commitBatch, checked]
+      | some receipt => exact (missing ⟨_, Nat.le_add_right _ _, ih, receipt, checked⟩).elim
+  obtain ⟨t, after, c, member, verified⟩ := fair active start
+  have stillLive : batchRun batches t = .live active := by
+    obtain ⟨d, rfl⟩ := Nat.exists_eq_add_of_le after
+    exact held d
+  cases checked : verifyBatch active.root (batches t) with
+  | none =>
+    have rejected := (verifyBatch_none_iff _ _).1 checked c member
+    simp [rejected] at verified
+  | some receipt => exact missing ⟨t, after, stillLive, receipt, checked⟩
+
+/-- Fair unordered arrivals visit every stage preceded by safe tests. -/
+theorem batchRun_visits_safe_prefix {batches : ℕ → List Candidate} (fair : BatchFair batches)
+    (n : ℕ) (safe : SafePrefix n) :
+    ∃ t active, batchRun batches t = .live active ∧ active.root.stage = n := by
+  induction n with
+  | zero => exact ⟨0, _, rfl, rfl⟩
+  | succ n ih =>
+    obtain ⟨start, active, live, stage⟩ :=
+      ih (fun j hj => safe j (hj.trans (Nat.lt_succ_self n)))
+    obtain ⟨t, _, waiting, receipt, verified⟩ := exists_batch_commit fair live
+    cases receipt with
+    | completed next steps good successor padding positive trace =>
+      have reached := Receipt.from_blank
+        (.completed next steps good successor padding positive trace) active.spent active.reached
+      refine ⟨t + 1, ⟨next, active.spent + steps, reached⟩, ?_,
+        successor.trans (congrArg (· + 1) stage)⟩
+      simp only [batchRun, waiting, commitBatch, verified]
+      rfl
+    | counterexample finish steps bad trace terminal =>
+      exact (safe n (Nat.lt_succ_self n) (by simpa only [Bad, stage] using bad)).elim
+
+/-- The first bad stage stops under fair unordered arrivals. -/
+theorem batchRun_halts_at_first_bad {batches : ℕ → List Candidate} (fair : BatchFair batches)
+    {n : ℕ} (safe : SafePrefix n) (bad : Riemann120.ShuniaCounterexample (n + 2)) :
+    ∃ t stopped, batchRun batches t = .halted stopped ∧ stopped.stage = n := by
+  obtain ⟨start, active, live, stage⟩ := batchRun_visits_safe_prefix fair n safe
+  obtain ⟨t, _, waiting, receipt, verified⟩ := exists_batch_commit fair live
+  cases receipt with
+  | completed next steps good successor padding positive trace =>
+    exact (good (by simpa only [Bad, stage] using bad)).elim
+  | counterexample finish steps witness trace terminal =>
+    have reached := Receipt.from_blank
+      (.counterexample finish steps witness trace terminal) active.spent active.reached
+    refine ⟨t + 1, ⟨active.root.stage, finish, active.spent + steps, witness,
+      reached.1, reached.2⟩, ?_, stage⟩
+    simp only [batchRun, waiting, commitBatch, verified]
+    rfl
+
+theorem batchRun_halts_iff_not_RH {batches : ℕ → List Candidate} (fair : BatchFair batches) :
+    (∃ t stopped, batchRun batches t = .halted stopped) ↔ ¬ RiemannHypothesis := by
+  rw [← halts_iff_not_RH, halts_iff_witness]
+  constructor
+  · rintro ⟨_, stopped, _⟩
+    exact ⟨stopped.stage, stopped.witness⟩
+  · intro witness
+    obtain ⟨t, stopped, halted, _⟩ :=
+      batchRun_halts_at_first_bad fair (fun _ lt => Nat.find_min witness lt) (Nat.find_spec witness)
+    exact ⟨t, stopped, halted⟩
+
+/-- An indefinitely empty stream remains inconclusive at the initial root. -/
+theorem batchRun_empty (t : ℕ) : batchRun (fun _ => []) t = run 0 := by
+  induction t with
+  | zero => rfl
+  | succ t ih => rw [batchRun, ih]; rfl
+
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch
