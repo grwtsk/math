@@ -779,4 +779,49 @@ theorem exists_positive_heats_ne_settled :
     ((tendsto_order.mp hconv).1 (heatedLimit s) hs.2)).exists
   exact ⟨s, t, hs.1, ht.1, ne_of_gt ht.2⟩
 
+/-- The leading signed coefficient gives the exact settled response
+difference for any fixed shift of the heat parameter. -/
+theorem tendsto_heatedLimit_fixed_shift_div_prime_two_weight (d : ℝ) :
+    Tendsto (fun s : ℝ => (heatedLimit (s + d) - heatedLimit s) /
+      Real.exp (-s * Real.log 2 ^ 2)) atTop
+      (𝓝 ((2 * (Real.sqrt 2)⁻¹) * (1 - Real.exp (-d * Real.log 2 ^ 2)))) := by
+  let q := Real.log 2 ^ 2
+  let c := 2 * (Real.sqrt 2)⁻¹
+  let w := Real.exp (-d * q)
+  let f (s : ℝ) := (heatedLimit s - 2) / Real.exp (-s * q)
+  have hf : Tendsto f atTop (𝓝 (-c)) := tendsto_heatedLimit_sub_two_div_prime_two_weight
+  have hshift : Tendsto (fun s : ℝ => s + d) atTop atTop :=
+    tendsto_atTop_atTop.mpr fun b => ⟨b - d, fun s hs => by linarith⟩
+  have h := ((hf.comp hshift).const_mul w).sub hf
+  have hlim : w * (-c) - (-c) = c * (1 - w) := by ring
+  rw [hlim] at h
+  refine h.congr' (Eventually.of_forall fun s => ?_)
+  change w * f (s + d) - f s =
+    (heatedLimit (s + d) - heatedLimit s) / Real.exp (-s * q)
+  have hweight : Real.exp (-(s + d) * q) = Real.exp (-s * q) * w := by
+    unfold w
+    rw [← Real.exp_add]
+    congr 1
+    ring
+  unfold f
+  rw [hweight]
+  have hw : w ≠ 0 := Real.exp_ne_zero _
+  have hs : Real.exp (-s * q) ≠ 0 := Real.exp_ne_zero _
+  field_simp
+  ring
+
+/-- Every fixed positive heat increment eventually separates the settled
+values, in the direction given by the signed coefficient at index two. -/
+theorem eventually_heatedLimit_lt_fixed_shift {d : ℝ} (hd : 0 < d) :
+    ∀ᶠ s : ℝ in atTop, heatedLimit s < heatedLimit (s + d) := by
+  have hq : 0 < Real.log 2 ^ 2 := pow_pos (Real.log_pos (by norm_num)) 2
+  have hExp : Real.exp (-d * Real.log 2 ^ 2) < 1 :=
+    Real.exp_lt_one_iff.mpr (mul_neg_of_neg_of_pos (neg_neg_of_pos hd) hq)
+  have hRoot : 0 < Real.sqrt 2 := Real.sqrt_pos.2 (by norm_num)
+  have hpos : 0 < (2 * (Real.sqrt 2)⁻¹) * (1 - Real.exp (-d * Real.log 2 ^ 2)) :=
+    mul_pos (mul_pos (by norm_num) (inv_pos.mpr hRoot)) (sub_pos.mpr hExp)
+  filter_upwards [(tendsto_order.mp
+    (tendsto_heatedLimit_fixed_shift_div_prime_two_weight d)).1 0 hpos] with s hs
+  exact sub_pos.mp ((div_pos_iff_of_pos_right (Real.exp_pos _)).mp hs)
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
