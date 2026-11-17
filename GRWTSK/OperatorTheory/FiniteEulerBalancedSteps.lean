@@ -99,4 +99,65 @@ is exactly the squared imbalance divided by four. -/
 theorem pair_balance_identity (a b : ℝ) :
     (1 - (a + b) / 2) ^ 2 - (1 - a) * (1 - b) = (a - b) ^ 2 / 4 := by ring
 
+private theorem one_sub_sum_le_product {I : Type*} (s : Finset I) (a : I → ℝ)
+    (range : ∀ i ∈ s, 0 ≤ a i ∧ a i ≤ 1) :
+    1 - (∑ i ∈ s, a i) ≤ ∏ i ∈ s, (1 - a i) := by
+  classical
+  induction s using Finset.induction_on with
+  | empty => simp
+  | @insert i s absent ih =>
+    have hi := range i (Finset.mem_insert_self _ _)
+    have tail (j : I) (hj : j ∈ s) := range j (Finset.mem_insert_of_mem hj)
+    have total : 0 ≤ ∑ j ∈ s, a j := Finset.sum_nonneg (fun j hj => (tail j hj).1)
+    rw [Finset.sum_insert absent, Finset.prod_insert absent]
+    calc
+      _ ≤ (1 - a i) * (1 - ∑ j ∈ s, a j) := by
+        nlinarith [mul_nonneg hi.1 total]
+      _ ≤ _ := mul_le_mul_of_nonneg_left (ih tail) (sub_nonneg.mpr hi.2)
+
+/-- Concentrating a total exposure at most one into a single step attains
+the smallest Euler multiplier among nonnegative subunit allocations. -/
+theorem product_ge_concentrated_steps {m : ℕ} (a : Fin m → ℝ)
+    (range : ∀ i, 0 ≤ a i ∧ a i ≤ 1) :
+    1 - (∑ i, a i) ≤ ∏ i, (1 - a i) :=
+  one_sub_sum_le_product Finset.univ a (fun i _ => range i)
+
+theorem product_gt_concentrated_of_two_positive {m : ℕ} (a : Fin m → ℝ)
+    (range : ∀ i, 0 ≤ a i ∧ a i ≤ 1) {i j : Fin m}
+    (distinct : i ≠ j) (hi : 0 < a i) (hj : 0 < a j) :
+    1 - (∑ k, a k) < ∏ k, (1 - a k) := by
+  classical
+  let rest : Finset (Fin m) := Finset.univ.erase i
+  have sinsert : insert i rest = Finset.univ := Finset.insert_erase (Finset.mem_univ i)
+  have absent : i ∉ rest := Finset.notMem_erase _ _
+  have jrest : j ∈ rest := Finset.mem_erase.mpr ⟨distinct.symm, Finset.mem_univ j⟩
+  have positive : 0 < ∑ k ∈ rest, a k := Finset.sum_pos'
+    (fun k _ => (range k).1) ⟨j, jrest, hj⟩
+  rw [← sinsert, Finset.sum_insert absent, Finset.prod_insert absent]
+  calc
+    _ < (1 - a i) * (1 - ∑ k ∈ rest, a k) := by
+      nlinarith [mul_pos hi positive]
+    _ ≤ _ := mul_le_mul_of_nonneg_left
+      (one_sub_sum_le_product rest a (fun k _ => range k)) (sub_nonneg.mpr (range i).2)
+
+theorem concentrated_steps_attain {m : ℕ} (slot : Fin m) (A : ℝ) :
+    let a := fun i : Fin m => if i = slot then A else 0
+    (∑ i, a i) = A ∧ (∏ i, (1 - a i)) = 1 - A := by
+  classical
+  intro a
+  constructor
+  · simp [a]
+  · rw [Finset.prod_eq_single slot]
+    · simp [a]
+    · intro i _ different
+      simp [a, different]
+    · simp
+
+/-- Below unit total exposure, the concentrated allocation also gives
+the largest inverse gain. -/
+theorem inverse_gain_le_concentrated {m : ℕ} (a : Fin m → ℝ)
+    (range : ∀ i, 0 ≤ a i ∧ a i ≤ 1) (total : (∑ i, a i) < 1) :
+    (∏ i, (1 - a i))⁻¹ ≤ (1 - ∑ i, a i)⁻¹ :=
+  inv_anti₀ (sub_pos.mpr total) (product_ge_concentrated_steps a range)
+
 end GRWTSK.OperatorTheory.FiniteEulerBalancedSteps
