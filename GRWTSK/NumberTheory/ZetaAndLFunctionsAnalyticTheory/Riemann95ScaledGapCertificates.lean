@@ -289,4 +289,116 @@ theorem square_windows_have_unbounded_gaps (start gap : ℕ) :
   · exact (not_lt_of_ge (Nat.pow_le_pow_left hk 2)) (h ▸ hlow)
   · exact (not_lt_of_ge (Nat.pow_le_pow_left (show r + 1 ≤ k by omega) 2)) (h ▸ hhigh)
 
+/-- Square-index gaps of logarithmic-square size fit inside the existing
+defect-scale comparison range in ordinal windows. -/
+private theorem thinned_square_gap_bound (g : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    {w : ℕ} (hw : 4 ≤ w)
+    (linear : g (Nat.sqrt w + 1) ≤ Nat.sqrt w + 1)
+    (logarithmic : (g (Nat.sqrt w + 1) : ℝ) ≤ C * (Real.log (Nat.sqrt w + 2 : ℕ)) ^ 2) :
+    ((((Nat.sqrt w + 1 + g (Nat.sqrt w + 1)) ^ 2 - w : ℕ) : ℝ)) ≤
+      (5 * (1 + C)) * (1 + defectScale w) := by
+  let s := Nat.sqrt w
+  let d := g (s + 1)
+  have hs : 2 ≤ s := Nat.le_sqrt'.mpr (by simpa using hw)
+  have hfloor : s ^ 2 ≤ w := Nat.sqrt_le' w
+  have hwlt : w < (s + 1) ^ 2 := Nat.lt_succ_sqrt' w
+  have harg : s + 2 ≤ w := by
+    have hsquare : s + 2 ≤ s ^ 2 := by nlinarith
+    omega
+  have root : (s : ℝ) ≤ Real.sqrt (w : ℝ) := by
+    have h : (s : ℝ) ^ 2 ≤ (w : ℝ) := by exact_mod_cast hfloor
+    simpa [Real.sqrt_sq (by positivity : (0 : ℝ) ≤ s)] using Real.sqrt_le_sqrt h
+  have hlog : Real.log (s + 2 : ℕ) ≤ Real.log (w : ℝ) :=
+    Real.log_le_log (by positivity) (by exact_mod_cast harg)
+  have hlog0 : 0 ≤ Real.log (s + 2 : ℕ) := Real.log_nonneg (by exact_mod_cast (show 1 ≤ s + 2 by omega))
+  have hlog1 : 1 ≤ Real.log (w : ℝ) := log_nat_ge_one (by omega)
+  have hsqlog : Real.log (s + 2 : ℕ) ^ 2 ≤ Real.log (w : ℝ) ^ 2 := by
+    gcongr
+  have dBound : (d : ℝ) ≤ C * Real.log (w : ℝ) ^ 2 :=
+    logarithmic.trans (mul_le_mul_of_nonneg_left hsqlog hC)
+  have dLinear : (d : ℝ) ≤ (s : ℝ) + 1 := by exact_mod_cast linear
+  have sR : (2 : ℝ) ≤ s := by exact_mod_cast hs
+  have second : (2 : ℝ) * s + 1 + d ≤ 5 * Real.sqrt (w : ℝ) := by linarith
+  have first : (1 : ℝ) + d ≤ (1 + C) * Real.log (w : ℝ) ^ 2 := by
+    have h : 1 ≤ Real.log (w : ℝ) ^ 2 := by nlinarith
+    linarith
+  change (((s + 1 + d) ^ 2 - w : ℕ) : ℝ) ≤ _
+  have enough : w ≤ (s + 1 + d) ^ 2 :=
+    hwlt.le.trans (Nat.pow_le_pow_left (Nat.le_add_right _ _) 2)
+  rw [Nat.cast_sub enough, Nat.cast_pow]
+  push_cast
+  have floorR : (s : ℝ) ^ 2 ≤ (w : ℝ) := by exact_mod_cast hfloor
+  calc
+    _ ≤ (1 + (d : ℝ)) * (2 * s + 1 + d) := by nlinarith
+    _ ≤ ((1 + C) * Real.log (w : ℝ) ^ 2) * (5 * Real.sqrt (w : ℝ)) :=
+      mul_le_mul first second (by positivity) (by positivity)
+    _ ≤ _ := by unfold defectScale; nlinarith
+
+/-- It suffices to obtain one certified slot from each short interval
+of square indices. Neither the winning square nor its slot is fixed. -/
+theorem log_thinned_square_accepts_iff_cryptids_RH
+    (start : ℕ) (g : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    (linear : ∀ k ≥ start, g k ≤ k)
+    (logarithmic : ∀ k ≥ start, (g k : ℝ) ≤ C * Real.log (k + 1 : ℕ) ^ 2) :
+    (∀ k ≥ start, ∃ j ≤ g k, ∃ slot : Fin 95, slotAccepts ((k + j) ^ 2) slot = true) ↔
+      RiemannHypothesis := by
+  constructor
+  · intro accepted
+    let first := max 4 (start ^ 2)
+    let gap (w : ℕ) := (Nat.sqrt w + 1 + g (Nat.sqrt w + 1)) ^ 2 - w
+    have start_le {w : ℕ} (hw : first ≤ w) : start ≤ Nat.sqrt w + 1 :=
+      (Nat.le_sqrt'.mpr ((le_max_right _ _).trans hw)).trans (Nat.le_succ _)
+    apply (scaled_gap_safe_slot_iff_cryptids_RH first gap (C := 5 * (1 + C)) (by positivity)
+      (fun w hw => thinned_square_gap_bound g hC ((le_max_left _ _).trans hw)
+        (linear _ (start_le hw)) (logarithmic _ (start_le hw)))).mp
+    intro w hw
+    let s := Nat.sqrt w + 1
+    obtain ⟨j, hj, slot, safe⟩ := accepted s (start_le hw)
+    have before : w ≤ (s + j) ^ 2 :=
+      (Nat.lt_succ_sqrt' w).le.trans (Nat.pow_le_pow_left (Nat.le_add_right _ _) 2)
+    have within : (s + j) ^ 2 - w ≤ gap w :=
+      Nat.sub_le_sub_right (Nat.pow_le_pow_left (Nat.add_le_add_left hj s) 2) _
+    refine ⟨(s + j) ^ 2 - w, within, slot, ?_⟩
+    rw [Nat.add_sub_of_le before]
+    exact fun bad => (slotAccepts_iff_safe _ _).mp safe ((counterexample_iff_cryptids _).mp bad)
+  · intro rh k _
+    refine ⟨0, Nat.zero_le _, 0, ?_⟩
+    exact (window_accepts_iff_all_slots_accept ((k + 0) ^ 2)).mp
+      (all_windows_accept_iff_cryptids_RH.mpr rh _) 0
+
+/-- A concrete gap allowance that grows without a uniform bound. -/
+noncomputable def logSquareAllowance (k : ℕ) : ℕ :=
+  min k ⌊Real.log (k + 1 : ℕ) ^ 2⌋₊
+
+theorem logSquareAllowance_unbounded (B : ℕ) :
+    ∃ k, B ≤ logSquareAllowance k := by
+  obtain ⟨k, hk⟩ := exists_nat_gt (max (B : ℝ) (Real.exp (Real.sqrt B)))
+  have hB : B ≤ k := by exact_mod_cast (le_max_left _ _).trans hk.le
+  have hExp : Real.exp (Real.sqrt B) ≤ (k + 1 : ℕ) := by
+    exact (le_max_right _ _).trans (hk.le.trans (by push_cast; linarith))
+  have hLog := Real.log_le_log (Real.exp_pos _) hExp
+  rw [Real.log_exp] at hLog
+  have sq := pow_le_pow_left₀ (Real.sqrt_nonneg (B : ℝ)) hLog 2
+  rw [Real.sq_sqrt (by positivity : (0 : ℝ) ≤ B)] at sq
+  exact ⟨k, le_min hB ((Nat.le_floor_iff (by positivity)).2 sq)⟩
+
+theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
+    (check : ℕ → Fin 95 → Certificate → Bool)
+    (sound : ∀ w slot c, check w slot c = true →
+      ¬ ShuniaCounterexample (stageArgument (stageOrdinal w slot)))
+    (start : ℕ)
+    (cover : ∀ k ≥ start, ∃ j ≤ logSquareAllowance k, ∃ (slot : Fin 95) (c : Certificate),
+      check ((k + j) ^ 2) slot c = true) : RiemannHypothesis := by
+  apply (log_thinned_square_accepts_iff_cryptids_RH start logSquareAllowance
+    (C := 1) (by norm_num) (fun _ _ => min_le_left _ _) (fun k _ => ?_)).mp
+  · intro k hk
+    obtain ⟨j, hj, slot, c, hc⟩ := cover k hk
+    exact ⟨j, hj, slot, (slotAccepts_iff_safe _ _).2 (sound _ _ c hc)⟩
+  · rw [one_mul]
+    have bound : ((logSquareAllowance k : ℕ) : ℝ) ≤
+        (⌊Real.log (k + 1 : ℕ) ^ 2⌋₊ : ℕ) := by
+      unfold logSquareAllowance
+      exact Nat.cast_le.mpr (min_le_right _ _)
+    exact bound.trans (Nat.floor_le (by positivity))
+
 end GRWTSK.NumberTheory.Riemann95StageCertificates

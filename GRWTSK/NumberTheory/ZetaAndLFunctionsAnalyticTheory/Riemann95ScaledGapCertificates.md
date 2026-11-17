@@ -29,3 +29,37 @@ For a concrete HS deployment, a positive runtime acknowledgement must imply the 
 ## Verification
 
 The targeted Lake build in the isolated package and the standalone `--trust=0 -DwarningAsError=true` check passed at the listed pins. Target kernel replay with dependencies preloaded passed. The transitive audit of all 11 public theorems reported only subsets of `propext`, `Classical.choice`, and `Quot.sound`. Full fresh replay of the transitive import closure and independent mathematical review are `NOT_RUN`. Novelty is unassessed.
+
+## Square-index gaps of logarithmic-square size
+
+The same pinned arithmetic source also gives
+`log_thinned_square_accepts_iff_cryptids_RH`. Fix a cutoff and let
+a natural gap function $g(k)$ satisfy $g(k)\le k$ and
+$g(k)\le C\log^2(k+1)$ beyond that cutoff, for a fixed $C\ge0$.
+It suffices that every interval of square indices $[k,k+g(k)]$
+contain an index whose square-numbered window has one accepting slot.
+Both the square and the slot may vary. RH conversely gives these
+verdicts at the first square in each interval.
+
+For an ordinal window $w\ge4$, set $s=\lfloor\sqrt{w}\rfloor$ and
+$d=g(s+1)$. The next sampled square in the comparison lies no later
+than $(s+1+d)^2$. Since $w\ge s^2$, the resulting gap is bounded by
+$(1+d)(2s+1+d)$. The second factor is at most $5\sqrt{w}$ and the
+first at most $(1+C)\log^2 w$. The original defect-scale result then
+forces a rejected comparison range if the blank-tape candidate halts.
+The local proof uses the same Chebyshev oscillation premise as the
+existing square schedule.
+
+The concrete `logSquareAllowance` takes the smaller of $k$ and
+$\lfloor\log^2(k+1)\rfloor$, and
+`logSquareAllowance_unbounded` checks that this permits arbitrarily
+long skipped intervals of square indices. The allowance with value zero
+reduces to needing a hit at every square index. The certificate consumer
+`cryptids_RH_of_logSquareAllowance_certificates` still requires both
+soundness for the original Shunia predicate and existence of a
+positive verdict in every prescribed range. No finite prefix provides
+that existence premise. The first missing runtime lemma remains that an
+accepted HS record denotes the literal decoded arithmetic slot, followed
+by a proof of certificate supply for the specified infinite ranges.
+
+Verification for this extension is recorded in [issue #1820](https://github.com/grwtsk/math/issues/1820).
