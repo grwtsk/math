@@ -148,6 +148,16 @@ theorem weighted_minimax {I : Type*} [Fintype I]
         rw [one_mul, abs_of_nonpos (by linarith)]
         linarith
 
+private theorem observed_signal_bounds {p X N y x : ℝ} (hp : 0 < p) :
+    (|x| ≤ X ∧ |y - p * x| ≤ N) ↔
+      max (-X) ((y - N) / p) ≤ x ∧ x ≤ min X ((y + N) / p) := by
+  rw [abs_le, abs_le, max_le_iff, le_min_iff, div_le_iff₀ hp, le_div_iff₀ hp, mul_comm x p]
+  constructor
+  · rintro ⟨⟨a, b⟩, ⟨c, d⟩⟩
+    exact ⟨⟨a, by linarith⟩, b, by linarith⟩
+  · rintro ⟨⟨a, b⟩, ⟨c, d⟩⟩
+    exact ⟨⟨a, c⟩, by linarith, by linarith⟩
+
 /-- At a fixed feasible observation with positive gain, the midpoint of
 the feasible signal interval achieves its exact worst-case error. -/
 theorem observed_minimax {p X N y : ℝ} (hp : 0 < p)
@@ -159,15 +169,8 @@ theorem observed_minimax {p X N y : ℝ} (hp : 0 < p)
     (∀ z : ℝ, ∃ x : ℝ, |x| ≤ X ∧ |y - p * x| ≤ N ∧
       (upper - lower) / 2 ≤ |z - x|) := by
   intro lower upper
-  have bounds (x : ℝ) : (|x| ≤ X ∧ |y - p * x| ≤ N) ↔ lower ≤ x ∧ x ≤ upper := by
-    change (|x| ≤ X ∧ |y - p * x| ≤ N) ↔
-      max (-X) ((y - N) / p) ≤ x ∧ x ≤ min X ((y + N) / p)
-    rw [abs_le, abs_le, max_le_iff, le_min_iff, div_le_iff₀ hp, le_div_iff₀ hp, mul_comm x p]
-    constructor
-    · rintro ⟨⟨a, b⟩, ⟨c, d⟩⟩
-      exact ⟨⟨a, by linarith⟩, b, by linarith⟩
-    · rintro ⟨⟨a, b⟩, ⟨c, d⟩⟩
-      exact ⟨⟨a, c⟩, by linarith, by linarith⟩
+  have bounds (x : ℝ) : (|x| ≤ X ∧ |y - p * x| ≤ N) ↔ lower ≤ x ∧ x ≤ upper :=
+    observed_signal_bounds hp
   obtain ⟨x, hx⟩ := feasible
   have ordered : lower ≤ upper := ((bounds x).mp hx).1.trans ((bounds x).mp hx).2
   constructor
@@ -191,5 +194,63 @@ theorem half_exposure_inverse_control :
     radius (1 / 2) 1 1 = 1 ∧ estimate (1 / 2) 1 1 1 = 0 ∧
       |(1 : ℝ) / (1 / 2) - 0| > radius (1 / 2) 1 1 := by
   norm_num [radius, estimate, min_eq_left]
+
+
+/-- At a feasible observation, the sharp error for a signed weighted
+readout comes from the two attainable endpoints of the projected box. -/
+theorem observed_weighted_minimax {I : Type*} [Fintype I]
+    (p X N w y : I → ℝ) (hp : ∀ i, 0 < p i)
+    (feasible : ∀ i, ∃ x : ℝ, |x| ≤ X i ∧ |y i - p i * x| ≤ N i) :
+    let low i := max (-X i) ((y i - N i) / p i)
+    let high i := min (X i) ((y i + N i) / p i)
+    let lowSignal i := if 0 ≤ w i then low i else high i
+    let highSignal i := if 0 ≤ w i then high i else low i
+    let L := ∑ i, w i * lowSignal i
+    let U := ∑ i, w i * highSignal i
+    (∀ x : I → ℝ, (∀ i, |x i| ≤ X i ∧ |y i - p i * x i| ≤ N i) →
+      |(L + U) / 2 - ∑ i, w i * x i| ≤ (U - L) / 2) ∧
+    (∀ z : ℝ, ∃ x : I → ℝ, (∀ i, |x i| ≤ X i ∧ |y i - p i * x i| ≤ N i) ∧
+      (U - L) / 2 ≤ |z - ∑ i, w i * x i|) := by
+  intro low high lowSignal highSignal L U
+  have bounds (i : I) (x : ℝ) :
+      (|x| ≤ X i ∧ |y i - p i * x| ≤ N i) ↔ low i ≤ x ∧ x ≤ high i :=
+    observed_signal_bounds (hp i)
+  have ordered (i : I) : low i ≤ high i := by
+    obtain ⟨x, good⟩ := feasible i
+    exact ((bounds i x).mp good).1.trans ((bounds i x).mp good).2
+  have lowOK (i : I) : |lowSignal i| ≤ X i ∧ |y i - p i * lowSignal i| ≤ N i := by
+    apply (bounds i _).mpr
+    dsimp only [lowSignal]
+    split
+    · exact ⟨le_rfl, ordered i⟩
+    · exact ⟨ordered i, le_rfl⟩
+  have highOK (i : I) : |highSignal i| ≤ X i ∧ |y i - p i * highSignal i| ≤ N i := by
+    apply (bounds i _).mpr
+    dsimp only [highSignal]
+    split
+    · exact ⟨ordered i, le_rfl⟩
+    · exact ⟨le_rfl, ordered i⟩
+  constructor
+  · intro x good
+    have interval (i : I) :
+        w i * lowSignal i ≤ w i * x i ∧ w i * x i ≤ w i * highSignal i := by
+      obtain ⟨lo, hi⟩ := (bounds i _).mp (good i)
+      by_cases positive : 0 ≤ w i
+      · simpa only [lowSignal, highSignal, ite_eq_left positive] using
+          And.intro (mul_le_mul_of_nonneg_left lo positive) (mul_le_mul_of_nonneg_left hi positive)
+      · have neg := le_of_not_ge positive
+        simpa only [lowSignal, highSignal, ite_eq_right positive] using
+          And.intro (mul_le_mul_of_nonpos_left hi neg) (mul_le_mul_of_nonpos_left lo neg)
+    have lo : L ≤ ∑ i, w i * x i := Finset.sum_le_sum fun i _ => (interval i).1
+    have hi : (∑ i, w i * x i) ≤ U := Finset.sum_le_sum fun i _ => (interval i).2
+    exact abs_le.mpr ⟨by linarith, by linarith⟩
+  · intro z
+    by_cases left : z ≤ (L + U) / 2
+    · refine ⟨highSignal, highOK, ?_⟩
+      change (U - L) / 2 ≤ |z - U|
+      linarith [neg_abs_le (z - U)]
+    · refine ⟨lowSignal, lowOK, ?_⟩
+      change (U - L) / 2 ≤ |z - L|
+      linarith [le_abs_self (z - L)]
 
 end GRWTSK.OperatorTheory.FiniteHeatMinimaxReadout
