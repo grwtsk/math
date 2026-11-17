@@ -382,6 +382,14 @@ theorem logSquareAllowance_unbounded (B : ℕ) :
   rw [Real.sq_sqrt (by positivity : (0 : ℝ) ≤ B)] at sq
   exact ⟨k, le_min hB ((Nat.le_floor_iff (by positivity)).2 sq)⟩
 
+private theorem logSquareAllowance_le_log_square (k : ℕ) :
+    (logSquareAllowance k : ℝ) ≤ Real.log (k + 1 : ℕ) ^ 2 := by
+  have bound : (logSquareAllowance k : ℝ) ≤
+      (⌊Real.log (k + 1 : ℕ) ^ 2⌋₊ : ℕ) := by
+    unfold logSquareAllowance
+    exact Nat.cast_le.mpr (min_le_right _ _)
+  exact bound.trans (Nat.floor_le (by positivity))
+
 theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
     (check : ℕ → Fin 95 → Certificate → Bool)
     (sound : ∀ w slot c, check w slot c = true →
@@ -390,15 +398,42 @@ theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
     (cover : ∀ k ≥ start, ∃ j ≤ logSquareAllowance k, ∃ (slot : Fin 95) (c : Certificate),
       check ((k + j) ^ 2) slot c = true) : RiemannHypothesis := by
   apply (log_thinned_square_accepts_iff_cryptids_RH start logSquareAllowance
-    (C := 1) (by norm_num) (fun _ _ => min_le_left _ _) (fun k _ => ?_)).mp
-  · intro k hk
-    obtain ⟨j, hj, slot, c, hc⟩ := cover k hk
-    exact ⟨j, hj, slot, (slotAccepts_iff_safe _ _).2 (sound _ _ c hc)⟩
-  · rw [one_mul]
-    have bound : ((logSquareAllowance k : ℕ) : ℝ) ≤
-        (⌊Real.log (k + 1 : ℕ) ^ 2⌋₊ : ℕ) := by
-      unfold logSquareAllowance
-      exact Nat.cast_le.mpr (min_le_right _ _)
-    exact bound.trans (Nat.floor_le (by positivity))
+    (C := 1) (by norm_num) (fun _ _ => min_le_left _ _)
+    (fun k _ => by simpa only [one_mul] using logSquareAllowance_le_log_square k)).mp
+  intro k hk
+  obtain ⟨j, hj, slot, c, hc⟩ := cover k hk
+  exact ⟨j, hj, slot, (slotAccepts_iff_safe _ _).2 (sound _ _ c hc)⟩
+
+/-- Halting forces arbitrarily late blocks in the square index on which
+every executable slot verdict rejects. Any such block supplies a native
+counterexample, since its initial square and slot zero are present. -/
+theorem cryptids_halts_iff_cofinal_log_square_rejection_blocks :
+    Halts Riemann95.candidate ↔
+      ∀ start : ℕ, ∃ k ≥ start, ∀ j ≤ logSquareAllowance k,
+        ∀ slot : Fin 95, slotAccepts ((k + j) ^ 2) slot = false := by
+  classical
+  rw [Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis]
+  constructor
+  · intro hnot start
+    have hcover := log_thinned_square_accepts_iff_cryptids_RH start logSquareAllowance
+      (C := 1) (by norm_num) (fun _ _ => min_le_left _ _)
+      (fun k _ => by simpa only [one_mul] using logSquareAllowance_le_log_square k)
+    by_contra hno
+    apply hnot
+    apply hcover.mp
+    intro k hk
+    by_contra hnone
+    apply hno
+    refine ⟨k, hk, fun j hj slot => ?_⟩
+    cases h : slotAccepts ((k + j) ^ 2) slot with
+    | false => rfl
+    | true => exact (hnone ⟨j, hj, slot, h⟩).elim
+  · intro hblocks rh
+    obtain ⟨k, _, hblock⟩ := hblocks 0
+    have hreject := hblock 0 (Nat.zero_le _) 0
+    have haccept := (window_accepts_iff_all_slots_accept ((k + 0) ^ 2)).mp
+      (all_windows_accept_iff_cryptids_RH.mpr rh _) 0
+    rw [hreject] at haccept
+    cases haccept
 
 end GRWTSK.NumberTheory.Riemann95StageCertificates
