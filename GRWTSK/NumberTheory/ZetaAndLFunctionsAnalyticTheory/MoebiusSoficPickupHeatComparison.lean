@@ -1251,4 +1251,41 @@ theorem tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost
   filter_upwards [eventually_gt_atTop (0 : ℝ)] with T hT
   rw [sub_div, centeredPickup_div_eq_variance_add_sq (heatedLimit s) hT]
 
+/-- Two genuine residual allowances on the same scales bound the measured
+variance and the squared distance to the midpoint of the settled heats. -/
+theorem eventually_variance_add_midpoint_cost_le_of_two_residual_allowances
+    {s t A B : ℝ} (hs : 0 < s) (ht : 0 < t) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hA : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε)
+    (hB : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ B + ε)
+    {ε : ℝ} (hε : 0 < ε) :
+    ∀ᶠ T in l, pickupHorizonVariance T +
+        (pickupHorizonMean T - (heatedLimit s + heatedLimit t) / 2) ^ 2 ≤
+      (A + B) / 2 - (heatedLimit s - heatedLimit t) ^ 2 / 4 + ε := by
+  have hsmall : 0 < ε / 2 := by linarith
+  have hnegative : -(ε / 2) < 0 := by linarith
+  have hslim := (tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost hs).mono_left hl
+  have htlim := (tendsto_residualEnergy_div_sub_measured_variance_and_mean_cost ht).mono_left hl
+  filter_upwards [hA (ε / 2) hsmall, hB (ε / 2) hsmall,
+    (tendsto_order.mp hslim).1 _ hnegative, (tendsto_order.mp htlim).1 _ hnegative]
+    with T hsT htT hslow htlow
+  nlinarith
+
+/-- The squared gap between settled waves imposes a joint lower cost on
+two linear residual allowances, even without convergence of the source mean. -/
+theorem settled_gap_sq_le_of_two_residual_allowances
+    {s t A B : ℝ} (hs : 0 < s) (ht : 0 < t) {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (hA : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε)
+    (hB : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ B + ε) :
+    (heatedLimit s - heatedLimit t) ^ 2 ≤ 2 * (A + B) := by
+  by_contra! hbad
+  let ε := ((heatedLimit s - heatedLimit t) ^ 2 - 2 * (A + B)) / 8
+  have hε : 0 < ε := by dsimp [ε]; linarith
+  have hlim := eventually_variance_add_midpoint_cost_le_of_two_residual_allowances hs ht hl hA hB hε
+  obtain ⟨T, hT, hcost⟩ := (((eventually_gt_atTop (0 : ℝ)).filter_mono hl).and hlim).exists
+  have hvar : 0 ≤ pickupHorizonVariance T := by
+    unfold pickupHorizonVariance
+    exact div_nonneg (intervalIntegral.integral_nonneg_of_forall hT.le (fun _ => sq_nonneg _)) hT.le
+  dsimp [ε] at hcost
+  linarith [sq_nonneg (pickupHorizonMean T - (heatedLimit s + heatedLimit t) / 2)]
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
