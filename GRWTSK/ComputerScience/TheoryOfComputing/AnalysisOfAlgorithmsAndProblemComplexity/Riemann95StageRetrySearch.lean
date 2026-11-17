@@ -1212,21 +1212,27 @@ theorem stageOutcome_commitBatch_of_perm (active : Active) {first rest : List Ca
     | some rb =>
       simpa only [commitBatch, a, b] using stageOutcome_commitReceipt active ra rb
 
-private theorem batchRun_add_eq_of_empty (batches : ℕ → List Candidate) (t n : ℕ)
-    (empty : ∀ i < n, batches (t + i) = []) :
+private theorem batchRun_add_eq_of_rejections (batches : ℕ → List Candidate) (t n : ℕ)
+    (rejects : ∀ i < n, ∀ active, batchRun batches t = .live active →
+      verifyBatch active.root (batches (t + i)) = none) :
     batchRun batches (t + n) = batchRun batches t := by
   induction n with
   | zero => simp
   | succ n ih =>
-    rw [Nat.add_succ, batchRun, empty n (by omega), ih (fun i hi => empty i (by omega))]
-    cases batchRun batches t <;> rfl
+    rw [Nat.add_succ, batchRun, ih (fun i hi => rejects i (by omega))]
+    cases h : batchRun batches t with
+    | halted stop => rfl
+    | live active => simp only [commitBatch, rejects n (by omega) active h]
 
-/-- Empty ticks before each retained batch preserve the full controller
-state at the aligned ticks, including the anchored native root. -/
-theorem batchRun_eq_at_padded_ticks {original padded : ℕ → List Candidate}
+/-- Inserting packets that the native verifier rejects at the original
+live checkpoint preserves the full run at retained ticks. A stopped
+checkpoint requires no condition on inserted packets. -/
+theorem batchRun_eq_at_rejected_ticks {original padded : ℕ → List Candidate}
     (clock : ℕ → ℕ) (zero : clock 0 = 0) (increasing : StrictMono clock)
     (kept : ∀ t, padded (clock (t + 1) - 1) = original t)
-    (empty : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 → padded i = []) :
+    (rejects : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 →
+      ∀ active, batchRun original t = .live active →
+        verifyBatch active.root (padded i) = none) :
     ∀ t, batchRun padded (clock t) = batchRun original t := by
   intro t
   induction t with
@@ -1237,10 +1243,22 @@ theorem batchRun_eq_at_padded_ticks {original padded : ℕ → List Candidate}
     have gap : clock (t + 1) - 1 = clock t + (clock (t + 1) - 1 - clock t) := by omega
     have wait : batchRun padded (clock (t + 1) - 1) = batchRun padded (clock t) := by
       rw [gap]
-      apply batchRun_add_eq_of_empty
-      intro i hi
-      exact empty t (clock t + i) (by omega) (by omega)
+      apply batchRun_add_eq_of_rejections
+      intro i hi active live
+      exact rejects t (clock t + i) (by omega) (by omega) active (ih.symm.trans live)
     rw [split, batchRun, wait, kept, ih, batchRun]
+
+/-- Empty ticks before each retained batch preserve the full controller
+state at the aligned ticks, including the anchored native root. -/
+theorem batchRun_eq_at_padded_ticks {original padded : ℕ → List Candidate}
+    (clock : ℕ → ℕ) (zero : clock 0 = 0) (increasing : StrictMono clock)
+    (kept : ∀ t, padded (clock (t + 1) - 1) = original t)
+    (empty : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 → padded i = []) :
+    ∀ t, batchRun padded (clock t) = batchRun original t :=
+  batchRun_eq_at_rejected_ticks clock zero increasing kept (by
+    intro t i lo hi active _
+    rw [empty t i lo hi]
+    rfl)
 
 private theorem le_of_padded_clock (clock : ℕ → ℕ) (increasing : StrictMono clock)
     (t : ℕ) : t ≤ clock t := by
@@ -1268,15 +1286,17 @@ private theorem batchRun_halted_add {batches : ℕ → List Candidate} {t : ℕ}
   | zero => simpa using h
   | succ n ih => rw [Nat.add_succ, batchRun, ih]
 
-/-- Empty padding neither introduces nor removes any certified stop,
-even when the original candidate stream is unfair. -/
-theorem batchRun_halts_iff_of_padded_ticks {original padded : ℕ → List Candidate}
+/-- Rejected padding preserves reachability of each exact native stop,
+even if the delivered stream is unfair. -/
+theorem batchRun_halts_iff_of_rejected_ticks {original padded : ℕ → List Candidate}
     (clock : ℕ → ℕ) (zero : clock 0 = 0) (increasing : StrictMono clock)
     (kept : ∀ t, padded (clock (t + 1) - 1) = original t)
-    (empty : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 → padded i = [])
+    (rejects : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 →
+      ∀ active, batchRun original t = .live active →
+        verifyBatch active.root (padded i) = none)
     (stop : Stopped) :
     (∃ t, batchRun padded t = .halted stop) ↔ ∃ t, batchRun original t = .halted stop := by
-  have aligned := batchRun_eq_at_padded_ticks clock zero increasing kept empty
+  have aligned := batchRun_eq_at_rejected_ticks clock zero increasing kept rejects
   constructor
   · rintro ⟨t, halted⟩
     refine ⟨t, (aligned t).symm.trans ?_⟩
@@ -1285,5 +1305,18 @@ theorem batchRun_halts_iff_of_padded_ticks {original padded : ℕ → List Candi
     exact batchRun_halted_add halted extra
   · rintro ⟨t, halted⟩
     exact ⟨clock t, (aligned t).trans halted⟩
+
+/-- Empty padding neither introduces nor removes any certified stop,
+even when the original candidate stream is unfair. -/
+theorem batchRun_halts_iff_of_padded_ticks {original padded : ℕ → List Candidate}
+    (clock : ℕ → ℕ) (zero : clock 0 = 0) (increasing : StrictMono clock)
+    (kept : ∀ t, padded (clock (t + 1) - 1) = original t)
+    (empty : ∀ t i, clock t ≤ i → i < clock (t + 1) - 1 → padded i = [])
+    (stop : Stopped) :
+    (∃ t, batchRun padded t = .halted stop) ↔ ∃ t, batchRun original t = .halted stop :=
+  batchRun_halts_iff_of_rejected_ticks clock zero increasing kept (by
+    intro t i lo hi active _
+    rw [empty t i lo hi]
+    rfl) stop
 
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch
