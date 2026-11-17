@@ -490,6 +490,20 @@ theorem normalized_95_quarter_successor_mass_constant
   change mass i = mass 0
   simpa using all i.val
 
+omit [Fintype Slot] in
+private theorem exists_positive_linked_pair (s : Source Prime Knot) (encode : Slot → Prime)
+    (weight : Knot → ℝ) {i j : Slot} (pos : 0 < incidenceEntry s encode weight i j) :
+    ∃ k, 0 < weight k ∧ Linked s (encode i) k ∧ Linked s (encode j) k := by
+  classical
+  rw [incidenceEntry_eq] at pos
+  by_contra missing
+  apply (not_le_of_gt pos)
+  apply Finset.sum_nonpos
+  intro k _
+  split_ifs with links
+  · exact le_of_not_gt (fun w => missing ⟨k, w, links⟩)
+  · exact le_rfl
+
 /-- Reusing a prime-polynomial vertex at two slots prevents attaining the
 quarter threshold at every slot. Each positive successor entry needs a
 knot whose support consists of exactly its two endpoints. -/
@@ -506,15 +520,7 @@ theorem injective_of_normalized_95_forward_ge_quarter
     have pos : 0 < incidenceEntry s encode weight i (i + 1) :=
       lt_of_lt_of_le (mul_pos (by norm_num) (active i))
         ((le_div_iff₀ (active i)).mp (forward i))
-    rw [incidenceEntry_eq] at pos
-    have witness : ∃ k, 0 < weight k ∧ Linked s (encode i) k ∧ Linked s (encode (i + 1)) k := by
-      by_contra missing
-      apply (not_le_of_gt pos)
-      apply Finset.sum_nonpos
-      intro k _
-      split_ifs with links
-      · exact le_of_not_gt (fun w => missing ⟨k, w, links⟩)
-      · exact le_rfl
+    have witness := exists_positive_linked_pair s encode weight pos
     obtain ⟨k, positive, hi, hn⟩ := witness
     let S : Finset (Fin 95) := Finset.univ.filter fun t => Linked s (encode t) k
     have mi : i ∈ S := by simp [S, hi]
@@ -553,5 +559,55 @@ theorem exists_normalized_95_forward_lt_quarter_of_collision
   by_contra none
   push Not at none
   exact distinct (injective_of_normalized_95_forward_ge_quarter s encode weight nonneg active none same)
+
+/-- At the quarter threshold each directed adjacency needs a distinct
+positive-weight knot. A knot can witness only one such adjacency. -/
+theorem positive_knot_count_ge_of_quarter
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (forward : ∀ i, 1 / 4 ≤ incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j)) :
+    95 ≤ (Finset.univ.filter fun k => 0 < weight k).card := by
+  classical
+  have witness (i : Fin 95) : ∃ k,
+      0 < weight k ∧ Linked s (encode i) k ∧ Linked s (encode (i + 1)) k := by
+    apply exists_positive_linked_pair s encode weight
+    exact lt_of_lt_of_le (mul_pos (by norm_num) (active i))
+      ((le_div_iff₀ (active i)).mp (forward i))
+  choose knot valid using witness
+  let P := Finset.univ.filter fun k => 0 < weight k
+  let assign (i : Fin 95) : P := ⟨knot i, by simp [P, (valid i).1]⟩
+  have inj : Function.Injective assign := by
+    intro i j same
+    have sameKnot : knot i = knot j := congrArg Subtype.val same
+    let S : Finset (Fin 95) := Finset.univ.filter fun a => Linked s (encode a) (knot i)
+    let E := S.filter fun a => a + 1 ∈ S
+    have mi : i ∈ S := by simp [S, (valid i).2.1]
+    have ni : i + 1 ∈ S := by simp [S, (valid i).2.2]
+    have mj : j ∈ S := by simp [S, sameKnot, (valid j).2.1]
+    have nj : j + 1 ∈ S := by simp [S, sameKnot, (valid j).2.2]
+    have one : E.card = 1 :=
+      (support_pair_of_normalized_95_forward_ge_quarter s encode weight nonneg active forward
+        (knot i) (valid i).1 ⟨i, mi⟩).2
+    obtain ⟨a, ha⟩ := Finset.card_eq_one.mp one
+    have ei : i ∈ E := Finset.mem_filter.mpr ⟨mi, ni⟩
+    have ej : j ∈ E := Finset.mem_filter.mpr ⟨mj, nj⟩
+    rw [ha] at ei ej
+    exact (Finset.mem_singleton.mp ei).trans (Finset.mem_singleton.mp ej).symm
+  simpa only [Fintype.card_fin, Fintype.card_coe] using Fintype.card_le_of_injective assign inj
+
+/-- Fewer than 95 positive knots forces strict loss in some row,
+irrespective of any repeated prime-polynomial labels. -/
+theorem exists_normalized_95_forward_lt_quarter_of_knot_count
+    (s : Source Prime Knot) (encode : Fin 95 → Prime) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k)
+    (active : ∀ i, 0 < ∑ j, incidenceEntry s encode weight i j)
+    (few : (Finset.univ.filter fun k => 0 < weight k).card < 95) :
+    ∃ i, incidenceEntry s encode weight i (i + 1) /
+      (∑ j, incidenceEntry s encode weight i j) < 1 / 4 := by
+  by_contra none
+  push Not at none
+  exact few.not_ge (positive_knot_count_ge_of_quarter s encode weight nonneg active none)
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
