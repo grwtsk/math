@@ -171,4 +171,42 @@ theorem decodeCyclicPrime_eq_some_iff {states lanes phases width : ℕ}
         Fin.ext (Nat.add_left_cancel (rank'.symm.trans rank))
       exact congrArg some (layout.separates r q sameLane a b (ha.trans hb.symm))
 
+/-- Two successive bounded delays give exactly the same cyclic readings
+as one delay with width the sum of the two widths minus one. -/
+theorem two_delays_iff {phases width₁ width₂ : ℕ} (h₁ : 0 < width₁) (h₂ : 0 < width₂)
+    (start observed : Fin phases) :
+    (∃ a : Fin width₁, ∃ b : Fin width₂,
+      (((start.val + a.val) % phases) + b.val) % phases = observed.val) ↔
+    ∃ d : Fin (width₁ + width₂ - 1), (start.val + d.val) % phases = observed.val := by
+  constructor
+  · rintro ⟨a, b, read⟩
+    have ha := a.isLt
+    have hb := b.isLt
+    refine ⟨⟨a.val + b.val, by omega⟩, ?_⟩
+    simpa only [Nat.mod_add_mod, Nat.add_assoc] using read
+  · rintro ⟨d, read⟩
+    let a := min d.val (width₁ - 1)
+    have ha : a < width₁ := (min_le_right _ _).trans_lt (by omega)
+    have hd := d.isLt
+    have hb : d.val - a < width₂ := by
+      dsimp [a]
+      omega
+    have total : a + (d.val - a) = d.val :=
+      Nat.add_sub_of_le (min_le_left _ _)
+    refine ⟨⟨a, ha⟩, ⟨d.val - a, hb⟩, ?_⟩
+    change (((start.val + a) % phases) + (d.val - a)) % phases = observed.val
+    rwa [Nat.mod_add_mod, Nat.add_assoc, total]
+
+/-- The same executable prime decoder recognizes two independently
+delayed reads with the exact combined width, including wraparound. -/
+theorem decodeCyclicPrime_eq_some_iff_two_delays {states lanes phases width₁ width₂ : ℕ}
+    (h₁ : 0 < width₁) (h₂ : 0 < width₂)
+    (layout : Layout states lanes phases (width₁ + width₂ - 1))
+    (offset p : ℕ) (observed : Fin phases) (q : Fin states) :
+    decodeCyclicPrime layout offset p observed = some q ↔
+      p = Nat.nth Nat.Prime (offset + (layout.lane q).val) ∧
+      ∃ a : Fin width₁, ∃ b : Fin width₂,
+        ((((layout.start q).val + a.val) % phases) + b.val) % phases = observed.val := by
+  rw [decodeCyclicPrime_eq_some_iff, two_delays_iff h₁ h₂]
+
 end GRWTSK.NumberTheory.PrimeLaneCyclicDelay
