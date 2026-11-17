@@ -62,6 +62,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEle
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEleventhRunFourthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEleventhRunFifthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEleventhRunSixthCross
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEleventhRunSeventhCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeCheckerCellDeficit
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeStageSineReturn
 
@@ -2687,5 +2688,93 @@ theorem primitiveStageLower_of_blockSumAfterEleventhSixth_le (χ : DirichletChar
   primitiveStageLower_of_blockSumAfterEleventhFifth_le χ hp hn hodd
     (checker_unit_test_iff_blockSumAfterEleventhFifth_le.mp
       (checker_unit_test_iff_blockSumAfterEleventhSixth_le.mpr hr))
+
+private def eleventhSeventhPair : (ℕ × ℕ) × (ℕ × ℕ) := ((13225, 13271), (4110, 4199))
+
+set_option maxRecDepth 32768 in
+private theorem eleventhSeventhPair_mem : eleventhSeventhPair ∈ runPairsAfterEleventhSixth := by
+  decide +kernel
+
+/-- The remaining lower pairs after extracting the eleventh-to-seventh cross. -/
+def runPairsAfterEleventhSeventh : Finset ((ℕ × ℕ) × (ℕ × ℕ)) :=
+  runPairsAfterEleventhSixth.erase eleventhSeventhPair
+
+theorem runPairsAfterEleventhSeventh_card : runPairsAfterEleventhSeventh.card = 29 := by
+  rw [runPairsAfterEleventhSeventh, Finset.card_erase_of_mem eleventhSeventhPair_mem,
+    runPairsAfterEleventhSixth_card]
+
+/-- Literal checker costs over the 29 pairs left by this erasure. -/
+def blockSumAfterEleventhSeventh : ℕ := ∑ p ∈ runPairsAfterEleventhSeventh, runPairSubtotal p
+
+theorem blockSumAfterEleventhSeventh_eq_sum :
+    blockSumAfterEleventhSeventh = ∑ p ∈ runPairsAfterEleventhSeventh,
+      triangleBlock (price literalRawDeficit) sincEntry
+        (retainedRunCells p.1) (retainedRunCells p.2) := rfl
+
+/-- The eleventh-to-seventh cross subtotal is counted once in the split. -/
+theorem blockSumAfterEleventhSixth_eq_add_blockSumAfterEleventhSeventh :
+    blockSumAfterEleventhSixth =
+      213257600085867618180032305852960293645203239444 + blockSumAfterEleventhSeventh :=
+  bind_erased_subtotal blockSumAfterEleventhSixth_eq_sum
+    (sum_runBlocks_eq_subtotal_add_sum_erase eleventhSeventhPair_mem eleventhWithSeventhRetainedRunCross)
+    blockSumAfterEleventhSeventh_eq_sum
+
+private theorem accumulate_eleventh_seventh_subtotal {n old rest : ℕ}
+    (hn : n = 123841364172679216000244548821815316127745612328117131 + old)
+    (hrest : old = 213257600085867618180032305852960293645203239444 + rest) :
+    n = 123841577430279301867862728854121169088039257531356575 + rest := by
+  omega
+
+/-- The checker numerator with sixty-two exact contributions separated. -/
+theorem literal_total_eq_certified_add_afterEleventhSeventh :
+    total checkerMidpointLower =
+      123841577430279301867862728854121169088039257531356575 + blockSumAfterEleventhSeventh :=
+  accumulate_eleventh_seventh_subtotal literal_total_eq_certified_add_afterEleventhSixth
+    blockSumAfterEleventhSixth_eq_add_blockSumAfterEleventhSeventh
+
+private theorem after_eleventh_seventh_strict_cutoff (r : ℕ) :
+    213257600085867618180032305852960293645203239444 + r ≤
+      246096435509576966040170622906347872254387671882868 ↔
+    r ≤ 245883177909491098421990590600494911960742468643424 := by
+  omega
+
+private theorem after_eleventh_seventh_unit_cutoff (r : ℕ) :
+    213257600085867618180032305852960293645203239444 + r ≤
+      37862234334687176702009260842184683872254387671882869 ↔
+    r ≤ 37862021077087090834391080809878830911960742468643425 := by
+  omega
+
+/-- The original strict integer test in terms of the 29-pair sum. -/
+theorem checker_test_iff_blockSumAfterEleventhSeventh_le :
+    total checkerMidpointLower * 62500 < 47961 * denominator ↔
+      blockSumAfterEleventhSeventh ≤ 245883177909491098421990590600494911960742468643424 :=
+  checker_test_iff_blockSumAfterEleventhSixth_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 246096435509576966040170622906347872254387671882868)
+      blockSumAfterEleventhSixth_eq_add_blockSumAfterEleventhSeventh).to_iff.trans
+        (after_eleventh_seventh_strict_cutoff blockSumAfterEleventhSeventh))
+
+/-- The separate unit test for the original radius-one stage. -/
+theorem checker_unit_test_iff_blockSumAfterEleventhSeventh_le :
+    total checkerMidpointLower ≤ denominator ↔
+      blockSumAfterEleventhSeventh ≤ 37862021077087090834391080809878830911960742468643425 :=
+  checker_unit_test_iff_blockSumAfterEleventhSixth_le.trans
+    ((congrArg (fun n : ℕ => n ≤ 37862234334687176702009260842184683872254387671882869)
+      blockSumAfterEleventhSixth_eq_add_blockSumAfterEleventhSeventh).to_iff.trans
+        (after_eleventh_seventh_unit_cutoff blockSumAfterEleventhSeventh))
+
+theorem rectangle_lt_of_blockSumAfterEleventhSeventh_le (χ : DirichletCharacter ℂ 3)
+    (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterEleventhSeventh ≤ 245883177909491098421990590600494911960742468643424) :
+    sineDeficitRectangle 256 (q3SineDeficit χ) < (219 / 250 : ℝ) ^ 2 :=
+  rectangle_lt_of_blockSumAfterEleventhSixth_le χ hodd
+    (checker_test_iff_blockSumAfterEleventhSixth_le.mp (checker_test_iff_blockSumAfterEleventhSeventh_le.mpr hr))
+
+theorem primitiveStageLower_of_blockSumAfterEleventhSeventh_le (χ : DirichletCharacter ℂ 3)
+    (hp : χ.IsPrimitive) (hn : χ ≠ 1) (hodd : gammaParity χ = 1)
+    (hr : blockSumAfterEleventhSeventh ≤ 37862021077087090834391080809878830911960742468643425) :
+    PrimitiveStageLower χ hp hn 0 :=
+  primitiveStageLower_of_blockSumAfterEleventhSixth_le χ hp hn hodd
+    (checker_unit_test_iff_blockSumAfterEleventhSixth_le.mp
+      (checker_unit_test_iff_blockSumAfterEleventhSeventh_le.mpr hr))
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddThreeSineHilbertSchmidt.CheckerTriangle
