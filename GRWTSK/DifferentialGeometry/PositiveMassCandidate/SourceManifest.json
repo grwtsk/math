@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "status": "SOURCE_CANDIDATE_NOT_RUN",
+  "ownership": "grwtsk contributors",
+  "primary_source": "user-supplied answer (1).lean",
+  "source_sha256": "1c27cbf86c0f25ac7957687508f63dc0a6b9d48d1b4df14c98b821e61f6b1747",
+  "source_git_blob_sha1": "b087fc2011a39441a77edb8af3074e8837bff8ef",
+  "source_bytes": 15647217,
+  "source_lines": 288039,
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "verification": "Lean elaboration, fresh kernel replay, transitive axiom auditing, complete paper correspondence and independent review: NOT_RUN",
+  "modules": [
+    {
+      "index": 1,
+      "name": "GeometryAndADMCore",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/GeometryAndADMCore.lean",
+      "start_line": 1,
+      "end_line": 20059,
+      "git_blob_sha1": "b63b19996180ad863cc65a52a543e0b9f2a72064",
+      "import_previous": null
+    },
+    {
+      "index": 2,
+      "name": "MinimalPerimeterAndHull",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/MinimalPerimeterAndHull.lean",
+      "start_line": 20060,
+      "end_line": 40376,
+      "git_blob_sha1": "6342c0875a3f1c42db026e22be7a3f117dd1f80f",
+      "import_previous": "GeometryAndADMCore"
+    },
+    {
+      "index": 3,
+      "name": "SmoothingAndSectorCalibration",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/SmoothingAndSectorCalibration.lean",
+      "start_line": 40377,
+      "end_line": 60046,
+      "git_blob_sha1": "280ad0d6dee12e6fc118510e06c94a900816eff0",
+      "import_previous": "MinimalPerimeterAndHull"
+    },
+    {
+      "index": 4,
+      "name": "SurfaceRegularityAndEllipticBarriers",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/SurfaceRegularityAndEllipticBarriers.lean",
+      "start_line": 60047,
+      "end_line": 80067,
+      "git_blob_sha1": "bf7ccdec35ac8daaf9fce2579ecdace52582d924",
+      "import_previous": "SmoothingAndSectorCalibration"
+    },
+    {
+      "index": 5,
+      "name": "JacobiAndGaussSimons",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/JacobiAndGaussSimons.lean",
+      "start_line": 80068,
+      "end_line": 100059,
+      "git_blob_sha1": "f33434384c636b83def2e71f6bfca8ca2df370ab",
+      "import_previous": "SurfaceRegularityAndEllipticBarriers"
+    },
+    {
+      "index": 6,
+      "name": "CurvatureEstimatesAndCollars",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/CurvatureEstimatesAndCollars.lean",
+      "start_line": 100060,
+      "end_line": 120088,
+      "git_blob_sha1": "18f7591c27361842b95d2801d04036ae8a5ad771",
+      "import_previous": "JacobiAndGaussSimons"
+    },
+    {
+      "index": 7,
+      "name": "TrappedBarriersAndEllipticPDE",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/TrappedBarriersAndEllipticPDE.lean",
+      "start_line": 120089,
+      "end_line": 140634,
+      "git_blob_sha1": "de38be69406c69804b99b9c12565c1f805a1d719",
+      "import_previous": "CurvatureEstimatesAndCollars"
+    },
+    {
+      "index": 8,
+      "name": "EllipticEnergyAndDuality",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/EllipticEnergyAndDuality.lean",
+      "start_line": 140635,
+      "end_line": 160083,
+      "git_blob_sha1": "1796ec6f11e22f79b5042e26e4e948dc8be406f7",
+      "import_previous": "TrappedBarriersAndEllipticPDE"
+    },
+    {
+      "index": 9,
+      "name": "DualityAndTopologicalSeparation",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/DualityAndTopologicalSeparation.lean",
+      "start_line": 160084,
+      "end_line": 180201,
+      "git_blob_sha1": "f2449330f856dd7ffcf29a7c12e7c0e52b521d9a",
+      "import_previous": "EllipticEnergyAndDuality"
+    },
+    {
+      "index": 10,
+      "name": "ExteriorChartsAndHarmonicConstruction",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/ExteriorChartsAndHarmonicConstruction.lean",
+      "start_line": 180202,
+      "end_line": 200077,
+      "git_blob_sha1": "8a076ad2874bd14b86711d7d88d92195253a2566",
+      "import_previous": "DualityAndTopologicalSeparation"
+    },
+    {
+      "index": 11,
+      "name": "HarmonicBoundaryRegularity",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/HarmonicBoundaryRegularity.lean",
+      "start_line": 200078,
+      "end_line": 220162,
+      "git_blob_sha1": "60043da3814db3d3421df93a3e6ec04ca047220c",
+      "import_previous": "ExteriorChartsAndHarmonicConstruction"
+    },
+    {
+      "index": 12,
+      "name": "SternCriticalSetAnalysis",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/SternCriticalSetAnalysis.lean",
+      "start_line": 220163,
+      "end_line": 240040,
+      "git_blob_sha1": "a74c33f6f1c2ae3ebd696ae45fa49a92a65ab480",
+      "import_previous": "HarmonicBoundaryRegularity"
+    },
+    {
+      "index": 13,
+      "name": "GreenBoundaryAndSternEstimate",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/GreenBoundaryAndSternEstimate.lean",
+      "start_line": 240041,
+      "end_line": 260137,
+      "git_blob_sha1": "4a42325dcab95f78ff5d9b5285da024f467e3026",
+      "import_previous": "SternCriticalSetAnalysis"
+    },
+    {
+      "index": 14,
+      "name": "ADMFluxMassAndRigidity",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/ADMFluxMassAndRigidity.lean",
+      "start_line": 260138,
+      "end_line": 280133,
+      "git_blob_sha1": "7936505c8ebc71151b9676f804a32b5ea724e037",
+      "import_previous": "GreenBoundaryAndSternEstimate"
+    },
+    {
+      "index": 15,
+      "name": "GlobalRigidityAndPositiveMass",
+      "path": "GRWTSK/DifferentialGeometry/PositiveMassCandidate/GlobalRigidityAndPositiveMass.lean",
+      "start_line": 280134,
+      "end_line": 288039,
+      "git_blob_sha1": "03fa7595d0cdc086fc6d9ae04cb46dc1b9f2aa63",
+      "import_previous": "ADMFluxMassAndRigidity"
+    }
+  ]
+}
