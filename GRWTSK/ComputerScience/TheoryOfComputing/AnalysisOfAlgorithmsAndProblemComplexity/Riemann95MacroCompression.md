@@ -121,3 +121,40 @@ Strict pinned compilation, target kernel replay, the ordinary,
 continuing and stopping controls, and all three transitive axiom
 audits passed. Full fresh import replay and independent review
 remain NOT_RUN.
+
+## Constraints on a standard-machine guard
+
+`PreservesGuardOrdinary` fixes the canonical 94 codes and preserves every
+reached source cell except the guard entry at native `(90,1)) and the
+omitted row 61. With the guard entry defined,
+`guard_target_terminal_cell` proves that any missing target instruction
+must occur at the code of 41 on bit 1. The existing reachability theorem
+covers every other retained ordinary cell, and each of those original
+instructions is defined. If `(41,1)` is itself reached on the native blank
+run, `no_guard_target_terminal_of_reached41` excludes every target halt
+under these premises, regardless of block length.
+
+For an immediate stop after the literal incoming write and right move,
+the borrowed control is therefore the code of 41.
+`guard_continuing_prefix_forced` takes the checkpoint tape beginning
+with 1 and otherwise blank. The fixed zero-read rows force the native
+control codes 90, 41, 54, 42, 22, 28 and 0 at budgets 0 through 6.
+None is the required continuation code 56. The macro itself reaches
+56 on the same test, and stops with a 1 in the next cell. This extends
+the direct two-move collision considered in the parallel lane work
+to a longer forced prefix, using the same pinned table and reached cells.
+
+A longer standard-machine realization would need to recover the required
+checkpoint beyond this prefix, with exact tape and terminal behavior, or
+use different checkpoint codes or an altered tape representation. The
+reachability of native `(41,1)` remains a premise in the stronger
+terminal exclusion.
+
+Strict target compilation after rebuilding the reached-cell supplier,
+target kernel replay, both macro controls, the six-step exclusion
+control, and all three transitive axiom audits passed on the pins
+above. The audit found only `propext`, `Classical.choice` and
+`Quot.sound`. Checked Lean SHA-256
+`13b12bb448b85fc0c5eb3a30de0e2dce2e1caa427e5c69b6943a302f8614ce2e`.
+Full fresh dependency replay, independent review and HS runtime parity
+are `NOT_RUN`.
