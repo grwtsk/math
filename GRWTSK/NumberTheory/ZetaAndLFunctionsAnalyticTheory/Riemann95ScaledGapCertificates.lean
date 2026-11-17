@@ -524,4 +524,101 @@ theorem adjacent_product_window_control (start : ℕ) (late : 2 ≤ start) (slot
     · have bound := Nat.pow_le_pow_left (show k + 1 ≤ j by omega) 2
       omega
 
+
+/-- A cofinal schedule with controlled upward jumps suffices even if it
+sometimes goes backwards. Only the first crossing of each window matters. -/
+theorem cofinal_bounded_upward_slot_accepts_iff_cryptids_RH
+    (start : ℕ) (schedule : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    (positive : ∀ k ≥ start, 1 ≤ schedule k)
+    (cofinal : ∀ w, ∃ k ≥ start, w ≤ schedule k)
+    (jump : ∀ k ≥ start,
+      ((schedule (k + 1) - schedule k : ℕ) : ℝ) ≤ C * (1 + defectScale (schedule k))) :
+    (∀ k ≥ start, ∃ slot : Fin 95, slotAccepts (schedule k) slot = true) ↔
+      RiemannHypothesis := by
+  constructor
+  · intro accepted
+    let gap (w : ℕ) := ⌈C * (1 + defectScale w)⌉₊
+    have nonneg (w : ℕ) : 0 ≤ defectScale w := by unfold defectScale; positivity
+    apply (scaled_gap_safe_slot_iff_cryptids_RH (schedule start + 1) gap
+      (C := C + 1) (by positivity) ?_).mp
+    · intro w hw
+      have existsCross : ∃ offset, w ≤ schedule (start + offset) := by
+        obtain ⟨k, hk, cross⟩ := cofinal w
+        obtain ⟨offset, rfl⟩ := Nat.exists_eq_add_of_le hk
+        exact ⟨offset, cross⟩
+      obtain ⟨j, first⟩ : ∃ j, Nat.find existsCross = j + 1 := by
+        have notZero : Nat.find existsCross ≠ 0 := by
+          intro eq
+          have spec := Nat.find_spec existsCross
+          rw [eq, Nat.add_zero] at spec
+          omega
+        exact ⟨Nat.find existsCross - 1, by omega⟩
+      have past : w ≤ schedule (start + j + 1) := by
+        simpa only [first, Nat.add_assoc] using Nat.find_spec existsCross
+      have before : schedule (start + j) < w := by
+        exact Nat.lt_of_not_ge (Nat.find_min existsCross (by omega : j < Nat.find existsCross))
+      have base := Nat.le_add_right start j
+      have size : ((schedule (start + j + 1) - w : ℕ) : ℝ) ≤ C * (1 + defectScale w) := by
+        calc
+          _ ≤ ((schedule (start + j + 1) - schedule (start + j) : ℕ) : ℝ) :=
+            Nat.cast_le.mpr (Nat.sub_le_sub_left before.le _)
+          _ ≤ _ := (jump _ base).trans (mul_le_mul_of_nonneg_left
+            (add_le_add le_rfl (scale_le_scale (positive _ base) before.le)) hC)
+      obtain ⟨slot, safe⟩ := accepted (start + j + 1) (by omega)
+      refine ⟨schedule (start + j + 1) - w, ?_, slot, ?_⟩
+      · exact_mod_cast size.trans (Nat.le_ceil _)
+      · rw [Nat.add_sub_of_le past]
+        exact fun bad => (slotAccepts_iff_safe _ _).mp safe ((counterexample_iff_cryptids _).mp bad)
+    · intro w _
+      have ceil := Nat.ceil_lt_add_one (mul_nonneg hC (by linarith [nonneg w]) :
+        0 ≤ C * (1 + defectScale w))
+      change (↑⌈C * (1 + defectScale w)⌉₊ : ℝ) ≤ _
+      nlinarith only [ceil, nonneg w]
+  · intro rh k _
+    exact ⟨0, (window_accepts_iff_all_slots_accept _).mp (all_windows_accept_iff_cryptids_RH.mpr rh _) _⟩
+
+/-- Implementation soundness and certificate existence remain separate
+premises for a cofinal schedule with bounded upward jumps. -/
+theorem cryptids_RH_of_cofinal_bounded_upward_certificates {Certificate : Type*}
+    (check : ℕ → Fin 95 → Certificate → Bool)
+    (sound : ∀ w slot c, check w slot c = true →
+      ¬ ShuniaCounterexample (stageArgument (stageOrdinal w slot)))
+    (start : ℕ) (schedule : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    (positive : ∀ k ≥ start, 1 ≤ schedule k)
+    (cofinal : ∀ w, ∃ k ≥ start, w ≤ schedule k)
+    (jump : ∀ k ≥ start,
+      ((schedule (k + 1) - schedule k : ℕ) : ℝ) ≤ C * (1 + defectScale (schedule k)))
+    (covered : ∀ k ≥ start, ∃ (slot : Fin 95) (c : Certificate),
+      check (schedule k) slot c = true) : RiemannHypothesis := by
+  apply (cofinal_bounded_upward_slot_accepts_iff_cryptids_RH start schedule hC positive cofinal jump).mp
+  intro k hk
+  obtain ⟨slot, certificate, verified⟩ := covered k hk
+  exact ⟨slot, (slotAccepts_iff_safe _ _).mpr (sound _ _ certificate verified)⟩
+
+/-- Alternating backward moves do not invalidate the coverage criterion. -/
+theorem backward_step_schedule_control :
+    let schedule (k : ℕ) := k / 2 + if k % 2 = 0 then 2 else 1
+    schedule 1 < schedule 0 ∧
+      ((∀ k, ∃ slot : Fin 95, slotAccepts (schedule k) slot = true) ↔ RiemannHypothesis) := by
+  let schedule (k : ℕ) := k / 2 + if k % 2 = 0 then 2 else 1
+  change schedule 1 < schedule 0 ∧ _
+  refine ⟨by decide, ?_⟩
+  have criterion := cofinal_bounded_upward_slot_accepts_iff_cryptids_RH 0 schedule
+    (C := 2) (by norm_num) ?_ ?_ ?_
+  · simpa using criterion
+  · intro k _
+    dsimp [schedule]
+    split <;> omega
+  · intro w
+    refine ⟨2 * w, Nat.zero_le _, ?_⟩
+    dsimp [schedule]
+    split <;> omega
+  · intro k _
+    have h : schedule (k + 1) - schedule k ≤ 2 := by
+      dsimp [schedule]
+      split <;> split <;> omega
+    have scale : 0 ≤ defectScale (schedule k) := by unfold defectScale; positivity
+    have hr : ((schedule (k + 1) - schedule k : ℕ) : ℝ) ≤ 2 := by exact_mod_cast h
+    linarith
+
 end GRWTSK.NumberTheory.Riemann95StageCertificates

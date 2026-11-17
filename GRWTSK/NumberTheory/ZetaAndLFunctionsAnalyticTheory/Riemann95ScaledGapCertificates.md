@@ -86,3 +86,37 @@ the chosen tail.
 Pinned strict compilation, target kernel replay, the nonsquare
 control and both transitive axiom audits passed. Fresh full import
 replay and independent review were NOT_RUN.
+
+## Cofinal schedules with bounded upward jumps
+
+`cofinal_bounded_upward_slot_accepts_iff_cryptids_RH` applies to any
+cofinal tail of positive natural window indices. The bound is on the
+natural difference between successive scheduled windows, so backward
+moves are permitted. At the first crossing of any target window above
+the initial scheduled window, the preceding window is strictly below
+the target. Monotonicity of the original defect scale on positive
+arguments bounds the overshoot by the same constant times one plus the
+scale of the target. Taking the ceiling gives an admissible gap in the
+existing safe-slot criterion. One accepted slot at each scheduled index
+is then equivalent to RH. The slot can vary across the schedule.
+
+`cryptids_RH_of_cofinal_bounded_upward_certificates` applies this result
+to a Boolean checker with separate soundness and existence premises for
+certificates at the literal original Shunia stage arguments.
+`backward_step_schedule_control` checks the schedule
+(2,1,3,2,4,3,ldots). It is cofinal, drops below its starting window at
+the first step and has upward jumps at most two.
+
+The remaining HS premise is an infinite receipt supplier with the
+proved schedule properties and an acceptance witness at each chosen
+index. The consumer retains the original bad-block and native
+halting reduction.
+
+The five local dependencies were rebuilt from the pinned sources. Strict
+compilation, target kernel replay on the isolated sysroot, the backward
+step control, and the three theorem axiom audits passed on the pins
+above. The audit found only `propext`, `Classical.choice` and
+`Quot.sound`. Lean SHA-256
+`50b892b0c9a87842f26995c5094a1dc11cccfd0c5ea151e9e548a93233ddeb08`.
+Full fresh dependency replay, independent review and HS runtime
+correspondence are `NOT_RUN`.
