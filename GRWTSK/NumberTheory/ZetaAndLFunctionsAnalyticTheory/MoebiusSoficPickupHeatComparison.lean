@@ -1363,4 +1363,60 @@ theorem abs_settled_gap_le_sqrt_add_sqrt_of_two_residual_allowances
   filter_upwards [(self_mem_nhdsWithin : Ioi (0 : ℝ) ∈ 𝓝[>] (0 : ℝ))] with δ hpos
   exact hδ δ hpos
 
+/-- Attaining the midpoint joint lower cost forces the measured mean to
+the midpoint and forces the centered source energy per horizon to zero. -/
+theorem pickup_midpoint_and_variance_limits_of_saturated_allowances
+    {s t A B : ℝ} (hs : 0 < s) (ht : 0 < t) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hA : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε)
+    (hB : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ B + ε)
+    (heq : (heatedLimit s - heatedLimit t) ^ 2 = 2 * (A + B)) :
+    Tendsto pickupHorizonMean l (𝓝 ((heatedLimit s + heatedLimit t) / 2)) ∧
+      Tendsto pickupHorizonVariance l (𝓝 0) := by
+  let m := (heatedLimit s + heatedLimit t) / 2
+  have hnonneg : ∀ᶠ T in l, 0 ≤ pickupHorizonVariance T := by
+    filter_upwards [(eventually_gt_atTop (0 : ℝ)).filter_mono hl] with T hT
+    unfold pickupHorizonVariance
+    exact div_nonneg (intervalIntegral.integral_nonneg_of_forall hT.le
+      (fun _ => sq_nonneg _)) hT.le
+  have hcost {ε : ℝ} (hε : 0 < ε) :
+      ∀ᶠ T in l, pickupHorizonVariance T + (pickupHorizonMean T - m) ^ 2 ≤ ε := by
+    filter_upwards [eventually_variance_add_midpoint_cost_le_of_two_residual_allowances
+      hs ht hl hA hB hε] with T hT
+    rw [heq] at hT
+    dsimp [m]
+    linarith
+  constructor
+  · apply Metric.tendsto_nhds.mpr
+    intro ε hε
+    have hsmall : 0 < ε ^ 2 / 2 := by positivity
+    filter_upwards [hnonneg, hcost hsmall] with T hv hT
+    rw [Real.dist_eq]
+    have hsq : (pickupHorizonMean T - m) ^ 2 < ε ^ 2 := by
+      linarith [sq_pos_of_pos hε]
+    simpa only [abs_of_pos hε] using (sq_lt_sq.mp hsq)
+  · apply tendsto_order.mpr
+    constructor
+    · intro b hb
+      exact hnonneg.mono fun _ h => hb.trans_le h
+    · intro b hb
+      filter_upwards [hcost (show 0 < b / 2 by positivity)] with T hT
+      linarith [sq_nonneg (pickupHorizonMean T - m)]
+
+/-- When the two allowances attain the midpoint cost, the original signed
+deviation relative to the source diagonal reaches its corresponding ceiling. -/
+theorem tendsto_signed_mask_at_saturated_allowances
+    {s t A B : ℝ} (hs : 0 < s) (ht : 0 < t) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hA : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε)
+    (hB : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ B + ε)
+    (heq : (heatedLimit s - heatedLimit t) ^ 2 = 2 * (A + B)) :
+    Tendsto (fun T : ℝ => (weightedPickupDeviation T Finset.univ (heatMaskWeight s T)
+      (heatMaskCoeff T) - pickupDiagonal T) / T)
+      l (𝓝 (settledHeatedPickup s - ((heatedLimit s + heatedLimit t) / 2) ^ 2)) := by
+  obtain ⟨hmean, hvar⟩ :=
+    pickup_midpoint_and_variance_limits_of_saturated_allowances hs ht hl hA hB heq
+  have h := (tendsto_normalized_heatMaskDeviation_add_measured_variance_and_mean_sq hs).mono_left hl
+  have hlim := (h.sub (hmean.pow 2)).sub hvar
+  rw [sub_zero] at hlim
+  exact hlim.congr' (Eventually.of_forall fun T => by ring)
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
