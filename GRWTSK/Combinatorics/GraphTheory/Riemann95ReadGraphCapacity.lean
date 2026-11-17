@@ -514,4 +514,46 @@ theorem finite_exact_rooted_read_graph_iff_not_riemannHypothesis :
     exact exists_finite_exact_rooted_read_graph_of_halts
       (Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr bad)
 
+/-- Once the native terminal word is known, one covered word and
+soundness up to the first failed budget certify the whole rooted language.
+No finiteness assumption on the graph is needed for this reduction. -/
+theorem exactRoot_iff_terminal_horizon {V : Type*} (G : LabeledGraph V Read) (root : V)
+    {n : ℕ} {word : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none) :
+    (∀ w, (∃ t, WordPath G root w t) ↔ ∃ d, WordPath readGraph init w d) ↔
+      (∃ t, WordPath G root word t) ∧
+        ∀ w : List Read, w.length ≤ n + 1 →
+          (∃ t, WordPath G root w t) → ∃ d, WordPath readGraph init w d := by
+  obtain ⟨length, finish, native⟩ := (observe_iff_path _ _ _).mp observed
+  have noNativeAtFailure {w : List Read} (size : w.length = n + 1)
+      (lift : ∃ d, WordPath readGraph init w d) : False := by
+    have read := (observe_iff_path (n + 1) _ _).mpr ⟨size, lift⟩
+    rw [stopped] at read
+    cases read
+  have cutoff {w : List Read} (large : n < w.length) :
+      (w.take (n + 1)).length = n + 1 := by
+    rw [List.length_take, Nat.min_eq_left (by omega)]
+  constructor
+  · intro exactRoot
+    exact ⟨(exactRoot word).mpr ⟨finish, native⟩, fun w _ => (exactRoot w).mp⟩
+  · rintro ⟨⟨target, admitted⟩, sound⟩ w
+    constructor
+    · rintro ⟨t, path⟩
+      by_cases short : w.length ≤ n + 1
+      · exact sound w short ⟨t, path⟩
+      · obtain ⟨mid, prefixPath, _⟩ := splitAt path (n + 1)
+        have size := cutoff (w := w) (by omega)
+        exact (noNativeAtFailure size (sound _ size.le ⟨mid, prefixPath⟩)).elim
+    · rintro ⟨d, path⟩
+      have short : w.length ≤ n := by
+        by_contra large
+        obtain ⟨mid, prefixPath, _⟩ := splitAt path (n + 1)
+        exact noNativeAtFailure (cutoff (w := w) (by omega)) ⟨mid, prefixPath⟩
+      have prefixEq : w = word.take w.length := forced_prefix (G := readGraph)
+        (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
+        path native (by omega)
+      obtain ⟨mid, prefixPath, _⟩ := splitAt admitted w.length
+      exact ⟨mid, prefixEq.symm ▸ prefixPath⟩
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Riemann95ReadGraphCapacity
