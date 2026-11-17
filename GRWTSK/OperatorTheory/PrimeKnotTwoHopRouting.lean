@@ -235,4 +235,80 @@ theorem twoHop_95_cycle_half_error_attained
     rw [entry]
     split <;> norm_num
 
+
+/-- Nonnegative weights make the unchanged two-hop entries satisfy the
+diagonal Cauchy–Schwarz bound. -/
+theorem twoHop_sq_le_diagonal (s : Source Prime Knot) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k) (p q : Prime) :
+    twoHop s weight p q ^ 2 ≤ twoHop s weight p p * twoHop s weight q q := by
+  let a (k : Knot) := edgeWeight s (.inl p) (.inr k)
+  let b (k : Knot) := edgeWeight s (.inl q) (.inr k)
+  have gram (u v : Prime) :
+      twoHop s weight u v =
+        ∑ k, weight k * (edgeWeight s (.inl u) (.inr k) * edgeWeight s (.inl v) (.inr k)) := by
+    unfold twoHop
+    exact Finset.sum_congr rfl fun k _ => by rw [edgeWeight_symmetric s (.inr k) (.inl v)]
+  rw [gram p q, gram p p, gram q q]
+  change (∑ k, weight k * (a k * b k)) ^ 2 ≤
+    (∑ k, weight k * (a k * a k)) * ∑ k, weight k * (b k * b k)
+  apply Finset.sum_sq_le_sum_mul_sum_of_sq_le_mul
+  · intro k _
+    exact mul_nonneg (nonneg k) (mul_self_nonneg _)
+  · intro k _
+    exact mul_nonneg (nonneg k) (mul_self_nonneg _)
+  · intro k _
+    exact le_of_eq (by ring)
+
+/-- Diagonal leakage alone bounds the product of forward entries. Row
+and column scaling preserves this inequality, even with signed scalings. -/
+theorem twoHop_cycle_product_le_diagonal [Fintype Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (nonneg : ∀ k, 0 ≤ weight k)
+    (encode : Slot → Prime) (next : Equiv.Perm Slot) (row col : Slot → ℝ) :
+    (∏ i, |row i * twoHop s weight (encode i) (encode (next i)) * col (next i)|) ≤
+      ∏ i, |row i * twoHop s weight (encode i) (encode i) * col i| := by
+  let f (i : Slot) := |twoHop s weight (encode i) (encode (next i))|
+  let diag (i : Slot) := |twoHop s weight (encode i) (encode i)|
+  have point (i : Slot) : f i ^ 2 ≤ diag i * diag (next i) := by
+    dsimp only [f, diag]
+    rw [sq_abs, ← abs_mul]
+    exact (twoHop_sq_le_diagonal s weight nonneg _ _).trans (le_abs_self _)
+  have squares : (∏ i, f i) ^ 2 ≤ (∏ i, diag i) ^ 2 := by
+    have h := Finset.prod_le_prod₀ (s := Finset.univ)
+      (fun i _ => sq_nonneg (f i)) (fun i _ => point i)
+    rwa [Finset.prod_pow, Finset.prod_mul_distrib, Equiv.prod_comp next diag, ← pow_two] at h
+  have product : (∏ i, f i) ≤ ∏ i, diag i :=
+    (sq_le_sq₀ (Finset.prod_nonneg fun _ _ => abs_nonneg _)
+      (Finset.prod_nonneg fun _ _ => abs_nonneg _)).mp squares
+  simp only [abs_mul, Finset.prod_mul_distrib, Equiv.prod_comp next (fun i => |col i|)]
+  exact mul_le_mul_of_nonneg_right
+    (mul_le_mul_of_nonneg_left product (Finset.prod_nonneg fun _ _ => abs_nonneg _))
+    (Finset.prod_nonneg fun _ _ => abs_nonneg _)
+
+/-- For a nonempty permutation, a forward error budget forces diagonal
+leakage of at least one minus that budget. Reverse entries may be unmeasured. -/
+theorem twoHop_cycle_diagonal_leak [Fintype Slot] [Nonempty Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (nonneg : ∀ k, 0 ≤ weight k)
+    (encode : Slot → Prime) (next : Equiv.Perm Slot) (row col : Slot → ℝ)
+    (error : ℝ) (cap : error < 1)
+    (forward : ∀ i, |row i * twoHop s weight (encode i) (encode (next i)) *
+        col (next i) - 1| ≤ error) :
+    ∃ i, 1 - error ≤ |row i * twoHop s weight (encode i) (encode i) * col i| := by
+  by_contra absent
+  push Not at absent
+  have budget := twoHop_cycle_product_le_diagonal s weight nonneg encode next row col
+  have lower : (∏ _i : Slot, (1 - error)) ≤
+      ∏ i, |row i * twoHop s weight (encode i) (encode (next i)) * col (next i)| :=
+    Finset.prod_le_prod₀ (fun _ _ => sub_nonneg.mpr cap.le) (fun i _ =>
+      (by linarith [(abs_le.mp (forward i)).1] : 1 - error ≤ _).trans (le_abs_self _))
+  have diagPos : 0 < ∏ i, |row i * twoHop s weight (encode i) (encode i) * col i| :=
+    (Finset.prod_pos fun _ _ => sub_pos.mpr cap).trans_le (lower.trans budget)
+  have eachPos (i : Slot) : 0 < |row i * twoHop s weight (encode i) (encode i) * col i| :=
+    lt_of_le_of_ne (abs_nonneg _) fun h =>
+      Finset.prod_ne_zero_iff.mp diagPos.ne' i (Finset.mem_univ _) h.symm
+  have upper : (∏ i, |row i * twoHop s weight (encode i) (encode i) * col i|) <
+      ∏ _i : Slot, (1 - error) :=
+    Finset.prod_lt_prod_of_nonempty₀ (fun i _ => eachPos i) (fun i _ => absent i)
+      Finset.univ_nonempty
+  exact (not_lt_of_ge (lower.trans budget)) upper
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander
