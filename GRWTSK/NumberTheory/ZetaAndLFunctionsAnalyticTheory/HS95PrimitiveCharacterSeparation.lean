@@ -312,4 +312,68 @@ theorem exists_bounded_window_nonreal_of_distinct_dual [NeZero q]
   · exact Complex.conj_re _
   · rw [Complex.conj_im, real w i, neg_zero]
 
+/-- Two complex closed disks of the same radius share a reading exactly
+when their midpoint is within the noise budget. -/
+private theorem common_disk_read_iff (a b : ℂ) (ε : ℝ) :
+    (∃ y : ℂ, ‖y - a‖ ≤ ε ∧ ‖y - b‖ ≤ ε) ↔ ‖a - b‖ ≤ 2 * ε := by
+  constructor
+  · rintro ⟨y, ha, hb⟩
+    have h := norm_add_le (a - y) (y - b)
+    rw [sub_add_sub_cancel, norm_sub_rev a y] at h
+    linarith
+  · intro h
+    refine ⟨(a + b) / 2, ?_, ?_⟩
+    · rw [show (a + b) / 2 - a = (b - a) / 2 by ring, norm_div,
+        norm_sub_rev b a, Complex.norm_ofNat]
+      linarith
+    · rw [show (a + b) / 2 - b = (a - b) / 2 by ring, norm_div, Complex.norm_ofNat]
+      linarith
+
+/-- Exact criterion for a decoder on any family of characters at a known
+positive level, including the subtype of primitive characters. The noise
+disks are independent over the original 95 slots and bounded visits.
+A strict distance gap for each distinct pair is necessary and sufficient. -/
+theorem bounded_heated_window_decoder_iff [NeZero q]
+    (family : Set (DirichletCharacter ℂ q))
+    (rate : Fin (characterWindowCount q) → Position → ℝ)
+    (time : Fin (characterWindowCount q) → ℝ)
+    (noise : Fin (characterWindowCount q) → Position → ℝ) :
+    let center (χ : DirichletCharacter ℂ q) (w : Fin (characterWindowCount q)) :=
+      diagonalHeat (rate w) (time w) (characterObservation χ w.val)
+    (∃ decode : (Fin (characterWindowCount q) → Position → ℂ) → Option family,
+      ∀ (χ : family) y, (∀ w i, ‖y w i - center χ w i‖ ≤ noise w i) →
+        decode y = some χ) ↔
+    ∀ (χ ψ : family), χ ≠ ψ →
+      ∃ w i, 2 * noise w i < ‖center χ w i - center ψ w i‖ := by
+  classical
+  intro center
+  let Fits (χ : family) (y : Fin (characterWindowCount q) → Position → ℂ) :=
+    ∀ w i, ‖y w i - center χ w i‖ ≤ noise w i
+  change (∃ decode : _ → Option family, ∀ χ y, Fits χ y → decode y = some χ) ↔ _
+  have overlap (χ ψ : family) :
+      (∃ y, Fits χ y ∧ Fits ψ y) ↔
+        ∀ w i, ‖center χ w i - center ψ w i‖ ≤ 2 * noise w i := by
+    constructor
+    · rintro ⟨y, hχ, hψ⟩ w i
+      exact (common_disk_read_iff _ _ _).mp ⟨y w i, hχ w i, hψ w i⟩
+    · intro h
+      choose y hχ hψ using fun w i => (common_disk_read_iff _ _ _).mpr (h w i)
+      exact ⟨y, hχ, hψ⟩
+  constructor
+  · rintro ⟨decode, correct⟩ χ ψ different
+    by_contra! noGap
+    obtain ⟨y, hχ, hψ⟩ := (overlap χ ψ).mpr noGap
+    exact different (Option.some.inj ((correct χ y hχ).symm.trans (correct ψ y hψ)))
+  · intro gap
+    let decode (y : Fin (characterWindowCount q) → Position → ℂ) : Option family :=
+      if h : ∃ χ, Fits χ y then some h.choose else none
+    refine ⟨decode, fun χ y ok => ?_⟩
+    have fits : ∃ ψ, Fits ψ y := ⟨χ, ok⟩
+    unfold decode
+    rw [dite_eq_left fits]
+    congr 1
+    by_contra different
+    obtain ⟨w, i, far⟩ := gap fits.choose χ different
+    exact far.not_ge ((overlap fits.choose χ).mp ⟨y, fits.choose_spec, ok⟩ w i)
+
 end GRWTSK.NumberTheory.HS95CharacterCarrier
