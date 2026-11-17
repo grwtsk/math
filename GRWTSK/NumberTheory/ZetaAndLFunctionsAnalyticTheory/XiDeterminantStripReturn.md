@@ -130,12 +130,17 @@ is the external input to this argument.
 
 ## A sufficient estimate on the actual Galerkin ground state
 
+Use the even part of $K_\lambda$ for the rest of this note. The exact
+source satisfies $F(-z)=F(z)$ by the functional equation.
+Fourier transformation of the even part averages the values at $z$
+and $-z$, so the same substrip error bound holds after symmetrization.
+
 Use the paper's $W=QW_\lambda^N$ in the orthonormal Fourier basis of the
 log window $[-A,A]$, where $A=\log\lambda$. Write $P_N$ for that
 Fourier projection and $v=P_N K_\lambda$, identifying $v$ with its
 coefficient vector for multiplication by $W$. Assume the ground eigenvalue
-is simple and even, and write $P_0$ for its orthogonal eigenprojection.
-Set $G=P_0v$. If a real shift (t_0) and a certified lower bound
+is simple and even, and write $P_{\min}$ for its orthogonal eigenprojection.
+Set $G=P_{\min}v$. If a real shift $t_0$ and a certified lower bound
 $\ell_1$ for every eigenvalue above the ground satisfy $t_0<\ell_1$, define
 
 $$
@@ -180,10 +185,46 @@ the actual Weil matrix at the same $N,\lambda$.
 
 An even error concentrated near the moving boundary shows why
 $\|G-K_\lambda\|_2\to0$ alone is insufficient. For $A>1$ and
-$a>0$, take (e^{-aA}) times the indicator of
+$a>0$, take $e^{-aA}$ times the indicator of
 $[A-1,A]\cup[-A,-A+1]$. Its $L^2$ norm and its real-axis transform
 go to zero. At $z=ia$ its transform tends to $(1-e^{-a})/a>0$,
 so the closed-substrip convergence fails.
+
+### Certification using the trial line
+
+At a fixed $(\lambda,N)$ with $N\ge1$, suppose $v=P_NK_\lambda\ne0$.
+Fourier projection preserves its even parity.
+Use the orthogonal splitting into the unit vector $u=v/\|v\|_2$ and its
+orthogonal complement. Write $q=\langle u,Wu\rangle$, $b=(I-uu^*)Wu$,
+and $H=(I-uu^*)W|_{u^\perp}$. A bound $H\ge hI$ with $q<h$ implies
+the ground eigenvalue $\varepsilon_0\le q$ and the second eigenvalue
+$\varepsilon_1\ge h$. Indeed, any two-dimensional subspace meets
+$u^\perp$ nontrivially. The span of two eigenvectors of eigenvalues
+less than $h$ would therefore contradict the bound on $H$.
+The ground line has nonzero projection onto $u$ since every vector in
+$u^\perp$ has Rayleigh quotient at least $h$. The Weil matrix commutes
+with reflection by CCM v1, Lemma 5.2(i), so the simple ground line
+is even. Choosing $t_0=q$ and $\ell_1=h$ above gives
+
+$$
+\|v-P_{\min}v\|_2\le \frac{\|v\|_2\,\|b\|_2}{h-q}.
+$$
+
+A certificate can work with an enclosure matrix $\widetilde W$ on the
+same Fourier basis. If $\|\widetilde W-W\|_{\rm op}\le e$,
+$\widetilde H\ge\widetilde h I$, $\widetilde q\le\widetilde q_+$ and
+$\|\widetilde b\|\le\widetilde b_+$, the transported bounds are
+$h=\widetilde h-e$, $q\le\widetilde q_++e$, and
+$\|b\|\le\widetilde b_++e$. These follow by compressing the error and
+applying it to the same unit $u$. The resulting denominator is at least
+$\widetilde h-\widetilde q_+-2e$. A certified strictly positive
+denominator gives even simplicity and a residual budget from the
+same finite data. Any error in representing $u$ must enter the
+certified bounds. This argument allows a negative ground eigenvalue.
+For $W=\operatorname{diag}(-1,1)$ with respective even and odd
+coordinates and $u=(1,0)$, it gives $q=-1$, $h=1$ and zero leakage.
+When $h=q$, the repeated-eigenvalue example $W=I$ shows that the
+non-strict condition alone cannot certify simplicity.
 
 ## Remaining supplier and evidence
 
@@ -191,7 +232,9 @@ Issue #124 still needs even simplicity on a cofinal sequence and a
 quantitative ground-state approximation for the **original** Galerkin
 Weil form. Section 8 of CCM identifies the corresponding two open inputs.
 The finite residual criterion above permits a shift $t_0$ without a
-positivity premise on $W$. A fixed-window input at the operator level is
+positivity premise on $W$. The joint task is to bound the compression
+to $u^\perp$ and the off-diagonal norm at scales and dimensions where the
+weighted bound and Fourier tail vanish. A fixed-window input is
 Zhu's Theorem 6.2, with log support $[-0.8,0.8]$, corresponding to
 $\lambda=e^{0.8}$ here. It supplies a simple even minimum for that window.
 Connes–van Suijlekom's Theorem 6.1 can consume this kind of simple isolated
