@@ -120,3 +120,21 @@ above. The audit found only `propext`, `Classical.choice` and
 `50b892b0c9a87842f26995c5094a1dc11cccfd0c5ea151e9e548a93233ddeb08`.
 Full fresh dependency replay, independent review and HS runtime
 correspondence are `NOT_RUN`.
+
+## Arbitrarily long rejection blocks
+
+For each prescribed finite length, `logSquareAllowance_eventually_ge`
+gives a cutoff after which the gap allowance is at least that length.
+Indeed, it is enough to exceed the maximum of the length and the
+exponential of its square root. Combining this eventual estimate
+with the existing cofinal block theorem gives
+`cryptids_halts_iff_arbitrarily_long_square_rejections`. Under native
+halting, all slots reject throughout some block of the requested
+length past any prescribed cutoff. Conversely the length-one block
+already supplies a native counterexample. Thus a sound checker that
+reports a safe slot somewhere in every fixed-length square-index
+interval on a tail satisfies the certificate premise of
+`cryptids_RH_of_fixed_square_block_certificates`. The existence of
+these reports and their binding to the current arithmetic stage
+remain explicit hypotheses. Verification is recorded in
+[issue #1820](https://github.com/grwtsk/math/issues/1820).

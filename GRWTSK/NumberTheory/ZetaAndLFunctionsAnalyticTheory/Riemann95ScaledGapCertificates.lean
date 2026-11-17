@@ -621,4 +621,62 @@ theorem backward_step_schedule_control :
     have hr : ((schedule (k + 1) - schedule k : ℕ) : ℝ) ≤ 2 := by exact_mod_cast h
     linarith
 
+/-- The allowance stays above every fixed requested block length once
+the square index is large enough. -/
+theorem logSquareAllowance_eventually_ge (length : ℕ) :
+    ∃ cutoff, ∀ k ≥ cutoff, length ≤ logSquareAllowance k := by
+  obtain ⟨cutoff, hk⟩ := exists_nat_gt
+    (max (length : ℝ) (Real.exp (Real.sqrt length)))
+  refine ⟨cutoff, fun k later => ?_⟩
+  have larger : (cutoff : ℝ) ≤ k := by exact_mod_cast later
+  have enough : (max (length : ℝ) (Real.exp (Real.sqrt length))) ≤ k := hk.le.trans larger
+  have hExp : Real.exp (Real.sqrt length) ≤ (k + 1 : ℕ) := by
+    exact (le_max_right _ _).trans (enough.trans (by push_cast; linarith))
+  have hLog := Real.log_le_log (Real.exp_pos _) hExp
+  rw [Real.log_exp] at hLog
+  have square := pow_le_pow_left₀ (Real.sqrt_nonneg (length : ℝ)) hLog 2
+  rw [Real.sq_sqrt (by positivity : (0 : ℝ) ≤ length)] at square
+  exact le_min (by exact_mod_cast (le_max_left _ _).trans enough)
+    ((Nat.le_floor_iff (by positivity)).2 square)
+
+/-- Original native halting is equivalent to finding fully rejected
+square blocks of every requested finite length past every cutoff. -/
+theorem cryptids_halts_iff_arbitrarily_long_square_rejections :
+    Halts Riemann95.candidate ↔
+      ∀ start length : ℕ, ∃ k ≥ start, ∀ j < length,
+        ∀ slot : Fin 95, slotAccepts ((k + j) ^ 2) slot = false := by
+  constructor
+  · intro halts start length
+    obtain ⟨cutoff, large⟩ := logSquareAllowance_eventually_ge length
+    obtain ⟨k, late, rejected⟩ :=
+      cryptids_halts_iff_cofinal_log_square_rejection_blocks.mp halts (max start cutoff)
+    exact ⟨k, (le_max_left _ _).trans late, fun j hj =>
+      rejected j (hj.le.trans (large k ((le_max_right _ _).trans late)))⟩
+  · intro blocks
+    obtain ⟨k, _, rejected⟩ := blocks 0 1
+    rw [Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis]
+    intro rh
+    have good := (window_accepts_iff_all_slots_accept ((k + 0) ^ 2)).mp
+      (all_windows_accept_iff_cryptids_RH.mpr rh _) 0
+    rw [rejected 0 (by decide) 0] at good
+    cases good
+
+/-- For any fixed positive block length, one sound safe-slot certificate
+per block of consecutive square indices suffices. An implementation may
+omit every other report in the block. -/
+theorem cryptids_RH_of_fixed_square_block_certificates {Certificate : Type*}
+    (check : ℕ → Fin 95 → Certificate → Bool)
+    (sound : ∀ w slot c, check w slot c = true →
+      ¬ ShuniaCounterexample (stageArgument (stageOrdinal w slot)))
+    (start length : ℕ)
+    (covered : ∀ k ≥ start, ∃ j < length, ∃ (slot : Fin 95) (c : Certificate),
+      check ((k + j) ^ 2) slot c = true) : RiemannHypothesis := by
+  by_contra notRH
+  have halts := Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr notRH
+  obtain ⟨k, late, rejected⟩ := cryptids_halts_iff_arbitrarily_long_square_rejections.mp halts start length
+  obtain ⟨j, hj, slot, c, verified⟩ := covered k late
+  have good := (slotAccepts_iff_safe _ _).mpr (sound _ _ c verified)
+  rw [rejected j hj slot] at good
+  cases good
+
 end GRWTSK.NumberTheory.Riemann95StageCertificates
