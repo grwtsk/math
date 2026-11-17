@@ -437,14 +437,14 @@ theorem cryptids_halts_iff_cofinal_log_square_rejection_blocks :
     cases haccept
 
 
-/-- A forward delay of order k log²(k+1) from each quadratic window
-preserves the original one-slot coverage criterion. The delayed window
-need not be a square. -/
-theorem delayed_square_slot_accepts_iff_cryptids_RH
-    (start : ℕ) (delay : ℕ → ℕ) (slot : Fin 95)
+/-- Each square starts a band of candidate windows. The accepted window
+and its slot may both vary with the square index. -/
+theorem square_band_slot_accepts_iff_cryptids_RH
+    (start : ℕ) (delay : ℕ → ℕ)
     {C : ℝ} (hC : 0 ≤ C)
     (bound : ∀ k ≥ start, (delay k : ℝ) ≤ C * k * Real.log (k + 1 : ℕ) ^ 2) :
-    (∀ k ≥ start, slotAccepts (k ^ 2 + delay k) slot = true) ↔ RiemannHypothesis := by
+    (∀ k ≥ start, ∃ d ≤ delay k, ∃ slot : Fin 95,
+      slotAccepts (k ^ 2 + d) slot = true) ↔ RiemannHypothesis := by
   constructor
   · intro safe
     let first := max 4 (start ^ 2)
@@ -492,16 +492,47 @@ theorem delayed_square_slot_accepts_iff_cryptids_RH
       (C := 2 + 2 * C) (by positivity) range).mp
     intro w hw
     let k := Nat.sqrt w + 1
-    have addr : w + gap w = k ^ 2 + delay k := by
-      have next : w < k ^ 2 := Nat.lt_succ_sqrt' w
-      change w + (k ^ 2 + delay k - w) = _
-      omega
-    refine ⟨gap w, le_rfl, slot, ?_⟩
-    rw [addr]
-    exact fun bad => (slotAccepts_iff_safe _ _).mp (safe k (start_le w hw))
+    obtain ⟨d, within, slot, accepted⟩ := safe k (start_le w hw)
+    have next : w ≤ k ^ 2 := (Nat.lt_succ_sqrt' w).le
+    have before : w ≤ k ^ 2 + d := next.trans (Nat.le_add_right _ _)
+    have fits : k ^ 2 + d - w ≤ gap w :=
+      Nat.sub_le_sub_right (Nat.add_le_add_left within _) _
+    refine ⟨k ^ 2 + d - w, fits, slot, ?_⟩
+    rw [Nat.add_sub_of_le before]
+    exact fun bad => (slotAccepts_iff_safe _ _).mp accepted
       ((counterexample_iff_cryptids _).mp bad)
   · intro rh k _
+    refine ⟨0, Nat.zero_le _, 0, ?_⟩
     exact (window_accepts_iff_all_slots_accept _).mp (all_windows_accept_iff_cryptids_RH.mpr rh _) _
+
+/-- A forward delay of order k log²(k+1) from each quadratic window
+preserves the original one-slot coverage criterion. The delayed window
+need not be a square. -/
+theorem delayed_square_slot_accepts_iff_cryptids_RH
+    (start : ℕ) (delay : ℕ → ℕ) (slot : Fin 95)
+    {C : ℝ} (hC : 0 ≤ C)
+    (bound : ∀ k ≥ start, (delay k : ℝ) ≤ C * k * Real.log (k + 1 : ℕ) ^ 2) :
+    (∀ k ≥ start, slotAccepts (k ^ 2 + delay k) slot = true) ↔ RiemannHypothesis := by
+  constructor
+  · intro safe
+    exact (square_band_slot_accepts_iff_cryptids_RH start delay hC bound).mp
+      (fun k hk => ⟨delay k, le_rfl, slot, safe k hk⟩)
+  · intro rh k _
+    exact (window_accepts_iff_all_slots_accept _).mp (all_windows_accept_iff_cryptids_RH.mpr rh _) _
+
+/-- Sound checked receipts may select any window and slot in each band. -/
+theorem cryptids_RH_of_square_band_certificates {Certificate : Type*}
+    (check : ℕ → Fin 95 → Certificate → Bool)
+    (sound : ∀ w slot c, check w slot c = true →
+      ¬ ShuniaCounterexample (stageArgument (stageOrdinal w slot)))
+    (start : ℕ) (delay : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    (bound : ∀ k ≥ start, (delay k : ℝ) ≤ C * k * Real.log (k + 1 : ℕ) ^ 2)
+    (cover : ∀ k ≥ start, ∃ d ≤ delay k, ∃ (slot : Fin 95) (c : Certificate),
+      check (k ^ 2 + d) slot c = true) : RiemannHypothesis := by
+  apply (square_band_slot_accepts_iff_cryptids_RH start delay hC bound).mp
+  intro k hk
+  obtain ⟨d, within, slot, c, verified⟩ := cover k hk
+  exact ⟨d, within, slot, (slotAccepts_iff_safe _ _).mpr (sound _ _ c verified)⟩
 
 /-- The delayed schedule k²+k avoids the square schedule at every
 positive index, while retaining the same RH equivalence on any tail
