@@ -1129,4 +1129,50 @@ theorem tendsto_normalized_heatMaskDeviation_add_residual_iff_source_mean
     field_simp
   · exact tendsto_normalized_heatMaskDeviation_add_residual_of_source_mean hs hl
 
+private theorem pickup_mean_sq_le_energy_div {T : ℝ} (hT : 0 < T) :
+    ((∫ u in (0 : ℝ)..T, wholePickup u) / T) ^ 2 ≤ pickupEnergy T / T := by
+  let I := ∫ u in (0 : ℝ)..T, wholePickup u
+  have hnonneg : 0 ≤ ∫ u in (0 : ℝ)..T, (wholePickup u - I / T) ^ 2 :=
+    intervalIntegral.integral_nonneg_of_forall hT.le (fun _ => sq_nonneg _)
+  rw [centeredPickup_expand] at hnonneg
+  change 0 ≤ pickupEnergy T - 2 * (I / T) * I + (I / T) ^ 2 * T at hnonneg
+  have heq : pickupEnergy T - 2 * (I / T) * I + (I / T) ^ 2 * T =
+      pickupEnergy T - (I / T) ^ 2 * T := by
+    field_simp
+    ring
+  rw [heq] at hnonneg
+  exact (le_div_iff₀ hT).mpr (sub_nonneg.mp hnonneg)
+
+/-- A limiting source mean puts a sharp ceiling on the normalized signed
+mask deviation relative to the original diagonal. -/
+theorem eventually_heatMaskDeviation_sub_diagonal_div_le_of_source_mean
+    {s m : ℝ} (hs : 0 < s) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hmean : Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, wholePickup u) / T) l (𝓝 m))
+    {ε : ℝ} (hε : 0 < ε) :
+    ∀ᶠ T in l, (weightedPickupDeviation T Finset.univ (heatMaskWeight s T) (heatMaskCoeff T) -
+      pickupDiagonal T) / T ≤ settledHeatedPickup s - m ^ 2 + ε := by
+  have hsum := (tendsto_normalized_heatMaskDeviation_sub_diagonal_add_energy hs).mono_left hl
+  have hlim := hsum.sub (hmean.pow 2)
+  have hhigh := (tendsto_order.mp hlim).2 (settledHeatedPickup s - m ^ 2 + ε) (by linarith)
+  filter_upwards [hhigh, (eventually_gt_atTop (0 : ℝ)).filter_mono hl] with T hhigh hT
+  rw [add_div] at hhigh
+  linarith [pickup_mean_sq_le_energy_div hT]
+
+/-- Any supplied linear residual allowance must pay at least the squared
+difference between the limiting source mean and the settled heated wave. -/
+theorem sq_source_mean_sub_heatedLimit_le_residual_allowance
+    {s m A : ℝ} (hs : 0 < s) {l : Filter ℝ} [NeBot l] (hl : l ≤ atTop)
+    (hmean : Tendsto (fun T : ℝ => (∫ u in (0 : ℝ)..T, wholePickup u) / T) l (𝓝 m))
+    (hbudget : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ A + ε) :
+    (m - heatedLimit s) ^ 2 ≤ A := by
+  by_contra! hbad
+  let ε := ((m - heatedLimit s) ^ 2 - A) / 3
+  have hε : 0 < ε := by dsimp [ε]; linarith
+  have hlow := (residualEnergy_linear_budget_iff_heatMaskDeviation_of_source_mean hs hl hmean).mp
+    hbudget ε hε
+  have hhigh := eventually_heatMaskDeviation_sub_diagonal_div_le_of_source_mean hs hl hmean hε
+  obtain ⟨T, htlow, hthigh⟩ := (hlow.and hhigh).exists
+  dsimp [ε] at htlow hthigh
+  nlinarith
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupHeatComparison
