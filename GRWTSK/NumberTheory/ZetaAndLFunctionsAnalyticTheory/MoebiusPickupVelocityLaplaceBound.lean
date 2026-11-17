@@ -2,6 +2,7 @@
 import GRWTSK.GeneralTopology.PrimitiveRegularity
 import GRWTSK.MeasureAndIntegration.LaplaceCumulativeSquareBound
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+import Mathlib.MeasureTheory.Integral.ExpDecay
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -96,5 +97,41 @@ theorem dampedPickupVelocity_memLp_two_of_weakMertens {B σ : ℝ}
     · simp [dampedPickupVelocity, indicator_of_notMem hu]
   rw [hEq, integrable_indicator_iff measurableSet_Ioi]
   exact (weightedPickupVelocitySquare_le_of_weakMertens hB hσ hM).1
+
+/-- Weak Mertens also gives absolute integrability of the damped velocity.
+Splitting the damping equally allows the product of two (L^2) factors. -/
+theorem dampedPickupVelocity_integrable_of_weakMertens {B σ : ℝ}
+    (hB : 0 ≤ B) (hσ : 0 < σ)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X) :
+    Integrable (dampedPickupVelocity σ) volume := by
+  let w (u : ℝ) : ℂ := (Ioi (0 : ℝ)).indicator
+    (fun t => (Real.exp (-(σ / 2) * t) : ℂ)) u
+  have hw_meas : Measurable w := by
+    apply Measurable.indicator _ measurableSet_Ioi
+    exact Complex.continuous_ofReal.measurable.comp (by fun_prop)
+  have he (u : ℝ) : Real.exp (-(σ / 2) * u) ^ 2 = Real.exp (-σ * u) := by
+    rw [pow_two, ← Real.exp_add]
+    congr 1
+    ring
+  have hw : MemLp w 2 volume := by
+    apply (memLp_two_iff_integrable_sq_norm hw_meas.aestronglyMeasurable).2
+    have hEq : (fun u => ‖w u‖ ^ 2) =
+        (Ioi (0 : ℝ)).indicator (fun u => Real.exp (-σ * u)) := by
+      funext u
+      by_cases hu : u ∈ Ioi (0 : ℝ)
+      · simp only [w, indicator_of_mem hu, Complex.norm_real, Real.norm_eq_abs,
+          abs_of_pos (Real.exp_pos _), he]
+      · simp [w, indicator_of_notMem hu]
+    rw [hEq, integrable_indicator_iff measurableSet_Ioi]
+    simpa only [neg_mul] using exp_neg_integrableOn_Ioi 0 hσ
+  have hv := dampedPickupVelocity_memLp_two_of_weakMertens hB (half_pos hσ) hM
+  have hEq : w * dampedPickupVelocity (σ / 2) = dampedPickupVelocity σ := by
+    funext u
+    by_cases hu : u ∈ Ioi (0 : ℝ)
+    · simp only [Pi.mul_apply, w, dampedPickupVelocity, indicator_of_mem hu]
+      rw [← Complex.ofReal_mul, ← mul_assoc, ← pow_two, he]
+    · simp [w, dampedPickupVelocity, indicator_of_notMem hu]
+  rw [← hEq]
+  exact hw.integrable_mul hv
 
 end GRWTSK.NumberTheory.Moebius
