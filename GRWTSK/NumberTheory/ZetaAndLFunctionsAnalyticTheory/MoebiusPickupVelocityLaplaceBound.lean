@@ -3,6 +3,7 @@ import GRWTSK.GeneralTopology.PrimitiveRegularity
 import GRWTSK.MeasureAndIntegration.LaplaceCumulativeSquareBound
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 import Mathlib.MeasureTheory.Integral.ExpDecay
+import Mathlib.Analysis.Fourier.FourierTransform
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -133,5 +134,24 @@ theorem dampedPickupVelocity_integrable_of_weakMertens {B σ : ℝ}
     · simp [w, dampedPickupVelocity, indicator_of_notMem hu]
   rw [← hEq]
   exact hw.integrable_mul hv
+
+open scoped FourierTransform
+
+/-- Mathlib's real Fourier frequency `ξ` corresponds to imaginary Laplace
+coordinate `2 * π * ξ` for the exact damped velocity. -/
+theorem fourier_dampedPickupVelocity_eq_signedLaplace (σ ξ : ℝ) :
+    𝓕 (dampedPickupVelocity σ) ξ =
+      signedLaplace pickupVelocity ((σ : ℂ) + (2 * Real.pi * ξ : ℝ) * Complex.I) := by
+  rw [Real.fourier_real_eq_integral_exp_smul, signedLaplace, ← integral_indicator measurableSet_Ioi]
+  congr 1
+  funext u
+  by_cases hu : u ∈ Ioi (0 : ℝ)
+  · simp only [dampedPickupVelocity, indicator_of_mem hu, smul_eq_mul,
+      Complex.ofReal_mul, Complex.ofReal_exp]
+    rw [← mul_assoc, ← Complex.exp_add]
+    congr 2
+    push_cast
+    ring
+  · simp [dampedPickupVelocity, indicator_of_notMem hu]
 
 end GRWTSK.NumberTheory.Moebius
