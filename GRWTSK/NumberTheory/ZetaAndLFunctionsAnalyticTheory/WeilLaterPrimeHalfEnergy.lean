@@ -250,4 +250,108 @@ theorem abs_firstOnly_error_le_overlapEnergy (χ : DirichletCharacter ℂ q) (A 
   exact (abs_sub _ _).trans (add_le_add (abs_primeReadout_sub_le _ _ _)
     (abs_later_readout_le_overlapEnergy A χ⁻¹ hf support))
 
+
+/-- The two overlap masses enter through their geometric mean. -/
+def overlapGeometric (A r : ℝ) (f : ℝ → ℂ) : ℝ :=
+  Real.sqrt (∫ t in Icc (-A) (A - r), ‖f t‖ ^ 2) *
+    Real.sqrt (∫ t in Icc (-A + r) A, ‖f t‖ ^ 2)
+
+/-- Cauchy–Schwarz on the two restricted source norms, after translating
+the second norm without changing its Lebesgue mass. -/
+theorem norm_correlation_le_overlapGeometric (A r : ℝ)
+    {f : ℝ → ℂ} (hf : MemLp f 2 volume) (support : tsupport f ⊆ Icc (-A) A) :
+    ‖correlation f r‖ ≤ overlapGeometric A r f := by
+  let left := (Icc (-A) (A - r)).indicator (fun t => ‖f t‖)
+  let right := (Icc (-A + r) A).indicator (fun t => ‖f t‖)
+  have hleft : MemLp left 2 volume := hf.norm.indicator measurableSet_Icc
+  have hright : MemLp right 2 volume := hf.norm.indicator measurableSet_Icc
+  have ht : MemLp (fun t => right (t + r)) 2 volume :=
+    hright.comp_measurePreserving (measurePreserving_add_right volume r)
+  have point (t : ℝ) :
+      ‖star (f t) * f (t + r)‖ = left t * right (t + r) := by
+    by_cases zero : f t = 0 ∨ f (t + r) = 0
+    · rcases zero with zero | zero
+      · by_cases h : t ∈ Icc (-A) (A - r) <;> simp [left, zero, h]
+      · by_cases h : t + r ∈ Icc (-A + r) A <;> simp [right, zero, h]
+    · push Not at zero
+      have source := support (subset_tsupport _ zero.1)
+      have target := support (subset_tsupport _ zero.2)
+      have a : t ∈ Icc (-A) (A - r) := ⟨source.1, by linarith [target.2]⟩
+      have b : t + r ∈ Icc (-A + r) A := ⟨by linarith [source.1], target.2⟩
+      simp only [left, right, indicator_of_mem a, indicator_of_mem b, norm_mul, norm_star]
+  have bound := integral_mul_le_Lp_mul_Lq_of_nonneg Real.HolderConjugate.two_two
+    (Filter.Eventually.of_forall fun t => indicator_nonneg (fun _ _ => norm_nonneg _) t)
+    (Filter.Eventually.of_forall fun t => indicator_nonneg (fun _ _ => norm_nonneg _) (t + r))
+    (by simpa using hleft) (by simpa using ht)
+  change (∫ t : ℝ, left t * right (t + r)) ≤ _ at bound
+  have squares (s : Set ℝ) (t : ℝ) :
+      (s.indicator (fun u => ‖f u‖) t) ^ 2 = s.indicator (fun u => ‖f u‖ ^ 2) t := by
+    by_cases h : t ∈ s <;> simp [h]
+  calc
+    _ ≤ ∫ t : ℝ, ‖star (f t) * f (t + r)‖ := norm_integral_le_integral_norm _
+    _ = ∫ t : ℝ, left t * right (t + r) := integral_congr_ae (Filter.Eventually.of_forall point)
+    _ ≤ _ := by
+      rw [integral_add_right_eq_self (fun t => right t ^ (2 : ℝ)) r] at bound
+      simp_rw [Real.rpow_two, left, right, squares, integral_indicator measurableSet_Icc,
+        ← Real.sqrt_eq_rpow] at bound
+      exact bound
+
+/-- The geometric allowance always improves or matches the previous half-sum. -/
+theorem overlapGeometric_le_half_overlapEnergy (A r : ℝ) (f : ℝ → ℂ) :
+    overlapGeometric A r f ≤ overlapEnergy A r f / 2 := by
+  let a := ∫ t in Icc (-A) (A - r), ‖f t‖ ^ 2
+  let b := ∫ t in Icc (-A + r) A, ‖f t‖ ^ 2
+  have ha : 0 ≤ a := integral_nonneg fun _ => sq_nonneg _
+  have hb : 0 ≤ b := integral_nonneg fun _ => sq_nonneg _
+  change Real.sqrt a * Real.sqrt b ≤ (a + b) / 2
+  nlinarith [Real.sq_sqrt ha, Real.sq_sqrt hb, sq_nonneg (Real.sqrt a - Real.sqrt b)]
+
+/-- An empty destination overlap in L² eliminates the actual correlation,
+even if the retained source overlap has positive energy. -/
+theorem correlation_eq_zero_of_right_overlap_zero (A r : ℝ)
+    {f : ℝ → ℂ} (hf : MemLp f 2 volume) (support : tsupport f ⊆ Icc (-A) A)
+    (zero : (∫ t in Icc (-A + r) A, ‖f t‖ ^ 2) = 0) :
+    correlation f r = 0 := by
+  apply norm_le_zero_iff.mp
+  simpa [overlapGeometric, zero] using norm_correlation_le_overlapGeometric A r hf support
+
+/-- Radius-sensitive omission budget with the original character norm
+and the two source overlap intervals for each later prime power. -/
+theorem abs_later_readout_le_overlapGeometric (A : ℝ) (χ : DirichletCharacter ℂ q)
+    {f : ℝ → ℂ} (hf : MemLp f 2 volume) (support : tsupport f ⊆ Icc (-A) A) :
+    |primeReadout (laterPowers A) (primeAtom χ (fun n => correlation f (Real.log n)))| ≤
+      2 * ∑ n ∈ laterPowers A, (primeWeight n * ‖χ n‖) * overlapGeometric A (Real.log n) f := by
+  unfold primeReadout
+  rw [abs_mul, abs_of_nonneg (by norm_num : (0 : ℝ) ≤ 2)]
+  calc
+    _ ≤ 2 * ∑ n ∈ laterPowers A, |(primeAtom χ (fun n => correlation f (Real.log n)) n).re| :=
+      mul_le_mul_of_nonneg_left (Finset.abs_sum_le_sum_abs _ _) (by norm_num)
+    _ ≤ 2 * ∑ n ∈ laterPowers A, (primeWeight n * ‖χ n‖) *
+        (overlapGeometric A (Real.log n) f) := by
+      apply mul_le_mul_of_nonneg_left _ (by norm_num)
+      apply Finset.sum_le_sum
+      intro n hn
+      calc
+        _ ≤ ‖primeAtom χ (fun n => correlation f (Real.log n)) n‖ := Complex.abs_re_le_norm _
+        _ = (primeWeight n * ‖χ n‖) * ‖correlation f (Real.log n)‖ := by
+          rw [primeAtom, norm_mul, Complex.norm_real, Real.norm_eq_abs,
+            abs_of_nonneg (primeWeight_nonneg _), norm_mul, Complex.norm_conj, mul_assoc]
+        _ ≤ _ := mul_le_mul_of_nonneg_left
+          (norm_correlation_le_overlapGeometric A _ hf support)
+          (mul_nonneg (primeWeight_nonneg _) (norm_nonneg _))
+
+/-- The first-only residual keeps the signed inverse-character atom and
+charges later powers by their individually supported overlaps. -/
+theorem abs_firstOnly_error_le_overlapGeometric (χ : DirichletCharacter ℂ q) (A : ℝ)
+    {f : ℝ → ℂ} (hf : MemLp f 2 volume) (support : tsupport f ⊆ Icc (-A) A)
+    (observed : ℕ → ℂ) :
+    let a := primeAtom χ⁻¹ (fun n => correlation f (Real.log (n : ℝ)))
+    |primeReadout (firstPowers A) observed - signedWindowValue χ A f -
+      primeReadout (laterPowers A) a| ≤
+      2 * (∑ n ∈ firstPowers A, ‖observed n - a n‖) +
+      2 * ∑ n ∈ laterPowers A, (primeWeight n * ‖(χ⁻¹) n‖) * overlapGeometric A (Real.log n) f := by
+  intro a
+  exact (abs_sub _ _).trans (add_le_add (abs_primeReadout_sub_le _ _ _)
+    (abs_later_readout_le_overlapGeometric A χ⁻¹ hf support))
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
