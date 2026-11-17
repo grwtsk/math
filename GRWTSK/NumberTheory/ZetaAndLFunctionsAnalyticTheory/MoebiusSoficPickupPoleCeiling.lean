@@ -254,4 +254,48 @@ theorem abs_settled_gap_le_sqrt_sub_poleSeries_add_sqrt_sub_poleSeries
   filter_upwards [(self_mem_nhdsWithin : Ioi (0 : ℝ) ∈ 𝓝[>] (0 : ℝ))] with δ hδ
   exact hslack δ hδ
 
+/-- Equality in the weighted pole obstruction pins the original measured
+variance to the full pole cost and the mean to the weighted settled heat. -/
+theorem tendsto_pickup_variance_at_weighted_pole_saturation
+    {s t A Aₛ Aₜ w : ℝ} (hs : 0 < s) (ht : 0 < t)
+    (hζ : riemannZeta (1 / 2 : ℂ) ≠ 0) (hA : 0 ≤ A)
+    {G : Set ℝ} {U : ℝ → ℝ} (hG : AffineFrequent G)
+    (hmajorant : ∀ᶠ T in atTop ⊓ 𝓟 G, residualEnergy s T ≤ U T)
+    (hbudget : ∀ ε : ℝ, 0 < ε →
+      ∀ᶠ T in atTop ⊓ 𝓟 G, U T ≤ (A + ε) * T)
+    (hw₀ : 0 ≤ w) (hw₁ : w ≤ 1) {l : Filter ℝ} (hl : l ≤ atTop)
+    (hₛ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy s T / T ≤ Aₛ + ε)
+    (hₜ : ∀ ε : ℝ, 0 < ε → ∀ᶠ T in l, residualEnergy t T / T ≤ Aₜ + ε)
+    (heq : w * Aₛ + (1 - w) * Aₜ - w * (1 - w) * (heatedLimit s - heatedLimit t) ^ 2 =
+      2 * (∑' ρ, positiveCriticalPoleSquare ρ)) :
+    Tendsto pickupHorizonVariance l (𝓝 (2 * (∑' ρ, positiveCriticalPoleSquare ρ))) ∧
+      Tendsto pickupHorizonMean l (𝓝 (w * heatedLimit s + (1 - w) * heatedLimit t)) := by
+  let S := 2 * (∑' ρ, positiveCriticalPoleSquare ρ)
+  let m := w * heatedLimit s + (1 - w) * heatedLimit t
+  have hfloor {δ : ℝ} (hδ : 0 < δ) : ∀ᶠ T in l, S - δ ≤ pickupHorizonVariance T :=
+    (eventually_pickup_variance_ge_poleSeries hs hζ hA hG hmajorant hbudget hδ).filter_mono hl
+  have hceil {δ : ℝ} (hδ : 0 < δ) :
+      ∀ᶠ T in l, pickupHorizonVariance T + (pickupHorizonMean T - m) ^ 2 ≤ S + δ := by
+    have h := eventually_variance_add_weighted_cost_le_of_two_residual_allowances
+      hs ht hw₀ hw₁ hl hₛ hₜ hδ
+    rw [heq] at h
+    exact h
+  constructor
+  · apply tendsto_order.mpr
+    constructor
+    · intro b hb
+      filter_upwards [hfloor (show 0 < (S - b) / 2 by linarith)] with T hT
+      linarith
+    · intro b hb
+      filter_upwards [hceil (show 0 < (b - S) / 2 by linarith)] with T hT
+      linarith [sq_nonneg (pickupHorizonMean T - m)]
+  · apply Metric.tendsto_nhds.mpr
+    intro ε hε
+    have hδ : 0 < ε ^ 2 / 4 := by positivity
+    filter_upwards [hfloor hδ, hceil hδ] with T h₁ h₂
+    rw [Real.dist_eq]
+    have hsq : (pickupHorizonMean T - m) ^ 2 < ε ^ 2 := by
+      linarith [sq_pos_of_pos hε]
+    simpa only [abs_of_pos hε] using (sq_lt_sq.mp hsq)
+
 end GRWTSK.NumberTheory.Moebius.MoebiusSoficPickupPoleCeiling
