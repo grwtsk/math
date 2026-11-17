@@ -206,4 +206,62 @@ theorem first_window_real_pairs_eq_iff_inverse_orbit [NeZero q] (small : q ≤ 5
           (characterObservation χ⁻¹ 0 i * characterObservation χ⁻¹ 0 j).re
         rw [characterObservation_dual, characterObservation_dual, ← map_mul, Complex.conj_re]
 
+
+/-- A single nonreal anchor row replaces all pair products. No square
+sample is needed, since a character's modulus is fixed by unit status
+at the given level. If all slots are real, no product samples are needed. -/
+theorem first_window_anchor_eq_iff_inverse_orbit [NeZero q] (small : q ≤ 503)
+    (χ ψ : DirichletCharacter ℂ q) :
+    ((∀ i, (characterObservation χ 0 i).re = (characterObservation ψ 0 i).re) ∧
+      ((∀ i, (characterObservation χ 0 i).im = 0) ∨
+        ∃ a, (characterObservation χ 0 a).im ≠ 0 ∧
+          ∀ i, i ≠ a → (χ (primeAt 0 i * primeAt 0 a : ℕ)).re =
+            (ψ (primeAt 0 i * primeAt 0 a : ℕ)).re)) ↔ ψ = χ ∨ ψ = χ⁻¹ := by
+  let x := characterObservation χ 0
+  let y := characterObservation ψ 0
+  constructor
+  · rintro ⟨real, info⟩
+    have modulus (i : Position) : ‖x i‖ = ‖y i‖ := by
+      change ‖χ (primeAt 0 i : ZMod q)‖ = ‖ψ (primeAt 0 i : ZMod q)‖
+      by_cases unit : IsUnit (primeAt 0 i : ZMod q)
+      · exact (χ.unit_norm_eq_one unit.unit).trans (ψ.unit_norm_eq_one unit.unit).symm
+      · rw [χ.map_nonunit unit, ψ.map_nonunit unit]
+    have squares (i : Position) : (x i).im ^ 2 = (y i).im ^ 2 := by
+      rw [← Complex.sq_norm_sub_sq_re, ← Complex.sq_norm_sub_sq_re, modulus i, real i]
+    have gram : ∀ i j : Position, (x i).im * (x j).im = (y i).im * (y j).im := by
+      rcases info with allReal | ⟨a, anchor, products⟩
+      · have yReal (i : Position) : (y i).im = 0 := by
+          have sq := squares i
+          rw [allReal i, zero_pow (by decide : (2 : ℕ) ≠ 0)] at sq
+          exact (mul_eq_zero.mp (by simpa only [pow_two] using sq.symm)).elim id id
+        intro i j
+        simp [show (x i).im = 0 from allReal i, yReal i]
+      · have row (i : Position) : (x i).im * (x a).im = (y i).im * (y a).im := by
+          by_cases same : i = a
+          · subst i
+            simpa only [pow_two] using squares a
+          · have h : (x i * x a).re = (y i * y a).re := by
+              simpa only [x, y, Nat.cast_mul, map_mul, characterObservation, observe] using products i same
+            rw [Complex.mul_re, Complex.mul_re, real i, real a] at h
+            linarith
+        intro i j
+        apply mul_right_cancel₀ (pow_ne_zero 2 anchor)
+        calc
+          _ = ((x i).im * (x a).im) * ((x j).im * (x a).im) := by ring
+          _ = ((y i).im * (y a).im) * ((y j).im * (y a).im) := by rw [row i, row j]
+          _ = (y i).im * (y j).im * (y a).im ^ 2 := by ring
+          _ = _ := by rw [squares a]
+    apply (first_window_real_pairs_eq_iff_inverse_orbit small χ ψ).mp
+    refine ⟨real, fun i j => ?_⟩
+    simp only [Nat.cast_mul, map_mul]
+    change (x i * x j).re = (y i * y j).re
+    rw [Complex.mul_re, Complex.mul_re, real i, real j, gram i j]
+  · intro orbit
+    obtain ⟨real, products⟩ := (first_window_real_pairs_eq_iff_inverse_orbit small χ ψ).mpr orbit
+    refine ⟨real, ?_⟩
+    by_cases nonreal : ∃ a, (x a).im ≠ 0
+    · obtain ⟨a, ha⟩ := nonreal
+      exact Or.inr ⟨a, ha, fun i _ => products i a⟩
+    · exact Or.inl fun i => not_not.mp fun hi => nonreal ⟨i, hi⟩
+
 end GRWTSK.NumberTheory.HS95CharacterCarrier
