@@ -192,7 +192,7 @@ also supplies one on any shorter right corridor.
 | Primitive right-strip exclusion | The ordinary L-function and inverse reflection are fixed by [the existing return](WeilRightStripWitnessReturn.lean). Supply right-strip exclusion for every primitive nonprincipal character, or combine an upper bound with exclusion of the closed-right-edge corridor. The published ceiling refinements below shorten its width. |
 | Primitive negative witness | Supplied by `primitiveNegativeWitness` in the [canonical witness module](WeilPrimitiveCompactOddCanonicalWitness.lean). [Compact odd spectral isolation](../../FunctionsOfAComplexVariable/CompactOddSpectralIsolation.lean) gives negative real part on the [original zero divisor](WeilPrimitiveCompactOddSpectralReturn.lean). The [arithmetic return](WeilPrimitiveCompactOddArithmeticReturn.lean) uses the exact formula and the real-test inverse-character identity to transfer that sign. |
 | Corridor negative witness | Supplied for each real ceiling by `primitiveRightCorridorNegativeWitness` in the [canonical witness module](WeilPrimitiveCompactOddCanonicalWitness.lean). The [corridor consumer](PrimitiveDirichletRightCorridor.lean) still needs exclusion or positivity on its residual domain. |
-| Character-local stages | [Countable density](WeilPrimitiveStageCountableDensity.lean) supplies a fixed-stage dictionary. [Filtered window return](WeilPrimitiveFilteredWindowReturn.lean) specifies the two signed errors and permits characterwise cofinal coverage. The [normalized midpoint bound](WeilNormalizedPrimeWeightMidpoint.lean) combines signed weight errors with normalized correlation-code errors. The [coarse conductor-three candidate](WeilOddThreeCoarse32Certificate.md) concerns exactly stage zero. Supply a cofinal schedule for each inverse orbit with the requisite lower bound and prospective coverage of each required test. |
+| Character-local stages | The [cofinal-stage criterion](WeilPrimitiveCofinalStageCriterion.lean) proves that scheduling either member is equivalent to the critical-line assertion for the original character. It gives a pointwise finite-height supplier with the complete derivative-dependent tail charged. [Countable density](WeilPrimitiveStageCountableDensity.lean) and the [filtered window return](WeilPrimitiveFilteredWindowReturn.lean) remain arithmetic routes. Either route needs bounds through every inverse orbit. |
 | Characterwise cofinal height exclusion | The cofinal-height consumer only requires a schedule for each individual character. It needs exclusions on every whole selected height window, with heights unbounded. Counting zeros in those windows is a different estimate. [Cofinal corridor consumer](PrimitiveDirichletRightCorridor.lean). |
 | Finite conductor and height head | Platt's Theorem 7.1 gives signed-height family coverage after conjugating the character. A formal supplier must identify the exact computed zeros, validated range, simplicity/count semantics where used, and ordinary L-function zero predicate. [Platt, v1](https://arxiv.org/pdf/1305.3087v1). |
 | Residual heights | For bounded conductors above their assigned cutoffs, supply zero exclusion throughout the corridor at arbitrarily large heights. An absolute weighted zero-sum tail, or an asymptotic positive fraction of zeros on the line, can allow an off-line zero. [Native height-tail candidate](WeilSourceHeightTail.lean) · [Anthropic source](https://arxiv.org/abs/2608.13637v2). |
@@ -265,7 +265,58 @@ closure using Lean 4.34.1 and Mathlib
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. Targeted kernel replay
 checked the physical-return and canonical-witness modules. The formula
 and both witnesses depend on `propext`, `Classical.choice` and
-`Quot.sound`. Independent analytic review is **NOT_RUN**.
+`Quot.sound`. At `4370f3f39d610fe6078b5b16f5a58e1e43df5bea`,
+fresh kernel replay of the three declarations checked all 64,630
+declarations reached by their types and proofs. Independent analytic
+review is **NOT_RUN**.
+
+### Finite-height certificates for primitive stages
+
+For a zero on the critical line, the reflected Fourier product in the
+explicit formula reduces to a norm square. Summing the actual analytic
+multiplicities gives nonnegativity for compact smooth real odd tests.
+The real-test inverse-character identity preserves the arithmetic value.
+A negative value on a stage's C² test would persist after smooth odd
+approximation in a support collar, so the conclusion covers the original
+stage domain. In the other direction, cofinal stage bounds make every
+fixed test nonnegative and the compact odd witness excludes an off-line
+zero. Hence one cofinal schedule per inverse orbit is equivalent to the
+primitive nonprincipal critical-line condition.
+
+A finite head can be a set of actual distinct zeros of the original
+character strictly below the chosen absolute height. If its analytic
+multiplicities reach a certified upper bound for the native count, it
+exhausts that head. To apply the bounds below, one may use a signed sum
+over the head or certify that each zero in it is on the critical line.
+Nonnegative-height coverage for both inverse members supplies
+signed-height coverage by functional equation reflection. This is the
+finite scope of Platt's Theorem 7.1. The Lean statements take the
+source-matched certificates as hypotheses.
+[Platt, arXiv:1305.3087v1, Theorem 7.1](https://arxiv.org/pdf/1305.3087v1).
+
+Given a native count bound `Nχ(U) ≤ D U (log U + L)` for `U ≥ 2`, the
+first-order tail error for `2^J ≤ 1 + H` is bounded by
+`4 exp(T) D (L+1) derivativeL1Cost(f,1)^2 (J+2) 2^(-J)`. The upper
+side of Bennett–Martin–O'Bryant–Rechnitzer's Corollary 1.2 gives the
+coarser envelope `D = 1` and `L = log(q) + 4` when the paper's
+closed-height count is matched to the same zeros and multiplicities. The strict-height native count is then bounded
+above by that closed-height count.
+The native all-height count remains available in Lean. For each smooth
+test and each tolerance, a signed head minus its tail budget above the
+negative tolerance suffices. Any fixed tail budget with positive count
+coefficient can exceed any prescribed multiple of the test energy,
+by compressing a smooth odd bump at a fixed radius. Thus bounds for
+finitely many test vectors or one verified height leave cofinal
+coverage open. [Bennett et al., arXiv:2005.02989v1, Corollary 1.2](https://arxiv.org/pdf/2005.02989v1) ·
+[Exact tail and head completeness](WeilSourceHeightTail.lean) ·
+[Cofinal-stage criterion](WeilPrimitiveCofinalStageCriterion.lean).
+
+All 243 GRWTSK modules in the criterion's import closure elaborated at
+the pinned Lean and Mathlib versions above. Targeted kernel replay
+passed for the cofinal-stage and height-tail modules. The transitive
+axiom audit of their main declarations found only `propext`,
+`Classical.choice` and `Quot.sound`. Independent analytic review is
+**NOT_RUN**.
 
 ### Narrower external zero-free ceilings
 

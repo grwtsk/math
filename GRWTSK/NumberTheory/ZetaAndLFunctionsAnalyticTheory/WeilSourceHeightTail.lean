@@ -97,11 +97,74 @@ theorem zeta_hasSum_contour_weight_source_bound
     (sourceCountConstant_nonneg _) (by norm_num) zeta_heightCount_le_source_bound
     f A hA hf hs
 
+/-- A companion to the upper side of Bennett–Martin–O'Bryant–Rechnitzer,
+arXiv:2005.02989v1, Corollary 1.2. A source-matched bound of that shape
+gives an admissible envelope with D = 1 and L = log N + 4. The paper counts
+both signs with a closed height cutoff; the native count is strict. The
+explicit input here is the upper bound for the native multiplicity count. -/
+theorem heightCount_le_logarithmic_of_bennett_upper_bound
+    (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive)
+    (hupper : ∀ U : ℝ, 2 ≤ U →
+      (heightCount chi hprim U : ℝ) ≤ U / Real.pi *
+          Real.log ((N : ℝ) * U / (2 * Real.pi * Real.exp 1)) +
+        (247 / 1000 : ℝ) * Real.log ((N : ℝ) * U) + 6894 / 1000)
+    (U : ℝ) (hU : 2 ≤ U) :
+    (heightCount chi hprim U : ℝ) ≤ U * (Real.log U + (Real.log (N : ℝ) + 4)) := by
+  have hN : (1 : ℝ) ≤ N := by exact_mod_cast Nat.one_le_iff_ne_zero.mpr (NeZero.ne N)
+  have hU0 : 0 ≤ U := by linarith
+  have hNU : (1 : ℝ) ≤ (N : ℝ) * U := by
+    nlinarith [mul_nonneg (sub_nonneg.mpr hN) hU0]
+  have hlog := Real.log_nonneg hNU
+  have hden : 1 ≤ 2 * Real.pi * Real.exp 1 := by
+    have hπ : (1 : ℝ) ≤ 2 * Real.pi := by linarith [Real.pi_gt_three]
+    have he : 1 ≤ Real.exp (1 : ℝ) := Real.one_le_exp_iff.mpr (by norm_num)
+    simpa only [one_mul] using mul_le_mul hπ he (by norm_num) (by positivity : 0 ≤ 2 * Real.pi)
+  have hlogdiv : Real.log ((N : ℝ) * U / (2 * Real.pi * Real.exp 1)) ≤
+      Real.log ((N : ℝ) * U) := by
+    rw [Real.log_div (by positivity) (by positivity)]
+    exact sub_le_self _ (Real.log_nonneg hden)
+  have hscale : U / Real.pi ≤ U / 2 := by
+    exact div_le_div_of_nonneg_left (by linarith) (by norm_num) (by linarith [Real.pi_gt_three])
+  have hmain := (mul_le_mul_of_nonneg_left hlogdiv
+    (div_nonneg (by linarith : 0 ≤ U) Real.pi_pos.le)).trans
+    (mul_le_mul_of_nonneg_right hscale hlog)
+  have herr := mul_le_mul_of_nonneg_right
+    (show (247 / 1000 : ℝ) ≤ U / 4 by linarith) hlog
+  have hlogmul : Real.log ((N : ℝ) * U) = Real.log (N : ℝ) + Real.log U :=
+    Real.log_mul (by positivity) (by positivity)
+  calc
+    _ ≤ U / Real.pi * Real.log ((N : ℝ) * U / (2 * Real.pi * Real.exp 1)) +
+          (247 / 1000 : ℝ) * Real.log ((N : ℝ) * U) + 6894 / 1000 := hupper U hU
+    _ ≤ U * (Real.log ((N : ℝ) * U) + 4) := by
+      linarith [mul_nonneg (by linarith : 0 ≤ U) hlog]
+    _ = _ := by rw [hlogmul]; ring
+
+/-- A finite list of actual distinct zeros exhausts the strict height window
+if its analytic multiplicities meet a certified upper bound for the count. -/
+theorem heightWindow_eq_of_le_sum_zeroMultiplicity
+    (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) (H : ℝ)
+    (S : Finset (CriticalStripZero chi))
+    (hs : ∀ rho ∈ S, |rho.1.im| < H)
+    (hcount : heightCount chi hprim H ≤ ∑ rho ∈ S, zeroMultiplicity chi rho) :
+    heightWindow chi hprim H = S := by
+  classical
+  have hsub : S ⊆ heightWindow chi hprim H :=
+    fun rho hrho => (mem_heightWindow chi hprim H rho).mpr (hs rho hrho)
+  apply Finset.Subset.antisymm _ hsub
+  intro rho hrho
+  by_contra hmiss
+  have hlt : (∑ s ∈ S, zeroMultiplicity chi s) < heightCount chi hprim H :=
+    Finset.sum_lt_sum_of_subset hsub hrho hmiss (zeroMultiplicity_pos chi rho)
+      (fun s _ _ => Nat.zero_le (zeroMultiplicity chi s))
+  exact (not_lt_of_ge hcount) hlt
+
 /-- The entire omitted HEIGHT tail is absolutely summable with an explicit bound
 on its sum of norms. Equality at the height cutoff belongs to the tail. The dyadic
 radial moment is a positive majorant, not the signed sum being estimated. -/
-theorem primitive_height_tail_absolute_bound
+theorem primitive_height_tail_absolute_bound_of_heightCount
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive)
+    {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L)
+    (hcount : ∀ U : ℝ, 2 ≤ U → (heightCount chi hprim U : ℝ) ≤ D * U * (Real.log U + L))
     (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A) (hf : Admissible f)
     (hs : tsupport f ⊆ Icc (-A) A) (k J : ℕ) (hk : 1 ≤ k)
     (H : ℝ) (hJ : (2 : ℝ) ^ J ≤ 1 + H) :
@@ -110,13 +173,11 @@ theorem primitive_height_tail_absolute_bound
       if H ≤ |rho.1.im| then (zeroMultiplicity chi rho : ℂ) * W rho.1 else 0
     Summable (fun rho => ‖v rho‖) ∧
       (∑' rho, ‖v rho‖) ≤ derivativeL1Cost f k ^ 2 *
-        tailBudget A (1 / 2) (8 * sourceCountConstant chi) 1 k J := by
+        tailBudget A (1 / 2) (2 * D * (L + 1)) 1 k J := by
   classical
   intro W
   let m : CriticalStripZero chi → ℝ := fun rho => (zeroMultiplicity chi rho : ℝ)
   let z : CriticalStripZero chi → ℂ := fun rho => spectralCoordinate rho.1
-  let D : ℝ := sourceCountConstant chi
-  have hD : 0 ≤ D := sourceCountConstant_nonneg chi
   have hm (rho : CriticalStripZero chi) : 0 ≤ m rho := Nat.cast_nonneg _
   have hre (rho : CriticalStripZero chi) : (z rho).re = rho.1.im := by
     simp [z, spectralCoordinate, Complex.mul_re, Complex.mul_im]
@@ -124,15 +185,13 @@ theorem primitive_height_tail_absolute_bound
     (spectralCoordinate_radius_bounds_of_strip rho.1 rho.2.2.1.le rho.2.2.2.le).1
   have hheight : ∀ U : ℝ, 2 ≤ U → ∀ S : Finset (CriticalStripZero chi),
       (∀ rho ∈ S, |(z rho).re| < U) →
-      (∑ rho ∈ S, m rho) ≤ D * U * (Real.log U + 3) := by
+      (∑ rho ∈ S, m rho) ≤ D * U * (Real.log U + L) := by
     intro U hU S hS
     exact (heightCount_le_iff chi hprim U _).mp
-      (heightCount_le_source_bound chi hprim U hU) S
+      (hcount U hU) S
       (fun rho hrho => by simpa only [hre] using hS rho hrho)
-  have hd := dyadic_count_of_height_count m z D 3 hD (by norm_num) hheight
-  have hC : 2 * D * ((3 : ℝ) + 1) = 8 * D := by ring
-  rw [hC] at hd
-  have hM := radial_tail_moment m z A (1 / 2) (8 * D) 1 hA (by positivity)
+  have hd := dyadic_count_of_height_count m z D L hD hL hheight
+  have hM := radial_tail_moment m z A (1 / 2) (2 * D * (L + 1)) 1 hA (by positivity)
     (by norm_num) hm hstrip hd k J hk
   let u : CriticalStripZero chi → ℝ := fun rho =>
     if (2 : ℝ) ^ J ≤ 1 + ‖z rho‖ then m rho * decayWeight A k (z rho) ^ 2 else 0
@@ -167,19 +226,39 @@ theorem primitive_height_tail_absolute_bound
     intro rho
     simpa only [norm_norm] using hp rho
   have hb : (∑' rho, ‖v rho‖) ≤ derivativeL1Cost f k ^ 2 *
-      tailBudget A (1 / 2) (8 * D) 1 k J := calc
+      tailBudget A (1 / 2) (2 * D * (L + 1)) 1 k J := calc
     _ ≤ ∑' rho, derivativeL1Cost f k ^ 2 * u rho :=
       Summable.tsum_le_tsum hp hv (hu.mul_left _)
     _ = derivativeL1Cost f k ^ 2 * ∑' rho, u rho :=
       (hu.hasSum.mul_left _).tsum_eq
     _ ≤ _ := mul_le_mul_of_nonneg_left hM.2 (sq_nonneg _)
-  simpa only [v, m, D, Complex.ofReal_natCast] using And.intro hv hb
+  simpa only [v, m, Complex.ofReal_natCast] using And.intro hv hb
+
+/-- The omitted-height bound with the native source count. -/
+theorem primitive_height_tail_absolute_bound
+    (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive)
+    (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A) (hf : Admissible f)
+    (hs : tsupport f ⊆ Icc (-A) A) (k J : ℕ) (hk : 1 ≤ k)
+    (H : ℝ) (hJ : (2 : ℝ) ^ J ≤ 1 + H) :
+    let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
+    let v := fun rho : CriticalStripZero chi =>
+      if H ≤ |rho.1.im| then (zeroMultiplicity chi rho : ℂ) * W rho.1 else 0
+    Summable (fun rho => ‖v rho‖) ∧
+      (∑' rho, ‖v rho‖) ≤ derivativeL1Cost f k ^ 2 *
+        tailBudget A (1 / 2) (8 * sourceCountConstant chi) 1 k J := by
+  simpa only [show 2 * sourceCountConstant chi * ((3 : ℝ) + 1) =
+      8 * sourceCountConstant chi by ring] using
+    primitive_height_tail_absolute_bound_of_heightCount chi hprim
+      (sourceCountConstant_nonneg chi) (by norm_num : (0 : ℝ) ≤ 3)
+      (heightCount_le_source_bound chi hprim) f A hA hf hs k J hk H hJ
 
 /-- Source return of the complete tail to the ACTUAL arithmetic contour endpoint.
 There is no good-height or boundary-zero avoidance condition on H. The finite
 head is the canonical noncomputable heightWindow, not a supplied numerical list. -/
-theorem primitive_heightWindow_error_le
+theorem primitive_heightWindow_error_le_of_heightCount
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive)
+    {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L)
+    (hcount : ∀ U : ℝ, 2 ≤ U → (heightCount chi hprim U : ℝ) ≤ D * U * (Real.log U + L))
     (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A) (hf : Admissible f)
     (hs : tsupport f ⊆ Icc (-A) A) (k J : ℕ) (hk : 1 ≤ k)
     (H : ℝ) (hJ : (2 : ℝ) ^ J ≤ 1 + H) :
@@ -187,7 +266,7 @@ theorem primitive_heightWindow_error_le
     ‖((∫ t : ℝ, weilRightArithmeticIntegrand chi W t) / (2 * (Real.pi : ℂ)) +
         (if N = 1 then W 0 + W 1 else 0)) -
       ∑ rho ∈ heightWindow chi hprim H, (zeroMultiplicity chi rho : ℂ) * W rho.1‖ ≤
-        derivativeL1Cost f k ^ 2 * tailBudget A (1 / 2) (8 * sourceCountConstant chi) 1 k J := by
+        derivativeL1Cost f k ^ 2 * tailBudget A (1 / 2) (2 * D * (L + 1)) 1 k J := by
   classical
   intro W
   let v : CriticalStripZero chi → ℂ := fun rho => (zeroMultiplicity chi rho : ℂ) * W rho.1
@@ -195,9 +274,7 @@ theorem primitive_heightWindow_error_le
   let u : CriticalStripZero chi → ℂ := fun rho => if rho ∈ S then v rho else 0
   let t : CriticalStripZero chi → ℂ := fun rho => if H ≤ |rho.1.im| then v rho else 0
   have habs : Summable (fun rho => ‖v rho‖) :=
-    summable_norm_contour_weight_of_heightCount chi hprim
-      (sourceCountConstant chi) 3 (sourceCountConstant_nonneg chi) (by norm_num)
-      (heightCount_le_source_bound chi hprim) f A hA hf hs
+    summable_norm_contour_weight_of_heightCount chi hprim D L hD hL hcount f A hA hf hs
   have hu : Summable u := by
     apply habs.of_norm_bounded
     intro rho
@@ -218,14 +295,55 @@ theorem primitive_heightWindow_error_le
   have hsum := (primitive_hasSum_contour_weight_source_bound chi hprim f A hA hf hs).sub hu.hasSum
   change HasSum (fun rho => v rho - u rho) _ at hsum
   rw [hsplit, hhead] at hsum
-  have htail := primitive_height_tail_absolute_bound chi hprim f A hA hf hs k J hk H hJ
+  have htail := primitive_height_tail_absolute_bound_of_heightCount chi hprim hD hL hcount
+    f A hA hf hs k J hk H hJ
   change Summable (fun rho => ‖t rho‖) ∧ _ at htail
   change ‖_ - ∑ rho ∈ S, v rho‖ ≤ _
   rw [← hsum.tsum_eq]
   exact (tsum_of_norm_bounded (f := t) htail.1.hasSum (fun _ => le_rfl)).trans htail.2
 
+/-- The original finite-height approximation with the native source count. -/
+theorem primitive_heightWindow_error_le
+    (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive)
+    (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A) (hf : Admissible f)
+    (hs : tsupport f ⊆ Icc (-A) A) (k J : ℕ) (hk : 1 ≤ k)
+    (H : ℝ) (hJ : (2 : ℝ) ^ J ≤ 1 + H) :
+    let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
+    ‖((∫ t : ℝ, weilRightArithmeticIntegrand chi W t) / (2 * (Real.pi : ℂ)) +
+        (if N = 1 then W 0 + W 1 else 0)) -
+      ∑ rho ∈ heightWindow chi hprim H, (zeroMultiplicity chi rho : ℂ) * W rho.1‖ ≤
+        derivativeL1Cost f k ^ 2 * tailBudget A (1 / 2) (8 * sourceCountConstant chi) 1 k J := by
+  simpa only [show 2 * sourceCountConstant chi * ((3 : ℝ) + 1) =
+      8 * sourceCountConstant chi by ring] using
+    primitive_heightWindow_error_le_of_heightCount chi hprim
+      (sourceCountConstant_nonneg chi) (by norm_num : (0 : ℝ) ≤ 3)
+      (heightCount_le_source_bound chi hprim) f A hA hf hs k J hk H hJ
+
 /-- First-order closed budget. For H=2^J it is logarithmic-over-height, with the
 full exp(A), derivative cost and source constant visible. No uniform L2 bound. -/
+theorem primitive_heightWindow_error_le_first_order_of_heightCount
+    (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive)
+    {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L)
+    (hcount : ∀ U : ℝ, 2 ≤ U → (heightCount chi hprim U : ℝ) ≤ D * U * (Real.log U + L))
+    (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A) (hf : Admissible f)
+    (hs : tsupport f ⊆ Icc (-A) A) (J : ℕ) (H : ℝ)
+    (hJ : (2 : ℝ) ^ J ≤ 1 + H) :
+    let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
+    ‖((∫ t : ℝ, weilRightArithmeticIntegrand chi W t) / (2 * (Real.pi : ℂ)) +
+        (if N = 1 then W 0 + W 1 else 0)) -
+      ∑ rho ∈ heightWindow chi hprim H, (zeroMultiplicity chi rho : ℂ) * W rho.1‖ ≤
+        4 * Real.exp A * D * (L + 1) * derivativeL1Cost f 1 ^ 2 *
+          ((J : ℝ) + 2) * (1 / 2 : ℝ) ^ J := by
+  intro W
+  calc
+    _ ≤ derivativeL1Cost f 1 ^ 2 *
+        tailBudget A (1 / 2) (2 * D * (L + 1)) 1 1 J :=
+      primitive_heightWindow_error_le_of_heightCount chi hprim hD hL hcount f A hA hf hs 1 J (by norm_num) H hJ
+    _ = _ := by
+      rw [tailBudget_one, show (2 : ℝ) * A * (1 / 2) = A by ring]
+      ring
+
+/-- First-order height budget with the native count. -/
 theorem primitive_heightWindow_error_le_first_order
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive)
     (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A) (hf : Admissible f)
@@ -237,14 +355,11 @@ theorem primitive_heightWindow_error_le_first_order
       ∑ rho ∈ heightWindow chi hprim H, (zeroMultiplicity chi rho : ℂ) * W rho.1‖ ≤
         16 * Real.exp A * sourceCountConstant chi * derivativeL1Cost f 1 ^ 2 *
           ((J : ℝ) + 2) * (1 / 2 : ℝ) ^ J := by
-  intro W
-  calc
-    _ ≤ derivativeL1Cost f 1 ^ 2 *
-        tailBudget A (1 / 2) (8 * sourceCountConstant chi) 1 1 J :=
-      primitive_heightWindow_error_le chi hprim f A hA hf hs 1 J (by norm_num) H hJ
-    _ = _ := by
-      rw [tailBudget_one, show (2 : ℝ) * A * (1 / 2) = A by ring]
-      ring
+  simpa only [show 4 * Real.exp A * sourceCountConstant chi * ((3 : ℝ) + 1) =
+      16 * Real.exp A * sourceCountConstant chi by ring] using
+    primitive_heightWindow_error_le_first_order_of_heightCount chi hprim
+      (sourceCountConstant_nonneg chi) (by norm_num : (0 : ℝ) ≤ 3)
+      (heightCount_le_source_bound chi hprim) f A hA hf hs J H hJ
 
 /-- Every tending-to-infinity height sequence has the same actual endpoint,
 including nonmonotone sequences and heights passing through zero ordinates. -/
