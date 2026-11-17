@@ -9,6 +9,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAn
 import Mathlib.Analysis.Calculus.ParametricIntegral
 import Mathlib.Analysis.Complex.RemovableSingularity
 import Mathlib.Analysis.Complex.Convex
+import Mathlib.NumberTheory.Harmonic.ZetaAsymp
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -505,5 +506,62 @@ theorem signedLaplace_pickupVelocity_midpoint_quotient_bounded {B : ℝ} (hB : 0
   rw [dslope_of_ne f hz0, slope_def_field, sub_zero, hf0] at hb
   rw [signedLaplace_pickupVelocity_eq_reciprocalZeta_of_weakMertens hB hM hz hzpole]
   exact hb.le
+
+/-- The exact causal pickup, centered by a constant, has the corresponding
+subtracted velocity transform divided by the Laplace variable. -/
+theorem signedLaplace_centeredWholePickup_eq_of_weakMertens {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (c : ℝ) {z : ℂ} (hz : 0 < z.re) :
+    signedLaplace (fun u => wholePickup u - c) z =
+      (signedLaplace pickupVelocity z - (c : ℂ)) / z := by
+  have hP : IntegrableOn (fun u : ℝ => Complex.exp (-(z * (u : ℂ))) * (wholePickup u : ℂ)) (Ioi 0) := by
+    refine (pickupTriangle_integrable_of_weakMertens hB hM hz).integral_prod_left.congr ?_
+    filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
+    simpa only [neg_mul] using pickupTriangle_time_integral z t ht
+  have he : IntegrableOn (fun u : ℝ => Complex.exp (-(z * (u : ℂ)))) (Ioi 0) := by
+    simpa only [neg_mul] using integrableOn_exp_mul_complex_Ioi (a := -z) (by simpa using hz) 0
+  have hconst : (∫ u in Ioi (0 : ℝ), Complex.exp (-(z * (u : ℂ))) * (c : ℂ)) =
+      z⁻¹ * c := by
+    simp_rw [← neg_mul]
+    rw [integral_mul_const, integral_exp_mul_complex_Ioi (a := -z) (by simpa using hz)]
+    simp
+  have hsplit : signedLaplace (fun u => wholePickup u - c) z =
+      signedLaplace wholePickup z -
+        (∫ u in Ioi (0 : ℝ), Complex.exp (-(z * (u : ℂ))) * (c : ℂ)) := by
+    unfold signedLaplace
+    simp only [Complex.ofReal_sub, mul_sub]
+    exact integral_sub hP (he.mul_const (c : ℂ))
+  rw [hsplit, hconst, signedLaplace_wholePickup_eq_velocity_of_weakMertens hB hM hz]
+  rw [div_eq_mul_inv]
+  ring
+
+private theorem midpointZeta_reciprocal_real :
+    (((2 / riemannZeta (1 / 2 : ℂ)).re : ℝ) : ℂ) = 2 / riemannZeta (1 / 2 : ℂ) := by
+  have hc : starRingEnd ℂ (riemannZeta (1 / 2 : ℂ)) = riemannZeta (1 / 2 : ℂ) := by
+    have ha : starRingEnd ℂ (1 / 2 : ℂ) = (1 / 2 : ℂ) := by
+      rw [show (1 / 2 : ℂ) = ((1 / 2 : ℝ) : ℂ) by norm_num, Complex.conj_ofReal]
+    rw [← riemannZeta_conj, ha]
+  have hd : starRingEnd ℂ (2 / riemannZeta (1 / 2 : ℂ)) = 2 / riemannZeta (1 / 2 : ℂ) := by
+    rw [map_div₀, map_ofNat, hc]
+  apply Complex.ext
+  · simp
+  · have hi := congrArg Complex.im hd
+    simp only [Complex.conj_im] at hi
+    simp only [Complex.ofReal_im]
+    linarith
+
+/-- The midpoint quotient bound controls the actual real centered pickup
+on the low-frequency portion of every sufficiently small positive line. -/
+theorem signedLaplace_centeredWholePickup_midpoint_bounded {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    (hmid : riemannZeta (1 / 2 : ℂ) ≠ 0) :
+    ∃ r C : ℝ, 0 < r ∧ 0 ≤ C ∧ ∀ z : ℂ, 0 < z.re → ‖z‖ < r →
+      ‖signedLaplace (fun u => wholePickup u - (2 / riemannZeta (1 / 2 : ℂ)).re) z‖ ≤ C := by
+  obtain ⟨r, C, hr, hC, hbound⟩ :=
+    signedLaplace_pickupVelocity_midpoint_quotient_bounded hB hM hmid
+  refine ⟨r, C, hr, hC, fun z hz hzr => ?_⟩
+  rw [signedLaplace_centeredWholePickup_eq_of_weakMertens hB hM _ hz,
+    midpointZeta_reciprocal_real]
+  exact hbound z hz hzr
 
 end GRWTSK.NumberTheory.Moebius
