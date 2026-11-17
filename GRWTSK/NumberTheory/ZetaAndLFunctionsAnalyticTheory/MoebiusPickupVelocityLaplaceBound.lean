@@ -7,6 +7,8 @@ import Mathlib.Analysis.Fourier.LpSpace
 import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.DirichletLaplaceIdentity
 import Mathlib.Analysis.Calculus.ParametricIntegral
+import Mathlib.Analysis.Complex.RemovableSingularity
+import Mathlib.Analysis.Complex.Convex
 
 /-!
 # Weighted square bound for the exact Möbius pickup velocity
@@ -390,5 +392,77 @@ theorem signedLaplace_pickupVelocity_analyticAt_of_weakMertens {B : ℝ} (hB : 0
   exact (show DifferentiableOn ℂ (signedLaplace pickupVelocity) {w | 0 < w.re} from
     fun w hw => (hd w hw).differentiableWithinAt).analyticAt
       ((isOpen_lt continuous_const Complex.continuous_re).mem_nhds hz)
+
+private theorem regularizedZeta_analytic (w : ℂ) :
+    AnalyticAt ℂ (Function.update (fun s : ℂ => (s - 1) * riemannZeta s) 1 1) w := by
+  let f (s : ℂ) := (s - 1) * riemannZeta s
+  have hl : Filter.Tendsto f (𝓝[≠] (1 : ℂ)) (𝓝 1) := riemannZeta_residue_one
+  have hd : DifferentiableOn ℂ f ((Set.univ : Set ℂ) \ {1}) := by
+    intro s hs
+    have hne : s ≠ 1 := by simpa using hs.2
+    exact (((differentiableAt_id.sub_const _).mul
+      (differentiableAt_riemannZeta hne))).differentiableWithinAt
+  have hb : (𝓝[≠] (1 : ℂ)).IsBoundedUnder (· ≤ ·) (fun s => ‖f s - f 1‖) :=
+    ((hl.sub_const (f 1)).norm).isBoundedUnder_le
+  have h := Complex.differentiableOn_update_limUnder_of_isLittleO
+    (s := Set.univ) (Filter.univ_mem) hd hb.isLittleO_sub_self_inv
+  rw [hl.limUnder_eq] at h
+  exact h.analyticAt Filter.univ_mem
+
+/-- The initial reciprocal-zeta identity continues to the positive
+half-plane away from the zeta pole. The proof clears the pole before
+applying the identity theorem. -/
+theorem signedLaplace_pickupVelocity_eq_reciprocalZeta_of_weakMertens {B : ℝ} (hB : 0 ≤ B)
+    (hM : ∀ X ≥ 1, (∫ x in (1 : ℝ)..X, mertensPrefix x ^ 2 / x ^ 2) ≤ B * Real.log X)
+    {z : ℂ} (hz : 0 < z.re) (hzpole : z + 1 / 2 ≠ 1) :
+    signedLaplace pickupVelocity z =
+      1 / ((z + 1 / 2) * riemannZeta (z + 1 / 2)) := by
+  let R := Function.update (fun s : ℂ => (s - 1) * riemannZeta s) 1 1
+  let U : Set ℂ := {w | 0 < w.re}
+  let lhs (w : ℂ) := (w + 1 / 2) * R (w + 1 / 2) * signedLaplace pickupVelocity w
+  let rhs (w : ℂ) := w + 1 / 2 - 1
+  have hL : AnalyticOnNhd ℂ lhs U := by
+    intro w hw
+    have hadd : AnalyticAt ℂ (fun t : ℂ => t + 1 / 2) w :=
+      analyticAt_id.add analyticAt_const
+    exact (hadd.mul ((regularizedZeta_analytic (w + 1 / 2)).comp (f := fun t : ℂ => t + 1 / 2) (x := w) hadd)).mul
+      (signedLaplace_pickupVelocity_analyticAt_of_weakMertens hB hM hw)
+  have hR : AnalyticOnNhd ℂ rhs U := fun _ _ =>
+    (analyticAt_id.add analyticAt_const).sub analyticAt_const
+  have hinitial : lhs =ᶠ[𝓝 (1 : ℂ)] rhs := by
+    have hn : {w : ℂ | (1 / 2 : ℝ) < w.re} ∈ 𝓝 (1 : ℂ) :=
+      (isOpen_lt continuous_const Complex.continuous_re).mem_nhds (by norm_num)
+    filter_upwards [hn] with w hw
+    have hs : 1 < (w + 1 / 2).re := by
+      change (1 / 2 : ℝ) < w.re at hw
+      simp
+      linarith
+    have hn1 : w + 1 / 2 ≠ 1 := by
+      intro he
+      rw [he] at hs
+      norm_num at hs
+    have hn0 : w + 1 / 2 ≠ 0 := by
+      intro he
+      rw [he] at hs
+      norm_num at hs
+    have hζ := riemannZeta_ne_zero_of_one_lt_re hs
+    have hinit : signedLaplace pickupVelocity w = 1 / ((w + 1 / 2) * riemannZeta (w + 1 / 2)) := by
+      simpa only [signedLaplace, neg_mul] using pickupVelocity_laplace hw
+    dsimp [lhs, rhs, R]
+    rw [Function.update_of_ne hn1, hinit]
+    calc
+      _ = (w + 1 / 2 - 1) * (((w + 1 / 2) * riemannZeta (w + 1 / 2)) *
+          ((w + 1 / 2) * riemannZeta (w + 1 / 2))⁻¹) := by rw [one_div]; ring
+      _ = _ := by rw [mul_inv_cancel₀ (mul_ne_zero hn0 hζ), mul_one]
+  have h := hL.eqOn_of_preconnected_of_eventuallyEq hR
+    (convex_halfSpace_re_gt 0).isPreconnected (show (1 : ℂ) ∈ U by simp [U]) hinitial
+    (show z ∈ U from hz)
+  have hfactor : (z + 1 / 2) * riemannZeta (z + 1 / 2) * signedLaplace pickupVelocity z = 1 := by
+    dsimp [lhs, rhs, R] at h
+    rw [Function.update_of_ne hzpole] at h
+    have hn := sub_ne_zero.mpr hzpole
+    apply (mul_left_cancel₀ hn)
+    linear_combination h
+  exact (eq_div_iff_mul_eq (left_ne_zero_of_mul_eq_one hfactor)).2 (by simpa [mul_comm] using hfactor)
 
 end GRWTSK.NumberTheory.Moebius
