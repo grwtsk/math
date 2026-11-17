@@ -154,4 +154,43 @@ theorem dirichletGRH_of_filteredWindowCoverage
   intro q hq χ hp hn
   exact smallConductorStages_of_filterCoverage χ hp hn (hcover q χ hp hn)
 
+
+/-- A filtered supplier can choose either representative of each inverse
+orbit. The native real-test stage bound transports the result to its partner. -/
+theorem dirichletGRH_of_inverseOrbitFilteredCoverage
+    (hRH : _root_.RiemannHypothesis) (hwitness : PrimitiveUpperRightStripNegativeWitness)
+    (filtered : PrimitiveFilteredFamily)
+    (hcover : ∀ (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
+      (hp : χ.IsPrimitive) (hn : χ ≠ 1),
+      let hpInv : (χ⁻¹).IsPrimitive := by
+        simpa only [DirichletCharacter.IsPrimitive, DirichletCharacter.conductor_inv] using hp
+      let hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
+      CharacterLocalFilterCoverage χ hp hn (filtered q χ hp hn) ∨
+        CharacterLocalFilterCoverage χ⁻¹ hpInv hnInv (filtered q χ⁻¹ hpInv hnInv)) :
+    DirichletGRH := by
+  apply dirichletGRH_of_rh_rightStrip_and_inverse_orbit_stages hRH
+    (primitiveRightStripNegativeWitness_iff_upper.mpr hwitness)
+  intro q hq χ hp hn
+  rcases hcover q χ hp hn with direct | inverse
+  · exact Or.inl (smallConductorStages_of_filterCoverage χ hp hn direct)
+  · exact Or.inr (smallConductorStages_of_filterCoverage χ⁻¹ _ _ inverse)
+
+/-- A strict negative value of the original signed form refutes both choices
+of an inverse-orbit supplier, even for unrelated filtered data. -/
+theorem not_inverseOrbitFilteredCoverage_of_negative {q : ℕ} [NeZero q]
+    (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    (hpInv : (χ⁻¹).IsPrimitive) (hnInv : χ⁻¹ ≠ 1)
+    (filtered inverseFiltered : ℕ → (ℝ → ℝ) → ℝ) {T : ℝ} {f : ℝ → ℝ}
+    (hf : Admissible χ T f)
+    (hneg : primitiveArithmeticValue χ hp hn T (liftReal f) < 0) :
+    ¬ (CharacterLocalFilterCoverage χ hp hn filtered ∨
+      CharacterLocalFilterCoverage χ⁻¹ hpInv hnInv inverseFiltered) := by
+  intro h
+  have stages : SmallConductorStages χ hp hn := by
+    rcases h with direct | inverse
+    · exact smallConductorStages_of_filterCoverage χ hp hn direct
+    · exact smallConductorStages_of_inverse χ hp hn hpInv hnInv
+        (smallConductorStages_of_filterCoverage χ⁻¹ hpInv hnInv inverse)
+  exact (not_lt_of_ge (primitive_nonneg_of_small_stages χ hp hn stages hf)) hneg
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
