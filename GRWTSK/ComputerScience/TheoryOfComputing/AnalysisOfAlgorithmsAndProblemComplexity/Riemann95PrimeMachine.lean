@@ -877,4 +877,33 @@ theorem absolute_position_handoff_control (window : ℕ) :
   change some (0 : ℤ) = some 1 at different
   exact (by decide : (0 : ℤ) ≠ 1) (Option.some.inj different)
 
+/-- An intermediate prime-window boundary consumes no source step.
+Failure of the first chunk propagates through the composition. -/
+theorem runOn_append {w : ℕ} (first rest : List ℕ) (mid target : ℕ) (c : Configuration w) :
+    runOn (first ++ rest) target c =
+      (runOn first mid c).bind (runOn rest target) := by
+  induction first generalizing w with
+  | nil =>
+    simp only [List.nil_append, runOn, Option.bind_some]
+    rw [runOn_eq, runOn_eq, run_readdress]
+    cases run rest.length c <;> simp
+  | cons next first ih =>
+    simp only [List.cons_append, runOn, Option.bind_assoc]
+    cases step (readdress next c) with
+    | none => rfl
+    | some e => exact ih e
+
+/-- After a successful first chunk, a replacement at the boundary
+can change the tape representative and window. Matching the handoff
+view and suffix length preserves the exact optional result view. -/
+theorem runOn_append_with_handoff {w mid replacement : ℕ}
+    {c : Configuration w} {e : Configuration mid} {d : Configuration replacement}
+    {first left right : List ℕ}
+    (prefixRun : runOn first mid c = some e) (handoff : handoffView e = handoffView d)
+    (length : left.length = right.length) (leftTarget rightTarget : ℕ) :
+    (runOn (first ++ left) leftTarget c).map handoffView =
+      (runOn right rightTarget d).map handoffView := by
+  rw [runOn_append first left mid, prefixRun, Option.bind_some]
+  exact runOn_handoffView_eq handoff length leftTarget rightTarget
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine

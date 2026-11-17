@@ -298,3 +298,16 @@ in trailing blank storage. The budget-zero control shows why native projection
 alone is insufficient to preserve absolute position. A concrete runtime must
 still establish equality of the handoff views at its actual boundaries.
 [Verification record](https://github.com/grwtsk/math/issues/1821)
+
+## Composing checked window handoffs
+
+`runOn_append` splits any schedule into two chunks at any chosen
+intermediate window. The intermediate readdressing consumes zero
+instructions. If the first chunk fails, the composite stays failed.
+`runOn_append_with_handoff` permits a tape representative replacement
+at a successful boundary, provided the native pointed tape and absolute
+head position agree. It also permits a different suffix schedule of
+the same length and a different final window. The optional result
+view still agrees. This is the local rule needed to compose multiple
+checked boundaries. Physical implementation of the check is separate.
+[Verification record](https://github.com/grwtsk/math/issues/1821)
