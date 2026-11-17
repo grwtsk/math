@@ -124,4 +124,68 @@ theorem norm_physicalValue_sub_dual_firstOnly_le (χ : DirichletCharacter ℂ q)
   dsimp only at h
   linarith only [h]
 
+/-- Recombining the exact first-window readings leaves a single signed
+real projection of the later complex atoms. -/
+theorem physicalValue_sub_dual_firstOnly (χ : DirichletCharacter ℂ q)
+    (A : ℝ) (f : ℝ → ℂ) :
+    let C := fun n : ℕ => correlation f (Real.log n)
+    physicalValue χ A f - (dualEvenFirstOnly χ A f +
+      (dualPhasePart (firstPowers A) χ C : ℂ) / 2) =
+      ((-2 * ∑ n ∈ laterPowers A, primeWeight n * (χ n * C n).re : ℝ) : ℂ) := by
+  intro C
+  have split :
+      physicalValue χ A f - (dualEvenFirstOnly χ A f +
+        (dualPhasePart (firstPowers A) χ C : ℂ) / 2) =
+      (dualEvenValue χ A f - dualEvenFirstOnly χ A f) +
+      (physicalValue χ A f - physicalValue χ⁻¹ A f -
+        (dualPhasePart (firstPowers A) χ C : ℂ)) / 2 := by
+    linear_combination physicalValue_add_dual χ A f / 2
+  rw [split, dualEven_sub_firstOnly, physicalValue_sub_dual]
+  change ((-2 * (∑ n ∈ laterPowers A, primeWeight n * (χ n).re * (C n).re) : ℝ) : ℂ) +
+    (((dualPhasePart (firstPowers A) χ C + dualPhasePart (laterPowers A) χ C : ℝ) : ℂ) -
+      (dualPhasePart (firstPowers A) χ C : ℂ)) / 2 = _
+  push_cast
+  rw [add_sub_cancel_left]
+  unfold dualPhasePart
+  simp only [Complex.mul_re]
+  push_cast
+  simp only [mul_sub, Finset.sum_sub_distrib, mul_assoc]
+  ring
+
+/-- A joint bound for the two exact first-window channels, using one
+complex phase and one overlap budget for each original later prime power. -/
+theorem norm_physicalValue_sub_dual_firstOnly_le_joint (χ : DirichletCharacter ℂ q)
+    (A : ℝ) {f : ℝ → ℂ} (hf : MemLp f 2 volume)
+    (support : tsupport f ⊆ Icc (-A) A) :
+    ‖physicalValue χ A f - (dualEvenFirstOnly χ A f +
+      (dualPhasePart (firstPowers A) χ (fun n => correlation f (Real.log n)) : ℂ) / 2)‖ ≤
+      2 * ∑ n ∈ laterPowers A, primeWeight n * ‖χ n‖ * overlapGeometric A (Real.log n) f := by
+  rw [physicalValue_sub_dual_firstOnly, Complex.norm_real, Real.norm_eq_abs, abs_mul,
+    show |(-2 : ℝ)| = 2 by norm_num]
+  apply mul_le_mul_of_nonneg_left _ (by norm_num)
+  refine (Finset.abs_sum_le_sum_abs _ _).trans (Finset.sum_le_sum ?_)
+  intro n _
+  rw [abs_mul, abs_of_nonneg (primeWeight_nonneg _), mul_assoc]
+  apply mul_le_mul_of_nonneg_left _ (primeWeight_nonneg _)
+  refine (Complex.abs_re_le_norm _).trans ?_
+  rw [norm_mul]
+  exact mul_le_mul_of_nonneg_left (norm_correlation_le_overlapGeometric A _ hf support) (norm_nonneg _)
+
+/-- The joint budget is bounded by the sum of the separate channel budgets. -/
+theorem joint_overlap_budget_le_separate (χ : DirichletCharacter ℂ q)
+    (A : ℝ) (f : ℝ → ℂ) :
+    2 * (∑ n ∈ laterPowers A, primeWeight n * ‖χ n‖ * overlapGeometric A (Real.log n) f) ≤
+      2 * (∑ n ∈ laterPowers A, primeWeight n * |(χ n).re| * overlapGeometric A (Real.log n) f) +
+      2 * (∑ n ∈ laterPowers A, primeWeight n * |(χ n).im| * overlapGeometric A (Real.log n) f) := by
+  rw [← mul_add, ← Finset.sum_add_distrib]
+  apply mul_le_mul_of_nonneg_left _ (by norm_num)
+  apply Finset.sum_le_sum
+  intro n _
+  rw [← add_mul, ← mul_add]
+  have geom : 0 ≤ overlapGeometric A (Real.log n) f := by
+    unfold overlapGeometric
+    positivity
+  exact mul_le_mul_of_nonneg_right
+    (mul_le_mul_of_nonneg_left (Complex.norm_le_abs_re_add_abs_im _) (primeWeight_nonneg _)) geom
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
