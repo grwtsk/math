@@ -148,6 +148,43 @@ theorem weighted_minimax {I : Type*} [Fintype I]
         rw [one_mul, abs_of_nonpos (by linarith)]
         linarith
 
+/-- At a fixed feasible observation with positive gain, the midpoint of
+the feasible signal interval achieves its exact worst-case error. -/
+theorem observed_minimax {p X N y : ℝ} (hp : 0 < p)
+    (feasible : ∃ x : ℝ, |x| ≤ X ∧ |y - p * x| ≤ N) :
+    let lower := max (-X) ((y - N) / p)
+    let upper := min X ((y + N) / p)
+    (∀ x : ℝ, |x| ≤ X → |y - p * x| ≤ N →
+      |(lower + upper) / 2 - x| ≤ (upper - lower) / 2) ∧
+    (∀ z : ℝ, ∃ x : ℝ, |x| ≤ X ∧ |y - p * x| ≤ N ∧
+      (upper - lower) / 2 ≤ |z - x|) := by
+  intro lower upper
+  have bounds (x : ℝ) : (|x| ≤ X ∧ |y - p * x| ≤ N) ↔ lower ≤ x ∧ x ≤ upper := by
+    change (|x| ≤ X ∧ |y - p * x| ≤ N) ↔
+      max (-X) ((y - N) / p) ≤ x ∧ x ≤ min X ((y + N) / p)
+    rw [abs_le, abs_le, max_le_iff, le_min_iff, div_le_iff₀ hp, le_div_iff₀ hp, mul_comm x p]
+    constructor
+    · rintro ⟨⟨a, b⟩, ⟨c, d⟩⟩
+      exact ⟨⟨a, by linarith⟩, b, by linarith⟩
+    · rintro ⟨⟨a, b⟩, ⟨c, d⟩⟩
+      exact ⟨⟨a, c⟩, by linarith, by linarith⟩
+  obtain ⟨x, hx⟩ := feasible
+  have ordered : lower ≤ upper := ((bounds x).mp hx).1.trans ((bounds x).mp hx).2
+  constructor
+  · intro v signal noise
+    obtain ⟨lo, hi⟩ := (bounds v).mp ⟨signal, noise⟩
+    exact abs_le.mpr ⟨by linarith, by linarith⟩
+  · intro z
+    by_cases left : z ≤ (lower + upper) / 2
+    · obtain ⟨signal, noise⟩ := (bounds upper).mpr ⟨ordered, le_rfl⟩
+      refine ⟨upper, signal, noise, ?_⟩
+      have endpoint := neg_abs_le (z - upper)
+      linarith
+    · obtain ⟨signal, noise⟩ := (bounds lower).mpr ⟨le_rfl, ordered⟩
+      refine ⟨lower, signal, noise, ?_⟩
+      have endpoint := le_abs_self (z - lower)
+      linarith
+
 /-- A single half-exposure remains invertible. With unit noise and unit
 signal budget its exact inverse nevertheless exceeds the minimax error. -/
 theorem half_exposure_inverse_control :
