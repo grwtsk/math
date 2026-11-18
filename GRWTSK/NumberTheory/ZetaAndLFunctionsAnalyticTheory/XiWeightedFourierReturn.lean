@@ -3,6 +3,8 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 -/
 import Mathlib.Analysis.Complex.Exponential
+import Mathlib.MeasureTheory.Function.L2Space
+import Mathlib.MeasureTheory.Function.LocallyIntegrable
 import Mathlib.MeasureTheory.Integral.Bochner.Basic
 import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
 import Mathlib.Topology.Order.Compact
@@ -144,5 +146,48 @@ theorem tendstoLocallyUniformlyOn_logFourier_of_weighted_sub
     have hqz := integrable_logFourierIntegrand hq
       (hQ |z.im| (abs_nonneg _) hz) (z := z) le_rfl
     simp only [mul_sub, integral_sub hpz hqz]
+
+/-- Cauchy–Schwarz on the logarithmic window with the exact exponential
+weight factor used for the finite Galerkin error. The same formula covers
+the unweighted real-axis case and the degenerate window. -/
+theorem weighted_logWindowError_le {a A : ℝ} {f : ℝ → ℂ}
+    (hf : MemLp f 2 (volume.restrict (Set.Icc (-A) A))) :
+    (∫ t in Set.Icc (-A) A, Real.exp (a * |t|) * ‖f t‖) ≤
+      Real.sqrt (∫ t in Set.Icc (-A) A, (Real.exp (a * |t|)) ^ (2 : ℕ)) *
+      Real.sqrt (∫ t in Set.Icc (-A) A, ‖f t‖ ^ (2 : ℕ)) := by
+  let w : ℝ → ℝ := fun t => Real.exp (a * |t|)
+  have hContinuous : Continuous w :=
+    Real.continuous_exp.comp (continuous_const.mul continuous_abs)
+  have hw : MemLp w 2 (volume.restrict (Set.Icc (-A) A)) :=
+    (memLp_two_iff_integrable_sq hContinuous.aestronglyMeasurable).2
+      ((hContinuous.pow 2).continuousOn.integrableOn_compact isCompact_Icc)
+  have hConj : Real.HolderConjugate (2 : ℝ) 2 := by
+    rw [Real.holderConjugate_iff]
+    norm_num
+  have hHolder := integral_mul_le_Lp_mul_Lq_of_nonneg hConj
+    (Eventually.of_forall fun t => Real.exp_nonneg (a * |t|))
+    (Eventually.of_forall fun t => norm_nonneg (f t))
+    (by simpa using hw) (by simpa using hf.norm)
+  simpa only [w, Real.rpow_two, Real.sqrt_eq_rpow] using hHolder
+
+/-- A vanishing window Cauchy–Schwarz budget supplies the weighted
+integral limit on the whole line for errors extended by zero. -/
+theorem weighted_logWindowError_tendsto_zero {a : ℝ} (A : ℕ → ℝ)
+    (err : ℕ → ℝ → ℂ)
+    (hs : ∀ n t, t ∉ Set.Icc (-A n) (A n) → err n t = 0)
+    (hL2 : ∀ n, MemLp (err n) 2 (volume.restrict (Set.Icc (-A n) (A n))))
+    (hBudget : Tendsto (fun n =>
+      Real.sqrt (∫ t in Set.Icc (-A n) (A n), (Real.exp (a * |t|)) ^ (2 : ℕ)) *
+      Real.sqrt (∫ t in Set.Icc (-A n) (A n), ‖err n t‖ ^ (2 : ℕ))) atTop (𝓝 0)) :
+    Tendsto (fun n => ∫ t : ℝ, Real.exp (a * |t|) * ‖err n t‖) atTop (𝓝 0) := by
+  apply squeeze_zero (fun n => integral_nonneg
+    (fun t => mul_nonneg (Real.exp_nonneg _) (norm_nonneg (err n t)))) _ hBudget
+  intro n
+  have hWhole :
+      (∫ t in Set.Icc (-A n) (A n), Real.exp (a * |t|) * ‖err n t‖) =
+      ∫ t : ℝ, Real.exp (a * |t|) * ‖err n t‖ :=
+    setIntegral_eq_integral_of_forall_compl_eq_zero (fun t ht => by simp [hs n t ht])
+  rw [← hWhole]
+  exact weighted_logWindowError_le (hL2 n)
 
 end GRWTSK.NumberTheory.Zeta.XiWeightedFourierReturn
