@@ -880,6 +880,96 @@ theorem exactRoot_iff_terminal_suffix_edges {V : Type*} [Fintype V]
       obtain ⟨mid, path, _⟩ := splitAt full w.length
       exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ path⟩
 
+/-- At the sharp terminal vertex count, the consecutive word edges are
+mandatory. Every other edge is an optional, suffix-compatible shortcut. -/
+theorem exactRoot_iff_terminal_chain_and_shortcuts {V : Type*} [Fintype V]
+    (G : LabeledGraph V Read) (root : V) {n : ℕ} {word : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none)
+    (minimum : Fintype.card V = n + 1) :
+    (∀ w, (∃ t, WordPath G root w t) ↔ ∃ d, WordPath readGraph init w d) ↔
+      ∃ e : Fin (n + 1) ≃ V, e ⟨0, Nat.zero_lt_succ n⟩ = root ∧
+        (∀ (k : Fin n) (a : Read), word[k.val]? = some a →
+          G.edge (e k.castSucc) a (e k.succ)) ∧
+        ∀ (i j : Fin (n + 1)) (a : Read), G.edge (e i) a (e j) →
+          i < j ∧ (a :: word.drop j.val) <+: word.drop i.val := by
+  rw [exactRoot_iff_terminal_suffix_edges G root observed stopped minimum]
+  have size := ((observe_iff_path n init word).mp observed).1
+  constructor
+  · rintro ⟨⟨finish, full⟩, e, rootEq, edges⟩
+    let rank (s : V) := (e.symm s).val
+    have bounded (s : V) : rank s ≤ n := Nat.le_of_lt_succ (e.symm s).isLt
+    have advances {s t : V} {a : Read} (edge : G.edge s a t) :
+        rank s < rank t := by
+      have transported : G.edge (e (e.symm s)) a (e (e.symm t)) := by simpa using edge
+      exact (edges _ _ _ transported).1
+    have fits {s t : V} {w : List Read} (walk : WordPath G s w t) :
+        rank s + w.length ≤ n := by
+      induction walk with
+      | nil s => simpa using bounded s
+      | @cons s t _ _ w edge _ ih =>
+        have step := advances edge
+        simp only [List.length_cons]
+        omega
+    have forces {s t : V} {w : List Read} (walk : WordPath G s w t)
+        (suffix : w = word.drop (rank s)) :
+        ∀ (k : Fin n), rank s ≤ k.val → ∀ a : Read, word[k.val]? = some a →
+          G.edge (e k.castSucc) a (e k.succ) := by
+      induction walk with
+      | nil s =>
+        intro k lower
+        have len := congrArg List.length suffix
+        simp only [List.length_nil, List.length_drop, size] at len
+        have hk := k.isLt
+        omega
+      | @cons s t _ b w edge tail ih =>
+        have len := congrArg List.length suffix
+        simp only [List.length_cons, List.length_drop, size] at len
+        have bound := fits tail
+        have step := advances edge
+        have next : rank t = rank s + 1 := by omega
+        have inWord : rank s < word.length := by omega
+        have letters := List.cons.inj (suffix.trans (List.drop_eq_getElem_cons inWord))
+        intro k lower a label
+        by_cases here : k.val = rank s
+        · have start : k.castSucc = e.symm s := Fin.ext here
+          have stop : k.succ = e.symm t := Fin.ext (by
+            change k.val + 1 = rank t
+            omega)
+          rw [here, List.getElem?_eq_getElem inWord] at label
+          rw [start, stop, e.apply_symm_apply, e.apply_symm_apply,
+            ← Option.some.inj label, ← letters.1]
+          exact edge
+        · have remaining : w = word.drop (rank t) := by
+            rw [next]
+            exact letters.2
+          exact ih remaining k (by omega) a label
+    have rootRank : rank root = 0 := by
+      change (e.symm root).val = 0
+      rw [← rootEq, e.symm_apply_apply]
+    have suffix : word = word.drop (rank root) := by rw [rootRank, List.drop_zero]
+    exact ⟨e, rootEq, fun k a label => forces full suffix k (by simp [rootRank]) a label, edges⟩
+  · rintro ⟨e, rootEq, chain, edges⟩
+    have builds (d : ℕ) : ∀ (i : ℕ) (atEnd : i + d = n),
+        ∃ t, WordPath G (e ⟨i, by omega⟩) (word.drop i) t := by
+      induction d with
+      | zero =>
+        intro i atEnd
+        rw [List.drop_eq_nil_of_le (by omega : word.length ≤ i)]
+        exact ⟨_, .nil _⟩
+      | succ d ih =>
+        intro i atEnd
+        have before : i < n := by omega
+        have inWord : i < word.length := by omega
+        let k : Fin n := ⟨i, before⟩
+        have edge := chain k (word[i]'inWord) (List.getElem?_eq_getElem inWord)
+        obtain ⟨t, tail⟩ := ih (i + 1) (by omega)
+        rw [List.drop_eq_getElem_cons inWord]
+        exact ⟨t, .cons _ _ edge tail⟩
+    have covers : ∃ t, WordPath G root word t := by
+      simpa only [List.drop_zero, rootEq] using builds n 0 (Nat.zero_add n)
+    exact ⟨covers, e, rootEq, edges⟩
+
 private theorem proper_prefix_of_frontier_is_prefix
     {word bad pre : List Read} (member : bad ∈ terminalFrontier word)
     (pref : pre <+: bad) (short : pre.length < bad.length) : pre <+: word := by
