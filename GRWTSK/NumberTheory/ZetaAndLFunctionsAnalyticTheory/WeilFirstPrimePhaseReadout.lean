@@ -297,18 +297,16 @@ theorem onePrime_imaginary_error_from_signedWindowValue
     ring
   rw [gap, abs_div, abs_mul, abs_of_pos hw, abs_sub_comm]
 
-/-- The difference of signed estimates in the two character sectors
-recovers the imaginary sample of the same original test. The two certified
-signed errors contribute additively to the phase error allowance. -/
-theorem onePrime_imaginary_error_from_dual_estimates
+/-- Only the difference of the two sector errors affects phase recovery.
+In particular, any common additive offset cancels, even if its size is unknown. -/
+theorem onePrime_imaginary_error_eq_dual_error_difference
     (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
     (phase : (χ (2 : ℕ)).im ≠ 0) (f : WindowTest A)
-    (estimate dualEstimate error dualError : ℝ)
-    (forward_ok : |estimate - signedWindowValue χ A f.1| ≤ error)
-    (dual_ok : |dualEstimate - signedWindowValue χ⁻¹ A f.1| ≤ dualError) :
+    (estimate dualEstimate : ℝ) :
     let coefficient := 4 * primeWeight 2 * (χ (2 : ℕ)).im
-    |(dualEstimate - estimate) / coefficient - (correlation f.1 (Real.log 2)).im| ≤
-      (dualError + error) / |coefficient| := by
+    |(dualEstimate - estimate) / coefficient - (correlation f.1 (Real.log 2)).im| =
+      |(dualEstimate - signedWindowValue χ⁻¹ A f.1) -
+        (estimate - signedWindowValue χ A f.1)| / |coefficient| := by
   intro coefficient
   have weight : 0 < primeWeight 2 := by
     rw [primeWeight, ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two]
@@ -326,6 +324,21 @@ theorem onePrime_imaginary_error_from_dual_estimates
     field_simp [nonzero]
     linear_combination gap
   rw [deviation, abs_div]
+
+/-- The difference of signed estimates in the two character sectors
+recovers the imaginary sample of the same original test. The two certified
+signed errors contribute additively to the phase error allowance. -/
+theorem onePrime_imaginary_error_from_dual_estimates
+    (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (phase : (χ (2 : ℕ)).im ≠ 0) (f : WindowTest A)
+    (estimate dualEstimate error dualError : ℝ)
+    (forward_ok : |estimate - signedWindowValue χ A f.1| ≤ error)
+    (dual_ok : |dualEstimate - signedWindowValue χ⁻¹ A f.1| ≤ dualError) :
+    let coefficient := 4 * primeWeight 2 * (χ (2 : ℕ)).im
+    |(dualEstimate - estimate) / coefficient - (correlation f.1 (Real.log 2)).im| ≤
+      (dualError + error) / |coefficient| := by
+  intro coefficient
+  rw [onePrime_imaginary_error_eq_dual_error_difference χ lo hi phase f _ _]
   apply div_le_div_of_nonneg_right _ (abs_nonneg _)
   exact (abs_sub _ _).trans (add_le_add dual_ok forward_ok)
 
