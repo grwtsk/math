@@ -77,4 +77,36 @@ theorem onePrime_zeroSum_decoder_error_unbounded {q : ℕ} [NeZero q] {A : ℝ} 
     ⟨f.2.1, f.2.2.1⟩ f.2.2.2 (decode (observe f)), Complex.norm_real, Real.norm_eq_abs]
   exact hf
 
+/-- A real estimate of the original zero sum recovers the imaginary
+first-prime correlation with an exact error factor, provided the remaining
+arithmetic terms and the real first-prime correlation are known. -/
+theorem onePrime_imaginary_error_from_zeroSum {q : ℕ} [NeZero q] {A : ℝ}
+    (χ : DirichletCharacter ℂ q) (hprim : χ.IsPrimitive)
+    (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (phase : (χ (2 : ℕ)).im ≠ 0) (f : WindowTest A) (estimate : ℝ) :
+    let W := fun z : ℂ => ∫ r : ℝ, correlation f.1 r * Complex.exp ((z - 1 / 2) * (r : ℂ))
+    let c := correlation f.1 (Real.log 2)
+    let w := 2 * primeWeight 2
+    let β := (χ (2 : ℕ)).im
+    let reading := (windowValue χ A f.1 0).re - estimate
+    let recovered := ((χ (2 : ℕ)).re * c.re - reading / w) / β
+    |recovered - c.im| =
+      |estimate - (∑' ρ : CriticalStripZero χ, (zeroMultiplicity χ ρ : ℂ) * W ρ.1).re| /
+        (w * |β|) := by
+  intro W c w β reading recovered
+  have hlog : 0 < Real.log (2 : ℝ) := Real.log_pos (by norm_num)
+  have hA : 0 ≤ A := by linarith
+  have hvalue : (windowValue χ A f.1 reading).re = estimate := by
+    dsimp only [reading, windowValue]
+    simp only [Complex.add_re, Complex.ofReal_re]
+    ring
+  have herr := congrArg Complex.re
+    (primitive_tsum_sub_windowValue_eq_readout_error χ hprim f.1 A hA
+      ⟨f.2.1, f.2.2.1⟩ f.2.2.2 reading)
+  simp only [Complex.sub_re, Complex.ofReal_re, hvalue] at herr
+  calc
+    |recovered - c.im| = |reading - signedWindowValue χ A f.1| / (w * |β|) :=
+      onePrime_imaginary_error_from_signedWindowValue χ lo hi phase f reading
+    _ = _ := by rw [← herr, abs_sub_comm]
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
