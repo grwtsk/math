@@ -18,6 +18,11 @@ so completing the square with `(2a ± 7b)^2` bounds the energy from below.
 This supplies the first two modes above cutoff 64 for the radius-two
 high-floor problem. The rest of the complement and its mixed terms still
 need to be controlled in the full high-floor claim.
+
+At shift `-3/10`, the two positive pivots give an exact Schur payment.
+The receiving pairings are signed integrals of the original physical
+outputs. Completing both squares gives the attained minimum for each
+receiving function in the source form domain.
 -/
 
 set_option autoImplicit false
@@ -139,5 +144,204 @@ theorem two_mul_mass_le_shiftedOddCoreEnergy (x : Fin 66 → ℝ)
       _ ≤ (78 / 35 : ℝ) * a ^ 2 + (24 / 5 : ℝ) * b ^ 2 + (8 / 5 : ℝ) * (a * b) := by
         nlinarith only [sq_nonneg (2 * a + 7 * b)]
       _ ≤ _ := add_le_add (add_le_add ha hb) (mul_le_mul_of_nonpos_right hhi hab)
+
+open Set OddRootProjection OddShiftEnergy OddWrapEnergy OddConcreteResidual
+open OddGammaOutput OddPrimePoleOutput
+
+/-- Coefficients of a trial on physical modes 65 and 66. -/
+def trial (a b : ℝ) (i : Fin 66) : ℝ :=
+  if i = mode65 then a else if i = mode66 then b else 0
+
+private theorem trial_low (a b : ℝ) (i : Fin 66) (hi : i.val < 64) : trial a b i = 0 := by
+  have h₁ : i ≠ mode65 := by
+    intro h
+    subst i
+    change 64 < 64 at hi
+    omega
+  have h₂ : i ≠ mode66 := by
+    intro h
+    subst i
+    change 65 < 64 at hi
+    omega
+  simp [trial, h₁, h₂]
+
+private theorem trial65 (a b : ℝ) : trial a b mode65 = a := by simp [trial]
+
+private theorem trial66 (a b : ℝ) : trial a b mode66 = b := by
+  simp [trial, show mode66 ≠ mode65 by decide]
+
+private theorem trial_mass (a b : ℝ) :
+    (∫ t : ℝ, ‖finiteSine 2 (trial a b) t‖ ^ 2) = a ^ 2 + b ^ 2 := by
+  simp only [Real.norm_eq_abs, sq_abs]
+  rw [integral_finiteSine_sq 2 (by norm_num), sum_modes, trial65, trial66]
+  intro i hi
+  simp [trial_low a b i hi]
+
+private abbrev margin (f : ℝ → ℝ) : ℝ := shiftedOddCoreEnergy 2 (-3 / 10) f
+
+/-- First diagonal after reserving the requested mass floor. -/
+def diagonal65 : ℝ := entry 65 65 - 1 / 5
+
+/-- Second diagonal after reserving the requested mass floor. -/
+def diagonal66 : ℝ := entry 66 66 - 1 / 5
+
+/-- Symmetric mixed entry of the two-mode margin. -/
+def mixedEntry : ℝ := (entry 65 66 + entry 66 65) / 2
+
+/-- The physical output of a single sine at shift `-3/10` with pole coordinate zero. -/
+def modeOutput (n : ℕ) (t : ℝ) : ℝ :=
+  (Icc (-2 : ℝ) 2).indicator (gammaOutput (zeroExtendedSine 2 n)) t +
+    primePoleOutput 2 (-3 / 10) (zeroExtendedSine 2 n) 0 t
+
+private theorem trial_output (a b t : ℝ) :
+    borderedTrialOutput 2 (-3 / 10) (trial a b) 0 t =
+      a * modeOutput 65 t + b * modeOutput 66 t := by
+  unfold borderedTrialOutput modeOutput
+  have hz : primePoleOutput 2 (-3 / 10) (fun _ => 0) 0 t = 0 := by
+    simp [primePoleOutput, primeOutput]
+  rw [primePoleOutput_finiteSine, hz, add_zero,
+    sum_modes (fun i hi => by rw [trial_low a b i hi, zero_mul])]
+  simp only [trial65, trial66, show mode65.val + 1 = 65 by rfl,
+    show mode66.val + 1 = 66 by rfl]
+  by_cases ht : t ∈ Icc (-2 : ℝ) 2
+  · simp only [indicator_of_mem ht]
+    rw [gammaOutput_finiteSine 2 (by norm_num),
+      sum_modes (fun i hi => by rw [trial_low a b i hi, zero_mul])]
+    simp only [trial65, trial66, show mode65.val + 1 = 65 by rfl,
+      show mode66.val + 1 = 66 by rfl]
+    ring
+  · simp only [indicator_of_notMem ht, zero_add]
+
+/-- The signed mixed coefficient against a receiving function. -/
+def coupling (n : ℕ) (g : ℝ → ℝ) : ℝ := ∫ t : ℝ, g t * modeOutput n t
+
+private theorem coupling_integrable {g : ℝ → ℝ} (hg : MemLp g 2 volume) :
+    Integrable (fun t => g t * modeOutput 65 t) ∧
+      Integrable (fun t => g t * modeOutput 66 t) := by
+  have h65 : borderedTrialOutput 2 (-3 / 10) (trial 1 0) 0 = modeOutput 65 := by
+    funext t
+    simp [trial_output]
+  have h66 : borderedTrialOutput 2 (-3 / 10) (trial 0 1) 0 = modeOutput 66 := by
+    funext t
+    simp [trial_output]
+  constructor
+  · rw [← h65]
+    exact hg.integrable_mul (borderedTrialOutput_memLp 2 (by norm_num) _ _ _)
+  · rw [← h66]
+    exact hg.integrable_mul (borderedTrialOutput_memLp 2 (by norm_num) _ _ _)
+
+private theorem margin_eq (f : ℝ → ℝ) : margin f =
+    shiftedOddCoreEnergy 2 (-1 / 2) f - (1 / 5 : ℝ) * (∫ t : ℝ, ‖f t‖ ^ 2) := by
+  unfold margin shiftedOddCoreEnergy
+  ring
+
+private theorem trial_margin (a b : ℝ) :
+    margin (finiteSine 2 (trial a b)) =
+      diagonal65 * a ^ 2 + diagonal66 * b ^ 2 + 2 * mixedEntry * (a * b) := by
+  rw [margin_eq, trial_mass, core_eq _ (trial_low a b), trial65, trial66]
+  unfold diagonal65 diagonal66 mixedEntry
+  ring
+
+private theorem block_lower (a b : ℝ) :
+    (9 / 5 : ℝ) * (a ^ 2 + b ^ 2) ≤
+      diagonal65 * a ^ 2 + diagonal66 * b ^ 2 + 2 * mixedEntry * (a * b) := by
+  have h := two_mul_mass_le_shiftedOddCoreEnergy (trial a b) (trial_low a b)
+  rw [trial_mass] at h
+  rw [← trial_margin, margin_eq, trial_mass]
+  linarith only [h]
+
+private theorem diagonal65_pos : 0 < diagonal65 := by
+  have h := block_lower 1 0
+  norm_num at h
+  linarith only [h]
+
+/-- Second pivot of the two-mode Schur elimination. -/
+def secondPivot : ℝ := diagonal66 - mixedEntry ^ 2 / diagonal65
+
+theorem secondPivot_pos : 0 < secondPivot := by
+  have h := block_lower (-(mixedEntry / diagonal65)) 1
+  have hpoly : diagonal65 * (-(mixedEntry / diagonal65)) ^ 2 + diagonal66 * (1 : ℝ) ^ 2 +
+      2 * mixedEntry * (-(mixedEntry / diagonal65) * 1) = secondPivot := by
+    unfold secondPivot
+    field_simp [diagonal65_pos.ne']
+    ring
+  rw [hpoly] at h
+  nlinarith only [h, sq_nonneg (-(mixedEntry / diagonal65))]
+
+/-- Exact payment for eliminating modes 65 and 66 from the physical margin. -/
+def schurPayment (g : ℝ → ℝ) : ℝ :=
+  coupling 65 g ^ 2 / diagonal65 +
+    (coupling 66 g - mixedEntry * coupling 65 g / diagonal65) ^ 2 / secondPivot
+
+private theorem margin_add_trial {g : ℝ → ℝ} (hg : MemLp g 2 volume) (hgm : Measurable g)
+    (hgs : ∀ᵐ t : ℝ, t ∉ Icc (-2 : ℝ) 2 → g t = 0)
+    (hgγ : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r g) (Ioi 0))
+    (a b : ℝ) :
+    margin (finiteSine 2 (trial a b) + g) =
+      diagonal65 * a ^ 2 + diagonal66 * b ^ 2 + 2 * mixedEntry * (a * b) +
+        2 * (a * coupling 65 g + b * coupling 66 g) + margin g := by
+  obtain ⟨ha, hb⟩ := coupling_integrable hg
+  have hpair : (∫ t : ℝ, g t * borderedTrialOutput 2 (-3 / 10) (trial a b) 0 t) =
+      a * coupling 65 g + b * coupling 66 g := by
+    simp_rw [trial_output, mul_add, mul_left_comm (g _)]
+    rw [integral_add (ha.const_mul a) (hb.const_mul b), integral_const_mul, integral_const_mul]
+    rfl
+  have h := shiftedOddBorderedEnergy_add_finiteSine 2 (by norm_num) (-3 / 10)
+    (trial a b) 0 hg hgm hgs hgγ
+  simp only [shiftedOddBorderedEnergy, mul_zero, zero_mul, add_zero,
+    zero_pow (by decide : 2 ≠ 0), zero_div] at h
+  change margin (finiteSine 2 (trial a b) + g) =
+    margin (finiteSine 2 (trial a b)) +
+      2 * (∫ t : ℝ, g t * borderedTrialOutput 2 (-3 / 10) (trial a b) 0 t) + margin g at h
+  rw [h, hpair, trial_margin]
+
+/-- The exact minimum over both retained coefficients. Thus controlling the
+remaining signed margin after this explicit payment is necessary and sufficient
+for nonnegativity along every such two-mode variation. -/
+theorem isLeast_margin_add_trial {g : ℝ → ℝ} (hg : MemLp g 2 volume) (hgm : Measurable g)
+    (hgs : ∀ᵐ t : ℝ, t ∉ Icc (-2 : ℝ) 2 → g t = 0)
+    (hgγ : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r g) (Ioi 0)) :
+    IsLeast (Set.range fun p : ℝ × ℝ =>
+      shiftedOddCoreEnergy 2 (-3 / 10) (finiteSine 2 (trial p.1 p.2) + g))
+      (shiftedOddCoreEnergy 2 (-3 / 10) g - schurPayment g) := by
+  let v := coupling 66 g - mixedEntry * coupling 65 g / diagonal65
+  have complete (a b : ℝ) : margin (finiteSine 2 (trial a b) + g) =
+      (margin g - schurPayment g) +
+        (diagonal65 * (a + (mixedEntry * b + coupling 65 g) / diagonal65) ^ 2 +
+          secondPivot * (b + v / secondPivot) ^ 2) := by
+    rw [margin_add_trial hg hgm hgs hgγ]
+    unfold schurPayment
+    change _ = (margin g - (coupling 65 g ^ 2 / diagonal65 + v ^ 2 / secondPivot)) + _
+    field_simp [diagonal65_pos.ne', secondPivot_pos.ne']
+    unfold secondPivot v
+    field_simp [diagonal65_pos.ne']
+    ring
+  constructor
+  · let b := -(v / secondPivot)
+    let a := -((mixedEntry * b + coupling 65 g) / diagonal65)
+    refine ⟨(a, b), ?_⟩
+    change margin (finiteSine 2 (trial a b) + g) = margin g - schurPayment g
+    rw [complete]
+    simp [a, b]
+  · rintro _ ⟨⟨a, b⟩, rfl⟩
+    change margin g - schurPayment g ≤ margin (finiteSine 2 (trial a b) + g)
+    rw [complete]
+    exact le_add_of_nonneg_right (add_nonneg
+      (mul_nonneg diagonal65_pos.le (sq_nonneg _)) (mul_nonneg secondPivot_pos.le (sq_nonneg _)))
+
+/-- The signed payment is precisely the bound the receiving margin must
+satisfy to obtain nonnegativity for all trials on modes 65 and 66. -/
+theorem schurPayment_le_iff {g : ℝ → ℝ} (hg : MemLp g 2 volume) (hgm : Measurable g)
+    (hgs : ∀ᵐ t : ℝ, t ∉ Icc (-2 : ℝ) 2 → g t = 0)
+    (hgγ : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r g) (Ioi 0)) :
+    schurPayment g ≤ shiftedOddCoreEnergy 2 (-3 / 10) g ↔
+      ∀ a b : ℝ, 0 ≤ shiftedOddCoreEnergy 2 (-3 / 10) (finiteSine 2 (trial a b) + g) := by
+  have h := isLeast_margin_add_trial hg hgm hgs hgγ
+  constructor
+  · intro hpay a b
+    exact (sub_nonneg.mpr hpay).trans (h.2 (Set.mem_range_self (a, b)))
+  · intro hall
+    obtain ⟨⟨a, b⟩, heq⟩ := h.1
+    exact sub_nonneg.mp (heq ▸ hall a b)
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoModes65And66
