@@ -2,6 +2,7 @@
 Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 -/
+import Mathlib.Analysis.Asymptotics.Lemmas
 import Mathlib.Analysis.Complex.Exponential
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.MeasureTheory.Function.L2Space
@@ -225,5 +226,44 @@ theorem integral_sq_logWindowWeight (a A : ℝ) (hA : 0 ≤ A) :
   simp only [mul_zero, Real.exp_zero, smul_eq_mul]
   field_simp [ha]
   ring
+
+/-- The exact Cauchy–Schwarz budget vanishes at the real-axis inverse
+square-root rate and at the interior exponential rate. -/
+theorem logWindowBudget_tendsto_zero_of_isLittleO {a : ℝ} (ha : 0 ≤ a)
+    (A E : ℕ → ℝ) (hA : ∀ n, 0 ≤ A n) (hE : ∀ n, 0 ≤ E n)
+    (hRate : Asymptotics.IsLittleO atTop E (fun n =>
+      if a = 0 then (Real.sqrt (2 * A n))⁻¹ else Real.exp (-(a * A n)))) :
+    Tendsto (fun n =>
+      Real.sqrt (∫ t in Set.Icc (-A n) (A n), (Real.exp (a * |t|)) ^ (2 : ℕ)) *
+        E n) atTop (𝓝 0) := by
+  have hRatio := hRate.tendsto_div_nhds_zero
+  by_cases hZero : a = 0
+  · convert hRatio using 1
+    funext n
+    simp only [integral_sq_logWindowWeight a (A n) (hA n), ite_eq_left hZero, div_inv_eq_mul]
+    exact mul_comm _ _
+  have hScale : Tendsto (fun n => (E n / Real.exp (-(a * A n))) / Real.sqrt a)
+      atTop (𝓝 0) := by
+    have h := hRatio.div_const (Real.sqrt a)
+    simpa only [ite_eq_right hZero, zero_div] using h
+  apply squeeze_zero (fun n => mul_nonneg (Real.sqrt_nonneg _) (hE n)) _ hScale
+  intro n
+  have hWeight :
+      Real.sqrt (∫ t in Set.Icc (-A n) (A n), (Real.exp (a * |t|)) ^ (2 : ℕ)) ≤
+        Real.exp (a * A n) / Real.sqrt a := by
+    rw [integral_sq_logWindowWeight a (A n) (hA n), ite_eq_right hZero]
+    calc
+      _ ≤ Real.sqrt (Real.exp (2 * a * A n) / a) :=
+        Real.sqrt_le_sqrt (div_le_div_of_nonneg_right (sub_le_self _ zero_le_one) ha)
+      _ = Real.exp (a * A n) / Real.sqrt a := by
+        rw [Real.sqrt_div (Real.exp_nonneg _),
+          show 2 * a * A n = (2 : ℕ) * (a * A n) by push_cast; ring,
+          Real.exp_nat_mul, Real.sqrt_sq (Real.exp_nonneg _)]
+  calc
+    _ ≤ (Real.exp (a * A n) / Real.sqrt a) * E n :=
+      mul_le_mul_of_nonneg_right hWeight (hE n)
+    _ = (E n / Real.exp (-(a * A n))) / Real.sqrt a := by
+      rw [Real.exp_neg, div_inv_eq_mul]
+      ring
 
 end GRWTSK.NumberTheory.Zeta.XiWeightedFourierReturn
