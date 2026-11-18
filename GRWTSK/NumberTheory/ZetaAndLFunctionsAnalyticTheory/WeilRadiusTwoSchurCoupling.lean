@@ -25,6 +25,7 @@ namespace GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoModes65And66
 
 open OddConcreteResidual OddModeDependentTail OddResidualSourceComparison OddSineParseval
 open OddHighComplement OddRootProjection OddWrapEnergy
+open OddResidualMajorant
 
 private theorem highCoefficient_eq {N n : ℕ} (hn : n ≤ N) (j : ℕ) :
     sineCoefficient 2 (modeOutput n) (N + 1 + j) =
@@ -153,5 +154,66 @@ theorem schurPayment_le_mul_core_of_gram_bound {N : ℕ} (hN : 344064 ≤ N)
   rw [hpivot] at hb
   rw [mul_comm κ]
   exact (div_le_iff₀ hκ).1 (by linarith only [h, hb])
+
+/-- Trial coefficients representing the pivot rows in the original sine basis. -/
+def receivingTrialCoefficients (a b : ℝ) (n : ℕ) : ℝ :=
+  if n = 65 then a - b * (mixedEntry / diagonal65) else if n = 66 then b else 0
+
+private theorem literalAugmentedRow_receivingTrial {m : ℕ} (hm : 66 < m) (a b : ℝ) :
+    literalAugmentedRow 66 2 (receivingTrialCoefficients a b) 0 (-3 / 10) m =
+      a * literalCoreEntry 2 m 65 + b * pivotReceivingColumn m := by
+  let term (n : ℕ) := receivingTrialCoefficients a b n *
+    (literalCoreEntry 2 m n - (if m = n then (-3 / 10 : ℝ) else 0))
+  have hsubset : ({65, 66} : Finset ℕ) ⊆ Finset.Icc 1 66 := by decide
+  have hsupport (n : ℕ) (_ : n ∈ Finset.Icc 1 66) (hn : n ∉ ({65, 66} : Finset ℕ)) :
+      term n = 0 := by
+    have hn65 : n ≠ 65 := fun h => hn (by simp [h])
+    have hn66 : n ≠ 66 := fun h => hn (by simp [h])
+    simp [term, receivingTrialCoefficients, hn65, hn66]
+  unfold literalAugmentedRow
+  simp only [mul_zero, add_zero]
+  change (∑ n ∈ Finset.Icc 1 66, term n) = _
+  rw [← Finset.sum_subset hsubset hsupport]
+  have hm65 : m ≠ 65 := by omega
+  have hm66 : m ≠ 66 := by omega
+  simp [term, receivingTrialCoefficients, pivotReceivingColumn, hm65, hm66]
+  ring
+
+/-- Enclose the whole weighted receiving Gram quadratic by its exact signed
+finite sum and the complete remote allowance. The denominator prices every
+remote mode using the original weight at the first omitted index. -/
+theorem weightedReceivingGram_le_finite_add_remote {N L J : ℕ} (hN : 344064 ≤ N)
+    (hNL : N ≤ L) (hLJ : L ≤ J) (a b s : ℝ) (hs : 0 < s) :
+    weightedReceivingGram N a b ≤
+      (∑ j ∈ Finset.range (L - N),
+        (a * literalCoreEntry 2 (N + 1 + j) 65 +
+          b * pivotReceivingColumn (N + 1 + j)) ^ 2 / radiusTwoMiddleWeight (N + 1 + j)) +
+      completeRemoteAllowance 66 L J 2 (receivingTrialCoefficients a b) 0 s /
+        radiusTwoMiddleWeight (L + 1) := by
+  have hrow (j : ℕ) :
+      literalAugmentedRow 66 2 (receivingTrialCoefficients a b) 0 (-3 / 10) (N + 1 + j) =
+        a * literalCoreEntry 2 (N + 1 + j) 65 + b * pivotReceivingColumn (N + 1 + j) :=
+    literalAugmentedRow_receivingTrial (by omega) a b
+  have hweight (m : ℕ) (hm : 344065 ≤ m) : (1 / 5 : ℝ) ≤ radiusTwoMiddleWeight m :=
+    modeWeight_two_threeTenths_bounds.1 m hm
+  have hmono : Monotone radiusTwoMiddleWeight :=
+    modeWeight_mono 2 (by norm_num) (-3 / 10) (47 / 5) (OddSharpBoundaryNorm.boundaryLossHalfExp 2)
+  have hfloor : 0 < radiusTwoMiddleWeight (L + 1) :=
+    (by norm_num : (0 : ℝ) < 1 / 5).trans_le (hweight _ (by omega))
+  have hsq := summable_receivingCombination_sq (N := N) (by omega) a b
+  have hprice : Summable (fun j : ℕ =>
+      (literalAugmentedRow 66 2 (receivingTrialCoefficients a b) 0 (-3 / 10) (N + 1 + j)) ^ 2 /
+        radiusTwoMiddleWeight (N + 1 + j)) := by
+    refine Summable.of_nonneg_of_le ?_ ?_ (hsq.div_const (1 / 5))
+    · intro j
+      exact div_nonneg (sq_nonneg _) ((by norm_num : (0 : ℝ) ≤ 1 / 5).trans (hweight _ (by omega)))
+    · intro j
+      rw [hrow]
+      exact div_le_div_of_nonneg_left (sq_nonneg _) (by norm_num) (hweight _ (by omega))
+  have h := weightedLiteralResidual_le_finite_add_remote hNL (by omega : 66 ≤ L) (by omega) hLJ
+    2 (by norm_num) (receivingTrialCoefficients a b) 0 (-3 / 10) s hs
+    radiusTwoMiddleWeight (radiusTwoMiddleWeight (L + 1)) hfloor
+    (fun m hm => hmono (show L + 1 ≤ m by omega)) hprice
+  simpa only [weightedReceivingGram, hrow] using h
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoModes65And66
