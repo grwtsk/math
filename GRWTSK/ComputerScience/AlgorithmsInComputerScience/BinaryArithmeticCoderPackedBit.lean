@@ -90,4 +90,89 @@ theorem readSectionBit64_eq_none_iff (buffer : Array UInt8) (position sectionEnd
   · rw [ite_eq_right (fun h => hSection (UInt64.lt_iff_toNat_lt.1 h))]
     exact ⟨fun _ => Or.inl (Nat.le_of_not_gt hSection), fun _ => rfl⟩
 
+private theorem readSectionBit64_next (buffer : Array UInt8) (position sectionEnd next : UInt64)
+    (bit : Bool) (hRead : readSectionBit64 buffer position sectionEnd = some (bit, next)) :
+    next.toNat = position.toNat + 1 ∧ position.toNat < sectionEnd.toNat ∧
+      position.toNat < 8 * buffer.size := by
+  have hRoom : ¬ (sectionEnd.toNat ≤ position.toNat ∨ 8 * buffer.size ≤ position.toNat) := by
+    intro h
+    have hNone := (readSectionBit64_eq_none_iff _ _ _).2 h
+    rw [hRead] at hNone
+    contradiction
+  have hSection : position.toNat < sectionEnd.toNat := by omega
+  have hBacking : position.toNat < 8 * buffer.size := by omega
+  have hRefines := readSectionBit64_refines buffer position sectionEnd
+  have hIndex : position.toNat / 8 < buffer.size := by omega
+  rw [hRead, Option.map_some, ite_eq_left hSection, getElem?_pos buffer _ hIndex,
+    Option.map_some, Option.some.injEq, Prod.mk.injEq] at hRefines
+  exact ⟨hRefines.2, hSection, hBacking⟩
+
+/-- Read exactly `count` bits in wire order within the declared section.
+An empty request consumes nothing, even when there is no backing byte. -/
+def readSectionBits64 (buffer : Array UInt8) (sectionEnd : UInt64) :
+    Nat → UInt64 → Option (List Bool × UInt64)
+  | 0, position => some ([], position)
+  | count + 1, position => do
+    let (bit, next) ← readSectionBit64 buffer position sectionEnd
+    let (bits, rest) ← readSectionBits64 buffer sectionEnd count next
+    pure (bit :: bits, rest)
+
+/-- A positive request is rejected exactly when its exclusive end would cross
+the section or backing limit. On success the returned count and cursor are exact. -/
+theorem readSectionBits64_spec (buffer : Array UInt8) (sectionEnd : UInt64)
+    (count : Nat) (position : UInt64) :
+    match readSectionBits64 buffer sectionEnd count position with
+    | none => 0 < count ∧
+        (sectionEnd.toNat < position.toNat + count ∨ 8 * buffer.size < position.toNat + count)
+    | some (bits, rest) => bits.length = count ∧ rest.toNat = position.toNat + count ∧
+        (0 < count → rest.toNat ≤ sectionEnd.toNat ∧ rest.toNat ≤ 8 * buffer.size) := by
+  induction count generalizing position with
+  | zero => simp [readSectionBits64]
+  | succ count ih =>
+    cases hRead : readSectionBit64 buffer position sectionEnd with
+    | none =>
+      have hShort := (readSectionBit64_eq_none_iff buffer position sectionEnd).1 hRead
+      simp [readSectionBits64, hRead]
+      omega
+    | some first =>
+      obtain ⟨bit, next⟩ := first
+      obtain ⟨hNext, hSection, hBacking⟩ :=
+        readSectionBit64_next buffer position sectionEnd next bit hRead
+      have hTail := ih next
+      cases hReadTail : readSectionBits64 buffer sectionEnd count next with
+      | none =>
+        rw [hReadTail] at hTail
+        simp [readSectionBits64, hRead, hReadTail]
+        omega
+      | some result =>
+        obtain ⟨bits, rest⟩ := result
+        rw [hReadTail] at hTail
+        obtain ⟨hCount, hRest, hBounds⟩ := hTail
+        simp [readSectionBits64, hRead, hReadTail]
+        refine ⟨by omega, by omega, ?_⟩
+        by_cases hPositive : 0 < count
+        · exact hBounds hPositive
+        · exact ⟨by omega, by omega⟩
+
+/-- An exact-length read fails if and only if a nonempty request crosses a limit. -/
+theorem readSectionBits64_eq_none_iff (buffer : Array UInt8) (sectionEnd : UInt64)
+    (count : Nat) (position : UInt64) :
+    readSectionBits64 buffer sectionEnd count position = none ↔ 0 < count ∧
+      (sectionEnd.toNat < position.toNat + count ∨ 8 * buffer.size < position.toNat + count) := by
+  have hSpec := readSectionBits64_spec buffer sectionEnd count position
+  cases hRead : readSectionBits64 buffer sectionEnd count position with
+  | none =>
+    rw [hRead] at hSpec
+    exact ⟨fun _ => hSpec, fun _ => rfl⟩
+  | some result =>
+    obtain ⟨bits, rest⟩ := result
+    rw [hRead] at hSpec
+    obtain ⟨_, hRest, hBounds⟩ := hSpec
+    constructor
+    · intro h
+      cases h
+    · intro h
+      have := hBounds h.1
+      omega
+
 end GRWTSK.ComputerScience.BinaryArithmeticCoder
