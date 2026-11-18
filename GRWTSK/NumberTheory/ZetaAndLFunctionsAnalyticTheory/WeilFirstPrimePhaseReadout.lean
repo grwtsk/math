@@ -342,6 +342,35 @@ theorem onePrime_imaginary_error_from_dual_estimates
   apply div_le_div_of_nonneg_right _ (abs_nonneg _)
   exact (abs_sub _ _).trans (add_le_add dual_ok forward_ok)
 
+/-- The sum of the two signed sectors recovers the real sample when the
+real character coefficient is nonzero. Its error depends on the sum of the
+sector errors, complementing the difference used for imaginary recovery. -/
+theorem onePrime_real_error_eq_dual_error_sum
+    (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (phase : (χ (2 : ℕ)).re ≠ 0) (f : WindowTest A)
+    (estimate dualEstimate : ℝ) :
+    let coefficient := 4 * primeWeight 2 * (χ (2 : ℕ)).re
+    |(dualEstimate + estimate) / coefficient - (correlation f.1 (Real.log 2)).re| =
+      |(dualEstimate - signedWindowValue χ⁻¹ A f.1) +
+        (estimate - signedWindowValue χ A f.1)| / |coefficient| := by
+  intro coefficient
+  have weight : 0 < primeWeight 2 := by
+    rw [primeWeight, ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two]
+    exact div_pos (Real.log_pos (by norm_num)) (Real.sqrt_pos.2 (by norm_num))
+  have nonzero : coefficient ≠ 0 :=
+    mul_ne_zero (mul_ne_zero (by norm_num) weight.ne') phase
+  have total : signedWindowValue χ⁻¹ A f.1 + signedWindowValue χ A f.1 =
+      coefficient * (correlation f.1 (Real.log 2)).re := by
+    rw [signedWindowValue, signedWindowValue, inv_inv, primeReadout_dual_add,
+      firstPowers_eq_singleton_two lo hi]
+    simp [coefficient, mul_assoc]
+  have deviation : (dualEstimate + estimate) / coefficient - (correlation f.1 (Real.log 2)).re =
+      ((dualEstimate - signedWindowValue χ⁻¹ A f.1) +
+        (estimate - signedWindowValue χ A f.1)) / coefficient := by
+    field_simp [nonzero]
+    linear_combination total
+  rw [deviation, abs_div]
+
 /-- The real reading after rotating by `-i` measures the signed imaginary
 correlation at the original heat gain. -/
 theorem heatWaveReadout_negI_re (s rate : ℝ) (z : ℂ) :
