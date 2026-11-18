@@ -61,4 +61,43 @@ theorem scaledCount64_lt_total (offset width total : UInt64)
     hOffset hWidth hTotal hTotalBound).2
   simpa only [Nat.mul_div_cancel _ hTotal] using hOffset
 
+/-- Rebase a widened 32-bit value, double it, and append one bit. Use a zero
+carry for either endpoint of the half-open interval. -/
+def renormalize64 (value offset carry : UInt64) : UInt64 :=
+  2 * (value - offset) + carry
+
+/-- Under the subtraction and bit guards, every operation is exact in `UInt64`. -/
+theorem renormalize64_toNat (value offset carry : UInt64)
+    (hOffset : offset.toNat ≤ value.toNat) (hValue : value.toNat ≤ 2 ^ 32)
+    (hCarry : carry.toNat ≤ 1) :
+    (renormalize64 value offset carry).toNat =
+      2 * (value.toNat - offset.toNat) + carry.toNat := by
+  have hMul : 2 * (value.toNat - offset.toNat) < 2 ^ 64 := by omega
+  have hAdd : 2 * (value.toNat - offset.toNat) + carry.toNat < 2 ^ 64 := by omega
+  unfold renormalize64
+  rw [UInt64.toNat_add, UInt64.toNat_mul,
+    UInt64.toNat_sub_of_le _ _ (UInt64.le_iff_toNat_le.2 hOffset)]
+  change ((2 * (value.toNat - offset.toNat)) % (2 ^ 64) + carry.toNat) % (2 ^ 64) = _
+  rw [Nat.mod_eq_of_lt hMul, Nat.mod_eq_of_lt hAdd]
+
+/-- A half-range shift leaves a valid widened interval and preserves the
+decoder's tag membership. In particular the new exclusive upper endpoint may
+equal `2^32` and still fits in the widened representation. -/
+theorem renormalize64_membership (lower upper tag offset carry : UInt64)
+    (hOffsetLower : offset.toNat ≤ lower.toNat) (hOrder : lower.toNat < upper.toNat)
+    (hUpper : upper.toNat ≤ 2 ^ 32) (hHalf : upper.toNat ≤ offset.toNat + 2 ^ 31)
+    (hOffsetTag : offset.toNat ≤ tag.toNat) (hTag : tag.toNat ≤ 2 ^ 32)
+    (hCarry : carry.toNat ≤ 1) :
+    let lo := (renormalize64 lower offset 0).toNat
+    let hi := (renormalize64 upper offset 0).toNat
+    let c := (renormalize64 tag offset carry).toNat
+    lo < hi ∧ hi ≤ 2 ^ 32 ∧ hi - lo = 2 * (upper.toNat - lower.toNat) ∧
+      ((lower.toNat ≤ tag.toNat ∧ tag.toNat < upper.toNat) ↔ (lo ≤ c ∧ c < hi)) := by
+  dsimp only
+  rw [renormalize64_toNat lower offset 0 hOffsetLower (by omega) (by decide),
+    renormalize64_toNat upper offset 0 (by omega) hUpper (by decide),
+    renormalize64_toNat tag offset carry hOffsetTag hTag hCarry]
+  simp only [show (0 : UInt64).toNat = 0 from rfl, Nat.add_zero]
+  omega
+
 end GRWTSK.ComputerScience.BinaryArithmeticCoder
