@@ -50,4 +50,36 @@ theorem onePrime_tsum_sub_dual_eq_phase {q : ℕ} [NeZero q] {A : ℝ}
   simpa [firstPowers_eq_singleton_two lo hi, hLater, dualPhasePart, mul_assoc] using
     tsum_sub_dual _ _ χ A f.1 hsource hdual
 
+/-- Paired estimates of the two real zero sums recover the imaginary
+first-prime correlation with error controlled by the difference of their
+signed errors. A common additive error cancels. -/
+theorem onePrime_imaginary_error_eq_dual_zeroSum_error_difference
+    {q : ℕ} [NeZero q] {A : ℝ}
+    (χ : DirichletCharacter ℂ q) (hprim : χ.IsPrimitive)
+    (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (phase : (χ (2 : ℕ)).im ≠ 0) (f : WindowTest A)
+    (estimate dualEstimate : ℝ) :
+    let W := fun z : ℂ => ∫ r : ℝ, correlation f.1 r * Complex.exp ((z - 1 / 2) * (r : ℂ))
+    let zeroSum := fun ψ : DirichletCharacter ℂ q =>
+      ∑' ρ : CriticalStripZero ψ, (zeroMultiplicity ψ ρ : ℂ) * W ρ.1
+    let coefficient := 4 * primeWeight 2 * (χ (2 : ℕ)).im
+    |(estimate - dualEstimate) / coefficient - (correlation f.1 (Real.log 2)).im| =
+      |(estimate - (zeroSum χ).re) - (dualEstimate - (zeroSum χ⁻¹).re)| / |coefficient| := by
+  intro W zeroSum coefficient
+  have weight : 0 < primeWeight 2 := by
+    rw [primeWeight, ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two]
+    exact div_pos (Real.log_pos (by norm_num)) (Real.sqrt_pos.2 (by norm_num))
+  have hcoef : coefficient ≠ 0 :=
+    mul_ne_zero (mul_ne_zero (by norm_num) weight.ne') phase
+  have hgap : (zeroSum χ).re - (zeroSum χ⁻¹).re =
+      coefficient * (correlation f.1 (Real.log 2)).im := by
+    simpa only [zeroSum, W, coefficient, Complex.sub_re, Complex.ofReal_re] using
+      congrArg Complex.re (onePrime_tsum_sub_dual_eq_phase χ hprim lo hi f)
+  have hdev : (estimate - dualEstimate) / coefficient - (correlation f.1 (Real.log 2)).im =
+      ((estimate - (zeroSum χ).re) - (dualEstimate - (zeroSum χ⁻¹).re)) / coefficient := by
+    apply (eq_div_iff hcoef).2
+    rw [sub_mul, div_mul_cancel₀ _ hcoef]
+    linear_combination hgap
+  rw [hdev, abs_div]
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
