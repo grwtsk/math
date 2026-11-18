@@ -216,4 +216,42 @@ theorem runOnWithMigratedCheckpoint_eq {w : ℕ} (c : Configuration w)
     simpa only [runOnWithMigratedCheckpoint, runOn_append first original mid, prefixRun,
       Option.bind_some, Option.join_some] using congrArg Option.join resumedView
 
+/-- A chunk that ends by saving a checkpoint and moving it to a resume window. -/
+structure CheckpointChunk where
+  instructions : List ℕ
+  reachedWindow : ℕ
+  resumeWindow : ℕ
+
+/-- Execute a finite schedule of checkpoint boundaries, then run the final chunk. -/
+def runOnWithCheckpointSchedule (last : List ℕ) (target : ℕ) :
+    {w : ℕ} → List CheckpointChunk → Configuration w → Option (Cfg 95 2 × ℤ)
+  | _, [], c => (runOn last target c).map handoffView
+  | _, chunk :: rest, c =>
+    (runOn chunk.instructions chunk.reachedWindow c).bind fun reached =>
+      (migrateCheckpoint chunk.reachedWindow chunk.resumeWindow (encodeCheckpoint reached)).bind
+        fun bits =>
+          (decodeCheckpoint chunk.resumeWindow bits).bind (runOnWithCheckpointSchedule last target rest)
+
+/-- Any finite sequence of migrated checkpoints preserves the native result
+of the concatenated instruction schedule, including failure at any boundary. -/
+theorem runOnWithCheckpointSchedule_eq {w : ℕ} (c : Configuration w)
+    (chunks : List CheckpointChunk) (last : List ℕ) (target : ℕ) :
+    runOnWithCheckpointSchedule last target chunks c =
+      (runOn (chunks.flatMap CheckpointChunk.instructions ++ last) target c).map handoffView := by
+  induction chunks generalizing w with
+  | nil => rfl
+  | cons chunk rest ih =>
+    rw [List.flatMap_cons, List.append_assoc, runOn_append _ _ chunk.reachedWindow]
+    cases reachedRun : runOn chunk.instructions chunk.reachedWindow c with
+    | none =>
+      simp only [runOnWithCheckpointSchedule, reachedRun, Option.bind_none, Option.map_none]
+    | some reached =>
+      simp only [runOnWithCheckpointSchedule, reachedRun, Option.bind_some,
+        migrateCheckpoint_encodeCheckpoint]
+      simp only [decodeCheckpoint, encodeCheckpoint, readRecord_writeRecord, Option.bind_some,
+        decodeRecord_encodeRecord, ih]
+      exact runOn_handoffView_eq
+        ((handoffView_normalizeConfiguration _).trans (handoffView_readdress _ reached))
+        rfl target target
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine.NativeCheckpoint
