@@ -254,4 +254,55 @@ theorem runOnWithCheckpointSchedule_eq {w : ℕ} (c : Configuration w)
         ((handoffView_normalizeConfiguration _).trans (handoffView_readdress _ reached))
         rfl target target
 
+/-- Keep the checkpoint boundaries reached within an instruction budget.
+If the budget ends inside a chunk, the partial chunk becomes the final run. -/
+def takeCheckpointSchedule (budget : ℕ) (last : List ℕ) :
+    List CheckpointChunk → List CheckpointChunk × List ℕ
+  | [] => ([], last.take budget)
+  | chunk :: rest =>
+    if chunk.instructions.length ≤ budget then
+      let tail := takeCheckpointSchedule (budget - chunk.instructions.length) last rest
+      (chunk :: tail.1, tail.2)
+    else ([], chunk.instructions.take budget)
+
+private theorem takeCheckpointSchedule_instructions (budget : ℕ)
+    (chunks : List CheckpointChunk) (last : List ℕ) :
+    let clipped := takeCheckpointSchedule budget last chunks
+    clipped.1.flatMap CheckpointChunk.instructions ++ clipped.2 =
+      (chunks.flatMap CheckpointChunk.instructions ++ last).take budget := by
+  induction chunks generalizing budget with
+  | nil => rfl
+  | cons chunk rest ih =>
+    by_cases fits : chunk.instructions.length ≤ budget
+    · simp only [takeCheckpointSchedule, ite_eq_left fits, List.flatMap_cons, List.append_assoc]
+      rw [ih, List.take_append (l₁ := chunk.instructions), List.take_of_length_le fits]
+    · have within := Nat.le_of_lt (Nat.lt_of_not_ge fits)
+      simp only [takeCheckpointSchedule, ite_eq_right fits, List.flatMap_nil, List.nil_append,
+        List.flatMap_cons, List.append_assoc, List.take_append_of_le_length within]
+
+/-- Execute the first instructions up to the budget, migrating every reached checkpoint. -/
+def runOnCheckpointPrefix {w : ℕ} (budget : ℕ) (chunks : List CheckpointChunk)
+    (last : List ℕ) (target : ℕ) (c : Configuration w) : Option (Cfg 95 2 × ℤ) :=
+  let schedulePrefix := takeCheckpointSchedule budget last chunks
+  runOnWithCheckpointSchedule schedulePrefix.2 target schedulePrefix.1 c
+
+/-- The checkpoint executor agrees with native execution at every instruction prefix. -/
+theorem runOnCheckpointPrefix_eq {w : ℕ} (c : Configuration w) (budget : ℕ)
+    (chunks : List CheckpointChunk) (last : List ℕ) (target : ℕ) :
+    runOnCheckpointPrefix budget chunks last target c =
+      (runOn ((chunks.flatMap CheckpointChunk.instructions ++ last).take budget) target c).map
+        handoffView := by
+  unfold runOnCheckpointPrefix
+  rw [runOnWithCheckpointSchedule_eq, takeCheckpointSchedule_instructions]
+
+/-- If the native machine reaches a terminal state after n successful instructions,
+the checkpoint executor first fails at budget n + 1 whenever the schedule includes it. -/
+theorem runOnCheckpointPrefix_eq_none_iff_of_terminal {w n : ℕ} {c terminal : Configuration w}
+    (trace : run n c = some terminal) (stop : step terminal = none)
+    (budget : ℕ) (chunks : List CheckpointChunk) (last : List ℕ) (target : ℕ) :
+    runOnCheckpointPrefix budget chunks last target c = none ↔
+      n < min budget (chunks.flatMap CheckpointChunk.instructions ++ last).length := by
+  rw [runOnCheckpointPrefix_eq, Option.map_eq_none_iff,
+    runOn_eq_none_iff_length_gt_of_terminal trace stop, List.length_take]
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine.NativeCheckpoint
