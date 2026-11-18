@@ -88,6 +88,43 @@ theorem CyclicLassoMonoid.kernelOne_mul_quotient_injective :
     _ = n.exp.val % p + p * (n.exp.val / p) := by rw [hr, hq]
     _ = n.exp.val := Nat.mod_add_div _ _
 
+/-- The smallest auxiliary tag alphabet for lossless cycle projection
+has one tag for each quotient from zero through the maximum quotient. -/
+theorem CyclicLassoMonoid.exists_injective_kernelOne_mul_tag_iff (k : ℕ) :
+    (∃ tag : CyclicLassoMonoid μ p hp → Fin k,
+      Function.Injective (fun m => ((kernelOneFormula μ p hp).toMonoid * m, tag m))) ↔
+      (μ + p - 1) / p < k := by
+  let e := (kernelOneFormula μ p hp).toMonoid
+  let qmax := (μ + p - 1) / p
+  constructor
+  · rintro ⟨tag, htag⟩
+    let multiple (i : Fin (qmax + 1)) : CyclicLassoMonoid μ p hp :=
+      ⟨⟨i.val * p, by
+        have hi : i.val ≤ qmax := Nat.le_of_lt_succ i.isLt
+        have hbound := (Nat.le_div_iff_mul_le hp).mp hi
+        omega⟩⟩
+    have hproject (i : Fin (qmax + 1)) : e * multiple i = e * 1 :=
+      (kernelOne_mul_eq_iff_exp_modEq (multiple i) 1).2 (by
+        change (i.val * p) % p = 0 % p
+        simp)
+    have hinjective : Function.Injective (fun i => tag (multiple i)) := by
+      intro i j hij
+      have hm : multiple i = multiple j :=
+        htag (Prod.ext ((hproject i).trans (hproject j).symm) hij)
+      apply Fin.ext
+      exact Nat.mul_right_cancel hp (congrArg (fun m => m.exp.val) hm)
+    have hcard : qmax + 1 ≤ k := by
+      simpa using Fintype.card_le_of_injective _ hinjective
+    exact Nat.lt_of_succ_le hcard
+  · intro hk
+    let tag (m : CyclicLassoMonoid μ p hp) : Fin k :=
+      ⟨m.exp.val / p, lt_of_le_of_lt
+        (Nat.div_le_div_right (Nat.le_sub_one_of_lt m.exp.isLt)) hk⟩
+    refine ⟨tag, ?_⟩
+    intro m n hmn
+    apply kernelOne_mul_quotient_injective
+    exact congrArg (fun pair : CyclicLassoMonoid μ p hp × Fin k => (pair.1, pair.2.val)) hmn
+
 /-- Multiplication by the cycle identity preserves enough information to
 recover every complete label tail exactly when the lasso has no stem. -/
 theorem exists_decode_labelTails_of_kernelOne_mul_iff {A : Type*} {x : ℕ → A}
