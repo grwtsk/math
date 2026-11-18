@@ -176,6 +176,52 @@ theorem CyclicLassoMonoid.exists_injective_kernelOne_mul_bitVec_iff (b : ℕ) :
     rw [decodeCycleQuotient_encode b hwidth m, decodeCycleQuotient_encode b hwidth n] at hdecoded
     exact Option.some.inj hdecoded
 
+/-- The receiving decoder also rejects projected states from the stem. -/
+def CyclicLassoMonoid.decodeCanonicalCycleQuotient {b : ℕ}
+    (word : CyclicLassoMonoid μ p hp × BitVec b) : Option (CyclicLassoMonoid μ p hp) :=
+  if μ ≤ word.1.exp.val then decodeCycleQuotient word else none
+
+/-- With the sharp width bound, the receiving decoder accepts exactly an
+encoder output for the state it returns. -/
+theorem CyclicLassoMonoid.decodeCanonicalCycleQuotient_eq_some_iff {b : ℕ}
+    (hwidth : (μ + p - 1) / p < 2 ^ b)
+    (word : CyclicLassoMonoid μ p hp × BitVec b) (m : CyclicLassoMonoid μ p hp) :
+    decodeCanonicalCycleQuotient word = some m ↔ encodeCycleQuotient b m = word := by
+  constructor
+  · intro h
+    unfold decodeCanonicalCycleQuotient at h
+    split at h
+    · rename_i hcycle
+      have hexp : m.exp.val = word.1.exp.val % p + p * word.2.toNat := by
+        unfold decodeCycleQuotient at h
+        dsimp only at h
+        split at h
+        · exact (congrArg (fun z : CyclicLassoMonoid μ p hp => z.exp.val)
+            (Option.some.inj h)).symm
+        · contradiction
+      apply Prod.ext
+      · let x : LassoKernel μ p hp := ⟨word.1, hcycle⟩
+        let e := (kernelOneFormula μ p hp).toMonoid
+        have hfixed : e * word.1 = word.1 := by
+          change (kernelOneFormula μ p hp).toMonoid * x.toMonoid = x.toMonoid
+          rw [← kernel_mul_toMonoid, kernelOneFormula_eq_one, one_mul]
+        have hproj : e * m = e * word.1 :=
+          (kernelOne_mul_eq_iff_exp_modEq m word.1).2 (by
+            change m.exp.val % p = word.1.exp.val % p
+            rw [hexp, Nat.add_mul_mod_self_left, Nat.mod_mod])
+        exact hproj.trans hfixed
+      · apply BitVec.eq_of_toNat_eq
+        change (BitVec.ofNat b (m.exp.val / p)).toNat = word.2.toNat
+        rw [BitVec.toNat_ofNat, hexp, Nat.add_mul_div_left _ _ hp,
+          Nat.div_eq_of_lt (Nat.mod_lt _ hp), Nat.zero_add, Nat.mod_eq_of_lt word.2.isLt]
+    · contradiction
+  · intro h
+    rw [← h]
+    have hcycle : μ ≤ (encodeCycleQuotient b m).1.exp.val :=
+      (rightAbsorb (kernelOneFormula μ p hp) m).ge_mu
+    rw [decodeCanonicalCycleQuotient, ite_eq_left hcycle]
+    exact decodeCycleQuotient_encode b hwidth m
+
 /-- Multiplication by the cycle identity preserves enough information to
 recover every complete label tail exactly when the lasso has no stem. -/
 theorem exists_decode_labelTails_of_kernelOne_mul_iff {A : Type*} {x : ℕ → A}
