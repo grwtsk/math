@@ -476,14 +476,10 @@ theorem exact_read_graph_capacity_at_terminal {n : ℕ} {stop : Configuration}
     (fun w _ admitted => (exactRoot w).mp admitted)
   exact ⟨V, finite, G, root, le_antisymm upper lower, exactRoot⟩
 
-/-- A halted native run admits an exact finite presentation. Its vertices
-are the replayed configurations up to the terminal receipt, and every
-edge is a literal source step between retained vertices. -/
-theorem exists_finite_exact_rooted_read_graph_of_halts
+private theorem terminal_steps_of_halts
     (halts : ConjectureMachines.BundledMachine.Halts Riemann95.candidate) :
-    ∃ (V : Type) (_ : Fintype V) (G : LabeledGraph V Read) (root : V),
-      ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d := by
-  classical
+    ∃ (n : ℕ) (stop : Configuration),
+      Riemann95.nSteps n init = some stop ∧ step Riemann95.machine stop = none := by
   change (StateTransition.eval (step Riemann95.machine) (init : Configuration)).Dom at halts
   obtain ⟨stop, member⟩ := Part.dom_iff_mem.mp halts
   obtain ⟨reaches, terminal⟩ := StateTransition.mem_eval.mp member
@@ -498,6 +494,17 @@ theorem exists_finite_exact_rooted_read_graph_of_halts
       rw [show step Riemann95.machine before = some after from edge]
       rfl
   obtain ⟨n, reached⟩ := finiteTrace
+  exact ⟨n, stop, reached, terminal⟩
+
+/-- A halted native run admits an exact finite presentation. Its vertices
+are the replayed configurations up to the terminal receipt, and every
+edge is a literal source step between retained vertices. -/
+theorem exists_finite_exact_rooted_read_graph_of_halts
+    (halts : ConjectureMachines.BundledMachine.Halts Riemann95.candidate) :
+    ∃ (V : Type) (_ : Fintype V) (G : LabeledGraph V Read) (root : V),
+      ∀ word, (∃ t, WordPath G root word t) ↔ ∃ d, WordPath readGraph init word d := by
+  classical
+  obtain ⟨n, stop, reached, terminal⟩ := terminal_steps_of_halts halts
   obtain ⟨V, finite, G, root, _, exactRoot⟩ := exists_exact_read_graph_of_terminal_trace reached terminal
   exact ⟨V, finite, G, root, exactRoot⟩
 
@@ -513,6 +520,35 @@ theorem finite_exact_rooted_read_graph_iff_not_riemannHypothesis :
   · intro bad
     exact exists_finite_exact_rooted_read_graph_of_halts
       (Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr bad)
+
+/-- An infinite trace whose every finite prefix is produced by the native
+blank-start executor has distinct tails. A repeated tail would give an exact
+finite graph for the native language and hence a terminal transition budget. -/
+theorem distinct_tails_of_native_observations {trace : ℕ → Read}
+    (observed : ∀ n, observe n init = some (tracePrefix trace n))
+    {i j : ℕ} (ordered : i < j) :
+    ¬ (∀ k, trace (i + k) = trace (j + k)) := by
+  intro tails
+  obtain ⟨G, root, exactRoot⟩ := exactRoot_of_equal_tails ordered tails
+  have nativePrefix (word : List Read) :
+      (∃ d, WordPath readGraph init word d) ↔ word = tracePrefix trace word.length := by
+    constructor
+    · intro path
+      have result := (observe_iff_path word.length init word).mpr ⟨rfl, path⟩
+      exact Option.some.inj (result.symm.trans (observed word.length))
+    · intro eq
+      have result : observe word.length init = some word :=
+        (observed word.length).trans (congrArg some eq.symm)
+      exact ((observe_iff_path word.length init word).mp result).2
+  have halts := halts_of_finite_exact_rooted_read_graph G root
+    (fun word => (exactRoot word).trans (nativePrefix word).symm)
+  obtain ⟨n, stop, reached, terminal⟩ := terminal_steps_of_halts halts
+  have exhausted : Riemann95.nSteps (n + 1) init = none := by
+    rw [Riemann95.Dispatch.nSteps_composition, reached, Option.bind_some,
+      Riemann95.nSteps, terminal]
+    rfl
+  have h := observe_isSome_eq_steps (n + 1) init
+  simp [observed (n + 1), exhausted] at h
 
 /-- Once the native terminal word is known, one covered word and
 soundness up to the first failed budget certify the whole rooted language.
