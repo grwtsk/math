@@ -268,6 +268,16 @@ theorem secondPivot_pos : 0 < secondPivot := by
   rw [hpoly] at h
   nlinarith only [h, sq_nonneg (-(mixedEntry / diagonal65))]
 
+/-- The verified block floor in the coordinates of its two Schur pivots. -/
+theorem pivotEnergy_ge (a b : ℝ) :
+    (9 / 5 : ℝ) * ((a - b * (mixedEntry / diagonal65)) ^ 2 + b ^ 2) ≤
+      diagonal65 * a ^ 2 + secondPivot * b ^ 2 := by
+  have h := block_lower (a - b * (mixedEntry / diagonal65)) b
+  convert h using 1
+  unfold secondPivot
+  field_simp [diagonal65_pos.ne']
+  ring
+
 /-- Exact payment for eliminating modes 65 and 66 from the physical margin. -/
 def schurPayment (g : ℝ → ℝ) : ℝ :=
   coupling 65 g ^ 2 / diagonal65 +

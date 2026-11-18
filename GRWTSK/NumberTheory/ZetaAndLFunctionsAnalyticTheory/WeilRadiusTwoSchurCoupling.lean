@@ -5,6 +5,7 @@ Authors: grwtsk contributors
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoModes65And66
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddModeDependentTail
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilConductorFrontier
 
 /-!
 # Signed sine coefficients of the radius-two Schur coupling
@@ -215,5 +216,230 @@ theorem weightedReceivingGram_le_finite_add_remote {N L J : ℕ} (hN : 344064 �
     radiusTwoMiddleWeight (radiusTwoMiddleWeight (L + 1)) hfloor
     (fun m hm => hmono (show L + 1 ≤ m by omega)) hprice
   simpa only [weightedReceivingGram, hrow] using h
+
+open LowSchur OddBoundarySignalBounds OddOutputTrace OddResidualRows
+
+private theorem radiusTwoPrimeRatio_le : primeMass 2 / Real.pi ≤ 43 := by
+  have hm : primeMass 2 ≤ 128 := by
+    have h := primeMass_le_three_pow 2
+    norm_num at h
+    exact h
+  apply (div_le_iff₀ Real.pi_pos).2
+  linarith only [hm, Real.pi_gt_three]
+
+private theorem radiusTwoBoundaryEntry_le {n : ℕ} (hn : 0 < n) :
+    (n : ℝ) * boundarySignal 2 n ≤ 1 := by
+  have hnR : (1 : ℝ) ≤ n := by exact_mod_cast hn
+  have hnpos : (0 : ℝ) < n := by positivity
+  have hpi : (9 : ℝ) ≤ Real.pi ^ 2 := by nlinarith [Real.pi_gt_three]
+  calc
+    _ ≤ (n : ℝ) * (2 / (4 * (n : ℝ)) + 2 ^ 2 / (Real.pi ^ 2 * (n : ℝ) ^ 2)) :=
+      mul_le_mul_of_nonneg_left (boundarySignal_le 2 (by norm_num) hn) hnpos.le
+    _ = 1 / 2 + 4 / (Real.pi ^ 2 * (n : ℝ)) := by
+      field_simp [Real.pi_ne_zero, hnpos.ne']; ring
+    _ ≤ 1 / 2 + 4 / 9 := by
+      gcongr
+      calc
+        (9 : ℝ) ≤ Real.pi ^ 2 := hpi
+        _ = Real.pi ^ 2 * 1 := (mul_one _).symm
+        _ ≤ Real.pi ^ 2 * (n : ℝ) := by gcongr
+    _ ≤ _ := by norm_num
+
+private theorem abs_radiusTwoFirstTraceEntry_le {n : ℕ} (hn : 0 < n) :
+    |firstTraceEntry 2 n| ≤ 44 := by
+  have hsignal := boundarySignal_nonneg 2 (by norm_num) n
+  have hprime : (2 / Real.pi) * |primeSignal 2 n| ≤ primeMass 2 / Real.pi := by
+    calc
+      _ ≤ (2 / Real.pi) * (primeMass 2 / 2) :=
+        mul_le_mul_of_nonneg_left (abs_primeSignal_le 2 n) (by positivity)
+      _ = _ := by ring
+  unfold firstTraceEntry
+  norm_num only [div_self (show (2 : ℝ) ≠ 0 by norm_num), neg_mul, one_mul]
+  calc
+    _ ≤ |-(n : ℝ) * boundarySignal 2 n| + |(2 / Real.pi) * primeSignal 2 n| := by
+      simpa only [neg_mul] using
+        abs_sub (-((n : ℝ) * boundarySignal 2 n)) ((2 / Real.pi) * primeSignal 2 n)
+    _ = (n : ℝ) * boundarySignal 2 n + (2 / Real.pi) * |primeSignal 2 n| := by
+      rw [neg_mul, abs_neg, abs_of_nonneg (mul_nonneg (Nat.cast_nonneg _) hsignal),
+        abs_mul, abs_of_nonneg (by positivity : 0 ≤ 2 / Real.pi)]
+    _ ≤ 1 + 43 := add_le_add (radiusTwoBoundaryEntry_le hn) (hprime.trans radiusTwoPrimeRatio_le)
+    _ = _ := by norm_num
+
+private theorem radiusTwoBoundaryError_bounds :
+    0 ≤ boundaryErrorScale 2 ∧ boundaryErrorScale 2 ≤ 2 := by
+  have htwo : Real.exp (-2) < 1 / 2 :=
+    (Real.exp_lt_exp.mpr (by norm_num : (-2 : ℝ) < -1)).trans Real.exp_neg_one_lt_half
+  have height : Real.exp (-8) < 1 / 2 :=
+    (Real.exp_lt_exp.mpr (by norm_num : (-8 : ℝ) < -1)).trans Real.exp_neg_one_lt_half
+  have hden : 0 < 1 - Real.exp (-8) := by linarith only [height]
+  have hquot : Real.exp (-2) / (1 - Real.exp (-8)) ≤ 1 :=
+    (div_le_iff₀ hden).2 (by linarith only [htwo, height])
+  have hpi : (9 : ℝ) ≤ Real.pi ^ 2 := by nlinarith [Real.pi_gt_three]
+  unfold boundaryErrorScale
+  rw [show (-4 : ℝ) * 2 = -8 by norm_num]
+  constructor
+  · positivity
+  calc
+    _ ≤ (1 + 1) * ((2 : ℝ) ^ 2 / 9) := by gcongr
+    _ ≤ _ := by norm_num
+
+private theorem radiusTwoRemainderWeight_bounds {n : ℕ} (hn : n ∈ Finset.Icc 1 66) :
+    0 ≤ remainderWeight 66 344064 2 n ∧ remainderWeight 66 344064 2 n ≤ 400000 := by
+  have hnR : (n : ℝ) ≤ 66 := by exact_mod_cast (Finset.mem_Icc.mp hn).2
+  have hsq : (n : ℝ) ^ 2 ≤ 66 ^ 2 := by gcongr
+  have hsignal := boundarySignal_nonneg 2 (by norm_num) n
+  have hprime := primeMass_nonneg 2
+  have hr : (1 / 2 : ℝ) ≤ residualBuffer 66 344064 := by norm_num [residualBuffer]
+  have hs : (1 / 2 : ℝ) ≤ squaredResidualBuffer 66 344064 := by norm_num [squaredResidualBuffer]
+  have hrpos : 0 < residualBuffer 66 344064 := (by norm_num : (0 : ℝ) < 1 / 2).trans_le hr
+  have hspos : 0 < squaredResidualBuffer 66 344064 := (by norm_num : (0 : ℝ) < 1 / 2).trans_le hs
+  have hg : (n : ℝ) ^ 3 * boundarySignal 2 n ≤ 66 ^ 2 := by
+    calc
+      _ = (n : ℝ) ^ 2 * ((n : ℝ) * boundarySignal 2 n) := by ring
+      _ ≤ (66 : ℝ) ^ 2 * 1 :=
+        mul_le_mul hsq (radiusTwoBoundaryEntry_le (Finset.mem_Icc.mp hn).1)
+          (by positivity) (by positivity)
+      _ = _ := mul_one _
+  unfold remainderWeight
+  constructor
+  · positivity
+  calc
+    _ ≤ (2 / 2 : ℝ) * 66 ^ 2 / (1 / 2) + 43 * 66 ^ 2 / (1 / 2) := by
+      simp only [div_self (show (2 : ℝ) ≠ 0 by norm_num), one_mul]
+      gcongr
+      exact radiusTwoPrimeRatio_le
+    _ ≤ _ := by norm_num
+
+private theorem sum_receivingTrial {f : ℕ → ℝ → ℝ}
+    (hf : ∀ n, f n 0 = 0) (a b : ℝ) :
+    (∑ n ∈ Finset.Icc 1 66, f n (receivingTrialCoefficients a b n)) =
+      f 65 (a - b * (mixedEntry / diagonal65)) + f 66 b := by
+  have hsubset : ({65, 66} : Finset ℕ) ⊆ Finset.Icc 1 66 := by decide
+  rw [← Finset.sum_subset hsubset]
+  · simp [receivingTrialCoefficients]
+  · intro n _ hn
+    have h65 : n ≠ 65 := fun h => hn (by simp [h])
+    have h66 : n ≠ 66 := fun h => hn (by simp [h])
+    simp [receivingTrialCoefficients, h65, h66, hf]
+
+private theorem twoTrace_sq_le {p q B : ℝ} (hB : 0 ≤ B) (hp : |p| ≤ B) (hq : |q| ≤ B)
+    (x y : ℝ) : (p * x + q * y) ^ 2 ≤ 2 * B ^ 2 * (x ^ 2 + y ^ 2) := by
+  have hp' : p ^ 2 ≤ B ^ 2 := sq_le_sq.mpr (by rwa [abs_of_nonneg hB])
+  have hq' : q ^ 2 ≤ B ^ 2 := sq_le_sq.mpr (by rwa [abs_of_nonneg hB])
+  calc
+    _ ≤ 2 * ((p * x) ^ 2 + (q * y) ^ 2) := by nlinarith only [sq_nonneg (p * x - q * y)]
+    _ = 2 * (p ^ 2 * x ^ 2 + q ^ 2 * y ^ 2) := by ring
+    _ ≤ 2 * (B ^ 2 * x ^ 2 + B ^ 2 * y ^ 2) := by gcongr
+    _ = _ := by ring
+
+private theorem completeRemoteAllowance_receiving_le (a b : ℝ) :
+    completeRemoteAllowance 66 344064 344064 2 (receivingTrialCoefficients a b) 0 1 ≤
+      (9 / 100 : ℝ) * ((a - b * (mixedEntry / diagonal65)) ^ 2 + b ^ 2) := by
+  let x := receivingTrialCoefficients a b
+  let c := a - b * (mixedEntry / diagonal65)
+  let mass := c ^ 2 + b ^ 2
+  let w := remainderWeight 66 344064 2
+  have hf : (firstTrace 66 2 x 0) ^ 2 ≤ 2 * 44 ^ 2 * mass := by
+    unfold firstTrace
+    rw [mul_zero, sub_zero, sum_receivingTrial
+      (f := fun n z => (-1 : ℝ) ^ n * z * firstTraceEntry 2 n) (by simp)]
+    have h65 := abs_radiusTwoFirstTraceEntry_le (n := 65) (by decide)
+    have h66 := abs_radiusTwoFirstTraceEntry_le (n := 66) (by decide)
+    change ((-1 : ℝ) ^ (65 : ℕ) * c * firstTraceEntry 2 65 +
+      (-1 : ℝ) ^ (66 : ℕ) * b * firstTraceEntry 2 66) ^ 2 ≤ _
+    calc
+      _ = (-(firstTraceEntry 2 65) * c + firstTraceEntry 2 66 * b) ^ 2 := by
+        norm_num
+        ring
+      _ ≤ _ := twoTrace_sq_le (by norm_num) (by rwa [abs_neg]) h66 c b
+  have hd : (derivativeTrace 66 x) ^ 2 ≤ 2 * 66 ^ 2 * mass := by
+    unfold derivativeTrace
+    rw [sum_receivingTrial (f := fun n z => (-1 : ℝ) ^ n * (n : ℝ) * z) (by simp)]
+    have h := twoTrace_sq_le (B := 66) (p := -65) (q := 66) (by norm_num)
+      (by norm_num) (by norm_num) c b
+    norm_num at h ⊢
+    simpa only [neg_mul] using h
+  have hw : ∀ n ∈ Finset.Icc 1 66, 0 ≤ w n ∧ w n ≤ 400000 :=
+    fun _ hn => radiusTwoRemainderWeight_bounds hn
+  have hws : (∑ n ∈ Finset.Icc 1 66, w n) ≤ 66 * 400000 := by
+    calc
+      _ ≤ ∑ _ ∈ Finset.Icc (1 : ℕ) 66, (400000 : ℝ) :=
+        Finset.sum_le_sum (fun n hn => (hw n hn).2)
+      _ = _ := by norm_num
+  have hwx : (∑ n ∈ Finset.Icc 1 66, w n * (x n) ^ 2) ≤ 400000 * mass := by
+    rw [sum_receivingTrial (f := fun n z => w n * z ^ 2) (by simp)]
+    calc
+      _ ≤ 400000 * c ^ 2 + 400000 * b ^ 2 :=
+        add_le_add (mul_le_mul_of_nonneg_right (hw 65 (by decide)).2 (sq_nonneg _))
+          (mul_le_mul_of_nonneg_right (hw 66 (by decide)).2 (sq_nonneg _))
+      _ = _ := by unfold mass; ring
+  have hdp : 0 ≤ 1 / 2 + primeMass 2 / Real.pi := by
+    have := primeMass_nonneg 2
+    positivity
+  have hdp' : 1 / 2 + primeMass 2 / Real.pi ≤ 44 := by
+    linarith only [radiusTwoPrimeRatio_le]
+  have hr :
+      remainderQuadraticAllowance 66 344064 2 x 0 ≤
+        3 * ((66 * 400000) * (400000 * mass) + 2 ^ 2 * (2 * 66 ^ 2 * mass)) := by
+    unfold remainderQuadraticAllowance
+    simp only [div_self (show (2 : ℝ) ≠ 0 by norm_num), one_mul, zero_pow (by decide : 2 ≠ 0),
+      mul_zero, add_zero]
+    change 3 * ((∑ n ∈ Finset.Icc 1 66, w n) * (∑ n ∈ Finset.Icc 1 66, w n * (x n) ^ 2) +
+      boundaryErrorScale 2 ^ 2 * derivativeTrace 66 x ^ 2) ≤ _
+    have hnonneg : 0 ≤ ∑ n ∈ Finset.Icc 1 66, w n * (x n) ^ 2 :=
+      Finset.sum_nonneg (fun n hn => mul_nonneg (hw n hn).1 (sq_nonneg _))
+    have he := (sq_le_sq₀ radiusTwoBoundaryError_bounds.1 (by norm_num)).2
+      radiusTwoBoundaryError_bounds.2
+    gcongr
+  change completeRemoteAllowance 66 344064 344064 2 x 0 1 ≤ 9 / 100 * mass
+  unfold completeRemoteAllowance
+  simp only [Nat.sub_self, Finset.range_zero, Finset.sum_empty, zero_add, inv_one]
+  calc
+    _ ≤ (1 + 1 : ℝ) * (2 * (2 * 44 ^ 2 * mass) / 344064 +
+        2 * 44 ^ 2 * (2 * 66 ^ 2 * mass) / (3 * 344064 ^ 3)) +
+        (1 + 1) * (3 * ((66 * 400000) * (400000 * mass) + 2 ^ 2 * (2 * 66 ^ 2 * mass))) /
+          (5 * 344064 ^ 5) := by
+      norm_num only [Nat.cast_ofNat]
+      have hprice := (sq_le_sq₀ hdp (by norm_num)).2 hdp'
+      norm_num at hf hd hr hprice
+      gcongr
+      linarith only [hprice]
+    _ ≤ _ := by
+      have hmass : 0 ≤ mass := add_nonneg (sq_nonneg _) (sq_nonneg _)
+      linarith only [hmass]
+
+/-- The exact signed columns from modes 65 and 66 pay at most a quarter of the
+pivot energy on the receiving modes strictly above 344064. The canonical
+remote allowance bounds both signed traces and the full remainder. -/
+theorem weightedReceivingGram_344064_le (a b : ℝ) :
+    weightedReceivingGram 344064 a b ≤ (1 / 4 : ℝ) *
+      (diagonal65 * a ^ 2 + secondPivot * b ^ 2) := by
+  have h := weightedReceivingGram_le_finite_add_remote (N := 344064) (L := 344064)
+    (J := 344064) le_rfl le_rfl le_rfl a b 1 (by norm_num)
+  simp only [Nat.sub_self, Finset.range_zero, Finset.sum_empty, zero_add] at h
+  have hfloor : (1 / 5 : ℝ) ≤ radiusTwoMiddleWeight (344064 + 1) :=
+    modeWeight_two_threeTenths_bounds.1 _ (by decide)
+  have hpos : 0 < radiusTwoMiddleWeight (344064 + 1) :=
+    (by norm_num : (0 : ℝ) < 1 / 5).trans_le hfloor
+  let mass := (a - b * (mixedEntry / diagonal65)) ^ 2 + b ^ 2
+  calc
+    _ ≤ _ := h
+    _ ≤ ((9 / 100 : ℝ) * mass) / radiusTwoMiddleWeight (344064 + 1) :=
+      div_le_div_of_nonneg_right (completeRemoteAllowance_receiving_le a b) hpos.le
+    _ ≤ ((9 / 100 : ℝ) * mass) / (1 / 5) :=
+      div_le_div_of_nonneg_left (by unfold mass; positivity) (by norm_num) hfloor
+    _ = (1 / 4 : ℝ) * (9 / 5 * mass) := by ring
+    _ ≤ _ := mul_le_mul_of_nonneg_left (pivotEnergy_ge a b) (by norm_num)
+
+/-- Eliminating modes 65 and 66 consumes at most one quarter of the original
+shifted core energy on odd tests supported in sine modes strictly above 344064. -/
+theorem schurPayment_le_quarter_core_344064
+    {g : ℝ → ℝ} (hg : MemLp g 2 volume) (hgm : Measurable g) (hgo : Function.Odd g)
+    (hgs : ∀ᵐ t : ℝ, t ∉ Icc (-2 : ℝ) 2 → g t = 0)
+    (hhead : ∀ j < 344064, sineCoefficient 2 g (j + 1) = 0)
+    (henergy : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r g) (Ioi 0)) :
+    schurPayment g ≤ (1 / 4 : ℝ) * shiftedOddCoreEnergy 2 (-3 / 10) g :=
+  schurPayment_le_mul_core_of_gram_bound (N := 344064) le_rfl
+    (by norm_num) weightedReceivingGram_344064_le hg hgm hgo hgs hhead henergy
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoModes65And66
