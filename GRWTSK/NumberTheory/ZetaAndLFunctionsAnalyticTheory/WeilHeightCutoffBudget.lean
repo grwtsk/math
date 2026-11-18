@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilPrimitiveCofinalStageCriterion
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilPrimitiveHeightTailUniform
 import Mathlib.Algebra.Order.Floor.Semiring
 import Mathlib.Data.Nat.Log
 import Mathlib.Tactic.Linarith
@@ -27,7 +28,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
 
-open GRWTSK.MeasureAndIntegration.FourierDerivativeDecay (derivativeL1Cost)
+open GRWTSK.MeasureAndIntegration.FourierDerivativeDecay (derivativeL1Cost derivativeL1Cost_nonneg)
 open GRWTSK.NumberTheory.WeilNegativeWitness (heightCount)
 open scoped ContDiff
 
@@ -150,5 +151,59 @@ theorem smallConductorStages_iff_maximalDyadicHeightBounds
     obtain ⟨J, hcutoff, hcert⟩ :=
       (exists_primitiveHeightCertificateIndex_iff χ hp hD hL (liftReal f) T H ε).mpr hmargin
     exact ⟨J, H, hcutoff, hcert⟩
+
+/-- Beyond one height the optimized signed margin approximates the original
+arithmetic value from below, uniformly over all larger heights for this test. -/
+theorem exists_height_primitiveOptimizedMargin_bounds
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L)
+    (hcount : ∀ U : ℝ, 2 ≤ U → (heightCount χ hp U : ℝ) ≤ D * U * (Real.log U + L))
+    {T : ℝ} {f : ℝ → ℝ} (hf : Admissible χ T f) (hsmooth : ContDiff ℝ ∞ f)
+    {ε : ℝ} (hε : 0 < ε) :
+    ∃ H₀ : ℝ, 0 ≤ H₀ ∧ ∀ H : ℝ, H₀ ≤ H →
+      primitiveArithmeticValue χ hp hn T (liftReal f) - ε ≤
+          primitiveHeightContribution χ hp (liftReal f) H -
+            primitiveHeightTailBudget D L (liftReal f) T (maxDyadicHeightIndex H) ∧
+      primitiveHeightContribution χ hp (liftReal f) H -
+          primitiveHeightTailBudget D L (liftReal f) T (maxDyadicHeightIndex H) ≤
+        primitiveArithmeticValue χ hp hn T (liftReal f) := by
+  obtain ⟨J, hJ⟩ := exists_uniform_primitiveHeightTailBudget_and_error_le_of_heightCount
+    χ hp hn hD hL hcount (T := T) (derivativeL1Cost_nonneg (liftReal f) 1)
+    (ε / 2) (by positivity)
+  have hsmall := (hJ f hf hsmooth le_rfl).1
+  refine ⟨(2 : ℝ) ^ J, by positivity, ?_⟩
+  intro H hH
+  have hnonneg : 0 ≤ H := (by positivity : 0 ≤ (2 : ℝ) ^ J).trans hH
+  have hcutoff : (2 : ℝ) ^ J ≤ 1 + H := by linarith
+  have hindex := (dyadicHeightCutoff_iff_le_maxDyadicHeightIndex hnonneg J).mp hcutoff
+  have hbudget := (primitiveHeightTailBudget_antitone hD hL (liftReal f) T hindex).trans hsmall
+  have hmax := (dyadicHeightCutoff_iff_le_maxDyadicHeightIndex hnonneg _).mpr (le_refl _)
+  have habs := abs_le.mp (abs_primitiveArithmeticValue_sub_heightContribution_le
+    χ hp hn hD hL hcount hf hsmooth (maxDyadicHeightIndex H) hmax)
+  exact ⟨by linarith [habs.2], by linarith [habs.1]⟩
+
+/-- The original stage chain is equivalent to certificates at every sufficiently
+large height for each admissible smooth test and positive tolerance. -/
+theorem smallConductorStages_iff_cofinalOptimizedHeightBounds
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L)
+    (hcount : ∀ U : ℝ, 2 ≤ U → (heightCount χ hp U : ℝ) ≤ D * U * (Real.log U + L)) :
+    SmallConductorStages χ hp hn ↔
+      ∀ (T : ℝ) (f : ℝ → ℝ), Admissible χ T f → ContDiff ℝ ∞ f →
+        ∀ ε : ℝ, 0 < ε → ∃ H₀ : ℝ, 0 ≤ H₀ ∧ ∀ H : ℝ, H₀ ≤ H →
+          -ε ≤ primitiveHeightContribution χ hp (liftReal f) H -
+            primitiveHeightTailBudget D L (liftReal f) T (maxDyadicHeightIndex H) := by
+  constructor
+  · intro h T f hf hsmooth ε hε
+    have hnonneg := primitive_nonneg_of_small_stages χ hp hn h hf
+    obtain ⟨H₀, hH₀, hmargin⟩ :=
+      exists_height_primitiveOptimizedMargin_bounds χ hp hn hD hL hcount hf hsmooth hε
+    exact ⟨H₀, hH₀, fun H hH => (by linarith : -ε ≤
+      primitiveArithmeticValue χ hp hn T (liftReal f) - ε).trans (hmargin H hH).1⟩
+  · intro h
+    apply (smallConductorStages_iff_maximalDyadicHeightBounds χ hp hn hD hL hcount).mpr
+    intro T f hf hsmooth ε hε
+    obtain ⟨H₀, hH₀, hmargin⟩ := h T f hf hsmooth ε hε
+    exact ⟨H₀, hH₀, hmargin H₀ le_rfl⟩
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
