@@ -577,6 +577,78 @@ theorem exists_native_read_horizon_for_capacity {trace : ℕ → Read}
     ⟨rfl, sound word short ⟨finish, accepted⟩⟩
   exact Option.some.inj (source.symm.trans (observed word.length))
 
+private theorem exists_steps_of_nonhalt
+    (nonhalt : ¬ ConjectureMachines.BundledMachine.Halts Riemann95.candidate)
+    (n : ℕ) :
+    ∃ c : Configuration, Riemann95.nSteps n init = some c ∧
+      StateTransition.Reaches (step Riemann95.machine) init c := by
+  induction n with
+  | zero => exact ⟨init, rfl, .refl⟩
+  | succ n ih =>
+      obtain ⟨c, reached, path⟩ := ih
+      cases edge : step Riemann95.machine c with
+      | none =>
+          apply False.elim
+          apply nonhalt
+          change (StateTransition.eval (step Riemann95.machine) (init : Configuration)).Dom
+          exact Part.dom_iff_mem.mpr ⟨c, StateTransition.mem_eval.mpr ⟨path, edge⟩⟩
+      | some next =>
+          refine ⟨next, ?_, path.tail edge⟩
+          rw [Riemann95.Dispatch.nSteps_composition, reached, Option.bind_some,
+            Riemann95.nSteps, edge]
+          rfl
+
+private def readAt (c : Configuration) (i : ℕ) : Read :=
+  ((Riemann95.nSteps i c).map fun d => d.tape.head).getD 0
+
+/-- Every successful observation reads exactly the heads of its
+successive configurations. All indices used lie within the run. -/
+private theorem observe_eq_readAt_prefix {n : ℕ} {c stop : Configuration}
+    (reached : Riemann95.nSteps n c = some stop) :
+    observe n c = some (tracePrefix (readAt c) n) := by
+  induction n generalizing c with
+  | zero => rfl
+  | succ n ih =>
+      cases edge : step Riemann95.machine c with
+      | none => simp [Riemann95.nSteps, edge] at reached
+      | some next =>
+          have nextReached : Riemann95.nSteps n next = some stop := by
+            simpa only [Riemann95.nSteps, edge, Option.bind_some] using reached
+          simp [observe, edge, ih nextReached, tracePrefix, List.ofFn_succ,
+            readAt, Riemann95.nSteps]
+
+/-- RH is equivalent to a finite native read horizon for every state
+budget. The observation is chosen before the candidate graph, which
+needs to cover that word and be sound through its length. -/
+theorem riemannHypothesis_iff_unbounded_native_read_horizons :
+    RiemannHypothesis ↔
+      ∀ b : ℕ, ∃ (n : ℕ) (word : List Read),
+        b ≤ n ∧ observe n init = some word ∧
+        ∀ {V : Type} [Fintype V] (G : LabeledGraph V Read) (root : V),
+          (∃ t, WordPath G root word t) →
+          (∀ w, w.length ≤ n → (∃ t, WordPath G root w t) →
+            ∃ d, WordPath readGraph init w d) →
+          b + 1 ≤ Fintype.card V := by
+  constructor
+  · intro rh b
+    have nonhalt : ¬ ConjectureMachines.BundledMachine.Halts Riemann95.candidate :=
+      fun halts => Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mp halts rh
+    have observed : ∀ n, observe n init = some (tracePrefix (readAt init) n) := by
+      intro n
+      obtain ⟨_, reached, _⟩ := exists_steps_of_nonhalt nonhalt n
+      exact observe_eq_readAt_prefix reached
+    obtain ⟨n, bound, observation, large⟩ := exists_native_read_horizon_for_capacity observed b
+    exact ⟨n, tracePrefix (readAt init) n, bound, observation, large⟩
+  · intro unbounded
+    by_contra bad
+    obtain ⟨V, finite, G, root, exactGraph⟩ :=
+      finite_exact_rooted_read_graph_iff_not_riemannHypothesis.mpr bad
+    let _ : Fintype V := finite
+    obtain ⟨n, word, _, observed, large⟩ := unbounded (Fintype.card V)
+    have covers := (exactGraph word).mpr ((observe_iff_path n init word).mp observed).2
+    have impossible := large G root covers (fun w _ accepted => (exactGraph w).mp accepted)
+    omega
+
 /-- Once the native terminal word is known, one covered word and
 soundness up to the first failed budget certify the whole rooted language.
 No finiteness assumption on the graph is needed for this reduction. -/
