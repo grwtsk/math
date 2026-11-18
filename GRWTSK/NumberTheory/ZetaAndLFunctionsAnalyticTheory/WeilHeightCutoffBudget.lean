@@ -30,7 +30,8 @@ namespace GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
 
 open GRWTSK.MeasureAndIntegration.FourierDerivativeDecay (derivativeL1Cost derivativeL1Cost_nonneg)
 open GRWTSK.NumberTheory.WeilNegativeWitness
-  (heightCount heightCount_le_source_bound sourceCountConstant sourceCountConstant_nonneg)
+  (CriticalStripZero zeroMultiplicity heightWindow mem_heightWindow
+    heightCount heightCount_le_source_bound sourceCountConstant sourceCountConstant_nonneg)
 open GRWTSK.NumberTheory.Conditional (DirichletCriticalLine)
 open scoped ContDiff
 
@@ -289,5 +290,53 @@ theorem not_dirichletCriticalLine_iff_eventually_negativeDyadicHeightCertificate
   · rintro ⟨T, f, δ, hf, hsmooth, hδ, K, hK⟩
     exact not_dirichletCriticalLine_of_negativeDyadicHeightCertificate χ hp hn hf hsmooth K
       ((hK K le_rfl).trans_lt (neg_lt_zero.mpr hδ))
+
+open MeasureTheory SourcePrimeCorrelation
+open scoped ComplexConjugate
+
+private theorem realLiftContourWeight_conj (f : ℝ → ℝ) (s : ℂ) :
+    (∫ r : ℝ, correlation (liftReal f) r * Complex.exp ((conj s - 1 / 2) * (r : ℂ))) =
+      conj (∫ r : ℝ, correlation (liftReal f) r * Complex.exp ((s - 1 / 2) * (r : ℂ))) := by
+  have hc (r : ℝ) : conj (correlation (liftReal f) r) = correlation (liftReal f) r := by
+    unfold correlation liftReal
+    rw [← integral_conj]
+    simp only [map_mul, Complex.conj_ofReal]
+  rw [← integral_conj]
+  congr 1
+  funext r
+  rw [map_mul, hc, ← Complex.exp_conj]
+  simp only [map_mul, map_sub, map_div₀, map_one, map_ofNat, Complex.conj_ofReal]
+
+/-- On real tests, inverse-character conjugation preserves the complete
+signed finite head at every strict height, with the actual multiplicities. -/
+theorem primitiveHeightContribution_eq_inverse_liftReal
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q)
+    (hp : χ.IsPrimitive) (hpInv : (χ⁻¹).IsPrimitive) (hn : χ ≠ 1)
+    (f : ℝ → ℝ) (H : ℝ) :
+    primitiveHeightContribution χ hp (liftReal f) H =
+      primitiveHeightContribution χ⁻¹ hpInv (liftReal f) H := by
+  unfold primitiveHeightContribution
+  simp only [Complex.re_sum]
+  refine Finset.sum_bij (fun ρ _ => inverseConjugateZero χ hn ρ) ?_ ?_ ?_ ?_
+  · intro ρ hρ
+    exact (inverseConjugateZero_mem_heightWindow_iff χ hp hpInv hn H ρ).mpr hρ
+  · intro ρ _ σ _ heq
+    apply Subtype.ext
+    have h := congrArg (fun z : CriticalStripZero χ⁻¹ => conj z.1) heq
+    simpa only [inverseConjugateZero, Complex.conj_conj] using h
+  · intro σ hσ
+    have hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
+    let u := inverseConjugateZero χ⁻¹ hnInv σ
+    let ρ : CriticalStripZero χ := ⟨u.1, by simpa only [inv_inv] using u.2⟩
+    have hρ : ρ ∈ heightWindow χ hp H := by
+      simpa only [mem_heightWindow, ρ, u, inverseConjugateZero, Complex.conj_im, abs_neg] using hσ
+    exact ⟨ρ, hρ, Subtype.ext (Complex.conj_conj σ.1)⟩
+  · intro ρ _
+    rw [zeroMultiplicity_inverseConjugateZero]
+    change (((zeroMultiplicity χ ρ : ℂ) * _).re =
+      ((zeroMultiplicity χ ρ : ℂ) *
+        ∫ r : ℝ, correlation (liftReal f) r * Complex.exp ((conj ρ.1 - 1 / 2) * (r : ℂ))).re)
+    rw [realLiftContourWeight_conj]
+    simp only [Complex.mul_re, Complex.natCast_im, zero_mul, sub_zero, Complex.conj_re]
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
