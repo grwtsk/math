@@ -50,4 +50,44 @@ theorem packedBitAt64_eq_none_iff (buffer : Array UInt8) (position : UInt64) :
     simp only [Option.map_none, true_iff]
     omega
 
+/-- Read one bit before the declared exclusive section end and advance only
+on success. The section end can be smaller than the backing length. -/
+def readSectionBit64 (buffer : Array UInt8) (position sectionEnd : UInt64) :
+    Option (Bool × UInt64) :=
+  if position < sectionEnd then
+    (packedBitAt64 buffer position).map (fun bit => (bit, position + 1))
+  else none
+
+/-- The word cursor agrees with a guarded natural-number cursor. In the
+success branch the strict end test also guarantees that the increment fits. -/
+theorem readSectionBit64_refines (buffer : Array UInt8) (position sectionEnd : UInt64) :
+    (readSectionBit64 buffer position sectionEnd).map (fun (bit, next) => (bit, next.toNat)) =
+      if position.toNat < sectionEnd.toNat then
+        buffer[position.toNat / 8]?.map
+          (fun byte => (byte.toNat.testBit (7 - position.toNat % 8), position.toNat + 1))
+      else none := by
+  by_cases hSection : position.toNat < sectionEnd.toNat
+  · have hEnd : sectionEnd.toNat < 2 ^ 64 := sectionEnd.toNat_lt_size
+    have hNext : (position + 1).toNat = position.toNat + 1 := by
+      rw [UInt64.toNat_add]
+      change (position.toNat + 1) % (2 ^ 64) = _
+      exact Nat.mod_eq_of_lt (by omega)
+    rw [readSectionBit64, ite_eq_left (UInt64.lt_iff_toNat_lt.2 hSection), ite_eq_left hSection,
+      packedBitAt64_refines]
+    simp only [Option.map_map, Function.comp_def, hNext]
+  · rw [readSectionBit64, ite_eq_right (fun h => hSection (UInt64.lt_iff_toNat_lt.1 h)),
+      ite_eq_right hSection, Option.map_none]
+
+/-- Reading fails exactly when the declared section is exhausted or the
+backing array has no byte for the requested bit. -/
+theorem readSectionBit64_eq_none_iff (buffer : Array UInt8) (position sectionEnd : UInt64) :
+    readSectionBit64 buffer position sectionEnd = none ↔
+      sectionEnd.toNat ≤ position.toNat ∨ 8 * buffer.size ≤ position.toNat := by
+  unfold readSectionBit64
+  by_cases hSection : position.toNat < sectionEnd.toNat
+  · rw [ite_eq_left (UInt64.lt_iff_toNat_lt.2 hSection), Option.map_eq_none_iff,
+      packedBitAt64_eq_none_iff, or_iff_right (Nat.not_le_of_gt hSection)]
+  · rw [ite_eq_right (fun h => hSection (UInt64.lt_iff_toNat_lt.1 h))]
+    exact ⟨fun _ => Or.inl (Nat.le_of_not_gt hSection), fun _ => rfl⟩
+
 end GRWTSK.ComputerScience.BinaryArithmeticCoder
