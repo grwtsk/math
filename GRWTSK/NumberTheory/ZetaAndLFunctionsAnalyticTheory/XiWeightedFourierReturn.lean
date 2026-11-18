@@ -3,6 +3,7 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 -/
 import Mathlib.Analysis.Complex.Exponential
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.MeasureTheory.Function.L2Space
 import Mathlib.MeasureTheory.Function.LocallyIntegrable
 import Mathlib.MeasureTheory.Integral.Bochner.Basic
@@ -189,5 +190,40 @@ theorem weighted_logWindowError_tendsto_zero {a : ℝ} (A : ℕ → ℝ)
     setIntegral_eq_integral_of_forall_compl_eq_zero (fun t ht => by simp [hs n t ht])
   rw [← hWhole]
   exact weighted_logWindowError_le (hL2 n)
+
+/-- The exact square of the exponential weight factor in the log-window
+Galerkin bound. This includes the real-axis value and zero window width. -/
+theorem integral_sq_logWindowWeight (a A : ℝ) (hA : 0 ≤ A) :
+    (∫ t in Set.Icc (-A) A, (Real.exp (a * |t|)) ^ (2 : ℕ)) =
+      if a = 0 then 2 * A else (Real.exp (2 * a * A) - 1) / a := by
+  rw [integral_Icc_eq_integral_Ioc, ← intervalIntegral.integral_of_le (neg_le_self hA)]
+  by_cases ha : a = 0
+  · subst a
+    simp only [zero_mul, Real.exp_zero, one_pow, intervalIntegral.integral_const,
+      smul_eq_mul, mul_one, sub_neg_eq_add, ite_true]
+    ring
+  rw [ite_eq_right ha]
+  let w : ℝ → ℝ := fun t => (Real.exp (a * |t|)) ^ (2 : ℕ)
+  have hw : Continuous w :=
+    (Real.continuous_exp.comp (continuous_const.mul continuous_abs)).pow 2
+  change (∫ t in (-A)..A, w t) = _
+  have hNeg : (∫ t in (-A)..0, w t) = ∫ t in (0 : ℝ)..A, w t := by
+    simpa only [w, abs_neg, neg_zero] using
+      (intervalIntegral.integral_comp_neg (a := (0 : ℝ)) (b := A) w).symm
+  have hPos : (∫ t in (0 : ℝ)..A, w t) =
+      ∫ t in (0 : ℝ)..A, Real.exp ((2 * a) * t) := by
+    apply intervalIntegral.integral_congr
+    intro t ht
+    rw [Set.uIcc_of_le hA] at ht
+    rw [show w t = (Real.exp (a * t)) ^ (2 : ℕ) by simp [w, abs_of_nonneg ht.1],
+      ← Real.exp_nat_mul]
+    norm_num [mul_assoc]
+  rw [← intervalIntegral.integral_add_adjacent_intervals
+    (hw.intervalIntegrable (-A) 0) (hw.intervalIntegrable 0 A), hNeg, hPos,
+    intervalIntegral.integral_comp_mul_left Real.exp (mul_ne_zero (by norm_num) ha),
+    integral_exp]
+  simp only [mul_zero, Real.exp_zero, smul_eq_mul]
+  field_simp [ha]
+  ring
 
 end GRWTSK.NumberTheory.Zeta.XiWeightedFourierReturn
