@@ -2,7 +2,7 @@
 Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 -/
-import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilFirstPrimeMagnitudeError
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilFirstPrimeUnboundedError
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilFirstPrimeWindowPhysicalSource
 
 /-!
@@ -52,5 +52,29 @@ theorem exists_onePrime_zeroSum_error_floor {q : ℕ} [NeZero q] {A : ℝ}
       ⟨t.2.1, t.2.2.1⟩ t.2.2.2 x, Complex.norm_real, Real.norm_eq_abs]
   obtain ⟨f, g, hobs, hfloor⟩ := exists_onePrime_magnitude_collision_error_floor χ lo hi hχ
   exact ⟨f, g, hobs, by simpa only [herror] using hfloor⟩
+
+/-- A decoder which identifies tests with the same real correlations and
+correlation magnitudes has no uniform absolute error bound for the original
+zero sum when used as the signed first-window input. The remaining arithmetic
+terms are evaluated exactly at each test. -/
+theorem onePrime_zeroSum_decoder_error_unbounded {q : ℕ} [NeZero q] {A : ℝ} {Obs : Type*}
+    (χ : DirichletCharacter ℂ q) (hprim : χ.IsPrimitive)
+    (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (hχ : (χ (2 : ℕ)).im ≠ 0) (observe : WindowTest A → Obs)
+    (identify : ∀ f g : WindowTest A,
+      (∀ r, ((correlation f.1 r).re, ‖correlation f.1 r‖) =
+        ((correlation g.1 r).re, ‖correlation g.1 r‖)) → observe f = observe g)
+    (decode : Obs → ℝ) (E : ℝ) :
+    ∃ f : WindowTest A,
+      E < ‖(∑' ρ : CriticalStripZero χ, (zeroMultiplicity χ ρ : ℂ) *
+        (∫ r : ℝ, correlation f.1 r * Complex.exp ((ρ.1 - 1 / 2) * (r : ℂ)))) -
+        windowValue χ A f.1 (decode (observe f))‖ := by
+  have hlog : 0 < Real.log (2 : ℝ) := Real.log_pos (by norm_num)
+  have hA : 0 ≤ A := by linarith
+  obtain ⟨f, hf⟩ := onePrime_decoder_error_unbounded χ lo hi hχ observe identify decode E
+  refine ⟨f, ?_⟩
+  rw [primitive_tsum_sub_windowValue_eq_readout_error χ hprim f.1 A hA
+    ⟨f.2.1, f.2.2.1⟩ f.2.2.2 (decode (observe f)), Complex.norm_real, Real.norm_eq_abs]
+  exact hf
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
