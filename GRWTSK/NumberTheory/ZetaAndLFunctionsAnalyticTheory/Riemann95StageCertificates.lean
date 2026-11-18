@@ -361,6 +361,96 @@ theorem counterexample_succ_requires_composite_and_clock_eq {n : ℕ} (hn : 2 �
     fun increase => safe_succ_of_clock_lt hn increase safe bad
   exact le_antisymm (Nat.le_of_not_gt no_increase) (clock_monotone (Nat.le_succ n))
 
+private theorem composite_plateau_scale_le {n A : ℕ} (hn : 3 ≤ n) (hA : 2 * n ≤ A) :
+    n ^ 3 * ((n + 1) * A - 1) ≤ (n + 1) ^ 3 * ((n - 1) * (A - 1)) := by
+  have hn1 : 1 ≤ n := by omega
+  have hA1 : 1 ≤ A := by omega
+  have hproduct : 1 ≤ (n + 1) * A := Nat.mul_pos (Nat.succ_pos _) (by omega)
+  have hnZ : (3 : ℤ) ≤ n := by exact_mod_cast hn
+  have hAZ : 2 * (n : ℤ) ≤ A := by exact_mod_cast hA
+  have six : (6 : ℤ) ≤ (n : ℤ) * ((n : ℤ) - 1) := by
+    have h := mul_nonneg (show 0 ≤ (n : ℤ) - 3 by omega) (show 0 ≤ (n : ℤ) + 2 by omega)
+    nlinarith only [h]
+  have extra := mul_nonneg
+    (mul_nonneg (show 0 ≤ (n : ℤ) + 1 by omega)
+      (show 0 ≤ (n : ℤ) ^ 2 - (n : ℤ) - 1 by nlinarith only [six]))
+    (show 0 ≤ (A : ℤ) - 2 * (n : ℤ) by omega)
+  have minimum := mul_nonneg (sq_nonneg (n : ℤ))
+    (show 0 ≤ (n : ℤ) * ((n : ℤ) - 1) - 4 by omega)
+  zify [hn1, hA1, hproduct]
+  nlinarith only [extra, minimum]
+
+private theorem two_mul_le_factorial_primeProduct {n : ℕ} (hn : 3 ≤ n) :
+    2 * n ≤ n.factorial * primeProduct n := by
+  calc
+    2 * n = n * 2 := Nat.mul_comm _ _
+    _ ≤ n * (n - 1).factorial := Nat.mul_le_mul_left _
+      (by simpa using Nat.factorial_le (show 2 ≤ n - 1 by omega))
+    _ = n.factorial := by
+      simpa only [Nat.sub_add_cancel (show 1 ≤ n by omega)] using
+        (Nat.factorial_succ (n - 1)).symm
+    _ ≤ n.factorial * primeProduct n := by
+      simpa only [Nat.mul_one] using Nat.mul_le_mul_left n.factorial (primeProduct_pos n)
+
+/-- On a clock plateau, safety at a composite successor certifies
+safety at its predecessor. Exponents below two already pass. -/
+theorem safe_prev_of_safe_composite_succ_on_plateau {n : ℕ} (hn : 3 ≤ n)
+    (composite : ¬ Nat.Prime (n + 1)) (plateau : clock (n + 1) = clock n)
+    (safe : ¬ Counterexample (n + 1)) : ¬ Counterexample n := by
+  by_cases small : n - threshold n ≤ 1
+  · have lower := two_mul_le_factorial_primeProduct hn
+    apply (safe_iff_product_ge_pow (by omega : 2 ≤ n)).mpr
+    calc
+      n ^ (n - threshold n) ≤ n := by
+        simpa only [pow_one] using Nat.pow_le_pow_right (by omega : 0 < n) small
+      _ ≤ n.factorial * primeProduct n - 1 := by omega
+      _ = 1 * (n.factorial * primeProduct n - 1) := by rw [Nat.one_mul]
+      _ ≤ _ := Nat.mul_le_mul_right _ (by omega)
+  · have exponent : 2 ≤ n - threshold n := by omega
+    let A := n.factorial * primeProduct n
+    let d := n - threshold n - 2
+    have r : n - threshold n = d + 2 := by dsimp only [d]; omega
+    have s : n + 1 - threshold (n + 1) = d + 3 := by
+      have h : threshold (n + 1) = threshold n := by simp only [threshold, plateau]
+      omega
+    have product_step : (n + 1).factorial * primeProduct (n + 1) = (n + 1) * A := by
+      rw [Nat.factorial_succ, primeProduct]
+      simp only [composite, ite_false, A, mul_assoc]
+    have next := (safe_iff_product_ge_pow (show 2 ≤ n + 1 by omega)).mp safe
+    rw [s, Nat.add_sub_cancel, product_step] at next
+    apply (safe_iff_product_ge_pow (by omega : 2 ≤ n)).mpr
+    rw [r]
+    refine Nat.le_of_mul_le_mul_left ?_ (by positivity : 0 < (n + 1) ^ 3)
+    calc
+      (n + 1) ^ 3 * n ^ (d + 2) = (n + 1) ^ 3 * n ^ 2 * n ^ d := by rw [pow_add n d 2]; ac_rfl
+      _ ≤ (n + 1) ^ 3 * n ^ 2 * (n + 1) ^ d :=
+        Nat.mul_le_mul_left _ (Nat.pow_le_pow_left (Nat.le_succ n) d)
+      _ = n ^ 2 * (n + 1) ^ (d + 3) := by rw [pow_add (n + 1) d 3]; ac_rfl
+      _ ≤ n ^ 2 * (n * ((n + 1) * A - 1)) := Nat.mul_le_mul_left _ next
+      _ = n ^ 3 * ((n + 1) * A - 1) := by rw [pow_succ n 2, mul_assoc]
+      _ ≤ (n + 1) ^ 3 * ((n - 1) * (A - 1)) := composite_plateau_scale_le hn (two_mul_le_factorial_primeProduct hn)
+
+/-- A safe right endpoint certifies an entire interval whose successor
+steps are composite and stay on the clock plateau. -/
+theorem safe_on_composite_plateau_of_safe_right {a b : ℕ} (ha : 3 ≤ a) (hab : a ≤ b)
+    (steps : ∀ n, a ≤ n → n < b →
+      ¬ Nat.Prime (n + 1) ∧ clock (n + 1) = clock n)
+    (safe : ¬ Counterexample b) :
+    ∀ n, a ≤ n → n ≤ b → ¬ Counterexample n := by
+  induction b, hab using Nat.le_induction with
+  | base =>
+    intro n lower upper
+    simpa only [show n = a by omega] using safe
+  | succ b hab ih =>
+    intro n lower upper
+    by_cases last : n = b + 1
+    · simpa only [last] using safe
+    · obtain ⟨composite, plateau⟩ := steps b hab (Nat.lt_succ_self b)
+      have prior := safe_prev_of_safe_composite_succ_on_plateau
+        (ha.trans hab) composite plateau safe
+      exact ih (fun j hj hjb => steps j hj (hjb.trans (Nat.lt_succ_self b)))
+        prior n lower (by omega)
+
 def stageArgument (stage : ℕ) : ℕ := stage + 2
 
 def stageOrdinal (window : ℕ) (slot : Fin 95) : ℕ := 95 * window + slot.val
