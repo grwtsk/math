@@ -383,4 +383,15 @@ theorem consumeSymbols_emit (cfg : Config) (s : State) (xs rest : List (Fin 256)
     rw [ih]
     rfl
 
+/-- A non-reset update below the threshold increases total weight by one. -/
+theorem update_total_of_no_reset_no_rescale (cfg : Config) (s : State) (byte : Fin 256)
+    (hs : ValidState cfg s) (hreset : s.phase + 1 ≠ cfg.resetEvery)
+    (hevent : rescaleInput cfg s byte = none) :
+    (update cfg s byte).weights.sum = s.weights.sum + 1 := by
+  have hsum := (incrementByte_spec cfg s byte hs).2.2
+  have hlt : ¬ cfg.threshold ≤ (incrementAt (binOf cfg byte) s.weights).sum := by
+    intro h
+    simp [rescaleInput, hreset, h] at hevent
+  simpa only [update, ite_eq_right hreset, ite_eq_right hlt] using hsum
+
 end GRWTSK.ComputerScience.AdaptiveIntegerCoding
