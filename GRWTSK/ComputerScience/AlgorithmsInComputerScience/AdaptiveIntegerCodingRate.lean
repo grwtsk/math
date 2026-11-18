@@ -2,6 +2,7 @@
 Authors: grwtsk contributors. -/
 import GRWTSK.ComputerScience.AlgorithmsInComputerScience.AdaptiveIntegerCoding
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Algebra.BigOperators.Group.List.Basic
 import Mathlib.Data.Finset.Card
 import Mathlib.Analysis.SpecialFunctions.Log.Base
 import Mathlib.Tactic.Linarith
@@ -12,8 +13,9 @@ import Mathlib.Tactic.NormNum
 
 Each rescale event compares the normalized probability of the same selected bin
 immediately before and immediately after floor-halving. The finite sum charges
-one term per selected event. Resets, changes from incrementing counts, and
-rounding by the arithmetic coder have their own costs.
+one term per selected event. A reset compares the old bin probability with
+the uniform successor table. Increments and rounding by the arithmetic coder
+have their own costs.
 -/
 
 open scoped BigOperators
@@ -372,5 +374,82 @@ theorem sum_followingRescaleLoss_binary_sharp_reachable :
   rw [hi, Finset.sum_singleton]
   change rescaleLoss [3, 1] 3 = _
   exact rescaleLoss_binary_sharp
+
+private theorem count_add_other_bins_le_sum (counts : List ℕ) (count : ℕ)
+    (hpos : ∀ n ∈ counts, 0 < n) (hmem : count ∈ counts) :
+    count + (counts.length - 1) ≤ counts.sum := by
+  obtain ⟨left, right, rfl⟩ := List.mem_iff_append.mp hmem
+  have hl := List.length_le_sum_of_one_le left
+    (fun n hn => hpos n (List.mem_append_left _ hn))
+  have hr := List.length_le_sum_of_one_le right
+    (fun n hn => hpos n (List.mem_append_right _ (List.mem_cons_of_mem _ hn)))
+  simp only [List.length_append, List.length_cons, List.sum_append, List.sum_cons]
+  omega
+
+/-- For a scheduled reset, the selected bin's ideal bit cost increases by at
+most the base-two logarithm of K·(H−K)/(H−1), where K is the bin count and H
+is the threshold. The comparison starts at the old table, since the reset
+branch discards the old counts directly. -/
+theorem reset_logMass_le (cfg : Config) (s : State) (byte : Fin 256)
+    (hs : ValidState cfg s) (hreset : s.phase + 1 = cfg.resetEvery)
+    (j : Fin s.weights.length) :
+    Real.logb 2 ((s.weights[j] : ℝ) / s.weights.sum) -
+        Real.logb 2
+          (((((update cfg s byte).weights[j.val]?).getD 0 : ℕ) : ℝ) /
+            (update cfg s byte).weights.sum) ≤
+      Real.logb 2 (((cfg.direct + 1 : ℕ) : ℝ) *
+        ((cfg.threshold - (cfg.direct + 1) : ℕ) : ℝ) / ((cfg.threshold - 1 : ℕ) : ℝ)) := by
+  let total : ℝ := s.weights.sum
+  let cap : ℝ := (cfg.threshold - 1 : ℕ)
+  let top : ℝ := (cfg.threshold - (cfg.direct + 1) : ℕ)
+  let bins : ℝ := (cfg.direct + 1 : ℕ)
+  have hj : s.weights[j] ∈ s.weights := List.getElem_mem j.isLt
+  have hcountPos : 0 < (s.weights[j] : ℝ) := by
+    exact_mod_cast hs.count_pos _ hj
+  have htotal : 0 < total := by
+    dsimp [total]
+    exact_mod_cast List.sum_pos_iff_exists_pos_nat.mpr ⟨_, hj, hs.count_pos _ hj⟩
+  have hcap : 0 < cap := by
+    have := cfg.countRoom
+    dsimp [cap]
+    exact_mod_cast (show 0 < cfg.threshold - 1 by omega)
+  have hbins : 0 < bins := by
+    dsimp [bins]
+    positivity
+  have htotalCap : total ≤ cap := by
+    have := hs.total_lt
+    dsimp [total, cap]
+    exact_mod_cast (show s.weights.sum ≤ cfg.threshold - 1 by omega)
+  have hother : s.weights.length - 1 = cfg.direct := by simp [hs.count_length]
+  have hcountTotalNat : s.weights[j] + cfg.direct ≤ s.weights.sum := by
+    simpa only [hother] using
+      count_add_other_bins_le_sum s.weights s.weights[j] hs.count_pos hj
+  have hcountTotal : (s.weights[j] : ℝ) + cfg.direct ≤ total := by
+    dsimp [total]
+    exact_mod_cast hcountTotalNat
+  have htop : top + (cfg.direct : ℝ) = cap := by
+    have := cfg.countRoom
+    dsimp [top, cap]
+    exact_mod_cast (show cfg.threshold - (cfg.direct + 1) + cfg.direct =
+      cfg.threshold - 1 by omega)
+  have hmass : (s.weights[j] : ℝ) / total ≤ top / cap := by
+    apply (div_le_div_iff₀ htotal hcap).2
+    have hleft := mul_le_mul_of_nonneg_right hcountTotal hcap.le
+    have hright := mul_le_mul_of_nonneg_left htotalCap (Nat.cast_nonneg cfg.direct)
+    nlinarith [congrArg (fun x : ℝ => x * total) htop]
+  have huniform : 0 < (1 : ℝ) / bins := div_pos one_pos hbins
+  have hold : 0 < (s.weights[j] : ℝ) / total := div_pos hcountPos htotal
+  have hratio : ((s.weights[j] : ℝ) / total) / (1 / bins) ≤ bins * top / cap := by
+    calc
+      _ ≤ (top / cap) / (1 / bins) := div_le_div_of_nonneg_right hmass huniform.le
+      _ = _ := by rw [div_div_div_eq, mul_one, mul_comm top bins]
+  have hlog := Real.logb_le_logb_of_le (by norm_num : (1 : ℝ) < 2)
+    (div_pos hold huniform) hratio
+  rw [Real.logb_div hold.ne' huniform.ne'] at hlog
+  have hinit : update cfg s byte = initial cfg := by simp [update, hreset]
+  have hbin : j.val < cfg.direct + 1 := hs.count_length ▸ j.isLt
+  rw [hinit]
+  simpa only [initial, List.getElem?_replicate_of_lt hbin, Option.getD_some,
+    List.sum_replicate_nat, Nat.mul_one, Nat.cast_one, total, bins, top, cap] using hlog
 
 end GRWTSK.ComputerScience.AdaptiveIntegerCoding
