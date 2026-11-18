@@ -305,4 +305,46 @@ theorem runOnCheckpointPrefix_eq_none_iff_of_terminal {w n : ℕ} {c terminal : 
   rw [runOnCheckpointPrefix_eq, Option.map_eq_none_iff,
     runOn_eq_none_iff_length_gt_of_terminal trace stop, List.length_take]
 
+/-- Adjacent success and failure identify the native terminal configuration at
+the successful budget, including its observed tape and absolute head coordinate. -/
+theorem runOnCheckpointPrefix_firstFailure_iff {w : ℕ} (c : Configuration w) (n : ℕ)
+    (chunks : List CheckpointChunk) (last : List ℕ) (target : ℕ) (view : Cfg 95 2 × ℤ) :
+    (runOnCheckpointPrefix n chunks last target c = some view ∧
+      runOnCheckpointPrefix (n + 1) chunks last target c = none) ↔
+      n < (chunks.flatMap CheckpointChunk.instructions ++ last).length ∧
+        ∃ terminal, run n c = some terminal ∧ step terminal = none ∧ handoffView terminal = view := by
+  have nativeView (fits : n ≤ (chunks.flatMap CheckpointChunk.instructions ++ last).length) :
+      runOnCheckpointPrefix n chunks last target c = (run n c).map handoffView := by
+    simp only [runOnCheckpointPrefix_eq, runOn_eq, List.length_take, Nat.min_eq_left fits,
+      Option.map_map, Function.comp_def, handoffView_readdress]
+  constructor
+  · rintro ⟨observed, failed⟩
+    have fits : n < (chunks.flatMap CheckpointChunk.instructions ++ last).length := by
+      by_contra! short
+      rw [runOnCheckpointPrefix_eq, List.take_of_length_le short] at observed
+      rw [runOnCheckpointPrefix_eq, List.take_of_length_le (short.trans (Nat.le_succ n)),
+        observed] at failed
+      contradiction
+    rw [nativeView (Nat.le_of_lt fits)] at observed
+    obtain ⟨terminal, reached, sameView⟩ := Option.map_eq_some_iff.mp observed
+    have failsNext : run (n + 1) c = none := by
+      simpa only [runOnCheckpointPrefix_eq, Option.map_eq_none_iff, runOn_eq, List.length_take,
+        Nat.min_eq_left fits] using failed
+    have prefixReached : runOn (List.replicate n 0) w c = some terminal := by
+      simp only [runOn_eq, List.length_replicate, reached, Option.map_some, readdress_same]
+    have appendFails : runOn (List.replicate n 0 ++ [w]) w c = none := by
+      simpa only [runOn_eq, List.length_append, List.length_replicate, List.length_cons,
+        List.length_nil, Nat.zero_add, Option.map_eq_none_iff] using failsNext
+    rw [runOn_append _ _ w, prefixReached, Option.bind_some, runOn, readdress_same] at appendFails
+    have stop : step terminal = none := by
+      cases edge : step terminal with
+      | none => rfl
+      | some d => simp [edge, runOn] at appendFails
+    exact ⟨fits, terminal, reached, stop, sameView⟩
+  · rintro ⟨fits, terminal, reached, stop, sameView⟩
+    constructor
+    · simp only [nativeView (Nat.le_of_lt fits), reached, Option.map_some, sameView]
+    · exact (runOnCheckpointPrefix_eq_none_iff_of_terminal reached stop _ _ _ _).mpr
+        (lt_min (Nat.lt_succ_self n) fits)
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine.NativeCheckpoint
