@@ -4,6 +4,7 @@ The arithmetic recurrences are adapted from Google LLC's Cryptids (2026),
 under Apache-2.0. See LICENSE at the pinned upstream revision below.
 -/
 import GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.CertifiedStageCoverage
+import Mathlib.Algebra.Ring.GeomSum
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 import Mathlib.Tactic
 
@@ -60,6 +61,91 @@ instance (n : ℕ) : Decidable (Counterexample n) := inferInstanceAs (Decidable 
 
 theorem safe_of_threshold_gt (n : ℕ) (h : n - 1 < threshold n) : ¬ Counterexample n :=
   fun bad => (Nat.not_le_of_gt h) (bad.trans (Nat.sub_le _ _))
+
+open scoped BigOperators
+
+private theorem le_offsetCount_iff_geom_sum_le {base : ℕ} (hbase : 2 ≤ base) (digits x : ℕ) :
+    digits ≤ offsetCount base x ↔ (∑ i ∈ Finset.range digits, base ^ i) ≤ x := by
+  induction digits generalizing x with
+  | zero => simp
+  | succ digits ih =>
+    cases x with
+    | zero => simp [offsetCount, geom_sum_succ]
+    | succ x =>
+      simp only [offsetCount, hbase, ite_true, geom_sum_succ]
+      have step : digits + 1 ≤ 1 + offsetCount base (x / base) ↔
+          digits ≤ offsetCount base (x / base) := by omega
+      rw [step, ih, Nat.le_div_iff_mul_le (by omega : 0 < base),
+        mul_comm base (∑ i ∈ Finset.range digits, base ^ i)]
+      omega
+
+private theorem primeProduct_pos (n : ℕ) : 0 < primeProduct n := by
+  induction n with
+  | zero => decide
+  | succ n ih =>
+    rw [primeProduct]
+    split
+    · exact Nat.mul_pos (Nat.succ_pos n) ih
+    · exact ih
+
+/-- A native arithmetic stage is safe exactly when its factorial–prime product
+meets the power bound at the source's quartering-clock threshold. -/
+theorem safe_iff_product_ge_pow {n : ℕ} (hn : 2 ≤ n) :
+    ¬ Counterexample n ↔
+      n ^ (n - threshold n) ≤ (n - 1) * (n.factorial * primeProduct n - 1) := by
+  let exponent := n - threshold n
+  let product := n.factorial * primeProduct n
+  have threshold_pos : 0 < threshold n := by
+    unfold threshold
+    positivity
+  have weak : ¬ Counterexample n ↔ n ^ exponent - 1 ≤ (n - 1) * (product - 1) := by
+    calc
+      _ ↔ exponent ≤ offsetCount n (product - 1) := by
+        dsimp only [exponent, product]
+        unfold Counterexample deficit
+        omega
+      _ ↔ _ := by
+        rw [le_offsetCount_iff_geom_sum_le hn,
+          ← geom_sum_mul_of_one_le (by omega : 1 ≤ n) exponent, mul_comm (n - 1) (product - 1)]
+        exact (Nat.mul_le_mul_right_iff (by omega : 0 < n - 1)).symm
+  rw [weak]
+  change n ^ exponent - 1 ≤ (n - 1) * (product - 1) ↔
+    n ^ exponent ≤ (n - 1) * (product - 1)
+  have dvd_product : n ∣ product := dvd_mul_of_dvd_left (Nat.dvd_factorial (by omega) le_rfl) _
+  have product_pos : 0 < product := Nat.mul_pos (Nat.factorial_pos _) (primeProduct_pos _)
+  have product_ge : n ≤ product := Nat.le_of_dvd product_pos dvd_product
+  by_cases hexp : exponent = 0
+  · have product_bound : 1 ≤ (n - 1) * (product - 1) :=
+      Nat.mul_le_mul (by omega : 1 ≤ n - 1) (by omega : 1 ≤ product - 1)
+    simp [hexp, product_bound]
+  · have hn3 : 3 ≤ n := by
+      by_contra! small
+      have two : n = 2 := by omega
+      have threshold_two : threshold 2 = 4 := by
+        norm_num [threshold, clock, offsetCount]
+      apply hexp
+      change n - threshold n = 0
+      rw [two, threshold_two]
+    have dvd_power : n ∣ n ^ exponent := by
+      obtain ⟨m, hm⟩ := Nat.exists_eq_succ_of_ne_zero hexp
+      rw [hm, pow_succ]
+      exact dvd_mul_left _ _
+    have ne_boundary : (n - 1) * (product - 1) ≠ n ^ exponent - 1 := by
+      intro boundary
+      have sum_eq : (n - 1) * (product - 1) + (n - 1) = (n - 1) * product := by
+        rw [← Nat.mul_succ]
+        congr 1
+        omega
+      have power_pos : 0 < n ^ exponent := by positivity
+      have sum' : n ^ exponent + (n - 2) = (n - 1) * product := by omega
+      have dvd_sum : n ∣ n ^ exponent + (n - 2) := by
+        rw [sum']
+        exact dvd_mul_of_dvd_right dvd_product (n - 1)
+      have dvd_difference := (Nat.dvd_add_iff_right dvd_power).mpr dvd_sum
+      have small : 0 < n - 2 := by omega
+      have impossible := Nat.le_of_dvd small dvd_difference
+      omega
+    omega
 
 def stageArgument (stage : ℕ) : ℕ := stage + 2
 

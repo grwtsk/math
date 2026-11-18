@@ -810,6 +810,93 @@ theorem cryptids_RH_iff_eventually_bounded_trailingSquareRejections :
     have small := bounded n hn
     omega
 
+/-- The literal square window resets the counter exactly when a slot passes. -/
+theorem squareRejects_eq_false_iff (k : ℕ) :
+    squareRejects k = false ↔ ∃ slot : Fin 95, slotAccepts (k ^ 2) slot = true := by
+  constructor
+  · intro reset
+    by_contra missing
+    have rejects := (squareRejects_eq_true_iff k).mpr fun slot =>
+      Bool.eq_false_iff.mpr (not_exists.mp missing slot)
+    rw [reset] at rejects
+    contradiction
+  · rintro ⟨slot, passes⟩
+    apply Bool.eq_false_iff.mpr
+    intro rejects
+    have fails := (squareRejects_eq_true_iff k).mp rejects slot
+    rw [passes] at fails
+    contradiction
+
+/-- At the bound, the next count stays within the bound precisely when the
+current square has an accepting slot. -/
+theorem trailingSquareRejections_succ_le_iff_at_bound {k bound : ℕ}
+    (saturated : trailingSquareRejections k = bound) :
+    trailingSquareRejections (k + 1) ≤ bound ↔
+      ∃ slot : Fin 95, slotAccepts (k ^ 2) slot = true := by
+  rw [← squareRejects_eq_false_iff]
+  cases rejected : squareRejects k <;>
+    simp [trailingSquareRejections, rejected, saturated]
+
+/-- From an initialized bound, the counter can exceed it only by fully
+rejecting a square when the count is already at the bound. -/
+theorem trailingSquareRejections_tail_bound_iff {start bound : ℕ}
+    (initial : trailingSquareRejections start ≤ bound) :
+    (∀ n ≥ start, trailingSquareRejections n ≤ bound) ↔
+      ∀ k ≥ start, trailingSquareRejections k = bound →
+        ∃ slot : Fin 95, slotAccepts (k ^ 2) slot = true := by
+  constructor
+  · intro bounded k later saturated
+    exact (trailingSquareRejections_succ_le_iff_at_bound saturated).mp
+      (bounded (k + 1) (by omega))
+  · intro reset n
+    induction n with
+    | zero => simp [trailingSquareRejections]
+    | succ k ih =>
+      intro later
+      by_cases previous : start ≤ k
+      · have hk := ih previous
+        by_cases saturated : trailingSquareRejections k = bound
+        · exact (trailingSquareRejections_succ_le_iff_at_bound saturated).mpr
+            (reset k previous saturated)
+        · cases rejected : squareRejects k with
+          | false => simp [trailingSquareRejections, rejected]
+          | true =>
+            simp only [trailingSquareRejections, rejected, ite_true]
+            omega
+      · have boundary : k + 1 = start := by omega
+        rwa [boundary]
+
+/-- Acceptance is equivalent to the integer product comparison at the
+literal argument decoded from this window and slot. -/
+theorem slotAccepts_iff_product_ge_pow (window : ℕ) (slot : Fin 95) :
+    slotAccepts window slot = true ↔
+      let n := stageArgument (stageOrdinal window slot)
+      n ^ (n - threshold n) ≤ (n - 1) * (n.factorial * primeProduct n - 1) := by
+  simpa only [slotAccepts, decide_eq_true_eq] using
+    (safe_iff_product_ge_pow (n := stageArgument (stageOrdinal window slot))
+      (by simp [stageArgument]))
+
+/-- For any initialized tail bound, RH is equivalent to finding a literal
+slot satisfying the integer product bound at every saturation. -/
+theorem cryptids_RH_iff_product_bound_at_square_saturation {start bound : ℕ}
+    (initial : trailingSquareRejections start ≤ bound) :
+    RiemannHypothesis ↔
+      ∀ k ≥ start, trailingSquareRejections k = bound →
+        ∃ slot : Fin 95,
+          let n := stageArgument (stageOrdinal (k ^ 2) slot)
+          n ^ (n - threshold n) ≤ (n - 1) * (n.factorial * primeProduct n - 1) := by
+  constructor
+  · intro rh k _ _
+    have passes := (window_accepts_iff_all_slots_accept (k ^ 2)).mp
+      (all_windows_accept_iff_cryptids_RH.mpr rh (k ^ 2)) 0
+    exact ⟨0, (slotAccepts_iff_product_ge_pow (k ^ 2) 0).mp passes⟩
+  · intro comparison
+    apply cryptids_RH_iff_eventually_bounded_trailingSquareRejections.mpr
+    refine ⟨start, bound, (trailingSquareRejections_tail_bound_iff initial).mpr ?_⟩
+    intro k later saturated
+    obtain ⟨slot, good⟩ := comparison k later saturated
+    exact ⟨slot, (slotAccepts_iff_product_ge_pow (k ^ 2) slot).mpr good⟩
+
 /-- Saturating the native rejection monitor at a prescribed cap uses
 only the states from zero through that cap. -/
 def cappedSquareRejections (cap : ℕ) : ℕ → ℕ
