@@ -50,6 +50,44 @@ theorem CyclicLassoMonoid.kernelOneFormula_toMonoid_eq_one_iff :
     change μ + (p - μ % p) % p = 0
     simp [h]
 
+/-- Two ambient states have the same cycle projection exactly when their
+normal exponents have the same residue modulo the period. -/
+theorem CyclicLassoMonoid.kernelOne_mul_eq_iff_exp_modEq
+    (m n : CyclicLassoMonoid μ p hp) :
+    (kernelOneFormula μ p hp).toMonoid * m = (kernelOneFormula μ p hp).toMonoid * n ↔
+      m.exp.val ≡ n.exp.val [MOD p] := by
+  let e := kernelOneFormula μ p hp
+  have he : (e.toMonoid.exp.val : ZMod p) = 0 := by
+    dsimp [e]
+    rw [kernelOneFormula_eq_one]
+    exact (ZMod.natCast_eq_zero_iff _ _).2 (kernel_one_exp_dvd μ p hp)
+  have hres (z : CyclicLassoMonoid μ p hp) :
+      kernelResidueEquiv μ p hp (rightAbsorb e z) = (z.exp.val : ZMod p) := by
+    change (reduceExp μ p hp (e.toMonoid.exp.val + z.exp.val) : ZMod p) = _
+    rw [reduceExp_zmod, Nat.cast_add, he, zero_add]
+  have hproject : rightAbsorb e m = rightAbsorb e n ↔ m.exp.val ≡ n.exp.val [MOD p] := by
+    rw [← (kernelResidueEquiv μ p hp).injective.eq_iff, hres m, hres n]
+    exact ZMod.natCast_eq_natCast_iff _ _ p
+  exact ⟨fun h => hproject.mp (LassoKernel.ext h),
+    fun h => congrArg LassoKernel.toMonoid (hproject.mpr h)⟩
+
+/-- The quotient of the normal exponent distinguishes all states within a
+cycle projection fiber. -/
+theorem CyclicLassoMonoid.kernelOne_mul_quotient_injective :
+    Function.Injective (fun m : CyclicLassoMonoid μ p hp =>
+      ((kernelOneFormula μ p hp).toMonoid * m, m.exp.val / p)) := by
+  intro m n h
+  have hr := (kernelOne_mul_eq_iff_exp_modEq m n).mp (congrArg Prod.fst h)
+  have hq := congrArg Prod.snd h
+  apply CyclicLassoMonoid.ext
+  apply Fin.ext
+  change m.exp.val % p = n.exp.val % p at hr
+  change m.exp.val / p = n.exp.val / p at hq
+  calc
+    m.exp.val = m.exp.val % p + p * (m.exp.val / p) := (Nat.mod_add_div _ _).symm
+    _ = n.exp.val % p + p * (n.exp.val / p) := by rw [hr, hq]
+    _ = n.exp.val := Nat.mod_add_div _ _
+
 /-- Multiplication by the cycle identity preserves enough information to
 recover every complete label tail exactly when the lasso has no stem. -/
 theorem exists_decode_labelTails_of_kernelOne_mul_iff {A : Type*} {x : ℕ → A}
