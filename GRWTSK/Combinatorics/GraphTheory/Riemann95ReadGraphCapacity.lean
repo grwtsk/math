@@ -1128,6 +1128,128 @@ theorem terminal_rooted_iso_iff_same_cut_edges {V W : Type*}
       change G.edge s a t ↔ H.edge (f (e.symm s)) a (f (e.symm t))
       simpa only [e.apply_symm_apply] using same (e.symm s) (e.symm t) a
 
+/-- A labeled edge that skips at least one cut and meets the suffix test. -/
+abbrev TerminalShortcut (n : ℕ) (word : List Read) :=
+  {edge : Fin (n + 1) × Read × Fin (n + 1) //
+    edge.1.val + 1 < edge.2.2.val ∧
+      (edge.2.1 :: word.drop edge.2.2.val) <+: word.drop edge.1.val}
+
+/-- The consecutive word edges together with the selected compatible shortcuts. -/
+def terminalShortcutGraph {n : ℕ} {word : List Read}
+    (chosen : Set (TerminalShortcut n word)) : LabeledGraph (Fin (n + 1)) Read :=
+  ⟨fun i a j => (j.val = i.val + 1 ∧ word[i.val]? = some a) ∨
+    ∃ compatible, (⟨(i, a, j), compatible⟩ : TerminalShortcut n word) ∈ chosen⟩
+
+private theorem terminalShortcutGraph_chain {n : ℕ} {word : List Read}
+    (chosen : Set (TerminalShortcut n word)) (k : Fin n) (a : Read)
+    (label : word[k.val]? = some a) :
+    (terminalShortcutGraph chosen).edge k.castSucc a k.succ :=
+  Or.inl ⟨rfl, label⟩
+
+private theorem terminalShortcutGraph_compatible {n : ℕ} {word : List Read}
+    (size : word.length = n) (chosen : Set (TerminalShortcut n word))
+    {i j : Fin (n + 1)} {a : Read} (edge : (terminalShortcutGraph chosen).edge i a j) :
+    i < j ∧ (a :: word.drop j.val) <+: word.drop i.val := by
+  rcases edge with ⟨step, label⟩ | ⟨compatible, _⟩
+  · have h := j.isLt
+    have inWord : i.val < word.length := by omega
+    have same : word[i.val]'inWord = a :=
+      Option.some.inj ((List.getElem?_eq_getElem inWord).symm.trans label)
+    refine ⟨?_, ?_⟩
+    · change i.val < j.val
+      omega
+    · rw [step, List.drop_eq_getElem_cons inWord, same]
+  · refine ⟨?_, compatible.2⟩
+    change i.val < j.val
+    have jumps : i.val + 1 < j.val := compatible.1
+    omega
+
+/-- Every subset of compatible shortcuts gives a minimum exact presentation
+when the word is the observed native terminal word. -/
+theorem terminalShortcutGraph_exact {n : ℕ} {word : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none)
+    (chosen : Set (TerminalShortcut n word)) :
+    ∀ w, (∃ t, WordPath (terminalShortcutGraph chosen) 0 w t) ↔
+      ∃ d, WordPath readGraph init w d := by
+  have size := ((observe_iff_path n init word).mp observed).1
+  apply (exactRoot_iff_terminal_chain_and_shortcuts _ _ observed stopped
+    (Fintype.card_fin (n+1))).mpr
+  exact ⟨Equiv.refl _, rfl, terminalShortcutGraph_chain chosen,
+    fun _ _ _ edge => terminalShortcutGraph_compatible size chosen edge⟩
+
+/-- Every minimum exact presentation has a representative given by a subset
+of the compatible shortcut set. -/
+theorem exists_terminalShortcutGraph_iso {V : Type*} [Fintype V]
+    (G : LabeledGraph V Read) (root : V) {n : ℕ} {word : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none)
+    (minimum : Fintype.card V = n + 1)
+    (exactRoot : ∀ w, (∃ t, WordPath G root w t) ↔ ∃ d, WordPath readGraph init w d) :
+    ∃ (chosen : Set (TerminalShortcut n word)) (e : Fin (n + 1) ≃ V), e 0 = root ∧
+      ∀ (i j : Fin (n + 1)) (a : Read),
+        (terminalShortcutGraph chosen).edge i a j ↔ G.edge (e i) a (e j) := by
+  have size := ((observe_iff_path n init word).mp observed).1
+  obtain ⟨e, rootEq, chain, edges⟩ :=
+    (exactRoot_iff_terminal_chain_and_shortcuts G root observed stopped minimum).mp exactRoot
+  let chosen : Set (TerminalShortcut n word) :=
+    {edge | G.edge (e edge.val.1) edge.val.2.1 (e edge.val.2.2)}
+  refine ⟨chosen, e, ?_, ?_⟩
+  · exact rootEq
+  · intro i j a
+    constructor
+    · rintro (⟨step, label⟩ | ⟨_, present⟩)
+      · have h := j.isLt
+        let k : Fin n := ⟨i.val, by omega⟩
+        have start : k.castSucc = i := Fin.ext rfl
+        have stop : k.succ = j := Fin.ext step.symm
+        simpa only [start, stop] using chain k a label
+      · exact present
+    · intro edge
+      obtain ⟨ordered, suffix⟩ := edges i j a edge
+      by_cases step : j.val = i.val + 1
+      · have h := j.isLt
+        have inWord : i.val < word.length := by omega
+        rw [List.drop_eq_getElem_cons inWord] at suffix
+        have label := (List.cons_prefix_cons.mp suffix).1
+        exact Or.inl ⟨step, (List.getElem?_eq_getElem inWord).trans (congrArg some label.symm)⟩
+      · have earlier : i.val < j.val := ordered
+        have skip : i.val + 1 < j.val := by omega
+        exact Or.inr ⟨⟨skip, suffix⟩, edge⟩
+
+/-- Distinct shortcut choices give distinct rooted labeled graph classes. -/
+theorem terminalShortcutGraph_iso_iff {n : ℕ} {word : List Read} (size : word.length = n)
+    (chosen other : Set (TerminalShortcut n word)) :
+    (∃ iso : Fin (n + 1) ≃ Fin (n + 1), iso 0 = 0 ∧ ∀ (i j : Fin (n + 1)) (a : Read),
+      (terminalShortcutGraph chosen).edge i a j ↔
+        (terminalShortcutGraph other).edge (iso i) a (iso j)) ↔ chosen = other := by
+  constructor
+  · intro iso
+    have same := (terminal_rooted_iso_iff_same_cut_edges _ _ 0 0 size
+      (Equiv.refl _) (Equiv.refl _) rfl rfl (terminalShortcutGraph_chain chosen)
+      (fun _ _ _ edge => (terminalShortcutGraph_compatible size other edge).1)).mp iso
+    have edgeIff (selection : Set (TerminalShortcut n word)) (edge : TerminalShortcut n word) :
+        (terminalShortcutGraph selection).edge edge.val.1 edge.val.2.1 edge.val.2.2 ↔
+          edge ∈ selection := by
+      constructor
+      · rintro (⟨step, _⟩ | ⟨_, present⟩)
+        · have jumps := edge.property.1
+          omega
+        · exact present
+      · intro present
+        exact Or.inr ⟨edge.property, present⟩
+    ext edge
+    exact (edgeIff chosen edge).symm.trans
+      ((same edge.val.1 edge.val.2.2 edge.val.2.1).trans (edgeIff other edge))
+  · rintro rfl
+    exact ⟨Equiv.refl _, rfl, fun _ _ _ => Iff.rfl⟩
+
+/-- The number of representatives in the faithful and exhaustive family. -/
+theorem terminalShortcut_choices_card (n : ℕ) (word : List Read) :
+    Nat.card (Set (TerminalShortcut n word)) = 2 ^ Nat.card (TerminalShortcut n word) := by
+  let _ : Fintype (TerminalShortcut n word) := Fintype.ofFinite _
+  simp only [Nat.card_eq_fintype_card, Fintype.card_set]
+
 private theorem proper_prefix_of_frontier_is_prefix
     {word bad pre : List Read} (member : bad ∈ terminalFrontier word)
     (pref : pre <+: bad) (short : pre.length < bad.length) : pre <+: word := by
