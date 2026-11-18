@@ -1,8 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Local mathematical attribution: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN /
-EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
-TRANSITIVE_AXIOM_AUDIT_NOT_RUN / INDEPENDENT_REVIEW_NOT_RUN.
+Source and verification record: https://github.com/grwtsk/math/issues/1832.
 -/
 import GRWTSK.DynamicalSystemsAndErgodicTheory.SoficSingletonPrefixCapacity
 
@@ -145,7 +143,8 @@ theorem firstTailReturn_capacity_iff
         ExactRoot G root trace) ↔ j ≤ budget := by
   constructor
   · rintro ⟨n, hn, G, root, hExact⟩
-    exact (firstTailReturn_card_le hfirst G root hExact).trans hn
+    have hjn : j ≤ n := by simpa using firstTailReturn_card_le hfirst G root hExact
+    exact hjn.trans hn
   · intro hj
     obtain ⟨G, root, hExact⟩ := firstTailReturn_exists_exactRoot hfirst
     exact ⟨j, hj, G, root, hExact⟩

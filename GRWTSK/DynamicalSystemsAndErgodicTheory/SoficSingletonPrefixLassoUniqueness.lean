@@ -1,8 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Local mathematical attribution: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN /
-EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
-TRANSITIVE_AXIOM_AUDIT_NOT_RUN / INDEPENDENT_REVIEW_NOT_RUN.
+Source and verification record: https://github.com/grwtsk/math/issues/1832.
 -/
 import GRWTSK.DynamicalSystemsAndErgodicTheory.SoficSingletonPrefixRigidity
 
@@ -181,7 +179,7 @@ private theorem walk_segment
         WordPath.cons (x start)
           (tracePrefix (fun k => x (start + 1 + k)) n)
           (hstep start) tail
-      simpa [prefix_succ_at, Nat.add_assoc] using whole
+      simpa [prefix_succ_at, Nat.add_assoc, Nat.add_left_comm, Nat.add_comm] using whole
 
 /-- The missing bridge in the proposed blueprint. This is DERIVED from
 ExactRoot, not postulated as a field. An arbitrary edge between two states
@@ -219,7 +217,8 @@ theorem step_forces_suffix_of_exactRoot
   intro k
   have ht := (forced (k + 1)).2
   have eq := congrArg (fun ys : List A => ys[k]?) ht
-  simpa [tracePrefix, Nat.add_assoc] using eq
+  simpa only [tracePrefix, List.getElem?_ofFn, Nat.lt_succ_self, dite_true,
+    Option.some.injEq] using eq
 
 /-- Two occurrences of the same graph vertex along an actual rooted
 walk represent the same COMPLETE suffix, even if the graph is
@@ -294,7 +293,7 @@ structure RootedLabeledGraphIso
 /-- Every minimum-cardinality exact rooted presentation, including one
 initially allowed to be nondeterministic, is isomorphic as a ROOTED,
 EDGE-LABELED graph to the canonical chain followed by one cycle. -/
-theorem canonical_lasso_uniqueness [Fintype V]
+noncomputable def canonical_lasso_uniqueness [Fintype V]
     {x : ℕ → A} {i j : ℕ}
     (hfirst : FirstTailReturn x i j)
     (G : LabeledGraph V A) (root : V)
@@ -304,8 +303,10 @@ theorem canonical_lasso_uniqueness [Fintype V]
       (canonicalLasso x i j hfirst.1)
       (canonicalLassoRoot hfirst.1) G root := by
   classical
-  obtain ⟨walk, hroot, hstep⟩ :=
-    rooted_walk_of_exactRoot G root x hExact
+  let walkWitness := rooted_walk_of_exactRoot G root x hExact
+  let walk := Classical.choose walkWitness
+  have hroot := (Classical.choose_spec walkWitness).1
+  have hstep := (Classical.choose_spec walkWitness).2
   let φ : Fin j → V := fun s => walk s.val
   have hinj : Function.Injective φ := by
     intro s t hst
@@ -355,20 +356,71 @@ theorem canonical_lasso_uniqueness [Fintype V]
       intro k
       exact (htail k).trans (((lassoNext_tail hfirst s) k).symm)
 
-/-- A period and sharp separation certificate specifying the LEAST
-preperiod and LEAST eventual period. The separation field is retained
-as an explicit obligation: deriving it from nested Nat.find choices
-is a separate arithmetic proof and not assumed here. -/
+/-- A positive period with distinct cuts before the first return. -/
 structure LeastLassoParams (x : ℕ → A) (μ p : ℕ) : Prop where
   pos_p : 0 < p
   periodic : ∀ n, μ ≤ n → x (n + p) = x n
   distinct_cuts : ∀ a b, a < b → b < μ + p → ¬ EqualTails x a b
 
-private theorem LeastLassoParams.firstTailReturn
+private theorem period_of_equal_tails
+    {x : ℕ → A} {a b : ℕ} (hab : a ≤ b) (htail : EqualTails x a b) :
+    ∀ n : ℕ, a ≤ n → x (n + (b - a)) = x n := by
+  intro n hn
+  have hindex : b + (n - a) = n + (b - a) := by omega
+  simpa only [Nat.add_sub_of_le hn, hindex] using (htail (n - a)).symm
+
+/-- The least onset and the least positive period there force distinct cuts
+up to the first return at `μ + p`. -/
+theorem LeastLassoParams.of_minimal_onset_period
+    {x : ℕ → A} {μ p : ℕ}
+    (hp : 0 < p)
+    (hperiodic : ∀ n : ℕ, μ ≤ n → x (n + p) = x n)
+    (hminOnset : ∀ m : ℕ,
+      (∃ q : ℕ, 0 < q ∧ ∀ n : ℕ, m ≤ n → x (n + q) = x n) → μ ≤ m)
+    (hminPeriod : ∀ q : ℕ, 0 < q →
+      (∀ n : ℕ, μ ≤ n → x (n + q) = x n) → p ≤ q) :
+    LeastLassoParams x μ p := by
+  refine ⟨hp, hperiodic, ?_⟩
+  intro a b hab hb htail
+  let d := b - a
+  have hd : 0 < d := Nat.sub_pos_of_lt hab
+  have hadd : a + d = b := Nat.add_sub_of_le hab.le
+  have hperiodAtA : ∀ n : ℕ, a ≤ n → x (n + d) = x n :=
+    period_of_equal_tails hab.le htail
+  have ha : μ ≤ a := hminOnset a ⟨d, hd, hperiodAtA⟩
+  have hlt : d < p := by omega
+  have hperiodAtMu : ∀ n : ℕ, μ ≤ n → x (n + d) = x n := by
+    intro n hn
+    calc
+      x (n + d) = x ((n + d) + p) := (hperiodic (n + d) (by omega)).symm
+      _ = x ((n + p) + d) := congrArg x (by omega)
+      _ = x (n + p) := hperiodAtA (n + p) (by omega)
+      _ = x n := hperiodic n hn
+  exact (Nat.not_lt_of_ge (hminPeriod d hd hperiodAtMu)) hlt
+
+/-- A full-tail return supplies witnesses for both minimizations. -/
+theorem LeastLassoParams.exists_of_tailReturn
+    {x : ℕ → A} (h : HasTailReturn x) :
+    ∃ μ p : ℕ, LeastLassoParams x μ p := by
+  classical
+  have hex : ∃ m : ℕ, ∃ q : ℕ, 0 < q ∧ ∀ n : ℕ, m ≤ n → x (n + q) = x n := by
+    obtain ⟨a, b, hab, htail⟩ := h
+    exact ⟨a, b - a, Nat.sub_pos_of_lt hab, period_of_equal_tails hab.le htail⟩
+  let μ := Nat.find hex
+  have hμ : ∃ q : ℕ, 0 < q ∧ ∀ n : ℕ, μ ≤ n → x (n + q) = x n :=
+    Nat.find_spec hex
+  let p := Nat.find hμ
+  have hp : 0 < p ∧ ∀ n : ℕ, μ ≤ n → x (n + p) = x n := Nat.find_spec hμ
+  exact ⟨μ, p, LeastLassoParams.of_minimal_onset_period hp.1 hp.2
+    (fun m hm => Nat.find_min' hex (m := m) hm)
+    (fun q hq hper => Nat.find_min' hμ (m := q) ⟨hq, hper⟩)⟩
+
+/-- The certified cuts make the return from `μ + p` to `μ` the first one. -/
+theorem LeastLassoParams.firstTailReturn
     {x : ℕ → A} {μ p : ℕ}
     (h : LeastLassoParams x μ p) :
     FirstTailReturn x μ (μ + p) := by
-  refine ⟨by omega, ?_, h.distinct_cuts⟩
+  refine ⟨Nat.lt_add_of_pos_right h.pos_p, ?_, h.distinct_cuts⟩
   intro k
   have ht := h.periodic (μ + k) (by omega)
   have heq : μ + k + p = μ + p + k := by omega
@@ -377,7 +429,7 @@ private theorem LeastLassoParams.firstTailReturn
 
 /-- Convenient μ+p form of the uniqueness theorem, without
 postulating any additional graph-language soundness fields. -/
-theorem canonical_lasso_uniqueness_of_least_params [Fintype V]
+noncomputable def canonical_lasso_uniqueness_of_least_params [Fintype V]
     {x : ℕ → A} {μ p : ℕ}
     (h : LeastLassoParams x μ p)
     (G : LabeledGraph V A) (root : V)
