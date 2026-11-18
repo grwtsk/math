@@ -195,16 +195,16 @@ noncomputable def followingRescaleLoss (cfg : Config) (initialState : State)
     Real.logb 2 (((counts[bin]?).getD 0 : ℕ) / (counts.sum : ℝ)) -
       Real.logb 2 (((after[bin]?).getD 0 : ℕ) / (after.sum : ℝ))
 
-/-- On an adaptive trace, the total increase in ideal bit cost charged to bytes
-immediately following a rescale is at most log₂(128/43) per such byte. -/
-theorem sum_followingRescaleLoss_le (cfg : Config) (initialState : State)
-    (xs : List (Fin 256)) (hvalid : ValidState cfg initialState) :
+private theorem sum_followingRescaleLoss_le_of_bound (cfg : Config) (initialState : State)
+    (xs : List (Fin 256)) (hvalid : ValidState cfg initialState) (bound : ℝ)
+    (hbound : ∀ counts : List ℕ, counts.length = cfg.direct + 1 →
+      (∀ n ∈ counts, 0 < n) → ∀ n ∈ counts, rescaleLoss counts n ≤ bound) :
     (∑ i ∈ followingRescaleIndices cfg initialState xs,
       followingRescaleLoss cfg initialState xs i) ≤
       ((followingRescaleIndices cfg initialState xs).card : ℝ) *
-        Real.logb 2 (128 / 43) := by
+        bound := by
   calc
-    _ ≤ ∑ _i ∈ followingRescaleIndices cfg initialState xs, Real.logb 2 (128 / 43) := by
+    _ ≤ ∑ _i ∈ followingRescaleIndices cfg initialState xs, bound := by
       refine Finset.sum_le_sum fun i hi => ?_
       let before := (xs.take i.val).foldl (update cfg) initialState
       let byte := xs[i.val]'(by have := i.isLt; omega)
@@ -215,19 +215,44 @@ theorem sum_followingRescaleLoss_le (cfg : Config) (initialState : State)
       cases he : rescaleInput cfg before byte with
       | none => simp [he] at hs
       | some counts =>
-        have hlen := (rescaleInput_spec cfg before byte hstate counts he).1
+        obtain ⟨hlen, hp, _, hweights⟩ := rescaleInput_spec cfg before byte hstate counts he
         have hj : binOf cfg next < counts.length := by
           rw [hlen]
           exact Nat.lt_succ_of_le (Nat.min_le_right _ _)
-        let bin : Fin counts.length := ⟨binOf cfg next, hj⟩
-        have hcost := rescaleInput_logMass_le cfg before byte hstate counts he bin
+        have hcost := hbound counts hlen hp counts[binOf cfg next] (List.getElem_mem hj)
         have hstep := he
         simp only [before, byte] at hstep
         have hindex := hj
         simp only [next] at hindex
-        simpa only [followingRescaleLoss, hstep, Fin.getElem_fin, List.getElem?_eq_getElem hindex,
-          Option.getD_some, bin, before, byte, next] using hcost
+        have hafter := hweights
+        simp only [before, byte] at hafter
+        simpa only [followingRescaleLoss, hstep, hafter, rescaleLoss, List.getElem?_map,
+          List.getElem?_eq_getElem hindex, Option.map_some, Option.getD_some, next] using hcost
     _ = _ := by simp
+
+/-- On an adaptive trace, the total increase in ideal bit cost charged to bytes
+immediately following a rescale is at most log₂(128/43) per such byte. -/
+theorem sum_followingRescaleLoss_le (cfg : Config) (initialState : State)
+    (xs : List (Fin 256)) (hvalid : ValidState cfg initialState) :
+    (∑ i ∈ followingRescaleIndices cfg initialState xs,
+      followingRescaleLoss cfg initialState xs i) ≤
+      ((followingRescaleIndices cfg initialState xs).card : ℝ) *
+        Real.logb 2 (128 / 43) := by
+  apply sum_followingRescaleLoss_le_of_bound cfg initialState xs hvalid
+  intro counts hlen hp n hn
+  exact rescaleLoss_le counts (hlen ▸ cfg.directBound) hp n hn
+
+/-- For the actual direct/escape trace with two bins, the ideal charge for
+every byte following a rescale is bounded by log₂(3/2). -/
+theorem sum_followingRescaleLoss_binary_le (cfg : Config) (initialState : State)
+    (xs : List (Fin 256)) (hvalid : ValidState cfg initialState) (hdirect : cfg.direct = 1) :
+    (∑ i ∈ followingRescaleIndices cfg initialState xs,
+      followingRescaleLoss cfg initialState xs i) ≤
+      ((followingRescaleIndices cfg initialState xs).card : ℝ) *
+        Real.logb 2 (3 / 2) := by
+  apply sum_followingRescaleLoss_le_of_bound cfg initialState xs hvalid
+  intro counts hlen
+  exact rescaleLoss_binary_le counts (by simpa [hdirect] using hlen)
 
 private theorem replay_phase_eq_mod (cfg : Config) (s : State) (xs : List (Fin 256))
     (hs : ValidState cfg s) :
@@ -318,5 +343,34 @@ theorem sum_followingRescaleLoss_initial_le (cfg : Config) (xs : List (Fin 256))
   apply mul_le_mul_of_nonneg_right
   · exact_mod_cast card_followingRescaleIndices_initial_le cfg xs
   · exact Real.logb_nonneg (by norm_num) (by norm_num)
+
+/-- The two-bin bound from initialization also excludes scheduled reset
+positions and the terminal byte. -/
+theorem sum_followingRescaleLoss_binary_initial_le (cfg : Config) (xs : List (Fin 256))
+    (hdirect : cfg.direct = 1) :
+    (∑ i ∈ followingRescaleIndices cfg (initial cfg) xs,
+      followingRescaleLoss cfg (initial cfg) xs i) ≤
+      ((xs.length - 1 - (xs.length - 1) / cfg.resetEvery : ℕ) : ℝ) *
+        Real.logb 2 (3 / 2) := by
+  refine (sum_followingRescaleLoss_binary_le cfg (initial cfg) xs
+    (initial_valid cfg) hdirect).trans ?_
+  apply mul_le_mul_of_nonneg_right
+  · exact_mod_cast card_followingRescaleIndices_initial_le cfg xs
+  · exact Real.logb_nonneg (by norm_num) (by norm_num)
+
+/-- Three zero bytes attain the binary trace bound with one charged rescale.
+The third byte is scored using the table from the second byte's update. -/
+theorem sum_followingRescaleLoss_binary_sharp_reachable :
+    ∃ cfg : Config, cfg.direct = 1 ∧
+      (followingRescaleIndices cfg (initial cfg) [0, 0, 0]).card = 1 ∧
+      (∑ i ∈ followingRescaleIndices cfg (initial cfg) [0, 0, 0],
+        followingRescaleLoss cfg (initial cfg) [0, 0, 0] i) = Real.logb 2 (3 / 2) := by
+  let cfg : Config := ⟨1, 4, 3, by decide, by decide, by decide, by decide, by decide⟩
+  let i : Fin (([0, 0, 0] : List (Fin 256)).length - 1) := ⟨1, by decide⟩
+  have hi : followingRescaleIndices cfg (initial cfg) [0, 0, 0] = {i} := by decide
+  refine ⟨cfg, rfl, by rw [hi, Finset.card_singleton], ?_⟩
+  rw [hi, Finset.sum_singleton]
+  change rescaleLoss [3, 1] 3 = _
+  exact rescaleLoss_binary_sharp
 
 end GRWTSK.ComputerScience.AdaptiveIntegerCoding
