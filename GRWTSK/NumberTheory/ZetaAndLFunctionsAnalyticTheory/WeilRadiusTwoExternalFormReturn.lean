@@ -6,6 +6,7 @@ Authors: grwtsk contributors
 import GRWTSK.MeasureAndIntegration.FourierL1L2ForwardNamespaced
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilGammaFourierReturn
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddWindowPoleReturn
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddLiteralCofinal
 
 /-!
 # Real odd radius-two form normalization
@@ -188,5 +189,23 @@ theorem highFloor_of_form_nonnegative
   rw [core_eq_form_add_pole_add_half_mass hf ho hs he]
   have hMass : 0 ≤ ∫ x : ℝ, ‖f x‖ ^ 2 := integral_nonneg (fun _ => sq_nonneg _)
   linarith only [hForm hf hm ho hs he, hMass, sq_nonneg (∫ x : ℝ, f x * Real.sinh (x / 2))]
+
+
+/-- Nonnegativity of the original pole-inclusive form gives the literal
+radius-two stage inequality directly. The odd pole charge cancels exactly. -/
+theorem stageLower_one_of_form_nonnegative
+    (hForm : ∀ ⦃f : ℝ → ℝ⦄, MemLp f 2 volume → Measurable f → Function.Odd f →
+      (∀ᵐ x : ℝ, x ∉ Icc (-2) 2 → f x = 0) →
+      IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r f) (Ioi 0) →
+      0 ≤ paperForm f) :
+    OddLiteralCofinal.StageLower 1 := by
+  intro f hf hm ho hs he
+  have hRadius : ((1 : ℕ) : ℝ) + 1 = 2 := by norm_num
+  rw [hRadius] at hs ⊢
+  rw [pow_one, ← neg_div]
+  unfold OddLiteralWindow.shiftedOddWeilEnergy
+  rw [core_eq_form_add_pole_add_half_mass hf ho hs he]
+  have hMass : 0 ≤ ∫ x : ℝ, ‖f x‖ ^ 2 := integral_nonneg (fun _ => sq_nonneg _)
+  linarith only [hForm hf hm ho hs he, hMass]
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoExternalFormReturn
