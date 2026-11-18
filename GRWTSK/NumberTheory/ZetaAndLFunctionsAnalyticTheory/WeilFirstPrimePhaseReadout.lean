@@ -2,7 +2,7 @@
 Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 -/
-import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilFirstPrimeWindowReturn
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilDualPhaseContrast
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 
 /-!
@@ -296,6 +296,38 @@ theorem onePrime_imaginary_error_from_signedWindowValue
     field_simp [hw.ne', hβ]
     ring
   rw [gap, abs_div, abs_mul, abs_of_pos hw, abs_sub_comm]
+
+/-- The difference of signed estimates in the two character sectors
+recovers the imaginary sample of the same original test. The two certified
+signed errors contribute additively to the phase error allowance. -/
+theorem onePrime_imaginary_error_from_dual_estimates
+    (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (phase : (χ (2 : ℕ)).im ≠ 0) (f : WindowTest A)
+    (estimate dualEstimate error dualError : ℝ)
+    (forward_ok : |estimate - signedWindowValue χ A f.1| ≤ error)
+    (dual_ok : |dualEstimate - signedWindowValue χ⁻¹ A f.1| ≤ dualError) :
+    let coefficient := 4 * primeWeight 2 * (χ (2 : ℕ)).im
+    |(dualEstimate - estimate) / coefficient - (correlation f.1 (Real.log 2)).im| ≤
+      (dualError + error) / |coefficient| := by
+  intro coefficient
+  have weight : 0 < primeWeight 2 := by
+    rw [primeWeight, ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two]
+    exact div_pos (Real.log_pos (by norm_num)) (Real.sqrt_pos.2 (by norm_num))
+  have nonzero : coefficient ≠ 0 :=
+    mul_ne_zero (mul_ne_zero (by norm_num) weight.ne') phase
+  have gap : signedWindowValue χ⁻¹ A f.1 - signedWindowValue χ A f.1 =
+      coefficient * (correlation f.1 (Real.log 2)).im := by
+    rw [signedWindowValue, signedWindowValue, inv_inv, primeReadout_dual_sub,
+      firstPowers_eq_singleton_two lo hi]
+    simp [dualPhasePart, coefficient, mul_assoc]
+  have deviation : (dualEstimate - estimate) / coefficient - (correlation f.1 (Real.log 2)).im =
+      ((dualEstimate - signedWindowValue χ⁻¹ A f.1) -
+        (estimate - signedWindowValue χ A f.1)) / coefficient := by
+    field_simp [nonzero]
+    linear_combination gap
+  rw [deviation, abs_div]
+  apply div_le_div_of_nonneg_right _ (abs_nonneg _)
+  exact (abs_sub _ _).trans (add_le_add dual_ok forward_ok)
 
 /-- The real reading after rotating by `-i` measures the signed imaginary
 correlation at the original heat gain. -/
