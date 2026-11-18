@@ -29,7 +29,8 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
 
 open GRWTSK.MeasureAndIntegration.FourierDerivativeDecay (derivativeL1Cost derivativeL1Cost_nonneg)
-open GRWTSK.NumberTheory.WeilNegativeWitness (heightCount)
+open GRWTSK.NumberTheory.WeilNegativeWitness
+  (heightCount heightCount_le_source_bound sourceCountConstant sourceCountConstant_nonneg)
 open scoped ContDiff
 
 /-- A fixed height imposes a lower bound on the dyadic error budget. -/
@@ -205,5 +206,37 @@ theorem smallConductorStages_iff_cofinalOptimizedHeightBounds
     intro T f hf hsmooth ε hε
     obtain ⟨H₀, hH₀, hmargin⟩ := h T f hf hsmooth ε hε
     exact ⟨H₀, hH₀, hmargin H₀ le_rfl⟩
+
+/-- The original primitive stage condition is equivalent to the raw signed
+heads meeting each tolerance along arbitrarily late dyadic heights. The
+native zero count and derivative tail estimates supply the error internally. -/
+theorem smallConductorStages_iff_dyadicRawHeightBounds
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1) :
+    SmallConductorStages χ hp hn ↔
+      ∀ (T : ℝ) (f : ℝ → ℝ), Admissible χ T f → ContDiff ℝ ∞ f →
+        ∀ ε : ℝ, 0 < ε → ∀ N : ℕ, ∃ J : ℕ, N ≤ J ∧
+          -ε ≤ primitiveHeightContribution χ hp (liftReal f) ((2 : ℝ) ^ J - 1) := by
+  constructor
+  · intro h T f hf hsmooth ε hε N
+    obtain ⟨K, hK⟩ := exists_uniform_primitiveHeightTailBudget_and_error_le
+      χ hp hn (T := T) (derivativeL1Cost_nonneg (liftReal f) 1) hε
+    let J := max N K
+    have hpow : (2 : ℝ) ^ K ≤ (2 : ℝ) ^ J :=
+      pow_le_pow_right₀ (by norm_num) (le_max_right N K)
+    have herror := (hK f hf hsmooth le_rfl).2 ((2 : ℝ) ^ J - 1) (by linarith)
+    have hvalue := primitive_nonneg_of_small_stages χ hp hn h hf
+    exact ⟨J, le_max_left N K, by linarith [(abs_le.mp herror).2]⟩
+  · intro h
+    apply (smallConductorStages_iff_finiteHeightBounds χ hp hn
+      (sourceCountConstant_nonneg χ) (by norm_num : (0 : ℝ) ≤ 3)
+      (heightCount_le_source_bound χ hp)).mpr
+    intro T f hf hsmooth ε hε
+    obtain ⟨K, hK⟩ := exists_uniform_primitiveHeightTailBudget_and_error_le
+      χ hp hn (T := T) (derivativeL1Cost_nonneg (liftReal f) 1)
+      (show 0 < ε / 2 by positivity)
+    obtain ⟨J, hJ, hhead⟩ := h T f hf hsmooth (ε / 2) (by positivity) K
+    have hpow : (2 : ℝ) ^ K ≤ (2 : ℝ) ^ J := pow_le_pow_right₀ (by norm_num) hJ
+    have hbudget := (hK f hf hsmooth le_rfl).1
+    exact ⟨K, (2 : ℝ) ^ J - 1, by linarith, by linarith⟩
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
