@@ -125,6 +125,57 @@ theorem CyclicLassoMonoid.exists_injective_kernelOne_mul_tag_iff (k : ℕ) :
     apply kernelOne_mul_quotient_injective
     exact congrArg (fun pair : CyclicLassoMonoid μ p hp × Fin k => (pair.1, pair.2.val)) hmn
 
+/-- The cycle projection accompanied by a fixed-width quotient word. -/
+def CyclicLassoMonoid.encodeCycleQuotient (b : ℕ) (m : CyclicLassoMonoid μ p hp) :
+    CyclicLassoMonoid μ p hp × BitVec b :=
+  ((kernelOneFormula μ p hp).toMonoid * m, BitVec.ofNat b (m.exp.val / p))
+
+/-- Reconstruct the exponent from the projected residue and the auxiliary
+word. The exponent bound rejects values outside the original monoid. -/
+def CyclicLassoMonoid.decodeCycleQuotient {b : ℕ}
+    (word : CyclicLassoMonoid μ p hp × BitVec b) : Option (CyclicLassoMonoid μ p hp) :=
+  let n := word.1.exp.val % p + p * word.2.toNat
+  if hn : n < μ + p then some ⟨⟨n, hn⟩⟩ else none
+
+theorem CyclicLassoMonoid.decodeCycleQuotient_encode (b : ℕ)
+    (hwidth : (μ + p - 1) / p < 2 ^ b) (m : CyclicLassoMonoid μ p hp) :
+    decodeCycleQuotient (encodeCycleQuotient b m) = some m := by
+  let e := (kernelOneFormula μ p hp).toMonoid
+  have he : e * e = e := (mul_self_eq_iff_root_or_kernelOne e).2 (Or.inr rfl)
+  have hproject : e * (e * m) = e * m := by rw [← mul_assoc, he]
+  have hr := (kernelOne_mul_eq_iff_exp_modEq (e * m) m).mp hproject
+  change (e * m).exp.val % p = m.exp.val % p at hr
+  have hq : m.exp.val / p < 2 ^ b :=
+    lt_of_le_of_lt (Nat.div_le_div_right (Nat.le_sub_one_of_lt m.exp.isLt)) hwidth
+  unfold decodeCycleQuotient encodeCycleQuotient
+  simp only [BitVec.toNat_ofNat, Nat.mod_eq_of_lt hq]
+  change (if hn : (e * m).exp.val % p + p * (m.exp.val / p) < μ + p then
+    some ⟨⟨_, hn⟩⟩ else none) = some m
+  rw [hr, Nat.mod_add_div, dite_eq_left m.exp.isLt]
+
+/-- The quotient word meets the necessary width for arbitrary fixed-width
+tags paired with this same projection. -/
+theorem CyclicLassoMonoid.exists_injective_kernelOne_mul_bitVec_iff (b : ℕ) :
+    (∃ tag : CyclicLassoMonoid μ p hp → BitVec b,
+      Function.Injective (fun m => ((kernelOneFormula μ p hp).toMonoid * m, tag m))) ↔
+      (μ + p - 1) / p < 2 ^ b := by
+  constructor
+  · rintro ⟨tag, hinj⟩
+    apply (exists_injective_kernelOne_mul_tag_iff (hp := hp) (2 ^ b)).1
+    refine ⟨fun m => (tag m).toFin, ?_⟩
+    intro m n h
+    apply hinj
+    apply Prod.ext
+    · exact congrArg (fun pair : CyclicLassoMonoid μ p hp × Fin (2 ^ b) => pair.1) h
+    · exact BitVec.eq_of_toFin_eq (congrArg Prod.snd h)
+  · intro hwidth
+    refine ⟨fun m => BitVec.ofNat b (m.exp.val / p), ?_⟩
+    intro m n h
+    change encodeCycleQuotient b m = encodeCycleQuotient b n at h
+    have hdecoded := congrArg decodeCycleQuotient h
+    rw [decodeCycleQuotient_encode b hwidth m, decodeCycleQuotient_encode b hwidth n] at hdecoded
+    exact Option.some.inj hdecoded
+
 /-- Multiplication by the cycle identity preserves enough information to
 recover every complete label tail exactly when the lasso has no stem. -/
 theorem exists_decode_labelTails_of_kernelOne_mul_iff {A : Type*} {x : ℕ → A}
