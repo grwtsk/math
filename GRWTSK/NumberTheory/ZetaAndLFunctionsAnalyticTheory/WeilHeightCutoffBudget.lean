@@ -1,7 +1,10 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilPrimitiveCofinalStageCriterion
+import Mathlib.Algebra.Order.Floor.Semiring
+import Mathlib.Data.Nat.Log
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
 
 /-!
 # Necessary margins for the dyadic height budget
@@ -14,6 +17,10 @@ rule out arbitrarily accurate certificates for a head that starts nonpositive
 and has a uniform negative margin above a fixed height. They apply to any
 head with those bounds. The sign bounds for an arithmetic head are separate
 hypotheses and must be proved from the actual source.
+
+At each fixed nonnegative height the largest admissible index minimizes the
+budget. This eliminates the auxiliary index from the existence statement
+while retaining the signed head at its original height.
 -/
 
 set_option autoImplicit false
@@ -21,6 +28,8 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
 
 open GRWTSK.MeasureAndIntegration.FourierDerivativeDecay (derivativeL1Cost)
+open GRWTSK.NumberTheory.WeilNegativeWitness (heightCount)
+open scoped ContDiff
 
 /-- A fixed height imposes a lower bound on the dyadic error budget. -/
 theorem dyadicHeightTailBudget_lower_of_cutoff {C H : ℝ} (hC : 0 ≤ C)
@@ -75,5 +84,71 @@ theorem exists_tolerance_rejecting_dyadicHeightCertificates
     linarith [hbelow H hH, hcomparison.trans hbudget]
   · have hbudget : 0 ≤ C * ((J : ℝ) + 2) * (1 / 2 : ℝ) ^ J := by positivity
     linarith [habove H (lt_of_not_ge hH)]
+
+/-- For a fixed test and window, increasing the dyadic index decreases the budget. -/
+theorem primitiveHeightTailBudget_antitone {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L)
+    (f : ℝ → ℂ) (T : ℝ) : Antitone (primitiveHeightTailBudget D L f T) := by
+  apply antitone_nat_of_succ_le
+  intro J
+  apply sub_nonneg.mp
+  calc
+    0 ≤ (4 * Real.exp T * D * (L + 1) * derivativeL1Cost f 1 ^ 2) *
+        ((J : ℝ) + 1) * (1 / 2 : ℝ) ^ J / 2 := by positivity
+    _ = primitiveHeightTailBudget D L f T J - primitiveHeightTailBudget D L f T (J + 1) := by
+      simp only [primitiveHeightTailBudget, Nat.cast_add, Nat.cast_one, pow_succ]
+      ring
+
+/-- The greatest admissible dyadic index for a nonnegative height. -/
+noncomputable def maxDyadicHeightIndex (H : ℝ) : ℕ := Nat.log 2 ⌊1 + H⌋₊
+
+theorem dyadicHeightCutoff_iff_le_maxDyadicHeightIndex {H : ℝ} (hH : 0 ≤ H) (J : ℕ) :
+    (2 : ℝ) ^ J ≤ 1 + H ↔ J ≤ maxDyadicHeightIndex H := by
+  have hfloor : ⌊(1 : ℝ) + H⌋₊ ≠ 0 := ne_of_gt (Nat.floor_pos.mpr (by linarith))
+  have hlog := Nat.le_log_iff_pow_le (by decide : 1 < (2 : ℕ)) (x := J) hfloor
+  have hcast := Nat.le_floor_iff (n := (2 : ℕ) ^ J) (show 0 ≤ 1 + H by linarith)
+  simpa only [maxDyadicHeightIndex, Nat.cast_pow, Nat.cast_ofNat] using (hlog.trans hcast).symm
+
+/-- An admissible index attains the signed margin exactly when the greatest
+admissible index attains it at the same height and for the same original head. -/
+theorem exists_primitiveHeightCertificateIndex_iff
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive)
+    {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L) (f : ℝ → ℂ) (T H ε : ℝ) :
+    (∃ J : ℕ, (2 : ℝ) ^ J ≤ 1 + H ∧
+      -ε ≤ primitiveHeightContribution χ hp f H - primitiveHeightTailBudget D L f T J) ↔
+    0 ≤ H ∧ -ε ≤ primitiveHeightContribution χ hp f H -
+      primitiveHeightTailBudget D L f T (maxDyadicHeightIndex H) := by
+  constructor
+  · rintro ⟨J, hcutoff, hmargin⟩
+    have hpow : (1 : ℝ) ≤ 2 ^ J := one_le_pow₀ (by norm_num)
+    have hH : 0 ≤ H := by linarith
+    have hindex := (dyadicHeightCutoff_iff_le_maxDyadicHeightIndex hH J).mp hcutoff
+    have hbudget := primitiveHeightTailBudget_antitone hD hL f T hindex
+    exact ⟨hH, hmargin.trans (sub_le_sub_left hbudget _)⟩
+  · rintro ⟨hH, hmargin⟩
+    have hcutoff := (dyadicHeightCutoff_iff_le_maxDyadicHeightIndex hH _).mpr (le_refl _)
+    exact ⟨maxDyadicHeightIndex H, hcutoff, hmargin⟩
+
+/-- The canonical stage criterion can use a single height parameter. Its signed
+head keeps the strict cutoff and actual zero multiplicities. -/
+theorem smallConductorStages_iff_maximalDyadicHeightBounds
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    {D L : ℝ} (hD : 0 ≤ D) (hL : 0 ≤ L)
+    (hcount : ∀ U : ℝ, 2 ≤ U → (heightCount χ hp U : ℝ) ≤ D * U * (Real.log U + L)) :
+    SmallConductorStages χ hp hn ↔
+      ∀ (T : ℝ) (f : ℝ → ℝ), Admissible χ T f → ContDiff ℝ ∞ f →
+        ∀ ε : ℝ, 0 < ε → ∃ H : ℝ, 0 ≤ H ∧
+          -ε ≤ primitiveHeightContribution χ hp (liftReal f) H -
+            primitiveHeightTailBudget D L (liftReal f) T (maxDyadicHeightIndex H) := by
+  rw [smallConductorStages_iff_finiteHeightBounds χ hp hn hD hL hcount]
+  constructor
+  · intro h T f hf hsmooth ε hε
+    obtain ⟨J, H, hcutoff, hmargin⟩ := h T f hf hsmooth ε hε
+    exact ⟨H, (exists_primitiveHeightCertificateIndex_iff χ hp hD hL (liftReal f) T H ε).mp
+      ⟨J, hcutoff, hmargin⟩⟩
+  · intro h T f hf hsmooth ε hε
+    obtain ⟨H, hmargin⟩ := h T f hf hsmooth ε hε
+    obtain ⟨J, hcutoff, hcert⟩ :=
+      (exists_primitiveHeightCertificateIndex_iff χ hp hD hL (liftReal f) T H ε).mpr hmargin
+    exact ⟨J, H, hcutoff, hcert⟩
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
