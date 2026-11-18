@@ -211,6 +211,44 @@ theorem safe_iff_primeProductCutoff_lt {n : ℕ} (hn : 2 ≤ n) :
     Nat.div_lt_iff_lt_mul denominator_pos, ← restored]
   omega
 
+/-- The original prime product gains exactly the prime factors in the
+interval open at the predecessor and closed at the new argument. -/
+theorem primeProduct_eq_mul_primeInterval {a b : ℕ} (hab : a ≤ b) :
+    primeProduct b = primeProduct a * ∏ p ∈ (Finset.Ioc a b).filter Nat.Prime, p := by
+  rw [Finset.prod_filter]
+  induction b, hab using Nat.le_induction with
+  | base => simp
+  | succ b hab ih =>
+    rw [primeProduct, Finset.prod_Ioc_succ_top hab, ← mul_assoc, ← ih]
+    by_cases prime : Nat.Prime (b + 1) <;> simp [prime, mul_comm]
+
+/-- Any verified subset of new primes gives a multiplicative gain of at
+least one factor of `a + 1` for each distinct prime. -/
+theorem primeProduct_mul_pow_card_le {a b : ℕ} (hab : a ≤ b)
+    {primes : Finset ℕ} (inside : primes ⊆ (Finset.Ioc a b).filter Nat.Prime) :
+    primeProduct a * (a + 1) ^ primes.card ≤ primeProduct b := by
+  have factor_le (p : ℕ) (hp : p ∈ primes) : a + 1 ≤ p :=
+    (Finset.mem_Ioc.mp (Finset.mem_filter.mp (inside hp)).1).1
+  have powers : (a + 1) ^ primes.card ≤ ∏ p ∈ primes, p := by
+    rw [← Finset.prod_const]
+    exact Finset.prod_le_prod factor_le
+  have subset_prod : (∏ p ∈ primes, p) ≤ ∏ p ∈ (Finset.Ioc a b).filter Nat.Prime, p :=
+    Finset.prod_le_prod_of_subset_of_one_le inside
+      (fun p hp _ => (Finset.mem_filter.mp hp).2.one_lt.le)
+  rw [primeProduct_eq_mul_primeInterval hab]
+  exact Nat.mul_le_mul_left _ (powers.trans subset_prod)
+
+/-- To pass a literal argument, a lower estimate at an earlier argument can
+be combined with any verified subset of primes between the arguments. -/
+theorem safe_of_primeProduct_lower_and_primes {a b lower : ℕ}
+    (hb : 2 ≤ b) (hab : a ≤ b) (base : lower ≤ primeProduct a)
+    {primes : Finset ℕ} (inside : primes ⊆ (Finset.Ioc a b).filter Nat.Prime)
+    (cutoff : primeProductCutoff b < lower * (a + 1) ^ primes.card) :
+    ¬ Counterexample b := by
+  apply (safe_iff_primeProductCutoff_lt hb).mpr
+  exact cutoff.trans_le ((Nat.mul_le_mul_right _ base).trans
+    (primeProduct_mul_pow_card_le hab inside))
+
 def stageArgument (stage : ℕ) : ℕ := stage + 2
 
 def stageOrdinal (window : ℕ) (slot : Fin 95) : ℕ := 95 * window + slot.val
