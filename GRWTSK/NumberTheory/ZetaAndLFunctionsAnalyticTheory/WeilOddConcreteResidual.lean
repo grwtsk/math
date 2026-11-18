@@ -114,15 +114,35 @@ private theorem sineCoefficient_weighted_sum {M : ℕ} (T : ℝ) (n : ℕ)
       ring
     _ = _ := by rw [integral_finsetSum _ (fun i _ => hint i)]; simp only [s, integral_const_mul, sineCoefficient]
 
-private def coreSineOutput (T β : ℝ) (n : ℕ) (t : ℝ) : ℝ :=
+/-- The physical output of one normalized zero-extended sine at zero pole coordinate. -/
+def coreSineOutput (T β : ℝ) (n : ℕ) (t : ℝ) : ℝ :=
   (Icc (-T) T).indicator (gammaOutput (zeroExtendedSine T n)) t +
     primePoleOutput T β (zeroExtendedSine T n) 0 t
 
-private theorem coreSineOutput_memLp (T : ℝ) (hT : 0 < T) (β : ℝ) (n : ℕ) :
+theorem coreSineOutput_memLp (T : ℝ) (hT : 0 < T) (β : ℝ) (n : ℕ) :
     MemLp (coreSineOutput T β n) 2 volume :=
   (gammaSineOutput_memLp T hT n).add (memLp_primePoleOutput T β (memLp_zeroExtendedSine T n) 0)
 
-private theorem sineCoefficient_coreSineOutput (T : ℝ) (hT : 0 < T) (β : ℝ) (m n : ℕ) :
+theorem coreSineOutput_odd (T β : ℝ) (n : ℕ) : Function.Odd (coreSineOutput T β n) := by
+  intro t
+  have hmem : -t ∈ Icc (-T) T ↔ t ∈ Icc (-T) T := by
+    simp [mem_Icc, neg_le, neg_le_neg_iff, and_comm]
+  have hsine := zeroExtendedSine_odd T n
+  unfold coreSineOutput
+  rw [primePoleOutput_odd T β hsine 0 t]
+  by_cases ht : t ∈ Icc (-T) T
+  · rw [indicator_of_mem ht, indicator_of_mem (hmem.mpr ht), gammaOutput_odd hsine t]
+    ring
+  · rw [indicator_of_notMem ht, indicator_of_notMem (fun h => ht (hmem.mp h))]
+    simp
+
+theorem coreSineOutput_support (T β : ℝ) (n : ℕ) {t : ℝ} (ht : t ∉ Icc (-T) T) :
+    coreSineOutput T β n t = 0 := by
+  rw [coreSineOutput, indicator_of_notMem ht,
+    primePoleOutput_eq_zero_of_not_mem T β _ 0 t ht, add_zero]
+
+/-- The physical output has the exact signed source column as its sine coefficients. -/
+theorem sineCoefficient_coreSineOutput (T : ℝ) (hT : 0 < T) (β : ℝ) (m n : ℕ) :
     sineCoefficient T (coreSineOutput T β n) (m+1) =
       literalCoreEntry T (m+1) n - (if m+1 = n then β else 0) := by
   change sineCoefficient T (fun t =>
