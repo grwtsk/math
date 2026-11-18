@@ -190,4 +190,30 @@ theorem runOn_migrateCheckpoint {origin : ℕ} (target : ℕ) (c : Configuration
   exact congrArg some (runOn_handoffView_eq (handoffView_readdress target c)
     rfl originalTarget originalTarget)
 
+/-- Run the first chunk, migrate its checkpoint, and resume at the new window.
+The result follows the native convention that failure of either chunk returns none. -/
+def runOnWithMigratedCheckpoint {w : ℕ} (first resumed : List ℕ)
+    (mid replacement target : ℕ) (c : Configuration w) : Option (Cfg 95 2 × ℤ) :=
+  (runOn first mid c).bind fun e =>
+    (((migrateCheckpoint mid replacement (encodeCheckpoint e)).bind
+      (decodeCheckpoint replacement)).map
+      (fun d => (runOn resumed target d).map handoffView)).join
+
+/-- A migrated checkpoint between chunks preserves the optional result of
+the uninterrupted execution, including a halt in either chunk. -/
+theorem runOnWithMigratedCheckpoint_eq {w : ℕ} (c : Configuration w)
+    (first : List ℕ) {original resumed : List ℕ}
+    (length : original.length = resumed.length)
+    (mid replacement originalTarget resumedTarget : ℕ) :
+    runOnWithMigratedCheckpoint first resumed mid replacement resumedTarget c =
+      (runOn (first ++ original) originalTarget c).map handoffView := by
+  cases prefixRun : runOn first mid c with
+  | none =>
+    simp only [runOnWithMigratedCheckpoint, runOn_append first original mid, prefixRun,
+      Option.bind_none, Option.map_none]
+  | some e =>
+    have resumedView := runOn_migrateCheckpoint replacement e length originalTarget resumedTarget
+    simpa only [runOnWithMigratedCheckpoint, runOn_append first original mid, prefixRun,
+      Option.bind_some, Option.join_some] using congrArg Option.join resumedView
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine.NativeCheckpoint
