@@ -66,6 +66,34 @@ theorem search_detects_cryptids_halt :
   rw [search_complete, Riemann95.halts_candidate_iff_counterexample]
   exact exists_congr fun stage => counterexample_iff_cryptids (stageArgument stage)
 
+/-- A halted native run has a composite counterexample on a clock plateau.
+The least original failing argument supplies the witness. -/
+theorem cryptids_halts_iff_exists_composite_plateau_counterexample :
+    Halts Riemann95.candidate ↔
+      ∃ n : ℕ, 2 ≤ n ∧ ¬ Nat.Prime (n + 1) ∧ clock (n + 1) = clock n ∧
+        ShuniaCounterexample (n + 1) := by
+  rw [Riemann95.halts_candidate_iff_counterexample]
+  constructor
+  · intro failure
+    let first := Nat.find failure
+    have bad : ShuniaCounterexample (first + 2) := Nat.find_spec failure
+    cases h : first with
+    | zero =>
+      have initial_safe : ¬ Counterexample 2 :=
+        safe_of_threshold_gt 2 (by norm_num [threshold, clock, offsetCount])
+      exact (initial_safe ((counterexample_iff_cryptids 2).mpr (by simpa [h] using bad))).elim
+    | succ s =>
+      have earlier : s < Nat.find failure := by change s < first; omega
+      have predecessor_safe : ¬ ShuniaCounterexample (s + 2) := Nat.find_min failure earlier
+      have successor_bad : ShuniaCounterexample (s + 2 + 1) := by simpa only [h] using bad
+      have constraints := counterexample_succ_requires_composite_and_clock_eq
+        (n := s + 2) (by omega)
+        (fun prior => predecessor_safe ((counterexample_iff_cryptids _).mp prior))
+        ((counterexample_iff_cryptids _).mpr successor_bad)
+      exact ⟨s + 2, by omega, constraints.1, constraints.2, successor_bad⟩
+  · rintro ⟨n, hn, _, _, bad⟩
+    exact ⟨n - 1, by simpa only [show n - 1 + 2 = n + 1 by omega] using bad⟩
+
 theorem all_windows_accept_iff_cryptids_RH :
     (∀ window, accepts window = true) ↔ RiemannHypothesis :=
   all_windows_accept_iff_RH (fun n _ => counterexample_iff_cryptids n)

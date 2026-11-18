@@ -263,49 +263,51 @@ private theorem succ_pow_le_succ_exponent_mul_pow (n r : ℕ) (hr : r ≤ n) :
       _ ≤ n ^ r * ((r + 1 + 1) * n) := Nat.mul_le_mul_left _ step
       _ = (r + 1 + 1) * n ^ (r + 1) := by rw [pow_succ]; ac_rfl
 
+private theorem le_successor_gain (n : ℕ) :
+    n + 1 ≤ (n + 1) * (if Nat.Prime (n + 1) then n + 1 else 1) := by
+  calc
+    _ = (n + 1) * 1 := by rw [Nat.mul_one]
+    _ ≤ _ := Nat.mul_le_mul_left _ (by split <;> omega)
+
+private theorem safe_succ_of_power_growth {n : ℕ} (hn : 2 ≤ n)
+    (safe : ¬ Counterexample n)
+    (powers : (n + 1) ^ (n + 1 - threshold (n + 1)) ≤
+      ((n + 1) * (if Nat.Prime (n + 1) then n + 1 else 1)) * n ^ (n - threshold n)) :
+    ¬ Counterexample (n + 1) := by
+  let gain := (n + 1) * (if Nat.Prime (n + 1) then n + 1 else 1)
+  let product := n.factorial * primeProduct n
+  have prior : n ^ (n - threshold n) ≤ (n - 1) * product :=
+    ((safe_iff_product_ge_pow hn).mp safe).trans
+      (Nat.mul_le_mul_left _ (Nat.sub_le _ _))
+  have product_pos : 1 ≤ product := Nat.mul_pos (Nat.factorial_pos _) (primeProduct_pos _)
+  have room : n ≤ gain * product := calc
+    n ≤ n + 1 := Nat.le_succ _
+    _ ≤ gain := le_successor_gain _
+    _ ≤ gain * product := by
+      simpa only [Nat.mul_one] using (Nat.mul_le_mul_left gain product_pos)
+  apply (safe_succ_iff_previous_product (by omega : 1 ≤ n)).mpr
+  change (n + 1) ^ (n + 1 - threshold (n + 1)) + n ≤ n * (gain * product)
+  calc
+    _ ≤ gain * n ^ (n - threshold n) + n := Nat.add_le_add_right powers _
+    _ ≤ gain * ((n - 1) * product) + gain * product :=
+      Nat.add_le_add (Nat.mul_le_mul_left _ prior) room
+    _ = (n - 1) * (gain * product) + gain * product := by ac_rfl
+    _ = _ := by rw [← Nat.add_one_mul, Nat.sub_add_cancel (by omega : 1 ≤ n)]
+
 /-- A safe argument stays safe at its successor when the threshold rises.
 The exponent then cannot increase, and factorial growth pays for changing
 the base from `n` to `n + 1`. -/
 theorem safe_succ_of_threshold_lt {n : ℕ} (hn : 2 ≤ n)
     (increase : threshold n < threshold (n + 1)) (safe : ¬ Counterexample n) :
     ¬ Counterexample (n + 1) := by
-  have old := (safe_iff_product_ge_pow hn).mp safe
   let r := n - threshold n
   let s := n + 1 - threshold (n + 1)
   have exponent_le : s ≤ r := by dsimp only [s, r]; omega
   have s_le : s ≤ n := exponent_le.trans (Nat.sub_le _ _)
-  have powers : (n + 1) ^ s ≤ (n + 1) * n ^ r :=
-    (succ_pow_le_succ_exponent_mul_pow n s s_le).trans
-      (Nat.mul_le_mul (Nat.succ_le_succ s_le) (Nat.pow_le_pow_right (by omega) exponent_le))
-  have prime_growth : primeProduct n ≤ primeProduct (n + 1) := by
-    simpa using primeProduct_mul_pow_card_le (Nat.le_succ n)
-      (primes := ∅) (by simp)
-  have product_growth :
-      (n + 1) * (n.factorial * primeProduct n) ≤ (n + 1).factorial * primeProduct (n + 1) := by
-    rw [Nat.factorial_succ, ← mul_assoc]
-    exact Nat.mul_le_mul_left _ prime_growth
-  have product_pos : 1 ≤ n.factorial * primeProduct n :=
-    Nat.mul_pos (Nat.factorial_pos _) (primeProduct_pos _)
-  have restored :
-      (n + 1) * (n.factorial * primeProduct n - 1) + (n + 1) =
-        (n + 1) * (n.factorial * primeProduct n) := by
-    calc
-      _ = (n + 1) * (n.factorial * primeProduct n - 1) + (n + 1) * 1 := by
-        rw [Nat.mul_one]
-      _ = _ := by rw [← Nat.mul_add, Nat.sub_add_cancel product_pos]
-  have adjusted :
-      (n + 1) * (n.factorial * primeProduct n - 1) ≤
-        (n + 1).factorial * primeProduct (n + 1) - 1 := by
-    omega
-  apply (safe_iff_product_ge_pow (by omega : 2 ≤ n + 1)).mpr
-  rw [Nat.add_sub_cancel]
-  calc
-    (n + 1) ^ s ≤ (n + 1) * n ^ r := powers
-    _ ≤ (n + 1) * ((n - 1) * (n.factorial * primeProduct n - 1)) :=
-      Nat.mul_le_mul_left _ old
-    _ = (n - 1) * ((n + 1) * (n.factorial * primeProduct n - 1)) := by ac_rfl
-    _ ≤ n * ((n + 1).factorial * primeProduct (n + 1) - 1) :=
-      Nat.mul_le_mul (Nat.sub_le _ _) adjusted
+  apply safe_succ_of_power_growth hn safe
+  exact (succ_pow_le_succ_exponent_mul_pow n s s_le).trans
+    (Nat.mul_le_mul ((Nat.succ_le_succ s_le).trans (le_successor_gain n))
+      (Nat.pow_le_pow_right (by omega) exponent_le))
 
 /-- A literal safe stage remains safe at the next argument across a
 quartering-clock increase. -/
@@ -318,6 +320,46 @@ theorem safe_succ_of_clock_lt {n : ℕ} (hn : 2 ≤ n)
     _ < (clock (n + 1) + 1) * 2 ^ clock n :=
       Nat.mul_lt_mul_of_pos_right (Nat.succ_lt_succ increase) (Nat.two_pow_pos _)
     _ ≤ _ := Nat.mul_le_mul_left _ (Nat.pow_le_pow_right (by decide) increase.le)
+
+private theorem clock_monotone : Monotone clock := by
+  intro a b hab
+  unfold clock
+  apply (le_offsetCount_iff_geom_sum_le (by decide : 2 ≤ (4 : ℕ)) _ _).mpr
+  exact ((le_offsetCount_iff_geom_sum_le (by decide : 2 ≤ (4 : ℕ)) _ _).mp le_rfl).trans
+    (Nat.sub_le_sub_right hab 1)
+
+/-- A safe argument stays safe at a prime successor. The extra prime
+factor pays for the possible one-unit increase of the power exponent. -/
+theorem safe_succ_of_prime {n : ℕ} (hn : 2 ≤ n)
+    (prime : Nat.Prime (n + 1)) (safe : ¬ Counterexample n) :
+    ¬ Counterexample (n + 1) := by
+  let r := n - threshold n
+  have r_le : r ≤ n := Nat.sub_le _ _
+  have clock_le := clock_monotone (Nat.le_succ n)
+  have threshold_le : threshold n ≤ threshold (n + 1) := by
+    unfold threshold
+    exact Nat.mul_le_mul (Nat.succ_le_succ clock_le)
+      (Nat.pow_le_pow_right (by decide) clock_le)
+  have exponent_le : n + 1 - threshold (n + 1) ≤ r + 1 := by dsimp only [r]; omega
+  apply safe_succ_of_power_growth hn safe
+  simp only [prime, ite_true]
+  calc
+    _ ≤ (n + 1) ^ (r + 1) := Nat.pow_le_pow_right (Nat.succ_pos n) exponent_le
+    _ = (n + 1) ^ r * (n + 1) := by rw [pow_succ]
+    _ ≤ ((n + 1) * n ^ r) * (n + 1) :=
+      Nat.mul_le_mul_right _ ((succ_pow_le_succ_exponent_mul_pow n r r_le).trans
+        (Nat.mul_le_mul_right _ (Nat.succ_le_succ r_le)))
+    _ = _ := by ac_rfl
+
+/-- A first failure after a safe argument requires a composite successor
+and an unchanged quartering clock. -/
+theorem counterexample_succ_requires_composite_and_clock_eq {n : ℕ} (hn : 2 ≤ n)
+    (safe : ¬ Counterexample n) (bad : Counterexample (n + 1)) :
+    ¬ Nat.Prime (n + 1) ∧ clock (n + 1) = clock n := by
+  refine ⟨fun prime => safe_succ_of_prime hn prime safe bad, ?_⟩
+  have no_increase : ¬ clock n < clock (n + 1) :=
+    fun increase => safe_succ_of_clock_lt hn increase safe bad
+  exact le_antisymm (Nat.le_of_not_gt no_increase) (clock_monotone (Nat.le_succ n))
 
 def stageArgument (stage : ℕ) : ℕ := stage + 2
 
