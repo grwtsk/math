@@ -113,4 +113,63 @@ theorem rescaleLoss_sharp_reachable :
   · rfl
   · exact rescaleLoss_sharp
 
+/-- The rescale events after which the trace has another byte to score. Index
+`i` processes byte `i` and charges the next byte, at index `i + 1`. -/
+def followingRescaleIndices (cfg : Config) (initialState : State) (xs : List (Fin 256)) :
+    Finset (Fin (xs.length - 1)) :=
+  Finset.univ.filter fun i =>
+    let before := (xs.take i.val).foldl (update cfg) initialState
+    let byte := xs[i.val]'(by have := i.isLt; omega)
+    (rescaleInput cfg before byte).isSome
+
+/-- At a rescale event, the following byte is scored in the post-increment
+table and in the actual successor table. A position without a rescale has
+zero charge. -/
+noncomputable def followingRescaleLoss (cfg : Config) (initialState : State)
+    (xs : List (Fin 256)) (i : Fin (xs.length - 1)) : ℝ :=
+  let before := (xs.take i.val).foldl (update cfg) initialState
+  let byte := xs[i.val]'(by have := i.isLt; omega)
+  let next := xs[i.val + 1]'(by have := i.isLt; omega)
+  let bin := binOf cfg next
+  match rescaleInput cfg before byte with
+  | none => 0
+  | some counts =>
+    let after := (update cfg before byte).weights
+    Real.logb 2 (((counts[bin]?).getD 0 : ℕ) / (counts.sum : ℝ)) -
+      Real.logb 2 (((after[bin]?).getD 0 : ℕ) / (after.sum : ℝ))
+
+/-- On an adaptive trace, the total increase in ideal bit cost charged to bytes
+immediately following a rescale is at most log₂(128/43) per such byte. -/
+theorem sum_followingRescaleLoss_le (cfg : Config) (initialState : State)
+    (xs : List (Fin 256)) (hvalid : ValidState cfg initialState) :
+    (∑ i ∈ followingRescaleIndices cfg initialState xs,
+      followingRescaleLoss cfg initialState xs i) ≤
+      ((followingRescaleIndices cfg initialState xs).card : ℝ) *
+        Real.logb 2 (128 / 43) := by
+  calc
+    _ ≤ ∑ _i ∈ followingRescaleIndices cfg initialState xs, Real.logb 2 (128 / 43) := by
+      refine Finset.sum_le_sum fun i hi => ?_
+      let before := (xs.take i.val).foldl (update cfg) initialState
+      let byte := xs[i.val]'(by have := i.isLt; omega)
+      let next := xs[i.val + 1]'(by have := i.isLt; omega)
+      have hstate : ValidState cfg before := replay_valid cfg initialState (xs.take i.val) hvalid
+      have hs : (rescaleInput cfg before byte).isSome = true := by
+        simpa [followingRescaleIndices, before, byte] using hi
+      cases he : rescaleInput cfg before byte with
+      | none => simp [he] at hs
+      | some counts =>
+        have hlen := (rescaleInput_spec cfg before byte hstate counts he).1
+        have hj : binOf cfg next < counts.length := by
+          rw [hlen]
+          exact Nat.lt_succ_of_le (Nat.min_le_right _ _)
+        let bin : Fin counts.length := ⟨binOf cfg next, hj⟩
+        have hcost := rescaleInput_logMass_le cfg before byte hstate counts he bin
+        have hstep := he
+        simp only [before, byte] at hstep
+        have hindex := hj
+        simp only [next] at hindex
+        simpa only [followingRescaleLoss, hstep, Fin.getElem_fin, List.getElem?_eq_getElem hindex,
+          Option.getD_some, bin, before, byte, next] using hcost
+    _ = _ := by simp
+
 end GRWTSK.ComputerScience.AdaptiveIntegerCoding
