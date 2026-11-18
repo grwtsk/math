@@ -4,6 +4,7 @@ import GRWTSK.ComputerScience.AlgorithmsInComputerScience.AdaptiveIntegerCoding
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Data.Finset.Card
 import Mathlib.Analysis.SpecialFunctions.Log.Base
+import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum
 
 /-!
@@ -25,11 +26,12 @@ noncomputable def rescaleLoss (counts : List ℕ) (count : ℕ) : ℝ :=
   let newMass := (rescaleCount count : ℝ) / (counts.map rescaleCount).sum
   Real.logb 2 oldMass - Real.logb 2 newMass
 
-/-- The ideal bit cost of one bin increases by at most log₂(128/43)
-at a rescale of a positive count table with at most 256 bins. -/
-theorem rescaleLoss_le (counts : List ℕ) (hsize : counts.length ≤ 256)
-    (hpos : ∀ n ∈ counts, 0 < n) (count : ℕ) (hmem : count ∈ counts) :
-    rescaleLoss counts count ≤ Real.logb 2 (128 / 43) := by
+private theorem rescaleLoss_le_of_count_bound (counts : List ℕ)
+    (hpos : ∀ n ∈ counts, 0 < n) (count : ℕ) (hmem : count ∈ counts)
+    (numerator denominator : ℕ) (hdenom : 0 < denominator)
+    (hcount : denominator * count * (counts.map rescaleCount).sum ≤
+      numerator * rescaleCount count * counts.sum) :
+    rescaleLoss counts count ≤ Real.logb 2 ((numerator : ℝ) / denominator) := by
   have hc : 0 < (count : ℝ) := by exact_mod_cast hpos count hmem
   have hrescale : 0 < rescaleCount count :=
     Nat.lt_of_lt_of_le (by decide : 0 < 1) (Nat.le_max_left 1 (count / 2))
@@ -39,14 +41,15 @@ theorem rescaleLoss_le (counts : List ℕ) (hsize : counts.length ≤ 256)
   have hscaled : 0 < ((counts.map rescaleCount).sum : ℝ) := by
     exact_mod_cast List.sum_pos_iff_exists_pos_nat.mpr
       ⟨rescaleCount count, List.mem_map_of_mem hmem, hrescale⟩
-  have hbound : 43 * (count : ℝ) * (counts.map rescaleCount).sum ≤
-      128 * (rescaleCount count : ℝ) * counts.sum := by
-    exact_mod_cast rescale_probability_bound counts hsize hpos count hmem
+  have hbound : (denominator : ℝ) * (count : ℝ) * (counts.map rescaleCount).sum ≤
+      (numerator : ℝ) * (rescaleCount count : ℝ) * counts.sum := by
+    exact_mod_cast hcount
+  have hdenomReal : 0 < (denominator : ℝ) := by exact_mod_cast hdenom
   have hquot :
       ((count : ℝ) / counts.sum) / ((rescaleCount count : ℝ) / (counts.map rescaleCount).sum) ≤
-        (128 / 43 : ℝ) := by
+        ((numerator : ℝ) / denominator) := by
     rw [div_div_div_eq]
-    apply (div_le_div_iff₀ (mul_pos htotal hr) (by norm_num : (0 : ℝ) < 43)).2
+    apply (div_le_div_iff₀ (mul_pos htotal hr) hdenomReal).2
     simpa only [mul_assoc, mul_left_comm, mul_comm] using hbound
   have hp := div_pos hc htotal
   have hq := div_pos hr hscaled
@@ -54,6 +57,59 @@ theorem rescaleLoss_le (counts : List ℕ) (hsize : counts.length ≤ 256)
     (div_pos hp hq) hquot
   rw [Real.logb_div hp.ne' hq.ne'] at hlog
   exact hlog
+
+/-- The ideal bit cost of one bin increases by at most log₂(128/43)
+at a rescale of a positive count table with at most 256 bins. -/
+theorem rescaleLoss_le (counts : List ℕ) (hsize : counts.length ≤ 256)
+    (hpos : ∀ n ∈ counts, 0 < n) (count : ℕ) (hmem : count ∈ counts) :
+    rescaleLoss counts count ≤ Real.logb 2 (128 / 43) := by
+  exact rescaleLoss_le_of_count_bound counts hpos count hmem 128 43 (by decide)
+    (rescale_probability_bound counts hsize hpos count hmem)
+
+private theorem binary_rescale_count_bound (a b : ℕ) (ha : 0 < a) (hb : 0 < b) :
+    2 * a * (rescaleCount a + rescaleCount b) ≤ 3 * rescaleCount a * (a + b) := by
+  have hratio : a ≤ 3 * rescaleCount a := by
+    unfold rescaleCount
+    omega
+  by_cases h : b = 1
+  · subst b
+    have h1 : rescaleCount 1 = 1 := rfl
+    rw [h1]
+    by_cases hsmall : a ≤ 3
+    · have hcases : a = 1 ∨ a = 2 ∨ a = 3 := by omega
+      rcases hcases with rfl | rfl | rfl <;> decide
+    · have hr : 2 ≤ rescaleCount a := by unfold rescaleCount; omega
+      have hprod := Nat.mul_le_mul_left a hr
+      nlinarith
+  · have hr : 2 * rescaleCount b ≤ b := by unfold rescaleCount; omega
+    have hprod := Nat.mul_le_mul_left a hr
+    have hratioProd := Nat.mul_le_mul_right b hratio
+    nlinarith
+
+/-- For two positive bins the selected bin retains at least two thirds of its
+probability at a rescale, so the ideal bit cost increases by at most log₂(3/2). -/
+theorem rescaleLoss_binary_le (counts : List ℕ) (hlen : counts.length = 2)
+    (hpos : ∀ n ∈ counts, 0 < n) (n : ℕ) (hn : n ∈ counts) :
+    rescaleLoss counts n ≤ Real.logb 2 (3 / 2) := by
+  obtain ⟨a, b, rfl⟩ : ∃ a b : ℕ, counts = [a, b] :=
+    ⟨_, _, List.eq_getElem_of_length_eq_two counts hlen⟩
+  have ha : 0 < a := hpos a (by simp)
+  have hb : 0 < b := hpos b (by simp)
+  apply rescaleLoss_le_of_count_bound [a, b] hpos n hn 3 2 (by decide)
+  simp only [List.mem_cons, List.not_mem_nil, or_false] at hn
+  rcases hn with h | h
+  · subst n
+    simpa using binary_rescale_count_bound a b ha hb
+  · subst n
+    simpa [Nat.add_comm] using binary_rescale_count_bound b a hb ha
+
+/-- The binary table with counts three and one attains the bit bound. -/
+theorem rescaleLoss_binary_sharp : rescaleLoss [3, 1] 3 = Real.logb 2 (3 / 2) := by
+  have h1 : rescaleCount 1 = 1 := rfl
+  have h3 : rescaleCount 3 = 1 := rfl
+  simp only [rescaleLoss, List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, h1, h3]
+  rw [← Real.logb_div (by norm_num) (by norm_num)]
+  norm_num
 
 /-- The table attaining the integer probability bound also attains the bit bound. -/
 theorem rescaleLoss_sharp :
