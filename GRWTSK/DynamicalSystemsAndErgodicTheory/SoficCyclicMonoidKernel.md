@@ -11,9 +11,10 @@ within `grwtsk/math`. The construction consumes the **original**
 in the research repository or this record.
 
 The mathematics adapts the user's November 17, 2026 finite cyclic-monoid
-minimal-ideal blueprint, repairing the unfinished `sorry` inverse step
-by constructing a bijection with `ZMod p` from the interval-residue
-injectivity theorem in pinned mathlib. Its classical context is the
+minimal-ideal blueprint. The bijection with `ZMod p` subtracts the
+common onset `μ` from exponents in `[μ, μ+p)`, cancels `μ` modulo
+`p`, and uses injectivity of residues on the resulting offsets in
+`Fin p`. Its classical context is the
 structure theory of finite monogenic semigroups / the
 Suschkewitsch–Rees description of finite semigroup kernels. These
 standard facts are not claimed as novel.
@@ -84,7 +85,10 @@ verification or a substitute for Lean.
 
 ## Evidence status
 
-This file is a **SOURCE_PROOF_CANDIDATE**.
+The statuses below record the initial source increment. See the
+coordinating issue for checks on the revised source.
+
+The initial source was a **SOURCE_PROOF_CANDIDATE**.
 Source contains no `sorry`, `admit`, or new research axioms.
 Lean elaboration: **NOT_RUN**.
 Expected statement types: **NOT_RUN**.

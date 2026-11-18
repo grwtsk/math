@@ -1,8 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Local mathematical attribution: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN /
-EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
-TRANSITIVE_AXIOM_AUDIT_NOT_RUN / INDEPENDENT_REVIEW_NOT_RUN.
+Exact-source verification and independent review are tracked in grwtsk/math#1832.
 -/
 import GRWTSK.DynamicalSystemsAndErgodicTheory.SoficCyclicMonoidCayley
 import Mathlib
@@ -35,7 +33,6 @@ open SoficCyclicMonoidCayley
 open SoficSingletonPrefixLassoUniqueness
 
 universe u
-variable {μ p : ℕ} {hp : 0 < p}
 
 /-- Exactly those normal powers whose exponent is in the unique
 eventual p-cycle of the original cyclic monoid. -/
@@ -47,21 +44,20 @@ eventual p-cycle of the original cyclic monoid. -/
 coordinate for a kernel element. -/
 def kernelOffsetEquiv (μ p : ℕ) (hp : 0 < p) :
     LassoKernel μ p hp ≃ Fin p where
-  toFun x := ⟨x.toMonoid.exp.val - μ, by
-    have hlo := x.ge_mu
-    have hhi := x.toMonoid.exp.isLt
-    omega⟩
-  invFun r := ⟨⟨⟨μ + r.val, by omega⟩⟩, by omega⟩
+  toFun x := ⟨x.toMonoid.exp.val - μ,
+    (Nat.sub_lt_iff_lt_add' x.ge_mu).2 x.toMonoid.exp.isLt⟩
+  invFun r := ⟨⟨⟨μ + r.val, Nat.add_lt_add_left r.isLt μ⟩⟩,
+    Nat.le_add_right μ r.val⟩
   left_inv x := by
     apply LassoKernel.ext
     apply CyclicLassoMonoid.ext
     apply Fin.ext
-    dsimp
-    omega
+    change μ + (x.toMonoid.exp.val - μ) = x.toMonoid.exp.val
+    exact Nat.add_sub_of_le x.ge_mu
   right_inv r := by
     apply Fin.ext
-    dsimp
-    omega
+    change μ + r.val - μ = r.val
+    exact Nat.add_sub_cancel_left μ r.val
 
 instance (μ p : ℕ) (hp : 0 < p) : Fintype (LassoKernel μ p hp) :=
   Fintype.ofEquiv (Fin p) (kernelOffsetEquiv μ p hp).symm
@@ -71,23 +67,22 @@ theorem kernel_card (μ p : ℕ) (hp : 0 < p) :
   simpa using Fintype.card_congr (kernelOffsetEquiv μ p hp)
 
 /-- The residual exponent completely distinguishes normal powers in
-[μ,μ+p). We use mathlib's injectivity of residue on a length-p
-interval, avoiding incorrect quotient-of-exponents reasoning. -/
+[μ, μ+p). Cancel the common μ modulo p and use the bounds on the
+resulting offsets. -/
 private theorem residue_injective (μ p : ℕ) (hp : 0 < p) :
     Function.Injective (fun x : LassoKernel μ p hp =>
       (x.toMonoid.exp.val : ZMod p)) := by
   intro x y h
-  have hmod : x.toMonoid.exp.val % p = y.toMonoid.exp.val % p :=
-    (ZMod.natCast_eq_natCast_iff' _ _ p).mp h
-  have hx : x.toMonoid.exp.val ∈ Finset.Ico μ (μ + p) :=
-    Finset.mem_Ico.mpr ⟨x.ge_mu, x.toMonoid.exp.isLt⟩
-  have hy : y.toMonoid.exp.val ∈ Finset.Ico μ (μ + p) :=
-    Finset.mem_Ico.mpr ⟨y.ge_mu, y.toMonoid.exp.isLt⟩
-  have heq : x.toMonoid.exp.val = y.toMonoid.exp.val :=
-    (Finset.mod_injOn_Ico μ p) hx hy hmod
-  apply LassoKernel.ext
-  apply CyclicLassoMonoid.ext
-  exact Fin.ext heq
+  let e := kernelOffsetEquiv μ p hp
+  let rx := e x
+  let ry := e y
+  have hx : μ + rx.val = x.toMonoid.exp.val := Nat.add_sub_of_le x.ge_mu
+  have hy : μ + ry.val = y.toMonoid.exp.val := Nat.add_sub_of_le y.ge_mu
+  have hmod : μ + rx.val ≡ μ + ry.val [MOD p] := by
+    rw [hx, hy]
+    exact (ZMod.natCast_eq_natCast_iff _ _ p).mp h
+  have hcancel := Nat.ModEq.add_left_cancel' μ hmod
+  exact e.injective (Fin.ext (hcancel.eq_of_lt_of_lt rx.isLt ry.isLt))
 
 /-- The precise residue map, proved bijective from interval
 injectivity and the equal cardinalities p. -/
@@ -162,6 +157,8 @@ theorem reduceExp_zmod (μ p : ℕ) (hp : 0 < p) (n : ℕ) :
       _ = (n : ZMod p) := by
             rw [Nat.add_sub_of_le hle]
 
+variable {μ p : ℕ} {hp : 0 < p}
+
 /-- A cycle element remains in the cycle after multiplying by an
 arbitrary ambient monoid element on the right. -/
 def rightAbsorb (x : LassoKernel μ p hp)
@@ -170,10 +167,10 @@ def rightAbsorb (x : LassoKernel μ p hp)
   ⟨x.toMonoid * m, by
     change μ ≤ reduceExp μ p hp
       (x.toMonoid.exp.val + m.exp.val)
-    unfold reduceExp
-    split_ifs with h
-    · omega
-    · omega⟩
+    have hsum : μ ≤ x.toMonoid.exp.val + m.exp.val :=
+      x.ge_mu.trans (Nat.le_add_right _ _)
+    rw [reduceExp, ite_eq_right (Nat.not_lt_of_ge hsum)]
+    exact Nat.le_add_right _ _⟩
 
 @[simp] theorem rightAbsorb_toMonoid (x : LassoKernel μ p hp)
     (m : CyclicLassoMonoid μ p hp) :
@@ -265,9 +262,8 @@ theorem kernel_eq_one_iff_dvd (μ p : ℕ) (hp : 0 < p)
 /-- An explicit normal power for the internal cycle-group identity. -/
 def kernelOneFormula (μ p : ℕ) (hp : 0 < p) :
     LassoKernel μ p hp :=
-  ⟨⟨⟨μ + (p - μ % p) % p, by
-        have h := Nat.mod_lt (p - μ % p) hp
-        omega⟩⟩, by omega⟩
+  ⟨⟨⟨μ + (p - μ % p) % p, Nat.add_lt_add_left (Nat.mod_lt _ hp) μ⟩⟩,
+    Nat.le_add_right _ _⟩
 
 theorem kernelOneFormula_eq_one (μ p : ℕ) (hp : 0 < p) :
     kernelOneFormula μ p hp = (1 : LassoKernel μ p hp) := by
@@ -327,8 +323,8 @@ theorem kernel_le_nonempty_right_ideal
   have hinS : b.toMonoid * y.toMonoid ∈ S := hclosed hb
   exact hmap ▸ hinS
 
-/-- Original labeled Cayley edges stay inside the minimal group
-kernel after the first cyclic step; the emitted label is retained. -/
+/-- A Cayley edge starting inside the kernel stays there and retains
+its original trace label. -/
 theorem cayley_kernel_edge
     {A : Type u} (x : ℕ → A) (μ p : ℕ) (hp : 0 < p)
     (k : LassoKernel μ p hp) :
