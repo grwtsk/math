@@ -65,4 +65,23 @@ theorem zeta_hasSum_filtered_source
         zeta_hasSum_physical_arithmetic f A hA hf hs
   exact hasSum_filtered _ χ A f hsource s rate phase hphase
 
+/-- An estimated signed first-window reading changes the original Weil sum by
+exactly the reading error when all later prime powers are evaluated exactly. -/
+theorem primitive_tsum_sub_windowValue_eq_readout_error
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hprim : χ.IsPrimitive)
+    (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A) (hf : Admissible f)
+    (hs : tsupport f ⊆ Icc (-A) A) (observed : ℝ) :
+    let W := fun z : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((z - 1 / 2) * (r : ℂ))
+    (∑' ρ : CriticalStripZero χ, (zeroMultiplicity χ ρ : ℂ) * W ρ.1) -
+        windowValue χ A f observed =
+      ((observed - signedWindowValue χ A f : ℝ) : ℂ) := by
+  intro W
+  have hsource : HasSum (fun ρ : CriticalStripZero χ => (zeroMultiplicity χ ρ : ℂ) * W ρ.1)
+      (physicalValue χ A f) :=
+    primitive_hasSum_physical_arithmetic χ hprim f A hA hf hs
+  rw [hsource.tsum_eq, physicalValue_eq_windowValue]
+  unfold windowValue
+  push_cast
+  ring
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
