@@ -197,6 +197,42 @@ theorem determinesWindowReadout_realCorrelation_iff_of_onePrime
     simpa only [hχ, zero_mul, sub_zero] using
       congrArg (fun x => 2 * primeWeight 2 * ((χ (2 : ℕ)).re * x)) eq
 
+/-- A decoder from the whole real correlation incurs at least half the
+signed readout gap on one of a test and its conjugate. -/
+theorem onePrime_realCorrelation_decoder_error_lower
+    (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (decode : (ℝ → ℝ) → ℝ) (f : WindowTest A) :
+    ∃ g : WindowTest A,
+      (∀ r, (correlation g.1 r).re = (correlation f.1 r).re) ∧
+      2 * primeWeight 2 * |(χ (2 : ℕ)).im * (correlation f.1 (Real.log 2)).im| ≤
+        |decode (fun r => (correlation g.1 r).re) - signedWindowValue χ A g.1| := by
+  let g := conjugateTest f
+  have same (r : ℝ) : (correlation g.1 r).re = (correlation f.1 r).re := by
+    change (correlation (fun t => conj (f.1 t)) r).re = _
+    simp only [correlation_conj, Complex.conj_re]
+  let x := decode (fun r => (correlation f.1 r).re)
+  let u := signedWindowValue χ A f.1
+  let v := signedWindowValue χ A g.1
+  let phase := (χ (2 : ℕ)).im * (correlation f.1 (Real.log 2)).im
+  have conjugated : correlation g.1 (Real.log 2) = conj (correlation f.1 (Real.log 2)) :=
+    correlation_conj _ _
+  have gap : v - u = (4 * primeWeight 2) * phase := by
+    simp only [u, v, signedWindowValue_eq_onePrime χ _ lo hi, conjugated,
+      Complex.conj_re, Complex.conj_im, phase]
+    ring
+  have triangle : |v - u| ≤ |x - u| + |x - v| := by
+    convert abs_sub_le v x u using 1
+    rw [abs_sub_comm v x, add_comm]
+  let bound := 2 * primeWeight 2 * |phase|
+  have twice : 2 * bound ≤ |x - u| + |x - v| := by
+    rw [gap, abs_mul, abs_of_nonneg (mul_nonneg (by norm_num) (primeWeight_nonneg _))] at triangle
+    simpa only [bound, ← mul_assoc, show (2 : ℝ) * 2 = 4 by norm_num] using triangle
+  by_cases first : bound ≤ |x - u|
+  · exact ⟨f, fun _ => rfl, first⟩
+  · have second : bound ≤ |x - v| := by linarith [lt_of_not_ge first]
+    refine ⟨g, same, ?_⟩
+    simpa only [x, v, same] using second
+
 /-- The real reading after rotating by `-i` measures the signed imaginary
 correlation at the original heat gain. -/
 theorem heatWaveReadout_negI_re (s rate : ℝ) (z : ℂ) :
