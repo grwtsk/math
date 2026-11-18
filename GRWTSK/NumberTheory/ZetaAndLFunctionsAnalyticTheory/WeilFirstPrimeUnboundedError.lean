@@ -15,7 +15,7 @@ Normalizing the common energy to one leaves a strictly positive error floor.
 set_option autoImplicit false
 noncomputable section
 open MeasureTheory Set
-open scoped ComplexConjugate
+open scoped ComplexConjugate ContDiff
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
 
@@ -111,6 +111,11 @@ private theorem correlation_zero_eq_energy (f : ℝ → ℂ) :
   simp_rw [add_zero, pointwise]
   exact integral_ofReal
 
+private theorem energy_scaleTest {A : ℝ} (s : ℝ) (f : WindowTest A) :
+    energy (scaleTest s f).1 = s ^ 2 * energy f.1 := by
+  have h := congrArg Complex.re (correlation_scaleTest s f 0)
+  simpa only [correlation_zero_eq_energy, ← Complex.ofReal_mul, Complex.ofReal_re] using h
+
 /-- Unit energy still permits indistinguishable tests with a positive lower
 bound for every common signed first-window estimate. -/
 theorem exists_onePrime_unitEnergy_collision_error_floor {q : ℕ} {A : ℝ}
@@ -136,14 +141,103 @@ theorem exists_onePrime_unitEnergy_collision_error_floor {q : ℕ} {A : ℝ}
   let s := Real.sqrt (1 / energy f.1)
   have hsq : s ^ 2 = 1 / energy f.1 := Real.sq_sqrt (by positivity)
   have hs : 0 < s ^ 2 := by rw [hsq]; positivity
-  have scaleEnergy (u : WindowTest A) : energy (scaleTest s u).1 = s ^ 2 * energy u.1 := by
-    have h := congrArg Complex.re (correlation_scaleTest s u 0)
-    simpa only [correlation_zero_eq_energy, ← Complex.ofReal_mul, Complex.ofReal_re] using h
   have unit_f : energy (scaleTest s f).1 = 1 := by
-    rw [scaleEnergy, hsq, div_mul_cancel₀ _ he.ne']
+    rw [energy_scaleTest, hsq, div_mul_cancel₀ _ he.ne']
   have unit_g : energy (scaleTest s g).1 = 1 := by
-    rw [scaleEnergy, ← heq, hsq, div_mul_cancel₀ _ he.ne']
+    rw [energy_scaleTest, ← heq, hsq, div_mul_cancel₀ _ he.ne']
   exact ⟨scaleTest s f, scaleTest s g, unit_f, unit_g, scaleTest_preserves_same_observation s same,
     s ^ 2 * d, mul_pos hs hd, scaleTest_error_lower χ lo hi s hs lower⟩
+
+/-- Two equal translated bumps in quadrature attain imaginary correlation
+one half at their prescribed separation, with unit energy in the original
+smooth compact test domain. -/
+theorem exists_windowTest_unitEnergy_correlation_eq_I_div_two {A r : ℝ}
+    (hr : 0 < r) (inside : r < 2 * A) :
+    ∃ f : WindowTest A, energy f.1 = 1 ∧ correlation f.1 r = Complex.I / 2 := by
+  let ρ := min (r / 4) ((2 * A - r) / 4)
+  have hρ : 0 < ρ := lt_min (by linarith) (by linarith)
+  have hsep : ρ ≤ r / 4 := min_le_left _ _
+  have hmargin : ρ ≤ (2 * A - r) / 4 := min_le_right _ _
+  let b : ContDiffBump (-(r / 2)) := ⟨ρ / 2, ρ, by linarith, by linarith⟩
+  have locate {t : ℝ} (nonzero : b t ≠ 0) : -(r / 2) - ρ < t ∧ t < -(r / 2) + ρ := by
+    have mem : t ∈ Function.support b := nonzero
+    rw [b.support_eq, Metric.mem_ball, Real.dist_eq] at mem
+    obtain ⟨lower, upper⟩ := abs_lt.mp mem
+    exact ⟨by linarith, by linarith⟩
+  have covers {t : ℝ} (nonzero : b t ≠ 0) :
+      t ∈ Icc (-A) A ∧ t + r ∈ Icc (-A) A := by
+    obtain ⟨lower, upper⟩ := locate nonzero
+    exact ⟨⟨by linarith, by linarith⟩, ⟨by linarith, by linarith⟩⟩
+  have separated (t d : ℝ) (hd : r ≤ d) : b t * b (t + d) = 0 := by
+    by_contra h
+    have lower := (locate (left_ne_zero_of_mul h)).1
+    have upper := (locate (right_ne_zero_of_mul h)).2
+    linarith
+  let v (t : ℝ) : ℂ := (b t : ℂ) + (b (t - r) : ℂ) * Complex.I
+  have smooth : ContDiff ℝ ∞ (fun t => (b t : ℂ)) :=
+    Complex.ofRealCLM.contDiff.comp b.contDiff
+  have hv : ContDiff ℝ ∞ v :=
+    smooth.add ((smooth.comp (contDiff_id.sub contDiff_const)).mul contDiff_const)
+  have support_v : tsupport v ⊆ Icc (-A) A := by
+    apply closure_minimal _ isClosed_Icc
+    intro t ht
+    by_contra outside
+    have left : b t = 0 := by
+      by_contra nonzero
+      exact outside (covers nonzero).1
+    have right : b (t - r) = 0 := by
+      by_contra nonzero
+      exact outside (by simpa only [sub_add_cancel] using (covers nonzero).2)
+    exact ht (by simp [v, left, right])
+  let f : WindowTest A :=
+    ⟨v, hv, isCompact_Icc.of_isClosed_subset isClosed_closure support_v, support_v⟩
+  have lag_product (t : ℝ) : conj (v t) * v (t + r) = ((b t ^ 2 : ℝ) : ℂ) * Complex.I := by
+    have forward := separated t r le_rfl
+    have back := separated (t - r) r le_rfl
+    have far := separated (t - r) (2 * r) (by linarith)
+    rw [sub_add_cancel] at back
+    rw [show t - r + 2 * r = t + r by ring] at far
+    apply Complex.ext <;>
+      simp only [v, add_sub_cancel_right, Complex.conj_re, Complex.conj_im,
+        Complex.add_re, Complex.add_im, Complex.mul_re, Complex.mul_im,
+        Complex.ofReal_re, Complex.ofReal_im, Complex.I_re, Complex.I_im,
+        mul_zero, zero_add, add_zero, sub_zero, mul_one]
+    · nlinarith only [forward, back]
+    · nlinarith only [far]
+  have mass_compact : HasCompactSupport (fun t : ℝ => b t ^ 2) := by
+    apply b.hasCompactSupport.of_isClosed_subset isClosed_closure
+    apply closure_mono
+    intro t ht hz
+    exact ht (by simp [show b t = 0 from hz])
+  let m := ∫ t : ℝ, b t ^ 2
+  have hm : 0 < m := by
+    have peak : b (-(r / 2)) = 1 :=
+      b.one_of_mem_closedBall (Metric.mem_closedBall_self (by linarith : 0 ≤ ρ / 2))
+    exact (b.continuous.pow 2).integral_pos_of_hasCompactSupport_nonneg_nonzero
+      mass_compact (fun t => sq_nonneg (b t)) (x := -(r / 2)) (by simp [peak])
+  have mass : Integrable (fun t : ℝ => b t ^ 2) :=
+    (b.continuous.pow 2).integrable_of_hasCompactSupport mass_compact
+  have exact_lag : correlation f.1 r = (m : ℂ) * Complex.I := by
+    change correlation v r = _
+    rw [correlation, integral_congr_ae (Filter.Eventually.of_forall lag_product),
+      integral_mul_const, integral_complex_ofReal]
+  have exact_energy : energy f.1 = 2 * m := by
+    change (∫ t : ℝ, ‖v t‖ ^ 2) = _
+    have norm_pair (t : ℝ) : ‖v t‖ ^ 2 = b t ^ 2 + b (t - r) ^ 2 := by
+      rw [← Complex.normSq_eq_norm_sq]
+      simp [Complex.normSq_apply, v, Complex.mul_re, Complex.mul_im, pow_two]
+    simp_rw [norm_pair]
+    rw [integral_add mass (mass.comp_sub_right r),
+      integral_sub_right_eq_self (fun t : ℝ => b t ^ 2) r]
+    change m + m = 2 * m
+    ring
+  let s := Real.sqrt (1 / (2 * m))
+  have scale_sq : s ^ 2 = 1 / (2 * m) := Real.sq_sqrt (by positivity)
+  refine ⟨scaleTest s f, ?_, ?_⟩
+  · rw [energy_scaleTest, exact_energy, scale_sq, div_mul_cancel₀ _ (by positivity)]
+  · rw [correlation_scaleTest, exact_lag, ← mul_assoc, ← Complex.ofReal_mul, scale_sq]
+    rw [show 1 / (2 * m) * m = 1 / 2 by field_simp [hm.ne']]
+    push_cast
+    ring
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow
