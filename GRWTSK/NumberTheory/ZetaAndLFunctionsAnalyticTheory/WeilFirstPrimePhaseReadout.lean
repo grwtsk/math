@@ -233,6 +233,44 @@ theorem onePrime_realCorrelation_decoder_error_lower
     refine ⟨g, same, ?_⟩
     simpa only [x, v, same] using second
 
+/-- For tests with the same real sample, the exact signed readout gap is
+the imaginary sample gap multiplied by the original signed coefficient. -/
+theorem signedWindowValue_sub_of_same_onePrimeReal
+    (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    {f g : WindowTest A}
+    (same : (correlation f.1 (Real.log 2)).re = (correlation g.1 (Real.log 2)).re) :
+    signedWindowValue χ A f.1 - signedWindowValue χ A g.1 =
+      -(2 * primeWeight 2 * (χ (2 : ℕ)).im) *
+        ((correlation f.1 (Real.log 2)).im - (correlation g.1 (Real.log 2)).im) := by
+  simp only [signedWindowValue_eq_onePrime χ _ lo hi, same]
+  ring
+
+/-- Once a record determines the real sample, resolving its signed readout
+is equivalent to resolving the imaginary sample at a nonreal character value. -/
+theorem determinesWindowReadout_iff_onePrimeImaginary {Obs : Type*}
+    (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (phase : (χ (2 : ℕ)).im ≠ 0) (observe : WindowTest A → Obs)
+    (real_fixed : ∀ f g, observe f = observe g →
+      (correlation f.1 (Real.log 2)).re = (correlation g.1 (Real.log 2)).re) :
+    DeterminesWindowReadout χ A observe ↔
+      ∀ f g, observe f = observe g →
+        (correlation f.1 (Real.log 2)).im = (correlation g.1 (Real.log 2)).im := by
+  have weight : 0 < primeWeight 2 := by
+    rw [primeWeight, ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two]
+    exact div_pos (Real.log_pos (by norm_num)) (Real.sqrt_pos.2 (by norm_num))
+  have coeff : -(2 * primeWeight 2 * (χ (2 : ℕ)).im) ≠ 0 :=
+    neg_ne_zero.mpr (mul_ne_zero (mul_ne_zero (by norm_num) weight.ne') phase)
+  constructor
+  · intro readout f g same
+    apply sub_eq_zero.mp
+    have gap := signedWindowValue_sub_of_same_onePrimeReal χ lo hi (real_fixed f g same)
+    rw [readout f g same, sub_self] at gap
+    exact (mul_eq_zero.mp gap.symm).resolve_left coeff
+  · intro imag f g same
+    apply sub_eq_zero.mp
+    rw [signedWindowValue_sub_of_same_onePrimeReal χ lo hi (real_fixed f g same),
+      imag f g same, sub_self, mul_zero]
+
 /-- The real reading after rotating by `-i` measures the signed imaginary
 correlation at the original heat gain. -/
 theorem heatWaveReadout_negI_re (s rate : ℝ) (z : ℂ) :
