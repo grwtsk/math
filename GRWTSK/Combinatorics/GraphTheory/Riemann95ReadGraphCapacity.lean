@@ -705,6 +705,54 @@ theorem riemannHypothesis_iff_native_read_cuts_separated :
     exact ⟨n, word, bounds, observed,
       (native_read_horizon_forces_capacity_iff observed bounds).mpr separates⟩
 
+/-- Check a finite native read against the window at cut `b`.
+Only positions within the observed word are compared. -/
+def checkReadHorizon (b : ℕ) (word : List Read) : Bool :=
+  decide (b ≤ word.length) &&
+    (List.range b).all (fun i =>
+      (List.range (word.length - b)).any (fun k =>
+        decide (word[i + k]?.getD 0 ≠ word[b + k]?.getD 0)))
+
+/-- Comparing each earlier cut with cut `b` decides separation of all
+pairs through `b`. The marker lemma translates earlier pairs to this
+last cut by shifting the comparison offset. -/
+theorem checkReadHorizon_eq_true_iff (b : ℕ) (word : List Read) :
+    checkReadHorizon b word = true ↔
+      b ≤ word.length ∧ ∀ i j, i < j → j ≤ b → ∃ k, j + k < word.length ∧
+        word[i + k]?.getD 0 ≠ word[j + k]?.getD 0 := by
+  simp only [checkReadHorizon, Bool.and_eq_true_iff, decide_eq_true_eq, List.all_eq_true,
+    List.any_eq_true, List.mem_range]
+  constructor
+  · rintro ⟨bound, separates⟩
+    have all := distinguished_cuts_of_marker
+      (trace := fun k => word[k]?.getD 0) (b := b) (m := word.length - b) separates
+    exact ⟨bound, by simpa only [Nat.add_sub_of_le bound] using all⟩
+  · rintro ⟨bound, separates⟩
+    refine ⟨bound, ?_⟩
+    intro i hi
+    obtain ⟨k, inside, different⟩ := separates i b hi le_rfl
+    exact ⟨k, by omega, different⟩
+
+/-- RH holds exactly when every state budget has a successful native
+observation accepted by the finite read-horizon checker. -/
+theorem riemannHypothesis_iff_native_read_horizon_checks :
+    RiemannHypothesis ↔
+      ∀ b : ℕ, ∃ (n : ℕ) (word : List Read),
+        observe n init = some word ∧ checkReadHorizon b word = true := by
+  rw [riemannHypothesis_iff_native_read_cuts_separated]
+  constructor
+  · intro horizons b
+    obtain ⟨n, word, bound, observed, separates⟩ := horizons b
+    have size := ((observe_iff_path n init word).mp observed).1
+    exact ⟨n, word, observed, (checkReadHorizon_eq_true_iff b word).mpr
+      ⟨by simpa only [size] using bound, by simpa only [size] using separates⟩⟩
+  · intro horizons b
+    obtain ⟨n, word, observed, checked⟩ := horizons b
+    have size := ((observe_iff_path n init word).mp observed).1
+    obtain ⟨bound, separates⟩ := (checkReadHorizon_eq_true_iff b word).mp checked
+    exact ⟨n, word, by simpa only [size] using bound, observed,
+      by simpa only [size] using separates⟩
+
 /-- Once the native terminal word is known, one covered word and
 soundness up to the first failed budget certify the whole rooted language.
 No finiteness assumption on the graph is needed for this reduction. -/
