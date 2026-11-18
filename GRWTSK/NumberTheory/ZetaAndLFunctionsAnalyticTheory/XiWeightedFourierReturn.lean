@@ -149,6 +149,13 @@ theorem tendstoLocallyUniformlyOn_logFourier_of_weighted_sub
       (hQ |z.im| (abs_nonneg _) hz) (z := z) le_rfl
     simp only [mul_sub, integral_sub hpz hqz]
 
+private theorem memLp_logWindowWeight (a A : ℝ) :
+    MemLp (fun t : ℝ => Real.exp (a * |t|)) 2 (volume.restrict (Set.Icc (-A) A)) := by
+  have hw : Continuous (fun t : ℝ => Real.exp (a * |t|)) :=
+    Real.continuous_exp.comp (continuous_const.mul continuous_abs)
+  exact (memLp_two_iff_integrable_sq hw.aestronglyMeasurable).2
+    ((hw.pow 2).continuousOn.integrableOn_compact isCompact_Icc)
+
 /-- Cauchy–Schwarz on the logarithmic window with the exact exponential
 weight factor used for the finite Galerkin error. The same formula covers
 the unweighted real-axis case and the degenerate window. -/
@@ -157,12 +164,7 @@ theorem weighted_logWindowError_le {a A : ℝ} {f : ℝ → ℂ}
     (∫ t in Set.Icc (-A) A, Real.exp (a * |t|) * ‖f t‖) ≤
       Real.sqrt (∫ t in Set.Icc (-A) A, (Real.exp (a * |t|)) ^ (2 : ℕ)) *
       Real.sqrt (∫ t in Set.Icc (-A) A, ‖f t‖ ^ (2 : ℕ)) := by
-  let w : ℝ → ℝ := fun t => Real.exp (a * |t|)
-  have hContinuous : Continuous w :=
-    Real.continuous_exp.comp (continuous_const.mul continuous_abs)
-  have hw : MemLp w 2 (volume.restrict (Set.Icc (-A) A)) :=
-    (memLp_two_iff_integrable_sq hContinuous.aestronglyMeasurable).2
-      ((hContinuous.pow 2).continuousOn.integrableOn_compact isCompact_Icc)
+  have hw := memLp_logWindowWeight a A
   have hConj : Real.HolderConjugate (2 : ℝ) 2 := by
     rw [Real.holderConjugate_iff]
     norm_num
@@ -170,7 +172,7 @@ theorem weighted_logWindowError_le {a A : ℝ} {f : ℝ → ℂ}
     (Eventually.of_forall fun t => Real.exp_nonneg (a * |t|))
     (Eventually.of_forall fun t => norm_nonneg (f t))
     (by simpa using hw) (by simpa using hf.norm)
-  simpa only [w, Real.rpow_two, Real.sqrt_eq_rpow] using hHolder
+  simpa only [Real.rpow_two, Real.sqrt_eq_rpow] using hHolder
 
 /-- A vanishing window Cauchy–Schwarz budget supplies the weighted
 integral limit on the whole line for errors extended by zero. -/
@@ -265,5 +267,51 @@ theorem logWindowBudget_tendsto_zero_of_isLittleO {a : ℝ} (ha : 0 ≤ a)
     _ = (E n / Real.exp (-(a * A n))) / Real.sqrt a := by
       rw [Real.exp_neg, div_inv_eq_mul]
       ring
+
+/-- Transfer the strip limit of trial transforms to the candidate family
+from the actual zero-extended window error and its L² decay rates.
+The difference identity uses the same log profiles as the L² hypothesis. -/
+theorem tendstoLocallyUniformlyOn_of_trial_and_window_rates
+    {D T : ℕ → ℂ → ℂ} {F : ℂ → ℂ} (A : ℕ → ℝ) (err : ℕ → ℝ → ℂ)
+    (hA : ∀ n, 0 ≤ A n)
+    (hSupport : ∀ n t, t ∉ Set.Icc (-A n) (A n) → err n t = 0)
+    (hL2 : ∀ n, MemLp (err n) 2 (volume.restrict (Set.Icc (-A n) (A n))))
+    (hRate : ∀ a : ℝ, 0 ≤ a → a < 1 / 2 →
+      Asymptotics.IsLittleO atTop
+        (fun n => Real.sqrt (∫ t in Set.Icc (-A n) (A n), ‖err n t‖ ^ (2 : ℕ)))
+        (fun n => if a = 0 then (Real.sqrt (2 * A n))⁻¹ else Real.exp (-(a * A n))))
+    (hDifference : ∀ n z, |z.im| < 1 / 2 →
+      D n z - T n z = ∫ t : ℝ, Complex.exp (-Complex.I * z * (t : ℂ)) * err n t)
+    (hTrial : TendstoLocallyUniformlyOn T F atTop {z : ℂ | |z.im| < 1 / 2}) :
+    TendstoLocallyUniformlyOn D F atTop {z : ℂ | |z.im| < 1 / 2} := by
+  have hInt (a : ℝ) (n : ℕ) : Integrable (fun t => Real.exp (a * |t|) * ‖err n t‖) := by
+    apply (integrableOn_iff_integrable_of_support_subset
+      (show Function.support (fun t => Real.exp (a * |t|) * ‖err n t‖) ⊆
+        Set.Icc (-A n) (A n) from fun t ht => by
+          by_contra h
+          exact ht (by simp [hSupport n t h]))).1
+    exact (memLp_logWindowWeight a (A n)).integrable_mul (hL2 n).norm
+  have hErrorLimit :
+      TendstoLocallyUniformlyOn (fun n z => D n z - T n z) (fun _ => 0)
+        atTop {z : ℂ | |z.im| < 1 / 2} := by
+    refine tendstoLocallyUniformlyOn_of_weighted_error err (fun a _ _ n => hInt a n)
+      (fun n z hz => by simpa only [sub_zero] using hDifference n z hz) ?_
+    intro a ha ha'
+    exact weighted_logWindowError_tendsto_zero A err hSupport hL2
+      (logWindowBudget_tendsto_zero_of_isLittleO ha A _ hA (fun _ => Real.sqrt_nonneg _)
+        (hRate a ha ha'))
+  have hopen : IsOpen {z : ℂ | |z.im| < 1 / 2} :=
+    isOpen_lt Complex.continuous_im.abs continuous_const
+  apply (tendstoLocallyUniformlyOn_iff_forall_isCompact hopen).2
+  intro K hK hc
+  have hT := (tendstoLocallyUniformlyOn_iff_forall_isCompact hopen).1 hTrial K hK hc
+  have hD := (tendstoLocallyUniformlyOn_iff_forall_isCompact hopen).1 hErrorLimit K hK hc
+  rw [Metric.tendstoUniformlyOn_iff] at hT hD ⊢
+  intro ε hε
+  filter_upwards [hT (ε / 2) (half_pos hε), hD (ε / 2) (half_pos hε)] with n hnT hnD z hz
+  have hDz : dist (T n z) (D n z) < ε / 2 := by
+    simpa only [dist_comm (T n z), dist_eq_norm, dist_zero_left, zero_sub, norm_neg] using hnD z hz
+  exact (dist_triangle (F z) (T n z) (D n z)).trans_lt <| by
+    simpa only [add_halves] using add_lt_add (hnT z hz) hDz
 
 end GRWTSK.NumberTheory.Zeta.XiWeightedFourierReturn
