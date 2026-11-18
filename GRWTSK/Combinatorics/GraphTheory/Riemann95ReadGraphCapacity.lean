@@ -672,6 +672,29 @@ private theorem exists_frontier_prefix_of_not_prefix {word attempted : List Read
       · exact ⟨[1 - a], List.mem_cons_self,
           List.cons_prefix_cons.mpr ⟨(eq_opposite_of_ne same).symm, List.nil_prefix⟩⟩
 
+private theorem native_path_iff_prefix_of_terminal {n : ℕ} {word w : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none) :
+    (∃ d, WordPath readGraph init w d) ↔ w <+: word := by
+  obtain ⟨size, finish, native⟩ := (observe_iff_path _ _ _).mp observed
+  constructor
+  · rintro ⟨d, path⟩
+    have short : w.length ≤ n := by
+      by_contra longer
+      obtain ⟨mid, pref, _⟩ := splitAt path (n + 1)
+      have length : (w.take (n + 1)).length = n + 1 := by
+        rw [List.length_take, Nat.min_eq_left (by omega)]
+      have next := (observe_iff_path _ _ _).mpr ⟨length, mid, pref⟩
+      rw [stopped] at next
+      cases next
+    apply List.prefix_iff_eq_take.mpr
+    exact forced_prefix (G := readGraph)
+      (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
+      path native (by omega)
+  · intro pref
+    obtain ⟨mid, path, _⟩ := splitAt native w.length
+    exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ path⟩
+
 /-- A certified terminal observation reduces exactness to one positive
 path check and one negative path check for each first forbidden prefix. -/
 theorem exactRoot_iff_terminal_frontier {V : Type*} (G : LabeledGraph V Read) (root : V)
@@ -681,26 +704,8 @@ theorem exactRoot_iff_terminal_frontier {V : Type*} (G : LabeledGraph V Read) (r
     (∀ w, (∃ t, WordPath G root w t) ↔ ∃ d, WordPath readGraph init w d) ↔
       (∃ t, WordPath G root word t) ∧
         ∀ bad ∈ terminalFrontier word, ¬ ∃ t, WordPath G root bad t := by
-  obtain ⟨size, finish, native⟩ := (observe_iff_path _ _ _).mp observed
-  have native_prefix (w : List Read) :
-      (∃ d, WordPath readGraph init w d) ↔ w <+: word := by
-    constructor
-    · rintro ⟨d, path⟩
-      have short : w.length ≤ n := by
-        by_contra longer
-        obtain ⟨mid, pref, _⟩ := splitAt path (n + 1)
-        have length : (w.take (n + 1)).length = n + 1 := by
-          rw [List.length_take, Nat.min_eq_left (by omega)]
-        have next := (observe_iff_path _ _ _).mpr ⟨length, mid, pref⟩
-        rw [stopped] at next
-        cases next
-      apply List.prefix_iff_eq_take.mpr
-      exact forced_prefix (G := readGraph)
-        (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
-        path native (by omega)
-    · intro pref
-      obtain ⟨mid, path, _⟩ := splitAt native w.length
-      exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ path⟩
+  obtain ⟨_, finish, native⟩ := (observe_iff_path _ _ _).mp observed
+  have native_prefix (w : List Read) := native_path_iff_prefix_of_terminal (w := w) observed stopped
   constructor
   · intro exactRoot
     exact ⟨(exactRoot word).mpr ⟨finish, native⟩, fun bad member admitted =>
@@ -716,6 +721,92 @@ theorem exactRoot_iff_terminal_frontier {V : Type*} (G : LabeledGraph V Read) (r
     · intro pref
       obtain ⟨mid, initial, _⟩ := splitAt full w.length
       exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ initial⟩
+
+/-- A graph with the minimum terminal vertex count is exact precisely when it
+admits the full word and its vertices can be indexed by cuts so that every
+edge preserves the source suffix prefix relation. The suffix length forces
+each edge to advance, but a compatible edge may skip cuts. -/
+theorem exactRoot_iff_terminal_suffix_edges {V : Type*} [Fintype V]
+    (G : LabeledGraph V Read) (root : V) {n : ℕ} {word : List Read}
+    (observed : observe n (init : Configuration) = some word)
+    (stopped : observe (n + 1) (init : Configuration) = none)
+    (minimum : Fintype.card V = n + 1) :
+    (∀ w, (∃ t, WordPath G root w t) ↔ ∃ d, WordPath readGraph init w d) ↔
+      (∃ t, WordPath G root word t) ∧
+        ∃ e : Fin (n + 1) ≃ V, e ⟨0, Nat.zero_lt_succ n⟩ = root ∧
+          ∀ (i j : Fin (n + 1)) (a : Read), G.edge (e i) a (e j) →
+            i < j ∧ (a :: word.drop j.val) <+: word.drop i.val := by
+  classical
+  have nativePrefix (w : List Read) :=
+    native_path_iff_prefix_of_terminal (w := w) observed stopped
+  constructor
+  · intro exactRoot
+    have covers := (exactRoot word).mpr ((nativePrefix word).mpr (List.prefix_refl word))
+    obtain ⟨finish, full⟩ := covers
+    have positions (i : Fin (n + 1)) :
+        ∃ v, WordPath G root (word.take i.val) v ∧
+          WordPath G v (word.drop i.val) finish := splitAt full i.val
+    choose visit paths using positions
+    have size := ((observe_iff_path n init word).mp observed).1
+    have takeLength (i : Fin (n + 1)) : (word.take i.val).length = i.val := by
+      rw [List.length_take, size, Nat.min_eq_left (Nat.le_of_lt_succ i.isLt)]
+    have sound {w : List Read} {t : V} (walk : WordPath G root w t) : w <+: word :=
+      (nativePrefix w).mp ((exactRoot w).mp ⟨t, walk⟩)
+    have noRepeat {i j : Fin (n + 1)} (ordered : i < j)
+        (same : visit i = visit j) : False := by
+      have before := (paths j).1
+      rw [← same] at before
+      have bound := (sound (wordPath_append before (paths i).2)).length_le
+      simp only [List.length_append, takeLength j, List.length_drop, size] at bound
+      have hi := Nat.le_of_lt_succ i.isLt
+      change i.val < j.val at ordered
+      omega
+    have injective : Function.Injective visit := by
+      intro i j same
+      rcases lt_trichotomy i j with lt | eq | gt
+      · exact (noRepeat lt same).elim
+      · exact eq
+      · exact (noRepeat gt same.symm).elim
+    have bijective : Function.Bijective visit :=
+      (Fintype.bijective_iff_injective_and_card visit).2
+        ⟨injective, by simpa using minimum.symm⟩
+    let e := Equiv.ofBijective visit bijective
+    have nilEnd {s t : V} (path : WordPath G s [] t) : t = s := by
+      cases path
+      rfl
+    have atRoot : visit ⟨0, Nat.zero_lt_succ n⟩ = root :=
+      nilEnd (by simpa using (paths ⟨0, Nat.zero_lt_succ n⟩).1)
+    refine ⟨⟨finish, full⟩, e, atRoot, ?_⟩
+    intro i j a edge
+    have step : WordPath G (visit i) (a :: word.drop j.val) finish :=
+      .cons a _ edge (paths j).2
+    have whole := sound (wordPath_append (paths i).1 step)
+    have suffix := whole.drop i.val
+    rw [List.drop_left' (takeLength i)] at suffix
+    have bound := suffix.length_le
+    simp only [List.length_cons, List.length_drop, size] at bound
+    have hi := Nat.le_of_lt_succ i.isLt
+    have hj := Nat.le_of_lt_succ j.isLt
+    refine ⟨?_, suffix⟩
+    change i.val < j.val
+    omega
+  · rintro ⟨⟨finish, full⟩, e, rootEq, edges⟩
+    have sound {s t : V} {w : List Read} (walk : WordPath G s w t) :
+        w <+: word.drop (e.symm s).val := by
+      induction walk with
+      | nil _ => exact List.nil_prefix
+      | @cons s t _ a _ edge _ ih =>
+        have edge' : G.edge (e (e.symm s)) a (e (e.symm t)) := by simpa using edge
+        exact (List.cons_prefix_cons.mpr ⟨rfl, ih⟩).trans (edges _ _ _ edge').2
+    have zero : (e.symm root).val = 0 := by rw [← rootEq, e.symm_apply_apply]
+    intro w
+    rw [nativePrefix w]
+    constructor
+    · rintro ⟨t, path⟩
+      simpa [zero] using sound path
+    · intro pref
+      obtain ⟨mid, path, _⟩ := splitAt full w.length
+      exact ⟨mid, (List.prefix_iff_eq_take.mp pref).symm ▸ path⟩
 
 private theorem proper_prefix_of_frontier_is_prefix
     {word bad pre : List Read} (member : bad ∈ terminalFrontier word)
