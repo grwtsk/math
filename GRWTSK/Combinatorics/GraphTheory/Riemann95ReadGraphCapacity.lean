@@ -649,6 +649,62 @@ theorem riemannHypothesis_iff_unbounded_native_read_horizons :
     have impossible := large G root covers (fun w _ accepted => (exactGraph w).mp accepted)
     omega
 
+/-- A successful native observation forces more than `b` states exactly
+when its finite suffix comparisons distinguish all cuts through `b`. -/
+theorem native_read_horizon_forces_capacity_iff {n b : ℕ} {word : List Read}
+    (observed : observe n init = some word) (bounds : b ≤ n) :
+    (∀ {V : Type} [Fintype V] (G : LabeledGraph V Read) (root : V),
+      (∃ t, WordPath G root word t) →
+      (∀ w, w.length ≤ n → (∃ t, WordPath G root w t) →
+        ∃ d, WordPath readGraph init w d) →
+      b + 1 ≤ Fintype.card V) ↔
+    ∀ i j, i < j → j ≤ b → ∃ k, j + k < n ∧
+      word[i + k]?.getD 0 ≠ word[j + k]?.getD 0 := by
+  obtain ⟨size, finish, native⟩ := (observe_iff_path _ _ _).mp observed
+  let trace (k : ℕ) : Read := word[k]?.getD 0
+  have prefixAt (m : ℕ) (short : m ≤ n) :
+      word.take m = tracePrefix trace m := by
+    have fits : 0 + m ≤ word.length := by simpa only [size, Nat.zero_add] using short
+    simpa only [List.drop_zero, Nat.zero_add, trace] using window_eq_prefix word 0 m fits
+  have whole : tracePrefix trace n = word := by
+    rw [← prefixAt n le_rfl, ← size, List.take_length]
+  have criterion := finite_horizon_forces_capacity_iff (trace := trace) bounds
+  constructor
+  · intro large
+    apply criterion.mp
+    intro V _ G root covers sound
+    apply large G root (whole ▸ covers)
+    intro w short accepted
+    have same := (sound w short accepted).trans (prefixAt w.length short).symm
+    obtain ⟨d, initial, _⟩ := splitAt native w.length
+    exact ⟨d, same.symm ▸ initial⟩
+  · intro separates V _ G root covers sound
+    apply criterion.mpr separates G root (whole.symm ▸ covers)
+    intro w short accepted
+    obtain ⟨d, path⟩ := sound w short accepted
+    have same := forced_prefix (G := readGraph)
+      (fun ha hb => ⟨ha.1.trans hb.1.symm, Option.some.inj (ha.2.symm.trans hb.2)⟩)
+      path native (by simpa only [size] using short)
+    exact same.trans (prefixAt w.length short)
+
+/-- The all-budget native horizon characterization of RH can be checked
+using only bounded pairs of cuts and offsets in each observed word. -/
+theorem riemannHypothesis_iff_native_read_cuts_separated :
+    RiemannHypothesis ↔
+      ∀ b : ℕ, ∃ (n : ℕ) (word : List Read),
+        b ≤ n ∧ observe n init = some word ∧
+        ∀ i j, i < j → j ≤ b → ∃ k, j + k < n ∧
+          word[i + k]?.getD 0 ≠ word[j + k]?.getD 0 := by
+  rw [riemannHypothesis_iff_unbounded_native_read_horizons]
+  constructor
+  · intro horizons b
+    obtain ⟨n, word, bounds, observed, large⟩ := horizons b
+    exact ⟨n, word, bounds, observed, (native_read_horizon_forces_capacity_iff observed bounds).mp large⟩
+  · intro horizons b
+    obtain ⟨n, word, bounds, observed, separates⟩ := horizons b
+    exact ⟨n, word, bounds, observed,
+      (native_read_horizon_forces_capacity_iff observed bounds).mpr separates⟩
+
 /-- Once the native terminal word is known, one covered word and
 soundness up to the first failed budget certify the whole rooted language.
 No finiteness assumption on the graph is needed for this reduction. -/

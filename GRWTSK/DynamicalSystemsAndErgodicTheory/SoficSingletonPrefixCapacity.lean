@@ -220,6 +220,70 @@ theorem exactRoot_of_equal_tails {trace : ℕ → A} {i j : ℕ}
   refine ⟨G, root, fun word => ?_⟩
   simpa [root] using path_iff word root
 
+private theorem exists_periodic_completion {trace : ℕ → A} {i j n : ℕ} (order : i < j)
+    (agree : ∀ k, j + k < n → trace (i + k) = trace (j + k)) :
+    ∃ y : ℕ → A, (∀ k, y (i + k) = y (j + k)) ∧ ∀ m < n, y m = trace m := by
+  let p := j - i
+  let y (m : ℕ) := if m < i then trace m else trace (i + (m - i) % p)
+  have periodic (m : ℕ) (hm : i ≤ m) : y (m + p) = y m := by
+    have hsub : m + p - i = m - i + p := by omega
+    simp [y, Nat.not_lt_of_ge hm, show ¬ m + p < i by omega, hsub]
+  refine ⟨y, fun k => ?_, ?_⟩
+  · have move : j + k = i + k + p := by dsimp [p]; omega
+    rw [move, periodic (i + k) (by omega)]
+  · intro m
+    induction m using Nat.strongRecOn with
+    | ind m ih =>
+      intro hm
+      by_cases before : m < j
+      · by_cases stem : m < i
+        · simp [y, stem]
+        · have offset : m - i < p := by dsimp [p]; omega
+          simp [y, stem, Nat.mod_eq_of_lt offset, Nat.add_sub_of_le (Nat.le_of_not_gt stem)]
+      · have smaller : m - p < m := by dsimp [p]; omega
+        have covers : i ≤ m - p := by dsimp [p]; omega
+        have same := agree (m - j) (by omega)
+        have left : i + (m - j) = m - p := by dsimp [p]; omega
+        have right : j + (m - j) = m := by omega
+        rw [left, right] at same
+        calc
+          y m = y (m - p + p) := congrArg y (by dsimp [p]; omega)
+          _ = y (m - p) := periodic _ covers
+          _ = trace (m - p) := ih _ smaller (smaller.trans hm)
+          _ = trace m := same
+
+/-- A fixed observation forces more than `b` states exactly when it
+distinguishes every pair of cuts through `b`. Agreement up to the
+observation length admits a periodic completion with a small lasso. -/
+theorem finite_horizon_forces_capacity_iff {trace : ℕ → A} {n b : ℕ} (bounds : b ≤ n) :
+    (∀ {W : Type} [Fintype W] (G : LabeledGraph W A) (root : W),
+      (∃ t, WordPath G root (tracePrefix trace n) t) →
+      (∀ word, word.length ≤ n → (∃ t, WordPath G root word t) →
+        word = tracePrefix trace word.length) →
+      b + 1 ≤ Fintype.card W) ↔
+    ∀ i j, i < j → j ≤ b → ∃ k, j + k < n ∧ trace (i + k) ≠ trace (j + k) := by
+  constructor
+  · intro large
+    by_contra! missing
+    obtain ⟨i, j, order, within, agree⟩ := missing
+    obtain ⟨y, tails, agreesWithin⟩ := exists_periodic_completion order agree
+    obtain ⟨G, root, exactRoot⟩ := exactRoot_of_equal_tails order tails
+    have samePrefix (m : ℕ) (hm : m ≤ n) : tracePrefix y m = tracePrefix trace m :=
+      congrArg (fun f : Fin m → A => List.ofFn f)
+        (funext fun k => agreesWithin k.val (k.isLt.trans_le hm))
+    have covers : ∃ t, WordPath G root (tracePrefix trace n) t := by
+      apply (exactRoot _).2
+      rw [show (tracePrefix trace n).length = n by simp [tracePrefix]]
+      exact (samePrefix n le_rfl).symm
+    have big := large G root covers (fun word short path =>
+      ((exactRoot word).1 path).trans (samePrefix word.length short))
+    have hj : b + 1 ≤ j := by simpa using big
+    omega
+  · intro differs W _ G root covers sound
+    obtain ⟨t, path⟩ := covers
+    exact card_ge_of_distinguished_cuts bounds path
+      (fun {word} {finish} accepted short => sound word short ⟨finish, accepted⟩) differs
+
 /-- Quantitative characterization valid even for nondeterministic candidates. -/
 theorem exactRoot_capacity_iff {trace : ℕ → A} (b : ℕ) :
     (∃ (n : ℕ) (_ : n ≤ b) (G : LabeledGraph (Fin n) A) (root : Fin n),
