@@ -140,6 +140,31 @@ theorem forced_prefix {G : LabeledGraph V A}
       obtain ⟨rfl, rfl⟩ := unique edge next
       exact congrArg (List.cons a) (ih tail (by simpa using length_le))
 
+/-- For any fixed cut budget with distinct complete tails, a single finite
+window contains a distinguishing read for every pair of cuts in the budget. -/
+theorem exists_distinguishing_window {trace : ℕ → A} (b : ℕ)
+    (different : ∀ i j, i < j → j ≤ b →
+      ∃ k, trace (i + k) ≠ trace (j + k)) :
+    ∃ n, b ≤ n ∧ ∀ i j, i < j → j ≤ b →
+      ∃ k, j + k < n ∧ trace (i + k) ≠ trace (j + k) := by
+  classical
+  have chooseDiff (ij : Fin (b + 1) × Fin (b + 1)) :
+      ij.1.val < ij.2.val → ∃ k, trace (ij.1.val + k) ≠ trace (ij.2.val + k) :=
+    fun less => different _ _ less (by have := ij.2.isLt; omega)
+  let lag (ij : Fin (b + 1) × Fin (b + 1)) : ℕ :=
+    if less : ij.1.val < ij.2.val then ij.2.val + Classical.choose (chooseDiff ij less) + 1 else 0
+  let n := max b (Finset.univ.sup lag)
+  refine ⟨n, le_max_left _ _, ?_⟩
+  intro i j less jBound
+  let ij : Fin (b + 1) × Fin (b + 1) := (⟨i, by omega⟩, ⟨j, by omega⟩)
+  have hs : lag ij ≤ Finset.univ.sup lag := Finset.le_sup (Finset.mem_univ ij)
+  have hs' : lag ij ≤ n := hs.trans (le_max_right _ _)
+  have hless : ij.1.val < ij.2.val := less
+  rw [show lag ij = j + Classical.choose (chooseDiff ij hless) + 1 by
+    simp only [lag, dite_eq_left hless]; rfl] at hs'
+  exact ⟨Classical.choose (chooseDiff ij hless), by omega,
+    Classical.choose_spec (chooseDiff ij hless)⟩
+
 /-- If a prefix language is exact on a finite graph, its infinite read
 trace has equal tails at two positions no later than the graph size. -/
 theorem equal_tails_of_exactRoot [Fintype V]
@@ -148,27 +173,10 @@ theorem equal_tails_of_exactRoot [Fintype V]
   classical
   by_contra h
   push Not at h
-  let b := Fintype.card V
-  have chooseDiff (ij : Fin (b + 1) × Fin (b + 1)) :
-      ij.1.val < ij.2.val → ∃ k, trace (ij.1.val + k) ≠ trace (ij.2.val + k) :=
-    fun less => h _ _ less (by have := ij.2.isLt; omega)
-  let lag (ij : Fin (b + 1) × Fin (b + 1)) : ℕ :=
-    if less : ij.1.val < ij.2.val then ij.2.val + Classical.choose (chooseDiff ij less) + 1 else 0
-  let n := max b (Finset.univ.sup lag)
-  have bound : b ≤ n := le_max_left _ _
+  obtain ⟨n, bound, different⟩ := exists_distinguishing_window (Fintype.card V) h
   obtain ⟨finish, path⟩ := (exactRoot (tracePrefix trace n)).2 (by simp [tracePrefix])
   have tooMany := card_ge_of_distinguished_cuts bound path
-    (fun p _ => (exactRoot _).1 ⟨_, p⟩) (by
-      intro i j less jBound
-      let ij : Fin (b + 1) × Fin (b + 1) := (⟨i, by omega⟩, ⟨j, by omega⟩)
-      have hs : lag ij ≤ Finset.univ.sup lag := Finset.le_sup (Finset.mem_univ ij)
-      have hs' : lag ij ≤ n := hs.trans (le_max_right _ _)
-      have hless : ij.1.val < ij.2.val := less
-      rw [show lag ij = j + Classical.choose (chooseDiff ij hless) + 1 by
-        simp only [lag, dite_eq_left hless]; rfl] at hs'
-      exact ⟨Classical.choose (chooseDiff ij hless), by omega,
-        Classical.choose_spec (chooseDiff ij hless)⟩)
-  change b + 1 ≤ b at tooMany
+    (fun p _ => (exactRoot _).1 ⟨_, p⟩) different
   omega
 
 

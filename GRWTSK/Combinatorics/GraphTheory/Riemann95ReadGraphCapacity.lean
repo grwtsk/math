@@ -550,6 +550,33 @@ theorem distinct_tails_of_native_observations {trace : ℕ → Read}
   have h := observe_isSome_eq_steps (n + 1) init
   simp [observed (n + 1), exhausted] at h
 
+/-- For each state budget, one successful observation of an all-length
+native trace certifies a larger graph size. A candidate graph needs to
+cover that observation and be sound only through its length. -/
+theorem exists_native_read_horizon_for_capacity {trace : ℕ → Read}
+    (observed : ∀ n, observe n init = some (tracePrefix trace n)) (b : ℕ) :
+    ∃ n, b ≤ n ∧ observe n init = some (tracePrefix trace n) ∧
+      ∀ {V : Type*} [Fintype V] (G : LabeledGraph V Read) (root : V),
+        (∃ t, WordPath G root (tracePrefix trace n) t) →
+        (∀ word, word.length ≤ n → (∃ t, WordPath G root word t) →
+          ∃ d, WordPath readGraph init word d) →
+        b + 1 ≤ Fintype.card V := by
+  classical
+  have different (i j : ℕ) (ordered : i < j) :
+      ∃ k, trace (i + k) ≠ trace (j + k) := by
+    by_contra! same
+    exact distinct_tails_of_native_observations observed ordered same
+  obtain ⟨n, bound, separates⟩ :=
+    exists_distinguishing_window b (fun i j ordered _ => different i j ordered)
+  refine ⟨n, bound, observed n, ?_⟩
+  intro V _ G root covers sound
+  obtain ⟨t, path⟩ := covers
+  apply card_ge_of_distinguished_cuts bound path ?_ separates
+  intro word finish accepted short
+  have source := (observe_iff_path word.length init word).2
+    ⟨rfl, sound word short ⟨finish, accepted⟩⟩
+  exact Option.some.inj (source.symm.trans (observed word.length))
+
 /-- Once the native terminal word is known, one covered word and
 soundness up to the first failed budget certify the whole rooted language.
 No finiteness assumption on the graph is needed for this reduction. -/
