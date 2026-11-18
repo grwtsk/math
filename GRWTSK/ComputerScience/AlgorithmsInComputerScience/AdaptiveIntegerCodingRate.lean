@@ -80,4 +80,37 @@ theorem sum_rescaleLoss_le {ι : Type*} (events : Finset ι)
         (counts i) (hsize i hi) (hpos i hi) (selected i) (hmem i hi))
     _ = _ := by simp
 
+/-- At an actual rescale event, the cost bound compares the post-increment
+count table with the successor state's weights, for the same valid bin. -/
+theorem rescaleInput_logMass_le (cfg : Config) (s : State) (byte : Fin 256)
+    (hs : ValidState cfg s) (counts : List ℕ)
+    (hevent : rescaleInput cfg s byte = some counts) (j : Fin counts.length) :
+    Real.logb 2 ((counts[j] : ℝ) / counts.sum) -
+        Real.logb 2
+          (((((update cfg s byte).weights[j.val]?).getD 0 : ℕ) : ℝ) /
+            (update cfg s byte).weights.sum) ≤
+      Real.logb 2 (128 / 43) := by
+  obtain ⟨hlen, hp, _, hweights⟩ := rescaleInput_spec cfg s byte hs counts hevent
+  have hsize : counts.length ≤ 256 := by
+    rw [hlen]
+    exact cfg.directBound
+  rw [hweights]
+  simpa [rescaleLoss, List.getElem?_map, List.getElem?_eq_getElem j.isLt] using
+    rescaleLoss_le counts hsize hp counts[j] (List.getElem_mem j.isLt)
+
+set_option maxRecDepth 4096 in
+/-- The sharp table occurs on the second zero byte from initialization for a
+valid configuration, before its reset. The selected bin for that byte is zero. -/
+theorem rescaleLoss_sharp_reachable :
+    ∃ cfg : Config, ∃ counts : List ℕ,
+      let zero : Fin 256 := 0
+      let s := update cfg (initial cfg) zero
+      ValidState cfg s ∧ rescaleInput cfg s zero = some counts ∧
+        rescaleLoss counts ((counts[binOf cfg zero]?).getD 0) = Real.logb 2 (128 / 43) := by
+  let cfg : Config := ⟨255, 258, 3, by decide, by decide, by decide, by decide, by decide⟩
+  refine ⟨cfg, 3 :: List.replicate 255 1, ?_, ?_, ?_⟩
+  · exact update_valid cfg (initial cfg) 0 (initial_valid cfg)
+  · rfl
+  · exact rescaleLoss_sharp
+
 end GRWTSK.ComputerScience.AdaptiveIntegerCoding
