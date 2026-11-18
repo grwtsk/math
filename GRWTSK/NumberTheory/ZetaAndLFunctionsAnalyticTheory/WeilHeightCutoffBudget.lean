@@ -31,6 +31,7 @@ namespace GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
 open GRWTSK.MeasureAndIntegration.FourierDerivativeDecay (derivativeL1Cost derivativeL1Cost_nonneg)
 open GRWTSK.NumberTheory.WeilNegativeWitness
   (heightCount heightCount_le_source_bound sourceCountConstant sourceCountConstant_nonneg)
+open GRWTSK.NumberTheory.Conditional (DirichletCriticalLine)
 open scoped ContDiff
 
 /-- A fixed height imposes a lower bound on the dyadic error budget. -/
@@ -238,5 +239,55 @@ theorem smallConductorStages_iff_dyadicRawHeightBounds
     have hpow : (2 : ℝ) ^ K ≤ (2 : ℝ) ^ J := pow_le_pow_right₀ (by norm_num) hJ
     have hbudget := (hK f hf hsmooth le_rfl).1
     exact ⟨K, (2 : ℝ) ^ J - 1, by linarith, by linarith⟩
+
+/-- A negative upper certificate at one dyadic height refutes the original
+critical-line condition for this character. -/
+theorem not_dirichletCriticalLine_of_negativeDyadicHeightCertificate
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1)
+    {T : ℝ} {f : ℝ → ℝ} (hf : Admissible χ T f) (hsmooth : ContDiff ℝ ∞ f)
+    (J : ℕ) (hcert : primitiveHeightContribution χ hp (liftReal f) ((2 : ℝ) ^ J - 1) +
+      primitiveHeightTailBudget (sourceCountConstant χ) 3 (liftReal f) T J < 0) :
+    ¬ DirichletCriticalLine χ := by
+  intro hline
+  have hnonneg := primitiveArithmeticValue_nonneg_of_criticalLine_smooth χ hp hn hline hf hsmooth
+  have herror := abs_primitiveArithmeticValue_sub_heightContribution_le χ hp hn
+    (sourceCountConstant_nonneg χ) (by norm_num : (0 : ℝ) ≤ 3)
+    (heightCount_le_source_bound χ hp) hf hsmooth (H := (2 : ℝ) ^ J - 1) J (by linarith)
+  linarith [(abs_le.mp herror).2]
+
+/-- An off-line zero yields one smooth odd test and one positive deficit that
+persist in the upper certificates at all sufficiently late dyadic heights. -/
+theorem not_dirichletCriticalLine_iff_eventually_negativeDyadicHeightCertificates
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hn : χ ≠ 1) :
+    ¬ DirichletCriticalLine χ ↔
+      ∃ (T : ℝ) (f : ℝ → ℝ) (δ : ℝ), Admissible χ T f ∧ ContDiff ℝ ∞ f ∧ 0 < δ ∧
+        ∃ K : ℕ, ∀ J : ℕ, K ≤ J →
+          primitiveHeightContribution χ hp (liftReal f) ((2 : ℝ) ^ J - 1) +
+            primitiveHeightTailBudget (sourceCountConstant χ) 3 (liftReal f) T J ≤ -δ := by
+  constructor
+  · intro hoff
+    unfold DirichletCriticalLine at hoff
+    push Not at hoff
+    obtain ⟨s, hpos, hstrip, hz, hs⟩ := hoff
+    obtain ⟨T, g, hg, hneg⟩ := primitiveNegativeWitness q χ hp hn s hpos hstrip hs hz
+    obtain ⟨f, hsmooth, hf, hvalue⟩ :=
+      exists_smooth_negative_primitiveArithmeticValue χ hp hn hg (U := T + 1) (by linarith) hneg
+    let δ := -primitiveArithmeticValue χ hp hn (T + 1) (liftReal f) / 2
+    have hδ : 0 < δ := by dsimp [δ]; linarith
+    obtain ⟨K, hK⟩ := exists_uniform_primitiveHeightTailBudget_and_error_le
+      χ hp hn (T := T + 1) (derivativeL1Cost_nonneg (liftReal f) 1)
+      (show 0 < δ / 2 by positivity)
+    refine ⟨T + 1, f, δ, hf, hsmooth, hδ, K, ?_⟩
+    intro J hJ
+    have hpow : (2 : ℝ) ^ K ≤ (2 : ℝ) ^ J := pow_le_pow_right₀ (by norm_num) hJ
+    have htail := hK f hf hsmooth le_rfl
+    have hbudget := (primitiveHeightTailBudget_antitone
+      (sourceCountConstant_nonneg χ) (by norm_num : (0 : ℝ) ≤ 3) (liftReal f) (T + 1) hJ).trans htail.1
+    have herror := htail.2 ((2 : ℝ) ^ J - 1) (by linarith)
+    dsimp [δ] at hbudget herror ⊢
+    linarith [(abs_le.mp herror).1]
+  · rintro ⟨T, f, δ, hf, hsmooth, hδ, K, hK⟩
+    exact not_dirichletCriticalLine_of_negativeDyadicHeightCertificate χ hp hn hf hsmooth K
+      ((hK K le_rfl).trans_lt (neg_lt_zero.mpr hδ))
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
