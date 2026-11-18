@@ -897,6 +897,26 @@ theorem cryptids_RH_iff_product_bound_at_square_saturation {start bound : ℕ}
     obtain ⟨slot, good⟩ := comparison k later saturated
     exact ⟨slot, (slotAccepts_iff_product_ge_pow (k ^ 2) slot).mpr good⟩
 
+/-- The saturated square criterion with an exact Chebyshev lower bound
+at the literal accepting slot. -/
+theorem cryptids_RH_iff_theta_at_square_saturation {start bound : ℕ}
+    (initial : trailingSquareRejections start ≤ bound) :
+    RiemannHypothesis ↔
+      ∀ k ≥ start, trailingSquareRejections k = bound →
+        ∃ slot : Fin 95,
+          let n := stageArgument (stageOrdinal (k ^ 2) slot)
+          primeProductCutoff n = 0 ∨
+            Real.log (primeProductCutoff n : ℝ) < Chebyshev.theta (n : ℝ) := by
+  have slot_transfer (window : ℕ) (slot : Fin 95) :
+      slotAccepts window slot = true ↔
+        let n := stageArgument (stageOrdinal window slot)
+        primeProductCutoff n = 0 ∨
+          Real.log (primeProductCutoff n : ℝ) < Chebyshev.theta (n : ℝ) :=
+    (slotAccepts_iff_safe window slot).trans
+      (safe_iff_zero_cutoff_or_log_cutoff_lt_theta (by simp [stageArgument]))
+  rw [cryptids_RH_iff_product_bound_at_square_saturation initial]
+  simp_rw [← slotAccepts_iff_product_ge_pow, slot_transfer]
+
 /-- Saturating the native rejection monitor at a prescribed cap uses
 only the states from zero through that cap. -/
 def cappedSquareRejections (cap : ℕ) : ℕ → ℕ

@@ -42,6 +42,25 @@ theorem counterexample_iff_cryptids (n : ℕ) : Counterexample n ↔ ShuniaCount
     deficit, shuniaDeficit, shuniaProd, primeProduct_eq]
   rw [offsetCount_eq]
 
+/-- Exact Chebyshev threshold for the original checker. A zero cutoff
+passes because the prime product is positive. At a positive cutoff,
+equality of the logarithms is a rejection. -/
+theorem safe_iff_zero_cutoff_or_log_cutoff_lt_theta {n : ℕ} (hn : 2 ≤ n) :
+    ¬ ShuniaCounterexample n ↔ primeProductCutoff n = 0 ∨
+      Real.log (primeProductCutoff n : ℝ) < Chebyshev.theta (n : ℝ) := by
+  rw [← counterexample_iff_cryptids, safe_iff_primeProductCutoff_lt hn, primeProduct_eq]
+  have product_pos := Riemann120Analytic.primorial_pos n
+  by_cases zero : primeProductCutoff n = 0
+  · simp [zero, product_pos]
+  · have cutoff_pos : (0 : ℝ) < (primeProductCutoff n : ℝ) := by
+      exact_mod_cast Nat.pos_of_ne_zero zero
+    have product_pos_real : (0 : ℝ) < (Riemann120.primorial n : ℝ) := by
+      exact_mod_cast product_pos
+    rw [or_iff_right zero, ← Riemann120Analytic.log_primorial_eq_theta,
+      Real.log_lt_log_iff cutoff_pos product_pos_real]
+    exact_mod_cast (Iff.rfl : primeProductCutoff n < Riemann120.primorial n ↔
+      primeProductCutoff n < Riemann120.primorial n)
+
 theorem search_detects_cryptids_halt :
     (∃ count, (search count).Nonempty) ↔ Halts Riemann95.candidate := by
   rw [search_complete, Riemann95.halts_candidate_iff_counterexample]

@@ -185,6 +185,32 @@ theorem safe_succ_iff_previous_product {n : ℕ} (hn : 1 ≤ n) :
   rw [safe_iff_product_ge_pow (by omega : 2 ≤ n + 1)]
   simpa only [Nat.add_zero, Nat.add_sub_cancel] using successor_product_margin_iff n 0
 
+/-- The strict lower cutoff on the original prime product for a literal
+checker argument. The cutoff is tested only at arguments at least two. -/
+def primeProductCutoff (n : ℕ) : ℕ :=
+  (n ^ (n - threshold n) + (n - 2)) / ((n - 1) * n.factorial)
+
+/-- Integer division removes the factorial multiplier from the exact
+checker comparison, retaining its strict boundary. -/
+theorem safe_iff_primeProductCutoff_lt {n : ℕ} (hn : 2 ≤ n) :
+    ¬ Counterexample n ↔ primeProductCutoff n < primeProduct n := by
+  have denominator_pos : 0 < (n - 1) * n.factorial :=
+    Nat.mul_pos (by omega) (Nat.factorial_pos _)
+  have product_pos : 1 ≤ n.factorial * primeProduct n :=
+    Nat.mul_pos (Nat.factorial_pos _) (primeProduct_pos _)
+  have restored :
+      (n - 1) * (n.factorial * primeProduct n - 1) + (n - 1) =
+        primeProduct n * ((n - 1) * n.factorial) := by
+    calc
+      _ = (n - 1) * (n.factorial * primeProduct n - 1) + (n - 1) * 1 := by
+        rw [Nat.mul_one]
+      _ = (n - 1) * (n.factorial * primeProduct n) := by
+        rw [← Nat.mul_add, Nat.sub_add_cancel product_pos]
+      _ = _ := by ac_rfl
+  rw [safe_iff_product_ge_pow hn, primeProductCutoff,
+    Nat.div_lt_iff_lt_mul denominator_pos, ← restored]
+  omega
+
 def stageArgument (stage : ℕ) : ℕ := stage + 2
 
 def stageOrdinal (window : ℕ) (slot : Fin 95) : ℕ := 95 * window + slot.val
