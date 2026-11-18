@@ -147,6 +147,44 @@ theorem safe_iff_product_ge_pow {n : ℕ} (hn : 2 ≤ n) :
       omega
     omega
 
+/-- The successor's product comparison with an arbitrary additive margin.
+The predecessor contributes its factorial and prime product. The successor
+contributes one factor from the factorial and an extra factor exactly at
+primes. The bound uses the successor's own base and clock. -/
+theorem successor_product_margin_iff (n margin : ℕ) :
+    (n + 1) ^ (n + 1 - threshold (n + 1)) + margin ≤
+      n * ((n + 1).factorial * primeProduct (n + 1) - 1) ↔
+    (n + 1) ^ (n + 1 - threshold (n + 1)) + margin + n ≤
+      n * ((n + 1) * (if Nat.Prime (n + 1) then n + 1 else 1) *
+        (n.factorial * primeProduct n)) := by
+  have product_pos : 1 ≤ (n + 1).factorial * primeProduct (n + 1) :=
+    Nat.mul_pos (Nat.factorial_pos _) (primeProduct_pos _)
+  have restored :
+      n * ((n + 1).factorial * primeProduct (n + 1) - 1) + n =
+        n * ((n + 1).factorial * primeProduct (n + 1)) := by
+    calc
+      _ = n * ((n + 1).factorial * primeProduct (n + 1) - 1) + n * 1 := by rw [Nat.mul_one]
+      _ = _ := by rw [← Nat.mul_add, Nat.sub_add_cancel product_pos]
+  have product_step : (n + 1).factorial * primeProduct (n + 1) =
+      (n + 1) * (if Nat.Prime (n + 1) then n + 1 else 1) *
+        (n.factorial * primeProduct n) := by
+    rw [Nat.factorial_succ, primeProduct]
+    split
+    · ac_rfl
+    · rw [Nat.mul_one]
+      ac_rfl
+  rw [← product_step, ← restored]
+  omega
+
+/-- Exact safety of a successor stage in terms of the predecessor's product. -/
+theorem safe_succ_iff_previous_product {n : ℕ} (hn : 1 ≤ n) :
+    ¬ Counterexample (n + 1) ↔
+      (n + 1) ^ (n + 1 - threshold (n + 1)) + n ≤
+        n * ((n + 1) * (if Nat.Prime (n + 1) then n + 1 else 1) *
+          (n.factorial * primeProduct n)) := by
+  rw [safe_iff_product_ge_pow (by omega : 2 ≤ n + 1)]
+  simpa only [Nat.add_zero, Nat.add_sub_cancel] using successor_product_margin_iff n 0
+
 def stageArgument (stage : ℕ) : ℕ := stage + 2
 
 def stageOrdinal (window : ℕ) (slot : Fin 95) : ℕ := 95 * window + slot.val
