@@ -1026,6 +1026,60 @@ theorem exactRoot_iff_terminal_chain_and_shortcuts {V : Type*} [Fintype V]
       simpa only [List.drop_zero, rootEq] using builds n 0 (Nat.zero_add n)
     exact ⟨covers, e, rootEq, edges⟩
 
+/-- A terminal chain fixes the cut coordinates: an indexing carrying
+its consecutive edges agrees with any indexing in which all edges advance. -/
+theorem terminal_cut_coordinates_unique {V : Type*}
+    (G : LabeledGraph V Read) {n : ℕ} {word : List Read} (size : word.length = n)
+    (e f : Fin (n + 1) ≃ V)
+    (chain : ∀ (k : Fin n) (a : Read), word[k.val]? = some a →
+      G.edge (e k.castSucc) a (e k.succ))
+    (forward : ∀ (i j : Fin (n + 1)) (a : Read), G.edge (f i) a (f j) → i < j) :
+    e = f := by
+  have increasing : StrictMono (fun i => f.symm (e i)) := by
+    apply Fin.strictMono_iff_lt_succ.mpr
+    intro k
+    have inWord : k.val < word.length := size.symm ▸ k.isLt
+    have edge := chain k (word[k.val]'inWord) (List.getElem?_eq_getElem inWord)
+    have transported : G.edge (f (f.symm (e k.castSucc))) (word[k.val]'inWord)
+        (f (f.symm (e k.succ))) := by simpa only [f.apply_symm_apply] using edge
+    exact forward _ _ _ transported
+  apply Equiv.ext
+  intro i
+  apply f.symm.injective
+  rw [f.symm_apply_apply]
+  exact increasing.apply_eq
+
+/-- In cut coordinates from the terminal classification, rooted labeled
+isomorphism is exactly equality of the labeled edge relations. -/
+theorem terminal_rooted_iso_iff_same_cut_edges {V W : Type*}
+    (G : LabeledGraph V Read) (H : LabeledGraph W Read) (rootG : V) (rootH : W)
+    {n : ℕ} {word : List Read} (size : word.length = n)
+    (e : Fin (n + 1) ≃ V) (f : Fin (n + 1) ≃ W)
+    (rootEqG : e ⟨0, Nat.zero_lt_succ n⟩ = rootG)
+    (rootEqH : f ⟨0, Nat.zero_lt_succ n⟩ = rootH)
+    (chain : ∀ (k : Fin n) (a : Read), word[k.val]? = some a →
+      G.edge (e k.castSucc) a (e k.succ))
+    (forward : ∀ (i j : Fin (n + 1)) (a : Read), H.edge (f i) a (f j) → i < j) :
+    (∃ iso : V ≃ W, iso rootG = rootH ∧ ∀ (s t : V) (a : Read),
+      G.edge s a t ↔ H.edge (iso s) a (iso t)) ↔
+      ∀ (i j : Fin (n + 1)) (a : Read), G.edge (e i) a (e j) ↔ H.edge (f i) a (f j) := by
+  constructor
+  · rintro ⟨iso, _, preserves⟩
+    have normalized : e.trans iso = f :=
+      terminal_cut_coordinates_unique H size (e.trans iso) f
+        (fun k a label => (preserves _ _ a).mp (chain k a label)) forward
+    have atCut (i : Fin (n + 1)) : iso (e i) = f i :=
+      congrArg (fun cuts : Fin (n + 1) ≃ W => cuts i) normalized
+    intro i j a
+    simpa only [atCut] using preserves (e i) (e j) a
+  · intro same
+    refine ⟨e.symm.trans f, ?_, ?_⟩
+    · change f (e.symm rootG) = rootH
+      rw [← rootEqG, e.symm_apply_apply, rootEqH]
+    · intro s t a
+      change G.edge s a t ↔ H.edge (f (e.symm s)) a (f (e.symm t))
+      simpa only [e.apply_symm_apply] using same (e.symm s) (e.symm t) a
+
 private theorem proper_prefix_of_frontier_is_prefix
     {word bad pre : List Read} (member : bad ∈ terminalFrontier word)
     (pref : pre <+: bad) (short : pre.length < bad.length) : pre <+: word := by
