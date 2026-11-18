@@ -90,10 +90,12 @@ theorem readSectionBit64_eq_none_iff (buffer : Array UInt8) (position sectionEnd
   · rw [ite_eq_right (fun h => hSection (UInt64.lt_iff_toNat_lt.1 h))]
     exact ⟨fun _ => Or.inl (Nat.le_of_not_gt hSection), fun _ => rfl⟩
 
-private theorem readSectionBit64_next (buffer : Array UInt8) (position sectionEnd next : UInt64)
+private theorem readSectionBit64_result (buffer : Array UInt8) (position sectionEnd next : UInt64)
     (bit : Bool) (hRead : readSectionBit64 buffer position sectionEnd = some (bit, next)) :
     next.toNat = position.toNat + 1 ∧ position.toNat < sectionEnd.toNat ∧
-      position.toNat < 8 * buffer.size := by
+      position.toNat < 8 * buffer.size ∧
+      buffer[position.toNat / 8]?.map (fun byte => byte.toNat.testBit (7 - position.toNat % 8)) =
+        some bit := by
   have hRoom : ¬ (sectionEnd.toNat ≤ position.toNat ∨ 8 * buffer.size ≤ position.toNat) := by
     intro h
     have hNone := (readSectionBit64_eq_none_iff _ _ _).2 h
@@ -105,7 +107,8 @@ private theorem readSectionBit64_next (buffer : Array UInt8) (position sectionEn
   have hIndex : position.toNat / 8 < buffer.size := by omega
   rw [hRead, Option.map_some, ite_eq_left hSection, getElem?_pos buffer _ hIndex,
     Option.map_some, Option.some.injEq, Prod.mk.injEq] at hRefines
-  exact ⟨hRefines.2, hSection, hBacking⟩
+  refine ⟨hRefines.2, hSection, hBacking, ?_⟩
+  rw [getElem?_pos buffer _ hIndex, Option.map_some, hRefines.1]
 
 /-- Read exactly `count` bits in wire order within the declared section.
 An empty request consumes nothing, even when there is no backing byte. -/
@@ -136,8 +139,8 @@ theorem readSectionBits64_spec (buffer : Array UInt8) (sectionEnd : UInt64)
       omega
     | some first =>
       obtain ⟨bit, next⟩ := first
-      obtain ⟨hNext, hSection, hBacking⟩ :=
-        readSectionBit64_next buffer position sectionEnd next bit hRead
+      obtain ⟨hNext, hSection, hBacking, _⟩ :=
+        readSectionBit64_result buffer position sectionEnd next bit hRead
       have hTail := ih next
       cases hReadTail : readSectionBits64 buffer sectionEnd count next with
       | none =>
@@ -174,5 +177,58 @@ theorem readSectionBits64_eq_none_iff (buffer : Array UInt8) (sectionEnd : UInt6
     · intro h
       have := hBounds h.1
       omega
+
+/-- Each bit of a successful section read agrees with the MSB-first backing
+observation at its absolute wire position. -/
+theorem readSectionBits64_getElem? (buffer : Array UInt8) (sectionEnd : UInt64)
+    (count : Nat) (position rest : UInt64) (bits : List Bool)
+    (hRead : readSectionBits64 buffer sectionEnd count position = some (bits, rest))
+    (index : Nat) (hIndex : index < count) :
+    bits[index]? = buffer[(position.toNat + index) / 8]?.map
+      (fun byte => byte.toNat.testBit (7 - (position.toNat + index) % 8)) := by
+  induction count generalizing position rest bits index with
+  | zero => omega
+  | succ count ih =>
+    cases hFirst : readSectionBit64 buffer position sectionEnd with
+    | none => simp [readSectionBits64, hFirst] at hRead
+    | some first =>
+      obtain ⟨bit, next⟩ := first
+      obtain ⟨hNext, _, _, hBit⟩ :=
+        readSectionBit64_result buffer position sectionEnd next bit hFirst
+      cases hTail : readSectionBits64 buffer sectionEnd count next with
+      | none => simp [readSectionBits64, hFirst, hTail] at hRead
+      | some tail =>
+        obtain ⟨tailBits, tailRest⟩ := tail
+        simp [readSectionBits64, hFirst, hTail] at hRead
+        obtain ⟨rfl, rfl⟩ := hRead
+        cases index with
+        | zero => simpa using hBit.symm
+        | succ index =>
+          have hPosition : position.toNat + (index + 1) = next.toNat + index := by omega
+          rw [List.getElem?_cons_succ, hPosition]
+          exact ih next tailRest tailBits hTail index (by omega)
+
+/-- A successful packed read returns the exact contiguous slice of any
+logical bit list that represents the entire backing array in MSB-first order. -/
+theorem readSectionBits64_eq_slice (buffer : Array UInt8) (sectionEnd : UInt64)
+    (count : Nat) (position rest : UInt64) (bits logical : List Bool)
+    (hLength : logical.length = 8 * buffer.size)
+    (hLogical : ∀ index < logical.length, logical[index]? =
+      buffer[index / 8]?.map (fun byte => byte.toNat.testBit (7 - index % 8)))
+    (hRead : readSectionBits64 buffer sectionEnd count position = some (bits, rest)) :
+    bits = (logical.drop position.toNat).take count := by
+  have hSpec := readSectionBits64_spec buffer sectionEnd count position
+  rw [hRead] at hSpec
+  obtain ⟨hCount, hRest, hBounds⟩ := hSpec
+  apply List.ext_getElem?
+  intro index
+  by_cases hIndex : index < count
+  · have hBacking := (hBounds (by omega)).2
+    have hInside : position.toNat + index < logical.length := by omega
+    rw [List.getElem?_take_of_lt hIndex, List.getElem?_drop, hLogical _ hInside]
+    exact readSectionBits64_getElem? buffer sectionEnd count position rest bits hRead index hIndex
+  · have hSlice := List.length_take_le count (logical.drop position.toNat)
+    rw [getElem?_neg bits index (by omega),
+      getElem?_neg ((logical.drop position.toNat).take count) index (by omega)]
 
 end GRWTSK.ComputerScience.BinaryArithmeticCoder
