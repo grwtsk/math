@@ -271,6 +271,32 @@ theorem determinesWindowReadout_iff_onePrimeImaginary {Obs : Type*}
     rw [signedWindowValue_sub_of_same_onePrimeReal χ lo hi (real_fixed f g same),
       imag f g same, sub_self, mul_zero]
 
+/-- An approximate signed readout and an exact real sample give an
+approximation to the imaginary sample. The factor relating their errors is
+exact, so it also measures the loss when the character phase is small. -/
+theorem onePrime_imaginary_error_from_signedWindowValue
+    (χ : DirichletCharacter ℂ q) (lo : Real.log 2 < 2 * A) (hi : 2 * A ≤ Real.log 3)
+    (phase : (χ (2 : ℕ)).im ≠ 0) (f : WindowTest A) (estimate : ℝ) :
+    let c := correlation f.1 (Real.log 2)
+    let w := 2 * primeWeight 2
+    let β := (χ (2 : ℕ)).im
+    let recovered := ((χ (2 : ℕ)).re * c.re - estimate / w) / β
+    |recovered - c.im| = |estimate - signedWindowValue χ A f.1| / (w * |β|) := by
+  intro c w β recovered
+  have weight : 0 < primeWeight 2 := by
+    rw [primeWeight, ArithmeticFunction.vonMangoldt_apply_prime Nat.prime_two]
+    exact div_pos (Real.log_pos (by norm_num)) (Real.sqrt_pos.2 (by norm_num))
+  have hw : 0 < w := mul_pos (by norm_num) weight
+  have hβ : β ≠ 0 := phase
+  have gap : recovered - c.im =
+      (signedWindowValue χ A f.1 - estimate) / (w * β) := by
+    rw [signedWindowValue_eq_onePrime χ f.1 lo hi]
+    change (((χ (2 : ℕ)).re * c.re - estimate / w) / β) - c.im =
+      (w * ((χ (2 : ℕ)).re * c.re - β * c.im) - estimate) / (w * β)
+    field_simp [hw.ne', hβ]
+    ring
+  rw [gap, abs_div, abs_mul, abs_of_pos hw, abs_sub_comm]
+
 /-- The real reading after rotating by `-i` measures the signed imaginary
 correlation at the original heat gain. -/
 theorem heatWaveReadout_negI_re (s rate : ℝ) (z : ℂ) :
