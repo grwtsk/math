@@ -95,6 +95,52 @@ theorem reduceExp_add_right (μ p : ℕ) (hp : 0 < p) (n m : ℕ) :
     _ = reduceExp μ p hp (m + n) := reduceExp_add_left μ p hp m n
     _ = reduceExp μ p hp (n + m) := by rw [Nat.add_comm]
 
+private theorem equalTails_reduceExp
+    {x : ℕ → A} {μ p : ℕ} (h : LeastLassoParams x μ p) (n : ℕ) :
+    EqualTails x n (reduceExp μ p h.pos_p n) := by
+  by_cases hn : n < μ
+  · simp only [reduceExp, ite_eq_left hn]
+    exact fun _ => rfl
+  · let r := μ + (n - μ) % p
+    let q := (n - μ) / p
+    have hdecomp : r + q * p = n := by
+      dsimp [r, q]
+      rw [Nat.add_assoc, Nat.mul_comm ((n - μ) / p) p, Nat.mod_add_div,
+        Nat.add_sub_of_le (Nat.le_of_not_gt hn)]
+    have hiterate (m : ℕ) (hm : μ ≤ m) (t : ℕ) : x (m + t * p) = x m := by
+      induction t with
+      | zero => simp
+      | succ t ih =>
+          rw [Nat.succ_mul, ← Nat.add_assoc, h.periodic (m + t * p) (by omega), ih]
+    simp only [reduceExp, ite_eq_right hn]
+    intro k
+    change x (n + k) = x (r + k)
+    calc
+      x (n + k) = x ((r + k) + q * p) := congrArg x (by omega)
+      _ = x (r + k) := hiterate (r + k) (by dsimp [r]; omega) q
+
+/-- The normal exponent identifies exactly the complete label tail of
+a trace with certified least lasso parameters. -/
+theorem equalTails_iff_reduceExp_eq
+    {x : ℕ → A} {μ p : ℕ} (h : LeastLassoParams x μ p) (i j : ℕ) :
+    EqualTails x i j ↔ reduceExp μ p h.pos_p i = reduceExp μ p h.pos_p j := by
+  have hi := equalTails_reduceExp h i
+  have hj := equalTails_reduceExp h j
+  constructor
+  · intro heq
+    have hnormal : EqualTails x (reduceExp μ p h.pos_p i) (reduceExp μ p h.pos_p j) :=
+      fun k => (hi k).symm.trans ((heq k).trans (hj k))
+    rcases lt_trichotomy (reduceExp μ p h.pos_p i) (reduceExp μ p h.pos_p j) with
+      hlt | heq | hgt
+    · exact False.elim
+        (h.distinct_cuts _ _ hlt (reduceExp_lt μ p h.pos_p j) hnormal)
+    · exact heq
+    · exact False.elim
+        (h.distinct_cuts _ _ hgt (reduceExp_lt μ p h.pos_p i) (fun k => (hnormal k).symm))
+  · intro heq k
+    rw [heq] at hi
+    exact (hi k).trans (hj k).symm
+
 /-- Elements are the DISTINCT normal powers s^0,...,s^(μ+p-1).
 The positive period proof is retained in the type. -/
 @[ext] structure CyclicLassoMonoid (μ p : ℕ) (hp : 0 < p) where
@@ -213,6 +259,21 @@ theorem eq_generator_pow (a : CyclicLassoMonoid μ p hp) :
   rw [generator_pow_val]
   exact reduceExp_id μ p hp a.exp.isLt
 
+/-- Powers of the time-shift generator agree exactly at indices with
+the same complete future label trace. -/
+theorem generator_pow_eq_iff_equalTails
+    {x : ℕ → A} (h : LeastLassoParams x μ p) (i j : ℕ) :
+    (generator μ p h.pos_p) ^ i = (generator μ p h.pos_p) ^ j ↔ EqualTails x i j := by
+  rw [equalTails_iff_reduceExp_eq h]
+  constructor
+  · intro heq
+    simpa only [generator_pow_val] using
+      congrArg (fun m : CyclicLassoMonoid μ p h.pos_p => m.exp.val) heq
+  · intro heq
+    apply CyclicLassoMonoid.ext
+    apply Fin.ext
+    simpa only [generator_pow_val] using heq
+
 end CyclicLassoMonoid
 
 /-- Forget the exponent wrapper without forgetting the distinguished
@@ -238,6 +299,17 @@ def monoidCayleyGraph (x : ℕ → A) (μ p : ℕ) (hp : 0 < p) :
   edge m a n :=
     a = x m.exp.val ∧
       n = m * CyclicLassoMonoid.generator μ p hp
+
+/-- At every time index, the edge between successive generator powers
+carries the original trace label at that index. -/
+theorem monoidCayleyGraph_pow_edge
+    {x : ℕ → A} {μ p : ℕ} (h : LeastLassoParams x μ p) (n : ℕ) :
+    (monoidCayleyGraph x μ p h.pos_p).edge
+      ((CyclicLassoMonoid.generator μ p h.pos_p) ^ n) (x n)
+      ((CyclicLassoMonoid.generator μ p h.pos_p) ^ (n + 1)) := by
+  refine ⟨?_, pow_succ _ _⟩
+  rw [CyclicLassoMonoid.generator_pow_val]
+  simpa only [Nat.add_zero] using equalTails_reduceExp h n 0
 
 /-- The quotient monoid action is exactly the existing canonical
 lasso successor, INCLUDING the last wrap-around edge. -/
