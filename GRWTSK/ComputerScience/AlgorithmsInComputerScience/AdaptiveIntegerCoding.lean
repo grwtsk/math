@@ -72,6 +72,13 @@ def update (cfg : Config) (s : State) (byte : Fin 256) : State :=
       if cfg.threshold ≤ bumped.sum then bumped.map rescaleCount else bumped
     ⟨nextPhase, weights⟩
 
+/-- The post-increment table passed to floor-halving at a rescale event. -/
+def rescaleInput (cfg : Config) (s : State) (byte : Fin 256) : Option (List Nat) :=
+  if s.phase + 1 = cfg.resetEvery then none
+  else
+    let bumped := incrementAt (binOf cfg byte) s.weights
+    if cfg.threshold ≤ bumped.sum then some bumped else none
+
 /-- Every escaped byte updates the same bin, regardless of its literal value. -/
 theorem update_eq_of_same_bin (cfg : Config) (s : State) (a b : Fin 256)
     (hbin : binOf cfg a = binOf cfg b) : update cfg s a = update cfg s b := by
@@ -110,6 +117,17 @@ private theorem incrementAt_spec (ns : List Nat) (i : Nat) (hi : i < ns.length)
       have h := ih i (by simpa using hi) ht
       have hn := hp n (List.mem_cons_self)
       simpa [incrementAt, h.1, h.2.2, hn, Nat.add_assoc] using h.2.1
+
+private theorem incrementByte_spec (cfg : Config) (s : State) (byte : Fin 256)
+    (hs : ValidState cfg s) :
+    let bumped := incrementAt (binOf cfg byte) s.weights
+    bumped.length = cfg.direct + 1 ∧ (∀ n ∈ bumped, 0 < n) ∧
+      bumped.sum = s.weights.sum + 1 := by
+  have hbin : binOf cfg byte < s.weights.length := by
+    rw [hs.count_length]
+    exact Nat.lt_succ_of_le (Nat.min_le_right _ _)
+  obtain ⟨hlen, hpos, hsum⟩ := incrementAt_spec s.weights (binOf cfg byte) hbin hs.count_pos
+  exact ⟨hlen.trans hs.count_length, hpos, hsum⟩
 
 private theorem rescale_sum (ns : List Nat) (hp : ∀ n ∈ ns, 0 < n) :
     (ns.map rescaleCount).sum ≤ ns.sum ∧
@@ -176,17 +194,48 @@ theorem rescale_probability_bound_sharp :
   simp only [List.map_cons, List.map_replicate, List.sum_cons, List.sum_replicate_nat]
   rfl
 
+/-- In a valid state, a byte triggers rescaling exactly when its pending
+increment reaches the threshold and the phase does not call for a reset. -/
+theorem rescaleInput_isSome_iff (cfg : Config) (s : State) (byte : Fin 256)
+    (hs : ValidState cfg s) :
+    (rescaleInput cfg s byte).isSome = true ↔
+      s.phase + 1 ≠ cfg.resetEvery ∧ s.weights.sum + 1 = cfg.threshold := by
+  have hsum := (incrementByte_spec cfg s byte hs).2.2
+  have hle : s.weights.sum + 1 ≤ cfg.threshold := hs.total_lt
+  by_cases hr : s.phase + 1 = cfg.resetEvery
+  · simp [rescaleInput, hr]
+  · have hthreshold : cfg.threshold ≤ s.weights.sum + 1 ↔
+        s.weights.sum + 1 = cfg.threshold :=
+      ⟨Nat.le_antisymm hle, fun h => h ▸ Nat.le_refl _⟩
+    by_cases h : s.weights.sum + 1 = cfg.threshold <;>
+      simp [rescaleInput, hr, hsum, hthreshold, h]
+
+/-- A recorded rescale exposes the actual before-table, and the actual
+successor weights are exactly its floor-halved counts. -/
+theorem rescaleInput_spec (cfg : Config) (s : State) (byte : Fin 256)
+    (hs : ValidState cfg s) (counts : List Nat)
+    (hevent : rescaleInput cfg s byte = some counts) :
+    counts.length = cfg.direct + 1 ∧ (∀ n ∈ counts, 0 < n) ∧
+      counts.sum = cfg.threshold ∧ (update cfg s byte).weights = counts.map rescaleCount := by
+  have hor := (rescaleInput_isSome_iff cfg s byte hs).mp (by simp [hevent])
+  obtain ⟨hlen, hpos, hsum⟩ := incrementByte_spec cfg s byte hs
+  have htotal : (incrementAt (binOf cfg byte) s.weights).sum = cfg.threshold :=
+    hsum.trans hor.2
+  have hscale : cfg.threshold ≤ (incrementAt (binOf cfg byte) s.weights).sum := by
+    exact htotal ▸ Nat.le_refl _
+  have hcounts : incrementAt (binOf cfg byte) s.weights = counts := by
+    simpa only [rescaleInput, ite_eq_right hor.1, ite_eq_left hscale, Option.some.injEq] using hevent
+  subst counts
+  exact ⟨hlen, hpos, htotal, by simp [update, hor.1, hscale]⟩
+
 theorem update_valid (cfg : Config) (s : State) (byte : Fin 256)
     (hs : ValidState cfg s) : ValidState cfg (update cfg s byte) := by
   by_cases hr : s.phase + 1 = cfg.resetEvery
   · simpa [update, hr] using initial_valid cfg
   · have hphase : s.phase + 1 < cfg.resetEvery := by have := hs.phase_lt; omega
-    have hbin : binOf cfg byte < s.weights.length := by
-      rw [hs.count_length]
-      exact Nat.lt_succ_of_le (Nat.min_le_right _ _)
     let bumped := incrementAt (binOf cfg byte) s.weights
-    have ⟨hlen, hpos, hsum⟩ := incrementAt_spec s.weights (binOf cfg byte) hbin hs.count_pos
-    change bumped.length = s.weights.length at hlen
+    have ⟨hlen, hpos, hsum⟩ := incrementByte_spec cfg s byte hs
+    change bumped.length = cfg.direct + 1 at hlen
     change ∀ n ∈ bumped, 0 < n at hpos
     change bumped.sum = s.weights.sum + 1 at hsum
     have hbound : bumped.sum ≤ cfg.threshold := by have := hs.total_lt; omega
@@ -196,17 +245,17 @@ theorem update_valid (cfg : Config) (s : State) (byte : Fin 256)
     by_cases hc : cfg.threshold ≤ bumped.sum
     · rw [ite_eq_left hc]
       have hlarge : bumped.length < bumped.sum := by
-        rw [hlen, hs.count_length]
+        rw [hlen]
         exact Nat.lt_of_lt_of_le cfg.countRoom hc
       have hrescaled : (bumped.map rescaleCount).sum < cfg.threshold :=
         Nat.lt_of_lt_of_le ((rescale_sum bumped hpos).2 hlarge) hbound
-      refine ⟨hphase, by simp [hlen, hs.count_length], ?_, hrescaled⟩
+      refine ⟨hphase, by simp [hlen], ?_, hrescaled⟩
       intro n hn
       rcases List.mem_map.mp hn with ⟨m, _, rfl⟩
       unfold rescaleCount
       omega
     · rw [ite_eq_right hc]
-      exact ⟨hphase, hlen.trans hs.count_length, hpos, Nat.lt_of_not_ge hc⟩
+      exact ⟨hphase, hlen, hpos, Nat.lt_of_not_ge hc⟩
 
 theorem replay_valid (cfg : Config) (s : State) (xs : List (Fin 256))
     (hs : ValidState cfg s) : ValidState cfg (xs.foldl (update cfg) s) := by
