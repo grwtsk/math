@@ -96,4 +96,53 @@ theorem tendstoLocallyUniformlyOn_of_weighted_error {D : ℕ → ℂ → ℂ}
     (hLimit |w.im| (abs_nonneg _) hwStrip)
   exact hUniform.mono fun _ hz => hMax hz
 
+/-- A measurable log profile with integrable weighted norm has an
+integrable Fourier integrand at each frequency in the closed substrip. -/
+theorem integrable_logFourierIntegrand {a : ℝ} {f : ℝ → ℂ}
+    (hf : AEStronglyMeasurable f volume)
+    (hWeight : Integrable (fun t => Real.exp (a * |t|) * ‖f t‖))
+    {z : ℂ} (hz : |z.im| ≤ a) :
+    Integrable (fun t : ℝ => Complex.exp (-Complex.I * z * (t : ℂ)) * f t) := by
+  have hKernel : Continuous (fun t : ℝ => Complex.exp (-Complex.I * z * (t : ℂ))) :=
+    Complex.continuous_exp.comp (continuous_const.mul Complex.continuous_ofReal)
+  apply hWeight.mono' (hKernel.aestronglyMeasurable.mul hf)
+  exact Eventually.of_forall fun t => by
+    rw [Pi.mul_apply, norm_mul]
+    exact mul_le_mul_of_nonneg_right (norm_logFourierKernel_le hz t) (norm_nonneg _)
+
+/-- Compare two transforms defined by their log profiles. Weighted decay
+of the difference gives the strip limit without a separate assumed
+transform-of-the-difference identity. -/
+theorem tendstoLocallyUniformlyOn_logFourier_of_weighted_sub
+    (p : ℕ → ℝ → ℂ) (q : ℝ → ℂ)
+    (hp : ∀ n, AEStronglyMeasurable (p n) volume)
+    (hq : AEStronglyMeasurable q volume)
+    (hP : ∀ a : ℝ, 0 ≤ a → a < 1 / 2 → ∀ n,
+      Integrable (fun t => Real.exp (a * |t|) * ‖p n t‖))
+    (hQ : ∀ a : ℝ, 0 ≤ a → a < 1 / 2 →
+      Integrable (fun t => Real.exp (a * |t|) * ‖q t‖))
+    (hLimit : ∀ a : ℝ, 0 ≤ a → a < 1 / 2 →
+      Tendsto (fun n => ∫ t : ℝ, Real.exp (a * |t|) * ‖p n t - q t‖) atTop (𝓝 0)) :
+    TendstoLocallyUniformlyOn
+      (fun n z => ∫ t : ℝ, Complex.exp (-Complex.I * z * (t : ℂ)) * p n t)
+      (fun z => ∫ t : ℝ, Complex.exp (-Complex.I * z * (t : ℂ)) * q t)
+      atTop {z : ℂ | |z.im| < 1 / 2} := by
+  apply tendstoLocallyUniformlyOn_of_weighted_error (fun n t => p n t - q t) ?_ ?_ hLimit
+  · intro a ha ha' n
+    have hWeight : Continuous (fun t : ℝ => Real.exp (a * |t|)) :=
+      Real.continuous_exp.comp (continuous_const.mul continuous_abs)
+    apply ((hP a ha ha' n).add (hQ a ha ha')).mono'
+      (hWeight.aestronglyMeasurable.mul ((hp n).sub hq).norm)
+    exact Eventually.of_forall fun t => by
+      change |Real.exp (a * |t|) * ‖p n t - q t‖| ≤
+        Real.exp (a * |t|) * ‖p n t‖ + Real.exp (a * |t|) * ‖q t‖
+      rw [abs_of_nonneg (mul_nonneg (Real.exp_nonneg _) (norm_nonneg _)), ← mul_add]
+      exact mul_le_mul_of_nonneg_left (norm_sub_le _ _) (Real.exp_nonneg _)
+  · intro n z hz
+    have hpz := integrable_logFourierIntegrand (hp n)
+      (hP |z.im| (abs_nonneg _) hz n) (z := z) le_rfl
+    have hqz := integrable_logFourierIntegrand hq
+      (hQ |z.im| (abs_nonneg _) hz) (z := z) le_rfl
+    simp only [mul_sub, integral_sub hpz hqz]
+
 end GRWTSK.NumberTheory.Zeta.XiWeightedFourierReturn
