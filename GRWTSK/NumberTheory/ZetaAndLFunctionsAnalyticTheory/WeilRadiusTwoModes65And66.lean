@@ -250,7 +250,7 @@ private theorem block_lower (a b : ℝ) :
   rw [← trial_margin, margin_eq, trial_mass]
   linarith only [h]
 
-private theorem diagonal65_pos : 0 < diagonal65 := by
+theorem diagonal65_pos : 0 < diagonal65 := by
   have h := block_lower 1 0
   norm_num at h
   linarith only [h]
