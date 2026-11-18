@@ -58,7 +58,8 @@ private def incrementAt : Nat → List Nat → List Nat
   | 0, n :: ns => (n + 1) :: ns
   | i + 1, n :: ns => n :: incrementAt i ns
 
-private def rescaleCount (n : Nat) : Nat := max 1 (n / 2)
+/-- Floor-halving with a minimum count of one. -/
+def rescaleCount (n : Nat) : Nat := max 1 (n / 2)
 
 /-- Update once after emitting or successfully recovering a whole byte. -/
 def update (cfg : Config) (s : State) (byte : Fin 256) : State :=
@@ -126,6 +127,54 @@ private theorem rescale_sum (ns : List Nat) (hp : ∀ n ∈ ns, 0 < n) :
       simpa using Nat.add_lt_add_of_lt_of_le hc' hle
     · have htail : ns.length < ns.sum := by simp at hlen; omega
       simpa using Nat.add_lt_add_of_le_of_lt hc (hlt htail)
+
+private theorem twice_rescale_sum_le (ns : List Nat) (hp : ∀ n ∈ ns, 0 < n) :
+    2 * (ns.map rescaleCount).sum ≤ ns.sum + ns.length := by
+  induction ns with
+  | nil => simp
+  | cons n ns ih =>
+    have ht := ih (fun k hk => hp k (List.mem_cons_of_mem n hk))
+    have hn : 2 * rescaleCount n ≤ n + 1 := by
+      have := hp n List.mem_cons_self
+      unfold rescaleCount
+      omega
+    simp only [List.map_cons, List.sum_cons, List.length_cons]
+    omega
+
+/-- Rescaling a positive table with at most 256 bins keeps each normalized
+probability at least 43/128 of its value immediately before rescaling. The
+inequality is written by cross-multiplication of the old and new totals. -/
+theorem rescale_probability_bound (ns : List Nat) (hsize : ns.length ≤ 256)
+    (hpos : ∀ n ∈ ns, 0 < n) (n : Nat) (hn : n ∈ ns) :
+    43 * n * (ns.map rescaleCount).sum ≤ 128 * rescaleCount n * ns.sum := by
+  by_cases hthree : n = 3
+  · subst n
+    obtain ⟨ls, rs, rfl⟩ := List.mem_iff_append.mp hn
+    have hls : ∀ n ∈ ls, 0 < n := fun n hn => hpos n (List.mem_append_left _ hn)
+    have hrs : ∀ n ∈ rs, 0 < n :=
+      fun n hn => hpos n (List.mem_append_right _ (List.mem_cons_of_mem _ hn))
+    have hl := (rescale_sum ls hls).1
+    have hr := (rescale_sum rs hrs).1
+    have hl2 := twice_rescale_sum_le ls hls
+    have hr2 := twice_rescale_sum_le rs hrs
+    simp only [List.map_append, List.map_cons, List.sum_append, List.sum_cons,
+      List.length_append, List.length_cons] at hsize ⊢
+    have hscale : rescaleCount 3 = 1 := rfl
+    simp only [hscale]
+    omega
+  · have hlocal : 43 * n ≤ 128 * rescaleCount n := by
+      have := hpos n hn
+      unfold rescaleCount
+      omega
+    exact Nat.le_trans (Nat.mul_le_mul_left _ (rescale_sum ns hpos).1)
+      (Nat.mul_le_mul_right _ hlocal)
+
+/-- One count of three and 255 counts of one attains the bound at the count of three. -/
+theorem rescale_probability_bound_sharp :
+    let ns := 3 :: List.replicate 255 1
+    43 * 3 * (ns.map rescaleCount).sum = 128 * rescaleCount 3 * ns.sum := by
+  simp only [List.map_cons, List.map_replicate, List.sum_cons, List.sum_replicate_nat]
+  rfl
 
 theorem update_valid (cfg : Config) (s : State) (byte : Fin 256)
     (hs : ValidState cfg s) : ValidState cfg (update cfg s byte) := by
