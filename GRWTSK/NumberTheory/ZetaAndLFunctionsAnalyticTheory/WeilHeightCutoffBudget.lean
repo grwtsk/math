@@ -339,4 +339,42 @@ theorem primitiveHeightContribution_eq_inverse_liftReal
     rw [realLiftContourWeight_conj]
     simp only [Complex.mul_re, Complex.natCast_im, zero_mul, sub_zero, Complex.conj_re]
 
+/-- The native counting envelope has the same coefficient for the inverse
+character. Inversion changes the additive Gauss-sum phase by the unit shift
+at `-1`, which has no effect on the norm. -/
+theorem sourceCountConstant_eq_inverse {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) :
+    sourceCountConstant χ⁻¹ = sourceCountConstant χ := by
+  classical
+  let ψ : AddChar (ZMod q) ℂ := ZMod.stdAddChar
+  have hstar : star (gaussSum χ ψ) = gaussSum χ⁻¹ (ψ.mulShift (-1)) := by
+    rw [star_gaussSum_eq, ψ.inv_mulShift]
+  have hshift := gaussSum_mulShift χ⁻¹ ψ (-1)
+  simp only [Units.coe_neg_one] at hshift
+  rw [← hstar] at hshift
+  have hs : (χ⁻¹ (-1)) ^ 2 = 1 := by rw [← map_pow]; simp
+  have hnorm : ‖χ⁻¹ (-1)‖ = 1 := by
+    rcases sq_eq_one_iff.mp hs with h | h <;> rw [h] <;> simp
+  have hgauss : ‖gaussSum χ⁻¹ ψ‖ = ‖gaussSum χ ψ‖ := by
+    have h := congrArg (fun z : ℂ => ‖z‖) hshift
+    simpa only [norm_mul, norm_star, hnorm, one_mul] using h.symm
+  have hroot : ‖DirichletCharacter.rootNumber χ⁻¹‖ = ‖DirichletCharacter.rootNumber χ‖ := by
+    simp only [DirichletCharacter.rootNumber, norm_div, norm_pow, Complex.norm_I, one_pow]
+    change ‖gaussSum χ⁻¹ ψ‖ / 1 / _ = ‖gaussSum χ ψ‖ / 1 / _
+    rw [hgauss]
+  unfold sourceCountConstant GRWTSK.NumberTheory.WeilNegativeWitness.farLeftGrowthConstant
+  rw [hroot]
+
+/-- The negative-certificate upper margin, including the native tail charge,
+is identical for the two members of an inverse orbit on the same real test. -/
+theorem primitiveDyadicUpperCertificate_eq_inverse
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q)
+    (hp : χ.IsPrimitive) (hpInv : (χ⁻¹).IsPrimitive) (hn : χ ≠ 1)
+    (f : ℝ → ℝ) (T : ℝ) (J : ℕ) :
+    primitiveHeightContribution χ hp (liftReal f) ((2 : ℝ) ^ J - 1) +
+      primitiveHeightTailBudget (sourceCountConstant χ) 3 (liftReal f) T J =
+    primitiveHeightContribution χ⁻¹ hpInv (liftReal f) ((2 : ℝ) ^ J - 1) +
+      primitiveHeightTailBudget (sourceCountConstant χ⁻¹) 3 (liftReal f) T J := by
+  rw [primitiveHeightContribution_eq_inverse_liftReal χ hp hpInv hn,
+    sourceCountConstant_eq_inverse χ]
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
