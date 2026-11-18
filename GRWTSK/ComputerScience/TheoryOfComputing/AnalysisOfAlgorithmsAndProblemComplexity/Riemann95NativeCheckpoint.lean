@@ -144,4 +144,50 @@ theorem runOn_append_with_checkpoint {w mid : ℕ} {c : Configuration w} {e : Co
     (runOn_append_with_handoff prefixRun (handoffView_normalizeConfiguration e).symm
       length originalTarget resumedTarget).symm
 
+/-- Move a valid checkpoint to another prime window without running the machine. -/
+def migrateCheckpoint (origin target : ℕ) (input : Bits) : Option Bits :=
+  (decodeCheckpoint origin input).map fun c => encodeCheckpoint (readdress target c)
+
+/-- Migrating an encoded checkpoint gives exactly the encoding at the new window. -/
+theorem migrateCheckpoint_encodeCheckpoint {origin : ℕ}
+    (target : ℕ) (c : Configuration origin) :
+    migrateCheckpoint origin target (encodeCheckpoint c) =
+      some (encodeCheckpoint (readdress target c)) := by
+  simp only [migrateCheckpoint, decodeCheckpoint, readRecord_writeRecord, encodeCheckpoint,
+    Option.bind_some, decodeRecord_encodeRecord, Option.map_some]
+  apply congrArg some
+  change encodeCheckpoint (readdress target (normalizeConfiguration c)) =
+    encodeCheckpoint (readdress target c)
+  exact encodeCheckpoint_eq_iff.mpr (by
+    simp only [handoffView_readdress, handoffView_normalizeConfiguration])
+
+/-- Migrating through an intermediate window gives the same result as migrating directly. -/
+theorem migrateCheckpoint_trans (origin intermediate target : ℕ) (input : Bits) :
+    (migrateCheckpoint origin intermediate input).bind
+        (migrateCheckpoint intermediate target) =
+      migrateCheckpoint origin target input := by
+  cases accepted : decodeCheckpoint origin input with
+  | none => simp [migrateCheckpoint, accepted]
+  | some c =>
+    simp only [migrateCheckpoint, accepted, Option.map_some, Option.bind_some]
+    change migrateCheckpoint intermediate target (encodeCheckpoint (readdress intermediate c)) =
+      some (encodeCheckpoint (readdress target c))
+    rw [migrateCheckpoint_encodeCheckpoint]
+    apply congrArg some
+    exact encodeCheckpoint_eq_iff.mpr (by simp only [handoffView_readdress])
+
+/-- A migrated frame can resume the same native computation from the new window.
+The outer option records checkpoint decoding and the inner one records native success. -/
+theorem runOn_migrateCheckpoint {origin : ℕ} (target : ℕ) (c : Configuration origin)
+    {original resumed : List ℕ} (length : original.length = resumed.length)
+    (originalTarget resumedTarget : ℕ) :
+    ((migrateCheckpoint origin target (encodeCheckpoint c)).bind
+        (decodeCheckpoint target)).map
+        (fun d => (runOn resumed resumedTarget d).map handoffView) =
+      some ((runOn original originalTarget c).map handoffView) := by
+  rw [migrateCheckpoint_encodeCheckpoint, Option.bind_some,
+    runOn_decodeCheckpoint_encodeCheckpoint (readdress target c) length]
+  exact congrArg some (runOn_handoffView_eq (handoffView_readdress target c)
+    rfl originalTarget originalTarget)
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine.NativeCheckpoint
