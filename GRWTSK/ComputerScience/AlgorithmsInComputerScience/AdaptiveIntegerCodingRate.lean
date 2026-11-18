@@ -2,6 +2,7 @@
 Authors: grwtsk contributors. -/
 import GRWTSK.ComputerScience.AlgorithmsInComputerScience.AdaptiveIntegerCoding
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Data.Finset.Card
 import Mathlib.Analysis.SpecialFunctions.Log.Base
 import Mathlib.Tactic.NormNum
 
@@ -171,5 +172,95 @@ theorem sum_followingRescaleLoss_le (cfg : Config) (initialState : State)
         simpa only [followingRescaleLoss, hstep, Fin.getElem_fin, List.getElem?_eq_getElem hindex,
           Option.getD_some, bin, before, byte, next] using hcost
     _ = _ := by simp
+
+private theorem replay_phase_eq_mod (cfg : Config) (s : State) (xs : List (Fin 256))
+    (hs : ValidState cfg s) :
+    (xs.foldl (update cfg) s).phase = (s.phase + xs.length) % cfg.resetEvery := by
+  induction xs generalizing s with
+  | nil => simp [Nat.mod_eq_of_lt hs.phase_lt]
+  | cons byte xs ih =>
+    have hphase : (update cfg s byte).phase = (s.phase + 1) % cfg.resetEvery := by
+      by_cases hr : s.phase + 1 = cfg.resetEvery
+      · simp [update, initial, hr]
+      · have hlt : s.phase + 1 < cfg.resetEvery := by have := hs.phase_lt; omega
+        simp [update, hr, Nat.mod_eq_of_lt hlt]
+    rw [List.foldl_cons, ih _ (update_valid cfg s byte hs), hphase, Nat.mod_add_mod]
+    rw [List.length_cons, Nat.add_right_comm s.phase 1 xs.length, Nat.add_assoc]
+
+/-- On a trace from initialization, every full reset period removes one
+eligible position from the ideal following-byte rescale charge. -/
+theorem card_followingRescaleIndices_initial_le (cfg : Config) (xs : List (Fin 256)) :
+    (followingRescaleIndices cfg (initial cfg) xs).card ≤
+      xs.length - 1 - (xs.length - 1) / cfg.resetEvery := by
+  let n := xs.length - 1
+  let period := cfg.resetEvery
+  have hp : 0 < period := cfg.positivePeriod
+  let resetAt (k : Fin (n / period)) : Fin n :=
+    ⟨(k.val + 1) * period - 1, by
+      have hle : (k.val + 1) * period ≤ n :=
+        (Nat.le_div_iff_mul_le hp).mp (Nat.succ_le_of_lt k.isLt)
+      have hpos : 0 < (k.val + 1) * period := Nat.mul_pos (Nat.succ_pos k.val) hp
+      omega⟩
+  let resets : Finset (Fin n) := Finset.univ.image resetAt
+  have hinj : Function.Injective resetAt := by
+    intro a b hab
+    have h := congrArg Fin.val hab
+    change (a.val + 1) * period - 1 = (b.val + 1) * period - 1 at h
+    have ha : 0 < (a.val + 1) * period := Nat.mul_pos (Nat.succ_pos a.val) hp
+    have hb : 0 < (b.val + 1) * period := Nat.mul_pos (Nat.succ_pos b.val) hp
+    have hmul : (a.val + 1) * period = (b.val + 1) * period := by omega
+    apply Fin.ext
+    have := Nat.mul_right_cancel hp hmul
+    omega
+  have hcard : resets.card = n / period := by
+    simp [resets, Finset.card_image_of_injective, hinj]
+  have hsub : followingRescaleIndices cfg (initial cfg) xs ⊆ Finset.univ \ resets := by
+    intro i hi
+    apply Finset.mem_sdiff.mpr
+    refine ⟨Finset.mem_univ _, ?_⟩
+    intro hreset
+    obtain ⟨k, _, rfl⟩ := Finset.mem_image.mp hreset
+    let i := resetAt k
+    let before := (xs.take i.val).foldl (update cfg) (initial cfg)
+    let byte := xs[i.val]'(by have := i.isLt; dsimp [n] at *; omega)
+    have hevent : (rescaleInput cfg before byte).isSome = true := by
+      simpa [followingRescaleIndices, before, byte, i] using hi
+    have hs := replay_valid cfg (initial cfg) (xs.take i.val) (initial_valid cfg)
+    have hne := ((rescaleInput_isSome_iff cfg before byte hs).mp hevent).1
+    have hlength : (xs.take i.val).length = i.val := by
+      apply List.length_take_of_le
+      have := i.isLt
+      dsimp [n] at *
+      omega
+    have hphase : before.phase = i.val % period := by
+      simpa [before, hlength, initial, period] using
+        replay_phase_eq_mod cfg (initial cfg) (xs.take i.val) (initial_valid cfg)
+    have hindex : i.val + 1 = (k.val + 1) * period := by
+      change (k.val + 1) * period - 1 + 1 = _
+      exact Nat.sub_add_cancel (Nat.mul_pos (Nat.succ_pos k.val) hp)
+    have hzero : (before.phase + 1) % period = 0 := by
+      rw [hphase, Nat.mod_add_mod, hindex, Nat.mul_mod_left]
+    have hlt : before.phase + 1 < period := by
+      have := hs.phase_lt
+      change before.phase < period at this
+      change before.phase + 1 ≠ period at hne
+      omega
+    rw [Nat.mod_eq_of_lt hlt] at hzero
+    omega
+  have h := Finset.card_le_card hsub
+  rwa [Finset.card_sdiff_of_subset (Finset.subset_univ _), Finset.card_univ, Fintype.card_fin,
+    hcard] at h
+
+/-- An ideal following-byte rescale cost bound from the byte count and reset
+period alone. Reset positions and the terminal byte are excluded. -/
+theorem sum_followingRescaleLoss_initial_le (cfg : Config) (xs : List (Fin 256)) :
+    (∑ i ∈ followingRescaleIndices cfg (initial cfg) xs,
+      followingRescaleLoss cfg (initial cfg) xs i) ≤
+      ((xs.length - 1 - (xs.length - 1) / cfg.resetEvery : ℕ) : ℝ) *
+        Real.logb 2 (128 / 43) := by
+  refine (sum_followingRescaleLoss_le cfg (initial cfg) xs (initial_valid cfg)).trans ?_
+  apply mul_le_mul_of_nonneg_right
+  · exact_mod_cast card_followingRescaleIndices_initial_le cfg xs
+  · exact Real.logb_nonneg (by norm_num) (by norm_num)
 
 end GRWTSK.ComputerScience.AdaptiveIntegerCoding
