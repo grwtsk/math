@@ -78,6 +78,7 @@ theorem long_shift_correlation_le {T r : ℝ} (hr : T < r) {f : ℝ → ℝ}
   have hnonneg : 0 ≤ ∫ t : ℝ, (f t) ^ 2 := integral_nonneg fun _ => sq_nonneg _
   have hsq : (2 * |∫ t : ℝ, f t * f (t + r)|) ^ 2 ≤
       (∫ t : ℝ, (f t) ^ 2) ^ 2 := by
+    rw [← hmass]
     nlinarith [sq_nonneg ((∫ t : ℝ, (l t) ^ 2) -
       (∫ t : ℝ, (u (t + r)) ^ 2)), sq_abs (∫ t : ℝ, f t * f (t + r))]
   exact (sq_le_sq₀ (by positivity) hnonneg).1 hsq
