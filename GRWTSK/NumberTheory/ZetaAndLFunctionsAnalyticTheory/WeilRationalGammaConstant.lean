@@ -21,13 +21,14 @@ WRITTEN_ANALYTICAL_ARGUMENT / SOURCE_PROOF_CANDIDATE.
 Lean parsing, elaboration, exact types, builds, kernel replay, transitive axiom
 audit, certified source computation and independent review NOT_RUN.
 Novelty UNASSESSED. See the adjacent individual provenance and argument.
+Source-reference repairs are recorded in WeilRoundedEvaluationSourceRepairs.md.
 -/
 
 set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.RationalGammaConstant
 
-open CharacterWindow
+open OddRootProjection
 
 /-- Finite rational lower bound; the harmonic index must be positive in the theorem. -/
 def eulerLower (h N : ℕ) : ℚ :=
@@ -57,17 +58,13 @@ theorem gammaConstant_parity_eq {q a : ℕ} (hq : 0 < q) (ha : a ≤ 1) :
     gammaConstant q a = Real.log (q : ℝ) - Real.log Real.pi -
       Real.eulerMascheroniConstant - 3 * Real.log 2 +
         (if a = 0 then -Real.pi / 2 else Real.pi / 2) := by
-  have hqR : (q : ℝ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt hq)
-  have hlog := Real.log_div hqR Real.pi_ne_zero
   rcases (show a = 0 ∨ a = 1 by omega) with rfl | rfl
-  · have hd : (2 * (0 : ℝ) + 1) / 4 = (1 / 4 : ℝ) := by ring
-    simp only [gammaConstant, Nat.cast_zero, hd, digamma_quarter, if_pos rfl]
-    rw [hlog]
+  · rw [gammaConstant_even_eq_log_add q hq, gammaConstant_one_zero_eq]
+    simp only [if_pos rfl]
     ring
-  · have hd : (2 * (1 : ℝ) + 1) / 4 = (3 / 4 : ℝ) := by ring
-    simp only [gammaConstant, Nat.cast_one, hd, digamma_three_quarters,
-      if_neg (by decide : (1 : ℕ) ≠ 0)]
-    rw [hlog]
+  · rw [gammaConstant_odd_eq_even_add_pi q,
+      gammaConstant_even_eq_log_add q hq, gammaConstant_one_zero_eq]
+    simp only [if_neg (by decide : (1 : ℕ) ≠ 0)]
     ring
 
 /-- Finite rational endpoint, with the negative pi/2 orientation in parity zero. -/

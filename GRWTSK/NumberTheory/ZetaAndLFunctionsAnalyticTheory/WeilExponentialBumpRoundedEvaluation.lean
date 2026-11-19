@@ -21,6 +21,7 @@ Lean parsing, elaboration, exact types, builds, kernel replay, transitive axiom
 audit, certified source computation and independent review NOT_RUN.
 Novelty UNASSESSED. No arithmetic sign, conductor-one transfer or universal
 certificate family is asserted. See the adjacent individual provenance.
+Source-reference repairs are recorded in WeilRoundedEvaluationSourceRepairs.md.
 -/
 
 set_option autoImplicit false
@@ -29,6 +30,8 @@ open MeasureTheory Set
 open scoped BigOperators ComplexConjugate
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.RoundedCoefficients
+
+open LowSchur CharacterWindow
 
 /-- The central coefficient retains the conjugate of the actual phase approximation. -/
 def coefficient (n L D : ℕ) (z : ℂ) : ℂ :=
@@ -58,7 +61,7 @@ theorem coefficient_error {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q)
     _ = |primeWeight n - w| * ‖χ n‖ + |w| * ‖χ n - z‖ := by
       simp only [norm_mul, Complex.norm_conj, Complex.norm_real, Real.norm_eq_abs]
     _ ≤ |primeWeight n - w| * 1 + |w| * e :=
-      add_le_add (mul_le_mul_of_nonneg_left (norm_character_le_one χ n) (abs_nonneg _))
+      add_le_add (mul_le_mul_of_nonneg_left (χ.norm_le_one n) (abs_nonneg _))
         (mul_le_mul_of_nonneg_left hphase (abs_nonneg _))
     _ ≤ coefficientRadius n L D e := by
       simpa only [coefficientRadius, w, mul_one] using add_le_add_right hw (|w| * e)
