@@ -317,6 +317,28 @@ the exact moments used here need none. No novel paper theorem, independent
 external review, all-window or all-conductor sign, zero-side explicit
 formula identification, or RH/GRH conclusion is claimed.
 
+## Subsequent one-sided refinement
+
+The later [one-sided certificate return](WeilConductorThreeOneSidedCertificates.md)
+proves the form order for the complete gamma remainder on the original
+compact C1 derivative carrier. Its arbitrary-metric lower bound retains
+the exact term `-tau * Q_G(v)` and pays only the spatial charge
+`64 * L_M / (N+1) * E(f')`. With the explicit identity metric, the separate
+budget is
+
+\[
+B_{\mathrm{one}}(M,N,\tau)=\frac{64L_M+8\tau}{N+1},
+\qquad B(M,N,\tau)=B_{\mathrm{one}}(M,N,\tau)+\frac8{4M+1}.
+\]
+
+The original two-sided approximation and its complete budget remain valid.
+For the same actual two-cell packet, the lower-bound coefficient improves
+by `8/33`, while its sharper fixed budget still exceeds `16`. That budget
+bound does not bound the actual error from below. The new conditional sign
+theorem still requires enclosures, acceptance, and vanishing budget at the
+same stages; the joint producer remains open. Its declarations and checks
+are recorded separately in the linked follow-up.
+
 ## Declaration and dependency correspondence
 
 | Local declarations | Exact role |

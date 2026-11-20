@@ -285,6 +285,25 @@ a coarse constrained sample matrix can be positive while unresolved
 continuous directions remain within the charged approximation error.
 That historical analytical argument keeps its original evidence scope.
 
+## Subsequent one-sided arithmetic return
+
+The later [one-sided certificate return](WeilConductorThreeOneSidedCertificates.md)
+proves that the complete omitted gamma remainder contributes a nonnegative
+form on compact C1 derivatives in the same radius-four source domain.
+Using its spatial sampling estimate, the unchanged packet above now gives
+
+\[
+A(f)\ge-32L_8E(f').
+\]
+
+The coefficient improves by exactly `8/33`. The earlier two-sided error
+estimate, packet construction, and verification evidence remain valid and
+unchanged. The separate sharper budget is still `32 * L_8 > 16`; this is a
+lower bound on the conservative budget, not on the actual approximation
+error. Thus the fixed packet still does not supply an all-precision family.
+The joint producer remains open, and the subsequent declarations and their
+verification evidence are recorded at the linked new source.
+
 ## Related check-ins and their distinct mathematical roles
 
 The comparison distinguishes work present at the starting revision from

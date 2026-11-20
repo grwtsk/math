@@ -280,6 +280,24 @@ Its separate parameter-selection theorem does not establish that production
 hypothesis. Verification evidence for the later module is recorded at its
 own exact source; the checks below retain their original scope.
 
+### Subsequent one-sided source order
+
+The later [one-sided certificate return](WeilConductorThreeOneSidedCertificates.md)
+uses a weighted minimum-kernel Fubini argument to prove that the complete
+omitted gamma remainder is nonnegative on the same compact C1 derivatives.
+It establishes `Re Q_(partialSourceKernel M)(f') <= A(f)`, so its finite
+lower bound pays only the spatial cost `64 * L_M / (N+1) * E(f')` and the
+unchanged packet-metric term. For an identity metric the separate budget is
+`(64 * L_M + 8 * tau) / (N+1)`. The original two-sided source approximation
+above remains valid, with its full gamma and spatial allowance.
+
+The unchanged actual two-cell packet consequently yields
+`A(f) >= -32 * L_8 * E(f')`, improving its prior coefficient by `8/33`.
+Its sharper fixed budget nevertheless exceeds `16`; this statement concerns
+the conservative budget, not the actual approximation error. A joint
+all-precision certificate producer remains required. The later source and
+verification evidence are recorded separately at the linked follow-up.
+
 This increment fixes conductor three and radius four. It does not prove a
 cofinal all-window/all-conductor sign producer, identify the arithmetic
 form with a zero-side explicit formula on a proved test space, or establish
