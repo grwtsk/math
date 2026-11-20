@@ -411,6 +411,29 @@ consequences and source returns built from maintained mathematics. No new
 paper theorem, external formalization equivalence, or prior-art novelty is
 claimed.
 
+## Subsequent certificates for the full source matrix
+
+The later [full-source certificate construction](WeilConductorThreeSourceCertificates.md)
+samples the complete `sourceKernel` at the same spatial representatives.
+Its matrix depends only on the spatial resolution; an auxiliary gamma
+cutoff controls entry enclosures and spatial error without changing the
+matrix whose sign is certified. The signed remainder interval gives a
+single-tail allowance for differences of kernel values, while the exact
+full gamma integral supplies a sharper fixed continuity modulus. This
+provides a separate source comparison and certificate return while
+preserving the one-sided finite-head result above.
+
+The same two-cell rational packet also encloses that full-source reduced
+matrix, using the previously proved `sourceKernel_four_bounds`. Each
+construction retains its own target matrix and complete budget. The new
+explicit arithmetic coefficient is `32*L_0 + 16/3`, at least sixteen less
+than the preceding `32*L_8`; its exact fixed-grid budget still exceeds
+sixteen. The all-precision accepted family remains an explicit missing producer; the
+new construction does not infer it from approximation indices or this
+single packet. Its declarations, comparison, and actual check outcomes
+are recorded at the linked source. All earlier verification evidence
+below remains at its original scope.
+
 ## Verification evidence
 
 The exact target

@@ -482,6 +482,25 @@ These are local consequences of maintained mathematical sources and the
 existing checker. No new paper theorem or prior-art novelty is claimed.
 There is no all-grid, all-window, all-conductor, or RH/GRH conclusion.
 
+## Subsequent certificate for the complete sampled source
+
+The later [full-source certificate construction](WeilConductorThreeSourceCertificates.md)
+uses `sourceKernel_four_bounds` and the same `encloses_scalar` theorem to
+return this packet's unchanged checker acceptance to the complete
+two-cell source matrix. Its reduced scalar is `-2 * sourceKernel 4`,
+including the entire gamma contribution. The matrix has no gamma-cutoff
+parameter; an auxiliary cutoff is retained only when enclosing or
+approximating its entries.
+
+This is a further concrete consumer of the existing packet and scalar
+source observations. Its explicit arithmetic coefficient is
+`32*L_0 + 16/3`, improving the preceding one-sided coefficient `32*L_8`
+by at least sixteen. The exact fixed-grid budget nevertheless remains
+above sixteen. Its spatial error, complex zero-sum restriction,
+arithmetic return, and unresolved all-precision producer are recorded
+separately. The finite-head matrix results and their verification history
+below are unchanged.
+
 ## Verification evidence
 
 The exact target
