@@ -27,11 +27,12 @@ pairing from the L1 condition. No unevaluated divergent integral is silently
 accepted through Lean's totalized integration convention.
 
 This is the maintained integrated kernel form. The historical physical
-arithmetic expression `Q_4(f)` is not definitionally this form. A separate
-integration-by-parts/domain theorem must establish `Q_4(f)=B_g(f')` on its
-intended carrier. Consequently all errors below are in the L2 energy of
-`u`; substituting `u=f'` gives derivative energy, not the physical energy
-of `f`.
+arithmetic expression `Q_4(f)` is not definitionally this form. The
+follow-up [arithmetic-return module](WeilConductorThreeKernelReturn.md)
+establishes `Q_4(f)=B_g(f')` for globally C1 compact complex tests supported
+in the closed window. That identity is a separate integration-by-parts
+and domain theorem. All errors below remain in the L2 energy of `u`;
+substituting `u=f'` gives derivative energy, not the physical energy of `f`.
 
 ## A complete source approximation bound
 
@@ -178,14 +179,15 @@ More generally the uncentered exact sample matrices have zero diagonal.
 A symmetric nonzero matrix with zero diagonal has a negative two-coordinate
 direction, so generic zero-tolerance positivity on all moment vectors is
 not the intended sign route. The genuine derivative carrier's mean-zero
-and parity conditions, centering, and the physical Green metric must be
-retained for the next constrained sign argument.
+constraint, any explicitly chosen additional parity restriction, centering,
+and the actual packet metric must be retained in a constrained sign argument.
 
 The original written source uses spectral/derivative-energy methods for
 related return claims. The present proof derives a bounded integrated-form
 comparison directly from a whole-square kernel bound and exact cell
-moments. It shares the same arithmetic source and is not an independent
-proof of those unresolved source-return claims. No RH/GRH conclusion follows.
+moments. It shares the same arithmetic source and was not itself a proof
+of the source-return obligation now discharged in the follow-up module.
+No RH/GRH conclusion follows.
 
 ## Evidence and next mathematical boundary
 
@@ -199,29 +201,40 @@ implemented checker and independent external mathematical review are
 **NOT_RUN**.
 
 Remaining constructions include certified arithmetic production of useful
-multi-cell matrix entries, the integration-by-parts return to the original
-physical form, its Green-energy comparison on the true domain, and the
-constrained sign certificates required there. The all-window/all-precision
-arithmetic sign producer needed for RH/GRH is not supplied by this finite
-approximation theorem.
+multi-cell matrix entries and sign certificates on the actual constrained
+derivative coordinates. The integration-by-parts return is now supplied by
+the follow-up module. A finite estimate in physical energy needs a proved
+comparison with the packet metric; a compatible sequence with total
+deficits tending to zero can instead retain derivative energy. Neither
+sign route, nor the all-window/all-precision arithmetic sign producer
+needed for RH/GRH, is supplied by this finite approximation theorem or that
+return identity.
 
-The source-return target can be named precisely using the existing
+The original source-return target was named using the existing
 `GRWTSK.NumberTheory.WeilQuadraticForm.primitiveArithmeticValue` in
-[WeilConductorFrontier.lean](WeilConductorFrontier.lean). For a smooth complex
-test compactly supported inside `(-4,4)`, with the genuine primitive and
-nonprincipal character evidence supplied, the next identity is
+[WeilConductorFrontier.lean](WeilConductorFrontier.lean). For a complex test
+in the appropriate compact differentiable domain, the identity is
 
 ```
 primitiveArithmeticValue modThreeQuadratic hp hn 4 f
   = (sourceKernelForm (deriv f)).re
 ```
 
-This is a stated proof obligation, not a declaration added by this increment.
-It must retain the actual character parity and prove that the native
-quadratic character is real-valued. The latter fact identifies the kernel's
+This was a proof obligation at the finite-enclosure increment. The follow-up
+`arithmeticValue_eq_sourceKernelForm` proves it under `ContDiff ℝ 1 f`,
+`HasCompactSupport f`, and `tsupport f ⊆ Icc (-4) 4`, using the actual native
+character's proved primitivity, nonprincipality, parity, and real-valuedness.
+The latter fact identifies the kernel's
 `Re(conj chi(n)) * Re(C_f(log n))` with the arithmetic source's
 `Re(conj chi(n) * C_f(log n))`; parity alone does not justify this identity
-for a general complex character. The proof must justify both integrations
-by parts and the gamma interchange, then return from interval derivative
-coordinates to the whole-line zero-extended source. The separate Green
-identity is needed when converting its error to physical energy.
+for a general complex character. The follow-up justifies both integrations
+by parts and the full gamma interchange, then returns from interval
+derivative coordinates to the same whole-line source. It also returns this
+module's finite error and checker bounds to that arithmetic value. The
+absolute-kernel theorem already identifies the continuous Green pairing
+with physical energy; comparison of the finite packet metric and its full
+error with that energy remains a separate obligation. Alternatively, a
+vanishing-deficit sign route may retain derivative energy, as explained in
+the follow-up record. Exact verification evidence for the later increment is
+recorded separately in issue #1839; it does not retroactively change the
+scope of the finite-enclosure checks reported above.
