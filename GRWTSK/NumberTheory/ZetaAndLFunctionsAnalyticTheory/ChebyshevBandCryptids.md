@@ -48,6 +48,18 @@ This converse is an analytic comparison, with Lean verification `NOT_RUN`.
 The closed primorial calculation only supplies the finite anchor.
 [Schoenfeld, 1976, Theorem 10 (6.3)](https://www.ams.org/mcom/1976-30-134/S0025-5718-1976-0457374-X/S0025-5718-1976-0457374-X.pdf)
 
+### November 20 quantitative bridge
+
+[ChebyshevBandSchoenfeld.lean](ChebyshevBandSchoenfeld.lean) now supplies
+the exact all-band implication from the explicit integer Schoenfeld
+estimate above `4^7` to the literal unfolded `BandBound` conclusion.
+It proves the `128/49` scale ratio and the strict `177/(392*pi) < 1/6`
+comparison, charging both endpoint errors. The analytic Schoenfeld
+estimate remains a named premise; no unconditional `BandBound` or RH
+proof is claimed. See the [new source record](ChebyshevBandSchoenfeld.md)
+for the exact source identity and checks. This does not extend the
+historical replay claims for the anchor or the isolated Cryptids package.
+
 ## Source and verification scope
 
 The upstream source is Google DeepMind Cryptids at revision

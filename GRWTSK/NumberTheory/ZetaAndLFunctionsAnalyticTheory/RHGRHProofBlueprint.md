@@ -87,6 +87,28 @@ Both height tails remain open in these interfaces. [Platt, Theorem
 
 ## External source comparisons
 
+- **November 20 submitted RH/Dirichlet-GRH argument.** The pinned
+  [source and verification project](https://github.com/Deicyde/riemann-hypothesis/tree/a172c464fd4bcfc4f53e394dcba45d742b1409a6)
+  exposes the actual Mathlib RH target and universal ordinary Dirichlet
+  L-function strip statements. Its full-submission Comparator result is
+  still recorded as pending at that revision. The [source walkthrough](SubmittedRiemannHypothesisRoute.md)
+  traces the proposed supplier: arithmetic/theta constructions, a one-sided
+  bound for an exact weighted character sum on arbitrarily late power
+  windows, Landau nonvanishing, and inverse-character/Euler-factor return.
+  Fixed exponent losses and families for every sufficiently small positive
+  epsilon are essential. No external theorem is admitted as an established
+  supplier here, and no existing RH/GRH leaf is closed by this source inspection.
+  The new [finite smoothed-Mangoldt transport](../MultiplicativeNumberTheory/SmoothedMangoldt.lean)
+  independently proves the integer weighted-sum identity and exact recovery
+  of the original `Chebyshev.psi`, with the complete error amplification.
+  Its [provenance and verification scope](../MultiplicativeNumberTheory/SmoothedMangoldt.md)
+  distinguish this finite arithmetic advance from the missing uniform analytic
+  supplier. Accepted external endpoints could supply the existing critical-line
+  and equivalent positivity predicates. The new [Schoenfeld band comparison](ChebyshevBandSchoenfeld.lean)
+  supplies the exact constants and coverage from the explicit theta estimate
+  to the literal `BandBound` predicate; the analytic estimate remains a
+  premise. Concrete packet acceptance, kernel source identities, Xi
+  constructions and the RH-to-Schoenfeld supplier retain their own obligations.
 - **OpenAI, 7/8.** The September 30, 2026 preprint, Theorem 1.1, and
   the pinned Lean declaration
   `OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re`
