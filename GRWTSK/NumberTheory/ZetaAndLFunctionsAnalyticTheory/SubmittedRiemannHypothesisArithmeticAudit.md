@@ -61,6 +61,11 @@ report, not an independent audit of those tactics or a completed proof
 replay here. Submitted Lean files and the comparator configuration are
 unchanged; the Results section still reports the build in progress.
 
+The normalized-slice and length-one continuation refreshed that same
+external head and read the complete verification notes again. The head
+and Results status were unchanged; the local results below supply no
+new completed verdict for the external submission.
+
 ## Finite count, integer witness, and valuation sum
 
 ### 1. Polynomially many automorphic systems
@@ -396,25 +401,31 @@ This proves the finite squaring step used by `up_holds` in
 [TwoSigned.lean][twosigned]. The separate lower comparison in
 [AdmissibleMonoIdeal.lean][low] carries `2^(r+r′)`. Their common positive
 factor cancels in the numerical core, leaving two. The geometric
-length-one premise, Rees-module comparison, Herbrand estimate, and full
-lower theorem remain distinct suppliers; they are not proved merely by
-this finite multiplication factor.
+length-one premise is now supplied by the reconstruction below, under
+the original finite-generation, `M2`, `M4`, and nondegeneracy hypotheses.
+The Rees-module comparison, Herbrand estimate, and full lower theorem
+remain distinct suppliers.
 
-### The remaining geometric length-one supplier
+### The checked geometric length-one supplier
 
-The next substantive input is
+The substantive input
 `locLen_quotientWeightPiece_le_one` in
-[LocLenQuotientWeightPieceLeOne.lean][lengthone]. Its actual hypotheses
+[LocLenQuotientWeightPieceLeOne.lean][lengthone] now has an original
+local reconstruction in
+[GradedPointLengthOne](../../CommutativeAlgebra/GradedPointLengthOne.md).
+Its actual hypotheses
 include the coefficient DVR and field conditions, a homogeneous ideal,
+finite algebra generation over degree zero,
 finiteness of the degree-zero quotient image (`M2`), linear dependence
 of point derivations at the stated two-signed points (`M4`), and
 `¬ idD 𝒜 ≤ ker σ`. Its conclusion is the all-weight length bound at most
-one used above. Taking that conclusion as a premise of the squaring
-theorem does not reconstruct its geometric proof.
+one used above. The local proof derives that conclusion on the actual
+`LocalizedModule` of the homogeneous quotient image; it does not take
+the length bound as an additional premise.
 
-The inspected body chooses homogeneous `f,g` of degrees `−2,+2` with
-`σ(fg)≠0`. Three algebraic inputs to that body now have local checked
-proofs. Their geometric slice supplier remains explicit.
+The proof chooses homogeneous `f,g` of degrees `−2,+2` with
+`σ(fg)≠0`. The following inputs and the complete geometric slice
+supplier have local checked proofs.
 
 #### Dehomogenization and its actual localization return
 
@@ -520,9 +531,9 @@ need not factor through `ψ`, and `n=0` legitimately handles a point
 outside the quotient support. The integral-image premise and faithful
 coefficients have separate compiled failure controls.
 
-#### Remaining slice and length-one steps
+#### Completing the slice and length-one steps
 
-Producing the slice relation is still a substantive geometric task.
+Producing the slice relation is the substantive geometric step.
 The [slice proof][slice] uses the actual ring
 `C=(A/(I+(f−1)))[1/(πg)]`, where `π` is a coefficient uniformizer.
 [FtHolds.lean][ft] supplies finite type from the specified finite
@@ -631,37 +642,61 @@ The imported audits check the exact source `PtDer = ⊥` form of
 residue embeddings, the finite/reduced return, and point separation
 are therefore no longer open local leaves under these hypotheses.
 
-The next bounded slice reconstruction is the actual supply and return
-around this theorem in `FtHolds` and [SliceHolds.lean][slice]:
+The supply and return around `et_holds` in `FtHolds` and
+[SliceHolds.lean][slice] now have complete local proofs:
 
-1. Use `IsWRing.gen` to choose finitely many algebra generators over
-   degree zero. The actual `M2` finite-module hypothesis supplies
-   finitely many generators for the image of degree zero in `A/I`.
-   Their union generates `A/I` as an `O`-algebra. Quotienting by
-   `f−1` and localizing away from the image of `πg` then supply
-   finite type of the actual `C`.
-2. Choose a nonzero irreducible DVR uniformizer `π`. Inverting `πg`
-   makes `π` a unit. Every nonzero coefficient is a unit times a
-   power of `π`, so all nonzero coefficients become units in `C`.
-3. Lift each normalized point of `A`, with `ξ(I)=0`, `ξ(f)=1`, and
-   `ξ(g)≠0`, uniquely through the quotient and Away localization.
-   Faithfulness gives `ξ(π)≠0`. The checked finite point set then
-   makes these normalized points finite.
-4. If `h` vanishes at all normalized points, the checked separation
-   theorem kills its image in `C`. The actual localization-zero
-   criterion gives `(πg)^n h∈I+(f−1)`, or equivalently
-   `c g^n h∈I+(f−1)` with `c=π^n≠0`. This is the precise input
-   consumed by the already checked dehomogenization and denominator
-   return.
+1. [FiniteTypeGradedQuotient](../../CommutativeAlgebra/FiniteTypeGradedQuotient.md)
+   uses the actual finite-generation component of `IsWRing.gen` and
+   literal `M2` quotient-image condition. Finitely many module
+   generators for the image of degree zero, together with the images
+   of the extra algebra generators, generate `A/I` as an `O`-algebra.
+   Quotienting by `f−1` and adjoining the inverse of the image of
+   `πg` give finite type of the same actual `C`. The degree-zero
+   algebra itself need not be module-finite. The source's restrictions
+   on the extra generators' degrees are unused in this argument.
+2. Choose an irreducible uniformizer `π`.
+   [DVRLocalizedCoefficients](../../CommutativeAlgebra/DVRLocalizedCoefficients.md)
+   proves that inverting `πg` makes
+   `π` a unit. Every nonzero coefficient has the actual factorization
+   `uπ^n`, so its image is a unit. No target domain or nontriviality
+   assumption is needed; this remains valid for the zero localization.
+3. [GradedSliceSeparation](../../CommutativeAlgebra/GradedSliceSeparation.md)
+   proves restriction, unique lifting, and exact range equality for
+   the normalized points `ξ(I)=0`, `ξ(f)=1`, `ξ(g)≠0`.
+   The quotient universal property descends `ξ`, and the nonzero
+   value of `πg` in the target field permits the Away lift.
+   Uniqueness uses localization homomorphism extensionality, never
+   surjectivity of `A→C`. The core transport requires only that `π`
+   have nonzero image in the point field; the complete source return
+   supplies this from faithfulness and the nonzero uniformizer.
+4. If `h` vanishes at all normalized points, point separation kills
+   its image in `C`. The module proves the actual kernel equivalence
+   `φ(h)=0 ↔ ∃n, π^n • (g^n*h)∈I+(f−1)`. The coefficient
+   `c=π^n` is nonzero. This establishes the precise slice membership
+   used by the earlier dehomogenization return.
 
-These four supplier/return steps have been identified analytically;
-they are not yet locally reconstructed Lean theorems. Their completion
-must retain the actual normalized points and quotient/localization
-maps, rather than replacing the required slice relation by an
-assumption.
+The resulting `slice_holds` theorem retains the actual `hgen`, `M2`,
+homogeneous ideal, and full `M4` data. Finite type, coefficient units,
+point separation, and slice membership are derived inside the proof.
+The general statement allows `d<0<e` and retains `(d:K)≠0`;
+the source `−2,+2` specialization uses faithful characteristic-zero
+coefficients. Adic completeness, the augmentation, and the source's
+`IsCO` condition on degree zero do not enter this return.
 
-Once that return upgrades local nilpotence to local vanishing for
-homogeneous elements (`red`), the precise cyclicity step is as follows.
+The same module now proves the source's next `red` property. If
+`h∈A_w`, `b∈A₀`, `σ(b)≠0`, and `b h^n∈I`, then every field
+point killing `I` kills `bh`: either it kills `b`, or it kills `h`.
+This also handles `n=0`; it does not assume that such a point has
+nonzero value on `b`. Applying the full slice theorem to `bh` gives
+`c g^N (bh)∈I+(f−1)`. For `τ=fg` with `σ(τ)≠0`, the earlier
+dehomogenization theorem constructs a degree-zero multiplier
+`b′=c τ^(N+m)b`, with `σ(b′)≠0` and `b′h∈I`.
+The original degree-zero point `σ` need not extend to an `A`-point.
+This is the exact homogeneous nilpotence-to-vanishing supplier, not
+an additional `IsReduced` instance for an entire prime-localized ring.
+
+The [length-one module](../../CommutativeAlgebra/GradedPointLengthOne.md)
+proves the precise quadratic cyclicity step using this return.
 For a weight `w`, powers of the original degree `−2,+2` elements give
 `e∈A_{−2w}`, a complementary `e′`, and `k∈ℕ` with `ee′=τ^k`.
 If `σ(h₀²e)≠0` for some `h₀∈A_w`, then
@@ -680,10 +715,67 @@ degree arithmetic.
 
 Likewise, if `p∈ker σ`, finite-image nilpotence gives `bp^n∈I`.
 Multiplying by `h^n` and applying `red` to `ph` proves local
-maximal-ideal annihilation. The cyclic localized piece is consequently
-a quotient of the residue field, giving length at most one. These
-cyclicity and residue-field steps are explicit next algebraic returns;
-they have been inspected but not yet reconstructed locally.
+maximal-ideal annihilation. Put `R=(A₀)_(ker σ)` and let `N` be
+the actual localized quotient piece. The map `R→N` sending `r`
+to `r[h₀]` is surjective by cyclicity. Its kernel contains the
+maximal ideal of `R`, so it factors to a surjection
+`R/𝔪_R→N`. This residue field has module length one, hence
+`Module.length R N≤1`. The zero-generator case gives length zero
+without requiring that the localized piece be nontrivial.
+
+The final source-shaped theorem assumes precisely that the ideal
+generated by degree `−2,+2` products is not contained in `ker σ`.
+If every generating product vanished under `σ`, its span would lie
+in the kernel; contraposition therefore supplies the required `f,g`.
+No extension of the degree-zero point to the full graded algebra is
+assumed. Applying the theorem at every weight supplies the premise of
+the existing five-family finite-squaring theorem. Its imported audit
+checks that composition on the literal ideals, giving `2^(r+1+r′)`.
+
+The nondegeneracy premise cannot be deleted. Analytically, take
+`A=O[x,y]` with both variables of degree one and `I=(x,y)^2`.
+Finite generation and `M2` hold, while `M4` is vacuous because every
+negative-degree element is zero, so there are no two-signed points. The degree-one
+piece at the faithful coefficient-field point has length two.
+The opposite-degree product ideal is zero, so the retained
+nondegeneracy hypothesis excludes this example. This is a mathematical
+counterexample, not an assertion that a full polynomial-grading fixture
+was compiled in this pass.
+
+The next source-specific upper-route comparison is
+`locLen_mQ_gr_le_locLen_aPiece` in
+[LocalizedLengthLeOfSurjective.lean][reeslength]. Its actual Rees lattice
+and monomial map require a saturation/kernel argument using powers
+of a degree-zero product nonvanishing at `σ`, for every `d≥1`.
+The source obtains saturation through `oz(±2n)=oz(±2)^n`; that
+global equality uses generator-degree restrictions omitted from our
+weaker `hgen`, so it cannot be imported as a consequence of that
+hypothesis alone. For example, the grading on `O[z]` with `deg z=4`
+is finitely generated, but its degree-four piece is not the square
+of its zero degree-two piece.
+
+The following direct saturation argument is an analytical alternative;
+its Lean verification is **NOT_RUN**. For a multi-index `μ∈ℕ³`,
+put `L=μ₀+2μ₂` and `R=μ₁+μ₂`. The actual third lattice generator
+contains `A_{−2}² A₂`, so the product-lattice definition gives
+`A_{−2}^L A₂^R ⊆ lat(mN) μ`. If `a∈A_{2(R−L)}` and `R≥1`, then
+
+\[
+\tau^{L+R}a=f^L g^{R-1}\bigl(f^R g^{L+1}a\bigr).
+\]
+
+The parenthesized factor has degree two, proving membership in that
+product submodule. If `R=0<L`, use instead
+`τ^L a=f^(L−1)(f g^L a)`, whose parenthesized factor has degree
+minus two. If `L=R=0`, then `μ=0`, `a∈A₀`, and exponent zero
+works in the coefficient submodule generated by one. Thus the single
+exponent `L+R` supplies the required lattice membership in all cases,
+without the global power identity. Nonvanishing of `σ(τ)` then makes
+this multiplier admissible at the point. This establishes only the
+analytical saturation leaf; the actual Rees maps, their kernel
+comparison, and the full localized-length return still need local
+construction and checking. Finite orbit coverage and the finite
+annihilator/support suppliers also remain separate.
 
 The later [Herbrand estimate][herbrand] has a separate substantial
 role. It relates the finite-length cokernel-minus-kernel quantity for
@@ -712,6 +804,7 @@ the top of this record. Representative SHA-256 values are:
 | [OrbitVanishingLocal.lean][orbitlocal] | `ba2f665873fc0708b75fcd3ae2cfc5ea127d7f159f58d39d012df5483fc15913` |
 | [LocLenAPieceIdeal2LeTwoPow.lean][squarefamily] | `951a47248af0fdb1f63dfe57b95080c0ef234b008e9caa016111dd0f2fa165a8` |
 | [LocLenQuotientWeightPieceLeOne.lean][lengthone] | `fbd4cd271111e957575ff3514a0be7b74ca6d0be0c2dc48fe3e852ca8e7a0116` |
+| [LocalizedLengthLeOfSurjective.lean][reeslength] | `1faba07150c63f3f5323baaaf168ada8f0e7e1871a7f98bfb55c7a24b146dd74` |
 | [SliceHolds.lean][slice] | `94ad21402a77fc958c4f53d9b543be425bc82a6b82f966e3245dcfa41d7a20ab` |
 | [DehHolds.lean][deh] | `02f6ce5034e64a7a987eaedbaede444e5f82b7af76fe43b5a868150a64225aa0` |
 | [FtHolds.lean][ft] | `f3934878da5e7bb158d2ba4571d0d4f22531a354151813dda2025e3d59e4f298` |
@@ -899,6 +992,52 @@ The companion [route walkthrough](SubmittedRiemannHypothesisRoute.md)
 explains the one-sided Landau mechanism and the exact local consumers.
 Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
 
+The normalized-slice and length-one continuation adds four modules and
+24 public theorems, with no private theorem helpers or new mathematical
+definitions:
+
+| Local component | Established source return |
+|---|---|
+| [Finite-type graded quotients](../../CommutativeAlgebra/FiniteTypeGradedQuotient.md) | Finite generation over degree zero and the actual `M2` quotient image supply finite type of the genuine quotient and normalized Away slice. |
+| [Localized DVR coefficients](../../CommutativeAlgebra/DVRLocalizedCoefficients.md) | A specified uniformizer becoming a unit makes every nonzero coefficient a unit, including in a zero target ring. |
+| [Graded slice separation](../../CommutativeAlgebra/GradedSliceSeparation.md) | Exact normalized-point restriction and unique lifting, finite point set, the actual localization-zero criterion, full `slice_holds`, and homogeneous `red` from raw source data. |
+| [Graded point length one](../../CommutativeAlgebra/GradedPointLengthOne.md) | Actual quadratic cyclicity, prime-kernel annihilation, residue-field surjection, and the all-weight length-one theorem under the literal opposite-degree-product nondegeneracy condition. |
+
+All four final maintained sources and their four final imported
+endpoint/source-object/control audits passed
+`--trust=0 -DwarningAsError=true`. Every one of the 24 public theorem
+axiom queries lists exactly `propext`, `Classical.choice`, and
+`Quot.sound`. A separate successful imported audit derives the
+five-family `2^(r+1+r′)` bound: it keeps the unsquared ideal named,
+identifies it with the literal span by an explicit equality, and
+transports the derived all-weight bound to the existing consumer.
+That identity is reflexive when the ideal is defined by the source's
+span; it adds no geometric or length hypothesis. Both declarations
+in that scratch consumer audit also report the standard three axioms.
+
+The compiled controls include missing finite-generation/image-finiteness
+inputs, missing coefficient inversion, nonfaithful coefficient maps,
+points on the excluded localization divisor, the necessity of a
+positive denominator exponent, zero localizations and modules, a
+two-dimensional residue-field module without cyclicity, and a cyclic
+dual-number module without maximal-ideal annihilation. The adjacent
+records separate these from analytical counterexamples to dropping
+`M4` or the opposite-degree-product condition. They retain every
+failed source, fixture, and diagnostic-probe attempt, including the
+literal five-family fixture's elaboration-limit failures. The
+successful equality-transport consumer check does not relabel those
+earlier failures as passes. The intermediate eight-theorem slice
+source is distinguished from the final nine-theorem source.
+
+All nine pinned package heads and tracked source cleanliness were
+checked, together with the compiler identity and unchanged root
+imports/dependency configuration. Previously checked local objects
+were reused only with matching source/object/attempt identities.
+Separate read-only mathematical and saved-evidence review is not
+another kernel execution. Fresh full-dependency replay, independently
+implemented kernel checking, and substitution into the external
+geometric consumer remain **NOT_RUN**.
+
 ## Remaining scope
 
 The numerical absorption and integer-product arguments do not establish the underlying eigensystem count, OneCharU_s, the other count cases, LemmaK, ThmBab, or ThmBc. Nor does their source-level assembly establish the theta/Galois suppliers of the literature package or the full ChebyshevInequalityAtWindowScale construction.
@@ -918,15 +1057,20 @@ also now have checked local proofs. Actual Kähler-differential
 detection, residue embeddings, Nakayama, and the full conditional
 `et_holds` return now supply formal unramifiedness, reducedness,
 finiteness of the original point set, and point separation. The actual
-graded-slice specialization retains finite type and inversion of all
-nonzero coefficients as explicit hypotheses. The next reconstruction
-supplies them from `IsWRing.gen`, `M2`, and the DVR uniformizer, then
-lifts normalized points and clears the localization denominator to
-obtain the precise slice relation. Local reducedness, the explicit
-conditional quadratic cyclicity, and the residue-field length-one
-arguments above remain further algebraic targets.
-The Rees/Herbrand and lower cotangent comparisons also remain necessary
-for the full factor-two deformation-to-valuation estimate.
+graded-slice return now derives finite type and coefficient inversion
+from `IsWRing.gen`, `M2`, and the DVR uniformizer, proves unique lifting
+of normalized points, and clears the actual localization denominator.
+The full slice theorem supplies the homogeneous `red` return.
+Quadratic cyclicity, prime-kernel annihilation, and the residue-field
+surjection now prove the all-weight length-one bound under the original
+nondegeneracy condition, and supply the finite-squaring premise.
+The next upper-route target is the actual Rees/monomial comparison
+`locLen_mQ_gr_le_locLen_aPiece`. Finite orbit coverage, the finite
+annihilator/support construction, Herbrand, the lower cotangent
+comparison, and the original arithmetic suppliers of `M2` and `M4`
+remain necessary for the full factor-two deformation-to-valuation
+estimate. The new local theorem derives its intermediate algebraic
+inputs; it does not construct those original arithmetic data.
 
 [count]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean
 [cohomology]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/CohBoundFree.lean
@@ -964,6 +1108,7 @@ for the full factor-two deformation-to-valuation estimate.
 [gradedobjects]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ToDegInjective.lean
 [squarefamily]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocLenAPieceIdeal2LeTwoPow.lean
 [lengthone]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocLenQuotientWeightPieceLeOne.lean
+[reeslength]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocalizedLengthLeOfSurjective.lean
 [slice]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/SliceHolds.lean
 [deh]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/DehHolds.lean
 [ft]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/FtHolds.lean

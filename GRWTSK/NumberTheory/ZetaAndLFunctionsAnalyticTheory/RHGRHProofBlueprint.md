@@ -159,7 +159,8 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   image and `σ(p)=0`. Their 14 public theorems, two private helpers,
   and imported endpoint/control audits passed trust-zero checks at the
   unchanged root pins; all public axiom reports give only the standard
-  three axioms. The slice membership remains an explicit supplier.
+  three axioms. Their slice-membership input is supplied by the
+  subsequent reconstruction below.
   The following [Euler module](../../CommutativeAlgebra/GradedEulerDerivation.md)
   now constructs an actual `Derivation O A A`, preserves homogeneous
   ideals, and gives the point map `E(a_j)=jξ(a_j)`.
@@ -191,15 +192,41 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   fraction-scalar compatibility theorem uses only `propext` and
   `Quot.sound`. Algebra finiteness is over `FractionRing O`, not
   asserted as an `O`-module.
-  The next bounded slice reconstruction supplies finite type from
-  `IsWRing.gen` and `M2`, coefficient units from the DVR uniformizer,
-  and the exact lift of normalized points through the quotient/Away
-  localization. Point separation must then be returned through the
-  actual localization-zero criterion to give `c g^n h∈I+(f−1)` with
-  `c≠0`, the input to the checked dehomogenization return. Local
-  reducedness, the subsequent conditional quadratic cyclicity, and the
-  residue-field length-one return remain open locally, as do the full
-  Rees/Herbrand and lower cotangent comparisons.
+  [FiniteTypeGradedQuotient](../../CommutativeAlgebra/FiniteTypeGradedQuotient.md)
+  now derives the actual slice's finite type from `IsWRing.gen` and
+  `M2`; [DVRLocalizedCoefficients](../../CommutativeAlgebra/DVRLocalizedCoefficients.md)
+  proves that all nonzero coefficients become units after inverting
+  `πg`. [GradedSliceSeparation](../../CommutativeAlgebra/GradedSliceSeparation.md)
+  proves the unique lift and exact range of normalized points and
+  the kernel equivalence for the actual quotient/Away map. The complete
+  slice theorem derives `c g^n h∈I+(f−1)` with `c≠0` from the
+  original data. Its homogeneous `red` consumer constructs `b′`
+  outside `ker σ` with `b′h∈I` from `bh^n∈I`, without assuming
+  the degree-zero point extends to the full algebra. These three
+  modules add 18 public theorems, with no private helpers or new
+  mathematical definitions. Their final source and imported
+  endpoint/control audits pass at trust zero; all public axiom
+  reports give exactly the standard three.
+  [GradedPointLengthOne](../../CommutativeAlgebra/GradedPointLengthOne.md)
+  supplies quadratic cyclicity, annihilation by the prime kernel,
+  and an actual residue-field surjection onto the localized quotient
+  piece. Under the literal source nondegeneracy condition on opposite
+  degree-two products, its final theorem proves length at most one
+  at every weight from the original finite-generation, `M2`, and
+  `M4` hypotheses. The imported audit composes this with the previous
+  five-family squaring result, giving `2^(r+1+r′)` on the actual
+  ideal with the `F,E` equations squared. Its six public theorems,
+  final source and endpoint/control audit, and separate exact-ideal
+  composition audit pass trust-zero checks. All six public axiom
+  reports list exactly the standard three. The composition names
+  the original ideal and transports the derived bound along its
+  equality with the literal span; earlier failed elaboration attempts
+  are retained separately. The next upper comparison
+  is `locLen_mQ_gr_le_locLen_aPiece`, requiring the actual Rees
+  lattice/monomial maps and their saturation argument. Finite orbit
+  coverage, finite annihilator/support, the full Herbrand and lower
+  cotangent comparisons, and the original arithmetic suppliers of
+  `M2`,`M4` remain open locally.
   Independent kernel replay and external consumer substitution remain
   unperformed. The external
   [verification notes at the latest inspected revision](https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/verification/NOTES.md#results)
