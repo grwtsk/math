@@ -28,8 +28,10 @@ These are elementary linear-algebra consequences, not a new Weil criterion.
 The arithmetic explicit formula, completion, compactness, spectral flow and
 all-window sign are not proved or assumed as axioms here. See issue #1808.
 
-Manually authored formal source candidates. Elaboration, fresh kernel replay,
-transitive axiom audit and independent mathematical review: NOT_RUN.
+The original source record marked elaboration, fresh kernel replay,
+transitive axiom audit and independent mathematical review NOT_RUN.
+Current source-bound compatibility checks are recorded separately in math#1839;
+they do not retroactively change the original record or the analytical scope.
 -/
 
 set_option autoImplicit false
@@ -127,7 +129,7 @@ theorem negativeIndex_restrict_mono (Q : V → ℝ)
 
 theorem negativeIndex_eq_zero_of_nonneg {Q : V → ℝ}
     (hQ : ∀ x, 0 ≤ Q x) : negativeIndex (𝕜 := 𝕜) Q = 0 := by
-  apply le_antisymm _ (zero_le _)
+  apply le_antisymm _ zero_le
   unfold negativeIndex
   refine iSup_le fun n => iSup_le fun hn => ?_
   cases n with
@@ -145,7 +147,7 @@ theorem negativeIndex_eq_zero_of_nonneg {Q : V → ℝ}
 theorem negativeIndex_restrict_eq_zero {Q : V → ℝ}
     (hQ : negativeIndex (𝕜 := 𝕜) Q = 0) (S : Submodule 𝕜 V) :
     negativeIndex (𝕜 := 𝕜) (fun x : S => Q (x : V)) = 0 := by
-  apply le_antisymm _ (zero_le _)
+  apply le_antisymm _ zero_le
   simpa [hQ] using negativeIndex_restrict_le Q S
 
 end Algebraic
@@ -204,7 +206,7 @@ theorem negativeIndex_eq_zero_iff {Q : V → ℝ}
     have hframe := hasNegativeFrame_one_of_neg hzero hsmul (lt_of_not_ge hx)
     have hle : (1 : ℕ∞) ≤ 0 := by
       simpa [hindex] using natCast_le_negativeIndex hframe
-    exact one_ne_zero (le_antisymm hle (zero_le _))
+    exact one_ne_zero (le_antisymm hle zero_le)
   · exact negativeIndex_eq_zero_of_nonneg
 
 /-- An exhaustive family of genuine test subspaces suffices for index zero.
@@ -225,7 +227,8 @@ theorem forall_restriction_index_zero_iff {ι : Type*} {Q : V → ℝ}
         Q ((c • y : S i) : V) = ‖c‖ ^ 2 * Q (y : V) := by
       intro c y
       exact hsmul c (y : V)
-    exact ((negativeIndex_eq_zero_iff hlocalzero hlocalsmul).1
+    exact ((negativeIndex_eq_zero_iff (𝕜 := 𝕜)
+      (Q := fun y : S i => Q (y : V)) hlocalzero hlocalsmul).1
       (hlocal i)) ⟨x, hxi⟩
   · intro hglobal i
     exact negativeIndex_restrict_eq_zero hglobal (S i)

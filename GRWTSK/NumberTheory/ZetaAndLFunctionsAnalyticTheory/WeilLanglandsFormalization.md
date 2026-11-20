@@ -170,3 +170,51 @@ finite/infinite boundaries. A checker implemented independently of Lean,
 independent external mathematical review, a whole-repository build, and Rust
 execution verification remain `NOT_RUN`. The source hashes in the adjacent
 records and the publication commit in issue #1839 fix this evidence scope.
+
+## Follow-up: an actual conductor-three kernel approximation
+
+Starting from the preceding published increment at
+`7dcbe07202484a7fdff0d631f6b1649ad64680c2`, the next development instantiates
+the generic kernel-error theorem with the maintained conductor-three
+radius-four integrated kernel. The new source records and issue #1839
+separate this follow-up's checks from the earlier nine-module increment.
+
+| Maintained source | Mathematical advance |
+| --- | --- |
+| [WeilConductorThreeKernel](WeilConductorThreeKernel.lean) and [DirichletModThreeCharacter](DirichletModThreeCharacter.lean) | Shared source of the same declarations, moved with unchanged namespaces, statements and defining bodies; historical import surfaces retain them. |
+| [WeilConductorThreeKernelTruncation](WeilConductorThreeKernelTruncation.lean) | Actual gamma integral convergence, exact finite exponential head plus entire remainder, uniform error `1/(4*M+1)`, and an all-accuracy cutoff producer. |
+| [WeilConductorThreeKernelSampling](WeilConductorThreeKernelSampling.lean) | Exact signed-hinge formula, explicit finite-head Lipschitz constant, measurable midpoint grid and whole-square spatial error `8*L_M/(N+1)`. |
+| [FiniteKernelEnclosure](../../FunctionalAnalysis/FiniteKernelEnclosure.lean) | Exact complex feature/cell moments and Fubini return to the existing rational realification checker; complete cell sums preserve a mean-zero constraint. |
+| [WeilConductorThreeKernelEnclosure](WeilConductorThreeKernelEnclosure.lean) | The actual source form is approximated by the finite cell quadratic with error `8*(1/(4*M+1)+8*L_M/(N+1))*integral |u|^2`; checked finite bounds return with every error and the original packet metric retained. |
+
+The final module proves a genuine uniform all-accuracy approximation:
+for every positive error there are finite gamma and grid indices that work
+for all stated L1/L2 inputs. It also supplies an actual one-cell rational
+packet, its Boolean acceptance, a separate source enclosure and the returned
+error-paid inequality. It does not produce useful positive multi-cell
+certificates or an executable transcendental enclosure algorithm.
+
+The raw sampled matrices are symmetric with zero diagonal. Nonzero such
+matrices cannot be positive on all unconstrained vectors; pursuing the
+arithmetic sign still needs the actual mean-zero derivative constraints,
+centering or physical Green metric. The proven error uses the L2 norm of
+`u`; for `u=f'` it remains derivative energy. The original physical
+`Q_4(f)` integration-by-parts/domain return and Green-energy comparison are
+still distinct obligations. Neither uniform approximation nor this finite
+acceptance control proves RH/GRH.
+
+The reused rational checker and two direct dependencies received narrow
+compatibility repairs under the existing pins. No acceptance condition,
+source enclosure, theorem hypothesis or matrix metric was weakened. The
+initial historical broad source build failed in `DirichletFiniteParseval`;
+that failure is retained separately from the new narrow source checks.
+See the [complete argument and evidence boundary](WeilConductorThreeKernelEnclosure.md)
+and [source extraction record](WeilConductorThreeKernel.md).
+
+This follow-up's four new mathematical modules contain 68 theorem/lemma
+declarations, including private supporting lemmas. The final pinned build
+and a transitive axiom audit of 150 public named declarations across the
+six new/shared and three repaired modules passed. Only `propext`,
+`Classical.choice`, and `Quot.sound` occur in their audited axiom sets.
+The fresh Lean-kernel replay has its own status in issue #1839; compilation
+and an axiom audit are not substituted for that separate check.
