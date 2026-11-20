@@ -576,27 +576,89 @@ degree is insufficient: in characteristic two, `f=t²` has degree
 audit checks actual Laurent grading examples, including this vanishing
 of the degree cast, and the failure to preserve a nonhomogeneous ideal.
 
-The next bounded geometric target is the private `et_unram` in
-[EtHolds.lean][et]: a finite-type `O`-algebra `C` whose maximal
-residue fields embed into `K`, and whose `K`-valued point derivations
-all vanish, is formally unramified over `O`. Its actual proof uses
-the finite `C`-module `Ω[C/O]`. If a fiber `Ω/mΩ` were nonzero, a
-nonzero residue-field dual functional, composed with the universal
-derivation and a residue-field embedding into `K`, would give a point
-derivation. Its forced vanishing makes the functional vanish on the
-generators `d(C)`, hence on all differentials, a contradiction. Once
-every maximal fiber vanishes, the finite-module Nakayama argument gives
-`Ω[C/O]=0`.
+The private `et_unram` in [EtHolds.lean][et] now has a checked local
+counterpart in
+[PointDerivationUnramified](../../CommutativeAlgebra/PointDerivationUnramified.md).
+For an injective residue embedding `ι:C/m→ₐ[O]K`, any actual
+`C`-linear map `F:Ω[C/O]→C/m` produces the point derivation
+`ι ∘ F ∘ d` at `ι ∘ q`. Its forced vanishing and injectivity of
+`ι` kill `F` on the spanning set `d(C)`. Consequently every dual
+functional of the actual residue-field vector space `Ω/mΩ` vanishes,
+so that fiber is zero. The finite-module Nakayama argument then gives
+`Ω[C/O]=0` and `Algebra.FormallyUnramified O C`. The core needs only
+finite generation of `Ω` and allows `K` to be any commutative ring;
+the finite-type wrapper supplies finite generation. Dual separation
+takes place over the field `C/m`.
 
-That theorem and the residue-point construction have been read but
-are not locally reconstructed in this pass. The subsequent fraction-field,
-finite/reduced algebra, and Jacobson arguments supply finiteness of
-the point set and separation by field-valued points. Those conclusions
-do not follow from the newly checked tangent statement alone: for
-example, `ℚ(i)` has no `ℚ`-valued points, so a condition on all such
-point derivations is vacuous and those points do not separate elements.
-The source's actual finite-type and algebraically closed field suppliers
-remain necessary for its reduced-slice return.
+[FiniteTypeResiduePoints](../../CommutativeAlgebra/FiniteTypeResiduePoints.md)
+supplies the residue embeddings for a finite-type algebra over a
+field with an algebraically closed target. Zariski's lemma makes each
+maximal residue field a finite algebraic extension of the base field,
+which embeds into the target. Its second return proves that points
+separate a reduced Jacobson ring when these residue embeddings exist:
+a nonzero element survives in some maximal residue field, hence in
+the corresponding point.
+
+[FiniteTypePointRigidity](../../CommutativeAlgebra/FiniteTypePointRigidity.md)
+now proves the full conditional `et_holds` return. Let `O` be a
+domain, let `K` be an algebraically closed field with faithful
+`O`-action, and let `C` be finite type over `O`. Assume every nonzero
+coefficient of `O` maps to a unit in `C`, and all point derivations
+vanish. The proof constructs compatible actual `FractionRing O`
+algebra structures on both `C` and `K`. It supplies the residue
+embeddings, proves formal unramifiedness over `O` and then over its
+fraction field, and obtains a finite-dimensional reduced algebra over
+that field. Distinct field-algebra maps are linearly independent, so
+there are finitely many of them. Every original `O`-algebra point
+respects the fraction scalars, and the proved extension of such points
+is injective. Finally, the reduced Jacobson argument gives
+
+\[
+\operatorname{Finite}(C\to_{O\text{-alg}}K),
+\qquad
+\bigl(\forall\xi:C\to_{O\text{-alg}}K,\ \xi(x)=0\bigr)
+\Longrightarrow x=0.
+\]
+
+The same module applies the previous `M4` theorem to the actual graded
+slice `C`, including the original `−2,+2` specialization. Finite type
+and inversion of every nonzero coefficient remain explicit inputs.
+Finiteness of the algebra is over `FractionRing O`, not asserted as
+an `O`-module. The generic return needs neither a DVR nor completeness
+nor characteristic zero once its stated suppliers are available.
+The imported audits check the exact source `PtDer = ⊥` form of
+`et_holds` and the literal graded-slice endpoint. Formal unramifiedness,
+residue embeddings, the finite/reduced return, and point separation
+are therefore no longer open local leaves under these hypotheses.
+
+The next bounded slice reconstruction is the actual supply and return
+around this theorem in `FtHolds` and [SliceHolds.lean][slice]:
+
+1. Use `IsWRing.gen` to choose finitely many algebra generators over
+   degree zero. The actual `M2` finite-module hypothesis supplies
+   finitely many generators for the image of degree zero in `A/I`.
+   Their union generates `A/I` as an `O`-algebra. Quotienting by
+   `f−1` and localizing away from the image of `πg` then supply
+   finite type of the actual `C`.
+2. Choose a nonzero irreducible DVR uniformizer `π`. Inverting `πg`
+   makes `π` a unit. Every nonzero coefficient is a unit times a
+   power of `π`, so all nonzero coefficients become units in `C`.
+3. Lift each normalized point of `A`, with `ξ(I)=0`, `ξ(f)=1`, and
+   `ξ(g)≠0`, uniquely through the quotient and Away localization.
+   Faithfulness gives `ξ(π)≠0`. The checked finite point set then
+   makes these normalized points finite.
+4. If `h` vanishes at all normalized points, the checked separation
+   theorem kills its image in `C`. The actual localization-zero
+   criterion gives `(πg)^n h∈I+(f−1)`, or equivalently
+   `c g^n h∈I+(f−1)` with `c=π^n≠0`. This is the precise input
+   consumed by the already checked dehomogenization and denominator
+   return.
+
+These four supplier/return steps have been identified analytically;
+they are not yet locally reconstructed Lean theorems. Their completion
+must retain the actual normalized points and quotient/localization
+maps, rather than replacing the required slice relation by an
+assumption.
 
 Once that return upgrades local nilpotence to local vanishing for
 homogeneous elements (`red`), the precise cyclicity step is as follows.
@@ -803,6 +865,36 @@ does not claim a second kernel execution. Fresh full-dependency replay,
 independently implemented kernel checking, and external-consumer
 substitution remain **NOT_RUN**.
 
+The differential/point continuation adds three modules and 16 public
+theorems, with no new definitions or private theorem helpers:
+
+| Local component | Established source return |
+|---|---|
+| [Point derivations and unramifiedness](../../CommutativeAlgebra/PointDerivationUnramified.md) | Actual residue-valued differential maps, maximal-fiber dual separation, finite-module Nakayama, and the complete `et_unram` return. |
+| [Finite-type residue points](../../CommutativeAlgebra/FiniteTypeResiduePoints.md) | Actual maximal residue embeddings into an algebraically closed field and separation in a reduced Jacobson ring. |
+| [Finite-type point rigidity](../../CommutativeAlgebra/FiniteTypePointRigidity.md) | Finite-dimensionality and reducedness over the fraction field, finite original `O`-point set, point separation, exact conditional `et_holds`, and the actual graded-slice specialization. |
+
+All three final maintained sources and all three imported
+endpoint/axiom/control audits passed
+`--trust=0 -DwarningAsError=true` at the unchanged Lean and Mathlib
+pins. Fifteen public theorem axiom queries report exactly `propext`,
+`Classical.choice`, and `Quot.sound`; fraction-scalar compatibility
+uses only `propext` and `Quot.sound`. The imported audits check the
+source's genuine point-derivation submodule and original point type.
+Compiled controls cover noninjective residue maps into the zero ring,
+the nonzero divisible `ℤ`-module `ℚ`, relative unramifiedness of a
+nonreduced identity algebra,
+absence of real points on `ℂ/ℝ`, nilpotents invisible to field-valued
+points, a nonvacuous field-base instance, and missing coefficient
+inversion. The adjacent records distinguish analytical counterexamples
+from compiled assertions and retain every earlier failed attempt with
+its actual source identity and outcome. All nine package heads and
+tracked source cleanliness, compiler identity, and unchanged root
+imports/dependency configuration were rechecked. Separate read-only
+mathematical/source and saved-evidence review did not execute another
+kernel. Fresh full-dependency replay, independently implemented kernel
+checking, and external-consumer substitution remain **NOT_RUN**.
+
 The companion [route walkthrough](SubmittedRiemannHypothesisRoute.md)
 explains the one-sided Landau mechanism and the exact local consumers.
 Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
@@ -822,12 +914,17 @@ nonzero-degree dehomogenization, actual post-slice localization return,
 and finite-image local nilpotence now have local checked proofs.
 The actual Euler derivation, homogeneous-ideal preservation, localization
 pullback injectivity, and complete `M4`-to-zero-slice-derivations step
-also now have checked local proofs. The next bounded geometric
-reconstruction is `et_unram`: use the actual Kähler differential module,
-residue-field embeddings and Nakayama to obtain formal unramifiedness.
-Finite type, finiteness/reducedness and point separation still need their
-local suppliers; the explicit conditional cyclicity and residue-field
-length arguments above remain further algebraic targets.
+also now have checked local proofs. Actual Kähler-differential
+detection, residue embeddings, Nakayama, and the full conditional
+`et_holds` return now supply formal unramifiedness, reducedness,
+finiteness of the original point set, and point separation. The actual
+graded-slice specialization retains finite type and inversion of all
+nonzero coefficients as explicit hypotheses. The next reconstruction
+supplies them from `IsWRing.gen`, `M2`, and the DVR uniformizer, then
+lifts normalized points and clears the localization denominator to
+obtain the precise slice relation. Local reducedness, the explicit
+conditional quadratic cyclicity, and the residue-field length-one
+arguments above remain further algebraic targets.
 The Rees/Herbrand and lower cotangent comparisons also remain necessary
 for the full factor-two deformation-to-valuation estimate.
 

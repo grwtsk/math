@@ -172,13 +172,34 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   have checked local sources and imported endpoint/control audits;
   all public axiom sets are subsets of the standard three. The degree
   must remain nonzero in the point field, not merely in the integers.
-  The next bounded geometric target is `et_unram`: actual residue-field
-  duals of the Kähler differential fibers and Nakayama must turn zero
-  point derivations into formal unramifiedness. Finite type, residue-point
-  embeddings, finite/reduced algebra and point separation remain
-  separate suppliers. The audit also records the subsequent conditional
-  quadratic cyclicity and residue-field length-one returns. Full
-  Rees/Herbrand and lower comparisons remain open locally.
+  [PointDerivationUnramified](../../CommutativeAlgebra/PointDerivationUnramified.md)
+  now proves the complete `et_unram` return using actual Kähler
+  differentials, residue-field duals, and finite-module Nakayama.
+  [FiniteTypeResiduePoints](../../CommutativeAlgebra/FiniteTypeResiduePoints.md)
+  constructs the maximal residue embeddings for a finite-type algebra
+  over a field with an algebraically closed target and proves reduced
+  Jacobson point separation.
+  [FiniteTypePointRigidity](../../CommutativeAlgebra/FiniteTypePointRigidity.md)
+  constructs compatible fraction-field scalar actions and proves the
+  full conditional `et_holds` return: reducedness, a finite set of the
+  original `O`-algebra points, and separation by those points. It also
+  applies the result to the actual graded slice under supplied finite
+  type, coefficient inversion, and full `M4`. These three modules add
+  16 public theorems, no private helpers or definitions; all final
+  sources and imported endpoint/control audits pass trust-zero checks.
+  Fifteen public reports give the standard three axioms, and the
+  fraction-scalar compatibility theorem uses only `propext` and
+  `Quot.sound`. Algebra finiteness is over `FractionRing O`, not
+  asserted as an `O`-module.
+  The next bounded slice reconstruction supplies finite type from
+  `IsWRing.gen` and `M2`, coefficient units from the DVR uniformizer,
+  and the exact lift of normalized points through the quotient/Away
+  localization. Point separation must then be returned through the
+  actual localization-zero criterion to give `c g^n h∈I+(f−1)` with
+  `c≠0`, the input to the checked dehomogenization return. Local
+  reducedness, the subsequent conditional quadratic cyclicity, and the
+  residue-field length-one return remain open locally, as do the full
+  Rees/Herbrand and lower cotangent comparisons.
   Independent kernel replay and external consumer substitution remain
   unperformed. The external
   [verification notes at the latest inspected revision](https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/verification/NOTES.md#results)

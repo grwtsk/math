@@ -560,16 +560,98 @@ degree magnitudes, retaining `(d:K)≠0` for the degree of `f`. Integer
 nonzero degree alone fails in characteristic dividing `d`; the
 compiled Euler controls include a genuine Laurent grading over `𝔽₂`.
 
-The next bounded geometric target is the source's `et_unram`:
-finite type, embeddings of all maximal residue fields into `K`, and
-zero point derivations imply `Algebra.FormallyUnramified O C`.
-A nonzero fiber of the actual differential module `Ω[C/O]` would
-give a nonzero point derivation through a residue-field dual functional.
-After ruling out all such fibers, Nakayama kills the finite differential
-module. This implication, the finite-type/residue-point suppliers, and
-the later finite/reduced algebra and point-separation results remain
-unproved locally. They are needed to produce the slice membership
-consumed by the earlier dehomogenization return.
+### From zero point derivations to finite separating slice points
+
+The source's `et_unram` and full conditional `et_holds` now have
+checked local proofs. Three modules make the successive implications
+explicit.
+
+First,
+[PointDerivationUnramified](../../CommutativeAlgebra/PointDerivationUnramified.md)
+uses the actual universal derivation `d:C→Ω[C/O]`. If a `C`-linear
+map `F:Ω[C/O]→C/m` were nonzero and `ι:C/m→K` were an injective
+residue embedding, then `ι ∘ F ∘ d` would be a point derivation at
+the point `ι ∘ q`. The tangent hypothesis makes it zero. Injectivity
+of `ι` and the fact that `d(C)` spans `Ω` force `F=0`. Every dual
+functional on the residue-field vector space `Ω/mΩ` is therefore
+zero, so the fiber vanishes. Finite generation and Nakayama give
+`Ω=0`, which is precisely `Algebra.FormallyUnramified O C`.
+The core assumes only that `Ω` is finite; the finite-type version
+supplies this automatically. The target can be any commutative ring
+with the stated injective residue embeddings.
+
+Second,
+[FiniteTypeResiduePoints](../../CommutativeAlgebra/FiniteTypeResiduePoints.md)
+constructs those embeddings when the base is a field, `C` is finite
+type, and `K` is algebraically closed. Every maximal residue field is
+a finite algebraic extension of the base field and hence embeds into
+`K`. The same module proves the later separation step: in a reduced
+Jacobson ring, the intersection of maximal ideals is zero. A nonzero
+element survives in some maximal quotient and therefore in the point
+obtained from that quotient's injective embedding.
+
+Third,
+[FiniteTypePointRigidity](../../CommutativeAlgebra/FiniteTypePointRigidity.md)
+returns to the coefficient domain `O`. Assume `K` is an algebraically
+closed field with faithful `O`-action, `C` is finite type over `O`,
+and every nonzero coefficient of `O` becomes a unit in `C`. The proof
+constructs compatible scalar actions by the actual fraction field
+`F=FractionRing O` on both `C` and `K`. It obtains the residue
+embeddings, uses the first module to prove formal unramifiedness, and
+passes to the field base `F`. The finite-type formally unramified
+`F`-algebra is finite-dimensional and reduced.
+
+Distinct `F`-algebra maps from a finite-dimensional algebra are
+linearly independent, giving finiteness of its point set. A separate
+proved compatibility theorem shows that every original `O`-algebra
+point respects the fraction scalars; this keeps the result on the
+source's original point type. Reducedness and the Jacobson separation
+theorem then give the complete endpoint
+
+\[
+\#\operatorname{Hom}_{O\text{-alg}}(C,K)<\infty,
+\qquad
+\bigcap_{\xi:C\to_{O\text{-alg}}K}\ker\xi=0.
+\]
+
+The algebra's finite dimension is over `F`; finite generation as an
+`O`-module is not asserted. The generic return needs only a coefficient
+domain once the displayed suppliers hold. DVR structure, completeness,
+and characteristic zero are not additional premises of that return.
+They have their roles in the source's earlier construction and in the
+`−2,+2` tangent specialization.
+
+The final theorem applies these results to the actual normalized and
+localized graded slice, using the full supplied `M4` to kill point
+derivations. The source `−2,+2` specialization is included. Its finite
+type and coefficient-inversion hypotheses are still explicit. These
+three modules add 16 public theorems; their exact maintained sources
+and imported endpoint/control audits pass trust-zero checking at the
+unchanged root pins. Fifteen public axiom reports give the standard
+three axioms, while the fraction-scalar compatibility theorem uses
+only `propext` and `Quot.sound`.
+
+The next slice step is now concrete. Use `IsWRing.gen` and the actual
+finite degree-zero quotient image from `M2` to prove `A/I` finite
+type; pass that property through the quotient by `f−1` and the Away
+localization. Inverting `πg` makes the DVR uniformizer `π` a unit,
+and factorization of nonzero coefficients gives all required units.
+Then the quotient and localization universal properties lift exactly
+the normalized points `ξ(I)=0`, `ξ(f)=1`, `ξ(g)≠0` to points of
+`C`. If `h` vanishes at those normalized points, the checked point
+separation kills its image in `C`. Clearing the actual localization
+denominator produces
+
+\[
+(\pi g)^n h\in I+(f-1),
+\qquad\text{equivalently}\qquad
+c g^n h\in I+(f-1),\quad c=\pi^n\ne0.
+\]
+
+These finite-type/unit suppliers and normalized-point/denominator
+returns remain to be reconstructed locally. The final displayed
+relation is the exact input to the earlier checked dehomogenization
+and denominator return.
 
 The [expanded audit](SubmittedRiemannHypothesisArithmeticAudit.md#the-remaining-geometric-length-one-supplier)
 also spells out the subsequent conditional cyclicity argument:
