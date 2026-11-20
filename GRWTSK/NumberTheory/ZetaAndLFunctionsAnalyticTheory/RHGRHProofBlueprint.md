@@ -139,6 +139,22 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   open locally. The expanded arithmetic audit traces that supplier to
   concrete lower and upper length comparisons and the graded-algebra
   factor-two argument; their full dependency replay is still unperformed.
+  The [graded quotient sequence](../../CommutativeAlgebra/GradedQuotientExact.md),
+  [localized length inequality](../../CommutativeAlgebra/LocalizedGradedLength.md),
+  and [finite squaring return](../../CommutativeAlgebra/GradedSquareFamilyLength.md)
+  now have original local proofs. They construct the actual maps and
+  homogeneous kernel preimages, retain extended-natural lengths, and
+  prove the variable-degree `2^n c` bound from an all-weight premise.
+  The literal five-family specialization squares `F,E`, retains
+  `G,E′,Z`, and gives `2^(r+1+r′)` from the original all-weight bound
+  at most one. All three maintained modules passed trust-zero source
+  checks at the root pins. Their 21 public theorems and two private
+  containment helpers supply this finite step; the geometric length-one
+  supplier and full Rees/Herbrand and lower comparisons remain open
+  locally. The next bounded target is the homogeneous dehomogenization
+  consequence recorded in the arithmetic audit. The external
+  [verification notes at the latest inspected revision](https://github.com/Deicyde/riemann-hypothesis/blob/bdb1810a06c78f246da285c9bcbe7db2cd992888/verification/NOTES.md#results)
+  still report the full submission build in progress.
   The concurrent
   [conductor-three integrated-kernel return](WeilConductorThreeKernelReturn.md)
   has its own established source identity and retains its sign-certificate

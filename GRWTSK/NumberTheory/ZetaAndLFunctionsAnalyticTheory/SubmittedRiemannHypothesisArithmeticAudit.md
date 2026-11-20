@@ -27,6 +27,14 @@ notes are unchanged. The [notes at that revision](https://github.com/Deicyde/rie
 still report the full build in progress. No completed external verdict
 was observed in this refresh.
 
+The graded-algebra continuation inspected external `main` at
+`bdb1810a06c78f246da285c9bcbe7db2cd992888`. Its one additional commit
+sets `LEAN_ABORT_ON_PANIC=1` in the README commands and CI challenge job;
+it changes no submitted Lean proof or verification result. The
+[verification notes at that revision](https://github.com/Deicyde/riemann-hypothesis/blob/bdb1810a06c78f246da285c9bcbe7db2cd992888/verification/NOTES.md#results)
+still report the build in progress. The mathematical comparison remains
+at the unchanged source pin above.
+
 ## Finite count, integer witness, and valuation sum
 
 ### 1. Polynomially many automorphic systems
@@ -280,7 +288,7 @@ circularity was visible in the inspected OneChar, model, and PropGK
 bodies. This bounded observation is not a global noncircularity or
 verification verdict for all imported results.
 
-### A precise next graded-algebra target
+### Checked graded quotient and finite-squaring return
 
 The source `locLen_aPiece_sup_span_sq_le_add` in
 [LocLenAPieceSupSpanSqLeAdd.lean][squarelength] proves a useful actual
@@ -296,28 +304,133 @@ L_\sigma\big((A/(J+(t)))_{w-d}\big)
 +L_\sigma\big((A/(J+(t)))_w\big).
 \]
 
-The proof must construct the actual multiplication-by-`t` map from the
-first right-hand piece to the left-hand piece, followed by the quotient
+The local [graded exact-sequence module](../../CommutativeAlgebra/GradedQuotientExact.md)
+now constructs the actual multiplication-by-`t` map from the first
+right-hand piece to the left-hand piece, followed by the quotient
 projection to the second right-hand piece. Their image and kernel agree.
 For an element of the kernel, write a representative as `j+tc`; taking
 its weight-`w` component gives `j_w+t c_(w-d)` because `J` is homogeneous.
 That provides the required preimage. The reverse inclusion follows
-because the projection kills `t`. Localization preserves this exactness,
-and module-length subadditivity gives the inequality. No injectivity of
-the first map is asserted or needed.
+because the projection kills `t`. The [localized length module](../../CommutativeAlgebra/LocalizedGradedLength.md)
+then applies localization exactness and actual `Module.length`
+subadditivity. It first proves the inequality at an arbitrary prime
+of `B`, then specializes to `ker σ`. No injectivity of the first map is
+asserted or needed: the length proof factors the exact pair through its
+actual image modules.
 
 The shift `w−d` is essential: with `A=k[x]`, `t=x`, `J=0`, `w=1`,
 replacing it by `w` would give the false inequality `1≤0`. Lengths must
 retain their possible infinite value; truncation to natural numbers
-would require additional finiteness. A generic length theorem merely
-assuming unspecified exact maps would not finish this source target.
+would require additional finiteness. The maintained result includes the
+explicit quotient maps and their homogeneous preimage proof, as well as
+the general module-length deduction.
 
-Iterating this square-equation estimate contributes the upper power
-`2^(r+1+r′)` used by `up_holds` in [TwoSigned.lean][twosigned]; the lower
-bound in [AdmissibleMonoIdeal.lean][low] supplies `2^(r+r′)`. This is a
-concrete next source reconstruction inside the deformation argument.
-No local Lean proof of this graded quotient target is claimed in the
-present continuation.
+The [finite-family module](../../CommutativeAlgebra/GradedSquareFamilyLength.md)
+also completes the iteration on the actual generated ideals. If `t_i`
+has degree `d_i` and the initial length is bounded at **every** weight,
+then
+
+\[
+\left[\forall w,\quad L_\sigma((A/(J+(t_i)))_w)\le c\right]
+\Longrightarrow
+\forall w,\quad L_\sigma((A/(J+(t_i^2)))_w)\le2^n c.
+\]
+
+Square one equation while retaining the other unsquared equations in the
+background ideal. The one-equation estimate uses weights `w-d_i` and
+`w`, each bounded by `c`, so it gives `2c`. The squared generator is
+homogeneous and can be put into the background for the next induction
+step. The empty family has cost one. The local theorem permits a
+different degree for each generator; the source's common-degree
+`Fin n` lemma in [LocLenAPieceIdeal2LeTwoPow.lean][squarefamily] is a
+specialization. All-weight uniformity is retained in both statements.
+
+The final local endpoint expands the source's five families from
+[OrbitVanishingLocal.lean][orbitlocal] and the literal `ideal2` from
+[ToDegInjective.lean][gradedobjects]:
+
+| Family | Number | Degree | Equation used in `ideal2` |
+|---|---:|---:|---|
+| `F` | `r+1` | `−1` | `F_i²` |
+| `G` | `s` | `−2` | `G_i` |
+| `E` | `r′` | `+1` | `E_i²` |
+| `E′` | `s′` | `+2` | `E′_i` |
+| `Z` | `m` | `0` | `Z_i` |
+
+Retaining `J=(G,E′,Z)` and combining `F,E` as a disjoint indexed family
+gives exactly
+
+\[
+\left[\forall w,\ L_\sigma((A/(F,G,E,E',Z))_w)\le1\right]
+\Longrightarrow
+\forall w,\ L_\sigma((A/(F^2,G,E^2,E',Z))_w)\le2^{r+1+r'}.
+\]
+
+This proves the finite squaring step used by `up_holds` in
+[TwoSigned.lean][twosigned]. The separate lower comparison in
+[AdmissibleMonoIdeal.lean][low] carries `2^(r+r′)`. Their common positive
+factor cancels in the numerical core, leaving two. The geometric
+length-one premise, Rees-module comparison, Herbrand estimate, and full
+lower theorem remain distinct suppliers; they are not proved merely by
+this finite multiplication factor.
+
+### The remaining geometric length-one supplier
+
+The next substantive input is
+`locLen_quotientWeightPiece_le_one` in
+[LocLenQuotientWeightPieceLeOne.lean][lengthone]. Its actual hypotheses
+include the coefficient DVR and field conditions, a homogeneous ideal,
+finiteness of the degree-zero quotient image (`M2`), linear dependence
+of point derivations at the stated two-signed points (`M4`), and
+`¬ idD 𝒜 ≤ ker σ`. Its conclusion is the all-weight length bound at most
+one used above. Taking that conclusion as a premise of the squaring
+theorem does not reconstruct its geometric proof.
+
+The inspected body chooses homogeneous `f,g` of degrees `−2,+2` with
+`σ(fg)≠0`. Finiteness produces polynomial relations that make elements
+of `ker σ` locally nilpotent modulo the ideal. The slice and
+dehomogenization arguments then establish the required local reducedness
+for homogeneous elements. Suitable powers of `f` or `g`, and quadratic
+pairings of degree pieces, show that each localized weight piece is
+cyclic. It is killed by the maximal ideal, hence is a quotient of the
+residue field and has length at most one.
+
+The [slice proof][slice] uses the Euler derivation after normalizing a
+nonzero-degree element to one. The tangent hypothesis forces the
+remaining derivations to vanish; further finite/reduced algebra suppliers
+are then invoked. Those suppliers and their full dependency closure
+have not been reconstructed or replayed here.
+
+A precise smaller next target is `deh_holds` in [DehHolds.lean][deh]:
+
+\[
+J\text{ homogeneous},\quad f\in A_d,\ d\ne0,\quad h\in A_w,
+\quad h\in J+(f-1)
+\quad\Longrightarrow\quad
+\exists n\in\mathbb N,\ f^n h\in J.
+\]
+
+Its source proof writes `h=j+u(f−1)` and lets `c_k` be the degree-`k`
+component of `u`. Modulo `J`, projection gives
+`c_(k+d)=f c_k` away from degree `w`, and
+`c_w=f c_(w-d)−h` at degree `w`. Finite support and `d≠0` force
+`c_(w-d)=0` modulo `J` by going backwards along the progression. Going
+forwards gives `c_(w+nd)=−f^n h` modulo `J`, and the component eventually
+vanishes in `A`. This proves the
+stated annihilation consequence analytically. Its local Lean
+reconstruction is **NOT_RUN**. The condition `d≠0` is necessary: with
+the trivial grading on `ℚ`, `f=2,h=1,J=0`, membership in `(f−1)` holds
+but no `f^n h` vanishes. This leaf would supply part of local
+reducedness, not the entire length-one or slice theorem.
+
+The later [Herbrand estimate][herbrand] has a separate substantial
+role. It relates the finite-length cokernel-minus-kernel quantity for
+multiplication by an element to a sum of its valuations at actual
+coefficient-field points. It requires a finite module, the stated finite
+annihilator quotient, nonzero point values, local length bounds, and
+vanishing outside the finite selected support. Its proof uses prime
+filtration and exact-sequence additivity. Source inspection of this
+body is not a completed local or external proof replay.
 
 ### Source identities for this deeper inspection
 
@@ -333,6 +446,13 @@ the top of this record. Representative SHA-256 values are:
 | [LinkedUnlE.lean][linked] | `107b75233150ebd8a27bd37ae350a295996a79c863f3d469a925c0f1f78fd0a7` |
 | [AlgMemCoef.lean][algcore] | `82a16f09d05845c3e9f495c2f10c7048abeae9315506c368812e7871aa4b30c6` |
 | [LocLenAPieceSupSpanSqLeAdd.lean][squarelength] | `7ce3da392d0b3655fee9bad840eb5d2743672a654b1f2d309948d012daa5fcf5` |
+| [ToDegInjective.lean][gradedobjects] | `af6ef0b972e029cff93e557ee5e94d33f623e296189f9c7cc95cb03456edca2d` |
+| [OrbitVanishingLocal.lean][orbitlocal] | `ba2f665873fc0708b75fcd3ae2cfc5ea127d7f159f58d39d012df5483fc15913` |
+| [LocLenAPieceIdeal2LeTwoPow.lean][squarefamily] | `951a47248af0fdb1f63dfe57b95080c0ef234b008e9caa016111dd0f2fa165a8` |
+| [LocLenQuotientWeightPieceLeOne.lean][lengthone] | `fbd4cd271111e957575ff3514a0be7b74ca6d0be0c2dc48fe3e852ca8e7a0116` |
+| [SliceHolds.lean][slice] | `94ad21402a77fc958c4f53d9b543be425bc82a6b82f966e3245dcfa41d7a20ab` |
+| [DehHolds.lean][deh] | `02f6ce5034e64a7a987eaedbaede444e5f82b7af76fe43b5a868150a64225aa0` |
+| [HerbrandFinLen.lean][herbrand] | `00e8a2a5990e6c9f4291685e13bc2b859d08b277446a2fa03f684a9c3914faf1` |
 
 ## From count bounds to the VWin budget
 
@@ -411,6 +531,27 @@ digests. Fresh full-dependency replay, an independent kernel
 implementation, and substitution into the external automorphic consumer
 are **NOT_RUN**. This evidence concerns the local finite reconstruction.
 
+The graded continuation adds three modules and 21 public theorem bodies,
+plus two private ideal-containment helpers:
+
+| Local component | Established source return |
+|---|---|
+| [Graded quotient maps](../../CommutativeAlgebra/GradedQuotientExact.md) | Actual shifted multiplication, quotient projection, homogeneous kernel preimages, exactness, and projection surjectivity. |
+| [Localized lengths](../../CommutativeAlgebra/LocalizedGradedLength.md) | The actual `Module.length` inequality after prime localization, including the source's field-point specialization. |
+| [Finite squaring](../../CommutativeAlgebra/GradedSquareFamilyLength.md) | The variable-degree `2^n c` induction and the expanded five-family `2^(r+1+r′)` return, with the original all-weight premise retained. |
+
+All three maintained sources passed `--trust=0` with warnings as errors
+against the unchanged root Lean/Mathlib pins. Their three imported
+endpoint/control audits passed with the same flags, and all 21 public
+theorem axiom reports list exactly `propext`, `Classical.choice`, and
+`Quot.sound`. The adjacent records bind
+the source and imported audits to their exact digests, distinguish
+analytical counterexamples from compiled controls, and retain failed
+development attempts. A separate source review compared the actual
+objects, hypotheses, degree shifts, and final five-family ideals.
+Fresh full-dependency replay, an independent kernel implementation, and
+substitution into the external deformation consumer are **NOT_RUN**.
+
 The companion [route walkthrough](SubmittedRiemannHypothesisRoute.md)
 explains the one-sided Landau mechanism and the exact local consumers.
 Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
@@ -424,10 +565,13 @@ The meaningful remaining verification is the actual source-bound proof of those 
 The private `vl_bound` and injective class-map norm comparison now have
 checked local counterparts. Constructing the arithmetic classifier and
 proving the substantive `OneCharU_s` supplier remain necessary to apply
-the checked integer budget to actual deformation lengths. The next
-bounded reconstruction identified above is the actual localized graded
-quotient inequality, with its multiplication map, projection, and
-homogeneous exactness proof, inside the factor-two upper estimate.
+the checked integer budget to actual deformation lengths. The actual
+graded quotient sequence, localized inequality, and finite squaring
+return now have local checked proofs. The next bounded reconstruction
+is the nonzero-degree dehomogenization consequence above, followed by
+the substantive local reducedness/cyclicity and length-one suppliers.
+The Rees/Herbrand and lower cotangent comparisons also remain necessary
+for the full factor-two deformation-to-valuation estimate.
 
 [count]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean
 [cohomology]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/CohBoundFree.lean
@@ -462,3 +606,9 @@ homogeneous exactness proof, inside the factor-two upper estimate.
 [squarelength]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocLenAPieceSupSpanSqLeAdd.lean
 [twosigned]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/TwoSigned.lean
 [low]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/AdmissibleMonoIdeal.lean
+[gradedobjects]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ToDegInjective.lean
+[squarefamily]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocLenAPieceIdeal2LeTwoPow.lean
+[lengthone]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocLenQuotientWeightPieceLeOne.lean
+[slice]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/SliceHolds.lean
+[deh]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/DehHolds.lean
+[herbrand]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/HerbrandFinLen.lean

@@ -353,9 +353,83 @@ The substantive remaining input supplies
 arithmetic length, model cotangent length, and graded algebra. The
 [expanded arithmetic audit](SubmittedRiemannHypothesisArithmeticAudit.md#below-onechar-the-two-length-comparisons)
 now identifies the concrete theorem bodies behind those comparisons,
-the origin of the factor two, and a precise next localized graded
-quotient estimate. The local observation theorem retains this input
+the origin of the factor two, and the local graded reconstruction below.
+The local observation theorem retains this input
 explicitly; with it, the proved summation gives `Σ_o Vn(o)≤2v_ℓ(N)`.
+
+### The graded algebra behind the multiplicity factor
+
+Three further local modules now prove the actual quotient-map step and
+its finite iteration. Let `A=⊕_w A_w`, `B=A₀`, let `J` be a homogeneous
+ideal, and let `t∈A_d`. The notation `(A/I)_w` denotes the actual image
+of `A_w` in `A/I`. The [graded exact-sequence construction](../../CommutativeAlgebra/GradedQuotientExact.md)
+builds
+
+\[
+(A/(J+(t)))_{w-d}
+\xrightarrow{\ \times t\ }
+(A/(J+(t^2)))_w
+\xrightarrow{\ \pi\ }
+(A/(J+(t)))_w.
+\]
+
+Multiplication is well defined because `t(J+(t))⊆J+(t²)`. Projection
+is well defined because `J+(t²)⊆J+(t)`. If a homogeneous representative
+`a` projects to zero, write `a=j+tc` and take degree `w`. Homogeneity of
+`J` gives `a=j_w+t c_(w-d)`, with `j_w∈J`; the class of `c_(w-d)` is
+the required preimage. This proves exactness. Projection is also
+surjective, but multiplication need not be injective.
+
+The [localized length proof](../../CommutativeAlgebra/LocalizedGradedLength.md)
+localizes this actual pair at any prime `P` of `B` and uses module length
+in `ℕ∞`. Factoring through the image modules gives
+
+\[
+L_P((A/(J+(t^2)))_w)
+\le L_P((A/(J+(t)))_{w-d})+L_P((A/(J+(t)))_w).
+\]
+
+The degree shift matters: for `A=k[x],t=x,J=0,w=1`, the middle piece
+has length one, the last piece has length zero, and the shifted first
+piece has length one. Removing the shift would give `1≤0`.
+
+The [finite-family theorem](../../CommutativeAlgebra/GradedSquareFamilyLength.md)
+assumes a bound `c` for the original quotient at **every** weight. It
+squares one homogeneous equation at a time, applying that bound at
+both required weights. Each step costs at most two; `n` equations give
+`2^n c`. Individual equations can have different degrees. Empty
+families, repeated values, and infinite length bounds remain valid.
+
+The final theorem uses the source's literal five families. It squares
+the `r+1` equations `F` of degree `−1` and the `r′` equations `E` of
+degree `+1`, while retaining `G,E′,Z` of degrees `−2,+2,0`. At the prime
+kernel of a field-valued point `σ`, it proves
+
+\[
+\left[\forall w,\ L_\sigma((A/(F,G,E,E',Z))_w)\le1\right]
+\Longrightarrow
+\forall w,\ L_\sigma((A/(F^2,G,E^2,E',Z))_w)\le2^{r+1+r'}.
+\]
+
+This is the finite multiplicity estimate appearing in the upper
+deformation argument. Its lower comparison carries `2^(r+r′)`, so
+their ratio is exactly two. The three modules contain 21 public theorem
+bodies and two private containment helpers. All maintained sources
+passed trust-zero checks with warnings as errors; their adjacent records
+give exact source identities, endpoint/axiom audits, retained failures,
+and the limits of that verification.
+
+The original length-at-most-one premise still requires the genuine
+finite degree-zero algebra and tangent/rigidity argument. Its source
+passes through local reducedness and cyclicity; the later Rees and
+Herbrand comparisons connect those lengths to valuations. The
+[expanded audit](SubmittedRiemannHypothesisArithmeticAudit.md#the-remaining-geometric-length-one-supplier)
+identifies their exact statements and the next bounded target:
+for homogeneous `J`, `f∈A_d` with `d≠0`, and homogeneous `h`, membership
+`h∈J+(f−1)` implies `f^n h∈J` for some natural `n`. Its finite-support
+argument is reviewed analytically but has no local Lean reconstruction
+yet. Completing the squaring estimate supplies no missing rigidity,
+Herbrand, automorphy, or character-window premise by itself.
 
 ## 6. The final zero transport
 
@@ -420,6 +494,14 @@ The valuation continuation refreshed revision
 since that previous refresh. The [verification notes at the new revision](https://github.com/Deicyde/riemann-hypothesis/blob/8b83d5e7b319ebc7b3be6e59ce3411ba2b09d116/verification/NOTES.md#results)
 are unchanged and still report the full build in progress. No submitted
 Lean proof changed and no completed full-submission verdict was observed.
+
+The graded continuation checked external revision
+`bdb1810a06c78f246da285c9bcbe7db2cd992888`. The added commit only sets
+`LEAN_ABORT_ON_PANIC=1` in the README build commands and CI challenge
+job. Submitted Lean files and the
+[verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/bdb1810a06c78f246da285c9bcbe7db2cd992888/verification/NOTES.md#results)
+are unchanged; the full build is still reported in progress. This is
+separate from the completed checks of the new local graded modules.
 
 ## 8. Source pins and continuation
 
