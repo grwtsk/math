@@ -35,6 +35,20 @@ it changes no submitted Lean proof or verification result. The
 still report the build in progress. The mathematical comparison remains
 at the unchanged source pin above.
 
+The dehomogenization continuation refreshed external `main` at
+`712a6aef8fe265fb6f3a5fa1f3101a017aec8fe9`. The intervening changes affect
+the cache URL, comparator configuration, README, and verification notes;
+no submitted Lean proof changed. The [notes at this revision](https://github.com/Deicyde/riemann-hypothesis/blob/712a6aef8fe265fb6f3a5fa1f3101a017aec8fe9/verification/NOTES.md)
+report checker compatibility limits: con-leche and con-ron cannot
+process a mutual inductive block with a reflexive member in the
+dependencies, and the bundled lean4lean encounters a core-version
+mismatch. The configured export checkers are now Lean paranoid and
+nanoda; a compatible lean4lean replay is described separately. These
+are maintainers' tool-status reports, not mathematical counterexamples
+or completed independent checks performed here. The notes report a
+large solution export but their Results section still says the build
+is in progress. No completed full-submission verdict was observed.
+
 ## Finite count, integer witness, and valuation sum
 
 ### 1. Polynomially many automorphic systems
@@ -387,21 +401,13 @@ one used above. Taking that conclusion as a premise of the squaring
 theorem does not reconstruct its geometric proof.
 
 The inspected body chooses homogeneous `f,g` of degrees `−2,+2` with
-`σ(fg)≠0`. Finiteness produces polynomial relations that make elements
-of `ker σ` locally nilpotent modulo the ideal. The slice and
-dehomogenization arguments then establish the required local reducedness
-for homogeneous elements. Suitable powers of `f` or `g`, and quadratic
-pairings of degree pieces, show that each localized weight piece is
-cyclic. It is killed by the maximal ideal, hence is a quotient of the
-residue field and has length at most one.
+`σ(fg)≠0`. Three algebraic inputs to that body now have local checked
+proofs. Their geometric slice supplier remains explicit.
 
-The [slice proof][slice] uses the Euler derivation after normalizing a
-nonzero-degree element to one. The tangent hypothesis forces the
-remaining derivations to vanish; further finite/reduced algebra suppliers
-are then invoked. Those suppliers and their full dependency closure
-have not been reconstructed or replayed here.
+#### Dehomogenization and its actual localization return
 
-A precise smaller next target is `deh_holds` in [DehHolds.lean][deh]:
+The local [GradedDehomogenization](../../CommutativeAlgebra/GradedDehomogenization.md)
+reconstructs `deh_holds` in [DehHolds.lean][deh]:
 
 \[
 J\text{ homogeneous},\quad f\in A_d,\ d\ne0,\quad h\in A_w,
@@ -416,12 +422,146 @@ component of `u`. Modulo `J`, projection gives
 `c_w=f c_(w-d)−h` at degree `w`. Finite support and `d≠0` force
 `c_(w-d)=0` modulo `J` by going backwards along the progression. Going
 forwards gives `c_(w+nd)=−f^n h` modulo `J`, and the component eventually
-vanishes in `A`. This proves the
-stated annihilation consequence analytically. Its local Lean
-reconstruction is **NOT_RUN**. The condition `d≠0` is necessary: with
+vanishes in `A`. The maintained Lean proof constructs this finite-support
+recurrence in the actual quotient and proves the stated consequence
+without cancellation by `f`.
+
+The [localization continuation](../../CommutativeAlgebra/GradedDehomogenizationLocalization.md)
+also proves the converse and the exact localization-zero criterion:
+
+\[
+h\in J+(f-1)
+\iff \exists n,\ f^nh\in J
+\iff [h]/1=0\text{ in }(A/J)[1/\bar f].
+\]
+
+The first equivalence retains the homogeneous hypotheses; the second
+uses the actual `Localization.Away` ring. It identifies the kernels
+on homogeneous elements and does not identify the entire slice quotient
+with the localization. The condition `d≠0` is necessary: with
 the trivial grading on `ℚ`, `f=2,h=1,J=0`, membership in `(f−1)` holds
-but no `f^n h` vanishes. This leaf would supply part of local
-reducedness, not the entire length-one or slice theorem.
+but no `f^n h` vanishes. Homogeneity matters too: in `ℚ[X]`, the
+element `X−1` belongs to the slice ideal but survives every power of
+`X`. Both boundaries have compiled controls, with the exact scope
+recorded beside the modules.
+
+#### Clearing the slice relation in degree zero
+
+Set `τ=fg∈A₀`, with `σ(τ)≠0`. The source's local reducedness step
+starts from homogeneous `h`, `σ(b)≠0`, and `b h^n∈I`. The separate
+slice theorem supplies `N` and a coefficient `c∈O`, `c≠0`, with
+
+\[
+c\,g^Nbh\in I+(f-1).
+\]
+
+The new local theorem consumes exactly this membership. Its left side
+is homogeneous, so dehomogenization produces `m` with
+`f^m c g^N b h∈I`. Define
+
+\[
+b'=c\,\tau^{N+m}b\in A_0.
+\]
+
+Faithful coefficient action, `σ(τ)≠0`, and `σ(b)≠0` imply
+`σ(b′)≠0`. The identity
+
+\[
+b'h=(f^Ng^m)(f^mcg^Nbh)
+\]
+
+then gives `b′h∈I`. The formal endpoint proves that the actual quotient
+class `pieceMk 𝒜 I w h hh` vanishes after localization at `ker σ`.
+It also supplies a version for any multiplicative set in `A₀`.
+Only degree-zero elements are evaluated by `σ`; neither `σ(f)` nor
+`σ(g)` is used. Opposite nonzero degrees suffice for this algebraic
+step, without the later characteristic-zero or tangent hypotheses.
+
+#### Finite degree-zero image supplies local nilpotence
+
+The new [FiniteAlgebraPointNilpotence](../../CommutativeAlgebra/FiniteAlgebraPointNilpotence.md)
+proves the actual private `nilpotent_modulo_kernel` input in
+[LocLenQuotientWeightPieceLeOne.lean][lengthone]. The hypothesis is
+precisely finite generation over `O` of
+
+```lean
+(𝒜 0).map (Ideal.Quotient.mkₐ O I).toLinearMap
+```
+
+Let `ψ:A₀→A/I` be the restricted quotient map. For `σ(p)=0`, this
+finite algebra image makes `ψ(p)` integral. Choose its nonzero
+annihilating polynomial and factor it as `q(X)=X^n r(X)` with
+`r(0)≠0`. Taking `b=r(p)` gives `σ(b)≠0`, by faithful coefficients,
+and `ψ(bp^n)=0`, by the polynomial relation. Thus
+
+\[
+\sigma(p)=0\quad\Longrightarrow\quad
+\exists b\in A_0,\ \sigma(b)\ne0\ \land\
+\exists n\in\mathbb N,\ bp^n\in I.
+\]
+
+The proof establishes the actual equality of the restricted algebra
+image with the displayed finite submodule. The polynomial core allows
+zero divisors; its integral and finite-image wrappers need only
+`Nontrivial O`, rather than the source's domain premise. The point
+need not factor through `ψ`, and `n=0` legitimately handles a point
+outside the quotient support. The integral-image premise and faithful
+coefficients have separate compiled failure controls.
+
+#### Remaining slice and length-one steps
+
+Producing the slice relation is still a substantive geometric task.
+The [slice proof][slice] uses the actual ring
+`C=(A/(I+(f−1)))[1/(πg)]`, where `π` is a coefficient uniformizer.
+[FtHolds.lean][ft] supplies finite type from the specified finite
+homogeneous generation and degree-zero image hypotheses. Every
+nonzero coefficient becomes a unit in this localization.
+
+The next bounded geometric leaf constructs the Euler point derivation
+at `ξ:A→ₐ[O]K` by
+
+\[
+E(a_j)=j\,\xi(a_j)\qquad(a_j\in A_j),
+\]
+
+and proves that it kills a homogeneous ideal already killed by `ξ`.
+For a point of `C`, one has `ξ(f)=1`, so `E(f)=−2`. A derivation on
+`C` pulls back to one killing `f`; `M4` makes that pullback and `E`
+linearly dependent. Since `−2≠0`, the pullback vanishes, and the
+localization identity then kills the original derivation. This use of
+the degree requires the source characteristic hypothesis. The Euler
+construction and its ideal-vanishing proof have been read at the source
+pin but have no local Lean reconstruction in this pass.
+
+[EtHolds.lean][et] then uses the differential/Nakayama argument and
+the stated field hypotheses to obtain finiteness and separation by
+field-valued points, supplying the reduced slice return. This complete
+supplier and its dependency closure remain unproved locally.
+
+Once that return upgrades local nilpotence to local vanishing for
+homogeneous elements (`red`), the precise cyclicity step is as follows.
+For a weight `w`, powers of the original degree `−2,+2` elements give
+`e∈A_{−2w}`, a complementary `e′`, and `k∈ℕ` with `ee′=τ^k`.
+If `σ(h₀²e)≠0` for some `h₀∈A_w`, then
+
+\[
+(h_0^2e)h=(hh_0e)h_0
+\]
+
+shows that the localized weight piece is generated by `h₀`. If every
+such quadratic value vanishes, the proved finite-image lemma gives
+`b(h²e)^n∈I`; multiplication by `(e′)^n` yields
+`bτ^{kn}h^{2n}∈I`, and `red` kills the class of `h`. This quadratic
+construction uses the source degrees `−2,+2`; the generalized
+nonzero-degree dehomogenization theorem alone does not supply its
+degree arithmetic.
+
+Likewise, if `p∈ker σ`, finite-image nilpotence gives `bp^n∈I`.
+Multiplying by `h^n` and applying `red` to `ph` proves local
+maximal-ideal annihilation. The cyclic localized piece is consequently
+a quotient of the residue field, giving length at most one. These
+cyclicity and residue-field steps are explicit next algebraic returns;
+they have been inspected but not yet reconstructed locally.
 
 The later [Herbrand estimate][herbrand] has a separate substantial
 role. It relates the finite-length cokernel-minus-kernel quantity for
@@ -452,6 +592,8 @@ the top of this record. Representative SHA-256 values are:
 | [LocLenQuotientWeightPieceLeOne.lean][lengthone] | `fbd4cd271111e957575ff3514a0be7b74ca6d0be0c2dc48fe3e852ca8e7a0116` |
 | [SliceHolds.lean][slice] | `94ad21402a77fc958c4f53d9b543be425bc82a6b82f966e3245dcfa41d7a20ab` |
 | [DehHolds.lean][deh] | `02f6ce5034e64a7a987eaedbaede444e5f82b7af76fe43b5a868150a64225aa0` |
+| [FtHolds.lean][ft] | `f3934878da5e7bb158d2ba4571d0d4f22531a354151813dda2025e3d59e4f298` |
+| [EtHolds.lean][et] | `f2c5fbe52de89015a446afccc25c2637dd35794692d1c4ce82a8d55f77d26f80` |
 | [HerbrandFinLen.lean][herbrand] | `00e8a2a5990e6c9f4291685e13bc2b859d08b277446a2fa03f684a9c3914faf1` |
 
 ## From count bounds to the VWin budget
@@ -552,6 +694,29 @@ objects, hypotheses, degree shifts, and final five-family ideals.
 Fresh full-dependency replay, an independent kernel implementation, and
 substitution into the external deformation consumer are **NOT_RUN**.
 
+The dehomogenization continuation adds three modules, 14 public theorem
+bodies, and two private finite-support helpers:
+
+| Local component | Established source return |
+|---|---|
+| [Dehomogenization](../../CommutativeAlgebra/GradedDehomogenization.md) | A homogeneous slice relation is killed modulo the original homogeneous ideal by a power of the nonzero-degree element. |
+| [Slice localization](../../CommutativeAlgebra/GradedDehomogenizationLocalization.md) | Actual Away localization equivalence and the degree-zero multiplier `cτ^(N+m)b`, with vanishing of the original quotient-piece class at `ker σ`. |
+| [Finite-image nilpotence](../../CommutativeAlgebra/FiniteAlgebraPointNilpotence.md) | A nonzero polynomial relation supplies a point-nonzero multiplier; the exact finite degree-zero quotient image supplies that relation. |
+
+All three maintained sources and all three imported endpoint/control
+audits passed `--trust=0 -DwarningAsError=true`. All 14 public theorem
+axiom reports list exactly `propext`, `Classical.choice`, and
+`Quot.sound`. The adjacent records bind the exact source, produced
+object, imported audit, and retained failures. Formal controls exercise
+zero degree, infinite support, a nonhomogeneous slice element, zero and
+inadmissible denominators, absence of a polynomial relation, and
+nonfaithful coefficients. A separate mathematical/source review checked
+the actual objects and saved evidence; it did not run another kernel.
+All nine pinned package heads and their tracked source cleanliness were
+checked, with no root pin change. Fresh full-dependency replay, an
+independently implemented kernel check, and substitution into the
+external geometric consumer remain **NOT_RUN**.
+
 The companion [route walkthrough](SubmittedRiemannHypothesisRoute.md)
 explains the one-sided Landau mechanism and the exact local consumers.
 Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
@@ -566,10 +731,13 @@ The private `vl_bound` and injective class-map norm comparison now have
 checked local counterparts. Constructing the arithmetic classifier and
 proving the substantive `OneCharU_s` supplier remain necessary to apply
 the checked integer budget to actual deformation lengths. The actual
-graded quotient sequence, localized inequality, and finite squaring
-return now have local checked proofs. The next bounded reconstruction
-is the nonzero-degree dehomogenization consequence above, followed by
-the substantive local reducedness/cyclicity and length-one suppliers.
+graded quotient sequence, localized inequality, finite squaring,
+nonzero-degree dehomogenization, actual post-slice localization return,
+and finite-image local nilpotence now have local checked proofs.
+The next bounded geometric reconstruction is the actual Euler point
+derivation and its homogeneous-ideal vanishing. The full tangent-to-slice
+supplier remains necessary; the explicit conditional cyclicity and
+residue-field length arguments above are further algebraic targets.
 The Rees/Herbrand and lower cotangent comparisons also remain necessary
 for the full factor-two deformation-to-valuation estimate.
 
@@ -611,4 +779,6 @@ for the full factor-two deformation-to-valuation estimate.
 [lengthone]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocLenQuotientWeightPieceLeOne.lean
 [slice]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/SliceHolds.lean
 [deh]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/DehHolds.lean
+[ft]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/FtHolds.lean
+[et]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/EtHolds.lean
 [herbrand]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/HerbrandFinLen.lean

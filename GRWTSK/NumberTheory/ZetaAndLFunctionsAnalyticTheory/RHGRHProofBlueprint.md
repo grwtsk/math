@@ -149,12 +149,30 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   `G,E′,Z`, and gives `2^(r+1+r′)` from the original all-weight bound
   at most one. All three maintained modules passed trust-zero source
   checks at the root pins. Their 21 public theorems and two private
-  containment helpers supply this finite step; the geometric length-one
-  supplier and full Rees/Herbrand and lower comparisons remain open
-  locally. The next bounded target is the homogeneous dehomogenization
-  consequence recorded in the arithmetic audit. The external
-  [verification notes at the latest inspected revision](https://github.com/Deicyde/riemann-hypothesis/blob/bdb1810a06c78f246da285c9bcbe7db2cd992888/verification/NOTES.md#results)
-  still report the full submission build in progress.
+  containment helpers supply this finite step. The next three modules
+  now prove [homogeneous dehomogenization](../../CommutativeAlgebra/GradedDehomogenization.md),
+  its [actual localization return](../../CommutativeAlgebra/GradedDehomogenizationLocalization.md),
+  and [finite-image local nilpotence](../../CommutativeAlgebra/FiniteAlgebraPointNilpotence.md).
+  They derive `f^n h∈I` from the homogeneous slice relation, construct
+  the degree-zero multiplier `cτ^(N+m)b` outside `ker σ`, and prove
+  `bp^n∈I` with `σ(b)≠0` from the exact finite degree-zero quotient
+  image and `σ(p)=0`. Their 14 public theorems, two private helpers,
+  and imported endpoint/control audits passed trust-zero checks at the
+  unchanged root pins; all public axiom reports give only the standard
+  three axioms. The slice membership remains an explicit supplier.
+  The next bounded geometric target is the Euler point derivation
+  `E(a_j)=jξ(a_j)` and its homogeneous-ideal vanishing, followed by the
+  actual `M4` tangent-to-reduced-slice argument. The audit records the
+  exact subsequent quadratic cyclicity and residue-field length-one
+  returns. Full Rees/Herbrand and lower comparisons remain open locally.
+  Independent kernel replay and external consumer substitution remain
+  unperformed. The external
+  [verification notes at the latest inspected revision](https://github.com/Deicyde/riemann-hypothesis/blob/712a6aef8fe265fb6f3a5fa1f3101a017aec8fe9/verification/NOTES.md#results)
+  still report the full submission build in progress. The checker
+  configuration now uses Lean paranoid and nanoda; the documented
+  compatibility limits of other checkers and a reported large export
+  do not supply a completed full-submission verdict. No submitted
+  Lean proof changed in that refresh.
   The concurrent
   [conductor-three integrated-kernel return](WeilConductorThreeKernelReturn.md)
   has its own established source identity and retains its sign-certificate

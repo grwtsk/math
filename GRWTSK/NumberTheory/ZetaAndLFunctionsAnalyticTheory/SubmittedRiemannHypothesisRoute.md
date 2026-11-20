@@ -419,17 +419,106 @@ passed trust-zero checks with warnings as errors; their adjacent records
 give exact source identities, endpoint/axiom audits, retained failures,
 and the limits of that verification.
 
-The original length-at-most-one premise still requires the genuine
-finite degree-zero algebra and tangent/rigidity argument. Its source
-passes through local reducedness and cyclicity; the later Rees and
-Herbrand comparisons connect those lengths to valuations. The
-[expanded audit](SubmittedRiemannHypothesisArithmeticAudit.md#the-remaining-geometric-length-one-supplier)
-identifies their exact statements and the next bounded target:
-for homogeneous `J`, `f∈A_d` with `d≠0`, and homogeneous `h`, membership
-`h∈J+(f−1)` implies `f^n h∈J` for some natural `n`. Its finite-support
-argument is reviewed analytically but has no local Lean reconstruction
-yet. Completing the squaring estimate supplies no missing rigidity,
-Herbrand, automorphy, or character-window premise by itself.
+### Dehomogenization, finite-image nilpotence, and the slice return
+
+Three further local modules now reconstruct the algebra around the
+geometric slice step. They contain 14 public theorems and two private
+finite-support helpers. Each maintained source and its imported endpoint
+audit passed `--trust=0 -DwarningAsError=true`; every public theorem
+reports exactly `propext`, `Classical.choice`, and `Quot.sound`.
+
+The [dehomogenization theorem](../../CommutativeAlgebra/GradedDehomogenization.md)
+starts with homogeneous `J`, `f∈A_d`, `d≠0`, and `h∈A_w`. It proves
+
+\[
+h\in J+(f-1)\quad\Longrightarrow\quad
+\exists n\in\mathbb N,\ f^n h\in J.
+\]
+
+To see why, write `h=j+u(f−1)` and work in `A/J`. The homogeneous
+components of `u` along the degrees `w+kd` satisfy a recurrence
+`c_k=f c_{k−1}` except at `k=0`, where the defect is `−h`. Because
+the expansion of `u` has finite support and `d≠0`, the backward
+recurrence forces `c_{−1}=0`. The central component is then `−h`,
+and the forward components are `−f^n h`. Some forward component is
+zero, so `f^n h=0` in the quotient. No cancellation by `f` is needed;
+zero divisors are allowed.
+
+The [localization module](../../CommutativeAlgebra/GradedDehomogenizationLocalization.md)
+adds the reverse implication and identifies this condition with the
+vanishing of `[h]/1` in the actual ring `(A/J)[1/f̄]`. This equivalence
+is restricted to homogeneous `h`: the entire slice quotient is not
+being equated with that localization. For example, `X−1` belongs to
+the slice ideal in `ℚ[X]` but does not vanish after inverting `X`.
+
+The downstream return preserves the original degree-zero point. Choose
+`f,g` of opposite nonzero degrees, put `τ=fg∈A₀`, and assume
+`σ(τ)≠0`. If the slice supplier gives
+
+\[
+c\,g^Nbh\in J+(f-1),\qquad c\in O\setminus\{0\},\quad
+b\in A_0,\quad\sigma(b)\ne0,
+\]
+
+then dehomogenization supplies `m` with `f^m c g^Nbh∈J`. The
+constructed multiplier
+
+\[
+b'=c\,\tau^{N+m}b\in A_0
+\]
+
+has nonzero point value, using faithful coefficient action, and
+
+\[
+b'h=(f^Ng^m)(f^mcg^Nbh)\in J.
+\]
+
+Thus the original homogeneous quotient class vanishes after
+localization at `ker σ`. The formal result uses the actual quotient
+image module and `LocalizedModule`, and keeps the slice relation as
+an explicit hypothesis.
+
+The [finite-image module](../../CommutativeAlgebra/FiniteAlgebraPointNilpotence.md)
+supplies a distinct input. The source's `M2` condition makes the
+actual image of `A₀→A/I` finite over `O`. If `σ(p)=0`, the image of
+`p` therefore satisfies a nonzero polynomial relation. Write it as
+`q(X)=X^n r(X)` with `r(0)≠0`, and set `b=r(p)`. Then
+
+\[
+\sigma(b)=r(0)\ne0,\qquad bp^n\in I,
+\]
+
+where the constant is mapped faithfully into the point field.
+This proves local nilpotence from the exact finite quotient-image
+hypothesis. It does not require the point to factor through the
+quotient; `n=0` covers a point outside its support. The adjacent
+records give the complete proofs, exact source/object/audit digests,
+and retained failed attempts. The imported controls also check why
+nonzero degree, finite support, a polynomial relation, faithful
+coefficients, and admissible denominators matter.
+
+The original length-at-most-one conclusion still requires the genuine
+tangent/rigidity-to-slice argument. Its next bounded geometric leaf is
+the Euler point derivation `E(a_j)=jξ(a_j)` and its vanishing on a
+homogeneous ideal killed by `ξ`. On the source slice `f=1`, with
+`deg f=−2`, one has `E(f)=−2≠0`. Linear dependence from `M4` then
+forces other slice derivations to vanish. Finite-type and
+differential/reducedness results supply the slice membership consumed
+above. Those local reconstructions remain open.
+
+The [expanded audit](SubmittedRiemannHypothesisArithmeticAudit.md#the-remaining-geometric-length-one-supplier)
+also spells out the subsequent conditional cyclicity argument:
+for `e∈A_{−2w}`, the identity
+`(h₀²e)h=(hh₀e)h₀` gives a local generator when `σ(h₀²e)≠0`;
+otherwise finite-image nilpotence and the reduced-slice return kill
+the entire weight piece. Maximal-ideal annihilation then makes the
+cyclic module a quotient of the residue field, hence of length at
+most one. These statements retain the source's `−2,+2` degree
+arithmetic. The full Rees/Herbrand and lower comparisons connecting
+these lengths to valuations also remain necessary. Fresh dependency
+replay, an independently implemented kernel check, and substitution
+of the new declarations into the external geometric consumer are
+**NOT_RUN**.
 
 ## 6. The final zero transport
 
@@ -502,6 +591,19 @@ job. Submitted Lean files and the
 [verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/bdb1810a06c78f246da285c9bcbe7db2cd992888/verification/NOTES.md#results)
 are unchanged; the full build is still reported in progress. This is
 separate from the completed checks of the new local graded modules.
+
+The dehomogenization continuation refreshed external `main` at
+`712a6aef8fe265fb6f3a5fa1f3101a017aec8fe9`. The intervening changes
+touch only the cache URL, checker configuration, README, and
+[verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/712a6aef8fe265fb6f3a5fa1f3101a017aec8fe9/verification/NOTES.md).
+The maintainers report that con-leche/con-ron do not support a mutual
+reflexive inductive block in these dependencies, and the bundled
+lean4lean has a core-version compatibility problem. Lean paranoid and
+nanoda remain configured; a compatible lean4lean replay is described
+separately. A reported solution export is evidence of export progress,
+not a completed checker verdict. The Results section still reports
+the build in progress. Submitted Lean proofs remain unchanged, and
+no full-submission acceptance is claimed here.
 
 ## 8. Source pins and continuation
 
