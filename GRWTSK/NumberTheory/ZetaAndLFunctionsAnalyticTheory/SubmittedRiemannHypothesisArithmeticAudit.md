@@ -20,6 +20,13 @@ The [current pinned verification notes](https://github.com/Deicyde/riemann-hypot
 still record the build in progress. The independently reconstructed local
 arithmetic components below have their own narrower source-bound checks.
 
+The valuation continuation refreshed external `main` again at
+`8b83d5e7b319ebc7b3be6e59ce3411ba2b09d116`. The two intervening commits
+change only README wording; the submitted Lean files and verification
+notes are unchanged. The [notes at that revision](https://github.com/Deicyde/riemann-hypothesis/blob/8b83d5e7b319ebc7b3be6e59ce3411ba2b09d116/verification/NOTES.md#results)
+still report the full build in progress. No completed external verdict
+was observed in this refresh.
+
 ## Finite count, integer witness, and valuation sum
 
 ### 1. Polynomially many automorphic systems
@@ -98,8 +105,11 @@ by **every abstract complex field automorphism**, preserving indexed
 multiplicities. Its transcendence-basis extension and algebraic fixed-field
 argument derives rationality before integral closure gives the integer.
 The [trace-specific assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceIntegerWitness.md)
-applies that result to the literal product above. It has not yet supplied
-the classifier and local-norm comparison in the next paragraph.
+applies that result to the literal product above. The subsequent
+[local valuation assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceValuationWitness.md)
+now supplies the local-norm comparison for an explicitly supplied
+injective classifier and exact trace readout. The construction of that
+classifier from actual admissible representations remains separate.
 
 For a prime ℓ not dividing q, each integral factor has ℓ-adic norm at most one. Deleting factors therefore increases the product norm. The classifier's injectivity prevents repeated use of one trace class within an orbit component. Thus
 
@@ -109,7 +119,13 @@ For a prime ℓ not dividing q, each integral factor has ℓ-adic norm at most o
 |\operatorname{tr}\rho(\sigma^{-1})-E_o|_\ell.
 \]
 
-The q^e factors disappear only under the explicit hypothesis ℓ∤q.
+The submitted argument removes the q^e factors by **equality** under the
+explicit hypothesis ℓ∤q. The local continuation proves the sufficient
+inequality `‖q^eδ‖_ℓ≤‖δ‖_ℓ` for every prime, using `‖q‖_ℓ≤1`. Thus this
+finite comparison alone needs no coprimality. The wider Frobenius and
+representation construction retains its separate prime restrictions.
+An abstract complex/p-adic equivalence transports the monic equations
+and product identities, never the complex norm itself.
 
 ### 4. Uniformity of the integer budget
 
@@ -164,6 +180,159 @@ once the corresponding pointwise valuation bounds are supplied. The
 trace-witness assembly chooses one nonzero integer before quantifying
 over every finite prime set. This does not prove `OneCharU_s` or its
 deformation-length estimate.
+
+The [norm-to-valuation reconstruction](../AlgebraicNumberTheoryGlobalFields/PadicNormValuationBudget.md)
+now proves the exact private `vl_bound` on Mathlib's actual `PadicAlgCl ℓ`
+and the stronger version deriving selected nonvanishing from `NN≠0`
+and the norm comparison. It uses precisely
+`vl ℓ x=−Real.logb ℓ ‖x‖`, including the totalized value `vl ℓ 0=0`.
+Positive norm of the integer forces every selected norm to be positive;
+the increasing logarithm and its negation then give the correct
+inequality direction. The integrated theorem retains one integer before
+every prime, field identification, and selected family. Its observation
+consumer proves the finite summation for `c≥0`, with the per-character
+length-to-trace bound still explicit.
+
+## Below OneChar: the two length comparisons
+
+This continuation also inspected concrete source bodies below the
+`OneCharU_s` interface. This section is an analytical/source review;
+external compilation, full dependency replay, and transitive axiom
+auditing of these external bodies are **NOT_RUN**.
+
+### What the supplier actually asserts
+
+[NumberU3US.lean][onecharstatement] defines `OneCharU_s` over an actual
+algebraic closure, CM number field, prime, coefficient DVR, level,
+exponent, character, and `GD` hypotheses. For the actual Eisenstein
+trace and a group element, the absence of that trace among the admitted
+representations gives a finite admitted family, uniqueness up to
+representation isomorphism, finite `Vlen`, and
+
+\[
+V_n(\psi)\le2\sum_{\rho\in X}
+ v_\ell(\operatorname{tr}\rho(\sigma)-t).
+\]
+
+`Vlen` and its coefficient-normalized `Vn` are the arithmetic length
+objects in [DirichletPrimeToLPartMulLPowerPart.lean][lengthdefs]. They
+are not definitions of the valuation sum on the right.
+
+The body `oneCharU_of_katoTwoW_rig_admI_automorphy` in
+[FOneCharU.lean][onecharproof] first reduces to an unramified coefficient
+model. It constructs deformation data, a ring, and a model; identifies
+the model trace difference with the actual representation trace
+difference; proves admissibility; and selects orbit representatives
+without duplicated isomorphism classes. Its central comparisons are
+
+\[
+\text{arithmetic/Selmer length}
+\le \text{model cotangent length}
+\le 2\sum\text{trace-difference valuations}.
+\]
+
+The lower comparison is `vlen_le` in [VlenLe.lean][vlen]. It writes a
+torsion cohomology module as a directed union of uniformizer-power
+torsion pieces, uses `sha_inj` and `model_lower`, and passes to module
+length. Its cohomological input and `LemmaM'` are substantive premises.
+
+The upper comparison is `model_upper` in [ModelUpper.lean][modelupper].
+It uses `LemmaM`, finiteness of the weight-zero algebra, the actual
+point/rigidity conditions, and nonvanishing of the trace difference.
+After applying the graded cotangent estimate, it chooses orbit
+representatives and reindexes. The factor two enters here, before the
+elementary negative-logarithm calculation.
+
+### The source passes concrete algebraic proofs
+
+[LinkedUnlE.lean][linked] supplies the actual theorem bodies
+`Alg.M.main_holds`, `Alg.M.mprime_holds`, and `Alg.lemmaP` to the OneChar
+assembly. At that composition point these are proved source returns,
+rather than three unfilled assumptions. This observation does not
+replace checking their dependency closure.
+
+| Source return | Inspected mathematical argument |
+|---|---|
+| `Alg.M.main_holds : LemmaM` in [MainCotSpan.lean][maincot] | Normalize cotangent generators while preserving their span and equations; construct a chart and finite cover; apply the numerical core. |
+| `Alg.M.core_holds` in [AlgMemCoef.lean][algcore] | Build the graded algebra comparison; combine `low_holds`, an Euler-characteristic comparison, and `up_holds`; cancel the positive common power of two. |
+| `Alg.M.mprime_holds : LemmaM'` in [Mprime.lean][mprime] | Derivations vanish on the saturated square, factor through the cotangent quotient, and give an injective map to a finite-length Hom module. |
+| `Alg.lemmaP : LemmaP` in [LemmaP.lean][lemmap] | Construct the universal framed deformation presentation using grading and tangent/obstruction data. Only the return and initial construction were reviewed here. |
+
+The hypotheses of `LemmaM` in [OrbitVanishingLocal.lean][orbitlocal]
+include a complete DVR, an algebraically closed valued coefficient
+field with its normalization, the graded algebra and base point,
+equations, and conditions `M1` through `M5`. The theorem returns a finite
+cover, finite cotangent length, and the upper valuation estimate.
+`LemmaM'` is a separate lower module-length estimate. The universal
+presentation predicate `LemmaP` is defined in
+[FramedTwoCoboundaries.lean][framed]. These definitions retain actual
+algebraic objects and constraints.
+
+In the numerical core, the lower side carries `2^(r+r′)` and the upper
+side `2^(r+1+r′)`. The common positive factor cancels, leaving precisely
+two. This identifies a concrete source of the constant, without treating
+it as an arbitrary loss absorbed by a later logarithm.
+
+The remaining point hypotheses use Kato/Selmer vanishing, the two
+rigidity cases, and tangent/cohomology identifications; automorphy and
+coefficient compatibility also remain in the OneChar proof. No
+circularity was visible in the inspected OneChar, model, and PropGK
+bodies. This bounded observation is not a global noncircularity or
+verification verdict for all imported results.
+
+### A precise next graded-algebra target
+
+The source `locLen_aPiece_sup_span_sq_le_add` in
+[LocLenAPieceSupSpanSqLeAdd.lean][squarelength] proves a useful actual
+quotient estimate. Let `A` be a commutative graded algebra over `O`,
+`B=A₀`, `σ : B →ₐ[O] K` a map into a field, `J` a homogeneous ideal,
+and `t∈A_d`. Write `Lσ` for module length after localization at `ker σ`,
+with values in the extended natural numbers. For every weight `w`,
+
+\[
+L_\sigma\big((A/(J+(t^2)))_w\big)
+\le
+L_\sigma\big((A/(J+(t)))_{w-d}\big)
++L_\sigma\big((A/(J+(t)))_w\big).
+\]
+
+The proof must construct the actual multiplication-by-`t` map from the
+first right-hand piece to the left-hand piece, followed by the quotient
+projection to the second right-hand piece. Their image and kernel agree.
+For an element of the kernel, write a representative as `j+tc`; taking
+its weight-`w` component gives `j_w+t c_(w-d)` because `J` is homogeneous.
+That provides the required preimage. The reverse inclusion follows
+because the projection kills `t`. Localization preserves this exactness,
+and module-length subadditivity gives the inequality. No injectivity of
+the first map is asserted or needed.
+
+The shift `w−d` is essential: with `A=k[x]`, `t=x`, `J=0`, `w=1`,
+replacing it by `w` would give the false inequality `1≤0`. Lengths must
+retain their possible infinite value; truncation to natural numbers
+would require additional finiteness. A generic length theorem merely
+assuming unspecified exact maps would not finish this source target.
+
+Iterating this square-equation estimate contributes the upper power
+`2^(r+1+r′)` used by `up_holds` in [TwoSigned.lean][twosigned]; the lower
+bound in [AdmissibleMonoIdeal.lean][low] supplies `2^(r+r′)`. This is a
+concrete next source reconstruction inside the deformation argument.
+No local Lean proof of this graded quotient target is claimed in the
+present continuation.
+
+### Source identities for this deeper inspection
+
+All these files were matched byte for byte to the mathematical pin at
+the top of this record. Representative SHA-256 values are:
+
+| Pinned file | SHA-256 |
+|---|---|
+| [NumberU3US.lean][onecharstatement] | `2700c8f6ef0f5a9d68f120028d2d70454239c0c70a38da46d83001fb7a4a150f` |
+| [FOneCharU.lean][onecharproof] | `7ba4909bace94627f5dab4a28180f53c93b7b8be03b2ec1d33fba9cf5708a2d9` |
+| [VlenLe.lean][vlen] | `c52a30320988ce20b653bb6bc17d23ed2cd58105982cd5b50bfae048392c6fb7` |
+| [ModelUpper.lean][modelupper] | `556e9ebbbf6983e2be65a7d647cad666cb96f3d6c0c7eff5aae62b80a947f880` |
+| [LinkedUnlE.lean][linked] | `107b75233150ebd8a27bd37ae350a295996a79c863f3d469a925c0f1f78fd0a7` |
+| [AlgMemCoef.lean][algcore] | `82a16f09d05845c3e9f495c2f10c7048abeae9315506c368812e7871aa4b30c6` |
+| [LocLenAPieceSupSpanSqLeAdd.lean][squarelength] | `7ce3da392d0b3655fee9bad840eb5d2743672a654b1f2d309948d012daa5fcf5` |
 
 ## From count bounds to the VWin budget
 
@@ -223,6 +392,25 @@ and retain earlier failed development attempts. Fresh full-dependency
 replay and independent kernel implementations are `NOT_RUN`. These are
 local reconstruction results, not a completed external submission check.
 
+The next continuation adds three modules and 25 further theorem bodies:
+
+| Local component | Established source return |
+|---|---|
+| [Integral p-adic subproducts](../AlgebraicNumberTheoryGlobalFields/PadicIntegralSubproduct.md) | Integral factors lie in the unit ball; a per-orbit injective class selection controls the full product. Scale removal as an inequality works at every prime. |
+| [Norm-to-valuation budget](../AlgebraicNumberTheoryGlobalFields/PadicNormValuationBudget.md) | The actual negative-log norm sum is bounded by `padicValInt` of a nonzero integer; selected nonvanishing follows from the norm premise. |
+| [Trace-valuation assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceValuationWitness.md) | The same literal trace-product integer controls all later primes and valid selected families, while retaining the explicit observation supplier. |
+
+All 25 maintained theorem bodies and the exact-target audits passed
+`--trust=0` with warnings as errors. Every transitive axiom report lists
+only `propext`, `Classical.choice`, and `Quot.sound`. Formal controls
+exercise nonintegral factors, duplicate class selection, scale
+strictness, zero integer witnesses, reversed norm comparison,
+multiplicativity at zero, and the scalar sign. The adjacent records
+retain the actual earlier elaboration/audit failures and exact source
+digests. Fresh full-dependency replay, an independent kernel
+implementation, and substitution into the external automorphic consumer
+are **NOT_RUN**. This evidence concerns the local finite reconstruction.
+
 The companion [route walkthrough](SubmittedRiemannHypothesisRoute.md)
 explains the one-sided Landau mechanism and the exact local consumers.
 Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
@@ -233,12 +421,13 @@ The numerical absorption and integer-product arguments do not establish the unde
 
 The meaningful remaining verification is the actual source-bound proof of those inputs and their integration, with exact target comparison and transitive axiom/replay evidence. This record identifies inspected arguments and their consumers; it does not promote the external RH/Dirichlet-GRH endpoint to an accepted theorem.
 
-The next compact arithmetic target is the private `vl_bound` in
-[FPropGKU.lean][valuation]: a norm-product inequality becomes a sum of
-valuations under explicit nonzero and prime hypotheses. The injective
-class-map/local-norm comparison and the substantive `OneCharU_s` supplier
-are still needed before applying the checked prime budget to deformation
-lengths.
+The private `vl_bound` and injective class-map norm comparison now have
+checked local counterparts. Constructing the arithmetic classifier and
+proving the substantive `OneCharU_s` supplier remain necessary to apply
+the checked integer budget to actual deformation lengths. The next
+bounded reconstruction identified above is the actual localized graded
+quotient inequality, with its multiplication map, projection, and
+homogeneous exactness proof, inside the factor-two upper estimate.
 
 [count]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean
 [cohomology]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/CohBoundFree.lean
@@ -258,3 +447,18 @@ lengths.
 [window]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean
 [vwin]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean
 [inputs]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean
+[onecharstatement]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/NumberU3US.lean
+[lengthdefs]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean
+[onecharproof]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FOneCharU.lean
+[vlen]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/VlenLe.lean
+[modelupper]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ModelUpper.lean
+[linked]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean
+[maincot]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean
+[algcore]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/AlgMemCoef.lean
+[mprime]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean
+[lemmap]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/LemmaP.lean
+[orbitlocal]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/OrbitVanishingLocal.lean
+[framed]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/FramedTwoCoboundaries.lean
+[squarelength]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LocLenAPieceSupSpanSqLeAdd.lean
+[twosigned]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/TwoSigned.lean
+[low]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/AdmissibleMonoIdeal.lean

@@ -127,9 +127,19 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   now proves the exact trace separation, full integral Galois-product
   descent, and finite-prime logarithmic budget. It returns one nonzero
   integer equal to the literal trace product, chosen before every finite
-  prime set. The trace-family construction, representation classifier,
-  local-norm comparison, and deformation-to-valuation supplier remain
-  open in this local continuation. The concurrent
+  prime set. The next [local valuation assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceValuationWitness.md)
+  proves the norm comparison from integral factors and injective class
+  readouts, derives selected nonvanishing, and bounds the actual local
+  trace-valuation sum by `padicValInt` of that same integer. Its finite
+  inequality works at every prime; the larger Frobenius construction
+  retains its separate prime restrictions. These 25 additional theorem
+  bodies and their exact-target audits passed trust-zero source checks,
+  with only the standard three axioms. The trace-family and classifier
+  constructions and the actual deformation-to-valuation supplier remain
+  open locally. The expanded arithmetic audit traces that supplier to
+  concrete lower and upper length comparisons and the graded-algebra
+  factor-two argument; their full dependency replay is still unperformed.
+  The concurrent
   [conductor-three integrated-kernel return](WeilConductorThreeKernelReturn.md)
   has its own established source identity and retains its sign-certificate
   and zero-side obligations; its progress is preserved separately.

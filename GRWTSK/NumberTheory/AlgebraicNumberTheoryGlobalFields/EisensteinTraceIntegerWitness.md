@@ -104,16 +104,23 @@ equality, nonvanishing, archimedean size bound, and finite-prime budget**
 from those data. It does not reconstruct the whole external theorem:
 that theorem additionally uses an admissible-representation classifier
 and an injective class map to compare the integer's `ℓ`-adic norm with
-selected trace differences. Those representation and local-norm parts
-remain explicit verification obligations.
+selected trace differences. The subsequent
+[local valuation continuation](EisensteinTraceValuationWitness.md) now
+proves that comparison for supplied injective class maps and exact trace
+readouts. Constructing those arithmetic classifiers remains an explicit
+verification obligation.
 
 The further source chain in [FPropGKU.lean][valuation] uses `OneCharU_s`
 to bound deformation lengths by twice a sum of valuations. The finite
 product alone supplies no such estimate. The private `vl_bound` there
-converts a norm-product inequality to a valuation sum, and is the next
-small local target. The `ℓ∤q` hypothesis in the original construction
-justifies the exact cancellation `‖q‖_ℓ=1`; a weaker inequality must be
-proved separately before weakening that source hypothesis.
+converts a norm-product inequality to a valuation sum. That exact target
+and a stronger form deriving selected nonvanishing are now proved in
+[PadicNormValuationBudget](PadicNormValuationBudget.md). The `ℓ∤q`
+hypothesis in the original construction justifies exact scale
+cancellation. [PadicIntegralSubproduct](PadicIntegralSubproduct.md) now
+proves the weaker inequality `‖q^eδ‖_ℓ≤‖δ‖_ℓ` for every prime, which is
+sufficient for this finite comparison. Separate Frobenius and
+representation restrictions in the larger construction are retained.
 
 The [two-witness theorem](IntegerPrimeLogBudget.md) handles the two
 distinct auxiliary-prime exceptions once the pointwise valuation

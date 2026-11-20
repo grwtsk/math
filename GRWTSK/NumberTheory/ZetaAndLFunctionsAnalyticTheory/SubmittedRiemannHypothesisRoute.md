@@ -309,6 +309,54 @@ representations to their classes, and deriving deformation lengths from
 trace valuations remain the missing inputs to the larger arithmetic
 route. The checked finite assembly does not remove those premises.
 
+### From that integer to the actual local trace valuations
+
+The [local valuation assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceValuationWitness.md)
+now supplies the next finite link. For each prime `ℓ`, let class maps
+injective separately within each orbit identify the selected local traces
+with the corresponding complex trace values under an abstract field
+equivalence. Each scaled
+factor is integral, hence has `ℓ`-adic norm at most one. Dropping omitted
+factors increases the product norm. Also `‖q^eδ‖_ℓ≤‖δ‖_ℓ`, since natural
+integers have norm at most one. Consequently the **same** integer above
+satisfies
+
+\[
+0<\|N\|_\ell\le\prod_o\prod_{\rho\in X_o}
+ \|\operatorname{tr}_{o,\rho}-\iota^{-1}(E_o)\|_\ell.
+\]
+
+Every selected difference is therefore nonzero. Taking negative
+logarithms base `ℓ` gives the checked bound
+
+\[
+\sum_o\sum_{\rho\in X_o}
+ v_\ell(\operatorname{tr}_{o,\rho}-\iota^{-1}(E_o))
+\le v_\ell(N).
+\]
+
+This removes the private `vl_bound` and finite class-selection norm
+comparison from the locally unproved portion. The finite inequality does
+not need `ℓ∤q`; exact norm cancellation does, and the wider arithmetic
+construction has separate uses of its prime restrictions. The field
+equivalence transports algebra and integrality, not norms.
+
+The continuation adds 25 theorem bodies in three modules. All compiled
+with `--trust=0` and warnings as errors; all 25 transitive axiom reports
+contain only `propext`, `Classical.choice`, and `Quot.sound`. Exact raw
+targets and boundary controls passed. The linked component records
+preserve the failed development checks and distinguish these results
+from fresh full-dependency and independent-kernel replay, both `NOT_RUN`.
+
+The substantive remaining input supplies
+`Vn(o)≤2Σρ v_ℓ(trace difference)`. Its source proof passes through actual
+arithmetic length, model cotangent length, and graded algebra. The
+[expanded arithmetic audit](SubmittedRiemannHypothesisArithmeticAudit.md#below-onechar-the-two-length-comparisons)
+now identifies the concrete theorem bodies behind those comparisons,
+the origin of the factor two, and a precise next localized graded
+quotient estimate. The local observation theorem retains this input
+explicitly; with it, the proved summation gives `Σ_o Vn(o)≤2v_ℓ(N)`.
+
 ## 6. The final zero transport
 
 For a primitive character, a zero in the open strip reflects under the completed functional equation to a zero for the inverse character at \(1-s\). Gamma factors are nonzero in the relevant positive-real-part region. If \(\operatorname{Re}s<1/2\), its reflection lies to the right; if \(\operatorname{Re}s>1/2\), the original zero already lies there. Universal right-half-plane nonvanishing leaves only \(\operatorname{Re}s=1/2\).
@@ -366,6 +414,12 @@ export and the clean configuration supplied to the judge. They change
 no submitted Lean proofs. Its [verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/1f2beda145f7b7a9f6f6f6640a60f2e44920b7ba/verification/NOTES.md#results)
 still record the build in progress, without a completed full-submission
 verdict.
+
+The valuation continuation refreshed revision
+`8b83d5e7b319ebc7b3be6e59ce3411ba2b09d116`. Only README wording changed
+since that previous refresh. The [verification notes at the new revision](https://github.com/Deicyde/riemann-hypothesis/blob/8b83d5e7b319ebc7b3be6e59ce3411ba2b09d116/verification/NOTES.md#results)
+are unchanged and still report the full build in progress. No submitted
+Lean proof changed and no completed full-submission verdict was observed.
 
 ## 8. Source pins and continuation
 
