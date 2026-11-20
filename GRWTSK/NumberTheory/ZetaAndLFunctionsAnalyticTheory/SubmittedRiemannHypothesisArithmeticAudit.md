@@ -12,6 +12,14 @@ and CI, without changes to the submitted Lean proofs. Its
 [verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/976eeac58f2c5fdf94d935bd12e5d9cdada93726/verification/NOTES.md#results)
 still report the build in progress. The mathematical audit pin above is retained.
 
+The next continuation inspected revision
+`1f2beda145f7b7a9f6f6f6640a60f2e44920b7ba`. Its additional changes clarify
+the export sandbox and which clean files supply the judge configuration;
+they do not change submitted Lean proofs or report a completed result.
+The [current pinned verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/1f2beda145f7b7a9f6f6f6640a60f2e44920b7ba/verification/NOTES.md#results)
+still record the build in progress. The independently reconstructed local
+arithmetic components below have their own narrower source-bound checks.
+
 ## Finite count, integer witness, and valuation sum
 
 ### 1. Polynomially many automorphic systems
@@ -70,7 +78,7 @@ The lower bound |E|≥Q−1−Q^{-1}>sqrt(q)+2 separates the trace. Integrality 
 Q(t-E)=Qt-z-Q-Q^2z^{-1}.
 \]
 
-The upper triangle bound is |Q(t−E)|≤2Q²; taking logarithms and using log 2≤1 gives the estimate. This is a small independently checkable analytic leaf.
+The upper triangle bound is |Q(t−E)|≤2Q²; taking logarithms and using log 2≤1 gives the estimate. The local [trace-separation reconstruction](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceSeparation.md) now proves the exact three conclusions, and the stronger quantitative lower bound |Q(t−E)|≥5/2, directly from the root Mathlib. Its separate analytic argument uses sqrt(q)≤q/2, with all original parameters retained.
 
 The same file's frobenius_trace_norm_nonzero_log_bound constructs
 
@@ -83,6 +91,15 @@ Its integrality and invariance under every complex automorphism make it an integ
 \[
 \log|NN|\le |O|\,|S|\,(2e\log q+1).
 \]
+
+The local [integer-product descent](../AlgebraicNumberTheoryGlobalFields/GaloisInvariantIntegerProduct.md)
+now proves this actual integer existence from integral factors permuted
+by **every abstract complex field automorphism**, preserving indexed
+multiplicities. Its transcendence-basis extension and algebraic fixed-field
+argument derives rationality before integral closure gives the integer.
+The [trace-specific assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceIntegerWitness.md)
+applies that result to the literal product above. It has not yet supplied
+the classifier and local-norm comparison in the next paragraph.
 
 For a prime ℓ not dividing q, each integral factor has ℓ-adic norm at most one. Deleting factors therefore increases the product norm. The classifier's injectivity prevents repeated use of one trace class within an orbit component. Thus
 
@@ -140,6 +157,14 @@ It absorbs the fixed coefficient in
 2c₅(log r₁+log r₂)N[N(e+1)]^A into (Nt)^(k+1+A).
 The auxiliary primes and k are selected from the fixed character before the variable host, e, and t.
 
+The local [prime-logarithm budget](../AlgebraicNumberTheoryGlobalFields/IntegerPrimeLogBudget.md)
+now reconstructs the exact finite-prime inequality through the full prime
+factorization of |n|. It also proves the two-distinct-exception deduction
+once the corresponding pointwise valuation bounds are supplied. The
+trace-witness assembly chooses one nonzero integer before quantifying
+over every finite prime set. This does not prove `OneCharU_s` or its
+deformation-length estimate.
+
 ## From count bounds to the VWin budget
 
 [WindowBoundOfLiteratureLevel.lean][countassembly], declaration vwin_of_hypotheses_H_E_alt, supplies CountI, CountII, CountIII and CountV from the literature/automorphy package and LemmaK. [HVCore.lean][hvasm], declaration Core.of_four_alt, also supplies CountZ, ThmBab and ThmBcFree, then invokes the count assembly in [JointWinOfCounts.lean][joint]. CountI alone is insufficient for this step.
@@ -171,7 +196,7 @@ For b=x^(4eps/5), s=x^(eps/5), the left side is at most N₀ exp(Db), while b≥
 
 The output [VWin][vwin] bounds the finite shaLen sums for **1≤e<floor(x^401)** by sqrt(exp(x^eps)), on complete intervals [Y,Y²] with X^(1/J)≤Y and Y²≤X, for the specified prime pairs and character fields. The parameter eps is in (0,1/52). This square root is not a statement about choosing sqrt(X) theta lifts.
 
-## Independent local numerical continuation
+## Independent local continuations
 
 [PowerExponentialBudget.lean](../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PowerExponentialBudget.lean)
 now proves the same numerical absorption statement directly from Mathlib,
@@ -180,6 +205,23 @@ using separate term budgets and eventual power growth. Its
 retains the quantifier order and actual verification scope. This local
 reconstruction does not substitute the declaration into the external
 build or verify the arithmetic suppliers listed above.
+
+The subsequent finite arithmetic continuation adds four checked modules:
+
+| Local component | Established source return |
+|---|---|
+| [Trace separation](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceSeparation.md) | The exact scaled difference is nonzero and integral, with lower norm 5/2 and logarithmic bound 2e log q+1. |
+| [Integral Galois product](../AlgebraicNumberTheoryGlobalFields/GaloisInvariantIntegerProduct.md) | The literal finite product is an actual integer, with nonvanishing and complete indexed logarithmic cost. |
+| [Prime budget](../AlgebraicNumberTheoryGlobalFields/IntegerPrimeLogBudget.md) | Finite prime valuation sums are bounded by log|n|; two distinct auxiliary exceptions are covered under the supplied pointwise estimates. |
+| [Trace-witness assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceIntegerWitness.md) | One nonzero integer, equal to the full trace product, works for every finite prime set. |
+
+All 22 new theorem bodies compiled with `--trust=0` and warnings treated
+as errors. All 22 transitive axiom queries reported only `propext`,
+`Classical.choice`, and `Quot.sound`. Exact-target and hostile-control
+audits passed; the component records distinguish their trust settings
+and retain earlier failed development attempts. Fresh full-dependency
+replay and independent kernel implementations are `NOT_RUN`. These are
+local reconstruction results, not a completed external submission check.
 
 The companion [route walkthrough](SubmittedRiemannHypothesisRoute.md)
 explains the one-sided Landau mechanism and the exact local consumers.
@@ -190,6 +232,13 @@ Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
 The numerical absorption and integer-product arguments do not establish the underlying eigensystem count, OneCharU_s, the other count cases, LemmaK, ThmBab, or ThmBc. Nor does their source-level assembly establish the theta/Galois suppliers of the literature package or the full ChebyshevInequalityAtWindowScale construction.
 
 The meaningful remaining verification is the actual source-bound proof of those inputs and their integration, with exact target comparison and transitive axiom/replay evidence. This record identifies inspected arguments and their consumers; it does not promote the external RH/Dirichlet-GRH endpoint to an accepted theorem.
+
+The next compact arithmetic target is the private `vl_bound` in
+[FPropGKU.lean][valuation]: a norm-product inequality becomes a sum of
+valuations under explicit nonzero and prime hypotheses. The injective
+class-map/local-norm comparison and the substantive `OneCharU_s` supplier
+are still needed before applying the checked prime budget to deformation
+lengths.
 
 [count]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean
 [cohomology]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/AutomorphicForms/TemperedLocalComponents/CohBoundFree.lean

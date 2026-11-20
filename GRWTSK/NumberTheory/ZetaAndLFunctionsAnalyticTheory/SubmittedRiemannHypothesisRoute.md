@@ -278,6 +278,37 @@ substantive external verification obligations. The linked record gives
 the exact declarations, hypotheses and source revisions; it reports no
 full external compilation or transitive proof replay.
 
+### A checked local finite-arithmetic return
+
+The [trace-witness assembly](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceIntegerWitness.md)
+now reconstructs that finite part against the root Mathlib. For supplied
+finite trace and root-of-unity families, it proves
+
+\[
+N=\prod_o\prod_s q^e(t_s-E(q,e,z_o))\in\mathbf Z\setminus\{0\},
+\qquad
+\log|N|\le |O|\,|S|\,(2e\log q+1).
+\]
+
+The [trace leaf](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceSeparation.md)
+proves the stronger factor bound `5/2≤|q^e(t−E)|≤2(q^e)^2` and integral
+closure separately. The [Galois-product theorem](../AlgebraicNumberTheoryGlobalFields/GaloisInvariantIntegerProduct.md)
+derives integer-valuedness from full abstract automorphism invariance,
+preserving multiplicities. Finally the [prime budget](../AlgebraicNumberTheoryGlobalFields/IntegerPrimeLogBudget.md)
+gives `Σ log p v_p(N)≤log|N|` for every finite prime set, with the same
+integer chosen first. Its two-witness theorem covers distinct auxiliary
+exceptions when the pointwise valuation estimates are available.
+
+All 22 local theorem bodies compiled with `--trust=0`; their transitive
+axiom queries returned only the standard three axioms. The component
+records give exact sources, target/control checks, trust settings, and
+retained failed attempts. The full external build, fresh dependency
+replay, and an independent kernel implementation remain unperformed
+here. Constructing the trace families, matching admissible
+representations to their classes, and deriving deformation lengths from
+trace valuations remain the missing inputs to the larger arithmetic
+route. The checked finite assembly does not remove those premises.
+
 ## 6. The final zero transport
 
 For a primitive character, a zero in the open strip reflects under the completed functional equation to a zero for the inverse character at \(1-s\). Gamma factors are nonzero in the relevant positive-real-part region. If \(\operatorname{Re}s<1/2\), its reflection lies to the right; if \(\operatorname{Re}s>1/2\), the original zero already lies there. Universal right-half-plane nonvanishing leaves only \(\operatorname{Re}s=1/2\).
@@ -328,6 +359,13 @@ still report the build in progress and provide no completed full-submission
 verdict. The removal of the README's old status table does not supply that
 missing result. Mathematical source links in this record remain pinned
 to the exact revision inspected.
+
+The arithmetic continuation additionally inspected external revision
+`1f2beda145f7b7a9f6f6f6640a60f2e44920b7ba`. Its changes clarify sandboxed
+export and the clean configuration supplied to the judge. They change
+no submitted Lean proofs. Its [verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/1f2beda145f7b7a9f6f6f6640a60f2e44920b7ba/verification/NOTES.md#results)
+still record the build in progress, without a completed full-submission
+verdict.
 
 ## 8. Source pins and continuation
 

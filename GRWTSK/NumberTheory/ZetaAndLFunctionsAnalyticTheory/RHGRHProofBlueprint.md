@@ -122,7 +122,14 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   Laplace moments in the one-sided Landau deduction. A [deeper arithmetic audit](SubmittedRiemannHypothesisArithmeticAudit.md)
   records the actual trace-product, integer-witness and valuation-sum
   construction, with its cohomological and deformation inputs still
-  requiring external verification. The concurrent
+  requiring external verification. A subsequent [local arithmetic
+  reconstruction](../AlgebraicNumberTheoryGlobalFields/EisensteinTraceIntegerWitness.md)
+  now proves the exact trace separation, full integral Galois-product
+  descent, and finite-prime logarithmic budget. It returns one nonzero
+  integer equal to the literal trace product, chosen before every finite
+  prime set. The trace-family construction, representation classifier,
+  local-norm comparison, and deformation-to-valuation supplier remain
+  open in this local continuation. The concurrent
   [conductor-three integrated-kernel return](WeilConductorThreeKernelReturn.md)
   has its own established source identity and retains its sign-certificate
   and zero-side obligations; its progress is preserved separately.
