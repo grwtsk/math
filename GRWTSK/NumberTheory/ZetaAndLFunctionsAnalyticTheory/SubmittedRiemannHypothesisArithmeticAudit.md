@@ -49,6 +49,18 @@ or completed independent checks performed here. The notes report a
 large solution export but their Results section still says the build
 is in progress. No completed full-submission verdict was observed.
 
+The Euler/tangent continuation refreshed external `main` at
+`e50d09817ad81469f737e8f637561e6ccf86c670`. Its single intervening
+commit corrects only the [verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/verification/NOTES.md).
+The earlier inventory of metaprogramming was incomplete: the notes
+now also list `kexactB`, `kcopy`/`#kcopy_probe`, `run_tac` uses, and a
+positivity extension. They describe some tactics as assigning proof
+terms without the elaborator first checking the expected type, leaving
+declaration checking to the kernel. This is a corrected maintainers'
+report, not an independent audit of those tactics or a completed proof
+replay here. Submitted Lean files and the comparator configuration are
+unchanged; the Results section still reports the build in progress.
+
 ## Finite count, integer witness, and valuation sum
 
 ### 1. Polynomially many automorphic systems
@@ -517,26 +529,74 @@ The [slice proof][slice] uses the actual ring
 homogeneous generation and degree-zero image hypotheses. Every
 nonzero coefficient becomes a unit in this localization.
 
-The next bounded geometric leaf constructs the Euler point derivation
-at `ξ:A→ₐ[O]K` by
+The next three local modules now reconstruct the entire `hder`
+subargument of the slice proof. The
+[Euler module](../../CommutativeAlgebra/GradedEulerDerivation.md)
+first constructs an actual `Derivation O A A` from the finite
+homogeneous expansion, `E_A(∑a_j)=∑j a_j`. Additivity of degrees
+gives the product rule, and homogeneity gives `E_A(I)⊆I`. Composing
+with `ξ:A→ₐ[O]K` gives the actual point derivation
 
 \[
 E(a_j)=j\,\xi(a_j)\qquad(a_j\in A_j),
 \]
 
-and proves that it kills a homogeneous ideal already killed by `ξ`.
-For a point of `C`, one has `ξ(f)=1`, so `E(f)=−2`. A derivation on
-`C` pulls back to one killing `f`; `M4` makes that pullback and `E`
-linearly dependent. Since `−2≠0`, the pullback vanishes, and the
-localization identity then kills the original derivation. This use of
-the degree requires the source characteristic hypothesis. The Euler
-construction and its ideal-vanishing proof have been read at the source
-pin but have no local Lean reconstruction in this pass.
+which kills `I` whenever `ξ` does. This construction works over
+commutative target rings in every characteristic. The source's
+arbitrary-linear-map formulation with the same homogeneous values is
+also proved, by uniqueness on the direct-sum components.
 
-[EtHolds.lean][et] then uses the differential/Nakayama argument and
-the stated field hypotheses to obtain finiteness and separation by
-field-valued points, supplying the reduced slice return. This complete
-supplier and its dependency closure remain unproved locally.
+The [slice rigidity module](../../CommutativeAlgebra/GradedSlicePointDerivation.md)
+retains the full `M4` premise. For a point of the actual `C`, the
+pullback `ξ` satisfies `ξ(f)=1` and `ξ(g)≠0`, supplying the two-signed
+condition. A point derivation `D` on `C` pulls back to `D′` killing
+both `I` and `f`. The constructed Euler map kills `I` and has
+`E(f)=−2`. Dependence gives `αD′+βE=0`, with the coefficients not
+both zero. Evaluation at `f` forces `β=0`; then `α≠0` forces `D′=0`.
+Euler itself is defined on `A` and generally does not descend through
+the normalized slice ideal: its nonzero value on `f−1` is precisely
+the direction removed by the normalization.
+
+The [localization pullback module](../../CommutativeAlgebra/LocalizedPointDerivation.md)
+proves the return from `D′=0` to `D=0`. Every actual fraction satisfies
+`z·ι(t)=ι(r)` for an allowed denominator `t`. The product rule gives
+`ψ(ι(t))D(z)=0`, and this coefficient is a unit. This proof works
+even when the target ring has zero divisors and does not assume the
+localization map is surjective. The final combined endpoint is the
+actual source assertion `∀ψ:C→ₐ[O]K, PtDer ψ K=⊥`, verified in the
+imported audit with the source's genuine submodule carrier.
+
+The general combined theorem permits any negative degree `d` and
+positive degree `e`, without equal magnitudes, but requires
+`(d:K)≠0`. The original `−2,+2` specialization follows from
+characteristic zero of `O` and faithful `O→K`. A nonzero integer
+degree is insufficient: in characteristic two, `f=t²` has degree
+`−2` in `k[t,t⁻¹]` but zero derivative, and the slice
+`k[t,t⁻¹]/(t²−1)` retains a nonzero tangent direction. The Euler
+audit checks actual Laurent grading examples, including this vanishing
+of the degree cast, and the failure to preserve a nonhomogeneous ideal.
+
+The next bounded geometric target is the private `et_unram` in
+[EtHolds.lean][et]: a finite-type `O`-algebra `C` whose maximal
+residue fields embed into `K`, and whose `K`-valued point derivations
+all vanish, is formally unramified over `O`. Its actual proof uses
+the finite `C`-module `Ω[C/O]`. If a fiber `Ω/mΩ` were nonzero, a
+nonzero residue-field dual functional, composed with the universal
+derivation and a residue-field embedding into `K`, would give a point
+derivation. Its forced vanishing makes the functional vanish on the
+generators `d(C)`, hence on all differentials, a contradiction. Once
+every maximal fiber vanishes, the finite-module Nakayama argument gives
+`Ω[C/O]=0`.
+
+That theorem and the residue-point construction have been read but
+are not locally reconstructed in this pass. The subsequent fraction-field,
+finite/reduced algebra, and Jacobson arguments supply finiteness of
+the point set and separation by field-valued points. Those conclusions
+do not follow from the newly checked tangent statement alone: for
+example, `ℚ(i)` has no `ℚ`-valued points, so a condition on all such
+point derivations is vacuous and those points do not separate elements.
+The source's actual finite-type and algebraically closed field suppliers
+remain necessary for its reduced-slice return.
 
 Once that return upgrades local nilpotence to local vanishing for
 homogeneous elements (`red`), the precise cyclicity step is as follows.
@@ -594,6 +654,7 @@ the top of this record. Representative SHA-256 values are:
 | [DehHolds.lean][deh] | `02f6ce5034e64a7a987eaedbaede444e5f82b7af76fe43b5a868150a64225aa0` |
 | [FtHolds.lean][ft] | `f3934878da5e7bb158d2ba4571d0d4f22531a354151813dda2025e3d59e4f298` |
 | [EtHolds.lean][et] | `f2c5fbe52de89015a446afccc25c2637dd35794692d1c4ce82a8d55f77d26f80` |
+| [ResMapBijective.lean][ptder] | `20e63b53f95a2cd6e41afdd9ed4269a42e59ae5fc934ab620109a7fd6fbbed2e` |
 | [HerbrandFinLen.lean][herbrand] | `00e8a2a5990e6c9f4291685e13bc2b859d08b277446a2fa03f684a9c3914faf1` |
 
 ## From count bounds to the VWin budget
@@ -717,6 +778,31 @@ checked, with no root pin change. Fresh full-dependency replay, an
 independently implemented kernel check, and substitution into the
 external geometric consumer remain **NOT_RUN**.
 
+The Euler/tangent continuation adds three modules, 17 public theorems,
+one private scalar-dependence helper, and three actual Euler-map
+definitions:
+
+| Local component | Established source return |
+|---|---|
+| [Graded Euler derivation](../../CommutativeAlgebra/GradedEulerDerivation.md) | Actual `Derivation O A A`, preservation of homogeneous ideals, point composition, and both exact private source Euler endpoints. |
+| [Localized point derivations](../../CommutativeAlgebra/LocalizedPointDerivation.md) | Actual localization pullback determines a point derivation; genuine quotient-Away zero and equality returns, even for target rings with zero divisors. |
+| [Graded slice rigidity](../../CommutativeAlgebra/GradedSlicePointDerivation.md) | Explicit `M4` plus the nonzero field-valued degree gives zero point derivations on the actual normalized and localized slice. |
+
+All three final sources and imported endpoint/control audits passed
+`--trust=0 -DwarningAsError=true` at the unchanged root pins. The
+17 public axiom sets are subsets of `propext`, `Classical.choice`, and
+`Quot.sound`; the two generic localization theorems use only `propext`
+and `Quot.sound`, while the other 15 report all three. Controls include
+actual Laurent gradings in characteristic zero and two, a nonhomogeneous
+ideal, genuine nonsurjective localization, failure for an arbitrary
+injective algebra map, unit cancellation in the presence of zero
+divisors, and the exact source point-derivation submodule. The records
+retain every earlier attempted check at its actual result and source
+identity. Separate read-only mathematical and saved-evidence review
+does not claim a second kernel execution. Fresh full-dependency replay,
+independently implemented kernel checking, and external-consumer
+substitution remain **NOT_RUN**.
+
 The companion [route walkthrough](SubmittedRiemannHypothesisRoute.md)
 explains the one-sided Landau mechanism and the exact local consumers.
 Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
@@ -734,10 +820,14 @@ the checked integer budget to actual deformation lengths. The actual
 graded quotient sequence, localized inequality, finite squaring,
 nonzero-degree dehomogenization, actual post-slice localization return,
 and finite-image local nilpotence now have local checked proofs.
-The next bounded geometric reconstruction is the actual Euler point
-derivation and its homogeneous-ideal vanishing. The full tangent-to-slice
-supplier remains necessary; the explicit conditional cyclicity and
-residue-field length arguments above are further algebraic targets.
+The actual Euler derivation, homogeneous-ideal preservation, localization
+pullback injectivity, and complete `M4`-to-zero-slice-derivations step
+also now have checked local proofs. The next bounded geometric
+reconstruction is `et_unram`: use the actual Kähler differential module,
+residue-field embeddings and Nakayama to obtain formal unramifiedness.
+Finite type, finiteness/reducedness and point separation still need their
+local suppliers; the explicit conditional cyclicity and residue-field
+length arguments above remain further algebraic targets.
 The Rees/Herbrand and lower cotangent comparisons also remain necessary
 for the full factor-two deformation-to-valuation estimate.
 
@@ -781,4 +871,5 @@ for the full factor-two deformation-to-valuation estimate.
 [deh]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/DehHolds.lean
 [ft]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/FtHolds.lean
 [et]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/EtHolds.lean
+[ptder]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/ResMapBijective.lean
 [herbrand]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/HerbrandFinLen.lean

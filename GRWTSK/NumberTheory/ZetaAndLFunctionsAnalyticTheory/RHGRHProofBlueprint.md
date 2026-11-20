@@ -160,19 +160,34 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   and imported endpoint/control audits passed trust-zero checks at the
   unchanged root pins; all public axiom reports give only the standard
   three axioms. The slice membership remains an explicit supplier.
-  The next bounded geometric target is the Euler point derivation
-  `E(a_j)=jξ(a_j)` and its homogeneous-ideal vanishing, followed by the
-  actual `M4` tangent-to-reduced-slice argument. The audit records the
-  exact subsequent quadratic cyclicity and residue-field length-one
-  returns. Full Rees/Herbrand and lower comparisons remain open locally.
+  The following [Euler module](../../CommutativeAlgebra/GradedEulerDerivation.md)
+  now constructs an actual `Derivation O A A`, preserves homogeneous
+  ideals, and gives the point map `E(a_j)=jξ(a_j)`.
+  [Localization pullback](../../CommutativeAlgebra/LocalizedPointDerivation.md)
+  determines point derivations by their original-ring values using
+  unit denominators. The [slice rigidity return](../../CommutativeAlgebra/GradedSlicePointDerivation.md)
+  combines these with the complete supplied `M4` condition to prove
+  zero point derivations on the actual quotient-localized slice.
+  These 17 public theorems, one private helper, and three definitions
+  have checked local sources and imported endpoint/control audits;
+  all public axiom sets are subsets of the standard three. The degree
+  must remain nonzero in the point field, not merely in the integers.
+  The next bounded geometric target is `et_unram`: actual residue-field
+  duals of the Kähler differential fibers and Nakayama must turn zero
+  point derivations into formal unramifiedness. Finite type, residue-point
+  embeddings, finite/reduced algebra and point separation remain
+  separate suppliers. The audit also records the subsequent conditional
+  quadratic cyclicity and residue-field length-one returns. Full
+  Rees/Herbrand and lower comparisons remain open locally.
   Independent kernel replay and external consumer substitution remain
   unperformed. The external
-  [verification notes at the latest inspected revision](https://github.com/Deicyde/riemann-hypothesis/blob/712a6aef8fe265fb6f3a5fa1f3101a017aec8fe9/verification/NOTES.md#results)
+  [verification notes at the latest inspected revision](https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/verification/NOTES.md#results)
   still report the full submission build in progress. The checker
   configuration now uses Lean paranoid and nanoda; the documented
   compatibility limits of other checkers and a reported large export
   do not supply a completed full-submission verdict. No submitted
-  Lean proof changed in that refresh.
+  Lean proof changed in that refresh. The latest note correction expands
+  its metaprogramming inventory without supplying a completed verdict.
   The concurrent
   [conductor-three integrated-kernel return](WeilConductorThreeKernelReturn.md)
   has its own established source identity and retains its sign-certificate

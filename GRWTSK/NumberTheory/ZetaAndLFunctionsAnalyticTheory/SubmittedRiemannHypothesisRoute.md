@@ -497,14 +497,79 @@ and retained failed attempts. The imported controls also check why
 nonzero degree, finite support, a polynomial relation, faithful
 coefficients, and admissible denominators matter.
 
-The original length-at-most-one conclusion still requires the genuine
-tangent/rigidity-to-slice argument. Its next bounded geometric leaf is
-the Euler point derivation `E(a_j)=jξ(a_j)` and its vanishing on a
-homogeneous ideal killed by `ξ`. On the source slice `f=1`, with
-`deg f=−2`, one has `E(f)=−2≠0`. Linear dependence from `M4` then
-forces other slice derivations to vanish. Finite-type and
-differential/reducedness results supply the slice membership consumed
-above. Those local reconstructions remain open.
+### Euler derivation and tangent rigidity on the actual slice
+
+The next continuation now proves the Euler construction and the complete
+`M4`-to-zero-point-derivations subargument. Its three modules add
+17 public theorems, one private scalar helper, and three actual
+Euler-map definitions. Their maintained sources and imported endpoint
+audits pass trust-zero checks with warnings as errors. All public axiom
+sets are contained in the standard three; the two generic localization
+theorems use only `propext` and `Quot.sound`.
+
+The [Euler construction](../../CommutativeAlgebra/GradedEulerDerivation.md)
+defines an actual `Derivation O A A` by
+
+\[
+E_A\left(\sum_j a_j\right)=\sum_j j a_j.
+\]
+
+For homogeneous factors, the product has degree `i+j`, so the
+product rule is just distributivity of `(i+j)ab`. Linearity extends
+this identity to all finite homogeneous sums. A homogeneous ideal is
+preserved because each component of its elements lies in the ideal.
+Composing with a point `ξ` therefore gives the genuine point derivation
+`E(a_j)=jξ(a_j)`, killing `I` whenever `ξ` kills `I`.
+
+The [rigidity theorem](../../CommutativeAlgebra/GradedSlicePointDerivation.md)
+uses the source's actual slice algebra
+
+\[
+C=(A/(I+(f-1)))[1/(\overline\pi\,\overline g)].
+\]
+
+At a point `ψ` of `C`, pullback gives `ξ(f)=1`, `ξ(g)≠0`, and
+`ξ(I)=0`. The negative degree of `f` and positive degree of `g`
+supply precisely the two-signed premise of `M4`. A point derivation
+on `C` pulls back to `D′` killing `I` and `f`. Euler kills `I` and,
+for the source degrees, satisfies `E(f)=−2≠0`. The nontrivial
+dependence
+
+\[
+\alpha D'+\beta E=0
+\]
+
+evaluated at `f` forces `β=0`, then `α≠0` forces `D′=0`.
+Euler is used on the original algebra: it generally cannot descend
+through `f−1`, since its value there is nonzero. This is the tangent
+direction removed by the normalization.
+
+The [localization theorem](../../CommutativeAlgebra/LocalizedPointDerivation.md)
+then returns `D′=0` to the actual derivation `D` on `C`. For a fraction
+`z`, write `zι(t)=ι(r)` with an allowed denominator. Its differentiated
+identity gives `ψ(ι(t))D(z)=0`. The coefficient is a unit, so it can
+be cancelled even in a target ring with zero divisors. The proof uses
+the actual localization property, never surjectivity of the algebra
+map into the localization.
+
+The resulting endpoint is exactly that the source point-derivation
+submodule is zero at every point of `C`. The imported audit checks
+that submodule, its scalar Leibniz convention, and the full `M4`
+quantifiers. The general theorem allows different negative and positive
+degree magnitudes, retaining `(d:K)≠0` for the degree of `f`. Integer
+nonzero degree alone fails in characteristic dividing `d`; the
+compiled Euler controls include a genuine Laurent grading over `𝔽₂`.
+
+The next bounded geometric target is the source's `et_unram`:
+finite type, embeddings of all maximal residue fields into `K`, and
+zero point derivations imply `Algebra.FormallyUnramified O C`.
+A nonzero fiber of the actual differential module `Ω[C/O]` would
+give a nonzero point derivation through a residue-field dual functional.
+After ruling out all such fibers, Nakayama kills the finite differential
+module. This implication, the finite-type/residue-point suppliers, and
+the later finite/reduced algebra and point-separation results remain
+unproved locally. They are needed to produce the slice membership
+consumed by the earlier dehomogenization return.
 
 The [expanded audit](SubmittedRiemannHypothesisArithmeticAudit.md#the-remaining-geometric-length-one-supplier)
 also spells out the subsequent conditional cyclicity argument:
@@ -604,6 +669,15 @@ separately. A reported solution export is evidence of export progress,
 not a completed checker verdict. The Results section still reports
 the build in progress. Submitted Lean proofs remain unchanged, and
 no full-submission acceptance is claimed here.
+
+The Euler/tangent continuation inspected external revision
+`e50d09817ad81469f737e8f637561e6ccf86c670`. Only its
+[verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/e50d09817ad81469f737e8f637561e6ccf86c670/verification/NOTES.md)
+changed, correcting the earlier incomplete metaprogramming inventory.
+The newly documented direct term-assignment tactics remain subject to
+the reported kernel-checking process. No submitted Lean file changed,
+and the full verification result remains pending. These are maintainers'
+reports, separate from the completed local source checks above.
 
 ## 8. Source pins and continuation
 
