@@ -254,9 +254,13 @@ control of any unresolved or mixed terms introduced by that comparison.
 
 The exact sample matrix still has zero diagonal. Its positivity on all
 unconstrained vectors is not supplied by derivative mean-zero, and no
-positive sign is inferred from approximation alone. A useful next consumer
-is a certificate on the genuine constrained derivative coordinates, with
-its full approximation and metric deficit controlled.
+positive sign is inferred from approximation alone. The follow-up
+[constrained-certificate module](WeilConductorThreeConstrainedCertificates.md)
+proves an exact complex zero-sum coordinate reduction and returns the
+unchanged rational checker from that reduced matrix to this arithmetic
+source. Its cell-energy bound controls an identity packet metric by
+`8/(N+1) * E(f')`. Useful accepted packets enclosing the actual arithmetic
+source still require a producer.
 
 One valid sign route can keep derivative energy throughout: for each fixed
 test `f`, all-accuracy approximation gives an error tending to zero because
@@ -265,7 +269,12 @@ also have `tau_j * v_j(f)^T G_j v_j(f) -> 0`, the checked lower bounds imply
 `A(f) >= 0` by taking the limit. Merely having `tau_j -> 0` is insufficient
 when the coordinate metric factor is uncontrolled. This route needs no
 uniform inequality `E(f') <= C E(f)`, but the required sign certificates and
-vanishing total deficit have not been produced here.
+vanishing total deficit have not been produced here. The follow-up now
+formalizes the conditional dyadic implication with a joint enclosure,
+acceptance, identity-metric and complete-budget hypothesis at each stage.
+Its separate parameter-selection theorem does not establish that production
+hypothesis. Verification evidence for the later module is recorded at its
+own exact source; the checks below retain their original scope.
 
 This increment fixes conductor three and radius four. It does not prove a
 cofinal all-window/all-conductor sign producer, identify the arithmetic
