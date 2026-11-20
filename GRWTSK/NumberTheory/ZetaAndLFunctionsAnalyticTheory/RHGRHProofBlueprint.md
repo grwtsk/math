@@ -109,6 +109,23 @@ Both height tails remain open in these interfaces. [Platt, Theorem
   to the literal `BandBound` predicate; the analytic estimate remains a
   premise. Concrete packet acceptance, kernel source identities, Xi
   constructions and the RH-to-Schoenfeld supplier retain their own obligations.
+  The subsequent [wider-window recovery](../MultiplicativeNumberTheory/SmoothedMangoldtWindows.md)
+  proves an exact canonical-psi enclosure from upper outer observations
+  and a lower central observation, reducing the observation-error cost to
+  an explicit `N/h` scale while retaining the width bias. It does not turn
+  the submitted one-sided family bound into those scalar observations.
+  The [power-exponential budget](../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PowerExponentialBudget.md)
+  independently reconstructs the exact elementary error-absorption leaf
+  used in `vwinAt_of_joint`; `JointWin 401`, `ThmBc 401`, and their arithmetic
+  construction remain external verification obligations. The expanded
+  walkthrough also explains the positive pole residues and localized
+  Laplace moments in the one-sided Landau deduction. A [deeper arithmetic audit](SubmittedRiemannHypothesisArithmeticAudit.md)
+  records the actual trace-product, integer-witness and valuation-sum
+  construction, with its cohomological and deformation inputs still
+  requiring external verification. The concurrent
+  [conductor-three integrated-kernel return](WeilConductorThreeKernelReturn.md)
+  has its own established source identity and retains its sign-certificate
+  and zero-side obligations; its progress is preserved separately.
 - **OpenAI, 7/8.** The September 30, 2026 preprint, Theorem 1.1, and
   the pinned Lean declaration
   `OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re`

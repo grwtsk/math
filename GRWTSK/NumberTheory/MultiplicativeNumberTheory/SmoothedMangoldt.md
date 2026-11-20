@@ -202,3 +202,16 @@ uniform analytic centered bound, all-scale positivity, RH, or GRH is proved
 by this module. The next arithmetic supplier must control the required
 signed combination or the source's actual Landau-window quantity with the
 stated quantifiers. Coordination: [math #1828](https://github.com/grwtsk/math/issues/1828).
+
+## Wider-window continuation
+
+[SmoothedMangoldtWindows.lean](SmoothedMangoldtWindows.lean), with its
+[separate source record](SmoothedMangoldtWindows.md), proves a second
+finite transfer using nonnegative coefficients and a chosen separation
+`0<h<N`. Upper centered observations at `N-h,N+h` and a lower centered
+observation at `N` yield
+`|ψ(N)-N|≤h+(2N+h)E/h`. Thus the error amplification is divided by `h`,
+while the baseline bias is retained. Three absolute bounds are a sufficient
+special case. This does not change any identity or historical verification
+result above, and supplies neither the central lower observation nor the
+source's character-family estimate.

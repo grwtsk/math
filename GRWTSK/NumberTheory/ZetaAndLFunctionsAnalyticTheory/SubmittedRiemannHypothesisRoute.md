@@ -25,6 +25,17 @@ S_a(N)=\sum_{n=1}^{N}a_n(N/n-1).
 
 Taking \(a_n=\Lambda(n)\) identifies the *uncentered finite sum* with the source's \(S_\zeta(N)\). This gives a concrete mathematical consumer for exact summation identities and their error estimates. It supplies no bound on the centered quantity \(G_\zeta\), and does not supply the character-family estimate used below. In particular, recovering partial sums by differences must retain the error amplification from those differences.
 
+The continuation [SmoothedMangoldtWindows.lean](../MultiplicativeNumberTheory/SmoothedMangoldtWindows.lean)
+now proves a wider-window return, with a [complete source record](../MultiplicativeNumberTheory/SmoothedMangoldtWindows.md).
+For `0<h<N`, upper centered observations at `N-h` and `N+h` and a lower
+centered observation at `N` imply
+\(|\psi(N)-N|\le h+(2N+h)E/h\), with every error cost retained. It uses
+the nonnegativity of the actual von Mangoldt coefficients. A one-sided
+upper estimate alone does not provide its central lower observation, and
+the character-family coefficients do not automatically satisfy its
+positivity hypothesis. This finite transfer is therefore distinct from
+the Landau-window deduction below.
+
 ## 2. The central estimate concerns a weighted character family
 
 The source works with primitive Dirichlet characters, including the trivial primitive character of conductor one. To avoid confusion with the von Mangoldt function, call its `Level` object \(\mathcal L\). It contains a finite set `KEPT`, includes the trivial character, and is closed under taking inverse characters.
@@ -99,6 +110,104 @@ The source's Landau criterion says that these upper bounds exclude every retaine
 
 This explains why control arbitrarily close to exponent \(1/2\) matters. A fixed positive loss would exclude zeros only to the right of a wider line. The quantifiers and the uniform arithmetic construction carry the improvement to the critical line.
 
+### How the one-sided Landau argument works
+
+A deeper source inspection makes the analytic mechanism explicit. The
+following reconstruction uses the source's named analytic lemmas; it is
+not a report of their full kernel replay or an independent verification
+of all their dependencies.
+
+Set \(g(u)=G_{\mathcal L}(e^u)\). The source constructs a meromorphic
+function \(\Phi\) whose right-half-plane representation is
+
+\[
+\Phi(s)=\int_0^\infty g(u)e^{-su}\,du,
+\qquad \operatorname{Re}s>2.
+\]
+
+For a nontrivial character, the corresponding transform is
+
+\[
+-\frac{L'(\chi,s)/L(\chi,s)
+       -sL'(\chi,1)/L(\chi,1)}{s(s-1)}.
+\]
+
+The zeta branch regularizes its pole at one separately. A zero \(\rho\)
+of multiplicity \(m\), with \(0<\operatorname{Re}\rho<1\), contributes
+the residue \(-m/[\rho(\rho-1)]\). Taking the real character sum pairs
+each character with its inverse. At a zero of the resulting family, the
+residue therefore has the form
+
+\[
+-\frac{M_\rho}{\rho(\rho-1)},\qquad
+M_\rho=\frac12\sum_i a_i
+ \bigl(m_{\chi_i}(\rho)+m_{\chi_i^{-1}}(\rho)\bigr)>0.
+\]
+
+This explains a concrete use of the positive weights: the multiplicity
+coefficient cannot cancel. For a real zero \(0<\rho<1\), the residue is
+positive as a real number. The construction and the actual multiplicity
+argument are in [poleData.lean][poledata]. These pole facts are additional
+structure; a generic real function with a small one-sided upper bound
+need not encode any zero exclusion.
+
+For \(\sigma>2\), differentiation of the transform gives the normalized
+moments
+
+\[
+A_k(\gamma)=\frac{(-1)^k}{k!}\Phi^{(k)}(\sigma+i\gamma)
+=\int_0^\infty g(u)\frac{u^k}{k!}
+  e^{-\sigma u}e^{-i\gamma u}\,du.
+\]
+
+The weight \(u^ke^{-\sigma u}/k!\) is nonnegative. If \(R\ge0\) and
+\(g\le R\) on a window, the pointwise inequality
+\(|g|+g\le2R\) controls
+\(\lVert A_k(\gamma)\rVert+\operatorname{Re}A_k(0)\), with a separate
+cost for the complement of the window. The source's `PoleData` also
+supplies the global bound \(|g(u)|\le C_0e^{2u}\) for \(u\ge0\), which
+controls that complement. This retains the sign of the
+real-center moment; it does not replace the hypothesis by an unproved
+absolute bound on \(g\). See [landauWindowIneq.lean][windowineq].
+
+Under \(x=e^u\), a power window becomes \([U,(1+\delta)U]\). A bound
+\(G_{\mathcal L}(x)\le Cx^\theta\) gives a nonnegative majorant whose
+window integral against \(e^{-\theta u}\,du\) is at most
+\(|C|\delta U\); this is eventually
+at most \(e^{\eta U}\) for every \(\eta>0\). The source's tail estimates
+choose a suitable \(\sigma\) and an integer \(k\ge U\) so that the
+outside contribution is small. They yield
+
+\[
+\lVert A_k(\gamma)\rVert+\operatorname{Re}A_k(0)
+\le \frac{C_1e^{\eta U}}{(\sigma-\theta)^k}.
+\]
+
+The exact quantifier order is: a suitable fixed \(\sigma,C_1\), then
+every \(\eta>0\), then arbitrarily large \(U\) and a suitable \(k\ge U\).
+The selected \(k\) is not claimed to range over every natural number.
+The coefficient, tail, and assembly lemmas are [LandauCoeff.lean][coeff],
+[landauTails.lean][tails], and [landauWindow.lean][landauwindow].
+
+Finally, suppose a pole lies to the right of \(\theta\). The source uses
+a geometric dichotomy: either isolate a positive-residue real pole, or
+isolate a pole near a shifted center while the real-center term is
+analytic on a larger disk. Pole expansions and Cauchy bounds then force
+an inequality of the shape
+
+\[
+\frac{c}{d^k}
+\le \frac{M}{e^k}+\frac{C_2e^{\eta U}}{E^k},
+\qquad c>0,\quad 0<d<e\le E=\sigma-\theta,\quad k\ge U.
+\]
+
+Choose \(0<\eta<\log(e/d)\). Since \(U\le k\), the right side is at
+most a constant times \(e^{\eta k}/e^k\), which is asymptotically smaller
+than \(c/d^k\). Arbitrarily large windows give the contradiction.
+This is the exponential separation in [LandauGrowthContra.lean][growthcontra].
+The differentiation, tail localization, and pole-isolation lemmas remain
+part of the submitted proof's verification obligations.
+
 ## 5. Where the arithmetic proof must be checked
 
 The inspected chain has the following concrete interfaces:
@@ -117,6 +226,57 @@ The inspected chain has the following concrete interfaces:
 The higher-level assembly invokes theta integrals, local matching, covolume bounds, automorphic and Galois data, and arithmetic window constructions. One quantitative interface, `VWin`, requires weighted bounds on finite `shaLen` quantities for \(1\le e<\lfloor x^{401}\rfloor\), bounded by \(\sqrt{\exp(x^\varepsilon)}\), on prescribed windows for associated number fields. Its definition in [ExistsPageN.lean][vwin] illustrates the substantial arithmetic content still requiring review. This particular square root does not establish the announcement's separate claim about choosing \(\sqrt X\) theta lifts.
 
 The final source connects `everyCharacter` through `everyCharacter_of_row` to a theta-lift/Galois construction; see [MainConclusion.lean][conclusion]. This is a trace of asserted dependencies. It is not a complete independent proof of the theta-lift construction, its quantitative constants, or the full collection of imported results.
+
+### An independently reconstructed numerical leaf
+
+The local [PowerExponentialBudget.lean](../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PowerExponentialBudget.lean)
+now gives an original Mathlib-only proof of the exact numerical statement
+`UpperTheory.V.error_terms_le_sqrt_exp_rpow` in the submitted
+[ErrorTermsLeSqrtExpRpow.lean][errorbudget]. For every `ε>0` and real
+constants `K,C`, eventually in `x`, uniformly over all `u≥1` satisfying
+`log u≤2x^(ε/4)`, it proves
+
+\[
+e^{x^{4\varepsilon/5}}\log2
++K e^{8x^{\varepsilon/4}}
++u^C+C e^{x^{4\varepsilon/5}}
+\le\sqrt{e^{x^\varepsilon}}.
+\]
+
+The new proof absorbs each term using the strict gap between its power in
+the exponent and `ε`. It allows negative `K,C` and chooses the cutoff
+before `u`; it does not promise a cutoff uniform in `ε`. The [source record](../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PowerExponentialBudget.md)
+compares this argument to the submitted explicit-cutoff proof and records
+the actual verification scope.
+
+The exact arithmetic consumer is `vwinAt_of_joint` in
+[AdmissibleOfPageN.lean][admissible]. It sets `t(x)=floor(x^Ct)` and applies
+the budget to `u=condF(E)*t(x)` after obtaining the logarithmic bound from
+the conductor estimates. Its `Ct=401` specialization still consumes
+`JointWin 401` and `ThmBc 401`. Reconstructing the numerical budget leaves
+those arithmetic premises and the construction of the complete windows
+to be verified. The external environment has not been rebuilt with the
+local declaration substituted.
+
+### Below the counting interfaces
+
+The [deeper arithmetic source audit](SubmittedRiemannHypothesisArithmeticAudit.md)
+traces a concrete branch beyond the package names. Polynomial bounds on
+automorphic eigensystems produce finite trace families. A trace bound
+`|t|≤sqrt(q)+2` separates those traces from
+`q^(-e)z+1+q^e/z` for `q≥7,e≥1` and a root of unity `z`. A full
+Galois-stable product of the scaled differences is a nonzero integer with
+a controlled logarithmic size. Its valuations then bound the relevant
+length sums, using the separate deformation input `OneCharU_s`.
+The `CountI` assembly fixes its auxiliary primes and exponent before the
+varying host parameters, retaining the uniformity needed later.
+
+The audit found no demonstrated defect in those inspected finite-product
+and summation arguments. The cohomological/eigensystem bounds,
+`OneCharU_s`, the other count cases, and the theta/Galois input remain
+substantive external verification obligations. The linked record gives
+the exact declarations, hypotheses and source revisions; it reports no
+full external compilation or transitive proof replay.
 
 ## 6. The final zero transport
 
@@ -149,7 +309,25 @@ The local [ChebyshevBandCryptids](ChebyshevBandCryptids.md) route consumes `Band
 
 Likewise, a true global positivity statement does not itself construct a particular finite certificate, demonstrate that an approximation checker accepts it, or prove that a surrogate kernel returns the original arithmetic distribution. Source identities, approximation losses, signed observations, and certificate acceptance remain separate obligations. A hypothetical accepted endpoint could finish the global theorem while those implementation-specific routes remained incomplete.
 
+The concurrent conductor-three work at
+`grwtsk/math@2bf99849996eb52b0281003945e5f75fe08dbce6` has now supplied the
+specific integrated-kernel return to `primitiveArithmeticValue` for compact
+C1 tests in the radius-four window. Its [source record](WeilConductorThreeKernelReturn.md)
+retains the remaining sign-certificate and zero-side identification
+obligations. This progress is preserved and is not attributed to the
+external RH submission or to the numerical lemmas in this continuation.
+
 At the inspected revision, the verification project records preliminary checks and a smaller checker test; its full-submission result remains pending in [the pinned verification record][verification]. No local compilation or full replay of that submission is claimed here. The finite smoothing identity is an independently checkable arithmetic advance; the universal character-window construction remains the point where the claimed proof must earn acceptance.
+
+A publication-time refresh inspected external revision
+`976eeac58f2c5fdf94d935bd12e5d9cdada93726`. Its changes from the mathematical
+source pin affect verification instructions, the CI challenge export, and
+export arguments; no submitted Lean proof file changed. The
+[refreshed verification notes](https://github.com/Deicyde/riemann-hypothesis/blob/976eeac58f2c5fdf94d935bd12e5d9cdada93726/verification/NOTES.md#results)
+still report the build in progress and provide no completed full-submission
+verdict. The removal of the README's old status table does not supply that
+missing result. Mathematical source links in this record remain pinned
+to the exact revision inspected.
 
 ## 8. Source pins and continuation
 
@@ -165,6 +343,14 @@ The next mathematical audit target is the construction supplying `ChebyshevInequ
 [window]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean
 [topwin]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean
 [landau]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean
+[poledata]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean
+[windowineq]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean
+[coeff]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCoeff.lean
+[tails]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean
+[landauwindow]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean
+[growthcontra]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean
+[errorbudget]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/ErrorTermsLeSqrtExpRpow.lean
+[admissible]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean
 [core]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean
 [coregm]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean
 [vwin]: https://github.com/Deicyde/riemann-hypothesis/blob/a172c464fd4bcfc4f53e394dcba45d742b1409a6/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean
