@@ -259,8 +259,12 @@ positive sign is inferred from approximation alone. The follow-up
 proves an exact complex zero-sum coordinate reduction and returns the
 unchanged rational checker from that reduced matrix to this arithmetic
 source. Its cell-energy bound controls an identity packet metric by
-`8/(N+1) * E(f')`. Useful accepted packets enclosing the actual arithmetic
-source still require a producer.
+`8/(N+1) * E(f')`. The later
+[actual two-cell certificate](WeilConductorThreeTwoCellCertificate.md)
+supplies one accepted zero-tolerance packet at `M=8,N=1`, together with its
+exact source enclosure and arithmetic lower bound. Its complete gamma and
+spatial approximation cost remains positive. A joint all-precision producer
+is still required.
 
 One valid sign route can keep derivative energy throughout: for each fixed
 test `f`, all-accuracy approximation gives an error tending to zero because
@@ -268,8 +272,8 @@ test `f`, all-accuracy approximation gives an error tending to zero because
 also have `tau_j * v_j(f)^T G_j v_j(f) -> 0`, the checked lower bounds imply
 `A(f) >= 0` by taking the limit. Merely having `tau_j -> 0` is insufficient
 when the coordinate metric factor is uncontrolled. This route needs no
-uniform inequality `E(f') <= C E(f)`, but the required sign certificates and
-vanishing total deficit have not been produced here. The follow-up now
+uniform inequality `E(f') <= C E(f)`, but the required joint family of sign
+certificates with vanishing total deficit has not been produced. The follow-up now
 formalizes the conditional dyadic implication with a joint enclosure,
 acceptance, identity-metric and complete-budget hypothesis at each stage.
 Its separate parameter-selection theorem does not establish that production

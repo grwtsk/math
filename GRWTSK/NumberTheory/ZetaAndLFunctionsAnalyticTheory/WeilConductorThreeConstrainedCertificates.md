@@ -281,26 +281,34 @@ every finite-gamma source positive. A coarse constrained matrix can be
 positive while a truncated continuous form has negative directions; the
 complete approximation allowance must remain present.
 
-An optional next arithmetic target is the following **UNPROVED** enclosure:
+The subsequent
+[actual two-cell certificate](WeilConductorThreeTwoCellCertificate.md)
+proves the stronger source enclosure
 
 \[
--\frac3{32}\le\mathrm{partialSourceKernel}(8,4)\le-\frac1{32}.
+-\frac{29}{500}\le\mathrm{partialSourceKernel}(8,4)\le-\frac{17}{500}.
 \]
 
-At `M=8,N=1`, the sample points are `-2,2`, and reduction gives
-`-2*partialSourceKernel 8 4`. The proposed interval would permit a reduced
-real packet with center `(1/8) I_2`, radius `(1/16) I_2`, zero tolerance,
-and Gram `(1/4) I_2`. The exact logarithmic, square-root, gamma-constant,
-and exponential enclosures required for that source assertion are not
-supplied here. No floating calculation is used as evidence, and this
-unproved target is not substituted for the generic fixture.
+At `M=8,N=1`, the actual sample points are `-2,2`, and exact complex zero-sum
+reduction gives `-2*partialSourceKernel 8 4`. The supplied logarithmic,
+square-root, gamma-constant, and exponential observations justify a reduced
+real packet with center `(1/8) I_2`, radius `(1/16) I_2`, zero tolerance, and
+Gram factor `(1/4) I_2`. Its source enclosure and acceptance by the existing
+checker are proved separately. The original full-space matrix remains
+indefinite.
+
+The arithmetic return retains
+`8 * kernelApproximationBudget 8 1 * E(f')`. The fixed packet's complete
+budget exceeds `2^(-3)`, so this finite certificate does not provide the
+joint all-precision producer. Its verification evidence is recorded at its
+own exact source.
 
 The continuous identity `B_(-|x-y|/2)(f') = E(f)` already follows from the
 established absolute-kernel theorem. It does not bound derivative energy
 uniformly by physical energy. The present budget retains `E(f')`, which
 suffices for the conditional limit for each fixed test. Finite physical
-metric comparisons, useful arithmetic enclosures and certificates, and a
-joint sequence with vanishing complete deficit remain separate tasks.
+metric comparisons and an all-precision sequence of actual enclosures and
+accepted certificates with vanishing complete deficit remain separate tasks.
 
 Exact congruence by columns `e_(i+1)-e_0` is an alternative description of
 the finite-sum reduction, not an independent proof. Approximate moments
