@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 218
+expected_theorems = 232
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -432,4 +432,26 @@ theorems = [
   "SignedLayerTransport.center_zero_preserved",
   "candidate_edge_does_not_imply_certificate",
   "candidate_word_has_no_certified_path",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ActualRiemannZeroSpectralGraph"
+path = "GRWTSK/Combinatorics/GraphTheory/ActualRiemannZeroSpectralGraph.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ActualRiemannZeroSpectralGraph"
+git_blob = "9213809933e2ba33aad2994cfb01e7d2a7e239f3"
+theorems = [
+  "graphCriticalLine_iff_RiemannHypothesis",
+  "canonicalCriticalLine_iff_RiemannHypothesis",
+  "ZeroGraph.all_centers_on_critical_line",
+  "ZeroGraph.actual_zero",
+  "pointMass_at",
+  "pointMass_ne_zero",
+  "ZeroGraph.diagonal_point_eigen",
+  "ZeroGraph.criticalPoint_eq_source",
+  "ZeroGraph.zeta_zero_at_height",
+  "ZeroGraphMap.height_eq",
+  "ZeroGraphMap.diagonal_intertwines",
+  "ZeroGraph.sampleDiagonal_symmetric",
+  "ZeroGraphMap.lower_path",
+  "ZeroGraphMap.source_upper_acyclic",
 ]

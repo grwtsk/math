@@ -1,0 +1,42 @@
+# Exact Riemann-zero graph equivalence and source-derived spectral alignment.
+# Root Lean 4.34.1 / Mathlib d13f23... proves equivalences CONDITIONAL on
+# an explicit RiemannHypothesis source theorem; it does not import the
+# external 175187-module original proof at incompatible Lean 4.33.1.
+# The separate original-toolchain adapter imports the externally checked Main.
+# Run:
+# python3 scripts/verify_frozen_prime_atlas.py \
+#   --config verification/actual-riemann-zero-spectral-graph.toml \
+#   --all-diagnostics --report /tmp/actual-riemann-zero-spectral-graph.json
+format_version = 1
+suite = "Source Complete Zeta-Zero Graph ↔ Mathlib RH and Exact Height Diagonal"
+issue = "https://github.com/grwtsk/math/issues/1848"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 14
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ActualRiemannZeroSpectralGraph"
+path = "GRWTSK/Combinatorics/GraphTheory/ActualRiemannZeroSpectralGraph.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ActualRiemannZeroSpectralGraph"
+git_blob = "9213809933e2ba33aad2994cfb01e7d2a7e239f3"
+theorems = [
+  "graphCriticalLine_iff_RiemannHypothesis",
+  "canonicalCriticalLine_iff_RiemannHypothesis",
+  "ZeroGraph.all_centers_on_critical_line",
+  "ZeroGraph.actual_zero",
+  "pointMass_at",
+  "pointMass_ne_zero",
+  "ZeroGraph.diagonal_point_eigen",
+  "ZeroGraph.criticalPoint_eq_source",
+  "ZeroGraph.zeta_zero_at_height",
+  "ZeroGraphMap.height_eq",
+  "ZeroGraphMap.diagonal_intertwines",
+  "ZeroGraph.sampleDiagonal_symmetric",
+  "ZeroGraphMap.lower_path",
+  "ZeroGraphMap.source_upper_acyclic",
+]
