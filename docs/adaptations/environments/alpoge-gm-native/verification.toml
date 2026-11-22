@@ -26,13 +26,16 @@ alpoge_repository = "tamnd/riemann-lean"
 alpoge_revision = "af705e0d9a5904326eb0693310e36d9484df7f8f"
 
 [policy]
-expected_theorems = 28
+expected_theorems = 45
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
 transitive_axiom_audit = "NOT_RUN"
 periodic_Abel_Dirichlet_tail_formalization = "NOT_PROVED_IN_LEAN"
 universal_eventual_native_EAtH_CoreAtH = "NOT_PROVED"
+native_cyclic_phase_orthogonality = "MATHEMATICAL_PROOF_ONLY"
+native_integer_Gm_curvature_kernel = "NOT_RUN"
+centered_weighted_Mertens_power_rate = "NOT_PROVED"
 
 [[module]]
 name = "GRWTSK.NumberTheory.AlpogeNativeGmTransport"
@@ -105,4 +108,52 @@ theorems = [
   "signedPrimeHead_error_le",
   "native_gm_error_of_full_source_certificates",
   "eventual_integer_gm_of_certified_observations",
+]
+
+# The original source Level.ofSub cardinality, positive cyclic phase,
+# three-sample stable curvature, and the exact weighted Mertens slope
+# are RH-independent source candidates, not imported RH conclusions.
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeCyclicPhase"
+path = "docs/adaptations/environments/alpoge-gm-native/CyclicPhase.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeCyclicPhase.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeCyclicPhase"
+git_blob = "29ff2c4890677470e1f23dbbbec78a0390cd25a5"
+theorems = [
+  "weight_eq_inverse_of_no_exception",
+  "native_character_real_abs_le_one",
+  "signedPhase_deviation_le_count",
+  "phase_two_sided_of_subgroup_cardinality",
+  "phase_gt_two_thirds_of_subgroup_cardinality",
+  "vonMangoldt_from_native_integer_curvature",
+  "ofSub_Nt_card_succ_le_o",
+  "ofSub_phase_gt_two_thirds",
+  "cyclic_phase_gt_two_thirds",
+  "cyclic_vonMangoldt_of_source_curvature",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeCyclicCurvaturePrecision"
+path = "docs/adaptations/environments/alpoge-gm-native/CyclicCurvaturePrecision.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeCyclicCurvaturePrecision.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeCyclicCurvaturePrecision"
+git_blob = "c2af91d1aabee03b957e1f8db7e06e6dd4b3618d"
+theorems = [
+  "affine_secondDifference_zero",
+  "secondDifference_abs_error",
+  "cyclic_curvature_inverse_lipschitz",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeGmCenteredSlope"
+path = "docs/adaptations/environments/alpoge-gm-native/CenteredSlope.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeGmCenteredSlope.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeGmCenteredSlope"
+git_blob = "4e2b0b2273e0c0e3eaf1598f764fbc770db09863"
+theorems = [
+  "signedSmoothedPrimeHead_integer_step",
+  "levelGm_integer_step",
+  "levelGm_step_upper_of_centeredMertens",
+  "eventual_Gm_step_of_centeredMertens_rate",
 ]
