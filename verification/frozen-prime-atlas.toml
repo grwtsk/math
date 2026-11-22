@@ -20,7 +20,7 @@ allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 name = "GRWTSK.Combinatorics.GraphTheory.FrozenPrimeHypercube"
 path = "GRWTSK/Combinatorics/GraphTheory/FrozenPrimeHypercube.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeHypercube"
-git_blob = "feac3ba4fad22e28634c3bc1b5f196ea30bfd76e"
+git_blob = "0b4c3ff28335529f28ca1986c66416082624dc72"
 theorems = [
   "syndrome_impulse",
   "syndrome_add",

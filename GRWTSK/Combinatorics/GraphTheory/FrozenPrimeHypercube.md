@@ -79,3 +79,38 @@ is intentionally introduced.
 The next mathematical step is an exact reversible transformation structure
 preserving both frozen identities and guidepost ownership, followed by a
 genuine cubical/PL foliation and an independently verified prime-label map.
+
+## Local Lean build failure and repair candidate (November 22, 2026)
+
+The user ran the pinned verification suite against source blob
+`feac3ba4fad22e28634c3bc1b5f196ea30bfd76e` on Lean 4.34.1 after a successful preflight
+(5 modules / 40 theorem names). The first module's `lake build`
+**FAILED** (exit 1). The exact failure in `frozen_neighbor_zero_port`
+at line 128 was an unclosed goal `syndrome c = 0`, despite the
+existing hypothesis `hc : syndrome c = 0`. The original tactic
+`simp [Frozen, syndrome_neighbor, Frozen] at *` had not closed it.
+
+The revised source changes only that proof to:
+```lean
+  change syndrome (neighbor c 0) = 0
+  rw [syndrome_neighbor, add_zero]
+  exact hc
+```
+This preserves exactly the previously stated theorem and consumes
+the original `hc` hypothesis explicitly. The two warnings on that
+build are also addressed: remove the unused `add_assoc` simp
+argument in `neighbor_frozen_iff`, and explicitly simplify
+`Finset.card_univ` in the final cardinality proof.
+
+**Revised Lean source blob:** `0b4c3ff28335529f28ca1986c66416082624dc72`.
+The `verification/frozen-prime-atlas.toml` source pin must match that
+blob. Static comparison confirms no theorem statement, theorem count,
+import, or other source file was changed in this repair.
+
+**Actual evidence:** previous original-source build **FAILED**; corrected
+source compilation **NOT_RUN** in the assistant environment. Fresh
+kernel replay, transitive axiom audit and independent mathematical
+review remain **NOT_RUN**. Do not promote the corrected source
+to verified until the user reruns the pinned build and the full
+verification suite. If additional failures appear, preserve their
+diagnostics and repair separately.

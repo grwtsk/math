@@ -101,7 +101,7 @@ theorem neighbor_frozen_iff {m : ℕ} (x : Cell m) (i : Port m) :
     calc
       i = 0 + i := by simp
       _ = (-syndrome x + syndrome x) + i := by simp
-      _ = -syndrome x + (syndrome x + i) := by simp [add_assoc]
+      _ = -syndrome x + (syndrome x + i) := by simp
       _ = -syndrome x := by rw [hs]; simp
   · intro hi
     subst i
@@ -126,7 +126,9 @@ theorem existsUnique_frozen_neighbor {m : ℕ} (x : Cell m) :
 /-- Every frozen guidepost has another frozen neighbor at the zero port. -/
 theorem frozen_neighbor_zero_port {m : ℕ} (c : Cell m)
     (hc : Frozen m c) : Frozen m (neighbor c 0) := by
-  simp [Frozen, syndrome_neighbor, Frozen] at *
+  change syndrome (neighbor c 0) = 0
+  rw [syndrome_neighbor, add_zero]
+  exact hc
 
 /-- The four syndrome bits label exactly sixteen coordinate ports. -/
 theorem port_card_four : Fintype.card (Port 4) = 16 := by
@@ -148,6 +150,7 @@ theorem neighborSetFour_card (x : Cell 4) :
     (neighborSetFour x).card =
       (Finset.univ : Finset (Port 4)).card := by
         exact Finset.card_image_of_injective _ (neighbor_injective x)
-    _ = 16 := by simpa using port_card_four
+    _ = 16 := by
+      simpa only [Finset.card_univ] using port_card_four
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeHypercube
