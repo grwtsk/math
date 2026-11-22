@@ -32,7 +32,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 22
+expected_theorems = 25
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -52,12 +52,15 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiCoefficientEnvelope"
 path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiCoefficientEnvelope.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiCoefficientEnvelope"
-git_blob = "c0f1ada66ad27f2dc50104039abfd7050b2fb5a3"
+git_blob = "56bb49b45a9598173aca06501ea02ad291a72f21"
 theorems = [
   "bond_nondecreasing",
   "bond_at_least_index",
   "coeffEnvelope_nonnegative",
   "coeffEnvelope_le_index",
+  "bond_succ_gap_one",
+  "coeffEnvelope_le_one",
+  "coeffEnvelope_mem_Icc",
 ]
 
 [[module]]
