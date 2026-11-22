@@ -1,0 +1,108 @@
+# Native Alpoge intermediate Gm source-only verification manifest.
+# This is for the ORIGINAL isolated Lean v4.33.1 toolchain and its
+# Mathlib commit, NOT the incompatible grwtsk/math root Lean v4.34.1.
+#
+# Original mirror (read-only):
+# tamnd/riemann-lean@af705e0d9a5904326eb0693310e36d9484df7f8f
+# Core source: Formalism/SharpRestriction/RamificationFrobenius/
+# TotientGaloisClasses/{PrimePairSizeCondition,Analytic,
+# ExplicitFormulaErrorOfHostConditions,Window,Landau};
+# Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.
+#
+# Stage source files into the disposable ORIGINAL Lean checkout at
+# lean/src/<module_path>.lean (see README.md), then use that
+# toolchain to build, lean --trust=0, and audit #print axioms.
+# Source SHA/name checks alone are NOT elaboration, kernel checking,
+# or proof of the periodic Abel-tail bounds and eventual EAtH/CoreAtH.
+# NO Alpoge Main / FinalTheorems / everyCharacter imported.
+format_version = 1
+suite = "Actual native Level.Gm normalization, Dirichlet constants, and original typed integer source"
+issue = "https://github.com/grwtsk/math/issues/1850"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.33.1"
+mathlib_revision = "0df444a360eaa60ab8c11dca51a86af692955474"
+alpoge_repository = "tamnd/riemann-lean"
+alpoge_revision = "af705e0d9a5904326eb0693310e36d9484df7f8f"
+
+[policy]
+expected_theorems = 28
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+lean_elaboration = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+periodic_Abel_Dirichlet_tail_formalization = "NOT_PROVED_IN_LEAN"
+universal_eventual_native_EAtH_CoreAtH = "NOT_PROVED"
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeGmTransport"
+path = "docs/adaptations/environments/alpoge-gm-native/Bridge.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeGmTransport.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeGmTransport"
+git_blob = "57183881b0e41f5b663b826ac4113633e30a8e32"
+theorems = [
+  "observed_gm_upper_of_native_suppliers",
+  "observed_gm_windows_of_native_windows",
+  "observed_native_gm_eq_of_exact",
+  "observed_native_gm_error",
+  "observed_native_gm_upper_with_certified_arithmetic",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeGmNormalization"
+path = "docs/adaptations/environments/alpoge-gm-native/Normalization.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeGmNormalization.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeGmNormalization"
+git_blob = "5f7c8fba5de1fa2889db97b90a4e8b1b94b0ac31"
+theorems = [
+  "nontrivial_of_mem_Nt",
+  "source_clip_eq_unclipped",
+  "sumLamChi_real_eq_signed_head",
+  "gChi_real_eq_signed_head_add_correction",
+  "arithmetic_head_finite_rearrangement",
+  "levelGm_eq_normalized",
+  "levelGm_one_eq_analyticConstant",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeGmLogDerivativeCertificate"
+path = "docs/adaptations/environments/alpoge-gm-native/LogDerivativeCertificate.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeGmLogDerivativeCertificate.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeGmLogDerivativeCertificate"
+git_blob = "b13defc716e025bad11224dc26a3a5f0aa63597c"
+theorems = [
+  "native_LFunction_one_ne_zero",
+  "complex_denominator_lower",
+  "complex_ratio_bound_of_two_disks",
+  "native_logDerivative_norm_bound",
+  "gamma_between_mathlib_sequences",
+  "analyticConstant_abs_le_true_norms",
+  "analyticConstant_abs_le_certificates",
+  "analyticConstant_error_le_centers",
+  "gamma_midpoint_from_original_mathlib",
+  "real_logDerivative_error_of_ratio_bound",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeGmEventualInteger"
+path = "docs/adaptations/environments/alpoge-gm-native/EventualIntegerReturn.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeGmEventualInteger.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeGmEventualInteger"
+git_blob = "73400e6fe184a24afe0d1e67198770a936b64c98"
+theorems = [
+  "core_gm_at_integer_with_source_margin",
+  "eventual_integer_gm_of_native_host_witnesses",
+  "original_zero_free_of_eventual_real_gm",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeGmArithmeticCertificate"
+path = "docs/adaptations/environments/alpoge-gm-native/ArithmeticCertificate.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeGmArithmeticCertificate.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeGmArithmeticCertificate"
+git_blob = "1fd3fef66501a1613c943ad2609cd95b7c0844f1"
+theorems = [
+  "signedPrimeHead_error_le",
+  "native_gm_error_of_full_source_certificates",
+  "eventual_integer_gm_of_certified_observations",
+]
