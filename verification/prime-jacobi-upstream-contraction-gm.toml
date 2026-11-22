@@ -1,0 +1,150 @@
+# RH/GRH-independent, source-prime polynomial coefficient-to-Gm
+# adaptive certificate. No Alpoge final RH theorem / everyCharacter,
+# Weil positivity from RH, or synthetic zeta-zero spectral substitute.
+#
+# Mathematical main line:
+# - strict integer prime gap -> coefficient l1 contraction T_n<=1
+# - original Jacobi P_n(J)e0=e_n -> H_N^-1=R^T R and ||H_N^-1||inf<=N
+# - Hadamard determinant certificate -> exact prime-bond rounding
+# - source Lambda(n) restored from true prime-power factors using
+#   variable-precision rational logs, preserving original chi phases
+# - source error bound -> Alpoge typed EAtH/CoreAtH bridge in its
+#   separately pinned Lean v4.33.1 environment
+#
+# No Lean/Lake toolchain was available in the authorship runtime.
+# Every theorem below is an uncompiled SOURCE_PROOF_CANDIDATE.
+# A manifest is NOT an elaboration or kernel receipt.
+#
+# From a full pinned grwtsk/math checkout, with Mathlib available:
+# python3 scripts/verify_frozen_prime_atlas.py \
+#   --config verification/prime-jacobi-upstream-contraction-gm.toml \
+#   --all-diagnostics --report /tmp/prime-jacobi-upstream-lean.json
+#
+# Exact separate checker runs (not Lean):
+# python3 scripts/verify_prime_jacobi_moment_to_source_stability.py \
+#   --max-bonds 8
+# python3 scripts/verify_adaptive_prime_log_gm.py
+# python3 scripts/verify_prime_jacobi_to_gm_end_to_end.py
+format_version = 1
+suite = "Prime-gap Jacobi polynomial, genuine Krylov inverse, adaptive signed Gm"
+issue = "https://github.com/grwtsk/math/issues/1850"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 55
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiCoefficientEnvelope"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiCoefficientEnvelope.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiCoefficientEnvelope"
+git_blob = "56bb49b45a9598173aca06501ea02ad291a72f21"
+theorems = [
+  "bond_nondecreasing",
+  "bond_at_least_index",
+  "coeffEnvelope_nonnegative",
+  "coeffEnvelope_le_index",
+  "bond_succ_gap_one",
+  "coeffEnvelope_le_one",
+  "coeffEnvelope_mem_Icc",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiPolynomialKrylov"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiPolynomialKrylov.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiPolynomialKrylov"
+git_blob = "8dba9fb238bfe42ddc109b2e69b9ac2cbdcbca38"
+theorems = [
+  "inverse_coefficients_act_as_basis",
+  "coefficient_matrix_unique_of_basis_action",
+  "true_coefficient_row_bound_of_envelope_domination",
+  "source_hankel_inverse_bound_of_envelope_domination",
+  "recurrence_polynomial_eq_inverse_krylov_of_basis",
+  "sourceCoefficientRowNorm_at_fin",
+  "sourceCoefficientRowNorm_le_envelope_of_recurrence",
+  "source_hankel_inverse_row_le_of_actual_row_recurrence",
+  "true_coefficient_row_bound_one_of_envelope_domination",
+  "source_hankel_inverse_row_linear_of_envelope_domination",
+  "source_hankel_inverse_row_linear_of_actual_row_recurrence",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiRecurrenceAction"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiRecurrenceAction.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiRecurrenceAction"
+git_blob = "40a5343bef7dca04099861bb9fea3bb0e968e2c0"
+theorems = [
+  "applyJacobi_basisVertex",
+  "rootVector_eq_basisVertex",
+  "applyJacobi_basis_zero",
+  "applyJacobi_basis_succ",
+  "primeRecurrenceVector_eq_basis",
+  "recurrence_polynomial_eq_inverse_of_action_compatibility",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiPolynomialActionCompatibility"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiPolynomialActionCompatibility.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiPolynomialActionCompatibility"
+git_blob = "d059dee919af0cb4a7607f5ccec006a5040ea31f"
+theorems = [
+  "recurrencePolynomialCoefficient_support",
+  "shiftedCoeff_sum",
+  "actionPrefix_shift",
+  "actionPrefix_extend",
+  "actionPrefix_sub_div",
+  "recurrence_actionPrefix_eq_vector",
+  "finitePolynomialAction_eq_prefix",
+  "recurrence_polynomial_action_compatibility",
+  "recurrencePolynomialMatrix_eq_coeffMatrix",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiPolynomialCoefficientContraction"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiPolynomialCoefficientContraction.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiPolynomialCoefficientContraction"
+git_blob = "30ad8aeb55bfb031c55ff5e99cf9ce1949063910"
+theorems = [
+  "rowCoefficientAbs_zero",
+  "rowCoefficientAbs_one",
+  "rowCoefficientShiftAbs",
+  "rowCoefficientHighZero",
+  "rowCoefficientAbs_step",
+  "rowCoefficientAbs_le_envelope",
+  "rowCoefficientAbs_le_one",
+  "coeffMatrix_row_abs_eq_rowCoefficientAbs",
+  "prime_hankel_inverse_row_linear",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeJacobiGmAdaptiveCertificate"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeJacobiGmAdaptiveCertificate.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeGmAdaptiveCertificate"
+git_blob = "df57d6394a873bb57d4baefbdcd3448bd9314a54"
+theorems = [
+  "character_log_derivative_cancels",
+  "character_head_delta_real",
+  "zeta_head_delta",
+  "observedGm_delta_eq_signedPrimeObservationDelta",
+  "dirichlet_real_abs_le_one",
+  "sourcePhase_abs_le",
+  "observedGm_error_le_coefficient_budget",
+  "observedGm_error_le_uniform",
+  "observedGm_upper_of_source_and_budget",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilAdaptivePrimeLogObservations"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilAdaptivePrimeLogObservations.lean"
+namespace = "GRWTSK.NumberTheory.WeilQuadraticForm.AdaptivePrimeLogObservations"
+git_blob = "a87e4d3a404fcb00bcb2bb2940b1da36a2da1992"
+theorems = [
+  "logOneMinus_terms_error",
+  "logTwo_terms_error",
+  "logHatRaw_terms_error",
+  "adaptiveLambda_error",
+]
+
