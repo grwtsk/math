@@ -1,0 +1,42 @@
+# RH-independent source-bound polynomial/Krylov bridge.
+# Exact prime-Jacobi root source; no RH, no zeta zero nor Alpoge final.
+# The explicit recurrence-polynomial evaluation hEval and
+# its coefficient row-l1 envelope domination still remain SOURCE
+# PROOF OBLIGATIONS; conditional Lean theorems do not discharge them.
+# Import stack includes earlier SOURCE_PROOF_CANDIDATE modules.
+#
+# On a genuine pinned Lean/Lake checkout:
+# python3 scripts/verify_frozen_prime_atlas.py \
+#   --config verification/prime-jacobi-polynomial-krylov.toml \
+#   --all-diagnostics \
+#   --report /tmp/prime-jacobi-polynomial-krylov.json
+#
+# No Lean compiler was available during this authorship session.
+# Elaboration, transitive axiom audit, fresh kernel replay: NOT_RUN.
+format_version = 1
+suite = "Actual-prime polynomial-Krylov coefficient uniqueness and recurrence-induced Hankel bound"
+issue = "https://github.com/grwtsk/math/issues/1850"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 8
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiPolynomialKrylov"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiPolynomialKrylov.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiPolynomialKrylov"
+git_blob = "01bdf56a85a68b19fdbad6278b446d7d26a027a4"
+theorems = [
+  "inverse_coefficients_act_as_basis",
+  "coefficient_matrix_unique_of_basis_action",
+  "true_coefficient_row_bound_of_envelope_domination",
+  "source_hankel_inverse_bound_of_envelope_domination",
+  "recurrence_polynomial_eq_inverse_krylov_of_basis",
+  "sourceCoefficientRowNorm_at_fin",
+  "sourceCoefficientRowNorm_le_envelope_of_recurrence",
+  "source_hankel_inverse_row_le_of_actual_row_recurrence",
+]
