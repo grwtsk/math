@@ -169,4 +169,89 @@ theorem analyticConstant_abs_le_certificates
   exact mul_le_mul_of_nonneg_left (hCert ψ hψ)
     (abs_nonneg _)
 
+
+/-- A native certificate is an INTERVAL for the genuine A_Level, not
+merely an upper bound on its absolute value. Every weight is the
+original Level.wt; negative and complex source coefficients are
+retained until the prescribed real projection. -/
+def analyticConstantCenter (Λ : Level) (gammaCenter : ℝ)
+    (characterCenter : PChar → ℝ) : ℝ :=
+  1 + gammaCenter + ∑ ψ ∈ Λ.Nt, Λ.wt ψ * characterCenter ψ
+
+def analyticConstantRadius (Λ : Level) (gammaRadius : ℝ)
+    (characterRadius : PChar → ℝ) : ℝ :=
+  gammaRadius + ∑ ψ ∈ Λ.Nt, |Λ.wt ψ| * characterRadius ψ
+
+theorem analyticConstant_error_le_centers
+    (Λ : Level) (gammaCenter gammaRadius : ℝ)
+    (characterCenter characterRadius : PChar → ℝ)
+    (hGamma : |Real.eulerMascheroniConstant - gammaCenter| ≤ gammaRadius)
+    (hChars : ∀ ψ ∈ Λ.Nt,
+      |(An.logDerivativeAtOne ψ.χ).re - characterCenter ψ| ≤
+        characterRadius ψ) :
+    |analyticConstant Λ -
+        analyticConstantCenter Λ gammaCenter characterCenter| ≤
+      analyticConstantRadius Λ gammaRadius characterRadius := by
+  have hDifference :
+      analyticConstant Λ -
+        analyticConstantCenter Λ gammaCenter characterCenter =
+      (Real.eulerMascheroniConstant - gammaCenter) +
+      ∑ ψ ∈ Λ.Nt, Λ.wt ψ *
+        ((An.logDerivativeAtOne ψ.χ).re - characterCenter ψ) := by
+    unfold analyticConstant analyticConstantCenter
+    rw [← Finset.sum_sub_distrib]
+    simp only [mul_sub]
+    ring
+  rw [hDifference]
+  calc
+    |(Real.eulerMascheroniConstant - gammaCenter) +
+      ∑ ψ ∈ Λ.Nt, Λ.wt ψ *
+        ((An.logDerivativeAtOne ψ.χ).re - characterCenter ψ)|
+       ≤ |Real.eulerMascheroniConstant - gammaCenter| +
+         |∑ ψ ∈ Λ.Nt, Λ.wt ψ *
+           ((An.logDerivativeAtOne ψ.χ).re - characterCenter ψ)| :=
+         abs_add_le _ _
+    _ ≤ gammaRadius +
+         ∑ ψ ∈ Λ.Nt, |Λ.wt ψ| * characterRadius ψ := by
+      apply add_le_add hGamma
+      calc
+        _ ≤ ∑ ψ ∈ Λ.Nt,
+          |Λ.wt ψ *
+            ((An.logDerivativeAtOne ψ.χ).re - characterCenter ψ)| :=
+          Finset.abs_sum_le_sum_abs _ _
+        _ = ∑ ψ ∈ Λ.Nt,
+          |Λ.wt ψ| *
+            |(An.logDerivativeAtOne ψ.χ).re - characterCenter ψ| := by
+            simp only [abs_mul]
+        _ ≤ ∑ ψ ∈ Λ.Nt,
+          |Λ.wt ψ| * characterRadius ψ := by
+            apply Finset.sum_le_sum
+            intro ψ hψ
+            exact mul_le_mul_of_nonneg_left
+              (hChars ψ hψ) (abs_nonneg _)
+    _ = analyticConstantRadius Λ gammaRadius characterRadius := rfl
+
+/-- Use the EXACT pinned Mathlib lower/upper Euler sequences for
+an effective gamma midpoint with a rigorous half-width. -/
+theorem gamma_midpoint_from_original_mathlib (n : ℕ) :
+    |Real.eulerMascheroniConstant -
+      (Real.eulerMascheroniSeq n + Real.eulerMascheroniSeq' n) / 2| ≤
+      (Real.eulerMascheroniSeq' n - Real.eulerMascheroniSeq n) / 2 := by
+  have hlo := Real.eulerMascheroniSeq_lt_eulerMascheroniConstant n
+  have hhi := Real.eulerMascheroniConstant_lt_eulerMascheroniSeq' n
+  apply abs_le.mpr
+  constructor <;> linarith
+
+/-- A norm-bounded complex ratio disk yields an interval for its
+REAL source phase. This intentionally does not assume an L'/L
+constant can be reconstructed from prime-Jacobi moments alone. -/
+theorem real_logDerivative_error_of_ratio_bound
+    (Λ : Level) (ψ : PChar) (hψ : ψ ∈ Λ.Nt)
+    (center : ℂ) (radius : ℝ)
+    (h : ‖An.logDerivativeAtOne ψ.χ - center‖ ≤ radius) :
+    |(An.logDerivativeAtOne ψ.χ).re - center.re| ≤ radius := by
+  have hRe := Complex.abs_re_le_norm
+    (An.logDerivativeAtOne ψ.χ - center)
+  simpa only [Complex.sub_re] using hRe.trans h
+
 end GRWTSK.NumberTheory.AlpogeNativeGmLogDerivativeCertificate
