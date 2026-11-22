@@ -114,3 +114,20 @@ Use a **disposable** complete checkout of the immutable original Alpöge mirror 
 The exact Git blobs and declaration names are recorded in [verification.toml](verification.toml) next to these sources. A manifest or remote file readback is **not** a checked Lean proof.
 
 **Remaining proof tasks:** the original typed Level.cyc realizations for the quadratic modulo-4 and quartic modulo-5 character examples, periodic Abel tail and differentiated Dirichlet series for genuine L(1), and the native integer-to-real curvature interpolation. Most importantly, neither eventual true EAtH/CoreAtH witnesses nor eventually universally successful signed arithmetic certificates have been supplied. Hence no new RH result is claimed.
+
+
+## Source-independent cyclic phase and weighted Mertens direction
+
+The new [CyclicPhase.lean](CyclicPhase.lean) / [proof](CyclicPhase.md) targets the actual Level.ofSub finite subgroup cardinality and derives **strict positivity** of every original cyclic-level arithmetic phase, \(2/3<c_L(n)<4/3\). The phase has exactly two finite Fourier symbols on residues coprime to the original common modulus, but **not** necessarily at ramified indices; the subgroup orthogonality and primitive-changeLevel Lean bridge remains open.
+
+[CyclicCurvaturePrecision.lean](CyclicCurvaturePrecision.lean) / [proof](CyclicCurvaturePrecision.md) targets exact affine cancellation and three-sample stability. For original cyclic levels, genuine adjusted integer Gm curvature recovers Λ(k) with amplification less than \(3k/2\). A source-certified error ≤1/(48k) at each of three adjusted samples permits the prime-power detection threshold 1/(6k); actual integer curvature source normalization in pinned Lean is still an explicit outstanding premise.
+
+[CenteredSlope.lean](CenteredSlope.lean) / [proof](CenteredSlope.md) records the exact original native integer difference of Gm in terms of the **centered weighted Mertens sum**
+\[
+E_L(n)=\sum_{m\le n}\Lambda(m)c_L(m)/m-\log n+A_L-1.
+\]
+A genuinely all-integer one-sided bound \(E_L(n)\le Cn^{\theta-1}\) for \(0\le C<\theta<1\) implies the eventual integer Gm inequality needed by the original intermediate Landau corridor. **The Mertens rate is an OPEN analytic theorem** and neither finite checks nor a subgroup positivity bound supplies it.
+
+The [exact cyclic phase checker](../../../../scripts/verify_cyclic_level_phase_curvature.py) and [weighted slope checker](../../../../scripts/verify_cyclic_level_centered_slope.py) were run with Python and have source bytes identical to the published Git blobs. They check, respectively, 3,066 exact curvature identities plus 9,198 noisy thresholds, and 768 exact slope plus 768 log-step enclosure identities. These **do not** constitute native Lean verification.
+
+The [isolated verification manifest](verification.toml) now pins all 45 theorem candidates across eight modules to their individual Git blobs; the original v4.33.1 toolchain and Mathlib remain unchanged. Do not import the isolated modules into the root v4.34.1 build. No final Alpöge Main, FinalTheorems, RH/GRH, or Weil positivity from RH is a supplier for this work.
