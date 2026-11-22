@@ -1,0 +1,55 @@
+# RH-independent signed arithmetic discrete-curvature source and Dirichlet-heat
+# matrix identities. Exact source comparisons use the original Alpoge
+# Level.Gm definitions, but no FinalTheorems, Main or RH proof input.
+# All declarations remain SOURCE_PROOF_CANDIDATE until Lean actually builds.
+#
+# Needed native v4.33.1 compatibility return:
+# exact Level.Gm(x) = sum_n Lambda(n)c_Level(n)(x/n-1)_+ -xlogx
+#   +(1+EulerGamma + sum_nontriv weight*Re(L'/L(1,chi)))*x;
+# not assumed to be kernel-checked in root Mathlib v4.34.1.
+#
+# Independent finite rational controls in source note and linked scripts:
+#   216 signed second differences, 1308 integer affine checks,
+#   280 prime-power gap checks, 720 curvature interval comparisons,
+#   40 boundary-preserving finite diffusion matrix tests.
+# No analytic EAtH/CoreAtH estimate is supplied.
+#
+# To run root verifier with source and Mathlib installed:
+# python3 scripts/verify_frozen_prime_atlas.py \
+#   --config verification/prime-jacobi-gm-discrete-curvature.toml \
+#   --all-diagnostics --report /tmp/gm-discrete-curvature-lean.json
+format_version = 1
+suite = "RH-independent signed Gm integer curvature, prime-power kink and finite diffusion"
+issue = "https://github.com/grwtsk/math/issues/1850"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 8
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeJacobiGmDiscreteCurvature"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeJacobiGmDiscreteCurvature.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeGmDiscreteCurvature"
+git_blob = "8f32c376c224e4f4c9451124f5e2a5e1b1b08e10"
+theorems = [
+  "hinge_secondDifference",
+  "signedHingeHead_secondDifference",
+  "hinge_affine_on_knot_free",
+  "signedHingeHead_affine_of_no_knot",
+  "signedHingeHead_abs_le_max_endpoints",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeJacobiGmDiscreteDiffusion"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeJacobiGmDiscreteDiffusion.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeGmDiscreteDiffusion"
+git_blob = "7651aad5d445bf58d2a7d226b04be29a5c77a1d8"
+theorems = [
+  "dirichletDifference_commutes_diffuseStep",
+  "dirichletDifference_commutes_diffusion",
+  "diffusion_preserves_source_and_boundary",
+]
