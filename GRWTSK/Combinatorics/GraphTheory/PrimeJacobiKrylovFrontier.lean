@@ -215,7 +215,7 @@ theorem bond_sq_from_hankel_determinants (n : ℕ) :
         (primeRootHankelDet (n + 1)) ^ 2 := by
   have hne : (primeRootHankelDet (n + 1)) ^ 2 ≠ 0 :=
     pow_ne_zero 2 (ne_of_gt (primeRootHankelDet_positive (n + 1)))
-  apply (div_eq_iff hne).2
+  apply (eq_div_iff hne).2
   exact (primeRootHankelDet_recurrence n).symm
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiKrylovFrontier
