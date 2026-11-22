@@ -347,4 +347,78 @@ theorem runOnCheckpointPrefix_firstFailure_iff {w : ℕ} (c : Configuration w) (
     · exact (runOnCheckpointPrefix_eq_none_iff_of_terminal reached stop _ _ _ _).mpr
         (lt_min (Nat.lt_succ_self n) fits)
 
+private def checkpointFailureAt {w : ℕ} (c : Configuration w)
+    (chunks : List CheckpointChunk) (last : List ℕ) (target n : ℕ) :
+    Option (ℕ × (Cfg 95 2 × ℤ)) :=
+  if (runOnCheckpointPrefix (n + 1) chunks last target c).isNone then
+    (runOnCheckpointPrefix n chunks last target c).map (fun view => (n, view))
+  else none
+
+/-- Search the finite schedule for a successful prefix followed by a failure.
+The result gives the number of successful instructions and their final view. -/
+def diagnoseCheckpointHalt {w : ℕ} (c : Configuration w)
+    (chunks : List CheckpointChunk) (last : List ℕ) (target : ℕ) :
+    Option (ℕ × (Cfg 95 2 × ℤ)) :=
+  (List.range (chunks.flatMap CheckpointChunk.instructions ++ last).length).findSome?
+    (checkpointFailureAt c chunks last target)
+
+private theorem checkpointFailureAt_eq_some {w : ℕ} (c : Configuration w)
+    (chunks : List CheckpointChunk) (last : List ℕ) (target n k : ℕ) (view : Cfg 95 2 × ℤ) :
+    checkpointFailureAt c chunks last target k = some (n, view) ↔
+      k = n ∧ runOnCheckpointPrefix n chunks last target c = some view ∧
+        runOnCheckpointPrefix (n + 1) chunks last target c = none := by
+  by_cases same : k = n
+  · subst k
+    cases observed : runOnCheckpointPrefix n chunks last target c <;>
+      by_cases failed : runOnCheckpointPrefix (n + 1) chunks last target c = none <;>
+      simp [checkpointFailureAt, observed, failed]
+  · cases observed : runOnCheckpointPrefix k chunks last target c <;>
+      by_cases failed : runOnCheckpointPrefix (k + 1) chunks last target c = none <;>
+      simp [checkpointFailureAt, observed, failed, same]
+
+/-- The bounded diagnostic returns exactly the native terminal count and view
+when that terminal state is followed by an instruction in the schedule. -/
+theorem diagnoseCheckpointHalt_eq_some_iff {w : ℕ} (c : Configuration w)
+    (chunks : List CheckpointChunk) (last : List ℕ) (target n : ℕ) (view : Cfg 95 2 × ℤ) :
+    diagnoseCheckpointHalt c chunks last target = some (n, view) ↔
+      n < (chunks.flatMap CheckpointChunk.instructions ++ last).length ∧
+        ∃ terminal, run n c = some terminal ∧ step terminal = none ∧ handoffView terminal = view := by
+  have observations {k found : ℕ} {v : Cfg 95 2 × ℤ}
+      (hit : checkpointFailureAt c chunks last target k = some (found, v)) :
+      runOnCheckpointPrefix found chunks last target c = some v ∧
+        runOnCheckpointPrefix (found + 1) chunks last target c = none :=
+    ((checkpointFailureAt_eq_some c chunks last target found k v).mp hit).2
+  constructor
+  · intro result
+    obtain ⟨_, k, _, _, hit, _⟩ := List.findSome?_eq_some_iff.mp result
+    exact (runOnCheckpointPrefix_firstFailure_iff c n chunks last target view).mp
+      (observations hit)
+  · rintro ⟨fits, terminal, reached, stop, sameView⟩
+    have expected := (runOnCheckpointPrefix_firstFailure_iff c n chunks last target view).mpr
+      ⟨fits, terminal, reached, stop, sameView⟩
+    have hit := (checkpointFailureAt_eq_some c chunks last target n n view).mpr
+      ⟨rfl, expected⟩
+    cases result : diagnoseCheckpointHalt c chunks last target with
+    | none =>
+      have absent := List.findSome?_eq_none_iff.mp result n (List.mem_range.mpr fits)
+      rw [hit] at absent
+      contradiction
+    | some pair =>
+      obtain ⟨found, v⟩ := pair
+      obtain ⟨_, k, _, _, foundHit, _⟩ := List.findSome?_eq_some_iff.mp result
+      obtain ⟨observed, failed⟩ := observations foundHit
+      have cutoff (budget : ℕ) :=
+        runOnCheckpointPrefix_eq_none_iff_of_terminal reached stop budget chunks last target
+      have lower := (lt_min_iff.mp ((cutoff (found + 1)).mp failed)).1
+      have upper : found ≤ n := by
+        by_contra! later
+        have absent := (cutoff found).mpr (lt_min later fits)
+        rw [observed] at absent
+        contradiction
+      have equal : found = n := by omega
+      subst found
+      rw [expected.1] at observed
+      cases observed
+      rfl
+
 end GRWTSK.ComputerScience.Riemann95PrimeMachine.NativeCheckpoint

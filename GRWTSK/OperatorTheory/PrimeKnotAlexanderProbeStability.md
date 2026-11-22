@@ -1,0 +1,11 @@
+# Uniform finite-snapshot stability in the probe
+
+The [Lean module](PrimeKnotAlexanderProbeStability.lean) consumes [the two-probe cut identity](PrimeKnotAlexanderMovingProbe.lean), blob `b952858e6521ee0db9884a44178e44bc0d3ad362`. The dispatch's separate machine pin is Cryptids `3647718b5df22e1a61462dec0376bd204526285a`. The self-adjoint operator, finite Hilbert space and shift zI−D are unchanged.
+
+On one snapshot the cut residual vanishes because extension along the identity inclusion acts identically. The exact two-probe formula then becomes R(z)−R(w)=(w−z)R(z)R(w). Applying the two existing resolvent bounds gives operator-norm difference at most |w−z|/(|Im z||Im w|), uniformly over all snapshots. If the probes converge to w with a common positive distance from the real axis, this bounds the operator-norm error of replacing every moving probe with its fixed limit by a sequence tending to zero. The result compares operators only within each snapshot, so it assumes no common ambient realization.
+
+The analytic control takes the scalar self-adjoint operator zero, with z_n=i/n and w_n=2i/n for n≥1. Probe distance tends to zero but the resolvent difference has norm n/2. This attains the two-denominator bound and falsifies uniform probe stability up to the real axis. It is an analytic control rather than a native Alexander fixture. A limiting domain, control of the remaining cut errors, and exact spectral identification with the original zeta zeros and multiplicities remain open. The offset chat's inverse-square mass control concerns the separate determinant limit. [Source normalization and earlier replay failure](https://github.com/grwtsk/math/issues/1805)
+
+Exact Lean SHA-256 `dcccc5dc73a7be48f45210786effdc9fc98ff408d0f37a077df419a7e4ef0169`.
+
+Exact targeted Lake build, strict elaboration, module-only kernel replay and three axiom audits passed. Strict elaboration initially rejected a deprecated name, which was replaced before the checked hash. The audits reported only propext, Classical.choice and Quot.sound. Full dependency replay, independent review and native exhaustion verification were NOT_RUN. Issue #1805 separately records a prior incompatible-sysroot closure failure.

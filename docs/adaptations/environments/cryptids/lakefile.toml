@@ -26,6 +26,7 @@ roots = [
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95StageCertificates",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeArgumentCounterexample",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95StageCertificatesCryptids",
+  "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95WindowHandoff",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95ScaledGapCertificates",
   "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95PrimeMachine",
   "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95CalibratedTapeReadout",
