@@ -1,0 +1,42 @@
+# Full complex zeta Weil positivity, original literal odd source return, and
+# diffusion-domain stability, conditional on ORIGINAL Mathlib RH.
+#
+# Source hRH is supplied by the separately verified Alpoge development
+# in Lean v4.33.1, mirrored at tamnd/riemann-lean@af705e0...
+# It is NOT imported in this pinned math v4.34.1 environment.
+# The source's Zeta23.WeilEF and related odd-form adaptation is also
+# an ISOLATED adaptation, not currently part of the root build.
+# Do not attempt to patch the root Mathlib pin / add an RH axiom.
+#
+# Required isolated checks: resolve and pin Zeta23 source, elaborate
+# all 5 candidates, report exact transitive axioms, kernel replay,
+# compare exact RH target and transport the original Alpoge theorem.
+# Manifest declaration/source consistency alone is NOT a Lean proof.
+#
+# Source attribution: adapted from Kuberwastaken/riemann Criterion.lean
+# blob 47aa70097604b71a1bafa236a3dd1af40e7ff87c (Apache-2.0);
+# see the adjacent .md and module header.
+format_version = 1
+suite = "Alpoge RH implies complete zeta Weil positivity and exact odd source return"
+issue = "https://github.com/grwtsk/math/issues/1849"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 5
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.AlpogeWeilPositivityReturn"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AlpogeWeilPositivityReturn.lean"
+namespace = "GRWTSK.NumberTheory.WeilQuadraticForm.AlpogeWeilPositivityReturn"
+git_blob = "dfc9925e459d3b78b677afe0186c073b8741cc40"
+theorems = [
+  "full_weil_positive_of_riemannHypothesis",
+  "odd_literal_weil_positive_of_riemannHypothesis",
+  "odd_literal_positive_iff_riemannHypothesis",
+  "negative_full_weil_source_implies_not_riemannHypothesis",
+  "full_weil_positive_after_admissible_diffusion",
+]
