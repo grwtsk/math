@@ -131,3 +131,44 @@ Independent proof barriers, not implementation conveniences:
 7. Independent target, Lean elaboration, transitive axiom audit, fresh kernel replay and specialist review: all NOT_RUN in this session.
 
 **Mathematical disposition:** The conditional HP-DET→RH and HP-WEIL→RH arguments are complete classical implications. The explicit Gm consequence HP-TAIL is mathematically proved **conditional** on an actual complete spectral realization. Original prime-Jacobi self-adjointness does not provide HP-DET, HP-WEIL, zero counting, or the spectral source trace formula. The odd-section obstruction is **unconditional finite algebra**, independently checked on 20 true prime sections. No RH/GRH proof and no globally novel theorem are claimed. Source publication and proof acceptance remain separate.
+
+
+## Exact Taylor coefficient PF-infinity criterion (independent source gate)
+
+The full mathematical result and original-source definitions are now at
+[XiToeplitzHilbertPolyaCriterion.md](../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiToeplitzHilbertPolyaCriterion.md),
+with the [Lean source candidate](../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiToeplitzHilbertPolyaCriterion.lean).
+For the ACTUAL \(\xi\), define
+\(F(w)=\xi(1/2+\sqrt w)/\xi(1/2)=\sum a_nw^n\).
+The Edrei theorem plus the unconditional order \(1/2\) of \(F\) gives the exact classical equivalence
+
+\[
+\text{ALL source Xi Toeplitz minors nonnegative}
+\Longleftrightarrow
+F(w)=\prod_j(1+\lambda_jw),\ \lambda_j\ge0,\ \sum_j\lambda_j<\infty
+\Longleftrightarrow
+\Xi(z)=\Xi(0)\det_{\rm Fr}(I-z^2H_+^{-2}),
+\]
+
+where \(H_+\) is a positive self-adjoint inverse-square-trace-class
+operator. This also is equivalent to RH. **The independent universal
+all-minor positivity proof is not supplied.** Alpöge's externally
+verified RH theorem is used only as contextual direction, not as a
+premise or imported theorem. Thus this is a complete CONDITIONAL
+operator construction and a precise independent proof target.
+
+A direct root-moment identification with the source prime Jacobi
+operator is false: its first odd moment is exactly zero, whereas the
+candidate trace of the positive Xi spectral operator is \(a_1>0\).
+The odd-rank zero-at-origin obstruction proved earlier remains.
+A nontrivial, exact, source-preserving prime-to-Xi coefficient map is
+still required; no such map is inferred from finite moment recovery.
+
+The all-minor array requirement is stricter than positive Xi Fourier
+coefficients, positive Hankel moments, finite Gram matrices or heat
+damping. A positive Fourier measure \(3\delta_0/4+\delta_1/4\)
+gives an entire cosine-hyperbolic transform with a **negative**
+shifted Toeplitz 3×3 minor \(-7/23040\). This hostile example
+disproves the tempting inference from ordinary positive moment
+kernels to Hilbert–Pólya. Finite exploratory Xi minors are evidence
+only, not a universal proof.
