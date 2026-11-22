@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 115
+expected_theorems = 130
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -241,4 +241,35 @@ theorems = [
   "primaryBase_ne_secondaryBase",
   "distinct_labels_under_any_injection",
   "distinct_actual_prime_labels",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeForestSubgroupFlags16"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeForestSubgroupFlags16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeForestSubgroupFlags16"
+git_blob = "82b555e12eff4edc6a0e440f968e534efedbf275"
+theorems = [
+  "fixedCoordinateSubgroup_antitone",
+  "agreeOn_iff_subgroup_difference",
+  "forestFlag_subgroups_nested",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.HierarchicalPrimeDirectory16"
+path = "GRWTSK/Combinatorics/GraphTheory/HierarchicalPrimeDirectory16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HierarchicalPrimeDirectory16"
+git_blob = "16ba00c33f1fc693f8c40a085f7be245a318afad"
+theorems = [
+  "square_rank_reconstruction",
+  "forest_rank_reconstruction",
+  "index_position_roundtrip",
+  "primeNumber_prime",
+  "primaryPosition_syndrome",
+  "secondaryPosition_syndrome",
+  "replica_positions_distinct",
+  "observed_prime_indices_distinct",
+  "observed_prime_numbers_distinct",
+  "locate_preserves_prime_id",
+  "paired_replicas_same_square",
+  "locate_replica_flag",
 ]
