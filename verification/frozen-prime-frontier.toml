@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 71
+expected_theorems = 86
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -173,4 +173,27 @@ theorems = [
   "canonicalPrimeLabel_prime",
   "canonicalPrimeLabel_injective",
   "canonicalPrimeLabel_le_of_prefix",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ConcretePrimeAtlasLift16To64"
+path = "GRWTSK/Combinatorics/GraphTheory/ConcretePrimeAtlasLift16To64.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConcretePrimeAtlasLift16To64"
+git_blob = "aee539ead3057deff40b1bbf6213ded8bbc32d80"
+theorems = [
+  "portDrop_portLift",
+  "portLift_injective",
+  "portLift_zero",
+  "portLift_add",
+  "portLift_neg",
+  "portLift_smul",
+  "addressLift_add",
+  "addressLift_impulse",
+  "addressLift_port",
+  "addressLift_injective",
+  "syndrome_smul",
+  "syndrome_addressLift",
+  "addressLift_neighbor",
+  "frozen_survives_16_to_64",
+  "guidepost_commutes_16_to_64",
 ]
