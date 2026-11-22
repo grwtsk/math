@@ -1,0 +1,51 @@
+# Targeted NEW source proofs for square beacon routing, mirror no-go, and global optimality.
+# User command:
+# python3 scripts/verify_frozen_prime_atlas.py --config verification/prime-square-fourier.toml --all-diagnostics --report /tmp/prime-square-fourier.json
+# Also run the independent exact-integer Walsh test:
+# python3 scripts/verify_prime_walsh_kernel_16d.py
+# Passing this manifest does not formalize the full Walsh eigenvalue formula,
+# guarantee a global assignment optimum, or establish signed Weil positivity.
+format_version = 1
+suite = "Source-Verified Square Prime Address and Spectral Trust Boundaries"
+issue = "https://github.com/grwtsk/math/issues/1846"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 17
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.SquarePrimeFourierAddress"
+path = "GRWTSK/Combinatorics/GraphTheory/SquarePrimeFourierAddress.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SquarePrimeFourierAddress"
+git_blob = "fa9f56d64b59827fe74cee84896575ce36f08ec2"
+theorems = [
+  "squareEquiv_roundtrip",
+  "squareEquiv_injective",
+  "square4096_roundtrip",
+  "square4096_card",
+  "beaconSquare_roundtrip",
+  "beaconSquare_injective",
+  "weight16_le",
+  "beaconDistance_self",
+  "beaconDistance_translate",
+  "integerHammingKernel_translate",
+  "integerHammingKernel_self",
+]
+
+[[module]]
+name = "GRWTSK.AlgebraicTopology.MirroredSpectralSignAndOptimality"
+path = "GRWTSK/AlgebraicTopology/MirroredSpectralSignAndOptimality.lean"
+namespace = "GRWTSK.AlgebraicTopology.MirroredSpectralSignAndOptimality"
+git_blob = "f9176b45fbb3d2c7bdad30b66473e0acd2c3b398"
+theorems = [
+  "nonnegative_pullback_iff",
+  "negative_witness_pullback_iff",
+  "signedKnotMirror_noPositivityCreation",
+  "OptimalityCertificate.globallyOptimal",
+  "OptimalityCertificate.optimalScore",
+  "featureEnergy_nonnegative",
+]
