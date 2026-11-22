@@ -42,7 +42,7 @@ and its inverse
 \]
 Proof: \(a_n=U(n)-U(n-1)\) and
 \(a_n/n=B(n)-B(n-1)\); apply a finite telescoping sum.
-The Lean module uses Finset.range N with index j+1, thus includes the true source n=1 (whose von Mangoldt value is zero), and states (A2) at every N including zero. Its proof is ordinary finite algebra, independent of RH.
+The Lean module imports the existing native CenteredSlope.weightedMertens, preserving its Finset.Icc 1 N indexing and genuine analytic normalization. It defines only the matching weighted Chebyshev prefix, then states (A2) for every N including zero; Finset.range N appears solely in the accumulated Mertens inverse. Its proof is ordinary finite algebra, independent of RH. No duplicate Mertens interface is maintained.
 
 For real \(x\ge1\), define the actual weighted Chebyshev function
 \[
