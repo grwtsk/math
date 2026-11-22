@@ -22,7 +22,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 98
+expected_theorems = 106
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -201,4 +201,20 @@ theorems = [
   "addressLift_neighbor",
   "frozen_survives_16_to_64",
   "guidepost_commutes_16_to_64",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeReplicaLift16To64"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeReplicaLift16To64.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeReplicaLift16To64"
+git_blob = "23278a28cf623fdf65dc19d1dacbfef5a7b8b0ee"
+theorems = [
+  "secondary_syndrome_lifts",
+  "targetNeighbor_commutes",
+  "primaryNeighbor_commutes",
+  "secondaryNeighbor_commutes",
+  "replicaPosition_commutes",
+  "liftBeacon_injective",
+  "twoNeighbor_lift_remains_distinct",
+  "primeLabel_retained",
 ]
