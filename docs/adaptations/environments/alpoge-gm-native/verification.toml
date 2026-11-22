@@ -26,7 +26,7 @@ alpoge_repository = "tamnd/riemann-lean"
 alpoge_revision = "af705e0d9a5904326eb0693310e36d9484df7f8f"
 
 [policy]
-expected_theorems = 45
+expected_theorems = 48
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -156,4 +156,16 @@ theorems = [
   "levelGm_integer_step",
   "levelGm_step_upper_of_centeredMertens",
   "eventual_Gm_step_of_centeredMertens_rate",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeCenteredMertensAbel"
+path = "docs/adaptations/environments/alpoge-gm-native/CenteredMertensAbel.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeCenteredMertensAbel.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeCenteredMertensAbel"
+git_blob = "581292b1ba8fd51adc20aca2c7f4b33d2be62e74"
+theorems = [
+  "nativeChebyshevPrefix_succ",
+  "original_weightedMertens_succ",
+  "nativeChebyshev_from_original_weightedMertens",
 ]
