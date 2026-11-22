@@ -69,9 +69,19 @@ This is an ordinary Schur determinant, not a Gram determinant.
 All source coefficients appear at their true ranks. -/
 theorem one_column_three_schur_formula (a : ℕ → ℝ) :
     schurJacobiTrudi a ![1, 1, 1] =
-      (a 1) ^ 3 - 2 * a 1 * a 2 + a 3 := by
+      (a 1) ^ 3 - 2 * a 0 * a 1 * a 2 + (a 0) ^ 2 * a 3 := by
   simp [schurJacobiTrudi, sourceToeplitzEntry,
     Matrix.det_fin_three]
+  ring
+
+/-- For the genuine normalized Xi Taylor sequence a0=1, the
+third Schur specialization has the advertised cubic expression.
+The exact source center-nonzero hypothesis is not discarded. -/
+theorem one_column_three_schur_formula_of_normalization
+    (a : ℕ → ℝ) (ha : a 0 = 1) :
+    schurJacobiTrudi a ![1, 1, 1] =
+      (a 1) ^ 3 - 2 * a 1 * a 2 + a 3 := by
+  rw [one_column_three_schur_formula, ha]
   ring
 
 /-- Rank-two theta-moment condition exactly equivalent to the
@@ -81,7 +91,7 @@ theorem theta_second_schur_moment_numerator
     (m0 m2 m4 : ℝ) (h0 : m0 ≠ 0) :
     (m2 / (2 * m0)) ^ 2 - m4 / (24 * m0) =
       (6 * m2 ^ 2 - m0 * m4) / (24 * m0 ^ 2) := by
-  field_simp
+  field_simp [h0]
   ring
 
 /-- Rank-three source shape (1,1,1) is the EXACT signed
@@ -94,7 +104,7 @@ theorem theta_third_schur_moment_numerator
         m6 / (720 * m0) =
     (90 * m2 ^ 3 - 30 * m0 * m2 * m4 + m0 ^ 2 * m6) /
       (720 * m0 ^ 3) := by
-  field_simp
+  field_simp [h0]
   ring
 
 /-- The second spectral inverse-square trace is a log coefficient:
