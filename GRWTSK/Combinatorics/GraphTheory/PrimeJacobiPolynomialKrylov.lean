@@ -93,9 +93,9 @@ theorem true_coefficient_row_bound_of_envelope_domination
   have hIndex : coeffEnvelope i.val ≤ ((i.val : ℝ) + 2) / 2 :=
     coeffEnvelope_le_index i.val
   have hFin : ((i.val : ℝ) + 2) / 2 ≤ ((N : ℝ) + 1) / 2 := by
-    have hlt : i.val < N := i.isLt
-    exact_mod_cast (by omega : 2 * i.val + 4 ≤ 2 * N + 2)
-      -- If this conversion does not elaborate, use exact_mod_cast and linarith.
+    have hle : (i.val : ℝ) + 1 ≤ (N : ℝ) := by
+      exact_mod_cast (Nat.succ_le_iff.mpr i.isLt)
+    linarith
   exact (hCoeff i).trans (hIndex.trans hFin)
 
 /-- The exact actual-source inverse Hankel row bound, with the explicit
