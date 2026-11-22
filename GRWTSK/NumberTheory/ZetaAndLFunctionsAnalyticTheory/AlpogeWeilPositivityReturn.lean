@@ -1,6 +1,9 @@
 /-
-Copyright (c) 2026 grwtsk contributors. MIT.
-Authors: grwtsk contributors.
+Copyright (c) 2026 grwtsk contributors.
+SPDX-License-Identifier: Apache-2.0
+Authors: grwtsk contributors (adaptation).
+Portions adapted from Kuberwastaken/riemann RiemannFormal/Criterion.lean
+under Apache License 2.0; see source pin and attribution below.
 
 Source adaptation and mathematical provenance:
   Kuberwastaken/riemann@94fa51e8f26794ef2d206c6c12e7adb4d85cbeaf
