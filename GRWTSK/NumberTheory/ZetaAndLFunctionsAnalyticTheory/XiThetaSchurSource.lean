@@ -107,6 +107,59 @@ theorem theta_third_schur_moment_numerator
   field_simp [h0]
   ring
 
+/-- The EXACT (infinite) ordinary Schur family is the next
+RH-equivalent analytic source target. Restrict to weakly decreasing
+partitions, not every unrelated synthetic finite matrix. -/
+def IsPartitionShape {k : ℕ} (lambda : Fin k → ℕ) : Prop :=
+  Antitone lambda
+
+def ActualXiAllSchurNonnegative : Prop :=
+  ∀ (k : ℕ) (lambda : Fin k → ℕ),
+    IsPartitionShape lambda → 0 ≤ actualXiSchur lambda
+
+/-- A log trace is a Newton polynomial in the genuine Xi Taylor
+source. Its positive-operator meaning is CONDITIONAL on the exact
+source-identified Fredholm determinant, not a definitional fact. -/
+def thirdLogarithmicTrace (a : ℕ → ℝ) : ℝ :=
+  (a 1) ^ 3 - 3 * a 1 * a 2 + 3 * a 3
+
+/-- The second log trace's exact positive-theta moment numerator.
+It is strictly stronger than the two-column Schur numerator. -/
+theorem theta_second_log_trace_moment_numerator
+    (m0 m2 m4 : ℝ) (h0 : m0 ≠ 0) :
+    (m2 / (2 * m0)) ^ 2 - 2 * (m4 / (24 * m0)) =
+      (3 * m2 ^ 2 - m0 * m4) / (12 * m0 ^ 2) := by
+  field_simp [h0]
+  ring
+
+/-- The third log trace is a signed cubic source moment constraint,
+NOT a consequence of nonnegative moments alone. -/
+theorem theta_third_log_trace_moment_numerator
+    (m0 m2 m4 m6 : ℝ) (h0 : m0 ≠ 0) :
+    (m2 / (2 * m0)) ^ 3 -
+      3 * (m2 / (2 * m0)) * (m4 / (24 * m0)) +
+        3 * (m6 / (720 * m0)) =
+      (30 * m2 ^ 3 - 15 * m0 * m2 * m4 + m0 ^ 2 * m6) /
+        (240 * m0 ^ 3) := by
+  field_simp [h0]
+  ring
+
+/-- For a genuine finite positive two-eigenvalue product,
+third log trace is a sum of cubes; multiplicities must be
+retained, not deduplicated. -/
+theorem two_factor_third_trace (u v : ℝ) :
+    (u + v) ^ 3 - 3 * (u + v) * (u * v) =
+      u ^ 3 + v ^ 3 := by
+  ring
+
+/-- Positive Fourier moments fail even a basic Herglotz/Stieltjes
+source constraint, prior to any full operator reconstruction. -/
+theorem positive_theta_moments_negative_third_trace :
+    (1 / 8 : ℚ) ^ 3 -
+      3 * (1 / 8 : ℚ) * (1 / 96 : ℚ) +
+      3 * (1 / 2880 : ℚ) = -(7 / 7680 : ℚ) := by
+  norm_num
+
 /-- The second spectral inverse-square trace is a log coefficient:
 Tr(K^2)=a1^2-2a2 IF the entire Xi determinant identity is supplied.
 This definition itself is unconditional scalar algebra. -/
