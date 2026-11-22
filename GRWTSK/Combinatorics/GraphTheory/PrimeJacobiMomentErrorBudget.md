@@ -129,9 +129,197 @@ The extra Lean interval lemmas in PrimeJacobiMomentErrorBudget.lean formalize th
 
 The accompanying checker uses **only standard-library integers and exact rational arithmetic**. It independently constructs prime-Jacobi moments through order \(2K\), computes all Hankel determinants with fraction-free Bareiss elimination, verifies (1), constructs the exact rational tolerance (4) with \(\delta=1/(8P+4)\), perturbs every moment with three deterministic patterns, and tests (3), (5), and the *squared* nearest-integer inequalities without floating-point square roots.
 
-Length \(K=1,\ldots,7\): **21/21 trial groups PASS**. The most conservative permitted moment radius ranges from \(1/340\) at \(K=1\) to about \(1.3\cdot10^{-121}\) at \(K=7\). This bound is formally robust but **extremely ill-conditioned**, hence not a practical precision target. A future stronger theorem should use structured Hankel/Gram conditioning rather than a uniform \(M\) and \(k!\) for every permutation.
+Length \(K=1,\ldots,7\): **21/21 trial groups PASS for the original universal bound** (and 63/63 including the improved certificates in Section 3A). The most conservative permitted moment radius ranges from \(1/340\) at \(K=1\) to about \(1.3\cdot10^{-121}\) at \(K=7\). This bound is formally robust but **extremely ill-conditioned**, hence not a practical precision target. A future stronger theorem should use structured Hankel/Gram conditioning rather than a uniform \(M\) and \(k!\) for every permutation.
 
 **Hostile control:** replacing the first true second moment \(m_2=4\) by 9 makes the determinant-based first bond 3 instead of 2. Without a certified radius, positive semidefiniteness and the inverse formula alone do not protect prime identity.
+
+## 3A. Theorem B+: source-specific inverse-Hankel conditioning (stronger certificate)
+
+The universal determinant Leibniz bound (3) is correct, but wastes the
+**prime-Krylov Gram structure**. There is a substantially stronger
+RH-independent bound, with two variants: one using exact rational
+inverses, and one using only the length K and an elementary lower bound
+for the sequence of actual primes.
+
+For each \(1\le k\le K+1\), let \(H_k\) be the true \(k\times k\)
+Hankel matrix, which is strictly positive definite by the unique
+outward prime walk. Define its exact rational inverse row-sum norm
+
+\[
+B_k:=\|H_k^{-1}\|_\infty
+=\max_{0\le i<k}\sum_{j<k}|(H_k^{-1})_{ij}|.
+\]
+
+**Theorem B+ (adaptive exact certificate).** Let \(0<\delta<1/(4P+1)\).
+If the observed root moments satisfy the entrywise error
+\(|\widetilde m_r-m_r|\le\varepsilon\), and
+
+\[
+\boxed{
+0\le\varepsilon\le
+\min_{1\le k\le K+1}
+\frac{\delta}{k(2^k-1)B_k},
+}
+\tag{10}
+\]
+
+then all relative determinant bounds (5) hold, and the same prime-rounding
+conclusion (6) follows exactly.
+
+**Proof.** Write \(\widetilde H_k=H_k+E_k\). Each row of \(E_k\)
+has absolute sum at most \(k\varepsilon\). Thus, with
+\(A_k=H_k^{-1}E_k\),
+
+\[
+\|A_k\|_\infty\le B_k k\varepsilon=:\alpha_k.
+\]
+
+The principal-minor expansion of \(\det(I+A_k)\) is
+
+\[
+\det(I+A_k)=
+1+\sum_{\varnothing\ne S\subseteq\{0,\ldots,k-1\}}
+\det (A_k)_{S,S}.
+\]
+
+Hadamard's inequality for the rows of each principal minor yields
+\(|\det(A_k)_{S,S}|\le\alpha_k^{|S|}\), since the Euclidean row
+norm does not exceed the absolute row sum. Consequently
+
+\[
+\left|\frac{\widetilde D_k}{D_k}-1\right|
+=\bigl|\det(I+A_k)-1\bigr|
+\le (1+\alpha_k)^k-1.
+\]
+
+By (10), \(0\le\alpha_k\le\delta/(2^k-1)<1\). The binomial
+expansion and \(\alpha_k^j\le\alpha_k\) for \(j\ge1\) give
+
+\[
+(1+\alpha_k)^k-1\le(2^k-1)\alpha_k\le\delta.
+\]
+
+Thus \(\widetilde D_k>0\) and (5) holds. Theorem B's exact ratio
+argument now returns all the true prime bonds. \(\square\)
+
+Unlike the factorial bound, this certificate uses the actual matrix
+conditioning. Every \(B_k\) is exactly calculable by rational
+Gauss-Jordan inversion, with a separate check that
+\(H_kH_k^{-1}=I\). No floating-point inverse or guessed eigenvalue is
+part of the certificate.
+
+**Theorem B++ (a priori prime-only certificate).**
+For the genuine increasing prime offdiagonal, the inverse row norms
+obey the following independent, *all k* bound:
+
+\[
+\boxed{
+B_k\le \frac{k(k+1)^2}{4}.
+}
+\tag{11}
+\]
+
+Hence, without computing any inverse, the single radius
+
+\[
+\boxed{
+\varepsilon\le
+\varepsilon_{\mathrm{explicit}}:=
+\frac{4\delta}
+ {(2^{K+1}-1)(K+1)^2(K+2)^2}
+}
+\tag{12}
+\]
+
+is sufficient for every determinant and prime-bond conclusion
+through index \(K-1\).
+
+**Proof of (11).** The first \(k\) orthonormal prime-Jacobi
+polynomials \(P_n(t)\), \(0\le n<k\), are defined recursively by
+
+\[
+P_0(t)=1,\quad P_1(t)=t/p_0,\qquad
+p_nP_{n+1}(t)=tP_n(t)-p_{n-1}P_{n-1}(t).
+\]
+
+This definition uses only the first \(k-1\) prime bonds.
+Their finite-section action satisfies \(P_n(J)e_0=e_n\),
+by the defining Jacobi recurrence.
+Write \(R_{n,j}=[t^j]P_n(t)\), using zeros for \(j>n\).
+Since these polynomial vectors form the basis dual to the
+root-Krylov monomials under the real dot product, the exact Gram inverse is
+
+\[
+\boxed{H_k^{-1}=R^{\mathsf T}R.}\tag{13}
+\]
+
+Set \(T_n=\sum_j|R_{n,j}|\). Then \(T_0=1\) and \(T_1=1/p_0\le1\).
+Because \(p_n\) is increasing, the three-term recurrence implies
+
+\[
+T_{n+1}\le\frac{T_n}{p_n}+T_{n-1}.
+\]
+
+Thus \(U_n=\max(T_n,T_{n-1})\), for \(n\ge1\), satisfies
+\(U_1=1\) and
+\(U_{n+1}\le(1+1/p_n)U_n\).
+For every \(0\le n<k\),
+
+\[
+T_n\le\prod_{j=0}^{k-2}(1+1/p_j)
+\le\prod_{j=0}^{k-2}\left(1+\frac1{j+2}\right)
+=\frac{k+1}{2},
+\]
+
+using the elementary lower bound \(p_j\ge j+2\).
+Finally, (13) gives
+
+\[
+\sum_{j<k}|(H_k^{-1})_{ij}|
+\le\sum_{n<k}|R_{n,i}|T_n
+\le\sum_{n<k}T_n^2
+\le k\left(\frac{k+1}{2}\right)^2,
+\]
+
+proving (11). Substituting it into (10), using monotonicity
+of \(k^2(k+1)^2(2^k-1)\), gives (12). \(\square\)
+
+This is the project's first explicit **source-only orthogonal-polynomial
+conditioning theorem** for the prime-Jacobi moment decoder. General
+three-term recurrences, determinant inequalities and moment inversions
+are classical; global novelty is **unassessed**. An exact Lean proof of
+the polynomial coefficient norm and the principal-minor expansion is
+still required.
+
+### Measured gain and hostile controls
+
+The updated independent source checker evaluates the inverse in
+two mathematically different ways: exact rational Gauss-Jordan elimination,
+and the Jacobi polynomial coefficient factorization (13). It proves
+their entries coincide for every tested prefix, verifies the actual
+row-sum norms, and checks the adaptive and a priori budgets against
+all exact perturbed determinants and all reconstructed prime ratios.
+
+For \(K=7\), with last prime bond \(P=17\) and
+\(\delta=1/140\), the three *provably sufficient* radii are approximately
+
+| Certificate | Certified moment error |
+|---|---:|
+| Universal factorial/permutation bound (4) | \(1.30531\cdot10^{-121}\) |
+| Explicit prime-only bound (12), no inversion | \(2.16136\cdot10^{-8}\) |
+| Exact inverse-conditioned bound (10) | \(1.66141\cdot10^{-6}\) |
+
+The exact inverse certificate improves on the original conservative
+bound by a factor of approximately \(1.27\cdot10^{115}\).
+This is **better conditioning certification**, not a claim that
+the underlying inverse moment problem has become well conditioned
+at infinite resolution.
+
+The final checker tests lengths \(K=1,\ldots,7\), the three radius
+types, and three deterministic signed moment perturbations for each
+length: **63 exact-rational trial groups PASS**. These finite checks
+and the complete mathematical derivation are distinct from Lean
+kernel verification, still NOT_RUN.
 
 ## 4. Theorem C: error-free finite Alpöge arithmetic return after rounding
 
