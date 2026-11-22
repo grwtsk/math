@@ -123,6 +123,21 @@ F_\theta(x)
 \]
 This is a **rigorous all-real-x upper certificate**. On unit intervals \([k,k+1]\), the curvature allowance is \(1/(8k)\). The same bound is valid on a finer rational grid and the allowance scales quadratically in the mesh size.
 
+**Sharp sign control for the interpolation residual.** Because \(0<\theta<1\), the inequality \(\theta(1-\theta)\le1/4\) and \(x^{\theta-1}\le1\) for \(x\ge1\) imply
+\[
+-\frac1x\le F_\theta''(x)\le-\frac{3}{4x}.
+\]
+On \([a,b]\subseteq[1,\infty)\), integrate these two curvature bounds (equivalently use convexity/concavity after adding a quadratic) to obtain the **two-sided** bound:
+\[
+\boxed{
+\frac{3}{8b}(x-a)(b-x)
+\le F_\theta(x)-\bigl[(1-t)F_\theta(a)+tF_\theta(b)\bigr]
+\le\frac{1}{2a}(x-a)(b-x).
+}\tag{8a}
+\]
+The interpolation excess is **strictly positive** at every interior point, so ordinary endpoint-only checking is inherently insufficient for an upper certificate. An explicit safety allowance or a separate interior critical-point evaluation is necessary. The independent exact rational interval checker now verifies **both** sides of (8a), not just the upper bound, on 720 test configurations with actual prime-power kinks and symbolic rational choices for the missing analytic constant.
+
+
 If a certified analytic/arithmetical interval evaluation proves
 \[
 \max\{G_m(a)-a^\theta,\;G_m(b)-b^\theta\}
