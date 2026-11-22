@@ -176,4 +176,63 @@ theorem eventual_native_tail_lower_of_true_chebyshev
   rw [hExponent] at hProduct
   linarith
 
+
+/-- The SOURCE-SPECIFIC analytic transfer from the independent published
+7/8 nonvanishing theorem to the actual complete Level Chebyshev
+error, using the classical truncated explicit formula and bounds on
+the original zeta and Dirichlet logarithmic derivatives.
+It is an EXPLICIT, UNPROVED-in-Lean supplier, not an axiom. -/
+def OriginalExplicitFormulaPowerTransfer (Λ : Level) : Prop :=
+  ∀ beta : ℝ, (7 / 8 : ℝ) < beta → beta < 1 →
+    NativeSevenEighthsNonvanishing Λ →
+      ChebyshevPowerSupplier Λ beta
+
+/-- The exact below-one target is a genuine native Level statement,
+for ALL original Levels (including exceptional characters), at ALL
+theta strictly above the independent external 7/8 threshold.
+The two external analytic interfaces remain visible as hypotheses:
+7/8 nonvanishing AND the correct explicit-formula transfer. -/
+theorem eventual_native_integrated_tail_of_external_seven_eighths
+    (Λ : Level) (theta : ℝ)
+    (h7 : (7 / 8 : ℝ) < theta) (htheta : theta < 1)
+    (hZeroFree : NativeSevenEighthsNonvanishing Λ)
+    (hExplicit : OriginalExplicitFormulaPowerTransfer Λ)
+    (hTail : OriginalTailNormalization Λ) :
+    ∃ Xtheta : ℝ, 1 ≤ Xtheta ∧ ∀ x ≥ Xtheta,
+      -x ^ (theta - 1) ≤ actualIntegratedTail Λ x := by
+  let beta : ℝ := ((7 / 8 : ℝ) + theta) / 2
+  have hbeta7 : (7 / 8 : ℝ) < beta := by
+    dsimp [beta]
+    linarith
+  have hbetatheta : beta < theta := by
+    dsimp [beta]
+    linarith
+  have hbeta1 : beta < 1 := hbetatheta.trans htheta
+  exact eventual_native_tail_lower_of_true_chebyshev
+    Λ beta theta hbetatheta htheta
+    (hExplicit beta hbeta7 hbeta1 hZeroFree) hTail
+
+/-- The corresponding original intermediate Gm power upper bound,
+without importing the external solution into the incompatible
+original Mathlib, and with zero-free-to-Chebyshev kept open. -/
+theorem eventual_native_gm_of_external_seven_eighths
+    (Λ : Level) (theta : ℝ)
+    (h7 : (7 / 8 : ℝ) < theta) (htheta : theta < 1)
+    (hZeroFree : NativeSevenEighthsNonvanishing Λ)
+    (hExplicit : OriginalExplicitFormulaPowerTransfer Λ)
+    (hTail : OriginalTailNormalization Λ) :
+    ∃ Xtheta : ℝ, 1 ≤ Xtheta ∧ ∀ x ≥ Xtheta,
+      Λ.Gm x ≤ x ^ theta := by
+  let beta : ℝ := ((7 / 8 : ℝ) + theta) / 2
+  have hbeta7 : (7 / 8 : ℝ) < beta := by
+    dsimp [beta]
+    linarith
+  have hbetatheta : beta < theta := by
+    dsimp [beta]
+    linarith
+  have hbeta1 : beta < 1 := hbetatheta.trans htheta
+  exact eventual_original_gm_upper_of_power
+    Λ beta theta hbetatheta htheta
+    (hExplicit beta hbeta7 hbeta1 hZeroFree) hTail
+
 end GRWTSK.NumberTheory.AlpogeNativeSevenEighthsIntegratedTail
