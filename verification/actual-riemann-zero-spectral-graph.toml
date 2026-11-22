@@ -16,14 +16,14 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 14
+expected_theorems = 17
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
 name = "GRWTSK.Combinatorics.GraphTheory.ActualRiemannZeroSpectralGraph"
 path = "GRWTSK/Combinatorics/GraphTheory/ActualRiemannZeroSpectralGraph.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ActualRiemannZeroSpectralGraph"
-git_blob = "9213809933e2ba33aad2994cfb01e7d2a7e239f3"
+git_blob = "f6658ff9e385f50ce98098525015f8577e97cd01"
 theorems = [
   "graphCriticalLine_iff_RiemannHypothesis",
   "canonicalCriticalLine_iff_RiemannHypothesis",
@@ -32,6 +32,9 @@ theorems = [
   "pointMass_at",
   "pointMass_ne_zero",
   "ZeroGraph.diagonal_point_eigen",
+  "ZeroGraph.pointEigenvalue_iff_source_height",
+  "ZeroGraph.pointEigenvalue_real",
+  "ZeroGraph.complete_point_spectra_agree",
   "ZeroGraph.criticalPoint_eq_source",
   "ZeroGraph.zeta_zero_at_height",
   "ZeroGraphMap.height_eq",

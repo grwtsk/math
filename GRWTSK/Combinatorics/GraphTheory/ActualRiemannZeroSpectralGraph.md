@@ -77,6 +77,22 @@ For any finite sample of vertices, the real diagonal operator is symmetric under
 
 This is a mathematically valid **source-derived diagonal representation**. It is NOT the construction of a natural Hilbert–Pólya self-adjoint operator whose spectrum independently forces RH. The original zeros are already supplied to the graph, so their diagonal multiplier cannot establish RH independently of the external theorem. No graph adjacency-matrix or Laplacian eigenvalue is claimed to equal a zeta zero.
 
+### Exact point-spectrum classification across all source-complete graph layers
+
+The stronger point-spectrum theorem is an **if and only if**, not merely an injection of zero heights into arbitrary eigenvalues. Define a point eigenvalue of the diagonal multiplier on the full vertex-indexed algebraic function space as a scalar \(\lambda\in\mathbb C\) for which there exists a **nonzero** function \(f\) with \(D_G f=\lambda f\). Then
+
+\[
+\lambda\in\operatorname{PointSpec}(D_G)
+\quad\Longleftrightarrow\quad
+\exists v,\ \lambda=\gamma(v)=\Im(\operatorname{zero}(v)).
+\]
+
+**Forward proof:** a nonzero eigenfunction has at least one coordinate \(v\) with \(f(v)\ne0\). At that coordinate the eigen-equation reads \(\gamma(v)f(v)=\lambda f(v)\); cancellation in \(\mathbb C\) gives \(\lambda=\gamma(v)\). **Reverse proof:** the point mass supported at any source vertex \(v\) is nonzero and is an eigenfunction for \(\gamma(v)\). All such point eigenvalues are real.
+
+Because any two source-sound and source-complete graphs cover the *same actual nontrivial zero set*, their source-derived diagonal operators have identical **point eigenvalue sets**, irrespective of how their certified/candidate/admissible edges differ. These operators may have DIFFERENT eigenvalue multiplicities if either graph duplicates a zero as multiple vertices; no multiplicity equivalence is claimed without a genuine bijective correspondence.
+
+This exact matching is a source-faithful architectural invariant, not a newly discovered graph-theoretic spectral law forcing RH. A graph whose diagonal entries are set *from the zeta zeros* cannot independently prove where those zeros lie. A novel Hilbert–Pólya spectral realization requires a separately constructed operator whose spectrum is linked back to the original zeta function by a proved determinant/zero-divisor correspondence.
+
 ## Connection to AI research, independent of theorem authority
 
 Google DeepMind's 2026 AlphaProof Code work demonstrates a specification-first, kernel-checked Lean workflow for deployed software; OpenAI's 2026 Navier–Stokes work supplies another example of AI-assisted Lean formal mathematics. Neither system is presented as an original solver of this RH theorem or as having proved an arithmetic graph-spectrum correspondence. Their defensible role is proposing and testing graph realizations, counterexamples, software refinements and new spectral objectives under independent proof and source-return checks.

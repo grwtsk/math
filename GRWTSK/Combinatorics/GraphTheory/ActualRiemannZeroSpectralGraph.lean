@@ -139,6 +139,73 @@ theorem ZeroGraph.diagonal_point_eigen
     simp [ZeroGraph.diagonal, pointMass]
   · simp [ZeroGraph.diagonal, pointMass, hy]
 
+/-- A point eigenvalue of the exact source-derived diagonal has a
+NONZERO eigenfunction. This is on the full algebraic function space,
+not an asserted unbounded Hilbert-space operator. -/
+def ZeroGraph.PointEigenvalue {Vertex : Type u}
+    (G : ZeroGraph Vertex) (λ : ℂ) : Prop :=
+  ∃ f : Vertex → ℂ, f ≠ 0 ∧
+    G.diagonal f = (fun y => λ * f y)
+
+/-- There are NO extra point eigenvalues: the complete point spectrum
+is exactly the set of original imaginary zeta-zero ordinates.
+This converse is essential when aligning graph-layer spectra. -/
+theorem ZeroGraph.pointEigenvalue_iff_source_height
+    {Vertex : Type u} (G : ZeroGraph Vertex) (λ : ℂ) :
+    G.PointEigenvalue λ ↔ ∃ x : Vertex, ((G.height x : ℝ) : ℂ) = λ := by
+  constructor
+  · rintro ⟨f, hf, heig⟩
+    have hsome : ∃ x : Vertex, f x ≠ 0 := by
+      by_contra hn
+      apply hf
+      funext x
+      by_contra hx
+      exact hn ⟨x, hx⟩
+    obtain ⟨x, hx⟩ := hsome
+    have hpoint := congrArg (fun φ : Vertex → ℂ => φ x) heig
+    change ((G.height x : ℝ) : ℂ) * f x = λ * f x at hpoint
+    exact ⟨x, mul_right_cancel₀ hx hpoint⟩
+  · rintro ⟨x, hx⟩
+    refine ⟨pointMass x, pointMass_ne_zero x, ?_⟩
+    simpa only [hx] using G.diagonal_point_eigen x
+
+/-- Source-height point eigenvalues are all REAL. No nonreal
+eigenvalue is manufactured by the graph or by a mirror. -/
+theorem ZeroGraph.pointEigenvalue_real
+    {Vertex : Type u} (G : ZeroGraph Vertex)
+    {λ : ℂ} (h : G.PointEigenvalue λ) : λ.im = 0 := by
+  obtain ⟨x, hx⟩ := (G.pointEigenvalue_iff_source_height λ).mp h
+  rw [← hx]
+  simp
+
+/-- Every sound and complete source-zero graph has EXACTLY the same
+point-eigenvalue SET, irrespective of its candidate/admissible edge
+choices. This says nothing about eigenvalue multiplicities or a
+physical adjacency/Laplacian spectrum. -/
+theorem ZeroGraph.complete_point_spectra_agree
+    {Vertex : Type u} {Target : Type v}
+    (G : ZeroGraph Vertex) (H : ZeroGraph Target) (λ : ℂ) :
+    G.PointEigenvalue λ ↔ H.PointEigenvalue λ := by
+  constructor
+  · intro hg
+    obtain ⟨x, hx⟩ := (G.pointEigenvalue_iff_source_height λ).mp hg
+    obtain ⟨y, hy⟩ := H.complete (G.zero x) (G.sound x)
+    apply (H.pointEigenvalue_iff_source_height λ).mpr
+    refine ⟨y, ?_⟩
+    have hheight : H.height y = G.height x :=
+      congrArg Complex.im hy
+    rw [hheight]
+    exact hx
+  · intro hh
+    obtain ⟨y, hy⟩ := (H.pointEigenvalue_iff_source_height λ).mp hh
+    obtain ⟨x, hx⟩ := G.complete (H.zero y) (H.sound y)
+    apply (G.pointEigenvalue_iff_source_height λ).mpr
+    refine ⟨x, ?_⟩
+    have hheight : G.height x = H.height y :=
+      congrArg Complex.im hx
+    rw [hheight]
+    exact hy
+
 def criticalPoint (γ : ℝ) : ℂ :=
   ((1 / 2 : ℝ) : ℂ) + (γ : ℂ) * Complex.I
 
