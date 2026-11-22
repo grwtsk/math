@@ -192,4 +192,17 @@ theorem levelGm_eq_normalized (Λ : Level) (x : ℝ)
   rw [Finset.mul_sum]
   ring
 
+/-- At x=1 the source prime-power head and -x log x vanish.
+Thus the entire genuine affine analytic constant is EXACTLY the
+original Level.Gm 1, not a new independent or invented constant.
+This does not mean finite prime observations determine that value. -/
+theorem levelGm_one_eq_analyticConstant (Λ : Level) :
+    Λ.Gm 1 = analyticConstant Λ := by
+  have h := levelGm_eq_normalized Λ 1 (by norm_num)
+  have hhead : signedSmoothedPrimeHead Λ 1 = 0 := by
+    simp [signedSmoothedPrimeHead]
+  simpa only [normalizedGm, hhead, Real.log_one,
+    mul_zero, sub_zero, zero_add, mul_one] using h
+
+
 end GRWTSK.NumberTheory.AlpogeNativeGmNormalization
