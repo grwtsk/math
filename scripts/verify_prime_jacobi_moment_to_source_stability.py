@@ -137,5 +137,4 @@ def main():
     if args.report: args.report.write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({"status":result["status"], "bond_lengths":[x["K"] for x in checks],"worst_denominator_digits":max(len(x['certified_moment_tolerance'].split('/')[1]) if '/' in x['certified_moment_tolerance'] else 1 for x in checks), "pattern_trials":sum(x['exact_checked_patterns'] for x in checks),"hostile_detected":True},indent=2))
 
-
 if __name__=='__main__':main()
