@@ -94,4 +94,46 @@ theorem coeffEnvelope_le_index (n : ℕ) :
       push_cast
       linarith
 
+/-- Integer prime gaps are at least one; the actual bond index matters. -/
+theorem bond_succ_gap_one (n : ℕ) : bond n + 1 ≤ bond (n + 1) := by
+  change (Nat.nth Nat.Prime n : ℝ) + 1 ≤
+    (Nat.nth Nat.Prime (n + 1) : ℝ)
+  have hstrict : Nat.nth Nat.Prime n < Nat.nth Nat.Prime (n + 1) :=
+    (Nat.nth_strictMono Nat.infinite_setOfPred_prime) (Nat.lt_succ_self n)
+  exact_mod_cast (Nat.succ_le_iff.mpr hstrict)
+
+/-- A much sharper UNIFORM envelope: the three-term Jacobi
+coefficient l1-norm is bounded by one for ALL prime bond ranks.
+The proof uses the integer prime gap, not RH or any zero data. -/
+theorem coeffEnvelope_le_one (n : ℕ) :
+    coeffEnvelope n ≤ 1 := by
+  induction n using Nat.twoStepInduction with
+  | zero =>
+      norm_num [coeffEnvelope]
+  | one =>
+      change (1 : ℝ) / bond 0 ≤ 1
+      exact (div_le_iff₀ (bond_pos 0)).mpr
+        (by have h := bond_at_least_index 0; norm_num at h ⊢; linarith)
+  | more n ih ih1 =>
+      change coeffEnvelope (n + 1) / bond (n + 1) +
+        (bond n / bond (n + 1)) * coeffEnvelope n ≤ 1
+      have hsum : coeffEnvelope (n + 1) +
+          bond n * coeffEnvelope n ≤ 1 + bond n := by
+        exact add_le_add ih1 (mul_le_mul_of_nonneg_left ih (bond_pos n).le)
+      calc
+        coeffEnvelope (n + 1) / bond (n + 1) +
+            (bond n / bond (n + 1)) * coeffEnvelope n =
+          (coeffEnvelope (n + 1) + bond n * coeffEnvelope n) /
+            bond (n + 1) := by ring
+        _ ≤ (1 + bond n) / bond (n + 1) :=
+          div_le_div_of_nonneg_right hsum (bond_pos (n + 1)).le
+        _ ≤ 1 := (div_le_iff₀ (bond_pos (n + 1))).mpr
+          (bond_succ_gap_one n)
+
+/-- The scalar prime coefficient envelope is nonnegative AND at most
+one; the latter is much stronger than its previous linear bound. -/
+theorem coeffEnvelope_mem_Icc (n : ℕ) :
+    coeffEnvelope n ∈ Set.Icc (0 : ℝ) 1 :=
+  ⟨coeffEnvelope_nonnegative n, coeffEnvelope_le_one n⟩
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiCoefficientEnvelope
