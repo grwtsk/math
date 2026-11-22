@@ -157,4 +157,83 @@ theorem vonMangoldt_from_native_integer_curvature
   apply (div_eq_iff hneq).mpr
   exact hSource
 
+
+/-- The actual original Level.ofSub has at most as many retained
+PChar images as subgroup elements. The principal character is in
+KEPT, so removing it gives Nt.card + 1 <= o.
+The finite-cardinality argument uses only the original source
+definition and Mathlib cardinal identities, not RH. -/
+theorem ofSub_Nt_card_succ_le_o {M : ℕ} [NeZero M]
+    (Ξ : Subgroup (DirichletCharacter ℂ M)) :
+    (Level.ofSub Ξ).Nt.card + 1 ≤ (Level.ofSub Ξ).o := by
+  classical
+  have hImage :
+      (Level.ofSub Ξ).KEPT.card ≤
+        (Finset.univ.filter
+          (fun χ : DirichletCharacter ℂ M => χ ∈ Ξ)).card := by
+    change ((Finset.univ.filter
+      (fun χ : DirichletCharacter ℂ M => χ ∈ Ξ)).image PChar.of).card ≤ _
+    exact Finset.card_image_le
+  have hSub :
+      (Finset.univ.filter
+        (fun χ : DirichletCharacter ℂ M => χ ∈ Ξ)).card =
+          Nat.card Ξ := by
+    rw [Nat.card_eq_fintype_card]
+    simpa only [Fintype.card_subtype] using
+      (Fintype.card_subtype
+        (fun χ : DirichletCharacter ℂ M => χ ∈ Ξ)).symm
+  have hKept :
+      (Level.ofSub Ξ).KEPT.card ≤ (Level.ofSub Ξ).o := by
+    change (Level.ofSub Ξ).KEPT.card ≤ Nat.card Ξ
+    exact hImage.trans_eq hSub
+  have hOne : PChar.one ∈ (Level.ofSub Ξ).KEPT :=
+    (Level.ofSub Ξ).one_mem
+  have hErase :
+      (Level.ofSub Ξ).Nt.card + 1 =
+        (Level.ofSub Ξ).KEPT.card := by
+    change ((Level.ofSub Ξ).KEPT.erase PChar.one).card + 1 =
+      (Level.ofSub Ξ).KEPT.card
+    have he := Finset.card_erase_of_mem hOne
+    have hc : 1 ≤ (Level.ofSub Ξ).KEPT.card :=
+      Finset.one_le_card.mpr hOne
+    omega
+  exact hErase.le.trans hKept
+
+/-- Original Level.ofSub has no exceptional character by definition.
+Thus its true signed prime-power phase is strictly nonzero at every
+natural index, even one divisible by the ambient modulus. -/
+theorem ofSub_phase_gt_two_thirds {M : ℕ} [NeZero M]
+    (Ξ : Subgroup (DirichletCharacter ℂ M)) (n : ℕ) :
+    (2 : ℝ) / 3 < signedPhase (Level.ofSub Ξ) n := by
+  apply phase_gt_two_thirds_of_subgroup_cardinality
+  · rfl
+  · exact ofSub_Nt_card_succ_le_o Ξ
+
+/-- Original Level.cyc specializes to a genuine subgroup, not an
+arbitrary synthetic finite character family. -/
+theorem cyclic_phase_gt_two_thirds (ψ : PChar) (n : ℕ) :
+    (2 : ℝ) / 3 < signedPhase (Level.cyc ψ) n := by
+  change (2 : ℝ) / 3 <
+    signedPhase (Level.ofSub (Subgroup.zpowers ψ.χ)) n
+  exact ofSub_phase_gt_two_thirds (Subgroup.zpowers ψ.χ) n
+
+/-- All original cyclic levels can invert true signed prime-power
+curvature without division by a vanishing weighted character symbol.
+This remains conditional on the separately formulated source
+integer-curvature identity, whose full Lean proof is not included. -/
+theorem cyclic_vonMangoldt_of_source_curvature
+    (ψ : PChar) (k : ℕ) (hk : 2 ≤ k)
+    (curvature : ℝ)
+    (hCurvature :
+      (k : ℝ) * curvature =
+        (ArithmeticFunction.vonMangoldt k : ℝ) *
+          signedPhase (Level.cyc ψ) k) :
+    ((k : ℝ) * curvature) /
+      signedPhase (Level.cyc ψ) k =
+      (ArithmeticFunction.vonMangoldt k : ℝ) := by
+  have hpos := cyclic_phase_gt_two_thirds ψ k
+  have hne : signedPhase (Level.cyc ψ) k ≠ 0 := by linarith
+  apply (div_eq_iff hne).mpr
+  exact hCurvature
+
 end GRWTSK.NumberTheory.AlpogeNativeCyclicPhase
