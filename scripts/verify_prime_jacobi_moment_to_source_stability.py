@@ -212,7 +212,7 @@ def check(k: int) -> dict:
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--max-bonds',type=int,default=7)
+    p.add_argument('--max-bonds',type=int,default=8)
     p.add_argument('--report',type=Path)
     args=p.parse_args()
     assert 1<=args.max_bonds<=9
