@@ -129,7 +129,7 @@ The extra Lean interval lemmas in PrimeJacobiMomentErrorBudget.lean formalize th
 
 The accompanying checker uses **only standard-library integers and exact rational arithmetic**. It independently constructs prime-Jacobi moments through order \(2K\), computes all Hankel determinants with fraction-free Bareiss elimination, verifies (1), constructs the exact rational tolerance (4) with \(\delta=1/(8P+4)\), perturbs every moment with three deterministic patterns, and tests (3), (5), and the *squared* nearest-integer inequalities without floating-point square roots.
 
-Length \(K=1,\ldots,7\): **21/21 trial groups PASS for the original universal bound** (and 63/63 including the improved certificates in Section 3A). The most conservative permitted moment radius ranges from \(1/340\) at \(K=1\) to about \(1.3\cdot10^{-121}\) at \(K=7\). This bound is formally robust but **extremely ill-conditioned**, hence not a practical precision target. A future stronger theorem should use structured Hankel/Gram conditioning rather than a uniform \(M\) and \(k!\) for every permutation.
+Length \(K=1,\ldots,8\): **24/24 trial groups PASS for the original universal bound** (and 72/72 including the improved certificates in Section 3A). The most conservative permitted moment radius ranges from \(1/340\) at \(K=1\) to about \(1.3\cdot10^{-121}\) at \(K=7\). This bound is formally robust but **extremely ill-conditioned**, hence not a practical precision target. A future stronger theorem should use structured Hankel/Gram conditioning rather than a uniform \(M\) and \(k!\) for every permutation.
 
 **Hostile control:** replacing the first true second moment \(m_2=4\) by 9 makes the determinant-based first bond 3 instead of 2. Without a certified radius, positive semidefiniteness and the inverse formula alone do not protect prime identity.
 
@@ -311,13 +311,20 @@ For \(K=7\), with last prime bond \(P=17\) and
 
 The exact inverse certificate improves on the original conservative
 bound by a factor of approximately \(1.27\cdot10^{115}\).
+At \(K=8\), with last prime bond \(P=19\), the original bound is
+\(8.11843\cdot10^{-161}\); the no-inversion prime-only radius is
+\(6.19483\cdot10^{-9}\), while the exactly conditioned radius is
+\(6.05266\cdot10^{-7}\). The latter gains approximately
+\(7.45546\cdot10^{153}\) over the universal bound. These are
+rational certificates, not empirical best-case tolerances.
+
 This is **better conditioning certification**, not a claim that
 the underlying inverse moment problem has become well conditioned
 at infinite resolution.
 
-The final checker tests lengths \(K=1,\ldots,7\), the three radius
+The final checker tests lengths \(K=1,\ldots,8\), the three radius
 types, and three deterministic signed moment perturbations for each
-length: **63 exact-rational trial groups PASS**. These finite checks
+length: **72 exact-rational trial groups PASS**. These finite checks
 and the complete mathematical derivation are distinct from Lean
 kernel verification, still NOT_RUN.
 
