@@ -120,5 +120,4 @@ def main():
     print(json.dumps({'status':data['status'],'finite_checks':data['finite_symbolic_identity_checks'],
        'pole_models':poles,'cases':cases},indent=2))
 
-
 if __name__=='__main__':main()
