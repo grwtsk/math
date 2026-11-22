@@ -26,7 +26,7 @@ alpoge_repository = "tamnd/riemann-lean"
 alpoge_revision = "af705e0d9a5904326eb0693310e36d9484df7f8f"
 
 [policy]
-expected_theorems = 51
+expected_theorems = 58
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -185,4 +185,30 @@ theorems = [
   "signedSmoothedPrimeHead_eq_Mertens_sub_Chebyshev",
   "levelGm_integer_eq_centeredMertens_sub_Chebyshev",
   "levelGm_integer_upper_iff_original_source",
+]
+
+# Published external OAI/math theorem OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re
+# and OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re:
+# openai/math@4eaee87548250b2682affda7d05d947c05554bae,
+# lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean
+# Git blob 46c67f4000906b1391a471d6e6396ac0da3c16a5.
+# External Lean 4.34.1 Mathlib d13f23b7 is NOT native 4.33.1 Mathlib 0df444a3.
+# External theorem is an EXPLICIT PROP SUPPLIER, NOT IMPORTED/ADMITTED.
+# OriginalExplicitFormulaPowerTransfer is a SEPARATE CLASSICAL analytic
+# source obligation, NOT_PROVED_IN_LEAN; OriginalTailNormalization also open.
+# All newly listed proof scripts remain SOURCE_PROOF_CANDIDATE / NOT_RUN.
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeSevenEighthsIntegratedTail"
+path = "docs/adaptations/environments/alpoge-gm-native/SevenEighthsIntegratedTail.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeSevenEighthsIntegratedTail.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeSevenEighthsIntegratedTail"
+git_blob = "65bb651521f3aa5d0459dc7ee553eee4b7fd3659"
+theorems = [
+  "actualChebyshev_nat",
+  "native_seven_eighths_of_external",
+  "integrated_lower_of_normalized_power",
+  "normalized_integrand_lower_of_true_power",
+  "eventual_native_tail_lower_of_true_chebyshev",
+  "eventual_native_integrated_tail_of_external_seven_eighths",
+  "eventual_native_gm_of_external_seven_eighths",
 ]
