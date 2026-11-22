@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 235
+expected_theorems = 270
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -457,4 +457,63 @@ theorems = [
   "ZeroGraph.sampleDiagonal_symmetric",
   "ZeroGraphMap.lower_path",
   "ZeroGraphMap.source_upper_acyclic",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeKnotJacobiArithmetic"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeKnotJacobiArithmetic.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeKnotJacobiArithmetic"
+git_blob = "2759dc76c224e3214e8a1c8d9abd054f37edacab"
+theorems = [
+  "primeAt_prime",
+  "primeAt_pos",
+  "not_summable_reciprocal_primeAt",
+  "bond_pos",
+  "bond_reciprocal_not_summable",
+  "knotWeight_symmetric",
+  "knotWeight_nonneg",
+  "knotWeight_self_zero",
+  "jacobiMatrix_transpose",
+  "jacobi_action_symmetric",
+  "laplacian_constant_zero",
+  "graphEnergy_nonneg",
+  "graphEnergy_constant_zero",
+  "graphPairing_symmetric",
+  "graphPairing_self_nonneg",
+  "continuant_one",
+  "continuant_odd_zero",
+  "continuant_even_step",
+  "continuant_even_ne_zero",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiGraphSandwichEnergy"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiGraphSandwichEnergy.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiGraphSandwichEnergy"
+git_blob = "c967ad349ff0eb2b97ce5868fe5f30e33541a475"
+theorems = [
+  "edgeEnergy_nonneg",
+  "edgeEnergy_mono",
+  "sandwich_energy_bounds",
+  "full_relation_energy_eq_graphEnergy",
+  "sandwich_energy_le_full",
+  "edgeEnergy_constant_zero",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.PrimeJacobiSpectralEnclosure"
+path = "GRWTSK/NumberTheory/PrimeJacobiSpectralEnclosure.lean"
+namespace = "GRWTSK.NumberTheory.PrimeJacobiSpectralEnclosure"
+git_blob = "6bc8c9ce67206345d427bf7e40e4c2ee054965b2"
+theorems = [
+  "criticalPoint_re",
+  "criticalPoint_im",
+  "horizontalGap_le_norm",
+  "verticalGap_le_norm",
+  "first_section_zero_eigenvalue",
+  "on_line_of_arbitrarily_close",
+  "RiemannHypothesis_of_primeSpectralRecovery",
+  "recovery_fails_of_off_line_zero",
+  "no_spectral_enclosure_below_horizontal_gap",
+  "uniformly_bounded_spectrum_obstruction",
 ]
