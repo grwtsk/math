@@ -76,6 +76,44 @@ already identifies the correct Mathlib RH target.
 
 It is important that **untruncated Gaussian heat is not compact-support-preserving**. Theorem C does not automatically cover it. For Gaussian heat \(H_t f=g_t*f\), first use a smooth cutoff \(D_{t,R}f=\eta_R H_t f\), retaining compact support. Show \(D_{t,R} f\to H_tf\) in a topology where the **complete gamma/pole/prime arithmetic functional is continuous**; then and only then pass positivity to \(H_tf\). This needs explicit tail domination and remains a separate formal obligation. The finite \`WeilDiffusionSourceBridge\` theorem shows invertible heat cannot erase a genuine negative source direction.
 
+## B2. Full physical signed-source positivity in WeilGammaPhysicalReturn
+
+The first theorem uses Zeta23's \`literatureRHS\`. The local **different physical normalization** is already written explicitly in \`SourcePrimeCorrelation.zeta_hasSum_physical_arithmetic\` (Git blob \`70afaf727ccaed77f170b6cdc48a62ea521e648d\`). It is important not to identify the two right-hand sides *definitionally*.
+
+**Theorem D (mathematical physical-source return).** Let \`f : ℝ → ℂ\`, \`A≥0\`, and assume exactly \`Admissible f\` and \`tsupport f ⊆ Icc (-A) A\` as in the source theorem. Let
+
+\[
+\begin{aligned}
+C_f(r)&=\int_\mathbb R\overline{f(t)}f(t+r)\,dt,\\
+W_f(s)&=\int_\mathbb R C_f(r)e^{(s-\frac12)r}\,dr,\\
+Q_{\rm physical}(f,A)
+&=\gammaConstant(1,0)\cdot energy(f)
+  +\int_{r>0}\gammaCorrectionDensity(0,f;r)\,dr\\
+&\quad-2\sum_{n\in activePrimePowers(A)}
+     primeWeight(n)\operatorname{Re}C_f(\log n)
+  +W_f(0)+W_f(1).
+\end{aligned}
+\]
+
+Then **using Alpöge RH**, \(\operatorname{Re}Q_{\rm physical}(f,A)\ge0\), for **every** such f and A (not merely finite-dimensional grids or a fixed prime window).
+
+**Proof.** By \`zeta_hasSum_physical_arithmetic\`, the displayed complete arithmetic expression is the \`HasSum\` value of \(\sum_{\rho\in CriticalStripZero(\mathbf1)} m_\rho W_f(\rho)\). In conductor one the Dirichlet L-function is the *actual* Riemann zeta function; the zero-source type excludes the pole and records the true nontrivial zeros with original multiplicity. Alpöge's theorem therefore makes \(\rho=\frac12+i\gamma_\rho\), \(\gamma_\rho\in\mathbb R\). Compact support and smoothness make the following exchange absolutely integrable:
+
+\[
+\begin{aligned}
+W_f(\tfrac12+i\gamma)
+&=\int_{\mathbb R}\!\int_{\mathbb R}
+      \overline{f(t)}\,f(t+r)e^{i\gamma r}\,dt\,dr\\
+&=\left(\int_{\mathbb R}\overline{f(t)}e^{-i\gamma t}\,dt\right)
+   \left(\int_{\mathbb R}f(u)e^{i\gamma u}\,du\right)\\
+&=\left|\int_{\mathbb R}f(u)e^{i\gamma u}\,du\right|^2\ge0.
+\end{aligned}
+\]
+
+Every multiplicity \(\ m_\rho\) is positive. Hence each spectral summand has nonnegative real part, and the \`HasSum\` limit has nonnegative real part. This proves the displayed complete physical-source inequality, including the **whole gamma integral, both pole terms and every active signed prime power**. \(\square\)
+
+**Formalization boundary:** the full proof of Theorem D above is a *mathematical derivation from* the displayed source theorem and Alpöge RH; it has **not** been translated into a checked \`grwtsk/math\` Lean declaration. The remaining Lean lemmas are (i) conductor-one \`CriticalStripZero\` → original Mathlib zeta-zero on-line via \`DirichletCharacter.LFunction_modOne_eq\`, (ii) Fubini/translation for the precise \`correlation\` orientation, and (iii) positivity of the \`HasSum\` from the termwise nonnegative real parts. Unlike an extra positivity hypothesis, all three are standard implications from the already specified source definitions. An exact *Lean equality between* \`Q_physical\` and \`Zeta23.EF.literatureRHS\` is a **separate compatibility task**, not required for this direct mathematical proof of physical positivity. Theorem D does not independently establish RH: it consumes Alpöge.
+
 ## C. Exactly how prime-Jacobi arithmetic participates
 
 The prior prime-Jacobi results recover \(p_j\) from root moments of \(J\) via the positive Hankel determinant ratio
