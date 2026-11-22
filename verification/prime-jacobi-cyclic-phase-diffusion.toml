@@ -1,0 +1,64 @@
+# Source-only RH-independent exact arithmetic character phase / heat transport.
+# Mathematical source cyclic c in original pinned Alpoge Lean v4.33.1 is
+# isolated in docs/adaptations/environments/alpoge-gm-native/CyclicPhase.lean.
+# DO NOT import incompatible Mathlib into root Lean v4.34.1.
+#
+# Correct signed-source finite evolution: D_t^m M_c v.
+# Exact phase-covariant representation: M_c (M_c^-1 D_t M_c)^m v.
+# Phase/heat commutator is nonzero unless phase is constant on
+# the supported graph edges, and the two exterior Dirichlet
+# curvature boundary terms STILL must be carried separately.
+#
+# This is the finite Dirichlet-heat spectrum, NOT actual zeta zeros,
+# no RH/GRH or Weil positivity imported or assumed.
+# All theorems are uncompiled source-proof candidates.
+# Local Python checks:
+# python3 scripts/verify_cyclic_phase_diffusion_commutator.py
+# python3 scripts/verify_cyclic_covariant_diffusion.py
+# With pinned root Lean/Lake/Mathlib present:
+# python3 scripts/verify_frozen_prime_atlas.py \
+#  --config verification/prime-jacobi-cyclic-phase-diffusion.toml \
+#  --all-diagnostics --report /tmp/prime-jacobi-cyclic-phase-diffusion.json
+format_version = 1
+suite = "RH-free original cyclic phase finite Dirichlet commutator and gauge-covariant heat"
+issue = "https://github.com/grwtsk/math/issues/1850"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 11
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+lean_elaboration = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+original_cyclic_phase_cross_version_kernel = "NOT_RUN"
+weighted_Mertens_power_saving = "NOT_PROVED"
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeJacobiGmPhaseDiffusionCommutator"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeJacobiGmPhaseDiffusionCommutator.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeGmPhaseDiffusionCommutator"
+git_blob = "90379ce2f994c0d37ad43a5ec48c14c24a13c1eb"
+theorems = [
+  "phase_diffusion_commutator_entry",
+  "dirichletDifference_edge",
+  "phase_diffusion_commutator_edge",
+  "phase_diffusion_source_order",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeJacobiGmCovariantDiffusion"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeJacobiGmCovariantDiffusion.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeGmCovariantDiffusion"
+git_blob = "561b4f6237a5ef7118af9e7889943b735201279b"
+theorems = [
+  "multiplier_mul_inverse",
+  "inverse_mul_multiplier",
+  "source_covariant_intertwining",
+  "source_covariant_intertwining_pow",
+  "dirichletDifference_transpose",
+  "diffuseStep_transpose",
+  "covariant_weighted_selfadjoint",
+]
