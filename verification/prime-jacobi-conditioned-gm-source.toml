@@ -64,7 +64,7 @@ theorems = [
 name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeJacobiGmArithmeticReturn"
 path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeJacobiGmArithmeticReturn.lean"
 namespace = "GRWTSK.NumberTheory.AlpogeGmArithmeticReturn"
-git_blob = "714bd78623065d2819b985a0be82fa18b58b728c"
+git_blob = "58f73c23c615bf7192e6934f2a5d9bd6e48454d7"
 theorems = [
   "lambdaFromPhysical_eq_vonMangoldt",
   "observedLambda_sound",
