@@ -92,4 +92,54 @@ theorem pair_denominator_ne_zero (u y B : ℝ)
   have hp : 0 < 2 * u * y := by positivity
   linarith
 
+
+/-- The unproved actual-source extension of the previous half-plane
+result to an unbounded PARABOLIC domain. This is not the RH-equivalent
+global upper-half-plane assertion. Analytic proof in the adjacent .md;
+Lean does not yet formalize the full xi zero-divisor summation. -/
+def ActualXiSignedParabolic : Prop :=
+  ∀ w : ℂ, (1 / 2 : ℝ) ≤ w.re + w.im ^ 2 →
+    0 < w.im → xiAntiPickNumerator w < 0
+
+/-- Every zero rho=1/2+a+i gamma with |a|<1/2 maps under
+w=(rho-1/2)^2 strictly BELOW x+y^2=1/4.
+This is pure source-independent strip geometry. -/
+theorem squared_strip_zero_below_quarter (a gamma : ℝ)
+    (ha : a ^ 2 < (1 / 4 : ℝ)) :
+    a ^ 2 - gamma ^ 2 + (2 * a * gamma) ^ 2 <
+      (1 / 4 : ℝ) := by
+  have hprod : 0 ≤ (1 - 4 * a ^ 2) * gamma ^ 2 :=
+    mul_nonneg (by nlinarith) (sq_nonneg gamma)
+  nlinarith
+
+/-- Exact signed conjugate pair: parabolic exterior has a
+STRICTLY negative numerator using the actual critical-strip bounds
+on a, without assuming a=0 or using RH. -/
+theorem strip_pair_parabolic_defect_neg (a gamma x y : ℝ)
+    (ha : a ^ 2 < (1 / 4 : ℝ)) (hy : 0 < y)
+    (hregion : (1 / 2 : ℝ) ≤ x + y ^ 2) :
+    (2 * a * gamma) ^ 2 -
+      (x + (gamma ^ 2 - a ^ 2)) ^ 2 - y ^ 2 < 0 := by
+  have hprod : 0 ≤ (1 - 4 * a ^ 2) * gamma ^ 2 :=
+    mul_nonneg (by nlinarith) (sq_nonneg gamma)
+  have hbound :
+      (2 * a * gamma) ^ 2 <
+        gamma ^ 2 - a ^ 2 + (1 / 4 : ℝ) := by
+    nlinarith
+  have hsq :
+      0 ≤ (x + (gamma ^ 2 - a ^ 2) - (1 / 2 : ℝ)) ^ 2 :=
+    sq_nonneg _
+  nlinarith
+
+/-- The exact denominator-cleared pair expression from the
+existing source model has the appropriate strict sign. -/
+theorem strip_pair_parabolic_cleared_im_neg (a gamma x y : ℝ)
+    (ha : a ^ 2 < (1 / 4 : ℝ)) (hy : 0 < y)
+    (hregion : (1 / 2 : ℝ) ≤ x + y ^ 2) :
+    (pairClearedNumerator
+      (x + (gamma ^ 2 - a ^ 2)) y (2 * a * gamma)).im < 0 := by
+  rw [pair_cleared_im]
+  have hs := strip_pair_parabolic_defect_neg a gamma x y ha hy hregion
+  exact mul_neg_of_pos_of_neg (by positivity) hs
+
 end GRWTSK.NumberTheory.XiThetaSignedHalfPlane
