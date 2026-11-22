@@ -20,7 +20,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 8
+expected_theorems = 11
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -36,7 +36,7 @@ external_RH_used = false
 [[module]]
 name = "GRWTSK.NumberTheory.XiToeplitzHilbertPolyaCriterion"
 path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiToeplitzHilbertPolyaCriterion.lean"
-git_blob = "03394f37f42278419faca5e25fdfb395818b23c2"
+git_blob = "c13af5685959cd2b6e7a684035092e0e0a24e432"
 theorems = [
   "sourceXi_reflection",
   "sourceXiOnLine_even",
@@ -46,6 +46,10 @@ theorems = [
   "finiteSpectralDeterminant_at_zero",
   "finiteSpectralDeterminant_even",
   "finiteSpectralDeterminant_eq_factorProduct",
+  "normalizedEvenXiTaylor_zero_of_center_ne_zero",
+  "positiveFourierSource_negative_three_minor",
+  "positiveFactor_taylor_degree_two_discriminant",
+
 ]
 
 [evidence]
