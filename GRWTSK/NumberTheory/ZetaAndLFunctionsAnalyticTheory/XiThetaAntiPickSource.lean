@@ -172,4 +172,51 @@ theorem theta_integrand_first_order_negative_at_diagonal :
       (1 : ℝ) ^ 2 * (1 : ℝ) ^ 2 / 4 = -(1 / 6) := by
   norm_num
 
+
+/-- The EXACT denominator-cleared numerator for the two-point
+Hilbert–Pólya Pick kernel. The actual source is xiSquareTaylorSeries,
+NOT an arbitrary fitted zero table. -/
+def twoPointNumerator (F Fprime : ℂ → ℂ) (w v : ℂ) : ℂ :=
+  F w * Complex.conj (Fprime v) -
+    Fprime w * Complex.conj (F v)
+
+def xiTwoPointPickKernel (w v : ℂ) : ℂ :=
+  twoPointNumerator xiSquareTaylorSeries
+    (deriv xiSquareTaylorSeries) w v /
+      (w - Complex.conj v)
+
+/-- The full RH-equivalent kernel positivity is OPEN, not a theorem.
+Only genuinely upper-half-plane arguments are admitted. -/
+def ActualXiPositivePickKernel : Prop :=
+  XiTaylorSourceFaithful ∧
+  ∀ (k : ℕ) (w : Fin k → ℂ),
+    (∀ i, 0 < (w i).im) →
+      ∀ c : Fin k → ℂ,
+        0 ≤ (∑ i : Fin k, ∑ j : Fin k,
+          Complex.conj (c i) *
+            xiTwoPointPickKernel (w i) (w j) *
+              (c j)).re
+
+/-- Upper-half-plane inputs never meet a conjugate-denominator pole.
+This does not assert F itself has no zero. -/
+theorem upper_halfplane_conjugate_denominator_ne_zero
+    (w v : ℂ) (hw : 0 < w.im) (hv : 0 < v.im) :
+    w - Complex.conj v ≠ 0 := by
+  intro h
+  have heq : w = Complex.conj v := sub_eq_zero.mp h
+  have hh : w.im = -v.im := by
+    rw [heq, Complex.conj_im]
+  linarith
+
+/-- One finite positive factor gives EXACT cleared two-point kernel
+lam² with its multiplicity; the general trace-class result needs
+the original analytic factorization of the TRUE Xi source. -/
+theorem one_factor_two_point_numerator
+    (lam : ℝ) (w v : ℂ) :
+    linearSpectralFactor lam w * Complex.conj (lam : ℂ) -
+      (lam : ℂ) * Complex.conj (linearSpectralFactor lam v) =
+        ((lam : ℂ) ^ 2) * (w - Complex.conj v) := by
+  simp [linearSpectralFactor]
+  ring
+
 end GRWTSK.NumberTheory.XiThetaAntiPickSource
