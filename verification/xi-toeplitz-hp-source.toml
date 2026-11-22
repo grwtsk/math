@@ -20,7 +20,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 33
+expected_theorems = 36
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -129,7 +129,7 @@ theorems = [
 [[module]]
 name = "GRWTSK.NumberTheory.XiThetaAntiPickSource"
 path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiThetaAntiPickSource.lean"
-git_blob = "4365475f2eca3e4013b2af43f01c831ccc15f02a"
+git_blob = "d451d66b1cf5eb78e383824d06b05023fe6de2c5"
 theorems = [
   "one_factor_numerator_identity",
   "one_factor_antiPick_of_upper",
@@ -137,4 +137,7 @@ theorems = [
   "two_factor_antiPick_of_upper",
   "quadratic_antiPick_identity",
   "hostile_positive_cosine_source_wrong_local_sign",
+  "theta_integrand_first_order_signed_identity",
+  "theta_integrand_first_order_positive_at_boundary",
+  "theta_integrand_first_order_negative_at_diagonal",
 ]
