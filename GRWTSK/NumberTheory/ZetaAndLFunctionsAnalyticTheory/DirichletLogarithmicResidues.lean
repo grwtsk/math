@@ -63,12 +63,16 @@ theorem gammaFactor_regular_of_re_pos (chi : DirichletCharacter ℂ N)
     by_cases he : chi.Even
     · simpa only [DirichletCharacter.gammaFactor, he, if_true] using
         Complex.differentiable_Gammaℝ_inv
-    · simpa only [DirichletCharacter.gammaFactor, he, if_false, Function.comp_def] using
+    · simpa only [DirichletCharacter.gammaFactor, he, if_false, Function.comp_def, id_eq] using
         Complex.differentiable_Gammaℝ_inv.comp (differentiable_id.add_const (1 : ℂ))
   have ha : AnalyticAt ℂ (fun w => (DirichletCharacter.gammaFactor chi w)⁻¹) s :=
     (hd.differentiableOn.analyticOnNhd isOpen_univ) s (mem_univ s)
   refine ⟨?_, hn⟩
-  simpa only [inv_inv] using ha.inv (inv_ne_zero hn)
+  have he : (fun w => (DirichletCharacter.gammaFactor chi w)⁻¹)⁻¹ =
+      DirichletCharacter.gammaFactor chi := by
+    funext w
+    simp
+  simpa only [he] using ha.inv (inv_ne_zero hn)
 
 /-- Exact source equality in the right open half-plane, with the gamma divisor
 excluded by its proved nonvanishing. This includes every original strip zero. -/
@@ -106,7 +110,7 @@ theorem LFunction_logDeriv_principal_part (chi : DirichletCharacter ℂ N)
   obtain ⟨g, hg, hg0, heq⟩ := zeroMultiplicity_factorization chi rho
   have heq' : DirichletCharacter.LFunction chi =ᶠ[𝓝[≠] rho.1]
       fun s => (s - rho.1) ^ (zeroMultiplicity chi rho : ℤ) * g s := by
-    simpa only [zpow_natCast] using heq.filter_mono nhdsWithin_le_nhds
+    simpa only [zpow_natCast, Filter.EventuallyEq] using heq.filter_mono nhdsWithin_le_nhds
   simpa only [Int.cast_natCast] using
     exists_analytic_remainder (zeroMultiplicity chi rho : ℤ) hg hg0 heq'
 
@@ -119,7 +123,7 @@ theorem completedLFunction_logDeriv_principal_part (chi : DirichletCharacter ℂ
   obtain ⟨g, hg, hg0, heq⟩ := completedLFunction_zero_factorization chi rho
   have heq' : DirichletCharacter.completedLFunction chi =ᶠ[𝓝[≠] rho.1]
       fun s => (s - rho.1) ^ (zeroMultiplicity chi rho : ℤ) * g s := by
-    simpa only [zpow_natCast] using heq.filter_mono nhdsWithin_le_nhds
+    simpa only [zpow_natCast, Filter.EventuallyEq] using heq.filter_mono nhdsWithin_le_nhds
   simpa only [Int.cast_natCast] using
     exists_analytic_remainder (zeroMultiplicity chi rho : ℤ) hg hg0 heq'
 
@@ -131,7 +135,7 @@ theorem LFunction_weighted_logDeriv_at_zero (chi : DirichletCharacter ℂ N)
   obtain ⟨g, hg, hg0, heq⟩ := zeroMultiplicity_factorization chi rho
   have heq' : DirichletCharacter.LFunction chi =ᶠ[𝓝[≠] rho.1]
       fun s => (s - rho.1) ^ (zeroMultiplicity chi rho : ℤ) * g s := by
-    simpa only [zpow_natCast] using heq.filter_mono nhdsWithin_le_nhds
+    simpa only [zpow_natCast, Filter.EventuallyEq] using heq.filter_mono nhdsWithin_le_nhds
   simpa only [Int.cast_natCast] using
     tendsto_mul_weighted_logDeriv (zeroMultiplicity chi rho : ℤ) hg hg0 heq' hW
 
@@ -144,7 +148,7 @@ theorem completedLFunction_weighted_logDeriv_at_zero (chi : DirichletCharacter �
   obtain ⟨g, hg, hg0, heq⟩ := completedLFunction_zero_factorization chi rho
   have heq' : DirichletCharacter.completedLFunction chi =ᶠ[𝓝[≠] rho.1]
       fun s => (s - rho.1) ^ (zeroMultiplicity chi rho : ℤ) * g s := by
-    simpa only [zpow_natCast] using heq.filter_mono nhdsWithin_le_nhds
+    simpa only [zpow_natCast, Filter.EventuallyEq] using heq.filter_mono nhdsWithin_le_nhds
   simpa only [Int.cast_natCast] using
     tendsto_mul_weighted_logDeriv (zeroMultiplicity chi rho : ℤ) hg hg0 heq' hW
 
@@ -165,6 +169,7 @@ theorem completedZeta_factorization_at_zero :
     rw [completedRiemannZeta_eq]
     dsimp [g]
     simp only [sub_zero, zpow_neg_one]
+    change s ≠ 0 at hs0
     field_simp [hs0, sub_ne_zero.mpr hs1.symm]
     <;> ring
 
@@ -184,6 +189,7 @@ theorem completedZeta_factorization_at_one :
     rw [completedRiemannZeta_eq]
     dsimp [g]
     rw [zpow_neg_one]
+    change s ≠ 1 at hs1
     field_simp [hs0, sub_ne_zero.mpr hs1, sub_ne_zero.mpr hs1.symm]
     <;> ring
 

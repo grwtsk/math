@@ -38,7 +38,8 @@ theorem index_eq_winding (g : C(I, ℂ)) (hc : g 0 = g 1) (hn : ∀ t, g t ≠ 0
     index g hc hn = winding q hq := by
   have he : lift g hn = q := by ext t; exact hv t
   unfold index
-  rw [he]
+  cases he
+  rfl
 
 theorem index_congr {g h : C(I, ℂ)} (gc : g 0 = g 1) (hc : h 0 = h 1)
     (gn : ∀ t, g t ≠ 0) (hn : ∀ t, h t ≠ 0) (he : ∀ t, g t = h t) :

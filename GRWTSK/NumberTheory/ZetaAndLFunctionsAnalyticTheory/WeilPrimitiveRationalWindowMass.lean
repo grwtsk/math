@@ -11,7 +11,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilPrimitiveRational
 set_option autoImplicit false
 
 open MeasureTheory Set
-open scoped Interval
+open scoped BigOperators Interval
 
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain
 
@@ -74,9 +74,9 @@ private theorem evalWindowTerms (T : ℚ) (cs : List ℚ) (x : ℝ) :
     Rat.cast_pow, pow_zero, pow_one, one_mul, add_zero]
   ring
 
-private def integrateTerms (T : ℚ) : List Term → ℚ
+private def integrateTerms (a b : ℚ) : List Term → ℚ
   | [] => 0
-  | (n, c) :: cs => c * (T ^ (n + 1) - (-T) ^ (n + 1)) / (n + 1) + integrateTerms T cs
+  | (n, c) :: cs => c * (b ^ (n + 1) - a ^ (n + 1)) / (n + 1) + integrateTerms a b cs
 
 private theorem continuous_evalTerms (cs : List Term) : Continuous (fun x => evalTerms x cs) := by
   induction cs with
@@ -85,8 +85,8 @@ private theorem continuous_evalTerms (cs : List Term) : Continuous (fun x => eva
     rcases p with ⟨n, c⟩
     exact (continuous_const.mul (continuous_id.pow n)).add ih
 
-private theorem integrateTerms_cast (T : ℚ) (cs : List Term) :
-    (integrateTerms T cs : ℝ) = ∫ x in (-(T : ℝ))..(T : ℝ), evalTerms x cs := by
+private theorem integrateTerms_cast (a b : ℚ) (cs : List Term) :
+    (integrateTerms a b cs : ℝ) = ∫ x in (a : ℝ)..(b : ℝ), evalTerms x cs := by
   induction cs with
   | nil => simp [integrateTerms, evalTerms]
   | cons p ps ih =>
@@ -94,7 +94,7 @@ private theorem integrateTerms_cast (T : ℚ) (cs : List Term) :
     have hc : Continuous (fun x : ℝ => (c : ℝ) * x ^ n) :=
       continuous_const.mul (continuous_id.pow n)
     simp only [integrateTerms, evalTerms, Rat.cast_add, Rat.cast_mul, Rat.cast_div,
-      Rat.cast_sub, Rat.cast_pow, Rat.cast_neg, Rat.cast_natCast]
+      Rat.cast_sub, Rat.cast_pow, Rat.cast_natCast]
     rw [intervalIntegral.integral_add (hc.intervalIntegrable _ _)
       ((continuous_evalTerms ps).intervalIntegrable _ _), intervalIntegral.integral_const_mul,
       integral_pow, ← ih]
@@ -103,7 +103,7 @@ private theorem integrateTerms_cast (T : ℚ) (cs : List Term) :
 /-- Compute the energy by integrating the exact squared polynomial on the window. -/
 def rationalWindowMass (T : ℚ) (cs : List ℚ) : ℚ :=
   let ps := windowTerms T cs
-  integrateTerms T (mulTerms ps ps)
+  integrateTerms (-T) T (mulTerms ps ps)
 
 /-- The computed rational mass equals the native whole-line energy of the real lift. -/
 theorem rationalWindowMass_cast (T : ℚ) (hT : 0 < T) (cs : List ℚ) :
@@ -118,7 +118,7 @@ theorem rationalWindowMass_cast (T : ℚ) (hT : 0 < T) (cs : List ℚ) :
       exact hx ⟨by nlinarith, by nlinarith⟩
     simp [rationalWindowTest, max_eq_right (sub_nonpos.mpr hsq)]
   unfold rationalWindowMass
-  rw [integrateTerms_cast, intervalIntegral.integral_of_le hle]
+  rw [integrateTerms_cast, Rat.cast_neg, intervalIntegral.integral_of_le hle]
   simp only [energy, liftReal, Complex.norm_real, Real.norm_eq_abs, sq_abs]
   rw [← setIntegral_eq_integral_of_forall_compl_eq_zero hzero, integral_Icc_eq_integral_Ioc]
   apply setIntegral_congr_fun measurableSet_Ioc
@@ -137,5 +137,68 @@ theorem rationalWindowMass_le_one_iff (T : ℚ) (hT : 0 < T) (cs : List ℚ) :
     rationalWindowMass T cs ≤ 1 ↔ energy (liftReal (rationalWindowTest T cs)) ≤ 1 := by
   rw [← rationalWindowMass_cast T hT cs]
   exact_mod_cast (Iff.rfl : rationalWindowMass T cs ≤ 1 ↔ rationalWindowMass T cs ≤ 1)
+
+private theorem evalTerms_map_range (x : ℝ) (f : ℕ → Term) (n : ℕ) :
+    evalTerms x ((List.range n).map f) =
+      ∑ k ∈ Finset.range n, ((f k).2 : ℝ) * x ^ (f k).1 := by
+  induction n with
+  | zero => simp [evalTerms]
+  | succ n ih =>
+    rw [List.range_succ, List.map_append, evalTerms_append, Finset.sum_range_succ, ih]
+    rcases h : f n with ⟨d, c⟩
+    simp [evalTerms, h]
+
+private def shiftPower (r : ℚ) (n : ℕ) : List Term :=
+  (List.range (n + 1)).map fun k => (k, (n.choose k : ℚ) * r ^ (n - k))
+
+private theorem evalShiftPower (r : ℚ) (x : ℝ) (n : ℕ) :
+    evalTerms x (shiftPower r n) = (x + (r : ℝ)) ^ n := by
+  rw [shiftPower, evalTerms_map_range, add_pow]
+  apply Finset.sum_congr rfl
+  intro k _
+  simp only [Rat.cast_mul, Rat.cast_pow, Rat.cast_natCast]
+  ring
+
+private def shiftTerms (r : ℚ) : List Term → List Term
+  | [] => []
+  | (n, c) :: cs => mulTerms [(0, c)] (shiftPower r n) ++ shiftTerms r cs
+
+private theorem evalShiftTerms (r : ℚ) (x : ℝ) (ps : List Term) :
+    evalTerms x (shiftTerms r ps) = evalTerms (x + (r : ℝ)) ps := by
+  induction ps with
+  | nil => rfl
+  | cons p ps ih =>
+    rcases p with ⟨n, c⟩
+    simp [shiftTerms, evalTerms_append, evalTerms_mul, evalShiftPower, evalTerms, ih]
+
+/-- Evaluate the polynomial overlap exactly at a rational shift. Its
+correlation interpretation uses a nonnegative shift and nonnegative radius. -/
+def rationalWindowOverlap (T r : ℚ) (cs : List ℚ) : ℚ :=
+  if r ≤ 2 * T then
+    let ps := windowTerms T cs
+    integrateTerms (-T) (T - r) (mulTerms ps (shiftTerms r ps))
+  else 0
+
+/-- The rational evaluator uses the closed overlap set, including contact
+and disjoint support. The integrands are the original interior polynomials. -/
+theorem rationalWindowOverlap_cast (T r : ℚ) (cs : List ℚ) :
+    (rationalWindowOverlap T r cs : ℝ) =
+      ∫ x in Icc (-(T : ℝ)) ((T : ℝ) - (r : ℝ)),
+        (x * (rationalWindowPolynomial cs).aeval (x ^ 2) * ((T : ℝ) ^ 2 - x ^ 2) ^ 3) *
+        ((x + (r : ℝ)) * (rationalWindowPolynomial cs).aeval ((x + (r : ℝ)) ^ 2) *
+          ((T : ℝ) ^ 2 - (x + (r : ℝ)) ^ 2) ^ 3) := by
+  unfold rationalWindowOverlap
+  split_ifs with h
+  · have hr : (r : ℝ) ≤ 2 * (T : ℝ) := by exact_mod_cast h
+    have hle : -(T : ℝ) ≤ (T : ℝ) - (r : ℝ) := by linarith
+    rw [integrateTerms_cast, Rat.cast_neg, Rat.cast_sub, intervalIntegral.integral_of_le hle,
+      integral_Icc_eq_integral_Ioc]
+    apply setIntegral_congr_fun measurableSet_Ioc
+    intro x _
+    dsimp only
+    rw [evalTerms_mul, evalShiftTerms, evalWindowTerms, evalWindowTerms]
+  · have hr : 2 * (T : ℝ) < (r : ℝ) := by exact_mod_cast (lt_of_not_ge h)
+    rw [Icc_eq_empty (show ¬ -(T : ℝ) ≤ (T : ℝ) - (r : ℝ) by linarith)]
+    simp
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain

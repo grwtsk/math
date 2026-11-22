@@ -127,4 +127,191 @@ theorem no_twoHop_95_cycle (s : Source Prime Knot) (weight : Knot → ℝ)
     exactSupport 0
   exact (by decide : nextSlot95 (nextSlot95 0) ≠ 0) returns
 
+<<<<<<< HEAD
+=======
+/-- Independent diagonal rescalings preserve the balance of the products
+along a permutation and its reversed arrows. -/
+theorem twoHop_cycle_product_balance [Fintype Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (encode : Slot → Prime)
+    (next : Equiv.Perm Slot) (row col : Slot → ℝ) :
+    (∏ i, |row i * twoHop s weight (encode i) (encode (next i)) * col (next i)|) =
+      ∏ i, |row (next i) * twoHop s weight (encode (next i)) (encode i) * col i| := by
+  simp only [abs_mul, Finset.prod_mul_distrib, Equiv.prod_comp next (fun i => |row i|),
+    Equiv.prod_comp next (fun i => |col i|)]
+  congr 2
+  apply Finset.prod_congr rfl
+  intro i _
+  rw [twoHop_symm]
+
+/-- Even with unconstrained real diagonal scalings, errors strictly below
+one half cannot turn the two-hop return into unit forward arrows and
+zero reverse arrows around the 95-cycle. -/
+theorem no_twoHop_95_cycle_half_error (s : Source Prime Knot) (weight : Knot → ℝ)
+    (encode : Fin 95 → Prime) (row col : Fin 95 → ℝ) :
+    ¬ ((∀ i, |row i * twoHop s weight (encode i) (encode (nextSlot95 i)) *
+        col (nextSlot95 i) - 1| < 1 / 2) ∧
+      (∀ i, |row (nextSlot95 i) * twoHop s weight (encode (nextSlot95 i)) (encode i) *
+        col i| < 1 / 2)) := by
+  rintro ⟨forward, reverse⟩
+  let next : Equiv.Perm (Fin 95) := Equiv.addRight 1
+  have balance := twoHop_cycle_product_balance s weight encode next row col
+  change (∏ i, |row i * twoHop s weight (encode i) (encode (nextSlot95 i)) *
+    col (nextSlot95 i)|) = _ at balance
+  have big : (∏ _i : Fin 95, (1 / 2 : ℝ)) <
+      ∏ i, |row i * twoHop s weight (encode i) (encode (nextSlot95 i)) *
+        col (nextSlot95 i)| := by
+    apply Finset.prod_lt_prod_of_nonempty₀ (by intros; norm_num) _ Finset.univ_nonempty
+    intro i _
+    exact (by linarith [(abs_lt.mp (forward i)).1] : (1 / 2 : ℝ) < _).trans_le (le_abs_self _)
+  have small : (∏ i, |row (nextSlot95 i) *
+      twoHop s weight (encode (nextSlot95 i)) (encode i) * col i|) ≤
+        ∏ _i : Fin 95, (1 / 2 : ℝ) :=
+    Finset.prod_le_prod₀ (fun _ _ => abs_nonneg _) (fun i _ => (reverse i).le)
+  exact (not_lt_of_ge small) (balance ▸ big)
+
+
+/-- At the half-error threshold every forward entry equals one half and
+every reverse entry has magnitude one half. This holds for any finite
+permutation of the slots, with signed weights and independent scalings. -/
+theorem twoHop_cycle_half_error_rigid [Fintype Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (encode : Slot → Prime)
+    (next : Equiv.Perm Slot) (row col : Slot → ℝ)
+    (forward : ∀ i, |row i * twoHop s weight (encode i) (encode (next i)) *
+        col (next i) - 1| ≤ 1 / 2)
+    (reverse : ∀ i, |row (next i) * twoHop s weight (encode (next i)) (encode i) *
+        col i| ≤ 1 / 2) :
+    ∀ i, row i * twoHop s weight (encode i) (encode (next i)) * col (next i) = 1 / 2 ∧
+      |row (next i) * twoHop s weight (encode (next i)) (encode i) * col i| = 1 / 2 := by
+  let f (i : Slot) := row i * twoHop s weight (encode i) (encode (next i)) * col (next i)
+  let b (i : Slot) := |row (next i) * twoHop s weight (encode (next i)) (encode i) * col i|
+  have lower (i : Slot) : (1 / 2 : ℝ) ≤ f i := by
+    have h := (abs_le.mp (forward i)).1
+    change -(1 / 2 : ℝ) ≤ f i - 1 at h
+    linarith
+  have upper (i : Slot) : b i ≤ (1 / 2 : ℝ) := reverse i
+  have positive (i : Slot) : 0 < f i := (by norm_num : (0 : ℝ) < 1 / 2).trans_le (lower i)
+  have balance : (∏ i, f i) = ∏ i, b i := by
+    have eq := twoHop_cycle_product_balance s weight encode next row col
+    change (∏ i, |f i|) = ∏ i, b i at eq
+    simpa only [abs_of_pos (positive _)] using eq
+  have bpos (i : Slot) : 0 < b i := by
+    have product : (0 : ℝ) < ∏ j, b j :=
+      balance ▸ Finset.prod_pos (fun j _ => positive j)
+    exact lt_of_le_of_ne (abs_nonneg _) fun h =>
+      Finset.prod_ne_zero_iff.mp product.ne' i (Finset.mem_univ _) h.symm
+  have pointwise (i : Slot) : b i ≤ f i := (upper i).trans (lower i)
+  intro i
+  have eq : b i = f i := by
+    by_contra unequal
+    have strict : (∏ j, b j) < ∏ j, f j :=
+      Finset.prod_lt_prod₀ (fun j _ => bpos j) (fun j _ => pointwise j)
+        ⟨i, Finset.mem_univ _, lt_of_le_of_ne (pointwise i) unequal⟩
+    exact (lt_irrefl _) (balance ▸ strict)
+  change f i = 1 / 2 ∧ b i = 1 / 2
+  have equalHalf : f i = 1 / 2 := le_antisymm (by rw [← eq]; exact upper i) (lower i)
+  exact ⟨equalHalf, eq.trans equalHalf⟩
+
+/-- A common incident knot realizes the boundary with a single active
+weight. The half-error threshold is attained on every entry of the
+95-cycle target, including its zero diagonal. -/
+theorem twoHop_95_cycle_half_error_attained
+    (s : Source Prime Knot) (encode : Fin 95 → Prime)
+    (knot : Knot) (linked : ∀ i, Linked s (encode i) knot) :
+    ∃ weight : Knot → ℝ, (∀ k, 0 ≤ weight k) ∧
+      ∀ i j, |(1 / 2 : ℝ) * twoHop s weight (encode i) (encode j) -
+        (if nextSlot95 i = j then 1 else 0)| = 1 / 2 := by
+  classical
+  let weight (k : Knot) : ℝ := if k = knot then 1 else 0
+  refine ⟨weight, ?_, ?_⟩
+  · intro k
+    simp only [weight]
+    split <;> norm_num
+  · intro i j
+    have entry : twoHop s weight (encode i) (encode j) = 1 := by
+      unfold twoHop
+      rw [Finset.sum_eq_single knot]
+      · simp [weight, edgeWeight, linked i, linked j]
+      · intro k _ hk
+        simp [weight, hk]
+      · simp
+    rw [entry]
+    split <;> norm_num
+
+
+/-- Nonnegative weights make the unchanged two-hop entries satisfy the
+diagonal Cauchy–Schwarz bound. -/
+theorem twoHop_sq_le_diagonal (s : Source Prime Knot) (weight : Knot → ℝ)
+    (nonneg : ∀ k, 0 ≤ weight k) (p q : Prime) :
+    twoHop s weight p q ^ 2 ≤ twoHop s weight p p * twoHop s weight q q := by
+  let a (k : Knot) := edgeWeight s (.inl p) (.inr k)
+  let b (k : Knot) := edgeWeight s (.inl q) (.inr k)
+  have gram (u v : Prime) :
+      twoHop s weight u v =
+        ∑ k, weight k * (edgeWeight s (.inl u) (.inr k) * edgeWeight s (.inl v) (.inr k)) := by
+    unfold twoHop
+    exact Finset.sum_congr rfl fun k _ => by rw [edgeWeight_symmetric s (.inr k) (.inl v)]
+  rw [gram p q, gram p p, gram q q]
+  change (∑ k, weight k * (a k * b k)) ^ 2 ≤
+    (∑ k, weight k * (a k * a k)) * ∑ k, weight k * (b k * b k)
+  apply Finset.sum_sq_le_sum_mul_sum_of_sq_le_mul
+  · intro k _
+    exact mul_nonneg (nonneg k) (mul_self_nonneg _)
+  · intro k _
+    exact mul_nonneg (nonneg k) (mul_self_nonneg _)
+  · intro k _
+    exact le_of_eq (by ring)
+
+/-- Diagonal leakage alone bounds the product of forward entries. Row
+and column scaling preserves this inequality, even with signed scalings. -/
+theorem twoHop_cycle_product_le_diagonal [Fintype Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (nonneg : ∀ k, 0 ≤ weight k)
+    (encode : Slot → Prime) (next : Equiv.Perm Slot) (row col : Slot → ℝ) :
+    (∏ i, |row i * twoHop s weight (encode i) (encode (next i)) * col (next i)|) ≤
+      ∏ i, |row i * twoHop s weight (encode i) (encode i) * col i| := by
+  let f (i : Slot) := |twoHop s weight (encode i) (encode (next i))|
+  let diag (i : Slot) := |twoHop s weight (encode i) (encode i)|
+  have point (i : Slot) : f i ^ 2 ≤ diag i * diag (next i) := by
+    dsimp only [f, diag]
+    rw [sq_abs, ← abs_mul]
+    exact (twoHop_sq_le_diagonal s weight nonneg _ _).trans (le_abs_self _)
+  have squares : (∏ i, f i) ^ 2 ≤ (∏ i, diag i) ^ 2 := by
+    have h := Finset.prod_le_prod₀ (s := Finset.univ)
+      (fun i _ => sq_nonneg (f i)) (fun i _ => point i)
+    rwa [Finset.prod_pow, Finset.prod_mul_distrib, Equiv.prod_comp next diag, ← pow_two] at h
+  have product : (∏ i, f i) ≤ ∏ i, diag i :=
+    (sq_le_sq₀ (Finset.prod_nonneg fun _ _ => abs_nonneg _)
+      (Finset.prod_nonneg fun _ _ => abs_nonneg _)).mp squares
+  simp only [abs_mul, Finset.prod_mul_distrib, Equiv.prod_comp next (fun i => |col i|)]
+  exact mul_le_mul_of_nonneg_right
+    (mul_le_mul_of_nonneg_left product (Finset.prod_nonneg fun _ _ => abs_nonneg _))
+    (Finset.prod_nonneg fun _ _ => abs_nonneg _)
+
+/-- For a nonempty permutation, a forward error budget forces diagonal
+leakage of at least one minus that budget. Reverse entries may be unmeasured. -/
+theorem twoHop_cycle_diagonal_leak [Fintype Slot] [Nonempty Slot]
+    (s : Source Prime Knot) (weight : Knot → ℝ) (nonneg : ∀ k, 0 ≤ weight k)
+    (encode : Slot → Prime) (next : Equiv.Perm Slot) (row col : Slot → ℝ)
+    (error : ℝ) (cap : error < 1)
+    (forward : ∀ i, |row i * twoHop s weight (encode i) (encode (next i)) *
+        col (next i) - 1| ≤ error) :
+    ∃ i, 1 - error ≤ |row i * twoHop s weight (encode i) (encode i) * col i| := by
+  by_contra absent
+  push Not at absent
+  have budget := twoHop_cycle_product_le_diagonal s weight nonneg encode next row col
+  have lower : (∏ _i : Slot, (1 - error)) ≤
+      ∏ i, |row i * twoHop s weight (encode i) (encode (next i)) * col (next i)| :=
+    Finset.prod_le_prod₀ (fun _ _ => sub_nonneg.mpr cap.le) (fun i _ =>
+      (by linarith [(abs_le.mp (forward i)).1] : 1 - error ≤ _).trans (le_abs_self _))
+  have diagPos : 0 < ∏ i, |row i * twoHop s weight (encode i) (encode i) * col i| :=
+    (Finset.prod_pos fun _ _ => sub_pos.mpr cap).trans_le (lower.trans budget)
+  have eachPos (i : Slot) : 0 < |row i * twoHop s weight (encode i) (encode i) * col i| :=
+    lt_of_le_of_ne (abs_nonneg _) fun h =>
+      Finset.prod_ne_zero_iff.mp diagPos.ne' i (Finset.mem_univ _) h.symm
+  have upper : (∏ i, |row i * twoHop s weight (encode i) (encode i) * col i|) <
+      ∏ _i : Slot, (1 - error) :=
+    Finset.prod_lt_prod_of_nonempty₀ (fun i _ => eachPos i) (fun i _ => absent i)
+      Finset.univ_nonempty
+  exact (not_lt_of_ge (lower.trans budget)) upper
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander

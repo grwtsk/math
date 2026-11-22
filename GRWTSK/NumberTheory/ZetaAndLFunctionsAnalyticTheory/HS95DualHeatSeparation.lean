@@ -89,4 +89,62 @@ theorem dual_heat_decoder_iff {q : ℕ} (χ : DirichletCharacter ℂ q)
       gap.not_ge (overlap.mp ⟨y, left, right⟩ i)
     exact decide_eq_false bad
 
+<<<<<<< HEAD
+=======
+/-- Align the imaginary readout with the known original phase at a
+single coordinate. The two noise disks then lie on opposite sides of
+zero whenever the surviving phase strictly exceeds the noise. -/
+theorem dual_heat_signed_margin {q : ℕ} (χ : DirichletCharacter ℂ q)
+    (w : ℕ) (rate : Position → ℝ) (time : ℝ) (i : Position) (ε : ℝ) (y : ℂ) :
+    let original := diagonalHeat rate time (characterObservation χ w) i
+    let dual := diagonalHeat rate time (characterObservation χ⁻¹ w) i
+    let score := if 0 ≤ original.im then y.im else -y.im
+    let margin := Real.exp (-time * rate i) * |(characterObservation χ w i).im| - ε
+    (‖y - original‖ ≤ ε → margin ≤ score) ∧
+      (‖y - dual‖ ≤ ε → score ≤ -margin) := by
+  intro original dual score margin
+  have dualIm : dual.im = -original.im := by
+    change (diagonalHeat rate time (characterObservation χ⁻¹ w) i).im = _
+    rw [diagonalHeat_dual_character, Complex.conj_im]
+  have height : |original.im| = Real.exp (-time * rate i) *
+      |(characterObservation χ w i).im| := by
+    simp only [original, diagonalHeat, Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im,
+      zero_mul, add_zero, abs_mul, abs_of_pos (Real.exp_pos _)]
+  change (_ → _ - ε ≤ _) ∧ (_ → _ ≤ -(_ - ε))
+  rw [← height]
+  constructor
+  · intro close
+    have near := (Complex.abs_im_le_norm (y - original)).trans close
+    rw [Complex.sub_im] at near
+    obtain ⟨lo, hi⟩ := abs_le.mp near
+    by_cases sign : 0 ≤ original.im
+    · simp only [score, ite_eq_left sign, abs_of_nonneg sign]
+      linarith
+    · simp only [score, ite_eq_right sign, abs_of_neg (lt_of_not_ge sign)]
+      linarith
+  · intro close
+    have near := (Complex.abs_im_le_norm (y - dual)).trans close
+    rw [Complex.sub_im, dualIm] at near
+    obtain ⟨lo, hi⟩ := abs_le.mp near
+    by_cases sign : 0 ≤ original.im
+    · simp only [score, ite_eq_left sign, abs_of_nonneg sign]
+      linarith
+    · simp only [score, ite_eq_right sign, abs_of_neg (lt_of_not_ge sign)]
+      linarith
+
+/-- A separating coordinate alone supplies a guaranteed decision by a
+single real sign test. -/
+theorem dual_heat_coordinate_sign {q : ℕ} (χ : DirichletCharacter ℂ q)
+    (w : ℕ) (rate : Position → ℝ) (time : ℝ) (i : Position) {ε : ℝ}
+    (gap : ε < Real.exp (-time * rate i) * |(characterObservation χ w i).im|) (y : ℂ) :
+    let original := diagonalHeat rate time (characterObservation χ w) i
+    let dual := diagonalHeat rate time (characterObservation χ⁻¹ w) i
+    let score := if 0 ≤ original.im then y.im else -y.im
+    (‖y - original‖ ≤ ε → 0 < score) ∧ (‖y - dual‖ ≤ ε → score < 0) := by
+  intro original dual score
+  have margin := dual_heat_signed_margin χ w rate time i ε y
+  exact ⟨fun close => (sub_pos.mpr gap).trans_le (margin.1 close),
+    fun close => (margin.2 close).trans_lt (neg_neg_of_pos (sub_pos.mpr gap))⟩
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.HS95CharacterCarrier

@@ -203,4 +203,184 @@ theorem exists_readout_failure_iff_not_RH (window : ℕ)
   (halts_iff_exists_readout_failure window calibration observed accurate).symm.trans
     (halts_iff_not_RH window)
 
+<<<<<<< HEAD
+=======
+
+private theorem run_none_add {window : ℕ} {c : Configuration window} {n : ℕ}
+    (noneAt : run n c = none) (extra : ℕ) : run (n + extra) c = none := by
+  induction n generalizing c with
+  | zero => simp [run] at noneAt
+  | succ n ih =>
+    rw [Nat.succ_add, run]
+    cases first : step c with
+    | none => rfl
+    | some next =>
+      rw [Option.bind_some]
+      exact ih (by simpa [run, first] using noneAt)
+
+private theorem readout_failure_readdress_iff {origin window n : ℕ}
+    {calibration : TapeChannels n BitCalibration} {observed : TapeReadout n}
+    {c : Configuration origin} (accurate : ReadoutAgrees calibration observed (readdress window c)) :
+    runFromReadout window n 0 calibration observed = some none ↔ run n c = none := by
+  rw [runFromReadout_eq_some_none_iff accurate, run_readdress, Option.map_eq_none_iff]
+
+/-- Accurate trials can change prime window arbitrarily. Cofinal instruction
+budgets detect exactly native halting, including when there are pauses or repeats. -/
+theorem cofinal_readout_failure_iff_halts {origin : ℕ} (c : Configuration origin)
+    (window budget : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ budget t)
+    (calibration : (t : ℕ) → TapeChannels (budget t) BitCalibration)
+    (observed : (t : ℕ) → TapeReadout (budget t))
+    (accurate : ∀ t, ReadoutAgrees (calibration t) (observed t) (readdress (window t) c)) :
+    (∃ t, runFromReadout (window t) (budget t) 0 (calibration t) (observed t) = some none) ↔
+      (StateTransition.eval step c).Dom := by
+  rw [eval_dom_iff_exists_run_eq_none]
+  constructor
+  · rintro ⟨t, failure⟩
+    exact ⟨budget t, (readout_failure_readdress_iff (accurate t)).mp failure⟩
+  · rintro ⟨n, absent⟩
+    obtain ⟨t, ht⟩ := cofinal n
+    obtain ⟨extra, eq⟩ := Nat.exists_eq_add_of_le ht
+    exact ⟨t, (readout_failure_readdress_iff (accurate t)).mpr
+      (eq.symm ▸ run_none_add absent extra)⟩
+
+/-- Cofinality is necessary for detection on every native start, even
+with ideal samples. Each bounded schedule misses a delayed native halt. -/
+theorem cofinal_iff_uniform_readout_halting {origin : ℕ} (window budget : ℕ → ℕ) :
+    (∀ n, ∃ t, n ≤ budget t) ↔
+    ∀ (c : Configuration origin) (calibration : (t : ℕ) → TapeChannels (budget t) BitCalibration)
+      (observed : (t : ℕ) → TapeReadout (budget t)),
+      (∀ t, ReadoutAgrees (calibration t) (observed t) (readdress (window t) c)) →
+      ((∃ t, runFromReadout (window t) (budget t) 0 (calibration t) (observed t) = some none) ↔
+        (StateTransition.eval step c).Dom) := by
+  constructor
+  · intro cofinal c calibration observed accurate
+    exact cofinal_readout_failure_iff_halts c window budget cofinal calibration observed accurate
+  · intro uniform n
+    by_contra missing
+    push Not at missing
+    let c := delayedStop origin n
+    let unit : BitCalibration := ⟨0, 1⟩
+    let calibration (t : ℕ) : TapeChannels (budget t) BitCalibration :=
+      ⟨unit, fun _ => unit, fun _ => unit⟩
+    let observed (t : ℕ) := idealTapeReadout (calibration t) (readdress (window t) c)
+    have halted : (StateTransition.eval step c).Dom := by
+      apply (eval_dom_iff_exists_run_eq_none c).mpr
+      refine ⟨n + 9, ?_⟩
+      cases h : run (n + 9) c with
+      | none => rfl
+      | some finish =>
+        have impossible := (delayedStop_lengths origin n (n + 9)).mp ⟨finish, h⟩
+        omega
+    have accurate (t : ℕ) : ReadoutAgrees (calibration t) (observed t) (readdress (window t) c) :=
+      idealTapeReadout_agrees _ _ (by norm_num [calibration, unit])
+        (fun _ => by norm_num [calibration, unit]) (fun _ => by norm_num [calibration, unit])
+    obtain ⟨t, failure⟩ := (uniform c calibration observed accurate).mpr halted
+    have noneAt := (readout_failure_readdress_iff (accurate t)).mp failure
+    obtain ⟨finish, reached⟩ := (delayedStop_lengths origin n (budget t)).mpr (by have := missing t; omega)
+    rw [noneAt] at reached
+    cases reached
+
+/-- For the exact blank start, a cofinal family of trials may use any
+sequence of prime windows, with the appropriate metadata on each trial. -/
+theorem cofinal_blank_readout_failure_iff_not_RH (window budget : ℕ → ℕ)
+    (cofinal : ∀ n, ∃ t, n ≤ budget t)
+    (calibration : (t : ℕ) → TapeChannels (budget t) BitCalibration)
+    (observed : (t : ℕ) → TapeReadout (budget t))
+    (accurate : ∀ t, ReadoutAgrees (calibration t) (observed t) (blank (window t))) :
+    (∃ t, runFromReadout (window t) (budget t) 0 (calibration t) (observed t) = some none) ↔
+      ¬ RiemannHypothesis := by
+  have reblank (v : ℕ) : readdress v (blank 0) = blank v := by
+    simp [readdress, blank]
+  exact (cofinal_readout_failure_iff_halts (blank 0) window budget cofinal calibration observed
+    (fun t => by rw [reblank]; exact accurate t)).trans (halts_iff_not_RH 0)
+
+
+/-- Readout accuracy depends only on the exact metadata and the sampled prefix. -/
+theorem readoutAgrees_iff_of_tapeAgrees {window depth : ℕ}
+    {a b : Configuration window} (same : TapeAgrees depth a b)
+    (calibration : TapeChannels depth BitCalibration) (sample : TapeReadout depth) :
+    ReadoutAgrees calibration sample a ↔ ReadoutAgrees calibration sample b := by
+  obtain ⟨address, position, scanned, left, right⟩ := same
+  unfold ReadoutAgrees
+  simp only [address, position, scanned, left _ (Fin.isLt _), right _ (Fin.isLt _)]
+
+/-- Replacing all prime labels by their target-window counterparts preserves
+the agreement needed at a calibrated boundary. -/
+theorem TapeAgrees.readdress {window depth : ℕ}
+    {a b : Configuration window} (same : TapeAgrees depth a b) (target : ℕ) :
+    TapeAgrees depth (readdress target a) (readdress target b) := by
+  obtain ⟨address, position, scanned, left, right⟩ := same
+  exact ⟨congrArg (fun code => encodeAddress target (decodeAddress code)) address,
+    position, scanned, left, right⟩
+
+/-- At a successful block boundary, checking the next readout against the
+readdressed finite prediction is equivalent to checking it against the
+actual next native configuration. The next calibration can be different. -/
+theorem readout_handoff_iff {window depth n : ℕ}
+    {calibration : TapeChannels (n + depth) BitCalibration} {sample : TapeReadout (n + depth)}
+    {c predicted : Configuration window} (accurate : ReadoutAgrees calibration sample c)
+    (computed : runFromReadout window n depth calibration sample = some (some predicted))
+    (target : ℕ) :
+    ∃ next, run n c = some next ∧
+      ∀ (nextCalibration : TapeChannels depth BitCalibration) (nextSample : TapeReadout depth),
+        ReadoutAgrees nextCalibration nextSample (readdress target predicted) ↔
+          ReadoutAgrees nextCalibration nextSample (readdress target next) := by
+  obtain ⟨recovered, received, agrees⟩ := runFromReadout_agrees accurate
+  have eq := Option.some.inj (received.symm.trans computed)
+  subst recovered
+  cases hr : run n c with
+  | none =>
+    rw [hr] at agrees
+    cases agrees
+  | some next =>
+    rw [hr] at agrees
+    cases agrees with
+    | some same =>
+      exact ⟨next, rfl, fun cal reading =>
+        (readoutAgrees_iff_of_tapeAgrees (same.readdress target) cal reading).symm⟩
+
+/-- Executable exact metadata and strict rational-error check. -/
+def checkReadout {window depth : ℕ} (c : Configuration window)
+    (calibration : TapeChannels depth BitCalibration) (sample : TapeReadout depth) : Bool :=
+  @decide (ReadoutAgrees calibration sample c) (by
+    unfold ReadoutAgrees BitCalibration.Accurate
+    infer_instance)
+
+theorem checkReadout_eq_true_iff {window depth : ℕ} (c : Configuration window)
+    (calibration : TapeChannels depth BitCalibration) (sample : TapeReadout depth) :
+    checkReadout c calibration sample = true ↔ ReadoutAgrees calibration sample c := by
+  unfold checkReadout
+  exact @decide_eq_true_iff (ReadoutAgrees calibration sample c) (by
+    unfold ReadoutAgrees BitCalibration.Accurate
+    infer_instance)
+
+/-- A successful native block supplies a finite executable verifier for any
+destination-window readout at the retained depth. -/
+theorem checkReadout_handoff_iff {window depth n : ℕ}
+    {calibration : TapeChannels (n + depth) BitCalibration} {sample : TapeReadout (n + depth)}
+    {c predicted : Configuration window} (accurate : ReadoutAgrees calibration sample c)
+    (computed : runFromReadout window n depth calibration sample = some (some predicted))
+    (target : ℕ) :
+    ∃ next, run n c = some next ∧
+      ∀ (nextCalibration : TapeChannels depth BitCalibration) (nextSample : TapeReadout depth),
+        checkReadout (readdress target predicted) nextCalibration nextSample = true ↔
+          ReadoutAgrees nextCalibration nextSample (readdress target next) := by
+  obtain ⟨next, exactRun, correct⟩ := readout_handoff_iff accurate computed target
+  exact ⟨next, exactRun, fun cal reading => (checkReadout_eq_true_iff _ cal reading).trans (correct cal reading)⟩
+
+/-- A valid prime word does not certify the absolute position of its sample. -/
+theorem shifted_readout_passes_address_but_disagrees {window depth : ℕ}
+    (c : Configuration window) (calibration : TapeChannels depth BitCalibration) :
+    ∃ reading : TapeReadout depth,
+      decodeTapeReadout window calibration reading ≠ none ∧
+      ¬ ReadoutAgrees calibration reading c := by
+  let reading := { idealTapeReadout calibration c with position := c.position + 1 }
+  refine ⟨reading, ?_, ?_⟩
+  · intro absent
+    exact (decodeTapeReadout_eq_none_iff window calibration reading).mp absent c.address.property
+  · intro agrees
+    have position : c.position + 1 = c.position := agrees.2.1
+    omega
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95PrimeMachine

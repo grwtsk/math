@@ -6,6 +6,7 @@ Authors: grwtsk contributors
 import Mathlib.Analysis.Calculus.ContDiff.Basic
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 import Mathlib.MeasureTheory.Function.LocallyIntegrable
+import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
 import Mathlib.MeasureTheory.Integral.Bochner.Basic
 import Mathlib.Tactic.FunProp
 import Mathlib.Tactic.Linarith
@@ -187,8 +188,9 @@ private theorem opposite_values_gap (a b : ℂ) (ea eb : ℝ)
   have heq : (1 - a) + (a - b) + (b + 1) = (2 : ℂ) := by ring
   rw [heq] at h2
   have ha' : ‖1 - a‖ ≤ ea := (norm_sub_rev (1 : ℂ) a).trans_le ha
-  norm_num at h2
-  linarith
+  have hnorm : ‖(2 : ℂ)‖ = (2 : ℝ) := by norm_num
+  rw [hnorm] at h2
+  linarith only [ha', hb, h1, h2]
 
 /-- Nondivided collision estimate. It remains meaningful at eta=0 and A=0. -/
 theorem interpolation_cost (f : ℝ → ℂ) (A : ℝ)

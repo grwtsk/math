@@ -102,6 +102,7 @@ private theorem correlation_mul_exp_eq_convolution (f : ℝ → ℂ) (z : ℂ) (
           congr 1
           rw [Complex.ofReal_sub]
           ring
+        dsimp
         rw [show -t + r = r - t by ring]
         calc
           _ = (conj (f (-t)) * f (r - t)) *
@@ -120,6 +121,7 @@ private theorem reflected_fourier_integral (f : ℝ → ℂ) (z : ℂ) :
     _ = ∫ t : ℝ, conj (f t * Complex.exp (Complex.I * conj z * (t : ℂ))) := by
       apply integral_congr_ae
       exact Filter.Eventually.of_forall (fun t => by
+        dsimp
         rw [map_mul, ← Complex.exp_conj]
         congr 1
         congr 1
@@ -206,7 +208,8 @@ theorem correlation_two_oriented_moments (f : ℝ → ℂ) (A : ℝ)
   have hpval := laplace_correlation_eq_reflected_product f A hf hs (-y)
   simp only [neg_neg] at hpval
   constructor
-  · simpa only [Complex.ofReal_add, mul_add] using hm.add hp
+  · simp_rw [Complex.ofReal_add, mul_add]
+    exact hm.add hp
   · simp_rw [Complex.ofReal_add, mul_add]
     rw [integral_add hm hp, hmval, hpval]
 

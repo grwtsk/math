@@ -59,7 +59,7 @@ private theorem logDeriv_exp_affine (b c s : ℂ) :
     logDeriv (fun z : ℂ => Complex.exp (b * z + c)) s = b := by
   have hd : HasDerivAt (fun z : ℂ => Complex.exp (b * z + c))
       (Complex.exp (b * s + c) * b) s := by
-    simpa only [mul_one] using (((hasDerivAt_id s).const_mul b).add_const c).cexp
+    simpa only [id_eq, mul_one] using (((hasDerivAt_id s).const_mul b).add_const c).cexp
   rw [logDeriv_apply, hd.deriv]
   field_simp [Complex.exp_ne_zero]
   <;> ring
@@ -134,8 +134,8 @@ theorem completedLFunction_logDeriv_dual_right
       -(Real.log (N : ℝ) : ℂ) -
         logDeriv (DirichletCharacter.completedLFunction chi⁻¹) s := by
   have hN : (N : ℂ) ≠ 0 := by exact_mod_cast (NeZero.ne N)
-  have hs0 : s ≠ 0 := by intro h; simp [h] at hs
-  have hs1 : s ≠ 1 := by intro h; simp [h] at hs
+  have hs0 : s ≠ 0 := by intro h; norm_num [h] at hs
+  have hs1 : s ≠ 1 := by intro h; norm_num [h] at hs
   have ht0 : 1 - s ≠ 0 := sub_ne_zero.mpr hs1.symm
   have ht1 : 1 - s ≠ 1 := by
     intro h
@@ -152,8 +152,9 @@ theorem completedLFunction_logDeriv_dual_right
   have hcomp : logDeriv (fun z : ℂ =>
       DirichletCharacter.completedLFunction chi (1 - z)) s =
       -logDeriv (DirichletCharacter.completedLFunction chi) (1 - s) := by
-    rw [logDeriv_fun_comp hdleft (differentiableAt_const.sub differentiableAt_id)]
-    simp
+    have hdz : HasDerivAt (fun z : ℂ => 1 - z) (-1) s := (hasDerivAt_id s).const_sub 1
+    rw [logDeriv_fun_comp (g := fun z : ℂ => 1 - z) hdleft hdz.differentiableAt,
+      hdz.deriv, mul_neg, mul_one]
   have heq : (fun z : ℂ => DirichletCharacter.completedLFunction chi (1 - z)) =
       fun z : ℂ => ((N : ℂ) ^ (z - 1 / 2) *
         DirichletCharacter.completedLFunction chi⁻¹ z) * DirichletCharacter.rootNumber chi := by
@@ -162,7 +163,9 @@ theorem completedLFunction_logDeriv_dual_right
     ring
   have h := congrArg (fun F : ℂ → ℂ => logDeriv F s) heq
   rw [hcomp, logDeriv_mul_const s _ (rootNumber_ne_zero_from_completed_source chi hprim),
-    logDeriv_fun_mul s (Complex.cpow_ne_zero_iff.mpr (.inl hN))
+    logDeriv_fun_mul (f := fun z : ℂ => (N : ℂ) ^ (z - 1 / 2))
+      (g := DirichletCharacter.completedLFunction chi⁻¹) s
+      (Complex.cpow_ne_zero_iff.mpr (.inl hN))
       (completedLFunction_ne_zero_right_of_euler chi⁻¹ hs) hdpow hdright, hpow] at h
   linear_combination -h
 
@@ -193,11 +196,14 @@ theorem GammaR_logDeriv_of_re_pos {s : ℂ} (hs : 0 < s.re) :
     ring
   have hg : logDeriv (fun z : ℂ => Complex.Gamma (z / 2)) s =
       Complex.digamma (s / 2) / 2 := by
-    rw [logDeriv_fun_comp hdG (differentiableAt_id.div_const (2 : ℂ)),
-      ← Complex.digamma_def]
-    simp
+    have hds : HasDerivAt (fun z : ℂ => z / 2) (1 / 2) s := (hasDerivAt_id s).div_const _
+    rw [logDeriv_fun_comp (g := fun z : ℂ => z / 2) hdG hds.differentiableAt,
+      ← Complex.digamma_def, hds.deriv]
+    ring
   change logDeriv (fun z : ℂ => (Real.pi : ℂ) ^ (-z / 2) * Complex.Gamma (z / 2)) s = _
-  rw [logDeriv_fun_mul s (Complex.cpow_ne_zero_iff.mpr (.inl hpi)) hG0 hdP
+  rw [logDeriv_fun_mul (f := fun z : ℂ => (Real.pi : ℂ) ^ (-z / 2))
+    (g := fun z : ℂ => Complex.Gamma (z / 2)) s
+    (Complex.cpow_ne_zero_iff.mpr (.inl hpi)) hG0 hdP
     (hdG.comp s (differentiableAt_id.div_const (2 : ℂ))), hp, hg]
 
 /-- Both gamma parities use the same formula with the exact existing parity shift. -/
@@ -210,13 +216,16 @@ theorem gammaFactor_logDeriv_of_re_pos
     simp only [Complex.add_re, Complex.natCast_re]
     linarith [Nat.cast_nonneg (α := ℝ) (gammaParity chi)]
   have hd : DifferentiableAt ℂ Complex.Gammaℝ (s + (gammaParity chi : ℂ)) := by
-    simpa only [inv_inv] using
+    have h := funext (fun w : ℂ => inv_inv (Complex.Gammaℝ w))
+    change ((fun w : ℂ => (Complex.Gammaℝ w)⁻¹)⁻¹) = Complex.Gammaℝ at h
+    simpa only [h] using
       (Complex.differentiable_Gammaℝ_inv (s + (gammaParity chi : ℂ))).inv
         (inv_ne_zero (Complex.Gammaℝ_ne_zero_of_re_pos hp))
   have he : DirichletCharacter.gammaFactor chi =
       fun z : ℂ => Complex.Gammaℝ (z + (gammaParity chi : ℂ)) :=
     funext (gammaFactor_eq_gammaParity chi)
-  rw [he, logDeriv_fun_comp hd (differentiableAt_id.add_const _)]
+  rw [he, logDeriv_fun_comp (g := fun z : ℂ => z + (gammaParity chi : ℂ))
+    hd (differentiableAt_id.add_const _)]
   simpa using GammaR_logDeriv_of_re_pos hp
 
 /-- Exact prime-power series of the original continued L-function in Re(s)>1.
@@ -241,7 +250,7 @@ theorem completedLFunction_logDeriv_eq_prime_gamma
         Complex.digamma ((s + (gammaParity chi : ℂ)) / 2) / 2 -
         LSeries (fun n : ℕ => chi n * (ArithmeticFunction.vonMangoldt n : ℂ)) s := by
   have hp : 0 < s.re := lt_trans (by norm_num) hs
-  have hs1 : s ≠ 1 := by intro h; simp [h] at hs
+  have hs1 : s ≠ 1 := by intro h; norm_num [h] at hs
   have hL : DirichletCharacter.LFunction chi s ≠ 0 := by
     rw [chi.LFunction_eq_LSeries hs]
     exact chi.LSeries_ne_zero_of_one_lt_re hs

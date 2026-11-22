@@ -43,9 +43,15 @@ theorem differentiableAt_gammaFactor_of_nonreal (chi : DirichletCharacter ℂ N)
     DifferentiableAt ℂ (DirichletCharacter.gammaFactor chi) s := by
   classical
   by_cases he : chi.Even
-  · simpa only [DirichletCharacter.gammaFactor, he, if_true] using
-      differentiableAt_GammaR_of_nonreal hi
-  · simp only [DirichletCharacter.gammaFactor, he, if_false]
+  · have h : DirichletCharacter.gammaFactor chi = Complex.Gammaℝ := by
+      funext w
+      simp [DirichletCharacter.gammaFactor, he]
+    rw [h]
+    exact differentiableAt_GammaR_of_nonreal hi
+  · have h : DirichletCharacter.gammaFactor chi = (Complex.Gammaℝ ∘ fun w : ℂ => w + 1) := by
+      funext w
+      simp [DirichletCharacter.gammaFactor, he]
+    rw [h]
     exact (differentiableAt_GammaR_of_nonreal (s := s + 1) (by simpa using hi)).comp s
       (differentiableAt_id.add_const (1 : ℂ))
 
@@ -55,17 +61,24 @@ theorem norm_logDeriv_gammaFactor_le_horizontal_strip (chi : DirichletCharacter 
     ‖logDeriv (DirichletCharacter.gammaFactor chi) s‖ ≤
       gammaRLogDerivativeConstant * (1 + |s.im|) := by
   classical
-  have him : s.im ≠ 0 := by intro h; simp [h] at hi
+  have him : s.im ≠ 0 := by intro h; norm_num [h] at hi
   by_cases he : chi.Even
-  · simpa only [DirichletCharacter.gammaFactor, he, if_true] using
-      norm_logDeriv_GammaR_le_horizontal_strip hl (by linarith) hi
+  · have h : DirichletCharacter.gammaFactor chi = Complex.Gammaℝ := by
+      funext w
+      simp [DirichletCharacter.gammaFactor, he]
+    rw [h]
+    exact norm_logDeriv_GammaR_le_horizontal_strip hl (by linarith) hi
   · have htrans : logDeriv (fun w : ℂ => Complex.Gammaℝ (w + 1)) s =
         logDeriv Complex.Gammaℝ (s + 1) := by
       change logDeriv (Complex.Gammaℝ ∘ fun w : ℂ => w + 1) s = _
-      rw [logDeriv_comp (differentiableAt_GammaR_of_nonreal (s := s + 1) (by simpa using him))
-        (differentiableAt_id.add_const (1 : ℂ)),
-        ((hasDerivAt_id s).add_const (1 : ℂ)).deriv, mul_one]
-    simp only [DirichletCharacter.gammaFactor, he, if_false, htrans]
+      have hd : HasDerivAt (fun w : ℂ => w + 1) 1 s := (hasDerivAt_id s).add_const _
+      rw [logDeriv_comp (g := fun w : ℂ => w + 1)
+        (differentiableAt_GammaR_of_nonreal (s := s + 1) (by simpa using him))
+        hd.differentiableAt, hd.deriv, mul_one]
+    have h : DirichletCharacter.gammaFactor chi = (fun w : ℂ => Complex.Gammaℝ (w + 1)) := by
+      funext w
+      simp [DirichletCharacter.gammaFactor, he]
+    rw [h, htrans]
     simpa using norm_logDeriv_GammaR_le_horizontal_strip (s := s + 1)
       (by simp only [Complex.add_re, Complex.one_re]; linarith)
       (by simp only [Complex.add_re, Complex.one_re]; linarith) (by simpa using hi)
@@ -85,7 +98,7 @@ theorem logDeriv_completedLFunction_of_nonreal (chi : DirichletCharacter ℂ N)
     rw [completedLFunction_eq_mul_of_nonreal chi hi, hz, zero_mul]
   have hG := gammaFactor_ne_zero_of_nonreal chi hi
   have hneighborhood : {w : ℂ | w.im ≠ 0} ∈ 𝓝 s :=
-    (isOpen_ne Complex.continuous_im continuous_const).mem_nhds hi
+    (isOpen_ne_fun Complex.continuous_im continuous_const).mem_nhds hi
   have he : DirichletCharacter.completedLFunction chi =ᶠ[𝓝 s]
       fun w => DirichletCharacter.LFunction chi w * DirichletCharacter.gammaFactor chi w := by
     filter_upwards [hneighborhood] with w hw
@@ -103,7 +116,7 @@ sigma interval. No Gamma, growth, separation or log-derivative bound is a premis
 theorem exists_horizontal_completedLFunction_logDeriv_bound
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (sigma epsilon : ℝ), epsilon = -1 ∨ epsilon = 1 →
         DirichletCharacter.completedLFunction chi
           ((sigma : ℂ) + Complex.I * ((epsilon * T n : ℝ) : ℂ)) ≠ 0) ∧
@@ -142,14 +155,14 @@ theorem exists_horizontal_completedLFunction_logDeriv_bound
         gammaRLogDerivativeConstant * (1 + T n) := add_le_add (hL n sigma epsilon hl hu he) hg
     _ ≤ (horizontalLogDerivativeConstant chi + 1) * (1 + T n) ^ 4 +
         gammaRLogDerivativeConstant * (1 + T n) ^ 4 :=
-      add_le_add_left (mul_le_mul_of_nonneg_left hpower gammaRLogDerivativeConstant_pos.le) _
+      add_le_add le_rfl (mul_le_mul_of_nonneg_left hpower gammaRLogDerivativeConstant_pos.le)
     _ = _ := by ring
 
 /-- Literal conductor-one completed zeta. Its poles at 0 and 1 are retained;
 only the selected nonreal boundaries are estimated. -/
 theorem exists_horizontal_completedRiemannZeta_logDeriv_bound :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (sigma epsilon : ℝ), epsilon = -1 ∨ epsilon = 1 →
         completedRiemannZeta
           ((sigma : ℂ) + Complex.I * ((epsilon * T n : ℝ) : ℂ)) ≠ 0) ∧

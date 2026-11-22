@@ -85,6 +85,59 @@ theorem count_eq_completed_zeta_of_value_bounds {D : ℂ → ℂ} {c : ℂ} {R h
     (by simpa only [sub_zero] using sourceBound) hz
   simpa using bound
 
+<<<<<<< HEAD
+=======
+private theorem logDeriv_error_le_separated {f g : ℂ → ℂ} {z : ℂ} {m M δ η : ℝ}
+    (small : δ < m) (hf : m ≤ ‖f z‖) (hM : ‖deriv f z‖ ≤ M)
+    (valueError : ‖g z - f z‖ ≤ δ) (derivError : ‖deriv g z - deriv f z‖ ≤ η) :
+    ‖logDeriv g z - logDeriv f z‖ ≤ η / (m - δ) + M * δ / ((m - δ) * m) := by
+  have hδ := (norm_nonneg _).trans valueError
+  have hm : 0 < m := hδ.trans_lt small
+  have hg : m - δ ≤ ‖g z‖ := by
+    have triangle : ‖f z‖ ≤ ‖g z - f z‖ + ‖g z‖ := by
+      simpa [norm_sub_rev, sub_add_cancel] using norm_add_le (f z - g z) (g z)
+    linarith
+  have hmδ : 0 < m - δ := sub_pos.mpr small
+  have hf0 := norm_pos_iff.mp (hm.trans_le hf)
+  have hg0 := norm_pos_iff.mp (hmδ.trans_le hg)
+  rw [logDeriv_apply, logDeriv_apply]
+  have split : deriv g z / g z - deriv f z / f z =
+      (deriv g z - deriv f z) / g z + deriv f z * (f z - g z) / (g z * f z) := by
+    field_simp [hf0, hg0]
+    ring
+  rw [split]
+  refine (norm_add_le _ _).trans (add_le_add ?_ ?_)
+  · rw [norm_div]
+    exact div_le_div₀ ((norm_nonneg _).trans derivError) derivError hmδ hg
+  · rw [norm_div, norm_mul, norm_mul, norm_sub_rev (f z) (g z)]
+    have hM₀ := (norm_nonneg _).trans hM
+    exact div_le_div₀ (mul_nonneg hM₀ hδ)
+      (mul_le_mul hM valueError (norm_nonneg _) hM₀) (mul_pos hmδ hm)
+      (mul_le_mul hg hf hm.le (norm_nonneg _))
+
+/-- The full source margin m supplies separate denominators m and m-δ
+in the collar estimate. The value error need only be strictly below m. -/
+theorem count_eq_completed_zeta_of_separated_value_collar {D : ℂ → ℂ}
+    {c : ℂ} {R h m M δ : ℝ}
+    (source : AnalyticZeroData spectralSource c R) (candidate : AnalyticZeroData D c R)
+    (width : 0 < h) (small : δ < m)
+    (hD : AnalyticOnNhd ℂ D (closedBall c (R + h)))
+    (separation : ∀ z ∈ sphere c R, m ≤ ‖spectralSource z‖ ∧ ‖deriv spectralSource z‖ ≤ M)
+    (error : ∀ z ∈ closedBall c (R + h), ‖D z - spectralSource z‖ ≤ δ)
+    (gap : R * ((δ / h) / (m - δ) + M * δ / ((m - δ) * m)) < 1) :
+    (∑ a ∈ candidate.zeros, candidate.multiplicity a) = ∑ a ∈ source.zeros, source.multiplicity a := by
+  have diff : Differentiable ℂ spectralSource := by
+    unfold spectralSource
+    exact differentiable_xi.comp (by fun_prop)
+  apply count_eq_of_boundary_logDeriv_error source candidate _ gap
+  intro z hz
+  have inside : z ∈ closedBall c (R + h) :=
+    closedBall_subset_closedBall (by linarith) (sphere_subset_closedBall hz)
+  exact logDeriv_error_le_separated small (separation z hz).1 (separation z hz).2
+    (error z inside) (deriv_error_le_of_value_collar width
+      (fun w _ => diff.analyticAt w) hD error hz)
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- On the counting circle alone a uniform value bound cannot bound the
 derivative independently of degree. -/
 theorem unit_circle_derivative_control (n : ℕ) :

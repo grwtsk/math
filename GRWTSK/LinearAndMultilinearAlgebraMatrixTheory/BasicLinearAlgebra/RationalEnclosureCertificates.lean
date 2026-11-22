@@ -24,8 +24,10 @@ an exact realification, including the imaginary off-diagonal blocks.
 These are standard finite algebra/inequality consequences, not a new arithmetic
 positivity theorem. Exact arithmetic enclosure, admissibility, all-window
 coverage and full pole-inclusive Weil source return remain separate premises.
-SOURCE_PROOF_CANDIDATE: elaboration, kernel replay, axiom audit and independent
-review NOT_RUN. No executable byte parser or arithmetic evaluator is asserted.
+The original SOURCE_PROOF_CANDIDATE record marked elaboration, kernel replay,
+axiom audit and independent review NOT_RUN. Current source-bound compatibility
+checks are recorded separately in math#1839. No executable byte parser or
+transcendental arithmetic evaluator is asserted.
 -/
 
 set_option autoImplicit false
@@ -40,7 +42,18 @@ open GRWTSK.LinearAlgebra.SchurObserver
 open GRWTSK.HermiteMomentCertificates
 open GRWTSK.FunctionalAnalysis.DenseNonnegativeApproximation
 
+/-- Finite rational input data. No conclusion or enclosure proof is a field. -/
+structure Packet (ι : Type*) [Fintype ι] [DecidableEq ι] where
+  center : Matrix ι ι ℚ
+  radius : Matrix ι ι ℚ
+  metric : Matrix ι ι ℚ
+  tolerance : ℚ
+
 variable {ι ν : Type*} [Fintype ι] [DecidableEq ι] [Fintype ν]
+
+instance : DecidableEq (Packet ι) := fun P Q =>
+  decidable_of_iff (P.center = Q.center ∧ P.radius = Q.radius ∧
+    P.metric = Q.metric ∧ P.tolerance = Q.tolerance) (by cases P; cases Q; simp)
 
 /-- Exact agreement of the two already-maintained quadratic conventions. -/
 theorem quadratic_eq_quadraticValue (M : Matrix ι ι ℝ) (x : ι → ℝ) :
@@ -94,14 +107,6 @@ theorem errorBudget_le_rowPenalty (E : Matrix ι ι ℝ) (x : ι → ℝ)
         ring
   linarith
 
-/-- Finite rational input data. No conclusion or enclosure proof is a field. -/
-structure Packet (ι : Type*) [Fintype ι] [DecidableEq ι] where
-  center : Matrix ι ι ℚ
-  radius : Matrix ι ι ℚ
-  metric : Matrix ι ι ℚ
-  tolerance : ℚ
-  deriving DecidableEq
-
 /-- The exact rational matrix passed to the pre-existing finite checker. -/
 def Packet.lowerTarget (P : Packet ι) : Matrix ι ι ℚ :=
   P.center + P.tolerance • P.metric - rowPenalty P.radius
@@ -112,7 +117,8 @@ def Packet.Guard (P : Packet ι) : Prop :=
     (∀ i j, P.radius i j = P.radius j i) ∧ 0 ≤ P.tolerance
 
 instance (P : Packet ι) : Decidable P.Guard := by
-  unfold Packet.Guard
+  let r : ι → ι → ℚ := P.radius
+  change Decidable ((∀ i j, 0 ≤ r i j) ∧ (∀ i j, r i j = r j i) ∧ 0 ≤ P.tolerance)
   infer_instance
 
 /-- Executable rational arithmetic only. The original checker owns the identity. -/
@@ -125,10 +131,10 @@ def Encloses (P : Packet ι) (H : Matrix ι ι ℝ) : Prop :=
 
 /-- Cast the complete target identity, rather than testing only rational vectors. -/
 theorem lowerTarget_cast (P : Packet ι) :
-    (fun i j => (P.lowerTarget i j : ℝ)) =
-      (fun i j => (P.center i j : ℝ)) +
-        (P.tolerance : ℝ) • (fun i j => (P.metric i j : ℝ)) -
-          rowPenalty (fun i j => (P.radius i j : ℝ)) := by
+    Matrix.of (fun i j => (P.lowerTarget i j : ℝ)) =
+      Matrix.of (fun i j => (P.center i j : ℝ)) +
+        (P.tolerance : ℝ) • Matrix.of (fun i j => (P.metric i j : ℝ)) -
+          rowPenalty (Matrix.of (fun i j => (P.radius i j : ℝ))) := by
   ext i j
   by_cases hij : i = j
   · subst j
@@ -142,17 +148,24 @@ theorem checked_enclosure_lower (P : Packet ι)
     (hencloses : Encloses P H) (hcheck : intervalCheck P C = true) (x : ι → ℝ) :
     -(P.tolerance : ℝ) * quadratic (fun i j => (P.metric i j : ℝ)) x ≤
       quadratic H x := by
-  obtain ⟨hg, hc⟩ := Bool.and_eq_true.mp hcheck
+  obtain ⟨hg, hc⟩ := Bool.and_eq_true_iff.mp hcheck
   have hguard : P.Guard := of_decide_eq_true hg
-  have hrow := errorBudget_le_rowPenalty (fun i j => (P.radius i j : ℝ)) x
+  let center : Matrix ι ι ℝ := fun i j => (P.center i j : ℝ)
+  let radius : Matrix ι ι ℝ := fun i j => (P.radius i j : ℝ)
+  let metric : Matrix ι ι ℝ := fun i j => (P.metric i j : ℝ)
+  have hrow := errorBudget_le_rowPenalty radius x
     (fun i j => Rat.cast_nonneg.mpr (hguard.1 i j))
     (fun i j => congrArg (fun r : ℚ => (r : ℝ)) (hguard.2.1 i j))
-  have herr := abs_quadraticValue_sub_le_errorBudget H
-    (fun i j => (P.center i j : ℝ)) (fun i j => (P.radius i j : ℝ)) x hencloses
-  rw [← quadratic_eq_quadraticValue, ← quadratic_eq_quadraticValue] at herr
+  have herr := abs_quadraticValue_sub_le_errorBudget H center radius x hencloses
+  rw [← quadratic_eq_quadraticValue H x,
+    ← quadratic_eq_quadraticValue center x] at herr
   have hlo := (abs_le.mp herr).1
   have hcert := checked_rational_matrix_nonneg P.lowerTarget C hc x
-  rw [lowerTarget_cast, quadratic_subtraction, quadratic_add, quadratic_smul] at hcert
+  change 0 ≤ quadratic (Matrix.of (fun i j => (P.lowerTarget i j : ℝ))) x at hcert
+  rw [lowerTarget_cast P] at hcert
+  change 0 ≤ quadratic (center + (P.tolerance : ℝ) • metric - rowPenalty radius) x at hcert
+  rw [quadratic_subtraction, quadratic_add, quadratic_smul] at hcert
+  change -(P.tolerance : ℝ) * quadratic metric x ≤ quadratic H x
   linarith
 
 /-- A lower comparison with the ORIGINAL form is sufficient; a numerical matrix

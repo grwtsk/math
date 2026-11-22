@@ -47,7 +47,7 @@ theorem period_ne_zero : period ≠ 0 := Complex.two_pi_I_ne_zero
 
 theorem deck_injective : Function.Injective deck := by
   intro j k h
-  have hc : (j : ℂ) = (k : ℂ) := (mul_right_inj' period_ne_zero).mp h
+  have hc : (j : ℂ) = (k : ℂ) := mul_right_cancel₀ period_ne_zero h
   exact_mod_cast hc
 
 @[simp] theorem exp_deck (k : ℤ) : Complex.exp (deck k) = 1 :=
@@ -86,8 +86,9 @@ theorem difference_const (L M : C(I, ℂ))
     rw [Complex.exp_add, he0, mul_one]
     exact he x
   have h := covering.eq_of_comp_eq L.continuous
-    (M.continuous.add continuous_const) hc u (by ring)
+    (M.continuous.add continuous_const) hc u (by change L u = M u + (L u - M u); ring)
   have ht := congrFun h t
+  change L t = M t + (L u - M u) at ht
   linear_combination ht
 
 /-- All continuous logarithmic lifts of the same path have the same endpoint jump. -/
@@ -195,7 +196,9 @@ theorem winding_homotopy {g₀ g₁ : C(I, Punctured)}
   have hL : ∀ t, Complex.exp (L t) = (g₁ t).1 := by
     intro t
     change Complex.exp (liftedHomotopy H.toHomotopy (1, t)) = _
-    rw [liftedHomotopy_exp, H.apply_one]
+    rw [liftedHomotopy_exp]
+    change (H (1, t)).1 = (g₁ t).1
+    rw [H.apply_one]
   have hj : L 1 - L 0 = deck (winding g₀ hg₀) :=
     (homotopy_jump_const H (1 : I)).trans (winding_spec g₀ hg₀)
   exact (winding_eq_of_lift g₁ hg₁ L hL hj).symm

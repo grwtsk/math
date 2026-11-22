@@ -45,10 +45,14 @@ def polygonMap (n : ℕ) (a : ℕ → ℂ) : C(I, ℂ) where
     (fun i _ => affineCell a i))).comp (by fun_prop)
 
 @[simp] theorem polygon_start (n : ℕ) (a : ℕ → ℂ) : polygonMap n a 0 = a 0 := by
-  simp [polygonMap, constantVertex]
+  change concat (constantVertex a) n (fun i _ => affineCell a i) (0, 0) = a 0
+  rw [Homotopy.apply_zero]
+  rfl
 
 @[simp] theorem polygon_finish (n : ℕ) (a : ℕ → ℂ) : polygonMap n a 1 = a n := by
-  simp [polygonMap, constantVertex]
+  change concat (constantVertex a) n (fun i _ => affineCell a i) (1, 0) = a n
+  rw [Homotopy.apply_one]
+  rfl
 
 /-- Only the n+1 consumed vertices matter; defaulted values beyond them do not. -/
 theorem polygonMap_congr (n : ℕ) {a b : ℕ → ℂ}
@@ -96,7 +100,8 @@ is the source-to-polygon deformation parameter. This order is swapped later. -/
 def deformationCell (F : ℂ → ℂ) (hF : Continuous F) (a b : ℕ → ℂ) (i : ℕ) :
     Homotopy (vertexMotion F a b i) (vertexMotion F a b (i + 1)) where
   toFun p := deformation F (a i) (a (i + 1)) (b i) (b (i + 1)) (p.1 : ℝ) (p.2 : ℝ)
-  continuous_toFun := (deformation_continuous hF _ _ _ _).comp (by fun_prop)
+  continuous_toFun := (deformation_continuous hF (a i) (a (i + 1)) (b i) (b (i + 1))).comp
+    (continuous_subtype_val.prodMap continuous_subtype_val)
   map_zero_left _ := by simp [vertexMotion]
   map_one_left _ := by simp [vertexMotion]
 
@@ -112,7 +117,9 @@ theorem joined_source (F : ℂ → ℂ) (hF : Continuous F) (n : ℕ) (a b : ℕ
     F (0 : I) (0 : I)
   · simp [vertexMotion, constantVertex]
   · intro i hi u
-    simp [deformationCell, affineCell]
+    change deformation F (a i) (a (i + 1)) (b i) (b (i + 1)) (u : ℝ) (0 : I) =
+      F (blend (u : ℝ) (a i) (a (i + 1)))
+    simp
 
 /-- The surrogate endpoint follows the SAME domain-edge ordering and time schedule. -/
 theorem joined_polygon (F : ℂ → ℂ) (hF : Continuous F) (n : ℕ) (a b : ℕ → ℂ) (t : I) :
@@ -120,7 +127,11 @@ theorem joined_polygon (F : ℂ → ℂ) (hF : Continuous F) (n : ℕ) (a b : �
   exact natural (constantVertex b) (vertexMotion F a b) n
     (fun i _ => affineCell b i) (fun i _ => deformationCell F hF a b i)
     id (0 : I) (1 : I) (by simp [vertexMotion, constantVertex])
-    (by intro i hi u; simp [deformationCell, affineCell]) t
+    (by
+      intro i hi u
+      change deformation F (a i) (a (i + 1)) (b i) (b (i + 1)) (u : ℝ) (1 : I) =
+        blend (u : ℝ) (b i) (b (i + 1))
+      simp) t
 
 /-- A genuine globally continuous deformation, not a collection of unglued cells. -/
 def homotopy (F : ℂ → ℂ) (hF : Continuous F) (n : ℕ) (a b : ℕ → ℂ) :
@@ -134,7 +145,10 @@ def homotopy (F : ℂ → ℂ) (hF : Continuous F) (n : ℕ) (a b : ℕ → ℂ)
 theorem homotopy_closed (F : ℂ → ℂ) (hF : Continuous F) {n : ℕ} {a b : ℕ → ℂ}
     (ha : a n = a 0) (hb : b n = b 0) (lam : I) :
     homotopy F hF n a b (lam, 0) = homotopy F hF n a b (lam, 1) := by
-  simp [homotopy, joined, vertexMotion, ha, hb]
+  change joined F hF n a b (0, lam) = joined F hF n a b (1, lam)
+  rw [Homotopy.apply_zero, Homotopy.apply_one]
+  change blend (lam : ℝ) (F (a 0)) (b 0) = blend (lam : ℝ) (F (a n)) (b n)
+  rw [ha, hb]
 
 /-- The finite nonvanishing supplier is exactly the previous all-point cell theorem. -/
 def CellNonzero (F : ℂ → ℂ) (n : ℕ) (a b : ℕ → ℂ) : Prop :=
@@ -198,7 +212,9 @@ def puncturedHomotopy (F : ℂ → ℂ) (hF : Continuous F) {n : ℕ}
 theorem moving_basepoint (F : ℂ → ℂ) (hF : Continuous F) (n : ℕ)
     (a b : ℕ → ℂ) (lam : I) :
     homotopy F hF n a b (lam, 0) = blend (lam : ℝ) (F (a 0)) (b 0) := by
-  simp [homotopy, joined, vertexMotion]
+  change joined F hF n a b (0, lam) = _
+  rw [Homotopy.apply_zero]
+  rfl
 
 /-- A constant surrogate really gives a constant final loop. -/
 theorem constant_polygon (n : ℕ) (z : ℂ) (t : I) :
@@ -206,7 +222,8 @@ theorem constant_polygon (n : ℕ) (z : ℂ) (t : I) :
   rcases value_cases (constantVertex (fun _ => z)) n
       (fun i _ => affineCell (fun _ => z) i) t (0 : I) with h | ⟨i, hi, u, h⟩
   · exact h
-  · simpa [affineCell] using h
+  · change polygonMap n (fun _ => z) t = blend (u : ℝ) z z at h
+    simpa only [blend_self] using h
 
 end
 end GRWTSK.Analysis.ComplexAnalysis.PolygonFreeHomotopy

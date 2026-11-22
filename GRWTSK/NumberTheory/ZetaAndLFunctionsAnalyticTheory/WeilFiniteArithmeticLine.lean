@@ -76,8 +76,7 @@ private theorem analyticAt_completed_off_endpoints (chi : DirichletCharacter ℂ
     AnalyticAt ℂ (DirichletCharacter.completedLFunction chi) s := by
   let U : Set ℂ := {z | z ≠ 0 ∧ z ≠ 1}
   have hopen : IsOpen U :=
-    (isOpen_ne continuous_id continuous_const).inter
-      (isOpen_ne continuous_id continuous_const)
+    (isOpen_ne (x := (0 : ℂ))).inter (isOpen_ne (x := (1 : ℂ)))
   have hd : DifferentiableOn ℂ (DirichletCharacter.completedLFunction chi) U := by
     intro z hz
     exact (chi.differentiableAt_completedLFunction z (.inl hz.1) (.inl hz.2)).differentiableWithinAt
@@ -92,13 +91,13 @@ private theorem continuous_weighted_vertical_pair (chi : DirichletCharacter ℂ 
   constructor <;> rw [continuous_iff_continuousAt] <;> intro t
   · let s : ℂ := 2 + (t : ℂ) * Complex.I
     have hs : 1 < s.re := by norm_num [s]
-    have h0 : s ≠ 0 := by intro h; simpa [h] using hs
-    have h1 : s ≠ 1 := by intro h; simpa [h] using hs
+    have h0 : s ≠ 0 := by intro h; norm_num [h] at hs
+    have h1 : s ≠ 1 := by intro h; norm_num [h] at hs
     have ha := analyticAt_completed_off_endpoints chi s h0 h1
     have hn := completedLFunction_ne_zero_right_of_euler chi hs
-    exact ((hW s (mem_univ _)).continuousAt.mul
-      (ha.deriv.div ha hn).continuousAt).comp
-        (show ContinuousAt (fun t : ℝ => 2 + (t : ℂ) * Complex.I) t by fun_prop)
+    exact ContinuousAt.comp (f := fun u : ℝ => 2 + (u : ℂ) * Complex.I)
+      ((hW s (mem_univ _)).continuousAt.mul (ha.deriv.div ha hn).continuousAt)
+      (by fun_prop)
   · let s : ℂ := 2 + (t : ℂ) * Complex.I
     have hs : 1 < s.re := by norm_num [s]
     have h0 : 1 - s ≠ 0 := by
@@ -111,9 +110,9 @@ private theorem continuous_weighted_vertical_pair (chi : DirichletCharacter ℂ 
       norm_num [s] at hr
     have ha := analyticAt_completed_off_endpoints chi (1 - s) h0 h1
     have hn := completedLFunction_ne_zero_left_of_euler chi hprim hs
-    exact ((hW (1 - s) (mem_univ _)).continuousAt.mul
-      (ha.deriv.div ha hn).continuousAt).comp
-        (show ContinuousAt (fun t : ℝ => 1 - (2 + (t : ℂ) * Complex.I)) t by fun_prop)
+    exact ContinuousAt.comp (f := fun u : ℝ => 1 - (2 + (u : ℂ) * Complex.I))
+      ((hW (1 - s) (mem_univ _)).continuousAt.mul (ha.deriv.div ha hn).continuousAt)
+      (by fun_prop)
 
 /-- The arithmetic line really is integrable on every finite height interval.
 This is established from the actual nonzero continued sources, not an oracle. -/
@@ -179,7 +178,7 @@ theorem weil_finite_right_arithmetic_identity
   change (2 * (Real.pi : ℂ) * Complex.I)⁻¹ * boundaryIntegral (-1) 2 (-T) T F = _
   unfold boundaryIntegral weilRightArithmeticIntegral
   rw [hpair, ← href]
-  dsimp only [F]
+  simp only [F, Complex.ofReal_ofNat, Complex.ofReal_neg, Complex.ofReal_one]
   have hp : (Real.pi : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr Real.pi_ne_zero
   field_simp [hp, Complex.I_ne_zero]
   <;> ring
@@ -213,7 +212,7 @@ theorem exists_primitive_finite_arithmetic_error_vanishes
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     let C := horizontalLogDerivativeConstant chi + 1 + gammaRLogDerivativeConstant
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →
         let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
         let K := C * derivativeL1Cost f 3 ^ 2 * Real.exp (A * (3 / 2 : ℝ)) ^ 2
@@ -290,6 +289,9 @@ theorem completedZeta_finite_arithmetic_residual
     ring
   have he := weil_test_right_arithmetic_residual chi hprim T hT
     (by simpa only [DirichletCharacter.completedLFunction_modOne_eq] using hheight) f A hA hf hs
-  simpa only [if_true, DirichletCharacter.completedLFunction_modOne_eq, hJ] using he
+  change (∑ rho ∈ heightWindow chi hprim T, (zeroMultiplicity chi rho : ℂ) * W rho.1) -
+    (if (1 : ℕ) = 1 then W 0 + W 1 else 0) - weilRightArithmeticIntegral chi W T = _ at he
+  rw [hJ] at he
+  simpa only [ite_true, DirichletCharacter.completedLFunction_modOne_eq] using he
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.SourcePrimeCorrelation

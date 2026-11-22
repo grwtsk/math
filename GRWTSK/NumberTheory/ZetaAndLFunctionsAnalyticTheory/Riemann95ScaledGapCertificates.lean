@@ -382,6 +382,17 @@ theorem logSquareAllowance_unbounded (B : ℕ) :
   rw [Real.sq_sqrt (by positivity : (0 : ℝ) ≤ B)] at sq
   exact ⟨k, le_min hB ((Nat.le_floor_iff (by positivity)).2 sq)⟩
 
+<<<<<<< HEAD
+=======
+private theorem logSquareAllowance_le_log_square (k : ℕ) :
+    (logSquareAllowance k : ℝ) ≤ Real.log (k + 1 : ℕ) ^ 2 := by
+  have bound : (logSquareAllowance k : ℝ) ≤
+      (⌊Real.log (k + 1 : ℕ) ^ 2⌋₊ : ℕ) := by
+    unfold logSquareAllowance
+    exact Nat.cast_le.mpr (min_le_right _ _)
+  exact bound.trans (Nat.floor_le (by positivity))
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
     (check : ℕ → Fin 95 → Certificate → Bool)
     (sound : ∀ w slot c, check w slot c = true →
@@ -390,6 +401,7 @@ theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
     (cover : ∀ k ≥ start, ∃ j ≤ logSquareAllowance k, ∃ (slot : Fin 95) (c : Certificate),
       check ((k + j) ^ 2) slot c = true) : RiemannHypothesis := by
   apply (log_thinned_square_accepts_iff_cryptids_RH start logSquareAllowance
+<<<<<<< HEAD
     (C := 1) (by norm_num) (fun _ _ => min_le_left _ _) (fun k _ => ?_)).mp
   · intro k hk
     obtain ⟨j, hj, slot, c, hc⟩ := cover k hk
@@ -400,5 +412,573 @@ theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
       unfold logSquareAllowance
       exact Nat.cast_le.mpr (min_le_right _ _)
     exact bound.trans (Nat.floor_le (by positivity))
+=======
+    (C := 1) (by norm_num) (fun _ _ => min_le_left _ _)
+    (fun k _ => by simpa only [one_mul] using logSquareAllowance_le_log_square k)).mp
+  intro k hk
+  obtain ⟨j, hj, slot, c, hc⟩ := cover k hk
+  exact ⟨j, hj, slot, (slotAccepts_iff_safe _ _).2 (sound _ _ c hc)⟩
+
+/-- Halting forces arbitrarily late blocks in the square index on which
+every executable slot verdict rejects. Any such block supplies a native
+counterexample, since its initial square and slot zero are present. -/
+theorem cryptids_halts_iff_cofinal_log_square_rejection_blocks :
+    Halts Riemann95.candidate ↔
+      ∀ start : ℕ, ∃ k ≥ start, ∀ j ≤ logSquareAllowance k,
+        ∀ slot : Fin 95, slotAccepts ((k + j) ^ 2) slot = false := by
+  classical
+  rw [Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis]
+  constructor
+  · intro hnot start
+    have hcover := log_thinned_square_accepts_iff_cryptids_RH start logSquareAllowance
+      (C := 1) (by norm_num) (fun _ _ => min_le_left _ _)
+      (fun k _ => by simpa only [one_mul] using logSquareAllowance_le_log_square k)
+    by_contra hno
+    apply hnot
+    apply hcover.mp
+    intro k hk
+    by_contra hnone
+    apply hno
+    refine ⟨k, hk, fun j hj slot => ?_⟩
+    cases h : slotAccepts ((k + j) ^ 2) slot with
+    | false => rfl
+    | true => exact (hnone ⟨j, hj, slot, h⟩).elim
+  · intro hblocks rh
+    obtain ⟨k, _, hblock⟩ := hblocks 0
+    have hreject := hblock 0 (Nat.zero_le _) 0
+    have haccept := (window_accepts_iff_all_slots_accept ((k + 0) ^ 2)).mp
+      (all_windows_accept_iff_cryptids_RH.mpr rh _) 0
+    rw [hreject] at haccept
+    cases haccept
+
+
+/-- Each square starts a band of candidate windows. The accepted window
+and its slot may both vary with the square index. -/
+theorem square_band_slot_accepts_iff_cryptids_RH
+    (start : ℕ) (delay : ℕ → ℕ)
+    {C : ℝ} (hC : 0 ≤ C)
+    (bound : ∀ k ≥ start, (delay k : ℝ) ≤ C * k * Real.log (k + 1 : ℕ) ^ 2) :
+    (∀ k ≥ start, ∃ d ≤ delay k, ∃ slot : Fin 95,
+      slotAccepts (k ^ 2 + d) slot = true) ↔ RiemannHypothesis := by
+  constructor
+  · intro safe
+    let first := max 4 (start ^ 2)
+    let gap (w : ℕ) := (Nat.sqrt w + 1) ^ 2 + delay (Nat.sqrt w + 1) - w
+    have start_le (w : ℕ) (hw : first ≤ w) : start ≤ Nat.sqrt w + 1 :=
+      (Nat.le_sqrt'.mpr ((le_max_right _ _).trans hw)).trans (Nat.le_succ _)
+    have range (w : ℕ) (hw : first ≤ w) :
+        (gap w : ℝ) ≤ (2 + 2 * C) * (1 + defectScale w) := by
+      let s := Nat.sqrt w
+      have large : 4 ≤ w := (le_max_left _ _).trans hw
+      have hs : 2 ≤ s := Nat.le_sqrt'.mpr (by simpa using large)
+      have floor : s ^ 2 ≤ w := Nat.sqrt_le' w
+      have next : w < (s + 1) ^ 2 := Nat.lt_succ_sqrt' w
+      have stepBound : (s + 1) ^ 2 - w ≤ 2 * s + 1 := by
+        have identity : (s + 1) ^ 2 = s ^ 2 + (2 * s + 1) := by ring
+        omega
+      have hsR : (s : ℝ) ≤ Real.sqrt w := by
+        have h : (s : ℝ) ^ 2 ≤ (w : ℝ) := by exact_mod_cast floor
+        simpa [Real.sqrt_sq (by positivity : (0 : ℝ) ≤ s)] using Real.sqrt_le_sqrt h
+      have kR : (↑(s + 1) : ℝ) ≤ 2 * Real.sqrt w := by
+        push_cast
+        have : (2 : ℝ) ≤ s := by exact_mod_cast hs
+        linarith
+      have arg : s + 2 ≤ w := by
+        have : s + 2 ≤ s ^ 2 := by nlinarith
+        omega
+      have logLe : Real.log (s + 1 + 1 : ℕ) ≤ Real.log w :=
+        Real.log_le_log (by positivity) (by exact_mod_cast (show s + 1 + 1 ≤ w by omega))
+      have logNonneg : 0 ≤ Real.log (s + 1 + 1 : ℕ) := Real.log_nonneg (by exact_mod_cast (show 1 ≤ s + 1 + 1 by omega))
+      have squared := pow_le_pow_left₀ logNonneg logLe 2
+      have hDelay : (delay (s + 1) : ℝ) ≤ (2 * C) * defectScale w := by
+        calc
+          _ ≤ C * (↑(s + 1) : ℝ) * Real.log (s + 1 + 1 : ℕ) ^ 2 := bound _ (start_le w hw)
+          _ ≤ C * (2 * Real.sqrt w) * Real.log w ^ 2 :=
+            mul_le_mul (mul_le_mul_of_nonneg_left kR hC) squared (by positivity) (by positivity)
+          _ = _ := by unfold defectScale; ring
+      have split : gap w = (s + 1) ^ 2 - w + delay (s + 1) := by
+        change (s + 1) ^ 2 + delay (s + 1) - w = _
+        omega
+      have hBase : (↑((s + 1) ^ 2 - w : ℕ) : ℝ) ≤ 2 * (1 + defectScale w) :=
+        (Nat.cast_le.mpr stepBound).trans (square_gap_bound (by omega))
+      rw [split, Nat.cast_add]
+      nlinarith only [hBase, hDelay, hC]
+    apply (scaled_gap_safe_slot_iff_cryptids_RH first gap
+      (C := 2 + 2 * C) (by positivity) range).mp
+    intro w hw
+    let k := Nat.sqrt w + 1
+    obtain ⟨d, within, slot, accepted⟩ := safe k (start_le w hw)
+    have next : w ≤ k ^ 2 := (Nat.lt_succ_sqrt' w).le
+    have before : w ≤ k ^ 2 + d := next.trans (Nat.le_add_right _ _)
+    have fits : k ^ 2 + d - w ≤ gap w :=
+      Nat.sub_le_sub_right (Nat.add_le_add_left within _) _
+    refine ⟨k ^ 2 + d - w, fits, slot, ?_⟩
+    rw [Nat.add_sub_of_le before]
+    exact fun bad => (slotAccepts_iff_safe _ _).mp accepted
+      ((counterexample_iff_cryptids _).mp bad)
+  · intro rh k _
+    refine ⟨0, Nat.zero_le _, 0, ?_⟩
+    exact (window_accepts_iff_all_slots_accept _).mp (all_windows_accept_iff_cryptids_RH.mpr rh _) _
+
+/-- A forward delay of order k log²(k+1) from each quadratic window
+preserves the original one-slot coverage criterion. The delayed window
+need not be a square. -/
+theorem delayed_square_slot_accepts_iff_cryptids_RH
+    (start : ℕ) (delay : ℕ → ℕ) (slot : Fin 95)
+    {C : ℝ} (hC : 0 ≤ C)
+    (bound : ∀ k ≥ start, (delay k : ℝ) ≤ C * k * Real.log (k + 1 : ℕ) ^ 2) :
+    (∀ k ≥ start, slotAccepts (k ^ 2 + delay k) slot = true) ↔ RiemannHypothesis := by
+  constructor
+  · intro safe
+    exact (square_band_slot_accepts_iff_cryptids_RH start delay hC bound).mp
+      (fun k hk => ⟨delay k, le_rfl, slot, safe k hk⟩)
+  · intro rh k _
+    exact (window_accepts_iff_all_slots_accept _).mp (all_windows_accept_iff_cryptids_RH.mpr rh _) _
+
+/-- Sound checked receipts may select any window and slot in each band. -/
+theorem cryptids_RH_of_square_band_certificates {Certificate : Type*}
+    (check : ℕ → Fin 95 → Certificate → Bool)
+    (sound : ∀ w slot c, check w slot c = true →
+      ¬ ShuniaCounterexample (stageArgument (stageOrdinal w slot)))
+    (start : ℕ) (delay : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    (bound : ∀ k ≥ start, (delay k : ℝ) ≤ C * k * Real.log (k + 1 : ℕ) ^ 2)
+    (cover : ∀ k ≥ start, ∃ d ≤ delay k, ∃ (slot : Fin 95) (c : Certificate),
+      check (k ^ 2 + d) slot c = true) : RiemannHypothesis := by
+  apply (square_band_slot_accepts_iff_cryptids_RH start delay hC bound).mp
+  intro k hk
+  obtain ⟨d, within, slot, c, verified⟩ := cover k hk
+  exact ⟨d, within, slot, (slotAccepts_iff_safe _ _).mpr (sound _ _ c verified)⟩
+
+/-- The delayed schedule k²+k avoids the square schedule at every
+positive index, while retaining the same RH equivalence on any tail
+starting at or beyond 2. -/
+theorem adjacent_product_window_control (start : ℕ) (late : 2 ≤ start) (slot : Fin 95) :
+    ((∀ k ≥ start, slotAccepts (k ^ 2 + k) slot = true) ↔ RiemannHypothesis) ∧
+    (∀ k ≥ start, ∀ j : ℕ, k ^ 2 + k ≠ j ^ 2) := by
+  constructor
+  · apply delayed_square_slot_accepts_iff_cryptids_RH start id slot (C := 1) (by norm_num)
+    intro k hk
+    have hlog := log_nat_ge_one (show 3 ≤ k + 1 by omega)
+    have square : 1 ≤ Real.log (k + 1 : ℕ) ^ 2 := by nlinarith
+    simpa only [id_eq, one_mul, mul_one] using
+      mul_le_mul_of_nonneg_left square (show (0 : ℝ) ≤ k by positivity)
+  · intro k hk j eq
+    have high : k ^ 2 + k < (k + 1) ^ 2 := by nlinarith
+    by_cases h : j ≤ k
+    · have bound := Nat.pow_le_pow_left h 2
+      omega
+    · have bound := Nat.pow_le_pow_left (show k + 1 ≤ j by omega) 2
+      omega
+
+
+/-- A cofinal schedule with controlled upward jumps suffices even if it
+sometimes goes backwards. Only the first crossing of each window matters. -/
+theorem cofinal_bounded_upward_slot_accepts_iff_cryptids_RH
+    (start : ℕ) (schedule : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    (positive : ∀ k ≥ start, 1 ≤ schedule k)
+    (cofinal : ∀ w, ∃ k ≥ start, w ≤ schedule k)
+    (jump : ∀ k ≥ start,
+      ((schedule (k + 1) - schedule k : ℕ) : ℝ) ≤ C * (1 + defectScale (schedule k))) :
+    (∀ k ≥ start, ∃ slot : Fin 95, slotAccepts (schedule k) slot = true) ↔
+      RiemannHypothesis := by
+  constructor
+  · intro accepted
+    let gap (w : ℕ) := ⌈C * (1 + defectScale w)⌉₊
+    have nonneg (w : ℕ) : 0 ≤ defectScale w := by unfold defectScale; positivity
+    apply (scaled_gap_safe_slot_iff_cryptids_RH (schedule start + 1) gap
+      (C := C + 1) (by positivity) ?_).mp
+    · intro w hw
+      have existsCross : ∃ offset, w ≤ schedule (start + offset) := by
+        obtain ⟨k, hk, cross⟩ := cofinal w
+        obtain ⟨offset, rfl⟩ := Nat.exists_eq_add_of_le hk
+        exact ⟨offset, cross⟩
+      obtain ⟨j, first⟩ : ∃ j, Nat.find existsCross = j + 1 := by
+        have notZero : Nat.find existsCross ≠ 0 := by
+          intro eq
+          have spec := Nat.find_spec existsCross
+          rw [eq, Nat.add_zero] at spec
+          omega
+        exact ⟨Nat.find existsCross - 1, by omega⟩
+      have past : w ≤ schedule (start + j + 1) := by
+        simpa only [first, Nat.add_assoc] using Nat.find_spec existsCross
+      have before : schedule (start + j) < w := by
+        exact Nat.lt_of_not_ge (Nat.find_min existsCross (by omega : j < Nat.find existsCross))
+      have base := Nat.le_add_right start j
+      have size : ((schedule (start + j + 1) - w : ℕ) : ℝ) ≤ C * (1 + defectScale w) := by
+        calc
+          _ ≤ ((schedule (start + j + 1) - schedule (start + j) : ℕ) : ℝ) :=
+            Nat.cast_le.mpr (Nat.sub_le_sub_left before.le _)
+          _ ≤ _ := (jump _ base).trans (mul_le_mul_of_nonneg_left
+            (add_le_add le_rfl (scale_le_scale (positive _ base) before.le)) hC)
+      obtain ⟨slot, safe⟩ := accepted (start + j + 1) (by omega)
+      refine ⟨schedule (start + j + 1) - w, ?_, slot, ?_⟩
+      · exact_mod_cast size.trans (Nat.le_ceil _)
+      · rw [Nat.add_sub_of_le past]
+        exact fun bad => (slotAccepts_iff_safe _ _).mp safe ((counterexample_iff_cryptids _).mp bad)
+    · intro w _
+      have ceil := Nat.ceil_lt_add_one (mul_nonneg hC (by linarith [nonneg w]) :
+        0 ≤ C * (1 + defectScale w))
+      change (↑⌈C * (1 + defectScale w)⌉₊ : ℝ) ≤ _
+      nlinarith only [ceil, nonneg w]
+  · intro rh k _
+    exact ⟨0, (window_accepts_iff_all_slots_accept _).mp (all_windows_accept_iff_cryptids_RH.mpr rh _) _⟩
+
+/-- Implementation soundness and certificate existence remain separate
+premises for a cofinal schedule with bounded upward jumps. -/
+theorem cryptids_RH_of_cofinal_bounded_upward_certificates {Certificate : Type*}
+    (check : ℕ → Fin 95 → Certificate → Bool)
+    (sound : ∀ w slot c, check w slot c = true →
+      ¬ ShuniaCounterexample (stageArgument (stageOrdinal w slot)))
+    (start : ℕ) (schedule : ℕ → ℕ) {C : ℝ} (hC : 0 ≤ C)
+    (positive : ∀ k ≥ start, 1 ≤ schedule k)
+    (cofinal : ∀ w, ∃ k ≥ start, w ≤ schedule k)
+    (jump : ∀ k ≥ start,
+      ((schedule (k + 1) - schedule k : ℕ) : ℝ) ≤ C * (1 + defectScale (schedule k)))
+    (covered : ∀ k ≥ start, ∃ (slot : Fin 95) (c : Certificate),
+      check (schedule k) slot c = true) : RiemannHypothesis := by
+  apply (cofinal_bounded_upward_slot_accepts_iff_cryptids_RH start schedule hC positive cofinal jump).mp
+  intro k hk
+  obtain ⟨slot, certificate, verified⟩ := covered k hk
+  exact ⟨slot, (slotAccepts_iff_safe _ _).mpr (sound _ _ certificate verified)⟩
+
+/-- Alternating backward moves do not invalidate the coverage criterion. -/
+theorem backward_step_schedule_control :
+    let schedule (k : ℕ) := k / 2 + if k % 2 = 0 then 2 else 1
+    schedule 1 < schedule 0 ∧
+      ((∀ k, ∃ slot : Fin 95, slotAccepts (schedule k) slot = true) ↔ RiemannHypothesis) := by
+  let schedule (k : ℕ) := k / 2 + if k % 2 = 0 then 2 else 1
+  change schedule 1 < schedule 0 ∧ _
+  refine ⟨by decide, ?_⟩
+  have criterion := cofinal_bounded_upward_slot_accepts_iff_cryptids_RH 0 schedule
+    (C := 2) (by norm_num) ?_ ?_ ?_
+  · simpa using criterion
+  · intro k _
+    dsimp [schedule]
+    split <;> omega
+  · intro w
+    refine ⟨2 * w, Nat.zero_le _, ?_⟩
+    dsimp [schedule]
+    split <;> omega
+  · intro k _
+    have h : schedule (k + 1) - schedule k ≤ 2 := by
+      dsimp [schedule]
+      split <;> split <;> omega
+    have scale : 0 ≤ defectScale (schedule k) := by unfold defectScale; positivity
+    have hr : ((schedule (k + 1) - schedule k : ℕ) : ℝ) ≤ 2 := by exact_mod_cast h
+    linarith
+
+/-- The allowance stays above every fixed requested block length once
+the square index is large enough. -/
+theorem logSquareAllowance_eventually_ge (length : ℕ) :
+    ∃ cutoff, ∀ k ≥ cutoff, length ≤ logSquareAllowance k := by
+  obtain ⟨cutoff, hk⟩ := exists_nat_gt
+    (max (length : ℝ) (Real.exp (Real.sqrt length)))
+  refine ⟨cutoff, fun k later => ?_⟩
+  have larger : (cutoff : ℝ) ≤ k := by exact_mod_cast later
+  have enough : (max (length : ℝ) (Real.exp (Real.sqrt length))) ≤ k := hk.le.trans larger
+  have hExp : Real.exp (Real.sqrt length) ≤ (k + 1 : ℕ) := by
+    exact (le_max_right _ _).trans (enough.trans (by push_cast; linarith))
+  have hLog := Real.log_le_log (Real.exp_pos _) hExp
+  rw [Real.log_exp] at hLog
+  have square := pow_le_pow_left₀ (Real.sqrt_nonneg (length : ℝ)) hLog 2
+  rw [Real.sq_sqrt (by positivity : (0 : ℝ) ≤ length)] at square
+  exact le_min (by exact_mod_cast (le_max_left _ _).trans enough)
+    ((Nat.le_floor_iff (by positivity)).2 square)
+
+/-- Original native halting is equivalent to finding fully rejected
+square blocks of every requested finite length past every cutoff. -/
+theorem cryptids_halts_iff_arbitrarily_long_square_rejections :
+    Halts Riemann95.candidate ↔
+      ∀ start length : ℕ, ∃ k ≥ start, ∀ j < length,
+        ∀ slot : Fin 95, slotAccepts ((k + j) ^ 2) slot = false := by
+  constructor
+  · intro halts start length
+    obtain ⟨cutoff, large⟩ := logSquareAllowance_eventually_ge length
+    obtain ⟨k, late, rejected⟩ :=
+      cryptids_halts_iff_cofinal_log_square_rejection_blocks.mp halts (max start cutoff)
+    exact ⟨k, (le_max_left _ _).trans late, fun j hj =>
+      rejected j (hj.le.trans (large k ((le_max_right _ _).trans late)))⟩
+  · intro blocks
+    obtain ⟨k, _, rejected⟩ := blocks 0 1
+    rw [Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis]
+    intro rh
+    have good := (window_accepts_iff_all_slots_accept ((k + 0) ^ 2)).mp
+      (all_windows_accept_iff_cryptids_RH.mpr rh _) 0
+    rw [rejected 0 (by decide) 0] at good
+    cases good
+
+/-- For any fixed positive block length, one sound safe-slot certificate
+per block of consecutive square indices suffices. An implementation may
+omit every other report in the block. -/
+theorem cryptids_RH_of_fixed_square_block_certificates {Certificate : Type*}
+    (check : ℕ → Fin 95 → Certificate → Bool)
+    (sound : ∀ w slot c, check w slot c = true →
+      ¬ ShuniaCounterexample (stageArgument (stageOrdinal w slot)))
+    (start length : ℕ)
+    (covered : ∀ k ≥ start, ∃ j < length, ∃ (slot : Fin 95) (c : Certificate),
+      check ((k + j) ^ 2) slot c = true) : RiemannHypothesis := by
+  by_contra notRH
+  have halts := Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr notRH
+  obtain ⟨k, late, rejected⟩ := cryptids_halts_iff_arbitrarily_long_square_rejections.mp halts start length
+  obtain ⟨j, hj, slot, c, verified⟩ := covered k late
+  have good := (slotAccepts_iff_safe _ _).mpr (sound _ _ c verified)
+  rw [rejected j hj slot] at good
+  cases good
+
+/-- A square-numbered window rejects fully if no literal slot passes. -/
+def squareRejects (k : ℕ) : Bool :=
+  (List.finRange 95).all fun slot => !(slotAccepts (k ^ 2) slot)
+
+theorem squareRejects_eq_true_iff (k : ℕ) :
+    squareRejects k = true ↔ ∀ slot : Fin 95, slotAccepts (k ^ 2) slot = false := by
+  simp [squareRejects, List.all_eq_true]
+
+/-- Length of the trailing block of fully rejected square windows after
+the first n square indices have been checked. -/
+def trailingSquareRejections : ℕ → ℕ
+  | 0 => 0
+  | n + 1 => if squareRejects n then trailingSquareRejections n + 1 else 0
+
+theorem le_trailingSquareRejections_iff (n length : ℕ) :
+    length ≤ trailingSquareRejections n ↔
+      length ≤ n ∧ ∀ j < length, squareRejects (n - 1 - j) = true := by
+  induction n generalizing length with
+  | zero =>
+    cases length <;> simp [trailingSquareRejections]
+  | succ n ih =>
+    cases length with
+    | zero => simp
+    | succ length =>
+      cases h : squareRejects n with
+      | false =>
+        rw [trailingSquareRejections, h]
+        simp only [Bool.false_eq_true, ite_false]
+        constructor
+        · omega
+        · rintro ⟨_, recent⟩
+          have head : squareRejects n = true := by simpa using recent 0 (by omega)
+          rw [h] at head
+          cases head
+      | true =>
+        simp only [trailingSquareRejections, h, ite_true, Nat.succ_le_succ_iff]
+        rw [ih]
+        constructor
+        · rintro ⟨bound, recent⟩
+          refine ⟨bound, ?_⟩
+          intro j hj
+          cases j with
+          | zero => simpa using h
+          | succ j =>
+            have index : n + 1 - 1 - (j + 1) = n - 1 - j := by omega
+            rw [index]
+            exact recent j (by omega)
+        · rintro ⟨bound, recent⟩
+          refine ⟨bound, fun j hj => ?_⟩
+          have index : n + 1 - 1 - (j + 1) = n - 1 - j := by omega
+          exact index ▸ recent (j + 1) (by omega)
+
+/-- Any observed positive streak is a finite witness of native halting. -/
+theorem cryptids_halts_of_trailingSquareRejections_pos {n : ℕ}
+    (positive : 0 < trailingSquareRejections n) : Halts Riemann95.candidate := by
+  have reject := (le_trailingSquareRejections_iff n 1).mp positive
+  have bad := (squareRejects_eq_true_iff _).mp (reject.2 0 (by decide)) 0
+  rw [Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis]
+  intro rh
+  have good := (window_accepts_iff_all_slots_accept ((n - 1 - 0) ^ 2)).mp
+    (all_windows_accept_iff_cryptids_RH.mpr rh _) 0
+  rw [bad] at good
+  cases good
+
+/-- The one-counter monitor attains arbitrary lengths on every tail
+exactly when the original blank-tape machine halts. -/
+theorem cryptids_halts_iff_trailingSquareRejections_unbounded :
+    Halts Riemann95.candidate ↔
+      ∀ start length : ℕ, ∃ n ≥ start, length ≤ trailingSquareRejections n := by
+  constructor
+  · intro halts start length
+    obtain ⟨k, later, block⟩ :=
+      cryptids_halts_iff_arbitrarily_long_square_rejections.mp halts start length
+    refine ⟨k + length, by omega, (le_trailingSquareRejections_iff _ _).mpr ⟨by omega, ?_⟩⟩
+    intro j hj
+    have index : k + length - 1 - j = k + (length - 1 - j) := by omega
+    rw [index, squareRejects_eq_true_iff]
+    exact block _ (by omega)
+  · rintro unbounded
+    obtain ⟨n, _, bound⟩ := unbounded 0 1
+    exact cryptids_halts_of_trailingSquareRejections_pos bound
+
+/-- An eventual upper bound for the native counter certifies RH. -/
+theorem cryptids_RH_iff_eventually_bounded_trailingSquareRejections :
+    RiemannHypothesis ↔
+      ∃ start bound : ℕ, ∀ n ≥ start, trailingSquareRejections n ≤ bound := by
+  constructor
+  · intro rh
+    refine ⟨0, 0, fun n _ => ?_⟩
+    by_contra! positive
+    exact (Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mp
+      (cryptids_halts_of_trailingSquareRejections_pos positive)) rh
+  · rintro ⟨start, bound, bounded⟩
+    by_contra notRH
+    have halts := Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis.mpr notRH
+    obtain ⟨n, hn, large⟩ :=
+      cryptids_halts_iff_trailingSquareRejections_unbounded.mp halts start (bound + 1)
+    have small := bounded n hn
+    omega
+
+/-- The literal square window resets the counter exactly when a slot passes. -/
+theorem squareRejects_eq_false_iff (k : ℕ) :
+    squareRejects k = false ↔ ∃ slot : Fin 95, slotAccepts (k ^ 2) slot = true := by
+  constructor
+  · intro reset
+    by_contra missing
+    have rejects := (squareRejects_eq_true_iff k).mpr fun slot =>
+      Bool.eq_false_iff.mpr (not_exists.mp missing slot)
+    rw [reset] at rejects
+    contradiction
+  · rintro ⟨slot, passes⟩
+    apply Bool.eq_false_iff.mpr
+    intro rejects
+    have fails := (squareRejects_eq_true_iff k).mp rejects slot
+    rw [passes] at fails
+    contradiction
+
+/-- At the bound, the next count stays within the bound precisely when the
+current square has an accepting slot. -/
+theorem trailingSquareRejections_succ_le_iff_at_bound {k bound : ℕ}
+    (saturated : trailingSquareRejections k = bound) :
+    trailingSquareRejections (k + 1) ≤ bound ↔
+      ∃ slot : Fin 95, slotAccepts (k ^ 2) slot = true := by
+  rw [← squareRejects_eq_false_iff]
+  cases rejected : squareRejects k <;>
+    simp [trailingSquareRejections, rejected, saturated]
+
+/-- From an initialized bound, the counter can exceed it only by fully
+rejecting a square when the count is already at the bound. -/
+theorem trailingSquareRejections_tail_bound_iff {start bound : ℕ}
+    (initial : trailingSquareRejections start ≤ bound) :
+    (∀ n ≥ start, trailingSquareRejections n ≤ bound) ↔
+      ∀ k ≥ start, trailingSquareRejections k = bound →
+        ∃ slot : Fin 95, slotAccepts (k ^ 2) slot = true := by
+  constructor
+  · intro bounded k later saturated
+    exact (trailingSquareRejections_succ_le_iff_at_bound saturated).mp
+      (bounded (k + 1) (by omega))
+  · intro reset n
+    induction n with
+    | zero => simp [trailingSquareRejections]
+    | succ k ih =>
+      intro later
+      by_cases previous : start ≤ k
+      · have hk := ih previous
+        by_cases saturated : trailingSquareRejections k = bound
+        · exact (trailingSquareRejections_succ_le_iff_at_bound saturated).mpr
+            (reset k previous saturated)
+        · cases rejected : squareRejects k with
+          | false => simp [trailingSquareRejections, rejected]
+          | true =>
+            simp only [trailingSquareRejections, rejected, ite_true]
+            omega
+      · have boundary : k + 1 = start := by omega
+        rwa [boundary]
+
+/-- Acceptance is equivalent to the integer product comparison at the
+literal argument decoded from this window and slot. -/
+theorem slotAccepts_iff_product_ge_pow (window : ℕ) (slot : Fin 95) :
+    slotAccepts window slot = true ↔
+      let n := stageArgument (stageOrdinal window slot)
+      n ^ (n - threshold n) ≤ (n - 1) * (n.factorial * primeProduct n - 1) := by
+  simpa only [slotAccepts, decide_eq_true_eq] using
+    (safe_iff_product_ge_pow (n := stageArgument (stageOrdinal window slot))
+      (by simp [stageArgument]))
+
+/-- For any initialized tail bound, RH is equivalent to finding a literal
+slot satisfying the integer product bound at every saturation. -/
+theorem cryptids_RH_iff_product_bound_at_square_saturation {start bound : ℕ}
+    (initial : trailingSquareRejections start ≤ bound) :
+    RiemannHypothesis ↔
+      ∀ k ≥ start, trailingSquareRejections k = bound →
+        ∃ slot : Fin 95,
+          let n := stageArgument (stageOrdinal (k ^ 2) slot)
+          n ^ (n - threshold n) ≤ (n - 1) * (n.factorial * primeProduct n - 1) := by
+  constructor
+  · intro rh k _ _
+    have passes := (window_accepts_iff_all_slots_accept (k ^ 2)).mp
+      (all_windows_accept_iff_cryptids_RH.mpr rh (k ^ 2)) 0
+    exact ⟨0, (slotAccepts_iff_product_ge_pow (k ^ 2) 0).mp passes⟩
+  · intro comparison
+    apply cryptids_RH_iff_eventually_bounded_trailingSquareRejections.mpr
+    refine ⟨start, bound, (trailingSquareRejections_tail_bound_iff initial).mpr ?_⟩
+    intro k later saturated
+    obtain ⟨slot, good⟩ := comparison k later saturated
+    exact ⟨slot, (slotAccepts_iff_product_ge_pow (k ^ 2) slot).mpr good⟩
+
+/-- The saturated square criterion with an exact Chebyshev lower bound
+at the literal accepting slot. -/
+theorem cryptids_RH_iff_theta_at_square_saturation {start bound : ℕ}
+    (initial : trailingSquareRejections start ≤ bound) :
+    RiemannHypothesis ↔
+      ∀ k ≥ start, trailingSquareRejections k = bound →
+        ∃ slot : Fin 95,
+          let n := stageArgument (stageOrdinal (k ^ 2) slot)
+          primeProductCutoff n = 0 ∨
+            Real.log (primeProductCutoff n : ℝ) < Chebyshev.theta (n : ℝ) := by
+  have slot_transfer (window : ℕ) (slot : Fin 95) :
+      slotAccepts window slot = true ↔
+        let n := stageArgument (stageOrdinal window slot)
+        primeProductCutoff n = 0 ∨
+          Real.log (primeProductCutoff n : ℝ) < Chebyshev.theta (n : ℝ) :=
+    (slotAccepts_iff_safe window slot).trans
+      (safe_iff_zero_cutoff_or_log_cutoff_lt_theta (by simp [stageArgument]))
+  rw [cryptids_RH_iff_product_bound_at_square_saturation initial]
+  simp_rw [← slotAccepts_iff_product_ge_pow, slot_transfer]
+
+/-- Saturating the native rejection monitor at a prescribed cap uses
+only the states from zero through that cap. -/
+def cappedSquareRejections (cap : ℕ) : ℕ → ℕ
+  | 0 => 0
+  | n + 1 => if squareRejects n then min cap (cappedSquareRejections cap n + 1) else 0
+
+theorem cappedSquareRejections_eq_min (cap n : ℕ) :
+    cappedSquareRejections cap n = min cap (trailingSquareRejections n) := by
+  induction n with
+  | zero => simp [cappedSquareRejections, trailingSquareRejections]
+  | succ n ih =>
+    cases h : squareRejects n
+    · simp [cappedSquareRejections, trailingSquareRejections, h]
+    · simp only [cappedSquareRejections, trailingSquareRejections, h, ite_true, ih]
+      rcases le_total cap (trailingSquareRejections n) with small | large
+      · rw [min_eq_left small, min_eq_left (by omega : cap ≤ cap + 1),
+          min_eq_left (by omega : cap ≤ trailingSquareRejections n + 1)]
+      · rw [min_eq_right large]
+
+/-- For every positive cap, saturation at any finite time is a native
+halting certificate. Native halting forces saturation past every cutoff. -/
+theorem cryptids_halts_iff_cappedSquareRejections_saturates {cap : ℕ}
+    (positive : 0 < cap) :
+    (Halts Riemann95.candidate ↔ ∃ n, cappedSquareRejections cap n = cap) ∧
+    (Halts Riemann95.candidate ↔
+      ∀ start, ∃ n ≥ start, cappedSquareRejections cap n = cap) := by
+  have threshold (n : ℕ) :
+      cappedSquareRejections cap n = cap ↔ cap ≤ trailingSquareRejections n := by
+    rw [cappedSquareRejections_eq_min]
+    omega
+  have recurring (halts : Halts Riemann95.candidate) (start : ℕ) :
+      ∃ n ≥ start, cappedSquareRejections cap n = cap := by
+    obtain ⟨n, later, long⟩ :=
+      cryptids_halts_iff_trailingSquareRejections_unbounded.mp halts start cap
+    exact ⟨n, later, (threshold n).mpr long⟩
+  have sound (n : ℕ) (saturated : cappedSquareRejections cap n = cap) :
+      Halts Riemann95.candidate :=
+    cryptids_halts_of_trailingSquareRejections_pos (positive.trans_le ((threshold n).mp saturated))
+  exact ⟨⟨fun halts => let ⟨n, _, h⟩ := recurring halts 0; ⟨n, h⟩,
+      fun ⟨n, h⟩ => sound n h⟩,
+    ⟨recurring, fun h => let ⟨n, _, saturated⟩ := h 0; sound n saturated⟩⟩
+
+/-- At cap zero, saturation ceases to carry information about the
+underlying arithmetic results. -/
+theorem cappedSquareRejections_zero_cap (n : ℕ) :
+    cappedSquareRejections 0 n = 0 := by
+  simp [cappedSquareRejections_eq_min]
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 end GRWTSK.NumberTheory.Riemann95StageCertificates

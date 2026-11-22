@@ -60,9 +60,8 @@ private theorem term_line_continuous (a : ℕ → ℂ) (n : ℕ) :
   · subst n
     simpa only [LSeries.term_zero] using (continuous_const : Continuous (fun _ : ℝ => (0 : ℂ)))
   · simp only [LSeries.term_of_ne_zero hn]
-    apply continuous_const.div
-      ((show Continuous (fun t : ℝ => (2 : ℂ) + Complex.I * (t : ℂ)) by fun_prop).
-        const_cpow (.inl (by exact_mod_cast hn)))
+    have hc : Continuous (fun t : ℝ => (2 : ℂ) + Complex.I * (t : ℂ)) := by fun_prop
+    apply continuous_const.div (hc.const_cpow (.inl (by exact_mod_cast hn)))
     intro t
     exact Complex.cpow_ne_zero_iff.mpr (.inl (by exact_mod_cast hn))
 
@@ -109,7 +108,7 @@ theorem integral_mul_primeSeries_eq_tsum (chi : DirichletCharacter ℂ q)
     _ = ∫ t : ℝ, ∑' n : ℕ, phi t *
         LSeries.term a (2 + Complex.I * (t : ℂ)) n := by
       apply integral_congr_ae
-      exact Filter.Eventually.of_forall (fun t => by rw [LSeries, tsum_mul_left])
+      exact Filter.Eventually.of_forall (fun t => by dsimp; unfold LSeries; rw [tsum_mul_left])
     _ = _ := hx
 
 private theorem per_term_from_inversion (chi : DirichletCharacter ℂ q)
@@ -138,6 +137,7 @@ private theorem per_term_from_inversion (chi : DirichletCharacter ℂ q)
     have he : (Real.log (n : ℝ) : ℂ) * (-(2 + Complex.I * (t : ℂ))) =
         ((-2 * Real.log (n : ℝ) : ℝ) : ℂ) +
           (-Complex.I * (t : ℂ) * (Real.log (n : ℝ) : ℂ)) := by push_cast; ring
+    rw [Complex.natCast_log] at he
     rw [he, Complex.exp_add, ← Complex.ofReal_exp]
     dsimp only [c]
     ring
@@ -200,7 +200,7 @@ theorem prime_line_correlation_evaluation (chi : DirichletCharacter ℂ q)
   apply evaluate_line chi (fun t => W (2 + Complex.I * (t : ℂ))) (correlation f)
     (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
   intro y
-  simpa only [show (2 : ℝ) - 1 / 2 = 3 / 2 by norm_num] using
+  simpa only [W, Complex.ofReal_ofNat, show (2 : ℝ) - 1 / 2 = 3 / 2 by norm_num] using
     correlation_weight_inversion f A hA hf hs 2 y
 
 private theorem reflected_weight_identity (f : ℝ → ℂ) (s : ℂ) :
@@ -217,7 +217,7 @@ private theorem reflected_weight_identity (f : ℝ → ℂ) (s : ℂ) :
 
 private theorem negative_correlation (f : ℝ → ℂ) (r : ℝ) :
     correlation f (-r) = conj (correlation f r) := by
-  have h := (integral_add_right_eq_self
+  have h := (integral_add_right_eq_self (μ := volume)
     (fun t : ℝ => conj (f t) * f (t + -r)) r).symm
   calc
     _ = ∫ t : ℝ, conj (f (t + r)) * f t := by
@@ -253,11 +253,13 @@ theorem reflected_prime_line_eq_twistedPrime (chi : DirichletCharacter ℂ q)
   have hleft (t : ℝ) : W (1 - (2 + Complex.I * (t : ℂ))) =
       V (2 + Complex.I * (t : ℂ)) := by rw [hW, sub_sub_cancel]
   have hri : Integrable (fun t : ℝ => W (2 + Complex.I * (t : ℂ))) volume := by
-    have hi := (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
+    have hi : Integrable (fun t : ℝ => V (-1 + Complex.I * ((-t : ℝ) : ℂ))) volume := by
+      simpa [V] using (integrable_correlation_contour_weight_vertical f A hA hf hs (-1)).1.comp_neg
     exact hi.congr (Filter.Eventually.of_forall (fun t => (hright t).symm))
   have hli : Integrable (fun t : ℝ => W (1 - (2 + Complex.I * (t : ℂ)))) volume := by
-    exact (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1.congr
-      (Filter.Eventually.of_forall (fun t => (hleft t).symm))
+    have hi : Integrable (fun t : ℝ => V (2 + Complex.I * (t : ℂ))) volume := by
+      simpa [V] using (integrable_correlation_contour_weight_vertical f A hA hf hs 2).1
+    exact hi.congr (Filter.Eventually.of_forall (fun t => (hleft t).symm))
   have hrInv (y : ℝ) : (1 / (2 * (Real.pi : ℂ))) *
       (∫ t : ℝ, W (2 + Complex.I * (t : ℂ)) *
         Complex.exp (-Complex.I * (t : ℂ) * (y : ℂ))) =
@@ -269,20 +271,21 @@ theorem reflected_prime_line_eq_twistedPrime (chi : DirichletCharacter ℂ q)
       rw [← integral_neg_eq_self]
       apply integral_congr_ae
       exact Filter.Eventually.of_forall (fun t => by
+        dsimp only
         rw [hright, neg_neg]
         push_cast
         congr 1
         congr 1
         ring)
     rw [he]
-    simpa only [show ∀ y : ℝ, ((-1 : ℝ) - 1 / 2) * (-y) = (3 / 2 : ℝ) * y by
+    simpa only [V, Complex.ofReal_neg, Complex.ofReal_one, show ∀ y : ℝ, ((-1 : ℝ) - 1 / 2) * (-y) = (3 / 2 : ℝ) * y by
       intro y; ring] using correlation_weight_inversion f A hA hf hs (-1) (-y)
   have hlInv (y : ℝ) : (1 / (2 * (Real.pi : ℂ))) *
       (∫ t : ℝ, W (1 - (2 + Complex.I * (t : ℂ))) *
         Complex.exp (-Complex.I * (t : ℂ) * (y : ℂ))) =
       correlation f y * (Real.exp ((3 / 2 : ℝ) * y) : ℂ) := by
     simp_rw [hleft]
-    simpa only [show (2 : ℝ) - 1 / 2 = 3 / 2 by norm_num] using
+    simpa only [V, Complex.ofReal_ofNat, show (2 : ℝ) - 1 / 2 = 3 / 2 by norm_num] using
       correlation_weight_inversion f A hA hf hs 2 y
   have hrEval := evaluate_line chi (fun t => W (2 + Complex.I * (t : ℂ)))
     (fun y => correlation f (-y)) hri hrInv

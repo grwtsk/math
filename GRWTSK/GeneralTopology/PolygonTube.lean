@@ -6,6 +6,7 @@ import Mathlib.Analysis.Complex.Norm
 import Mathlib.Tactic
 
 set_option autoImplicit false
+noncomputable section
 
 /-!
 # Ordered polygon edges and common-disk deformations

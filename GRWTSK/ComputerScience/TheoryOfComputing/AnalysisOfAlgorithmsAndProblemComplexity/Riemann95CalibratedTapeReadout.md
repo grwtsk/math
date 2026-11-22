@@ -98,3 +98,71 @@ sample `3/8` gave absolute error `1/4` against each code.
 
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
+<<<<<<< HEAD
+=======
+
+## Cofinal trials across prime windows
+
+For every native start and any sequence of prime windows, assume
+the samples at trial t accurately describe that same native start
+readdressed in the trial's window, at input depth equal to the trial's
+instruction budget b(t). If for every n some b(t) is at least n,
+an inner readout failure exists exactly when the original start
+halts. Readdressing commutes with the exact run and preserves its
+absence. An absent run remains absent at any larger budget. Thus
+any native failure budget is eventually met by some trial, even
+when the budgets are nonmonotone.
+
+Cofinality is necessary for this uniform guarantee over all native
+starts. If all budgets are below n, the original state-12 sweep with
+padding n eventually reaches the sole terminal cell. Its first
+n+8 instructions all succeed, so even ideal unit-gain samples
+give no failure at the scheduled budgets. For blank-start trials,
+the positive theorem composes with the pinned halting equivalence
+and yields a readout failure exactly when RH is false.
+
+The scope of the necessity example is arbitrary starts. To apply
+the sufficiency theorem to the physical controller, the sensor
+must supply valid metadata and strict half-gap accuracy at each
+trial, and the schedule must meet the cofinal budget condition.
+
+Pinned strict compilation, target replay, the bounded-delay and
+nonmonotone schedule controls, and all three axiom audits passed.
+Fresh full import replay, independent review and physical HS
+readout accuracy were NOT_RUN.
+
+## Executable handoff check
+
+`checkReadout_handoff_iff` assumes an accurate first sample at depth
+`n+d` and a successful `n`-instruction prediction from that sample.
+The native run then has a successor. For every destination window,
+new calibration, and sample at depth `d`, the Boolean check against the
+readdressed prediction succeeds exactly when the new sample is accurate
+for the readdressed native successor. The finite visibility theorem
+matches the address, signed position, scanned bit and both tape
+prefixes at the boundary. Readdressing changes the two matched control
+codes by the same map. Readout accuracy uses precisely this finite data,
+so the rational error comparisons have the same inputs on both sides.
+
+`shifted_readout_passes_address_but_disagrees` changes only the position
+of an ideal sample. Its prime address remains valid while its absolute
+position fails the accuracy predicate. This matters at any window
+handoff, including one with exact tape samples.
+
+The next physical premise is supplying the first accurate reading and
+then presenting accurate boundary samples with depths sufficient for
+the following blocks. The check certifies the supplied finite boundary
+data under the first accuracy premise. It supplies neither an existence
+theorem for sensor readings nor progress of the physical gate.
+
+Strict target compilation and module kernel replay passed after rebuilding
+the pinned prime-machine and prime-enumeration imports. All six theorem
+axiom audits found only `propext`, `Classical.choice` and `Quot.sound`.
+The first instruction from blank in window zero, followed by readdressing
+to window one, gave prime 827 and position -1. The boundary check accepted
+the ideal sample and rejected its shifted version. The address decoder
+still accepted the shifted version. Source SHA-256
+`a7ec071668698cadf4960bd72f424e8a33feaa7419bc588a2cc3b5392909d1ac`.
+Full fresh import replay, independent review and physical validation
+are `NOT_RUN`.
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

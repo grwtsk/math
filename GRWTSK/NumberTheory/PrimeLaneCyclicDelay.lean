@@ -96,4 +96,120 @@ theorem five_lane_one_phase_infeasible : ¬ Nonempty (Layout 95 5 19 2) := by
   have limit := capacity (by decide) (by decide) (by decide) layout
   omega
 
+<<<<<<< HEAD
+=======
+/-- The least nonnegative delay carrying the start to the observed phase. -/
+def cyclicDelay {phases : ℕ} (start observed : Fin phases) : ℕ :=
+  (observed.val + phases - start.val) % phases
+
+theorem cyclicDelay_lt_iff {phases width : ℕ} (start observed : Fin phases) :
+    cyclicDelay start observed < width ↔
+      ∃ a : Fin width, (start.val + a.val) % phases = observed.val := by
+  let d := observed.val + phases - start.val
+  have hs := start.isLt
+  have ho := observed.isLt
+  have added : start.val + d = observed.val + phases := by dsimp [d]; omega
+  have observedEq : (start.val + d) % phases = observed.val := by
+    rw [added, Nat.add_mod_right, Nat.mod_eq_of_lt ho]
+  constructor
+  · intro valid
+    refine ⟨⟨d % phases, valid⟩, ?_⟩
+    change (start.val + d % phases) % phases = observed.val
+    rwa [Nat.add_mod_mod]
+  · rintro ⟨a, read⟩
+    have congruent : start.val + d ≡ start.val + a.val [MOD phases] :=
+      observedEq.trans read.symm
+    have offset := Nat.ModEq.add_left_cancel' start.val congruent
+    change d % phases = a.val % phases at offset
+    change d % phases < width
+    rw [offset]
+    exact (Nat.mod_le _ _).trans_lt a.isLt
+
+private def matchesRead {states lanes phases width : ℕ} (layout : Layout states lanes phases width)
+    (offset rank : ℕ) (observed : Fin phases) (q : Fin states) : Bool :=
+  decide (rank = offset + (layout.lane q).val ∧ cyclicDelay (layout.start q) observed < width)
+
+/-- A cyclic read uses its raw prime and phase. Search the finite controls,
+testing a single least-delay residue for each control. -/
+def decodeCyclicPrime {states lanes phases width : ℕ} (layout : Layout states lanes phases width)
+    (offset p : ℕ) (observed : Fin phases) : Option (Fin states) :=
+  if p.Prime then
+    (List.finRange states).find? (matchesRead layout offset (Nat.count Nat.Prime p) observed)
+  else none
+
+theorem decodeCyclicPrime_eq_some_iff {states lanes phases width : ℕ}
+    (layout : Layout states lanes phases width) (offset p : ℕ) (observed : Fin phases)
+    (q : Fin states) :
+    decodeCyclicPrime layout offset p observed = some q ↔
+      p = Nat.nth Nat.Prime (offset + (layout.lane q).val) ∧
+      ∃ a : Fin width, ((layout.start q).val + a.val) % phases = observed.val := by
+  have matchSpec (r : Fin states) :
+      matchesRead layout offset (Nat.count Nat.Prime p) observed r = true ↔
+        Nat.count Nat.Prime p = offset + (layout.lane r).val ∧
+          ∃ a : Fin width, ((layout.start r).val + a.val) % phases = observed.val := by
+    simp [matchesRead, cyclicDelay_lt_iff]
+  constructor
+  · intro decoded
+    have prime : p.Prime := by
+      by_contra notPrime
+      simp [decodeCyclicPrime, notPrime] at decoded
+    rw [decodeCyclicPrime, ite_eq_left prime] at decoded
+    obtain ⟨rank, valid⟩ := (matchSpec q).1 (List.find?_eq_some_iff_append.1 decoded).1
+    exact ⟨(Nat.nth_count prime).symm.trans (congrArg (Nat.nth Nat.Prime) rank), valid⟩
+  · rintro ⟨label, valid⟩
+    have prime : p.Prime := label.symm ▸ Nat.nth_mem_of_infinite Nat.infinite_setOfPred_prime _
+    have rank : Nat.count Nat.Prime p = offset + (layout.lane q).val := by
+      rw [label, Nat.count_nth_of_infinite Nat.infinite_setOfPred_prime]
+    have found := (matchSpec q).2 ⟨rank, valid⟩
+    rw [decodeCyclicPrime, ite_eq_left prime]
+    generalize result : (List.finRange states).find?
+      (matchesRead layout offset (Nat.count Nat.Prime p) observed) = answer
+    cases answer with
+    | none => exact ((List.find?_eq_none.1 result) q (List.mem_finRange q) found).elim
+    | some r =>
+      obtain ⟨rank', a, ha⟩ := (matchSpec r).1 (List.find?_eq_some_iff_append.1 result).1
+      obtain ⟨b, hb⟩ := valid
+      have sameLane : layout.lane r = layout.lane q :=
+        Fin.ext (Nat.add_left_cancel (rank'.symm.trans rank))
+      exact congrArg some (layout.separates r q sameLane a b (ha.trans hb.symm))
+
+/-- Two successive bounded delays give exactly the same cyclic readings
+as one delay with width the sum of the two widths minus one. -/
+theorem two_delays_iff {phases width₁ width₂ : ℕ} (h₁ : 0 < width₁) (h₂ : 0 < width₂)
+    (start observed : Fin phases) :
+    (∃ a : Fin width₁, ∃ b : Fin width₂,
+      (((start.val + a.val) % phases) + b.val) % phases = observed.val) ↔
+    ∃ d : Fin (width₁ + width₂ - 1), (start.val + d.val) % phases = observed.val := by
+  constructor
+  · rintro ⟨a, b, read⟩
+    have ha := a.isLt
+    have hb := b.isLt
+    refine ⟨⟨a.val + b.val, by omega⟩, ?_⟩
+    simpa only [Nat.mod_add_mod, Nat.add_assoc] using read
+  · rintro ⟨d, read⟩
+    let a := min d.val (width₁ - 1)
+    have ha : a < width₁ := (min_le_right _ _).trans_lt (by omega)
+    have hd := d.isLt
+    have hb : d.val - a < width₂ := by
+      dsimp [a]
+      omega
+    have total : a + (d.val - a) = d.val :=
+      Nat.add_sub_of_le (min_le_left _ _)
+    refine ⟨⟨a, ha⟩, ⟨d.val - a, hb⟩, ?_⟩
+    change (((start.val + a) % phases) + (d.val - a)) % phases = observed.val
+    rwa [Nat.mod_add_mod, Nat.add_assoc, total]
+
+/-- The same executable prime decoder recognizes two independently
+delayed reads with the exact combined width, including wraparound. -/
+theorem decodeCyclicPrime_eq_some_iff_two_delays {states lanes phases width₁ width₂ : ℕ}
+    (h₁ : 0 < width₁) (h₂ : 0 < width₂)
+    (layout : Layout states lanes phases (width₁ + width₂ - 1))
+    (offset p : ℕ) (observed : Fin phases) (q : Fin states) :
+    decodeCyclicPrime layout offset p observed = some q ↔
+      p = Nat.nth Nat.Prime (offset + (layout.lane q).val) ∧
+      ∃ a : Fin width₁, ∃ b : Fin width₂,
+        ((((layout.start q).val + a.val) % phases) + b.val) % phases = observed.val := by
+  rw [decodeCyclicPrime_eq_some_iff, two_delays_iff h₁ h₂]
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.PrimeLaneCyclicDelay

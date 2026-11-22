@@ -73,6 +73,7 @@ private theorem correlation_reflect (f : ℝ → ℂ) (r : ℝ) :
     _ = _ := by
       apply integral_congr_ae
       exact Filter.Eventually.of_forall (fun t => by
+        dsimp
         rw [show -(-t + r) = t + -r by ring])
 
 private theorem energy_reflect (f : ℝ → ℂ) :
@@ -93,7 +94,7 @@ private theorem shiftEnergy_reflect (f : ℝ → ℂ) (r : ℝ) :
           (fun t : ℝ => ‖f (t + -r) - f t‖ ^ 2) r).symm
     _ = _ := by
       apply integral_congr_ae
-      exact Filter.Eventually.of_forall (fun t => by rw [norm_sub_rev])
+      exact Filter.Eventually.of_forall (fun t => by dsimp; rw [norm_sub_rev])
 
 private theorem gammaDensity_reflect (a : ℕ) (f : ℝ → ℂ) (r : ℝ) :
     gammaCorrectionDensity a (fun t => f (-t)) r = gammaCorrectionDensity a f r := by
@@ -108,6 +109,7 @@ private theorem prime_inverse_reflect {q : ℕ} [NeZero q]
   congr 1
   apply Finset.sum_congr rfl
   intro n _
+  dsimp only
   rw [conj_inverse_character_apply, correlation_reflect, correlation_neg]
   congr 1
   simp only [Complex.mul_re, Complex.conj_re, Complex.conj_im]
@@ -161,6 +163,7 @@ private theorem reflected_weight (f : ℝ → ℂ) (s : ℂ) :
     _ = _ := by
       apply integral_congr_ae
       exact Filter.Eventually.of_forall (fun r => by
+        dsimp
         rw [Complex.ofReal_neg]
         congr 1
         congr 1
@@ -177,6 +180,7 @@ private theorem minus_fourier (f : ℝ → ℂ) (z : ℂ) :
     _ = _ := by
       apply integral_congr_ae
       exact Filter.Eventually.of_forall (fun t => by
+        dsimp
         rw [Complex.ofReal_neg]
         congr 1
         congr 1
@@ -204,6 +208,7 @@ private theorem reflected_weight_real (f : ℝ → ℂ) (b : ℝ) :
   exact Filter.Eventually.of_forall (fun r => by
     have he : (((1 : ℂ) - (b : ℂ)) - 1 / 2) * (r : ℂ) =
         (((1 / 2 - b) * r : ℝ) : ℂ) := by push_cast; ring
+    dsimp
     rw [he, ← Complex.ofReal_exp])
 
 /-- Both pole orientations of the reflected weight, expressed through the

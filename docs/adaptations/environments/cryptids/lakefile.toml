@@ -14,6 +14,11 @@ rev = "1f414401f69059aa7eead47b53ee40bd38455eeb"
 [[lean_lib]]
 name = "GRWTSKCryptidsAdapters"
 roots = [
+  "GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.FactorizationFiber",
+  "GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.DynamicPartitionRecovery",
+  "GRWTSK.DynamicalSystemsAndErgodicTheory.ExactSoficLanguageCover",
+  "GRWTSK.DynamicalSystemsAndErgodicTheory.SoficSingletonPrefixCapacity",
+  "GRWTSK.Combinatorics.GraphTheory.Riemann95ReadGraphCapacity",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.ChebyshevBandReduction",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.ChebyshevBandCryptids",
   "GRWTSK.NumberTheory.SpecificationAndPrimeEnumeration",
@@ -21,5 +26,18 @@ roots = [
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95StageCertificates",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeArgumentCounterexample",
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95StageCertificatesCryptids",
+<<<<<<< HEAD
   "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95WindowHandoff",
+=======
+  "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.Riemann95ScaledGapCertificates",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95PrimeMachine",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95CalibratedTapeReadout",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95ReachableCompression",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95MacroCompression",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95StageRetrySearch",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95NativeCheckpoint",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.ExactCoreInstrumentation",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95ControlCoordinates",
+  "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.Riemann95Instrumentation",
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 ]

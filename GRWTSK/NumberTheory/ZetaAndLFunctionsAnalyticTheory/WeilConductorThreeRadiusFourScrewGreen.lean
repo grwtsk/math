@@ -7,6 +7,7 @@ LEAN_COMPILATION_NOT_RUN / FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilConductorThreeFiniteAnnulus
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilWeightedFirstStage
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilConductorThreeKernel
 
 /-!
 # The actual conductor-three continuous kernel and physical Green pencil
@@ -573,38 +574,8 @@ namespace GRWTSK.NumberTheory.WeilQuadraticForm.ConductorThreeRadiusFourScrewGre
 open CharacterWindow OddRootProjection
 open GRWTSK.NumberTheory.Zeta.Riemann.DirichletModThreeQuadraticConstruction
 
-/-- The exact spectral rates of the native parity-one kernel. -/
-def gammaRate (m : ℕ) : ℝ := 2 * (m : ℝ) + 3 / 2
-
-/-- The physical inverse Neumann Green kernel; this is not the identity norm. -/
-def physicalGreen (x y : ℝ) : ℝ :=
-  (x ^ 2 + y ^ 2) / 16 - |x - y| / 2 + 2 / 3
-
-/-- Native signed arithmetic hinges. The factor one half cancels exactly
-`twistedPrime`'s factor two; there is no replacement of the character. -/
-def primeHinges (t : ℝ) : ℝ :=
-  twistedPrime 4 modThreeQuadratic
-    (fun n => ((max (|t| - Real.log (n : ℝ)) 0 / 2 : ℝ) : ℂ))
-
-/-- Actual full continuous source kernel; convergence and source return
-are proved in the written argument above, not by the definition alone. -/
-def sourceKernel (t : ℝ) : ℝ :=
-  -gammaConstant 3 1 * |t| / 2 -
-    (∫ r in Set.Ioi (0 : ℝ), parityKernel 1 r * min |t| r) +
-    primeHinges t
-
-/-- Positive gamma lower approximations retain the SAME signed arithmetic. -/
-def partialSourceKernel (M : ℕ) (t : ℝ) : ℝ :=
-  -gammaConstant 3 1 * |t| / 2 -
-    (∑ m ∈ Finset.range M,
-      (1 - Real.exp (-gammaRate m * |t|)) / gammaRate m ^ 2) +
-    primeHinges t
-
-/-- Every retained exponential rate is positive, independently of an
-arithmetic sign. This is a finite formal candidate until compilation. -/
-theorem gammaRate_pos (m : ℕ) : 0 < gammaRate m := by
-  unfold gammaRate
-  positivity
+/- The unchanged kernel declarations now live in `WeilConductorThreeKernel`.
+The analytical arguments above retain their separately recorded status. -/
 
 /-- These strict rational prices are finite guards, not the j3 sign. -/
 theorem actual_truncation_prices :

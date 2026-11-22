@@ -1,0 +1,10 @@
+# `PositiveMass.adm_flux_converges`: individual source record
+
+Local attribution: **grwtsk contributors**. Paper-to-source candidate; **not kernel checked**.
+
+- **Source edition:** Bray, Kazaras, Khuri, Stern, *Harmonic Functions and the Mass of 3-Dimensional Asymptotically Flat Riemannian Manifolds*, arXiv:1911.06754v1 (2019), §1 equations (1.1)–(1.2). The paper cites pre-existing ADM mass well-definedness; this local convergence proof is an **auxiliary**, not claimed verbatim as a paper theorem. The 2022 J. Geom. Anal. edition has not been separately compared. [Paper](https://arxiv.org/abs/1911.06754).
+- **Source file:** `GRWTSK/DifferentialGeometry/PositiveMassCandidate/GeometryAndADMCore.lean`, Git blob `b63b19996180ad863cc65a52a543e0b9f2a72064`, original lines 1–20059. **Declaration:** `PositiveMass.adm_flux_converges`, original line 4802. Related definitions `PositiveMass.RiemannianMetric3`, `PositiveMass.AsymptoticallyFlat`, `PositiveMass.admFlux`.
+- **Exact hypothesis/conclusion shape:** a smooth symmetric 3×3 coefficient field on the exterior domain, `q > 1/2`, `l≤2` asymptotic derivative bounds, and integrable local scalar curvature times `sqrt(det G)` imply existence of a finite limit of `1/(16π)` times the Euclidean sphere flux.
+- **Representation changes:** coordinate matrix field and custom scalar curvature, radial rescaling to a unit sphere; original proofs are preserved in full but need strict chart, curvature sign and surface-measure correspondence checks. The manuscript's `R_g ∈ L¹(M)` is encoded endwise; check compact-core deduction.
+- **Consumer:** final `PositiveMass.positive_mass` uses this limit via `adm_flux_converges`. Prior art includes ADM/Bartnik mass convergence, not an original theorem attributed to these authors.
+- **Verification:** static exact-source slice integrity **PASS**; Lean elaboration, kernel replay, axiom audit, full analytic correspondence and independent review **NOT_RUN**. Toolchain Lean v4.34.1, Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`; see issue [#1829](https://github.com/grwtsk/math/issues/1829).

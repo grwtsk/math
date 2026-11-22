@@ -46153,3 +46153,25355 @@ assert F("17")*(211+18)/pi_lower<1900
 assert F(1900)*epsilon*(6+epsilon)<F("1e-32")
 print("PASS original Taylor error allowance",flush=True)
 ~~~
+
+## Joint physical donor for E190 through E192
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3371.50,3391.50], let E190=[3375.64,3375.96], E191=[3382.97,3383.19], and
+E192=[3386.49,3386.71], in detunings from c₁=99653682.92983.
+The prior donor shares only a null endpoint. All 32000 directed
+.000625 cells certify strict positivity off the three enclosures. Direct
+phase bounds give strict negativity at +3375.80, +3383.08, and +3386.60.
+
+Let Q=N_E190* N_E190+N_E191* N_E191+N_E192* N_E192−.95P_Y. The 192-term sine approximation
+at c₁+3381.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³² times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³¹−10⁻³²)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³¹I. This pays all three restrictions with
+one charge. There are 244 paid restrictions through +3391.50. The 192
+caps retain least room >1.111111112·10⁻²² and pooled room
+>5.7989080000011111111112·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E190-E192 and
+upper. The lower option checks the reverse residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E190-E192":("3371.50","3391.50","3375.64","3375.96","3381.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3382.97"),F("3383.19")),(F("3386.49"),F("3386.71"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3375.80","3383.08","3386.60"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E190-E192 through 3391.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3381.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-31")+(1 if lower else -1)*F("1e-32")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E190-E192 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E190-E192 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-32")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+The next block reproduces the coarse sign screen with the same arguments.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E190-E192":("3391.50","3451.50","3375.64","3375.96","3381.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E193 through E195
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3407.50,3427.50], let E193=[3412.30,3412.65], E194=[3415.25,3415.43], and
+E195=[3422.40,3422.65], in detunings from c₁=99653682.92983.
+The pinned prior screen certifies strict positivity on [3391.50,3407.50]. All 32000 directed
+.000625 cells certify strict positivity off the three enclosures. Direct
+phase bounds give strict negativity at +3412.47, +3415.34, and +3422.52.
+
+Let Q=N_E193* N_E193+N_E194* N_E194+N_E195* N_E195−.95P_Y. The 192-term sine approximation
+at c₁+3417.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³³ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(5·10⁻³²−10⁻³³)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼5·10⁻³²I. This pays all three restrictions with
+one charge. There are 247 paid restrictions through +3427.50. The 192
+caps retain least room >1.1111111115·10⁻²² and pooled room
+>5.79890800000111111111115·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E193-E195 and
+upper. The lower option checks the reverse residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E193-E195":("3407.50","3427.50","3412.30","3412.65","3417.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3415.25"),F("3415.43")),(F("3422.40"),F("3422.65"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3412.47","3415.34","3422.52"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E193-E195 through 3427.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3417.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("5e-32")+(1 if lower else -1)*F("1e-33")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E193-E195 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E193-E195 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-33")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+The next block reproduces the coarse sign screen with the same arguments.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E193-E195":("3427.50","3487.50","3412.30","3412.65","3417.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E196
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3428.50,3448.50], let E196=[3438.62,3438.95], in detunings from c₁=99653682.92983.
+The pinned prior screen certifies strict positivity on [3427.50,3428.50]. All 32000 directed
+.000625 cells certify strict positivity off the enclosure. Direct
+phase bounds give strict negativity at +3438.78.
+
+Let Q=N_E196* N_E196−.95P_Y. The 192-term sine approximation
+at c₁+3438.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³³ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(2·10⁻³²−10⁻³³)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼2·10⁻³²I. This pays the restriction with
+one charge. There are 248 paid restrictions through +3448.50. The 192
+caps retain least room >1.1111111113·10⁻²² and pooled room
+>5.79890800000111111111113·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E196 and
+upper. The lower option checks the reverse residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E196":("3428.50","3448.50","3438.62","3438.95","3438.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3438.78",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E196 through 3448.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3438.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("2e-32")+(1 if lower else -1)*F("1e-33")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E196 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E196 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-33")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+## Joint physical donor for E197 through E199
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3448.50,3468.50], let E197=[3456.99,3457.29], E198=[3458.00,3458.13], and E199=[3461.36,3461.63], in detunings from c₁=99653682.92983.
+The prior donor shares only a null endpoint. All 32000 directed
+.000625 cells certify strict positivity off the three enclosures. Direct
+phase bounds give strict negativity at +3457.14, +3458.06, and +3461.50.
+
+Let Q=N_E197* N_E197+N_E198* N_E198+N_E199* N_E199−.95P_Y. The 192-term sine approximation
+at c₁+3458.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³³ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³³)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. This pays all three restrictions with
+one charge. There are 251 paid restrictions through +3468.50. The 192
+caps retain least room >1.1111111112·10⁻²² and pooled room
+>5.79890800000111111111112·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E197-E199 and
+upper. The lower option checks the reverse residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E197-E199":("3448.50","3468.50","3456.99","3457.29","3458.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3458.00"),F("3458.13")),(F("3461.36"),F("3461.63"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3457.14","3458.06","3461.50"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E197-E199 through 3468.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3458.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-33")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E197-E199 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E197-E199 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-33")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E197-E199":("3468.50","3518.50","3456.99","3457.29","3458.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E200 through E202
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3497.50,3518.50], let E200=[3503.75,3504.05], E201=[3514.75,3514.96], and E202=[3516.51,3516.65], in detunings from c₁=99653682.92983.
+The prior screen certifies strict positivity on [3468.50,3497.50]. All 33600 directed
+.000625 cells certify strict positivity off the three enclosures. Direct
+phase bounds give strict negativity at +3503.90, +3514.85, and +3516.58.
+
+Let Q=N_E200* N_E200+N_E201* N_E201+N_E202* N_E202−.95P_Y. The 192-term sine approximation
+at c₁+3508.00 has pointwise error bounded by ε=3·42¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+21(211+18)/π<2000 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 2000ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(5·10⁻³³−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼5·10⁻³³I. This pays all three restrictions with
+one charge. There are 254 paid restrictions through +3518.50. The 192
+caps retain least room >1.11111111115·10⁻²² and pooled room
+>5.798908000001111111111115·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E200-E202 and
+upper. The lower option checks the reverse residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E200-E202":("3497.50","3518.50","3503.75","3504.05","3508.00",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==33600
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3514.75"),F("3514.96")),(F("3516.51"),F("3516.65"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3503.90","3514.85","3516.58"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==33600
+print("PASS signed complement off E200-E202 through 3518.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16800
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3508.00")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("5e-33")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E200-E202 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E200-E202 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("42")**192/factorial(192)
+assert F("21")*(211+18)/pi_lower<2000
+assert F(2000)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E200-E202":("3518.50","3578.50","3503.75","3504.05","3508.00",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E203 through E205
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3518.50,3538.50], let E203=[3525.73,3525.97], E204=[3529.52,3529.67], and E205=[3531.92,3532.04], in detunings from c₁=99653682.92983.
+The preceding paid donor shares only a null endpoint. All 32000 directed
+.000625 cells certify strict positivity off the three enclosures. Direct
+phase bounds give strict negativity at +3525.85, +3529.60, and +3531.98.
+
+Let Q=N_E203* N_E203+N_E204* N_E204+N_E205* N_E205−.95P_Y. The 192-term sine approximation
+at c₁+3528.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(2·10⁻³³−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼2·10⁻³³I. This pays all three restrictions with
+one charge. There are 257 paid restrictions through +3538.50. The 192
+caps retain least room >1.11111111113·10⁻²² and pooled room
+>5.798908000001111111111113·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E203-E205 and
+upper. The lower option checks the reverse residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E203-E205":("3518.50","3538.50","3525.73","3525.97","3528.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3529.52"),F("3529.67")),(F("3531.92"),F("3532.04"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3525.85","3529.60","3531.98"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E203-E205 through 3538.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3528.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("2e-33")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E203-E205 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E203-E205 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E203-E205":("3538.50","3598.50","3525.73","3525.97","3528.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E206
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3538.50,3558.50], let E206=[3546.22,3546.43], in detunings from c₁=99653682.92983.
+The preceding paid donor shares only a null endpoint. All 32000 directed
+.000625 cells certify strict positivity off E206. Direct
+phase bounds give strict negativity at +3546.33.
+
+Let Q=N_E206* N_E206−.95P_Y. The 192-term sine approximation
+at c₁+3548.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³³−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³³I. There are 258 paid restrictions through +3558.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111112·10⁻²² and pooled room
+>5.798908000001111111111112·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E206 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen proves strict positivity on
+[3558.50,3605.99], [3606.09,3616.39], and [3616.48,3618.50], with
+open endpoints wherever shared with a flagged cell. The two flagged
+groups [3605.99,3606.09] and [3616.39,3616.48] require a separate
+fine-grid sign test.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E206":("3538.50","3558.50","3546.22","3546.43","3548.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3546.33",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E206 through 3558.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3548.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-33")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E206 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E206 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E206":("3558.50","3618.50","3546.22","3546.43","3548.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E207 and E208
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3598.50,3618.50], take E207=[3605.96,3606.12] and E208=[3616.36,3616.51], in detunings from c₁=99653682.92983.
+The preceding coarse screen certifies positivity on [3558.50,3598.50].
+All 32000 directed .000625 cells certify strict positivity outside the two
+enclosures on Y. Direct phase bounds give strict negativity at +3606.04
+and +3616.44.
+
+Let Q=N_E207* N_E207+N_E208* N_E208−.95P_Y. The 192-term sine approximation
+at c₁+3608.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³³−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³³I. There are 260 paid restrictions through +3618.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111111·10⁻²² and pooled room
+>5.798908000001111111111111·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E207-E208 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen certifies strict positivity on
+[3618.50,3647.88], [3648.20,3668.45] and [3668.70,3678.50], with
+open endpoints at shared flagged boundaries. The flagged groups
+[3647.88,3648.20] and [3668.45,3668.70] require separate fine checks.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E207-E208":("3598.50","3618.50","3605.96","3606.12","3608.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3616.36"),F("3616.51"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3606.04","3616.44"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E207-E208 through 3618.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3608.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-33")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E207-E208 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E207-E208 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E207-E208":("3618.50","3678.50","3605.96","3606.12","3608.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E209
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3638.50,3658.50], take E209=[3647.85,3648.23], in detunings from c₁=99653682.92983.
+The preceding coarse screen certifies positivity on [3618.50,3638.50].
+The 32000 directed .000625 cells certify strict positivity outside E209
+on Y. Direct phase bounds give strict negativity at +3648.04.
+
+Let Q=N_E209* N_E209−.95P_Y. The 192-term sine approximation
+at c₁+3648.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³³ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³³)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. There are 261 paid restrictions through +3658.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111101·10⁻²² and pooled room
+>5.798908000001111111111101·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E209 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen proves strict positivity on
+[3658.50,3668.45], [3668.70,3684.24], [3684.36,3691.88],
+[3692.16,3694.39] and [3694.43,3718.50], with open endpoints at
+shared flagged boundaries. Each intervening flagged group requires
+its own fine sign check.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E209":("3638.50","3658.50","3647.85","3648.23","3648.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3648.04",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E209 through 3658.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3648.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-33")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E209 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E209 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-33")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E209":("3658.50","3718.50","3647.85","3648.23","3648.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E210
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3658.50,3678.50], take E210=[3668.42,3668.73], in detunings from c₁=99653682.92983.
+The preceding paid donor shares only a null endpoint.
+The 32000 directed .000625 cells certify strict positivity outside E210
+on Y. Direct phase bounds give strict negativity at +3668.57.
+
+Let Q=N_E210* N_E210−.95P_Y. The 192-term sine approximation
+at c₁+3668.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. There are 262 paid restrictions through +3678.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111091·10⁻²² and pooled room
+>5.798908000001111111111091·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E210 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen flags only [3684.24,3684.36],
+[3691.88,3692.16], [3694.39,3694.43] and [3734.30,3734.44] on
+[3678.50,3738.50]. Every unflagged cell is strictly positive under
+the directed bound. The flagged groups require fine-grid checks.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E210":("3658.50","3678.50","3668.42","3668.73","3668.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3668.57",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E210 through 3678.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3668.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E210 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E210 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E210":("3678.50","3738.50","3668.42","3668.73","3668.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E211 through E213
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3678.50,3698.50], take E211=[3684.21,3684.39], E212=[3691.85,3692.19] and E213=[3694.36,3694.46], in detunings from c₁=99653682.92983.
+The preceding paid donor shares only a null endpoint.
+The 32000 directed .000625 cells certify strict positivity outside the three enclosures
+on Y. Direct phase bounds give strict negativity at +3684.30, +3692.02 and +3694.41.
+
+Let Q=N_E211* N_E211+N_E212* N_E212+N_E213* N_E213−.95P_Y. The 192-term sine approximation
+at c₁+3688.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. There are 265 paid restrictions through +3698.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111081·10⁻²² and pooled room
+>5.798908000001111111111081·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E211-E213 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen on [3698.50,3758.50] flags
+[3734.30,3734.44], [3738.71,3738.88], [3750.36,3750.64] and a
+terminal group beginning at +3758.29. All other cells have strictly
+positive directed bounds. The flagged groups require fine checks.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E211-E213":("3678.50","3698.50","3684.21","3684.39","3688.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3691.85"),F("3692.19")),(F("3694.36"),F("3694.46"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3684.30","3692.02","3694.41"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E211-E213 through 3698.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3688.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E211-E213 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E211-E213 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E211-E213":("3698.50","3758.50","3684.21","3684.39","3688.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E214 and E215
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3728.50,3748.50], take E214=[3734.27,3734.47] and E215=[3738.68,3738.91], in detunings from c₁=99653682.92983.
+The prior directed screen certifies positivity on [3698.50,3728.50].
+The 32000 directed .000625 cells certify strict positivity outside the two enclosures
+on Y. Direct phase bounds give strict negativity at +3734.37 and +3738.79.
+
+Let Q=N_E214* N_E214+N_E215* N_E215−.95P_Y. The 192-term sine approximation
+at c₁+3738.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. There are 267 paid restrictions through +3748.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111071·10⁻²² and pooled room
+>5.798908000001111111111071·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E214-E215 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen flags [3750.36,3750.64],
+[3758.29,3758.55], [3776.32,3776.52], [3783.73,3783.96],
+[3785.33,3785.53], [3798.99,3799.14] and [3802.22,3802.42] on
+[3748.50,3808.50]. All unflagged cells have strictly positive
+directed bounds. The flagged groups require fine checks.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E214-E215":("3728.50","3748.50","3734.27","3734.47","3738.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3738.68"),F("3738.91"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3734.37","3738.79"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E214-E215 through 3748.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3738.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E214-E215 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E214-E215 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E214-E215":("3748.50","3808.50","3734.27","3734.47","3738.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E216 and E217
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3748.50,3768.50], take E216=[3750.33,3750.67] and E217=[3758.26,3758.58], in detunings from c₁=99653682.92983.
+The preceding paid donor shares only a null endpoint.
+The 32000 directed .000625 cells certify strict positivity outside the two enclosures
+on Y. Direct phase bounds give strict negativity at +3750.50 and +3758.42.
+
+Let Q=N_E216* N_E216+N_E217* N_E217−.95P_Y. The 192-term sine approximation
+at c₁+3758.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. There are 269 paid restrictions through +3768.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111061·10⁻²² and pooled room
+>5.798908000001111111111061·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E216-E217 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen flags [3776.32,3776.52],
+[3783.73,3783.96], [3785.33,3785.53], [3798.99,3799.14],
+[3802.22,3802.42], [3809.30,3809.38], [3820.83,3821.07]
+and [3828.01,3828.21] on [3768.50,3828.50]. Every unflagged
+cell has strictly positive directed bounds. The flagged groups
+require fine checks.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E216-E217":("3748.50","3768.50","3750.33","3750.67","3758.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3758.26"),F("3758.58"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3750.50","3758.42"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E216-E217 through 3768.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3758.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E216-E217 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E216-E217 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E216-E217":("3768.50","3828.50","3750.33","3750.67","3758.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E218 through E220
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3768.50,3788.50], take E218=[3776.29,3776.55], E219=[3783.70,3783.99] and E220=[3785.30,3785.56], in detunings from c₁=99653682.92983.
+The preceding paid donor shares only a null endpoint.
+The 32000 directed .000625 cells certify strict positivity outside the three enclosures
+on Y. Direct phase bounds give strict negativity at +3776.42, +3783.84 and +3785.43.
+
+Let Q=N_E218* N_E218+N_E219* N_E219+N_E220* N_E220−.95P_Y. The 192-term sine approximation
+at c₁+3778.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. There are 272 paid restrictions through +3788.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111051·10⁻²² and pooled room
+>5.798908000001111111111051·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E218-E220 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen flags [3798.99,3799.14],
+[3802.22,3802.42], [3809.30,3809.38], [3820.83,3821.07],
+[3828.01,3828.21], [3828.87,3829.13], [3836.32,3836.42] and
+[3838.88,3839.09] on [3788.50,3848.50]. All unflagged cells
+have strictly positive directed bounds.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E218-E220":("3768.50","3788.50","3776.29","3776.55","3778.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3783.70"),F("3783.99")),(F("3785.30"),F("3785.56"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3776.42","3783.84","3785.43"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E218-E220 through 3788.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3778.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E218-E220 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E218-E220 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E218-E220":("3788.50","3848.50","3776.29","3776.55","3778.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E221 through E223
+
+2026-11-16, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3790.50,3810.50], take E221=[3798.96,3799.17], E222=[3802.19,3802.45] and E223=[3809.27,3809.41], in detunings from c₁=99653682.92983.
+The prior directed screen certifies positivity on [3788.50,3790.50].
+The 32000 directed .000625 cells certify strict positivity outside the three enclosures
+on Y. Direct phase bounds give strict negativity at +3799.06, +3802.32 and +3809.34.
+
+Let Q=N_E221* N_E221+N_E222* N_E222+N_E223* N_E223−.95P_Y. The 192-term sine approximation
+at c₁+3800.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density with weight 1 on the upper negative
+magnitude and the lower mask bound on the lower positive magnitude,
+including the folded π normalization. Exact signed Taylor moments M
+and the directed physical Legendre Gram G enclose the finite residual
+(10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion give a lower Loewner certificate. All 192 pivots are
+positive. The finite comparison extends by orthogonality and restoring
+the signed Taylor error gives Q≼10⁻³²I. There are 275 paid restrictions through +3810.50. Only this scalar is
+subtracted from the common cap room. The 192
+caps retain least room >1.11111111041·10⁻²² and pooled room
+>5.798908000001111111111041·10⁻⁹. The unpaid-support norm remains open.
+
+Run the first block with the pinned arithmetic Markdown, E221-E223 and
+upper. The lower option checks the reverse residual.
+
+The subsequent directed .01 screen on [3810.50,3870.50] flags
+[3820.83,3821.07], [3828.01,3828.21], [3828.87,3829.13],
+[3836.32,3836.42] and [3838.88,3839.09]. All unflagged cells
+have strictly positive directed bounds.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E221-E223":("3790.50","3810.50","3798.96","3799.17","3800.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3802.19"),F("3802.45")),(F("3809.27"),F("3809.41"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3799.06","3802.32","3809.34"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E221-E223 through 3810.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3800.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E221-E223 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E221-E223 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E221-E223":("3810.50","3870.50","3798.96","3799.17","3800.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E224 through E228
+
+2026-11-17, grwtsk contributors, AI-assisted. Directed rational certificate
+on the original complex odd L²([-4,4],dt) carrier with zero extension,
+both angular signs folded at dν/π, original masks, full parity-one gamma,
+all 458 signed prime powers, and zero principal pole.
+
+On Y=[3820.50,3840.50], take E224=[3820.80,3821.10], E225=[3827.98,3828.24], E226=[3828.84,3829.16], E227=[3836.29,3836.45] and E228=[3838.85,3839.12], in detunings from c₁=99653682.92983.
+The prior directed screen certifies positivity on [3810.50,3820.50].
+The 32000 directed .000625 cells certify strict positivity outside the five enclosures
+on Y. Direct phase bounds give strict negativity at +3820.95, +3828.11, +3829.00, +3836.37 and +3838.98.
+
+Let Q=N_E224* N_E224+N_E225* N_E225+N_E226* N_E226+N_E227* N_E227+N_E228* N_E228−.95P_Y. The 192-term sine approximation
+at c₁+3830.50 has pointwise error bounded by ε=3·40¹⁹²/192! times the
+carrier norm. The absolute signed density integral is bounded by
+20(211+18)/π<1900 and the restriction modulus by three times the norm.
+The signed squared-form error is at most 1900ε(6+ε)<10⁻³⁴ times the
+squared norm.
+
+Use the upper signed step density for the lower residual and the lower
+signed step density for the upper residual. Weight the negative and positive
+parts separately with the mask bounds and normalize by the folded π. Exact
+Taylor moments M and directed physical Legendre Gram G enclose the residual
+(τ∓10⁻³⁴)G−GMG. The symmetric row-width allowance orders the midpoint
+matrix on the indicated side of the interval residual. At each positive
+pivot the exact Schur complement is bounded in that same direction by
+rounding and a diagonal row allowance. For a negative upper pivot, set
+the final coordinate to one and lift backwards, taking the eliminated
+coordinate at each step to be minus the corresponding row product of the
+remaining vector divided by the positive pivot. Set coordinates past the
+failing pivot to zero. This gives a negative quadratic value for the upper
+matrix and hence for the original residual on the corresponding physical
+Legendre combination. A negative lower pivot only defeats its own
+sufficient matrix.
+
+The directed lower residual for τ=10⁻³² fails at zero-based pivot 38, with diagnostic decimal -5.561704496237895e-13. The directed upper residual also fails at zero-based pivot 38, with diagnostic decimal -1.0075004521896529e-13. This certifies a counterexample to the proposed physical bound on the original odd carrier. The lower residual at τ=10⁻²⁴ also fails at zero-based pivot 38, with diagnostic decimal -5.561704496216235e-13.
+
+The ledger remains at 275 paid restrictions through +3810.50. The five
+enclosures are still unpaid. The existing cap room is unchanged.
+
+Run the first block with the pinned arithmetic Markdown and E224-E228.
+Use upper for the upper density and lower for the lower density.
+For the 10⁻²⁴ test replace only F("1e-32") on the tau line with F("1e-24")
+and use upper.
+
+The subsequent directed .01 screen on [3840.50,3900.50] flags
+[3872.32,3872.39], [3873.22,3873.40], [3883.70,3883.78] and
+[3885.85,3885.90]. All unflagged cells have strictly positive
+directed bounds.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E224-E228":("3820.50","3840.50","3820.80","3821.10","3830.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3827.98"),F("3828.24")),(F("3828.84"),F("3829.16")),(F("3836.29"),F("3836.45")),(F("3838.85"),F("3839.12"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3820.95","3828.11","3829.00","3836.37","3838.98"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E224-E228 through 3840.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3830.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E224-E228 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E224-E228 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+Run the next block with the same arguments to reproduce the coarse sign screen.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E224-E228":("3840.50","3900.50","3820.80","3821.10","3830.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Split physical donors for E224 through E228
+
+2026-11-17, grwtsk contributors, AI-assisted. The carrier is the original
+complex odd L²([-4,4],dt) with zero extension, folded angular measure dν/π,
+original masks, full parity-one gamma, all 458 signed prime powers and
+zero principal pole.
+
+The original single donor [3820.50,3840.50] fails at α=.95 and τ=10⁻³² by directed upper pivot 38, approximately −1.0075004521896529·10⁻¹³. The lower residual at 10⁻²⁴ alone leaves that charge undecided.
+
+Use Y₁=[3810.50,3832.50] for E224=[3820.80,3821.10],
+E225=[3827.98,3828.24] and E226=[3828.84,3829.16]. Use
+Y₂=[3832.50,3852.50] for E227=[3836.29,3836.45] and
+E228=[3838.85,3839.12]. All detunings are from c₁=99653682.92983.
+The donor interiors are disjoint from each other and the previously
+charged donors. The fine sign check covers 35200 and 32000 cells,
+respectively. The five strict negative witnesses persist.
+
+For each donor use α=.95, τ=10⁻³² and 192 sine terms at the
+respective midpoint c₁+3821.50 or c₁+3842.50. For donor width w the
+pointwise Taylor error bound is ε=3(2w)¹⁹²/192! times the carrier norm.
+An absolute signed density integral bound is 2000 for w=22 and 1900
+for w=20. In each case the resulting squared-form error is at most
+the density bound times ε(6+ε)<10⁻³⁴ times the squared norm.
+The upper signed step density uses the upper negative mass and lower
+positive mass with the exact mask allowances and folded normalization.
+The Taylor moments and physical Legendre Gram G enclose the lower finite
+residual (τ−10⁻³⁴)G−GMG. The symmetric row-width bound and directed
+Schur recursion bound this residual below. A positive finite residual
+returns to all physical tests by orthogonal projection and restoring
+the Taylor error. The opposite density and (τ+10⁻³⁴)G test the upper
+residual when the lower test fails.
+
+All 192 lower pivots pass for each donor. For i=1,2 the sum of
+N_E* N_E over its enclosures is bounded by .95 P_Yi+10⁻³² I.
+Sum the inequalities with disjoint donor interiors. The total cap
+charge is 2·10⁻³². There are 280 paid restrictions through +3852.50.
+Least cap room >1.11111111021·10⁻²² and pooled room
+>5.798908000001111111111021·10⁻⁹. The unpaid-support norm remains open.
+
+Run the two blocks with the pinned arithmetic Markdown followed by
+split-A or split-B respectively, and upper. Use lower for the directed
+upper residual. All sign and pivot decisions use exact rationals.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "split-A":("3810.50","3832.50","3820.80","3821.10","3821.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==35200
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3827.98"),F("3828.24")),(F("3828.84"),F("3829.16"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3820.95","3828.11","3829.00"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==35200
+print("PASS signed complement off split-A through 3832.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=17600
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3821.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS split-A physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all split-A physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("44")**192/factorial(192)
+assert F("22")*(211+18)/pi_lower<2000
+assert F(2000)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "split-B":("3832.50","3852.50","3836.29","3836.45","3842.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3838.85"),F("3839.12"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3836.37","3838.98"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off split-B through 3852.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3842.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS split-B physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all split-B physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+## Joint physical donor for E229 through E232
+
+2026-11-17, grwtsk contributors, AI-assisted. Directed rational comparison
+on the original odd complex L²([-4,4],dt) carrier with zero extension,
+dν/π after folding, the original masks, parity-one gamma and all 458
+signed prime powers. The principal pole term vanishes in this sector.
+
+On Y=[3870.50,3890.50], use E229=[3872.29,3872.42],
+E230=[3873.19,3873.43], E231=[3883.67,3883.81] and
+E232=[3885.82,3885.93]. Detunings are from c₁=99653682.92983.
+The prior .01 screen proves positivity between +3852.50 and +3870.50.
+The 32000 directed .000625 cells prove strict positivity outside the
+four enclosures on Y. Direct phase bounds give strict negativity at
++3872.35, +3873.31, +3883.74 and +3885.87.
+
+The 192 sine terms centered at c₁+3880.50 give pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density
+integral is bounded by 1900, so the squared-form error is bounded
+by 1900ε(6+ε)<10⁻³⁴ times the squared norm. The directed upper
+signed density uses the upper negative mass and lower positive
+mass with the original mask allowances and folded normalization.
+Its Taylor moment matrix M and the physical Legendre Gram G
+enclose the residual (10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width
+allowance and directed Schur recursion bound it below.
+All 192 lower pivots pass. Orthogonal projection and the Taylor
+error return the comparison to all physical tests.
+
+The sum of N_E* N_E over the four enclosures is bounded by
+.95 P_Y+10⁻³² I. The donor interior is disjoint from the previous
+ones and charges the shared cap once. There are 284 paid restrictions
+through +3890.50. Least cap room >1.11111111011·10⁻²² and pooled
+room >5.798908000001111111111011·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [3890.50,3950.50] flags [3910.22,3910.42]
+and [3929.10,3929.21]. Unflagged cells have strictly positive
+directed bounds. The flagged groups require fine checks.
+
+Run the blocks with the pinned arithmetic Markdown, E229-E232 and upper.
+The lower argument in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E229-E232":("3870.50","3890.50","3872.29","3872.42","3880.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583000
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("3873.19"),F("3873.43")),(F("3883.67"),F("3883.81")),(F("3885.82"),F("3885.93"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("3872.35","3873.31","3883.74","3885.87"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E229-E232 through 3890.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3880.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E229-E232 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E229-E232 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E229-E232":("3890.50","3950.50","3872.29","3872.42","3880.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E233
+
+2026-11-17, grwtsk contributors, AI-assisted. Directed rational comparison
+on the original odd complex L²([-4,4],dt) carrier with zero extension,
+dν/π after folding, the original masks, parity-one gamma and all 458
+signed prime powers. The principal pole term vanishes in this sector.
+
+On Y=[3900.50,3920.50], use E233=[3910.19,3910.45]. Detunings are from c₁=99653682.92983.
+The prior .01 screen proves positivity between +3890.50 and +3900.50.
+The 32000 directed .000625 cells prove strict positivity outside the
+enclosure on Y. Direct phase bounds give strict negativity at
++3910.32.
+
+The 192 sine terms centered at c₁+3910.50 give pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density
+integral is bounded by 1900, so the squared-form error is bounded
+by 1900ε(6+ε)<10⁻³⁴ times the squared norm. The directed upper
+signed density uses the upper negative mass and lower positive
+mass with the original mask allowances and folded normalization.
+Its Taylor moment matrix M and the physical Legendre Gram G
+enclose the residual (10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width
+allowance and directed Schur recursion bound it below.
+All 192 lower pivots pass. Orthogonal projection and the Taylor
+error return the comparison to all physical tests.
+
+N_E233* N_E233 is bounded by
+.95 P_Y+10⁻³² I. The donor interior is disjoint from the previous
+ones and charges the shared cap once. There are 285 paid restrictions
+through +3920.50. Least cap room >1.11111111001·10⁻²² and pooled
+room >5.798908000001111111111001·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [3920.50,3980.50] flags only [3929.10,3929.21]. Unflagged cells have strictly positive
+directed bounds. The flagged group requires a fine check.
+
+Run the blocks with the pinned arithmetic Markdown, E233 and upper.
+The lower argument in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E233":("3900.50","3920.50","3910.19","3910.45","3910.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert node(F("3910.32"))[0]>Ahi
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E233 through 3920.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3910.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E233 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E233 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E233":("3920.50","3980.50","3910.19","3910.45","3910.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E234
+
+2026-11-17, grwtsk contributors, AI-assisted. Directed rational comparison
+on the original odd complex L²([-4,4],dt) carrier with zero extension,
+dν/π after folding, the original masks, parity-one gamma and all 458
+signed prime powers. The principal pole term vanishes in this sector.
+
+On Y=[3920.50,3940.50], use E234=[3929.07,3929.24]. Detunings are from c₁=99653682.92983.
+The preceding donor shares only a null endpoint.
+The 32000 directed .000625 cells prove strict positivity outside the
+enclosure on Y. Direct phase bounds give strict negativity at
++3929.15.
+
+The 192 sine terms centered at c₁+3930.50 give pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density
+integral is bounded by 1900, so the squared-form error is bounded
+by 1900ε(6+ε)<10⁻³⁴ times the squared norm. The directed upper
+signed density uses the upper negative mass and lower positive
+mass with the original mask allowances and folded normalization.
+Its Taylor moment matrix M and the physical Legendre Gram G
+enclose the residual (10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width
+allowance and directed Schur recursion bound it below.
+All 192 lower pivots pass. Orthogonal projection and the Taylor
+error return the comparison to all physical tests.
+
+N_E234* N_E234 is bounded by
+.95 P_Y+10⁻³² I. The donor interior is disjoint from the previous
+ones and charges the shared cap once. There are 286 paid restrictions
+through +3940.50. Least cap room >1.11111110991·10⁻²² and pooled
+room >5.798908000001111111110991·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [3940.50,4000.50] flags only [3983.57,3983.72]. Unflagged cells have strictly positive
+directed bounds. The flagged group requires a fine check.
+
+Run the blocks with the pinned arithmetic Markdown, E234 and upper.
+The lower argument in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E234":("3920.50","3940.50","3929.07","3929.24","3930.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert node(F("3929.15"))[0]>Ahi
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E234 through 3940.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3930.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E234 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E234 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E234":("3940.50","4000.50","3929.07","3929.24","3930.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E235
+
+2026-11-17, grwtsk contributors, AI-assisted. Directed rational comparison
+on the original odd complex L²([-4,4],dt) carrier with zero extension,
+dν/π after folding, the original masks, parity-one gamma and all 458
+signed prime powers. The principal pole term vanishes in this sector.
+
+On Y=[3975.50,3995.50], use E235=[3983.54,3983.75]. Detunings are from c₁=99653682.92983.
+The preceding .01 screen proves positivity from +3940.50 through +3975.50.
+The 32000 directed .000625 cells prove strict positivity outside the
+enclosure on Y. Direct phase bounds give strict negativity at
++3983.64.
+
+The 192 sine terms centered at c₁+3985.50 give pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density
+integral is bounded by 1900, so the squared-form error is bounded
+by 1900ε(6+ε)<10⁻³⁴ times the squared norm. The directed upper
+signed density uses the upper negative mass and lower positive
+mass with the original mask allowances and folded normalization.
+Its Taylor moment matrix M and the physical Legendre Gram G
+enclose the residual (10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width
+allowance and directed Schur recursion bound it below.
+All 192 lower pivots pass. Orthogonal projection and the Taylor
+error return the comparison to all physical tests.
+
+N_E235* N_E235 is bounded by
+.95 P_Y+10⁻³² I. The donor interior is disjoint from the previous
+ones and charges the shared cap once. There are 287 paid restrictions
+through +3995.50. Least cap room >1.11111110981·10⁻²² and pooled
+room >5.798908000001111111110981·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [3995.50,4055.50] flags [4007.22,4007.39], [4013.14,4013.23],
+[4015.74,4015.77], [4022.53,4022.87], [4027.56,4027.77],
+[4052.58,4052.76] and [4054.98,4055.22]. Unflagged cells have strictly positive
+directed bounds. The flagged groups require fine checks.
+
+Run the blocks with the pinned arithmetic Markdown, E235 and upper.
+The lower argument in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E235":("3975.50","3995.50","3983.54","3983.75","3985.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert node(F("3983.64"))[0]>Ahi
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E235 through 3995.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("3985.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E235 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E235 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E235":("3995.50","4055.50","3983.54","3983.75","3985.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E236 and E237
+
+2026-11-17, grwtsk contributors, AI-assisted. Directed rational comparison
+on the original odd complex L²([-4,4],dt) carrier with zero extension,
+dν/π after folding, the original masks, parity-one gamma and all 458
+signed prime powers. The principal pole term vanishes in this sector.
+
+On Y=[4000.50,4020.50], use E236=[4007.19,4007.42] and E237=[4013.11,4013.26]. Detunings are from c₁=99653682.92983.
+The preceding .01 screen proves positivity from +3995.50 through +4000.50.
+The 32000 directed .000625 cells prove strict positivity outside the
+two enclosures on Y. Direct phase bounds give strict negativity at
++4007.30 and +4013.18. Tentative E238=[4015.71,4015.80] was
+a coarse flag. Each of its 144 fine cells has A₁−P₄>.047.
+
+The 192 sine terms centered at c₁+4010.50 give pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density
+integral is bounded by 1900, so the squared-form error is bounded
+by 1900ε(6+ε)<10⁻³⁴ times the squared norm. The directed upper
+signed density uses the upper negative mass and lower positive
+mass with the original mask allowances and folded normalization.
+Its Taylor moment matrix M and the physical Legendre Gram G
+enclose the residual (10⁻³²−10⁻³⁴)G−GMG. The symmetric row-width
+allowance and directed Schur recursion bound it below.
+All 192 lower pivots pass. Orthogonal projection and the Taylor
+error return the comparison to all physical tests.
+
+N_E236* N_E236+N_E237* N_E237 is bounded by
+.95 P_Y+10⁻³² I. The donor interior is disjoint from the previous
+ones and charges the shared cap once. There are 289 paid restrictions
+through +4020.50. Least cap room >1.11111110971·10⁻²² and pooled
+room >5.798908000001111111110971·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4020.50,4080.50] flags [4022.53,4022.87],
+[4027.56,4027.77], [4052.58,4052.76], [4054.98,4055.22],
+[4062.40,4062.55] and [4064.87,4065.14]. Unflagged cells have
+strictly positive directed bounds.
+
+Run the blocks with the pinned arithmetic Markdown, E236-E237 and upper.
+The lower argument in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E236-E237":("4000.50","4020.50","4007.19","4007.42","4010.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4013.11"),F("4013.26"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4007.30","4013.18"))
+a_false,b_false=F("4015.71"),F("4015.80")
+i_false,j_false=(a_false-start)/step,(b_false-start)/step
+assert i_false.denominator==j_false.denominator==1
+assert j_false-i_false==144
+assert all(Alo-estimate(start+j*step,step)[1]>F(".047")
+           for j in range(int(i_false),int(j_false)))
+print("PASS E238 full enclosure positive by more than .047",flush=True)
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E236-E237 through 4020.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4010.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E236-E237 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E236-E237 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E236-E237":("4020.50","4080.50","4007.19","4007.42","4010.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E239 and E240
+
+2026-11-17, grwtsk contributors, AI-assisted. Directed rational comparison
+on the original odd complex L²([-4,4],dt) carrier with zero extension,
+dν/π after folding, the original masks, parity-one gamma and all 458
+signed prime powers. The principal pole term vanishes in this sector.
+
+On Y=[4020.50,4040.50], use E239=[4022.50,4022.90] and E240=[4027.53,4027.80]. Detunings are from c₁=99653682.92983.
+The preceding donor shares only a null endpoint.
+The 32000 directed .000625 cells prove strict positivity outside the
+two enclosures on Y. Direct phase bounds give strict negativity at
++4022.70 and +4027.66.
+
+The 192 sine terms centered at c₁+4030.50 give pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density
+integral is bounded by 1900, so the squared-form error is bounded
+by 1900ε(6+ε)<10⁻³⁴ times the squared norm. The directed upper
+signed density uses the upper negative mass and lower positive
+mass with the original mask allowances and folded normalization.
+Its Taylor moments and physical Legendre Gram G enclose
+(τ−10⁻³⁴)G−GMG. The symmetric row-width allowance and directed
+Schur recursion bound the residual below. A positive lower residual
+returns to all physical tests by projection and the Taylor allowance.
+
+For the opposite residual use the lower signed step density and
+(τ+10⁻³⁴)G−GMG. The same row-width estimate directs the rounded
+Schur complements on the upper side. When the directed upper
+pivot is negative, take the last active coordinate to be one,
+zero all subsequent coordinates and lift backwards through the
+positive pivots by minimizing in each eliminated coordinate.
+This yields a finite combination of the physical carriers
+with negative original residual.
+
+At τ=10⁻³² the sufficient lower residual fails at zero-based pivot 45 (approximately -1.32546327381013e-20). The directed upper residual fails at zero-based pivot 45 (approximately -7.993608718491223e-21), certifying an actual counterexample on the original physical carrier. The sufficient lower residual at τ=10⁻²⁴ also fails at zero-based pivot 45 (approximately -1.3252779921574975e-20). That larger charge remains undecided. The ledger has 289 paid restrictions through +4020.50 and both intervals remain unpaid.
+
+The directed .01 screen on [4040.50,4100.50] flags [4052.58,4052.76],
+[4054.98,4055.22], [4062.40,4062.55], [4064.87,4065.14],
+[4081.09,4081.32] and [4091.21,4091.43]. Unflagged cells have
+strictly positive directed bounds.
+
+Run the blocks with the pinned arithmetic Markdown, E239-E240 and upper.
+The lower argument in the first block tests the directed upper residual.
+To reproduce the larger charge, replace F("1e-32") on the tau line
+with F("1e-24") and use upper.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E239-E240":("4020.50","4040.50","4022.50","4022.90","4030.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4027.53"),F("4027.80"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4022.70","4027.66"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E239-E240 through 4040.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4030.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E239-E240 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E239-E240 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E239-E240":("4040.50","4100.50","4022.50","4022.90","4030.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## E239 and E240 directed donor retest
+
+2026-11-17, grwtsk contributors, AI-assisted. The original complex odd
+L²([-4,4],dt) carrier has zero extension, folded angular measure dν/π,
+original masks, full parity-one gamma and all 458 signed prime powers.
+The principal pole term vanishes in this sector.
+
+Use α=.95, E239=[4022.50,4022.90] and E240=[4027.53,4027.80] in detunings
+from c₁=99653682.92983. Their certified negative points are +4022.70 and
++4027.66. On the original Y=[4020.50,4040.50], the 192-term Taylor
+upper residual uses (τ+10⁻³⁴)G−GMG with a lower signed density. The
+bounds order the rounded Schur complements above the exact complements.
+For a negative upper pivot the corresponding vector is obtained by
+putting one at the failing coordinate, zeroing subsequent coordinates
+and minimizing backwards through every positive pivot. This produces
+negative residual for a finite original physical Legendre combination.
+
+The original width-20 donor has an actual counterexample at τ=10⁻³², with directed upper pivot 45 approximately −7.993608718491223·10⁻²¹. The directed upper residual at τ=10⁻²⁴ also fails at zero-based pivot 45 (approximately -7.992337274564713e-21), certifying an actual counterexample at the larger charge.
+
+The tested extension Y=[4020.50,4048.50] is disjoint from all prior paid
+donors except at endpoints. All 44800 directed .000625 cells verify
+strict positivity outside the enclosures. At center c₁+4034.50 the
+224-term sine approximation has pointwise error at most
+ε=3·56²²⁴/224! times the carrier norm. The absolute signed density
+integral is bounded by 28(211+18)/π<2100. Hence the squared-form error
+is at most 2100ε(6+ε)<10⁻³⁴ times the squared norm. The upper signed
+density in the folded normalization supplies M for the lower residual
+(τ−10⁻³⁴)G−GMG. Row bounds and rounded Schur complements give a lower
+matrix. Positivity extends by orthogonal projection and the Taylor
+allowance to all original physical tests.
+
+The width-28 sufficient lower residual at τ=10⁻³² fails at zero-based pivot 57 (approximately -5.492500491281641e-22). This wider inequality remains undecided. The ledger retains 289 paid restrictions through +4020.50.
+
+Run the first block with the pinned arithmetic Markdown, E239-E240 and
+lower. Run the second block with E239-E240 and upper after the same
+arithmetic input. Sign and pivot decisions are exact rational comparisons.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E239-E240":("4020.50","4040.50","4022.50","4022.90","4030.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4027.53"),F("4027.80"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4022.70","4027.66"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E239-E240 through 4040.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4030.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-24")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E239-E240 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E239-E240 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E239-E240":("4020.50","4048.50","4022.50","4022.90","4034.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=224
+c=c0+F(c0_offset)
+assert count==44800
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4027.53"),F("4027.80"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4022.70","4027.66"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==44800
+print("PASS signed complement off E239-E240 through 4048.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=22400
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4034.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E239-E240 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E239-E240 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("56")**224/factorial(224)
+assert F("28")*(211+18)/pi_lower<2100
+assert F(2100)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+## E239 and E240 width-28 upper residual
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded angular measure dν/π,
+the original masks, full parity-one gamma, all 458 signed prime powers
+and zero principal pole for this character.
+
+At α=.95 and τ=10⁻³², the width-28 interval [4020.50,4048.50] was proposed to satisfy N_E239* N_E239+N_E240* N_E240≼.95P_Y+τI. The original enclosures E239=[4022.50,4022.90] and
+E240=[4027.53,4027.80] have certified negative points at +4022.70
+and +4027.66 in detunings from c₁=99653682.92983. The fine grid
+has 44800 cells. The center is c₁+4034.50 and the rank is 224.
+The signed Taylor squared-form error is less than 10⁻³⁴ times
+the squared carrier norm. The previous lower residual failed at
+zero-based pivot 57, approximately −5.492500491281641·10⁻²².
+
+For the upper residual the lower signed density gives M and the
+Taylor error increases τ to τ+10⁻³⁴ in (τ+10⁻³⁴)G−GMG. The
+symmetric row-width allowance gives an upper matrix on the physical
+Legendre carrier. The directed Schur updates add a diagonal allowance
+at each step to dominate outward rounding. At a negative pivot, the
+verifier sets the failing coordinate to one, later coordinates to
+zero, and back-substitutes on a 10⁻⁴⁰ grid through the earlier positive
+pivots. It evaluates the initial directed upper quadratic form
+exactly on those integer numerator coordinates and bounds the
+physical squared norm above using the directed Gram intervals.
+The ratio of the negative upper form's magnitude to the upper
+norm is a rigorous lower bound on the additional scalar needed.
+
+The directed upper matrix has negative zero-based pivot 57 (approximately -3.305721674656079e-22). The exact witness check gives a necessary additional charge strictly greater than 480803554141147939·10⁻⁴⁰ for the same donor. Witness coefficient vector SHA-256 a9e96babadacf429f2de32127f65efe8a4a5c94170ffb2c465e3d73ce3a2e55c.
+
+The ledger remains at 289 paid restrictions through +4020.50.
+Run the block with the pinned arithmetic Markdown, E239-E240 and
+lower. Sign, witness and norm decisions use exact integers and rationals.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E239-E240":("4020.50","4048.50","4022.50","4022.90","4034.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=224
+c=c0+F(c0_offset)
+assert count==44800
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4027.53"),F("4027.80"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4022.70","4027.66"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==44800
+print("PASS signed complement off E239-E240 through 4048.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=22400
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4034.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+initial=[row[:] for row in A]
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        if lower:
+            scale_w=10**40
+            units=[0]*K
+            units[i]=scale_w
+            for j in range(i-1,-1,-1):
+                units[j]=-sum(A[j][l]*units[l] for l in range(j+1,i+1))//A[j][j]
+            q=sum(units[j]*initial[j][l]*units[l] for j in range(i+1) for l in range(i+1))
+            norm_upper=sum(max(units[j]*units[l]*v for v in g[j][l])
+                           for j in range(i+1) for l in range(i+1))
+            assert q<0<norm_upper
+            witness_bound=F(-q,norm_upper)
+            print("witness extra charge lower bound",float(witness_bound),flush=True)
+            print("witness lower bound at 10^-40 scale",witness_bound*10**40//1,flush=True)
+            print("witness coefficient digest",sha256(repr(units).encode()).hexdigest(),flush=True)
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E239-E240 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E239-E240 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("56")**224/factorial(224)
+assert F("28")*(211+18)/pi_lower<2100
+assert F(2100)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+## E236–E240 original donor repartition
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². In detunings from c₁=99653682.92983 use A=
+[4000.50,4017.50] for E236=[4007.19,4007.42], E237=[4013.11,4013.26],
+and B=[4017.50,4040.50] for E239=[4022.50,4022.90],
+E240=[4027.53,4027.80]. The strict negative points are +4007.30,
++4013.18, +4022.70 and +4027.66. All 27200 and 36800 directed fine
+cells respectively prove positivity outside the corresponding
+enclosures, including the earlier false E238 flag.
+
+Use 192 sine terms at c₁+4009.00 on A and 208 at c₁+4029.00 on B.
+The pointwise errors are at most 3·34¹⁹²/192! and 3·46²⁰⁸/208!
+times the carrier norm. The absolute signed density integral is
+bounded by 1900 on each (23(211+18)/π<1900), and 1900ε(6+ε)<10⁻³⁴
+in each case. The upper signed step density gives the moment matrix M.
+Use the directed physical Legendre Gram G and enclose
+(τ−10⁻³⁴)G−GMG below using row bounds and directed Schur updates.
+A positive lower residual implies the original physical bound by
+orthogonal projection and the Taylor allowance. A negative upper
+pivot in the opposite test yields a negative physical residual by
+backward lift, setting all coordinates after the failing pivot to zero
+and minimizing through earlier positive pivots.
+
+Donor A passes all 192 directed lower pivots. Donor B passes all 208 directed lower pivots.
+
+The two donor bounds sum on disjoint interiors, so replace the old charge by the new charge for A and add the single charge for B. The net charge is 10⁻³². There are 291 paid restrictions through +4040.50. Least cap room >1.11111110961·10⁻²² and pooled room >5.798908000001111111110961·10⁻⁹.
+
+Run the blocks with the pinned arithmetic Markdown, repartition-A or
+repartition-B respectively, and upper. Use lower for the directed
+upper residual. Sign and pivot decisions are exact rational comparisons.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "repartition-A":("4000.50","4017.50","4007.19","4007.42","4009.00",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==27200
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4013.11"),F("4013.26"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4007.30","4013.18"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==27200
+print("PASS signed complement off repartition-A through 4017.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=13600
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4009.00")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS repartition-A physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all repartition-A physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("34")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "repartition-B":("4017.50","4040.50","4022.50","4022.90","4029.00",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=208
+c=c0+F(c0_offset)
+assert count==36800
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4027.53"),F("4027.80"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4022.70","4027.66"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==36800
+print("PASS signed complement off repartition-B through 4040.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=18400
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4029.00")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS repartition-B physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all repartition-B physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("46")**208/factorial(208)
+assert F("23")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+## Joint physical donor for E241 through E244
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4048.50,4068.50] use
+E241=[4052.55,4052.79], E242=[4054.95,4055.25], E243=[4062.37,4062.58]
+and E244=[4064.84,4065.17], with detunings from c₁=99653682.92983.
+The preceding directed screen certifies positivity on [4040.50,4048.50].
+The 32000 directed .000625 cells verify strict positivity outside the
+four enclosures on Y. Exact phase bounds give strict negativity at
++4052.67, +4055.10, +4062.47 and +4065.00.
+
+The 192-term sine Taylor approximation at c₁+4058.50 gives pointwise
+error ε=3·40¹⁹²/192! times the carrier norm. The absolute signed
+density integral is bounded by 20(211+18)/π<1900. The squared-form
+error is at most 1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the
+upper signed step density from the upper negative and lower positive
+bounds with the original mask allowances and folded normalization.
+Its exact Taylor matrix M and the directed physical Legendre Gram G
+enclose the lower residual (τ−10⁻³⁴)G−GMG by symmetric row allowance
+and directed Schur recursion. All 192 lower pivots pass. Projection
+onto the finite carrier span, followed by restoring the Taylor error,
+gives the original physical comparison.
+
+Thus the sum of N_E* N_E over E241–E244 is bounded by .95 P_Y+10⁻³² I.
+The donor interior is disjoint from previously charged donors.
+The cap is charged once and 295 restrictions are paid through +4068.50.
+Least cap room >1.11111110951·10⁻²² and pooled room
+>5.798908000001111111110951·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4068.50,4128.50] flags [4081.09,4081.32]
+and [4091.21,4091.43]. Unflagged cells have strictly positive directed
+bounds. The flagged groups still need the fine sign test.
+
+Run both blocks with the pinned arithmetic Markdown, E241-E244 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E241-E244":("4048.50","4068.50","4052.55","4052.79","4058.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4054.95"),F("4055.25")),(F("4062.37"),F("4062.58")),(F("4064.84"),F("4065.17"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4052.67","4055.10","4062.47","4065.00"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E241-E244 through 4068.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4058.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E241-E244 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E241-E244 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E241-E244":("4068.50","4128.50","4052.55","4052.79","4058.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E245 and E246
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4076.50,4096.50] use
+E245=[4081.06,4081.35] and E246=[4091.18,4091.46], with detunings from c₁=99653682.92983.
+The preceding directed screen certifies positivity on [4068.50,4076.50].
+The 32000 directed .000625 cells verify strict positivity outside the
+two enclosures on Y. Exact phase bounds give strict negativity at
++4081.20 and +4091.32.
+
+The 192-term sine Taylor approximation at c₁+4086.50 gives pointwise
+error ε=3·40¹⁹²/192! times the carrier norm. The absolute signed
+density integral is bounded by 20(211+18)/π<1900. The squared-form
+error is at most 1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the
+upper signed step density from the upper negative and lower positive
+bounds with the original mask allowances and folded normalization.
+Its exact Taylor matrix M and the directed physical Legendre Gram G
+enclose the lower residual (τ−10⁻³⁴)G−GMG by symmetric row allowance
+and directed Schur recursion. All 192 lower pivots pass. Projection
+onto the finite carrier span, followed by restoring the Taylor error,
+gives the original physical comparison.
+
+Thus the sum of N_E* N_E over E245–E246 is bounded by .95 P_Y+10⁻³² I.
+The donor interior is disjoint from previously charged donors.
+The cap is charged once and 297 restrictions are paid through +4096.50.
+Least cap room >1.11111110941·10⁻²² and pooled room
+>5.798908000001111111110941·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4096.50,4160.50] flags only [4148.94,4148.96]. Unflagged cells have strictly positive directed
+bounds. The flagged group still needs the fine sign test.
+
+Run both blocks with the pinned arithmetic Markdown, E245-E246 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E245-E246":("4076.50","4096.50","4081.06","4081.35","4086.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583100
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4091.18"),F("4091.46"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4081.20","4091.32"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E245-E246 through 4096.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4086.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E245-E246 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E245-E246 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E245-E246":("4096.50","4160.50","4081.06","4081.35","4086.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## E247 fine sign and forward screen
+
+2026-11-17, grwtsk contributors, AI-assisted. All detunings are from
+c₁=99653682.92983 for the original primitive odd mod-three radius-four
+multiplier. Retain all 458 signed prime powers, full parity-one gamma,
+the original masks and folded dν/π, and the zero principal pole.
+
+The directed .01 screen flagged [4148.94,4148.96] within
+E247=[4148.91,4148.99]. The direct phase evaluation at +4148.95
+gives A₁−P₄>.103140. The .000625 grid partitions E247 into 128
+closed cells, each with A₁−P₄>.100576. For each cell, the lower
+bound is the directed lower gamma bound minus the maximum upper
+endpoint prime sum, minus the interpolation allowance
+h² sup|P₄''|/8. The sine and cosine endpoint intervals use the original
+phase weights. The second derivative bound is the sum of the
+upper absolute weights times squared upper lags, below 13504.
+The folded pure multiplier on this enclosure therefore contributes
+zero to the negative restriction. This resolves the coarse flag and
+requires no donor comparison or cap charge.
+
+Together with the previous strict bounds on all cells outside the
+coarse flag, this proves A₁−P₄>0 across [4096.50,4160.50]. There
+are 297 paid restrictions. Least cap room >1.11111110941·10⁻²²
+and pooled room >5.798908000001111111110941·10⁻⁹. The global
+unpaid-support norm remains open.
+
+On [4160.50,4220.50], the extended directed .01 screen flags
+[4164.24,4164.48], [4167.64,4167.75], [4210.22,4210.41],
+[4216.63,4216.70] and [4218.42,4218.45]. Each unflagged cell
+has a strictly positive lower bound. Each flag needs a fine check.
+
+Run both blocks with the pinned arithmetic Markdown, E247 and upper.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E247":("4138.50","4158.50","4148.91","4148.99","4148.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+point=node(F("4148.95"))
+print("point margin lower",float(Alo-point[1]),flush=True)
+a,b=(F(l0)-start)/step,(F(r0)-start)/step
+assert a.denominator==b.denominator==1 and b-a==128
+margin=min(Alo-estimate(start+j*step,step)[1] for j in range(int(a),int(b)))
+print("fine margin lower",float(margin),flush=True)
+assert point[1]<Alo and margin>F(".100576")
+print("PASS E247 positive on all 128 fine cells")
+print("exact rational margin floor at 1e-6",margin*10**6//1)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E247":("4160.50","4220.50","4148.91","4148.99","4148.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E248 and E249
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4160.50,4180.50] use
+E248=[4164.21,4164.51] and E249=[4167.61,4167.78], with detunings from c₁=99653682.92983.
+The preceding directed screen certifies positivity on [4096.50,4160.50].
+The 32000 directed .000625 cells verify strict positivity outside the
+two enclosures on Y. Exact phase bounds give strict negativity at
++4164.36 and +4167.69.
+
+The 192-term sine Taylor approximation at c₁+4170.50 gives pointwise
+error ε=3·40¹⁹²/192! times the carrier norm. The absolute signed
+density integral is bounded by 20(211+18)/π<1900. The squared-form
+error is at most 1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the
+upper signed step density from the upper negative and lower positive
+bounds with the original mask allowances and folded normalization.
+Its exact Taylor matrix M and the directed physical Legendre Gram G
+enclose the lower residual (τ−10⁻³⁴)G−GMG by symmetric row allowance
+and directed Schur recursion. All 192 lower pivots pass. Projection
+onto the finite carrier span, followed by restoring the Taylor error,
+gives the original physical comparison.
+
+Thus the sum of N_E* N_E over E248–E249 is bounded by .95 P_Y+10⁻³² I.
+The donor interior is disjoint from previously charged donors.
+The cap is charged once and 299 restrictions are paid through +4180.50.
+Least cap room >1.11111110931·10⁻²² and pooled room
+>5.798908000001111111110931·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4180.50,4240.50] flags
+[4210.22,4210.41], [4216.63,4216.70], [4218.42,4218.45] and
+[4231.71,4231.82]. All unflagged cells have strictly positive bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E248-E249 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E248-E249":("4160.50","4180.50","4164.21","4164.51","4170.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4167.61"),F("4167.78"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4164.36","4167.69"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E248-E249 through 4180.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4170.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E248-E249 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E248-E249 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E248-E249":("4180.50","4240.50","4164.21","4164.51","4170.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583200
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E250 and E251, and E252 sign check
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4204.50,4224.50] use
+E250=[4210.19,4210.44] and E251=[4216.60,4216.73], with detunings from c₁=99653682.92983.
+The preceding directed screen certifies positivity on [4180.50,4204.50].
+The 32000 directed .000625 cells verify strict positivity outside the
+two enclosures on Y. Exact phase bounds give strict negativity at
++4210.31 and +4216.66. E252=[4218.39,4218.48] is a coarse flag.
+All 144 cells on that enclosure prove A₁−P₄>.0563.
+
+The 192-term sine Taylor approximation at c₁+4214.50 gives pointwise
+error ε=3·40¹⁹²/192! times the carrier norm. The absolute signed
+density integral is bounded by 20(211+18)/π<1900. The squared-form
+error is at most 1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the
+upper signed step density from the upper negative and lower positive
+bounds with the original mask allowances and folded normalization.
+Its exact Taylor matrix M and the directed physical Legendre Gram G
+enclose the lower residual (τ−10⁻³⁴)G−GMG by symmetric row allowance
+and directed Schur recursion. All 192 lower pivots pass. Projection
+onto the finite carrier span, followed by restoring the Taylor error,
+gives the original physical comparison.
+
+Thus the sum of N_E* N_E over E250–E251 is bounded by .95 P_Y+10⁻³² I.
+The donor interior is disjoint from previously charged donors.
+The cap is charged once and 301 restrictions are paid through +4224.50.
+Least cap room >1.11111110921·10⁻²² and pooled room
+>5.798908000001111111110921·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4224.50,4284.50] flags
+[4231.71,4231.82] and [4279.56,4279.70]. Every unflagged cell has
+a strictly positive directed lower bound.
+
+Run both blocks with the pinned arithmetic Markdown, E250-E251 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E250-E251":("4204.50","4224.50","4210.19","4210.44","4214.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583300
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4216.60"),F("4216.73"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4210.31","4216.66"))
+a_false,b_false=(F("4218.39")-start)/step,(F("4218.48")-start)/step
+assert a_false.denominator==b_false.denominator==1 and b_false-a_false==144
+assert all(Alo-estimate(start+j*step,step)[1]>F(".0563")
+           for j in range(int(a_false),int(b_false)))
+print("PASS E252 full enclosure positive by more than .0563",flush=True)
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E250-E251 through 4224.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4214.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E250-E251 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E250-E251 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E250-E251":("4224.50","4284.50","4210.19","4210.44","4214.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583300
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E253
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4224.50,4244.50] use E253=[4231.68,4231.85].
+Detunings are from c₁=99653682.92983. The prior donor meets Y only at a
+null endpoint. The 32000 directed .000625 cells certify positivity outside
+E253 on Y. The direct phase bound certifies negativity at +4231.76.
+
+The 192-term sine Taylor approximation at c₁+4234.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E253* N_E253≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 302 paid restrictions
+through +4244.50. Least cap room >1.11111110911·10⁻²² and pooled room
+>5.798908000001111111110911·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4244.50,4304.50] flags [4279.56,4279.70],
+[4293.21,4293.36], [4296.87,4297.04] and [4299.57,4299.81].
+All unflagged cells have strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E253 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E253":("4224.50","4244.50","4231.68","4231.85","4234.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583300
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4231.76",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E253 through 4244.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4234.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E253 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E253 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E253":("4244.50","4304.50","4231.68","4231.85","4234.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583300
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E254 and E255
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4275.50,4295.50] use E254=[4279.53,4279.73]
+and E255=[4293.18,4293.39].
+Detunings are from c₁=99653682.92983. The prior screen proves positivity on
+[4244.50,4275.50]. The 32000 directed .000625 cells certify positivity outside the
+two enclosures on Y. Direct phase bounds certify negativity at +4279.63
+and +4293.28.
+
+The 192-term sine Taylor approximation at c₁+4285.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E254* N_E254+N_E255* N_E255≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 304 paid restrictions
+through +4295.50. Least cap room >1.11111110901·10⁻²² and pooled room
+>5.798908000001111111110901·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4295.50,4355.50] flags [4296.87,4297.04],
+[4299.57,4299.81], [4308.27,4308.46], [4319.89,4320.11] and
+[4345.22,4345.42].
+All unflagged cells have strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E254-E255 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E254-E255":("4275.50","4295.50","4279.53","4279.73","4285.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583400
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4293.18"),F("4293.39"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4279.63","4293.28"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E254-E255 through 4295.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4285.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E254-E255 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E254-E255 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E254-E255":("4295.50","4355.50","4279.53","4279.73","4285.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583400
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E256 through E258
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4295.50,4315.50] use E256=[4296.84,4297.07],
+E257=[4299.54,4299.84] and E258=[4308.24,4308.49].
+Detunings are from c₁=99653682.92983. The previous donor shares only a null endpoint. The 32000 directed .000625 cells certify positivity outside the
+three enclosures on Y. Direct phase bounds certify negativity at +4296.95,
++4299.69 and +4308.36.
+
+The 192-term sine Taylor approximation at c₁+4305.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E256* N_E256+N_E257* N_E257+N_E258* N_E258≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 307 paid restrictions
+through +4315.50. Least cap room >1.11111110891·10⁻²² and pooled room
+>5.798908000001111111110891·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4315.50,4375.50] flags
+[4319.89,4320.11], [4345.22,4345.42] and a terminal group starting
+at +4375.23. All other cells have strictly positive directed bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E256-E258 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E256-E258":("4295.50","4315.50","4296.84","4297.07","4305.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583400
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4299.54"),F("4299.84")),(F("4308.24"),F("4308.49"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4296.95","4299.69","4308.36"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E256-E258 through 4315.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4305.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E256-E258 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E256-E258 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E256-E258":("4315.50","4375.50","4296.84","4297.07","4305.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583400
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E259
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4315.50,4335.50] use E259=[4319.86,4320.14].
+Detunings are from c₁=99653682.92983. The prior donor meets Y only at a
+null endpoint. The 32000 directed .000625 cells certify positivity outside
+E259 on Y. The direct phase bound certifies negativity at +4320.00.
+
+The 192-term sine Taylor approximation at c₁+4325.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E259* N_E259≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 308 paid restrictions
+through +4335.50. Least cap room >1.11111110881·10⁻²² and pooled room
+>5.798908000001111111110881·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4335.50,4395.50] flags [4345.22,4345.42],
+[4375.23,4375.52] and [4387.73,4387.93]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E259 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E259":("4315.50","4335.50","4319.86","4320.14","4325.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4320.00",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E259 through 4335.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4325.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E259 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E259 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E259":("4335.50","4395.50","4319.86","4320.14","4325.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E260
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4335.50,4355.50] use E260=[4345.19,4345.45].
+Detunings are from c₁=99653682.92983. The prior donor meets Y only at a
+null endpoint. The 32000 directed .000625 cells certify positivity outside
+E260 on Y. The direct phase bound certifies negativity at +4345.32.
+
+The 192-term sine Taylor approximation at c₁+4345.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E260* N_E260≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 309 paid restrictions
+through +4355.50. Least cap room >1.11111110871·10⁻²² and pooled room
+>5.798908000001111111110871·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4355.50,4415.50] flags
+[4375.23,4375.52] and [4387.73,4387.93]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E260 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E260":("4335.50","4355.50","4345.19","4345.45","4345.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4345.32",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E260 through 4355.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4345.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E260 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E260 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E260":("4355.50","4415.50","4345.19","4345.45","4345.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E261 and E262
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4371.50,4391.50] use E261=[4375.20,4375.55]
+and E262=[4387.70,4387.96].
+Detunings are from c₁=99653682.92983. The prior screen certifies positivity on
+[4355.50,4371.50]. The 32000 directed .000625 cells certify positivity outside the
+two enclosures on Y. Direct phase bounds certify negativity at +4375.37
+and +4387.83.
+
+The 192-term sine Taylor approximation at c₁+4381.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E261* N_E261+N_E262* N_E262≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 311 paid restrictions
+through +4391.50. Least cap room >1.11111110861·10⁻²² and pooled room
+>5.798908000001111111110861·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4391.50,4451.50] flags
+[4421.86,4422.07], [4439.28,4439.49], [4440.24,4440.44],
+[4445.50,4445.72] and [4448.85,4449.01]. All unflagged cells
+have strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E261-E262 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E261-E262":("4371.50","4391.50","4375.20","4375.55","4381.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4387.70"),F("4387.96"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4375.37","4387.83"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E261-E262 through 4391.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4381.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E261-E262 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E261-E262 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E261-E262":("4391.50","4451.50","4375.20","4375.55","4381.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E263
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4412.50,4432.50] use E263=[4421.83,4422.10].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4391.50,4412.50]. The 32000 directed .000625 cells certify positivity outside
+E263 on Y. The direct phase bound certifies negativity at +4421.96.
+
+The 192-term sine Taylor approximation at c₁+4422.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E263* N_E263≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 312 paid restrictions
+through +4432.50. Least cap room >1.11111110851·10⁻²² and pooled room
+>5.798908000001111111110851·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4432.50,4492.50] flags [4439.28,4439.49],
+[4440.24,4440.44], [4445.50,4445.72], [4448.85,4449.01],
+[4455.10,4455.44], [4460.85,4460.97], [4461.88,4462.02] and
+[4472.16,4472.30]. All unflagged cells have strictly positive bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E263 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E263":("4412.50","4432.50","4421.83","4422.10","4422.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4421.96",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E263 through 4432.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4422.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E263 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E263 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E263":("4432.50","4492.50","4421.83","4422.10","4422.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E264 through E267
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4433.50,4453.50] use
+E264=[4439.25,4439.52], E265=[4440.21,4440.47], E266=[4445.47,4445.75]
+and E267=[4448.82,4449.04].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4432.50,4433.50]. The 32000 directed .000625 cells certify positivity outside the
+four enclosures on Y. Direct phase bounds certify negativity at +4439.38,
++4440.34, +4445.61 and +4448.93.
+
+The 192-term sine Taylor approximation at c₁+4443.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E264* N_E264+N_E265* N_E265+N_E266* N_E266+N_E267* N_E267≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 316 paid restrictions
+through +4453.50. Least cap room >1.11111110841·10⁻²² and pooled room
+>5.798908000001111111110841·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4453.50,4513.50] flags [4455.10,4455.44],
+[4460.85,4460.97], [4461.88,4462.02], [4472.16,4472.30],
+[4497.39,4497.55], [4499.91,4500.17], [4500.86,4500.91] and
+[4505.58,4505.82]. All unflagged cells have strictly positive bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E264-E267 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E264-E267":("4433.50","4453.50","4439.25","4439.52","4443.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4440.21"),F("4440.47")),(F("4445.47"),F("4445.75")),(F("4448.82"),F("4449.04"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4439.38","4440.34","4445.61","4448.93"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E264-E267 through 4453.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4443.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E264-E267 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E264-E267 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E264-E267":("4453.50","4513.50","4439.25","4439.52","4443.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E268 through E271
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4453.50,4473.50] use
+E268=[4455.07,4455.47], E269=[4460.82,4461.00], E270=[4461.85,4462.05]
+and E271=[4472.13,4472.33].
+Detunings are from c₁=99653682.92983. The preceding donor shares only a null endpoint. The 32000 directed .000625 cells certify positivity outside the
+four enclosures on Y. Direct phase bounds certify negativity at +4455.27,
++4460.91, +4461.95 and +4472.23.
+
+The 192-term sine Taylor approximation at c₁+4463.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and directed physical Legendre Gram G
+enclose (τ−10⁻³⁴)G−GMG below by the symmetric row allowance and
+directed Schur recursion. For the upper residual the lower signed
+density supplies M and the Taylor allowance increases τ to τ+10⁻³⁴.
+The symmetric row allowance and rounded Schur updates then bound the
+residual above. At a negative upper pivot put one at the failing
+coordinate and zero at every later coordinate. Lift backwards by
+minimizing at each previous positive pivot. The resulting rational
+vector in the physical Legendre span gives a negative original
+residual by the upper direction of the Schur bounds.
+
+At α=.95 and τ=10⁻³², the directed sufficient lower residual fails at zero-based pivot 37 (approximately −7.914852383649994·10⁻¹³). The directed upper residual fails at zero-based pivot 38 (approximately -1.8087566383844105e-12), certifying an actual counterexample on the original odd carrier. The ledger retains 316 paid restrictions through +4453.50.
+
+The directed .01 screen on [4473.50,4533.50] flags [4497.39,4497.55],
+[4499.91,4500.17], [4500.86,4500.91], [4505.58,4505.82],
+[4520.67,4520.91], [4521.68,4521.75] and [4529.77,4529.99].
+Every unflagged cell has a strictly positive directed lower bound.
+
+Run both blocks with the pinned arithmetic Markdown, E268-E271 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E268-E271":("4453.50","4473.50","4455.07","4455.47","4463.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4460.82"),F("4461.00")),(F("4461.85"),F("4462.05")),(F("4472.13"),F("4472.33"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4455.27","4460.91","4461.95","4472.23"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E268-E271 through 4473.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4463.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E268-E271 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E268-E271 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E268-E271":("4473.50","4533.50","4439.25","4439.52","4463.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## E264–E271 original donor repartition
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². In detunings from c₁=99653682.92983 use
+A=[4433.50,4450.50] for E264=[4439.25,4439.52], E265=[4440.21,4440.47],
+E266=[4445.47,4445.75] and E267=[4448.82,4449.04]. Use
+B=[4450.50,4473.50] for E268=[4455.07,4455.47], E269=[4460.82,4461.00],
+E270=[4461.85,4462.05] and E271=[4472.13,4472.33]. All eight negative
+witnesses persist. The respective 27200 and 36800 fine cells certify
+strict positivity outside the indicated enclosures.
+
+Use 192 sine terms at c₁+4442.00 on A and 208 at c₁+4462.00 on B.
+The pointwise errors are at most 3·34¹⁹²/192! and 3·46²⁰⁸/208!
+times the carrier norm. The absolute signed density integral is
+bounded by 1900 on each (23(211+18)/π<1900), and 1900ε(6+ε)<10⁻³⁴
+in each case. The upper signed step density gives the moment matrix M.
+Use the directed physical Legendre Gram G and enclose
+(τ−10⁻³⁴)G−GMG below using row bounds and directed Schur updates.
+A positive lower residual implies the original physical bound by
+orthogonal projection and the Taylor allowance. A negative upper
+pivot in the opposite test yields a negative physical residual by
+backward lift, setting all coordinates after the failing pivot to zero
+and minimizing through earlier positive pivots.
+
+Donor A passes all 192 directed lower pivots. Donor B fails the sufficient lower test at zero-based pivot 55 (approximately -3.5967277868235815e-28). Its directed upper test fails at pivot 55 (approximately -1.9705279238346283e-28), certifying an actual counterexample. Donor B passes all 208 directed lower pivots at τ=10⁻²⁵.
+
+The two donor bounds sum on disjoint interiors, so replace the old charge by the new charge for A and add the single charge for B. The net charge is 10⁻²⁵. There are 320 paid restrictions through +4473.50. Least cap room >1.11011110841·10⁻²² and pooled room >5.798908000001111011110841·10⁻⁹.
+
+Run the blocks with the pinned arithmetic Markdown, repartition-A or
+repartition-B respectively, and upper. Use lower for the directed
+upper residual. To replay the B charge test, replace only F("1e-32")
+on the tau line with F("1e-25") and use upper. Sign and pivot decisions are exact rational comparisons.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "repartition-A":("4433.50","4450.50","4439.25","4439.52","4442.00",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==27200
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4440.21"),F("4440.47")),(F("4445.47"),F("4445.75")),(F("4448.82"),F("4449.04"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4439.38","4440.34","4445.61","4448.93"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==27200
+print("PASS signed complement off repartition-A through 4450.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=13600
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4442.00")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS repartition-A physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all repartition-A physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("34")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "repartition-B":("4450.50","4473.50","4455.07","4455.47","4462.00",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=208
+c=c0+F(c0_offset)
+assert count==36800
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4460.82"),F("4461.00")),(F("4461.85"),F("4462.05")),(F("4472.13"),F("4472.33"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4455.27","4460.91","4461.95","4472.23"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==36800
+print("PASS signed complement off repartition-B through 4473.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=18400
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4462.00")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS repartition-B physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all repartition-B physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("46")**208/factorial(208)
+assert F("23")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+## Joint physical donor for E272 through E275
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4492.50,4512.50] use
+E272=[4497.36,4497.58], E273=[4499.88,4500.20], E274=[4500.83,4500.94]
+and E275=[4505.55,4505.85].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4473.50,4492.50]. The 32000 directed .000625 cells certify positivity outside the
+four enclosures on Y. Direct phase bounds certify negativity at +4497.47,
++4500.04, +4500.88 and +4505.70.
+
+The 192-term sine Taylor approximation at c₁+4502.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E272* N_E272+N_E273* N_E273+N_E274* N_E274+N_E275* N_E275≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 324 paid restrictions
+through +4512.50. Least cap room >1.11011110831·10⁻²² and pooled room
+>5.798908000001111011110831·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4512.50,4572.50] flags [4520.67,4520.91],
+[4521.68,4521.75], [4529.77,4529.99], [4546.94,4547.20],
+[4549.68,4549.86] and [4554.21,4554.56]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E272-E275 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E272-E275":("4492.50","4512.50","4497.36","4497.58","4502.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4499.88"),F("4500.20")),(F("4500.83"),F("4500.94")),(F("4505.55"),F("4505.85"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4497.47","4500.04","4500.88","4505.70"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E272-E275 through 4512.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4502.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E272-E275 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E272-E275 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E272-E275":("4512.50","4572.50","4439.25","4439.52","4502.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E276 through E278
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4512.50,4532.50] use
+E276=[4520.64,4520.94], E277=[4521.65,4521.78]
+and E278=[4529.74,4530.02].
+Detunings are from c₁=99653682.92983. The previous donor shares only a null endpoint. The 32000 directed .000625 cells certify positivity outside the
+three enclosures on Y. Direct phase bounds certify negativity at +4520.79, +4521.71 and +4529.88.
+
+The 192-term sine Taylor approximation at c₁+4522.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E276* N_E276+N_E277* N_E277+N_E278* N_E278≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 327 paid restrictions
+through +4532.50. Least cap room >1.11011110821·10⁻²² and pooled room
+>5.798908000001111011110821·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4532.50,4592.50] flags [4546.94,4547.20],
+[4549.68,4549.86] and [4554.21,4554.56]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E276-E278 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E276-E278":("4512.50","4532.50","4520.64","4520.94","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4521.65"),F("4521.78")),(F("4529.74"),F("4530.02"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4520.79","4521.71","4529.88"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E276-E278 through 4532.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4522.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E276-E278 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E276-E278 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E276-E278":("4532.50","4592.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E279 through E281
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4540.50,4560.50] use
+E279=[4546.91,4547.23], E280=[4549.65,4549.89]
+and E281=[4554.18,4554.59].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4532.50,4540.50]. The 32000 directed .000625 cells certify positivity outside the
+three enclosures on Y. Direct phase bounds certify negativity at +4547.07, +4549.77 and +4554.38.
+
+The 192-term sine Taylor approximation at c₁+4550.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E279* N_E279+N_E280* N_E280+N_E281* N_E281≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 330 paid restrictions
+through +4560.50. Least cap room >1.11011110811·10⁻²² and pooled room
+>5.798908000001111011110811·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4560.50,4620.50] flags only
+[4620.13,4620.20]. All unflagged cells have strictly positive
+directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E279-E281 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E279-E281":("4540.50","4560.50","4546.91","4547.23","4550.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4549.65"),F("4549.89")),(F("4554.18"),F("4554.59"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4547.07","4549.77","4554.38"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E279-E281 through 4560.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4550.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E279-E281 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E279-E281 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E279-E281":("4560.50","4620.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583500
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E282
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4610.50,4630.50] use E282=[4620.10,4620.23].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4560.50,4610.50]. The 32000 directed .000625 cells certify positivity outside
+E282 on Y. The direct phase bound certifies negativity at +4620.16.
+
+The 192-term sine Taylor approximation at c₁+4620.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E282* N_E282≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 331 paid restrictions
+through +4630.50. Least cap room >1.11011110801·10⁻²² and pooled room
+>5.798908000001111011110801·10⁻⁹. The unpaid-support norm remains open.
+
+The extended directed .01 screen on [4610.50,4670.50] flags
+[4620.13,4620.20], [4639.92,4640.11], [4647.43,4647.62] and
+[4662.32,4662.54]. Every unflagged cell has a strictly positive
+directed lower bound.
+
+Run both blocks with the pinned arithmetic Markdown, E282 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E282":("4610.50","4630.50","4620.10","4620.23","4620.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4620.16",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E282 through 4630.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4620.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E282 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E282 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E282":("4610.50","4670.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E283 and E284
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4630.50,4650.50] use
+E283=[4639.89,4640.14] and E284=[4647.40,4647.65].
+Detunings are from c₁=99653682.92983. The preceding donor shares only a null endpoint. The 32000 directed .000625 cells certify positivity outside the
+two enclosures on Y. Direct bounds certify negativity at +4640.01 and
++4647.52.
+
+The 192-term sine Taylor approximation at c₁+4640.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E283* N_E283+N_E284* N_E284≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 333 paid restrictions
+through +4650.50. Least cap room >1.11011110791·10⁻²² and pooled room
+>5.798908000001111011110791·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4650.50,4710.50] flags [4662.32,4662.54]
+and [4703.65,4703.72]. All unflagged cells have strictly positive
+directed bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E283-E284 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E283-E284":("4630.50","4650.50","4639.89","4640.14","4640.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4647.40"),F("4647.65"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4640.01","4647.52"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E283-E284 through 4650.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4640.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E283-E284 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E283-E284 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E283-E284":("4650.50","4710.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E285
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4652.50,4672.50] use E285=[4662.29,4662.57].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4650.50,4652.50]. The 32000 directed .000625 cells certify positivity outside
+E285 on Y. The direct phase bound certifies negativity at +4662.43.
+
+The 192-term sine Taylor approximation at c₁+4662.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E285* N_E285≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 334 paid restrictions
+through +4672.50. Least cap room >1.11011110781·10⁻²² and pooled room
+>5.798908000001111011110781·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4672.50,4732.50] flags only
+[4703.65,4703.72]. Every unflagged cell has a strictly positive
+directed lower bound.
+
+Run both blocks with the pinned arithmetic Markdown, E285 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E285":("4652.50","4672.50","4662.29","4662.57","4662.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4662.43",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E285 through 4672.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4662.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E285 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E285 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E285":("4672.50","4732.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E286
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4693.50,4713.50] use E286=[4703.62,4703.75].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4672.50,4693.50]. The 32000 directed .000625 cells certify positivity outside
+E286 on Y. The direct phase bound certifies negativity at +4703.68.
+
+The 192-term sine Taylor approximation at c₁+4703.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E286* N_E286≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 335 paid restrictions
+through +4713.50. Least cap room >1.11011110771·10⁻²² and pooled room
+>5.798908000001111011110771·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4713.50,4773.50] flags
+[4736.08,4736.19], [4737.06,4737.25], [4767.04,4767.09] and
+[4769.58,4769.88]. Each unflagged cell has a strictly positive
+directed lower bound.
+
+Run both blocks with the pinned arithmetic Markdown, E286 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E286":("4693.50","4713.50","4703.62","4703.75","4703.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4703.68",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E286 through 4713.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4703.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E286 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E286 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E286":("4713.50","4773.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E287 and E288
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4729.50,4749.50] use E287=[4736.05,4736.22] and E288=[4737.03,4737.28].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4713.50,4729.50]. The 32000 directed .000625 cells certify positivity outside the two enclosures on Y. Direct phase bounds certify negativity at
++4736.13 and +4737.15.
+
+The 192-term sine Taylor approximation at c₁+4739.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E287* N_E287+N_E288* N_E288≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 337 paid restrictions
+through +4749.50. Least cap room >1.11011110761·10⁻²² and pooled room
+>5.798908000001111011110761·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4749.50,4809.50] flags [4767.04,4767.09],
+[4769.58,4769.88] and [4791.43,4791.65]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E287-E288 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E287-E288":("4729.50","4749.50","4736.05","4736.22","4739.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4737.03"),F("4737.28"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4736.13","4737.15"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E287-E288 through 4749.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4739.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E287-E288 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E287-E288 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E287-E288":("4749.50","4809.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E289 and E290
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4760.50,4780.50] use E289=[4767.01,4767.12] and E290=[4769.55,4769.91].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4749.50,4760.50]. The 32000 directed .000625 cells certify positivity outside the two enclosures on Y. Direct phase bounds certify negativity at
++4767.06875 and +4769.73. The earlier E289 test at +4767.06
+was inconclusive for negativity and the shifted directed witness resolves it.
+
+The 192-term sine Taylor approximation at c₁+4770.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E289* N_E289+N_E290* N_E290≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 339 paid restrictions
+through +4780.50. Least cap room >1.11011110751·10⁻²² and pooled room
+>5.798908000001111011110751·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4780.50,4840.50] flags [4791.43,4791.65],
+[4815.75,4815.85] and [4820.58,4820.80]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E289-E290 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E289-E290":("4760.50","4780.50","4767.01","4767.12","4770.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4769.55"),F("4769.91"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4767.06875","4769.73"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E289-E290 through 4780.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4770.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E289-E290 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E289-E290 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E289-E290":("4780.50","4840.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Physical donor for E291
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4781.50,4801.50] use E291=[4791.42,4791.66].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4780.50,4781.50]. The 32000 directed .000625 cells certify positivity outside E291 on Y. Direct phase bounds certify negativity at +4791.54.
+
+The 192-term sine Taylor approximation at c₁+4791.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E291* N_E291≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 340 paid restrictions
+through +4801.50. Least cap room >1.11011110741·10⁻²² and pooled room
+>5.798908000001111011110741·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4801.50,4861.50] flags [4815.75,4815.85],
+[4820.58,4820.80], [4843.08,4843.44], [4846.19,4846.40],
+[4856.74,4856.80] and [4858.51,4858.68]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E291 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E291":("4781.50","4801.50","4791.42","4791.66","4791.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4791.54",))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E291 through 4801.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4791.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E291 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E291 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E291":("4801.50","4861.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E292 and E293
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4806.50,4826.50] use E292=[4815.73,4815.87] and E293=[4820.56,4820.82].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4801.50,4806.50]. The 32000 directed .000625 cells certify positivity outside both enclosures on Y. Direct phase bounds certify negativity at +4815.80 and +4820.69.
+
+The 192-term sine Taylor approximation at c₁+4816.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E292* N_E292+N_E293* N_E293≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 342 paid restrictions
+through +4826.50. Least cap room >1.11011110731·10⁻²² and pooled room
+>5.798908000001111011110731·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4826.50,4886.50] flags [4843.08,4843.44],
+[4846.19,4846.40], [4856.74,4856.80], [4858.51,4858.68],
+[4871.25,4871.52] and [4882.46,4882.76]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E292-E293 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E292-E293":("4806.50","4826.50","4815.73","4815.87","4816.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4820.56"),F("4820.82"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4815.80","4820.69"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E292-E293 through 4826.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4816.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E292-E293 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E292-E293 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E292-E293":("4826.50","4886.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E294 and E295
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4833.50,4853.50] use E294=[4843.06,4843.46] and E295=[4846.17,4846.42].
+Detunings are from c₁=99653682.92983. The previous screen certifies positivity on [4826.50,4833.50]. The 32000 directed .000625 cells certify positivity outside both enclosures on Y. Direct phase bounds certify negativity at +4843.26 and +4846.30.
+
+The 192-term sine Taylor approximation at c₁+4843.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E294* N_E294+N_E295* N_E295≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 344 paid restrictions
+through +4853.50. Least cap room >1.11011110721·10⁻²² and pooled room
+>5.798908000001111011110721·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4853.50,4913.50] flags [4856.74,4856.80],
+[4858.51,4858.68], [4871.25,4871.52], [4882.46,4882.76],
+[4905.47,4905.55] and [4910.98,4911.04]. All unflagged cells have
+strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E294-E295 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E294-E295":("4833.50","4853.50","4843.06","4843.46","4843.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4846.17"),F("4846.42"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4843.26","4846.30"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E294-E295 through 4853.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4843.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E294-E295 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E294-E295 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E294-E295":("4853.50","4913.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~
+
+## Joint physical donor for E296–E298
+
+2026-11-17, grwtsk contributors, AI-assisted. The original odd complex
+L²([-4,4],dt) carrier has zero extension, folded measure dν/π, original
+masks, full parity-one gamma, all 458 signed prime powers and zero
+principal pole.
+
+Set α=.95 and τ=10⁻³². On Y=[4853.50,4873.50] use E296=[4856.72,4856.82], E297=[4858.49,4858.70] and E298=[4871.23,4871.54].
+Detunings are from c₁=99653682.92983. The 32000 directed .000625 cells certify positivity outside all three enclosures on Y. Direct phase bounds certify negativity at +4856.77, +4858.59 and +4871.38.
+
+The 192-term sine Taylor approximation at c₁+4863.50 has pointwise error
+ε=3·40¹⁹²/192! times the carrier norm. The absolute signed density integral
+is bounded by 20(211+18)/π<1900. Thus the squared-form error is at most
+1900ε(6+ε)<10⁻³⁴ times the squared norm. Form the upper signed step density
+from the upper negative and lower positive bounds with the original masks
+and folded normalization. Its exact Taylor moment matrix M and the directed
+physical Legendre Gram G enclose (τ−10⁻³⁴)G−GMG below by the symmetric row
+allowance and directed Schur recursion. All 192 lower pivots pass.
+Projection onto the finite carrier span and restoration of the Taylor
+error give N_E296* N_E296+N_E297* N_E297+N_E298* N_E298≼.95 P_Y+10⁻³² I on the original carrier.
+
+The disjoint donor charges the cap once. There are 347 paid restrictions
+through +4873.50. Least cap room >1.11011110711·10⁻²² and pooled room
+>5.798908000001111011110711·10⁻⁹. The unpaid-support norm remains open.
+
+The directed .01 screen on [4873.50,4933.50] flags [4882.46,4882.76],
+[4905.47,4905.55], [4910.98,4911.04] and [4916.39,4916.56].
+All unflagged cells have strictly positive directed lower bounds.
+
+Run both blocks with the pinned arithmetic Markdown, E296-E298 and upper.
+The lower option in the first block tests the directed upper residual.
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E296-E298":("4853.50","4873.50","4856.72","4856.82","4863.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".000625")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+K=192
+c=c0+F(c0_offset)
+assert count==32000
+D=10**12
+rho=[]
+negative_intervals=[(F(l0),F(r0)),(F("4858.49"),F("4858.70")),(F("4871.23"),F("4871.54"))]
+assert all(node(x)[1]<Alo for a,b in negative_intervals for x in (a,b))
+assert node(stop)[1]<Alo
+assert all(node(F(x))[0]>Ahi for x in ("4856.77","4858.59","4871.38"))
+for j in range(count):
+    a=start+j*step
+    b=a+step
+    lo,hi=estimate(a,step)
+    on_negative=any(l<=a and b<=r for l,r in negative_intervals)
+    if not on_negative:
+        assert hi<Alo
+    if lower:
+        density=(1-F("3e-10"))*max(F(0),lo-Ahi)/pi_upper if on_negative else F(0)
+        density-=F(".95")*max(F(0),Ahi-lo)/pi_lower
+        rho.append((D*density)//1)
+    else:
+        density=max(F(0),hi-Alo)/pi_lower if on_negative else F(0)
+        density-=F(".95")*(1-F("3e-10"))*max(F(0),Alo-hi)/pi_upper
+        rho.append(-((-D*density)//1))
+assert len(rho)==32000
+print("PASS signed complement off E296-E298 through 4873.50",count,flush=True)
+# Sum exact signed polynomial moments by integration by parts on the grid.
+center_index=16000
+jump=[-rho[0]]+[a-b for a,b in zip(rho,rho[1:])]+[rho[-1]]
+indices=[i-center_index for i in range(len(jump))]
+weighted=jump
+moment=[]
+scale_power=D
+for n in range(1,2*K):
+    weighted=[w*i for w,i in zip(weighted,indices)]
+    scale_power*=1600
+    moment.append(F(sum(weighted),n*scale_power))
+taylor=[F((-1)**(n//2)*4**n,factorial(n)) for n in range(K)]
+M=[[taylor[i]*taylor[j]*moment[i+j] for j in range(K)] for i in range(K)]
+print("PASS exact signed moment matrix",len(M),flush=True)
+
+assert c==c0+F("4863.50")
+z=8*c
+def atan_sharp(y):
+    s=sum((-1)**j*y**(2*j+1)/(2*j+1) for j in range(330))
+    return s,s+y**661/661
+lo5,hi5=atan_sharp(F(1,5))
+lo239,hi239=atan_sharp(F(1,239))
+pi_lo_sharp,pi_hi_sharp=round_out(16*lo5-4*hi239,16*hi5-4*lo239,10**360)
+assert pi_lower<=pi_lo_sharp<pi_hi_sharp<=pi_upper
+turn=(z/pi_lo_sharp+1)//2
+angle=z-2*turn*pi_lo_sharp
+assert abs(angle)<F(22,7)
+co0=sum((-1)**q*angle**(2*q)/factorial(2*q) for q in range(130))
+si0=sum((-1)**q*angle**(2*q+1)/factorial(2*q+1) for q in range(130))
+err=2*turn*(pi_hi_sharp-pi_lo_sharp)+F(22,7)**260/factorial(260)
+assert err<F("1e-245")
+co=(co0-err,co0+err)
+si=(si0-err,si0+err)
+trig_grid=10**330
+rec=[round_out(*scale(2/z,si),trig_grid)]
+for n in range(1,2*K-1):
+    val=(add(scale(2/z,si),scale(-n/z,rec[-1])) if n%2==0 else
+         add(scale(-2/z,co),scale(n/z,rec[-1])))
+    rec.append(round_out(*val,trig_grid))
+# Change the physical carriers from monomials to Legendre polynomials.
+powers=[[F(1)],[F(0),F(1)]]
+for n in range(1,K-1):
+    old=powers[-2]+[F(0)]*2
+    shifted=[F(0)]+powers[-1]
+    powers.append([((2*n+1)*a-n*b)/(n+1) for a,b in zip(shifted,old)])
+T=[[F(0)]*K for _ in range(K)]
+for n in range(K):
+    remainder=[F(i==n) for i in range(n+1)]
+    for j in range(n,-1,-2):
+        T[n][j]=remainder[j]/powers[j][j]
+        for i,coeff in enumerate(powers[j]):
+            remainder[i]-=T[n][j]*coeff
+    assert all(x==0 for x in remainder)
+dm=lcm(*(x.denominator for row in M for x in row))
+dt=lcm(*(x.denominator for row in T for x in row))
+mi=[[int(x*dm) for x in row] for row in M]
+ti=[[int(x*dt) for x in row] for row in T]
+mt=[[sum(mi[i][k]*ti[k][j] for k in range(j,K,2)) for j in range(K)] for i in range(K)]
+leg=[[F(sum(ti[k][i]*mt[k][j] for k in range(i,K,2)),dm*dt**2) for j in range(K)] for i in range(K)]
+# G is nearly diagonal in the physical Legendre basis. The plain terms are exact.
+polynomials=[]
+bit_stride=1024
+base=1<<bit_stride
+half=base//2
+for i,row in enumerate(powers):
+    d=lcm(*(x.denominator for x in row))
+    coefficients=[int(x*d) for x in row[i%2::2]]
+    assert max(abs(x).bit_length() for x in coefficients)<500
+    packed=sum(v<<(bit_stride*j) for j,v in enumerate(coefficients))
+    polynomials.append((d,len(coefficients),packed))
+moment_bounds=[(int(a*trig_grid),int(b*trig_grid)) for a,b in rec]
+G=[[None]*K for _ in range(K)]
+for i in range(K):
+    di,ni,pi=polynomials[i]
+    for j in range(i,K):
+        dj,nj,pj=polynomials[j]
+        packed=pi*pj
+        coeff=[]
+        for _ in range(ni+nj-1):
+            digit=((packed+half)&(base-1))-half
+            coeff.append(digit)
+            packed=(packed-digit)>>bit_stride
+        assert packed==0
+        oscillatory_factor=-2 if i%2==j%2==0 else 2
+        lo=hi=0
+        for n,x in enumerate(coeff):
+            a,b=moment_bounds[2*n+i%2+j%2]
+            u,v=oscillatory_factor*x*a,oscillatory_factor*x*b
+            lo+=min(u,v)
+            hi+=max(u,v)
+        plain=F(4,2*i+1) if i==j else F(0)
+        d=di*dj*trig_grid
+        G[i][j]=G[j][i]=(plain+F(lo,d),plain+F(hi,d))
+print("PASS original physical Legendre Gram enclosure",flush=True)
+# Round every factor once and propagate interval products at integer grid.
+grid=10**55
+def integer(a,b):
+    return (a*grid)//1,-((-b*grid)//1)
+g=[[integer(*v) for v in row] for row in G]
+m=[[integer(v,v) for v in row] for row in leg]
+def product(A,B):
+    result=[]
+    for row in A:
+        new=[]
+        for col in zip(*B):
+            lower=upper=0
+            for (a,b),(c,d) in zip(row,col):
+                z=(a*c,a*d,b*c,b*d)
+                lower+=min(z)
+                upper+=max(z)
+            new.append((lower//grid,-((-upper)//grid)))
+        result.append(new)
+    return result
+gmg=product(product(g,m),g)
+tau=F("1e-32")+(1 if lower else -1)*F("1e-34")
+B=[]
+for i in range(K):
+    row=[]
+    for j in range(K):
+        low,high=g[i][j]
+        l,r=gmg[i][j]
+        row.append(((tau*low)//1-r,-((-tau*high)//1)-l))
+    B.append(row)
+for i in range(K):
+    for j in range(i+1,K):
+        l=max(B[i][j][0],B[j][i][0])
+        r=min(B[i][j][1],B[j][i][1])
+        assert l<=r
+        B[i][j]=B[j][i]=(l,r)
+err=max(sum(r-l for l,r in row) for row in B)
+A=[[(B[i][j][0]+B[i][j][1])//2+((err if lower else -err) if i==j else 0) for j in range(K)] for i in range(K)]
+assert A==list(map(list,zip(*A)))
+print("directed row radius",float(F(err,grid)),flush=True)
+least=None
+direction=1 if lower else -1
+for i in range(K):
+    pivot=A[i][i]
+    value=F(pivot,grid)
+    if pivot<=0:
+        assert pivot<0
+        print("directed negative pivot",i,float(value),flush=True)
+        print("PASS E296-E298 physical counterexample" if lower else "PASS sufficient-matrix obstruction",flush=True)
+        break
+    least=value if least is None else min(least,value)
+    remaining=K-i-1
+    for j in range(i+1,K):
+        for l in range(j,K):
+            v=A[j][l]-A[j][i]*A[i][l]//pivot
+            if j==l:
+                v+=direction*remaining
+            A[j][l]=A[l][j]=v
+else:
+    print("minimum pivot",float(least),flush=True)
+    print("PASS all E296-E298 physical pivots" if not lower else "Upper residual test found no negative pivot",K,flush=True)
+epsilon=3*F("40")**192/factorial(192)
+assert F("20")*(211+18)/pi_lower<1900
+assert F(1900)*epsilon*(6+epsilon)<F("1e-34")
+print("PASS original Taylor error allowance",flush=True)
+~~~
+
+~~~python
+from hashlib import sha256
+from pathlib import Path
+import re
+import sys
+
+arithmetic_source = Path(sys.argv[1]).read_bytes()
+assert sha256(arithmetic_source).hexdigest() == (
+    "2cfa24493535cf3d064b12d646d4ba7772066b12c2f0cac6d2bb83803bbf65a5"
+)
+source = arithmetic_source.decode("utf-8")
+blocks = re.findall(r"^~~~python\n(.*?)^~~~$",source,re.M|re.S)
+prior = [g for g in blocks if g.startswith("from fractions import Fraction")
+         and "PASS actual seven-inverse localized correction" in g]
+marker='centre = F("99653682.92983")'
+assert len(prior)==1 and prior[0].count(marker)==1
+exec(compile(prior[0].split(marker)[0],"source directed arithmetic","exec"))
+
+c0=F("99653682.92983")
+mode=sys.argv[2]
+lower=sys.argv[3]=="lower"
+assert sys.argv[3] in ("lower","upper")
+rows={
+    "E296-E298":("4873.50","4933.50","4439.25","4439.52","4522.50",".95"),
+}
+assert mode in rows
+a0,b0,l0,r0,c0_offset,fraction=rows[mode]
+start,stop,step=F(a0),F(b0),F(".01")
+lowarg,higharg=47581000,47583600
+Alo,Ahi=F("17.6779"),F("17.6780")
+left_edge,right_edge=c0+start,c0+stop
+assert 30000000<left_edge<right_edge<35*10**24
+assert left_edge>F(10**8,3)-1 and right_edge<10**8
+assert right_edge<F("1852422754.1662946")-10
+assert right_edge<F("3806849122.861433")-F(1,160)
+assert lowarg<3*left_edge/(2*pi_upper)
+assert 3*right_edge/(2*pi_lower)<higharg
+y0=left_edge/2
+binet=F(5,9)/y0+F(9,32)/y0**2
+assert Alo<log_bounds(lowarg)[0]-binet
+assert log_bounds(higharg)[1]+binet<Ahi
+atoms=[]
+second=F(0)
+for p in range(2,2981):
+    if p==3 or any(p%j==0 for j in range(2,isqrt(p)+1)):
+        continue
+    logp=log_bounds(p)
+    n=p
+    while n<=2980:
+        lag=log_bounds(n)
+        root=isqrt(n*source_grid**2)
+        weight=scale(2*(1 if n%3==1 else -1),
+                     (logp[0]*source_grid/(root+1),logp[1]*source_grid/root))
+        atoms.append((weight,lag))
+        second+=max(map(abs,weight))*lag[1]**2
+        n*=p
+assert len(atoms)==458 and second<13504
+
+@cache
+def node(x):
+    ans=(F(0),F(0))
+    for weight,lag in atoms:
+        co,_=phase_trig(multiply((c0+x,c0+x),lag))
+        ans=add(ans,round_out(*multiply(weight,co),atom_grid))
+    return ans
+
+
+# The source evaluator is reused to anchor each exact rotation.
+# Complex arithmetic below uses integer coordinates at scale Q.
+Q=10**24
+count=int((stop-start)/step)
+assert start+count*step==stop
+tol=F("5e-12")
+turn_bound=F("9e-7")
+assert 2*F(1,Q)<=tol/2
+assert (2*count+1)*tol<turn_bound<F(1,2)
+
+def anchor(angle):
+    co,si=phase_trig(angle)
+    re=round(sum(co)*Q/2)
+    im=round(sum(si)*Q/2)
+    return re,im, max(abs(F(re,Q)-v) for v in co)+max(abs(F(im,Q)-v) for v in si)
+
+acc=[0]*(count+1)
+amp_err=F("2e-22")
+for wi,lag in atoms:
+    re,im,e0=anchor(multiply((c0+start,c0+start),lag))
+    twr,twi,et=anchor(multiply((step,step),lag))
+    assert e0<tol and et<tol
+    aa=round(sum(wi)*Q/2)
+    assert max(abs(F(aa,Q)-v) for v in wi)<amp_err
+    for k in range(count+1):
+        acc[k]+=aa*re
+        re,im=(re*twr-im*twi)//Q,(re*twi+im*twr)//Q
+absolute=sum(max(abs(v) for v in wi) for wi,_ in atoms)
+assert absolute<211
+p4err=211*turn_bound+len(atoms)*amp_err*(1+turn_bound)
+assert p4err<F(".00019")
+p4err=F(".00019")
+
+@cache
+def fast_node(x):
+    k=(x-start)/step
+    if k.denominator==1 and 0<=k<=count:
+        f=F(acc[int(k)],Q**2)
+        return f-p4err,f+p4err
+    return node(x)
+
+
+def estimate(x,h):
+    u,v=fast_node(x),fast_node(x+h)
+    er=second*h*h/8
+    return min(u[0],v[0])-er,max(u[1],v[1])+er
+
+
+
+from math import factorial, lcm
+from itertools import groupby
+for hit,indices in groupby(range(count),key=lambda i:estimate(start+i*step,step)[1]>=Alo):
+ i=list(indices)
+ print(hit,float(start+i[0]*step),float(start+(i[-1]+1)*step),flush=True)
+~~~

@@ -4,6 +4,7 @@ Released under the MIT license as described in the file LICENSE.
 Authors: grwtsk contributors
 -/
 import Mathlib.Analysis.Calculus.LogDeriv
+import Mathlib.Analysis.Complex.Basic
 import Mathlib.Analysis.Analytic.Order
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.FunProp
@@ -52,9 +53,9 @@ theorem logDeriv_of_factorization {f g : ℂ → ℂ} {a : ℂ} (n : ℤ)
     (analyticAt_id.sub analyticAt_const).zpow hsub
   have hlinear : logDeriv (fun w : ℂ => w - a) s = 1 / (s - a) := by
     simp [logDeriv_apply]
-  rw [hlog, logDeriv_fun_mul s (zpow_ne_zero n hsub) hgs
+  rw [hlog, logDeriv_fun_mul (f := fun w : ℂ => (w - a) ^ n) (g := g) s (zpow_ne_zero n hsub) hgs
     hpow.differentiableAt hga.differentiableAt,
-    logDeriv_fun_zpow (differentiableAt_id.sub_const a), hlinear, mul_one_div]
+    logDeriv_fun_zpow (f := fun w : ℂ => w - a) (differentiableAt_id.sub_const a), hlinear, mul_one_div]
 
 /-- Local analytic remainder, with the signed order retained rather than an
 unsigned pole count. This is a punctured equality, not a value at the pole. -/

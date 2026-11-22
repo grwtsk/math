@@ -105,7 +105,7 @@ theorem weil_conductor_line_evaluation
   rw [integral_const_mul, he, mul_div_assoc]
   have hv : (∫ t : ℝ, W ((-1 : ℂ) + Complex.I * (t : ℂ))) /
       (2 * (Real.pi : ℂ)) = correlation f 0 := by
-    simpa only [one_div, div_eq_mul_inv, mul_comm] using hn
+    simpa only [W, Complex.ofReal_neg, Complex.ofReal_one, one_div, div_eq_mul_inv, one_mul, mul_comm] using hn
   rw [hv]
 
 /-- Reuse the exact reflected-prime theorem at chi inverse. This returns the
@@ -130,7 +130,8 @@ theorem weil_native_prime_pair_evaluation
     (fun t : ℝ => W (1 - (2 + (t : ℂ) * Complex.I)))
     (assembly_reflected_line_integrable f A hA hf hs)).1
   have hP : Integrable P volume := by
-    simpa only [mul_comm Complex.I] using hr.add hl
+    simp_rw [mul_comm Complex.I] at hr hl
+    exact hr.add hl
   refine ⟨hP, ?_⟩
   let WR := fun s : ℂ => ∫ r : ℝ, correlation f (-r) *
     Complex.exp ((s - 1 / 2) * (r : ℂ))
@@ -154,7 +155,7 @@ theorem weil_native_prime_pair_evaluation
     rw [mul_comm Complex.I (t : ℂ)]
     exact add_comm _ _
   rw [hswap] at he
-  simpa only [one_div, div_eq_mul_inv, mul_comm] using he
+  simpa only [one_div, div_eq_mul_inv, one_mul, mul_comm] using he
 
 /-- Exact full-line return to the native finite signed prime block. The literal
 gamma integral is the only unevaluated term, and its integrability is DERIVED
@@ -181,7 +182,12 @@ theorem weil_full_line_eq_gamma_native_prime
     W (1 - s) * LSeries (fun n : ℕ => chi⁻¹ n * (ArithmeticFunction.vonMangoldt n : ℂ)) s
   obtain ⟨hC, eC⟩ := weil_conductor_line_evaluation chi f A hA hf hs
   obtain ⟨hP, eP⟩ := weil_native_prime_pair_evaluation chi f A hA hf hs
-  have hV := integrable_weilRightArithmeticIntegrand chi hprim f A hA hf hs
+  change Integrable C volume at hC
+  change Integrable P volume at hP
+  change (∫ t : ℝ, C t) / (2 * (Real.pi : ℂ)) = _ at eC
+  change (∫ t : ℝ, P t) / (2 * (Real.pi : ℂ)) = _ at eP
+  have hV : Integrable (weilRightArithmeticIntegrand chi W) volume :=
+    integrable_weilRightArithmeticIntegrand chi hprim f A hA hf hs
   have hG : Integrable G volume := by
     refine ((hV.sub hC).add hP).congr (Eventually.of_forall fun t => ?_)
     dsimp [weilRightArithmeticIntegrand, G]
@@ -191,7 +197,8 @@ theorem weil_full_line_eq_gamma_native_prime
     funext t
     dsimp [weilRightArithmeticIntegrand, C, G, P]
     ring
-  rw [he, integral_sub (hC.add hG) hP, integral_add hC hG,
+  have hCG : Integrable (fun t => C t + G t) volume := hC.add hG
+  rw [he, integral_sub hCG hP, integral_add hC hG,
     sub_div, add_div, eC, eP]
   ring
 
@@ -201,7 +208,7 @@ remain subtracted. Gamma evaluation, zero-tsum summability and sign are distinct
 theorem exists_primitive_weil_gamma_native_limit
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →
         let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
         let G := fun t : ℝ =>
@@ -230,7 +237,7 @@ theorem exists_zeta_weil_gamma_native_limit :
     let chi : DirichletCharacter ℂ 1 := 1
     let hprim : chi.IsPrimitive := DirichletCharacter.isPrimitive_one_level_one
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       ∀ (f : ℝ → ℂ) (A : ℝ), 0 ≤ A → Admissible f → tsupport f ⊆ Icc (-A) A →
         let W := fun s : ℂ => ∫ r : ℝ, correlation f r * Complex.exp ((s - 1 / 2) * (r : ℂ))
         let G := fun t : ℝ =>
@@ -249,7 +256,7 @@ theorem exists_zeta_weil_gamma_native_limit :
   intro f A hA hf hs W G
   have hp : gammaParity chi = 0 := by
     simp [chi, gammaParity, MulChar.one_apply (isUnit_of_subsingleton _)]
-  simpa [hp, chi, twistedPrime, MulChar.one_apply (isUnit_of_subsingleton _)] using
+  simpa [W, G, hp, chi, twistedPrime, MulChar.one_apply (isUnit_of_subsingleton _)] using
     hall f A hA hf hs
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.SourcePrimeCorrelation

@@ -49,13 +49,13 @@ open GRWTSK.MeasureAndIntegration.FourierDerivativeDecay
 
 /-- A canonical shell index for the full complex radius, including z=0. -/
 def dyadicIndex (z : ℂ) : ℕ :=
-  (exists_nat_pow_near (show (1 : ℝ) ≤ 1 + ‖z‖ by positivity)
+  (exists_nat_pow_near (le_add_of_nonneg_right (norm_nonneg z))
     (show (1 : ℝ) < 2 by norm_num)).choose
 
 theorem dyadicIndex_bounds (z : ℂ) :
     (2 : ℝ) ^ dyadicIndex z ≤ 1 + ‖z‖ ∧
       1 + ‖z‖ < (2 : ℝ) ^ (dyadicIndex z + 1) :=
-  (exists_nat_pow_near (show (1 : ℝ) ≤ 1 + ‖z‖ by positivity)
+  (exists_nat_pow_near (le_add_of_nonneg_right (norm_nonneg z))
     (show (1 : ℝ) < 2 by norm_num)).choose_spec
 
 /-- The inclusive dyadic boundary is assigned to the upper shell. -/
@@ -178,9 +178,8 @@ theorem finite_tail_moment_le {ι : Type*} (m : ι → ℝ) (z : ι → ℂ)
   have hseries : HasSum b (tailBudget A B C c k N) := by
     convert (hasSum_affine_geometric_shift c (dyadicRatio k) N hr.1.le hr.2).mul_left
       (Real.exp (2 * A * B) * C) using 1
-    · rfl
-    · unfold tailBudget
-      ring
+    unfold tailBudget
+    ring
   have hb (j : ℕ) : 0 ≤ b j := by dsimp [b]; positivity
   have hgroup : (∑ i ∈ s, m i * decayWeight A k (z i) ^ 2) =
       ∑ j ∈ J, ∑ i ∈ s.filter (fun i => sigma i = j),
@@ -222,7 +221,11 @@ theorem radial_tail_moment {ι : Type*} (m : ι → ℝ) (z : ι → ℂ)
   classical
   let u : ι → ℝ := fun i => if (2 : ℝ) ^ N ≤ 1 + ‖z i‖ then
     m i * decayWeight A k (z i) ^ 2 else 0
-  have hu (i : ι) : 0 ≤ u i := by dsimp [u]; split_ifs <;> positivity
+  have hu (i : ι) : 0 ≤ u i := by
+    dsimp [u]
+    split_ifs
+    · exact mul_nonneg (hm i) (sq_nonneg _)
+    · exact le_rfl
   have hb (s : Finset ι) : (∑ i ∈ s, u i) ≤ tailBudget A B C c k N := by
     change (∑ i ∈ s, if (2 : ℝ) ^ N ≤ 1 + ‖z i‖ then
       m i * decayWeight A k (z i) ^ 2 else 0) ≤ _

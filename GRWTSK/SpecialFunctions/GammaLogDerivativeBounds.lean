@@ -54,7 +54,7 @@ private theorem avoids_neg_nat_of_im_ne {z : ℂ} (hz : z.im ≠ 0) (m : ℕ) :
 
 private theorem norm_Gamma_le_add_one {z : ℂ} (hz : 1 ≤ z.re) :
     ‖Complex.Gamma z‖ ≤ ‖Complex.Gamma (z + 1)‖ := by
-  have hz0 : z ≠ 0 := by intro h; simp [h] at hz
+  have hz0 : z ≠ 0 := by intro h; norm_num [h] at hz
   have hn : 1 ≤ ‖z‖ := hz.trans ((le_abs_self z.re).trans (Complex.abs_re_le_norm z))
   rw [Complex.Gamma_add_one z hz0, norm_mul]
   exact le_mul_of_one_le_left (norm_nonneg _) hn
@@ -126,7 +126,8 @@ theorem norm_digamma_le_right_band {z : ℂ}
     intro u hu
     have hp : 0 < (c + u).re := by linarith [(geometry u hu).1]
     exact ((Complex.differentiableAt_Gamma _ (avoids_neg_nat_of_re_pos hp)).comp u
-      (differentiableAt_const.add differentiableAt_id)).differentiableWithinAt
+      (show DifferentiableAt ℂ (fun w : ℂ => c + w) u from
+        differentiableAt_id.const_add c)).differentiableWithinAt
   have hn : ∀ u ∈ ball 0 (11 / 4 : ℝ), g u ≠ 0 := by
     intro u hu
     exact Complex.Gamma_ne_zero_of_re_pos (by linarith [(geometry u hu).1])
@@ -140,7 +141,7 @@ theorem norm_digamma_le_right_band {z : ℂ}
     M eta (by norm_num) hM heta hg hn hb hf
   have hratio : M / eta = M * A * Real.exp (Real.pi * |z.im|) := by
     dsimp [eta]
-    simp only [one_div, div_eq_mul_inv, inv_inv]
+    rw [div_div_eq_mul_div, div_one]
     ring
   have hcost : Real.log (M / eta) ≤ H := by
     rw [hratio, Real.log_mul (mul_ne_zero hM.ne' hA.ne') (Real.exp_ne_zero _),
@@ -181,7 +182,7 @@ The shift is finite; no unknown limit at infinity is discarded. -/
 theorem norm_digamma_le_horizontal_strip {z : ℂ}
     (hl : -(1 / 2 : ℝ) ≤ z.re) (hu : z.re ≤ 3 / 2) (hi : 1 ≤ |z.im|) :
     ‖Complex.digamma z‖ ≤ digammaStripConstant * (1 + |z.im|) := by
-  have him : z.im ≠ 0 := by intro h; simp [h] at hi
+  have him : z.im ≠ 0 := by intro h; norm_num [h] at hi
   have hrec := Complex.digamma_apply_add_nat (avoids_neg_nat_of_im_ne him) 3
   have hsum : ‖∑ k ∈ Finset.range 3, (z + (k : ℂ))⁻¹‖ ≤ 3 := by
     calc
@@ -197,8 +198,8 @@ theorem norm_digamma_le_horizontal_strip {z : ℂ}
   have hshift : ‖Complex.digamma (z + 3)‖ ≤
       80 * (gammaLogBudget + Real.pi * |z.im|) := by
     simpa using norm_digamma_le_right_band (z := z + 3)
-      (by simp only [Complex.add_re, Complex.ofNat_re]; linarith)
-      (by simp only [Complex.add_re, Complex.ofNat_re]; linarith) (by simpa using hi)
+      (by norm_num [Complex.add_re]; linarith)
+      (by norm_num [Complex.add_re]; linarith) (by simpa using hi)
   have he : Complex.digamma z = Complex.digamma (z + 3) -
       ∑ k ∈ Finset.range 3, (z + (k : ℂ))⁻¹ := by
     exact eq_sub_iff_add_eq.mpr (by simpa using hrec.symm)
@@ -229,13 +230,18 @@ theorem logDeriv_GammaR_of_nonreal {s : ℂ} (hi : s.im ≠ 0) :
       (Complex.digamma (s / 2) - Complex.log (Real.pi : ℂ)) / 2 := by
   have hh : (s / 2 : ℂ).im ≠ 0 := by simpa using div_ne_zero hi (by norm_num : (2 : ℝ) ≠ 0)
   have hp : (Real.pi : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr Real.pi_pos.ne'
-  have hpow := (((hasDerivAt_id s).neg).div_const (2 : ℂ)).const_cpow (c := (Real.pi : ℂ)) (.inl hp)
+  have hpow : HasDerivAt (fun w : ℂ => (Real.pi : ℂ) ^ (-w / 2))
+      ((Real.pi : ℂ) ^ (-s / 2) * Complex.log (Real.pi : ℂ) * (-1 / 2)) s :=
+    (((hasDerivAt_id s).neg).div_const (2 : ℂ)).const_cpow (c := (Real.pi : ℂ)) (.inl hp)
   have hpn : (Real.pi : ℂ) ^ (-s / 2) ≠ 0 := Complex.cpow_ne_zero_iff.mpr (.inl hp)
-  have hhalf := (hasDerivAt_id s).div_const (2 : ℂ)
+  have hhalf : HasDerivAt (fun w : ℂ => w / 2) (1 / 2) s :=
+    (hasDerivAt_id s).div_const (2 : ℂ)
   have havoid := avoids_neg_nat_of_im_ne hh
   have hdiff := (Complex.differentiableAt_Gamma _ havoid).comp s hhalf.differentiableAt
   change logDeriv (fun w => (Real.pi : ℂ) ^ (-w / 2) * Complex.Gamma (w / 2)) s = _
-  rw [logDeriv_fun_mul s hpn (Complex.Gamma_ne_zero havoid) hpow.differentiableAt hdiff,
+  rw [logDeriv_fun_mul (f := fun w : ℂ => (Real.pi : ℂ) ^ (-w / 2))
+      (g := fun w : ℂ => Complex.Gamma (w / 2)) s hpn
+      (Complex.Gamma_ne_zero havoid) hpow.differentiableAt hdiff,
     hhalf.logDeriv_Gamma havoid, logDeriv_apply, hpow.deriv]
   field_simp [hpn] <;> ring
 
@@ -251,7 +257,7 @@ The estimate controls the full complex norm, for every height of either sign. -/
 theorem norm_logDeriv_GammaR_le_horizontal_strip {s : ℂ}
     (hl : -1 ≤ s.re) (hu : s.re ≤ 3) (hi : 2 ≤ |s.im|) :
     ‖logDeriv Complex.Gammaℝ s‖ ≤ gammaRLogDerivativeConstant * (1 + |s.im|) := by
-  have him : s.im ≠ 0 := by intro h; simp [h] at hi
+  have him : s.im ≠ 0 := by intro h; norm_num [h] at hi
   have hre : (s / 2 : ℂ).re = s.re / 2 := by simp
   have habs : |(s / 2 : ℂ).im| = |s.im| / 2 := by simp [abs_div]
   have hb := norm_digamma_le_horizontal_strip (z := s / 2)
@@ -262,7 +268,7 @@ theorem norm_logDeriv_GammaR_le_horizontal_strip {s : ℂ}
   rw [logDeriv_GammaR_of_nonreal him, norm_div, show ‖(2 : ℂ)‖ = (2 : ℝ) by norm_num]
   calc
     _ ≤ (digammaStripConstant * (1 + |s.im|) + ‖Complex.log (Real.pi : ℂ)‖) / 2 :=
-      div_le_div_of_nonneg_right ((norm_sub_le _ _).trans (add_le_add_right hb' _)) (by norm_num)
+      div_le_div_of_nonneg_right ((norm_sub_le _ _).trans (add_le_add hb' le_rfl)) (by norm_num)
     _ ≤ digammaStripConstant * (1 + |s.im|) + ‖Complex.log (Real.pi : ℂ)‖ := by
       have hp : 0 ≤ digammaStripConstant * (1 + |s.im|) + ‖Complex.log (Real.pi : ℂ)‖ :=
         add_nonneg (mul_nonneg digammaStripConstant_pos.le (by positivity)) (norm_nonneg _)

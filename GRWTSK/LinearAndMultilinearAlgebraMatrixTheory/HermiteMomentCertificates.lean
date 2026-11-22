@@ -6,12 +6,14 @@ b8c773f7847126518bcc20f3e37d1223af889cf4.
 Consumer: Program 6 source-exact finite zero-divisor certificates.
 Coordination: grwtsk/math#1806; research repository issue #48.
 
-FORMAL_SOURCE_CANDIDATE. Elaboration, fresh kernel replay, transitive
-axiom audit, and independent analytical review: NOT_RUN.
+The original FORMAL_SOURCE_CANDIDATE record marked elaboration, fresh kernel
+replay, transitive axiom audit and independent analytical review NOT_RUN.
+Current source-bound compatibility checks are recorded separately in math#1839;
+the original analytical scope and historical evidence are not promoted.
 -/
 
 import Mathlib.Analysis.Complex.Basic
-import Mathlib.Data.Matrix.Notation
+import Mathlib.LinearAlgebra.Matrix.Notation
 import Mathlib.Tactic
 
 /-!
@@ -179,7 +181,7 @@ theorem imagEvaluation_eq_zero_of_real {n : ℕ} (z : ℂ)
     · rfl
     · simpa using hz.symm
   rw [← hcast]
-  simp [imagEvaluation]
+  simp [imagEvaluation, ← Complex.ofReal_pow]
 
 /-- The forward Hermite implication needs neither distinctness nor simplicity. -/
 theorem hermite_nonnegative_of_real

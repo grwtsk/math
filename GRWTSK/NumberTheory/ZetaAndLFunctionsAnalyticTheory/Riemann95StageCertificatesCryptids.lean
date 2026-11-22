@@ -42,10 +42,57 @@ theorem counterexample_iff_cryptids (n : ℕ) : Counterexample n ↔ ShuniaCount
     deficit, shuniaDeficit, shuniaProd, primeProduct_eq]
   rw [offsetCount_eq]
 
+/-- Exact Chebyshev threshold for the original checker. A zero cutoff
+passes because the prime product is positive. At a positive cutoff,
+equality of the logarithms is a rejection. -/
+theorem safe_iff_zero_cutoff_or_log_cutoff_lt_theta {n : ℕ} (hn : 2 ≤ n) :
+    ¬ ShuniaCounterexample n ↔ primeProductCutoff n = 0 ∨
+      Real.log (primeProductCutoff n : ℝ) < Chebyshev.theta (n : ℝ) := by
+  rw [← counterexample_iff_cryptids, safe_iff_primeProductCutoff_lt hn, primeProduct_eq]
+  have product_pos := Riemann120Analytic.primorial_pos n
+  by_cases zero : primeProductCutoff n = 0
+  · simp [zero, product_pos]
+  · have cutoff_pos : (0 : ℝ) < (primeProductCutoff n : ℝ) := by
+      exact_mod_cast Nat.pos_of_ne_zero zero
+    have product_pos_real : (0 : ℝ) < (Riemann120.primorial n : ℝ) := by
+      exact_mod_cast product_pos
+    rw [or_iff_right zero, ← Riemann120Analytic.log_primorial_eq_theta,
+      Real.log_lt_log_iff cutoff_pos product_pos_real]
+    exact_mod_cast (Iff.rfl : primeProductCutoff n < Riemann120.primorial n ↔
+      primeProductCutoff n < Riemann120.primorial n)
+
 theorem search_detects_cryptids_halt :
     (∃ count, (search count).Nonempty) ↔ Halts Riemann95.candidate := by
   rw [search_complete, Riemann95.halts_candidate_iff_counterexample]
   exact exists_congr fun stage => counterexample_iff_cryptids (stageArgument stage)
+
+/-- A halted native run has a composite counterexample on a clock plateau.
+The least original failing argument supplies the witness. -/
+theorem cryptids_halts_iff_exists_composite_plateau_counterexample :
+    Halts Riemann95.candidate ↔
+      ∃ n : ℕ, 2 ≤ n ∧ ¬ Nat.Prime (n + 1) ∧ clock (n + 1) = clock n ∧
+        ShuniaCounterexample (n + 1) := by
+  rw [Riemann95.halts_candidate_iff_counterexample]
+  constructor
+  · intro failure
+    let first := Nat.find failure
+    have bad : ShuniaCounterexample (first + 2) := Nat.find_spec failure
+    cases h : first with
+    | zero =>
+      have initial_safe : ¬ Counterexample 2 :=
+        safe_of_threshold_gt 2 (by norm_num [threshold, clock, offsetCount])
+      exact (initial_safe ((counterexample_iff_cryptids 2).mpr (by simpa [h] using bad))).elim
+    | succ s =>
+      have earlier : s < Nat.find failure := by change s < first; omega
+      have predecessor_safe : ¬ ShuniaCounterexample (s + 2) := Nat.find_min failure earlier
+      have successor_bad : ShuniaCounterexample (s + 2 + 1) := by simpa only [h] using bad
+      have constraints := counterexample_succ_requires_composite_and_clock_eq
+        (n := s + 2) (by omega)
+        (fun prior => predecessor_safe ((counterexample_iff_cryptids _).mp prior))
+        ((counterexample_iff_cryptids _).mpr successor_bad)
+      exact ⟨s + 2, by omega, constraints.1, constraints.2, successor_bad⟩
+  · rintro ⟨n, hn, _, _, bad⟩
+    exact ⟨n - 1, by simpa only [show n - 1 + 2 = n + 1 by omega] using bad⟩
 
 theorem all_windows_accept_iff_cryptids_RH :
     (∀ window, accepts window = true) ↔ RiemannHypothesis :=

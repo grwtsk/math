@@ -96,7 +96,8 @@ theorem hasDerivAt_integral_exp (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A)
   have hmeas' : AEStronglyMeasurable
       (fun t : ℝ => f t * (t : ℂ) * Complex.exp (z₀ * (t : ℂ))) volume := by
     have hc : Continuous (fun t : ℝ => (t : ℂ) * Complex.exp (z₀ * (t : ℂ))) := by fun_prop
-    simpa only [mul_assoc] using hf.aestronglyMeasurable.mul hc.aestronglyMeasurable
+    simp_rw [mul_assoc]
+    exact hf.aestronglyMeasurable.mul hc.aestronglyMeasurable
   have hbound : ∀ᵐ t : ℝ, ∀ z ∈ ball z₀ 1,
       ‖f t * (t : ℂ) * Complex.exp (z * (t : ℂ))‖ ≤
         (A * Real.exp (A * (‖z₀‖ + 1))) * ‖f t‖ :=
@@ -105,7 +106,8 @@ theorem hasDerivAt_integral_exp (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A)
       HasDerivAt (fun w : ℂ => f t * Complex.exp (w * (t : ℂ)))
         (f t * (t : ℂ) * Complex.exp (z * (t : ℂ))) z := by
     refine Eventually.of_forall (fun t z _ => ?_)
-    convert (((hasDerivAt_id z).mul_const (t : ℂ)).cexp.const_mul (f t)) using 1 <;> ring
+    simpa only [id_eq, mul_one, mul_comm, mul_left_comm, mul_assoc] using
+      (((hasDerivAt_id z).mul_const (t : ℂ)).cexp.const_mul (f t))
   exact (hasDerivAt_integral_of_dominated_loc_of_deriv_le
     (ball_mem_nhds z₀ (by norm_num : (0 : ℝ) < 1)) hmeas
     (integrable_exp_integrand f A hf hs z₀) hmeas' hbound
@@ -122,7 +124,7 @@ theorem hasDerivAt_integral_exp_moment (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A
   have hd := hasDerivAt_integral_exp (fun t : ℝ => (t : ℂ) ^ n * f t) A hA hm hms z₀
   convert hd using 1
   apply integral_congr_ae
-  exact Eventually.of_forall (fun t => by rw [pow_succ]; ring)
+  exact Eventually.of_forall (fun t => by dsimp; rw [pow_succ]; ring)
 
 /-- All iterated complex derivatives are the actual moment integrals. -/
 theorem iterated_deriv_integral_exp (f : ℝ → ℂ) (A : ℝ) (hA : 0 ≤ A)

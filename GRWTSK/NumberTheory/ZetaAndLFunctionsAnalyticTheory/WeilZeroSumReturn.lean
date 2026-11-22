@@ -56,7 +56,7 @@ theorem tendsto_heightWindow_atTop
       filter_upwards [eventually_gt_atTop (|rho.1.im|), ih] with H hH hS
       intro z hz
       rcases Finset.mem_insert.mp hz with rfl | hz
-      · exact (mem_heightWindow chi hprim H rho).2 hH
+      · exact (mem_heightWindow chi hprim H _).2 hH
       · exact hS hz
 
 end GRWTSK.NumberTheory.WeilNegativeWitness
@@ -122,10 +122,14 @@ theorem primitive_hasSum_contour_weight_of_heightCount
   have habs := summable_norm_contour_weight_of_heightCount chi hprim D L hD hL hcount
     f A hA hf hs
   have hfinite := (hlim f A hA hf hs).2
+  change Tendsto (fun n => (∑ rho ∈ heightWindow chi hprim (T n),
+    (zeroMultiplicity chi rho : ℂ) * W rho.1) -
+      (if N = 1 then W 0 + W 1 else 0)) atTop
+    (𝓝 ((∫ t : ℝ, weilRightArithmeticIntegrand chi W t) / (2 * (Real.pi : ℂ)))) at hfinite
   have hsum := hfinite.add_const (if N = 1 then W 0 + W 1 else 0)
   apply hasSum_of_subseq_of_summable habs
     ((tendsto_heightWindow_atTop chi hprim).comp ht)
-  simpa only [sub_add_cancel] using hsum
+  simpa only [sub_add_cancel, Function.comp_def, W] using hsum
 
 /-- The same HasSum statement on the literal signed centered-Mellin pairing.
 No ordinate projection, simple-zero assumption or modulus-square replacement. -/
@@ -145,6 +149,9 @@ theorem primitive_hasSum_centered_mellin_pair_of_heightCount
   intro W
   have h := primitive_hasSum_contour_weight_of_heightCount chi hprim D L hD hL hcount
     f A hA hf hs
+  change HasSum (fun rho : CriticalStripZero chi => (zeroMultiplicity chi rho : ℂ) * W rho.1)
+    ((∫ t : ℝ, weilRightArithmeticIntegrand chi W t) / (2 * (Real.pi : ℂ)) +
+      (if N = 1 then W 0 + W 1 else 0)) at h
   have heq : (fun rho : CriticalStripZero chi => (zeroMultiplicity chi rho : ℂ) * W rho.1) =
       (fun rho : CriticalStripZero chi => (zeroMultiplicity chi rho : ℂ) *
         (∫ x : ℝ, f x * Complex.exp ((rho.1 - 1 / 2) * (x : ℂ))) *
@@ -181,9 +188,13 @@ theorem zeta_hasSum_contour_weight_of_heightCount
     linarith [(hT n).1]
   have habs := summable_norm_contour_weight_of_heightCount chi hprim D L hD hL hcount
     f A hA hf hs
-  have hsum := ((hlim f A hA hf hs).2).add_const (W 0 + W 1)
+  have hfinite := (hlim f A hA hf hs).2
+  change Tendsto (fun n => (∑ rho ∈ heightWindow chi hprim (T n),
+    (zeroMultiplicity chi rho : ℂ) * W rho.1) - (W 0 + W 1)) atTop
+    (𝓝 ((∫ t : ℝ, V t) / (2 * (Real.pi : ℂ)))) at hfinite
+  have hsum := hfinite.add_const (W 0 + W 1)
   apply hasSum_of_subseq_of_summable habs
     ((tendsto_heightWindow_atTop chi hprim).comp ht)
-  simpa only [sub_add_cancel] using hsum
+  simpa only [sub_add_cancel, Function.comp_def, W] using hsum
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.SourcePrimeCorrelation

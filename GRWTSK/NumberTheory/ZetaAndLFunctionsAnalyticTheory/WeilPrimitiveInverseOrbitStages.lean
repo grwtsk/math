@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRightStripWitnessReturn
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.DirichletZeroMultiplicity
 import Mathlib.NumberTheory.MulChar.Lemmas
 import Mathlib.Analysis.Complex.ReImTopology
 
@@ -206,5 +207,80 @@ theorem dirichletGRH_of_rh_rightStrip_and_inverse_orbit_stages
   rcases horbits q χ hp hn with h | h
   · exact h
   · exact smallConductorStages_of_inverse χ hp hn _ _ h
+
+open GRWTSK.NumberTheory.WeilNegativeWitness
+  (CriticalStripZero zeroMultiplicity zeroMultiplicity_cast zeroMultiplicity_factorization
+    heightCount heightWindow mem_heightWindow)
+
+/-- Conjugation sends an original critical-strip zero to the inverse character. -/
+def inverseConjugateZero {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q)
+    (hn : χ ≠ 1) (ρ : CriticalStripZero χ) : CriticalStripZero χ⁻¹ :=
+  ⟨conj ρ.1, by rw [inverse_LFunction_eq_conj χ hn, Complex.conj_conj, ρ.2.1, map_zero],
+    by simpa only [Complex.conj_re] using ρ.2.2.1,
+    by simpa only [Complex.conj_re] using ρ.2.2.2⟩
+
+/-- Inverse-character conjugation preserves the analytic multiplicity of
+the actual zero. Conjugate its local factorization to retain the order. -/
+theorem zeroMultiplicity_inverseConjugateZero {q : ℕ} [NeZero q]
+    (χ : DirichletCharacter ℂ q) (hn : χ ≠ 1) (ρ : CriticalStripZero χ) :
+    zeroMultiplicity χ⁻¹ (inverseConjugateZero χ hn ρ) = zeroMultiplicity χ ρ := by
+  have hnInv : χ⁻¹ ≠ 1 := by simpa only [ne_eq, inv_eq_one] using hn
+  obtain ⟨g, hg, hgne, hfactor⟩ := zeroMultiplicity_factorization χ ρ
+  have hconj : Tendsto (starRingEnd ℂ) (𝓝 (conj ρ.1)) (𝓝 ρ.1) := by
+    simpa only [Complex.conj_conj] using Complex.continuous_conj.tendsto (conj ρ.1)
+  have hunit : AnalyticAt ℂ (fun z => conj (g (conj z))) (conj ρ.1) := by
+    rw [Complex.analyticAt_iff_eventually_differentiableAt] at hg ⊢
+    filter_upwards [hconj.eventually hg] with z hz
+    have h := hz.conj_conj
+    rw [Complex.conj_conj] at h
+    exact h
+  have ha := (DirichletCharacter.differentiable_LFunction hnInv).analyticAt (conj ρ.1)
+  have horder : analyticOrderAt (χ⁻¹).LFunction (conj ρ.1) =
+      (zeroMultiplicity χ ρ : ℕ∞) := by
+    rw [ha.analyticOrderAt_eq_natCast]
+    refine ⟨fun z => conj (g (conj z)), hunit, by simpa only [Complex.conj_conj, map_ne_zero] using hgne, ?_⟩
+    filter_upwards [hconj.eventually hfactor] with z hz
+    rw [inverse_LFunction_eq_conj χ hn, hz]
+    simp only [map_mul, map_pow, map_sub, Complex.conj_conj, smul_eq_mul]
+  have heq : (zeroMultiplicity χ⁻¹ (inverseConjugateZero χ hn ρ) : ℕ∞) =
+      (zeroMultiplicity χ ρ : ℕ∞) := by
+    rw [zeroMultiplicity_cast]
+    exact horder
+  exact_mod_cast heq
+
+/-- The same strict height bound, including its boundary exclusion, is
+preserved by inverse-character conjugation. -/
+theorem inverseConjugateZero_mem_heightWindow_iff {q : ℕ} [NeZero q]
+    (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hpInv : (χ⁻¹).IsPrimitive)
+    (hn : χ ≠ 1) (H : ℝ) (ρ : CriticalStripZero χ) :
+    inverseConjugateZero χ hn ρ ∈ heightWindow χ⁻¹ hpInv H ↔
+      ρ ∈ heightWindow χ hp H := by
+  simp only [mem_heightWindow, inverseConjugateZero, Complex.conj_im, abs_neg]
+
+/-- The inverse character has the same multiplicity-weighted count in
+each strict height window. Real zeros are retained. -/
+theorem heightCount_eq_inverse {q : ℕ} [NeZero q]
+    (χ : DirichletCharacter ℂ q) (hp : χ.IsPrimitive) (hpInv : (χ⁻¹).IsPrimitive)
+    (hn : χ ≠ 1) (H : ℝ) :
+    heightCount χ hp H = heightCount χ⁻¹ hpInv H := by
+  unfold heightCount
+  refine Finset.sum_bij (fun ρ _ => inverseConjugateZero χ hn ρ) ?_ ?_ ?_ ?_
+  · intro ρ hρ
+    exact (inverseConjugateZero_mem_heightWindow_iff χ hp hpInv hn H ρ).mpr hρ
+  · intro ρ _ σ _ heq
+    apply Subtype.ext
+    have h := congrArg (fun z : CriticalStripZero χ⁻¹ => conj z.1) heq
+    simpa only [inverseConjugateZero, Complex.conj_conj] using h
+  · intro σ hσ
+    have hz := σ.2.1
+    rw [inverse_LFunction_eq_conj χ hn] at hz
+    let ρ : CriticalStripZero χ :=
+      ⟨conj σ.1, by simpa using hz, by simpa only [Complex.conj_re] using σ.2.2.1,
+        by simpa only [Complex.conj_re] using σ.2.2.2⟩
+    have hρ : ρ ∈ heightWindow χ hp H := by
+      simpa only [mem_heightWindow, ρ, Complex.conj_im, abs_neg] using hσ
+    exact ⟨ρ, hρ, Subtype.ext (Complex.conj_conj σ.1)⟩
+  · intro ρ _
+    exact (zeroMultiplicity_inverseConjugateZero χ hn ρ).symm
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain

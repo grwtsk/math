@@ -211,4 +211,916 @@ theorem left_neighbor_changes_next_scan (window : ℕ) :
   have first : ConjectureMachines.Riemann95.machine.transition 0 0 = some (1, .left, 48) := rfl
   constructor <;> simp [step, blank, first, writeMove]
 
+<<<<<<< HEAD
+=======
+
+/-- Agreement on the address, scanned bit, absolute position and the first
+`depth` cells of each half-tape. Missing cells are read as blanks. -/
+def TapeAgrees {window : ℕ} (depth : ℕ) (c d : Configuration window) : Prop :=
+  c.address = d.address ∧ c.position = d.position ∧ c.scanned = d.scanned ∧
+    (∀ i < depth, (c.left[i]?).getD 0 = (d.left[i]?).getD 0) ∧
+    (∀ i < depth, (c.right[i]?).getD 0 = (d.right[i]?).getD 0)
+
+theorem TapeAgrees.mono {window depth small : ℕ} {c d : Configuration window}
+    (h : TapeAgrees depth c d) (hle : small ≤ depth) : TapeAgrees small c d := by
+  obtain ⟨address, position, scanned, left, right⟩ := h
+  exact ⟨address, position, scanned, fun i hi => left i (hi.trans_le hle),
+    fun i hi => right i (hi.trans_le hle)⟩
+
+private theorem headI_eq_blankPadded (l : List (Fin 2)) : l.headI = (l[0]?).getD 0 := by
+  cases l <;> rfl
+
+private theorem move_tapeAgrees {window depth : ℕ} {c d : Configuration window}
+    (h : TapeAgrees (depth + 1) c d) (symbol : Fin 2) (direction : Dir)
+    (next : Address window) :
+    TapeAgrees depth (writeMove c symbol direction next) (writeMove d symbol direction next) := by
+  obtain ⟨_, position, _, left, right⟩ := h
+  cases direction
+  · refine ⟨rfl, congrArg (fun z : ℤ => z - 1) position, ?_, ?_, ?_⟩
+    · simpa only [writeMove, headI_eq_blankPadded] using left 0 (Nat.zero_lt_succ depth)
+    · intro i hi
+      simpa only [writeMove, List.getElem?_tail] using left (i + 1) (Nat.succ_lt_succ hi)
+    · intro i hi
+      cases i with
+      | zero => rfl
+      | succ i => exact right i (by omega)
+  · refine ⟨rfl, congrArg (fun z : ℤ => z + 1) position, ?_, ?_, ?_⟩
+    · simpa only [writeMove, headI_eq_blankPadded] using right 0 (Nat.zero_lt_succ depth)
+    · intro i hi
+      cases i with
+      | zero => rfl
+      | succ i => exact left i (by omega)
+    · intro i hi
+      simpa only [writeMove, List.getElem?_tail] using right (i + 1) (Nat.succ_lt_succ hi)
+
+/-- One instruction reads one extra cell in the direction of motion. -/
+theorem step_tapeAgrees {window depth : ℕ} {c d : Configuration window}
+    (h : TapeAgrees (depth + 1) c d) : Option.Rel (TapeAgrees depth) (step c) (step d) := by
+  unfold step
+  rw [← h.1, ← h.2.2.1]
+  cases ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => exact .none
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    exact .some (move_tapeAgrees h symbol direction (encodeAddress window next))
+
+/-- An exact run of `n` instructions needs at most `n` extra cells per side.
+Both results are absent, or both are present and agree at the retained depth. -/
+theorem run_tapeAgrees {window depth : ℕ} (n : ℕ) {c d : Configuration window}
+    (h : TapeAgrees (depth + n) c d) : Option.Rel (TapeAgrees depth) (run n c) (run n d) := by
+  induction n generalizing c d with
+  | zero => exact .some h
+  | succ n ih =>
+    have same : Option.Rel (TapeAgrees (depth + n)) (step c) (step d) :=
+      step_tapeAgrees h
+    rw [run, run]
+    generalize step c = nextC at same ⊢
+    generalize step d = nextD at same ⊢
+    cases same with
+    | none => exact .none
+    | some near => exact ih near
+
+/-- A finite tape truncation preserves the address, head position and scanned symbol. -/
+def truncateTape {window : ℕ} (depth : ℕ) (c : Configuration window) : Configuration window :=
+  { c with left := c.left.take depth, right := c.right.take depth }
+
+theorem tapeAgrees_truncate {window : ℕ} (depth : ℕ) (c : Configuration window) :
+    TapeAgrees depth c (truncateTape depth c) := by
+  refine ⟨rfl, rfl, rfl, ?_, ?_⟩
+  · intro i hi
+    simp only [truncateTape, List.getElem?_take_of_lt hi]
+  · intro i hi
+    simp only [truncateTape, List.getElem?_take_of_lt hi]
+
+/-- A verifier can truncate before execution and recover the same finite
+observation, including whether the exact-length run returned a result. -/
+theorem run_truncateTape {window : ℕ} (n depth : ℕ) (c : Configuration window) :
+    Option.Rel (TapeAgrees depth) (run n c) (run n (truncateTape (depth + n) c)) :=
+  run_tapeAgrees n (tapeAgrees_truncate (depth + n) c)
+
+open ConjectureMachines (ListBlank)
+
+private theorem nth_mk_eq_blankPadded (l : List (Fin 2)) (i : ℕ) :
+    (ListBlank.mk l).nth i = (l[i]?).getD 0 := by
+  induction i generalizing l with
+  | zero => exact headI_eq_blankPadded l
+  | succ i ih => simpa only [ListBlank.nth_succ, ListBlank.tail_mk, List.getElem?_tail] using ih l.tail
+
+/-- A one just beyond the observed left cells changes the native configuration,
+at any observation depth and in any prime window. -/
+theorem exists_tapeAgrees_project_ne (window depth : ℕ) :
+    ∃ c d : Configuration window, TapeAgrees depth c d ∧ project c ≠ project d := by
+  let remote : List (Fin 2) := List.replicate depth 0 ++ [1]
+  refine ⟨blank window, { blank window with left := remote }, ?_, ?_⟩
+  · refine ⟨rfl, rfl, rfl, ?_, fun _ _ => rfl⟩
+    intro i hi
+    change (0 : Fin 2) = (remote[i]?).getD 0
+    rw [show remote[i]? = some 0 by
+      unfold remote
+      rw [List.getElem?_append_left (by simpa using hi), List.getElem?_replicate_of_lt hi]]
+    rfl
+  · intro same
+    have observed := congrArg (fun c : Cfg 95 2 => c.tape.left.nth depth) same
+    change (ListBlank.mk ([] : List (Fin 2))).nth depth = (ListBlank.mk remote).nth depth at observed
+    simp only [nth_mk_eq_blankPadded] at observed
+    unfold remote at observed
+    simp at observed
+
+section ScanWitnesses
+
+/-!
+State 12 scans right through zeros and writes zeros. A marker past the
+observation depth reaches a retained cell after sufficiently many steps.
+Eight consecutive ones take the same native scan through states
+12, 15, 17, 21, 27, 35, 90 and 61, then halt at state 61 reading one.
+The witnesses below quantify over arbitrary starts in the exact interpreter.
+-/
+
+private def zeroScan (window : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    Configuration window :=
+  ⟨encodeAddress window 12, position, 0, left, right⟩
+
+private theorem step_zeroScan (window : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    step (zeroScan window position left right) =
+      some { zeroScan window (position + 1) (0 :: left) right.tail with scanned := right.headI } := by
+  have cell : ConjectureMachines.Riemann95.machine.transition 12 0 = some (0, .right, 12) := rfl
+  simp [zeroScan, step, cell, writeMove]
+
+private theorem run_add' {window : ℕ} (n m : ℕ) (c : Configuration window) :
+    run (n + m) c = (run n c).bind (run m) := by
+  induction n generalizing c with
+  | zero => simp [run]
+  | succ n ih =>
+    rw [Nat.succ_add, run, run]
+    cases step c <;> simp [ih]
+
+private theorem run_zeroScan_prefix (window n : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    run n (zeroScan window position left (List.replicate n 0 ++ right)) =
+      some (zeroScan window (position + (n : ℤ)) (List.replicate n 0 ++ left) right) := by
+  induction n generalizing position left with
+  | zero => simp [run]
+  | succ n ih =>
+    have first :
+        step (zeroScan window position left (List.replicate (n + 1) 0 ++ right)) =
+          some (zeroScan window (position + 1) (0 :: left) (List.replicate n 0 ++ right)) := by
+      rw [List.replicate_succ, List.cons_append, step_zeroScan]
+      rfl
+    rw [run, first, Option.bind_some, ih]
+    have hp : position + 1 + (n : ℤ) = position + ((n + 1 : ℕ) : ℤ) := by omega
+    rw [hp, List.replicate_succ', List.append_assoc]
+    rfl
+
+private theorem run_zeroScan_then_read
+    (window n : ℕ) (position : ℤ) (left right : List (Fin 2)) :
+    run (n + 1) (zeroScan window position left (List.replicate n 0 ++ right)) =
+      some { zeroScan window (position + (n : ℤ) + 1) (0 :: (List.replicate n 0 ++ left))
+        right.tail with scanned := right.headI } := by
+  rw [run_add', run_zeroScan_prefix, Option.bind_some, run,
+    step_zeroScan, Option.bind_some, run]
+
+private theorem replicate_zero_getD (n i : ℕ) :
+    ((List.replicate n (0 : Fin 2))[i]?).getD 0 = 0 := by
+  by_cases hi : i < n
+  · simp [List.getElem?_replicate_of_lt hi]
+  · rw [List.getElem?_eq_none (by simpa using Nat.le_of_not_gt hi)]
+    rfl
+
+private theorem replicate_zero_append_getD {n i : ℕ} (hi : i < n) (tail : List (Fin 2)) :
+    ((List.replicate n (0 : Fin 2) ++ tail)[i]?).getD 0 = 0 := by
+  rw [List.getElem?_append_left (by simpa using hi), List.getElem?_replicate_of_lt hi]
+  rfl
+
+/-- The uniform input depth for a positive exact-length run is sharp.
+One fewer initial cell per side can change a retained cell or the scanned bit,
+even when both runs return a result. -/
+theorem exists_run_tape_depth_sharp (window depth n : ℕ) :
+    ∃ c d c' d' : Configuration window, TapeAgrees (depth + n) c d ∧
+      run (n + 1) c = some c' ∧ run (n + 1) d = some d' ∧ ¬ TapeAgrees depth c' d' := by
+  let tail : List (Fin 2) := List.replicate depth 0 ++ [1]
+  let c := zeroScan window 0 [] (List.replicate n 0)
+  let d := zeroScan window 0 [] (List.replicate (n + depth) 0 ++ [1])
+  let c' := zeroScan window ((n : ℤ) + 1) (0 :: List.replicate n 0) []
+  let d' := { zeroScan window ((n : ℤ) + 1) (0 :: List.replicate n 0) tail.tail with
+    scanned := tail.headI }
+  refine ⟨c, d, c', d', ?_, ?_, ?_, ?_⟩
+  · refine ⟨rfl, rfl, rfl, fun _ _ => rfl, ?_⟩
+    intro i hi
+    exact (replicate_zero_getD n i).trans
+      (replicate_zero_append_getD (by omega : i < n + depth) [1]).symm
+  · simpa [c, c', zeroScan] using run_zeroScan_then_read window n (0 : ℤ) [] []
+  · have hd : d = zeroScan window 0 [] (List.replicate n 0 ++ tail) := by
+      simp only [d, tail, List.replicate_add, List.append_assoc]
+    rw [hd, run_zeroScan_then_read]
+    simp [d']
+  · intro agrees
+    cases depth with
+    | zero =>
+      have hbit := agrees.2.2.1
+      simp [c', d', zeroScan, tail] at hbit
+    | succ depth =>
+      have hbit := agrees.2.2.2.2 depth (Nat.lt_succ_self _)
+      simp [c', d', zeroScan, tail, List.replicate_succ] at hbit
+
+private theorem run_reaches' {window n : ℕ} {c d : Configuration window}
+    (h : run n c = some d) : StateTransition.Reaches step c d := by
+  induction n generalizing c with
+  | zero =>
+    cases Option.some.inj h
+    exact Relation.ReflTransGen.refl
+  | succ n ih =>
+    rw [run] at h
+    cases first : step c with
+    | none => simp [first] at h
+    | some e =>
+      exact Relation.ReflTransGen.head first (ih (by simpa [first] using h))
+
+private theorem exists_run_stopping_of_mem_eval {window : ℕ} {c stop : Configuration window}
+    (h : stop ∈ StateTransition.eval step c) :
+    ∃ n, run n c = some stop ∧ step stop = none := by
+  refine StateTransition.evalInduction h ?_
+  intro a ha ih
+  cases first : step a with
+  | none =>
+    have self : a ∈ StateTransition.eval step a :=
+      StateTransition.mem_eval.mpr ⟨Relation.ReflTransGen.refl, first⟩
+    have eq := Part.mem_unique ha self
+    exact ⟨0, by simp [run, eq], eq.symm ▸ first⟩
+  | some next =>
+    obtain ⟨n, hrun, hstop⟩ := ih next first
+    exact ⟨n + 1, by rw [run, first, Option.bind_some, hrun], hstop⟩
+
+private theorem blank_zeroScan_never_halts (window : ℕ) :
+    ¬ (StateTransition.eval step (zeroScan window 0 [] [])).Dom := by
+  intro dom
+  obtain ⟨stop, hmem⟩ := Part.dom_iff_mem.mp dom
+  obtain ⟨n, hrun, hstop⟩ := exists_run_stopping_of_mem_eval hmem
+  have absent : run (n + 1) (zeroScan window 0 [] []) = none := by
+    rw [run_add', hrun, Option.bind_some, run, hstop]
+    rfl
+  have agrees :
+      TapeAgrees (0 + (n + 1)) (zeroScan window 0 [] [])
+        (zeroScan window 0 [] (List.replicate (n + 1) 0 ++ [])) :=
+    ⟨rfl, rfl, rfl, fun _ _ => rfl,
+      fun i hi => (replicate_zero_append_getD (by simpa using hi) []).symm⟩
+  have same := run_tapeAgrees (n + 1) agrees
+  rw [absent, run_zeroScan_prefix] at same
+  cases same
+
+private theorem scan_ones_halts (window : ℕ) (position : ℤ) (left : List (Fin 2)) :
+    ∃ stop, run 7 { zeroScan window position left (List.replicate 7 1) with scanned := 1 } =
+      some stop ∧ step stop = none := by
+  let stop : Configuration window :=
+    ⟨encodeAddress window 61, position + 7, 1, List.replicate 7 1 ++ left, []⟩
+  have e12 : ConjectureMachines.Riemann95.machine.transition 12 1 = some (1, .right, 15) := rfl
+  have e15 : ConjectureMachines.Riemann95.machine.transition 15 1 = some (1, .right, 17) := rfl
+  have e17 : ConjectureMachines.Riemann95.machine.transition 17 1 = some (1, .right, 21) := rfl
+  have e21 : ConjectureMachines.Riemann95.machine.transition 21 1 = some (1, .right, 27) := rfl
+  have e27 : ConjectureMachines.Riemann95.machine.transition 27 1 = some (1, .right, 35) := rfl
+  have e35 : ConjectureMachines.Riemann95.machine.transition 35 1 = some (1, .right, 90) := rfl
+  have e90 : ConjectureMachines.Riemann95.machine.transition 90 1 = some (1, .right, 61) := rfl
+  have e61 : ConjectureMachines.Riemann95.machine.transition 61 1 = none := rfl
+  refine ⟨stop, ?_, ?_⟩
+  · simp [stop, run, step, writeMove, zeroScan, e12, e15, e17, e21, e27, e35, e90,
+      List.replicate_succ, List.headI_cons, List.tail_cons]
+    omega
+  · simp [stop, step, e61]
+
+/-- At every finite depth, two starts with the same observed tape, control and
+head position have different halting outcomes on the exact interpreter. -/
+theorem exists_tapeAgrees_opposite_halts (window depth : ℕ) :
+    ∃ c d : Configuration window, TapeAgrees depth c d ∧
+      ¬ (StateTransition.eval step c).Dom ∧ (StateTransition.eval step d).Dom := by
+  let tail : List (Fin 2) := 1 :: List.replicate 7 1
+  let d := zeroScan window 0 [] (List.replicate depth 0 ++ tail)
+  refine ⟨zeroScan window 0 [] [], d, ?_, blank_zeroScan_never_halts window, ?_⟩
+  · refine ⟨rfl, rfl, rfl, fun _ _ => rfl, ?_⟩
+    intro i hi
+    exact (replicate_zero_append_getD hi tail).symm
+  · obtain ⟨stop, hrun, hstop⟩ := scan_ones_halts window (0 + (depth : ℤ) + 1)
+      (0 :: (List.replicate depth 0 ++ []))
+    have hx : run (depth + 1 + 7) d = some stop := by
+      rw [run_add']
+      unfold d
+      rw [run_zeroScan_then_read, Option.bind_some]
+      exact hrun
+    exact Part.dom_iff_mem.mpr ⟨stop, StateTransition.mem_eval.mpr ⟨run_reaches' hx, hstop⟩⟩
+
+/-- A readout constant on depth-limited observations cannot determine
+halting for every start of the exact interpreter. -/
+theorem no_halts_decision_from_fixed_depth {Observation : Type*} (window depth : ℕ)
+    (read : Configuration window → Observation)
+    (respects : ∀ {c d}, TapeAgrees depth c d → read c = read d)
+    (accept : Observation → Prop) :
+    ¬ ∀ c, accept (read c) ↔ (StateTransition.eval step c).Dom := by
+  intro decides
+  obtain ⟨c, d, agrees, hc, hd⟩ := exists_tapeAgrees_opposite_halts window depth
+  have haccept := (decides d).mpr hd
+  rw [← respects agrees] at haccept
+  exact hc ((decides c).mp haccept)
+
+end ScanWitnesses
+
+private theorem step_position_parity {window : ℕ} {c d : Configuration window}
+    (h : step c = some d) : (d.position - c.position - 1) % 2 = 0 := by
+  unfold step at h
+  cases cell : ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => simp [cell] at h
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    rw [cell, Option.map_some] at h
+    have same := Option.some.inj h
+    subst d
+    cases direction <;> simp only [writeMove] <;> omega
+
+/-- Each successful native instruction reverses absolute head parity. -/
+theorem run_position_parity {window : ℕ} (n : ℕ) {c d : Configuration window}
+    (h : run n c = some d) : (d.position - c.position - (n : ℤ)) % 2 = 0 := by
+  induction n generalizing c with
+  | zero =>
+    have same : c = d := Option.some.inj h
+    subst d
+    simp
+  | succ n ih =>
+    rw [run] at h
+    cases stepEq : step c with
+    | none => simp [stepEq] at h
+    | some e =>
+      have tail : run n e = some d := by simpa only [stepEq, Option.bind_some] using h
+      have first := step_position_parity stepEq
+      have rest := ih tail
+      omega
+
+/-- An exact return of the whole configuration has even instruction length. -/
+theorem closed_run_even {window : ℕ} (n : ℕ) (c : Configuration window)
+    (h : run n c = some c) : n % 2 = 0 := by
+  have parity := run_position_parity n h
+  omega
+
+/-- The 95-address count cannot be the length of a closed native run with
+its absolute head position retained. -/
+theorem run95_ne_self {window : ℕ} (c : Configuration window) :
+    run 95 c ≠ some c := by
+  intro h
+  have parity := closed_run_even 95 c h
+  omega
+
+/-- The actual row-12 right scan provides a projected 95-step loop in
+every prime window. Its absolute displacement is 95. -/
+theorem exists_projected_run95_return (window : ℕ) :
+    ∃ c d : Configuration window, run 95 c = some d ∧
+      project c = project d ∧ d.position = c.position + 95 := by
+  let zeros : List (Fin 2) := List.replicate 95 0
+  have padding : ListBlank.mk ([] : List (Fin 2)) = ListBlank.mk zeros := by
+    exact Quot.sound (Or.inl ⟨95, rfl⟩)
+  refine ⟨zeroScan window 0 [] zeros, zeroScan window 95 zeros [], ?_, ?_, rfl⟩
+  · simpa only [zeros, List.append_nil, Int.zero_add, Nat.cast_ofNat] using
+      run_zeroScan_prefix window 95 0 [] []
+  · simp only [zeroScan, project, ← padding]
+
+
+/-- A native start in the right sweep that reads the first 1 after
+`padding + 1` instructions. The eight consecutive ones end at the
+original terminal cell. -/
+def delayedStop (window padding : ℕ) : Configuration window :=
+  zeroScan window 0 [] (List.replicate padding 0 ++ (1 :: List.replicate 7 1))
+
+/-- The number of successful instructions of this native run is exactly
+`padding + 8`. Its language of successful path lengths is an initial interval. -/
+theorem delayedStop_lengths (window padding length : ℕ) :
+    (∃ finish, run length (delayedStop window padding) = some finish) ↔
+      length ≤ padding + 8 := by
+  obtain ⟨stop, trace, terminal⟩ := scan_ones_halts window (0 + (padding : ℤ) + 1)
+    (0 :: (List.replicate padding 0 ++ []))
+  have stops : run (padding + 8) (delayedStop window padding) = some stop := by
+    change run (padding + 1 + 7) (delayedStop window padding) = some stop
+    rw [run_add', delayedStop, run_zeroScan_then_read, Option.bind_some]
+    exact trace
+  constructor
+  · rintro ⟨finish, reached⟩
+    by_contra tooLong
+    have split : length = padding + 8 + ((length - (padding + 8) - 1) + 1) := by omega
+    rw [split, run_add', stops, Option.bind_some, run, terminal] at reached
+    cases reached
+  · intro within
+    have split : padding + 8 = length + (padding + 8 - length) := by omega
+    rw [split, run_add'] at stops
+    cases prior : run length (delayedStop window padding) with
+    | none => rw [prior] at stops; cases stops
+    | some finish => exact ⟨finish, rfl⟩
+
+/-- In one window and at any fixed observation depth, infinitely many
+native starts agree on that observation and have pairwise distinct
+successful path-length languages. -/
+theorem delayedStop_agrees (window depth n : ℕ) :
+    TapeAgrees depth (zeroScan window 0 [] []) (delayedStop window (depth + n)) := by
+  refine ⟨rfl, rfl, rfl, fun _ _ => rfl, ?_⟩
+  intro i hi
+  exact (replicate_zero_append_getD (by omega : i < depth + n) _).symm
+
+/-- Even forgetting every edge label, a finite set of roots cannot assign
+the exact successful path-length language to each native start agreeing
+with this fixed observation. Here `acceptsLength` can be the length
+language of any rooted labeled graph. -/
+theorem no_finite_roots_for_tapeAgrees_lengths {Vertex : Type*} [Finite Vertex]
+    (window depth : ℕ) (root : Configuration window → Vertex)
+    (acceptsLength : Vertex → ℕ → Prop) :
+    ¬ ∀ c, TapeAgrees depth (zeroScan window 0 [] []) c →
+      ∀ length, acceptsLength (root c) length ↔ ∃ finish, run length c = some finish := by
+  intro exactLanguages
+  let assign (n : ℕ) := root (delayedStop window (depth + n))
+  have language (n length : ℕ) : acceptsLength (assign n) length ↔ length ≤ depth + n + 8 :=
+    (exactLanguages _ (delayedStop_agrees window depth n) length).trans
+      (delayedStop_lengths window (depth + n) length)
+  apply not_injective_infinite_finite assign
+  intro i j same
+  have first := (language i (depth + i + 8)).mpr le_rfl
+  have second := (language j (depth + j + 8)).mpr le_rfl
+  rw [same] at first
+  rw [← same] at second
+  have le := (language j _).mp first
+  have ge := (language i _).mp second
+  omega
+
+
+/-- The control and scanned symbol observed at a given time on the actual blank run. -/
+def observedRead (window n : ℕ) : Option (Fin 95 × Fin 2) :=
+  (run n (blank window)).map fun c => (decodeAddress c.address, c.scanned)
+
+theorem observedRead_eq_native (window n : ℕ) :
+    observedRead window n =
+      (ConjectureMachines.Riemann95.nSteps n ConjectureMachines.init).map
+        (fun c => (c.state, c.tape.head)) := by
+  rw [← project_blank window, ← project_run, Option.map_map]
+  rfl
+
+/-- Every edge is witnessed by two consecutive observations of the blank run. -/
+def ObservedReadEdge (window : ℕ) (u v : Fin 95 × Fin 2) : Prop :=
+  ∃ n, observedRead window n = some u ∧ observedRead window (n + 1) = some v
+
+inductive ObservedReadWalk (window : ℕ) (start : Fin 95 × Fin 2) :
+    ℕ → (Fin 95 × Fin 2) → Prop
+  | nil : ObservedReadWalk window start 0 start
+  | tail {n : ℕ} {u v : Fin 95 × Fin 2} :
+      ObservedReadWalk window start n u → ObservedReadEdge window u v →
+      ObservedReadWalk window start (n + 1) v
+
+theorem observedReadWalk_of_run {window n : ℕ} {v : Fin 95 × Fin 2}
+    (read : observedRead window n = some v) : ObservedReadWalk window (0, 0) n v := by
+  induction n generalizing v with
+  | zero =>
+    rw [observedRead_eq_native] at read
+    cases Option.some.inj read
+    exact .nil
+  | succ n ih =>
+    cases previous : run n (blank window) with
+    | none =>
+      have absent : run (n + 1) (blank window) = none := by rw [run_add', previous]; rfl
+      simp [observedRead, absent] at read
+    | some c =>
+      have before : observedRead window n = some (decodeAddress c.address, c.scanned) := by
+        simp only [observedRead, previous, Option.map_some]
+      exact .tail (ih before) ⟨n, before, read⟩
+
+/-- Even edges extracted exclusively from the blank orbit can create a
+spurious rooted walk. The observed state at times 8 and 9 is (12, 0).
+Reusing the edge from time 9 to 10 one tick early invents a read of 1. -/
+theorem observedReadWalk_spurious (window : ℕ) :
+    ObservedReadWalk window (0, 0) 9 (12, 1) ∧
+      observedRead window 9 ≠ some (12, 1) := by
+  have atEight : observedRead window 8 = some (12, 0) := by
+    rw [observedRead_eq_native]
+    rfl
+  have atNine : observedRead window 9 = some (12, 0) := by
+    rw [observedRead_eq_native]
+    rfl
+  have atTen : observedRead window 10 = some (12, 1) := by
+    rw [observedRead_eq_native]
+    rfl
+  exact ⟨.tail (observedReadWalk_of_run atEight) ⟨9, atNine, atTen⟩, by rw [atNine]; decide⟩
+
+/-- Change the prime label while keeping the decoded control, both tape
+lists, the scanned symbol and the absolute head position. -/
+def readdress {origin : ℕ} (target : ℕ) (c : Configuration origin) : Configuration target :=
+  ⟨encodeAddress target (decodeAddress c.address), c.position, c.scanned, c.left, c.right⟩
+
+@[simp] theorem readdress_same {w : ℕ} (c : Configuration w) : readdress w c = c := by
+  cases c
+  simp [readdress]
+
+@[simp] theorem readdress_comp {u : ℕ} (v w : ℕ) (c : Configuration u) :
+    readdress w (readdress v c) = readdress w c := by simp [readdress]
+
+@[simp] theorem project_readdress {u : ℕ} (v : ℕ) (c : Configuration u) :
+    project (readdress v c) = project c := by simp [readdress, project]
+
+/-- Readdressing is an exact equivalence of representations, including
+the unquotiented tape lists and absolute head coordinate. -/
+def windowEquiv (u v : ℕ) : Configuration u ≃ Configuration v where
+  toFun := readdress v
+  invFun := readdress u
+  left_inv := by intro c; simp
+  right_inv := by intro c; simp
+
+theorem step_readdress {u : ℕ} (v : ℕ) (c : Configuration u) :
+    step (readdress v c) = (step c).map (readdress v) := by
+  unfold step
+  simp only [readdress, decode_encode]
+  cases ht : ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => rfl
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    cases direction <;> simp [writeMove, readdress]
+
+theorem run_readdress {u : ℕ} (v : ℕ) (n : ℕ) (c : Configuration u) :
+    run n (readdress v c) = (run n c).map (readdress v) := by
+  induction n generalizing c with
+  | zero => rfl
+  | succ n ih =>
+    simp only [run, step_readdress]
+    cases h : step c <;> simp [ih]
+
+/-- Use one requested window per instruction, with an explicit final
+window. Readdressing itself consumes no native instruction. -/
+def runOn (schedule : List ℕ) (target : ℕ) {w : ℕ} (c : Configuration w) :
+    Option (Configuration target) :=
+  match schedule with
+  | [] => some (readdress target c)
+  | next :: rest => (step (readdress next c)).bind (runOn rest target)
+
+/-- Every finite schedule, even with repeats or jumps, executes precisely
+the same instructions and produces the same tape and head position. -/
+theorem runOn_eq {w : ℕ} (schedule : List ℕ) (target : ℕ) (c : Configuration w) :
+    runOn schedule target c = (run schedule.length c).map (readdress target) := by
+  induction schedule generalizing w with
+  | nil => rfl
+  | cons next rest ih =>
+    simp only [runOn, step_readdress, List.length_cons, run]
+    cases h : step c with
+    | none => rfl
+    | some d =>
+      simp only [Option.map_some, Option.bind_some, ih, run_readdress]
+      cases run rest.length d <;> simp
+
+theorem project_runOn {w : ℕ} (schedule : List ℕ) (target : ℕ) (c : Configuration w) :
+    (runOn schedule target c).map project =
+      ConjectureMachines.Riemann95.nSteps schedule.length (project c) := by
+  rw [runOn_eq, ← project_run]
+  cases run schedule.length c <;> simp
+
+theorem runOn_eq_of_length {w : ℕ} {left right : List ℕ}
+    (length : left.length = right.length) (target : ℕ) (c : Configuration w) :
+    runOn left target c = runOn right target c := by
+  rw [runOn_eq, runOn_eq, length]
+
+/-- The original boot certificate is independent of the chosen window
+at every instruction, including the final display window. -/
+theorem blank_runOn_reaches_initialRoot (schedule : List ℕ)
+    (length : schedule.length = 3634) (origin target : ℕ) :
+    ∃ result, runOn schedule target (blank origin) = some result ∧
+      project result = ConjectureMachines.Riemann95.initialRoot := by
+  obtain ⟨result, runResult, source⟩ := blank_reaches_initialRoot origin
+  refine ⟨readdress target result, ?_, (project_readdress _ _).trans source⟩
+  rw [runOn_eq, length, runResult]
+  rfl
+
+/-- A raw prime code is rejected in every different window. This tests the
+need for explicit readdressing when window transitions are implemented. -/
+theorem checkAddress_stale {u v : ℕ} (different : u ≠ v) (a : Address u) :
+    checkAddress v a.val = none := by
+  have hu := a.property.2
+  have notValid : ¬ InWindow v a.val := by
+    intro hv
+    have h := hv.2
+    omega
+  simp [checkAddress, notValid]
+
+private theorem step_project_displacement {u v : ℕ} {c : Configuration u}
+    {d : Configuration v} (same : project c = project d) :
+    (step c).map (fun e => (project e, e.position - c.position)) =
+      (step d).map (fun e => (project e, e.position - d.position)) := by
+  have control := congrArg Cfg.state same
+  have scan := congrArg (fun cfg => cfg.tape.head) same
+  change decodeAddress c.address = decodeAddress d.address at control
+  change c.scanned = d.scanned at scan
+  have projected := (project_step c).trans (by rw [same, ← project_step])
+  rw [step, step] at projected ⊢
+  rw [← control, ← scan] at projected ⊢
+  cases ht : ConjectureMachines.Riemann95.machine.transition (decodeAddress c.address) c.scanned with
+  | none => rfl
+  | some instruction =>
+    rcases instruction with ⟨symbol, direction, next⟩
+    simp only [ht, Option.map_some, Option.some.injEq] at projected ⊢
+    cases direction <;> simp only [writeMove] at projected ⊢ <;> simp [projected]
+
+/-- The native pointed configuration determines exact relative head
+displacement, even across prime windows and distinct tape representatives. -/
+theorem run_project_displacement {u v : ℕ} (n : ℕ) {c : Configuration u}
+    {d : Configuration v} (same : project c = project d) :
+    (run n c).map (fun e => (project e, e.position - c.position)) =
+      (run n d).map (fun e => (project e, e.position - d.position)) := by
+  induction n generalizing c d with
+  | zero => simp [run, same]
+  | succ n ih =>
+    have first := step_project_displacement same
+    cases hc : step c <;> cases hd : step d <;>
+      simp [hc, hd] at first
+    · simp [run, hc, hd]
+    · rename_i e f
+      have rest := ih first.1
+      rw [run, run, hc, hd, Option.bind_some, Option.bind_some]
+      cases he : run n e <;> cases hf : run n f <;>
+        simp [he, hf] at rest ⊢
+      exact ⟨rest.1, by omega⟩
+
+/-- The pointed source tape together with the absolute head coordinate.
+Representatives may differ by trailing blanks and by their prime window. -/
+def handoffView {w : ℕ} (c : Configuration w) : Cfg 95 2 × ℤ :=
+  (project c, c.position)
+
+@[simp] theorem handoffView_readdress {u : ℕ} (v : ℕ) (c : Configuration u) :
+    handoffView (readdress v c) = handoffView c := by
+  exact Prod.ext (project_readdress v c) rfl
+
+/-- A handoff preserving the pointed tape and absolute head preserves
+both success and failure and the full handoff view of the result. -/
+theorem runOn_handoffView_eq {u v : ℕ} {c : Configuration u} {d : Configuration v}
+    (handoff : handoffView c = handoffView d)
+    {left right : List ℕ} (length : left.length = right.length) (leftTarget rightTarget : ℕ) :
+    (runOn left leftTarget c).map handoffView =
+      (runOn right rightTarget d).map handoffView := by
+  have native := run_project_displacement left.length (congrArg Prod.fst handoff)
+  have position := congrArg Prod.snd handoff
+  change c.position = d.position at position
+  rw [runOn_eq, runOn_eq, ← length]
+  cases hc : run left.length c <;> cases hd : run left.length d <;>
+    simp [hc, hd] at native ⊢
+  rename_i e g
+  exact Prod.ext native.1 (show e.position = g.position by have shift := native.2; omega)
+
+theorem runOn_handoffView_some_iff {u v : ℕ} {c : Configuration u} {d : Configuration v}
+    (handoff : handoffView c = handoffView d)
+    {left right : List ℕ} (length : left.length = right.length)
+    (leftTarget rightTarget : ℕ) (view : Cfg 95 2 × ℤ) :
+    (∃ e, runOn left leftTarget c = some e ∧ handoffView e = view) ↔
+      ∃ e, runOn right rightTarget d = some e ∧ handoffView e = view := by
+  have eq := runOn_handoffView_eq handoff length leftTarget rightTarget
+  cases hl : runOn left leftTarget c <;> cases hr : runOn right rightTarget d <;>
+    simp [hl, hr] at eq ⊢
+  rw [eq]
+
+/-- The native pointed tape alone is insufficient for an absolute handoff.
+Changing the recorded origin by one is already visible at budget zero. -/
+theorem absolute_position_handoff_control (window : ℕ) :
+    ∃ c d : Configuration window, project c = project d ∧
+      (runOn [] window c).map handoffView ≠ (runOn [] window d).map handoffView := by
+  refine ⟨blank window, { blank window with position := 1 }, rfl, ?_⟩
+  intro eq
+  have different := congrArg (fun r => (r.map Prod.snd)) eq
+  change some (0 : ℤ) = some 1 at different
+  exact (by decide : (0 : ℤ) ≠ 1) (Option.some.inj different)
+
+/-- An intermediate prime-window boundary consumes no source step.
+Failure of the first chunk propagates through the composition. -/
+theorem runOn_append {w : ℕ} (first rest : List ℕ) (mid target : ℕ) (c : Configuration w) :
+    runOn (first ++ rest) target c =
+      (runOn first mid c).bind (runOn rest target) := by
+  induction first generalizing w with
+  | nil =>
+    simp only [List.nil_append, runOn, Option.bind_some]
+    rw [runOn_eq, runOn_eq, run_readdress]
+    cases run rest.length c <;> simp
+  | cons next first ih =>
+    simp only [List.cons_append, runOn, Option.bind_assoc]
+    cases step (readdress next c) with
+    | none => rfl
+    | some e => exact ih e
+
+/-- After a successful first chunk, a replacement at the boundary
+can change the tape representative and window. Matching the handoff
+view and suffix length preserves the exact optional result view. -/
+theorem runOn_append_with_handoff {w mid replacement : ℕ}
+    {c : Configuration w} {e : Configuration mid} {d : Configuration replacement}
+    {first left right : List ℕ}
+    (prefixRun : runOn first mid c = some e) (handoff : handoffView e = handoffView d)
+    (length : left.length = right.length) (leftTarget rightTarget : ℕ) :
+    (runOn (first ++ left) leftTarget c).map handoffView =
+      (runOn right rightTarget d).map handoffView := by
+  rw [runOn_append first left mid, prefixRun, Option.bind_some]
+  exact runOn_handoffView_eq handoff length leftTarget rightTarget
+
+private theorem blank_mk_eq_of_complete_prefix {l r : List (Fin 2)} {depth : ℕ}
+    (hl : l.length ≤ depth) (hr : r.length ≤ depth)
+    (same : ∀ i < depth, (l[i]?).getD 0 = (r[i]?).getD 0) :
+    ListBlank.mk l = ListBlank.mk r := by
+  let pad (xs : List (Fin 2)) := xs ++ List.replicate (depth - xs.length) 0
+  have lengthPad (xs : List (Fin 2)) (h : xs.length ≤ depth) :
+      (pad xs).length = depth := by
+    simp [pad, Nat.add_sub_cancel' h]
+  have bitPad (xs : List (Fin 2)) {i : ℕ} (hi : i < (pad xs).length) :
+      (pad xs)[i] = (xs[i]?).getD 0 := by
+    by_cases before : i < xs.length
+    · simp [pad, List.getElem_append_left, before]
+    · have after : xs.length ≤ i := by omega
+      simp [pad, List.getElem_append_right, after]
+  have equal : pad l = pad r := by
+    apply List.ext_getElem ((lengthPad l hl).trans (lengthPad r hr).symm)
+    intro i h₁ h₂
+    rw [bitPad l h₁, bitPad r h₂]
+    exact same i (by simpa only [lengthPad l hl] using h₁)
+  calc
+    ListBlank.mk l = ListBlank.mk (pad l) := Quot.sound (Or.inl ⟨_, rfl⟩)
+    _ = ListBlank.mk (pad r) := congrArg ListBlank.mk equal
+    _ = ListBlank.mk r := by
+      symm
+      exact Quot.sound (Or.inl ⟨_, rfl⟩)
+
+/-- A same-window check covering both stored half-tapes is already exact
+for the native pointed tape and absolute head, modulo trailing blanks. -/
+theorem handoffView_eq_of_complete_tapeAgrees {window depth : ℕ}
+    {c d : Configuration window} (agree : TapeAgrees depth c d)
+    (cl : c.left.length ≤ depth) (cr : c.right.length ≤ depth)
+    (dl : d.left.length ≤ depth) (dr : d.right.length ≤ depth) :
+    handoffView c = handoffView d := by
+  obtain ⟨address, position, scanned, left, right⟩ := agree
+  simp only [handoffView, project, address, position, scanned,
+    blank_mk_eq_of_complete_prefix cl dl left, blank_mk_eq_of_complete_prefix cr dr right]
+
+/-- Agreement at cofinal depths determines the entire native handoff view. -/
+theorem handoffView_eq_of_cofinal_tapeAgrees {window : ℕ} {c d : Configuration window}
+    (depth : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ depth t)
+    (agree : ∀ t, TapeAgrees (depth t) c d) : handoffView c = handoffView d := by
+  let size := max (max c.left.length c.right.length) (max d.left.length d.right.length)
+  obtain ⟨t, enough⟩ := cofinal size
+  exact handoffView_eq_of_complete_tapeAgrees (agree t)
+    ((le_max_left _ _).trans ((le_max_left _ _).trans enough))
+    ((le_max_right _ _).trans ((le_max_left _ _).trans enough))
+    ((le_max_left _ _).trans ((le_max_right _ _).trans enough))
+    ((le_max_right _ _).trans ((le_max_right _ _).trans enough))
+
+private theorem exists_run_of_reaches {w : ℕ} {c d : Configuration w}
+    (reached : Reaches step c d) : ∃ n, run n c = some d := by
+  induction reached with
+  | refl => exact ⟨0, rfl⟩
+  | tail _ edge ih =>
+    obtain ⟨n, trace⟩ := ih
+    refine ⟨n + 1, ?_⟩
+    rw [run_add', trace, Option.bind_some, run, show step _ = some _ from edge]
+    rfl
+
+private theorem exists_terminal_of_run_none {w : ℕ} (n : ℕ) {c : Configuration w}
+    (failed : run n c = none) :
+    ∃ d, Reaches step c d ∧ step d = none := by
+  induction n generalizing c with
+  | zero => cases failed
+  | succ n ih =>
+    cases edge : step c with
+    | none => exact ⟨c, .refl, edge⟩
+    | some d =>
+      obtain ⟨terminal, reached, stop⟩ := ih (by simpa only [run, edge, Option.bind_some] using failed)
+      exact ⟨terminal, Relation.ReflTransGen.head edge reached, stop⟩
+
+/-- Sampling arbitrary window schedules detects blank-start halting once
+their instruction lengths are cofinal. Target window labels may vary. -/
+theorem halts_iff_failed_cofinal_schedule (origin : ℕ) (schedules : ℕ → List ℕ)
+    (target : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ (schedules t).length) :
+    Halts origin ↔ ∃ t, runOn (schedules t) (target t) (blank origin) = none := by
+  constructor
+  · intro halted
+    let result := StateTransition.eval step (blank origin)
+    have member : result.get halted ∈ result := ⟨halted, rfl⟩
+    obtain ⟨reached, stop⟩ := mem_eval.mp member
+    obtain ⟨n, trace⟩ := exists_run_of_reaches reached
+    have fails : run (n + 1) (blank origin) = none := by
+      rw [run_add', trace, Option.bind_some, run, stop]
+      rfl
+    obtain ⟨t, long⟩ := cofinal (n + 1)
+    obtain ⟨rest, len⟩ := Nat.exists_eq_add_of_le long
+    refine ⟨t, ?_⟩
+    rw [runOn_eq, len, run_add', fails]
+    rfl
+  · rintro ⟨t, failed⟩
+    rw [runOn_eq] at failed
+    have none : run (schedules t).length (blank origin) = none := by
+      cases h : run (schedules t).length (blank origin) <;> simp_all
+    obtain ⟨d, reached, stop⟩ := exists_terminal_of_run_none _ none
+    exact (mem_eval.mpr ⟨reached, stop⟩ : d ∈ StateTransition.eval step (blank origin)).1
+
+/-- The sampled failure is an exact counterexample criterion for RH. -/
+theorem exists_failed_cofinal_schedule_iff_not_RH (origin : ℕ) (schedules : ℕ → List ℕ)
+    (target : ℕ → ℕ) (cofinal : ∀ n, ∃ t, n ≤ (schedules t).length) :
+    (∃ t, runOn (schedules t) (target t) (blank origin) = none) ↔ ¬ RiemannHypothesis :=
+  (halts_iff_failed_cofinal_schedule origin schedules target cofinal).symm.trans
+    (halts_iff_not_RH origin)
+
+/-- A terminal configuration reached after exactly n successful instructions
+determines the exact failure threshold for every prime-window schedule. -/
+theorem runOn_eq_none_iff_length_gt_of_terminal {w n : ℕ} {c terminal : Configuration w}
+    (trace : run n c = some terminal) (stop : step terminal = none)
+    (schedule : List ℕ) (target : ℕ) :
+    runOn schedule target c = none ↔ n < schedule.length := by
+  have failedPrefix {m k : ℕ} (failed : run m c = none) (h : m ≤ k) :
+      run k c = none := by
+    obtain ⟨rest, rfl⟩ := Nat.exists_eq_add_of_le h
+    rw [run_add', failed]
+    rfl
+  have next : run (n + 1) c = none := by
+    rw [run_add', trace, Option.bind_some, run, stop]
+    rfl
+  rw [runOn_eq, Option.map_eq_none_iff]
+  constructor
+  · intro failed
+    by_contra! short
+    have bad := failedPrefix failed short
+    rw [trace] at bad
+    cases bad
+  · intro long
+    exact failedPrefix next long
+
+/-- Halting of the original blank-start machine gives an exact budget cutoff
+independent of both the intermediate prime addresses and final window.
+The verified native prefix gives a lower bound on that cutoff. -/
+theorem halts_iff_exists_runOn_failure_threshold (origin : ℕ) :
+    Halts origin ↔ ∃ n ≥ 3634, ∀ (schedule : List ℕ) (target : ℕ),
+      runOn schedule target (blank origin) = none ↔ n < schedule.length := by
+  constructor
+  · intro halted
+    let result := StateTransition.eval step (blank origin)
+    have member : result.get halted ∈ result := ⟨halted, rfl⟩
+    obtain ⟨reached, stop⟩ := mem_eval.mp member
+    obtain ⟨n, trace⟩ := exists_run_of_reaches reached
+    have cutoff := runOn_eq_none_iff_length_gt_of_terminal trace stop
+    let bootSchedule := List.replicate 3634 origin
+    have len : bootSchedule.length = 3634 := List.length_replicate
+    obtain ⟨c, ran, _⟩ := blank_runOn_reaches_initialRoot bootSchedule len origin origin
+    refine ⟨n, ?_, cutoff⟩
+    by_contra! short
+    have failed := (cutoff bootSchedule origin).mpr (len ▸ short)
+    rw [ran] at failed
+    cases failed
+  · rintro ⟨n, _, threshold⟩
+    let schedules (k : ℕ) := List.replicate k origin
+    have cofinal : ∀ k, ∃ t, k ≤ (schedules t).length :=
+      fun k => ⟨k, by simp [schedules]⟩
+    apply (halts_iff_failed_cofinal_schedule origin schedules (fun _ => origin) cofinal).mpr
+    exact ⟨n + 1, (threshold _ _).mpr (by simp [schedules])⟩
+
+/-- Two independently chosen depth-d half-tapes at fixed blank metadata. -/
+def finiteTapeConfig (window depth : ℕ)
+    (bits : (Fin depth → Fin 2) × (Fin depth → Fin 2)) : Configuration window :=
+  { blank window with left := List.ofFn bits.1, right := List.ofFn bits.2 }
+
+/-- Recover the two length-d bit strings from the exact pointed tape. -/
+def readFiniteTape (depth : ℕ) (view : Cfg 95 2 × ℤ) :
+    (Fin depth → Fin 2) × (Fin depth → Fin 2) :=
+  (fun i => view.1.tape.left.nth i.val, fun i => view.1.tape.right.nth i.val)
+
+theorem readFiniteTape_config (window depth : ℕ)
+    (bits : (Fin depth → Fin 2) × (Fin depth → Fin 2)) :
+    readFiniteTape depth (handoffView (finiteTapeConfig window depth bits)) = bits := by
+  apply Prod.ext
+  · funext i
+    simp [readFiniteTape, handoffView, project, finiteTapeConfig, nth_mk_eq_blankPadded]
+  · funext i
+    simp [readFiniteTape, handoffView, project, finiteTapeConfig, nth_mk_eq_blankPadded]
+
+theorem finiteTapeConfig_handoff_injective (window depth : ℕ) :
+    Function.Injective (fun bits => handoffView (finiteTapeConfig window depth bits)) :=
+  Function.LeftInverse.injective (readFiniteTape_config window depth)
+
+/-- Exact full-view encoding of this finite family of arbitrary tapes
+needs at least two bits per depth level, even with fixed head and control. -/
+theorem finiteTapeConfig_code_capacity {Code : Type*} [Fintype Code]
+    (window depth : ℕ) (encode : Configuration window → Code)
+    (faithful : ∀ a b, encode (finiteTapeConfig window depth a) =
+      encode (finiteTapeConfig window depth b) →
+      handoffView (finiteTapeConfig window depth a) = handoffView (finiteTapeConfig window depth b)) :
+    2 ^ depth * 2 ^ depth ≤ Fintype.card Code := by
+  classical
+  have inject : Function.Injective (fun bits => encode (finiteTapeConfig window depth bits)) :=
+    fun _ _ same => finiteTapeConfig_handoff_injective window depth (faithful _ _ same)
+  simpa using Fintype.card_le_of_injective _ inject
+
+/-- Storing the two strings attains the code bound on the fixed-metadata
+family. Decoding reconstructs the literal native handoff view. -/
+theorem finiteTapeConfig_decode_read (window depth : ℕ)
+    (bits : (Fin depth → Fin 2) × (Fin depth → Fin 2)) :
+    handoffView (finiteTapeConfig window depth
+      (readFiniteTape depth (handoffView (finiteTapeConfig window depth bits)))) =
+      handoffView (finiteTapeConfig window depth bits) := by
+  rw [readFiniteTape_config]
+
+/-- No fixed finite code alphabet can represent the full handoff view of
+every arbitrary tape configuration, even in a single prime window. -/
+theorem no_finite_full_handoff_code {Code : Type*} [Fintype Code]
+    (window : ℕ) (encode : Configuration window → Code) :
+    ¬ ∀ c d, encode c = encode d → handoffView c = handoffView d := by
+  intro faithful
+  let size := Fintype.card Code
+  have bound := finiteTapeConfig_code_capacity window size encode (fun _ _ => faithful _ _)
+  have one : 1 ≤ 2 ^ size := Nat.one_le_pow size 2 (by decide)
+  have le : 2 ^ size ≤ 2 ^ size * 2 ^ size := by
+    simpa only [Nat.mul_one] using Nat.mul_le_mul_left (2 ^ size) one
+  exact (not_le_of_gt (Nat.lt_two_pow_self (n := size))) (le.trans bound)
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95PrimeMachine

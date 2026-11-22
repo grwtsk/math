@@ -93,11 +93,11 @@ theorem logDeriv_of_factorization {ι : Type*} (S : Finset ι) (a : ι → ℂ) 
     DifferentiableAt.fun_finsetProd (fun i hi => (hdf i hi).pow (m i))
   have he := (logDeriv_congr_nhds hfactor).eq_of_nhds
   rw [he, logDeriv_const_mul z C hC]
-  change logDeriv (fun w => Complex.exp (L w) * P w) z = _
+  change logDeriv ((fun w => Complex.exp (L w)) * P) z = _
   rw [logDeriv_mul (f := fun w => Complex.exp (L w)) (g := P) z (Complex.exp_ne_zero _) hP hL.cexp hdP, logDeriv_exp L z hL]
   congr 1
   dsimp only [P]
-  rw [logDeriv_prod (s := S) (x := z) (f := fun i w => (factor 3 (a i) w) ^ m i) (fun i hi => pow_ne_zero _ (hfac i hi))
+  rw [logDeriv_fun_prod (s := S) (x := z) (f := fun i w => (factor 3 (a i) w) ^ m i) (fun i hi => pow_ne_zero _ (hfac i hi))
     (fun i hi => (hdf i hi).pow (m i))]
   exact Finset.sum_congr rfl (fun i hi => logDeriv_fun_pow (hdf i hi) (m i))
 

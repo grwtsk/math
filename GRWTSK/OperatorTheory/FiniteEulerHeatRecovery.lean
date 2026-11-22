@@ -70,6 +70,69 @@ private theorem product_defect {J : Type*} (s : Finset J) (f : J → ℝ)
             (1 - f j) * (∏ k ∈ s, f k) + (1 - ∏ k ∈ s, f k) := by ring
         _ ≤ (1 - f j) + ∑ k ∈ s, (1 - f k) := add_le_add omitted tailBound
 
+<<<<<<< HEAD
+=======
+/-- The excess of a strictly subunit logarithmic exposure over its Euler
+exposure is quadratic, with a constant controlled by the exposure cap. -/
+theorem log_factor_defect_bounds {a cap : ℝ} (ha : 0 ≤ a) (hac : a ≤ cap) (hc : cap < 1) :
+    a ^ 2 / 2 ≤ -Real.log (1 - a) - a ∧
+      -Real.log (1 - a) - a ≤ a ^ 2 / (2 * (1 - cap)) := by
+  let f (c x : ℝ) := -Real.log (1 - x) - x - c * (x ^ 2 / 2)
+  have slope (c x : ℝ) (hx : x < 1) :
+      HasDerivAt (f c) (x / (1 - x) - c * x) x := by
+    have logSlope := ((hasDerivAt_id x).const_sub (1 : ℝ)).log (sub_ne_zero.mpr hx.ne')
+    have quadSlope := ((hasDerivAt_pow 2 x).div_const (2 : ℝ)).const_mul c
+    convert (logSlope.neg.sub (hasDerivAt_id x)).sub quadSlope using 1
+    · rfl
+    · simp only [id_eq]
+      field_simp [sub_ne_zero.mpr hx.ne']
+      ring
+  have inside (x : ℝ) (hx : x ∈ Set.Icc (0 : ℝ) cap) : x < 1 := hx.2.trans_lt hc
+  have cont (c : ℝ) : ContinuousOn (f c) (Set.Icc 0 cap) :=
+    fun x hx => (slope c x (inside x hx)).continuousAt.continuousWithinAt
+  have diff (c : ℝ) : DifferentiableOn ℝ (f c) (interior (Set.Icc 0 cap)) :=
+    fun x hx => (slope c x (inside x (interior_subset hx))).differentiableAt.differentiableWithinAt
+  have zero (c : ℝ) : f c 0 = 0 := by simp [f]
+  have lo : MonotoneOn (f 1) (Set.Icc 0 cap) := by
+    apply monotoneOn_of_deriv_nonneg (convex_Icc _ _) (cont 1) (diff 1)
+    intro x hx
+    have hmem := interior_subset hx
+    have hlt := inside x hmem
+    rw [(slope 1 x hlt).deriv, one_mul, sub_nonneg]
+    exact (le_div_iff₀ (sub_pos.mpr hlt)).mpr (by nlinarith [sq_nonneg x])
+  have hi : AntitoneOn (f (1 - cap)⁻¹) (Set.Icc 0 cap) := by
+    apply antitoneOn_of_deriv_nonpos (convex_Icc _ _) (cont _) (diff _)
+    intro x hx
+    have hmem := interior_subset hx
+    rw [(slope _ x (inside x hmem)).deriv, sub_nonpos]
+    have denominators : 1 - cap ≤ 1 - x := by linarith [hmem.2]
+    have bound := div_le_div_of_nonneg_left hmem.1 (sub_pos.mpr hc) denominators
+    simpa only [div_eq_mul_inv, mul_comm] using bound
+  have hzero : (0 : ℝ) ∈ Set.Icc 0 cap := ⟨le_rfl, ha.trans hac⟩
+  have hmem : a ∈ Set.Icc (0 : ℝ) cap := ⟨ha, hac⟩
+  have hlo : 0 ≤ f 1 a := by simpa only [zero] using lo hzero hmem ha
+  have hhi : f (1 - cap)⁻¹ a ≤ 0 := by simpa only [zero] using hi hzero hmem ha
+  refine ⟨sub_nonneg.mp (by simpa only [f, one_mul] using hlo), ?_⟩
+  calc
+    -Real.log (1 - a) - a ≤ (1 - cap)⁻¹ * (a ^ 2 / 2) := sub_nonpos.mp hhi
+    _ = a ^ 2 / (2 * (1 - cap)) := by field_simp [sub_ne_zero.mpr hc.ne']
+
+/-- Strictly subunit exposures can amplify arbitrarily much even when one
+stage's total exposure and quadratic budget are both below one. -/
+theorem subunit_gain_unbounded (gain : ℝ) (hg : 0 ≤ gain) :
+    ∃ a : ℝ, 0 ≤ a ∧ a < 1 ∧ a ^ 2 < 1 ∧ gain < 1 / (1 - a) := by
+  have positive : 0 < gain + 2 := by linarith
+  have small : (gain + 2)⁻¹ ≤ 1 := by
+    rw [← one_div]
+    exact (div_le_one positive).mpr (by linarith)
+  have nonneg : 0 ≤ 1 - (gain + 2)⁻¹ := sub_nonneg.mpr small
+  have ltOne : 1 - (gain + 2)⁻¹ < 1 := sub_lt_self _ (inv_pos.mpr positive)
+  refine ⟨1 - (gain + 2)⁻¹, nonneg, ltOne, ?_, ?_⟩
+  · simpa using pow_lt_pow_left₀ ltOne nonneg (by decide : 2 ≠ 0)
+  · rw [sub_sub_cancel, one_div, inv_inv]
+    linarith
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 section Schedule
 
 variable {J I : Type*} [Fintype J]
@@ -283,6 +346,61 @@ theorem logExposure_nonneg (a : J → I → ℝ) (i : I)
   exact neg_nonneg.mpr
     (Real.log_nonpos (sub_pos.mpr (upper j)).le (by linarith [lower j]))
 
+<<<<<<< HEAD
+=======
+/-- The calibrated Euler schedule's logarithmic clock inflation is bounded
+above and below by its quadratic exposure budget. -/
+theorem logExposure_sub_total_bounds (a : J → I → ℝ) (i : I) {cap : ℝ}
+    (lower : ∀ j, 0 ≤ a j i) (upper : ∀ j, a j i ≤ cap) (cap_lt_one : cap < 1) :
+    squareBudget a i / 2 ≤ logExposure a i - total a i ∧
+      logExposure a i - total a i ≤ squareBudget a i / (2 * (1 - cap)) := by
+  unfold squareBudget logExposure total
+  rw [← Finset.sum_sub_distrib, Finset.sum_div, Finset.sum_div]
+  exact ⟨Finset.sum_le_sum fun j _ => (log_factor_defect_bounds (lower j) (upper j) cap_lt_one).1,
+    Finset.sum_le_sum fun j _ => (log_factor_defect_bounds (lower j) (upper j) cap_lt_one).2⟩
+
+theorem euler_inverse_gain_eq_exp_logExposure (a : J → I → ℝ) (i : I)
+    (strict : ∀ j, a j i < 1) :
+    1 / eulerMultiplier a i = Real.exp (logExposure a i) := by
+  rw [eulerMultiplier, logExposure, Real.exp_sum, one_div, ← Finset.prod_inv_distrib]
+  apply Finset.prod_congr rfl
+  intro j _
+  rw [Real.exp_neg, Real.exp_log (sub_pos.mpr (strict j))]
+
+/-- Actual Euler inverse gain with a uniform subunit cap. The bound applies
+at every quadratic budget, including budgets at least one. -/
+theorem euler_inverse_gain_log_bounds (a : J → I → ℝ) (i : I) {cap : ℝ}
+    (lower : ∀ j, 0 ≤ a j i) (upper : ∀ j, a j i ≤ cap) (cap_lt_one : cap < 1) :
+    Real.exp (total a i + squareBudget a i / 2) ≤ 1 / eulerMultiplier a i ∧
+      1 / eulerMultiplier a i ≤
+        Real.exp (total a i + squareBudget a i / (2 * (1 - cap))) := by
+  obtain ⟨lo, hi⟩ := logExposure_sub_total_bounds a i lower upper cap_lt_one
+  rw [euler_inverse_gain_eq_exp_logExposure a i (fun j => (upper j).trans_lt cap_lt_one)]
+  exact ⟨Real.exp_le_exp.mpr (by linarith), Real.exp_le_exp.mpr (by linarith)⟩
+
+/-- A common cap and total exposure bound suffice for a uniform Euler
+inverse gain across finite schedules and modes. -/
+theorem euler_inverse_gain_le_of_total_le (a : J → I → ℝ) (i : I) {cap budget : ℝ}
+    (cap_nonneg : 0 ≤ cap) (cap_lt_one : cap < 1)
+    (lower : ∀ j, 0 ≤ a j i) (upper : ∀ j, a j i ≤ cap) (total_le : total a i ≤ budget) :
+    1 / eulerMultiplier a i ≤ Real.exp ((1 + cap / (2 * (1 - cap))) * budget) := by
+  have quad : squareBudget a i ≤ cap * total a i := by
+    unfold squareBudget total
+    rw [Finset.mul_sum]
+    exact Finset.sum_le_sum fun j _ =>
+      by simpa only [pow_two] using mul_le_mul_of_nonneg_right (upper j) (lower j)
+  have divisor : 0 < 2 * (1 - cap) := by linarith
+  refine (euler_inverse_gain_log_bounds a i lower upper cap_lt_one).2.trans ?_
+  apply Real.exp_le_exp.mpr
+  calc
+    total a i + squareBudget a i / (2 * (1 - cap)) ≤
+        total a i + (cap * total a i) / (2 * (1 - cap)) :=
+      add_le_add le_rfl (div_le_div_of_nonneg_right quad divisor.le)
+    _ = (1 + cap / (2 * (1 - cap))) * total a i := by ring
+    _ ≤ (1 + cap / (2 * (1 - cap))) * budget :=
+      mul_le_mul_of_nonneg_left total_le (by positivity)
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 theorem euler_eq_log_heat (a : J → I → ℝ) (x : I → ℝ) (strict : ∀ j i, a j i < 1) :
     euler a x = spectralHeat (logExposure a) 1 x := by
   funext i
@@ -376,4 +494,202 @@ theorem subdivide_recover_error (a : J → I → ℝ) (m : ℕ) (hm : 0 < m)
 
 end Schedule
 
+<<<<<<< HEAD
+=======
+/-- Uniform inverse stability across growing finite schedules is equivalent
+to a uniform bound on the exact logarithmic exposures of their modes. -/
+theorem uniform_euler_inverse_gain_iff_logExposure
+    {Slot Mode : ℕ → Type*} [∀ n, Fintype (Slot n)]
+    (a : ∀ n, Slot n → Mode n → ℝ) (strict : ∀ n j i, a n j i < 1) :
+    (∃ gain > (0 : ℝ), ∀ n i, 1 / eulerMultiplier (a n) i ≤ gain) ↔
+      ∃ bound : ℝ, ∀ n i, logExposure (a n) i ≤ bound := by
+  constructor
+  · rintro ⟨gain, positive, bounded⟩
+    refine ⟨Real.log gain, fun n i => Real.exp_le_exp.mp ?_⟩
+    rw [Real.exp_log positive, ← euler_inverse_gain_eq_exp_logExposure (a n) i (fun j => strict n j i)]
+    exact bounded n i
+  · rintro ⟨bound, bounded⟩
+    refine ⟨Real.exp bound, Real.exp_pos _, fun n i => ?_⟩
+    rw [euler_inverse_gain_eq_exp_logExposure (a n) i (fun j => strict n j i)]
+    exact Real.exp_le_exp.mpr (bounded n i)
+
+
+/-- For a shared schedule of calibrated dwell times, the Euler response at
+twice a positive rate is strictly smaller than the square of its response
+at that rate, provided a slot is active and all doubled steps are subunit. -/
+theorem eulerMultiplier_double_rate_lt_square {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (double : rates k = 2 * rates i)
+    (subunit : ∀ j, 2 * (dwell j * rates i) < 1)
+    (active : ∃ j, dwell j * rates i ≠ 0) :
+    eulerMultiplier (fun j m => dwell j * rates m) k <
+      (eulerMultiplier (fun j m => dwell j * rates m) i) ^ 2 := by
+  simp only [eulerMultiplier, double, ← Finset.prod_pow]
+  apply Finset.prod_lt_prod₀
+  · intro j _
+    linarith [subunit j]
+  · intro j _
+    nlinarith [sq_nonneg (dwell j * rates i)]
+  · obtain ⟨j, hn⟩ := active
+    exact ⟨j, Finset.mem_univ _, by nlinarith [sq_pos_of_ne_zero hn]⟩
+
+/-- Two modes at rates λ and 2λ already obstruct an exact common scalar
+heat time for the original generator. The constant input 1 witnesses
+failure for every proposed time. -/
+theorem euler_double_rate_ne_spectralHeat {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (double : rates k = 2 * rates i)
+    (subunit : ∀ j, 2 * (dwell j * rates i) < 1)
+    (active : ∃ j, dwell j * rates i ≠ 0) (time : ℝ) :
+    euler (fun j m => dwell j * rates m) (fun _ => 1) ≠
+      spectralHeat rates time (fun _ => 1) := by
+  intro equal
+  have atRate (m : I) :
+      eulerMultiplier (fun j x => dwell j * rates x) m = Real.exp (-time * rates m) := by
+    have h := congrFun equal m
+    change eulerMultiplier (fun j x => dwell j * rates x) m * 1 =
+      Real.exp (-time * rates m) * 1 at h
+    simpa only [mul_one] using h
+  have strict := eulerMultiplier_double_rate_lt_square dwell rates i k double subunit active
+  rw [atRate, atRate, double, ← Real.exp_nat_mul] at strict
+  have exponent : -time * (2 * rates i) = (↑(2 : ℕ) : ℝ) * (-time * rates i) := by
+    push_cast
+    ring
+  rw [exponent] at strict
+  exact (lt_irrefl _) strict
+
+
+/-- On an active slot the logarithmic exposure per unit rate increases
+strictly with the rate. This uses the original Euler factor. -/
+private theorem logExposure_factor_rate_lt {c x y : ℝ}
+    (active : 0 < c) (small : 0 < x) (ordered : x < y) (subunit : c * y < 1) :
+    (-Real.log (1 - c * x)) / x < (-Real.log (1 - c * y)) / y := by
+  have large := small.trans ordered
+  have weight : 0 < x / y := div_pos small large
+  have remaining : 0 < 1 - x / y := sub_pos.mpr ((div_lt_one large).mpr ordered)
+  have endpoints : (1 : ℝ) ≠ 1 - c * y := by nlinarith [mul_pos active large]
+  have concave := strictConcaveOn_log_Ioi.2
+    (show (1 : ℝ) ∈ Set.Ioi 0 by exact Set.mem_Ioi.mpr (by norm_num))
+    (show 1 - c * y ∈ Set.Ioi 0 from sub_pos.mpr subunit)
+    endpoints remaining weight (by ring : 1 - x / y + x / y = 1)
+  change (1 - x / y) * Real.log 1 + (x / y) * Real.log (1 - c * y) <
+    Real.log ((1 - x / y) * 1 + (x / y) * (1 - c * y)) at concave
+  have mix : (1 - x / y) * 1 + (x / y) * (1 - c * y) = 1 - c * x := by
+    field_simp [large.ne']
+    ring
+  rw [mix, Real.log_one, mul_zero, zero_add] at concave
+  apply (div_lt_iff₀ small).mpr
+  calc
+    -Real.log (1 - c * x) < -((x / y) * Real.log (1 - c * y)) := neg_lt_neg concave
+    _ = (-Real.log (1 - c * y)) / y * x := by ring
+
+/-- Any two distinct positive rates have different effective heat times
+when a nonnegative shared Euler schedule has an active dwell. -/
+theorem logExposure_per_rate_lt {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (nonneg : ∀ j, 0 ≤ dwell j) (active : ∃ j, 0 < dwell j)
+    (small : 0 < rates i) (ordered : rates i < rates k)
+    (subunit : ∀ j, dwell j * rates k < 1) :
+    logExposure (fun j m => dwell j * rates m) i / rates i <
+      logExposure (fun j m => dwell j * rates m) k / rates k := by
+  simp only [logExposure, Finset.sum_div]
+  apply Finset.sum_lt_sum
+  · intro j _
+    rcases (nonneg j).eq_or_lt with zero | positive
+    · simp [← zero]
+    · exact (logExposure_factor_rate_lt positive small ordered (subunit j)).le
+  · obtain ⟨j, positive⟩ := active
+    exact ⟨j, Finset.mem_univ _, logExposure_factor_rate_lt positive small ordered (subunit j)⟩
+
+/-- A positive active shared schedule on two distinct positive modes
+cannot use one exact scalar heat time for the original rates. -/
+theorem no_common_clock_of_distinct_rates {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i k : I)
+    (nonneg : ∀ j, 0 ≤ dwell j) (active : ∃ j, 0 < dwell j)
+    (small : 0 < rates i) (ordered : rates i < rates k)
+    (strict : ∀ j m, dwell j * rates m < 1) (time : ℝ) :
+    ¬ ∀ x, euler (fun j m => dwell j * rates m) x = spectralHeat rates time x := by
+  intro agreement
+  have equal := (euler_fits_clock_iff (fun j m => dwell j * rates m) strict rates time).mp agreement
+  have different := logExposure_per_rate_lt dwell rates i k nonneg active small ordered (fun j => strict j k)
+  rw [equal i, equal k, mul_div_cancel_right₀ _ small.ne',
+    mul_div_cancel_right₀ _ (small.trans ordered).ne'] at different
+  exact (lt_irrefl _) different
+
+
+/-- A pairwise criterion for fitting a single clock to a finite collection
+of logarithmic exposures at positive rates, with absolute log tolerance. -/
+theorem exists_log_clock_iff_pairwise {I : Type*} [Fintype I] [Nonempty I]
+    (rates exposure : I → ℝ) (positive : ∀ i, 0 < rates i) (error : ℝ) :
+    (∃ t : ℝ, ∀ i, |exposure i - t * rates i| ≤ error) ↔
+      ∀ i j, rates i * exposure j - rates j * exposure i ≤ error * (rates i + rates j) := by
+  constructor
+  · rintro ⟨t, fit⟩ i j
+    have lower : exposure j - error ≤ t * rates j := by linarith [(abs_le.mp (fit j)).2]
+    have upper : t * rates i ≤ exposure i + error := by linarith [(abs_le.mp (fit i)).1]
+    have a := mul_le_mul_of_nonneg_right lower (positive i).le
+    have b := mul_le_mul_of_nonneg_right upper (positive j).le
+    nlinarith only [a, b]
+  · intro pair
+    let lower (i : I) := (exposure i - error) / rates i
+    obtain ⟨j, _, maximal⟩ := Finset.exists_max_image Finset.univ lower Finset.univ_nonempty
+    refine ⟨lower j, fun i => abs_le.mpr ⟨?_, ?_⟩⟩
+    · have below : lower j ≤ (exposure i + error) / rates i := by
+        dsimp only [lower]
+        apply (div_le_div_iff₀ (positive j) (positive i)).mpr
+        nlinarith only [pair i j]
+      have upper := (le_div_iff₀ (positive i)).mp below
+      linarith
+    · have lo := (div_le_iff₀ (positive i)).mp (show lower i ≤ lower j from
+        maximal i (Finset.mem_univ i))
+      linarith
+
+/-- The finite Euler clock tolerance is determined by the original
+modewise logarithmic exposures and the unchanged modal rates. -/
+theorem exists_euler_log_clock_iff_pairwise {J I : Type*} [Fintype J] [Fintype I] [Nonempty I]
+    (a : J → I → ℝ) (rates : I → ℝ) (positive : ∀ i, 0 < rates i) (error : ℝ) :
+    (∃ t : ℝ, ∀ i, |logExposure a i - t * rates i| ≤ error) ↔
+      ∀ i j, rates i * logExposure a j - rates j * logExposure a i ≤
+        error * (rates i + rates j) :=
+  exists_log_clock_iff_pairwise rates (logExposure a) positive error
+
+/-- A log tolerance is exactly an exponential multiplicative envelope
+for the original strictly positive Euler multiplier. -/
+theorem euler_log_error_iff_multiplier_envelope {J I : Type*} [Fintype J]
+    (a : J → I → ℝ) (strict : ∀ j i, a j i < 1)
+    (rates : I → ℝ) (i : I) (t error : ℝ) :
+    |logExposure a i - t * rates i| ≤ error ↔
+      Real.exp (-error) * Real.exp (-t * rates i) ≤ eulerMultiplier a i ∧
+      eulerMultiplier a i ≤ Real.exp error * Real.exp (-t * rates i) := by
+  have eq := congrFun (euler_eq_log_heat a (fun _ => 1) strict) i
+  change eulerMultiplier a i * 1 = Real.exp (-(1 : ℝ) * logExposure a i) * 1 at eq
+  simp only [mul_one, neg_mul, one_mul] at eq
+  rw [eq, ← Real.exp_add, ← Real.exp_add, Real.exp_le_exp, Real.exp_le_exp, abs_le]
+  constructor <;> intro h <;> constructor <;> linarith [h.1, h.2]
+
+/-- For two distinct positive original rates with active shared dwell,
+the necessary tolerance stays strictly positive. -/
+theorem euler_shared_log_clock_error_pos {J I : Type*} [Fintype J]
+    (dwell : J → ℝ) (rates : I → ℝ) (i j : I)
+    (nonneg : ∀ k, 0 ≤ dwell k) (active : ∃ k, 0 < dwell k)
+    (small : 0 < rates i) (ordered : rates i < rates j)
+    (subunit : ∀ k, dwell k * rates j < 1) (t error : ℝ)
+    (fit : ∀ m, |logExposure (fun k p => dwell k * rates p) m - t * rates m| ≤ error) :
+    0 < (rates i * logExposure (fun k p => dwell k * rates p) j -
+      rates j * logExposure (fun k p => dwell k * rates p) i) / (rates i + rates j) ∧
+      (rates i * logExposure (fun k p => dwell k * rates p) j -
+      rates j * logExposure (fun k p => dwell k * rates p) i) / (rates i + rates j) ≤ error := by
+  let a := fun k p => dwell k * rates p
+  have large := small.trans ordered
+  have gap := (div_lt_div_iff₀ small large).mp
+    (logExposure_per_rate_lt dwell rates i j nonneg active small ordered subunit)
+  have lower : logExposure a j - error ≤ t * rates j := by linarith [(abs_le.mp (fit j)).2]
+  have upper : t * rates i ≤ logExposure a i + error := by linarith [(abs_le.mp (fit i)).1]
+  change 0 < (rates i * logExposure a j - rates j * logExposure a i) / (rates i + rates j) ∧ _
+  refine ⟨div_pos (by linarith [gap]) (add_pos small large), ?_⟩
+  apply (div_le_iff₀ (add_pos small large)).mpr
+  nlinarith only [mul_le_mul_of_nonneg_right lower small.le,
+    mul_le_mul_of_nonneg_right upper large.le]
+
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.OperatorTheory.FiniteEulerHeatRecovery

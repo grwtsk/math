@@ -64,7 +64,7 @@ theorem finite_order_mass_le (f : ℂ → ℂ) (M : ℝ) (hM : 1 ≤ M)
       simpa only [mem_closedBall, dist_zero_right] using hS w hw
     have hwo : w ∈ closedBall (0 : ℂ) (4 : ℝ) :=
       (closedBall_subset_closedBall (by norm_num : (11 / 4 : ℝ) ≤ 4)) hwi
-    rw [hsmall.divisor_apply hwi, ctx.actual_order w hwo]
+    rw [MeromorphicOn.AnalyticOnNhd.divisor_apply hsmall hwi, ctx.actual_order w hwo]
     simp
   have hj := finite_divisor_sum_le_jensen f 0 (11 / 4) 4 M
     (by norm_num) (by norm_num) hM hf hf0 hbound S
@@ -188,7 +188,7 @@ theorem norm_logDeriv_le_of_disk_data (f : ℂ → ℂ) (M eta delta : ℝ)
   refine ⟨hnz, hb.trans ?_⟩
   calc
     _ ≤ 80 * H + (H / Real.log (16 / 11 : ℝ)) * (1 / delta + 1) :=
-      add_le_add_left (mul_le_mul_of_nonneg_right hmass (by positivity)) _
+      add_le_add le_rfl (mul_le_mul_of_nonneg_right hmass (by positivity))
     _ = _ := by dsimp [H]; ring
 
 /-- Affine source return to a radius-8 disk. The derivative factor 2 is
@@ -213,8 +213,11 @@ theorem norm_logDeriv_le_of_disk_data_centered (f : ℂ → ℂ) (c z : ℂ)
     linarith
   have hF : AnalyticOnNhd ℂ F (closedBall 0 (4 : ℝ)) := by
     intro w hw
-    exact (hf (c + 2 * w) (hmap w hw)).comp
-      (analyticAt_const.add (analyticAt_const.mul analyticAt_id))
+    have hm : AnalyticAt ℂ (fun x : ℂ => 2 * x) w :=
+      analyticAt_const.mul analyticAt_id
+    have h : AnalyticAt ℂ (fun x : ℂ => c + 2 * x) w := analyticAt_const.add hm
+    exact AnalyticAt.comp (f := fun x : ℂ => c + 2 * x) (g := f)
+      (hf (c + 2 * w) (hmap w hw)) h
   have hxN : ‖x‖ ≤ 9 / 4 := by
     dsimp [x]
     rw [norm_div]
@@ -240,7 +243,7 @@ theorem norm_logDeriv_le_of_disk_data_centered (f : ℂ → ℂ) (c z : ℂ)
     rw [mem_closedBall, dist_eq_norm]
     linarith
   have hlin : HasDerivAt (fun w : ℂ => c + 2 * w) 2 x := by
-    simpa only [mul_one] using ((hasDerivAt_id x).const_mul (2 : ℂ)).const_add c
+    simpa only [id_eq, mul_one] using ((hasDerivAt_id x).const_mul (2 : ℂ)).const_add c
   have hd : HasDerivAt F (deriv f z * 2) x := by
     have hdf : HasDerivAt f (deriv f z) (c + 2 * x) := by
       rw [hx]

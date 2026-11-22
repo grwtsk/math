@@ -250,7 +250,7 @@ theorem norm_logDeriv_poleCleared_on_separated_height
   have hell : 0 < Real.log (16 / 11 : ℝ) := Real.log_pos (by norm_num)
   have hK : 0 ≤ K := by dsimp [K]; positivity
   have hdelta : 0 < delta := horizontalSeparationRadius_pos chi n
-  have hM : 1 ≤ M := Real.one_le_exp_iff.mpr (by dsimp [M]; positivity)
+  have hM : 1 ≤ M := Real.one_le_exp_iff.mpr (by positivity)
   have hz : ‖z - c‖ ≤ 3 := by
     have heq : z - c = ((sigma - 2 : ℝ) : ℂ) := by dsimp [z, c]; push_cast; ring
     rw [heq, Complex.norm_real, Real.norm_eq_abs]
@@ -340,9 +340,11 @@ theorem LFunction_logDeriv_eq_poleCleared_sub
     filter_upwards [eventually_ne_nhds hs] with w hw
     exact poleClearedLFunction_of_ne chi hw
   have hlin : logDeriv (fun w : ℂ => w - 1) s = 1 / (s - 1) := by
-    rw [logDeriv_apply, ((hasDerivAt_id s).sub_const 1).deriv]
+    have h : HasDerivAt (fun w : ℂ => w - 1) 1 s := (hasDerivAt_id s).sub_const _
+    rw [logDeriv_apply, h.deriv]
   have hd := (logDeriv_congr_nhds he).self_of_nhds
-  rw [logDeriv_fun_mul s hs0 hL (differentiableAt_id.sub_const 1)
+  rw [logDeriv_fun_mul (f := fun w : ℂ => w - 1) (g := DirichletCharacter.LFunction chi)
+    s hs0 hL (differentiableAt_id.sub_const 1)
     (chi.differentiableAt_LFunction s (.inl hs)), hlin] at hd
   rw [hd]
   ring
@@ -352,7 +354,7 @@ The ORIGINAL L-function magnitude bound has no analytic supplier hypothesis. -/
 theorem exists_horizontal_LFunction_logDeriv_bound
     (chi : DirichletCharacter ℂ N) (hprim : chi.IsPrimitive) :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (sigma epsilon : ℝ), epsilon = -1 ∨ epsilon = 1 →
         DirichletCharacter.completedLFunction chi
           ((sigma : ℂ) + Complex.I * ((epsilon * T n : ℝ) : ℂ)) ≠ 0) ∧
@@ -374,7 +376,7 @@ theorem exists_horizontal_LFunction_logDeriv_bound
     have hi := Complex.abs_im_le_norm (z - 1)
     have ht : T n ≤ ‖z - 1‖ := by simpa [z, heT] using hi
     linarith
-  have hz1 : z ≠ 1 := by intro h; simp [h] at hdist
+  have hz1 : z ≠ 1 := by intro h; norm_num [h] at hdist
   have hrec : ‖(1 : ℂ) / (z - 1)‖ ≤ 1 := by
     rw [norm_div, norm_one]
     exact (div_le_one (lt_of_lt_of_le (by norm_num) hdist)).mpr hdist
@@ -397,7 +399,7 @@ theorem exists_horizontal_LFunction_logDeriv_bound
 remain in the explicit formula; they are simply off the selected boundaries. -/
 theorem exists_horizontal_riemannZeta_logDeriv_bound :
     ∃ T : ℕ → ℝ,
-      (∀ n, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
+      (∀ n : ℕ, (n : ℝ) + 2 < T n ∧ T n < (n : ℝ) + 3) ∧
       (∀ n (sigma epsilon : ℝ), epsilon = -1 ∨ epsilon = 1 →
         completedRiemannZeta
           ((sigma : ℂ) + Complex.I * ((epsilon * T n : ℝ) : ℂ)) ≠ 0) ∧

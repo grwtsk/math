@@ -63,3 +63,81 @@ accepted HS record denotes the literal decoded arithmetic slot, followed
 by a proof of certificate supply for the specified infinite ranges.
 
 Verification for this extension is recorded in [issue #1820](https://github.com/grwtsk/math/issues/1820).
+<<<<<<< HEAD
+=======
+
+## Delaying the certified window itself
+
+Fix a slot, a cutoff, and any nonnegative constant C. Let the window
+selected at index k be k²+d(k), for a natural delay with
+d(k) ≤ C k log²(k+1) beyond the cutoff. Acceptance of that slot at
+every selected window is equivalent to RH. At any sufficiently late
+ordinal window w, take k=floor(sqrt(w))+1. Its square is ahead of w
+by at most 2 floor(sqrt(w))+1. If w≥4, then k≤2 sqrt(w) and
+log(k+1)≤log(w). The delayed window therefore lies within the
+existing defect-scale comparison block with coefficient 2+2C.
+The original checker is used at the delayed window and actual slot.
+
+The control d(k)=k, with cutoff at least 2, yields the same
+equivalence while every chosen window lies strictly between two
+consecutive squares. To use the result for external certificates,
+each proposed slot verdict must be sound for the exact delayed
+argument, and the supplier must cover every selected window on
+the chosen tail.
+
+Pinned strict compilation, target kernel replay, the nonsquare
+control and both transitive axiom audits passed. Fresh full import
+replay and independent review were NOT_RUN.
+
+## Cofinal schedules with bounded upward jumps
+
+`cofinal_bounded_upward_slot_accepts_iff_cryptids_RH` applies to any
+cofinal tail of positive natural window indices. The bound is on the
+natural difference between successive scheduled windows, so backward
+moves are permitted. At the first crossing of any target window above
+the initial scheduled window, the preceding window is strictly below
+the target. Monotonicity of the original defect scale on positive
+arguments bounds the overshoot by the same constant times one plus the
+scale of the target. Taking the ceiling gives an admissible gap in the
+existing safe-slot criterion. One accepted slot at each scheduled index
+is then equivalent to RH. The slot can vary across the schedule.
+
+`cryptids_RH_of_cofinal_bounded_upward_certificates` applies this result
+to a Boolean checker with separate soundness and existence premises for
+certificates at the literal original Shunia stage arguments.
+`backward_step_schedule_control` checks the schedule
+(2,1,3,2,4,3,ldots). It is cofinal, drops below its starting window at
+the first step and has upward jumps at most two.
+
+The remaining HS premise is an infinite receipt supplier with the
+proved schedule properties and an acceptance witness at each chosen
+index. The consumer retains the original bad-block and native
+halting reduction.
+
+The five local dependencies were rebuilt from the pinned sources. Strict
+compilation, target kernel replay on the isolated sysroot, the backward
+step control, and the three theorem axiom audits passed on the pins
+above. The audit found only `propext`, `Classical.choice` and
+`Quot.sound`. Lean SHA-256
+`50b892b0c9a87842f26995c5094a1dc11cccfd0c5ea151e9e548a93233ddeb08`.
+Full fresh dependency replay, independent review and HS runtime
+correspondence are `NOT_RUN`.
+
+## Arbitrarily long rejection blocks
+
+For each prescribed finite length, `logSquareAllowance_eventually_ge`
+gives a cutoff after which the gap allowance is at least that length.
+Indeed, it is enough to exceed the maximum of the length and the
+exponential of its square root. Combining this eventual estimate
+with the existing cofinal block theorem gives
+`cryptids_halts_iff_arbitrarily_long_square_rejections`. Under native
+halting, all slots reject throughout some block of the requested
+length past any prescribed cutoff. Conversely the length-one block
+already supplies a native counterexample. Thus a sound checker that
+reports a safe slot somewhere in every fixed-length square-index
+interval on a tail satisfies the certificate premise of
+`cryptids_RH_of_fixed_square_block_certificates`. The existence of
+these reports and their binding to the current arithmetic stage
+remain explicit hypotheses. Verification is recorded in
+[issue #1820](https://github.com/grwtsk/math/issues/1820).
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

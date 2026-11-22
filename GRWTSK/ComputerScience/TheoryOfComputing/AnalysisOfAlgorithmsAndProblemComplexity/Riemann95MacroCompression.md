@@ -97,3 +97,67 @@ on `[1,1,1]` stopped, with terminal observation `(61, 1, 1, 1)` matching
 the single native arrival. A second native instruction was absent.
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
+<<<<<<< HEAD
+=======
+
+## Exact native instruction count
+
+For any successful run of n macro blocks, countedRun returns its exact
+checkpoint and the number g of successful guarded continuations. The
+native tape and control at that checkpoint are reached after exactly
+n+g native instructions, with 0≤g≤n. Each ordinary block consumes one
+instruction, and a guarded continuation consumes two. The block law
+and native finite-run composition prove the cumulative count by
+induction. A stopped checkpoint consumes its one incoming instruction
+to reach state 61 with its terminal tape. Thus if that run of n blocks
+ends at a stopped checkpoint, n+g+1 native instructions succeed and
+the run of length n+g+2 returns none.
+
+The controls use the blank ordinary block, the guard continuing on
+[1,0,1], and the guard stopping on [1,1,1]. The count gives an exact
+native clock for a checkpoint consumer. A 94-state ordinary binary
+target still needs a concrete realization of the extra read and the
+associated tape transport.
+
+Strict pinned compilation, target kernel replay, the ordinary,
+continuing and stopping controls, and all three transitive axiom
+audits passed. Full fresh import replay and independent review
+remain NOT_RUN.
+
+## Constraints on a standard-machine guard
+
+`PreservesGuardOrdinary` fixes the canonical 94 codes and preserves every
+reached source cell except the guard entry at native `(90,1)) and the
+omitted row 61. With the guard entry defined,
+`guard_target_terminal_cell` proves that any missing target instruction
+must occur at the code of 41 on bit 1. The existing reachability theorem
+covers every other retained ordinary cell, and each of those original
+instructions is defined. If `(41,1)` is itself reached on the native blank
+run, `no_guard_target_terminal_of_reached41` excludes every target halt
+under these premises, regardless of block length.
+
+For an immediate stop after the literal incoming write and right move,
+the borrowed control is therefore the code of 41.
+`guard_continuing_prefix_forced` takes the checkpoint tape beginning
+with 1 and otherwise blank. The fixed zero-read rows force the native
+control codes 90, 41, 54, 42, 22, 28 and 0 at budgets 0 through 6.
+None is the required continuation code 56. The macro itself reaches
+56 on the same test, and stops with a 1 in the next cell. This extends
+the direct two-move collision considered in the parallel lane work
+to a longer forced prefix, using the same pinned table and reached cells.
+
+A longer standard-machine realization would need to recover the required
+checkpoint beyond this prefix, with exact tape and terminal behavior, or
+use different checkpoint codes or an altered tape representation. The
+reachability of native `(41,1)` remains a premise in the stronger
+terminal exclusion.
+
+Strict target compilation after rebuilding the reached-cell supplier,
+target kernel replay, both macro controls, the six-step exclusion
+control, and all three transitive axiom audits passed on the pins
+above. The audit found only `propext`, `Classical.choice` and
+`Quot.sound`. Checked Lean SHA-256
+`13b12bb448b85fc0c5eb3a30de0e2dce2e1caa427e5c69b6943a302f8614ce2e`.
+Full fresh dependency replay, independent review and HS runtime parity
+are `NOT_RUN`.
+>>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
