@@ -83,3 +83,34 @@ independent proof of a new \`Gm\` bound or RH.
 
 Mathematical consumer: [grwtsk/math #1850](https://github.com/grwtsk/math/issues/1850),
 related source [#1849](https://github.com/grwtsk/math/issues/1849).
+
+
+## 2026-11-22: exact source normalization and analytic-constant supplier
+
+Four new adjacent Lean **source candidates**, with per-file mathematical provenance, extend the original five-theorem adapter:
+
+- [Normalization.lean](Normalization.lean) / [proof](Normalization.md): exact native Level.Gm(x) for x≥1 as signed finite prime-power arithmetic minus xlogx plus x times the **original** analytic constant; proof that Level.Nt contains no trivial characters; and the identity **Level.Gm(1)=A_Level**.
+- [LogDerivativeCertificate.lean](LogDerivativeCertificate.lean) / [proof](LogDerivativeCertificate.md): Mathlib's unconditional genuine nonprincipal LFunction(1) nonvanishing, finite complex ratio-disk algebra, Mathlib's gamma interval and original Level-weighted analytic constant center/radius.
+- [EventualIntegerReturn.lean](EventualIntegerReturn.lean) / [proof](EventualIntegerReturn.md): the actual EAtH, CoreAtH, Frame, HostAx and TT witnesses imply the specified eventual integer upper margin when supplied at ALL sufficiently large n; original intermediate Landau.zero_free_of_Chebyshev_growth consumes the separate all-real bound.
+- [ArithmeticCertificate.lean](ArithmeticCertificate.lean) / [proof](ArithmeticCertificate.md): fully signed actual Level.Gm arithmetic error bound including **n-dependent** analytic constant radii; every-int eventual inequality is a separate explicit certificate requirement, not a supplied fact.
+
+Pinned **original** Mathlib also proves the unconditional nonprincipal theorem DirichletCharacter.LFunction_apply_one_ne_zero in Mathlib/NumberTheory/LSeries/Nonvanishing.lean, blob 610bd56365d49c5ffa9ebeb29e0a383c768248e2. The periodic zero-mean Abel summation bounds (for N divisible by q≥2, N≥3) are
+\[
+|L(1,\chi)-S_N|\le q/N,\qquad
+|L'(1,\chi)-T_N|\le q\log N/N.
+\]
+They are proved mathematically in LogDerivativeCertificate.md, but **not formalized in Lean** in these four new modules. Together with source-traced finite rational log and gamma intervals they give actual per-character L'/L error certificates. The executed [standard-library certificate checker](../../../../scripts/verify_native_gm_log_derivative_certificates.py) and [cyclic-character subgroup checker](../../../../scripts/verify_native_gm_cyclic_level_certificates.py) have exact-rational output, but do not count as Lean verification.
+
+The source's EAtH.bdL bounds only certain H.Bounded characters; it must not be misrepresented as a bound for every retained Level.Nt character. The separate full analytic constant certificate avoids that wrong implication.
+
+### Required isolated source staging / verification (still NOT_RUN)
+
+Use a **disposable** complete checkout of the immutable original Alpöge mirror and its exact Lean toolchain and Mathlib. Do not change grwtsk/math root. From grwtsk/math root, let UP denote the original mirror's lean directory and execute:
+
+1. Install the original Mathlib dependencies at the upstream pin (Lean v4.33.1; Mathlib 0df444a360eaa60ab8c11dca51a86af692955474). Do not import source from the original final Main theorem.
+2. Copy Bridge.lean to UP/src/GRWTSK/NumberTheory/AlpogeNativeGmTransport.lean; Normalization.lean to UP/src/GRWTSK/NumberTheory/AlpogeNativeGmNormalization.lean; LogDerivativeCertificate.lean to UP/src/GRWTSK/NumberTheory/AlpogeNativeGmLogDerivativeCertificate.lean; EventualIntegerReturn.lean to UP/src/GRWTSK/NumberTheory/AlpogeNativeGmEventualInteger.lean; ArithmeticCertificate.lean to UP/src/GRWTSK/NumberTheory/AlpogeNativeGmArithmeticCertificate.lean.
+3. Build and run trust=0 against each staged file in dependency order. Axiom audit each **source-verified** declaration only after it elaborates. Do not promote any theorem when a transitive dependency contains a proof hole or a version mismatch.
+
+The exact Git blobs and declaration names are recorded in [verification.toml](verification.toml) next to these sources. A manifest or remote file readback is **not** a checked Lean proof.
+
+**Remaining proof tasks:** the original typed Level.cyc realizations for the quadratic modulo-4 and quartic modulo-5 character examples, periodic Abel tail and differentiated Dirichlet series for genuine L(1), and the native integer-to-real curvature interpolation. Most importantly, neither eventual true EAtH/CoreAtH witnesses nor eventually universally successful signed arithmetic certificates have been supplied. Hence no new RH result is claimed.
