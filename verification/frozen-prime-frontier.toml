@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 86
+expected_theorems = 94
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -196,4 +196,20 @@ theorems = [
   "addressLift_neighbor",
   "frozen_survives_16_to_64",
   "guidepost_commutes_16_to_64",
+]
+
+[[module]]
+name = "GRWTSK.AlgebraicTopology.BinaryCubicalFaceIncidence"
+path = "GRWTSK/AlgebraicTopology/BinaryCubicalFaceIncidence.lean"
+namespace = "GRWTSK.AlgebraicTopology.BinaryCubicalFaceIncidence"
+git_blob = "dc5b9d60f8b9ae8f84f17fd9108cf7c7f0921adf"
+theorems = [
+  "restrictPort_at",
+  "restrictPort_other",
+  "freePorts_restrictPort",
+  "dimension_restrictPort",
+  "restrictPort_commute",
+  "restrictPort_zero_ne_one",
+  "topFace_dimension_four",
+  "face_card_four",
 ]

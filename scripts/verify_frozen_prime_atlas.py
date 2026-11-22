@@ -203,6 +203,8 @@ def main() -> int:
                         help="TOML file relative to the repository root")
     parser.add_argument("--preflight-only", action="store_true",
                         help="Validate pinned sources and declarations without running Lean")
+    parser.add_argument("--all-diagnostics", action="store_true",
+                        help="Try every pinned module build, collect failures, skip axiom audit until all pass")
     parser.add_argument("--timeout", type=float, default=0,
                         help="Per-command limit in seconds (0 = unlimited)")
     parser.add_argument("--report", type=Path,
@@ -237,8 +239,28 @@ def main() -> int:
             raise VerificationFailure("lake executable not on PATH; install/use the pinned Lean toolchain")
         timeout = args.timeout or None
         run_command(["lake", "env", "lean", "--version"], root=root, timeout_seconds=timeout)
+        failed_builds = []
+        record["module_builds"] = []
         for target in modules:
-            run_command(["lake", "build", target["module"]], root=root, timeout_seconds=timeout)
+            name = target["module"]
+            try:
+                run_command(["lake", "build", name], root=root, timeout_seconds=timeout)
+                record["module_builds"].append({"module": name, "status": "PASS"})
+            except VerificationFailure as exc:
+                record["build"] = "FAIL"
+                record["module_builds"].append({
+                    "module": name, "status": "FAIL", "diagnostic": str(exc)
+                })
+                failed_builds.append(name)
+                print(f"[BUILD FAIL] {name}: {exc}", file=sys.stderr, flush=True)
+                if not args.all_diagnostics:
+                    raise
+        if failed_builds:
+            raise VerificationFailure(
+                f"{len(failed_builds)} of {len(modules)} modules failed: "
+                + ", ".join(failed_builds)
+                + "; axiom audit NOT_RUN because some modules do not build"
+            )
         record["build"] = "PASS"
         audit, names = audit_text(manifest)
         with tempfile.TemporaryDirectory(prefix="grwtsk-atlas-verify-") as tmp:
