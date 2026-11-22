@@ -162,20 +162,32 @@ def check(k: int) -> dict:
                 lambda j: -1 if j%2 else 1,
                 lambda j: 0 if j%3==0 else (-1 if j%3==1 else 1)]
     trials=0
-    for pattern in patterns:
-        measured=[Fraction(m)+eps*pattern(j) for j,m in enumerate(moments_int)]
-        d=principal_dets(measured,k)
-        for r in range(1,k+2):
-            assert abs(d[r]-orig[r]) <= factorial(r)*r*eps*(M+1)**(r-1)
-            assert (1-delta)*orig[r] <= d[r] <= (1+delta)*orig[r]
-            assert d[r]>0
-        for j,p in enumerate(primes):
-            ratio=d[j+2]*d[j]/d[j+1]**2
-            assert (Fraction(2*p-1,2))**2 < ratio < Fraction(2*p+1,2)**2
-            # interval ratio bounds from the relative determinant hypotheses
-            assert ((1-delta)/(1+delta)*p)**2 <= ratio
-            assert ratio <= ((1+delta)/(1-delta)*p)**2
-        trials += 1
+    for certificate_kind, moment_eps in (("universal",eps),
+        ("source_explicit",eps_explicit),("conditioned",eps_adaptive)):
+        for pattern in patterns:
+            measured=[Fraction(m)+moment_eps*pattern(j) for j,m in enumerate(moments_int)]
+            d=principal_dets(measured,k)
+            for r in range(1,k+2):
+                if certificate_kind=="universal":
+                    assert abs(d[r]-orig[r]) <= factorial(r)*r*moment_eps*(M+1)**(r-1)
+                else:
+                    inv=inverses[r-1]
+                    E=[[moment_eps*pattern(i+j) for j in range(r)] for i in range(r)]
+                    A=[[sum((inv[i][l]*E[l][j] for l in range(r)),Fraction(0))
+                        for j in range(r)] for i in range(r)]
+                    alpha = r * inverse_norms[r-1] * moment_eps
+                    assert row_sum_norm(A) <= alpha
+                    assert 0 <= alpha <= delta/Fraction(2**r-1)
+                    assert abs(d[r]/orig[r]-1) <= (1+alpha)**r-1
+                    assert (1+alpha)**r-1 <= delta
+                assert (1-delta)*orig[r] <= d[r] <= (1+delta)*orig[r]
+                assert d[r]>0
+            for j,p in enumerate(primes):
+                ratio=d[j+2]*d[j]/d[j+1]**2
+                assert (Fraction(2*p-1,2))**2 < ratio < Fraction(2*p+1,2)**2
+                assert ((1-delta)/(1+delta)*p)**2 <= ratio
+                assert ratio <= ((1+delta)/(1-delta)*p)**2
+            trials += 1
     # Hostile control: changing m_2=4 to 9 changes recovered first bond 2 to 3
     hostile=[Fraction(1),Fraction(0),Fraction(9)]
     dh=[Fraction(1),hostile[0],hostile[0]*hostile[2]-hostile[1]**2]
@@ -186,6 +198,13 @@ def check(k: int) -> dict:
         "relative_det_tolerance":str(delta),
         "certified_moment_tolerance":str(eps),
         "smallest_tolerance_decimal":f"{float(eps):.5e}",
+        "source_explicit_moment_tolerance":str(eps_explicit),
+        "source_explicit_tolerance_decimal":f"{float(eps_explicit):.5e}",
+        "source_explicit_gain_over_universal":f"{float(eps_explicit/eps):.5e}",
+        "conditioned_moment_tolerance":str(eps_adaptive),
+        "conditioned_tolerance_decimal":f"{float(eps_adaptive):.5e}",
+        "certificate_gain_over_universal":f"{float(eps_adaptive/eps):.5e}",
+        "max_exact_hankel_inverse_infinity_norm":str(max(inverse_norms)),
         "moment_magnitude_cap":str(M),
         "hostile_m2_corruption_detected":True,
     }
@@ -201,10 +220,10 @@ def main():
     result={
         "status":"EXACT_MOMENT_TO_PRIME_SOURCE_ROUNDING_PASS",
         "checks":checks,
-        "source_theorem":"Leibniz determinant perturbation + positive prime-Krylov/Hankel formula",
+        "source_theorem":"Leibniz, explicit prime-orthogonal-polynomial inverse-norm, and inverse-conditioned Hadamard principal-minor bounds",
         "not_verified":["Lean elaboration/kernel","analytic xi correspondence","Alpoge's estimates", "infinite signed Weil positivity"],
     }
     if args.report: args.report.write_text(json.dumps(result,indent=2)+'\n')
-    print(json.dumps({"status":result["status"], "bond_lengths":[x["K"] for x in checks],"worst_denominator_digits":max(len(x['certified_moment_tolerance'].split('/')[1]) if '/' in x['certified_moment_tolerance'] else 1 for x in checks), "pattern_trials":sum(x['exact_checked_patterns'] for x in checks),"hostile_detected":True},indent=2))
+    print(json.dumps({"status":result["status"], "bond_lengths":[x["K"] for x in checks],"worst_denominator_digits":max(len(x['certified_moment_tolerance'].split('/')[1]) if '/' in x['certified_moment_tolerance'] else 1 for x in checks), "pattern_trials":sum(x['exact_checked_patterns'] for x in checks),"hostile_detected":True,"last_explicit_tolerance":checks[-1]["source_explicit_tolerance_decimal"],"last_adaptive_tolerance":checks[-1]["conditioned_tolerance_decimal"],"last_adaptive_vs_universal_factor":checks[-1]["certificate_gain_over_universal"]},indent=2))
 
 if __name__=='__main__':main()
