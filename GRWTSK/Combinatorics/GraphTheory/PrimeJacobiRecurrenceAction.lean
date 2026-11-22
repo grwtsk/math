@@ -142,7 +142,8 @@ theorem primeRecurrenceVector_eq_basis (N : ℕ) :
         basisVertex (⟨1, h⟩ : Fin N) i
       rw [rootVector_eq_basisVertex hzero]
       rw [congrFun hbase i]
-      exact div_mul_cancel₀ _ (ne_of_gt (bond_pos 0))
+      field_simp [ne_of_gt (bond_pos 0)]
+      ring
   | more n ih ih1 =>
       intro h
       have hn : n < N := by omega
