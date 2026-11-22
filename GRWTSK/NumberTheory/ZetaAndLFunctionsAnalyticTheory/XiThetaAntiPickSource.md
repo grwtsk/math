@@ -140,6 +140,24 @@ B_F(w)=-\Im(w)\sum_{j=1}^N\lambda_j^2
 \]
 so the sign is nonpositive throughout the upper half-plane. The exact script checks 20 rational complex inputs, including repeated eigenvalues, against both sides of (7). These are genuine proof controls, not evidence that the actual Xi satisfies the all-plane sign.
 
+### A direct sign-change inside the ACTUAL theta double integral
+
+The signedness obstruction can be established **inside the exact Riemann theta source**, not merely by substituting another positive measure. For fixed positive u,v and w=iy with y→0+, expand the genuinely entire integrand in equation (2):
+
+\[
+\begin{aligned}
+P_w(v)&:=\cosh(v\sqrt w)=1+\frac{v^2}{2}w+O(w^2),\\
+Q_w(u)&:=\frac{u\sinh(u\sqrt w)}{2\sqrt w}
+ =\frac{u^2}{2}+\frac{u^4}{12}w+O(w^2),\\
+\operatorname{Im}\bigl(Q_{iy}(u)\overline{P_{iy}(v)}\bigr)
+ &=\frac{y u^2}{12}(u^2-3v^2)+O(y^2).
+\end{aligned}
+\]
+
+For u=1 and v>0 sufficiently close to 0, the leading signed coefficient is **positive**. For u=v=1, it is \(-1/6\), **negative**. Thus, for sufficiently small y>0, the actual integrand changes sign on open subsets of \((0,\infty)^2\) where the genuine Riemann \(\Phi(u)\Phi(v)\) is strictly positive. This rules out a proof by *pointwise* sign of the double-integrand even for the true theta kernel. A valid proof of the global inequality must exploit a genuinely **nonlocal cancellation/correlation property of the specific theta measure**.
+
+The two low-order identities are elementary algebra independently verified in the adjacent finite Lean source as candidate declarations; the infinite remainder/continuity proof is mathematically standard and not replayed in Lean. The small-y sign split is not a counterexample to the desired **integrated** inequality for actual Xi; it is a counterexample only to a proposed pointwise-sign proof technique.
+
 ## 5. Exact remaining source obligation and verification status
 
 **OPEN (independent RH-equivalent supplier):**
