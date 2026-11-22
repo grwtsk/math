@@ -146,6 +146,11 @@ def check(k: int) -> dict:
         # row l1 norms T_n <= (r+1)/2. Hence ||H^-1||inf <= r*((r+1)/2)^2.
         assert all(sum(abs(x) for x in row) <= Fraction(r+1,2) for row in R)
         assert inverse_norms[r-1] <= Fraction(r*(r+1)**2,4)
+        # Strict integral prime gaps imply the stronger all-rank T_n <= 1:
+        # T_(n+2) <= (T_(n+1) + p_n*T_n)/p_(n+1),
+        # p_(n+1) >= p_n + 1.
+        assert all(sum(abs(x) for x in row) <= 1 for row in R)
+        assert inverse_norms[r-1] <= r
     # Hadamard principal-minor expansion: det(I+A)-1 bound (1+alpha)^r-1,
     # alpha <= ||H^(-1)||_infty * r * eps; alpha <= delta/(2^r-1).
     eps_adaptive = min([Fraction(1)]+[
@@ -155,7 +160,9 @@ def check(k: int) -> dict:
     # coefficients give ||H_r^(-1)||inf <= r*(r+1)^2/4.
     eps_explicit = min(Fraction(1), Fraction(4)*delta /
         ((2**(k+1)-1)*(k+1)**2*(k+2)**2))
-    assert eps_explicit <= eps_adaptive
+    eps_linear = min(Fraction(1),
+        delta / ((2**(k+1)-1)*(k+1)**2))
+    assert eps_explicit <= eps_linear <= eps_adaptive
     assert 0 < delta < Fraction(1,4*P+1) and 0<eps<=1 and 0<eps_adaptive<=1
     assert eps_adaptive >= eps  # observed here; not assumed in general theorem
     patterns = [lambda j: 1,
@@ -163,7 +170,9 @@ def check(k: int) -> dict:
                 lambda j: 0 if j%3==0 else (-1 if j%3==1 else 1)]
     trials=0
     for certificate_kind, moment_eps in (("universal",eps),
-        ("source_explicit",eps_explicit),("conditioned",eps_adaptive)):
+        ("source_explicit",eps_explicit),
+        ("source_prime_gap_linear",eps_linear),
+        ("conditioned",eps_adaptive)):
         for pattern in patterns:
             measured=[Fraction(m)+moment_eps*pattern(j) for j,m in enumerate(moments_int)]
             d=principal_dets(measured,k)
@@ -201,6 +210,9 @@ def check(k: int) -> dict:
         "source_explicit_moment_tolerance":str(eps_explicit),
         "source_explicit_tolerance_decimal":f"{float(eps_explicit):.5e}",
         "source_explicit_gain_over_universal":f"{float(eps_explicit/eps):.5e}",
+        "source_prime_gap_linear_tolerance":str(eps_linear),
+        "source_prime_gap_linear_decimal":f"{float(eps_linear):.5e}",
+        "source_prime_gap_gain_over_universal":f"{float(eps_linear/eps):.5e}",
         "conditioned_moment_tolerance":str(eps_adaptive),
         "conditioned_tolerance_decimal":f"{float(eps_adaptive):.5e}",
         "certificate_gain_over_universal":f"{float(eps_adaptive/eps):.5e}",
@@ -224,6 +236,6 @@ def main():
         "not_verified":["Lean elaboration/kernel","analytic xi correspondence","Alpoge's estimates", "infinite signed Weil positivity"],
     }
     if args.report: args.report.write_text(json.dumps(result,indent=2)+'\n')
-    print(json.dumps({"status":result["status"], "bond_lengths":[x["K"] for x in checks],"worst_denominator_digits":max(len(x['certified_moment_tolerance'].split('/')[1]) if '/' in x['certified_moment_tolerance'] else 1 for x in checks), "pattern_trials":sum(x['exact_checked_patterns'] for x in checks),"hostile_detected":True,"last_explicit_tolerance":checks[-1]["source_explicit_tolerance_decimal"],"last_adaptive_tolerance":checks[-1]["conditioned_tolerance_decimal"],"last_adaptive_vs_universal_factor":checks[-1]["certificate_gain_over_universal"]},indent=2))
+    print(json.dumps({"status":result["status"], "bond_lengths":[x["K"] for x in checks],"worst_denominator_digits":max(len(x['certified_moment_tolerance'].split('/')[1]) if '/' in x['certified_moment_tolerance'] else 1 for x in checks), "pattern_trials":sum(x['exact_checked_patterns'] for x in checks),"hostile_detected":True,"last_explicit_tolerance":checks[-1]["source_explicit_tolerance_decimal"],"last_prime_gap_tolerance":checks[-1]["source_prime_gap_linear_decimal"],"last_adaptive_tolerance":checks[-1]["conditioned_tolerance_decimal"],"last_adaptive_vs_universal_factor":checks[-1]["certificate_gain_over_universal"]},indent=2))
 
 if __name__=='__main__':main()
