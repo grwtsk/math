@@ -112,8 +112,10 @@ theorem coeffEnvelope_le_one (n : ℕ) :
       norm_num [coeffEnvelope]
   | one =>
       change (1 : ℝ) / bond 0 ≤ 1
-      exact (div_le_iff₀ (bond_pos 0)).mpr
-        (by have h := bond_at_least_index 0; norm_num at h ⊢; linarith)
+      apply (div_le_iff₀ (bond_pos 0)).mpr
+      have h : (2 : ℝ) ≤ bond 0 := by
+        simpa only [zero_add, Nat.cast_ofNat] using bond_at_least_index 0
+      linarith
   | more n ih ih1 =>
       change coeffEnvelope (n + 1) / bond (n + 1) +
         (bond n / bond (n + 1)) * coeffEnvelope n ≤ 1
