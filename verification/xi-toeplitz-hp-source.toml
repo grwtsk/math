@@ -20,7 +20,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 36
+expected_theorems = 38
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -34,6 +34,10 @@ prime_jacobi_to_xi_taylor_identity = "OPEN"
 xi_original_antipick_entire_upper_halfplane = "OPEN_INDEPENDENT_RH_STRENGTH"
 full_rh_equivalent_antipick_hadamard_formalization = "NOT_FORMALIZED"
 exact_hostile_theta_kernel_lower = "GREATER_THAN_1_OVER_2000"
+pick_kernel_two_point_positivity = "OPEN_INDEPENDENT_RH_STRENGTH"
+pick_two_point_rational_identities = 400
+pick_finite_gram_quadratic_checks = 5
+pick_positive_measure_diagonal_less_than_minus_one_over_200 = true
 external_RH_used = false
 
 [[module]]
@@ -129,7 +133,7 @@ theorems = [
 [[module]]
 name = "GRWTSK.NumberTheory.XiThetaAntiPickSource"
 path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiThetaAntiPickSource.lean"
-git_blob = "d451d66b1cf5eb78e383824d06b05023fe6de2c5"
+git_blob = "cbd9fdd9d99535c47100fd4134c7e2517d0435bf"
 theorems = [
   "one_factor_numerator_identity",
   "one_factor_antiPick_of_upper",
@@ -140,4 +144,6 @@ theorems = [
   "theta_integrand_first_order_signed_identity",
   "theta_integrand_first_order_positive_at_boundary",
   "theta_integrand_first_order_negative_at_diagonal",
+  "upper_halfplane_conjugate_denominator_ne_zero",
+  "one_factor_two_point_numerator",
 ]
