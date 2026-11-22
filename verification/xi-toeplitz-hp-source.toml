@@ -1,0 +1,57 @@
+# Source-pinned exact Xi Pólya-frequency / positive Hilbert–Pólya gate.
+# This manifest RECORDS source candidates; it is not a Lean receipt.
+# Every mathematical statement in the Edrei/PF∞ Fredholm bridge is
+# separately proved in the adjacent .md by classical analysis,
+# but NOT YET formalized and replayed in this Lean environment.
+#
+# Source basis: original completedRiemannZeta₀ and functional equation,
+# Mathlib NumberTheory/LSeries/RiemannZeta. NO imported Alpöge RH.
+# Original Edrei theorem: K. Rietsch, ICM 2026, Theorem 1.1,
+# https://doi.org/10.1137/25M1806727 .
+# Missing independent supplier: ALL Toeplitz minors of TRUE xi
+# Taylor coefficients nonnegative. This is equivalent to RH.
+# It is not established by finite Gram / finite checks.
+format_version = 1
+suite = "Actual Xi coefficient PF-infinity → positive trace-class Hilbert-Polya determinant"
+issues = ["https://github.com/grwtsk/math/issues/1849", "https://github.com/grwtsk/math/issues/124", "https://github.com/grwtsk/math/issues/1828"]
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 8
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+lean_elaboration = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+xi_center_nonzero_in_lean = "OPEN"
+xi_even_taylor_entire_in_lean = "OPEN"
+xi_entire_order_half_in_lean = "OPEN"
+universal_toeplitz_minors = "OPEN_INDEPENDENT_RH_STRENGTH"
+edrei_to_trace_class_fredholm_in_lean = "NOT_FORMALIZED"
+prime_jacobi_to_xi_taylor_identity = "OPEN"
+external_RH_used = false
+
+[[module]]
+name = "GRWTSK.NumberTheory.XiToeplitzHilbertPolyaCriterion"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiToeplitzHilbertPolyaCriterion.lean"
+git_blob = "03394f37f42278419faca5e25fdfb395818b23c2"
+theorems = [
+  "sourceXi_reflection",
+  "sourceXiOnLine_even",
+  "sourceToeplitz_diagonal",
+  "sourceToeplitz_below",
+  "finitePositiveFactorProduct_at_zero",
+  "finiteSpectralDeterminant_at_zero",
+  "finiteSpectralDeterminant_even",
+  "finiteSpectralDeterminant_eq_factorProduct",
+]
+
+[evidence]
+finite_rational_pf_minors = 8884
+finite_rational_pf_all_nonnegative = true
+hostile_fourier_toeplitz_minor = "-7/23040"
+numeric_actual_xi_minors_exploratory = 8884
+numeric_actual_xi_is_proof = false
+code_checker = "scripts/verify_xi_toeplitz_hilbert_polya.py"
