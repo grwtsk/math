@@ -211,4 +211,48 @@ theorem source_hankel_inverse_row_le_of_actual_row_recurrence
   rw [← sourceCoefficientRowNorm_at_fin N l]
   exact hAll l.val
 
+/-- The prime-gap scalar envelope contracts to at most one. Exact
+inverse Krylov coefficients inherit the same bound *once* the genuine
+three-term Jacobi polynomial action has been established. -/
+theorem true_coefficient_row_bound_one_of_envelope_domination
+    (N : ℕ)
+    (hCoeff : ∀ i : Fin N,
+      ∑ j : Fin N, |coeffMatrix N i j| ≤ coeffEnvelope i.val)
+    (i : Fin N) :
+    (∑ j : Fin N, |coeffMatrix N i j|) ≤ 1 :=
+  (hCoeff i).trans (coeffEnvelope_le_one i.val)
+
+/-- Uniform LINEAR conditioning bound for the actual prime Hankel
+matrix, conditional only on the still-open polynomial/Krylov
+recurrence identification; no RH or zeta input. -/
+theorem source_hankel_inverse_row_linear_of_envelope_domination
+    (N : ℕ)
+    (hCoeff : ∀ i : Fin N,
+      ∑ j : Fin N, |coeffMatrix N i j| ≤ coeffEnvelope i.val)
+    (i : Fin N) :
+    (∑ j : Fin N, |(hankelMatrix N)⁻¹ i j|) ≤ (N : ℝ) := by
+  have h := hankel_inverse_row_sum_le N 1 (by norm_num)
+      (fun j => true_coefficient_row_bound_one_of_envelope_domination
+        N hCoeff j) i
+  simpa only [one_pow, mul_one] using h
+
+/-- The genuine prime gap collapses the old O(N^3) upper bound to
+N once the actual coefficient row recurrence is supplied. -/
+theorem source_hankel_inverse_row_linear_of_actual_row_recurrence
+    (N : ℕ)
+    (hzero : sourceCoefficientRowNorm N 0 ≤ coeffEnvelope 0)
+    (hone : sourceCoefficientRowNorm N 1 ≤ coeffEnvelope 1)
+    (hstep : ∀ n : ℕ, n + 2 < N →
+      sourceCoefficientRowNorm N (n + 2) ≤
+        sourceCoefficientRowNorm N (n + 1) / bond (n + 1) +
+          (bond n / bond (n + 1)) * sourceCoefficientRowNorm N n)
+    (i : Fin N) :
+    (∑ j : Fin N, |(hankelMatrix N)⁻¹ i j|) ≤ (N : ℝ) := by
+  have hAll := sourceCoefficientRowNorm_le_envelope_of_recurrence
+    N hzero hone hstep
+  apply source_hankel_inverse_row_linear_of_envelope_domination N ?_ i
+  intro l
+  rw [← sourceCoefficientRowNorm_at_fin N l]
+  exact hAll l.val
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiPolynomialKrylov
