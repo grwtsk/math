@@ -20,7 +20,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 11
+expected_theorems = 22
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -59,3 +59,27 @@ hostile_fourier_toeplitz_minor = "-7/23040"
 numeric_actual_xi_minors_exploratory = 8884
 numeric_actual_xi_is_proof = false
 code_checker = "scripts/verify_xi_toeplitz_hilbert_polya.py"
+
+# Direct actual-Xi even Taylor Schur source and low-rank moment obstruction.
+# Riemann's theta/cosh integral, Littlewood-Richardson reduction, gamma/pole/
+# prime-power resolvent and Stieltjes/Edrei passage are MATHEMATICAL
+# source derivations in adjacent XiThetaSchurSource.md, NOT LEAN-CHECKED.
+# Every nonnegative full-Xi Schur specialization is still RH-equivalent
+# and UNPROVED independently of the external RH result.
+[[module]]
+name = "GRWTSK.NumberTheory.XiThetaSchurSource"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiThetaSchurSource.lean"
+git_blob = "5756ab3ea21e099e39be28b4cd4ae82bd407a4d2"
+theorems = [
+  "one_column_three_schur_formula",
+  "one_column_three_schur_formula_of_normalization",
+  "theta_second_schur_moment_numerator",
+  "theta_third_schur_moment_numerator",
+  "theta_second_log_trace_moment_numerator",
+  "theta_third_log_trace_moment_numerator",
+  "two_factor_third_trace",
+  "positive_theta_moments_negative_third_trace",
+  "two_factor_second_trace",
+  "positive_theta_moments_negative_second_trace",
+  "positive_theta_moments_negative_schur_three",
+]
