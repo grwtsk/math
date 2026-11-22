@@ -6,25 +6,23 @@ SOURCE_PROOF_CANDIDATE for the isolated native Alpoge Lean v4.33.1,
 Mathlib 0df444a360eaa60ab8c11dca51a86af692955474.
 Elaboration, fresh kernel replay and transitive axiom audit: NOT_RUN.
 -/
-import GRWTSK.NumberTheory.AlpogeNativeGmNormalization
+import GRWTSK.NumberTheory.AlpogeNativeGmCenteredSlope
 import Mathlib.Tactic
 
 /-!
 # Genuine Level.Gm centered weighted Mertens: finite Abel inversion
 
-The original coefficients are the TRUE von Mangoldt values times
-the original signed character-phase of a genuine Formalism.HC.Level.
-The finite integer identities below require no Riemann Hypothesis,
-zero ordinates or provider final theorem.
+This module REUSES the original native weightedMertens and
+centeredMertens defined in the pre-existing CenteredSlope source.
+It does not introduce an independently maintained duplicate Mertens
+sequence, a synthetic prime coefficient, or a new analytic constant.
 
-The analytic identity
-  E_L(x) = R_L(x)/x - integral_x^infinity R_L(t)/t^2 dt
-requires classical PNT in arithmetic progressions and the
-nonprincipal L'/L centering limit. Those external analytic inputs
-are NOT supplied by these finite arithmetic source candidates.
-
-In particular, an eventual power saving for the actual R_L is
-not assumed, proved or inferred from finite source samples.
+For original signed von Mangoldt phase a_L(n)=Lambda(n)*phase_L(n):
+  Psi_L(N)=N*B_L(N)-sum_(k=0)^(N-1) B_L(k).
+This finite Abel inverse holds for EVERY N (including zero) without
+RH. The continuous tail identity requires the separate classical PNT
+in arithmetic progressions and genuine L'/L centering, NOT this file.
+An eventual power saving for Psi_L is still an open analytic supplier.
 -/
 
 set_option autoImplicit false
@@ -35,61 +33,55 @@ namespace GRWTSK.NumberTheory.AlpogeNativeCenteredMertensAbel
 
 open Formalism Formalism.HC
 open GRWTSK.NumberTheory.AlpogeNativeGmNormalization
+open GRWTSK.NumberTheory.AlpogeNativeGmCenteredSlope
 
-/-- The literal original native Level prime-power coefficient, retaining
-actual primitive character phases, all original Level.wt and ramification. -/
-def nativeCoefficient (Λ : Level) (n : ℕ) : ℝ :=
-  (ArithmeticFunction.vonMangoldt n : ℝ) * signedPhase Λ n
-
-/-- Genuine weighted Chebyshev prefix through N, reindexed from 1. -/
+/-- Actual native weighted Chebyshev prefix through N; original
+von Mangoldt, actual Level.Nt, Level.wt and primitive phases. -/
 def nativeChebyshevPrefix (Λ : Level) (N : ℕ) : ℝ :=
-  ∑ j ∈ Finset.range N, nativeCoefficient Λ (j + 1)
+  ∑ n ∈ Finset.Icc 1 N,
+    (ArithmeticFunction.vonMangoldt n : ℝ) * signedPhase Λ n
 
-/-- Genuine weighted Mertens prefix through N, reindexed from 1.
-Every denominator j+1 is strictly positive. -/
-def nativeMertensPrefix (Λ : Level) (N : ℕ) : ℝ :=
-  ∑ j ∈ Finset.range N,
-    nativeCoefficient Λ (j + 1) / ((j + 1 : ℕ) : ℝ)
-
-/-- The EXACT native centered Mertens source at an integer cutoff.
-No finite approximation is smuggled in for the genuine A_Level. -/
-def centeredNativeMertens (Λ : Level) (N : ℕ) : ℝ :=
-  nativeMertensPrefix Λ N - Real.log (N : ℝ) +
-    analyticConstant Λ - 1
-
-/-- The original weighted Chebyshev prefix has a literal one-atom
-increment at N+1. -/
+/-- The genuine original Chebyshev source gains exactly the
+next weighted prime-power coefficient, including at ramified n. -/
 theorem nativeChebyshevPrefix_succ (Λ : Level) (N : ℕ) :
     nativeChebyshevPrefix Λ (N + 1) =
-      nativeChebyshevPrefix Λ N + nativeCoefficient Λ (N + 1) := by
-  simp [nativeChebyshevPrefix, Finset.sum_range_succ]
+      nativeChebyshevPrefix Λ N +
+        (ArithmeticFunction.vonMangoldt (N + 1) : ℝ) *
+          signedPhase Λ (N + 1) := by
+  classical
+  unfold nativeChebyshevPrefix
+  rw [Finset.sum_Icc_succ_top (by omega : 1 ≤ N + 1)]
 
-/-- The original weighted Mertens prefix has a one-atom increment
-with EXACT coefficient normalization 1/(N+1). -/
-theorem nativeMertensPrefix_succ (Λ : Level) (N : ℕ) :
-    nativeMertensPrefix Λ (N + 1) =
-      nativeMertensPrefix Λ N +
-        nativeCoefficient Λ (N + 1) / ((N + 1 : ℕ) : ℝ) := by
-  simp [nativeMertensPrefix, Finset.sum_range_succ]
+/-- This is the **existing** upstream source weightedMertens, whose
+coefficient is Lambda(n)*phase(n)/n, not the physical Weil
+Lambda(n)/sqrt(n) weight. -/
+theorem original_weightedMertens_succ (Λ : Level) (N : ℕ) :
+    weightedMertens Λ (N + 1) =
+      weightedMertens Λ N +
+        (ArithmeticFunction.vonMangoldt (N + 1) : ℝ) *
+          signedPhase Λ (N + 1) / ((N + 1 : ℕ) : ℝ) := by
+  classical
+  unfold weightedMertens
+  rw [Finset.sum_Icc_succ_top (by omega : 1 ≤ N + 1)]
 
-/-- Exact finite partial-summation INVERSE for the original character
-Level, with no limiting argument and no RH input:
+/-- Exact finite partial-summation inverse for the ORIGINAL native
+centered weighted Mertens source:
 
   Psi_L(N) = N*B_L(N) - sum_(k=0)^(N-1) B_L(k).
 
-This holds for N=0 as well because both source prefixes vanish.
-It is the source-level algebraic test for any proposed Chebyshev
-or Mertens power bound; it does NOT establish that bound. -/
-theorem nativeChebyshev_from_nativeMertens (Λ : Level) (N : ℕ) :
+No partial asymptotic or zero-free premise is used, and the original
+Mertens sequence is not forked. -/
+theorem nativeChebyshev_from_original_weightedMertens
+    (Λ : Level) (N : ℕ) :
     nativeChebyshevPrefix Λ N =
-      (N : ℝ) * nativeMertensPrefix Λ N -
-        ∑ k ∈ Finset.range N, nativeMertensPrefix Λ k := by
+      (N : ℝ) * weightedMertens Λ N -
+        ∑ k ∈ Finset.range N, weightedMertens Λ k := by
   induction N with
   | zero =>
-      simp [nativeChebyshevPrefix, nativeMertensPrefix]
+      simp [nativeChebyshevPrefix, weightedMertens]
   | succ n ih =>
       rw [nativeChebyshevPrefix_succ,
-        nativeMertensPrefix_succ, Finset.sum_range_succ]
+        original_weightedMertens_succ, Finset.sum_range_succ]
       push_cast
       rw [ih]
       have hn : ((n : ℝ) + 1) ≠ 0 := by positivity
