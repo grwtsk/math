@@ -148,4 +148,28 @@ theorem hostile_positive_cosine_source_wrong_local_sign :
     (2 * (1 / 96 : ℚ) - (1 / 8 : ℚ) ^ 2) = 1 / 192 := by
   norm_num
 
+
+/-- The first-order imaginary coefficient of the ACTUAL double theta
+integrand Q_w(u)*conj(P_w(v)) at w=iy, y→0+, has this exact
+signed form. The analytic remainder is recorded in the adjacent
+mathematical source, not proved by this finite algebra. -/
+theorem theta_integrand_first_order_signed_identity (u v : ℝ) :
+    u ^ 4 / 12 - u ^ 2 * v ^ 2 / 4 =
+      u ^ 2 / 12 * (u ^ 2 - 3 * v ^ 2) := by
+  ring
+
+/-- A strictly positive first-order imaginary contribution
+near u=1, v=0 (and hence v>0 small by continuity). -/
+theorem theta_integrand_first_order_positive_at_boundary :
+    (1 : ℝ) ^ 4 / 12 -
+      (1 : ℝ) ^ 2 * (0 : ℝ) ^ 2 / 4 = 1 / 12 := by
+  norm_num
+
+/-- A strictly negative first-order imaginary contribution
+at u=v=1. The true theta density is positive at both sectors. -/
+theorem theta_integrand_first_order_negative_at_diagonal :
+    (1 : ℝ) ^ 4 / 12 -
+      (1 : ℝ) ^ 2 * (1 : ℝ) ^ 2 / 4 = -(1 / 6) := by
+  norm_num
+
 end GRWTSK.NumberTheory.XiThetaAntiPickSource
