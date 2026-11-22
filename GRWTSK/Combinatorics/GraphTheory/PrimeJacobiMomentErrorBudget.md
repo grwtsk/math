@@ -5,7 +5,7 @@
 **Mathematical consumers:** independent prime-only Jacobi issue [#1849](https://github.com/grwtsk/math/issues/1849), full signed Weil readout [#1819](https://github.com/grwtsk/math/issues/1819), and the RH/GRH supplier blueprint [#1828](https://github.com/grwtsk/math/issues/1828).  
 **Prior math source:** [PrimeJacobiKrylovFrontier.lean](PrimeJacobiKrylovFrontier.lean) (blob 05aafe27b87dae744c49533a8906b6ab6b08cecb); [PrimeJacobiArithmeticReturn.md](PrimeJacobiArithmeticReturn.md) (blob 40519bf8456273b965652ee15928f5ea737cf2bb); [PrimeJacobiSymbolPerturbation.md](PrimeJacobiSymbolPerturbation.md) (blob 10f11fe93ff9c6a9c1d8201e697019ddbeb50080).  
 **New Lean algebra candidates:** [PrimeJacobiMomentErrorBudget.lean](PrimeJacobiMomentErrorBudget.lean) and [AlpogeWindowSourceTransport.lean](../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AlpogeWindowSourceTransport.lean). The new exact-integer/fraction checker is [verify_prime_jacobi_moment_to_source_stability.py](../../../scripts/verify_prime_jacobi_moment_to_source_stability.py).  
-**Evidence status:** full primary mathematical proofs below; 21 independent *finite* checker trials PASS (seven lengths, three deterministic perturbations); generic determinant-error theorem itself and its complete Jacobi-source composition are NOT_YET_FORMALIZED_IN_LEAN. The five short interval/window Lean candidates are **NOT_RUN**; no local Lean binary or Mathlib checkout was available. Neither Alpöge's final RiemannHypothesis theorem nor his everyCharacter theorem is used as a premise or import.
+**Evidence status:** full primary mathematical proofs below; 96 independent *finite* checker trial groups PASS (eight lengths, four certified tolerances, three deterministic perturbations); generic determinant-error theorem itself and its complete Jacobi-source composition are NOT_YET_FORMALIZED_IN_LEAN. The five short interval/window Lean candidates are **NOT_RUN**; no local Lean binary or Mathlib checkout was available. Neither Alpöge's final RiemannHypothesis theorem nor his everyCharacter theorem is used as a premise or import.
 
 ## 1. What to reconstruct, and the exact arithmetic assumptions
 
@@ -129,7 +129,7 @@ The extra Lean interval lemmas in PrimeJacobiMomentErrorBudget.lean formalize th
 
 The accompanying checker uses **only standard-library integers and exact rational arithmetic**. It independently constructs prime-Jacobi moments through order \(2K\), computes all Hankel determinants with fraction-free Bareiss elimination, verifies (1), constructs the exact rational tolerance (4) with \(\delta=1/(8P+4)\), perturbs every moment with three deterministic patterns, and tests (3), (5), and the *squared* nearest-integer inequalities without floating-point square roots.
 
-Length \(K=1,\ldots,8\): **24/24 trial groups PASS for the original universal bound** (and 72/72 including the improved certificates in Section 3A). The most conservative permitted moment radius ranges from \(1/340\) at \(K=1\) to about \(1.3\cdot10^{-121}\) at \(K=7\). This bound is formally robust but **extremely ill-conditioned**, hence not a practical precision target. A future stronger theorem should use structured Hankel/Gram conditioning rather than a uniform \(M\) and \(k!\) for every permutation.
+Length \(K=1,\ldots,8\): **24/24 trial groups PASS for the original universal bound** (and 96/96 including the three improved certificates in Sections 3A–3B). The most conservative permitted moment radius ranges from \(1/340\) at \(K=1\) to about \(1.3\cdot10^{-121}\) at \(K=7\). This bound is formally robust but **extremely ill-conditioned**, hence not a practical precision target. A future stronger theorem should use structured Hankel/Gram conditioning rather than a uniform \(M\) and \(k!\) for every permutation.
 
 **Hostile control:** replacing the first true second moment \(m_2=4\) by 9 makes the determinant-based first bond 3 instead of 2. Without a certified radius, positive semidefiniteness and the inverse formula alone do not protect prime identity.
 
@@ -322,11 +322,63 @@ This is **better conditioning certification**, not a claim that
 the underlying inverse moment problem has become well conditioned
 at infinite resolution.
 
-The final checker tests lengths \(K=1,\ldots,8\), the three radius
+The final checker tests lengths \(K=1,\ldots,8\), the four certified radius
 types, and three deterministic signed moment perturbations for each
-length: **72 exact-rational trial groups PASS**. These finite checks
+length: **96 exact-rational trial groups PASS**. These finite checks
 and the complete mathematical derivation are distinct from Lean
 kernel verification, still NOT_RUN.
+
+## 3B. Theorem B+++: strict prime-gap contraction makes the inverse bound linear
+
+The previous \(\ell^1\)-coefficient estimate \((k+1)/2\)
+is not optimal. Every true consecutive integer prime obeys
+\(p_{n+1}\ge p_n+1\). The scalar Jacobi recurrence
+\(U_{n+2}=(U_{n+1}+p_nU_n)/p_{n+1}\), together with
+\(U_0=1\), \(U_1=1/2\), gives by two-step induction
+
+\[
+\boxed{U_n\le1\quad(n\ge0)}.
+\]
+
+The independent recurrence-polynomial source establishes mathematically
+\(P_n(J)e_0=e_n\), so its coefficient matrix equals the
+inverse Krylov transpose and its absolute row sums satisfy
+\(T_n\le U_n\le1\). The authentic Hankel inverse therefore obeys
+
+\[
+\boxed{\|H_k^{-1}\|_\infty\le k}.
+\tag{14}
+\]
+
+Substituting (14) into the already proved exact principal-minor
+Hadamard certificate improves (10) to the explicit all-prefix
+sufficient tolerance
+
+\[
+\boxed{
+0<\delta<\frac1{4P+1},\qquad
+\varepsilon\le
+\frac{\delta}{(2^{K+1}-1)(K+1)^2}.
+}
+\tag{15}
+\]
+
+This is a completely RH-independent *mathematical* implication,
+not an asserted checked Lean theorem. Its candidate Lean proof
+composition and exact unfilled source obligations are recorded
+in [PrimeJacobiPolynomialCoefficientContraction.md](PrimeJacobiPolynomialCoefficientContraction.md)
+and [PrimeJacobiPolynomialActionCompatibility.md](PrimeJacobiPolynomialActionCompatibility.md).
+
+The modified exact-rational checker now runs **four**
+certified perturbation scales (original factorial,
+old polynomial source, new prime-gap linear, exact conditioned)
+and three signed patterns for each of K=1,..,8:
+**96/96 PASS**. At K=8 the linear source-only radius is
+\(1.54871\cdot10^{-7}\), compared with the preceding
+\(6.19483\cdot10^{-9}\); the exact conditioned radius is
+\(6.05266\cdot10^{-7}\). All relevant inequalities were
+checked with \`fractions.Fraction\` and exact integer
+Hankel determinants, not floating-point eigenvalues.
 
 ## 4. Theorem C: error-free finite Alpöge arithmetic return after rounding
 
@@ -425,4 +477,4 @@ The new source-independent Lean candidate [AlpogeWindowSourceTransport.lean](../
 
 The proposed source-specific combination of moment conditioning, exact character source return and Alpöge's quantified windows has **not** been surveyed exhaustively against the classical literature. The determinant inequality is standard multilinear algebra; the inverse Jacobi mechanism is classical (e.g., G. Teschl, *Jacobi Operators and Completely Integrable Nonlinear Lattices*, AMS 2000). These are maintained **new project theorems**, not asserted to be globally original.
 
-**All formal gates:** root Lean/Mathlib compilation NOT_RUN; imported candidate replay NOT_RUN; fresh kernel/axiom audit NOT_RUN; independent expert analysis NOT_RUN. The exact finite checker establishes only the explicitly reported K=1..7 cases. The final RiemannHypothesis and all-character theorem from Alpöge are not imported, assumed, inferred, or used.
+**All formal gates:** root Lean/Mathlib compilation NOT_RUN; imported candidate replay NOT_RUN; fresh kernel/axiom audit NOT_RUN; independent expert analysis NOT_RUN. The exact finite checker establishes only the explicitly reported K=1..8 cases; it does not establish the all-index Lean theorem. The final RiemannHypothesis and all-character theorem from Alpöge are not imported, assumed, inferred, or used.
