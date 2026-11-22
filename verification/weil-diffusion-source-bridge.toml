@@ -1,0 +1,39 @@
+# Isolated source-candidate verification of exact signed Weil diffusion transport.
+# This manifest does not establish compilation or acceptance of imports.
+# All four declarations, their imported sources and the original RH target
+# require a real pinned Lean/Lake verification and independent kernel replay.
+#
+# In a complete grwtsk/math checkout:
+#   python3 scripts/verify_weil_diffusion_bridge.py \
+#     --report /tmp/weil-diffusion-finite-controls.json
+#   python3 scripts/verify_frozen_prime_atlas.py \
+#     --config verification/weil-diffusion-source-bridge.toml \
+#     --all-diagnostics \
+#     --report /tmp/weil-diffusion-source-bridge-lean.json
+#
+# Mathematical consumer: grwtsk/math#1849; signed Weil source: #1819.
+# Imported arithmetic pairing source: WeilWindowFilterLedger.lean
+# source Git blob 502eaa8234b532d2f599c7bfe27ad873f1a91e6b.
+format_version = 1
+suite = "Source-preserving signed Weil quadratic diffusion and negative-witness transport"
+issue = "https://github.com/grwtsk/math/issues/1849"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 4
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilDiffusionSourceBridge"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilDiffusionSourceBridge.lean"
+namespace = "GRWTSK.NumberTheory.WeilQuadraticForm.WeilDiffusionSourceBridge"
+git_blob = "6bee0c067ea12b5f51823db68eaf705d18e20147"
+theorems = [
+  "nonnegative_iff_invertible_diffusion",
+  "negative_witness_survives_diffusion",
+  "positive_witness_survives_diffusion",
+  "not_diffused_nonnegative_of_negative",
+]
