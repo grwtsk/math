@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 94
+expected_theorems = 115
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -212,4 +212,33 @@ theorems = [
   "restrictPort_zero_ne_one",
   "topFace_dimension_four",
   "face_card_four",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ReplicatedPrimeAdjacency16"
+path = "GRWTSK/Combinatorics/GraphTheory/ReplicatedPrimeAdjacency16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ReplicatedPrimeAdjacency16"
+git_blob = "840d38408e275d0a63d6d812a48e507f93b712c9"
+theorems = [
+  "secondarySyndrome_ne_zero",
+  "secondarySyndrome_add_self",
+  "layerNeighbor_syndrome",
+  "layerNeighbor_adjacent",
+  "layerNeighbor_unique",
+  "existsUnique_layerNeighbor",
+  "primary_secondary_disjoint",
+  "two_distinct_face_neighbors",
+  "marked_face_neighbor_classification",
+  "two_face_neighbors",
+  "original_layout_not_two",
+  "replicaPosition_syndrome",
+  "replicaPosition_injective",
+  "parity_impulse",
+  "parity_add",
+  "parity_neighbor",
+  "parity_two_flips",
+  "no_two_flips_as_one",
+  "primaryBase_ne_secondaryBase",
+  "distinct_labels_under_any_injection",
+  "distinct_actual_prime_labels",
 ]
