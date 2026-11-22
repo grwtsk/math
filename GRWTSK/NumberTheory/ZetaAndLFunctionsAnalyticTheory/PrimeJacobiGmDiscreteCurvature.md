@@ -148,6 +148,33 @@ Every analytic constant, including \(A_\Lambda\), must be enclosed soundly. The 
 
 A successful collection of such certificates for arbitrarily late admissible windows, with fixed \(\theta\) and original \`Level.Gm\`, would provide the hypothesis for Alpöge's original \`Level.FormBAt\` and thus a zero-free result. We have **not proved the existence of those all-scale certificates**, nor the original \`EAtH\`/\`CoreAtH\` analytic suppliers. Equation (8) is a new *finite verification reduction*, not a new RH proof.
 
+## 4A. RH-independent arithmetic integer criterion for genuine Alpöge HasWindows
+
+The curvature majorant yields a useful **all-index conditional theorem** that retains the exact original source \`Level.Gm\` and its analytic constants.
+
+**Integer-to-continuum criterion.** Fix an actual \`Level Λ\`, \(0<\theta<1\) and an integer \(N\ge1\). Assume the genuine, correctly normalized signed source satisfies
+\[
+\boxed{\forall n\in\mathbb N,\ n\ge N:\quad
+\Lambda.Gm(n)\le n^\theta-\frac1{4n}.}\tag{8b}
+\]
+Then
+\[
+\boxed{\forall x\ge N,\quad\Lambda.Gm(x)\le x^\theta.}\tag{8c}
+\]
+
+**Proof:** Given \(x\ge N\), let \(k=\lfloor x\rfloor\ge N\). Its endpoints \(k,k+1\) are **consecutive integers**, hence no active von Mangoldt/character prime-power knot lies in \((k,k+1)\). Applying (8b) at these endpoints gives
+\(F_\theta(k)\le-1/(4k)\le-1/(8k)\) and
+\(F_\theta(k+1)\le-1/(4(k+1))\le-1/(8k)\), because \(k\ge1\) implies \(2k\ge k+1\). The curvature majorant (8) gives
+\(F_\theta(x)\le-1/(8k)+1/(8k)=0\). \(\square\)
+
+For any original Alpöge exponent \(\lambda>1\), (8c) supplies the exact
+\(\mathrm{HasWindows}(\{x:\Lambda.Gm(x)\le x^\theta\},\lambda)\)
+predicate: choose \(Y\ge\max(y,N,1)\) for each requested lower start y. If the *separately proved intermediate* \(\Lambda.\mathrm{FormBAt}(\lambda)\) hypothesis is available, its original definition then yields \(\Lambda.\mathrm{ZeroFreeAbove}(\theta)\). The original \`EAtH\`/\`CoreAtH\` alternative supplier may instead prove the required integer inequalities.
+
+This is a precise **discrete arithmetic proof obligation**, not a proof that (8b) holds, not an unconditional zero-free region and not a use of Alpöge's final RH result. A finite verification through any bound M does **not** establish the required universal n≥N inequality. The safety margin 1/(4n) is sufficient but not claimed optimal.
+
+A certified observed table can be substituted into (8b) only when every *actual* \(L'/L(1,\chi)\) correction and other analytic constant has a sound enclosure and the observed source error is paid **before** comparing with the original one-sided threshold. This identifies the exact remaining analytic supplier.
+
 ## 5. Finite discrete heat with complete boundary return
 
 Let \(q(k)=G_m(k)+k\log k\), and restrict the integer samples to \(k=1,\dots,N\). Let \(L_N\) be the *Dirichlet* second-difference matrix with diagonal -2 and adjacent offdiagonals 1. Its interior curvature is the arithmetic source \(b_k\), but its boundary rows omit the exterior samples.
