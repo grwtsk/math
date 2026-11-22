@@ -116,7 +116,11 @@ theorem observed_native_gm_error
       ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, err n *
         |x / (n : ℝ) - 1| *
         |1 + ∑ ψ ∈ Λ.Nt, Λ.wt ψ * (ψ.χ n).re| := by
-  change |sourcePrimeDelta Λ lambda x| ≤ _
+  have hRewrite : observedNativeGm Λ lambda x - Λ.Gm x =
+      sourcePrimeDelta Λ lambda x := by
+    unfold observedNativeGm
+    ring
+  rw [hRewrite]
   unfold sourcePrimeDelta
   calc
     |∑ n ∈ Finset.Icc 1 ⌊x⌋₊,
