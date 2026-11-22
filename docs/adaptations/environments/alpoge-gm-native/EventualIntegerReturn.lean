@@ -82,19 +82,19 @@ theorem eventual_integer_gm_of_native_host_witnesses
     ∃ y2 : ℝ, ∀ n : ℕ, y2 ≤ (n : ℝ) →
       Λ.Gm (n : ℝ) ≤ (n : ℝ) ^ theta -
         1 / (4 * (n : ℝ)) := by
-  obtain ⟨x1, hx1⟩ :=
+  obtain ⟨x1, hIntegerCore⟩ :=
     core_gm_at_integer_with_source_margin Λ eD eL K cHH eK C eps heps
   obtain ⟨y0, hy0⟩ := hHosts
   obtain ⟨y1, hy1⟩ := hMargin
   refine ⟨max x1 (max y0 y1), ?_⟩
   intro n hn
-  have hx1 : x1 ≤ (n : ℝ) := (le_max_left _ _).trans hn
+  have hX1 : x1 ≤ (n : ℝ) := (le_max_left _ _).trans hn
   have hy0' : y0 ≤ (n : ℝ) :=
     (le_max_left _ _).trans ((le_max_right _ _).trans hn)
   have hy1' : y1 ≤ (n : ℝ) :=
     (le_max_right _ _).trans ((le_max_right _ _).trans hn)
   obtain ⟨φ, H, TT, hE, hCore⟩ := hy0 n hy0'
-  exact hx1 n hx1 φ H TT theta hE hCore (hy1 n hy1')
+  exact hIntegerCore n hX1 φ H TT theta hE hCore (hy1 n hy1')
 
 /-- The original intermediate Landau theorem already returns its
 TRUE zero-free Level type from an all-real eventual Gm estimate.
