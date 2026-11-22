@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 168
+expected_theorems = 180
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -342,4 +342,24 @@ theorems = [
   "verifiedMemo_all_prime",
   "empty_memo_returns_none",
   "factorCursor_finished_product",
+]
+
+[[module]]
+name = "GRWTSK.AlgebraicTopology.MirroredPrimeHeatAndSignedReturn"
+path = "GRWTSK/AlgebraicTopology/MirroredPrimeHeatAndSignedReturn.lean"
+namespace = "GRWTSK.AlgebraicTopology.MirroredPrimeHeatAndSignedReturn"
+git_blob = "8b9639e051be4487abe165e6ce880a3e279fd5fd"
+theorems = [
+  "MirroredFlow.backward_zero",
+  "MirroredFlow.backward_add",
+  "MirroredFlow.intertwining",
+  "MirroredFlow.forward_from_backward",
+  "MirroredFlow.Automorphism.commute_backward",
+  "signedKnotReflect_preserves_id",
+  "signedKnotReflect_involutive",
+  "SignedSourceApproximation.lower",
+  "SignedSourceApproximation.upper",
+  "SignedSourceApproximation.positive_of_margin",
+  "SignedSourceApproximation.negative_of_margin",
+  "SignedSourceApproximation.exact_of_zero_error",
 ]
