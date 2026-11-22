@@ -1,0 +1,34 @@
+# Finite Euler-factor perturbation: exact division-free algebraic core.
+# This source is a SOURCE_PROOF_CANDIDATE. A manifest never establishes
+# Lean compilation, kernel replay, axiom audit or an independent RH proof.
+#
+# From the pinned grwtsk/math checkout with Lean/Lake:
+# python3 scripts/verify_frozen_prime_atlas.py \
+#   --config verification/finite-euler-symbol-cancellation.toml \
+#   --all-diagnostics --report /tmp/finite-euler-symbol-cancellation.json
+#
+# Separate exact Gaussian-rational controls:
+# python3 scripts/verify_finite_euler_symbol_cancellation.py
+format_version = 1
+suite = "Finite Euler-symbol cancellation and logarithmic-derivative normalization"
+issue = "https://github.com/grwtsk/math/issues/1849"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 4
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.FiniteEulerSymbolCancellation"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteEulerSymbolCancellation.lean"
+namespace = "GRWTSK.NumberTheory.FiniteEulerSymbolCancellation"
+git_blob = "8d743c455ba5fb75911ada2ec114f8222c39dd74"
+theorems = [
+  "geometricPrefix_zero",
+  "geometricPrefix_succ",
+  "geometricPrefix_telescope",
+  "finiteSmoothedSymbol_cancel",
+]
