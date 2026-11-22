@@ -16,7 +16,7 @@ Intermediate \`CoreGm.lean\` Git blob:
 Native \`Window.lean\` Git blob:
 \`099d96fec932b03a505ea79a81c45bcc3fbf0ea3\`.
 
-The two Lean declarations in [Bridge.lean](Bridge.lean) consume
+The five Lean declarations in [Bridge.lean](Bridge.lean) consume
 **exact native types**:
 
 \`\`\`text
@@ -31,6 +31,17 @@ bound to a single observed arithmetic value under an explicitly certified
 source error and an exponent margin. The second transports original
 closed \`HasWindows\` through an eventually valid source error/margin
 inequality, using the original source theorem \`HasWindows.mono\`.
+
+The additional three proof candidates work directly on the **native source arithmetic**.
+`sourcePrimeDelta` is the original finite signed variation of von Mangoldt
+coefficients with the full `Level.Nt`, `Level.wt`, and character phases.
+`observedNativeGm` retains the unchanged original analytic `L'/L(1,chi)`
+corrections by construction. Theorems `observed_native_gm_eq_of_exact`
+and `observed_native_gm_error` give exact return and certified finite
+error, and `observed_native_gm_upper_with_certified_arithmetic`
+consumes the **genuinely typed** upstream `EAtH` and `CoreAtH`
+conditions. A cross-version equality to the 4.34.1 local `sourceGm`
+remains a separate, uncompiled source normalization obligation.
 
 **Nothing here proves \`EAtH\` or \`CoreAtH\`.** Their actual \`Frame\`,
 \`HostAx\`, conductor and auxiliary estimates remain intact. The
