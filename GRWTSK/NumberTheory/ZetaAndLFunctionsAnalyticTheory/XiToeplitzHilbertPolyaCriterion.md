@@ -148,6 +148,23 @@ whereas the candidate \(\operatorname{Tr}K=a_1\approx0.023104993115419>0\). Ther
 
 The previous source obstruction also holds: every odd-dimensional real prime-Jacobi characteristic polynomial has a forced zero at z=0, unlike Xi(0)>0. Full unmodified odd-section determinant limits cannot be Xi. Even sections or a genuinely new operator still need an independently proved determinant identity.
 
+## 3A. Theta-kernel and existing 2026 Xi positivity literature
+
+The original completed xi admits Riemann's positive Fourier-cosine kernel representation. In the standard normalized cosh-coordinate presentation, after dividing by \(\Xi(0)\),
+
+\[
+F(w)=\frac{\int_0^\infty \Phi(u)\cosh(u\sqrt w)\,du}
+{\int_0^\infty\Phi(u)\,du},\quad
+a_n=\frac{\int_0^\infty\Phi(u)u^{2n}\,du}
+{(2n)!\int_0^\infty\Phi(u)\,du}.
+\]
+
+For the explicit positive theta-derived kernel, see E. C. Titchmarsh, *The Theory of the Riemann Zeta-Function*, §3.12, or the review in Suvrit Sra (2026) below. This is an **independently sourced representation**, not a fitted Hilbert-space formula. It proves \(a_n\ge0\), and the RAW even moments \((2n)!\,a_n\) form a positive Hankel moment array. It does **not** prove that the normalized \(a_n\) form a PF∞ Toeplitz array. The hostile positive-measure example in §4 has exactly this type of cosh transform but a negative 3×3 Toeplitz minor.
+
+Relevant dated prior art: Suvrit Sra, *On some positivity properties of the Riemann Xi function*, v3 released **2 November 2026**, [arXiv:2611.02944](https://arxiv.org/abs/2611.02944) / [author source](https://suvrit.github.io/papers/riem-xi/). This establishes PF2/log-concavity and a very large but **finite** PF order for two positive densities whose Laplace transforms are reciprocal Xi variants; it also surveys **PF∞ equivalences to RH** through earlier Schoenberg, Roynette–Yor and Gröchenig results. The paper's reciprocal-density sequence is NOT our direct original even-Taylor coefficient sequence; their finite-order positivity does not immediately imply (PF-XI). Neither finite PF positivity nor theta-kernel log-concavity is an all-order Hilbert–Pólya determinant theorem. The PF∞/Laguerre–Pólya equivalence is prior classical mathematics; this source-specific operator construction is not asserted to be a globally novel RH equivalence.
+
+The ICM 2026 [Rietsch survey](https://doi.org/10.1137/25M1806727), Theorems 1.1 and 1.3, connects Toeplitz PF∞ minors to Schur and representation-theoretic positivity. This offers a legitimate *alternative expression* of the universal proof supplier: positivity of all ordinary Schur evaluations at the xi elementary-coefficient specialization, because skew Schur minors are nonnegative Littlewood–Richardson combinations. The geometric Langlands papers do **not** prove these evaluations positive without an exact source-defined specialization or functor. Merely naming a Schubert-positive cone is not an arithmetic return.
+
 ## 4. Concrete hostile counterexamples against false positivity and false determinant approximations
 
 **Ordinary positive coefficients are insufficient.**
