@@ -1,0 +1,82 @@
+# RH-INDEPENDENT, source-pinned candidate proof modules.
+# No RH source/axiom or final Alpoge theorem imported.
+# Paper mathematics: exact inverse prime-Krylov Gram, scalar coefficient
+# envelope, Weil sqrt(n) normalization, actual finite zeta and complex
+# character arithmetic returns, full weighted Gm observation errors.
+#
+# IMPORTANT formal gap: show the true orthogonal polynomial
+# coefficient matrix equals the inverse prime-Krylov coefficient
+# matrix, and bound each coefficient row by the scalar envelope.
+# The conditional row-norm theorem is NOT an unconditional bound.
+# EAtH and CoreAtH in Gm are abstract, separately supplied Prop
+# placeholders, NOT instantiated upstream definitions. A real
+# cross-edition port must reestablish their exact Frame/HostAx types.
+#
+# Run in the grwtsk/math repository with actual Lean/Lake:
+# python3 scripts/verify_frozen_prime_atlas.py \
+#   --config verification/prime-jacobi-conditioned-gm-source.toml \
+#   --all-diagnostics --report /tmp/prime-jacobi-conditioned-gm-source.json
+#
+# Independent finite arithmetic controls:
+# python3 scripts/verify_prime_jacobi_moment_to_source_stability.py
+# python3 scripts/verify_prime_jacobi_gm_source.py
+#
+# Lean compilation/kernel/axiom audit NOT_RUN in ChatGPT environment:
+# lean, lake and pinned Mathlib checkout were unavailable.
+format_version = 1
+suite = "RH-free actual-prime Hankel inverse and signed Alpoge intermediate Gm source"
+issue = "https://github.com/grwtsk/math/issues/1850"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 22
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiHankelInverse"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiHankelInverse.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiHankelInverse"
+git_blob = "6c1f9be478b9cbd9d83b71381bf2b7224fc489aa"
+theorems = [
+  "krylov_det_positive",
+  "hankel_inverse_eq_coeff_gram",
+  "hankel_inverse_entry",
+  "hankel_inverse_row_sum_le",
+  "hankel_inverse_row_sum_quadratic_of_coeff_bound",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiCoefficientEnvelope"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiCoefficientEnvelope.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiCoefficientEnvelope"
+git_blob = "c0f1ada66ad27f2dc50104039abfd7050b2fb5a3"
+theorems = [
+  "bond_nondecreasing",
+  "bond_at_least_index",
+  "coeffEnvelope_nonnegative",
+  "coeffEnvelope_le_index",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PrimeJacobiGmArithmeticReturn"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeJacobiGmArithmeticReturn.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeGmArithmeticReturn"
+git_blob = "714bd78623065d2819b985a0be82fa18b58b728c"
+theorems = [
+  "lambdaFromPhysical_eq_vonMangoldt",
+  "observedLambda_sound",
+  "max_x_div_n_sub_one",
+  "positivePartSz_eq_source",
+  "positivePartSchiC_eq_source",
+  "sourceGm_eq_alpoge_style_of_nontrivial",
+  "observedSz_eq_source_of_exact",
+  "observedSchiC_eq_source_of_exact",
+  "observedGm_eq_source_of_exact",
+  "observedSz_error_le",
+  "observedGm_error_le_of_component_bounds",
+  "observedGm_upper_of_intermediate_suppliers",
+  "observedGm_upper_with_certified_error",
+]
