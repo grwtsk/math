@@ -20,7 +20,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 22
+expected_theorems = 27
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -59,6 +59,16 @@ hostile_fourier_toeplitz_minor = "-7/23040"
 numeric_actual_xi_minors_exploratory = 8884
 numeric_actual_xi_is_proof = false
 code_checker = "scripts/verify_xi_toeplitz_hilbert_polya.py"
+theta_hankel_positive_all_rank = "MATHEMATICALLY_PROVED_NOT_LEAN"
+theta_cosine_matrix_coefficient = "MATHEMATICALLY_PROVED_NOT_LEAN"
+theta_operator_discrete_spectrum = false
+theta_operator_inverse_square_trace_class = false
+theta_jacobi_moment_uniqueness = "MATHEMATICALLY_PROVED_NOT_LEAN"
+theta_to_HP_determinant_identity = "UNPROVED_INDEPENDENT_RH_STRENGTH"
+theta_exact_finite_Hankel_minors_checked = 922
+theta_finite_Jacobi_moment_checks = 11
+theta_positive_cosine_nonreal_zero_hostile = "pi + i*log(3+2*sqrt(2))"
+theta_actual_xi_numeric_diagnostic_is_proof = false
 
 # Direct actual-Xi even Taylor Schur source and low-rank moment obstruction.
 # Riemann's theta/cosh integral, Littlewood-Richardson reduction, gamma/pole/
@@ -82,4 +92,24 @@ theorems = [
   "two_factor_second_trace",
   "positive_theta_moments_negative_second_trace",
   "positive_theta_moments_negative_schur_three",
+]
+
+# Actual Riemann theta has an unconditional self-adjoint cosine-vector
+# representation, unique continuous moment-Jacobi spectrum, and strict
+# all-index HANKEL total positivity (classical Andreief).
+# None of this is the RH-equivalent factorial-normalized TOEPLITZ
+# PF-infinity criterion or a positive trace-class Fredholm realization.
+# Source proof: XiThetaMomentSpectralModel.md. The finite Lean module
+# proves only generic algebraic quadrature claims; analytic operator
+# theorems, spectral domains, Andreief and Carleman remain NOT_RUN.
+[[module]]
+name = "GRWTSK.NumberTheory.XiThetaMomentSpectralModel"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiThetaMomentSpectralModel.lean"
+git_blob = "a846b77fdfb9d7ca01cd0501b07c63b2ff8b11bb"
+theorems = [
+  "even_power_add_identity",
+  "finite_hankel_entry_eq_gram",
+  "finite_even_energy_nonnegative",
+  "two_atom_hankel_gap",
+  "two_atom_hankel_gap_nonnegative",
 ]
