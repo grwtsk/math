@@ -66,6 +66,11 @@ The classical \(\Lambda(k)>0\iff k=p^h\) (for \(k\ge2\)) turns this into exact p
 
 **Information-loss boundary:** if \(c_\Lambda(k)=0\), the single weighted \`Level.Gm\` signal does not recover \(\Lambda(k)\) by division. Equivalence to prime-power support requires the separate zeta source or a nonvanishing character-family multiplier. The reverse map (3) does not prove an analytic estimate for Gm.
 
+**Hostile cancellation with an actual character:** the nontrivial quadratic Dirichlet character modulo 4 satisfies \(\chi_4(3)=-1\) at the genuine prime 3. For the algebraic family multiplier \(c(n)=1+\chi_4(n)\) (unit positive weight), \(c(3)=0\), although \(\Lambda(3)=\log3>0\). Its combined source curvature at \(k=3\) is therefore zero. This is a legitimate finite *character-phase* counterexample to unconditional recovery from a weighted family statistic. It is not asserted that this one-character choice is realized by every original \`Level\` structure.
+
+**Affine-kernel obstruction:** \(\Delta^2(Ak+B)=0\) for any constants \(A,B\). Even complete exact discrete curvature data cannot recover those integration constants. The original source's \(A_\Lambda\) contains genuine \(L'/L(1,\chi)\) and Euler's constant; it must be independently normalized or certified. A finite prime prefix or a second-difference measurement cannot silently determine the full analytic correction. The zeta-only statistic has a separate explicitly specified normalization.
+
+
 ## 3. Finite continuum observation certificate: no dense-grid extrapolation
 
 For any prescribed finite window \([Y,U]\) with \(1\le Y\le U\le M\), let \(\widetilde\Lambda(n)\) denote source-certified approximate von Mangoldt coefficients, with the **original** character family and \(A_\Lambda\) unchanged. The exact difference is
