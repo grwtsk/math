@@ -158,6 +158,94 @@ For u=1 and v>0 sufficiently close to 0, the leading signed coefficient is **pos
 
 The two low-order identities are elementary algebra independently verified in the adjacent finite Lean source as candidate declarations; the infinite remainder/continuity proof is mathematically standard and not replayed in Lean. The small-y sign split is not a counterexample to the desired **integrated** inequality for actual Xi; it is a counterexample only to a proposed pointwise-sign proof technique.
 
+## 5. Complete two-point kernel and conditional Hilbert-space reconstruction
+
+There is a stronger source-defined mathematical object than the scalar sign (1). For any w,v in the complex upper half-plane let
+
+\[
+\boxed{
+\mathcal P_\Xi(w,v)=
+\frac{
+  F(w)\overline{F'(v)}-F'(w)\overline{F(v)}
+}{w-\overline v}.
+}\tag{8}
+\]
+
+This expression is **unconditionally well-defined for all upper-half-plane pairs**, even when F has zeros: since Im(w)>0 and Im(v)>0, the denominator w−conj(v) never vanishes. It is Hermitian, \(\mathcal P_\Xi(v,w)=\overline{\mathcal P_\Xi(w,v)}\).
+
+Its exact diagonal identity is
+
+\[
+\boxed{
+\mathcal P_\Xi(w,w)=
+-\frac{\Im(F'(w)\overline{F(w)})}{\Im w}
+=-\frac{B_\Phi(w)}{\Im w}.
+}\tag{9}
+\]
+
+Thus the following **three** universal conditions are equivalent for the genuine original Xi:
+
+1. The full two-point Hermitian kernel \(\mathcal P_\Xi\) is positive semidefinite on every finite selection of upper-half-plane arguments.
+2. The diagonal \(\mathcal P_\Xi(w,w)\ge0\) for every Im(w)>0.
+3. The scalar anti-Pick sign in (1) holds everywhere, and hence the original exact positive inverse-square-trace-class Hilbert–Pólya determinant (3) exists.
+
+**Proof 1 ⇒ 2 ⇒ 3:** a PSD kernel has nonnegative diagonals; equation (9) gives (1), which excludes upper-half-plane zeros by the local pole argument and forces the positive genus-zero product as above.
+
+**Proof 3 ⇒ 1:** with \(F(w)=\prod_j(1+\lambda_jw)\), \(\lambda_j>0\), sum \(\lambda_j<\infty\), logarithmic differentiation gives the source-exact feature factorization
+
+\[
+\boxed{
+\mathcal P_\Xi(w,v)
+=\sum_j \lambda_j^2
+  \Bigl[\prod_{\ell\ne j}(1+\lambda_\ell w)\Bigr]
+  \overline{\Bigl[\prod_{\ell\ne j}(1+\lambda_\ell v)\Bigr]}.
+}\tag{10}
+\]
+The product excluding j is locally uniform, and the sum converges because sum λj²<∞. For every finite complex vector c,
+
+\[
+\sum_{r,s}\overline{c_r}\,\mathcal P_\Xi(w_r,w_s)\,c_s
+=\sum_j\left|\sum_r \overline{c_r}\lambda_j
+ \prod_{\ell\ne j}(1+\lambda_\ell w_r)\right|^2\ge0.
+\]
+
+No multiplicity is lost: repeated λ values retain distinct j summands. This is an **exact Gram realization of the complete Xi Pick kernel**. Its positive reproducing-kernel Hilbert space is defined intrinsically by the original xi source (Moore–Aronszajn); the positive trace-class Hilbert–Pólya spectral operator follows via the same genus-zero factorization, not by assuming an external zero table.
+
+### 5A. The literal Riemann theta source of the two-point kernel
+
+Let \(p_w(u)=\cosh(u\sqrt w)\) and \(q_w(u)=u\sinh(u\sqrt w)/(2\sqrt w)\); the latter has its holomorphic value \(u^2/2\) at w=0. For Im(w),Im(v)>0, the exact original theta source gives
+
+\[
+\boxed{
+\mathcal P_\Xi(w,v)=
+\frac1{M_0^2}\int_0^\infty\!\!\int_0^\infty
+\Phi(u)\Phi(t)
+\frac{
+  p_w(u)\overline{q_v(t)}
+  -q_w(u)\overline{p_v(t)}
+}{w-\overline v}\,du\,dt.
+}\tag{11}
+\]
+
+Every source atom, gamma factor and pole normalization is contained in the genuine \(\Phi\) via the original completed zeta. On the Euler product domain, the same kernel equals \(F(w)\overline{F(v)}\) times the divided difference of the complete prime/gamma/pole logarithmic derivative (4). No synthetic spectral input or final RH theorem is needed to state (11).
+
+**Important:** (11) is an unconditional IDENTITY, but **it has not been proved positive** for the genuine theta kernel. Its positivity for all w,v is RH-equivalent by (8)–(10). A positive kernel obtained by replacing its numerator with a Gram square would change the mathematical source and be invalid.
+
+### 5B. Exact rational verification and hostile diagonal
+
+The independently executable [verify_xi_theta_pick_kernel.py](../../../../scripts/verify_xi_theta_pick_kernel.py) checks (8)–(10) for the finite positive eigenfactor model
+\(\lambda=(1/2,1/3,1/3,1/5)\). It passed 400 exact cross-kernel identities and five exact complex quadratic Gram identities, preserving the repeated 1/3 eigenvalue separately.
+
+The same signed two-atom positive theta-source counterexample from Section 4 obeys at w=i/10
+\[
+B_{\Phi_\mu}(i/10)>1/2000,
+\qquad
+\boxed{\mathcal P_{\Phi_\mu}(i/10,i/10)<-1/200.}\tag{12}
+\]
+The second bound follows from the exact diagonal identity, not sampling speculation. Thus a kernel made from an arbitrary positive theta/Fourier measure can be explicitly **indefinite** even though all its ordinary Hankel Gram minors are nonnegative.
+
+**Source-specific mathematical completion target:** prove \(\mathcal P_\Xi\) positive semidefinite, or just all its diagonals nonnegative, for the **actual** Riemann theta kernel on the whole upper half-plane. This is an RH-equivalent analytic positivity theorem, not established by the unconditional theta spectral model. If it were proved independently, equations (8)–(11) would provide the requested exact source-to-Hilbert-space transformation and complete positive Fredholm determinant, with actual prime/gamma/pole and multiplicity data retained.
+
 ## 5. Exact remaining source obligation and verification status
 
 **OPEN (independent RH-equivalent supplier):**
