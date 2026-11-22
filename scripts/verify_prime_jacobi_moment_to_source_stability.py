@@ -76,6 +76,51 @@ def expected_det(primes: list[int], r: int) -> int:
     return __import__('math').prod(p**(2*(r-1-j)) for j,p in enumerate(primes[:max(0,r-1)]))
 
 
+
+def hankel_inverse(moments: list[int], k: int) -> list[list[Fraction]]:
+    """Exact Gauss-Jordan inverse; checks every H * H^(-1) entry."""
+    a = [[Fraction(moments[i+j]) for j in range(k)] +
+         [Fraction(int(i==j)) for j in range(k)] for i in range(k)]
+    for j in range(k):
+        pivot = next((i for i in range(j,k) if a[i][j]), None)
+        assert pivot is not None
+        a[j],a[pivot] = a[pivot],a[j]
+        coefficient=a[j][j]
+        for z in range(2*k):
+            a[j][z] /= coefficient
+        for i in range(k):
+            if i == j: continue
+            coefficient=a[i][j]
+            if coefficient:
+                for z in range(2*k):
+                    a[i][z] -= coefficient*a[j][z]
+    inv = [row[k:] for row in a]
+    assert all(sum((Fraction(moments[i+l])*inv[l][j]
+                    for l in range(k)), Fraction(0)) == int(i==j)
+               for i in range(k) for j in range(k))
+    return inv
+
+
+def row_sum_norm(a: list[list[Fraction]]) -> Fraction:
+    return max(sum(abs(v) for v in row) for row in a)
+
+
+
+def orthonormal_polynomial_rows(bonds: list[int]) -> list[list[Fraction]]:
+    """P_0=1, p_n P_(n+1)=x P_n-p_(n-1) P_(n-1)."""
+    rows=[[Fraction(1)]]
+    for n,p in enumerate(bonds):
+        current=rows[n]
+        previous=rows[n-1] if n else []
+        z=[Fraction(0)]*(n+2)
+        for j,c in enumerate(current):
+            z[j+1]+=c
+        for j,c in enumerate(previous):
+            z[j]-=bonds[n-1]*c
+        rows.append([c/p for c in z])
+    return rows
+
+
 def check(k: int) -> dict:
     primes = primes_prefix(k)
     moments_int = root_moments(primes)
