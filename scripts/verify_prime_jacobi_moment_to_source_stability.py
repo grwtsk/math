@@ -132,7 +132,32 @@ def check(k: int) -> dict:
     delta = Fraction(1,8*P+4)
     eps = min([Fraction(1)]+[delta*orig[r]/(factorial(r)*r*(M+1)**(r-1))
                                   for r in range(1,k+2)])
-    assert 0 < delta < Fraction(1,4*P+1) and 0<eps<=1
+    inverses = [hankel_inverse(moments_int,r) for r in range(1,k+2)]
+    polynomials=orthonormal_polynomial_rows(primes)
+    inverse_norms = [row_sum_norm(mat) for mat in inverses]
+    for r,inv in enumerate(inverses,1):
+        # Independent inverse from prime orthogonal-polynomial coefficients.
+        R=[[polynomials[n][j] if j<len(polynomials[n]) else Fraction(0)
+            for j in range(r)] for n in range(r)]
+        from_orthogonal=[[sum((R[n][i]*R[n][j] for n in range(r)),Fraction(0))
+            for j in range(r)] for i in range(r)]
+        assert from_orthogonal == inv
+        # Universal source-specific coefficient bound: p_j >= j+2;
+        # row l1 norms T_n <= (r+1)/2. Hence ||H^-1||inf <= r*((r+1)/2)^2.
+        assert all(sum(abs(x) for x in row) <= Fraction(r+1,2) for row in R)
+        assert inverse_norms[r-1] <= Fraction(r*(r+1)**2,4)
+    # Hadamard principal-minor expansion: det(I+A)-1 bound (1+alpha)^r-1,
+    # alpha <= ||H^(-1)||_infty * r * eps; alpha <= delta/(2^r-1).
+    eps_adaptive = min([Fraction(1)]+[
+        delta/(r*(2**r-1)*inv_norm)
+        for r,inv_norm in enumerate(inverse_norms,1)])
+    # No inverse computation needed to use this theorem: source-prime monotone
+    # coefficients give ||H_r^(-1)||inf <= r*(r+1)^2/4.
+    eps_explicit = min(Fraction(1), Fraction(4)*delta /
+        ((2**(k+1)-1)*(k+1)**2*(k+2)**2))
+    assert eps_explicit <= eps_adaptive
+    assert 0 < delta < Fraction(1,4*P+1) and 0<eps<=1 and 0<eps_adaptive<=1
+    assert eps_adaptive >= eps  # observed here; not assumed in general theorem
     patterns = [lambda j: 1,
                 lambda j: -1 if j%2 else 1,
                 lambda j: 0 if j%3==0 else (-1 if j%3==1 else 1)]
