@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 152
+expected_theorems = 168
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -318,4 +318,28 @@ theorems = [
   "liftBeacon_injective",
   "twoNeighbor_lift_remains_distinct",
   "primeLabel_retained",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeKnotFactorMemo"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeKnotFactorMemo.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeKnotFactorMemo"
+git_blob = "ba51828c57e38d059a771470880c2aa111ddcd5f"
+theorems = [
+  "primeAt_prime",
+  "firstPrime",
+  "firstPrime_no_previous",
+  "previous_of_successor",
+  "nextPrime_prime",
+  "primeAt_lt_next",
+  "primeAt_injective",
+  "knot_previous",
+  "knot_current_prime",
+  "knot_next_prime",
+  "atlasKnot_ordinal",
+  "atlasKnot_location_id",
+  "verifiedMemo_sound",
+  "verifiedMemo_all_prime",
+  "empty_memo_returns_none",
+  "factorCursor_finished_product",
 ]
