@@ -115,5 +115,4 @@ def main():
     print(json.dumps({'status':result['status'],'tests':len(checks),
         'nonzero_boundary_tests':sum(x['boundary_correction_nonzero'] for x in checks)},indent=2))
 
-
 if __name__=='__main__':main()
