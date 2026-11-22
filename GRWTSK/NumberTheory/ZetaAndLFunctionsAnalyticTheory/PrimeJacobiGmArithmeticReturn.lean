@@ -104,7 +104,7 @@ theorem max_x_div_n_sub_one (x : ℝ) (hx : 1 ≤ x) (n : ℕ)
     have hlow := (Finset.mem_Icc.mp hn).1
     omega
   have hnR : (n : ℝ) ≤ x :=
-    (Nat.le_floor_iff (by linarith)).mpr hle
+    (Nat.le_floor_iff (by linarith)).mp hle
   have hnpos : (0 : ℝ) < n := by exact_mod_cast hpositive
   have hr : (1 : ℝ) ≤ x / (n : ℝ) := by
     apply (le_div_iff₀ hnpos).mpr
