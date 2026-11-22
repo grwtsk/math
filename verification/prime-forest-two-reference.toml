@@ -1,0 +1,204 @@
+# Exact source-pinned verification of the corrected two-reference 16D design.
+# 4096 distinct numeric prime IDs, replicated into 8192 physical positions.
+# Invariant: every cell sees exactly two DIFFERENT face-adjacent prime IDs.
+# The previously established 4096-single-position model has only ONE neighbor.
+# This suite excludes the unrelated computationally heavy prime-count proof;
+# that cutoff remains a separate Lean supplier.
+#
+# python3 scripts/verify_prime_two_reference_16d.py
+# python3 scripts/verify_frozen_prime_atlas.py \\
+#   --config verification/prime-forest-two-reference.toml \\
+#   --all-diagnostics --report /tmp/prime-forest-two-reference.json
+#
+# A PASS_SCOPED_LEAN here checks the declared proof bodies and allowed axioms.
+# It does not certify global spectral placement optimality, external GRH imports,
+# independent kernel replay, or the entire infinite universe.
+format_version = 1
+suite = "Prime Forest: Two Distinct References and 16D to 64D Continuation"
+issue = "https://github.com/grwtsk/math/issues/1844"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 98
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.FrozenPrimeHypercube"
+path = "GRWTSK/Combinatorics/GraphTheory/FrozenPrimeHypercube.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeHypercube"
+git_blob = "0b4c3ff28335529f28ca1986c66416082624dc72"
+theorems = [
+  "syndrome_impulse",
+  "syndrome_add",
+  "syndrome_neighbor",
+  "neighbor_injective",
+  "guidepost_frozen",
+  "guidepost_is_neighbor",
+  "neighbor_frozen_iff",
+  "unique_frozen_neighbor",
+  "existsUnique_frozen_neighbor",
+  "frozen_neighbor_zero_port",
+  "port_card_four",
+  "cell_card_four",
+  "neighborSetFour_card",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.FrozenPrimeBeaconCardinality"
+path = "GRWTSK/Combinatorics/GraphTheory/FrozenPrimeBeaconCardinality.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeBeaconCardinality"
+git_blob = "67a13b3e10081c7853fb92aaa220c2f5f43f4d76"
+theorems = [
+  "syndromeHom_surjective",
+  "beacon_is_frozen",
+  "beacon_card_four",
+  "indexedPrime_prime",
+  "indexedPrime_injective",
+  "beaconPrimeLabel_prime",
+  "beaconPrimeLabel_injective",
+  "beaconPrimeLabel_le_of_prefix",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.CompatiblePrimeDimensionEmbedding"
+path = "GRWTSK/Combinatorics/GraphTheory/CompatiblePrimeDimensionEmbedding.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CompatiblePrimeDimensionEmbedding"
+git_blob = "3230b7759702aa5d70ffa8cbd59592633fbe4aff"
+theorems = [
+  "preserves_frozen",
+  "guidepost_commutes",
+  "identity_guidepost",
+  "composition_guidepost",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.CanonicalPrimeBeaconIndex16"
+path = "GRWTSK/Combinatorics/GraphTheory/CanonicalPrimeBeaconIndex16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CanonicalPrimeBeaconIndex16"
+git_blob = "29651574044935a66e8acac2d8e95b73835912ef"
+theorems = [
+  "encodedBeacon_injective",
+  "beaconCodes_card",
+  "encodedBeacon_mem",
+  "canonicalBeaconIndex_injective",
+  "canonicalBeaconIndex_bijective",
+  "canonicalPrimeLabel_prime",
+  "canonicalPrimeLabel_injective",
+  "canonicalPrimeLabel_le_of_prefix",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ReplicatedPrimeAdjacency16"
+path = "GRWTSK/Combinatorics/GraphTheory/ReplicatedPrimeAdjacency16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ReplicatedPrimeAdjacency16"
+git_blob = "840d38408e275d0a63d6d812a48e507f93b712c9"
+theorems = [
+  "secondarySyndrome_ne_zero",
+  "secondarySyndrome_add_self",
+  "layerNeighbor_syndrome",
+  "layerNeighbor_adjacent",
+  "layerNeighbor_unique",
+  "existsUnique_layerNeighbor",
+  "primary_secondary_disjoint",
+  "two_distinct_face_neighbors",
+  "marked_face_neighbor_classification",
+  "two_face_neighbors",
+  "original_layout_not_two",
+  "replicaPosition_syndrome",
+  "replicaPosition_injective",
+  "parity_impulse",
+  "parity_add",
+  "parity_neighbor",
+  "parity_two_flips",
+  "no_two_flips_as_one",
+  "primaryBase_ne_secondaryBase",
+  "distinct_labels_under_any_injection",
+  "distinct_actual_prime_labels",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeForestSubgroupFlags16"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeForestSubgroupFlags16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeForestSubgroupFlags16"
+git_blob = "82b555e12eff4edc6a0e440f968e534efedbf275"
+theorems = [
+  "fixedCoordinateSubgroup_antitone",
+  "agreeOn_iff_subgroup_difference",
+  "forestFlag_subgroups_nested",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.HierarchicalPrimeDirectory16"
+path = "GRWTSK/Combinatorics/GraphTheory/HierarchicalPrimeDirectory16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HierarchicalPrimeDirectory16"
+git_blob = "16ba00c33f1fc693f8c40a085f7be245a318afad"
+theorems = [
+  "square_rank_reconstruction",
+  "forest_rank_reconstruction",
+  "index_position_roundtrip",
+  "primeNumber_prime",
+  "primaryPosition_syndrome",
+  "secondaryPosition_syndrome",
+  "replica_positions_distinct",
+  "observed_prime_indices_distinct",
+  "observed_prime_numbers_distinct",
+  "locate_preserves_prime_id",
+  "paired_replicas_same_square",
+  "locate_replica_flag",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeFaceIncidenceLowerBound16"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeFaceIncidenceLowerBound16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeFaceIncidenceLowerBound16"
+git_blob = "5a5330b7fb1ef51477edfce57c8f7fd3c1810af9"
+theorems = [
+  "total_marked_face_incidences",
+  "two_face_cover_requires_8192",
+  "four_thousand_ninety_six_positions_impossible",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.DualSyndromeDimensionContinuation"
+path = "GRWTSK/Combinatorics/GraphTheory/DualSyndromeDimensionContinuation.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.DualSyndromeDimensionContinuation"
+git_blob = "3a050c6e6f9ff4a89f1ecb2f25339406df204588"
+theorems = [
+  "targetNeighbor_syndrome",
+  "targetNeighbor_is_face",
+  "targetNeighbor_unique",
+  "existsUnique_targetNeighbor",
+  "distinct_targetNeighbors",
+  "two_target_face_neighbors",
+  "target64_ne_zero",
+  "two_face_neighbors_64",
+  "port_card_six",
+  "cell_card_six",
+  "beacon_card_six",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ConcretePrimeAtlasLift16To64"
+path = "GRWTSK/Combinatorics/GraphTheory/ConcretePrimeAtlasLift16To64.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConcretePrimeAtlasLift16To64"
+git_blob = "aee539ead3057deff40b1bbf6213ded8bbc32d80"
+theorems = [
+  "portDrop_portLift",
+  "portLift_injective",
+  "portLift_zero",
+  "portLift_add",
+  "portLift_neg",
+  "portLift_smul",
+  "addressLift_add",
+  "addressLift_impulse",
+  "addressLift_port",
+  "addressLift_injective",
+  "syndrome_smul",
+  "syndrome_addressLift",
+  "addressLift_neighbor",
+  "frozen_survives_16_to_64",
+  "guidepost_commutes_16_to_64",
+]
