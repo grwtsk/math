@@ -1,0 +1,93 @@
+# Arithmetic-only prime Jacobi graph: mirror, square, even moments and Gram.
+# This suite imports ZERO zeta-zero data into the operator, and ZERO
+# external RH theorem. Original source is Nat.nth Nat.Prime.
+# Lean v4.34.1, pinned Mathlib d13f23...
+# Run:
+# python3 scripts/verify_prime_jacobi_moments.py
+# python3 scripts/verify_frozen_prime_atlas.py \
+#   --config verification/prime-jacobi-mirror-moments.toml \
+#   --all-diagnostics --report /tmp/prime-jacobi-mirror-moments.json
+#
+# The new Lean proof bodies are SOURCE_PROOF_CANDIDATES until actually checked.
+# The *general* inverse root-moment reconstruction is proved in the adjacent
+# mathematical exposition, not yet fully formalized in Lean.
+# No actual spectral xi determinant or independent RH proof is claimed.
+format_version = 1
+suite = "Arithmetic-only Jacobi mirror, square heat, spectral moments and Hankel Gram"
+issue = "https://github.com/grwtsk/math/issues/1849"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 36
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiParitySquare"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiParitySquare.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiParitySquare"
+git_blob = "3c94a4c6ea844125d20318bf1008db34079d2121"
+theorems = [
+  "alternatingSign_ne_zero",
+  "alternatingSign_square_one",
+  "knotWeight_support_successor",
+  "alternatingSign_flip",
+  "twist_involution",
+  "twist_nonzero_at",
+  "jacobi_twist_anticommutes",
+  "jacobi_mirrored_eigenpair",
+  "squareEnergy_eq_sum_sq",
+  "squareEnergy_nonnegative",
+  "squareEnergy_zero_iff_kernel",
+  "jacobiSquare_twist_commutes",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiEvenMoments"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiEvenMoments.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiEvenMoments"
+git_blob = "5cb4febbb54bf83c924bfc5f94bdcf45229d7219"
+theorems = [
+  "iterateJacobi_zero",
+  "iterateJacobi_succ",
+  "iterateJacobi_commutes",
+  "iterateJacobi_add",
+  "dot_symmetric",
+  "iterateJacobi_symmetric",
+  "evenMoment_eq_sum_sq",
+  "evenMoment_nonnegative",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiMomentGram"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiMomentGram.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiMomentGram"
+git_blob = "9e9138c09b110d6ce4f5808d87a3e06873ede037"
+theorems = [
+  "hankelMatrix_symmetric",
+  "hankelMatrix_eq_gram",
+  "hankelMatrix_det_square",
+  "hankelMatrix_det_nonnegative",
+  "root_even_moment_nonnegative",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.PrimeJacobiSpectralParity"
+path = "GRWTSK/NumberTheory/PrimeJacobiSpectralParity.lean"
+namespace = "GRWTSK.NumberTheory.PrimeJacobiSpectralParity"
+git_blob = "3f541c1c542fd66afe5336cfd68a87bb6e2ccf97"
+theorems = [
+  "bond_lower",
+  "bond_unbounded",
+  "jacobiEigenvalue_neg",
+  "jacobiEigenvalue_neg_iff",
+  "continuant_neg_parity",
+  "continuant_even",
+  "continuant_odd",
+  "odd_rank_continuant_zero",
+  "even_rank_continuant_nonzero",
+  "continuant_two_exact",
+  "continuant_three_exact",
+]
