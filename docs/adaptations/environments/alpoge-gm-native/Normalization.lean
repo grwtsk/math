@@ -130,19 +130,39 @@ theorem arithmetic_head_finite_rearrangement (Λ : Level) (x : ℝ) :
         (ψ.χ n).re * (x / (n : ℝ) - 1))) =
       signedSmoothedPrimeHead Λ x := by
   classical
-  unfold signedSmoothedPrimeHead signedPhase
-  rw [Finset.sum_add_distrib]
-  congr 1
-  · apply Finset.sum_congr rfl
-    intro n _
-    ring
-  · simp_rw [Finset.mul_sum]
+  have hswap :
+      (∑ ψ ∈ Λ.Nt, Λ.wt ψ *
+          (∑ n ∈ Finset.Icc 1 ⌊x⌋₊,
+            (ArithmeticFunction.vonMangoldt n : ℝ) *
+            (ψ.χ n).re * (x / (n : ℝ) - 1))) =
+      ∑ n ∈ Finset.Icc 1 ⌊x⌋₊,
+        ∑ ψ ∈ Λ.Nt, Λ.wt ψ *
+          ((ArithmeticFunction.vonMangoldt n : ℝ) *
+            (ψ.χ n).re * (x / (n : ℝ) - 1)) := by
+    simp_rw [Finset.mul_sum]
     rw [Finset.sum_comm]
-    apply Finset.sum_congr rfl
-    intro n _
-    rw [← Finset.sum_mul]
-    rw [← Finset.mul_sum]
-    ring
+  rw [hswap, ← Finset.sum_add_distrib]
+  unfold signedSmoothedPrimeHead signedPhase
+  apply Finset.sum_congr rfl
+  intro n _
+  calc
+    (ArithmeticFunction.vonMangoldt n : ℝ) * (x / (n : ℝ) - 1) +
+        (∑ ψ ∈ Λ.Nt, Λ.wt ψ *
+           ((ArithmeticFunction.vonMangoldt n : ℝ) *
+             (ψ.χ n).re * (x / (n : ℝ) - 1))) =
+      (ArithmeticFunction.vonMangoldt n : ℝ) * (x / (n : ℝ) - 1) +
+        (∑ ψ ∈ Λ.Nt, Λ.wt ψ * (ψ.χ n).re) *
+          ((ArithmeticFunction.vonMangoldt n : ℝ) *
+            (x / (n : ℝ) - 1)) := by
+      rw [Finset.sum_mul]
+      apply congrArg (fun z : ℝ =>
+        (ArithmeticFunction.vonMangoldt n : ℝ) * (x / (n : ℝ) - 1) + z)
+      apply Finset.sum_congr rfl
+      intro ψ _
+      ring
+    _ = (ArithmeticFunction.vonMangoldt n : ℝ) *
+          (1 + ∑ ψ ∈ Λ.Nt, Λ.wt ψ * (ψ.χ n).re) *
+             (x / (n : ℝ) - 1) := by ring
 
 /-- Fundamental source theorem: native Level.Gm equals its
 complete finite signed prime-power sum plus the entire ORIGINAL
