@@ -100,6 +100,21 @@ A deliberately illustrative weighted family with weights -1/4 and +1/3 gives Ace
 
 The two characters were additionally compared with high-precision external numerical Hurwitz-zeta/Stieltjes constants solely as a hostile sanity check; those floating values were **not** used to certify any interval.
 
+## Source-specific cyclic-level character-group examples
+
+The original source also defines Level.ofSub and Level.cyc in ExplicitFormulaErrorOfHostConditions.lean. In Level.ofSub, the exceptional marker psK is none and the size parameter o is the group cardinality. Hence original Level.wt gives every nonprincipal character weight 1/(3o+1), without arbitrary user-selected weights.
+
+Two concrete **mathematical cyclic character groups** have finite rational certificates:
+
+- The primitive quadratic character modulo 4 has order 2. Its cyclic character group contains exactly the trivial character and χ4, so o=2 and original nonprincipal weight **1/7**. Its \(A_\Lambda\) arithmetic constant is enclosed by \(1.614367602032\pm0.018825795537\).
+- A primitive order-four character modulo 5 defined on units by χ5(2)=i, χ5(3)=−i and χ5(4)=−1 has cyclic group \(\{1,\chi_5,\chi_5^2,\chi_5^3\}\), so o=4. Its three nonprincipal weights are all **1/13**. The inverse/conjugate pair has the same real logarithmic derivative. Its source constant is enclosed by \(1.667666797998\pm0.046796870650\).
+
+The character tables, group multiplication, order, all complex rational partial sums, derivative-log interval budgets, and original weight formulas are tested by [verify_native_gm_cyclic_level_certificates.py](../../../../scripts/verify_native_gm_cyclic_level_certificates.py), source blob 4e3258d518ed11f12a9dbd04d2d51af81fba96c5. Its exact rational JSON result is available as a generated conversation attachment, not as a committed mathematical source fixture.
+
+**Formal matching obligation:** in the pinned original Lean environment, prove those tables correspond to genuine primitive DirichletCharacter objects, their PChar.of images form the asserted Level.cyc.KEPT/Nt, the original Nat.card equals 2 or 4, and Level.wt is 1/7 or 1/13. These follow mathematically from the source definitions and exact tables, but the typed Lean realization is **NOT_RUN**.
+
+The interval bounds concern **only** the affine analytic constant \(A_\Lambda\). They are not one-sided \(G_m(n)\) estimates and do not establish EAtH, CoreAtH, LandauWin or RH.
+
 ## Important obstruction and trust boundary
 
 The native EAtH.bdL field bounds the logarithmic derivative of characters in H.Bounded(Level.KEPT), **not automatically all** characters in Level.Nt. Therefore EAtH alone cannot be used to fabricate an A_Level interval without a separate character-family inclusion theorem. The per-character finite certificates above avoid that unjustified inference.
