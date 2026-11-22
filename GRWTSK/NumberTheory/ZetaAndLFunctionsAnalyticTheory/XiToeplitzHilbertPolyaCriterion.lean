@@ -148,4 +148,33 @@ theorem finiteSpectralDeterminant_eq_factorProduct {N : ℕ}
   intro j _
   ring
 
+
+/-- Actual xi's normalized Taylor sequence has a0=1 PROVIDED
+the nonvanishing of the true source center is independently supplied.
+This does not assume RH or any zero ordinate. -/
+theorem normalizedEvenXiTaylor_zero_of_center_ne_zero
+    (hcenter : sourceXi (1 / 2 : ℂ) ≠ 0) :
+    normalizedEvenXiTaylor 0 = 1 := by
+  simp [normalizedEvenXiTaylor,
+    normalizedEvenXiTaylorComplex, hcenter]
+
+/-- The Pólya-frequency three-minor obstruction is strictly stronger
+than nonnegative Fourier moment/Hankel positivity. The positive
+measure 3/4 delta_0 + 1/4 delta_1 has cosh-transform coefficients
+a0=1, a1=1/8, a2=1/96, a3=1/2880, yet this shifted
+Toeplitz minor is NEGATIVE. Pure exact rational arithmetic. -/
+theorem positiveFourierSource_negative_three_minor :
+    ((1 / 8 : ℚ) ^ 3 -
+      2 * (1 / 8 : ℚ) * (1 / 96 : ℚ) +
+      (1 / 2880 : ℚ)) = -(7 / 23040 : ℚ) := by
+  norm_num
+
+/-- A genuine all-real-rooted product can lose hyperbolicity when
+TAYLOR-truncated. This prevents an invalid finite-Hilbert-Polya
+approximation based on truncating xi coefficients instead of
+the proven positive eigenfactors. -/
+theorem positiveFactor_taylor_degree_two_discriminant :
+    (3 : ℚ) ^ 2 - 4 * 3 = -3 := by
+  norm_num
+
 end GRWTSK.NumberTheory.XiToeplitzHilbertPolyaCriterion
