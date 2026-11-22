@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 56
+expected_theorems = 59
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -134,4 +134,15 @@ theorems = [
   "guidepost_commutes",
   "identity_guidepost",
   "composition_guidepost",
+]
+
+[[module]]
+name = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.DirichletGRHSourceStatementBridge"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletGRHSourceStatementBridge.lean"
+namespace = "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.DirichletGRHSourceStatementBridge"
+git_blob = "4e01ccc0c09856cb790b29526c157ddac215a9e0"
+theorems = [
+  "challenge_iff_local_dirichletGRH",
+  "local_grh_of_challenge",
+  "challenge_of_local_grh",
 ]
