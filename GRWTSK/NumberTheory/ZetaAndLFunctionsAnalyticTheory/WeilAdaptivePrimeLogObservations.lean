@@ -141,7 +141,7 @@ theorem logHatRaw_terms_error (bits n : ℕ) (hn : 0 < n) :
           (mul_le_mul_of_nonneg_left (logTwo_terms_error bits)
             (Nat.cast_nonneg _))
     _ = _ := by
-        rw [div_eq_mul_inv]
+        rw [div_pow, one_pow]
         ring
 
 /-- An adaptive arithmetic Lambda table is defined by the TRUE
