@@ -14,6 +14,7 @@ from verify_xi_theta_antipick_source import (
     polynomial_derivative, antipick_numerator, finite_spectrum,
     positive_measure_hostile)
 
+
 def sub(a,b):return a[0]-b[0],a[1]-b[1]
 
 def abs2(a):return a[0]*a[0]+a[1]*a[1]
