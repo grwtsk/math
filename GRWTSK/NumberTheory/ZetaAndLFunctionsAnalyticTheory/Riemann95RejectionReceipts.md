@@ -1,0 +1,9 @@
+# Independent receipts for the first rejected stage
+
+[Lean source](Riemann95RejectionReceipts.lean), SHA-256 `eedb575a05698222b7e45b3e62c10e0e338dca5703f5e694df0816ef368ba21f`, extends the [first-rejection checker](Riemann95FirstRejectedStage.lean), blob `1efb32384da4ed5f4fabc94c73f32618092db57d`. Its [stage source](Riemann95StageCertificates.lean), blob `028fce2480fe40c5f11222cc7056f3b0b4e3dc81`, retains ordinals 95w+j and original arithmetic arguments 95w+j+2. The exact adapter returns to Cryptids `3647718b5df22e1a61462dec0376bd204526285a`. [Published source and coverage proof](https://github.com/grwtsk/math/issues/1820)
+
+Ordinal comparison is exactly lexicographic for bounded slots. Therefore a reported rejection in a finite search is the first exactly when its window is in the prefix, the slot is bad, all previous windows accept, and all previous slots in the rejecting window are safe. This gives a consumer for an unordered finite set of independent window receipts under an explicit soundness premise. The checked gap control visits windows 0 and 2 while missing stage 95, argument 97, in window 1. A hypothetical predicate with a single bad stage there confirms that the two receipts cannot certify the intervening prefix. The control makes no claim about the native verdict at 97.
+
+The remaining implementation obligation is receipt-to-checker soundness and complete coverage of the claimed prefix. Infinite safety needs a separate coverage theorem or certificate supply under an admissible schedule. The offset chat's geometric-block checkpoints address sufficient coverage of a different schedule.
+
+Targeted Lake build, strict source elaboration, module-only kernel replay and all four transitive axiom audits passed. The audits found only propext, Classical.choice and Quot.sound. Full dependency replay, isolated Cryptids adapter rebuild, independent review and physical HS runtime parity were NOT_RUN for this result.

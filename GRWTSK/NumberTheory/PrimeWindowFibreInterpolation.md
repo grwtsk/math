@@ -1,0 +1,9 @@
+# Polynomial readouts when prime-window residues collide
+
+[Lean source](PrimeWindowFibreInterpolation.lean), SHA-256 `2f505dddb8725ec6e6545c92f804fa3a1f0c1668955235d9268d366440e11354`, extends [the residue multiplicity source](PrimeWindowReductionMultiplicity.lean), blob `483e71e979102c1ee86e203b3b751cca802fe491`. The slot index and original rational-prime enumeration are unchanged. The dispatch separately pins Cryptids `3647718b5df22e1a61462dec0376bd204526285a`.
+
+A polynomial takes equal values at equal residues, so every slot payload that it realizes must be constant on each residue fibre. Conversely choose a representative slot for each distinct residue. Fibre constancy makes its payload independent of that choice. Interpolation on the set of distinct residues gives a polynomial of degree less than the size of that set. In that degree range its nodal values also determine it uniquely.
+
+In every later window modulo two, the input residue is always one. The slot-zero indicator is a checked obstruction, even for unrestricted degree. Hence a decoder recovering arbitrary slot data needs extra source labels or an injective reduction. Establishing directed native routing and arithmetic return remains separate from interpolation. The offset chat's weighted Alexander routing stability concerns a different operator and observation. [Published Alexander obstruction](https://github.com/grwtsk/math/issues/1826)
+
+Exact targeted Lake build, strict elaboration, module-only kernel replay and four transitive axiom audits passed. The audits reported only propext, Classical.choice and Quot.sound. Draft uniqueness elaboration failed before the polynomial comparison theorem's namespace and explicit node set were resolved. Whole dependency replay, independent review and runtime parity were NOT_RUN.

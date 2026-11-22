@@ -64,7 +64,7 @@ theorem analyticOrderAt_LFunction_ne_top (chi : DirichletCharacter ℂ N)
     chi.LFunction_ne_zero_of_one_le_re (.inr (by norm_num)) (by norm_num)
   have ho : analyticOrderAt (DirichletCharacter.LFunction chi) (2 : ℂ) = 0 :=
     (ha 2 (by norm_num)).analyticOrderAt_eq_zero.mpr htwo
-  exact ha.analyticOrderAt_ne_top_of_isPreconnected
+  exact ha.analyticOrderAt_ne_top_of_isPreconnected (x := (2 : ℂ))
     (isConnected_compl_singleton_of_one_lt_rank (by simp) (1 : ℂ)).isPreconnected
     (by norm_num) hrho (by rw [ho]; exact ENat.zero_ne_top)
 
@@ -78,7 +78,7 @@ theorem CriticalStripZero.ne_one {chi : DirichletCharacter ℂ N}
     (rho : CriticalStripZero chi) : rho.1 ≠ 1 := by
   intro h
   have hr := rho.2.2.2
-  simpa only [h, Complex.one_re, lt_self_iff_false] using hr
+  simp [h] at hr
 
 /-- Genuine analytic multiplicity; finiteness and positivity are proved below. -/
 def zeroMultiplicity (chi : DirichletCharacter ℂ N) (rho : CriticalStripZero chi) : ℕ :=
@@ -107,7 +107,7 @@ theorem zeroMultiplicity_factorization (chi : DirichletCharacter ℂ N)
       ∀ᶠ s in 𝓝 rho.1,
         DirichletCharacter.LFunction chi s = (s - rho.1) ^ zeroMultiplicity chi rho * g s := by
   have ha := analyticOnNhd_LFunction_compl_one chi rho.1 (CriticalStripZero.ne_one rho)
-  simpa only [zeroMultiplicity, smul_eq_mul] using
+  simpa only [zeroMultiplicity, smul_eq_mul, Filter.EventuallyEq] using
     ha.analyticOrderAt_ne_top.mp (analyticOrderAt_LFunction_ne_top chi rho.1 (CriticalStripZero.ne_one rho))
 
 /-- The principal primitive case is zeta, handled with its pole-aware zero theorem. -/
@@ -131,7 +131,8 @@ theorem primitive_LFunction_zeros_closed_discrete (chi : DirichletCharacter ℂ 
       chi.LFunction_ne_zero_of_one_le_re (.inr (by norm_num)) (by norm_num)
     have hd : {s : ℂ | DirichletCharacter.LFunction chi s = 0}ᶜ ∈ codiscrete ℂ :=
       ha.preimage_zero_mem_codiscrete htwo
-    simpa only [compl_compl] using (mem_codiscrete'.mp hd)
+    obtain ⟨hOpen, hDiscrete⟩ := mem_codiscrete'.mp hd
+    exact ⟨isOpen_compl_iff.mp hOpen, by simpa only [compl_compl] using hDiscrete⟩
 
 /-- Compact zero finiteness is derived for the actual primitive source, including zeta. -/
 theorem compact_inter_primitive_LFunction_zeros_finite (chi : DirichletCharacter ℂ N)

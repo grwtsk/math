@@ -1,0 +1,379 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT. -/
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteSpectralHeat
+
+/-!
+# Recovering diagonal heat data after finite Euler steps
+
+All stages use the same spectral coordinates. If stage exposure is
+`a`, its Euler multiplier is `1-a` and exact heat uses `exp(-a)`.
+Decay-compensated Euler bias is bounded by the sum of squared stage
+exposures. Observation noise still incurs the exact inverse gain.
+-/
+
+set_option autoImplicit false
+
+noncomputable section
+
+open scoped BigOperators
+
+namespace GRWTSK.OperatorTheory.FiniteEulerHeatRecovery
+
+open GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat (spectralHeat)
+open GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat (diagonal dot)
+
+/-- The compensated one-stage multiplier lies between `1-a²` and one. -/
+theorem compensated_factor_bounds {a : ℝ} (ha : a ≤ 1) :
+    1 - a ^ 2 ≤ Real.exp a * (1 - a) ∧
+      0 ≤ Real.exp a * (1 - a) ∧ Real.exp a * (1 - a) ≤ 1 := by
+  have hn : 0 ≤ 1 - a := sub_nonneg.mpr ha
+  have lower : (1 + a) * (1 - a) ≤ Real.exp a * (1 - a) := by
+    apply mul_le_mul_of_nonneg_right _ hn
+    simpa only [add_comm] using Real.add_one_le_exp a
+  have upper : 1 - a ≤ Real.exp (-a) := by
+    simpa only [sub_eq_add_neg, add_comm] using Real.add_one_le_exp (-a)
+  refine ⟨?_, mul_nonneg (Real.exp_pos _).le hn, ?_⟩
+  · nlinarith
+  · calc
+      Real.exp a * (1 - a) ≤ Real.exp a * Real.exp (-a) :=
+        mul_le_mul_of_nonneg_left upper (Real.exp_pos _).le
+      _ = 1 := by rw [← Real.exp_add, add_neg_cancel, Real.exp_zero]
+
+theorem compensated_factor_lt_one {a : ℝ} (nonzero : a ≠ 0) :
+    Real.exp a * (1 - a) < 1 := by
+  have upper : 1 - a < Real.exp (-a) := by
+    simpa only [sub_eq_add_neg, add_comm] using Real.add_one_lt_exp (neg_ne_zero.mpr nonzero)
+  calc
+    Real.exp a * (1 - a) < Real.exp a * Real.exp (-a) :=
+      mul_lt_mul_of_pos_left upper (Real.exp_pos _)
+    _ = 1 := by rw [← Real.exp_add, add_neg_cancel, Real.exp_zero]
+
+private theorem product_defect {J : Type*} (s : Finset J) (f : J → ℝ)
+    (hf : ∀ j ∈ s, 0 ≤ f j ∧ f j ≤ 1) :
+    0 ≤ (∏ j ∈ s, f j) ∧ (∏ j ∈ s, f j) ≤ 1 ∧
+      1 - (∏ j ∈ s, f j) ≤ ∑ j ∈ s, (1 - f j) := by
+  classical
+  induction s using Finset.induction_on with
+  | empty => simp
+  | @insert j s hnot ih =>
+    obtain ⟨factorNonneg, factorBound⟩ := hf j (Finset.mem_insert_self _ _)
+    obtain ⟨productNonneg, productBound, tailBound⟩ :=
+      ih (fun k hk => hf k (Finset.mem_insert_of_mem hk))
+    rw [Finset.prod_insert hnot, Finset.sum_insert hnot]
+    refine ⟨mul_nonneg factorNonneg productNonneg, ?_, ?_⟩
+    · simpa only [mul_one] using
+        (mul_le_mul factorBound productBound productNonneg zero_le_one)
+    · have omitted : (1 - f j) * (∏ k ∈ s, f k) ≤ 1 - f j := by
+        simpa only [mul_one] using
+          mul_le_mul_of_nonneg_left productBound (sub_nonneg.mpr factorBound)
+      calc
+        1 - f j * (∏ k ∈ s, f k) =
+            (1 - f j) * (∏ k ∈ s, f k) + (1 - ∏ k ∈ s, f k) := by ring
+        _ ≤ (1 - f j) + ∑ k ∈ s, (1 - f k) := add_le_add omitted tailBound
+
+section Schedule
+
+variable {J I : Type*} [Fintype J]
+
+def total (a : J → I → ℝ) (i : I) : ℝ := ∑ j, a j i
+
+def squareBudget (a : J → I → ℝ) (i : I) : ℝ := ∑ j, (a j i) ^ 2
+
+def eulerMultiplier (a : J → I → ℝ) (i : I) : ℝ := ∏ j, (1 - a j i)
+
+def euler (a : J → I → ℝ) (x : I → ℝ) : I → ℝ :=
+  fun i => eulerMultiplier a i * x i
+
+/-- Chronological composition of Euler updates in the shared coordinates. -/
+def runEuler (a : ℕ → I → ℝ) (x : I → ℝ) : ℕ → (I → ℝ)
+  | 0 => x
+  | n + 1 => diagonal (fun i => 1 - a n i) (runEuler a x n)
+
+theorem runEuler_eq (a : ℕ → I → ℝ) (x : I → ℝ) (n : ℕ) :
+    runEuler a x n = euler (fun j : Fin n => a j.val) x := by
+  induction n with
+  | zero =>
+    funext i
+    simp [runEuler, euler, eulerMultiplier]
+  | succ n ih =>
+    rw [runEuler, ih]
+    funext i
+    simp only [diagonal, LinearMap.coe_mk, AddHom.coe_mk, euler, eulerMultiplier]
+    rw [Fin.prod_univ_castSucc]
+    simp only [Fin.val_castSucc, Fin.val_last]
+    ring
+
+def recover (a : J → I → ℝ) : (I → ℝ) →ₗ[ℝ] (I → ℝ) :=
+  spectralHeat (total a) (-1)
+
+theorem recover_apply (a : J → I → ℝ) (y : I → ℝ) (i : I) :
+    recover a y i = Real.exp (total a i) * y i := by
+  simp [recover, spectralHeat, diagonal]
+
+theorem recover_exact (a : J → I → ℝ) (x : I → ℝ) :
+    recover a (spectralHeat (total a) 1 x) = x := by
+  funext i
+  rw [recover_apply]
+  change Real.exp (total a i) * (Real.exp (-(1 : ℝ) * total a i) * x i) = x i
+  rw [neg_mul, one_mul, ← mul_assoc, ← Real.exp_add, add_neg_cancel, Real.exp_zero, one_mul]
+
+private theorem compensated_product_eq (a : J → I → ℝ) (i : I) :
+    Real.exp (total a i) * eulerMultiplier a i =
+      ∏ j, Real.exp (a j i) * (1 - a j i) := by
+  rw [total, eulerMultiplier, Real.exp_sum, ← Finset.prod_mul_distrib]
+
+/-- Relative Euler attenuation after compensating for the exact heat decay. -/
+theorem compensated_product_bounds (a : J → I → ℝ) (i : I)
+    (upper : ∀ j, a j i ≤ 1) :
+    0 ≤ Real.exp (total a i) * eulerMultiplier a i ∧
+      Real.exp (total a i) * eulerMultiplier a i ≤ 1 ∧
+      1 - Real.exp (total a i) * eulerMultiplier a i ≤ squareBudget a i := by
+  let f (j : J) := Real.exp (a j i) * (1 - a j i)
+  rw [compensated_product_eq]
+  obtain ⟨nonneg, bounded, defect⟩ := product_defect Finset.univ f
+    (fun j _ => (compensated_factor_bounds (upper j)).2)
+  refine ⟨nonneg, bounded, defect.trans (Finset.sum_le_sum ?_)⟩
+  intro j _
+  have h := (compensated_factor_bounds (upper j)).1
+  change 1 - Real.exp (a j i) * (1 - a j i) ≤ (a j i) ^ 2
+  linarith
+
+theorem compensated_product_lt_one (a : J → I → ℝ) (i : I)
+    (upper : ∀ j, a j i ≤ 1) {j : J} (nonzero : a j i ≠ 0) :
+    Real.exp (total a i) * eulerMultiplier a i < 1 := by
+  classical
+  let f (k : J) := Real.exp (a k i) * (1 - a k i)
+  obtain ⟨_, bounded, _⟩ := product_defect (Finset.univ.erase j) f
+    (fun k _ => (compensated_factor_bounds (upper k)).2)
+  have hn : 0 ≤ f j := (compensated_factor_bounds (upper j)).2.1
+  calc
+    Real.exp (total a i) * eulerMultiplier a i = ∏ k, f k := compensated_product_eq a i
+    _ = (∏ k ∈ Finset.univ.erase j, f k) * f j :=
+      (Finset.prod_erase_mul _ _ (Finset.mem_univ j)).symm
+    _ ≤ 1 * f j := mul_le_mul_of_nonneg_right bounded hn
+    _ < 1 := by simpa only [one_mul] using compensated_factor_lt_one nonzero
+
+/-- Exact exponential compensation recovers the input precisely when
+every mode with nonzero Euler exposure has zero initial coefficient. -/
+theorem recover_euler_eq_source_iff (a : J → I → ℝ) (x : I → ℝ)
+    (upper : ∀ j i, a j i ≤ 1) :
+    recover a (euler a x) = x ↔ ∀ j i, a j i ≠ 0 → x i = 0 := by
+  constructor
+  · intro same j i nonzero
+    have coefficient := congrFun same i
+    rw [recover_apply, euler] at coefficient
+    have defect : (Real.exp (total a i) * eulerMultiplier a i - 1) * x i = 0 := by
+      rw [sub_mul, one_mul, mul_assoc, coefficient, sub_self]
+    exact (mul_eq_zero.mp defect).resolve_left
+      (sub_ne_zero.mpr (compensated_product_lt_one a i (fun j => upper j i) nonzero).ne)
+  · intro vanishes
+    funext i
+    by_cases zero : x i = 0
+    · simp [recover_apply, euler, zero]
+    · have zeroExposure (j : J) : a j i = 0 := by
+        by_contra exposed
+        exact zero (vanishes j i exposed)
+      simp [recover_apply, euler, eulerMultiplier, total, zeroExposure]
+
+theorem recover_euler_error (a : J → I → ℝ) (x : I → ℝ) (i : I)
+    (upper : ∀ j, a j i ≤ 1) :
+    |recover a (euler a x) i - x i| ≤ squareBudget a i * |x i| := by
+  obtain ⟨_, bounded, loss⟩ := compensated_product_bounds a i upper
+  rw [recover_apply, euler,
+    show Real.exp (total a i) * (eulerMultiplier a i * x i) - x i =
+      (Real.exp (total a i) * eulerMultiplier a i - 1) * x i by ring,
+    abs_mul, abs_of_nonpos (sub_nonpos.mpr bounded)]
+  exact mul_le_mul_of_nonneg_right (by linarith) (abs_nonneg _)
+
+theorem recover_euler_squareEnergy_le [Fintype I] (a : J → I → ℝ) (x : I → ℝ)
+    (upper : ∀ j i, a j i ≤ 1) :
+    (∑ i, (recover a (euler a x) i) ^ 2) ≤ ∑ i, (x i) ^ 2 := by
+  apply Finset.sum_le_sum
+  intro i _
+  obtain ⟨nonneg, bound, _⟩ := compensated_product_bounds a i (fun j => upper j i)
+  have squared : (Real.exp (total a i) * eulerMultiplier a i) ^ 2 ≤ 1 := by
+    simpa only [pow_two, one_mul] using mul_le_mul bound bound nonneg zero_le_one
+  calc
+    (recover a (euler a x) i) ^ 2 =
+        (Real.exp (total a i) * eulerMultiplier a i) ^ 2 * (x i) ^ 2 := by
+      rw [recover_apply, euler]
+      ring
+    _ ≤ (x i) ^ 2 := by
+      simpa only [one_mul] using mul_le_mul_of_nonneg_right squared (sq_nonneg (x i))
+
+/-- The forward approximation charge is the compensated charge times the
+exact forward attenuation. -/
+theorem euler_forward_error (a : J → I → ℝ) (x : I → ℝ) (i : I)
+    (upper : ∀ j, a j i ≤ 1) :
+    |euler a x i - spectralHeat (total a) 1 x i| ≤
+      Real.exp (-total a i) * squareBudget a i * |x i| := by
+  have cancel : Real.exp (-total a i) * Real.exp (total a i) = 1 := by
+    rw [← Real.exp_add, neg_add_cancel, Real.exp_zero]
+  have factor :
+      euler a x i - spectralHeat (total a) 1 x i =
+        Real.exp (-total a i) * (recover a (euler a x) i - x i) := by
+    rw [recover_apply]
+    change euler a x i - Real.exp (-(1 : ℝ) * total a i) * x i =
+      Real.exp (-total a i) * (Real.exp (total a i) * euler a x i - x i)
+    rw [neg_mul, one_mul, mul_sub, ← mul_assoc, cancel, one_mul]
+  rw [factor, abs_mul, abs_of_pos (Real.exp_pos _), mul_assoc]
+  exact mul_le_mul_of_nonneg_left (recover_euler_error a x i upper) (Real.exp_pos _).le
+
+/-- An observation perturbation is multiplied by the exact inverse gain.
+The Euler discretization charge depends only on the squared exposures. -/
+theorem recover_readout_error [Fintype I] (a : J → I → ℝ) (x y weight : I → ℝ)
+    (upper : ∀ j i, a j i ≤ 1) :
+    |dot weight (recover a y) - dot weight x| ≤
+      ∑ i, |weight i| * (Real.exp (total a i) * |y i - euler a x i| +
+        squareBudget a i * |x i|) := by
+  unfold dot
+  rw [← Finset.sum_sub_distrib]
+  refine (Finset.abs_sum_le_sum_abs _ _).trans (Finset.sum_le_sum ?_)
+  intro i _
+  rw [← mul_sub, abs_mul]
+  apply mul_le_mul_of_nonneg_left _ (abs_nonneg _)
+  calc
+    |recover a y i - x i| ≤
+        |recover a y i - recover a (euler a x) i| + |recover a (euler a x) i - x i| := by
+      have split : recover a y i - x i =
+          (recover a y i - recover a (euler a x) i) + (recover a (euler a x) i - x i) := by ring
+      rw [split]
+      exact abs_add_le _ _
+    _ ≤ Real.exp (total a i) * |y i - euler a x i| + squareBudget a i * |x i| := by
+      apply add_le_add _ (recover_euler_error a x i (fun j => upper j i))
+      rw [recover_apply, recover_apply, ← mul_sub, abs_mul, abs_of_pos (Real.exp_pos _)]
+
+theorem euler_leftInverse_of_strict (a : J → I → ℝ) (strict : ∀ j i, a j i < 1) :
+    Function.LeftInverse (fun y i => y i / eulerMultiplier a i) (euler a) := by
+  intro x
+  funext i
+  have positive : 0 < eulerMultiplier a i :=
+    Finset.prod_pos (fun j _ => sub_pos.mpr (strict j i))
+  change eulerMultiplier a i * x i / eulerMultiplier a i = x i
+  calc
+    eulerMultiplier a i * x i / eulerMultiplier a i =
+        x i * (eulerMultiplier a i / eulerMultiplier a i) := by ring
+    _ = x i := by rw [div_self positive.ne', mul_one]
+
+/-- If the quadratic budget is below one, it also bounds the actual Euler
+inverse gain, which undoes the Euler multipliers exactly. -/
+theorem euler_inverse_gain_le (a : J → I → ℝ) (i : I)
+    (upper : ∀ j, a j i ≤ 1) (small : squareBudget a i < 1) :
+    1 / eulerMultiplier a i ≤ Real.exp (total a i) / (1 - squareBudget a i) := by
+  obtain ⟨_, _, defect⟩ := compensated_product_bounds a i upper
+  have lower : 1 - squareBudget a i ≤ Real.exp (total a i) * eulerMultiplier a i := by
+    linarith
+  have positive : 0 < eulerMultiplier a i := by
+    apply lt_of_not_ge
+    intro h
+    have productNonpos : Real.exp (total a i) * eulerMultiplier a i ≤ 0 :=
+      mul_nonpos_of_nonneg_of_nonpos (Real.exp_pos _).le h
+    linarith
+  apply (div_le_iff₀ positive).mpr
+  rw [div_mul_eq_mul_div]
+  exact (le_div_iff₀ (sub_pos.mpr small)).mpr (by simpa only [one_mul] using lower)
+
+/-- The exact diagonal exposure encoded by strictly positive Euler factors. -/
+def logExposure (a : J → I → ℝ) (i : I) : ℝ := ∑ j, -Real.log (1 - a j i)
+
+theorem logExposure_nonneg (a : J → I → ℝ) (i : I)
+    (lower : ∀ j, 0 ≤ a j i) (upper : ∀ j, a j i < 1) :
+    0 ≤ logExposure a i := by
+  apply Finset.sum_nonneg
+  intro j _
+  exact neg_nonneg.mpr
+    (Real.log_nonpos (sub_pos.mpr (upper j)).le (by linarith [lower j]))
+
+theorem euler_eq_log_heat (a : J → I → ℝ) (x : I → ℝ) (strict : ∀ j i, a j i < 1) :
+    euler a x = spectralHeat (logExposure a) 1 x := by
+  funext i
+  change eulerMultiplier a i * x i = Real.exp (-(1 : ℝ) * logExposure a i) * x i
+  congr 1
+  rw [neg_mul, one_mul, eulerMultiplier, logExposure,
+    ← Finset.sum_neg_distrib, Real.exp_sum]
+  apply Finset.prod_congr rfl
+  intro j _
+  rw [neg_neg, Real.exp_log (sub_pos.mpr (strict j i))]
+
+/-- A proposed scalar clock fits the Euler product precisely when its
+exposure agrees with the logarithmic exposure on every observed mode. -/
+theorem euler_fits_clock_iff (a : J → I → ℝ) (strict : ∀ j i, a j i < 1)
+    (rates : I → ℝ) (time : ℝ) :
+    (∀ x, euler a x = spectralHeat rates time x) ↔
+      ∀ i, logExposure a i = time * rates i := by
+  constructor
+  · intro matchClock i
+    have agree := congrFun (matchClock (fun _ => 1)) i
+    rw [euler_eq_log_heat a _ strict] at agree
+    change Real.exp (-(1 : ℝ) * logExposure a i) * 1 =
+      Real.exp (-time * rates i) * 1 at agree
+    rw [mul_one, mul_one] at agree
+    have eq := Real.exp_injective agree
+    linarith
+  · intro coordinate x
+    rw [euler_eq_log_heat a x strict]
+    funext i
+    change Real.exp (-(1 : ℝ) * logExposure a i) * x i =
+      Real.exp (-time * rates i) * x i
+    rw [coordinate i, neg_mul, one_mul, ← neg_mul]
+
+/-- A unit exposure destroys that mode in the Euler product. -/
+theorem euler_erases_of_unit (a : J → I → ℝ) (x : I → ℝ) (i : I) {j : J} (hit : a j i = 1) :
+    euler a x i = 0 := by
+  have vanished : eulerMultiplier a i = 0 := by
+    unfold eulerMultiplier
+    apply Finset.prod_eq_zero (Finset.mem_univ j)
+    simp [hit]
+  simp [euler, vanished]
+
+theorem no_leftInverse_of_unit [DecidableEq I] (a : J → I → ℝ) (i : I) {j : J}
+    (hit : a j i = 1) :
+    ¬ ∃ decode : (I → ℝ) → (I → ℝ), Function.LeftInverse decode (euler a) := by
+  rintro ⟨decode, left⟩
+  let impulse : I → ℝ := fun k => if k = i then 1 else 0
+  have same : euler a impulse = euler a (fun _ => 0) := by
+    funext k
+    by_cases h : k = i
+    · subst k
+      rw [euler_erases_of_unit a impulse i hit, euler_erases_of_unit a _ i hit]
+    · simp [euler, impulse, h]
+  have impossible := congrFun (left.injective same) i
+  simp [impulse] at impossible
+
+/-- Equal subdivision preserves total exposure and divides the squared
+Euler budget by the number of substeps. -/
+def subdivide (a : J → I → ℝ) (m : ℕ) : J × Fin m → I → ℝ :=
+  fun p i => a p.1 i / (m : ℝ)
+
+theorem subdivide_total (a : J → I → ℝ) (m : ℕ) (hm : 0 < m) (i : I) :
+    total (subdivide a m) i = total a i := by
+  have hm' : (m : ℝ) ≠ 0 := by exact_mod_cast hm.ne'
+  unfold total subdivide
+  rw [Fintype.sum_prod_type]
+  simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+  apply Finset.sum_congr rfl
+  intro j _
+  field_simp
+
+theorem subdivide_squareBudget (a : J → I → ℝ) (m : ℕ) (hm : 0 < m) (i : I) :
+    squareBudget (subdivide a m) i = squareBudget a i / (m : ℝ) := by
+  have hm' : (m : ℝ) ≠ 0 := by exact_mod_cast hm.ne'
+  unfold squareBudget subdivide
+  rw [Fintype.sum_prod_type, Finset.sum_div]
+  simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
+  apply Finset.sum_congr rfl
+  intro j _
+  field_simp
+
+theorem subdivide_recover_error (a : J → I → ℝ) (m : ℕ) (hm : 0 < m)
+    (x : I → ℝ) (i : I) (upper : ∀ j, a j i ≤ (m : ℝ)) :
+    |recover a (euler (subdivide a m) x) i - x i| ≤
+      (squareBudget a i / (m : ℝ)) * |x i| := by
+  have hm' : (0 : ℝ) < m := by exact_mod_cast hm
+  have bound := recover_euler_error (subdivide a m) x i (fun p => by
+    unfold subdivide
+    exact (div_le_one hm').mpr (upper p.1))
+  simpa only [recover_apply, subdivide_total a m hm, subdivide_squareBudget a m hm] using bound
+
+end Schedule
+
+end GRWTSK.OperatorTheory.FiniteEulerHeatRecovery

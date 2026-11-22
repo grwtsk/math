@@ -1,0 +1,9 @@
+# One-count slack in primitive Dirichlet height bands
+
+[Lean source](PrimitiveDirichletBandSlack.lean), SHA-256 `32b573eb5ca13d43051347f03c9659a17649aa76efbf30d748be5759eda1c2ed`, uses [full-window slack](PrimitiveDirichletCountSlack.lean), blob `cdc37589732b1bd2f3bb23f3ee9da71d344c1604`. The strict height-window definition, primitive character and analytic multiplicities are unchanged. The dispatch's separate machine pin is Cryptids `3647718b5df22e1a61462dec0376bd204526285a`.
+
+For lo≤hi the upper window minus the lower contains exactly lo≤|Im ρ|<hi. The right-half count difference is the sum of positive analytic orders in the finite set difference, so it vanishes exactly when the band has no right-half zeros. Subtracting the multiplicity split at both endpoints expresses the total-count increment as the line-count increment plus twice the right-half increment. Thus a gap of at most one excludes right-half zeros. Reflection preserves the band, so it also excludes left-half zeros. A cover of all nonnegative absolute ordinates supplies the original critical-line statement, with the usual conductor-one specialization.
+
+The checked control at ordinate one belongs to [1,2) and not [0,1). If both endpoints were open it would be missed. Coverage and verified count bounds on actual bands remain to be supplied. The offset chat's horizontal collar controls distance to the critical line, while this interface compares exact count increments at ordinate boundaries. [Published GRH source work](https://github.com/grwtsk/math/issues/1801)
+
+Targeted Lake build, strict source elaboration, module-only kernel replay and all four axiom audits passed. Only propext, Classical.choice and Quot.sound were reported. Full dependency replay, independent review and certification of actual band enclosures were NOT_RUN. Issue #1801 separately notes a carrier replay that stopped before producing a result.
