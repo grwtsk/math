@@ -137,7 +137,7 @@ On this genuine source domain the entire completed expression gives
 \boxed{
 G_\xi(w)=\frac{1}{2t}\left[
 \underbrace{\frac1s+\frac1{s-1}}_{\text{original pole corrections}}
--\underbrace{\tfrac12\log\pi
+\underbrace{-\tfrac12\log\pi
 +\tfrac12\psi(s/2)}_{\text{Archimedean gamma factor}}
 -\underbrace{\sum_{n=2}^{\infty}\frac{\Lambda(n)}{n^s}}_{\text{all prime powers}}
 \right].}\tag{11}
