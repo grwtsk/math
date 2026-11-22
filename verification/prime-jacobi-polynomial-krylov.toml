@@ -22,14 +22,14 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 8
+expected_theorems = 11
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
 name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiPolynomialKrylov"
 path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiPolynomialKrylov.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiPolynomialKrylov"
-git_blob = "01bdf56a85a68b19fdbad6278b446d7d26a027a4"
+git_blob = "8dba9fb238bfe42ddc109b2e69b9ac2cbdcbca38"
 theorems = [
   "inverse_coefficients_act_as_basis",
   "coefficient_matrix_unique_of_basis_action",
@@ -39,4 +39,7 @@ theorems = [
   "sourceCoefficientRowNorm_at_fin",
   "sourceCoefficientRowNorm_le_envelope_of_recurrence",
   "source_hankel_inverse_row_le_of_actual_row_recurrence",
+  "true_coefficient_row_bound_one_of_envelope_domination",
+  "source_hankel_inverse_row_linear_of_envelope_domination",
+  "source_hankel_inverse_row_linear_of_actual_row_recurrence",
 ]
