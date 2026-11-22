@@ -76,8 +76,10 @@ theorem signedSmoothedPrimeHead_integer_step
   apply Finset.sum_congr rfl
   intro m hm
   have hmpos : (0 : ℝ) < m := by
-    have h := (Finset.mem_Icc.mp hm).1
-    exact_mod_cast (Nat.lt_of_lt_of_le (by omega : 0 < m) (Nat.le_refl m))
+    have hnat : 0 < m := by
+      have h := (Finset.mem_Icc.mp hm).1
+      omega
+    exact_mod_cast hnat
   field_simp [ne_of_gt hmpos]
   ring
 
@@ -93,12 +95,17 @@ theorem levelGm_integer_step (Λ : Level) (n : ℕ)
     exact_mod_cast (by omega : 1 ≤ n + 1)
   rw [levelGm_eq_normalized Λ ((n + 1 : ℕ) : ℝ) hnSucc,
     levelGm_eq_normalized Λ (n : ℝ) hnReal]
-  unfold normalizedGm logarithmicStep
-  rw [show signedSmoothedPrimeHead Λ ((n + 1 : ℕ) : ℝ) -
-      signedSmoothedPrimeHead Λ (n : ℝ) =
-      weightedMertens Λ n from
-        signedSmoothedPrimeHead_integer_step Λ n hn]
-  ring
+  have hs := signedSmoothedPrimeHead_integer_step Λ n hn
+  calc
+    normalizedGm Λ ((n + 1 : ℕ) : ℝ) -
+        normalizedGm Λ (n : ℝ) =
+      (signedSmoothedPrimeHead Λ ((n + 1 : ℕ) : ℝ) -
+        signedSmoothedPrimeHead Λ (n : ℝ)) +
+        analyticConstant Λ - logarithmicStep n := by
+          unfold normalizedGm logarithmicStep
+          ring
+    _ = weightedMertens Λ n + analyticConstant Λ -
+          logarithmicStep n := by rw [hs]
 
 /-- The original centered weighted Mertens sum is the exact Gm
 integer slope up to the positive logarithmic-step remainder.
