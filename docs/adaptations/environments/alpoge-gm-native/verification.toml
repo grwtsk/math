@@ -26,7 +26,7 @@ alpoge_repository = "tamnd/riemann-lean"
 alpoge_revision = "af705e0d9a5904326eb0693310e36d9484df7f8f"
 
 [policy]
-expected_theorems = 48
+expected_theorems = 51
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
@@ -168,4 +168,21 @@ theorems = [
   "nativeChebyshevPrefix_succ",
   "original_weightedMertens_succ",
   "nativeChebyshev_from_original_weightedMertens",
+]
+
+# RH-independent smoothed original Gm finite cancellation.
+# Infinite tail, Mellin pole and classical PNT/AP error are mathematical
+# arguments in adjacent SmoothedMertensTail.md; not Lean-verified.
+# The original source hPNT and any power-saving exponent are NOT PROVED
+# by the three finite Lean source candidates.
+[[module]]
+name = "GRWTSK.NumberTheory.AlpogeNativeSmoothedMertensTail"
+path = "docs/adaptations/environments/alpoge-gm-native/SmoothedMertensTail.lean"
+staged_upstream_path = "src/GRWTSK/NumberTheory/AlpogeNativeSmoothedMertensTail.lean"
+namespace = "GRWTSK.NumberTheory.AlpogeNativeSmoothedMertensTail"
+git_blob = "ec7709116627e39e7af00223941c2bac9109f817"
+theorems = [
+  "signedSmoothedPrimeHead_eq_Mertens_sub_Chebyshev",
+  "levelGm_integer_eq_centeredMertens_sub_Chebyshev",
+  "levelGm_integer_upper_iff_original_source",
 ]
