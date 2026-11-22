@@ -86,7 +86,7 @@ Pinned original Mathlib v4.33.1 has unconditional nonprincipal L(1) nonvanishing
 
 ## Exact independent finite checks
 
-The exact-Fraction checker [cyclic_level_centered_slope_checks.json](../../../../scripts/cyclic_level_centered_slope_checks.json) is a generated **conversation** result, not a committed source fixture. It tests source-exact algebra with rationally approximated prime-power logarithms and original cyclic phases for moduli 4, 5 and 15. It passed **768 integer slope identities** and **768 rational-interval bounds** of \(D(n)-(\log n+1)\in[0,1/n]\) at integers 1..256. All analytic constants A were fixed as explicitly synthetic rational values to test cancellation, **not claimed to be an evaluation of a native Level**.
+The exact-Fraction checker [scripts/verify_cyclic_level_centered_slope.py](../../../../scripts/verify_cyclic_level_centered_slope.py) is a generated **conversation** result, not a committed source fixture. It tests source-exact algebra with rationally approximated prime-power logarithms and original cyclic phases for moduli 4, 5 and 15. It passed **768 integer slope identities** and **768 rational-interval bounds** of \(D(n)-(\log n+1)\in[0,1/n]\) at integers 1..256. All analytic constants A were fixed as explicitly synthetic rational values to test cancellation, **not claimed to be an evaluation of a native Level**.
 
 This check cannot prove S4 at any unbounded range. The Lean source statements in CenteredSlope.lean are candidates, their transitive imported native normalization is also uncompiled. Mathematical source equality, analytic supplier, finite computational checks and kernel evidence remain separate.
 
