@@ -87,8 +87,6 @@ $B_i=t\lambda_i$ for every mode. This gives the test for using a
 single scalar calibration. Zero-exposure modes stay fixed.
 All of these comparisons assume a shared spectral chart.
 
-<<<<<<< HEAD
-=======
 ## Logarithmic exposure and inverse stability
 
 Fix a mode and a common exposure cap $0\le\rho<1$ with
@@ -123,7 +121,6 @@ uniform stability. The actual HS sensor still needs a source-bound
 modal encoder and a proof that its realized exposures obey the common
 cap and total bound.
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 ## Analytic source boundary
 
 The Rodgers–Tao function uses $e^{tu^2}$ in its half-line integral.
@@ -141,20 +138,13 @@ of that physical and arithmetic interface remains open.
 calibrated dwell and common spectral chart → modal Euler exposures
 product induction and scalar exponential inequalities → finite bias budget
 exact inverse gain + measurement error → weighted readout budget
-<<<<<<< HEAD
-=======
 uniform exposure cap + total exposure bound → uniform Euler inverse gain
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 source encoder and sensor factorization + analytic tails → original consumer [open]
 ```
 
 ## Verification
 
-<<<<<<< HEAD
-The new Lean source has SHA-256 `9de56ee5707eb3c604ff54ad65f84b96472811ef5b8c3207ca4f03b23f6a8c61`. The targeted Lake
-=======
 The initial Lean source at `e930c3a57bf9` has SHA-256 `9de56ee5707eb3c604ff54ad65f84b96472811ef5b8c3207ca4f03b23f6a8c61`. The targeted Lake
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 build, standalone compilation with trust zero and warnings as errors,
 and targeted kernel replay passed on Lean 4.34.1 and Mathlib
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. All 22 theorem audits
@@ -166,9 +156,6 @@ half-exposure step failed exact exponential compensation on a unit
 input despite retaining that mode. The calibrated 95-slot readout
 type also checked. Full fresh import-closure replay, independent
 mathematical review and HS sensor validation are `NOT_RUN`.
-<<<<<<< HEAD
-[Coordination and exact evidence](https://github.com/grwtsk/math/issues/1824)
-=======
 The logarithmic exposure extension compiled with `--trust=0` and
 warnings as errors on the same root pins. Target kernel replay passed.
 Exact checks for eight half-exposures confirmed quadratic budget 2,
@@ -279,4 +266,3 @@ against their pinned sources. The audit found only `propext`,
 `99661915eb6e33e54f84fde1e80b96ddd0ae835d2c6a7da96a22d2def1b72c68`.
 Full fresh import replay, independent review and physical source
 identification remain `NOT_RUN`.
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

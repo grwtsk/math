@@ -203,8 +203,6 @@ theorem exists_readout_failure_iff_not_RH (window : ℕ)
   (halts_iff_exists_readout_failure window calibration observed accurate).symm.trans
     (halts_iff_not_RH window)
 
-<<<<<<< HEAD
-=======
 
 private theorem run_none_add {window : ℕ} {c : Configuration window} {n : ℕ}
     (noneAt : run n c = none) (extra : ℕ) : run (n + extra) c = none := by
@@ -382,5 +380,4 @@ theorem shifted_readout_passes_address_but_disagrees {window depth : ℕ}
     have position : c.position + 1 = c.position := agrees.2.1
     omega
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95PrimeMachine

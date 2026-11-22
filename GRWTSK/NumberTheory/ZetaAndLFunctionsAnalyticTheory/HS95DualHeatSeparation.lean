@@ -89,8 +89,6 @@ theorem dual_heat_decoder_iff {q : ℕ} (χ : DirichletCharacter ℂ q)
       gap.not_ge (overlap.mp ⟨y, left, right⟩ i)
     exact decide_eq_false bad
 
-<<<<<<< HEAD
-=======
 /-- Align the imaginary readout with the known original phase at a
 single coordinate. The two noise disks then lie on opposite sides of
 zero whenever the surviving phase strictly exceeds the noise. -/
@@ -146,5 +144,4 @@ theorem dual_heat_coordinate_sign {q : ℕ} (χ : DirichletCharacter ℂ q)
   exact ⟨fun close => (sub_pos.mpr gap).trans_le (margin.1 close),
     fun close => (margin.2 close).trans_lt (neg_neg_of_pos (sub_pos.mpr gap))⟩
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.HS95CharacterCarrier

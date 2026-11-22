@@ -85,8 +85,6 @@ theorem count_eq_completed_zeta_of_value_bounds {D : ℂ → ℂ} {c : ℂ} {R h
     (by simpa only [sub_zero] using sourceBound) hz
   simpa using bound
 
-<<<<<<< HEAD
-=======
 private theorem logDeriv_error_le_separated {f g : ℂ → ℂ} {z : ℂ} {m M δ η : ℝ}
     (small : δ < m) (hf : m ≤ ‖f z‖) (hM : ‖deriv f z‖ ≤ M)
     (valueError : ‖g z - f z‖ ≤ δ) (derivError : ‖deriv g z - deriv f z‖ ≤ η) :
@@ -137,7 +135,6 @@ theorem count_eq_completed_zeta_of_separated_value_collar {D : ℂ → ℂ}
     (error z inside) (deriv_error_le_of_value_collar width
       (fun w _ => diff.analyticAt w) hD error hz)
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- On the counting circle alone a uniform value bound cannot bound the
 derivative independently of degree. -/
 theorem unit_circle_derivative_control (n : ℕ) :

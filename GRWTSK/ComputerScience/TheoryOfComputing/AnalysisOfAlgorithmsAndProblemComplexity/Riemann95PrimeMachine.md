@@ -66,8 +66,6 @@ then reaches a representative of the same native `initialRoot`. The source
 `3c6eae70196edf6d1beb66c06d7b481e2acdf387`.
 [Exact bootstrap](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Bootstrap95.lean#L72-L77)
 
-<<<<<<< HEAD
-=======
 ## Finite tape observations
 
 `TapeAgrees depth c d` requires the same prime address, absolute head
@@ -100,7 +98,6 @@ configuration and compare the corresponding cell in the upstream
 `ListBlank` quotient. The published one-step control below shows that
 depth zero need not determine the next scanned bit.
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 ## Halting and the original arithmetic source
 
 `eval_project` identifies the entire partial terminal result for every
@@ -137,10 +134,7 @@ configurations.
 ranked prime ↔ native control
 actual instruction + complete tape lists → exact one-step projection
 one-step projection → exact finite runs → exact partial evaluation
-<<<<<<< HEAD
-=======
 initial tape depth d+n → agreement of n-instruction results at depth d
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 blank projection + native bootstrap → executable bootstrap
 blank evaluation + upstream source theorems → Shunia and RH equivalences
 HS heat or waveform controller → exact step relation on the full state [open]
@@ -151,8 +145,6 @@ carrier to the executable configuration and a proof that initialized
 states, successful instruction boundaries, and terminal results satisfy
 that relation. The direct interpreter supplies the target for such a proof.
 
-<<<<<<< HEAD
-=======
 ## Closed walks with absolute head position
 
 `run_position_parity` tracks displacement modulo two for every successful
@@ -174,7 +166,6 @@ half-tapes still represent blanks in the native quotient, while the
 absolute position has increased by 95. This gives a genuine projected
 loop that fails the full-configuration return condition.
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 ## Verification
 
 The isolated Lake target built on Lean 4.35.0-rc4 with the actual pinned
@@ -191,9 +182,6 @@ prime 2 at position zero, one executable step gave prime 227 and position
 
 Full fresh replay of the dependency closure, independent mathematical
 review and HS controller parity are `NOT_RUN`.
-<<<<<<< HEAD
-[Coordination and verification record](https://github.com/grwtsk/math/issues/1821)
-=======
 The finite tape extension elaborated with `--trust=0` and warnings as
 errors on the same isolated pins. Exact-type checks, target kernel replay
 and executable one-step truncation controls passed. The transitive audit
@@ -323,4 +311,3 @@ the same length and a different final window. The optional result
 view still agrees. This is the local rule needed to compose multiple
 checked boundaries. Physical implementation of the check is separate.
 [Verification record](https://github.com/grwtsk/math/issues/1821)
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

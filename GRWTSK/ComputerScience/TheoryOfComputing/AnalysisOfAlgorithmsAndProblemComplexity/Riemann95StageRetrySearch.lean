@@ -241,8 +241,6 @@ theorem eventually_resolved (root : Root) (start : ℕ) :
   | none => simp [success] at found
   | some receipt => exact ⟨delay, receipt, by simp [attempt, success]⟩
 
-<<<<<<< HEAD
-=======
 /-- The least code whose finite native verification returns a receipt. -/
 def firstSuccessfulCode (root : Root) : ℕ :=
   Nat.find (exists_successful_probe root)
@@ -328,7 +326,6 @@ theorem attempt_schedule_resolves_iff (root : Root) (bounds : ℕ → ℕ) :
   · rintro ⟨trial, reached⟩
     exact ⟨trial, by rw [attempt_eq_firstSuccessfulCode, ite_eq_left reached]⟩
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 structure Active where
   root : Root
   spent : ℕ
@@ -346,21 +343,6 @@ inductive RunState where
   | live (active : Active)
   | halted (stopped : Stopped)
 
-<<<<<<< HEAD
-/-- Run one complete native stage or keep an already witnessed stop. -/
-def tick : RunState → RunState
-  | .halted stopped => .halted stopped
-  | .live active =>
-    match resolve active.root with
-    | .completed next steps safe successor padding positive trace =>
-      .live ⟨next, active.spent + steps,
-        Receipt.from_blank (.completed next steps safe successor padding positive trace)
-          active.spent active.reached⟩
-    | .counterexample finish steps bad trace terminal =>
-      have preserved := Receipt.from_blank (.counterexample finish steps bad trace terminal)
-        active.spent active.reached
-      .halted ⟨active.root.stage, finish, active.spent + steps, bad, preserved.1, preserved.2⟩
-=======
 private def commitReceipt (active : Active) (receipt : Receipt active.root) : RunState :=
   match receipt with
   | .completed next steps safe successor padding positive trace =>
@@ -376,7 +358,6 @@ private def commitReceipt (active : Active) (receipt : Receipt active.root) : Ru
 def tick : RunState → RunState
   | .halted stopped => .halted stopped
   | .live active => commitReceipt active (resolve active.root)
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 def run : ℕ → RunState
   | 0 => .live ⟨firstRoot, 3634, bootstrap_to_firstRoot⟩
@@ -427,8 +408,6 @@ theorem halts_iff_native : Halts ↔ ConjectureMachines.Halts machine :=
 theorem halts_iff_not_RH : Halts ↔ ¬ RiemannHypothesis :=
   halts_iff_native.trans ConjectureMachines.Riemann95.Semantics.halts_candidate_iff_not_riemannHypothesis
 
-<<<<<<< HEAD
-=======
 
 /-! ## One completed probe per enabled scheduler tick -/
 
@@ -1340,5 +1319,4 @@ theorem batchRun_halts_iff_of_padded_ticks {original padded : ℕ → List Candi
     rw [empty t i lo hi]
     rfl) stop
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95StageRetrySearch

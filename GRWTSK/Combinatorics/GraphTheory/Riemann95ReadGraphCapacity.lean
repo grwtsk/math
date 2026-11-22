@@ -1,9 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
-<<<<<<< HEAD
-import Cryptids.Riemann95Definition
-=======
 import Cryptids.Semantics.Riemann95
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 import GRWTSK.DynamicalSystemsAndErgodicTheory.SoficSingletonPrefixCapacity
 
 /-!
@@ -158,8 +154,6 @@ theorem rooted_graph_capacity {V : Type*} [Fintype V] (G : LabeledGraph V Read) 
     (fun word => (exactRoot word).2)
   exact impossible ((exactRoot word).1 hp)
 
-<<<<<<< HEAD
-=======
 private theorem splitAt {V : Type*} {G : LabeledGraph V Read}
     {root finish : V} {word : List Read} (path : WordPath G root word finish) (k : ℕ) :
     ∃ middle, WordPath G root (word.take k) middle ∧ WordPath G middle (word.drop k) finish :=
@@ -1315,5 +1309,4 @@ theorem exists_unique_terminalFrontier_prefix {word attempted : List Read}
     other = attempted.take other.length := List.prefix_iff_eq_take.mp otherInitial
     _ = bad := equal ▸ (List.prefix_iff_eq_take.mp initial).symm
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Riemann95ReadGraphCapacity

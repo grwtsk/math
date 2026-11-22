@@ -96,8 +96,6 @@ theorem five_lane_one_phase_infeasible : ¬ Nonempty (Layout 95 5 19 2) := by
   have limit := capacity (by decide) (by decide) (by decide) layout
   omega
 
-<<<<<<< HEAD
-=======
 /-- The least nonnegative delay carrying the start to the observed phase. -/
 def cyclicDelay {phases : ℕ} (start observed : Fin phases) : ℕ :=
   (observed.val + phases - start.val) % phases
@@ -211,5 +209,4 @@ theorem decodeCyclicPrime_eq_some_iff_two_delays {states lanes phases width₁ w
         ((((layout.start q).val + a.val) % phases) + b.val) % phases = observed.val := by
   rw [decodeCyclicPrime_eq_some_iff, two_delays_iff h₁ h₂]
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.PrimeLaneCyclicDelay

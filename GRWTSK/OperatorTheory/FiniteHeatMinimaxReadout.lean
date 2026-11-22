@@ -148,8 +148,6 @@ theorem weighted_minimax {I : Type*} [Fintype I]
         rw [one_mul, abs_of_nonpos (by linarith)]
         linarith
 
-<<<<<<< HEAD
-=======
 private theorem observed_signal_bounds {p X N y x : ℝ} (hp : 0 < p) :
     (|x| ≤ X ∧ |y - p * x| ≤ N) ↔
       max (-X) ((y - N) / p) ≤ x ∧ x ≤ min X ((y + N) / p) := by
@@ -190,7 +188,6 @@ theorem observed_minimax {p X N y : ℝ} (hp : 0 < p)
       have endpoint := le_abs_self (z - lower)
       linarith
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- A single half-exposure remains invertible. With unit noise and unit
 signal budget its exact inverse nevertheless exceeds the minimax error. -/
 theorem half_exposure_inverse_control :
@@ -198,8 +195,6 @@ theorem half_exposure_inverse_control :
       |(1 : ℝ) / (1 / 2) - 0| > radius (1 / 2) 1 1 := by
   norm_num [radius, estimate, min_eq_left]
 
-<<<<<<< HEAD
-=======
 
 /-- At a feasible observation, the sharp error for a signed weighted
 readout comes from the two attainable endpoints of the projected box. -/
@@ -258,5 +253,4 @@ theorem observed_weighted_minimax {I : Type*} [Fintype I]
       change (U - L) / 2 ≤ |z - L|
       linarith [le_abs_self (z - L)]
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.OperatorTheory.FiniteHeatMinimaxReadout

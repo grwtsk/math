@@ -67,8 +67,6 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEle
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEleventhRunNinthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEleventhRunTenthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerEleventhRunDiagonal
-<<<<<<< HEAD
-=======
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerTwelfthRunFirstCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerTwelfthRunSecondCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerTwelfthRunThirdCross
@@ -90,7 +88,6 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThi
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirteenthRunSeventhCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirteenthRunEighthCross
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineCheckerThirteenthRunNinthCross
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeCheckerCellDeficit
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddThreeStageSineReturn
 
@@ -2899,8 +2896,6 @@ theorem primitiveStageLower_of_blockSumAfterEleventhDiagonal_le (χ : DirichletC
     (checker_unit_test_iff_blockSumAfterEleventhSeventh_le.mp
       (checker_unit_test_iff_blockSumAfterEleventhDiagonal_le.mpr hr))
 
-<<<<<<< HEAD
-=======
 private def twelfthFirstPair : (ℕ × ℕ) × (ℕ × ℕ) := ((15678, 15741), (0, 96))
 
 set_option maxRecDepth 32768 in
@@ -4492,5 +4487,4 @@ theorem primitiveStageLower_of_blockSumAfterThirteenthNinth_le (χ : DirichletCh
     (checker_unit_test_iff_blockSumAfterThirteenthEighth_le.mp
       (checker_unit_test_iff_blockSumAfterThirteenthNinth_le.mpr hr))
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddThreeSineHilbertSchmidt.CheckerTriangle

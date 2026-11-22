@@ -88,8 +88,6 @@ observed cells + exact reachable-cell quotient → forced code collisions
 alternative tape layout or macro simulation → exact original halting return [open]
 ```
 
-<<<<<<< HEAD
-=======
 ## Exact quotient criterion for a fixed encoder
 
 `ReachedCell q b` means that the original blank run reaches native state
@@ -132,7 +130,6 @@ reached-cell quotient → exact step on the encoded tape → exact partial evalu
 exact partial evaluation + e 0 = 0 → equivalence of native blank-start halting
 ```
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 ## Verification
 
 The isolated target built against the actual pinned Cryptids declarations.
@@ -141,8 +138,6 @@ symbols at state 93 and for the obstruction with a 94-state target.
 The seven audited theorems depend only on `propext`, `Classical.choice`,
 and `Quot.sound`. Full fresh replay of the imported closure and independent
 mathematical review remain `NOT_RUN`.
-<<<<<<< HEAD
-=======
 The fixed-encoder extension compiled with `--trust=0` and warnings as
 errors on the same pins. Exact-type checks at target size 94 covered the
 criterion, the conditional return to `¬ RiemannHypothesis` and the failed
@@ -213,5 +208,4 @@ transitive axiom audit passed. The audited theorems use only subsets of
 `propext`, `Classical.choice` and `Quot.sound`. Fresh replay of the full
 import closure and independent mathematical review remain `NOT_RUN`.
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 [Coordination and verification record](https://github.com/grwtsk/math/issues/1822)

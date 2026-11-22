@@ -63,8 +63,6 @@ accepted HS record denotes the literal decoded arithmetic slot, followed
 by a proof of certificate supply for the specified infinite ranges.
 
 Verification for this extension is recorded in [issue #1820](https://github.com/grwtsk/math/issues/1820).
-<<<<<<< HEAD
-=======
 
 ## Delaying the certified window itself
 
@@ -140,4 +138,3 @@ interval on a tail satisfies the certificate premise of
 these reports and their binding to the current arithmetic stage
 remain explicit hypotheses. Verification is recorded in
 [issue #1820](https://github.com/grwtsk/math/issues/1820).
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

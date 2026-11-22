@@ -47,8 +47,6 @@ The isolated build uses Lean 4.35.0-rc4 and Mathlib
 `1f414401f69059aa7eead47b53ee40bd38455eeb`.
 Exact build and verification evidence is recorded with
 [issue #1821](https://github.com/grwtsk/math/issues/1821).
-<<<<<<< HEAD
-=======
 
 ## Exact finite graphs force halting
 
@@ -150,4 +148,3 @@ and the transitive axiom audit passed on the pins above. The audit
 reported only `propext`, `Classical.choice` and `Quot.sound`.
 Checked Lean SHA-256 `2246b4a2ba13f6c9358e367743222b9eb115766e6b603e9a3b176363120b13e8`. Fresh full dependency replay,
 independent review and physical graph lifting remain `NOT_RUN`.
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

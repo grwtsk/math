@@ -98,8 +98,6 @@ sample `3/8` gave absolute error `1/4` against each code.
 
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
-<<<<<<< HEAD
-=======
 
 ## Cofinal trials across prime windows
 
@@ -165,4 +163,3 @@ still accepted the shifted version. Source SHA-256
 `a7ec071668698cadf4960bd72f424e8a33feaa7419bc588a2cc3b5392909d1ac`.
 Full fresh import replay, independent review and physical validation
 are `NOT_RUN`.
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

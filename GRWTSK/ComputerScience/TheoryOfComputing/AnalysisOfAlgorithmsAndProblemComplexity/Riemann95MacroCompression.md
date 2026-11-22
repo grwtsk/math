@@ -97,8 +97,6 @@ on `[1,1,1]` stopped, with terminal observation `(61, 1, 1, 1)` matching
 the single native arrival. A second native instruction was absent.
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
-<<<<<<< HEAD
-=======
 
 ## Exact native instruction count
 
@@ -160,4 +158,3 @@ above. The audit found only `propext`, `Classical.choice` and
 `13b12bb448b85fc0c5eb3a30de0e2dce2e1caa427e5c69b6943a302f8614ce2e`.
 Full fresh dependency replay, independent review and HS runtime parity
 are `NOT_RUN`.
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

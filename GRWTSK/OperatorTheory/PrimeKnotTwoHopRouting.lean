@@ -127,8 +127,6 @@ theorem no_twoHop_95_cycle (s : Source Prime Knot) (weight : Knot → ℝ)
     exactSupport 0
   exact (by decide : nextSlot95 (nextSlot95 0) ≠ 0) returns
 
-<<<<<<< HEAD
-=======
 /-- Independent diagonal rescalings preserve the balance of the products
 along a permutation and its reversed arrows. -/
 theorem twoHop_cycle_product_balance [Fintype Slot]
@@ -313,5 +311,4 @@ theorem twoHop_cycle_diagonal_leak [Fintype Slot] [Nonempty Slot]
       Finset.univ_nonempty
   exact (not_lt_of_ge (lower.trans budget)) upper
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.PrimeKnotAlexander

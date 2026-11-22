@@ -347,7 +347,6 @@ theorem runOnCheckpointPrefix_firstFailure_iff {w : ℕ} (c : Configuration w) (
     · exact (runOnCheckpointPrefix_eq_none_iff_of_terminal reached stop _ _ _ _).mpr
         (lt_min (Nat.lt_succ_self n) fits)
 
-<<<<<<< HEAD
 private def checkpointFailureAt {w : ℕ} (c : Configuration w)
     (chunks : List CheckpointChunk) (last : List ℕ) (target n : ℕ) :
     Option (ℕ × (Cfg 95 2 × ℤ)) :=
@@ -422,6 +421,4 @@ theorem diagnoseCheckpointHalt_eq_some_iff {w : ℕ} (c : Configuration w)
       cases observed
       rfl
 
-=======
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95PrimeMachine.NativeCheckpoint

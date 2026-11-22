@@ -82,8 +82,6 @@ native receipts to the handoff.
 [Stage-outcome theorem](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Stage95.lean#L26-L32) ·
 [Original witness criterion](https://github.com/google-deepmind/cryptids/blob/3647718b5df22e1a61462dec0376bd204526285a/Cryptids/ReductionSupport/Riemann95/Witness95.lean#L73-L99)
 
-<<<<<<< HEAD
-=======
 ## Exact retry counts and receipt agreement
 
 Let `k = firstSuccessfulCode root` be the least code with a successful
@@ -114,7 +112,6 @@ of completed trials with a sufficient bound or source-equivalent
 receipts. The retry count measures search bounds and leaves the durations
 of the trials open.
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 ## Executable stage runner
 
 `run` starts at the certified blank bootstrap. A live state includes
@@ -140,11 +137,7 @@ trial attempts in the previous section use search bounds within one call.
 trim and quotient round trip → exact equality of native configurations
 finite source trace + exact predicate → checked receipt
 original stage outcomes → some finite candidate succeeds
-<<<<<<< HEAD
-success retained by larger bounds → eventual resolution with retry
-=======
 least successful code → exact retry count and receipt equality at every sufficient bound
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 native bootstrap + receipt trace → successor or halt on original blank run
 safe-prefix induction + least bad stage → executable runner halting equivalence
 HS runtime scheduling and heat integration → attempts or exact receipts [open]
@@ -165,9 +158,6 @@ registers. It rejected the otherwise identical 10,714-instruction
 proposal. These checks ran the finite verifier on supplied candidates.
 Full fresh replay of the dependency closure, independent review,
 HS runtime parity, and wall-clock performance are `NOT_RUN`.
-<<<<<<< HEAD
-[Coordination and exact evidence](https://github.com/grwtsk/math/issues/1823)
-=======
 The exact-count extension compiled with `--trust=0` and warnings as
 errors on the same isolated pins. Kernel checks confirmed the retry at
 bound `k`, the identical resolution at `k+1`, the stalled constant
@@ -358,4 +348,3 @@ These laws use the actual source verifier and apply only within one root.
 A report for a later committed root must be verified at that new root.
 The physical HS packet binding and fairness assumptions remain separate.
 [Verification record](https://github.com/grwtsk/math/issues/1823)
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b

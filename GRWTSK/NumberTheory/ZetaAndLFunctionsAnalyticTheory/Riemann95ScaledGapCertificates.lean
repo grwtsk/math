@@ -382,8 +382,6 @@ theorem logSquareAllowance_unbounded (B : ℕ) :
   rw [Real.sq_sqrt (by positivity : (0 : ℝ) ≤ B)] at sq
   exact ⟨k, le_min hB ((Nat.le_floor_iff (by positivity)).2 sq)⟩
 
-<<<<<<< HEAD
-=======
 private theorem logSquareAllowance_le_log_square (k : ℕ) :
     (logSquareAllowance k : ℝ) ≤ Real.log (k + 1 : ℕ) ^ 2 := by
   have bound : (logSquareAllowance k : ℝ) ≤
@@ -392,7 +390,6 @@ private theorem logSquareAllowance_le_log_square (k : ℕ) :
     exact Nat.cast_le.mpr (min_le_right _ _)
   exact bound.trans (Nat.floor_le (by positivity))
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
     (check : ℕ → Fin 95 → Certificate → Bool)
     (sound : ∀ w slot c, check w slot c = true →
@@ -401,18 +398,6 @@ theorem cryptids_RH_of_logSquareAllowance_certificates {Certificate : Type*}
     (cover : ∀ k ≥ start, ∃ j ≤ logSquareAllowance k, ∃ (slot : Fin 95) (c : Certificate),
       check ((k + j) ^ 2) slot c = true) : RiemannHypothesis := by
   apply (log_thinned_square_accepts_iff_cryptids_RH start logSquareAllowance
-<<<<<<< HEAD
-    (C := 1) (by norm_num) (fun _ _ => min_le_left _ _) (fun k _ => ?_)).mp
-  · intro k hk
-    obtain ⟨j, hj, slot, c, hc⟩ := cover k hk
-    exact ⟨j, hj, slot, (slotAccepts_iff_safe _ _).2 (sound _ _ c hc)⟩
-  · rw [one_mul]
-    have bound : ((logSquareAllowance k : ℕ) : ℝ) ≤
-        (⌊Real.log (k + 1 : ℕ) ^ 2⌋₊ : ℕ) := by
-      unfold logSquareAllowance
-      exact Nat.cast_le.mpr (min_le_right _ _)
-    exact bound.trans (Nat.floor_le (by positivity))
-=======
     (C := 1) (by norm_num) (fun _ _ => min_le_left _ _)
     (fun k _ => by simpa only [one_mul] using logSquareAllowance_le_log_square k)).mp
   intro k hk
@@ -979,6 +964,5 @@ underlying arithmetic results. -/
 theorem cappedSquareRejections_zero_cap (n : ℕ) :
     cappedSquareRejections 0 n = 0 := by
   simp [cappedSquareRejections_eq_min]
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 end GRWTSK.NumberTheory.Riemann95StageCertificates

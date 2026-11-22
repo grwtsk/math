@@ -127,8 +127,6 @@ theorem imprimitive_level_control :
   · simp [DirichletCharacter.isPrimitive_def, DirichletCharacter.conductor_one]
     decide
 
-<<<<<<< HEAD
-=======
 
 open scoped ComplexConjugate
 
@@ -378,5 +376,4 @@ theorem bounded_heated_window_decoder_iff [NeZero q]
     obtain ⟨w, i, far⟩ := gap fits.choose χ different
     exact far.not_ge ((overlap fits.choose χ).mp ⟨y, fits.choose_spec, ok⟩ w i)
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.HS95CharacterCarrier

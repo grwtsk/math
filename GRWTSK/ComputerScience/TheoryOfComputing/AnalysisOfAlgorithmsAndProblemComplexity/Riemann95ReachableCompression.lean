@@ -254,8 +254,6 @@ theorem row94_fold_forces_collision {n : ℕ} (encode : Fin 95 → Fin n) (table
     (reuse.symm.trans actual)
   exact Option.some.inj conflict
 
-<<<<<<< HEAD
-=======
 /-- The original blank run uses this exact transition-table cell. -/
 def ReachedCell (state : Fin 95) (bit : Fin 2) : Prop :=
   ∃ (t : ℕ) (c : Cfg 95 2), nSteps t blank = some c ∧ c.state = state ∧ c.tape.head = bit
@@ -951,5 +949,4 @@ theorem exists_exact_94_iff_RH :
     obtain ⟨table, exactCells⟩ := (exists_fold61_quotient_iff_RH 0).mpr rh
     exact ⟨fold61Code 0, table, fold61Code_zero 0, exactCells⟩
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95ReachableCompression

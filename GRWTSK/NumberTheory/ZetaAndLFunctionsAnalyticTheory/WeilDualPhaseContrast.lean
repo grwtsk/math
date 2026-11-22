@@ -107,8 +107,6 @@ theorem tsum_sub_dual {Z W : Type*} (zeros : Z → ℂ) (dualZeros : W → ℂ)
       ((dualPhasePart (firstPowers A) χ C + dualPhasePart (laterPowers A) χ C : ℝ) : ℂ) := by
   rw [source.tsum_eq, dualSource.tsum_eq, physicalValue_sub_dual]
 
-<<<<<<< HEAD
-=======
 /-- Adding the two signed prime readouts retains the real-real pairing. -/
 theorem primeReadout_dual_add (S : Finset ℕ) (χ : DirichletCharacter ℂ q) (C : ℕ → ℂ) :
     primeReadout S (primeAtom χ C) + primeReadout S (primeAtom χ⁻¹ C) =
@@ -153,5 +151,4 @@ theorem tsum_add_dual {Z W : Type*} (zeros : Z → ℂ) (dualZeros : W → ℂ)
     (∑' z, zeros z) + (∑' z, dualZeros z) = 2 * dualEvenValue χ A f := by
   rw [source.tsum_eq, dualSource.tsum_eq, physicalValue_add_dual]
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow

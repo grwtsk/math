@@ -16,8 +16,6 @@ open scoped BigOperators
 
 namespace GRWTSK.OperatorTheory.FiniteEulerBalancedSteps
 
-<<<<<<< HEAD
-=======
 private theorem uniform_factor_mean {m : ℕ} (hm : 0 < m) (a : Fin m → ℝ) :
     (∑ i, (1 / (m : ℝ)) * (1 - a i)) = 1 - (∑ i, a i) / (m : ℝ) := by
   have positive : (0 : ℝ) < m := by exact_mod_cast hm
@@ -26,7 +24,6 @@ private theorem uniform_factor_mean {m : ℕ} (hm : 0 < m) (a : Fin m → ℝ) :
     Fintype.card_fin, nsmul_eq_mul, mul_one]
   field_simp
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 theorem product_le_equal_steps {m : ℕ} (hm : 0 < m) (a : Fin m → ℝ)
     (upper : ∀ i, a i ≤ 1) :
     (∏ i, (1 - a i)) ≤ (1 - (∑ i, a i) / (m : ℝ)) ^ m := by
@@ -35,16 +32,7 @@ theorem product_le_equal_steps {m : ℕ} (hm : 0 < m) (a : Fin m → ℝ)
   have positive : (0 : ℝ) < m := by exact_mod_cast hm
   have normalized : (∑ _i : Fin m, (1 / (m : ℝ))) = 1 := by
     simp [positive.ne']
-<<<<<<< HEAD
-  have avg : (∑ i : Fin m, (1 / (m : ℝ)) * z i) =
-      1 - (∑ i, a i) / (m : ℝ) := by
-    rw [← Finset.mul_sum]
-    simp only [z, Finset.sum_sub_distrib, Finset.sum_const, Finset.card_univ,
-      Fintype.card_fin, nsmul_eq_mul, mul_one]
-    field_simp
-=======
   have avg := uniform_factor_mean hm a
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
   have gm := Real.geom_mean_le_arith_mean_weighted Finset.univ
     (fun _ : Fin m => 1 / (m : ℝ)) z (fun _ _ => by positivity) normalized
     (fun i _ => nonneg i)
@@ -54,8 +42,6 @@ theorem product_le_equal_steps {m : ℕ} (hm : 0 < m) (a : Fin m → ℝ)
   rwa [← Real.rpow_mul product, one_div_mul_cancel positive.ne',
     Real.rpow_one, Real.rpow_natCast] at bound
 
-<<<<<<< HEAD
-=======
 /-- The optimal Euler multiplier is attained exactly at constant exposure.
 The equality criterion also covers vanishing factors at the endpoint. -/
 theorem product_eq_equal_steps_iff {m : ℕ} (hm : 0 < m) (a : Fin m → ℝ)
@@ -97,7 +83,6 @@ theorem product_lt_equal_steps_of_unequal {m : ℕ} (hm : 0 < m) (a : Fin m → 
   lt_of_le_of_ne (product_le_equal_steps hm a upper)
     (fun eq => unequal ((product_eq_equal_steps_iff hm a upper).mp eq i j))
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- Under the fixed total exposure, exact exponential compensation preserves
 the comparison of Euler multipliers. -/
 theorem compensated_deficit_le {m : ℕ} (hm : 0 < m) (a : Fin m → ℝ)
@@ -114,8 +99,6 @@ is exactly the squared imbalance divided by four. -/
 theorem pair_balance_identity (a b : ℝ) :
     (1 - (a + b) / 2) ^ 2 - (1 - a) * (1 - b) = (a - b) ^ 2 / 4 := by ring
 
-<<<<<<< HEAD
-=======
 private theorem one_sub_sum_le_product {I : Type*} (s : Finset I) (a : I → ℝ)
     (range : ∀ i ∈ s, 0 ≤ a i ∧ a i ≤ 1) :
     1 - (∑ i ∈ s, a i) ≤ ∏ i ∈ s, (1 - a i) := by
@@ -221,5 +204,4 @@ theorem minimum_gain_le_product {m : ℕ} (a : Fin m → ℝ)
   max_le (Finset.prod_nonneg fun i _ => sub_nonneg.mpr (range i).2)
     (product_ge_concentrated_steps a range)
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.OperatorTheory.FiniteEulerBalancedSteps

@@ -70,8 +70,6 @@ private theorem product_defect {J : Type*} (s : Finset J) (f : J → ℝ)
             (1 - f j) * (∏ k ∈ s, f k) + (1 - ∏ k ∈ s, f k) := by ring
         _ ≤ (1 - f j) + ∑ k ∈ s, (1 - f k) := add_le_add omitted tailBound
 
-<<<<<<< HEAD
-=======
 /-- The excess of a strictly subunit logarithmic exposure over its Euler
 exposure is quadratic, with a constant controlled by the exposure cap. -/
 theorem log_factor_defect_bounds {a cap : ℝ} (ha : 0 ≤ a) (hac : a ≤ cap) (hc : cap < 1) :
@@ -132,7 +130,6 @@ theorem subunit_gain_unbounded (gain : ℝ) (hg : 0 ≤ gain) :
   · rw [sub_sub_cancel, one_div, inv_inv]
     linarith
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 section Schedule
 
 variable {J I : Type*} [Fintype J]
@@ -346,8 +343,6 @@ theorem logExposure_nonneg (a : J → I → ℝ) (i : I)
   exact neg_nonneg.mpr
     (Real.log_nonpos (sub_pos.mpr (upper j)).le (by linarith [lower j]))
 
-<<<<<<< HEAD
-=======
 /-- The calibrated Euler schedule's logarithmic clock inflation is bounded
 above and below by its quadratic exposure budget. -/
 theorem logExposure_sub_total_bounds (a : J → I → ℝ) (i : I) {cap : ℝ}
@@ -400,7 +395,6 @@ theorem euler_inverse_gain_le_of_total_le (a : J → I → ℝ) (i : I) {cap bud
     _ ≤ (1 + cap / (2 * (1 - cap))) * budget :=
       mul_le_mul_of_nonneg_left total_le (by positivity)
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 theorem euler_eq_log_heat (a : J → I → ℝ) (x : I → ℝ) (strict : ∀ j i, a j i < 1) :
     euler a x = spectralHeat (logExposure a) 1 x := by
   funext i
@@ -494,8 +488,6 @@ theorem subdivide_recover_error (a : J → I → ℝ) (m : ℕ) (hm : 0 < m)
 
 end Schedule
 
-<<<<<<< HEAD
-=======
 /-- Uniform inverse stability across growing finite schedules is equivalent
 to a uniform bound on the exact logarithmic exposures of their modes. -/
 theorem uniform_euler_inverse_gain_iff_logExposure
@@ -691,5 +683,4 @@ theorem euler_shared_log_clock_error_pos {J I : Type*} [Fintype J]
   nlinarith only [mul_le_mul_of_nonneg_right lower small.le,
     mul_le_mul_of_nonneg_right upper large.le]
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.OperatorTheory.FiniteEulerHeatRecovery

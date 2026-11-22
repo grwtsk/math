@@ -85,10 +85,6 @@ theorem layout_iff (states lanes phases width : ℕ) (positive : 0 < width) :
     Nonempty (Layout states lanes phases width) ↔ states ≤ lanes * (phases / width) :=
   ⟨fun ⟨layout⟩ => layout_capacity positive layout, fun h => ⟨packedLayout positive h⟩⟩
 
-<<<<<<< HEAD
-/-- The lane can be displayed as an actual ordinary prime at the
-specified offset. The decoder sees that raw prime and the delayed phase. -/
-=======
 private def phaseMatches {states lanes phases width : ℕ}
     (layout : Layout states lanes phases width) (offset rank t : ℕ) (q : Fin states) : Bool :=
   decide (rank = offset + (layout.lane q).val ∧ layout.start q ≤ t ∧ t < layout.start q + width)
@@ -136,34 +132,13 @@ theorem decodePrime_eq_some_iff {states lanes phases width : ℕ}
       exact congrArg some (layout.separates r q sameLane t low' high' low high)
 
 /-- A successful decoder for the actual prime labels of any layout. -/
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 theorem exists_prime_decoder {states lanes phases width : ℕ}
     (layout : Layout states lanes phases width) (offset : ℕ) :
     ∃ decode : ℕ → ℕ → Option (Fin states), ∀ q t,
       layout.start q ≤ t → t < layout.start q + width →
-<<<<<<< HEAD
-      decode (Nat.nth Nat.Prime (offset + (layout.lane q).val)) t = some q := by
-  classical
-  let label (q : Fin states) := Nat.nth Nat.Prime (offset + (layout.lane q).val)
-  let valid (p t : ℕ) (q : Fin states) :=
-    label q = p ∧ layout.start q ≤ t ∧ t < layout.start q + width
-  let decode (p t : ℕ) : Option (Fin states) :=
-    if h : ∃ q, valid p t q then some (Classical.choose h) else none
-  refine ⟨decode, fun q t lower upper => ?_⟩
-  have existsCode : ∃ r, valid (label q) t r := ⟨q, rfl, lower, upper⟩
-  have witness := Classical.choose_spec existsCode
-  have sameLane : layout.lane (Classical.choose existsCode) = layout.lane q := by
-    apply Fin.ext
-    exact Nat.add_left_cancel ((Nat.nth_strictMono Nat.infinite_setOfPred_prime).injective witness.1)
-  have eq := layout.separates _ _ sameLane t witness.2.1 witness.2.2 lower upper
-  change decode (label q) t = some q
-  unfold decode
-  rw [dite_eq_left existsCode, eq]
-=======
       decode (Nat.nth Nat.Prime (offset + (layout.lane q).val)) t = some q :=
   ⟨decodePrime layout offset, fun q t low high =>
     (decodePrime_eq_some_iff layout offset _ t q).2 ⟨rfl, low, high⟩⟩
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 /-- Either on-time or one phase late needs 38 phases on five lanes. -/
 theorem five_lane_one_phase_delay_iff (phases : ℕ) :

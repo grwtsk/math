@@ -6,10 +6,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAn
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.RiemannZeroSymmetry
 import Mathlib.Analysis.Complex.AbsMax
 import Mathlib.Analysis.Analytic.IsolatedZeros
-<<<<<<< HEAD
-=======
 import Mathlib.Topology.Baire.Lemmas
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 /-!
 # Determinant convergence on the critical strip and retained lattice zeros
@@ -76,8 +73,6 @@ private theorem norm_lower_at_center {g : ℂ → ℂ} {c : ℂ} {r b : ℝ}
   rw [norm_inv] at hle
   exact (inv_le_inv₀ (norm_pos_iff.mpr (hnz c (mem_closedBall_self hr.le))) hb).mp hle
 
-<<<<<<< HEAD
-=======
 /-- A center error and an independent boundary error suffice to force a
 candidate zero near a source zero. The source needs no approximation bound
 at the interior points between the center and the circle. -/
@@ -120,7 +115,6 @@ theorem source_ne_zero_of_off_axis_center_boundary_errors {D : ℂ → ℂ} {c :
   have distance : ‖z - c‖ < r := by simpa only [mem_ball, dist_eq_norm] using hz
   exact (not_lt_of_ge offAxis) (imaginary.trans_lt distance)
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- Compact-uniform convergence on the open spectral strip is sufficient.
 Real-rootedness is used through absence of candidate zeros in disks disjoint
 from the real line, and the minimum modulus principle uses value errors alone. -/
@@ -158,27 +152,6 @@ theorem source_ne_zero_of_strip_limit {D : ℕ → ℂ → ℂ}
   have hclose (z : ℂ) (hz' : z ∈ closedBall c r) :
       ‖D n z - spectralSource z‖ < b := by
     simpa only [dist_comm, dist_eq_norm] using hn z hz'
-<<<<<<< HEAD
-  have hnz (z : ℂ) (hz' : z ∈ closedBall c r) : D n z ≠ 0 := by
-    intro hzero
-    have hi := hreal n z (hclosed hz') hzero
-    have hnorm := Complex.abs_im_le_norm (z - c)
-    rw [Complex.sub_im, hi, zero_sub, abs_neg] at hnorm
-    rw [mem_closedBall, dist_eq_norm] at hz'
-    exact (not_le_of_gt hri) (hnorm.trans hz')
-  have hcl := hclose c (mem_closedBall_self hr.le)
-  rw [hz, sub_zero] at hcl
-  apply (not_le_of_gt hcl)
-  apply norm_lower_at_center hr hb ((hD n).mono hclosed) hnz
-  intro z hz'
-  have hsmall := hclose z (sphere_subset_closedBall hz')
-  have htriangle : ‖spectralSource z‖ ≤ ‖D n z - spectralSource z‖ + ‖D n z‖ := by
-    simpa only [sub_add_cancel, norm_sub_rev (spectralSource z) (D n z)] using
-      norm_add_le (spectralSource z - D n z) (D n z)
-  have hlow : ‖spectralSource a‖ ≤ ‖spectralSource z‖ := hmin hz'
-  dsimp [b] at *
-  linarith
-=======
   have center := hclose c (mem_closedBall_self hr.le)
   exact source_ne_zero_of_off_axis_center_boundary_errors hr hri.le
     ((hD n).mono hclosed)
@@ -186,7 +159,6 @@ theorem source_ne_zero_of_strip_limit {D : ℕ → ℂ → ℂ}
     le_rfl (fun _ hz' => hmin hz')
     (fun z hz' => (hclose z (sphere_subset_closedBall hz')).le)
     (by dsimp [b] at center ⊢; linarith) hz
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 private theorem exists_real_source_ne_zero_above (B : ℝ) :
     ∃ x : ℝ, B < x ∧ spectralSource (x : ℂ) ≠ 0 := by
@@ -200,8 +172,6 @@ private theorem exists_real_source_ne_zero_above (B : ℝ) :
     linarith
   · exact mem_compl_singleton_iff.mpr (fun h => hx.ne' (Complex.ofReal_injective h))
 
-<<<<<<< HEAD
-=======
 /-- Retained lattice zeros force the cutoff height to escape even under
 pointwise convergence on the real axis. Continuity of the candidate
 restrictions lets Baire category give a common tail error on a subinterval. -/
@@ -264,7 +234,6 @@ theorem cutoff_tendsto_atTop_of_real_pointwise_limit {D : ℕ → ℂ → ℂ} {
   rw [htail n k hindex, zero_sub, norm_neg] at hupper
   exact (not_lt_of_ge hupper) (hball hz).2.2
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- A determinant with unchanged lattice zeros at all positive indices above
 its Fourier cutoff must send the cutoff height to infinity to converge to
 completed zeta. For CCM, the lattice spacing is `2 * π / (2 * log λ)`. -/

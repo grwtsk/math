@@ -119,8 +119,6 @@ theorem physicalValue_sub_exactFirstOnly_at_503
   simpa [laterPowers_eq_singleton_503 lo hi, primeReadout] using
     physicalValue_sub_firstOnly χ A f (signedWindowValue χ A f)
 
-<<<<<<< HEAD
-=======
 
 /-- Energy at the two endpoints of the physical support overlap for
 a nonnegative shift. The set integrals use the original Lebesgue measure. -/
@@ -356,5 +354,4 @@ theorem abs_firstOnly_error_le_overlapGeometric (χ : DirichletCharacter ℂ q) 
   exact (abs_sub _ _).trans (add_le_add (abs_primeReadout_sub_le _ _ _)
     (abs_later_readout_le_overlapGeometric A χ⁻¹ hf support))
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.WeilQuadraticForm.FirstPrimeWindow

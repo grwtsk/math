@@ -72,15 +72,6 @@ private theorem target61_iff (q : Fin 95) (bit : Fin 2) :
   revert q bit
   decide +kernel
 
-<<<<<<< HEAD
-/-- A successful block is exactly one or two native instructions. A
-stopped block performs the incoming instruction and reaches the native
-terminal configuration, with no further native instruction available. -/
-theorem block_exact (c : Cfg 94 2) :
-    match macroStep c with
-    | some next => nSteps 1 (decode c) = some (decode next) ∨
-        nSteps 2 (decode c) = some (decode next)
-=======
 /-- The extra native instruction of the guarded checkpoint cell. -/
 def guardedExtra (c : Cfg 94 2) : ℕ :=
   if fold61Row c.state = 90 ∧ c.tape.head = 1 then 1 else 0
@@ -89,7 +80,6 @@ def guardedExtra (c : Cfg 94 2) : ℕ :=
 theorem block_exact_clock (c : Cfg 94 2) :
     match macroStep c with
     | some next => nSteps (1 + guardedExtra c) (decode c) = some (decode next)
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
     | none => nativeStep (decode c) = some (terminalView c) ∧
         nativeStep (terminalView c) = none := by
   rcases c with ⟨q, t⟩
@@ -103,11 +93,7 @@ theorem block_exact_clock (c : Cfg 94 2) :
         simp only [terminalView, ConjectureMachines.step, zero]
         rfl
       simp only [macroStep, instruction, entry, ite_eq_left, zero]
-<<<<<<< HEAD
-      apply Or.inr
-=======
       simp only [guardedExtra, entry]
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
       change (nativeStep (decode ⟨q, t⟩)).bind (nSteps 1) = _
       rw [first, Option.bind_some]
       exact congrArg (fun result => result.bind some) second
@@ -128,9 +114,6 @@ theorem block_exact_clock (c : Cfg 94 2) :
         rintro rfl
         exact entry ((target61_iff _ _).mp (by simp only [original, Option.map_some]))
       simp only [macroStep, instruction, entry, original, Option.map_some]
-<<<<<<< HEAD
-      exact Or.inl (by simp [nSteps, decode, ConjectureMachines.step, original, row_code next_ne])
-=======
       simp [guardedExtra, entry, nSteps, decode, ConjectureMachines.step, original, row_code next_ne]
 
 /-- A successful block is exactly one or two native instructions. A
@@ -150,7 +133,6 @@ theorem block_exact (c : Cfg 94 2) :
     by_cases entry : fold61Row c.state = 90 ∧ c.tape.head = 1
     · exact Or.inr (by simpa [guardedExtra, entry] using clock)
     · exact Or.inl (by simpa [guardedExtra, entry] using clock)
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 private theorem native_reaches_of_block {a b : Cfg 94 2} (h : macroStep a = some b) :
     Reaches nativeStep (decode a) (decode b) := by
@@ -248,8 +230,6 @@ theorem right_neighbor_changes_macro_halt :
   · rfl
   · rfl
 
-<<<<<<< HEAD
-=======
 
 /-- Execute exactly the requested successful macro blocks and count the
 guarded continuations among them. A stopped block returns no prefix. -/
@@ -407,5 +387,4 @@ theorem guard_continuing_prefix_forced {table : Machine 94 2}
   interval_cases n <;> simp [Zf380.nSteps_succ, e0, e1, e2, e3, e4, e5]
   all_goals decide
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95MacroCompression

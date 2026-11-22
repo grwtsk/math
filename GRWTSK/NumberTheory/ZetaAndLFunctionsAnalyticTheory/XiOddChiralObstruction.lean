@@ -1,9 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.CompletedQuotientSource
-<<<<<<< HEAD
-=======
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.CriticalStripRealAxisMellin
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 
 /-!
 # Odd-dimensional chiral determinants and the actual xi strip target
@@ -134,8 +131,6 @@ theorem no_odd_chiral_pointwise_strip_limit {d : ℕ → ℕ}
   have same := tendsto_nhds_unique hneg (limit z hz).neg
   linear_combination same / 2
 
-<<<<<<< HEAD
-=======
 
 /-- At a nonzero xi value, pointwise convergence at opposite arguments
 forces the normalizer's opposite-point ratio to tend to minus one. -/
@@ -293,5 +288,4 @@ theorem eventually_simple_center_of_deflated_limit {d : ℕ → ℕ}
   exact (deflatedPencil_center_ne_zero_iff (H n) (zero n)).mp
     fun h => nonzero (by rw [h, mul_zero])
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.NumberTheory.Zeta.XiOddChiralObstruction

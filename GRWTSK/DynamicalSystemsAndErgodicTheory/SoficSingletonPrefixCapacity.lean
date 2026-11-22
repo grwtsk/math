@@ -140,8 +140,6 @@ theorem forced_prefix {G : LabeledGraph V A}
       obtain ⟨rfl, rfl⟩ := unique edge next
       exact congrArg (List.cons a) (ih tail (by simpa using length_le))
 
-<<<<<<< HEAD
-=======
 /-- For any fixed cut budget with distinct complete tails, a single finite
 window contains a distinguishing read for every pair of cuts in the budget. -/
 theorem exists_distinguishing_window {trace : ℕ → A} (b : ℕ)
@@ -167,7 +165,6 @@ theorem exists_distinguishing_window {trace : ℕ → A} (b : ℕ)
   exact ⟨Classical.choose (chooseDiff ij hless), by omega,
     Classical.choose_spec (chooseDiff ij hless)⟩
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- If a prefix language is exact on a finite graph, its infinite read
 trace has equal tails at two positions no later than the graph size. -/
 theorem equal_tails_of_exactRoot [Fintype V]
@@ -176,34 +173,10 @@ theorem equal_tails_of_exactRoot [Fintype V]
   classical
   by_contra h
   push Not at h
-<<<<<<< HEAD
-  let b := Fintype.card V
-  have chooseDiff (ij : Fin (b + 1) × Fin (b + 1)) :
-      ij.1.val < ij.2.val → ∃ k, trace (ij.1.val + k) ≠ trace (ij.2.val + k) :=
-    fun less => h _ _ less (by have := ij.2.isLt; omega)
-  let lag (ij : Fin (b + 1) × Fin (b + 1)) : ℕ :=
-    if less : ij.1.val < ij.2.val then ij.2.val + Classical.choose (chooseDiff ij less) + 1 else 0
-  let n := max b (Finset.univ.sup lag)
-  have bound : b ≤ n := le_max_left _ _
-  obtain ⟨finish, path⟩ := (exactRoot (tracePrefix trace n)).2 (by simp [tracePrefix])
-  have tooMany := card_ge_of_distinguished_cuts bound path
-    (fun p _ => (exactRoot _).1 ⟨_, p⟩) (by
-      intro i j less jBound
-      let ij : Fin (b + 1) × Fin (b + 1) := (⟨i, by omega⟩, ⟨j, by omega⟩)
-      have hs : lag ij ≤ Finset.univ.sup lag := Finset.le_sup (Finset.mem_univ ij)
-      have hs' : lag ij ≤ n := hs.trans (le_max_right _ _)
-      have hless : ij.1.val < ij.2.val := less
-      rw [show lag ij = j + Classical.choose (chooseDiff ij hless) + 1 by
-        simp only [lag, dite_eq_left hless]; rfl] at hs'
-      exact ⟨Classical.choose (chooseDiff ij hless), by omega,
-        Classical.choose_spec (chooseDiff ij hless)⟩)
-  change b + 1 ≤ b at tooMany
-=======
   obtain ⟨n, bound, different⟩ := exists_distinguishing_window (Fintype.card V) h
   obtain ⟨finish, path⟩ := (exactRoot (tracePrefix trace n)).2 (by simp [tracePrefix])
   have tooMany := card_ge_of_distinguished_cuts bound path
     (fun p _ => (exactRoot _).1 ⟨_, p⟩) different
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
   omega
 
 
@@ -247,8 +220,6 @@ theorem exactRoot_of_equal_tails {trace : ℕ → A} {i j : ℕ}
   refine ⟨G, root, fun word => ?_⟩
   simpa [root] using path_iff word root
 
-<<<<<<< HEAD
-=======
 private theorem exists_periodic_completion {trace : ℕ → A} {i j n : ℕ} (order : i < j)
     (agree : ∀ k, j + k < n → trace (i + k) = trace (j + k)) :
     ∃ y : ℕ → A, (∀ k, y (i + k) = y (j + k)) ∧ ∀ m < n, y m = trace m := by
@@ -313,7 +284,6 @@ theorem finite_horizon_forces_capacity_iff {trace : ℕ → A} {n b : ℕ} (boun
     exact card_ge_of_distinguished_cuts bounds path
       (fun {word} {finish} accepted short => sound word short ⟨finish, accepted⟩) differs
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 /-- Quantitative characterization valid even for nondeterministic candidates. -/
 theorem exactRoot_capacity_iff {trace : ℕ → A} (b : ℕ) :
     (∃ (n : ℕ) (_ : n ≤ b) (G : LabeledGraph (Fin n) A) (root : Fin n),

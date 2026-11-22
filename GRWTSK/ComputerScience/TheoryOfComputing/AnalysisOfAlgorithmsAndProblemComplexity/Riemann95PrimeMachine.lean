@@ -211,8 +211,6 @@ theorem left_neighbor_changes_next_scan (window : ℕ) :
   have first : ConjectureMachines.Riemann95.machine.transition 0 0 = some (1, .left, 48) := rfl
   constructor <;> simp [step, blank, first, writeMove]
 
-<<<<<<< HEAD
-=======
 
 /-- Agreement on the address, scanned bit, absolute position and the first
 `depth` cells of each half-tape. Missing cells are read as blanks. -/
@@ -1122,5 +1120,4 @@ theorem no_finite_full_handoff_code {Code : Type*} [Fintype Code]
     simpa only [Nat.mul_one] using Nat.mul_le_mul_left (2 ^ size) one
   exact (not_le_of_gt (Nat.lt_two_pow_self (n := size))) (le.trans bound)
 
->>>>>>> 5eaf2eea534e3c83a35ca51df88afb3d759f4c1b
 end GRWTSK.ComputerScience.Riemann95PrimeMachine
