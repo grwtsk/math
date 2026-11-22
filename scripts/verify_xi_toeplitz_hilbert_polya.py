@@ -85,18 +85,19 @@ def finite_exact():
         if all(candidate % p for p in primes if p*p <=candidate):
             primes.append(candidate)
         if len(primes)>=20:break
-    p_prevprev=1
-    p_prev=0
+    p_prevprev=1  # P_0(0)
+    p_prev=0      # P_1(0)
     odd=even=0
     for rank in range(1,21):
-        value=-primes[rank-2]**2*p_prevprev if rank>=2 else 0
+        value=p_prev if rank==1 else -primes[rank-2]**2*p_prevprev
         if rank%2:
             assert value==0
             odd+=1
         else:
             assert value!=0
             even+=1
-        p_prevprev,p_prev=p_prev,value
+        if rank>1:
+            p_prevprev,p_prev=p_prev,value
     assert odd==10 and even==10
     return {"status":"PASS_EXACT_RATIONAL_PF_AND_PARITY_FALSIFIERS",
             "trace_class_positive_model":["1/2","1/3","1/5"],
