@@ -36,7 +36,6 @@ def enumerate_cyclic_group(q,chi):
 
 def midpoint(a,b):return (a+b)/2
 
-
 def main():
     for q,chi in ((4,CHAR4),(5,CHAR5),(5,CHAR5SQUARE)):
         assert is_character_table(q,chi)
