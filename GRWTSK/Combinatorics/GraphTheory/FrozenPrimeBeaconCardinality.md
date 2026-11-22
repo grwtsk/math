@@ -61,3 +61,37 @@ No new `sorry`, `admit`, `axiom`, `unsafe` or
 
 A local failure must be recorded and repaired at the exact
 source revision, preserving theorem statements and all other work.
+
+## First frontier build failure: source-local kernel-cardinality repair (2026-11-22)
+
+The user's pinned `python3 scripts/verify_frozen_prime_atlas.py --config verification/frozen-prime-frontier.toml`
+run passed preflight (9 modules / 59 declarations) and all five previous
+module builds. The new `FrozenPrimeBeaconCardinality.lean` build **FAILED**
+(exit 1) with one reported error at line 60: unknown constant
+`AddSubgroup.card_ker_mul_card_of_surjective`.
+
+**Root cause:** that theorem name is not present in the pinned Mathlib
+`d13f23b723b8a846827a245b89c10fc7d3f11612`. The pinned
+`Mathlib/GroupTheory/Index.lean` does expose two relevant theorems:
+
+- `AddSubgroup.index_ker` — subgroup kernel index equals the cardinality
+  of the homomorphism's range.
+- `AddSubgroup.card_mul_index` — subgroup size times index equals the
+  cardinality of the ambient group.
+
+The repair explicitly proves the kernel-index identity, using the
+already authored `syndromeHom_surjective 4` and the pinned
+`range_eq_top_of_surjective` theorem, then applies
+`card_mul_index`. The exact user-facing `beacon_card_four` statement
+and all other theorem declarations, arguments and imports are retained.
+
+**Revised source blob:** `67a13b3e10081c7853fb92aaa220c2f5f43f4d76`.
+**Previously failed source blob:** `a7558915ecbecb8a5d722b352892e1b0a991d2db`.
+`verification/frozen-prime-frontier.toml` is updated to require the
+corrected blob before attempting a Lean build.
+
+The original source's local build is **FAILED**, not NOT_RUN. Compilation
+and axiom audit for the revised source are **NOT_RUN** in the assistant's
+environment. The preceding 40-declaration scoped test was confirmed by
+the user and remains a separate passing result. No universal RH/GRH
+consequence is promoted.

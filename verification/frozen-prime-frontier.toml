@@ -100,7 +100,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.FrozenPrimeBeaconCardinality"
 path = "GRWTSK/Combinatorics/GraphTheory/FrozenPrimeBeaconCardinality.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeBeaconCardinality"
-git_blob = "a7558915ecbecb8a5d722b352892e1b0a991d2db"
+git_blob = "67a13b3e10081c7853fb92aaa220c2f5f43f4d76"
 theorems = [
   "syndromeHom_surjective",
   "beacon_is_frozen",

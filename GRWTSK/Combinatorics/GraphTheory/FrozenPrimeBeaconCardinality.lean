@@ -55,9 +55,21 @@ theorem beacon_is_frozen {m : ℕ} (b : Beacon m) :
 /-- The 16-bit cube has precisely 4096 zero-syndrome beacons. -/
 theorem beacon_card_four : Fintype.card (Beacon 4) = 4096 := by
   classical
+  have hindex :
+      (syndromeHom 4).ker.index = Nat.card (Port 4) := by
+    calc
+      (syndromeHom 4).ker.index = Nat.card (syndromeHom 4).range :=
+        AddSubgroup.index_ker (syndromeHom 4)
+      _ = Nat.card (Port 4) := by
+        simpa [(syndromeHom 4).range_eq_top_of_surjective
+          (syndromeHom_surjective 4)]
   have hkernel :
-      Nat.card (Beacon 4) * Nat.card (Port 4) = Nat.card (Cell 4) :=
-    AddSubgroup.card_ker_mul_card_of_surjective (syndromeHom_surjective 4)
+      Nat.card (Beacon 4) * Nat.card (Port 4) = Nat.card (Cell 4) := by
+    calc
+      Nat.card (Beacon 4) * Nat.card (Port 4) =
+          Nat.card (Beacon 4) * (syndromeHom 4).ker.index := by rw [hindex]
+      _ = Nat.card (Cell 4) :=
+        (syndromeHom 4).ker.card_mul_index
   have hcount : Fintype.card (Beacon 4) * 16 = 65536 := by
     simpa only [Nat.card_eq_fintype_card, port_card_four, cell_card_four] using hkernel
   omega
