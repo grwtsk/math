@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 197
+expected_theorems = 218
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -395,4 +395,41 @@ theorems = [
   "OptimalityCertificate.globallyOptimal",
   "OptimalityCertificate.optimalScore",
   "featureEnergy_nonnegative",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ZetaCenteredLayerSandwich"
+path = "GRWTSK/Combinatorics/GraphTheory/ZetaCenteredLayerSandwich.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ZetaCenteredLayerSandwich"
+git_blob = "828b7f2e629a47a7e33b148c905ceef2b5ab0ece"
+theorems = [
+  "ZetaZeroCenter.actual_zero",
+  "CompactZetaWindow.zeros_finite",
+  "CenteredLayer.root_is_actual_zero",
+  "CenteredLayer.root_in_critical_strip",
+  "LayerMap.lower_path",
+  "LayerMap.middle_path",
+  "LayerMap.upper_path",
+  "LayerMap.lower_path_to_target_upper",
+  "LayerMap.source_upper_acyclic",
+  "LayerMap.mapped_root_is_actual_zero",
+  "LayerMap.mapped_root_value",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ZetaCenteredCertifiedGraphReturn"
+path = "GRWTSK/Combinatorics/GraphTheory/ZetaCenteredCertifiedGraphReturn.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ZetaCenteredCertifiedGraphReturn"
+git_blob = "b810ffc44d7725d14aff6234d3c910b0a032a0f6"
+theorems = [
+  "QuantitativeLayerMap.map_certified_trace",
+  "QuantitativeLayerMap.transported_return",
+  "QuantitativeLayerMap.preserves_negative",
+  "SignedZetaLayer.center_is_actual_zeta_zero",
+  "SignedZetaLayer.source_return",
+  "SignedZetaLayer.exact_return_of_zero_budget",
+  "SignedLayerTransport.source_return",
+  "SignedLayerTransport.center_zero_preserved",
+  "candidate_edge_does_not_imply_certificate",
+  "candidate_word_has_no_certified_path",
 ]
