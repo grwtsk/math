@@ -1,0 +1,27 @@
+# Isolated Alpoge-original Lean v4.33.1 typed bridge source registry.
+# DO NOT run through root math's Lean 4.34.1 frozen-source checker.
+# This file is only a pinned source/checkpoint until a compatible
+# original Alpoge checkout + Mathlib environment is built.
+# There is no RH/final theorem import, and source inspection != kernel check.
+status = "SOURCE_PROOF_CANDIDATE"
+source_path = "docs/adaptations/environments/alpoge-gm-native/Bridge.lean"
+git_blob = "57183881b0e41f5b663b826ac4113633e30a8e32"
+compiler = "leanprover/lean4:v4.33.1"
+mathlib_revision = "0df444a360eaa60ab8c11dca51a86af692955474"
+upstream_repo = "tamnd/riemann-lean"
+upstream_sha = "af705e0d9a5904326eb0693310e36d9484df7f8f"
+upstream_core_gm_blob = "3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d"
+upstream_window_blob = "099d96fec932b03a505ea79a81c45bcc3fbf0ea3"
+expected_theorems = 5
+theorems = [
+  "observed_gm_upper_of_native_suppliers",
+  "observed_gm_windows_of_native_windows",
+  "observed_native_gm_eq_of_exact",
+  "observed_native_gm_error",
+  "observed_native_gm_upper_with_certified_arithmetic",
+]
+lean_compilation = "NOT_RUN"
+kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+local_equivalence_to_math_v4_34 = "NOT_PROVED"
+EAtH_and_CoreAtH = "ORIGINAL_TYPED_SOURCE_ASSUMPTIONS_NOT_DISCHARGED"
