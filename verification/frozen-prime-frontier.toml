@@ -13,7 +13,7 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 48
+expected_theorems = 56
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
@@ -110,4 +110,28 @@ theorems = [
   "beaconPrimeLabel_prime",
   "beaconPrimeLabel_injective",
   "beaconPrimeLabel_le_of_prefix",
+]
+
+[[module]]
+name = "GRWTSK.AlgebraicTopology.BinaryCubicalSquareBoundary"
+path = "GRWTSK/AlgebraicTopology/BinaryCubicalSquareBoundary.lean"
+namespace = "GRWTSK.AlgebraicTopology.BinaryCubicalSquareBoundary"
+git_blob = "97aa6b6869a79b0976f506cf6b66b772fa7823f1"
+theorems = [
+  "neighbor_commute",
+  "boundaryOne_single",
+  "boundaryOne_squareEdges",
+  "distinct_neighbor_vertices",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.CompatiblePrimeDimensionEmbedding"
+path = "GRWTSK/Combinatorics/GraphTheory/CompatiblePrimeDimensionEmbedding.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CompatiblePrimeDimensionEmbedding"
+git_blob = "3230b7759702aa5d70ffa8cbd59592633fbe4aff"
+theorems = [
+  "preserves_frozen",
+  "guidepost_commutes",
+  "identity_guidepost",
+  "composition_guidepost",
 ]
