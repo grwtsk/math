@@ -189,7 +189,16 @@ theorem levelGm_eq_normalized (Λ : Level) (x : ℝ)
   rw [hsource]
   have hs := arithmetic_head_finite_rearrangement Λ x
   rw [← hs]
-  rw [Finset.mul_sum]
+  have hCorrections :
+      (∑ ψ ∈ Λ.Nt, Λ.wt ψ *
+         (x * (An.logDerivativeAtOne ψ.χ).re)) =
+      x * (∑ ψ ∈ Λ.Nt,
+        Λ.wt ψ * (An.logDerivativeAtOne ψ.χ).re) := by
+    rw [Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro ψ _
+    ring
+  rw [hCorrections]
   ring
 
 /-- At x=1 the source prime-power head and -x log x vanish.
