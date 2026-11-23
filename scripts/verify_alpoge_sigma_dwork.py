@@ -138,6 +138,66 @@ def dwork_residual(g,p):
   out[scaled]=add(out.get(scaled,ZERO),scale(sg,-1))
  return {k:v for k,v in out.items() if v!=ZERO}
 
+
+def verify_first_frobenius_ray():
+    """Exact source-coboundary coefficient on (1,2,9^e), e=1,2.
+
+    This is a necessary B4 coefficient test, NOT a certificate for
+    all-degree theta-lift integrality or RH.
+    """
+    # Independent Weierstrass check: wp''=6wp^2-2c, distinct from
+    # the first-order square recurrence used in sigma_moments().
+    wp_alt = [Q(1)]
+    for n in range(1, 22):
+        numerator = (6 * sum((wp_alt[j] * wp_alt[n-j]
+                              for j in range(1, n)), Q(0))
+                     - (2 if n == 1 else 0))
+        denominator = (4*n - 2)*(4*n - 3) - 12
+        wp_alt.append(numerator / denominator)
+    assert wp_alt == wp_coeffs(21)
+    mu = sigma_moments(21)
+
+    def coeff_L_power(b, M):
+        # [T^M](T + T^9/3 + T^81/9)^b, for M <= 81.
+        ans = Q(0)
+        for count81 in range(min(1, b) + 1):
+            for count9 in range(b - count81 + 1):
+                if b + 80 * count81 + 8 * count9 == M:
+                    ans += Q(comb(b, count81) * comb(b - count81, count9),
+                             9 ** count81 * 3 ** count9)
+        return ans
+
+    def beta_3_b_imag(b):
+        n = (b + 3) // 4
+        assert (b + 3) % 4 == 0 and n % 2 == 1
+        # c=-i, so c^n = i * (-1)^((n+1)/2) for odd n.
+        return mu[n] * comb(b + 3, 3) * (-1) ** ((n + 1) // 2)
+
+    def ray(M):
+        terms = [(b, 3 * beta_3_b_imag(b) * coeff_L_power(b, M))
+                 for b in range(1, M + 1, 8)]
+        assert all(v for _, v in terms)
+        return terms
+
+    first = ray(9)
+    assert first == [(1, Q(5, 3)), (9, Q(-26, 3))]
+    assert sum((v for _, v in first), Q(0)) == -7
+    # Truncating beta before degree 12 misses essential cancellation.
+    assert vp((Q(0), first[0][1]), 3) == -1
+    second = ray(81)
+    assert len(second) == 11
+    partial = sum((v for b, v in second[:-1]), Q(0))
+    assert vp((Q(0), partial), 3) == -10
+    full = sum((v for b, v in second), Q(0))
+    expected = Q(7109870427383233146882397592536214309,
+                 9225341050208863777507671356201171875)
+    assert full == expected and vp((Q(0), full), 3) == 0
+    # Since every cobX monomial uses both X1 and X2, no quadratic
+    # exponential term contributes at X1^1 X2^2 Y^(9^e).
+    print('PASS exact first Frobenius ray: e=1 coefficient -7i, partial valuation -1')
+    print('PASS exact second Frobenius ray: e=2 coefficient has valuation 0; partial valuation -10')
+    print('NOT_PROVED: all coefficients or all-degree B4 of the original theta kernel')
+
 if __name__=='__main__':
  m=sigma_moments(N//4)
  print('sigma m(z) through degree 24:',[(4*j,str(m[j])) for j in range(1,len(m))])
@@ -174,4 +234,5 @@ if __name__=='__main__':
  assert hg[(2,1,1)]==(Q(1,3),Q(0))
  print('PASS hostile invariant beta=(1/9) X^3 Y: B4 fails at degree four')
  print('PASS all B4 jets through total degree',N, 'in BOTH doubled directions by beta symmetry')
+ verify_first_frobenius_ray()
  print('NOT_PROVED: ALL-degree theta beta B4, all orbits / primes, inequality (M) or RH')

@@ -129,3 +129,75 @@ Thus its exponential fails integrality **at degree four**. B1+B2+B3 do **not** i
 **Hilbert–Pólya boundary:** the existing [XiTaylorFredholmLinearization.md](XiTaylorFredholmLinearization.md) defines an unconditional trace-class **non-self-adjoint** operator from actual theta/Xi coefficients with an exact Fredholm determinant (no zero-indexed input). The positive self-adjoint replacement in [XiNewtonMomentHilbertPolya.md](XiNewtonMomentHilbertPolya.md) is **conditional on all-rank true-Xi Newton–Hankel positivity**, equivalent to RH. Neither the Dwork criterion nor the finite sigma example proves this positivity.
 
 No new root imports, dependency changes or Noe execution are required. The adjacent Lean finite-algebra declarations are **SOURCE_PROOF_CANDIDATES**; their elaboration/kernel/axiom checks and any source-wide independent mathematical review are **NOT_RUN**. No completed independent (M), RH or positive Hilbert–Pólya proof is claimed.
+
+## D. An exact all-Frobenius-degree necessary B4 family (source ell=3)
+
+The entire source B4 remains open independently. A narrower, **all-degree arithmetic theorem** nevertheless gives a rigorous recurrence that any admissible elliptic-sigma model must satisfy. It uses the **actual original** \`cobX\` formula, the true height-two site logarithm, and the source torus selection. No RH theorem or zero indexing enters.
+
+For \(\ell=3,d=2\), let
+\[
+L(T)=\sum_{r\ge0}3^{-r}T^{9^r},\quad
+\beta(X,Y)=\sum_{a,b>0}\beta_{a,b}X^aY^b,\quad
+G(X_1,X_2,Y)=(\Delta_1\beta)(L(X_1),L(X_2),L(Y)).
+\]
+Write
+\[
+H(b,M)=[T^M]L(T)^b
+=\!\!\sum_{\substack{(j_r)_{r\ge0}\\\sum j_r=b\\\sum 9^rj_r=M}}
+\frac{b!}{\prod_rj_r!}\prod_{r\ge0}3^{-rj_r}.
+\tag{D.1}
+\]
+Every coefficient of this series is a **finite exact rational sum**. The first source coboundary has coefficient
+\[
+[X_1^{r}X_2^{s}Y^b]\Delta_1\beta
+=\binom{r+s}{r}\beta_{r+s,b}\quad(r,s,b>0).
+\]
+Since \(L(T)\) has leading term \(T\) and no constant term, obtaining \(X_1^1 X_2^2\) after substitution forces \(r=1,s=2\). Hence for **every** \(e\ge1\) and every \(\beta\) (no integrality premise),
+\[
+\boxed{
+[X_1X_2^2Y^{9^e}]G
+=3\sum_{1\le b\le9^e}\beta_{3,b}\,H(b,9^e).
+}
+\tag{D.2}
+\]
+When \(\beta\) obeys the source \(d=2,\ell=3\) torus invariance, \(\beta_{3,b}\ne0\) requires \(3-3b\equiv0\pmod8\), i.e. \(b\equiv1\pmod8\). Moreover, **every** monomial of \(G\) has positive \(X_1\)- and \(X_2\)-degree. Thus the target coefficient of \(\exp G\) is **exactly the same** as (D.2); products of two or more \(G\) factors have \(X_1\)-degree at least two.
+
+Consequently original **B4 implies** for every \(e\ge1\) the necessary, source-specific linear congruence
+\[
+\boxed{
+3\sum_{\substack{1\le b\le9^e\\b\equiv1\ (8)}}
+\beta_{3,b}H(b,9^e)\in\mathbb Z_3[i].
+}
+\tag{D.3}
+\]
+Equivalently, since \(H(9^e,9^e)=1\), it constrains each new coefficient \(\beta_{3,9^e}\) by a triangular 3-adic congruence in earlier coefficients. **These are necessary conditions, not sufficient conditions for all B4**; the second coboundary has the symmetric conditions for a symmetric \(\beta\).
+
+For the actual elliptic-sigma **test series** (not the general theta-lift kernels) in the paper, \(\beta_{a,b}=\binom{a+b}{a}\mu_n c^n\) for \(a+b=4n\), selected by the torus, with \(c=-i\), and the \(\mu_n\) determined by the independent Weierstrass recurrence (6)–(8). At \(e=1\), \(M=9\), the only terms are \(b=1,9\), with
+\[
+H(1,9)=1/3,\quad H(9,9)=1,\quad
+\beta_{3,1}=5i/3,\quad\beta_{3,9}=-26i/9.
+\]
+The complete *first Frobenius cancellation* is
+\[
+\boxed{[X_1X_2^2Y^9]G
+=3((5i/3)(1/3)-26i/9)=-7i,}
+\tag{D.4}
+\]
+which has 3-adic valuation zero. If the **same source model** is truncated at elliptic sigma degree 4, then \(\beta_{3,9}\) is omitted and the coefficient is \(5i/3\), of valuation \(-1\), so B4 **fails already at total degree 12**. The truncation nonetheless satisfies the source B1/B2/B3 and passes its B4 check through degree 11. Truncation at degree 12 passes through degree 19 but fails at degree 20; the true degree-20 coefficients repair that failure. This is a concrete obstruction to promoting finite-jet B4 checks.
+
+At the *next Frobenius level* \(e=2\), \(M=81\), exactly **eleven** nonzero torus-selected source coefficients \(b=1,9,\ldots,81\) contribute to (D.2). The independent exact-rational recurrence evaluates their sum to
+\[
+\boxed{
+[X_1X_2^2Y^{81}]G
+=i\,\frac{7109870427383233146882397592536214309}
+{9225341050208863777507671356201171875}.
+}
+\tag{D.5}
+\]
+The numerator is congruent to 2 modulo 3 and denominator to 1 modulo 3, so the 3-adic valuation is **exactly zero**. Deleting just the sigma degree-84 source term leaves a partial sum of valuation \(-10\). The true degree-84 term therefore participates in a cancellation of a *ten-unit valuation defect*. The full coefficient is integral but **is not evidence for all other degree-84 coefficients or for the original global theta kernels**.
+
+The updated [verify_alpoge_sigma_dwork.py](../../../scripts/verify_alpoge_sigma_dwork.py) computes (D.4) and (D.5) **independently from the sigma differential-equation recurrence**, via the finite multinomial formula for \(L(T)^b\). It also cross-checks **all 22 Weierstrass coefficients through \(n=21\)** against an independently derived recurrence from \(\wp''=6\wp^2-2c\), rather than relying only on the original squared-derivative equation \((\wp')^2=4\wp^3-4c\wp\). Its finite output is exact, its Git blob is pinned, and it does not invoke zeta zeros or external RH. The companion Lean file now includes elementary rational first-ray and unit-mod-3 candidate checks; its all-degree formal-series proof is still **NOT FORMALIZED**.
+
+**Prior-art restriction:** The ordinary-reduction Mazur–Tate (p)-adic sigma integrality theorem (see Christian Wüthrich, *The canonical p-adic sigma function*, §5, https://www.maths.nottingham.ac.uk/plp/pmzcw/download/pheight.pdf) cannot simply be invoked here: the paper's CM (j=1728) examples at (p=3,7,11), all inert in ℚ(i), have supersingular good reduction. An applicable supersingular cubical/integral-theta theorem would have to be independently established, not borrowed from the ordinary setting.
+
+**Next exact proof target:** prove the family (D.3), ideally using the elliptic division-polynomial/Dwork congruences on the genuine theta lifts. Doing so for every \(e\) would settle only one thin set of B4 coefficients, not B4 itself. A full independent Hilbert–Pólya proof still additionally needs the true all-degree B4, original (M), zero-freeness, and original-Xi Newton PSD.

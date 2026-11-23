@@ -84,4 +84,28 @@ theorem hostile_three_dwork_residual :
     (3 : ℚ) * (1 / 3) = 1 := by
   norm_num
 
+/-- General exact first-Frobenius coefficient regrouping.
+The multivariable source extraction leading to this expression is
+proved analytically in the adjacent mathematical note, NOT here. -/
+theorem first_frobenius_ray_regroup (b31 b39 : ℂ) :
+    (3 : ℂ) * (b31 / 3 + b39) = b31 + 3 * b39 := by
+  ring
+
+/-- The actual elliptic-sigma model's degree-4 and degree-12
+source terms cancel the height-two L(T) denominator at degree12:
+3 * ((5i/3)/3 - 26i/9) = -7i.
+This checks only the scalar rational coefficient, NOT B4 globally. -/
+theorem first_sigma_frobenius_cancellation :
+    (3 : ℚ) * (((5 : ℚ) / 3) / 3 - (26 : ℚ) / 9) = -7 := by
+  norm_num
+
+/-- Exact unit test on the independently evaluated degree-84
+Frobenius-ray rational source coefficient. The equality of this
+fraction with the TRUE sigma formal-series coefficient was
+checked by the byte-pinned Python script, not in this Lean theorem. -/
+theorem second_sigma_frobenius_3adic_unit :
+    (7109870427383233146882397592536214309 : ℕ) % 3 = 2 ∧
+    (9225341050208863777507671356201171875 : ℕ) % 3 = 1 := by
+  norm_num
+
 end GRWTSK.NumberTheory.AlpogeThetaDworkB4
