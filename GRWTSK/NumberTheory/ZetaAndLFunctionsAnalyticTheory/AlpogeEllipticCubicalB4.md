@@ -1,7 +1,7 @@
-# Cubical elliptic-sigma B4: scalar-frame gate and integral coordinate invariance
+# Elliptic-sigma B4: exact cubical scalar frame, Honda model, and tame descent
 
 
-**Mathematical acceptance correction, November 22, 2026.** The cited Ando–Hopkins–Strickland theorem of the cube proves existence of a canonical **section of a cubical line bundle**; it does not, without an explicit integral local-frame comparison, establish equality of that section with the *particular scalar* \(\exp(\delta^3\log(\sigma_E/t_E))\) used in this note's §§4–5. The prior assertion of *completed all-degree B4 for the explicit elliptic-sigma model* is therefore **reclassified as CONDITIONAL ON THE SCALAR MATCH**. Finite exact sigma coefficients, Frobenius-sign analysis and the independent gauge-invariance theorem below retain their stated scopes. This correction does NOT assert an error in the external Lean proof or its RH conclusion.
+**Source-fidelity audit, November 22, 2026.** The canonical cubical section is a section of a **line bundle**, not an ordinary scalar function. Section 10 now identifies its exact scalar in the rigidified integral \(t_E=-x/y\) frame using *both* Ando–Hopkins–Strickland (2001), Equation (1.1) and Definition 2.56, with the reciprocal sign independently checked by exact rational Weierstrass calculations. This closes the earlier scalar-frame proof obligation **for the explicit good-reduction elliptic-sigma models**, subject to the stated classical theorems and source-aligned integral Honda coordinate. It does **not** identify Alpöge’s arbitrary higher-rank \`Loc.B0/B4\` theta kernels, prove (M), prove RH independently, or produce a positive self-adjoint Hilbert–Pólya operator. Mathematical independent review and Lean formalization remain NOT_RUN.
 
 
 
@@ -319,16 +319,71 @@ The norm is a unit with integral coefficients; its unique \(1/(p^2-1)\)-power ha
 
 **Hostile hypothesis check:** with the **nonintegral** gauge \(\varphi(t)=1+t/p\), source B4-style projected integrality fails: for \(p=3\), the coefficient of \(T_1^2T_2T_3\) is \(-1/27\), with valuation \(-3\); for the source-range \(p=7,c=-1-i\), the coefficient of \(T_1^6T_2T_3\) is \(38411/4117715+16i/1715\), with \(v_7=-7\). Thus the integral-gauge premise cannot be discarded.
 
-**Exact still-open scalar identification.** The theorem of the cube yields a canonical \(s_{E/A}\) **in the line bundle** \(\Theta^3\mathcal I(0)\). For its use in B4, one must identify, with all local frames and signs,
+**Exact elliptic-model scalar identification (proved in §10).** The theorem of the cube yields the canonical \(s_{E/A}\) in the line bundle \(\Theta^3\mathcal I(0)\). AHS Equation (1.1) and its rigidification, interpreted in the integral local coordinate, give the following precise scalar with *fixed reciprocal sign*:
 \[
 \boxed{
 \operatorname{scalar}_{t_E}(s_{E/A})
-=\exp(\pm\delta^3\log(\sigma_E/t_E)),
+=\exp(-\delta^3\log(\sigma_E/t_E)),
 }
 \tag{G4}
 \]
-or exhibit a *proven integral unit* relating these expressions, under the same addition laws, rigidification, and theta-section normalization. Theorem 2.55 **alone** does not supply the exact scalar equality (G4). This is the specific missing source proof in §§4–5; the present gauge theorem shows that an integral change of \(t_E\) cannot create or erase B4 failure once (G4) has been established in one legitimate frame. A nonintegral gauge CAN create a failure, as the hostile check demonstrates.
+Theorem 2.55 alone does not supply this local scalar formula, but AHS Equation (1.1), the explicit divisor-based section (Definition 2.56), and the integral \(t_E\)-frame comparison in §10 together do. The inverse scalar is an integral formal unit whenever the section is integral. The integral-gauge theorem above shows that this model conclusion is independent of the chosen integral strict coordinate; its hostile control shows nonintegral gauges can fail.
 
-Even after (G4) is proved for the three elliptic models, \`Loc.B0\` for the actual higher-rank automorphic theta kernels, Frobenius minor divisibility, all local factors/periods/lattice covolumes, trace/Galois bounds, character corrections and **the complete averaged first inequality (M)** remain independent proof obligations. The exact coefficient-defined true-\(\Xi\) Fredholm companion remains **nonselfadjoint**, and the distinct positive selfadjoint moment return requires independent all-rank Newton Hankel positivity (RH-equivalent). This section proves no independent RH or completed Hilbert–Pólya result.
+Even with (G4) now established for the three elliptic models, \`Loc.B0\` for the actual higher-rank automorphic theta kernels, Frobenius minor divisibility, all local factors/periods/lattice covolumes, trace/Galois bounds, character corrections and **the complete averaged first inequality (M)** remain independent proof obligations. The exact coefficient-defined true-\(\Xi\) Fredholm companion remains **nonselfadjoint**, and the distinct positive selfadjoint moment return requires independent all-rank Newton Hankel positivity (RH-equivalent). This section proves no independent RH or completed Hilbert–Pólya result.
 
-**Evidence:** (G1)–(G3) are formal all-degree proofs under displayed hypotheses; the CM tests were executed in exact rational arithmetic, and the tested script is source-pinned; the scalar comparison (G4) is **NOT_PROVED**. The new infinite theorem has no Lean elaboration/kernel replay or axiom audit (**NOT_RUN**); independent mathematical review is **NOT_RUN**. This is a deliberate correction of the former unconditional model-B4 acceptance wording.
+**Evidence:** (G1)–(G3) are formal all-degree proofs under displayed hypotheses; the CM tests were executed in exact rational arithmetic, and the tested script is source-pinned; the exact elliptic-model scalar comparison (G4) is proved analytically in §10 using the two AHS formulas, and checked to degree 12 by independent exact rational tests. This theorem is NOT Lean-formalized; Lean elaboration/kernel replay/axiom audit are NOT_RUN, and independent mathematical review is NOT_RUN. The global automorphic theta-source and (M) remain open.
+
+
+## 10. Exact scalar-frame identification using both AHS formulas
+
+**Theorem (closed for the explicitly specified CM elliptic model, independent of RH).** Let \(E/A\) be a good-reduction elliptic curve with an integral Weierstrass model over the \(p\)-adic integer ring \(A\), with normalized parameter \(t_E=-x/y\). Let \(\sigma_E(z)\) be its classical Weierstrass sigma function over the characteristic-zero embedding, with \(\sigma'_E(0)=1\), and \(z\) the formal logarithm, so \(t_E(z)=z+O(z^2)\). Then in the rigidified \(\mathcal I(0)\) cubical line, the canonical section \(s_{E/A}\) of AHS Theorem 2.55 has **exact scalar**
+\[
+\boxed{
+\operatorname{scalar}_{t_E}(s_{E/A})=
+\frac{u(z_{12})u(z_{13})u(z_{23})}
+     {u(z_{123})u(z_1)u(z_2)u(z_3)}
+=\exp(-\delta^3m_E),\qquad
+u(z)=\frac{\sigma_E(z)}{t_E(z)},\ \ m_E=\log u.
+}
+\tag{S.1}
+\]
+Here \(z_S=\sum_{j\in S}z_j\), and the scalar is expressed in the **same integral cubical frame** built from the \(t_E(z_S)\). This is a direct comparison of classical formulas, *not* a new theorem-of-the-cube proof or an assumption of B4. In particular \(\exp(+\delta^3m_E)\) is the **inverse** scalar of the canonical section, and is integral at all degrees. Its two tame torus projections give the B4 exponentials for the explicit model when the integral Honda change of coordinate \(h=t_E\circ L\) has been established as in §3. The usual Gaussian factor \(\exp(az^2+bz)\) cancels by §9.
+
+**Proof (with the fiber at zero retained).** AHS Equation (1.1), printed p. 598, expresses the canonical section of \(\Theta^3\mathcal I(0)\) over the complex elliptic curve as the *fiber-valued* Weierstrass sigma ratio
+\[
+s_\sigma(z_1,z_2,z_3)=
+\frac{\sigma(z_{12})\sigma(z_{13})\sigma(z_{23})\,\sigma(0)}
+{\sigma(z_{123})\sigma(z_1)\sigma(z_2)\sigma(z_3)}.
+\tag{S.2}
+\]
+The symbol \(\sigma(0)\) in (S.2) belongs to the rigidified **fiber of the ideal line** \(\mathcal I(0)_0\), not to the ordinary complex numbers. Numerically \(\sigma(0)=0\), but its normalized first jet \(\sigma'(0)=1\) is a **nonzero generator of that fiber**. Replacing this fiber factor by the number zero would incorrectly annihilate the cubical section.
+
+Now choose the **integral local frame** supplied by \(t_E\) for every pullback \(z_S^*\mathcal I(0)\). In the tensor convention AHS defines on p. 598,
+\[
+\Theta^3\mathcal I(0)
+=\frac{\mathcal I(z_{12})\mathcal I(z_{13})\mathcal I(z_{23})\,\mathcal I(0)}
+{\mathcal I(z_{123})\mathcal I(z_1)\mathcal I(z_2)\mathcal I(z_3)}.
+\]
+Its frame on the completed local ring is the corresponding seven-factor quotient of the **local generators \(t_E(z_S)\)**, together with the normalized first-jet generator \(dt_E\) of \(\mathcal I(0)_0\). Dividing (S.2) by this frame cancels every zero/pole factor individually and replaces it by \(u(z_S)=\sigma(z_S)/t_E(z_S)\). Since \(\sigma'(0)=t_E'(0)=1\), the rigidification factor is exactly one. The resulting scalar is precisely (S.1), with its negative third-coboundary sign fixed.
+
+The comparison uses not only the abstract existence statement AHS Theorem 2.55 but its **explicit complex formula** (1.1), together with **Definition 2.56** (the integral algebraic section represented by a quotient of a \(3\times3\) determinant and three \(2\times2\) determinants) and **Proposition 2.57**, which identifies that algebraic section with \(s_{E/A}\). Because the AHS determinant expression is algebraic over the universal Weierstrass coefficient ring and base-change-compatible, its pullback to the good-reduction model over \(A\) is an integral nowhere-vanishing section of the cubical line. Dividing it by the integral \(t_E\)-frame yields a series in \(1+\mathfrak m A[[t_1,t_2,t_3]]\). Its equality over the chosen complex embedding to the right side of (S.1) is a **formal power-series identity with algebraic coefficients**, and therefore transports to the characteristic-zero \(p\)-adic completion. This proves the all-degree integrality of the **inverse**, \(\exp(\delta^3m_E)\). No RH theorem or zeta zeros are involved. \(\square\)
+
+**Independent scalar-frame sign and normalization verification.** The new standard-library script [verify_alpoge_cubical_scalar.py](../../../scripts/verify_alpoge_cubical_scalar.py) expands the *algebraic AHS Definition 2.56 determinant* in the chart \(y=1\),
+\[
+[x:y:z]=[-t_E(z):1:-z^3/B(cz^4)],
+\quad \wp_c(z)=z^{-2}A(cz^4),\
+\wp_c'(z)=-2z^{-3}B(cz^4),
+\]
+where \(B=A-2uA'\) and \(B^2=A^3-uA\) are derived independently from the actual Weierstrass equation of \(E_c:y^2=x^3-cx\). It divides the determinant section by the **full \(t_E\)-cubical frame** and independently reconstructs \(m_E(z)\) using \((\log\sigma_c)''=-\wp_c\), so no precomputed sigma coefficients are used as an oracle.
+
+Across \(c=1,-1,2\) and triples of rational formal logarithmic slopes \((1,2,4)\), \((1,3,5)\), \((1,2,6)\), **all nine exact-rational checks passed** for the scalar's constant term and its coefficients at degrees \(4,8,12\), with zero coefficients at the intermediate degrees. For example at \(c=1\), slopes \((1,2,4)\),
+\[
+\operatorname{scalar}_{t_E}(s_{E/A})\bigm|_{z=(h,2h,4h)}
+=1+280h^4+240296h^8+\frac{3152149616}{15}h^{12}+O(h^{16}).
+\tag{S.3}
+\]
+The same three coefficients are obtained from \(\exp(-\delta^3m_E)\). The tests confirm the **reciprocal sign and frame normalization**, but are not substitutes for the all-degree algebraic comparison above and are not an audit of the higher-rank theta kernels.
+
+**Exact limit of what is now proved.** The scalar-normalization obstruction (G4) is discharged **for the explicitly defined good-reduction elliptic-sigma model with an integral Honda-to-elliptic coordinate**, using standard AHS and Lubin–Tate results and an independent algebraic scalar check. No analogous **actual-source** equality has been produced between these model cubical sections and the *automorphic theta kernels* in Alpöge's \`Loc.B0\` or the higher-rank period-pairing. The original \`B0/B4\` for those kernels, Frobenius-minor lattice divisibility, local Euler factors, periods/covolumes, trace/rank, Galois denominators, character \(L'/L(1)\) corrections, uniform error estimates and the first inequality (M) remain **independently OPEN**. The exact true-\(\Xi\) coefficient Fredholm companion remains nonselfadjoint with a one-dimensional adjoint kernel; the distinct positive self-adjoint \(\Xi\)-determinant construction still requires independently proved all-rank Newton Hankel positivity, equivalent to RH. This note proves no RH or completed independent Hilbert–Pólya statement.
+
+**Evidence status:** mathematical all-degree argument relies only on independently published classical AHS/Hazewinkel results and stated integral-model hypotheses; finite exact-rational comparison tests PASS, including source algebraic determinant and sigma coefficients through degree 12. No new Lean formalization, fresh kernel replay, transitive axiom audit, or independent mathematical review (**NOT_RUN**).
