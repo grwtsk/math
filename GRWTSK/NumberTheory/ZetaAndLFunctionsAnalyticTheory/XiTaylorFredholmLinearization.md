@@ -59,7 +59,7 @@ with the zero-coefficient case interpreted separately. Thus
 \lim_{n\to\infty}\|S^n\|^{1/n}=0.
 \tag{6}
 \]
-Thus \(S\) is quasinilpotent, and \((I-wS)^{-1}=\sum_{n\ge0}w^nS^n\) converges in operator norm for every complex \(w\). Its Fredholm determinant is identically one: every finite principal compression is a strictly subdiagonal nilpotent matrix with determinant \(1\), and those compressions converge to \(S\) in trace norm.
+Thus \(S\) is quasinilpotent, and \((I-wS)^{-1}=\sum_{n\ge0}w^nS^n\) converges in operator norm for every complex \(w\). For each positive-size finite principal compression \(S_N\), strict lower triangularity gives \(\det S_N=0\) and \(\det(I-wS_N)=1\). These compressions converge to \(S\) in trace norm, so \(\det_{\mathrm{Fr}}(I-wS)=1\) for every complex \(w\).
 
 The rank-one determinant lemma, applied on the actual \(\ell^2\) space, now gives
 \[
