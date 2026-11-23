@@ -1,0 +1,91 @@
+# Quartic residual characters on quadratic Selmer hosts
+
+grwtsk contributors
+
+Let \(\psi=\chi_D\) be the primitive quadratic Dirichlet character of fundamental discriminant \(D\). It may be presented at any larger even source modulus. Let \(e\ge1\) have \((-1)^e=\psi(-1)\), and let \(p\) be an odd coefficient prime such that \(\kappa=\omega^{-e}\) has order four. The **entire strict Selmer group** at this prime and weight is zero for each of the following host discriminants, including when \(p\mid D\):
+\[
+ D\in\{-3,-4,-7,-8,-11,-15,-19,-20,-24,-35,-39,\;5,8,12,24,28\}.
+\]
+This covers both possible quartic powers and all positive weights on each of them. The source row is genuinely nontrivial: take the subgroup cut out by \(\psi\). Its quadratic orbit is a singleton. Order four implies \(p-1\nmid2e\), and the squared local character is trivial. For every admissible auxiliary field and every finite set of these coefficient primes the corresponding part of CorG’s sum is exactly zero. Its other coefficient primes, the unrestricted character orbits, and inequality (M) remain open. [Alpöge, GD and CorG, pinned revision 40e56bab026552e089d7afcfeff08d2defb9c005](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean#L7-L29)
+
+## The actual quartic field
+
+First suppose \(p\nmid D\) and put \(f=|D|\ge3\), \(P=fp\). The residual character \(\theta=\psi\kappa\), identified with its Teichmüller lift on the finite part, is even and has order four. The two choices of \(\kappa\) give inverse generators of the same primitive quartic field \(E\) of conductor \(P\). It is totally real with quadratic subfield \(F=\mathbb Q(\sqrt p)\), since \(\theta^2\) is the Legendre character at \(p\). Inertia at \(p\) maps onto the full order-four group. The conductor–discriminant formula gives \(D_E=f^2p^3\) and \(D_F=p\).
+
+Write \(H=h(E)/h(F)\) for the ratio of ordinary class numbers. It is integral: the Hilbert class field of \(F\) is disjoint from \(E/F\) by total ramification at \(p\), and its base change is everywhere unramified and split at the real places. Also \(h(F)<p\). For instance Minkowski gives a quadratic ideal of norm at most \(X=\lfloor\sqrt p/2\rfloor\) in every class. The number of ideals of norm \(n\) is at most the divisor count, at most \(n\). Thus \(h(F)\le X(X+1)/2<p\). If \(p\mid D\), remove the Legendre factor at \(p\). Namely \(\chi_D=\chi_{D/p}\kappa^2\), since \(p\equiv1\bmod4\) and \(p\) divides the fundamental discriminant only once. Therefore \(\chi_D\kappa=\chi_{D/p}\kappa^{-1}\); the effective conductor part \(f\) is now \(|D|/p\). If this equals one, the scalar prime-conductor quartic vanishing applies. [Previous scalar quartic result and Moser’s theorem](AlpogeScalarSelmerBudget.md)
+
+The source coefficient \((\mathbb Q_p/\mathbb Z_p)\psi^{-1}\chi_{\mathrm{cyc}}^{-e}\) has nontrivial residual inertia at \(p\). Its strict \(p\)-torsion injects into the equivariant homomorphisms from the class group of \(E\), split at \(p\), with character \(\theta\). Indeed multiplication by \(p\) gives a unique global lift, and local invariants at \(p\) vanish, so it stays strict there. Over \(E\) the residual coefficient is trivial; restrictions at primes outside \(p\) are unramified by the source local conditions and the divisible unramified inertia invariants where the character is unramified. Prime-to-\(p\) descent and class field theory give the assertion. The unique prime over \(p\) has fourth power \((p)\), so removing it does not change the \(p\)-class group. Vanishing of residual torsion implies vanishing at every depth. Unramified coefficient extension preserves the normalized conclusion. [Finite strict descent and coefficient normalization](AlpogeSelmerResidual.md) · [Original strict groups and quadratic orbits](AlpogeSelmerExceptionalWeights.md)
+
+## A sharper relative-regulator estimate
+
+Write \(w=\sqrt{R_E/R_F}\), \(Y=e^w\), and \(A=f\sqrt p\). We claim
+\[
+                          A\le 2+Y+Y^{-1}.                         \tag{1}
+\]
+Balady and Washington’s proof of Proposition 6.2 gives two simultaneous facts about the same units. The quotient of units of \(E\) by units of \(F\) is a free rank-one \(\mathbb Z[i]\)-module. The quartic generator acts as \(i\); torsion-freeness follows since the quadratic relative extension ramifies at an odd prime. For a module generator \(u\), let \(\sigma\) generate the quartic group and \(v=N_{E/F}(u)\). At the first two embeddings use the centered logs \(x=\log|u|-\frac12\log|v|\) and \(y=\log|\sigma u|-\frac12\log|\sigma v|\). The conjugate logs of the normalized pairs are \(-x,-y\). The regulator determinant on the basis coming from the quadratic fundamental unit, \(u\), and \(\sigma u\), gives \(w^2=2(x^2+y^2)\). The relative different divides \(u-\sigma^2u\); equivalently the discriminant of the order generated by \(u\) is divisible by the relative discriminant. Taking norms and pairing real conjugates yields
+\[
+     \sqrt{D_E/D_F^2}\le (e^x+e^{-x})(e^y+e^{-y}).
+\]
+The normalization cancels because \(|N_{F/\mathbb Q}(v)|=1\). These are the unit and different calculations on pp. 51–52, before the separate estimates in that proposition. [Balady and Washington, A family of cyclic quartic fields with explicit fundamental units, Proposition 6.2 and its proof](https://www.impan.pl/shop/en/publication/transaction/download/product/112758)
+
+For any real \(a,b,t\) with \(a^2+b^2=t^2\),
+\[
+                          \cosh a+\cosh b\le1+\cosh t.
+\]
+Indeed \(a^{2n}+b^{2n}\le(a^2+b^2)^n\) for \(n\ge1\); the extra unit accounts for the constant terms. Sum with coefficients \(1/(2n)!\). Apply this to \(a=x+y,b=x-y,t=w\), and use the hyperbolic addition formula. The product above is at most \(2+2\cosh w\), proving (1). Keeping both centered logarithms in this step recovers the constants needed at composite conductors.
+
+Since \(f\ge3\) and \(p\ge5\), \(A\ge20/3\). Equation (1) and \(Y\ge1\) give \(Y\ge A-3>3\), then \(Y>A-7/3\ge13A/20\). In particular \(Y^2>(5/4)P\) because \(A^2=fP\). The analytic class number formulas for the quartic and quadratic fields give exactly
+\[
+              4w^2 H=fp\,|L(1,\theta)|^2.                        \tag{2}
+\]
+The quotient of square-root discriminants is \(fp\); the real-place and root-of-unity factors leave \(1/4\); the two faithful conjugate primitive characters have product \(|L(1,\theta)|^2\). Ramaré’s Corollary 1 gives \(|L(1,\theta)|\le\frac12\log P<w\). We obtain
+\[
+                                H<fp/4.                            \tag{3}
+\]
+In particular every effective quadratic conductor \(f\le4\) gives full vanishing. [Ramaré, Approximate formulae for L(1,χ), Acta Arithmetica 100 (2001), Corollaries 1 and 3](https://www.impan.pl/shop/en/publication/transaction/download/product/83550)
+
+## The Euler factor at two
+
+When \(f\) is even and \(f\ge8\), Ramaré’s Corollary 3 gives \(|L(1,\theta)|\le\frac14\log(4P)\). Now \(A>16\), hence \(Y>A-3>13A/16\), so \(Y^2>4P\). By (2),
+\[
+                                H<fp/16.                           \tag{4}
+\]
+This bound holds for either parity of the original quadratic character.
+
+When \(D<0\) and \(f\) is odd, \(e\) is odd, so order four implies \(p\equiv5\bmod8\). Then \(\kappa(2)^2=(2/p)=-1\), and \(\theta(2)=\pm i\). Consequently \(|1-\theta(2)/2|=\sqrt5/2\). Louboutin’s Theorem 1.1 for primitive even characters of odd conductor gives
+\[
+     |L(1,\theta)|\le \frac{\log P+c_2}{2\sqrt5},\qquad
+     c_2=2+\gamma-\log(\pi/4)<\log17 .
+\]
+For \(f\ge20\), \(A>44\), so \(Y>A-3>41A/44\) and \(Y^2>17P\). Equation (2) now gives
+\[
+                                H<fp/20 .                          \tag{5}
+\]
+[Louboutin, Majorations explicites de |L(1,χ)| (quatrième partie), C. R. Acad. Sci. Paris 334 (2002), Théorème 1.1](https://comptes-rendus.academie-sciences.fr/mathematique/articles/10.1016/S1631-073X%2802%2902333-6/)
+
+For the smaller odd conductors \(f=3,7,11,15,19\), we prove \(H<p\) at every eligible prime without a conductor search. Since \(\sqrt p>11/5\), the bound \(Y>A-3\) gives \(Y^2>P C_f\), where \(C_f=(11f-15)^2/(121f)\). Use the following exact margins:
+\[
+\begin{array}{c|rrrrr}
+ f&3&7&11&15&19\\ \hline
+ u/v&2/5&3/5&3/4&7/8&39/40 .
+\end{array}
+\]
+In every column, \(f v^2\le20u^2\), \(u<v\), and \((5f)^{v-u}(11f-15)^{2v}>17^u(121f)^v\); these are integer comparisons. Since \(P\ge5f\), this gives \(\log(P C_f)>(u/v)\log(17P)\ge\sqrt{f/20}\,(\log P+c_2)\). Thus \(2w>\sqrt{f/20}\,(\log P+c_2)\), and substitution in (2) proves the bound.
+
+## When the relative class number has an even factor
+
+Suppose the quadratic host contains a nontrivial real quadratic factor \(\chi_g\) such that \(g\mid f\) and the other primitive factor’s conductor is coprime to \(g\). This includes taking \(g=f\) when the host is real. Then the quadratic extension \(E\mathbb Q(\sqrt g)/E\) is totally real and unramified at all finite primes. At primes dividing \(g\), its additional inertia character is the restriction of \(\theta\) itself. At the remaining primes the additional quadratic character is unramified. This also applies at two. The extension has degree two since \(F\), the unique quadratic subfield of \(E\), has distinct prime discriminant \(p\).
+
+In fact \(2\mid H\), without any parity assumption on \(h(F)\). Over \(F\) the compositum is biquadratic. The subfield \(F\mathbb Q(\sqrt g)\) ramifies above a prime dividing \(g\), and the other two quadratic subfields ramify above \(p\). Hence it is disjoint from the ordinary Hilbert class field of \(F\). After base change to \(E\), the compositum of the two everywhere-unramified extensions has degree \(2h(F)\), proving the divisibility. This identifies an ordinary genus factor; ramification at infinity would invalidate this argument for an imaginary additional character.
+
+In (3), (4), or (5), write \(b=4,16,20\) for the applicable denominator and let \(g_0=2\) when this real genus factor is present, \(1\) otherwise. Then \(H/g_0<fp/(b g_0)\). If \(f\le b g_0\), the full strict group vanishes. In particular (3) covers positive conductor 5, (4) covers positive conductors 8, 12, 24, 28 and negative discriminants \(-8,-20,-24\), and (5) covers \(-35,-39\). For the latter four negative cases requiring a real genus factor, take respectively \(g=5,8,5,13\) at discriminants \(-20,-24,-35,-39\). The small odd table and (3) at \(-4\) complete the displayed list. The ramified coefficient primes compatible with quartic parity in that list reduce \(-15,-20,-35\) at 5 and \(-39\) at 13 to \(-3,-4,-7,-3\), respectively.
+
+For growing \(f\), the weaker condition \(f\le b g_0 p\) gives \(v_p(H)\le1\). Thus at most one of the two inverse faithful characters of this same quartic field can support nonzero residual torsion; its full strict group is cyclic by finite generation and finiteness of the positive even K-group controlling it by Poitou–Tate. Indeed the \(p\)-class group has order at most \(p\), the tame group ring splits over \(\mathbb Z_p\), and nonfaithful components descend to the quadratic field, which has no \(p\)-classes. If also \(p\mid e\), the full strict group has order at most \(p\): through depth two the principal cyclotomic character raised to \(-e\) is trivial, so finite descent gives at most \(p\) elements of order dividing \(p^2\). Any larger cyclic primary group would already have \(p^2\) such elements. The sum of full normalized contributions times \(\log p\) over all these primes is bounded by \(\log e\), uniformly in the host and weight. Without \(p\mid e\), the surviving cyclic branch can have greater length. [Integral finite descent at weights divisible by the coefficient prime](AlpogeSelmerReflection.md) · [Nontrivial quartic comparison at conductor 479](AlpogeSelmerWeightSpacing.md)
+
+On the same range \(f\le b g_0p\) there is also a full-order estimate when the weight varies, uniform in the quadratic host. Fix its discriminant and \(B\ge2\). Among \(1\le e\le B\), remove at most \(O(B/\log(2B))\) weights. The complete quartic contribution from this range, summed over all the other weights, is \(O(B\log(2B))\) with an absolute constant. For each contributing prime the base tame component has order \(p\). There is one totally ramified prime above \(p\) and the residual character is nontrivial there. The integral cyclic class-tower control and specialization argument therefore applies with variable \(e\) in place of \(2m\). In detail, the active module has \(X/TX\simeq\mathbb F_p\), is cyclic over \(\mathbb Z_p[[T]]\), and its relation ideal contains a series whose constant term has valuation one. A nonunit linear coefficient gives constant specialized length one. A unit linear coefficient gives a single root in \(p\mathbb Z_p\), and the full lengths on the one active progression are \(\min(k,1+v_p(e-s))\), allowing \(k=\infty\), just as in the integral calculation cited below. The tame character includes the fixed quadratic factor and the principal twist is precisely \(\langle\chi_{\mathrm{cyc}}\rangle^{-e}\). Thus the progression has step \(p-1\). Omitting its one closest index to \(s\), the valuations at the other indices sum to at most \(v_p((n-1)!)\), where \(n\le1+B/(p-1)\). This bounds their total full lengths by \(2n\). Only \(p\le4B+1\) can occur, since \(p-1\mid4e\); Chebyshev’s estimates give both asserted bounds. Small coefficient primes failing the displayed conductor condition, and the omitted weights, are additional obligations for a uniform pointwise argument. [Integral class-tower control](AlpogeSelmerTowerControl.md) · [Single-root proof and factorial spacing bound](AlpogeOcticSelmerBound.md)
+
+## Exact controls and formal scope
+
+The fixture runs 37 quartic/quadratic field checks using PARI/GP 2.17.4 with unconditional \(\mathtt{bnfcertify}\). It selects the totally real quartic field by its exact discriminant among the degree-four subfields at the prescribed conductor. At \((D,p)=(8,257)\) the class numbers are \(3,48\), so the positive even relative class number is 16. At \((-4,229)\) they are \(3,15\). For each of 18 genus checks, the compositum has degree eight, eight real embeddings, and absolute discriminant exactly \(D_E^2\). This certifies trivial finite relative discriminant independently of the character argument. The four ramified reductions appear separately. As a hostile control, \((-479,5)\) has quartic class number five and quadratic class number one. The earlier first-layer and stabilization computations identify nonzero full strict groups on precisely one of its two quartic branches. Thus full vanishing cannot be extended to all conductors from residual order alone. [Exact PARI/GP checks](../../../scripts/verify_alpoge_quartic_twists.gp) · [The conductor-479 class and its full-order calculation](AlpogeSelmerWeightSpacing.md)
+
+In the supporting namespace `GRWTSK.AlpogeQuarticCharacterTwists`, `cosh_sum_radial` proves the hyperbolic estimate by its full power series, and `cosh_product_radial` obtains (1) from the centered logarithms. The declarations `discriminant_gain`, `conductor_square_gain`, `conductor_log_gain`, `relative_class_bound`, `conductor_constant_absorbed`, and `refined_square_gain` verify the elementary archimedean transfers. The definition `oddMargin` and theorem `odd_conductor_margins` verify the five integer comparisons. The theorem `prime_to_even_relative` checks the even relative class-number implication. At Lean source blob `47b4e8be7b38a8f4a206b2a15d30997378c27ee4`, elaboration, fresh kernel replay of 11 roots and 19,346 declarations, and transitive axiom audits succeeded. Every audit returned a subset of `propext`, `Classical.choice` and `Quot.sound`. The relative-different calculation, class formulas, genus descent, class-tower identifications, and source inequality still require full Lean formalization. External independent mathematical review remains outstanding. [Supporting Lean source](AlpogeQuarticCharacterTwists.lean)
