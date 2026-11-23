@@ -238,6 +238,21 @@ hence not to any self-adjoint operator.}
 \]
 Equivalently, no bounded, boundedly invertible positive metric \(G\) can satisfy the quasi-Hermiticity equation \(K_\Xi^*G=GK_\Xi\), since it would imply \(\ker K_\Xi^*=G(\ker K_\Xi)=0\). An unbounded metric may have different domains and is **not** excluded by this theorem; nor is a genuinely distinct self-adjoint arithmetic construction.
 
+**Corollary (all nonzero spectral root vectors are incomplete).** Let \(\lambda\ne0\). If \(x\) is any generalized eigenvector for \(\lambda\), i.e. \((K_\Xi-\lambda I)^m x=0\) for some \(m\ge1\), the continuous linear functional \(\ell(x)=\langle x,y\rangle\) annihilates the range of \(K_\Xi\). Thus
+\[
+0=\ell((K_\Xi-\lambda I)^m x)=(-\lambda)^m\ell(x),
+\quad\text{so }x\in y^\perp.
+\]
+Since \(\ker K_\Xi=0\), there are **no zero-eigenvalue root vectors**. Every generalized eigenvector of \(K_\Xi\), at every eigenvalue, therefore lies in the **proper closed hyperplane** \(y^\perp\). Hence
+\[
+\boxed{
+\overline{\operatorname{span}}\{\text{all generalized eigenvectors of }K_\Xi\}
+\subseteq y^\perp\ne\mathcal H.
+}
+\tag{22a}
+\]
+The companion has an exact true-\(\Xi\) determinant and preserves all **nonzero algebraic zero multiplicities**, but its spectral root vectors are not complete. This is a stronger obstruction than non-self-adjointness: even under RH, one cannot simply declare its existing eigenvectors an orthonormal Hilbert–Pólya basis. This does not impede the *separate* positive coefficient-moment construction under independently proved all-rank Newton PSD.
+
 **Exact finite-section instability.** Let \(P_N\) project onto the first \(N\) basis vectors, \(K_{\Xi,N}=P_NK_\Xi P_N\), and \(y^{(N)}=P_N y\). The finite companion determinant identity (10) gives
 \[
 \det K_{\Xi,N}=a_N.
