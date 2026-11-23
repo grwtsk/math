@@ -1,4 +1,9 @@
-# All-degree B4 for the explicit CM elliptic-sigma model: Honda, Lubin–Tate, cube, and tame descent
+# Cubical elliptic-sigma B4: scalar-frame gate and integral coordinate invariance
+
+
+**Mathematical acceptance correction, November 22, 2026.** The cited Ando–Hopkins–Strickland theorem of the cube proves existence of a canonical **section of a cubical line bundle**; it does not, without an explicit integral local-frame comparison, establish equality of that section with the *particular scalar* \(\exp(\delta^3\log(\sigma_E/t_E))\) used in this note's §§4–5. The prior assertion of *completed all-degree B4 for the explicit elliptic-sigma model* is therefore **reclassified as CONDITIONAL ON THE SCALAR MATCH**. Finite exact sigma coefficients, Frobenius-sign analysis and the independent gauge-invariance theorem below retain their stated scopes. This correction does NOT assert an error in the external Lean proof or its RH conclusion.
+
+
 
 **Attribution:** grwtsk contributors. **Mathematical scope:** an independent mathematical derivation, using established Honda–Hazewinkel, Lubin–Tate, Frobenius and theorem-of-the-cube results, of **both B4 integrality clauses for the particular elliptic-sigma test family** of the November 21, 2026 explanatory draft, at primes 3, 7 and 11, in a two-site orbit. **Not proved:** B4 for the general automorphic theta kernels; \`Loc.AdmB\` or any global theta-lift witness; the main inequality (M), zero-freeness, original Xi all-rank Newton-Hankel positivity, or the positive self-adjoint Hilbert–Pólya determinant. This note is a mathematical **proof candidate awaiting independent review**, not Lean-verified. No Alpöge RH theorem, equivalent positivity, zero list, or spectral theorem is a premise.
 
@@ -260,3 +265,70 @@ so the valuation difference is visible already at the first Frobenius degree. Fo
 **External mathematical source comparison:** the original theorem of the cube is a statement about **sections of cubical line bundles**, not automatically equality of scalar series in independently chosen formal coordinates: Ando–Hopkins–Strickland, *Elliptic spectra, the Witten genus and the theorem of the cube* (2001), Theorem 2.55 and Proposition 2.57, pp. 620–621, https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/musix2.pdf. A scalar normalization match is required in any source-level B4 transport. The separate 21 November 2026 conventional reconstruction, J. Adriazola, [PROOF_DEPENDENCY_MAP.md](https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/main/PROOF_DEPENDENCY_MAP.md), pinned blob \`8ec40a42f9fe8999af2e91d2b94b4fd08000dd4b\`, describes the original kernel law as the rank-one theta-transfer / \`BetaIsG\` input, followed by local gain and \`LinkDIV\`. It is **direction**, not an imported RH theorem or a substitute for a source proof.
 
 **Verification status:** new exact rational point-count / Honda coefficient script PASS; its Git source is byte-identical to the executed file. No new Lean theorem is claimed; no Lean elaboration, kernel replay, axiom audit or independent human mathematical review was performed. No imported RH or general theta-positivity premise.
+
+## 9. Exact source B4 gauge invariance and the remaining scalar section
+
+**Primary sources.** Alpöge's actual \`cobX\`, \`cobY\`, \`B1\`–\`B4\`, \`Loc.B0\`, \`Loc.AdmB\` are in \`src/Formalism/SharpRestriction/Divisibility/ProductZerothFirstParts.lean\` at \`leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005\`, Git blob \`b8f51123f9c2a096c73e8302aac88e1797de16fc\`. The independent analytic input is Ando–Hopkins–Strickland (2001), Equation (1.1) on printed p. 598 and Theorem 2.55 on p. 620, https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/musix2.pdf. These identify a **cubical line-bundle section**, not a scalar series without a chosen local frame.
+
+**Theorem (all-degree, RH-independent, with the original two-site source action).** Let \(p\) be odd, \(A\) the integer ring of a \(p\)-adic unramified quadratic extension containing \(\mu_{p^2-1}\), and \(F_H\) the *integral* Honda formal group with the actual height-two logarithm
+\[
+L(T)=\sum_{r\ge0}p^{-r}T^{p^{2r}}.
+\]
+Assume a good-reduction elliptic group with integral parameter \(t_E\) and a **specified integral strict** coordinate \(h(T)=t_E(L(T))\in TA[[T]]\) intertwining \(F_H,F_E\). This is a hypothesis, not a generic consequence of supersingularity: §8 gives a Frobenius-sign obstruction for invalid twists. Let \(\theta(z)\) be a normalized sigma section, \(u(z)=\theta(z)/t_E(z)\) with \(u(0)=1\), \(m(z)=\log u(z)\), \(\beta(z,w)=m(z+w)-m(z)-m(w)\). Let \(\mathcal P\) be the **original** source projector
+\[
+\mathcal P\beta(z,w)
+=\frac1{p^2-1}\sum_{\zeta^{p^2-1}=1}
+  \beta(\zeta z,\zeta^{-p}w).
+\tag{G1}
+\]
+The two source B4 series are \(B_X=\exp((\Delta_X\mathcal P\beta)\circ L)\) and \(B_Y=\exp((\Delta_Y\mathcal P\beta)\circ L)\).
+
+**(a) Arbitrary Gaussian normalization.** Multiplication of \(\theta\) by \(\exp(az^2+bz)\), with \(a,b\in K\) **not required integral**, leaves *both B4 series exactly unchanged*. Indeed, the third additive finite difference \(\delta^3(az^2+bz)\) vanishes identically. More strongly the change in \(\beta\) is \(2azw\), whose projector vanishes because the torus character \(\zeta^{1-p}\) is nontrivial (since \(p^2-1\nmid p-1\)). Thus already \(\mathcal P\beta\) is unchanged. This removes the Gaussian/quasiperiod normalization ambiguity without assuming its coefficient \(p\)-integral.
+
+**(b) Integral elliptic coordinate gauge.** Let \(\varphi(t)\in1+tA[[t]]\), \(t'_E(z)=t_E(z)\varphi(t_E(z))\), and let \(\beta'\) be derived using the *same theta* but the new normalized coordinate. Then **for both X and Y separately**, the B4 series for \(t'_E\) and \(t_E\) differ by multiplication by a series in \(1+\mathfrak m A[[T_1,T_2,T_3]]\), \(\mathfrak m=(T_1,T_2,T_3)\). Hence the corresponding B4 coefficient-integrality statements are **equivalent**, at all degrees.
+
+*Proof.* Write \(m'(z)=m(z)-\log\varphi(t_E(z))\). For every nonempty \(S\subseteq\{1,2,3\}\), put
+\[
+T_S=L^{-1}\!\left(\sum_{i\in S}L(T_i)\right),
+\qquad u_S=\varphi(h(T_S))\in1+\mathfrak m A[[T]].
+\]
+The source Honda law and \(h\) are integral, so every one of these seven units is integral. The **full unprojected coordinate correction** is exactly
+\[
+\boxed{
+U_\varphi=\frac{u_{123}\,u_1u_2u_3}{u_{12}u_{13}u_{23}}
+=\exp\bigl(\delta^3\log\varphi(t_E(z))\bigm|_{z_j=L(T_j)}\bigr)
+\in1+\mathfrak m A[[T]].
+}
+\tag{G2}
+\]
+For the first original \`cobX\`, the torus acts on \((T_1,T_2,T_3)\) by \((\zeta,\zeta,\zeta^{-p})\); for \`cobY\`, by \((\zeta,\zeta^{-p},\zeta^{-p})\). The source \(L\) is equivariant under these Teichmüller weights because \(L(\zeta T)=\zeta L(T)\) when \(\zeta^{p^2-1}=1\). Let \(\mathcal P_X,\mathcal P_Y\) denote these averages on the logarithm of \(U_\varphi\). For \(i=X,Y\),
+\[
+\boxed{
+V_i=\exp(\mathcal P_i\log U_\varphi)
+=\left(\prod_{\zeta\in\mu_{p^2-1}}\zeta_i U_\varphi
+\right)^{1/(p^2-1)}
+\in1+\mathfrak m A[[T]].
+}
+\tag{G3}
+\]
+The norm is a unit with integral coefficients; its unique \(1/(p^2-1)\)-power has integral coefficients by the \(p\)-adic binomial theorem, since \(1/(p^2-1)\in\mathbb Z_p\). Its inverse is integral as well. Thus \(B'_i=B_iV_i^{-1}\) and both directions of B4 integrality follow. No outside RH theorem is used. QED.
+
+**Compatibility with B0 is algebraic, not its existence proof.** If the *genuine kernel* were independently factored as \(\Theta=U\exp(-\Upsilon)\) with \(U\) an integral unit, then an integral exponential gauge \(\Upsilon'=\Upsilon+\eta\), \(\exp\eta\in A[[T]]^\times\), changes the residual to \(U'=U\exp\eta\), still integral. This does NOT construct \(\Theta\), the \`Loc.B0\` hyperbolic-frame identity, its prescribed \(ep\), the lattice/covolume factors or source (M).
+
+**Exact finite source-model controls.** The executable [verify_alpoge_cubical_gauge.py](../../../scripts/verify_alpoge_cubical_gauge.py) uses the **actual CM elliptic** \(t_E(z)\) recurrence, the **genuine Honda \(L(T)\)** (including \(T^9/3\) when \(p=3\)), and the source torus projector. Under the nontrivial integral strict gauge \(\varphi(t)=1+2t+3t^2\), exact Gaussian rational arithmetic shows both unprojected \(U_\varphi\) and the projected norm-root are \(p\)-integral through total degree 11 for \(p=3,c=-i\) (166 and 12 terms); degree 12 for \(p=7,c=-1-i\) (221 and 7 terms); and degree 14 for \(p=11,c=-i\) (365 and 11 terms).
+
+**Hostile hypothesis check:** with the **nonintegral** gauge \(\varphi(t)=1+t/p\), source B4-style projected integrality fails: for \(p=3\), the coefficient of \(T_1^2T_2T_3\) is \(-1/27\), with valuation \(-3\); for the source-range \(p=7,c=-1-i\), the coefficient of \(T_1^6T_2T_3\) is \(38411/4117715+16i/1715\), with \(v_7=-7\). Thus the integral-gauge premise cannot be discarded.
+
+**Exact still-open scalar identification.** The theorem of the cube yields a canonical \(s_{E/A}\) **in the line bundle** \(\Theta^3\mathcal I(0)\). For its use in B4, one must identify, with all local frames and signs,
+\[
+\boxed{
+\operatorname{scalar}_{t_E}(s_{E/A})
+=\exp(\pm\delta^3\log(\sigma_E/t_E)),
+}
+\tag{G4}
+\]
+or exhibit a *proven integral unit* relating these expressions, under the same addition laws, rigidification, and theta-section normalization. Theorem 2.55 **alone** does not supply the exact scalar equality (G4). This is the specific missing source proof in §§4–5; the present gauge theorem shows that an integral change of \(t_E\) cannot create or erase B4 failure once (G4) has been established in one legitimate frame. A nonintegral gauge CAN create a failure, as the hostile check demonstrates.
+
+Even after (G4) is proved for the three elliptic models, \`Loc.B0\` for the actual higher-rank automorphic theta kernels, Frobenius minor divisibility, all local factors/periods/lattice covolumes, trace/Galois bounds, character corrections and **the complete averaged first inequality (M)** remain independent proof obligations. The exact coefficient-defined true-\(\Xi\) Fredholm companion remains **nonselfadjoint**, and the distinct positive selfadjoint moment return requires independent all-rank Newton Hankel positivity (RH-equivalent). This section proves no independent RH or completed Hilbert–Pólya result.
+
+**Evidence:** (G1)–(G3) are formal all-degree proofs under displayed hypotheses; the CM tests were executed in exact rational arithmetic, and the tested script is source-pinned; the scalar comparison (G4) is **NOT_PROVED**. The new infinite theorem has no Lean elaboration/kernel replay or axiom audit (**NOT_RUN**); independent mathematical review is **NOT_RUN**. This is a deliberate correction of the former unconditional model-B4 acceptance wording.
