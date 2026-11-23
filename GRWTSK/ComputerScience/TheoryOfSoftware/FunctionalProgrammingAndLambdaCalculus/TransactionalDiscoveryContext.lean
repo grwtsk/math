@@ -33,7 +33,7 @@ preserves safety and behavior, and transports every existing derivation.
 Additivity of the imported trace cost gives nonrefundable work and serial
 elapsed time. Peak storage and memory use the conservative absolute envelope
 already enforced by each Step, not an additive sum. The discovery witness
-charges the entire certified cap as an upper bound, not an optimal cost.
+requires an initially pending target and charges the entire certified cap as an upper bound, not an optimal cost.
 Physical calibration, retained trace size, concurrent workers, failures
 outside the bound, mode-specific verification/recovery/application,
 source-to-runtime refinement, and coverage remain open. No RH assumption or
@@ -133,7 +133,15 @@ structure ClosedObject where
   axioms : List String
   checkedBase : String
 
+structure Submission where
+  key : DeclarationKey
+  proofBytes : List UInt8
+  checkedBase : String
+
 structure TrustedChecker where
+  foundationEpoch : String
+  policyIdentity : String
+  extendsSnapshot : String → String → Prop
   expected : Judgment.{u} → Prop
   expectedUnique : ∀ j k, expected j → expected k → j.key = k.key → j = k
   checked : ClosedObject → Prop
@@ -146,6 +154,8 @@ structure TrustedChecker where
 
 structure Gate (C : TrustedChecker.{u}) (j : Judgment.{u}) (obj : ClosedObject) : Prop where
   expected : C.expected j
+  epoch : j.key.foundationEpoch = C.foundationEpoch
+  policy : j.key.policyIdentity = C.policyIdentity
   exactKey : obj.key = j.key
   checked : C.checked obj
   replayed : C.replayed obj
@@ -186,8 +196,12 @@ theorem gate_unique_target (C : TrustedChecker.{u}) {j k : Judgment.{u}}
 
 structure Entry (C : TrustedChecker.{u}) where
   judgment : Judgment.{u}
+  submission : Submission
   object : ClosedObject
   gate : Gate C judgment object
+  submittedKey : submission.key = object.key
+  submittedProof : submission.proofBytes = object.proofBytes
+  submittedBase : submission.checkedBase = object.checkedBase
 
 def Entry.fact {C : TrustedChecker.{u}} (e : Entry C) :
     InstantiatedFact Judgment meaning where
@@ -202,18 +216,23 @@ structure ProtectedEnv (C : TrustedChecker.{u}) where
   snapshot : String
   entries : List (Entry C)
   present : ∀ e, e ∈ entries → C.present snapshot e.object
+  /-- Distinct installed declaration objects cannot share the same name. -/
+  noConflict : ∀ e e', e ∈ entries → e' ∈ entries →
+    e.object.key.source.declaration = e'.object.key.source.declaration →
+    e.object = e'.object
 
 def Admitted {C : TrustedChecker.{u}} (env : ProtectedEnv C)
     (f : InstantiatedFact Judgment meaning) : Prop :=
   ∃ e, e ∈ env.entries ∧ e.fact = f
 
 def Extends {C : TrustedChecker.{u}} (old new : ProtectedEnv C) : Prop :=
-  ∃ suffix, new.entries = old.entries ++ suffix
+  C.extendsSnapshot old.snapshot new.snapshot ∧
+    ∃ suffix, new.entries = old.entries ++ suffix
 
 theorem admission_mono {C : TrustedChecker.{u}} {old new : ProtectedEnv C}
     {f : InstantiatedFact Judgment meaning}
     (h : Extends old new) (hf : Admitted old f) : Admitted new f := by
-  obtain ⟨suffix, same⟩ := h
+  obtain ⟨suffix, same⟩ := h.2
   obtain ⟨e, he, eq⟩ := hf
   exact ⟨e, by rw [same]; exact List.mem_append.mpr (Or.inl he), eq⟩
 
@@ -223,6 +242,19 @@ theorem admitted_exact_object {C : TrustedChecker.{u}} (env : ProtectedEnv C)
       C.present env.snapshot e.object ∧ Gate C f.atom e.object := by
   obtain ⟨e, he, rfl⟩ := h
   exact ⟨e, he, e.gate.exactKey, env.present e he, e.gate⟩
+
+/-- The admitted proof is tied to the submitted object, not merely an
+existence proof of the same proposition. Equality of proof-bearing facts
+alone would not suffice, by proof irrelevance. -/
+theorem admitted_submission_exact {C : TrustedChecker.{u}} (env : ProtectedEnv C)
+    (f : InstantiatedFact Judgment meaning) (h : Admitted env f) :
+    ∃ e, e ∈ env.entries ∧ e.submission.key = f.atom.key ∧
+      e.submission.proofBytes = e.object.proofBytes ∧
+      e.submission.checkedBase = e.object.checkedBase ∧
+      C.present env.snapshot e.object := by
+  obtain ⟨e, he, rfl⟩ := h
+  exact ⟨e, he, e.submittedKey.trans e.gate.exactKey, e.submittedProof,
+    e.submittedBase, env.present e he⟩
 
 /-- This replaces the generic admission and extension fields with the actual
 mathematical protected-entry relation. Other policy suppliers stay explicit. -/
@@ -401,28 +433,36 @@ def discoveryModel (P : Policy J Meaning G Reg Env Obs) :
   Discovery may add a genuinely new fact; initial Deductive is not implied. -/
   derives := fun _ p => Meaning p
   valid := fun s j p e =>
-    j = .discover ∧ Safe P e.cap s ∧ Run P e.cap s e.events e.final ∧
+    j = .discover ∧ Pending s.core p ∧ Safe P e.cap s ∧
+      Run P e.cap s e.events e.final ∧
       ∃ f, f ∈ e.final.core.facts ∧ f.atom = p ∧ P.admitted e.final.core.environment f
   cost := fun _ _ _ e => e.cap
   sound := by
     intro s j p e h
-    obtain ⟨f, _, eq, _⟩ := h.2.2.2
+    obtain ⟨f, _, eq, _⟩ := h.2.2.2.2
     exact eq ▸ f.evidence
 
 theorem admitted_run_attainable (P : Policy J Meaning G Reg Env Obs)
     {s t : State J Meaning G Reg Env} {events : List (Event J)}
     {cap : ResourceVec} {p : J}
     (hs : Safe P cap s) (h : Run P cap s events t)
-    (known : Known t.core p) :
+    (pending : Pending s.core p) (known : Known t.core p) :
     Attainable (discoveryModel P) s .discover cap p := by
   have ht := run_safe P cap h hs
   have accepted := (known_iff_admitted_fact P t.core ht.1 p).mp known
-  exact ⟨⟨cap, events, t⟩, ⟨rfl, hs, h, accepted⟩, le_rfl⟩
+  exact ⟨⟨cap, events, t⟩, ⟨rfl, pending, hs, h, accepted⟩, le_rfl⟩
 
 theorem discovery_attainable_sound (P : Policy J Meaning G Reg Env Obs)
     {s : State J Meaning G Reg Env} {cap : ResourceVec} {p : J}
     (h : Attainable (discoveryModel P) s .discover cap p) : Meaning p :=
   attainable_sound (discoveryModel P) h
+
+/-- A lookup of an already admitted target is not discovery in this model. -/
+theorem discovery_requires_pending (P : Policy J Meaning G Reg Env Obs)
+    {s : State J Meaning G Reg Env} {cap : ResourceVec} {p : J}
+    (h : Attainable (discoveryModel P) s .discover cap p) : Pending s.core p := by
+  obtain ⟨e, valid, _⟩ := h
+  exact valid.2.1
 
 /-- The absent execution modes cannot be silently classified as implemented. -/
 theorem other_mode_not_attainable (P : Policy J Meaning G Reg Env Obs)
