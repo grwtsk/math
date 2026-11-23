@@ -190,3 +190,73 @@ but the **independent suppliers** to \(\mathrm{CoreAtH}\), \(\mathrm{EAtH}\) are
 The maintained [XiTaylorFredholmLinearization.md](XiTaylorFredholmLinearization.md) gives an **unconditional exact source-defined trace-class Fredholm determinant**, but the operator is structurally NONselfadjoint. [XiNewtonMomentHilbertPolya.md](XiNewtonMomentHilbertPolya.md) gives a complete **conditional** coefficient-defined positive self-adjoint operator with all original spectral multiplicities, under the full true-Xi Newton-Hankel PSD, an RH-equivalent premise. This elliptic cubical model result does not prove that premise or create a positive Xi operator.
 
 **Evidence:** all-degree mathematics uses named classical theorems, not computational extrapolation or the external RH endpoint. Local exact model arithmetic tests PASSED; independent human mathematical review NOT_RUN; Lean elaboration, fresh kernel replay, transitive axiom audit **NOT_RUN**; this new mathematical model result has **no new Lean kernel formalization**. The former global theta-source/M/RH/Hilbert–Pólya open status is preserved. No Noe execution, automation, cross-chat messaging, scheduler changes or root build modifications were undertaken.
+
+
+## 8. Exact Frobenius-sign obstruction to transferring arbitrary CM theta models
+
+**Independent course correction (2026-11-22).** The strict integral coordinate correspondence in (12) relies essentially on the **specific CM twist** and its positive \(p^2\)-Frobenius sign. Supersingularity and height two ALONE do not imply that a formal group is integrally isomorphic over the original coefficient ring to the fixed source \(L(T)=\sum p^{-r}T^{p^{2r}}\). The distinction is mathematical, not numerical, and is mandatory for transferring source B4 to arbitrary elliptic models.
+
+**Theorem (unconditional negative-sign obstruction).** Let \(p\equiv3\pmod4\) be an odd prime, \(A\) the ring of integers of the unramified quadratic extension \(\mathbb Q_{p^2}/\mathbb Q_p\) (residue field \(\mathbb F_{q}\), \(q=p^2\)), and \(E:y^2=x^3-x\) over \(A\). Let \(F_E\) be its integral formal-group law in the parameter \(t=-x/y\), and \(F_H\) the *exact* normalized source Honda law with logarithm
+\[
+L_H(T)=\sum_{r\ge0}\frac{T^{q^r}}{p^r}.
+\]
+There is **no integral formal-group isomorphism**
+\[
+h:F_H\xrightarrow{\;\sim\;}F_E
+\quad\text{over }A,
+\]
+not even if the derivative \(h'(0)\) is allowed to be a non-one unit.
+
+**Proof.** Write \(\chi\) for the quadratic character of \(\mathbb F_p\), with \(\chi(0)=0\). Since \(f(x)=x^3-x\) is odd and \(\chi(-1)=-1\), the terms at \(x\) and \(-x\) cancel in the quadratic-character sum:
+\[
+\sum_{x\in\mathbb F_p}\chi(x^3-x)=0,\qquad
+\#E(\mathbb F_p)=p+1.
+\]
+The Frobenius trace is therefore \(a_p=0\). The standard elliptic Frobenius equation in \(\operatorname{End}(E_{\mathbb F_p})\) says \(\pi_p^2-a_p\pi_p+[p]=0\), so
+\[
+\operatorname{Fr}_{p^2}=\pi_p^2=[-p].
+\]
+The Frobenius raises the integral parameter \(t\) to its \(p^2\)th power modulo \(p\), whereas the formal inverse has leading term \([-1]_{F_E}(t)=-t+O(t^2)\). Thus
+\[
+[p]_{F_E}(t)\equiv-t^q+O(t^{2q})\pmod p.
+\tag{19}
+\]
+By the Honda–Hazewinkel construction for the source \(L_H\), on the other hand,
+\[
+[p]_{F_H}(T)\equiv T^q+O(T^{q+1})\pmod p.
+\tag{20}
+\]
+If an integral formal-group isomorphism \(h(T)=uT+O(T^2)\) existed over \(A\), then \(u\in A^\times\) and
+\[
+h([p]_{F_H}(T))=[p]_{F_E}(h(T)).
+\]
+Reduce modulo \(p\) and compare **the first nonzero degree \(q\)**. Equations (19)–(20) give
+\[
+\bar u=-\bar u^q,\qquad \bar u^{q-1}=-1,
+\tag{21}
+\]
+where \(\bar u\in\mathbb F_q^\times\). But every nonzero \(\bar u\in\mathbb F_q\) satisfies \(\bar u^{q-1}=1\), contradicting \(p\) odd. QED.
+
+**Consequences.** A strict map \(h'(0)=1\) is impossible even after unramified scalar extension: in that case (21) reads \(1=-1\). A **nonstrict** unit \(u\) with \(u^{q-1}=-1\) becomes available after extending the residue field from \(\mathbb F_q\) to \(\mathbb F_{q^2}\), but that only removes the **leading-coefficient** obstruction. It neither constructs a full integral isomorphism nor preserves the original source's normalization, character twists, periods, \(\mathrm{B0}\) factors, or (M) error budgets automatically. Such a change of coefficient ring would require its own source-level transport proof.
+
+**Independent exact finite CM-twist controls.** The byte-pinned checker [verify_alpoge_frobenius_sign.py](../../../scripts/verify_alpoge_frobenius_sign.py), using the already-published arithmetic helpers [verify_alpoge_elliptic_cube.py](../../../scripts/verify_alpoge_elliptic_cube.py) (blob \`38ac38edc4ed3dd86b49f9a6ac3e7a97f6814c10\`), enumerates \(\mathbb F_{p^2}\) points and calculates the first source Honda/elliptic coordinate coefficient \([T^{p^2}]t_E(L_H(T))\), with all arithmetic in \(\mathbb Q(i)\) and no floating point:
+
+| \(p\) | Untwisted \(c=1\): \(\#E(\mathbb F_{p^2})\) | Untwisted trace | \(v_p([T^{p^2}]h_{\mathrm{untwisted}})\) | Source-aligned \(c\) | Source-aligned trace | \(v_p([T^{p^2}]h_{\mathrm{aligned}})\) |
+|---:|---:|---:|---:|---|---:|---:|
+| 3 | 16 | -6 | -1 | \(-i\) | +6 | 0 |
+| 7 | 64 | -14 | -1 | \(-1-i\) | +14 | 0 |
+| 11 | 144 | -22 | -1 | \(-i\) | +22 | 0 |
+
+For \(p=3\), the first coefficients are **exactly**
+\[
+[T^9]\,t_{E_{c=1}}(L_H(T))=\frac7{15},\qquad
+[T^9]\,t_{E_{c=-i}}(L_H(T))=\frac15,
+\tag{22}
+\]
+so the valuation difference is visible already at the first Frobenius degree. For \(p=7,11\), the complete rational coefficients at degrees \(49,121\) are checked in the script, and their respective valuations are \(-1\) and \(0\). The checker also verifies that no nonzero scalar in \(\mathbb F_{p^2}\) satisfies (21), for all three primes.
+
+**Source and evidentiary limitation.** This all-primes negative-sign obstruction is a genuine mathematical theorem deduced independently from elementary point counting, the elliptic Frobenius equation and formal-group \(p\)-series. The finite script corroborates specific twists, not the all-primes proof. The **positive-sign all-degree model B4 argument in §§1–7** remains a mathematical proof candidate awaiting independent review, not a Lean-checked or globally accepted theta-integrality theorem. It applies to its **chosen aligned CM twists**, not arbitrary supersingular curves. For the actual automorphic theta kernels in Alpöge's (M), even a sign-aligned rank-one elliptic model must still be matched exactly through \`Loc.B0\`/\`Loc.AdmB\`, the hyperbolic basis change, lattice divisibility, local factor/period and global mean-slope arguments. Neither the model proof nor (19)–(22) establishes those correspondences or RH.
+
+**External mathematical source comparison:** the original theorem of the cube is a statement about **sections of cubical line bundles**, not automatically equality of scalar series in independently chosen formal coordinates: Ando–Hopkins–Strickland, *Elliptic spectra, the Witten genus and the theorem of the cube* (2001), Theorem 2.55 and Proposition 2.57, pp. 620–621, https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/musix2.pdf. A scalar normalization match is required in any source-level B4 transport. The separate 21 November 2026 conventional reconstruction, J. Adriazola, [PROOF_DEPENDENCY_MAP.md](https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/main/PROOF_DEPENDENCY_MAP.md), pinned blob \`8ec40a42f9fe8999af2e91d2b94b4fd08000dd4b\`, describes the original kernel law as the rank-one theta-transfer / \`BetaIsG\` input, followed by local gain and \`LinkDIV\`. It is **direction**, not an imported RH theorem or a substitute for a source proof.
+
+**Verification status:** new exact rational point-count / Honda coefficient script PASS; its Git source is byte-identical to the executed file. No new Lean theorem is claimed; no Lean elaboration, kernel replay, axiom audit or independent human mathematical review was performed. No imported RH or general theta-positivity premise.
