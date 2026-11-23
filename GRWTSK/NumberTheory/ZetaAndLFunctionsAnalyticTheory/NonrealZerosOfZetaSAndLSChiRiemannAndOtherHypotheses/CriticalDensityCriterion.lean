@@ -13,7 +13,7 @@ all-positive-rate bound is equivalent to the canonical RH proposition.
 The reverse proof uses the exact exponential formula and the existing
 functional-equation reflection, not a converse of a prime-count inequality.
 Constants may depend on the zero and epsilon. No growth witness is asserted.
-SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+The original density and reflection hypotheses are retained in the Poisson comparison in the companion module XiBoundaryResolventMeasure.
 -/
 set_option autoImplicit false
 noncomputable section
@@ -69,13 +69,13 @@ theorem upper_of_density_growth (h : CriticalDensityGrowth) : CanonicalUpperHalf
     ring
   rw [norm_density_exp, he] at hbound
   have hsmall : Real.exp (ε * t) ≤ C :=
-    (mul_le_mul_right (Real.exp_pos _)).mp hbound
+    (mul_le_mul_iff_left₀ (Real.exp_pos _)).mp hbound
   have hid : ε * t = ε * (R + 1) + (C + 1) := by
     dsimp [t]
     field_simp [hε.ne']
     <;> ring
   have hlarge := Real.add_one_le_exp (ε * t)
-  rw [hid] at hlarge
+  rw [hid] at hlarge hsmall
   have hnonneg : 0 ≤ ε * (R + 1) := mul_nonneg hε.le (by linarith)
   linarith
 

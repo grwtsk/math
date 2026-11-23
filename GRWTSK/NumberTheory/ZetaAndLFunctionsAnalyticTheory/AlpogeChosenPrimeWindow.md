@@ -64,7 +64,7 @@ $$
  S(5,X'')+\mathrm{FRamD}(D,j)\log d
  -\tfrac12\,\mathrm{fockDeg}(D,j)\,(\log g_0+\log g_1).
 $$
-The last term is an additional signed obligation for any all-prime budget. Summing valuations over places with local degrees or lattice indices also requires the corresponding place-to-prime conversion. [Distinct type primes](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataHost.lean#L68-L77)
+The last term is an additional signed obligation for any all-prime budget. The [place-degree calculation](AlpogeTypePrimeBalance.md) gives the conversion to lattice sizes and the exact cancellation of the Fock term against the specified type-prime error. [Distinct type primes](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataHost.lean#L68-L77)
 
 The [companion Lean source](AlpogeChosenPrimeWindow.lean) proves the shift identity, the norm remainder, and both finite translation sums. The prime-count transfer, LP specialization and formulas (1) and (2) are manuscript arguments conditional on the stated arithmetic and lift inputs. Reconstructing those inputs, converting these gains into the normalized lattice valuations, paying the other local and global losses in the main inequality (M), and independent review remain open here. The zero exclusions used above concern the selected primitive quadratic characters and the real axis.
 
