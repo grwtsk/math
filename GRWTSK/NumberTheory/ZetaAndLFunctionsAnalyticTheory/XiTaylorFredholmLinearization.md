@@ -184,3 +184,85 @@ The explanatory draft's (M) is **quoted from Lean, not independently proved in t
 - No imported external RH proof; no conjectural positivity or accepted all-source (M); no source-independent self-adjoint operator is claimed **unconditionally**.
 
 **Precise outcome:** An exact trace-class Fredholm determinant of the original \(\Xi\) is constructed unconditionally **from the actual arithmetic/theta coefficient data, without zero-indexing**. The extra self-adjointness condition required by an independent Hilbert–Pólya proof remains open, as does the full arithmetic (M).
+
+
+## An exact one-dimensional cokernel and an unconditional bounded-similarity obstruction
+
+**Independent mathematical advance (2026-11-22, original source unchanged):** The *same* coefficient-defined trace-class operator \(K_\Xi=-S+V\) from (3)–(4), which has the genuine exact Fredholm determinant (8), has an **unconditional one-dimensional adjoint kernel**, even though it is injective. This rules out **every boundedly invertible change of coordinates or bounded positive metric** that would make THIS operator self-adjoint or normal. It does not rule out the *different* coefficient-moment operator whose construction requires independent Newton PSD. Mathematical proof below; no RH or external Alpöge theorem used.
+
+**Theorem (true-Xi companion is an injective non-dense-range operator).** On the actual \(\mathcal H=\ell^2(\mathbb N_0)\), with
+\[
+q_n=(n+2)^{-3/2},\quad W_n=((n+1)!)^{-3/2},
+\quad v_n=a_{n+1}/W_n,
+\quad (K_\Xi x)_0=\sum_{n\ge0}v_nx_n,\quad
+(K_\Xi x)_{n+1}=-q_nx_n,
+\tag{19}
+\]
+define
+\[
+y_0=1,\qquad
+y_{n+1}=\frac{\overline{v_n}}{q_n}
+=\overline{a_{n+1}}\,((n+2)!)^{3/2}.
+\tag{20}
+\]
+Then \(y\in\mathcal H\setminus\{0\}\), and
+\[
+\boxed{
+\ker K_\Xi=\{0\},\qquad
+\ker K_\Xi^*=\mathbb C y,\qquad
+\overline{\operatorname{Ran}K_\Xi}=y^\perp
+\quad\text{(codimension one)}.
+}
+\tag{21}
+\]
+
+*Proof of summability.* Because the **actual** normalized square-Xi function \(F(w)\) is entire of order \(1/2\), for any \(\rho>1/2\) it admits the Cauchy growth estimate \(\log M_F(R)\le C_\rho R^\rho\) at large \(R\). Choose \(\rho=3/5<2/3\). Optimizing Cauchy's integral formula gives
+\[
+\log|a_n|\le-\frac53n\log n+O(n).
+\]
+The correction \(((n+1)!)^{3/2}\) in (20) contributes only \(+\frac32n\log n+O(n)\), leaving \(-\frac16n\log n+O(n)\). Thus \(\sum_n|y_n|^2<\infty\), without RH, any zero ordinates, or a conjectural spectral property.
+
+*Kernel and cokernel.* Every \(q_n>0\), so \(K_\Xi x=0\) forces \(x_n=0\) from coordinate \(n+1\). Since the actual Xi \(a_n\) are real, standard Hilbert-space adjunction gives
+\[
+(K_\Xi^*z)_n=\overline{v_n}z_0-q_nz_{n+1}.
+\]
+Hence \(K_\Xi^*y=0\), and any \(z\in\ker K_\Xi^*\) is determined recursively by \(z_0\), proving (21). In particular, \(K_\Xi\) is compact, injective, and has **non-dense range**. This is NOT a claim that its range is closed or that it has a Fredholm index (a compact infinite-dimensional operator is not Fredholm).
+
+**Corollary (no bounded self-adjoint or normal similarity).** Suppose a bounded invertible \(Q\) conjugated \(K_\Xi\) to a bounded normal operator \(N=Q^{-1}K_\Xi Q\). Injectivity of \(K_\Xi\) implies \(\ker N=0\), and normality implies \(\ker N^*=0\), so \(\overline{\operatorname{Ran}N}=\mathcal H\). A bounded invertible \(Q\) preserves density of the range under conjugation, contradicting (21). Thus
+\[
+\boxed{
+K_\Xi\ \text{is not boundedly similar to any normal operator,
+hence not to any self-adjoint operator.}
+}
+\tag{22}
+\]
+Equivalently, no bounded, boundedly invertible positive metric \(G\) can satisfy the quasi-Hermiticity equation \(K_\Xi^*G=GK_\Xi\), since it would imply \(\ker K_\Xi^*=G(\ker K_\Xi)=0\). An unbounded metric may have different domains and is **not** excluded by this theorem; nor is a genuinely distinct self-adjoint arithmetic construction.
+
+**Exact finite-section instability.** Let \(P_N\) project onto the first \(N\) basis vectors, \(K_{\Xi,N}=P_NK_\Xi P_N\), and \(y^{(N)}=P_N y\). The finite companion determinant identity (10) gives
+\[
+\det K_{\Xi,N}=a_N.
+\]
+The original theta representation gives \(a_N>0\) for every \(N\ge1\), hence \(K_{\Xi,N}\) is invertible. From the same exact recurrence,
+\[
+K_{\Xi,N}^*y^{(N)}
+=\overline{v_{N-1}}e_{N-1},
+\qquad
+v_{N-1}=a_N(N!)^{3/2}.
+\]
+Therefore
+\[
+\boxed{
+\|K_{\Xi,N}^{-1}\|=\|(K_{\Xi,N}^*)^{-1}\|
+\ge\frac{\|y^{(N)}\|_2}{|v_{N-1}|}
+\ge\frac1{a_N(N!)^{3/2}}
+\ \longrightarrow\ \infty.
+}
+\tag{23}
+\]
+The Cauchy estimate proves that the denominator tends to zero faster than any fixed geometric progression. These exact finite-section near-left-kernel vectors show severe **inverse-norm instability**. Such instability by itself does NOT rule out finite-dimensional self-adjoint similarities (positive compact self-adjoint matrices can also have diverging inverse norms). The actual prohibition of a bounded similarity for the infinite source operator comes from the rigorous kernel/range mismatch (21)–(22). The finite determinants themselves still converge correctly to \(F\); determinant convergence alone does not control metric stability.
+
+**Hostile and independent controls.** The byte-pinned [verify_xi_taylor_companion.py](../../../scripts/verify_xi_taylor_companion.py) now runs **62 additional exact-rational** tests of the finite residual identity \(K_N^{\mathsf T}y^{(N)}=v_{N-1}e_{N-1}\) and of \(\det K_N=a_N\), across arbitrary nonzero rational shift weights and a genus-zero positive-coefficient toy source \(a_n=1/(n!)^4\), \(q_n=1/(n+2)^2\). The toy source makes \(v_{N-1}=1/(N!)^2\) and the inverse-norm lower bound at least \((N!)^2\) for **every** \(N\); the genuine Xi conclusion (21)–(23) comes from the **analytic** proof, not by substituting the toy source. The existing 123 finite determinant and Newton-trace tests and optional original-Xi numerical probe remain intact. A separate symbolic arbitrary-coefficient test verified (22)'s *finite residual algebra* for \(N=1,\ldots,7\); it cannot certify infinite-dimensional closure by itself.
+
+**Return to source (M).** Alpöge's original \`CoreAtH\` and \`EAtH\` still depend on the genuine theta-kernel \`B0/B4\` integrality, Frobenius-compatible lattice divisibility, period/local Euler factors, character \`L'/L(1)\` corrections, trace/rank and Galois-cohomology bounds, and the fully averaged inequality (M) with all uniform error quantifiers. The present cokernel theorem is about the **true \(\Xi\) coefficient-defined Fredholm companion**, but it does not prove any of those arithmetic suppliers. The positive coefficient-moment Hilbert–Pólya return in [XiNewtonMomentHilbertPolya.md](XiNewtonMomentHilbertPolya.md) still requires **all-rank true-Xi Newton Hankel PSD**, an independent RH-strength theorem. The impossibility (22) clarifies why a bounded similarity of the raw companion cannot replace that missing positivity; it is not a proof of RH.
+
+**Evidence and trust:** complete mathematical argument here, independently checked elementary finite algebra and exact rational tests; no imported Alpöge final RH theorem or source-zero spectral definition. Lean elaboration, fresh kernel checking and transitive axiom auditing of this new infinite theorem are **NOT_RUN** (it is not formalized in Lean), and independent mathematical review is **NOT_RUN**. The distinction between the genuine source and toy finite checks is retained. Mathematical proof acceptance is separate from Git publication.

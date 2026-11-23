@@ -128,7 +128,54 @@ def check_actual_xi():
     print(f"  first coefficient={mp.nstr(a[1], 18)}, Taylor-tail@1/2={mp.nstr(previous, 10)}")
 
 
+
+
+def check_companion_cokernel():
+    """Exact finite-section shadow of the genuine infinite cokernel.
+
+    For any nonzero shift weights q, y_0=1 and
+    y_{j+1}=v_j/q_j solve the first N-1 equations of K_N^* y=0.
+    The final residual is exactly v_{N-1}, not an eigenvalue
+    or a surrogate RH diagnostic. The infinite Xi proof separately
+    uses order-1/2 entire-growth bounds to put y in l2.
+    """
+    checks = 0
+    for n in range(1, 13):
+        for mode in range(4):
+            a = [Q((-1) ** (mode + j) * (j + mode + 2),
+                   factorial(j + 1) ** 4 * (j + 3))
+                 for j in range(n)]
+            q = [Q(1, (j + mode + 2) ** 2) for j in range(n - 1)]
+            K = companion(a, q)
+            v = K[0]
+            y = [Q(1)] + [v[j] / q[j] for j in range(n - 1)]
+            left = [sum(K[i][j] * y[i] for i in range(n))
+                    for j in range(n)]
+            assert left == [Q(0)] * (n - 1) + [v[-1]]
+            assert determinant(K) == a[-1]
+            assert sum(yi * yi for yi in y) >= 1
+            # Applying the inverse of K_N^T to v_last*e_last
+            # recovers y, hence ||K_N^-1|| >= ||y||/|v_last|.
+            assert v[-1] != 0
+            checks += 1
+    # An explicit positive genus-zero toy entire source with q_j
+    # rational: a_n=1/(n!)^4, q_j=1/(j+2)^2. Here v_(N-1)=1/(N!)^2
+    # and ||K_N^-1|| >= (N!)^2, for every N >= 1.
+    for n in range(1, 15):
+        a = [Q(1, factorial(j + 1) ** 4) for j in range(n)]
+        q = [Q(1, (j + 2) ** 2) for j in range(n - 1)]
+        K = companion(a, q)
+        assert K[0][-1] == Q(1, factorial(n) ** 2)
+        y = [Q(1)] + [K[0][j] / q[j] for j in range(n - 1)]
+        assert [sum(K[i][j] * y[i] for i in range(n))
+                for j in range(n)] == [Q(0)] * (n - 1) + [K[0][-1]]
+        checks += 1
+    print(f"PASS: {checks} exact rational left-cokernel finite-section tests")
+    print("PASS: det(K_N)=a_N and inverse norm lower bound from left residual")
+    print("NOT_PROVED by finite tests: infinite-dimensional cokernel theorem, RH, (M)")
+
 if __name__ == '__main__':
     check_exact()
+    check_companion_cokernel()
     check_actual_xi()
     print('NOT_PROVED: global Newton Hankel PSD, arithmetic (M), RH, self-adjointness')
