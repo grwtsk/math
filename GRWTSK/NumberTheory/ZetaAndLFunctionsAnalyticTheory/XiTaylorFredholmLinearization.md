@@ -281,3 +281,115 @@ The Cauchy estimate proves that the denominator tends to zero faster than any fi
 **Return to source (M).** Alpöge's original \`CoreAtH\` and \`EAtH\` still depend on the genuine theta-kernel \`B0/B4\` integrality, Frobenius-compatible lattice divisibility, period/local Euler factors, character \`L'/L(1)\` corrections, trace/rank and Galois-cohomology bounds, and the fully averaged inequality (M) with all uniform error quantifiers. The present cokernel theorem is about the **true \(\Xi\) coefficient-defined Fredholm companion**, but it does not prove any of those arithmetic suppliers. The positive coefficient-moment Hilbert–Pólya return in [XiNewtonMomentHilbertPolya.md](XiNewtonMomentHilbertPolya.md) still requires **all-rank true-Xi Newton Hankel PSD**, an independent RH-strength theorem. The impossibility (22) clarifies why a bounded similarity of the raw companion cannot replace that missing positivity; it is not a proof of RH.
 
 **Evidence and trust:** complete mathematical argument here, independently checked elementary finite algebra and exact rational tests; no imported Alpöge final RH theorem or source-zero spectral definition. Lean elaboration, fresh kernel checking and transitive axiom auditing of this new infinite theorem are **NOT_RUN** (it is not formalized in Lean), and independent mathematical review is **NOT_RUN**. The distinction between the genuine source and toy finite checks is retained. Mathematical proof acceptance is separate from Git publication.
+
+## 7. A densely defined inverse with the exact linear regularized determinant
+
+Use the coefficient-defined operator $K=K_\Xi$ of (3)–(4) on
+$\mathcal H=\ell^2(\mathbb N_0)$. We construct a densely defined closed
+operator $H$ with Hilbert–Schmidt inverse satisfying
+\[
+  \det{}_2(I-zH^{-1})
+  =\frac{\xi(1/2+iz)}{\xi(1/2)}\qquad(z\in\mathbb C).
+  \tag{24}
+\]
+We also prove that this $H$ fails self-adjointness. The construction uses
+the theta coefficients, their growth estimate (5), and the trace-class
+identity (8). Equations (2)–(4) specify the input to every subsequent construction.
+
+**Choosing the Hilbert space.** Define $M\subseteq\mathcal H$ as the closed
+linear span of all finite-dimensional $K$-invariant subspaces, and set
+$C=K|_M\colon M\to M$. Invariance follows by continuity. The ideal property
+gives $C\in\mathcal S_1(M)$ by composing $K$ with inclusion and orthogonal
+projection. By (19), $K$ is injective. Hence on every finite-dimensional
+invariant space $E$, $K(E)=E$. The range of $C$ contains their algebraic
+span and is dense in $M$.
+
+The two results `map_finiteInvariantSpan` and
+`closure_map_closure_finiteInvariantSpan` formalize this step over any
+nontrivially normed field. Their only operator hypothesis is injectivity
+of a continuous linear endomorphism.
+[Lean source](../../FunctionalAnalysis/FiniteInvariantSubspaceSpan.lean).
+
+For each $\lambda\ne0$, the full generalized eigenspace of the compact
+operator $K$ at $\lambda$ is finite-dimensional and invariant. Therefore
+it lies in $M$, and restriction preserves its algebraic multiplicity.
+Conversely every generalized eigenvector of $C$ is one of $K$.
+The trace-class eigenvalue product now gives
+$\det(I+wC)=\det(I+wK)=F(w)$ at every $w$. Formula (2) gives $a_n>0$
+for every $n$, so $F$ is not a polynomial. A trace-class operator with
+only finitely many distinct nonzero eigenvalues has a polynomial Fredholm
+determinant, since each such eigenvalue has finite algebraic multiplicity.
+Thus $C$ has infinitely many distinct nonzero eigenvalues and $M$ is
+infinite-dimensional. These spectral facts follow from the coefficient
+construction. [Simon, *Notes on infinite determinants of Hilbert space operators*](https://www.sciencedirect.com/science/article/pii/0001870877900573).
+
+**Constructing the inverse.** Write $C=U|C|$. Injectivity and dense range
+of $C$ make its polar factor $U$ unitary on $M$. Put
+\[
+  B=|C|^{1/2},\qquad A=UB,\qquad
+  T=\begin{pmatrix}0&A\\B&0\end{pmatrix}\quad\text{on }M\oplus M.
+\]
+Both factors are Hilbert–Schmidt since
+$\|A\|_2^2=\|B\|_2^2=\operatorname{tr}|C|$, and $AB=C$.
+Each factor is injective with dense range. Thus $T$ is Hilbert–Schmidt
+and injective with dense range. Define $H=T^{-1}$ on
+$\operatorname{Dom}H=\operatorname{Ran}T$. Exchanging coordinates in the
+closed graph of $T$ shows that $H$ is closed. Its inverse on all of
+$M\oplus M$ is exactly $T$. On the full space $\mathcal H$, (21)
+gives a proper closed hyperplane as the closure of the
+companion's range. The choice of $M$ supplies the density used here.
+
+**Determinant and multiplicities.** For $z$ close to zero, the trace-log
+series for $\det_2(I-zT)$ starts at degree two. Every odd power of
+degree at least three is trace class and off-diagonal, so has trace zero.
+For $r\ge1$, cyclicity for products of Hilbert–Schmidt operators gives
+$\operatorname{tr}((BA)^r)=\operatorname{tr}((AB)^r)$. Thus
+\[
+ \log\det{}_2(I-zT)
+ =-\sum_{r\ge1}\frac{z^{2r}}{2r}\,2\operatorname{tr}(C^r)
+ =\log\det(I-z^2C).
+\]
+The logarithms here vanish at zero. Exponentiating and continuing the
+two entire determinants proves (24) by (8). An independent check takes
+finite-rank compressions $A_n,B_n$ on a common increasing sequence
+of orthogonal projections tending strongly to the identity. For the
+corresponding block $T_n$, zero trace and the finite Schur complement give
+$\det_2(I-zT_n)=\det(I-zT_n)=\det(I-z^2 A_nB_n)$.
+The compressions converge in Hilbert–Schmidt norm and their products
+converge in trace norm, yielding the same identity.
+
+At $z\ne0$ the order of the regularized determinant zero equals the
+algebraic multiplicity of $1/z$ for $T$. The generalized eigenspace
+for $T$ there is finite-dimensional, $T$ acts invertibly on it, and
+on it $H-zI=-zT^{-1}(T-z^{-1}I)$. The factors commute, so the inverse
+has the same generalized eigenspace at $z$. For the reverse inclusion,
+multiply $(H-zI)^m x=0$ by $T^m$ on its domain. Also $0$ belongs
+to the resolvent of $H$, and $H-zI$ is invertible with bounded inverse
+$T(I-zT)^{-1}$ whenever $I-zT$ is invertible. This gives exactly the
+spectrum and algebraic multiplicities in (24).
+
+**Self-adjointness fails on the chosen space.** If $H$ were self-adjoint,
+its everywhere-defined bounded inverse $T$ would be self-adjoint. Then
+$B=A^*$, hence $C=AB=AA^*\ge0$. Choose two of its distinct nonzero
+eigenvalues, now necessarily $\lambda,\mu>0$. By the actual shift row
+in (19), every eigenvector of $K$ at $\lambda$ has a nonzero first
+coordinate. Normalize that coordinate to one to obtain
+$x_n(\lambda)=(-1)^n W_n\lambda^{-n}$. Both eigenvectors lie in $M$.
+Their inherited inner product equals
+\[
+ \langle x(\lambda),x(\mu)\rangle
+ =\sum_{n\ge0}W_n^2(\lambda\mu)^{-n}\ge1.
+\]
+The sum converges by Cauchy–Schwarz. This contradicts orthogonality of
+eigenvectors at distinct eigenvalues of a self-adjoint $C$. The
+calculation identifies the precise failure for this source-derived
+realization even if all the zeros in (24) happen to be real.
+
+The analytic conclusions above concern the indicated $H$, with no use
+of (M) or any RH premise. Construction of a self-adjoint arithmetic
+operator with (24) and proof of the genuine averaged inequality (M)
+remain open in this program. The range lemmas above have a Lean formalization.
+For the xi companion, the determinant identity and the self-adjointness
+obstruction themselves, Lean elaboration, fresh kernel verification and
+transitive axiom auditing are `NOT_RUN`. External independent mathematical
+review of this construction is `NOT_RUN`.
