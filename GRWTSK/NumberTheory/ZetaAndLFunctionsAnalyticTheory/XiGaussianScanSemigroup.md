@@ -33,6 +33,14 @@ Hadamard factorization for the order-one entire \(X\) yields \(\det_2(I-zD^{-1})
 \]
 Every term with \(d_a\ne0\) is strictly positive. Thus even equality of these second traces would imply RH. Analytic reconstruction or layer multiplicities do not supply an independent arithmetic proof that the second traces agree. These operator arguments are manuscript results. No Lean proof of the claimed self-adjoint zeta determinant follows from them. [Related projected trace comparison](XiProjectionTraceDefect.md)
 
+## An explicit Gaussian threshold for the exterior third derivative
+
+The [reflected Taylor bound](XiReflectedTaylorBudget.md) makes a quantitative upper bound on the heat defect sufficient for a different, finite-height analytic obligation. If the third Taylor inequality fails at height \(y\), a reflected pair has displacement \(d>253/1000\) and common height \(g\) with \(|g-y|<2\). At any center \(b\) with \(|y-b|\le\delta\), the two individual contributions to \(M(t,t,b)\) exceed \(2(253/1000)^2e^{-t((2+\delta)^2+1/4)}\) in total. They have positive integer orders and the same weight. The lower gap estimate above gives
+\[
+ \mathcal E(t,b)>2(253/1000)^2\,t\,e^{-t((2+\delta)^2+1/2)}.
+\]
+For the nearest integer center take \(\delta=1/2\), \(t=4/27\). The right side is precisely \(8(253/1000)^2/(27e)\), greater than \(0.00697\). For example \(e<2.719\) suffices for the last comparison. Thus certified upper bounds at this **positive tolerance**, at every integer center meeting the finite remaining height window up to rounding, would prove the third Taylor inequality throughout that window. This test uses only the real-center analytic Gaussian data. The tolerance permits finite-precision certification of this intermediate inequality. The unconditional self-adjoint determinant would still require the stronger vanishing statement. No all-center numerical upper bound is asserted.
+
 ## Verification scope
 
 The formal modules use the repository's pole-cleared ξ, its actual analytic orders, the critical-strip identification, unconditional explicit zero-counting estimates and Mathlib's real Gaussian integral. The exact determinant identity for an arithmetic self-adjoint operator and an unconditional inhabitant of Mathlib's RiemannHypothesis remain open. Exact-source kernel and transitive axiom records are reported on [issue 1850](https://github.com/grwtsk/math/issues/1850).
