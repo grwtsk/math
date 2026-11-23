@@ -65,3 +65,23 @@ For each \(d\ge1\) let \(\epsilon=1/[4d((d+1)!)^2]\) and consider
 Every shifted logarithmic-moment matrix through size \(d\) is positive definite. Indeed the real nodes \(1,\ldots,d\) give positive energy and, on \(|z|\le\epsilon\), each of their Lagrange basis polynomials has norm at most \((d+1)!\). The two other reciprocal nodes \(\pm i\epsilon\) together cost at most \(2\epsilon d((d+1)!)^2=1/2\) times that energy at shift one. Larger shifts only improve this bound. But \(g_d\) has two nonreal zeros. At size \(d+1\) its shift-two form already has a negative direction. Take \(Q(t)=\prod_{j=1}^{d}(1-t/j)\). It annihilates the real nodes, and \(|Q(i\epsilon)-1|\le e^{d\epsilon}-1<1/8\), which gives \(\Re Q(i\epsilon)^2>0\). The form is then \(-2\epsilon^2\Re Q(i\epsilon)^2<0\).
 
 The dimension bound in the xi theorem leaves the all-size Stieltjes condition open. Lean proves the shift-47 rational budget, node separation and the infinite-tail implication for every shift \(47+k\), any sixteen nodes in the given brackets, and any complex tail satisfying the stated disk and first-absolute-moment bounds. The application to the genuine zeta zeros uses the classical analytic argument and Arb certificates above. The genuine zero count, ball enclosures and complete xi theorem have not been kernel-replayed in Lean. [Rational certificate](XiHankelTailBudget.lean) · [All-shift tail theorem](XiHankelTailReduction.lean) · [Verification issue](https://github.com/grwtsk/math/issues/124)
+
+## Independent lower-order quadrature check
+
+For the size-two, shift-one determinant \(D=p_1p_3-p_2^2\), direct
+integration of the theta kernel, without zero ordinates, gives
+\(1.94933555481914<10^9D<1.94933555481915\). This also checks the
+positive sign with a different quadrature from the midpoint sum.
+The 10,000-cell midpoint calculation on \([0,5]\), using 4 theta
+terms and a cellwise second-derivative bound, encloses \(10^9D\)
+strictly between \(1.94836\) and \(1.95023\). The 5,000-cell
+calculation still gives a positive lower endpoint.
+
+With \(g(w)=1+c_1w+c_2w^2+c_3w^3+\cdots\), Newton's identities give
+\(D=c_1^2c_2+3c_1c_3-4c_2^2\). On the coefficient box from the
+10,000-cell check, the three partial derivatives \(2c_1c_2+3c_3\),
+\(c_1^2-8c_2\), and \(3c_1\) are strictly negative. Evaluating at the
+upper and lower corners therefore gives valid endpoints and avoids
+repeated use of the same uncertain variable in interval arithmetic.
+This is a finite computer-assisted calculation. The source-integral
+enclosure has no Lean kernel certificate. [Direct theta-integral check](../../../scripts/verify_xi_shifted_hankel.py)

@@ -1,6 +1,6 @@
 /-
-Copyright (c) 2026 grwtsk contributors. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
+Copyright (c) 2026 grwtsk contributors. MIT.
+Authors: grwtsk contributors.
 -/
 import Mathlib.RingTheory.PowerSeries.Substitution
 import Mathlib.Tactic.Ring

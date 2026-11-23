@@ -474,3 +474,120 @@ supremum with the number of xi zero quadruples, including the
 Hadamard and infinite-dimensional counting arguments, is an analytic
 result in this section and has no Lean formalization here.
 [Finite interpolation and pair estimates](NewtonHankelInertia.lean).
+
+## IX. One section size detects outer nonreal pairs at every shift
+
+Let \(K\) be the number of distinct off-line quadruples in §VIII, in
+\(\mathbb N_0\cup\{\infty\}\). For the actual xi Newton sums,
+\[
+ \sup_{n\ge1}\ \inf_{r\ge1} n_-(H_{n,r})=K.
+\]
+More precisely, for every finite \(h\le K\) there is a size \(n_h\)
+such that \(n_-(H_{n,r})\ge h\) for **all** \(n\ge n_h\) and **all**
+integer shifts \(r\ge1\). If \(K\) is finite, equality to \(K\) holds
+uniformly for all sufficiently large sizes. Thus RH is equivalent to
+the existence of positive semidefinite sections at unbounded sizes,
+even when a different positive shift is chosen for each size.
+
+**A quantitative estimate.** Choose any nonempty outer set
+\(E=\{u\in\Lambda:|u|\ge a\}\), \(a>0\), containing all nodes at the
+threshold. Absolute summability makes \(E\) finite and lets us choose
+\(0<b<a\) with every remaining node in \(|z|\le b\). Indeed, only
+finitely many nodes have modulus at least \(a/2\). Write
+\(T=\sum_{z\notin E}m_z|z|\), let \(L_u\) be the Lagrange cardinal
+polynomials of \(E\), and take the explicit constants
+\[
+ L^2=\sum_{u\in E}\frac1{m_u}
+       \prod_{v\in E\setminus\{u\}}
+       \left(\frac{b+|v|}{|u-v|}\right)^2,\qquad
+ D=\frac{L^2 T}{a},\qquad \theta=b/a<1.
+\]
+Then \(\sum_{u\in E}|L_u(z)|^2/m_u\le L^2\) on the tail disk.
+
+The possible values \(d(u)\) of a real polynomial on \(E\) are arbitrary
+real numbers on its real nodes and arbitrary conjugate values on its
+pairs. At shift \(r\), use coordinates \(X_u=\sqrt{m_u u^r}\,d(u)\)
+on real nodes and \(X_u+iY_u=\sqrt{2m_u u^r}\,d(u)\) at one node
+of each nonreal pair. Either square root gives real linear coordinates
+in the latter formula. With \(\mathcal E=\|X\|_2^2+\|Y\|_2^2\),
+\[
+  \mathcal E=\sum_{u\in E}m_u|u|^r |d(u)|^2,\qquad
+  \sum_{u\in E}m_u u^r d(u)^2=\|X\|_2^2-\|Y\|_2^2 .
+\]
+For an integer \(M\ge0\), interpolate by
+\(q(t)=\sum_{u\in E}(t/u)^M L_u(t)d(u)\).
+It has real coefficients by conjugation, degree less than \(|E|+M\)
+and the specified values on \(E\). On \(|t|\le b\), Cauchy–Schwarz
+with weights \(m_u\), using \(|u|\ge a\), gives
+\[
+ |q(t)|^2\le \theta^{2M} L^2 a^{-r}\mathcal E .
+\]
+Summing against \(m_z |z|^r\le b^{r-1}m_z|z|\) bounds the error of the
+full Hankel form relative to its exact outer contribution by
+\[
+ \left|Q_r(q)-(\|X\|_2^2-\|Y\|_2^2)\right|
+ \le D\theta^{2M+r-1}\mathcal E .
+\]
+
+**Consequences.** If \(D\theta^{2M+r-1}<1\), the form is strictly
+positive on \(Y=0\) and strictly negative on \(X=0\), away from the
+origin. The interpolation map is injective. Consequently its image
+has exactly one negative dimension per nonreal pair in \(E\) and one
+positive dimension per real node or nonreal pair in \(E\). For example,
+projection to the \(Y\)-coordinates is injective on any negative
+subspace, since a nonzero vector with \(Y=0\) gives a positive value.
+The attained positive and negative dimensions sum to the image dimension.
+
+Taking \(M=0\) fills the entire section of size \(|E|\) by ordinary
+interpolation. Thus for **each shift with** \(D\theta^{r-1}<1\) its
+inertia is exactly
+\[
+ \bigl(\#\{\text{real nodes in }E\}+\#\{\text{nonreal pairs in }E\},
+       \#\{\text{nonreal pairs in }E\},0\bigr)
+\]
+in positive, negative, zero order. Alternatively choose a single
+\(M\) with \(D\theta^{2M}<1\). The section of size \(|E|+M\) then
+has at least this many negative directions at *every* positive shift.
+For \(h>0\), choose \(E\) large enough to contain any \(h\) pairs.
+The section bound, nesting in \(n\), and the upper bound in §VIII
+prove the claimed quantifiers, including \(K=\infty\). The case \(h=0\)
+is immediate. This argument requires no uniform lower bound on gaps
+between all xi nodes. Its threshold depends on the chosen outer set.
+
+**Independent determinant check.** Let \(n=|E|\) and
+\(V(I)=\prod_{u<v\text{ in }I}(v-u)\) for any ordering of a finite
+subset. The square is independent of the ordering. Expanding finite
+divisor truncations by Cauchy–Binet and passing to the limit gives
+\[
+ \det H_{n,r}=\sum_{|I|=n} V(I)^2\prod_{u\in I}m_u u^r
+ =V(E)^2\prod_{u\in E}m_u u^r\,
+          \bigl(1+O_E(\theta^{r-1})\bigr).
+\]
+Indeed, with \(R=\sup_{\Lambda}|u|\) and \(S=\sum m_u|u|\), the
+sum of \(|V(I)|^2\prod_{u\in I}m_u|u|\) is at most
+\((2R)^{n(n-1)}S^n/n!\). For every \(I\ne E\), at least one
+outer node is replaced by an inner node, giving
+\(\prod_{I}|u|\le\theta\prod_E|u|\). This proves the error estimate
+and absolute convergence. In particular the ratio of successive shifted
+determinants tends to \(\prod_E u>0\). Conjugation permutes the nodes
+of \(E\) by one transposition per nonreal pair, so the eventual
+determinant sign is \((-1)^{\#\text{pairs in }E}\), as required by the
+inertia calculation.
+
+**Checks on the cutoff and quantifiers.** Equal-modulus nodes must be
+kept together for the exact outer-section signature. The two nodes
+\(i,-i\) give \(p_r=2\operatorname{Re}(i^r)\) in the one-by-one section,
+with sign depending on the shift. Their two-by-two section has one
+positive and one negative direction for every shift. The order-\(1/2\)
+example in §VIII shows why sizes in the PSD criterion must be unbounded.
+Neither the order nor the signs of the Taylor coefficients determine
+how large a section would detect a hypothetical actual off-line pair.
+The starting evaluation form is shared with the finite Hermite–Sylvester
+argument cited in §VIII. The uniform estimate here compares the omitted
+infinite tail with all outer coordinates at once.
+
+The maximal negative dimension under the relative perturbation and the
+geometric first-moment tail estimate have Lean proofs. The uniform
+equality for the xi divisor and its outer-section inertia remain analytic
+results in this section. They give no unconditional value for \(K\).
+[Relative perturbation and tail estimates](HankelSignatureStability.lean).
