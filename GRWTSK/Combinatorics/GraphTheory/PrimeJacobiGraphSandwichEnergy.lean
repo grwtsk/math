@@ -1,8 +1,8 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
 Authors: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE. Lean compilation, independent kernel replay,
-transitive axiom audit and specialist review: NOT_RUN.
+The six finite energy laws are verification targets in
+`verification/prime-jacobi-independent.toml`. Specialist review: NOT_RUN.
 -/
 import GRWTSK.Combinatorics.GraphTheory.PrimeKnotJacobiArithmetic
 import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.RelationSandwich
@@ -33,6 +33,7 @@ namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiGrap
 open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeKnotJacobiArithmetic
 open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich
 
+open scoped Classical in
 /-- The actual source-prime-weighted ordered-pair Dirichlet energy.
 If an edge is not present, it contributes zero; existing edges are
 charged by their REAL mathematical prime-knot weight. -/
@@ -59,7 +60,7 @@ The graph inclusion is an explicit premise, not a property of a
 similarly named software graph or candidate algorithm. -/
 theorem edgeEnergy_mono {N : ℕ}
     {lower upper : EdgeRelation (Fin N)}
-    (h : Subrelation lower upper) (f : Fin N → ℝ) :
+    (h : RelationSandwich.Subrelation lower upper) (f : Fin N → ℝ) :
     edgeEnergy lower f ≤ edgeEnergy upper f := by
   classical
   unfold edgeEnergy

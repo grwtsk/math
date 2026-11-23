@@ -11,7 +11,7 @@
 - PrimeJacobiGmArithmeticReturn.lean, 58f73c23c615bf7192e6934f2a5d9bd6e48454d7 (finite true-prime observation into separately typed Gm analogue).
 The isolated ORIGINAL Alpöge Lean v4.33.1 / Mathlib 0df444a3 package remains in docs/adaptations/environments/alpoge-gm-native/, especially SmoothedMertensTail.md, SevenEighthsIntegratedTail.md and their source candidates. It is not imported into root v4.34.1.
 
-**Original source and comparison literature.** Jeffrey Lagarias, *Hilbert Spaces of Entire Functions and Dirichlet L-Functions*, https://websites.umich.edu/lagarias/doc/debranges-houches.pdf (de Branges spaces / Hilbert–Pólya operators under explicitly conditional assumptions); Masatoshi Suzuki, *On the Hilbert space derived from the Weil distribution*, https://arxiv.org/abs/2301.00421 (Weil Hilbert space conditional on RH, an unconditionally defined precursor is distinguished from the RH realization); Alain Connes, *Trace formula in noncommutative geometry and the zeros of the Riemann zeta function*, https://arxiv.org/abs/math/9811068 (critical zeros as absorption spectrum and hypothetical off-line zeros as resonances); Janas–Szwarc, *Inhomogeneous Jacobi Matrices on Trees*, Constr. Approx. 48 (2018), Theorem 16, https://math.uni.wroc.pl/~szwarc/pdf/Jacobi-final.pdf (Carleman essential self-adjointness); Jeffrey Lagarias, *The Riemann Hypothesis: Arithmetic and Geometry*, https://www.math.lsa.umich.edu/~lagarias/doc/mt-holyoke-rev.pdf (Weil positivity criterion); Riemann–von Mangoldt zero count, https://mathworld.wolfram.com/Riemann-vonMangoldtFormula.html. Consult actual hypotheses; literature mentions of an operator are not source identities.
+**Original source and comparison literature.** Jeffrey Lagarias, *Hilbert Spaces of Entire Functions and Dirichlet L-Functions*, https://websites.umich.edu/lagarias/doc/debranges-houches.pdf (de Branges spaces / Hilbert–Pólya operators under explicitly conditional assumptions); Masatoshi Suzuki, *On the Hilbert space derived from the Weil distribution*, https://arxiv.org/abs/2301.00421 (Weil Hilbert space conditional on RH, an unconditionally defined precursor is distinguished from the RH realization); Alain Connes, *Trace formula in noncommutative geometry and the zeros of the Riemann zeta function*, https://arxiv.org/abs/math/9811068 (critical zeros as absorption spectrum and hypothetical off-line zeros as resonances); Ryszard Szwarc, *Inhomogeneous Jacobi Matrices on Trees*, Constr. Approx. 48 (2018), Theorem 16, https://math.uni.wroc.pl/~szwarc/pdf/Jacobi-final.pdf (Carleman essential self-adjointness); Jeffrey Lagarias, *The Riemann Hypothesis: Arithmetic and Geometry*, https://www.math.lsa.umich.edu/~lagarias/doc/mt-holyoke-rev.pdf (Weil positivity criterion); Riemann–von Mangoldt zero count, https://mathworld.wolfram.com/Riemann-vonMangoldtFormula.html. Consult actual hypotheses; literature mentions of an operator are not source identities.
 
 **Attached Langlands comparison sources inspected:** Gaitsgory–Raskin, *Proof of the Geometric Langlands Conjecture I: Construction of the Functor* (2024, functor.pdf); Arinkin–Beraldo–Chen–Færgeman–Gaitsgory–Lin–Raskin–Rozenblyum, *II: Kac–Moody Localization and the FLE* (Loc.pdf); Campbell–Chen–Gaitsgory–Raskin, *III: Compatibility with Parabolic Induction* (Eis.pdf); Arinkin et al., *IV: Ambidexterity* (ambidex.pdf); Gaitsgory–Raskin, *V: The Multiplicity One Theorem* (multone.pdf). These are geometric Langlands over algebraic curves in de Rham/Betti characteristic-zero contexts, NOT an arithmetic automorphic spectral theorem for zeta over Q or an RH proof. The relevant structural analogy is Hecke/automorphic-spectral compatibility, Eisenstein/constant-term and continuous-spectrum bookkeeping, duality, and an exact source-to-spectral functor. Categorical ambidexterity does not supply a positive Hilbert adjoint; categorical multiplicity one does not assert simplicity of zeta zeros.
 
@@ -172,3 +172,168 @@ shifted Toeplitz 3×3 minor \(-7/23040\). This hostile example
 disproves the tempting inference from ordinary positive moment
 kernels to Hilbert–Pólya. Finite exploratory Xi minors are evidence
 only, not a universal proof.
+
+## The inverse of the even prime-Jacobi sections
+
+Let \(p_0=2,p_1=3,\ldots\) be the successive primes and let \(J\) be the
+closure of the zero-diagonal Jacobi operator of §2 on \(\ell^2(\mathbb N_0)\).
+The Carleman condition \(\sum_n1/p_n=\infty\) ensures that the minimal
+closure equals the maximal Jacobi operator. In particular its domain
+consists of the square-summable sequences for which the three-term
+expression is square-summable. [Szwarc, Theorem 16](https://math.uni.wroc.pl/~szwarc/pdf/Jacobi-final.pdf).
+
+Define a triangular array by setting \(g_{kj}=0\) for \(k<j\) and
+\[
+ g_{kj}=\frac{(-1)^{k-j}}{p_{2j}}
+ \prod_{r=j+1}^k\frac{p_{2r-1}}{p_{2r}}\quad(k\ge j),\qquad
+ S_m=2\sum_{k=0}^{m-1}\sum_{j=0}^k g_{kj}^2,\qquad S=\lim_m S_m .
+\]
+Then \(J\) has an everywhere-defined Hilbert–Schmidt inverse exactly
+when \(S<\infty\), in which case \(\operatorname{Tr}(J^{-2})=S\).
+
+**Finite sections.** For the first \(2m\) sites order the even basis
+vectors first and the odd ones second. In this order the upper-right
+block \(A_m\) of \(J_{2m}\) is lower bidiagonal, with diagonal \(p_{2k}\)
+and subdiagonal \(p_{2k-1}\) in row \(k\). The lower-left block is \(A_m^*\).
+Solving \(A_m G_m=I\) recursively gives \(G_m=(g_{kj})_{0\le k,j<m}\).
+Thus \(J_{2m}^{-1}\) has lower-left block \(G_m\), upper-right block
+\(G_m^*\), and zero diagonal blocks. Its squared Hilbert–Schmidt norm
+is \(S_m\). The entries at existing sites are independent of the section size.
+
+The Lean parity equivalence identifies these blocks entrywise with the original
+`jacobiMatrix (2 * m)`, including the empty section. Its inverse formula
+and the exact four- and sixteen-site sums use Mathlib’s enumeration of
+the primes. [Finite Green formulas](PrimeJacobiGreen.lean) ·
+[Reindexing of the original matrix](PrimeJacobiGreenComparison.lean)
+
+**Infinite operator.** The parity involution \(\Gamma e_n=(-1)^n e_n\)
+anticommutes with \(J\) on the core. Boundedness of \(\Gamma\) and closure
+of the graph extend this relation to its domain. If a bounded inverse exists,
+it therefore has zero same-parity entries. The equations in the even rows of
+\(JJ^{-1}e_{2j}=e_{2j}\) fix its odd-even entries by the same recursion as
+for \(G_m\). Self-adjointness fixes the other block. The Hilbert–Schmidt norm
+formula now gives necessity.
+
+Conversely, if \(S<\infty\), the indicated entries define a bounded
+self-adjoint Hilbert–Schmidt operator \(B\). Its compressions
+\(B_m=J_{2m}^{-1}\), extended by zero, converge to \(B\) in
+Hilbert–Schmidt norm since \(\|B-B_m\|_2^2=S-S_m\). For every finitely
+supported \(v\), choose \(m\) large enough to contain both \(v\) and
+\(Jv\) among the first \(2m\) coordinates. Then \(B_m Jv=v\) for
+all such \(m\), hence \(BJv=v\). Approximation in the graph norm of
+the core extends this equality to every \(v\in\operatorname{Dom}J\).
+For arbitrary \(f\in\ell^2\) we obtain
+\(\langle Jv,Bf\rangle=\langle v,f\rangle\) on that domain. Thus
+\(Bf\in\operatorname{Dom}J^*=\operatorname{Dom}J\) and \(JBf=f\).
+This proves sufficiency, including the operator-domain condition.
+
+The normalized even-section polynomials are
+\(D_m(z)=\det(I-zJ_{2m}^{-1})=\det_2(I-zB_m)\) because the inverse
+has trace zero. If \(S<\infty\), continuity of the regularized determinant
+in Hilbert–Schmidt norm gives compact-uniform convergence to
+\(\det_2(I-zJ^{-1})\). If \(S=\infty\), then \(D_m''(0)=-S_m\to-\infty\)
+by the finite determinant expansion. Cauchy's integral formula precludes
+locally uniform convergence on any neighborhood of zero, even along a
+subsequence tending to infinite size. This dichotomy concerns the displayed
+normalization and uses no distributional hypothesis on prime gaps.
+[Simon, *Notes on infinite determinants of Hilbert space operators*](https://doi.org/10.1016/0001-8708(77)90057-3).
+
+**Comparison with the specified xi determinant.** A real scaling \(H=cJ\)
+with \(c\ne0\) that realizes \(\Xi(z)/\Xi(0)=\det_2(I-zH^{-1})\) must have
+\[
+ S/c^2=(\log\xi)''(1/2).
+\]
+Indeed the quadratic coefficient of the logarithm on the right is
+\(-\operatorname{Tr}(H^{-2})/2\), while the substitution \(s=1/2+iz\)
+gives the coefficient \(-(\log\xi)''(1/2)/2\) on the left.
+For \(\psi(x)=\sum_{n\ge1}e^{-\pi n^2x}\) the classical theta integral is
+\[
+ \xi(1/2+t)=\tfrac12+(t^2-\tfrac14)
+ \int_1^\infty \psi(x)x^{-3/4}\cosh(t\log x/2)\,dx .
+\]
+Write \(I\) for the integral at \(t=0\). From \(n^2\ge n\) and \(x\ge1\)
+we get \(I<1/[\pi(e^\pi-1)]<1/57\), since \(\pi>3\) and
+\(\sum_{k=0}^8 3^k/k!=89641/4480>20\). The exponential tail permits two
+differentiations under the integral. By symmetry \(\xi'(1/2)=0\), while
+\(\xi(1/2)=1/2-I/4\) and
+\(\xi''(1/2)=2I-\frac1{16}\int_1^\infty\psi(x)x^{-3/4}(\log x)^2dx\).
+Consequently \((\log\xi)''(1/2)<2I/(1/2-I/4)<8/113\).
+[Riemann, 1859, theta integral after splitting at \(x=1\)](https://www.claymath.org/collections/riemanns-1859-manuscript/).
+
+The four-site inverse has \(g_{00}=1/2,\ g_{10}=-3/10,\ g_{11}=1/5\).
+Thus \(S_2=19/25\) and any such scaling satisfies \(c^2>2147/200\).
+For a stronger exact check put \(b_k=\sum_{j=0}^k g_{kj}^2\). The
+product formula gives
+\[
+ b_0=1/4,\qquad
+ b_{k+1}=\frac{1+p_{2k+1}^2 b_k}{p_{2k+2}^2}.
+\]
+Using the primes from \(2\) through \(47\) gives
+\(S_8=2\sum_{k=0}^7 b_k=172553655273874304/150028243823119475>128/113\).
+The exact determinant is therefore impossible for every real \(c\) with
+\(0<|c|\le4\), both for the infinite operator and as a locally uniform
+limit of its normalized even sections. In the latter case one can apply
+the same comparison directly to \(-D_m''(0)/c^2=S_m/c^2\).
+
+**Computer-assisted sixth-moment bound.** Put
+\(\tau_3=-6[z^6]\log(\Xi(z)/\Xi(0))\). For the proposed determinant this
+equals the full trace \(\operatorname{Tr}((cJ)^{-6})\), counting both
+parities. The first 24 sites compress \(J^{-1}\) to \(J_{24}^{-1}\)
+by the entry equations above. Left and right multiplication by an
+orthogonal projection contract the Schatten-6 norm. Thus
+\[
+ |c|^6\tau_3\ \ge\ \operatorname{Tr}(J_{24}^{-6})
+ = 2\operatorname{Tr}(M^3)>3/10,\qquad M=G_{12}G_{12}^{*}.
+\]
+The finite inequality can be checked in rational arithmetic using the
+23 primes from 2 to 83. With the displayed \(g_{ij}\) put
+\(M_{ij}=\sum_{h=0}^{\min(i,j)}g_{ih}g_{jh}\). Then
+\(\lfloor 2\cdot10^6\sum_{i,j,k=0}^{11}M_{ij}M_{jk}M_{ki}\rfloor=305690\).
+A second calculation gives the same fraction from
+\(-6[z^6]\log(P_{24}(z)/P_{24}(0))\), using \(P_0=1,\ P_1=z\) and
+\(P_{n+1}=zP_n-p_{n-1}^2P_{n-1}\).
+
+For the analytic upper bound let \(m_k=\int_0^\infty u^{2k}\Phi(u)\,du\),
+where
+\[
+ \Phi(u)=4e^{5u/2}\sum_{n\ge1}q_n(2q_ne^{2u}-3)e^{-q_ne^{2u}},
+ \qquad q_n=\pi n^2.
+\]
+Set \(x=e^{2u}\) in the theta integral above and integrate twice by
+parts to obtain \(\Xi(z)=\int_0^\infty\Phi(u)\cos(zu)\,du\). Here
+\(f(u)=e^{u/2}\psi(e^{2u})\) satisfies \(\Phi=2(f''-f/4)\) and
+\(f'(0)=-1/4\) by theta inversion. With \(a_k=m_k/((2k)!m_0)\), the
+logarithm gives \(\tau_3=6a_3-6a_1a_2+2a_1^3\).
+
+For \(0\le k\le3\) truncate to \(n\le6\) and \(0\le u\le3\).
+After substituting \(t=e^{2u}\), each positive integrand is bounded by
+\(40 n^4t^8e^{-\pi n^2t}\,dt\), since
+\((\log(t)/2)^{2k}t^{5/4}\le t^8\) for \(t\ge1\).
+For \(n\ge7\), integrating with \(t^8\le e^{8(t-1)}\) bounds this tail
+by \(40\sum_{n\ge7}n^4e^{-3n^2}\le80\cdot7^4e^{-147}\) because
+successive majorants decrease by at least a factor of two. For \(n\le6\)
+and \(t\ge e^6>400\) use \(t^8\le e^t\), giving a remaining tail
+at most \(40\cdot6^5e^{-800}\). Their sum is below \(10^{-56}\).
+
+To reproduce the finite integrals in python-flint 0.8.0 set
+`ctx.prec = 160`. For each \(k=0,1,2,3\), call
+`acb.integral(lambda u, _: u**(2*k) * Phi6(u), 0, 3)`, where
+`Phi6` evaluates the six displayed summands with `arb.pi()` and ball
+exponentials. The truncated integrand is entire. Add
+`arb(0, "1e-56")` to the real part of each enclosure, then evaluate the
+formula for \(\tau_3\) in ball arithmetic. The resulting enclosure lies
+in \((2.88347,2.88349)\cdot10^{-7}\). Together the rational lower bound
+and this certified quadrature imply \(|c|>10\). The same exclusion
+holds for a compact-uniform limit of scaled even sections, since the
+24-site compression agrees for every larger even section and the
+logarithmic coefficients converge on a small zero-free disk about zero.
+The quadrature uses Arb's integration error bounds.
+[Johansson, *Numerical integration in arbitrary-precision ball arithmetic*](https://arxiv.org/abs/1802.07942).
+
+The convergence of the prime series \(S\) and the behavior of larger
+scalings remain open here. The exclusion uses the exact determinant
+normalization. A free entire nonvanishing prefactor can alter its
+logarithmic curvature. For the infinite Jacobi inverse equivalence,
+the differentiated theta integral and the sixth-moment comparison,
+Lean elaboration, fresh kernel replay,
+transitive axiom auditing and external independent review are `NOT_RUN`.

@@ -1,11 +1,15 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
 Authors: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE. Lean elaboration, transitive axiom audit,
-fresh kernel replay and independent specialist review: NOT_RUN.
+The earlier source at Git blob 2759dc76c224e3214e8a1c8d9abd054f37edacab
+recorded unperformed formal checks. A subsequent Lean 4.34.1 build
+found a missing distance import and three failing proofs in that version.
+Issue grwtsk/math#1849 records checks of the repaired version.
+Independent specialist review: NOT_RUN.
 -/
 import Mathlib.NumberTheory.PrimeCounting
 import Mathlib.NumberTheory.SumPrimeReciprocals
+import Mathlib.Data.Nat.Dist
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Tactic
@@ -75,7 +79,7 @@ theorem not_summable_reciprocal_primeAt :
   have hcomp :
       Summable ((fun p : Nat.Primes => (1 : ℝ) / (p : ℝ)) ∘
         primeIndexEquiv) := by
-    simpa [Function.comp_def, primeIndexEquiv, primeAt] using hs
+    exact hs
   have hp : Summable (fun p : Nat.Primes => (1 : ℝ) / (p : ℝ)) :=
     primeIndexEquiv.summable_iff.mp hcomp
   exact Nat.Primes.not_summable_one_div hp
@@ -85,6 +89,7 @@ are supplied as parameters. -/
 def bond (n : ℕ) : ℝ := (primeAt n : ℝ)
 
 theorem bond_pos (n : ℕ) : 0 < bond n := by
+  unfold bond
   exact_mod_cast primeAt_pos n
 
 theorem bond_reciprocal_not_summable :
@@ -281,7 +286,6 @@ theorem continuant_even_ne_zero (k : ℕ) :
       norm_num [continuant]
   | succ k ih =>
       rw [continuant_even_step]
-      exact neg_ne_zero.mpr
-        (mul_ne_zero (pow_ne_zero 2 (ne_of_gt (bond_pos (2 * k)))) ih)
+      exact mul_ne_zero (neg_ne_zero.mpr (pow_ne_zero 2 (bond_pos (2 * k)).ne')) ih
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeKnotJacobiArithmetic

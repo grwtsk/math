@@ -20,14 +20,14 @@ lean_toolchain = "leanprover/lean4:v4.34.1"
 mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 
 [policy]
-expected_theorems = 35
+expected_theorems = 43
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 
 [[module]]
 name = "GRWTSK.Combinatorics.GraphTheory.PrimeKnotJacobiArithmetic"
 path = "GRWTSK/Combinatorics/GraphTheory/PrimeKnotJacobiArithmetic.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeKnotJacobiArithmetic"
-git_blob = "2759dc76c224e3214e8a1c8d9abd054f37edacab"
+git_blob = "c509913ee2e1940dc802e98565880ce4bb5bb921"
 theorems = [
   "primeAt_prime",
   "primeAt_pos",
@@ -54,7 +54,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiGraphSandwichEnergy"
 path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiGraphSandwichEnergy.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiGraphSandwichEnergy"
-git_blob = "c967ad349ff0eb2b97ce5868fe5f30e33541a475"
+git_blob = "67717e9bba8eccbdf81a05aee1d876cd0fdef4a4"
 theorems = [
   "edgeEnergy_nonneg",
   "edgeEnergy_mono",
@@ -80,4 +80,28 @@ theorems = [
   "recovery_fails_of_off_line_zero",
   "no_spectral_enclosure_below_horizontal_gap",
   "uniformly_bounded_spectrum_obstruction",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiGreen"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiGreen.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiGreen"
+git_blob = "f7a178a4d074c38ac03129c61f91f7428c3d450b"
+theorems = [
+  "lowerBlock_mul_greenBlock",
+  "evenSection_inverse",
+  "prime_evenSection_inverse",
+  "four_site_green_sum",
+  "greenEntry_congr",
+  "sixteen_site_green_sum",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiGreenComparison"
+path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiGreenComparison.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiGreen"
+git_blob = "8544eea92974216834fdcee05fe43b221569f930"
+theorems = [
+  "reindex_jacobiMatrix_by_parity",
+  "reindexed_primeJacobi_inverse",
 ]

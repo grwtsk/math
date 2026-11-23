@@ -77,7 +77,11 @@ Mathematically established analytically: the arithmetic-only Jacobi expression i
 
 **Not established:** compact resolvent; discrete vs continuous spectral type; the zeta Riemann–von Mangoldt counting law; multiplicity preservation; source-complete zeta divisor/spectral determinant identity; any unbounded spectral convergence estimate for actual nontrivial zeros; or RH *derived* from this operator. A positive Laplacian quadratic form does not repair these missing claims. Self-adjointness of \(J\) alone does not make it a Hilbert–Pólya realization.
 
-The computation does not copy, import, or use Levent Alpöge's checked RH theorem. The independent direct mathematical problem is now to determine the actual spectral measure and a trace/explicit-formula identity with the **complete original zeta arithmetic terms**, or rigorously falsify the candidate.
+The specified determinant has now been ruled out for the unscaled operator.
+A direct curvature comparison excludes every real scaling with
+\(0<|c|\le4\), and a certified sixth-moment computation extends the
+exclusion to \(0<|c|\le10\). The spectral type of the infinite operator
+remains open here. [Even-section inverse and comparison](PrimeJacobiHilbertPolyaFaithfulComparison.md#the-inverse-of-the-even-prime-jacobi-sections)
 
 ## Software and verification obligations
 

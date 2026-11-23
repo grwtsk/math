@@ -157,3 +157,110 @@ The independently evaluated center is \(95444.463617721\) using the source's rou
 5. **Original zero-freeness and positive determinant.** Only after the real source one-sided window bound yields \(RH\) independently can the original-Xi Newton moment positivity in [XiNewtonMomentHilbertPolya.md](XiNewtonMomentHilbertPolya.md) be admitted. That document gives a **conditional** coefficient-defined positive operator with exact multiplicities, but not the missing independently proved positivity.
 
 **Verification and epistemic status:** Algebraic source identities (3),(4),(6),(7),(9),(10) are classical/elementary consequences under their stated premises. The finite example and its weight-cutoff control were run independently; these checks cannot supply theta arithmetic or an RH proof. The new Lean statements are **SOURCE_PROOF_CANDIDATES**, with elaboration/kernel/axiom checks **NOT_RUN** in the current environment. Independent mathematical review is also **NOT_RUN**. External original RH/GRH theorems are **direction only**.
+
+## Averaging the marked-weight replacement before applying Chebyshev's estimate
+
+Fix source indices \(t,j\), put \(a=a_t\), \(y=a/b\), and let \(b>0\).
+On every distinguished cell the actual table weight is \(w=b+e\), with
+\(0\le e\le\Delta\). The ideal table replaces exactly these weights by
+\(b\). For any table expression write its change as its ideal value minus
+its actual value. Let \(D\) be the sum over \(t,j\) of the changes in
+\(P-M\), averaged over all \(u\). As in (M), \(B=|T|mb\delta/2>0\).
+Let \(\overline y=|T|^{-1}\sum_{t\in T}a_t/b\). Then
+\[
+ -\frac{\Delta}{b}\overline y
+ \ \le\ \frac D B\
+ \le\ \frac{4\Delta}{b|T|}\sum_{t\in T}\psi(a_t/b)
+ \ \le\ 4(\log 4+4)\frac{\Delta}{b}\overline y .
+\]
+
+For the proof, the loss in the positive part of the \(r\)-th summand
+on a marked cell is exactly
+\[
+ (a/r-b)_+-(a/r-b-e)_+=\min\{e,(a/r-b)_+\}.
+\]
+It vanishes for \(r\ge a/b\) and is between zero and \(\Delta\).
+For each admissible \(r=p^h\), Theorem A counts precisely \(\delta n\)
+marked translates if the row is one and zero otherwise. The prime
+coefficient of each marked contribution is the source value
+\((1-\chi_d(r))\log p\). It is between zero and \(2\Lambda(r)\), including
+the coefficient \(\log d\) at \(p=d\). Set the coefficients to zero at
+the omitted \(p=2,q\) and at other integers. Thus for fixed \(t,j\) the
+mean change in \(P\) is bounded above by \(2\delta\Delta\psi(y)\).
+The individual increments \(e\) may vary with the entire table. The
+count only majorizes them by a common bound before summation.
+
+The mean change in \(M\) has the opposite sign in \(D\). In each
+translate it is exactly
+\(\frac{a}{2n}\sum_{\mathrm{marked}}\log(1+e/b)\). Every summand is
+between zero and \(\Delta/b\) and there are exactly \(\delta n\) of
+them. The change therefore lies in \([0,a\delta\Delta/(2b)]\).
+Summation and division by \(B\) give the first two inequalities.
+The last uses the elementary estimate \(\psi(y)\le(\log4+4)y\)
+for every \(y\ge0\).
+[Mathlib's Chebyshev bound at the pinned revision](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/Chebyshev.lean#L444-L461)
+
+A second calculation retains the moving cutoff. The loss for one atom
+is \(\int_0^e\mathbf1_{\{r<a/(b+s)\}}\,ds\). Extend the upper
+integration limit to \(\Delta\), count translates at each \(s\), and
+sum the finitely many eligible prime powers. For fixed \(t,j\) the
+mean prime-part loss is at most
+\[
+  2\delta\!\int_0^\Delta \psi(a/(b+s))\,ds
+  \le 2\delta(\log4+4)a\log(1+\Delta/b).
+\]
+The exact logarithmic center above also admits
+\(a\delta\log(1+\Delta/b)/2\) as an upper bound. Thus the outer
+two-sided linear bounds remain valid with every \(\Delta/b\) in
+those bounds replaced by \(\log(1+\Delta/b)\). This integral argument
+also applies when the allowed weight increments are large.
+
+For the actual parameter bounds \(\Delta\le Cb/(nx^2)\),
+\(|a_t/b-x|\le1\), and \(x\ge1\), the displayed result gives
+\(|D|/B\le 8(\log4+4)C/(nx)\). Version 2 of the explanatory draft,
+Part II §5.4, bounds each marked cell separately before summing and
+obtains \(O(1/x)\) for this portion of the error. The extra factor
+\(1/n\) here comes from retaining the translate count for each
+prime power. This improves only the replacement term. The shift
+from \(a_t/b\) to \(x\), the nondistinguished cells, and the first
+inequality in (M) require their own estimates.
+[Working draft, 22 November 2026, Part II §§5.3–5.4](https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf)
+
+For a check on the sign, take \(0<a/b<2\) and strictly positive
+increments on the marked cells. The prime-part change vanishes
+whereas the logarithmic center increases upon replacing the weights
+by \(b\), giving \(D<0\). This example tests the abstract bound at
+small scales. The source's large-window hypotheses enter the
+stated \(O(1/(nx))\) consequence.
+
+For an exact finite check, let \(q=3,d=23\), \(H=(\mathbb Z/16)^\times/\{\pm1\}\)
+with least positive representatives \(1,3,5,7\), and \(T_2=\{1,3\}\).
+Take \(a=1000,b=10,\Delta=1/5\). On the marked pairs set
+\(e(u,r)=((u+r)\bmod5)/20\). This is a test of the atom-by-atom
+prime loss allowing a varying increment. For example, at \(u=5\) the
+primes \(37,43\) both have row one and column \([5]\), but their
+increments are respectively \(1/10\) and \(3/20\). The example therefore
+supplies no common cell table for computing the logarithmic center.
+For each odd prime power
+\(r=p^h<100\) with \(p\ne3\) and \(r\equiv1\pmod3\), select the
+translates \([r]\in uT_2\). Compute the coefficient of \(\log p\) by
+averaging \((1-\chi_{23}(r))\min(e(u,r),1000/r-10)\) over the four
+\(u\), taking zero on unmarked pairs. After discarding zero character
+weights there are sixteen marked pairs, eleven with positive loss. The
+resulting prime-part change is
+\[
+ \frac{4\log7+2\log19+6\log37+3\log43+6\log61+
+             3\log67+4\log79+5\log97}{40}.
+\]
+Replacing all eight logarithms by one gives \(33/40\). Enumerating
+prime powers first and enumerating residue cells first yield the same
+eight rational coefficients.
+
+The accompanying Lean module proves the positive-part identity, the exact
+finite-group translate count, and the summed prime-part bounds with the
+actual von Mangoldt function and Chebyshev's explicit constant. Its
+coefficient hypotheses allow the original quadratic character weights.
+The logarithmic centering, final division by B, and construction of the
+source tables remain outside those declarations. External mathematical
+review of this refinement is `NOT_RUN`.
+[Lean declarations](AlpogeMarkedWeightReplacement.lean)

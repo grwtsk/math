@@ -463,7 +463,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.PrimeKnotJacobiArithmetic"
 path = "GRWTSK/Combinatorics/GraphTheory/PrimeKnotJacobiArithmetic.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeKnotJacobiArithmetic"
-git_blob = "2759dc76c224e3214e8a1c8d9abd054f37edacab"
+git_blob = "c509913ee2e1940dc802e98565880ce4bb5bb921"
 theorems = [
   "primeAt_prime",
   "primeAt_pos",
@@ -490,7 +490,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.PrimeJacobiGraphSandwichEnergy"
 path = "GRWTSK/Combinatorics/GraphTheory/PrimeJacobiGraphSandwichEnergy.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.PrimeJacobiGraphSandwichEnergy"
-git_blob = "c967ad349ff0eb2b97ce5868fe5f30e33541a475"
+git_blob = "67717e9bba8eccbdf81a05aee1d876cd0fdef4a4"
 theorems = [
   "edgeEnergy_nonneg",
   "edgeEnergy_mono",
