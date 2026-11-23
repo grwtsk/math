@@ -60,8 +60,8 @@ def weil_functional(length, frequency, diagonal, atoms):
     return result
 
 
-def parity_matrices(length):
-    n = length**3
+def parity_matrices(length, cutoff=None):
+    n = length**3 if cutoff is None else cutoff
     atoms = prime_atoms(length)
     pi = arb.pi()
     diagonal, sine = {}, {0: arb(0)}
