@@ -39,7 +39,7 @@ Uniformly for any subset of primes above an integer \(L\ge2\), if \((k-1)W\le B\
 \[
  B\sum_{n>L}\frac{\log n}{n^4}\le B\frac{3\log L+1}{9 L^3}.
 \]
-The last inequality follows by integrating the decreasing function on \([L,\infty)\). One can take the maximum of the actual per-prime weights on each finite window; independence from the lift is unnecessary. For positive linear averages at a fixed \(p,g\), replacing the average of the exact gains by the gain of the averaged weights loses exactly \((p-1)\sum_z\min(\sum_j(v_j(z))_+,\sum_j(-v_j(z))_+)\), where \(v_j\) are the inverse coordinates including the averaging weights and the factors \(k_j-1\). This follows by subtracting positive and negative masses at each \(z\). The formula quantifies information lost by averaging before taking the positive part. It requires the specified common inverse operator.
+The last inequality follows by integrating the decreasing function on \([L,\infty)\). One can take the maximum of the actual per-prime weights on each finite window; independence from the lift is unnecessary. For positive linear averages of the even-period gains (or of the doubled lower gains on an odd period) at a fixed \(p,g\), replacing the average of the exact gains by the gain of the averaged weights loses exactly \((p-1)\sum_z\min(\sum_j(v_j(z))_+,\sum_j(-v_j(z))_+)\), where \(v_j\) are the inverse coordinates including the averaging weights and the factors \(k_j-1\). This follows by subtracting positive and negative masses at each \(z\). The formula quantifies information lost by averaging before taking the positive part. It requires the specified common inverse operator.
 
 ## Exact two-site verification
 
