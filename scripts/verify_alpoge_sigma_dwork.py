@@ -128,12 +128,12 @@ def formal_exp(g,N):
   E=padd(E,{m:scale(v,Q(1,factorial(k))) for m,v in P.items()})
  return E
 
-def dwork_residual(g,p):
+def dwork_residual(g,p,degree=N):
  # sigma on Z_p[i] is conjugation for p=3 (mod 4).
  out={key:scale(val,p) for key,val in g.items()}
  for mon,val in g.items():
   scaled=tuple(p*a for a in mon)
-  if sum(scaled)>N:continue
+  if sum(scaled)>degree:continue
   sg=(val[0],-val[1])
   out[scaled]=add(out.get(scaled,ZERO),scale(sg,-1))
  return {k:v for k,v in out.items() if v!=ZERO}
