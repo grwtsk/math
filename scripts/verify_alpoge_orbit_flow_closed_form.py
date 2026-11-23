@@ -60,6 +60,9 @@ def certificate(p, data):
     assert optimum == sum(x*q for x,q in zip(d,prices))
     gain = Q(p,p*p-1)*sum(d)-optimum
     assert gain == sum(d)/(p*p-1) + (p-1)*sum(max(-v,0) for v in y)
+    three_places = [(p*p*d[s] - p*d[s-1] + d[(s-2) % r]) / p**3 for s in range(r)]
+    three_place_gain = sum(d)/(p*p-1) + (p-1)*sum(max(-t, 0) for t in three_places)
+    assert -sum(d)/(p**3*(p+1)) <= gain-three_place_gain <= sum(d)/(p*p*(p+1))
     assert sum(d[s] for s in range(r) if prices[s]>=Q(2,p)) <= optimum if p>=3 else True
     return gain
 
