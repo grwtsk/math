@@ -11,8 +11,8 @@ import Mathlib.Tactic.Ring
 The normalized formal root of an integral power has integral coefficients whenever
 the exponent is invertible in the coefficient subring. The second theorem permits
 a zero of known order with unit leading coefficient before normalization. These
-are the coefficient-descent steps for the translated elliptic theta series in
-§15 of `AlpogeEllipticCubicalB4.md`.
+are the coefficient-descent steps for the translated elliptic theta series and
+the multivariate frame correction in §§15 and 18 of `AlpogeEllipticCubicalB4.md`.
 -/
 
 set_option autoImplicit false
@@ -40,19 +40,19 @@ private theorem root_coordinate (m : ℕ) (hm : IsUnit (m : R)) :
   exact ⟨P.substInvOfIsUnit h1, P.constantCoeff_substInvOfIsUnit h1,
     P.subst_substInvOfIsUnit_left h0 h1⟩
 
-/-- A normalized formal m-th root descends to any coefficient subring where m is a unit. -/
-theorem tame_root_integral (O : Subring K) (m : ℕ) (hm : IsUnit (m : O))
-    (Y : PowerSeries K) (hY : Y.constantCoeff = 1)
-    (hpow : ∀ n, (Y ^ m).coeff n ∈ O) : ∀ n, Y.coeff n ∈ O := by
+/-- Normalized tame root extraction in every multidegree, for any variable type. -/
+theorem tame_root_integral_mv {ι : Type*} (O : Subring K) (m : ℕ) (hm : IsUnit (m : O))
+    (Y : MvPowerSeries ι K) (hY : Y.constantCoeff = 1)
+    (hpow : ∀ ν, (Y ^ m).coeff ν ∈ O) : ∀ ν, Y.coeff ν ∈ O := by
   obtain ⟨Q, -, hQ⟩ := root_coordinate m hm
-  let G : PowerSeries O := PowerSeries.mk fun n => ⟨(Y ^ m).coeff n, hpow n⟩
-  have hG : G.map O.subtype = Y ^ m := by ext n; simp [G]
+  let G : MvPowerSeries ι O := fun ν => ⟨(Y ^ m).coeff ν, hpow ν⟩
+  have hG : G.map O.subtype = Y ^ m := by ext ν; rfl
   have hG0 : G.constantCoeff = 1 := by
     apply Subtype.ext
-    change (Y ^ m).coeff 0 = 1
+    change MvPowerSeries.constantCoeff (Y ^ m) = 1
     simp [hY]
-  have hsG : HasSubst (G - 1) := HasSubst.of_constantCoeff_zero' (by simp [hG0])
-  have hsY : HasSubst (Y - 1) := HasSubst.of_constantCoeff_zero' (by simp [hY])
+  have hsG : HasSubst (G - 1) := HasSubst.of_constantCoeff_zero (by simp [hG0])
+  have hsY : HasSubst (Y - 1) := HasSubst.of_constantCoeff_zero (by simp [hY])
   have hP : (powerCoordinate O m).map O.subtype = powerCoordinate K m := by
     simp [powerCoordinate]
   have hsP : HasSubst (powerCoordinate O m) :=
@@ -65,13 +65,29 @@ theorem tame_root_integral (O : Subring K) (m : ℕ) (hm : IsUnit (m : O))
   rw [map_substitution O _ _ hsP, hP, map_X] at hcomp
   have hsPK : HasSubst (powerCoordinate K m) :=
     HasSubst.of_constantCoeff_zero' (by simp [powerCoordinate])
-  have heq : map O.subtype (1 + Q.subst (G - 1)) = Y := by
-    rw [map_add, map_one, map_substitution O _ _ hsG, map_sub, hG, map_one, ← hPsub,
+  have heq : MvPowerSeries.map O.subtype (1 + Q.subst (G - 1)) = Y := by
+    rw [map_add, map_one, PowerSeries.map_subst hsG, map_sub, hG, map_one, ← hPsub,
       ← subst_comp_subst_apply hsPK hsY, hcomp, subst_X hsY]
     ring
-  intro n
-  rw [← heq, coeff_map]
+  intro ν
+  rw [← heq, MvPowerSeries.coeff_map]
   exact Subtype.property _
+
+/-- A normalized formal m-th root descends to any coefficient subring where m is a unit. -/
+theorem tame_root_integral (O : Subring K) (m : ℕ) (hm : IsUnit (m : O))
+    (Y : PowerSeries K) (hY : Y.constantCoeff = 1)
+    (hpow : ∀ n, (Y ^ m).coeff n ∈ O) : ∀ n, Y.coeff n ∈ O := by
+  have h := tame_root_integral_mv O m hm Y hY
+  have hcoeff (ν : Unit →₀ ℕ) : MvPowerSeries.coeff ν (Y ^ m) ∈ O := by
+    have he : Finsupp.single () (ν ()) = ν := by
+      apply Finsupp.ext
+      intro i
+      cases i
+      simp
+    have hν := hpow (ν ())
+    change MvPowerSeries.coeff (Finsupp.single () (ν ())) (Y ^ m) ∈ O at hν
+    rwa [he] at hν
+  exact fun n => h hcoeff (Finsupp.single () n)
 
 /-- Integral m-th powers after removing a known zero of order d.
 The leading coefficient of the remaining factor is an integral unit. -/

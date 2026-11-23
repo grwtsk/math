@@ -201,3 +201,58 @@ The updated [verify_alpoge_sigma_dwork.py](../../../scripts/verify_alpoge_sigma_
 **Prior-art restriction:** The ordinary-reduction Mazur–Tate (p)-adic sigma integrality theorem (see Christian Wüthrich, *The canonical p-adic sigma function*, §5, https://www.maths.nottingham.ac.uk/plp/pmzcw/download/pheight.pdf) cannot simply be invoked here: the paper's CM (j=1728) examples at (p=3,7,11), all inert in ℚ(i), have supersingular good reduction. An applicable supersingular cubical/integral-theta theorem would have to be independently established, not borrowed from the ordinary setting.
 
 **Next exact proof target:** prove the family (D.3), ideally using the elliptic division-polynomial/Dwork congruences on the genuine theta lifts. Doing so for every \(e\) would settle only one thin set of B4 coefficients, not B4 itself. A full independent Hilbert–Pólya proof still additionally needs the true all-degree B4, original (M), zero-freeness, and original-Xi Newton PSD.
+
+## E. Rigidity of the two polarized integrality conditions
+
+**Theorem.** Let the orbit length be even, let \(p\) be a prime and put \(q=p^2\). Use the original logarithms \(L_i(T)=\sum_{h\ge0}p^{-h}T_{\pi^h i}^{q^h}\), with \(\pi(i)=i-2\) on sites and with the copy label fixed. Over \(\mathbb C_p\), a polynomial \(\beta\) satisfying the mixed support condition B3 and both integral exponential conditions B4 is identically zero. The conclusion also holds for a series \(\beta\) converging on every closed \(p\)-adic polydisk of finite radius. It requires neither torus symmetry nor descent to the unramified coefficient field. A nonzero exponent for the original problem must therefore have infinite support and cannot converge on every such polydisk. The zero series is permitted by these local conditions. [Source coboundaries and B3–B4, lines 47–74](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/Divisibility/ProductZerothFirstParts.lean#L47-L74) · [Source logarithm with the site permutation](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/PeriodIntegrals/FunEqAll.lean#L11-L14)
+
+**Coefficient calculation.** Normalize \(v(p)=1\). On the polydisk of radius \(r_e=p^{-1/q^e}\), the weighted valuation of the term of level \(h\) in \(L_i\) is \(-h+q^h/q^e\). Its minimum is \(1-e\), attained only at \(h=e\). For \(h<e\) use \(h+1\le e\); for \(h=e+k>e\) use \(q^k>k+1\). The Gauss norm of each \(L_i\) is therefore \(M_e=p^{e-1}\), with unique dominant monomial \(p^{-e}T_{\pi^ei}^{q^e}\).
+
+For a polynomial \(P=\sum_\alpha c_\alpha Z^\alpha\) this proves
+\[
+ \|P(L)\|_{r_e}=\max_\alpha |c_\alpha|M_e^{|\alpha|}.
+ \tag{E.1}
+\]
+Indeed for a product of the \(L_i\) the unique maximal weighted term picks level \(e\) in every ordered factor. Different \(\alpha\)'s give distinct exponent vectors \(q^e(\pi^e)_*\alpha\). Even ties between maximizing monomials of \(P\) cannot cancel at any of these distinct leading indices. Every coefficient sum at a fixed index is finite. The remaining upper bound follows by submultiplicativity of the Gauss norm. If \(P\) is entire, approximate by its polynomials in the radius-\(M_e\) Gauss norm. Substitution is contractive between these two radii, so passing to the limit proves (E.1). In particular, if all coefficients of \(P(L)\) have absolute value at most one, (E.1) implies \(P\) is constant. This proof extends to any finite set of sites permuted by \(\pi\).
+
+There is an explicit sequence detecting failure for every nonconstant polynomial. Choose \(\alpha\) of highest degree \(d\) with \(v(c_\alpha)\) minimal within that degree. For all sufficiently large \(e\), \(c_\alpha Z^\alpha\) maximizes (E.1), and the coefficient at \(q^e(\pi^e)_*\alpha\) has valuation exactly \(v(c_\alpha)-ed\). For a direct integer check, any competing product of \(n\) factors reaching total degree \(dq^e\) chooses levels \(h_j\) with
+\[
+ \sum_j q^{h_j}=dq^e,\qquad \sum_j h_j+n\le d+ne .
+\]
+The inequality follows by adding \( (h+1)q^e\le q^h+eq^e\). At \(n=d\) a single off-level choice makes it strict. The [Lean module](AlpogeHondaPolynomialRigidity.lean) proves the strict level separation, both ordered-factor inequalities, distinctness of the scaled permuted indices, and the ultrametric norm identity for a strictly dominant coefficient. The full analytic rigidity theorem is a manuscript argument.
+
+**Apply the calculation to the original exponent.** Write \(x\) for the even sites and \(y\) for the odd sites, with the additional odd copy \(z\). B3 gives \(\beta(x,0)=\beta(0,y)=0\). The odd coboundary is
+\(\beta(x,y+z)-\beta(x,y)-\beta(x,z)\). In the integral exponential after Honda substitution, take the coefficient linear in the new copy \(Z_j\) and of degree zero in its other variables. The exponent vanishes at \(Z=0\), and the linear terms of the logarithms form the identity. Consequently this coefficient series is precisely
+\[
+ P_j(L(X),L(Y)),\qquad
+ P_j(x,y)=\partial_{y_j}\beta(x,y)-\partial_{y_j}\beta(x,0).
+\]
+The permutation preserves parity; the remaining logarithms are the same full system on the original sites. Since B4 bounds the coefficients of this slice and \(P_j(x,0)=0\), (E.1) forces \(P_j=0\) for each \(j\) if \(\beta\) is polynomial or entire. In characteristic zero this excludes every term of total odd degree at least two. The even coboundary excludes every term of total even degree at least two in the same way. The remaining mixed bidegree \((1,1)\) is explicitly excluded by B3. Without that exclusion arbitrary bilinear polynomials have zero coboundaries, so this last hypothesis is essential.
+
+The monomial \(x^{2p}y^2\) in the two-site orbit illustrates a second detection mechanism. It is torus invariant. Its odd coboundary is \(2x^{2p}yz\); at \((2p^2,p,p)\) only the \(p\)-th exponential power contributes, giving \(2^p/p!\) of valuation \(-1\) for odd \(p\). The theorem above also detects arbitrarily deep losses even if the polynomial is multiplied by any fixed power of \(p\). This is an obstruction to replacing an actual nonzero exponent by a fixed polynomial at all degrees. It does not invalidate correct finite truncations of the true B4 series at the stated orders.
+
+### A mixed coefficient of the elliptic sigma example
+
+For the actual \(p=3,\ c=-i\) elliptic sigma **test series** of §B, the leading term of \(P=\partial_y\beta(x,y)-\partial_y\beta(x,0)\) is \(5ixy^2\). Let \(H(k,n)=[T^n]L(T)^k\) and \(h=9^e\). Exactly, the coefficient of \(X^hY^{2h}Z\) in the positive exponential of the odd coboundary is
+\[
+ S_e=\sum_{a,b} b\beta_{a,b}\,H(a,h)H(b-1,2h).
+\]
+It only uses \(a\le h,\ 2\le b\le2h+1,\ a\equiv1,\ b\equiv3\bmod 8\). The leading term contributes \(5i/3^{3e}\). With \(H(k,n)=\sum_{9^j\le n}3^{-j}H(k-1,n-9^j)\), exact rational calculations give the following valuations. The last source term is the monomial \(x^{h}y^{2h+1}\) of degree \(3h+1\).
+
+| \(e\) | Degree | Nonzero summands | Leading contribution | Without last term | Complete \(v_3(S_e)\) |
+|---:|---:|---:|---:|---:|---:|
+| 1 | 28 | 6 | −3 | −3 | 1 |
+| 2 | 244 | 231 | −6 | −30 | 1 |
+
+For example \(S_1=-112428489\,i/27625\). The coefficients \(\beta_{a,b}\) here use the Weierstrass recurrence and torus projection (6)–(9), with no fitted values. These two computations check individual coefficients of the original test construction and quantify the loss from deleting its highest contributing degree. [Exact calculation](../../../scripts/verify_alpoge_sigma_dwork.py)
+
+### An integrality test without coefficient Frobenius
+
+There is also a direct test for the norm condition over any extension of \(\mathbb Q_p\), including ramified ones. For \(G=\sum_{\alpha\ne0}g_\alpha T^\alpha\) of zero constant term, define
+\[
+ b_\alpha=g_\alpha-\sum_{\substack{k\ge1\\p^k\mid\alpha}}
+               b_{\alpha/p^k}^{\,p^k}/p^k .
+\]
+Divisibility means divisibility in every coordinate. Every recursion is finite. Then \(\exp G\) has integral coefficients if and only if every \(b_\alpha\) is integral. Indeed the Artin–Hasse series \(A(T)=\exp(\sum_{j\ge0}T^{p^j}/p^j)\) has coefficients in \(\mathbb Z_{(p)}\); use the Dieudonné–Dwork criterion over \(\mathbb Q_p\) on this single universal series, whose logarithmic defect is \(-pT\). Formal logarithms give \(\exp G=\prod_{\alpha\ne0}A(b_\alpha T^\alpha)\) by coefficient comparison. In each total degree the product stabilizes. If \(\exp G\) is integral, remove the factors of all lower degrees by integral power-series division; in the first remaining degree the coefficient of \(T^\alpha\) equals \(b_\alpha\), proving necessity by induction. The converse follows by multiplication. This is the multivariate monomial form of the classical Artin–Hasse/Witt decomposition. [Katz, *Witt Vectors and a Question of Keating and Rudnick*, §2](https://web.math.princeton.edu/~nmk/wittchar31.pdf)
+
+Applied to each \(G=(\Delta_i\beta)\circ L\), this tests the valuation part of B4. The indices \((h,2h,1)\) in the preceding computation already have a coordinate prime to \(p\), so at these indices \(b_\alpha=g_\alpha=S_e\) without lower-level Witt terms. The archived definition also requires coefficients in its designated unramified field; when B1 holds there, formal arithmetic preserves that field. For a ramified check take \(p=3,\ \varpi^2=3,\ E=1+\varpi T\). This \(E\) is integral, while the coefficient of \(T^3\) in \(\log E(T^3)-3\log E(T)\) is \(\varpi-\varpi^3\) of valuation \(1/2\). Taking the identity as a coefficient Frobenius on this ramified ring would give an incorrect test. Neither formulation supplies the genuine theta coefficients required to prove (M).

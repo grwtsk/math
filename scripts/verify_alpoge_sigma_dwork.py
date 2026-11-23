@@ -198,6 +198,46 @@ def verify_first_frobenius_ray():
     print('PASS exact second Frobenius ray: e=2 coefficient has valuation 0; partial valuation -10')
     print('NOT_PROVED: all coefficients or all-degree B4 of the original theta kernel')
 
+def verify_mixed_honda_ray():
+    """Test the linearized odd coboundary at (9^e, 2*9^e, 1)."""
+    @lru_cache(None)
+    def honda_power(k, degree):
+        if degree < k:
+            return Q(0)
+        if k == 0:
+            return Q(int(degree == 0))
+        value = Q(0)
+        power, denominator = 1, 1
+        while power <= degree:
+            value += honda_power(k - 1, degree - power) / denominator
+            power *= 9
+            denominator *= 3
+        return value
+
+    moments = sigma_moments(61)  # (3*81+1)/4
+    for e in (1, 2):
+        height = 9**e
+        terms = {}
+        # L(T)^k has exponents congruent to k modulo 8.  The term
+        # linear in Y' in cobY contributes b*beta_{a,b} X^a Y^(b-1).
+        for a in range(1, height + 1, 8):
+            for b in range(3, 2*height + 2, 8):
+                n = (a + b) // 4
+                assert a + b == 4*n and n % 2 == 1 and (a-3*b) % 8 == 0
+                beta_im = moments[n] * comb(4*n, a) * (-1)**((n + 1)//2)
+                terms[a, b] = (b * beta_im * honda_power(a, height)
+                               * honda_power(b - 1, 2*height))
+        assert terms[1, 3] == Q(5, 3**(3*e))
+        value = sum(terms.values(), Q(0))
+        print("Mixed Honda ray", e, "nonzero terms", sum(bool(t) for t in terms.values()),
+              "full valuation", vp_scalar(value, 3), "leading valuation", -3*e,
+              "without last term", vp_scalar(value - terms[height, 2*height+1], 3),
+              "imaginary coefficient", value)
+        assert vp_scalar(value, 3) == 1
+        assert sum(bool(t) for t in terms.values()) == (6 if e == 1 else 231)
+        assert vp_scalar(value - terms[height, 2*height+1], 3) == (-3 if e == 1 else -30)
+
+
 if __name__=='__main__':
  m=sigma_moments(N//4)
  print('sigma m(z) through degree 24:',[(4*j,str(m[j])) for j in range(1,len(m))])
@@ -235,4 +275,5 @@ if __name__=='__main__':
  print('PASS hostile invariant beta=(1/9) X^3 Y: B4 fails at degree four')
  print('PASS all B4 jets through total degree',N, 'in BOTH doubled directions by beta symmetry')
  verify_first_frobenius_ray()
+ verify_mixed_honda_ray()
  print('NOT_PROVED: ALL-degree theta beta B4, all orbits / primes, inequality (M) or RH')
