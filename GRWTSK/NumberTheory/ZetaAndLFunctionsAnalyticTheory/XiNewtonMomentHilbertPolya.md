@@ -354,3 +354,123 @@ Then \((2q-q^2)/t\) increases to \(1/t\) at each positive atom.
 By (14) the integral of \(1/t\) is the sum of all positive integer
 multiplicities, hence is infinite. This limiting argument uses the
 full positivity hypothesis throughout.
+
+## VIII. Negative eigenvalues count distinct off-line zero quadruples
+
+Fix an integer \(r\ge1\). Let \(H_{n,r}=(p_{r+i+j})_{0\le i,j<n}\),
+with the true Newton sums of §VII, and let \(n_-(H)\) count strictly
+negative eigenvalues with multiplicity. Then
+\[
+ \sup_{n\ge1} n_-(H_{n,r})
+ =\#\{\text{distinct off-line zeta-zero quadruples }
+       \{\rho,1-\rho,\bar\rho,1-\bar\rho\}\}.
+\]
+Either side can be infinite. If the number is finite, every sufficiently
+large section attains it for this fixed shift. The theorem gives a count
+conditional on knowing the inertia of the whole sequence. This independent argument leaves the value for
+the actual xi function undetermined.
+
+**Divisor and weights.** Since \(g(w)=F(-w)\) has order \(1/2\) and
+\(g(0)=1\), its genus-zero product gives
+\(p_k=\sum_{\lambda\in\Lambda}m_\lambda\lambda^k\) for \(k\ge1\), with
+\(\sum_\lambda m_\lambda|\lambda|<\infty\). Here \(\Lambda\) is the set
+of distinct reciprocal zeros of \(g\), with multiplicities
+\(m_\lambda\). Every real node is positive since \(g(w)>0\) for real
+\(w\le0\). The map \(\rho\mapsto\lambda=-1/(\rho-1/2)^2\) identifies
+exactly \(\rho\) and \(1-\rho\). It has nonvanishing derivative there and
+commutes with conjugation. No zeta zero in the critical strip is real,
+by the same positivity of \(F\) on the nonnegative axis. Thus a distinct
+nonreal pair of reciprocal nodes is precisely one off-line quadruple,
+and its two multiplicities agree. These facts identify the analytic
+meaning of the Newton sums computed from Taylor coefficients.
+
+**Upper bound.** The quadratic form on real polynomials of degree
+below \(n\) is \(Q_r(q)=\sum_\lambda m_\lambda\lambda^r q(\lambda)^2\).
+It converges absolutely since the nodes are bounded. Real nodes
+contribute nonnegatively. From each nonreal pair select one node
+\(\lambda\) and choose \(s_\lambda^2=2m_\lambda\lambda^r\). Its contribution is
+\[
+ (\operatorname{Re}(s_\lambda q(\lambda)))^2
+ -(\operatorname{Im}(s_\lambda q(\lambda)))^2 .
+\]
+If there are \(h<\infty\) such pairs, the map taking the \(h\) displayed
+imaginary parts is injective on any negative-definite real subspace.
+Its dimension is at most \(h\). This establishes the upper bound, including
+sections with zero eigenvalues.
+
+**Lower bound.** Select any \(h\ge1\) distinct pairs and denote their
+chosen representatives by \(\lambda_j\). Set \(a=\min_j|\lambda_j|>0\).
+The conjugation-stable set \(E=\{\lambda\in\Lambda:|\lambda|\ge a/2\}\) is
+finite by absolute summability. For \(c\in\mathbb R^h\), prescribe
+\(d(\lambda_j)=i c_j/s_{\lambda_j}\), the conjugate values at their
+partners, and zero at every other member of \(E\). For \(M\ge1\) use
+the Lagrange cardinal polynomials \(L_u\) of \(E\) to form
+\[
+ q_{M,c}(t)=t^M\sum_{u\in E}\frac{d(u)}{u^M}L_u(t).
+\]
+It takes exactly the prescribed values on \(E\). Conjugating the variable
+and coefficients permutes the Lagrange summands, so the coefficients are
+real. The map \(c\mapsto q_{M,c}\) is real linear and injective by its
+values at the chosen nodes. On \(E\) its total contribution to \(Q_r\)
+is \(-\|c\|_2^2\).
+
+On the disk \(|t|\le a/2\), every term with nonzero prescribed value
+satisfies \(|t/u|\le1/2\). Each of the finitely many \(L_u\) is bounded
+on this disk, so \(|q_{M,c}(t)|\le C2^{-M}\|c\|_2\) with a constant
+independent of \(M,c\). The absolute contribution of all nodes outside
+\(E\) is therefore at most
+\[
+ C^2 4^{-M}\|c\|_2^2\sum_{\lambda\notin E}m_\lambda|\lambda|^r.
+\]
+The sum is finite. Choose \(M\) so its prefactor on \(\|c\|_2^2\) is
+below one. Then the image of \(\mathbb R^h\) is negative definite,
+and fits inside the section of size \(M+|E|\). This proves the lower
+bound even for infinitely many pairs, by choosing \(h\) arbitrarily.
+Nested polynomial spaces show the section indices are nondecreasing.
+
+**Multiplicity and prior work.** For the polynomial
+\(g_*(w)=(1-w)(1+w^2)^m\), \(m\ge1\), the only nonreal pair is
+\(i,-i\), of multiplicity \(m\). At shift one its three-by-three
+determinant is \(-16m^2\), and the upper bound gives exactly one negative
+eigenvalue. Finite Hermite–Sylvester tests use the same real polynomial
+evaluation form and interpolation at conjugate nodes. Bickel, Pascoe
+and Sargent relate truncated Hankel positivity to restrictions on
+zeros of real entire functions. The disk estimate above allows the
+uninterpolated infinite tail in this fixed-shift inertia calculation.
+[Nathanson, *The Hermite–Sylvester criterion for real-rooted polynomials*](https://arxiv.org/abs/1911.01745).
+[Bickel, Pascoe and Sargent, *Zero-free regions near a line*](https://arxiv.org/abs/2108.04807).
+
+**A fixed dimension can miss infinitely many pairs at every shift.**
+Fix \(d\ge1\). Use positive reciprocal nodes \(1,\ldots,d\) and let
+\(L_k\) be their cardinal polynomials. Put
+\(C_d=\sum_{k=1}^d\max_{|t|\le1}|L_k(t)|^2\).
+Interpolation and Cauchy–Schwarz give
+\(|q(t)|^2\le C_d\sum_{k=1}^d|q(k)|^2\) on the unit disk for
+\(\deg q<d\). Choose \(0<\epsilon<\min(1,1/(2C_d))\) and insert
+the nonreal pairs \(\pm i\epsilon 2^{-j}\), \(j\ge1\). For any
+integer \(r\ge1\) their total contribution has absolute value at most
+\(2\epsilon C_d\sum_{k=1}^d|q(k)|^2\), since
+\(\sum_{j\ge1}(\epsilon 2^{-j})^r\le\epsilon\).
+The original positive contribution is at least \(\sum_{k=1}^d|q(k)|^2\),
+strictly positive for any nonzero real polynomial of degree below \(d\).
+All sections of size at most \(d\) are therefore positive definite at
+every positive shift, while their unrestricted negative index is infinite.
+
+Additional positive nodes \(1/(j+1)^2\), \(j\ge1\), preserve every
+one of those inequalities. The genus-zero product of the combined
+nodes has order exactly \(1/2\). The added zeros have exponent of
+convergence \(1/2\), and splitting their product at \(j=\sqrt R\)
+gives \(\log M(R)=O(\sqrt R\log(2+R))\) for this factor.
+The geometric nonreal pairs contribute \(O((\log(2+R))^2)\) to the
+logarithm of the maximum modulus. On changing variables by \(w\mapsto-w\),
+the positive-node factors \(1+\lambda w\) and paired factors
+\(1+\epsilon^2 4^{-j}w^2\) give strictly positive Taylor coefficients
+at every degree. Thus the fixed-size limitation persists in a
+genus-zero example with the same order and coefficient signs as \(F\).
+
+The pair identity, finite example, interpolation at the prescribed
+nodes and damping estimate have Lean statements. The equality of the
+supremum with the number of xi zero quadruples, including the
+Hadamard and infinite-dimensional counting arguments, is an analytic
+result in this section and has no Lean formalization here.
+[Finite interpolation and pair estimates](NewtonHankelInertia.lean).

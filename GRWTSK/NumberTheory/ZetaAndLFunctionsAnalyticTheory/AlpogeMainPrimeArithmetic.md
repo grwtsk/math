@@ -321,3 +321,90 @@ The logarithmic centering, final division by B, and construction of the
 source tables remain outside those declarations. External mathematical
 review of this refinement is `NOT_RUN`.
 [Lean declarations](AlpogeMarkedWeightReplacement.lean)
+
+## Keeping the linear term of every higher prime power
+
+Fix one weight table in (1) and write \(a=a_t>0\). Let \(w_{p,h}\) be
+its value at the **powered** row and column of \(p^h\), and take
+\(0<w_{p,h}\le W\). One may take the maximum in this finite table.
+Write \(P^{(1)}\) for the degree-one part of (1), including \(p=d\).
+For the source pair, \(d\) is prime and the omitted bases 2 and \(q\)
+split for \(\chi_d\). Define
+\[
+ C_d=2\sum_{\chi_d(p)=-1}\frac{\log p}{p(p^2-1)}
+       +\frac{\log d}{d(d-1)},\qquad C_0=\log4+4 .
+\]
+Then
+\[
+ P=P^{(1)}+aC_d-D_{\rm inert}-D_{\rm ram},\qquad
+ 0\le D_{\rm inert}\le9C_0\,a^{1/3}W^{2/3},\qquad
+ 0\le D_{\rm ram}\le\int_0^W\log^+(a/v)\,dv .
+\]
+Here \(\log^+z=\max(0,\log z)\). The integral equals
+\(W(1+\log(a/W))\) for \(a\ge W\) and \(a\) for \(a<W\).
+The bounds are uniform in both auxiliary primes, the number of cells,
+and the placement of the weights. The Euler identity in the source
+exchange supplies the local coefficients. Its logarithmic derivative
+is justified in \(\Re s>1\) by absolute convergence. The following
+argument uses the actual weight-dependent cutoffs in (1).
+[Source ramp, Part II §4](https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper.pdf)
+· [Source character and exceptional-prime checks](AlpogeExceptionalPrimePowers.lean)
+
+For an inert prime only odd exponents contribute, with coefficient
+\(2\log p\). The sum of \(p^{-h}\) over \(h=3,5,\ldots\) is
+\(1/[p(p^2-1)]\). At the ramified base each exponent has coefficient
+\(\log d\), and the sum over \(h\ge2\) is \(1/[d(d-1)]\).
+Both contributions to the linear coefficient converge absolutely. Since
+\(u-(u-w)_+=\min(w,u)\), the respective defects are exactly the sums
+of the original coefficients times \(\min(w_{p,h},a/p^h)\) over these
+two sets. This keeps the weights attached to their own powers.
+
+Let \(A(x)\) be the sum of \(2\log p\) over the inert odd powers
+\(p^h\le x\) with \(h\ge3\). The same upper bound applies to *any
+subset* of the prime powers with \(h\ge3\). Set \(R=\lfloor x^{1/3}\rfloor\).
+Write \(h=3k+i\), with \(0\le i<3\). Then \(k\ge1\) and \(p^k\le R\).
+Each pair \((p,k)\) arises at most three times, so
+\[
+ A(x)\le6\sum_{p^k\le R,\ k\ge1}\log p
+       =6\psi(R)\le6C_0x^{1/3}.
+\]
+This covers \(R=0\) as well. Write \(\min(W,a/r)\) as the length of
+\(\{0<v\le W:r\le a/v\}\). Tonelli's theorem for nonnegative summands
+gives \(D_{\rm inert}\le\int_0^W A(a/v)\,dv\), proving the constant
+\(9C_0\). For the single ramified base, the number of retained positive
+powers at most \(x\), multiplied by \(\log d\), is at most \(\log^+x\).
+This gives the second bound, and \(\log^+x\le(3/e)x^{1/3}\) also gives
+\(D_{\rm ram}\le(9/(2e))a^{1/3}W^{2/3}\).
+[Formal prime-power count with arbitrary finite selections](AlpogeHigherPrimePowers.lean)
+· [Mathlib's elementary Chebyshev bound at the pinned revision](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/Chebyshev.lean#L455-L468)
+
+For constant weights the cubic scale is sharp. Fix \(d\) and take
+\(w_{p,h}=W\). The prime number theorem in the finitely many reduced
+residue classes modulo \(d\) gives
+\(2\sum_{p\le z,\ \chi_d(p)=-1}\log p\sim z\), since half of the
+reduced classes have character \(-1\). The exponent argument with \(5\)
+in place of \(3\) bounds the mass of \(h\ge5\) by \(10C_0x^{1/5}\).
+Thus \(A(x)\sim x^{1/3}\). With \(y=a/W\), dominated convergence in
+\(\int_0^1 A(y/v)y^{-1/3}\,dv\) gives
+\(D_{\rm inert}\sim(3/2)a^{1/3}W^{2/3}\) as \(y\to\infty\).
+Only this asymptotic uses a fixed modulus. The conductor-uniform upper
+bound uses Chebyshev's inequality. [Rudnick, *Primes in arithmetic progressions: fixed modulus*, §2](https://www.math.tau.ac.il/~rudnick/courses/sieves2015/fixed%20progressions.pdf)
+
+For use in (M), divide by \(nB\) after summing over the actual \(u,t,j\).
+The normalized inert defect is at most
+\[
+ \frac{9C_0}{nB}\sum_{u,t,j}a_t^{1/3}
+             \big(\max_{v,s}w_{u,t,j}(v,s)\big)^{2/3}.
+\]
+The ramified defect has the separate bound above. Dropping all higher powers
+without their \(a_t C_d\) centering generally loses a linear term. The
+degree-one sum, the actual weights after averaging, the periods and the
+lower bounds for the theta valuations still enter (M). External independent
+review and formal verification of the fixed-conductor asymptotic are pending.
+
+The formal result includes the convergent infinite defect for every selected set
+of higher prime powers and every bounded nonnegative weight table. Its proof
+applies the finite level-set inequality at arbitrary cutoffs and passes to
+the sum using nonnegativity. The displayed ramified and fixed-modulus
+asymptotic formulas are manuscript arguments.
+[Infinite defect theorem](AlpogeHigherPrimePowers.lean) · [Weighted level-set integral](AlpogeRampLayerCake.lean)

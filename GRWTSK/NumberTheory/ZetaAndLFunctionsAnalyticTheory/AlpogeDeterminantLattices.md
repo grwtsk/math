@@ -121,3 +121,67 @@ The index interpretations by localization and Smith form, and the
 transfer to the original source maps and their metrics, are outside its
 formal statements. Independent external review is `NOT_RUN`.
 [Lean declarations](AlpogeDeterminantLattices.lean)
+
+## Relative indices without an inclusion
+
+For full rational lattices \(P,Q\) in the same space, choose a full
+common sublattice \(C\subseteq P\cap Q\). Write \([Q:C]\) for the order
+of the actual quotient. If \(b_P,b_Q,b_C\) are generating integer bases
+viewed as rational bases, the integral determinant-index theorem gives
+\([Q:C]=|\det_{b_Q}b_C|\) and \([P:C]=|\det_{b_P}b_C|\).
+Multiplication of the transition matrices cancels the common factor:
+\[
+ \frac{[Q:C]}{[P:C]}=|\det_{b_Q} b_P|.
+\]
+Thus this orientation agrees with \([Q:P]\) when \(P\subseteq Q\),
+and the quotient is independent of the choice of \(C\). Under a rational
+automorphism \(T\), use \(Tb_P\) on its actual image and a common lattice
+of \(T(P),Q\). The right side acquires \(|\det_{\mathbb Q}T|\). In a real
+Euclidean space, for commensurable full lattices the same cancellation
+gives \(\operatorname{covol}(P)/\operatorname{covol}(Q)\). An image
+of lower rank uses the Euclidean measure **in its span**.
+[Rational-basis index theorem at the Mathlib pin](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/LinearAlgebra/FreeModule/Finite/CardQuotient.lean#L112-L123)
+· [Covolume of a finite-index sublattice](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Algebra/Module/ZLattice/Covolume.lean#L167-L181)
+
+For any two nonzero fractional ideals \(I,J\) of a number field, take
+\(C=I\cap J\) in their actual additive groups. This fractional ideal is
+nonzero because \((I\cap J)(I+J)=IJ\ne0\). Relative to an integral
+basis of \(\mathcal O_K\), the absolute rational basis determinant of
+each ideal is its absolute fractional-ideal norm. The quotient above is
+therefore \(N(I)/N(J)\), with no nesting or principality assumptions.
+In particular, given nonzero pseudo-basis ideals and a nonsingular matrix
+\(A\) of any size, set \(P=(\det A)\prod I_j\) and \(Q=\prod J_i\).
+The two ordinary indices on its determinant lines give exactly
+\(|N_{K/\mathbb Q}(\det A)|\prod NI_j/\prod NJ_i\), also when
+\(A\Lambda\not\subseteq\Gamma\). The Lean proof realizes the actual
+intersection by a nonzero fractional ideal and obtains its basis from
+localization. The arbitrary-rank rational statement and the Euclidean
+covolume statement take the common full lattice as data.
+[Mathlib's fractional-ideal basis and determinant](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/NumberField/FractionalIdeal.lean#L78-L118)
+· [Relative-index theorems](AlpogeRelativeLatticeIndex.lean)
+
+Two exact computations check the orientation and saturation independently.
+
+* For \(\Lambda=\tfrac16\mathbb Z,\ \Gamma=\tfrac15\mathbb Z\) and
+  \(A=2/3\), the image is \(P=\tfrac19\mathbb Z\). If \(x\) lies in
+  both \(P,\Gamma\), then \(5x\) and \(9x\) are integers, hence
+  \(x=2(5x)-9x\) is an integer. Conversely every integer is in both.
+  The relative index is \([\Gamma:\mathbb Z]/[P:\mathbb Z]=5/9\).
+* For columns \((6,8,0),(0,5,10)\), the signed cross product
+  \((80,-60,30)=10(8,-6,3)\) describes the occupied plane. Its
+  integer points are exactly \((3t,s,2s-8t)\), since reducing the
+  plane equation \(8x-6y+3z=0\) modulo three gives \(3\mid x\).
+  In \((t,s)\) coordinates the two columns are \((2,8),(0,5)\).
+  The map \((t,s)\mapsto7t+2s\bmod10\) is surjective, since it
+  sends \((3,0)\) to one. Its kernel consists of the points with
+  \(2\mid t\) and \(5\mid s-4t\), precisely the span of the two
+  columns. Hence the saturation quotient is cyclic of order ten.
+  The Gram determinant of the saturation basis \((3,0,-8),(0,1,2)\)
+  is \(73\cdot5-(-16)^2=109\); for the original columns it is
+  \(100\cdot125-40^2=10900\). Their covolume ratio is ten, computed
+  from the two bases without assigning the saturation's covolume by
+  division by the predicted index.
+
+The relative-index results still require identification of the source’s
+actual maps, saturated subspaces and hermitian metrics before they can
+contribute to `Data.DIV`. Independent external review is `NOT_RUN`.
