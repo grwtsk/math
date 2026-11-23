@@ -2,7 +2,7 @@
 
 from fractions import Fraction
 from math import factorial, prod
-from flint import arb, ctx
+from flint import arb, ctx, fmpq, fmpq_mpoly_ctx
 from verify_xi_newman_collision_pencil import as_ball, positive_root_count
 from verify_xi_newman_gaussian_sections import (
     check_quadrature_budget, gaussian_average, origin_derivatives,
@@ -40,8 +40,43 @@ def quartic_control(degree):
           time_second.str(10),space_second.str(10))
 
 
+def polynomial_heat(polynomial, time, variable):
+    """Apply exp(time * D²) exactly in a variable independent of time."""
+    result = term = polynomial
+    order = 1
+    while term:
+        term = time * term.derivative(variable).derivative(variable) / order
+        result += term
+        order += 1
+    return result
+
+
+def multiple_root_controls():
+    """Check the local model through order eps^m, with the seed displaced by b eps²."""
+    ring = fmpq_mpoly_ctx.get(("z", "eps", "w"))
+    z, eps, w = ring.gens()
+    cases = 0
+    for m in range(2, 9):
+        endpoint = (z**2 - 1)**m
+        for b in (-3, 0, 4):
+            seed = polynomial_heat(endpoint, -b * eps**2 / 4, "z")
+            damped = ring.constant(0)
+            for (degree, eps_degree, _), coeff in seed.terms():
+                multiplier = prod(1 - j * eps**2 for j in range(degree))
+                damped += coeff * z**degree * eps**eps_degree * multiplier
+            for d in (1, 2, 3):
+                transported = polynomial_heat(damped, (b + d) * eps**2 / 4, "z")
+                scaled = transported.compose(1 + eps * w, eps, w)
+                model = 2**m * eps**m * polynomial_heat(w**m, fmpq(d - 2, 4), "w")
+                difference = scaled - model
+                assert all(powers[1] > m for powers, _ in difference.terms()), (m, b, d)
+                cases += 1
+    print("exact multiple-root expansions passed:", cases, "cases")
+
+
 def verify():
     ctx.prec = 720
+    multiple_root_controls()
     check_quadrature_budget()
     for n in (2,4,8,12,16,24):
         seed = Fraction(1,4*n)

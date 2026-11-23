@@ -99,6 +99,51 @@ For the lower bound take \(\delta>0\) small. At time \(\Lambda-\delta\) the loca
 
 At a double endpoint root the lower bound sharpens to \(\sigma_n\ge\Lambda-2x^2/N+o(1/N)\), \(N=2n\). In fact the transported family has a nearby double root at time \(\Lambda-2x^2/N+o(1/N)\), bounding its *first* variance from above even if another collision occurs earlier. To see this, transport the first-order Jensen expansion by \(U_v,\ v=(s_n-t)/2\). The local error is \(O(N^{-2})\) uniformly in \(t\) near \(\Lambda\): before Gaussian integration the Bonferroni remainder is bounded by \(N^{-2}\) times a fixed polynomial in \(u|w|\) times \(e^{2u|w|}\), which is integrable as above. The same bounds hold on slightly larger complex compact sets and hence for derivatives. At \(t=\Lambda\), \(v=o(1)\). The first-order perturbation is \(-\tfrac12(z+vD)^2F_t''\), since \(U_v z=(z+vD)U_v\). It and its spatial derivative tend to the perturbations in the first-displacement equations. Inversion of the same nonsingular two-variable Jacobian gives the asserted local time. This argument makes no assumption that the collision selected by the finite discriminant occurs at a bounded ordinate.
 
+## The collision scale at every finite multiplicity
+
+Suppose \(F_\Lambda\) has a zero \(x\) of multiplicity \(m\ge2\). Write \(h=1/N\), \(D=\partial_z\), \(A=F_\Lambda^{(m)}(x)/m!\), and \(D_w=\partial_w\). The calibrated polynomials satisfy
+\[
+ \liminf_{n\to\infty}N(\sigma_n-\Lambda)\ \ge -2x^2,\qquad
+ \sigma_n\le s_n\le\Lambda+4T/N .
+\]
+In particular \(\sigma_n=\Lambda+O_x(N^{-1})\) for every such multiplicity. At this root there is a local multiple root of the transported family at time \(\Lambda-2x^2/N+o(N^{-1})\) and position \(x+o(N^{-1/2})\). A collision elsewhere can determine \(\sigma_n\). The hypothesis of a finite multiple root follows when \(\Lambda>0\) by the exterior simplicity argument above. The estimate allows a positive value of \(\Lambda\).
+
+Fix \(L=\lfloor m/2\rfloor\). The finite Jensen multiplier has the expansion
+\[
+ J_NF_s(z)=\sum_{j=0}^L h^j\sum_{r=0}^{2j} b_{jr} z^r D^rF_s(z)+R_{N,s}(z),
+ \qquad b_{00}=1,\qquad b_{j,2j}=\frac{(-1)^j}{2^j j!}.
+\]
+Indeed the coefficient of \(h^j\) on the monomial of degree \(k\) is \((-1)^j e_j(0,\ldots,k-1)\), where \(e_j\) is the elementary symmetric function. Summing its recurrence \(e_j(0,\ldots,k)-e_j(0,\ldots,k-1)=k\,e_{j-1}(0,\ldots,k-1)\) gives a polynomial in \(k\) of degree \(2j\) and leading coefficient \(1/(2^j j!)\). Expand it in the descending factorials \((k)_r\). For \(k\le N\), inclusion–exclusion bounds the remainder in the multiplier by \(h^{L+1}(\sum_{a<k} a)^{L+1}/(L+1)!\). For \(k>N\) the multiplier is zero, and \(hk^2\ge1\) bounds the partial sum in absolute value by \(C_L h^{L+1}(1+k)^{2L+2}\). The same last bound holds on both ranges.
+
+Taylor summation under the theta integral now gives \(R_{N,s}=O(h^{L+1})\) on disks uniformly for \(s\) in a compact real interval. It also gives \(U_v R_{N,s}=O(h^{L+1})\) on disks for bounded real \(v\). In fact at \(Z=z+\sqrt v\,G\), the multiplier bound times the absolute exponential series gives a majorant \(C'_L h^{L+1}(1+2u|Z|)^{2L+2}e^{2u|Z|}\) before integrating against the heat-weighted theta kernel. The Gaussian expectation and the theta tail are integrable as in the transport estimate above. This justifies termwise finite expansions even on shrinking spatial disks.
+
+For real \(d\) in compact intervals, joint analyticity in \(t,z\) and the heat equation give
+\[
+ \epsilon^{-m}F_{\Lambda-d\epsilon^2}(x+\epsilon w)
+ \ \longrightarrow\ A e^{(d/4)D_w^2}w^m \quad(\epsilon\downarrow0)
+\]
+locally uniformly in \(w\), also after any fixed number of \(w\)-derivatives. In the Taylor expansion every coefficient of spatial degree \(p\) and time degree \(q\) is a constant times \(F_\Lambda^{(p+2q)}(x)\). All weighted degrees \(p+2q<m\) vanish and weighted degree \(m\) gives the displayed polynomial. The corresponding splitting law for the undeformed zero uses the normalization \(H_t\) in [D. H. J. Polymath, arXiv:1904.12438v2, Proposition 3.1(ii)](https://arxiv.org/pdf/1904.12438v2).
+
+First \(s_n=\Lambda+O(h)\). Otherwise the upper mesh bound and \(s_n\to\Lambda\) give a subsequence with \(\delta=\Lambda-s_n\downarrow0\) and \(\delta/h\to\infty\), after extraction. At \(z=x+\sqrt\delta\,w\), divide the Jensen expansion by \(\delta^{m/2}\). In each term \(j\ge1\) the normalized derivative in the preceding limit is bounded, while \(h^j\delta^{-r/2}\le(h/\delta)^j\) for \(r\le2j\) and \(\delta<1\). The remainder also vanishes since \(L+1>m/2\). Thus the limit is \(A e^{D_w^2/4}w^m\). For \(a>0\), \(e^{aD_w^2}w^m\) has a nonreal simple zero. This follows by rotating \(w\) by \(i\) and using the simple real zeros of the scaled Hermite polynomial \(e^{-aD_w^2}w^m\). For \(m\ge2\) at least two of these zeros are nonzero. Rouché's theorem on a disk disjoint from the real axis contradicts the passing seed.
+
+Next put \(t=\Lambda-dh\), \(v=(s_n-t)/2\), so \(v=O(h)\) uniformly for bounded \(d\). Transport each Jensen term using
+\[
+ U_v(z^rD^rF_{s_n})=(z+vD)^rD^r F_t .
+\]
+The identity follows by Gaussian integration by parts, \(U_v(zf)=(z+vD)U_v f\), and by differentiation under the same integrable majorant. In \(z=x+\sqrt h\,w\) coordinates, \(z+vD\) acts as \(x+\sqrt h\,[w+(v/h)D_w]\). Its \(r\)-th power tends to multiplication by \(x^r\) on locally uniformly convergent analytic families with their derivatives. After division by \(h^{m/2}\), the term indexed by \(j,r\) has a scalar factor \(h^{j-r/2}\). Precisely the terms of differential order \(r=2j\) can survive. The transported remainder vanishes because \(L+1>m/2\). Adding the surviving derivatives gives, uniformly for \(d\) on compact intervals,
+\[
+ h^{-m/2}U_v J_NF_{s_n}(x+\sqrt h\,w)
+ \ \longrightarrow\
+ A\exp\!\left[\left(\frac d4-\frac{x^2}{2}\right)D_w^2\right]w^m .
+\]
+For each \(d>2x^2\) a disjoint nonreal disk again forces a nonreal root at \(t=\Lambda-dh\). All variances up to \(c_n\) have real roots, hence \(\sigma_n>t\) eventually. Let \(d\) decrease to \(2x^2\) to obtain the claimed lower bound.
+
+To locate a collision of the local cluster, fix a small interval of \(d\) about \(2x^2\). On a sufficiently large circle in \(w\) the model never vanishes for this entire interval. Rouché gives exactly \(m\) roots inside the circle throughout the interval at large \(N\). At the lower end the Hermite roots are simple and real, and disjoint conjugation-invariant disks transfer that property. At the upper end a nonreal root has appeared. Continuity therefore forces a real multiple root in the cluster at some intermediate parameter. Taking successively smaller fixed intervals and a diagonal sequence valid for every sufficiently large \(N\) gives \(d_N\to 2x^2\). The cluster stays in one fixed disk by taking the original circle throughout. At \(d=2x^2\) the limit polynomial is \(Aw^m\), so the scaled multiple root tends to zero. No hypothesis on roots outside the cluster enters this conclusion.
+
+An exact polynomial check uses \(F_\theta(z)=(z^2-1)^m\), \(s=\theta+b\epsilon^2\), \(t=\theta-d\epsilon^2\), and the formal multiplier \(h=\epsilon^2\). Expand the two finite heat operators and \(\prod_{a<k}(1-a\epsilon^2)\) on each monomial, then set \(z=1+\epsilon w\). Through degree \(m\) in \(\epsilon\) the result is \(2^m\epsilon^m e^{((d-2)/4)D_w^2}w^m\). Direct rational arithmetic verified the coefficients for \(2\le m\le8\), \(b\in\{-3,0,4\}\), \(d\in\{1,2,3\}\). For instance \(m=4,b=4\) gives the three leading polynomials \(16w^4-48w^2+12,\ 16w^4,\ 16w^4+48w^2+12\) in increasing order of \(d\). These cases test both signs of the splitting and the cancellation of the seed displacement. The rescaling theorem above is an analytic argument. Lean elaboration, kernel verification and axiom auditing of that theorem are \(\mathrm{NOT\_RUN}\).
+
+## Finite checks for the double-root displacement and theta sections
+
 For an independent exact model set \(F_t=U_{(\theta-t)/2}(z^2-1)^2\). At \(x=1\) the predicted second coefficients are 2 and 3. Writing \(e=\theta-t\), the Jensen polynomial is \((1-h)(1-2h)(1-3h)z^4+(1-h)(3e-2)z^2+1-e+3e^2/4\). Exact rational bisection on its quadratic discriminant locates the collision, and interval arithmetic gives the double-root position. At degree 10,000 the scaled second corrections are in \((1.99949,1.99951)\) and \((3.00047,3.00049)\). This example keeps the local seed collision distinct from a global claim about zeta.
 
 [The finite fixture](../../../scripts/verify_xi_newman_jensen_threshold.py) also certifies simple real roots at the first-cell midpoints for ranks 2, 4, 8, 12, 16 and 24 using the actual theta integral. It transports each polynomial to \(T\), checks its reverse transport, and brackets the actual first collision by interval Sturm counts. At rank 24 the midpoint is \(1/96\) and the variance lies between \(12111/2048\) and \(24223/4096\). These large finite variances are compatible with the much smaller limiting value. The [Lean source](XiNewmanJensenThreshold.lean) treats the product damping estimate, endpoint comparisons and the perturbation equations. The theta limit, spectral construction and global root-location question remain outside that formalization.
