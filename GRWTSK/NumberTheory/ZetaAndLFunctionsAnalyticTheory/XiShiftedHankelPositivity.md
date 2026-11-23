@@ -85,3 +85,13 @@ upper and lower corners therefore gives valid endpoints and avoids
 repeated use of the same uncertain variable in interval arithmetic.
 This is a finite computer-assisted calculation. The source-integral
 enclosure has no Lean kernel certificate. [Direct theta-integral check](../../../scripts/verify_xi_shifted_hankel.py)
+
+## The first nontrivial minor at shift two
+
+For the same theta coefficients, the shifted \(2\times2\) determinant is \(D=p_2p_4-p_3^2\). A separate reproduction of the 55-decimal interval midpoint calculation, with 10,000 cells on \([0,5]\) and the four theta terms \(m=1,\ldots,4\), gives
+\[
+ 3.80209899 < 10^{15}D < 3.91803621.
+\]
+The 5,000-cell lower endpoint is also positive. Each cell uses the midpoint value and the elementary second-derivative error bound \(h^3\sup|f''|/24\) for each integrand. For degrees \(k=0,2,\ldots,8\), the omitted \(m\ge5\) and \(t\ge5\) tails in the raw integrals are at most \(2(8!)e^{-75}/74<10^{-28}\) and \(4(8!)e^{-280}<10^{-100}\), respectively. For the first bound use \(t^k\le k!e^t\), then \(y^{1/4}\le e^{(y-1)/4}\) after substituting \(y=e^t\). The integral for each omitted \(m\) is at most \(k!e^{-3m^2}/(3m^2-1/4)\); its denominator exceeds 74. The second bound follows from the same substitution with \(y>140\). Independent ball integration with eight theta summands at 192 bits gives \(10^{15}D=3.86048846787093841952413095008325581124835486947935\) with absolute error below \(5\times10^{-51}\). The 2048-bit direct gamma–zeta Taylor expansion agrees. These are enclosures for this particular determinant. [Gamma–zeta and theta coefficient calculations](../../../scripts/verify_xi_shifted_hankel.py)
+
+Two analytic controls clarify what the positivity test detects. For \(g(w)=1+w\), \(p_k=(-1)^k\); every shift-two matrix is the outer product of \(((-1)^i)_i\) with itself, although the single zero of \(g\) is negative. For the symmetric probability masses \(3/5\) at zero and \(1/5\) at each of \(-1,1\), one has \(g(w)=3/5+(2/5)\cos\sqrt w\). Its first four Newton sums are \(1/5,1/150,-1/3000,-67/630000\), giving \(D=-31/37800000\). Convolution with the uniform probability on \([-\epsilon,\epsilon]\) gives a compactly supported symmetric density. Its first eight moments converge to those of the discrete measure as \(\epsilon\downarrow0\), so the corresponding determinant remains negative for sufficiently small \(\epsilon\). For xi the positivity of \(g\) on the negative real axis is an additional theta identity.
