@@ -1,0 +1,20 @@
+# Three contour moments on rational intervals characterize RH
+
+Write \(X(z)=\xi(1/2+iz)\). A nontrivial zero \(s=\beta+i\gamma\) of zeta corresponds to \(z=\gamma+i\delta\), where \(\delta=1/2-\beta\). For a bounded open rational interval \(I=(a,b)\), take all such zeros whose height is in \(I\), with their positive analytic multiplicities \(m\). Define
+\[
+ n=\sum m,\qquad p=\sum m\gamma,\qquad q=\sum m(\gamma^2-\delta^2),
+ \qquad D(I)=nq-p^2 .
+\]
+The result is \(\mathrm{RH}\iff D((a,b))\ge0\) for every rational \(a<b\). The degree is fixed even when the count grows. The earlier Hermite criterion instead tests an increasing polynomial space on bounded windows. [Lean theorem and definitions](XiLocalVarianceCriterion.lean) · [Earlier criterion](XiWindowHermiteCriterion.md)
+
+If RH holds, \(D\) is the mass times the ordinary unnormalized variance of the heights. Conversely, any specified zeta zero has a rational neighborhood of its height containing no other *distinct* height, by local finiteness. At that fiber \(D=-n\sum m\delta^2\). A single off-line zero makes this strictly negative even in the presence of real nodes and repeated zeros at that height. Empty intervals have all moments zero. The argument uses the finite divisor in the pinned repository and ends at the actual Mathlib proposition. It supplies no sign bound for such an isolated fiber.
+
+The declarations in namespace `GRWTSK.XiLocalVarianceCriterion` define `cell` and `cellMoments`; `mem_cell` identifies membership, `isolating_radius` and `isolate_height` isolate the full fiber, `mass_pos` gives positive mass, and `rational_cell_variances_iff_RH` proves the equivalence. The formal second moment squares \(\beta-1/2\), giving exactly the same real quantity. The source of the finite-set and multiplicity inputs is the [canonical divisor](NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalZeroDivisor.lean). This is a local deduction using those declarations.
+
+Independently of a list of zeros, integrate \(z^k X'(z)/X(z)\) counterclockwise around a rectangle over \(I\) with horizontal sides at imaginary parts \(\pm9/16\), and divide by \(2\pi i\), for \(k=0,1,2\). Conjugation symmetry and the residue theorem give exactly \(n,p,q\). Take the left and right cuts from inside if an endpoint is a zero height. Local finiteness gives eventual equality for these inward limits. Common translations of \(z\) by a real center preserve \(D\). The residue comparison is analytic manuscript work. [Contour argument and computational error bounds](XiContourTraceForm.md) · [Delves and Lyness, 1967](https://doi.org/10.1090/S0025-5718-1967-0228165-4)
+
+The [adaptive verification fixture](../../../scripts/verify_xi_window_variance.py) uses the earlier zeta Taylor-ball integral and evaluates only these three moments. An integral count of one forces a real simple node by conjugation. For two nodes counted with multiplicity the squared difference is \(D\), so strict positivity gives two simple real nodes with offsets \((p\pm\sqrt D)/2\). A larger count can have positive \(D\) and nonreal nodes. The fixture subdivides it, evaluates the left child and obtains the right child by additivity. Each reported complete window has a certified count and disjoint enclosures. A cut on a root or unresolved interval arithmetic can prevent completion. Sixty exact controls hide a nonreal pair in a positive broad window and detect it in a smaller one.
+
+The completed unit windows centered at 7005, \(10^{14}\), and \(10^{15}\) contain respectively 2, 4 and 5 simple critical-line zeros. The dyadic cut counts were 0, 1 and 2. The outermost offsets found at \(10^{15}\) lie in \((-0.492260,-0.492259)\) and \((0.262139,0.262140)\). These are local completeness results and leave the intervening heights untested.
+
+Native elaboration, fresh kernel replay and transitive axiom audits passed with Lean 4.34.1 and Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612 for XiLocalVarianceCriterion at feecc00dea0796d47dc6c08c84f85529e775539d. Across the declarations the reported axioms were propext, Classical.choice and Quot.sound.
