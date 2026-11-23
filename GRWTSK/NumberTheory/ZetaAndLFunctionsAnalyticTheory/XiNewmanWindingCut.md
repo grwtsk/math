@@ -1,0 +1,50 @@
+# Finite sign and winding certificates for the Newman endpoint
+
+grwtsk contributors
+
+For rational \(0<t\le1/2\), the strict tests \(t<\Lambda\) and \(t>\Lambda\) each have finite certificates using the arithmetic theta integral. Parallel searches for these certificates produce rational brackets of any prescribed positive width for \(\Lambda\). They also give a finite-rank approximation, with a certified Hilbert–Schmidt error, to the signed inverse constructed at the endpoint from ordered theta-moment Jacobi eigenvalues. The test below was actually executed on a small rectangle. At \(t=1/8\) the cutoff for a **global** upper certificate is much larger.
+
+## A compact contour at one rational time
+
+Use the same \(H_t\) as in the [explicit height estimate](XiNewmanEffectiveEscape.md), and choose a rational \(R>4\pi e^{32/t}+1\) with \(H_t(R)\ne0\). Candidates for \(R\) can be searched in parallel. Such rationals exist by discreteness of the zeros. All zeros outside the vertical lines \(\Re z=\pm R\) are real and simple, by the explicit estimate and evenness. The strip theorem gives \(|\Im z|\le1\). Thus the boundary of \([-R,R]\times[-2,2]\) is free of zeros. Let \(N\) be the winding number of \(H_t\) on this positively oriented boundary about zero. It counts the enclosed zeros with multiplicity. For the global strip and the heat-flow normalization see [D. H. J. Polymath, arXiv:1904.12438v2, Theorems 1.3 and 3.2](https://arxiv.org/pdf/1904.12438v2).
+
+Let \(V\) be the maximum number of sign changes along finite increasing rational samples in \([-R,R]\) at which \(H_t\) is nonzero. An odd-multiplicity real zero reverses the sign, and an even-multiplicity zero preserves it. Each sign change needs at least one odd-multiplicity zero between its endpoints. Conversely, choose one rational sample from each open gap between all successive distinct real zeros, including the two outside gaps. This attains exactly one change per odd-multiplicity zero. If there are no real zeros, one nonzero sample suffices. It follows that
+\[
+  N - V = 4Q + 2\sum_{x\in(-R,R),\ H_t(x)=0}\lfloor m(x)/2\rfloor ,
+\]
+where \(Q\) counts the off-real quadruples with multiplicity. Positivity of the theta integral on the imaginary axis excludes unpaired imaginary zeros. Consequently one finite sample with \(N\) sign changes certifies that **all zeros at this time are simple and real**.
+
+For \(t>\Lambda\), all zeros are real and simple. An interior multiple zero would split into nonreal branches at slightly earlier times still above the endpoint. If \(t<\Lambda\), a nonreal zero exists and the defect is positive. At \(t=\Lambda>0\) there is a multiple real zero in the compact region, as proved by uniform high-ordinate localization in the [terminal collision argument](XiNewmanTerminalJet.md). Thus the sign-and-winding certificate exists exactly for \(t>\Lambda\) on the given rational domain. A strict lower certificate for \(t<\Lambda\) consists of a rational rectangle wholly in the open upper half-plane, with positive winding of \(H_t\) and a zero-free boundary. A sufficiently small rectangle about any one nonreal upper zero works even if that zero has multiplicity greater than one.
+
+## Effectiveness and convergence
+
+These are terminating verifications of individual certificates. On any bounded rectangle in \((z,t)\) with real \(0\le t\le1/2\), the theta integral has effective interval enclosures at arbitrary precision. For example, on \(|\Im z|\le2\) the absolute integrand on \(u\ge0\) is bounded by
+\[
+ 30\exp(u^2/2+11u-\pi e^{4u}/2).
+\]
+Indeed each positive summand of the theta density is bounded by its first term and \(\sum_{n\ge1}n^4e^{-\pi n^2/2}<4/3\) by the ratio bound \(16e^{-3\pi/2}<1/4\). On \(u\ge2\), \(u^2/2+11u\le e^{4u}/2\), so the integral tail is bounded by an explicitly integrable exponential, for example \(30e^{-2u}\). On a finite \(u\) interval the omitted theta-series tail is bounded using \(\sum_{n>M}n^4e^{-\pi n^2}\) and the finite maxima of the other factors. Interval Riemann sums of the remaining elementary terms converge uniformly when the integration and parameter boxes and roundoff bounds are refined. The same argument with a factor \(u^j\) applies to any fixed spatial derivative. A strict lower certificate can be sought entirely in \(0<\Im z<2\).
+
+To verify a winding, cover each edge with small segments on which the image is certified in a strict open coordinate half-plane whose bounding line passes through zero. Approximate the images of the segment endpoints by consistently chosen rational vertices contained in the half-planes for both incident segments. Existence follows by compactness, continuity and the positive distance from zero on a valid contour. Straight-line interpolation between the exact image curve and this polygon stays within each segment's certified half-plane. The winding of the polygon is an exact rational crossing calculation. This gives a convergent procedure even on very long contours, with no efficiency assertion.
+
+Enumerate rational radii, sign samples, lower rectangles and refinement precisions by dovetailing. A trial that hits a zero on a boundary or at a sample point therefore cannot stall another trial. Start with \(0\le\Lambda\le1/2\). The lower endpoint is Rodgers and Tao's theorem. For any current bracket \([l,u]\) with \(l<u\), set \(a=(2l+u)/3\) and \(b=(l+2u)/3\). Search concurrently for a nonreal-zero certificate at \(a\) and a saturated sign count at \(b\). At least one search succeeds because \(a<b\). Its result gives respectively \([a,u]\) or \([l,b]\), of width \(2(u-l)/3\). Even when one probe equals \(\Lambda\), the other strict test succeeds. This establishes computability of the real number without an equality test against zero. No global bracket narrower than the published bounds was computed in this work. [Rodgers and Tao, arXiv:1801.05914v5, Theorem 1](https://arxiv.org/abs/1801.05914v5)
+
+## An effective error bound for the endpoint operator
+
+Let \(K_*\) be the bounded inverse of the densely defined endpoint operator from the [Jacobi construction](XiNewmanJacobiLimit.md). That construction defines its ordered coordinates by a limit of variational eigenvalues from theta moments. Its spectral identification proves that these coordinates are \(\pm 2/x_k\), where the positive zeros of \(H_\Lambda\) are listed in increasing order with multiplicities. We use this identification for approximating the already-defined operator.
+
+One can compute \(H_\Lambda\) and its derivatives on compact sets by giving the integration procedure progressively narrower rational brackets for \(\Lambda\). To enclose the first \(n\) positive zeros, enumerate finite increasing rational endpoints starting at zero and use rectangles extending from imaginary part \(-1\) to \(1\) on each successive real subinterval. Certify nonvanishing boundaries and exact winding counts. Retain lists whose total count reaches \(n\) and whose nonempty intervals are as narrow as requested, also refining away from the origin. At the endpoint, all zeros are real and the origin is nonzero. Discreteness permits the endpoints to be chosen off the zeros, and there are infinitely many positive zeros. Thus the searches terminate even when distinct positions coincide in the multiplicity list. Every counted root of a given interval receives its own coordinate.
+
+The computable positive number
+\[
+ q_0(\Lambda)=-\frac{H''_\Lambda(0)}{2H_\Lambda(0)}
+      =\sum_{k\ge1} x_k^{-2}
+\]
+follows from the paired Hadamard product. The exact squared norm of the signed tail after \(n\) positive coordinates is \(8(q_0-\sum_{k\le n}x_k^{-2})\). Dovetail \(n\) and the interval precision until the upper bound on this difference, including its factor eight, is below half the prescribed squared error. This halts because the infinite sum converges to the computed trace. Use the other half of the error for rational approximations of the \(2n\) retained signed coordinates. On the fixed orthonormal basis this yields finite diagonal rational matrices with a certified Hilbert–Schmidt error tending to zero. At \(\Lambda\) the determinant is \(H_\Lambda(2z)/H_\Lambda(0)\). Identifying this with the requested xi quotient still requires \(\Lambda=0\).
+
+## Finite replay and formal scope
+
+The [finite fixture](../../../scripts/verify_xi_newman_winding_cut.py) uses the arithmetic theta integral at \(t=1/8\) on the smaller rectangle \([0,108]\times[-1,1]\). A degree-44 spatial Taylor expansion with the [previous certified jets](XiNewmanCollisionCount.md) gives convex image enclosures. For complex spatial increment \(v\), on \(0\le u\le2\) the omitted part is bounded by \(e^{2+2|v|}(2|v|)^{45}/45!\), by the exponential majorant for the cosine Taylor series and the bound on the mass of \(\Phi\). Above \(u=2\) the exact and truncated integrands satisfy the earlier double-exponential tail estimate since \(|v|<2\). The polygonal vertices are exact dyadics. The script certified winding 11 using 220 boundary segments, and found 11 sign changes at the twelve listed real samples. Every zero in this rectangle is therefore real and simple. Reality beyond its right edge has not been tested by this computation.
+
+The [Lean companion](XiNewmanWindingCut.lean) proves the exact parity decomposition, the criterion for saturation in terms of finite multiplicities, strict trisection coverage and width, and the upper bound on the signed tail from its total trace. The analytic strict-cut equivalence, computable integration, algorithms and operator identification are manuscript arguments. No external independent review or full Lean formalization of the algorithms is claimed.
+
+Lean 4.34.1 and Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612 elaborated source blob efafbbea7170a13a76336757cfd30c7514088a4a. The fresh kernel check reported 5 roots, 12862 declarations. All transitive axiom audits used only axioms among propext, Classical.choice and Quot.sound. [Published verification record](https://github.com/grwtsk/math/issues/1850)
