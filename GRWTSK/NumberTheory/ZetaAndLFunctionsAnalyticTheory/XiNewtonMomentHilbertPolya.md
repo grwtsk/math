@@ -239,3 +239,118 @@ The external \`CoreGm.lean\` lemma is **conditional on** \`EAtH\` and \`CoreAtH\
 **Exact finite proof-candidate scope:** Adjacent Lean has the source-referenced Newton moment target, two-by-two coefficient identity and rational hostile controls. Lean elaboration **NOT_RUN**; fresh kernel replay **NOT_RUN**; transitive axiom audit **NOT_RUN**; independent mathematical review **NOT_RUN**. The infinite Hamburger, support, uniqueness, source Hadamard and trace-class steps remain **unformalized**.
 
 **Open theorem:** prove the complete (22) independently with the five genuine source suppliers and exact window quantifiers, or prove (4) directly for the **original theta coefficients**. This is RH-strength. Neither is established by a finite positive Hankel matrix, an assumed operator spectral theorem, an externally imported RH conclusion or a positive theta Fourier source by itself. A claim of completed independent Hilbert–Pólya proof is not justified until this theorem is supplied and source-verified.
+
+## VII. Gaussian quadrature, spectral multiplicity and finite rank
+
+Put \(g(w)=F(-w)\) and \(p_k=-k[w^k]\log g(w)=\tau_k\) for \(k\ge1\).
+Fix \(n\ge1\) and use only the first \(2n\) coefficients to form
+\[
+ G_{ij}=p_{i+j+1},\quad D_{ij}=p_{i+j+2},\quad b_i=p_{i+1},
+ \qquad 0\le i,j<n.
+\]
+Suppose for this finite construction that both matrices are positive
+definite. On real polynomials of degree below \(n\), use the inner product
+with Gram matrix \(G\) in the monomial basis. Define \(J\) by
+\(\langle v,Ju\rangle=v^{\mathsf T}Du\). Then \(J\) is positive and
+self-adjoint in this inner product. It sends \(t^j\) to \(t^{j+1}\) for
+\(j<n-1\), so \(1,J1,\ldots,J^{n-1}1\) form a basis. Cyclicity implies
+that all \(n\) eigenvalues \(\theta_j\) are simple and positive and the
+spectral weights \(\omega_j=\|P_{\theta_j}1\|^2\) are positive.
+
+These nodes and weights give the Gaussian quadrature identities
+\(\sum_j\omega_j\theta_j^k=p_{k+1}\) for \(0\le k<2n\).
+For \(k\le2n-2\), split \(k=r+s\) with \(r,s<n\) and take the inner
+product of \(J^r1,J^s1\). At \(k=2n-1\) use
+\(\langle t^{n-1},Jt^{n-1}\rangle=D_{n-1,n-1}\).
+Thus \(\sum_j\omega_j/(1-\theta_j w)\) agrees with \(-g'(w)/g(w)\)
+through degree \(2n-1\). Integrating the logarithmic derivative near
+zero gives \(\prod_j(1-\theta_jw)^{\omega_j/\theta_j}\), normalized to
+one at zero, agreeing with \(g\) through degree \(2n\). A determinant
+with these distinct reciprocal roots requires each exponent to be an
+integer, by the order of its zero at \(1/\theta_j\). The quadrature
+identities alone impose no such condition.
+[Golub and Welsch, *Calculation of Gauss Quadrature Rules*, §2](https://www.ams.org/journals/mcom/1969-23-106/S0025-5718-69-99647-1/S0025-5718-69-99647-1.pdf).
+
+**A finite rank test.** If a list of \(d\) real numbers
+\(x_1,\ldots,x_d\) realizes \(p_k=\sum_\ell x_\ell^k\) through
+\(k=2n\), put \(q(t)=\sum_{i=0}^{n-1}u_i t^{i+1}\). Expanding the
+nonnegative sum \(\sum_\ell(1-q(x_\ell))^2\) gives, for every real \(u\),
+\[
+ d\ \ge\ 2u^{\mathsf T}b-u^{\mathsf T}Du.
+\]
+This inequality allows repeated and negative real values. When \(D>0\),
+completing the square gives the best bound in this polynomial family,
+\[
+ d\ge b^{\mathsf T}D^{-1}b
+   =\langle 1,J^{-1}1\rangle
+   =\sum_j \omega_j/\theta_j .
+\]
+The middle equality follows from \(J=G^{-1}D\) and \(b=G e_0\).
+Thus the Gaussian weights give a dimension test even when a different
+node set might realize the same trace data with integer multiplicities.
+
+For the original xi coefficients, interval arithmetic gives the
+following enclosures. All leading principal minors of both matrices
+through order four were strictly positive.
+
+| \(n\) | Enclosure for \(b^{\mathsf T}D^{-1}b\) | Minimum required dimension from the bound |
+|---:|---:|---:|
+| 1 | \((14.36,14.37)\) | 15 |
+| 2 | \((40.84,40.85)\) | 41 |
+| 3 | \((80.03,80.04)\) | 81 |
+| 4 | \((128.12,128.13)\) | 129 |
+
+At each displayed order the sum of the proposed multiplicities is
+nonintegral. At order one the single node is \(p_2/p_1\), its weight
+is \(p_1\), and its sole proposed multiplicity is \(p_1^2/p_2\).
+A second check at order four uses only the integer vector
+\(u=(13937,-22641010,10352378907,-1274144136143)\).
+Its value \(2u^{\mathsf T}b-u^{\mathsf T}Du\) lies in \((128.12,128.13)\),
+already excluding every real spectral list of size at most 128.
+The lower bounds concern matching the first \(2n\) power sums. They
+supply neither the size of a smallest realizing list nor a sign at
+any subsequent order.
+
+To reproduce the enclosures, use the positive cosine kernel in (1) for
+moments through \(u^{16}\). Apply 192-bit Arb quadrature on \(0\le u\le3\)
+with theta indices \(1\le j\le6\). After the substitution \(t=e^{2u}\),
+the absolute \(j\)-summand is bounded by
+\(40j^4t^{20}e^{-\pi j^2t}\,dt\).
+For \(j\ge7\) use \(t^{20}\le e^{20(t-1)}\) and sum the resulting
+geometric majorant. For \(j\le6\) and \(t\ge e^6>400\) use \(t^{20}\le e^t\).
+The combined error per integral is at most
+\(80\cdot7^4e^{-147}+40\cdot6^5e^{-800}<10^{-56}\).
+Include that error before taking the ratios in (1). Set
+\(c_k=(-1)^ka_k\), compute
+\(p_k=-kc_k-\sum_{j=1}^{k-1}c_j p_{k-j}\), test the principal
+determinants, then enclose \(b^{\mathsf T}D^{-1}b\) by a ball linear solve.
+[Theta integral and ball integration formula](../../Combinatorics/GraphTheory/PrimeJacobiHilbertPolyaFaithfulComparison.md#the-inverse-of-the-even-prime-jacobi-sections).
+
+The general polynomial bound and the four-moment implication
+\(d\ge41\) from rational interval endpoints have Lean proofs. Their
+numeric xi premises use the analytic quadrature above. The Gaussian
+spectral representation and the quadrature enclosures have no Lean
+formalization in this comparison.
+[Finite real-spectrum rank theorems](NewtonMomentRank.lean).
+
+**Limit under all-rank positivity.** Under the moment hypothesis in §II,
+write \(\sigma\) for its recovered measure and choose \(R>0\) with
+support in \([0,R]\). Its infinitely many distinct positive atoms make
+both finite Gram matrices strictly positive at every order. Each
+quadrature node lies in \((0,R]\), by
+\(0<\int t f^2\,d\sigma\le R\int f^2\,d\sigma\) for nonzero polynomial
+\(f\). For \(R|w|<1\), let \(g_n\) denote the integrated Gaussian product
+above, with logarithm zero at the origin. Comparing the power series
+after the first \(2n\) matching Newton sums gives
+\[
+ |\log g(w)-\log g_n(w)|
+ \le \frac{2p_1|w|(R|w|)^{2n}}{(2n+1)(1-R|w|)} .
+\]
+Indeed, both true and quadrature measures have mass \(p_1\), so their
+moments of degree \(k-1\) are bounded by \(p_1R^{k-1}\).
+The dimension bounds \(b^{\mathsf T}D^{-1}b\) also grow without bound.
+In their variational formula take \(q(t)=1-(1-t/R)^n\).
+Then \((2q-q^2)/t\) increases to \(1/t\) at each positive atom.
+By (14) the integral of \(1/t\) is the sum of all positive integer
+multiplicities, hence is infinite. This limiting argument uses the
+full positivity hypothesis throughout.
