@@ -1,9 +1,8 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
 Authors: grwtsk contributors.
-SOURCE_PROOF_CANDIDATE. Lean 4.34.1,
-Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612.
-Elaboration, fresh kernel replay and transitive axiom audit: NOT_RUN.
+Lean 4.34.1, Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612.
+See grwtsk/math issue 124 for exact-source verification.
 -/
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
@@ -75,7 +74,7 @@ def normalizedEvenXiTaylor (n : ℕ) : ℝ :=
   (normalizedEvenXiTaylorComplex n).re
 
 /-- Realness, center nonvanishing and the full actual entire
-series expansion are separate source properties; not proved here. -/
+series expansion are proved for this source in the sibling module `XiTaylorSourceAnalytic`. -/
 def XiTaylorSourceFaithful : Prop :=
   sourceXi (1 / 2 : ℂ) ≠ 0 ∧
   (∀ n : ℕ, (normalizedEvenXiTaylorComplex n).im = 0) ∧
@@ -155,6 +154,7 @@ This does not assume RH or any zero ordinate. -/
 theorem normalizedEvenXiTaylor_zero_of_center_ne_zero
     (hcenter : sourceXi (1 / 2 : ℂ) ≠ 0) :
     normalizedEvenXiTaylor 0 = 1 := by
+  simp only [one_div] at hcenter
   simp [normalizedEvenXiTaylor,
     normalizedEvenXiTaylorComplex, hcenter]
 

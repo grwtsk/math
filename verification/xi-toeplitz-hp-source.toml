@@ -25,8 +25,8 @@ allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 lean_elaboration = "NOT_RUN"
 fresh_kernel_replay = "NOT_RUN"
 transitive_axiom_audit = "NOT_RUN"
-xi_center_nonzero_in_lean = "OPEN"
-xi_even_taylor_entire_in_lean = "OPEN"
+xi_center_nonzero_in_lean = "XiTaylorSourceAnalytic.lean: sourceXi_center_ne_zero"
+xi_even_taylor_entire_in_lean = "XiTaylorSourceAnalytic.lean: hasSum_normalizedEvenXiTaylor"
 xi_entire_order_half_in_lean = "OPEN"
 universal_toeplitz_minors = "OPEN_INDEPENDENT_RH_STRENGTH"
 edrei_to_trace_class_fredholm_in_lean = "NOT_FORMALIZED"
@@ -43,7 +43,7 @@ external_RH_used = false
 [[module]]
 name = "GRWTSK.NumberTheory.XiToeplitzHilbertPolyaCriterion"
 path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiToeplitzHilbertPolyaCriterion.lean"
-git_blob = "c13af5685959cd2b6e7a684035092e0e0a24e432"
+git_blob = "d2e1190bfe813ac0547c598a0d5f9f16faebb534"
 theorems = [
   "sourceXi_reflection",
   "sourceXiOnLine_even",

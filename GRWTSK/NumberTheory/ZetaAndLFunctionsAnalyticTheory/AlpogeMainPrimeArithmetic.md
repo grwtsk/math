@@ -61,6 +61,63 @@ For every coprime prime-power \(r\), multiplication by the genuine signed \((1-\
 \]
 Thus the finite average retains all **four** actual centered sums, with the signs \(+,+,-,-\), not a positive Gram surrogate. Exceptional terms p=d and omitted p=2,q are handled separately from the group identity. No analytic prime distribution estimate is used in (3)–(4).
 
+### Extending the marked sum to all integers
+
+For the source primes the extension in (II.29) has **exactly zero error**.
+The fields of `UpperTheory.Top.WinPair` give primes \(q\equiv3\pmod8\),
+\(d\equiv7\pmod{16}\), \(q\mid d+1\), and \(p\mid d+1\) for every odd prime
+\(p\le Y^{\varepsilon/5}\). The prime-denominator Jacobi symbols in the
+source twists are the Legendre characters \(\chi_d(r)=(r/d)\) and
+\(\chi_q(r)=(r/q)\). The original `HostFacts.split_inertia` and
+`split_frob` concern inertia groups and Frobenius elements in the host
+field. The calculation here establishes the integer character weights.
+[Original WinPair, lines 27–37](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean#L27-L37)
+· [Original twists](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean#L9-L10)
+· [HostFacts](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean#L47-L59)
+
+The supplement at two gives \((2/d)=1\). For any odd prime \(p\mid d+1\),
+quadratic reciprocity and \(d\equiv3\pmod4\) give
+\[
+ (p/d)=(-1)^{(p-1)/2}(d/p)=(-1)^{(p-1)/2}(-1/p)=1.
+\]
+Thus \(1-\chi_d(p^h)=0\) for every \(h\ge1\) at \(p=2,q\) and at every
+small prime covered by the source condition. For the retained base \(d\),
+\(\chi_d(d^h)=0\) and \(\chi_q(d) = (-1/q)=-1\). Its marked multiplier
+is exactly \(1+(-1)^h\). Hence its odd powers have zero marked weight
+and its positive even powers have marked weight \(2\log d\) before the
+common factor \(\delta/2\). Its unmarked coefficient in (1) remains
+\(\log d\) in every degree. These facts prove the passage from the sum
+over \((r,2q)=1\) to \(S_{q,d}(y)\) for every cutoff and every finite
+real smoothing. Only prime powers can contribute, by the support of
+\(\Lambda\). No column label needs to be assigned to an omitted integer.
+[Explanatory draft v2, §§II.4.1, II.5.3 and III.1](https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf)
+· [Lean declarations for the actual symbols and von Mangoldt sum](AlpogeExceptionalPrimePowers.lean)
+
+For a check on the hypotheses, consider arbitrary distinct odd primes
+\(q,d\) and the source ramp. Write
+\(R_p(y)=\sum_{j\ge0}(y/p^{2j+1}-1)_+\) for \(y\ge0\).
+The all-integer marked sum minus its restriction to \((r,2q)=1\) is
+exactly
+\[
+ (1+\chi_q(2))(1-\chi_d(2))\log2\, R_2(y)
+   +(1-\chi_d(q))\log q\, R_q(y).
+\]
+At both bases the even powers vanish since \(\chi_d(p)^2=1\). The
+formula follows by multiplying the two character factors on odd powers,
+using \(\chi_q(q^h)=0\). In particular the marked term at two already
+vanishes when \(\chi_q(2)=-1\), even if the unrestricted coefficient
+\(1-\chi_d(2)\) is positive. If \(K\) counts the odd powers of \(p\)
+strictly below \(y\), the finite geometric sum gives
+\[
+ R_p(y)=\frac{yp}{p^2-1}(1-p^{-2K})-K,\qquad
+ 0\le \frac{yp}{p^2-1}-R_p(y)-K\le\frac{p^2}{p^2-1}.
+\]
+The last bound uses \(y\le p^{2K+1}\). A lost local factor can therefore
+change even the linear centering. For \(q=3,d=7,y=4\) the two source
+congruences still hold but \(3\nmid8\). The omitted power \(3\) gives
+the exact difference \(2\log(3)/3\). Under the full source hypotheses
+both correction coefficients vanish identically.
+
 ## Theorem B: exact arithmetic cell centering (source (5.3))
 
 Write \(\mu=1/(2n)\), and suppose the original progression-smooth sums have the explicit expansion

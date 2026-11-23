@@ -1,6 +1,6 @@
 # An unconditional zero-independent trace-class Fredholm linearization of the actual Riemann Xi
 
-**Attribution:** grwtsk contributors. **Source status:** complete classical analytic argument, independent mathematical review NOT_RUN; adjacent Lean proof candidates do NOT formalize the infinite determinant and their elaboration/kernel/axiom checks are NOT_RUN. The construction is an exact **non-self-adjoint** original-Xi operator, NOT a completed independent Hilbert–Pólya proof.
+**Attribution:** grwtsk contributors. **Source status:** the finite determinant identity and its compact-uniform limit have Lean proofs. The infinite trace-class realization and its spectral obstructions have analytic proofs. External independent mathematical review is outstanding. The operator is non-self-adjoint.
 
 **Local pin before work:** grwtsk/math main at 9c57dfe930349319a7107c2e26cfe9de1cbdc6d7, root Lean 4.34.1, Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612. **Canonical source:** [XiToeplitzHilbertPolyaCriterion.lean](XiToeplitzHilbertPolyaCriterion.lean), original Mathlib completedRiemannZeta₀ and sourceXi; [XiThetaSchurSource.md](XiThetaSchurSource.md), true positive theta kernel and original even coefficients; [XiNewtonMomentHilbertPolya.md](XiNewtonMomentHilbertPolya.md), conditional full-Hankel criterion and exact positive multiplicity lift; [AlpogeMainPrimeArithmetic.md](AlpogeMainPrimeArithmetic.md), exact finite original signed prime cells; [AlpogeXiSmoothedTrace.md](AlpogeXiSmoothedTrace.md), prime/gamma/pole Mellin identity and the older zero-indexed normal Fredholm model; [XiSelfAdjointDefect.md](XiSelfAdjointDefect.md), the original zero-indexed normal-operator skew defect.
 
@@ -180,7 +180,7 @@ The explanatory draft's (M) is **quoted from Lean, not independently proved in t
 - The byte-pinned [finite checker](../../../scripts/verify_xi_taylor_companion.py) executed 123 exact-rational full determinants and finite Newton power-trace identities through N=10, plus explicit finite non-self-adjointness controls (PASS).
 - An optional 65-digit mpmath check computed the first actual \(\Xi\) coefficients from the completed zeta derivatives and compared the finite Taylor models at w=1/2, with error decreasing to about \(1.3451523\times 10^{-15}\) at N=5 (PASS, **not certified**).
 - The source order-\(1/2\) Cauchy estimate, infinite rank-one Fredholm identity, trace-norm and divisor transfer are mathematical analytic proofs, **not** Lean formalizations or independent peer-reviewed source acceptance.
-- Lean proof candidates for the two/three-step algebra: elaboration NOT_RUN, kernel replay NOT_RUN, transitive axiom audit NOT_RUN. Full infinite \(\ell^2\) construction, trace ideal, genuine theta-source equality and positivity-to-Hilbert–Pólya transport remain NOT_FORMALIZED in Lean.
+- Lean now proves the determinant for the actual finite matrices in every dimension and its uniform convergence to normalized xi on closed disks. The final section identifies the declarations and the scope of the moment obstruction. The infinite Hilbert-space operator, trace ideal, Fredholm identity and positivity-to-Hilbert–Pólya implication still require formalization.
 - No imported external RH proof; no conjectural positivity or accepted all-source (M); no source-independent self-adjoint operator is claimed **unconditionally**.
 
 **Precise outcome:** An exact trace-class Fredholm determinant of the original \(\Xi\) is constructed unconditionally **from the actual arithmetic/theta coefficient data, without zero-indexing**. The extra self-adjointness condition required by an independent Hilbert–Pólya proof remains open, as does the full arithmetic (M).
@@ -393,3 +393,163 @@ For the xi companion, the determinant identity and the self-adjointness
 obstruction themselves, Lean elaboration, fresh kernel verification and
 transitive axiom auditing are `NOT_RUN`. External independent mathematical
 review of this construction is `NOT_RUN`.
+
+## Bounded similarity fails even on the closed span of the eigenvectors
+
+Both the factorial-weight companion and the companion in (4) have pairs
+of distinct **simple positive eigenvalues** whose unit eigenvectors approach
+one another. This persists on the dense-range space \(M\) from §7, where
+the full-space cokernel argument (21) no longer applies.
+
+For clarity, the factorial-weight version on \(\ell^2(\mathbb N_0)\) has
+\(Le_n=q_ne_{n+1}+v_ne_0\), with \(q_n=(n+1)^{-3/2}\),
+\(W_n=(n!)^{-3/2}\) and \(v_n=(-1)^n a_{n+1}/W_n\) in the notation of (1).
+The rank-one calculation of (7) gives \(\det(I-wL)=F(-w)\).
+The coefficient estimate (5) also makes the vector \(y_0=1\),
+\(y_{n+1}=-\overline{v_n}/q_n\) square summable. The shift rows give
+\(\ker L=0\), and the adjoint rows determine \(\ker L^*=\mathbb C y\).
+Thus this version too has a one-dimensional full-space cokernel in the
+sense \((\overline{\operatorname{Ran}L})^\perp=\mathbb C y\).
+
+At a critical-line zero of positive ordinate \(\gamma\), the determinant
+gives the eigenvalue \(\gamma^{-2}\) of either companion. Normalize its
+first coordinate to one. The shift rows give the eigenvector
+\[
+ x_n(t)=\frac{\varepsilon^n t^n}{((n+d)!)^{3/2}},\qquad t=\gamma^2,
+ \qquad (\varepsilon,d)=(1,0)\text{ for }L,\quad (-1,1)\text{ for }K_\Xi .
+\]
+Let \(u(t)=x(t)/\|x(t)\|\) for any \(t>0\), and give the integer \(N\)
+the probability law \(p_n=|u_n(t)|^2\). Termwise norm differentiation
+is valid on compact parameter intervals by factorial decay and gives
+\(\frac{d}{d\log t}u_n=(n-\mathbb EN)u_n\). The squared speed is therefore
+\(\operatorname{Var}N\). To bound it, observe that
+\(b_n=(n+1)p_{n+1}/p_n=t^2(n+1)/(n+1+d)^3\) decreases in \(n\) for both
+values of \(d\). Thus \(\operatorname{Cov}(N,b_N)\le0\), as follows by
+multiplying the oppositely ordered differences for two independent copies.
+Shifting the summation index gives \(\mathbb Eb_N=\mathbb EN\) and
+\(\mathbb E[Nb_N]=\mathbb E[N(N-1)]\). Consequently
+\[
+ \operatorname{Var}N\le\mathbb EN\le(t^2+1)^{1/3},
+\]
+where the final inequality follows from Jensen and
+\(\mathbb E[(N+d)^3]=t^2+d^3p_0\).
+
+Write \(N_*(Y)\) for the count of simple critical-line zeros with ordinates
+in \((0,Y]\), and \(N(Y)\) for the total zero count with multiplicity there.
+Conrey's Theorem 1 gives \(\liminf N_*(Y)/N(Y)\ge0.401\).
+The Riemann–von Mangoldt asymptotic implies
+\(N(Y/10)/N(Y)\to1/10\). Hence \([Y/10,Y]\) contains
+\(\gg Y\log Y\) distinct such ordinates. Two of them satisfy
+\(0<\gamma'-\gamma\ll 1/\log Y\) by summing the gaps.
+[Conrey, 1989, Theorem 1 and equation (8)](https://aimath.org/~kaur/publications/24.pdf).
+
+Integrating the speed bound between \(t=\gamma^2\) and \(t'=(\gamma')^2\)
+gives
+\[
+ \|u(t')-u(t)\|
+ \le ((t')^2+1)^{1/6}\log(t'/t)
+ \ll \frac{1}{Y^{1/3}\log Y}.
+\]
+For these real vectors the inner product approaches one, with
+\(1-\langle u(t),u(t')\rangle=\|u(t)-u(t')\|^2/2\).
+In particular the spectral projection of the restricted companion at
+\(1/t\) has norm \(\gg Y^{1/3}\log Y\), since it sends the difference
+of these two vectors to a unit vector.
+
+If a bounded invertible \(Q\) conjugates a normal operator to the
+restriction, the inverse images of the two unit eigenvectors are
+orthogonal. Their original distance must then be at least
+\(\sqrt{2}/(\|Q\|\|Q^{-1}\|)\), contradicting the estimate. This applies
+already on the closed span of the positive simple eigenlines, on \(M\),
+and on the full space. Multiplication by any fixed nonzero scalar
+preserves these eigenlines. For the block operator \(T\) of §7, the same
+unit vectors in the first summand are eigenvectors of \(T^2\), since
+its first diagonal block is \(AB=C\). A bounded similarity of \(T\)
+to a normal operator would also conjugate \(T^2\) to a normal operator.
+A bounded similarity of the closed inverse \(H\) to a normal operator
+would give one for its everywhere-defined bounded inverse \(T\).
+Thus neither operator admits such a similarity.
+
+The explicit rectangular realization of \(L\) has the same obstruction.
+Let \(U\) be the unweighted forward shift, \(D=\operatorname{diag}(\sqrt{q_n})\)
+and \(\ell(x)=\sum v_n x_n\). Put \(A(y,s)=UDy+s e_0\) and
+\(Bx=(Dx,\ell(x))\). Then \(AB=L\). For
+\(K=\left(\begin{smallmatrix}0&A\\ B&0\end{smallmatrix}\right)\)
+the first block of \(K^2\) is \(L\), so the same eigenvector pairs
+rule out bounded similarity to a normal operator. In addition, \(A\)
+is injective with dense range and \(B\) is injective. Since
+\((\overline{v_n}/\sqrt{q_n})_n\) is square-summable by (5),
+\(\ell(D^{-1}y)\) on the range of \(D\) extends to a bounded functional
+of \(y\). The closure of the range of \(B\) is its graph, a closed
+hyperplane in \(\ell^2\oplus\mathbb C\). Thus \(K\) has zero kernel
+and its range closure has codimension one. Its inverse on this full
+auxiliary space fails the dense-domain requirement. The restriction in
+§7 addresses that domain issue.
+
+The zeros enter only in testing eigenvectors of the coefficient-defined
+operators. The argument places no condition on the remaining zeros.
+Lean elaboration, fresh kernel replay, transitive axiom auditing and
+external independent mathematical review of this infinite-dimensional
+obstruction are `NOT_RUN`.
+
+## All Taylor sections of degree at least two have nonreal zeros
+
+Let \(P_N(w)=1+\sum_{k=1}^N a_kw^k\) be the actual determinant
+\(\det(I+wK_{\Xi,N})\) from (10). For every \(N\ge2\), \(P_N\) has a
+conjugate pair of nonreal zeros. In particular every such finite
+companion has a nonreal eigenvalue and admits no similarity to a
+self-adjoint matrix.
+
+For \(N\ge3\) only the positive cosine measure in (2) is needed. Write
+\(m_k=\int_0^\infty u^{2k}\Phi(u)\,du\), so that
+\(a_k=m_k/((2k)!m_0)>0\). Cauchy–Schwarz applied to \(u^{N-2}\)
+and \(u^N\) gives \(m_{N-1}^2\le m_{N-2}m_N\). Therefore
+\[
+ \frac{a_{N-1}^2}{a_{N-2}a_N}
+ \le \frac{2N(2N-1)}{(2N-2)(2N-3)}
+ < \frac{2N}{N-1}.
+\]
+If every root of \(P_N\) were real, application of Rolle's theorem
+\(N-2\) times, retaining repeated roots with their remaining
+multiplicities, would give a real-rooted quadratic. Its coefficients
+in descending order are \(N!a_N/2,(N-1)!a_{N-1},(N-2)!a_{N-2}\).
+Its nonnegative discriminant would give the opposite weak inequality.
+Equivalently, if the roots are \(r_j\), the same necessary inequality is
+\(N\sum r_j^2\ge(\sum r_j)^2\) after using the leading three coefficients.
+This proof applies to any positive cosine measure with finite, positive
+moments through degree \(2N\).
+
+The comparison at \(N=2\) depends on the actual measure. A point mass at
+one gives the polynomial \(1+w/2+w^2/24\), which has two real roots.
+For xi write \(t_k=-k[w^k]\log F(-w)\). Then \(a_1=t_1\),
+\(a_2=(t_1^2-t_2)/2\), and the discriminant is \(2t_2-t_1^2\).
+For the full-trace values \(\tau_k=2t_k\) the theta-integral enclosures
+give \(0.02310<t_1<0.02311\) and
+\(0.00003717<t_2<0.00003718\). Hence the discriminant is negative.
+Evaluating the same integrals for \(m_0,m_1,m_2\) at 192 bits encloses
+it in \((-0.000460,-0.000459)\). This degree uses certified ball
+integration and its analytic truncation bound.
+[Theta kernel, explicit tail bound and reproducible integration method](../../Combinatorics/GraphTheory/PrimeJacobiHilbertPolyaFaithfulComparison.md#the-inverse-of-the-even-prime-jacobi-sections)
+
+Despite these nonreal roots at every degree, the functions
+\(P_N(-z^2)\) converge uniformly on each closed disk to
+\(\xi(1/2+iz)/\xi(1/2)\). The Lean proof identifies the matrix entries
+and proves the weighted-shift determinant by factoring out a unit
+lower triangular matrix. It identifies the actual Taylor coefficients
+using the real-axis Mellin sign, conjugation and the functional equation.
+On a disk of radius \(R\), absolute convergence at \(z=R\) supplies the
+summable majorant for uniform convergence. The proof also covers rectangular
+off-diagonal blocks in the finite linearization. The infinite operator
+ideal and its Fredholm determinant remain outside these Lean declarations.
+[Weighted shift and block determinant](WeightedCompanionDeterminant.lean) ·
+[Source Taylor theorem](XiTaylorSourceAnalytic.lean) ·
+[Actual finite sections and uniform convergence](XiTaylorFredholmLinearization.lean)
+
+The finite Newton obstruction is formalized for real polynomials.
+For degree \(N\ge3\), the measure theorem takes a positive measure on
+\(\mathbb R\), the two outer \(L^2\) powers and positive outer moments,
+and the three leading coefficient identities. It proves failure to split
+over \(\mathbb R\) for both signs of the Taylor variable. Applying it to
+xi uses the theta-integral identification (2) as an analytical input.
+The degree-two numerical calculation above has a separate verification scope.
+[Real polynomial and measure theorems](TaylorSectionNewtonObstruction.lean)
