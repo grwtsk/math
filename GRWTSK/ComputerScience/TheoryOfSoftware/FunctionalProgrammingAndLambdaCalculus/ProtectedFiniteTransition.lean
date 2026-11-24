@@ -721,7 +721,7 @@ theorem supervised_output {cap : ResourceVec} (D : Decisions P cap)
       completeWitness P O (evaluate P O D s.val q.val s.property q.property
         (publicOutput view init step report s.val q.val n)) := by
   unfold FixedStrategy.output supervisedStrategy publicOutput
-  rw [supervised_iteration]
+  rw [supervised_iteration] <;> rfl
 
 /-- Separate fixed deductive foundation, exact admission and full cost.
 Scope restrictions change the domain, not the underlying execution witness. -/
@@ -766,11 +766,16 @@ theorem supervised_attainable {cap : ResourceVec} (D : Decisions P cap)
         (publicOutput view init step report s.val q.val n))) ≤ r) :
     Attainable (fixedDiscoveryModel (supervisedStrategy P O D view init step report) Q)
       s .discover r q := by
+  let b := evaluate P O D s.val q.val s.property q.property
+    (publicOutput view init step report s.val q.val n)
   apply (fixed_attainable_iff _ _ _ _ _).mpr
-  refine ⟨n, batchWitness P O _, ?_, ?_, admitted, budget⟩
+  refine ⟨n, batchWitness P O b, ?_, ?_, admitted, budget⟩
   · rw [supervised_output]
-    simp [completeWitness, complete]
-  · exact batch_witness_valid P O bridge _ hs pending known
+    change completeWitness P O b = some (batchWitness P O b)
+    have hnil : b.remaining = [] := complete
+    unfold completeWitness
+    rw [hnil]
+  · exact batch_witness_valid P O bridge b hs pending known
 
 end Generator
 end GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition
