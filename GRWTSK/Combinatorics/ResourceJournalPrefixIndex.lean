@@ -64,15 +64,20 @@ def stateFromRev (base : Snapshot Core Event) :
 theorem stateFromRev_exact (base : Snapshot Core Event)
     (ds : List (Delta Core Event Meta)) :
     stateFromRev base ds.reverse = materialize base ds := by
-  induction ds using List.reverseRecOn with
-  | nil => rfl
-  | append_singleton ds d ih =>
-    rw [materialize_append]
-    simp only [List.reverse_append, List.reverse_singleton, List.singleton_append,
-      stateFromRev]
-    change (d.afterCore, base.2 ++ ((d :: ds.reverse).reverse.map Delta.event)) =
-      applyDelta (materialize base ds) d
-    simp [applyDelta, materialize_trace, List.reverse_cons, List.map_append, List.append_assoc]
+  cases h : ds.reverse with
+  | nil =>
+    have he : ds = [] := by
+      have hh := congrArg List.reverse h
+      simpa using hh
+    subst ds
+    rfl
+  | cons d rest =>
+    have he : ds = rest.reverse ++ [d] := by
+      have hh := congrArg List.reverse h
+      simpa using hh
+    rw [he, materialize_append]
+    simp [stateFromRev, applyDelta, materialize_trace, List.reverse_cons,
+      List.map_append, List.append_assoc]
 
 def indexedState (base : Snapshot Core Event) (a : Array (Delta Core Event Meta))
     (k : Nat) : Option (Snapshot Core Event) :=
@@ -152,7 +157,11 @@ theorem decode_prefix_at (base : Snapshot Core Event)
     simp [List.length_take, Nat.min_eq_left hl, hi]
   have he := decodeReceipts_append base (ds.take limit) (ds.drop limit)
   rw [List.take_append_drop] at he
-  rw [he, List.getElem?_append_left hs]
+  calc
+    _ = (decodeReceipts base (ds.take limit) ++
+          decodeReceipts (materialize base (ds.take limit)) (ds.drop limit))[i]? :=
+      congrArg (fun xs : List (Receipt Core Event Meta) => xs[i]?) he
+    _ = _ := List.getElem?_append_left hs
 
 theorem indexedRead_version (base : Snapshot Core Event)
     (a : Array (Delta Core Event Meta)) (limit i : Nat)
@@ -295,5 +304,74 @@ theorem authenticated_read_valid (A : Authority Context Root Core Event Meta)
 
 /-! The full protected observer is instantiated below through the exact
 adapter predicates, not substituted with an indexed hash check. -/
+
+
+/-- Instrument the indexed reads, not list copying or authentication.
+Those additional operations have their own cost categories. -/
+def countedFetchRev (a : Array (Delta Core Event Meta)) :
+    Nat → Option (List (Delta Core Event Meta)) × Nat
+  | 0 => (some [],0)
+  | k+1 =>
+    let prev := countedFetchRev a k
+    match prev.1 with
+    | none => (none,prev.2)
+    | some ds => ((a[k]?).map (fun d => d :: ds),prev.2+1)
+
+theorem countedFetchRev_exact (a : Array (Delta Core Event Meta)) (k : Nat)
+    (h : k ≤ a.size) :
+    countedFetchRev a k = (some ((a.toList.take k).reverse), k) := by
+  induction k with
+  | zero => rfl
+  | succ k ih =>
+    have hk : k < a.size := by omega
+    have hl : k < a.toList.length := by simpa using hk
+    have ha : a[k]? = some a[k] := by simp [hk]
+    rw [countedFetchRev, ih (by omega), ha, List.take_succ_eq_append_getElem hl]
+    simp [Array.getElem_toList]
+
+/-- Fresh issuance is required for the extended root. This theorem cannot
+manufacture an issued token from an untrusted append. -/
+theorem issued_append (A : Authority Context Root Core Event Meta)
+    (old new : Version Context Root)
+    (base : Snapshot Core Event) (a : Array (Delta Core Event Meta))
+    (d : Delta Core Event Meta)
+    (hold : BoundVersion A old base a)
+    (oldHead : old.limit = a.size)
+    (newHead : new.limit = a.size+1)
+    (sameContext : old.context = new.context)
+    (freshIssue : A.issued new base (a.toList ++ [d])) :
+    BoundVersion A old base (a.push d) ∧ BoundVersion A new base (a.push d) ∧
+      old.context = new.context ∧ old.limit+1 = new.limit := by
+  refine ⟨boundVersion_append A old base a d hold, ?_, sameContext, by omega⟩
+  have hsize : new.limit = (a.push d).size := by simpa using newHead
+  refine ⟨hsize.le, ?_⟩
+  rw [hsize]
+  have hlen : (a.push d).toList.length = (a.push d).size := by simp
+  rw [← hlen, List.take_length, Array.toList_push]
+  exact freshIssue
+
+/-- An authenticated extension keeps old legal steps and authenticates the
+new step at the exact attained state, not just its before-root. -/
+theorem journalRun_append
+    {auth : Snapshot Core Event → Meta → Prop}
+    {legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop}
+    {base mid final : Snapshot Core Event}
+    {ds es : List (Delta Core Event Meta)}
+    (h : JournalRun auth legal base ds mid)
+    (tail : JournalRun auth legal mid es final) :
+    JournalRun auth legal base (ds ++ es) final := by
+  induction h with
+  | nil => exact tail
+  | cons ha hl _ ih => exact JournalRun.cons ha hl (ih tail)
+
+theorem authenticated_append_run
+    {auth : Snapshot Core Event → Meta → Prop}
+    {legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop}
+    {base mid : Snapshot Core Event} {ds : List (Delta Core Event Meta)}
+    (h : JournalRun auth legal base ds mid) (d : Delta Core Event Meta)
+    (ha : auth mid d.metadata)
+    (hl : legal mid (applyDelta mid d) d.event d.metadata) :
+    JournalRun auth legal base (ds ++ [d]) (applyDelta mid d) :=
+  journalRun_append h (JournalRun.cons ha hl (JournalRun.nil _))
 
 end GRWTSK.ResourceAttainability.JournalIndex
