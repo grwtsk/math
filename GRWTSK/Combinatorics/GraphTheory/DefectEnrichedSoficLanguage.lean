@@ -172,7 +172,7 @@ theorem CertifiedTrace.append
   | nil vertex => simpa using second
   | @cons source pivot middle label word defect allowance edge tail ih =>
       simpa only [List.cons_append, add_assoc] using
-        (CertifiedTrace.cons edge ih)
+        (CertifiedTrace.cons edge (ih second))
 
 /-- Uniform certified edge allowances give a transparent word-length budget. -/
 theorem CertifiedTrace.allowance_le_length

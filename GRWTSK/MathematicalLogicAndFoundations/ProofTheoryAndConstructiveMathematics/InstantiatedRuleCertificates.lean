@@ -228,7 +228,9 @@ theorem missing_premise_rejected :
       (fun atom : Atom => atom = conclusionAC) conclusionAC = false := by
   exact decideInstantiatedGoal_false_of_not inventory
     (applications 1 2 0) [factAB 1 2 0 (by decide)]
-    (fun atom : Atom => atom = conclusionAC) conclusionAC rfl (by decide)
+    (fun atom : Atom => atom = conclusionAC) conclusionAC rfl (by
+      change ¬ ((1 : Nat) ≤ 0)
+      decide)
 
 end ScopedOrderExample
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.Finite
