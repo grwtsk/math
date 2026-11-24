@@ -200,8 +200,14 @@ theorem delta_known_mono (c : Core J Meaning G Reg Env)
 
 theorem delta_deductive_mono (P : Policy J Meaning G Reg Env Obs)
     (c : Core J Meaning G Reg Env) (d : Delta J Meaning G Reg Env)
-    {p : J} (h : Deductive P c p) : Deductive P (applyDelta c d) p :=
-  derivable_mono (fun _ hr => hr) (fun hp => delta_known_mono c d hp) h
+    {p : J} (h : Deductive P c p) : Deductive P (applyDelta c d) p := by
+  apply derivable_mono (rules := fun r => r ∈ eraseApplications P.rules)
+    (rules' := fun r => r ∈ eraseApplications P.rules)
+    (facts := Known c) (facts' := Known (applyDelta c d)) _ _ h
+  · intro r hr
+    exact hr
+  · intro atom known
+    exact delta_known_mono c d known
 
 theorem delta_target_exact (P : Policy J Meaning G Reg Env Obs)
     {c : Core J Meaning G Reg Env} {q : J} {d : Delta J Meaning G Reg Env}
@@ -366,7 +372,7 @@ theorem step_charge_exact (P : Policy J Meaning G Reg Env Obs) (cap : ResourceVe
     (step : Step P cap q s r) :
     cost workCharge r.state.trace = cost workCharge s.trace + cost workCharge r.events ∧
     cost timeCharge r.state.trace = cost timeCharge s.trace + cost timeCharge r.events := by
-  rw [step_trace P cap step, cost_append, cost_append]
+  constructor <;> rw [step_trace P cap step, cost_append]
 
 /-- No refund on either outcome, including actual work before a rejection. -/
 theorem step_no_refund (P : Policy J Meaning G Reg Env Obs) (cap : ResourceVec)
