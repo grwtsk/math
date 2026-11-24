@@ -28,8 +28,6 @@ namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CoherentPrimePo
 open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeHypercube
 open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ParametricPrimeThreeHop
 
-namespace Seed16 := GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16
-
 variable {m : ℕ}
 
 theorem bit_add_self (b : ZMod 2) : b + b = 0 := by
@@ -96,11 +94,11 @@ def seed3 : Schedule 3 where
 
 /-- The separate 4-bit seed is literally the earlier verified schedule. -/
 def seed4 : Schedule 4 where
-  first := Seed16.firstPort
-  first_bijective := Seed16.firstPort_bijective
-  offset := Seed16.offset
+  first := GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.firstPort
+  first_bijective := GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.firstPort_bijective
+  offset := GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.offset
   offset_ne := by decide
-  avoid s := ⟨(Seed16.ports_distinct s).2.2.2.1, (Seed16.ports_distinct s).2.1⟩
+  avoid s := ⟨(GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.ports_distinct s).2.2.2.1, (GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.ports_distinct s).2.1⟩
 
 /-- Count fibers at actual image points; all other fibers are empty. -/
 abbrev FiberAt (S : Schedule m) (s : Port m) :=
@@ -134,7 +132,7 @@ theorem seed3_fiber_two (s : Port 3) : Nat.card (FiberAt seed3 s) = 2 := by
 theorem seed4_fiber_two (s : Port 4) : Nat.card (FiberAt seed4 s) = 2 := by
   calc
     _ = Nat.card (ZMod 2) :=
-      Nat.card_congr (Seed16.firstFiberEquiv (Seed16.firstSyndrome s) (Seed16.firstSyndrome_high s))
+      Nat.card_congr (GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.firstFiberEquiv (GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.firstSyndrome s) (GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.firstSyndrome_high s))
     _ = 2 := by norm_num [Nat.card_eq_fintype_card]
 
 /-- The added input bit is retained, with an optional shear into the old
@@ -146,6 +144,8 @@ theorem extendFirst_bijective (S : Schedule m) (v : Port m) :
     Function.Bijective (extendFirst S v) := by
   constructor
   · intro x y h
+    change Fin.snoc (S.first (Fin.init x) + x (Fin.last m) • v) (x (Fin.last m)) =
+      Fin.snoc (S.first (Fin.init y) + y (Fin.last m) • v) (y (Fin.last m)) at h
     have hh := Fin.snoc_inj.mp h
     have hxy : Fin.init x = Fin.init y := by
       apply S.first_bijective.1
@@ -153,7 +153,7 @@ theorem extendFirst_bijective (S : Schedule m) (v : Port m) :
       simpa only [hh.2] using hh.1
     calc
       x = Fin.snoc (Fin.init x) (x (Fin.last m)) := (Fin.snoc_init_self).symm
-      _ = Fin.snoc (Fin.init y) (y (Fin.last m)) := congrArg₂ Fin.snoc hxy hh.2
+      _ = Fin.snoc (Fin.init y) (y (Fin.last m)) := congrArg₂ (fun (z : Port m) (b : ZMod 2) => Fin.snoc z b) hxy hh.2
       _ = y := Fin.snoc_init_self
   · intro y
     obtain ⟨x, hx⟩ := S.first_bijective.2 (Fin.init y - (y (Fin.last m)) • v)
