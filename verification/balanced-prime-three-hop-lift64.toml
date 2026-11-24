@@ -209,7 +209,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.BalancedPrimeThreeHopLift16To64"
 path = "GRWTSK/Combinatorics/GraphTheory/BalancedPrimeThreeHopLift16To64.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHopLift16To64"
-git_blob = "3d6b2f4fc92b4ce2c09a9ee8bad6a67002b7815f"
+git_blob = "e47450b634d2255b30d8468347527223e53dbd81"
 theorems = [
   "firstPort64_at_lift",
   "secondPort64_at_lift",
