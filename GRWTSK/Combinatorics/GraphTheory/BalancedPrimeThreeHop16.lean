@@ -271,8 +271,13 @@ theorem translated_origin_syndrome
     (hg : ∀ s, s + syndrome (d s) = g s)
     (y : Cell 4) (s : {s : Port 4 // g s = syndrome y}) :
     syndrome (y - d s.1) = s.1 := by
-  rw [syndrome_sub, ← s.2, ← hg]
-  abel
+  calc
+    syndrome (y - d s.1) = syndrome y - syndrome (d s.1) :=
+      syndrome_sub y (d s.1)
+    _ = (s.1 + syndrome (d s.1)) - syndrome (d s.1) :=
+      congrArg (fun t : Port 4 => t - syndrome (d s.1))
+        (s.2.symm.trans (hg s.1).symm)
+    _ = s.1 := by abel
 
 def translationFiberEquiv
     (d : Port 4 → Cell 4) (g : Port 4 → Port 4)
@@ -287,9 +292,12 @@ def translationFiberEquiv
   left_inv x := by
     apply Subtype.ext
     change y - d (syndrome x.1) = x.1
-    rw [← x.2]
-    unfold translate
-    abel
+    calc
+      y - d (syndrome x.1) = translate d x.1 - d (syndrome x.1) :=
+        congrArg (fun z : Cell 4 => z - d (syndrome x.1)) x.2.symm
+      _ = x.1 := by
+        unfold translate
+        abel
   right_inv s := by
     apply Subtype.ext
     exact translated_origin_syndrome d g hg y s
@@ -355,7 +363,7 @@ def secondFiberEquiv (t : Port 4) :
   left_inv s := by
     apply Subtype.ext
     change thirdPort t = s.1
-    rw [← s.2, thirdPort_involutive]
+    exact (congrArg thirdPort s.2.symm).trans (thirdPort_involutive s.1)
   right_inv u := by cases u; rfl
 
 theorem second_load_one (y : Cell 4) :
@@ -471,12 +479,22 @@ theorem physical_locator (P : PlacedAtlas) (x : Cell 4) :
     (locate P (physicalIndex P x) false).localCell = addressCode (guidepost x) := by
   change addressCode (P.position (P.position.symm (physicalReference x).beacon)).1 =
     addressCode (guidepost x)
-  simpa only [P.position.apply_symm_apply]
+  calc
+    addressCode (P.position (P.position.symm (physicalReference x).beacon)).1 =
+        addressCode (physicalReference x).beacon.1 :=
+      congrArg (fun b : Beacon 4 => addressCode b.1)
+        (P.position.apply_symm_apply (physicalReference x).beacon)
+    _ = addressCode (guidepost x) := rfl
 
 theorem logical_locator (P : PlacedAtlas) (x : Cell 4) :
     (locate P (logicalIndex P x) false).localCell = addressCode (routeEnd x) := by
   change addressCode (P.position (P.position.symm (logicalReference x).beacon)).1 =
     addressCode (routeEnd x)
-  simpa only [P.position.apply_symm_apply]
+  calc
+    addressCode (P.position (P.position.symm (logicalReference x).beacon)).1 =
+        addressCode (logicalReference x).beacon.1 :=
+      congrArg (fun b : Beacon 4 => addressCode b.1)
+        (P.position.apply_symm_apply (logicalReference x).beacon)
+    _ = addressCode (routeEnd x) := rfl
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16
