@@ -151,8 +151,7 @@ theorem Prepared.next_state (p : Plan (Context := Context) (Root := Root)
     p.next.state = applyDelta p.old.state p.delta := by
   change materialize p.old.base (p.old.deltas.push p.delta).toList =
     applyDelta (materialize p.old.base p.old.deltas.toList) p.delta
-  rw [Array.toList_push,materialize_append]
-  rfl
+  rw [Array.toList_push,materialize_append] <;> rfl
 
 theorem prepared_cache_matches
     {p : Plan (Context := Context) (Root := Root)
@@ -317,8 +316,7 @@ theorem cached_observation_exact {Obs : Type*}
     (hc : CacheMatches h hot) (d : Delta Core Event Meta) :
     observe hot.state (applyDelta hot.state d) d.metadata =
       observe h.state (materialize h.base (h.deltas.toList ++ [d])) d.metadata := by
-  rw [hc.2,materialize_append]
-  rfl
+  rw [hc.2,materialize_append] <;> rfl
 
 theorem prepared_historical_read
     (A : Authority Context Root Core Event Meta)
@@ -331,4 +329,101 @@ theorem prepared_historical_read
       indexedRead p.old.base p.old.deltas p.old.version.limit i :=
   indexedRead_append p.old.base p.old.deltas p.delta _ i (Nat.le_of_eq h.1.1)
 
+
+/-- A rejected compare-and-publish keeps the entire prior state; a private
+prepared root is not a published version. No intermediate half-commit is
+observable in this model. -/
+def publishOrKeep (A : Authority Context Root Core Event Meta)
+    (auth : Snapshot Core Event → Meta → Prop)
+    (legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop)
+    [DecidableEq (Version Context Root)]
+    (cur : Service (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta))
+    (p : Plan (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta))
+    (h : Ready A auth legal p) :
+    Service (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta) :=
+  (publish A auth legal cur p h).getD cur
+
+theorem stale_keeps_state (A : Authority Context Root Core Event Meta)
+    (auth : Snapshot Core Event → Meta → Prop)
+    (legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop)
+    [DecidableEq (Version Context Root)]
+    (cur : Service (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta))
+    (p : Plan (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta))
+    (h : Ready A auth legal p) (stale : cur.durable.version ≠ p.old.version) :
+    publishOrKeep A auth legal cur p h = cur := by
+  simp [publishOrKeep,publish,stale]
+
+/-- Atomicity cut: a crash before publication has the old durable head.
+A crash after the CAS has either the entire new head or the old head on
+rejection. Physical atomicity and persistence refine this specification. -/
+theorem crash_publication_cut (A : Authority Context Root Core Event Meta)
+    (auth : Snapshot Core Event → Meta → Prop)
+    (legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop)
+    [DecidableEq (Version Context Root)]
+    (cur : Service (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta))
+    (p : Plan (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta))
+    (h : Ready A auth legal p) (afterCommit : Bool) :
+    let cut := if afterCommit then crash (publishOrKeep A auth legal cur p h) else crash cur
+    cut.hot = none ∧ (cut.durable = cur.durable ∨ cut.durable = p.next) := by
+  cases afterCommit
+  · exact ⟨rfl,Or.inl rfl⟩
+  · by_cases he : cur.durable.version = p.old.version
+    · simp [publishOrKeep,publish,he,crash]
+    · simp [publishOrKeep,publish,he,crash]
+
+/-- At an exact coherent cache the original protected step predicates are
+equivalent to the cached-state predicates. This is a value-level equality
+even when the observer must read every trace event. -/
+theorem cached_step_exact
+    (auth : Snapshot Core Event → Meta → Prop)
+    (legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop)
+    {h : Head (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta)}
+    {hot : Cache (Context := Context) (Root := Root) (Core := Core) (Event := Event)}
+    (hc : CacheMatches h hot) (d : Delta Core Event Meta) :
+    (auth hot.state d.metadata ∧
+      legal hot.state (applyDelta hot.state d) d.event d.metadata) ↔
+    (auth h.state d.metadata ∧
+      legal h.state (applyDelta h.state d) d.event d.metadata) := by
+  rw [hc.2]
+
 end GRWTSK.ResourceAttainability.JournalCache
+
+namespace GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition.JournalAdapter
+
+open GRWTSK.Processing
+open GRWTSK.Processing.StateTrace.Resource
+open GRWTSK.ResourceAttainability
+open GRWTSK.ResourceAttainability.JournalCache
+open GRWTSK.ResourceAttainability.JournalSimulation
+open GRWTSK.Processing.TransactionalDiscovery
+open GRWTSK.Processing.TransactionalDiscovery.Contextual
+open GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition
+
+universe u v w y c r
+variable {C : TrustedChecker.{u}} {G : Type v} {Reg : Type w} {Obs : Type y}
+variable {Context : Type c} {Root : Type r}
+variable (P : Policy Judgment.{u} meaning G Reg (ProtectedEnv C) Obs)
+
+/-- Reuse the actual protected observer and indexed Receipt predicate.
+No change of packet, charge, snapshot, target, or contextual judgment. -/
+theorem protected_cached_step_exact
+    (O : Observer (C := C) (G := G) (Reg := Reg))
+    (q : Judgment.{u}) (cap : ResourceVec)
+    {h : Durable Context Root (CState C G Reg) (Event Judgment.{u}) Meta.{u}}
+    {hot : Hot Context Root (CState C G Reg) (Event Judgment.{u})}
+    (hc : CacheMatches h hot) (d : JDelta C G Reg) :
+    (boundAuth O q hot.state d.metadata ∧
+      receiptLegal P cap hot.state (JournalSimulation.applyDelta hot.state d) d.event d.metadata) ↔
+    (boundAuth O q h.state d.metadata ∧
+      receiptLegal P cap h.state (JournalSimulation.applyDelta h.state d) d.event d.metadata) :=
+  cached_step_exact (boundAuth O q) (receiptLegal P cap) hc d
+
+end GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition.JournalAdapter
