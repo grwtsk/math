@@ -110,7 +110,7 @@ actual consequence term, and an unsupported cycle cannot supply a premise.
 This produces a proof-bearing candidate fact, not protected admission. -/
 def reconstruct (P : Policy J Meaning G Reg Env Obs) (c : Core J Meaning G Reg Env)
     (q : J) (expected : Rule J) (app : InstantiatedApplication J Meaning)
-    (_registered : app ∈ P.rules) (matches : app.rule = expected)
+    (_registered : app ∈ P.rules) («matches» : app.rule = expected)
     (target : expected.conclusion = q)
     (premises : ∀ p, p ∈ expected.premises → Deductive P c p) :
     InstantiatedFact J Meaning where
@@ -121,8 +121,8 @@ def reconstruct (P : Policy J Meaning G Reg Env Obs) (c : Core J Meaning G Reg E
       intro p hp
       apply deductive_sound P c
       apply premises p
-      simpa only [matches] using hp)
-    rw [matches, target] at h
+      simpa only [«matches»] using hp)
+    rw [«matches», target] at h
     exact h
 
 /-- Bind the same exact target to the certified lower sofic edge, never to

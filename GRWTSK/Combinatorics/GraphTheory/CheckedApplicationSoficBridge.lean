@@ -72,7 +72,7 @@ inductive AppliedWord
       {word : List Label}
       (edge : A.quantitative.sandwich.lower source label middle)
       (application : InstantiatedApplication Atom Meaning)
-      (matches : application.rule = A.expectedRule source label middle)
+      («matches» : application.rule = A.expectedRule source label middle)
       (premises : ∀ p, p ∈ application.rule.premises → Meaning p)
       (tail : AppliedWord A middle word target) :
       AppliedWord A source (label :: word) target
@@ -88,7 +88,7 @@ theorem AppliedWord.toWordPath
     WordPath A.quantitative.sandwich.lower source word target := by
   induction trace with
   | nil vertex => exact WordPath.nil vertex
-  | cons edge application matches premises tail ih => exact WordPath.cons edge ih
+  | cons edge application «matches» premises tail ih => exact WordPath.cons edge ih
 
 /-- Conversely, a *certified* sofic word can carry all its checked theorem
 applications. This says nothing about candidate/admissible-only words. -/
@@ -102,8 +102,8 @@ theorem AppliedWord.ofWordPath
   induction path with
   | nil vertex => exact AppliedWord.nil vertex
   | cons edge tail ih =>
-      obtain ⟨application, matches, premises⟩ := A.certifiedApplication edge
-      exact AppliedWord.cons edge application matches premises ih
+      obtain ⟨application, «matches», premises⟩ := A.certifiedApplication edge
+      exact AppliedWord.cons edge application «matches» premises ih
 
 /-- A checked application trace returns the original numeric observation
 with a specific signed defect and an explicitly bounded total allowance. -/
@@ -219,7 +219,6 @@ def quantitative : DefectSoficSystem ℕ ℕ where
   edgeAllowance := fun source _ target => |(source : ℝ) - (target : ℝ)|
   edgeReturn := by
     intro source target label h
-    dsimp
     ring
   edgeAllowance_nonneg := by
     intro source target label h
@@ -250,17 +249,21 @@ def network : CheckedApplicationSystem Atom Meaning ℕ ℕ where
     refine ⟨transitivity source label target, rfl, ?_⟩
     intro p hp
     change p ∈ [(source, label), (label, target)] at hp
-    simp only [List.mem_cons, List.mem_singleton] at hp
-    rcases hp with hp | hp
-    · rw [hp]
+    rcases List.mem_cons.mp hp with hp | hp
+    · subst p
       exact edge.1
-    · rw [hp]
+    · have same := List.mem_singleton.mp hp
+      subst p
       exact edge.2
 
 /-- A real two-step word, not a source-label coincidence. -/
 def sourceWord : WordPath network.quantitative.sandwich.lower 0 [1, 3] 4 :=
-  WordPath.cons (by exact ⟨by decide, by decide⟩)
-    (WordPath.cons (by exact ⟨by decide, by decide⟩) (WordPath.nil 4))
+  WordPath.cons (middle := 2) (by
+    change (0 : Nat) ≤ 1 ∧ 1 ≤ 2
+    decide)
+    (WordPath.cons (middle := 4) (by
+      change (2 : Nat) ≤ 3 ∧ 3 ≤ 4
+      decide) (WordPath.nil 4))
 
 /-- All theorem premises are present on each edge; the combined signed
 observation certificate comes directly from the same certified word. -/
