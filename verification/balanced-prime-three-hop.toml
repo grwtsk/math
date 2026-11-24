@@ -97,7 +97,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.HierarchicalPrimeDirectory16"
 path = "GRWTSK/Combinatorics/GraphTheory/HierarchicalPrimeDirectory16.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HierarchicalPrimeDirectory16"
-git_blob = "16ba00c33f1fc693f8c40a085f7be245a318afad"
+git_blob = "8ce89669732fe44734226b2c267b945acd1516ae"
 theorems = [
   "square_rank_reconstruction",
   "forest_rank_reconstruction",
