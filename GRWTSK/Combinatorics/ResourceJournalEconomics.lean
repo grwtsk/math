@@ -98,6 +98,92 @@ theorem distorted_of_witness_overhead
   obtain ⟨f, hf, hcost⟩ := transport j p e he
   exact ⟨f, hf, le_trans hcost ((overheadMap h).monotone her)⟩
 
+
+/-- Zero-based historical receipt i materializes m+i and m+i+1 event
+slots. An index gives a location, not a sublinear full-output cost. -/
+def indexedReceiptSlots (m i : Nat) : Nat := (m+i) + (m+i+1)
+
+theorem indexedReceiptSlots_formula (m i : Nat) :
+    indexedReceiptSlots m i = 2*m+2*i+1 := by
+  unfold indexedReceiptSlots
+  omega
+
+/-- Query costs count every occurrence, including repeated queries.
+All fields are in the same declared additive unit (work OR latency).
+Authentication is separate from index lookup and decoded output. -/
+structure ReadoutCost where
+  lookup : Nat
+  reconstruct : Nat
+  authenticate : Nat
+  emit : Nat
+
+def ReadoutCost.total (c : ReadoutCost) : Nat :=
+  c.lookup+c.reconstruct+c.authenticate+c.emit
+
+structure SerialEconomics where
+  common : Nat
+  oldCopy : Nat
+  oldPersist : Nat
+  oldReads : List ReadoutCost
+  oldSetup : Nat
+  oldFinal : Nat
+  newAppend : Nat
+  newIndex : Nat
+  newPersist : Nat
+  newReads : List ReadoutCost
+  newSetup : Nat
+  newFinal : Nat
+
+def SerialEconomics.oldOnly (c : SerialEconomics) : Nat :=
+  c.oldCopy+c.oldPersist+(c.oldReads.map ReadoutCost.total).sum+c.oldSetup+c.oldFinal
+
+def SerialEconomics.newOnly (c : SerialEconomics) : Nat :=
+  c.newAppend+c.newIndex+c.newPersist+(c.newReads.map ReadoutCost.total).sum+c.newSetup+c.newFinal
+
+theorem indexed_serial_break_even (c : SerialEconomics) :
+    c.common+c.newOnly ≤ c.common+c.oldOnly ↔ c.newOnly ≤ c.oldOnly :=
+  additive_break_even c.common c.oldOnly c.newOnly
+
+/-- Each list entry is an absolute simultaneous occupancy; the categories
+must be disjoint charged objects. Shared data are counted once. -/
+structure LivePhase where
+  journal : Nat
+  core : Nat
+  metadata : Nat
+  index : Nat
+  reconstructed : Nat
+  authentication : Nat
+  other : Nat
+
+def LivePhase.total (p : LivePhase) : Nat :=
+  p.journal+p.core+p.metadata+p.index+p.reconstructed+p.authentication+p.other
+
+def livePeak : List LivePhase → Nat
+  | [] => 0
+  | p :: ps => max p.total (livePeak ps)
+
+theorem live_peak_break_even (ps : List LivePhase) (oldPeak : Nat) :
+    livePeak ps ≤ oldPeak ↔ ∀ p ∈ ps, p.total ≤ oldPeak := by
+  induction ps with
+  | nil => simp [livePeak]
+  | cons p ps ih =>
+    simp only [livePeak,max_le_iff,ih]
+    constructor
+    · rintro ⟨h,ht⟩ q hq
+      rcases List.mem_cons.mp hq with rfl | hq
+      · exact h
+      · exact ht q hq
+    · intro h
+      exact ⟨h p (by simp), fun q hq => h q (List.mem_cons.mpr (Or.inr hq))⟩
+
+/-- Global budget comparison is exact for serial phase vectors. Unlike
+the stronger per-receipt certificate, this permits cost amortization
+across steps and setup/finalization, but still charges every phase. -/
+theorem complete_break_even (newPhases oldPhases : List ResourceVec) :
+    JournalSimulation.aggregate newPhases ≤ JournalSimulation.aggregate oldPhases ↔
+      JournalSimulation.PhasesFit newPhases (JournalSimulation.aggregate oldPhases) :=
+  JournalSimulation.aggregate_budget_iff _ _
+
 end GRWTSK.ResourceAttainability.JournalEconomics
 
 namespace GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition.JournalAdapter
@@ -109,13 +195,12 @@ open GRWTSK.Processing.TransactionalDiscovery
 open GRWTSK.Processing.TransactionalDiscovery.Contextual
 open GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition
 
-namespace JS := GRWTSK.ResourceAttainability.JournalSimulation
 
 universe u v w y
 variable {C : TrustedChecker.{u}} {G : Type v} {Reg : Type w} {Obs : Type y}
 
 abbrev Snap (C : TrustedChecker.{u}) (G : Type v) (Reg : Type w) :=
-  JS.Snapshot (CState C G Reg) (Event Judgment.{u})
+  GRWTSK.ResourceAttainability.JournalSimulation.Snapshot (CState C G Reg) (Event Judgment.{u})
 
 /-- Retain all non-snapshot fields of the actual mathematical Record.
 The one-element event list is retained here too, so metadata accounting
@@ -128,11 +213,11 @@ structure Meta where
   events : List (Event Judgment.{u})
 
 abbrev JReceipt (C : TrustedChecker.{u}) (G : Type v) (Reg : Type w) :=
-  JS.Receipt (CState C G Reg) (Event Judgment.{u}) Meta.{u}
+  GRWTSK.ResourceAttainability.JournalSimulation.Receipt (CState C G Reg) (Event Judgment.{u}) Meta.{u}
 abbrev JDelta (C : TrustedChecker.{u}) (G : Type v) (Reg : Type w) :=
-  JS.Delta (CState C G Reg) (Event Judgment.{u}) Meta.{u}
+  GRWTSK.ResourceAttainability.JournalSimulation.Delta (CState C G Reg) (Event Judgment.{u}) Meta.{u}
 abbrev JRep (C : TrustedChecker.{u}) (G : Type v) (Reg : Type w) :=
-  JS.JournalRep (CState C G Reg) (Event Judgment.{u}) Meta.{u}
+  GRWTSK.ResourceAttainability.JournalSimulation.JournalRep (CState C G Reg) (Event Judgment.{u}) Meta.{u}
 
 def pack (s : SState C G Reg) : Snap C G Reg := (s.core,s.trace)
 def unpack (s : Snap C G Reg) : SState C G Reg := ⟨s.1,s.2⟩
@@ -182,10 +267,10 @@ theorem audit_as_copied
     (h : Audit P cap s rs t)
     (origin : ∀ r ∈ rs, r.packet.target = q ∧
       O.observe r.before q r.packet.submission = some r.packet) :
-    JS.CopiedRun (boundAuth O q) (receiptLegal P cap)
+    GRWTSK.ResourceAttainability.JournalSimulation.CopiedRun (boundAuth O q) (receiptLegal P cap)
       (pack s) (rs.map encodeRecord) (pack t) := by
   induction h with
-  | nil s => exact JS.CopiedRun.nil _
+  | nil s => exact GRWTSK.ResourceAttainability.JournalSimulation.CopiedRun.nil _
   | @cons s t a rs r tail ih =>
     let e : Event Judgment.{u} := ⟨a.target,(r.result P).outcome,a.charge⟩
     let m : Meta.{u} := ⟨a,r.disposition P,(r.result P).outcome,(r.result P).events⟩
@@ -198,7 +283,7 @@ theorem audit_as_copied
       simp only [receiptLegal,unpack_pack]
       exact ⟨r,rfl,rfl,rfl,rfl,receipt_event_exact P r⟩
     have ht := ih (fun rec hr => origin rec (List.mem_cons.mpr (Or.inr hr)))
-    exact JS.CopiedRun.cons htrace ha hl ht
+    exact GRWTSK.ResourceAttainability.JournalSimulation.CopiedRun.cons htrace ha hl ht
 
 /-- Exact batch record and final-state reconstruction with the original
 protected observer and indexed receipts. The remaining submissions and
@@ -209,11 +294,11 @@ theorem batch_journal_replay
     {q : Judgment.{u}} {input : List Submission}
     (b : Batch P O cap s q input) :
     ∃ ds : List (JDelta C G Reg),
-      JS.JournalRun (boundAuth O q) (receiptLegal P cap)
+      GRWTSK.ResourceAttainability.JournalSimulation.JournalRun (boundAuth O q) (receiptLegal P cap)
         (pack s) ds (pack b.final) ∧
-      (JS.decodeReceipts (pack s) ds).map decodeRecord = b.records ∧
-      unpack (JS.materialize (pack s) ds) = b.final := by
-  obtain ⟨ds,hj,hr,hf⟩ := JS.copiedRun_to_journal
+      (GRWTSK.ResourceAttainability.JournalSimulation.decodeReceipts (pack s) ds).map decodeRecord = b.records ∧
+      unpack (GRWTSK.ResourceAttainability.JournalSimulation.materialize (pack s) ds) = b.final := by
+  obtain ⟨ds,hj,hr,hf⟩ := GRWTSK.ResourceAttainability.JournalSimulation.copiedRun_to_journal
     (audit_as_copied P O cap q b.audit b.origin)
   refine ⟨ds,hj,?_,?_⟩
   · rw [hr,List.map_map]
@@ -234,25 +319,25 @@ theorem batch_journal_cost_simulation
     (authRefines : ∀ j d, newAuth j d ↔ boundAuth O q j.state d.metadata)
     (legalRefines : ∀ j d, newLegal j d ↔
       receiptLegal P cap j.state (j.extend d).state d.event d.metadata)
-    (plan : JRep C G Reg → JDelta C G Reg → JS.PhasePlan)
+    (plan : JRep C G Reg → JDelta C G Reg → GRWTSK.ResourceAttainability.JournalSimulation.PhasePlan)
     (oldCost : JReceipt C G Reg → ResourceVec)
     (localFit : ∀ j d, boundAuth O q j.state d.metadata →
       receiptLegal P cap j.state (j.extend d).state d.event d.metadata →
-      JS.PhasesFit (plan j d).costs (oldCost (JS.makeReceipt j.state d)))
+      GRWTSK.ResourceAttainability.JournalSimulation.PhasesFit (plan j d).costs (oldCost (GRWTSK.ResourceAttainability.JournalSimulation.makeReceipt j.state d)))
     (newSetup oldSetup oldFinalize : ResourceVec)
     (newFinalize : JRep C G Reg → ResourceVec)
     (setupFit : newSetup ≤ oldSetup)
-    (finalFit : ∀ ds, JS.decodeReceipts (pack s) ds = b.records.map encodeRecord →
+    (finalFit : ∀ ds, GRWTSK.ResourceAttainability.JournalSimulation.decodeReceipts (pack s) ds = b.records.map encodeRecord →
       newFinalize ⟨pack s,ds⟩ ≤ oldFinalize) :
     ∃ ds : List (JDelta C G Reg),
-      JS.prefixValid newAuth newLegal ⟨pack s,[]⟩ ds ∧
-      (JS.decodeReceipts (pack s) ds).map decodeRecord = b.records ∧
-      unpack (JS.materialize (pack s) ds) = b.final ∧
+      GRWTSK.ResourceAttainability.JournalSimulation.prefixValid newAuth newLegal ⟨pack s,[]⟩ ds ∧
+      (GRWTSK.ResourceAttainability.JournalSimulation.decodeReceipts (pack s) ds).map decodeRecord = b.records ∧
+      unpack (GRWTSK.ResourceAttainability.JournalSimulation.materialize (pack s) ds) = b.final ∧
       Worklist.serialCost newSetup (Worklist.serialCost
-        (JS.prefixCost plan ⟨pack s,[]⟩ ds) (newFinalize ⟨pack s,ds⟩)) ≤
+        (GRWTSK.ResourceAttainability.JournalSimulation.prefixCost plan ⟨pack s,[]⟩ ds) (newFinalize ⟨pack s,ds⟩)) ≤
       Worklist.serialCost oldSetup (Worklist.serialCost
-        (JS.aggregate ((b.records.map encodeRecord).map oldCost)) oldFinalize) := by
-  obtain ⟨ds,_,hv,hr,hf,hc⟩ := JS.copiedRun_prefix_resource_simulation
+        (GRWTSK.ResourceAttainability.JournalSimulation.aggregate ((b.records.map encodeRecord).map oldCost)) oldFinalize) := by
+  obtain ⟨ds,_,hv,hr,hf,hc⟩ := GRWTSK.ResourceAttainability.JournalSimulation.copiedRun_prefix_resource_simulation
     newAuth newLegal authRefines legalRefines plan oldCost localFit
     newSetup oldSetup oldFinalize newFinalize setupFit finalFit
     (audit_as_copied P O cap q b.audit b.origin)
