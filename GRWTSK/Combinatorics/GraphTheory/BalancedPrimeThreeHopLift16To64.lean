@@ -301,8 +301,11 @@ theorem first_load64_low (y : Cell 4) (h : syndrome y 3 = 0) :
 
 theorem first_load64_at_most_two (y : Cell 4) :
     Nat.card {z : ChartCell // hopOne64 z.1 = addressLift y} ≤ 2 := by
-  rw [fiber_count_preserved sixteenToSixtyFour.address hopOne hopOne64 hopOne_commutes y]
-  exact first_load_at_most_two y
+  calc
+    Nat.card {z : ChartCell // hopOne64 z.1 = addressLift y} =
+        Nat.card {x : Cell 4 // hopOne x = y} :=
+      fiber_count_preserved sixteenToSixtyFour.address hopOne hopOne64 hopOne_commutes y
+    _ ≤ 2 := first_load_at_most_two y
 
 theorem second_load64_one (y : Cell 4) :
     Nat.card {z : ChartCell // hopTwo64 z.1 = addressLift y} = 1 :=
