@@ -4,7 +4,7 @@ Authors: grwtsk contributors.
 SOURCE_PROOF_CANDIDATE: Lean build, axiom audit, independent replay NOT_RUN.
 -/
 import GRWTSK.Combinatorics.GraphTheory.CoherentPrimePortSchedules
-import GRWTSK.Combinatorics.GraphTheory.ConcretePrimeAtlasLift16To64
+import GRWTSK.Combinatorics.GraphTheory.BalancedPrimeThreeHopLift16To64
 
 /-!
 # Successive dimension embeddings for coherent balanced routing
@@ -442,5 +442,67 @@ theorem extendDirectory_references (E : ScheduleEmbedding S T) (D : PrimeDirecto
     (extendDirectory E D rank).label (logicalBeacon T (E.geometry.address x)) =
       D.label (logicalBeacon S x) :=
   prime_identity_commutes E D (extendDirectory E D rank) (extendLabel_retains E D rank) x
+
+/-- An index exists in every finite native beacon space. It is a choice
+of enumeration, not a canonical persisted runtime address. -/
+def finiteRank (m : ℕ) : Beacon m ↪ ℕ := by
+  classical
+  exact (Fintype.equivFin (Beacon m)).toEmbedding.trans ⟨Fin.val, Fin.val_injective⟩
+
+/-- Recursive numerical prime supply: all prior labels persist. New
+labels are fresh and distinct; no fixed finite numerical cutoff is claimed. -/
+def towerDirectory {r : ℕ} (S : Schedule r) (D : PrimeDirectory r) :
+    (k : ℕ) → PrimeDirectory (r + k)
+  | 0 => D
+  | k + 1 => extendDirectory (successiveSchedule S k) (towerDirectory S D k)
+      (finiteRank (r + k + 1))
+
+theorem tower_step_retains {r : ℕ} (S : Schedule r) (D : PrimeDirectory r) (k : ℕ)
+    (b : Beacon (r + k)) :
+    (towerDirectory S D (k + 1)).label (beaconLift (successiveSchedule S k) b) =
+      (towerDirectory S D k).label b :=
+  extendLabel_retains (successiveSchedule S k) (towerDirectory S D k) _ b
+
+theorem tower_root_retains {r : ℕ} (S : Schedule r) (D : PrimeDirectory r) (k : ℕ)
+    (b : Beacon r) :
+    (towerDirectory S D k).label (beaconLift (rootEmbedding S k) b) = D.label b := by
+  induction k with
+  | zero =>
+    have hb : beaconLift (rootEmbedding S 0) b = b := Subtype.ext rfl
+    exact congrArg D.label hb
+  | succ k ih =>
+    have hb : beaconLift (rootEmbedding S (k + 1)) b =
+        beaconLift (successiveSchedule S k) (beaconLift (rootEmbedding S k) b) :=
+      Subtype.ext rfl
+    rw [hb, tower_step_retains, ih]
+
+theorem tower_root_references {r : ℕ} (S : Schedule r) (D : PrimeDirectory r) (k : ℕ)
+    (x : Cell r) :
+    (towerDirectory S D k).label (primaryBeacon ((rootEmbedding S k).geometry.address x)) =
+      D.label (primaryBeacon x) ∧
+    (towerDirectory S D k).label (logicalBeacon (family S k)
+      ((rootEmbedding S k).geometry.address x)) = D.label (logicalBeacon S x) :=
+  prime_identity_commutes (rootEmbedding S k) D (towerDirectory S D k)
+    (tower_root_retains S D k) x
+
+/-- The 4-bit seed route is definitionally the original verified 16D route. -/
+theorem seed4_route_agrees :
+    routeEnd seed4 =
+      GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16.routeEnd :=
+  rfl
+
+/-- The native 64D member of the 4-bit-root tower restricts to the earlier
+verified embedded route. Off-chart the new native schedule is different. -/
+theorem native64_agrees_on_original_chart (x : Cell 4) :
+    routeEnd (verified16Tower 2)
+      (GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConcretePrimeAtlasLift16To64.addressLift x) =
+      GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHopLift16To64.routeEnd64
+        (GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConcretePrimeAtlasLift16To64.addressLift x) := by
+  have hc := routeEnd_commutes (rootEmbedding seed4 2) x
+  change (rootEmbedding seed4 2).geometry.address (routeEnd seed4 x) =
+    routeEnd (verified16Tower 2) ((rootEmbedding seed4 2).geometry.address x) at hc
+  rw [root16_address_two, root16_address_two, seed4_route_agrees] at hc
+  exact hc.symm.trans
+    (GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHopLift16To64.routeEnd_commutes x)
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RecursivePrimeAtlasEmbeddings
