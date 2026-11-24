@@ -143,9 +143,7 @@ theorem copiedRun_to_journal {s z : Snapshot Core Event}
     · change makeReceipt s d :: decodeReceipts (applyDelta s d) ds = ⟨s, t, m⟩ :: rs
       rw [hstate, hdecode]
       have hr : makeReceipt s d = (⟨s, t, m⟩ : Receipt Core Event Meta) := by
-        unfold makeReceipt
-        rw [hstate]
-        rfl
+        simp [makeReceipt, hstate, d]
       rw [hr]
     · change materialize (applyDelta s d) ds = z
       rw [hstate, hfinal]
@@ -194,7 +192,7 @@ theorem aggregate_peak_le_iff (cs : List ResourceVec) (i : Fin 4)
       · exact hc
       · exact hcs x hx'
     · intro h
-      exact ⟨h c (List.mem_cons_self), fun x hx => h x (List.mem_cons_of_mem c hx)⟩
+      exact ⟨h c (by simp), fun x hx => h x (List.mem_cons.mpr (Or.inr hx))⟩
 
 theorem aggregate_sum (cs : List ResourceVec) (i : Fin 4)
     (hi : ¬ (i = 0 ∨ i = 2)) :
@@ -288,5 +286,122 @@ theorem copiedRun_resource_simulation
   have hc := journalRun_cost_le plan oldCharge localFit hj
   rw [hr] at hc
   exact ⟨ds, hj, hr, hf, serialCost_mono setupFit (serialCost_mono hc finalFit)⟩
+
+
+/-! Prefix-sensitive accounting: even equal logical snapshots can have
+different physical journal histories. A full prefix is passed to the
+phase planner and authentication/refinement adapter. -/
+
+structure JournalRep (Core : Type u) (Event : Type v) (Meta : Type w) where
+  base : Snapshot Core Event
+  deltas : List (Delta Core Event Meta)
+
+def JournalRep.state (j : JournalRep Core Event Meta) : Snapshot Core Event :=
+  materialize j.base j.deltas
+
+def JournalRep.extend (j : JournalRep Core Event Meta) (d : Delta Core Event Meta) :
+    JournalRep Core Event Meta := ⟨j.base, j.deltas ++ [d]⟩
+
+theorem JournalRep.state_extend (j : JournalRep Core Event Meta)
+    (d : Delta Core Event Meta) :
+    (j.extend d).state = applyDelta j.state d := by
+  change materialize j.base (j.deltas ++ [d]) = applyDelta (materialize j.base j.deltas) d
+  rw [materialize_append] <;> rfl
+
+/-- New protected predicates must agree with the original judgments on
+the exact decoded state. The equivalences are implementation obligations;
+nothing here assumes hashes are injective or trusts candidate-supplied evidence. -/
+def prefixValid
+    (newAuth newLegal : JournalRep Core Event Meta → Delta Core Event Meta → Prop) :
+    JournalRep Core Event Meta → List (Delta Core Event Meta) → Prop
+  | _, [] => True
+  | j, d :: ds =>
+    newAuth j d ∧ newLegal j d ∧ prefixValid newAuth newLegal (j.extend d) ds
+
+theorem journalRun_prefix_valid
+    (newAuth newLegal : JournalRep Core Event Meta → Delta Core Event Meta → Prop)
+    (authRefines : ∀ j d, newAuth j d ↔ auth j.state d.metadata)
+    (legalRefines : ∀ j d, newLegal j d ↔
+      legal j.state (j.extend d).state d.event d.metadata)
+    {s z : Snapshot Core Event} {ds : List (Delta Core Event Meta)}
+    (h : JournalRun auth legal s ds z)
+    (j : JournalRep Core Event Meta) (hbase : j.state = s) :
+    prefixValid newAuth newLegal j ds := by
+  induction h generalizing j with
+  | nil => trivial
+  | @cons s z d ds ha hl _ ih =>
+    have hnext : (j.extend d).state = applyDelta s d := by
+      rw [JournalRep.state_extend, hbase]
+    change newAuth j d ∧ newLegal j d ∧ prefixValid newAuth newLegal (j.extend d) ds
+    refine ⟨(authRefines j d).2 ?_, (legalRefines j d).2 ?_, ih _ hnext⟩
+    · simpa only [hbase] using ha
+    · simpa only [hbase, hnext] using hl
+
+/-- Full prefix-dependent phase costs, including live journal and any
+simultaneous readout buffers, packet copies, indexes, or temporary objects. -/
+def prefixCost
+    (plan : JournalRep Core Event Meta → Delta Core Event Meta → PhasePlan) :
+    JournalRep Core Event Meta → List (Delta Core Event Meta) → ResourceVec
+  | _, [] => 0
+  | j, d :: ds =>
+    serialCost (aggregate (plan j d).costs) (prefixCost plan (j.extend d) ds)
+
+theorem journalRun_prefix_cost_le
+    (plan : JournalRep Core Event Meta → Delta Core Event Meta → PhasePlan)
+    (oldCharge : Receipt Core Event Meta → ResourceVec)
+    (localFit : ∀ j d, auth j.state d.metadata →
+      legal j.state (j.extend d).state d.event d.metadata →
+      PhasesFit (plan j d).costs (oldCharge (makeReceipt j.state d)))
+    {s z : Snapshot Core Event} {ds : List (Delta Core Event Meta)}
+    (h : JournalRun auth legal s ds z)
+    (j : JournalRep Core Event Meta) (hbase : j.state = s) :
+    prefixCost plan j ds ≤ aggregate ((decodeReceipts s ds).map oldCharge) := by
+  induction h generalizing j with
+  | nil => exact le_rfl
+  | @cons s z d ds ha hl _ ih =>
+    have hnext : (j.extend d).state = applyDelta s d := by
+      rw [JournalRep.state_extend, hbase]
+    have hfit : PhasesFit (plan j d).costs (oldCharge (makeReceipt s d)) := by
+      have hh := localFit j d (by simpa only [hbase] using ha)
+        (by simpa only [hbase, hnext] using hl)
+      simpa only [hbase] using hh
+    change serialCost (aggregate (plan j d).costs) (prefixCost plan (j.extend d) ds) ≤
+      serialCost (oldCharge (makeReceipt s d))
+        (aggregate ((decodeReceipts (applyDelta s d) ds).map oldCharge))
+    exact serialCost_mono ((aggregate_budget_iff _ _).2 hfit) (ih _ hnext)
+
+/-- Source-level end-to-end contract for a replacement, including
+prefix-sensitive authentication, all six cost phases, ingress/migration
+and final readout. Costs of these phases and protected predicate
+refinement must be independently established for the consumer. -/
+theorem copiedRun_prefix_resource_simulation
+    (newAuth newLegal : JournalRep Core Event Meta → Delta Core Event Meta → Prop)
+    (authRefines : ∀ j d, newAuth j d ↔ auth j.state d.metadata)
+    (legalRefines : ∀ j d, newLegal j d ↔
+      legal j.state (j.extend d).state d.event d.metadata)
+    (plan : JournalRep Core Event Meta → Delta Core Event Meta → PhasePlan)
+    (oldCharge : Receipt Core Event Meta → ResourceVec)
+    (localFit : ∀ j d, auth j.state d.metadata →
+      legal j.state (j.extend d).state d.event d.metadata →
+      PhasesFit (plan j d).costs (oldCharge (makeReceipt j.state d)))
+    (newSetup oldSetup oldFinalize : ResourceVec)
+    (newFinalize : JournalRep Core Event Meta → ResourceVec)
+    (setupFit : newSetup ≤ oldSetup)
+    {s z : Snapshot Core Event} {rs : List (Receipt Core Event Meta)}
+    (finalFit : ∀ ds, decodeReceipts s ds = rs → newFinalize ⟨s, ds⟩ ≤ oldFinalize)
+    (h : CopiedRun auth legal s rs z) :
+    ∃ ds, JournalRun auth legal s ds z ∧
+      prefixValid newAuth newLegal ⟨s, []⟩ ds ∧
+      decodeReceipts s ds = rs ∧ materialize s ds = z ∧
+      serialCost newSetup
+        (serialCost (prefixCost plan ⟨s, []⟩ ds) (newFinalize ⟨s, ds⟩)) ≤
+      serialCost oldSetup (serialCost (aggregate (rs.map oldCharge)) oldFinalize) := by
+  obtain ⟨ds, hj, hr, hf⟩ := copiedRun_to_journal h
+  have hv := journalRun_prefix_valid newAuth newLegal authRefines legalRefines
+    hj ⟨s, []⟩ rfl
+  have hc := journalRun_prefix_cost_le plan oldCharge localFit hj ⟨s, []⟩ rfl
+  rw [hr] at hc
+  exact ⟨ds, hj, hv, hr, hf,
+    serialCost_mono setupFit (serialCost_mono hc (finalFit ds hr))⟩
 
 end GRWTSK.ResourceAttainability.JournalSimulation
