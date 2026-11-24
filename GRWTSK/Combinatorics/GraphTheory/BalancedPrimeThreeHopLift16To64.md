@@ -43,7 +43,7 @@ introduced. No RH/GRH or global Q64 coverage claim is made.
 
 The new module contains 47 theorem declarations, 17 definitions and two
 type abbreviations. Its source blob is
-`5f016058d75aeeffac368674c17aab2171c9b1ae`.
+`3d6b2f4fc92b4ce2c09a9ee8bad6a67002b7815f`.
 The dedicated 9-module manifest contains 177 declarations:
 111 scoped verified 16D declarations, 19 existing embedding declarations,
 and 47 new transport declarations. The original 16D manifest is untouched.
@@ -54,10 +54,13 @@ zero counterexamples. Histograms: {0:32768,2:32768}, {1:65536},
 {0:61440,16:4096}. Exact executed script blob:
 `43d7fc86fbfe035b127987928ee033949aa4a6ce`.
 
-The 64D Lean transport source is SOURCE_PROOF_CANDIDATE. The new module
-and concrete embedding dependency have not been compiled in this
-environment; no Lean/Lake executable is available. Fresh independent
-dependency replay and checker remain NOT_RUN. The earlier 16D scoped
+The user-provided local run at b52c751fe998e526cddb951b75f88abffd2cf6c6
+passed the finite chart control, preflight, and seven dependency builds.
+ConcretePrimeAtlasLift16To64 failed elaboration, blocking the transport
+module. The current sources repair the observed port-padding proofs,
+coordinate vanishing and compatibility theorem applications. Repaired
+embedding and transport compilation and combined audit remain NOT_RUN.
+Fresh independent dependency replay and checker remain NOT_RUN. The earlier 16D scoped
 PASS is not transferred to new declarations.
 
 ```sh
