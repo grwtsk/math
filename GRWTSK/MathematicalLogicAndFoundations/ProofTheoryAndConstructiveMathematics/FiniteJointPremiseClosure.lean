@@ -192,8 +192,9 @@ theorem finiteClosure_sound [DecidableEq α] (rules : List (Rule α)) (facts : L
 example or an assumption that the implementation already realizes derivability. -/
 theorem finiteClosure_complete [DecidableEq α] (rules : List (Rule α)) (facts : List α) :
     Included (Derivable (fun r => r ∈ rules) (fun a => a ∈ facts))
-      (fun a => a ∈ finiteClosure rules facts) :=
-  derivable_sound (finiteClosure_extends rules facts) (finiteClosure_closed rules facts)
+      (fun a => a ∈ finiteClosure rules facts) := by
+  intro a h
+  exact derivable_sound (finiteClosure_extends rules facts) (finiteClosure_closed rules facts) h
 
 /-- Main correspondence: the actual finite computation answers the existing
 inductive inference relation for exactly the supplied rule and fact inventories. -/

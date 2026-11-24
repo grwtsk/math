@@ -364,13 +364,14 @@ def SourceSearchInventory.unitLabeledSandwich
 def SourceSearchInventory.unitScopedPresentation
     (inventory : SourceSearchInventory Vertex) :
     ScopedPresentation Vertex PUnit where
-  sandwich := inventory.unitLabeledSandwich
+  sandwich := SourceSearchInventory.unitLabeledSandwich inventory
   states := inventory.vertices
   alphabet := {PUnit.unit}
   upper_scoped := by
     intro source target label edge
-    have scoped := inventory.admissible_scoped edge
-    exact ⟨scoped.1, by simp, scoped.2⟩
+    have endpoints : source ∈ inventory.vertices ∧ target ∈ inventory.vertices :=
+      inventory.admissible_scoped edge
+    exact ⟨endpoints.1, by simp, endpoints.2⟩
 
 /-- The candidate graph of the one-symbol presentation is the existing Farey
 sofic graph interface. -/
@@ -379,7 +380,7 @@ def SourceSearchInventory.candidateSoficGraph
     (inventory : SourceSearchInventory Vertex) :
     GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.SoficGraph
       Vertex PUnit :=
-  inventory.unitLabeledSandwich.middleGraph
+  (SourceSearchInventory.unitLabeledSandwich inventory).middleGraph
 
 /-- The admissible graph of the one-symbol presentation is the existing Farey
 sofic graph interface. -/
@@ -388,7 +389,7 @@ def SourceSearchInventory.admissibleSoficGraph
     (inventory : SourceSearchInventory Vertex) :
     GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.SoficGraph
       Vertex PUnit :=
-  inventory.unitLabeledSandwich.upperGraph
+  (SourceSearchInventory.unitLabeledSandwich inventory).upperGraph
 
 /-- Candidate transitions in the unit-labeled presentation are exactly the
 candidate relation of the source inventory. -/
@@ -397,7 +398,7 @@ theorem SourceSearchInventory.candidateSoficGraph_edge
     [Fintype Vertex]
     (inventory : SourceSearchInventory Vertex)
     (source target : Vertex) :
-    (inventory.candidateSoficGraph).edge source PUnit.unit target ↔
+    (SourceSearchInventory.candidateSoficGraph inventory).edge source PUnit.unit target ↔
       inventory.candidate source target :=
   Iff.rfl
 
@@ -408,7 +409,7 @@ theorem SourceSearchInventory.admissibleSoficGraph_edge
     [Fintype Vertex]
     (inventory : SourceSearchInventory Vertex)
     (source target : Vertex) :
-    (inventory.admissibleSoficGraph).edge source PUnit.unit target ↔
+    (SourceSearchInventory.admissibleSoficGraph inventory).edge source PUnit.unit target ↔
       inventory.admissible source target :=
   Iff.rfl
 
