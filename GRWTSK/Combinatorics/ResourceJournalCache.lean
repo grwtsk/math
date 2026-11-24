@@ -394,6 +394,63 @@ theorem cached_step_exact
       legal h.state (applyDelta h.state d) d.event d.metadata) := by
   rw [hc.2]
 
+
+/-- A hot preparation comes from the actual protected cache, not from an
+untrusted state with a matching length. Issuance evidence can be held
+privately until the atomic root publication. -/
+theorem ready_from_hot
+    (A : Authority Context Root Core Event Meta)
+    (auth : Snapshot Core Event → Meta → Prop)
+    (legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop)
+    (cur : Service (Context := Context) (Root := Root)
+      (Core := Core) (Event := Event) (Meta := Meta))
+    (hcur : Consistent A auth legal cur)
+    (hot : Cache (Context := Context) (Root := Root) (Core := Core) (Event := Event))
+    (hh : cur.hot = some hot)
+    (d : Delta Core Event Meta) (v : Version Context Root)
+    (hc : v.context = cur.durable.version.context)
+    (hn : v.limit = cur.durable.version.limit+1)
+    (hi : A.issued v cur.durable.base (cur.durable.deltas.toList ++ [d]))
+    (ha : auth hot.state d.metadata)
+    (hl : legal hot.state (applyDelta hot.state d) d.event d.metadata) :
+    Ready A auth legal ⟨cur.durable,hot,d,v⟩ :=
+  ⟨hcur.1,hcur.2 hot hh,hc,hn,hi,ha,hl⟩
+
+/-- Optional incremental observer summary. The two equivalences are
+required on every reachable coherent exact state, not merely on observed
+samples. The update obligation supplies the invariant for the next append.
+This interface does not assert that arbitrary protected observers admit
+a bounded-cost summary. -/
+structure IncrementalObserver (Summary : Type*)
+    (auth : Snapshot Core Event → Meta → Prop)
+    (legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop) where
+  represents : Summary → Snapshot Core Event → Prop
+  fastAuth : Summary → Meta → Prop
+  fastLegal : Summary → Delta Core Event Meta → Prop
+  advance : Summary → Delta Core Event Meta → Summary
+  authExact : ∀ t s m, represents t s → (fastAuth t m ↔ auth s m)
+  legalExact : ∀ t s d, represents t s →
+    (fastLegal t d ↔ legal s (applyDelta s d) d.event d.metadata)
+  advanceExact : ∀ t s d, represents t s → fastAuth t d.metadata → fastLegal t d →
+    represents (advance t d) (applyDelta s d)
+
+theorem incremental_observer_step {Summary : Type*}
+    {auth : Snapshot Core Event → Meta → Prop}
+    {legal : Snapshot Core Event → Snapshot Core Event → Event → Meta → Prop}
+    (O : IncrementalObserver Summary auth legal) (t : Summary)
+    (s : Snapshot Core Event) (d : Delta Core Event Meta)
+    (hr : O.represents t s) :
+    (O.fastAuth t d.metadata ∧ O.fastLegal t d) ↔
+    (auth s d.metadata ∧ legal s (applyDelta s d) d.event d.metadata ∧
+      O.represents (O.advance t d) (applyDelta s d)) := by
+  constructor
+  · rintro ⟨ha,hl⟩
+    exact ⟨(O.authExact t s d.metadata hr).1 ha,
+      (O.legalExact t s d hr).1 hl,O.advanceExact t s d hr ha hl⟩
+  · rintro ⟨ha,hl,_⟩
+    exact ⟨(O.authExact t s d.metadata hr).2 ha,
+      (O.legalExact t s d hr).2 hl⟩
+
 end GRWTSK.ResourceAttainability.JournalCache
 
 namespace GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition.JournalAdapter
