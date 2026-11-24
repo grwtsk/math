@@ -519,8 +519,13 @@ object, never a fabricated Lean theorem. -/
 def observeCode (sub : Submission) : ClosedObject :=
   match decode sub.proofBytes with
   | some c => objectFor c
-  | none => { objectFor .direct with key := sub.key, proofBytes := sub.proofBytes,
-      checkedBase := sub.checkedBase, kind := .definitionDecl }
+  | none =>
+    let o := objectFor .direct
+    { o with
+      key := sub.key
+      proofBytes := sub.proofBytes
+      checkedBase := sub.checkedBase
+      kind := .definitionDecl }
 
 /-- In the hostile variant the independently observed object after the first
 append is deliberately substituted. The submission is retained verbatim.
@@ -684,26 +689,33 @@ def dependencyDec (s : SState) (a : Packet.{0}) : Decidable (PriorDependencies s
     (fun d => anyList (fun e : Entry checker => e.object.key.source.declaration = d)
       (fun _ => inferInstance) s.core.environment.entries) a.observed.dependencies
 
-def appendDec (s : SState) (a : Packet.{0}) : Decidable (AppendOK s a) :=
-  letI := extendsDec s.core.environment.snapshot a.nextSnapshot
-  letI := allList (fun e : Entry checker => checker.present a.nextSnapshot e.object)
-    (fun e => presentDec a.nextSnapshot e.object) s.core.environment.entries
-  letI := presentDec a.nextSnapshot a.observed
-  letI := allList (fun e : Entry checker =>
-    e.object.key.source.declaration ≠ a.observed.key.source.declaration)
-    (fun _ => inferInstance) s.core.environment.entries
-  via (inferInstanceAs (Decidable (
-    checker.extendsSnapshot s.core.environment.snapshot a.nextSnapshot ∧
-    (∀ e : Entry checker, e ∈ s.core.environment.entries → checker.present a.nextSnapshot e.object) ∧
-    checker.present a.nextSnapshot a.observed ∧
-    (∀ e : Entry checker, e ∈ s.core.environment.entries →
-      e.object.key.source.declaration ≠ a.observed.key.source.declaration))))
-    (by
-      constructor
-      · rintro ⟨a, b, c, d⟩
-        exact ⟨a, b, c, d⟩
-      · intro h
-        exact ⟨h.«extends», h.retained, h.installed, h.fresh⟩)
+def appendDec (s : SState) (a : Packet.{0}) : Decidable (AppendOK s a) := by
+  letI : Decidable (checker.extendsSnapshot s.core.environment.snapshot a.nextSnapshot) :=
+    extendsDec s.core.environment.snapshot a.nextSnapshot
+  letI : Decidable (∀ e : Entry checker, e ∈ s.core.environment.entries →
+      checker.present a.nextSnapshot e.object) :=
+    allList (fun e : Entry checker => checker.present a.nextSnapshot e.object)
+      (fun e => presentDec a.nextSnapshot e.object) s.core.environment.entries
+  letI : Decidable (checker.present a.nextSnapshot a.observed) :=
+    presentDec a.nextSnapshot a.observed
+  letI : Decidable (∀ e : Entry checker, e ∈ s.core.environment.entries →
+      e.object.key.source.declaration ≠ a.observed.key.source.declaration) :=
+    allList (fun e : Entry checker =>
+      e.object.key.source.declaration ≠ a.observed.key.source.declaration)
+      (fun _ => inferInstance) s.core.environment.entries
+  let d : Decidable (
+      checker.extendsSnapshot s.core.environment.snapshot a.nextSnapshot ∧
+      (∀ e : Entry checker, e ∈ s.core.environment.entries → checker.present a.nextSnapshot e.object) ∧
+      checker.present a.nextSnapshot a.observed ∧
+      (∀ e : Entry checker, e ∈ s.core.environment.entries →
+        e.object.key.source.declaration ≠ a.observed.key.source.declaration)) :=
+    inferInstance
+  refine via d ?_
+  constructor
+  · rintro ⟨he, hr, hi, hf⟩
+    exact ⟨he, hr, hi, hf⟩
+  · intro h
+    exact ⟨h.«extends», h.retained, h.installed, h.fresh⟩
 
 def checkDec (s : SState) (a : Packet.{0}) (hs : finiteScope s.core)
     (hq : expected a.target) : ∀ k, Decidable (Pass s a k)
@@ -717,18 +729,21 @@ def checkDec (s : SState) (a : Packet.{0}) (hs : finiteScope s.core)
   | .dependencies => dependencyDec s a
   | .append => appendDec s a
 
-def resourceLEDec (r b : ResourceVec) : Decidable (r ≤ b) :=
-  via (inferInstanceAs (Decidable
-    (r 0 ≤ b 0 ∧ r 1 ≤ b 1 ∧ r 2 ≤ b 2 ∧ r 3 ≤ b 3))) (by
-      constructor
-      · rintro ⟨h0, h1, h2, h3⟩ i
-        fin_cases i
-        · exact h0
-        · exact h1
-        · exact h2
-        · exact h3
-      · intro h
-        exact ⟨h 0, h 1, h 2, h 3⟩)
+def resourceLEDec (r b : ResourceVec) : Decidable (r ≤ b) := by
+  let d : Decidable (r 0 ≤ b 0 ∧ r 1 ≤ b 1 ∧ r 2 ≤ b 2 ∧ r 3 ≤ b 3) :=
+    inferInstance
+  refine via d ?_
+  constructor
+  · rintro ⟨h0, h1, h2, h3⟩
+    change ∀ i : Fin 4, r i ≤ b i
+    intro i
+    fin_cases i
+    · exact h0
+    · exact h1
+    · exact h2
+    · exact h3
+  · intro h
+    exact ⟨h 0, h 1, h 2, h 3⟩
 
 def fitsDec (limit : ResourceVec) (s : SState) (c : CState) (a : Charge) :
     Decidable (Fits P limit s c a) := by
@@ -904,10 +919,9 @@ theorem generic_two_event_witness :
     completeWitness P (finiteObserver true)
       (evaluate P (finiteObserver true) D initial second initial_scope (Or.inr rfl)
         [proposed, proposed]) = some witness := by
-  obtain ⟨f, hf⟩ := generic_second
-  simp [evaluate, observe_first, generic_first, first_result, observe_second, hf,
-    completeWitness, batchWitness, ProtectedTransition.events, Receipt.record,
-    Receipt.result, firstPacket, secondPacket, witness, events, rejected]
+  -- The entire closed evaluator is constructive. Compare the actual
+  -- computed witness with the existing oracle by definitional equality.
+  rfl
 
 /-- The arbitrary-list theorem uses the exact existing Batch/Audit/Run,
 not a new model of receipts. No list-specific acceptance lookup exists. -/
