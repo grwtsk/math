@@ -22,6 +22,8 @@ never a promise about physical macOS RAM or SSD placement.
 -/
 
 set_option autoImplicit false
+set_option maxHeartbeats 4000000
+set_option maxRecDepth 10000
 noncomputable section
 
 namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConcretePrimeAtlasLift16To64
@@ -40,7 +42,8 @@ def portDrop (j : Port 6) : Port 4 :=
 
 theorem portDrop_portLift (i : Port 4) :
     portDrop (portLift i) = i := by
-  simp [portDrop, portLift]
+  revert i
+  decide
 
 theorem portLift_injective : Function.Injective portLift := by
   intro i j hij
@@ -48,23 +51,22 @@ theorem portLift_injective : Function.Injective portLift := by
   simpa only [portDrop_portLift] using h
 
 theorem portLift_zero : portLift (0 : Port 4) = 0 := by
-  funext j
-  fin_cases j <;> simp [portLift]
+  decide
 
 theorem portLift_add (i j : Port 4) :
     portLift (i + j) = portLift i + portLift j := by
-  funext k
-  fin_cases k <;> simp [portLift, Pi.add_apply]
+  revert i j
+  decide
 
 theorem portLift_neg (i : Port 4) :
     portLift (-i) = -portLift i := by
-  funext k
-  fin_cases k <;> simp [portLift, Pi.neg_apply]
+  revert i
+  decide
 
 theorem portLift_smul (a : ZMod 2) (i : Port 4) :
     portLift (a • i) = a • portLift i := by
-  funext k
-  fin_cases k <;> simp [portLift, Pi.smul_apply]
+  revert a i
+  decide
 
 def portLiftHom : Port 4 →+ Port 6 where
   toFun := portLift
@@ -99,7 +101,9 @@ theorem addressLift_port (x : Cell 4) (i : Port 4) :
   · simp [impulse, Pi.single_apply]
   · intro j hji
     have hj : portLift j ≠ portLift i := portLift_injective.ne hji
-    simp [impulse, Pi.single_eq_of_ne hj]
+    have hz : impulse (portLift j) (portLift i) = 0 := by
+      simp [impulse, Pi.single_apply, hj, Ne.symm hj]
+    rw [hz, smul_zero]
 
 theorem addressLift_injective : Function.Injective addressLift := by
   intro x y h
@@ -151,11 +155,11 @@ def sixteenToSixtyFour : CompatibleEmbedding 4 6 where
 theorem frozen_survives_16_to_64 (x : Cell 4)
     (hx : Frozen 4 x) :
     Frozen 6 (sixteenToSixtyFour.address x) :=
-  sixteenToSixtyFour.preserves_frozen x hx
+  preserves_frozen sixteenToSixtyFour x hx
 
 theorem guidepost_commutes_16_to_64 (x : Cell 4) :
     sixteenToSixtyFour.address (guidepost x) =
       guidepost (sixteenToSixtyFour.address x) :=
-  sixteenToSixtyFour.guidepost_commutes x
+  guidepost_commutes sixteenToSixtyFour x
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConcretePrimeAtlasLift16To64
