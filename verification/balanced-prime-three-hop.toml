@@ -52,7 +52,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.CanonicalPrimeBeaconIndex16"
 path = "GRWTSK/Combinatorics/GraphTheory/CanonicalPrimeBeaconIndex16.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CanonicalPrimeBeaconIndex16"
-git_blob = "29651574044935a66e8acac2d8e95b73835912ef"
+git_blob = "0485c9140c182c6d6a6a9ec1412f713c62d2c3f0"
 theorems = [
   "encodedBeacon_injective",
   "beaconCodes_card",
@@ -68,7 +68,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.ReplicatedPrimeAdjacency16"
 path = "GRWTSK/Combinatorics/GraphTheory/ReplicatedPrimeAdjacency16.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ReplicatedPrimeAdjacency16"
-git_blob = "840d38408e275d0a63d6d812a48e507f93b712c9"
+git_blob = "ebf8dba5fd33a3dd446d2de8bc63fa6b65123860"
 theorems = [
   "secondarySyndrome_ne_zero",
   "secondarySyndrome_add_self",
