@@ -139,11 +139,11 @@ def Eligible (s : SState C G Reg) (a : Packet.{u}) : Prop :=
 
 /-- Exact priority certificate: every earlier test passes and this one fails. -/
 structure FirstFailure (P : Check → Prop) (xs : List Check) where
-  prefix : List Check
+  «prefix» : List Check
   failed : Check
   suffix : List Check
-  split : xs = prefix ++ failed :: suffix
-  earlier : ∀ k, k ∈ prefix → P k
+  split : xs = «prefix» ++ failed :: suffix
+  earlier : ∀ k, k ∈ «prefix» → P k
   bad : ¬ P failed
 
 inductive CheckResult (P : Check → Prop) (xs : List Check) where
@@ -164,7 +164,7 @@ def checkList (P : Check → Prop) (test : ∀ k, Decidable (P k)) :
           · exact good
           · exact tail c hc)
       | .refused f => .refused
-          ⟨k :: f.prefix, f.failed, f.suffix, by exact congrArg (List.cons k) f.split, by
+          ⟨k :: f.«prefix», f.failed, f.suffix, by exact congrArg (List.cons k) f.split, by
             intro c hc
             rcases List.mem_cons.mp hc with rfl | hc
             · exact good

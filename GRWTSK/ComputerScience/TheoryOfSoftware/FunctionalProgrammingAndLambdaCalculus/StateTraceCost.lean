@@ -52,9 +52,9 @@ theorem unit_cost_is_length (events : List T) : cost (fun _ => 1) events = event
   | cons event rest ih => simp [cost, ih, Nat.add_comm]
 
 theorem prefix_cost (charge : T → Nat) {first second : List T}
-    (prefix : ∃ suffix, second = first ++ suffix) :
+    («prefix» : ∃ suffix, second = first ++ suffix) :
     cost charge first ≤ cost charge second := by
-  obtain ⟨suffix, same⟩ := prefix
+  obtain ⟨suffix, same⟩ := «prefix»
   rw [same, cost_append]
   exact Nat.le_add_right _ _
 
@@ -135,10 +135,10 @@ theorem failure_cost (charge : T → Nat) (first : Result R E S T A)
 
 /-- A proved local saving is preserved in every common finite prefix and suffix. -/
 theorem contextual_cost_replacement (charge : T → Nat)
-    (prefix original replacement suffix : List T)
+    («prefix» original replacement suffix : List T)
     (cheaper : cost charge replacement ≤ cost charge original) :
-    cost charge (prefix ++ (replacement ++ suffix)) ≤
-      cost charge (prefix ++ (original ++ suffix)) := by
+    cost charge («prefix» ++ (replacement ++ suffix)) ≤
+      cost charge («prefix» ++ (original ++ suffix)) := by
   simp only [cost_append]
   exact Nat.add_le_add (Nat.le_refl _) (Nat.add_le_add cheaper (Nat.le_refl _))
 

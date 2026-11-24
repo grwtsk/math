@@ -902,15 +902,26 @@ def seedCertified (_source _target : SeedConcept) : Prop := False
 
 def seedSemantic (_source _target : SeedConcept) : Prop := False
 
-private def seedCandidateRecordFor
+/-- Choose the curated edge identity with its endpoint certificate.
+The relation itself is a Prop; eliminating its Or/Exists directly into
+the Type-valued record is forbidden. This metadata selection is explicitly
+noncomputable, not a constructive proof-search decision procedure. Prefer
+a curated paper edge when both it and the structural hub edge exist. -/
+private noncomputable def seedCandidateRecordFor
     {source target : SeedConcept} (edge : seedCandidate source target) :
     RelationshipRecord source target := by
-  rcases edge with paperEdge | ⟨notHub, targetHub⟩
-  · rcases paperEdge with ⟨edgeId, sourceEq, targetEq⟩
-    subst source
+  classical
+  by_cases paper : seedPaperRelation source target
+  · let edgeId := Classical.choose paper
+    have sourceEq : seedPaperEdgeSource edgeId = source :=
+      (Classical.choose_spec paper).1
+    have targetEq : seedPaperEdgeTarget edgeId = target :=
+      (Classical.choose_spec paper).2
+    exact cast (congrArg₂ (fun s t : SeedConcept => RelationshipRecord s t)
+      sourceEq targetEq) (seedPaperRecord edgeId)
+  · have targetHub : target = .searchInventory :=
+      (Or.resolve_left edge paper).2
     subst target
-    exact seedPaperRecord edgeId
-  · subst target
     exact
       { relationship := .structuralCorrespondence
         mathematicalMeaning :=
@@ -934,44 +945,52 @@ private def seedPotentialRecord
     ["supply the mathematical bridge and then promote this edge to the candidate graph"]
   verification := inspectedNotRun
 
-private def seedPotentialRecordFor
+private noncomputable def seedPotentialRecordFor
     {source target : SeedConcept} (edge : seedPotentialRelation source target) :
     RelationshipRecord source target := by
-  rcases edge with ⟨edgeId, sourceEq, targetEq⟩
-  subst source
-  subst target
-  exact seedPotentialRecord edgeId
+  let edgeId := Classical.choose edge
+  have sourceEq : seedPotentialEdgeSource edgeId = source :=
+    (Classical.choose_spec edge).1
+  have targetEq : seedPotentialEdgeTarget edgeId = target :=
+    (Classical.choose_spec edge).2
+  exact cast (congrArg₂ (fun s t : SeedConcept => RelationshipRecord s t)
+    sourceEq targetEq) (seedPotentialRecord edgeId)
 
-private def seedAdmissibleRecordFor
+private noncomputable def seedAdmissibleRecordFor
     {source target : SeedConcept} (edge : seedAdmissible source target) :
     RelationshipRecord source target := by
-  rcases edge with candidate | potential
+  classical
+  by_cases candidate : seedCandidate source target
   · exact seedCandidateRecordFor candidate
-  · exact seedPotentialRecordFor potential
+  · exact seedPotentialRecordFor (Or.resolve_left edge candidate)
 
 /-- The concrete initial source inventory.  Its lower graph is empty because no
 paper-to-repository bridge in this new module has yet been compiled and kernel
 checked.  This is deliberate rather than a completeness claim. -/
-def seedInventory : SourceSearchInventory SeedConcept where
+noncomputable def seedInventory : SourceSearchInventory SeedConcept where
   vertices := Finset.univ
   certified := seedCertified
   candidate := seedCandidate
   admissible := seedAdmissible
   semantic := seedSemantic
-  certified_le_candidate := by
+  certified_le_candidate := (show Subrelation seedCertified seedCandidate from by
     intro source target certified
-    exact False.elim certified
-  candidate_le_admissible := by
+    exact False.elim certified)
+  candidate_le_admissible := (show Subrelation seedCandidate seedAdmissible from by
     intro source target candidate
-    exact Or.inl candidate
+    exact Or.inl candidate)
   admissible_scoped := by
     intro source target _
     simp
-  certified_sound := by
+  certified_sound := (show Subrelation seedCertified seedSemantic from by
     intro source target certified
-    exact False.elim certified
-  candidateRecord := seedCandidateRecordFor
-  admissibleRecord := seedAdmissibleRecordFor
+    exact False.elim certified)
+  candidateRecord := by
+    intro source target edge
+    exact seedCandidateRecordFor edge
+  admissibleRecord := by
+    intro source target edge
+    exact seedAdmissibleRecordFor edge
 
 /-- Every seed concept is the inventory hub or has a structural candidate edge
 to it.  This is connectivity of source representation, not logical entailment. -/
@@ -1573,8 +1592,8 @@ theorem positivePath_to_certifiedPath
       change ∃ middle ∈ K.scope,
         K.positivePath depth source middle ∧
           0 < K.transition middle target at path
-      rcases path with ⟨middle, hm, prefix, positive⟩
-      exact BoundedPath.tail (ih middle hm prefix)
+      rcases path with ⟨middle, hm, precedingPath, positive⟩
+      exact BoundedPath.tail (ih middle hm precedingPath)
         (support_certified middle hm target target_mem positive)
 
 /-- Convert an explicitly nonnegative finite target-weight function
@@ -1593,7 +1612,7 @@ noncomputable def normalizedTargetKernel
     else 0
   transition_nonneg := by
     intro x hx y hy
-    simp only [if_pos hy]
+    simp only [ite_eq_left hy]
     exact div_nonneg (weight_nonneg y hy) normalizer_pos.le
   row_sum_one := by
     intro x hx
@@ -1606,7 +1625,7 @@ noncomputable def normalizedTargetKernel
           targetWeight y / (∑ z ∈ scope, targetWeight z) := by
       apply Finset.sum_congr rfl
       intro y hy
-      simp only [if_pos hy]
+      simp only [ite_eq_left hy]
     rw [hsum]
     simp_rw [div_eq_mul_inv]
     rw [← Finset.sum_mul]
@@ -1627,7 +1646,7 @@ theorem normalizedTargetKernel_transition_pos_iff
   change 0 < (if target ∈ scope then
     targetWeight target / (∑ y ∈ scope, targetWeight y)
     else 0) ↔ 0 < targetWeight target
-  rw [if_pos target_mem]
+  rw [ite_eq_left target_mem]
   exact div_pos_iff_of_pos_right normalizer_pos
 
 /-- A reset kernel has no transitions into vertices outside scope. -/
@@ -1641,7 +1660,7 @@ theorem normalizedTargetKernel_transition_zero_of_not_mem
   change (if target ∈ scope then
     targetWeight target / (∑ y ∈ scope, targetWeight y)
     else 0) = 0
-  simp only [if_neg target_not_mem]
+  simp only [ite_eq_right target_not_mem]
 
 /-- If the initial distribution already sums to one, this reset
 kernel produces its normalized target-weight distribution in one
@@ -1662,7 +1681,7 @@ theorem normalizedTargetKernel_step_of_unit_mass
       targetWeight target / (∑ y ∈ scope, targetWeight y)
     else 0)) =
     targetWeight target / (∑ y ∈ scope, targetWeight y)
-  simp only [if_pos target_mem]
+  simp only [ite_eq_left target_mem]
   rw [← Finset.sum_mul, initial_mass_one, one_mul]
 
 /-- Normalize a *source-dependent* finite nonnegative edge-weight
@@ -1687,7 +1706,7 @@ noncomputable def normalizedEdgeKernel
     change 0 ≤ (if y ∈ vertices then
       edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
       else 0)
-    rw [if_pos hy]
+    rw [ite_eq_left hy]
     exact div_nonneg (edge_nonneg x hx y hy) (row_pos x hx).le
   row_sum_one := by
     intro x hx
@@ -1704,7 +1723,7 @@ noncomputable def normalizedEdgeKernel
             edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z) := by
         apply Finset.sum_congr rfl
         intro y hy
-        simp only [if_pos hy]
+        simp only [ite_eq_left hy]
       _ = 1 := by
         simp_rw [div_eq_mul_inv]
         rw [← Finset.sum_mul]
@@ -1725,7 +1744,7 @@ theorem normalizedEdgeKernel_transition_pos_iff
   change 0 < (if y ∈ vertices then
     edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
     else 0) ↔ 0 < edgeWeight x y
-  rw [if_pos hy]
+  rw [ite_eq_left hy]
   exact div_pos_iff_of_pos_right (row_pos x hx)
 
 /-- Normalized edge kernels have no transitions into states outside
@@ -1742,7 +1761,7 @@ theorem normalizedEdgeKernel_transition_zero_of_not_mem
   change (if y ∈ vertices then
     edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
     else 0) = 0
-  simp only [if_neg hy]
+  simp only [ite_eq_right hy]
 
 end FiniteSieveMarkovKernel
 
@@ -1850,7 +1869,7 @@ namespace ArithmeticSieveKernel
 /-- A nonnegative radical weight on the ordinary coprimality sieve.
 The eventual kernel uses only positive integers in Finset.Icc 1 N. -/
 noncomputable def radicalCoprimeWeight (q n : ℕ) : ℝ :=
-  if Nat.Coprime n q then (Nat.radical n : ℝ) else 0
+  if Nat.Coprime n q then (UniqueFactorizationMonoid.radical n : ℝ) else 0
 
 theorem radicalCoprimeWeight_nonneg (q n : ℕ) :
     0 ≤ radicalCoprimeWeight q n := by
@@ -1872,8 +1891,8 @@ theorem radicalCoprimeWeight_pos_iff (q n : ℕ) :
     exact (lt_irrefl (0 : ℝ)) positive
   · intro coprime
     change 0 < (if Nat.Coprime n q then
-      (Nat.radical n : ℝ) else 0)
-    rw [if_pos coprime]
+      (UniqueFactorizationMonoid.radical n : ℝ) else 0)
+    rw [ite_eq_left coprime]
     exact_mod_cast Nat.radical_pos n
 
 /-- Finite positive integer states through the inclusive cutoff N. -/
@@ -1928,7 +1947,7 @@ theorem radicalCoprimeWeight_pow (q n k : ℕ) (hk : k ≠ 0) :
       radicalCoprimeWeight q n := by
   have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
     Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
-  have hrad : Nat.radical (n ^ k) = Nat.radical n :=
+  have hrad : UniqueFactorizationMonoid.radical (n ^ k) = UniqueFactorizationMonoid.radical n :=
     UniqueFactorizationMonoid.radical_pow n hk
   by_cases h : Nat.Coprime n q
   · simp [radicalCoprimeWeight, hcop.mpr h, h, hrad]
@@ -1950,7 +1969,7 @@ theorem resetKernel_transition_pow_collision
     radicalCoprimeWeight q (n ^ k) / totalWeight q N else 0) =
     (if n ∈ scope N then
       radicalCoprimeWeight q n / totalWeight q N else 0)
-  rw [if_pos hnk, if_pos hn, radicalCoprimeWeight_pow q n k hk]
+  rw [ite_eq_left hnk, ite_eq_left hn, radicalCoprimeWeight_pow q n k hk]
 
 /-- The unnormalized arithmetic sieve weights are a fixed point of
 their source-independent reset kernel, on the finite positive scope.
@@ -1965,7 +1984,7 @@ theorem resetKernel_step_weight_eq
       (if target ∈ scope N then
         radicalCoprimeWeight q target / totalWeight q N else 0)) =
     radicalCoprimeWeight q target
-  rw [if_pos target_mem, ← Finset.sum_mul]
+  rw [ite_eq_left target_mem, ← Finset.sum_mul]
   change totalWeight q N *
     (radicalCoprimeWeight q target / totalWeight q N) =
       radicalCoprimeWeight q target
@@ -2012,6 +2031,7 @@ theorem resetKernel_evolve_weight_eq
 steps equals the initial radical-weighted coprimality mass on the same
 fiber. Positivity is therefore a coverage question, not a mixing
 estimate. -/
+open scoped Classical in
 theorem resetKernel_typeMass_eq_fiber_sum
     {TypeLabel : Type*}
     (q N : ℕ) (hN : 1 ≤ N)
@@ -2151,20 +2171,22 @@ noncomputable def certifiedArithmeticInventory
   semantic := fun x y =>
     x ∈ scope N ∧ y ∈ scope N ∧
       0 < (resetKernel q N hN).transition x y
-  certified_le_candidate := by
+  certified_le_candidate := (show Subrelation (positiveSieveEdge q N) (positiveSieveEdge q N) from by
     intro x y h
-    exact h
-  candidate_le_admissible := by
+    exact h)
+  candidate_le_admissible := (show Subrelation (positiveSieveEdge q N) (positiveSieveEdge q N) from by
     intro x y h
-    exact h
+    exact h)
   admissible_scoped := by
     intro x y h
     exact ⟨h.1, h.2.1⟩
-  certified_sound := by
+  certified_sound := (show Subrelation (positiveSieveEdge q N)
+      (fun x y => x ∈ scope N ∧ y ∈ scope N ∧
+        0 < (resetKernel q N hN).transition x y) from by
     intro x y h
     exact ⟨h.1, h.2.1,
       (resetKernel_transition_pos_iff_coprime
-        q N hN x y h.2.1).mpr h.2.2⟩
+        q N hN x y h.2.1).mpr h.2.2⟩)
   candidateRecord := by
     intro x y h
     exact arithmeticSupportRecord q N x y
@@ -2477,9 +2499,9 @@ theorem radicalCoprimeWeight_le_cutoff
   have hmem : 1 ≤ n ∧ n ≤ N := Finset.mem_Icc.mp hn
   by_cases hc : Nat.Coprime n q
   · have hn0 : n ≠ 0 := by omega
-    have hrad : Nat.radical n ≤ n :=
+    have hrad : UniqueFactorizationMonoid.radical n ≤ n :=
       (Nat.radical_le_self_iff).mpr hn0
-    have hcast : (Nat.radical n : ℝ) ≤ (N : ℝ) :=
+    have hcast : (UniqueFactorizationMonoid.radical n : ℝ) ≤ (N : ℝ) :=
       Nat.cast_le.mpr (hrad.trans hmem.2)
     simpa [radicalCoprimeWeight, hc] using hcast
   · simp [radicalCoprimeWeight, hc]
@@ -2550,8 +2572,8 @@ arithmetic radical weight, including modulus 0 or 1. -/
 theorem radicalCoprimeWeight_one_le_of_coprime
     (q target : ℕ) (hc : Nat.Coprime target q) :
     (1 : ℝ) ≤ radicalCoprimeWeight q target := by
-  have hrad : 1 ≤ Nat.radical target := Nat.radical_pos target
-  have hcast : (1 : ℝ) ≤ (Nat.radical target : ℝ) := by
+  have hrad : 1 ≤ UniqueFactorizationMonoid.radical target := Nat.radical_pos target
+  have hcast : (1 : ℝ) ≤ (UniqueFactorizationMonoid.radical target : ℝ) := by
     exact_mod_cast hrad
   simpa [radicalCoprimeWeight, hc] using hcast
 
@@ -2596,7 +2618,7 @@ theorem diagonalKernel_transition_ge_inv_two_cutoff_sq
       diagonalEdgeWeight q source target /
         (∑ z ∈ scope N, diagonalEdgeWeight q source z)
     else 0)
-  rw [if_pos target_mem]
+  rw [ite_eq_left target_mem]
   have hcomparison :
       (1 : ℝ) / ((2 : ℝ) * (N : ℝ) * (N : ℝ)) ≤
         diagonalEdgeWeight q source target /
@@ -2692,6 +2714,7 @@ theorem diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq
     ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
       (diagonalKernel q N hN).typeMass initial typeOf
         (depth + 1) targetType := by
+  classical
   have hpoint :=
     diagonalKernel_evolve_succ_ge_inv_two_cutoff_sq
       q N hN initial initial_nonneg initial_mass_one
@@ -2730,7 +2753,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
 sieve. This is a distinct weighting, not an asymptotic theorem about
 the unbuffered radical weight. -/
 noncomputable def bufferedRadicalWeight (q N n : ℕ) : ℝ :=
-  if Nat.Coprime n q then (N : ℝ) + (Nat.radical n : ℝ) else 0
+  if Nat.Coprime n q then (N : ℝ) + (UniqueFactorizationMonoid.radical n : ℝ) else 0
 
 theorem bufferedRadicalWeight_nonneg (q N n : ℕ) :
     0 ≤ bufferedRadicalWeight q N n := by
@@ -2742,7 +2765,7 @@ N units of raw weight. -/
 theorem bufferedRadicalWeight_ge_cutoff_of_coprime
     (q N n : ℕ) (hc : Nat.Coprime n q) :
     (N : ℝ) ≤ bufferedRadicalWeight q N n := by
-  simp only [bufferedRadicalWeight, if_pos hc]
+  simp only [bufferedRadicalWeight, ite_eq_left hc]
   exact le_add_of_nonneg_right (Nat.cast_nonneg _)
 
 /-- The same raw weight is at most twice the cutoff for all states
@@ -2751,10 +2774,10 @@ theorem bufferedRadicalWeight_le_two_cutoff
     (q N n : ℕ) (hn : n ∈ scope N) :
     bufferedRadicalWeight q N n ≤ (2 : ℝ) * (N : ℝ) := by
   by_cases hc : Nat.Coprime n q
-  · have hrad : (Nat.radical n : ℝ) ≤ (N : ℝ) := by
+  · have hrad : (UniqueFactorizationMonoid.radical n : ℝ) ≤ (N : ℝ) := by
       simpa [radicalCoprimeWeight, hc] using
         radicalCoprimeWeight_le_cutoff q N n hn
-    simp only [bufferedRadicalWeight, if_pos hc]
+    simp only [bufferedRadicalWeight, ite_eq_left hc]
     linarith
   · simp [bufferedRadicalWeight, hc]
 
@@ -2766,7 +2789,7 @@ theorem bufferedRadicalWeight_pow (q N n k : ℕ) (hk : k ≠ 0) :
       bufferedRadicalWeight q N n := by
   have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
     Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
-  have hrad : Nat.radical (n ^ k) = Nat.radical n :=
+  have hrad : UniqueFactorizationMonoid.radical (n ^ k) = UniqueFactorizationMonoid.radical n :=
     UniqueFactorizationMonoid.radical_pow n hk
   by_cases hc : Nat.Coprime n q
   · simp [bufferedRadicalWeight, hc, hcop.mpr hc, hrad]
@@ -2938,7 +2961,7 @@ theorem bufferedDiagonalKernel_transition_ge_inv_four_cutoff
       bufferedDiagonalEdgeWeight q N source target /
         (∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z)
     else 0)
-  rw [if_pos target_mem]
+  rw [ite_eq_left target_mem]
   have hcomparison :
       (1 : ℝ) / ((4 : ℝ) * (N : ℝ)) ≤
         bufferedDiagonalEdgeWeight q N source target /
