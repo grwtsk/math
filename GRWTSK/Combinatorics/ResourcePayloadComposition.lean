@@ -116,4 +116,74 @@ theorem observedFrontier_eq_of_coverage (A : ExecutionModel.{u,v,w} State Claim)
   unfold observedFrontier frontier
   rw [(observedCostRegion_eq_iff A I j p samples sound).2 coverage]
 
+/-! For the Sofic training iteration, persistent parameter storage survives
+all three phases. Optimizer state is live during forward/backward; optimizer
+peak includes state during the update. Forward output survives backward,
+and both outputs survive the update. Expanding the two maxima gives the
+three inequalities below. This is a natural-number payload bound, not
+a theorem that every C++ allocation is accounted for, and not an RSS bound. -/
+
+def trainingPeak (parameters optimizerState optimizerPeak : Nat)
+    (forward backward : PayloadPair) : Nat :=
+  parameters + max (optimizerState + (payloadCompose forward backward).2)
+    (optimizerPeak + (payloadCompose forward backward).1)
+
+theorem trainingPeak_budget_iff (parameters optimizerState optimizerPeak budget : Nat)
+    (forward backward : PayloadPair) :
+    trainingPeak parameters optimizerState optimizerPeak forward backward ≤ budget ↔
+      parameters + optimizerState + forward.2 ≤ budget ∧
+      parameters + optimizerState + forward.1 + backward.2 ≤ budget ∧
+      parameters + optimizerPeak + forward.1 + backward.1 ≤ budget := by
+  simp only [trainingPeak, payloadCompose]
+  omega
+
+/-! Exact frontier comparison: a budget achievable at I dominates a
+minimal budget at I, which must dominate one at J for a filtration
+improvement. Conversely, each old minimal budget is achievable, so
+filtration inclusion implies the indicated domination. Preservation of
+deductive content is a separate premise. Neither result infers true
+frontier coverage from empirical samples. -/
+
+theorem filtrationImproves_iff_frontier_domination
+    (A : ExecutionModel.{u,v,w} State Claim) (I J : State) :
+    FiltrationImproves A I J ↔
+      (∀ p, A.derives I p ↔ A.derives J p) ∧
+      ∀ j p m, m ∈ frontier A I j p → ∃ n ∈ frontier A J j p, n ≤ m := by
+  constructor
+  · intro h
+    refine ⟨h.1, ?_⟩
+    intro j p m hm
+    have old : Attainable A I j m p :=
+      (frontier_characterization A I j p m).2 ⟨m, hm, le_rfl⟩
+    exact (frontier_characterization A J j p m).1 (h.2 j m p old)
+  · rintro ⟨content, domination⟩
+    refine ⟨content, ?_⟩
+    intro j r p hr
+    obtain ⟨m, hm, hmr⟩ := (frontier_characterization A I j p r).1 hr
+    obtain ⟨n, hn, hnm⟩ := domination j p m hm
+    exact (frontier_characterization A J j p r).2 ⟨n, hn, le_trans hnm hmr⟩
+
+/-- A strict improvement has a new minimal budget not dominated by any
+old minimal budget. A finite sample gap cannot establish this negative
+statement unless old-region coverage (or a separate impossibility result)
+is justified. -/
+theorem strictImprovement_iff_frontier_gap
+    (A : ExecutionModel.{u,v,w} State Claim) (I J : State) :
+    StrictImprovement A I J ↔
+      FiltrationImproves A I J ∧
+      ∃ j p m, m ∈ frontier A J j p ∧
+        ¬ (∃ n ∈ frontier A I j p, n ≤ m) := by
+  unfold StrictImprovement
+  constructor
+  · rintro ⟨hi, j, r, p, hj, hnot⟩
+    obtain ⟨m, hm, hmr⟩ := (frontier_characterization A J j p r).1 hj
+    refine ⟨hi, j, p, m, hm, ?_⟩
+    intro h
+    exact hnot (attainable_monotone A hmr
+      ((frontier_characterization A I j p m).2 h))
+  · rintro ⟨hi, j, p, m, hm, hnot⟩
+    refine ⟨hi, j, m, p, (frontier_characterization A J j p m).2 ⟨m, hm, le_rfl⟩, ?_⟩
+    intro h
+    exact hnot ((frontier_characterization A I j p m).1 h)
+
 end GRWTSK.ResourceAttainability
