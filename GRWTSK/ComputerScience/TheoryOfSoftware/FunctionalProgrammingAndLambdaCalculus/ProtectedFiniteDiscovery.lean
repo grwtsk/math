@@ -9,8 +9,8 @@ Sofic manuscript sections 2.5, 4.1, 4.4, 5.12 and 5.13.
 SOURCE_PROOF_CANDIDATE. Parsing, elaboration, exact-type review, fresh kernel
 replay, transitive axiom audit and independent review: NOT_RUN.
 
-Math parent ea94543ac5cd34e9be9bf4d779a7b32fe88be34c; prior fixture blob
-776ce11764f9e893866b073342258bb1024d4640; TransactionalDiscoveryContext
+Math parent 91d97ba1a8aacd10fb7a64be382431c9bc223aec; prior fixture blob
+0a15efbec2d080a7d71c1298e7d73d1d211f0d1a; TransactionalDiscoveryContext
 f9b09052d2492ac94e3886ca683907d8314700a2, TransactionalDiscovery
 8da85c92c61743133682732ddf35ccd4000cbc35, FixedStrategyAttainability
 a971a30a546437404013e6d086e9ad8983d31089. Lean v4.34.1 / Mathlib
@@ -51,8 +51,8 @@ instruction language; a separately selected hostile observer substitutes
 code 3 on the second attempt. The public generator sees Unit, reports
 submissions only, and is evaluated by the protected composite strategy.
 The finite checker/target/dependency and resource decision procedures
-are explicit suppliers: no arbitrary context decidability or actual
-runtime execution is claimed. The proof-mode qualification uses Deductive
+are now supplied constructively on the proved finite domain; no arbitrary
+context decidability or actual runtime execution is claimed. The proof-mode qualification uses Deductive
 from the initial registered inference theory, not semantic Meaning.
 This public hand-authored fixture is not independent learned discovery.
 
@@ -64,8 +64,8 @@ nor measured work/time. The two-event plan charges (8,2,8,2); the fixed
 adapter proves the exact budget region for this plan, not a global minimum
 over all strategies or over the one-event prefix. The general evaluator binds submission and observation to receipts; the
 runtime adapter must include source, model, verifier, storage/trace and
-resource overhead and enforce protected access. The concrete decision kit
-for all admissible finite fixture states remains an executable supplier.
+resource overhead and enforce protected access. The scoped decision kit below uses structural equality and finite scans.
+No classical decision oracle or actual Lean replay is asserted.
 -/
 
 set_option autoImplicit false
@@ -519,7 +519,8 @@ object, never a fabricated Lean theorem. -/
 def observeCode (sub : Submission) : ClosedObject :=
   match decode sub.proofBytes with
   | some c => objectFor c
-  | none => { conditionalObject with proofBytes := sub.proofBytes, kind := .definitionDecl }
+  | none => { objectFor .direct with key := sub.key, proofBytes := sub.proofBytes,
+      checkedBase := sub.checkedBase, kind := .definitionDecl }
 
 /-- In the hostile variant the independently observed object after the first
 append is deliberately substituted. The submission is retained verbatim.
@@ -543,6 +544,265 @@ def finiteObserver (hostile : Bool) :
 
 theorem policy_bridge : ContextualPolicy P :=
   ⟨fun _ _ => Iff.rfl, fun _ _ => Iff.rfl⟩
+
+/-! Constructive decision kit. Arbitrary dependent functions are NOT
+compared. The protected expected inventory has two canonical judgments;
+expected_unique proves that key equality reflects their actual equality.
+The original target set and fact list are the only inventories. -/
+
+deriving instance DecidableEq for SourceClaim
+deriving instance DecidableEq for DeclarationKey
+deriving instance DecidableEq for DeclKind
+deriving instance DecidableEq for ClosedObject
+deriving instance DecidableEq for Submission
+
+/-- Transport a constructive decision along an actual iff. -/
+private def via {p q : Prop} (d : Decidable p) (h : p ↔ q) : Decidable q :=
+  match d with
+  | .isTrue hp => .isTrue (h.mp hp)
+  | .isFalse hp => .isFalse (fun hq => hp (h.mpr hq))
+
+/-- Finite scans require no equality on proof-bearing entries. -/
+universe a
+
+private def allList {A : Type a} (p : A → Prop) (test : ∀ a, Decidable (p a)) :
+    (xs : List A) → Decidable (∀ a, a ∈ xs → p a)
+  | [] => .isTrue (by simp)
+  | x :: xs =>
+    match test x with
+    | .isFalse bad => .isFalse (fun h => bad (h x List.mem_cons_self))
+    | .isTrue good =>
+      match allList p test xs with
+      | .isFalse bad => .isFalse (fun h => bad (fun a ha => h a (List.mem_cons_of_mem _ ha)))
+      | .isTrue tail => .isTrue (by
+          intro a ha
+          rcases List.mem_cons.mp ha with rfl | ha
+          · exact good
+          · exact tail a ha)
+
+private def anyList {A : Type a} (p : A → Prop) (test : ∀ a, Decidable (p a)) :
+    (xs : List A) → Decidable (∃ a, a ∈ xs ∧ p a)
+  | [] => .isFalse (by simp)
+  | x :: xs =>
+    match test x with
+    | .isTrue good => .isTrue ⟨x, List.mem_cons_self, good⟩
+    | .isFalse bad =>
+      match anyList p test xs with
+      | .isTrue tail => .isTrue (by
+          obtain ⟨a, ha, hp⟩ := tail
+          exact ⟨a, List.mem_cons_of_mem _ ha, hp⟩)
+      | .isFalse no => .isFalse (by
+          rintro ⟨a, ha, hp⟩
+          rcases List.mem_cons.mp ha with rfl | ha
+          · exact bad hp
+          · exact no ⟨a, ha, hp⟩)
+
+def codeInventory : List Code := [.bound, .fromBound, .direct]
+
+theorem code_mem (c : Code) : c ∈ codeInventory := by
+  cases c <;> decide
+
+def checkedDec (o : ClosedObject) : Decidable (checker.checked o) :=
+  via (anyList (fun c => decode o.proofBytes = some c ∧ o = objectFor c)
+    (fun c => inferInstance) codeInventory) (by
+      constructor
+      · rintro ⟨c, _, h, eq⟩
+        exact ⟨c, h, eq⟩
+      · rintro ⟨c, h, eq⟩
+        exact ⟨c, code_mem c, h, eq⟩)
+
+theorem gate_iff_checked_key (j : J) (o : ClosedObject) (hj : expected j) :
+    Gate checker j o ↔ checker.checked o ∧ o.key = j.key := by
+  constructor
+  · intro h
+    exact ⟨h.checked, h.exactKey⟩
+  · rintro ⟨h, same⟩
+    obtain ⟨c, _, rfl⟩ := h
+    have eq : judgmentFor c = j :=
+      expected_unique _ _ (expected_code c) hj same
+    rw [← eq]
+    exact code_gate c
+
+def gateDec (j : J) (o : ClosedObject) (hj : expected j) :
+    Decidable (Gate checker j o) :=
+  letI : Decidable (checker.checked o) := checkedDec o
+  via (inferInstanceAs (Decidable (checker.checked o ∧ o.key = j.key)))
+    (gate_iff_checked_key j o hj).symm
+
+def presentDec (snap : String) (o : ClosedObject) : Decidable (checker.present snap o) := by
+  change Decidable ((snap = "before" ∧ o = objectFor .bound) ∨
+    (snap = "after" ∧ (o = objectFor .bound ∨ o = objectFor .fromBound)))
+  infer_instance
+
+def extendsDec (a b : String) : Decidable (checker.extendsSnapshot a b) := by
+  change Decidable (a = b ∨ (a = "before" ∧ b = "after"))
+  infer_instance
+
+/-- Scope is an invariant, not an algorithm for deciding equality of
+arbitrary sets/functions. The protected input must supply the scope proof. -/
+def finiteScope (c : CState) : Prop :=
+  c.targets = {second} ∧ ∀ f, f ∈ c.facts → expected f.atom
+
+theorem initial_scope : finiteScope initial.core := by
+  refine ⟨rfl, ?_⟩
+  intro f hf
+  change f ∈ [entry0.fact] at hf
+  have same := List.mem_singleton.mp hf
+  subst f
+  exact Or.inl rfl
+
+theorem known_key_iff (c : CState) (q : J)
+    (hc : finiteScope c) (hq : expected q) :
+    Known c q ↔ ∃ f : Fact, f ∈ c.facts ∧ f.atom.key = q.key := by
+  constructor
+  · intro h
+    obtain ⟨f, hf, same⟩ := (mem_eraseFacts_iff _ _).mp h
+    exact ⟨f, hf, congrArg Judgment.key same⟩
+  · rintro ⟨f, hf, same⟩
+    exact (mem_eraseFacts_iff _ _).mpr
+      ⟨f, hf, expected_unique _ _ (hc.2 f hf) hq same⟩
+
+theorem target_key_iff (c : CState) (q : J)
+    (hc : finiteScope c) (hq : expected q) :
+    q.key = second.key ↔ q ∈ c.targets := by
+  rw [hc.1]
+  change q.key = second.key ↔ q = second
+  exact ⟨fun h => expected_unique _ _ hq (Or.inr rfl) h,
+    congrArg Judgment.key⟩
+
+def pendingDec (s : SState) (q : J) (hs : finiteScope s.core)
+    (hq : expected q) : Decidable (Pending s.core q) :=
+  letI : Decidable (∃ f : Fact, f ∈ s.core.facts ∧ f.atom.key = q.key) :=
+    anyList (fun f : Fact => f.atom.key = q.key) (fun _ => inferInstance) s.core.facts
+  via (inferInstanceAs (Decidable (q.key = second.key ∧
+    ¬ ∃ f : Fact, f ∈ s.core.facts ∧ f.atom.key = q.key)))
+    (and_congr (target_key_iff s.core q hs hq) (not_congr (known_key_iff s.core q hs hq).symm))
+
+def dependencyDec (s : SState) (a : Packet.{0}) : Decidable (PriorDependencies s a) :=
+  allList (fun d => ∃ e : Entry checker, e ∈ s.core.environment.entries ∧
+      e.object.key.source.declaration = d)
+    (fun d => anyList (fun e : Entry checker => e.object.key.source.declaration = d)
+      (fun _ => inferInstance) s.core.environment.entries) a.observed.dependencies
+
+def appendDec (s : SState) (a : Packet.{0}) : Decidable (AppendOK s a) :=
+  letI := extendsDec s.core.environment.snapshot a.nextSnapshot
+  letI := allList (fun e : Entry checker => checker.present a.nextSnapshot e.object)
+    (fun e => presentDec a.nextSnapshot e.object) s.core.environment.entries
+  letI := presentDec a.nextSnapshot a.observed
+  letI := allList (fun e : Entry checker =>
+    e.object.key.source.declaration ≠ a.observed.key.source.declaration)
+    (fun _ => inferInstance) s.core.environment.entries
+  via (inferInstanceAs (Decidable (
+    checker.extendsSnapshot s.core.environment.snapshot a.nextSnapshot ∧
+    (∀ e : Entry checker, e ∈ s.core.environment.entries → checker.present a.nextSnapshot e.object) ∧
+    checker.present a.nextSnapshot a.observed ∧
+    (∀ e : Entry checker, e ∈ s.core.environment.entries →
+      e.object.key.source.declaration ≠ a.observed.key.source.declaration))))
+    (by
+      constructor
+      · rintro ⟨a, b, c, d⟩
+        exact ⟨a, b, c, d⟩
+      · intro h
+        exact ⟨h.extends, h.retained, h.installed, h.fresh⟩)
+
+def checkDec (s : SState) (a : Packet.{0}) (hs : finiteScope s.core)
+    (hq : expected a.target) : ∀ k, Decidable (Pass s a k)
+  | .target => inferInstanceAs (Decidable
+      (a.submission.key = a.target.key ∧ a.observed.key = a.target.key))
+  | .proof => inferInstanceAs (Decidable (a.submission.proofBytes = a.observed.proofBytes))
+  | .base => inferInstanceAs (Decidable (a.submission.checkedBase = a.observed.checkedBase ∧
+      a.observed.checkedBase = s.core.environment.snapshot))
+  | .gate => gateDec a.target a.observed hq
+  | .pending => pendingDec s a.target hs hq
+  | .dependencies => dependencyDec s a
+  | .append => appendDec s a
+
+def resourceLEDec (r b : ResourceVec) : Decidable (r ≤ b) :=
+  via (inferInstanceAs (Decidable
+    (r 0 ≤ b 0 ∧ r 1 ≤ b 1 ∧ r 2 ≤ b 2 ∧ r 3 ≤ b 3))) (by
+      constructor
+      · rintro ⟨h0, h1, h2, h3⟩ i
+        fin_cases i
+        · exact h0
+        · exact h1
+        · exact h2
+        · exact h3
+      · intro h
+        exact ⟨h 0, h 1, h 2, h 3⟩)
+
+def fitsDec (limit : ResourceVec) (s : SState) (c : CState) (a : Charge) :
+    Decidable (Fits P limit s c a) := by
+  unfold Fits
+  infer_instance
+
+def reservationDec (limit : ResourceVec) (s : SState) (r : ResourceVec) :
+    Decidable (ReservationFits P limit s r) := by
+  letI : Decidable (r ≤ limit) := resourceLEDec r limit
+  unfold ReservationFits
+  infer_instance
+
+def withinDec (a : Charge) (r : ResourceVec) : Decidable (ChargeWithin a r) := by
+  unfold ChargeWithin
+  infer_instance
+
+def budgetDec (limit : ResourceVec) (s : SState) (a : Packet.{0}) (h : Eligible s a) :
+    Decidable (CommitBudget P limit s a h) := by
+  letI := reservationDec limit s a.reservation
+  letI := withinDec a.charge a.reservation
+  letI := fitsDec limit s (applyDelta s.core (appendDelta s a h)) a.charge
+  unfold CommitBudget
+  infer_instance
+
+theorem scope_closed (s : SState) (a : Packet.{0}) (h : Eligible s a)
+    (hs : finiteScope s.core) (hq : expected a.target) :
+    finiteScope (applyDelta s.core (appendDelta s a h)) := by
+  refine ⟨?_, ?_⟩
+  · change s.core.targets ∪ ∅ = {second}
+    rw [Set.union_empty, hs.1]
+  · intro f hf
+    change f ∈ s.core.facts ++ [(entry s a h).fact] at hf
+    rcases List.mem_append.mp hf with old | new
+    · exact hs.2 f old
+    · have same := List.mem_singleton.mp new
+      subst f
+      exact hq
+
+/-- Actual constructive implementation of the scoped Decisions interface. -/
+def decisions (limit : ResourceVec) : Decisions P limit where
+  scope := finiteScope
+  target := expected
+  check := checkDec
+  refusalFits := fun s a => fitsDec limit s s.core a.charge
+  commitFits := budgetDec limit
+  closed := scope_closed
+
+/-- Boolean observation of the exact proof-producing decision, not a
+second classifier. The iff is valid for every scoped state and target. -/
+def bit {p : Prop} (d : Decidable p) : Bool :=
+  match d with
+  | .isTrue _ => true
+  | .isFalse _ => false
+
+theorem bit_iff {p : Prop} (d : Decidable p) : bit d = true ↔ p := by
+  cases d with
+  | isTrue h => exact ⟨fun _ => h, fun _ => rfl⟩
+  | isFalse h => exact ⟨fun eq => False.elim (by cases eq), fun hp => (h hp).elim⟩
+
+theorem every_check_exact (s : SState) (a : Packet.{0})
+    (hs : finiteScope s.core) (hq : expected a.target) (k : Check) :
+    bit ((decisions cap).check s a hs hq k) = true ↔ Pass s a k :=
+  bit_iff _
+
+theorem resource_checks_exact (limit : ResourceVec) (s : SState)
+    (a : Packet.{0}) (h : Eligible s a) :
+    (bit ((decisions limit).refusalFits s a) = true ↔ Fits P limit s s.core a.charge) ∧
+    (bit ((decisions limit).commitFits s a h) = true ↔ CommitBudget P limit s a h) :=
+  ⟨bit_iff _, bit_iff _⟩
+
+abbrev D := decisions cap
+
+def start : ScopedState P D := ⟨initial, initial_scope⟩
+def goal : ScopedTarget P D := ⟨second, Or.inr rfl⟩
 
 def proposed : Submission := submissionFor .fromBound
 
@@ -625,42 +885,148 @@ theorem second_fits : Fits P cap accepted.state accepted.state.core secondPacket
     8 ≤ 8 ∧ 8 ≤ 8 ∧ 1 + 1 ≤ 2 ∧ 1 + 1 ≤ 2
   decide
 
-theorem generic_first (D : Decisions P cap) :
-    evaluateOne P D initial firstPacket = .completed firstReceipt :=
-  evaluateOne_accept P D initial firstPacket first_eligible first_budget
+theorem accepted_scope : finiteScope accepted.state.core :=
+  scope_closed initial firstPacket first_eligible initial_scope (Or.inr rfl)
 
-theorem generic_second (D : Decisions P cap) :
+theorem generic_first :
+    evaluateOne P D initial firstPacket initial_scope (Or.inr rfl) = .completed firstReceipt :=
+  evaluateOne_accept P D initial firstPacket initial_scope (Or.inr rfl) first_eligible first_budget
+
+theorem generic_second :
     ∃ f : FirstFailure (Pass accepted.state secondPacket) checkOrder,
-      evaluateOne P D accepted.state secondPacket = .completed (.refuse f second_fits) :=
-  evaluateOne_refuse P D accepted.state secondPacket second_fits second_bad
+      evaluateOne P D accepted.state secondPacket accepted_scope (Or.inr rfl) =
+        .completed (.refuse f second_fits) :=
+  evaluateOne_refuse P D accepted.state secondPacket accepted_scope (Or.inr rfl)
+    second_fits second_bad
 
-/-- Both events arise from the same general recursion used on arbitrary
-input lists, not a lookup of the old closed run. -/
-theorem generic_two_event_witness (D : Decisions P cap) :
+/-- Both events arise from the same general recursion and concrete decisions. -/
+theorem generic_two_event_witness :
     completeWitness P (finiteObserver true)
-      (evaluate P (finiteObserver true) D initial second [proposed, proposed]) =
-        some witness := by
-  obtain ⟨f, hf⟩ := generic_second D
-  simp [evaluate, observe_first, generic_first D, first_result, observe_second, hf,
+      (evaluate P (finiteObserver true) D initial second initial_scope (Or.inr rfl)
+        [proposed, proposed]) = some witness := by
+  obtain ⟨f, hf⟩ := generic_second
+  simp [evaluate, observe_first, generic_first, first_result, observe_second, hf,
     completeWitness, batchWitness, ProtectedTransition.events, Receipt.record,
     Receipt.result, firstPacket, secondPacket, witness, events, rejected]
 
-/-- A public finite strategy deliberately repeats a known test proposal.
-The actual generator sees Unit and emits only submissions. -/
+/-- The arbitrary-list theorem uses the exact existing Batch/Audit/Run,
+not a new model of receipts. No list-specific acceptance lookup exists. -/
+def runFinite (hostile : Bool) (input : List Submission) :=
+  evaluate P (finiteObserver hostile) D initial second initial_scope (Or.inr rfl) input
+
+theorem arbitrary_list (hostile : Bool) (input : List Submission) :
+    let b := runFinite hostile input
+    finiteScope b.final.core ∧
+    input = b.records.map (fun r => r.packet.submission) ++ b.remaining ∧
+    RunContract P cap initial (ProtectedTransition.events b.records) b.final ∧
+    ∀ rec, rec ∈ b.records →
+      (rec.packet.target = second ∧
+        (finiteObserver hostile).observe rec.before second rec.packet.submission = some rec.packet) ∧
+        ∃ r : Receipt P cap rec.before rec.packet, r.record P = rec := by
+  intro b
+  exact ⟨batch_scope P (finiteObserver hostile) D b initial_scope (Or.inr rfl),
+    b.split, batch_contract P (finiteObserver hostile) policy_bridge b safe_initial,
+    fun rec mem => batch_receipt_bound P (finiteObserver hostile) b rec mem⟩
+
+/-- Expected exact first-failure classifications: closed, executable
+source assertions. No runtime or kernel execution receipt is claimed. -/
+def classify (limit : ResourceVec) (s : SState) (a : Packet.{0})
+    (hs : finiteScope s.core) (hq : expected a.target) : Option Disposition :=
+  (evaluateOne P (decisions limit) s a hs hq).classification P
+
+def malformed : Submission := { proposed with proofBytes := [99] }
+def malformedPacket : Packet.{0} := packetAt false initial second malformed
+def extraBinderPacket : Packet.{0} := { firstPacket with observed := conditionalObject }
+def stalePacket : Packet.{0} :=
+  { firstPacket with submission := { proposed with checkedBase := "stale" } }
+def unavailableAppend : Packet.{0} := { firstPacket with nextSnapshot := "before" }
+def deniedPacket : Packet.{0} := { firstPacket with reservation := ![8, 0, 8, 2] }
+
+/-- Diagnostic state with missing installed dependency, not a claim of
+reachability from initial. Its finite scope and empty environment are exact. -/
+def emptyEnv (snap : String) : Env where
+  snapshot := snap
+  entries := []
+  present := by simp
+  noConflict := by simp
+
+def noDependency : SState :=
+  ⟨{ initial.core with environment := emptyEnv "before", facts := [] }, []⟩
+
+theorem noDependency_scope : finiteScope noDependency.core :=
+  ⟨rfl, by simp [noDependency]⟩
+
+def notPending : SState :=
+  ⟨{ initial.core with environment := emptyEnv "seed", facts := [] }, []⟩
+
+theorem notPending_scope : finiteScope notPending.core :=
+  ⟨rfl, by simp [notPending]⟩
+
+def notPendingPacket : Packet.{0} :=
+  ⟨first, submissionFor .bound, objectFor .bound, "before", cap, charge⟩
+
+example : classify cap initial firstPacket initial_scope (Or.inr rfl) = some .accepted := by decide
+example : classify cap accepted.state secondPacket accepted_scope (Or.inr rfl) =
+    some (.refused .proof) := by decide
+example : classify cap initial malformedPacket initial_scope (Or.inr rfl) =
+    some (.refused .gate) := by decide
+example : classify cap initial extraBinderPacket initial_scope (Or.inr rfl) =
+    some (.refused .target) := by decide
+example : classify cap initial stalePacket initial_scope (Or.inr rfl) =
+    some (.refused .base) := by decide
+example : classify cap noDependency firstPacket noDependency_scope (Or.inr rfl) =
+    some (.refused .dependencies) := by decide
+example : classify cap notPending notPendingPacket notPending_scope (Or.inl rfl) =
+    some (.refused .pending) := by decide
+example : classify cap initial unavailableAppend initial_scope (Or.inr rfl) =
+    some (.refused .append) := by decide
+example : classify cap initial deniedPacket initial_scope (Or.inr rfl) =
+    some .reservationDenied := by decide
+example : classify (![8, 0, 8, 2] : ResourceVec) initial firstPacket initial_scope (Or.inr rfl) =
+    none := by decide
+
+/-- Duplicate names fail the append predicate. In this snapshot language
+the earlier stale-base check shadows duplicate-name failure on replay. -/
+theorem duplicate_append_false :
+    ¬ Pass accepted.state firstPacket .append := by
+  intro h
+  have member : entry1 ∈ accepted.state.core.environment.entries := by
+    change entry1 ∈ [entry0, entry1]
+    simp
+  exact h.fresh entry1 member rfl
+
+example : classify cap accepted.state firstPacket accepted_scope (Or.inr rfl) =
+    some (.refused .base) := by decide
+
+def absentObserver : Observer (C := checker) (G := Unit) (Reg := Unit) where
+  observe := fun _ _ _ => none
+  bound := by simp
+
+example : (runFinite true []).records.length = 0 := by decide
+example : (runFinite true []).remaining.length = 0 := by decide
+example : (evaluate P absentObserver D initial second initial_scope (Or.inr rfl)
+    [proposed]).remaining = [proposed] := by decide
+example : (runFinite true [proposed, proposed, proposed]).remaining = [proposed] := by decide
+example : (runFinite true [proposed, proposed, proposed]).records.map (fun r => r.disposition) =
+    [.accepted, .refused .proof] := by decide
+example : ((runFinite true [proposed, proposed, proposed]).outside.map
+    (fun a => a.submission.proofBytes)) = some [2] := by decide
+
+/-- Public hand-authored proposal generator; no hidden reference proof
+access or learned discovery is claimed. -/
 def publicReport (n : Nat) : List Submission := List.replicate n proposed
 
-def strategy (D : Decisions P cap) :=
+def strategy :=
   supervisedStrategy P (finiteObserver true) D
     (fun _ : SState => ()) (fun (_ : Unit) (_ : J) => (0 : Nat))
     Nat.succ publicReport
 
-theorem generated_witness (D : Decisions P cap) :
-    (strategy D).output initial second 2 = some witness := by
+theorem generated_witness : strategy.output start goal 2 = some witness := by
   rw [strategy, supervised_output]
   change completeWitness P (finiteObserver true)
-      (evaluate P (finiteObserver true) D initial second [proposed, proposed]) =
-        some witness
-  exact generic_two_event_witness D
+      (evaluate P (finiteObserver true) D initial second initial_scope (Or.inr rfl)
+        [proposed, proposed]) = some witness
+  exact generic_two_event_witness
 
 theorem hidden_view_noninterference (s t : SState) (p : J) (n : Nat) :
     publicOutput (fun _ : SState => ()) (fun (_ : Unit) (_ : J) => (0 : Nat))
@@ -681,34 +1047,32 @@ theorem fixture_foundation (env : Env) (f : Fact) (h : Admitted env f) :
   · rw [same]
     exact initial_derives_second
 
-/-- Retain the previous scoped two-event qualification as a regression
-criterion, not the general evaluator's admission policy. -/
-def qualification (D : Decisions P cap) : StrategyQualification (strategy D) :=
-  qualifyStrategy P policy_bridge (strategy D) (Deductive P initial.core)
+def qualification : StrategyQualification strategy :=
+  qualifyStrategy P D policy_bridge strategy (Deductive P initial.core)
     fixture_foundation
     (fun s p n e => s = initial ∧ p = second ∧ n = 2 ∧ e = witness)
     (fun _ _ _ e => e.cap) (fun _ _ _ _ _ => le_rfl)
 
-theorem fixed_budget_iff (D : Decisions P cap) (r : ResourceVec) :
-    Attainable (fixedDiscoveryModel (strategy D) (qualification D))
-      initial .discover r second ↔ cap ≤ r := by
+theorem fixed_budget_iff (r : ResourceVec) :
+    Attainable (fixedDiscoveryModel strategy qualification)
+      start .discover r goal ↔ cap ≤ r := by
   constructor
   · intro h
     obtain ⟨n, e, _, _, ha, hc⟩ :=
-      (fixed_attainable_iff (strategy D) (qualification D) initial second r).mp h
+      (fixed_attainable_iff strategy qualification start goal r).mp h
     have same : e = witness := ha.2.2.2
     subst e
     exact hc
   · intro h
-    apply (fixed_attainable_iff (strategy D) (qualification D) initial second r).mpr
-    exact ⟨2, witness, generated_witness D, witness_valid,
+    apply (fixed_attainable_iff strategy qualification start goal r).mpr
+    exact ⟨2, witness, generated_witness, witness_valid,
       ⟨rfl, rfl, rfl, rfl⟩, h⟩
 
-theorem insufficient_work (D : Decisions P cap) :
-    ¬ Attainable (fixedDiscoveryModel (strategy D) (qualification D))
-      initial .discover (![8, 1, 8, 2] : ResourceVec) second := by
+theorem insufficient_work :
+    ¬ Attainable (fixedDiscoveryModel strategy qualification)
+      start .discover (![8, 1, 8, 2] : ResourceVec) goal := by
   intro h
-  have le := (fixed_budget_iff D _).mp h
+  have le := (fixed_budget_iff _).mp h
   have impossible : (2 : Nat) ≤ 1 := le 1
   omega
 

@@ -10,7 +10,8 @@ Sofic sections 2.5, 4.1, 4.4, 5.12, 5.13.
 SOURCE_PROOF_CANDIDATE. Parsing, elaboration, exact-type checks, fresh kernel
 replay, transitive axiom audit and independent review: NOT_RUN.
 
-Math parent ea94543ac5cd34e9be9bf4d779a7b32fe88be34c; TransactionalDiscoveryContext
+Math parent 91d97ba1a8aacd10fb7a64be382431c9bc223aec; prior evaluator
+0e282fead4443f4d16e4d37d8ecdba98110da1f3; TransactionalDiscoveryContext
 f9b09052d2492ac94e3886ca683907d8314700a2, TransactionalDiscovery
 8da85c92c61743133682732ddf35ccd4000cbc35, FixedStrategyAttainability
 a971a30a546437404013e6d086e9ad8983d31089, ProtectedFiniteDiscovery
@@ -24,10 +25,12 @@ identity, actual base, Gate, pending target, prior dependencies and append
 conditions in fixed order. A finite decision procedure supplies Decidable for
 each actual predicate; the evaluator, not a caller-supplied verdict, selects the
 first false check. No classical oracle is used by the generic evaluator.
-A finite instance must realize those decisions from its own admissible data.
-The dependent-bound fixture instantiates observation and policy and proves
-its two-event regression conditional on a correct decision kit. It does not
-yet implement that entire kit for arbitrary contextual states.
+Decidability is scoped to an invariant of the actual core and an admitted
+target fragment. Arbitrary dependent functions and arbitrary Set-valued
+targets are not decidable. The invariant is preserved by the exact append
+and unchanged by refusal. The dependent-bound fixture supplies constructive
+deciders on this scoped domain. No decision oracle or proof of general
+Lean judgment equality is introduced.
 A name-only dependency link is scoped to the protected no-conflict environment;
 the trusted Gate must still supply actual dependency closure and identity.
 This initial fragment allows only prior installed dependencies (no implicit
@@ -264,11 +267,32 @@ def CommitBudget (cap : ResourceVec) (s : SState C G Reg) (a : Packet.{u})
 /-- These decisions are finite suppliers on the actual predicates. The
 evaluator below does not assert decidability of arbitrary contextual logic. -/
 structure Decisions (cap : ResourceVec) where
-  check : ∀ s a k, Decidable (Pass (C := C) (G := G) (Reg := Reg) s a k)
+  scope : CState C G Reg → Prop
+  target : Judgment.{u} → Prop
+  check : ∀ (s : SState C G Reg) (a : Packet.{u}),
+    scope s.core → target a.target → ∀ k, Decidable (Pass s a k)
   refusalFits : ∀ (s : SState C G Reg) (a : Packet.{u}),
     Decidable (Fits P cap s s.core a.charge)
   commitFits : ∀ (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a),
     Decidable (CommitBudget P cap s a h)
+  closed : ∀ (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a),
+    scope s.core → target a.target → scope (applyDelta s.core (appendDelta s a h))
+
+/-- Use subtypes of the existing state and judgment, not another
+mathematical state or registry. Scope evidence is supplied at ingress. -/
+abbrev ScopedState {cap : ResourceVec} (D : Decisions P cap) :=
+  {s : SState C G Reg // D.scope s.core}
+
+abbrev ScopedTarget {cap : ResourceVec} (D : Decisions P cap) :=
+  {q : Judgment.{u} // D.target q}
+
+def scopedModel {cap : ResourceVec} (D : Decisions P cap) :
+    ExecutionModel (ScopedState P D) (ScopedTarget P D) where
+  Witness := (discoveryModel P).Witness
+  derives := fun s q => (discoveryModel P).derives s.val q.val
+  valid := fun s j q e => (discoveryModel P).valid s.val j q.val e
+  cost := fun s j q e => (discoveryModel P).cost s.val j q.val e
+  sound := fun s j q e h => (discoveryModel P).sound s.val j q.val e h
 
 inductive Disposition where
   | accepted | refused (failed : Check) | reservationDenied
@@ -371,11 +395,12 @@ inductive Evaluation (cap : ResourceVec) (s : SState C G Reg) (a : Packet.{u}) w
   | outsideEnvelope (outside : ¬ Fits P cap s s.core a.charge)
 
 def evaluateOne {cap : ResourceVec} (D : Decisions P cap)
-    (s : SState C G Reg) (a : Packet.{u}) : Evaluation P cap s a :=
+    (s : SState C G Reg) (a : Packet.{u}) (hs : D.scope s.core)
+    (hq : D.target a.target) : Evaluation P cap s a :=
   match D.refusalFits s a with
   | .isFalse h => .outsideEnvelope h
   | .isTrue fits =>
-    match checkList (Pass s a) (D.check s a) checkOrder with
+    match checkList (Pass s a) (D.check s a hs hq) checkOrder with
     | .refused f => .completed (.refuse f fits)
     | .passed all =>
       let h : Eligible s a := fun k => all k (checkOrder_complete k)
@@ -450,9 +475,10 @@ theorem commit_implies_refusalFits {cap : ResourceVec} {s : SState C G Reg}
 compute the same exact accepted receipt (proof irrelevance only for witnesses
 of the predicates, never for object bytes). -/
 theorem evaluateOne_accept {cap : ResourceVec} (D : Decisions P cap)
-    (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a)
+    (s : SState C G Reg) (a : Packet.{u}) (hs : D.scope s.core)
+    (hq : D.target a.target) (h : Eligible s a)
     (b : CommitBudget P cap s a h) :
-    evaluateOne P D s a = .completed (.accept h b) := by
+    evaluateOne P D s a hs hq = .completed (.accept h b) := by
   unfold evaluateOne
   split
   · rename_i bad
@@ -466,10 +492,11 @@ theorem evaluateOne_accept {cap : ResourceVec} (D : Decisions P cap)
         exact (bad b).elim
 
 theorem evaluateOne_refuse {cap : ResourceVec} (D : Decisions P cap)
-    (s : SState C G Reg) (a : Packet.{u}) (fits : Fits P cap s s.core a.charge)
+    (s : SState C G Reg) (a : Packet.{u}) (hs : D.scope s.core)
+    (hq : D.target a.target) (fits : Fits P cap s s.core a.charge)
     (bad : ¬ Eligible s a) :
     ∃ f : FirstFailure (Pass s a) checkOrder,
-      evaluateOne P D s a = .completed (.refuse f fits) := by
+      evaluateOne P D s a hs hq = .completed (.refuse f fits) := by
   unfold evaluateOne
   split
   · rename_i no
@@ -479,6 +506,23 @@ theorem evaluateOne_refuse {cap : ResourceVec} (D : Decisions P cap)
       exact ⟨f, rfl⟩
     · rename_i all
       exact (bad (fun k => all k (checkOrder_complete k))).elim
+
+/-- All returned receipts preserve the constructive decision domain. -/
+theorem Receipt.scope_preserved {cap : ResourceVec} (D : Decisions P cap)
+    {s : SState C G Reg} {a : Packet.{u}} (r : Receipt P cap s a)
+    (hs : D.scope s.core) (hq : D.target a.target) :
+    D.scope (r.result P).state.core := by
+  cases r with
+  | accept h b => exact D.closed s a h hs hq
+  | refuse f fits => exact hs
+  | deny h b fits => exact hs
+
+/-- The decision program's observable classification; None is outside the
+envelope, not a mathematical refusal. -/
+def Evaluation.classification {cap : ResourceVec} {s : SState C G Reg}
+    {a : Packet.{u}} : Evaluation P cap s a → Option Disposition
+  | .completed r => some (r.disposition P)
+  | .outsideEnvelope _ => none
 
 theorem receipt_event_exact {cap : ResourceVec} {s : SState C G Reg}
     {a : Packet.{u}} (r : Receipt P cap s a) :
@@ -520,7 +564,8 @@ actual attained state. Continue after a qualified refusal; stop on absent
 observation or outside-envelope charge, retaining the entire untouched suffix.
 No hidden precomputed run is returned on an input-list match. -/
 def evaluate {cap : ResourceVec} (D : Decisions P cap)
-    (s : SState C G Reg) (q : Judgment.{u}) :
+    (s : SState C G Reg) (q : Judgment.{u}) (hs : D.scope s.core)
+    (hq : D.target q) :
     (input : List Submission) → Batch P O cap s q input
   | [] => ⟨[], [], s, none, Audit.nil s, rfl, by simp, trivial⟩
   | sub :: rest =>
@@ -528,12 +573,13 @@ def evaluate {cap : ResourceVec} (D : Decisions P cap)
     | none =>
       ⟨[], sub :: rest, s, none, Audit.nil s, rfl, by simp, ho⟩
     | some a =>
-      match evaluateOne P D s a with
+      let binding := O.bound s q sub a ho
+      have ha : D.target a.target := binding.1.symm ▸ hq
+      match evaluateOne P D s a hs ha with
       | .outsideEnvelope bad =>
         ⟨[], sub :: rest, s, some a, Audit.nil s, rfl, by simp, ⟨ho, bad⟩⟩
       | .completed r =>
-        let tail := evaluate D (r.result P).state q rest
-        let binding := O.bound s q sub a ho
+        let tail := evaluate D (r.result P).state q (r.scope_preserved P D hs ha) hq rest
         ⟨r.record P :: tail.records, tail.remaining, tail.final, tail.outside,
           Audit.cons r tail.audit, by
             change sub :: rest =
@@ -545,6 +591,29 @@ def evaluate {cap : ResourceVec} (D : Decisions P cap)
               change a.target = q ∧ O.observe s q a.submission = some a
               exact ⟨binding.1, binding.2.symm ▸ ho⟩
             · exact tail.origin rec later, tail.stopped⟩
+
+/-- A batch preserves the finite domain for every intermediate and final
+state. This follows from the actual Audit, not an assumption that a list
+of submissions is well-formed. -/
+theorem audit_scope {cap : ResourceVec} (D : Decisions P cap)
+    {s t : SState C G Reg}
+    {rs : List (Record (C := C) (G := G) (Reg := Reg))}
+    (h : Audit P cap s rs t) :
+    D.scope s.core → (∀ r, r ∈ rs → D.target r.packet.target) → D.scope t.core := by
+  induction h with
+  | nil s => intro hs _; exact hs
+  | cons r tail ih =>
+    intro hs targets
+    have hq := targets (r.record P) (List.mem_cons_self)
+    exact ih (r.scope_preserved P D hs hq)
+      (fun rec mem => targets rec (List.mem_cons_of_mem _ mem))
+
+theorem batch_scope {cap : ResourceVec} (D : Decisions P cap)
+    {s : SState C G Reg} {q : Judgment.{u}} {input : List Submission}
+    (b : Batch P O cap s q input) (hs : D.scope s.core) (hq : D.target q) :
+    D.scope b.final.core :=
+  audit_scope P D b.audit hs
+    (fun r mem => (b.origin r mem).1.symm ▸ hq)
 
 theorem batch_contract {cap : ResourceVec} {s : SState C G Reg}
     {q : Judgment.{u}} {input : List Submission}
@@ -623,38 +692,40 @@ the actual initial state and expected target for evaluation of the output. -/
 def supervisedStrategy {cap : ResourceVec} (D : Decisions P cap)
     (view : SState C G Reg → Input) (init : Input → Judgment.{u} → Config)
     (step : Config → Config) (report : Config → List Submission) :
-    FixedStrategy (discoveryModel P) (SState C G Reg)
-      (SState C G Reg × Judgment.{u} × Config) where
+    FixedStrategy (scopedModel P D) (ScopedState P D)
+      (ScopedState P D × ScopedTarget P D × Config) where
   view := id
-  init := fun s q => (s, q, init (view s) q)
+  init := fun s q => (s, q, init (view s.val) q.val)
   step := fun c => (c.1, c.2.1, step c.2.2)
   report := fun c =>
-    completeWitness P O (evaluate P O D c.1 c.2.1 (report c.2.2))
+    completeWitness P O (evaluate P O D c.1.val c.2.1.val
+      c.1.property c.2.1.property (report c.2.2))
 
-theorem supervised_iteration (step : Config → Config) (s : SState C G Reg)
-    (q : Judgment.{u}) (c : Config) (n : Nat) :
-    iterateStep (fun a : SState C G Reg × Judgment.{u} × Config =>
+theorem supervised_iteration {cap : ResourceVec} (D : Decisions P cap)
+    (step : Config → Config) (s : ScopedState P D)
+    (q : ScopedTarget P D) (c : Config) (n : Nat) :
+    iterateStep (fun a : ScopedState P D × ScopedTarget P D × Config =>
       (a.1, a.2.1, step a.2.2)) n (s, q, c) =
         (s, q, iterateStep step n c) := by
   induction n with
   | zero => rfl
-  | succ n ih =>
-    simp only [iterateStep, ih]
+  | succ n ih => simp only [iterateStep, ih]
 
 theorem supervised_output {cap : ResourceVec} (D : Decisions P cap)
     (view : SState C G Reg → Input) (init : Input → Judgment.{u} → Config)
     (step : Config → Config) (report : Config → List Submission)
-    (s : SState C G Reg) (q : Judgment.{u}) (n : Nat) :
+    (s : ScopedState P D) (q : ScopedTarget P D) (n : Nat) :
     (supervisedStrategy P O D view init step report).output s q n =
-      completeWitness P O (evaluate P O D s q (publicOutput view init step report s q n)) := by
+      completeWitness P O (evaluate P O D s.val q.val s.property q.property
+        (publicOutput view init step report s.val q.val n)) := by
   unfold FixedStrategy.output supervisedStrategy publicOutput
   rw [supervised_iteration]
 
-/-- Require a separate fixed deductive foundation supplier, not Meaning.
-Charge full generation, observer and checking costs via the independently
-admitted run policy. The abstract cap is only a lower bound on this charge. -/
-def qualifyStrategy (bridge : ContextualPolicy P)
-    (S : FixedStrategy (discoveryModel P) Input Config)
+/-- Separate fixed deductive foundation, exact admission and full cost.
+Scope restrictions change the domain, not the underlying execution witness. -/
+def qualifyStrategy {cap : ResourceVec} (D : Decisions P cap)
+    (bridge : ContextualPolicy P)
+    (S : FixedStrategy (scopedModel P D) Input Config)
     (Foundation : Judgment.{u} → Prop)
     (foundation : ∀ (env : ProtectedEnv C) (f : InstantiatedFact Judgment meaning),
       Admitted env f → Foundation f.atom)
@@ -664,35 +735,40 @@ def qualifyStrategy (bridge : ContextualPolicy P)
       DiscoveryWitness Judgment meaning G Reg (ProtectedEnv C) → ResourceVec)
     (dominates : ∀ s p n e, extra s p n e → e.cap ≤ full s p n e) :
     StrategyQualification S where
-  derives := Foundation
-  admitted := extra
-  fullCost := full
+  derives := fun q => Foundation q.val
+  admitted := fun s q n e => extra s.val q.val n e
+  fullCost := fun s q n e => full s.val q.val n e
   sound := by
     intro s p n e generated valid allowed
+    change (discoveryModel P).valid s.val .discover p.val e at valid
     obtain ⟨f, _, same, accepted⟩ := valid.2.2.2.2
     exact same ▸ foundation _ f ((bridge.admission _ _).mp accepted)
-  costDominates := dominates
+  costDominates := fun s p n e h => dominates s.val p.val n e h
 
 theorem supervised_attainable {cap : ResourceVec} (D : Decisions P cap)
     (view : SState C G Reg → Input) (init : Input → Judgment.{u} → Config)
     (step : Config → Config) (report : Config → List Submission)
-    (bridge : ContextualPolicy P) (s : SState C G Reg) (q : Judgment.{u}) (n : Nat)
+    (bridge : ContextualPolicy P) (s : ScopedState P D) (q : ScopedTarget P D) (n : Nat)
     (Q : StrategyQualification (supervisedStrategy P O D view init step report))
-    (hs : Safe P cap s) (pending : Pending s.core q)
-    (complete : (evaluate P O D s q (publicOutput view init step report s q n)).remaining = [])
-    (known : Known (evaluate P O D s q (publicOutput view init step report s q n)).final.core q)
+    (hs : Safe P cap s.val) (pending : Pending s.val.core q.val)
+    (complete : (evaluate P O D s.val q.val s.property q.property
+      (publicOutput view init step report s.val q.val n)).remaining = [])
+    (known : Known (evaluate P O D s.val q.val s.property q.property
+      (publicOutput view init step report s.val q.val n)).final.core q.val)
     (admitted : Q.admitted s q n
-      (batchWitness P O (evaluate P O D s q (publicOutput view init step report s q n))))
+      (batchWitness P O (evaluate P O D s.val q.val s.property q.property
+        (publicOutput view init step report s.val q.val n))))
     {r : ResourceVec}
     (budget : Q.fullCost s q n
-      (batchWitness P O (evaluate P O D s q (publicOutput view init step report s q n))) ≤ r) :
+      (batchWitness P O (evaluate P O D s.val q.val s.property q.property
+        (publicOutput view init step report s.val q.val n))) ≤ r) :
     Attainable (fixedDiscoveryModel (supervisedStrategy P O D view init step report) Q)
       s .discover r q := by
   apply (fixed_attainable_iff _ _ _ _ _).mpr
-  refine ⟨n, batchWitness P O _, ?_, batch_witness_valid P O bridge _ hs pending known,
-    admitted, budget⟩
-  rw [supervised_output]
-  simp [completeWitness, complete]
+  refine ⟨n, batchWitness P O _, ?_, ?_, admitted, budget⟩
+  · rw [supervised_output]
+    simp [completeWitness, complete]
+  · exact batch_witness_valid P O bridge _ hs pending known
 
 end Generator
 end GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition
