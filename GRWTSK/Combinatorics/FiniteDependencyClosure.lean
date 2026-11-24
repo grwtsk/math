@@ -225,3 +225,119 @@ theorem affectedClosure_empty (dependencies : Node → Finset Node) :
 end Dependencies
 
 end GRWTSK.ProofHorizon.CorkscrewChamberCap
+
+
+/-!
+## Coverage refinement for partial dependency observations
+
+Local attribution: grwtsk contributors.
+Consumer: grwtsk/sofic PR #1 at 76ec55b3d782e8f0fd5039d0d1e7906ee37f4807,
+issues #6/#10 (A04/A06). ArchitecturalInvariantValidator.cpp lines 344–373
+checks a lexical subset of C++ includes, not complete actual dependencies.
+SOURCE_PROOF_CANDIDATE. Elaboration, fresh kernel replay, transitive axiom
+audit and independent analytic review: NOT_RUN.
+
+For a common finite stable-ID domain, every actual dependency edge must have
+a reported dependency path; literal edge inclusion is sufficient but stronger
+than necessary. Induction concatenates those paths; the converse tests a
+singleton seed at each actual prerequisite. Taking the old/new union covers
+both revisions if identities have first been reconciled. Unknown completeness
+requires the full domain, not the observed closure. Test-selection completeness
+additionally requires coverage of the actual node-to-check relation. No claim
+that source parsing, compiler invocation or this Boolean certifies coverage;
+the actual dependencies, seeds, old/new identity map and check inventory
+must be supplied independently.
+-/
+
+namespace GRWTSK.ProofHorizon.CorkscrewChamberCap
+
+section CoverageRefinement
+
+universe u v
+
+variable {Node : Type u} [Fintype Node] [DecidableEq Node]
+
+/-- Each actual edge has a reported path, on the same stable-ID domain. -/
+def DependencyCoverage (actual reported : Node → Finset Node) : Prop :=
+  ∀ consumer prerequisite, prerequisite ∈ actual consumer →
+    DependencyPath reported consumer prerequisite
+
+theorem dependencyPath_of_coverage (actual reported : Node → Finset Node)
+    (covered : DependencyCoverage actual reported) {consumer prerequisite : Node}
+    (path : DependencyPath actual consumer prerequisite) :
+    DependencyPath reported consumer prerequisite := by
+  induction path with
+  | refl => exact .refl _
+  | step hedge _ ih => exact (covered _ _ hedge).trans ih
+
+/-- Exact weakest graph-theoretic coverage for conservative closure at
+every seed set, including singleton probes and cycles. -/
+theorem affectedClosure_subset_iff_coverage (actual reported : Node → Finset Node) :
+    (∀ seeds, affectedClosure actual seeds ⊆ affectedClosure reported seeds) ↔
+      DependencyCoverage actual reported := by
+  constructor
+  · intro h consumer prerequisite hedge
+    have hc : consumer ∈ affectedClosure actual {prerequisite} :=
+      (mem_affectedClosure_iff actual {prerequisite} consumer).2
+        ⟨prerequisite, by simp, .step hedge (.refl prerequisite)⟩
+    obtain ⟨seed, hs, path⟩ :=
+      (mem_affectedClosure_iff reported {prerequisite} consumer).1
+        (h {prerequisite} hc)
+    have same : seed = prerequisite := Finset.mem_singleton.mp hs
+    simpa only [same] using path
+  · intro covered seeds consumer hc
+    obtain ⟨seed, hs, path⟩ :=
+      (mem_affectedClosure_iff actual seeds consumer).1 hc
+    exact (mem_affectedClosure_iff reported seeds consumer).2
+      ⟨seed, hs, dependencyPath_of_coverage actual reported covered path⟩
+
+theorem edge_inclusion_implies_coverage (actual reported : Node → Finset Node)
+    (edges : ∀ consumer, actual consumer ⊆ reported consumer) :
+    DependencyCoverage actual reported := by
+  intro consumer prerequisite hedge
+  exact .step (edges consumer hedge) (.refl prerequisite)
+
+/-- After stable-ID reconciliation, retain paths affected in either revision. -/
+theorem old_new_union_covers (old new : Node → Finset Node) (seeds : Finset Node) :
+    affectedClosure old seeds ⊆ affectedClosure (fun c => old c ∪ new c) seeds ∧
+    affectedClosure new seeds ⊆ affectedClosure (fun c => old c ∪ new c) seeds := by
+  have left : DependencyCoverage old (fun c => old c ∪ new c) :=
+    edge_inclusion_implies_coverage old _ (fun _ => Finset.subset_union_left)
+  have right : DependencyCoverage new (fun c => old c ∪ new c) :=
+    edge_inclusion_implies_coverage new _ (fun _ => Finset.subset_union_right)
+  exact ⟨(affectedClosure_subset_iff_coverage old _).2 left seeds,
+    (affectedClosure_subset_iff_coverage new _).2 right seeds⟩
+
+/-- A false certification flag is a conservative full-domain fallback. -/
+def conservativeAffected (certified : Bool) (reported : Node → Finset Node)
+    (seeds : Finset Node) : Finset Node :=
+  if certified then affectedClosure reported seeds else Finset.univ
+
+theorem conservativeAffected_sound (certified : Bool) (actual reported : Node → Finset Node)
+    (seeds : Finset Node) (coverage : certified = true → DependencyCoverage actual reported) :
+    affectedClosure actual seeds ⊆ conservativeAffected certified reported seeds := by
+  cases certified with
+  | false =>
+      intro c _
+      simp [conservativeAffected]
+  | true =>
+      simpa [conservativeAffected] using
+        (affectedClosure_subset_iff_coverage actual reported).2 (coverage rfl) seeds
+
+variable {Check : Type v}
+
+/-- Node coverage alone is insufficient: the actual check relation must also
+be covered. This theorem supplies the exact selected-check implication. -/
+theorem selected_check_of_coverage (actual reported : Node → Finset Node)
+    (seeds : Finset Node) (covered : DependencyCoverage actual reported)
+    (actualChecks reportedChecks : Node → Check → Prop)
+    (checks : ∀ c k, actualChecks c k → reportedChecks c k) (k : Check)
+    (affected : ∃ c ∈ affectedClosure actual seeds, actualChecks c k) :
+    ∃ c ∈ affectedClosure reported seeds, reportedChecks c k := by
+  obtain ⟨c, hc, hcheck⟩ := affected
+  exact ⟨c, (affectedClosure_subset_iff_coverage actual reported).2 covered seeds hc,
+    checks c k hcheck⟩
+
+end CoverageRefinement
+
+end GRWTSK.ProofHorizon.CorkscrewChamberCap

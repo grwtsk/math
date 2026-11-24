@@ -232,3 +232,112 @@ theorem noncommuting_stages :
 
 end Stage
 end GRWTSK.Processing
+
+
+/-!
+## Evidence-preserving verification classification
+
+Local attribution: grwtsk contributors.
+Consumer: grwtsk/sofic PR #1 at 76ec55b3d782e8f0fd5039d0d1e7906ee37f4807,
+issues #8 and #10 (A04/A09). AppleContainer.py lines 34–46 and
+CompilerRunner.py lines 193–222 collapse distinct stages into exit code 42.
+SOURCE_PROOF_CANDIDATE. Elaboration, fresh kernel replay, transitive axiom
+audit and independent analytic review: NOT_RUN.
+
+Reuse Outcome; no second operational ledger. The finite input labels describe
+observations already classified by an independent source-bound observer.
+In particular executedFail requires validated evidence of failure at the
+named stage; a missing report or nonzero process exit does not supply it.
+The Boolean binding is a mathematical abstraction of the observer's
+obligation, not authentication. Invalid or interrupted evidence stays
+distinct from an executed failure. Sequencing retains the first nonpassing
+phase. The equivalences follow by eliminating the first nonpassing stage;
+the coarse-code collision refutes recovering semantic disposition from 42
+alone. Runtime authentication, observation and execution refinement remain
+separate suppliers. No theorem failure follows from any of these labels.
+-/
+
+namespace GRWTSK.Processing.Verification
+
+inductive Phase where
+  | configure | build | inventory | tests
+  deriving DecidableEq, Repr
+
+inductive PhaseEvidence where
+  | notRun | invalidEvidence | interrupted | operationalFailure
+  | executedPass | executedFail
+  deriving DecidableEq, Repr
+
+inductive VerificationFailure where
+  | unbound
+  | invalidEvidence (phase : Phase)
+  | interrupted (phase : Phase)
+  | operational (phase : Phase)
+  | executed (phase : Phase)
+  deriving DecidableEq, Repr
+
+def classifyPhase (phase : Phase) :
+    PhaseEvidence → Outcome Phase VerificationFailure Unit
+  | .notRun => .refused phase
+  | .invalidEvidence => .failed (.invalidEvidence phase)
+  | .interrupted => .failed (.interrupted phase)
+  | .operationalFailure => .failed (.operational phase)
+  | .executedPass => .success ()
+  | .executedFail => .failed (.executed phase)
+
+/-- The later stage cannot replace an earlier refusal or failure. -/
+def classifyVerification (bound : Bool)
+    (configure build inventory tests : PhaseEvidence) :
+    Outcome Phase VerificationFailure Unit :=
+  if bound then
+    Outcome.bind (classifyPhase .configure configure) fun _ =>
+      Outcome.bind (classifyPhase .build build) fun _ =>
+        Outcome.bind (classifyPhase .inventory inventory) fun _ =>
+          classifyPhase .tests tests
+  else .failed .unbound
+
+theorem classifyVerification_pass_iff (bound : Bool)
+    (configure build inventory tests : PhaseEvidence) :
+    classifyVerification bound configure build inventory tests = .success () ↔
+      bound = true ∧ configure = .executedPass ∧ build = .executedPass ∧
+        inventory = .executedPass ∧ tests = .executedPass := by
+  cases bound <;> simp [classifyVerification, classifyPhase, Outcome.bind] <;>
+    cases configure <;> simp [classifyPhase, Outcome.bind] <;>
+    cases build <;> simp [classifyPhase, Outcome.bind] <;>
+    cases inventory <;> simp [classifyPhase, Outcome.bind] <;>
+    cases tests <;> simp [classifyPhase, Outcome.bind]
+
+/-- An executed test failure requires all earlier stages to pass and actual
+test-failure evidence. It is not the complement of successful verification. -/
+theorem classifyVerification_test_failure_iff (bound : Bool)
+    (configure build inventory tests : PhaseEvidence) :
+    classifyVerification bound configure build inventory tests =
+      .failed (.executed .tests) ↔
+      bound = true ∧ configure = .executedPass ∧ build = .executedPass ∧
+        inventory = .executedPass ∧ tests = .executedFail := by
+  cases bound <;> simp [classifyVerification, classifyPhase, Outcome.bind] <;>
+    cases configure <;> simp [classifyPhase, Outcome.bind] <;>
+    cases build <;> simp [classifyPhase, Outcome.bind] <;>
+    cases inventory <;> simp [classifyPhase, Outcome.bind] <;>
+    cases tests <;> simp [classifyPhase, Outcome.bind]
+
+theorem invalid_test_evidence_not_test_failure :
+    classifyVerification true .executedPass .executedPass .executedPass
+      .invalidEvidence ≠ .failed (.executed .tests) := by
+  simp [classifyVerification, classifyPhase, Outcome.bind]
+
+/-- Restricted coarse projection illustrating the lost information in 42,
+not a claim that every real operational termination has this exit code. -/
+def coarseFailureCode : Outcome Phase VerificationFailure Unit → Nat
+  | .success _ => 0
+  | .refused _ => 42
+  | .failed _ => 42
+
+theorem coarse_failure_collision :
+    let a := classifyVerification true .executedFail .notRun .notRun .notRun
+    let b := classifyVerification true .executedPass .executedPass
+      .executedPass .invalidEvidence
+    coarseFailureCode a = coarseFailureCode b ∧ a ≠ b := by
+  simp [classifyVerification, classifyPhase, Outcome.bind, coarseFailureCode]
+
+end GRWTSK.Processing.Verification

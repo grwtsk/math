@@ -187,3 +187,91 @@ theorem strictImprovement_iff_frontier_gap
     exact hnot ((frontier_characterization A I j p m).1 h)
 
 end GRWTSK.ResourceAttainability
+
+
+/-!
+## Snapshot receipt growth and shared trace replay
+
+Local attribution: grwtsk contributors.
+Consumer: grwtsk/sofic PR #1 at 76ec55b3d782e8f0fd5039d0d1e7906ee37f4807,
+ProtectedFiniteTransition.hpp lines 262–279; math #1851, Sofic #10 A07.
+SOURCE_PROOF_CANDIDATE. Elaboration, fresh kernel replay, transitive axiom
+audit and independent analytic review: NOT_RUN.
+
+With m existing events and n recorded transitions, receipt i (zero based)
+copies m+i events before and m+i+1 after. Summing exactly gives
+2*m*n+n*n additional trace-event slots across those receipts. Induction on n
+proves the identity. This counts event slots, not bytes, allocator overhead,
+peak RSS or total work. A single exact append-only event list retains m+n
+slots. A replayed prefix recovers each before/after trace value by list
+induction and associativity, without conflating the value with its physical
+representation. To replace the C++ receipt representation, also reconstruct
+all core states, packets, identifiers and dispositions, and charge indexing,
+serialization, ownership, reconstruction, observations and physical allocation.
+No proof of whole-state replay, hard resource enforcement, or all-budget
+filtration improvement follows from the event-list result.
+-/
+
+namespace GRWTSK.ResourceAttainability
+
+/-- Count additional trace-event slots in n value-copy before/after receipts;
+initial trace has m events. The current state and other fields are excluded. -/
+def copiedTraceSlots (m : Nat) : Nat → Nat
+  | 0 => 0
+  | n + 1 => copiedTraceSlots m n + (m + n) + (m + n + 1)
+
+theorem copiedTraceSlots_formula (m n : Nat) :
+    copiedTraceSlots m n = 2 * m * n + n * n := by
+  induction n with
+  | zero => simp [copiedTraceSlots]
+  | succ n ih =>
+      rw [copiedTraceSlots, ih]
+      ring
+
+/-- In particular even an initially empty trace needs n squared copied slots. -/
+theorem copiedTraceSlots_empty (n : Nat) :
+    copiedTraceSlots 0 n = n * n := by
+  simp [copiedTraceSlots_formula]
+
+example : copiedTraceSlots 0 2 = 4 := by decide
+
+universe u
+variable {Event : Type u}
+
+/-- Exact logical reconstruction from an authenticated initial trace and
+the ordered suffix of event deltas; not a proposed quadratic runtime replay. -/
+def replayTrace (base deltas : List Event) : List Event :=
+  deltas.foldl (fun trace event => trace ++ [event]) base
+
+theorem replayTrace_eq_append (base deltas : List Event) :
+    replayTrace base deltas = base ++ deltas := by
+  induction deltas generalizing base with
+  | nil => simp [replayTrace]
+  | cons event rest ih =>
+      change replayTrace (base ++ [event]) rest = base ++ (event :: rest)
+      rw [ih]
+      simp [List.append_assoc]
+
+/-- Every exact preceding prefix and next event reconstructs both old receipt
+trace values. The index-to-prefix and core-state reconstruction are separate. -/
+theorem replayTrace_receipt_pair (base preceding : List Event) (event : Event) :
+    (replayTrace base preceding, replayTrace base (preceding ++ [event])) =
+      (base ++ preceding, (base ++ preceding) ++ [event]) := by
+  simp [replayTrace_eq_append, List.append_assoc]
+
+theorem sharedTraceSlots (base deltas : List Event) :
+    (base ++ deltas).length = base.length + deltas.length := by
+  simp
+
+/-- An already retained journal survives computation and new receipt
+production. Under that lifetime hypothesis the exact two peak tests include
+the old retained payload and the intermediate computation output. -/
+theorem retainedJournal_budget_iff (journal budget : Nat)
+    (operation receipt : PayloadPair) :
+    journal + (payloadCompose operation receipt).2 ≤ budget ↔
+      journal + operation.2 ≤ budget ∧
+        journal + operation.1 + receipt.2 ≤ budget := by
+  simp only [payloadCompose]
+  omega
+
+end GRWTSK.ResourceAttainability
