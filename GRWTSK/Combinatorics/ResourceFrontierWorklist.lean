@@ -206,18 +206,18 @@ inductive Run (G : FiniteCostGraph n) : Frontier n → Frontier n → Prop where
 theorem exists_saturation (G : FiniteCostGraph n) (F : Frontier n) :
     ∃ H, Run G F H ∧ Closed G H := by
   classical
-  induction F using (grow_wellFounded G).induction with
-  | h F ih =>
-    by_cases h : Closed G F
-    · exact ⟨F, Run.refl F, h⟩
-    · have hex : ∃ x ∈ candidates G F, ¬ Covered F x := by
-        unfold Closed at h
-        push_neg at h
-        exact h
-      obtain ⟨x, hx, hnew⟩ := hex
-      have hg : Grow G (insertLabel F x) F := ⟨x, hx, hnew, rfl⟩
-      obtain ⟨H, hrun, hclosed⟩ := ih _ hg
-      exact ⟨H, Run.step hg hrun, hclosed⟩
+  refine (grow_wellFounded G).induction F ?_
+  intro F ih
+  by_cases h : Closed G F
+  · exact ⟨F, Run.refl F, h⟩
+  · have hex : ∃ x ∈ candidates G F, ¬ Covered F x := by
+      unfold Closed at h
+      push_neg at h
+      exact h
+    obtain ⟨x, hx, hnew⟩ := hex
+    have hg : Grow G (insertLabel F x) F := ⟨x, hx, hnew, rfl⟩
+    obtain ⟨H, hrun, hclosed⟩ := ih _ hg
+    exact ⟨H, Run.step hg hrun, hclosed⟩
 
 theorem candidate_sound (G : FiniteCostGraph n) (F : Frontier n)
     (hF : Sound G F) {x : Label n} (hx : x ∈ candidates G F) :
@@ -296,11 +296,11 @@ theorem terminal_unique (G : FiniteCostGraph n) {F H : Frontier n}
 
 theorem sound_empty (G : FiniteCostGraph n) : Sound G ∅ := by
   intro x hx
-  exact (Finset.notMem_empty x hx).elim
+  simp at hx
 
 theorem reduced_empty : Reduced (∅ : Frontier n) := by
   intro a ha
-  exact (Finset.notMem_empty a ha).elim
+  simp at ha
 
 theorem worklist_order_independent (G : FiniteCostGraph n)
     {F H : Frontier n} (rF : Run G ∅ F) (rH : Run G ∅ H)
@@ -348,5 +348,96 @@ theorem refinement_path_cover {G H : FiniteCostGraph n}
     obtain ⟨d, hd, hds, hdt, hdc⟩ := he e hedge
     exact ⟨advance b d, Path.extend hb hd (hds.trans (hsrc.trans hba.1.symm)),
       hdt, serialCost_mono hba.2 hdc⟩
+
+
+/-- For arbitrary graph edits, a reduced set of revalidated labels suffices.
+No old path label is trusted merely because it was in a prior frontier. -/
+theorem revalidated_resume (G : FiniteCostGraph n)
+    {F K L : Frontier n} (hs : Sound G F) (hr : Reduced F)
+    (resume : Run G F K) (fresh : Run G ∅ L)
+    (ck : Closed G K) (cl : Closed G L) : K = L :=
+  terminal_unique G (run_sound G resume hs) ck (run_reduced G resume hr)
+    (run_sound G fresh (sound_empty G)) cl (run_reduced G fresh reduced_empty)
+
+theorem refinement_terminal_subset {G H : FiniteCostGraph n}
+    (hs : ∀ a ∈ H.seeds, ∃ b ∈ G.seeds, labelLE b a)
+    (he : ∀ e ∈ H.edges, ∃ d ∈ G.edges,
+      d.1 = e.1 ∧ d.2.1 = e.2.1 ∧ d.2.2 ≤ e.2.2)
+    {F K : Frontier n} (hc : Closed G F) (hk : Sound H K)
+    {x : Label n} (hx : Covered K x) : Covered F x := by
+  obtain ⟨a, ha, hax⟩ := hx
+  obtain ⟨b, hb, hba⟩ := refinement_path_cover hs he (hk a ha)
+  exact covered_trans (path_covered G F hc hb) (labelLE_trans hba hax)
+
+universe u
+variable {V : Type u}
+
+/-- Concrete finite serial paths. The endpoint/charge realization theorem
+for a consumer is a separate obligation, not assumed to hold for all C++. -/
+inductive ConcretePath
+    (seed : V → ResourceVec → Prop)
+    (step : V → V → ResourceVec → Prop) : V → ResourceVec → Prop where
+  | seed {v : V} {a : ResourceVec} : seed v a → ConcretePath seed step v a
+  | extend {v w : V} {a b : ResourceVec} :
+      ConcretePath seed step v a → step v w b →
+      ConcretePath seed step w (serialCost a b)
+
+theorem concrete_path_lower
+    (G : FiniteCostGraph n) (alpha : V → Fin n)
+    (seed : V → ResourceVec → Prop) (step : V → V → ResourceVec → Prop)
+    (hs : ∀ v a, seed v a → ∃ x ∈ G.seeds, labelLE x (alpha v, a))
+    (he : ∀ v w b, step v w b → ∃ e ∈ G.edges,
+      e.1 = alpha v ∧ e.2.1 = alpha w ∧ e.2.2 ≤ b)
+    {v : V} {a : ResourceVec} (hp : ConcretePath seed step v a) :
+    ∃ x, Path G x ∧ labelLE x (alpha v, a) := by
+  induction hp with
+  | seed h =>
+    obtain ⟨x, hx, hle⟩ := hs _ _ h
+    exact ⟨x, Path.seed hx, hle⟩
+  | @extend v w a b _ hstep ih =>
+    obtain ⟨x, hx, hxa⟩ := ih
+    obtain ⟨e, hedge, hsrc, hdst, hcost⟩ := he v w b hstep
+    exact ⟨advance x e, Path.extend hx hedge (hsrc.trans hxa.1.symm),
+      hdst, serialCost_mono hxa.2 hcost⟩
+
+theorem concrete_path_terminal_cover
+    (G : FiniteCostGraph n) (alpha : V → Fin n)
+    (seed : V → ResourceVec → Prop) (step : V → V → ResourceVec → Prop)
+    (hs : ∀ v a, seed v a → ∃ x ∈ G.seeds, labelLE x (alpha v, a))
+    (he : ∀ v w b, step v w b → ∃ e ∈ G.edges,
+      e.1 = alpha v ∧ e.2.1 = alpha w ∧ e.2.2 ≤ b)
+    {F : Frontier n} (hc : Closed G F)
+    {v : V} {a : ResourceVec} (hp : ConcretePath seed step v a) :
+    Covered F (alpha v, a) := by
+  obtain ⟨x, hx, hle⟩ := concrete_path_lower G alpha seed step hs he hp
+  exact covered_trans (path_covered G F hc hx) hle
+
+universe v w z
+variable {State : Type v} {Claim : Type w}
+
+/-- Every valid witness is covered by a terminal label in its abstract
+accepting class, conditional on the explicit concrete execution refinement.
+Even a zero-cost label is sound only for the declared context. -/
+theorem terminal_execution_cover
+    (A : ExecutionModel.{v,w,z} State Claim)
+    (I : State) (j : Mode) (p : Claim)
+    (G : FiniteCostGraph n) (alpha : V → Fin n)
+    (seed : V → ResourceVec → Prop) (step : V → V → ResourceVec → Prop)
+    (accept : Fin n → Prop)
+    (hs : ∀ v a, seed v a → ∃ x ∈ G.seeds, labelLE x (alpha v, a))
+    (he : ∀ v w b, step v w b → ∃ e ∈ G.edges,
+      e.1 = alpha v ∧ e.2.1 = alpha w ∧ e.2.2 ≤ b)
+    (realize : ∀ e, A.valid I j p e → ∃ v a,
+      ConcretePath seed step v a ∧ accept (alpha v) ∧ a ≤ A.cost I j p e)
+    {F : Frontier n} (hc : Closed G F) :
+    ∀ e, A.valid I j p e →
+      ∃ x ∈ F, accept x.1 ∧ x.2 ≤ A.cost I j p e := by
+  intro e hv
+  obtain ⟨v, a, hp, hac, hcost⟩ := realize e hv
+  obtain ⟨x, hx, hxa⟩ :=
+    concrete_path_terminal_cover G alpha seed step hs he hc hp
+  refine ⟨x, hx, ?_, le_trans hxa.2 hcost⟩
+  rw [hxa.1]
+  exact hac
 
 end GRWTSK.ResourceAttainability.Worklist
