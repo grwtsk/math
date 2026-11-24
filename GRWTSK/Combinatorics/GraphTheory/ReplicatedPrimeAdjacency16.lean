@@ -173,7 +173,7 @@ theorem parity_two_flips (x : Cell 4) (i j : Port 4) :
     parity (neighbor (neighbor x i) j) = parity x := by
   rw [parity_neighbor, parity_neighbor]
   have htwo : (1 : ZMod 2) + 1 = 0 := by decide
-  rw [← add_assoc, htwo, add_zero]
+  rw [add_assoc, htwo, add_zero]
 
 /-- A two-face-step endpoint is not any one-face-step endpoint.
 This is the triangle-free property of the actual binary cube. -/
