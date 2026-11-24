@@ -562,9 +562,9 @@ private def via {p q : Prop} (d : Decidable p) (h : p ↔ q) : Decidable q :=
   | .isTrue hp => .isTrue (h.mp hp)
   | .isFalse hp => .isFalse (fun hq => hp (h.mpr hq))
 
-/-- Finite scans require no equality on proof-bearing entries. -/
 universe a
 
+/-- Finite scans require no equality on proof-bearing entries. -/
 private def allList {A : Type a} (p : A → Prop) (test : ∀ a, Decidable (p a)) :
     (xs : List A) → Decidable (∀ a, a ∈ xs → p a)
   | [] => .isTrue (by simp)

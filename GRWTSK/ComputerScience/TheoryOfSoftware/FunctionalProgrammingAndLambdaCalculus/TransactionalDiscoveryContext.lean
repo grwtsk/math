@@ -426,11 +426,11 @@ structure DiscoveryWitness (J : Type u) (Meaning : J → Prop)
   events : List (Event J)
   final : State J Meaning G Reg Env
 
+/-- Fixed contextual derivability, not membership of the initial inventory.
+Discovery may add a genuinely new fact; initial Deductive is not implied. -/
 def discoveryModel (P : Policy J Meaning G Reg Env Obs) :
     ExecutionModel (State J Meaning G Reg Env) J where
   Witness := DiscoveryWitness J Meaning G Reg Env
-  /-- Fixed contextual derivability, not membership of the initial inventory.
-  Discovery may add a genuinely new fact; initial Deductive is not implied. -/
   derives := fun _ p => Meaning p
   valid := fun s j p e =>
     j = .discover ∧ Pending s.core p ∧ Safe P e.cap s ∧
