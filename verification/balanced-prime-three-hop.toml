@@ -117,7 +117,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.BalancedPrimeThreeHop16"
 path = "GRWTSK/Combinatorics/GraphTheory/BalancedPrimeThreeHop16.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16"
-git_blob = "3fd4c3126ab9cde80901e7b05763f1a213479041"
+git_blob = "e87b90948db35e8bcb51cdd3092793c9cbdcd190"
 theorems = [
   "firstPort_bijective",
   "secondPort_bijective",
