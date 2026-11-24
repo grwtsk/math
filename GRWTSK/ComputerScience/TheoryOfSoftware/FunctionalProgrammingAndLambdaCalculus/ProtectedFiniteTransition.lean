@@ -82,11 +82,11 @@ open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInfere
 universe u v w y x z
 
 abbrev CState (C : TrustedChecker.{u}) (G : Type v) (Reg : Type w) :=
-  Core Judgment meaning G Reg (ProtectedEnv C)
+  Core Judgment.{u} meaning G Reg (ProtectedEnv C)
 abbrev SState (C : TrustedChecker.{u}) (G : Type v) (Reg : Type w) :=
-  State Judgment meaning G Reg (ProtectedEnv C)
+  State Judgment.{u} meaning G Reg (ProtectedEnv C)
 abbrev Result (C : TrustedChecker.{u}) (G : Type v) (Reg : Type w) :=
-  AttemptResult Judgment meaning G Reg (ProtectedEnv C)
+  AttemptResult Judgment.{u} meaning G Reg (ProtectedEnv C)
 
 variable {C : TrustedChecker.{u}} {G : Type v} {Reg : Type w} {Obs : Type y}
 
@@ -118,7 +118,7 @@ def PriorDependencies (s : SState C G Reg) (a : Packet.{u}) : Prop :=
       e.object.key.source.declaration = d
 
 structure AppendOK (s : SState C G Reg) (a : Packet.{u}) : Prop where
-  extends : C.extendsSnapshot s.core.environment.snapshot a.nextSnapshot
+  «extends» : C.extendsSnapshot s.core.environment.snapshot a.nextSnapshot
   retained : ∀ e, e ∈ s.core.environment.entries → C.present a.nextSnapshot e.object
   installed : C.present a.nextSnapshot a.observed
   fresh : ∀ e, e ∈ s.core.environment.entries →
@@ -208,7 +208,7 @@ def appendEnvironment (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a) :
 
 theorem append_extends (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a) :
     Extends s.core.environment (appendEnvironment s a h) :=
-  ⟨(h .append).extends, [entry s a h], rfl⟩
+  ⟨(h .append).«extends», [entry s a h], rfl⟩
 
 theorem exact_append (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a) :
     ∃ e : Entry C, e ∈ (appendEnvironment s a h).entries ∧
@@ -220,12 +220,12 @@ theorem exact_append (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a) :
 /-- Preserve the existing Policy type. This bridge pins its two environment
 relations to the existing contextual semantics, not a second policy store. -/
 structure ContextualPolicy
-    (P : Policy Judgment meaning G Reg (ProtectedEnv C) Obs) : Prop where
+    (P : Policy Judgment.{u} meaning G Reg (ProtectedEnv C) Obs) : Prop where
   admission : ∀ env f, P.admitted env f ↔ Admitted env f
   extension : ∀ old new, P.extendsEnv old new ↔ Extends old new
 
 def appendDelta (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a) :
-    Delta Judgment meaning G Reg (ProtectedEnv C) where
+    Delta Judgment.{u} meaning G Reg (ProtectedEnv C) where
   graph := s.core.graph
   added := [(entry s a h).fact]
   branches := []
@@ -240,7 +240,7 @@ theorem append_known (s : SState C G Reg) (a : Packet.{u}) (h : Eligible s a) :
   refine ⟨(entry s a h).fact, ?_, rfl⟩
   exact List.mem_append.mpr (Or.inr (List.mem_singleton.mpr rfl))
 
-variable (P : Policy Judgment meaning G Reg (ProtectedEnv C) Obs)
+variable (P : Policy Judgment.{u} meaning G Reg (ProtectedEnv C) Obs)
 
 theorem append_valid (bridge : ContextualPolicy P)
     {s : SState C G Reg} (hs : CoreSafe P s.core)
@@ -420,7 +420,8 @@ def Receipt.record {cap : ResourceVec} {s : SState C G Reg} {a : Packet.{u}}
     (r : Receipt P cap s a) : Record (C := C) (G := G) (Reg := Reg) :=
   ⟨a, s, r.result P, r.disposition P⟩
 
-inductive Audit (cap : ResourceVec) :
+inductive Audit (P : Policy Judgment.{u} meaning G Reg (ProtectedEnv C) Obs)
+    (cap : ResourceVec) :
     SState C G Reg → List (Record (C := C) (G := G) (Reg := Reg)) →
       SState C G Reg → Prop where
   | nil (s) : Audit P cap s [] s
@@ -428,7 +429,7 @@ inductive Audit (cap : ResourceVec) :
       (r : Receipt P cap s a) (tail : Audit P cap (r.result P).state rs t) :
       Audit P cap s (r.record P :: rs) t
 
-def events (rs : List (Record (C := C) (G := G) (Reg := Reg))) : List (Event Judgment) :=
+def events (rs : List (Record (C := C) (G := G) (Reg := Reg))) : List (Event Judgment.{u}) :=
   rs.flatMap (fun r => r.result.events)
 
 theorem audit_run {cap : ResourceVec} {s t : SState C G Reg} {rs : List (Record (C := C) (G := G) (Reg := Reg))}
@@ -479,17 +480,18 @@ theorem evaluateOne_accept {cap : ResourceVec} (D : Decisions P cap)
     (hq : D.target a.target) (h : Eligible s a)
     (b : CommitBudget P cap s a h) :
     evaluateOne P D s a hs hq = .completed (.accept h b) := by
-  unfold evaluateOne
-  split
-  · rename_i bad
-    exact (bad (commit_implies_refusalFits P b)).elim
-  · split
-    · rename_i f
+  cases hr : D.refusalFits s a with
+  | isFalse no =>
+    exact (no (commit_implies_refusalFits P b)).elim
+  | isTrue fits =>
+    cases hc : checkList (Pass s a) (D.check s a hs hq) checkOrder with
+    | refused f =>
       exact (failed_not_eligible f h).elim
-    · split
-      · rfl
-      · rename_i bad
-        exact (bad b).elim
+    | passed all =>
+      cases hb : D.commitFits s a (fun k => all k (checkOrder_complete k)) with
+      | isFalse no => exact (no b).elim
+      | isTrue yes =>
+        simp only [evaluateOne, hr, hc, hb]
 
 theorem evaluateOne_refuse {cap : ResourceVec} (D : Decisions P cap)
     (s : SState C G Reg) (a : Packet.{u}) (hs : D.scope s.core)
@@ -497,14 +499,14 @@ theorem evaluateOne_refuse {cap : ResourceVec} (D : Decisions P cap)
     (bad : ¬ Eligible s a) :
     ∃ f : FirstFailure (Pass s a) checkOrder,
       evaluateOne P D s a hs hq = .completed (.refuse f fits) := by
-  unfold evaluateOne
-  split
-  · rename_i no
-    exact (no fits).elim
-  · split
-    · rename_i f
-      exact ⟨f, rfl⟩
-    · rename_i all
+  cases hr : D.refusalFits s a with
+  | isFalse no => exact (no fits).elim
+  | isTrue yes =>
+    cases hc : checkList (Pass s a) (D.check s a hs hq) checkOrder with
+    | refused f =>
+      refine ⟨f, ?_⟩
+      simp only [evaluateOne, hr, hc]
+    | passed all =>
       exact (bad (fun k => all k (checkOrder_complete k))).elim
 
 /-- All returned receipts preserve the constructive decision domain. -/
@@ -604,7 +606,7 @@ theorem audit_scope {cap : ResourceVec} (D : Decisions P cap)
   | nil s => intro hs _; exact hs
   | cons r tail ih =>
     intro hs targets
-    have hq := targets (r.record P) (List.mem_cons_self)
+    have hq := targets (r.record P) (List.mem_cons.mpr (Or.inl rfl))
     exact ih (r.scope_preserved P D hs hq)
       (fun rec mem => targets rec (List.mem_cons_of_mem _ mem))
 
@@ -634,7 +636,7 @@ theorem batch_receipt_bound {cap : ResourceVec} {s : SState C G Reg}
 theorem audit_sequential_charge {cap : ResourceVec} {s t v : SState C G Reg}
     {rs qs : List (Record (C := C) (G := G) (Reg := Reg))}
     (bridge : ContextualPolicy P) (h : Audit P cap s rs t)
-    (k : Audit P cap t qs v) (hs : Safe P cap s) (charge : Event Judgment → Nat) :
+    (k : Audit P cap t qs v) (hs : Safe P cap s) (charge : Event Judgment.{u} → Nat) :
     cost charge v.trace = cost charge s.trace + cost charge (events rs) + cost charge (events qs) := by
   have hr := audit_run P bridge h hs
   have kr := audit_run P bridge k (run_safe P cap hr hs)
@@ -644,7 +646,7 @@ theorem audit_sequential_charge {cap : ResourceVec} {s t v : SState C G Reg}
 an independently admitted final fact. -/
 def batchWitness {cap : ResourceVec} {s : SState C G Reg}
     {q : Judgment.{u}} {input : List Submission} (b : Batch P O cap s q input) :
-    DiscoveryWitness Judgment meaning G Reg (ProtectedEnv C) :=
+    DiscoveryWitness Judgment.{u} meaning G Reg (ProtectedEnv C) :=
   ⟨cap, events b.records, b.final⟩
 
 theorem batch_witness_valid {cap : ResourceVec} {s : SState C G Reg}
@@ -660,7 +662,7 @@ theorem batch_witness_valid {cap : ResourceVec} {s : SState C G Reg}
 generated task executed. Its records and outside packet remain inspectable. -/
 def completeWitness {cap : ResourceVec} {s : SState C G Reg}
     {q : Judgment.{u}} {input : List Submission} (b : Batch P O cap s q input) :
-    Option (DiscoveryWitness Judgment meaning G Reg (ProtectedEnv C)) :=
+    Option (DiscoveryWitness Judgment.{u} meaning G Reg (ProtectedEnv C)) :=
   match b.remaining with
   | [] => some (batchWitness P O b)
   | _ :: _ => none
@@ -727,12 +729,12 @@ def qualifyStrategy {cap : ResourceVec} (D : Decisions P cap)
     (bridge : ContextualPolicy P)
     (S : FixedStrategy (scopedModel P D) Input Config)
     (Foundation : Judgment.{u} → Prop)
-    (foundation : ∀ (env : ProtectedEnv C) (f : InstantiatedFact Judgment meaning),
+    (foundation : ∀ (env : ProtectedEnv C) (f : InstantiatedFact Judgment.{u} meaning),
       Admitted env f → Foundation f.atom)
     (extra : SState C G Reg → Judgment.{u} → Nat →
-      DiscoveryWitness Judgment meaning G Reg (ProtectedEnv C) → Prop)
+      DiscoveryWitness Judgment.{u} meaning G Reg (ProtectedEnv C) → Prop)
     (full : SState C G Reg → Judgment.{u} → Nat →
-      DiscoveryWitness Judgment meaning G Reg (ProtectedEnv C) → ResourceVec)
+      DiscoveryWitness Judgment.{u} meaning G Reg (ProtectedEnv C) → ResourceVec)
     (dominates : ∀ s p n e, extra s p n e → e.cap ≤ full s p n e) :
     StrategyQualification S where
   derives := fun q => Foundation q.val

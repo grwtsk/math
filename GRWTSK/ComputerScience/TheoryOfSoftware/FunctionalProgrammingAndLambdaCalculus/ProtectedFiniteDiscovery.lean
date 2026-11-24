@@ -570,7 +570,7 @@ private def allList {A : Type a} (p : A → Prop) (test : ∀ a, Decidable (p a)
   | [] => .isTrue (by simp)
   | x :: xs =>
     match test x with
-    | .isFalse bad => .isFalse (fun h => bad (h x List.mem_cons_self))
+    | .isFalse bad => .isFalse (fun h => bad (h x (List.mem_cons.mpr (Or.inl rfl))))
     | .isTrue good =>
       match allList p test xs with
       | .isFalse bad => .isFalse (fun h => bad (fun a ha => h a (List.mem_cons_of_mem _ ha)))
@@ -585,7 +585,7 @@ private def anyList {A : Type a} (p : A → Prop) (test : ∀ a, Decidable (p a)
   | [] => .isFalse (by simp)
   | x :: xs =>
     match test x with
-    | .isTrue good => .isTrue ⟨x, List.mem_cons_self, good⟩
+    | .isTrue good => .isTrue ⟨x, List.mem_cons.mpr (Or.inl rfl), good⟩
     | .isFalse bad =>
       match anyList p test xs with
       | .isTrue tail => .isTrue (by
@@ -703,7 +703,7 @@ def appendDec (s : SState) (a : Packet.{0}) : Decidable (AppendOK s a) :=
       · rintro ⟨a, b, c, d⟩
         exact ⟨a, b, c, d⟩
       · intro h
-        exact ⟨h.extends, h.retained, h.installed, h.fresh⟩)
+        exact ⟨h.«extends», h.retained, h.installed, h.fresh⟩)
 
 def checkDec (s : SState) (a : Packet.{0}) (hs : finiteScope s.core)
     (hq : expected a.target) : ∀ k, Decidable (Pass s a k)
