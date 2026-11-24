@@ -43,7 +43,7 @@ introduced. No RH/GRH or global Q64 coverage claim is made.
 
 The new module contains 47 theorem declarations, 17 definitions and two
 type abbreviations. Its source blob is
-`3d6b2f4fc92b4ce2c09a9ee8bad6a67002b7815f`.
+`e47450b634d2255b30d8468347527223e53dbd81`.
 The dedicated 9-module manifest contains 177 declarations:
 111 scoped verified 16D declarations, 19 existing embedding declarations,
 and 47 new transport declarations. The original 16D manifest is untouched.
@@ -58,8 +58,12 @@ The user-provided local run at b52c751fe998e526cddb951b75f88abffd2cf6c6
 passed the finite chart control, preflight, and seven dependency builds.
 ConcretePrimeAtlasLift16To64 failed elaboration, blocking the transport
 module. The current sources repair the observed port-padding proofs,
-coordinate vanishing and compatibility theorem applications. Repaired
-embedding and transport compilation and combined audit remain NOT_RUN.
+coordinate vanishing and compatibility theorem applications. The subsequent user run at c341d1b7efe8082953003c88c1c545a2eceb71d0
+passed all eight dependency builds, including the repaired concrete
+embedding. The transport module reported a rewrite failure in
+first_load64_at_most_two. The current proof uses explicit cardinality
+equality and the verified 16D inequality instead of rewrite matching.
+Repaired transport compilation and the combined audit remain NOT_RUN.
 Fresh independent dependency replay and checker remain NOT_RUN. The earlier 16D scoped
 PASS is not transferred to new declarations.
 
