@@ -147,7 +147,9 @@ def binaryRule : Rule Nat := ⟨[0, 1], 2⟩
 
 theorem binaryRule_both_suffice :
     Derivable (fun r => r = binaryRule) (fun n => n = 0 ∨ n = 1) 2 := by
-  apply Derivable.application binaryRule rfl
+  refine Derivable.application
+    (rules := fun r => r = binaryRule)
+    (facts := fun n => n = 0 ∨ n = 1) binaryRule rfl ?_
   intro p hp
   apply Derivable.assumption
   simpa [binaryRule] using hp

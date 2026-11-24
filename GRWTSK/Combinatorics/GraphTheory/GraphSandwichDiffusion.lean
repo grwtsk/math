@@ -177,12 +177,12 @@ structure SourceSearchInventory (V : Type u) [DecidableEq V] where
   candidate : EdgeRelation V
   admissible : EdgeRelation V
   semantic : EdgeRelation V
-  certified_le_candidate : Subrelation certified candidate
-  candidate_le_admissible : Subrelation candidate admissible
+  certified_le_candidate : _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation certified candidate
+  candidate_le_admissible : _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation candidate admissible
   admissible_scoped :
     ∀ ⦃source target : V⦄, admissible source target →
       source ∈ vertices ∧ target ∈ vertices
-  certified_sound : Subrelation certified semantic
+  certified_sound : _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation certified semantic
   candidateRecord :
     ∀ ⦃source target : V⦄, candidate source target →
       RelationshipRecord source target
@@ -218,7 +218,7 @@ inductive BoundedPath (edge : EdgeRelation V) : Nat → V → V → Prop
 
 /-- Exact-length paths transport upward along relation inclusion. -/
 def BoundedPath.mono {lower upper : EdgeRelation V}
-    (included : Subrelation lower upper)
+    (included : _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation lower upper)
     {length : Nat} {source target : V}
     (path : BoundedPath lower length source target) :
     BoundedPath upper length source target := by
@@ -231,7 +231,7 @@ def BoundedPath.mono {lower upper : EdgeRelation V}
 semantic relation is reflexive and transitive. -/
 theorem BoundedPath.semantic
     {edge semantic : EdgeRelation V}
-    (edgeSound : Subrelation edge semantic)
+    (edgeSound : _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation edge semantic)
     (semanticRefl : ∀ vertex, semantic vertex vertex)
     (semanticTrans :
       ∀ ⦃source middle target : V⦄,
@@ -322,8 +322,8 @@ theorem exists_boundedPath_of_mem_reachableWithin
     ∃ length ≤ depth, BoundedPath edge length source target := by
   induction depth generalizing target with
   | zero =>
-      rcases (mem_reachableWithin_zero scope edge source target).1 member with
-        ⟨_, rfl⟩
+      obtain ⟨_, same⟩ := (mem_reachableWithin_zero scope edge source target).1 member
+      subst target
       exact ⟨0, Nat.le_refl 0, BoundedPath.refl source⟩
   | succ depth inductionHypothesis =>
       rcases (mem_reachableWithin_succ scope edge source target depth).1 member with
@@ -352,7 +352,7 @@ theorem BoundedPath.mem_reachableWithin
   | @tail length source middle target path edgeStep inductionHypothesis =>
       exact (mem_reachableWithin_succ scope edge source target length).2
         (Or.inr
-          ⟨(edgeScoped edgeStep).2, middle, inductionHypothesis, edgeStep⟩)
+          ⟨(edgeScoped edgeStep).2, middle, inductionHypothesis sourceIn, edgeStep⟩)
 
 /-- Relative completeness: the deterministic traversal returns exactly the
 in-scope paths whose length is at most the declared depth. -/
@@ -432,7 +432,7 @@ def MissingCandidateEdge (inventory : SourceSearchInventory V) (source target : 
 /-- Completion means candidate coverage of the declared admissible relation.
 It does not mean that every admissible edge is certified or semantically valid. -/
 def CandidateComplete (inventory : SourceSearchInventory V) : Prop :=
-  Subrelation inventory.admissible inventory.candidate
+  _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation inventory.admissible inventory.candidate
 
 /-- Candidate completion is exactly the absence of a missing admissible edge. -/
 theorem candidateComplete_iff_no_missing (inventory : SourceSearchInventory V) :
@@ -485,7 +485,22 @@ inductive SeedConcept where
   | heightIndexedDiffusion
   | compressionParameterA
   | searchInventory
-  deriving DecidableEq, Fintype, Repr
+  deriving DecidableEq, Repr
+
+/-- Exhaustive finite enumeration, with completeness checked against every
+constructor. Avoid the enum Fintype deriving handler's failing Finset
+membership rewrite in the pinned Mathlib toolchain. -/
+instance : Fintype SeedConcept where
+  elems := ([.thomaeFunction, .linearChainSpectrum, .fareyStructure, .dedekindEtaRegularization,
+      .lifshitzLocalization, .zetaZeros, .criticalStripCriterion, .explicitFormula,
+      .spectralOperatorAnalogy, .randomGraphCoupling, .lowerRandomContainment, .upperRandomDefect,
+      .monotonePropertyTransfer, .functionFieldMobius, .dirichletCharacterProxy, .chowlaCorrelation,
+      .primeLevelOfDistribution, .relationSandwich, .soficPresentation, .informationLossBoundary,
+      .quadraticThresholdDescent, .arithmeticWalkObservation, .heightIndexedDiffusion, .compressionParameterA,
+      .searchInventory] : List SeedConcept).toFinset
+  complete := by
+    intro x
+    cases x <;> decide
 
 /-- Curated source-grounded relationships in the initial candidate graph. -/
 inductive SeedPaperEdge where
@@ -511,7 +526,21 @@ inductive SeedPaperEdge where
   | soficToInformationBoundary
   | soficToDiffusion
   | thresholdToCompressionQuestion
-  deriving DecidableEq, Fintype, Repr
+  deriving DecidableEq, Repr
+
+/-- Exhaustive finite enumeration, with completeness checked against every
+constructor. Avoid the enum Fintype deriving handler's failing Finset
+membership rewrite in the pinned Mathlib toolchain. -/
+instance : Fintype SeedPaperEdge where
+  elems := ([.spectrumToThomae, .spectrumToFarey, .thomaeToDedekindEta, .spectrumToLifshitz,
+      .fareyToSofic, .zerosToCriticalStrip, .zerosToExplicitFormula, .zerosToSpectralAnalogy,
+      .spectralAnalogyToDiffusion, .couplingToLowerContainment, .couplingToUpperDefect, .couplingToMonotoneTransfer,
+      .lowerContainmentToSandwich, .upperDefectToSandwich, .mobiusToCharacterProxy, .characterProxyToChowla,
+      .chowlaToWalkObservation, .mobiusToPrimeDistribution, .walkObservationToSofic, .soficToInformationBoundary,
+      .soficToDiffusion, .thresholdToCompressionQuestion] : List SeedPaperEdge).toFinset
+  complete := by
+    intro x
+    cases x <;> decide
 
 /-- Source of each curated candidate edge. -/
 def seedPaperEdgeSource : SeedPaperEdge → SeedConcept
@@ -571,7 +600,17 @@ inductive SeedPotentialEdge where
   | chowlaToExplicitFormula
   | sandwichToDiffusion
   | compressionToDiffusion
-  deriving DecidableEq, Fintype, Repr
+  deriving DecidableEq, Repr
+
+/-- Exhaustive finite enumeration, with completeness checked against every
+constructor. Avoid the enum Fintype deriving handler's failing Finset
+membership rewrite in the pinned Mathlib toolchain. -/
+instance : Fintype SeedPotentialEdge where
+  elems := ([.etaToExplicitFormula, .explicitFormulaToDiffusion, .chowlaToExplicitFormula, .sandwichToDiffusion,
+      .compressionToDiffusion] : List SeedPotentialEdge).toFinset
+  complete := by
+    intro x
+    cases x <;> decide
 
 def seedPotentialEdgeSource : SeedPotentialEdge → SeedConcept
   | .etaToExplicitFormula => .dedekindEtaRegularization
@@ -973,16 +1012,16 @@ noncomputable def seedInventory : SourceSearchInventory SeedConcept where
   candidate := seedCandidate
   admissible := seedAdmissible
   semantic := seedSemantic
-  certified_le_candidate := (show Subrelation seedCertified seedCandidate from by
+  certified_le_candidate := (show _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation seedCertified seedCandidate from by
     intro source target certified
     exact False.elim certified)
-  candidate_le_admissible := (show Subrelation seedCandidate seedAdmissible from by
+  candidate_le_admissible := (show _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation seedCandidate seedAdmissible from by
     intro source target candidate
     exact Or.inl candidate)
   admissible_scoped := by
     intro source target _
     simp
-  certified_sound := (show Subrelation seedCertified seedSemantic from by
+  certified_sound := (show _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation seedCertified seedSemantic from by
     intro source target certified
     exact False.elim certified)
   candidateRecord := by
@@ -1869,14 +1908,14 @@ namespace ArithmeticSieveKernel
 /-- A nonnegative radical weight on the ordinary coprimality sieve.
 The eventual kernel uses only positive integers in Finset.Icc 1 N. -/
 noncomputable def radicalCoprimeWeight (q n : ℕ) : ℝ :=
-  if Nat.Coprime n q then (UniqueFactorizationMonoid.radical n : ℝ) else 0
+  if Nat.Coprime n q then ((UniqueFactorizationMonoid.radical n : ℕ) : ℝ) else 0
 
 theorem radicalCoprimeWeight_nonneg (q n : ℕ) :
     0 ≤ radicalCoprimeWeight q n := by
   unfold radicalCoprimeWeight
   split_ifs
-  · exact Nat.cast_nonneg _
-  · exact le_refl _
+  · exact Nat.cast_nonneg (UniqueFactorizationMonoid.radical n : ℕ)
+  · exact le_rfl
 
 /-- Radical weights are strictly positive exactly on survivors of the
 coprimality sieve. The radical itself has no zero value in Nat. -/
@@ -1891,7 +1930,7 @@ theorem radicalCoprimeWeight_pos_iff (q n : ℕ) :
     exact (lt_irrefl (0 : ℝ)) positive
   · intro coprime
     change 0 < (if Nat.Coprime n q then
-      (UniqueFactorizationMonoid.radical n : ℝ) else 0)
+      ((UniqueFactorizationMonoid.radical n : ℕ) : ℝ) else 0)
     rw [ite_eq_left coprime]
     exact_mod_cast Nat.radical_pos n
 
@@ -1947,13 +1986,15 @@ theorem radicalCoprimeWeight_pow (q n k : ℕ) (hk : k ≠ 0) :
       radicalCoprimeWeight q n := by
   have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
     Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
-  have hrad : UniqueFactorizationMonoid.radical (n ^ k) = UniqueFactorizationMonoid.radical n :=
+  have hrad : (UniqueFactorizationMonoid.radical (n ^ k) : ℕ) =
+      UniqueFactorizationMonoid.radical n :=
     UniqueFactorizationMonoid.radical_pow n hk
+  unfold radicalCoprimeWeight
   by_cases h : Nat.Coprime n q
-  · simp [radicalCoprimeWeight, hcop.mpr h, h, hrad]
+  · rw [ite_eq_left (hcop.mpr h), ite_eq_left h, hrad]
   · have hpow : ¬ Nat.Coprime (n ^ k) q :=
       fun hc => h (hcop.mp hc)
-    simp [radicalCoprimeWeight, h, hpow]
+    rw [ite_eq_right hpow, ite_eq_right h]
 
 /-- The source-independent normalized kernel assigns equal transition
 coefficients to positive powers with the same radical, provided BOTH
@@ -2027,11 +2068,13 @@ theorem resetKernel_evolve_weight_eq
         _ = radicalCoprimeWeight q target :=
           resetKernel_step_weight_eq q N hN target ht
 
+section ClassicalFiberMass
+open scoped Classical
+
 /-- The exact arithmetic type mass after any finite number of reset
 steps equals the initial radical-weighted coprimality mass on the same
 fiber. Positivity is therefore a coverage question, not a mixing
 estimate. -/
-open scoped Classical in
 theorem resetKernel_typeMass_eq_fiber_sum
     {TypeLabel : Type*}
     (q N : ℕ) (hN : 1 ≤ N)
@@ -2047,6 +2090,8 @@ theorem resetKernel_typeMass_eq_fiber_sum
   intro n hn
   exact resetKernel_evolve_weight_eq q N hN depth n
     (Finset.mem_filter.mp hn).1
+
+end ClassicalFiberMass
 
 /-- This concrete arithmetic reset kernel covers an exact type at
 every finite depth iff a positive integer of that type survives the
@@ -2171,16 +2216,16 @@ noncomputable def certifiedArithmeticInventory
   semantic := fun x y =>
     x ∈ scope N ∧ y ∈ scope N ∧
       0 < (resetKernel q N hN).transition x y
-  certified_le_candidate := (show Subrelation (positiveSieveEdge q N) (positiveSieveEdge q N) from by
+  certified_le_candidate := (show _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation (positiveSieveEdge q N) (positiveSieveEdge q N) from by
     intro x y h
     exact h)
-  candidate_le_admissible := (show Subrelation (positiveSieveEdge q N) (positiveSieveEdge q N) from by
+  candidate_le_admissible := (show _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation (positiveSieveEdge q N) (positiveSieveEdge q N) from by
     intro x y h
     exact h)
   admissible_scoped := by
     intro x y h
     exact ⟨h.1, h.2.1⟩
-  certified_sound := (show Subrelation (positiveSieveEdge q N)
+  certified_sound := (show _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich.Subrelation (positiveSieveEdge q N)
       (fun x y => x ∈ scope N ∧ y ∈ scope N ∧
         0 < (resetKernel q N hN).transition x y) from by
     intro x y h
@@ -2501,10 +2546,11 @@ theorem radicalCoprimeWeight_le_cutoff
   · have hn0 : n ≠ 0 := by omega
     have hrad : UniqueFactorizationMonoid.radical n ≤ n :=
       (Nat.radical_le_self_iff).mpr hn0
-    have hcast : (UniqueFactorizationMonoid.radical n : ℝ) ≤ (N : ℝ) :=
+    have hcast : ((UniqueFactorizationMonoid.radical n : ℕ) : ℝ) ≤ (N : ℝ) :=
       Nat.cast_le.mpr (hrad.trans hmem.2)
-    simpa [radicalCoprimeWeight, hc] using hcast
-  · simp [radicalCoprimeWeight, hc]
+    simpa only [radicalCoprimeWeight, ite_eq_left hc] using hcast
+  · rw [radicalCoprimeWeight, ite_eq_right hc]
+    exact Nat.cast_nonneg N
 
 /-- The finite positive-integer scope has exactly N vertices when
 N ≥ 1, avoiding any hidden asymptotic cardinality estimate. -/
@@ -2573,9 +2619,9 @@ theorem radicalCoprimeWeight_one_le_of_coprime
     (q target : ℕ) (hc : Nat.Coprime target q) :
     (1 : ℝ) ≤ radicalCoprimeWeight q target := by
   have hrad : 1 ≤ UniqueFactorizationMonoid.radical target := Nat.radical_pos target
-  have hcast : (1 : ℝ) ≤ (UniqueFactorizationMonoid.radical target : ℝ) := by
+  have hcast : (1 : ℝ) ≤ ((UniqueFactorizationMonoid.radical target : ℕ) : ℝ) := by
     exact_mod_cast hrad
-  simpa [radicalCoprimeWeight, hc] using hcast
+  simpa only [radicalCoprimeWeight, ite_eq_left hc] using hcast
 
 /-- The diagonal boost is never smaller than one, so it cannot
 suppress a positive arithmetic target weight. -/
@@ -2753,12 +2799,15 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
 sieve. This is a distinct weighting, not an asymptotic theorem about
 the unbuffered radical weight. -/
 noncomputable def bufferedRadicalWeight (q N n : ℕ) : ℝ :=
-  if Nat.Coprime n q then (N : ℝ) + (UniqueFactorizationMonoid.radical n : ℝ) else 0
+  if Nat.Coprime n q then (N : ℝ) + ((UniqueFactorizationMonoid.radical n : ℕ) : ℝ) else 0
 
 theorem bufferedRadicalWeight_nonneg (q N n : ℕ) :
     0 ≤ bufferedRadicalWeight q N n := by
   unfold bufferedRadicalWeight
-  split_ifs <;> positivity
+  split_ifs
+  · exact add_nonneg (Nat.cast_nonneg N)
+      (Nat.cast_nonneg (UniqueFactorizationMonoid.radical n : ℕ))
+  · exact le_rfl
 
 /-- Every surviving target in the positive cutoff receives at least
 N units of raw weight. -/
@@ -2766,7 +2815,8 @@ theorem bufferedRadicalWeight_ge_cutoff_of_coprime
     (q N n : ℕ) (hc : Nat.Coprime n q) :
     (N : ℝ) ≤ bufferedRadicalWeight q N n := by
   simp only [bufferedRadicalWeight, ite_eq_left hc]
-  exact le_add_of_nonneg_right (Nat.cast_nonneg _)
+  exact le_add_of_nonneg_right
+    (Nat.cast_nonneg (UniqueFactorizationMonoid.radical n : ℕ))
 
 /-- The same raw weight is at most twice the cutoff for all states
 within the inclusive positive integer range. -/
@@ -2774,12 +2824,13 @@ theorem bufferedRadicalWeight_le_two_cutoff
     (q N n : ℕ) (hn : n ∈ scope N) :
     bufferedRadicalWeight q N n ≤ (2 : ℝ) * (N : ℝ) := by
   by_cases hc : Nat.Coprime n q
-  · have hrad : (UniqueFactorizationMonoid.radical n : ℝ) ≤ (N : ℝ) := by
-      simpa [radicalCoprimeWeight, hc] using
+  · have hrad : ((UniqueFactorizationMonoid.radical n : ℕ) : ℝ) ≤ (N : ℝ) := by
+      simpa only [radicalCoprimeWeight, ite_eq_left hc] using
         radicalCoprimeWeight_le_cutoff q N n hn
     simp only [bufferedRadicalWeight, ite_eq_left hc]
     linarith
-  · simp [bufferedRadicalWeight, hc]
+  · rw [bufferedRadicalWeight, ite_eq_right hc]
+    positivity
 
 /-- The original radical-only information collision survives the
 type-independent cutoff floor: positive powers retain equal weights
@@ -2789,13 +2840,15 @@ theorem bufferedRadicalWeight_pow (q N n k : ℕ) (hk : k ≠ 0) :
       bufferedRadicalWeight q N n := by
   have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
     Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
-  have hrad : UniqueFactorizationMonoid.radical (n ^ k) = UniqueFactorizationMonoid.radical n :=
+  have hrad : (UniqueFactorizationMonoid.radical (n ^ k) : ℕ) =
+      UniqueFactorizationMonoid.radical n :=
     UniqueFactorizationMonoid.radical_pow n hk
+  unfold bufferedRadicalWeight
   by_cases hc : Nat.Coprime n q
-  · simp [bufferedRadicalWeight, hc, hcop.mpr hc, hrad]
+  · rw [ite_eq_left (hcop.mpr hc), ite_eq_left hc, hrad]
   · have hpow : ¬ Nat.Coprime (n ^ k) q :=
       fun hp => hc (hcop.mp hp)
-    simp [bufferedRadicalWeight, hc, hpow]
+    rw [ite_eq_right hpow, ite_eq_right hc]
 
 /-- Source-dependent diagonal preference, with target weight bounded
 between N and 2*N on surviving states. -/
