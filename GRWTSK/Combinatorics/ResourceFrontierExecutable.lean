@@ -317,4 +317,42 @@ theorem complete_exact (F : List (Entry G)) (hc : Closed G (labels F)) (x : Labe
     Covered (labels F) x ↔ ∃ y, Path G y ∧ labelLE y x :=
   closed_sound_iff_path G _ (labels_sound F) hc x
 
+
+/-- Unbounded well-founded wrapper. The recursion decreases in Grow, not
+in queue length or an empirical fuel estimate. All decisions use Bool
+comparisons over the explicit finite lists. The measure appears only in
+termination proofs, not as an executable oracle. Compiler NOT_RUN. -/
+structure Terminal (G : FiniteCostGraph n) where
+  frontier : List (Entry G)
+  ledger : Ledger
+  closed : Closed G (labels frontier)
+  reduced : Reduced (labels frontier)
+  balanced : Balanced ledger
+
+def solve (I : Input G) (F : List (Entry G)) (hr : Reduced (labels F)) : Terminal G :=
+  let Q := queue I F
+  match scan F Q with
+  | .exhausted hall =>
+    ⟨F,roundLedger I F Q.length Q.length false,
+      exhausted_closed I F hall,hr,round_balanced I F Q.length Q.length false le_rfl⟩
+  | .found x hx hf p _ hb =>
+    have hr' : Reduced (labels (keep F x)) := by
+      rw [labels_keep F x hf]
+      exact insert_reduced _ _ hr
+    let tail := solve I (keep F x) hr'
+    ⟨tail.frontier,(roundLedger I F Q.length p true).add tail.ledger,
+      tail.closed,tail.reduced,balanced_add (round_balanced I F Q.length p true hb) tail.balanced⟩
+termination_by (grow_wellFounded G).wrap (labels F)
+decreasing_by
+  exact fresh_growth I F x hx hf
+
+theorem terminal_same_frontier (a b : Terminal G) :
+    labels a.frontier = labels b.frontier :=
+  terminal_unique G (labels_sound a.frontier) a.closed a.reduced
+    (labels_sound b.frontier) b.closed b.reduced
+
+theorem terminal_exact (a : Terminal G) (x : Label n) :
+    Covered (labels a.frontier) x ↔ ∃ y, Path G y ∧ labelLE y x :=
+  complete_exact a.frontier a.closed x
+
 end GRWTSK.ResourceAttainability.Worklist.Executable
