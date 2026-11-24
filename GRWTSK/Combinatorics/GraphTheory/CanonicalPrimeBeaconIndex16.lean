@@ -78,12 +78,18 @@ def canonicalBeaconIndex (b : Beacon 4) : Fin 4096 :=
   (beaconCodes.orderIsoOfFin beaconCodes_card).symm
     ⟨encodedBeacon b, encodedBeacon_mem b⟩
 
+set_option maxHeartbeats 2000000 in
 theorem canonicalBeaconIndex_injective :
     Function.Injective canonicalBeaconIndex := by
   intro b c h
-  have h' :=
+  -- Give elaboration the exact finite-set subtype and projection types.
+  -- Do not ask whnf to discover them by reducing the sorted beacon set.
+  have h' : (⟨encodedBeacon b, encodedBeacon_mem b⟩ : ↥beaconCodes) =
+      ⟨encodedBeacon c, encodedBeacon_mem c⟩ :=
     (beaconCodes.orderIsoOfFin beaconCodes_card).symm.injective h
-  exact encodedBeacon_injective (congrArg Subtype.val h')
+  have hc : encodedBeacon b = encodedBeacon c :=
+    congrArg (fun z : ↥beaconCodes => (z : Fin 65536)) h'
+  exact encodedBeacon_injective hc
 
 theorem canonicalBeaconIndex_bijective :
     Function.Bijective canonicalBeaconIndex := by
