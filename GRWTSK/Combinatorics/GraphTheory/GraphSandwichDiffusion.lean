@@ -453,8 +453,10 @@ theorem candidate_eq_admissible_of_complete
   funext source target
   apply propext
   constructor
-  · exact inventory.candidate_le_admissible
-  · exact complete
+  · intro h
+    exact inventory.candidate_le_admissible h
+  · intro h
+    exact complete h
 
 /-! ## Concrete bounded seed inventory -/
 
