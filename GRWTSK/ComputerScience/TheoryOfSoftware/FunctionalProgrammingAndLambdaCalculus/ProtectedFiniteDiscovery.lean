@@ -140,7 +140,7 @@ def decode (bytes : List UInt8) : Option Code :=
 theorem decode_encode (c : Code) : decode (encode c) = some c := by
   cases c <;> decide
 
-example : decode [2, 0] = none := by decide
+theorem regression_decode_trailing_bytes : decode [2, 0] = none := by decide
 
 def judgmentFor : Code → J
   | .bound => first
@@ -979,24 +979,24 @@ theorem notPending_scope : finiteScope notPending.core :=
 def notPendingPacket : Packet.{0} :=
   ⟨first, submissionFor .bound, objectFor .bound, "before", cap, charge⟩
 
-example : classify cap initial firstPacket initial_scope (Or.inr rfl) = some .accepted := by decide
-example : classify cap accepted.state secondPacket accepted_scope (Or.inr rfl) =
+theorem regression_accept : classify cap initial firstPacket initial_scope (Or.inr rfl) = some .accepted := by decide
+theorem regression_proof_substitution : classify cap accepted.state secondPacket accepted_scope (Or.inr rfl) =
     some (.refused .proof) := by decide
-example : classify cap initial malformedPacket initial_scope (Or.inr rfl) =
+theorem regression_malformed : classify cap initial malformedPacket initial_scope (Or.inr rfl) =
     some (.refused .gate) := by decide
-example : classify cap initial extraBinderPacket initial_scope (Or.inr rfl) =
+theorem regression_extra_binder : classify cap initial extraBinderPacket initial_scope (Or.inr rfl) =
     some (.refused .target) := by decide
-example : classify cap initial stalePacket initial_scope (Or.inr rfl) =
+theorem regression_stale_base : classify cap initial stalePacket initial_scope (Or.inr rfl) =
     some (.refused .base) := by decide
-example : classify cap noDependency firstPacket noDependency_scope (Or.inr rfl) =
+theorem regression_missing_dependency : classify cap noDependency firstPacket noDependency_scope (Or.inr rfl) =
     some (.refused .dependencies) := by decide
-example : classify cap notPending notPendingPacket notPending_scope (Or.inl rfl) =
+theorem regression_not_pending : classify cap notPending notPendingPacket notPending_scope (Or.inl rfl) =
     some (.refused .pending) := by decide
-example : classify cap initial unavailableAppend initial_scope (Or.inr rfl) =
+theorem regression_unavailable_append : classify cap initial unavailableAppend initial_scope (Or.inr rfl) =
     some (.refused .append) := by decide
-example : classify cap initial deniedPacket initial_scope (Or.inr rfl) =
+theorem regression_reservation_denied : classify cap initial deniedPacket initial_scope (Or.inr rfl) =
     some .reservationDenied := by decide
-example : classify (![8, 0, 8, 2] : ResourceVec) initial firstPacket initial_scope (Or.inr rfl) =
+theorem regression_outside_envelope : classify (![8, 0, 8, 2] : ResourceVec) initial firstPacket initial_scope (Or.inr rfl) =
     none := by decide
 
 /-- Duplicate names fail the append predicate. In this snapshot language
@@ -1009,21 +1009,21 @@ theorem duplicate_append_false :
     simp
   exact h.fresh entry1 member rfl
 
-example : classify cap accepted.state firstPacket accepted_scope (Or.inr rfl) =
+theorem regression_repeated_stale_base : classify cap accepted.state firstPacket accepted_scope (Or.inr rfl) =
     some (.refused .base) := by decide
 
 def absentObserver : Observer (C := checker) (G := Unit) (Reg := Unit) where
   observe := fun _ _ _ => none
   bound := by simp
 
-example : (runFinite true []).records.length = 0 := by decide
-example : (runFinite true []).remaining.length = 0 := by decide
-example : (evaluate P absentObserver D initial second initial_scope (Or.inr rfl)
+theorem regression_empty_records : (runFinite true []).records.length = 0 := by decide
+theorem regression_empty_remaining : (runFinite true []).remaining.length = 0 := by decide
+theorem regression_absent_observer : (evaluate P absentObserver D initial second initial_scope (Or.inr rfl)
     [proposed]).remaining = [proposed] := by decide
-example : (runFinite true [proposed, proposed, proposed]).remaining = [proposed] := by decide
-example : (runFinite true [proposed, proposed, proposed]).records.map (fun r => r.disposition) =
+theorem regression_overlong_remaining : (runFinite true [proposed, proposed, proposed]).remaining = [proposed] := by decide
+theorem regression_overlong_dispositions : (runFinite true [proposed, proposed, proposed]).records.map (fun r => r.disposition) =
     [.accepted, .refused .proof] := by decide
-example : ((runFinite true [proposed, proposed, proposed]).outside.map
+theorem regression_overlong_outside_bytes : ((runFinite true [proposed, proposed, proposed]).outside.map
     (fun a => a.submission.proofBytes)) = some [2] := by decide
 
 /-- Public hand-authored proposal generator; no hidden reference proof

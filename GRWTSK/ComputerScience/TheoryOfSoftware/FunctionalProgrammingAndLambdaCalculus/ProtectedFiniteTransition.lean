@@ -721,7 +721,8 @@ theorem supervised_output {cap : ResourceVec} (D : Decisions P cap)
       completeWitness P O (evaluate P O D s.val q.val s.property q.property
         (publicOutput view init step report s.val q.val n)) := by
   unfold FixedStrategy.output supervisedStrategy publicOutput
-  rw [supervised_iteration] <;> rfl
+  rw [supervised_iteration]
+  rfl
 
 /-- Separate fixed deductive foundation, exact admission and full cost.
 Scope restrictions change the domain, not the underlying execution witness. -/
