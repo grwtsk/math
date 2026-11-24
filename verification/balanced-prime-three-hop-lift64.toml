@@ -186,7 +186,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.ConcretePrimeAtlasLift16To64"
 path = "GRWTSK/Combinatorics/GraphTheory/ConcretePrimeAtlasLift16To64.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConcretePrimeAtlasLift16To64"
-git_blob = "aee539ead3057deff40b1bbf6213ded8bbc32d80"
+git_blob = "9218f201833e095077e59d686203c6bd3c3e07c1"
 theorems = [
   "portDrop_portLift",
   "portLift_injective",
@@ -209,7 +209,7 @@ theorems = [
 name = "GRWTSK.Combinatorics.GraphTheory.BalancedPrimeThreeHopLift16To64"
 path = "GRWTSK/Combinatorics/GraphTheory/BalancedPrimeThreeHopLift16To64.lean"
 namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHopLift16To64"
-git_blob = "5f016058d75aeeffac368674c17aab2171c9b1ae"
+git_blob = "3d6b2f4fc92b4ce2c09a9ee8bad6a67002b7815f"
 theorems = [
   "firstPort64_at_lift",
   "secondPort64_at_lift",
