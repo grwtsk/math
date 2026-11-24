@@ -132,10 +132,7 @@ theorem ports_distinct (s : Port m) :
 theorem firstTarget_ne_zero (s : Port m) : firstTarget S s ≠ 0 := by
   intro h
   apply (S.avoid s).1
-  apply add_left_cancel (a := s)
-  change s + S.first s = s + s
-  rw [port_add_self]
-  exact h
+  exact add_left_cancel (show s + S.first s = s + s from h.trans (port_add_self s).symm)
 
 theorem secondTarget_eq (s : Port m) :
     s + (S.first s + second S s) = third S s := by
@@ -435,6 +432,7 @@ def directoryOfIndex (rank : Beacon m ↪ ℕ) : PrimeDirectory m where
   injective := by
     intro b c h
     apply rank.injective
+    change Nat.nth Nat.Prime (rank b) = Nat.nth Nat.Prime (rank c) at h
     have hc := congrArg Nat.primeCounting' h
     simpa only [Nat.primeCounting'_nth_eq] using hc
 
@@ -471,17 +469,14 @@ def ScheduleEmbedding.then {k : ℕ} {U : Schedule k}
     (E : ScheduleEmbedding S T) (F : ScheduleEmbedding T U) : ScheduleEmbedding S U where
   geometry := E.geometry.then F.geometry
   first_commutes s := by
-    change F.geometry.port (E.geometry.port (S.first s)) = _
+    change F.geometry.port (E.geometry.port (S.first s)) = U.first (F.geometry.port (E.geometry.port s))
     rw [E.first_commutes, F.first_commutes]
-    rfl
   second_commutes s := by
-    change F.geometry.port (E.geometry.port (second S s)) = _
+    change F.geometry.port (E.geometry.port (second S s)) = second U (F.geometry.port (E.geometry.port s))
     rw [E.second_commutes, F.second_commutes]
-    rfl
   third_commutes s := by
-    change F.geometry.port (E.geometry.port (third S s)) = _
+    change F.geometry.port (E.geometry.port (third S s)) = third U (F.geometry.port (E.geometry.port s))
     rw [E.third_commutes, F.third_commutes]
-    rfl
 
 def beaconLift (E : ScheduleEmbedding S T) (b : Beacon m) : Beacon n :=
   ⟨E.geometry.address b.1, preserves_frozen E.geometry b.1 (beacon_is_frozen b)⟩
