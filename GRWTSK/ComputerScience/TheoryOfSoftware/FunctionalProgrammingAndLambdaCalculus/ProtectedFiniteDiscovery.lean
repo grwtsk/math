@@ -1,5 +1,4 @@
-import GRWTSK.ComputerScience.TheoryOfSoftware.FunctionalProgrammingAndLambdaCalculus.TransactionalDiscoveryContext
-import GRWTSK.Combinatorics.FixedStrategyAttainability
+import GRWTSK.ComputerScience.TheoryOfSoftware.FunctionalProgrammingAndLambdaCalculus.ProtectedFiniteTransition
 
 /-!
 # Protected finite discovery: dependent bounds, exact objects and charged refusal
@@ -10,7 +9,8 @@ Sofic manuscript sections 2.5, 4.1, 4.4, 5.12 and 5.13.
 SOURCE_PROOF_CANDIDATE. Parsing, elaboration, exact-type review, fresh kernel
 replay, transitive axiom audit and independent review: NOT_RUN.
 
-Math parent ce902341748c7695230c191fa46089d9abccefbe; TransactionalDiscoveryContext
+Math parent ea94543ac5cd34e9be9bf4d779a7b32fe88be34c; prior fixture blob
+776ce11764f9e893866b073342258bb1024d4640; TransactionalDiscoveryContext
 f9b09052d2492ac94e3886ca683907d8314700a2, TransactionalDiscovery
 8da85c92c61743133682732ddf35ccd4000cbc35, FixedStrategyAttainability
 a971a30a546437404013e6d086e9ad8983d31089. Lean v4.34.1 / Mathlib
@@ -41,16 +41,20 @@ valid under its own telescope but has a different key. Neither rejection
 proves the target false. The existing Step/Run constructors preserve
 accepted state on refusal, retain the event suffix and add serial charges.
 
-The public generator enumerates one-byte instruction candidates independently
-of protected state. A fixture-specific supervisor recognizes the exact two
-observations and returns the corresponding protected run witness. Admission
-restricts the witness to the actual initial state, target, stopping index
-and fixture run. This is a deterministic qualification example, NOT
-independent learned discovery or an implementation of generic search.
-The fixed strategy's permitted view is Unit; equal views give equal outputs.
-This says nothing about code/model/corpus leakage outside the finite model.
-The qualification uses Deductive from the initial registered inference
-theory, not semantic Meaning as a substitute for derivability.
+The general ProtectedTransition evaluator now consumes arbitrary finite
+submission lists and independently resolved observations at the attained
+state; there is no input-list match that returns a prebuilt run. The
+closed two-event witness remains an exact regression oracle. Its positive
+and hostile packets are passed through the general classifier for any
+correct supplied decision procedure. The finite observer decodes its
+instruction language; a separately selected hostile observer substitutes
+code 3 on the second attempt. The public generator sees Unit, reports
+submissions only, and is evaluated by the protected composite strategy.
+The finite checker/target/dependency and resource decision procedures
+are explicit suppliers: no arbitrary context decidability or actual
+runtime execution is claimed. The proof-mode qualification uses Deductive
+from the initial registered inference theory, not semantic Meaning.
+This public hand-authored fixture is not independent learned discovery.
 
 Costs are synthetic logical units: stored/resident core cost counts fact
 and entry slots; the absolute B/S cap 8 covers old/new slots plus two
@@ -58,9 +62,10 @@ event slots in this tiny model. W/T are one declared unit per attempt
 including its finite fixture overhead. They are neither physical bytes
 nor measured work/time. The two-event plan charges (8,2,8,2); the fixed
 adapter proves the exact budget region for this plan, not a global minimum
-over all strategies or over the one-event prefix. A real adapter must
-include source, model, verifier, storage/trace and resource overhead, bind
-submission/observation IDs to event receipts, and enforce protected access.
+over all strategies or over the one-event prefix. The general evaluator binds submission and observation to receipts; the
+runtime adapter must include source, model, verifier, storage/trace and
+resource overhead and enforce protected access. The concrete decision kit
+for all admissible finite fixture states remains an executable supplier.
 -/
 
 set_option autoImplicit false
@@ -502,66 +507,210 @@ theorem witness_valid : (discoveryModel P).valid initial .discover second witnes
   have safe := run_safe P cap fixture_run safe_initial
   exact (known_iff_admitted_fact P _ safe.1 second).mp final_known
 
-/-- Public enumeration of the first n candidate instruction bytes.
-No protected snapshot, proof bytes or other hidden state are inputs. -/
-def candidatePackets (n : Nat) : List (List UInt8) :=
-  (List.range n).map (fun k => [UInt8.ofNat (k + 2)])
+/-! Reuse the general evaluator for the finite language. The closed run
+above is a regression oracle, not an alternate execution path. -/
 
-/-- A deliberately closed supervisor for the one qualified fixture run.
-The original submitted code remains 2 in the second hostile observation.
-Returning the run does not expose a worker-side protected constructor. -/
-def supervise (packets : List (List UInt8)) :
-    Option (DiscoveryWitness J meaning Unit Unit Env) :=
-  if packets = [[2], [3]] then some witness else none
+namespace Evaluation
 
-def strategy : FixedStrategy (discoveryModel P) Unit Nat where
-  view := fun _ => ()
-  init := fun _ _ => 0
-  step := Nat.succ
-  report := fun n => supervise (candidatePackets n)
+open GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition
 
-theorem generated_witness : strategy.output initial second 2 = some witness := by
-  have packets : candidatePackets 2 = [[2], [3]] := by decide
-  change supervise (candidatePackets 2) = some witness
-  simp [supervise, packets]
+/-- Decoding an unrecognized instruction supplies a rejected finite-language
+object, never a fabricated Lean theorem. -/
+def observeCode (sub : Submission) : ClosedObject :=
+  match decode sub.proofBytes with
+  | some c => objectFor c
+  | none => { conditionalObject with proofBytes := sub.proofBytes, kind := .definitionDecl }
+
+/-- In the hostile variant the independently observed object after the first
+append is deliberately substituted. The submission is retained verbatim.
+Both variants accept arbitrary finite submissions; the fixture's snapshot
+language intentionally permits installation only of the designated entry. -/
+def packetAt (hostile : Bool) (s : SState) (q : J) (sub : Submission) :
+    Packet.{0} :=
+  ⟨q, sub,
+    if hostile = true ∧ s.core.environment.snapshot = "after"
+      then objectFor .direct else observeCode sub,
+    "after", cap, charge⟩
+
+def finiteObserver (hostile : Bool) :
+    Observer (C := checker) (G := Unit) (Reg := Unit) where
+  observe := fun s q sub => some (packetAt hostile s q sub)
+  bound := by
+    intro s q sub a h
+    have same := Option.some.inj h
+    subst a
+    exact ⟨rfl, rfl⟩
+
+theorem policy_bridge : ContextualPolicy P :=
+  ⟨fun _ _ => Iff.rfl, fun _ _ => Iff.rfl⟩
+
+def proposed : Submission := submissionFor .fromBound
+
+def firstPacket : Packet.{0} :=
+  ⟨second, proposed, objectFor .fromBound, "after", cap, charge⟩
+
+def secondPacket : Packet.{0} :=
+  ⟨second, proposed, objectFor .direct, "after", cap, charge⟩
+
+theorem observe_first :
+    (finiteObserver true).observe initial second proposed = some firstPacket := by
+  have different : initial.core.environment.snapshot ≠ "after" := by
+    change "before" ≠ "after"
+    decide
+  simp [finiteObserver, packetAt, different, observeCode, proposed,
+    submissionFor, decode_encode, firstPacket]
+
+theorem observe_second :
+    (finiteObserver true).observe accepted.state second proposed = some secondPacket := by
+  have same : accepted.state.core.environment.snapshot = "after" := rfl
+  simp [finiteObserver, packetAt, same, secondPacket]
+
+theorem first_eligible : Eligible initial firstPacket := by
+  intro k
+  cases k with
+  | target => exact ⟨rfl, rfl⟩
+  | proof => rfl
+  | base => exact ⟨rfl, rfl⟩
+  | gate => exact code_gate .fromBound
+  | pending => exact initial_pending
+  | dependencies =>
+    intro d hd
+    change d ∈ ["fixture.bound"] at hd
+    have same := List.mem_singleton.mp hd
+    exact ⟨entry0, List.mem_singleton.mpr rfl, same.symm⟩
+  | append =>
+    refine ⟨Or.inr ⟨rfl, rfl⟩, ?_, Or.inr ⟨rfl, Or.inr rfl⟩, ?_⟩
+    · intro e he
+      change e ∈ [entry0] at he
+      have same := List.mem_singleton.mp he
+      subst e
+      exact Or.inr ⟨rfl, Or.inl rfl⟩
+    · intro e he
+      change e ∈ [entry0] at he
+      have same := List.mem_singleton.mp he
+      subst e
+      change "fixture.bound" ≠ "fixture.le"
+      decide
+
+theorem first_budget : CommitBudget P cap initial firstPacket first_eligible := by
+  refine ⟨?_, ?_, ?_⟩
+  · refine ⟨le_rfl, ?_, ?_, ?_, ?_⟩
+    · change 2 ≤ 8
+      decide
+    · change 2 ≤ 8
+      decide
+    · change 0 + 2 ≤ 2
+      decide
+    · change 0 + 2 ≤ 2
+      decide
+  · change 8 ≤ 8 ∧ 1 ≤ 2 ∧ 8 ≤ 8 ∧ 1 ≤ 2
+    decide
+  · change 2 ≤ 8 ∧ 4 ≤ 8 ∧ 2 ≤ 8 ∧ 4 ≤ 8 ∧
+      8 ≤ 8 ∧ 8 ≤ 8 ∧ 0 + 1 ≤ 2 ∧ 0 + 1 ≤ 2
+    decide
+
+def firstReceipt : Receipt P cap initial firstPacket :=
+  .accept first_eligible first_budget
+
+theorem first_result : firstReceipt.result P = accepted := rfl
+
+theorem second_bad : ¬ Eligible accepted.state secondPacket := by
+  intro h
+  have same := h .proof
+  change ([2] : List UInt8) = [3] at same
+  exact (by decide : ([2] : List UInt8) ≠ [3]) same
+
+theorem second_fits : Fits P cap accepted.state accepted.state.core secondPacket.charge := by
+  change 4 ≤ 8 ∧ 4 ≤ 8 ∧ 4 ≤ 8 ∧ 4 ≤ 8 ∧
+    8 ≤ 8 ∧ 8 ≤ 8 ∧ 1 + 1 ≤ 2 ∧ 1 + 1 ≤ 2
+  decide
+
+theorem generic_first (D : Decisions P cap) :
+    evaluateOne P D initial firstPacket = .completed firstReceipt :=
+  evaluateOne_accept P D initial firstPacket first_eligible first_budget
+
+theorem generic_second (D : Decisions P cap) :
+    ∃ f : FirstFailure (Pass accepted.state secondPacket) checkOrder,
+      evaluateOne P D accepted.state secondPacket = .completed (.refuse f second_fits) :=
+  evaluateOne_refuse P D accepted.state secondPacket second_fits second_bad
+
+/-- Both events arise from the same general recursion used on arbitrary
+input lists, not a lookup of the old closed run. -/
+theorem generic_two_event_witness (D : Decisions P cap) :
+    completeWitness P (finiteObserver true)
+      (evaluate P (finiteObserver true) D initial second [proposed, proposed]) =
+        some witness := by
+  obtain ⟨f, hf⟩ := generic_second D
+  simp [evaluate, observe_first, generic_first D, first_result, observe_second, hf,
+    completeWitness, batchWitness, ProtectedTransition.events, Receipt.record,
+    Receipt.result, firstPacket, secondPacket, witness, events, rejected]
+
+/-- A public finite strategy deliberately repeats a known test proposal.
+The actual generator sees Unit and emits only submissions. -/
+def publicReport (n : Nat) : List Submission := List.replicate n proposed
+
+def strategy (D : Decisions P cap) :=
+  supervisedStrategy P (finiteObserver true) D
+    (fun _ : SState => ()) (fun (_ : Unit) (_ : J) => (0 : Nat))
+    Nat.succ publicReport
+
+theorem generated_witness (D : Decisions P cap) :
+    (strategy D).output initial second 2 = some witness := by
+  rw [strategy, supervised_output]
+  change completeWitness P (finiteObserver true)
+      (evaluate P (finiteObserver true) D initial second [proposed, proposed]) =
+        some witness
+  exact generic_two_event_witness D
 
 theorem hidden_view_noninterference (s t : SState) (p : J) (n : Nat) :
-    strategy.output s p n = strategy.output t p n :=
-  same_view_output strategy rfl p n
+    publicOutput (fun _ : SState => ()) (fun (_ : Unit) (_ : J) => (0 : Nat))
+      Nat.succ publicReport s p n =
+    publicOutput (fun _ : SState => ()) (fun (_ : Unit) (_ : J) => (0 : Nat))
+      Nat.succ publicReport t p n :=
+  public_same_view _ _ _ _ rfl p n
 
-def qualification : StrategyQualification strategy where
-  derives := Deductive P initial.core
-  admitted := fun s p n e => s = initial ∧ p = second ∧ n = 2 ∧ e = witness
-  fullCost := fun _ _ _ e => e.cap
-  sound := by
-    intro s p n e _ _ h
-    rw [h.2.1]
+theorem fixture_foundation (env : Env) (f : Fact) (h : Admitted env f) :
+    Deductive P initial.core f.atom := by
+  obtain ⟨e, _, rfl⟩ := h
+  change Deductive P initial.core e.judgment
+  rcases e.gate.expected with same | same
+  · rw [same]
+    apply Derivable.assumption
+    change first ∈ [first]
+    exact List.mem_singleton.mpr rfl
+  · rw [same]
     exact initial_derives_second
-  costDominates := by
-    intro s p n e _
-    exact le_rfl
 
-theorem fixed_budget_iff (r : ResourceVec) :
-    Attainable (fixedDiscoveryModel strategy qualification) initial .discover r second
-      ↔ cap ≤ r := by
+/-- Retain the previous scoped two-event qualification as a regression
+criterion, not the general evaluator's admission policy. -/
+def qualification (D : Decisions P cap) : StrategyQualification (strategy D) :=
+  qualifyStrategy P policy_bridge (strategy D) (Deductive P initial.core)
+    fixture_foundation
+    (fun s p n e => s = initial ∧ p = second ∧ n = 2 ∧ e = witness)
+    (fun _ _ _ e => e.cap) (fun _ _ _ _ _ => le_rfl)
+
+theorem fixed_budget_iff (D : Decisions P cap) (r : ResourceVec) :
+    Attainable (fixedDiscoveryModel (strategy D) (qualification D))
+      initial .discover r second ↔ cap ≤ r := by
   constructor
   · intro h
     obtain ⟨n, e, _, _, ha, hc⟩ :=
-      (fixed_attainable_iff strategy qualification initial second r).mp h
+      (fixed_attainable_iff (strategy D) (qualification D) initial second r).mp h
     have same : e = witness := ha.2.2.2
     subst e
     exact hc
   · intro h
-    apply (fixed_attainable_iff strategy qualification initial second r).mpr
-    exact ⟨2, witness, generated_witness, witness_valid,
+    apply (fixed_attainable_iff (strategy D) (qualification D) initial second r).mpr
+    exact ⟨2, witness, generated_witness D, witness_valid,
       ⟨rfl, rfl, rfl, rfl⟩, h⟩
 
-theorem insufficient_work :
-    ¬ Attainable (fixedDiscoveryModel strategy qualification)
+theorem insufficient_work (D : Decisions P cap) :
+    ¬ Attainable (fixedDiscoveryModel (strategy D) (qualification D))
       initial .discover (![8, 1, 8, 2] : ResourceVec) second := by
   intro h
-  have le := (fixed_budget_iff _).mp h
+  have le := (fixed_budget_iff D _).mp h
   have impossible : (2 : Nat) ≤ 1 := le 1
   omega
 
+end Evaluation
 end GRWTSK.Processing.TransactionalDiscovery.ProtectedFiniteDiscovery
