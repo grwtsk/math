@@ -375,3 +375,52 @@ theorem authenticated_append_run
   journalRun_append h (JournalRun.cons ha hl (JournalRun.nil _))
 
 end GRWTSK.ResourceAttainability.JournalIndex
+
+namespace GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition.JournalAdapter
+
+open GRWTSK.Processing
+open GRWTSK.Processing.StateTrace.Resource
+open GRWTSK.ResourceAttainability
+open GRWTSK.ResourceAttainability.JournalIndex
+open GRWTSK.ResourceAttainability.JournalSimulation
+open GRWTSK.Processing.TransactionalDiscovery
+open GRWTSK.Processing.TransactionalDiscovery.Contextual
+open GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition
+
+universe u v w y c r
+variable {C : TrustedChecker.{u}} {G : Type v} {Reg : Type w} {Obs : Type y}
+variable {Context : Type c} {Root : Type r}
+variable (P : Policy Judgment.{u} meaning G Reg (ProtectedEnv C) Obs)
+
+/-- The index is instantiated with the actual protected observer and
+indexed Receipt semantics. Exact batch record replay and issuance are
+required separately; an untrusted index cannot create either. -/
+theorem protected_indexed_read
+    (O : Observer (C := C) (G := G) (Reg := Reg))
+    {cap : ResourceVec} {s : SState C G Reg}
+    {q : Judgment.{u}} {input : List Submission}
+    (b : Batch P O cap s q input)
+    (A : Authority Context Root (CState C G Reg) (Event Judgment.{u}) Meta.{u})
+    (v : Version Context Root) (a : Array (JDelta C G Reg))
+    (bound : BoundVersion A v (pack s) a)
+    (run : JournalRun (boundAuth O q) (receiptLegal P cap)
+      (pack s) (a.toList.take v.limit) (pack b.final))
+    (replay : (decodeReceipts (pack s) (a.toList.take v.limit)).map decodeRecord = b.records)
+    (i : Nat) (rec : JReceipt C G Reg)
+    (read : indexedRead (pack s) a v.limit i = some rec) :
+    boundAuth O q rec.before rec.metadata ∧
+      (∃ e, receiptLegal P cap rec.before rec.after e rec.metadata ∧
+        rec.after.2 = rec.before.2 ++ [e]) ∧
+      b.records[i]? = some (decodeRecord rec) := by
+  obtain ⟨ha,hl⟩ := authenticated_read_valid A v (pack s) (pack b.final) a
+    (boundAuth O q) (receiptLegal P cap) bound run i rec read
+  refine ⟨ha,hl,?_⟩
+  have hi : i < v.limit := by
+    by_contra h
+    rw [indexedRead_outside (pack s) a v.limit i (by omega)] at read
+    contradiction
+  have hr := (indexedRead_version (pack s) a v.limit i bound.1 hi).symm.trans read
+  rw [← replay, List.getElem?_map, hr]
+  rfl
+
+end GRWTSK.Processing.TransactionalDiscovery.ProtectedTransition.JournalAdapter
