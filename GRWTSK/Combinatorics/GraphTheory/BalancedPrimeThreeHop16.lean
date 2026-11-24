@@ -453,6 +453,8 @@ def logicalIndex (P : PlacedAtlas) (x : Cell 4) : Fin 4096 :=
 theorem distinct_reference_indices (P : PlacedAtlas) (x : Cell 4) :
     physicalIndex P x ≠ logicalIndex P x := by
   intro h
+  change P.position.symm (physicalReference x).beacon =
+    P.position.symm (logicalReference x).beacon at h
   have hb := P.position.symm.injective h
   have hv := congrArg Subtype.val hb
   exact routeEnd_ne_guidepost x hv.symm
@@ -469,14 +471,12 @@ theorem physical_locator (P : PlacedAtlas) (x : Cell 4) :
     (locate P (physicalIndex P x) false).localCell = addressCode (guidepost x) := by
   change addressCode (P.position (P.position.symm (physicalReference x).beacon)).1 =
     addressCode (guidepost x)
-  rw [P.position.apply_symm_apply]
-  rfl
+  simpa only [P.position.apply_symm_apply]
 
 theorem logical_locator (P : PlacedAtlas) (x : Cell 4) :
     (locate P (logicalIndex P x) false).localCell = addressCode (routeEnd x) := by
   change addressCode (P.position (P.position.symm (logicalReference x).beacon)).1 =
     addressCode (routeEnd x)
-  rw [P.position.apply_symm_apply]
-  rfl
+  simpa only [P.position.apply_symm_apply]
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16
