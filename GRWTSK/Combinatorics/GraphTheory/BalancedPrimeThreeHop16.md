@@ -54,7 +54,7 @@ is asserted.
 Base inspected: 371e6c363914f602c6ed0d9077ce6e78fa35f62e.
 The 49 new declarations, 23 definitions and two structures in
 `BalancedPrimeThreeHop16.lean` are SOURCE_PROOF_CANDIDATE. Lean source blob
-`3fd4c3126ab9cde80901e7b05763f1a213479041`.
+`e87b90948db35e8bcb51cdd3092793c9cbdcd190`.
 The six-module dedicated manifest has 111 public theorem declarations
 (62 imported dependency declarations and 49 new). All pinned source blobs
 and ordered inventories were checked against GitHub readback. The earlier
@@ -80,8 +80,9 @@ python3 scripts/verify_frozen_prime_atlas.py \
 ```
 
 Pinned Lean 4.34.1 / Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612
-are required. Actual Lean elaboration/build, transitive axiom audit and
-fresh independent kernel replay remain NOT_RUN; Lean and Lake were not
-available in the authoring environment. Do not merge on the basis of the
-Python result. Preserve exact theorem statements when addressing any
+are required. The user-provided run at commit 82133a69bb593df562518ada83c71971efd25762
+passed preflight and all five dependency builds, but the routing module
+failed elaboration. The current routing source repairs the reported
+proof failures; its build, transitive axiom audit and fresh independent
+kernel replay remain NOT_RUN. Do not merge on the basis of the Python result. Preserve exact theorem statements when addressing any
 elaboration diagnostics; retain independent replay as a distinct gate.
