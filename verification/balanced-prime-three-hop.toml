@@ -1,0 +1,171 @@
+# Scoped math #1844 source/axiom audit; prior baseline manifest untouched.
+format_version = 1
+suite = "Balanced three-hop prime routing and exact dependency sources"
+issue = "https://github.com/grwtsk/math/issues/1844"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[policy]
+expected_theorems = 111
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.FrozenPrimeHypercube"
+path = "GRWTSK/Combinatorics/GraphTheory/FrozenPrimeHypercube.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeHypercube"
+git_blob = "0b4c3ff28335529f28ca1986c66416082624dc72"
+theorems = [
+  "syndrome_impulse",
+  "syndrome_add",
+  "syndrome_neighbor",
+  "neighbor_injective",
+  "guidepost_frozen",
+  "guidepost_is_neighbor",
+  "neighbor_frozen_iff",
+  "unique_frozen_neighbor",
+  "existsUnique_frozen_neighbor",
+  "frozen_neighbor_zero_port",
+  "port_card_four",
+  "cell_card_four",
+  "neighborSetFour_card",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.FrozenPrimeBeaconCardinality"
+path = "GRWTSK/Combinatorics/GraphTheory/FrozenPrimeBeaconCardinality.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FrozenPrimeBeaconCardinality"
+git_blob = "67a13b3e10081c7853fb92aaa220c2f5f43f4d76"
+theorems = [
+  "syndromeHom_surjective",
+  "beacon_is_frozen",
+  "beacon_card_four",
+  "indexedPrime_prime",
+  "indexedPrime_injective",
+  "beaconPrimeLabel_prime",
+  "beaconPrimeLabel_injective",
+  "beaconPrimeLabel_le_of_prefix",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.CanonicalPrimeBeaconIndex16"
+path = "GRWTSK/Combinatorics/GraphTheory/CanonicalPrimeBeaconIndex16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CanonicalPrimeBeaconIndex16"
+git_blob = "29651574044935a66e8acac2d8e95b73835912ef"
+theorems = [
+  "encodedBeacon_injective",
+  "beaconCodes_card",
+  "encodedBeacon_mem",
+  "canonicalBeaconIndex_injective",
+  "canonicalBeaconIndex_bijective",
+  "canonicalPrimeLabel_prime",
+  "canonicalPrimeLabel_injective",
+  "canonicalPrimeLabel_le_of_prefix",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.ReplicatedPrimeAdjacency16"
+path = "GRWTSK/Combinatorics/GraphTheory/ReplicatedPrimeAdjacency16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ReplicatedPrimeAdjacency16"
+git_blob = "840d38408e275d0a63d6d812a48e507f93b712c9"
+theorems = [
+  "secondarySyndrome_ne_zero",
+  "secondarySyndrome_add_self",
+  "layerNeighbor_syndrome",
+  "layerNeighbor_adjacent",
+  "layerNeighbor_unique",
+  "existsUnique_layerNeighbor",
+  "primary_secondary_disjoint",
+  "two_distinct_face_neighbors",
+  "marked_face_neighbor_classification",
+  "two_face_neighbors",
+  "original_layout_not_two",
+  "replicaPosition_syndrome",
+  "replicaPosition_injective",
+  "parity_impulse",
+  "parity_add",
+  "parity_neighbor",
+  "parity_two_flips",
+  "no_two_flips_as_one",
+  "primaryBase_ne_secondaryBase",
+  "distinct_labels_under_any_injection",
+  "distinct_actual_prime_labels",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.HierarchicalPrimeDirectory16"
+path = "GRWTSK/Combinatorics/GraphTheory/HierarchicalPrimeDirectory16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HierarchicalPrimeDirectory16"
+git_blob = "16ba00c33f1fc693f8c40a085f7be245a318afad"
+theorems = [
+  "square_rank_reconstruction",
+  "forest_rank_reconstruction",
+  "index_position_roundtrip",
+  "primeNumber_prime",
+  "primaryPosition_syndrome",
+  "secondaryPosition_syndrome",
+  "replica_positions_distinct",
+  "observed_prime_indices_distinct",
+  "observed_prime_numbers_distinct",
+  "locate_preserves_prime_id",
+  "paired_replicas_same_square",
+  "locate_replica_flag",
+]
+
+[[module]]
+name = "GRWTSK.Combinatorics.GraphTheory.BalancedPrimeThreeHop16"
+path = "GRWTSK/Combinatorics/GraphTheory/BalancedPrimeThreeHop16.lean"
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.BalancedPrimeThreeHop16"
+git_blob = "3fd4c3126ab9cde80901e7b05763f1a213479041"
+theorems = [
+  "firstPort_bijective",
+  "secondPort_bijective",
+  "thirdPort_bijective",
+  "thirdPort_involutive",
+  "port_neg_self",
+  "ports_distinct",
+  "port_sum",
+  "firstSyndrome_high",
+  "secondSyndrome_eq",
+  "firstPreimage_spec",
+  "firstPreimage_bit",
+  "firstSyndrome_inverse",
+  "hopOne_step",
+  "hopTwo_step",
+  "routeEnd_step",
+  "shiftOne_syndrome",
+  "shiftTwo_syndrome",
+  "shiftThree_syndrome",
+  "hopOne_syndrome",
+  "hopTwo_syndrome",
+  "routeEnd_frozen",
+  "hopOne_not_frozen",
+  "flip_same",
+  "flip_other",
+  "bit_flip_ne",
+  "route_changed_iff",
+  "route_changedPorts",
+  "route_hamming_three",
+  "routeEnd_ne_guidepost",
+  "routeEnd_ne_origin",
+  "routeEnd_not_face",
+  "routeEnd_not_two_hops",
+  "syndrome_sub",
+  "translated_origin_syndrome",
+  "first_load_high",
+  "first_no_arrival_low",
+  "first_load_low",
+  "bit_zero_or_one",
+  "first_load_at_most_two",
+  "no_injective_stage_avoiding_frozen",
+  "second_load_one",
+  "terminal_load_sixteen",
+  "primary_load_sixteen",
+  "port_load",
+  "each_hop_port_load",
+  "distinct_reference_indices",
+  "two_actual_prime_references",
+  "physical_locator",
+  "logical_locator",
+]
