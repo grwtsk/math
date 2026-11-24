@@ -123,7 +123,9 @@ theorem addressLift_off_port (x : Cell 4) (j : Port 6) (hj : j ∉ Set.range por
   apply Finset.sum_eq_zero
   intro i _
   have hne : portLift i ≠ j := fun h => hj ⟨i, h⟩
-  simp [impulse, Pi.single_eq_of_ne hne]
+  have hz : impulse (portLift i) j = 0 := by
+    simp [impulse, Pi.single_apply, hne, Ne.symm hne]
+  rw [hz, smul_zero]
 
 theorem flip_same64 (z : Cell 6) (p : Port 6) : neighbor z p p = z p + 1 := by
   classical
