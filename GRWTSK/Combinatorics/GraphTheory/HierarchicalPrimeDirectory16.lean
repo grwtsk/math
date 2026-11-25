@@ -38,14 +38,14 @@ open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ReplicatedPrimeAdjac
 /-- External optimization can change the prime-to-beacon permutation,
 but must return a bijection and publish a new placement epoch. -/
 structure PlacedAtlas where
-  universe : ℕ
+  «universe» : ℕ
   tile : ℕ
   epoch : ℕ
   position : Fin 4096 ≃ Beacon 4
 
 /-- A global prime locator, not just a 16-bit address. -/
 structure PrimeAddress where
-  universe : ℕ
+  «universe» : ℕ
   tile : ℕ
   epoch : ℕ
   primeIndex : Fin 4096
@@ -147,7 +147,7 @@ not a fabricated address derived from a prime's numeric value. -/
 def locate (P : PlacedAtlas) (i : Fin 4096) (isReplica : Bool) : PrimeAddress :=
   let rank := canonicalBeaconIndex (P.position i)
   let point := if isReplica then secondaryPosition P i else primaryPosition P i
-  { universe := P.universe
+  { «universe» := P.«universe»
     tile := P.tile
     epoch := P.epoch
     primeIndex := i
