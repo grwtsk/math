@@ -843,9 +843,12 @@ def combinatoricsTargets : List OpenTargetRecord := [
     ["sharp threshold and growth refinements"]
     ["uniform family hypotheses"]
     ["sunflower existence bound"]
-    ["improved bounds known"]
+    ["improved bounds known",
+     "OpenAI family 379 reports a fixed-petal exponential bound. Exact-source review is tracked in grwtsk/math#1856."]
     standardForbiddenOverclaims
-    .partialProgressAtom clearsByOpen []
+    .partialProgressAtom clearsByOpen
+    ["https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/lean/docs/379.md",
+     "https://github.com/grwtsk/math/issues/1856"]
 ]
 
 def physicsTargets : List OpenTargetRecord := [

@@ -1,0 +1,13 @@
+name = "grwtsk-euclidean-tensor-geometry"
+defaultTargets = []
+
+[[require]]
+name = "OAI"
+git = "https://github.com/openai/math.git"
+rev = "3344da59991ed94f9ba711217b29c1d760badfa6"
+subDir = "lean"
+
+[[lean_lib]]
+name = "GRWTSKEuclideanTensorGeometry"
+roots = []
+globs = ["GRWTSK.+"]
