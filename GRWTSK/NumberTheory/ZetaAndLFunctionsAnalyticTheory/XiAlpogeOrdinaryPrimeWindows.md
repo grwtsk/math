@@ -88,6 +88,14 @@ For the forward implication choose $1/2<\eta<\theta$. On the resulting sufficien
 \]
 uniformly on that sufficiently late window. The exponent slack absorbs both the logarithm and the unit-scale interpolation error. No estimate across gaps between the supplied windows was used. This is an arithmetic rewriting of the full window supplier, not an independent proof of that supplier.
 
+The [end-to-end Lean equivalence](XiAlpogeFiniteWindowCriterion.lean) proves the displayed three-halves window equivalence for the centered von Mangoldt ramp. Its finite side uses an executable natural number: for $b>0$ it finds the least $m$ with $n^a\le m^b$ and proves that $m=\lceil n^{a/b}\rceil$. The proof uses the [finite proper-power correction](XiAlpogeFiniteRampBounds.lean) and the [score bounds](XiAlpogeFiniteRampScore.lean)
+\[
+              G(n)-4\ \le\ Z(n)\ \le\ G(n)+\sum_{p,\ k\ge2}\log p\min(1,n/p^k).
+\]
+The [unit-distance estimate](XiAlpogeRampOscillation.lean) proves $|G(v)-G(u)|\le9(v-u)\sqrt v$ for $1\le u\le v$. This weaker local estimate already permits [rounding both window endpoints](XiAlpogeIntegerWindows.lean) with arbitrarily small exponent slack. These local theorems establish the equivalence without an RH or window-existence hypothesis. Alpöge's arithmetic proof of the estimate and the window-to-RH argument are separate source results at the pins above.
+
+A failure of Weil positivity would have a concrete consequence here. One negative value of the complete Weil form on a test square would contradict RH. By the analytic window implication and the equivalence above, there would then be a fixed rational $\theta>1/2$ and a fixed $L$ such that **every** integer start $M\ge L$ has a failing integer comparison somewhere in $M\le n$, $n^2\le M^3$. This follows by negating the quantifiers. In the affirmative direction an independent proof needs whole passing windows for each exponent arbitrarily far out; a finite list of passing windows supplies only those instances.
+
 ## Exact intermediate identity
 
 For integers $N\ge2$, put
@@ -132,7 +140,7 @@ Indeed the defining sums for $B(2\log(\sqrt N v))$ and their first two $v$-deriv
        \asymp_\sigma N^{-1+\sigma/2}/\log N
        \qquad(0\le\sigma<2)
 \]
-for both choices of sign. Discarding the negative curvature at square-root weight therefore loses a contribution on precisely the scale of the prime-square reserve.
+for both choices of sign. Under a square-root bound for the absolute value of the ramp, the worst-case error from the negative-curvature part has the same order as the prime-square reserve. Its actual signed contribution depends on the arithmetic values of the ramp.
 
 ## Size of the reserve
 
@@ -178,4 +186,4 @@ This is a paper refinement of the source's choice of $d$. Its geometric proof su
 
 ## The Weil and Hilbert–Pólya conclusions
 
-A proof of the ordinary-prime window assertion feeds the same zero-exclusion step as the original ramp, through the comparison above. Once all the zeros are on the line, the full Weil explicit formula writes each smooth compact convolution square as a sum of absolute Fourier squares with the actual multiplicities. The diagonal operator on the sum of multiplicity spaces realizes those ordinates. This constructs the operator after the arithmetic estimate has done the work. An operator constructed independently from primes and proved to have this spectrum would require a further theorem. For the earlier fixed doubling blocks, the separate task is still to bound the signed curvature pairing. [Complete Weil distribution and spectral realization](XiWeilDampingThreshold.md) · [Earlier finite block enclosure](XiPrimeBlockRational.md)
+A proof of the ordinary-prime window assertion feeds the same zero-exclusion step as the original ramp, through the comparison above. Once all the zeros are on the line, the full Weil explicit formula writes each smooth compact convolution square as a sum of absolute Fourier squares with the actual multiplicities. The diagonal operator on the sum of multiplicity spaces realizes those ordinates. This constructs the operator after the arithmetic estimate has done the work. An operator constructed independently from primes and proved to have this spectrum would require a further theorem. For the earlier fixed doubling blocks, the repository's [conditional prime-square bias](XiBernoulliOrdinaryPrimeBias.md) gives eventual strict descent once RH has been obtained. Deriving that descent directly from arithmetic still requires control of the signed curvature pairing. [Complete Weil distribution and spectral realization](XiWeilDampingThreshold.md) · [Earlier finite block enclosure](XiPrimeBlockRational.md)
