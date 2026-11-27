@@ -96,6 +96,29 @@ The [unit-distance estimate](XiAlpogeRampOscillation.lean) proves $|G(v)-G(u)|\l
 
 A failure of Weil positivity would have a concrete consequence here. One negative value of the complete Weil form on a test square would contradict RH. By the analytic window implication and the equivalence above, there would then be a fixed rational $\theta>1/2$ and a fixed $L$ such that **every** integer start $M\ge L$ has a failing integer comparison somewhere in $M\le n$, $n^2\le M^3$. This follows by negating the quantifiers. In the affirmative direction an independent proof needs whole passing windows for each exponent arbitrarily far out; a finite list of passing windows supplies only those instances.
 
+## A smaller test using rounded integer exponents
+
+The factorial in the preceding exact test can be dispensed with throughout the window criterion. Keep the same positive rational $E_n$ and set
+\[
+ h(n,p)=\left\lfloor\frac{n^2}{p-1}\right\rfloor-n,\qquad
+ V_n=\left(\frac{E_n}{n(n+1)}\right)^{n^2}\prod_{p\le n}p^{h(n,p)}.
+\]
+For $n\ge2$ the exponent is nonnegative. Replacing $n(n/(p-1)-1)$ by its floor loses less than one copy of $\log p$ in the logarithm of the product. Adding these losses and dividing by $n$ gives
+\[
+       0\le Z(n)-\frac{\log V_n}{n}
+             \le \frac{1}{n}\sum_{p\le n}\log p\le\log n .
+\]
+Thus the exact factorial test at threshold $m$ implies $V_n\le n^{nm}$, and this rounded comparison implies the factorial test at $m+1$. For $\theta>1/2$ use the rational midpoint $s=(\theta+1/2)/2$. Eventually $\lceil n^s\rceil+1\le\lceil n^\theta\rceil$, so the single extra threshold unit preserves the full family of cofinal windows. The [pointwise comparison](XiAlpogeRoundedProduct.lean) and the [full equivalence](XiAlpogeRoundedWindowCriterion.lean) are proved in Lean. In particular the following natural-number assertion supplies exactly the same arithmetic input to zero exclusion:
+\[
+ \forall a,b\in\mathbb N,\quad 0<b<2a\ \Longrightarrow
+ \forall L\in\mathbb N\ \exists M\ge L\ \forall n\in\mathbb N,\quad
+ (M\le n\ \land\ n^2\le M^3)\ \Longrightarrow\ V_n\le n^{n m},
+ \qquad m=\min\{t\in\mathbb N:n^a\le t^b\}.
+\]
+The notation $V_n$ is rational. Comparing its positive integer numerator against its positive denominator times $n^{nm}$ implements the test without real logarithms or zeta zeros.
+
+One benefit of rounding is the size of a single exact comparison. Write $E_n=[((n+1)/n)\prod_{j=1}^n (nj+1)/(nj)]^n$. Before cancellation, its numerator and denominator have $O(n^2\log n)$ bits. Raising the centered factor to $n^2$ costs $O(n^4\log n)$ bits, while the remaining at most $n$ prime factors have exponents at most $n^2$ and contribute $O(n^3\log n)$ bits. For fixed $1/2<a/b<1$ we have $m\le n$, so the two integers in the rounded comparison each admit an explicit representation with $O(n^4\log n)$ bits. This elementary size estimate is a paper bound in the numeric scale $n$. The window-existence theorem still requires arbitrarily large $M$ for every exponent.
+
 ## Exact intermediate identity
 
 For integers $N\ge2$, put
