@@ -73,6 +73,7 @@ private theorem expanded_scale {K : Type*} [Field K] {n : ℕ}
     (hv : Expanded left right v) (scale : K) : Expanded left right (fun x y => scale * v x y) := by
   obtain ⟨weight, he⟩ := hv
   refine ⟨fun t => scale * weight t, fun x y => ?_⟩
+  change scale * v x y = ∑ t, left t x * right t y * (scale * weight t)
   rw [he, Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro t _
@@ -152,50 +153,66 @@ private theorem mixed_div_expand {n : ℕ}
   rw [div_mul_cancel₀ _ hn] at he
   simp only [Pi.sub_apply]
   rw [he]
-  field_simp [hn] <;> ring
+  field_simp [hn]
+  ring
+
+private def RegistersExpanded {r : ℕ} (p : RationalProgram F (A ⊕ B) r) (n : ℕ) : Prop :=
+    ∃ (left : Fin n → A → InputRat (F := F) (A := A) (B := B))
+      (right : Fin n → B → InputRat (F := F) (A := A) (B := B)),
+      ∀ i, Expanded left right (ratMixed (p.value i))
 
 private theorem register_expansions {r : ℕ} (p : RationalProgram F (A ⊕ B) r) (valid : p.Valid) :
-    ∃ (left : Fin (2 * nonscalarCount p) → A → InputRat (F := F) (A := A) (B := B))
-      (right : Fin (2 * nonscalarCount p) → B → InputRat (F := F) (A := A) (B := B)),
-      ∀ i, Expanded left right (ratMixed (p.value i)) := by
+    RegistersExpanded p (2 * nonscalarCount p) := by
   induction p with
   | nil => exact ⟨Fin.elim0, Fin.elim0, fun i => i.elim0⟩
   | step p g ih =>
     obtain ⟨left, right, hex⟩ := ih valid
     cases g with
     | constant c =>
+      simp only [nonscalarCount]
       refine ⟨left, right, Fin.cases ?_ hex⟩
       simpa [Expanded, RationalProgram.value, RationalProgram.gateValue] using expanded_zero left right
     | input i =>
+      simp only [nonscalarCount]
       refine ⟨left, right, Fin.cases ?_ hex⟩
       simpa [Expanded, RationalProgram.value, RationalProgram.gateValue] using expanded_zero left right
     | add i j =>
-      exact ⟨left, right, Fin.cases (by simpa [Expanded, RationalProgram.value, RationalProgram.gateValue] using
-        expanded_add (hex i) (hex j)) hex⟩
-    | sub i j =>
-      exact ⟨left, right, Fin.cases (by simpa [Expanded, RationalProgram.value, RationalProgram.gateValue] using
-        expanded_sub (hex i) (hex j)) hex⟩
-    | mul i j =>
       simp only [nonscalarCount]
-      split_ifs with hs
-      · refine ⟨left, right, Fin.cases ?_ hex⟩
+      refine ⟨left, right, Fin.cases ?_ hex⟩
+      simpa [Expanded, RationalProgram.value, RationalProgram.gateValue] using expanded_add (hex i) (hex j)
+    | sub i j =>
+      simp only [nonscalarCount]
+      refine ⟨left, right, Fin.cases ?_ hex⟩
+      simpa [Expanded, RationalProgram.value, RationalProgram.gateValue] using expanded_sub (hex i) (hex j)
+    | mul i j =>
+      by_cases hs : IsScalar (p.value i) ∨ IsScalar (p.value j)
+      · have hc : nonscalarCount (.step p (.mul i j)) = nonscalarCount p := by
+          simp [nonscalarCount, hs]
+        rw [hc]
+        refine ⟨left, right, Fin.cases ?_ hex⟩
         change Expanded left right (ratMixed (p.value i * p.value j))
         rcases hs with hi | hj
         · rw [mixed_scalar_left hi]
           exact expanded_scale (hex j) (p.value i)
         · rw [mixed_scalar_right hj]
           exact expanded_scale (hex i) (p.value j)
-      · rw [Nat.mul_add]
+      · have hc : nonscalarCount (.step p (.mul i j)) = nonscalarCount p + 1 := by
+          simp [nonscalarCount, hs]
+        rw [hc, Nat.mul_add, Nat.mul_one]
         refine ⟨_, _, Fin.cases (mixed_mul_expand (hex i) (hex j)) (fun k => expanded_weaken (hex k) _ _ _ _)⟩
   | quot p i j ih =>
     obtain ⟨left, right, hex⟩ := ih valid.1
-    simp only [nonscalarCount]
-    split_ifs with hs
-    · refine ⟨left, right, Fin.cases ?_ hex⟩
+    by_cases hs : IsScalar (p.value j)
+    · have hc : nonscalarCount (.quot p i j) = nonscalarCount p := by
+        simp [nonscalarCount, hs]
+      rw [hc]
+      refine ⟨left, right, Fin.cases ?_ hex⟩
       change Expanded left right (ratMixed (p.value i / p.value j))
       rw [mixed_scalar_div hs valid.2]
       exact expanded_scale (hex i) (p.value j)⁻¹
-    · rw [Nat.mul_add]
+    · have hc : nonscalarCount (.quot p i j) = nonscalarCount p + 1 := by
+        simp [nonscalarCount, hs]
+      rw [hc, Nat.mul_add, Nat.mul_one]
       refine ⟨_, _, Fin.cases (mixed_div_expand (hex i) (hex j) valid.2) (fun k => expanded_weaken (hex k) _ _ _ _)⟩
 
 /-- The actual matrix multiplication tensor over the rational function field has

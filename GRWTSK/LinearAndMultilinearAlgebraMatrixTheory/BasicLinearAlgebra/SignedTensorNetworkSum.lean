@@ -26,9 +26,15 @@ theorem signed_sum_restricts_suppliers {I F J : Type*} [Fintype I] [Nonempty I]
     (hS : ∀ j, ofCoeffs (T j) ≤ S j) :
     ofCoeffs (∑ j, weight j • T j) ≤ ∑ j, S j := by
   classical
-  exact (ordinary_sum_le (fun j => weight j • T j)).trans
-    (Finset.sum_le_sum fun j _ =>
-      (ofRaw_le_iff.mpr (scalar_mul_restricts (weight j) (T j))).trans (hS j))
+  have hTerm (j : J) : ofCoeffs (weight j • T j) ≤ S j :=
+    (ofRaw_le_iff.mpr (scalar_mul_restricts (weight j) (T j))).trans (hS j)
+  refine (ordinary_sum_le (fun j => weight j • T j)).trans ?_
+  generalize (Finset.univ : Finset J) = indices
+  induction indices using Finset.induction_on with
+  | empty => simp
+  | insert j indices hj ih =>
+    rw [Finset.sum_insert hj, Finset.sum_insert hj]
+    exact SiteTensor.add_mono (hTerm j) ih
 
 /-- The exact signed observable has spectral value bounded by the sum of the
 supplier values at a single synchronized spectral point. -/
