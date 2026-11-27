@@ -87,3 +87,17 @@ The [ordinary-prime manuscript](XiBernoulliOrdinaryPrimeBias.md) gives a separat
  B_{n_k}<0\qquad\left(1\le k\le(6\cdot10^{12}-1)^2\right),
 \]
 where $n_k$ is the rationally computed start above. Indeed $2n_k<2(e^{2\sqrt{k}}+1)\le e^{4T}$ on this range. Every summand in the corresponding original block is negative and $B_{n_k}\le D_{n_k}$. This corollary inherits the paper proof and its external inputs. The exact-arithmetic checker was separately run on the seven starts $7,16,31,54,87,134,198$. Both endpoint tests passed on each. Neither calculation proves a tail bound uniform in $k$. [Platt–Trudgian verified height](https://arxiv.org/abs/2004.09765) · [OpenAI family 003](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/lean/docs/003.md)
+
+## Directly certifying actual descending blocks
+
+For any positive cutoffs $Y,Q$, write $P_{N,Y}$ for the truncated prime term and $L_{N,Q},U_{N,Q}$ for the right and left quadratures. The argument above gives the sharper interval
+\[
+ P_{N,Y}-U_{N,Q}\ \le\ D_N\ \le\ P_{N,Y}-L_{N,Q}+1/Y.
+\]
+The [real quadrature bound](XiPrimeBlockDensityQuadrature.lean), [Fubini identity](XiPrimeBlockDensityFubini.lean), and [reciprocal substitution for the original density](XiPrimeBlockDensityIntegral.lean) use these normalizations with no assumption on zeta zeros. The [combined Lean theorem](XiPrimeBlockCertificate.lean) proves this enclosure for the original harmonic prefixes and obtains $S_{14}<S_7$ with $Y=64,Q=12$. A negative right endpoint certifies a strict decrease of the original infinite-prime discrepancy. This test can use larger cutoffs than the RH-equivalent sparse sign test.
+
+Running the [integer-arithmetic checker](../../../scripts/xi_bernoulli/check_rational_block.py) with `--mode descent --through 10` verifies $D_N<0$ separately at $N=7,16,31,54,87,134,198,286,403,558$. For example,
+\[
+                S_{1116}-S_{558}\le-\frac{445523}{10^9}.
+\]
+Here $Y=17856$ and $Q=128$. To verify the direction of rounding, let $s=2^{64}$. An integer upper bound $w$ for $s p^{-2}(1-p^{-2})^{j-1}$ updates to $w-\lfloor w/p^2\rfloor$ at $j$ and the harmonic division is rounded up. Each real moment at $r=a/Q$ starts with the floor of $sQ/(Q+a)$ and the update to its next integer lower bound is the floor of $2jQ\,w/[a+(2j+1)Q]$. For the shifted moment use $a+Q$ in place of $a$. The harmonic division on this side rounds down. All coefficients multiplied in these recurrences are nonnegative. The result therefore uses an upper prime sum, a lower density estimate, and a rational $1/Y$ upper bound for the omitted primes. The reported endpoint is rounded up once more to the indicated decimal denominator.
