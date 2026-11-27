@@ -1,4 +1,5 @@
 import Boolean.Cube.TruthTable
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.FourierDyadic
 
 namespace Boolean.Cube
 
@@ -9,16 +10,6 @@ abbrev Fourier.IntFunction (n : Nat) :=
 /-- Alias for functions usually interpreted on signed coordinates. -/
 abbrev Fourier.SignedFunction (n : Nat) :=
   Fourier.IntFunction n
-
-/-- A dyadic rational `numerator / 2^exponent`. -/
-structure Fourier.Dyadic where
-  numerator : Int
-  exponent : Nat
-deriving Repr, DecidableEq
-
-/-- Denominator of a dyadic rational. -/
-def Fourier.Dyadic.denominator (q : Fourier.Dyadic) : Nat :=
-  2 ^ q.exponent
 
 /-- Convert a Boolean-valued function into a signed output function. -/
 def Fourier.signedOutput {n : Nat} (f : TruthTable n) :

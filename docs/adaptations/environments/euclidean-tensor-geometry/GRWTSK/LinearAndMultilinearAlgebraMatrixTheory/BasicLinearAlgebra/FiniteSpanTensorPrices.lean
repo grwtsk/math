@@ -1,0 +1,1 @@
+../../../../../../../GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpanTensorPrices.lean

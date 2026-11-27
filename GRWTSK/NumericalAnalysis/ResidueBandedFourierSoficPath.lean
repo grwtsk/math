@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
-import GRWTSK.NumericalAnalysis.CorkscrewSpringEnergy
+import GRWTSK.NumericalAnalysis.RotorFourierObservation
 import GRWTSK.DynamicalSystemsAndErgodicTheory.ExactSoficLanguageCover
 import Mathlib
 
@@ -20,9 +20,8 @@ residue state. Its graph language, NOT an arbitrary physical trace's language,
 is exactly sofic by construction. The finite optimal-route certificate below
 quantifies over ALL admitted finite graph paths, not one observed run.
 
-The torus/ABC velocity bound and crank energy balance are imported at their
-existing scopes. No new equivalence to a general three-dimensional PDE or
-source-unidentified sofic language is claimed.
+A physical model supplies the observed angular velocity. The finite
+Fourier observations and labeled graph are defined from their stated inputs.
 
 Lean elaboration, compilation, fresh kernel replay and transitive axiom audit:
 NOT_RUN at publication. The numerical browser refinement is also NOT_PROVED.
@@ -32,31 +31,8 @@ namespace GRWTSK.NumericalAnalysis.ResidueBandedFourierSoficPath
 
 open GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.ExactSoficLanguageCover
 
-/-- The actual 64-sample, 120 Hz discrete observation window. -/
-abbrev SampleIndex := Fin 64
-abbrev FrequencyIndex := Fin 33
 abbrev Residue := Fin 7
 abbrev SpaceIndex := Fin 3
-
-/-- Finite Fourier phase, with the negative sign convention of the browser DFT. -/
-noncomputable def fourierPhase (k : FrequencyIndex) (j : SampleIndex) : ℂ :=
-  Complex.exp ((-Complex.I) *
-    (↑(2 * Real.pi * (k.val : ℝ) * (j.val : ℝ) / 64) : ℂ))
-
-/-- The exact complex 64-point DFT, restricted to the 33 nonnegative bins. -/
-noncomputable def rotorDFT (samples : SampleIndex → ℂ)
-    (k : FrequencyIndex) : ℂ :=
-  (∑ j : SampleIndex, samples j * fourierPhase k j) / (64 : ℂ)
-
-/-- Zero angular velocity has exactly zero Fourier response at every bin. -/
-theorem rotorDFT_zero (k : FrequencyIndex) :
-    rotorDFT (fun _ => 0) k = 0 := by
-  simp [rotorDFT]
-
-/-- Finite DFT is linear: no probabilistic or asymptotic Fourier premise. -/
-theorem rotorDFT_add (a b : SampleIndex → ℂ) (k : FrequencyIndex) :
-    rotorDFT (fun j => a j + b j) k = rotorDFT a k + rotorDFT b k := by
-  simp [rotorDFT, add_mul, Finset.sum_add_distrib, add_div]
 
 /-- The exact arithmetic color of each frequency, no discarded multiplicity. -/
 def frequencyResidue (k : ℕ) : Residue :=

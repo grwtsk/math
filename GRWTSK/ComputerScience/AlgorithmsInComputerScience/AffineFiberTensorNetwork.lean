@@ -1,5 +1,5 @@
-import Boolean.Cube
-import Boolean.Tree.OrderedFactor
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.FourierDyadic
+import GRWTSK.ComputerScience.ComputerScienceSupportForMathematicalResearchAndPractice.FormalizationOfMathematicsInConnectionWithTheoremProvers.ContinuousUnitInterval
 import GRWTSK.ComputerScience.AlgorithmsInComputerScience.AffineFiberTensorNetworkContraction
 
 /-!
@@ -154,7 +154,7 @@ def GaussianScene.toSection [Zero R] [Add R] [Mul R]
 structure Ray (R : Type u) where
   origin : Point3 R
   dir : Direction R
-  at : R → Point3 R
+  «at» : R → Point3 R
 
 /-- Visibility/opacity plumbing for ray observation. -/
 structure RayKernel (R : Type u) where
@@ -202,7 +202,7 @@ deriving Repr, DecidableEq
 
 /-- A representation in any rendering paradigm, interpreted as a radiance section. -/
 structure ParadigmRealization (R : Type u) (P : RenderingParadigm) where
-  section : RadianceSection R
+  «section» : RadianceSection R
   certificate : Prop
 
 /-- Two paradigm realizations are geometrically equivalent when sections agree. -/

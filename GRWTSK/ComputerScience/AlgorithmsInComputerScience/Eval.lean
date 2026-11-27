@@ -1,5 +1,5 @@
-import Boolean.Tree
-import Boolean.Formula
+import GRWTSK.ComputerScience.AlgorithmsInComputerScience.TreeTree
+import GRWTSK.ComputerScience.ComputerScienceSupportForMathematicalResearchAndPractice.FormalizationOfMathematicsInConnectionWithTheoremProvers.FormulaValuation
 
 namespace Boolean
 

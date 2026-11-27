@@ -54,7 +54,84 @@ logarithmic exponent $1/2$ in exact binary linear gate count. Applied
 to the existing fixed 64-point local observable, the return is the
 finite gate-count comparison $F_{64}/2\le R_{64}\le F_{64}$.
 The upstream theorem's existential constants give no measured crossover
-or elapsed time. The formal circuit-relabeling proof and exact Lean
-matching to `rotorDFT` remain open. Extending the lower-bound transfer
-to border feedback with simultaneous errors requires its own comparison
-of state counts, error ranks and support sizes.
+or elapsed time. The formal circuit-relabeling proof remains open.
+Extending the lower-bound transfer to border feedback with simultaneous
+errors requires its own comparison of state counts, error ranks and
+support sizes.
+
+## Formal row identities
+
+[`ProjectedFourier.lean`](ProjectedFourier.lean) uses the negative phase
+$q=\zeta^{-1}$ directly, so row $k$ uses $q^{kj}$. Its theorem
+`inverseRow_modulate` rewrites each term using
+$(d+k)j=dj+kj$ and $q^{dj+kj}=q^{dj}q^{kj}$. Given $q^N=1$,
+`inverseRow_period` proves the row period $N$. The two-pass theorem
+`reassembleHalf_eq_fullTransform` selects the original row when $k<m$
+and the modulated row at $k-m$ otherwise. Both indices are in the
+projected output range, and $m+(k-m)=k$ in the second case.
+No periodic identification is needed by this selection. Primitivity
+and invertibility of $N$ are required to interpret the coefficient
+formula as Fourier inversion over its field.
+
+The local complex projection has a separate energy observable.
+`cutoffResidual` doubles interior retained rows. This weighting represents
+both members of a conjugate pair when the input is real, and the code
+accepts arbitrary complex inputs. For example, a unit Fourier tone at
+row $33$ has unit energy in the omitted full rows at cutoff $32$,
+while the coded residual is zero because no retained row exceeds $32$.
+The row reconstruction theorem has no real-input requirement and
+supplies no full-spectrum energy identity for this residual.
+
+The seven-color `frequencyResidue` map on row representatives gives
+exact bin grouping. It cannot grade cyclic convolution modulo $64$
+by addition in $\mathbb Z/7$. For example, $63+1$ reduces to $0$ modulo
+$64$, while the colors of $63$ and $1$ add to $1$ modulo $7$.
+For $a,b$ in $0,\ldots,63$, the exact correction for the output color is
+\[
+[(a+b)\bmod64]_7=[a]_7+[b]_7-[\lfloor(a+b)/64\rfloor]_7.
+\]
+This follows from the quotient-remainder identity and $64\equiv1\bmod7$.
+An execution using this correction must separately account for the
+no-wrap and wrap terms.
+
+## Verification
+
+The pure Mathlib module compiled with Lean 4.34.1 and Mathlib
+`d13f23b723b8a846827a245b89c10fc7d3f11612`. Its Git blob is
+`91ab049935693eec608a90d76d8f7dfbb253fc4f`. Pinned Lean `#check` reported
+the finite row shift, period, alternating-sign and reassembly statements
+listed above. Every public declaration was audited under `--trust=0` and
+used only axioms from `propext`, `Classical.choice` and `Quot.sound`.
+`leanchecker --fresh -v GRWTSK.NumericalAnalysis.ProjectedFourier`
+exited 0 and replayed the named module and its dependencies.
+The upstream Fourier complexity theorem and Comparator were outside
+this local row-identity verification scope.
+
+## Exact rotor specialization
+
+The [maintained rotor formula](RotorFourierObservation.lean) keeps the
+original namespace, two index types, phase definition, normalized transform,
+and the zero and add theorems. Their source bodies are carried over exactly
+from the [prior module at blob `00833d87`](https://github.com/grwtsk/math/blob/1f0dd586be640ebe72642977bba7acd0e1aeb7c3/GRWTSK/NumericalAnalysis/ResidueBandedFourierSoficPath.lean).
+[The residue-band and graph module](ResidueBandedFourierSoficPath.lean)
+imports the maintained rotor observation. This removes its stale import of
+the absent `CorkscrewSpringEnergy` module. The earlier legacy closure check
+stopped during its broader `DynamicPartitionRecovery` dependency startup.
+The complete residue-band and graph module remains outside this check.
+
+[`ProjectedFourierRotor.lean`](ProjectedFourierRotor.lean) uses
+$q=\exp(-2\pi i/64)$. The proof rewrites the original phase to $q^{kj}$
+by the exponential power law and shows that $q$ has exact order $64$.
+It keeps the original divisor $64$, which is nonzero in $\mathbb C$.
+The theorem `rotorDFT_eq_halfTransform` identifies all 33 original readouts.
+`rotorDFT_reassemble_eq_fullTransform` gives all 64 normalized
+negative-phase rows from two calls of that original observable. Since
+$q^{32}=-1$, the input modulation of the second call takes the simple
+form $x_j\mapsto(-1)^j x_j$.
+
+Lean 4.34.1 with Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`
+compiled the moved observation at blob `a444f238c662166eb186f077d85bccbaf0490c5d`
+and the exact specialization at blob `f50b7b46f0fd8b862ae0848bcba3be131eb02d79`.
+A separate source and analytic review checked the unchanged declarations
+and the two-run reconstruction, including the second call's index range
+and alternating phase.

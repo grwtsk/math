@@ -1,0 +1,1 @@
+../../../../../../../GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliqueContractionShape.lean
