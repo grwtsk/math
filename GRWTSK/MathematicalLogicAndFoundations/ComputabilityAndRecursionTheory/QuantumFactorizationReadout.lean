@@ -52,6 +52,36 @@ theorem decodeSlots_of_correct {N n : ℕ} {slots : List ℕ} (hN : 2 ≤ N)
   rw [List.filter_append, hf]
   simp [hps, compressRuns_primeFactorsList hN]
 
+/-- Decode repeated entries and require an exact round trip through
+the fixed-size zero-padded slot layout. The measurement parser receives the
+slot count and measured words only. Its target value N is absent. -/
+def readSlots (n : ℕ) (slots : List ℕ) : Option (List (ℕ × ℕ)) :=
+  let answer := decodeSlots slots
+  let ps := expand answer
+  if ps.length ≤ n ∧ slots = ps ++ List.replicate (n - ps.length) 0
+  then some answer else none
+
+/-- The preimage of the canonical answer under the strict numerical decoder
+is exactly the upstream correctness event, even on malformed lists. -/
+theorem readSlots_eq_iff {N n : ℕ} (hN : 2 ≤ N) (slots : List ℕ) :
+    readSlots n slots = some (canonical N) ↔ CorrectEncoding N n slots := by
+  simp only [readSlots]
+  constructor
+  · intro he
+    split at he
+    · next hp =>
+        have hd := Option.some.inj he
+        exact (correctEncoding_iff hN slots).mpr
+          ⟨canonical N, canonical_complete hN, hd ▸ hp⟩
+    · contradiction
+  · intro hc
+    obtain ⟨answer, ha, hp⟩ := (correctEncoding_iff hN slots).mp hc
+    have he := (complete_iff_eq_canonical hN).mp ha
+    have hd := decodeSlots_of_correct hN hc
+    have hp' : paddedAnswer n slots (canonical N) := he ▸ hp
+    unfold paddedAnswer at hp'
+    rw [hd, ite_eq_left hp']
+
 noncomputable def canonicalProbability (c : Circuit) (ℓ N : ℕ) : ℝ := by
   classical
   exact ∑ x : Basis c.qubits,
@@ -65,6 +95,23 @@ theorem probability_eq (c : Circuit) (ℓ N : ℕ) (hN : 2 ≤ N) :
   apply Finset.sum_congr rfl
   intro x _
   rw [correctEncoding_iff hN]
+
+/-- Born mass of the event computed by the numerical decoder. Equality holds
+basis vector by basis vector, so no normalization or probability inequality
+is needed to exclude spurious canonical outputs. -/
+theorem decodedProbability_eq (c : Circuit) (ℓ N : ℕ) (hN : 2 ≤ N) :
+    (∑ x : Basis c.qubits,
+      if readSlots (paddedLength ℓ) (outputList ℓ x) = some (canonical N)
+      then Complex.normSq (c.outputState ℓ N x) else 0) = c.correctProbability ℓ N := by
+  classical
+  unfold Circuit.correctProbability
+  apply Finset.sum_congr rfl
+  intro x _
+  by_cases hc : CorrectEncoding N (paddedLength ℓ) (outputList ℓ x)
+  · have hd := (readSlots_eq_iff hN _).mpr hc
+    simp only [ite_eq_left hd, ite_eq_left hc]
+  · have hd := mt (readSlots_eq_iff hN _).mp hc
+    simp only [ite_eq_right hd, ite_eq_right hc]
 
 /-- The generator still receives only ℓ. Both polynomial resource bounds
 and the output-wire capacity are preserved without measuring other wires. -/
@@ -86,6 +133,9 @@ example : decodeSlots (List.replicate 12 2 ++ [0]) = [(2, 12)] := by decide
 example : decodeSlots [2, 2, 3, 13, 0] = [(2, 2), (3, 1), (13, 1)] := by decide
 
 -- Removing zeros recovers these entries, but their placement fails the event.
+example : readSlots 3 [2, 0, 3] = none := by decide
+example : readSlots 4 [2, 2, 3, 0] = some [(2, 2), (3, 1)] := by decide
+
 example : ¬ paddedAnswer 3 [2, 0, 3] [(2, 1), (3, 1)] := by
   unfold paddedAnswer
   decide

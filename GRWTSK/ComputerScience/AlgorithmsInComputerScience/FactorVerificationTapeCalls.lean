@@ -146,6 +146,86 @@ theorem call_count_le (n : ℕ) (bits : List Bool) : (calls n bits).length ≤ n
         · simp
     · simp
 
+private theorem mem_products {a b : ℕ} {ps : List ℕ} (h : (a,b) ∈ products ps) :
+    ∃ front tail, ps = front ++ a :: tail ∧ b = tail.prod := by
+  induction ps with
+  | nil => simp [products] at h
+  | cons p ps ih =>
+    rcases List.mem_cons.mp h with eq | h
+    · obtain ⟨rfl,rfl⟩ := Prod.mk.inj eq
+      exact ⟨[],ps,rfl,rfl⟩
+    · obtain ⟨front,tail,eq,hb⟩ := ih h
+      exact ⟨p :: front,tail,congrArg (List.cons p) eq,hb⟩
+
+/-- A width sufficient even for an input that passes the arithmetic guards
+and whose reconstructed product will subsequently be rejected. -/
+def widthCap (n : ℕ) := (n.log2 + 1) * (n.log2 + 1) + 1
+
+private theorem width_le_of_fits {a b cap : ℕ} (hc : 0 < cap)
+    (ha : a < 2^cap) (hb : b < 2^cap) : width a b ≤ cap := by
+  have bound {x : ℕ} (hx : x < 2^cap) : x.log2 + 1 ≤ cap := by
+    by_cases h : x = 0
+    · subst x
+      change 1 ≤ cap
+      omega
+    · exact (Nat.log2_lt h).mpr hx
+  exact max_le (bound ha) (bound hb)
+
+theorem call_width_le {n a b : ℕ} {bits : List Bool} (h : (a,b) ∈ calls n bits) :
+    width a b ≤ widthCap n := by
+  unfold calls at h
+  split at h
+  · simp at h
+  · next xs _ =>
+      split at h
+      · next ha =>
+          split at h
+          · obtain ⟨front,tail,eq,rfl⟩ := mem_products h
+            have hm : a ∈ expand xs := eq ▸ List.mem_append_right _ (List.mem_cons_self ..)
+            obtain ⟨t, ht, hr⟩ := List.mem_flatMap.mp hm
+            have hab : a ≤ n := (List.eq_of_mem_replicate hr) ▸ (ha.2.2.2.2 t ht).1
+            have hlen : n.log2 + 1 ≤ widthCap n := by
+              unfold widthCap
+              have he := Nat.mul_le_mul_left (n.log2+1) (show 1 ≤ n.log2+1 by omega)
+              omega
+            apply width_le_of_fits (Nat.zero_lt_succ _)
+            · exact (hab.trans_lt (Nat.lt_log2_self (n := n))).trans_le
+                (Nat.pow_le_pow_right (by decide) hlen)
+            · apply suffix_fits ha (initial := front ++ [a])
+              simpa [List.append_assoc] using eq
+          · simp at h
+      · simp at h
+
+/-- The physical input tape uses two encoded words and one separator.
+The routine returns one whole encoded word on the output tape. This counts
+symbols staged and retrieved, before head travel or scratch clearing. -/
+def Supplier.stagedSymbols (s : Supplier) (a b : ℕ) : ℕ :=
+  ((inputWord a b a).map s.bit ++ [s.sep] ++ (inputWord a b b).map s.bit).length +
+    ((s.result a b).map s.bit).length
+
+theorem Supplier.stagedSymbols_eq (s : Supplier) (a b : ℕ) :
+    s.stagedSymbols a b = 4 * width a b + 1 := by
+  obtain ⟨_,_,_,_,hlen,_,_⟩ := s.run a b
+  simp [Supplier.stagedSymbols, inputWord, hlen]
+  omega
+
+theorem Supplier.total_stagedSymbols_le (s : Supplier) (n : ℕ) (bits : List Bool) :
+    ((calls n bits).map (fun t => s.stagedSymbols t.1 t.2)).sum ≤
+      n.log2 * (4 * widthCap n + 1) := by
+  let cap := 4 * widthCap n + 1
+  have each (t : ℕ × ℕ) (ht : t ∈ calls n bits) : s.stagedSymbols t.1 t.2 ≤ cap := by
+    rw [s.stagedSymbols_eq]
+    exact Nat.add_le_add_right (Nat.mul_le_mul_left 4 (call_width_le ht)) 1
+  have bound (l : List (ℕ × ℕ)) (hl : ∀ t ∈ l, s.stagedSymbols t.1 t.2 ≤ cap) :
+      (l.map (fun t => s.stagedSymbols t.1 t.2)).sum ≤ l.length * cap := by
+    induction l with
+    | nil => simp
+    | cons t l ih =>
+      simp only [List.map_cons, List.sum_cons, List.length_cons, Nat.succ_mul]
+      rw [Nat.add_comm (l.length * cap)]
+      exact Nat.add_le_add (hl t (.head _)) (ih (fun x hx => hl x (.tail _ hx)))
+  exact (bound _ each).trans (Nat.mul_le_mul_right cap (call_count_le n bits))
+
 /-- `R` is the cost of the entire caller outside the stand-alone multiplication
 traces. The finite histogram uses each trace's actual argument width. -/
 theorem Supplier.histogram_bound (s : Supplier) (R n : ℕ) (bits : List Bool) :

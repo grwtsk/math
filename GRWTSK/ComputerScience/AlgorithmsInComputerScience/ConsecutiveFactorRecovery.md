@@ -1,0 +1,21 @@
+# Residual recursion from consecutive divisor sums
+
+Local source attribution: grwtsk contributors. The [local source](ConsecutiveFactorRecovery.lean) implements the filtering, exact power extraction, residual sample updates and sorted completion of Algorithm 2 in Joseph M. Shunia, *Deterministic integer factorization from abundance decisions*, arXiv:2611.34242v1. It consumes the [arithmetic lemmas](../../NumberTheory/AbundanceFactorRecovery.md) and [actual query values](AbundanceOracleSamples.md). [Paper, §3.4 and Algorithms 2–3](https://arxiv.org/html/2611.34242v1)
+
+The RootSupplier receives the residual integer and its stored sample list. On correct samples it must generate a finite set containing a least full prime power $p^{v_p(w)}$. The pointwise test permits arbitrary other roots. The paper's proposed implementation computes a normalized sequence, fits and rounds recurrences of several orders, and extracts the integer roots of the resulting polynomials. The missing coverage proof specifically requires a suitable order with a gap and a stable linear solve as in Lemmas 3.3 and 3.4. Neither sample correctness alone nor an oracle for strict abundance gives this coverage without further mathematics.
+
+| Declaration in GRWTSK.IntegerFactorization.AbundanceRecovery | Invariant |
+| --- | --- |
+| pickComponent_spec | Filter candidate roots for unitary divisibility and choose the minimum. Bounded exact-root extraction then gives the prime and its full exponent. |
+| peelSamples_correct | The loop maps over the stored integers with their indices. After division by the prime-power Euler factors the entries are exactly the sampled sums for the smaller residual. |
+| recoverLeaves_spec | For $0<w\le n$ with $w<2^{k+1}$, at most $k$ removals suffice. The returned leaves are all prime and their product is $w$. At $w=1$ recursion returns the empty list with no supplier call. |
+| recoverOutput_samples | Starting with $n\ge2$, correct sampled sums and the root supplier, the fuel $\lfloor\log_2 n\rfloor$ suffices. Sorting prime leaves and grouping equal entries yields the canonical prime–exponent list. |
+| recoverOutput_abundance | Substituting the evaluated adaptive sample queries gives the same complete output under the explicit threshold, oracle and root-coverage suppliers. |
+
+Each removal divides by at least two. A numeric invariant $w<2^{k+1}$ therefore decreases to $w/q<2^k$ on the residual child. Multiplicativity on the **coprime** parts gives exact updates at the initial indices, so there are no new abundance queries inside the loop. The order of prime powers can disagree with the order of prime bases. Sorting the final leaves fixes this even for repeated prime powers. Costs for constructing recurrence systems, solving them, finding roots and implementing the integer arithmetic on tapes are still needed before assigning a global machine time.
+
+Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612` elaborated source blob `5aff180c0dde4776ed050d8dd7ed37ca959d74ad` and emitted the compiled module with exit 0. A fresh joint kernel replay passed for nine modules including this one. It covered 422 safe declarations and 24,952 transitive constants, omitted four generated declarations and reported exactly `Classical.choice`, `Quot.sound` and `propext`. These counts describe the joint replay. Independent mathematical review and Comparator are `NOT_RUN`.
+
+Finite execution with an exhaustive synthetic candidate supplier returned the canonical outputs for $12$, $35$ and $64$ and exhausted zero fuel at $12$. A synthetic threshold constructor returned $12$ for true and $1$ for false using a directly computed divisor sum. Combining it with the actual strict-abundance predicate recovered the canonical factors of $12$. These checks exercise the loop and oracle wiring; the synthetic suppliers carry no complexity qualification.
+
+The concrete all-orders supplier computes the rational systems from the actual list, scans bounded integer roots and discharges the coverage field at the manuscript window. This gives unconditional finite recovery from the exact consecutive divisor sums. Its determinant expansion and root enumeration still need polynomial-time replacements for a complexity result. [Concrete root candidates](DivisorSumRootCandidates.md)

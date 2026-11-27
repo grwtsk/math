@@ -8,5 +8,8 @@ rev = "c91cc3f4947caca8977e81a5d14244f73b5ae2b1"
 
 [[lean_lib]]
 name = "GRWTSKFactoringCounting"
-roots = ["GRWTSK.ComputerScience.AlgorithmsInComputerScience.RudichRousseauFactoring"]
+roots = [
+  "GRWTSK.ComputerScience.AlgorithmsInComputerScience.RudichRousseauFactoring",
+  "GRWTSK.ComputerScience.AlgorithmsInComputerScience.RudichRousseauDivisionOnStacks",
+]
 globs = ["GRWTSK.+"]
