@@ -40,6 +40,6 @@ theorem render_eq_renderViaPlan (T : PixelTensorNetwork F) {r : ℕ}
   congr 1
   rw [Plan.eval_matrixProduct hP]
   simp only [Equiv.symm_apply_apply]
-  exact Matrix.mul_apply _ _ _ _
+  exact Matrix.mul_apply
 
 end GRWTSK.ComputerScience.AlgorithmsInComputerScience.AffineFiberBilinearPlan
