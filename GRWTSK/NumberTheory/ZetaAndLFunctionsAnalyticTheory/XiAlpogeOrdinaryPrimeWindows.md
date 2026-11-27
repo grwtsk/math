@@ -119,6 +119,8 @@ The notation $V_n$ is rational. Comparing its positive integer numerator against
 
 One benefit of rounding is the size of a single exact comparison. Write $E_n=[((n+1)/n)\prod_{j=1}^n (nj+1)/(nj)]^n$. Before cancellation, its numerator and denominator have $O(n^2\log n)$ bits. Raising the centered factor to $n^2$ costs $O(n^4\log n)$ bits, while the remaining at most $n$ prime factors have exponents at most $n^2$ and contribute $O(n^3\log n)$ bits. For fixed $1/2<a/b<1$ we have $m\le n$, so the two integers in the rounded comparison each admit an explicit representation with $O(n^4\log n)$ bits. This elementary size estimate is a paper bound in the numeric scale $n$. The window-existence theorem still requires arbitrarily large $M$ for every exponent.
 
+The [fourth-power criterion](XiAlpogeFourthPowerBinary.md) replaces the variable exponent and the all-integer test by one binary comparison at fourth powers. It also gives an effective range using Alpöge’s zero-location result.
+
 ## Exact intermediate identity
 
 For integers $N\ge2$, put
