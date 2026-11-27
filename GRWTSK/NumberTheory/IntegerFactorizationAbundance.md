@@ -1,0 +1,19 @@
+# Abundance from canonical prime powers
+
+Local source attribution: grwtsk contributors. The local subject is [IntegerFactorizationAbundance.lean](IntegerFactorizationAbundance.lean). The consumer is the strict abundance decision $\sigma(n)>2n$ on a supplied [complete factorization](CompleteIntegerFactorization.lean). The direct direction appears in Joseph M. Shunia, *Deterministic integer factorization from abundance decisions*, arXiv:2611.34242v1, formula (1.1) and Theorem 1.1. This implementation and its operation counters are local. [Paper](https://arxiv.org/html/2611.34242v1) · [Pinned Mathlib arithmetic functions](https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/ArithmeticFunction/Misc.lean)
+
+| Local declaration in `GRWTSK.IntegerFactorization` | Correspondence and proof |
+| --- | --- |
+| `geometricTrace_spec` | Induction on the exponent gives $(p^e,\sum_{j=0}^e p^j,e)$. Each transition performs one multiplication and one addition. |
+| `divisorSumTrace_counts` | For a list of $k$ pairs with sum of exponents $s$, folding the geometric sums takes $s+k$ multiplications and $s$ additions, including the product with the final unit. |
+| `divisorSumTrace_eq_sigma` | Strictly increasing prime bases make the first prime power coprime to the product of the rest. Use multiplicativity of $\sigma_1$, its prime-power formula and induction. |
+| `abundantFromFactors_iff` and `divisorSumTrace_total_le_sq` | The Boolean compares with the sum of all positive divisors. Mathlib's bound $\sigma_1(n)\le n^2$ applies to the reconstructed integer. |
+| `CompleteFactorization.abundance_contract` | A canonical output for $n\ge2$ gives the exact decision, the $n^2$ bound, at most $2\lfloor\log_2 n\rfloor$ multiplications and at most $\lfloor\log_2 n\rfloor$ additions. |
+
+Algebraically, each intermediate power in a geometric sum is at most the candidate's full prime power, which divides $n$. Each partial sum is bounded by the full geometric sum. All complete sums are positive, so any product of a subset is at most their product $\sigma(n)\le n^2$. All value operations thus fit in $2b+1$ bits for $b=1+\lfloor\log_2 n\rfloor$. The term counters count arithmetic on values. A tape implementation additionally charges the supplied factor output, parsing, exponent counters, stack management and final comparison. For a sequential implementation, stream one pair at a time and keep a running product, current power and current sum. At most $O(b)$ grade-school multiplications/additions on $O(b)$-bit words and polynomial reading/copying work suffice. A formal fixed-tape implementation and its bit-step simulation remain open. The empty factor list at $n=1$ gives false. On $12$ the factors $2^2,3$ give $7\cdot4=28>24$, while $6$ gives $3\cdot4=12=2n$ and returns false.
+
+The reverse direction needs threshold construction, rational recurrence reconstruction and integer roots. [Manuscript ledger](../ComputerScience/AlgorithmsInComputerScience/IntegerFactoringManuscripts.md)
+
+Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612` elaborated source blob `721d30cea5d7f07d0cdea76ca1a5389a88e92e2c` and emitted its compiled module on the final arithmetic dependency blob `cc16df933c3f684e1b9b8b83af58d8d62a248862` (exit 0). A separate named-transitive-closure replay attempt on the initial compiled module was killed, exit 137, before producing a replay or axiom verdict. A joint fresh kernel replay of this module and the other two local consumer modules passed for all 88 safe declarations and their 39,266 transitive constants. Two compiler-generated executable recursion helpers for the geometric and divisor sums were excluded from the roots. The kernel closure contained only `Classical.choice`, `Quot.sound` and `propext`. Independent review and Comparator are `NOT_RUN`.
+
+Executable guards passed for abundant $12$, perfect $6$ and the internal empty case at $1$.

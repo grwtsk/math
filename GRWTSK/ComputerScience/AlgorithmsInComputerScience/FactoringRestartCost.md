@@ -1,0 +1,14 @@
+`# Expected restart cost and pathwise workspace
+`
+`Local source attribution: grwtsk contributors. The mathematical consumer is the phase loop of the Cogentic Las Vegas integer-factoring manuscript, Definition 6.1 and proof of Theorem 1.1, Steps 2–4. The manuscript and its pinned PDF digests appear in the [source ledger](IntegerFactoringManuscripts.md). The [local Lean source](FactoringRestartCost.lean) supplies two general composition results.
+`
+`| Declaration in `GRWTSK.IntegerFactorization` | Premises and observable |
+`| --- | --- |
+`| `restart_expected_cost` | In a probability measure, each reached-attempt mass contracts by a factor $r<1$. The mean contribution of phase $j$ is at most $C$ times the probability of reaching it. Integrating the countable sum gives a finite bound of $\mathrm{setup}+C/(1-r)$ for finite $C$ and setup. |
+`| `restart_workspace_pathwise` | Every time on every path has an exact footprint equal to current work plus the sum of live frame slots. Per-slot and current-work bounds imply the sum-of-caps bound at every such time. Zero denotes an inactive slot. |
+`
+`Induction gives $\Pr(R_j)\le r^j$. Tonelli's theorem applies to the nonnegative measurable phase contributions. Summing the geometric series yields the bound, regardless of correlations among the phases. A success bound $\delta$ given every reached history gives $r=1-\delta$. Conditional phase cost $\le C$ on reached histories and zero off those histories gives the required *unconditional* contribution inequality, including when the reach probability is zero. An unconditional success bound for each marginal attempt is insufficient. For example, using the same first fair bit on all attempts can leave half of all paths in a loop forever.
+`
+`The workspace theorem charges simultaneously live frames, including any retained parent allocations, at the same instant. Reusing the transient region allows arbitrarily many sequential attempts without multiplying its size by the number of attempts. A common application partitions the footprint into input, output, parent frames and scratch with those coordinates disjoint. The theorem requires that footprint identity for the actual machine and a bound for each cell group at **every** execution step. These are open provider obligations for Google §6. Arithmetic on expected time gives no workspace partition.
+
+Lean 4.34.1 with Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612` elaborated and emitted the compiled module for source blob `1f7cd84925ee7fe21b3c551d6567694b088abc05` (exit 0). A joint fresh kernel replay of this module and the other two local consumer modules passed for all 88 safe declarations and their 39,266 transitive constants. Two compiler-generated executable recursion helpers for the geometric and divisor sums were excluded from the roots. The kernel closure contained only `Classical.choice`, `Quot.sound` and `propext`. Independent review and Comparator are `NOT_RUN`.

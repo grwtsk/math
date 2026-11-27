@@ -505,7 +505,25 @@ def lFunctionTargets : List OpenTargetRecord := [
     .conjecturalAtom clearsByOpen []
 ]
 
+/-- Open function problem. The source-local mathematical target is
+`GRWTSK.IntegerFactorization.ClassicalFactoringFP`. -/
+def completeIntegerFactoringTarget : OpenTargetRecord :=
+  mk "complexity.complete_integer_factorization_fp" .complexity
+    "Uniform deterministic polynomial-bit-time complete integer factorization" .openStatus
+    ["binary N ≥ 2", "one fixed deterministic finite-alphabet multitape machine"]
+    ["output the strictly increasing prime bases with positive multiplicities and product N"]
+    ["one machine for every input", "primitive bit cost including serialization and output"]
+    ["worst-case time at most C (1 + b)^k for fixed C and k"]
+    ["exact uniform quantum circuits", "classical subexponential upper bounds"]
+    ["a decision test for compositeness does not output a factor",
+     "quantum gate counts and expected randomized times do not supply this witness"]
+    .conjecturalAtom
+    "Verified exact binary input/output and worst-case polynomial bit time for one classical machine"
+    ["GRWTSK/ComputerScience/AlgorithmsInComputerScience/IntegerFactorizationTarget.lean",
+     "https://github.com/google-deepmind/formal-conjectures/pull/4796"]
+
 def complexityTargets : List OpenTargetRecord := [
+  completeIntegerFactoringTarget,
   mk "complexity.p_vs_np" .complexity "P versus NP" .openStatus
     ["languages", "polynomial-time machines", "verifiers"]
     ["P equals NP or P differs from NP"]
@@ -928,7 +946,7 @@ theorem lFunctionTargets_count :
   rfl
 
 theorem complexityTargets_count :
-    complexityTargets.length = 9 := by
+    complexityTargets.length = 10 := by
   rfl
 
 theorem pdeTargets_count :
@@ -952,14 +970,14 @@ theorem physicsTargets_count :
   rfl
 
 theorem allTargets_count :
-    allTargets.length = 90 := by
+    allTargets.length = 91 := by
   rfl
 
 def allTargetResidues : List Think.Residue :=
   allTargets.map targetResidue
 
 theorem allTargetResidues_count :
-    allTargetResidues.length = 90 := by
+    allTargetResidues.length = 91 := by
   rfl
 
 theorem allTargetResidues_target :
