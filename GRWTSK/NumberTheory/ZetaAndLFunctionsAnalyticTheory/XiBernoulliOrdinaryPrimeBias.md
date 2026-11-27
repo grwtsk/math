@@ -1,5 +1,7 @@
 # What the GRWTSK argument proves about RH
 
+The [finite rational version](XiPrimeBlockRational.md) replaces both the infinite prime sum and the continuum integral. Its sign on a sparse grid of integer starts is equivalent to the eventual block sign here. The [direct Mellin proof](XiPrimeBlockMellin.md) excludes off-line zeros from that grid without using Bernoulli interpolation.
+
 Local source attribution: grwtsk contributors.
 
 **The independent Hilbert–Pólya proof remains incomplete.** [The Bernoulli interpolation argument](XiBernoulliInterpolationCost.md) proved that an explicit rational Bernoulli comparison at all orders would imply the Riemann hypothesis. This continuation proves results about the actual primes, including at unbounded indices, and identifies the remaining sign question. The separate proof of RH by Levent Alpöge with Claude has independent Lean verification. Its conclusion is not an input to the results labelled unconditional here. [Joint statement](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) · [Independent check of the shortened formalization](https://math.mit.edu/~drew/shortgrh/)
